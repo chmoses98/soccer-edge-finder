@@ -12,7 +12,7 @@ on:
     - cron: "37 */2 * * 2,3,4"
 
 concurrency:
-  group: data-writer-archive
+  group: data-writer-archive-capture
   cancel-in-progress: false
 
 permissions:

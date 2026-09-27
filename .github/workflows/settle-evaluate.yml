@@ -9,7 +9,7 @@ on:
     - cron: "49 4 * * *"
 
 concurrency:
-  group: data-writer-archive
+  group: data-writer-archive-settle
   cancel-in-progress: false
 
 permissions:
@@ -38,6 +38,7 @@ jobs:
         id: s
         run: |
           set -o pipefail
+          mkdir -p work/evaluation
           python -m soccer_edge.cli settle --archive-dir archive/predictions --snapshots-dir archive/snapshots --settlements-dir archive/settlements --out-dir work/evaluation | tee work/settle.log
       - uses: actions/upload-artifact@v4
         if: always()
