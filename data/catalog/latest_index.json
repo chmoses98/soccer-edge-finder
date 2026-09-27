@@ -3,43 +3,116 @@
  "counters": {
   "complete": true,
   "contracts_by_competition_code": {
-   "?": 4186,
-   "BRASILEIRO": 79,
-   "BUNDESLIGA": 45,
-   "CONCACAFNL": 314,
-   "COPADELREY": 15,
-   "EPL": 47,
-   "LALIGA": 47,
+   "?": 512,
+   "APFDDH": 40,
+   "ARGNACB": 14,
+   "ARGPREMDIV": 30,
+   "BELGIANPL": 18,
+   "BRASILEIRO": 139,
+   "BRASILEIROB": 79,
+   "BRASILEIROC": 27,
+   "BUNDESLIGA": 195,
+   "CANPL": 3,
+   "CHLLDP": 16,
+   "CHNL1": 3,
+   "CHNSL": 16,
+   "CONCACAFGC": 23,
+   "CONCACAFNL": 398,
+   "CONMEBOLLIB": 16,
+   "COPAAMERICA": 25,
+   "COPADELREY": 38,
+   "COPADOBRASIL": 16,
+   "DFBPOKAL": 21,
+   "DIMAYOR": 40,
+   "ECULP": 16,
+   "EFL": 37,
+   "EFLCHAMPIONSHIP": 24,
+   "EFLL1": 86,
+   "EKSTRAKLASA": 18,
+   "ENGNL": 36,
+   "EPL": 361,
+   "EREDIVISIE": 18,
+   "FA": 24,
+   "FIFAW": 48,
+   "INTLFRIENDLY": 163,
+   "ISRNL": 80,
+   "KNVB": 21,
+   "LALIGA": 237,
+   "LALIGA2": 14,
    "LIGAEXP": 24,
-   "LIGAMX": 130,
-   "LIGUE1": 45,
-   "MLS": 129,
-   "NWSL": 27,
-   "SERIEA": 44,
+   "LIGAMX": 218,
+   "LIGAMX1H": 30,
+   "LIGAMX2H": 12,
+   "LIGAPORTUGAL": 18,
+   "LIGUE1": 199,
+   "MLS": 187,
+   "MLS1H": 15,
+   "MLS2H": 6,
+   "MLSEAST": 15,
+   "MLSWEST": 15,
+   "NWSL": 30,
+   "PERLIGA1": 21,
+   "PREMIERLEAGUE": 20,
+   "SERIEA": 210,
+   "SUPERLIG": 18,
+   "SVK2L": 14,
+   "SVKCUP": 3,
+   "TACAPORT": 20,
+   "THAIL1": 16,
+   "UCL": 354,
+   "UCLLEAGUE": 16,
    "UCLW": 27,
-   "UEFANL": 1484,
-   "USL": 51
+   "UECL": 36,
+   "UEFAEURO": 60,
+   "UEFANL": 1694,
+   "UEFANLGROUP": 16,
+   "UEL": 36,
+   "URYPD": 33,
+   "USL": 98,
+   "USLCUP": 3,
+   "VENFUTVE": 14,
+   "WC": 172,
+   "WCW": 32
   },
   "contracts_by_family": {
-   "btts": 76,
+   "btts": 108,
+   "competition_head_to_head": 14,
+   "competition_host": 26,
+   "competition_last_place": 132,
+   "competition_points_margin": 30,
+   "competition_promotion": 24,
+   "competition_qualification": 138,
    "competition_relegation": 96,
-   "exact_score": 630,
-   "first_half_total": 84,
-   "handicap": 308,
-   "match_result_3way": 726,
-   "team_total": 126,
-   "total_goals": 462,
-   "unknown": 4186
+   "competition_team_points": 384,
+   "competition_top_n": 306,
+   "competition_trophies": 30,
+   "competition_winner": 1045,
+   "exact_score": 675,
+   "first_half_btts": 32,
+   "first_half_handicap": 64,
+   "first_half_result": 96,
+   "first_half_total": 96,
+   "first_to_score": 63,
+   "handicap": 430,
+   "match_result_3way": 1041,
+   "player_award": 167,
+   "player_season_leader": 247,
+   "season_player_total": 50,
+   "soccer_special": 211,
+   "team_total": 127,
+   "total_goals": 647,
+   "tournament_advancement": 160,
+   "unknown": 95
   },
-  "contracts_discovered": 6694,
+  "contracts_discovered": 6534,
   "contracts_duplicate_seen": 0,
-  "contracts_unknown_family": 4186,
-  "events_discovered": 70961,
+  "contracts_unknown_family": 95,
+  "events_discovered": 17691,
   "milestones_note": "milestones type=soccer_tournament_multi_leg: 17860 rows, complete=True",
-  "request_count": 4522,
+  "request_count": 3152,
   "retry_count": 0,
-  "run_id": "disc-20260927T223908Z-54901a",
-  "series_ambiguous_unswept": 135,
+  "run_id": "disc-20260927T230633Z-3639e9",
+  "series_ambiguous_unswept": 134,
   "series_ambiguous_unswept_tickers": [
    "KX1HOMEGAME",
    "KX1STHOMEGAME",
@@ -133,7 +206,6 @@
    "KXNEXTTEAMMICAH",
    "KXNEXTTEAMNFL",
    "KXNEXTTEAMTYREEK",
-   "KXNHLMVP",
    "KXNLMVP",
    "KXNYGCOACH",
    "KXOKSTCOACH",
@@ -178,164 +250,676 @@
    "KXWPMOTY"
   ],
   "series_by_ownership": {
-   "ambiguous": 136,
-   "not_soccer": 12821,
-   "soccer": 1441
+   "ambiguous": 135,
+   "not_soccer": 12875,
+   "soccer": 1388
   },
-  "series_swept": 1442,
+  "series_swept": 1389,
   "series_total": 14398
  },
- "event_count": 70961,
+ "event_count": 17691,
  "events_sanity": {
-  "events_matching_a_market_event": 1058,
+  "events_matching_a_market_event": 1050,
   "events_not_in_swept_series": 0,
-  "events_total": 70961,
-  "market_event_tickers": 1058,
+  "events_total": 17691,
+  "market_event_tickers": 1050,
   "market_event_tickers_without_event_row": 0
  },
  "example_tickers": {
+  "APFDDH|btts": "KXAPFDDHBTTS-26SEP28LIBOLI-BTTS",
+  "APFDDH|competition_winner": "KXAPFDDH-26CLA-CPO",
+  "APFDDH|handicap": "KXAPFDDHSPREAD-26SEP28LIBOLI-LIB2",
+  "APFDDH|match_result_3way": "KXAPFDDHGAME-26SEP28LIBOLI-LIB",
+  "APFDDH|total_goals": "KXAPFDDHTOTAL-26SEP28LIBOLI-1",
+  "ARGNACB|btts": "KXARGNACBBTTS-26SEP27GEJSMT-BTTS",
+  "ARGNACB|handicap": "KXARGNACBSPREAD-26SEP27GEJSMT-GEJ2",
+  "ARGNACB|match_result_3way": "KXARGNACBGAME-26SEP27GEJSMT-GEJ",
+  "ARGNACB|total_goals": "KXARGNACBTOTAL-26SEP27GEJSMT-1",
+  "ARGPREMDIV|competition_winner": "KXARGPREMDIV-26CLA-ARG",
+  "BELGIANPL|competition_winner": "KXBELGIANPL-27-BEV",
+  "BRASILEIROB|btts": "KXBRASILEIROBBTTS-26SEP28AMGJUV-BTTS",
+  "BRASILEIROB|first_half_btts": "KXBRASILEIROB1HBTTS-26SEP28AMGJUV-BTTS",
+  "BRASILEIROB|first_half_handicap": "KXBRASILEIROB1HSPREAD-26SEP28AMGJUV-AMG2",
+  "BRASILEIROB|first_half_result": "KXBRASILEIROB1H-26SEP28AMGJUV-AMG",
+  "BRASILEIROB|first_half_total": "KXBRASILEIROB1HTOTAL-26SEP28AMGJUV-1",
+  "BRASILEIROB|handicap": "KXBRASILEIROBSPREAD-26SEP27FORATH-ATH2",
+  "BRASILEIROB|match_result_3way": "KXBRASILEIROBGAME-26OCT01ATHREC-ATH",
+  "BRASILEIROB|total_goals": "KXBRASILEIROBTOTAL-26SEP27FORATH-4",
+  "BRASILEIROC|btts": "KXBRASILEIROCBTTS-26SEP27BRUARA-BTTS",
+  "BRASILEIROC|handicap": "KXBRASILEIROCSPREAD-26SEP27BRUARA-ARA2",
+  "BRASILEIROC|match_result_3way": "KXBRASILEIROCGAME-26OCT03FLOBFC-BFC",
+  "BRASILEIROC|total_goals": "KXBRASILEIROCTOTAL-26SEP27BRUARA-1",
   "BRASILEIRO|btts": "KXBRASILEIROBTTS-26OCT02SPASAN-BTTS",
+  "BRASILEIRO|competition_top_n": "KXBRASILEIROTOPX-26TOP4-ATL",
+  "BRASILEIRO|competition_winner": "KXBRASILEIRO-26-ATL",
   "BRASILEIRO|handicap": "KXBRASILEIROSPREAD-26OCT02SPASAN-SAN2",
   "BRASILEIRO|match_result_3way": "KXBRASILEIROGAME-26OCT02SPASAN-SAN",
   "BRASILEIRO|total_goals": "KXBRASILEIROTOTAL-26OCT02SPASAN-1",
+  "BUNDESLIGA|competition_last_place": "KXBUNDESLIGALAST-27-BMG",
+  "BUNDESLIGA|competition_points_margin": "KXBUNDESLIGAPOINTMARGIN-27P-0T1",
   "BUNDESLIGA|competition_relegation": "KXBUNDESLIGARELEGATION-27-BMG",
+  "BUNDESLIGA|competition_team_points": "KXBUNDESLIGATEAMPOINTS-27-BMG30",
+  "BUNDESLIGA|competition_top_n": "KXBUNDESLIGATOP-27TOP4-BMG",
+  "BUNDESLIGA|competition_winner": "KXBUNDESLIGA-27-BMG",
   "BUNDESLIGA|match_result_3way": "KXBUNDESLIGAGAME-26OCT09BVBSVW-BVB",
+  "BUNDESLIGA|player_season_leader": "KXBUNDESLIGALEADER-27GOAL-CKOFAN35",
+  "CANPL|match_result_3way": "KXCANPLGAME-26SEP30OTTCAV-CAV",
+  "CHLLDP|competition_winner": "KXCHLLDP-26-AUD",
+  "CHNL1|match_result_3way": "KXCHNL1GAME-26SEP29WUXNIP-NIP",
+  "CHNSL|competition_winner": "KXCHNSL-26-BJG",
+  "CONCACAFGC|competition_winner": "KXCONCACAFGC-27-BLZ",
   "CONCACAFNL|btts": "KXCONCACAFNLBTTS-26SEP27CUWNIC-BTTS",
+  "CONCACAFNL|competition_winner": "KXCONCACAFNL-27A-CAN",
+  "CONCACAFNL|first_half_btts": "KXCONCACAFNL1HBTTS-26SEP27CUWNIC-BTTS",
+  "CONCACAFNL|first_half_handicap": "KXCONCACAFNL1HSPREAD-26SEP27CUWNIC-CUW2",
+  "CONCACAFNL|first_half_result": "KXCONCACAFNL1H-26SEP27CUWNIC-CUW",
   "CONCACAFNL|first_half_total": "KXCONCACAFNL1HTOTAL-26SEP27CUWNIC-1",
   "CONCACAFNL|handicap": "KXCONCACAFNLSPREAD-26SEP27CUWNIC-CUW2",
   "CONCACAFNL|match_result_3way": "KXCONCACAFNLGAME-26OCT01AIAANT-AIA",
   "CONCACAFNL|total_goals": "KXCONCACAFNLTOTAL-26SEP27CUWNIC-1",
+  "CONMEBOLLIB|competition_winner": "KXCONMEBOLLIB-26-CARC",
+  "COPAAMERICA|competition_host": "KXCOPAAMERICAHOST-28-ARGURGPAR",
+  "COPAAMERICA|competition_winner": "KXCOPAAMERICA-28-ARG",
+  "COPADELREY|competition_winner": "KXCOPADELREY-27-ALA",
   "COPADELREY|match_result_3way": "KXCOPADELREYGAME-26OCT03BAZATL-ATL",
+  "COPADOBRASIL|competition_winner": "KXCOPADOBRASIL-26-ATL",
+  "DFBPOKAL|competition_winner": "KXDFBPOKAL-27-BMG",
+  "DIMAYOR|btts": "KXDIMAYORBTTS-26SEP27CALADR-BTTS",
+  "DIMAYOR|handicap": "KXDIMAYORSPREAD-26SEP27CALADR-ADR2",
+  "DIMAYOR|match_result_3way": "KXDIMAYORGAME-26SEP27CALADR-ADR",
+  "DIMAYOR|total_goals": "KXDIMAYORTOTAL-26SEP27CALADR-1",
+  "ECULP|competition_winner": "KXECULP-26-BSC",
+  "EFLCHAMPIONSHIP|competition_winner": "KXEFLCHAMPIONSHIP-27-BC",
+  "EFLL1|btts": "KXEFLL1BTTS-26SEP26BRABAR-BTTS",
+  "EFLL1|handicap": "KXEFLL1SPREAD-26SEP26BRABAR-BAR2",
+  "EFLL1|match_result_3way": "KXEFLL1GAME-26OCT03BARMKD-BAR",
+  "EFLL1|total_goals": "KXEFLL1TOTAL-26SEP26BRABAR-1",
+  "EFL|competition_promotion": "KXEFLPROMO-27-BC",
+  "EFL|competition_winner": "KXEFLCUP-27-ARS",
+  "EKSTRAKLASA|competition_winner": "KXEKSTRAKLASA-27-CRA",
+  "ENGNL|match_result_3way": "KXENGNLGAME-26SEP29BAASCU-BAA",
+  "EPL|competition_head_to_head": "KXEPLH2HFINISH-EPL27ARSTOT-ARS",
+  "EPL|competition_last_place": "KXEPLLAST-27-ARS",
+  "EPL|competition_points_margin": "KXEPLPOINTMARGIN-27P-0T1",
   "EPL|competition_relegation": "KXEPLRELEGATION-27-ARS",
+  "EPL|competition_team_points": "KXEPLTEAMPOINTS-27-ARS70",
+  "EPL|competition_top_n": "KXEPLTOP-27TOP2-ARS",
   "EPL|match_result_3way": "KXEPLGAME-26OCT10ARSLEE-ARS",
+  "EPL|player_season_leader": "KXEPLLEADER-27AST-AGARNA49",
+  "EPL|season_player_total": "KXEPLSEASONSTAT-27GOAL-AISAK9-16",
+  "EREDIVISIE|competition_winner": "KXEREDIVISIE-27-ADO",
+  "FA|competition_winner": "KXFACUP-27-ARS",
+  "FIFAW|match_result_3way": "KXFIFAWGAME-26OCT09ALBWAL-ALB",
+  "INTLFRIENDLY|btts": "KXINTLFRIENDLYBTTS-26SEP28JPNVEN-BTTS",
+  "INTLFRIENDLY|first_half_btts": "KXINTLFRIENDLY1HBTTS-26SEP28JPNVEN-BTTS",
+  "INTLFRIENDLY|first_half_handicap": "KXINTLFRIENDLY1HSPREAD-26SEP28JPNVEN-JPN2",
+  "INTLFRIENDLY|first_half_result": "KXINTLFRIENDLY1H-26SEP28JPNVEN-JPN",
+  "INTLFRIENDLY|first_half_total": "KXINTLFRIENDLY1HTOTAL-26SEP28JPNVEN-1",
+  "INTLFRIENDLY|handicap": "KXINTLFRIENDLYSPREAD-26SEP28JPNVEN-JPN2",
+  "INTLFRIENDLY|match_result_3way": "KXINTLFRIENDLYGAME-26OCT01JPNECU-ECU",
+  "INTLFRIENDLY|total_goals": "KXINTLFRIENDLYTOTAL-26SEP28JPNVEN-1",
+  "ISRNL|btts": "KXISRNLBTTS-26SEP28HKFMKJ-BTTS",
+  "ISRNL|handicap": "KXISRNLSPREAD-26SEP28HKFMKJ-HKF2",
+  "ISRNL|match_result_3way": "KXISRNLGAME-26OCT01ASHMHE-ASH",
+  "ISRNL|total_goals": "KXISRNLTOTAL-26SEP28HKFMKJ-1",
+  "KNVB|competition_winner": "KXKNVBCUP-27-ADO",
+  "LALIGA2|btts": "KXLALIGA2BTTS-26SEP28LEGCAS-BTTS",
+  "LALIGA2|handicap": "KXLALIGA2SPREAD-26SEP28LEGCAS-CAS2",
+  "LALIGA2|match_result_3way": "KXLALIGA2GAME-26SEP28LEGCAS-CAS",
+  "LALIGA2|total_goals": "KXLALIGA2TOTAL-26SEP28LEGCAS-1",
+  "LALIGA|competition_last_place": "KXLALIGALAST-27-ALA",
+  "LALIGA|competition_points_margin": "KXLALIGAPOINTMARGIN-27P-0T2",
   "LALIGA|competition_relegation": "KXLALIGARELEGATION-27-ALA",
+  "LALIGA|competition_team_points": "KXLALIGATEAMPOINTS-27-ALA35",
+  "LALIGA|competition_top_n": "KXLALIGATOP-27TOP4-ALA",
+  "LALIGA|competition_winner": "KXLALIGA-27-ALA",
   "LALIGA|match_result_3way": "KXLALIGAGAME-26OCT09MCFESP-ESP",
+  "LALIGA|player_season_leader": "KXLALIGALEADER-27GOAL-ABUDIM17",
   "LIGAEXP|match_result_3way": "KXLIGAEXPGAME-26OCT02CLUVDS-CLU",
+  "LIGAMX1H|exact_score": "KXLIGAMX1HSCORE-26SEP27LEOJUA-LEO0JUA0",
+  "LIGAMX2H|btts": "KXLIGAMX2HBTTS-26SEP27LEOJUA-BTTS",
+  "LIGAMX2H|handicap": "KXLIGAMX2HSPREAD-26SEP27LEOJUA-JUA2",
+  "LIGAMX2H|total_goals": "KXLIGAMX2HTOTAL-26SEP27LEOJUA-1",
   "LIGAMX|btts": "KXLIGAMXBTTS-26SEP27LEOJUA-BTTS",
+  "LIGAMX|competition_top_n": "KXLIGAMXTOP-26APERTOP8-ALA",
+  "LIGAMX|competition_winner": "KXLIGAMX-27APER-ALA",
   "LIGAMX|exact_score": "KXLIGAMXSCORE-26SEP27LEOJUA-LEO0JUA0",
+  "LIGAMX|first_half_btts": "KXLIGAMX1HBTTS-26SEP27LEOJUA-BTTS",
+  "LIGAMX|first_half_handicap": "KXLIGAMX1HSPREAD-26SEP27LEOJUA-JUA2",
+  "LIGAMX|first_half_result": "KXLIGAMX1H-26SEP27LEOJUA-JUA",
   "LIGAMX|first_half_total": "KXLIGAMX1HTOTAL-26SEP27LEOJUA-1",
+  "LIGAMX|first_to_score": "KXLIGAMXFTTS-26SEP27LEOJUA-JUA",
   "LIGAMX|handicap": "KXLIGAMXSPREAD-26SEP27LEOJUA-JUA2",
   "LIGAMX|match_result_3way": "KXLIGAMXGAME-26OCT09PUELEO-LEO",
+  "LIGAMX|player_season_leader": "KXLIGAMXLEADER-APER26GOAL-AAVILA9",
   "LIGAMX|team_total": "KXLIGAMXTEAMTOTAL-26SEP27LEOJUA-JUA1",
   "LIGAMX|total_goals": "KXLIGAMXTOTAL-26SEP27LEOJUA-1",
+  "LIGAPORTUGAL|competition_winner": "KXLIGAPORTUGAL-27-ACV",
+  "LIGUE1|competition_last_place": "KXLIGUE1LAST-27-ANG",
+  "LIGUE1|competition_points_margin": "KXLIGUE1POINTMARGIN-27P-0T2",
   "LIGUE1|competition_relegation": "KXLIGUE1RELEGATION-27-ANG",
+  "LIGUE1|competition_team_points": "KXLIGUE1TEAMPOINTS-27-ANG30",
+  "LIGUE1|competition_top_n": "KXLIGUE1TOP-27TOP4-ANG",
+  "LIGUE1|competition_winner": "KXLIGUE1-27-ANG",
   "LIGUE1|match_result_3way": "KXLIGUE1GAME-26OCT09RCLOL-OL",
+  "LIGUE1|player_season_leader": "KXLIGUE1LEADER-27GOAL-AFATI31",
+  "MLS1H|exact_score": "KXMLS1HSCORE-26SEP27CLBMIA-CLB0MIA0",
+  "MLS2H|btts": "KXMLS2HBTTS-26SEP27CLBMIA-BTTS",
+  "MLS2H|handicap": "KXMLS2HSPREAD-26SEP27CLBMIA-CLB2",
+  "MLS2H|total_goals": "KXMLS2HTOTAL-26SEP27CLBMIA-1",
+  "MLSEAST|competition_winner": "KXMLSEAST-26-ATL",
+  "MLSWEST|competition_winner": "KXMLSWEST-26-ATX",
   "MLS|btts": "KXMLSBTTS-26OCT01SEASKC-BTTS",
+  "MLS|competition_winner": "KXMLSCUP-26-ATL",
   "MLS|exact_score": "KXMLSSCORE-26SEP27CLBMIA-CLB0MIA0",
+  "MLS|first_half_btts": "KXMLS1HBTTS-26SEP27CLBMIA-BTTS",
+  "MLS|first_half_handicap": "KXMLS1HSPREAD-26SEP27CLBMIA-CLB2",
+  "MLS|first_half_result": "KXMLS1H-26SEP27CLBMIA-CLB",
   "MLS|first_half_total": "KXMLS1HTOTAL-26SEP27CLBMIA-1",
+  "MLS|first_to_score": "KXMLSFTTS-26SEP27CLBMIA-CLB",
   "MLS|handicap": "KXMLSSPREAD-26OCT01SEASKC-SEA2",
   "MLS|match_result_3way": "KXMLSGAME-26OCT01SEASKC-SEA",
+  "MLS|player_season_leader": "KXMLSLEADER-26GOAL-AGRIEZ7",
   "MLS|team_total": "KXMLSTEAMTOTAL-26SEP27CLBMIA-CLB1",
   "MLS|total_goals": "KXMLSTOTAL-26OCT01SEASKC-1",
   "NWSL|btts": "KXNWSLBTTS-26SEP27URONCC-BTTS",
-  "NWSL|handicap": "KXNWSLSPREAD-26SEP27BAYOPR-BAY2",
-  "NWSL|match_result_3way": "KXNWSLGAME-26SEP27BAYOPR-BAY",
-  "NWSL|total_goals": "KXNWSLTOTAL-26SEP27BAYOPR-3",
-  "None|unknown": "KXAPFDDH-26CLA-CPO",
+  "NWSL|competition_winner": "KXNWSL-26-ANG",
+  "NWSL|handicap": "KXNWSLSPREAD-26SEP27URONCC-NCC2",
+  "NWSL|match_result_3way": "KXNWSLGAME-26SEP27URONCC-NCC",
+  "NWSL|total_goals": "KXNWSLTOTAL-26SEP27URONCC-1",
+  "None|competition_host": "KXCLUBWCHOST-2029-AUSNZL",
+  "None|competition_trophies": "KXSOCCERTROPHIES-27ARS-1",
+  "None|player_award": "KXBALLONDOR-26-BFER",
+  "None|soccer_special": "KXCLUBCHANGEMBAPPE-27-MBA",
+  "None|unknown": "KXCONMEBOLSUD-26-ATL",
+  "PERLIGA1|competition_winner": "KXPERLIGA1-26-AAT",
+  "PERLIGA1|match_result_3way": "KXPERLIGA1GAME-26SEP30CIECHA-CHA",
+  "PREMIERLEAGUE|competition_winner": "KXPREMIERLEAGUE-27-ARS",
+  "SERIEA|competition_last_place": "KXSERIEALAST-27-ACM",
+  "SERIEA|competition_points_margin": "KXSERIEAPOINTMARGIN-27P-0T1",
   "SERIEA|competition_relegation": "KXSERIEARELEGATION-27-ACM",
+  "SERIEA|competition_team_points": "KXSERIEATEAMPOINTS-27-ACM65",
+  "SERIEA|competition_top_n": "KXSERIEATOP-27TOP4-ACM",
+  "SERIEA|competition_winner": "KXSERIEA-27-ACM",
   "SERIEA|match_result_3way": "KXSERIEAGAME-26OCT10GENFIO-FIO",
+  "SERIEA|player_season_leader": "KXSERIEALEADER-27GOAL-ABONNY14",
+  "SUPERLIG|competition_winner": "KXSUPERLIG-27-ALA",
+  "SVK2L|btts": "KXSVK2LBTTS-26SEP28ZIBHUM-BTTS",
+  "SVK2L|handicap": "KXSVK2LSPREAD-26SEP28ZIBHUM-HUM2",
+  "SVK2L|match_result_3way": "KXSVK2LGAME-26SEP28ZIBHUM-HUM",
+  "SVK2L|total_goals": "KXSVK2LTOTAL-26SEP28ZIBHUM-1",
+  "SVKCUP|match_result_3way": "KXSVKCUPGAME-26SEP29BRAZEP-BRA",
+  "TACAPORT|competition_winner": "KXTACAPORT-27-ACV",
+  "THAIL1|competition_winner": "KXTHAIL1-27-AYU",
+  "UCLLEAGUE|competition_winner": "KXUCLLEAGUE-27-AUT",
   "UCLW|match_result_3way": "KXUCLWGAME-26OCT01FAKINT-FAK",
+  "UCL|competition_last_place": "KXUCLBOTTOM-27-AEK",
+  "UCL|competition_top_n": "KXUCLTOP-27-AEK",
+  "UCL|competition_winner": "KXUCL-27-AEK",
+  "UCL|player_season_leader": "KXUCLLEADER-27AST-ABAENA10",
+  "UCL|tournament_advancement": "KXUCLROUND-27FINAL-AEK",
+  "UECL|competition_winner": "KXUECL-27-AGF",
+  "UEFAEURO|competition_qualification": "KXUEFAEUROQUAL-28-ALB",
+  "UEFAEURO|competition_winner": "KXUEFAEURO-28-ALB",
+  "UEFANLGROUP|competition_qualification": "KXUEFANLGROUPQUAL-26A1-BEL",
   "UEFANL|btts": "KXUEFANLBTTS-26OCT01AZELIE-BTTS",
+  "UEFANL|competition_qualification": "KXUEFANLGROUPWIN-26A1-BEL",
+  "UEFANL|competition_winner": "KXUEFANL-27-BEL",
   "UEFANL|exact_score": "KXUEFANLSCORE-26SEP28ARMMNE-ARM0MNE0",
+  "UEFANL|first_half_btts": "KXUEFANL1HBTTS-26SEP28ARMMNE-BTTS",
+  "UEFANL|first_half_handicap": "KXUEFANL1HSPREAD-26SEP28ARMMNE-ARM2",
+  "UEFANL|first_half_result": "KXUEFANL1H-26SEP28ARMMNE-ARM",
   "UEFANL|first_half_total": "KXUEFANL1HTOTAL-26SEP28ARMMNE-1",
+  "UEFANL|first_to_score": "KXUEFANLFTTS-26SEP28ARMMNE-ARM",
   "UEFANL|handicap": "KXUEFANLSPREAD-26OCT01AZELIE-AZE2",
   "UEFANL|match_result_3way": "KXUEFANLGAME-26OCT01AZELIE-AZE",
   "UEFANL|team_total": "KXUEFANLTEAMTOTAL-26SEP28ARMMNE-ARM1",
   "UEFANL|total_goals": "KXUEFANLTOTAL-26OCT01AZELIE-1",
-  "USL|match_result_3way": "KXUSLGAME-26OCT03BRORHO-BRO"
+  "UEFANL|tournament_advancement": "KXUEFANLROUND-27FINAL-BEL",
+  "UEL|competition_winner": "KXUEL-27-ACM",
+  "URYPD|btts": "KXURYPDBTTS-26SEP28WANALB-BTTS",
+  "URYPD|competition_winner": "KXURYPD-26-ALB",
+  "URYPD|handicap": "KXURYPDSPREAD-26SEP28WANALB-ALB2",
+  "URYPD|match_result_3way": "KXURYPDGAME-26SEP28WANALB-ALB",
+  "URYPD|total_goals": "KXURYPDTOTAL-26SEP28WANALB-1",
+  "USLCUP|match_result_3way": "KXUSLCUPGAME-26OCT04HARLFC-HAR",
+  "USL|btts": "KXUSLBTTS-26SEP30BRODET-BTTS",
+  "USL|competition_winner": "KXUSL-26-BIR",
+  "USL|handicap": "KXUSLSPREAD-26SEP30BRODET-BRO2",
+  "USL|match_result_3way": "KXUSLGAME-26OCT03BRORHO-BRO",
+  "USL|total_goals": "KXUSLTOTAL-26SEP30BRODET-1",
+  "VENFUTVE|competition_winner": "KXVENFUTVE-26-ACA",
+  "WCW|competition_winner": "KXWCW-27-ARG",
+  "WC|competition_host": "KXWCHOST-2038-AUCP",
+  "WC|competition_qualification": "KXWCQUAL-30-ALB",
+  "WC|competition_winner": "KXWC-30-ALB"
  },
  "failures": [],
  "families_by_competition": {
   "?": {
-   "unknown": 4186
+   "competition_host": 9,
+   "competition_trophies": 30,
+   "player_award": 167,
+   "soccer_special": 211,
+   "unknown": 95
+  },
+  "APFDDH": {
+   "btts": 2,
+   "competition_winner": 12,
+   "handicap": 8,
+   "match_result_3way": 6,
+   "total_goals": 12
+  },
+  "ARGNACB": {
+   "btts": 1,
+   "handicap": 4,
+   "match_result_3way": 3,
+   "total_goals": 6
+  },
+  "ARGPREMDIV": {
+   "competition_winner": 30
+  },
+  "BELGIANPL": {
+   "competition_winner": 18
   },
   "BRASILEIRO": {
    "btts": 2,
+   "competition_top_n": 40,
+   "competition_winner": 20,
    "handicap": 8,
    "match_result_3way": 57,
    "total_goals": 12
   },
+  "BRASILEIROB": {
+   "btts": 2,
+   "first_half_btts": 1,
+   "first_half_handicap": 2,
+   "first_half_result": 3,
+   "first_half_total": 3,
+   "handicap": 12,
+   "match_result_3way": 39,
+   "total_goals": 17
+  },
+  "BRASILEIROC": {
+   "btts": 1,
+   "handicap": 4,
+   "match_result_3way": 15,
+   "total_goals": 7
+  },
   "BUNDESLIGA": {
+   "competition_last_place": 18,
+   "competition_points_margin": 6,
    "competition_relegation": 18,
-   "match_result_3way": 27
+   "competition_team_points": 72,
+   "competition_top_n": 18,
+   "competition_winner": 18,
+   "match_result_3way": 27,
+   "player_season_leader": 18
+  },
+  "CANPL": {
+   "match_result_3way": 3
+  },
+  "CHLLDP": {
+   "competition_winner": 16
+  },
+  "CHNL1": {
+   "match_result_3way": 3
+  },
+  "CHNSL": {
+   "competition_winner": 16
+  },
+  "CONCACAFGC": {
+   "competition_winner": 23
   },
   "CONCACAFNL": {
    "btts": 16,
+   "competition_winner": 41,
+   "first_half_btts": 7,
+   "first_half_handicap": 14,
+   "first_half_result": 21,
    "first_half_total": 21,
    "handicap": 64,
    "match_result_3way": 117,
-   "total_goals": 96
+   "total_goals": 97
+  },
+  "CONMEBOLLIB": {
+   "competition_winner": 16
+  },
+  "COPAAMERICA": {
+   "competition_host": 3,
+   "competition_winner": 22
   },
   "COPADELREY": {
+   "competition_winner": 23,
    "match_result_3way": 15
   },
+  "COPADOBRASIL": {
+   "competition_winner": 16
+  },
+  "DFBPOKAL": {
+   "competition_winner": 21
+  },
+  "DIMAYOR": {
+   "btts": 2,
+   "handicap": 8,
+   "match_result_3way": 18,
+   "total_goals": 12
+  },
+  "ECULP": {
+   "competition_winner": 16
+  },
+  "EFL": {
+   "competition_promotion": 24,
+   "competition_winner": 13
+  },
+  "EFLCHAMPIONSHIP": {
+   "competition_winner": 24
+  },
+  "EFLL1": {
+   "btts": 4,
+   "handicap": 16,
+   "match_result_3way": 42,
+   "total_goals": 24
+  },
+  "EKSTRAKLASA": {
+   "competition_winner": 18
+  },
+  "ENGNL": {
+   "match_result_3way": 36
+  },
   "EPL": {
+   "competition_head_to_head": 14,
+   "competition_last_place": 20,
+   "competition_points_margin": 6,
    "competition_relegation": 20,
-   "match_result_3way": 27
+   "competition_team_points": 80,
+   "competition_top_n": 80,
+   "match_result_3way": 27,
+   "player_season_leader": 64,
+   "season_player_total": 50
+  },
+  "EREDIVISIE": {
+   "competition_winner": 18
+  },
+  "FA": {
+   "competition_winner": 24
+  },
+  "FIFAW": {
+   "match_result_3way": 48
+  },
+  "INTLFRIENDLY": {
+   "btts": 8,
+   "first_half_btts": 3,
+   "first_half_handicap": 6,
+   "first_half_result": 9,
+   "first_half_total": 9,
+   "handicap": 32,
+   "match_result_3way": 48,
+   "total_goals": 48
+  },
+  "ISRNL": {
+   "btts": 4,
+   "handicap": 16,
+   "match_result_3way": 36,
+   "total_goals": 24
+  },
+  "KNVB": {
+   "competition_winner": 21
   },
   "LALIGA": {
+   "competition_last_place": 20,
+   "competition_points_margin": 6,
    "competition_relegation": 20,
-   "match_result_3way": 27
+   "competition_team_points": 80,
+   "competition_top_n": 40,
+   "competition_winner": 20,
+   "match_result_3way": 27,
+   "player_season_leader": 24
+  },
+  "LALIGA2": {
+   "btts": 1,
+   "handicap": 4,
+   "match_result_3way": 3,
+   "total_goals": 6
   },
   "LIGAEXP": {
    "match_result_3way": 24
   },
   "LIGAMX": {
    "btts": 2,
+   "competition_top_n": 18,
+   "competition_winner": 36,
    "exact_score": 60,
+   "first_half_btts": 2,
+   "first_half_handicap": 4,
+   "first_half_result": 6,
    "first_half_total": 6,
+   "first_to_score": 6,
    "handicap": 8,
    "match_result_3way": 30,
+   "player_season_leader": 16,
    "team_total": 12,
    "total_goals": 12
   },
+  "LIGAMX1H": {
+   "exact_score": 30
+  },
+  "LIGAMX2H": {
+   "btts": 2,
+   "handicap": 4,
+   "total_goals": 6
+  },
+  "LIGAPORTUGAL": {
+   "competition_winner": 18
+  },
   "LIGUE1": {
+   "competition_last_place": 18,
+   "competition_points_margin": 6,
    "competition_relegation": 18,
-   "match_result_3way": 27
+   "competition_team_points": 72,
+   "competition_top_n": 18,
+   "competition_winner": 18,
+   "match_result_3way": 27,
+   "player_season_leader": 22
   },
   "MLS": {
    "btts": 3,
+   "competition_winner": 30,
    "exact_score": 30,
+   "first_half_btts": 1,
+   "first_half_handicap": 2,
+   "first_half_result": 3,
    "first_half_total": 3,
+   "first_to_score": 3,
    "handicap": 12,
    "match_result_3way": 57,
-   "team_total": 6,
-   "total_goals": 18
+   "player_season_leader": 17,
+   "team_total": 7,
+   "total_goals": 19
+  },
+  "MLS1H": {
+   "exact_score": 15
+  },
+  "MLS2H": {
+   "btts": 1,
+   "handicap": 2,
+   "total_goals": 3
+  },
+  "MLSEAST": {
+   "competition_winner": 15
+  },
+  "MLSWEST": {
+   "competition_winner": 15
   },
   "NWSL": {
    "btts": 1,
-   "handicap": 8,
-   "match_result_3way": 6,
-   "total_goals": 12
+   "competition_winner": 16,
+   "handicap": 4,
+   "match_result_3way": 3,
+   "total_goals": 6
+  },
+  "PERLIGA1": {
+   "competition_winner": 18,
+   "match_result_3way": 3
+  },
+  "PREMIERLEAGUE": {
+   "competition_winner": 20
   },
   "SERIEA": {
+   "competition_last_place": 20,
+   "competition_points_margin": 6,
    "competition_relegation": 20,
-   "match_result_3way": 24
+   "competition_team_points": 80,
+   "competition_top_n": 20,
+   "competition_winner": 20,
+   "match_result_3way": 24,
+   "player_season_leader": 20
+  },
+  "SUPERLIG": {
+   "competition_winner": 18
+  },
+  "SVK2L": {
+   "btts": 1,
+   "handicap": 4,
+   "match_result_3way": 3,
+   "total_goals": 6
+  },
+  "SVKCUP": {
+   "match_result_3way": 3
+  },
+  "TACAPORT": {
+   "competition_winner": 20
+  },
+  "THAIL1": {
+   "competition_winner": 16
+  },
+  "UCL": {
+   "competition_last_place": 36,
+   "competition_top_n": 72,
+   "competition_winner": 36,
+   "player_season_leader": 66,
+   "tournament_advancement": 144
+  },
+  "UCLLEAGUE": {
+   "competition_winner": 16
   },
   "UCLW": {
    "match_result_3way": 27
   },
+  "UECL": {
+   "competition_winner": 36
+  },
+  "UEFAEURO": {
+   "competition_qualification": 30,
+   "competition_winner": 30
+  },
   "UEFANL": {
    "btts": 52,
+   "competition_qualification": 16,
+   "competition_winner": 16,
    "exact_score": 540,
+   "first_half_btts": 18,
+   "first_half_handicap": 36,
+   "first_half_result": 54,
    "first_half_total": 54,
+   "first_to_score": 54,
    "handicap": 208,
    "match_result_3way": 210,
    "team_total": 108,
-   "total_goals": 312
+   "total_goals": 312,
+   "tournament_advancement": 16
+  },
+  "UEFANLGROUP": {
+   "competition_qualification": 16
+  },
+  "UEL": {
+   "competition_winner": 36
+  },
+  "URYPD": {
+   "btts": 1,
+   "competition_winner": 16,
+   "handicap": 4,
+   "match_result_3way": 6,
+   "total_goals": 6
   },
   "USL": {
-   "match_result_3way": 51
+   "btts": 2,
+   "competition_winner": 25,
+   "handicap": 8,
+   "match_result_3way": 51,
+   "total_goals": 12
+  },
+  "USLCUP": {
+   "match_result_3way": 3
+  },
+  "VENFUTVE": {
+   "competition_winner": 14
+  },
+  "WC": {
+   "competition_host": 14,
+   "competition_qualification": 76,
+   "competition_winner": 82
+  },
+  "WCW": {
+   "competition_winner": 32
   }
  },
  "family_rules_samples": {
   "btts": {
    "floor_strike": null,
-   "rules_primary": "If Sao Paulo and Santos both score a goal in the Sao Paulo vs Santos Brasileiro Serie A match originally scheduled for Oct 2, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes.",
+   "rules_primary": "If Libertad and Olimpia both score a goal in the Libertad vs Olimpia APF Division de Honor match originally scheduled for Sep 28, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes.",
    "status": "active",
-   "ticker": "KXBRASILEIROBTTS-26OCT02SPASAN-BTTS",
+   "ticker": "KXAPFDDHBTTS-26SEP28LIBOLI-BTTS",
    "title": "Both Teams To Score",
    "yes_sub_title": "Both Teams To Score"
+  },
+  "competition_head_to_head": {
+   "floor_strike": null,
+   "rules_primary": "If Arsenal finishes higher in the final league table than Tottenham in the 2026-27 EPL season, then the market resolves to Yes.",
+   "status": "active",
+   "ticker": "KXEPLH2HFINISH-EPL27ARSTOT-ARS",
+   "title": "Will Arsenal finish higher than Tottenham in the 2026-27 EPL final table?",
+   "yes_sub_title": "Arsenal finishes higher than Tottenham"
+  },
+  "competition_host": {
+   "floor_strike": null,
+   "rules_primary": "If Australia or New Zealand are announced as hosts for the 2029 Men's FIFA Club World Cup and confirmed by any of the Source Agencies, then the market resolves to Yes.",
+   "status": "active",
+   "ticker": "KXCLUBWCHOST-2029-AUSNZL",
+   "title": "Will Australia or New Zealand be announced as hosts for the 2029 Men's FIFA Club World Cup?",
+   "yes_sub_title": "Australia or New Zealand"
+  },
+  "competition_last_place": {
+   "floor_strike": null,
+   "rules_primary": "If M\u00b4gladbach finishes in last place in the league table in the 2026-27 Bundesliga season, then the market resolves to Yes.",
+   "status": "active",
+   "ticker": "KXBUNDESLIGALAST-27-BMG",
+   "title": "Will M\u00b4gladbach finish in last place in the Bundesliga 2026-27 season?",
+   "yes_sub_title": "M\u00b4gladbach"
+  },
+  "competition_points_margin": {
+   "floor_strike": 0,
+   "rules_primary": "If the Bundesliga champion wins the league by between 0 and 1 points, inclusive, over the second-place team in the final official league table in the 2026-27 Bundesliga season, then the market resolves to Yes.",
+   "status": "active",
+   "ticker": "KXBUNDESLIGAPOINTMARGIN-27P-0T1",
+   "title": "Will the Bundesliga champion win by 0 to 1 points?",
+   "yes_sub_title": "0 to 1 points"
+  },
+  "competition_promotion": {
+   "floor_strike": null,
+   "rules_primary": "If Birmingham is promoted from the EFL Championship during the 2026-27 season, then the market resolves to Yes.",
+   "status": "active",
+   "ticker": "KXEFLPROMO-27-BC",
+   "title": "Will Birmingham be promoted from the EFL Championship in the 2026-27 season?",
+   "yes_sub_title": "Birmingham"
+  },
+  "competition_qualification": {
+   "floor_strike": null,
+   "rules_primary": "If Albania qualifies for the 2028 UEFA Euros, then the market resolves to Yes.",
+   "status": "active",
+   "ticker": "KXUEFAEUROQUAL-28-ALB",
+   "title": "Will Albania qualify for the 2028 UEFA Euros?",
+   "yes_sub_title": "Albania"
   },
   "competition_relegation": {
    "floor_strike": null,
@@ -345,37 +929,133 @@
    "title": "Will M\u00b4gladbach be relegated from Bundesliga in 2026-27 Season?",
    "yes_sub_title": "M\u00b4gladbach"
   },
+  "competition_team_points": {
+   "floor_strike": 29.5,
+   "rules_primary": "If M\u00b4gladbach reaches at least 30 points in the 2026-27 Bundesliga season, then the market resolves to Yes.",
+   "status": "active",
+   "ticker": "KXBUNDESLIGATEAMPOINTS-27-BMG30",
+   "title": "Will M\u00b4gladbach finish the 2026-27 Bundesliga season with 30+ points?",
+   "yes_sub_title": "M\u00b4gladbach: 30+ Points"
+  },
+  "competition_top_n": {
+   "floor_strike": null,
+   "rules_primary": "If Atletico Mineiro is a top 4 finisher in the 2026 Brasileiro Serie A season, then the market resolves to Yes.",
+   "status": "active",
+   "ticker": "KXBRASILEIROTOPX-26TOP4-ATL",
+   "title": "Will Atletico Mineiro finish in the top 4 in the 2026 Brasileiro Serie A season?",
+   "yes_sub_title": "Atletico Mineiro"
+  },
+  "competition_trophies": {
+   "floor_strike": 1,
+   "rules_primary": "If Arsenal wins 1+ trophies across the Premier League, FA Cup, League Cup, and the Champions League in the 2026-27 season, then the market resolves to Yes.",
+   "status": "active",
+   "ticker": "KXSOCCERTROPHIES-27ARS-1",
+   "title": "Will Arsenal win at least 1 trophy in the 2026-27 season?",
+   "yes_sub_title": "1+ Trophies"
+  },
+  "competition_winner": {
+   "floor_strike": null,
+   "rules_primary": "If Cerro Porteno is the 2026 APF Division de Honor Clausura Champion, then the market resolves to Yes.",
+   "status": "active",
+   "ticker": "KXAPFDDH-26CLA-CPO",
+   "title": "Will Cerro Porteno win the APF Division de Honor Clausura?",
+   "yes_sub_title": "Cerro Porteno"
+  },
   "exact_score": {
    "floor_strike": null,
-   "rules_primary": "If the result is a 0-0 draw in the Club Leon vs FC Juarez professional Liga MX soccer game originally scheduled for Sep 27, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes.",
+   "rules_primary": "If the score at the end of the 1st Half is Club Leon 0, FC Juarez 0 in the Club Leon vs FC Juarez professional Liga MX soccer game originally scheduled for Sep 27, 2026, then the market resolves to Yes.",
    "status": "active",
-   "ticker": "KXLIGAMXSCORE-26SEP27LEOJUA-LEO0JUA0",
-   "title": "Final score Draw 0-0?",
-   "yes_sub_title": "Draw 0-0"
+   "ticker": "KXLIGAMX1HSCORE-26SEP27LEOJUA-LEO0JUA0",
+   "title": "Will the 1st half score be Draw 0-0?",
+   "yes_sub_title": "Draw 1H 0-0"
+  },
+  "first_half_btts": {
+   "floor_strike": null,
+   "rules_primary": "If America FC and Juventude RS both score a goal in the 1st Half of the America FC vs Juventude RS Brasileiro Serie B match originally scheduled for Sep 28, 2026, then the market resolves to Yes.",
+   "status": "active",
+   "ticker": "KXBRASILEIROB1HBTTS-26SEP28AMGJUV-BTTS",
+   "title": "Both teams score in the 1st Half?",
+   "yes_sub_title": "1st Half: Both Teams To Score"
+  },
+  "first_half_handicap": {
+   "floor_strike": 1.5,
+   "rules_primary": "If America FC win by more than 1.5 goals in the 1st Half of the America FC vs Juventude RS professional Brasileiro Serie B soccer game originally scheduled for Sep 28, 2026, then the market resolves to Yes.",
+   "status": "active",
+   "ticker": "KXBRASILEIROB1HSPREAD-26SEP28AMGJUV-AMG2",
+   "title": "America FC wins by more than 1.5 goals in the 1st Half",
+   "yes_sub_title": "America FC wins the 1H by more than 1.5 goals"
+  },
+  "first_half_result": {
+   "floor_strike": null,
+   "rules_primary": "If America FC is the winner of the first half in the America FC vs Juventude RS professional Brasileiro Serie B soccer game originally scheduled for Sep 28, 2026 after 45 minutes plus stoppage time, then the market resolves to Yes.",
+   "status": "active",
+   "ticker": "KXBRASILEIROB1H-26SEP28AMGJUV-AMG",
+   "title": "America FC wins 1st Half",
+   "yes_sub_title": "America FC wins 1st Half"
   },
   "first_half_total": {
    "floor_strike": 0.5,
-   "rules_primary": "If the total goals scored by Curacao and Nicaragua  is more than 0.5 goals in the 1st Half of the Curacao vs Nicaragua professional CONCACAF Nations League soccer game originally scheduled for Sep 27, 2026, then the market resolves to Yes.",
+   "rules_primary": "If the total goals scored by America FC and Juventude RS  is more than 0.5 goals in the 1st Half of the America FC vs Juventude RS professional Brasileiro Serie B soccer game originally scheduled for Sep 28, 2026, then the market resolves to Yes.",
    "status": "active",
-   "ticker": "KXCONCACAFNL1HTOTAL-26SEP27CUWNIC-1",
+   "ticker": "KXBRASILEIROB1HTOTAL-26SEP28AMGJUV-1",
    "title": "Over 0.5 1H goals scored",
    "yes_sub_title": "Over 0.5 1H goals scored"
   },
+  "first_to_score": {
+   "floor_strike": null,
+   "rules_primary": "If FC Juarez records the first goal during the entire game (regulation, stoppage and any extra time periods) of the Club Leon vs FC Juarez professional Liga MX soccer game originally scheduled for Sep 27, 2026, then the market resolves to Yes.",
+   "status": "active",
+   "ticker": "KXLIGAMXFTTS-26SEP27LEOJUA-JUA",
+   "title": "Will FC Juarez record the first goal of the game?",
+   "yes_sub_title": "FC Juarez"
+  },
   "handicap": {
    "floor_strike": 1.5,
-   "rules_primary": "If Santos wins by more than 1.5 goals in the Sao Paulo vs Santos professional Brasileiro Serie A soccer game originally scheduled for Oct 2, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes.",
+   "rules_primary": "If Libertad wins by more than 1.5 goals in the Libertad vs Olimpia professional APF Division de Honor soccer game originally scheduled for Sep 28, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes.",
    "status": "active",
-   "ticker": "KXBRASILEIROSPREAD-26OCT02SPASAN-SAN2",
-   "title": "Santos wins by more than 1.5 goals?",
-   "yes_sub_title": "Santos wins by more than 1.5 goals"
+   "ticker": "KXAPFDDHSPREAD-26SEP28LIBOLI-LIB2",
+   "title": "Libertad wins by more than 1.5 goals?",
+   "yes_sub_title": "Libertad wins by more than 1.5 goals"
   },
   "match_result_3way": {
    "floor_strike": null,
-   "rules_primary": "If Santos wins the Sao Paulo vs Santos professional Brasileiro Serie A soccer game originally scheduled for Oct 2, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes.",
+   "rules_primary": "If Libertad wins the Libertad vs Olimpia professional APF Division de Honor soccer game originally scheduled for Sep 28, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes.",
    "status": "active",
-   "ticker": "KXBRASILEIROGAME-26OCT02SPASAN-SAN",
-   "title": "Santos wins",
-   "yes_sub_title": "Santos"
+   "ticker": "KXAPFDDHGAME-26SEP28LIBOLI-LIB",
+   "title": "Libertad wins",
+   "yes_sub_title": "Libertad"
+  },
+  "player_award": {
+   "floor_strike": null,
+   "rules_primary": "If Bruno Fernandes wins the Ballon d'Or in 2026, then the market resolves to Yes.",
+   "status": "active",
+   "ticker": "KXBALLONDOR-26-BFER",
+   "title": "Who will win the Ballon d'Or in 2026?",
+   "yes_sub_title": "Bruno Fernandes"
+  },
+  "player_season_leader": {
+   "floor_strike": null,
+   "rules_primary": "If Christian Kofane leads Bundesliga in goals for the 2026-27 regular season, then the market resolves to Yes.",
+   "status": "active",
+   "ticker": "KXBUNDESLIGALEADER-27GOAL-CKOFAN35",
+   "title": "Will Christian Kofane lead Bundesliga in goals for the 2026-27 season?",
+   "yes_sub_title": "Christian Kofane"
+  },
+  "season_player_total": {
+   "floor_strike": 15.5,
+   "rules_primary": "If Alexander Isak records 16+ goals across all games during the 2026-27 EPL season, then the market resolves to Yes.",
+   "status": "active",
+   "ticker": "KXEPLSEASONSTAT-27GOAL-AISAK9-16",
+   "title": "Will Alexander Isak record 16+ goals during the 2026-27 EPL season?",
+   "yes_sub_title": "Alexander Isak: 16+"
+  },
+  "soccer_special": {
+   "floor_strike": null,
+   "rules_primary": "If Kylian Mbappe transfers out of Real Madrid before Jan 1, 2027, then the market resolves to Yes.",
+   "status": "active",
+   "ticker": "KXCLUBCHANGEMBAPPE-27-MBA",
+   "title": "Will Kylian Mbappe leave Real Madrid before Jan 1, 2027?",
+   "yes_sub_title": "Kylian Mbappe leaves before Jan 1, 2027"
   },
   "team_total": {
    "floor_strike": 0.5,
@@ -387,19 +1067,27 @@
   },
   "total_goals": {
    "floor_strike": 0.5,
-   "rules_primary": "If over 0.5 goals are scored in the Sao Paulo vs Santos professional Brasileiro Serie A soccer game originally scheduled for Oct 2, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes.",
+   "rules_primary": "If over 0.5 goals are scored in the Libertad vs Olimpia professional APF Division de Honor soccer game originally scheduled for Sep 28, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes.",
    "status": "active",
-   "ticker": "KXBRASILEIROTOTAL-26OCT02SPASAN-1",
+   "ticker": "KXAPFDDHTOTAL-26SEP28LIBOLI-1",
    "title": "Will over 0.5 goals be scored?",
    "yes_sub_title": "Over 0.5 goals scored"
+  },
+  "tournament_advancement": {
+   "floor_strike": null,
+   "rules_primary": "If AEK Athens is one of the teams to qualify for the Final in the 2026-27 Champions League, then the market resolves to Yes.",
+   "status": "active",
+   "ticker": "KXUCLROUND-27FINAL-AEK",
+   "title": "Will AEK Athens qualify for the Champions League Final?",
+   "yes_sub_title": "AEK Athens"
   }
  },
- "finished_at": "2026-09-27T22:58:09.429745Z",
- "market_count": 6694,
+ "finished_at": "2026-09-27T23:19:42.305981Z",
+ "market_count": 6534,
  "market_status_histogram": {
-  "active": 6694
+  "active": 6534
  },
- "run_id": "disc-20260927T223908Z-54901a",
+ "run_id": "disc-20260927T230633Z-3639e9",
  "series": [
   {
    "fee_multiplier": "1",
@@ -1395,17 +2083,6 @@
   {
    "fee_multiplier": "1",
    "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Esports"
-   ],
-   "ticker": "KXAUSTINMAJOR",
-   "title": "Rennsport at 2025 Esports World Cup"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
    "ownership": "ambiguous",
    "ownership_reason": "bare 'Football' tag; not swept (no soccer wording)",
    "tags": [
@@ -1490,61 +2167,6 @@
    ],
    "ticker": "KXBALOGUNPLAY",
    "title": "Will Balogun Play Today"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Basketball"
-   ],
-   "ticker": "KXBBLGAME",
-   "title": "Bundesliga Basketball Game"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Basketball"
-   ],
-   "ticker": "KXBBSERIEA2GAME",
-   "title": "Italy Serie A2 Game"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Basketball"
-   ],
-   "ticker": "KXBBSERIEAGAME",
-   "title": "Italy Serie A Game"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Basketball"
-   ],
-   "ticker": "KXBBSERIEASPREAD",
-   "title": "Italy Serie A Spread"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Basketball"
-   ],
-   "ticker": "KXBBSERIEATOTAL",
-   "title": "Italy Serie A Total"
   },
   {
    "fee_multiplier": "1",
@@ -4298,39 +4920,6 @@
    "fee_multiplier": "1",
    "fee_type": "quadratic",
    "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Cricket"
-   ],
-   "ticker": "KXCPL",
-   "title": "Caribbean Premier League Champion"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Cricket"
-   ],
-   "ticker": "KXCPLMATCH",
-   "title": "Caribbean Premier League Match"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Cricket"
-   ],
-   "ticker": "KXCPLTEAMTOTAL",
-   "title": "Caribbean Premier League Team Total Runs"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
    "ownership_reason": "soccer tag",
    "tags": [
     "Soccer"
@@ -5607,7 +6196,7 @@
    "fee_multiplier": "1",
    "fee_type": "quadratic",
    "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
+   "ownership_reason": "ticker matches soccer competition grammar",
    "tags": [],
    "ticker": "KXENGCSGOAL",
    "title": "Community Shield Goalscorer"
@@ -5825,7 +6414,7 @@
    "fee_multiplier": "1",
    "fee_type": "quadratic",
    "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
+   "ownership_reason": "ticker matches soccer competition grammar",
    "tags": [
     "Football"
    ],
@@ -6463,237 +7052,6 @@
    "fee_multiplier": "1",
    "fee_type": "quadratic",
    "ownership": "soccer",
-   "ownership_reason": "ticker matches soccer competition grammar",
-   "tags": [
-    "Foreign Exchange"
-   ],
-   "ticker": "KXEURO",
-   "title": "EURO/USD exchange rate"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Esports"
-   ],
-   "ticker": "KXEWCAPEXLEGENDS",
-   "title": "Apex Legends at 2025 Esports World Cup"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Esports"
-   ],
-   "ticker": "KXEWCCALLOFDUTYBLOPS6",
-   "title": "Call of Duty: Black Ops 6 at 2025 Esports World Cup"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Esports"
-   ],
-   "ticker": "KXEWCCHESS",
-   "title": "Chess \u2013 Esports World Cup winner"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Esports"
-   ],
-   "ticker": "KXEWCCHESS2025",
-   "title": "Chess \u2013 Esports World Cup Winner?"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Esports"
-   ],
-   "ticker": "KXEWCCS2",
-   "title": "ESPORTS WORLD CUP COUNTER STRIKE 2"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Esports"
-   ],
-   "ticker": "KXEWCDOTA2",
-   "title": "Dota 2 at 2025 Esports World Cup"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Esports"
-   ],
-   "ticker": "KXEWCEASPORTSFC",
-   "title": "EA SPORTS FC 25 at 2025 Esports World Cup WINNER"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Esports"
-   ],
-   "ticker": "KXEWCFATALFURY",
-   "title": "FATAL FURY: City of the Wolves at 2025 Esports World Cup"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Esports"
-   ],
-   "ticker": "KXEWCFREEFIRE",
-   "title": "Free Fire at 2025 Esports World Cup"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Esports"
-   ],
-   "ticker": "KXEWCHONOROFKINGS",
-   "title": "Honor of Kings World Cup at 2025 Esports World Cup"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Esports"
-   ],
-   "ticker": "KXEWCLEAGUEOFLEGENDS",
-   "title": "League of Legends featured at 2025 Esports World Cup"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Esports"
-   ],
-   "ticker": "KXEWCMLBB",
-   "title": "Mobile Legends: Bang Bang Mid Season Cup at 2025 Esports World Cup"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Esports"
-   ],
-   "ticker": "KXEWCMOBILELEGENDSBBWOMENS",
-   "title": "Mobile Legends: Bang Bang Women's Invitational at 2025 Esports World Cup"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Esports"
-   ],
-   "ticker": "KXEWCPUBGBATTLEG",
-   "title": "PUBG: BATTLEGROUNDS at 2025 Esports World Cup"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Esports"
-   ],
-   "ticker": "KXEWCRAINBOW6SEIGE",
-   "title": "Rainbow Six at 2025 Esports World Cup WINNER"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Esports"
-   ],
-   "ticker": "KXEWCRB6",
-   "title": "Rainbow Six at 2025 Esports World Cup"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Esports"
-   ],
-   "ticker": "KXEWCRSS",
-   "title": "Rainbow Six at 2025 Esports World Cup"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Esports"
-   ],
-   "ticker": "KXEWCSTARCRAFTII",
-   "title": "StarCraft II at 2025 Esports World Cup"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Esports"
-   ],
-   "ticker": "KXEWCTEAMFIGHTTACTICS",
-   "title": "Teamfight Tactics featured at 2025 Esports World Cup"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Esports"
-   ],
-   "ticker": "KXEWCVALORANT",
-   "title": "VALORANT featured at 2025 Esports World Cup"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
    "ownership_reason": "soccer tag",
    "tags": [
     "Soccer"
@@ -6931,26 +7289,6 @@
    ],
    "ticker": "KXFACUPTOTAL",
    "title": "FA Cup Total"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [],
-   "ticker": "KXFIBACHAMPGAME",
-   "title": "FIBA Champions League Game"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Basketball"
-   ],
-   "ticker": "KXFIBACHAMPLEAGUEGAME",
-   "title": "FIBA Champions League Game"
   },
   {
    "fee_multiplier": "1",
@@ -7923,17 +8261,6 @@
    "fee_multiplier": "1",
    "fee_type": "quadratic",
    "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Basketball"
-   ],
-   "ticker": "KXIBPLGAME",
-   "title": "Men's Iceland Basketball Premier League Game"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
    "ownership_reason": "soccer tag",
    "tags": [
     "Soccer"
@@ -8127,17 +8454,6 @@
    ],
    "ticker": "KXINTLPLAYAGAIN",
    "title": "Play Again"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Cricket"
-   ],
-   "ticker": "KXIPLGAME",
-   "title": "Indian Premier League Cricket Game"
   },
   {
    "fee_multiplier": "1",
@@ -10591,28 +10907,6 @@
   {
    "fee_multiplier": "1",
    "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Cricket"
-   ],
-   "ticker": "KXLPL",
-   "title": "Lanka Premier League Champion"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Cricket"
-   ],
-   "ticker": "KXLPLMATCH",
-   "title": "Lanka Premier League Match"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
    "ownership": "ambiguous",
    "ownership_reason": "bare 'Football' tag; not swept (no soccer wording)",
    "tags": [
@@ -11491,94 +11785,6 @@
   {
    "fee_multiplier": "1",
    "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Hockey"
-   ],
-   "ticker": "KXNHLANYGOAL",
-   "title": "Pro Hockey Goalscorer"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Hockey"
-   ],
-   "ticker": "KXNHLGOAL",
-   "title": "NHL Goalscorer"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "ambiguous",
-   "ownership_reason": "bare 'Football' tag; not swept (no soccer wording)",
-   "tags": [
-    "Football"
-   ],
-   "ticker": "KXNHLMVP",
-   "title": "NHL Hart Memorial Trophy Winner"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Hockey"
-   ],
-   "ticker": "KXNHLSEASONGOALS",
-   "title": "Player to score X Goals in Season"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Hockey"
-   ],
-   "ticker": "KXNHLSERIESTOTALGOAL",
-   "title": "NHL Series Total Goals"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Hockey"
-   ],
-   "ticker": "KXNHLSERIESTOTALGOALS",
-   "title": "NHL Series Total Goals"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Hockey"
-   ],
-   "ticker": "KXNHLTEAMTOTAL",
-   "title": "NHL Team Goals Scored During Game"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Hockey"
-   ],
-   "ticker": "KXNHLTOTAL",
-   "title": "NHL Total Goals"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
    "ownership": "ambiguous",
    "ownership_reason": "bare 'Football' tag; not swept (no soccer wording)",
    "tags": [
@@ -11845,17 +12051,6 @@
    "fee_multiplier": "1",
    "fee_type": "quadratic",
    "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Darts"
-   ],
-   "ticker": "KXPREMDARTS",
-   "title": "Premier League Darts Champion"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
    "ownership_reason": "soccer tag",
    "tags": [
     "Soccer"
@@ -11961,17 +12156,6 @@
    ],
    "ticker": "KXRMAPLAYTOGETHER",
    "title": "Real Madrid Play Together"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Rugby"
-   ],
-   "ticker": "KXRUGBYWC",
-   "title": "Men's Rugby World Cup Winner"
   },
   {
    "fee_multiplier": "1",
@@ -13613,17 +13797,6 @@
    "fee_multiplier": "1",
    "fee_type": "quadratic",
    "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Cricket"
-   ],
-   "ticker": "KXT20WORLDCUP",
-   "title": "T20 World Cup Winner"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
    "ownership_reason": "soccer tag",
    "tags": [
     "Soccer"
@@ -13905,17 +14078,6 @@
    ],
    "ticker": "KXTHISISMORETHAN17LETTERS",
    "title": "test"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Esports"
-   ],
-   "ticker": "KXTORONTOULTRACHAMPIONSHIP",
-   "title": "Dota 2 at 2025 Esports World Cup"
   },
   {
    "fee_multiplier": "1",
@@ -15268,7 +15430,7 @@
    "fee_multiplier": "1",
    "fee_type": "quadratic",
    "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
+   "ownership_reason": "ticker matches soccer competition grammar",
    "tags": [],
    "ticker": "KXUEFASCGOAL",
    "title": "Goalscorer"
@@ -15343,7 +15505,7 @@
    "fee_multiplier": "1",
    "fee_type": "quadratic",
    "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
+   "ownership_reason": "ticker matches soccer competition grammar",
    "tags": [],
    "ticker": "KXUEFASUPERCUP",
    "title": "UEFA Super Cup Winner"
@@ -16529,7 +16691,7 @@
    "fee_multiplier": "1",
    "fee_type": "quadratic",
    "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
+   "ownership_reason": "ticker matches soccer competition grammar",
    "tags": [],
    "ticker": "KXWCBRACE",
    "title": "World Cup Any Player to Score a Brace"
@@ -16566,17 +16728,6 @@
    ],
    "ticker": "KXWCCLUBGOALS",
    "title": "World Cup Club Goals"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Esports"
-   ],
-   "ticker": "KXWCCODWARZONE",
-   "title": "Call of Duty: Warzone at 2025 Esports World Cup"
   },
   {
    "fee_multiplier": "1",
@@ -17638,28 +17789,6 @@
    "fee_type": "quadratic",
    "ownership": "soccer",
    "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Basketball"
-   ],
-   "ticker": "KXWDBBLGAME",
-   "title": "Women's Bundesliga Basketball Game"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Basketball"
-   ],
-   "ticker": "KXWFIBAWC",
-   "title": "Women's FIBA World Cup Winner"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
    "tags": [],
    "ticker": "KXWIBPLGAME",
    "title": "Women's Iceland Premier League Game"
@@ -17678,28 +17807,6 @@
   {
    "fee_multiplier": "1",
    "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Hockey"
-   ],
-   "ticker": "KXWOMHOCKEYGOAL",
-   "title": "Olympic Hockey Goalscorer"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Cricket"
-   ],
-   "ticker": "KXWPLGAME",
-   "title": "Women's Indian Premier League Cricket Game"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
    "ownership": "ambiguous",
    "ownership_reason": "bare 'Football' tag; not swept (no soccer wording)",
    "tags": [
@@ -17707,341 +17814,15 @@
    ],
    "ticker": "KXWPMOTY",
    "title": "Walter Peyton Man of the Year"
-  },
-  {
-   "fee_multiplier": "1",
-   "fee_type": "quadratic",
-   "ownership": "soccer",
-   "ownership_reason": "sports category with soccer competition wording",
-   "tags": [
-    "Cricket"
-   ],
-   "ticker": "KXWT20WORLDCUP",
-   "title": "Women's T20 World Cup Winner"
   }
  ],
  "unknown_body_histogram": {
-  "APFDDH": {
-   "example_ticker": "KXAPFDDH-26CLA-CPO",
-   "example_title": "Will Cerro Porteno win the APF Division de Honor Clausura?",
-   "example_yes_sub_title": "Cerro Porteno",
-   "n": 12,
-   "rules_primary": "If Cerro Porteno is the 2026 APF Division de Honor Clausura Champion, then the market resolves to Yes."
-  },
-  "APFDDHBTTS": {
-   "example_ticker": "KXAPFDDHBTTS-26SEP28LIBOLI-BTTS",
-   "example_title": "Both Teams To Score",
-   "example_yes_sub_title": "Both Teams To Score",
-   "n": 2,
-   "rules_primary": "If Libertad and Olimpia both score a goal in the Libertad vs Olimpia APF Division de Honor match originally scheduled for Sep 28, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "APFDDHGAME": {
-   "example_ticker": "KXAPFDDHGAME-26SEP28LIBOLI-LIB",
-   "example_title": "Libertad wins",
-   "example_yes_sub_title": "Libertad",
-   "n": 6,
-   "rules_primary": "If Libertad wins the Libertad vs Olimpia professional APF Division de Honor soccer game originally scheduled for Sep 28, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "APFDDHSPREAD": {
-   "example_ticker": "KXAPFDDHSPREAD-26SEP28LIBOLI-LIB2",
-   "example_title": "Libertad wins by more than 1.5 goals?",
-   "example_yes_sub_title": "Libertad wins by more than 1.5 goals",
-   "n": 8,
-   "rules_primary": "If Libertad wins by more than 1.5 goals in the Libertad vs Olimpia professional APF Division de Honor soccer game originally scheduled for Sep 28, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "APFDDHTOTAL": {
-   "example_ticker": "KXAPFDDHTOTAL-26SEP28LIBOLI-1",
-   "example_title": "Will over 0.5 goals be scored?",
-   "example_yes_sub_title": "Over 0.5 goals scored",
-   "n": 12,
-   "rules_primary": "If over 0.5 goals are scored in the Libertad vs Olimpia professional APF Division de Honor soccer game originally scheduled for Sep 28, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "ARGNACBBTTS": {
-   "example_ticker": "KXARGNACBBTTS-26SEP27GEJSMT-BTTS",
-   "example_title": "Both Teams To Score",
-   "example_yes_sub_title": "Both Teams To Score",
-   "n": 2,
-   "rules_primary": "If Jujuy and Tucuman both score a goal in the Jujuy vs Tucuman Argentine Nacional B match originally scheduled for Sep 27, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "ARGNACBGAME": {
-   "example_ticker": "KXARGNACBGAME-26SEP27GEJSMT-GEJ",
-   "example_title": "Jujuy wins",
-   "example_yes_sub_title": "Jujuy",
-   "n": 6,
-   "rules_primary": "If Jujuy wins the Jujuy vs Tucuman professional Argentine Nacional B soccer game originally scheduled for Sep 27, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "ARGNACBSPREAD": {
-   "example_ticker": "KXARGNACBSPREAD-26SEP27GEJSMT-GEJ2",
-   "example_title": "Jujuy wins by more than 1.5 goals?",
-   "example_yes_sub_title": "Jujuy wins by more than 1.5 goals",
-   "n": 8,
-   "rules_primary": "If Jujuy wins by more than 1.5 goals in the Jujuy vs Tucuman professional Argentine Nacional B soccer game originally scheduled for Sep 27, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "ARGNACBTOTAL": {
-   "example_ticker": "KXARGNACBTOTAL-26SEP27GEJSMT-1",
-   "example_title": "Will over 0.5 goals be scored?",
-   "example_yes_sub_title": "Over 0.5 goals scored",
-   "n": 12,
-   "rules_primary": "If over 0.5 goals are scored in the Jujuy vs Tucuman professional Argentine Nacional B soccer game originally scheduled for Sep 27, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "ARGPREMDIV": {
-   "example_ticker": "KXARGPREMDIV-26CLA-ARG",
-   "example_title": "Will Argentinos Juniors win the Argentina Torneo Clausura?",
-   "example_yes_sub_title": "Argentinos Juniors",
-   "n": 30,
-   "rules_primary": "If Argentinos Juniors is the 2026 Argentina Torneo Clausura Champion, then the market resolves to Yes."
-  },
-  "BALLONDOR": {
-   "example_ticker": "KXBALLONDOR-26-BFER",
-   "example_title": "Who will win the Ballon d'Or in 2026?",
-   "example_yes_sub_title": "Bruno Fernandes",
-   "n": 17,
-   "rules_primary": "If Bruno Fernandes wins the Ballon d'Or in 2026, then the market resolves to Yes."
-  },
-  "BALLONDORAWARD": {
-   "example_ticker": "KXBALLONDORAWARD-26CLUB-ARS",
-   "example_title": "Arsenal wins Men's Club of the Year for the 2025-26 season (2026 award)?",
-   "example_yes_sub_title": "Arsenal",
-   "n": 60,
-   "rules_primary": "If Arsenal wins 2026 Men's Club of the Year for 2025-26 season (2026 award), then the market resolves to Yes."
-  },
-  "BALLONDORRANK": {
-   "example_ticker": "KXBALLONDORRANK-26T10-AHAK",
-   "example_title": "Achraf Hakimi: Top 10 in the 2026 men's Ballon d'Or?",
-   "example_yes_sub_title": "Achraf Hakimi",
-   "n": 90,
-   "rules_primary": "If Achraf Hakimi is ranked top 10 on official final men's Ballon d'Or ranking for 2026, then the market resolves to Yes."
-  },
-  "BELGIANPL": {
-   "example_ticker": "KXBELGIANPL-27-BEV",
-   "example_title": "Will Beveren win the Belgian Pro League?",
-   "example_yes_sub_title": "Beveren",
-   "n": 18,
-   "rules_primary": "If Beveren is the 2026-27 Belgian Pro League Champion, then the market resolves to Yes."
-  },
-  "BRASILEIRO": {
-   "example_ticker": "KXBRASILEIRO-26-ATL",
-   "example_title": "Will Atletico Mineiro win the Brasileiro Serie A?",
-   "example_yes_sub_title": "Atletico Mineiro",
-   "n": 20,
-   "rules_primary": "If Atletico Mineiro is the 2026 Brasileiro Serie A Champion, then the market resolves to Yes."
-  },
-  "BRASILEIROBBTTS": {
-   "example_ticker": "KXBRASILEIROBBTTS-26SEP28AMGJUV-BTTS",
-   "example_title": "Both Teams To Score",
-   "example_yes_sub_title": "Both Teams To Score",
-   "n": 2,
-   "rules_primary": "If America FC and Juventude RS both score a goal in the America FC vs Juventude RS Brasileiro Serie B match originally scheduled for Sep 28, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "BRASILEIROBGAME": {
-   "example_ticker": "KXBRASILEIROBGAME-26OCT01ATHREC-ATH",
-   "example_title": "Athletic Club Sjdr wins",
-   "example_yes_sub_title": "Athletic Club Sjdr",
-   "n": 39,
-   "rules_primary": "If Athletic Club Sjdr wins the Athletic Club Sjdr vs Sport Recife professional Brasileiro Serie B soccer game originally scheduled for Oct 1, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "BRASILEIROBSPREAD": {
-   "example_ticker": "KXBRASILEIROBSPREAD-26SEP27FORATH-ATH2",
-   "example_title": "Athletic Club Sjdr wins by more than 1.5 goals?",
-   "example_yes_sub_title": "Athletic Club Sjdr wins by more than 1.5 goals",
-   "n": 12,
-   "rules_primary": "If Athletic Club Sjdr wins by more than 1.5 goals in the Fortaleza vs Athletic Club Sjdr professional Brasileiro Serie B soccer game originally scheduled for Sep 27, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "BRASILEIROBTOTAL": {
-   "example_ticker": "KXBRASILEIROBTOTAL-26SEP27FORATH-2",
-   "example_title": "Will over 1.5 goals be scored?",
-   "example_yes_sub_title": "Over 1.5 goals scored",
-   "n": 17,
-   "rules_primary": "If over 1.5 goals are scored in the Fortaleza vs Athletic Club Sjdr professional Brasileiro Serie B soccer game originally scheduled for Sep 27, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "BRASILEIROCBTTS": {
-   "example_ticker": "KXBRASILEIROCBTTS-26SEP27BRUARA-BTTS",
-   "example_title": "Both Teams To Score",
-   "example_yes_sub_title": "Both Teams To Score",
-   "n": 1,
-   "rules_primary": "If Brusque and Ferroviaria both score a goal in the Brusque vs Ferroviaria Brasileiro Serie C match originally scheduled for Sep 27, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "BRASILEIROCGAME": {
-   "example_ticker": "KXBRASILEIROCGAME-26OCT03FLOBFC-BFC",
-   "example_title": "Botafogo wins",
-   "example_yes_sub_title": "Botafogo",
-   "n": 15,
-   "rules_primary": "If Botafogo wins the Floresta vs Botafogo professional Brasileiro Serie C soccer game originally scheduled for Oct 3, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "BRASILEIROCSPREAD": {
-   "example_ticker": "KXBRASILEIROCSPREAD-26SEP27BRUARA-ARA2",
-   "example_title": "Ferroviaria wins by more than 1.5 goals?",
-   "example_yes_sub_title": "Ferroviaria wins by more than 1.5 goals",
-   "n": 4,
-   "rules_primary": "If Ferroviaria wins by more than 1.5 goals in the Brusque vs Ferroviaria professional Brasileiro Serie C soccer game originally scheduled for Sep 27, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "BRASILEIROCTOTAL": {
-   "example_ticker": "KXBRASILEIROCTOTAL-26SEP27BRUARA-1",
-   "example_title": "Will over 0.5 goals be scored?",
-   "example_yes_sub_title": "Over 0.5 goals scored",
-   "n": 7,
-   "rules_primary": "If over 0.5 goals are scored in the Brusque vs Ferroviaria professional Brasileiro Serie C soccer game originally scheduled for Sep 27, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "BRASILEIROTOPX": {
-   "example_ticker": "KXBRASILEIROTOPX-26TOP4-ATL",
-   "example_title": "Will Atletico Mineiro finish in the top 4 in the 2026 Brasileiro Serie A season?",
-   "example_yes_sub_title": "Atletico Mineiro",
-   "n": 40,
-   "rules_primary": "If Atletico Mineiro is a top 4 finisher in the 2026 Brasileiro Serie A season, then the market resolves to Yes."
-  },
-  "BUNDESLIGA": {
-   "example_ticker": "KXBUNDESLIGA-27-BMG",
-   "example_title": "Will M\u00b4gladbach win the 2026-27 Bundesliga?",
-   "example_yes_sub_title": "M\u00b4gladbach",
-   "n": 18,
-   "rules_primary": "If M\u00b4gladbach is the 2026-27 Bundesliga champion, then the market resolves to Yes."
-  },
-  "BUNDESLIGALAST": {
-   "example_ticker": "KXBUNDESLIGALAST-27-BMG",
-   "example_title": "Will M\u00b4gladbach finish in last place in the Bundesliga 2026-27 season?",
-   "example_yes_sub_title": "M\u00b4gladbach",
-   "n": 18,
-   "rules_primary": "If M\u00b4gladbach finishes in last place in the league table in the 2026-27 Bundesliga season, then the market resolves to Yes."
-  },
-  "BUNDESLIGALEADER": {
-   "example_ticker": "KXBUNDESLIGALEADER-27GOAL-CKOFAN35",
-   "example_title": "Will Christian Kofane lead Bundesliga in goals for the 2026-27 season?",
-   "example_yes_sub_title": "Christian Kofane",
-   "n": 18,
-   "rules_primary": "If Christian Kofane leads Bundesliga in goals for the 2026-27 regular season, then the market resolves to Yes."
-  },
-  "BUNDESLIGAPOINTMARGIN": {
-   "example_ticker": "KXBUNDESLIGAPOINTMARGIN-27P-0T1",
-   "example_title": "Will the Bundesliga champion win by 0 to 1 points?",
-   "example_yes_sub_title": "0 to 1 points",
-   "n": 6,
-   "rules_primary": "If the Bundesliga champion wins the league by between 0 and 1 points, inclusive, over the second-place team in the final official league table in the 2026-27 Bundesliga season, then the market resolves to Yes."
-  },
-  "BUNDESLIGATEAMPOINTS": {
-   "example_ticker": "KXBUNDESLIGATEAMPOINTS-27-BMG30",
-   "example_title": "Will M\u00b4gladbach finish the 2026-27 Bundesliga season with 30+ points?",
-   "example_yes_sub_title": "M\u00b4gladbach: 30+ Points",
-   "n": 72,
-   "rules_primary": "If M\u00b4gladbach reaches at least 30 points in the 2026-27 Bundesliga season, then the market resolves to Yes."
-  },
-  "BUNDESLIGATOP": {
-   "example_ticker": "KXBUNDESLIGATOP-27TOP4-BMG",
-   "example_title": "Will M\u00b4gladbach finish in the top 4 in the Bundesliga season?",
-   "example_yes_sub_title": "M\u00b4gladbach",
-   "n": 18,
-   "rules_primary": "If M\u00b4gladbach is a top 4 finisher in the 2026-27 Bundesliga season, then the market resolves to Yes."
-  },
-  "CANPLGAME": {
-   "example_ticker": "KXCANPLGAME-26SEP30OTTCAV-CAV",
-   "example_title": "Cavalry wins",
-   "example_yes_sub_title": "Cavalry",
-   "n": 3,
-   "rules_primary": "If Cavalry wins the Ottawa vs Cavalry professional Canadian Premier League soccer game originally scheduled for Sep 30, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "CHLLDP": {
-   "example_ticker": "KXCHLLDP-26-AUD",
-   "example_title": "Will Audax win the Chile Liga de Primera?",
-   "example_yes_sub_title": "Audax",
-   "n": 16,
-   "rules_primary": "If Audax is the 2026 Chile Liga de Primera champion, then the market resolves to Yes."
-  },
-  "CHNL1GAME": {
-   "example_ticker": "KXCHNL1GAME-26SEP29WUXNIP-NIP",
-   "example_title": "Ningbo Professional wins",
-   "example_yes_sub_title": "Ningbo Professional",
-   "n": 3,
-   "rules_primary": "If Ningbo Professional wins the Wuxi Wugou vs Ningbo Professional professional China League 1 soccer game originally scheduled for Sep 29, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "CHNSL": {
-   "example_ticker": "KXCHNSL-26-BJG",
-   "example_title": "Will Beijing Guoan win the Chinese Super League?",
-   "example_yes_sub_title": "Beijing Guoan",
-   "n": 16,
-   "rules_primary": "If Beijing Guoan is the 2026 Chinese Super League champion, then the market resolves to Yes."
-  },
-  "CLUBCHANGEMBAPPE": {
-   "example_ticker": "KXCLUBCHANGEMBAPPE-27-MBA",
-   "example_title": "Will Kylian Mbappe leave Real Madrid before Jan 1, 2027?",
-   "example_yes_sub_title": "Kylian Mbappe leaves before Jan 1, 2027",
-   "n": 1,
-   "rules_primary": "If Kylian Mbappe transfers out of Real Madrid before Jan 1, 2027, then the market resolves to Yes."
-  },
-  "CLUBWCHOST": {
-   "example_ticker": "KXCLUBWCHOST-2029-AUSNZL",
-   "example_title": "Will Australia or New Zealand be announced as hosts for the 2029 Men's FIFA Club World Cup?",
-   "example_yes_sub_title": "Australia or New Zealand",
-   "n": 9,
-   "rules_primary": "If Australia or New Zealand are announced as hosts for the 2029 Men's FIFA Club World Cup and confirmed by any of the Source Agencies, then the market resolves to Yes."
-  },
-  "CONCACAFGC": {
-   "example_ticker": "KXCONCACAFGC-27-BLZ",
-   "example_title": "Will Belize win the 2027 CONCACAF Gold Cup?",
-   "example_yes_sub_title": "Belize",
-   "n": 23,
-   "rules_primary": "If Belize is the 2027 CONCACAF Gold Cup champion, then the market resolves to Yes."
-  },
-  "CONCACAFNL": {
-   "example_ticker": "KXCONCACAFNL-27A-CAN",
-   "example_title": "Will Canada win the CONCACAF Nations League A?",
-   "example_yes_sub_title": "Canada",
-   "n": 41,
-   "rules_primary": "If Canada is the 2026-27 CONCACAF Nations League A champion, then the market resolves to Yes."
-  },
-  "CONCACAFNL1H": {
-   "example_ticker": "KXCONCACAFNL1H-26SEP27CUWNIC-CUW",
-   "example_title": "Curacao wins 1st Half",
-   "example_yes_sub_title": "Curacao wins 1st Half",
-   "n": 21,
-   "rules_primary": "If Curacao is the winner of the first half in the Curacao vs Nicaragua professional CONCACAF Nations League soccer game originally scheduled for Sep 27, 2026 after 45 minutes plus stoppage time, then the market resolves to Yes."
-  },
-  "CONCACAFNL1HBTTS": {
-   "example_ticker": "KXCONCACAFNL1HBTTS-26SEP27CUWNIC-BTTS",
-   "example_title": "Both teams score in the 1st Half?",
-   "example_yes_sub_title": "1st Half: Both Teams To Score",
-   "n": 7,
-   "rules_primary": "If Curacao and Nicaragua both score a goal in the 1st Half of the Curacao vs Nicaragua CONCACAF Nations League match originally scheduled for Sep 27, 2026, then the market resolves to Yes."
-  },
-  "CONCACAFNL1HSPREAD": {
-   "example_ticker": "KXCONCACAFNL1HSPREAD-26SEP27CUWNIC-CUW2",
-   "example_title": "Curacao wins by more than 1.5 goals in the 1st Half",
-   "example_yes_sub_title": "Curacao wins the 1H by more than 1.5 goals",
-   "n": 14,
-   "rules_primary": "If Curacao win by more than 1.5 goals in the 1st Half of the Curacao vs Nicaragua professional CONCACAF Nations League soccer game originally scheduled for Sep 27, 2026, then the market resolves to Yes."
-  },
-  "CONMEBOLLIB": {
-   "example_ticker": "KXCONMEBOLLIB-26-CARC",
-   "example_title": "Will Rosario win the Copa Libertadores?",
-   "example_yes_sub_title": "Rosario",
-   "n": 16,
-   "rules_primary": "If Rosario is the 2026 Copa Libertadores champion, then the market resolves to Yes."
-  },
   "CONMEBOLSUD": {
    "example_ticker": "KXCONMEBOLSUD-26-ATL",
    "example_title": "Will Atl\u00e9tico Mineiro win the 2026 CONMEBOL Sudamericana?",
    "example_yes_sub_title": "Atl\u00e9tico Mineiro",
    "n": 8,
    "rules_primary": "If Atl\u00e9tico Mineiro is the 2026 CONMEBOL Sudamericana champion, then the market resolves to Yes."
-  },
-  "COPAAMERICA": {
-   "example_ticker": "KXCOPAAMERICA-28-ARG",
-   "example_title": "Will Argentina win the 2028 Copa America?",
-   "example_yes_sub_title": "Argentina",
-   "n": 22,
-   "rules_primary": "If Argentina is the 2028 Copa America champion, then the market resolves to Yes."
-  },
-  "COPAAMERICAHOST": {
-   "example_ticker": "KXCOPAAMERICAHOST-28-ARGURGPAR",
-   "example_title": "Will Argentina, Uruguay, or Paraguay be announced as hosts for the 2028 Copa America?",
-   "example_yes_sub_title": "Argentina, Uruguay, or Paraguay",
-   "n": 3,
-   "rules_primary": "If Argentina, Uruguay, or Paraguay are announced as hosts for the 2028 Copa America and confirmed by any of the Source Agencies, then the market resolves to Yes."
-  },
-  "COPADELREY": {
-   "example_ticker": "KXCOPADELREY-27-ALA",
-   "example_title": "Will Alaves win the 2026-27 Copa del Rey?",
-   "example_yes_sub_title": "Alaves",
-   "n": 23,
-   "rules_primary": "If Alaves is the 2026-27 Copa del Rey Champion, then the market resolves to Yes."
   },
   "COPADELREYADVANCE": {
    "example_ticker": "KXCOPADELREYADVANCE-26OCT03BAZATL-ATL",
@@ -18050,124 +17831,12 @@
    "n": 10,
    "rules_primary": "If Atletico Calatayud advance past CD Baztan in the CD Baztan vs Atletico Calatayud soccer tie in the Preliminary Round of the Copa del Rey, then the market resolves to Yes."
   },
-  "COPADOBRASIL": {
-   "example_ticker": "KXCOPADOBRASIL-26-ATL",
-   "example_title": "Will Atletico Mineiro win the 2026 Copa do Brasil?",
-   "example_yes_sub_title": "Atletico Mineiro",
-   "n": 16,
-   "rules_primary": "If Atletico Mineiro is the 2026 Copa do Brasil champion, then the market resolves to Yes."
-  },
   "DENSUPERLIGA": {
    "example_ticker": "KXDENSUPERLIGA-27-AGF",
    "example_title": "Will Aarhus win the Danish Superliga?",
    "example_yes_sub_title": "Aarhus",
    "n": 12,
    "rules_primary": "If Aarhus is the 2026-27 Danish Superliga Champion, then the market resolves to Yes."
-  },
-  "DFBPOKAL": {
-   "example_ticker": "KXDFBPOKAL-27-BMG",
-   "example_title": "Will M\u00b4gladbach win the 2026-27 DFB Pokal?",
-   "example_yes_sub_title": "M\u00b4gladbach",
-   "n": 21,
-   "rules_primary": "If M\u00b4gladbach is the 2026-27 DFB Pokal Champion, then the market resolves to Yes."
-  },
-  "DIMAYORBTTS": {
-   "example_ticker": "KXDIMAYORBTTS-26SEP27CALADR-BTTS",
-   "example_title": "Both Teams To Score",
-   "example_yes_sub_title": "Both Teams To Score",
-   "n": 2,
-   "rules_primary": "If Cali and Aguilas Doradas Rionegro both score a goal in the Cali vs Aguilas Doradas Rionegro Colombian Liga DIMAYOR match originally scheduled for Sep 27, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "DIMAYORGAME": {
-   "example_ticker": "KXDIMAYORGAME-26SEP27CALADR-ADR",
-   "example_title": "Aguilas Doradas Rionegro wins",
-   "example_yes_sub_title": "Aguilas Doradas Rionegro",
-   "n": 21,
-   "rules_primary": "If Aguilas Doradas Rionegro wins the Cali vs Aguilas Doradas Rionegro professional Colombian Liga DIMAYOR soccer game originally scheduled for Sep 27, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "DIMAYORSPREAD": {
-   "example_ticker": "KXDIMAYORSPREAD-26SEP27CALADR-ADR2",
-   "example_title": "Aguilas Doradas Rionegro wins by more than 1.5 goals?",
-   "example_yes_sub_title": "Aguilas Doradas Rionegro wins by more than 1.5 goals",
-   "n": 12,
-   "rules_primary": "If Aguilas Doradas Rionegro wins by more than 1.5 goals in the Cali vs Aguilas Doradas Rionegro professional Colombian Liga DIMAYOR soccer game originally scheduled for Sep 27, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "DIMAYORTOTAL": {
-   "example_ticker": "KXDIMAYORTOTAL-26SEP27CALADR-1",
-   "example_title": "Will over 0.5 goals be scored?",
-   "example_yes_sub_title": "Over 0.5 goals scored",
-   "n": 16,
-   "rules_primary": "If over 0.5 goals are scored in the Cali vs Aguilas Doradas Rionegro professional Colombian Liga DIMAYOR soccer game originally scheduled for Sep 27, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "ECULP": {
-   "example_ticker": "KXECULP-26-BSC",
-   "example_title": "Will Barcelona SC win the Ecuador LigaPro?",
-   "example_yes_sub_title": "Barcelona SC",
-   "n": 16,
-   "rules_primary": "If Barcelona SC is the 2026 Ecuador LigaPro champion, then the market resolves to Yes."
-  },
-  "EFLCHAMPIONSHIP": {
-   "example_ticker": "KXEFLCHAMPIONSHIP-27-BC",
-   "example_title": "Will Birmingham win the EFL Championship?",
-   "example_yes_sub_title": "Birmingham",
-   "n": 24,
-   "rules_primary": "If Birmingham is the 2026-27 EFL Championship Champion, then the market resolves to Yes."
-  },
-  "EFLCUP": {
-   "example_ticker": "KXEFLCUP-27-ARS",
-   "example_title": "Will Arsenal win the 2026-27 EFL Cup?",
-   "example_yes_sub_title": "Arsenal",
-   "n": 13,
-   "rules_primary": "If Arsenal is the 2026-27 EFL Carabao Cup champion, then the market resolves to Yes."
-  },
-  "EFLL1BTTS": {
-   "example_ticker": "KXEFLL1BTTS-26SEP26BRABAR-BTTS",
-   "example_title": "Both Teams To Score",
-   "example_yes_sub_title": "Both Teams To Score",
-   "n": 4,
-   "rules_primary": "If Bradford and Barnsley both score a goal in the Bradford vs Barnsley EFL League One match originally scheduled for Sep 26, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "EFLL1GAME": {
-   "example_ticker": "KXEFLL1GAME-26OCT03BARMKD-BAR",
-   "example_title": "Barnsley wins",
-   "example_yes_sub_title": "Barnsley",
-   "n": 42,
-   "rules_primary": "If Barnsley wins the Barnsley vs Milton Keynes professional EFL League One soccer game originally scheduled for Oct 3, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "EFLL1SPREAD": {
-   "example_ticker": "KXEFLL1SPREAD-26SEP26BRABAR-BAR2",
-   "example_title": "Barnsley wins by more than 1.5 goals?",
-   "example_yes_sub_title": "Barnsley wins by more than 1.5 goals",
-   "n": 16,
-   "rules_primary": "If Barnsley wins by more than 1.5 goals in the Bradford vs Barnsley professional EFL League One soccer game originally scheduled for Sep 26, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "EFLL1TOTAL": {
-   "example_ticker": "KXEFLL1TOTAL-26SEP26BRABAR-1",
-   "example_title": "Will over 0.5 goals be scored?",
-   "example_yes_sub_title": "Over 0.5 goals scored",
-   "n": 24,
-   "rules_primary": "If over 0.5 goals are scored in the Bradford vs Barnsley professional EFL League One soccer game originally scheduled for Sep 26, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "EFLPROMO": {
-   "example_ticker": "KXEFLPROMO-27-BC",
-   "example_title": "Will Birmingham be promoted from the EFL Championship in the 2026-27 season?",
-   "example_yes_sub_title": "Birmingham",
-   "n": 24,
-   "rules_primary": "If Birmingham is promoted from the EFL Championship during the 2026-27 season, then the market resolves to Yes."
-  },
-  "EKSTRAKLASA": {
-   "example_ticker": "KXEKSTRAKLASA-27-CRA",
-   "example_title": "Will Cracovia Krakow win the Ekstraklasa?",
-   "example_yes_sub_title": "Cracovia Krakow",
-   "n": 18,
-   "rules_primary": "If Cracovia Krakow is the 2026-27 Ekstraklasa Champion, then the market resolves to Yes."
-  },
-  "ENGNLGAME": {
-   "example_ticker": "KXENGNLGAME-26SEP29BAASCU-BAA",
-   "example_title": "Barrow wins",
-   "example_yes_sub_title": "Barrow",
-   "n": 36,
-   "rules_primary": "If Barrow wins the Barrow vs Scunthorpe professional English National League soccer game originally scheduled for Sep 29, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
   },
   "EPLH2H": {
    "example_ticker": "KXEPLH2H-27ARSTOT-ARS",
@@ -18176,180 +17845,12 @@
    "n": 6,
    "rules_primary": "If Arsenal wins both regular-season league matches against Tottenham in the 2026-27 EPL season, then the market resolves to Yes."
   },
-  "EPLH2HFINISH": {
-   "example_ticker": "KXEPLH2HFINISH-EPL27ARSTOT-ARS",
-   "example_title": "Will Arsenal finish higher than Tottenham in the 2026-27 EPL final table?",
-   "example_yes_sub_title": "Arsenal finishes higher than Tottenham",
-   "n": 14,
-   "rules_primary": "If Arsenal finishes higher in the final league table than Tottenham in the 2026-27 EPL season, then the market resolves to Yes."
-  },
-  "EPLLAST": {
-   "example_ticker": "KXEPLLAST-27-ARS",
-   "example_title": "Will Arsenal finish in last place in the EPL 2026-27 season?",
-   "example_yes_sub_title": "Arsenal",
-   "n": 20,
-   "rules_primary": "If Arsenal finishes in last place in the league table in the 2026-27 EPL season, then the market resolves to Yes."
-  },
-  "EPLLEADER": {
-   "example_ticker": "KXEPLLEADER-27AST-AGARNA49",
-   "example_title": "Will Alejandro Garnacho lead EPL in assists for the 2026-27 season?",
-   "example_yes_sub_title": "Alejandro Garnacho",
-   "n": 64,
-   "rules_primary": "If Alejandro Garnacho leads the EPL in assists for the 2026-27 regular season, then the market resolves to Yes."
-  },
-  "EPLPOINTMARGIN": {
-   "example_ticker": "KXEPLPOINTMARGIN-27P-0T1",
-   "example_title": "Will the EPL champion win by 0 to 1 points?",
-   "example_yes_sub_title": "0 to 1 points",
-   "n": 6,
-   "rules_primary": "If the EPL champion wins the league by between 0 and 1 points, inclusive, over the second-place team in the final official league table in the 2026-27 EPL season, then the market resolves to Yes."
-  },
-  "EPLSEASONSTAT": {
-   "example_ticker": "KXEPLSEASONSTAT-27GOAL-AISAK9-16",
-   "example_title": "Will Alexander Isak record 16+ goals during the 2026-27 EPL season?",
-   "example_yes_sub_title": "Alexander Isak: 16+",
-   "n": 50,
-   "rules_primary": "If Alexander Isak records 16+ goals across all games during the 2026-27 EPL season, then the market resolves to Yes."
-  },
-  "EPLTEAMPOINTS": {
-   "example_ticker": "KXEPLTEAMPOINTS-27-ARS70",
-   "example_title": "Will Arsenal finish the 2026-27 EPL season with 70+ points?",
-   "example_yes_sub_title": "Arsenal: 70+ Points",
-   "n": 80,
-   "rules_primary": "If Arsenal reaches at least 70 points in the 2026-27 EPL season, then the market resolves to Yes."
-  },
-  "EPLTOP": {
-   "example_ticker": "KXEPLTOP-27TOP2-ARS",
-   "example_title": "Will Arsenal finish in the top 2 in the 2026-27 EPL season?",
-   "example_yes_sub_title": "Arsenal",
-   "n": 80,
-   "rules_primary": "If Arsenal is a top 2 finisher in the 2026-27 EPL season, then the market resolves to Yes."
-  },
-  "EREDIVISIE": {
-   "example_ticker": "KXEREDIVISIE-27-ADO",
-   "example_title": "Will Den Haag win the 2026-27 Eredivisie?",
-   "example_yes_sub_title": "Den Haag",
-   "n": 18,
-   "rules_primary": "If Den Haag is the 2026-27 Eredivisie champion, then the market resolves to Yes."
-  },
-  "FACUP": {
-   "example_ticker": "KXFACUP-27-ARS",
-   "example_title": "Will Arsenal win the 2026-27 FA Cup?",
-   "example_yes_sub_title": "Arsenal",
-   "n": 24,
-   "rules_primary": "If Arsenal is the 2026-2027 FA Cup Winner, then the market resolves to Yes."
-  },
-  "FIFALEAVE": {
-   "example_ticker": "KXFIFALEAVE-27JAN01-YES",
-   "example_title": "Will Gianni Infantino leave from being President of FIFA in 2026?",
-   "example_yes_sub_title": "Yes",
-   "n": 1,
-   "rules_primary": "If Gianni Infantino leaves from being President of FIFA in 2026, then the market resolves to Yes."
-  },
-  "FIFAWGAME": {
-   "example_ticker": "KXFIFAWGAME-26OCT09ALBWAL-ALB",
-   "example_title": "Albania wins",
-   "example_yes_sub_title": "Albania",
-   "n": 48,
-   "rules_primary": "If Albania wins the Albania vs Wales professional FIFA World Cup Qualifiers Women soccer game originally scheduled for Oct 9, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
   "HKANEKNIGHT": {
    "example_ticker": "KXHKANEKNIGHT-26-YES",
    "example_title": "Will Harry Kane be Knighted in 2026?",
    "example_yes_sub_title": "Harry Kane Knighted in 2026",
    "n": 1,
    "rules_primary": "If Harry Kane is confirmed to have been knighted by any of the Source Agencies after Issuance and before Jan 1, 2027, then the market resolves to Yes."
-  },
-  "INTLFRIENDLY1H": {
-   "example_ticker": "KXINTLFRIENDLY1H-26SEP28JPNVEN-JPN",
-   "example_title": "Japan wins 1st Half",
-   "example_yes_sub_title": "Japan wins 1st Half",
-   "n": 9,
-   "rules_primary": "If Japan is the winner of the first half in the Japan vs Venezuela professional Intl Friendlies soccer game originally scheduled for Sep 28, 2026 after 45 minutes plus stoppage time, then the market resolves to Yes."
-  },
-  "INTLFRIENDLY1HBTTS": {
-   "example_ticker": "KXINTLFRIENDLY1HBTTS-26SEP28JPNVEN-BTTS",
-   "example_title": "Both teams score in the 1st Half?",
-   "example_yes_sub_title": "1st Half: Both Teams To Score",
-   "n": 3,
-   "rules_primary": "If Japan and Venezuela both score a goal in the 1st Half of the Japan vs Venezuela Intl Friendlies match originally scheduled for Sep 28, 2026, then the market resolves to Yes."
-  },
-  "INTLFRIENDLY1HSPREAD": {
-   "example_ticker": "KXINTLFRIENDLY1HSPREAD-26SEP28JPNVEN-JPN2",
-   "example_title": "Japan wins by more than 1.5 goals in the 1st Half",
-   "example_yes_sub_title": "Japan wins the 1H by more than 1.5 goals",
-   "n": 6,
-   "rules_primary": "If Japan win by more than 1.5 goals in the 1st Half of the Japan vs Venezuela professional Intl Friendlies soccer game originally scheduled for Sep 28, 2026, then the market resolves to Yes."
-  },
-  "INTLFRIENDLY1HTOTAL": {
-   "example_ticker": "KXINTLFRIENDLY1HTOTAL-26SEP28JPNVEN-1",
-   "example_title": "Over 0.5 1H goals scored",
-   "example_yes_sub_title": "Over 0.5 1H goals scored",
-   "n": 9,
-   "rules_primary": "If the total goals scored by Japan and Venezuela  is more than 0.5 goals in the 1st Half of the Japan vs Venezuela professional Intl Friendlies soccer game originally scheduled for Sep 28, 2026, then the market resolves to Yes."
-  },
-  "INTLFRIENDLYBTTS": {
-   "example_ticker": "KXINTLFRIENDLYBTTS-26SEP28JPNVEN-BTTS",
-   "example_title": "Both Teams To Score",
-   "example_yes_sub_title": "Both Teams To Score",
-   "n": 7,
-   "rules_primary": "If Japan and Venezuela both score a goal in the Japan vs Venezuela Intl Friendlies match originally scheduled for Sep 28, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "INTLFRIENDLYGAME": {
-   "example_ticker": "KXINTLFRIENDLYGAME-26OCT01JPNECU-ECU",
-   "example_title": "Ecuador wins",
-   "example_yes_sub_title": "Ecuador",
-   "n": 48,
-   "rules_primary": "If Ecuador wins the Japan vs Ecuador professional Intl Friendlies soccer game originally scheduled for Oct 1, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "INTLFRIENDLYSPREAD": {
-   "example_ticker": "KXINTLFRIENDLYSPREAD-26SEP28JPNVEN-JPN2",
-   "example_title": "Japan wins by more than 1.5 goals?",
-   "example_yes_sub_title": "Japan wins by more than 1.5 goals",
-   "n": 28,
-   "rules_primary": "If Japan wins by more than 1.5 goals in the Japan vs Venezuela professional Intl Friendlies soccer game originally scheduled for Sep 28, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "INTLFRIENDLYTOTAL": {
-   "example_ticker": "KXINTLFRIENDLYTOTAL-26SEP28JPNVEN-1",
-   "example_title": "Will over 0.5 goals be scored?",
-   "example_yes_sub_title": "Over 0.5 goals scored",
-   "n": 42,
-   "rules_primary": "If over 0.5 goals are scored in the Japan vs Venezuela professional Intl Friendlies soccer game originally scheduled for Sep 28, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "ISRNLBTTS": {
-   "example_ticker": "KXISRNLBTTS-26SEP28HKFMKJ-BTTS",
-   "example_title": "Both Teams To Score",
-   "example_yes_sub_title": "Both Teams To Score",
-   "n": 4,
-   "rules_primary": "If Hapoel Kfar Shelem and Kabilio Jaffa both score a goal in the Hapoel Kfar Shelem vs Kabilio Jaffa Liga Leumit match originally scheduled for Sep 28, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "ISRNLGAME": {
-   "example_ticker": "KXISRNLGAME-26OCT01ASHMHE-ASH",
-   "example_title": "Ashdod wins",
-   "example_yes_sub_title": "Ashdod",
-   "n": 36,
-   "rules_primary": "If Ashdod wins the Ashdod vs M. Herzliya professional Liga Leumit soccer game originally scheduled for Oct 1, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "ISRNLSPREAD": {
-   "example_ticker": "KXISRNLSPREAD-26SEP28HKFMKJ-HKF2",
-   "example_title": "Hapoel Kfar Shelem wins by more than 1.5 goals?",
-   "example_yes_sub_title": "Hapoel Kfar Shelem wins by more than 1.5 goals",
-   "n": 16,
-   "rules_primary": "If Hapoel Kfar Shelem wins by more than 1.5 goals in the Hapoel Kfar Shelem vs Kabilio Jaffa professional Liga Leumit soccer game originally scheduled for Sep 28, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "ISRNLTOTAL": {
-   "example_ticker": "KXISRNLTOTAL-26SEP28HKFMKJ-1",
-   "example_title": "Will over 0.5 goals be scored?",
-   "example_yes_sub_title": "Over 0.5 goals scored",
-   "n": 24,
-   "rules_primary": "If over 0.5 goals are scored in the Hapoel Kfar Shelem vs Kabilio Jaffa professional Liga Leumit soccer game originally scheduled for Sep 28, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "JOINCLUB": {
-   "example_ticker": "KXJOINCLUB-26OCT02CPULISIC-ACM",
-   "example_title": "Where will Christian Pulisic go next?",
-   "example_yes_sub_title": "AC Milan",
-   "n": 156,
-   "rules_primary": "If Christian Pulisic's next club is AC Milan before Oct 2, 2026, then the market resolves to Yes."
   },
   "JOINLEAGUE": {
    "example_ticker": "KXJOINLEAGUE-26OCT02DALABA-BUND",
@@ -18372,124 +17873,12 @@
    "n": 12,
    "rules_primary": "If FC Anyang is the 2026 Korea K League 1 champion, then the market resolves to Yes."
   },
-  "KNVBCUP": {
-   "example_ticker": "KXKNVBCUP-27-ADO",
-   "example_title": "Will Den Haag win the 2026-27 KNVB Cup?",
-   "example_yes_sub_title": "Den Haag",
-   "n": 21,
-   "rules_primary": "If Den Haag is the 2026-27 KNVB Cup champion, then the market resolves to Yes."
-  },
-  "LALIGA": {
-   "example_ticker": "KXLALIGA-27-ALA",
-   "example_title": "Will Alaves win La Liga?",
-   "example_yes_sub_title": "Alaves",
-   "n": 20,
-   "rules_primary": "If Alaves is the 2026-27 La Liga champion, then the market resolves to Yes."
-  },
-  "LALIGA2BTTS": {
-   "example_ticker": "KXLALIGA2BTTS-26SEP28LEGCAS-BTTS",
-   "example_title": "Both Teams To Score",
-   "example_yes_sub_title": "Both Teams To Score",
-   "n": 1,
-   "rules_primary": "If Leganes and Castellon both score a goal in the Leganes vs Castellon La Liga 2 match originally scheduled for Sep 28, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "LALIGA2GAME": {
-   "example_ticker": "KXLALIGA2GAME-26SEP28LEGCAS-CAS",
-   "example_title": "Castellon wins",
-   "example_yes_sub_title": "Castellon",
-   "n": 3,
-   "rules_primary": "If Castellon wins the Leganes vs Castellon professional La Liga 2 soccer game originally scheduled for Sep 28, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "LALIGA2SPREAD": {
-   "example_ticker": "KXLALIGA2SPREAD-26SEP28LEGCAS-CAS2",
-   "example_title": "Castellon wins by more than 1.5 goals?",
-   "example_yes_sub_title": "Castellon wins by more than 1.5 goals",
-   "n": 4,
-   "rules_primary": "If Castellon wins by more than 1.5 goals in the Leganes vs Castellon professional La Liga 2 soccer game originally scheduled for Sep 28, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "LALIGA2TOTAL": {
-   "example_ticker": "KXLALIGA2TOTAL-26SEP28LEGCAS-1",
-   "example_title": "Will over 0.5 goals be scored?",
-   "example_yes_sub_title": "Over 0.5 goals scored",
-   "n": 6,
-   "rules_primary": "If over 0.5 goals are scored in the Leganes vs Castellon professional La Liga 2 soccer game originally scheduled for Sep 28, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "LALIGALAST": {
-   "example_ticker": "KXLALIGALAST-27-ALA",
-   "example_title": "Will Alaves finish in last place in the La Liga 2026-27 season?",
-   "example_yes_sub_title": "Alaves",
-   "n": 20,
-   "rules_primary": "If Alaves finishes in last place in the league table in the 2026-27 La Liga season, then the market resolves to Yes."
-  },
-  "LALIGALEADER": {
-   "example_ticker": "KXLALIGALEADER-27GOAL-ABUDIM17",
-   "example_title": "Will Ante Budimir lead La Liga in goals for the 2026-27 season?",
-   "example_yes_sub_title": "Ante Budimir",
-   "n": 24,
-   "rules_primary": "If Ante Budimir leads La Liga in goals for the 2026-27 regular season, then the market resolves to Yes."
-  },
-  "LALIGAPOINTMARGIN": {
-   "example_ticker": "KXLALIGAPOINTMARGIN-27P-0T2",
-   "example_title": "Will the La Liga champion win by 0 to 2 points?",
-   "example_yes_sub_title": "0 to 2 points",
-   "n": 6,
-   "rules_primary": "If the La Liga champion wins the league by between 0 and 2 points, inclusive, over the second-place team in the final official league table in the 2026-27 La Liga season, then the market resolves to Yes."
-  },
-  "LALIGATEAMPOINTS": {
-   "example_ticker": "KXLALIGATEAMPOINTS-27-ALA35",
-   "example_title": "Will Alaves finish the 2026-27 La Liga season with 35+ points?",
-   "example_yes_sub_title": "Alaves: 35+ Points",
-   "n": 80,
-   "rules_primary": "If Alaves reaches at least 35 points in the 2026-27 La Liga season, then the market resolves to Yes."
-  },
-  "LALIGATOP": {
-   "example_ticker": "KXLALIGATOP-27TOP4-ALA",
-   "example_title": "Will Alaves finish in the top 4 in the La Liga season?",
-   "example_yes_sub_title": "Alaves",
-   "n": 40,
-   "rules_primary": "If Alaves is a top 4 finisher in the 2026-27 La Liga season, then the market resolves to Yes."
-  },
   "LAMINEYAMAL": {
    "example_ticker": "KXLAMINEYAMAL-27-LYAM",
    "example_title": "Will Lamine Yamal leave Barcelona before 2027?",
    "example_yes_sub_title": "Lamine Yamal",
    "n": 1,
    "rules_primary": "If Lamine Yamal transfers out of Barcelona before Jan 1, 2027, then the market resolves to Yes."
-  },
-  "LIGAMX": {
-   "example_ticker": "KXLIGAMX-27APER-ALA",
-   "example_title": "Will Atlante win the Liga MX Apertura?",
-   "example_yes_sub_title": "Atlante",
-   "n": 36,
-   "rules_primary": "If Atlante is the 2026-27 Liga MX Apertura champion, then the market resolves to Yes."
-  },
-  "LIGAMX1H": {
-   "example_ticker": "KXLIGAMX1H-26SEP27LEOJUA-JUA",
-   "example_title": "Juarez wins 1st Half",
-   "example_yes_sub_title": "Juarez wins 1st Half",
-   "n": 6,
-   "rules_primary": "If Juarez is the winner of the first half in the Leon vs Juarez professional Liga MX soccer game originally scheduled for Sep 27, 2026 after 45 minutes plus stoppage time, then the market resolves to Yes."
-  },
-  "LIGAMX1HBTTS": {
-   "example_ticker": "KXLIGAMX1HBTTS-26SEP27LEOJUA-BTTS",
-   "example_title": "Both teams score in the 1st Half?",
-   "example_yes_sub_title": "1st Half: Both Teams To Score",
-   "n": 2,
-   "rules_primary": "If Leon and Juarez both score a goal in the 1st Half of the Leon vs Juarez Liga MX match originally scheduled for Sep 27, 2026, then the market resolves to Yes."
-  },
-  "LIGAMX1HSCORE": {
-   "example_ticker": "KXLIGAMX1HSCORE-26SEP27LEOJUA-LEO0JUA0",
-   "example_title": "Will the 1st half score be Draw 0-0?",
-   "example_yes_sub_title": "Draw 1H 0-0",
-   "n": 30,
-   "rules_primary": "If the score at the end of the 1st Half is Club Leon 0, FC Juarez 0 in the Club Leon vs FC Juarez professional Liga MX soccer game originally scheduled for Sep 27, 2026, then the market resolves to Yes."
-  },
-  "LIGAMX1HSPREAD": {
-   "example_ticker": "KXLIGAMX1HSPREAD-26SEP27LEOJUA-JUA2",
-   "example_title": "Juarez wins by more than 1.5 goals in the 1st Half",
-   "example_yes_sub_title": "Juarez wins the 1H by more than 1.5 goals",
-   "n": 4,
-   "rules_primary": "If Juarez win by more than 1.5 goals in the 1st Half of the Leon vs Juarez professional Liga MX soccer game originally scheduled for Sep 27, 2026, then the market resolves to Yes."
   },
   "LIGAMX2H": {
    "example_ticker": "KXLIGAMX2H-26SEP27LEOJUA-JUA",
@@ -18498,138 +17887,12 @@
    "n": 6,
    "rules_primary": "If Juarez is the winner of the second half in the Leon vs Juarez professional Liga MX soccer game originally scheduled for Sep 27, 2026 after 45 minutes plus stoppage time, then the market resolves to Yes."
   },
-  "LIGAMX2HBTTS": {
-   "example_ticker": "KXLIGAMX2HBTTS-26SEP27LEOJUA-BTTS",
-   "example_title": "Both teams score in the 2nd Half?",
-   "example_yes_sub_title": "2nd Half: Both Teams To Score",
-   "n": 2,
-   "rules_primary": "If Leon and Juarez both score a goal in the 2nd Half of the Leon vs Juarez Liga MX match originally scheduled for Sep 27, 2026, then the market resolves to Yes."
-  },
-  "LIGAMX2HSPREAD": {
-   "example_ticker": "KXLIGAMX2HSPREAD-26SEP27LEOJUA-JUA2",
-   "example_title": "Juarez wins by more than 1.5 goals in the 2nd Half",
-   "example_yes_sub_title": "Juarez wins the 2H by more than 1.5 goals",
-   "n": 4,
-   "rules_primary": "If Juarez win by more than 1.5 goals in the 2nd Half of the Leon vs Juarez professional Liga MX soccer game originally scheduled for Sep 27, 2026, then the market resolves to Yes."
-  },
-  "LIGAMX2HTOTAL": {
-   "example_ticker": "KXLIGAMX2HTOTAL-26SEP27LEOJUA-1",
-   "example_title": "Over 0.5 2H goals scored",
-   "example_yes_sub_title": "Over 0.5 2H goals scored",
-   "n": 6,
-   "rules_primary": "If the total goals scored by Leon and Juarez  is more than 0.5 goals in the 2nd Half of the Leon vs Juarez professional Liga MX soccer game originally scheduled for Sep 27, 2026, then the market resolves to Yes."
-  },
-  "LIGAMXFTTS": {
-   "example_ticker": "KXLIGAMXFTTS-26SEP27LEOJUA-JUA",
-   "example_title": "Will FC Juarez record the first goal of the game?",
-   "example_yes_sub_title": "FC Juarez",
-   "n": 6,
-   "rules_primary": "If FC Juarez records the first goal during the entire game (regulation, stoppage and any extra time periods) of the Club Leon vs FC Juarez professional Liga MX soccer game originally scheduled for Sep 27, 2026, then the market resolves to Yes."
-  },
-  "LIGAMXLEADER": {
-   "example_ticker": "KXLIGAMXLEADER-APER26GOAL-AAVILA9",
-   "example_title": "Will Ali Avila lead Liga MX in goals for the 2026 Apertura season?",
-   "example_yes_sub_title": "Ali Avila",
-   "n": 16,
-   "rules_primary": "If Ali Avila leads Liga MX in goals for the 2026 Apertura regular season, then the market resolves to Yes."
-  },
-  "LIGAMXTOP": {
-   "example_ticker": "KXLIGAMXTOP-26APERTOP8-ALA",
-   "example_title": "Will Atlante finish in the top 8 in the Liga MX Apertura regular season?",
-   "example_yes_sub_title": "Atlante",
-   "n": 18,
-   "rules_primary": "If Atlante is a top 8 finisher in the 2026 Liga MX Apertura regular season, then the market resolves to Yes."
-  },
-  "LIGAPORTUGAL": {
-   "example_ticker": "KXLIGAPORTUGAL-27-ACV",
-   "example_title": "Will Viseu win the Liga Portugal?",
-   "example_yes_sub_title": "Viseu",
-   "n": 18,
-   "rules_primary": "If Viseu is the 2026-27 Liga Portugal Champion, then the market resolves to Yes."
-  },
-  "LIGUE1": {
-   "example_ticker": "KXLIGUE1-27-ANG",
-   "example_title": "Will Angers win the 2026-27 Ligue 1?",
-   "example_yes_sub_title": "Angers",
-   "n": 18,
-   "rules_primary": "If Angers is the 2026-2027 Ligue 1 champion, then the market resolves to Yes."
-  },
-  "LIGUE1LAST": {
-   "example_ticker": "KXLIGUE1LAST-27-ANG",
-   "example_title": "Will Angers finish in last place in the Ligue 1 2026-27 season?",
-   "example_yes_sub_title": "Angers",
-   "n": 18,
-   "rules_primary": "If Angers finishes in last place in the league table in the 2026-27 Ligue 1 season, then the market resolves to Yes."
-  },
-  "LIGUE1LEADER": {
-   "example_ticker": "KXLIGUE1LEADER-27GOAL-AFATI31",
-   "example_title": "Will Ansu Fati lead Ligue 1 in goals for the 2026-27 season?",
-   "example_yes_sub_title": "Ansu Fati",
-   "n": 22,
-   "rules_primary": "If Ansu Fati leads Ligue 1 in goals for the 2026-27 regular season, then the market resolves to Yes."
-  },
-  "LIGUE1POINTMARGIN": {
-   "example_ticker": "KXLIGUE1POINTMARGIN-27P-0T2",
-   "example_title": "Will the Ligue 1 champion win by 0 to 2 points?",
-   "example_yes_sub_title": "0 to 2 points",
-   "n": 6,
-   "rules_primary": "If the Ligue 1 champion wins the league by between 0 and 2 points, inclusive, over the second-place team in the final official league table in the 2026-27 Ligue 1 season, then the market resolves to Yes."
-  },
-  "LIGUE1TEAMPOINTS": {
-   "example_ticker": "KXLIGUE1TEAMPOINTS-27-ANG30",
-   "example_title": "Will Angers finish the 2026-27 Ligue 1 season with 30+ points?",
-   "example_yes_sub_title": "Angers: 30+ Points",
-   "n": 72,
-   "rules_primary": "If Angers reaches at least 30 points in the 2026-27 Ligue 1 season, then the market resolves to Yes."
-  },
-  "LIGUE1TOP": {
-   "example_ticker": "KXLIGUE1TOP-27TOP4-ANG",
-   "example_title": "Will Angers finish in the top 4 in the Ligue 1 season?",
-   "example_yes_sub_title": "Angers",
-   "n": 18,
-   "rules_primary": "If Angers is a top 4 finisher in the 2026-27 Ligue 1 season, then the market resolves to Yes."
-  },
   "MANAGEROUTDATE": {
    "example_ticker": "KXMANAGEROUTDATE-28TUCHEL-27JAN01",
    "example_title": "Will Thomas Tuchel be out before Jan 1, 2027?",
    "example_yes_sub_title": "Out before Jan 1, 2027",
    "n": 4,
    "rules_primary": "If Thomas Tuchel ceases to be the manager of England National Football Team before Jan 1, 2027, then the market resolves to Yes."
-  },
-  "MANAGERSOUT": {
-   "example_ticker": "KXMANAGERSOUT-27JAN01EPL-AARB",
-   "example_title": "Will \u00c1lvaro Arbeloa cease to be manager of Fulham before Jan 1, 2027?",
-   "example_yes_sub_title": "\u00c1lvaro Arbeloa",
-   "n": 40,
-   "rules_primary": "If \u00c1lvaro Arbeloa ceases to be the manager of Fulham before Jan 1, 2027, then the market resolves to Yes."
-  },
-  "MLS1H": {
-   "example_ticker": "KXMLS1H-26SEP27CLBMIA-CLB",
-   "example_title": "Columbus wins 1st Half",
-   "example_yes_sub_title": "Columbus wins 1st Half",
-   "n": 3,
-   "rules_primary": "If Columbus is the winner of the first half in the Columbus vs Miami professional MLS soccer game originally scheduled for Sep 27, 2026 after 45 minutes plus stoppage time, then the market resolves to Yes."
-  },
-  "MLS1HBTTS": {
-   "example_ticker": "KXMLS1HBTTS-26SEP27CLBMIA-BTTS",
-   "example_title": "Both teams score in the 1st Half?",
-   "example_yes_sub_title": "1st Half: Both Teams To Score",
-   "n": 1,
-   "rules_primary": "If Columbus and Miami both score a goal in the 1st Half of the Columbus vs Miami MLS match originally scheduled for Sep 27, 2026, then the market resolves to Yes."
-  },
-  "MLS1HSCORE": {
-   "example_ticker": "KXMLS1HSCORE-26SEP27CLBMIA-CLB0MIA0",
-   "example_title": "Will the 1st half score be Draw 0-0?",
-   "example_yes_sub_title": "Draw 1H 0-0",
-   "n": 15,
-   "rules_primary": "If the score at the end of the 1st Half is Columbus Crew 0, Inter Miami CF 0 in the Columbus Crew vs Inter Miami CF professional MLS soccer game originally scheduled for Sep 27, 2026, then the market resolves to Yes."
-  },
-  "MLS1HSPREAD": {
-   "example_ticker": "KXMLS1HSPREAD-26SEP27CLBMIA-CLB2",
-   "example_title": "Columbus wins by more than 1.5 goals in the 1st Half",
-   "example_yes_sub_title": "Columbus wins the 1H by more than 1.5 goals",
-   "n": 2,
-   "rules_primary": "If Columbus win by more than 1.5 goals in the 1st Half of the Columbus vs Miami professional MLS soccer game originally scheduled for Sep 27, 2026, then the market resolves to Yes."
   },
   "MLS2H": {
    "example_ticker": "KXMLS2H-26SEP27CLBMIA-CLB",
@@ -18638,173 +17901,12 @@
    "n": 3,
    "rules_primary": "If Columbus is the winner of the second half in the Columbus vs Miami professional MLS soccer game originally scheduled for Sep 27, 2026 after 45 minutes plus stoppage time, then the market resolves to Yes."
   },
-  "MLS2HBTTS": {
-   "example_ticker": "KXMLS2HBTTS-26SEP27CLBMIA-BTTS",
-   "example_title": "Both teams score in the 2nd Half?",
-   "example_yes_sub_title": "2nd Half: Both Teams To Score",
-   "n": 1,
-   "rules_primary": "If Columbus and Miami both score a goal in the 2nd Half of the Columbus vs Miami MLS match originally scheduled for Sep 27, 2026, then the market resolves to Yes."
-  },
-  "MLS2HSPREAD": {
-   "example_ticker": "KXMLS2HSPREAD-26SEP27CLBMIA-CLB2",
-   "example_title": "Columbus wins by more than 1.5 goals in the 2nd Half",
-   "example_yes_sub_title": "Columbus wins the 2H by more than 1.5 goals",
-   "n": 2,
-   "rules_primary": "If Columbus win by more than 1.5 goals in the 2nd Half of the Columbus vs Miami professional MLS soccer game originally scheduled for Sep 27, 2026, then the market resolves to Yes."
-  },
-  "MLS2HTOTAL": {
-   "example_ticker": "KXMLS2HTOTAL-26SEP27CLBMIA-1",
-   "example_title": "Over 0.5 2H goals scored",
-   "example_yes_sub_title": "Over 0.5 2H goals scored",
-   "n": 3,
-   "rules_primary": "If the total goals scored by Columbus and Miami  is more than 0.5 goals in the 2nd Half of the Columbus vs Miami professional MLS soccer game originally scheduled for Sep 27, 2026, then the market resolves to Yes."
-  },
-  "MLSCUP": {
-   "example_ticker": "KXMLSCUP-26-ATL",
-   "example_title": "Will Atlanta win the MLS Cup?",
-   "example_yes_sub_title": "Atlanta",
-   "n": 30,
-   "rules_primary": "If Atlanta is the 2026 Major League Soccer (MLS) Cup Champion, then the market resolves to Yes."
-  },
-  "MLSEAST": {
-   "example_ticker": "KXMLSEAST-26-ATL",
-   "example_title": "Will Atlanta win the MLS Eastern Conference?",
-   "example_yes_sub_title": "Atlanta",
-   "n": 15,
-   "rules_primary": "If Atlanta is the 2026 Major League Soccer (MLS) Eastern Conference champion, then the market resolves to Yes."
-  },
-  "MLSFTTS": {
-   "example_ticker": "KXMLSFTTS-26SEP27CLBMIA-CLB",
-   "example_title": "Will Columbus Crew record the first goal of the game?",
-   "example_yes_sub_title": "Columbus Crew",
-   "n": 3,
-   "rules_primary": "If Columbus Crew records the first goal during the entire game (regulation, stoppage and any extra time periods) of the Columbus Crew vs Inter Miami CF professional MLS soccer game originally scheduled for Sep 27, 2026, then the market resolves to Yes."
-  },
-  "MLSLEADER": {
-   "example_ticker": "KXMLSLEADER-26GOAL-AGRIEZ7",
-   "example_title": "Will Antoine Griezmann lead MLS in goals for the 2026 season?",
-   "example_yes_sub_title": "Antoine Griezmann",
-   "n": 17,
-   "rules_primary": "If Antoine Griezmann leads MLS in goals for the 2026 regular season, then the market resolves to Yes."
-  },
-  "MLSWEST": {
-   "example_ticker": "KXMLSWEST-26-ATX",
-   "example_title": "Will Austin win the MLS Western Conference?",
-   "example_yes_sub_title": "Austin",
-   "n": 15,
-   "rules_primary": "If Austin is the 2026 Major League Soccer (MLS) Western Conference champion, then the market resolves to Yes."
-  },
-  "NHLSEASONGOALS": {
-   "example_ticker": "KXNHLSEASONGOALS-27C20-EMALKIN71",
-   "example_title": "Evgeni Malkin: 20+ goals in 2026-27 NHL regular season?",
-   "example_yes_sub_title": "Evgeni Malkin",
-   "n": 86,
-   "rules_primary": "If Evgeni Malkin scores at least 20 goals during the 2026-27 NHL regular season, then the market resolves to Yes."
-  },
-  "NHLTEAMTOTAL": {
-   "example_ticker": "KXNHLTEAMTOTAL-26SEP29FLACAR-CAR2",
-   "example_title": "Carolina over 1.5 goals scored",
-   "example_yes_sub_title": "Carolina over 1.5",
-   "n": 10,
-   "rules_primary": "If Carolina scores over 1.5 goals in the Florida vs Carolina NHL game originally scheduled for Sep 29, 2026, then the market resolves to Yes."
-  },
-  "NHLTOTAL": {
-   "example_ticker": "KXNHLTOTAL-26SEP29CHIVGK-10",
-   "example_title": "Full Game: Over 9.5 goals scored",
-   "example_yes_sub_title": "Over 9.5 goals scored",
-   "n": 45,
-   "rules_primary": "If the teams collectively score more than 9.5 goals in the Chicago vs Vegas NHL game originally scheduled for Sep 29, 2026, then the market resolves to Yes."
-  },
-  "NWSL": {
-   "example_ticker": "KXNWSL-26-ANG",
-   "example_title": "Will Angel City FC win the NWSL Championship Game?",
-   "example_yes_sub_title": "Angel City FC",
-   "n": 16,
-   "rules_primary": "If the Angel City FC are the 2026 NWSL Champion, then the market resolves to Yes."
-  },
-  "PERLIGA1": {
-   "example_ticker": "KXPERLIGA1-26-AAT",
-   "example_title": "Will Alianza Atletico win the Liga 1 Peru?",
-   "example_yes_sub_title": "Alianza Atletico",
-   "n": 18,
-   "rules_primary": "If Alianza Atletico is the 2026 Liga 1 Peru champion, then the market resolves to Yes."
-  },
-  "PERLIGA1GAME": {
-   "example_ticker": "KXPERLIGA1GAME-26SEP30CIECHA-CHA",
-   "example_title": "Los Chankas CYC wins",
-   "example_yes_sub_title": "Los Chankas CYC",
-   "n": 3,
-   "rules_primary": "If Los Chankas CYC wins the Cienciano vs Los Chankas CYC professional Peru Liga 1 soccer game originally scheduled for Sep 30, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
   "POCHETTINOOUT": {
    "example_ticker": "KXPOCHETTINOOUT-30-Y",
    "example_title": "Will Mauricio Pochettino leave as manager of the US Men's National Team before the start date of the 2030 Men's FIFA World Cup main tourname",
    "example_yes_sub_title": "Mauricio Pochettino out before 2030 World Cup",
    "n": 1,
    "rules_primary": "If Mauricio Pochettino leaves his role as the Manager of the US Men's National Team before the start date of the 2030 Men's FIFA World Cup main tournament, then the market resolves to Yes."
-  },
-  "PREMIERLEAGUE": {
-   "example_ticker": "KXPREMIERLEAGUE-27-ARS",
-   "example_title": "Will Arsenal win the English Premier League?",
-   "example_yes_sub_title": "Arsenal",
-   "n": 20,
-   "rules_primary": "If Arsenal is the 2026-27 English Premier League champion, then the market resolves to Yes."
-  },
-  "RUGBYWC": {
-   "example_ticker": "KXRUGBYWC-27-ARG",
-   "example_title": "Will Argentina win the 2027 Men's Rugby World Cup?",
-   "example_yes_sub_title": "Argentina",
-   "n": 24,
-   "rules_primary": "If Argentina wins the 2027 Men's Rugby World Cup, then the market resolves to Yes."
-  },
-  "SERIEA": {
-   "example_ticker": "KXSERIEA-27-ACM",
-   "example_title": "Will Milan win the 2026-27 Serie A?",
-   "example_yes_sub_title": "Milan",
-   "n": 20,
-   "rules_primary": "If Milan is the 2026-2027 Serie A champion, then the market resolves to Yes."
-  },
-  "SERIEALAST": {
-   "example_ticker": "KXSERIEALAST-27-ACM",
-   "example_title": "Will Milan finish in last place in the Serie A 2026-27 season?",
-   "example_yes_sub_title": "Milan",
-   "n": 20,
-   "rules_primary": "If Milan finishes in last place in the league table in the 2026-27 Serie A season, then the market resolves to Yes."
-  },
-  "SERIEALEADER": {
-   "example_ticker": "KXSERIEALEADER-27GOAL-ABONNY14",
-   "example_title": "Will Ange Bonny lead Serie A in goals for the 2026-27 season?",
-   "example_yes_sub_title": "Ange Bonny",
-   "n": 20,
-   "rules_primary": "If Ange Bonny leads Serie A in goals for the 2026-27 regular season, then the market resolves to Yes."
-  },
-  "SERIEAPOINTMARGIN": {
-   "example_ticker": "KXSERIEAPOINTMARGIN-27P-0T1",
-   "example_title": "Will the Serie A champion win by 0 to 1 points?",
-   "example_yes_sub_title": "0 to 1 points",
-   "n": 6,
-   "rules_primary": "If the Serie A champion wins the league by between 0 and 1 points, inclusive, over the second-place team in the final official league table in the 2026-27 Serie A season, then the market resolves to Yes."
-  },
-  "SERIEATEAMPOINTS": {
-   "example_ticker": "KXSERIEATEAMPOINTS-27-ACM65",
-   "example_title": "Will Milan finish the 2026-27 Serie A season with 65+ points?",
-   "example_yes_sub_title": "Milan: 65+ Points",
-   "n": 80,
-   "rules_primary": "If Milan reaches at least 65 points in the 2026-27 Serie A season, then the market resolves to Yes."
-  },
-  "SERIEATOP": {
-   "example_ticker": "KXSERIEATOP-27TOP4-ACM",
-   "example_title": "Will Milan finish in the top 4 in the Serie A season?",
-   "example_yes_sub_title": "Milan",
-   "n": 20,
-   "rules_primary": "If Milan is a top 4 finisher in the 2026-27 Serie A season, then the market resolves to Yes."
-  },
-  "SOCCERRETIRE": {
-   "example_ticker": "KXSOCCERRETIRE-27JUL01-ADIM",
-   "example_title": "Will \u00c1ngel Di Mar\u00eda announce his retirement from soccer before Jul 1, 2027?",
-   "example_yes_sub_title": "\u00c1ngel Di Mar\u00eda",
-   "n": 13,
-   "rules_primary": "If \u00c1ngel Di Mar\u00eda announces his retirement from soccer (must retire from all professional play including domestic and international) before Jul 1, 2027, then the market resolves to Yes."
   },
   "SOCCERTREBLE": {
    "example_ticker": "KXSOCCERTREBLE-27ARS-DOM",
@@ -18813,54 +17915,12 @@
    "n": 2,
    "rules_primary": "If Arsenal wins the domestic treble by winning all three qualifying competitions: Premier League, FA Cup, and Carabao Cup in the 2026-27 season, then the market resolves to Yes."
   },
-  "SOCCERTROPHIES": {
-   "example_ticker": "KXSOCCERTROPHIES-27ARS-1",
-   "example_title": "Will Arsenal win at least 1 trophy in the 2026-27 season?",
-   "example_yes_sub_title": "1+ Trophies",
-   "n": 30,
-   "rules_primary": "If Arsenal wins 1+ trophies across the Premier League, FA Cup, League Cup, and the Champions League in the 2026-27 season, then the market resolves to Yes."
-  },
   "SUPERBALLONDOR": {
    "example_ticker": "KXSUPERBALLONDOR-30-YES",
    "example_title": "Will a Super Ballon d'Or be awarded before 2030?",
    "example_yes_sub_title": "Super Ballon d'Or awarded",
    "n": 1,
    "rules_primary": "If any person is awarded a Super Ballon d'Or before Jan 1, 2030, then the market resolves to Yes."
-  },
-  "SUPERLIG": {
-   "example_ticker": "KXSUPERLIG-27-ALA",
-   "example_title": "Will Alanyaspor win the Turkish Super Lig?",
-   "example_yes_sub_title": "Alanyaspor",
-   "n": 18,
-   "rules_primary": "If Alanyaspor is the 2026-27 Turkish Super Lig Champion, then the market resolves to Yes."
-  },
-  "SVK2LBTTS": {
-   "example_ticker": "KXSVK2LBTTS-26SEP28ZIBHUM-BTTS",
-   "example_title": "Both Teams To Score",
-   "example_yes_sub_title": "Both Teams To Score",
-   "n": 1,
-   "rules_primary": "If Zilina B and FK Humenne both score a goal in the Zilina B vs FK Humenne Slovakian 2. Liga match originally scheduled for Sep 28, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "SVK2LGAME": {
-   "example_ticker": "KXSVK2LGAME-26SEP28ZIBHUM-HUM",
-   "example_title": "FK Humenne wins",
-   "example_yes_sub_title": "FK Humenne",
-   "n": 3,
-   "rules_primary": "If FK Humenne wins the Zilina B vs FK Humenne professional Slovakian 2. Liga soccer game originally scheduled for Sep 28, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "SVK2LSPREAD": {
-   "example_ticker": "KXSVK2LSPREAD-26SEP28ZIBHUM-HUM2",
-   "example_title": "FK Humenne wins by more than 1.5 goals?",
-   "example_yes_sub_title": "FK Humenne wins by more than 1.5 goals",
-   "n": 4,
-   "rules_primary": "If FK Humenne wins by more than 1.5 goals in the Zilina B vs FK Humenne professional Slovakian 2. Liga soccer game originally scheduled for Sep 28, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "SVK2LTOTAL": {
-   "example_ticker": "KXSVK2LTOTAL-26SEP28ZIBHUM-1",
-   "example_title": "Will over 0.5 goals be scored?",
-   "example_yes_sub_title": "Over 0.5 goals scored",
-   "n": 6,
-   "rules_primary": "If over 0.5 goals are scored in the Zilina B vs FK Humenne professional Slovakian 2. Liga soccer game originally scheduled for Sep 28, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
   },
   "SVKCUPADVANCE": {
    "example_ticker": "KXSVKCUPADVANCE-26SEP29BRAZEP-BRA",
@@ -18869,229 +17929,12 @@
    "n": 2,
    "rules_primary": "If Inter Bratislava advance past Podbrezova in the Inter Bratislava vs Podbrezova soccer tie in the Round 4 of the Slovakian Cup, then the market resolves to Yes."
   },
-  "SVKCUPGAME": {
-   "example_ticker": "KXSVKCUPGAME-26SEP29BRAZEP-BRA",
-   "example_title": "Reg Time: Inter Bratislava wins",
-   "example_yes_sub_title": "Reg Time: Inter Bratislava",
-   "n": 3,
-   "rules_primary": "If Inter Bratislava wins the Inter Bratislava vs Podbrezova professional Slovakian Cup soccer game originally scheduled for Sep 29, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "TACAPORT": {
-   "example_ticker": "KXTACAPORT-27-ACV",
-   "example_title": "Will Viseu win the 2026-27 Taca de Portugal?",
-   "example_yes_sub_title": "Viseu",
-   "n": 20,
-   "rules_primary": "If Viseu is the 2026-27 Taca de Portugal champion, then the market resolves to Yes."
-  },
-  "THAIL1": {
-   "example_ticker": "KXTHAIL1-27-AYU",
-   "example_title": "Will Ayutthaya Utd win the Thai League 1?",
-   "example_yes_sub_title": "Ayutthaya Utd",
-   "n": 16,
-   "rules_primary": "If Ayutthaya Utd is the 2026-27 Thai League 1 Champion, then the market resolves to Yes."
-  },
-  "UCL": {
-   "example_ticker": "KXUCL-27-AEK",
-   "example_title": "Will AEK Athens win the Champions League?",
-   "example_yes_sub_title": "AEK Athens",
-   "n": 36,
-   "rules_primary": "If AEK Athens is the 2026-27 Champions League winner, then the market resolves to Yes."
-  },
-  "UCLBOTTOM": {
-   "example_ticker": "KXUCLBOTTOM-27-AEK",
-   "example_title": "Will AEK Athens finish bottom of the table in the league phase for the Champions League?",
-   "example_yes_sub_title": "AEK Athens",
-   "n": 36,
-   "rules_primary": "If AEK Athens finishes at the bottom of the table in the league phase of the 2026-27 Champions League, then the market resolves to Yes."
-  },
-  "UCLLEADER": {
-   "example_ticker": "KXUCLLEADER-27AST-ABAENA10",
-   "example_title": "Will Alex Baena lead Champions League in assists for the 2026-27 season?",
-   "example_yes_sub_title": "Alex Baena",
-   "n": 66,
-   "rules_primary": "If Alex Baena leads Champions League in assists for the 2026-27 tournament, then the market resolves to Yes."
-  },
-  "UCLLEAGUE": {
-   "example_ticker": "KXUCLLEAGUE-27-AUT",
-   "example_title": "Will a team from Austrian Bundesliga win the Champions League?",
-   "example_yes_sub_title": "Austrian Bundesliga",
-   "n": 16,
-   "rules_primary": "If a team from Austrian Bundesliga wins the Champions League in the 2026-27 Season, then the market resolves to Yes."
-  },
-  "UCLROUND": {
-   "example_ticker": "KXUCLROUND-27FINAL-AEK",
-   "example_title": "Will AEK Athens qualify for the Champions League Final?",
-   "example_yes_sub_title": "AEK Athens",
-   "n": 144,
-   "rules_primary": "If AEK Athens is one of the teams to qualify for the Final in the 2026-27 Champions League, then the market resolves to Yes."
-  },
-  "UCLTOP": {
-   "example_ticker": "KXUCLTOP-27-AEK",
-   "example_title": "Will AEK Athens finish top of the table in the league phase for the Champions League?",
-   "example_yes_sub_title": "AEK Athens",
-   "n": 36,
-   "rules_primary": "If AEK Athens finishes at the top of the table in the league phase of the 2026-27 Champions League, then the market resolves to Yes."
-  },
-  "UCLTOP8": {
-   "example_ticker": "KXUCLTOP8-27-AEK",
-   "example_title": "Will AEK Athens finish in the top 8 of the table in the league phase for the Champions League?",
-   "example_yes_sub_title": "AEK Athens",
-   "n": 36,
-   "rules_primary": "If AEK Athens finishes in the top 8 in the league phase of the 2026-27 Champions League, then the market resolves to Yes."
-  },
-  "UECL": {
-   "example_ticker": "KXUECL-27-AGF",
-   "example_title": "Will Aarhus win the UEFA Conference League?",
-   "example_yes_sub_title": "Aarhus",
-   "n": 36,
-   "rules_primary": "If Aarhus is the 2026-27 UEFA Conference League champion, then the market resolves to Yes."
-  },
-  "UEFAEURO": {
-   "example_ticker": "KXUEFAEURO-28-ALB",
-   "example_title": "Will Albania win the 2028 UEFA Euros?",
-   "example_yes_sub_title": "Albania",
-   "n": 30,
-   "rules_primary": "If Albania is the 2028 UEFA European Championship champion, then the market resolves to Yes."
-  },
-  "UEFAEUROQUAL": {
-   "example_ticker": "KXUEFAEUROQUAL-28-ALB",
-   "example_title": "Will Albania qualify for the 2028 UEFA Euros?",
-   "example_yes_sub_title": "Albania",
-   "n": 30,
-   "rules_primary": "If Albania qualifies for the 2028 UEFA Euros, then the market resolves to Yes."
-  },
-  "UEFANL": {
-   "example_ticker": "KXUEFANL-27-BEL",
-   "example_title": "Will Belgium win the UEFA Nations League?",
-   "example_yes_sub_title": "Belgium",
-   "n": 16,
-   "rules_primary": "If Belgium is the 2026-27 UEFA Nations League champion, then the market resolves to Yes."
-  },
-  "UEFANL1H": {
-   "example_ticker": "KXUEFANL1H-26SEP28ARMMNE-ARM",
-   "example_title": "Armenia wins 1st Half",
-   "example_yes_sub_title": "Armenia wins 1st Half",
-   "n": 54,
-   "rules_primary": "If Armenia is the winner of the first half in the Armenia vs Montenegro professional UEFA Nations League soccer game originally scheduled for Sep 28, 2026 after 45 minutes plus stoppage time, then the market resolves to Yes."
-  },
-  "UEFANL1HBTTS": {
-   "example_ticker": "KXUEFANL1HBTTS-26SEP28ARMMNE-BTTS",
-   "example_title": "Both teams score in the 1st Half?",
-   "example_yes_sub_title": "1st Half: Both Teams To Score",
-   "n": 18,
-   "rules_primary": "If Armenia and Montenegro both score a goal in the 1st Half of the Armenia vs Montenegro UEFA Nations League match originally scheduled for Sep 28, 2026, then the market resolves to Yes."
-  },
-  "UEFANL1HSPREAD": {
-   "example_ticker": "KXUEFANL1HSPREAD-26SEP28ARMMNE-ARM2",
-   "example_title": "Armenia wins by more than 1.5 goals in the 1st Half",
-   "example_yes_sub_title": "Armenia wins the 1H by more than 1.5 goals",
-   "n": 36,
-   "rules_primary": "If Armenia win by more than 1.5 goals in the 1st Half of the Armenia vs Montenegro professional UEFA Nations League soccer game originally scheduled for Sep 28, 2026, then the market resolves to Yes."
-  },
-  "UEFANLFTTS": {
-   "example_ticker": "KXUEFANLFTTS-26SEP28ARMMNE-ARM",
-   "example_title": "Will Armenia record the first goal of the game?",
-   "example_yes_sub_title": "Armenia",
-   "n": 54,
-   "rules_primary": "If Armenia records the first goal during the entire game (regulation, stoppage and any extra time periods) of the Armenia vs Montenegro professional UEFA Nations League soccer game originally scheduled for Sep 28, 2026, then the market resolves to Yes."
-  },
-  "UEFANLGROUPQUAL": {
-   "example_ticker": "KXUEFANLGROUPQUAL-26A1-BEL",
-   "example_title": "Will Belgium qualify from UEFA Nations League Group A1?",
-   "example_yes_sub_title": "Belgium",
-   "n": 16,
-   "rules_primary": "If Belgium is one of the teams to qualify from Group A1 for the knockout stages in the 2026-27 UEFA Nations League, then the market resolves to Yes."
-  },
-  "UEFANLGROUPWIN": {
-   "example_ticker": "KXUEFANLGROUPWIN-26A1-BEL",
-   "example_title": "Will Belgium finish first in UEFA Nations League Group A1?",
-   "example_yes_sub_title": "Belgium",
-   "n": 16,
-   "rules_primary": "If Belgium finish first in Group A1 in the 2026-27 UEFA Nations League, then the market resolves to Yes."
-  },
-  "UEFANLROUND": {
-   "example_ticker": "KXUEFANLROUND-27FINAL-BEL",
-   "example_title": "Will Belgium qualify for the UEFA Nations League Final?",
-   "example_yes_sub_title": "Belgium",
-   "n": 16,
-   "rules_primary": "If Belgium is one of the teams to qualify for the Final in the 2026-27 UEFA Nations League, then the market resolves to Yes."
-  },
-  "UEL": {
-   "example_ticker": "KXUEL-27-ACM",
-   "example_title": "Will Milan win the Europa League?",
-   "example_yes_sub_title": "Milan",
-   "n": 36,
-   "rules_primary": "If Milan is the 2026-27 Europa League champion, then the market resolves to Yes."
-  },
-  "URYPD": {
-   "example_ticker": "KXURYPD-26-ALB",
-   "example_title": "Will Albion FC win the Uruguayan Primera Division?",
-   "example_yes_sub_title": "Albion FC",
-   "n": 16,
-   "rules_primary": "If Albion FC is the 2026 Uruguayan Primera Division champion, then the market resolves to Yes."
-  },
-  "URYPDBTTS": {
-   "example_ticker": "KXURYPDBTTS-26SEP27DEFDAN-BTTS",
-   "example_title": "Both Teams To Score",
-   "example_yes_sub_title": "Both Teams To Score",
-   "n": 1,
-   "rules_primary": "If Defensor and Danubio both score a goal in the Defensor vs Danubio Uruguay Primera Division match originally scheduled for Sep 27, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "URYPDGAME": {
-   "example_ticker": "KXURYPDGAME-26SEP27DEFDAN-DAN",
-   "example_title": "Danubio wins",
-   "example_yes_sub_title": "Danubio",
-   "n": 9,
-   "rules_primary": "If Danubio wins the Defensor vs Danubio professional Uruguay Primera Division soccer game originally scheduled for Sep 27, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "URYPDSPREAD": {
-   "example_ticker": "KXURYPDSPREAD-26SEP27DEFDAN-DAN2",
-   "example_title": "Danubio wins by more than 1.5 goals?",
-   "example_yes_sub_title": "Danubio wins by more than 1.5 goals",
-   "n": 4,
-   "rules_primary": "If Danubio wins by more than 1.5 goals in the Defensor vs Danubio professional Uruguay Primera Division soccer game originally scheduled for Sep 27, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "URYPDTOTAL": {
-   "example_ticker": "KXURYPDTOTAL-26SEP27DEFDAN-2",
-   "example_title": "Will over 1.5 goals be scored?",
-   "example_yes_sub_title": "Over 1.5 goals scored",
-   "n": 5,
-   "rules_primary": "If over 1.5 goals are scored in the Defensor vs Danubio professional Uruguay Primera Division soccer game originally scheduled for Sep 27, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "USL": {
-   "example_ticker": "KXUSL-26-BIR",
-   "example_title": "Will Birmingham Legion FC win the USL Championship?",
-   "example_yes_sub_title": "Birmingham Legion FC",
-   "n": 25,
-   "rules_primary": "If Birmingham Legion FC is the 2026 USL Championship champion, then the market resolves to Yes."
-  },
   "USLCUPADVANCE": {
    "example_ticker": "KXUSLCUPADVANCE-26OCT04HARLFC-HAR",
    "example_title": "Hartford Athletic To Advance",
    "example_yes_sub_title": "Hartford Athletic advances",
    "n": 2,
    "rules_primary": "If Hartford Athletic advance past Louisville City in the Hartford Athletic vs Louisville City soccer tie in the Final of the USL Cup and lift the cup, then the market resolves to Yes."
-  },
-  "USLCUPGAME": {
-   "example_ticker": "KXUSLCUPGAME-26OCT04HARLFC-HAR",
-   "example_title": "Reg Time: Hartford Athletic wins",
-   "example_yes_sub_title": "Reg Time: Hartford Athletic",
-   "n": 3,
-   "rules_primary": "If Hartford Athletic wins the Hartford Athletic vs Louisville City professional USL Cup soccer game originally scheduled for Oct 4, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes."
-  },
-  "VENFUTVE": {
-   "example_ticker": "KXVENFUTVE-26-ACA",
-   "example_title": "Will Academia Anzoategui FC win the Venezuela Liga FUTVE?",
-   "example_yes_sub_title": "Academia Anzoategui FC",
-   "n": 14,
-   "rules_primary": "If Academia Anzoategui FC is the 2026 Venezuela Liga FUTVE champion, then the market resolves to Yes."
-  },
-  "WC": {
-   "example_ticker": "KXWC-30-ALB",
-   "example_title": "Will Albania win the 2030 FIFA Men's World Cup?",
-   "example_yes_sub_title": "Albania",
-   "n": 82,
-   "rules_primary": "If Albania is the 2030 FIFA Men's World Cup champion, then the market resolves to Yes."
   },
   "WCCAREERGOALS": {
    "example_ticker": "KXWCCAREERGOALS-KMBAPPE-30",
@@ -19100,33 +17943,12 @@
    "n": 3,
    "rules_primary": "If Kylian Mbappe scores at least 30 goals in FIFA World Cup Tournament games during his career, then the market resolves to Yes."
   },
-  "WCHOST": {
-   "example_ticker": "KXWCHOST-2038-AUCP",
-   "example_title": "Will Argentina, Uruguay, Chile or Paraguay be announced as hosts for the 2038 Men's FIFA World Cup?",
-   "example_yes_sub_title": "Argentina, Uruguay, Chile or Paraguay",
-   "n": 14,
-   "rules_primary": "If Argentina, Uruguay, Chile or Paraguay are announced as hosts for the 2038 Men's FIFA World Cup and confirmed by any of the Source Agencies, then the market resolves to Yes."
-  },
-  "WCQUAL": {
-   "example_ticker": "KXWCQUAL-30-ALB",
-   "example_title": "Will Albania qualify for the 2030 Men's FIFA World Cup?",
-   "example_yes_sub_title": "Albania",
-   "n": 76,
-   "rules_primary": "If Albania qualifies for the 2030 Men's FIFA World Cup main tournament, then the market resolves to Yes."
-  },
   "WCTEAMS": {
    "example_ticker": "KXWCTEAMS-2030-YES",
    "example_title": "Will there be 64 teams in the 2030 World Cup Tournament?",
    "example_yes_sub_title": "64 teams in the 2030 Men's World Cup field",
    "n": 1,
    "rules_primary": "If the 2030 Men's World Cup tournament will have a field of 64 teams for the main tournament and is confirmed by any of the Source Agencies, then the market resolves to Yes."
-  },
-  "WCW": {
-   "example_ticker": "KXWCW-27-ARG",
-   "example_title": "Will Argentina win the 2027 FIFA Women's World Cup?",
-   "example_yes_sub_title": "Argentina",
-   "n": 32,
-   "rules_primary": "If Argentina is the 2027 FIFA Women's World Cup champion, then the market resolves to Yes."
   },
   "WINSTREAKMANU": {
    "example_ticker": "KXWINSTREAKMANU-27-5",
@@ -19138,204 +17960,204 @@
  },
  "unknown_examples": [
   {
-   "rationale": "unknown competition/family token in 'APFDDH'",
-   "ticker": "KXAPFDDH-26CLA-CPO"
+   "rationale": "unknown competition/family token in 'CONMEBOLSUD'",
+   "ticker": "KXCONMEBOLSUD-26-ATL"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDH'",
-   "ticker": "KXAPFDDH-26CLA-GUA"
+   "rationale": "unknown competition/family token in 'CONMEBOLSUD'",
+   "ticker": "KXCONMEBOLSUD-26-BOC"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDH'",
-   "ticker": "KXAPFDDH-26CLA-LIB"
+   "rationale": "unknown competition/family token in 'CONMEBOLSUD'",
+   "ticker": "KXCONMEBOLSUD-26-CIE"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDH'",
-   "ticker": "KXAPFDDH-26CLA-LUQ"
+   "rationale": "unknown competition/family token in 'CONMEBOLSUD'",
+   "ticker": "KXCONMEBOLSUD-26-SAN"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDH'",
-   "ticker": "KXAPFDDH-26CLA-MAY"
+   "rationale": "unknown competition/family token in 'CONMEBOLSUD'",
+   "ticker": "KXCONMEBOLSUD-26-SFE"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDH'",
-   "ticker": "KXAPFDDH-26CLA-NAC"
+   "rationale": "unknown competition/family token in 'CONMEBOLSUD'",
+   "ticker": "KXCONMEBOLSUD-26-SPA"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDH'",
-   "ticker": "KXAPFDDH-26CLA-OLI"
+   "rationale": "unknown competition/family token in 'CONMEBOLSUD'",
+   "ticker": "KXCONMEBOLSUD-26-TOR"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDH'",
-   "ticker": "KXAPFDDH-26CLA-REC"
+   "rationale": "unknown competition/family token in 'CONMEBOLSUD'",
+   "ticker": "KXCONMEBOLSUD-26-VDG"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDH'",
-   "ticker": "KXAPFDDH-26CLA-RUB"
+   "rationale": "unknown competition/family token in 'COPADELREYADVANCE'",
+   "ticker": "KXCOPADELREYADVANCE-26OCT03BAZATL-ATL"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDH'",
-   "ticker": "KXAPFDDH-26CLA-SPO"
+   "rationale": "unknown competition/family token in 'COPADELREYADVANCE'",
+   "ticker": "KXCOPADELREYADVANCE-26OCT03BAZATL-BAZ"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDH'",
-   "ticker": "KXAPFDDH-26CLA-SSL"
+   "rationale": "unknown competition/family token in 'COPADELREYADVANCE'",
+   "ticker": "KXCOPADELREYADVANCE-26OCT03CEULEB-CEU"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDH'",
-   "ticker": "KXAPFDDH-26CLA-TRI"
+   "rationale": "unknown competition/family token in 'COPADELREYADVANCE'",
+   "ticker": "KXCOPADELREYADVANCE-26OCT03CEULEB-LEB"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHBTTS'",
-   "ticker": "KXAPFDDHBTTS-26SEP28LIBOLI-BTTS"
+   "rationale": "unknown competition/family token in 'COPADELREYADVANCE'",
+   "ticker": "KXCOPADELREYADVANCE-26OCT03TEDANA-ANA"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHBTTS'",
-   "ticker": "KXAPFDDHBTTS-26SEP28SSLREC-BTTS"
+   "rationale": "unknown competition/family token in 'COPADELREYADVANCE'",
+   "ticker": "KXCOPADELREYADVANCE-26OCT03TEDANA-TED"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHGAME'",
-   "ticker": "KXAPFDDHGAME-26SEP28LIBOLI-LIB"
+   "rationale": "unknown competition/family token in 'COPADELREYADVANCE'",
+   "ticker": "KXCOPADELREYADVANCE-26OCT04ATLUNI-ATL"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHGAME'",
-   "ticker": "KXAPFDDHGAME-26SEP28LIBOLI-OLI"
+   "rationale": "unknown competition/family token in 'COPADELREYADVANCE'",
+   "ticker": "KXCOPADELREYADVANCE-26OCT04ATLUNI-UNI"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHGAME'",
-   "ticker": "KXAPFDDHGAME-26SEP28LIBOLI-TIE"
+   "rationale": "unknown competition/family token in 'COPADELREYADVANCE'",
+   "ticker": "KXCOPADELREYADVANCE-26OCT04NOJRIB-NOJ"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHGAME'",
-   "ticker": "KXAPFDDHGAME-26SEP28SSLREC-REC"
+   "rationale": "unknown competition/family token in 'COPADELREYADVANCE'",
+   "ticker": "KXCOPADELREYADVANCE-26OCT04NOJRIB-RIB"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHGAME'",
-   "ticker": "KXAPFDDHGAME-26SEP28SSLREC-SSL"
+   "rationale": "unknown competition/family token in 'DENSUPERLIGA'",
+   "ticker": "KXDENSUPERLIGA-27-AGF"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHGAME'",
-   "ticker": "KXAPFDDHGAME-26SEP28SSLREC-TIE"
+   "rationale": "unknown competition/family token in 'DENSUPERLIGA'",
+   "ticker": "KXDENSUPERLIGA-27-BRO"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHSPREAD'",
-   "ticker": "KXAPFDDHSPREAD-26SEP28LIBOLI-LIB2"
+   "rationale": "unknown competition/family token in 'DENSUPERLIGA'",
+   "ticker": "KXDENSUPERLIGA-27-FCC"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHSPREAD'",
-   "ticker": "KXAPFDDHSPREAD-26SEP28LIBOLI-LIB3"
+   "rationale": "unknown competition/family token in 'DENSUPERLIGA'",
+   "ticker": "KXDENSUPERLIGA-27-FCM"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHSPREAD'",
-   "ticker": "KXAPFDDHSPREAD-26SEP28LIBOLI-OLI2"
+   "rationale": "unknown competition/family token in 'DENSUPERLIGA'",
+   "ticker": "KXDENSUPERLIGA-27-HOR"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHSPREAD'",
-   "ticker": "KXAPFDDHSPREAD-26SEP28LIBOLI-OLI3"
+   "rationale": "unknown competition/family token in 'DENSUPERLIGA'",
+   "ticker": "KXDENSUPERLIGA-27-LBY"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHSPREAD'",
-   "ticker": "KXAPFDDHSPREAD-26SEP28SSLREC-REC2"
+   "rationale": "unknown competition/family token in 'DENSUPERLIGA'",
+   "ticker": "KXDENSUPERLIGA-27-NJA"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHSPREAD'",
-   "ticker": "KXAPFDDHSPREAD-26SEP28SSLREC-REC3"
+   "rationale": "unknown competition/family token in 'DENSUPERLIGA'",
+   "ticker": "KXDENSUPERLIGA-27-OBK"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHSPREAD'",
-   "ticker": "KXAPFDDHSPREAD-26SEP28SSLREC-SSL2"
+   "rationale": "unknown competition/family token in 'DENSUPERLIGA'",
+   "ticker": "KXDENSUPERLIGA-27-RAN"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHSPREAD'",
-   "ticker": "KXAPFDDHSPREAD-26SEP28SSLREC-SSL3"
+   "rationale": "unknown competition/family token in 'DENSUPERLIGA'",
+   "ticker": "KXDENSUPERLIGA-27-SIL"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHTOTAL'",
-   "ticker": "KXAPFDDHTOTAL-26SEP28LIBOLI-1"
+   "rationale": "unknown competition/family token in 'DENSUPERLIGA'",
+   "ticker": "KXDENSUPERLIGA-27-SON"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHTOTAL'",
-   "ticker": "KXAPFDDHTOTAL-26SEP28LIBOLI-2"
+   "rationale": "unknown competition/family token in 'DENSUPERLIGA'",
+   "ticker": "KXDENSUPERLIGA-27-VIB"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHTOTAL'",
-   "ticker": "KXAPFDDHTOTAL-26SEP28LIBOLI-3"
+   "rationale": "unknown competition/family token in 'EPLH2H'",
+   "ticker": "KXEPLH2H-27ARSTOT-ARS"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHTOTAL'",
-   "ticker": "KXAPFDDHTOTAL-26SEP28LIBOLI-4"
+   "rationale": "unknown competition/family token in 'EPLH2H'",
+   "ticker": "KXEPLH2H-27ARSTOT-ARSDRAW"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHTOTAL'",
-   "ticker": "KXAPFDDHTOTAL-26SEP28LIBOLI-5"
+   "rationale": "unknown competition/family token in 'EPLH2H'",
+   "ticker": "KXEPLH2H-27ARSTOT-DRAWS"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHTOTAL'",
-   "ticker": "KXAPFDDHTOTAL-26SEP28LIBOLI-6"
+   "rationale": "unknown competition/family token in 'EPLH2H'",
+   "ticker": "KXEPLH2H-27ARSTOT-SPLIT"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHTOTAL'",
-   "ticker": "KXAPFDDHTOTAL-26SEP28SSLREC-1"
+   "rationale": "unknown competition/family token in 'EPLH2H'",
+   "ticker": "KXEPLH2H-27ARSTOT-TOT"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHTOTAL'",
-   "ticker": "KXAPFDDHTOTAL-26SEP28SSLREC-2"
+   "rationale": "unknown competition/family token in 'EPLH2H'",
+   "ticker": "KXEPLH2H-27ARSTOT-TOTDRAW"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHTOTAL'",
-   "ticker": "KXAPFDDHTOTAL-26SEP28SSLREC-3"
+   "rationale": "unknown competition/family token in 'HKANEKNIGHT'",
+   "ticker": "KXHKANEKNIGHT-26-YES"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHTOTAL'",
-   "ticker": "KXAPFDDHTOTAL-26SEP28SSLREC-4"
+   "rationale": "unknown competition/family token in 'JOINLEAGUE'",
+   "ticker": "KXJOINLEAGUE-26OCT02DALABA-BUND"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHTOTAL'",
-   "ticker": "KXAPFDDHTOTAL-26SEP28SSLREC-5"
+   "rationale": "unknown competition/family token in 'JOINLEAGUE'",
+   "ticker": "KXJOINLEAGUE-26OCT02DALABA-EPL"
   },
   {
-   "rationale": "unknown competition/family token in 'APFDDHTOTAL'",
-   "ticker": "KXAPFDDHTOTAL-26SEP28SSLREC-6"
+   "rationale": "unknown competition/family token in 'JOINLEAGUE'",
+   "ticker": "KXJOINLEAGUE-26OCT02DALABA-LALIGA"
   },
   {
-   "rationale": "unknown competition/family token in 'ARGNACBBTTS'",
-   "ticker": "KXARGNACBBTTS-26SEP27GEJSMT-BTTS"
+   "rationale": "unknown competition/family token in 'JOINLEAGUE'",
+   "ticker": "KXJOINLEAGUE-26OCT02DALABA-LIGUE1"
   },
   {
-   "rationale": "unknown competition/family token in 'ARGNACBBTTS'",
-   "ticker": "KXARGNACBBTTS-26SEP27GYTAR-BTTS"
+   "rationale": "unknown competition/family token in 'JOINLEAGUE'",
+   "ticker": "KXJOINLEAGUE-26OCT02DALABA-MLS"
   },
   {
-   "rationale": "unknown competition/family token in 'ARGNACBGAME'",
-   "ticker": "KXARGNACBGAME-26SEP27GEJSMT-GEJ"
+   "rationale": "unknown competition/family token in 'JOINLEAGUE'",
+   "ticker": "KXJOINLEAGUE-26OCT02DALABA-SAUDI"
   },
   {
-   "rationale": "unknown competition/family token in 'ARGNACBGAME'",
-   "ticker": "KXARGNACBGAME-26SEP27GEJSMT-SMT"
+   "rationale": "unknown competition/family token in 'JOINLEAGUE'",
+   "ticker": "KXJOINLEAGUE-26OCT02DALABA-SERIEA"
   },
   {
-   "rationale": "unknown competition/family token in 'ARGNACBGAME'",
-   "ticker": "KXARGNACBGAME-26SEP27GEJSMT-TIE"
+   "rationale": "unknown competition/family token in 'JOINLEAGUE'",
+   "ticker": "KXJOINLEAGUE-26OCT02DALABA-SLIG"
   },
   {
-   "rationale": "unknown competition/family token in 'ARGNACBGAME'",
-   "ticker": "KXARGNACBGAME-26SEP27GYTAR-AR"
+   "rationale": "unknown competition/family token in 'JOINRONALDO'",
+   "ticker": "KXJOINRONALDO-27-BOT"
   },
   {
-   "rationale": "unknown competition/family token in 'ARGNACBGAME'",
-   "ticker": "KXARGNACBGAME-26SEP27GYTAR-GYT"
+   "rationale": "unknown competition/family token in 'JOINRONALDO'",
+   "ticker": "KXJOINRONALDO-27-GS"
   },
   {
-   "rationale": "unknown competition/family token in 'ARGNACBGAME'",
-   "ticker": "KXARGNACBGAME-26SEP27GYTAR-TIE"
+   "rationale": "unknown competition/family token in 'JOINRONALDO'",
+   "ticker": "KXJOINRONALDO-27-HIL"
   },
   {
-   "rationale": "unknown competition/family token in 'ARGNACBSPREAD'",
-   "ticker": "KXARGNACBSPREAD-26SEP27GEJSMT-GEJ2"
+   "rationale": "unknown competition/family token in 'JOINRONALDO'",
+   "ticker": "KXJOINRONALDO-27-LA"
   },
   {
-   "rationale": "unknown competition/family token in 'ARGNACBSPREAD'",
-   "ticker": "KXARGNACBSPREAD-26SEP27GEJSMT-GEJ3"
+   "rationale": "unknown competition/family token in 'JOINRONALDO'",
+   "ticker": "KXJOINRONALDO-27-MCI"
   }
  ]
 }
