@@ -55,12 +55,11 @@ rates are slightly low, consistent with shrinkage toward zero on the log scale.
 * 80% posterior interval on P(home): mean width **0.295**.
 * Grouped realised rates fall inside the bin-average interval in 99.9% of weighted bins (a weak
   test, reported for completeness).
-* Market-as-oracle check (added in the re-run; see JSON `interval_calibration_p_home`): share of
-  matches where the de-vigged market probability lies inside our interval, and the share of matches
-  where |data − market| ≤ 0.05/0.10/0.15. With a 0.29 mean width against a mean absolute
-  disagreement of a few points, coverage of the oracle is far above 80%: **the posterior +
-  inflation is over-dispersed** and `P(edge > 0)` from it is therefore *too conservative*, not too
-  bold. This is the first calibration item on the roadmap.
+* Market-as-oracle check (JSON `interval_calibration_p_home`): the de-vigged market probability
+  lies inside our 80% interval in **92.9%** of matches; mean |data − market| = **0.065**;
+  |data − market| ≤ 0.05 / 0.10 / 0.15 in 45% / 78% / 94% of matches. Against a 0.29 mean width,
+  the posterior + inflation is **over-dispersed**: `P(edge > 0)` computed from it is too
+  conservative, not too bold. First calibration item on the roadmap (target: oracle-inside ≈ 80%).
 
 ## Naive betting sanity check (informational; Bet365 ≠ Kalshi)
 

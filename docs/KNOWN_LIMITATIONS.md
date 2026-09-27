@@ -21,7 +21,7 @@
    model adds information to a bookmaker's pre-match 1X2. Kalshi's soccer books are much thinner
    than Bet365's, which is the only reason to keep measuring.
 8. **Intervals look too wide** (mean 80% width on P(home) ≈ 0.29; the de-vigged market sits inside
-   them far more than 80% of the time). `sigma_model_log_rate`, the decay rate and priors need a
+   them 92.9% of the time against an 80% target). `sigma_model_log_rate`, the decay rate and priors need a
    calibration pass before P(edge>0) can be trusted even directionally.
 9. Game-state, red-card, ET intensity and shoot-out parameters are configured priors, not fitted.
 10. The Dixon-Coles low-score correction is applied analytically in the benchmark family but only

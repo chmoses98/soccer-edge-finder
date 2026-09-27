@@ -341,6 +341,15 @@ def summarise(cfg: Config, preds: list[Pred], elapsed: float) -> dict:
     out["interval_calibration_p_home"] = interval_calibration(
         pdh, lo, hi, yh, level=cfg.interval_level
     )
+    # Market-as-oracle: how often does the de-vigged market probability fall inside our interval?
+    # If the market is close to the truth, an honest 80% interval should contain it ~80% of the
+    # time; much higher means our intervals are too wide, much lower too narrow.
+    inside = (pmh >= lo) & (pmh <= hi)
+    ic = out["interval_calibration_p_home"]
+    ic["market_inside_interval_rate"] = round(float(inside.mean()), 4)
+    ic["mean_abs_data_minus_market"] = round(float(np.abs(pdh - pmh).mean()), 4)
+    for w in (0.05, 0.10, 0.15):
+        ic[f"share_market_within_{w}"] = round(float((np.abs(pdh - pmh) <= w).mean()), 4)
     # paired differences vs market (bootstrap CI on mean per-match log-loss difference)
     lm = -np.log(np.clip(fam["market_only.bet365_prematch_v1"][np.arange(len(y)), y], 1e-9, 1))
     for k, P in fam.items():

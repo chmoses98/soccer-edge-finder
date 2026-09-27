@@ -423,7 +423,7 @@
       "odds are Bet365 pre-match (not verified closing)",
       "some teams use provisional ids (not in canonical registry)"
     ],
-    "observed_at": "2026-09-27T22:02:18.434223+00:00",
+    "observed_at": "2026-09-27T22:22:12.432907+00:00",
     "source": "club_football_match_data"
   },
   "disagreement": {
@@ -452,7 +452,7 @@
       "realised_home_rate": 0.3661
     }
   },
-  "elapsed_s": 428.5,
+  "elapsed_s": 422.9,
   "hybrid_weight_by_season": {
     "2018-19": null,
     "2019-20": 1.0,
@@ -557,7 +557,12 @@
       }
     ],
     "level": 0.8,
+    "market_inside_interval_rate": 0.9285,
+    "mean_abs_data_minus_market": 0.0646,
     "mean_width": 0.2945219557070709,
+    "share_market_within_0.05": 0.4535,
+    "share_market_within_0.1": 0.7834,
+    "share_market_within_0.15": 0.9427,
     "weighted_bin_coverage": 0.9987753102547354
   },
   "n_aligned_scored": 12248,
@@ -662,7 +667,7 @@
     }
   },
   "protocol": "walk_forward_v1",
-  "result_hash": "sha256:2b4c63b6218a9f05f569cb1cd970ccf72346c83b01cca4d8cdbb9b23e796c09e",
+  "result_hash": "sha256:b10d35c9f6eea1caa8f869736b5279d0bf49f97b706cb2388b49552361f29574",
   "seasons_scored": [
     "2019-20",
     "2020-21",
