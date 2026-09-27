@@ -274,3 +274,44 @@ def test_exact_score_semantics_and_orientation(sim):
             )
             tot += price(sem_, sim).fair_mean
     assert tot > 0.995
+
+
+def test_second_half_and_first_half_exact_score_semantics(sim):
+    from soccer_edge.kalshi.schemas import RawMarket
+
+    sh = classify(
+        RawMarket.from_api(
+            {
+                "ticker": "KXLIGAMX2H-26SEP27LEOJUA-JUA",
+                "event_ticker": "x",
+                "title": "Juarez wins 2nd Half",
+            }
+        )
+    )
+    assert sh.family is MarketFamily.SECOND_HALF_RESULT and sh.period is Period.SECOND_HALF
+    sem = resolve_semantics(sh, side_is_home=False)
+    p = price(sem, sim).fair_mean
+    direct = float(((sim.away_ft - sim.away_ht) > (sim.home_ft - sim.home_ht)).mean())
+    assert abs(p - direct) < 1e-9
+    fhs = classify(
+        RawMarket.from_api(
+            {
+                "ticker": "KXLIGAMX1HSCORE-26SEP27LEOJUA-LEO0JUA0",
+                "event_ticker": "x",
+                "title": "1H score 0-0",
+            }
+        )
+    )
+    assert fhs.family is MarketFamily.FIRST_HALF_EXACT_SCORE and fhs.period is Period.FIRST_HALF
+    p00 = price(resolve_semantics(fhs, side_is_home=True), sim).fair_mean
+    assert abs(p00 - float(((sim.home_ht == 0) & (sim.away_ht == 0)).mean())) < 1e-9
+    adv = classify(
+        RawMarket.from_api(
+            {
+                "ticker": "KXCOPADELREYADVANCE-26OCT03BAZATL-ATL",
+                "event_ticker": "x",
+                "title": "Atletico Calatayud To Advance",
+            }
+        )
+    )
+    assert adv.family is MarketFamily.MATCH_WINNER_2WAY and adv.period is Period.INCLUDING_PENS

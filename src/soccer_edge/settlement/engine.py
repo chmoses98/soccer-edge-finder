@@ -83,6 +83,10 @@ def settle(
         if res.home_ht is None or res.away_ht is None:
             return _fin(sem, SettlementOutcome.REFUSED_MISSING_PERIOD_DATA, ev, kalshi_result)
         h, a = res.home_ht, res.away_ht
+    elif sem.period is Period.SECOND_HALF:
+        if res.home_ht is None or res.away_ht is None:
+            return _fin(sem, SettlementOutcome.REFUSED_MISSING_PERIOD_DATA, ev, kalshi_result)
+        h, a = res.home_ft - res.home_ht, res.away_ft - res.away_ht
     elif sem.period in (Period.INCLUDING_ET, Period.INCLUDING_PENS):
         h = res.home_ft + (res.home_et or 0)
         a = res.away_ft + (res.away_et or 0)
@@ -98,8 +102,21 @@ def settle(
         yes = (h if sem.side == "home" else a) > line
     elif fam is MarketFamily.HANDICAP:
         yes = ((h - a) if sem.side == "home" else (a - h)) > line
-    elif fam in (MarketFamily.MATCH_RESULT_3WAY, MarketFamily.FIRST_HALF_RESULT):
+    elif fam in (
+        MarketFamily.MATCH_RESULT_3WAY,
+        MarketFamily.FIRST_HALF_RESULT,
+        MarketFamily.SECOND_HALF_RESULT,
+    ):
         yes = {"home": h > a, "away": a > h, "draw": h == a}[sem.side or "draw"]
+    elif fam in (MarketFamily.EXACT_SCORE, MarketFamily.FIRST_HALF_EXACT_SCORE):
+        hh, aa = divmod(int(sem.k or 0), 100)
+        yes = h == hh and a == aa
+    elif fam in (MarketFamily.FIRST_HALF_BTTS,):
+        yes = h > 0 and a > 0
+    elif fam in (MarketFamily.FIRST_HALF_HANDICAP,):
+        yes = ((h - a) if sem.side == "home" else (a - h)) > line
+    elif fam in (MarketFamily.FIRST_HALF_TEAM_TOTAL,):
+        yes = (h if sem.side == "home" else a) > line
     elif fam is MarketFamily.BTTS:
         yes = h > 0 and a > 0
     elif fam is MarketFamily.CLEAN_SHEET:

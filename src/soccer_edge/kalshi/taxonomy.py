@@ -52,6 +52,8 @@ class MarketFamily(str, Enum):
     PLAYER_AWARD = "player_award"
     SEASON_PLAYER_TOTAL = "season_player_total"
     PLAYER_SEASON_LEADER = "player_season_leader"
+    SECOND_HALF_RESULT = "second_half_result"
+    FIRST_HALF_EXACT_SCORE = "first_half_exact_score"
     FIRST_HALF_BTTS = "first_half_btts"
     FIRST_HALF_HANDICAP = "first_half_handicap"
     FIRST_HALF_TEAM_TOTAL = "first_half_team_total"
@@ -88,6 +90,11 @@ class Scope(str, Enum):
 # (2026-09-27, 6,694 contracts) or in sibling-repo archives. Longest token wins when splitting.
 FAMILY_TOKENS: dict[str, tuple[MarketFamily, Scope, bool]] = {
     "1HTEAMTOTAL": (MarketFamily.FIRST_HALF_TEAM_TOTAL, Scope.MATCH, False),
+    "1HSCORE": (MarketFamily.FIRST_HALF_EXACT_SCORE, Scope.MATCH, True),
+    "2H": (MarketFamily.SECOND_HALF_RESULT, Scope.MATCH, True),
+    "ADVANCE": (MarketFamily.MATCH_WINNER_2WAY, Scope.MATCH, True),
+    "H2H": (MarketFamily.COMPETITION_HEAD_TO_HEAD, Scope.COMPETITION, True),
+    "TREBLE": (MarketFamily.COMPETITION_TROPHIES, Scope.COMPETITION, True),
     "1HSPREAD": (MarketFamily.FIRST_HALF_HANDICAP, Scope.MATCH, True),
     "1HTOTAL": (MarketFamily.FIRST_HALF_TOTAL, Scope.MATCH, True),
     "1HBTTS": (MarketFamily.FIRST_HALF_BTTS, Scope.MATCH, True),
@@ -152,8 +159,24 @@ SPECIAL_BODIES: dict[str, MarketFamily] = {
     "BALLONDORAWARD": MarketFamily.PLAYER_AWARD,
     "BALLONDORRANK": MarketFamily.PLAYER_AWARD,
     "SOCCERTROPHIES": MarketFamily.COMPETITION_TROPHIES,
+    "SUPERBALLONDOR": MarketFamily.PLAYER_AWARD,
+    "WCCAREERGOALS": MarketFamily.SEASON_PLAYER_TOTAL,
+    "WCTEAMS": MarketFamily.SOCCER_SPECIAL,
+    "HKANEKNIGHT": MarketFamily.SOCCER_SPECIAL,
+    "LAMINEYAMAL": MarketFamily.SOCCER_SPECIAL,
+    "POCHETTINOOUT": MarketFamily.SOCCER_SPECIAL,
+    "MANAGEROUTDATE": MarketFamily.SOCCER_SPECIAL,
 }
-_SPECIAL_PREFIXES = ("CLUBCHANGE", "JOINCLUB", "MANAGERSOUT", "BALLONDOR")
+_SPECIAL_PREFIXES = (
+    "CLUBCHANGE",
+    "JOINCLUB",
+    "JOINLEAGUE",
+    "JOINRONALDO",
+    "MANAGERSOUT",
+    "MANAGEROUT",
+    "BALLONDOR",
+    "WINSTREAK",
+)
 
 # Kalshi competition codes observed live (37 series, 2026-07..09) -> canonical competition ids.
 # None means "known soccer competition without a canonical id yet" (kept as soccer, mapped later).
@@ -206,6 +229,19 @@ COMPETITION_CODES: dict[str, str | None] = {
     "CWC": "fifa.club_world_cup",
     "WWC": "fifa.womens_world_cup",
     "WCW": "fifa.womens_world_cup",
+    "FIFAW": None,
+    "INTLFRIENDLY": None,
+    "CONMEBOLSUD": None,
+    "DENSUPERLIGA": None,
+    "KLEAGUE": None,
+    "DIMAYOR": None,
+    "EFLL1": None,
+    "EFLL2": None,
+    "EFL": None,
+    "ISRNL": None,
+    "ENGNL": None,
+    "SVKCUP": None,
+    "USLCUP": None,
     "PREMIERLEAGUE": "eng.premier_league",
     "UEFAEURO": "uefa.euro",
     "UEFASUPERCUP": None,
@@ -295,6 +331,8 @@ PRICEABLE_FAMILIES = frozenset(
         MarketFamily.FIRST_HALF_BTTS,
         MarketFamily.FIRST_HALF_HANDICAP,
         MarketFamily.FIRST_HALF_TEAM_TOTAL,
+        MarketFamily.FIRST_HALF_EXACT_SCORE,
+        MarketFamily.SECOND_HALF_RESULT,
         MarketFamily.PLAYER_GOALS,  # priced by the RESEARCH_ONLY player layer; authority gates it
     }
 )
@@ -434,12 +472,17 @@ def classify(market: RawMarket) -> ContractSpec:
         MarketFamily.FIRST_HALF_BTTS,
         MarketFamily.FIRST_HALF_HANDICAP,
         MarketFamily.FIRST_HALF_TEAM_TOTAL,
+        MarketFamily.FIRST_HALF_EXACT_SCORE,
     ):
         period = Period.FIRST_HALF
+    if family is MarketFamily.SECOND_HALF_RESULT:
+        period = Period.SECOND_HALF
+    if family is MarketFamily.MATCH_WINNER_2WAY:
+        period = Period.INCLUDING_PENS
     if scope is Scope.COMPETITION:
         period = Period.SEASON
 
-    if family is MarketFamily.EXACT_SCORE:
+    if family in (MarketFamily.EXACT_SCORE, MarketFamily.FIRST_HALF_EXACT_SCORE):
         # leg like LEO0JUA0 = <first team code><goals><second team code><goals>, codes in event order
         mm = re.match(r"^([A-Z]+?)(\d+)([A-Z]+?)(\d+)$", leg or "")
         if mm and team_codes:
@@ -551,7 +594,11 @@ def classify(market: RawMarket) -> ContractSpec:
             inferred=not observed,
             rationale=f"token {tok}; player tail {tail}",
         )
-    if family in (MarketFamily.MATCH_RESULT_3WAY, MarketFamily.FIRST_HALF_RESULT):
+    if family in (
+        MarketFamily.MATCH_RESULT_3WAY,
+        MarketFamily.FIRST_HALF_RESULT,
+        MarketFamily.SECOND_HALF_RESULT,
+    ):
         # observed live: legs <TEAM> for wins and TIE for the draw ("Santos wins", "Draw")
         side = "DRAW" if leg in ("TIE", "DRAW") or ("draw" in title and "win" not in title) else leg
         return ContractSpec(

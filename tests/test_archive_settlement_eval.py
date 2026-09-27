@@ -150,3 +150,22 @@ def test_authority_no_leapfrog_and_default_research_only(tmp_path):
         interval_coverage_80=None,
     )
     assert recommend_state(weak, Authority.RESEARCH_ONLY)[0] is Authority.RESEARCH_ONLY
+
+
+def test_settlement_second_half_and_exact_score():
+    r = _res(home_ft=2, away_ft=1, home_ht=0, away_ht=1)  # second half 2-0 home
+    sh = Semantics("T", MarketFamily.SECOND_HALF_RESULT, Period.SECOND_HALF, "home", None, None)
+    assert settle(sh, r).outcome is SettlementOutcome.YES
+    assert settle(sh, _res(home_ht=None)).outcome is SettlementOutcome.REFUSED_MISSING_PERIOD_DATA
+    ex = Semantics("T", MarketFamily.EXACT_SCORE, Period.REGULATION, "home", None, 201)
+    assert settle(ex, r).outcome is SettlementOutcome.YES
+    assert (
+        settle(
+            Semantics("T", MarketFamily.EXACT_SCORE, Period.REGULATION, "home", None, 102), r
+        ).outcome
+        is SettlementOutcome.NO
+    )
+    fhx = Semantics(
+        "T", MarketFamily.FIRST_HALF_EXACT_SCORE, Period.FIRST_HALF, "home", None, 1
+    )  # 0-1 at HT
+    assert settle(fhx, r).outcome is SettlementOutcome.YES

@@ -52,13 +52,18 @@ def resolve_semantics(
         MarketFamily.MATCH_WINNER_2WAY,
         MarketFamily.FIRST_TO_SCORE,
         MarketFamily.EXACT_SCORE,
+        MarketFamily.FIRST_HALF_EXACT_SCORE,
     ):
         if side_is_home is None:
             raise UnsupportedSemantics(
                 f"{spec.ticker}: side team could not be resolved to home/away"
             )
         side = "home" if side_is_home else "away"
-    elif fam in (MarketFamily.MATCH_RESULT_3WAY, MarketFamily.FIRST_HALF_RESULT):
+    elif fam in (
+        MarketFamily.MATCH_RESULT_3WAY,
+        MarketFamily.FIRST_HALF_RESULT,
+        MarketFamily.SECOND_HALF_RESULT,
+    ):
         if spec.side_team_code == "DRAW":
             side = "draw"
         elif side_is_home is None:
@@ -89,13 +94,14 @@ def resolve_semantics(
     if spec.period not in (
         Period.REGULATION,
         Period.FIRST_HALF,
+        Period.SECOND_HALF,
         Period.INCLUDING_PENS,
         Period.INCLUDING_ET,
     ):
         raise UnsupportedSemantics(f"{spec.ticker}: period {spec.period.value} unsupported")
     k = spec.k
     exact: tuple[int, int] | None = None
-    if fam is MarketFamily.EXACT_SCORE:
+    if fam in (MarketFamily.EXACT_SCORE, MarketFamily.FIRST_HALF_EXACT_SCORE):
         try:
             a, b = (int(x) for x in (spec.player_code or "").split("-"))
         except ValueError as exc:
@@ -133,6 +139,8 @@ SUPPORTED = frozenset(
         MarketFamily.FIRST_HALF_BTTS,
         MarketFamily.FIRST_HALF_HANDICAP,
         MarketFamily.FIRST_HALF_TEAM_TOTAL,
+        MarketFamily.FIRST_HALF_EXACT_SCORE,
+        MarketFamily.SECOND_HALF_RESULT,
     }
 )
 
@@ -152,6 +160,10 @@ def _describe(
         return "First half: both teams to score"
     if fam is MarketFamily.FIRST_HALF_RESULT:
         return f"First-half result: {side}"
+    if fam is MarketFamily.SECOND_HALF_RESULT:
+        return f"Second-half result: {side}"
+    if fam is MarketFamily.FIRST_HALF_EXACT_SCORE and exact:
+        return f"First-half exact score {exact[0]}-{exact[1]} (home-away)"
     if fam is MarketFamily.FIRST_TO_SCORE:
         return f"First team to score: {side}"
     if fam is MarketFamily.TOTAL_GOALS:
@@ -170,6 +182,8 @@ def _describe(
 def _period_goals(sem: Semantics, out: JointOutcome) -> tuple[np.ndarray, np.ndarray]:
     if sem.period is Period.FIRST_HALF:
         return out.home_ht, out.away_ht
+    if sem.period is Period.SECOND_HALF:
+        return out.home_ft - out.home_ht, out.away_ft - out.away_ht
     if sem.period in (Period.INCLUDING_ET, Period.INCLUDING_PENS):
         return out.home_full, out.away_full
     return out.home_ft, out.away_ft
@@ -184,7 +198,7 @@ def settle_indicator(sem: Semantics, out: JointOutcome) -> np.ndarray:
     if fam in (MarketFamily.TEAM_TOTAL, MarketFamily.FIRST_HALF_TEAM_TOTAL):
         g = h if sem.side == "home" else a
         return g > line
-    if fam is MarketFamily.EXACT_SCORE:
+    if fam in (MarketFamily.EXACT_SCORE, MarketFamily.FIRST_HALF_EXACT_SCORE):
         hh, aa = divmod(int(sem.k or 0), 100)
         return (h == hh) & (a == aa)
     if fam in (MarketFamily.BTTS, MarketFamily.FIRST_HALF_BTTS):
@@ -192,7 +206,11 @@ def settle_indicator(sem: Semantics, out: JointOutcome) -> np.ndarray:
     if fam in (MarketFamily.HANDICAP, MarketFamily.FIRST_HALF_HANDICAP):
         margin = (h - a) if sem.side == "home" else (a - h)
         return margin > line
-    if fam is MarketFamily.MATCH_RESULT_3WAY or fam is MarketFamily.FIRST_HALF_RESULT:
+    if fam in (
+        MarketFamily.MATCH_RESULT_3WAY,
+        MarketFamily.FIRST_HALF_RESULT,
+        MarketFamily.SECOND_HALF_RESULT,
+    ):
         if sem.side == "home":
             return h > a
         if sem.side == "away":
