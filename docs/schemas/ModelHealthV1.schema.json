@@ -1,0 +1,162 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "authority": {
+      "enum": [
+        "RESEARCH_ONLY",
+        "SHADOW",
+        "LIMITED",
+        "TRUSTED"
+      ],
+      "title": "Authority",
+      "type": "string"
+    },
+    "brier": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Brier"
+    },
+    "clv_points_mean": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Clv Points Mean"
+    },
+    "ece": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Ece"
+    },
+    "fee_adjusted_realised_ev": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Fee Adjusted Realised Ev"
+    },
+    "horizon": {
+      "title": "Horizon",
+      "type": "string"
+    },
+    "interval_coverage_80": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Interval Coverage 80"
+    },
+    "last_evaluated_at": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Last Evaluated At"
+    },
+    "log_loss": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Log Loss"
+    },
+    "market_family": {
+      "title": "Market Family",
+      "type": "string"
+    },
+    "market_log_loss": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Market Log Loss"
+    },
+    "model_family": {
+      "title": "Model Family",
+      "type": "string"
+    },
+    "n_settled": {
+      "title": "N Settled",
+      "type": "integer"
+    },
+    "notes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Notes",
+      "type": "array"
+    },
+    "schema_version": {
+      "default": "1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "sport": {
+      "enum": [
+        "soccer",
+        "mlb",
+        "nfl",
+        "cfb",
+        "nba",
+        "other"
+      ],
+      "title": "Sport",
+      "type": "string"
+    }
+  },
+  "required": [
+    "sport",
+    "model_family",
+    "market_family",
+    "horizon",
+    "authority",
+    "n_settled"
+  ],
+  "title": "ModelHealthV1",
+  "type": "object"
+}

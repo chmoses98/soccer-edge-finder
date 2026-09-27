@@ -1,0 +1,127 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "away": {
+      "title": "Away",
+      "type": "string"
+    },
+    "away_id": {
+      "title": "Away Id",
+      "type": "string"
+    },
+    "event_id": {
+      "title": "Event Id",
+      "type": "string"
+    },
+    "event_name": {
+      "title": "Event Name",
+      "type": "string"
+    },
+    "home": {
+      "title": "Home",
+      "type": "string"
+    },
+    "home_id": {
+      "title": "Home Id",
+      "type": "string"
+    },
+    "league": {
+      "title": "League",
+      "type": "string"
+    },
+    "league_id": {
+      "title": "League Id",
+      "type": "string"
+    },
+    "lineup_status": {
+      "default": "unknown",
+      "enum": [
+        "unknown",
+        "projected",
+        "confirmed"
+      ],
+      "title": "Lineup Status",
+      "type": "string"
+    },
+    "markets_discovered": {
+      "default": 0,
+      "title": "Markets Discovered",
+      "type": "integer"
+    },
+    "markets_evaluated": {
+      "default": 0,
+      "title": "Markets Evaluated",
+      "type": "integer"
+    },
+    "neutral_site": {
+      "default": false,
+      "title": "Neutral Site",
+      "type": "boolean"
+    },
+    "schema_version": {
+      "default": "1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "sport": {
+      "enum": [
+        "soccer",
+        "mlb",
+        "nfl",
+        "cfb",
+        "nba",
+        "other"
+      ],
+      "title": "Sport",
+      "type": "string"
+    },
+    "stage": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Stage"
+    },
+    "start_time": {
+      "format": "date-time",
+      "title": "Start Time",
+      "type": "string"
+    },
+    "status": {
+      "title": "Status",
+      "type": "string"
+    },
+    "venue": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Venue"
+    }
+  },
+  "required": [
+    "event_id",
+    "sport",
+    "league",
+    "league_id",
+    "event_name",
+    "start_time",
+    "home",
+    "away",
+    "home_id",
+    "away_id",
+    "status"
+  ],
+  "title": "EventV1",
+  "type": "object"
+}

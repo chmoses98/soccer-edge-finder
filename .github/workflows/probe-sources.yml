@@ -1,0 +1,30 @@
+name: probe-sources
+
+# Actually tests which soccer data sources are reachable from a GitHub-hosted runner.
+# Output feeds docs/DATA_SOURCE_AUDIT.md. Read-only, no secrets required.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "41 6 * * 1"  # weekly
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e .
+      - run: python scripts/probe_sources.py --out artifacts/source_probe.json --md artifacts/source_probe.md
+      - run: cat artifacts/source_probe.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: source-probe-${{ github.run_id }}
+          path: artifacts/
+          retention-days: 30

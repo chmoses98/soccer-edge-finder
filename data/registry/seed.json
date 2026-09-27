@@ -1,0 +1,3606 @@
+{
+ "$schema_version": 1,
+ "competitions": [
+  {
+   "competition_id": "eng.premier_league",
+   "name": "Premier League",
+   "country": "ENG",
+   "tier": 1,
+   "format": "league",
+   "aliases": [
+    "English Premier League",
+    "EPL",
+    "Premier League (England)",
+    "England Premier League"
+   ],
+   "former_names": [
+    "Barclays Premier League",
+    "FA Premier League"
+   ]
+  },
+  {
+   "competition_id": "eng.championship",
+   "name": "Championship",
+   "country": "ENG",
+   "tier": 2,
+   "format": "league",
+   "aliases": [
+    "EFL Championship",
+    "English Championship",
+    "Sky Bet Championship"
+   ]
+  },
+  {
+   "competition_id": "eng.fa_cup",
+   "name": "FA Cup",
+   "country": "ENG",
+   "format": "cup",
+   "extra_time_in_knockouts": true,
+   "penalties_in_knockouts": true,
+   "aliases": [
+    "Emirates FA Cup",
+    "The FA Cup"
+   ]
+  },
+  {
+   "competition_id": "eng.efl_cup",
+   "name": "EFL Cup",
+   "country": "ENG",
+   "format": "cup",
+   "extra_time_in_knockouts": true,
+   "penalties_in_knockouts": true,
+   "aliases": [
+    "League Cup",
+    "Carabao Cup"
+   ],
+   "former_names": [
+    "Capital One Cup",
+    "Carling Cup"
+   ]
+  },
+  {
+   "competition_id": "esp.la_liga",
+   "name": "La Liga",
+   "country": "ESP",
+   "tier": 1,
+   "format": "league",
+   "aliases": [
+    "LaLiga",
+    "Primera División",
+    "Primera Division",
+    "Spain Primera División",
+    "LaLiga EA Sports",
+    "Spanish La Liga"
+   ],
+   "former_names": [
+    "LaLiga Santander"
+   ]
+  },
+  {
+   "competition_id": "esp.copa_del_rey",
+   "name": "Copa del Rey",
+   "country": "ESP",
+   "format": "cup",
+   "extra_time_in_knockouts": true,
+   "penalties_in_knockouts": true
+  },
+  {
+   "competition_id": "ger.bundesliga",
+   "name": "Bundesliga",
+   "country": "GER",
+   "tier": 1,
+   "format": "league",
+   "aliases": [
+    "Deutsche Bundesliga",
+    "German Bundesliga",
+    "1. Bundesliga"
+   ]
+  },
+  {
+   "competition_id": "ger.dfb_pokal",
+   "name": "DFB-Pokal",
+   "country": "GER",
+   "format": "cup",
+   "extra_time_in_knockouts": true,
+   "penalties_in_knockouts": true,
+   "aliases": [
+    "DFB Pokal",
+    "German Cup"
+   ]
+  },
+  {
+   "competition_id": "ita.serie_a",
+   "name": "Serie A",
+   "country": "ITA",
+   "tier": 1,
+   "format": "league",
+   "aliases": [
+    "Italian Serie A",
+    "Serie A TIM",
+    "Serie A Enilive"
+   ]
+  },
+  {
+   "competition_id": "ita.coppa_italia",
+   "name": "Coppa Italia",
+   "country": "ITA",
+   "format": "cup",
+   "extra_time_in_knockouts": true,
+   "penalties_in_knockouts": true
+  },
+  {
+   "competition_id": "fra.ligue_1",
+   "name": "Ligue 1",
+   "country": "FRA",
+   "tier": 1,
+   "format": "league",
+   "aliases": [
+    "French Ligue 1",
+    "Ligue 1 McDonald's"
+   ],
+   "former_names": [
+    "Ligue 1 Uber Eats",
+    "Ligue 1 Conforama"
+   ]
+  },
+  {
+   "competition_id": "fra.coupe_de_france",
+   "name": "Coupe de France",
+   "country": "FRA",
+   "format": "cup",
+   "extra_time_in_knockouts": true,
+   "penalties_in_knockouts": true
+  },
+  {
+   "competition_id": "ned.eredivisie",
+   "name": "Eredivisie",
+   "country": "NED",
+   "tier": 1,
+   "format": "league",
+   "aliases": [
+    "Dutch Eredivisie"
+   ]
+  },
+  {
+   "competition_id": "por.primeira_liga",
+   "name": "Primeira Liga",
+   "country": "POR",
+   "tier": 1,
+   "format": "league",
+   "aliases": [
+    "Liga Portugal",
+    "Liga Portugal Betclic",
+    "Portuguese Primeira Liga"
+   ],
+   "former_names": [
+    "Liga NOS"
+   ]
+  },
+  {
+   "competition_id": "usa.mls",
+   "name": "Major League Soccer",
+   "country": "USA",
+   "tier": 1,
+   "format": "league",
+   "aliases": [
+    "MLS"
+   ]
+  },
+  {
+   "competition_id": "mex.liga_mx",
+   "name": "Liga MX",
+   "country": "MEX",
+   "tier": 1,
+   "format": "league"
+  },
+  {
+   "competition_id": "uefa.champions_league",
+   "name": "UEFA Champions League",
+   "country": "UEFA",
+   "format": "league_phase_knockout",
+   "extra_time_in_knockouts": true,
+   "penalties_in_knockouts": true,
+   "aliases": [
+    "Champions League",
+    "UCL",
+    "UEFA CL"
+   ],
+   "former_names": [
+    "European Cup"
+   ]
+  },
+  {
+   "competition_id": "uefa.europa_league",
+   "name": "UEFA Europa League",
+   "country": "UEFA",
+   "format": "league_phase_knockout",
+   "extra_time_in_knockouts": true,
+   "penalties_in_knockouts": true,
+   "aliases": [
+    "Europa League",
+    "UEL"
+   ],
+   "former_names": [
+    "UEFA Cup"
+   ]
+  },
+  {
+   "competition_id": "uefa.conference_league",
+   "name": "UEFA Conference League",
+   "country": "UEFA",
+   "format": "league_phase_knockout",
+   "extra_time_in_knockouts": true,
+   "penalties_in_knockouts": true,
+   "aliases": [
+    "Conference League",
+    "UECL"
+   ],
+   "former_names": [
+    "UEFA Europa Conference League"
+   ]
+  },
+  {
+   "competition_id": "uefa.euro",
+   "name": "UEFA European Championship",
+   "country": "UEFA",
+   "format": "group_knockout",
+   "extra_time_in_knockouts": true,
+   "penalties_in_knockouts": true,
+   "aliases": [
+    "Euro",
+    "Euros",
+    "European Championship",
+    "UEFA Euro"
+   ]
+  },
+  {
+   "competition_id": "uefa.nations_league",
+   "name": "UEFA Nations League",
+   "country": "UEFA",
+   "format": "group_knockout",
+   "extra_time_in_knockouts": true,
+   "penalties_in_knockouts": true,
+   "aliases": [
+    "Nations League"
+   ]
+  },
+  {
+   "competition_id": "fifa.world_cup",
+   "name": "FIFA World Cup",
+   "country": "FIFA",
+   "format": "group_knockout",
+   "extra_time_in_knockouts": true,
+   "penalties_in_knockouts": true,
+   "aliases": [
+    "World Cup",
+    "FIFA World Cup 2026"
+   ]
+  },
+  {
+   "competition_id": "fifa.womens_world_cup",
+   "name": "FIFA Women's World Cup",
+   "country": "FIFA",
+   "gender": "women",
+   "format": "group_knockout",
+   "extra_time_in_knockouts": true,
+   "penalties_in_knockouts": true,
+   "aliases": [
+    "Women's World Cup"
+   ]
+  },
+  {
+   "competition_id": "fifa.club_world_cup",
+   "name": "FIFA Club World Cup",
+   "country": "FIFA",
+   "format": "group_knockout",
+   "extra_time_in_knockouts": true,
+   "penalties_in_knockouts": true,
+   "aliases": [
+    "Club World Cup"
+   ]
+  },
+  {
+   "competition_id": "conmebol.copa_america",
+   "name": "Copa América",
+   "country": "CONMEBOL",
+   "format": "group_knockout",
+   "extra_time_in_knockouts": true,
+   "penalties_in_knockouts": true,
+   "aliases": [
+    "Copa America"
+   ]
+  },
+  {
+   "competition_id": "conmebol.libertadores",
+   "name": "Copa Libertadores",
+   "country": "CONMEBOL",
+   "format": "group_knockout",
+   "extra_time_in_knockouts": true,
+   "penalties_in_knockouts": true,
+   "aliases": [
+    "CONMEBOL Libertadores",
+    "Libertadores"
+   ]
+  },
+  {
+   "competition_id": "concacaf.gold_cup",
+   "name": "CONCACAF Gold Cup",
+   "country": "CONCACAF",
+   "format": "group_knockout",
+   "extra_time_in_knockouts": true,
+   "penalties_in_knockouts": true,
+   "aliases": [
+    "Gold Cup"
+   ]
+  },
+  {
+   "competition_id": "eng.wsl",
+   "name": "Women's Super League",
+   "country": "ENG",
+   "gender": "women",
+   "tier": 1,
+   "format": "league",
+   "aliases": [
+    "WSL",
+    "Barclays Women's Super League"
+   ]
+  },
+  {
+   "competition_id": "usa.nwsl",
+   "name": "National Women's Soccer League",
+   "country": "USA",
+   "gender": "women",
+   "tier": 1,
+   "format": "league",
+   "aliases": [
+    "NWSL"
+   ]
+  },
+  {
+   "competition_id": "ksa.pro_league",
+   "name": "Saudi Pro League",
+   "country": "KSA",
+   "tier": 1,
+   "format": "league",
+   "aliases": [
+    "Roshn Saudi League",
+    "Saudi Professional League"
+   ]
+  },
+  {
+   "competition_id": "sco.premiership",
+   "name": "Scottish Premiership",
+   "country": "SCO",
+   "tier": 1,
+   "format": "league",
+   "aliases": [
+    "SPFL Premiership",
+    "Scottish Premier League"
+   ]
+  },
+  {
+   "competition_id": "tur.super_lig",
+   "name": "Süper Lig",
+   "country": "TUR",
+   "tier": 1,
+   "format": "league",
+   "aliases": [
+    "Super Lig",
+    "Turkish Super Lig",
+    "Trendyol Süper Lig"
+   ]
+  },
+  {
+   "competition_id": "bra.serie_a",
+   "name": "Brasileirão Série A",
+   "country": "BRA",
+   "tier": 1,
+   "format": "league",
+   "aliases": [
+    "Brasileirao",
+    "Brazilian Serie A",
+    "Campeonato Brasileiro"
+   ]
+  },
+  {
+   "competition_id": "arg.primera",
+   "name": "Liga Profesional Argentina",
+   "country": "ARG",
+   "tier": 1,
+   "format": "league",
+   "aliases": [
+    "Argentine Primera División",
+    "Primera División Argentina"
+   ]
+  }
+ ],
+ "teams": [
+  {
+   "team_id": "eng.arsenal",
+   "name": "Arsenal",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Arsenal FC",
+    "Arsenal"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Arsenal",
+    "openfootball": "Arsenal FC"
+   }
+  },
+  {
+   "team_id": "eng.aston_villa",
+   "name": "Aston Villa",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Villa",
+    "Aston Villa",
+    "Aston Villa FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Aston Villa",
+    "openfootball": "Aston Villa FC"
+   }
+  },
+  {
+   "team_id": "eng.bournemouth",
+   "name": "Bournemouth",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "AFC Bournemouth",
+    "Cherries",
+    "Bournemouth"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Bournemouth",
+    "openfootball": "AFC Bournemouth"
+   }
+  },
+  {
+   "team_id": "eng.brentford",
+   "name": "Brentford",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Brentford",
+    "Brentford FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Brentford",
+    "openfootball": "Brentford FC"
+   }
+  },
+  {
+   "team_id": "eng.brighton",
+   "name": "Brighton & Hove Albion",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Brighton",
+    "Brighton and Hove Albion",
+    "Brighton & Hove Albion FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Brighton",
+    "openfootball": "Brighton & Hove Albion FC"
+   }
+  },
+  {
+   "team_id": "eng.chelsea",
+   "name": "Chelsea",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Chelsea",
+    "Chelsea FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Chelsea",
+    "openfootball": "Chelsea FC"
+   }
+  },
+  {
+   "team_id": "eng.coventry",
+   "name": "Coventry City",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Coventry",
+    "Coventry City FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Coventry",
+    "openfootball": "Coventry City FC"
+   }
+  },
+  {
+   "team_id": "eng.crystal_palace",
+   "name": "Crystal Palace",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Palace",
+    "Crystal Palace",
+    "Crystal Palace FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Crystal Palace",
+    "openfootball": "Crystal Palace FC"
+   }
+  },
+  {
+   "team_id": "eng.everton",
+   "name": "Everton",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Everton",
+    "Everton FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Everton",
+    "openfootball": "Everton FC"
+   }
+  },
+  {
+   "team_id": "eng.fulham",
+   "name": "Fulham",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Fulham",
+    "Fulham FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Fulham",
+    "openfootball": "Fulham FC"
+   }
+  },
+  {
+   "team_id": "eng.hull",
+   "name": "Hull City",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Hull",
+    "Hull City AFC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Hull",
+    "openfootball": "Hull City AFC"
+   }
+  },
+  {
+   "team_id": "eng.ipswich",
+   "name": "Ipswich Town",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Ipswich",
+    "Ipswich Town FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Ipswich",
+    "openfootball": "Ipswich Town FC"
+   }
+  },
+  {
+   "team_id": "eng.leeds",
+   "name": "Leeds United",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Leeds",
+    "Leeds United FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Leeds",
+    "openfootball": "Leeds United FC"
+   }
+  },
+  {
+   "team_id": "eng.liverpool",
+   "name": "Liverpool",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Liverpool",
+    "Liverpool FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Liverpool",
+    "openfootball": "Liverpool FC"
+   }
+  },
+  {
+   "team_id": "eng.man_city",
+   "name": "Manchester City",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Man City",
+    "Man. City",
+    "Manchester City FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Man City",
+    "openfootball": "Manchester City FC"
+   }
+  },
+  {
+   "team_id": "eng.man_united",
+   "name": "Manchester United",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Man United",
+    "Man Utd",
+    "Manchester Utd",
+    "Man. United",
+    "Manchester United FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Man United",
+    "openfootball": "Manchester United FC"
+   }
+  },
+  {
+   "team_id": "eng.newcastle",
+   "name": "Newcastle United",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Newcastle",
+    "Newcastle United FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Newcastle",
+    "openfootball": "Newcastle United FC"
+   }
+  },
+  {
+   "team_id": "eng.nottm_forest",
+   "name": "Nottingham Forest",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Nott'm Forest",
+    "Nottm Forest",
+    "Forest",
+    "Nottingham Forest FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Nott'm Forest",
+    "openfootball": "Nottingham Forest FC"
+   }
+  },
+  {
+   "team_id": "eng.sunderland",
+   "name": "Sunderland",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Sunderland AFC",
+    "Sunderland"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Sunderland",
+    "openfootball": "Sunderland AFC"
+   }
+  },
+  {
+   "team_id": "eng.tottenham",
+   "name": "Tottenham Hotspur",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Tottenham",
+    "Spurs",
+    "Tottenham Hotspur FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Tottenham",
+    "openfootball": "Tottenham Hotspur FC"
+   }
+  },
+  {
+   "team_id": "eng.burnley",
+   "name": "Burnley",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Burnley",
+    "Burnley FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Burnley",
+    "openfootball": "Burnley FC"
+   }
+  },
+  {
+   "team_id": "eng.west_ham",
+   "name": "West Ham United",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "West Ham",
+    "West Ham United FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "West Ham",
+    "openfootball": "West Ham United FC"
+   }
+  },
+  {
+   "team_id": "eng.wolves",
+   "name": "Wolverhampton Wanderers",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Wolves",
+    "Wolverhampton",
+    "Wolverhampton Wanderers FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Wolves",
+    "openfootball": "Wolverhampton Wanderers FC"
+   }
+  },
+  {
+   "team_id": "eng.leicester",
+   "name": "Leicester City",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Leicester",
+    "Leicester City FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Leicester",
+    "openfootball": "Leicester City FC"
+   }
+  },
+  {
+   "team_id": "eng.southampton",
+   "name": "Southampton",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Saints",
+    "Southampton",
+    "Southampton FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Southampton",
+    "openfootball": "Southampton FC"
+   }
+  },
+  {
+   "team_id": "eng.sheffield_united",
+   "name": "Sheffield United",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Sheff Utd",
+    "Sheffield Utd",
+    "Sheffield United",
+    "Sheffield United FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Sheffield United",
+    "openfootball": "Sheffield United FC"
+   }
+  },
+  {
+   "team_id": "eng.sheffield_wednesday",
+   "name": "Sheffield Wednesday",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Sheffield Weds",
+    "Sheff Wed",
+    "Sheffield Wednesday FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Sheffield Weds",
+    "openfootball": "Sheffield Wednesday FC"
+   }
+  },
+  {
+   "team_id": "eng.luton",
+   "name": "Luton Town",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Luton",
+    "Luton Town FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Luton",
+    "openfootball": "Luton Town FC"
+   }
+  },
+  {
+   "team_id": "eng.norwich",
+   "name": "Norwich City",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Norwich",
+    "Norwich City FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Norwich",
+    "openfootball": "Norwich City FC"
+   }
+  },
+  {
+   "team_id": "eng.watford",
+   "name": "Watford",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Watford",
+    "Watford FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Watford",
+    "openfootball": "Watford FC"
+   }
+  },
+  {
+   "team_id": "eng.west_brom",
+   "name": "West Bromwich Albion",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "West Brom",
+    "WBA",
+    "West Bromwich Albion FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "West Brom",
+    "openfootball": "West Bromwich Albion FC"
+   }
+  },
+  {
+   "team_id": "eng.middlesbrough",
+   "name": "Middlesbrough",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Boro",
+    "Middlesbrough",
+    "Middlesbrough FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Middlesbrough",
+    "openfootball": "Middlesbrough FC"
+   }
+  },
+  {
+   "team_id": "eng.qpr",
+   "name": "Queens Park Rangers",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "QPR",
+    "Queens Park Rangers FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "QPR",
+    "openfootball": "Queens Park Rangers FC"
+   }
+  },
+  {
+   "team_id": "eng.birmingham",
+   "name": "Birmingham City",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Birmingham",
+    "Birmingham City FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Birmingham",
+    "openfootball": "Birmingham City FC"
+   }
+  },
+  {
+   "team_id": "eng.blackburn",
+   "name": "Blackburn Rovers",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Blackburn",
+    "Blackburn Rovers FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Blackburn",
+    "openfootball": "Blackburn Rovers FC"
+   }
+  },
+  {
+   "team_id": "eng.bolton",
+   "name": "Bolton Wanderers",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Bolton",
+    "Bolton Wanderers FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Bolton",
+    "openfootball": "Bolton Wanderers FC"
+   }
+  },
+  {
+   "team_id": "eng.bristol_city",
+   "name": "Bristol City",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Bristol City",
+    "Bristol City FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Bristol City",
+    "openfootball": "Bristol City FC"
+   }
+  },
+  {
+   "team_id": "eng.cardiff",
+   "name": "Cardiff City",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Cardiff",
+    "Cardiff City FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Cardiff",
+    "openfootball": "Cardiff City FC"
+   }
+  },
+  {
+   "team_id": "eng.charlton",
+   "name": "Charlton Athletic",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Charlton",
+    "Charlton Athletic FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Charlton",
+    "openfootball": "Charlton Athletic FC"
+   }
+  },
+  {
+   "team_id": "eng.derby",
+   "name": "Derby County",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Derby",
+    "Derby County FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Derby",
+    "openfootball": "Derby County FC"
+   }
+  },
+  {
+   "team_id": "eng.lincoln",
+   "name": "Lincoln City",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Lincoln",
+    "Lincoln City FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Lincoln",
+    "openfootball": "Lincoln City FC"
+   }
+  },
+  {
+   "team_id": "eng.millwall",
+   "name": "Millwall",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Millwall",
+    "Millwall FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Millwall",
+    "openfootball": "Millwall FC"
+   }
+  },
+  {
+   "team_id": "eng.oxford",
+   "name": "Oxford United",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Oxford",
+    "Oxford United FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Oxford",
+    "openfootball": "Oxford United FC"
+   }
+  },
+  {
+   "team_id": "eng.portsmouth",
+   "name": "Portsmouth",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Pompey",
+    "Portsmouth",
+    "Portsmouth FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Portsmouth",
+    "openfootball": "Portsmouth FC"
+   }
+  },
+  {
+   "team_id": "eng.preston",
+   "name": "Preston North End",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Preston",
+    "Preston North End FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Preston",
+    "openfootball": "Preston North End FC"
+   }
+  },
+  {
+   "team_id": "eng.stoke",
+   "name": "Stoke City",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Stoke",
+    "Stoke City FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Stoke",
+    "openfootball": "Stoke City FC"
+   }
+  },
+  {
+   "team_id": "eng.swansea",
+   "name": "Swansea City",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Swansea",
+    "Swansea City AFC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Swansea",
+    "openfootball": "Swansea City AFC"
+   }
+  },
+  {
+   "team_id": "eng.wrexham",
+   "name": "Wrexham",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Wrexham AFC",
+    "Wrexham"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Wrexham",
+    "openfootball": "Wrexham AFC"
+   }
+  },
+  {
+   "team_id": "eng.plymouth",
+   "name": "Plymouth Argyle",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Plymouth",
+    "Plymouth Argyle FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Plymouth",
+    "openfootball": "Plymouth Argyle FC"
+   }
+  },
+  {
+   "team_id": "esp.athletic_bilbao",
+   "name": "Athletic Club",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Athletic Bilbao",
+    "Ath Bilbao",
+    "Athletic",
+    "Athletic Club"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Ath Bilbao",
+    "openfootball": "Athletic Club"
+   }
+  },
+  {
+   "team_id": "esp.osasuna",
+   "name": "Osasuna",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "CA Osasuna",
+    "Osasuna"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Osasuna",
+    "openfootball": "CA Osasuna"
+   }
+  },
+  {
+   "team_id": "esp.atletico_madrid",
+   "name": "Atlético Madrid",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Atletico Madrid",
+    "Ath Madrid",
+    "Atlético de Madrid",
+    "Atleti",
+    "Club Atlético de Madrid"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Ath Madrid",
+    "openfootball": "Club Atlético de Madrid"
+   }
+  },
+  {
+   "team_id": "esp.alaves",
+   "name": "Deportivo Alavés",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Alaves",
+    "Alavés",
+    "Deportivo Alavés"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Alaves",
+    "openfootball": "Deportivo Alavés"
+   }
+  },
+  {
+   "team_id": "esp.elche",
+   "name": "Elche",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Elche CF",
+    "Elche"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Elche",
+    "openfootball": "Elche CF"
+   }
+  },
+  {
+   "team_id": "esp.barcelona",
+   "name": "FC Barcelona",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Barcelona",
+    "Barça",
+    "Barca",
+    "FC Barcelona"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Barcelona",
+    "openfootball": "FC Barcelona"
+   }
+  },
+  {
+   "team_id": "esp.getafe",
+   "name": "Getafe",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Getafe CF",
+    "Getafe"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Getafe",
+    "openfootball": "Getafe CF"
+   }
+  },
+  {
+   "team_id": "esp.levante",
+   "name": "Levante",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Levante UD",
+    "Levante"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Levante",
+    "openfootball": "Levante UD"
+   }
+  },
+  {
+   "team_id": "esp.malaga",
+   "name": "Málaga",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Malaga",
+    "Málaga CF"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Malaga",
+    "openfootball": "Málaga CF"
+   }
+  },
+  {
+   "team_id": "esp.celta_vigo",
+   "name": "Celta Vigo",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Celta",
+    "RC Celta",
+    "RC Celta de Vigo"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Celta",
+    "openfootball": "RC Celta de Vigo"
+   }
+  },
+  {
+   "team_id": "esp.deportivo",
+   "name": "Deportivo La Coruña",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "La Coruna",
+    "Deportivo",
+    "Depor",
+    "RC Deportivo La Coruña"
+   ],
+   "provider_ids": {
+    "football_data_couk": "La Coruna",
+    "openfootball": "RC Deportivo La Coruña"
+   }
+  },
+  {
+   "team_id": "esp.espanyol",
+   "name": "Espanyol",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Espanol",
+    "RCD Espanyol",
+    "RCD Espanyol de Barcelona"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Espanol",
+    "openfootball": "RCD Espanyol de Barcelona"
+   }
+  },
+  {
+   "team_id": "esp.rayo_vallecano",
+   "name": "Rayo Vallecano",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Vallecano",
+    "Rayo",
+    "Rayo Vallecano de Madrid"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Vallecano",
+    "openfootball": "Rayo Vallecano de Madrid"
+   }
+  },
+  {
+   "team_id": "esp.real_betis",
+   "name": "Real Betis",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Betis",
+    "Real Betis Balompié"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Betis",
+    "openfootball": "Real Betis Balompié"
+   }
+  },
+  {
+   "team_id": "esp.real_madrid",
+   "name": "Real Madrid",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Real Madrid CF",
+    "Real Madrid"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Real Madrid",
+    "openfootball": "Real Madrid CF"
+   }
+  },
+  {
+   "team_id": "esp.racing_santander",
+   "name": "Racing Santander",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Santander",
+    "Racing",
+    "Real Racing Club de Santander"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Santander",
+    "openfootball": "Real Racing Club de Santander"
+   }
+  },
+  {
+   "team_id": "esp.real_sociedad",
+   "name": "Real Sociedad",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Sociedad",
+    "Real Sociedad de Fútbol"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Sociedad",
+    "openfootball": "Real Sociedad de Fútbol"
+   }
+  },
+  {
+   "team_id": "esp.sevilla",
+   "name": "Sevilla",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Sevilla FC",
+    "Sevilla"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Sevilla",
+    "openfootball": "Sevilla FC"
+   }
+  },
+  {
+   "team_id": "esp.valencia",
+   "name": "Valencia",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Valencia CF",
+    "Valencia"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Valencia",
+    "openfootball": "Valencia CF"
+   }
+  },
+  {
+   "team_id": "esp.villarreal",
+   "name": "Villarreal",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Villarreal CF",
+    "Villarreal"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Villarreal",
+    "openfootball": "Villarreal CF"
+   }
+  },
+  {
+   "team_id": "esp.girona",
+   "name": "Girona",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Girona FC",
+    "Girona"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Girona",
+    "openfootball": "Girona FC"
+   }
+  },
+  {
+   "team_id": "esp.mallorca",
+   "name": "Mallorca",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "RCD Mallorca",
+    "Mallorca"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Mallorca",
+    "openfootball": "RCD Mallorca"
+   }
+  },
+  {
+   "team_id": "esp.real_oviedo",
+   "name": "Real Oviedo",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Oviedo",
+    "Real Oviedo"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Oviedo",
+    "openfootball": "Real Oviedo"
+   }
+  },
+  {
+   "team_id": "esp.las_palmas",
+   "name": "Las Palmas",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "UD Las Palmas",
+    "Las Palmas"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Las Palmas",
+    "openfootball": "UD Las Palmas"
+   }
+  },
+  {
+   "team_id": "esp.leganes",
+   "name": "Leganés",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Leganes",
+    "CD Leganés"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Leganes",
+    "openfootball": "CD Leganés"
+   }
+  },
+  {
+   "team_id": "esp.valladolid",
+   "name": "Real Valladolid",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Valladolid",
+    "Real Valladolid CF"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Valladolid",
+    "openfootball": "Real Valladolid CF"
+   }
+  },
+  {
+   "team_id": "esp.cadiz",
+   "name": "Cádiz",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Cadiz",
+    "Cádiz CF"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Cadiz",
+    "openfootball": "Cádiz CF"
+   }
+  },
+  {
+   "team_id": "esp.granada",
+   "name": "Granada",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Granada CF",
+    "Granada"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Granada",
+    "openfootball": "Granada CF"
+   }
+  },
+  {
+   "team_id": "esp.almeria",
+   "name": "Almería",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Almeria",
+    "UD Almería"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Almeria",
+    "openfootball": "UD Almería"
+   }
+  },
+  {
+   "team_id": "ger.koln",
+   "name": "1. FC Köln",
+   "country": "GER",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "FC Koln",
+    "Koln",
+    "Köln",
+    "Cologne",
+    "1. FC Köln"
+   ],
+   "provider_ids": {
+    "football_data_couk": "FC Koln",
+    "openfootball": "1. FC Köln"
+   }
+  },
+  {
+   "team_id": "ger.union_berlin",
+   "name": "Union Berlin",
+   "country": "GER",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "1. FC Union Berlin",
+    "Union Berlin"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Union Berlin",
+    "openfootball": "1. FC Union Berlin"
+   }
+  },
+  {
+   "team_id": "ger.mainz",
+   "name": "Mainz 05",
+   "country": "GER",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Mainz",
+    "1. FSV Mainz 05"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Mainz",
+    "openfootball": "1. FSV Mainz 05"
+   }
+  },
+  {
+   "team_id": "ger.leverkusen",
+   "name": "Bayer Leverkusen",
+   "country": "GER",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Leverkusen",
+    "Bayer 04 Leverkusen"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Leverkusen",
+    "openfootball": "Bayer 04 Leverkusen"
+   }
+  },
+  {
+   "team_id": "ger.dortmund",
+   "name": "Borussia Dortmund",
+   "country": "GER",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Dortmund",
+    "BVB",
+    "Borussia Dortmund"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Dortmund",
+    "openfootball": "Borussia Dortmund"
+   }
+  },
+  {
+   "team_id": "ger.gladbach",
+   "name": "Borussia Mönchengladbach",
+   "country": "GER",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "M'gladbach",
+    "Gladbach",
+    "Monchengladbach",
+    "Mönchengladbach",
+    "Borussia Mönchengladbach"
+   ],
+   "provider_ids": {
+    "football_data_couk": "M'gladbach",
+    "openfootball": "Borussia Mönchengladbach"
+   }
+  },
+  {
+   "team_id": "ger.frankfurt",
+   "name": "Eintracht Frankfurt",
+   "country": "GER",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Ein Frankfurt",
+    "Frankfurt",
+    "Eintracht Frankfurt"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Ein Frankfurt",
+    "openfootball": "Eintracht Frankfurt"
+   }
+  },
+  {
+   "team_id": "ger.augsburg",
+   "name": "FC Augsburg",
+   "country": "GER",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Augsburg",
+    "FC Augsburg"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Augsburg",
+    "openfootball": "FC Augsburg"
+   }
+  },
+  {
+   "team_id": "ger.bayern",
+   "name": "Bayern Munich",
+   "country": "GER",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Bayern",
+    "FC Bayern München",
+    "Bayern München",
+    "Bayern Munchen",
+    "Bayern Munich"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Bayern Munich",
+    "openfootball": "FC Bayern München"
+   }
+  },
+  {
+   "team_id": "ger.schalke",
+   "name": "Schalke 04",
+   "country": "GER",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Schalke",
+    "FC Schalke 04",
+    "Schalke 04"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Schalke 04",
+    "openfootball": "FC Schalke 04"
+   }
+  },
+  {
+   "team_id": "ger.hamburg",
+   "name": "Hamburger SV",
+   "country": "GER",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Hamburg",
+    "HSV",
+    "Hamburger SV"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Hamburg",
+    "openfootball": "Hamburger SV"
+   }
+  },
+  {
+   "team_id": "ger.leipzig",
+   "name": "RB Leipzig",
+   "country": "GER",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Leipzig",
+    "RB Leipzig"
+   ],
+   "provider_ids": {
+    "football_data_couk": "RB Leipzig",
+    "openfootball": "RB Leipzig"
+   }
+  },
+  {
+   "team_id": "ger.freiburg",
+   "name": "SC Freiburg",
+   "country": "GER",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Freiburg",
+    "SC Freiburg"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Freiburg",
+    "openfootball": "SC Freiburg"
+   }
+  },
+  {
+   "team_id": "ger.paderborn",
+   "name": "SC Paderborn 07",
+   "country": "GER",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Paderborn",
+    "SC Paderborn 07"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Paderborn",
+    "openfootball": "SC Paderborn 07"
+   }
+  },
+  {
+   "team_id": "ger.elversberg",
+   "name": "SV Elversberg",
+   "country": "GER",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Elversberg",
+    "SV 07 Elversberg"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Elversberg",
+    "openfootball": "SV 07 Elversberg"
+   }
+  },
+  {
+   "team_id": "ger.werder_bremen",
+   "name": "Werder Bremen",
+   "country": "GER",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Bremen",
+    "SV Werder Bremen",
+    "Werder Bremen"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Werder Bremen",
+    "openfootball": "SV Werder Bremen"
+   }
+  },
+  {
+   "team_id": "ger.hoffenheim",
+   "name": "TSG Hoffenheim",
+   "country": "GER",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Hoffenheim",
+    "TSG 1899 Hoffenheim"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Hoffenheim",
+    "openfootball": "TSG 1899 Hoffenheim"
+   }
+  },
+  {
+   "team_id": "ger.stuttgart",
+   "name": "VfB Stuttgart",
+   "country": "GER",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Stuttgart",
+    "VfB Stuttgart"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Stuttgart",
+    "openfootball": "VfB Stuttgart"
+   }
+  },
+  {
+   "team_id": "ger.heidenheim",
+   "name": "1. FC Heidenheim",
+   "country": "GER",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Heidenheim",
+    "1. FC Heidenheim 1846"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Heidenheim",
+    "openfootball": "1. FC Heidenheim 1846"
+   }
+  },
+  {
+   "team_id": "ger.st_pauli",
+   "name": "FC St. Pauli",
+   "country": "GER",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "St Pauli",
+    "St. Pauli",
+    "FC St. Pauli"
+   ],
+   "provider_ids": {
+    "football_data_couk": "St Pauli",
+    "openfootball": "FC St. Pauli"
+   }
+  },
+  {
+   "team_id": "ger.wolfsburg",
+   "name": "VfL Wolfsburg",
+   "country": "GER",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Wolfsburg",
+    "VfL Wolfsburg"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Wolfsburg",
+    "openfootball": "VfL Wolfsburg"
+   }
+  },
+  {
+   "team_id": "ger.bochum",
+   "name": "VfL Bochum",
+   "country": "GER",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Bochum",
+    "VfL Bochum 1848"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Bochum",
+    "openfootball": "VfL Bochum 1848"
+   }
+  },
+  {
+   "team_id": "ger.holstein_kiel",
+   "name": "Holstein Kiel",
+   "country": "GER",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Kiel",
+    "Holstein Kiel"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Holstein Kiel",
+    "openfootball": "Holstein Kiel"
+   }
+  },
+  {
+   "team_id": "ger.darmstadt",
+   "name": "Darmstadt 98",
+   "country": "GER",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Darmstadt",
+    "SV Darmstadt 98"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Darmstadt",
+    "openfootball": "SV Darmstadt 98"
+   }
+  },
+  {
+   "team_id": "ita.milan",
+   "name": "AC Milan",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Milan",
+    "AC Milan"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Milan",
+    "openfootball": "AC Milan"
+   }
+  },
+  {
+   "team_id": "ita.monza",
+   "name": "Monza",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "AC Monza",
+    "Monza"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Monza",
+    "openfootball": "AC Monza"
+   }
+  },
+  {
+   "team_id": "ita.fiorentina",
+   "name": "Fiorentina",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "ACF Fiorentina",
+    "Fiorentina"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Fiorentina",
+    "openfootball": "ACF Fiorentina"
+   }
+  },
+  {
+   "team_id": "ita.roma",
+   "name": "AS Roma",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Roma",
+    "AS Roma"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Roma",
+    "openfootball": "AS Roma"
+   }
+  },
+  {
+   "team_id": "ita.atalanta",
+   "name": "Atalanta",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Atalanta BC",
+    "Atalanta"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Atalanta",
+    "openfootball": "Atalanta BC"
+   }
+  },
+  {
+   "team_id": "ita.bologna",
+   "name": "Bologna",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Bologna FC 1909",
+    "Bologna"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Bologna",
+    "openfootball": "Bologna FC 1909"
+   }
+  },
+  {
+   "team_id": "ita.cagliari",
+   "name": "Cagliari",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Cagliari Calcio",
+    "Cagliari"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Cagliari",
+    "openfootball": "Cagliari Calcio"
+   }
+  },
+  {
+   "team_id": "ita.como",
+   "name": "Como",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Como 1907",
+    "Como"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Como",
+    "openfootball": "Como 1907"
+   }
+  },
+  {
+   "team_id": "ita.inter",
+   "name": "Inter Milan",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Inter",
+    "Internazionale",
+    "FC Internazionale Milano"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Inter",
+    "openfootball": "FC Internazionale Milano"
+   }
+  },
+  {
+   "team_id": "ita.frosinone",
+   "name": "Frosinone",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Frosinone Calcio",
+    "Frosinone"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Frosinone",
+    "openfootball": "Frosinone Calcio"
+   }
+  },
+  {
+   "team_id": "ita.genoa",
+   "name": "Genoa",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Genoa CFC",
+    "Genoa"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Genoa",
+    "openfootball": "Genoa CFC"
+   }
+  },
+  {
+   "team_id": "ita.juventus",
+   "name": "Juventus",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Juve",
+    "Juventus FC",
+    "Juventus"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Juventus",
+    "openfootball": "Juventus FC"
+   }
+  },
+  {
+   "team_id": "ita.parma",
+   "name": "Parma",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Parma Calcio 1913",
+    "Parma"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Parma",
+    "openfootball": "Parma Calcio 1913"
+   }
+  },
+  {
+   "team_id": "ita.lazio",
+   "name": "Lazio",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "SS Lazio",
+    "Lazio"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Lazio",
+    "openfootball": "SS Lazio"
+   }
+  },
+  {
+   "team_id": "ita.napoli",
+   "name": "Napoli",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "SSC Napoli",
+    "Napoli"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Napoli",
+    "openfootball": "SSC Napoli"
+   }
+  },
+  {
+   "team_id": "ita.torino",
+   "name": "Torino",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Torino FC",
+    "Torino"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Torino",
+    "openfootball": "Torino FC"
+   }
+  },
+  {
+   "team_id": "ita.lecce",
+   "name": "Lecce",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "US Lecce",
+    "Lecce"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Lecce",
+    "openfootball": "US Lecce"
+   }
+  },
+  {
+   "team_id": "ita.sassuolo",
+   "name": "Sassuolo",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "US Sassuolo Calcio",
+    "Sassuolo"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Sassuolo",
+    "openfootball": "US Sassuolo Calcio"
+   }
+  },
+  {
+   "team_id": "ita.udinese",
+   "name": "Udinese",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Udinese Calcio",
+    "Udinese"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Udinese",
+    "openfootball": "Udinese Calcio"
+   }
+  },
+  {
+   "team_id": "ita.venezia",
+   "name": "Venezia",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Venezia FC",
+    "Venezia"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Venezia",
+    "openfootball": "Venezia FC"
+   }
+  },
+  {
+   "team_id": "ita.cremonese",
+   "name": "Cremonese",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "US Cremonese",
+    "Cremonese"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Cremonese",
+    "openfootball": "US Cremonese"
+   }
+  },
+  {
+   "team_id": "ita.pisa",
+   "name": "Pisa",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Pisa SC",
+    "Pisa",
+    "Pisa Sporting Club"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Pisa",
+    "openfootball": "Pisa Sporting Club"
+   }
+  },
+  {
+   "team_id": "ita.verona",
+   "name": "Hellas Verona",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Verona",
+    "Hellas Verona FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Verona",
+    "openfootball": "Hellas Verona FC"
+   }
+  },
+  {
+   "team_id": "ita.empoli",
+   "name": "Empoli",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Empoli FC",
+    "Empoli"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Empoli",
+    "openfootball": "Empoli FC"
+   }
+  },
+  {
+   "team_id": "ita.salernitana",
+   "name": "Salernitana",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "US Salernitana 1919",
+    "Salernitana"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Salernitana",
+    "openfootball": "US Salernitana 1919"
+   }
+  },
+  {
+   "team_id": "ita.spezia",
+   "name": "Spezia",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Spezia Calcio",
+    "Spezia"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Spezia",
+    "openfootball": "Spezia Calcio"
+   }
+  },
+  {
+   "team_id": "ita.sampdoria",
+   "name": "Sampdoria",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "UC Sampdoria",
+    "Sampdoria"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Sampdoria",
+    "openfootball": "UC Sampdoria"
+   }
+  },
+  {
+   "team_id": "fra.auxerre",
+   "name": "AJ Auxerre",
+   "country": "FRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Auxerre",
+    "AJ Auxerre"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Auxerre",
+    "openfootball": "AJ Auxerre"
+   }
+  },
+  {
+   "team_id": "fra.monaco",
+   "name": "AS Monaco",
+   "country": "FRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Monaco",
+    "AS Monaco FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Monaco",
+    "openfootball": "AS Monaco FC"
+   }
+  },
+  {
+   "team_id": "fra.angers",
+   "name": "Angers",
+   "country": "FRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Angers SCO",
+    "Angers"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Angers",
+    "openfootball": "Angers SCO"
+   }
+  },
+  {
+   "team_id": "fra.lorient",
+   "name": "Lorient",
+   "country": "FRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "FC Lorient",
+    "Lorient"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Lorient",
+    "openfootball": "FC Lorient"
+   }
+  },
+  {
+   "team_id": "fra.metz",
+   "name": "Metz",
+   "country": "FRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "FC Metz",
+    "Metz"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Metz",
+    "openfootball": "FC Metz"
+   }
+  },
+  {
+   "team_id": "fra.nantes",
+   "name": "Nantes",
+   "country": "FRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "FC Nantes",
+    "Nantes"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Nantes",
+    "openfootball": "FC Nantes"
+   }
+  },
+  {
+   "team_id": "fra.le_havre",
+   "name": "Le Havre",
+   "country": "FRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Le Havre AC",
+    "Le Havre"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Le Havre",
+    "openfootball": "Le Havre AC"
+   }
+  },
+  {
+   "team_id": "fra.lille",
+   "name": "Lille",
+   "country": "FRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Lille OSC",
+    "LOSC",
+    "Lille"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Lille",
+    "openfootball": "Lille OSC"
+   }
+  },
+  {
+   "team_id": "fra.nice",
+   "name": "Nice",
+   "country": "FRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "OGC Nice",
+    "Nice"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Nice",
+    "openfootball": "OGC Nice"
+   }
+  },
+  {
+   "team_id": "fra.lyon",
+   "name": "Lyon",
+   "country": "FRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Olympique Lyonnais",
+    "OL",
+    "Lyon"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Lyon",
+    "openfootball": "Olympique Lyonnais"
+   }
+  },
+  {
+   "team_id": "fra.marseille",
+   "name": "Marseille",
+   "country": "FRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Olympique de Marseille",
+    "Olympique Marseille",
+    "OM",
+    "Marseille"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Marseille",
+    "openfootball": "Olympique de Marseille"
+   }
+  },
+  {
+   "team_id": "fra.paris_fc",
+   "name": "Paris FC",
+   "country": "FRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Paris FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Paris FC",
+    "openfootball": "Paris FC"
+   }
+  },
+  {
+   "team_id": "fra.psg",
+   "name": "Paris Saint-Germain",
+   "country": "FRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "PSG",
+    "Paris SG",
+    "Paris Saint Germain",
+    "Paris Saint-Germain FC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Paris SG",
+    "openfootball": "Paris Saint-Germain FC"
+   }
+  },
+  {
+   "team_id": "fra.strasbourg",
+   "name": "Strasbourg",
+   "country": "FRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "RC Strasbourg",
+    "RC Strasbourg Alsace",
+    "Strasbourg"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Strasbourg",
+    "openfootball": "RC Strasbourg Alsace"
+   }
+  },
+  {
+   "team_id": "fra.lens",
+   "name": "Lens",
+   "country": "FRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "RC Lens",
+    "Racing Club de Lens",
+    "Lens"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Lens",
+    "openfootball": "Racing Club de Lens"
+   }
+  },
+  {
+   "team_id": "fra.brest",
+   "name": "Brest",
+   "country": "FRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Stade Brestois",
+    "Stade Brestois 29",
+    "Brest"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Brest",
+    "openfootball": "Stade Brestois 29"
+   }
+  },
+  {
+   "team_id": "fra.rennes",
+   "name": "Rennes",
+   "country": "FRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Stade Rennais",
+    "Stade Rennais FC 1901",
+    "Rennes"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Rennes",
+    "openfootball": "Stade Rennais FC 1901"
+   }
+  },
+  {
+   "team_id": "fra.toulouse",
+   "name": "Toulouse",
+   "country": "FRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Toulouse FC",
+    "Toulouse"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Toulouse",
+    "openfootball": "Toulouse FC"
+   }
+  },
+  {
+   "team_id": "fra.le_mans",
+   "name": "Le Mans",
+   "country": "FRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Le Mans FC",
+    "Le Mans"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Le Mans",
+    "openfootball": "Le Mans FC"
+   }
+  },
+  {
+   "team_id": "fra.troyes",
+   "name": "Troyes",
+   "country": "FRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "ESTAC Troyes",
+    "Troyes",
+    "ES Troyes AC"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Troyes",
+    "openfootball": "ES Troyes AC"
+   }
+  },
+  {
+   "team_id": "fra.reims",
+   "name": "Reims",
+   "country": "FRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Stade de Reims",
+    "Reims"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Reims",
+    "openfootball": "Stade de Reims"
+   }
+  },
+  {
+   "team_id": "fra.st_etienne",
+   "name": "Saint-Étienne",
+   "country": "FRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "St Etienne",
+    "Saint-Etienne",
+    "AS Saint-Étienne"
+   ],
+   "provider_ids": {
+    "football_data_couk": "St Etienne",
+    "openfootball": "AS Saint-Étienne"
+   }
+  },
+  {
+   "team_id": "fra.montpellier",
+   "name": "Montpellier",
+   "country": "FRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Montpellier HSC",
+    "Montpellier"
+   ],
+   "provider_ids": {
+    "football_data_couk": "Montpellier",
+    "openfootball": "Montpellier HSC"
+   }
+  },
+  {
+   "team_id": "esp.barcelona_b",
+   "name": "FC Barcelona B",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "reserve",
+   "aliases": [
+    "Barcelona B",
+    "Barça B"
+   ],
+   "provider_ids": {},
+   "parent_team_id": "esp.barcelona"
+  },
+  {
+   "team_id": "esp.real_madrid_castilla",
+   "name": "Real Madrid Castilla",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "reserve",
+   "aliases": [
+    "Castilla",
+    "Real Madrid B"
+   ],
+   "provider_ids": {},
+   "parent_team_id": "esp.real_madrid"
+  },
+  {
+   "team_id": "eng.arsenal_w",
+   "name": "Arsenal Women",
+   "country": "ENG",
+   "gender": "women",
+   "kind": "club",
+   "aliases": [
+    "Arsenal",
+    "Arsenal WFC"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "eng.chelsea_w",
+   "name": "Chelsea Women",
+   "country": "ENG",
+   "gender": "women",
+   "kind": "club",
+   "aliases": [
+    "Chelsea",
+    "Chelsea FC Women"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "eng.man_city_w",
+   "name": "Manchester City Women",
+   "country": "ENG",
+   "gender": "women",
+   "kind": "club",
+   "aliases": [
+    "Manchester City",
+    "Man City"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.eng",
+   "name": "England",
+   "country": "ENG",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.eng_w",
+   "name": "England Women",
+   "country": "ENG",
+   "gender": "women",
+   "kind": "national",
+   "aliases": [
+    "England"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.fra",
+   "name": "France",
+   "country": "FRA",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.fra_w",
+   "name": "France Women",
+   "country": "FRA",
+   "gender": "women",
+   "kind": "national",
+   "aliases": [
+    "France"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.ger",
+   "name": "Germany",
+   "country": "GER",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.ger_w",
+   "name": "Germany Women",
+   "country": "GER",
+   "gender": "women",
+   "kind": "national",
+   "aliases": [
+    "Germany"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.esp",
+   "name": "Spain",
+   "country": "ESP",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.esp_w",
+   "name": "Spain Women",
+   "country": "ESP",
+   "gender": "women",
+   "kind": "national",
+   "aliases": [
+    "Spain"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.ita",
+   "name": "Italy",
+   "country": "ITA",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.ita_w",
+   "name": "Italy Women",
+   "country": "ITA",
+   "gender": "women",
+   "kind": "national",
+   "aliases": [
+    "Italy"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.bra",
+   "name": "Brazil",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.bra_w",
+   "name": "Brazil Women",
+   "country": "BRA",
+   "gender": "women",
+   "kind": "national",
+   "aliases": [
+    "Brazil"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.arg",
+   "name": "Argentina",
+   "country": "ARG",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.usa",
+   "name": "United States",
+   "country": "USA",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [
+    "USA",
+    "US",
+    "United States of America"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.usa_w",
+   "name": "United States Women",
+   "country": "USA",
+   "gender": "women",
+   "kind": "national",
+   "aliases": [
+    "United States",
+    "USA",
+    "US",
+    "United States of America"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.mex",
+   "name": "Mexico",
+   "country": "MEX",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.por",
+   "name": "Portugal",
+   "country": "POR",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.ned",
+   "name": "Netherlands",
+   "country": "NED",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [
+    "Holland"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.ned_w",
+   "name": "Netherlands Women",
+   "country": "NED",
+   "gender": "women",
+   "kind": "national",
+   "aliases": [
+    "Netherlands",
+    "Holland"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.bel",
+   "name": "Belgium",
+   "country": "BEL",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.cro",
+   "name": "Croatia",
+   "country": "CRO",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.uru",
+   "name": "Uruguay",
+   "country": "URU",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.col",
+   "name": "Colombia",
+   "country": "COL",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.jpn",
+   "name": "Japan",
+   "country": "JPN",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.jpn_w",
+   "name": "Japan Women",
+   "country": "JPN",
+   "gender": "women",
+   "kind": "national",
+   "aliases": [
+    "Japan"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.kor",
+   "name": "South Korea",
+   "country": "KOR",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [
+    "Korea Republic"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.mar",
+   "name": "Morocco",
+   "country": "MAR",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.sen",
+   "name": "Senegal",
+   "country": "SEN",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.can",
+   "name": "Canada",
+   "country": "CAN",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.can_w",
+   "name": "Canada Women",
+   "country": "CAN",
+   "gender": "women",
+   "kind": "national",
+   "aliases": [
+    "Canada"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.sui",
+   "name": "Switzerland",
+   "country": "SUI",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.den",
+   "name": "Denmark",
+   "country": "DEN",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.aut",
+   "name": "Austria",
+   "country": "AUT",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.tur",
+   "name": "Türkiye",
+   "country": "TUR",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [
+    "Turkey",
+    "Turkiye"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.sco",
+   "name": "Scotland",
+   "country": "SCO",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.wal",
+   "name": "Wales",
+   "country": "WAL",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.nor",
+   "name": "Norway",
+   "country": "NOR",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.nor_w",
+   "name": "Norway Women",
+   "country": "NOR",
+   "gender": "women",
+   "kind": "national",
+   "aliases": [
+    "Norway"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.swe",
+   "name": "Sweden",
+   "country": "SWE",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.swe_w",
+   "name": "Sweden Women",
+   "country": "SWE",
+   "gender": "women",
+   "kind": "national",
+   "aliases": [
+    "Sweden"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.pol",
+   "name": "Poland",
+   "country": "POL",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.srb",
+   "name": "Serbia",
+   "country": "SRB",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.ecu",
+   "name": "Ecuador",
+   "country": "ECU",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.aus",
+   "name": "Australia",
+   "country": "AUS",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.aus_w",
+   "name": "Australia Women",
+   "country": "AUS",
+   "gender": "women",
+   "kind": "national",
+   "aliases": [
+    "Australia"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.nga",
+   "name": "Nigeria",
+   "country": "NGA",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.civ",
+   "name": "Ivory Coast",
+   "country": "CIV",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [
+    "Côte d'Ivoire",
+    "Cote d'Ivoire"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.egy",
+   "name": "Egypt",
+   "country": "EGY",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.gha",
+   "name": "Ghana",
+   "country": "GHA",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.cmr",
+   "name": "Cameroon",
+   "country": "CMR",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.irn",
+   "name": "Iran",
+   "country": "IRN",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [
+    "IR Iran"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.ksa",
+   "name": "Saudi Arabia",
+   "country": "KSA",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.qat",
+   "name": "Qatar",
+   "country": "QAT",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.par",
+   "name": "Paraguay",
+   "country": "PAR",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.chi",
+   "name": "Chile",
+   "country": "CHI",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.per",
+   "name": "Peru",
+   "country": "PER",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.ven",
+   "name": "Venezuela",
+   "country": "VEN",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.pan",
+   "name": "Panama",
+   "country": "PAN",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.crc",
+   "name": "Costa Rica",
+   "country": "CRC",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.jam",
+   "name": "Jamaica",
+   "country": "JAM",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.irl",
+   "name": "Republic of Ireland",
+   "country": "IRL",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [
+    "Ireland"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.nir",
+   "name": "Northern Ireland",
+   "country": "NIR",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.cze",
+   "name": "Czechia",
+   "country": "CZE",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [
+    "Czech Republic"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.ukr",
+   "name": "Ukraine",
+   "country": "UKR",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.hun",
+   "name": "Hungary",
+   "country": "HUN",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.gre",
+   "name": "Greece",
+   "country": "GRE",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.rou",
+   "name": "Romania",
+   "country": "ROU",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.svk",
+   "name": "Slovakia",
+   "country": "SVK",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.svn",
+   "name": "Slovenia",
+   "country": "SVN",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.geo",
+   "name": "Georgia",
+   "country": "GEO",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.alb",
+   "name": "Albania",
+   "country": "ALB",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.bih",
+   "name": "Bosnia and Herzegovina",
+   "country": "BIH",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [
+    "Bosnia"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.nzl",
+   "name": "New Zealand",
+   "country": "NZL",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.uzb",
+   "name": "Uzbekistan",
+   "country": "UZB",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.jor",
+   "name": "Jordan",
+   "country": "JOR",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.rsa",
+   "name": "South Africa",
+   "country": "RSA",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.alg",
+   "name": "Algeria",
+   "country": "ALG",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.tun",
+   "name": "Tunisia",
+   "country": "TUN",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.cpv",
+   "name": "Cape Verde",
+   "country": "CPV",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.hai",
+   "name": "Haiti",
+   "country": "HAI",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.cuw",
+   "name": "Curaçao",
+   "country": "CUW",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [
+    "Curacao"
+   ],
+   "provider_ids": {}
+  }
+ ]
+}

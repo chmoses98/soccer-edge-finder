@@ -1,0 +1,271 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "authority": {
+      "enum": [
+        "RESEARCH_ONLY",
+        "SHADOW",
+        "LIMITED",
+        "TRUSTED"
+      ],
+      "title": "Authority",
+      "type": "string"
+    },
+    "available_size": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Available Size"
+    },
+    "bet_up_to_price": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Bet Up To Price"
+    },
+    "confidence_label": {
+      "title": "Confidence Label",
+      "type": "string"
+    },
+    "correlation_group": {
+      "title": "Correlation Group",
+      "type": "string"
+    },
+    "coverage_status": {
+      "enum": [
+        "complete",
+        "incomplete"
+      ],
+      "title": "Coverage Status",
+      "type": "string"
+    },
+    "current_price": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+          "type": "string"
+        }
+      ],
+      "title": "Current Price"
+    },
+    "data_as_of": {
+      "format": "date-time",
+      "title": "Data As Of",
+      "type": "string"
+    },
+    "event_id": {
+      "title": "Event Id",
+      "type": "string"
+    },
+    "event_name": {
+      "title": "Event Name",
+      "type": "string"
+    },
+    "fair_probability": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Fair Probability",
+      "type": "number"
+    },
+    "fair_probability_high": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Fair Probability High",
+      "type": "number"
+    },
+    "fair_probability_low": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Fair Probability Low",
+      "type": "number"
+    },
+    "fee_adjusted_edge": {
+      "title": "Fee Adjusted Edge",
+      "type": "number"
+    },
+    "fee_schedule_version": {
+      "title": "Fee Schedule Version",
+      "type": "string"
+    },
+    "league": {
+      "title": "League",
+      "type": "string"
+    },
+    "lineup_status": {
+      "enum": [
+        "unknown",
+        "projected",
+        "confirmed"
+      ],
+      "title": "Lineup Status",
+      "type": "string"
+    },
+    "market_as_of": {
+      "format": "date-time",
+      "title": "Market As Of",
+      "type": "string"
+    },
+    "market_description": {
+      "title": "Market Description",
+      "type": "string"
+    },
+    "market_family": {
+      "title": "Market Family",
+      "type": "string"
+    },
+    "market_ticker": {
+      "title": "Market Ticker",
+      "type": "string"
+    },
+    "model_as_of": {
+      "format": "date-time",
+      "title": "Model As Of",
+      "type": "string"
+    },
+    "model_family": {
+      "title": "Model Family",
+      "type": "string"
+    },
+    "model_version": {
+      "title": "Model Version",
+      "type": "string"
+    },
+    "prediction_record_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Prediction Record Id"
+    },
+    "probability_edge_positive": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Probability Edge Positive",
+      "type": "number"
+    },
+    "recommendation_id": {
+      "title": "Recommendation Id",
+      "type": "string"
+    },
+    "risks": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Risks",
+      "type": "array"
+    },
+    "schema_version": {
+      "default": "1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "side": {
+      "enum": [
+        "yes",
+        "no"
+      ],
+      "title": "Side",
+      "type": "string"
+    },
+    "sport": {
+      "enum": [
+        "soccer",
+        "mlb",
+        "nfl",
+        "cfb",
+        "nba",
+        "other"
+      ],
+      "title": "Sport",
+      "type": "string"
+    },
+    "stake_units": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "null until staking is externally supplied or authorised",
+      "title": "Stake Units"
+    },
+    "start_time": {
+      "format": "date-time",
+      "title": "Start Time",
+      "type": "string"
+    },
+    "thesis": {
+      "title": "Thesis",
+      "type": "string"
+    },
+    "worst_case_edge": {
+      "title": "Worst Case Edge",
+      "type": "number"
+    }
+  },
+  "required": [
+    "recommendation_id",
+    "sport",
+    "league",
+    "event_id",
+    "event_name",
+    "start_time",
+    "market_ticker",
+    "market_family",
+    "market_description",
+    "side",
+    "current_price",
+    "fair_probability",
+    "fair_probability_low",
+    "fair_probability_high",
+    "probability_edge_positive",
+    "fee_adjusted_edge",
+    "worst_case_edge",
+    "authority",
+    "confidence_label",
+    "model_family",
+    "model_version",
+    "data_as_of",
+    "market_as_of",
+    "model_as_of",
+    "lineup_status",
+    "coverage_status",
+    "thesis",
+    "risks",
+    "correlation_group",
+    "fee_schedule_version"
+  ],
+  "title": "RecommendationV1",
+  "type": "object"
+}

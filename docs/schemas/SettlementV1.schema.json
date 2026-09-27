@@ -1,0 +1,129 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "agrees_with_kalshi": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Agrees With Kalshi"
+    },
+    "event_id": {
+      "title": "Event Id",
+      "type": "string"
+    },
+    "evidence": {
+      "additionalProperties": true,
+      "title": "Evidence",
+      "type": "object"
+    },
+    "kalshi_result": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Kalshi Result"
+    },
+    "market_ticker": {
+      "title": "Market Ticker",
+      "type": "string"
+    },
+    "outcome": {
+      "enum": [
+        "yes",
+        "no",
+        "void",
+        "refused"
+      ],
+      "title": "Outcome",
+      "type": "string"
+    },
+    "position_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Position Id"
+    },
+    "realised_pnl": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Realised Pnl"
+    },
+    "refusal_reason": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Refusal Reason"
+    },
+    "schema_version": {
+      "default": "1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "settled_at": {
+      "format": "date-time",
+      "title": "Settled At",
+      "type": "string"
+    },
+    "settlement_id": {
+      "title": "Settlement Id",
+      "type": "string"
+    },
+    "sport": {
+      "enum": [
+        "soccer",
+        "mlb",
+        "nfl",
+        "cfb",
+        "nba",
+        "other"
+      ],
+      "title": "Sport",
+      "type": "string"
+    }
+  },
+  "required": [
+    "settlement_id",
+    "sport",
+    "event_id",
+    "market_ticker",
+    "outcome",
+    "settled_at",
+    "evidence"
+  ],
+  "title": "SettlementV1",
+  "type": "object"
+}

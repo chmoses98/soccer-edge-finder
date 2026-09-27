@@ -1,0 +1,737 @@
+{
+  "$defs": {
+    "CoverageReportV1": {
+      "additionalProperties": false,
+      "properties": {
+        "by_disposition": {
+          "additionalProperties": {
+            "type": "integer"
+          },
+          "title": "By Disposition",
+          "type": "object"
+        },
+        "competitions_discovered": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Competitions Discovered",
+          "type": "array"
+        },
+        "contracts_by_family": {
+          "additionalProperties": {
+            "type": "integer"
+          },
+          "title": "Contracts By Family",
+          "type": "object"
+        },
+        "contracts_discovered": {
+          "title": "Contracts Discovered",
+          "type": "integer"
+        },
+        "contracts_evaluated": {
+          "title": "Contracts Evaluated",
+          "type": "integer"
+        },
+        "contracts_excluded_mechanically": {
+          "title": "Contracts Excluded Mechanically",
+          "type": "integer"
+        },
+        "contracts_unsupported": {
+          "title": "Contracts Unsupported",
+          "type": "integer"
+        },
+        "discovery_complete": {
+          "title": "Discovery Complete",
+          "type": "boolean"
+        },
+        "discovery_run_id": {
+          "title": "Discovery Run Id",
+          "type": "string"
+        },
+        "schema_version": {
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "unaccounted_contracts": {
+          "title": "Unaccounted Contracts",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "discovery_run_id",
+        "discovery_complete",
+        "contracts_discovered",
+        "contracts_evaluated",
+        "contracts_excluded_mechanically",
+        "contracts_unsupported",
+        "unaccounted_contracts",
+        "by_disposition",
+        "contracts_by_family",
+        "competitions_discovered"
+      ],
+      "title": "CoverageReportV1",
+      "type": "object"
+    },
+    "EventV1": {
+      "additionalProperties": false,
+      "properties": {
+        "away": {
+          "title": "Away",
+          "type": "string"
+        },
+        "away_id": {
+          "title": "Away Id",
+          "type": "string"
+        },
+        "event_id": {
+          "title": "Event Id",
+          "type": "string"
+        },
+        "event_name": {
+          "title": "Event Name",
+          "type": "string"
+        },
+        "home": {
+          "title": "Home",
+          "type": "string"
+        },
+        "home_id": {
+          "title": "Home Id",
+          "type": "string"
+        },
+        "league": {
+          "title": "League",
+          "type": "string"
+        },
+        "league_id": {
+          "title": "League Id",
+          "type": "string"
+        },
+        "lineup_status": {
+          "default": "unknown",
+          "enum": [
+            "unknown",
+            "projected",
+            "confirmed"
+          ],
+          "title": "Lineup Status",
+          "type": "string"
+        },
+        "markets_discovered": {
+          "default": 0,
+          "title": "Markets Discovered",
+          "type": "integer"
+        },
+        "markets_evaluated": {
+          "default": 0,
+          "title": "Markets Evaluated",
+          "type": "integer"
+        },
+        "neutral_site": {
+          "default": false,
+          "title": "Neutral Site",
+          "type": "boolean"
+        },
+        "schema_version": {
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "sport": {
+          "enum": [
+            "soccer",
+            "mlb",
+            "nfl",
+            "cfb",
+            "nba",
+            "other"
+          ],
+          "title": "Sport",
+          "type": "string"
+        },
+        "stage": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Stage"
+        },
+        "start_time": {
+          "format": "date-time",
+          "title": "Start Time",
+          "type": "string"
+        },
+        "status": {
+          "title": "Status",
+          "type": "string"
+        },
+        "venue": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Venue"
+        }
+      },
+      "required": [
+        "event_id",
+        "sport",
+        "league",
+        "league_id",
+        "event_name",
+        "start_time",
+        "home",
+        "away",
+        "home_id",
+        "away_id",
+        "status"
+      ],
+      "title": "EventV1",
+      "type": "object"
+    },
+    "ModelHealthV1": {
+      "additionalProperties": false,
+      "properties": {
+        "authority": {
+          "enum": [
+            "RESEARCH_ONLY",
+            "SHADOW",
+            "LIMITED",
+            "TRUSTED"
+          ],
+          "title": "Authority",
+          "type": "string"
+        },
+        "brier": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Brier"
+        },
+        "clv_points_mean": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Clv Points Mean"
+        },
+        "ece": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Ece"
+        },
+        "fee_adjusted_realised_ev": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Fee Adjusted Realised Ev"
+        },
+        "horizon": {
+          "title": "Horizon",
+          "type": "string"
+        },
+        "interval_coverage_80": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Interval Coverage 80"
+        },
+        "last_evaluated_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Last Evaluated At"
+        },
+        "log_loss": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Log Loss"
+        },
+        "market_family": {
+          "title": "Market Family",
+          "type": "string"
+        },
+        "market_log_loss": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Market Log Loss"
+        },
+        "model_family": {
+          "title": "Model Family",
+          "type": "string"
+        },
+        "n_settled": {
+          "title": "N Settled",
+          "type": "integer"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        },
+        "schema_version": {
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "sport": {
+          "enum": [
+            "soccer",
+            "mlb",
+            "nfl",
+            "cfb",
+            "nba",
+            "other"
+          ],
+          "title": "Sport",
+          "type": "string"
+        }
+      },
+      "required": [
+        "sport",
+        "model_family",
+        "market_family",
+        "horizon",
+        "authority",
+        "n_settled"
+      ],
+      "title": "ModelHealthV1",
+      "type": "object"
+    },
+    "RecommendationV1": {
+      "additionalProperties": false,
+      "properties": {
+        "authority": {
+          "enum": [
+            "RESEARCH_ONLY",
+            "SHADOW",
+            "LIMITED",
+            "TRUSTED"
+          ],
+          "title": "Authority",
+          "type": "string"
+        },
+        "available_size": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Available Size"
+        },
+        "bet_up_to_price": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Bet Up To Price"
+        },
+        "confidence_label": {
+          "title": "Confidence Label",
+          "type": "string"
+        },
+        "correlation_group": {
+          "title": "Correlation Group",
+          "type": "string"
+        },
+        "coverage_status": {
+          "enum": [
+            "complete",
+            "incomplete"
+          ],
+          "title": "Coverage Status",
+          "type": "string"
+        },
+        "current_price": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            }
+          ],
+          "title": "Current Price"
+        },
+        "data_as_of": {
+          "format": "date-time",
+          "title": "Data As Of",
+          "type": "string"
+        },
+        "event_id": {
+          "title": "Event Id",
+          "type": "string"
+        },
+        "event_name": {
+          "title": "Event Name",
+          "type": "string"
+        },
+        "fair_probability": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Fair Probability",
+          "type": "number"
+        },
+        "fair_probability_high": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Fair Probability High",
+          "type": "number"
+        },
+        "fair_probability_low": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Fair Probability Low",
+          "type": "number"
+        },
+        "fee_adjusted_edge": {
+          "title": "Fee Adjusted Edge",
+          "type": "number"
+        },
+        "fee_schedule_version": {
+          "title": "Fee Schedule Version",
+          "type": "string"
+        },
+        "league": {
+          "title": "League",
+          "type": "string"
+        },
+        "lineup_status": {
+          "enum": [
+            "unknown",
+            "projected",
+            "confirmed"
+          ],
+          "title": "Lineup Status",
+          "type": "string"
+        },
+        "market_as_of": {
+          "format": "date-time",
+          "title": "Market As Of",
+          "type": "string"
+        },
+        "market_description": {
+          "title": "Market Description",
+          "type": "string"
+        },
+        "market_family": {
+          "title": "Market Family",
+          "type": "string"
+        },
+        "market_ticker": {
+          "title": "Market Ticker",
+          "type": "string"
+        },
+        "model_as_of": {
+          "format": "date-time",
+          "title": "Model As Of",
+          "type": "string"
+        },
+        "model_family": {
+          "title": "Model Family",
+          "type": "string"
+        },
+        "model_version": {
+          "title": "Model Version",
+          "type": "string"
+        },
+        "prediction_record_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Prediction Record Id"
+        },
+        "probability_edge_positive": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Probability Edge Positive",
+          "type": "number"
+        },
+        "recommendation_id": {
+          "title": "Recommendation Id",
+          "type": "string"
+        },
+        "risks": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Risks",
+          "type": "array"
+        },
+        "schema_version": {
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "side": {
+          "enum": [
+            "yes",
+            "no"
+          ],
+          "title": "Side",
+          "type": "string"
+        },
+        "sport": {
+          "enum": [
+            "soccer",
+            "mlb",
+            "nfl",
+            "cfb",
+            "nba",
+            "other"
+          ],
+          "title": "Sport",
+          "type": "string"
+        },
+        "stake_units": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "null until staking is externally supplied or authorised",
+          "title": "Stake Units"
+        },
+        "start_time": {
+          "format": "date-time",
+          "title": "Start Time",
+          "type": "string"
+        },
+        "thesis": {
+          "title": "Thesis",
+          "type": "string"
+        },
+        "worst_case_edge": {
+          "title": "Worst Case Edge",
+          "type": "number"
+        }
+      },
+      "required": [
+        "recommendation_id",
+        "sport",
+        "league",
+        "event_id",
+        "event_name",
+        "start_time",
+        "market_ticker",
+        "market_family",
+        "market_description",
+        "side",
+        "current_price",
+        "fair_probability",
+        "fair_probability_low",
+        "fair_probability_high",
+        "probability_edge_positive",
+        "fee_adjusted_edge",
+        "worst_case_edge",
+        "authority",
+        "confidence_label",
+        "model_family",
+        "model_version",
+        "data_as_of",
+        "market_as_of",
+        "model_as_of",
+        "lineup_status",
+        "coverage_status",
+        "thesis",
+        "risks",
+        "correlation_group",
+        "fee_schedule_version"
+      ],
+      "title": "RecommendationV1",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "coverage": {
+      "$ref": "#/$defs/CoverageReportV1"
+    },
+    "events": {
+      "items": {
+        "$ref": "#/$defs/EventV1"
+      },
+      "title": "Events",
+      "type": "array"
+    },
+    "filters": {
+      "additionalProperties": true,
+      "title": "Filters",
+      "type": "object"
+    },
+    "freshness": {
+      "additionalProperties": true,
+      "title": "Freshness",
+      "type": "object"
+    },
+    "generated_at": {
+      "format": "date-time",
+      "title": "Generated At",
+      "type": "string"
+    },
+    "model_health": {
+      "items": {
+        "$ref": "#/$defs/ModelHealthV1"
+      },
+      "title": "Model Health",
+      "type": "array"
+    },
+    "no_bets": {
+      "title": "No Bets",
+      "type": "boolean"
+    },
+    "recommendations": {
+      "items": {
+        "$ref": "#/$defs/RecommendationV1"
+      },
+      "title": "Recommendations",
+      "type": "array"
+    },
+    "run_date": {
+      "title": "Run Date",
+      "type": "string"
+    },
+    "run_id": {
+      "title": "Run Id",
+      "type": "string"
+    },
+    "schema_version": {
+      "default": "1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "shadow_recommendations": {
+      "description": "RESEARCH_ONLY/SHADOW output; never actionable",
+      "items": {
+        "$ref": "#/$defs/RecommendationV1"
+      },
+      "title": "Shadow Recommendations",
+      "type": "array"
+    },
+    "sport": {
+      "enum": [
+        "soccer",
+        "mlb",
+        "nfl",
+        "cfb",
+        "nba",
+        "other"
+      ],
+      "title": "Sport",
+      "type": "string"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "run_id",
+    "sport",
+    "generated_at",
+    "run_date",
+    "filters",
+    "no_bets",
+    "recommendations",
+    "events",
+    "coverage",
+    "freshness"
+  ],
+  "title": "RunOutputV1",
+  "type": "object"
+}
