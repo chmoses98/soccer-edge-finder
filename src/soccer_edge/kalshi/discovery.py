@@ -56,6 +56,7 @@ class DiscoveryRun:
     request_count: int = 0
     retry_count: int = 0
     milestones_note: str = ""
+    fast_skipped: int = 0  # owned series not swept in fast-capture mode (recorded, counted)
 
     @property
     def complete(self) -> bool:
@@ -91,7 +92,10 @@ class DiscoveryRun:
             "series_total": self.series_total,
             "series_by_ownership": dict(own),
             "series_swept": len(self.swept_series()),
-            "series_ambiguous_unswept": len(self.ambiguous_unswept()),
+            "series_ambiguous_unswept": len(
+                [r for r in self.ambiguous_unswept() if "fast capture" not in r.ownership_reason]
+            ),
+            "series_skipped_fast_mode": self.fast_skipped,
             "series_ambiguous_unswept_tickers": sorted(
                 r.series.ticker for r in self.ambiguous_unswept()
             )[:200],
@@ -172,7 +176,13 @@ def discover(
     include_not_soccer_series: bool = False,
     fetch_events: bool = True,
     probe_milestones: bool = True,
+    sweep_series: set[str] | None = None,
+    known_series: set[str] | None = None,
 ) -> DiscoveryRun:
+    """Exhaustive by default. FAST-CAPTURE mode when both sets are given: an owned series is swept
+    iff it is in `sweep_series` (had markets at the last full discovery) or NOT in `known_series`
+    (new since then). Skipped series are recorded with swept=False and counted
+    (`series_skipped_fast_mode`), never dropped."""
     run = DiscoveryRun(
         run_id=f"disc-{utc_now():%Y%m%dT%H%M%SZ}-{uuid.uuid4().hex[:6]}",
         started_at=utc_now(),
@@ -201,6 +211,15 @@ def discover(
             rec.ownership_reason = why + "; not swept (no soccer wording)"
         run.series_records[s.ticker] = rec
 
+    if sweep_series is not None and known_series is not None:
+        for rec in run.owned_series():
+            tk_ = rec.series.ticker
+            if rec.swept and tk_ not in sweep_series and tk_ in known_series:
+                rec.swept = False
+                rec.ownership_reason += (
+                    "; not swept (fast capture: no markets in last full discovery)"
+                )
+                run.fast_skipped += 1
     owned = run.swept_series()
     t_start = time.monotonic()
     print(

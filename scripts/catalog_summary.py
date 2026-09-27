@@ -125,6 +125,9 @@ def main() -> int:
         "market_status_histogram": status_hist,
         "event_count": len(cat["events"]),
         "market_count": len(cat["markets"]),
+        "series_with_markets": sorted(
+            {m.get("series_ticker") or m["ticker"].split("-")[0] for m in cat["markets"]}
+        ),
     }
     Path(a.out).parent.mkdir(parents=True, exist_ok=True)
     Path(a.out).write_text(json.dumps(index, indent=1, sort_keys=True) + "\n")

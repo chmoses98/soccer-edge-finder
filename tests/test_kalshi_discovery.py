@@ -348,3 +348,41 @@ def test_nfl_prefix_with_soccer_mistag_is_ambiguous():
         }
     )
     assert classify_ownership(s2)[0] is Ownership.NOT_SOCCER
+
+
+def test_fast_capture_sweeps_known_market_series_and_new_series(registry, epl_fixtures):
+    fake = FakeKalshi(epl_fixtures, registry)
+    fake._series.append(
+        {
+            "ticker": "KXEPLNEWFAMILY",
+            "title": "EPL new thing",
+            "category": "Sports",
+            "tags": ["Soccer"],
+            "fee_type": "quadratic",
+        }
+    )
+    fake._markets["KXEPLNEWFAMILY"] = [
+        dict(
+            fake._markets["KXEPLTOTAL"][0],
+            ticker="KXEPLNEWFAMILY-26OCT10LEEARS-1",
+            event_ticker="KXEPLNEWFAMILY-26OCT10LEEARS",
+            series_ticker="KXEPLNEWFAMILY",
+        )
+    ]
+    fake._events["KXEPLNEWFAMILY"] = []
+    client = KalshiPublicClient(transport=fake.transport)
+    known = {
+        "KXEPLTOTAL",
+        "KXEPLGAME",
+        "KXEPLSPREAD",
+        "KXEPLTEAMTOTAL",
+        "KXEPLGOAL",
+        "KXEPLCORNERS",
+        "KXMYSTERYCUP",
+    }
+    run = discover(client, sweep_series={"KXEPLTOTAL", "KXEPLGAME"}, known_series=known)
+    c = run.counters()
+    swept = {r.series.ticker for r in run.swept_series()}
+    assert {"KXEPLTOTAL", "KXEPLGAME", "KXEPLNEWFAMILY"} <= swept  # known-with-markets + NEW
+    assert "KXEPLSPREAD" not in swept and c["series_skipped_fast_mode"] >= 4
+    assert "KXEPLNEWFAMILY-26OCT10LEEARS-1" in run.markets and run.complete

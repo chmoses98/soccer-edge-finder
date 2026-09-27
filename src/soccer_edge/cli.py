@@ -55,7 +55,27 @@ def cmd_capture(args: argparse.Namespace) -> int:
     from soccer_edge.kalshi.fees import FEE_SCHEDULE_VERSION
 
     client = KalshiPublicClient()
-    run = discover(client, statuses=tuple(args.status), fetch_events=True)
+    sweep_series = known_series = None
+    if args.fast:
+        idx_path = REPO_ROOT / "data" / "catalog" / "latest_index.json"
+        if idx_path.exists() and "series_with_markets" in read_json(idx_path):
+            idx = read_json(idx_path)
+            known_series = {x["ticker"] for x in idx.get("series", [])}
+            sweep_series = set(idx.get("series_with_markets", []))
+            print(
+                f"[capture] fast mode: {len(sweep_series)} series with markets at last full discovery; new series are always swept"
+            )
+        else:
+            print(
+                "[capture] --fast requested but no usable committed index; running exhaustive discovery"
+            )
+    run = discover(
+        client,
+        statuses=tuple(args.status),
+        fetch_events=True,
+        sweep_series=sweep_series,
+        known_series=known_series,
+    )
     now = utc_now()
     snaps = []
     prev_path = Path(args.out_dir) / "last_fingerprints.json"
@@ -286,6 +306,11 @@ def build_parser() -> argparse.ArgumentParser:
     c.add_argument("--out-dir", default=str(DATA / "snapshots"))
     c.add_argument("--status", action="append", default=None)
     c.add_argument("--no-suppress", action="store_true")
+    c.add_argument(
+        "--fast",
+        action="store_true",
+        help="sweep only series that had markets in the last committed full discovery, plus new series",
+    )
     c.set_defaults(func=cmd_capture)
 
     st = sub.add_parser("settle", help="settle archived predictions + evaluate + propose authority")

@@ -10,6 +10,16 @@ ticker, event/series tickers, `captured_at`, status, yes/no bid/ask (dollars, 4 
 `price_unit="dollars"` (consumers refuse undeclared units — the 100× CLV lesson), horizon label,
 minutes to kickoff, optional order book (depth 10).
 
+## Fast capture vs exhaustive discovery
+
+The daily `kalshi-discover` job is exhaustive (every soccer/ambiguous-with-wording series, `open` +
+`unopened`, ~4,500 requests, ~19 min at 4 rps). Intraday `kalshi-capture` runs `--fast --status open`:
+it re-reads the full series list (so **new series are always swept**) but enumerates markets only for
+series that carried markets in the last committed full discovery. Owned series skipped this way are
+recorded with `swept=false` and counted as `series_skipped_fast_mode` in the batch status. The
+relaxation is therefore explicit: a series that was empty at the last full discovery and gained
+markets before the next one is picked up by the next daily run, not by the intraday capture.
+
 ## Change suppression
 
 `quote_fingerprint()` hashes status + the four prices + sizes. A capture writes only snapshots

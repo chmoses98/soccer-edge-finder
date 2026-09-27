@@ -43,7 +43,7 @@ jobs:
         id: cap
         run: |
           set -o pipefail
-          python -m soccer_edge.cli capture --out-dir work/snapshots | tee work/capture.log
+          python -m soccer_edge.cli capture --fast --status open --out-dir work/snapshots | tee work/capture.log
         continue-on-error: true
       - uses: actions/upload-artifact@v4
         with:
