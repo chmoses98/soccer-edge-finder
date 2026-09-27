@@ -29,7 +29,7 @@ jobs:
       - name: Fetch archive (predictions, snapshots, settlements)
         run: |
           if git ls-remote --exit-code --heads origin data-archive >/dev/null 2>&1; then
-            git clone --quiet --depth 1 --branch data-archive "$(git config --get remote.origin.url)" archive
+            git clone --quiet --depth 1 --branch data-archive "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" archive
           else
             mkdir -p archive; echo "no archive yet"
           fi
@@ -47,6 +47,8 @@ jobs:
           retention-days: 30
       - name: Publish
         if: ${{ steps.s.outcome == 'success' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           mkdir -p pub/settlements pub/evaluation
           cp -R archive/settlements/. pub/settlements/ 2>/dev/null || true

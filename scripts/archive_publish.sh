@@ -9,8 +9,13 @@ BRANCH="${ARCHIVE_BRANCH:-data-archive}"
 WORK="$(mktemp -d)"
 git config --global user.name "soccer-edge-bot"
 git config --global user.email "soccer-edge-bot@users.noreply.github.com"
-REMOTE_URL="$(git config --get remote.origin.url)"
-if git ls-remote --exit-code --heads origin "$BRANCH" >/dev/null 2>&1; then
+# A fresh clone does not inherit actions/checkout's auth header; use the workflow token explicitly.
+if [ -n "${GITHUB_TOKEN:-}" ] && [ -n "${GITHUB_REPOSITORY:-}" ]; then
+  REMOTE_URL="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+else
+  REMOTE_URL="$(git config --get remote.origin.url)"
+fi
+if git ls-remote --exit-code --heads "$REMOTE_URL" "$BRANCH" >/dev/null 2>&1; then
   git clone --quiet --depth 1 --branch "$BRANCH" "$REMOTE_URL" "$WORK"
 else
   git clone --quiet --depth 1 "$REMOTE_URL" "$WORK"
