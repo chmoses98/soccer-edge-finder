@@ -17,13 +17,13 @@ Nothing below is described as validated unless a test or a frozen research artif
 | Dixon-Coles posterior, world generator, minute-level simulator | **working** (fits real 2026-27 data for 5 leagues in <1 s each) | `tests/test_simulation.py` |
 | Contract pricer, coherence audit, robust edge, expression reducer, portfolio stats | **working** | `tests/test_pricing.py` |
 | Prediction ledger (append-only, hashed), settlement engine, evaluation metrics, authority policy | **working** | `tests/test_archive_settlement_eval.py`, `tests/test_settle_loop.py` |
-| RUN SOCCER pipeline + CLI (`soccer run`) incl. sim cache, freshness gates, NO BETS, coverage proof | **working** end to end on real fixtures with the synthetic Kalshi surface; live-surface run pending the merged discovery fix | `tests/test_run_pipeline.py` |
+| RUN SOCCER pipeline + CLI (`soccer run`) incl. sim cache, freshness gates, NO BETS, coverage proof | **working in production**: run `run-20260927T234251Z-484160` on `main` priced 117 of 6,499 live contracts, 0 unaccounted, NO BETS, 16 shadow expressions, 117 records archived to `data-archive` | `tests/test_run_pipeline.py`, archive branch `runs/` |
 | App contract V1 (7 schemas, exported JSON Schema, CI-synced) | **working** | `tests/test_app_contract.py` |
 | Player/lineup layer | **scaffold** (tested with synthetic players; no provider) | `test_absent_star_lowers_attack_and_removes_goals` |
 | Player-prop, futures, exact-score, cards/corners pricing | **not implemented** (dispositioned and counted) | coverage report |
 | Router integration, positions import | **not implemented** (plan in `docs/ROUTER_INTEGRATION.md`) | — |
 
-## B. What runs automatically (once PR #2 is merged)
+## B. What runs automatically (PRs #1–#3 merged; verified by dispatch on `main` 2026-09-27)
 
 | Workflow | Schedule | Writes |
 |---|---|---|
@@ -253,9 +253,9 @@ realisations are never stored.
 
 ## K. Genuine blockers / risks
 
-1. The daily discovery is ~13 minutes; the fast capture relies on the committed index listing
-   `series_with_markets`, which the first post-merge discovery run will populate (until then capture
-   falls back to exhaustive and takes as long as discovery).
+1. Prospective evidence is zero today: the first archived predictions (117 contracts, 39 fixtures on
+   2026-10-09..11) settle after the international break. Nothing can be promoted before hundreds of
+   settled contracts per cell exist.
 2. No lineup/injury source → every recommendation risk list says "lineups unknown".
 3. UEFA fixtures unmapped until an ESPN adapter exists.
 4. Fee mechanics are transcribed + probe-verified, not fill-reconciled in this repo.
@@ -270,9 +270,9 @@ multi-league model → prospective accrual → positions import/router.
 
 ## M. Owner actions (kept minimal)
 
-1. Merge PR #2 once CI is green (it contains the discovery ownership fix and the workflows).
-2. Nothing to add as secrets: all sources are public. Optional later: `FOOTBALL_DATA_ORG_TOKEN`.
-3. If you want the archive branch created immediately, dispatch `kalshi-capture` once after merge;
-   otherwise the first scheduled capture creates it.
-4. Do **not** edit `config/authority.json` until `settle-evaluate` shows ≥300 settled in a cell
-   with positive skill (the workflow will write `authority_proposals.json` when that happens).
+1. Nothing is required for the system to keep running: all sources are public, no secrets are
+   needed, and the schedules are live. Optional later: `FOOTBALL_DATA_ORG_TOKEN`.
+2. Do **not** edit `config/authority.json` until `settle-evaluate` shows ≥300 settled in a cell
+   with positive skill (`evaluation/authority_proposals.json` on `data-archive` will say so).
+3. Decide when soccer fills should route here; that unlocks the importer work and the safe half of
+   the router change (`docs/ROUTER_INTEGRATION.md`).
