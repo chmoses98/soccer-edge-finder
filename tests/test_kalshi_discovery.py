@@ -119,19 +119,144 @@ def test_taxonomy_on_observed_tickers(ticker, title, floor, family, side, line):
     assert (str(s.line) if s.line is not None else None) == line
 
 
-def test_inferred_game_family_requires_title_corroboration():
-    ok = classify(
+def test_game_family_observed_live_with_tie_leg():
+    win = classify(
         RawMarket.from_api(
-            {"ticker": "KXEPLGAME-26OCT10LEEARS-ARS", "event_ticker": "x", "title": "Arsenal wins?"}
+            {
+                "ticker": "KXBRASILEIROGAME-26OCT02SPASAN-SAN",
+                "event_ticker": "x",
+                "title": "Santos wins",
+                "rules_primary": "If Santos wins ... after 90 minutes plus stoppage time (does not include extra time or penalties)",
+            }
         )
     )
-    assert ok.family is MarketFamily.MATCH_RESULT_3WAY and ok.inferred
-    bad = classify(
+    assert (
+        win.family is MarketFamily.MATCH_RESULT_3WAY
+        and not win.inferred
+        and win.side_team_code == "SAN"
+    )
+    assert win.period.value == "regulation"  # negated 'extra time' clause must not flip the period
+    draw = classify(
         RawMarket.from_api(
-            {"ticker": "KXEPLGAME-26OCT10LEEARS-ARS", "event_ticker": "x", "title": "Something odd"}
+            {"ticker": "KXAPFDDHGAME-26SEP28LIBOLI-TIE", "event_ticker": "x", "title": "Draw"}
         )
     )
-    assert bad.family is MarketFamily.UNKNOWN
+    assert (
+        draw.side_team_code == "DRAW"
+        and draw.competition_code == "APFDDH"
+        and draw.competition_id is None
+    )
+
+
+@pytest.mark.parametrize(
+    ("ticker", "title", "rules", "family", "period", "side"),
+    [
+        (
+            "KXLIGAMXSCORE-26SEP27LEOJUA-LEO0JUA0",
+            "Final score Draw 0-0?",
+            "(does not include extra time or penalties)",
+            MarketFamily.EXACT_SCORE,
+            "regulation",
+            "LEO",
+        ),
+        (
+            "KXUEFANLFTTS-26SEP28ARMMNE-ARM",
+            "Will Armenia record the first goal of the game?",
+            "first goal during the entire game (regulation, stoppage and any extra time periods)",
+            MarketFamily.FIRST_TO_SCORE,
+            "including_extra_time",
+            "ARM",
+        ),
+        (
+            "KXUEFANL1HSPREAD-26SEP28ARMMNE-ARM2",
+            "Armenia wins by more than 1.5 goals in the 1st Half",
+            "",
+            MarketFamily.FIRST_HALF_HANDICAP,
+            "first_half",
+            "ARM",
+        ),
+        (
+            "KXCONCACAFNL1H-26SEP27CUWNIC-CUW",
+            "Curacao wins 1st Half",
+            "",
+            MarketFamily.FIRST_HALF_RESULT,
+            "first_half",
+            "CUW",
+        ),
+        (
+            "KXCONCACAFNL1HBTTS-26SEP27CUWNIC-BTTS",
+            "Both teams score in the 1st Half?",
+            "",
+            MarketFamily.FIRST_HALF_BTTS,
+            "first_half",
+            None,
+        ),
+        (
+            "KXWC-30-ALB",
+            "Will Albania win the 2030 FIFA Men's World Cup?",
+            "",
+            MarketFamily.COMPETITION_WINNER,
+            "season",
+            "ALB",
+        ),
+        (
+            "KXBUNDESLIGATEAMPOINTS-27-BMG30",
+            "Will M´gladbach finish with 30+ points?",
+            "",
+            MarketFamily.COMPETITION_TEAM_POINTS,
+            "season",
+            "BMG30",
+        ),
+        (
+            "KXEPLLEADER-27AST-AGARNA49",
+            "Will Alejandro Garnacho lead EPL in assists?",
+            "",
+            MarketFamily.PLAYER_SEASON_LEADER,
+            "season",
+            "AGARNA49",
+        ),
+        (
+            "KXJOINCLUB-26OCT02CPULISIC-ACM",
+            "Where will Christian Pulisic go next?",
+            "",
+            MarketFamily.SOCCER_SPECIAL,
+            "season",
+            "ACM",
+        ),
+        (
+            "KXUCLROUND-27FINAL-AEK",
+            "Will AEK Athens qualify for the Final?",
+            "",
+            MarketFamily.TOURNAMENT_ADVANCEMENT,
+            "season",
+            "AEK",
+        ),
+        (
+            "KXBALLONDORRANK-26T10-AHAK",
+            "Achraf Hakimi: Top 10?",
+            "",
+            MarketFamily.PLAYER_AWARD,
+            "season",
+            "AHAK",
+        ),
+        ("KXWEIRDNEW-26SEP28ABCDEF-1", "Something", "", MarketFamily.UNKNOWN, "unknown", None),
+    ],
+)
+def test_taxonomy_v2_on_live_observed_tickers(ticker, title, rules, family, period, side):
+    s = classify(
+        RawMarket.from_api(
+            {
+                "ticker": ticker,
+                "event_ticker": ticker.rsplit("-", 1)[0],
+                "title": title,
+                "rules_primary": rules,
+            }
+        )
+    )
+    assert s.family is family and s.period.value == period
+    assert s.side_team_code == side
+    if s.family is not MarketFamily.UNKNOWN:
+        assert not s.inferred
 
 
 def test_ownership_fail_closed_on_bare_football():
@@ -183,3 +308,81 @@ def test_coverage_invariant():
         led.set("A", Disposition.CLOSED)  # one terminal state per contract
     with pytest.raises(CoverageInvariantError):
         led.set("Z", Disposition.CLOSED)  # never disposition an undiscovered contract
+
+
+def test_bare_football_series_are_retained_but_not_swept(registry, epl_fixtures):
+    fake = FakeKalshi(epl_fixtures, registry)
+    run = discover(KalshiPublicClient(transport=fake.transport))
+    c = run.counters()
+    recs = run.series_records
+    assert recs["KXAFCCHAMP"].ownership is Ownership.NOT_SOCCER  # american-football wording
+    assert (
+        recs["KXFOOTBALLMYSTERY"].ownership is Ownership.AMBIGUOUS
+        and not recs["KXFOOTBALLMYSTERY"].swept
+    )
+    assert (
+        recs["KXMYSTERYCUP"].ownership is Ownership.SOCCER and recs["KXMYSTERYCUP"].swept
+    )  # soccer wording wins
+    assert c["series_ambiguous_unswept"] == 1 and c["series_ambiguous_unswept_tickers"] == [
+        "KXFOOTBALLMYSTERY"
+    ]
+    assert run.complete
+
+
+def test_nfl_prefix_with_soccer_mistag_is_ambiguous():
+    s = RawSeries.from_api(
+        {
+            "ticker": "KXFIRSTSUPERBOWLSONG",
+            "title": "What will be the first Super Bowl song?",
+            "category": "Entertainment",
+            "tags": ["Soccer", "Music"],
+        }
+    )
+    assert classify_ownership(s)[0] is Ownership.AMBIGUOUS
+    s2 = RawSeries.from_api(
+        {
+            "ticker": "KXNFLGAME",
+            "title": "Pro football game",
+            "category": "Sports",
+            "tags": ["Football"],
+        }
+    )
+    assert classify_ownership(s2)[0] is Ownership.NOT_SOCCER
+
+
+def test_fast_capture_sweeps_known_market_series_and_new_series(registry, epl_fixtures):
+    fake = FakeKalshi(epl_fixtures, registry)
+    fake._series.append(
+        {
+            "ticker": "KXEPLNEWFAMILY",
+            "title": "EPL new thing",
+            "category": "Sports",
+            "tags": ["Soccer"],
+            "fee_type": "quadratic",
+        }
+    )
+    fake._markets["KXEPLNEWFAMILY"] = [
+        dict(
+            fake._markets["KXEPLTOTAL"][0],
+            ticker="KXEPLNEWFAMILY-26OCT10LEEARS-1",
+            event_ticker="KXEPLNEWFAMILY-26OCT10LEEARS",
+            series_ticker="KXEPLNEWFAMILY",
+        )
+    ]
+    fake._events["KXEPLNEWFAMILY"] = []
+    client = KalshiPublicClient(transport=fake.transport)
+    known = {
+        "KXEPLTOTAL",
+        "KXEPLGAME",
+        "KXEPLSPREAD",
+        "KXEPLTEAMTOTAL",
+        "KXEPLGOAL",
+        "KXEPLCORNERS",
+        "KXMYSTERYCUP",
+    }
+    run = discover(client, sweep_series={"KXEPLTOTAL", "KXEPLGAME"}, known_series=known)
+    c = run.counters()
+    swept = {r.series.ticker for r in run.swept_series()}
+    assert {"KXEPLTOTAL", "KXEPLGAME", "KXEPLNEWFAMILY"} <= swept  # known-with-markets + NEW
+    assert "KXEPLSPREAD" not in swept and c["series_skipped_fast_mode"] >= 4
+    assert "KXEPLNEWFAMILY-26OCT10LEEARS-1" in run.markets and run.complete

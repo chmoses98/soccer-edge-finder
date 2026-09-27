@@ -1,0 +1,680 @@
+{
+  "by_league": {
+    "D1": {
+      "baseline.home_advantage_only": {
+        "brier": 0.65097,
+        "ece_home": 0.0061,
+        "log_loss": 1.07535,
+        "n": 2097
+      },
+      "baseline.league_base_rates": {
+        "brier": 0.65098,
+        "ece_home": 0.0099,
+        "log_loss": 1.07527,
+        "n": 2097
+      },
+      "data_only.dc_laplace_v1": {
+        "brier": 0.60416,
+        "ece_home": 0.057,
+        "log_loss": 1.0099,
+        "n": 2097
+      },
+      "hybrid.logit_blend_v1": {
+        "brier": 0.58183,
+        "ece_home": 0.0208,
+        "log_loss": 0.97834,
+        "n": 2097
+      },
+      "market_only.bet365_prematch_v1": {
+        "brier": 0.58183,
+        "ece_home": 0.0208,
+        "log_loss": 0.97834,
+        "n": 2097
+      }
+    },
+    "E0": {
+      "baseline.home_advantage_only": {
+        "brier": 0.64837,
+        "ece_home": 0.0104,
+        "log_loss": 1.07105,
+        "n": 2615
+      },
+      "baseline.league_base_rates": {
+        "brier": 0.64812,
+        "ece_home": 0.0146,
+        "log_loss": 1.07034,
+        "n": 2615
+      },
+      "data_only.dc_laplace_v1": {
+        "brier": 0.58968,
+        "ece_home": 0.0341,
+        "log_loss": 0.98998,
+        "n": 2615
+      },
+      "hybrid.logit_blend_v1": {
+        "brier": 0.57435,
+        "ece_home": 0.0161,
+        "log_loss": 0.96768,
+        "n": 2615
+      },
+      "market_only.bet365_prematch_v1": {
+        "brier": 0.57435,
+        "ece_home": 0.0161,
+        "log_loss": 0.96768,
+        "n": 2615
+      }
+    },
+    "F1": {
+      "baseline.home_advantage_only": {
+        "brier": 0.65083,
+        "ece_home": 0.0046,
+        "log_loss": 1.07487,
+        "n": 2297
+      },
+      "baseline.league_base_rates": {
+        "brier": 0.65154,
+        "ece_home": 0.0063,
+        "log_loss": 1.07602,
+        "n": 2297
+      },
+      "data_only.dc_laplace_v1": {
+        "brier": 0.60592,
+        "ece_home": 0.0357,
+        "log_loss": 1.01272,
+        "n": 2297
+      },
+      "hybrid.logit_blend_v1": {
+        "brier": 0.58772,
+        "ece_home": 0.0219,
+        "log_loss": 0.98634,
+        "n": 2297
+      },
+      "market_only.bet365_prematch_v1": {
+        "brier": 0.58772,
+        "ece_home": 0.0219,
+        "log_loss": 0.98634,
+        "n": 2297
+      }
+    },
+    "I1": {
+      "baseline.home_advantage_only": {
+        "brier": 0.6569,
+        "ece_home": 0.0036,
+        "log_loss": 1.084,
+        "n": 2614
+      },
+      "baseline.league_base_rates": {
+        "brier": 0.65708,
+        "ece_home": 0.0143,
+        "log_loss": 1.08423,
+        "n": 2614
+      },
+      "data_only.dc_laplace_v1": {
+        "brier": 0.59497,
+        "ece_home": 0.0463,
+        "log_loss": 0.99676,
+        "n": 2614
+      },
+      "hybrid.logit_blend_v1": {
+        "brier": 0.57458,
+        "ece_home": 0.025,
+        "log_loss": 0.96671,
+        "n": 2614
+      },
+      "market_only.bet365_prematch_v1": {
+        "brier": 0.57458,
+        "ece_home": 0.025,
+        "log_loss": 0.96671,
+        "n": 2614
+      }
+    },
+    "SP1": {
+      "baseline.home_advantage_only": {
+        "brier": 0.64611,
+        "ece_home": 0.0155,
+        "log_loss": 1.06929,
+        "n": 2625
+      },
+      "baseline.league_base_rates": {
+        "brier": 0.64538,
+        "ece_home": 0.0028,
+        "log_loss": 1.06817,
+        "n": 2625
+      },
+      "data_only.dc_laplace_v1": {
+        "brier": 0.596,
+        "ece_home": 0.0378,
+        "log_loss": 0.9988,
+        "n": 2625
+      },
+      "hybrid.logit_blend_v1": {
+        "brier": 0.57635,
+        "ece_home": 0.0288,
+        "log_loss": 0.96962,
+        "n": 2625
+      },
+      "market_only.bet365_prematch_v1": {
+        "brier": 0.57635,
+        "ece_home": 0.0288,
+        "log_loss": 0.96962,
+        "n": 2625
+      }
+    }
+  },
+  "by_season": {
+    "2019-20": {
+      "baseline.home_advantage_only": {
+        "brier": 0.64655,
+        "ece_home": 0.0096,
+        "log_loss": 1.06918,
+        "n": 1449
+      },
+      "baseline.league_base_rates": {
+        "brier": 0.6465,
+        "ece_home": 0.0074,
+        "log_loss": 1.06898,
+        "n": 1449
+      },
+      "data_only.dc_laplace_v1": {
+        "brier": 0.59861,
+        "ece_home": 0.0337,
+        "log_loss": 1.00158,
+        "n": 1449
+      },
+      "hybrid.logit_blend_v1": {
+        "brier": 0.57929,
+        "ece_home": 0.0158,
+        "log_loss": 0.97406,
+        "n": 1449
+      },
+      "market_only.bet365_prematch_v1": {
+        "brier": 0.57929,
+        "ece_home": 0.0158,
+        "log_loss": 0.97406,
+        "n": 1449
+      }
+    },
+    "2020-21": {
+      "baseline.home_advantage_only": {
+        "brier": 0.65754,
+        "ece_home": 0.0257,
+        "log_loss": 1.08428,
+        "n": 2013
+      },
+      "baseline.league_base_rates": {
+        "brier": 0.65883,
+        "ece_home": 0.0424,
+        "log_loss": 1.08574,
+        "n": 2013
+      },
+      "data_only.dc_laplace_v1": {
+        "brier": 0.60228,
+        "ece_home": 0.0483,
+        "log_loss": 1.00832,
+        "n": 2013
+      },
+      "hybrid.logit_blend_v1": {
+        "brier": 0.57922,
+        "ece_home": 0.0371,
+        "log_loss": 0.97668,
+        "n": 2013
+      },
+      "market_only.bet365_prematch_v1": {
+        "brier": 0.57922,
+        "ece_home": 0.0371,
+        "log_loss": 0.97668,
+        "n": 2013
+      }
+    },
+    "2021-22": {
+      "baseline.home_advantage_only": {
+        "brier": 0.65176,
+        "ece_home": 0.0067,
+        "log_loss": 1.07658,
+        "n": 1795
+      },
+      "baseline.league_base_rates": {
+        "brier": 0.65123,
+        "ece_home": 0.0087,
+        "log_loss": 1.07566,
+        "n": 1795
+      },
+      "data_only.dc_laplace_v1": {
+        "brier": 0.60037,
+        "ece_home": 0.036,
+        "log_loss": 1.00565,
+        "n": 1795
+      },
+      "hybrid.logit_blend_v1": {
+        "brier": 0.58275,
+        "ece_home": 0.0295,
+        "log_loss": 0.97938,
+        "n": 1795
+      },
+      "market_only.bet365_prematch_v1": {
+        "brier": 0.58275,
+        "ece_home": 0.0295,
+        "log_loss": 0.97938,
+        "n": 1795
+      }
+    },
+    "2022-23": {
+      "baseline.home_advantage_only": {
+        "brier": 0.64429,
+        "ece_home": 0.0344,
+        "log_loss": 1.06599,
+        "n": 1796
+      },
+      "baseline.league_base_rates": {
+        "brier": 0.64346,
+        "ece_home": 0.0225,
+        "log_loss": 1.06494,
+        "n": 1796
+      },
+      "data_only.dc_laplace_v1": {
+        "brier": 0.59567,
+        "ece_home": 0.0207,
+        "log_loss": 0.99739,
+        "n": 1796
+      },
+      "hybrid.logit_blend_v1": {
+        "brier": 0.5845,
+        "ece_home": 0.0239,
+        "log_loss": 0.98136,
+        "n": 1796
+      },
+      "market_only.bet365_prematch_v1": {
+        "brier": 0.5845,
+        "ece_home": 0.0239,
+        "log_loss": 0.98136,
+        "n": 1796
+      }
+    },
+    "2023-24": {
+      "baseline.home_advantage_only": {
+        "brier": 0.65171,
+        "ece_home": 0.0079,
+        "log_loss": 1.07676,
+        "n": 1732
+      },
+      "baseline.league_base_rates": {
+        "brier": 0.65145,
+        "ece_home": 0.0075,
+        "log_loss": 1.0763,
+        "n": 1732
+      },
+      "data_only.dc_laplace_v1": {
+        "brier": 0.59032,
+        "ece_home": 0.0545,
+        "log_loss": 0.98932,
+        "n": 1732
+      },
+      "hybrid.logit_blend_v1": {
+        "brier": 0.56818,
+        "ece_home": 0.0287,
+        "log_loss": 0.95675,
+        "n": 1732
+      },
+      "market_only.bet365_prematch_v1": {
+        "brier": 0.56818,
+        "ece_home": 0.0287,
+        "log_loss": 0.95675,
+        "n": 1732
+      }
+    },
+    "2024-25": {
+      "baseline.home_advantage_only": {
+        "brier": 0.65237,
+        "ece_home": 0.0003,
+        "log_loss": 1.07718,
+        "n": 1731
+      },
+      "baseline.league_base_rates": {
+        "brier": 0.65249,
+        "ece_home": 0.0151,
+        "log_loss": 1.0772,
+        "n": 1731
+      },
+      "data_only.dc_laplace_v1": {
+        "brier": 0.59506,
+        "ece_home": 0.0414,
+        "log_loss": 0.99674,
+        "n": 1731
+      },
+      "hybrid.logit_blend_v1": {
+        "brier": 0.5729,
+        "ece_home": 0.0293,
+        "log_loss": 0.96363,
+        "n": 1731
+      },
+      "market_only.bet365_prematch_v1": {
+        "brier": 0.5729,
+        "ece_home": 0.0293,
+        "log_loss": 0.96363,
+        "n": 1731
+      }
+    },
+    "2025-26": {
+      "baseline.home_advantage_only": {
+        "brier": 0.64849,
+        "ece_home": 0.0183,
+        "log_loss": 1.07206,
+        "n": 1732
+      },
+      "baseline.league_base_rates": {
+        "brier": 0.6483,
+        "ece_home": 0.0041,
+        "log_loss": 1.07204,
+        "n": 1732
+      },
+      "data_only.dc_laplace_v1": {
+        "brier": 0.6009,
+        "ece_home": 0.0277,
+        "log_loss": 1.00683,
+        "n": 1732
+      },
+      "hybrid.logit_blend_v1": {
+        "brier": 0.58312,
+        "ece_home": 0.0259,
+        "log_loss": 0.97967,
+        "n": 1732
+      },
+      "market_only.bet365_prematch_v1": {
+        "brier": 0.58312,
+        "ece_home": 0.0259,
+        "log_loss": 0.97967,
+        "n": 1732
+      }
+    }
+  },
+  "config": {
+    "divisions": [
+      "E0",
+      "SP1",
+      "D1",
+      "I1",
+      "F1"
+    ],
+    "first_season_start": 2017,
+    "interval_level": 0.8,
+    "last_season_start": 2025,
+    "min_prior_for_hybrid": 500,
+    "min_team_matches": 5,
+    "posterior_samples": 100,
+    "refit_days": 7,
+    "strength": {
+      "decay_per_day": 0.0065,
+      "home_advantage_prior_mean": 0.25,
+      "home_advantage_prior_sd": 0.15,
+      "max_goals": 10,
+      "new_team_weighted_matches": 8.0,
+      "prior_mean_new_team_attack": -0.15,
+      "prior_mean_new_team_defence": -0.15,
+      "prior_sd_attack": 0.35,
+      "prior_sd_defence": 0.35,
+      "prior_sd_new_team": 0.45,
+      "rho_prior_sd": 0.08,
+      "version": "dc_laplace_v1"
+    }
+  },
+  "data_provenance": {
+    "content_hash": null,
+    "notes": [
+      "odds are Bet365 pre-match (not verified closing)",
+      "some teams use provisional ids (not in canonical registry)"
+    ],
+    "observed_at": "2026-09-27T22:22:12.432907+00:00",
+    "source": "club_football_match_data"
+  },
+  "disagreement": {
+    ">0.05": {
+      "data_logloss": 0.61913,
+      "data_mean": 0.4551,
+      "market_logloss": 0.58201,
+      "market_mean": 0.4147,
+      "n": 6694,
+      "realised_home_rate": 0.4036
+    },
+    ">0.1": {
+      "data_logloss": 0.62394,
+      "data_mean": 0.4581,
+      "market_logloss": 0.56516,
+      "market_mean": 0.3955,
+      "n": 2653,
+      "realised_home_rate": 0.3965
+    },
+    ">0.15": {
+      "data_logloss": 0.64103,
+      "data_mean": 0.4703,
+      "market_logloss": 0.54893,
+      "market_mean": 0.3755,
+      "n": 702,
+      "realised_home_rate": 0.3661
+    }
+  },
+  "elapsed_s": 422.9,
+  "hybrid_weight_by_season": {
+    "2018-19": null,
+    "2019-20": 1.0,
+    "2020-21": 1.0,
+    "2021-22": 1.0,
+    "2022-23": 1.0,
+    "2023-24": 1.0,
+    "2024-25": 1.0,
+    "2025-26": 1.0
+  },
+  "interval_calibration_p_home": {
+    "bins": [
+      {
+        "bin": 0,
+        "mean_hi": 0.1608,
+        "mean_lo": 0.0321,
+        "mean_obs": 0.0,
+        "mean_pred": 0.09,
+        "n": 9,
+        "obs_inside": false
+      },
+      {
+        "bin": 1,
+        "mean_hi": 0.2736,
+        "mean_lo": 0.0787,
+        "mean_obs": 0.1088,
+        "mean_pred": 0.168,
+        "n": 331,
+        "obs_inside": true
+      },
+      {
+        "bin": 2,
+        "mean_hi": 0.3906,
+        "mean_lo": 0.1403,
+        "mean_obs": 0.2029,
+        "mean_pred": 0.258,
+        "n": 1424,
+        "obs_inside": true
+      },
+      {
+        "bin": 3,
+        "mean_hi": 0.5042,
+        "mean_lo": 0.2133,
+        "mean_obs": 0.2894,
+        "mean_pred": 0.3526,
+        "n": 2643,
+        "obs_inside": true
+      },
+      {
+        "bin": 4,
+        "mean_hi": 0.6095,
+        "mean_lo": 0.2968,
+        "mean_obs": 0.4193,
+        "mean_pred": 0.4497,
+        "n": 3186,
+        "obs_inside": true
+      },
+      {
+        "bin": 5,
+        "mean_hi": 0.7067,
+        "mean_lo": 0.3872,
+        "mean_obs": 0.5412,
+        "mean_pred": 0.5462,
+        "n": 2437,
+        "obs_inside": true
+      },
+      {
+        "bin": 6,
+        "mean_hi": 0.7939,
+        "mean_lo": 0.4891,
+        "mean_obs": 0.6516,
+        "mean_pred": 0.6442,
+        "n": 1461,
+        "obs_inside": true
+      },
+      {
+        "bin": 7,
+        "mean_hi": 0.8706,
+        "mean_lo": 0.6,
+        "mean_obs": 0.7582,
+        "mean_pred": 0.7407,
+        "n": 612,
+        "obs_inside": true
+      },
+      {
+        "bin": 8,
+        "mean_hi": 0.9322,
+        "mean_lo": 0.7194,
+        "mean_obs": 0.7986,
+        "mean_pred": 0.8341,
+        "n": 139,
+        "obs_inside": true
+      },
+      {
+        "bin": 9,
+        "mean_hi": 0.9766,
+        "mean_lo": 0.839,
+        "mean_obs": 0.5,
+        "mean_pred": 0.9146,
+        "n": 6,
+        "obs_inside": false
+      }
+    ],
+    "level": 0.8,
+    "market_inside_interval_rate": 0.9285,
+    "mean_abs_data_minus_market": 0.0646,
+    "mean_width": 0.2945219557070709,
+    "share_market_within_0.05": 0.4535,
+    "share_market_within_0.1": 0.7834,
+    "share_market_within_0.15": 0.9427,
+    "weighted_bin_coverage": 0.9987753102547354
+  },
+  "n_aligned_scored": 12248,
+  "n_predictions_total": 14010,
+  "naive_betting_vs_bet365": {
+    "home_edge>0.03": {
+      "hit_rate": 0.288,
+      "n_bets": 4791,
+      "roi": -0.1413
+    },
+    "home_edge>0.05": {
+      "hit_rate": 0.2729,
+      "n_bets": 3609,
+      "roi": -0.1451
+    },
+    "home_edge>0.1": {
+      "hit_rate": 0.2597,
+      "n_bets": 1390,
+      "roi": -0.1208
+    }
+  },
+  "over25": {
+    "data_only": {
+      "base_rate": 0.5326,
+      "brier": 0.2459,
+      "ece": 0.0338,
+      "log_loss": 0.68503,
+      "mean_pred": 0.5033
+    },
+    "market_only": {
+      "brier": 0.23924,
+      "ece": 0.013,
+      "log_loss": 0.67117,
+      "mean_pred": 0.5283
+    },
+    "n": 12247
+  },
+  "overall": {
+    "baseline.home_advantage_only": {
+      "brier": 0.65061,
+      "ece_home": 0.0069,
+      "log_loss": 1.07489,
+      "n": 12248
+    },
+    "baseline.league_base_rates": {
+      "brier": 0.65058,
+      "ece_home": 0.0084,
+      "log_loss": 1.07475,
+      "n": 12248
+    },
+    "data_only.dc_laplace_v1": {
+      "brier": 0.59769,
+      "ece_home": 0.0329,
+      "log_loss": 1.00099,
+      "n": 12248
+    },
+    "hybrid.logit_blend_v1": {
+      "brier": 0.57862,
+      "ece_home": 0.0158,
+      "log_loss": 0.97321,
+      "n": 12248
+    },
+    "market_only.bet365_prematch_v1": {
+      "brier": 0.57862,
+      "ece_home": 0.0158,
+      "log_loss": 0.97321,
+      "n": 12248
+    }
+  },
+  "paired_logloss_diff_ci95": {
+    "baseline.home_advantage_only": {
+      "ci95": [
+        0.09482,
+        0.10815
+      ],
+      "interpretation": "positive = worse than market",
+      "mean_diff_vs_market": 0.10168
+    },
+    "baseline.league_base_rates": {
+      "ci95": [
+        0.09446,
+        0.10811
+      ],
+      "interpretation": "positive = worse than market",
+      "mean_diff_vs_market": 0.10154
+    },
+    "data_only.dc_laplace_v1": {
+      "ci95": [
+        0.0244,
+        0.03099
+      ],
+      "interpretation": "positive = worse than market",
+      "mean_diff_vs_market": 0.02778
+    },
+    "hybrid.logit_blend_v1": {
+      "ci95": [
+        -0.0,
+        -0.0
+      ],
+      "interpretation": "positive = worse than market",
+      "mean_diff_vs_market": -0.0
+    }
+  },
+  "protocol": "walk_forward_v1",
+  "result_hash": "sha256:b10d35c9f6eea1caa8f869736b5279d0bf49f97b706cb2388b49552361f29574",
+  "seasons_scored": [
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23",
+    "2023-24",
+    "2024-25",
+    "2025-26"
+  ]
+}

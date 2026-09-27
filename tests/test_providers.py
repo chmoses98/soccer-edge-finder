@@ -88,3 +88,27 @@ def test_observation_flags():
         ).is_usable_for_production
         is False
     )
+
+
+FIXTURES_CSV = """﻿Div,Date,Time,HomeTeam,AwayTeam,B365H,B365D,B365A,PSH,PSD,PSA,B365>2.5,B365<2.5
+E0,10/10/2026,12:30,Arsenal,Leeds,1.30,5.50,9.00,1.31,5.60,9.50,1.60,2.30
+E0,10/10/2026,15:00,Sunderland,Brighton,3.10,3.40,2.30,3.15,3.45,2.32,,
+X9,10/10/2026,15:00,Nowhere,Somewhere,2,3,3,,,,,
+"""
+
+
+def test_football_data_upcoming_odds(registry):
+    from soccer_edge.providers.football_data_couk import FootballDataCoUkProvider
+
+    prov = FootballDataCoUkProvider(registry=registry)
+    obs = prov.upcoming_odds(content=FIXTURES_CSV.encode())
+    q = obs.payload
+    assert (
+        len(q) == 3 + 3 + 2 + 3 + 3
+    )  # arsenal: b365+pinnacle 1x2 + ou ; sunderland: b365+pinnacle
+    a = [x for x in q if "eng.arsenal" in x.fixture_id]
+    assert a[0].fixture_id.startswith(
+        "fx:eng.premier_league:2026-27:eng.arsenal:eng.leeds:2026_10_10"
+    )
+    assert all(x.is_closing is False for x in q)
+    assert "1 skipped" in obs.notes[0]

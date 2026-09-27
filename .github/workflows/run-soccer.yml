@@ -1,0 +1,93 @@
+name: run-soccer
+
+# RUN SOCCER on a schedule and on demand. Cheap decision first: skip the heavy job when there are
+# no fixtures in the window. Outputs go to data-archive/runs/<date>/<run_id>/ (never to main).
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "run date YYYY-MM-DD (default today UTC)"
+        required: false
+      window_hours:
+        description: "hours ahead"
+        default: "48"
+      leagues:
+        description: "comma-separated competition ids (optional)"
+        required: false
+  schedule:
+    - cron: "11 7,11,15,18 * * *"
+
+concurrency:
+  group: data-writer-archive
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  decide:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      go: ${{ steps.d.outputs.go }}
+      reason: ${{ steps.d.outputs.reason }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Any fixtures in window? (stdlib only, no install)
+        id: d
+        run: |
+          python3 scripts/decide_run.py --window-hours "${{ inputs.window_hours || '48' }}" --date "${{ inputs.date }}" >> "$GITHUB_OUTPUT"
+      - run: echo "decision go=${{ steps.d.outputs.go }} (${{ steps.d.outputs.reason }})" >> "$GITHUB_STEP_SUMMARY"
+
+  run:
+    needs: decide
+    if: ${{ needs.decide.outputs.go == 'true' || github.event_name == 'workflow_dispatch' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e .
+      - name: Restore ledger index + sim cache from archive
+        run: |
+          mkdir -p work/ledger work/simcache
+          if git ls-remote --exit-code --heads origin data-archive >/dev/null 2>&1; then
+            git fetch --quiet --depth 1 origin data-archive
+            git show origin/data-archive:predictions/index.json > work/ledger/index.json 2>/dev/null || echo "{}" > work/ledger/index.json
+          fi
+      - name: RUN SOCCER
+        timeout-minutes: 22
+        id: run
+        run: |
+          set -o pipefail
+          ARGS="--window ${{ inputs.window_hours || '48' }} --out-dir work/out --archive-dir work/ledger --sim-cache work/simcache"
+          [ -n "${{ inputs.date }}" ] && ARGS="$ARGS --date ${{ inputs.date }}"
+          if [ -n "${{ inputs.leagues }}" ]; then for l in $(echo "${{ inputs.leagues }}" | tr ',' ' '); do ARGS="$ARGS --league $l"; done; fi
+          python -m soccer_edge.cli run $ARGS | tee work/run.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: run-soccer-${{ github.run_id }}
+          path: work/
+          retention-days: 14
+      - name: Publish run output + new ledger records
+        if: ${{ steps.run.outcome == 'success' }}
+        run: |
+          RUN_ID=$(python -c "import json;print(json.load(open('work/out/run_output.v1.json'))['run_id'])")
+          DAY=$(date -u +%Y-%m-%d)
+          mkdir -p pub/runs/$DAY/$RUN_ID pub/predictions
+          cp work/out/* pub/runs/$DAY/$RUN_ID/
+          cp -f work/out/run_output.v1.json pub/runs/latest.run_output.v1.json
+          cp -f work/out/RUN_SOCCER.md pub/runs/LATEST_RUN_SOCCER.md
+          # only the day files written this run + the index; index is rebuildable from day files
+          find work/ledger -name 'predictions.jsonl' -newer work/run.log -o -name 'predictions.jsonl' | while read f; do d=$(basename $(dirname "$f")); mkdir -p pub/predictions/$d; cat "$f" >> pub/predictions/$d/predictions.jsonl; done
+          cp -f work/ledger/index.json pub/predictions/index.json 2>/dev/null || true
+          scripts/archive_publish.sh pub . "run-soccer $RUN_ID"
+      - name: Summary
+        if: always()
+        run: |
+          head -60 work/out/RUN_SOCCER.md >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || echo "run failed; see artifact" >> "$GITHUB_STEP_SUMMARY"

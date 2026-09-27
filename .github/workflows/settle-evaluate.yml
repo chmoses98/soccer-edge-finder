@@ -1,0 +1,55 @@
+name: settle-evaluate
+
+# Daily: settle archived predictions against official results + captured close quotes,
+# recompute ModelHealthV1 rows and authority proposals. Never changes config/authority.json.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "49 4 * * *"
+
+concurrency:
+  group: data-writer-archive
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  settle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e .
+      - name: Fetch archive (predictions, snapshots, settlements)
+        run: |
+          if git ls-remote --exit-code --heads origin data-archive >/dev/null 2>&1; then
+            git clone --quiet --depth 1 --branch data-archive "$(git config --get remote.origin.url)" archive
+          else
+            mkdir -p archive; echo "no archive yet"
+          fi
+      - name: Settle + evaluate
+        timeout-minutes: 18
+        id: s
+        run: |
+          set -o pipefail
+          python -m soccer_edge.cli settle --archive-dir archive/predictions --snapshots-dir archive/snapshots --settlements-dir archive/settlements --out-dir work/evaluation | tee work/settle.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: settle-${{ github.run_id }}
+          path: work/
+          retention-days: 30
+      - name: Publish
+        if: ${{ steps.s.outcome == 'success' }}
+        run: |
+          mkdir -p pub/settlements pub/evaluation
+          cp -R archive/settlements/. pub/settlements/ 2>/dev/null || true
+          cp -R work/evaluation/. pub/evaluation/
+          scripts/archive_publish.sh pub . "settle-evaluate $(date -u +%Y-%m-%dT%H:%MZ)"
+      - run: cat work/evaluation/SUMMARY.md >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true

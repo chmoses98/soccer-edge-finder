@@ -44,17 +44,26 @@ def resolve_semantics(
     side: str | None
     if fam in (
         MarketFamily.HANDICAP,
+        MarketFamily.FIRST_HALF_HANDICAP,
         MarketFamily.TEAM_TOTAL,
+        MarketFamily.FIRST_HALF_TEAM_TOTAL,
         MarketFamily.CLEAN_SHEET,
         MarketFamily.DRAW_NO_BET,
         MarketFamily.MATCH_WINNER_2WAY,
+        MarketFamily.FIRST_TO_SCORE,
+        MarketFamily.EXACT_SCORE,
+        MarketFamily.FIRST_HALF_EXACT_SCORE,
     ):
         if side_is_home is None:
             raise UnsupportedSemantics(
                 f"{spec.ticker}: side team could not be resolved to home/away"
             )
         side = "home" if side_is_home else "away"
-    elif fam is MarketFamily.MATCH_RESULT_3WAY:
+    elif fam in (
+        MarketFamily.MATCH_RESULT_3WAY,
+        MarketFamily.FIRST_HALF_RESULT,
+        MarketFamily.SECOND_HALF_RESULT,
+    ):
         if spec.side_team_code == "DRAW":
             side = "draw"
         elif side_is_home is None:
@@ -74,6 +83,8 @@ def resolve_semantics(
             MarketFamily.TEAM_TOTAL,
             MarketFamily.HANDICAP,
             MarketFamily.FIRST_HALF_TOTAL,
+            MarketFamily.FIRST_HALF_HANDICAP,
+            MarketFamily.FIRST_HALF_TEAM_TOTAL,
         )
         and spec.line is None
     ):
@@ -83,19 +94,30 @@ def resolve_semantics(
     if spec.period not in (
         Period.REGULATION,
         Period.FIRST_HALF,
+        Period.SECOND_HALF,
         Period.INCLUDING_PENS,
         Period.INCLUDING_ET,
     ):
         raise UnsupportedSemantics(f"{spec.ticker}: period {spec.period.value} unsupported")
+    k = spec.k
+    exact: tuple[int, int] | None = None
+    if fam in (MarketFamily.EXACT_SCORE, MarketFamily.FIRST_HALF_EXACT_SCORE):
+        try:
+            a, b = (int(x) for x in (spec.player_code or "").split("-"))
+        except ValueError as exc:
+            raise UnsupportedSemantics(f"{spec.ticker}: exact score not parseable") from exc
+        # a = goals of the team named first in the leg (= `side`), b = the other team
+        exact = (a, b) if side == "home" else (b, a)
+        k = exact[0] * 100 + exact[1]  # packed home*100 + away
     return Semantics(
         spec.ticker,
         fam,
         spec.period,
         side,
         spec.line,
-        spec.k,
+        k,
         player_slot,
-        description=_describe(fam, side, spec),
+        description=_describe(fam, side, spec, exact),
     )
 
 
@@ -113,11 +135,37 @@ SUPPORTED = frozenset(
         MarketFamily.MATCH_WINNER_2WAY,
         MarketFamily.FIRST_TO_SCORE,
         MarketFamily.PLAYER_GOALS,
+        MarketFamily.EXACT_SCORE,
+        MarketFamily.FIRST_HALF_BTTS,
+        MarketFamily.FIRST_HALF_HANDICAP,
+        MarketFamily.FIRST_HALF_TEAM_TOTAL,
+        MarketFamily.FIRST_HALF_EXACT_SCORE,
+        MarketFamily.SECOND_HALF_RESULT,
     }
 )
 
 
-def _describe(fam: MarketFamily, side: str | None, spec: ContractSpec) -> str:
+def _describe(
+    fam: MarketFamily, side: str | None, spec: ContractSpec, exact: tuple[int, int] | None = None
+) -> str:
+    if fam is MarketFamily.EXACT_SCORE and exact:
+        return f"Exact score {exact[0]}-{exact[1]} (home-away)"
+    if fam is MarketFamily.FIRST_HALF_TOTAL:
+        return f"First-half total goals over {spec.line}"
+    if fam is MarketFamily.FIRST_HALF_HANDICAP:
+        return f"First half: {side} wins by more than {spec.line}"
+    if fam is MarketFamily.FIRST_HALF_TEAM_TOTAL:
+        return f"First half: {side} team total over {spec.line}"
+    if fam is MarketFamily.FIRST_HALF_BTTS:
+        return "First half: both teams to score"
+    if fam is MarketFamily.FIRST_HALF_RESULT:
+        return f"First-half result: {side}"
+    if fam is MarketFamily.SECOND_HALF_RESULT:
+        return f"Second-half result: {side}"
+    if fam is MarketFamily.FIRST_HALF_EXACT_SCORE and exact:
+        return f"First-half exact score {exact[0]}-{exact[1]} (home-away)"
+    if fam is MarketFamily.FIRST_TO_SCORE:
+        return f"First team to score: {side}"
     if fam is MarketFamily.TOTAL_GOALS:
         return f"Total goals over {spec.line}"
     if fam is MarketFamily.TEAM_TOTAL:
@@ -134,6 +182,8 @@ def _describe(fam: MarketFamily, side: str | None, spec: ContractSpec) -> str:
 def _period_goals(sem: Semantics, out: JointOutcome) -> tuple[np.ndarray, np.ndarray]:
     if sem.period is Period.FIRST_HALF:
         return out.home_ht, out.away_ht
+    if sem.period is Period.SECOND_HALF:
+        return out.home_ft - out.home_ht, out.away_ft - out.away_ht
     if sem.period in (Period.INCLUDING_ET, Period.INCLUDING_PENS):
         return out.home_full, out.away_full
     return out.home_ft, out.away_ft
@@ -145,20 +195,27 @@ def settle_indicator(sem: Semantics, out: JointOutcome) -> np.ndarray:
     line = float(sem.line) if sem.line is not None else None
     if fam is MarketFamily.TOTAL_GOALS or fam is MarketFamily.FIRST_HALF_TOTAL:
         return (h + a) > line
-    if fam is MarketFamily.TEAM_TOTAL:
+    if fam in (MarketFamily.TEAM_TOTAL, MarketFamily.FIRST_HALF_TEAM_TOTAL):
         g = h if sem.side == "home" else a
         return g > line
-    if fam is MarketFamily.HANDICAP:
+    if fam in (MarketFamily.EXACT_SCORE, MarketFamily.FIRST_HALF_EXACT_SCORE):
+        hh, aa = divmod(int(sem.k or 0), 100)
+        return (h == hh) & (a == aa)
+    if fam in (MarketFamily.BTTS, MarketFamily.FIRST_HALF_BTTS):
+        return (h > 0) & (a > 0)
+    if fam in (MarketFamily.HANDICAP, MarketFamily.FIRST_HALF_HANDICAP):
         margin = (h - a) if sem.side == "home" else (a - h)
         return margin > line
-    if fam is MarketFamily.MATCH_RESULT_3WAY or fam is MarketFamily.FIRST_HALF_RESULT:
+    if fam in (
+        MarketFamily.MATCH_RESULT_3WAY,
+        MarketFamily.FIRST_HALF_RESULT,
+        MarketFamily.SECOND_HALF_RESULT,
+    ):
         if sem.side == "home":
             return h > a
         if sem.side == "away":
             return a > h
         return h == a
-    if fam is MarketFamily.BTTS:
-        return (h > 0) & (a > 0)
     if fam is MarketFamily.CLEAN_SHEET:
         return (a == 0) if sem.side == "home" else (h == 0)
     if fam is MarketFamily.DRAW_NO_BET:
