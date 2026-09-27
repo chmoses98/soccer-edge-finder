@@ -1,0 +1,59 @@
+name: kalshi-discover
+
+# Exhaustive Kalshi soccer discovery from a GitHub-hosted runner (public endpoints only).
+# Writes the catalog as a workflow artifact and, on main, commits a compact index to data/catalog/.
+
+on:
+  workflow_dispatch:
+    inputs:
+      commit:
+        description: "commit compact catalog index to data/catalog on this branch"
+        type: boolean
+        default: true
+  schedule:
+    - cron: "17 5 * * *"   # daily; captures run separately (see kalshi-capture.yml)
+
+concurrency:
+  group: data-writer-catalog
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e .
+      - name: Discover
+        id: disc
+        run: |
+          set -o pipefail
+          mkdir -p artifacts
+          python -m soccer_edge.cli discover --out artifacts/catalog.json | tee artifacts/discover.log
+          echo "exit=$?" >> "$GITHUB_OUTPUT"
+        continue-on-error: true
+      - name: Summarise
+        run: python scripts/catalog_summary.py artifacts/catalog.json --out data/catalog/latest_index.json --md artifacts/summary.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: kalshi-catalog-${{ github.run_id }}
+          path: artifacts/
+          retention-days: 14
+      - name: Commit compact index
+        if: ${{ inputs.commit != false && steps.disc.outcome == 'success' }}
+        run: |
+          git config user.name "soccer-edge-bot"
+          git config user.email "soccer-edge-bot@users.noreply.github.com"
+          git add data/catalog/latest_index.json
+          git diff --cached --quiet && echo "no change" || (git commit -m "catalog: discovery index $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]" && git pull --rebase origin ${{ github.ref_name }} && git push origin HEAD:${{ github.ref_name }})
+      - name: Fail if discovery incomplete
+        if: ${{ steps.disc.outcome != 'success' }}
+        run: |
+          echo "::error::discovery incomplete or failed (see artifacts/discover.log)"; exit 1

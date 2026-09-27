@@ -1,0 +1,124 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "average_price": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+          "type": "string"
+        }
+      ],
+      "title": "Average Price"
+    },
+    "contracts": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+          "type": "string"
+        }
+      ],
+      "title": "Contracts"
+    },
+    "event_id": {
+      "title": "Event Id",
+      "type": "string"
+    },
+    "fees_paid": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+          "type": "string"
+        }
+      ],
+      "title": "Fees Paid"
+    },
+    "market_ticker": {
+      "title": "Market Ticker",
+      "type": "string"
+    },
+    "opened_at": {
+      "format": "date-time",
+      "title": "Opened At",
+      "type": "string"
+    },
+    "position_id": {
+      "title": "Position Id",
+      "type": "string"
+    },
+    "recommendation_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Recommendation Id"
+    },
+    "schema_version": {
+      "default": "1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "side": {
+      "enum": [
+        "yes",
+        "no"
+      ],
+      "title": "Side",
+      "type": "string"
+    },
+    "source": {
+      "description": "e.g. 'kalshi-router' import; this repo never places orders",
+      "title": "Source",
+      "type": "string"
+    },
+    "sport": {
+      "enum": [
+        "soccer",
+        "mlb",
+        "nfl",
+        "cfb",
+        "nba",
+        "other"
+      ],
+      "title": "Sport",
+      "type": "string"
+    },
+    "status": {
+      "default": "open",
+      "enum": [
+        "open",
+        "settled",
+        "voided"
+      ],
+      "title": "Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "position_id",
+    "sport",
+    "event_id",
+    "market_ticker",
+    "side",
+    "contracts",
+    "average_price",
+    "fees_paid",
+    "opened_at",
+    "source"
+  ],
+  "title": "PositionV1",
+  "type": "object"
+}
