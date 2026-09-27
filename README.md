@@ -3,7 +3,7 @@
 Probabilistic soccer match world-model connected to an exhaustive Kalshi market-pricing and
 research system. The soccer component of a future unified multi-sport Edge Finder.
 
-**Status: foundation build. Every model family is `RESEARCH_ONLY`. Nothing here places bets,
+**Status: foundation build, running in production on GitHub Actions (discovery, capture, RUN SOCCER, settle/evaluate; outputs on the `data-archive` branch). Every model family is `RESEARCH_ONLY`. Nothing here places bets,
 and the operator command outputs `NO BETS` unless a model family has earned authority through
 the documented promotion process (it has not).**
 
