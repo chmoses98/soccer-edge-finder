@@ -190,6 +190,60 @@ def cmd_run(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_settle(args: argparse.Namespace) -> int:
+    from soccer_edge.archive.ledger import PredictionLedger
+    from soccer_edge.authority.policy import AuthorityMatrix
+    from soccer_edge.providers.openfootball import COMPETITION_FILES, OpenFootballProvider
+    from soccer_edge.run.inputs import current_season_id
+    from soccer_edge.run.settle import model_health, settle_ledger, settlement_v1_rows
+
+    as_of = utc_now()
+    registry = _registry()
+    ledger = PredictionLedger(Path(args.archive_dir))
+    settlements = PredictionLedger(Path(args.settlements_dir))
+    of = OpenFootballProvider(registry)
+    results = {}
+    comps = {
+        r.get("competition_id")
+        for r in ledger.iter_records()
+        if r.get("schema") == "prediction_record_v1"
+    }
+    for comp in sorted(c for c in comps if c in COMPETITION_FILES):
+        try:
+            for r in of.results(comp, current_season_id(comp, as_of.date())).payload:
+                results[r.fixture_id] = r
+        except Exception as exc:
+            print(f"[results] {comp}: {exc}")
+    written = settle_ledger(ledger, results, Path(args.snapshots_dir), settlements, as_of=as_of)
+    rows, proposals = model_health(
+        settlements, AuthorityMatrix.load(REPO_ROOT / "config" / "authority.json"), as_of=as_of
+    )
+    out = Path(args.out_dir)
+    write_json(out / "model_health.v1.json", [r.model_dump(mode="json") for r in rows])
+    write_json(out / "authority_proposals.json", proposals)
+    write_json(
+        out / "settlements_written.v1.json",
+        [s.model_dump(mode="json") for s in settlement_v1_rows(written)],
+    )
+    lines = [
+        f"# settle-evaluate {as_of:%Y-%m-%d %H:%M}Z",
+        "",
+        f"- newly settled: {len(written)}",
+        f"- cells evaluated: {len(rows)}",
+        f"- authority proposals: {len(proposals['proposals'])}",
+        "",
+        "| model | family | horizon | n | log loss | market LL | ECE | 80% cov | CLV | authority |",
+        "|---|---|---|---|---|---|---|---|---|---|",
+    ]
+    for r in rows:
+        lines.append(
+            f"| {r.model_family} | {r.market_family} | {r.horizon} | {r.n_settled} | {r.log_loss} | {r.market_log_loss} | {r.ece} | {r.interval_coverage_80} | {r.clv_points_mean} | {r.authority} |"
+        )
+    (out / "SUMMARY.md").write_text("\n".join(lines) + "\n")
+    print("\n".join(lines))
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(prog="soccer", description="soccer-edge-finder operator CLI")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -233,6 +287,13 @@ def build_parser() -> argparse.ArgumentParser:
     c.add_argument("--status", action="append", default=None)
     c.add_argument("--no-suppress", action="store_true")
     c.set_defaults(func=cmd_capture)
+
+    st = sub.add_parser("settle", help="settle archived predictions + evaluate + propose authority")
+    st.add_argument("--archive-dir", required=True)
+    st.add_argument("--snapshots-dir", required=True)
+    st.add_argument("--settlements-dir", required=True)
+    st.add_argument("--out-dir", required=True)
+    st.set_defaults(func=cmd_settle)
 
     e = sub.add_parser("export-schemas", help="write JSON Schemas for the app contract")
     e.add_argument("--out", default=str(REPO_ROOT / "docs" / "schemas"))

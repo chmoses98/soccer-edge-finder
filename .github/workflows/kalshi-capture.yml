@@ -1,0 +1,63 @@
+name: kalshi-capture
+
+# Cheap, idempotent market capture: discovery + change-suppressed snapshots -> data-archive branch.
+# Designed assuming GitHub cron delivers only a fraction of slots (measured 5-7% for */10-15 crons
+# in sibling repos): every run is self-contained; missed slots only coarsen horizon coverage.
+
+on:
+  workflow_dispatch:
+  schedule:
+    # off-round minutes; denser on match days (Fri-Mon), every ~2h otherwise
+    - cron: "23,53 8-22 * * 5,6,0,1"
+    - cron: "37 */2 * * 2,3,4"
+
+concurrency:
+  group: data-writer-archive
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e .
+      - name: Restore previous fingerprints (change suppression)
+        run: |
+          mkdir -p work/snapshots
+          if git ls-remote --exit-code --heads origin data-archive >/dev/null 2>&1; then
+            git fetch --quiet --depth 1 origin data-archive
+            git show origin/data-archive:snapshots/last_fingerprints.json > work/snapshots/last_fingerprints.json 2>/dev/null || echo "{}" > work/snapshots/last_fingerprints.json
+          else
+            echo "{}" > work/snapshots/last_fingerprints.json
+          fi
+      - name: Capture
+        timeout-minutes: 18
+        id: cap
+        run: |
+          set -o pipefail
+          python -m soccer_edge.cli capture --out-dir work/snapshots | tee work/capture.log
+        continue-on-error: true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: capture-${{ github.run_id }}
+          path: work/
+          retention-days: 7
+      - name: Publish to data-archive
+        if: ${{ hashFiles('work/snapshots/STATUS.json') != '' }}
+        run: |
+          rm -f work/snapshots/latest_catalog.json   # raw catalog stays an artifact, not archived
+          scripts/archive_publish.sh work/snapshots snapshots "capture ${{ github.run_id }} $(date -u +%Y-%m-%dT%H:%MZ)"
+      - name: Summary
+        run: |
+          echo '## capture' >> "$GITHUB_STEP_SUMMARY"; cat work/snapshots/STATUS.json >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || echo "no STATUS.json" >> "$GITHUB_STEP_SUMMARY"
+      - name: Fail if discovery incomplete
+        if: ${{ steps.cap.outcome != 'success' }}
+        run: echo "::error::capture discovery incomplete (see artifact)"; exit 1

@@ -183,3 +183,43 @@ def test_coverage_invariant():
         led.set("A", Disposition.CLOSED)  # one terminal state per contract
     with pytest.raises(CoverageInvariantError):
         led.set("Z", Disposition.CLOSED)  # never disposition an undiscovered contract
+
+
+def test_bare_football_series_are_retained_but_not_swept(registry, epl_fixtures):
+    fake = FakeKalshi(epl_fixtures, registry)
+    run = discover(KalshiPublicClient(transport=fake.transport))
+    c = run.counters()
+    recs = run.series_records
+    assert recs["KXAFCCHAMP"].ownership is Ownership.NOT_SOCCER  # american-football wording
+    assert (
+        recs["KXFOOTBALLMYSTERY"].ownership is Ownership.AMBIGUOUS
+        and not recs["KXFOOTBALLMYSTERY"].swept
+    )
+    assert (
+        recs["KXMYSTERYCUP"].ownership is Ownership.SOCCER and recs["KXMYSTERYCUP"].swept
+    )  # soccer wording wins
+    assert c["series_ambiguous_unswept"] == 1 and c["series_ambiguous_unswept_tickers"] == [
+        "KXFOOTBALLMYSTERY"
+    ]
+    assert run.complete
+
+
+def test_nfl_prefix_with_soccer_mistag_is_ambiguous():
+    s = RawSeries.from_api(
+        {
+            "ticker": "KXFIRSTSUPERBOWLSONG",
+            "title": "What will be the first Super Bowl song?",
+            "category": "Entertainment",
+            "tags": ["Soccer", "Music"],
+        }
+    )
+    assert classify_ownership(s)[0] is Ownership.AMBIGUOUS
+    s2 = RawSeries.from_api(
+        {
+            "ticker": "KXNFLGAME",
+            "title": "Pro football game",
+            "category": "Sports",
+            "tags": ["Football"],
+        }
+    )
+    assert classify_ownership(s2)[0] is Ownership.NOT_SOCCER

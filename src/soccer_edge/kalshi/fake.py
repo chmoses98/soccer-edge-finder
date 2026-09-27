@@ -86,6 +86,20 @@ class FakeKalshi:
                 "tags": ["Football"],
                 "fee_type": "quadratic",
             },
+            {
+                "ticker": "KXAFCCHAMP",
+                "title": "AFC Championship",
+                "category": "Sports",
+                "tags": ["Football"],
+                "fee_type": "quadratic",
+            },
+            {
+                "ticker": "KXMYSTERYCUP",
+                "title": "Football: who lifts the Premier League trophy?",
+                "category": "Sports",
+                "tags": ["Football"],
+                "fee_type": "quadratic",
+            },
             *self.extra_series,
         ]
         comps = sorted({f.competition_id for f in self.fixtures})

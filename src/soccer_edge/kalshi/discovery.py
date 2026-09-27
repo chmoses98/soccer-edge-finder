@@ -8,6 +8,8 @@ is flagged and MUST NOT be treated as a catalog: "network failure never becomes 
 
 from __future__ import annotations
 
+import sys
+import time
 import uuid
 from collections import Counter
 from dataclasses import dataclass, field
@@ -18,7 +20,7 @@ from soccer_edge.core.errors import DiscoveryIncompleteError
 from soccer_edge.core.serialization import content_hash
 from soccer_edge.core.time import iso_utc, utc_now
 from soccer_edge.kalshi.client import KalshiPublicClient
-from soccer_edge.kalshi.ownership import classify_ownership
+from soccer_edge.kalshi.ownership import classify_ownership, has_soccer_wording
 from soccer_edge.kalshi.schemas import Ownership, RawEvent, RawMarket, RawSeries
 from soccer_edge.kalshi.taxonomy import ContractSpec, MarketFamily, classify
 
@@ -33,6 +35,7 @@ class SeriesRecord:
     market_sweeps_complete: bool = True
     event_sweep_complete: bool = True
     failures: list[str] = field(default_factory=list)
+    swept: bool = True  # False = ambiguous series recorded but its markets were not enumerated
 
 
 @dataclass
@@ -72,6 +75,12 @@ class DiscoveryRun:
             if r.ownership in (Ownership.SOCCER, Ownership.AMBIGUOUS)
         ]
 
+    def swept_series(self) -> list[SeriesRecord]:
+        return [r for r in self.owned_series() if r.swept]
+
+    def ambiguous_unswept(self) -> list[SeriesRecord]:
+        return [r for r in self.owned_series() if not r.swept]
+
     def counters(self) -> dict[str, Any]:
         own = Counter(r.ownership.value for r in self.series_records.values())
         fam = Counter(s.family.value for s in self.specs.values())
@@ -81,7 +90,11 @@ class DiscoveryRun:
             "complete": self.complete,
             "series_total": self.series_total,
             "series_by_ownership": dict(own),
-            "series_swept": len(self.owned_series()),
+            "series_swept": len(self.swept_series()),
+            "series_ambiguous_unswept": len(self.ambiguous_unswept()),
+            "series_ambiguous_unswept_tickers": sorted(
+                r.series.ticker for r in self.ambiguous_unswept()
+            )[:200],
             "events_discovered": len(self.events),
             "contracts_discovered": len(self.markets),
             "contracts_duplicate_seen": len(self.duplicates),
@@ -122,6 +135,7 @@ class DiscoveryRun:
                     "ownership_reason": r.ownership_reason,
                     "market_sweeps_complete": r.market_sweeps_complete,
                     "event_sweep_complete": r.event_sweep_complete,
+                    "swept": r.swept,
                     "failures": r.failures,
                 }
                 for r in sorted(self.owned_series(), key=lambda r: r.series.ticker)
@@ -178,13 +192,30 @@ def discover(
             run.failures.append(f"series parse error: {exc}: {str(raw)[:120]}")
             continue
         own, why = classify_ownership(s)
-        if own is Ownership.NOT_SOCCER and not include_not_soccer_series:
-            run.series_records[s.ticker] = SeriesRecord(s, own, why)
-            continue
-        run.series_records[s.ticker] = SeriesRecord(s, own, why)
+        rec = SeriesRecord(s, own, why)
+        if own is Ownership.AMBIGUOUS and not has_soccer_wording(s):
+            # Fail closed at the SERIES level: retained, counted and listed in every report,
+            # but its (typically American-football) markets are not enumerated. Verified cause:
+            # hundreds of NFL/CFB series carry only the tag 'Football'.
+            rec.swept = False
+            rec.ownership_reason = why + "; not swept (no soccer wording)"
+        run.series_records[s.ticker] = rec
 
-    for rec in run.owned_series():
+    owned = run.swept_series()
+    t_start = time.monotonic()
+    print(
+        f"[discover] series_total={run.series_total} owned={len(owned)} statuses={statuses}",
+        file=sys.stderr,
+        flush=True,
+    )
+    for i, rec in enumerate(owned):
         st = rec.series.ticker
+        if i % 10 == 0:
+            print(
+                f"[discover] {i}/{len(owned)} series swept, {len(run.markets)} markets, {client.request_count} requests, {client.retry_count} retries, {time.monotonic() - t_start:.0f}s",
+                file=sys.stderr,
+                flush=True,
+            )
         for status in statuses:
             ms = client.markets(series_ticker=st, status=status, limit=1000)
             if not ms.complete:

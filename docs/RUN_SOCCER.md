@@ -1,0 +1,65 @@
+# RUN SOCCER
+
+```
+soccer run --date 2026-10-10 [--league eng.premier_league ...] [--game eng.arsenal-eng.leeds]
+           [--window 72] [--confirmed-lineups-only] [--worlds 1000] [--draws 100]
+           [--out-dir data/runs/latest] [--archive-dir <ledger>] [--sim-cache <dir>]
+           [--no-freshness-gate] [--fail-on-incomplete] [--synthetic-kalshi]
+```
+
+## What it does, in order
+
+1. **Verify freshness** (`run/freshness.py`): market ≤ 30 min, fixtures ≤ 36 h, results ≤ 8 d,
+   model ≤ 3 d, measured at the decision `as_of`. Violations fail closed unless
+   `--no-freshness-gate`, in which case they are reported as warnings.
+2. **Fixture/context**: openfootball fixtures + results for the current season; historical results
+   for the posterior; per-competition Dixon-Coles posterior fitted point-in-time.
+3. **Discover the complete Kalshi soccer surface** (all series → soccer/ambiguous → every market in
+   `open` and `unopened`, plus events). Incomplete discovery ⇒ warnings and no recommendations.
+4. **Associate** contracts to fixtures/competitions (or `unmapped_*`).
+5. **Decide what to simulate**: cache key per fixture; reprice from cache when only quotes moved.
+6. **Simulate** required fixtures (worlds × draws) and price **every eligible contract** from the
+   same joint distribution; coherence audit.
+7. **Disposition every other contract** explicitly (`closed, started, no_quote, stale_quote,
+   duplicate, ambiguous_ownership, unknown_family, unsupported_family, unmapped_event,
+   unmapped_team, no_fixture, no_model, fee_unverified, out_of_window, filtered_by_operator,
+   unpriceable`).
+8. **Executable EV** from the side ask + verified fee regime; **robust EV** from the world
+   distribution; **reduce** redundant expressions; **apply authority**.
+9. **Archive** one prediction record per priced contract (both sides' assessments, recommended /
+   shadow / exclusion reason).
+10. **Prove coverage**: `unaccounted_contracts == 0` or the run raises.
+11. Write `run_output.v1.json` (app contract), `RUN_SOCCER.md`, `priced_contracts.json`,
+    `coverage.json`.
+
+## Output per recommendation
+
+game, league, kickoff, market description, side, ticker, executable price, fair probability with
+80% interval, fee-adjusted edge, P(edge>0), worst-case edge, bet-up-to price, authority,
+confidence label, lineup status, market/model/data freshness timestamps, thesis, risks,
+correlation group, coverage status.
+
+## NO BETS
+
+If nothing clears the robust-edge bar under an authority that permits recommendations, the
+output is `NO BETS` (JSON `no_bets: true`). Today every family is `RESEARCH_ONLY`, so every real
+run says `NO BETS` and lists what *would* have qualified under `shadow_recommendations`.
+
+## Example (synthetic Kalshi surface on real 2026-27 fixtures, 2026-09-27)
+
+```
+contracts discovered: 252 (discovery complete: True)
+contracts evaluated: 204 · excluded mechanically: 0 · unsupported/unknown: 48
+unaccounted contracts: 0
+NO BETS
+Shadow / research-only expressions (13) …
+Expressions removed by the reducer (8) …
+```
+The synthetic surface prices every market at a flat 45/27/28, so the large "edges" in that demo
+are artefacts of the fake market, not evidence.
+
+## Is it safe for real money?
+
+**No.** Every cell is `RESEARCH_ONLY`; no prospective settled evidence exists yet; lineups are
+unknown at run time; the fee schedule is transcribed, not machine-verified against a fill. Use it to
+accumulate prospective shadow records and to study the market.
