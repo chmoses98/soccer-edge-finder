@@ -1,0 +1,30 @@
+{
+  "note": "Frozen research baselines. A model change must be compared against the referenced result hash; never edit an entry in place - add a new versioned entry.",
+  "baselines": {
+    "walk_forward_v1": {
+      "protocol": "research/walk_forward.py",
+      "families": [
+        "data_only.dc_laplace_v1",
+        "market_only.bet365_prematch_v1",
+        "hybrid.logit_blend_v1",
+        "baseline.league_base_rates",
+        "baseline.home_advantage_only"
+      ],
+      "result_file": "data/research/walk_forward_v1.json",
+      "result_hash": "see result_hash inside the result file; re-run reproduces it from the same data content hash",
+      "data_source": "club_football_match_data Matches.csv (GitHub raw), divisions E0,SP1,D1,I1,F1, seasons 2017-18 burn-in, scored 2019-20..2025-26"
+    }
+  },
+  "strength_config_v1": {
+    "decay_per_day": 0.0065,
+    "prior_sd_attack": 0.35,
+    "prior_sd_defence": 0.35,
+    "prior_mean_new_team_attack": -0.15,
+    "prior_mean_new_team_defence": -0.15,
+    "prior_sd_new_team": 0.45,
+    "new_team_weighted_matches": 8.0,
+    "home_advantage_prior_mean": 0.25,
+    "home_advantage_prior_sd": 0.15,
+    "rho_prior_sd": 0.08
+  }
+}
