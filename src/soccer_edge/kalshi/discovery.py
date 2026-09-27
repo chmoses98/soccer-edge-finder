@@ -234,7 +234,8 @@ def discover(
                 if m.series_ticker is None:
                     m = m.model_copy(update={"series_ticker": st})
                 run.markets[m.ticker] = m
-        if fetch_events:
+        if fetch_events and any(mk.series_ticker == st for mk in run.markets.values()):
+            # events are only needed for series that currently list markets (saves ~70k historical events)
             es = client.events(series_ticker=st, limit=200)
             if not es.complete:
                 rec.event_sweep_complete = False

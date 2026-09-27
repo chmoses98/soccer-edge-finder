@@ -18,6 +18,24 @@ AMERICAN_FOOTBALL_HINTS = {
     "touchdown",
     "quarterback",
 }
+NON_SOCCER_TITLE_HINTS = (
+    "fiba",
+    "basketball",
+    "cricket",
+    "hockey",
+    "nhl",
+    "esports",
+    "darts",
+    "rugby",
+    "t20",
+    "ipl ",
+    "baseball",
+    "nba",
+    "wnba",
+    "exchange rate",
+    "tennis",
+    "golf",
+)
 SOCCER_TITLE_HINTS = (
     "premier league",
     "la liga",
@@ -106,6 +124,15 @@ def classify_ownership(series: RawSeries) -> tuple[Ownership, str]:
         return Ownership.SOCCER, "soccer tag"
     if series.ticker.startswith(AMERICAN_FOOTBALL_PREFIXES):
         return Ownership.NOT_SOCCER, "american-football ticker prefix"
+    # Verified 2026-09-27: other-sport tags (Hockey, Cricket, Basketball, Esports, Darts, Rugby,
+    # Foreign Exchange ...) carry soccer-like wording ('Premier League', 'World Cup', 'goals').
+    # A tagged series that is not tagged Soccer is never soccer; only 'Football' stays ambiguous.
+    if tags and not (tags & {"football"}):
+        return Ownership.NOT_SOCCER, f"tagged {sorted(tags)} without a soccer tag"
+    if tags == {"football"} and any(h in title for h in AMERICAN_FOOTBALL_TITLE_HINTS):
+        return Ownership.NOT_SOCCER, "bare 'Football' tag with american-football wording"
+    if any(h in title for h in NON_SOCCER_TITLE_HINTS):
+        return Ownership.NOT_SOCCER, "other-sport wording"
     if _matches_soccer_grammar(series.ticker):
         if any(h in title for h in AMERICAN_FOOTBALL_HINTS):
             return Ownership.AMBIGUOUS, "soccer ticker grammar but american-football wording"

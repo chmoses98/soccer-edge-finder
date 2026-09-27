@@ -286,14 +286,18 @@ def run(
             if w.assoc and w.assoc.side_team_id:
                 side_home = w.assoc.side_team_id == fx.home_team_id
             elif w.spec.side_team_code and w.spec.side_team_code != "DRAW":
-                # fall back: match ticker code against team codes order AWAYHOME
+                # fall back: soccer event codes are HOME then AWAY (verified live)
                 tc = w.spec.team_codes or ""
                 code = w.spec.side_team_code
-                if tc.endswith(code):
+                if tc.startswith(code) and not tc.endswith(code):
                     side_home = True
-                elif tc.startswith(code):
+                elif tc.endswith(code) and not tc.startswith(code):
                     side_home = False
             try:
+                if w.spec.family is MarketFamily.FIRST_TO_SCORE and base_ctx.requires_winner:
+                    raise UnsupportedSemantics(
+                        f"{w.market.ticker}: first-to-score including extra time is not simulated for knockout legs"
+                    )
                 w.sem = resolve_semantics(w.spec, side_is_home=side_home)
             except UnsupportedSemantics as exc:
                 cov.set(w.market.ticker, Disposition.UNPRICEABLE, str(exc)[:160])

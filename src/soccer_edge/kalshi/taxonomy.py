@@ -51,6 +51,18 @@ class MarketFamily(str, Enum):
     TOURNAMENT_ADVANCEMENT = "tournament_advancement"
     PLAYER_AWARD = "player_award"
     SEASON_PLAYER_TOTAL = "season_player_total"
+    PLAYER_SEASON_LEADER = "player_season_leader"
+    FIRST_HALF_BTTS = "first_half_btts"
+    FIRST_HALF_HANDICAP = "first_half_handicap"
+    FIRST_HALF_TEAM_TOTAL = "first_half_team_total"
+    COMPETITION_TEAM_POINTS = "competition_team_points"
+    COMPETITION_POINTS_MARGIN = "competition_points_margin"
+    COMPETITION_LAST_PLACE = "competition_last_place"
+    COMPETITION_HEAD_TO_HEAD = "competition_head_to_head"
+    COMPETITION_PROMOTION = "competition_promotion"
+    COMPETITION_HOST = "competition_host"
+    COMPETITION_TROPHIES = "competition_trophies"
+    SOCCER_SPECIAL = "soccer_special"  # transfers, manager exits, retirements, bans ...
     COMBO = "combo"
     UNKNOWN = "unknown"
 
@@ -72,34 +84,76 @@ class Scope(str, Enum):
     UNKNOWN = "unknown"
 
 
-# family token -> (family, scope, observed_live)
+# family token -> (family, scope, observed_live). Observed = seen in a complete runner-side discovery
+# (2026-09-27, 6,694 contracts) or in sibling-repo archives. Longest token wins when splitting.
 FAMILY_TOKENS: dict[str, tuple[MarketFamily, Scope, bool]] = {
+    "1HTEAMTOTAL": (MarketFamily.FIRST_HALF_TEAM_TOTAL, Scope.MATCH, False),
+    "1HSPREAD": (MarketFamily.FIRST_HALF_HANDICAP, Scope.MATCH, True),
+    "1HTOTAL": (MarketFamily.FIRST_HALF_TOTAL, Scope.MATCH, True),
+    "1HBTTS": (MarketFamily.FIRST_HALF_BTTS, Scope.MATCH, True),
+    "1HGAME": (MarketFamily.FIRST_HALF_RESULT, Scope.MATCH, False),
+    "1H": (MarketFamily.FIRST_HALF_RESULT, Scope.MATCH, True),
     "TEAMTOTAL": (MarketFamily.TEAM_TOTAL, Scope.MATCH, True),
     "TOTAL": (MarketFamily.TOTAL_GOALS, Scope.MATCH, True),
     "SPREAD": (MarketFamily.HANDICAP, Scope.MATCH, True),
+    "GAME": (MarketFamily.MATCH_RESULT_3WAY, Scope.MATCH, True),
+    "BTTS": (MarketFamily.BTTS, Scope.MATCH, True),
+    "FTTS": (MarketFamily.FIRST_TO_SCORE, Scope.MATCH, True),
+    "SCORE": (MarketFamily.EXACT_SCORE, Scope.MATCH, True),
+    "ANYGOAL": (MarketFamily.PLAYER_GOALS, Scope.PLAYER, True),
     "GOAL": (MarketFamily.PLAYER_GOALS, Scope.PLAYER, True),
-    # inferred by grammar analogy; classified only with title corroboration
-    "GAME": (MarketFamily.MATCH_RESULT_3WAY, Scope.MATCH, False),
+    "BRACE": (MarketFamily.PLAYER_GOALS, Scope.PLAYER, True),
     "WINNER": (MarketFamily.MATCH_WINNER_2WAY, Scope.MATCH, False),
-    "BTTS": (MarketFamily.BTTS, Scope.MATCH, False),
-    "1HTOTAL": (MarketFamily.FIRST_HALF_TOTAL, Scope.MATCH, False),
-    "1HGAME": (MarketFamily.FIRST_HALF_RESULT, Scope.MATCH, False),
-    "H1TOTAL": (MarketFamily.FIRST_HALF_TOTAL, Scope.MATCH, False),
-    "H1": (MarketFamily.FIRST_HALF_RESULT, Scope.MATCH, False),
-    "SCORE": (MarketFamily.EXACT_SCORE, Scope.MATCH, False),
     "CS": (MarketFamily.CLEAN_SHEET, Scope.MATCH, False),
     "ASSIST": (MarketFamily.PLAYER_ASSISTS, Scope.PLAYER, False),
     "SHOTS": (MarketFamily.PLAYER_SHOTS, Scope.PLAYER, False),
     "SOT": (MarketFamily.PLAYER_SHOTS_ON_TARGET, Scope.PLAYER, False),
     "CARD": (MarketFamily.PLAYER_CARDS, Scope.PLAYER, False),
-    "CHAMP": (MarketFamily.COMPETITION_WINNER, Scope.COMPETITION, False),
-    "CHAMPION": (MarketFamily.COMPETITION_WINNER, Scope.COMPETITION, False),
-    "RELEGATION": (MarketFamily.COMPETITION_RELEGATION, Scope.COMPETITION, False),
+    # competition / season scope (observed 2026-09-27)
+    "RELEGATION": (MarketFamily.COMPETITION_RELEGATION, Scope.COMPETITION, True),
+    "TEAMPOINTS": (MarketFamily.COMPETITION_TEAM_POINTS, Scope.COMPETITION, True),
+    "POINTMARGIN": (MarketFamily.COMPETITION_POINTS_MARGIN, Scope.COMPETITION, True),
+    "SEASONSTAT": (MarketFamily.SEASON_PLAYER_TOTAL, Scope.COMPETITION, True),
+    "H2HFINISH": (MarketFamily.COMPETITION_HEAD_TO_HEAD, Scope.COMPETITION, True),
+    "GROUPWIN": (MarketFamily.COMPETITION_QUALIFICATION, Scope.COMPETITION, True),
+    "LEADER": (MarketFamily.PLAYER_SEASON_LEADER, Scope.COMPETITION, True),
+    "TOPX": (MarketFamily.COMPETITION_TOP_N, Scope.COMPETITION, True),
+    "TOP8": (MarketFamily.COMPETITION_TOP_N, Scope.COMPETITION, True),
     "TOP4": (MarketFamily.COMPETITION_TOP_N, Scope.COMPETITION, False),
     "TOP2": (MarketFamily.COMPETITION_TOP_N, Scope.COMPETITION, False),
     "TOP6": (MarketFamily.COMPETITION_TOP_N, Scope.COMPETITION, False),
-    "GOLDENBOOT": (MarketFamily.PLAYER_AWARD, Scope.COMPETITION, False),
+    "TOP": (MarketFamily.COMPETITION_TOP_N, Scope.COMPETITION, True),
+    "BOTTOM": (MarketFamily.COMPETITION_LAST_PLACE, Scope.COMPETITION, True),
+    "LAST": (MarketFamily.COMPETITION_LAST_PLACE, Scope.COMPETITION, True),
+    "QUAL": (MarketFamily.COMPETITION_QUALIFICATION, Scope.COMPETITION, True),
+    "ROUND": (MarketFamily.TOURNAMENT_ADVANCEMENT, Scope.COMPETITION, True),
+    "PROMO": (MarketFamily.COMPETITION_PROMOTION, Scope.COMPETITION, True),
+    "HOST": (MarketFamily.COMPETITION_HOST, Scope.COMPETITION, True),
+    "AWARD": (MarketFamily.PLAYER_AWARD, Scope.COMPETITION, True),
+    "RANK": (MarketFamily.PLAYER_AWARD, Scope.COMPETITION, True),
+    "GOLDENBOOT": (MarketFamily.PLAYER_SEASON_LEADER, Scope.COMPETITION, False),
+    "CHAMPION": (MarketFamily.COMPETITION_WINNER, Scope.COMPETITION, False),
+    "CHAMP": (MarketFamily.COMPETITION_WINNER, Scope.COMPETITION, False),
+    "CUP": (MarketFamily.COMPETITION_WINNER, Scope.COMPETITION, True),
+    "TROPHIES": (MarketFamily.COMPETITION_TROPHIES, Scope.COMPETITION, True),
 }
+
+# bodies that are whole-series specials (no competition split); observed 2026-09-27
+SPECIAL_BODIES: dict[str, MarketFamily] = {
+    "JOINCLUB": MarketFamily.SOCCER_SPECIAL,
+    "MANAGERSOUT": MarketFamily.SOCCER_SPECIAL,
+    "SOCCERRETIRE": MarketFamily.SOCCER_SPECIAL,
+    "SOCCERLEAVE": MarketFamily.SOCCER_SPECIAL,
+    "FIFALEAVE": MarketFamily.SOCCER_SPECIAL,
+    "UEFAISRAELBAN": MarketFamily.SOCCER_SPECIAL,
+    "WCDELAY": MarketFamily.SOCCER_SPECIAL,
+    "CLUBWCHOST": MarketFamily.COMPETITION_HOST,
+    "BALLONDOR": MarketFamily.PLAYER_AWARD,
+    "BALLONDORAWARD": MarketFamily.PLAYER_AWARD,
+    "BALLONDORRANK": MarketFamily.PLAYER_AWARD,
+    "SOCCERTROPHIES": MarketFamily.COMPETITION_TROPHIES,
+}
+_SPECIAL_PREFIXES = ("CLUBCHANGE", "JOINCLUB", "MANAGERSOUT", "BALLONDOR")
 
 # Kalshi competition codes observed live (37 series, 2026-07..09) -> canonical competition ids.
 # None means "known soccer competition without a canonical id yet" (kept as soccer, mapped later).
@@ -151,6 +205,34 @@ COMPETITION_CODES: dict[str, str | None] = {
     "FIFAWC": "fifa.world_cup",
     "CWC": "fifa.club_world_cup",
     "WWC": "fifa.womens_world_cup",
+    "WCW": "fifa.womens_world_cup",
+    "PREMIERLEAGUE": "eng.premier_league",
+    "UEFAEURO": "uefa.euro",
+    "UEFASUPERCUP": None,
+    "UEFASC": None,
+    "ENGCS": None,
+    "UCLLEAGUE": "uefa.champions_league",
+    "MLSCUP": "usa.mls",
+    "MLSEAST": "usa.mls",
+    "MLSWEST": "usa.mls",
+    # observed 2026-09-27 (not yet modelled)
+    "APFDDH": None,
+    "ARGNACB": None,
+    "ARGPREMDIV": "arg.primera",
+    "BRASILEIROB": None,
+    "BRASILEIROC": None,
+    "CANPL": None,
+    "CHNL1": None,
+    "CHNSL": None,
+    "CHLLDP": None,
+    "ECULP": None,
+    "EKSTRAKLASA": None,
+    "PERLIGA1": None,
+    "TACAPORT": None,
+    "THAIL1": None,
+    "URYPD": None,
+    "VENFUTVE": None,
+    "CONCACAFGC": "concacaf.gold_cup",
 }
 
 _TICKER_RE = re.compile(r"^KX(?P<body>[A-Z0-9]+)-(?P<event>[A-Z0-9]+)(?:-(?P<leg>[A-Z0-9.\-]+))?$")
@@ -210,18 +292,27 @@ PRICEABLE_FAMILIES = frozenset(
         MarketFamily.DOUBLE_CHANCE,
         MarketFamily.FIRST_TO_SCORE,
         MarketFamily.MATCH_WINNER_2WAY,
+        MarketFamily.FIRST_HALF_BTTS,
+        MarketFamily.FIRST_HALF_HANDICAP,
+        MarketFamily.FIRST_HALF_TEAM_TOTAL,
         MarketFamily.PLAYER_GOALS,  # priced by the RESEARCH_ONLY player layer; authority gates it
     }
 )
 
 
 def split_competition_and_family(body: str) -> tuple[str | None, str | None]:
-    """'MLSTEAMTOTAL' -> ('MLS', 'TEAMTOTAL'). Longest family token wins; competition must be known."""
+    """'MLSTEAMTOTAL' -> ('MLS', 'TEAMTOTAL'); 'APFDDHGAME' -> ('APFDDH', 'GAME') even though APFDDH is
+    an unregistered competition (the competition_id is then None). Longest token wins. A bare
+    competition body ('KXWC', 'KXPREMIERLEAGUE') returns (body, None) when the body is a known code."""
+    if body in SPECIAL_BODIES or body.startswith(_SPECIAL_PREFIXES):
+        return None, None
     for tok in sorted(FAMILY_TOKENS, key=len, reverse=True):
         if body.endswith(tok):
             comp = body[: -len(tok)]
-            if comp in COMPETITION_CODES:
+            if comp and (comp in COMPETITION_CODES or len(comp) >= 2):
                 return comp, tok
+    if body in COMPETITION_CODES:
+        return body, None
     return None, None
 
 
@@ -235,13 +326,22 @@ def parse_event_code(event: str) -> tuple[str | None, str | None]:
 
 def _period_from_text(*texts: str) -> Period:
     blob = " ".join(texts).lower()
-    if "first half" in blob or "1st half" in blob or "halftime" in blob:
+    if "first half" in blob or "1st half" in blob or "halftime" in blob or " 1h " in f" {blob} ":
         return Period.FIRST_HALF
+    # Kalshi's standard soccer clause: "after 90 minutes plus stoppage time (does not include extra
+    # time or penalties)" -> regulation. The negation must be checked BEFORE 'extra time'.
+    if (
+        "does not include extra time" in blob
+        or "not include extra time" in blob
+        or "excluding extra time" in blob
+    ):
+        return Period.REGULATION
     if (
         "including extra time" in blob
         or "extra time and penalt" in blob
         or "to advance" in blob
         or "to qualify" in blob
+        or "penalty shootout" in blob
     ):
         return Period.INCLUDING_PENS
     if "extra time" in blob:
@@ -264,9 +364,53 @@ def classify(market: RawMarket) -> ContractSpec:
             None,
             rationale="ticker grammar not recognised",
         )
-    comp, tok = split_competition_and_family(m["body"])
+    body = m["body"]
     event_date, team_codes = parse_event_code(m["event"])
     leg = m["leg"]
+    title = f"{market.title} {market.subtitle} {market.yes_sub_title}".lower()
+    special = SPECIAL_BODIES.get(body) or (
+        MarketFamily.SOCCER_SPECIAL if body.startswith(_SPECIAL_PREFIXES) else None
+    )
+    if special is not None:
+        return ContractSpec(
+            t,
+            special,
+            Scope.COMPETITION,
+            Period.SEASON,
+            None,
+            None,
+            event_date,
+            team_codes,
+            side_team_code=leg,
+            rationale=f"special body {body}",
+        )
+    comp, tok = split_competition_and_family(body)
+    if comp is not None and tok is None:
+        # bare competition body: outright winner ("Will Albania win the 2030 FIFA Men's World Cup?")
+        if re.search(r"\bwin(s|ner)?\b|champion", title):
+            return ContractSpec(
+                t,
+                MarketFamily.COMPETITION_WINNER,
+                Scope.COMPETITION,
+                Period.SEASON,
+                comp,
+                COMPETITION_CODES.get(comp),
+                event_date,
+                team_codes,
+                side_team_code=leg,
+                rationale=f"bare competition body {comp} with winner wording",
+            )
+        return ContractSpec(
+            t,
+            MarketFamily.UNKNOWN,
+            Scope.COMPETITION,
+            Period.SEASON,
+            comp,
+            COMPETITION_CODES.get(comp),
+            event_date,
+            team_codes,
+            rationale=f"bare competition body {comp} without winner wording",
+        )
     if comp is None or tok is None:
         return ContractSpec(
             t,
@@ -277,16 +421,62 @@ def classify(market: RawMarket) -> ContractSpec:
             None,
             event_date,
             team_codes,
-            rationale=f"unknown competition/family token in {m['body']!r}",
+            rationale=f"unknown competition/family token in {body!r}",
         )
     family, scope, observed = FAMILY_TOKENS[tok]
     comp_id = COMPETITION_CODES.get(comp)
     period = _period_from_text(
         market.title, market.subtitle, market.yes_sub_title, market.rules_primary
     )
-    title = f"{market.title} {market.subtitle} {market.yes_sub_title}".lower()
+    if family in (
+        MarketFamily.FIRST_HALF_RESULT,
+        MarketFamily.FIRST_HALF_TOTAL,
+        MarketFamily.FIRST_HALF_BTTS,
+        MarketFamily.FIRST_HALF_HANDICAP,
+        MarketFamily.FIRST_HALF_TEAM_TOTAL,
+    ):
+        period = Period.FIRST_HALF
+    if scope is Scope.COMPETITION:
+        period = Period.SEASON
 
-    if family is MarketFamily.TOTAL_GOALS:
+    if family is MarketFamily.EXACT_SCORE:
+        # leg like LEO0JUA0 = <first team code><goals><second team code><goals>, codes in event order
+        mm = re.match(r"^([A-Z]+?)(\d+)([A-Z]+?)(\d+)$", leg or "")
+        if mm and team_codes:
+            first_code, g1, second_code, g2 = (
+                mm.group(1),
+                int(mm.group(2)),
+                mm.group(3),
+                int(mm.group(4)),
+            )
+            return ContractSpec(
+                t,
+                family,
+                scope,
+                period,
+                comp,
+                comp_id,
+                event_date,
+                team_codes,
+                side_team_code=first_code,
+                line=None,
+                k=None,
+                inferred=not observed,
+                rationale=f"token {tok}; exact score {first_code} {g1}-{g2} {second_code}",
+                player_code=f"{g1}-{g2}",
+            )
+        return ContractSpec(
+            t,
+            MarketFamily.UNKNOWN,
+            scope,
+            period,
+            comp,
+            comp_id,
+            event_date,
+            team_codes,
+            rationale=f"SCORE leg {leg!r} not parseable",
+        )
+    if family is MarketFamily.TOTAL_GOALS or family is MarketFamily.FIRST_HALF_TOTAL:
         line = _line_from(leg, market)
         return ContractSpec(
             t,
@@ -301,7 +491,7 @@ def classify(market: RawMarket) -> ContractSpec:
             inferred=not observed,
             rationale=f"token {tok}; leg {leg}",
         )
-    if family is MarketFamily.TEAM_TOTAL:
+    if family in (MarketFamily.TEAM_TOTAL, MarketFamily.FIRST_HALF_TEAM_TOTAL):
         code, n = _split_team_and_number(leg)
         line = _line_from(n, market)
         return ContractSpec(
@@ -318,7 +508,7 @@ def classify(market: RawMarket) -> ContractSpec:
             inferred=not observed,
             rationale=f"token {tok}; leg {leg}",
         )
-    if family is MarketFamily.HANDICAP:
+    if family in (MarketFamily.HANDICAP, MarketFamily.FIRST_HALF_HANDICAP):
         code, n = _split_team_and_number(leg)
         line = _line_from(n, market)
         return ContractSpec(
@@ -361,23 +551,9 @@ def classify(market: RawMarket) -> ContractSpec:
             inferred=not observed,
             rationale=f"token {tok}; player tail {tail}",
         )
-    if family is MarketFamily.MATCH_RESULT_3WAY:
-        # inferred: corroborate with title ('win', 'draw', 'tie')
-        if not any(w in title for w in ("win", "draw", "tie")):
-            return ContractSpec(
-                t,
-                MarketFamily.UNKNOWN,
-                scope,
-                period,
-                comp,
-                comp_id,
-                event_date,
-                team_codes,
-                rationale="GAME token without result wording",
-            )
-        side = (
-            "DRAW" if ("draw" in title or "tie" in title) and leg in (None, "TIE", "DRAW") else leg
-        )
+    if family in (MarketFamily.MATCH_RESULT_3WAY, MarketFamily.FIRST_HALF_RESULT):
+        # observed live: legs <TEAM> for wins and TIE for the draw ("Santos wins", "Draw")
+        side = "DRAW" if leg in ("TIE", "DRAW") or ("draw" in title and "win" not in title) else leg
         return ContractSpec(
             t,
             family,
@@ -388,10 +564,10 @@ def classify(market: RawMarket) -> ContractSpec:
             event_date,
             team_codes,
             side_team_code=side,
-            inferred=True,
-            rationale=f"inferred token {tok}; leg {leg}",
+            inferred=not observed,
+            rationale=f"token {tok}; leg {leg}",
         )
-    if family is MarketFamily.BTTS:
+    if family in (MarketFamily.BTTS, MarketFamily.FIRST_HALF_BTTS):
         return ContractSpec(
             t,
             family,
@@ -401,8 +577,29 @@ def classify(market: RawMarket) -> ContractSpec:
             comp_id,
             event_date,
             team_codes,
-            inferred=True,
-            rationale=f"inferred token {tok}",
+            inferred=not observed,
+            rationale=f"token {tok}",
+        )
+    if family is MarketFamily.FIRST_TO_SCORE:
+        # observed rules: "records the first goal during the entire game (regulation, stoppage and any extra time periods)"
+        per = (
+            Period.INCLUDING_ET
+            if "extra time" in market.rules_primary.lower()
+            and "not include extra time" not in market.rules_primary.lower()
+            else period
+        )
+        return ContractSpec(
+            t,
+            family,
+            scope,
+            per,
+            comp,
+            comp_id,
+            event_date,
+            team_codes,
+            side_team_code=leg,
+            inferred=not observed,
+            rationale=f"token {tok}; leg {leg}",
         )
     return ContractSpec(
         t,

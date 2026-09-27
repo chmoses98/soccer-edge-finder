@@ -97,8 +97,9 @@ def associate(
                 detail=f"unknown team {name!r}",
             )
     a, b = ids
-    # Kalshi titles are usually 'Away at Home' for US sports, 'A vs B' for soccer; try both orders.
-    candidates = fixtures_by_teams.get((b, a), []) + fixtures_by_teams.get((a, b), [])
+    # Verified on live soccer tickers: event titles and event codes are HOME then AWAY
+    # ('Sao Paulo vs Santos' -> SPASAN). Prefer that orientation, fall back to the reverse.
+    candidates = fixtures_by_teams.get((a, b), []) + fixtures_by_teams.get((b, a), [])
     target = (
         date.fromisoformat(spec.event_date)
         if spec.event_date
