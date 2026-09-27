@@ -30,28 +30,40 @@ KXEPLGOAL-26AUG22ARSCOV-ARSMZUBIM36-1  player (ARS, M. Zubimendi, #36) 1+ goals
 Team codes are Kalshi's own 2–4 letter abbreviations and are **not** identity; association uses the
 event title and the registry. `floor_strike` from the API is the authoritative line.
 
-## Family taxonomy (from observations + grammar)
+## Family taxonomy (from the live catalog, 2026-09-27)
 
-| token | family | scope | observed live before this build | priced in v1 |
+Split rule: the longest known family token is stripped from the ticker body; whatever remains is
+the competition code, registered or not. A bare competition body with winner wording is an
+outright-winner contract. Specials (transfers, manager exits, Ballon d'Or) are whole-series bodies.
+
+| token(s) | family | scope | observed live | priced in v1 |
 |---|---|---|---|---|
-| `TOTAL` | total_goals | match | ✅ | ✅ |
-| `SPREAD` | handicap ("wins by more than N.5") | match | ✅ | ✅ |
-| `TEAMTOTAL` | team_total | match | ✅ | ✅ |
-| `GOAL` | player_goals (K+) | player | ✅ | scaffold only (no lineup provider) |
-| `GAME` | match_result_3way (home/away/`TIE` legs) | match | inferred, needs title corroboration | ✅ (flagged `inferred` until observed) |
-| `BTTS` | btts | match | inferred | ✅ (flagged) |
-| `1HTOTAL`/`H1TOTAL`, `1HGAME`/`H1` | first-half total / result | match | inferred | ✅ (flagged) |
-| `WINNER` | to advance (ET+pens) | match | inferred | ✅ (flagged) |
-| `SCORE`, `CS` | exact score, clean sheet | match | inferred | clean sheet ✅; exact score ❌ |
-| `ASSIST`, `SHOTS`, `SOT`, `CARD` | player families | player | inferred | ❌ |
-| `CHAMP(ION)`, `TOP2/4/6`, `RELEGATION`, `GOLDENBOOT` | competition futures | competition | inferred | ❌ (`UNSUPPORTED_FAMILY`) |
+| `GAME` (legs `<TEAM>`, `TIE`) | match_result_3way | match | ✅ (726) | ✅ |
+| `TOTAL` | total_goals | match | ✅ (462) | ✅ |
+| `SPREAD` ("wins by more than N.5") | handicap | match | ✅ (308) | ✅ |
+| `TEAMTOTAL` | team_total | match | ✅ (126) | ✅ |
+| `BTTS` | btts | match | ✅ (76) | ✅ |
+| `SCORE` (leg `<A><g><B><g>`) | exact_score | match | ✅ (630) | ✅ |
+| `1H`, `1HTOTAL`, `1HSPREAD`, `1HBTTS` | first-half result / total / handicap / BTTS | match | ✅ | ✅ |
+| `FTTS` (incl. extra time per rules) | first_to_score | match | ✅ | ✅ (regulation-only fixtures) |
+| `GOAL`, `ANYGOAL`, `BRACE` | player_goals | player | ✅ | scaffold (no lineup provider) |
+| `RELEGATION`, `TOP/TOPX/TOP8`, `LAST/BOTTOM`, `QUAL/GROUPWIN`, `ROUND`, `PROMO`, `HOST`, `TEAMPOINTS`, `POINTMARGIN`, `H2HFINISH`, `CUP`, bare body | competition futures | competition | ✅ | ❌ (`UNSUPPORTED_FAMILY`) |
+| `LEADER`, `SEASONSTAT`, `AWARD`, `RANK`, `BALLONDOR*` | player season / awards | competition | ✅ | ❌ |
+| `JOINCLUB`, `MANAGERSOUT`, `SOCCERRETIRE`, `SOCCERLEAVE`, `FIFALEAVE`, `SOCCERTROPHIES` | soccer_special / trophies | competition | ✅ | ❌ |
+| `WINNER`, `CS`, `ASSIST`, `SHOTS`, `SOT`, `CARD` | (by analogy) | — | not seen | — |
 | anything else | `UNKNOWN` | — | — | ❌ (`UNKNOWN_FAMILY`, rationale kept) |
 
-Competition codes seen live (37 series, 2026-07..09, via a sibling repo's broad market sweep):
-MLS, NWSL, USL, LEAGUESCUP, LIGAMX, LIGAEXP, EPL, EFLCHAMPIONSHIP, LALIGA, COPADELREY,
-BUNDESLIGA2, SERIEB, TFF1LIG, BELGIANPL, ALLSVENSKAN, SAUDIPL, UCL, UCLW, UEL, UEFANL,
-CONCACAFNL, CONMEBOLLIB, COPADOBRASIL, BRASILEIRO. `COMPETITION_CODES` maps each to a canonical
-competition id or `None` (known soccer, not yet modelled).
+Verified settlement wording (from `rules_primary`): match families settle "after 90 minutes plus
+stoppage time (does not include extra time or penalties)"; `FTTS` counts "regulation, stoppage
+and any extra time periods"; exact score is regulation. **Event codes and titles are HOME then
+AWAY** (`SPASAN` = "Sao Paulo vs Santos").
+
+Competition codes seen live (2026-09-27): UEFANL, CONCACAFNL, LIGAMX, MLS, BRASILEIRO, USL, EPL,
+LALIGA, BUNDESLIGA, LIGUE1, SERIEA, NWSL, UCLW, LIGAEXP, COPADELREY, plus futures-only codes (WC,
+UCL, UEL, UECL, UEFAEURO, COPAAMERICA, CONCACAFGC, MLSCUP, PREMIERLEAGUE, FACUP, EFLCUP, DFBPOKAL,
+KNVBCUP, COPADOBRASIL, CONMEBOLLIB, ...) and lower leagues (APFDDH, ARGNACB, BRASILEIROB/C, CANPL,
+CHNL1, CHNSL, CHLLDP, ECULP, EKSTRAKLASA, PERLIGA1, TACAPORT, THAIL1, URYPD, VENFUTVE, ...).
+`COMPETITION_CODES` maps each to a canonical id or `None` (known soccer, not modelled).
 
 ## Coverage accounting
 

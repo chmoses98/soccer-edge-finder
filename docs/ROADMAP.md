@@ -1,8 +1,9 @@
 # Roadmap (ordered by expected improvement, not ease)
 
-1. **Confirm the live surface.** Read the first runner-side discovery index; add every newly
-   observed family token to the taxonomy with its settlement semantics; turn `inferred` flags into
-   observed. (Blocks: correct pricing of 3-way and BTTS if their grammar differs.)
+1. **Keep the taxonomy current.** Done for the 2026-09-27 surface (v2). Each discovery commits an
+   `unknown_body_histogram`; review it weekly and add tokens with their verified rules text.
+   Register the lower-league competition codes that carry match markets (APFDDH, ARGNACB,
+   BRASILEIROB/C, CANPL, ...) once a fixture source for them exists.
 2. **Calibrate uncertainty.** Fit `sigma_model_log_rate`, decay, and priors so the 80% interval on
    P(home) covers the market-as-oracle ~80% and the O/U 2.5 ECE drops below 0.02. Re-run
    `walk_forward_v1` → `v2` with a frozen comparison to v1's hash.

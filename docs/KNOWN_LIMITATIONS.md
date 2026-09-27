@@ -31,10 +31,11 @@
 13. No cross-fixture correlation (worlds are independent per fixture).
 
 ## Kalshi
-14. Only `TOTAL`, `SPREAD`, `TEAMTOTAL`, `GOAL` families have been *observed* live before this
-    build's first runner-side discovery; `GAME`, `BTTS`, period markets etc. are inferred from
-    grammar and flagged `inferred` until confirmed by discovery output. Check
-    `data/catalog/latest_index.json` for what is actually live.
+14. The taxonomy was rebuilt from the first complete live discovery (6,694 contracts): 3-way,
+    totals, spreads, team totals, BTTS, exact score, first-half families and first-to-score are
+    observed and priced; season futures, player-season and specials are observed and counted but
+    not priced. New tokens Kalshi adds later land in `UNKNOWN` until the next taxonomy pass. Check
+    `data/catalog/latest_index.json` (`unknown_body_histogram`) for what is currently unclassified.
 15. Fee mechanics are transcribed from Kalshi's schedule via sibling repos and a live probe, not
     reconciled against a fill in this repo (no account is used here).
 16. Team codes inside tickers are not a stable identity; association relies on event titles and
