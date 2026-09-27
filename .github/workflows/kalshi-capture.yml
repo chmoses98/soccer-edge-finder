@@ -12,7 +12,7 @@ on:
     - cron: "37 */2 * * 2,3,4"
 
 concurrency:
-  group: data-writer-archive
+  group: data-writer-archive-capture
   cancel-in-progress: false
 
 permissions:
@@ -52,6 +52,8 @@ jobs:
           retention-days: 7
       - name: Publish to data-archive
         if: ${{ hashFiles('work/snapshots/STATUS.json') != '' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           rm -f work/snapshots/latest_catalog.json   # raw catalog stays an artifact, not archived
           scripts/archive_publish.sh work/snapshots snapshots "capture ${{ github.run_id }} $(date -u +%Y-%m-%dT%H:%MZ)"

@@ -19,7 +19,7 @@ on:
     - cron: "11 7,11,15,18 * * *"
 
 concurrency:
-  group: data-writer-archive
+  group: data-writer-archive-run
   cancel-in-progress: false
 
 permissions:
@@ -76,6 +76,8 @@ jobs:
           retention-days: 14
       - name: Publish run output + new ledger records
         if: ${{ steps.run.outcome == 'success' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           RUN_ID=$(python -c "import json;print(json.load(open('work/out/run_output.v1.json'))['run_id'])")
           DAY=$(date -u +%Y-%m-%d)

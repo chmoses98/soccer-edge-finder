@@ -15,7 +15,7 @@ reached 23 GB; a 99.7 MiB file broke every CFB push. Rules here:
 | provider downloads | `data/cache/` (gitignored) | ephemeral | — |
 | simulation realisations | **never stored** | — | `compact_summary()` only |
 
-Writer workflows share one concurrency group per branch (`data-writer-*`, queue not cancel), scope
+Each writer workflow has its own queue-not-cancel concurrency group (`data-writer-archive-{capture,run,settle}`, `data-writer-catalog`); concurrent writers to the archive branch are serialised by the publisher's rebase-retry, scope
 `git add` to their own paths, upload an artifact *before* committing, and `git pull --rebase`
 before push. A size guard (files > 45 MB fail CI) is on the roadmap for the archive branch.
 
