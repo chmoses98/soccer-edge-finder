@@ -3,14 +3,14 @@
  "counters": {
   "complete": true,
   "contracts_by_competition_code": {
-   "?": 512,
+   "?": 449,
    "APFDDH": 40,
    "ARGNACB": 14,
    "ARGPREMDIV": 30,
    "BELGIANPL": 18,
    "BRASILEIRO": 139,
    "BRASILEIROB": 79,
-   "BRASILEIROC": 27,
+   "BRASILEIROC": 23,
    "BUNDESLIGA": 195,
    "CANPL": 3,
    "CHLLDP": 16,
@@ -19,9 +19,11 @@
    "CONCACAFGC": 23,
    "CONCACAFNL": 398,
    "CONMEBOLLIB": 16,
+   "CONMEBOLSUD": 8,
    "COPAAMERICA": 25,
-   "COPADELREY": 38,
+   "COPADELREY": 48,
    "COPADOBRASIL": 16,
+   "DENSUPERLIGA": 12,
    "DFBPOKAL": 21,
    "DIMAYOR": 40,
    "ECULP": 16,
@@ -30,23 +32,22 @@
    "EFLL1": 86,
    "EKSTRAKLASA": 18,
    "ENGNL": 36,
-   "EPL": 361,
+   "EPL": 367,
    "EREDIVISIE": 18,
    "FA": 24,
    "FIFAW": 48,
    "INTLFRIENDLY": 163,
    "ISRNL": 80,
+   "KLEAGUE": 12,
    "KNVB": 21,
    "LALIGA": 237,
    "LALIGA2": 14,
    "LIGAEXP": 24,
-   "LIGAMX": 218,
-   "LIGAMX1H": 30,
+   "LIGAMX": 254,
    "LIGAMX2H": 12,
    "LIGAPORTUGAL": 18,
    "LIGUE1": 199,
-   "MLS": 187,
-   "MLS1H": 15,
+   "MLS": 205,
    "MLS2H": 6,
    "MLSEAST": 15,
    "MLSWEST": 15,
@@ -54,9 +55,10 @@
    "PERLIGA1": 21,
    "PREMIERLEAGUE": 20,
    "SERIEA": 210,
+   "SOCCER": 2,
    "SUPERLIG": 18,
    "SVK2L": 14,
-   "SVKCUP": 3,
+   "SVKCUP": 5,
    "TACAPORT": 20,
    "THAIL1": 16,
    "UCL": 354,
@@ -69,14 +71,14 @@
    "UEL": 36,
    "URYPD": 33,
    "USL": 98,
-   "USLCUP": 3,
+   "USLCUP": 5,
    "VENFUTVE": 14,
    "WC": 172,
    "WCW": 32
   },
   "contracts_by_family": {
    "btts": 108,
-   "competition_head_to_head": 14,
+   "competition_head_to_head": 20,
    "competition_host": 26,
    "competition_last_place": 132,
    "competition_points_margin": 30,
@@ -85,33 +87,35 @@
    "competition_relegation": 96,
    "competition_team_points": 384,
    "competition_top_n": 306,
-   "competition_trophies": 30,
-   "competition_winner": 1045,
-   "exact_score": 675,
+   "competition_trophies": 32,
+   "competition_winner": 1077,
+   "exact_score": 630,
    "first_half_btts": 32,
+   "first_half_exact_score": 45,
    "first_half_handicap": 64,
    "first_half_result": 96,
    "first_half_total": 96,
    "first_to_score": 63,
    "handicap": 430,
-   "match_result_3way": 1041,
-   "player_award": 167,
+   "match_result_3way": 1038,
+   "match_winner_2way": 14,
+   "player_award": 168,
    "player_season_leader": 247,
-   "season_player_total": 50,
-   "soccer_special": 211,
+   "season_player_total": 53,
+   "second_half_result": 9,
+   "soccer_special": 239,
    "team_total": 127,
-   "total_goals": 647,
-   "tournament_advancement": 160,
-   "unknown": 95
+   "total_goals": 646,
+   "tournament_advancement": 160
   },
-  "contracts_discovered": 6534,
+  "contracts_discovered": 6530,
   "contracts_duplicate_seen": 0,
-  "contracts_unknown_family": 95,
+  "contracts_unknown_family": 0,
   "events_discovered": 17691,
   "milestones_note": "milestones type=soccer_tournament_multi_leg: 17860 rows, complete=True",
   "request_count": 3152,
   "retry_count": 0,
-  "run_id": "disc-20260927T230633Z-3639e9",
+  "run_id": "disc-20260927T232431Z-7e55f2",
   "series_ambiguous_unswept": 134,
   "series_ambiguous_unswept_tickers": [
    "KX1HOMEGAME",
@@ -251,18 +255,19 @@
   ],
   "series_by_ownership": {
    "ambiguous": 135,
-   "not_soccer": 12875,
+   "not_soccer": 12876,
    "soccer": 1388
   },
+  "series_skipped_fast_mode": 0,
   "series_swept": 1389,
-  "series_total": 14398
+  "series_total": 14399
  },
  "event_count": 17691,
  "events_sanity": {
-  "events_matching_a_market_event": 1050,
+  "events_matching_a_market_event": 1049,
   "events_not_in_swept_series": 0,
   "events_total": 17691,
-  "market_event_tickers": 1050,
+  "market_event_tickers": 1049,
   "market_event_tickers_without_event_row": 0
  },
  "example_tickers": {
@@ -288,7 +293,7 @@
   "BRASILEIROC|btts": "KXBRASILEIROCBTTS-26SEP27BRUARA-BTTS",
   "BRASILEIROC|handicap": "KXBRASILEIROCSPREAD-26SEP27BRUARA-ARA2",
   "BRASILEIROC|match_result_3way": "KXBRASILEIROCGAME-26OCT03FLOBFC-BFC",
-  "BRASILEIROC|total_goals": "KXBRASILEIROCTOTAL-26SEP27BRUARA-1",
+  "BRASILEIROC|total_goals": "KXBRASILEIROCTOTAL-26SEP27BRUARA-2",
   "BRASILEIRO|btts": "KXBRASILEIROBTTS-26OCT02SPASAN-BTTS",
   "BRASILEIRO|competition_top_n": "KXBRASILEIROTOPX-26TOP4-ATL",
   "BRASILEIRO|competition_winner": "KXBRASILEIRO-26-ATL",
@@ -318,11 +323,14 @@
   "CONCACAFNL|match_result_3way": "KXCONCACAFNLGAME-26OCT01AIAANT-AIA",
   "CONCACAFNL|total_goals": "KXCONCACAFNLTOTAL-26SEP27CUWNIC-1",
   "CONMEBOLLIB|competition_winner": "KXCONMEBOLLIB-26-CARC",
+  "CONMEBOLSUD|competition_winner": "KXCONMEBOLSUD-26-ATL",
   "COPAAMERICA|competition_host": "KXCOPAAMERICAHOST-28-ARGURGPAR",
   "COPAAMERICA|competition_winner": "KXCOPAAMERICA-28-ARG",
   "COPADELREY|competition_winner": "KXCOPADELREY-27-ALA",
   "COPADELREY|match_result_3way": "KXCOPADELREYGAME-26OCT03BAZATL-ATL",
+  "COPADELREY|match_winner_2way": "KXCOPADELREYADVANCE-26OCT03BAZATL-ATL",
   "COPADOBRASIL|competition_winner": "KXCOPADOBRASIL-26-ATL",
+  "DENSUPERLIGA|competition_winner": "KXDENSUPERLIGA-27-AGF",
   "DFBPOKAL|competition_winner": "KXDFBPOKAL-27-BMG",
   "DIMAYOR|btts": "KXDIMAYORBTTS-26SEP27CALADR-BTTS",
   "DIMAYOR|handicap": "KXDIMAYORSPREAD-26SEP27CALADR-ADR2",
@@ -338,7 +346,7 @@
   "EFL|competition_winner": "KXEFLCUP-27-ARS",
   "EKSTRAKLASA|competition_winner": "KXEKSTRAKLASA-27-CRA",
   "ENGNL|match_result_3way": "KXENGNLGAME-26SEP29BAASCU-BAA",
-  "EPL|competition_head_to_head": "KXEPLH2HFINISH-EPL27ARSTOT-ARS",
+  "EPL|competition_head_to_head": "KXEPLH2H-27ARSTOT-ARS",
   "EPL|competition_last_place": "KXEPLLAST-27-ARS",
   "EPL|competition_points_margin": "KXEPLPOINTMARGIN-27P-0T1",
   "EPL|competition_relegation": "KXEPLRELEGATION-27-ARS",
@@ -362,6 +370,7 @@
   "ISRNL|handicap": "KXISRNLSPREAD-26SEP28HKFMKJ-HKF2",
   "ISRNL|match_result_3way": "KXISRNLGAME-26OCT01ASHMHE-ASH",
   "ISRNL|total_goals": "KXISRNLTOTAL-26SEP28HKFMKJ-1",
+  "KLEAGUE|competition_winner": "KXKLEAGUE-26-ANY",
   "KNVB|competition_winner": "KXKNVBCUP-27-ADO",
   "LALIGA2|btts": "KXLALIGA2BTTS-26SEP28LEGCAS-BTTS",
   "LALIGA2|handicap": "KXLALIGA2SPREAD-26SEP28LEGCAS-CAS2",
@@ -376,7 +385,6 @@
   "LALIGA|match_result_3way": "KXLALIGAGAME-26OCT09MCFESP-ESP",
   "LALIGA|player_season_leader": "KXLALIGALEADER-27GOAL-ABUDIM17",
   "LIGAEXP|match_result_3way": "KXLIGAEXPGAME-26OCT02CLUVDS-CLU",
-  "LIGAMX1H|exact_score": "KXLIGAMX1HSCORE-26SEP27LEOJUA-LEO0JUA0",
   "LIGAMX2H|btts": "KXLIGAMX2HBTTS-26SEP27LEOJUA-BTTS",
   "LIGAMX2H|handicap": "KXLIGAMX2HSPREAD-26SEP27LEOJUA-JUA2",
   "LIGAMX2H|total_goals": "KXLIGAMX2HTOTAL-26SEP27LEOJUA-1",
@@ -385,6 +393,7 @@
   "LIGAMX|competition_winner": "KXLIGAMX-27APER-ALA",
   "LIGAMX|exact_score": "KXLIGAMXSCORE-26SEP27LEOJUA-LEO0JUA0",
   "LIGAMX|first_half_btts": "KXLIGAMX1HBTTS-26SEP27LEOJUA-BTTS",
+  "LIGAMX|first_half_exact_score": "KXLIGAMX1HSCORE-26SEP27LEOJUA-LEO0JUA0",
   "LIGAMX|first_half_handicap": "KXLIGAMX1HSPREAD-26SEP27LEOJUA-JUA2",
   "LIGAMX|first_half_result": "KXLIGAMX1H-26SEP27LEOJUA-JUA",
   "LIGAMX|first_half_total": "KXLIGAMX1HTOTAL-26SEP27LEOJUA-1",
@@ -392,6 +401,7 @@
   "LIGAMX|handicap": "KXLIGAMXSPREAD-26SEP27LEOJUA-JUA2",
   "LIGAMX|match_result_3way": "KXLIGAMXGAME-26OCT09PUELEO-LEO",
   "LIGAMX|player_season_leader": "KXLIGAMXLEADER-APER26GOAL-AAVILA9",
+  "LIGAMX|second_half_result": "KXLIGAMX2H-26SEP27LEOJUA-JUA",
   "LIGAMX|team_total": "KXLIGAMXTEAMTOTAL-26SEP27LEOJUA-JUA1",
   "LIGAMX|total_goals": "KXLIGAMXTOTAL-26SEP27LEOJUA-1",
   "LIGAPORTUGAL|competition_winner": "KXLIGAPORTUGAL-27-ACV",
@@ -403,7 +413,6 @@
   "LIGUE1|competition_winner": "KXLIGUE1-27-ANG",
   "LIGUE1|match_result_3way": "KXLIGUE1GAME-26OCT09RCLOL-OL",
   "LIGUE1|player_season_leader": "KXLIGUE1LEADER-27GOAL-AFATI31",
-  "MLS1H|exact_score": "KXMLS1HSCORE-26SEP27CLBMIA-CLB0MIA0",
   "MLS2H|btts": "KXMLS2HBTTS-26SEP27CLBMIA-BTTS",
   "MLS2H|handicap": "KXMLS2HSPREAD-26SEP27CLBMIA-CLB2",
   "MLS2H|total_goals": "KXMLS2HTOTAL-26SEP27CLBMIA-1",
@@ -413,6 +422,7 @@
   "MLS|competition_winner": "KXMLSCUP-26-ATL",
   "MLS|exact_score": "KXMLSSCORE-26SEP27CLBMIA-CLB0MIA0",
   "MLS|first_half_btts": "KXMLS1HBTTS-26SEP27CLBMIA-BTTS",
+  "MLS|first_half_exact_score": "KXMLS1HSCORE-26SEP27CLBMIA-CLB0MIA0",
   "MLS|first_half_handicap": "KXMLS1HSPREAD-26SEP27CLBMIA-CLB2",
   "MLS|first_half_result": "KXMLS1H-26SEP27CLBMIA-CLB",
   "MLS|first_half_total": "KXMLS1HTOTAL-26SEP27CLBMIA-1",
@@ -420,6 +430,7 @@
   "MLS|handicap": "KXMLSSPREAD-26OCT01SEASKC-SEA2",
   "MLS|match_result_3way": "KXMLSGAME-26OCT01SEASKC-SEA",
   "MLS|player_season_leader": "KXMLSLEADER-26GOAL-AGRIEZ7",
+  "MLS|second_half_result": "KXMLS2H-26SEP27CLBMIA-CLB",
   "MLS|team_total": "KXMLSTEAMTOTAL-26SEP27CLBMIA-CLB1",
   "MLS|total_goals": "KXMLSTOTAL-26OCT01SEASKC-1",
   "NWSL|btts": "KXNWSLBTTS-26SEP27URONCC-BTTS",
@@ -430,8 +441,8 @@
   "None|competition_host": "KXCLUBWCHOST-2029-AUSNZL",
   "None|competition_trophies": "KXSOCCERTROPHIES-27ARS-1",
   "None|player_award": "KXBALLONDOR-26-BFER",
+  "None|season_player_total": "KXWCCAREERGOALS-KMBAPPE-30",
   "None|soccer_special": "KXCLUBCHANGEMBAPPE-27-MBA",
-  "None|unknown": "KXCONMEBOLSUD-26-ATL",
   "PERLIGA1|competition_winner": "KXPERLIGA1-26-AAT",
   "PERLIGA1|match_result_3way": "KXPERLIGA1GAME-26SEP30CIECHA-CHA",
   "PREMIERLEAGUE|competition_winner": "KXPREMIERLEAGUE-27-ARS",
@@ -443,12 +454,14 @@
   "SERIEA|competition_winner": "KXSERIEA-27-ACM",
   "SERIEA|match_result_3way": "KXSERIEAGAME-26OCT10GENFIO-FIO",
   "SERIEA|player_season_leader": "KXSERIEALEADER-27GOAL-ABONNY14",
+  "SOCCER|competition_trophies": "KXSOCCERTREBLE-27ARS-DOM",
   "SUPERLIG|competition_winner": "KXSUPERLIG-27-ALA",
   "SVK2L|btts": "KXSVK2LBTTS-26SEP28ZIBHUM-BTTS",
   "SVK2L|handicap": "KXSVK2LSPREAD-26SEP28ZIBHUM-HUM2",
   "SVK2L|match_result_3way": "KXSVK2LGAME-26SEP28ZIBHUM-HUM",
   "SVK2L|total_goals": "KXSVK2LTOTAL-26SEP28ZIBHUM-1",
   "SVKCUP|match_result_3way": "KXSVKCUPGAME-26SEP29BRAZEP-BRA",
+  "SVKCUP|match_winner_2way": "KXSVKCUPADVANCE-26SEP29BRAZEP-BRA",
   "TACAPORT|competition_winner": "KXTACAPORT-27-ACV",
   "THAIL1|competition_winner": "KXTHAIL1-27-AYU",
   "UCLLEAGUE|competition_winner": "KXUCLLEAGUE-27-AUT",
@@ -483,6 +496,7 @@
   "URYPD|match_result_3way": "KXURYPDGAME-26SEP28WANALB-ALB",
   "URYPD|total_goals": "KXURYPDTOTAL-26SEP28WANALB-1",
   "USLCUP|match_result_3way": "KXUSLCUPGAME-26OCT04HARLFC-HAR",
+  "USLCUP|match_winner_2way": "KXUSLCUPADVANCE-26OCT04HARLFC-HAR",
   "USL|btts": "KXUSLBTTS-26SEP30BRODET-BTTS",
   "USL|competition_winner": "KXUSL-26-BIR",
   "USL|handicap": "KXUSLSPREAD-26SEP30BRODET-BRO2",
@@ -499,9 +513,9 @@
   "?": {
    "competition_host": 9,
    "competition_trophies": 30,
-   "player_award": 167,
-   "soccer_special": 211,
-   "unknown": 95
+   "player_award": 168,
+   "season_player_total": 3,
+   "soccer_special": 239
   },
   "APFDDH": {
    "btts": 2,
@@ -543,8 +557,8 @@
   "BRASILEIROC": {
    "btts": 1,
    "handicap": 4,
-   "match_result_3way": 15,
-   "total_goals": 7
+   "match_result_3way": 12,
+   "total_goals": 6
   },
   "BUNDESLIGA": {
    "competition_last_place": 18,
@@ -585,16 +599,23 @@
   "CONMEBOLLIB": {
    "competition_winner": 16
   },
+  "CONMEBOLSUD": {
+   "competition_winner": 8
+  },
   "COPAAMERICA": {
    "competition_host": 3,
    "competition_winner": 22
   },
   "COPADELREY": {
    "competition_winner": 23,
-   "match_result_3way": 15
+   "match_result_3way": 15,
+   "match_winner_2way": 10
   },
   "COPADOBRASIL": {
    "competition_winner": 16
+  },
+  "DENSUPERLIGA": {
+   "competition_winner": 12
   },
   "DFBPOKAL": {
    "competition_winner": 21
@@ -628,7 +649,7 @@
    "match_result_3way": 36
   },
   "EPL": {
-   "competition_head_to_head": 14,
+   "competition_head_to_head": 20,
    "competition_last_place": 20,
    "competition_points_margin": 6,
    "competition_relegation": 20,
@@ -663,6 +684,9 @@
    "match_result_3way": 36,
    "total_goals": 24
   },
+  "KLEAGUE": {
+   "competition_winner": 12
+  },
   "KNVB": {
    "competition_winner": 21
   },
@@ -691,6 +715,7 @@
    "competition_winner": 36,
    "exact_score": 60,
    "first_half_btts": 2,
+   "first_half_exact_score": 30,
    "first_half_handicap": 4,
    "first_half_result": 6,
    "first_half_total": 6,
@@ -698,11 +723,9 @@
    "handicap": 8,
    "match_result_3way": 30,
    "player_season_leader": 16,
+   "second_half_result": 6,
    "team_total": 12,
    "total_goals": 12
-  },
-  "LIGAMX1H": {
-   "exact_score": 30
   },
   "LIGAMX2H": {
    "btts": 2,
@@ -727,6 +750,7 @@
    "competition_winner": 30,
    "exact_score": 30,
    "first_half_btts": 1,
+   "first_half_exact_score": 15,
    "first_half_handicap": 2,
    "first_half_result": 3,
    "first_half_total": 3,
@@ -734,11 +758,9 @@
    "handicap": 12,
    "match_result_3way": 57,
    "player_season_leader": 17,
+   "second_half_result": 3,
    "team_total": 7,
    "total_goals": 19
-  },
-  "MLS1H": {
-   "exact_score": 15
   },
   "MLS2H": {
    "btts": 1,
@@ -775,6 +797,9 @@
    "match_result_3way": 24,
    "player_season_leader": 20
   },
+  "SOCCER": {
+   "competition_trophies": 2
+  },
   "SUPERLIG": {
    "competition_winner": 18
   },
@@ -785,7 +810,8 @@
    "total_goals": 6
   },
   "SVKCUP": {
-   "match_result_3way": 3
+   "match_result_3way": 3,
+   "match_winner_2way": 2
   },
   "TACAPORT": {
    "competition_winner": 20
@@ -850,7 +876,8 @@
    "total_goals": 12
   },
   "USLCUP": {
-   "match_result_3way": 3
+   "match_result_3way": 3,
+   "match_winner_2way": 2
   },
   "VENFUTVE": {
    "competition_winner": 14
@@ -875,11 +902,11 @@
   },
   "competition_head_to_head": {
    "floor_strike": null,
-   "rules_primary": "If Arsenal finishes higher in the final league table than Tottenham in the 2026-27 EPL season, then the market resolves to Yes.",
+   "rules_primary": "If Arsenal wins both regular-season league matches against Tottenham in the 2026-27 EPL season, then the market resolves to Yes.",
    "status": "active",
-   "ticker": "KXEPLH2HFINISH-EPL27ARSTOT-ARS",
-   "title": "Will Arsenal finish higher than Tottenham in the 2026-27 EPL final table?",
-   "yes_sub_title": "Arsenal finishes higher than Tottenham"
+   "ticker": "KXEPLH2H-27ARSTOT-ARS",
+   "title": "Will Arsenal win both 2026-27 EPL matches against Tottenham?",
+   "yes_sub_title": "Arsenal wins both matches"
   },
   "competition_host": {
    "floor_strike": null,
@@ -946,12 +973,12 @@
    "yes_sub_title": "Atletico Mineiro"
   },
   "competition_trophies": {
-   "floor_strike": 1,
-   "rules_primary": "If Arsenal wins 1+ trophies across the Premier League, FA Cup, League Cup, and the Champions League in the 2026-27 season, then the market resolves to Yes.",
+   "floor_strike": null,
+   "rules_primary": "If Arsenal wins the domestic treble by winning all three qualifying competitions: Premier League, FA Cup, and Carabao Cup in the 2026-27 season, then the market resolves to Yes.",
    "status": "active",
-   "ticker": "KXSOCCERTROPHIES-27ARS-1",
-   "title": "Will Arsenal win at least 1 trophy in the 2026-27 season?",
-   "yes_sub_title": "1+ Trophies"
+   "ticker": "KXSOCCERTREBLE-27ARS-DOM",
+   "title": "Will Arsenal win the domestic treble in the 2026-27 season?",
+   "yes_sub_title": "Arsenal wins the domestic treble"
   },
   "competition_winner": {
    "floor_strike": null,
@@ -963,11 +990,11 @@
   },
   "exact_score": {
    "floor_strike": null,
-   "rules_primary": "If the score at the end of the 1st Half is Club Leon 0, FC Juarez 0 in the Club Leon vs FC Juarez professional Liga MX soccer game originally scheduled for Sep 27, 2026, then the market resolves to Yes.",
+   "rules_primary": "If the result is a 0-0 draw in the Club Leon vs FC Juarez professional Liga MX soccer game originally scheduled for Sep 27, 2026 after 90 minutes plus stoppage time (does not include extra time or penalties), then the market resolves to Yes.",
    "status": "active",
-   "ticker": "KXLIGAMX1HSCORE-26SEP27LEOJUA-LEO0JUA0",
-   "title": "Will the 1st half score be Draw 0-0?",
-   "yes_sub_title": "Draw 1H 0-0"
+   "ticker": "KXLIGAMXSCORE-26SEP27LEOJUA-LEO0JUA0",
+   "title": "Final score Draw 0-0?",
+   "yes_sub_title": "Draw 0-0"
   },
   "first_half_btts": {
    "floor_strike": null,
@@ -976,6 +1003,14 @@
    "ticker": "KXBRASILEIROB1HBTTS-26SEP28AMGJUV-BTTS",
    "title": "Both teams score in the 1st Half?",
    "yes_sub_title": "1st Half: Both Teams To Score"
+  },
+  "first_half_exact_score": {
+   "floor_strike": null,
+   "rules_primary": "If the score at the end of the 1st Half is Club Leon 0, FC Juarez 0 in the Club Leon vs FC Juarez professional Liga MX soccer game originally scheduled for Sep 27, 2026, then the market resolves to Yes.",
+   "status": "active",
+   "ticker": "KXLIGAMX1HSCORE-26SEP27LEOJUA-LEO0JUA0",
+   "title": "Will the 1st half score be Draw 0-0?",
+   "yes_sub_title": "Draw 1H 0-0"
   },
   "first_half_handicap": {
    "floor_strike": 1.5,
@@ -1025,6 +1060,14 @@
    "title": "Libertad wins",
    "yes_sub_title": "Libertad"
   },
+  "match_winner_2way": {
+   "floor_strike": null,
+   "rules_primary": "If Atletico Calatayud advance past CD Baztan in the CD Baztan vs Atletico Calatayud soccer tie in the Preliminary Round of the Copa del Rey, then the market resolves to Yes.",
+   "status": "active",
+   "ticker": "KXCOPADELREYADVANCE-26OCT03BAZATL-ATL",
+   "title": "Atletico Calatayud To Advance",
+   "yes_sub_title": "Atletico Calatayud advances"
+  },
   "player_award": {
    "floor_strike": null,
    "rules_primary": "If Bruno Fernandes wins the Ballon d'Or in 2026, then the market resolves to Yes.",
@@ -1048,6 +1091,14 @@
    "ticker": "KXEPLSEASONSTAT-27GOAL-AISAK9-16",
    "title": "Will Alexander Isak record 16+ goals during the 2026-27 EPL season?",
    "yes_sub_title": "Alexander Isak: 16+"
+  },
+  "second_half_result": {
+   "floor_strike": null,
+   "rules_primary": "If Juarez is the winner of the second half in the Leon vs Juarez professional Liga MX soccer game originally scheduled for Sep 27, 2026 after 45 minutes plus stoppage time, then the market resolves to Yes.",
+   "status": "active",
+   "ticker": "KXLIGAMX2H-26SEP27LEOJUA-JUA",
+   "title": "Juarez wins 2nd Half",
+   "yes_sub_title": "Juarez wins 2nd Half"
   },
   "soccer_special": {
    "floor_strike": null,
@@ -1082,12 +1133,12 @@
    "yes_sub_title": "AEK Athens"
   }
  },
- "finished_at": "2026-09-27T23:19:42.305981Z",
- "market_count": 6534,
+ "finished_at": "2026-09-27T23:37:39.975558Z",
+ "market_count": 6530,
  "market_status_histogram": {
-  "active": 6534
+  "active": 6530
  },
- "run_id": "disc-20260927T230633Z-3639e9",
+ "run_id": "disc-20260927T232431Z-7e55f2",
  "series": [
   {
    "fee_multiplier": "1",
@@ -17816,348 +17867,261 @@
    "title": "Walter Peyton Man of the Year"
   }
  ],
- "unknown_body_histogram": {
-  "CONMEBOLSUD": {
-   "example_ticker": "KXCONMEBOLSUD-26-ATL",
-   "example_title": "Will Atl\u00e9tico Mineiro win the 2026 CONMEBOL Sudamericana?",
-   "example_yes_sub_title": "Atl\u00e9tico Mineiro",
-   "n": 8,
-   "rules_primary": "If Atl\u00e9tico Mineiro is the 2026 CONMEBOL Sudamericana champion, then the market resolves to Yes."
-  },
-  "COPADELREYADVANCE": {
-   "example_ticker": "KXCOPADELREYADVANCE-26OCT03BAZATL-ATL",
-   "example_title": "Atletico Calatayud To Advance",
-   "example_yes_sub_title": "Atletico Calatayud advances",
-   "n": 10,
-   "rules_primary": "If Atletico Calatayud advance past CD Baztan in the CD Baztan vs Atletico Calatayud soccer tie in the Preliminary Round of the Copa del Rey, then the market resolves to Yes."
-  },
-  "DENSUPERLIGA": {
-   "example_ticker": "KXDENSUPERLIGA-27-AGF",
-   "example_title": "Will Aarhus win the Danish Superliga?",
-   "example_yes_sub_title": "Aarhus",
-   "n": 12,
-   "rules_primary": "If Aarhus is the 2026-27 Danish Superliga Champion, then the market resolves to Yes."
-  },
-  "EPLH2H": {
-   "example_ticker": "KXEPLH2H-27ARSTOT-ARS",
-   "example_title": "Will Arsenal win both 2026-27 EPL matches against Tottenham?",
-   "example_yes_sub_title": "Arsenal wins both matches",
-   "n": 6,
-   "rules_primary": "If Arsenal wins both regular-season league matches against Tottenham in the 2026-27 EPL season, then the market resolves to Yes."
-  },
-  "HKANEKNIGHT": {
-   "example_ticker": "KXHKANEKNIGHT-26-YES",
-   "example_title": "Will Harry Kane be Knighted in 2026?",
-   "example_yes_sub_title": "Harry Kane Knighted in 2026",
-   "n": 1,
-   "rules_primary": "If Harry Kane is confirmed to have been knighted by any of the Source Agencies after Issuance and before Jan 1, 2027, then the market resolves to Yes."
-  },
-  "JOINLEAGUE": {
-   "example_ticker": "KXJOINLEAGUE-26OCT02DALABA-BUND",
-   "example_title": "Where will David Alaba go next?",
-   "example_yes_sub_title": "Any Bundesliga Club",
-   "n": 8,
-   "rules_primary": "If David Alaba's next club is any Bundesliga club before Oct 2, 2026, then the market resolves to Yes."
-  },
-  "JOINRONALDO": {
-   "example_ticker": "KXJOINRONALDO-27-BOT",
-   "example_title": "Where will Cristiano Ronaldo go next?",
-   "example_yes_sub_title": "Botafogo",
-   "n": 11,
-   "rules_primary": "If the next club that Cristiano Ronaldo joins is Botafogo before Sep 2, 2027, then the market resolves to Yes."
-  },
-  "KLEAGUE": {
-   "example_ticker": "KXKLEAGUE-26-ANY",
-   "example_title": "Will FC Anyang win the Korea K League 1?",
-   "example_yes_sub_title": "FC Anyang",
-   "n": 12,
-   "rules_primary": "If FC Anyang is the 2026 Korea K League 1 champion, then the market resolves to Yes."
-  },
-  "LAMINEYAMAL": {
-   "example_ticker": "KXLAMINEYAMAL-27-LYAM",
-   "example_title": "Will Lamine Yamal leave Barcelona before 2027?",
-   "example_yes_sub_title": "Lamine Yamal",
-   "n": 1,
-   "rules_primary": "If Lamine Yamal transfers out of Barcelona before Jan 1, 2027, then the market resolves to Yes."
-  },
-  "LIGAMX2H": {
-   "example_ticker": "KXLIGAMX2H-26SEP27LEOJUA-JUA",
-   "example_title": "Juarez wins 2nd Half",
-   "example_yes_sub_title": "Juarez wins 2nd Half",
-   "n": 6,
-   "rules_primary": "If Juarez is the winner of the second half in the Leon vs Juarez professional Liga MX soccer game originally scheduled for Sep 27, 2026 after 45 minutes plus stoppage time, then the market resolves to Yes."
-  },
-  "MANAGEROUTDATE": {
-   "example_ticker": "KXMANAGEROUTDATE-28TUCHEL-27JAN01",
-   "example_title": "Will Thomas Tuchel be out before Jan 1, 2027?",
-   "example_yes_sub_title": "Out before Jan 1, 2027",
-   "n": 4,
-   "rules_primary": "If Thomas Tuchel ceases to be the manager of England National Football Team before Jan 1, 2027, then the market resolves to Yes."
-  },
-  "MLS2H": {
-   "example_ticker": "KXMLS2H-26SEP27CLBMIA-CLB",
-   "example_title": "Columbus wins 2nd Half",
-   "example_yes_sub_title": "Columbus wins 2nd Half",
-   "n": 3,
-   "rules_primary": "If Columbus is the winner of the second half in the Columbus vs Miami professional MLS soccer game originally scheduled for Sep 27, 2026 after 45 minutes plus stoppage time, then the market resolves to Yes."
-  },
-  "POCHETTINOOUT": {
-   "example_ticker": "KXPOCHETTINOOUT-30-Y",
-   "example_title": "Will Mauricio Pochettino leave as manager of the US Men's National Team before the start date of the 2030 Men's FIFA World Cup main tourname",
-   "example_yes_sub_title": "Mauricio Pochettino out before 2030 World Cup",
-   "n": 1,
-   "rules_primary": "If Mauricio Pochettino leaves his role as the Manager of the US Men's National Team before the start date of the 2030 Men's FIFA World Cup main tournament, then the market resolves to Yes."
-  },
-  "SOCCERTREBLE": {
-   "example_ticker": "KXSOCCERTREBLE-27ARS-DOM",
-   "example_title": "Will Arsenal win the domestic treble in the 2026-27 season?",
-   "example_yes_sub_title": "Arsenal wins the domestic treble",
-   "n": 2,
-   "rules_primary": "If Arsenal wins the domestic treble by winning all three qualifying competitions: Premier League, FA Cup, and Carabao Cup in the 2026-27 season, then the market resolves to Yes."
-  },
-  "SUPERBALLONDOR": {
-   "example_ticker": "KXSUPERBALLONDOR-30-YES",
-   "example_title": "Will a Super Ballon d'Or be awarded before 2030?",
-   "example_yes_sub_title": "Super Ballon d'Or awarded",
-   "n": 1,
-   "rules_primary": "If any person is awarded a Super Ballon d'Or before Jan 1, 2030, then the market resolves to Yes."
-  },
-  "SVKCUPADVANCE": {
-   "example_ticker": "KXSVKCUPADVANCE-26SEP29BRAZEP-BRA",
-   "example_title": "Inter Bratislava To Advance",
-   "example_yes_sub_title": "Inter Bratislava advances",
-   "n": 2,
-   "rules_primary": "If Inter Bratislava advance past Podbrezova in the Inter Bratislava vs Podbrezova soccer tie in the Round 4 of the Slovakian Cup, then the market resolves to Yes."
-  },
-  "USLCUPADVANCE": {
-   "example_ticker": "KXUSLCUPADVANCE-26OCT04HARLFC-HAR",
-   "example_title": "Hartford Athletic To Advance",
-   "example_yes_sub_title": "Hartford Athletic advances",
-   "n": 2,
-   "rules_primary": "If Hartford Athletic advance past Louisville City in the Hartford Athletic vs Louisville City soccer tie in the Final of the USL Cup and lift the cup, then the market resolves to Yes."
-  },
-  "WCCAREERGOALS": {
-   "example_ticker": "KXWCCAREERGOALS-KMBAPPE-30",
-   "example_title": "Will Kylian Mbappe score at least 30 goals in the World Cup in his career?",
-   "example_yes_sub_title": "30+ Goals Scored",
-   "n": 3,
-   "rules_primary": "If Kylian Mbappe scores at least 30 goals in FIFA World Cup Tournament games during his career, then the market resolves to Yes."
-  },
-  "WCTEAMS": {
-   "example_ticker": "KXWCTEAMS-2030-YES",
-   "example_title": "Will there be 64 teams in the 2030 World Cup Tournament?",
-   "example_yes_sub_title": "64 teams in the 2030 Men's World Cup field",
-   "n": 1,
-   "rules_primary": "If the 2030 Men's World Cup tournament will have a field of 64 teams for the main tournament and is confirmed by any of the Source Agencies, then the market resolves to Yes."
-  },
-  "WINSTREAKMANU": {
-   "example_ticker": "KXWINSTREAKMANU-27-5",
-   "example_title": "Will Manchester United men's soccer win at least 5 games in a row this year?",
-   "example_yes_sub_title": "5+ wins in a row",
-   "n": 1,
-   "rules_primary": "If Manchester United win at least 5 games in a row across all competitions in the year 2026, then the market resolves to Yes."
-  }
- },
- "unknown_examples": [
-  {
-   "rationale": "unknown competition/family token in 'CONMEBOLSUD'",
-   "ticker": "KXCONMEBOLSUD-26-ATL"
-  },
-  {
-   "rationale": "unknown competition/family token in 'CONMEBOLSUD'",
-   "ticker": "KXCONMEBOLSUD-26-BOC"
-  },
-  {
-   "rationale": "unknown competition/family token in 'CONMEBOLSUD'",
-   "ticker": "KXCONMEBOLSUD-26-CIE"
-  },
-  {
-   "rationale": "unknown competition/family token in 'CONMEBOLSUD'",
-   "ticker": "KXCONMEBOLSUD-26-SAN"
-  },
-  {
-   "rationale": "unknown competition/family token in 'CONMEBOLSUD'",
-   "ticker": "KXCONMEBOLSUD-26-SFE"
-  },
-  {
-   "rationale": "unknown competition/family token in 'CONMEBOLSUD'",
-   "ticker": "KXCONMEBOLSUD-26-SPA"
-  },
-  {
-   "rationale": "unknown competition/family token in 'CONMEBOLSUD'",
-   "ticker": "KXCONMEBOLSUD-26-TOR"
-  },
-  {
-   "rationale": "unknown competition/family token in 'CONMEBOLSUD'",
-   "ticker": "KXCONMEBOLSUD-26-VDG"
-  },
-  {
-   "rationale": "unknown competition/family token in 'COPADELREYADVANCE'",
-   "ticker": "KXCOPADELREYADVANCE-26OCT03BAZATL-ATL"
-  },
-  {
-   "rationale": "unknown competition/family token in 'COPADELREYADVANCE'",
-   "ticker": "KXCOPADELREYADVANCE-26OCT03BAZATL-BAZ"
-  },
-  {
-   "rationale": "unknown competition/family token in 'COPADELREYADVANCE'",
-   "ticker": "KXCOPADELREYADVANCE-26OCT03CEULEB-CEU"
-  },
-  {
-   "rationale": "unknown competition/family token in 'COPADELREYADVANCE'",
-   "ticker": "KXCOPADELREYADVANCE-26OCT03CEULEB-LEB"
-  },
-  {
-   "rationale": "unknown competition/family token in 'COPADELREYADVANCE'",
-   "ticker": "KXCOPADELREYADVANCE-26OCT03TEDANA-ANA"
-  },
-  {
-   "rationale": "unknown competition/family token in 'COPADELREYADVANCE'",
-   "ticker": "KXCOPADELREYADVANCE-26OCT03TEDANA-TED"
-  },
-  {
-   "rationale": "unknown competition/family token in 'COPADELREYADVANCE'",
-   "ticker": "KXCOPADELREYADVANCE-26OCT04ATLUNI-ATL"
-  },
-  {
-   "rationale": "unknown competition/family token in 'COPADELREYADVANCE'",
-   "ticker": "KXCOPADELREYADVANCE-26OCT04ATLUNI-UNI"
-  },
-  {
-   "rationale": "unknown competition/family token in 'COPADELREYADVANCE'",
-   "ticker": "KXCOPADELREYADVANCE-26OCT04NOJRIB-NOJ"
-  },
-  {
-   "rationale": "unknown competition/family token in 'COPADELREYADVANCE'",
-   "ticker": "KXCOPADELREYADVANCE-26OCT04NOJRIB-RIB"
-  },
-  {
-   "rationale": "unknown competition/family token in 'DENSUPERLIGA'",
-   "ticker": "KXDENSUPERLIGA-27-AGF"
-  },
-  {
-   "rationale": "unknown competition/family token in 'DENSUPERLIGA'",
-   "ticker": "KXDENSUPERLIGA-27-BRO"
-  },
-  {
-   "rationale": "unknown competition/family token in 'DENSUPERLIGA'",
-   "ticker": "KXDENSUPERLIGA-27-FCC"
-  },
-  {
-   "rationale": "unknown competition/family token in 'DENSUPERLIGA'",
-   "ticker": "KXDENSUPERLIGA-27-FCM"
-  },
-  {
-   "rationale": "unknown competition/family token in 'DENSUPERLIGA'",
-   "ticker": "KXDENSUPERLIGA-27-HOR"
-  },
-  {
-   "rationale": "unknown competition/family token in 'DENSUPERLIGA'",
-   "ticker": "KXDENSUPERLIGA-27-LBY"
-  },
-  {
-   "rationale": "unknown competition/family token in 'DENSUPERLIGA'",
-   "ticker": "KXDENSUPERLIGA-27-NJA"
-  },
-  {
-   "rationale": "unknown competition/family token in 'DENSUPERLIGA'",
-   "ticker": "KXDENSUPERLIGA-27-OBK"
-  },
-  {
-   "rationale": "unknown competition/family token in 'DENSUPERLIGA'",
-   "ticker": "KXDENSUPERLIGA-27-RAN"
-  },
-  {
-   "rationale": "unknown competition/family token in 'DENSUPERLIGA'",
-   "ticker": "KXDENSUPERLIGA-27-SIL"
-  },
-  {
-   "rationale": "unknown competition/family token in 'DENSUPERLIGA'",
-   "ticker": "KXDENSUPERLIGA-27-SON"
-  },
-  {
-   "rationale": "unknown competition/family token in 'DENSUPERLIGA'",
-   "ticker": "KXDENSUPERLIGA-27-VIB"
-  },
-  {
-   "rationale": "unknown competition/family token in 'EPLH2H'",
-   "ticker": "KXEPLH2H-27ARSTOT-ARS"
-  },
-  {
-   "rationale": "unknown competition/family token in 'EPLH2H'",
-   "ticker": "KXEPLH2H-27ARSTOT-ARSDRAW"
-  },
-  {
-   "rationale": "unknown competition/family token in 'EPLH2H'",
-   "ticker": "KXEPLH2H-27ARSTOT-DRAWS"
-  },
-  {
-   "rationale": "unknown competition/family token in 'EPLH2H'",
-   "ticker": "KXEPLH2H-27ARSTOT-SPLIT"
-  },
-  {
-   "rationale": "unknown competition/family token in 'EPLH2H'",
-   "ticker": "KXEPLH2H-27ARSTOT-TOT"
-  },
-  {
-   "rationale": "unknown competition/family token in 'EPLH2H'",
-   "ticker": "KXEPLH2H-27ARSTOT-TOTDRAW"
-  },
-  {
-   "rationale": "unknown competition/family token in 'HKANEKNIGHT'",
-   "ticker": "KXHKANEKNIGHT-26-YES"
-  },
-  {
-   "rationale": "unknown competition/family token in 'JOINLEAGUE'",
-   "ticker": "KXJOINLEAGUE-26OCT02DALABA-BUND"
-  },
-  {
-   "rationale": "unknown competition/family token in 'JOINLEAGUE'",
-   "ticker": "KXJOINLEAGUE-26OCT02DALABA-EPL"
-  },
-  {
-   "rationale": "unknown competition/family token in 'JOINLEAGUE'",
-   "ticker": "KXJOINLEAGUE-26OCT02DALABA-LALIGA"
-  },
-  {
-   "rationale": "unknown competition/family token in 'JOINLEAGUE'",
-   "ticker": "KXJOINLEAGUE-26OCT02DALABA-LIGUE1"
-  },
-  {
-   "rationale": "unknown competition/family token in 'JOINLEAGUE'",
-   "ticker": "KXJOINLEAGUE-26OCT02DALABA-MLS"
-  },
-  {
-   "rationale": "unknown competition/family token in 'JOINLEAGUE'",
-   "ticker": "KXJOINLEAGUE-26OCT02DALABA-SAUDI"
-  },
-  {
-   "rationale": "unknown competition/family token in 'JOINLEAGUE'",
-   "ticker": "KXJOINLEAGUE-26OCT02DALABA-SERIEA"
-  },
-  {
-   "rationale": "unknown competition/family token in 'JOINLEAGUE'",
-   "ticker": "KXJOINLEAGUE-26OCT02DALABA-SLIG"
-  },
-  {
-   "rationale": "unknown competition/family token in 'JOINRONALDO'",
-   "ticker": "KXJOINRONALDO-27-BOT"
-  },
-  {
-   "rationale": "unknown competition/family token in 'JOINRONALDO'",
-   "ticker": "KXJOINRONALDO-27-GS"
-  },
-  {
-   "rationale": "unknown competition/family token in 'JOINRONALDO'",
-   "ticker": "KXJOINRONALDO-27-HIL"
-  },
-  {
-   "rationale": "unknown competition/family token in 'JOINRONALDO'",
-   "ticker": "KXJOINRONALDO-27-LA"
-  },
-  {
-   "rationale": "unknown competition/family token in 'JOINRONALDO'",
-   "ticker": "KXJOINRONALDO-27-MCI"
-  }
- ]
+ "series_with_markets": [
+  "KXAPFDDH",
+  "KXAPFDDHBTTS",
+  "KXAPFDDHGAME",
+  "KXAPFDDHSPREAD",
+  "KXAPFDDHTOTAL",
+  "KXARGNACBBTTS",
+  "KXARGNACBGAME",
+  "KXARGNACBSPREAD",
+  "KXARGNACBTOTAL",
+  "KXARGPREMDIV",
+  "KXBALLONDOR",
+  "KXBALLONDORAWARD",
+  "KXBALLONDORRANK",
+  "KXBELGIANPL",
+  "KXBRASILEIRO",
+  "KXBRASILEIROB1H",
+  "KXBRASILEIROB1HBTTS",
+  "KXBRASILEIROB1HSPREAD",
+  "KXBRASILEIROB1HTOTAL",
+  "KXBRASILEIROBBTTS",
+  "KXBRASILEIROBGAME",
+  "KXBRASILEIROBSPREAD",
+  "KXBRASILEIROBTOTAL",
+  "KXBRASILEIROBTTS",
+  "KXBRASILEIROCBTTS",
+  "KXBRASILEIROCGAME",
+  "KXBRASILEIROCSPREAD",
+  "KXBRASILEIROCTOTAL",
+  "KXBRASILEIROGAME",
+  "KXBRASILEIROSPREAD",
+  "KXBRASILEIROTOPX",
+  "KXBRASILEIROTOTAL",
+  "KXBUNDESLIGA",
+  "KXBUNDESLIGAGAME",
+  "KXBUNDESLIGALAST",
+  "KXBUNDESLIGALEADER",
+  "KXBUNDESLIGAPOINTMARGIN",
+  "KXBUNDESLIGARELEGATION",
+  "KXBUNDESLIGATEAMPOINTS",
+  "KXBUNDESLIGATOP",
+  "KXCANPLGAME",
+  "KXCHLLDP",
+  "KXCHNL1GAME",
+  "KXCHNSL",
+  "KXCLUBCHANGEMBAPPE",
+  "KXCLUBWCHOST",
+  "KXCONCACAFGC",
+  "KXCONCACAFNL",
+  "KXCONCACAFNL1H",
+  "KXCONCACAFNL1HBTTS",
+  "KXCONCACAFNL1HSPREAD",
+  "KXCONCACAFNL1HTOTAL",
+  "KXCONCACAFNLBTTS",
+  "KXCONCACAFNLGAME",
+  "KXCONCACAFNLSPREAD",
+  "KXCONCACAFNLTOTAL",
+  "KXCONMEBOLLIB",
+  "KXCONMEBOLSUD",
+  "KXCOPAAMERICA",
+  "KXCOPAAMERICAHOST",
+  "KXCOPADELREY",
+  "KXCOPADELREYADVANCE",
+  "KXCOPADELREYGAME",
+  "KXCOPADOBRASIL",
+  "KXDENSUPERLIGA",
+  "KXDFBPOKAL",
+  "KXDIMAYORBTTS",
+  "KXDIMAYORGAME",
+  "KXDIMAYORSPREAD",
+  "KXDIMAYORTOTAL",
+  "KXECULP",
+  "KXEFLCHAMPIONSHIP",
+  "KXEFLCUP",
+  "KXEFLL1BTTS",
+  "KXEFLL1GAME",
+  "KXEFLL1SPREAD",
+  "KXEFLL1TOTAL",
+  "KXEFLPROMO",
+  "KXEKSTRAKLASA",
+  "KXENGNLGAME",
+  "KXEPLGAME",
+  "KXEPLH2H",
+  "KXEPLH2HFINISH",
+  "KXEPLLAST",
+  "KXEPLLEADER",
+  "KXEPLPOINTMARGIN",
+  "KXEPLRELEGATION",
+  "KXEPLSEASONSTAT",
+  "KXEPLTEAMPOINTS",
+  "KXEPLTOP",
+  "KXEREDIVISIE",
+  "KXFACUP",
+  "KXFIFALEAVE",
+  "KXFIFAWGAME",
+  "KXHKANEKNIGHT",
+  "KXINTLFRIENDLY1H",
+  "KXINTLFRIENDLY1HBTTS",
+  "KXINTLFRIENDLY1HSPREAD",
+  "KXINTLFRIENDLY1HTOTAL",
+  "KXINTLFRIENDLYBTTS",
+  "KXINTLFRIENDLYGAME",
+  "KXINTLFRIENDLYSPREAD",
+  "KXINTLFRIENDLYTOTAL",
+  "KXISRNLBTTS",
+  "KXISRNLGAME",
+  "KXISRNLSPREAD",
+  "KXISRNLTOTAL",
+  "KXJOINCLUB",
+  "KXJOINLEAGUE",
+  "KXJOINRONALDO",
+  "KXKLEAGUE",
+  "KXKNVBCUP",
+  "KXLALIGA",
+  "KXLALIGA2BTTS",
+  "KXLALIGA2GAME",
+  "KXLALIGA2SPREAD",
+  "KXLALIGA2TOTAL",
+  "KXLALIGAGAME",
+  "KXLALIGALAST",
+  "KXLALIGALEADER",
+  "KXLALIGAPOINTMARGIN",
+  "KXLALIGARELEGATION",
+  "KXLALIGATEAMPOINTS",
+  "KXLALIGATOP",
+  "KXLAMINEYAMAL",
+  "KXLIGAEXPGAME",
+  "KXLIGAMX",
+  "KXLIGAMX1H",
+  "KXLIGAMX1HBTTS",
+  "KXLIGAMX1HSCORE",
+  "KXLIGAMX1HSPREAD",
+  "KXLIGAMX1HTOTAL",
+  "KXLIGAMX2H",
+  "KXLIGAMX2HBTTS",
+  "KXLIGAMX2HSPREAD",
+  "KXLIGAMX2HTOTAL",
+  "KXLIGAMXBTTS",
+  "KXLIGAMXFTTS",
+  "KXLIGAMXGAME",
+  "KXLIGAMXLEADER",
+  "KXLIGAMXSCORE",
+  "KXLIGAMXSPREAD",
+  "KXLIGAMXTEAMTOTAL",
+  "KXLIGAMXTOP",
+  "KXLIGAMXTOTAL",
+  "KXLIGAPORTUGAL",
+  "KXLIGUE1",
+  "KXLIGUE1GAME",
+  "KXLIGUE1LAST",
+  "KXLIGUE1LEADER",
+  "KXLIGUE1POINTMARGIN",
+  "KXLIGUE1RELEGATION",
+  "KXLIGUE1TEAMPOINTS",
+  "KXLIGUE1TOP",
+  "KXMANAGEROUTDATE",
+  "KXMANAGERSOUT",
+  "KXMLS1H",
+  "KXMLS1HBTTS",
+  "KXMLS1HSCORE",
+  "KXMLS1HSPREAD",
+  "KXMLS1HTOTAL",
+  "KXMLS2H",
+  "KXMLS2HBTTS",
+  "KXMLS2HSPREAD",
+  "KXMLS2HTOTAL",
+  "KXMLSBTTS",
+  "KXMLSCUP",
+  "KXMLSEAST",
+  "KXMLSFTTS",
+  "KXMLSGAME",
+  "KXMLSLEADER",
+  "KXMLSSCORE",
+  "KXMLSSPREAD",
+  "KXMLSTEAMTOTAL",
+  "KXMLSTOTAL",
+  "KXMLSWEST",
+  "KXNWSL",
+  "KXNWSLBTTS",
+  "KXNWSLGAME",
+  "KXNWSLSPREAD",
+  "KXNWSLTOTAL",
+  "KXPERLIGA1",
+  "KXPERLIGA1GAME",
+  "KXPOCHETTINOOUT",
+  "KXPREMIERLEAGUE",
+  "KXSERIEA",
+  "KXSERIEAGAME",
+  "KXSERIEALAST",
+  "KXSERIEALEADER",
+  "KXSERIEAPOINTMARGIN",
+  "KXSERIEARELEGATION",
+  "KXSERIEATEAMPOINTS",
+  "KXSERIEATOP",
+  "KXSOCCERRETIRE",
+  "KXSOCCERTREBLE",
+  "KXSOCCERTROPHIES",
+  "KXSUPERBALLONDOR",
+  "KXSUPERLIG",
+  "KXSVK2LBTTS",
+  "KXSVK2LGAME",
+  "KXSVK2LSPREAD",
+  "KXSVK2LTOTAL",
+  "KXSVKCUPADVANCE",
+  "KXSVKCUPGAME",
+  "KXTACAPORT",
+  "KXTHAIL1",
+  "KXUCL",
+  "KXUCLBOTTOM",
+  "KXUCLLEADER",
+  "KXUCLLEAGUE",
+  "KXUCLROUND",
+  "KXUCLTOP",
+  "KXUCLTOP8",
+  "KXUCLWGAME",
+  "KXUECL",
+  "KXUEFAEURO",
+  "KXUEFAEUROQUAL",
+  "KXUEFANL",
+  "KXUEFANL1H",
+  "KXUEFANL1HBTTS",
+  "KXUEFANL1HSPREAD",
+  "KXUEFANL1HTOTAL",
+  "KXUEFANLBTTS",
+  "KXUEFANLFTTS",
+  "KXUEFANLGAME",
+  "KXUEFANLGROUPQUAL",
+  "KXUEFANLGROUPWIN",
+  "KXUEFANLROUND",
+  "KXUEFANLSCORE",
+  "KXUEFANLSPREAD",
+  "KXUEFANLTEAMTOTAL",
+  "KXUEFANLTOTAL",
+  "KXUEL",
+  "KXURYPD",
+  "KXURYPDBTTS",
+  "KXURYPDGAME",
+  "KXURYPDSPREAD",
+  "KXURYPDTOTAL",
+  "KXUSL",
+  "KXUSLBTTS",
+  "KXUSLCUPADVANCE",
+  "KXUSLCUPGAME",
+  "KXUSLGAME",
+  "KXUSLSPREAD",
+  "KXUSLTOTAL",
+  "KXVENFUTVE",
+  "KXWC",
+  "KXWCCAREERGOALS",
+  "KXWCHOST",
+  "KXWCQUAL",
+  "KXWCTEAMS",
+  "KXWCW",
+  "KXWINSTREAKMANU"
+ ],
+ "unknown_body_histogram": {},
+ "unknown_examples": []
 }
