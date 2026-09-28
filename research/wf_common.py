@@ -75,19 +75,41 @@ VARIANTS: dict[str, dict] = {
         "prior_sd_defence": 0.60,
     },
     "dc_laplace_v1.intercept_decay003": {"_fitter": "intercept", "decay_per_day": 0.003},
+    # ---- dc_laplace_v2 (remediation phase 12; audit §D): scoring intercept + hard centring + neutral
+    # venue handling. Pre-registered selection grid: decay xi in {0.0065, 0.004, 0.003} x team prior sd
+    # s in {0.35, 0.50, 0.60}; chosen on seasons 2019-20..2023-24 only, scored once on 2024-25 + 2025-26.
+    **{
+        f"dc_laplace_v2.d{int(d * 10000):04d}_s{int(s * 100):03d}": {
+            "_fitter": "v2",
+            "decay_per_day": d,
+            "prior_sd_team": s,
+        }
+        for d in (0.0065, 0.004, 0.003)
+        for s in (0.35, 0.50, 0.60)
+    },
 }
+V2_GRID = [v for v in VARIANTS if v.startswith("dc_laplace_v2.")]
 
 
-def strength_for(variant: str) -> StrengthConfig:
+def strength_for(variant: str):
     over = {k: v for k, v in VARIANTS[variant].items() if not k.startswith("_")}
+    if VARIANTS.get(variant, {}).get("_fitter") == "v2":
+        from soccer_edge.model.strength_v2 import StrengthConfigV2
+
+        return dataclasses.replace(StrengthConfigV2(), **over, version=variant)
     return dataclasses.replace(StrengthConfig(), **over, version=variant)
 
 
-def fitter_for(variant: str) -> DixonColesFitter:
-    if VARIANTS.get(variant, {}).get("_fitter") == "intercept":
+def fitter_for(variant: str):
+    kind = VARIANTS.get(variant, {}).get("_fitter")
+    if kind == "intercept":
         from research.dc_intercept import InterceptDixonColesFitter
 
         return InterceptDixonColesFitter(strength_for(variant))
+    if kind == "v2":
+        from soccer_edge.model.strength_v2 import DixonColesFitterV2
+
+        return DixonColesFitterV2(strength_for(variant))
     return DixonColesFitter(strength_for(variant))
 
 
