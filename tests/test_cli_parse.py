@@ -13,7 +13,7 @@ WORKFLOW_ARGV = [
     # kalshi-capture.yml / kalshi-discover.yml
     "capture --fast --status open --out-dir w/snapshots",
     "capture-reference --out-dir w/reference",
-    "discover --out-dir w/discovery",
+    "discover --out artifacts/catalog.json",
     "reconcile-discovery --fast a.json --full b.json --out r.json",
     # settle-evaluate.yml
     "settle --archive-dir a/predictions --snapshots-dir a/snapshots --settlements-dir a/settlements --reference-dir a/reference --out-dir w/evaluation",
