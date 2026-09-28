@@ -271,7 +271,9 @@ def run_walk_forward(
             if s0 >= FIRST_SEASON_START:
                 fit_rows = [r for r in mrows if r.date < d]
                 if (last_fit is None or (d - last_fit).days >= REFIT_DAYS) and len(fit_rows) >= 100:
-                    post = fitter_for(strength.version).fit(fit_rows, as_of=d)
+                    post = fitter_for(strength.version).fit(
+                        fit_rows, as_of=d, strict_point_in_time=True
+                    )
                     last_fit = d
             prev_season = f"{s0 - 1}-{str(s0)[2:]}"
             for i in ids:

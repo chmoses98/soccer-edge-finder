@@ -20,6 +20,7 @@ alias resolution against the canonical registry and writes proposals, never the 
 from __future__ import annotations
 
 import json
+import re
 from dataclasses import dataclass, field
 from datetime import UTC, date, datetime, timedelta
 from pathlib import Path
@@ -96,6 +97,58 @@ class EspnEvent:
     season_slug: str | None
     venue_city: str | None = None
     venue_country: str | None = None
+    goal_events: tuple[GoalEvent, ...] = ()
+    home_shootout: int | None = None
+    away_shootout: int | None = None
+
+
+@dataclass(frozen=True)
+class GoalEvent:
+    """A scoring play from the scoreboard `competitions[0].details` list."""
+
+    team_espn_id: str
+    minute: int  # base minute as displayed (45 for "45'+2'")
+    stoppage: int  # added-time minutes (2 for "45'+2'")
+    own_goal: bool
+    penalty: bool
+    shootout: bool
+
+    @property
+    def period(self) -> str:
+        if self.minute <= 45:
+            return "first_half"
+        if self.minute <= 90:
+            return "second_half"
+        return "extra_time"
+
+
+_MINUTE_RE = re.compile(r"^\s*(\d+)'?(?:\s*\+\s*(\d+)'?)?")
+
+
+def parse_goal_events(details: list[dict[str, Any]]) -> tuple[list[GoalEvent], bool]:
+    """(goal events in order, complete) where complete=False when any scoring play lacks a parsable clock."""
+    out: list[GoalEvent] = []
+    complete = True
+    for d in details or []:
+        if not d.get("scoringPlay"):
+            continue
+        disp = ((d.get("clock") or {}).get("displayValue")) or ""
+        m = _MINUTE_RE.match(str(disp))
+        team = (d.get("team") or {}).get("id")
+        if m is None or team is None:
+            complete = False
+            continue
+        out.append(
+            GoalEvent(
+                team_espn_id=str(team),
+                minute=int(m.group(1)),
+                stoppage=int(m.group(2) or 0),
+                own_goal=bool(d.get("ownGoal")),
+                penalty=bool(d.get("penaltyKick")),
+                shootout=bool(d.get("shootout")),
+            )
+        )
+    return out, complete
 
 
 @dataclass(frozen=True)
@@ -210,13 +263,14 @@ def parse_scoreboard(league: str, body: dict[str, Any]) -> list[EspnEvent]:
         if ko is None:
             continue
 
-        def _score(c: dict[str, Any]) -> int | None:
-            s = c.get("score")
+        def _score(c: dict[str, Any], key: str = "score") -> int | None:
+            s = c.get(key)
             try:
                 return int(s) if s not in (None, "") else None
             except (TypeError, ValueError):
                 return None
 
+        goals, goals_complete = parse_goal_events(comp.get("details") or [])
         out.append(
             EspnEvent(
                 espn_event_id=str(ev["id"]),
@@ -242,6 +296,9 @@ def parse_scoreboard(league: str, body: dict[str, Any]) -> list[EspnEvent]:
                 venue_country=(
                     (comp.get("venue") or ev.get("venue") or {}).get("address") or {}
                 ).get("country"),
+                goal_events=tuple(goals) if goals_complete else (),
+                home_shootout=_score(home, "shootoutScore"),
+                away_shootout=_score(away, "shootoutScore"),
             )
         )
     return out
@@ -646,8 +703,84 @@ def results_from_events(
                 home_goals=ev.home_score,
                 away_goals=ev.away_score,
                 neutral_site=ev.neutral_site,
+                **result_evidence(ev),
             )
         )
+    return out
+
+
+def result_evidence(ev: EspnEvent) -> dict[str, Any]:
+    """Settlement evidence derived from the scoreboard: status token, kickoff, timed goal split, shootout.
+
+    Fails closed: when the timed goal events do not reproduce the reported score, no split is emitted and
+    the settlement engine will refuse contracts that need one.
+    """
+    name = ev.status_name or ""
+    et_status = "AET" in name or "EXTRA" in name
+    pen_status = "PEN" in name and "PENDING" not in name
+    out: dict[str, Any] = {
+        "status_name": name or None,
+        "kickoff_utc": ev.kickoff_utc.isoformat().replace("+00:00", "Z"),
+        "home_shootout": ev.home_shootout,
+        "away_shootout": ev.away_shootout,
+        "result_source": PROVIDER_ID,
+    }
+    pens = ev.home_shootout is not None and ev.away_shootout is not None
+    if pens:
+        out["decided_on_penalties"] = True
+        if ev.home_shootout != ev.away_shootout:
+            out["winner_after_penalties"] = (
+                "home" if ev.home_shootout > ev.away_shootout else "away"
+            )
+    elif pen_status:
+        out["decided_on_penalties"] = True
+    goals = [g for g in ev.goal_events if not g.shootout]
+    if goals or name == "STATUS_FULL_TIME":
+        # own goals are credited to the opponent of the team ESPN lists on the play
+        def _side(g: GoalEvent) -> str | None:
+            if g.team_espn_id == ev.home_espn_id:
+                s = "home"
+            elif g.team_espn_id == ev.away_espn_id:
+                s = "away"
+            else:
+                return None
+            if g.own_goal:
+                s = "away" if s == "home" else "home"
+            return s
+
+        sides = [_side(g) for g in goals]
+        if all(sd is not None for sd in sides):
+            reg = [(sd, g) for sd, g in zip(sides, goals) if g.period != "extra_time"]
+            ht = [(sd, g) for sd, g in zip(sides, goals) if g.period == "first_half"]
+            et = [(sd, g) for sd, g in zip(sides, goals) if g.period == "extra_time"]
+            h_reg = sum(1 for sd, _ in reg if sd == "home")
+            a_reg = sum(1 for sd, _ in reg if sd == "away")
+            h_et = sum(1 for sd, _ in et if sd == "home")
+            a_et = sum(1 for sd, _ in et if sd == "away")
+            consistent = (h_reg + h_et == ev.home_score) and (a_reg + a_et == ev.away_score)
+            if consistent:
+                out.update(
+                    {
+                        "home_goals_regulation": h_reg,
+                        "away_goals_regulation": a_reg,
+                        "home_goals_ht": sum(1 for sd, _ in ht if sd == "home"),
+                        "away_goals_ht": sum(1 for sd, _ in ht if sd == "away"),
+                        "home_goals_et": h_et,
+                        "away_goals_et": a_et,
+                        "extra_time_played": bool(et) or et_status or pens,
+                        "goal_events_source": "espn_scoreboard_details",
+                    }
+                )
+                if sides:
+                    # first scorer: an own goal as the first goal is credited per the rule above
+                    out["first_scorer_team"] = sides[0]
+                elif name == "STATUS_FULL_TIME":
+                    out["first_scorer_team"] = None
+    if name == "STATUS_FULL_TIME" and "home_goals_regulation" not in out:
+        # full time with no goal detail: the reported score is the regulation score
+        out["home_goals_regulation"] = ev.home_score
+        out["away_goals_regulation"] = ev.away_score
+        out["extra_time_played"] = False
     return out
 
 
@@ -658,6 +791,26 @@ def result_record(r: MatchResult, espn_event_id: str, league: str) -> dict[str, 
         "league": league,
         **r.model_dump(mode="json"),
     }
+
+
+def _result_row_upgrades(prev: dict[str, Any], new: dict[str, Any]) -> bool:
+    """A later scoreboard read may carry settlement evidence the archived row lacks (status token, timed
+    goal split, shootout). The file stays append-only: the richer row is appended and `results()` keeps the
+    last row per event. A row never 'upgrades' to a different final score."""
+    if (prev.get("home_goals"), prev.get("away_goals")) != (
+        new.get("home_goals"),
+        new.get("away_goals"),
+    ):
+        return False
+    for key in (
+        "status_name",
+        "home_goals_regulation",
+        "winner_after_penalties",
+        "first_scorer_team",
+    ):
+        if prev.get(key) is None and new.get(key) is not None:
+            return True
+    return False
 
 
 class EspnArchive:
@@ -678,15 +831,20 @@ class EspnArchive:
         return {r["espn_event_id"] for r in read_jsonl(pth)} if pth.exists() else set()
 
     def append_results(self, league: str, rows: list[dict[str, Any]]) -> int:
-        from soccer_edge.core.serialization import append_jsonl
+        from soccer_edge.core.serialization import append_jsonl, read_jsonl
 
-        known = self.known_event_ids(league)
+        pth = self.results_path(league)
+        latest: dict[str, dict[str, Any]] = {}
+        if pth.exists():
+            for r in read_jsonl(pth):
+                latest[r["espn_event_id"]] = r
         n = 0
         for r in rows:
-            if r["espn_event_id"] in known:
+            prev = latest.get(r["espn_event_id"])
+            if prev is not None and not _result_row_upgrades(prev, r):
                 continue
-            append_jsonl(self.results_path(league), r)
-            known.add(r["espn_event_id"])
+            append_jsonl(pth, r)
+            latest[r["espn_event_id"]] = r
             n += 1
         return n
 

@@ -19,7 +19,7 @@ from soccer_edge.run.simcache import SimCache
 AS_OF = datetime(2026, 10, 9, 12, 0, tzinfo=UTC)
 
 
-def _epl_model(fixtures):
+def _epl_model(fixtures, as_of: date = date(2026, 10, 9)):
     rng = np.random.default_rng(0)
     teams = sorted(
         {f.home_team_id for f in fixtures}
@@ -40,9 +40,11 @@ def _epl_model(fixtures):
                     int(rng.poisson(1.1)),
                 )
             )
-    post = DixonColesFitter().fit(rows, as_of=date(2026, 10, 9))
+    rows = [r for r in rows if r.date < as_of]
+    post = DixonColesFitter().fit(rows, as_of=as_of, strict_point_in_time=True)
+    fitted_at = datetime(as_of.year, as_of.month, as_of.day, 11, tzinfo=UTC)
     return CompetitionModel(
-        "eng.premier_league", post, AS_OF - timedelta(hours=1), len(rows), date(2026, 10, 4), []
+        "eng.premier_league", post, fitted_at, len(rows), max(r.date for r in rows), []
     )
 
 
@@ -180,7 +182,8 @@ def test_started_and_window_dispositions(registry, epl_fixtures, disc):
     inp.as_of = AS_OF - timedelta(days=10)
     for k in ("market_observed_at", "fixtures_observed_at", "results_observed_at"):
         setattr(inp, k, inp.as_of)
-    inp.models["eng.premier_league"].fitted_at = inp.as_of
+    # point-in-time: the model used at this earlier decision time must not have seen later results
+    inp.models["eng.premier_league"] = _epl_model(epl_fixtures, as_of=inp.as_of.date())
     art = run(
         inp, RunConfig(run_date=date(2026, 9, 29), n_worlds=20, draws_per_world=10, window_hours=24)
     )
@@ -195,3 +198,37 @@ def test_international_pool_competitions_use_distinct_model_family():
     assert INTL_POOL_FAMILY_ID != MODEL_FAMILY_ID and INTL_POOL_FAMILY_ID.startswith(
         MODEL_FAMILY_ID
     )
+
+
+def test_temporal_guard_fails_closed_on_future_input(registry, epl_fixtures, disc):
+    from soccer_edge.core.temporal import FutureInformationError
+
+    inp = _inputs(registry, epl_fixtures, disc)
+    inp.results_observed_at = inp.as_of + timedelta(seconds=1)
+    with pytest.raises(FutureInformationError):
+        run(
+            inp,
+            RunConfig(
+                run_date=AS_OF.date(), n_worlds=50, draws_per_world=10, enforce_freshness=False
+            ),
+        )
+    inp.results_observed_at = inp.as_of - timedelta(days=1)
+    inp.fixtures_observed_at = inp.as_of + timedelta(minutes=1)
+    with pytest.raises(FutureInformationError):
+        run(
+            inp,
+            RunConfig(
+                run_date=AS_OF.date(), n_worlds=50, draws_per_world=10, enforce_freshness=False
+            ),
+        )
+
+
+def test_temporal_guard_report_is_in_the_run_output(registry, epl_fixtures, disc):
+    inp = _inputs(registry, epl_fixtures, disc)
+    art = run(
+        inp,
+        RunConfig(run_date=AS_OF.date(), n_worlds=50, draws_per_world=10, enforce_freshness=False),
+    )
+    tg = art.output.freshness["temporal_guard"]
+    assert tg["ok"] is True and tg["violations"] == []
+    assert {"fixtures", "results", "market_snapshots"} <= set(tg["checked"])

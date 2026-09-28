@@ -43,6 +43,27 @@ from soccer_edge.pricing.semantics import Semantics
 from soccer_edge.providers.interfaces import MatchResult
 from soccer_edge.reference.schemas import classify_close
 from soccer_edge.settlement.engine import OfficialResult, SettlementOutcome, settle
+from soccer_edge.settlement.resolve import (
+    CoverageRow,
+    ResultIndex,
+    SettlementState,
+    coverage_report,
+    derive_exact_score_k,
+    et_possible,
+    semantics_complete,
+    state_for_outcome,
+)
+from soccer_edge.settlement.resolve import official_from_result as _official_from_result
+
+__all__ = [
+    "CoverageRow",
+    "ResultIndex",
+    "SettlementState",
+    "build_result_index",
+    "coverage_report",
+    "et_possible",
+    "settle_ledger",
+]
 
 
 @dataclass
@@ -166,19 +187,24 @@ def clv_fields(
 
 def semantics_from_record(rec: dict[str, Any]) -> Semantics:
     s = rec["semantics"]
+    slot = s.get("player_slot")
+    k = int(s["k"]) if s.get("k") is not None else None
+    if k is None and rec["family"] in ("exact_score", "first_half_exact_score"):
+        k = derive_exact_score_k(rec["ticker"], s.get("description", ""))
     return Semantics(
         rec["ticker"],
         MarketFamily(rec["family"]),
         Period(s["period"]),
         s.get("side"),
         Decimal(s["line"]) if s.get("line") else None,
-        None,
-        None,
+        k,
+        (str(slot[0]), int(slot[1])) if slot else None,
         s.get("description", ""),
     )
 
 
 def official_from_result(r: MatchResult) -> OfficialResult:
+    """Legacy helper (openfootball 90' scores). Universal settlement uses `settlement.resolve`."""
     return OfficialResult(
         r.fixture_id,
         FixtureStatus.FINISHED,
@@ -186,39 +212,121 @@ def official_from_result(r: MatchResult) -> OfficialResult:
         r.away_goals,
         r.home_goals_ht,
         r.away_goals_ht,
-        source="openfootball",
+        source=r.result_source or "openfootball",
     )
+
+
+def build_result_index(
+    sources: dict[str, list[MatchResult]], *, competitions_with_source: set[str] | None = None
+) -> ResultIndex:
+    """Merge results from every provider (`{source_id: rows}`) into one index. Competitions that have a
+    source but no rows yet are declared through `competitions_with_source` so their records read
+    PENDING_RESULT rather than UNSETTLEABLE."""
+    idx = ResultIndex()
+    for src, rows in sources.items():
+        for r in rows:
+            idx.add(r, source=src)
+    idx.competitions_with_source |= set(competitions_with_source or ())
+    return idx
 
 
 def settle_ledger(
     ledger: PredictionLedger,
-    results: dict[str, MatchResult],
+    results: dict[str, MatchResult] | ResultIndex,
     snapshots_dir: Path,
     settlements: PredictionLedger,
     *,
     as_of: datetime,
     grace: timedelta = timedelta(hours=3),
     reference_dir: Path | None = None,
+    et_possible_for: dict[str, bool] | None = None,
+    coverage_rows: list[CoverageRow] | None = None,
 ) -> list[dict[str, Any]]:
-    already = {r["prediction_record_id"] for r in settlements.iter_records()}
+    """Settle every due record that has sufficient evidence; classify every record into an explicit
+    settlement state (appended to `coverage_rows` when given). Only SETTLED outcomes (yes/no/void) are
+    written to the settlements ledger: pending states are re-evaluated on the next run, never guessed.
+
+    `results` may be the legacy `{fixture_id: MatchResult}` map (openfootball only) or a `ResultIndex`."""
+    index = (
+        results
+        if isinstance(results, ResultIndex)
+        else build_result_index({"openfootball": list(results.values())})
+    )
+    et_possible_for = et_possible_for or {}
+    already = {
+        r["prediction_record_id"]
+        for r in settlements.iter_records()
+        if r.get("outcome") in ("yes", "no", "void")
+    }
     records = [r for r in ledger.iter_records() if r.get("schema") == "prediction_record_v1"]
     kickoff_by_ticker = {r["ticker"]: parse_iso_utc(r["kickoff_utc"]) for r in records}
     closes = load_close_quotes(snapshots_dir, kickoff_by_ticker)
     kickoff_by_fixture = {r["fixture_id"]: parse_iso_utc(r["kickoff_utc"]) for r in records}
     ref_close = load_reference_close(reference_dir, kickoff_by_fixture) if reference_dir else {}
     written: list[dict[str, Any]] = []
+
+    def _cov(
+        rec: dict[str, Any], state: SettlementState, reason: str, sources=(), outcome=None
+    ) -> None:
+        if coverage_rows is not None:
+            coverage_rows.append(
+                CoverageRow(
+                    rec["record_id"],
+                    rec["fixture_id"],
+                    rec.get("competition_id", ""),
+                    rec.get("family", ""),
+                    (rec.get("semantics") or {}).get("period"),
+                    rec["kickoff_utc"],
+                    state,
+                    reason,
+                    list(sources),
+                    outcome,
+                )
+            )
+
     for rec in records:
         rid = rec["record_id"]
-        if rid in already:
-            continue
         ko = parse_iso_utc(rec["kickoff_utc"])
+        if rid in already:
+            _cov(rec, SettlementState.SETTLED, "already settled")
+            continue
         if ko + grace > as_of:
+            _cov(rec, SettlementState.PENDING_KICKOFF, "kickoff + grace in the future")
             continue
-        res = results.get(rec["fixture_id"])
-        if res is None:
+        try:
+            sem = semantics_from_record(rec)
+        except (KeyError, ValueError) as exc:
+            _cov(rec, SettlementState.UNSUPPORTED_SETTLEMENT, f"semantics unreadable: {exc}")
             continue
-        sem = semantics_from_record(rec)
-        st = settle(sem, official_from_result(res))
+        incomplete = semantics_complete(sem)
+        if incomplete:
+            _cov(rec, SettlementState.PENDING_EVIDENCE, incomplete)
+            continue
+        resolution = index.resolve(
+            rec["fixture_id"], ko, competition_id=rec.get("competition_id", "")
+        )
+        if resolution.state is not SettlementState.SETTLED:
+            _cov(rec, resolution.state, resolution.reason, resolution.sources)
+            continue
+        res = resolution.result
+        assert res is not None
+        official, why = _official_from_result(
+            res, et_possible_in_competition=et_possible_for.get(rec.get("competition_id", ""), True)
+        )
+        if official is None:
+            _cov(
+                rec,
+                SettlementState.PENDING_EVIDENCE,
+                why or "insufficient evidence",
+                resolution.sources,
+            )
+            continue
+        st = settle(sem, official)
+        state, reason = state_for_outcome(st.outcome)
+        if state is not SettlementState.SETTLED:
+            _cov(rec, state, reason, resolution.sources)
+            continue
+        _cov(rec, SettlementState.SETTLED, reason, resolution.sources, st.outcome.value)
         close = closes.get(rec["ticker"])
         entry_yes = _dec(rec["market"].get("yes_ask"))
         entry_no = _dec(rec["market"].get("no_ask"))
@@ -253,7 +361,7 @@ def settle_ledger(
             "model_family": rec["model_family"],
             "horizon": label_horizon((ko - parse_iso_utc(rec["as_of"])).total_seconds() / 60).value,
             "outcome": st.outcome.value,
-            "evidence": st.evidence,
+            "evidence": {**st.evidence, "result_sources": resolution.sources},
             "fair_probability_mean": rec["probability"]["fair_probability_mean"],
             "fair_probability_low": rec["probability"]["fair_probability_low"],
             "fair_probability_high": rec["probability"]["fair_probability_high"],

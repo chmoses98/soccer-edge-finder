@@ -296,37 +296,97 @@ def cmd_settle(args: argparse.Namespace) -> int:
     from soccer_edge.authority.policy import AuthorityMatrix
     from soccer_edge.providers.openfootball import COMPETITION_FILES, OpenFootballProvider
     from soccer_edge.run.inputs import current_season_id
-    from soccer_edge.run.settle import model_health, settle_ledger, settlement_v1_rows
+    from soccer_edge.run.settle import (
+        build_result_index,
+        coverage_report,
+        et_possible,
+        model_health,
+        settle_ledger,
+        settlement_v1_rows,
+    )
 
     as_of = utc_now()
     registry = _registry()
     ledger = PredictionLedger(Path(args.archive_dir))
     settlements = PredictionLedger(Path(args.settlements_dir))
     of = OpenFootballProvider(registry)
-    results = {}
     comps = {
         r.get("competition_id")
         for r in ledger.iter_records()
         if r.get("schema") == "prediction_record_v1"
     }
+    sources: dict[str, list] = {"openfootball": [], "espn_site_api": []}
+    with_source: set[str] = set()
+    # openfootball: current and previous season (records can straddle the July season boundary)
     for comp in sorted(c for c in comps if c in COMPETITION_FILES):
+        with_source.add(comp)
+        cur = current_season_id(comp, as_of.date())
+        prev = f"{int(cur[:4]) - 1}-{cur[:4][2:]}"
+        for season in (prev, cur):
+            try:
+                sources["openfootball"].extend(of.results(comp, season).payload)
+            except Exception as exc:
+                print(f"[results] openfootball {comp} {season}: {str(exc)[:120]}")
+    # ESPN archive: every league the sync/backfill jobs have captured (universal settlement, audit B4)
+    if args.espn_dir:
+        from soccer_edge.providers.espn import EspnArchive, EspnMap
+
+        arch = EspnArchive(Path(args.espn_dir))
+        emap = EspnMap.load()
+        leagues = tuple(
+            p.stem for p in sorted((Path(args.espn_dir) / "results" / "espn").glob("*.jsonl"))
+        )
+        with_source |= {emap.leagues[lg] for lg in leagues if lg in emap.leagues}
         try:
-            for r in of.results(comp, current_season_id(comp, as_of.date())).payload:
-                results[r.fixture_id] = r
+            sources["espn_site_api"].extend(arch.results(leagues))
         except Exception as exc:
-            print(f"[results] {comp}: {exc}")
+            print(f"[results] espn archive: {str(exc)[:160]}")
+    index = build_result_index(sources, competitions_with_source=with_source)
+    et_map = {
+        cid: et_possible(c.format, c.extra_time_in_knockouts)
+        for cid, c in registry.competitions.items()
+    }
+    cov_rows: list = []
     written = settle_ledger(
         ledger,
-        results,
+        index,
         Path(args.snapshots_dir),
         settlements,
         as_of=as_of,
         reference_dir=Path(args.reference_dir) if args.reference_dir else None,
+        et_possible_for=et_map,
+        coverage_rows=cov_rows,
     )
+    coverage = coverage_report(
+        cov_rows, as_of=as_of, grace=__import__("datetime").timedelta(hours=3)
+    )
+    print(
+        "[settlement coverage]",
+        json.dumps(
+            {
+                k: coverage[k]
+                for k in (
+                    "predictions_total",
+                    "settleable_now",
+                    "settled",
+                    "pending_kickoff",
+                    "pending_result",
+                    "pending_mapping",
+                    "pending_evidence",
+                    "unsupported_settlement",
+                    "unsettleable",
+                    "unaccounted_settlement_records",
+                )
+            }
+        ),
+    )
+    if coverage["unaccounted_settlement_records"] != 0:
+        raise SystemExit("settlement coverage invariant violated: unaccounted records")
     rows, proposals = model_health(
         settlements, AuthorityMatrix.load(REPO_ROOT / "config" / "authority.json"), as_of=as_of
     )
     out = Path(args.out_dir)
+    write_json(out / "settlement_coverage.v1.json", coverage)
     write_json(out / "model_health.v1.json", [r.model_dump(mode="json") for r in rows])
     write_json(out / "authority_proposals.json", proposals)
     write_json(
@@ -660,6 +720,11 @@ def build_parser() -> argparse.ArgumentParser:
     st.add_argument("--settlements-dir", required=True)
     st.add_argument("--out-dir", required=True)
     st.add_argument("--reference-dir", default=None)
+    st.add_argument(
+        "--espn-dir",
+        default=None,
+        help="archive root holding results/espn/*.jsonl (universal settlement)",
+    )
     st.set_defaults(func=cmd_settle)
 
     e = sub.add_parser("export-schemas", help="write JSON Schemas for the app contract")

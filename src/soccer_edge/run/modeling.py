@@ -56,7 +56,9 @@ def fit_competition(
     teams = sorted(
         {f.home_team_id for f in fixtures or []} | {f.away_team_id for f in fixtures or []}
     )
-    post = DixonColesFitter(config).fit(rows, as_of=as_of, teams=teams or None)
+    post = DixonColesFitter(config).fit(
+        rows, as_of=as_of, teams=teams or None, strict_point_in_time=True
+    )
     known = set(post.teams)
     missing = [t for t in teams if t not in known]
     latest = max((r.date for r in rows), default=None)

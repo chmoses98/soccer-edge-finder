@@ -39,7 +39,7 @@ jobs:
         run: |
           set -o pipefail
           mkdir -p work/evaluation
-          python -m soccer_edge.cli settle --archive-dir archive/predictions --snapshots-dir archive/snapshots --settlements-dir archive/settlements --reference-dir archive/reference --out-dir work/evaluation | tee work/settle.log
+          python -m soccer_edge.cli settle --archive-dir archive/predictions --snapshots-dir archive/snapshots --settlements-dir archive/settlements --reference-dir archive/reference --espn-dir archive --out-dir work/evaluation | tee work/settle.log
       - uses: actions/upload-artifact@v4
         if: always()
         with:
