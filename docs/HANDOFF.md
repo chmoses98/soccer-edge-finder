@@ -153,6 +153,8 @@ Production on `main` after PRs #5–#7 (all dispatched and scheduled runs checke
 | `espn-lineups` (dispatch + 2-hourly schedule) | | green after the empty-cache fix; 27 lineup snapshots (0 published pre-kickoff, 4 post), 19 weather rows, 15 results appended; 53 unmapped ids all Copa del Rey first-round clubs |
 | `espn-backfill` (dispatch) | 36373486343 | green; results archived: MLS 1,171, Liga MX 691, Brasileirão 657, Argentina 1,139, Nations League 222, friendlies 333, CONCACAF NL 125; qualifiers 0 (slugs lacked a competition id — fixed, re-dispatched) |
 | `diagnostics` (branch) | runs 1–2 | green; before/after tables in `docs/COVERAGE_FORENSICS.md` |
+| `run-soccer` (main, dispatch after the backfill) | `run-20260928T124253Z-4f9bfb` | green; 6,272 discovered, **830 priced** (from 0 in the morning run), 0 unaccounted, NO BETS, 43 RESEARCH_ONLY shadows — all internationals; 8 fixtures (506 contracts) went `unpriceable` on a coherence rule that flagged skewed exact-score means (rule relaxed to a 1-point tolerance in PR #9); the shadows show the international pool is **not** calibrated (see limitation 26) |
+| `espn-backfill` (qualifiers, second dispatch) | 36422848568 | green |
 
 Two production defects were introduced by Phase 2 and fixed the same day, both caught by dispatching after merge:
 an empty archive-restored cache file crashed `espn-sync`/`run-soccer` (PR #7), and the `run` parser lacked the
@@ -161,7 +163,8 @@ backfill will be the first with ESPN-fed competitions in the model set.
 
 ## L. Genuine blockers / risks
 
-1. Still zero settled prospective evidence; nothing can be promoted.
+1. Still zero settled prospective evidence; nothing can be promoted. The international-pool shadows produced
+   by the first ESPN-fed run are noise from an unvalidated model (distinct family id, limitation 26), not signal.
 2. International/Americas pricing depends on the ESPN results backfill and on pooled international strengths
    fitted from friendlies + Nations League + qualifiers with a single home-advantage term (friendlies at neutral
    venues are flagged `neutral_site` but the fitter currently treats all rows alike — a documented simplification).
@@ -185,7 +188,7 @@ via a new policy version and the replay tool.
 ## O. Files / PRs
 
 PRs: #5 (horizon fix, diagnostics, reference layer, probes), #6 (ESPN, lineups, policy replay, router importer,
-microstructure, coverage expansion, xG, weather, rest), PR_PLACEHOLDER (research results). CLI subcommands: `run,
+microstructure, coverage expansion, xG, weather, rest), #7 (empty-cache and parser fixes), #8 (research results, qualifier mapping, reference-step fix). CLI subcommands: `run,
 discover, capture, capture-reference, espn-sync, espn-backfill, replay-policies, settle, export-schemas,
 import-wagers, import-settlements, validate-positions-ledger, microstructure, reconcile-discovery`. Workflows:
 ci, kalshi-discover, kalshi-capture, run-soccer, settle-evaluate, diagnostics, espn-lineups, espn-backfill,

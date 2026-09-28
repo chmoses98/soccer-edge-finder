@@ -58,3 +58,11 @@
 25. A production bug shipped in Mission 1 and was fixed in Phase 2: every archived snapshot was labelled
     horizon `T-10m` (raw `minutes_to_kickoff` was correct). Analyses of horizon labels before 2026-09-28
     must recompute the label from `minutes_to_kickoff` (the microstructure summary does).
+26. **The international pool model is not validated.** From 2026-09-28 12:42 UTC `run-soccer` prices Nations League,
+    CONCACAF NL, friendlies and qualifiers from ESPN-backfilled results (pooled, one home-advantage term, club-style
+    priors for national teams). First live run: 830 contracts priced, 43 RESEARCH_ONLY shadow expressions, several
+    with absurd fairs (San Marino 25% to beat Albania; +50% "edges" at 2¢ prices) — the priors do not shrink
+    minnows enough and no historical benchmark exists for internationals. These records carry the distinct family
+    `data_only.world_sim_v1.intl_pool` so they never count toward the club-league evidence cells; they must be
+    read as noise until a walk-forward on the pooled international archive exists.
+

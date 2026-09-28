@@ -185,3 +185,13 @@ def test_started_and_window_dispositions(registry, epl_fixtures, disc):
         inp, RunConfig(run_date=date(2026, 9, 29), n_worlds=20, draws_per_world=10, window_hours=24)
     )
     assert art.output.coverage.by_disposition["out_of_window"] == 39
+
+
+def test_international_pool_competitions_use_distinct_model_family():
+    from soccer_edge.run.pipeline import INTL_POOL_FAMILY_ID, MODEL_FAMILY_ID, model_family_for
+
+    assert model_family_for("eng.premier_league") == MODEL_FAMILY_ID
+    assert model_family_for("uefa.nations_league") == INTL_POOL_FAMILY_ID
+    assert INTL_POOL_FAMILY_ID != MODEL_FAMILY_ID and INTL_POOL_FAMILY_ID.startswith(
+        MODEL_FAMILY_ID
+    )

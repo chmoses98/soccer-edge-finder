@@ -48,6 +48,26 @@ from soccer_edge.run.simcache import (
 from soccer_edge.sim.engine import SimConfig, simulate
 
 MODEL_FAMILY_ID = "data_only.world_sim_v1"
+# Competitions priced from the pooled international results archive (ESPN) use a distinct family id so
+# their prospective evidence never mixes with the club-league cells of the benchmark family.
+INTL_POOL_COMPETITIONS = frozenset(
+    {
+        "uefa.nations_league",
+        "fifa.friendly",
+        "concacaf.nations_league",
+        "fifa.world_cup_qualifiers",
+        "uefa.euro_qualifiers",
+        "uefa.euro",
+        "fifa.world_cup",
+        "conmebol.copa_america",
+        "concacaf.gold_cup",
+    }
+)
+INTL_POOL_FAMILY_ID = MODEL_FAMILY_ID + ".intl_pool"
+
+
+def model_family_for(competition_id: str) -> str:
+    return INTL_POOL_FAMILY_ID if competition_id in INTL_POOL_COMPETITIONS else MODEL_FAMILY_ID
 
 
 @dataclass(frozen=True)
@@ -476,7 +496,7 @@ def run(
         assert fx is not None and w.priced is not None and w.regime is not None
         ko = _kickoff(fx)
         horizon = label_horizon(minutes_until(ko, as_of)).value
-        akey = AuthorityKey(MODEL_FAMILY_ID, w.spec.family.value, horizon)
+        akey = AuthorityKey(model_family_for(fx.competition_id), w.spec.family.value, horizon)
         state = inputs.authority.get(akey)
         ctx = fixture_ctx.get(fx.fixture_id)
         rec = RecommendationV1(
@@ -501,7 +521,7 @@ def run(
             bet_up_to_price=c.assessment.bet_up_to_price,
             authority=state.value,  # type: ignore[arg-type]
             confidence_label=_confidence_label(state, c.assessment),
-            model_family=MODEL_FAMILY_ID,
+            model_family=model_family_for(fx.competition_id),
             model_version=inputs.models[fx.competition_id].posterior.version,
             data_as_of=inputs.results_observed_at,
             market_as_of=inputs.market_observed_at,
@@ -682,7 +702,7 @@ def _contract_record(
             "period": w.sem.period.value if w.sem else None,
             "description": w.priced.description,
         },
-        "model_family": MODEL_FAMILY_ID,
+        "model_family": model_family_for(fx.competition_id),
         "model_version": cm.posterior.version,
         "parameter_hash": cm.posterior.param_hash(),
         "world_hash": summ.get("world_hash"),
