@@ -708,6 +708,14 @@ def _contract_record(
             "schedule_version": FEE_SCHEDULE_VERSION,
         },
         "edge": {"yes": w.yes.to_json() if w.yes else None, "no": w.no.to_json() if w.no else None},
+        "reference": {
+            "bookmaker": inputs.reference_bookmaker if w.reference_prob is not None else None,
+            "probability_yes": w.reference_prob,
+            "observed_at": iso_utc(inputs.reference_observed_at)
+            if (w.reference_prob is not None and inputs.reference_observed_at)
+            else None,
+            "kalshi_mid_yes": _kalshi_mid(w.market, "yes"),
+        },
     }
 
 

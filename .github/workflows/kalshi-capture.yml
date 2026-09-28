@@ -56,7 +56,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           rm -f work/snapshots/latest_catalog.json   # raw catalog stays an artifact, not archived
-          scripts/archive_publish.sh work/snapshots snapshots "capture ${{ github.run_id }} $(date -u +%Y-%m-%dT%H:%MZ)"
+          mkdir -p pub/snapshots pub/reference
+          cp -R work/snapshots/. pub/snapshots/
+          [ -d work/reference ] && cp -R work/reference/. pub/reference/ || true
+          scripts/archive_publish.sh pub . "capture ${{ github.run_id }} $(date -u +%Y-%m-%dT%H:%MZ)"
       - name: Summary
         run: |
           echo '## capture' >> "$GITHUB_STEP_SUMMARY"; cat work/snapshots/STATUS.json >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || echo "no STATUS.json" >> "$GITHUB_STEP_SUMMARY"

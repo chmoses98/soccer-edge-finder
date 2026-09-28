@@ -37,9 +37,11 @@ from soccer_edge.evaluation.metrics import (
 )
 from soccer_edge.identity.models import FixtureStatus
 from soccer_edge.kalshi.capture import label_horizon
+from soccer_edge.kalshi.fees import FeeRegime, fee_per_contract
 from soccer_edge.kalshi.taxonomy import MarketFamily, Period
 from soccer_edge.pricing.semantics import Semantics
 from soccer_edge.providers.interfaces import MatchResult
+from soccer_edge.reference.schemas import classify_close
 from soccer_edge.settlement.engine import OfficialResult, SettlementOutcome, settle
 
 
@@ -84,6 +86,75 @@ def _dec(v: Any) -> Decimal | None:
     return None if v in (None, "", "None") else Decimal(str(v))
 
 
+def load_reference_close(
+    reference_dir: Path, kickoff_by_fixture: dict[str, datetime], bookmaker: str = "consensus"
+) -> dict[tuple[str, str, str, str | None], tuple[datetime, float]]:
+    """Last reference snapshot strictly before kickoff per (fixture, market, selection, line)."""
+    best: dict[tuple[str, str, str, str | None], tuple[datetime, float]] = {}
+    if not reference_dir.exists():
+        return best
+    for path in sorted(reference_dir.glob("*/*.jsonl")):
+        for rec in read_jsonl(path):
+            if rec.get("bookmaker") != bookmaker:
+                continue
+            ko = kickoff_by_fixture.get(rec.get("fixture_id"))
+            if ko is None:
+                continue
+            cat = parse_iso_utc(rec["captured_at"])
+            if cat >= ko:
+                continue
+            key = (rec["fixture_id"], rec["market"], rec["selection"], rec.get("line"))
+            if key not in best or cat > best[key][0]:
+                best[key] = (cat, float(rec["devigged_probability"]))
+    return best
+
+
+def clv_fields(
+    *,
+    side: str,
+    entry_price: Decimal | None,
+    close_yes_bid: Decimal | None,
+    close_yes_ask: Decimal | None,
+    fee_type: str | None,
+    fee_multiplier: str | None,
+) -> dict[str, Any]:
+    """Side-aware CLV in YES-probability units. POSITIVE_IS_GOOD.
+    probability CLV: (close mid - entry price) for YES; (entry - close mid) for NO.
+    price CLV: executable close on the same side vs entry (YES: close_yes_ask - entry; NO: close_no_ask - entry
+    where close_no_ask = 1 - close_yes_bid), i.e. what it would cost to enter at close.
+    fee-aware CLV: price CLV minus the change in per-contract fee between entry and close prices."""
+    if entry_price is None or close_yes_bid is None or close_yes_ask is None:
+        return {
+            "clv_probability_points": None,
+            "clv_price_points": None,
+            "clv_fee_aware_points": None,
+        }
+    mid = (close_yes_bid + close_yes_ask) / 2
+    if side == "yes":
+        prob = float(mid - entry_price)
+        close_exec = close_yes_ask
+    else:
+        prob = float((Decimal(1) - mid) - entry_price)
+        close_exec = Decimal(1) - close_yes_bid
+    price_clv = float(close_exec - entry_price)
+    fee_aware = price_clv
+    if (
+        fee_type in ("quadratic", "quadratic_with_maker_fees")
+        and Decimal(0) < entry_price < Decimal(1)
+        and Decimal(0) < close_exec < Decimal(1)
+    ):
+        regime = FeeRegime(fee_type, Decimal(fee_multiplier or "1"))
+        fee_aware = float(
+            (close_exec + fee_per_contract(close_exec, regime))
+            - (entry_price + fee_per_contract(entry_price, regime))
+        )
+    return {
+        "clv_probability_points": round(prob, 6),
+        "clv_price_points": round(price_clv, 6),
+        "clv_fee_aware_points": round(fee_aware, 6),
+    }
+
+
 def semantics_from_record(rec: dict[str, Any]) -> Semantics:
     s = rec["semantics"]
     return Semantics(
@@ -118,11 +189,14 @@ def settle_ledger(
     *,
     as_of: datetime,
     grace: timedelta = timedelta(hours=3),
+    reference_dir: Path | None = None,
 ) -> list[dict[str, Any]]:
     already = {r["prediction_record_id"] for r in settlements.iter_records()}
     records = [r for r in ledger.iter_records() if r.get("schema") == "prediction_record_v1"]
     kickoff_by_ticker = {r["ticker"]: parse_iso_utc(r["kickoff_utc"]) for r in records}
     closes = load_close_quotes(snapshots_dir, kickoff_by_ticker)
+    kickoff_by_fixture = {r["fixture_id"]: parse_iso_utc(r["kickoff_utc"]) for r in records}
+    ref_close = load_reference_close(reference_dir, kickoff_by_fixture) if reference_dir else {}
     written: list[dict[str, Any]] = []
     for rec in records:
         rid = rec["record_id"]
@@ -139,6 +213,28 @@ def settle_ledger(
         close = closes.get(rec["ticker"])
         entry_yes = _dec(rec["market"].get("yes_ask"))
         entry_no = _dec(rec["market"].get("no_ask"))
+        close_minutes = (ko - close.captured_at).total_seconds() / 60 if close else None
+        ref_at_pred = (rec.get("reference") or {}).get("probability_yes")
+        ref_key = _reference_key(rec)
+        ref_c = ref_close.get(ref_key) if ref_key else None
+        fee_type = (rec.get("fee_regime") or {}).get("fee_type")
+        fee_mult = (rec.get("fee_regime") or {}).get("fee_multiplier")
+        clv_yes = clv_fields(
+            side="yes",
+            entry_price=entry_yes,
+            close_yes_bid=close.yes_bid if close else None,
+            close_yes_ask=close.yes_ask if close else None,
+            fee_type=fee_type,
+            fee_multiplier=fee_mult,
+        )
+        clv_no = clv_fields(
+            side="no",
+            entry_price=entry_no,
+            close_yes_bid=close.yes_bid if close else None,
+            close_yes_ask=close.yes_ask if close else None,
+            fee_type=fee_type,
+            fee_multiplier=fee_mult,
+        )
         out = {
             "schema": "settlement_record_v1",
             "prediction_record_id": rid,
@@ -160,12 +256,34 @@ def settle_ledger(
             "clv_yes_points": (close.yes_mid - _mid(rec["market"]))
             if (close and close.yes_mid is not None and _mid(rec["market"]) is not None)
             else None,
+            "close_class": classify_close(close_minutes).value,
+            "close_minutes_before_kickoff": round(close_minutes, 2)
+            if close_minutes is not None
+            else None,
+            "clv": {"yes": clv_yes, "no": clv_no},
+            "reference_probability_at_prediction": ref_at_pred,
+            "reference_close_probability": ref_c[1] if ref_c else None,
+            "reference_close_class": classify_close((ko - ref_c[0]).total_seconds() / 60).value
+            if ref_c
+            else "NONE",
+            "reference_clv_probability_points_yes": (ref_c[1] - ref_at_pred)
+            if (ref_c and ref_at_pred is not None)
+            else None,
             "recommended": rec.get("recommendation", {}),
             "settled_at": iso_utc(as_of),
         }
         settlements.append(out, when=as_of)
         written.append(out)
     return written
+
+
+def _reference_key(rec: dict[str, Any]) -> tuple[str, str, str, str | None] | None:
+    fam, sem = rec.get("family"), rec.get("semantics") or {}
+    if fam == "match_result_3way" and sem.get("side"):
+        return (rec["fixture_id"], "1x2", sem["side"], None)
+    if fam == "total_goals" and sem.get("line"):
+        return (rec["fixture_id"], "ou", "over", str(Decimal(sem["line"])))
+    return None
 
 
 def _mid(market: dict[str, Any]) -> float | None:

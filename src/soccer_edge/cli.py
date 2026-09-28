@@ -134,6 +134,66 @@ def cmd_capture(args: argparse.Namespace) -> int:
     return 0 if run.complete else 2
 
 
+def _reference_capture(registry, fixtures, as_of, out_dir: Path | None):
+    """Fetch football-data.co.uk upcoming odds, build snapshots, optionally append them (change-suppressed)."""
+    from soccer_edge.core.serialization import append_jsonl, read_json
+    from soccer_edge.providers.football_data_couk import FootballDataCoUkProvider
+    from soccer_edge.reference.capture import build_snapshots, reference_lookup
+
+    try:
+        obs = FootballDataCoUkProvider(registry=registry).upcoming_odds()
+    except Exception as exc:
+        print(f"[reference] football-data.co.uk unavailable: {str(exc)[:120]}")
+        return {}, None, {"error": str(exc)[:200]}
+    snaps, stats = build_snapshots(obs.payload, fixtures, captured_at=as_of)
+    stats["provider_notes"] = list(obs.notes)
+    if out_dir is not None:
+        fp_path = out_dir / "last_fingerprints.json"
+        prev = read_json(fp_path) if fp_path.exists() else {}
+        new_fp = {}
+        batch = f"ref-{as_of:%Y%m%dT%H%M%SZ}"
+        written = 0
+        path = out_dir / f"{as_of:%Y-%m-%d}" / f"{batch}.jsonl"
+        for sn in snaps:
+            key = f"{sn.bookmaker}|{sn.fixture_id}|{sn.market}|{sn.selection}|{sn.line}"
+            fp = sn.fingerprint()
+            new_fp[key] = fp
+            if prev.get(key) == fp:
+                continue
+            append_jsonl(path, sn.to_record(batch))
+            written += 1
+        write_json(fp_path, new_fp)
+        write_json(
+            out_dir / "STATUS.json",
+            {
+                "batch_id": batch,
+                "captured_at": as_of.isoformat(),
+                "snapshots": len(snaps),
+                "written": written,
+                **stats,
+            },
+        )
+        stats["written"] = written
+    return reference_lookup(snaps), obs.provenance.observed_at, stats
+
+
+def cmd_capture_reference(args: argparse.Namespace) -> int:
+    from soccer_edge.run.inputs import DEFAULT_COMPETITIONS, assemble
+
+    as_of = utc_now()
+    registry = _registry()
+    data = assemble(registry, competitions=DEFAULT_COMPETITIONS, today=as_of.date())
+    lookup, observed, stats = _reference_capture(registry, data.fixtures, as_of, Path(args.out_dir))
+    print(
+        json.dumps(
+            {"reference_probabilities": len(lookup), "observed_at": str(observed), **stats},
+            indent=2,
+            default=str,
+        )
+    )
+    return 0 if lookup else 2
+
+
 def cmd_run(args: argparse.Namespace) -> int:
     from soccer_edge.archive.ledger import PredictionLedger
     from soccer_edge.kalshi.client import KalshiPublicClient
@@ -234,7 +294,14 @@ def cmd_settle(args: argparse.Namespace) -> int:
                 results[r.fixture_id] = r
         except Exception as exc:
             print(f"[results] {comp}: {exc}")
-    written = settle_ledger(ledger, results, Path(args.snapshots_dir), settlements, as_of=as_of)
+    written = settle_ledger(
+        ledger,
+        results,
+        Path(args.snapshots_dir),
+        settlements,
+        as_of=as_of,
+        reference_dir=Path(args.reference_dir) if args.reference_dir else None,
+    )
     rows, proposals = model_health(
         settlements, AuthorityMatrix.load(REPO_ROOT / "config" / "authority.json"), as_of=as_of
     )
@@ -313,11 +380,19 @@ def build_parser() -> argparse.ArgumentParser:
     )
     c.set_defaults(func=cmd_capture)
 
+    cr = sub.add_parser(
+        "capture-reference",
+        help="capture football-data.co.uk reference odds as point-in-time snapshots",
+    )
+    cr.add_argument("--out-dir", default=str(DATA / "reference"))
+    cr.set_defaults(func=cmd_capture_reference)
+
     st = sub.add_parser("settle", help="settle archived predictions + evaluate + propose authority")
     st.add_argument("--archive-dir", required=True)
     st.add_argument("--snapshots-dir", required=True)
     st.add_argument("--settlements-dir", required=True)
     st.add_argument("--out-dir", required=True)
+    st.add_argument("--reference-dir", default=None)
     st.set_defaults(func=cmd_settle)
 
     e = sub.add_parser("export-schemas", help="write JSON Schemas for the app contract")
