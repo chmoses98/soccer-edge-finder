@@ -8,7 +8,7 @@ import sys
 from datetime import date
 from pathlib import Path
 
-from soccer_edge.core.serialization import write_json
+from soccer_edge.core.serialization import read_json, read_json_or, write_json
 from soccer_edge.core.time import utc_now
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -48,7 +48,7 @@ def cmd_discover(args: argparse.Namespace) -> int:
 
 def cmd_capture(args: argparse.Namespace) -> int:
     """Discovery + snapshot batch (change-suppressed) written as JSONL."""
-    from soccer_edge.core.serialization import append_jsonl, read_json
+    from soccer_edge.core.serialization import append_jsonl
     from soccer_edge.kalshi.capture import MarketSnapshot, SnapshotBatch
     from soccer_edge.kalshi.client import KalshiPublicClient
     from soccer_edge.kalshi.discovery import discover
@@ -79,7 +79,7 @@ def cmd_capture(args: argparse.Namespace) -> int:
     now = utc_now()
     snaps = []
     prev_path = Path(args.out_dir) / "last_fingerprints.json"
-    prev = read_json(prev_path) if prev_path.exists() else {}
+    prev = read_json_or(prev_path, {})
     new_fp = {}
     for tk, m in run.markets.items():
         srec = run.series_records.get(m.series_ticker or "")
@@ -136,7 +136,7 @@ def cmd_capture(args: argparse.Namespace) -> int:
 
 def _reference_capture(registry, fixtures, as_of, out_dir: Path | None):
     """Fetch football-data.co.uk upcoming odds, build snapshots, optionally append them (change-suppressed)."""
-    from soccer_edge.core.serialization import append_jsonl, read_json
+    from soccer_edge.core.serialization import append_jsonl, read_json_or
     from soccer_edge.providers.football_data_couk import FootballDataCoUkProvider
     from soccer_edge.reference.capture import build_snapshots, reference_lookup
 
@@ -149,7 +149,7 @@ def _reference_capture(registry, fixtures, as_of, out_dir: Path | None):
     stats["provider_notes"] = list(obs.notes)
     if out_dir is not None:
         fp_path = out_dir / "last_fingerprints.json"
-        prev = read_json(fp_path) if fp_path.exists() else {}
+        prev = read_json_or(fp_path, {})
         new_fp = {}
         batch = f"ref-{as_of:%Y%m%dT%H%M%SZ}"
         written = 0

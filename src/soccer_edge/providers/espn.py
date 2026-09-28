@@ -542,11 +542,11 @@ def capture_lineups(
 ) -> dict[str, Any]:
     """Prospective lineup capture: one JSONL row per (event, capture) — appended, never rewritten. Change-suppressed
     by content hash per event (data/lineups/<date>/<league>.jsonl + last_hashes.json)."""
-    from soccer_edge.core.serialization import append_jsonl, read_json, write_json
+    from soccer_edge.core.serialization import append_jsonl, read_json_or, write_json
 
     as_of = as_of or utc_now()
     hp = out_dir / "last_hashes.json"
-    last = read_json(hp) if hp.exists() else {}
+    last = read_json_or(hp, {})
     stats = {
         "events": 0,
         "captured": 0,
