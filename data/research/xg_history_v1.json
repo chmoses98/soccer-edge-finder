@@ -1,0 +1,76 @@
+{
+ "schema": "xg_history_result_v1",
+ "generated_at": "2026-09-28T19:53:10.060751+00:00",
+ "sources_excluded_by_terms": [
+  "understat",
+  "fbref/opta",
+  "any scraped site"
+ ],
+ "fetch": {
+  "found": true,
+  "url": "https://web.archive.org/web/2023id_/https://projects.fivethirtyeight.com/soccer-api/club/spi_matches.csv",
+  "sha256": "75fcee0f06f18c854b775437f7a0f36b06249e0f3b6a607d94e34ab6d84815f4",
+  "bytes": 9689769,
+  "attempts": [
+   {
+    "url": "https://projects.fivethirtyeight.com/soccer-api/club/spi_matches.csv",
+    "ok": true,
+    "bytes": 309549,
+    "has_xg_columns": false,
+    "sha256": "252e7b34f790e1cfbd8e2175cf6f5ae0285984f78e2d2868449f2cc917293629",
+    "header": ""
+   },
+   {
+    "url": "https://web.archive.org/web/2023id_/https://projects.fivethirtyeight.com/soccer-api/club/spi_matches.csv",
+    "ok": true,
+    "bytes": 9689769,
+    "has_xg_columns": true,
+    "sha256": "75fcee0f06f18c854b775437f7a0f36b06249e0f3b6a607d94e34ab6d84815f4",
+    "header": "season,date,league_id,league,team1,team2,spi1,spi2,prob1,prob2,probtie,proj_score1,proj_score2,importance1,importance2,score1,score2,xg1,xg2,nsxg1,nsxg2,adj_score1,adj_score2"
+   }
+  ]
+ },
+ "history": {
+  "rows": 12676,
+  "seasons": [
+   "2016",
+   "2017",
+   "2018",
+   "2019",
+   "2020",
+   "2021",
+   "2022"
+  ],
+  "by_division": {
+   "E0": {
+    "n": 2659,
+    "mean_xg_per_match": 2.876525009402031,
+    "mean_goals_per_match": 2.769086122602482
+   },
+   "SP1": {
+    "n": 2658,
+    "mean_xg_per_match": 2.690579382994733,
+    "mean_goals_per_match": 2.6038374717832955
+   },
+   "D1": {
+    "n": 2142,
+    "mean_xg_per_match": 3.004248366013072,
+    "mean_goals_per_match": 3.053221288515406
+   },
+   "I1": {
+    "n": 2659,
+    "mean_xg_per_match": 2.8600112824370068,
+    "mean_goals_per_match": 2.8333960135389242
+   },
+   "F1": {
+    "n": 2558,
+    "mean_xg_per_match": 2.6718842845973416,
+    "mean_goals_per_match": 2.689601250977326
+   }
+  },
+  "file": "data/research/xg_history_v1.csv.gz",
+  "sha256_uncompressed": "0348f81a0a58d0e8332efb4ef85896dd94e1ce397086706e676bee825af3eef7"
+ },
+ "xg_strength_v1_status": "HISTORY_AVAILABLE_EVALUATION_PENDING",
+ "next": "run research/xg_strength_eval.py (walk-forward omega grid 2017-18..2020-21, holdout 2021-22..2022-23)"
+}
