@@ -61,9 +61,18 @@ class InterceptPosterior(ParameterPosterior):
 
 class InterceptDixonColesFitter(DixonColesFitter):
     def fit(
-        self, rows: list[MatchRow], *, as_of: date, teams: list[str] | None = None
+        self,
+        rows: list[MatchRow],
+        *,
+        as_of: date,
+        teams: list[str] | None = None,
+        strict_point_in_time: bool = False,
     ) -> InterceptPosterior:
         cfg: StrengthConfig = self.config
+        if strict_point_in_time:
+            from soccer_edge.core.temporal import assert_no_future_dates
+
+            assert_no_future_dates((r.date for r in rows), as_of, "results")
         rows = [r for r in rows if r.date < as_of]
         if not rows:
             raise ValueError("no matches before as_of")

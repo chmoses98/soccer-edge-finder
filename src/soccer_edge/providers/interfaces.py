@@ -47,6 +47,26 @@ class MatchResult(_Row):
     neutral_site: bool = False
     extra_time_played: bool = False
     decided_on_penalties: bool = False
+    # --- settlement evidence (optional; added 2026-09-28 for universal settlement, audit B4) ---
+    # `home_goals`/`away_goals` are the source's final score as reported (openfootball: 90'; ESPN
+    # scoreboard: including extra time when played). The regulation split below is derived from timed
+    # goal events when the source exposes them; settlement fails closed when it needs a split it lacks.
+    status_name: str | None = (
+        None  # source status token, e.g. ESPN STATUS_FULL_TIME / STATUS_FINAL_PEN
+    )
+    kickoff_utc: str | None = None
+    home_goals_regulation: int | None = None
+    away_goals_regulation: int | None = None
+    home_goals_et: int | None = None  # goals scored in extra time only
+    away_goals_et: int | None = None
+    home_shootout: int | None = None
+    away_shootout: int | None = None
+    winner_after_penalties: str | None = None  # 'home' | 'away'
+    first_scorer_team: str | None = None  # 'home' | 'away' | None (unknown / no goals)
+    goal_events_source: str | None = (
+        None  # provenance of the timed goal events (e.g. espn_scoreboard_details)
+    )
+    result_source: str | None = None  # provider that reported the result
 
 
 class TeamSeasonStats(_Row):

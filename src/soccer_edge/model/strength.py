@@ -24,6 +24,7 @@ import numpy as np
 from scipy.optimize import minimize
 
 from soccer_edge.core.serialization import content_hash
+from soccer_edge.core.temporal import assert_no_future_dates
 
 
 @dataclass(frozen=True)
@@ -167,9 +168,18 @@ class DixonColesFitter:
         self.config = config or StrengthConfig()
 
     def fit(
-        self, rows: list[MatchRow], *, as_of: date, teams: list[str] | None = None
+        self,
+        rows: list[MatchRow],
+        *,
+        as_of: date,
+        teams: list[str] | None = None,
+        strict_point_in_time: bool = False,
     ) -> ParameterPosterior:
         cfg = self.config
+        if strict_point_in_time:
+            # fail closed instead of silently dropping: a caller that hands the fitter a result dated on or
+            # after the decision date has a leak upstream (docs/TEMPORAL_INTEGRITY.md)
+            assert_no_future_dates((r.date for r in rows), as_of, "results")
         rows = [r for r in rows if r.date < as_of]  # strictly point-in-time
         if not rows:
             raise ValueError("no matches before as_of")

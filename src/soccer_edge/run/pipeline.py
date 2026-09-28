@@ -16,6 +16,7 @@ from soccer_edge.archive.ledger import PredictionLedger
 from soccer_edge.authority.policy import Authority, AuthorityKey, AuthorityMatrix
 from soccer_edge.contracts.v1 import CoverageReportV1, EventV1, RecommendationV1, RunOutputV1
 from soccer_edge.core.serialization import content_hash
+from soccer_edge.core.temporal import FutureInformationError, TemporalGuard
 from soccer_edge.core.time import ensure_utc, iso_utc, minutes_until, utc_now
 from soccer_edge.identity.models import Fixture, FixtureStatus
 from soccer_edge.identity.registry import AliasRegistry
@@ -173,6 +174,8 @@ def run(
         min((m.fitted_at for m in inputs.models.values()), default=None),
         cfg.freshness,
     )
+    # universal no-future-information guard: every input class must be observed at or before as_of
+    guard = temporal_guard_for_inputs(inputs, as_of)
     if cfg.enforce_freshness:
         fresh.require()
     else:
@@ -617,7 +620,7 @@ def run(
         shadow_recommendations=shadow,
         events=events,
         coverage=coverage,
-        freshness=fresh.to_json(),
+        freshness={**fresh.to_json(), "temporal_guard": guard.report()},
         warnings=warnings,
     )
     from soccer_edge.run.render import render_markdown
@@ -693,6 +696,28 @@ def _confidence_label(state: Authority, a: EdgeAssessment) -> str:
     return f"{base}; P(edge>0)={a.p_edge_positive:.0%}"
 
 
+def temporal_guard_for_inputs(inputs: RunInputs, as_of: datetime) -> TemporalGuard:
+    """Fail closed when any input was observed after the decision time (docs/TEMPORAL_INTEGRITY.md)."""
+    g = TemporalGuard(as_of)
+    g.check(inputs.fixtures_observed_at, "fixtures", "fixtures_observed_at")
+    g.check(inputs.results_observed_at, "results", "results_observed_at")
+    g.check(inputs.market_observed_at, "market_snapshots", "discovery.started_at")
+    g.check(inputs.discovery.finished_at, "market_snapshots", "discovery.finished_at")
+    for cm in inputs.models.values():
+        g.check(cm.fitted_at, "results", f"model {cm.competition_id} fitted_at")
+        if cm.latest_result_date is not None and cm.latest_result_date >= as_of.date():
+            raise FutureInformationError(
+                f"future information: model {cm.competition_id} fitted on a result dated {cm.latest_result_date} >= {as_of.date()}"
+            )
+    if inputs.reference_observed_at is not None:
+        g.check(inputs.reference_observed_at, "reference_odds", "reference_observed_at")
+    for fid, ctx in inputs.lineup_contexts.items():
+        g.check(getattr(ctx, "observed_at", None), "lineups", fid)
+    for fid, wx in getattr(inputs, "weather_contexts", {}).items():
+        g.check(getattr(wx, "observed_at", None), "weather", fid)
+    return g
+
+
 def _contract_record(
     w: ContractWork, run_id: str, as_of: datetime, inputs: RunInputs, summ: dict[str, Any]
 ) -> dict[str, Any]:
@@ -713,6 +738,8 @@ def _contract_record(
             "side": w.sem.side if w.sem else None,
             "line": str(w.sem.line) if w.sem and w.sem.line is not None else None,
             "period": w.sem.period.value if w.sem else None,
+            "k": w.sem.k if w.sem else None,
+            "player_slot": list(w.sem.player_slot) if (w.sem and w.sem.player_slot) else None,
             "description": w.priced.description,
         },
         "model_family": model_family_for(fx.competition_id),
