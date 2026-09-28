@@ -14,7 +14,7 @@ from typing import Any, Literal
 
 from pydantic import BaseModel, ConfigDict, Field, field_serializer
 
-APP_CONTRACT_VERSION = "1.1.0"
+APP_CONTRACT_VERSION = "1.2.0"
 
 Sport = Literal["soccer", "mlb", "nfl", "cfb", "nba", "other"]
 AuthorityLevel = Literal["RESEARCH_ONLY", "SHADOW", "LIMITED", "TRUSTED"]
@@ -117,6 +117,18 @@ class RecommendationV1(_Base):
         description="filled after settlement: side-aware close minus entry, positive is good",
     )
     close_class: Literal["TRUE_CLOSE", "NEAR_CLOSE", "PRE_CLOSE", "NONE"] | None = None
+    # --- v1.2 additive fields (remediation phases 9-10) ---
+    model_posterior_edge_share: float | None = Field(
+        default=None,
+        ge=0,
+        le=1,
+        description="accurate name for probability_edge_positive (diagnostic only)",
+    )
+    selection_policy: str | None = None
+    edge_v2_status: str | None = None
+    edge_v2_expected_net_ev: float | None = None
+    edge_v2_ev_lower: float | None = None
+    edge_v2_reference_quality: str | None = None
 
 
 class ModelHealthV1(_Base):

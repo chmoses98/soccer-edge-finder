@@ -256,6 +256,9 @@ def cmd_run(args: argparse.Namespace) -> int:
             )
             inputs.reference_lookup = lookup
             inputs.reference_observed_at = observed
+            from soccer_edge.reference.quality import quality_for_bookmaker
+
+            inputs.reference_quality = quality_for_bookmaker(inputs.reference_bookmaker).value
         except Exception as exc:
             stats = {"error": str(exc)[:200]}
         print("[reference]", json.dumps(stats, default=str)[:600])

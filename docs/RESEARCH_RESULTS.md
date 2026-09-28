@@ -96,3 +96,11 @@ The v1 numbers above stay frozen. Seven follow-up studies re-implement the same 
 Net: no retrospective evidence of information beyond a sharp bookmaker; what changed is that the model's
 defects are now named (intercept, width, statistic semantics) and every future change is a new version with a
 frozen comparison. Prospective evidence against Kalshi prices is the only remaining route (`docs/CALIBRATION.md`).
+
+
+## move_v1 — open-to-close movement (remediation phase 11)
+
+Protocol and code: `research/move_v1.py`; runner-side workflow `research-move.yml` (football-data.co.uk
+direct CSVs are reachable only from Actions). Result file: `data/research/move_v1.json` (committed by the
+workflow). Decision rule pre-registered in the module docstring: β lower bound > 0 pooled, β > 0 in ≥ 5/7
+seasons, directional accuracy lower bound > 0.5 — otherwise a preserved negative result.

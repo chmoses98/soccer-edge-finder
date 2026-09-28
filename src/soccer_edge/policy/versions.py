@@ -83,9 +83,21 @@ SELECTION_V1 = SelectionPolicy(
     description="Mission-1 production: fee-adjusted edge >= 2pt, P(edge>0) >= 0.80, worst-case > 0",
 )
 
+# Remediation phase 9 (audit B11, §G): P(edge>0) is retired from SELECTION. It equals the worst-case
+# gate in practice (both are quantiles of the same posterior) and, against a sharper market, ranks the
+# model's largest errors first. The value survives as the diagnostic `model_posterior_edge_share`.
+SELECTION_V2 = SelectionPolicy(
+    version="selection_v2",
+    min_fee_adjusted_edge=0.02,
+    min_p_edge_positive=0.0,
+    require_worst_case_positive=True,
+    description="fee-adjusted edge >= 0.02 and worst-case (q0.20) edge > 0; no P(edge>0) criterion",
+)
+
 # Research variants (RESEARCH_ONLY; replayed, never promoted here)
 SELECTION_VARIANTS: tuple[SelectionPolicy, ...] = (
     SELECTION_V1,
+    SELECTION_V2,
     SelectionPolicy(
         version="selection_v1_strict",
         min_fee_adjusted_edge=0.04,

@@ -79,3 +79,39 @@ every contract on that fixture `UNPRICEABLE` and raises a warning — it is a se
 Exact score, winning margin, HT/FT, first-half correct score, cards, corners, shots, assists,
 season futures, tournament advancement beyond one leg, combos. They are classified (or `UNKNOWN`),
 counted under `UNSUPPORTED_FAMILY`/`UNKNOWN_FAMILY`, and listed in every run's coverage report.
+
+
+## 6. Retail fee model and `edge_v2` (remediation phases 9–10, 2026-09-28)
+
+**Retail fee** (`kalshi/fees.py::retail_fee`, model `documented_cent_ceiling`): Kalshi's published
+retail schedule rounds the trading fee `0.07 × C × P × (1 − P)` **up to the next cent per fill** (maker
+0.0175 where the series charges maker fees). The `$0.000001` quantum model above reproduces a sibling
+repo's probe; the cent ceiling is what the documentation says a retail account pays. For one contract at
+5¢ they differ by 0.7¢, i.e. the true break-even of small retail fills is up to 1¢ higher (audit B9). An
+order filled across several price levels pays the fee per fill (`walk_fill_cost`), so a walked order can
+cost more than one fill at its VWAP. Verification status: `VERIFIED_FROM_DOCUMENTATION_NOT_FILL_RECONCILED`
+— only real fills on an account statement can settle which model an account pays (audit §R4).
+
+**`edge_v2`** (`pricing/edge_v2.py`; archived on every prediction record under `edge_v2.{yes,no}` and on
+recommendations as `edge_v2_*`; **never a betting authority**):
+
+```
+entry_cost      = executable price (order-book VWAP for the target size when a book is available,
+                  else top of book) + cent-rounded retail fee per contract
+p_ref           = de-vigged reference probability for the same contract and side
+p*              = p_ref + w_family · (p_model − p_ref)          w_family = 0 today ⇒ p* = p_ref
+expected_net_ev = p* − entry_cost
+σ_edge²         = σ_devig² + σ_stale² + w² · σ_struct²(family)   σ_stale = 0.0004/min × reference age
+ev_lower        = expected_net_ev − 1.645 · σ_edge
+candidate       ⇔ expected_net_ev ≥ 0.02 ∧ ev_lower ≥ 0.01      (research rule, archived only)
+```
+`status = NOT_EVALUATED` without a reference, with a reference older than 15 min, or without an
+executable quote. `reference_anchored` is true only when the reference is `SHARP_REFERENCE`; today no
+live sharp source exists (docs/REFERENCE_SOURCES.md), so every evaluated row is SECONDARY-anchored and
+flagged as such.
+
+**`P(edge > 0)` retired from selection.** `selection_v2` (`policy/versions.py`) selects shadow
+candidates on `fee_adjusted_edge ≥ 0.02 ∧ worst_case_edge > 0` only; the value is kept on every record
+under the accurate name `model_posterior_edge_share` (the share of the model's own posterior worlds in
+which the model beats the price — audit B11: it ranks model–market disagreement, and the market is right).
+`probability_edge_positive` stays on the app contract for one version (1.2.0) for compatibility.
