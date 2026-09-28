@@ -185,7 +185,7 @@ via a new policy version and the replay tool.
 ## O. Files / PRs
 
 PRs: #5 (horizon fix, diagnostics, reference layer, probes), #6 (ESPN, lineups, policy replay, router importer,
-microstructure, coverage expansion, xG, weather, rest), PR_PLACEHOLDER (research results). CLI subcommands: `run,
+microstructure, coverage expansion, xG, weather, rest), #7 (empty-cache and parser fixes), #8 (research results, qualifier mapping, reference-step fix). CLI subcommands: `run,
 discover, capture, capture-reference, espn-sync, espn-backfill, replay-policies, settle, export-schemas,
 import-wagers, import-settlements, validate-positions-ledger, microstructure, reconcile-discovery`. Workflows:
 ci, kalshi-discover, kalshi-capture, run-soccer, settle-evaluate, diagnostics, espn-lineups, espn-backfill,
