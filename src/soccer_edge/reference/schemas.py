@@ -65,6 +65,18 @@ class ReferenceMarketSnapshot(BaseModel):
     is_closing: bool = False
     minutes_to_kickoff: float | None = None
     liquidity_note: str = "bookmaker screen price; no size information"
+    # --- v2 fields (remediation phase 7; optional so archived v1 rows still load) ---
+    market_family: str | None = (
+        None  # Kalshi family this quote maps to ('match_result_3way', 'total_goals', 'handicap')
+    )
+    side: str | None = None  # same as `selection`, named as the contract side
+    decimal_odds: Decimal | None = None  # == raw_odds (decimal); explicit for consumers
+    horizon_seconds: float | None = None  # kickoff - captured_at
+    is_open: bool = False  # an opening quote (historical open/close sources only)
+    is_close_candidate: bool = False  # captured inside the reference close window (<= 120 min)
+    source_quality: str | None = (
+        None  # SHARP_REFERENCE | SECONDARY_REFERENCE | KALSHI_ONLY | UNAVAILABLE
+    )
 
     def fingerprint(self) -> str:
         return content_hash(

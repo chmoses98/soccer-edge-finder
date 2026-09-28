@@ -70,6 +70,7 @@ _RULES: tuple[tuple[str, str, bool, bool], ...] = (
     ("runs/*/*/*.md", "run_output", False, True),
     ("fixtures/espn/*/*.json", "espn_fixtures", False, True),
     ("recovery/*.json", "recovery_manifest", False, True),
+    ("dispatch/horizons.jsonl", "horizon_log", False, False),
 )
 
 _MUTABLE_GLOBS = (
@@ -85,6 +86,8 @@ _MUTABLE_GLOBS = (
     "README.md",
     "manifest/*",
     "manifest/*/*",
+    "dispatch/schedule.json",
+    "dispatch/diagnostics.json",
 )
 
 

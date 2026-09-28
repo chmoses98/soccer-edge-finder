@@ -41,10 +41,17 @@ from soccer_edge.kalshi.fees import FeeRegime, fee_per_contract
 from soccer_edge.kalshi.taxonomy import MarketFamily, Period
 from soccer_edge.pricing.semantics import Semantics
 from soccer_edge.providers.interfaces import MatchResult
+from soccer_edge.reference.close import (
+    close_completeness,
+    kalshi_close_for,
+    reference_close_for,
+    side_probability,
+)
 from soccer_edge.reference.schemas import classify_close
 from soccer_edge.settlement.engine import OfficialResult, SettlementOutcome, settle
 from soccer_edge.settlement.resolve import (
     CoverageRow,
+    CoverageRows,
     ResultIndex,
     SettlementState,
     coverage_report,
@@ -57,6 +64,7 @@ from soccer_edge.settlement.resolve import official_from_result as _official_fro
 
 __all__ = [
     "CoverageRow",
+    "CoverageRows",
     "ResultIndex",
     "SettlementState",
     "build_result_index",
@@ -107,6 +115,80 @@ def load_close_quotes(
                     cat, _dec(rec.get("yes_bid")), _dec(rec.get("yes_ask")), _dec(rec.get("no_ask"))
                 )
     return best
+
+
+def load_snapshot_rows(snapshots_dir: Path, tickers: set[str]) -> dict[str, list[dict[str, Any]]]:
+    """Every archived snapshot row per ticker (the close-v2 search needs the history, not only the last)."""
+    out: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    if not snapshots_dir.exists():
+        return out
+    for path in sorted(snapshots_dir.glob("*/*.jsonl")):
+        for r in read_jsonl(path):
+            t = r.get("ticker")
+            if t in tickers:
+                out[t].append(r)
+    return out
+
+
+def load_reference_rows(
+    reference_dir: Path | None, fixture_ids: set[str]
+) -> dict[tuple[str, str, str, str | None], list[dict[str, Any]]]:
+    """Every archived reference row per (fixture, market, selection, line), all bookmakers."""
+    out: dict[tuple[str, str, str, str | None], list[dict[str, Any]]] = defaultdict(list)
+    if reference_dir is None or not reference_dir.exists():
+        return out
+    for path in sorted(reference_dir.glob("*/*.jsonl")):
+        for r in read_jsonl(path):
+            if r.get("fixture_id") in fixture_ids:
+                line = r.get("line")
+                key = (
+                    r["fixture_id"],
+                    r["market"],
+                    r["selection"],
+                    str(Decimal(str(line))) if line not in (None, "") else None,
+                )
+                out[key].append(r)
+    return out
+
+
+def close_v2_for_record(
+    rec: dict[str, Any],
+    kickoff: datetime,
+    snapshot_rows: list[dict[str, Any]],
+    reference_rows: list[dict[str, Any]],
+) -> dict[str, Any]:
+    """Side-aware close capture for one prediction record (docs/PRELAUNCH_AUDIT.md §K, phase 8)."""
+    kc = kalshi_close_for(snapshot_rows, kickoff)
+    rc = reference_close_for(reference_rows, kickoff)
+    market = rec.get("market") or {}
+    entry_yes_ask, entry_yes_bid = _dec(market.get("yes_ask")), _dec(market.get("yes_bid"))
+    ref_entry = (rec.get("reference") or {}).get("probability_yes")
+    entry = {
+        "kalshi": {
+            "yes": str(entry_yes_ask) if entry_yes_ask is not None else None,
+            "no": str(Decimal(1) - entry_yes_bid) if entry_yes_bid is not None else None,
+            "captured_at": rec.get("market_as_of"),
+        },
+        "reference": {
+            "probability_yes": ref_entry,
+            "probability_no": side_probability(ref_entry, "no"),
+            "bookmaker": (rec.get("reference") or {}).get("bookmaker"),
+            "observed_at": (rec.get("reference") or {}).get("observed_at"),
+        },
+    }
+    kj = kc.to_json()
+    rj = rc.to_json()
+    rj["probability_no"] = side_probability(rc.probability_yes, "no")
+    return {
+        "schema": "close_v2",
+        "entry": entry,
+        "kalshi": kj,
+        "reference": rj,
+        "complete": {
+            "reference_close": rc.close_class.value in ("TRUE_CLOSE", "NEAR_CLOSE"),
+            "kalshi_close": kc.close_class.value == "KALSHI_CLOSE",
+        },
+    }
 
 
 def _dec(v: Any) -> Decimal | None:
@@ -263,6 +345,18 @@ def settle_ledger(
     closes = load_close_quotes(snapshots_dir, kickoff_by_ticker)
     kickoff_by_fixture = {r["fixture_id"]: parse_iso_utc(r["kickoff_utc"]) for r in records}
     ref_close = load_reference_close(reference_dir, kickoff_by_fixture) if reference_dir else {}
+    snap_rows = load_snapshot_rows(snapshots_dir, set(kickoff_by_ticker))
+    ref_rows = load_reference_rows(reference_dir, set(kickoff_by_fixture))
+    close_rows: list[dict[str, Any]] = []
+
+    def _close_v2(rec: dict[str, Any], ko: datetime) -> dict[str, Any]:
+        key = _reference_key(rec)
+        cv = close_v2_for_record(
+            rec, ko, snap_rows.get(rec["ticker"], []), ref_rows.get(key, []) if key else []
+        )
+        close_rows.append({"close_v2": cv})
+        return cv
+
     written: list[dict[str, Any]] = []
 
     def _cov(
@@ -293,6 +387,7 @@ def settle_ledger(
         if ko + grace > as_of:
             _cov(rec, SettlementState.PENDING_KICKOFF, "kickoff + grace in the future")
             continue
+        cv2 = _close_v2(rec, ko)
         try:
             sem = semantics_from_record(rec)
         except (KeyError, ValueError) as exc:
@@ -388,10 +483,15 @@ def settle_ledger(
             else None,
             "recommended": rec.get("recommendation", {}),
             "settled_at": iso_utc(as_of),
+            "close_v2": cv2,
         }
         out["clv_model_signed_points"] = model_signed_clv(out)
         settlements.append(out, when=as_of)
         written.append(out)
+    if coverage_rows is not None:
+        # close completeness over every due record (settled or pending), attached for the coverage report
+        if isinstance(coverage_rows, CoverageRows):
+            coverage_rows.close_completeness = close_completeness(close_rows)
     return written
 
 

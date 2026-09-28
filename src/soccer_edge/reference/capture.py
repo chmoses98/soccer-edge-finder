@@ -20,7 +20,11 @@ from soccer_edge.core.time import ensure_utc
 from soccer_edge.families.base import devig_power, devig_proportional
 from soccer_edge.identity.models import Fixture
 from soccer_edge.providers.interfaces import OddsQuote
+from soccer_edge.reference.close import NEAR_CLOSE_MAX_MINUTES
+from soccer_edge.reference.quality import quality_for_bookmaker
 from soccer_edge.reference.schemas import DevigMethod, ReferenceMarketSnapshot
+
+MARKET_FAMILY_FOR = {"1x2": "match_result_3way", "ou": "total_goals", "ah": "handicap"}
 
 SELECTION_ORDER = {"1x2": ("home", "draw", "away"), "ou": ("over", "under"), "ah": ("home", "away")}
 
@@ -109,6 +113,13 @@ def build_snapshots(
                     quoted_at=None,
                     is_closing=False,
                     minutes_to_kickoff=mins,
+                    market_family=MARKET_FAMILY_FOR.get(market),
+                    side=s,
+                    decimal_odds=Decimal(str(sels[s].decimal_odds)),
+                    horizon_seconds=(mins * 60) if mins is not None else None,
+                    is_open=False,
+                    is_close_candidate=(mins is not None and 0 <= mins <= NEAR_CLOSE_MAX_MINUTES),
+                    source_quality=quality_for_bookmaker(book).value,
                 )
             )
     snaps.extend(consensus_snapshots(snaps))
@@ -149,6 +160,8 @@ def consensus_snapshots(snaps: list[ReferenceMarketSnapshot]) -> list[ReferenceM
                     "raw_odds": raw,
                     "implied_probability": p,
                     "devigged_probability": p,
+                    "decimal_odds": raw,
+                    "source_quality": quality_for_bookmaker("consensus").value,
                     "liquidity_note": f"consensus of {n} source(s): football-data.co.uk average when present, else mean of named books",
                 }
             )
