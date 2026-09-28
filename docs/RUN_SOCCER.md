@@ -5,7 +5,14 @@ soccer run --date 2026-10-10 [--league eng.premier_league ...] [--game eng.arsen
            [--window 72] [--confirmed-lineups-only] [--worlds 1000] [--draws 100]
            [--out-dir data/runs/latest] [--archive-dir <ledger>] [--sim-cache <dir>]
            [--no-freshness-gate] [--fail-on-incomplete] [--synthetic-kalshi]
+           [--reference-dir <dir>] [--no-reference] [--espn-dir <data-archive checkout>]
 ```
+
+Phase 2 flags: `--reference-dir` appends football-data.co.uk reference snapshots (change-suppressed) and
+attaches the consensus probability to every record; `--no-reference` skips that fetch (a reference failure is
+never fatal either way); `--espn-dir` points at a `data-archive` checkout so ESPN-fed competitions (MLS, Liga MX,
+Brasileirão, Argentina, the international pool) are assembled from `results/espn` + `fixtures/espn` when they
+have ≥50 pooled results. Rest/congestion context and lineup state are recorded per fixture; neither changes prices.
 
 ## What it does, in order
 
