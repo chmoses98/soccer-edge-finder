@@ -58,7 +58,7 @@ jobs:
         if: always()
         run: |
           mkdir -p data/diagnostics
-          cp work/espn/STATUS.json data/diagnostics/latest_espn_status.json
+          [ -f work/espn/STATUS.json ] && cp work/espn/STATUS.json data/diagnostics/latest_espn_status.json || echo 'no STATUS.json'
           git config user.name "soccer-edge-bot"; git config user.email "soccer-edge-bot@users.noreply.github.com"
           git add data/diagnostics/latest_espn_status.json
           git diff --cached --quiet && echo "no change" || (git commit -m "diagnostics: espn status $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]" && git pull --rebase origin ${{ github.ref_name }} && git push origin HEAD:${{ github.ref_name }})

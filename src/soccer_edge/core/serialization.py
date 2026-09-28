@@ -94,3 +94,14 @@ def read_jsonl(path: Path) -> list[dict[str, Any]]:
             if line:
                 out.append(json.loads(line))
     return out
+
+
+def read_json_or(path: Path, default: Any) -> Any:
+    """read_json that treats a missing, empty or unparsable file as `default` (used for restore-from-archive
+    caches, where a failed `git show` leaves an empty file behind)."""
+    try:
+        if not path.exists() or path.stat().st_size == 0:
+            return default
+        return read_json(path)
+    except (OSError, ValueError):
+        return default

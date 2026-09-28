@@ -15,7 +15,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Any
 
-from soccer_edge.core.serialization import append_jsonl, read_json, write_json
+from soccer_edge.core.serialization import append_jsonl, read_json_or, write_json
 from soccer_edge.core.time import ensure_utc, utc_now
 from soccer_edge.providers.http import CachedFetcher
 
@@ -78,9 +78,7 @@ class OpenMeteoProvider:
     ) -> None:
         self.fetcher = fetcher or CachedFetcher(max_age=timedelta(hours=1))
         self.cache_path = cache_path
-        self._geo: dict[str, dict[str, Any]] = (
-            read_json(cache_path) if cache_path and cache_path.exists() else {}
-        )
+        self._geo: dict[str, dict[str, Any]] = read_json_or(cache_path, {}) if cache_path else {}
 
     def geocode(self, city: str | None, country: str | None) -> Geo | None:
         key = geocode_key(city, country)
