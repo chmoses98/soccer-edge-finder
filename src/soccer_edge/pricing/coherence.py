@@ -14,6 +14,7 @@ from soccer_edge.pricing.pricer import PricedProbability
 from soccer_edge.pricing.semantics import Semantics
 
 TOL = 1e-9
+MEAN_INTERVAL_TOL = 0.01  # skewed world distributions: mean may exceed p90 by a hair; see audit()
 
 
 def audit(priced: list[tuple[Semantics, PricedProbability]], *, tol: float = TOL) -> list[str]:
@@ -23,7 +24,10 @@ def audit(priced: list[tuple[Semantics, PricedProbability]], *, tol: float = TOL
     for sem, p in priced:
         if not (0.0 <= p.fair_mean <= 1.0):
             problems.append(f"{p.ticker}: probability out of bounds {p.fair_mean}")
-        if not (p.p_low - tol <= p.fair_mean <= p.p_high + tol):
+        # The mean of a skewed per-world distribution can legitimately sit outside the central 80%
+        # interval (e.g. 90% of worlds at 0, 10% at 0.001 -> mean 1e-4 > p90 = 0). Only a material
+        # excursion (> MEAN_INTERVAL_TOL probability points) indicates a pricing bug.
+        if not (p.p_low - MEAN_INTERVAL_TOL <= p.fair_mean <= p.p_high + MEAN_INTERVAL_TOL):
             problems.append(f"{p.ticker}: mean outside interval")
         if (
             sem.family

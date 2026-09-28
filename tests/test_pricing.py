@@ -315,3 +315,25 @@ def test_second_half_and_first_half_exact_score_semantics(sim):
         )
     )
     assert adv.family is MarketFamily.MATCH_WINNER_2WAY and adv.period is Period.INCLUDING_PENS
+
+
+def test_coherence_tolerates_skewed_mean_outside_central_interval():
+    """Mean of a skewed world distribution may sit just above p90; only material excursions are bugs."""
+    from soccer_edge.pricing.coherence import audit
+    from soccer_edge.pricing.pricer import PricedProbability
+
+    p_ok = PricedProbability.__new__(PricedProbability)
+    for k, v in {"ticker": "T1", "fair_mean": 1e-4, "p_low": 0.0, "p_high": 0.0}.items():
+        object.__setattr__(p_ok, k, v)
+    p_bad = PricedProbability.__new__(PricedProbability)
+    for k, v in {"ticker": "T2", "fair_mean": 0.30, "p_low": 0.0, "p_high": 0.05}.items():
+        object.__setattr__(p_bad, k, v)
+
+    class Sem:
+        family = None
+        side = None
+        line = None
+        period = None
+
+    assert audit([(Sem(), p_ok)]) == []
+    assert any("mean outside interval" in m for m in audit([(Sem(), p_bad)]))
