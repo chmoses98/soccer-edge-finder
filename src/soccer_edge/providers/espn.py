@@ -241,6 +241,67 @@ class LineupSnapshot:
 # ---------------------------------------------------------------- pure parsers (offline-testable)
 
 
+INTERNATIONAL_LEAGUE_PREFIXES = (
+    "fifa.",
+    "uefa.nations",
+    "uefa.euro",
+    "concacaf.nations",
+    "concacaf.gold",
+    "conmebol.america",
+    "afc.asian",
+    "caf.nations",
+)
+# ESPN venue country vs national-team display name: accepted equivalences (never inferred beyond this list)
+_COUNTRY_ALIASES: dict[str, set[str]] = {
+    "united states": {"usa", "united states of america"},
+    "republic of ireland": {"ireland"},
+    "czech republic": {"czechia"},
+    "turkey": {"turkiye", "türkiye"},
+    "south korea": {"korea republic", "korea", "republic of korea"},
+    "north korea": {"korea dpr", "dpr korea"},
+    "iran": {"ir iran", "islamic republic of iran"},
+    "china": {"china pr", "people's republic of china"},
+    "ivory coast": {"cote d'ivoire", "côte d'ivoire"},
+    "bosnia and herzegovina": {"bosnia-herzegovina", "bosnia & herzegovina"},
+    "cape verde": {"cabo verde"},
+    "eswatini": {"swaziland"},
+    "north macedonia": {"macedonia", "fyr macedonia"},
+    "united arab emirates": {"uae"},
+    "england": {"united kingdom"},
+    "scotland": {"united kingdom"},
+    "wales": {"united kingdom"},
+    "northern ireland": {"united kingdom"},
+    "netherlands": {"holland"},
+    "trinidad and tobago": {"trinidad & tobago"},
+    "dr congo": {
+        "congo dr",
+        "democratic republic of the congo",
+        "congo, democratic republic of the",
+    },
+}
+
+
+def _country_key(name: str) -> str:
+    return re.sub(r"[^a-z' &]", "", (name or "").strip().lower())
+
+
+def infer_neutral_site(
+    league: str, espn_flag: bool, home_name: str, venue_country: str | None
+) -> tuple[bool, str]:
+    """(neutral, source). ESPN's `neutralSite` flag is honoured when set. For international competitions,
+    a venue country that is not the home team's country (after the explicit alias list) marks the match
+    neutral (audit B7: the flag was never set on 1,014 archived international results while ~36% of
+    such matches are neutral). Club competitions never infer neutrality from the venue."""
+    if espn_flag:
+        return True, "espn_flag"
+    if not league.startswith(INTERNATIONAL_LEAGUE_PREFIXES) or not venue_country:
+        return False, "unknown" if league.startswith(INTERNATIONAL_LEAGUE_PREFIXES) else "club"
+    h, v = _country_key(home_name), _country_key(venue_country)
+    if h == v or v in _COUNTRY_ALIASES.get(h, set()) or h in _COUNTRY_ALIASES.get(v, set()):
+        return False, "venue_country_matches_home"
+    return True, "venue_country_mismatch"
+
+
 def parse_scoreboard(league: str, body: dict[str, Any]) -> list[EspnEvent]:
     out: list[EspnEvent] = []
     for ev in body.get("events") or []:
@@ -285,7 +346,14 @@ def parse_scoreboard(league: str, body: dict[str, Any]) -> list[EspnEvent]:
                 home_abbr=home["team"].get("abbreviation") or "",
                 away_abbr=away["team"].get("abbreviation") or "",
                 venue=((comp.get("venue") or ev.get("venue") or {}).get("fullName")),
-                neutral_site=bool(comp.get("neutralSite") or ev.get("neutralSite") or False),
+                neutral_site=infer_neutral_site(
+                    league,
+                    bool(comp.get("neutralSite") or ev.get("neutralSite") or False),
+                    home["team"].get("displayName") or home["team"].get("name") or "",
+                    ((comp.get("venue") or ev.get("venue") or {}).get("address") or {}).get(
+                        "country"
+                    ),
+                )[0],
                 home_score=_score(home),
                 away_score=_score(away),
                 season_year=season.get("year"),

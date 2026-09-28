@@ -99,6 +99,9 @@ class RunConfig:
     engine_version: str = (
         ENGINE_V1  # ENGINE_V2 prices full-time families analytically from the DC matrix
     )
+    # audit §E6: international-pool records stay out of every shadow list until intl_hier_v1 passes its
+    # frozen holdout (docs/INTERNATIONAL_MODEL.md); the records are still archived as evidence
+    intl_shadows_enabled: bool = False
 
 
 @dataclass
@@ -477,6 +480,7 @@ def run(
             )
     candidates: list[Candidate] = []
     per_contract: list[dict[str, Any]] = []
+    gate_excluded: dict[str, str] = {}
     for tk, w in works.items():
         if w.priced is None or tk in cov.dispositions:
             continue
@@ -538,6 +542,13 @@ def run(
                 if a.side == "yes"
                 else float((w.market.no_ask_size or w.market.yes_bid_size) or 0),
             )
+            if (
+                selected
+                and not cfg.intl_shadows_enabled
+                and w.fixture.competition_id in INTL_POOL_COMPETITIONS
+            ):
+                selected = False
+                gate_excluded[f"{tk}|{a.side}"] = "intl_pool_not_validated (audit §E6)"
             if selected:
                 candidates.append(
                     Candidate(
@@ -585,6 +596,7 @@ def run(
     recs: list[RecommendationV1] = []
     shadow: list[RecommendationV1] = []
     removed_keys = {f"{c.assessment.ticker}|{c.assessment.side}": r for c, r in reduced.removed}
+    removed_keys.update(gate_excluded)
     for c in reduced.kept:
         w = works[c.assessment.ticker]
         fx = w.fixture

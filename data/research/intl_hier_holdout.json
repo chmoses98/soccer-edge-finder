@@ -1,0 +1,175 @@
+{
+ "schema": "intl_hier_holdout_v1",
+ "protocol": "intl_hier_v1_protocol_v1",
+ "chosen": "w1.0_h3.0",
+ "chosen_config": {
+  "friendly_weight": 1.0,
+  "half_life_years": 3.0
+ },
+ "holdout_window": [
+  "2022-01-01",
+  "2026-08-26"
+ ],
+ "evaluation": {
+  "n": 4563,
+  "ll_hier": 0.8671357237417671,
+  "ece_hier": {
+   "home": 0.021524704978956918,
+   "draw": 0.0102332664199153,
+   "away": 0.026295318177819153
+  },
+  "ll_pool": 0.9715865990459451,
+  "ece_pool": {
+   "home": 0.030596014866789666,
+   "draw": 0.01861196282723592,
+   "away": 0.046631180201853195
+  },
+  "ll_elo": 0.8738778333395638,
+  "ece_elo": {
+   "home": 0.015177310475353548,
+   "draw": 0.013795135127113414,
+   "away": 0.01460016968883121
+  },
+  "paired_hier_minus_pool": {
+   "mean": -0.10445087530417804,
+   "ci95": [
+    -0.11642071902974223,
+    -0.0912436590700184
+   ],
+   "n": 4563
+  },
+  "paired_hier_minus_elo": {
+   "mean": -0.006742109597796827,
+   "ci95": [
+    -0.01269722757606418,
+    -0.001234042719645511
+   ],
+   "n": 4563
+  },
+  "competitive": {
+   "n": 3307,
+   "ll_hier": 0.8555166193802014,
+   "ll_pool": 0.9652710880485854,
+   "ll_elo": 0.8638140548749058,
+   "paired_hier_minus_pool": {
+    "mean": -0.10975446866838393,
+    "ci95": [
+     -0.12345630077388649,
+     -0.09415025309556306
+    ],
+    "n": 3307
+   },
+   "paired_hier_minus_elo": {
+    "mean": -0.008297435494704396,
+    "ci95": [
+     -0.014773879110684285,
+     -0.001880210202638675
+    ],
+    "n": 3307
+   }
+  },
+  "friendly": {
+   "n": 1256,
+   "ll_hier": 0.8977283814835646,
+   "ll_pool": 0.9882150981448852,
+   "ll_elo": 0.90037537743401,
+   "paired_hier_minus_pool": {
+    "mean": -0.09048671666132066,
+    "ci95": [
+     -0.11535967196004739,
+     -0.06567480988003453
+    ],
+    "n": 1256
+   },
+   "paired_hier_minus_elo": {
+    "mean": -0.0026469959504454564,
+    "ci95": [
+     -0.013445372920492792,
+     0.008866853178541516
+    ],
+    "n": 1256
+   }
+  },
+  "neutral": {
+   "n": 1580,
+   "ll_hier": 0.9041475484636591,
+   "ll_pool": 1.024856963774086,
+   "ll_elo": 0.9148125593434859,
+   "paired_hier_minus_pool": {
+    "mean": -0.12070941531042734,
+    "ci95": [
+     -0.1425244420713619,
+     -0.09738136067209294
+    ],
+    "n": 1580
+   },
+   "paired_hier_minus_elo": {
+    "mean": -0.010665010879826964,
+    "ci95": [
+     -0.01907103671295804,
+     -0.001921696389142136
+    ],
+    "n": 1580
+   }
+  },
+  "cross_confederation": {
+   "n": 769,
+   "ll_hier": 0.8778486266526051,
+   "ll_pool": 1.0111669864568014,
+   "ll_elo": 0.9095139947805859,
+   "paired_hier_minus_pool": {
+    "mean": -0.13331835980419623,
+    "ci95": [
+     -0.1681043905395183,
+     -0.09711211487682606
+    ],
+    "n": 769
+   },
+   "paired_hier_minus_elo": {
+    "mean": -0.03166536812798076,
+    "ci95": [
+     -0.05129551036812071,
+     -0.01253113180868135
+    ],
+    "n": 769
+   }
+  },
+  "mismatch": {
+   "elo_gap_300_400": {
+    "n": 597,
+    "mean_p_underdog": 0.0783975218513835,
+    "realised_underdog": 0.08207705192629816,
+    "max_p_underdog": 0.22131155139528885,
+    "n_priced_gt_2x_realised": 16
+   },
+   "elo_gap_400_10000": {
+    "n": 591,
+    "mean_p_underdog": 0.03263422021225561,
+    "realised_underdog": 0.028764805414551606,
+    "max_p_underdog": 0.27330104307629266,
+    "n_priced_gt_2x_realised": 95
+   }
+  },
+  "neutral_goals": {
+   "n": 1580,
+   "pred_home": 1.208550335890746,
+   "real_home": 1.3734177215189873,
+   "pred_away": 1.1674310877198733,
+   "real_away": 1.2329113924050632
+  },
+  "low_connectivity_share": 0.08327854481700636
+ },
+ "acceptance": {
+  "beats_pool_ci_upper_lt_0": true,
+  "beats_elo_ci_upper_lt_0": true,
+  "beats_both_on_competitive": true,
+  "beats_both_on_friendlies": false,
+  "mismatch_300_calibrated_within_2pt": true,
+  "no_gap_ge_400_priced_gt_2x_realised": false,
+  "ece_le_0_03_each_outcome": true,
+  "neutral_goals_within_0_05": false,
+  "all_pass": false
+ },
+ "frozen_at": "2026-09-28T19:36:51.006650+00:00",
+ "note": "ONE-TIME holdout; configuration chosen on 2014-2021 only"
+}
