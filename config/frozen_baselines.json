@@ -44,10 +44,11 @@
       ],
       "model_module": "src/soccer_edge/model/multi_league.py (RESEARCH_ONLY; StrengthConfig v1 untouched)",
       "result_file": "data/research/multi_league_v1.json",
-      "result_hash": "see result_hash inside the result file; re-run reproduces it from the same CSV content hash and openfootball file hashes",
+      "result_hash": "sha256:a716e7a09fc7df83db10d0271eb04e83b53bca3bafd4f32039dfa5232b0c075e",
       "companion": "data/research/context_features_v1.json (research/context_features.py, consumes data/research/multi_league_v1_predictions.csv)",
       "data_source": "club_football_match_data Matches.csv (local cache), leagues E0,E1,SP1,SP2,D1,D2,I1,I2,F1,F2 (+P1,N1,B1,T1,SC0,G1 for ext16) from 2017-07-01; openfootball champions-league repo cl/el/conf .txt 2014-15..2025-26; domestic aligned sample = walk_forward_v1 sample (E0,SP1,D1,I1,F1, 2019-20..2025-26); UEFA scored 2018-19..2025-26",
-      "status": "RESEARCH_ONLY"
+      "status": "RESEARCH_ONLY",
+      "decision": "domestic: -0.0022 [-0.0036,-0.0006] LL vs dc_laplace_v1, +0.026 behind market, hybrid weight 1.0; UEFA: beats naive single-league combination, indistinguishable from Elo logistic; RESEARCH_ONLY candidate for UEFA research pricing only"
     },
     "home_bias_v1": {
       "protocol": "research/home_bias.py (pre-registered H1-H8; verdicts in docs/RESEARCH_HOME_BIAS.md)",
@@ -69,6 +70,14 @@
       "result_file": "data/research/market_families_v1.json",
       "result_hash": "see result_hash inside the result file",
       "decision": "market better in every family, league and season; no family-level edge",
+      "status": "RESEARCH_ONLY"
+    },
+    "context_features_v1": {
+      "protocol": "research/context_features.py (walk-forward residual logistic on reference logits + feature block; paired bootstrap)",
+      "depends_on": "multi_league_v1 predictions (data/research/multi_league_v1_predictions.csv, gitignored; regenerate with `research/multi_league.py assemble`)",
+      "result_file": "data/research/context_features_v1.json",
+      "result_hash": "sha256:b148f22983794dc95ccf9857af6e4811beed856c18a0b14473f267a8413f5cb6",
+      "decision": "rest: no information; congestion: ~-0.001 log loss vs every reference (detectable, negligible); calendar: nothing; features stay context-only",
       "status": "RESEARCH_ONLY"
     }
   },

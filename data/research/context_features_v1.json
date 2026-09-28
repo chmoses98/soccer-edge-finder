@@ -1,0 +1,555 @@
+{
+  "elapsed_s": 41.6,
+  "feature_definitions": {
+    "blocks": {
+      "all": [
+        "rest_home",
+        "rest_away",
+        "rest_diff",
+        "n7_home",
+        "n7_away",
+        "n14_home",
+        "n14_away",
+        "n28_home",
+        "n28_away",
+        "n7_diff",
+        "n28_diff",
+        "early_home",
+        "early_away",
+        "post_break"
+      ],
+      "calendar": [
+        "early_home",
+        "early_away",
+        "post_break"
+      ],
+      "congestion": [
+        "n7_home",
+        "n7_away",
+        "n14_home",
+        "n14_away",
+        "n28_home",
+        "n28_away",
+        "n7_diff",
+        "n28_diff"
+      ],
+      "rest": [
+        "rest_home",
+        "rest_away",
+        "rest_diff"
+      ]
+    },
+    "note": "domestic league matches only; cups/UEFA absent from the CSV -> rest is an upper bound, congestion a lower bound"
+  },
+  "feature_summary": {
+    "early_away": {
+      "mean": 0.13,
+      "sd": 0.337
+    },
+    "early_home": {
+      "mean": 0.131,
+      "sd": 0.337
+    },
+    "n14_away": {
+      "mean": 1.585,
+      "sd": 0.817
+    },
+    "n14_home": {
+      "mean": 1.58,
+      "sd": 0.818
+    },
+    "n28_away": {
+      "mean": 3.192,
+      "sd": 1.235
+    },
+    "n28_diff": {
+      "mean": -0.003,
+      "sd": 0.586
+    },
+    "n28_home": {
+      "mean": 3.189,
+      "sd": 1.233
+    },
+    "n7_away": {
+      "mean": 0.716,
+      "sd": 0.577
+    },
+    "n7_diff": {
+      "mean": 0.002,
+      "sd": 0.511
+    },
+    "n7_home": {
+      "mean": 0.719,
+      "sd": 0.575
+    },
+    "post_break": {
+      "mean": 0.038,
+      "sd": 0.19
+    },
+    "rest_away": {
+      "mean": 8.192,
+      "sd": 5.43
+    },
+    "rest_diff": {
+      "mean": -0.003,
+      "sd": 2.255
+    },
+    "rest_home": {
+      "mean": 8.189,
+      "sd": 5.418
+    }
+  },
+  "inputs": {
+    "n_predictions": 12338,
+    "n_without_features": 0,
+    "predictions_csv": "data/research/multi_league_v1_predictions.csv",
+    "seasons_in_sample": [
+      "2019-20",
+      "2020-21",
+      "2021-22",
+      "2022-23",
+      "2023-24",
+      "2024-25",
+      "2025-26",
+      "2026-27"
+    ],
+    "seasons_scored": [
+      "2020-21",
+      "2021-22",
+      "2022-23",
+      "2023-24",
+      "2024-25",
+      "2025-26",
+      "2026-27"
+    ]
+  },
+  "protocol": "context_features_v1",
+  "residual_tests": {
+    "core": {
+      "by_block": {
+        "all": {
+          "ci95": [
+            -0.0031,
+            -0.00067
+          ],
+          "ci95_vs_raw": [
+            -0.0011,
+            0.00356
+          ],
+          "coefficients_last_season_standardised": {
+            "early_away:draw": -0.0468,
+            "early_away:home": 0.0227,
+            "early_home:draw": 0.0638,
+            "early_home:home": -0.0208,
+            "n14_away:draw": 0.0037,
+            "n14_away:home": 0.0126,
+            "n14_home:draw": 0.0037,
+            "n14_home:home": 0.0339,
+            "n28_away:draw": -0.0279,
+            "n28_away:home": -0.0226,
+            "n28_diff:draw": 0.0103,
+            "n28_diff:home": 0.0278,
+            "n28_home:draw": -0.0229,
+            "n28_home:home": -0.0092,
+            "n7_away:draw": -0.046,
+            "n7_away:home": -0.0141,
+            "n7_diff:draw": 0.0224,
+            "n7_diff:home": 0.0141,
+            "n7_home:draw": -0.0263,
+            "n7_home:home": -0.0016,
+            "post_break:draw": -0.0011,
+            "post_break:home": -0.0121,
+            "rest_away:draw": -0.0415,
+            "rest_away:home": -0.0302,
+            "rest_diff:draw": 0.0161,
+            "rest_diff:home": 0.0136,
+            "rest_home:draw": -0.0349,
+            "rest_home:home": -0.0245
+          },
+          "improvement_vs_raw_ref": 0.00127,
+          "improvement_vs_recalibrated_ref": -0.0019,
+          "log_loss": 0.99751,
+          "significant_at_95": false
+        },
+        "calendar": {
+          "ci95": [
+            -0.00077,
+            0.00031
+          ],
+          "ci95_vs_raw": [
+            0.00081,
+            0.00504
+          ],
+          "coefficients_last_season_standardised": {
+            "early_away:draw": -0.047,
+            "early_away:home": 0.016,
+            "early_home:draw": 0.0659,
+            "early_home:home": -0.0238,
+            "post_break:draw": -0.0021,
+            "post_break:home": -0.0298
+          },
+          "improvement_vs_raw_ref": 0.00294,
+          "improvement_vs_recalibrated_ref": -0.00023,
+          "log_loss": 0.99584,
+          "significant_at_95": false
+        },
+        "congestion": {
+          "ci95": [
+            -0.00207,
+            -0.00017
+          ],
+          "ci95_vs_raw": [
+            -0.00024,
+            0.00434
+          ],
+          "coefficients_last_season_standardised": {
+            "n14_away:draw": 0.0221,
+            "n14_away:home": 0.0265,
+            "n14_home:draw": 0.0108,
+            "n14_home:home": 0.0386,
+            "n28_away:draw": -0.0225,
+            "n28_away:home": -0.0172,
+            "n28_diff:draw": 0.008,
+            "n28_diff:home": 0.0259,
+            "n28_home:draw": -0.0187,
+            "n28_home:home": -0.0047,
+            "n7_away:draw": -0.027,
+            "n7_away:home": 0.0008,
+            "n7_diff:draw": 0.0167,
+            "n7_diff:home": 0.0095,
+            "n7_home:draw": -0.0123,
+            "n7_home:home": 0.0093
+          },
+          "improvement_vs_raw_ref": 0.00202,
+          "improvement_vs_recalibrated_ref": -0.00116,
+          "log_loss": 0.99676,
+          "significant_at_95": false
+        },
+        "rest": {
+          "ci95": [
+            -0.0005,
+            0.00054
+          ],
+          "ci95_vs_raw": [
+            0.00107,
+            0.00532
+          ],
+          "coefficients_last_season_standardised": {
+            "rest_away:draw": -0.0017,
+            "rest_away:home": -0.0295,
+            "rest_diff:draw": -0.0011,
+            "rest_diff:home": -0.0057,
+            "rest_home:draw": -0.0022,
+            "rest_home:home": -0.0319
+          },
+          "improvement_vs_raw_ref": 0.0032,
+          "improvement_vs_recalibrated_ref": 3e-05,
+          "log_loss": 0.99558,
+          "significant_at_95": false
+        }
+      },
+      "n_scored": 10889,
+      "n_total": 12338,
+      "raw_reference_logloss": 0.99878,
+      "recalibrated_reference_logloss": 0.9956,
+      "reference": "core"
+    },
+    "dc": {
+      "by_block": {
+        "all": {
+          "ci95": [
+            -0.00335,
+            -0.00083
+          ],
+          "ci95_vs_raw": [
+            -0.00062,
+            0.00455
+          ],
+          "coefficients_last_season_standardised": {
+            "early_away:draw": -0.0792,
+            "early_away:home": -0.0439,
+            "early_home:draw": 0.0977,
+            "early_home:home": 0.0477,
+            "n14_away:draw": 0.0007,
+            "n14_away:home": 0.0086,
+            "n14_home:draw": 0.0001,
+            "n14_home:home": 0.0283,
+            "n28_away:draw": -0.0264,
+            "n28_away:home": -0.0191,
+            "n28_diff:draw": 0.0103,
+            "n28_diff:home": 0.0283,
+            "n28_home:draw": -0.0215,
+            "n28_home:home": -0.0055,
+            "n7_away:draw": -0.0486,
+            "n7_away:home": -0.0171,
+            "n7_diff:draw": 0.0227,
+            "n7_diff:home": 0.0137,
+            "n7_home:draw": -0.0286,
+            "n7_home:home": -0.005,
+            "post_break:draw": -0.0014,
+            "post_break:home": -0.0154,
+            "rest_away:draw": -0.0465,
+            "rest_away:home": -0.0347,
+            "rest_diff:draw": 0.0171,
+            "rest_diff:home": 0.0148,
+            "rest_home:draw": -0.0394,
+            "rest_home:home": -0.0285
+          },
+          "improvement_vs_raw_ref": 0.00193,
+          "improvement_vs_recalibrated_ref": -0.00209,
+          "log_loss": 0.99891,
+          "significant_at_95": false
+        },
+        "calendar": {
+          "ci95": [
+            -0.00078,
+            0.00036
+          ],
+          "ci95_vs_raw": [
+            0.00153,
+            0.0062
+          ],
+          "coefficients_last_season_standardised": {
+            "early_away:draw": -0.0818,
+            "early_away:home": -0.0535,
+            "early_home:draw": 0.1001,
+            "early_home:home": 0.0449,
+            "post_break:draw": -0.0027,
+            "post_break:home": -0.0326
+          },
+          "improvement_vs_raw_ref": 0.0038,
+          "improvement_vs_recalibrated_ref": -0.00022,
+          "log_loss": 0.99704,
+          "significant_at_95": false
+        },
+        "congestion": {
+          "ci95": [
+            -0.00253,
+            -0.00044
+          ],
+          "ci95_vs_raw": [
+            8e-05,
+            0.00505
+          ],
+          "coefficients_last_season_standardised": {
+            "n14_away:draw": 0.021,
+            "n14_away:home": 0.0245,
+            "n14_home:draw": 0.0084,
+            "n14_home:home": 0.034,
+            "n28_away:draw": -0.0203,
+            "n28_away:home": -0.0132,
+            "n28_diff:draw": 0.0078,
+            "n28_diff:home": 0.0261,
+            "n28_home:draw": -0.0165,
+            "n28_home:home": -0.0006,
+            "n7_away:draw": -0.0274,
+            "n7_away:home": 0.0003,
+            "n7_diff:draw": 0.0166,
+            "n7_diff:home": 0.0085,
+            "n7_home:draw": -0.0128,
+            "n7_home:home": 0.0079
+          },
+          "improvement_vs_raw_ref": 0.0025,
+          "improvement_vs_recalibrated_ref": -0.00151,
+          "log_loss": 0.99834,
+          "significant_at_95": false
+        },
+        "rest": {
+          "ci95": [
+            -0.0006,
+            0.00053
+          ],
+          "ci95_vs_raw": [
+            0.00163,
+            0.00628
+          ],
+          "coefficients_last_season_standardised": {
+            "rest_away:draw": -0.0037,
+            "rest_away:home": -0.0312,
+            "rest_diff:draw": -0.0001,
+            "rest_diff:home": -0.0041,
+            "rest_home:draw": -0.0038,
+            "rest_home:home": -0.033
+          },
+          "improvement_vs_raw_ref": 0.00399,
+          "improvement_vs_recalibrated_ref": -3e-05,
+          "log_loss": 0.99685,
+          "significant_at_95": false
+        }
+      },
+      "n_scored": 10889,
+      "n_total": 12338,
+      "raw_reference_logloss": 1.00084,
+      "recalibrated_reference_logloss": 0.99682,
+      "reference": "dc"
+    },
+    "mkt": {
+      "by_block": {
+        "all": {
+          "ci95": [
+            -0.00319,
+            -0.00081
+          ],
+          "ci95_vs_raw": [
+            -0.00364,
+            -0.00056
+          ],
+          "coefficients_last_season_standardised": {
+            "early_away:draw": -0.0927,
+            "early_away:home": -0.0498,
+            "early_home:draw": 0.1198,
+            "early_home:home": 0.0559,
+            "n14_away:draw": -0.0019,
+            "n14_away:home": 0.0018,
+            "n14_home:draw": 0.0129,
+            "n14_home:home": 0.0515,
+            "n28_away:draw": -0.0244,
+            "n28_away:home": -0.0192,
+            "n28_diff:draw": 0.012,
+            "n28_diff:home": 0.0308,
+            "n28_home:draw": -0.0186,
+            "n28_home:home": -0.0043,
+            "n7_away:draw": -0.0417,
+            "n7_away:home": -0.0128,
+            "n7_diff:draw": 0.023,
+            "n7_diff:home": 0.0146,
+            "n7_home:draw": -0.0214,
+            "n7_home:home": 0.0002,
+            "post_break:draw": 0.0034,
+            "post_break:home": -0.0136,
+            "rest_away:draw": -0.0369,
+            "rest_away:home": -0.0213,
+            "rest_diff:draw": 0.0135,
+            "rest_diff:home": 0.0056,
+            "rest_home:draw": -0.0313,
+            "rest_home:home": -0.019
+          },
+          "improvement_vs_raw_ref": -0.00208,
+          "improvement_vs_recalibrated_ref": -0.002,
+          "log_loss": 0.97464,
+          "significant_at_95": false
+        },
+        "calendar": {
+          "ci95": [
+            -0.00081,
+            0.00036
+          ],
+          "ci95_vs_raw": [
+            -0.0015,
+            0.00083
+          ],
+          "coefficients_last_season_standardised": {
+            "early_away:draw": -0.0924,
+            "early_away:home": -0.054,
+            "early_home:draw": 0.1193,
+            "early_home:home": 0.0497,
+            "post_break:draw": 0.001,
+            "post_break:home": -0.0302
+          },
+          "improvement_vs_raw_ref": -0.0003,
+          "improvement_vs_recalibrated_ref": -0.00021,
+          "log_loss": 0.97285,
+          "significant_at_95": false
+        },
+        "congestion": {
+          "ci95": [
+            -0.00209,
+            -0.00014
+          ],
+          "ci95_vs_raw": [
+            -0.00256,
+            0.00012
+          ],
+          "coefficients_last_season_standardised": {
+            "n14_away:draw": 0.0143,
+            "n14_away:home": 0.0109,
+            "n14_home:draw": 0.0197,
+            "n14_home:home": 0.0567,
+            "n28_away:draw": -0.0221,
+            "n28_away:home": -0.0165,
+            "n28_diff:draw": 0.0101,
+            "n28_diff:home": 0.0301,
+            "n28_home:draw": -0.0173,
+            "n28_home:home": -0.0021,
+            "n7_away:draw": -0.025,
+            "n7_away:home": -0.0017,
+            "n7_diff:draw": 0.018,
+            "n7_diff:home": 0.0126,
+            "n7_home:draw": -0.0091,
+            "n7_home:home": 0.0095
+          },
+          "improvement_vs_raw_ref": -0.00123,
+          "improvement_vs_recalibrated_ref": -0.00114,
+          "log_loss": 0.97378,
+          "significant_at_95": false
+        },
+        "rest": {
+          "ci95": [
+            -0.00051,
+            0.00048
+          ],
+          "ci95_vs_raw": [
+            -0.00125,
+            0.00099
+          ],
+          "coefficients_last_season_standardised": {
+            "rest_away:draw": -0.0008,
+            "rest_away:home": -0.025,
+            "rest_diff:draw": -0.0063,
+            "rest_diff:home": -0.0179,
+            "rest_home:draw": -0.0034,
+            "rest_home:home": -0.0326
+          },
+          "improvement_vs_raw_ref": -9e-05,
+          "improvement_vs_recalibrated_ref": -1e-05,
+          "log_loss": 0.97265,
+          "significant_at_95": false
+        }
+      },
+      "n_scored": 10889,
+      "n_total": 12338,
+      "raw_reference_logloss": 0.97255,
+      "recalibrated_reference_logloss": 0.97264,
+      "reference": "mkt"
+    }
+  },
+  "rest_diff_buckets": {
+    "rest_diff -2..-1": {
+      "dc_p_home": 0.4622,
+      "market_p_home": 0.4374,
+      "market_residual": 0.0087,
+      "n": 3309,
+      "realised_home_rate": 0.4461
+    },
+    "rest_diff -99..-3": {
+      "dc_p_home": 0.4658,
+      "market_p_home": 0.4426,
+      "market_residual": 0.0273,
+      "n": 381,
+      "realised_home_rate": 0.4698
+    },
+    "rest_diff 0..0": {
+      "dc_p_home": 0.4584,
+      "market_p_home": 0.432,
+      "market_residual": -0.0165,
+      "n": 4969,
+      "realised_home_rate": 0.4156
+    },
+    "rest_diff 1..2": {
+      "dc_p_home": 0.4618,
+      "market_p_home": 0.4405,
+      "market_residual": -0.0069,
+      "n": 3291,
+      "realised_home_rate": 0.4336
+    },
+    "rest_diff 3..99": {
+      "dc_p_home": 0.4506,
+      "market_p_home": 0.4371,
+      "market_residual": -0.0016,
+      "n": 388,
+      "realised_home_rate": 0.4356
+    }
+  },
+  "result_hash": "sha256:b148f22983794dc95ccf9857af6e4811beed856c18a0b14473f267a8413f5cb6",
+  "status": "RESEARCH_ONLY"
+}

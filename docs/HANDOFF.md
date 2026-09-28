@@ -125,7 +125,10 @@ records protocol, dependencies and the pre-stated decision rule for each.
   as equal-strength leagues, but **indistinguishable from a one-feature ClubElo logistic** (CIs straddle 0).
   Offsets correlate 0.93–0.95 with league mean Elo. Status: RESEARCH_ONLY candidate for UEFA *research*
   pricing; not a v1 replacement.
-* **Rest / congestion / context features (`docs/RESEARCH_CONTEXT_FEATURES.md`)** — CONTEXT_PLACEHOLDER
+* **Rest / congestion / context features (`docs/RESEARCH_CONTEXT_FEATURES.md`)** — walk-forward residual test on
+  top of the market, v1 and the multi-league posterior: rest days carry **no** residual information; trailing
+  7/14/28-day congestion carries a detectable but negligible ≈ −0.001 log loss against every reference (the
+  market does not fully price it either); calendar flags add nothing. Features stay context-only on records.
 
 Net: the retrospective evidence still says the model is not informative relative to a sharp bookmaker; Phase 2
 made it *honest about why* and built the prospective instruments (reference, CLV, close classes, replay) that
