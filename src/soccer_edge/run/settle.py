@@ -454,6 +454,7 @@ def settle_ledger(
             "fixture_id": rec["fixture_id"],
             "family": rec["family"],
             "model_family": rec["model_family"],
+            "worlds_version": rec.get("worlds_version"),
             "horizon": label_horizon((ko - parse_iso_utc(rec["as_of"])).total_seconds() / 60).value,
             "outcome": st.outcome.value,
             "evidence": {**st.evidence, "result_sources": resolution.sources},

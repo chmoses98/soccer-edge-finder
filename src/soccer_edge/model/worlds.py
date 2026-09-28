@@ -46,7 +46,42 @@ class WorldConfig:
     red_opp_attack_mult: float = 1.25
     # lineup layer: how much of a team's attack is 'explained' by named players (rest is depth)
     lineup_effect_cap: float = 0.35
+    # worlds_v2 (audit section F): parameter uncertainty = Laplace posterior x k. The scale is a property
+    # of the world layer (the ParameterPosterior stays the evidence-based covariance); 1.0 = raw Laplace.
+    posterior_sd_scale: float = 1.0
     version: str = "worlds_v1"
+
+
+WORLDS_V1 = "worlds_v1"
+WORLDS_V2 = "worlds_v2"
+
+# worlds_v2 k: re-estimated on dc_laplace_v2 by research/recalibration.py (grouped-residual estimator).
+# Adopted only when the audit's F4 acceptance passes; until then the scale is 1.0 (conservative) and the
+# status says so. Never edit WORLDS_V1_CONFIG: archived worlds_v1 records were produced with k = 1 and the
+# hand-set inflation term.
+WORLDS_V2_K = 1.0
+WORLDS_V2_K_STATUS = "NOT_YET_ESTIMATED_ON_V2"
+WORLDS_V1_CONFIG = WorldConfig()
+
+
+def worlds_v2_config(k: float | None = None) -> WorldConfig:
+    """worlds_v2: Laplace x k on the parameter draw, NO hand-set model-inflation term (structural model
+    error is a separate per-family term used by edge_v2, docs/UNCERTAINTY_MODEL.md), environment jitter
+    kept, everything else as v1. Full-time families under world_sim_v2 are priced analytically per world,
+    so the interval carries no Monte Carlo noise."""
+    return WorldConfig(
+        sigma_model_log_rate=0.0,
+        posterior_sd_scale=WORLDS_V2_K if k is None else float(k),
+        version=WORLDS_V2,
+    )
+
+
+def world_config_for(version: str) -> WorldConfig:
+    if version == WORLDS_V1:
+        return WORLDS_V1_CONFIG
+    if version == WORLDS_V2:
+        return worlds_v2_config()
+    raise ValueError(f"unknown worlds version {version!r}")
 
 
 @dataclass
@@ -129,6 +164,10 @@ class WorldGenerator:
         cfg = self.config
         post = self.posterior
         params = post.sample(n_worlds, rng)
+        if cfg.posterior_sd_scale != 1.0:
+            # log rates are linear in the parameters, so scaling the deviations from the posterior mean
+            # scales the sd of every log rate by exactly k (research/recalibration.py::scaled_rates)
+            params = post.mean + cfg.posterior_sd_scale * (params - post.mean)
         lam, mu, rho = post.rates_for(
             params, ctx.home_team_id, ctx.away_team_id, neutral=ctx.neutral_site
         )
@@ -168,6 +207,8 @@ class WorldGenerator:
             "lineup_players_away": len(ctx.away_players),
             "environment_sigma": cfg.sigma_environment,
             "model_sigma_log_rate": cfg.sigma_model_log_rate,
+            "posterior_sd_scale": cfg.posterior_sd_scale,
+            "worlds_version": cfg.version,
             "red_card_prior_mean": cfg.red_card_mean_per_team,
             "state_effects": {
                 "trailing": cfg.trailing_attack_mult,

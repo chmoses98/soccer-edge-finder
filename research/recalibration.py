@@ -85,6 +85,7 @@ from soccer_edge.model.strength import (
     ParameterPosterior,
     StrengthConfig,
 )
+from soccer_edge.model.strength_v2 import DixonColesFitterV2, StrengthConfigV2
 from soccer_edge.providers.club_football_data import ClubFootballDataProvider, HistoricalMatch
 
 REPO = Path(__file__).resolve().parents[1]
@@ -359,6 +360,32 @@ class Config:
     window_days: int = 28
     sigma_shared_current: float = WORLDS_V1_SIGMA_SHARED
     strength: StrengthConfig = field(default_factory=StrengthConfig)
+    # phase 15: the same estimator on dc_laplace_v2 (worlds_v2 has no hand-set inflation term, so the
+    # "current" candidate for v2 is k = 1 with sigma_shared = 0)
+    model_version: str = "dc_laplace_v1"
+    strength_v2: StrengthConfigV2 = field(default_factory=StrengthConfigV2)
+
+
+def fit_posterior(cfg: Config, fit_rows: list[MatchRow], as_of: date):
+    if cfg.model_version == "dc_laplace_v2":
+        return DixonColesFitterV2(cfg.strength_v2).fit(fit_rows, as_of=as_of)
+    return DixonColesFitter(cfg.strength).fit(fit_rows, as_of=as_of)
+
+
+def deviations_for(post, dth: np.ndarray, home: str, away: str) -> np.ndarray:
+    """(S,3) deviations of [log lam, log mu, rho] from the posterior mean for sampled parameter
+    deviations `dth` (S,P). v2 posteriors carry a league intercept that moves both rates."""
+    ia_h, id_h = post.idx_attack(home), post.idx_defence(home)
+    ia_a, id_a = post.idx_attack(away), post.idx_defence(away)
+    kap = dth[:, post.idx_intercept] if hasattr(post, "idx_intercept") else 0.0
+    return np.stack(
+        [
+            kap + dth[:, ia_h] - dth[:, id_a] + dth[:, post.idx_home],
+            kap + dth[:, ia_a] - dth[:, id_h],
+            dth[:, post.idx_rho],
+        ],
+        axis=1,
+    )
 
 
 @dataclass
@@ -443,7 +470,7 @@ def collect(cfg: Config, matches: list[HistoricalMatch], *, verbose: bool = True
             if last_fit is None or (d - last_fit).days >= cfg.refit_days:
                 fit_rows = [r for r in mrows if r.date < d]
                 if len(fit_rows) >= 100:
-                    post = DixonColesFitter(cfg.strength).fit(fit_rows, as_of=d)
+                    post = fit_posterior(cfg, fit_rows, d)
                     posteriors.append(post)
                     w, v = np.linalg.eigh(post.cov)
                     L = v * np.sqrt(np.clip(w, 1e-10, None))
@@ -465,16 +492,7 @@ def collect(cfg: Config, matches: list[HistoricalMatch], *, verbose: bool = True
                     lam, mu = post.expected_goals(mr.home, mr.away)
                     z = rng.standard_normal((cfg.posterior_samples, len(post.mean)))
                     dth = z @ L.T  # deviations from the posterior mean
-                    ia_h, id_h = post.idx_attack(mr.home), post.idx_defence(mr.home)
-                    ia_a, id_a = post.idx_attack(mr.away), post.idx_defence(mr.away)
-                    dev = np.stack(
-                        [
-                            dth[:, ia_h] - dth[:, id_a] + dth[:, post.idx_home],
-                            dth[:, ia_a] - dth[:, id_h],
-                            dth[:, post.idx_rho],
-                        ],
-                        axis=1,
-                    )
+                    dev = deviations_for(post, dth, mr.home, mr.away)
                     o = np.array(
                         [odds[("1x2", "home")], odds[("1x2", "draw")], odds[("1x2", "away")]]
                     )
@@ -1032,6 +1050,10 @@ def run(cfg: Config, cache: Cache, *, verbose: bool = True) -> dict:
     log(json.dumps(decision, indent=1))
     return {
         "protocol": PROTOCOL_VERSION,
+        "model_version": cfg.model_version,
+        "strength_config": (
+            cfg.strength_v2 if cfg.model_version == "dc_laplace_v2" else cfg.strength
+        ).__dict__,
         "config": {
             **{k: v for k, v in cfg.__dict__.items() if k != "strength"},
             "strength": cfg.strength.__dict__,
@@ -1147,10 +1169,24 @@ def main() -> int:
     ap.add_argument("--first-season", type=int, default=2017)
     ap.add_argument("--last-season", type=int, default=2025)
     ap.add_argument("--posterior-samples", type=int, default=100)
-    ap.add_argument("--out", default=str(REPO / "data" / "research" / "recalibration_v1.json"))
+    ap.add_argument(
+        "--model-version",
+        choices=["dc_laplace_v1", "dc_laplace_v2"],
+        default="dc_laplace_v1",
+        help="strength model whose Laplace posterior is recalibrated (v2 = phase 15 rerun)",
+    )
+    ap.add_argument("--v2-decay", type=float, default=StrengthConfigV2().decay_per_day)
+    ap.add_argument("--v2-prior-sd", type=float, default=StrengthConfigV2().prior_sd_team)
+    ap.add_argument(
+        "--sigma-shared-current",
+        type=float,
+        default=None,
+        help="world-layer shared inflation of the CURRENT candidate (default: worlds_v1 value for v1, 0 for v2)",
+    )
+    ap.add_argument("--out", default=None)
     ap.add_argument(
         "--cache",
-        default=str(CACHE_PATH),
+        default=None,
         help="npz cache of per-match posterior deviations (reused by pedge_eval.py)",
     )
     ap.add_argument(
@@ -1160,11 +1196,28 @@ def main() -> int:
     )
     a = ap.parse_args()
     divs = tuple(a.divisions.split(","))
+    is_v2 = a.model_version == "dc_laplace_v2"
+    if a.out is None:
+        a.out = str(
+            REPO
+            / "data"
+            / "research"
+            / ("recalibration_v2.json" if is_v2 else "recalibration_v1.json")
+        )
+    if a.cache is None:
+        a.cache = str(CACHE_PATH.with_name("recalibration_cache_v2.npz") if is_v2 else CACHE_PATH)
     cfg = Config(
         divisions=divs,
         first_season_start=a.first_season,
         last_season_start=a.last_season,
         posterior_samples=a.posterior_samples,
+        model_version=a.model_version,
+        strength_v2=StrengthConfigV2(decay_per_day=a.v2_decay, prior_sd_team=a.v2_prior_sd),
+        sigma_shared_current=(
+            a.sigma_shared_current
+            if a.sigma_shared_current is not None
+            else (0.0 if is_v2 else WORLDS_V1_SIGMA_SHARED)
+        ),
     )
     t0 = time.time()
     obs, data_hash = load_matches(Path(a.matches_csv), divs, a.first_season)

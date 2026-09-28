@@ -103,6 +103,10 @@ class RunConfig:
     # frozen holdout (docs/INTERNATIONAL_MODEL.md); the records are still archived as evidence
     intl_shadows_enabled: bool = False
 
+    @property
+    def worlds_version(self) -> str:
+        return self.world.version
+
 
 @dataclass
 class RunInputs:
@@ -570,6 +574,7 @@ def run(
                 fixture_summaries.get(w.fixture.fixture_id, {}),
                 selection_version=cfg.selection.version,
                 engine_version=cfg.engine_version,
+                worlds_version=cfg.world.version,
             )
         )
 
@@ -827,6 +832,7 @@ def _contract_record(
     *,
     selection_version: str = SELECTION_V2.version,
     engine_version: str = ENGINE_V1,
+    worlds_version: str = "worlds_v1",
 ) -> dict[str, Any]:
     fx = w.fixture
     assert fx is not None and w.priced is not None
@@ -853,6 +859,7 @@ def _contract_record(
         "model_version": cm.posterior.version,
         "parameter_hash": cm.posterior.param_hash(),
         "world_hash": summ.get("world_hash"),
+        "worlds_version": worlds_version,
         "engine_version": summ.get("engine_version"),
         "sim_seed": summ.get("seed"),
         "data_as_of": iso_utc(inputs.results_observed_at),
