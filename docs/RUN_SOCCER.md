@@ -70,3 +70,21 @@ are artefacts of the fake market, not evidence.
 **No.** Every cell is `RESEARCH_ONLY`; no prospective settled evidence exists yet; lineups are
 unknown at run time; the fee schedule is transcribed, not machine-verified against a fill. Use it to
 accumulate prospective shadow records and to study the market.
+
+## Fast (intraday) mode and stage timings (remediation phase 21)
+
+`soccer run --fast` sweeps only the Kalshi series that had markets at the last **exhaustive** discovery
+(`data/catalog/latest_index.json`, refreshed daily by `kalshi-discover`) plus any series new since then, and
+reconciles the sweep against that catalog (`kalshi/reconcile.py::reconcile_fast_vs_full`, written to
+`fast_reconcile.json` in the run directory). If the reconciliation is not complete relative to the daily
+catalog the run falls back to an exhaustive sweep in the same process, so **no market is silently lost and
+`unaccounted_contracts` stays 0** under both modes; the daily exhaustive reconciliation remains
+authoritative. Every run output now carries `freshness.stage_timings` (`discovery_s`, `assemble_fit_s`,
+`simulate_price_archive_s`, `total_s`, `mode`), which the handoff and the performance benchmark read.
+Full-time market families are priced analytically under `--engine-version world_sim_v2` (no Monte Carlo
+noise); the simulation cache persists across workflow runs (`actions/cache`, entries keyed by the content
+hash of every input that changes fair probabilities).
+
+`kickoff-dispatch.yml` can run this fast mode at every due horizon (`with_run=true` → `soccer dispatch tick
+--with-run`), scoped to a 3-hour window, which is how near-close prediction records (the CLV evidence the
+promotion gates require) accumulate without the 13-minute exhaustive sweep.

@@ -199,6 +199,8 @@ def test_cached_base_table_is_aligned_and_sane():
     if not files:
         pytest.skip("base walk-forward cache not built")
     with np.load(files[-1], allow_pickle=False) as z:
+        if "mat" not in z.files:
+            pytest.skip("cached table was built without score matrices (keep_matrix=False)")
         T = {k: z[k] for k in ("season", "p_data", "p_mkt", "y", "mat", "ah_size")}
     am = wf.aligned_mask(T)
     assert int(am.sum()) == 12248  # identical aligned sample to walk_forward_v1

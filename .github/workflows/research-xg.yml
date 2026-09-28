@@ -1,0 +1,49 @@
+name: research-xg
+
+# xG historical path (docs/PRELAUNCH_AUDIT.md §J, remediation phase 20): try the licence-clean archival
+# FiveThirtyEight file from a runner (blocked from some egress), hash-pin it, build the normalised history;
+# otherwise record NOT_EVALUATED. Never scrapes; never invents xG.
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: research-xg-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  xg:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e .
+      - name: Fetch + build
+        run: python research/xg_history.py --fetch | tee xg.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: research-xg-${{ github.run_id }}
+          path: |
+            xg.log
+            data/research/xg_history_v1.json
+            data/cache/xg/spi_matches.sha256
+          retention-days: 90
+      - name: Commit result
+        run: |
+          git config user.name "soccer-edge-bot"
+          git config user.email "soccer-edge-bot@users.noreply.github.com"
+          git add data/research/xg_history_v1.json
+          [ -f data/research/xg_history_v1.csv.gz ] && git add data/research/xg_history_v1.csv.gz || true
+          if git diff --cached --quiet; then echo "no change"; exit 0; fi
+          git commit -qm "research: xg history attempt $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]"
+          for i in 1 2 3; do git push && break; git pull --rebase -q && sleep 3; done
+      - run: |
+          { echo '## research-xg'; echo '```'; cat xg.log; echo '```'; } >> "$GITHUB_STEP_SUMMARY"

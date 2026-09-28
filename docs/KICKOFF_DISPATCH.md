@@ -48,3 +48,12 @@ dispatch, no workflow storm (at most one capture job at a time; ticks that find 
 `soccer dispatch diagnostics --archive-dir <clone>` prints, per horizon, delivered/missed counts, the
 delivery rate and the achieved-minute distribution. The pre-launch handoff reports these numbers; the
 promotion evaluator (phase 23) reads the missing-close rate from the same evidence.
+
+## Update (phase 21): predictions at the horizons
+
+`soccer dispatch tick --with-run` (workflow input `with_run`) runs `soccer run --fast --window 3` at each
+due horizon, writing prediction records into the same ledger (index restored from the archive, appended day
+files published through the append-only publisher). The action is recorded in the horizon log
+(`run_soccer_fast:ok|incomplete|error`). The exhaustive daily `run-soccer` stays as the reconciliation
+anchor; the fast run reconciles against the daily catalog and falls back to exhaustive discovery if the
+catalog-scoped sweep is incomplete.

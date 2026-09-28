@@ -1,0 +1,31 @@
+{
+  "schema": "limited_mode_config_v1",
+  "enabled": false,
+  "note": "Remediation phase 24 / audit §M design. DISABLED. Nothing in this repository reads `enabled: true` into a staking or routing authority; enabling it is an owner decision that also requires a cell to pass the promotion evaluator and config/authority.json to be edited by a human.",
+  "scope": {
+    "competitions": ["eng.premier_league", "esp.la_liga", "ger.bundesliga", "ita.serie_a", "fra.ligue_1"],
+    "families": "only cells explicitly promoted (ELIGIBLE_FOR_OWNER_REVIEW + written owner sign-off + authority.json entry)",
+    "excluded_families": ["exact_score", "player_goals", "first_to_score", "match_winner_2way", "first_half_result", "first_half_total", "first_half_handicap", "first_half_btts", "first_half_exact_score", "second_half_result"],
+    "excluded_competition_groups": ["international", "americas", "other"]
+  },
+  "timing": {"earliest_minutes_before_kickoff": 90, "latest_minutes_before_kickoff": 5},
+  "reference": {"max_age_minutes": 15, "required_quality": "SHARP_REFERENCE", "max_model_reference_disagreement": 0.10},
+  "price": {"min": 0.15, "max": 0.85, "max_spread": 0.04, "book_two_sided": true},
+  "liquidity": {"min_depth_multiple_of_order": 3.0, "executable_price": "VWAP for the intended size (order-book walk)"},
+  "edge": {"metric": "edge_v2", "min_expected_net_ev": 0.02, "min_ev_lower": 0.01, "max_sigma_edge": 0.02, "fee_model": "documented_cent_ceiling"},
+  "risk": {
+    "positions_per_fixture": 1,
+    "bankroll_share_per_position": 0.005,
+    "bankroll_share_per_matchday": 0.03,
+    "max_open_exposure_share": 0.10,
+    "sizing": "flat stake",
+    "dedicated_bankroll": null
+  },
+  "demotion": {
+    "rolling_bets": 100,
+    "closing_line_lower_bound_below": 0.0,
+    "max_drawdown_share": 0.15,
+    "kill_switches": ["freshness violation", "temporal guard violation", "incomplete discovery", "missing reference", "unaccounted contracts != 0", "archive manifest failure"]
+  },
+  "audit": {"every_order_links": ["prediction_record_id", "reference_snapshot_id", "close_record_id"]}
+}

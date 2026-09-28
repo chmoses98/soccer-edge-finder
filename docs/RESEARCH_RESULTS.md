@@ -104,3 +104,14 @@ Protocol and code: `research/move_v1.py`; runner-side workflow `research-move.ym
 direct CSVs are reachable only from Actions). Result file: `data/research/move_v1.json` (committed by the
 workflow). Decision rule pre-registered in the module docstring: β lower bound > 0 pooled, β > 0 in ≥ 5/7
 seasons, directional accuracy lower bound > 0.5 — otherwise a preserved negative result.
+
+**Result (2026-09-28): NEGATIVE.** 1X2 β = −0.006 [−0.013, +0.002], directional accuracy 0.476 (below
+chance); O/U 2.5 β = −0.015 [−0.024, −0.006]; every league, season and magnitude bucket ≈ 0 or negative.
+DATA_ONLY v1 has no information about sharp movement. See `docs/RESEARCH_MOVE.md`.
+
+## Lineup oracle (phase 19) and xG history (phase 20)
+
+Result files `data/research/lineup_oracle_v1.json` and `data/research/xg_history_v1.json` are produced by
+`lineup-backfill.yml` and `research-xg.yml` (both need network reachability the development container does
+not have). Their status at handoff is recorded in docs/HANDOFF.md; until the files exist both studies are
+`NOT_EVALUATED`.
