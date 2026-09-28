@@ -155,6 +155,7 @@ Production on `main` after PRs #5–#7 (all dispatched and scheduled runs checke
 | `diagnostics` (branch) | runs 1–2 | green; before/after tables in `docs/COVERAGE_FORENSICS.md` |
 | `run-soccer` (main, dispatch after the backfill) | `run-20260928T124253Z-4f9bfb` | green; 6,272 discovered, **830 priced** (from 0 in the morning run), 0 unaccounted, NO BETS, 43 RESEARCH_ONLY shadows — all internationals; 8 fixtures (506 contracts) went `unpriceable` on a coherence rule that flagged skewed exact-score means (rule relaxed to a 1-point tolerance in PR #9); the shadows show the international pool is **not** calibrated (see limitation 26) |
 | `espn-backfill` (qualifiers, second dispatch) | 36422848568 | green |
+| `run-soccer` (main, after PR #9) | `run-20260928T130105Z-fdefb8` | green; 6,286 discovered, **1,318 priced**, `unpriceable` 506 → 18, 0 unaccounted, NO BETS, 83 RESEARCH_ONLY shadows (international pool, family `…intl_pool`, noise per limitation 26) |
 
 Two production defects were introduced by Phase 2 and fixed the same day, both caught by dispatching after merge:
 an empty archive-restored cache file crashed `espn-sync`/`run-soccer` (PR #7), and the `run` parser lacked the
