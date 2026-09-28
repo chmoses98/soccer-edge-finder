@@ -13,6 +13,63 @@
       "result_file": "data/research/walk_forward_v1.json",
       "result_hash": "see result_hash inside the result file; re-run reproduces it from the same data content hash",
       "data_source": "club_football_match_data Matches.csv (GitHub raw), divisions E0,SP1,D1,I1,F1, seasons 2017-18 burn-in, scored 2019-20..2025-26"
+    },
+    "recalibration_v1": {
+      "protocol": "research/recalibration.py",
+      "depends_on": "walk_forward_v1 (same aligned sample: E0,SP1,D1,I1,F1, scored 2019-20..2025-26, DATA_ONLY dc_laplace_v1, 100 posterior samples)",
+      "result_file": "data/research/recalibration_v1.json",
+      "result_hash": "see result_hash inside the result file; re-run reproduces it from the same data content hash",
+      "decision_rule": "pre-stated in the module docstring (R1-R6); decision recorded in the result file under 'decision'",
+      "data_source": "club_football_match_data Matches.csv (local cache data/cache/Matches.csv), divisions E0,SP1,D1,I1,F1, seasons 2017-18 burn-in, scored 2018-19..2025-26, aligned 2019-20..2025-26"
+    },
+    "pedge_proxy_v1": {
+      "protocol": "research/pedge_eval.py proxy",
+      "depends_on": "recalibration_v1 cache of walk-forward posterior draws; de-vigged Bet365 pre-match 1X2 as the market; 7% quadratic taker fee",
+      "result_file": "data/research/pedge_proxy_v1.json",
+      "result_hash": "see result_hash inside the result file",
+      "data_source": "same as recalibration_v1"
+    },
+    "multi_league_v1": {
+      "protocol": "research/multi_league.py (run --variant core|ext|elo|pooled|dc, then assemble)",
+      "families": [
+        "data_only.multi_league_v1",
+        "data_only.multi_league_v1_ext16",
+        "data_only.multi_league_v1_elo_prior",
+        "ablation.pooled_no_league_offset",
+        "data_only.dc_laplace_v1 (recomputed in-script, same rules as walk_forward_v1)",
+        "market_only.bet365_prematch_v1",
+        "baseline.uefa_base_rate",
+        "baseline.elo_diff_logistic",
+        "baseline.naive_single_league_dc"
+      ],
+      "model_module": "src/soccer_edge/model/multi_league.py (RESEARCH_ONLY; StrengthConfig v1 untouched)",
+      "result_file": "data/research/multi_league_v1.json",
+      "result_hash": "see result_hash inside the result file; re-run reproduces it from the same CSV content hash and openfootball file hashes",
+      "companion": "data/research/context_features_v1.json (research/context_features.py, consumes data/research/multi_league_v1_predictions.csv)",
+      "data_source": "club_football_match_data Matches.csv (local cache), leagues E0,E1,SP1,SP2,D1,D2,I1,I2,F1,F2 (+P1,N1,B1,T1,SC0,G1 for ext16) from 2017-07-01; openfootball champions-league repo cl/el/conf .txt 2014-15..2025-26; domestic aligned sample = walk_forward_v1 sample (E0,SP1,D1,I1,F1, 2019-20..2025-26); UEFA scored 2018-19..2025-26",
+      "status": "RESEARCH_ONLY"
+    },
+    "home_bias_v1": {
+      "protocol": "research/home_bias.py (pre-registered H1-H8; verdicts in docs/RESEARCH_HOME_BIAS.md)",
+      "depends_on": "walk_forward_v1 aligned sample reproduced exactly by research/wf_common.py (n=12,248; data LL 1.00099, market 0.97321)",
+      "result_file": "data/research/home_bias_v1.json",
+      "result_hash": "see result_hash inside the result file",
+      "decision": "diagnosis only: away-goal intensity under-predicted by ~11% because the frozen fitter has no scoring intercept (H8 SUPPORTED); no production change; candidate dc_laplace_v2 (intercept + slower decay) named for a future walk_forward_v2, still behind the market by ~+0.019 LL",
+      "status": "RESEARCH_ONLY"
+    },
+    "disagreement_v1": {
+      "protocol": "research/disagreement.py (116 pre-declared cells; rule n>=200, CI<0, >=4/7 seasons)",
+      "result_file": "data/research/disagreement_v1.json",
+      "result_hash": "see result_hash inside the result file",
+      "decision": "no informative subgroup; 112/116 cells market reliably better; no selection rule derived",
+      "status": "RESEARCH_ONLY"
+    },
+    "market_families_v1": {
+      "protocol": "research/market_families.py (1X2, O/U 2.5, Asian handicap stake-weighted, BTTS vs base rate, team totals)",
+      "result_file": "data/research/market_families_v1.json",
+      "result_hash": "see result_hash inside the result file",
+      "decision": "market better in every family, league and season; no family-level edge",
+      "status": "RESEARCH_ONLY"
     }
   },
   "strength_config_v1": {
@@ -26,5 +83,36 @@
     "home_advantage_prior_mean": 0.25,
     "home_advantage_prior_sd": 0.15,
     "rho_prior_sd": 0.08
+  },
+  "phase2_infrastructure": {
+    "selection_policy_frozen": {
+      "version": "selection_v1",
+      "module": "src/soccer_edge/policy/versions.py",
+      "hash_method": "SelectionPolicy.policy_hash()",
+      "note": "Mission-1 production thresholds; any change is a new version replayed with `soccer replay-policies`"
+    },
+    "xg_strength_v1": {
+      "family": "data_only.xg_strength_v1",
+      "module": "src/soccer_edge/model/xg_family.py",
+      "status": "RESEARCH_ONLY / NOT_EVALUATED",
+      "reason": "no historical xG for the benchmark window (docs/XG_DATA_AUDIT.md)"
+    },
+    "reference_market": {
+      "source": "football-data.co.uk fixtures.csv",
+      "consensus_rule": "Avg* columns if present else mean(bet365, pinnacle)",
+      "devig": "proportional",
+      "schema": "ReferenceMarketSnapshot v1"
+    },
+    "espn_identity_map": {
+      "file": "data/mappings/espn_map.json",
+      "version": "3",
+      "method": "exact alias resolution (men/women/national scoped), unresolved listed"
+    },
+    "close_classes": {
+      "TRUE_CLOSE": "<=30 min",
+      "NEAR_CLOSE": "<=6 h",
+      "PRE_CLOSE": ">6 h",
+      "NONE": "no pre-kickoff quote"
+    }
   }
 }

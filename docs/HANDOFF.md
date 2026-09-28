@@ -1,3 +1,161 @@
+# HANDOFF — soccer-edge-finder
+
+Two build phases are documented here: **Phase 2 intelligence build (2026-09-28)** first, then the Mission-1
+foundation handoff (2026-09-27) unchanged below it. Nothing is described as validated unless a test or a frozen
+research artefact backs it.
+
+---
+
+# Phase 2 — intelligence build (2026-09-28)
+
+Rules honoured: architecture not rebuilt; no model tuned to beat the historical market; no authority promoted
+(everything RESEARCH_ONLY); no bets; no purchased services; no new secrets; market coverage not reduced
+(`unaccounted_contracts == 0` on every run); historical predictions untouched (new fields are additive).
+
+## A. Production verification (before changes)
+
+Audited on `main` at `15a8f7c` before any Phase 2 change: latest dispatched `kalshi-discover`, `kalshi-capture`,
+`run-soccer`, `settle-evaluate` all green; `runs/latest.run_output.v1.json` schema-valid (run
+`run-20260927T234251Z-484160`: 6,499 discovered, 117 priced, 0 unaccounted, NO BETS, 16 shadow); 117 ledger records
+verify; authority all RESEARCH_ONLY; archive 5.7 MB; no workflow storms. **One production bug found and fixed**:
+`label_horizon` returned `T-10m` for every archived snapshot (raw `minutes_to_kickoff` was correct); regression test
+added; analyses must recompute the label for pre-2026-09-28 rows (the microstructure summary does).
+
+## B. Coverage forensics and identity expansion
+
+`docs/COVERAGE_FORENSICS.md` + `data/diagnostics/latest_coverage_diagnostics.json` (machine-readable, per
+disposition × time-to-kickoff × competition × family × region, ranked unknown teams, unregistered competitions).
+Baseline: `unmapped_team` 258 / 805 / 111 contracts (next 72 h / 14 d / later). After explicit registry work
+(+~250 teams: 23 UEFA nations, Liga MX, MLS, Brasileirão, Argentina, CONCACAF nations, NWSL, WSL, SPL, Süper Lig,
+Saudi, Eredivisie, Primeira; 5 alias fixes; no fuzzy matching): **0 / 28 / 6**. The loss moved to `no_fixture`
+(honest: known team, no fixture/model yet), which the ESPN archive path addresses (section D). Newly registered
+competitions: `fifa.friendly`, `concacaf.nations_league`. Tokens with uncertain meaning stay unmapped by design.
+
+## C. Reference market + CLV infrastructure
+
+football-data.co.uk `fixtures.csv` → point-in-time `ReferenceMarketSnapshot` (bet365/pinnacle/average +
+documented `consensus`), proportional de-vig with overround stored, fingerprint change-suppression, never
+overwritten (`data-archive/reference/`). Records carry `reference.*`; settlements carry `close_class`
+(TRUE_CLOSE ≤30 m / NEAR_CLOSE ≤6 h / PRE_CLOSE / NONE), side-aware probability / price / fee-aware CLV for both
+sides, reference close and reference CLV. App contract **v1.1** (optional fields only; v1 consumers unaffected).
+At the 2-hourly capture cadence most Kalshi closes will be NEAR_CLOSE — reported as such, never as closing lines.
+
+## D. ESPN adapter, lineups, weather, rest
+
+Endpoints verified from the runner (two probes, `data/samples/espn_xg_probe.json`): per-day scoreboards (the
+date-range form returns 400), summaries with rosters/formations, team lists for 23 leagues, 60+ valid slugs.
+Explicit identity map `data/mappings/espn_map.json` v3: 486 teams by exact alias resolution, unresolved ids listed.
+`espn-lineups.yml` (every 2 h): fixtures window, FT results archive (`results/espn/<league>.jsonl`, append-only),
+point-in-time lineup snapshots (`confirmed` only when captured before kickoff; post-kickoff sheets are history,
+never confirmation), Open-Meteo forecast at kickoff hour (context only), identity-map proposals.
+`espn-backfill.yml` (dispatch) backfills results from 2024-07-01 for `usa.1, mex.1, bra.1, arg.1` and the
+international pool; `run-soccer` reads the archive (`--espn-dir`) and fits `usa.mls`, `mex.liga_mx`, `bra.serie_a`,
+`arg.primera`, `uefa.nations_league`, `fifa.friendly`, `concacaf.nations_league` once ≥50 pooled results exist.
+Lineup uncertainty layer (`model/lineups.py`): P(start)/P(bench)/P(unavailable), minutes priors, refuses future
+history; **not wired into pricing** — ESPN publishes no XI 31–94 h ahead (probe) and the publication lead time is
+unmeasured; the tracker records it prospectively. Rest days / 14-28-day congestion are on every record (context).
+
+## E. xG
+
+`docs/XG_DATA_AUDIT.md`: football-data.co.uk 2026-27 files carry `HxG/AxG` for all eight leagues probed;
+FBref/Sofascore/WhoScored/Opta/FootyStats/API-Football are 403 or paid; Understat is HTML-only (not adopted);
+StatsBomb open data and the 538 archive are historical-only. Ingestion built (`results_with_xg`), family
+`data_only.xg_strength_v1` scaffolded and marked **NOT_EVALUATED** — no historical xG for the benchmark window,
+so no like-for-like walk-forward comparison is possible. Negative result recorded; production unchanged.
+
+## F. Kalshi microstructure and discovery efficiency
+
+`soccer microstructure` (published by `settle-evaluate`): spread, sizes, mid-vs-executable gap, taker-fee impact,
+share of 3c/5c mid-edges erased by spread+fee, evolution toward kickoff, volume/OI per family, capture cadence
+gaps and hour-of-day coverage. `soccer reconcile-discovery` proves each fast capture complete relative to the last
+full discovery (violations fail loudly; wired into `kalshi-capture`). Faster capture is never less complete.
+
+## G. Policy versioning (MODEL vs SELECTION vs STAKING)
+
+`src/soccer_edge/policy/`: `selection_v1` frozen = Mission-1 thresholds (hash recorded); research variants declared
+up front; `soccer replay-policies` replays any policy over the immutable archive (flat 1-contract accounting,
+CLV by side) — no record rewritten, staking DISABLED. `docs/POLICY_VERSIONING.md`.
+
+## H. Router preparation
+
+`import-wagers`, `import-settlements`, `validate-positions-ledger` with per-row receipts
+(NEW/DUPLICATE_NOOP/CONFLICT/REFUSED), deterministic ids from `source_bet_key`, CONFLICT-never-rewrite, byte-identical
+re-import, privacy-safe stdout (tested), shim script for the router's argv template. Router main re-audited
+(unchanged at `2322bd7`). `docs/ROUTER_INTEGRATION.md` lists the exact profile the owner would add. **No live
+routing.**
+
+## I. Research results (walk-forward, frozen benchmark preserved)
+
+All studies re-implement `walk_forward_v1` exactly (aligned n = 12,248; data LL 1.00099, market 0.97321
+reproduced) and leave the v1 benchmark frozen. Result files carry content hashes; `config/frozen_baselines.json`
+records protocol, dependencies and the pre-stated decision rule for each.
+
+* **Home bias (`docs/RESEARCH_HOME_BIAS.md`)** — root cause is structural: the frozen fitter has no scoring
+  intercept and pins mean attack/defence to zero, so away goal intensity is under-predicted by ~11% in every
+  league (μ 1.127 vs 1.270 realised) while home advantage γ absorbs the missing level (0.295 fitted vs 0.216
+  market-implied vs 0.190 realised). Effect: +2.9 pt P(home), −1.9 pt P(away), −3.0 pt P(over 2.5), worst for
+  strong away sides. H1 supported (as symptom), H2/H5/H6 partial, H3/H7 rejected, H4 supported, H8 (intercept)
+  supported. Candidates ranked by paired LL vs v1: intercept + slower decay −0.0087 [−0.0104, −0.0069] — bias
+  removed but **still +0.019 behind the market**, hybrid weight 1.00 every season. Recommendation: a new
+  versioned family `dc_laplace_v2`, evaluated as `walk_forward_v2`; **not** an edit of v1.
+* **Disagreement (`docs/RESEARCH_DISAGREEMENT.md`)** — 116 pre-declared cells; none passes the rule (n ≥ 200,
+  CI < 0, ≥ 4/7 seasons); the market is reliably better in 112. Penalty grows monotonically with the model's
+  deviation from the market. No selection rule can be derived from disagreement size or sign.
+* **Market families (`docs/RESEARCH_MARKET_FAMILIES.md`)** — paired LL difference vs market: 1X2 +0.028,
+  O/U 2.5 +0.014, Asian handicap +0.024, BTTS worse than the base rate (+0.0045). Market wins every family,
+  league and season; naive "model > implied + 3 pt" at Bet365 loses (home −6.0% ROI on 5,075 bets).
+* **Uncertainty recalibration / P(edge>0)** — RECAL_PLACEHOLDER
+* **Multi-league / UEFA strength, rest and context features** — MULTI_PLACEHOLDER
+
+Net: the retrospective evidence still says the model is not informative relative to a sharp bookmaker; Phase 2
+made it *honest about why* and built the prospective instruments (reference, CLV, close classes, replay) that
+can test whether Kalshi's thinner books behave differently. No threshold, family or authority changed.
+
+## J. What changed in production behaviour
+
+Nothing that affects which contracts are recommended: same model family, same `selection_v1` thresholds, same
+RESEARCH_ONLY authority. Additive: reference/CLV/context fields on records, more identities resolved (more
+contracts reach `no_fixture` instead of `unmapped_team`), ESPN-fed competitions become priceable only after the
+backfill has produced ≥50 results per pool.
+
+## K. Verification after merge
+
+VERIFY_PLACEHOLDER
+
+## L. Genuine blockers / risks
+
+1. Still zero settled prospective evidence; nothing can be promoted.
+2. International/Americas pricing depends on the ESPN results backfill and on pooled international strengths
+   fitted from friendlies + Nations League + qualifiers with a single home-advantage term (friendlies at neutral
+   venues are flagged `neutral_site` but the fitter currently treats all rows alike — a documented simplification).
+3. Lineups: publication lead time unknown; injuries absent.
+4. Archive growth is unbounded (five new append-only writers); no compaction job.
+5. GitHub cron jitter still leaves horizon gaps; TRUE_CLOSE captures will be rare.
+
+## M. Next highest-value work
+
+`docs/ROADMAP.md` (status-annotated). In order: confirm the backfill fits the Americas/international pools →
+two weeks of lineup snapshots → CLV by close class after ~300 settled → only then any selection-policy change,
+via a new policy version and the replay tool.
+
+## N. Owner actions
+
+1. None required to keep running. Optional: dispatch `espn-backfill.yml` again with an earlier `start` if the
+   international pool is thin.
+2. Do not edit `config/authority.json`; do not activate a router profile until you have read
+   `docs/ROUTER_INTEGRATION.md` §Update 2026-09-28.
+
+## O. Files / PRs
+
+PRs: #5 (horizon fix, diagnostics, reference layer, probes), #6 (ESPN, lineups, policy replay, router importer,
+microstructure, coverage expansion, xG, weather, rest), PR_PLACEHOLDER (research results). CLI subcommands: `run,
+discover, capture, capture-reference, espn-sync, espn-backfill, replay-policies, settle, export-schemas,
+import-wagers, import-settlements, validate-positions-ledger, microstructure, reconcile-discovery`. Workflows:
+ci, kalshi-discover, kalshi-capture, run-soccer, settle-evaluate, diagnostics, espn-lineups, espn-backfill,
+probe-espn-xg, probe-sources.
+
+---
+
 # HANDOFF — soccer-edge-finder foundation build (2026-09-27)
 
 This file says exactly what is real, what is scaffolding, what is research-only, and what remains.
