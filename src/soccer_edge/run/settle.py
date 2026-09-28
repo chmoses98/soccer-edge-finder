@@ -54,9 +54,15 @@ class CloseQuote:
 
     @property
     def yes_mid(self) -> float | None:
-        if self.yes_bid is None or self.yes_ask is None:
-            return None
-        return float((self.yes_bid + self.yes_ask) / 2)
+        return _two_sided_mid(self.yes_bid, self.yes_ask)
+
+
+def _two_sided_mid(bid: Decimal | None, ask: Decimal | None) -> float | None:
+    """YES midpoint only for a real two-sided book. Kalshi reports an empty side as bid 0 / ask 1; those
+    sentinels are not prices and must never enter CLV or the market benchmark."""
+    if bid is None or ask is None or not (Decimal(0) < bid <= ask < Decimal(1)):
+        return None
+    return float((bid + ask) / 2)
 
 
 def load_close_quotes(
@@ -123,33 +129,36 @@ def clv_fields(
     price CLV: executable close on the same side vs entry (YES: close_yes_ask - entry; NO: close_no_ask - entry
     where close_no_ask = 1 - close_yes_bid), i.e. what it would cost to enter at close.
     fee-aware CLV: price CLV minus the change in per-contract fee between entry and close prices."""
+    empty = {
+        "clv_probability_points": None,
+        "clv_price_points": None,
+        "clv_fee_aware_points": None,
+    }
     if entry_price is None or close_yes_bid is None or close_yes_ask is None:
-        return {
-            "clv_probability_points": None,
-            "clv_price_points": None,
-            "clv_fee_aware_points": None,
-        }
-    mid = (close_yes_bid + close_yes_ask) / 2
+        return empty
+    if not (Decimal(0) < entry_price < Decimal(1)):
+        return empty
+    # empty-book sentinels (bid 0 / ask 1) are not prices: no mid, and no executable close on that side
+    mid_f = _two_sided_mid(close_yes_bid, close_yes_ask)
+    mid = Decimal(str(mid_f)) if mid_f is not None else None
     if side == "yes":
-        prob = float(mid - entry_price)
+        prob = float(mid - entry_price) if mid is not None else None
         close_exec = close_yes_ask
     else:
-        prob = float((Decimal(1) - mid) - entry_price)
+        prob = float((Decimal(1) - mid) - entry_price) if mid is not None else None
         close_exec = Decimal(1) - close_yes_bid
+    if not (Decimal(0) < close_exec < Decimal(1)):
+        return {**empty, "clv_probability_points": round(prob, 6) if prob is not None else None}
     price_clv = float(close_exec - entry_price)
     fee_aware = price_clv
-    if (
-        fee_type in ("quadratic", "quadratic_with_maker_fees")
-        and Decimal(0) < entry_price < Decimal(1)
-        and Decimal(0) < close_exec < Decimal(1)
-    ):
+    if fee_type in ("quadratic", "quadratic_with_maker_fees"):
         regime = FeeRegime(fee_type, Decimal(fee_multiplier or "1"))
         fee_aware = float(
             (close_exec + fee_per_contract(close_exec, regime))
             - (entry_price + fee_per_contract(entry_price, regime))
         )
     return {
-        "clv_probability_points": round(prob, 6),
+        "clv_probability_points": round(prob, 6) if prob is not None else None,
         "clv_price_points": round(price_clv, 6),
         "clv_fee_aware_points": round(fee_aware, 6),
     }
@@ -272,6 +281,7 @@ def settle_ledger(
             "recommended": rec.get("recommendation", {}),
             "settled_at": iso_utc(as_of),
         }
+        out["clv_model_signed_points"] = model_signed_clv(out)
         settlements.append(out, when=as_of)
         written.append(out)
     return written
@@ -287,10 +297,21 @@ def _reference_key(rec: dict[str, Any]) -> tuple[str, str, str, str | None] | No
 
 
 def _mid(market: dict[str, Any]) -> float | None:
-    yb, ya = _dec(market.get("yes_bid")), _dec(market.get("yes_ask"))
-    if yb is None or ya is None:
+    return _two_sided_mid(_dec(market.get("yes_bid")), _dec(market.get("yes_ask")))
+
+
+def model_signed_clv(r: dict[str, Any]) -> float | None:
+    """CLV in the direction the model disagreed with the entry market: +1 x YES drift when the model's fair
+    exceeded the entry mid, -1 x YES drift when below. Positive = the market moved toward the model.
+    (Raw YES drift averaged over all contracts is side-agnostic and cancels across mutually exclusive legs.)"""
+    drift, mid, fair = (
+        r.get("clv_yes_points"),
+        r.get("entry_yes_mid"),
+        r.get("fair_probability_mean"),
+    )
+    if drift is None or mid is None or fair is None or fair == mid:
         return None
-    return float((yb + ya) / 2)
+    return float(drift) if fair > mid else -float(drift)
 
 
 def model_health(
@@ -312,7 +333,8 @@ def model_health(
             [r["entry_yes_mid"] if r["entry_yes_mid"] is not None else np.nan for r in rs]
         )
         has_m = ~np.isnan(pm)
-        clv = np.array([r["clv_yes_points"] for r in rs if r["clv_yes_points"] is not None])
+        signed = [model_signed_clv(r) for r in rs]
+        clv = np.array([c for c in signed if c is not None])
         market_ll = log_loss(pm[has_m], y[has_m]) if has_m.sum() >= 10 else None
         ic = (
             interval_calibration(p, lo, hi, y, level=0.8)["weighted_bin_coverage"]

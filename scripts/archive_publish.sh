@@ -24,8 +24,23 @@ else
     git add README.md && git commit -qm "archive: bootstrap" )
 fi
 mkdir -p "$WORK/$DEST"
-# copy without deleting anything already archived
-cp -R "$SRC"/. "$WORK/$DEST"/
+# Copy without deleting anything already archived. Workflows rebuild their day files from scratch, so a
+# plain copy would REPLACE an archived .jsonl day file (2026-09-28: 830 prediction rows of one run were
+# overwritten by the next run). .jsonl files are therefore append-merged: every archived line is kept
+# and only lines not already present are appended. Other files (indexes, run outputs) are copied.
+SRC_ABS="$(cd "$SRC" && pwd)"
+( cd "$SRC_ABS" && find . -type f -print0 ) | while IFS= read -r -d '' rel; do
+  rel="${rel#./}"; src_f="$SRC_ABS/$rel"; dst_f="$WORK/$DEST/$rel"
+  mkdir -p "$(dirname "$dst_f")"
+  if [[ "$rel" == *.jsonl && -s "$dst_f" ]]; then
+    if [ -n "$(tail -c1 "$dst_f")" ]; then printf '\n' >> "$dst_f"; fi
+    new_lines="$(mktemp)"
+    awk 'NR==FNR { seen[$0]=1; next } $0 != "" && !($0 in seen) { print; seen[$0]=1 }' "$dst_f" "$src_f" > "$new_lines"
+    cat "$new_lines" >> "$dst_f"; rm -f "$new_lines"
+  else
+    cp -f "$src_f" "$dst_f"
+  fi
+done
 cd "$WORK"
 # size guard: refuse files > 45 MB (GH001 lesson)
 if find "$DEST" -type f -size +45M | grep -q .; then echo "::error::file over 45MB in archive payload"; find "$DEST" -type f -size +45M; exit 1; fi

@@ -51,13 +51,17 @@ def compact(p: PricedProbability) -> dict[str, Any]:
     return {
         **p.to_json(),
         "world_quantiles": {str(k): round(float(v), 6) for k, v in zip(QUANTILES, q)},
-        # coarse histogram of world probabilities (20 bins) so repricing can recompute P(edge>0)
+        # coarse histogram of world probabilities (20 bins); kept for older readers
         "world_hist": np.histogram(p.world_probs, bins=20, range=(0, 1))[0].tolist(),
+        # exact per-world probabilities so repricing recomputes P(edge>0) / worst case without binning
+        "world_probs": [round(float(v), 6) for v in p.world_probs],
     }
 
 
 def expand_world_probs(c: dict[str, Any]) -> np.ndarray:
-    """Reconstruct an approximate world-probability sample from the stored histogram."""
+    """Per-world probabilities from the cache: exact when stored, else approximated from the histogram."""
+    if c.get("world_probs"):
+        return np.asarray(c["world_probs"], dtype=float)
     hist = np.array(c["world_hist"], dtype=float)
     edges = np.linspace(0, 1, 21)
     mids = (edges[:-1] + edges[1:]) / 2

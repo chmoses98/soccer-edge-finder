@@ -141,10 +141,14 @@ class LineupSnapshot:
 
     @property
     def lineup_state(self) -> str:
-        """CONFIRMED only when an XI is published AND was captured before kickoff (no backward leakage)."""
+        """CONFIRMED only when an XI is published AND was captured before kickoff (no backward leakage).
+        ESPN can still report state 'pre' after the scheduled kickoff (late start or slow feed), so the capture
+        time is checked against kickoff too; without a kickoff time a sheet cannot be proven pre-match."""
         if not self.published:
             return "unconfirmed"
-        return "confirmed" if self.event_state == "pre" else "post_hoc"
+        if self.event_state != "pre" or self.kickoff_utc is None:
+            return "post_hoc"
+        return "confirmed" if self.captured_at < self.kickoff_utc else "post_hoc"
 
     def to_record(self) -> dict[str, Any]:
         def _p(p: LineupPlayer) -> dict[str, Any]:
