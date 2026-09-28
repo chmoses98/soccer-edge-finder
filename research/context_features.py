@@ -154,8 +154,9 @@ def residual_test(
     rows = [r for r in preds if r["key"] in feats]
     y = np.array([int(r["y"]) for r in rows])
     seas = np.array([r["season"] for r in rows])
+    pref = f"{ref}_" if f"{ref}_h" in rows[0] else f"p_{ref}_"  # assemble writes market columns as p_mkt_*
     P_ref = np.array(
-        [[float(r[f"{ref}_h"]), float(r[f"{ref}_d"]), float(r[f"{ref}_a"])] for r in rows]
+        [[float(r[f"{pref}h"]), float(r[f"{pref}d"]), float(r[f"{pref}a"])] for r in rows]
     )
     F = {name: np.array([feats[k][name] for k in keys]) for name in BLOCKS["all"]}
     base_logits = _logit_feats(P_ref)

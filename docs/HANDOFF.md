@@ -104,8 +104,28 @@ records protocol, dependencies and the pre-stated decision rule for each.
 * **Market families (`docs/RESEARCH_MARKET_FAMILIES.md`)** — paired LL difference vs market: 1X2 +0.028,
   O/U 2.5 +0.014, Asian handicap +0.024, BTTS worse than the base rate (+0.0045). Market wins every family,
   league and season; naive "model > implied + 3 pt" at Bet365 loses (home −6.0% ROI on 5,075 bets).
-* **Uncertainty recalibration / P(edge>0)** — RECAL_PLACEHOLDER
-* **Multi-league / UEFA strength, rest and context features** — MULTI_PLACEHOLDER
+* **Uncertainty recalibration (`docs/UNCERTAINTY_RECALIBRATION.md`)** — outcomes first, market second. The
+  grouped goal-residual estimator gives a posterior-sd multiplier k̂ = 0.81 (cluster-bootstrap CI 0.73–0.89;
+  6/7 seasons on the same side of 1), so the v1 intervals are modestly too wide; the a-priori guess of 0.5–0.7
+  is **rejected** by the outcomes. World-layer inflation (`sigma_model_log_rate`, `sigma_environment`) is not
+  the cause of the totals over-dispersion (PIT z −7.1 → −5.2 without it) and stays. Rule-based decision:
+  `global_outcome_k`, recommended `posterior_sd_scale = 0.8` for a **versioned `worlds_v2`** — not applied to
+  v1; the residual "market inside 85.6%" gap is bias (home-advantage workstream), not width.
+* **P(edge>0) (`docs/PEDGE_CALIBRATION.md`)** — historical proxy against de-vigged Bet365 with the 7% fee:
+  higher P(edge>0) buckets do **not** realise higher returns (every bucket above 0.6 loses 2–4 cents; hit rate
+  falls 36% → 19% as the statistic rises). The field is a model-internal agreement share, not a probability
+  about the world; recommendation: introduce `share_worlds_positive_ev` (plus a reference-aware
+  `p_positive_ev_vs_reference`) in a versioned `edge_v2`, keep the v1 field for archive continuity and mark it
+  deprecated-in-name. Binning infrastructure (`research/pedge_eval.py`) is ready for the prospective ledger.
+* **Multi-league hierarchical strength (`docs/MULTI_LEAGUE_MODEL.md`)** — per-league latent offsets with
+  promotion/relegation and UEFA rows as cross-league evidence. Domestic aligned sample (n = 12,338): log loss
+  0.9988 vs v1 1.0010 (paired −0.0022 [−0.0036, −0.0006]; Elo-prior variant −0.0028), still +0.026 behind the
+  market with hybrid weight 1.00 every season; the no-offset ablation is worse than v1, so the gain is the
+  offsets. UEFA out-of-sample (599 / 1,224 matches never fitted): −0.015 / −0.059 log loss vs pricing UEFA ties
+  as equal-strength leagues, but **indistinguishable from a one-feature ClubElo logistic** (CIs straddle 0).
+  Offsets correlate 0.93–0.95 with league mean Elo. Status: RESEARCH_ONLY candidate for UEFA *research*
+  pricing; not a v1 replacement.
+* **Rest / congestion / context features (`docs/RESEARCH_CONTEXT_FEATURES.md`)** — CONTEXT_PLACEHOLDER
 
 Net: the retrospective evidence still says the model is not informative relative to a sharp bookmaker; Phase 2
 made it *honest about why* and built the prospective instruments (reference, CLV, close classes, replay) that
@@ -120,7 +140,21 @@ backfill has produced ≥50 results per pool.
 
 ## K. Verification after merge
 
-VERIFY_PLACEHOLDER
+Production on `main` after PRs #5–#7 (all dispatched and scheduled runs checked 2026-09-28):
+
+| workflow | run | result |
+|---|---|---|
+| `run-soccer` (main, dispatch) | `run-20260928T033036Z-c14b83` | green; 6,338 discovered, 0 unaccounted, 0 evaluated (international break: no fixtures in the 48 h window), NO BETS, no freshness violations |
+| `kalshi-capture` (main + branch) | runs 3 and 4 | green; fast-vs-full reconcile step passes; reference step present from run 4 (first live capture: 41/41 fixtures.csv rows skipped — no top-flight rows during the break; notes now name divisions) |
+| `kalshi-discover`, `settle-evaluate` (scheduled 11:16 / 11:42 UTC) | | green |
+| `espn-lineups` (dispatch + 2-hourly schedule) | | green after the empty-cache fix; 27 lineup snapshots (0 published pre-kickoff, 4 post), 19 weather rows, 15 results appended; 53 unmapped ids all Copa del Rey first-round clubs |
+| `espn-backfill` (dispatch) | 36373486343 | green; results archived: MLS 1,171, Liga MX 691, Brasileirão 657, Argentina 1,139, Nations League 222, friendlies 333, CONCACAF NL 125; qualifiers 0 (slugs lacked a competition id — fixed, re-dispatched) |
+| `diagnostics` (branch) | runs 1–2 | green; before/after tables in `docs/COVERAGE_FORENSICS.md` |
+
+Two production defects were introduced by Phase 2 and fixed the same day, both caught by dispatching after merge:
+an empty archive-restored cache file crashed `espn-sync`/`run-soccer` (PR #7), and the `run` parser lacked the
+new flags (`tests/test_cli_parse.py` now parses every workflow argv). The next `run-soccer` on `main` after the
+backfill will be the first with ESPN-fed competitions in the model set.
 
 ## L. Genuine blockers / risks
 

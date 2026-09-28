@@ -134,7 +134,60 @@ strong (the gap the offsets are supposed to close).
 
 ## 5. Results
 
-RESULTS_PLACEHOLDER
+Source of truth: `data/research/multi_league_v1.json` (result hash
+`sha256:a716e7a09fc7df83db10d0271eb04e83b53bca3bafd4f32039dfa5232b0c075e`; assembled 2026-09-28 from the five
+variant runs, 41–51 min each). Every number below is copied from that file.
+
+### 5.1 Domestic aligned sample (E0, SP1, D1, I1, F1; 2019-20 → 2025-26; n = 12,338)
+
+| family | log loss | Brier | ECE(home) | paired LL vs `dc_laplace_v1` [95% CI] | paired LL vs market [95% CI] |
+|---|---:|---:|---:|---|---|
+| `market_only.bet365_prematch_v1` | **0.97273** | 0.57828 | 0.016 | — | — |
+| `data_only.multi_league_v1_elo_prior` | 0.99814 | 0.59563 | 0.029 | **−0.0028 [−0.0043, −0.0013]** | +0.0254 [0.0225, 0.0284] |
+| `data_only.multi_league_v1` | 0.99876 | 0.59605 | 0.029 | **−0.0022 [−0.0036, −0.0006]** | +0.0260 [0.0231, 0.0292] |
+| `data_only.multi_league_v1_ext16` | 0.99936 | 0.59646 | 0.027 | −0.0016 [−0.0032, +0.0002] | +0.0266 [0.0235, 0.0299] |
+| `data_only.dc_laplace_v1` (frozen benchmark) | 1.00097 | 0.59769 | 0.032 | — | +0.0282 [0.0250, 0.0315] |
+| `ablation.pooled_no_league_offset` | 1.00382 | 0.59959 | 0.027 | +0.0029 [+0.0009, +0.0051] | +0.0311 [0.0278, 0.0347] |
+
+* The hierarchical model is a **small but real improvement on the single-league benchmark** (−0.002 to −0.003
+  log loss, CI excluding 0), and the ablation shows the improvement comes from the league offsets: collapsing
+  them (pooled) is *worse* than v1.
+* It remains **+0.025 behind the market**, and the walk-forward hybrid weight on the market is 1.00 in every
+  season for every variant: the extra information is already in the price.
+* O/U 2.5 log loss: market 0.671, multi-league 0.682, v1 0.685 (same ordering, same gap).
+* League offsets correlate 0.93 (core) / 0.95 (Elo prior) with the leagues' mean ClubElo; implied gaps vs E0:
+  SP1 −47, I1 −56, D1 −66, F1 −7 Elo points (core), second divisions −160 to −290.
+
+### 5.2 UEFA out-of-sample (CL/EL/ECL league-phase and knockout matches never used in any fit)
+
+| sample | family | log loss | ECE(home) | vs Elo-difference logistic [95% CI] | vs naive single-league DC [95% CI] |
+|---|---|---:|---:|---|---|
+| core teams (n = 599) | `multi_league_v1_ext16` | **0.9876** | 0.024 | −0.001 [−0.026, +0.020] | −0.015 [−0.033, +0.003] |
+| core teams | `ablation.pooled_no_league_offset` | 0.9878 | 0.041 | −0.001 [−0.024, +0.021] | −0.015 [−0.024, −0.006] |
+| core teams | `baseline.elo_diff_logistic` | 0.9887 | 0.049 | — | — |
+| core teams | `multi_league_v1` | 0.9922 | 0.045 | +0.003 [−0.022, +0.027] | −0.011 [−0.031, +0.009] |
+| core teams | `baseline.naive_single_league_dc` | 1.0027 | 0.034 | — | — |
+| core teams | `baseline.uefa_base_rate` | 1.0533 | 0.001 | — | — |
+| ext16 teams (n = 1,224) | `baseline.elo_diff_logistic` | **0.9911** | 0.035 | — | — |
+| ext16 teams | `multi_league_v1_ext16` | 1.0016 | 0.027 | +0.010 [−0.007, +0.027] | **−0.059 [−0.079, −0.039]** |
+| ext16 teams | `ablation.pooled_no_league_offset` | 1.0224 | 0.006 | +0.031 [+0.010, +0.052] | −0.039 [−0.048, −0.029] |
+| ext16 teams | `baseline.naive_single_league_dc` | 1.0611 | 0.041 | — | — |
+
+* On UEFA fixtures the hierarchical model is **far better than pricing UEFA ties as if both clubs came from
+  equally strong leagues** (−0.06 log loss on the wider sample) and **statistically indistinguishable from a
+  one-feature Elo logistic** (CIs straddle 0 in both samples; Elo wins point-wise on the wider sample). In other
+  words: the league offsets recover what a public Elo already knows, no more.
+* No market benchmark exists for the UEFA sample in the free data, so nothing here says whether either would
+  beat a bookmaker on UEFA prices. Pricing UEFA contracts with this family would be research pricing only.
+
+### 5.3 Decision (pre-stated rules)
+
+Rule "beats v1 walk-forward with CI excluding 0": **met** for `multi_league_v1` and `_elo_prior` on the
+domestic sample. Rule "beats the market or moves the hybrid weight": **not met** (weight 1.00 everywhere).
+Rule for UEFA: "beats the naive single-league combination": **met**; "beats the Elo baseline": **not met**.
+Outcome: **RESEARCH_ONLY candidate for UEFA research pricing; not a replacement for v1 in production**
+(the domestic gain is a tenth of the gap to the market and does not change any selection).
+
 
 ## 6. Validation state and limitations
 
