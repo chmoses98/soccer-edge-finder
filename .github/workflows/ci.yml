@@ -40,3 +40,33 @@ jobs:
         run: pytest -q --maxfail=3
       - name: Workflow lint (no scheduled writers without a concurrency group)
         run: python scripts/check_workflows.py
+
+  archive-verify:
+    # Evidence integrity: the data-archive branch must verify against its manifest (docs/ARCHIVE_INTEGRITY.md).
+    # Read-only. Exits 1 on any missing, rewritten or dangling record; passes with a note while no manifest
+    # has been bootstrapped yet.
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e .
+      - name: Fetch archive tip
+        run: |
+          if git ls-remote --exit-code --heads origin data-archive >/dev/null 2>&1; then
+            git clone --quiet --depth 1 --branch data-archive "https://github.com/${{ github.repository }}.git" archive
+          else
+            mkdir -p archive; echo "no archive yet"
+          fi
+      - name: soccer archive verify
+        run: |
+          python -m soccer_edge.cli archive verify --archive-dir archive --allow-missing-manifest --out verify.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: archive-verify-${{ github.run_id }}
+          path: verify.json
+          retention-days: 14

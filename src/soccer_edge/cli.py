@@ -436,6 +436,125 @@ def cmd_reconcile_discovery(args: argparse.Namespace) -> int:
     return 0 if report["complete_relative_to_full"] else 1
 
 
+def cmd_archive_verify(args: argparse.Namespace) -> int:
+    from soccer_edge.archive.manifest import verify_archive
+
+    code, report = verify_archive(
+        Path(args.archive_dir), require_manifest=not args.allow_missing_manifest
+    )
+    if args.out:
+        write_json(Path(args.out), report)
+    summary = {
+        k: report.get(k)
+        for k in (
+            "ok",
+            "manifest_present",
+            "files_checked",
+            "records_checked",
+            "n_problems",
+            "n_warnings",
+            "n_unmanifested_files",
+            "problem_counts",
+            "note",
+            "error",
+        )
+    }
+    print(json.dumps(summary, indent=1, default=str))
+    for pr in report.get("problems", [])[:10]:
+        print("PROBLEM", json.dumps(pr, default=str))
+    if code == 2:
+        print(
+            "archive verify: NO MANIFEST (pass --allow-missing-manifest to run intrinsic checks only)"
+        )
+    return code
+
+
+def cmd_archive_manifest(args: argparse.Namespace) -> int:
+    from soccer_edge.archive.manifest import ArchiveManifest, ArchiveManifestError
+
+    man = ArchiveManifest(Path(args.archive_dir))
+    if not man.exists() and not args.init:
+        if args.if_present:
+            print(json.dumps({"skipped": "no manifest present (--if-present)"}))
+            return 0
+        print(
+            "archive manifest: no manifest present; pass --init to bootstrap one from the current state"
+        )
+        return 2
+    try:
+        stats = man.update(init=args.init)
+    except ArchiveManifestError as exc:
+        print(f"archive manifest: refused: {exc}")
+        return 1
+    print(json.dumps(stats, indent=1))
+    return 0
+
+
+def cmd_archive_recover(args: argparse.Namespace) -> int:
+    from soccer_edge.archive.manifest import ArchiveManifest
+    from soccer_edge.archive.recover import (
+        RecoveryError,
+        apply_recovery,
+        dry_run_report,
+        scan_history,
+    )
+
+    repo = Path(args.repo)
+    root = Path(args.archive_dir) if args.archive_dir else None
+    recs = scan_history(repo, args.branch, tip_root=root)
+    report = dry_run_report(recs, repo=repo, branch=args.branch)
+    if args.report:
+        write_json(Path(args.report), report)
+    print(
+        json.dumps(
+            {
+                k: report[k]
+                for k in (
+                    "paths_scanned",
+                    "recoverable_lines_total",
+                    "conflicts_total",
+                    "unverifiable_total",
+                    "refused",
+                )
+            },
+            indent=1,
+        )
+    )
+    for pth in report["paths"]:
+        print(
+            f"  {pth['path']}: union {pth['union_lines']} tip {pth['tip_lines']} recoverable {pth['recoverable_lines']} conflicts {len(pth['conflicts'])}"
+        )
+    if report["refused"]:
+        print(
+            "archive recover: REFUSED (conflicting identities or unverifiable rows; nothing written)"
+        )
+        return 1
+    if not args.apply:
+        print("archive recover: dry run only (pass --apply with --archive-dir to append the rows)")
+        return 0
+    if root is None:
+        print("archive recover: --apply requires --archive-dir (a working tree of the archive tip)")
+        return 2
+    try:
+        manifest = apply_recovery(recs, archive_root=root, report=report)
+    except RecoveryError as exc:
+        print(f"archive recover: {exc}")
+        return 1
+    print(
+        json.dumps(
+            {"recovery_id": manifest["recovery_id"], "lines_appended": manifest["lines_appended"]},
+            indent=1,
+        )
+    )
+    man = ArchiveManifest(root)
+    if man.exists():
+        stats = man.update(
+            recovery_id=manifest["recovery_id"], recovered_paths=set(manifest["lines_appended"])
+        )
+        print(json.dumps({"manifest": stats}))
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(prog="soccer", description="soccer-edge-finder operator CLI")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -597,6 +716,53 @@ def build_parser() -> argparse.ArgumentParser:
     rd.add_argument("--full", required=True, help="full latest_catalog.json or latest_index.json")
     rd.add_argument("--out", required=True)
     rd.set_defaults(func=cmd_reconcile_discovery)
+
+    ar = sub.add_parser(
+        "archive", help="archive integrity: manifest, verify (non-zero on corruption), recover"
+    )
+    arsub = ar.add_subparsers(dest="archive_cmd", required=True)
+    av = arsub.add_parser(
+        "verify",
+        help="verify the archive against its manifest; exit 1 on corruption, 2 if no manifest",
+    )
+    av.add_argument("--archive-dir", required=True, help="working tree of the data-archive branch")
+    av.add_argument("--out", default=None, help="write the full verification report as JSON")
+    av.add_argument(
+        "--allow-missing-manifest",
+        action="store_true",
+        help="run intrinsic checks only when no manifest exists yet (exit 0)",
+    )
+    av.set_defaults(func=cmd_archive_verify)
+    am = arsub.add_parser(
+        "manifest",
+        help="extend the manifest to cover the current archive state (verifies first; refuses on corruption)",
+    )
+    am.add_argument("--archive-dir", required=True)
+    am.add_argument(
+        "--init",
+        action="store_true",
+        help="bootstrap a manifest from the current state when none exists",
+    )
+    am.add_argument(
+        "--if-present", action="store_true", help="no-op (exit 0) when no manifest exists yet"
+    )
+    am.set_defaults(func=cmd_archive_manifest)
+    arc = arsub.add_parser(
+        "recover",
+        help="one-time recovery of overwritten .jsonl rows from the archive branch history",
+    )
+    arc.add_argument(
+        "--repo", required=True, help="git repository containing the archive branch history"
+    )
+    arc.add_argument("--branch", default="data-archive")
+    arc.add_argument(
+        "--archive-dir", default=None, help="working tree of the archive tip (required for --apply)"
+    )
+    arc.add_argument("--report", default=None, help="write the dry-run report JSON here")
+    arc.add_argument(
+        "--apply", action="store_true", help="append the recoverable rows (refuses on any conflict)"
+    )
+    arc.set_defaults(func=cmd_archive_recover)
     return p
 
 
