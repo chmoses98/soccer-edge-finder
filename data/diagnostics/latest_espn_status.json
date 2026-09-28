@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-28T03:47:07.115624+00:00",
+  "as_of": "2026-09-28T11:00:03.660721+00:00",
   "events": 500,
   "events_skipped_unmapped": 268,
   "fixtures_mapped": 232,
@@ -74,13 +74,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 27,
-    "events": 27,
+    "captured": 3,
+    "events": 24,
     "failures": [],
-    "published_post": 4,
-    "published_pre_kickoff": 0,
-    "unchanged": 0,
-    "unpublished": 23
+    "published_post": 1,
+    "published_pre_kickoff": 1,
+    "unchanged": 21,
+    "unpublished": 22
   },
   "map_proposals": {
     "concacaf.nations.league": {
@@ -156,7 +156,7 @@
     }
   },
   "map_version": "3",
-  "results_appended": 15,
+  "results_appended": 1,
   "scoreboard_failures": [],
   "unmapped_leagues": [
     "bra.2",
@@ -228,15 +228,11 @@
     "8939": "Mozambique"
   },
   "weather": {
-    "captured": 19,
-    "events": 31,
+    "captured": 21,
+    "events": 29,
     "failures": [
-      "401900616: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=14.0667&longitude=-60.9500&hourly=t",
-      "401900614: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Basseterre&count=5&language=en&",
-      "401900608: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=North%20Sound&count=5&language=",
-      "401889270: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Borehamwood&count=5&language=en",
-      "401889273: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Hartlepool&count=5&language=en&",
-      "401889271: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Yeovil&count=5&language=en&form"
+      "401889270: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=51.6547&longitude=-0.2776&hourly=te",
+      "401889278: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=53.7628&longitude=-2.7045&hourly=te"
     ],
     "forecast_miss": 0,
     "geocode_miss": 6,
