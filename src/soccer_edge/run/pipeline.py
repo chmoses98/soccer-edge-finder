@@ -801,6 +801,30 @@ def _confidence_label(state: Authority, a: EdgeAssessment) -> str:
     return f"{base}; P(edge>0)={a.p_edge_positive:.0%}"
 
 
+def stamp_decision_time(inputs: RunInputs) -> datetime:
+    """Set the decision time AFTER the last input was gathered. Inputs captured inside the run (the
+    reference odds fetch, ESPN fixtures) are stamped when their fetch completes, which is after the
+    `as_of` the sweep was measured from; the guard compares every observation against the decision
+    time, so the decision time must be taken last. Production run 36475281249 (2026-09-28) failed
+    closed on a 41 ms gap for exactly this reason."""
+    now = utc_now()
+    latest = max(
+        (
+            t
+            for t in (
+                inputs.fixtures_observed_at,
+                inputs.results_observed_at,
+                inputs.market_observed_at,
+                inputs.reference_observed_at,
+            )
+            if t is not None
+        ),
+        default=now,
+    )
+    inputs.as_of = max(now, ensure_utc(latest))
+    return inputs.as_of
+
+
 def temporal_guard_for_inputs(inputs: RunInputs, as_of: datetime) -> TemporalGuard:
     """Fail closed when any input was observed after the decision time (docs/TEMPORAL_INTEGRITY.md)."""
     g = TemporalGuard(as_of)

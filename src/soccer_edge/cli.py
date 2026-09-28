@@ -204,7 +204,7 @@ def cmd_run(args: argparse.Namespace) -> int:
     from soccer_edge.model.worlds import world_config_for
     from soccer_edge.pricing.edge import EdgeConfig
     from soccer_edge.run.inputs import DEFAULT_COMPETITIONS, assemble, build_inputs
-    from soccer_edge.run.pipeline import RunConfig, run, write_outputs
+    from soccer_edge.run.pipeline import RunConfig, run, stamp_decision_time, write_outputs
     from soccer_edge.run.simcache import SimCache
 
     t_start = time.time()
@@ -306,6 +306,8 @@ def cmd_run(args: argparse.Namespace) -> int:
         except Exception as exc:
             stats = {"error": str(exc)[:200]}
         print("[reference]", json.dumps(stats, default=str)[:600])
+    # the decision time is taken after the LAST input capture (reference odds are fetched above)
+    as_of = stamp_decision_time(inputs)
     cfg = RunConfig(
         run_date=run_date,
         window_hours=args.window_hours,

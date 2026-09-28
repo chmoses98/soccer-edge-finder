@@ -60,7 +60,11 @@ WORLDS_V2 = "worlds_v2"
 # status says so. Never edit WORLDS_V1_CONFIG: archived worlds_v1 records were produced with k = 1 and the
 # hand-set inflation term.
 WORLDS_V2_K = 1.0
-WORLDS_V2_K_STATUS = "NOT_YET_ESTIMATED_ON_V2"
+# research/recalibration.py --model-version dc_laplace_v2 (2026-09-28, data/research/recalibration_v2.json):
+# k_hat = 0.8366, 95 % CI 0.7657-0.8971, 6/7 seasons below 1 (audit R2 supported); the totals PIT
+# variance z is -7.85 (outside the +-3 the audit's F4 requires), so the scale is NOT adopted: k stays 1.0.
+WORLDS_V2_K_ESTIMATE = 0.8366
+WORLDS_V2_K_STATUS = "ESTIMATED_NOT_ADOPTED: R2 supported (k_hat 0.8366, CI 0.766-0.897), F4 totals PIT variance z -7.85 outside +-3"
 WORLDS_V1_CONFIG = WorldConfig()
 
 
