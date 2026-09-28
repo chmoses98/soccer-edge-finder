@@ -81,6 +81,11 @@ class RunInputs:
     lineup_contexts: dict[str, MatchContext] = field(
         default_factory=dict
     )  # optional richer contexts
+    reference_lookup: dict[tuple, float] = field(
+        default_factory=dict
+    )  # (fixture, market, selection, line) -> devigged p
+    reference_bookmaker: str = "consensus"
+    reference_observed_at: datetime | None = None
 
 
 @dataclass
