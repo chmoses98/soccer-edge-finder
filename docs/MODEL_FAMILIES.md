@@ -38,3 +38,23 @@ Evidence: none. There is no free historical xG for the 2018-19 → 2025-26 bench
 (`docs/XG_DATA_AUDIT.md`), so the family cannot be compared walk-forward to the frozen benchmark. It is not
 priced, not promoted, and must not be until at least two full seasons of xG exist and the comparison in
 `docs/CALIBRATION.md` has been run. Recorded as a negative/insufficient-data result, not a model.
+
+## dc_laplace_v2 (remediation phase 12; audit §D) — NEW family, v1 untouched
+
+`model/strength_v2.py`. Structure: `log λ_ij = κ + a_i − d_j + γ·(1 − neutral_ij)`, `log μ_ij = κ + a_j − d_i`,
+hard `Σa = Σd = 0` (fitted in the (n−1)-dimensional centred space, exposed in the full space so the
+world generator, walk-forward loop and sim cache work unchanged), κ ~ N(log mean away goals of the
+training rows, 0.3²), γ ~ N(0.20, 0.10²), ρ ~ N(0, 0.08²), a/d ~ N(0, s²) (thin-history teams
+N(−0.15, 0.45²)), v1 recency `e^(−ξ·days)`. `MatchRow.neutral` (from `MatchResult.neutral_site`) switches
+γ off on neutral venues. `fit(..., fix_intercept=0.0)` gives the likelihood-ratio test of κ.
+
+Why: with Σa = Σd = 0 and no κ, the away baseline is exp(0) for every league and γ has to carry the home
+*level* instead of the home/away ratio (v1 under-predicts away goals by ~11%: P(home) +2.9 pt, O2.5 −3,
+BTTS −5). On a synthetic league v2 reproduces the training away level within 0.5% where v1 is 28% low.
+
+Pre-registered selection (`research/dc_v2.py select`): grid ξ ∈ {0.0065, 0.004, 0.003} × s ∈ {0.35, 0.50,
+0.60}, chosen on 2019-20..2023-24 by 1X2 log loss (tie-break O/U 2.5). ONE-TIME holdout 2024-25 + 2025-26
+(`holdout`): acceptance = away/home level error ≤ 2% (pooled and per league), home ECE ≤ 0.020, paired
+1X2 and O/U log-loss gain vs v1 with CI upper < 0, >10-pt disagreement bias ≤ 0.02, κ LR ≥ 6.63 in ≥ 90%
+of league-season fits; market gap and hybrid weight reported without a requirement. Results:
+`data/research/dc_v2_selection.json`, `data/research/dc_v2_holdout.json`, `docs/RESEARCH_DC_V2.md`.

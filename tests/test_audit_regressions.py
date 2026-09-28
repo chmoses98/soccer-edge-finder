@@ -18,12 +18,14 @@ from soccer_edge.kalshi.schemas import RawMarket
 from soccer_edge.model.analytic import outcome_probs, score_matrix
 from soccer_edge.model.context import MatchContext
 from soccer_edge.model.strength import DixonColesFitter, MatchRow
+from soccer_edge.model.strength_v2 import DixonColesFitterV2
 from soccer_edge.model.worlds import WorldConfig, WorldSet
 from soccer_edge.pricing.pricer import PricedProbability
 from soccer_edge.providers.espn import parse_summary_lineups
 from soccer_edge.run.settle import clv_fields, model_signed_clv
 from soccer_edge.run.simcache import compact, expand_world_probs
 from soccer_edge.sim.engine import SimConfig, simulate
+from soccer_edge.sim.engine_v2 import SimConfigV2, simulate_v2
 from tests.test_espn_provider import _summary_body
 
 # ---- fixed bugs ------------------------------------------------------------------------------------------
@@ -200,25 +202,25 @@ def _league(seed: int, home_rate: float = 1.55, away_rate: float = 1.25):
     return teams, rows
 
 
-@pytest.mark.xfail(
-    strict=True,
-    reason="dc_laplace_v1 has no scoring intercept: the sum-to-zero penalty pins the away level near exp(0) "
-    "(docs/RESEARCH_HOME_BIAS.md H8; docs/PRELAUNCH_AUDIT.md §D)",
-)
 def test_fitted_away_level_matches_training_away_level():
+    """Audit §D acceptance 7: flipped to PASS by dc_laplace_v2 (remediation phase 12). The frozen v1
+    family keeps the defect; it is pinned below rather than hidden."""
     teams, rows = _league(11)
-    post = DixonColesFitter().fit(rows, as_of=date(2026, 7, 1))
+    post = DixonColesFitterV2().fit(rows, as_of=date(2026, 7, 1))
     pred_away = np.mean([post.expected_goals(r.home, r.away)[1] for r in rows])
     obs_away = np.mean([r.away_goals for r in rows])
     assert abs(pred_away / obs_away - 1) < 0.05
 
 
-@pytest.mark.xfail(
-    strict=True,
-    reason="minute_engine_v1 never reads worlds.rho, so the fitted Dixon-Coles low-score correction is dropped "
-    "at pricing (docs/PRELAUNCH_AUDIT.md §B2)",
-)
-def test_engine_honours_dixon_coles_rho():
+def test_v1_away_level_defect_is_still_present_in_the_frozen_family():
+    teams, rows = _league(11)
+    post = DixonColesFitter().fit(rows, as_of=date(2026, 7, 1))
+    pred_away = np.mean([post.expected_goals(r.home, r.away)[1] for r in rows])
+    obs_away = np.mean([r.away_goals for r in rows])
+    assert pred_away / obs_away < 0.95  # audit B3: v1 under-predicts away goals
+
+
+def _rho_worlds():
     W = 400
     cfg = WorldConfig(red_card_mean_per_team=0.0, trailing_attack_mult=1.0, leading_attack_mult=1.0)
     ws = WorldSet(
@@ -232,8 +234,23 @@ def test_engine_honours_dixon_coles_rho():
         np.ones(W),
         config=cfg,
     )
-    ctx = MatchContext("f", "c", "H", "A", datetime(2026, 1, 1, tzinfo=UTC))
-    out = simulate(ws, ctx, SimConfig(draws_per_world=200, allocate_player_goals=False), seed=5)
+    return ws, MatchContext("f", "c", "H", "A", datetime(2026, 1, 1, tzinfo=UTC))
+
+
+def test_engine_honours_dixon_coles_rho():
+    """Audit §B2 / §P9: flipped to PASS by world_sim_v2 (remediation phase 13)."""
+    ws, ctx = _rho_worlds()
+    out = simulate_v2(
+        ws, ctx, SimConfigV2(draws_per_world=200, allocate_player_goals=False), seed=5
+    )
     draw_sim = float((out.home_ft == out.away_ft).mean())
     draw_dc = outcome_probs(score_matrix(1.3, 1.1, -0.12))["draw"]
     assert abs(draw_sim - draw_dc) < 0.006
+
+
+def test_v1_engine_still_ignores_rho():
+    ws, ctx = _rho_worlds()
+    out = simulate(ws, ctx, SimConfig(draws_per_world=200, allocate_player_goals=False), seed=5)
+    draw_sim = float((out.home_ft == out.away_ft).mean())
+    draw_dc = outcome_probs(score_matrix(1.3, 1.1, -0.12))["draw"]
+    assert abs(draw_sim - draw_dc) > 0.006  # v1 draws the rho=0 distribution

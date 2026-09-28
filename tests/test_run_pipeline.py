@@ -19,7 +19,7 @@ from soccer_edge.run.simcache import SimCache
 AS_OF = datetime(2026, 10, 9, 12, 0, tzinfo=UTC)
 
 
-def _epl_model(fixtures, as_of: date = date(2026, 10, 9)):
+def _epl_rows(fixtures):
     rng = np.random.default_rng(0)
     teams = sorted(
         {f.home_team_id for f in fixtures}
@@ -40,6 +40,11 @@ def _epl_model(fixtures, as_of: date = date(2026, 10, 9)):
                     int(rng.poisson(1.1)),
                 )
             )
+    return rows
+
+
+def _epl_model(fixtures, as_of: date = date(2026, 10, 9)):
+    rows = _epl_rows(fixtures)
     rows = [r for r in rows if r.date < as_of]
     post = DixonColesFitter().fit(rows, as_of=as_of, strict_point_in_time=True)
     fitted_at = datetime(as_of.year, as_of.month, as_of.day, 11, tzinfo=UTC)
@@ -232,3 +237,35 @@ def test_temporal_guard_report_is_in_the_run_output(registry, epl_fixtures, disc
     tg = art.output.freshness["temporal_guard"]
     assert tg["ok"] is True and tg["violations"] == []
     assert {"fixtures", "results", "market_snapshots"} <= set(tg["checked"])
+
+
+def test_pipeline_runs_end_to_end_on_world_sim_v2(registry, epl_fixtures, disc, tmp_path):
+    from soccer_edge.model.strength_v2 import DixonColesFitterV2
+    from soccer_edge.run.pipeline import ENGINE_V2
+
+    inp = _inputs(registry, epl_fixtures, disc)
+    v1_model = inp.models["eng.premier_league"]
+    rows = _epl_rows(epl_fixtures)
+    post2 = DixonColesFitterV2().fit(rows, as_of=date(2026, 10, 9), strict_point_in_time=True)
+    inp.models["eng.premier_league"] = CompetitionModel(
+        "eng.premier_league", post2, v1_model.fitted_at, len(rows), max(r.date for r in rows), []
+    )
+    led = PredictionLedger(tmp_path / "ledger")
+    art = run(
+        inp,
+        RunConfig(
+            run_date=date(2026, 10, 10), n_worlds=60, draws_per_world=20, engine_version=ENGINE_V2
+        ),
+        ledger=led,
+    )
+    assert (
+        art.output.coverage.unaccounted_contracts == 0
+        and art.output.coverage.contracts_evaluated > 0
+    )
+    recs = list(led.iter_records())
+    assert recs and all(r["model_version"] == "dc_laplace_v2" for r in recs)
+    assert all(r["engine_version"] == "world_sim_v2" for r in recs)
+    assert all(r["model_family"].startswith("data_only.world_sim_v2") for r in recs)
+    ft = [r for r in recs if r["family"] == "match_result_3way"]
+    assert ft and all(r["probability"]["mc_standard_error"] == 0.0 for r in ft)  # analytic
+    assert led.verify() == []

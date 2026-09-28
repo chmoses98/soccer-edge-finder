@@ -13,6 +13,7 @@ from soccer_edge.model.strength import (
     ParameterPosterior,
     StrengthConfig,
 )
+from soccer_edge.model.strength_v2 import DixonColesFitterV2, StrengthConfigV2
 from soccer_edge.providers.interfaces import MatchResult
 
 
@@ -34,6 +35,7 @@ def rows_from_results(results: list[MatchResult]) -> list[MatchRow]:
             r.away_team_id,
             r.home_goals,
             r.away_goals,
+            neutral=bool(r.neutral_site),
         )
         for r in results
     ]
@@ -45,7 +47,7 @@ def fit_competition(
     *,
     as_of: date,
     fixtures: list[Fixture] | None = None,
-    config: StrengthConfig | None = None,
+    config: StrengthConfig | StrengthConfigV2 | None = None,
     lookback_days: int = 730,
 ) -> CompetitionModel:
     rows = [
@@ -56,9 +58,14 @@ def fit_competition(
     teams = sorted(
         {f.home_team_id for f in fixtures or []} | {f.away_team_id for f in fixtures or []}
     )
-    post = DixonColesFitter(config).fit(
-        rows, as_of=as_of, teams=teams or None, strict_point_in_time=True
-    )
+    if isinstance(config, StrengthConfigV2):
+        post = DixonColesFitterV2(config).fit(
+            rows, as_of=as_of, teams=teams or None, strict_point_in_time=True
+        )
+    else:
+        post = DixonColesFitter(config).fit(
+            rows, as_of=as_of, teams=teams or None, strict_point_in_time=True
+        )
     known = set(post.teams)
     missing = [t for t in teams if t not in known]
     latest = max((r.date for r in rows), default=None)

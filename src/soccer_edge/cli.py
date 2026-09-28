@@ -198,6 +198,7 @@ def cmd_run(args: argparse.Namespace) -> int:
     from soccer_edge.archive.ledger import PredictionLedger
     from soccer_edge.kalshi.client import KalshiPublicClient
     from soccer_edge.kalshi.discovery import discover
+    from soccer_edge.model.strength_v2 import StrengthConfigV2
     from soccer_edge.pricing.edge import EdgeConfig
     from soccer_edge.run.inputs import DEFAULT_COMPETITIONS, assemble, build_inputs
     from soccer_edge.run.pipeline import RunConfig, run, write_outputs
@@ -212,6 +213,7 @@ def cmd_run(args: argparse.Namespace) -> int:
         competitions=comps,
         today=run_date,
         espn_dir=Path(args.espn_dir) if args.espn_dir else None,
+        strength_config=(StrengthConfigV2() if args.model_version == "dc_laplace_v2" else None),
     )
     for n in data.notes:
         print("[data]", n)
@@ -270,6 +272,7 @@ def cmd_run(args: argparse.Namespace) -> int:
         confirmed_lineups_only=args.confirmed_lineups_only,
         n_worlds=args.worlds,
         draws_per_world=args.draws,
+        engine_version=args.engine_version,
         edge=EdgeConfig(),
         enforce_freshness=not args.no_freshness_gate,
     )
@@ -865,6 +868,18 @@ def build_parser() -> argparse.ArgumentParser:
     )
     r.add_argument("--confirmed-lineups-only", action="store_true")
     r.add_argument("--worlds", type=int, default=1000)
+    r.add_argument(
+        "--model-version",
+        choices=["dc_laplace_v1", "dc_laplace_v2"],
+        default="dc_laplace_v1",
+        help="strength model family (v2 = scoring intercept + hard centring; phase 12)",
+    )
+    r.add_argument(
+        "--engine-version",
+        choices=["minute_engine_v1", "world_sim_v2"],
+        default="minute_engine_v1",
+        help="simulation engine (world_sim_v2 = exact DC score matrix, analytic full-time pricing)",
+    )
     r.add_argument("--draws", type=int, default=100)
     r.add_argument("--out-dir", default=str(DATA / "runs" / "latest"))
     r.add_argument("--archive-dir", default=None, help="prediction ledger root (append-only)")

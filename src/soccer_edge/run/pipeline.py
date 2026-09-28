@@ -31,6 +31,7 @@ from soccer_edge.kalshi.taxonomy import ContractSpec, MarketFamily, Scope
 from soccer_edge.model.context import LineupState, MatchContext
 from soccer_edge.model.worlds import WorldConfig, WorldGenerator
 from soccer_edge.policy.versions import SELECTION_V2, SelectionPolicy
+from soccer_edge.pricing.analytic_pricer import is_analytic, price_analytic
 from soccer_edge.pricing.coherence import audit as coherence_audit
 from soccer_edge.pricing.edge import EdgeAssessment, EdgeConfig, assess
 from soccer_edge.pricing.edge_v2 import EdgeV2Assessment, EdgeV2Config, assess_v2
@@ -49,8 +50,12 @@ from soccer_edge.run.simcache import (
     sim_key,
 )
 from soccer_edge.sim.engine import SimConfig, simulate
+from soccer_edge.sim.engine_v2 import SimConfigV2, score_matrices, simulate_v2
 
 MODEL_FAMILY_ID = "data_only.world_sim_v1"
+MODEL_FAMILY_ID_V2 = "data_only.world_sim_v2"  # dc_laplace_v2 + world_sim_v2 (phases 12-13)
+ENGINE_V1 = "minute_engine_v1"
+ENGINE_V2 = "world_sim_v2"
 # Competitions priced from the pooled international results archive (ESPN) use a distinct family id so
 # their prospective evidence never mixes with the club-league cells of the benchmark family.
 INTL_POOL_COMPETITIONS = frozenset(
@@ -69,8 +74,9 @@ INTL_POOL_COMPETITIONS = frozenset(
 INTL_POOL_FAMILY_ID = MODEL_FAMILY_ID + ".intl_pool"
 
 
-def model_family_for(competition_id: str) -> str:
-    return INTL_POOL_FAMILY_ID if competition_id in INTL_POOL_COMPETITIONS else MODEL_FAMILY_ID
+def model_family_for(competition_id: str, engine_version: str = ENGINE_V1) -> str:
+    base = MODEL_FAMILY_ID_V2 if engine_version == ENGINE_V2 else MODEL_FAMILY_ID
+    return base + ".intl_pool" if competition_id in INTL_POOL_COMPETITIONS else base
 
 
 @dataclass(frozen=True)
@@ -90,6 +96,9 @@ class RunConfig:
     enforce_freshness: bool = True
     selection: SelectionPolicy = SELECTION_V2
     edge_v2: EdgeV2Config = field(default_factory=EdgeV2Config)
+    engine_version: str = (
+        ENGINE_V1  # ENGINE_V2 prices full-time families analytically from the DC matrix
+    )
 
 
 @dataclass
@@ -148,13 +157,28 @@ class RunArtifacts:
     diagnostics: dict[str, Any] = field(default_factory=dict)
 
 
-def _simulate_fixture(posterior, ctx: MatchContext, fid: str, cfg: RunConfig, sim_cfg: SimConfig):
+def _simulate_fixture(posterior, ctx: MatchContext, fid: str, cfg: RunConfig, sim_cfg):
     """Worlds + joint outcomes for one fixture; deterministic in (seed, fixture id), so a cache-hit
     fixture re-simulated here reproduces the draws its cached prices were computed from."""
     rng = np.random.default_rng(cfg.seed ^ (int(content_hash(fid).split(":")[1][:8], 16)))
     worlds = WorldGenerator(posterior, cfg.world).generate(ctx, cfg.n_worlds, rng)
-    out = simulate(worlds, ctx, sim_cfg, seed=int(rng.integers(0, 2**31 - 1)))
+    seed = int(rng.integers(0, 2**31 - 1))
+    if cfg.engine_version == ENGINE_V2:
+        out = simulate_v2(worlds, ctx, sim_cfg, seed=seed)
+    else:
+        out = simulate(worlds, ctx, sim_cfg, seed=seed)
     return worlds, out
+
+
+def _price_contract(w, worlds, out, cfg: RunConfig):
+    """world_sim_v2: exact per-world probabilities for full-time families; engine draws otherwise."""
+    if cfg.engine_version == ENGINE_V2 and is_analytic(w.sem):
+        mats = getattr(worlds, "_score_mats", None)
+        if mats is None:
+            mats = score_matrices(worlds.lam_home, worlds.mu_away, worlds.rho)
+            worlds._score_mats = mats  # cached per fixture (WorldSet is a plain dataclass)
+        return price_analytic(w.sem, mats, interval_level=cfg.interval_level)
+    return price(w.sem, out, interval_level=cfg.interval_level)
 
 
 def _kickoff(f: Fixture) -> datetime:
@@ -310,7 +334,11 @@ def run(
     # fixtures repriced from the sim cache: (posterior, context) so draw-level payoffs can be rebuilt on demand
     cached_fixtures: dict[str, tuple[Any, MatchContext]] = {}
     fixture_ctx: dict[str, MatchContext] = {}
-    sim_cfg = SimConfig(draws_per_world=cfg.draws_per_world)
+    sim_cfg = (
+        SimConfigV2(draws_per_world=cfg.draws_per_world)
+        if cfg.engine_version == ENGINE_V2
+        else SimConfig(draws_per_world=cfg.draws_per_world)
+    )
 
     for fid, ws in by_fx.items():
         fx = ws[0].fixture
@@ -411,7 +439,7 @@ def run(
         for w in ws:
             try:
                 w.indicator = w.sem.settle(out)  # type: ignore[union-attr]
-                w.priced = price(w.sem, out, interval_level=cfg.interval_level)  # type: ignore[arg-type]
+                w.priced = _price_contract(w, worlds, out, cfg)
                 priced_pairs.append((w.sem, w.priced))  # type: ignore[arg-type]
             except UnsupportedSemantics as exc:
                 cov.set(w.market.ticker, Disposition.UNPRICEABLE, str(exc)[:160])
@@ -530,6 +558,7 @@ def run(
                 inputs,
                 fixture_summaries.get(w.fixture.fixture_id, {}),
                 selection_version=cfg.selection.version,
+                engine_version=cfg.engine_version,
             )
         )
 
@@ -562,7 +591,9 @@ def run(
         assert fx is not None and w.priced is not None and w.regime is not None
         ko = _kickoff(fx)
         horizon = label_horizon(minutes_until(ko, as_of)).value
-        akey = AuthorityKey(model_family_for(fx.competition_id), w.spec.family.value, horizon)
+        akey = AuthorityKey(
+            model_family_for(fx.competition_id, cfg.engine_version), w.spec.family.value, horizon
+        )
         state = inputs.authority.get(akey)
         ctx = fixture_ctx.get(fx.fixture_id)
         v2r = w.yes_v2 if c.assessment.side == "yes" else w.no_v2
@@ -594,7 +625,7 @@ def run(
             bet_up_to_price=c.assessment.bet_up_to_price,
             authority=state.value,  # type: ignore[arg-type]
             confidence_label=_confidence_label(state, c.assessment),
-            model_family=model_family_for(fx.competition_id),
+            model_family=model_family_for(fx.competition_id, cfg.engine_version),
             model_version=inputs.models[fx.competition_id].posterior.version,
             data_as_of=inputs.results_observed_at,
             market_as_of=inputs.market_observed_at,
@@ -783,6 +814,7 @@ def _contract_record(
     summ: dict[str, Any],
     *,
     selection_version: str = SELECTION_V2.version,
+    engine_version: str = ENGINE_V1,
 ) -> dict[str, Any]:
     fx = w.fixture
     assert fx is not None and w.priced is not None
@@ -805,7 +837,7 @@ def _contract_record(
             "player_slot": list(w.sem.player_slot) if (w.sem and w.sem.player_slot) else None,
             "description": w.priced.description,
         },
-        "model_family": model_family_for(fx.competition_id),
+        "model_family": model_family_for(fx.competition_id, engine_version),
         "model_version": cm.posterior.version,
         "parameter_hash": cm.posterior.param_hash(),
         "world_hash": summ.get("world_hash"),

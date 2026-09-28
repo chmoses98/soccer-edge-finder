@@ -5,6 +5,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta
 from pathlib import Path
+from typing import Any
 
 from soccer_edge.authority.policy import AuthorityMatrix
 from soccer_edge.core.time import utc_now
@@ -59,6 +60,7 @@ def assemble(
     historical_content: bytes | None = None,
     seasons_back: int = 2,
     espn_dir: Path | None = None,
+    strength_config: Any | None = None,
 ) -> AssembledData:
     today = today or utc_now().date()
     competitions_are_explicit = competitions is not DEFAULT_COMPETITIONS
@@ -144,7 +146,9 @@ def assemble(
             notes.append(f"{comp}: insufficient results to fit ({len(rs)})")
             continue
         comp_fx = [f for f in fixtures if f.competition_id == comp]
-        models[comp] = fit_competition(comp, rs, as_of=today, fixtures=comp_fx)
+        models[comp] = fit_competition(
+            comp, rs, as_of=today, fixtures=comp_fx, config=strength_config
+        )
         if models[comp].teams_missing:
             notes.append(f"{comp}: teams without history {models[comp].teams_missing}")
     return AssembledData(

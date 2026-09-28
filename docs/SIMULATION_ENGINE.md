@@ -53,3 +53,35 @@ conserved; wider inputs → wider outputs; lineup confirmation reduces relative 
 Stoppage time is folded into the profile; no explicit substitutions; no formation/tactical state;
 penalties within regulation are not separated from open play; ET intensity and shoot-out
 probability are priors, not estimates; player layer has no data provider in production.
+
+## world_sim_v2 (remediation phase 13; audit B2, §P9) — separately versioned engine
+
+`sim/engine_v2.py` + `pricing/analytic_pricer.py`. The production v1 path (`worlds_v1` +
+`minute_engine_v1`) never read the fitted ρ and layered unfitted game-state (×1.08/×0.93) and red-card
+multipliers on a λ fitted as a full-match mean, so its full-time distribution was neither the benchmarked
+model nor mean-preserving. v2:
+
+1. **Full-time score per world is drawn from the exact per-world Dixon–Coles matrix** (ρ honoured). Every
+   full-time family (3-way, totals, team totals, handicaps, BTTS, clean sheet, DNB, exact score) is priced
+   **analytically** from those matrices: `p_w` is exact, the interval is the world quantile, `mc_se = 0`.
+2. **Timing is conditional on the score and exact**: goal times of a time-inhomogeneous Poisson process
+   given the count are i.i.d. from the normalised intensity, so the half-time split is binomial thinning
+   with the fitted first-half share (0.441; E0/SP1/D1/I1/F1 2015–2025, 19,859 matches; v1 assumed 0.46),
+   the first scorer is home with probability h/(h+a), the first minute is the order statistic. No
+   game-state or red-card dynamics: unfitted, not mean-preserving, dropped (recorded in `meta`).
+3. **ET/pens** only when a winner is required and the tie is level: Poisson(λ·0.85·30/90) per side, then
+   a 50/50 shoot-out (unvalidated priors, flagged).
+
+Reconciliation at the audit's regression points (1,000 worlds × 200 draws, ρ = −0.10):
+
+| λ / μ | quantity | analytic | world_sim_v2 |
+|---|---|---|---|
+| 2.30 / 0.80 | P(draw) | 0.1914 | 0.1914 |
+| 2.30 / 0.80 | E[home] / E[away] | 2.30 / 0.80 | 2.304 / 0.801 |
+| 1.52 / 1.13 | P(draw) | 0.2795 | 0.2787 |
+| 1.52 / 1.13 | P(O2.5) | 0.4940 | 0.4955 |
+
+Production selection: `RunConfig.engine_version` (`minute_engine_v1` | `world_sim_v2`); the model family
+id becomes `data_only.world_sim_v2` so v2 evidence never mixes with v1 cells. The full historical engine
+benchmark (analytic vs v1 vs v2 on a stratified subsample, both posteriors) is
+`data/research/world_sim_benchmark.json` (`research/dc_v2.py engines`).

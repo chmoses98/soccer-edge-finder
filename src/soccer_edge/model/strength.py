@@ -35,6 +35,7 @@ class MatchRow:
     home_goals: int
     away_goals: int
     weight: float = 1.0  # extra multiplicative weight (e.g., competition strength, neutral site)
+    neutral: bool = False  # neutral venue: v2 fitter drops home advantage; v1 ignores the flag
 
 
 @dataclass(frozen=True)
