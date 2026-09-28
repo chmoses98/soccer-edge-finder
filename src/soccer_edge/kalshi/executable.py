@@ -33,7 +33,9 @@ def top_of_book(market: RawMarket, side: str) -> ExecutableQuote:
     if side == "yes":
         price, size = market.yes_ask, market.yes_ask_size
     elif side == "no":
-        price, size = market.no_ask, market.no_ask_size
+        # Kalshi does not return no_ask_size; the NO ask is (1 - yes_bid), so its depth is the YES bid size
+        price = market.no_ask
+        size = market.no_ask_size if market.no_ask_size is not None else market.yes_bid_size
     else:
         raise ValueError(side)
     if price is None or not (Decimal(0) < price < Decimal(1)):

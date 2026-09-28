@@ -138,6 +138,15 @@ class RunArtifacts:
     diagnostics: dict[str, Any] = field(default_factory=dict)
 
 
+def _simulate_fixture(posterior, ctx: MatchContext, fid: str, cfg: RunConfig, sim_cfg: SimConfig):
+    """Worlds + joint outcomes for one fixture; deterministic in (seed, fixture id), so a cache-hit
+    fixture re-simulated here reproduces the draws its cached prices were computed from."""
+    rng = np.random.default_rng(cfg.seed ^ (int(content_hash(fid).split(":")[1][:8], 16)))
+    worlds = WorldGenerator(posterior, cfg.world).generate(ctx, cfg.n_worlds, rng)
+    out = simulate(worlds, ctx, sim_cfg, seed=int(rng.integers(0, 2**31 - 1)))
+    return worlds, out
+
+
 def _kickoff(f: Fixture) -> datetime:
     return f.kickoff_utc or datetime.fromisoformat(f.kickoff_date + "T12:00:00+00:00")
 
@@ -286,6 +295,8 @@ def run(
     simulated: list[str] = []
     repriced: list[str] = []
     fixture_summaries: dict[str, dict[str, Any]] = {}
+    # fixtures repriced from the sim cache: (posterior, context) so draw-level payoffs can be rebuilt on demand
+    cached_fixtures: dict[str, tuple[Any, MatchContext]] = {}
     fixture_ctx: dict[str, MatchContext] = {}
     sim_cfg = SimConfig(draws_per_world=cfg.draws_per_world)
 
@@ -359,6 +370,7 @@ def run(
         cached = sim_cache.load(fid) if sim_cache else None
         if cached and cached.sim_key == key and cached.has(tickers):
             repriced.append(fid)
+            cached_fixtures[fid] = (cm.posterior, base_ctx)
             fixture_summaries[fid] = cached.summary
             for w in ws:
                 c = cached.contracts[w.market.ticker]
@@ -378,9 +390,7 @@ def run(
                     c["description"],
                 )
             continue
-        rng = np.random.default_rng(cfg.seed ^ (int(content_hash(fid).split(":")[1][:8], 16)))
-        worlds = WorldGenerator(cm.posterior, cfg.world).generate(base_ctx, cfg.n_worlds, rng)
-        out = simulate(worlds, base_ctx, sim_cfg, seed=int(rng.integers(0, 2**31 - 1)))
+        worlds, out = _simulate_fixture(cm.posterior, base_ctx, fid, cfg, sim_cfg)
         simulated.append(fid)
         summ = out.compact_summary()
         summ["worlds"] = worlds.summary()
@@ -440,14 +450,17 @@ def run(
         for a in (w.yes, w.no):
             if a is None:
                 continue
+            if w.indicator is None and w.fixture.fixture_id in cached_fixtures:
+                # repriced from cache: re-run the deterministic simulation once per fixture so candidate
+                # payoffs share the same joint draws (the correlation reducer needs draw-level coupling)
+                fid_c = w.fixture.fixture_id
+                post_c, ctx_c = cached_fixtures.pop(fid_c)
+                _, out_c = _simulate_fixture(post_c, ctx_c, fid_c, cfg, sim_cfg)
+                for w2 in by_fx.get(fid_c, []):
+                    if w2.sem is not None:
+                        w2.indicator = w2.sem.settle(out_c)
             ind = w.indicator
-            if (
-                ind is None
-            ):  # repriced from cache: approximate payoff from world probs (no draw-level corr)
-                ind = (
-                    np.random.default_rng(0).random(len(w.priced.world_probs))
-                    < w.priced.world_probs
-                )
+            assert ind is not None
             payoff = payoff_vector(ind, a.side, float(a.price), float(a.fee_per_contract))
             if a.robust_positive_ev:
                 candidates.append(
@@ -723,6 +736,7 @@ def _contract_record(
             "yes_ask": str(w.market.yes_ask),
             "no_bid": str(w.market.no_bid),
             "no_ask": str(w.market.no_ask),
+            "yes_bid_size": str(w.market.yes_bid_size),  # depth behind the NO ask (1 - yes_bid)
             "yes_ask_size": str(w.market.yes_ask_size),
             "no_ask_size": str(w.market.no_ask_size),
             "status": w.market.status,

@@ -240,6 +240,8 @@ def cmd_run(args: argparse.Namespace) -> int:
         "[kalshi]",
         json.dumps({k: v for k, v in disc.counters().items() if k != "failures"}, default=str),
     )
+    # decision time is after the sweep: freshness ages and horizon labels are measured from here
+    as_of = utc_now()
     inputs = build_inputs(
         registry, data, disc, as_of=as_of, authority_path=REPO_ROOT / "config" / "authority.json"
     )

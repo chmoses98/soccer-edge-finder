@@ -150,9 +150,16 @@ def rows_from_records(
         if rec.get("schema") not in (None, "prediction_record_v1"):
             continue
         edge = rec.get("edge") or {}
-        ref_yes = _f(rec.get("reference_probability")) or _f(
-            (rec.get("recommendation") or {}).get("reference_probability")
-        )
+        # records store the YES-probability reference under reference.probability_yes; a recommendation's
+        # reference_probability is in its own side's units, so convert a NO recommendation back to YES
+        ref_yes = _f((rec.get("reference") or {}).get("probability_yes"))
+        if ref_yes is None:
+            ref_yes = _f(rec.get("reference_probability"))
+        if ref_yes is None:
+            reco = rec.get("recommendation") or {}
+            r_side = _f(reco.get("reference_probability"))
+            if r_side is not None:
+                ref_yes = 1.0 - r_side if reco.get("side") == "no" else r_side
         st = st_by_id.get(rec.get("record_id"))
         for side in ("yes", "no"):
             a = edge.get(side)

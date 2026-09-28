@@ -171,7 +171,8 @@ def build_inputs(
         models=data.models,
         results_observed_at=data.results_observed_at,
         discovery=discovery,
-        market_observed_at=discovery.finished_at or as_of,
+        # the oldest quote in an exhaustive sweep was read when the sweep started (not when it finished)
+        market_observed_at=discovery.started_at,
         authority=AuthorityMatrix.load(authority_path) if authority_path else AuthorityMatrix(),
         as_of=as_of,
     )
