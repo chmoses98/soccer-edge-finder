@@ -1,14 +1,14 @@
 [capture] fast mode: 253 series with markets at last full discovery; new series are always swept
 {
-  "batch": "cap-20260928T200214Z",
+  "batch": "cap-20260928T233445Z",
   "complete": true,
-  "discovered": 5896,
-  "written": 2984,
-  "path": "work/snapshots/2026-09-28/cap-20260928T200214Z.jsonl"
+  "discovered": 5697,
+  "written": 1859,
+  "path": "work/snapshots/2026-09-28/cap-20260928T233445Z.jsonl"
 }
 {
   "reference_probabilities": 0,
-  "observed_at": "2026-09-28 20:02:22.210179+00:00",
+  "observed_at": "2026-09-28 23:34:54.678295+00:00",
   "groups": 0,
   "unmapped_fixture_groups": 0,
   "incomplete_groups": 0,
@@ -22,7 +22,7 @@
   "written": 0
 }
 {
- "as_of": "2026-09-28T20:02:23.554388+00:00",
+ "as_of": "2026-09-28T23:34:55.481902+00:00",
  "leagues": [
   "concacaf.nations.league",
   "fifa.friendly",
@@ -40,18 +40,18 @@
  "unmapped_leagues": [],
  "scoreboard_failures": [],
  "lineups": {
-  "events": 13,
-  "captured": 7,
-  "unchanged": 6,
-  "published_pre_kickoff": 1,
-  "published_post": 6,
-  "unpublished": 6,
+  "events": 7,
+  "captured": 6,
+  "unchanged": 1,
+  "published_pre_kickoff": 3,
+  "published_post": 2,
+  "unpublished": 2,
   "failures": []
  },
- "results_appended": 5,
+ "results_appended": 12,
  "weather": {
-  "events": 13,
-  "captured": 10,
+  "events": 7,
+  "captured": 4,
   "no_venue": 0,
   "geocode_miss": 3,
   "forecast_miss": 0,
@@ -60,18 +60,18 @@
  "map_version": "4"
 }
 unmapped teams: 5 | proposals: {'fifa.friendly': 0}
-[dispatch] holding 24.5 min for the next window
+[dispatch] holding 8.0 min for the next window
 [capture] fast mode: 253 series with markets at last full discovery; new series are always swept
 {
-  "batch": "cap-20260928T202928Z",
+  "batch": "cap-20260928T234529Z",
   "complete": true,
-  "discovered": 5897,
-  "written": 1879,
-  "path": "work/snapshots/2026-09-28/cap-20260928T202928Z.jsonl"
+  "discovered": 5744,
+  "written": 952,
+  "path": "work/snapshots/2026-09-28/cap-20260928T234529Z.jsonl"
 }
 {
   "reference_probabilities": 0,
-  "observed_at": "2026-09-28 20:02:22.210179+00:00",
+  "observed_at": "2026-09-28 23:34:54.678295+00:00",
   "groups": 0,
   "unmapped_fixture_groups": 0,
   "incomplete_groups": 0,
@@ -85,7 +85,7 @@ unmapped teams: 5 | proposals: {'fifa.friendly': 0}
   "written": 0
 }
 {
- "as_of": "2026-09-28T20:29:31.205220+00:00",
+ "as_of": "2026-09-28T23:45:32.561959+00:00",
  "leagues": [
   "concacaf.nations.league",
   "fifa.friendly",
@@ -103,18 +103,144 @@ unmapped teams: 5 | proposals: {'fifa.friendly': 0}
  "unmapped_leagues": [],
  "scoreboard_failures": [],
  "lineups": {
-  "events": 13,
-  "captured": 6,
-  "unchanged": 7,
-  "published_pre_kickoff": 1,
-  "published_post": 6,
-  "unpublished": 6,
+  "events": 7,
+  "captured": 1,
+  "unchanged": 6,
+  "published_pre_kickoff": 3,
+  "published_post": 2,
+  "unpublished": 2,
   "failures": []
  },
  "results_appended": 0,
  "weather": {
-  "events": 13,
-  "captured": 10,
+  "events": 7,
+  "captured": 4,
+  "no_venue": 0,
+  "geocode_miss": 3,
+  "forecast_miss": 0,
+  "failures": []
+ },
+ "map_version": "4"
+}
+unmapped teams: 5 | proposals: {'fifa.friendly': 0}
+[dispatch] holding 4.4 min for the next window
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20260928T235229Z",
+  "complete": true,
+  "discovered": 5744,
+  "written": 784,
+  "path": "work/snapshots/2026-09-28/cap-20260928T235229Z.jsonl"
+}
+{
+  "reference_probabilities": 0,
+  "observed_at": "2026-09-28 23:34:54.678295+00:00",
+  "groups": 0,
+  "unmapped_fixture_groups": 0,
+  "incomplete_groups": 0,
+  "snapshots": 0,
+  "provider_notes": [
+    "41 rows, 41 skipped (unmapped division/team)",
+    "skipped_by_division={'E2': 4, 'E3': 10, 'EC': 12, 'SC1': 4, 'SP2': 11}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+{
+ "as_of": "2026-09-28T23:52:32.431599+00:00",
+ "leagues": [
+  "concacaf.nations.league",
+  "fifa.friendly",
+  "fifa.worldq.afc",
+  "fifa.worldq.caf",
+  "fifa.worldq.concacaf",
+  "fifa.worldq.conmebol",
+  "fifa.worldq.uefa",
+  "uefa.euroq",
+  "uefa.nations"
+ ],
+ "events": 20,
+ "fixtures_mapped": 17,
+ "events_skipped_unmapped": 3,
+ "unmapped_leagues": [],
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 7,
+  "captured": 0,
+  "unchanged": 7,
+  "published_pre_kickoff": 3,
+  "published_post": 2,
+  "unpublished": 2,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 7,
+  "captured": 4,
+  "no_venue": 0,
+  "geocode_miss": 3,
+  "forecast_miss": 0,
+  "failures": []
+ },
+ "map_version": "4"
+}
+unmapped teams: 5 | proposals: {'fifa.friendly': 0}
+[dispatch] holding 0.5 min for the next window
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20260928T235529Z",
+  "complete": true,
+  "discovered": 5743,
+  "written": 744,
+  "path": "work/snapshots/2026-09-28/cap-20260928T235529Z.jsonl"
+}
+{
+  "reference_probabilities": 0,
+  "observed_at": "2026-09-28 23:34:54.678295+00:00",
+  "groups": 0,
+  "unmapped_fixture_groups": 0,
+  "incomplete_groups": 0,
+  "snapshots": 0,
+  "provider_notes": [
+    "41 rows, 41 skipped (unmapped division/team)",
+    "skipped_by_division={'E2': 4, 'E3': 10, 'EC': 12, 'SC1': 4, 'SP2': 11}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+{
+ "as_of": "2026-09-28T23:55:32.501456+00:00",
+ "leagues": [
+  "concacaf.nations.league",
+  "fifa.friendly",
+  "fifa.worldq.afc",
+  "fifa.worldq.caf",
+  "fifa.worldq.concacaf",
+  "fifa.worldq.conmebol",
+  "fifa.worldq.uefa",
+  "uefa.euroq",
+  "uefa.nations"
+ ],
+ "events": 20,
+ "fixtures_mapped": 17,
+ "events_skipped_unmapped": 3,
+ "unmapped_leagues": [],
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 7,
+  "captured": 0,
+  "unchanged": 7,
+  "published_pre_kickoff": 3,
+  "published_post": 2,
+  "unpublished": 2,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 7,
+  "captured": 4,
   "no_venue": 0,
   "geocode_miss": 3,
   "forecast_miss": 0,
@@ -124,8 +250,8 @@ unmapped teams: 5 | proposals: {'fifa.friendly': 0}
 }
 unmapped teams: 5 | proposals: {'fifa.friendly': 0}
 {
- "batches": 2,
- "delivered_total": 4,
- "missed_total": 30,
- "delivery_rate_total": 0.11764705882352941
+ "batches": 4,
+ "delivered_total": 14,
+ "missed_total": 42,
+ "delivery_rate_total": 0.25
 }
