@@ -1,0 +1,1174 @@
+{
+ "$schema_version": "1",
+ "$note": "Phase 2 alias expansion from coverage diagnostics (2026-09-28). Explicit aliases as Kalshi prints them; no fuzzy matching. Teams here have NO fixture/results provider yet (see docs/COVERAGE_FORENSICS.md) so their contracts move from 'unmapped_team' to 'no_fixture' until the ESPN fixture adapter is wired.",
+ "competitions": [],
+ "teams": [
+  {
+   "team_id": "nat.kaz",
+   "name": "Kazakhstan",
+   "country": "KAZ",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.mkd",
+   "name": "North Macedonia",
+   "country": "MKD",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [
+    "FYR Macedonia",
+    "Macedonia"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.lva",
+   "name": "Latvia",
+   "country": "LVA",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.fin",
+   "name": "Finland",
+   "country": "FIN",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.smr",
+   "name": "San Marino",
+   "country": "SMR",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.mda",
+   "name": "Moldova",
+   "country": "MDA",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.lux",
+   "name": "Luxembourg",
+   "country": "LUX",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.bul",
+   "name": "Bulgaria",
+   "country": "BUL",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.arm",
+   "name": "Armenia",
+   "country": "ARM",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.mlt",
+   "name": "Malta",
+   "country": "MLT",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.isr",
+   "name": "Israel",
+   "country": "ISR",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.aze",
+   "name": "Azerbaijan",
+   "country": "AZE",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.est",
+   "name": "Estonia",
+   "country": "EST",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.cyp",
+   "name": "Cyprus",
+   "country": "CYP",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.blr",
+   "name": "Belarus",
+   "country": "BLR",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.kos",
+   "name": "Kosovo",
+   "country": "KOS",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.isl",
+   "name": "Iceland",
+   "country": "ISL",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.fro",
+   "name": "Faroe Islands",
+   "country": "FRO",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [
+    "Faroes"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.mne",
+   "name": "Montenegro",
+   "country": "MNE",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.lie",
+   "name": "Liechtenstein",
+   "country": "LIE",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.gib",
+   "name": "Gibraltar",
+   "country": "GIB",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.and",
+   "name": "Andorra",
+   "country": "AND",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "nat.ltu",
+   "name": "Lithuania",
+   "country": "LTU",
+   "gender": "men",
+   "kind": "national",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "mex.america",
+   "name": "Club América",
+   "country": "MEX",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "America",
+    "CF América",
+    "Club America"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "mex.guadalajara",
+   "name": "Guadalajara",
+   "country": "MEX",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "CD Guadalajara",
+    "Chivas",
+    "Chivas Guadalajara"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "mex.cruz_azul",
+   "name": "Cruz Azul",
+   "country": "MEX",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "mex.pumas",
+   "name": "Pumas UNAM",
+   "country": "MEX",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Club Universidad Nacional",
+    "Pumas",
+    "UNAM"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "mex.monterrey",
+   "name": "Monterrey",
+   "country": "MEX",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "CF Monterrey",
+    "Rayados"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "mex.tigres",
+   "name": "Tigres UANL",
+   "country": "MEX",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Tigres",
+    "UANL"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "mex.toluca",
+   "name": "Toluca",
+   "country": "MEX",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Deportivo Toluca"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "mex.santos_laguna",
+   "name": "Santos Laguna",
+   "country": "MEX",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Santos"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "mex.pachuca",
+   "name": "Pachuca",
+   "country": "MEX",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "CF Pachuca"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "mex.leon",
+   "name": "León",
+   "country": "MEX",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Club Leon",
+    "Club León",
+    "Leon"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "mex.necaxa",
+   "name": "Necaxa",
+   "country": "MEX",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Club Necaxa"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "mex.atlas",
+   "name": "Atlas",
+   "country": "MEX",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Atlas FC"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "mex.puebla",
+   "name": "Puebla",
+   "country": "MEX",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Club Puebla"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "mex.queretaro",
+   "name": "Querétaro",
+   "country": "MEX",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Gallos Blancos",
+    "Queretaro"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "mex.san_luis",
+   "name": "Atlético San Luis",
+   "country": "MEX",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Atletico San Luis",
+    "Atlético de San Luis",
+    "San Luis"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "mex.juarez",
+   "name": "FC Juárez",
+   "country": "MEX",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Bravos de Juárez",
+    "Juarez",
+    "Juárez"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "mex.tijuana",
+   "name": "Tijuana",
+   "country": "MEX",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Club Tijuana",
+    "Xolos"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "mex.mazatlan",
+   "name": "Mazatlán",
+   "country": "MEX",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Mazatlan",
+    "Mazatlán FC"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.atlanta_united",
+   "name": "Atlanta United",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Atlanta",
+    "Atlanta United FC",
+    "Atlanta Utd"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.austin",
+   "name": "Austin FC",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Austin"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.charlotte",
+   "name": "Charlotte FC",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Charlotte"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.chicago_fire",
+   "name": "Chicago Fire",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Chicago",
+    "Chicago Fire FC"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.cincinnati",
+   "name": "FC Cincinnati",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Cincinnati"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.colorado_rapids",
+   "name": "Colorado Rapids",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Colorado"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.columbus_crew",
+   "name": "Columbus Crew",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Columbus"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.dc_united",
+   "name": "D.C. United",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "D.C.",
+    "DC United",
+    "Washington"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.fc_dallas",
+   "name": "FC Dallas",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Dallas"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.houston_dynamo",
+   "name": "Houston Dynamo",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Houston",
+    "Houston Dynamo FC"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.sporting_kc",
+   "name": "Sporting Kansas City",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Kansas City",
+    "Sporting KC"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.la_galaxy",
+   "name": "LA Galaxy",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Galaxy",
+    "Los Angeles G",
+    "Los Angeles Galaxy"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.lafc",
+   "name": "Los Angeles FC",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "LAFC",
+    "Los Angeles",
+    "Los Angeles F"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.inter_miami",
+   "name": "Inter Miami",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Inter Miami CF",
+    "Miami"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.minnesota_united",
+   "name": "Minnesota United",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Minnesota",
+    "Minnesota United FC"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.cf_montreal",
+   "name": "CF Montréal",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "CF Montreal",
+    "Montreal",
+    "Montréal"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.nashville",
+   "name": "Nashville SC",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Nashville"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.new_england",
+   "name": "New England Revolution",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "New England",
+    "Revolution"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.nycfc",
+   "name": "New York City FC",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "NYCFC",
+    "New York City"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.ny_red_bulls",
+   "name": "New York Red Bulls",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "NY Red Bulls",
+    "New York RB",
+    "RBNY",
+    "Red Bull New York",
+    "Red Bulls"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.orlando_city",
+   "name": "Orlando City",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Orlando",
+    "Orlando City SC"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.philadelphia_union",
+   "name": "Philadelphia Union",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Philadelphia",
+    "Union"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.portland_timbers",
+   "name": "Portland Timbers",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Portland"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.real_salt_lake",
+   "name": "Real Salt Lake",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "RSL",
+    "Salt Lake"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.san_diego",
+   "name": "San Diego FC",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "San Diego"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.san_jose_earthquakes",
+   "name": "San Jose Earthquakes",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "San Jose"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.seattle_sounders",
+   "name": "Seattle Sounders",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Seattle",
+    "Seattle Sounders FC"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.st_louis_city",
+   "name": "St. Louis City SC",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Saint Louis",
+    "St Louis City",
+    "St. Louis"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.toronto",
+   "name": "Toronto FC",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Toronto"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "usa.vancouver_whitecaps",
+   "name": "Vancouver Whitecaps",
+   "country": "USA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Vancouver",
+    "Vancouver Whitecaps FC"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.flamengo",
+   "name": "Flamengo",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "CR Flamengo"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.palmeiras",
+   "name": "Palmeiras",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "SE Palmeiras"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.sao_paulo",
+   "name": "São Paulo",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Sao Paulo",
+    "Sao Paulo FC",
+    "São Paulo FC"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.corinthians",
+   "name": "Corinthians",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "SC Corinthians"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.santos",
+   "name": "Santos",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Santos FC"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.fluminense",
+   "name": "Fluminense",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Fluminense FC"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.botafogo",
+   "name": "Botafogo",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Botafogo FR"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.vasco",
+   "name": "Vasco da Gama",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "CR Vasco da Gama",
+    "Vasco"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.gremio",
+   "name": "Grêmio",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Gremio"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.internacional",
+   "name": "Internacional",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Inter de Porto Alegre",
+    "SC Internacional"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.atletico_mineiro",
+   "name": "Atlético Mineiro",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Atletico MG",
+    "Atletico Mineiro",
+    "Atlético-MG",
+    "Galo"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.cruzeiro",
+   "name": "Cruzeiro",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Cruzeiro EC"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.bahia",
+   "name": "Bahia",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "EC Bahia"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.vitoria",
+   "name": "Vitória",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "EC Vitória",
+    "Vitoria"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.fortaleza",
+   "name": "Fortaleza",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Fortaleza EC"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.ceara",
+   "name": "Ceará",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Ceara",
+    "Ceará SC"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.bragantino",
+   "name": "Red Bull Bragantino",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Bragantino",
+    "RB Bragantino"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.athletico_paranaense",
+   "name": "Athletico Paranaense",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Athletico PR",
+    "Athletico-PR",
+    "Atletico Paranaense",
+    "Paranaense"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.coritiba",
+   "name": "Coritiba",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Coritiba FC"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.chapecoense",
+   "name": "Chapecoense",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Chapecoense AF"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.remo",
+   "name": "Remo",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Clube do Remo"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.mirassol",
+   "name": "Mirassol",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Mirassol FC"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.juventude",
+   "name": "Juventude",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "EC Juventude"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.sport_recife",
+   "name": "Sport Recife",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Sport",
+    "Sport Club do Recife"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.goias",
+   "name": "Goiás",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Goias",
+    "Goiás EC"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.atletico_goianiense",
+   "name": "Atlético Goianiense",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Atletico Goianiense",
+    "Atlético-GO"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.criciuma",
+   "name": "Criciúma",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Criciuma"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "bra.cuiaba",
+   "name": "Cuiabá",
+   "country": "BRA",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Cuiaba"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "arg.independiente",
+   "name": "Independiente",
+   "country": "ARG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "CA Independiente",
+    "Independiente Avellaneda"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "arg.river_plate",
+   "name": "River Plate",
+   "country": "ARG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "CA River Plate",
+    "River"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "arg.boca_juniors",
+   "name": "Boca Juniors",
+   "country": "ARG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Boca",
+    "CA Boca Juniors"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "arg.racing",
+   "name": "Racing Club",
+   "country": "ARG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "Racing",
+    "Racing Avellaneda"
+   ],
+   "provider_ids": {}
+  },
+  {
+   "team_id": "arg.san_lorenzo",
+   "name": "San Lorenzo",
+   "country": "ARG",
+   "gender": "men",
+   "kind": "club",
+   "aliases": [
+    "CA San Lorenzo de Almagro",
+    "San Lorenzo de Almagro"
+   ],
+   "provider_ids": {}
+  }
+ ]
+}

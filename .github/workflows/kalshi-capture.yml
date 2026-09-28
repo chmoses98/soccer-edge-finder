@@ -50,13 +50,26 @@ jobs:
           name: capture-${{ github.run_id }}
           path: work/
           retention-days: 7
+      - name: Prove fast capture complete relative to the last full discovery (Phase 23)
+        if: ${{ hashFiles('work/snapshots/latest_catalog.json') != '' }}
+        continue-on-error: true
+        run: |
+          python -m soccer_edge.cli reconcile-discovery --fast work/snapshots/latest_catalog.json --full data/catalog/latest_index.json --out work/snapshots/reconcile.json \
+            || echo "::warning::fast capture NOT complete relative to full discovery (see reconcile.json)"
+          python - <<'PY'
+          import json; r = json.load(open('work/snapshots/reconcile.json'))
+          print({k: r.get(k) for k in ('complete_relative_to_full', 'evidence_level')}, r.get('violations'))
+          PY
       - name: Publish to data-archive
         if: ${{ hashFiles('work/snapshots/STATUS.json') != '' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           rm -f work/snapshots/latest_catalog.json   # raw catalog stays an artifact, not archived
-          scripts/archive_publish.sh work/snapshots snapshots "capture ${{ github.run_id }} $(date -u +%Y-%m-%dT%H:%MZ)"
+          mkdir -p pub/snapshots pub/reference
+          cp -R work/snapshots/. pub/snapshots/
+          [ -d work/reference ] && cp -R work/reference/. pub/reference/ || true
+          scripts/archive_publish.sh pub . "capture ${{ github.run_id }} $(date -u +%Y-%m-%dT%H:%MZ)"
       - name: Summary
         run: |
           echo '## capture' >> "$GITHUB_STEP_SUMMARY"; cat work/snapshots/STATUS.json >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || echo "no STATUS.json" >> "$GITHUB_STEP_SUMMARY"

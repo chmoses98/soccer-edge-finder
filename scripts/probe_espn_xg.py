@@ -7,7 +7,7 @@ from __future__ import annotations
 import json
 import re
 import time
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
 import httpx
@@ -31,6 +31,91 @@ ESPN_LEAGUES = {
     "mex.1": "Liga MX",
     "usa.nwsl": "NWSL",
 }
+
+
+TEAM_LIST_LEAGUES = [
+    "eng.1",
+    "eng.2",
+    "esp.1",
+    "ger.1",
+    "ita.1",
+    "fra.1",
+    "ned.1",
+    "por.1",
+    "usa.1",
+    "mex.1",
+    "bra.1",
+    "arg.1",
+    "uefa.champions",
+    "uefa.europa",
+    "uefa.europa.conf",
+    "uefa.nations",
+    "fifa.friendly",
+    "concacaf.nations.league",
+    "usa.nwsl",
+    "eng.w.1",
+    "sco.1",
+    "tur.1",
+    "ksa.1",
+]
+CANDIDATE_SLUGS = [
+    "concacaf.nations.league",
+    "eng.3",
+    "eng.4",
+    "eng.5",
+    "usa.usl.1",
+    "bra.2",
+    "fifa.wwc",
+    "fifa.world",
+    "fifa.worldq.uefa",
+    "fifa.worldq.conmebol",
+    "fifa.worldq.concacaf",
+    "fifa.worldq.afc",
+    "fifa.worldq.caf",
+    "uefa.euro",
+    "uefa.euroq",
+    "conmebol.libertadores",
+    "conmebol.sudamericana",
+    "concacaf.champions",
+    "concacaf.gold",
+    "afc.champions",
+    "eng.fa",
+    "eng.league_cup",
+    "esp.copa_del_rey",
+    "ger.dfb_pokal",
+    "ita.coppa_italia",
+    "fra.coupe_de_france",
+    "ned.1",
+    "por.1",
+    "bel.1",
+    "sco.1",
+    "tur.1",
+    "ksa.1",
+    "bra.1",
+    "arg.1",
+    "col.1",
+    "chi.1",
+    "per.1",
+    "uru.1",
+    "jpn.1",
+    "kor.1",
+    "chn.1",
+    "aus.1",
+    "isr.1",
+    "den.1",
+    "swe.1",
+    "nor.1",
+    "pol.1",
+    "esp.2",
+    "ger.2",
+    "ita.2",
+    "fra.2",
+    "uefa.wchampions",
+    "fifa.cwc",
+    "fifa.olympics",
+    "eng.w.1",
+    "esp.w.1",
+]
 
 
 def get(client: httpx.Client, url: str, **params):
@@ -95,6 +180,7 @@ def main() -> int:
     with httpx.Client(timeout=30, headers={"User-Agent": UA}, follow_redirects=True) as c:
         # --- ESPN scoreboards per league (today +/- a week window via dates param)
         sample_event_ids: list[tuple[str, str]] = []
+        pre_match_ids: list[tuple[str, str, str]] = []
         for lg, name in ESPN_LEAGUES.items():
             r2 = get(c, f"{ESPN}/{lg}/scoreboard")
             body = r2.get("body") or {}
@@ -112,20 +198,36 @@ def main() -> int:
             }
             for ev in evs[:2]:
                 sample_event_ids.append((lg, ev["id"]))
-            # date-range query (next 10 days)
+            # per-day queries for the next 3 days (the range form of `dates` returned 400 on 2026-09-28)
             start = datetime.now(UTC)
-            r3 = get(
+            per_day = []
+            pre_ids: list[tuple[str, str, str]] = []
+            for i in range(1, 4):
+                d = start + timedelta(days=i)
+                r3 = get(c, f"{ESPN}/{lg}/scoreboard", dates=f"{d:%Y%m%d}")
+                b3 = r3.get("body") or {}
+                evs3 = b3.get("events") or []
+                per_day.append(
+                    {"date": f"{d:%Y-%m-%d}", "status": r3.get("status"), "events": len(evs3)}
+                )
+                for ev in evs3:
+                    st = ((ev.get("competitions") or [{}])[0].get("status") or {}).get("type") or {}
+                    if st.get("state") == "pre" and len(pre_ids) < 2:
+                        pre_ids.append((lg, ev["id"], ev.get("date")))
+            report["espn"][lg]["per_day_next3"] = per_day
+            report["espn"][lg]["window_query_status"] = "per-day"
+            report["espn"][lg]["events_next_window"] = sum(x["events"] for x in per_day)
+            # range form, recorded for the audit
+            r4 = get(
                 c,
                 f"{ESPN}/{lg}/scoreboard",
-                dates=f"{start:%Y%m%d}-{(start.replace(month=start.month + 1 if start.month < 12 else 12, day=5)):%Y%m%d}",
+                dates=f"{start:%Y%m%d}-{(start + timedelta(days=7)):%Y%m%d}",
             )
-            b3 = r3.get("body") or {}
-            report["espn"][lg]["events_next_window"] = len(b3.get("events") or [])
-            report["espn"][lg]["window_query_status"] = r3.get("status")
-            if b3.get("events") and not sample_event_ids:
-                sample_event_ids.append((lg, b3["events"][0]["id"]))
-            if b3.get("events"):
-                report["espn"][lg]["window_first_event"] = trim_event(b3["events"][0])
+            report["espn"][lg]["range_query_status"] = r4.get("status")
+            report["espn"][lg]["range_query_events"] = len(
+                (r4.get("body") or {}).get("events") or []
+            )
+            pre_match_ids.extend(pre_ids)
         # --- ESPN summary (lineups, rosters, formations) for a few events
         report["espn"]["summaries"] = []
         for lg, eid in sample_event_ids[:6]:
@@ -185,41 +287,83 @@ def main() -> int:
         teams = (((r.get("body") or {}).get("sports") or [{}])[0].get("leagues") or [{}])[0].get(
             "teams"
         ) or []
-        report["espn"]["teams_eng1"] = {
-            "status": r.get("status"),
-            "n": len(teams),
-            "sample": [
+        # --- ESPN team lists (compact, FULL lists) for identity mapping by exact alias resolution offline
+        report["espn"]["team_lists"] = {}
+        for lg in TEAM_LIST_LEAGUES:
+            r = get(c, f"{ESPN}/{lg}/teams")
+            body = r.get("body") or {}
+            teams = []
+            for sp in body.get("sports") or []:
+                for L in sp.get("leagues") or []:
+                    for t in L.get("teams") or []:
+                        tm = t.get("team") or t
+                        teams.append(
+                            {
+                                "id": str(tm.get("id")),
+                                "abbreviation": tm.get("abbreviation"),
+                                "displayName": tm.get("displayName"),
+                                "shortDisplayName": tm.get("shortDisplayName"),
+                                "name": tm.get("name"),
+                                "location": tm.get("location"),
+                            }
+                        )
+            report["espn"]["team_lists"][lg] = {
+                "status": r.get("status"),
+                "n": len(teams),
+                "teams": teams,
+            }
+        # --- candidate league slugs (status + today's event count only)
+        report["espn"]["slug_probe"] = {}
+        for lg in CANDIDATE_SLUGS:
+            r = get(c, f"{ESPN}/{lg}/scoreboard")
+            body = r.get("body") or {}
+            lgm = (body.get("leagues") or [{}])[0]
+            report["espn"]["slug_probe"][lg] = {
+                "status": r.get("status"),
+                "events_today": len(body.get("events") or []),
+                "name": lgm.get("name"),
+                "slug": lgm.get("slug"),
+            }
+        # --- PRE-MATCH summary probe: are rosters/lineups exposed before kickoff, and how long before?
+        report["espn"]["pre_match_summaries"] = []
+        for lg, eid, ko in pre_match_ids[:8]:
+            r = get(c, f"{ESPN}/{lg}/summary", event=eid)
+            body = r.get("body") or {}
+            rosters = body.get("rosters") or []
+            report["espn"]["pre_match_summaries"].append(
                 {
-                    k: (t.get("team") or {}).get(k)
-                    for k in (
-                        "id",
-                        "abbreviation",
-                        "displayName",
-                        "shortDisplayName",
-                        "location",
-                        "name",
+                    "league": lg,
+                    "event": eid,
+                    "kickoff": ko,
+                    "hours_to_kickoff": round(
+                        (
+                            datetime.strptime(ko, "%Y-%m-%dT%H:%MZ").replace(tzinfo=UTC)
+                            - datetime.now(UTC)
+                        ).total_seconds()
+                        / 3600,
+                        2,
                     )
+                    if ko
+                    else None,
+                    "status": r.get("status"),
+                    "top_keys": sorted(body.keys()),
+                    "rosters_present": bool(rosters),
+                    "rosters": [
+                        {
+                            "homeAway": ro.get("homeAway"),
+                            "formation": ro.get("formation"),
+                            "n_roster": len(ro.get("roster") or []),
+                            "n_starters": sum(
+                                1 for e in (ro.get("roster") or []) if e.get("starter")
+                            ),
+                        }
+                        for ro in rosters
+                    ],
+                    "injuries_present": bool(body.get("injuries")),
+                    "injuries_sample": str(body.get("injuries"))[:400],
+                    "odds_present": bool(body.get("odds") or body.get("pickcenter")),
                 }
-                for t in teams[:25]
-            ],
-        }
-        r = get(c, f"{ESPN}/uefa.champions/teams")
-        teams = (((r.get("body") or {}).get("sports") or [{}])[0].get("leagues") or [{}])[0].get(
-            "teams"
-        ) or []
-        report["espn"]["teams_ucl"] = {
-            "status": r.get("status"),
-            "n": len(teams),
-            "sample": [
-                {
-                    k: (t.get("team") or {}).get(k)
-                    for k in ("id", "abbreviation", "displayName", "location")
-                }
-                for t in teams[:40]
-            ],
-        }
-
-        # --- xG sources
+            )
         xg_probes = {
             "understat_league_page": ("https://understat.com/league/EPL/2025", "html"),
             "understat_match_page": ("https://understat.com/match/26631", "html"),
@@ -256,6 +400,36 @@ def main() -> int:
                 "https://www.football-data.co.uk/mmz4281/2627/E0.csv",
                 "csv",
             ),
+            "football_data_couk_SP1_2627": (
+                "https://www.football-data.co.uk/mmz4281/2627/SP1.csv",
+                "csv",
+            ),
+            "football_data_couk_D1_2627": (
+                "https://www.football-data.co.uk/mmz4281/2627/D1.csv",
+                "csv",
+            ),
+            "football_data_couk_I1_2627": (
+                "https://www.football-data.co.uk/mmz4281/2627/I1.csv",
+                "csv",
+            ),
+            "football_data_couk_F1_2627": (
+                "https://www.football-data.co.uk/mmz4281/2627/F1.csv",
+                "csv",
+            ),
+            "football_data_couk_E1_2627": (
+                "https://www.football-data.co.uk/mmz4281/2627/E1.csv",
+                "csv",
+            ),
+            "football_data_couk_N1_2627": (
+                "https://www.football-data.co.uk/mmz4281/2627/N1.csv",
+                "csv",
+            ),
+            "football_data_couk_P1_2627": (
+                "https://www.football-data.co.uk/mmz4281/2627/P1.csv",
+                "csv",
+            ),
+            "football_data_couk_notes_2627": ("https://www.football-data.co.uk/notes.txt", "text"),
+            "understat_league_json_probe": ("https://understat.com/league/EPL/2026", "html"),
             "statsbomb_open_data_competitions": (
                 "https://raw.githubusercontent.com/statsbomb/open-data/master/data/competitions.json",
                 "json",

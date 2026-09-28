@@ -64,7 +64,14 @@ jobs:
         id: run
         run: |
           set -o pipefail
-          ARGS="--window ${{ inputs.window_hours || '48' }} --out-dir work/out --archive-dir work/ledger --sim-cache work/simcache"
+          mkdir -p work/reference
+          if git ls-remote --exit-code --heads origin data-archive >/dev/null 2>&1; then
+            git show origin/data-archive:reference/last_fingerprints.json > work/reference/last_fingerprints.json 2>/dev/null || true
+            # ESPN-fed fixtures/results (Americas leagues + international pools), read-only
+            git clone --quiet --depth 1 --branch data-archive "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" espn_archive 2>/dev/null || true
+          fi
+          ARGS="--window ${{ inputs.window_hours || '48' }} --out-dir work/out --archive-dir work/ledger --sim-cache work/simcache --reference-dir work/reference"
+          [ -d espn_archive/results/espn ] && ARGS="$ARGS --espn-dir espn_archive"
           [ -n "${{ inputs.date }}" ] && ARGS="$ARGS --date ${{ inputs.date }}"
           if [ -n "${{ inputs.leagues }}" ]; then for l in $(echo "${{ inputs.leagues }}" | tr ',' ' '); do ARGS="$ARGS --league $l"; done; fi
           python -m soccer_edge.cli run $ARGS | tee work/run.log
@@ -88,6 +95,7 @@ jobs:
           # only the day files written this run + the index; index is rebuildable from day files
           find work/ledger -name 'predictions.jsonl' -newer work/run.log -o -name 'predictions.jsonl' | while read f; do d=$(basename $(dirname "$f")); mkdir -p pub/predictions/$d; cat "$f" >> pub/predictions/$d/predictions.jsonl; done
           cp -f work/ledger/index.json pub/predictions/index.json 2>/dev/null || true
+          if [ -d work/reference ]; then mkdir -p pub/reference; cp -R work/reference/. pub/reference/; fi
           scripts/archive_publish.sh pub . "run-soccer $RUN_ID"
       - name: Summary
         if: always()
