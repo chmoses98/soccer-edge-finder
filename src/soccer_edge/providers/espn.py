@@ -590,6 +590,9 @@ INTERNATIONAL_POOL = (
     "fifa.worldq.uefa",
     "fifa.worldq.conmebol",
     "fifa.worldq.concacaf",
+    "fifa.worldq.afc",
+    "fifa.worldq.caf",
+    "uefa.euroq",
     "concacaf.nations.league",
 )
 ESPN_POOLS: dict[str, tuple[str, ...]] = {
@@ -600,6 +603,8 @@ ESPN_POOLS: dict[str, tuple[str, ...]] = {
     "uefa.nations_league": INTERNATIONAL_POOL,
     "fifa.friendly": INTERNATIONAL_POOL,
     "concacaf.nations_league": INTERNATIONAL_POOL,
+    "fifa.world_cup_qualifiers": INTERNATIONAL_POOL,
+    "uefa.euro_qualifiers": INTERNATIONAL_POOL,
 }
 
 

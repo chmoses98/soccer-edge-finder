@@ -8273,7 +8273,7 @@
       }
     }
   },
-  "collect_elapsed_s": 1761.2,
+  "collect_elapsed_s": 3.9,
   "config": {
     "divisions": [
       "E0",
@@ -8354,7 +8354,7 @@
       "status": "post-hoc diagnostic; not used in the decision"
     }
   },
-  "elapsed_s": 356.5,
+  "elapsed_s": 265.2,
   "k_grid_diagnostics": {
     "posterior_only": {
       "0.3": {
@@ -8877,7 +8877,7 @@
   ],
   "outcome_based_estimator": {
     "cross_moments": {
-      "reading": "under k=1 the residual products should sum to -(refit-separated cross cov); more negative = over-reaction = posterior too wide",
+      "reading": "E[sum r_i r_j] = k^2 * all_pairs - refit_separated_pairs; at k=1 that is all_pairs - refit_separated_pairs. Observed below it = posterior too wide (k<1), above it = too narrow.",
       "share_refit_separated": 0.9154,
       "sum_cross_residual_products": -2671.61,
       "sum_model_cross_cov_all_pairs": 10557.46,
@@ -9081,7 +9081,7 @@
     }
   },
   "protocol": "recalibration_v1",
-  "result_hash": "sha256:52b05ba227573ff248f8b2b111650180e036dfa19494cdb0c835eedcbf1b873d",
+  "result_hash": "sha256:3ad0b52c7fd1b815807755ce8b7a2e5131a83388d91f95def4b89fb126e60024",
   "seasons_aligned": [
     "2019-20",
     "2020-21",
