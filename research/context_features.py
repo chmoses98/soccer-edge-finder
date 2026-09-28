@@ -154,7 +154,9 @@ def residual_test(
     rows = [r for r in preds if r["key"] in feats]
     y = np.array([int(r["y"]) for r in rows])
     seas = np.array([r["season"] for r in rows])
-    pref = f"{ref}_" if f"{ref}_h" in rows[0] else f"p_{ref}_"  # assemble writes market columns as p_mkt_*
+    pref = (
+        f"{ref}_" if f"{ref}_h" in rows[0] else f"p_{ref}_"
+    )  # assemble writes market columns as p_mkt_*
     P_ref = np.array(
         [[float(r[f"{pref}h"]), float(r[f"{pref}d"]), float(r[f"{pref}a"])] for r in rows]
     )
