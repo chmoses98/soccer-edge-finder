@@ -1,0 +1,38 @@
+{
+ "schema": "lineup_oracle_v1",
+ "generated_at": "2026-09-28T20:16:25.915919+00:00",
+ "by_league": {},
+ "chosen_c": {},
+ "stop_threshold": 0.002,
+ "decision": "NOT_EVALUATED: no historical XI data (run espn-lineup-backfill + lineup-backfill.yml first)",
+ "input": "archive",
+ "n_matches": 0,
+ "method_calibration": {
+  "effect_0.0": {
+   "oracle_gain_1x2": {
+    "mean": -0.003351388801267888,
+    "ci95": [
+     -0.009073751848522393,
+     0.0021831027349336835
+    ],
+    "n": 558
+   },
+   "chosen_c": {
+    "syn": 0.25
+   }
+  },
+  "effect_0.35": {
+   "oracle_gain_1x2": {
+    "mean": 0.004287737244810752,
+    "ci95": [
+     -0.0021624975916064,
+     0.0102692980008072
+    ],
+    "n": 558
+   },
+   "chosen_c": {
+    "syn": 0.25
+   }
+  }
+ }
+}
