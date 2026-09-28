@@ -297,6 +297,7 @@ def cmd_settle(args: argparse.Namespace) -> int:
     from soccer_edge.providers.openfootball import COMPETITION_FILES, OpenFootballProvider
     from soccer_edge.run.inputs import current_season_id
     from soccer_edge.run.settle import (
+        CoverageRows,
         build_result_index,
         coverage_report,
         et_possible,
@@ -346,7 +347,7 @@ def cmd_settle(args: argparse.Namespace) -> int:
         cid: et_possible(c.format, c.extra_time_in_knockouts)
         for cid, c in registry.competitions.items()
     }
-    cov_rows: list = []
+    cov_rows = CoverageRows()
     written = settle_ledger(
         ledger,
         index,
@@ -615,6 +616,235 @@ def cmd_archive_recover(args: argparse.Namespace) -> int:
     return 0
 
 
+def _dispatch_schedule(archive: Path, now) -> dict:
+    from soccer_edge.core.serialization import read_json_or
+    from soccer_edge.dispatch.horizons import build_schedule
+    from soccer_edge.providers.espn import ESPN_POOLS, EspnArchive
+    from soccer_edge.run.inputs import DEFAULT_COMPETITIONS
+
+    run_out = read_json_or(archive / "runs" / "latest.run_output.v1.json", None)
+    espn_rows = []
+    try:
+        fixtures, _eids, _as_of = EspnArchive(archive).latest_fixtures()
+        espn_rows = [f.model_dump(mode="json") for f in fixtures]
+    except Exception as exc:
+        print(f"[dispatch] espn fixtures unreadable: {str(exc)[:120]}")
+    return build_schedule(
+        run_output=run_out,
+        espn_fixtures=espn_rows,
+        priced_competitions=set(DEFAULT_COMPETITIONS) | set(ESPN_POOLS),
+        now=now,
+    )
+
+
+def cmd_dispatch_schedule(args: argparse.Namespace) -> int:
+    from soccer_edge.dispatch.horizons import SCHEDULE_FILE
+
+    now = utc_now()
+    sched = _dispatch_schedule(Path(args.archive_dir), now)
+    out = Path(args.out_dir) / SCHEDULE_FILE
+    write_json(out, sched)
+    print(json.dumps({"fixtures": len(sched["fixtures"]), "out": str(out)}))
+    return 0
+
+
+def cmd_dispatch_plan(args: argparse.Namespace) -> int:
+    from soccer_edge.dispatch.horizons import (
+        SCHEDULE_FILE,
+        STATE_LOG,
+        load_log,
+        load_schedule,
+        minutes_until_next_window,
+        plan,
+    )
+
+    now = utc_now()
+    archive = Path(args.archive_dir)
+    schedule = load_schedule(archive / SCHEDULE_FILE)
+    log = load_log(archive / STATE_LOG)
+    due, missed, upcoming = plan(schedule, log, now=now)
+    print(
+        json.dumps(
+            {
+                "now": now.isoformat(),
+                "fixtures_scheduled": len(schedule),
+                "due": [
+                    (d.fixture.fixture_id, d.horizon, round(d.minutes_to_kickoff, 1)) for d in due
+                ],
+                "newly_missed": len(missed),
+                "next_window_minutes": minutes_until_next_window(upcoming),
+            },
+            indent=1,
+        )
+    )
+    return 0
+
+
+def cmd_dispatch_tick(args: argparse.Namespace) -> int:
+    """One dispatcher tick: log missed horizons, run one bounded capture batch for every horizon that is
+    satisfiable now, optionally hold for the next window, write diagnostics. Idempotent."""
+    import shutil
+    import time
+    from datetime import timedelta
+
+    from soccer_edge.dispatch.horizons import (
+        DIAGNOSTICS_FILE,
+        SCHEDULE_FILE,
+        STATE_LOG,
+        append_log,
+        delivered_rows,
+        diagnostics,
+        load_log,
+        load_schedule,
+        minutes_until_next_window,
+        plan,
+    )
+
+    archive = Path(args.archive_dir)
+    out = Path(args.out_dir)
+    now = utc_now()
+    sched_doc = _dispatch_schedule(archive, now)
+    write_json(out / SCHEDULE_FILE, sched_doc)
+    schedule = load_schedule(out / SCHEDULE_FILE)
+    log_path = out / STATE_LOG
+    log_path.parent.mkdir(parents=True, exist_ok=True)
+    if (archive / STATE_LOG).exists():
+        shutil.copyfile(archive / STATE_LOG, log_path)
+    # restore change-suppression state so captures append only what changed
+    for rel in (
+        "snapshots/last_fingerprints.json",
+        "reference/last_fingerprints.json",
+        "lineups/last_hashes.json",
+    ):
+        src = archive / rel
+        if src.exists():
+            (out / rel).parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(src, out / rel)
+    batches = 0
+    deadline = now + timedelta(minutes=args.max_hold_minutes)
+    summary: list[dict] = []
+    while True:
+        now = utc_now()
+        log = load_log(log_path)
+        due, missed, upcoming = plan(schedule, log, now=now)
+        append_log(log_path, missed)
+        if not due:
+            wait = minutes_until_next_window(upcoming)
+            if wait is not None and now + timedelta(minutes=wait) <= deadline and not args.no_hold:
+                print(f"[dispatch] holding {wait:.1f} min for the next window")
+                time.sleep(wait * 60 + 5)
+                continue
+            break
+        batch_id = f"kd-{now:%Y%m%dT%H%M%SZ}"
+        actions = _dispatch_actions(out, due, batch_id, args)
+        rows = delivered_rows(due, now=utc_now(), batch_id=batch_id, actions=actions)
+        append_log(log_path, rows)
+        batches += 1
+        summary.append(
+            {
+                "batch_id": batch_id,
+                "delivered": [(r.fixture_id, r.horizon, r.achieved_minutes) for r in rows],
+                "actions": actions,
+            }
+        )
+        if args.no_hold:
+            break
+    diag = diagnostics(load_log(log_path), schedule, now=utc_now())
+    diag["last_tick"] = {"batches": batches, "summary": summary}
+    write_json(out / DIAGNOSTICS_FILE, diag)
+    print(
+        json.dumps(
+            {
+                "batches": batches,
+                "delivered_total": diag["delivered_total"],
+                "missed_total": diag["missed_total"],
+                "delivery_rate_total": diag["delivery_rate_total"],
+            },
+            indent=1,
+        )
+    )
+    return 0
+
+
+def _dispatch_actions(out: Path, due, batch_id: str, args: argparse.Namespace) -> list[str]:
+    """Capture batch: Kalshi fast snapshot, reference odds, ESPN lineups for the due fixtures' leagues.
+    Each action is isolated: a failure is recorded, never fatal for the others."""
+    from soccer_edge.providers.espn import ESPN_POOLS, EspnMap
+
+    parser = build_parser()
+    done: list[str] = []
+    try:
+        a = parser.parse_args(
+            ["capture", "--fast", "--status", "open", "--out-dir", str(out / "snapshots")]
+        )
+        rc = a.func(a)
+        done.append(f"kalshi_capture:{'ok' if rc == 0 else 'incomplete'}")
+    except Exception as exc:
+        done.append(f"kalshi_capture:error:{str(exc)[:80]}")
+    try:
+        a = parser.parse_args(["capture-reference", "--out-dir", str(out / "reference")])
+        rc = a.func(a)
+        done.append(f"reference:{'ok' if rc == 0 else 'empty'}")
+    except Exception as exc:
+        done.append(f"reference:error:{str(exc)[:80]}")
+    if not args.skip_lineups:
+        comps = {d.fixture.competition_id for d in due}
+        emap = EspnMap.load()
+        slugs = sorted(
+            {slug for slug, comp in emap.leagues.items() if comp in comps}
+            | {s for c in comps for s in ESPN_POOLS.get(c, ())}
+        )
+        if slugs:
+            try:
+                a = parser.parse_args(
+                    [
+                        "espn-sync",
+                        "--leagues",
+                        ",".join(slugs),
+                        "--back-days",
+                        "0",
+                        "--forward-days",
+                        "1",
+                        "--max-lineups",
+                        "60",
+                        "--out-dir",
+                        str(out),
+                    ]
+                )
+                rc = a.func(a)
+                done.append(f"lineups:{'ok' if rc == 0 else 'partial'}:{len(slugs)}")
+            except Exception as exc:
+                done.append(f"lineups:error:{str(exc)[:80]}")
+    return done
+
+
+def cmd_dispatch_diagnostics(args: argparse.Namespace) -> int:
+    from soccer_edge.dispatch.horizons import (
+        SCHEDULE_FILE,
+        STATE_LOG,
+        diagnostics,
+        load_log,
+        load_schedule,
+    )
+
+    archive = Path(args.archive_dir)
+    d = diagnostics(
+        load_log(archive / STATE_LOG), load_schedule(archive / SCHEDULE_FILE), now=utc_now()
+    )
+    if args.out:
+        write_json(Path(args.out), d)
+    keys = (
+        "fixtures_tracked",
+        "delivered_total",
+        "missed_total",
+        "delivery_rate_total",
+        "n_pending_fixtures",
+    )
+    print(json.dumps({k: d[k] for k in keys}, indent=1))
+    print(json.dumps(d["by_horizon"], indent=1))
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(prog="soccer", description="soccer-edge-finder operator CLI")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -828,6 +1058,39 @@ def build_parser() -> argparse.ArgumentParser:
         "--apply", action="store_true", help="append the recoverable rows (refuses on any conflict)"
     )
     arc.set_defaults(func=cmd_archive_recover)
+
+    dp = sub.add_parser(
+        "dispatch", help="kickoff-timed capture dispatcher (T-120/60/30/15/5 horizons)"
+    )
+    dpsub = dp.add_subparsers(dest="dispatch_cmd", required=True)
+    ds = dpsub.add_parser(
+        "schedule", help="build dispatch/schedule.json from the latest run output + ESPN fixtures"
+    )
+    ds.add_argument("--archive-dir", required=True)
+    ds.add_argument("--out-dir", required=True)
+    ds.set_defaults(func=cmd_dispatch_schedule)
+    dpl = dpsub.add_parser(
+        "plan", help="show horizons due now / newly missed / next window (read-only)"
+    )
+    dpl.add_argument("--archive-dir", required=True)
+    dpl.set_defaults(func=cmd_dispatch_plan)
+    dt = dpsub.add_parser(
+        "tick", help="one dispatcher tick: capture every horizon satisfiable now, hold for the next"
+    )
+    dt.add_argument("--archive-dir", required=True, help="clone of data-archive (read)")
+    dt.add_argument(
+        "--out-dir",
+        required=True,
+        help="publish payload root (snapshots/, reference/, lineups/, dispatch/)",
+    )
+    dt.add_argument("--max-hold-minutes", type=float, default=40.0)
+    dt.add_argument("--no-hold", action="store_true")
+    dt.add_argument("--skip-lineups", action="store_true")
+    dt.set_defaults(func=cmd_dispatch_tick)
+    dd = dpsub.add_parser("diagnostics", help="horizon-delivery diagnostics from the archived log")
+    dd.add_argument("--archive-dir", required=True)
+    dd.add_argument("--out", default=None)
+    dd.set_defaults(func=cmd_dispatch_diagnostics)
     return p
 
 

@@ -1,0 +1,86 @@
+name: kickoff-dispatch
+
+# Kickoff-timed capture dispatcher (docs/KICKOFF_DISPATCH.md). A cheap stdlib decide step runs on a
+# dense off-round cron and reads the published schedule + delivery log from data-archive; only when a
+# required horizon (T-120/60/30/15/5) is satisfiable now does the bounded capture job run: Kalshi fast
+# snapshot + reference odds + lineups for the due fixtures, then it holds (sleeps) for the next window
+# if that is soon, records every delivered/missed horizon in an append-only log, and publishes.
+# GitHub cron drops slots; every tick is idempotent and catches up on whatever is still satisfiable.
+
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "run the capture job even when nothing is due"
+        type: boolean
+        default: false
+  schedule:
+    - cron: "4,14,24,34,44,54 * * * *"
+
+concurrency:
+  group: data-writer-archive-kickoff
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  decide:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    outputs:
+      due: ${{ steps.d.outputs.due }}
+      reason: ${{ steps.d.outputs.reason }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            scripts/kickoff_decide.py
+            src/soccer_edge/dispatch
+          sparse-checkout-cone-mode: false
+      - name: Any horizon due? (stdlib only, no install)
+        id: d
+        run: python3 scripts/kickoff_decide.py >> "$GITHUB_OUTPUT"
+      - run: echo "decide due=${{ steps.d.outputs.due }} (${{ steps.d.outputs.reason }})" >> "$GITHUB_STEP_SUMMARY"
+
+  capture:
+    needs: decide
+    if: ${{ needs.decide.outputs.due == 'true' || inputs.force }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e .
+      - name: Fetch archive tip (schedule, log, change-suppression state, ESPN fixtures)
+        run: |
+          git clone --quiet --depth 1 --branch data-archive "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" archive
+      - name: Dispatcher tick (capture every satisfiable horizon, hold for the next)
+        id: tick
+        timeout-minutes: 50
+        run: |
+          set -o pipefail
+          mkdir -p work
+          python -m soccer_edge.cli dispatch tick --archive-dir archive --out-dir work --max-hold-minutes 40 | tee work/tick.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: kickoff-${{ github.run_id }}
+          path: work/
+          retention-days: 7
+      - name: Publish
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          rm -f work/snapshots/latest_catalog.json
+          rm -rf work/results work/fixtures/espn 2>/dev/null || true   # espn-sync side outputs: the lineups job owns those
+          [ -d work/dispatch ] || exit 0
+          scripts/archive_publish.sh work . "kickoff-dispatch ${{ github.run_id }} $(date -u +%Y-%m-%dT%H:%MZ)"
+      - name: Summary
+        if: always()
+        run: |
+          { echo '## kickoff-dispatch'; echo '```'; tail -40 work/tick.log 2>/dev/null; echo '```'; } >> "$GITHUB_STEP_SUMMARY"

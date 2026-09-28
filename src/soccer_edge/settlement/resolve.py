@@ -272,6 +272,12 @@ def state_for_outcome(outcome: SettlementOutcome) -> tuple[SettlementState, str]
     return _REFUSAL_TO_STATE[outcome]
 
 
+class CoverageRows(list):
+    """A list of CoverageRow that can also carry aggregate close-capture completeness."""
+
+    close_completeness: dict[str, Any] | None = None
+
+
 @dataclass
 class CoverageRow:
     prediction_record_id: str
@@ -307,6 +313,7 @@ def coverage_report(
     accounted = sum(counts.values())
     return {
         "schema": "settlement_coverage_v1",
+        "close_completeness": getattr(rows, "close_completeness", None),
         "as_of": as_of.isoformat().replace("+00:00", "Z"),
         "grace_hours": grace.total_seconds() / 3600,
         "predictions_total": total,
