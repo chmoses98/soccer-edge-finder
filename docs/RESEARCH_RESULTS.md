@@ -77,3 +77,22 @@ log-loss gap predicts; there is no hidden betting edge behind a worse forecaster
 3. The uncertainty layer needs calibration before `P(edge>0)` is used for anything but reporting.
 4. Negative results are recorded as the baseline (`config/frozen_baselines.json`); any model change
    must beat `walk_forward_v1` on the same aligned sample with a new versioned run.
+
+## Phase 2 studies (2026-09-28) — pointers
+
+The v1 numbers above stay frozen. Seven follow-up studies re-implement the same protocol
+(`research/wf_common.py` reproduces n = 12,248, data 1.00099 / market 0.97321 exactly) and are documented in:
+
+| study | doc | result file | one-line outcome |
+|---|---|---|---|
+| home bias | `docs/RESEARCH_HOME_BIAS.md` | `data/research/home_bias_v1.json` | structural: missing scoring intercept → away goals under-predicted ~11%; `dc_laplace_v2` candidate, still behind market |
+| disagreement | `docs/RESEARCH_DISAGREEMENT.md` | `data/research/disagreement_v1.json` | no informative subgroup (0/116 cells) |
+| market families | `docs/RESEARCH_MARKET_FAMILIES.md` | `data/research/market_families_v1.json` | market wins every family/league/season |
+| uncertainty recalibration | `docs/UNCERTAINTY_RECALIBRATION.md` | `data/research/recalibration_v1.json` | k̂ = 0.81 [0.73, 0.89] → `posterior_sd_scale = 0.8` for a versioned `worlds_v2` |
+| P(edge>0) | `docs/PEDGE_CALIBRATION.md` | `data/research/pedge_proxy_v1.json` | not predictive of realised return; rename in a versioned `edge_v2` |
+| multi-league | `docs/MULTI_LEAGUE_MODEL.md` | `data/research/multi_league_v1.json` | −0.002 LL vs v1, +0.026 vs market; ≈ Elo on UEFA |
+| context features | `docs/RESEARCH_CONTEXT_FEATURES.md` | `data/research/context_features_v1.json` | rest: nothing; congestion ≈ −0.001 LL; context-only |
+
+Net: no retrospective evidence of information beyond a sharp bookmaker; what changed is that the model's
+defects are now named (intercept, width, statistic semantics) and every future change is a new version with a
+frozen comparison. Prospective evidence against Kalshi prices is the only remaining route (`docs/CALIBRATION.md`).
