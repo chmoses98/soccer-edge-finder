@@ -1,0 +1,2224 @@
+{
+  "1x2": {
+    "better_list": [],
+    "by_league": {
+      "D1": {
+        "better_list": [],
+        "market": {
+          "brier": 0.58183,
+          "ece_away": 0.011,
+          "ece_draw": 0.0167,
+          "ece_home": 0.0208,
+          "log_loss": 0.97834
+        },
+        "model": {
+          "brier": 0.60416,
+          "ece_away": 0.0389,
+          "ece_draw": 0.0272,
+          "ece_home": 0.057,
+          "log_loss": 1.0099
+        },
+        "n": 2097,
+        "paired_ll_diff_model_minus_market": {
+          "ci95": [
+            0.02252,
+            0.03972
+          ],
+          "mean": 0.03156
+        },
+        "seasons_data_better": 0,
+        "seasons_evaluated": 7
+      },
+      "E0": {
+        "better_list": [],
+        "market": {
+          "brier": 0.57435,
+          "ece_away": 0.0147,
+          "ece_draw": 0.0066,
+          "ece_home": 0.0161,
+          "log_loss": 0.96768
+        },
+        "model": {
+          "brier": 0.58968,
+          "ece_away": 0.0316,
+          "ece_draw": 0.0049,
+          "ece_home": 0.0341,
+          "log_loss": 0.98998
+        },
+        "n": 2615,
+        "paired_ll_diff_model_minus_market": {
+          "ci95": [
+            0.01476,
+            0.03039
+          ],
+          "mean": 0.02231
+        },
+        "seasons_data_better": 0,
+        "seasons_evaluated": 7
+      },
+      "F1": {
+        "better_list": [],
+        "market": {
+          "brier": 0.58772,
+          "ece_away": 0.0166,
+          "ece_draw": 0.0063,
+          "ece_home": 0.0219,
+          "log_loss": 0.98634
+        },
+        "model": {
+          "brier": 0.60592,
+          "ece_away": 0.0297,
+          "ece_draw": 0.0058,
+          "ece_home": 0.0357,
+          "log_loss": 1.01272
+        },
+        "n": 2297,
+        "paired_ll_diff_model_minus_market": {
+          "ci95": [
+            0.01892,
+            0.03343
+          ],
+          "mean": 0.02639
+        },
+        "seasons_data_better": 0,
+        "seasons_evaluated": 7
+      },
+      "I1": {
+        "better_list": [],
+        "market": {
+          "brier": 0.57458,
+          "ece_away": 0.0375,
+          "ece_draw": 0.0125,
+          "ece_home": 0.025,
+          "log_loss": 0.96671
+        },
+        "model": {
+          "brier": 0.59497,
+          "ece_away": 0.0564,
+          "ece_draw": 0.0189,
+          "ece_home": 0.0463,
+          "log_loss": 0.99676
+        },
+        "n": 2614,
+        "paired_ll_diff_model_minus_market": {
+          "ci95": [
+            0.02284,
+            0.03667
+          ],
+          "mean": 0.03006
+        },
+        "seasons_data_better": 0,
+        "seasons_evaluated": 7
+      },
+      "SP1": {
+        "better_list": [],
+        "market": {
+          "brier": 0.57635,
+          "ece_away": 0.0332,
+          "ece_draw": 0.0137,
+          "ece_home": 0.0288,
+          "log_loss": 0.96962
+        },
+        "model": {
+          "brier": 0.596,
+          "ece_away": 0.0353,
+          "ece_draw": 0.0223,
+          "ece_home": 0.0378,
+          "log_loss": 0.9988
+        },
+        "n": 2625,
+        "paired_ll_diff_model_minus_market": {
+          "ci95": [
+            0.02245,
+            0.03587
+          ],
+          "mean": 0.02918
+        },
+        "seasons_data_better": 0,
+        "seasons_evaluated": 7
+      }
+    },
+    "market": {
+      "brier": 0.57862,
+      "ece_away": 0.016,
+      "ece_draw": 0.006,
+      "ece_home": 0.0158,
+      "log_loss": 0.97321
+    },
+    "model": {
+      "brier": 0.59769,
+      "ece_away": 0.0302,
+      "ece_draw": 0.0132,
+      "ece_home": 0.0329,
+      "log_loss": 1.00099
+    },
+    "n": 12248,
+    "paired_ll_diff_model_minus_market": {
+      "ci95": [
+        0.0244,
+        0.03099
+      ],
+      "mean": 0.02778
+    },
+    "seasons_data_better": 0,
+    "seasons_evaluated": 7
+  },
+  "asian_handicap": {
+    "by_abs_line": {
+      "0": {
+        "better_list": [
+          "2021-22"
+        ],
+        "decided_stake_share": 0.6921,
+        "market": {
+          "brier": 0.24876,
+          "ece": 0.0133,
+          "log_loss": 0.69066,
+          "mean_overround": 1.028,
+          "mean_p_home_cond": 0.5007
+        },
+        "model": {
+          "brier": 0.25506,
+          "ece": 0.0683,
+          "log_loss": 0.70393,
+          "mean_p_home_cond": 0.5517,
+          "mean_p_loss": 0.3291,
+          "mean_p_push": 0.2647,
+          "mean_p_win": 0.4062
+        },
+        "n": 1468,
+        "paired_ll_diff_model_minus_market": {
+          "ci95": [
+            0.00114,
+            0.02554
+          ],
+          "mean": 0.01327
+        },
+        "realised": {
+          "home_cover_rate_cond": 0.498,
+          "loss_stake": 0.3474,
+          "push_stake": 0.3079,
+          "win_stake": 0.3447
+        },
+        "seasons_data_better": 1,
+        "seasons_evaluated": 7
+      },
+      "0.25-0.5": {
+        "better_list": [],
+        "decided_stake_share": 0.9117,
+        "market": {
+          "brier": 0.24923,
+          "ece": 0.0147,
+          "log_loss": 0.69161,
+          "mean_overround": 1.0288,
+          "mean_p_home_cond": 0.4993
+        },
+        "model": {
+          "brier": 0.25916,
+          "ece": 0.075,
+          "log_loss": 0.71216,
+          "mean_p_home_cond": 0.5328,
+          "mean_p_loss": 0.4302,
+          "mean_p_push": 0.0797,
+          "mean_p_win": 0.4902
+        },
+        "n": 5439,
+        "paired_ll_diff_model_minus_market": {
+          "ci95": [
+            0.01611,
+            0.02477
+          ],
+          "mean": 0.02055
+        },
+        "realised": {
+          "home_cover_rate_cond": 0.4846,
+          "loss_stake": 0.4698,
+          "push_stake": 0.0883,
+          "win_stake": 0.4418
+        },
+        "seasons_data_better": 0,
+        "seasons_evaluated": 7
+      },
+      "0.75-1.0": {
+        "better_list": [],
+        "decided_stake_share": 0.8141,
+        "market": {
+          "brier": 0.24963,
+          "ece": 0.006,
+          "log_loss": 0.69241,
+          "mean_overround": 1.0288,
+          "mean_p_home_cond": 0.5011
+        },
+        "model": {
+          "brier": 0.2648,
+          "ece": 0.1024,
+          "log_loss": 0.72468,
+          "mean_p_home_cond": 0.5255,
+          "mean_p_loss": 0.398,
+          "mean_p_push": 0.1598,
+          "mean_p_win": 0.4422
+        },
+        "n": 2964,
+        "paired_ll_diff_model_minus_market": {
+          "ci95": [
+            0.02412,
+            0.0409
+          ],
+          "mean": 0.03227
+        },
+        "realised": {
+          "home_cover_rate_cond": 0.4979,
+          "loss_stake": 0.4087,
+          "push_stake": 0.1859,
+          "win_stake": 0.4054
+        },
+        "seasons_data_better": 0,
+        "seasons_evaluated": 7
+      },
+      ">=1.25": {
+        "better_list": [],
+        "decided_stake_share": 0.9005,
+        "market": {
+          "brier": 0.24956,
+          "ece": 0.0175,
+          "log_loss": 0.69226,
+          "mean_overround": 1.0284,
+          "mean_p_home_cond": 0.4986
+        },
+        "model": {
+          "brier": 0.26111,
+          "ece": 0.0812,
+          "log_loss": 0.71775,
+          "mean_p_home_cond": 0.4855,
+          "mean_p_loss": 0.4711,
+          "mean_p_push": 0.0832,
+          "mean_p_win": 0.4457
+        },
+        "n": 2356,
+        "paired_ll_diff_model_minus_market": {
+          "ci95": [
+            0.01516,
+            0.03618
+          ],
+          "mean": 0.0255
+        },
+        "realised": {
+          "home_cover_rate_cond": 0.4815,
+          "loss_stake": 0.4669,
+          "push_stake": 0.0995,
+          "win_stake": 0.4336
+        },
+        "seasons_data_better": 0,
+        "seasons_evaluated": 7
+      }
+    },
+    "by_league": {
+      "D1": {
+        "better_list": [],
+        "decided_stake_share": 0.8807,
+        "market": {
+          "brier": 0.2492,
+          "ece": 0.0073,
+          "log_loss": 0.69153,
+          "mean_overround": 1.0282,
+          "mean_p_home_cond": 0.4999
+        },
+        "model": {
+          "brier": 0.2637,
+          "ece": 0.0955,
+          "log_loss": 0.72214,
+          "mean_p_home_cond": 0.5476,
+          "mean_p_loss": 0.4002,
+          "mean_p_push": 0.1166,
+          "mean_p_win": 0.4832
+        },
+        "n": 2096,
+        "paired_ll_diff_model_minus_market": {
+          "ci95": [
+            0.0207,
+            0.04038
+          ],
+          "mean": 0.03061
+        },
+        "realised": {
+          "home_cover_rate_cond": 0.4924,
+          "loss_stake": 0.447,
+          "push_stake": 0.1193,
+          "win_stake": 0.4337
+        },
+        "seasons_data_better": 0,
+        "seasons_evaluated": 7
+      },
+      "E0": {
+        "better_list": [],
+        "decided_stake_share": 0.8651,
+        "market": {
+          "brier": 0.24951,
+          "ece": 0.0112,
+          "log_loss": 0.69216,
+          "mean_overround": 1.029,
+          "mean_p_home_cond": 0.5
+        },
+        "model": {
+          "brier": 0.25859,
+          "ece": 0.0743,
+          "log_loss": 0.71176,
+          "mean_p_home_cond": 0.5261,
+          "mean_p_loss": 0.4177,
+          "mean_p_push": 0.1195,
+          "mean_p_win": 0.4628
+        },
+        "n": 2614,
+        "paired_ll_diff_model_minus_market": {
+          "ci95": [
+            0.01095,
+            0.02828
+          ],
+          "mean": 0.0196
+        },
+        "realised": {
+          "home_cover_rate_cond": 0.4888,
+          "loss_stake": 0.4422,
+          "push_stake": 0.1349,
+          "win_stake": 0.4229
+        },
+        "seasons_data_better": 0,
+        "seasons_evaluated": 7
+      },
+      "F1": {
+        "better_list": [],
+        "decided_stake_share": 0.8649,
+        "market": {
+          "brier": 0.24915,
+          "ece": 0.012,
+          "log_loss": 0.69145,
+          "mean_overround": 1.0281,
+          "mean_p_home_cond": 0.5002
+        },
+        "model": {
+          "brier": 0.25979,
+          "ece": 0.0741,
+          "log_loss": 0.71405,
+          "mean_p_home_cond": 0.5226,
+          "mean_p_loss": 0.4198,
+          "mean_p_push": 0.1208,
+          "mean_p_win": 0.4595
+        },
+        "n": 2295,
+        "paired_ll_diff_model_minus_market": {
+          "ci95": [
+            0.01424,
+            0.03041
+          ],
+          "mean": 0.0226
+        },
+        "realised": {
+          "home_cover_rate_cond": 0.4882,
+          "loss_stake": 0.4427,
+          "push_stake": 0.1351,
+          "win_stake": 0.4222
+        },
+        "seasons_data_better": 0,
+        "seasons_evaluated": 7
+      },
+      "I1": {
+        "better_list": [],
+        "decided_stake_share": 0.8501,
+        "market": {
+          "brier": 0.24977,
+          "ece": 0.0306,
+          "log_loss": 0.6927,
+          "mean_overround": 1.0287,
+          "mean_p_home_cond": 0.4995
+        },
+        "model": {
+          "brier": 0.26199,
+          "ece": 0.0896,
+          "log_loss": 0.71861,
+          "mean_p_home_cond": 0.522,
+          "mean_p_loss": 0.4194,
+          "mean_p_push": 0.1235,
+          "mean_p_win": 0.4572
+        },
+        "n": 2612,
+        "paired_ll_diff_model_minus_market": {
+          "ci95": [
+            0.01792,
+            0.03437
+          ],
+          "mean": 0.0259
+        },
+        "realised": {
+          "home_cover_rate_cond": 0.4695,
+          "loss_stake": 0.451,
+          "push_stake": 0.1499,
+          "win_stake": 0.3991
+        },
+        "seasons_data_better": 0,
+        "seasons_evaluated": 7
+      },
+      "SP1": {
+        "better_list": [],
+        "decided_stake_share": 0.8414,
+        "market": {
+          "brier": 0.24903,
+          "ece": 0.006,
+          "log_loss": 0.69121,
+          "mean_overround": 1.0289,
+          "mean_p_home_cond": 0.4993
+        },
+        "model": {
+          "brier": 0.25869,
+          "ece": 0.0778,
+          "log_loss": 0.7113,
+          "mean_p_home_cond": 0.5071,
+          "mean_p_loss": 0.4303,
+          "mean_p_push": 0.1284,
+          "mean_p_win": 0.4414
+        },
+        "n": 2610,
+        "paired_ll_diff_model_minus_market": {
+          "ci95": [
+            0.01294,
+            0.02813
+          ],
+          "mean": 0.0201
+        },
+        "realised": {
+          "home_cover_rate_cond": 0.5036,
+          "loss_stake": 0.4176,
+          "push_stake": 0.1586,
+          "win_stake": 0.4238
+        },
+        "seasons_data_better": 0,
+        "seasons_evaluated": 7
+      }
+    },
+    "by_line_type": {
+      "quarter": {
+        "better_list": [],
+        "decided_stake_share": 0.8606,
+        "market": {
+          "brier": 0.24954,
+          "ece": 0.0094,
+          "log_loss": 0.69223,
+          "mean_overround": 1.0286,
+          "mean_p_home_cond": 0.5001
+        },
+        "model": {
+          "brier": 0.2617,
+          "ece": 0.0862,
+          "log_loss": 0.71785,
+          "mean_p_home_cond": 0.5248,
+          "mean_p_loss": 0.4176,
+          "mean_p_push": 0.121,
+          "mean_p_win": 0.4614
+        },
+        "n": 6433,
+        "paired_ll_diff_model_minus_market": {
+          "ci95": [
+            0.02093,
+            0.03068
+          ],
+          "mean": 0.02562
+        },
+        "realised": {
+          "home_cover_rate_cond": 0.4906,
+          "loss_stake": 0.4384,
+          "push_stake": 0.1394,
+          "win_stake": 0.4222
+        },
+        "seasons_data_better": 0,
+        "seasons_evaluated": 7
+      },
+      "whole_or_half": {
+        "better_list": [],
+        "decided_stake_share": 0.8583,
+        "market": {
+          "brier": 0.24912,
+          "ece": 0.0137,
+          "log_loss": 0.69139,
+          "mean_overround": 1.0286,
+          "mean_p_home_cond": 0.4995
+        },
+        "model": {
+          "brier": 0.25907,
+          "ece": 0.0772,
+          "log_loss": 0.7126,
+          "mean_p_home_cond": 0.5235,
+          "mean_p_loss": 0.4187,
+          "mean_p_push": 0.123,
+          "mean_p_win": 0.4582
+        },
+        "n": 5794,
+        "paired_ll_diff_model_minus_market": {
+          "ci95": [
+            0.01587,
+            0.02678
+          ],
+          "mean": 0.02121
+        },
+        "realised": {
+          "home_cover_rate_cond": 0.4858,
+          "loss_stake": 0.4413,
+          "push_stake": 0.1417,
+          "win_stake": 0.417
+        },
+        "seasons_data_better": 0,
+        "seasons_evaluated": 7
+      }
+    },
+    "definition": "HOME bet at Bet365 HandiSize (added to home goals). Quarter lines split the stake over the two neighbouring lines. Model/market probabilities are P(win | not pushed); log loss / Brier / ECE are weighted by the decided stake fraction.",
+    "line_distribution": {
+      "-0.25": 1993,
+      "-0.5": 1399,
+      "-0.75": 1142,
+      "-1.0": 803,
+      "-1.25": 656,
+      "-1.5": 485,
+      "-1.75": 260,
+      "-2.0": 207,
+      "-2.25": 90,
+      "-2.5": 76,
+      "-2.75": 32,
+      "-3.0": 13,
+      "-3.25": 3,
+      "0.0": 1468,
+      "0.25": 1320,
+      "0.5": 727,
+      "0.75": 622,
+      "1.0": 397,
+      "1.25": 229,
+      "1.5": 176,
+      "1.75": 68,
+      "2.0": 38,
+      "2.25": 17,
+      "2.5": 5,
+      "2.75": 1
+    },
+    "n_aligned_with_ah_odds": 12227,
+    "naive_betting_at_bet365": {
+      "edge>0.03": {
+        "away": {
+          "model_expected_roi": 0.1479,
+          "n_bets": 2767,
+          "roi": -0.0146
+        },
+        "both": {
+          "n_bets": 7842,
+          "roi": -0.0442
+        },
+        "home": {
+          "model_expected_roi": 0.1676,
+          "n_bets": 5075,
+          "roi": -0.0603
+        }
+      },
+      "edge>0.05": {
+        "away": {
+          "model_expected_roi": 0.1762,
+          "n_bets": 2041,
+          "roi": -0.0214
+        },
+        "both": {
+          "n_bets": 6115,
+          "roi": -0.0521
+        },
+        "home": {
+          "model_expected_roi": 0.192,
+          "n_bets": 4074,
+          "roi": -0.0675
+        }
+      },
+      "edge>0.1": {
+        "away": {
+          "model_expected_roi": 0.2466,
+          "n_bets": 860,
+          "roi": -0.0413
+        },
+        "both": {
+          "n_bets": 2928,
+          "roi": -0.0537
+        },
+        "home": {
+          "model_expected_roi": 0.2563,
+          "n_bets": 2068,
+          "roi": -0.0589
+        }
+      }
+    },
+    "overall": {
+      "better_list": [],
+      "decided_stake_share": 0.8595,
+      "market": {
+        "brier": 0.24934,
+        "ece": 0.0114,
+        "log_loss": 0.69183,
+        "mean_overround": 1.0286,
+        "mean_p_home_cond": 0.4998
+      },
+      "model": {
+        "brier": 0.26045,
+        "ece": 0.0819,
+        "log_loss": 0.71537,
+        "mean_p_home_cond": 0.5242,
+        "mean_p_loss": 0.4181,
+        "mean_p_push": 0.122,
+        "mean_p_win": 0.4599
+      },
+      "n": 12227,
+      "paired_ll_diff_model_minus_market": {
+        "ci95": [
+          0.01955,
+          0.02749
+        ],
+        "mean": 0.02354
+      },
+      "realised": {
+        "home_cover_rate_cond": 0.4883,
+        "loss_stake": 0.4398,
+        "push_stake": 0.1405,
+        "win_stake": 0.4197
+      },
+      "seasons_data_better": 0,
+      "seasons_evaluated": 7
+    },
+    "share_quarter_lines": 0.5261
+  },
+  "btts": {
+    "base_rate": 0.5453,
+    "by_league": {
+      "D1": {
+        "base_rate": 0.5975,
+        "model": {
+          "brier": 0.24385,
+          "ece": 0.0628,
+          "log_loss": 0.68068,
+          "mean_pred": 0.5347
+        },
+        "n": 2097,
+        "paired_ll_diff_model_minus_baseline": {
+          "ci95": [
+            -0.00174,
+            0.01417
+          ],
+          "mean": 0.00649
+        },
+        "prior_season_base_rate_baseline": {
+          "brier": 0.24058,
+          "log_loss": 0.67419,
+          "n": 2097
+        }
+      },
+      "E0": {
+        "base_rate": 0.5388,
+        "model": {
+          "brier": 0.24973,
+          "ece": 0.0497,
+          "log_loss": 0.69273,
+          "mean_pred": 0.5004
+        },
+        "n": 2615,
+        "paired_ll_diff_model_minus_baseline": {
+          "ci95": [
+            -0.00358,
+            0.00682
+          ],
+          "mean": 0.00167
+        },
+        "prior_season_base_rate_baseline": {
+          "brier": 0.24896,
+          "log_loss": 0.69106,
+          "n": 2615
+        }
+      },
+      "F1": {
+        "base_rate": 0.5398,
+        "model": {
+          "brier": 0.25313,
+          "ece": 0.0623,
+          "log_loss": 0.69968,
+          "mean_pred": 0.4912
+        },
+        "n": 2297,
+        "paired_ll_diff_model_minus_baseline": {
+          "ci95": [
+            0.00255,
+            0.01423
+          ],
+          "mean": 0.00847
+        },
+        "prior_season_base_rate_baseline": {
+          "brier": 0.24903,
+          "log_loss": 0.69121,
+          "n": 2297
+        }
+      },
+      "I1": {
+        "base_rate": 0.5421,
+        "model": {
+          "brier": 0.25188,
+          "ece": 0.0577,
+          "log_loss": 0.69706,
+          "mean_pred": 0.4848
+        },
+        "n": 2614,
+        "paired_ll_diff_model_minus_baseline": {
+          "ci95": [
+            -0.00279,
+            0.01386
+          ],
+          "mean": 0.00584
+        },
+        "prior_season_base_rate_baseline": {
+          "brier": 0.24902,
+          "log_loss": 0.69122,
+          "n": 2614
+        }
+      },
+      "SP1": {
+        "base_rate": 0.5181,
+        "model": {
+          "brier": 0.25015,
+          "ece": 0.0501,
+          "log_loss": 0.69355,
+          "mean_pred": 0.4691
+        },
+        "n": 2625,
+        "paired_ll_diff_model_minus_baseline": {
+          "ci95": [
+            -0.0053,
+            0.00701
+          ],
+          "mean": 0.00076
+        },
+        "prior_season_base_rate_baseline": {
+          "brier": 0.24982,
+          "log_loss": 0.69279,
+          "n": 2625
+        }
+      }
+    },
+    "model": {
+      "brier": 0.24991,
+      "ece": 0.0527,
+      "log_loss": 0.69307,
+      "mean_pred": 0.4945
+    },
+    "n": 12248,
+    "note": "no BTTS odds in the dataset: model calibration vs realised only",
+    "paired_ll_diff_model_minus_baseline": {
+      "ci95": [
+        0.00145,
+        0.0073
+      ],
+      "mean": 0.00446
+    },
+    "prior_season_base_rate_baseline": {
+      "brier": 0.24774,
+      "log_loss": 0.6886,
+      "n": 12248
+    },
+    "reliability": [
+      {
+        "lo": 0.2,
+        "mean_obs": 0.1111,
+        "mean_pred": 0.2838,
+        "n": 9
+      },
+      {
+        "lo": 0.3,
+        "mean_obs": 0.4798,
+        "mean_pred": 0.3733,
+        "n": 1140
+      },
+      {
+        "lo": 0.4,
+        "mean_obs": 0.5185,
+        "mean_pred": 0.4551,
+        "n": 5331
+      },
+      {
+        "lo": 0.5,
+        "mean_obs": 0.5773,
+        "mean_pred": 0.5415,
+        "n": 4876
+      },
+      {
+        "lo": 0.6,
+        "mean_obs": 0.6176,
+        "mean_pred": 0.6287,
+        "n": 876
+      },
+      {
+        "lo": 0.7,
+        "mean_obs": 0.6875,
+        "mean_pred": 0.7168,
+        "n": 16
+      }
+    ]
+  },
+  "data_hash": "sha256:ef224cf2c252f07a842b3bcfd4ba5c718c25cedd8937ffa174a74b86b5ba4221",
+  "elapsed_s": 11.9,
+  "n_aligned": 12248,
+  "over_under_2.5": {
+    "base_rate": 0.5326,
+    "better_list": [],
+    "by_league": {
+      "D1": {
+        "base_rate": 0.6118,
+        "better_list": [],
+        "market": {
+          "brier": 0.22851,
+          "ece": 0.0207,
+          "log_loss": 0.64864,
+          "mean_pred": 0.5944
+        },
+        "model": {
+          "brier": 0.23747,
+          "ece": 0.0557,
+          "log_loss": 0.66755,
+          "mean_pred": 0.5606
+        },
+        "n": 2097,
+        "paired_ll_diff_model_minus_market": {
+          "ci95": [
+            0.01244,
+            0.02491
+          ],
+          "mean": 0.01891
+        },
+        "seasons_data_better": 0,
+        "seasons_evaluated": 7
+      },
+      "E0": {
+        "base_rate": 0.553,
+        "better_list": [],
+        "market": {
+          "brier": 0.24098,
+          "ece": 0.0076,
+          "log_loss": 0.67479,
+          "mean_pred": 0.5499
+        },
+        "model": {
+          "brier": 0.24768,
+          "ece": 0.0583,
+          "log_loss": 0.68856,
+          "mean_pred": 0.5146
+        },
+        "n": 2615,
+        "paired_ll_diff_model_minus_market": {
+          "ci95": [
+            0.0085,
+            0.01906
+          ],
+          "mean": 0.01377
+        },
+        "seasons_data_better": 0,
+        "seasons_evaluated": 7
+      },
+      "F1": {
+        "base_rate": 0.5272,
+        "better_list": [],
+        "market": {
+          "brier": 0.24168,
+          "ece": 0.0229,
+          "log_loss": 0.67619,
+          "mean_pred": 0.5186
+        },
+        "model": {
+          "brier": 0.24964,
+          "ece": 0.0369,
+          "log_loss": 0.6929,
+          "mean_pred": 0.4964
+        },
+        "n": 2297,
+        "paired_ll_diff_model_minus_market": {
+          "ci95": [
+            0.01092,
+            0.02259
+          ],
+          "mean": 0.01671
+        },
+        "seasons_data_better": 0,
+        "seasons_evaluated": 7
+      },
+      "I1": {
+        "base_rate": 0.5182,
+        "better_list": [
+          "2025-26"
+        ],
+        "market": {
+          "brier": 0.24385,
+          "ece": 0.0273,
+          "log_loss": 0.68086,
+          "mean_pred": 0.5164
+        },
+        "model": {
+          "brier": 0.24923,
+          "ece": 0.0359,
+          "log_loss": 0.69177,
+          "mean_pred": 0.489
+        },
+        "n": 2613,
+        "paired_ll_diff_model_minus_market": {
+          "ci95": [
+            0.00522,
+            0.01588
+          ],
+          "mean": 0.01091
+        },
+        "seasons_data_better": 1,
+        "seasons_evaluated": 7
+      },
+      "SP1": {
+        "base_rate": 0.4682,
+        "better_list": [],
+        "market": {
+          "brier": 0.23934,
+          "ece": 0.0072,
+          "log_loss": 0.67151,
+          "mean_pred": 0.4741
+        },
+        "model": {
+          "brier": 0.24429,
+          "ece": 0.0349,
+          "log_loss": 0.68186,
+          "mean_pred": 0.4665
+        },
+        "n": 2625,
+        "paired_ll_diff_model_minus_market": {
+          "ci95": [
+            0.00489,
+            0.0155
+          ],
+          "mean": 0.01035
+        },
+        "seasons_data_better": 0,
+        "seasons_evaluated": 7
+      }
+    },
+    "market": {
+      "brier": 0.23924,
+      "ece": 0.013,
+      "log_loss": 0.67117,
+      "mean_pred": 0.5283
+    },
+    "matrix_vs_sample_mean_max_abs_diff": 0.0,
+    "model": {
+      "brier": 0.2459,
+      "ece": 0.0338,
+      "log_loss": 0.68503,
+      "mean_pred": 0.5033
+    },
+    "n": 12247,
+    "paired_ll_diff_model_minus_market": {
+      "ci95": [
+        0.01161,
+        0.01647
+      ],
+      "mean": 0.01386
+    },
+    "seasons_data_better": 0,
+    "seasons_evaluated": 7
+  },
+  "posterior_samples": 100,
+  "protocol": "walk_forward_v1",
+  "result_hash": "sha256:87b8e4cc02f192047385a90a526bba14cf746ec60481ea3be7a808f8817fb95b",
+  "study": "market_families_v1",
+  "summary_table": {
+    "1x2": {
+      "market_log_loss": 0.97321,
+      "model_log_loss": 1.00099,
+      "n": 12248,
+      "paired_diff": {
+        "ci95": [
+          0.0244,
+          0.03099
+        ],
+        "mean": 0.02778
+      }
+    },
+    "asian_handicap": {
+      "market_log_loss": 0.69183,
+      "model_log_loss": 0.71537,
+      "n": 12227,
+      "paired_diff": {
+        "ci95": [
+          0.01955,
+          0.02749
+        ],
+        "mean": 0.02354
+      }
+    },
+    "btts": {
+      "baseline_log_loss": 0.6886,
+      "ece": 0.0527,
+      "model_log_loss": 0.69307,
+      "n": 12248
+    },
+    "over_under_2.5": {
+      "market_log_loss": 0.67117,
+      "model_log_loss": 0.68503,
+      "n": 12247,
+      "paired_diff": {
+        "ci95": [
+          0.01161,
+          0.01647
+        ],
+        "mean": 0.01386
+      }
+    },
+    "team_totals": {
+      "away_over_0.5": {
+        "base_rate": 0.7082,
+        "baseline_log_loss": 0.60378,
+        "ece": 0.0503,
+        "mean_pred": 0.6579,
+        "model_log_loss": 0.58802,
+        "n": 12248
+      },
+      "away_over_1.5": {
+        "base_rate": 0.3581,
+        "baseline_log_loss": 0.65155,
+        "ece": 0.0387,
+        "mean_pred": 0.3196,
+        "model_log_loss": 0.62462,
+        "n": 12248
+      },
+      "away_over_2.5": {
+        "base_rate": 0.1397,
+        "baseline_log_loss": 0.40248,
+        "ece": 0.0122,
+        "mean_pred": 0.1277,
+        "model_log_loss": 0.37626,
+        "n": 12248
+      },
+      "home_over_0.5": {
+        "base_rate": 0.7733,
+        "baseline_log_loss": 0.53539,
+        "ece": 0.0184,
+        "mean_pred": 0.7549,
+        "model_log_loss": 0.51102,
+        "n": 12248
+      },
+      "home_over_1.5": {
+        "base_rate": 0.4429,
+        "baseline_log_loss": 0.68576,
+        "ece": 0.0068,
+        "mean_pred": 0.4453,
+        "model_log_loss": 0.64815,
+        "n": 12248
+      },
+      "home_over_2.5": {
+        "base_rate": 0.2019,
+        "baseline_log_loss": 0.50176,
+        "ece": 0.0192,
+        "mean_pred": 0.2212,
+        "model_log_loss": 0.4698,
+        "n": 12248
+      }
+    }
+  },
+  "team_totals": {
+    "away_over_0.5": {
+      "base_rate": 0.7082,
+      "by_league": {
+        "D1": {
+          "base_rate": 0.742,
+          "model": {
+            "brier": 0.18716,
+            "ece": 0.0643,
+            "log_loss": 0.55739,
+            "mean_pred": 0.6777
+          },
+          "n": 2097,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.0251,
+              -0.0031
+            ],
+            "mean": -0.01365
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.19147,
+            "log_loss": 0.57104,
+            "n": 2097
+          }
+        },
+        "E0": {
+          "base_rate": 0.714,
+          "model": {
+            "brier": 0.19883,
+            "ece": 0.049,
+            "log_loss": 0.58461,
+            "mean_pred": 0.6649
+          },
+          "n": 2615,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.02355,
+              -0.00642
+            ],
+            "mean": -0.01482
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.20459,
+            "log_loss": 0.59943,
+            "n": 2615
+          }
+        },
+        "F1": {
+          "base_rate": 0.7088,
+          "model": {
+            "brier": 0.20368,
+            "ece": 0.0528,
+            "log_loss": 0.59531,
+            "mean_pred": 0.6559
+          },
+          "n": 2297,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.01952,
+              -0.0031
+            ],
+            "mean": -0.0114
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.20794,
+            "log_loss": 0.60671,
+            "n": 2297
+          }
+        },
+        "I1": {
+          "base_rate": 0.7119,
+          "model": {
+            "brier": 0.19825,
+            "ece": 0.0571,
+            "log_loss": 0.58324,
+            "mean_pred": 0.6554
+          },
+          "n": 2614,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.02816,
+              -0.00905
+            ],
+            "mean": -0.01845
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.20561,
+            "log_loss": 0.60169,
+            "n": 2614
+          }
+        },
+        "SP1": {
+          "base_rate": 0.6712,
+          "model": {
+            "brier": 0.21252,
+            "ece": 0.032,
+            "log_loss": 0.61429,
+            "mean_pred": 0.6393
+          },
+          "n": 2625,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.02671,
+              -0.01186
+            ],
+            "mean": -0.0195
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.2209,
+            "log_loss": 0.63379,
+            "n": 2625
+          }
+        }
+      },
+      "model": {
+        "brier": 0.20055,
+        "ece": 0.0503,
+        "log_loss": 0.58802,
+        "mean_pred": 0.6579
+      },
+      "n": 12248,
+      "paired_ll_diff_model_minus_baseline": {
+        "ci95": [
+          -0.01945,
+          -0.01189
+        ],
+        "mean": -0.01576
+      },
+      "prior_season_base_rate_baseline": {
+        "brier": 0.20668,
+        "log_loss": 0.60378,
+        "n": 12248
+      },
+      "reliability": [
+        {
+          "lo": 0.3,
+          "mean_obs": 0.4706,
+          "mean_pred": 0.3737,
+          "n": 17
+        },
+        {
+          "lo": 0.4,
+          "mean_obs": 0.544,
+          "mean_pred": 0.4683,
+          "n": 614
+        },
+        {
+          "lo": 0.5,
+          "mean_obs": 0.6091,
+          "mean_pred": 0.5582,
+          "n": 2906
+        },
+        {
+          "lo": 0.6,
+          "mean_obs": 0.6984,
+          "mean_pred": 0.6496,
+          "n": 4585
+        },
+        {
+          "lo": 0.7,
+          "mean_obs": 0.7953,
+          "mean_pred": 0.7446,
+          "n": 3146
+        },
+        {
+          "lo": 0.8,
+          "mean_obs": 0.8707,
+          "mean_pred": 0.834,
+          "n": 936
+        },
+        {
+          "lo": 0.9,
+          "mean_obs": 0.9773,
+          "mean_pred": 0.9169,
+          "n": 44
+        }
+      ]
+    },
+    "away_over_1.5": {
+      "base_rate": 0.3581,
+      "by_league": {
+        "D1": {
+          "base_rate": 0.3977,
+          "model": {
+            "brier": 0.22776,
+            "ece": 0.0583,
+            "log_loss": 0.64879,
+            "mean_pred": 0.343
+          },
+          "n": 2097,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.03603,
+              -0.01315
+            ],
+            "mean": -0.02434
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.24004,
+            "log_loss": 0.67313,
+            "n": 2097
+          }
+        },
+        "E0": {
+          "base_rate": 0.3751,
+          "model": {
+            "brier": 0.22206,
+            "ece": 0.0481,
+            "log_loss": 0.63542,
+            "mean_pred": 0.328
+          },
+          "n": 2615,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.03655,
+              -0.01704
+            ],
+            "mean": -0.02677
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.23467,
+            "log_loss": 0.66219,
+            "n": 2615
+          }
+        },
+        "F1": {
+          "base_rate": 0.3518,
+          "model": {
+            "brier": 0.21893,
+            "ece": 0.0355,
+            "log_loss": 0.62992,
+            "mean_pred": 0.3163
+          },
+          "n": 2297,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.03225,
+              -0.01177
+            ],
+            "mean": -0.02151
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.22927,
+            "log_loss": 0.65143,
+            "n": 2297
+          }
+        },
+        "I1": {
+          "base_rate": 0.3695,
+          "model": {
+            "brier": 0.21775,
+            "ece": 0.0533,
+            "log_loss": 0.62551,
+            "mean_pred": 0.3169
+          },
+          "n": 2614,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.04577,
+              -0.02537
+            ],
+            "mean": -0.0356
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.23409,
+            "log_loss": 0.66112,
+            "n": 2614
+          }
+        },
+        "SP1": {
+          "base_rate": 0.3036,
+          "model": {
+            "brier": 0.20062,
+            "ece": 0.0127,
+            "log_loss": 0.58905,
+            "mean_pred": 0.2979
+          },
+          "n": 2625,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.03351,
+              -0.01641
+            ],
+            "mean": -0.02525
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.2116,
+            "log_loss": 0.6143,
+            "n": 2625
+          }
+        }
+      },
+      "model": {
+        "brier": 0.21693,
+        "ece": 0.0387,
+        "log_loss": 0.62462,
+        "mean_pred": 0.3196
+      },
+      "n": 12248,
+      "paired_ll_diff_model_minus_baseline": {
+        "ci95": [
+          -0.0313,
+          -0.02253
+        ],
+        "mean": -0.02693
+      },
+      "prior_season_base_rate_baseline": {
+        "brier": 0.22951,
+        "log_loss": 0.65155,
+        "n": 12248
+      },
+      "reliability": [
+        {
+          "lo": 0.0,
+          "mean_obs": 0.0625,
+          "mean_pred": 0.0882,
+          "n": 16
+        },
+        {
+          "lo": 0.1,
+          "mean_obs": 0.2198,
+          "mean_pred": 0.1681,
+          "n": 1615
+        },
+        {
+          "lo": 0.2,
+          "mean_obs": 0.2793,
+          "mean_pred": 0.2517,
+          "n": 4361
+        },
+        {
+          "lo": 0.3,
+          "mean_obs": 0.3767,
+          "mean_pred": 0.3452,
+          "n": 3475
+        },
+        {
+          "lo": 0.4,
+          "mean_obs": 0.5008,
+          "mean_pred": 0.4434,
+          "n": 1883
+        },
+        {
+          "lo": 0.5,
+          "mean_obs": 0.6074,
+          "mean_pred": 0.5395,
+          "n": 675
+        },
+        {
+          "lo": 0.6,
+          "mean_obs": 0.6477,
+          "mean_pred": 0.6365,
+          "n": 193
+        },
+        {
+          "lo": 0.7,
+          "mean_obs": 0.8571,
+          "mean_pred": 0.7329,
+          "n": 28
+        },
+        {
+          "lo": 0.8,
+          "mean_obs": 0.5,
+          "mean_pred": 0.8421,
+          "n": 2
+        }
+      ]
+    },
+    "away_over_2.5": {
+      "base_rate": 0.1397,
+      "by_league": {
+        "D1": {
+          "base_rate": 0.1836,
+          "model": {
+            "brier": 0.14012,
+            "ece": 0.0405,
+            "log_loss": 0.44665,
+            "mean_pred": 0.1437
+          },
+          "n": 2097,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.04337,
+              -0.01835
+            ],
+            "mean": -0.03124
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.15023,
+            "log_loss": 0.47789,
+            "n": 2097
+          }
+        },
+        "E0": {
+          "base_rate": 0.1526,
+          "model": {
+            "brier": 0.12242,
+            "ece": 0.0194,
+            "log_loss": 0.40223,
+            "mean_pred": 0.1332
+          },
+          "n": 2615,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.03471,
+              -0.01752
+            ],
+            "mean": -0.02592
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.12954,
+            "log_loss": 0.42815,
+            "n": 2615
+          }
+        },
+        "F1": {
+          "base_rate": 0.1402,
+          "model": {
+            "brier": 0.11389,
+            "ece": 0.0171,
+            "log_loss": 0.37954,
+            "mean_pred": 0.1251
+          },
+          "n": 2297,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.03806,
+              -0.01969
+            ],
+            "mean": -0.02856
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.12109,
+            "log_loss": 0.4081,
+            "n": 2297
+          }
+        },
+        "I1": {
+          "base_rate": 0.1339,
+          "model": {
+            "brier": 0.11035,
+            "ece": 0.012,
+            "log_loss": 0.36877,
+            "mean_pred": 0.1259
+          },
+          "n": 2614,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.03405,
+              -0.0183
+            ],
+            "mean": -0.02608
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.11626,
+            "log_loss": 0.39485,
+            "n": 2614
+          }
+        },
+        "SP1": {
+          "base_rate": 0.0971,
+          "model": {
+            "brier": 0.08335,
+            "ece": 0.0207,
+            "log_loss": 0.29874,
+            "mean_pred": 0.1136
+          },
+          "n": 2625,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.02933,
+              -0.01157
+            ],
+            "mean": -0.0206
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.0878,
+            "log_loss": 0.31935,
+            "n": 2625
+          }
+        }
+      },
+      "model": {
+        "brier": 0.1129,
+        "ece": 0.0122,
+        "log_loss": 0.37626,
+        "mean_pred": 0.1277
+      },
+      "n": 12248,
+      "paired_ll_diff_model_minus_baseline": {
+        "ci95": [
+          -0.0303,
+          -0.02214
+        ],
+        "mean": -0.02622
+      },
+      "prior_season_base_rate_baseline": {
+        "brier": 0.11972,
+        "log_loss": 0.40248,
+        "n": 12248
+      },
+      "reliability": [
+        {
+          "lo": 0.0,
+          "mean_obs": 0.072,
+          "mean_pred": 0.0676,
+          "n": 5434
+        },
+        {
+          "lo": 0.1,
+          "mean_obs": 0.1509,
+          "mean_pred": 0.1408,
+          "n": 4929
+        },
+        {
+          "lo": 0.2,
+          "mean_obs": 0.2758,
+          "mean_pred": 0.2384,
+          "n": 1454
+        },
+        {
+          "lo": 0.3,
+          "mean_obs": 0.3862,
+          "mean_pred": 0.3396,
+          "n": 347
+        },
+        {
+          "lo": 0.4,
+          "mean_obs": 0.4571,
+          "mean_pred": 0.4363,
+          "n": 70
+        },
+        {
+          "lo": 0.5,
+          "mean_obs": 0.75,
+          "mean_pred": 0.5329,
+          "n": 12
+        },
+        {
+          "lo": 0.6,
+          "mean_obs": 0.0,
+          "mean_pred": 0.6553,
+          "n": 2
+        }
+      ]
+    },
+    "home_over_0.5": {
+      "base_rate": 0.7733,
+      "by_league": {
+        "D1": {
+          "base_rate": 0.8045,
+          "model": {
+            "brier": 0.15069,
+            "ece": 0.0155,
+            "log_loss": 0.47191,
+            "mean_pred": 0.7899
+          },
+          "n": 2097,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.03104,
+              -0.0141
+            ],
+            "mean": -0.02265
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.15743,
+            "log_loss": 0.49456,
+            "n": 2097
+          }
+        },
+        "E0": {
+          "base_rate": 0.769,
+          "model": {
+            "brier": 0.16713,
+            "ece": 0.0124,
+            "log_loss": 0.50982,
+            "mean_pred": 0.7589
+          },
+          "n": 2615,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.03906,
+              -0.02336
+            ],
+            "mean": -0.03142
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.17791,
+            "log_loss": 0.54124,
+            "n": 2615
+          }
+        },
+        "F1": {
+          "base_rate": 0.7619,
+          "model": {
+            "brier": 0.17621,
+            "ece": 0.0119,
+            "log_loss": 0.5333,
+            "mean_pred": 0.7526
+          },
+          "n": 2297,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.02381,
+              -0.00805
+            ],
+            "mean": -0.01631
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.18168,
+            "log_loss": 0.54961,
+            "n": 2297
+          }
+        },
+        "I1": {
+          "base_rate": 0.7632,
+          "model": {
+            "brier": 0.17026,
+            "ece": 0.0262,
+            "log_loss": 0.51897,
+            "mean_pred": 0.7434
+          },
+          "n": 2614,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.0379,
+              -0.02024
+            ],
+            "mean": -0.02927
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.18103,
+            "log_loss": 0.54824,
+            "n": 2614
+          }
+        },
+        "SP1": {
+          "base_rate": 0.7726,
+          "model": {
+            "brier": 0.16875,
+            "ece": 0.0388,
+            "log_loss": 0.51603,
+            "mean_pred": 0.7366
+          },
+          "n": 2625,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.02961,
+              -0.0125
+            ],
+            "mean": -0.02094
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.17598,
+            "log_loss": 0.53696,
+            "n": 2625
+          }
+        }
+      },
+      "model": {
+        "brier": 0.16704,
+        "ece": 0.0184,
+        "log_loss": 0.51102,
+        "mean_pred": 0.7549
+      },
+      "n": 12248,
+      "paired_ll_diff_model_minus_baseline": {
+        "ci95": [
+          -0.02791,
+          -0.02032
+        ],
+        "mean": -0.02438
+      },
+      "prior_season_base_rate_baseline": {
+        "brier": 0.17536,
+        "log_loss": 0.53539,
+        "n": 12248
+      },
+      "reliability": [
+        {
+          "lo": 0.4,
+          "mean_obs": 0.525,
+          "mean_pred": 0.4799,
+          "n": 40
+        },
+        {
+          "lo": 0.5,
+          "mean_obs": 0.5642,
+          "mean_pred": 0.5655,
+          "n": 592
+        },
+        {
+          "lo": 0.6,
+          "mean_obs": 0.6751,
+          "mean_pred": 0.6588,
+          "n": 2752
+        },
+        {
+          "lo": 0.7,
+          "mean_obs": 0.7714,
+          "mean_pred": 0.7508,
+          "n": 4852
+        },
+        {
+          "lo": 0.8,
+          "mean_obs": 0.8652,
+          "mean_pred": 0.8433,
+          "n": 3353
+        },
+        {
+          "lo": 0.9,
+          "mean_obs": 0.9317,
+          "mean_pred": 0.9246,
+          "n": 659
+        }
+      ]
+    },
+    "home_over_1.5": {
+      "base_rate": 0.4429,
+      "by_league": {
+        "D1": {
+          "base_rate": 0.4983,
+          "model": {
+            "brier": 0.2356,
+            "ece": 0.0301,
+            "log_loss": 0.66337,
+            "mean_pred": 0.4983
+          },
+          "n": 2097,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.04146,
+              -0.01884
+            ],
+            "mean": -0.03014
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.25018,
+            "log_loss": 0.69351,
+            "n": 2097
+          }
+        },
+        "E0": {
+          "base_rate": 0.4539,
+          "model": {
+            "brier": 0.22605,
+            "ece": 0.0246,
+            "log_loss": 0.64308,
+            "mean_pred": 0.4514
+          },
+          "n": 2615,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.05739,
+              -0.03669
+            ],
+            "mean": -0.04714
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.24853,
+            "log_loss": 0.69022,
+            "n": 2615
+          }
+        },
+        "F1": {
+          "base_rate": 0.4332,
+          "model": {
+            "brier": 0.23057,
+            "ece": 0.0099,
+            "log_loss": 0.6529,
+            "mean_pred": 0.4402
+          },
+          "n": 2297,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.04059,
+              -0.02087
+            ],
+            "mean": -0.03143
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.2456,
+            "log_loss": 0.68433,
+            "n": 2297
+          }
+        },
+        "I1": {
+          "base_rate": 0.4231,
+          "model": {
+            "brier": 0.22443,
+            "ece": 0.0149,
+            "log_loss": 0.63967,
+            "mean_pred": 0.4288
+          },
+          "n": 2614,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.05181,
+              -0.03182
+            ],
+            "mean": -0.04242
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.24449,
+            "log_loss": 0.68209,
+            "n": 2614
+          }
+        },
+        "SP1": {
+          "base_rate": 0.416,
+          "model": {
+            "brier": 0.22667,
+            "ece": 0.0222,
+            "log_loss": 0.64531,
+            "mean_pred": 0.4181
+          },
+          "n": 2625,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.04419,
+              -0.02543
+            ],
+            "mean": -0.03469
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.24345,
+            "log_loss": 0.68001,
+            "n": 2625
+          }
+        }
+      },
+      "model": {
+        "brier": 0.22832,
+        "ece": 0.0068,
+        "log_loss": 0.64815,
+        "mean_pred": 0.4453
+      },
+      "n": 12248,
+      "paired_ll_diff_model_minus_baseline": {
+        "ci95": [
+          -0.04235,
+          -0.03307
+        ],
+        "mean": -0.03761
+      },
+      "prior_season_base_rate_baseline": {
+        "brier": 0.24631,
+        "log_loss": 0.68576,
+        "n": 12248
+      },
+      "reliability": [
+        {
+          "lo": 0.1,
+          "mean_obs": 0.1886,
+          "mean_pred": 0.1782,
+          "n": 175
+        },
+        {
+          "lo": 0.2,
+          "mean_obs": 0.2582,
+          "mean_pred": 0.261,
+          "n": 1491
+        },
+        {
+          "lo": 0.3,
+          "mean_obs": 0.3444,
+          "mean_pred": 0.3533,
+          "n": 3325
+        },
+        {
+          "lo": 0.4,
+          "mean_obs": 0.4522,
+          "mean_pred": 0.448,
+          "n": 3348
+        },
+        {
+          "lo": 0.5,
+          "mean_obs": 0.5468,
+          "mean_pred": 0.5457,
+          "n": 2211
+        },
+        {
+          "lo": 0.6,
+          "mean_obs": 0.6268,
+          "mean_pred": 0.6426,
+          "n": 1155
+        },
+        {
+          "lo": 0.7,
+          "mean_obs": 0.7572,
+          "mean_pred": 0.7395,
+          "n": 449
+        },
+        {
+          "lo": 0.8,
+          "mean_obs": 0.7841,
+          "mean_pred": 0.8352,
+          "n": 88
+        },
+        {
+          "lo": 0.9,
+          "mean_obs": 1.0,
+          "mean_pred": 0.9198,
+          "n": 6
+        }
+      ]
+    },
+    "home_over_2.5": {
+      "base_rate": 0.2019,
+      "by_league": {
+        "D1": {
+          "base_rate": 0.2542,
+          "model": {
+            "brier": 0.17607,
+            "ece": 0.0166,
+            "log_loss": 0.53245,
+            "mean_pred": 0.2671
+          },
+          "n": 2097,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.04843,
+              -0.02263
+            ],
+            "mean": -0.0355
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.18999,
+            "log_loss": 0.56795,
+            "n": 2097
+          }
+        },
+        "E0": {
+          "base_rate": 0.2103,
+          "model": {
+            "brier": 0.15608,
+            "ece": 0.0247,
+            "log_loss": 0.48383,
+            "mean_pred": 0.2261
+          },
+          "n": 2615,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.04215,
+              -0.02028
+            ],
+            "mean": -0.0314
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.16636,
+            "log_loss": 0.51524,
+            "n": 2615
+          }
+        },
+        "F1": {
+          "base_rate": 0.2011,
+          "model": {
+            "brier": 0.15014,
+            "ece": 0.0187,
+            "log_loss": 0.47117,
+            "mean_pred": 0.2155
+          },
+          "n": 2297,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.04277,
+              -0.02048
+            ],
+            "mean": -0.03169
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.16095,
+            "log_loss": 0.50286,
+            "n": 2297
+          }
+        },
+        "I1": {
+          "base_rate": 0.1752,
+          "model": {
+            "brier": 0.13636,
+            "ece": 0.0327,
+            "log_loss": 0.43583,
+            "mean_pred": 0.2073
+          },
+          "n": 2614,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.03947,
+              -0.0204
+            ],
+            "mean": -0.02957
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.14494,
+            "log_loss": 0.46539,
+            "n": 2614
+          }
+        },
+        "SP1": {
+          "base_rate": 0.179,
+          "model": {
+            "brier": 0.13654,
+            "ece": 0.0238,
+            "log_loss": 0.43841,
+            "mean_pred": 0.1982
+          },
+          "n": 2625,
+          "paired_ll_diff_model_minus_baseline": {
+            "ci95": [
+              -0.0428,
+              -0.0227
+            ],
+            "mean": -0.0323
+          },
+          "prior_season_base_rate_baseline": {
+            "brier": 0.1472,
+            "log_loss": 0.4707,
+            "n": 2625
+          }
+        }
+      },
+      "model": {
+        "brier": 0.14999,
+        "ece": 0.0192,
+        "log_loss": 0.4698,
+        "mean_pred": 0.2212
+      },
+      "n": 12248,
+      "paired_ll_diff_model_minus_baseline": {
+        "ci95": [
+          -0.03673,
+          -0.02709
+        ],
+        "mean": -0.03196
+      },
+      "prior_season_base_rate_baseline": {
+        "brier": 0.16071,
+        "log_loss": 0.50176,
+        "n": 12248
+      },
+      "reliability": [
+        {
+          "lo": 0.0,
+          "mean_obs": 0.0715,
+          "mean_pred": 0.0776,
+          "n": 1329
+        },
+        {
+          "lo": 0.1,
+          "mean_obs": 0.1311,
+          "mean_pred": 0.1506,
+          "n": 4921
+        },
+        {
+          "lo": 0.2,
+          "mean_obs": 0.2335,
+          "mean_pred": 0.2442,
+          "n": 3400
+        },
+        {
+          "lo": 0.3,
+          "mean_obs": 0.304,
+          "mean_pred": 0.3427,
+          "n": 1592
+        },
+        {
+          "lo": 0.4,
+          "mean_obs": 0.4207,
+          "mean_pred": 0.4425,
+          "n": 668
+        },
+        {
+          "lo": 0.5,
+          "mean_obs": 0.5039,
+          "mean_pred": 0.5391,
+          "n": 254
+        },
+        {
+          "lo": 0.6,
+          "mean_obs": 0.5303,
+          "mean_pred": 0.6412,
+          "n": 66
+        },
+        {
+          "lo": 0.7,
+          "mean_obs": 0.5714,
+          "mean_pred": 0.7359,
+          "n": 14
+        },
+        {
+          "lo": 0.8,
+          "mean_obs": 0.75,
+          "mean_pred": 0.8094,
+          "n": 4
+        }
+      ]
+    },
+    "note": "no team-total odds in the dataset: calibration only"
+  }
+}

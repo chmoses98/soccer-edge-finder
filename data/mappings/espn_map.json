@@ -1,5 +1,5 @@
 {
- "version": "3",
+ "version": "4",
  "note": "Explicit ESPN->canonical table. Team rows produced by EXACT alias resolution (men's/women's/national scoped) against data/registry/*.json from the 2026-09-28 team-list probe of 23 leagues, then reviewed. Unresolved ids are listed, never guessed. NOT under data/registry (that loader reads every *.json there).",
  "verified_leagues": [
   "afc.champions",
@@ -106,7 +106,13 @@
   "bra.1": "bra.serie_a",
   "arg.1": "arg.primera",
   "concacaf.nations.league": "concacaf.nations_league",
-  "fifa.friendly": "fifa.friendly"
+  "fifa.friendly": "fifa.friendly",
+  "fifa.worldq.uefa": "fifa.world_cup_qualifiers",
+  "fifa.worldq.conmebol": "fifa.world_cup_qualifiers",
+  "fifa.worldq.concacaf": "fifa.world_cup_qualifiers",
+  "fifa.worldq.afc": "fifa.world_cup_qualifiers",
+  "fifa.worldq.caf": "fifa.world_cup_qualifiers",
+  "uefa.euroq": "uefa.euro_qualifiers"
  },
  "teams": {
   "3": "arg.argentinos_juniors",

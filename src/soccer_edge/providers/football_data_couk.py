@@ -104,11 +104,14 @@ class FootballDataCoUkProvider:
         rows = [r for r in csv.DictReader(io.StringIO(text)) if r.get("Date")]
         quotes: list[OddsQuote] = []
         skipped = 0
+        skipped_by_division: dict[str, int] = {}
+        unknown_teams: dict[str, int] = {}
         for r in rows:
             div = r.get("Div", "")
             comp = DIVISION_TO_COMPETITION.get(div)
             if comp is None or self.registry is None:
                 skipped += 1
+                skipped_by_division[div or "?"] = skipped_by_division.get(div or "?", 0) + 1
                 continue
             try:
                 home = self.registry.resolve_team(
@@ -117,8 +120,11 @@ class FootballDataCoUkProvider:
                 away = self.registry.resolve_team(
                     r["AwayTeam"], country=DIVISION_COUNTRY[div], gender=Gender.MEN
                 ).team_id
-            except IdentityError:
+            except IdentityError as exc:
                 skipped += 1
+                skipped_by_division[div] = skipped_by_division.get(div, 0) + 1
+                name = str(exc).split("'")[1] if "'" in str(exc) else "?"
+                unknown_teams[f"{div}:{name}"] = unknown_teams.get(f"{div}:{name}", 0) + 1
                 continue
             d, m, y = r["Date"].split("/")
             iso = f"{int(y) + 2000 if len(y) == 2 else y}-{m}-{d}"
@@ -161,6 +167,8 @@ class FootballDataCoUkProvider:
         flags = (QualityFlag.OK,) if quotes else (QualityFlag.PARTIAL,)
         notes = (
             f"{len(rows)} rows, {skipped} skipped (unmapped division/team)",
+            f"skipped_by_division={dict(sorted(skipped_by_division.items()))}",
+            f"unknown_teams={dict(sorted(unknown_teams.items(), key=lambda kv: -kv[1])[:20])}",
             "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)",
         )
         return Observation(payload=quotes, provenance=prov, flags=flags, notes=notes)
