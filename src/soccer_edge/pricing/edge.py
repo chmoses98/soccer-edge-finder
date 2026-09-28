@@ -57,6 +57,8 @@ class EdgeAssessment:
         for k in ("price", "breakeven", "bet_up_to_price", "fee_per_contract"):
             d[k] = str(d[k]) if d[k] is not None else None
         d["reasons"] = list(self.reasons)
+        # accurate name for P(edge>0): the share of the model's own posterior worlds beating the price
+        d["model_posterior_edge_share"] = self.p_edge_positive
         return d
 
 

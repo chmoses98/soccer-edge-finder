@@ -30,8 +30,10 @@ from soccer_edge.kalshi.schemas import Ownership, RawMarket
 from soccer_edge.kalshi.taxonomy import ContractSpec, MarketFamily, Scope
 from soccer_edge.model.context import LineupState, MatchContext
 from soccer_edge.model.worlds import WorldConfig, WorldGenerator
+from soccer_edge.policy.versions import SELECTION_V2, SelectionPolicy
 from soccer_edge.pricing.coherence import audit as coherence_audit
 from soccer_edge.pricing.edge import EdgeAssessment, EdgeConfig, assess
+from soccer_edge.pricing.edge_v2 import EdgeV2Assessment, EdgeV2Config, assess_v2
 from soccer_edge.pricing.expression import Candidate, payoff_vector, reduce_expressions
 from soccer_edge.pricing.pricer import PricedProbability, price
 from soccer_edge.pricing.semantics import Semantics, UnsupportedSemantics, resolve_semantics
@@ -86,6 +88,8 @@ class RunConfig:
     world: WorldConfig = field(default_factory=WorldConfig)
     freshness: FreshnessPolicy = field(default_factory=FreshnessPolicy)
     enforce_freshness: bool = True
+    selection: SelectionPolicy = SELECTION_V2
+    edge_v2: EdgeV2Config = field(default_factory=EdgeV2Config)
 
 
 @dataclass
@@ -106,6 +110,9 @@ class RunInputs:
         default_factory=dict
     )  # (fixture, market, selection, line) -> devigged p
     reference_bookmaker: str = "consensus"
+    reference_quality: str = (
+        "UNAVAILABLE"  # SHARP_REFERENCE | SECONDARY_REFERENCE | KALSHI_ONLY | UNAVAILABLE
+    )
     reference_observed_at: datetime | None = None
     rest_contexts: dict[str, Any] = field(
         default_factory=dict
@@ -122,6 +129,8 @@ class ContractWork:
     priced: PricedProbability | None = None
     yes: EdgeAssessment | None = None
     no: EdgeAssessment | None = None
+    yes_v2: EdgeV2Assessment | None = None
+    no_v2: EdgeV2Assessment | None = None
     regime: FeeRegime | None = None
     indicator: np.ndarray | None = None
     reference_prob: float | None = None
@@ -449,6 +458,34 @@ def run(
             w.yes = assess(w.priced, yq, w.regime, cfg.edge)
         if nq.is_quote:
             w.no = assess(w.priced, nq, w.regime, cfg.edge)
+        ref_age = (
+            (as_of - inputs.reference_observed_at).total_seconds() / 60
+            if inputs.reference_observed_at is not None
+            else None
+        )
+        for side, q in (("yes", yq), ("no", nq)):
+            p_ref = (
+                w.reference_prob
+                if w.reference_prob is None or side == "yes"
+                else 1 - w.reference_prob
+            )
+            p_mod = w.priced.fair_mean if side == "yes" else 1 - w.priced.fair_mean
+            v2 = assess_v2(
+                ticker=tk,
+                side=side,
+                family=w.spec.family.value,
+                p_model=p_mod,
+                p_ref=p_ref,
+                reference_quality=inputs.reference_quality if p_ref is not None else "UNAVAILABLE",
+                reference_age_minutes=ref_age,
+                quote=q,
+                regime=w.regime,
+                cfg=cfg.edge_v2,
+            )
+            if side == "yes":
+                w.yes_v2 = v2
+            else:
+                w.no_v2 = v2
         cov.set(tk, Disposition.PRICED, "priced and evaluated")
         for a in (w.yes, w.no):
             if a is None:
@@ -465,7 +502,15 @@ def run(
             ind = w.indicator
             assert ind is not None
             payoff = payoff_vector(ind, a.side, float(a.price), float(a.fee_per_contract))
-            if a.robust_positive_ev:
+            selected, _why = cfg.selection.selects(
+                a.to_json(),
+                family=w.spec.family.value,
+                horizon=label_horizon(minutes_until(_kickoff(w.fixture), as_of)).value,
+                liquidity=float(w.market.yes_ask_size or 0)
+                if a.side == "yes"
+                else float((w.market.no_ask_size or w.market.yes_bid_size) or 0),
+            )
+            if selected:
                 candidates.append(
                     Candidate(
                         w.fixture.fixture_id,
@@ -479,7 +524,12 @@ def run(
                 )
         per_contract.append(
             _contract_record(
-                w, run_id, as_of, inputs, fixture_summaries.get(w.fixture.fixture_id, {})
+                w,
+                run_id,
+                as_of,
+                inputs,
+                fixture_summaries.get(w.fixture.fixture_id, {}),
+                selection_version=cfg.selection.version,
             )
         )
 
@@ -515,6 +565,7 @@ def run(
         akey = AuthorityKey(model_family_for(fx.competition_id), w.spec.family.value, horizon)
         state = inputs.authority.get(akey)
         ctx = fixture_ctx.get(fx.fixture_id)
+        v2r = w.yes_v2 if c.assessment.side == "yes" else w.no_v2
         rec = RecommendationV1(
             recommendation_id=f"rec_{content_hash({'run': run_id, 't': c.assessment.ticker, 's': c.assessment.side}).split(':')[1][:20]}",
             sport="soccer",
@@ -532,6 +583,12 @@ def run(
             fair_probability_low=c.assessment.fair_low,
             fair_probability_high=c.assessment.fair_high,
             probability_edge_positive=c.assessment.p_edge_positive,
+            model_posterior_edge_share=c.assessment.p_edge_positive,
+            selection_policy=cfg.selection.version,
+            edge_v2_status=(v2r.status if v2r else None),
+            edge_v2_expected_net_ev=(v2r.expected_net_ev if v2r else None),
+            edge_v2_ev_lower=(v2r.ev_lower if v2r else None),
+            edge_v2_reference_quality=(v2r.reference_quality if v2r else None),
             fee_adjusted_edge=c.assessment.fee_adjusted_edge,
             worst_case_edge=c.assessment.worst_case_edge,
             bet_up_to_price=c.assessment.bet_up_to_price,
@@ -719,7 +776,13 @@ def temporal_guard_for_inputs(inputs: RunInputs, as_of: datetime) -> TemporalGua
 
 
 def _contract_record(
-    w: ContractWork, run_id: str, as_of: datetime, inputs: RunInputs, summ: dict[str, Any]
+    w: ContractWork,
+    run_id: str,
+    as_of: datetime,
+    inputs: RunInputs,
+    summ: dict[str, Any],
+    *,
+    selection_version: str = SELECTION_V2.version,
 ) -> dict[str, Any]:
     fx = w.fixture
     assert fx is not None and w.priced is not None
@@ -775,6 +838,12 @@ def _contract_record(
             "schedule_version": FEE_SCHEDULE_VERSION,
         },
         "edge": {"yes": w.yes.to_json() if w.yes else None, "no": w.no.to_json() if w.no else None},
+        "edge_v2": {
+            "yes": w.yes_v2.to_json() if w.yes_v2 else None,
+            "no": w.no_v2.to_json() if w.no_v2 else None,
+        },
+        "selection_policy": selection_version,
+        "reference_quality": inputs.reference_quality,
         "context": inputs.rest_contexts[fx.fixture_id].to_json()
         if fx.fixture_id in inputs.rest_contexts
         else None,

@@ -1,0 +1,65 @@
+name: research-move
+
+# move_v1 (docs/PRELAUNCH_AUDIT.md §H1): does DATA_ONLY predict the direction of sharp market
+# movement from open to close? Needs the direct football-data.co.uk season CSVs (opening + closing
+# Pinnacle/Bet365 odds), which are reachable from Actions runners but not from every egress. Runs the
+# frozen walk-forward once (cached as an artifact) and commits the frozen result JSON.
+
+on:
+  workflow_dispatch:
+    inputs:
+      n_boot:
+        description: "cluster-bootstrap replications"
+        default: "500"
+
+concurrency:
+  group: research-move-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  move:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e ".[dev]"
+      - name: Restore research caches
+        uses: actions/cache@v4
+        with:
+          path: data/cache
+          key: research-cache-${{ hashFiles('research/wf_common.py', 'src/soccer_edge/model/strength.py') }}-v1
+      - name: Fetch match data (GitHub redistribution) if missing
+        run: |
+          mkdir -p data/cache
+          [ -s data/cache/Matches.csv ] || curl -sSL --retry 3 -o data/cache/Matches.csv https://raw.githubusercontent.com/xgabora/Club-Football-Match-Data-2000-2025/main/data/Matches.csv
+          ls -la data/cache/Matches.csv
+      - name: Run move_v1 (fetches football-data.co.uk open/close CSVs)
+        timeout-minutes: 280
+        run: |
+          set -o pipefail
+          python research/move_v1.py --fetch --n-boot "${{ inputs.n_boot || '500' }}" | tee move.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: research-move-${{ github.run_id }}
+          path: |
+            move.log
+            data/research/move_v1.json
+          retention-days: 90
+      - name: Commit frozen result
+        run: |
+          git config user.name "soccer-edge-bot"
+          git config user.email "soccer-edge-bot@users.noreply.github.com"
+          git add data/research/move_v1.json
+          if git diff --cached --quiet; then echo "no change"; exit 0; fi
+          git commit -qm "research: move_v1 result $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]"
+          for i in 1 2 3; do git push && break; git pull --rebase -q && sleep 3; done
+      - run: |
+          { echo '## move_v1'; echo '```'; tail -20 move.log; echo '```'; } >> "$GITHUB_STEP_SUMMARY"

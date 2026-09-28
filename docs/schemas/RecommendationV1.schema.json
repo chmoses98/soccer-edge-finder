@@ -120,6 +120,54 @@
       "description": "fair_probability - reference_probability",
       "title": "Divergence From Reference"
     },
+    "edge_v2_ev_lower": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Edge V2 Ev Lower"
+    },
+    "edge_v2_expected_net_ev": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Edge V2 Expected Net Ev"
+    },
+    "edge_v2_reference_quality": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Edge V2 Reference Quality"
+    },
+    "edge_v2_status": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Edge V2 Status"
+    },
     "event_id": {
       "title": "Event Id",
       "type": "string"
@@ -208,6 +256,21 @@
       "title": "Model Family",
       "type": "string"
     },
+    "model_posterior_edge_share": {
+      "anyOf": [
+        {
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "accurate name for probability_edge_positive (diagnostic only)",
+      "title": "Model Posterior Edge Share"
+    },
     "model_version": {
       "title": "Model Version",
       "type": "string"
@@ -282,9 +345,21 @@
       "type": "array"
     },
     "schema_version": {
-      "default": "1.1.0",
+      "default": "1.2.0",
       "title": "Schema Version",
       "type": "string"
+    },
+    "selection_policy": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Selection Policy"
     },
     "side": {
       "enum": [
