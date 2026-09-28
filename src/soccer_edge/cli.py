@@ -243,6 +243,20 @@ def cmd_run(args: argparse.Namespace) -> int:
     inputs = build_inputs(
         registry, data, disc, as_of=as_of, authority_path=REPO_ROOT / "config" / "authority.json"
     )
+    if not args.synthetic_kalshi and not args.no_reference:
+        # reference odds are context: a failure here must never fail the run
+        try:
+            lookup, observed, stats = _reference_capture(
+                registry,
+                data.fixtures,
+                as_of,
+                Path(args.reference_dir) if args.reference_dir else None,
+            )
+            inputs.reference_lookup = lookup
+            inputs.reference_observed_at = observed
+        except Exception as exc:
+            stats = {"error": str(exc)[:200]}
+        print("[reference]", json.dumps(stats, default=str)[:600])
     cfg = RunConfig(
         run_date=run_date,
         window_hours=args.window_hours,
@@ -449,6 +463,17 @@ def build_parser() -> argparse.ArgumentParser:
     )
     r.add_argument(
         "--no-freshness-gate", action="store_true", help="report violations instead of failing"
+    )
+    r.add_argument(
+        "--no-reference", action="store_true", help="skip football-data.co.uk reference odds"
+    )
+    r.add_argument(
+        "--reference-dir", default=None, help="append change-suppressed reference snapshots here"
+    )
+    r.add_argument(
+        "--espn-dir",
+        default=None,
+        help="data-archive checkout with results/espn + fixtures/espn (adds ESPN-fed competitions)",
     )
     r.add_argument("--fail-on-incomplete", action="store_true")
     r.set_defaults(func=cmd_run)
