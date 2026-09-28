@@ -45,6 +45,16 @@ jobs:
           set -o pipefail
           python -m soccer_edge.cli capture --fast --status open --out-dir work/snapshots | tee work/capture.log
         continue-on-error: true
+      - name: Capture reference odds (football-data.co.uk, change-suppressed)
+        timeout-minutes: 5
+        continue-on-error: true
+        run: |
+          mkdir -p work/reference
+          if git ls-remote --exit-code --heads origin data-archive >/dev/null 2>&1; then
+            git fetch --quiet --depth 1 origin data-archive 2>/dev/null || true
+            git show origin/data-archive:reference/last_fingerprints.json > work/reference/last_fingerprints.json 2>/dev/null || true
+          fi
+          python -m soccer_edge.cli capture-reference --out-dir work/reference | tee work/reference.log
       - uses: actions/upload-artifact@v4
         with:
           name: capture-${{ github.run_id }}
