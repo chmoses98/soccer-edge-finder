@@ -6,6 +6,11 @@ name: research-xg
 
 on:
   workflow_dispatch:
+    inputs:
+      evaluate:
+        description: "also run the xg_strength_v1 walk-forward evaluation (hours)"
+        type: boolean
+        default: false
 
 concurrency:
   group: research-xg-${{ github.ref }}
@@ -17,7 +22,7 @@ permissions:
 jobs:
   xg:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 330
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -27,6 +32,14 @@ jobs:
       - run: pip install -e .
       - name: Fetch + build
         run: python research/xg_history.py --fetch | tee xg.log
+      - name: Evaluate xg_strength_v1 (pre-registered walk-forward, one-time holdout)
+        if: ${{ inputs.evaluate }}
+        run: |
+          if [ -f data/research/xg_history_v1.csv.gz ]; then
+            python research/xg_strength_eval.py --workers 4 | tee -a xg.log
+          else
+            echo "no xG history: xg_strength_v1 stays NOT_EVALUATED" | tee -a xg.log
+          fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -34,6 +47,7 @@ jobs:
           path: |
             xg.log
             data/research/xg_history_v1.json
+            data/research/xg_strength_v1.json
             data/cache/xg/spi_matches.sha256
           retention-days: 90
       - name: Commit result
@@ -42,6 +56,7 @@ jobs:
           git config user.email "soccer-edge-bot@users.noreply.github.com"
           git add data/research/xg_history_v1.json
           [ -f data/research/xg_history_v1.csv.gz ] && git add data/research/xg_history_v1.csv.gz || true
+          [ -f data/research/xg_strength_v1.json ] && git add data/research/xg_strength_v1.json || true
           if git diff --cached --quiet; then echo "no change"; exit 0; fi
           git commit -qm "research: xg history attempt $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]"
           for i in 1 2 3; do git push && break; git pull --rebase -q && sleep 3; done

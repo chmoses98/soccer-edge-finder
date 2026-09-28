@@ -54,3 +54,24 @@ holdout 2021-22..2022-23, against `dc_laplace_v2`'s goal-only likelihood). If no
 result file says `xg_strength_v1_status: NOT_EVALUATED` and nothing is invented; the prospective
 football-data.co.uk `HxG/AxG` accumulation from 2026-27 remains the only path. Understat, FBref/Opta and
 scraped sources stay excluded. The result of the workflow run is recorded in docs/RESEARCH_RESULTS.md.
+
+### Result of the retrieval (2026-09-28, `research-xg.yml` run 1)
+
+The original FiveThirtyEight endpoint answers with a 310 kB page without xG columns; the Internet
+Archive's 2023 snapshot of `spi_matches.csv` (9.7 MB, `xg1/xg2/nsxg1/nsxg2` present, CC-BY 4.0) was
+retrieved from a runner, hash-pinned, and normalised into `data/research/xg_history_v1.csv.gz`:
+12,676 top-5 matches, seasons 2016-17 to 2022-23, with per-division mean xG per match within 0.1 of
+mean goals (E0 2.88 vs 2.77, SP1 2.69 vs 2.60, D1 3.00 vs 3.05, I1 2.86 vs 2.83, F1 2.67 vs 2.69),
+so the divisions are comparable at the level needed for a strength model.
+
+### `xg_strength_v1` evaluation (pre-registered in `research/xg_strength_eval.py`)
+
+Family: `dc_laplace_v2` fitted on the joint likelihood Poisson goals + omega x quasi-Poisson xG
+pseudo-likelihood (the v2 fitter takes the xG side as a second, fractional-target row per match with
+weight omega and no Dixon-Coles low-score correction; `MatchRow.dc_correction`). Burn-in 2016-17,
+selection 2017-18..2020-21 (omega in {0.25, 0.5, 0.75} by 1X2 log loss, weekly refits per division,
+posterior-mean plug-in), ONE-TIME holdout 2021-22..2022-23. Decision: PASS if the paired 1X2 log-loss
+gain over the goal-only fit has a 95 % CI above zero and a mean of at least 0.003. The workflow input
+`evaluate=true` runs it on a runner and commits `data/research/xg_strength_v1.json`; the result is
+recorded in docs/RESEARCH_RESULTS.md. Prospective football-data HxG/AxG accumulation continues either
+way; the `0.7 xG / 0.3 goals` blend in `model/xg_family.py` remains unvalidated and unused.

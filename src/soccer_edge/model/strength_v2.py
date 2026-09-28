@@ -179,6 +179,18 @@ class DixonColesFitterV2:
         y = np.array([min(r.away_goals, cfg.max_goals) for r in rows], dtype=float)
         days = np.array([(as_of - r.date).days for r in rows], dtype=float)
         w = np.exp(-cfg.decay_per_day * days) * np.array([r.weight for r in rows])
+        # pseudo-observation rows (fractional xG targets, xg_strength_v1) carry no low-score correction
+        dc_on = np.array([bool(getattr(r, "dc_correction", True)) for r in rows])
+        all_dc = bool(dc_on.all())
+
+        def tau_terms(lam, mu, rho):
+            tau, dl, dm, dr = _tau_and_grads(x, y, lam, mu, rho)
+            if not all_dc:
+                tau = np.where(dc_on, tau, 1.0)
+                dl = np.where(dc_on, dl, 0.0)
+                dm = np.where(dc_on, dm, 0.0)
+                dr = np.where(dc_on, dr, 0.0)
+            return tau, dl, dm, dr
 
         eff = np.zeros(n)
         np.add.at(eff, hi, w)
@@ -218,7 +230,7 @@ class DixonColesFitterV2:
             rho = float(np.clip(rho, -0.29, 0.29))
             lam = np.exp(kap + att[hi] - dfc[ai] + gamma * (1.0 - neutral))
             mu = np.exp(kap + att[ai] - dfc[hi])
-            tau, dl, dm, dr = _tau_and_grads(x, y, lam, mu, rho)
+            tau, dl, dm, dr = tau_terms(lam, mu, rho)
             ll = w * (np.log(tau) + x * np.log(lam) - lam + y * np.log(mu) - mu)
             g_lam = w * (dl + x / lam - 1.0) * lam
             g_mu = w * (dm + y / mu - 1.0) * mu
@@ -267,7 +279,7 @@ class DixonColesFitterV2:
         att, dfc, gamma, rho, kap = th[:n], th[n : 2 * n], th[2 * n], th[2 * n + 1], th[ik]
         lam = np.exp(kap + att[hi] - dfc[ai] + gamma * (1.0 - neutral))
         mu = np.exp(kap + att[ai] - dfc[hi])
-        tau, *_ = _tau_and_grads(x, y, lam, mu, float(np.clip(rho, -0.29, 0.29)))
+        tau, *_ = tau_terms(lam, mu, float(np.clip(rho, -0.29, 0.29)))
         ll_map = float(np.sum(w * (np.log(tau) + x * np.log(lam) - lam + y * np.log(mu) - mu)))
         return ParameterPosteriorV2(
             teams=team_set,
