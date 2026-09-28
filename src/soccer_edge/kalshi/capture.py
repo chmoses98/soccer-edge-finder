@@ -44,15 +44,18 @@ HORIZON_MINUTES: dict[Horizon, int] = {
 
 
 def label_horizon(minutes_to_kickoff: float) -> Horizon:
-    """Nearest *not-yet-passed* decision horizon for a capture taken `minutes_to_kickoff` before kickoff."""
+    """Nearest *not-yet-passed* decision horizon: the LARGEST horizon whose minutes <= the time left.
+    Examples: 2,964 minutes out -> 'T-24h'; 40 minutes out -> 'T-30m'; inside 10 minutes -> 'close'.
+
+    PRODUCTION NOTE (2026-09-28): the first version iterated all horizons without stopping and
+    labelled everything 'T-10m'. Archived snapshots from 2026-09-27 carry that wrong label; their
+    `minutes_to_kickoff` is correct, so consumers must recompute with this function."""
     if minutes_to_kickoff <= 0:
         return Horizon.CLOSE
-    ordered = sorted(((m, h) for h, m in HORIZON_MINUTES.items() if m > 0), reverse=True)
-    label = Horizon.ADHOC
-    for m, h in ordered:
+    for m, h in sorted(((m, h) for h, m in HORIZON_MINUTES.items() if m > 0), reverse=True):
         if minutes_to_kickoff >= m:
-            label = h
-    return label
+            return h
+    return Horizon.CLOSE
 
 
 class MarketSnapshot(BaseModel):

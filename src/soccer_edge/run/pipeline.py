@@ -34,6 +34,7 @@ from soccer_edge.pricing.edge import EdgeAssessment, EdgeConfig, assess
 from soccer_edge.pricing.expression import Candidate, payoff_vector, reduce_expressions
 from soccer_edge.pricing.pricer import PricedProbability, price
 from soccer_edge.pricing.semantics import Semantics, UnsupportedSemantics, resolve_semantics
+from soccer_edge.run.diagnostics import build_coverage_diagnostics
 from soccer_edge.run.freshness import FreshnessPolicy, FreshnessReport
 from soccer_edge.run.modeling import CompetitionModel
 from soccer_edge.run.simcache import (
@@ -104,6 +105,7 @@ class RunArtifacts:
     fixtures_simulated: list[str]
     fixtures_repriced: list[str]
     prediction_record_ids: list[str]
+    diagnostics: dict[str, Any] = field(default_factory=dict)
 
 
 def _kickoff(f: Fixture) -> datetime:
@@ -536,7 +538,8 @@ def run(
     from soccer_edge.run.render import render_markdown
 
     md = render_markdown(output, reduced, fixture_summaries)
-    return RunArtifacts(output, md, cov, per_contract, simulated, repriced, record_ids)
+    diagnostics = build_coverage_diagnostics(works, cov, as_of, discovery_run_id=disc.run_id)
+    return RunArtifacts(output, md, cov, per_contract, simulated, repriced, record_ids, diagnostics)
 
 
 def _event_name(fx: Fixture, reg: AliasRegistry) -> str:
@@ -691,9 +694,11 @@ def write_outputs(art: RunArtifacts, out_dir: Path) -> dict[str, Path]:
         "md": out_dir / "RUN_SOCCER.md",
         "contracts": out_dir / "priced_contracts.json",
         "coverage": out_dir / "coverage.json",
+        "diagnostics": out_dir / "coverage_diagnostics.json",
     }
     write_json(paths["json"], art.output.model_dump(mode="json"))
     paths["md"].write_text(art.markdown, encoding="utf-8")
     write_json(paths["contracts"], art.per_contract)
     write_json(paths["coverage"], art.coverage.summary())
+    write_json(paths["diagnostics"], art.diagnostics)
     return paths
