@@ -53,6 +53,31 @@ scores for `usa.1`, `mex.1`, `bra.1`, `arg.1`, `uefa.nations`, `fifa.friendly` o
 run (see `docs/ROADMAP.md`). No competition was mapped speculatively: tokens whose meaning is not certain
 (`FIFAW`, `APFDDH`, `EFL`) stay `None` in the taxonomy table.
 
-## Re-measurement
+## Re-measurement (run `disc-20260928T030600Z-1c2fe8`, 2026-09-28 03:06 UTC, registry slice 2 only)
 
-See the "after" table appended below by the next diagnostics run (same workflow, same window).
+Same workflow, same 340 h window, 20 minutes later (6,338 contracts on the surface; 0 unaccounted):
+
+| disposition | next 72h | next 14d | later | change vs baseline |
+|---|---:|---:|---:|---|
+| priced | 0 | 9 | 123 | +15 later (fixtures newly in window) |
+| no_fixture | 577 | 1,245 | 87 | +205 / +780 / +87 — the ex-`unmapped_team` contracts, now honestly "known team, no fixture" |
+| unmapped_event | 444 | 657 | — | unchanged (competitions registered in slice 3: `CONCACAFNL`, `INTLFRIENDLY`) |
+| **unmapped_team** | **0** | **28** | **6** | **from 258 / 805 / 111 → 0 / 28 / 6** |
+| unsupported_family | — | 164 | 2,968 | unchanged (futures/specials, by design) |
+
+Remaining unknown team names on the current surface (8): five Copa del Rey first-round minnows (out of
+scope), `Atlante` (Liga MX; added in slice 3), `Instituto Cordoba` (added in slice 3), `Los Angeles G`
+(Kalshi truncation of LA Galaxy; alias added). Current-tradable match-scope loss: 3,174 → 3,074 contracts,
+and its composition changed from "we don't know who is playing" to "we know who, we have no fixture/model":
+
+* `UEFANL` 1,646 contracts are now `no_fixture` — served by the ESPN international pool once
+  `espn-backfill` has run (fixtures come from `uefa.nations` per-day scoreboards; strengths from pooled
+  international results).
+* `LIGAMX` 105, `BRASILEIRO` 85, `MLS` (now in window) — same path via `mex.1`, `bra.1`, `usa.1`.
+* `CONCACAFNL` 362 / `INTLFRIENDLY` 163 move from `unmapped_event` to `no_fixture` after slice 3, same path.
+* `USL` 131, `EFLL1` 86, `ISRNL` 80, `BRASILEIROB` 67: ESPN has slugs (`usa.usl.1`, `eng.3`, `isr.1`, `bra.2`)
+  but no registry teams yet; deliberately not mapped until a team-list probe covers them.
+
+What did **not** change and must not be over-read: nothing new is priced by identity work alone. Pricing
+needs the ESPN results backfill (owner dispatches `espn-backfill.yml` once; then `run-soccer` picks up
+`results/espn` automatically) and, for the international pool, at least ~50 results per pool.
