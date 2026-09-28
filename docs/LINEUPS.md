@@ -82,3 +82,30 @@ window to `data-archive` (`lineups/`, `fixtures/espn/`), `STATUS.json` (counts, 
 2. With ≥ 1 season of snapshots: does a strength model with player-availability adjustments reduce log loss
    walk-forward vs the frozen benchmark? Compare on fixtures where a key player (top-3 by minutes) is absent.
 3. Only then consider a `lineup_adjusted_v1` family, RESEARCH_ONLY, via the promotion rules in `docs/CALIBRATION.md`.
+
+## Update (remediation phases 18-19): capture reliability and the oracle study
+
+**Lead-time report (phase 18).** `soccer lineups report --archive-dir <archive>` (run by
+`settle-evaluate.yml`, published as `evaluation/lineup_report.v1.json`) reads every lineup capture attempt
+in `lineups/<day>/<league>.jsonl`, joins the fixture's kickoff and reports, per fixture: attempts, the
+first observation of a starting XI, the lead time (kickoff minus first XI observation), and whether that
+was before kickoff. The headline shares are `pre_kickoff_xi_share` and `xi_at_least_20min_share`
+(audit target: >= 90 % of priced fixtures). A lineup first seen after kickoff is `post_hoc`: counted, never
+used for pregame pricing (audit S4). The kickoff dispatcher (docs/KICKOFF_DISPATCH.md) now attempts
+lineup capture at T-60/T-30/T-15/T-5 for every fixture on the schedule, which is what moves these shares;
+the daily `espn-lineups` sweep alone captured almost nothing pre-kickoff.
+
+**Oracle upper bound (phase 19).** `research/lineup_oracle.py` answers the audit's question before any
+lineup model is designed: *if the starting XI were known perfectly, how much log loss would it buy?*
+Method: post-hoc XIs (`soccer espn-lineup-backfill`, ESPN public site API, seasons 2023-24 to 2025-26,
+written to `lineups/history/<league>.jsonl` with `lineup_state=post_hoc`) joined to ESPN results; the goal
+model is `dc_laplace_v2` refit weekly; per-player importance is the WITH-minus-WITHOUT contrast of the
+team's log residual when the player starts versus when the team plays without them, shrunk by an
+effective-sample ridge (a player never seen absent carries 0); the XI adjustment is relative to the team's
+regular XI (stand-ins positive, absent regulars negative); the scale `c` is chosen on the first
+chronological half and the gain evaluated on the second half, with a fixture bootstrap CI and a
+`regular_absent` subset. `--calibrate` records what the method recovers on synthetic leagues (null league
+and a 0.35 log-attack star absent 20 % of the time), which is how the real-data figure must be read: the
+null league costs roughly the estimator's noise, and a large true effect is recovered only in part.
+The workflow `lineup-backfill.yml` runs backfill + study and commits `data/research/lineup_oracle_v1.json`.
+Stop rule (audit): if the oracle gain is < 0.002 log loss, do not invest in prospective lineup modelling.

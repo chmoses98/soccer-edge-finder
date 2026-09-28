@@ -43,6 +43,23 @@ jobs:
         run: |
           set -o pipefail
           python -m soccer_edge.cli espn-sync --out-dir work/espn | tee work/espn.log
+          # archive growth (phase 22 / audit §O4): keep the fixtures dump only when its content changed
+          python - <<'PY'
+          import hashlib, json, subprocess, pathlib
+          new = sorted(pathlib.Path("work/espn/fixtures/espn").glob("*/*.json"))
+          if new:
+              def body(doc):
+                  d = json.loads(doc); d.pop("as_of", None); return hashlib.sha256(json.dumps(d, sort_keys=True).encode()).hexdigest()
+              try:
+                  files = subprocess.check_output(["git", "ls-tree", "-r", "--name-only", "origin/data-archive", "fixtures/espn"], text=True).split()
+                  files = sorted(f for f in files if f.endswith(".json"))
+                  if files:
+                      prev = subprocess.check_output(["git", "show", f"origin/data-archive:{files[-1]}"], text=True)
+                      if body(prev) == body(new[-1].read_text()):
+                          new[-1].unlink(); print("fixtures dump unchanged; not archived")
+              except Exception as exc:
+                  print("fixtures dedupe skipped:", exc)
+          PY
       - name: Publish snapshots to data-archive
         if: always()
         env:

@@ -179,3 +179,15 @@ re-delivery is treated as `CONFLICT` here (NFL answers it with an append-only am
 acceptable while no v1 settlement has ever been filed, revisit if the router ever sends v1
 first; (c) whether `event_id` should be resolved to an `fx:` fixture id at import time once
 the ledger and the fixture registry are readable from one place.
+
+## Update (remediation phase 25): compatibility with the remediated contracts
+
+`tests/test_router_e2e.py` runs a synthetic end-to-end path: a RUN SOCCER output under app contract
+1.2.0 (additive fields `model_posterior_edge_share`, `selection_policy`, `edge_v2_*`, `no_bets` true), a
+router wager payload built from its shadow recommendations, `soccer import-wagers`,
+`soccer import-settlements` and `soccer validate-positions-ledger`. Two properties are pinned: the new
+fields do not break the importer, and a wager row that carries `prediction_record_id` (or any other
+model-provenance field) is refused as a whole, because the router must never claim model provenance; the
+join to prediction records happens in evaluation by ticker, side and time. No live routing exists, no
+routing was activated, and the settlement records written by `soccer settle` are independent of the
+router's settlement rows.

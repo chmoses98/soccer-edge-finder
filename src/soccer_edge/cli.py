@@ -195,6 +195,8 @@ def cmd_capture_reference(args: argparse.Namespace) -> int:
 
 
 def cmd_run(args: argparse.Namespace) -> int:
+    import time
+
     from soccer_edge.archive.ledger import PredictionLedger
     from soccer_edge.kalshi.client import KalshiPublicClient
     from soccer_edge.kalshi.discovery import discover
@@ -204,10 +206,13 @@ def cmd_run(args: argparse.Namespace) -> int:
     from soccer_edge.run.pipeline import RunConfig, run, write_outputs
     from soccer_edge.run.simcache import SimCache
 
+    t_start = time.time()
+    timings: dict[str, float | str] = {}
     run_date = date.fromisoformat(args.date) if args.date else utc_now().date()
     as_of = utc_now()
     registry = _registry()
     comps = tuple(args.league) if args.league else DEFAULT_COMPETITIONS
+    t_asm = time.time()
     data = assemble(
         registry,
         competitions=comps,
@@ -215,6 +220,7 @@ def cmd_run(args: argparse.Namespace) -> int:
         espn_dir=Path(args.espn_dir) if args.espn_dir else None,
         strength_config=(StrengthConfigV2() if args.model_version == "dc_laplace_v2" else None),
     )
+    timings["assemble_fit_s"] = round(time.time() - t_asm, 2)
     for n in data.notes:
         print("[data]", n)
     if args.catalog:
@@ -237,7 +243,42 @@ def cmd_run(args: argparse.Namespace) -> int:
         print(f"[kalshi] SYNTHETIC surface for {len(fx_in_window)} fixtures (not real markets)")
     else:
         client = KalshiPublicClient()
-    disc = discover(client)
+    t_disc = time.time()
+    sweep_series = known_series = None
+    full_index = None
+    if args.fast and not args.synthetic_kalshi:
+        # INTRADAY RUN (phase 21): sweep only the series that had markets at the last exhaustive
+        # discovery (plus any series new since then); the daily exhaustive catalog stays authoritative
+        # and the fast sweep is reconciled against it below - unaccounted contracts must stay 0
+        idx_path = REPO_ROOT / "data" / "catalog" / "latest_index.json"
+        full_index = read_json_or(idx_path, None)
+        if full_index and "series_with_markets" in full_index:
+            known_series = {x["ticker"] for x in full_index.get("series", [])}
+            sweep_series = set(full_index.get("series_with_markets", []))
+            print(
+                f"[kalshi] fast mode: sweeping {len(sweep_series)} series with markets at the last full discovery"
+            )
+        else:
+            print("[kalshi] --fast requested but no usable committed index; exhaustive discovery")
+            full_index = None
+    disc = discover(client, sweep_series=sweep_series, known_series=known_series)
+    timings["discovery_s"] = round(time.time() - t_disc, 2)
+    if full_index is not None:
+        from soccer_edge.kalshi.reconcile import reconcile_fast_vs_full
+
+        rec = reconcile_fast_vs_full(disc.counters(), full_index)
+        write_json(Path(args.out_dir) / "fast_reconcile.json", rec)
+        print(
+            "[kalshi] fast reconciliation:",
+            json.dumps({k: rec.get(k) for k in ("complete_relative_to_full", "evidence_level")}),
+        )
+        if not rec.get("complete_relative_to_full"):
+            print(
+                "[kalshi] fast sweep NOT complete relative to the daily catalog; exhaustive fallback"
+            )
+            t_disc = time.time()
+            disc = discover(client)
+            timings["discovery_exhaustive_fallback_s"] = round(time.time() - t_disc, 2)
     print(
         "[kalshi]",
         json.dumps({k: v for k, v in disc.counters().items() if k != "failures"}, default=str),
@@ -278,7 +319,15 @@ def cmd_run(args: argparse.Namespace) -> int:
     )
     ledger = PredictionLedger(Path(args.archive_dir)) if args.archive_dir else None
     cache = SimCache(Path(args.sim_cache)) if args.sim_cache else None
+    t_run = time.time()
     art = run(inputs, cfg, ledger=ledger, sim_cache=cache)
+    timings["simulate_price_archive_s"] = round(time.time() - t_run, 2)
+    timings["total_s"] = round(time.time() - t_start, 2)
+    timings["mode"] = "fast" if (args.fast and full_index is not None) else "exhaustive"
+    art.output = art.output.model_copy(
+        update={"freshness": {**art.output.freshness, "stage_timings": timings}}
+    )
+    print("[timings]", json.dumps(timings))
     paths = write_outputs(art, Path(args.out_dir))
     print(art.markdown)
     print(
@@ -721,6 +770,7 @@ def cmd_dispatch_tick(args: argparse.Namespace) -> int:
         "snapshots/last_fingerprints.json",
         "reference/last_fingerprints.json",
         "lineups/last_hashes.json",
+        "predictions/index.json",
     ):
         src = archive / rel
         if src.exists():
@@ -793,6 +843,41 @@ def _dispatch_actions(out: Path, due, batch_id: str, args: argparse.Namespace) -
         done.append(f"reference:{'ok' if rc == 0 else 'empty'}")
     except Exception as exc:
         done.append(f"reference:error:{str(exc)[:80]}")
+    if args.with_run:
+        # near-close predictions (the CLV evidence the promotion gates need): a FAST run scoped to the
+        # next 3 hours, reconciled against the daily catalog; ledger index restored from the archive
+        try:
+            ledger_dir = out / "ledger"
+            ledger_dir.mkdir(parents=True, exist_ok=True)
+            run_out = out / "runs" / batch_id
+            a = parser.parse_args(
+                [
+                    "run",
+                    "--fast",
+                    "--window",
+                    "3",
+                    "--out-dir",
+                    str(run_out),
+                    "--archive-dir",
+                    str(ledger_dir),
+                    "--sim-cache",
+                    str(out / "simcache"),
+                    "--reference-dir",
+                    str(out / "reference"),
+                    "--espn-dir",
+                    str(args.archive_dir),
+                    "--model-version",
+                    args.run_model_version,
+                    "--engine-version",
+                    args.run_engine_version,
+                ]
+            )
+            rc = a.func(a)
+            done.append(f"run_soccer_fast:{'ok' if rc == 0 else 'incomplete'}")
+        except SystemExit as exc:
+            done.append(f"run_soccer_fast:exit:{exc.code}")
+        except Exception as exc:
+            done.append(f"run_soccer_fast:error:{str(exc)[:80]}")
     if not args.skip_lineups:
         comps = {d.fixture.competition_id for d in due}
         emap = EspnMap.load()
@@ -851,6 +936,184 @@ def cmd_dispatch_diagnostics(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_promote_evaluate(args: argparse.Namespace) -> int:
+    """Report-only promotion evaluator (audit §Q). Never edits config/authority.json."""
+    from soccer_edge.archive.ledger import PredictionLedger
+    from soccer_edge.archive.manifest import verify_archive
+    from soccer_edge.authority.promotion_v2 import evaluate_all
+
+    as_of = utc_now()
+    preds = {
+        r["record_id"]: r
+        for r in PredictionLedger(Path(args.archive_dir)).iter_records()
+        if r.get("schema") == "prediction_record_v1"
+    }
+    stl = list(PredictionLedger(Path(args.settlements_dir)).iter_records())
+    unacc = 0
+    runs_root = Path(args.runs_dir) if args.runs_dir else None
+    if runs_root and runs_root.exists():
+        for cov in runs_root.glob("*/*/coverage.json"):
+            try:
+                unacc = max(unacc, int(read_json(cov).get("unaccounted_contracts", 0)))
+            except Exception:
+                unacc = max(unacc, 1)
+    manifest_ok = False
+    if args.archive_root:
+        code, _rep = verify_archive(Path(args.archive_root), require_manifest=True)
+        manifest_ok = code == 0
+    report = evaluate_all(
+        stl,
+        preds,
+        integrity={
+            "unaccounted_contracts_max": unacc,
+            "manifest_ok": manifest_ok,
+            "runs_checked": bool(runs_root),
+        },
+        as_of=as_of.isoformat(),
+    )
+    write_json(Path(args.out), report)
+    print(
+        json.dumps(
+            {k: report[k] for k in ("cells_total", "eligible_for_owner_review", "not_eligible")},
+            indent=1,
+        )
+    )
+    if report["closest_cell"]:
+        c = report["closest_cell"]
+        print("closest cell:", c["cell"], "failed:", c["failed_gates"][:12])
+    return 0
+
+
+def cmd_lineups_report(args: argparse.Namespace) -> int:
+    from soccer_edge.evaluation.lineups import lead_time_report, lineup_rows
+
+    rep = lead_time_report(lineup_rows(Path(args.archive_dir)), as_of=utc_now())
+    write_json(Path(args.out), rep)
+    print(
+        json.dumps(
+            {
+                k: rep[k]
+                for k in (
+                    "fixtures_tracked",
+                    "fixtures_kickoff_passed",
+                    "with_pre_kickoff_xi",
+                    "with_xi_ge_20min_before_kickoff",
+                    "share_xi_ge_20min",
+                    "lead_time_minutes",
+                )
+            },
+            indent=1,
+        )
+    )
+    return 0
+
+
+def cmd_archive_compact(args: argparse.Namespace) -> int:
+    from soccer_edge.archive.compact import compact, plan
+    from soccer_edge.archive.manifest import ArchiveManifestError
+
+    root = Path(args.archive_dir)
+    try:
+        cands = plan(root)
+    except ArchiveManifestError as exc:
+        print(f"archive compact: {exc}")
+        return 2
+    print(json.dumps({"candidates": len(cands), "bytes": sum(c.bytes_uncompressed for c in cands)}))
+    if not args.apply:
+        for c in cands[:20]:
+            print("  ", c.path, c.bytes_uncompressed)
+        return 0
+    try:
+        man = compact(root, cands)
+    except ArchiveManifestError as exc:
+        print(f"archive compact: refused: {exc}")
+        return 1
+    print(
+        json.dumps(
+            {
+                "compaction_id": man["compaction_id"],
+                "files": len(man["files"]),
+                "bytes_saved": man["bytes_saved"],
+            }
+        )
+    )
+    return 0
+
+
+def cmd_espn_lineup_backfill(args: argparse.Namespace) -> int:
+    """Runner-side: post-hoc starting XIs of COMPLETED matches over a date range -> lineups/history/<league>.jsonl
+    (input for the lineup oracle study, phase 19). Never used for pregame pricing."""
+    from datetime import date, timedelta
+
+    from soccer_edge.core.serialization import append_jsonl, read_jsonl, write_json
+    from soccer_edge.providers.espn import EspnProvider
+
+    prov = EspnProvider()
+    leagues = [x.strip() for x in args.leagues.split(",") if x.strip()]
+    start = date.fromisoformat(args.start)
+    end = date.fromisoformat(args.end) if args.end else utc_now().date()
+    out = Path(args.out_dir) / "lineups" / "history"
+    out.mkdir(parents=True, exist_ok=True)
+    stats: dict[str, dict[str, int]] = {}
+    budget = args.max_events
+    for lg in leagues:
+        path = out / f"{lg}.jsonl"
+        known = {str(r.get("espn_event_id")) for r in read_jsonl(path)} if path.exists() else set()
+        st = stats[lg] = {
+            "days": 0,
+            "events_completed": 0,
+            "fetched": 0,
+            "skipped_known": 0,
+            "no_xi": 0,
+            "failures": 0,
+        }
+        day = start
+        while day <= end and budget > 0:
+            st["days"] += 1
+            try:
+                events = prov.scoreboard(lg, day).payload
+            except Exception:
+                st["failures"] += 1
+                day += timedelta(days=1)
+                continue
+            for ev in events:
+                if ev.state != "post":
+                    continue
+                st["events_completed"] += 1
+                if ev.espn_event_id in known:
+                    st["skipped_known"] += 1
+                    continue
+                if budget <= 0:
+                    break
+                budget -= 1
+                try:
+                    snap = prov.lineup(lg, ev.espn_event_id).payload
+                except Exception:
+                    st["failures"] += 1
+                    continue
+                rec = snap.to_record()
+                rec["lineup_state"] = "post_hoc"
+                rec["backfill"] = True
+                if not snap.published:
+                    st["no_xi"] += 1
+                append_jsonl(path, rec)
+                known.add(ev.espn_event_id)
+                st["fetched"] += 1
+            day += timedelta(days=1)
+    write_json(
+        Path(args.out_dir) / "lineups" / "history" / "BACKFILL_STATUS.json",
+        {
+            "as_of": utc_now().isoformat(),
+            "start": args.start,
+            "end": end.isoformat(),
+            "stats": stats,
+            "budget_left": budget,
+        },
+    )
+    print(json.dumps(stats, indent=1))
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(prog="soccer", description="soccer-edge-finder operator CLI")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -904,6 +1167,11 @@ def build_parser() -> argparse.ArgumentParser:
         default=None,
         help="data-archive checkout with results/espn + fixtures/espn (adds ESPN-fed competitions)",
     )
+    r.add_argument(
+        "--fast",
+        action="store_true",
+        help="intraday run: sweep only series with markets at the last exhaustive discovery, reconcile against it",
+    )
     r.add_argument("--fail-on-incomplete", action="store_true")
     r.set_defaults(func=cmd_run)
 
@@ -953,6 +1221,16 @@ def build_parser() -> argparse.ArgumentParser:
     eb.add_argument("--end", default=None, help="YYYY-MM-DD (default today)")
     eb.add_argument("--out-dir", required=True)
     eb.set_defaults(func=cmd_espn_backfill)
+    elb = sub.add_parser(
+        "espn-lineup-backfill",
+        help="post-hoc starting XIs of completed matches over a date range (lineup oracle input; runner-side)",
+    )
+    elb.add_argument("--leagues", required=True, help="comma-separated ESPN slugs")
+    elb.add_argument("--start", required=True, help="YYYY-MM-DD")
+    elb.add_argument("--end", default=None)
+    elb.add_argument("--max-events", type=int, default=4000, help="summary fetch budget per run")
+    elb.add_argument("--out-dir", required=True)
+    elb.set_defaults(func=cmd_espn_lineup_backfill)
 
     rp = sub.add_parser(
         "replay-policies", help="replay versioned selection policies against the archive (research)"
@@ -1076,6 +1354,12 @@ def build_parser() -> argparse.ArgumentParser:
         "--apply", action="store_true", help="append the recoverable rows (refuses on any conflict)"
     )
     arc.set_defaults(func=cmd_archive_recover)
+    acp = arsub.add_parser(
+        "compact", help="gzip closed day files (manifest-aware; never deletes evidence)"
+    )
+    acp.add_argument("--archive-dir", required=True)
+    acp.add_argument("--apply", action="store_true")
+    acp.set_defaults(func=cmd_archive_compact)
 
     dp = sub.add_parser(
         "dispatch", help="kickoff-timed capture dispatcher (T-120/60/30/15/5 horizons)"
@@ -1104,11 +1388,42 @@ def build_parser() -> argparse.ArgumentParser:
     dt.add_argument("--max-hold-minutes", type=float, default=40.0)
     dt.add_argument("--no-hold", action="store_true")
     dt.add_argument("--skip-lineups", action="store_true")
+    dt.add_argument(
+        "--with-run",
+        action="store_true",
+        help="also run a fast, 3-hour-window RUN SOCCER at each due horizon (near-close predictions)",
+    )
+    dt.add_argument("--run-model-version", default="dc_laplace_v1")
+    dt.add_argument("--run-engine-version", default="minute_engine_v1")
     dt.set_defaults(func=cmd_dispatch_tick)
     dd = dpsub.add_parser("diagnostics", help="horizon-delivery diagnostics from the archived log")
     dd.add_argument("--archive-dir", required=True)
     dd.add_argument("--out", default=None)
     dd.set_defaults(func=cmd_dispatch_diagnostics)
+
+    pe = sub.add_parser(
+        "promote", help="promotion evaluator (report only; never edits authority.json)"
+    )
+    pesub = pe.add_subparsers(dest="promote_cmd", required=True)
+    pev = pesub.add_parser(
+        "evaluate", help="evaluate every model x market x competition-group x horizon cell"
+    )
+    pev.add_argument("--archive-dir", required=True, help="predictions ledger root")
+    pev.add_argument("--settlements-dir", required=True)
+    pev.add_argument(
+        "--runs-dir", default=None, help="archive runs/ root (unaccounted-contract check)"
+    )
+    pev.add_argument(
+        "--archive-root", default=None, help="archive tree root (manifest verification)"
+    )
+    pev.add_argument("--out", required=True)
+    pev.set_defaults(func=cmd_promote_evaluate)
+    lu = sub.add_parser("lineups", help="lineup capture reliability")
+    lusub = lu.add_subparsers(dest="lineups_cmd", required=True)
+    lur = lusub.add_parser("report", help="lead-time distribution and pre-kickoff XI shares")
+    lur.add_argument("--archive-dir", required=True, help="archive tree root (reads lineups/)")
+    lur.add_argument("--out", required=True)
+    lur.set_defaults(func=cmd_lineups_report)
     return p
 
 

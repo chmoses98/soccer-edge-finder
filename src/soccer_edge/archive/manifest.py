@@ -37,6 +37,7 @@ are deliberately not manifested: they are rebuildable and are checked for *consi
 from __future__ import annotations
 
 import fnmatch
+import gzip
 import hashlib
 import json
 import re
@@ -101,7 +102,9 @@ def _sha256_bytes(data: bytes) -> str:
 
 def classify_path(rel: str) -> tuple[str, bool, bool] | None:
     """(record_type, record_level, immutable) for an archive path, or None when the path is mutable /
-    unknown and therefore not manifested."""
+    unknown and therefore not manifested. A `.jsonl.gz` twin is covered by its compacted entry."""
+    if rel.endswith(".jsonl.gz"):
+        return None
     for g in _MUTABLE_GLOBS:
         if fnmatch.fnmatch(rel, g):
             return None
@@ -268,6 +271,8 @@ class ArchiveManifest:
             rtype, rec_level, immutable = cls
             data = (self.root / rel).read_bytes()
             entry = files.get(rel)
+            if entry is not None and entry.get("compacted"):
+                continue
             day = path_day(rel)
             if entry is None:
                 start = 0
@@ -336,6 +341,26 @@ class ArchiveManifest:
             )
         return rows
 
+    def record_level_paths(self, files: dict[str, Any]) -> list[str]:
+        """Logical (uncompressed) paths of every record-level file present, including compacted ones."""
+        out = set()
+        for rel in self.archive_files():
+            if classify_path(rel) is not None:
+                out.add(rel)
+        for rel, e in files.items():
+            if e.get("compacted") and (self.root / e.get("compacted_path", rel + ".gz")).exists():
+                out.add(rel)
+        return sorted(out)
+
+    def _open_record_file(self, rel: str, files: dict[str, Any]):
+        e = files.get(rel) or {}
+        if e.get("compacted"):
+            import io
+
+            raw = gzip.decompress((self.root / e.get("compacted_path", rel + ".gz")).read_bytes())
+            return io.BytesIO(raw)
+        return (self.root / rel).open("rb")
+
     # ------------------------------------------------------------------ verify
     def verify(
         self, *, today: date | None = None, allow_recovered: set[str] | None = None
@@ -349,6 +374,22 @@ class ArchiveManifest:
         # 1. file table: existence, prefix integrity, closed-day immutability
         for rel, entry in files.items():
             rep.files_checked += 1
+            if entry.get("compacted"):
+                gz_rel = entry.get("compacted_path", rel + ".gz")
+                if gz_rel not in present:
+                    rep.problem("missing_file", gz_rel, record_type=entry.get("record_type"))
+                    continue
+                gz = (self.root / gz_rel).read_bytes()
+                if _sha256_bytes(gz) != entry.get("gzip_sha256"):
+                    rep.problem("compacted_file_rewritten", gz_rel)
+                    continue
+                data = gzip.decompress(gz)
+                if (
+                    len(data) != int(entry["byte_length"])
+                    or _sha256_bytes(data) != entry["sha256_prefix"]
+                ):
+                    rep.problem("compacted_content_mismatch", gz_rel)
+                continue
             if rel not in present:
                 rep.problem("missing_file", rel, record_type=entry.get("record_type"))
                 continue
@@ -369,7 +410,12 @@ class ArchiveManifest:
                     "closed_file_appended", rel, manifested_bytes=n, current_bytes=len(data)
                 )
         # 2. unmanifested files (informational unless the archive is expected to be complete)
+        compacted_paths = {
+            e.get("compacted_path", r + ".gz") for r, e in files.items() if e.get("compacted")
+        }
         for rel in sorted(present):
+            if rel in compacted_paths:
+                continue
             if classify_path(rel) is not None and rel not in files:
                 rep.unmanifested_files.append(rel)
         # 3. record-level consistency
@@ -386,13 +432,13 @@ class ArchiveManifest:
         predictions_by_id: dict[str, tuple[str, dict[str, Any]]] = {}
         settlement_refs: list[tuple[str, str]] = []
         run_ids: dict[str, str] = {}
-        for rel in self.archive_files():
+        for rel in self.record_level_paths(files):
             cls = classify_path(rel)
             if cls is None or not cls[1]:
                 continue
             rtype = cls[0]
             hashes: set[str] = set()
-            with (self.root / rel).open("rb") as fh:
+            with self._open_record_file(rel, files) as fh:
                 for raw in fh:
                     if not raw.strip():
                         continue

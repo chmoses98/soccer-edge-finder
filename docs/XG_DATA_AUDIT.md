@@ -41,3 +41,16 @@ of these hosts). Status codes below are what the runner actually received.
   CSV; treat it as a covariate with unknown drift (record `xg_source="football_data_couk"` with each row).
 * Expect missing values early in the season and for postponed/re-arranged matches; the provider leaves the
   field empty rather than 0.
+
+## Update (remediation phase 20): historical xG path
+
+`research/xg_history.py` (workflow `research-xg.yml`) tries, in order and without violating any
+source's terms, the reproducible downloads the audit identified: FiveThirtyEight `spi_matches.csv`
+(CC-BY 4.0, project retired) at its original endpoint, at the Internet Archive, and in the
+`fivethirtyeight/data` GitHub repository; each response is hash-pinned and accepted only if its header
+carries `xg1/xg2`. If found, `data/research/xg_history_v1.csv.gz` (top-5 leagues, goals + xG + non-shot
+xG) is built and `xg_strength_v1` becomes evaluable (walk-forward omega grid on 2017-18..2020-21, frozen
+holdout 2021-22..2022-23, against `dc_laplace_v2`'s goal-only likelihood). If no source is reachable the
+result file says `xg_strength_v1_status: NOT_EVALUATED` and nothing is invented; the prospective
+football-data.co.uk `HxG/AxG` accumulation from 2026-27 remains the only path. Understat, FBref/Opta and
+scraped sources stay excluded. The result of the workflow run is recorded in docs/RESEARCH_RESULTS.md.

@@ -1,0 +1,75 @@
+name: lineup-backfill
+
+# Post-hoc starting XIs of completed matches (lineup oracle study input, docs/PRELAUNCH_AUDIT.md §I2).
+# Runner-side (ESPN); appends lineups/history/<league>.jsonl on data-archive (dedup by event id).
+
+on:
+  workflow_dispatch:
+    inputs:
+      leagues:
+        description: "comma-separated ESPN slugs"
+        default: "eng.1,esp.1,ger.1,ita.1,fra.1"
+      start:
+        description: "YYYY-MM-DD"
+        default: "2024-08-01"
+      end:
+        description: "YYYY-MM-DD (default today)"
+        required: false
+      max_events:
+        description: "summary fetch budget for this run"
+        default: "4000"
+
+concurrency:
+  group: data-writer-archive-lineups
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e .
+      - name: Restore existing history (dedup)
+        run: |
+          mkdir -p work/lineups/history
+          if git ls-remote --exit-code --heads origin data-archive >/dev/null 2>&1; then
+            git fetch --quiet --depth 1 origin data-archive
+            for f in $(git ls-tree --name-only origin/data-archive:lineups/history 2>/dev/null); do
+              git show "origin/data-archive:lineups/history/$f" > "work/lineups/history/$f" 2>/dev/null || true
+            done
+          fi
+      - name: Backfill
+        timeout-minutes: 110
+        run: |
+          ARGS="--leagues ${{ inputs.leagues }} --start ${{ inputs.start }} --max-events ${{ inputs.max_events || '4000' }} --out-dir work"
+          [ -n "${{ inputs.end }}" ] && ARGS="$ARGS --end ${{ inputs.end }}"
+          python -m soccer_edge.cli espn-lineup-backfill $ARGS | tee work/backfill.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lineup-backfill-${{ github.run_id }}
+          path: work/
+          retention-days: 30
+      - name: Publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: scripts/archive_publish.sh work . "lineup-backfill ${{ github.run_id }} $(date -u +%Y-%m-%dT%H:%MZ)"
+      - name: Oracle study on the archived history
+        continue-on-error: true
+        run: |
+          git clone --quiet --depth 1 --branch data-archive "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" archive
+          python research/lineup_oracle.py --archive-dir archive --calibrate --out work/lineup_oracle_v1.json | tee -a work/backfill.log
+          cp work/lineup_oracle_v1.json data/research/lineup_oracle_v1.json
+          git config user.name "soccer-edge-bot"; git config user.email "soccer-edge-bot@users.noreply.github.com"
+          git add data/research/lineup_oracle_v1.json
+          git diff --cached --quiet || { git commit -qm "research: lineup oracle $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]"; for i in 1 2 3; do git push && break; git pull --rebase -q && sleep 3; done; }
+      - run: |
+          { echo '## lineup-backfill'; echo '```'; tail -30 work/backfill.log; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
