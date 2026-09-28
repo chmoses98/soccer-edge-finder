@@ -1,0 +1,51 @@
+name: diagnostics
+
+# Coverage forensics on the CURRENT live surface: runs the pipeline without archiving and commits a
+# compact coverage_diagnostics.json to data/diagnostics/ on the calling branch.
+
+on:
+  workflow_dispatch:
+    inputs:
+      window_hours:
+        default: "340"
+
+concurrency:
+  group: diagnostics-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e .
+      - name: Run pipeline (no archive)
+        timeout-minutes: 25
+        run: |
+          set -o pipefail
+          mkdir -p work/out
+          python -m soccer_edge.cli run --window "${{ inputs.window_hours }}" --out-dir work/out --no-freshness-gate | tail -40
+      - uses: actions/upload-artifact@v4
+        with:
+          name: diagnostics-${{ github.run_id }}
+          path: work/out
+          retention-days: 14
+      - name: Commit compact diagnostics
+        run: |
+          mkdir -p data/diagnostics
+          python - <<'PY'
+          import json; d = json.load(open('work/out/coverage_diagnostics.json'))
+          d['current_tradable_match_scope_lost_rows'] = d['current_tradable_match_scope_lost_rows'][:400]
+          json.dump(d, open('data/diagnostics/latest_coverage_diagnostics.json', 'w'), indent=1, sort_keys=True)
+          PY
+          git config user.name "soccer-edge-bot"; git config user.email "soccer-edge-bot@users.noreply.github.com"
+          git add data/diagnostics/latest_coverage_diagnostics.json
+          git diff --cached --quiet && echo "no change" || (git commit -m "diagnostics: coverage $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]" && git pull --rebase origin ${{ github.ref_name }} && git push origin HEAD:${{ github.ref_name }})

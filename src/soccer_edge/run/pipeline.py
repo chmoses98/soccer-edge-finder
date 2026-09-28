@@ -34,6 +34,8 @@ from soccer_edge.pricing.edge import EdgeAssessment, EdgeConfig, assess
 from soccer_edge.pricing.expression import Candidate, payoff_vector, reduce_expressions
 from soccer_edge.pricing.pricer import PricedProbability, price
 from soccer_edge.pricing.semantics import Semantics, UnsupportedSemantics, resolve_semantics
+from soccer_edge.reference.capture import reference_for_contract
+from soccer_edge.run.diagnostics import build_coverage_diagnostics
 from soccer_edge.run.freshness import FreshnessPolicy, FreshnessReport
 from soccer_edge.run.modeling import CompetitionModel
 from soccer_edge.run.simcache import (
@@ -79,6 +81,11 @@ class RunInputs:
     lineup_contexts: dict[str, MatchContext] = field(
         default_factory=dict
     )  # optional richer contexts
+    reference_lookup: dict[tuple, float] = field(
+        default_factory=dict
+    )  # (fixture, market, selection, line) -> devigged p
+    reference_bookmaker: str = "consensus"
+    reference_observed_at: datetime | None = None
 
 
 @dataclass
@@ -93,6 +100,7 @@ class ContractWork:
     no: EdgeAssessment | None = None
     regime: FeeRegime | None = None
     indicator: np.ndarray | None = None
+    reference_prob: float | None = None
 
 
 @dataclass
@@ -104,6 +112,7 @@ class RunArtifacts:
     fixtures_simulated: list[str]
     fixtures_repriced: list[str]
     prediction_record_ids: list[str]
+    diagnostics: dict[str, Any] = field(default_factory=dict)
 
 
 def _kickoff(f: Fixture) -> datetime:
@@ -381,6 +390,15 @@ def run(
             )
 
     # ---- edge, expression, authority --------------------------------------------------------------
+    for tk, w in works.items():
+        if w.sem is not None and w.fixture is not None and inputs.reference_lookup:
+            w.reference_prob = reference_for_contract(
+                inputs.reference_lookup,
+                w.fixture.fixture_id,
+                w.spec.family.value,
+                w.sem.side,
+                w.sem.line,
+            )
     candidates: list[Candidate] = []
     per_contract: list[dict[str, Any]] = []
     for tk, w in works.items():
@@ -423,7 +441,26 @@ def run(
             )
         )
 
+    # expression-layer diagnostics (Phase 19): group ids, removal reasons, correlated alternatives per side
+    expr_diag: dict[str, dict[str, Any]] = {}
+    for c in candidates:
+        expr_diag[f"{c.assessment.ticker}|{c.assessment.side}"] = {
+            "candidate": True,
+            "correlation_group": None,
+            "removed_reason": None,
+            "correlated_alternatives": {},
+        }
     reduced = reduce_expressions(candidates)
+    for key, d in expr_diag.items():
+        d["correlation_group"] = reduced.groups.get(key)
+        d["correlated_alternatives"] = reduced.correlation.get(key, {})
+    for c, reason in reduced.removed:
+        expr_diag[f"{c.assessment.ticker}|{c.assessment.side}"]["removed_reason"] = reason
+    for rec_d in per_contract:
+        rec_d["expression"] = {
+            side: expr_diag.get(f"{rec_d['ticker']}|{side}", {"candidate": False})
+            for side in ("yes", "no")
+        }
     recs: list[RecommendationV1] = []
     shadow: list[RecommendationV1] = []
     removed_keys = {f"{c.assessment.ticker}|{c.assessment.side}": r for c, r in reduced.removed}
@@ -469,6 +506,17 @@ def run(
             risks=_risks(w, state, ctx, disc.complete),
             correlation_group=f"{fx.fixture_id}#g{reduced.groups.get(f'{c.assessment.ticker}|{c.assessment.side}', 0)}",
             fee_schedule_version=FEE_SCHEDULE_VERSION,
+            reference_probability=_side_ref(w.reference_prob, c.assessment.side),
+            reference_bookmaker=inputs.reference_bookmaker
+            if w.reference_prob is not None
+            else None,
+            reference_as_of=inputs.reference_observed_at if w.reference_prob is not None else None,
+            divergence_from_reference=(
+                c.assessment.fair - _side_ref(w.reference_prob, c.assessment.side)
+            )
+            if w.reference_prob is not None
+            else None,
+            kalshi_mid_probability=_kalshi_mid(w.market, c.assessment.side),
         )
         if state in (Authority.LIMITED, Authority.TRUSTED) and disc.complete:
             recs.append(rec)
@@ -536,7 +584,21 @@ def run(
     from soccer_edge.run.render import render_markdown
 
     md = render_markdown(output, reduced, fixture_summaries)
-    return RunArtifacts(output, md, cov, per_contract, simulated, repriced, record_ids)
+    diagnostics = build_coverage_diagnostics(works, cov, as_of, discovery_run_id=disc.run_id)
+    return RunArtifacts(output, md, cov, per_contract, simulated, repriced, record_ids, diagnostics)
+
+
+def _side_ref(p_yes: float | None, side: str) -> float | None:
+    if p_yes is None:
+        return None
+    return p_yes if side == "yes" else 1.0 - p_yes
+
+
+def _kalshi_mid(m: RawMarket, side: str) -> float | None:
+    if m.yes_bid is None or m.yes_ask is None:
+        return None
+    mid = float((m.yes_bid + m.yes_ask) / 2)
+    return mid if side == "yes" else 1.0 - mid
 
 
 def _event_name(fx: Fixture, reg: AliasRegistry) -> str:
@@ -691,9 +753,11 @@ def write_outputs(art: RunArtifacts, out_dir: Path) -> dict[str, Path]:
         "md": out_dir / "RUN_SOCCER.md",
         "contracts": out_dir / "priced_contracts.json",
         "coverage": out_dir / "coverage.json",
+        "diagnostics": out_dir / "coverage_diagnostics.json",
     }
     write_json(paths["json"], art.output.model_dump(mode="json"))
     paths["md"].write_text(art.markdown, encoding="utf-8")
     write_json(paths["contracts"], art.per_contract)
     write_json(paths["coverage"], art.coverage.summary())
+    write_json(paths["diagnostics"], art.diagnostics)
     return paths
