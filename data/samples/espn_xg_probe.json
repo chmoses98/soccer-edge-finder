@@ -1,299 +1,5773 @@
 {
- "probed_at": "2026-09-28T02:38:04.772455+00:00",
+ "probed_at": "2026-09-28T02:46:36.740004+00:00",
  "espn": {
   "eng.1": {
    "name": "EPL",
-   "status": 0,
-   "events_today": 0,
-   "leagues_meta": [],
-   "first_event": null,
-   "top_keys": [],
+   "status": 200,
+   "events_today": 4,
+   "leagues_meta": [
+    {
+     "id": "700",
+     "uid": "s:600~l:700",
+     "name": "English Premier League",
+     "abbreviation": "Premier League",
+     "slug": "eng.1",
+     "season": {
+      "year": 2026,
+      "startDate": "2026-06-01T04:00Z",
+      "endDate": "2027-06-01T03:59Z",
+      "displayName": "2026-27 English Premier League",
+      "type": {
+       "id": "1",
+       "type": 14308,
+       "name": "2026-27 English Premier League",
+       "abbreviation": "2026-27 English Premier League"
+      }
+     }
+    }
+   ],
+   "first_event": {
+    "id": "401879276",
+    "uid": "s:600~l:700~e:401879276",
+    "date": "2026-09-20T13:00Z",
+    "name": "Liverpool at AFC Bournemouth",
+    "shortName": "LIV @ BOU",
+    "season": {
+     "year": 2026,
+     "type": 14308,
+     "slug": "2026-27-english-premier-league"
+    },
+    "status": {
+     "id": "28",
+     "name": "STATUS_FULL_TIME",
+     "state": "post",
+     "completed": true,
+     "description": "Full Time",
+     "detail": "FT",
+     "shortDetail": "FT"
+    },
+    "venue": {
+     "id": "6020",
+     "fullName": "Vitality Stadium",
+     "address": {
+      "city": "Bournemouth",
+      "country": "England"
+     }
+    },
+    "neutralSite": null,
+    "attendance": 11316,
+    "competitors": [
+     {
+      "id": "349",
+      "homeAway": "home",
+      "winner": false,
+      "score": "0",
+      "form": "LWDWD",
+      "team": {
+       "id": "349",
+       "uid": "s:600~t:349",
+       "abbreviation": "BOU",
+       "displayName": "AFC Bournemouth",
+       "shortDisplayName": "Bournemouth",
+       "name": "AFC Bournemouth",
+       "location": "AFC Bournemouth"
+      }
+     },
+     {
+      "id": "364",
+      "homeAway": "away",
+      "winner": true,
+      "score": "1",
+      "form": "WWDWW",
+      "team": {
+       "id": "364",
+       "uid": "s:600~t:364",
+       "abbreviation": "LIV",
+       "displayName": "Liverpool",
+       "shortDisplayName": "Liverpool",
+       "name": "Liverpool",
+       "location": "Liverpool"
+      }
+     }
+    ],
+    "odds": [
+     null
+    ],
+    "details_count": 4,
+    "details_sample": [
+     {
+      "type": {
+       "id": "94",
+       "text": "Yellow Card"
+      },
+      "clock": {
+       "value": 2748.0,
+       "displayValue": "46'"
+      },
+      "team": {
+       "id": "364"
+      },
+      "scoreValue": 0,
+      "scoringPlay": false,
+      "redCard": false,
+      "yellowCard": true,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "257206",
+        "displayName": "Dominik Szoboszlai",
+        "shortName": "D. Szoboszlai",
+        "fullName": "Dominik Szoboszlai",
+        "jersey": "8",
+        "team": {
+         "id": "364"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/257206/dominik-szoboszlai",
+          "isHidden": false
+         }
+        ],
+        "position": "RM"
+       }
+      ]
+     },
+     {
+      "type": {
+       "id": "70",
+       "text": "Goal"
+      },
+      "clock": {
+       "value": 3415.0,
+       "displayValue": "57'"
+      },
+      "team": {
+       "id": "364"
+      },
+      "scoreValue": 1,
+      "scoringPlay": true,
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "235662",
+        "displayName": "Alexander Isak",
+        "shortName": "A. Isak",
+        "fullName": "Alexander Isak",
+        "jersey": "9",
+        "team": {
+         "id": "364"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/235662/alexander-isak",
+          "isHidden": false
+         }
+        ],
+        "position": "F"
+       }
+      ]
+     },
+     {
+      "type": {
+       "id": "94",
+       "text": "Yellow Card"
+      },
+      "clock": {
+       "value": 3440.0,
+       "displayValue": "58'"
+      },
+      "team": {
+       "id": "364"
+      },
+      "scoreValue": 0,
+      "scoringPlay": false,
+      "redCard": false,
+      "yellowCard": true,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "235662",
+        "displayName": "Alexander Isak",
+        "shortName": "A. Isak",
+        "fullName": "Alexander Isak",
+        "jersey": "9",
+        "team": {
+         "id": "364"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/235662/alexander-isak",
+          "isHidden": false
+         }
+        ],
+        "position": "F"
+       }
+      ]
+     }
+    ],
+    "keys": [
+     "altGameNote",
+     "attendance",
+     "broadcast",
+     "broadcasts",
+     "competitors",
+     "date",
+     "details",
+     "format",
+     "geoBroadcasts",
+     "headlines",
+     "id",
+     "notes",
+     "odds",
+     "playByPlayAthletes",
+     "playByPlayAvailable",
+     "recent",
+     "startDate",
+     "status",
+     "timeValid",
+     "uid",
+     "venue",
+     "wasSuspended"
+    ]
+   },
+   "top_keys": [
+    "day",
+    "events",
+    "leagues",
+    "provider",
+    "season"
+   ],
    "events_next_window": 0,
-   "window_query_status": 0
+   "window_query_status": 400
   },
   "esp.1": {
    "name": "La Liga",
-   "status": 0,
-   "events_today": 0,
-   "leagues_meta": [],
-   "first_event": null,
-   "top_keys": [],
+   "status": 200,
+   "events_today": 5,
+   "leagues_meta": [
+    {
+     "id": "740",
+     "uid": "s:600~l:740",
+     "name": "Spanish LALIGA",
+     "abbreviation": "LALIGA",
+     "slug": "esp.1",
+     "season": {
+      "year": 2026,
+      "startDate": "2026-06-01T04:00Z",
+      "endDate": "2027-06-01T03:59Z",
+      "displayName": "2026-27 Spanish LALIGA",
+      "type": {
+       "id": "1",
+       "type": 14357,
+       "name": "2026-27 LALIGA",
+       "abbreviation": "2026-27 LALIGA"
+      }
+     }
+    }
+   ],
+   "first_event": {
+    "id": "401882861",
+    "uid": "s:600~l:740~e:401882861",
+    "date": "2026-09-20T12:00Z",
+    "name": "M\u00e1laga at Getafe",
+    "shortName": "MCF @ GET",
+    "season": {
+     "year": 2026,
+     "type": 14357,
+     "slug": "2026-27-laliga"
+    },
+    "status": {
+     "id": "28",
+     "name": "STATUS_FULL_TIME",
+     "state": "post",
+     "completed": true,
+     "description": "Full Time",
+     "detail": "FT",
+     "shortDetail": "FT"
+    },
+    "venue": {
+     "id": "4154",
+     "fullName": "Estadio Coliseum",
+     "address": {
+      "city": "Getafe",
+      "country": "Spain"
+     }
+    },
+    "neutralSite": null,
+    "attendance": 7910,
+    "competitors": [
+     {
+      "id": "2922",
+      "homeAway": "home",
+      "winner": true,
+      "score": "1",
+      "form": "WLDDL",
+      "team": {
+       "id": "2922",
+       "uid": "s:600~t:2922",
+       "abbreviation": "GET",
+       "displayName": "Getafe",
+       "shortDisplayName": "Getafe",
+       "name": "Getafe",
+       "location": "Getafe"
+      }
+     },
+     {
+      "id": "99",
+      "homeAway": "away",
+      "winner": false,
+      "score": "0",
+      "form": "LLDDL",
+      "team": {
+       "id": "99",
+       "uid": "s:600~t:99",
+       "abbreviation": "MCF",
+       "displayName": "M\u00e1laga",
+       "shortDisplayName": "M\u00e1laga",
+       "name": "M\u00e1laga",
+       "location": "M\u00e1laga"
+      }
+     }
+    ],
+    "odds": [
+     null
+    ],
+    "details_count": 7,
+    "details_sample": [
+     {
+      "type": {
+       "id": "94",
+       "text": "Yellow Card"
+      },
+      "clock": {
+       "value": 1202.0,
+       "displayValue": "21'"
+      },
+      "team": {
+       "id": "2922"
+      },
+      "scoreValue": 0,
+      "scoringPlay": false,
+      "redCard": false,
+      "yellowCard": true,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "173247",
+        "displayName": "Johan Mojica",
+        "shortName": "J. Mojica",
+        "fullName": "Johan Mojica",
+        "jersey": "22",
+        "team": {
+         "id": "2922"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/173247/johan-mojica",
+          "isHidden": false
+         }
+        ],
+        "position": "LB"
+       }
+      ]
+     },
+     {
+      "type": {
+       "id": "94",
+       "text": "Yellow Card"
+      },
+      "clock": {
+       "value": 2284.0,
+       "displayValue": "39'"
+      },
+      "team": {
+       "id": "99"
+      },
+      "scoreValue": 0,
+      "scoringPlay": false,
+      "redCard": false,
+      "yellowCard": true,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "270610",
+        "displayName": "Eneko Jauregui",
+        "shortName": "E. Jauregui",
+        "fullName": "Eneko Jauregui",
+        "jersey": "17",
+        "team": {
+         "id": "99"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/270610/eneko-jauregui",
+          "isHidden": false
+         }
+        ],
+        "position": "F"
+       }
+      ]
+     },
+     {
+      "type": {
+       "id": "94",
+       "text": "Yellow Card"
+      },
+      "clock": {
+       "value": 2700.0,
+       "displayValue": "45'+5'"
+      },
+      "team": {
+       "id": "99"
+      },
+      "scoreValue": 0,
+      "scoringPlay": false,
+      "redCard": false,
+      "yellowCard": true,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "297828",
+        "displayName": "David Larrubia",
+        "shortName": "D. Larrubia",
+        "fullName": "David Larrubia",
+        "jersey": "10",
+        "team": {
+         "id": "99"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/297828/david-larrubia",
+          "isHidden": false
+         }
+        ],
+        "position": "RM"
+       }
+      ]
+     }
+    ],
+    "keys": [
+     "altGameNote",
+     "attendance",
+     "broadcast",
+     "broadcasts",
+     "competitors",
+     "date",
+     "details",
+     "format",
+     "geoBroadcasts",
+     "id",
+     "notes",
+     "odds",
+     "playByPlayAthletes",
+     "playByPlayAvailable",
+     "recent",
+     "startDate",
+     "status",
+     "timeValid",
+     "uid",
+     "venue",
+     "wasSuspended"
+    ]
+   },
+   "top_keys": [
+    "day",
+    "events",
+    "leagues",
+    "provider",
+    "season"
+   ],
    "events_next_window": 0,
-   "window_query_status": 0
+   "window_query_status": 400
   },
   "ger.1": {
    "name": "Bundesliga",
-   "status": 0,
-   "events_today": 0,
-   "leagues_meta": [],
-   "first_event": null,
-   "top_keys": [],
+   "status": 200,
+   "events_today": 3,
+   "leagues_meta": [
+    {
+     "id": "720",
+     "uid": "s:600~l:720",
+     "name": "German Bundesliga",
+     "abbreviation": "Bundesliga",
+     "slug": "ger.1",
+     "season": {
+      "year": 2026,
+      "startDate": "2026-07-01T04:00Z",
+      "endDate": "2027-07-01T03:59Z",
+      "displayName": "2026-27 German Bundesliga",
+      "type": {
+       "id": "1",
+       "type": 14358,
+       "name": "2026-27 German Bundesliga",
+       "abbreviation": "2026-27 Bundesliga"
+      }
+     }
+    }
+   ],
+   "first_event": {
+    "id": "401884788",
+    "uid": "s:600~l:720~e:401884788",
+    "date": "2026-09-20T13:30Z",
+    "name": "RB Leipzig at Bayer Leverkusen",
+    "shortName": "RBL @ B04",
+    "season": {
+     "year": 2026,
+     "type": 14358,
+     "slug": "2026-27-german-bundesliga"
+    },
+    "status": {
+     "id": "28",
+     "name": "STATUS_FULL_TIME",
+     "state": "post",
+     "completed": true,
+     "description": "Full Time",
+     "detail": "FT",
+     "shortDetail": "FT"
+    },
+    "venue": {
+     "id": "112",
+     "fullName": "BayArena",
+     "address": {
+      "city": "Leverkusen",
+      "country": "Germany"
+     }
+    },
+    "neutralSite": null,
+    "attendance": 0,
+    "competitors": [
+     {
+      "id": "131",
+      "homeAway": "home",
+      "winner": true,
+      "score": "2",
+      "form": "WWDWL",
+      "team": {
+       "id": "131",
+       "uid": "s:600~t:131",
+       "abbreviation": "B04",
+       "displayName": "Bayer Leverkusen",
+       "shortDisplayName": "Leverkusen",
+       "name": "Bayer Leverkusen",
+       "location": "Bayer Leverkusen"
+      }
+     },
+     {
+      "id": "11420",
+      "homeAway": "away",
+      "winner": false,
+      "score": "0",
+      "form": "LWLLW",
+      "team": {
+       "id": "11420",
+       "uid": "s:600~t:11420",
+       "abbreviation": "RBL",
+       "displayName": "RB Leipzig",
+       "shortDisplayName": "RB Leipzig",
+       "name": "RB Leipzig",
+       "location": "RB Leipzig"
+      }
+     }
+    ],
+    "odds": [
+     null
+    ],
+    "details_count": 7,
+    "details_sample": [
+     {
+      "type": {
+       "id": "94",
+       "text": "Yellow Card"
+      },
+      "clock": {
+       "value": 637.0,
+       "displayValue": "11'"
+      },
+      "team": {
+       "id": "11420"
+      },
+      "scoreValue": 0,
+      "scoringPlay": false,
+      "redCard": false,
+      "yellowCard": true,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "319368",
+        "displayName": "Antonio Nusa",
+        "shortName": "A. Nusa",
+        "fullName": "Antonio Nusa",
+        "jersey": "7",
+        "team": {
+         "id": "11420"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/319368/antonio-nusa",
+          "isHidden": false
+         }
+        ],
+        "position": "AM-L"
+       }
+      ]
+     },
+     {
+      "type": {
+       "id": "70",
+       "text": "Goal"
+      },
+      "clock": {
+       "value": 2632.0,
+       "displayValue": "44'"
+      },
+      "team": {
+       "id": "131"
+      },
+      "scoreValue": 1,
+      "scoringPlay": true,
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "212330",
+        "displayName": "Patrik Schick",
+        "shortName": "P. Schick",
+        "fullName": "Patrik Schick",
+        "jersey": "14",
+        "team": {
+         "id": "131"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/212330/patrik-schick",
+          "isHidden": false
+         }
+        ],
+        "position": "F"
+       }
+      ]
+     },
+     {
+      "type": {
+       "id": "70",
+       "text": "Goal"
+      },
+      "clock": {
+       "value": 3417.0,
+       "displayValue": "57'"
+      },
+      "team": {
+       "id": "131"
+      },
+      "scoreValue": 1,
+      "scoringPlay": true,
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "290044",
+        "displayName": "Miguel Guti\u00e9rrez",
+        "shortName": "M. Guti\u00e9rrez",
+        "fullName": "Miguel Guti\u00e9rrez",
+        "jersey": "3",
+        "team": {
+         "id": "131"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/290044/miguel-gutierrez",
+          "isHidden": false
+         }
+        ],
+        "position": "LB"
+       }
+      ]
+     }
+    ],
+    "keys": [
+     "altGameNote",
+     "attendance",
+     "broadcast",
+     "broadcasts",
+     "competitors",
+     "date",
+     "details",
+     "format",
+     "geoBroadcasts",
+     "id",
+     "notes",
+     "odds",
+     "playByPlayAthletes",
+     "playByPlayAvailable",
+     "recent",
+     "startDate",
+     "status",
+     "timeValid",
+     "uid",
+     "venue",
+     "wasSuspended"
+    ]
+   },
+   "top_keys": [
+    "day",
+    "events",
+    "leagues",
+    "provider",
+    "season"
+   ],
    "events_next_window": 0,
-   "window_query_status": 0
+   "window_query_status": 400
   },
   "ita.1": {
    "name": "Serie A",
-   "status": 0,
-   "events_today": 0,
-   "leagues_meta": [],
-   "first_event": null,
-   "top_keys": [],
+   "status": 200,
+   "events_today": 5,
+   "leagues_meta": [
+    {
+     "id": "730",
+     "uid": "s:600~l:730",
+     "name": "Italian Serie A",
+     "abbreviation": "Serie A",
+     "slug": "ita.1",
+     "season": {
+      "year": 2026,
+      "startDate": "2026-06-05T04:00Z",
+      "endDate": "2027-07-01T03:59Z",
+      "displayName": "2026-27 Italian Serie A",
+      "type": {
+       "id": "1",
+       "type": 14240,
+       "name": "2026-27 Italian Serie A",
+       "abbreviation": "2026-27 Italian Serie A"
+      }
+     }
+    }
+   ],
+   "first_event": {
+    "id": "401874934",
+    "uid": "s:600~l:730~e:401874934",
+    "date": "2026-09-20T10:30Z",
+    "name": "Napoli at Fiorentina",
+    "shortName": "NAP @ FIO",
+    "season": {
+     "year": 2026,
+     "type": 14240,
+     "slug": "2026-27-italian-serie-a"
+    },
+    "status": {
+     "id": "28",
+     "name": "STATUS_FULL_TIME",
+     "state": "post",
+     "completed": true,
+     "description": "Full Time",
+     "detail": "FT",
+     "shortDetail": "FT"
+    },
+    "venue": {
+     "id": "10720",
+     "fullName": "Stadio Artemio Franchi",
+     "address": {
+      "city": "Firenze",
+      "country": "Italy"
+     }
+    },
+    "neutralSite": null,
+    "attendance": 0,
+    "competitors": [
+     {
+      "id": "109",
+      "homeAway": "home",
+      "winner": false,
+      "score": "1",
+      "form": "DWWLL",
+      "team": {
+       "id": "109",
+       "uid": "s:600~t:109",
+       "abbreviation": "FIO",
+       "displayName": "Fiorentina",
+       "shortDisplayName": "Fiorentina",
+       "name": "Fiorentina",
+       "location": "Fiorentina"
+      }
+     },
+     {
+      "id": "114",
+      "homeAway": "away",
+      "winner": false,
+      "score": "1",
+      "form": "DWLLL",
+      "team": {
+       "id": "114",
+       "uid": "s:600~t:114",
+       "abbreviation": "NAP",
+       "displayName": "Napoli",
+       "shortDisplayName": "Napoli",
+       "name": "Napoli",
+       "location": "Napoli"
+      }
+     }
+    ],
+    "odds": [
+     null
+    ],
+    "details_count": 5,
+    "details_sample": [
+     {
+      "type": {
+       "id": "70",
+       "text": "Goal"
+      },
+      "clock": {
+       "value": 1322.0,
+       "displayValue": "23'"
+      },
+      "team": {
+       "id": "114"
+      },
+      "scoreValue": 1,
+      "scoringPlay": true,
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "274217",
+        "displayName": "Billy Gilmour",
+        "shortName": "B. Gilmour",
+        "fullName": "Billy Gilmour",
+        "jersey": "6",
+        "team": {
+         "id": "114"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/274217/billy-gilmour",
+          "isHidden": false
+         }
+        ],
+        "position": "RM"
+       }
+      ]
+     },
+     {
+      "type": {
+       "id": "94",
+       "text": "Yellow Card"
+      },
+      "clock": {
+       "value": 2481.0,
+       "displayValue": "42'"
+      },
+      "team": {
+       "id": "109"
+      },
+      "scoreValue": 0,
+      "scoringPlay": false,
+      "redCard": false,
+      "yellowCard": true,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "376473",
+        "displayName": "Franco Mastantuono",
+        "shortName": "F. Mastantuono",
+        "fullName": "Franco Mastantuono",
+        "jersey": "30",
+        "team": {
+         "id": "109"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/376473/franco-mastantuono",
+          "isHidden": false
+         }
+        ],
+        "position": "RF"
+       }
+      ]
+     },
+     {
+      "type": {
+       "id": "70",
+       "text": "Goal"
+      },
+      "clock": {
+       "value": 3021.0,
+       "displayValue": "51'"
+      },
+      "team": {
+       "id": "109"
+      },
+      "scoreValue": 1,
+      "scoringPlay": true,
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "367861",
+        "displayName": "\u00c1lex Jim\u00e9nez",
+        "shortName": "\u00c1. Jim\u00e9nez",
+        "fullName": "\u00c1lex Jim\u00e9nez",
+        "jersey": "20",
+        "team": {
+         "id": "109"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/367861/alex-jimenez",
+          "isHidden": false
+         }
+        ],
+        "position": "RB"
+       }
+      ]
+     }
+    ],
+    "keys": [
+     "altGameNote",
+     "attendance",
+     "broadcast",
+     "broadcasts",
+     "competitors",
+     "date",
+     "details",
+     "format",
+     "geoBroadcasts",
+     "id",
+     "notes",
+     "odds",
+     "playByPlayAthletes",
+     "playByPlayAvailable",
+     "recent",
+     "startDate",
+     "status",
+     "timeValid",
+     "uid",
+     "venue",
+     "wasSuspended"
+    ]
+   },
+   "top_keys": [
+    "day",
+    "events",
+    "leagues",
+    "provider",
+    "season"
+   ],
    "events_next_window": 0,
-   "window_query_status": 0
+   "window_query_status": 400
   },
   "fra.1": {
    "name": "Ligue 1",
-   "status": 0,
-   "events_today": 0,
-   "leagues_meta": [],
-   "first_event": null,
-   "top_keys": [],
+   "status": 200,
+   "events_today": 3,
+   "leagues_meta": [
+    {
+     "id": "710",
+     "uid": "s:600~l:710",
+     "name": "French Ligue 1",
+     "abbreviation": "Ligue 1",
+     "slug": "fra.1",
+     "season": {
+      "year": 2026,
+      "startDate": "2026-06-01T04:00Z",
+      "endDate": "2027-06-01T03:59Z",
+      "displayName": "2026-27 French Ligue 1",
+      "type": {
+       "id": "1",
+       "type": 14252,
+       "name": "2026-27 Ligue 1",
+       "abbreviation": "2026-27 Ligue 1"
+      }
+     }
+    }
+   ],
+   "first_event": {
+    "id": "401876456",
+    "uid": "s:600~l:710~e:401876456",
+    "date": "2026-09-20T13:00Z",
+    "name": "Brest at AJ Auxerre",
+    "shortName": "BRE @ AUX",
+    "season": {
+     "year": 2026,
+     "type": 14252,
+     "slug": "2026-27-ligue-1"
+    },
+    "status": {
+     "id": "28",
+     "name": "STATUS_FULL_TIME",
+     "state": "post",
+     "completed": true,
+     "description": "Full Time",
+     "detail": "FT",
+     "shortDetail": "FT"
+    },
+    "venue": {
+     "id": "4617",
+     "fullName": "Stade de l'Abb\u00e9-Deschamps",
+     "address": {
+      "city": "Auxerre",
+      "country": "France"
+     }
+    },
+    "neutralSite": null,
+    "attendance": 0,
+    "competitors": [
+     {
+      "id": "172",
+      "homeAway": "home",
+      "winner": true,
+      "score": "2",
+      "form": "WWLLL",
+      "team": {
+       "id": "172",
+       "uid": "s:600~t:172",
+       "abbreviation": "AUX",
+       "displayName": "AJ Auxerre",
+       "shortDisplayName": "Auxerre",
+       "name": "AJ Auxerre",
+       "location": "AJ Auxerre"
+      }
+     },
+     {
+      "id": "6997",
+      "homeAway": "away",
+      "winner": false,
+      "score": "1",
+      "form": "LLWDD",
+      "team": {
+       "id": "6997",
+       "uid": "s:600~t:6997",
+       "abbreviation": "BRE",
+       "displayName": "Brest",
+       "shortDisplayName": "Brest",
+       "name": "Brest",
+       "location": "Brest"
+      }
+     }
+    ],
+    "odds": [
+     null
+    ],
+    "details_count": 5,
+    "details_sample": [
+     {
+      "type": {
+       "id": "70",
+       "text": "Goal"
+      },
+      "clock": {
+       "value": 1337.0,
+       "displayValue": "23'"
+      },
+      "team": {
+       "id": "6997"
+      },
+      "scoreValue": 1,
+      "scoringPlay": true,
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "365783",
+        "displayName": "Path\u00e9 Mboup",
+        "shortName": "P. Mboup",
+        "fullName": "Path\u00e9 Mboup",
+        "jersey": "9",
+        "team": {
+         "id": "6997"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/365783/pathe-mboup",
+          "isHidden": false
+         }
+        ],
+        "position": "AM-L"
+       }
+      ]
+     },
+     {
+      "type": {
+       "id": "70",
+       "text": "Goal"
+      },
+      "clock": {
+       "value": 2760.0,
+       "displayValue": "46'"
+      },
+      "team": {
+       "id": "172"
+      },
+      "scoreValue": 1,
+      "scoringPlay": true,
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "293347",
+        "displayName": "Cameron Archer",
+        "shortName": "C. Archer",
+        "fullName": "Cameron Archer",
+        "jersey": "9",
+        "team": {
+         "id": "172"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/293347/cameron-archer",
+          "isHidden": false
+         }
+        ],
+        "position": "F"
+       }
+      ]
+     },
+     {
+      "type": {
+       "id": "94",
+       "text": "Yellow Card"
+      },
+      "clock": {
+       "value": 4363.0,
+       "displayValue": "73'"
+      },
+      "team": {
+       "id": "172"
+      },
+      "scoreValue": 0,
+      "scoringPlay": false,
+      "redCard": false,
+      "yellowCard": true,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "362476",
+        "displayName": "Christ Makosso",
+        "shortName": "C. Makosso",
+        "fullName": "Christ Makosso",
+        "jersey": "15",
+        "team": {
+         "id": "172"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/362476/christ-makosso",
+          "isHidden": false
+         }
+        ],
+        "position": "CD-R"
+       }
+      ]
+     }
+    ],
+    "keys": [
+     "altGameNote",
+     "attendance",
+     "broadcast",
+     "broadcasts",
+     "competitors",
+     "date",
+     "details",
+     "format",
+     "geoBroadcasts",
+     "id",
+     "notes",
+     "odds",
+     "playByPlayAthletes",
+     "playByPlayAvailable",
+     "recent",
+     "startDate",
+     "status",
+     "timeValid",
+     "uid",
+     "venue",
+     "wasSuspended"
+    ]
+   },
+   "top_keys": [
+    "day",
+    "events",
+    "leagues",
+    "provider",
+    "season"
+   ],
    "events_next_window": 0,
-   "window_query_status": 0
+   "window_query_status": 400
   },
   "usa.1": {
    "name": "MLS",
-   "status": 0,
-   "events_today": 0,
-   "leagues_meta": [],
-   "first_event": null,
-   "top_keys": [],
+   "status": 200,
+   "events_today": 1,
+   "leagues_meta": [
+    {
+     "id": "770",
+     "uid": "s:600~l:770",
+     "name": "MLS",
+     "abbreviation": "MLS",
+     "slug": "usa.1",
+     "season": {
+      "year": 2026,
+      "startDate": "2026-01-01T10:00Z",
+      "endDate": "2026-12-31T04:59Z",
+      "displayName": "2026 MLS",
+      "type": {
+       "id": "1",
+       "type": 13846,
+       "name": "Regular Season",
+       "abbreviation": "2026 MLS"
+      }
+     }
+    }
+   ],
+   "first_event": {
+    "id": "761844",
+    "uid": "s:600~l:770~e:761844",
+    "date": "2026-09-27T23:00Z",
+    "name": "Inter Miami CF at Columbus Crew",
+    "shortName": "MIA @ CLB",
+    "season": {
+     "year": 2026,
+     "type": 13846,
+     "slug": "regular-season"
+    },
+    "status": {
+     "id": "28",
+     "name": "STATUS_FULL_TIME",
+     "state": "post",
+     "completed": true,
+     "description": "Full Time",
+     "detail": "FT",
+     "shortDetail": "FT"
+    },
+    "venue": {
+     "id": "8689",
+     "fullName": "ScottsMiracle-Gro Field",
+     "address": {
+      "city": "Columbus, Ohio",
+      "country": "USA"
+     }
+    },
+    "neutralSite": null,
+    "attendance": 21188,
+    "competitors": [
+     {
+      "id": "183",
+      "homeAway": "home",
+      "winner": true,
+      "score": "2",
+      "form": "WWWLL",
+      "team": {
+       "id": "183",
+       "uid": "s:600~t:183",
+       "abbreviation": "CLB",
+       "displayName": "Columbus Crew",
+       "shortDisplayName": "Columbus",
+       "name": "Columbus Crew",
+       "location": "Columbus Crew"
+      }
+     },
+     {
+      "id": "20232",
+      "homeAway": "away",
+      "winner": false,
+      "score": "1",
+      "form": "LDWDD",
+      "team": {
+       "id": "20232",
+       "uid": "s:600~t:20232",
+       "abbreviation": "MIA",
+       "displayName": "Inter Miami CF",
+       "shortDisplayName": "Miami",
+       "name": "Inter Miami CF",
+       "location": "Inter Miami CF"
+      }
+     }
+    ],
+    "odds": [
+     null
+    ],
+    "details_count": 15,
+    "details_sample": [
+     {
+      "type": {
+       "id": "94",
+       "text": "Yellow Card"
+      },
+      "clock": {
+       "value": 1580.0,
+       "displayValue": "27'"
+      },
+      "team": {
+       "id": "20232"
+      },
+      "scoreValue": 0,
+      "scoringPlay": false,
+      "redCard": false,
+      "yellowCard": true,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "173666",
+        "displayName": "Casemiro",
+        "shortName": "Casemiro",
+        "fullName": "Casemiro",
+        "jersey": "5",
+        "team": {
+         "id": "20232"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/173666/casemiro",
+          "isHidden": false
+         }
+        ],
+        "position": "CD"
+       }
+      ]
+     },
+     {
+      "type": {
+       "id": "98",
+       "text": "Penalty - Scored"
+      },
+      "clock": {
+       "value": 1634.0,
+       "displayValue": "28'"
+      },
+      "team": {
+       "id": "183"
+      },
+      "scoreValue": 1,
+      "scoringPlay": true,
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": true,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "172688",
+        "displayName": "Josef Mart\u00ednez",
+        "shortName": "J. Mart\u00ednez",
+        "fullName": "Josef Mart\u00ednez",
+        "jersey": "77",
+        "team": {
+         "id": "183"
+        },
+        "headshot": "https://a.espncdn.com/i/headshots/soccer/players/full/172688.png",
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/172688/josef-martinez",
+          "isHidden": false
+         }
+        ],
+        "position": "F"
+       }
+      ]
+     },
+     {
+      "type": {
+       "id": "138",
+       "text": "Goal - Free-kick"
+      },
+      "clock": {
+       "value": 1976.0,
+       "displayValue": "33'"
+      },
+      "team": {
+       "id": "20232"
+      },
+      "scoreValue": 1,
+      "scoringPlay": true,
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "45843",
+        "displayName": "Lionel Messi",
+        "shortName": "L. Messi",
+        "fullName": "Lionel Messi",
+        "jersey": "10",
+        "team": {
+         "id": "20232"
+        },
+        "headshot": "https://a.espncdn.com/i/headshots/soccer/players/full/45843.png",
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/45843/lionel-messi",
+          "isHidden": false
+         }
+        ],
+        "position": "CF-R"
+       }
+      ]
+     }
+    ],
+    "keys": [
+     "altGameNote",
+     "attendance",
+     "broadcast",
+     "broadcasts",
+     "competitors",
+     "date",
+     "details",
+     "format",
+     "geoBroadcasts",
+     "group",
+     "id",
+     "notes",
+     "odds",
+     "playByPlayAthletes",
+     "playByPlayAvailable",
+     "recent",
+     "startDate",
+     "status",
+     "timeValid",
+     "uid",
+     "venue",
+     "wasSuspended"
+    ]
+   },
+   "top_keys": [
+    "day",
+    "events",
+    "leagues",
+    "provider",
+    "season"
+   ],
    "events_next_window": 0,
-   "window_query_status": 0
+   "window_query_status": 400
   },
   "uefa.champions": {
    "name": "UCL",
-   "status": 0,
-   "events_today": 0,
-   "leagues_meta": [],
-   "first_event": null,
-   "top_keys": [],
+   "status": 200,
+   "events_today": 9,
+   "leagues_meta": [
+    {
+     "id": "775",
+     "uid": "s:600~l:775",
+     "name": "UEFA Champions League",
+     "abbreviation": "UEFA Champions League",
+     "slug": "uefa.champions",
+     "season": {
+      "year": 2026,
+      "startDate": "2026-07-01T04:00Z",
+      "endDate": "2027-07-01T03:59Z",
+      "displayName": "2026-27 UEFA Champions League",
+      "type": {
+       "id": "1",
+       "type": 14534,
+       "name": "League Phase",
+       "abbreviation": "League Phase"
+      }
+     }
+    }
+   ],
+   "first_event": {
+    "id": "401915418",
+    "uid": "s:600~l:775~e:401915418",
+    "date": "2026-10-13T16:45Z",
+    "name": "Sporting CP at Lens",
+    "shortName": "SCP @ RCL",
+    "season": {
+     "year": 2026,
+     "type": 14534,
+     "slug": "league-phase"
+    },
+    "status": {
+     "id": "1",
+     "name": "STATUS_SCHEDULED",
+     "state": "pre",
+     "completed": false,
+     "description": "Scheduled",
+     "detail": "Tue, October 13th at 12:45 PM EDT",
+     "shortDetail": "Scheduled"
+    },
+    "venue": {
+     "id": "10342",
+     "fullName": "Stade Bollaert-Delelis",
+     "address": {
+      "city": "Lens",
+      "country": "France"
+     }
+    },
+    "neutralSite": null,
+    "attendance": 0,
+    "competitors": [
+     {
+      "id": "175",
+      "homeAway": "home",
+      "winner": false,
+      "score": "0",
+      "form": "LDWLL",
+      "team": {
+       "id": "175",
+       "uid": "s:600~t:175",
+       "abbreviation": "RCL",
+       "displayName": "Lens",
+       "shortDisplayName": "Lens",
+       "name": "Lens",
+       "location": "Lens"
+      }
+     },
+     {
+      "id": "2250",
+      "homeAway": "away",
+      "winner": false,
+      "score": "0",
+      "form": "DDWWW",
+      "team": {
+       "id": "2250",
+       "uid": "s:600~t:2250",
+       "abbreviation": "SCP",
+       "displayName": "Sporting CP",
+       "shortDisplayName": "Sporting",
+       "name": "Sporting CP",
+       "location": "Sporting CP"
+      }
+     }
+    ],
+    "odds": [
+     {
+      "overUnder": 2.5,
+      "link": {
+       "language": "en-US",
+       "rel": [
+        "game",
+        "desktop",
+        "bets"
+       ],
+       "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34654793",
+       "text": "Game",
+       "shortText": "Game",
+       "isExternal": true,
+       "isPremium": false,
+       "isHidden": false
+      },
+      "provider": {
+       "id": "100",
+       "name": "DraftKings",
+       "priority": 1,
+       "displayName": "DraftKings",
+       "logos": [
+        {
+         "href": "https://a.espncdn.com/i/betting/Draftkings_Light.svg",
+         "rel": [
+          "light"
+         ]
+        },
+        {
+         "href": "https://a.espncdn.com/i/betting/Draftkings_Dark.svg",
+         "rel": [
+          "dark"
+         ]
+        }
+       ]
+      },
+      "drawOdds": {
+       "moneyLine": 270,
+       "link": {
+        "language": "en-US",
+        "rel": [
+         "draw",
+         "desktop",
+         "bets",
+         "draftkings"
+        ],
+        "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34654793%3Foutcomes%3D0ML86264674_2",
+        "text": "Draw Bet",
+        "shortText": "Draw Bet",
+        "isExternal": true,
+        "isPremium": false,
+        "isHidden": false
+       }
+      },
+      "total": {
+       "displayName": "Total",
+       "shortDisplayName": "Total",
+       "over": {
+        "open": {
+         "line": "o2.5",
+         "odds": "-180"
+        },
+        "close": {
+         "line": "o2.5",
+         "odds": "-185",
+         "link": {
+          "rel": [
+           "over",
+           "bets"
+          ],
+          "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34654793%3Foutcomes%3D0OU86264996O250_1",
+          "tracking": {
+           "campaign": "betting-integrations",
+           "tags": {
+            "league": "uefa.champions",
+            "sport": "soccer",
+            "gameId": 401915418,
+            "betSide": "over",
+            "betType": "straight",
+            "betDetails": "Over:2.5"
+           }
+          }
+         }
+        }
+       },
+       "under": {
+        "open": {
+         "line": "u2.5",
+         "odds": "+135"
+        },
+        "close": {
+         "line": "u2.5",
+         "odds": "+135",
+         "link": {
+          "rel": [
+           "under",
+           "bets"
+          ],
+          "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34654793%3Foutcomes%3D0OU86264996U250_3",
+          "tracking": {
+           "campaign": "betting-integrations",
+           "tags": {
+            "league": "uefa.champions",
+            "sport": "soccer",
+            "gameId": 401915418,
+            "betSide": "under",
+            "betType": "straight",
+            "betDetails": "Under:2.5"
+           }
+          }
+         }
+        }
+       }
+      },
+      "pointSpread": {
+       "displayName": "Spread",
+       "shortDisplayName": "Spread",
+       "home": {
+        "open": {
+         "line": "-0.5",
+         "odds": "+120"
+        },
+        "close": {
+         "line": "-0.5",
+         "odds": "+120",
+         "link": {
+          "rel": [
+           "homeSpread",
+           "bets"
+          ],
+          "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34654793%3Foutcomes%3D0HC86265001N50_1",
+          "tracking": {
+           "campaign": "betting-integrations",
+           "tags": {
+            "league": "uefa.champions",
+            "sport": "soccer",
+            "gameId": 401915418,
+            "betSide": "home",
+            "betType": "straight",
+            "betDetails": "Spread:RCL-0.5"
+           }
+          }
+         }
+        }
+       },
+       "away": {
+        "open": {
+         "line": "+0.5",
+         "odds": "-185"
+        },
+        "close": {
+         "line": "+0.5",
+         "odds": "-185",
+         "link": {
+          "rel": [
+           "awaySpread",
+           "bets"
+          ],
+          "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34654793%3Foutcomes%3D0HC86265001P50_3",
+          "tracking": {
+           "campaign": "betting-integrations",
+           "tags": {
+            "league": "uefa.champions",
+            "sport": "soccer",
+            "gameId": 401915418,
+            "betSide": "away",
+            "betType": "straight",
+            "betDetails": "Spread:SCP+0.5"
+           }
+          }
+         }
+        }
+       }
+      },
+      "moneyline": {
+       "displayName": "Moneyline",
+       "shortDisplayName": "ML",
+       "home": {
+        "open": {
+         "odds": "+135"
+        },
+        "close": {
+         "odds": "+135",
+         "link": {
+          "rel": [
+           "home",
+           "bets"
+          ],
+          "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34654793%3Foutcomes%3D0ML86264674_1",
+          "tracking": {
+           "campaign": "betting-integrations",
+           "tags": {
+            "league": "uefa.champions",
+            "sport": "soccer",
+            "gameId": 401915418,
+            "betSide": "home",
+            "betType": "straight"
+           }
+          }
+         }
+        }
+       },
+       "away": {
+        "open": {
+         "odds": "+170"
+        },
+        "close": {
+         "odds": "+170",
+         "link": {
+          "rel": [
+           "away",
+           "bets"
+          ],
+          "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34654793%3Foutcomes%3D0ML86264674_3",
+          "tracking": {
+           "campaign": "betting-integrations",
+           "tags": {
+            "league": "uefa.champions",
+            "sport": "soccer",
+            "gameId": 401915418,
+            "betSide": "away",
+            "betType": "straight"
+           }
+          }
+         }
+        }
+       },
+       "draw": {
+        "open": {
+         "odds": "+270"
+        },
+        "close": {
+         "odds": "+270",
+         "link": {
+          "rel": [
+           "draw",
+           "bets"
+          ],
+          "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34654793%3Foutcomes%3D0ML86264674_2",
+          "tracking": {
+           "campaign": "betting-integrations",
+           "tags": {
+            "league": "uefa.champions",
+            "sport": "soccer",
+            "gameId": 401915418,
+            "betSide": "draw",
+            "betType": "straight"
+           }
+          }
+         }
+        }
+       }
+      },
+      "details": "RCL +135"
+     }
+    ],
+    "details_count": 0,
+    "details_sample": [],
+    "keys": [
+     "altGameNote",
+     "attendance",
+     "broadcast",
+     "broadcasts",
+     "competitors",
+     "date",
+     "details",
+     "format",
+     "geoBroadcasts",
+     "id",
+     "notes",
+     "odds",
+     "playByPlayAthletes",
+     "playByPlayAvailable",
+     "recent",
+     "startDate",
+     "status",
+     "timeValid",
+     "uid",
+     "venue",
+     "wasSuspended"
+    ]
+   },
+   "top_keys": [
+    "day",
+    "events",
+    "leagues",
+    "provider",
+    "season"
+   ],
    "events_next_window": 0,
-   "window_query_status": 0
+   "window_query_status": 400
   },
   "uefa.europa": {
    "name": "UEL",
-   "status": 0,
-   "events_today": 0,
-   "leagues_meta": [],
-   "first_event": null,
-   "top_keys": [],
+   "status": 200,
+   "events_today": 9,
+   "leagues_meta": [
+    {
+     "id": "776",
+     "uid": "s:600~l:776",
+     "name": "UEFA Europa League",
+     "abbreviation": "UEFA Europa League",
+     "slug": "uefa.europa",
+     "season": {
+      "year": 2026,
+      "startDate": "2026-07-01T04:00Z",
+      "endDate": "2027-07-01T03:59Z",
+      "displayName": "2026-27 UEFA Europa League",
+      "type": {
+       "id": "1",
+       "type": 14540,
+       "name": "League Phase",
+       "abbreviation": "League Phase"
+      }
+     }
+    }
+   ],
+   "first_event": {
+    "id": "401915584",
+    "uid": "s:600~l:776~e:401915584",
+    "date": "2026-09-17T16:45Z",
+    "name": "RB Salzburg at Levski Sofia",
+    "shortName": "SLZ @ LEV",
+    "season": {
+     "year": 2026,
+     "type": 14540,
+     "slug": "league-phase"
+    },
+    "status": {
+     "id": "28",
+     "name": "STATUS_FULL_TIME",
+     "state": "post",
+     "completed": true,
+     "description": "Full Time",
+     "detail": "FT",
+     "shortDetail": "FT"
+    },
+    "venue": {
+     "id": "2354",
+     "fullName": "Vasil Levski National Stadium",
+     "address": {
+      "city": "Sofia",
+      "country": "Bulgaria"
+     }
+    },
+    "neutralSite": null,
+    "attendance": 22378,
+    "competitors": [
+     {
+      "id": "490",
+      "homeAway": "home",
+      "winner": false,
+      "score": "0",
+      "form": "LLDWW",
+      "team": {
+       "id": "490",
+       "uid": "s:600~t:490",
+       "abbreviation": "LEV",
+       "displayName": "Levski Sofia",
+       "shortDisplayName": "Levski Sofia",
+       "name": "Levski Sofia",
+       "location": "Levski Sofia"
+      }
+     },
+     {
+      "id": "2790",
+      "homeAway": "away",
+      "winner": true,
+      "score": "1",
+      "form": "WWDWW",
+      "team": {
+       "id": "2790",
+       "uid": "s:600~t:2790",
+       "abbreviation": "SLZ",
+       "displayName": "RB Salzburg",
+       "shortDisplayName": "RB Salzburg",
+       "name": "RB Salzburg",
+       "location": "RB Salzburg"
+      }
+     }
+    ],
+    "odds": [
+     null
+    ],
+    "details_count": 7,
+    "details_sample": [
+     {
+      "type": {
+       "id": "70",
+       "text": "Goal"
+      },
+      "clock": {
+       "value": 2301.0,
+       "displayValue": "39'"
+      },
+      "team": {
+       "id": "2790"
+      },
+      "scoreValue": 1,
+      "scoringPlay": true,
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "184869",
+        "displayName": "Haris Tabakovic",
+        "shortName": "H. Tabakovic",
+        "fullName": "Haris Tabakovic",
+        "jersey": "9",
+        "team": {
+         "id": "2790"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/184869/haris-tabakovic",
+          "isHidden": false
+         }
+        ],
+        "position": "F"
+       }
+      ]
+     },
+     {
+      "type": {
+       "id": "94",
+       "text": "Yellow Card"
+      },
+      "clock": {
+       "value": 2432.0,
+       "displayValue": "41'"
+      },
+      "team": {
+       "id": "2790"
+      },
+      "scoreValue": 0,
+      "scoringPlay": false,
+      "redCard": false,
+      "yellowCard": true,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "336346",
+        "displayName": "Sota Kitano",
+        "shortName": "S. Kitano",
+        "fullName": "Sota Kitano",
+        "jersey": "8",
+        "team": {
+         "id": "2790"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/336346/sota-kitano",
+          "isHidden": false
+         }
+        ],
+        "position": "AM"
+       }
+      ]
+     },
+     {
+      "type": {
+       "id": "94",
+       "text": "Yellow Card"
+      },
+      "clock": {
+       "value": 3247.0,
+       "displayValue": "55'"
+      },
+      "team": {
+       "id": "490"
+      },
+      "scoreValue": 0,
+      "scoringPlay": false,
+      "redCard": false,
+      "yellowCard": true,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "276348",
+        "displayName": "\u00c1lex Centelles",
+        "shortName": "\u00c1. Centelles",
+        "fullName": "\u00c1lex Centelles",
+        "jersey": "20",
+        "team": {
+         "id": "490"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/276348/alex-centelles",
+          "isHidden": false
+         }
+        ],
+        "position": "AM-L"
+       }
+      ]
+     }
+    ],
+    "keys": [
+     "altGameNote",
+     "attendance",
+     "broadcast",
+     "broadcasts",
+     "competitors",
+     "date",
+     "details",
+     "format",
+     "geoBroadcasts",
+     "id",
+     "notes",
+     "odds",
+     "playByPlayAthletes",
+     "playByPlayAvailable",
+     "recent",
+     "startDate",
+     "status",
+     "timeValid",
+     "uid",
+     "venue",
+     "wasSuspended"
+    ]
+   },
+   "top_keys": [
+    "day",
+    "events",
+    "leagues",
+    "provider",
+    "season"
+   ],
    "events_next_window": 0,
-   "window_query_status": 0
+   "window_query_status": 400
   },
   "uefa.europa.conf": {
    "name": "UECL",
-   "status": 0,
-   "events_today": 0,
-   "leagues_meta": [],
-   "first_event": null,
-   "top_keys": [],
+   "status": 200,
+   "events_today": 18,
+   "leagues_meta": [
+    {
+     "id": "20296",
+     "uid": "s:600~l:20296",
+     "name": "UEFA Conference League",
+     "abbreviation": "UEFA Conference League",
+     "slug": "uefa.europa.conf",
+     "season": {
+      "year": 2026,
+      "startDate": "2026-07-01T04:00Z",
+      "endDate": "2027-07-01T03:59Z",
+      "displayName": "2026-27 UEFA Conference League",
+      "type": {
+       "id": "1",
+       "type": 14546,
+       "name": "League Phase",
+       "abbreviation": "League Phase"
+      }
+     }
+    }
+   ],
+   "first_event": {
+    "id": "401915855",
+    "uid": "s:600~l:20296~e:401915855",
+    "date": "2026-10-15T16:45Z",
+    "name": "AS Monaco at CSKA Sofia",
+    "shortName": "MON @ CSKA",
+    "season": {
+     "year": 2026,
+     "type": 14546,
+     "slug": "league-phase"
+    },
+    "status": {
+     "id": "1",
+     "name": "STATUS_SCHEDULED",
+     "state": "pre",
+     "completed": false,
+     "description": "Scheduled",
+     "detail": "Thu, October 15th at 12:45 PM EDT",
+     "shortDetail": "Scheduled"
+    },
+    "venue": {
+     "id": "2354",
+     "fullName": "Vasil Levski National Stadium",
+     "address": {
+      "city": "Sofia",
+      "country": "Bulgaria"
+     }
+    },
+    "neutralSite": null,
+    "attendance": 0,
+    "competitors": [
+     {
+      "id": "10834",
+      "homeAway": "home",
+      "winner": false,
+      "score": "0",
+      "form": "LLLWD",
+      "team": {
+       "id": "10834",
+       "uid": "s:600~t:10834",
+       "abbreviation": "CSKA",
+       "displayName": "CSKA Sofia",
+       "shortDisplayName": "CSKA Sofia",
+       "name": "CSKA Sofia",
+       "location": "CSKA Sofia"
+      }
+     },
+     {
+      "id": "174",
+      "homeAway": "away",
+      "winner": false,
+      "score": "0",
+      "form": "WDWWW",
+      "team": {
+       "id": "174",
+       "uid": "s:600~t:174",
+       "abbreviation": "MON",
+       "displayName": "AS Monaco",
+       "shortDisplayName": "Monaco",
+       "name": "AS Monaco",
+       "location": "AS Monaco"
+      }
+     }
+    ],
+    "odds": [
+     {
+      "overUnder": 2.5,
+      "link": {
+       "language": "en-US",
+       "rel": [
+        "game",
+        "desktop",
+        "bets"
+       ],
+       "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34637987",
+       "text": "Game",
+       "shortText": "Game",
+       "isExternal": true,
+       "isPremium": false,
+       "isHidden": false
+      },
+      "provider": {
+       "id": "100",
+       "name": "DraftKings",
+       "priority": 1,
+       "displayName": "DraftKings",
+       "logos": [
+        {
+         "href": "https://a.espncdn.com/i/betting/Draftkings_Light.svg",
+         "rel": [
+          "light"
+         ]
+        },
+        {
+         "href": "https://a.espncdn.com/i/betting/Draftkings_Dark.svg",
+         "rel": [
+          "dark"
+         ]
+        }
+       ]
+      },
+      "drawOdds": {
+       "moneyLine": 350,
+       "link": {
+        "language": "en-US",
+        "rel": [
+         "draw",
+         "desktop",
+         "bets",
+         "draftkings"
+        ],
+        "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34637987%3Foutcomes%3D0ML86214631_2",
+        "text": "Draw Bet",
+        "shortText": "Draw Bet",
+        "isExternal": true,
+        "isPremium": false,
+        "isHidden": false
+       }
+      },
+      "total": {
+       "displayName": "Total",
+       "shortDisplayName": "Total",
+       "over": {
+        "open": {
+         "line": "o2.5",
+         "odds": "-160"
+        },
+        "close": {
+         "line": "o2.5",
+         "odds": "-155",
+         "link": {
+          "rel": [
+           "over",
+           "bets"
+          ],
+          "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34637987%3Foutcomes%3D0OU86215610O250_1",
+          "tracking": {
+           "campaign": "betting-integrations",
+           "tags": {
+            "league": "uefa.europa.conf",
+            "sport": "soccer",
+            "gameId": 401915855,
+            "betSide": "over",
+            "betType": "straight",
+            "betDetails": "Over:2.5"
+           }
+          }
+         }
+        }
+       },
+       "under": {
+        "open": {
+         "line": "u2.5",
+         "odds": "+115"
+        },
+        "close": {
+         "line": "u2.5",
+         "odds": "+115",
+         "link": {
+          "rel": [
+           "under",
+           "bets"
+          ],
+          "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34637987%3Foutcomes%3D0OU86215610U250_3",
+          "tracking": {
+           "campaign": "betting-integrations",
+           "tags": {
+            "league": "uefa.europa.conf",
+            "sport": "soccer",
+            "gameId": 401915855,
+            "betSide": "under",
+            "betType": "straight",
+            "betDetails": "Under:2.5"
+           }
+          }
+         }
+        }
+       }
+      },
+      "pointSpread": {
+       "displayName": "Spread",
+       "shortDisplayName": "Spread",
+       "home": {
+        "open": {
+         "line": "+1.5",
+         "odds": "-175"
+        },
+        "close": {
+         "line": "+1.5",
+         "odds": "-185",
+         "link": {
+          "rel": [
+           "homeSpread",
+           "bets"
+          ],
+          "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34637987%3Foutcomes%3D0HC86215615P150_1",
+          "tracking": {
+           "campaign": "betting-integrations",
+           "tags": {
+            "league": "uefa.europa.conf",
+            "sport": "soccer",
+            "gameId": 401915855,
+            "betSide": "home",
+            "betType": "straight",
+            "betDetails": "Spread:CSKA+1.5"
+           }
+          }
+         }
+        }
+       },
+       "away": {
+        "open": {
+         "line": "-1.5",
+         "odds": "+115"
+        },
+        "close": {
+         "line": "-1.5",
+         "odds": "+120",
+         "link": {
+          "rel": [
+           "awaySpread",
+           "bets"
+          ],
+          "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34637987%3Foutcomes%3D0HC86215615N150_3",
+          "tracking": {
+           "campaign": "betting-integrations",
+           "tags": {
+            "league": "uefa.europa.conf",
+            "sport": "soccer",
+            "gameId": 401915855,
+            "betSide": "away",
+            "betType": "straight",
+            "betDetails": "Spread:MON-1.5"
+           }
+          }
+         }
+        }
+       }
+      },
+      "moneyline": {
+       "displayName": "Moneyline",
+       "shortDisplayName": "ML",
+       "home": {
+        "open": {
+         "odds": "+500"
+        },
+        "close": {
+         "odds": "+500",
+         "link": {
+          "rel": [
+           "home",
+           "bets"
+          ],
+          "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34637987%3Foutcomes%3D0ML86214631_1",
+          "tracking": {
+           "campaign": "betting-integrations",
+           "tags": {
+            "league": "uefa.europa.conf",
+            "sport": "soccer",
+            "gameId": 401915855,
+            "betSide": "home",
+            "betType": "straight"
+           }
+          }
+         }
+        }
+       },
+       "away": {
+        "open": {
+         "odds": "-215"
+        },
+        "close": {
+         "odds": "-215",
+         "link": {
+          "rel": [
+           "away",
+           "bets"
+          ],
+          "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34637987%3Foutcomes%3D0ML86214631_3",
+          "tracking": {
+           "campaign": "betting-integrations",
+           "tags": {
+            "league": "uefa.europa.conf",
+            "sport": "soccer",
+            "gameId": 401915855,
+            "betSide": "away",
+            "betType": "straight"
+           }
+          }
+         }
+        }
+       },
+       "draw": {
+        "open": {
+         "odds": "+350"
+        },
+        "close": {
+         "odds": "+350",
+         "link": {
+          "rel": [
+           "draw",
+           "bets"
+          ],
+          "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34637987%3Foutcomes%3D0ML86214631_2",
+          "tracking": {
+           "campaign": "betting-integrations",
+           "tags": {
+            "league": "uefa.europa.conf",
+            "sport": "soccer",
+            "gameId": 401915855,
+            "betSide": "draw",
+            "betType": "straight"
+           }
+          }
+         }
+        }
+       }
+      },
+      "details": "MON -215"
+     }
+    ],
+    "details_count": 0,
+    "details_sample": [],
+    "keys": [
+     "altGameNote",
+     "attendance",
+     "broadcast",
+     "broadcasts",
+     "competitors",
+     "date",
+     "details",
+     "format",
+     "geoBroadcasts",
+     "id",
+     "notes",
+     "odds",
+     "playByPlayAthletes",
+     "playByPlayAvailable",
+     "recent",
+     "startDate",
+     "status",
+     "timeValid",
+     "uid",
+     "venue",
+     "wasSuspended"
+    ]
+   },
+   "top_keys": [
+    "day",
+    "events",
+    "leagues",
+    "provider",
+    "season"
+   ],
    "events_next_window": 0,
-   "window_query_status": 0
+   "window_query_status": 400
   },
   "fifa.friendly": {
    "name": "Intl friendlies",
-   "status": 0,
-   "events_today": 0,
-   "leagues_meta": [],
-   "first_event": null,
-   "top_keys": [],
+   "status": 200,
+   "events_today": 8,
+   "leagues_meta": [
+    {
+     "id": "3922",
+     "uid": "s:600~l:3922",
+     "name": "International Friendly",
+     "abbreviation": "Men's International Friendly",
+     "slug": "fifa.friendly",
+     "season": {
+      "year": 2026,
+      "startDate": "2026-01-01T05:00Z",
+      "endDate": "2027-01-01T04:59Z",
+      "displayName": "2026 International Friendly",
+      "type": {
+       "id": "1",
+       "type": 13708,
+       "name": "2026 International Friendly",
+       "abbreviation": "2026 Int. Friendly"
+      }
+     }
+    }
+   ],
+   "first_event": {
+    "id": "401924630",
+    "uid": "s:600~l:3922~e:401924630",
+    "date": "2026-09-27T04:00Z",
+    "name": "Tahiti at Cook Islands",
+    "shortName": "TAH @ COK",
+    "season": {
+     "year": 2026,
+     "type": 13708,
+     "slug": "2026-international-friendly"
+    },
+    "status": {
+     "id": "28",
+     "name": "STATUS_FULL_TIME",
+     "state": "post",
+     "completed": true,
+     "description": "Full Time",
+     "detail": "FT",
+     "shortDetail": "FT"
+    },
+    "venue": {
+     "id": "11810",
+     "fullName": "Cook Islands Football Association Academy",
+     "address": {
+      "city": "Matavera",
+      "country": "Cook Islands"
+     }
+    },
+    "neutralSite": null,
+    "attendance": 0,
+    "competitors": [
+     {
+      "id": "4884",
+      "homeAway": "home",
+      "winner": false,
+      "score": "1",
+      "form": "DLLLL",
+      "team": {
+       "id": "4884",
+       "uid": "s:600~t:4884",
+       "abbreviation": "COK",
+       "displayName": "Cook Islands",
+       "shortDisplayName": "Cook Isl",
+       "name": "Cook Islands",
+       "location": "Cook Islands"
+      }
+     },
+     {
+      "id": "4863",
+      "homeAway": "away",
+      "winner": true,
+      "score": "3",
+      "form": "DLWWL",
+      "team": {
+       "id": "4863",
+       "uid": "s:600~t:4863",
+       "abbreviation": "TAH",
+       "displayName": "Tahiti",
+       "shortDisplayName": "Tahiti",
+       "name": "Tahiti",
+       "location": "Tahiti"
+      }
+     }
+    ],
+    "odds": [
+     null
+    ],
+    "details_count": 0,
+    "details_sample": [],
+    "keys": [
+     "altGameNote",
+     "attendance",
+     "broadcast",
+     "broadcasts",
+     "competitors",
+     "date",
+     "details",
+     "format",
+     "geoBroadcasts",
+     "id",
+     "notes",
+     "odds",
+     "playByPlayAthletes",
+     "playByPlayAvailable",
+     "recent",
+     "startDate",
+     "status",
+     "timeValid",
+     "uid",
+     "venue",
+     "wasSuspended"
+    ]
+   },
+   "top_keys": [
+    "day",
+    "events",
+    "leagues",
+    "provider",
+    "season"
+   ],
    "events_next_window": 0,
-   "window_query_status": 0
+   "window_query_status": 400
   },
   "uefa.nations": {
    "name": "Nations League",
-   "status": 0,
-   "events_today": 0,
-   "leagues_meta": [],
-   "first_event": null,
-   "top_keys": [],
+   "status": 200,
+   "events_today": 8,
+   "leagues_meta": [
+    {
+     "id": "2395",
+     "uid": "s:600~l:2395",
+     "name": "UEFA Nations League",
+     "abbreviation": "UEFA Nations League",
+     "slug": "uefa.nations",
+     "season": {
+      "year": 2026,
+      "startDate": "2026-06-01T04:00Z",
+      "endDate": "2028-04-01T03:59Z",
+      "displayName": "2026-27 UEFA Nations League",
+      "type": {
+       "id": "1",
+       "type": 14105,
+       "name": "League Phase",
+       "abbreviation": "League Phase"
+      }
+     }
+    }
+   ],
+   "first_event": {
+    "id": "401861067",
+    "uid": "s:600~l:2395~e:401861067",
+    "date": "2026-09-27T13:00Z",
+    "name": "Azerbaijan at Lithuania",
+    "shortName": "AZE @ LTU",
+    "season": {
+     "year": 2026,
+     "type": 14105,
+     "slug": "league-phase"
+    },
+    "status": {
+     "id": "28",
+     "name": "STATUS_FULL_TIME",
+     "state": "post",
+     "completed": true,
+     "description": "Full Time",
+     "detail": "FT",
+     "shortDetail": "FT"
+    },
+    "venue": {
+     "id": "4793",
+     "fullName": "S. Darius and S. Gireno Stadium",
+     "address": {
+      "city": "Kaunas",
+      "country": "Lithuania"
+     }
+    },
+    "neutralSite": null,
+    "attendance": 7539,
+    "competitors": [
+     {
+      "id": "460",
+      "homeAway": "home",
+      "winner": false,
+      "score": "1",
+      "form": "DWLWL",
+      "team": {
+       "id": "460",
+       "uid": "s:600~t:460",
+       "abbreviation": "LTU",
+       "displayName": "Lithuania",
+       "shortDisplayName": "Lithuania",
+       "name": "Lithuania",
+       "location": "Lithuania"
+      }
+     },
+     {
+      "id": "581",
+      "homeAway": "away",
+      "winner": false,
+      "score": "1",
+      "form": "DWWLW",
+      "team": {
+       "id": "581",
+       "uid": "s:600~t:581",
+       "abbreviation": "AZE",
+       "displayName": "Azerbaijan",
+       "shortDisplayName": "Azerbaijan",
+       "name": "Azerbaijan",
+       "location": "Azerbaijan"
+      }
+     }
+    ],
+    "odds": [
+     null
+    ],
+    "details_count": 6,
+    "details_sample": [
+     {
+      "type": {
+       "id": "98",
+       "text": "Penalty - Scored"
+      },
+      "clock": {
+       "value": 531.0,
+       "displayValue": "9'"
+      },
+      "team": {
+       "id": "460"
+      },
+      "scoreValue": 1,
+      "scoringPlay": true,
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": true,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "330626",
+        "displayName": "Armandas Kucys",
+        "shortName": "A. Kucys",
+        "fullName": "Armandas Kucys",
+        "jersey": "10",
+        "team": {
+         "id": "460"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/330626/armandas-kucys",
+          "isHidden": false
+         }
+        ],
+        "position": "F"
+       }
+      ]
+     },
+     {
+      "type": {
+       "id": "70",
+       "text": "Goal"
+      },
+      "clock": {
+       "value": 814.0,
+       "displayValue": "14'"
+      },
+      "team": {
+       "id": "581"
+      },
+      "scoreValue": 1,
+      "scoringPlay": true,
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "226974",
+        "displayName": "Mahir Emreli",
+        "shortName": "M. Emreli",
+        "fullName": "Mahir Emreli",
+        "jersey": "10",
+        "team": {
+         "id": "581"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/226974/mahir-emreli",
+          "isHidden": false
+         }
+        ],
+        "position": "RM"
+       }
+      ]
+     },
+     {
+      "type": {
+       "id": "94",
+       "text": "Yellow Card"
+      },
+      "clock": {
+       "value": 1590.0,
+       "displayValue": "27'"
+      },
+      "team": {
+       "id": "581"
+      },
+      "scoreValue": 0,
+      "scoringPlay": false,
+      "redCard": false,
+      "yellowCard": true,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "221004",
+        "displayName": "Rahil Mammadov",
+        "shortName": "R. Mammadov",
+        "fullName": "Rahil Mammadov",
+        "jersey": "4",
+        "team": {
+         "id": "581"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/221004/rahil-mammadov",
+          "isHidden": false
+         }
+        ],
+        "position": "CD-R"
+       }
+      ]
+     }
+    ],
+    "keys": [
+     "altGameNote",
+     "attendance",
+     "broadcast",
+     "broadcasts",
+     "competitors",
+     "date",
+     "details",
+     "format",
+     "geoBroadcasts",
+     "group",
+     "id",
+     "notes",
+     "odds",
+     "playByPlayAthletes",
+     "playByPlayAvailable",
+     "recent",
+     "startDate",
+     "status",
+     "timeValid",
+     "uid",
+     "venue",
+     "wasSuspended"
+    ]
+   },
+   "top_keys": [
+    "day",
+    "events",
+    "leagues",
+    "provider",
+    "season"
+   ],
    "events_next_window": 0,
-   "window_query_status": 0
+   "window_query_status": 400
   },
   "eng.2": {
    "name": "Championship",
-   "status": 0,
-   "events_today": 0,
-   "leagues_meta": [],
-   "first_event": null,
-   "top_keys": [],
+   "status": 200,
+   "events_today": 2,
+   "leagues_meta": [
+    {
+     "id": "3914",
+     "uid": "s:600~l:3914",
+     "name": "English League Championship",
+     "abbreviation": "EFL Championship",
+     "slug": "eng.2",
+     "season": {
+      "year": 2026,
+      "startDate": "2026-06-01T04:00Z",
+      "endDate": "2027-06-01T03:59Z",
+      "displayName": "2026-27 English League Championship",
+      "type": {
+       "id": "1",
+       "type": 14327,
+       "name": "Regular Season",
+       "abbreviation": "2026-27 English League Championship"
+      }
+     }
+    }
+   ],
+   "first_event": {
+    "id": "401880246",
+    "uid": "s:600~l:3914~e:401880246",
+    "date": "2026-09-20T11:00Z",
+    "name": "West Bromwich Albion at Wolverhampton Wanderers",
+    "shortName": "WBA @ WOL",
+    "season": {
+     "year": 2026,
+     "type": 14327,
+     "slug": "regular-season"
+    },
+    "status": {
+     "id": "28",
+     "name": "STATUS_FULL_TIME",
+     "state": "post",
+     "completed": true,
+     "description": "Full Time",
+     "detail": "FT",
+     "shortDetail": "FT"
+    },
+    "venue": {
+     "id": "136",
+     "fullName": "Molineux Stadium",
+     "address": {
+      "city": "Wolverhampton",
+      "country": "England"
+     }
+    },
+    "neutralSite": null,
+    "attendance": 30892,
+    "competitors": [
+     {
+      "id": "380",
+      "homeAway": "home",
+      "winner": true,
+      "score": "1",
+      "form": "WLWDL",
+      "team": {
+       "id": "380",
+       "uid": "s:600~t:380",
+       "abbreviation": "WOL",
+       "displayName": "Wolverhampton Wanderers",
+       "shortDisplayName": "Wolves",
+       "name": "Wolverhampton Wanderers",
+       "location": "Wolverhampton Wanderers"
+      }
+     },
+     {
+      "id": "383",
+      "homeAway": "away",
+      "winner": false,
+      "score": "0",
+      "form": "LDWWD",
+      "team": {
+       "id": "383",
+       "uid": "s:600~t:383",
+       "abbreviation": "WBA",
+       "displayName": "West Bromwich Albion",
+       "shortDisplayName": "West Brom",
+       "name": "West Bromwich Albion",
+       "location": "West Bromwich Albion"
+      }
+     }
+    ],
+    "odds": [
+     null
+    ],
+    "details_count": 4,
+    "details_sample": [
+     {
+      "type": {
+       "id": "94",
+       "text": "Yellow Card"
+      },
+      "clock": {
+       "value": 1466.0,
+       "displayValue": "25'"
+      },
+      "team": {
+       "id": "383"
+      },
+      "scoreValue": 0,
+      "scoringPlay": false,
+      "redCard": false,
+      "yellowCard": true,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "243465",
+        "displayName": "Jayson Molumby",
+        "shortName": "J. Molumby",
+        "fullName": "Jayson Molumby",
+        "jersey": "8",
+        "team": {
+         "id": "383"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/243465/jayson-molumby",
+          "isHidden": false
+         }
+        ],
+        "position": "CM-R"
+       }
+      ]
+     },
+     {
+      "type": {
+       "id": "94",
+       "text": "Yellow Card"
+      },
+      "clock": {
+       "value": 2593.0,
+       "displayValue": "44'"
+      },
+      "team": {
+       "id": "383"
+      },
+      "scoreValue": 0,
+      "scoringPlay": false,
+      "redCard": false,
+      "yellowCard": true,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "275109",
+        "displayName": "Nathaniel Phillips",
+        "shortName": "N. Phillips",
+        "fullName": "Nathaniel Phillips",
+        "jersey": "3",
+        "team": {
+         "id": "383"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/275109/nathaniel-phillips",
+          "isHidden": false
+         }
+        ],
+        "position": "CD-R"
+       }
+      ]
+     },
+     {
+      "type": {
+       "id": "70",
+       "text": "Goal"
+      },
+      "clock": {
+       "value": 2995.0,
+       "displayValue": "50'"
+      },
+      "team": {
+       "id": "380"
+      },
+      "scoreValue": 1,
+      "scoringPlay": true,
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "395625",
+        "displayName": "Fernando L\u00f3pez",
+        "shortName": "F. L\u00f3pez",
+        "fullName": "Fernando L\u00f3pez",
+        "jersey": "28",
+        "team": {
+         "id": "380"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/395625/fernando-lopez",
+          "isHidden": false
+         }
+        ],
+        "position": "AM"
+       }
+      ]
+     }
+    ],
+    "keys": [
+     "altGameNote",
+     "attendance",
+     "broadcast",
+     "broadcasts",
+     "competitors",
+     "date",
+     "details",
+     "format",
+     "geoBroadcasts",
+     "id",
+     "notes",
+     "odds",
+     "playByPlayAthletes",
+     "playByPlayAvailable",
+     "recent",
+     "startDate",
+     "status",
+     "timeValid",
+     "uid",
+     "venue",
+     "wasSuspended"
+    ]
+   },
+   "top_keys": [
+    "day",
+    "events",
+    "leagues",
+    "provider",
+    "season"
+   ],
    "events_next_window": 0,
-   "window_query_status": 0
+   "window_query_status": 400
   },
   "mex.1": {
    "name": "Liga MX",
-   "status": 0,
-   "events_today": 0,
-   "leagues_meta": [],
-   "first_event": null,
-   "top_keys": [],
+   "status": 200,
+   "events_today": 3,
+   "leagues_meta": [
+    {
+     "id": "760",
+     "uid": "s:600~l:760",
+     "name": "Mexican Liga BBVA MX",
+     "abbreviation": "Liga MX",
+     "slug": "mex.1",
+     "season": {
+      "year": 2026,
+      "startDate": "2026-06-01T04:00Z",
+      "endDate": "2027-06-01T03:59Z",
+      "displayName": "2026-27 Liga BBVA MX",
+      "type": {
+       "id": "1",
+       "type": 14277,
+       "name": "Torneo Apertura",
+       "abbreviation": "2026 Liga MX Apertura"
+      }
+     }
+    }
+   ],
+   "first_event": {
+    "id": "401876958",
+    "uid": "s:600~l:760~e:401876958",
+    "date": "2026-09-27T18:00Z",
+    "name": "Atl\u00e9tico de San Luis at Pumas UNAM",
+    "shortName": "ASL @ UNAM",
+    "season": {
+     "year": 2026,
+     "type": 14277,
+     "slug": "torneo-apertura"
+    },
+    "status": {
+     "id": "28",
+     "name": "STATUS_FULL_TIME",
+     "state": "post",
+     "completed": true,
+     "description": "Full Time",
+     "detail": "FT",
+     "shortDetail": "FT"
+    },
+    "venue": {
+     "id": "4905",
+     "fullName": "Estadio Ol\u00edmpico Universitario",
+     "address": {
+      "city": "Mexico City",
+      "country": "Mexico"
+     }
+    },
+    "neutralSite": null,
+    "attendance": 0,
+    "competitors": [
+     {
+      "id": "233",
+      "homeAway": "home",
+      "winner": false,
+      "score": "2",
+      "form": "LDLWL",
+      "team": {
+       "id": "233",
+       "uid": "s:600~t:233",
+       "abbreviation": "UNAM",
+       "displayName": "Pumas UNAM",
+       "shortDisplayName": "UNAM",
+       "name": "Pumas UNAM",
+       "location": "Pumas UNAM"
+      }
+     },
+     {
+      "id": "15720",
+      "homeAway": "away",
+      "winner": true,
+      "score": "3",
+      "form": "WWLLW",
+      "team": {
+       "id": "15720",
+       "uid": "s:600~t:15720",
+       "abbreviation": "ASL",
+       "displayName": "Atl\u00e9tico de San Luis",
+       "shortDisplayName": "Atl. San Luis",
+       "name": "Atl\u00e9tico de San Luis",
+       "location": "Atl\u00e9tico de San Luis"
+      }
+     }
+    ],
+    "odds": [
+     null
+    ],
+    "details_count": 8,
+    "details_sample": [
+     {
+      "type": {
+       "id": "98",
+       "text": "Penalty - Scored"
+      },
+      "clock": {
+       "value": 1330.0,
+       "displayValue": "23'"
+      },
+      "team": {
+       "id": "15720"
+      },
+      "scoreValue": 1,
+      "scoringPlay": true,
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": true,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "232323",
+        "displayName": "S\u00e9bastien Salles-Lamonge",
+        "shortName": "S. Salles-Lamonge",
+        "fullName": "S\u00e9bastien Salles-Lamonge",
+        "jersey": "10",
+        "team": {
+         "id": "15720"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/232323/sebastien-salles-lamonge",
+          "isHidden": false
+         }
+        ],
+        "position": "CM-L"
+       }
+      ]
+     },
+     {
+      "type": {
+       "id": "94",
+       "text": "Yellow Card"
+      },
+      "clock": {
+       "value": 2700.0,
+       "displayValue": "45'+1'"
+      },
+      "team": {
+       "id": "15720"
+      },
+      "scoreValue": 0,
+      "scoringPlay": false,
+      "redCard": false,
+      "yellowCard": true,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "259819",
+        "displayName": "Oscar Mac\u00edas",
+        "shortName": "O. Mac\u00edas",
+        "fullName": "Oscar Mac\u00edas",
+        "jersey": "21",
+        "team": {
+         "id": "15720"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/259819/oscar-macias",
+          "isHidden": false
+         }
+        ],
+        "position": "CM-R"
+       }
+      ]
+     },
+     {
+      "type": {
+       "id": "94",
+       "text": "Yellow Card"
+      },
+      "clock": {
+       "value": 2700.0,
+       "displayValue": "45'+1'"
+      },
+      "team": {
+       "id": "233"
+      },
+      "scoreValue": 0,
+      "scoringPlay": false,
+      "redCard": false,
+      "yellowCard": true,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "265969",
+        "displayName": "C\u00e9sar Huerta",
+        "shortName": "C. Huerta",
+        "fullName": "C\u00e9sar Huerta",
+        "jersey": "10",
+        "team": {
+         "id": "233"
+        },
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/265969/cesar-huerta",
+          "isHidden": false
+         }
+        ],
+        "position": "LM"
+       }
+      ]
+     }
+    ],
+    "keys": [
+     "altGameNote",
+     "attendance",
+     "broadcast",
+     "broadcasts",
+     "competitors",
+     "date",
+     "details",
+     "format",
+     "geoBroadcasts",
+     "id",
+     "notes",
+     "odds",
+     "playByPlayAthletes",
+     "playByPlayAvailable",
+     "recent",
+     "startDate",
+     "status",
+     "timeValid",
+     "uid",
+     "venue",
+     "wasSuspended"
+    ]
+   },
+   "top_keys": [
+    "day",
+    "events",
+    "leagues",
+    "provider",
+    "season"
+   ],
    "events_next_window": 0,
-   "window_query_status": 0
+   "window_query_status": 400
   },
   "usa.nwsl": {
    "name": "NWSL",
-   "status": 0,
-   "events_today": 0,
-   "leagues_meta": [],
-   "first_event": null,
-   "top_keys": [],
+   "status": 200,
+   "events_today": 2,
+   "leagues_meta": [
+    {
+     "id": "8301",
+     "uid": "s:600~l:8301",
+     "name": "NWSL",
+     "abbreviation": "NWSL",
+     "slug": "usa.nwsl",
+     "season": {
+      "year": 2026,
+      "startDate": "2026-01-01T05:00Z",
+      "endDate": "2026-12-31T04:59Z",
+      "displayName": "2026 NWSL",
+      "type": {
+       "id": "1",
+       "type": 14024,
+       "name": "Regular Season",
+       "abbreviation": "2026 NWSL"
+      }
+     }
+    }
+   ],
+   "first_event": {
+    "id": "401854013",
+    "uid": "s:600~l:8301~e:401854013",
+    "date": "2026-09-27T21:00Z",
+    "name": "Orlando Pride at Bay FC",
+    "shortName": "ORL @ BAY",
+    "season": {
+     "year": 2026,
+     "type": 14024,
+     "slug": "regular-season"
+    },
+    "status": {
+     "id": "28",
+     "name": "STATUS_FULL_TIME",
+     "state": "post",
+     "completed": true,
+     "description": "Full Time",
+     "detail": "FT",
+     "shortDetail": "FT"
+    },
+    "venue": {
+     "id": "6072",
+     "fullName": "PayPal Park",
+     "address": {
+      "city": "San Jose, California",
+      "country": "USA"
+     }
+    },
+    "neutralSite": null,
+    "attendance": 11393,
+    "competitors": [
+     {
+      "id": "22187",
+      "homeAway": "home",
+      "winner": false,
+      "score": "1",
+      "form": "LWDLL",
+      "team": {
+       "id": "22187",
+       "uid": "s:600~t:22187",
+       "abbreviation": "BAY",
+       "displayName": "Bay FC",
+       "shortDisplayName": "Bay",
+       "name": "Bay FC",
+       "location": "Bay FC"
+      }
+     },
+     {
+      "id": "18206",
+      "homeAway": "away",
+      "winner": true,
+      "score": "3",
+      "form": "WLDWL",
+      "team": {
+       "id": "18206",
+       "uid": "s:600~t:18206",
+       "abbreviation": "ORL",
+       "displayName": "Orlando Pride",
+       "shortDisplayName": "Orlando",
+       "name": "Orlando Pride",
+       "location": "Orlando Pride"
+      }
+     }
+    ],
+    "odds": [
+     null
+    ],
+    "details_count": 6,
+    "details_sample": [
+     {
+      "type": {
+       "id": "70",
+       "text": "Goal"
+      },
+      "clock": {
+       "value": 81.0,
+       "displayValue": "2'"
+      },
+      "team": {
+       "id": "18206"
+      },
+      "scoreValue": 1,
+      "scoringPlay": true,
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "227076",
+        "displayName": "Haley McCutcheon",
+        "shortName": "H. McCutcheon",
+        "fullName": "Haley McCutcheon",
+        "jersey": "2",
+        "team": {
+         "id": "18206"
+        },
+        "headshot": "https://a.espncdn.com/i/headshots/soccer/players/full/227076.png",
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/227076/haley-mccutcheon",
+          "isHidden": false
+         }
+        ],
+        "position": "AM-R"
+       }
+      ]
+     },
+     {
+      "type": {
+       "id": "137",
+       "text": "Goal - Header"
+      },
+      "clock": {
+       "value": 610.0,
+       "displayValue": "11'"
+      },
+      "team": {
+       "id": "22187"
+      },
+      "scoreValue": 1,
+      "scoringPlay": true,
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "310652",
+        "displayName": "Racheal Kundananji",
+        "shortName": "R. Kundananji",
+        "fullName": "Racheal Kundananji",
+        "jersey": "9",
+        "team": {
+         "id": "22187"
+        },
+        "headshot": "https://a.espncdn.com/i/headshots/soccer/players/full/310652.png",
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/310652/racheal-kundananji",
+          "isHidden": false
+         }
+        ],
+        "position": "LF"
+       }
+      ]
+     },
+     {
+      "type": {
+       "id": "137",
+       "text": "Goal - Header"
+      },
+      "clock": {
+       "value": 2800.0,
+       "displayValue": "47'"
+      },
+      "team": {
+       "id": "18206"
+      },
+      "scoreValue": 1,
+      "scoringPlay": true,
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "athletesInvolved": [
+       {
+        "id": "227076",
+        "displayName": "Haley McCutcheon",
+        "shortName": "H. McCutcheon",
+        "fullName": "Haley McCutcheon",
+        "jersey": "2",
+        "team": {
+         "id": "18206"
+        },
+        "headshot": "https://a.espncdn.com/i/headshots/soccer/players/full/227076.png",
+        "links": [
+         {
+          "rel": [
+           "playercard",
+           "desktop",
+           "athlete"
+          ],
+          "href": "https://www.espn.com/soccer/player/_/id/227076/haley-mccutcheon",
+          "isHidden": false
+         }
+        ],
+        "position": "AM-R"
+       }
+      ]
+     }
+    ],
+    "keys": [
+     "altGameNote",
+     "attendance",
+     "broadcast",
+     "broadcasts",
+     "competitors",
+     "date",
+     "details",
+     "format",
+     "geoBroadcasts",
+     "id",
+     "notes",
+     "odds",
+     "playByPlayAthletes",
+     "playByPlayAvailable",
+     "recent",
+     "startDate",
+     "status",
+     "timeValid",
+     "uid",
+     "venue",
+     "wasSuspended"
+    ]
+   },
+   "top_keys": [
+    "day",
+    "events",
+    "leagues",
+    "provider",
+    "season"
+   ],
    "events_next_window": 0,
-   "window_query_status": 0
+   "window_query_status": 400
   },
-  "summaries": [],
+  "summaries": [
+   {
+    "league": "eng.1",
+    "event": "401879276",
+    "status": 200,
+    "top_keys": [
+     "article",
+     "boxscore",
+     "broadcasts",
+     "commentary",
+     "format",
+     "gameInfo",
+     "hasOdds",
+     "header",
+     "keyEvents",
+     "lastFiveGames",
+     "leaders",
+     "meta",
+     "news",
+     "odds",
+     "pickcenter",
+     "rosters",
+     "seasonseries",
+     "standings",
+     "videos",
+     "wallclockAvailable"
+    ],
+    "rosters": [
+     {
+      "homeAway": "home",
+      "team": "AFC Bournemouth",
+      "formation": "4-2-3-1",
+      "n_roster": 20,
+      "roster_sample": [
+       {
+        "starter": true,
+        "jersey": "1",
+        "formationPlace": "1",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "G",
+        "athlete": {
+         "id": "289824",
+         "displayName": "Djordje Petrovic",
+         "fullName": "Djordje Petrovic"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       },
+       {
+        "starter": true,
+        "jersey": "14",
+        "formationPlace": "6",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "CD-L",
+        "athlete": {
+         "id": "346588",
+         "displayName": "Ant\u00f3nio Silva",
+         "fullName": "Ant\u00f3nio Silva"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "plays",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       },
+       {
+        "starter": true,
+        "jersey": "5",
+        "formationPlace": "5",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "CD-R",
+        "athlete": {
+         "id": "279155",
+         "displayName": "James Hill",
+         "fullName": "James Hill"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       }
+      ]
+     },
+     {
+      "homeAway": "away",
+      "team": "Liverpool",
+      "formation": "4-2-3-1",
+      "n_roster": 20,
+      "roster_sample": [
+       {
+        "starter": true,
+        "jersey": "1",
+        "formationPlace": "1",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "G",
+        "athlete": {
+         "id": "196876",
+         "displayName": "Alisson Becker",
+         "fullName": "Alisson Becker"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       },
+       {
+        "starter": true,
+        "jersey": "4",
+        "formationPlace": "6",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "CD-L",
+        "athlete": {
+         "id": "157892",
+         "displayName": "Virgil van Dijk",
+         "fullName": "Virgil van Dijk"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       },
+       {
+        "starter": true,
+        "jersey": "5",
+        "formationPlace": "5",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "CD-R",
+        "athlete": {
+         "id": "355980",
+         "displayName": "J\u00e9r\u00e9my Jacquet",
+         "fullName": "J\u00e9r\u00e9my Jacquet"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       }
+      ]
+     }
+    ],
+    "keyEvents_sample": [
+     "Kickoff",
+     "Halftime",
+     "Start 2nd Half",
+     "Yellow Card",
+     "Goal"
+    ],
+    "header_competitions_keys": [
+     "altGameNote",
+     "boxscoreAvailable",
+     "boxscoreMinutes",
+     "boxscoreSource",
+     "broadcasts",
+     "commentaryAvailable",
+     "competitors",
+     "conferenceCompetition",
+     "date",
+     "details",
+     "groups",
+     "id",
+     "isFinal",
+     "isThirdPlace",
+     "liveAvailable",
+     "neutralSite",
+     "notes",
+     "onWatchESPN",
+     "playByPlaySource",
+     "recent",
+     "shotMapAvailable",
+     "status",
+     "uid",
+     "wallclockAvailable"
+    ],
+    "gameInfo_keys": [
+     "attendance",
+     "officials",
+     "venue"
+    ],
+    "injuries_present": false,
+    "injuries_sample": "None",
+    "odds_present": true,
+    "odds_sample": "[{'provider': {'id': '100', 'name': 'DraftKings', 'priority': 1, 'logos': [{'href': 'https://a.espncdn.com/i/betting/Draftkings_Light.svg', 'rel': ['light']}, {'href': 'https://a.espncdn.com/i/betting/Draftkings_Dark.svg', 'rel': ['dark']}]}, 'details': 'LIV +115', 'overUnder': 2.5, 'spread': 0.5, '"
+   },
+   {
+    "league": "eng.1",
+    "event": "401879273",
+    "status": 200,
+    "top_keys": [
+     "article",
+     "boxscore",
+     "broadcasts",
+     "commentary",
+     "format",
+     "gameInfo",
+     "hasOdds",
+     "header",
+     "keyEvents",
+     "lastFiveGames",
+     "leaders",
+     "meta",
+     "news",
+     "odds",
+     "pickcenter",
+     "rosters",
+     "seasonseries",
+     "standings",
+     "videos",
+     "wallclockAvailable"
+    ],
+    "rosters": [
+     {
+      "homeAway": "home",
+      "team": "Leeds United",
+      "formation": "3-5-2",
+      "n_roster": 20,
+      "roster_sample": [
+       {
+        "starter": true,
+        "jersey": "1",
+        "formationPlace": "1",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "G",
+        "athlete": {
+         "id": "307118",
+         "displayName": "James Trafford",
+         "fullName": "James Trafford"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       },
+       {
+        "starter": true,
+        "jersey": "30",
+        "formationPlace": "5",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "CD",
+        "athlete": {
+         "id": "212237",
+         "displayName": "Nico Elvedi",
+         "fullName": "Nico Elvedi"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       },
+       {
+        "starter": true,
+        "jersey": "5",
+        "formationPlace": "4",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "CD-L",
+        "athlete": {
+         "id": "318390",
+         "displayName": "Tarik Muharemovic",
+         "fullName": "Tarik Muharemovic"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       }
+      ]
+     },
+     {
+      "homeAway": "away",
+      "team": "Crystal Palace",
+      "formation": "3-4-2-1",
+      "n_roster": 20,
+      "roster_sample": [
+       {
+        "starter": true,
+        "jersey": "44",
+        "formationPlace": "1",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "G",
+        "athlete": {
+         "id": "195738",
+         "displayName": "Walter Ben\u00edtez",
+         "fullName": "Walter Ben\u00edtez"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       },
+       {
+        "starter": true,
+        "jersey": "17",
+        "formationPlace": "5",
+        "subbedIn": false,
+        "subbedOut": true,
+        "position": "CD",
+        "athlete": {
+         "id": "238004",
+         "displayName": "Takehiro Tomiyasu",
+         "fullName": "Takehiro Tomiyasu"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "plays",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut",
+         "subbedOutFor"
+        ]
+       },
+       {
+        "starter": true,
+        "jersey": "6",
+        "formationPlace": "4",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "CD-L",
+        "athlete": {
+         "id": "386252",
+         "displayName": "Jaydee Canvot",
+         "fullName": "Jaydee Canvot"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       }
+      ]
+     }
+    ],
+    "keyEvents_sample": [
+     "Kickoff",
+     "Start Delay",
+     "Start Delay",
+     "End Delay",
+     "End Delay"
+    ],
+    "header_competitions_keys": [
+     "altGameNote",
+     "boxscoreAvailable",
+     "boxscoreMinutes",
+     "boxscoreSource",
+     "broadcasts",
+     "commentaryAvailable",
+     "competitors",
+     "conferenceCompetition",
+     "date",
+     "details",
+     "groups",
+     "id",
+     "isFinal",
+     "isThirdPlace",
+     "liveAvailable",
+     "neutralSite",
+     "notes",
+     "onWatchESPN",
+     "playByPlaySource",
+     "recent",
+     "shotMapAvailable",
+     "status",
+     "uid",
+     "wallclockAvailable"
+    ],
+    "gameInfo_keys": [
+     "attendance",
+     "officials",
+     "venue"
+    ],
+    "injuries_present": false,
+    "injuries_sample": "None",
+    "odds_present": true,
+    "odds_sample": "[{'provider': {'id': '100', 'name': 'DraftKings', 'priority': 1, 'logos': [{'href': 'https://a.espncdn.com/i/betting/Draftkings_Light.svg', 'rel': ['light']}, {'href': 'https://a.espncdn.com/i/betting/Draftkings_Dark.svg', 'rel': ['dark']}]}, 'details': 'LEE -155', 'overUnder': 2.5, 'spread': -0.5, "
+   },
+   {
+    "league": "esp.1",
+    "event": "401882861",
+    "status": 200,
+    "top_keys": [
+     "boxscore",
+     "broadcasts",
+     "commentary",
+     "format",
+     "gameInfo",
+     "hasOdds",
+     "header",
+     "keyEvents",
+     "lastFiveGames",
+     "leaders",
+     "meta",
+     "news",
+     "odds",
+     "pickcenter",
+     "rosters",
+     "seasonseries",
+     "standings",
+     "videos",
+     "wallclockAvailable"
+    ],
+    "rosters": [
+     {
+      "homeAway": "home",
+      "team": "Getafe",
+      "formation": "4-5-1",
+      "n_roster": 21,
+      "roster_sample": [
+       {
+        "starter": true,
+        "jersey": "13",
+        "formationPlace": "1",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "G",
+        "athlete": {
+         "id": "196339",
+         "displayName": "David Soria",
+         "fullName": "David Soria"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       },
+       {
+        "starter": true,
+        "jersey": "24",
+        "formationPlace": "6",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "CD-L",
+        "athlete": {
+         "id": "300111",
+         "displayName": "Zaid Romero",
+         "fullName": "Zaid Romero"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       },
+       {
+        "starter": true,
+        "jersey": "2",
+        "formationPlace": "5",
+        "subbedIn": false,
+        "subbedOut": true,
+        "position": "CD-R",
+        "athlete": {
+         "id": "181355",
+         "displayName": "Djen\u00e9",
+         "fullName": "Djen\u00e9"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "plays",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut",
+         "subbedOutFor"
+        ]
+       }
+      ]
+     },
+     {
+      "homeAway": "away",
+      "team": "M\u00e1laga",
+      "formation": "4-1-4-1",
+      "n_roster": 23,
+      "roster_sample": [
+       {
+        "starter": true,
+        "jersey": "1",
+        "formationPlace": "1",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "G",
+        "athlete": {
+         "id": "240624",
+         "displayName": "Alfonso Herrero",
+         "fullName": "Alfonso Herrero"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       },
+       {
+        "starter": true,
+        "jersey": "25",
+        "formationPlace": "6",
+        "subbedIn": false,
+        "subbedOut": true,
+        "position": "CD-L",
+        "athlete": {
+         "id": "262061",
+         "displayName": "Juan Berrocal",
+         "fullName": "Juan Berrocal"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "plays",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut",
+         "subbedOutFor"
+        ]
+       },
+       {
+        "starter": true,
+        "jersey": "15",
+        "formationPlace": "5",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "CD-R",
+        "athlete": {
+         "id": "319783",
+         "displayName": "\u00c1ngel Recio",
+         "fullName": "\u00c1ngel Recio"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       }
+      ]
+     }
+    ],
+    "keyEvents_sample": [
+     "Kickoff",
+     "Yellow Card",
+     "Start Delay",
+     "Start Delay",
+     "End Delay"
+    ],
+    "header_competitions_keys": [
+     "altGameNote",
+     "boxscoreAvailable",
+     "boxscoreMinutes",
+     "boxscoreSource",
+     "broadcasts",
+     "commentaryAvailable",
+     "competitors",
+     "conferenceCompetition",
+     "date",
+     "details",
+     "groups",
+     "id",
+     "isFinal",
+     "isThirdPlace",
+     "liveAvailable",
+     "neutralSite",
+     "notes",
+     "onWatchESPN",
+     "playByPlaySource",
+     "recent",
+     "shotMapAvailable",
+     "status",
+     "uid",
+     "wallclockAvailable"
+    ],
+    "gameInfo_keys": [
+     "attendance",
+     "officials",
+     "venue"
+    ],
+    "injuries_present": false,
+    "injuries_sample": "None",
+    "odds_present": true,
+    "odds_sample": "[{'provider': {'id': '100', 'name': 'DraftKings', 'priority': 1, 'logos': [{'href': 'https://a.espncdn.com/i/betting/Draftkings_Light.svg', 'rel': ['light']}, {'href': 'https://a.espncdn.com/i/betting/Draftkings_Dark.svg', 'rel': ['dark']}]}, 'details': 'GET -110', 'overUnder': 2.5, 'spread': -0.5, "
+   },
+   {
+    "league": "esp.1",
+    "event": "401882865",
+    "status": 200,
+    "top_keys": [
+     "article",
+     "boxscore",
+     "broadcasts",
+     "commentary",
+     "format",
+     "gameInfo",
+     "hasOdds",
+     "header",
+     "keyEvents",
+     "lastFiveGames",
+     "leaders",
+     "meta",
+     "news",
+     "odds",
+     "pickcenter",
+     "rosters",
+     "seasonseries",
+     "standings",
+     "videos",
+     "wallclockAvailable"
+    ],
+    "rosters": [
+     {
+      "homeAway": "home",
+      "team": "Atl\u00e9tico Madrid",
+      "formation": "4-4-2",
+      "n_roster": 23,
+      "roster_sample": [
+       {
+        "starter": true,
+        "jersey": "13",
+        "formationPlace": "1",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "G",
+        "athlete": {
+         "id": "149622",
+         "displayName": "Jan Oblak",
+         "fullName": "Jan Oblak"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       },
+       {
+        "starter": true,
+        "jersey": "17",
+        "formationPlace": "6",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "CD-L",
+        "athlete": {
+         "id": "257786",
+         "displayName": "D\u00e1vid Hancko",
+         "fullName": "D\u00e1vid Hancko"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       },
+       {
+        "starter": true,
+        "jersey": "21",
+        "formationPlace": "5",
+        "subbedIn": false,
+        "subbedOut": true,
+        "position": "CD-R",
+        "athlete": {
+         "id": "96970",
+         "displayName": "Cristian Romero",
+         "fullName": "Cristian Romero"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "plays",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut",
+         "subbedOutFor"
+        ]
+       }
+      ]
+     },
+     {
+      "homeAway": "away",
+      "team": "Real Madrid",
+      "formation": "4-2-3-1",
+      "n_roster": 23,
+      "roster_sample": [
+       {
+        "starter": true,
+        "jersey": "1",
+        "formationPlace": "1",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "G",
+        "athlete": {
+         "id": "134283",
+         "displayName": "Thibaut Courtois",
+         "fullName": "Thibaut Courtois"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       },
+       {
+        "starter": true,
+        "jersey": "4",
+        "formationPlace": "6",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "CD-L",
+        "athlete": {
+         "id": "356000",
+         "displayName": "Dean Huijsen",
+         "fullName": "Dean Huijsen"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "plays",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       },
+       {
+        "starter": true,
+        "jersey": "16",
+        "formationPlace": "5",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "CD-R",
+        "athlete": {
+         "id": "251634",
+         "displayName": "Ibrahima Konat\u00e9",
+         "fullName": "Ibrahima Konat\u00e9"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       }
+      ]
+     }
+    ],
+    "keyEvents_sample": [
+     "Kickoff",
+     "Yellow Card",
+     "Start Delay",
+     "Yellow Card",
+     "End Delay"
+    ],
+    "header_competitions_keys": [
+     "altGameNote",
+     "boxscoreAvailable",
+     "boxscoreMinutes",
+     "boxscoreSource",
+     "broadcasts",
+     "commentaryAvailable",
+     "competitors",
+     "conferenceCompetition",
+     "date",
+     "details",
+     "groups",
+     "id",
+     "isFinal",
+     "isThirdPlace",
+     "liveAvailable",
+     "neutralSite",
+     "notes",
+     "onWatchESPN",
+     "playByPlaySource",
+     "recent",
+     "shotMapAvailable",
+     "status",
+     "uid",
+     "wallclockAvailable"
+    ],
+    "gameInfo_keys": [
+     "attendance",
+     "officials",
+     "venue"
+    ],
+    "injuries_present": false,
+    "injuries_sample": "None",
+    "odds_present": true,
+    "odds_sample": "[{'provider': {'id': '100', 'name': 'DraftKings', 'priority': 1, 'logos': [{'href': 'https://a.espncdn.com/i/betting/Draftkings_Light.svg', 'rel': ['light']}, {'href': 'https://a.espncdn.com/i/betting/Draftkings_Dark.svg', 'rel': ['dark']}]}, 'details': 'RMA +100', 'overUnder': 3.5, 'spread': 0.5, '"
+   },
+   {
+    "league": "ger.1",
+    "event": "401884788",
+    "status": 200,
+    "top_keys": [
+     "boxscore",
+     "broadcasts",
+     "commentary",
+     "format",
+     "gameInfo",
+     "hasOdds",
+     "header",
+     "keyEvents",
+     "lastFiveGames",
+     "leaders",
+     "meta",
+     "news",
+     "odds",
+     "pickcenter",
+     "rosters",
+     "seasonseries",
+     "standings",
+     "videos",
+     "wallclockAvailable"
+    ],
+    "rosters": [
+     {
+      "homeAway": "home",
+      "team": "Bayer Leverkusen",
+      "formation": "4-2-3-1",
+      "n_roster": 20,
+      "roster_sample": [
+       {
+        "starter": true,
+        "jersey": "1",
+        "formationPlace": "1",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "G",
+        "athlete": {
+         "id": "177821",
+         "displayName": "Mark Flekken",
+         "fullName": "Mark Flekken"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       },
+       {
+        "starter": true,
+        "jersey": "2",
+        "formationPlace": "6",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "CD-L",
+        "athlete": {
+         "id": "249663",
+         "displayName": "Facundo Medina",
+         "fullName": "Facundo Medina"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       },
+       {
+        "starter": true,
+        "jersey": "12",
+        "formationPlace": "5",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "CD-R",
+        "athlete": {
+         "id": "257287",
+         "displayName": "Edmond Tapsoba",
+         "fullName": "Edmond Tapsoba"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "plays",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       }
+      ]
+     },
+     {
+      "homeAway": "away",
+      "team": "RB Leipzig",
+      "formation": "4-2-3-1",
+      "n_roster": 20,
+      "roster_sample": [
+       {
+        "starter": true,
+        "jersey": "26",
+        "formationPlace": "1",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "G",
+        "athlete": {
+         "id": "277377",
+         "displayName": "Maarten Vandevoordt",
+         "fullName": "Maarten Vandevoordt"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       },
+       {
+        "starter": true,
+        "jersey": "3",
+        "formationPlace": "6",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "CD-L",
+        "athlete": {
+         "id": "318316",
+         "displayName": "Maxime Est\u00e8ve",
+         "fullName": "Maxime Est\u00e8ve"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       },
+       {
+        "starter": true,
+        "jersey": "4",
+        "formationPlace": "5",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "CD-R",
+        "athlete": {
+         "id": "162162",
+         "displayName": "Willi Orb\u00e1n",
+         "fullName": "Willi Orb\u00e1n"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       }
+      ]
+     }
+    ],
+    "keyEvents_sample": [
+     "Kickoff",
+     "Yellow Card",
+     "Start Delay",
+     "Start Delay",
+     "End Delay"
+    ],
+    "header_competitions_keys": [
+     "altGameNote",
+     "boxscoreAvailable",
+     "boxscoreMinutes",
+     "boxscoreSource",
+     "broadcasts",
+     "commentaryAvailable",
+     "competitors",
+     "conferenceCompetition",
+     "date",
+     "details",
+     "groups",
+     "id",
+     "isFinal",
+     "isThirdPlace",
+     "liveAvailable",
+     "neutralSite",
+     "notes",
+     "onWatchESPN",
+     "playByPlaySource",
+     "recent",
+     "shotMapAvailable",
+     "status",
+     "uid",
+     "wallclockAvailable"
+    ],
+    "gameInfo_keys": [
+     "attendance",
+     "officials",
+     "venue"
+    ],
+    "injuries_present": false,
+    "injuries_sample": "None",
+    "odds_present": true,
+    "odds_sample": "[{'provider': {'id': '100', 'name': 'DraftKings', 'priority': 1, 'logos': [{'href': 'https://a.espncdn.com/i/betting/Draftkings_Light.svg', 'rel': ['light']}, {'href': 'https://a.espncdn.com/i/betting/Draftkings_Dark.svg', 'rel': ['dark']}]}, 'details': 'B04 -125', 'overUnder': 3.5, 'spread': -0.5, "
+   },
+   {
+    "league": "ger.1",
+    "event": "401884783",
+    "status": 200,
+    "top_keys": [
+     "boxscore",
+     "broadcasts",
+     "commentary",
+     "format",
+     "gameInfo",
+     "hasOdds",
+     "header",
+     "keyEvents",
+     "lastFiveGames",
+     "leaders",
+     "meta",
+     "news",
+     "odds",
+     "pickcenter",
+     "rosters",
+     "seasonseries",
+     "standings",
+     "videos",
+     "wallclockAvailable"
+    ],
+    "rosters": [
+     {
+      "homeAway": "home",
+      "team": "Schalke 04",
+      "formation": "3-4-2-1",
+      "n_roster": 20,
+      "roster_sample": [
+       {
+        "starter": true,
+        "jersey": "1",
+        "formationPlace": "1",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "G",
+        "athlete": {
+         "id": "165764",
+         "displayName": "Loris Karius",
+         "fullName": "Loris Karius"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       },
+       {
+        "starter": true,
+        "jersey": "25",
+        "formationPlace": "5",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "CD",
+        "athlete": {
+         "id": "220538",
+         "displayName": "Nikola Katic",
+         "fullName": "Nikola Katic"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       },
+       {
+        "starter": true,
+        "jersey": "4",
+        "formationPlace": "4",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "CD-L",
+        "athlete": {
+         "id": "246560",
+         "displayName": "Hasan Kurucay",
+         "fullName": "Hasan Kurucay"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "plays",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       }
+      ]
+     },
+     {
+      "homeAway": "away",
+      "team": "SV Elversberg",
+      "formation": "4-2-3-1",
+      "n_roster": 20,
+      "roster_sample": [
+       {
+        "starter": true,
+        "jersey": "20",
+        "formationPlace": "1",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "G",
+        "athlete": {
+         "id": "324021",
+         "displayName": "Nicolas Kristof",
+         "fullName": "Nicolas Kristof"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       },
+       {
+        "starter": true,
+        "jersey": "31",
+        "formationPlace": "6",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "CD-L",
+        "athlete": {
+         "id": "190167",
+         "displayName": "Maximilian Rohr",
+         "fullName": "Maximilian Rohr"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       },
+       {
+        "starter": true,
+        "jersey": "19",
+        "formationPlace": "5",
+        "subbedIn": false,
+        "subbedOut": false,
+        "position": "CD-R",
+        "athlete": {
+         "id": "341826",
+         "displayName": "Lukas Finn Pinckert",
+         "fullName": "Lukas Finn Pinckert"
+        },
+        "keys": [
+         "active",
+         "athlete",
+         "formationPlace",
+         "jersey",
+         "media",
+         "position",
+         "starter",
+         "stats",
+         "subbedIn",
+         "subbedOut"
+        ]
+       }
+      ]
+     }
+    ],
+    "keyEvents_sample": [
+     "Kickoff",
+     "Start Delay",
+     "Start Delay",
+     "End Delay",
+     "End Delay"
+    ],
+    "header_competitions_keys": [
+     "altGameNote",
+     "boxscoreAvailable",
+     "boxscoreMinutes",
+     "boxscoreSource",
+     "broadcasts",
+     "commentaryAvailable",
+     "competitors",
+     "conferenceCompetition",
+     "date",
+     "details",
+     "groups",
+     "id",
+     "isFinal",
+     "isThirdPlace",
+     "liveAvailable",
+     "neutralSite",
+     "notes",
+     "onWatchESPN",
+     "playByPlaySource",
+     "recent",
+     "shotMapAvailable",
+     "status",
+     "uid",
+     "wallclockAvailable"
+    ],
+    "gameInfo_keys": [
+     "attendance",
+     "officials",
+     "venue"
+    ],
+    "injuries_present": false,
+    "injuries_sample": "None",
+    "odds_present": true,
+    "odds_sample": "[{'provider': {'id': '100', 'name': 'DraftKings', 'priority': 1, 'logos': [{'href': 'https://a.espncdn.com/i/betting/Draftkings_Light.svg', 'rel': ['light']}, {'href': 'https://a.espncdn.com/i/betting/Draftkings_Dark.svg', 'rel': ['dark']}]}, 'details': 'S04 -120', 'overUnder': 3.5, 'spread': -0.5, "
+   }
+  ],
   "teams_eng1": {
-   "status": 0,
-   "n": 0,
-   "sample": []
+   "status": 200,
+   "n": 20,
+   "sample": [
+    {
+     "id": "349",
+     "abbreviation": "BOU",
+     "displayName": "AFC Bournemouth",
+     "shortDisplayName": "Bournemouth",
+     "location": "AFC Bournemouth",
+     "name": "AFC Bournemouth"
+    },
+    {
+     "id": "359",
+     "abbreviation": "ARS",
+     "displayName": "Arsenal",
+     "shortDisplayName": "Arsenal",
+     "location": "Arsenal",
+     "name": "Arsenal"
+    },
+    {
+     "id": "362",
+     "abbreviation": "AVL",
+     "displayName": "Aston Villa",
+     "shortDisplayName": "Aston Villa",
+     "location": "Aston Villa",
+     "name": "Aston Villa"
+    },
+    {
+     "id": "337",
+     "abbreviation": "BRE",
+     "displayName": "Brentford",
+     "shortDisplayName": "Brentford",
+     "location": "Brentford",
+     "name": "Brentford"
+    },
+    {
+     "id": "331",
+     "abbreviation": "BHA",
+     "displayName": "Brighton & Hove Albion",
+     "shortDisplayName": "Brighton",
+     "location": "Brighton & Hove Albion",
+     "name": "Brighton & Hove Albion"
+    },
+    {
+     "id": "363",
+     "abbreviation": "CHE",
+     "displayName": "Chelsea",
+     "shortDisplayName": "Chelsea",
+     "location": "Chelsea",
+     "name": "Chelsea"
+    },
+    {
+     "id": "388",
+     "abbreviation": "COV",
+     "displayName": "Coventry City",
+     "shortDisplayName": "Coventry",
+     "location": "Coventry City",
+     "name": "Coventry City"
+    },
+    {
+     "id": "384",
+     "abbreviation": "CRY",
+     "displayName": "Crystal Palace",
+     "shortDisplayName": "C Palace",
+     "location": "Crystal Palace",
+     "name": "Crystal Palace"
+    },
+    {
+     "id": "368",
+     "abbreviation": "EVE",
+     "displayName": "Everton",
+     "shortDisplayName": "Everton",
+     "location": "Everton",
+     "name": "Everton"
+    },
+    {
+     "id": "370",
+     "abbreviation": "FUL",
+     "displayName": "Fulham",
+     "shortDisplayName": "Fulham",
+     "location": "Fulham",
+     "name": "Fulham"
+    },
+    {
+     "id": "306",
+     "abbreviation": "HUL",
+     "displayName": "Hull City",
+     "shortDisplayName": "Hull",
+     "location": "Hull City",
+     "name": "Hull City"
+    },
+    {
+     "id": "373",
+     "abbreviation": "IPS",
+     "displayName": "Ipswich Town",
+     "shortDisplayName": "Ipswich",
+     "location": "Ipswich Town",
+     "name": "Ipswich Town"
+    },
+    {
+     "id": "357",
+     "abbreviation": "LEE",
+     "displayName": "Leeds United",
+     "shortDisplayName": "Leeds",
+     "location": "Leeds United",
+     "name": "Leeds United"
+    },
+    {
+     "id": "364",
+     "abbreviation": "LIV",
+     "displayName": "Liverpool",
+     "shortDisplayName": "Liverpool",
+     "location": "Liverpool",
+     "name": "Liverpool"
+    },
+    {
+     "id": "382",
+     "abbreviation": "MNC",
+     "displayName": "Manchester City",
+     "shortDisplayName": "Man City",
+     "location": "Manchester City",
+     "name": "Manchester City"
+    },
+    {
+     "id": "360",
+     "abbreviation": "MAN",
+     "displayName": "Manchester United",
+     "shortDisplayName": "Man United",
+     "location": "Manchester United",
+     "name": "Manchester United"
+    },
+    {
+     "id": "361",
+     "abbreviation": "NEW",
+     "displayName": "Newcastle United",
+     "shortDisplayName": "Newcastle",
+     "location": "Newcastle United",
+     "name": "Newcastle United"
+    },
+    {
+     "id": "393",
+     "abbreviation": "NFO",
+     "displayName": "Nottingham Forest",
+     "shortDisplayName": "Nottm Forest",
+     "location": "Nottingham Forest",
+     "name": "Nottingham Forest"
+    },
+    {
+     "id": "366",
+     "abbreviation": "SUN",
+     "displayName": "Sunderland",
+     "shortDisplayName": "Sunderland",
+     "location": "Sunderland",
+     "name": "Sunderland"
+    },
+    {
+     "id": "367",
+     "abbreviation": "TOT",
+     "displayName": "Tottenham Hotspur",
+     "shortDisplayName": "Spurs",
+     "location": "Tottenham Hotspur",
+     "name": "Tottenham Hotspur"
+    }
+   ]
   },
   "teams_ucl": {
-   "status": 0,
-   "n": 0,
-   "sample": []
+   "status": 200,
+   "n": 36,
+   "sample": [
+    {
+     "id": "887",
+     "abbreviation": "AEK",
+     "displayName": "AEK Athens",
+     "location": "AEK Athens"
+    },
+    {
+     "id": "104",
+     "abbreviation": "ROMA",
+     "displayName": "AS Roma",
+     "location": "AS Roma"
+    },
+    {
+     "id": "359",
+     "abbreviation": "ARS",
+     "displayName": "Arsenal",
+     "location": "Arsenal"
+    },
+    {
+     "id": "362",
+     "abbreviation": "AVL",
+     "displayName": "Aston Villa",
+     "location": "Aston Villa"
+    },
+    {
+     "id": "1068",
+     "abbreviation": "ATM",
+     "displayName": "Atl\u00e9tico Madrid",
+     "location": "Atl\u00e9tico Madrid"
+    },
+    {
+     "id": "83",
+     "abbreviation": "BAR",
+     "displayName": "Barcelona",
+     "location": "Barcelona"
+    },
+    {
+     "id": "132",
+     "abbreviation": "MUN",
+     "displayName": "Bayern Munich",
+     "location": "Bayern Munich"
+    },
+    {
+     "id": "2980",
+     "abbreviation": "BODO",
+     "displayName": "Bodo/Glimt",
+     "location": "Bodo/Glimt"
+    },
+    {
+     "id": "124",
+     "abbreviation": "DOR",
+     "displayName": "Borussia Dortmund",
+     "location": "Borussia Dortmund"
+    },
+    {
+     "id": "570",
+     "abbreviation": "BRU",
+     "displayName": "Club Brugge",
+     "location": "Club Brugge"
+    },
+    {
+     "id": "2572",
+     "abbreviation": "COMO",
+     "displayName": "Como",
+     "location": "Como"
+    },
+    {
+     "id": "437",
+     "abbreviation": "FCP",
+     "displayName": "FC Porto",
+     "location": "FC Porto"
+    },
+    {
+     "id": "436",
+     "abbreviation": "FEN",
+     "displayName": "Fenerbahce",
+     "location": "Fenerbahce"
+    },
+    {
+     "id": "142",
+     "abbreviation": "FEY",
+     "displayName": "Feyenoord Rotterdam",
+     "location": "Feyenoord Rotterdam"
+    },
+    {
+     "id": "432",
+     "abbreviation": "GAL",
+     "displayName": "Galatasaray",
+     "location": "Galatasaray"
+    },
+    {
+     "id": "110",
+     "abbreviation": "INT",
+     "displayName": "Internazionale",
+     "location": "Internazionale"
+    },
+    {
+     "id": "4411",
+     "abbreviation": "LAS",
+     "displayName": "LASK Linz",
+     "location": "LASK Linz"
+    },
+    {
+     "id": "175",
+     "abbreviation": "RCL",
+     "displayName": "Lens",
+     "location": "Lens"
+    },
+    {
+     "id": "166",
+     "abbreviation": "LILL",
+     "displayName": "Lille",
+     "location": "Lille"
+    },
+    {
+     "id": "364",
+     "abbreviation": "LIV",
+     "displayName": "Liverpool",
+     "location": "Liverpool"
+    },
+    {
+     "id": "382",
+     "abbreviation": "MNC",
+     "displayName": "Manchester City",
+     "location": "Manchester City"
+    },
+    {
+     "id": "360",
+     "abbreviation": "MAN",
+     "displayName": "Manchester United",
+     "location": "Manchester United"
+    },
+    {
+     "id": "114",
+     "abbreviation": "NAP",
+     "displayName": "Napoli",
+     "location": "Napoli"
+    },
+    {
+     "id": "148",
+     "abbreviation": "PSV",
+     "displayName": "PSV Eindhoven",
+     "location": "PSV Eindhoven"
+    },
+    {
+     "id": "160",
+     "abbreviation": "PSG",
+     "displayName": "Paris Saint-Germain",
+     "location": "Paris Saint-Germain"
+    },
+    {
+     "id": "11420",
+     "abbreviation": "RBL",
+     "displayName": "RB Leipzig",
+     "location": "RB Leipzig"
+    },
+    {
+     "id": "244",
+     "abbreviation": "BET",
+     "displayName": "Real Betis",
+     "location": "Real Betis"
+    },
+    {
+     "id": "86",
+     "abbreviation": "RMA",
+     "displayName": "Real Madrid",
+     "location": "Real Madrid"
+    },
+    {
+     "id": "21922",
+     "abbreviation": "SAB",
+     "displayName": "Sabah FK",
+     "location": "Sabah FK"
+    },
+    {
+     "id": "493",
+     "abbreviation": "SHK",
+     "displayName": "Shakhtar Donetsk",
+     "location": "Shakhtar Donetsk"
+    },
+    {
+     "id": "494",
+     "abbreviation": "SLP",
+     "displayName": "Slavia Prague",
+     "location": "Slavia Prague"
+    },
+    {
+     "id": "521",
+     "abbreviation": "SLB",
+     "displayName": "Slovan Bratislava",
+     "location": "Slovan Bratislava"
+    },
+    {
+     "id": "2250",
+     "abbreviation": "SCP",
+     "displayName": "Sporting CP",
+     "location": "Sporting CP"
+    },
+    {
+     "id": "134",
+     "abbreviation": "VFB",
+     "displayName": "VfB Stuttgart",
+     "location": "VfB Stuttgart"
+    },
+    {
+     "id": "510",
+     "abbreviation": "VIK",
+     "displayName": "Viking FK",
+     "location": "Viking FK"
+    },
+    {
+     "id": "102",
+     "abbreviation": "VIL",
+     "displayName": "Villarreal",
+     "location": "Villarreal"
+    }
+   ]
   }
  },
  "xg": {
   "understat_league_page": {
    "url": "https://understat.com/league/EPL/2025",
-   "status": 0,
-   "bytes": null,
-   "ms": null,
-   "error": "ProxyError: 403 Forbidden"
+   "status": 200,
+   "bytes": 18698,
+   "ms": 765,
+   "error": null,
+   "has_embedded_json": true,
+   "snippet": "<!DOCTYPE html> <html lang=\"en\">     <head> \t\t<base href=\"https://understat.com/\"> \t\t<title>EPL xG Table and Scorers for the 2025/2026 season | Understat.com</title>         <meta charset=\"UTF-8\" /> \t",
+   "mentions_xg": true
   },
   "understat_match_page": {
    "url": "https://understat.com/match/26631",
-   "status": 0,
-   "bytes": null,
-   "ms": null,
-   "error": "ProxyError: 403 Forbidden"
+   "status": 200,
+   "bytes": 28994,
+   "ms": 203,
+   "error": null,
+   "has_embedded_json": true,
+   "snippet": "<!DOCTYPE html> <html lang=\"en\">     <head> \t\t<base href=\"https://understat.com/\"> \t\t<title>Manchester United 0 - 3 Liverpool (September 01 2024) | EPL | 2024/2025 | xG | Understat.com</title>        ",
+   "mentions_xg": true
   },
   "fbref_epl": {
    "url": "https://fbref.com/en/comps/9/Premier-League-Stats",
-   "status": 0,
-   "bytes": null,
-   "ms": null,
-   "error": "ProxyError: 403 Forbidden"
+   "status": 403,
+   "bytes": 5688,
+   "ms": 95,
+   "error": null
   },
   "football_data_couk_E0_2526_xg_columns": {
    "url": "https://www.football-data.co.uk/mmz4281/2526/E0.csv",
-   "status": 0,
-   "bytes": null,
-   "ms": null,
-   "error": "ProxyError: 403 Forbidden"
+   "status": 200,
+   "bytes": 203438,
+   "ms": 1800,
+   "error": null,
+   "header": "\ufeffDiv,Date,Time,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HTHG,HTAG,HTR,Referee,HS,AS,HST,AST,HF,AF,HC,AC,HY,AY,HR,AR,B365H,B365D,B365A,BFDH,BFDD,BFDA,BMGMH,BMGMD,BMGMA,BVH,BVD,BVA,BWH,BWD,BWA,CLH,CLD,CLA,LBH,LBD,LBA,PSH,PSD,PSA,MaxH,MaxD,MaxA,AvgH,AvgD,AvgA,BFEH,BFED,BFEA,B365>2.5,B365<2.5,P>2.5,P<2.5,Max>2.5",
+   "has_xg_cols": false,
+   "rows": 0
   },
   "football_data_couk_E0_2425_xg_columns": {
    "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
-   "status": 0,
-   "bytes": null,
-   "ms": null,
-   "error": "ProxyError: 403 Forbidden"
+   "status": 200,
+   "bytes": 197110,
+   "ms": 460,
+   "error": null,
+   "header": "\ufeffDiv,Date,Time,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HTHG,HTAG,HTR,Referee,HS,AS,HST,AST,HF,AF,HC,AC,HY,AY,HR,AR,B365H,B365D,B365A,BWH,BWD,BWA,BFH,BFD,BFA,PSH,PSD,PSA,WHH,WHD,WHA,1XBH,1XBD,1XBA,MaxH,MaxD,MaxA,AvgH,AvgD,AvgA,BFEH,BFED,BFEA,B365>2.5,B365<2.5,P>2.5,P<2.5,Max>2.5,Max<2.5,Avg>2.5,Avg<2.5,BFE>2",
+   "has_xg_cols": false,
+   "rows": 0
   },
   "football_data_couk_E0_2324_xg_columns": {
    "url": "https://www.football-data.co.uk/mmz4281/2324/E0.csv",
-   "status": 0,
-   "bytes": null,
-   "ms": null,
-   "error": "ProxyError: 403 Forbidden"
+   "status": 200,
+   "bytes": 172196,
+   "ms": 349,
+   "error": null,
+   "header": "Div,Date,Time,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HTHG,HTAG,HTR,Referee,HS,AS,HST,AST,HF,AF,HC,AC,HY,AY,HR,AR,B365H,B365D,B365A,BWH,BWD,BWA,IWH,IWD,IWA,PSH,PSD,PSA,WHH,WHD,WHA,VCH,VCD,VCA,MaxH,MaxD,MaxA,AvgH,AvgD,AvgA,B365>2.5,B365<2.5,P>2.5,P<2.5,Max>2.5,Max<2.5,Avg>2.5,Avg<2.5,AHh,B365AHH,B365AHA,PAHH",
+   "has_xg_cols": false,
+   "rows": 0
   },
   "football_data_couk_SP1_2526": {
    "url": "https://www.football-data.co.uk/mmz4281/2526/SP1.csv",
-   "status": 0,
-   "bytes": null,
-   "ms": null,
-   "error": "ProxyError: 403 Forbidden"
+   "status": 200,
+   "bytes": 197653,
+   "ms": 357,
+   "error": null,
+   "header": "\ufeffDiv,Date,Time,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HTHG,HTAG,HTR,HS,AS,HST,AST,HF,AF,HC,AC,HY,AY,HR,AR,B365H,B365D,B365A,BFDH,BFDD,BFDA,BMGMH,BMGMD,BMGMA,BVH,BVD,BVA,BWH,BWD,BWA,CLH,CLD,CLA,LBH,LBD,LBA,PSH,PSD,PSA,MaxH,MaxD,MaxA,AvgH,AvgD,AvgA,BFEH,BFED,BFEA,B365>2.5,B365<2.5,P>2.5,P<2.5,Max>2.5,Max<2.5",
+   "has_xg_cols": false,
+   "rows": 0
   },
   "football_data_couk_D1_2526": {
    "url": "https://www.football-data.co.uk/mmz4281/2526/D1.csv",
-   "status": 0,
-   "bytes": null,
-   "ms": null,
-   "error": "ProxyError: 403 Forbidden"
+   "status": 200,
+   "bytes": 159944,
+   "ms": 353,
+   "error": null,
+   "header": "\ufeffDiv,Date,Time,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HTHG,HTAG,HTR,HS,AS,HST,AST,HF,AF,HC,AC,HY,AY,HR,AR,B365H,B365D,B365A,BFDH,BFDD,BFDA,BMGMH,BMGMD,BMGMA,BVH,BVD,BVA,BWH,BWD,BWA,CLH,CLD,CLA,LBH,LBD,LBA,PSH,PSD,PSA,MaxH,MaxD,MaxA,AvgH,AvgD,AvgA,BFEH,BFED,BFEA,B365>2.5,B365<2.5,P>2.5,P<2.5,Max>2.5,Max<2.5",
+   "has_xg_cols": false,
+   "rows": 0
   },
   "football_data_couk_I1_2526": {
    "url": "https://www.football-data.co.uk/mmz4281/2526/I1.csv",
-   "status": 0,
-   "bytes": null,
-   "ms": null,
-   "error": "ProxyError: 403 Forbidden"
+   "status": 200,
+   "bytes": 196217,
+   "ms": 359,
+   "error": null,
+   "header": "\ufeffDiv,Date,Time,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HTHG,HTAG,HTR,HS,AS,HST,AST,HF,AF,HC,AC,HY,AY,HR,AR,B365H,B365D,B365A,BFDH,BFDD,BFDA,BMGMH,BMGMD,BMGMA,BVH,BVD,BVA,BWH,BWD,BWA,CLH,CLD,CLA,LBH,LBD,LBA,PSH,PSD,PSA,MaxH,MaxD,MaxA,AvgH,AvgD,AvgA,BFEH,BFED,BFEA,B365>2.5,B365<2.5,P>2.5,P<2.5,Max>2.5,Max<2.5",
+   "has_xg_cols": false,
+   "rows": 0
   },
   "football_data_couk_F1_2526": {
    "url": "https://www.football-data.co.uk/mmz4281/2526/F1.csv",
-   "status": 0,
-   "bytes": null,
-   "ms": null,
-   "error": "ProxyError: 403 Forbidden"
+   "status": 200,
+   "bytes": 158471,
+   "ms": 347,
+   "error": null,
+   "header": "\ufeffDiv,Date,Time,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HTHG,HTAG,HTR,HS,AS,HST,AST,HF,AF,HC,AC,HY,AY,HR,AR,B365H,B365D,B365A,BFDH,BFDD,BFDA,BMGMH,BMGMD,BMGMA,BVH,BVD,BVA,BWH,BWD,BWA,CLH,CLD,CLA,LBH,LBD,LBA,PSH,PSD,PSA,MaxH,MaxD,MaxA,AvgH,AvgD,AvgA,BFEH,BFED,BFEA,B365>2.5,B365<2.5,P>2.5,P<2.5,Max>2.5,Max<2.5",
+   "has_xg_cols": false,
+   "rows": 0
   },
   "football_data_couk_E0_2627": {
    "url": "https://www.football-data.co.uk/mmz4281/2627/E0.csv",
-   "status": 0,
-   "bytes": null,
-   "ms": null,
-   "error": "ProxyError: 403 Forbidden"
+   "status": 200,
+   "bytes": 24803,
+   "ms": 305,
+   "error": null,
+   "header": "\ufeffDiv,Date,Time,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HTHG,HTAG,HTR,Referee,HxG,AxG,HS,AS,HST,AST,HF,AF,HC,AC,HY,AY,HR,AR,B365H,B365D,B365A,BFDH,BFDD,BFDA,BVH,BVD,BVA,BWH,BWD,BWA,PPH,PPD,PPA,SKBH,SKBD,SKBA,MaxH,MaxD,MaxA,AvgH,AvgD,AvgA,BFEH,BFED,BFEA,B365>2.5,B365<2.5,Max>2.5,Max<2.5,Avg>2.5,Avg<2.5,BFE>2.",
+   "has_xg_cols": true,
+   "rows": 0
   },
   "statsbomb_open_data_competitions": {
    "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/competitions.json",
    "status": 200,
    "bytes": 34887,
-   "ms": 542,
+   "ms": 124,
    "error": null,
    "keys_or_len": "None"
   },
   "fotmob_match_details": {
    "url": "https://www.fotmob.com/api/matchDetails?matchId=4506263",
-   "status": 0,
-   "bytes": null,
-   "ms": null,
-   "error": "ProxyError: 403 Forbidden"
+   "status": 404,
+   "bytes": 206355,
+   "ms": 594,
+   "error": null
   },
   "sofascore_xg": {
    "url": "https://api.sofascore.com/api/v1/event/12436870/statistics",
-   "status": 0,
-   "bytes": null,
-   "ms": null,
-   "error": "ProxyError: 403 Forbidden"
+   "status": 403,
+   "bytes": 48,
+   "ms": 106,
+   "error": null
   },
   "whoscored": {
    "url": "https://www.whoscored.com/Regions/252/Tournaments/2/England-Premier-League",
-   "status": 0,
-   "bytes": null,
-   "ms": null,
-   "error": "ProxyError: 403 Forbidden"
+   "status": 403,
+   "bytes": 4547,
+   "ms": 129,
+   "error": null
   },
   "kaggle_style_github_understat_mirror_1": {
    "url": "https://raw.githubusercontent.com/danielvicente/understat-data/main/README.md",
    "status": 404,
    "bytes": 14,
-   "ms": 50,
+   "ms": 77,
    "error": null
   },
   "opta_analyst_xg_page": {
    "url": "https://theanalyst.com/eu/2025/08/premier-league-xg-table",
-   "status": 0,
-   "bytes": null,
-   "ms": null,
-   "error": "ProxyError: 403 Forbidden"
+   "status": 403,
+   "bytes": 560,
+   "ms": 73,
+   "error": null
   },
   "fivethirtyeight_spi_archive": {
    "url": "https://projects.fivethirtyeight.com/soccer-api/club/spi_matches.csv",
-   "status": 0,
-   "bytes": null,
-   "ms": null,
-   "error": "ProxyError: 403 Forbidden"
+   "status": 200,
+   "bytes": 305875,
+   "ms": 479,
+   "error": null,
+   "header": "",
+   "has_xg_cols": false,
+   "rows": 6
   },
   "footystats_free": {
    "url": "https://footystats.org/api/league-matches?key=example",
-   "status": 0,
-   "bytes": null,
-   "ms": null,
-   "error": "ProxyError: 403 Forbidden"
+   "status": 403,
+   "bytes": 5630,
+   "ms": 73,
+   "error": null
   },
   "api_football_free": {
    "url": "https://v3.football.api-sports.io/status",
-   "status": 0,
-   "bytes": null,
-   "ms": null,
-   "error": "ProxyError: 403 Forbidden"
+   "status": 403,
+   "bytes": 219,
+   "ms": 90,
+   "error": null
   }
  }
 }
