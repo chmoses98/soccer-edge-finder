@@ -1055,8 +1055,9 @@ def run(cfg: Config, cache: Cache, *, verbose: bool = True) -> dict:
             cfg.strength_v2 if cfg.model_version == "dc_laplace_v2" else cfg.strength
         ).__dict__,
         "config": {
-            **{k: v for k, v in cfg.__dict__.items() if k != "strength"},
+            **{k: v for k, v in cfg.__dict__.items() if k not in ("strength", "strength_v2")},
             "strength": cfg.strength.__dict__,
+            "strength_v2": cfg.strength_v2.__dict__,
             "k_grid": list(K_GRID),
         },
         "elapsed_s": round(time.time() - t0, 1),

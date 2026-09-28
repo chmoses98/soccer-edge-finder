@@ -63,6 +63,17 @@ def _settle_pnl(
     return pnl, stake
 
 
+def _liquidity(v: Any) -> float:
+    """Depth field of an archived record: a number, null, or the string "None" (records written
+    before 2026-09-28 stringified missing depth); anything unparsable counts as no depth."""
+    if v is None or v in ("None", ""):
+        return 0.0
+    try:
+        return float(v)
+    except (TypeError, ValueError):
+        return 0.0
+
+
 def replay(
     records: list[dict[str, Any]],
     settlements: dict[str, dict[str, Any]],
@@ -97,7 +108,7 @@ def replay(
                 if not edge:
                     continue
                 liq_key = "yes_ask_size" if side == "yes" else "no_ask_size"
-                liq = float((rec.get("market") or {}).get(liq_key) or 0)
+                liq = _liquidity((rec.get("market") or {}).get(liq_key))
                 for cell in (cells[key], total):
                     cell.n_candidates += 1
                 ok, reasons = pol.selects(edge, family=fam, horizon=horizon, liquidity=liq)

@@ -115,3 +115,17 @@ Result files `data/research/lineup_oracle_v1.json` and `data/research/xg_history
 `lineup-backfill.yml` and `research-xg.yml` (both need network reachability the development container does
 not have). Their status at handoff is recorded in docs/HANDOFF.md; until the files exist both studies are
 `NOT_EVALUATED`.
+
+## intl_hier_v1 one-time holdout (phase 17)
+
+`data/research/intl_hier_selection.json` / `intl_hier_holdout.json`; full write-up in
+docs/INTERNATIONAL_MODEL.md. Holdout 2022-2026 (n=4,563): log loss 0.8671 vs pool 0.9716 vs Elo 0.8739;
+paired CIs below zero against both; 3 of 8 pre-registered criteria FAIL (friendlies vs Elo, per-match
+heavy-favourite pricing at Elo gap >= 400, neutral-site goal calibration) -> not promoted, shadows gated.
+
+## Structural model error per family (phase 15)
+
+`data/research/sigma_struct_v1.json` (docs/UNCERTAINTY_MODEL.md): walk-forward sd of logit(model) -
+logit(Bet365 de-vigged) is ~0.33 (1X2, home/away 0.37, draw 0.18) and ~0.27 (O/U 2.5) in logit units,
+~0.065 probability points, nearly identical across dc_laplace_v1 and v2 variants. Used only by edge_v2,
+where the model weight is 0 today.

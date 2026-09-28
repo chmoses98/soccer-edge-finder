@@ -823,6 +823,10 @@ def temporal_guard_for_inputs(inputs: RunInputs, as_of: datetime) -> TemporalGua
     return g
 
 
+def _opt_str(v: Any) -> str | None:
+    return None if v is None else str(v)
+
+
 def _contract_record(
     w: ContractWork,
     run_id: str,
@@ -877,9 +881,12 @@ def _contract_record(
             "yes_ask": str(w.market.yes_ask),
             "no_bid": str(w.market.no_bid),
             "no_ask": str(w.market.no_ask),
-            "yes_bid_size": str(w.market.yes_bid_size),  # depth behind the NO ask (1 - yes_bid)
-            "yes_ask_size": str(w.market.yes_ask_size),
-            "no_ask_size": str(w.market.no_ask_size),
+            # depth fields are null when the book has none (older records carry the string "None")
+            "yes_bid_size": _opt_str(
+                w.market.yes_bid_size
+            ),  # depth behind the NO ask (1 - yes_bid)
+            "yes_ask_size": _opt_str(w.market.yes_ask_size),
+            "no_ask_size": _opt_str(w.market.no_ask_size),
             "status": w.market.status,
             "price_unit": "dollars",
         },
