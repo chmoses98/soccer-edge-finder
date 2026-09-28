@@ -24,6 +24,7 @@ soccer run --synthetic-kalshi --window 340 --no-freshness-gate   # offline demo 
 soccer discover --out data/catalog/latest_catalog.json  # exhaustive Kalshi soccer discovery only
 soccer capture --out-dir data/snapshots                 # discovery + change-suppressed quote snapshots
 soccer export-schemas                                   # app-contract JSON Schemas -> docs/schemas
+soccer archive verify --archive-dir <data-archive tree>  # evidence integrity; non-zero on corruption
 ```
 
 Only public Kalshi endpoints are used. No credentials are required for anything in this repo.
@@ -41,6 +42,7 @@ Only public Kalshi endpoints are used. No credentials are required for anything 
 | Evaluation and authority | `docs/CALIBRATION.md`, `docs/RESEARCH_AUTHORITY.md` |
 | Operator command | `docs/RUN_SOCCER.md` |
 | App contract (versioned JSON) | `docs/APP_CONTRACT.md`, `docs/schemas/` |
+| Archive integrity (manifest, verify, recovery) | `docs/ARCHIVE_INTEGRITY.md` |
 | Settlement, storage, limitations, roadmap, handoff | `docs/SETTLEMENT.md`, `docs/STORAGE_STRATEGY.md`, `docs/KNOWN_LIMITATIONS.md`, `docs/ROADMAP.md`, `docs/HANDOFF.md` |
 
 ## Repository layout

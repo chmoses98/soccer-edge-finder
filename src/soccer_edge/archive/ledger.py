@@ -8,7 +8,8 @@ Rules
 * Every record carries: input snapshot hash, model version + parameter hash, world/sim hashes,
   data_as_of, market_as_of, lineup state, probability + uncertainty outputs, market snapshot,
   recommendation flag and exclusion reason.
-* Files are JSONL, one directory per UTC day; a manifest lists file hashes for integrity checks.
+* Files are JSONL, one directory per UTC day. `archive/manifest.py` records byte-prefix hashes and one row per
+  record so that deletion and rewriting are detected (`soccer archive verify`).
 """
 
 from __future__ import annotations
@@ -60,6 +61,11 @@ class PredictionLedger:
         rid = self.record_id(record)
         idx = self._index()
         if rid in idx:
+            if not (self.root / idx[rid]).exists():
+                # A restored ledger may carry the archive's index without its day files (the run-soccer
+                # workflow restores only index.json). The id is a content hash of the body, so an identical
+                # id means an identical record: nothing to write, and nothing that could conflict.
+                return rid, WriteStatus.NO_OP
             existing = self.get(rid)
             if existing is None:
                 raise ArchiveImmutabilityError(f"index lists {rid} but file is missing")

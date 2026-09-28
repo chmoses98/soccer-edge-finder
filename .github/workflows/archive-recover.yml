@@ -1,0 +1,71 @@
+name: archive-recover
+
+# One-time recovery of archive rows that a pre-S1 publish overwrote (docs/PRELAUNCH_AUDIT.md B1, §O1),
+# and manifest bootstrap. Dry run by default: the report is uploaded as an artifact and nothing is pushed.
+# With apply=true the recovered rows are appended to the archive tip (never overwriting a surviving line),
+# a recovery manifest is written under recovery/, the archive manifest is created/extended and verified,
+# and the result is published through the same append-only publisher every other writer uses.
+
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: "append the recoverable rows and push (default: dry run only)"
+        type: boolean
+        default: false
+      init_manifest:
+        description: "bootstrap manifest/ when none exists yet"
+        type: boolean
+        default: false
+
+concurrency:
+  group: data-writer-archive-run
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e .
+      - name: Fetch full archive history
+        run: |
+          git clone --quiet --branch data-archive "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" archive
+          echo "archive tip: $(git -C archive rev-parse HEAD) ($(git -C archive rev-list --count HEAD) commits)"
+      - name: Dry run
+        run: |
+          mkdir -p work
+          python -m soccer_edge.cli archive recover --repo archive --branch data-archive --archive-dir archive --report work/recovery_dry_run.json | tee work/recover.log
+      - name: Apply
+        if: ${{ inputs.apply }}
+        id: apply
+        run: |
+          python -m soccer_edge.cli archive recover --repo archive --branch data-archive --archive-dir archive --apply --report work/recovery_report.json | tee -a work/recover.log
+          if [ "${{ inputs.init_manifest }}" = "true" ]; then python -m soccer_edge.cli archive manifest --archive-dir archive --init; fi
+          python -m soccer_edge.cli archive manifest --archive-dir archive --if-present
+          python -m soccer_edge.cli archive verify --archive-dir archive --allow-missing-manifest --out work/verify.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: archive-recover-${{ github.run_id }}
+          path: work/
+          retention-days: 90
+      - name: Publish
+        if: ${{ inputs.apply && steps.apply.outcome == 'success' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          rm -rf archive/.git
+          scripts/archive_publish.sh archive . "archive: recover overwritten rows + manifest ($(date -u +%Y-%m-%dT%H:%MZ))"
+      - name: Summary
+        if: always()
+        run: |
+          { echo '```'; cat work/recover.log; echo '```'; } >> "$GITHUB_STEP_SUMMARY"

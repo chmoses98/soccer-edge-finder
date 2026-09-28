@@ -21,3 +21,8 @@ before push. A size guard (files > 45 MB fail CI) is on the roadmap for the arch
 
 Repository size target: `main` < 20 MB indefinitely; `data-archive` < 500 MB per season with
 monthly compaction of snapshots into parquet if needed.
+
+
+## Integrity (added 2026-09-28)
+
+Every archive publish extends and verifies `manifest/` (byte-prefix hashes per file, one row per evidence record) and aborts on any missing, rewritten or dangling record; `ci.yml` verifies the archive tip on every push. The one-time recovery of the rows overwritten before audit fix S1 is `archive-recover.yml`. See `docs/ARCHIVE_INTEGRITY.md`. The 45 MB size guard is implemented in `scripts/archive_publish.sh`.

@@ -42,6 +42,15 @@ SRC_ABS="$(cd "$SRC" && pwd)"
   fi
 done
 cd "$WORK"
+# Integrity: extend the manifest over the merged tree and verify it. A manifest that does not verify means
+# the archive lost or changed evidence; the publish is aborted rather than committing on top of corruption.
+# Before the manifest is bootstrapped (archive-recover.yml with init_manifest) both steps are no-ops.
+if python -c "import soccer_edge" >/dev/null 2>&1; then
+  python -m soccer_edge.cli archive manifest --archive-dir "$WORK" --if-present || { echo "::error::archive manifest refused (corruption)"; exit 1; }
+  python -m soccer_edge.cli archive verify --archive-dir "$WORK" --allow-missing-manifest || { echo "::error::archive verify failed"; exit 1; }
+else
+  echo "archive: soccer_edge not importable; manifest/verify skipped"
+fi
 # size guard: refuse files > 45 MB (GH001 lesson)
 if find "$DEST" -type f -size +45M | grep -q .; then echo "::error::file over 45MB in archive payload"; find "$DEST" -type f -size +45M; exit 1; fi
 git add -- "$DEST"
