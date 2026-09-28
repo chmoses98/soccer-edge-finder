@@ -812,7 +812,7 @@ def run(cfg: Config, cache: Cache, *, verbose: bool = True) -> dict:
             "sum_model_cross_cov_all_pairs": round(den_all, 2),
             "sum_model_cross_cov_refit_separated_pairs": round(den_upd_all, 2),
             "share_refit_separated": round(den_upd_all / den_all, 4) if den_all > 0 else None,
-            "reading": "under k=1 the residual products should sum to -(refit-separated cross cov); more negative = over-reaction = posterior too wide",
+            "reading": "E[sum r_i r_j] = k^2 * all_pairs - refit_separated_pairs; at k=1 that is all_pairs - refit_separated_pairs. Observed below it = posterior too wide (k<1), above it = too narrow.",
         },
         "window_days": cfg.window_days,
         "n_groups": len(groups),
