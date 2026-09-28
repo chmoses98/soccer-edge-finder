@@ -638,3 +638,33 @@ def frozen_v1_summary() -> dict:
         "over25": d.get("over25"),
         "paired_logloss_diff_ci95": d.get("paired_logloss_diff_ci95"),
     }
+
+
+def main(argv: list[str] | None = None) -> int:
+    """Build (or verify) one variant's walk-forward cache: `python research/wf_common.py --variant NAME`.
+    Used by research-dc-v2.yml to run the pre-registered grid as parallel runner jobs."""
+    import argparse
+
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--variant", required=True, choices=sorted(VARIANTS))
+    ap.add_argument("--posterior-samples", type=int, default=POSTERIOR_SAMPLES)
+    a = ap.parse_args(argv)
+    matches, extras, data_hash = load_data()
+    t = load_or_run(
+        a.variant,
+        matches,
+        extras,
+        data_hash,
+        keep_matrix=False,
+        posterior_samples=a.posterior_samples,
+        verbose=True,
+    )
+    print(
+        f"{a.variant}: rows={len(t['season'])} data_hash={data_hash} "
+        f"from_cache={bool(t.get('_from_cache', False))}"
+    )
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

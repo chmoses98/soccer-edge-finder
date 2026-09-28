@@ -1,0 +1,109 @@
+name: research-dc-v2
+
+# dc_laplace_v2 pre-registered selection + one-time holdout + engine reconciliation (research/dc_v2.py,
+# docs/PRELAUNCH_AUDIT.md §D, phases 12-14). The nine grid variants and the v1 baselines are walk-forward
+# caches that take ~45 min each; they run as parallel runner jobs, then one job evaluates and commits
+# the frozen result files. Re-running never changes a choice already written to the selection file.
+
+on:
+  workflow_dispatch:
+    inputs:
+      n_sample:
+        description: "engine reconciliation subsample size"
+        default: "1500"
+
+concurrency:
+  group: research-dc-v2-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    strategy:
+      fail-fast: false
+      matrix:
+        variant:
+          - dc_laplace_v1
+          - dc_laplace_v1.intercept
+          - dc_laplace_v2.d0065_s035
+          - dc_laplace_v2.d0065_s050
+          - dc_laplace_v2.d0065_s060
+          - dc_laplace_v2.d0040_s035
+          - dc_laplace_v2.d0040_s050
+          - dc_laplace_v2.d0040_s060
+          - dc_laplace_v2.d0030_s035
+          - dc_laplace_v2.d0030_s050
+          - dc_laplace_v2.d0030_s060
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e ".[dev]"
+      - name: Fetch match data (GitHub redistribution)
+        run: |
+          mkdir -p data/cache data/cache/research
+          curl -sSL --retry 3 -o data/cache/Matches.csv https://raw.githubusercontent.com/xgabora/Club-Football-Match-Data-2000-2025/main/data/Matches.csv
+          sha256sum data/cache/Matches.csv
+      - name: Walk-forward for ${{ matrix.variant }}
+        timeout-minutes: 140
+        run: python research/wf_common.py --variant "${{ matrix.variant }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wf-${{ matrix.variant }}
+          path: data/cache/research/wf_*.npz
+          retention-days: 30
+
+  evaluate:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e ".[dev]"
+      - name: Fetch match data (GitHub redistribution)
+        run: |
+          mkdir -p data/cache data/cache/research
+          curl -sSL --retry 3 -o data/cache/Matches.csv https://raw.githubusercontent.com/xgabora/Club-Football-Match-Data-2000-2025/main/data/Matches.csv
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: wf-*
+          merge-multiple: true
+          path: data/cache/research
+      - name: Selection, one-time holdout, engine reconciliation
+        timeout-minutes: 110
+        run: |
+          set -o pipefail
+          ls data/cache/research
+          python research/dc_v2.py all --n-sample "${{ inputs.n_sample || '1500' }}" | tee dc_v2.log
+          python research/sigma_struct.py | tee -a dc_v2.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: research-dc-v2-${{ github.run_id }}
+          path: |
+            dc_v2.log
+            data/research/dc_v2_selection.json
+            data/research/dc_v2_holdout.json
+            data/research/world_sim_benchmark.json
+            data/research/sigma_struct_v1.json
+          retention-days: 90
+      - name: Commit frozen results to the triggering branch
+        run: |
+          git config user.name "soccer-edge-bot"
+          git config user.email "soccer-edge-bot@users.noreply.github.com"
+          git add data/research/dc_v2_selection.json data/research/dc_v2_holdout.json data/research/world_sim_benchmark.json data/research/sigma_struct_v1.json
+          if git diff --cached --quiet; then echo "no change"; exit 0; fi
+          git commit -qm "research: dc_laplace_v2 selection + holdout + engine benchmark $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]"
+          for i in 1 2 3; do git push origin "HEAD:${{ github.ref_name }}" && break; git pull --rebase -q origin "${{ github.ref_name }}" && sleep 3; done
+      - run: |
+          { echo '## dc_v2'; echo '```'; tail -40 dc_v2.log; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
