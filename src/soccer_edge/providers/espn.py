@@ -31,6 +31,7 @@ from soccer_edge.identity.models import Fixture, FixtureStatus, Gender
 from soccer_edge.identity.registry import AliasRegistry, AmbiguousAliasError, UnknownAliasError
 from soccer_edge.providers.base import Observation, Provenance, QualityFlag
 from soccer_edge.providers.http import CachedFetcher
+from soccer_edge.providers.interfaces import MatchResult
 
 ESPN_BASE = "https://site.api.espn.com/apis/site/v2/sports/soccer"
 PROVIDER_ID = "espn_site_api"
@@ -93,6 +94,8 @@ class EspnEvent:
     away_score: int | None
     season_year: int | None
     season_slug: str | None
+    venue_city: str | None = None
+    venue_country: str | None = None
 
 
 @dataclass(frozen=True)
@@ -229,6 +232,12 @@ def parse_scoreboard(league: str, body: dict[str, Any]) -> list[EspnEvent]:
                 away_score=_score(away),
                 season_year=season.get("year"),
                 season_slug=season.get("slug"),
+                venue_city=((comp.get("venue") or ev.get("venue") or {}).get("address") or {}).get(
+                    "city"
+                ),
+                venue_country=(
+                    (comp.get("venue") or ev.get("venue") or {}).get("address") or {}
+                ).get("country"),
             )
         )
     return out
@@ -569,3 +578,146 @@ def capture_lineups(
         stats["captured"] += 1
     write_json(hp, last)
     return stats
+
+
+# ---------------------------------------------------------------- competitions fed by ESPN (fixtures + FT results)
+
+# competition_id -> ESPN league slugs whose matches form the RESULTS POOL used to fit that competition's strengths.
+# National-team competitions pool all men's international matches (form travels across NL / WCQ / friendlies).
+INTERNATIONAL_POOL = (
+    "uefa.nations",
+    "fifa.friendly",
+    "fifa.worldq.uefa",
+    "fifa.worldq.conmebol",
+    "fifa.worldq.concacaf",
+    "concacaf.nations.league",
+)
+ESPN_POOLS: dict[str, tuple[str, ...]] = {
+    "usa.mls": ("usa.1",),
+    "mex.liga_mx": ("mex.1",),
+    "bra.serie_a": ("bra.1",),
+    "arg.primera": ("arg.1",),
+    "uefa.nations_league": INTERNATIONAL_POOL,
+    "fifa.friendly": INTERNATIONAL_POOL,
+    "concacaf.nations_league": INTERNATIONAL_POOL,
+}
+
+
+def results_from_events(
+    events: list[EspnEvent], emap: EspnMap, report: MappingReport | None = None
+) -> list[MatchResult]:
+    """Finished events with both scores -> MatchResult rows (competition = the ESPN league's competition)."""
+    report = report if report is not None else MappingReport()
+    out: list[MatchResult] = []
+    for ev in events:
+        if ev.state != "post" or ev.home_score is None or ev.away_score is None:
+            continue
+        if ev.status_name in _STATUS_NAME_OVERRIDES:  # postponed/abandoned never count as results
+            continue
+        comp = emap.leagues.get(ev.league)
+        h, a = emap.teams.get(ev.home_espn_id), emap.teams.get(ev.away_espn_id)
+        if comp is None or h is None or a is None:
+            if comp is None:
+                report.unmapped_leagues.add(ev.league)
+            if h is None:
+                report.unmapped_team_ids[ev.home_espn_id] = ev.home_name
+            if a is None:
+                report.unmapped_team_ids[ev.away_espn_id] = ev.away_name
+            report.skipped_events += 1
+            continue
+        season = season_id_for(ev.league, ev)
+        out.append(
+            MatchResult(
+                fixture_id=Fixture.make_id(comp, season, h, a),
+                competition_id=comp,
+                season_id=season,
+                match_date=ev.kickoff_utc.date().isoformat(),
+                home_team_id=h,
+                away_team_id=a,
+                home_goals=ev.home_score,
+                away_goals=ev.away_score,
+                neutral_site=ev.neutral_site,
+            )
+        )
+    return out
+
+
+def result_record(r: MatchResult, espn_event_id: str, league: str) -> dict[str, Any]:
+    return {
+        "schema": "espn_result_v1",
+        "espn_event_id": espn_event_id,
+        "league": league,
+        **r.model_dump(mode="json"),
+    }
+
+
+class EspnArchive:
+    """Offline view of what the runner-side jobs archived: results/espn/<league>.jsonl (append-only, one row per
+    ESPN event, last row wins) and fixtures/espn/<date>/*.json (latest file wins)."""
+
+    def __init__(self, root: Path) -> None:
+        self.root = Path(root)
+
+    # -- results
+    def results_path(self, league: str) -> Path:
+        return self.root / "results" / "espn" / f"{league}.jsonl"
+
+    def known_event_ids(self, league: str) -> set[str]:
+        from soccer_edge.core.serialization import read_jsonl
+
+        pth = self.results_path(league)
+        return {r["espn_event_id"] for r in read_jsonl(pth)} if pth.exists() else set()
+
+    def append_results(self, league: str, rows: list[dict[str, Any]]) -> int:
+        from soccer_edge.core.serialization import append_jsonl
+
+        known = self.known_event_ids(league)
+        n = 0
+        for r in rows:
+            if r["espn_event_id"] in known:
+                continue
+            append_jsonl(self.results_path(league), r)
+            known.add(r["espn_event_id"])
+            n += 1
+        return n
+
+    def results(self, leagues: tuple[str, ...]) -> list[MatchResult]:
+        from soccer_edge.core.serialization import read_jsonl
+
+        by_event: dict[str, dict[str, Any]] = {}
+        for lg in leagues:
+            pth = self.results_path(lg)
+            if not pth.exists():
+                continue
+            for r in read_jsonl(pth):
+                by_event[r["espn_event_id"]] = r
+        out = []
+        for r in by_event.values():
+            out.append(
+                MatchResult(
+                    **{k: v for k, v in r.items() if k not in ("schema", "espn_event_id", "league")}
+                )
+            )
+        return out
+
+    # -- fixtures
+    def latest_fixtures(self) -> tuple[list[Fixture], dict[str, str], datetime | None]:
+        from soccer_edge.core.serialization import read_json
+
+        files = sorted((self.root / "fixtures" / "espn").glob("*/*.json"))
+        if not files:
+            return [], {}, None
+        doc = read_json(files[-1])
+        fixtures: list[Fixture] = []
+        eid_by_fixture: dict[str, str] = {}
+        for row in doc.get("fixtures", []):
+            eid = row.pop("espn_event_id", None)
+            fx = Fixture(**row)
+            fixtures.append(fx)
+            if eid:
+                eid_by_fixture[fx.fixture_id] = eid
+        return (
+            fixtures,
+            eid_by_fixture,
+            datetime.fromisoformat(doc["as_of"]) if doc.get("as_of") else None,
+        )

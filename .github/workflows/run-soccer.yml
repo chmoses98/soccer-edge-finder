@@ -67,8 +67,11 @@ jobs:
           mkdir -p work/reference
           if git ls-remote --exit-code --heads origin data-archive >/dev/null 2>&1; then
             git show origin/data-archive:reference/last_fingerprints.json > work/reference/last_fingerprints.json 2>/dev/null || true
+            # ESPN-fed fixtures/results (Americas leagues + international pools), read-only
+            git clone --quiet --depth 1 --branch data-archive "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" espn_archive 2>/dev/null || true
           fi
           ARGS="--window ${{ inputs.window_hours || '48' }} --out-dir work/out --archive-dir work/ledger --sim-cache work/simcache --reference-dir work/reference"
+          [ -d espn_archive/results/espn ] && ARGS="$ARGS --espn-dir espn_archive"
           [ -n "${{ inputs.date }}" ] && ARGS="$ARGS --date ${{ inputs.date }}"
           if [ -n "${{ inputs.leagues }}" ]; then for l in $(echo "${{ inputs.leagues }}" | tr ',' ' '); do ARGS="$ARGS --league $l"; done; fi
           python -m soccer_edge.cli run $ARGS | tee work/run.log

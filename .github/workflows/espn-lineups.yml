@@ -28,11 +28,16 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -e .
-      - name: Restore last lineup hashes
+      - name: Restore last lineup hashes + existing ESPN results (append-only dedup)
         run: |
-          mkdir -p work/espn/lineups
+          mkdir -p work/espn/lineups work/espn/results/espn
           git fetch --depth 1 origin data-archive 2>/dev/null || true
           git show origin/data-archive:lineups/last_hashes.json > work/espn/lineups/last_hashes.json 2>/dev/null || true
+          mkdir -p work/espn/weather
+          git show origin/data-archive:weather/geocode_cache.json > work/espn/weather/geocode_cache.json 2>/dev/null || true
+          for f in $(git ls-tree --name-only origin/data-archive:results/espn 2>/dev/null); do
+            git show "origin/data-archive:results/espn/$f" > "work/espn/results/espn/$f" 2>/dev/null || true
+          done
       - name: ESPN sync
         timeout-minutes: 15
         run: |
@@ -46,6 +51,8 @@ jobs:
           mkdir -p pub/lineups pub/fixtures/espn
           [ -d work/espn/lineups ] && cp -R work/espn/lineups/. pub/lineups/ || true
           [ -d work/espn/fixtures ] && cp -R work/espn/fixtures/. pub/fixtures/espn/ || true
+          if [ -d work/espn/results ]; then mkdir -p pub/results; cp -R work/espn/results/. pub/results/; fi
+          if [ -d work/espn/weather ]; then mkdir -p pub/weather; cp -R work/espn/weather/. pub/weather/; fi
           scripts/archive_publish.sh pub . "espn ${{ github.run_id }} $(date -u +%Y-%m-%dT%H:%MZ)"
       - name: Commit status to branch
         if: always()

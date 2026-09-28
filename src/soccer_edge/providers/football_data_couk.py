@@ -10,8 +10,11 @@ from __future__ import annotations
 import csv
 import io
 
+from soccer_edge.core.errors import IdentityError
+from soccer_edge.identity.models import Fixture, Gender
 from soccer_edge.providers.base import Observation, QualityFlag
 from soccer_edge.providers.http import CachedFetcher
+from soccer_edge.providers.interfaces import MatchResult
 
 BASE = "https://www.football-data.co.uk/mmz4281"
 LICENSE = "football-data.co.uk free data; attribution requested"
@@ -173,3 +176,67 @@ class FootballDataCoUkProvider:
         flags = (QualityFlag.OK,) if has_closing else (QualityFlag.PARTIAL,)
         notes = () if has_closing else ("no closing-odds columns in this season file",)
         return Observation(payload=rows, provenance=fetched.provenance, flags=flags, notes=notes)
+
+    def results_with_xg(self, division: str, season_id: str) -> Observation[list[MatchResult]]:
+        """Current-season results with match xG where the file carries HxG/AxG (2026-27 onward).
+
+        xG is a third-party model output of undisclosed provenance; it is carried as a covariate
+        (`MatchResult.home_xg/away_xg`), never as an observation. Rows without xG keep None."""
+        obs = self.raw_rows(division, season_id)
+        comp = DIVISION_TO_COMPETITION.get(division)
+        out: list[MatchResult] = []
+        skipped = 0
+        has_xg = bool(obs.payload) and "HxG" in obs.payload[0]
+        for r in obs.payload:
+            if comp is None or self.registry is None or not r.get("FTHG"):
+                skipped += 1
+                continue
+            try:
+                home = self.registry.resolve_team(
+                    r["HomeTeam"], country=DIVISION_COUNTRY[division], gender=Gender.MEN
+                ).team_id
+                away = self.registry.resolve_team(
+                    r["AwayTeam"], country=DIVISION_COUNTRY[division], gender=Gender.MEN
+                ).team_id
+            except IdentityError:
+                skipped += 1
+                continue
+            d, m, y = r["Date"].split("/")
+            iso = f"{int(y) + 2000 if len(y) == 2 else y}-{m}-{d}"
+
+            def _f(k: str) -> float | None:
+                v = r.get(k, "")
+                return float(v) if v not in ("", None) else None
+
+            out.append(
+                MatchResult(
+                    fixture_id=Fixture.make_id(comp, season_id, home, away, stage=iso),
+                    competition_id=comp,
+                    season_id=season_id,
+                    match_date=iso,
+                    home_team_id=home,
+                    away_team_id=away,
+                    home_goals=int(float(r["FTHG"])),
+                    away_goals=int(float(r["FTAG"])),
+                    home_goals_ht=int(float(r["HTHG"])) if r.get("HTHG") else None,
+                    away_goals_ht=int(float(r["HTAG"])) if r.get("HTAG") else None,
+                    home_shots=int(float(r["HS"])) if r.get("HS") else None,
+                    away_shots=int(float(r["AS"])) if r.get("AS") else None,
+                    home_xg=_f("HxG"),
+                    away_xg=_f("AxG"),
+                )
+            )
+        notes = obs.notes + (
+            f"{len(out)} results, {skipped} skipped; xg_columns={'present' if has_xg else 'absent'}; xg_source=football_data_couk",
+        )
+        flags = (
+            obs.flags
+            if has_xg
+            else tuple(f for f in obs.flags if f != QualityFlag.OK) + (QualityFlag.PARTIAL,)
+        )
+        return Observation(
+            payload=out,
+            provenance=obs.provenance,
+            flags=flags or (QualityFlag.PARTIAL,),
+            notes=notes,
+        )

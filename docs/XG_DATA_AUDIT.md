@@ -9,7 +9,7 @@ of these hosts). Status codes below are what the runner actually received.
 |---|---|---|---|
 | football-data.co.uk `mmz4281/2627/E0.csv` | GET | 200; header contains **`HxG,AxG`** (new for 2026-27) | **yes** — same licence/terms we already rely on for results and odds; current season only |
 | football-data.co.uk `2526/E0`, `2425/E0`, `2324/E0`, `2526/{SP1,D1,I1,F1}` | GET | 200; **no xG columns** | no history → cannot back-test |
-| football-data.co.uk `2627/{SP1,D1,I1,F1,E1,N1,P1}` | GET (second probe) | see `data/samples/espn_xg_probe.json` → `xg.football_data_couk_*_2627.has_xg_cols` | per-league, current season only |
+| football-data.co.uk `2627/{SP1,D1,I1,F1,E1,N1,P1}` | GET (second probe) | 200; **all eight 2026-27 files carry `HxG,AxG`** | **yes** — every benchmark league, current season only |
 | Understat league/match pages | GET HTML | 200, "xG" in title, embedded JSON present | **not adopted**: HTML scraping of a site whose terms do not grant it; no API; brittle |
 | FBref (Sports Reference / Opta xG) | GET | **403** | no |
 | StatsBomb open data (`competitions.json`) | GET | 200 | historical, selected competitions only (no current top-5 seasons); event-level; research-only licence — fine for *method* research, useless for live strength |

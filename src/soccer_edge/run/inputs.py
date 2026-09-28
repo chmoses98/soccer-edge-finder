@@ -58,8 +58,10 @@ def assemble(
     fetcher: CachedFetcher | None = None,
     historical_content: bytes | None = None,
     seasons_back: int = 2,
+    espn_dir: Path | None = None,
 ) -> AssembledData:
     today = today or utc_now().date()
+    competitions_are_explicit = competitions is not DEFAULT_COMPETITIONS
     fetcher = fetcher or CachedFetcher()
     of = OpenFootballProvider(registry, fetcher)
     hist = ClubFootballDataProvider(registry, fetcher)
@@ -111,6 +113,30 @@ def assemble(
         except Exception as exc:
             notes.append(f"{comp} {season}: openfootball results unavailable ({str(exc)[:80]})")
 
+    # ESPN-fed competitions (Americas leagues + international pools) from the runner-side archive
+    if espn_dir is not None:
+        from soccer_edge.providers.espn import ESPN_POOLS, EspnArchive
+
+        arch = EspnArchive(espn_dir)
+        try:
+            efx, _eids, e_as_of = arch.latest_fixtures()
+        except Exception as exc:
+            efx, e_as_of = [], None
+            notes.append(f"espn fixtures unreadable: {str(exc)[:80]}")
+        espn_comps = [c for c in ESPN_POOLS if c in competitions or not competitions_are_explicit]
+        for comp in espn_comps:
+            cf = [f for f in efx if f.competition_id == comp]
+            fixtures.extend(cf)
+            pooled = arch.results(ESPN_POOLS[comp])
+            if pooled:
+                results.setdefault(comp, []).extend(pooled)
+            notes.append(
+                f"{comp}: espn {len(cf)} fixtures, {len(pooled)} pooled results ({','.join(ESPN_POOLS[comp])})"
+            )
+        if efx and e_as_of is not None:
+            fx_obs = max(fx_obs, e_as_of) if fx_obs else e_as_of
+        competitions = tuple(dict.fromkeys((*competitions, *espn_comps)))
+
     models: dict[str, CompetitionModel] = {}
     for comp in competitions:
         rs = results.get(comp, [])
@@ -134,9 +160,13 @@ def build_inputs(
     as_of: datetime,
     authority_path: Path | None = None,
 ) -> RunInputs:
+    from soccer_edge.run.context_features import rest_contexts
+
+    all_results = [r for rs in data.results.values() for r in rs]
     return RunInputs(
         registry=registry,
         fixtures=data.fixtures,
+        rest_contexts=rest_contexts(data.fixtures, all_results),
         fixtures_observed_at=data.fixtures_observed_at,
         models=data.models,
         results_observed_at=data.results_observed_at,

@@ -106,3 +106,41 @@ fast-skipped, both runs flagged their own discovery complete, and the evidence l
 skip decision but cannot see individual markets; the report says so via `evidence_level` and
 `null` market intersections. Markets new since the full discovery (`in_fast_not_full`) are
 informational: fast mode always sweeps new series and re-enumerates swept ones.
+
+## Reference market capture (Phase 5–7)
+
+`soccer capture-reference` (run inside `kalshi-capture.yml` and `run-soccer.yml`) fetches football-data.co.uk
+`fixtures.csv` — the only bookmaker source reachable from the runner without a key — and turns each row into
+point-in-time `ReferenceMarketSnapshot` records (`src/soccer_edge/reference/`):
+
+* markets: `1x2` (home/draw/away), `ou` line 2.5 (over/under); AH when the file carries it;
+* bookmakers: `bet365`, `pinnacle`, `average` as published, plus a derived **`consensus`** row = the `Avg*`
+  columns when present, else the mean of Bet365 and Pinnacle (documented, not a black box);
+* de-vig: proportional per market group (`devig_method` is stored; `overround` too);
+* provenance: `captured_at` (our fetch), `quoted_at` (None — the file has no timestamp), `minutes_to_kickoff`,
+  `is_closing=False` always (a pre-match file is never a closing line);
+* storage: `reference/<date>/ref-<ts>.jsonl` on `data-archive`, change-suppressed by fingerprint
+  (`reference/last_fingerprints.json`), **never overwritten**.
+
+The run joins snapshots to fixtures by (competition, home, away, date) and writes, per prediction record,
+`reference.{bookmaker, probability_yes, observed_at, kalshi_mid_yes}`; recommendations expose
+`reference_probability`, `divergence_from_reference` and `kalshi_mid_probability` (app contract v1.1, optional).
+
+## Close classification and CLV (settlement)
+
+Settlement (`run/settle.py`) labels the last archived Kalshi quote before kickoff by `close_class`:
+`TRUE_CLOSE` (≤30 min before kickoff), `NEAR_CLOSE` (≤6 h), `PRE_CLOSE` (older), `NONE`. At the current 2-hourly
+capture cadence most closes are `NEAR_CLOSE`; a `NEAR_CLOSE` CLV must not be reported as a closing-line result.
+
+CLV is side-aware and POSITIVE_IS_GOOD for the side taken:
+
+| field | YES side | NO side |
+|---|---|---|
+| `clv_probability_points` | close mid − entry ask | (1 − close mid) − entry NO ask |
+| `clv_price_points` | close YES ask − entry YES ask | close NO ask − entry NO ask |
+| `clv_fee_aware_points` | price CLV net of the change in taker fee between entry and close price | same |
+
+Both sides are computed for every record (`clv.yes`, `clv.no`) so a selection policy can be replayed. Reference
+CLV (`reference_close_probability`, `reference_clv_probability_points_yes`) uses the last consensus snapshot
+before kickoff. Capture completeness (cadence gaps per ticker, hour-of-day coverage) is in the microstructure
+summary; it bounds how close to kickoff a "close" can be.

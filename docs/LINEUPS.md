@@ -18,9 +18,12 @@ Verified league slugs: `eng.1 esp.1 ger.1 ita.1 fra.1 usa.1 uefa.champions uefa.
 uefa.nations eng.2 mex.1 usa.nwsl`. Other slugs in `data/mappings/espn_map.json` are ESPN's documented names and
 are **not** used until a probe confirms them (`verified_leagues`).
 
-Unverified as of writing: **how long before kickoff ESPN publishes the XI**. The prospective capture records
-`event_state` (pre / in / post) with every snapshot, so the archive answers this empirically
-(`LineupStateTracker.confirmation_lead_minutes`). Until then no fixture is treated as CONFIRMED for pricing.
+Second probe (2026-09-28 03:06 UTC): summaries fetched 31–94 hours before kickoff (MLS, friendlies, Nations
+League) return a `rosters` array with **zero entries** — ESPN does not expose XIs days ahead. **How long before
+kickoff the XI appears is still unmeasured**; the prospective capture records `event_state` with every snapshot,
+so the archive answers it empirically (`LineupStateTracker.confirmation_lead_minutes`). Until then no fixture is
+treated as CONFIRMED for pricing. Also confirmed: the `dates=YYYYMMDD-YYYYMMDD` range form returns 400 for every
+league; the adapter queries per day.
 
 No key, no ToS-restricted bulk use: per run, one scoreboard call per league-day and one summary call per fixture
 within [-3h, +26h] of now. Provenance (URL, observed_at, content hash) travels with every snapshot.
@@ -28,9 +31,9 @@ within [-3h, +26h] of now. Provenance (URL, observed_at, content hash) travels w
 ## Identity: explicit, exact, fail-loud
 
 `data/mappings/espn_map.json` maps ESPN league slugs → `competition_id` and ESPN team ids → canonical `team_id`.
-The team rows were produced by **exact alias resolution** (men's teams, no weak/fuzzy forms) against
-`data/registry/seed.json` from the probe's EPL and UCL team lists (49 teams; `Sabah FK`, `Viking FK` are not in the
-canonical registry and stay unmapped). Anything unmapped is *reported* (`MappingReport.unmapped_team_ids`,
+The team rows were produced by **exact alias resolution** (scoped men's / women's / national, no weak or fuzzy
+forms) against `data/registry/*.json` from the probe's full team lists for 23 leagues (v2). Ids the registry does
+not know are listed under `unmapped_from_probe` and stay unmapped. Anything unmapped is *reported* (`MappingReport.unmapped_team_ids`,
 `data/diagnostics/latest_espn_status.json`) and the fixture is skipped. `propose_team_map` writes proposals for a
 human to review; it never edits the table.
 

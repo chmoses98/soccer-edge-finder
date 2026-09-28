@@ -264,5 +264,112 @@ def test_probe_sample_teams_parse_and_map_file_is_consistent():
     assert parse_teams(body)[0]["id"] == "349"
     if PROBE.exists():
         p = json.loads(PROBE.read_text())
-        for t in p["espn"]["teams_eng1"]["sample"]:
-            assert t["id"] in emap.teams, t
+        lists = p["espn"].get("team_lists", {})
+        for lg in ("eng.1", "usa.1", "mex.1", "bra.1", "arg.1", "uefa.nations"):
+            for t in lists.get(lg, {}).get("teams", []):
+                assert str(t["id"]) in emap.teams, (
+                    lg,
+                    t,
+                )  # every id in these leagues is mapped explicitly
+
+
+def test_results_from_events_and_archive_round_trip(tmp_path):
+    from soccer_edge.providers.espn import EspnArchive, result_record, results_from_events
+
+    emap = EspnMap(
+        leagues={"eng.1": "eng.premier_league"},
+        teams={"349": "eng.bournemouth", "364": "eng.liverpool", "359": "eng.arsenal"},
+    )
+    evs = parse_scoreboard("eng.1", _scoreboard_body())
+    rep = MappingReport()
+    res = results_from_events(evs, emap, rep)
+    assert (
+        len(res) == 1
+        and res[0].home_goals == 0
+        and res[0].away_goals == 1
+        and res[0].match_date == "2026-09-20"
+    )
+    assert (
+        rep.skipped_events == 0
+    )  # the scheduled event is simply not a result, not a mapping failure
+    # postponed never counts as a result even with scores present
+    assert (
+        results_from_events(
+            parse_scoreboard("eng.1", _scoreboard_body("post", "STATUS_POSTPONED")), emap
+        )
+        == []
+    )
+    arch = EspnArchive(tmp_path)
+    rows = [result_record(r, "401879276", "eng.1") for r in res]
+    assert arch.append_results("eng.1", rows) == 1
+    assert arch.append_results("eng.1", rows) == 0  # idempotent
+    back = arch.results(("eng.1", "nope.9"))
+    assert (
+        len(back) == 1 and back[0].fixture_id == res[0].fixture_id and back[0].neutral_site is False
+    )
+
+
+def test_assemble_reads_espn_archive(tmp_path, registry):
+    import json as _json
+
+    from soccer_edge.providers.espn import EspnArchive, result_record
+    from soccer_edge.providers.interfaces import MatchResult
+    from soccer_edge.run.inputs import assemble
+
+    # 60 synthetic MLS results between 6 canonical teams + one upcoming fixture
+    teams = [
+        "usa.atlanta_united",
+        "usa.austin",
+        "usa.charlotte",
+        "usa.chicago_fire",
+        "usa.cincinnati",
+        "usa.colorado_rapids",
+    ]
+    arch = EspnArchive(tmp_path)
+    rows = []
+    k = 0
+    for i, h in enumerate(teams):
+        for j, a in enumerate(teams):
+            if h == a:
+                continue
+            for rep_ in range(2):
+                k += 1
+                d = f"2026-0{3 + (k % 6)}-{1 + (k % 27):02d}"
+                r = MatchResult(
+                    fixture_id=f"fx:usa.mls:2026:{h}:{a}:{k}",
+                    competition_id="usa.mls",
+                    season_id="2026",
+                    match_date=d,
+                    home_team_id=h,
+                    away_team_id=a,
+                    home_goals=(i + k) % 4,
+                    away_goals=(j + k) % 3,
+                )
+                rows.append(result_record(r, f"e{k}", "usa.1"))
+    assert arch.append_results("usa.1", rows) == 60
+    fx_dir = tmp_path / "fixtures" / "espn" / "2026-09-28"
+    fx_dir.mkdir(parents=True)
+    fx = {
+        "fixture_id": "fx:usa.mls:2026:usa.atlanta_united:usa.austin",
+        "competition_id": "usa.mls",
+        "season_id": "2026",
+        "home_team_id": "usa.atlanta_united",
+        "away_team_id": "usa.austin",
+        "kickoff_utc": "2026-10-03T23:30:00+00:00",
+        "kickoff_date": "2026-10-03",
+        "status": "scheduled",
+        "espn_event_id": "e999",
+    }
+    (fx_dir / "espn-000000.json").write_text(
+        _json.dumps({"as_of": "2026-09-28T03:00:00+00:00", "fixtures": [fx]})
+    )
+    data = assemble(
+        registry,
+        competitions=("usa.mls",),
+        today=datetime(2026, 9, 28, tzinfo=UTC).date(),
+        historical_content=b"",
+        espn_dir=tmp_path,
+    )
+    assert any(f.fixture_id == fx["fixture_id"] for f in data.fixtures)
+    assert "usa.mls" in data.models and len(data.results["usa.mls"]) == 60
+    assert any("espn 1 fixtures, 60 pooled results" in n for n in data.notes)

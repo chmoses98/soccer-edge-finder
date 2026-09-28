@@ -86,6 +86,9 @@ class RunInputs:
     )  # (fixture, market, selection, line) -> devigged p
     reference_bookmaker: str = "consensus"
     reference_observed_at: datetime | None = None
+    rest_contexts: dict[str, Any] = field(
+        default_factory=dict
+    )  # fixture_id -> RestContext (context only)
 
 
 @dataclass
@@ -270,6 +273,7 @@ def run(
         fx = ws[0].fixture
         assert fx is not None
         cm = inputs.models[fx.competition_id]
+        rc = inputs.rest_contexts.get(fid)
         base_ctx = inputs.lineup_contexts.get(fid) or MatchContext(
             fid,
             fx.competition_id,
@@ -278,6 +282,8 @@ def run(
             fx.kickoff_utc,
             neutral_site=fx.neutral_site,
             requires_winner=bool(fx.penalties_possible),
+            rest_days_home=rc.rest_days_home if rc else None,
+            rest_days_away=rc.rest_days_away if rc else None,
         )
         fixture_ctx[fid] = base_ctx
         missing = [t for t in (fx.home_team_id, fx.away_team_id) if t not in cm.posterior.teams]
@@ -708,6 +714,9 @@ def _contract_record(
             "schedule_version": FEE_SCHEDULE_VERSION,
         },
         "edge": {"yes": w.yes.to_json() if w.yes else None, "no": w.no.to_json() if w.no else None},
+        "context": inputs.rest_contexts[fx.fixture_id].to_json()
+        if fx.fixture_id in inputs.rest_contexts
+        else None,
         "reference": {
             "bookmaker": inputs.reference_bookmaker if w.reference_prob is not None else None,
             "probability_yes": w.reference_prob,

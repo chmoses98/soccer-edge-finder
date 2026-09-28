@@ -207,7 +207,12 @@ def cmd_run(args: argparse.Namespace) -> int:
     as_of = utc_now()
     registry = _registry()
     comps = tuple(args.league) if args.league else DEFAULT_COMPETITIONS
-    data = assemble(registry, competitions=comps, today=run_date)
+    data = assemble(
+        registry,
+        competitions=comps,
+        today=run_date,
+        espn_dir=Path(args.espn_dir) if args.espn_dir else None,
+    )
     for n in data.notes:
         print("[data]", n)
     if args.catalog:
@@ -485,6 +490,16 @@ def build_parser() -> argparse.ArgumentParser:
     es.add_argument("--out-dir", required=True)
     es.set_defaults(func=cmd_espn_sync)
 
+    eb = sub.add_parser(
+        "espn-backfill",
+        help="ESPN per-day scoreboards over a date range -> archived results (runner-side)",
+    )
+    eb.add_argument("--leagues", required=True, help="comma-separated ESPN slugs")
+    eb.add_argument("--start", required=True, help="YYYY-MM-DD")
+    eb.add_argument("--end", default=None, help="YYYY-MM-DD (default today)")
+    eb.add_argument("--out-dir", required=True)
+    eb.set_defaults(func=cmd_espn_backfill)
+
     rp = sub.add_parser(
         "replay-policies", help="replay versioned selection policies against the archive (research)"
     )
@@ -592,6 +607,18 @@ def cmd_espn_sync(args: argparse.Namespace) -> int:
     ln_stats = capture_lineups(
         prov, todo, out_dir / "lineups", as_of=as_of, max_events=args.max_lineups
     )
+    # weather (context only): Open-Meteo forecast at kickoff hour for events within 72h
+    from soccer_edge.providers.open_meteo import OpenMeteoProvider, capture_weather
+
+    try:
+        wx = capture_weather(
+            OpenMeteoProvider(cache_path=out_dir / "weather" / "geocode_cache.json"),
+            events,
+            out_dir / "weather",
+            as_of=as_of,
+        )
+    except Exception as exc:
+        wx = {"error": str(exc)[:200]}
     # map proposals for unmapped teams (exact alias only; humans extend data/mappings/espn_map.json)
     proposals: dict[str, dict] = {}
     if rep.unmapped_team_ids:
@@ -628,6 +655,17 @@ def cmd_espn_sync(args: argparse.Namespace) -> int:
         f.model_dump(mode="json") | {"espn_event_id": rep.espn_event_by_fixture.get(f.fixture_id)}
         for f in fixtures
     ]
+    from soccer_edge.providers.espn import EspnArchive, result_record, results_from_events
+
+    arch = EspnArchive(out_dir)
+    res_written = 0
+    for lg in leagues:
+        evs = [e for e in events if e.league == lg]
+        rows = []
+        for e in evs:
+            for r in results_from_events([e], emap):
+                rows.append(result_record(r, e.espn_event_id, lg))
+        res_written += arch.append_results(lg, rows)
     write_json(
         out_dir / "fixtures" / f"{as_of:%Y-%m-%d}" / f"espn-{as_of:%H%M%S}.json",
         {
@@ -648,6 +686,8 @@ def cmd_espn_sync(args: argparse.Namespace) -> int:
         "unmapped_leagues": sorted(rep.unmapped_leagues),
         "scoreboard_failures": failures[:50],
         "lineups": ln_stats,
+        "results_appended": res_written,
+        "weather": wx,
         "map_proposals": proposals,
         "map_version": emap.version,
     }
@@ -665,6 +705,57 @@ def cmd_espn_sync(args: argparse.Namespace) -> int:
         "| proposals:",
         {k: len(v["proposed"]) for k, v in proposals.items()},
     )
+    return 0
+
+
+def cmd_espn_backfill(args: argparse.Namespace) -> int:
+    """Runner-side, one-off/incremental: per-day scoreboards over a date range -> results/espn/<league>.jsonl."""
+    from datetime import date as _date
+
+    from soccer_edge.core.serialization import write_json
+    from soccer_edge.providers.espn import (
+        EspnArchive,
+        EspnMap,
+        EspnProvider,
+        MappingReport,
+        result_record,
+        results_from_events,
+    )
+
+    emap = EspnMap.load()
+    prov = EspnProvider(emap=emap)
+    arch = EspnArchive(Path(args.out_dir))
+    start, end = (
+        _date.fromisoformat(args.start),
+        _date.fromisoformat(args.end) if args.end else utc_now().date(),
+    )
+    days = (end - start).days + 1
+    summary: dict[str, object] = {"start": str(start), "end": str(end), "leagues": {}}
+    for lg in args.leagues.split(","):
+        events, failures = prov.fixtures_window([lg], start, days)
+        rep = MappingReport()
+        rows = []
+        for e in events:
+            for r in results_from_events([e], emap, rep):
+                rows.append(result_record(r, e.espn_event_id, lg))
+        n = arch.append_results(lg, rows)
+        summary["leagues"][lg] = {
+            "events": len(events),
+            "finished_mapped": len(rows),
+            "appended": n,
+            "failures": len(failures),
+            "unmapped_team_ids": rep.unmapped_team_ids,
+            "skipped": rep.skipped_events,
+        }
+        print(
+            lg,
+            json.dumps(
+                {k: v for k, v in summary["leagues"][lg].items() if k != "unmapped_team_ids"}
+            ),
+            "unmapped:",
+            len(rep.unmapped_team_ids),
+        )
+    write_json(Path(args.out_dir) / "BACKFILL_STATUS.json", summary)
     return 0
 
 

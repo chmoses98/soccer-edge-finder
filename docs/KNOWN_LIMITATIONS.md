@@ -1,17 +1,19 @@
-# Known limitations (honest list, 2026-09-27)
+# Known limitations (honest list, updated 2026-09-28 after Phase 2)
 
 ## Data
-1. **No lineup / injury provider.** Production prices every fixture with `lineup_state=unknown`.
-   The lineup layer exists and is tested, but it is fed nothing. Player markets are therefore
-   `UNSUPPORTED_FAMILY` in production.
-2. **UEFA / international fixtures are not in openfootball.** UCL/UEL/UECL/Nations League contracts
-   are discovered and counted but mostly land in `UNMAPPED_EVENT` / `NO_FIXTURE` until an ESPN (or
-   other) fixture adapter exists. A multi-league strength model is also needed to price them.
+1. **Lineups are captured but not used.** ESPN snapshots run every 2 h, but ESPN publishes no XI days ahead
+   (probe: empty rosters 31–94 h out) and the publication lead time is still unmeasured, so production prices
+   every fixture with `lineup_state=unknown`. No injury source. Player markets stay `UNSUPPORTED_FAMILY`.
+2. **International and Americas fixtures depend on the ESPN archive.** The adapter and registry exist
+   (Phase 2), but until `espn-backfill` has been run once and `run-soccer` reads `results/espn`, Nations League,
+   friendlies, Liga MX, MLS, Brasileirão and Argentina contracts land in `NO_FIXTURE` (honest, counted). UEFA
+   club fixtures still need the multi-league model (research only) to be priced.
 3. **Kickoff times** from openfootball are local and converted by assumed zone (flagged UNVERIFIED).
-4. **No xG inputs yet.** The posterior uses goals only. football-data.co.uk now publishes HxG/AxG;
-   ingestion is on the roadmap.
-5. **Closing lines** are not in the GitHub redistribution; the research benchmark is Bet365
-   pre-match, and CLV in production will use Kalshi's own last pre-kickoff snapshot.
+4. **xG exists only from 2026-27.** Ingested (`results_with_xg`) but the xG family is NOT_EVALUATED: no
+   historical xG for the benchmark window, no free licensed source (`docs/XG_DATA_AUDIT.md`).
+5. **Closing lines**: the research benchmark is Bet365 pre-match. Production CLV uses Kalshi's own last
+   pre-kickoff snapshot labelled by close class (TRUE_CLOSE ≤30 min is rare at a 2-hourly cadence, so most
+   CLV will be NEAR_CLOSE) plus the football-data.co.uk consensus reference where captured.
 6. **Historical coverage** for the walk-forward uses 5 leagues, 2017-18 → 2025-26. Other divisions
    in the dataset are loadable but unregistered teams get provisional ids.
 
@@ -46,8 +48,13 @@
 ## Operations
 19. GitHub cron is unreliable; horizon coverage per fixture will be uneven. No self-chaining
     conductor is used on purpose (storm risk); the cost is missed horizons, which are reported.
-20. The archive branch is created lazily by the first writer; there is no size compaction job yet.
+20. The archive branch has no size compaction job; Phase 2 adds `reference/`, `lineups/`, `weather/`,
+    `results/espn/`, `fixtures/espn/` writers (all change-suppressed or append-only, but growth is unbounded).
 21. The simulation cache is per-run (artifact-restored) rather than shared across jobs.
-22. No router integration; positions/settlement import are contracts only.
+22. Router importer, settlement importer and validator exist with receipts/idempotency tests, but the router
+    profile, token scoping and classifier change are the owner's; no soccer fill is routed anywhere.
 23. All authority cells are `RESEARCH_ONLY`; the operator command will say `NO BETS` until
     prospective evidence exists and a human promotes a cell.
+25. A production bug shipped in Mission 1 and was fixed in Phase 2: every archived snapshot was labelled
+    horizon `T-10m` (raw `minutes_to_kickoff` was correct). Analyses of horizon labels before 2026-09-28
+    must recompute the label from `minutes_to_kickoff` (the microstructure summary does).
