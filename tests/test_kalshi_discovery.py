@@ -390,7 +390,21 @@ def test_fast_capture_sweeps_known_market_series_and_new_series(registry, epl_fi
 
 @pytest.mark.parametrize(
     ("minutes", "label"),
-    [(2964, "T-24h"), (1440, "T-24h"), (1439, "T-12h"), (400, "T-6h"), (130, "T-2h"), (95, "T-90m"), (61, "T-60m"), (40, "T-30m"), (16, "T-15m"), (12, "T-10m"), (5, "close"), (0, "close"), (-10, "close")],
+    [
+        (2964, "T-24h"),
+        (1440, "T-24h"),
+        (1439, "T-12h"),
+        (400, "T-6h"),
+        (130, "T-2h"),
+        (95, "T-90m"),
+        (61, "T-60m"),
+        (40, "T-30m"),
+        (16, "T-15m"),
+        (12, "T-10m"),
+        (5, "close"),
+        (0, "close"),
+        (-10, "close"),
+    ],
 )
 def test_label_horizon_is_largest_horizon_not_yet_passed(minutes, label):
     from soccer_edge.kalshi.capture import label_horizon

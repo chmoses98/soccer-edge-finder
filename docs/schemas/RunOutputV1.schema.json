@@ -49,7 +49,7 @@
           "type": "string"
         },
         "schema_version": {
-          "default": "1.0.0",
+          "default": "1.1.0",
           "title": "Schema Version",
           "type": "string"
         },
@@ -134,7 +134,7 @@
           "type": "boolean"
         },
         "schema_version": {
-          "default": "1.0.0",
+          "default": "1.1.0",
           "title": "Schema Version",
           "type": "string"
         },
@@ -334,7 +334,7 @@
           "type": "array"
         },
         "schema_version": {
-          "default": "1.0.0",
+          "default": "1.1.0",
           "title": "Schema Version",
           "type": "string"
         },
@@ -407,6 +407,37 @@
           "default": null,
           "title": "Bet Up To Price"
         },
+        "close_class": {
+          "anyOf": [
+            {
+              "enum": [
+                "TRUE_CLOSE",
+                "NEAR_CLOSE",
+                "PRE_CLOSE",
+                "NONE"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Close Class"
+        },
+        "clv_probability_points": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "filled after settlement: side-aware close minus entry, positive is good",
+          "title": "Clv Probability Points"
+        },
         "confidence_label": {
           "title": "Confidence Label",
           "type": "string"
@@ -439,6 +470,19 @@
           "format": "date-time",
           "title": "Data As Of",
           "type": "string"
+        },
+        "divergence_from_reference": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "fair_probability - reference_probability",
+          "title": "Divergence From Reference"
         },
         "event_id": {
           "title": "Event Id",
@@ -473,6 +517,21 @@
         "fee_schedule_version": {
           "title": "Fee Schedule Version",
           "type": "string"
+        },
+        "kalshi_mid_probability": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Kalshi midpoint for this side (diagnostic only; never the executable price)",
+          "title": "Kalshi Mid Probability"
         },
         "league": {
           "title": "League",
@@ -539,6 +598,46 @@
           "title": "Recommendation Id",
           "type": "string"
         },
+        "reference_as_of": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reference As Of"
+        },
+        "reference_bookmaker": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reference Bookmaker"
+        },
+        "reference_probability": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "de-vigged reference-market probability for this side at prediction time",
+          "title": "Reference Probability"
+        },
         "risks": {
           "items": {
             "type": "string"
@@ -547,7 +646,7 @@
           "type": "array"
         },
         "schema_version": {
-          "default": "1.0.0",
+          "default": "1.1.0",
           "title": "Schema Version",
           "type": "string"
         },
@@ -688,7 +787,7 @@
       "type": "string"
     },
     "schema_version": {
-      "default": "1.0.0",
+      "default": "1.1.0",
       "title": "Schema Version",
       "type": "string"
     },

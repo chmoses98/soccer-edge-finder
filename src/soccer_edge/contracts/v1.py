@@ -14,7 +14,7 @@ from typing import Any, Literal
 
 from pydantic import BaseModel, ConfigDict, Field, field_serializer
 
-APP_CONTRACT_VERSION = "1.0.0"
+APP_CONTRACT_VERSION = "1.1.0"
 
 Sport = Literal["soccer", "mlb", "nfl", "cfb", "nba", "other"]
 AuthorityLevel = Literal["RESEARCH_ONLY", "SHADOW", "LIMITED", "TRUSTED"]
@@ -94,6 +94,29 @@ class RecommendationV1(_Base):
     correlation_group: str
     fee_schedule_version: str
     prediction_record_id: str | None = None
+    # --- V1.1 optional additions (backwards compatible) ---
+    reference_probability: float | None = Field(
+        default=None,
+        ge=0,
+        le=1,
+        description="de-vigged reference-market probability for this side at prediction time",
+    )
+    reference_bookmaker: str | None = None
+    reference_as_of: datetime | None = None
+    divergence_from_reference: float | None = Field(
+        default=None, description="fair_probability - reference_probability"
+    )
+    kalshi_mid_probability: float | None = Field(
+        default=None,
+        ge=0,
+        le=1,
+        description="Kalshi midpoint for this side (diagnostic only; never the executable price)",
+    )
+    clv_probability_points: float | None = Field(
+        default=None,
+        description="filled after settlement: side-aware close minus entry, positive is good",
+    )
+    close_class: Literal["TRUE_CLOSE", "NEAR_CLOSE", "PRE_CLOSE", "NONE"] | None = None
 
 
 class ModelHealthV1(_Base):
@@ -142,6 +165,12 @@ class SettlementV1(_Base):
     agrees_with_kalshi: bool | None = None
     position_id: str | None = None
     realised_pnl: Decimal | None = None
+    # --- V1.1 optional additions ---
+    close_class: Literal["TRUE_CLOSE", "NEAR_CLOSE", "PRE_CLOSE", "NONE"] | None = None
+    clv_probability_points: float | None = None
+    clv_price_points: float | None = None
+    clv_fee_aware_points: float | None = None
+    reference_close_probability: float | None = None
 
 
 class CoverageReportV1(_Base):

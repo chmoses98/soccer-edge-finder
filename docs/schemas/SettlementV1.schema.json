@@ -13,6 +13,60 @@
       "default": null,
       "title": "Agrees With Kalshi"
     },
+    "close_class": {
+      "anyOf": [
+        {
+          "enum": [
+            "TRUE_CLOSE",
+            "NEAR_CLOSE",
+            "PRE_CLOSE",
+            "NONE"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Close Class"
+    },
+    "clv_fee_aware_points": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Clv Fee Aware Points"
+    },
+    "clv_price_points": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Clv Price Points"
+    },
+    "clv_probability_points": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Clv Probability Points"
+    },
     "event_id": {
       "title": "Event Id",
       "type": "string"
@@ -76,6 +130,18 @@
       "default": null,
       "title": "Realised Pnl"
     },
+    "reference_close_probability": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Reference Close Probability"
+    },
     "refusal_reason": {
       "anyOf": [
         {
@@ -89,7 +155,7 @@
       "title": "Refusal Reason"
     },
     "schema_version": {
-      "default": "1.0.0",
+      "default": "1.1.0",
       "title": "Schema Version",
       "type": "string"
     },
