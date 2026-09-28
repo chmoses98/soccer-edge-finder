@@ -1,0 +1,53 @@
+{
+  "applied_at": "2026-09-28T18:15:36.663518Z",
+  "groups": [
+    {
+      "lines_sha256": "66e9eea21e694ef5c6a7dda5a2bff45cfa74eba5e02c988bc4d00cb887d3aada",
+      "n_lines": 5,
+      "origin_blob": "3e7b2767210bcf17a63160cd4650ff6c22ede45e",
+      "origin_commit": "644b72f87194fd4ea67ac5c66dbd05d29177a03f",
+      "origin_commit_time": "2026-09-28T03:55:29Z",
+      "path": "lineups/2026-09-28/fifa.friendly.jsonl",
+      "record_type": "lineup",
+      "run_ids": []
+    },
+    {
+      "lines_sha256": "c2ebae618c506f1c9ed511998dfaffa1af99598c94d64f99cb33294c147946f3",
+      "n_lines": 830,
+      "origin_blob": "f5828f5baa44a6c316307965b85ef1b5937b81ae",
+      "origin_commit": "7383daa59d08ccdaa4db37dd81aa32bbdeab7aaa",
+      "origin_commit_time": "2026-09-28T12:56:26Z",
+      "path": "predictions/2026-09-28/predictions.jsonl",
+      "record_type": "prediction",
+      "run_ids": [
+        "run-20260928T124253Z-4f9bfb"
+      ]
+    },
+    {
+      "lines_sha256": "da6d301c1a50b2e0fe2502679424e572c76aa5558a2ce5b4cc3984bed80d3f0f",
+      "n_lines": 19,
+      "origin_blob": "783e502a4c58814e7bc73bb4db2f7d19f708adb0",
+      "origin_commit": "644b72f87194fd4ea67ac5c66dbd05d29177a03f",
+      "origin_commit_time": "2026-09-28T03:55:29Z",
+      "path": "weather/2026-09-28.jsonl",
+      "record_type": "weather",
+      "run_ids": []
+    }
+  ],
+  "lines_appended": {
+    "lineups/2026-09-28/fifa.friendly.jsonl": 5,
+    "predictions/2026-09-28/predictions.jsonl": 830,
+    "weather/2026-09-28.jsonl": 19
+  },
+  "lines_appended_total": 854,
+  "policy": {
+    "model_versions_preserved": true,
+    "overwrite_surviving_records": false,
+    "recomputed_probabilities": false,
+    "run_ids_preserved": true,
+    "timestamps_preserved": true
+  },
+  "recovery_id": "rec-20260928T181536Z-ef52e9a6",
+  "schema": "archive_recovery_manifest_v1",
+  "source_repo_branch": "data-archive"
+}
