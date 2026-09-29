@@ -1,0 +1,205 @@
+{
+ "schema": "dc_v2_holdout_v1",
+ "protocol": "dc_v2_protocol_v1",
+ "chosen": "dc_laplace_v2.d0030_s060",
+ "chosen_config": {
+  "decay_per_day": 0.003,
+  "prior_sd_team": 0.6,
+  "prior_mean_new_team": -0.15,
+  "prior_sd_new_team": 0.45,
+  "new_team_weighted_matches": 8.0,
+  "home_advantage_prior_mean": 0.2,
+  "home_advantage_prior_sd": 0.1,
+  "rho_prior_sd": 0.08,
+  "intercept_prior_sd": 0.3,
+  "max_goals": 10,
+  "version": "dc_laplace_v2.d0030_s060"
+ },
+ "holdout_seasons": [
+  "2024-25",
+  "2025-26"
+ ],
+ "data_hash": "sha256:ef224cf2c252f07a842b3bcfd4ba5c718c25cedd8937ffa174a74b86b5ba4221",
+ "n_holdout": 3463,
+ "v2": {
+  "n": 3463,
+  "ll_1x2": 0.9920265218403164,
+  "ll_1x2_market": 0.9716516631755918,
+  "ll_ou25": 0.6836505661291844,
+  "ll_ou25_market": 0.6731929439656462,
+  "brier_1x2": 0.5912921679597064,
+  "ece_home": 0.01802796961774587,
+  "ece_draw": 0.018992535479574187,
+  "ece_away": 0.015040676855807407,
+  "home_level_ratio": 1.0087357478770658,
+  "away_level_ratio": 0.9941010148131759,
+  "mean_p_home": 0.43349852943193506,
+  "realised_home": 0.4302627779382039,
+  "mean_p_over25": 0.5308888231920214,
+  "realised_over25": 0.5330638174992781,
+  "by_league": {
+   "D1": {
+    "n": 602,
+    "home_level_ratio": 1.0053110383852446,
+    "away_level_ratio": 0.9692962883533239,
+    "ll_1x2": 1.0006263879819093
+   },
+   "E0": {
+    "n": 750,
+    "home_level_ratio": 1.0461930310023042,
+    "away_level_ratio": 1.0130427055440887,
+    "ll_1x2": 1.0053461987502919
+   },
+   "F1": {
+    "n": 606,
+    "home_level_ratio": 0.9912541653152241,
+    "away_level_ratio": 1.0033392765947717,
+    "ll_1x2": 0.9866225318010184
+   },
+   "I1": {
+    "n": 750,
+    "home_level_ratio": 1.0423936442532897,
+    "away_level_ratio": 0.9890943498422695,
+    "ll_1x2": 0.986274250323867
+   },
+   "SP1": {
+    "n": 755,
+    "home_level_ratio": 0.9603043022731129,
+    "away_level_ratio": 0.9943350361066544,
+    "ll_1x2": 0.9819896271402252
+   }
+  },
+  "disagreement_gt10pt": {
+   "n": 322,
+   "bias_data_minus_realised": -0.055681720679788646
+  }
+ },
+ "v1": {
+  "n": 3463,
+  "ll_1x2": 1.001785313335744,
+  "ll_1x2_market": 0.9716516631755918,
+  "ll_ou25": 0.6864018457653358,
+  "ll_ou25_market": 0.6731929439656462,
+  "brier_1x2": 0.5979803908597969,
+  "ece_home": 0.03266756822934648,
+  "ece_draw": 0.013539300453662733,
+  "ece_away": 0.028352252747711422,
+  "home_level_ratio": 1.0021603864594868,
+  "away_level_ratio": 0.897512539028064,
+  "mean_p_home": 0.4563038407605889,
+  "realised_home": 0.4302627779382039,
+  "mean_p_over25": 0.5069028880734459,
+  "realised_over25": 0.5330638174992781,
+  "by_league": {
+   "D1": {
+    "n": 602,
+    "home_level_ratio": 0.9922714607820038,
+    "away_level_ratio": 0.8452289058109689,
+    "ll_1x2": 1.0145605342690254
+   },
+   "E0": {
+    "n": 750,
+    "home_level_ratio": 1.0266637944601027,
+    "away_level_ratio": 0.8834434168057815,
+    "ll_1x2": 1.0145835561560694
+   },
+   "F1": {
+    "n": 606,
+    "home_level_ratio": 0.998229190683113,
+    "away_level_ratio": 0.8947538028328729,
+    "ll_1x2": 0.9908348468927074
+   },
+   "I1": {
+    "n": 750,
+    "home_level_ratio": 1.0266669488227356,
+    "away_level_ratio": 0.9210753371922786,
+    "ll_1x2": 1.000220914384885
+   },
+   "SP1": {
+    "n": 755,
+    "home_level_ratio": 0.9689329873589487,
+    "away_level_ratio": 0.9453210259283029,
+    "ll_1x2": 0.989228911694082
+   }
+  },
+  "disagreement_gt10pt": {
+   "n": 648,
+   "bias_data_minus_realised": 0.032005750951077994
+  }
+ },
+ "paired_v2_minus_v1": {
+  "ll_1x2_diff": {
+   "mean": -0.00976,
+   "ci95": [
+    -0.01408,
+    -0.00557
+   ]
+  },
+  "ll_ou25_diff": {
+   "mean": -0.00275,
+   "ci95": [
+    -0.00601,
+    0.00021
+   ]
+  }
+ },
+ "market": {
+  "gap_1x2_vs_market": {
+   "mean": 0.02037,
+   "ci95": [
+    0.01529,
+    0.02523
+   ]
+  },
+  "gap_1x2_vs_market_v1": {
+   "mean": 0.03013,
+   "ci95": [
+    0.02445,
+    0.03598
+   ]
+  }
+ },
+ "hybrid": {
+  "v2_weight_by_season": {
+   "2018-19": null,
+   "2019-20": 1.0,
+   "2020-21": 1.0,
+   "2021-22": 1.0,
+   "2022-23": 1.0,
+   "2023-24": 1.0,
+   "2024-25": 1.0,
+   "2025-26": 1.0
+  },
+  "v1_weight_by_season": {
+   "2018-19": null,
+   "2019-20": 1.0,
+   "2020-21": 1.0,
+   "2021-22": 1.0,
+   "2022-23": 1.0,
+   "2023-24": 1.0,
+   "2024-25": 1.0,
+   "2025-26": 1.0
+  },
+  "ll_hybrid_v2_holdout": 0.9716516631755918,
+  "ll_hybrid_v1_holdout": 0.9716516631755918
+ },
+ "intercept_lr": {
+  "share_lr_ge_6_63": 0.56,
+  "n_fits": 25,
+  "passes": false
+ },
+ "acceptance": {
+  "away_level_error_le_2pct": true,
+  "home_level_error_le_2pct": true,
+  "away_level_error_le_2pct_every_league": false,
+  "home_level_error_le_2pct_every_league": false,
+  "home_ece_le_0_020": true,
+  "ll_1x2_better_than_v1_ci_upper_lt_0": true,
+  "ll_ou25_better_than_v1_ci_upper_lt_0": false,
+  "disagreement_gt10pt_bias_le_0_02": false,
+  "intercept_lr_ge_6_63_in_90pct": false,
+  "all_pass": false
+ },
+ "frozen_at": "2026-09-29T01:05:41.638696+00:00",
+ "note": "ONE-TIME holdout: the configuration was chosen on 2019-24 only; this file is not to be regenerated with a different choice"
+}
