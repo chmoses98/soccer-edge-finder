@@ -1,8 +1,8 @@
 {
-  "as_of": "2026-09-28T19:43:11.617655+00:00",
-  "events": 500,
+  "as_of": "2026-09-29T00:24:21.734530+00:00",
+  "events": 499,
   "events_skipped_unmapped": 268,
-  "fixtures_mapped": 232,
+  "fixtures_mapped": 231,
   "leagues": [
     "afc.champions",
     "arg.1",
@@ -74,13 +74,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 32,
-    "events": 42,
+    "captured": 11,
+    "events": 39,
     "failures": [],
-    "published_post": 7,
+    "published_post": 5,
     "published_pre_kickoff": 0,
-    "unchanged": 10,
-    "unpublished": 35
+    "unchanged": 28,
+    "unpublished": 34
   },
   "map_proposals": {
     "concacaf.nations.league": {
@@ -122,6 +122,7 @@
       "proposed": {},
       "unresolved": {
         "204": "Bolivia",
+        "2844": "Benin",
         "2845": "Burkina Faso",
         "2849": "Mali",
         "2850": "Congo DR",
@@ -151,12 +152,13 @@
         "7368": "Gambia",
         "7507": "Turkmenistan",
         "8601": "Comoros",
+        "8937": "Niger",
         "8939": "Mozambique"
       }
     }
   },
   "map_version": "4",
-  "results_appended": 90,
+  "results_appended": 8,
   "scoreboard_failures": [],
   "unmapped_leagues": [
     "bra.2",
@@ -196,6 +198,7 @@
     "22372": "CD Bazt\u00e1n",
     "2645": "US Virgin Islands",
     "2665": "Turks and Caicos Islands",
+    "2844": "Benin",
     "2845": "Burkina Faso",
     "2849": "Mali",
     "2850": "Congo DR",
@@ -225,17 +228,20 @@
     "7368": "Gambia",
     "7507": "Turkmenistan",
     "8601": "Comoros",
+    "8937": "Niger",
     "8939": "Mozambique"
   },
   "weather": {
-    "captured": 22,
-    "events": 30,
+    "captured": 27,
+    "events": 36,
     "failures": [
-      "401900608: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=17.0956&longitude=-61.7837&hourly=t",
-      "401900601: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=21.7825&longitude=-72.2521&hourly=t"
+      "401900606: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=17.7468&longitude=-64.7056&hourly=t",
+      "401900607: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=FFB%20Stadium&count=5&language=",
+      "401889276: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=44.6427&longitude=-63.5769&hourly=t",
+      "401889275: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Forest%20Green&count=5&language"
     ],
     "forecast_miss": 0,
-    "geocode_miss": 6,
+    "geocode_miss": 5,
     "no_venue": 0
   }
 }
