@@ -87,4 +87,8 @@ jobs:
       - name: Summary
         if: always()
         run: |
-          { echo '## odds-api-probe'; echo '```json'; head -c 5000 work/probe.json 2>/dev/null; echo; head -c 3000 work/sample.json 2>/dev/null; echo; head -c 2000 work/status.json 2>/dev/null; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          {
+            echo '## odds-api-probe'; echo '```json'
+            for f in probe sample status; do [ -f "work/$f.json" ] && head -c 5000 "work/$f.json" && echo; done
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY" || true
