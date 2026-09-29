@@ -1,10 +1,11 @@
 # Pinnacle reference via The Odds API (shared account with MLB)
 
-Status: implemented 2026-09-29, **inactive until the owner adds the secret** (one action, below). Code:
+Status: **live since 2026-09-29** (PR #21 merged at `997b2af`, probe fix PR #22 at `6d9cf90`; the owner added
+the existing key as the `ODDS_API_KEY` repository secret). Code:
 `providers/the_odds_api.py` (client), `reference/odds_budget.py` (guard + ledger),
 `reference/odds_api_capture.py` (batched capture), `config/odds_api_budget.json` (limits),
-`soccer dispatch tick` (runs it), `soccer odds-api status|probe`, workflows `kickoff-dispatch.yml` and
-`odds-api-probe.yml`. Tests: `tests/test_odds_api_reference.py`.
+`soccer dispatch tick` (runs it), `soccer odds-api status|probe|sample`, workflows `kickoff-dispatch.yml` and
+`odds-api-probe.yml`. Tests: `tests/test_odds_api_reference.py`. Live results: §7.
 
 ## Role: reference market only
 
@@ -45,13 +46,10 @@ Consumers and cadence:
 | soccer competitions | **expected yes, to be confirmed by the free probe** | The Odds API doesn't restrict sports by plan. Every mapped key is checked against the free `/sports` list at run time, and an inactive or unlisted key is skipped (`SPORT_NOT_ACTIVE`) without spending anything |
 | `bookmakers=pinnacle` | **yes** | proven on this key by the MLB collectors |
 | h2h / 1X2 | **yes (provider standard)** | soccer `h2h` has three outcomes (home, away, `Draw`). The parser requires all three or counts the market as `incomplete_markets` |
-| totals | **main line only** | one Pinnacle line per event (usually 2.5). Kalshi's other total lines (1.5, 3.5, …) get no reference. Alternate lines need the per-event endpoint and are deliberately **not** used |
-| spreads (Asian handicap) | **main line only** | same limit. Each side keeps its own handicap as `line` (`home -0.5` / `away 0.5`) |
+| totals | **main line only; live lines are Asian (3.25, 3.0)** | one Pinnacle line per event. The first live capture returned 3.25 and 3.0, never an X.5 line, so **no Kalshi total contract (0.5 … 5.5) matched** (§7). Alternate lines need the per-event endpoint and are deliberately **not** used |
+| spreads (Asian handicap) | **main line only** | same limit. Each side keeps its own handicap as `line` (live: `-1.75/+1.75`, `+1.5/-1.5`). Only half lines (±1.5) can match a Kalshi "wins by N+" contract; quarter lines cannot |
 
-I couldn't verify this live in this session. The key isn't in this repository, and the-odds-api.com is
-blocked by this session's network egress. The first `odds-api-probe` run (free) and the first captures
-(ledgered) settle it. Per-competition Pinnacle coverage of totals and spreads shows up as
-`incomplete_markets` in `odds_api/STATUS.json`.
+Verified live on 2026-09-29 (§7).
 
 ## 3. Capture strategy and its credit cost
 
@@ -135,3 +133,52 @@ kickoff dispatcher starts capturing at the next due horizon.
 If the plan proves unable to support this (for example, remaining quota near the floor before each reset),
 the guard blocks soccer, logs `BLOCKED_BUDGET_GUARD` with the reason, and MLB is unaffected. Read that
 result from `soccer odds-api status` and record it here rather than raising any limit.
+
+## 7. Live verification (2026-09-29)
+
+**Free probe** (runs 36518143952, 36518445133): authentication OK; `/sports` and every `/events` call returned
+`x-requests-last: 0` (free, as documented). Account at 03:40Z: used 8,416, remaining 11,584 (sum 20,000).
+No reset date is exposed by the provider headers. 43 soccer keys active. Of the mapped competitions, active:
+EPL, Championship, EFL Cup, La Liga, Bundesliga, DFB-Pokal, Serie A, Ligue 1, Eredivisie, Primeira Liga,
+Scottish Premiership, Süper Lig, MLS, Liga MX, Brasileirão, Argentina Primera, Libertadores, UCL, UEL, UECL,
+Nations League. Not listed today (off-season or no feed): FA Cup, Copa del Rey, Coppa Italia, Coupe de France,
+World Cup, Club World Cup, Women's World Cup, Euro, Euro qualifiers, Copa América, Saudi Pro League, **NWSL**.
+There is **no key** for CONCACAF Nations League or international friendlies, which Kalshi lists this week;
+they are recorded as `no_sport_key` and cost nothing.
+
+**Paid sample** (`odds-api sample`, batch `sample-20260929T034425Z`, UEFA Nations League): the 10
+Kalshi-listed fixtures of 2026-09-29 joined 10/10 to canonical fixtures (0 ambiguous, 0 unresolved names),
+**one** `/odds` call, `x-requests-last: 3` (used 8,416 → 8,419; remaining 11,581). Pinnacle quoted only
+**2 of 10** events about 15 h before kickoff (Spain–Croatia, Czech Republic–England). Each had 1X2 with all
+three outcomes, spreads and totals: 14 rows, 0 incomplete markets. Pinnacle `last_update` 03:44:23Z,
+captured 03:44:25.575Z (latency 2.6 s), `feed_quality = PINNACLE_AGGREGATED_DELAYED`,
+`source_quality = SHARP_REFERENCE`, kickoff 18:45Z matching the schedule. Example: Spain–Croatia 1.23 / 7.14 /
+11.37, power de-vig 0.802 / 0.123 / 0.075 (overround 1.041). Kalshi's TIE mid in the day's shadow record was
+0.115.
+
+**Close path**: `close_v2_for_record` on that shadow record picked the archived Pinnacle row
+(SHARP_REFERENCE) and classified it `STALE` at 900 min, which is correct: TRUE_CLOSE needs a capture ≤ 15 min
+before kickoff, which only the dispatcher's close capture produces. The Kalshi side of close_v2 still comes
+only from Kalshi snapshots.
+
+**Measured cost**: one `/odds` call with h2h + totals + spreads = **3 credits**; by the account's rule each
+market is 1 credit (Pinnacle h2h alone = 1, measured by the MLB activation audit). Free calls are 0.
+
+**Findings to carry forward**
+
+1. Totals: Pinnacle's main line is often Asian (quarter or whole). It then never equals a Kalshi X.5
+   contract, so no total-goals reference is produced for it. Converting a quarter line into X.5
+   probabilities needs a goal-distribution model: that is model research, not a capture fix.
+2. Coverage: Pinnacle via the aggregator omits many lower-profile internationals far from kickoff. The
+   dispatcher's T-60 / close captures will show whether coverage fills in near kickoff. A paid call that
+   returns no Pinnacle book still costs 3 credits.
+3. Dispatcher reliability: the horizon log shows 14 delivered / 46 missed (23 %) before this change,
+   because GitHub drops cron slots. Close captures inherit that rate until delivery improves.
+4. Projection from actual Kalshi-listed clusters: the 72 h schedule on 2026-09-29 (an international
+   window) has 3 clusters with an active key (Nations League 16:00 and 18:45, MLS 09-30 23:30). That is
+   6 paid calls = **18 credits** for the window, ≈ 40 credits/week at this week's rate. The in-season club
+   estimate (~60 clusters/week ≈ 360/week ≈ 1,550 / 30 days) stays an estimate until the first club weekend
+   is in the ledger.
+5. Decision-time reference: shadow records still take their entry reference from football-data
+   (`reference.probability_yes` is null for internationals). The Pinnacle rows serve close/CLV and offline
+   benchmarking.
