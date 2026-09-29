@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-29T00:24:21.734530+00:00",
+  "as_of": "2026-09-29T08:39:30.544661+00:00",
   "events": 499,
   "events_skipped_unmapped": 268,
   "fixtures_mapped": 231,
@@ -74,12 +74,12 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 11,
-    "events": 39,
+    "captured": 3,
+    "events": 34,
     "failures": [],
-    "published_post": 5,
+    "published_post": 0,
     "published_pre_kickoff": 0,
-    "unchanged": 28,
+    "unchanged": 31,
     "unpublished": 34
   },
   "map_proposals": {
@@ -158,7 +158,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 8,
+  "results_appended": 4,
   "scoreboard_failures": [],
   "unmapped_leagues": [
     "bra.2",
@@ -232,16 +232,14 @@
     "8939": "Mozambique"
   },
   "weather": {
-    "captured": 27,
-    "events": 36,
+    "captured": 26,
+    "events": 32,
     "failures": [
-      "401900606: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=17.7468&longitude=-64.7056&hourly=t",
-      "401900607: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=FFB%20Stadium&count=5&language=",
-      "401889276: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=44.6427&longitude=-63.5769&hourly=t",
-      "401889275: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Forest%20Green&count=5&language"
+      "401900598: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=18.2011&longitude=-67.1396&hourly=t",
+      "401900594: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=18.4719&longitude=-69.8923&hourly=t"
     ],
     "forecast_miss": 0,
-    "geocode_miss": 5,
+    "geocode_miss": 4,
     "no_venue": 0
   }
 }
