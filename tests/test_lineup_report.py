@@ -55,3 +55,25 @@ def test_lead_time_report_counts_and_distribution():
     # fixtures whose kickoff has not passed are tracked but not scored
     rep2 = lead_time_report(rows, as_of=KO - timedelta(hours=1))
     assert rep2["fixtures_kickoff_passed"] == 0 and rep2["fixtures_tracked"] == 4
+
+
+def test_backfilled_history_rows_are_not_capture_attempts(tmp_path):
+    import json
+
+    from soccer_edge.evaluation.lineups import lineup_rows
+
+    live = tmp_path / "lineups" / "2026-10-10"
+    live.mkdir(parents=True)
+    hist = tmp_path / "lineups" / "history"
+    hist.mkdir()
+    row = {"schema": "espn_lineup_snapshot_v1", "espn_event_id": "1", "league": "eng.1"}
+    (live / "eng.1.jsonl").write_text(json.dumps(row) + "\n")
+    (hist / "eng.1.jsonl").write_text(
+        json.dumps({**row, "espn_event_id": "2", "backfill": True, "lineup_state": "post_hoc"})
+        + "\n"
+    )
+    (live / "esp.1.jsonl").write_text(
+        json.dumps({**row, "espn_event_id": "3", "backfill": True, "league": "esp.1"}) + "\n"
+    )
+    assert [r["espn_event_id"] for r in lineup_rows(tmp_path)] == ["1"]
+    assert len(lineup_rows(tmp_path, include_backfill=True)) == 3

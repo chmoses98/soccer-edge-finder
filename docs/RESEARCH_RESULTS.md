@@ -129,3 +129,23 @@ heavy-favourite pricing at Elo gap >= 400, neutral-site goal calibration) -> not
 logit(Bet365 de-vigged) is ~0.33 (1X2, home/away 0.37, draw 0.18) and ~0.27 (O/U 2.5) in logit units,
 ~0.065 probability points, nearly identical across dc_laplace_v1 and v2 variants. Used only by edge_v2,
 where the model weight is 0 today.
+
+## Lineup oracle result (phase 19)
+
+STOP under the pre-registered rule: perfect-XI 1X2 gain -0.0009 [-0.0048, +0.0035] on 1,061 matches
+(O/U 2.5 -0.0046 [-0.0081, -0.0008]); four of five leagues chose no adjustment. docs/LINEUPS.md.
+
+## xg_strength_v1 one-time holdout (phase 20)
+
+PASS: paired 1X2 log-loss gain +0.0061 [0.0041, 0.0082] over the goal-only dc_laplace_v2 fit on the
+2021-22..2022-23 holdout (n = 3,638), omega = 0.75 chosen on 2017-18..2020-21; O/U 2.5 +0.0046. Stays
+RESEARCH_ONLY (historical xG source retired; prospective feed unverified). docs/XG_DATA_AUDIT.md.
+
+## dc_laplace_v2 selection + one-time holdout + engine reconciliation (phases 12-14)
+
+Chosen d0030_s060 on 2019-24; holdout 2024-26 (n = 3,463): 1X2 log loss 0.99203 vs v1 1.00179 (paired
+-0.0098 [-0.0141, -0.0056]), away level ratio 0.994 vs 0.898, home ECE 0.018 vs 0.033, but 4 of 9
+pre-registered criteria FAIL (per-league levels, O/U significance, >10 pt disagreement bias -0.056,
+intercept LR share 0.56) -> model default stays v1. world_sim_v1 shows systematic draw (-1.1 pt) and
+BTTS (+1.3 pt) gaps to the exact matrix; world_sim_v2 reconciles within Monte Carlo error.
+docs/RESEARCH_DC_V2.md.

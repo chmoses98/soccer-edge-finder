@@ -1163,8 +1163,11 @@ def build_parser() -> argparse.ArgumentParser:
     r.add_argument(
         "--engine-version",
         choices=["minute_engine_v1", "world_sim_v2"],
-        default="minute_engine_v1",
-        help="simulation engine (world_sim_v2 = exact DC score matrix, analytic full-time pricing)",
+        default="world_sim_v2",
+        help=(
+            "simulation engine; world_sim_v2 (default since 2026-09-29, docs/RESEARCH_DC_V2.md) = exact "
+            "DC score matrix + analytic full-time pricing; minute_engine_v1 = the audited v1 path"
+        ),
     )
     r.add_argument(
         "--worlds-version",
@@ -1423,7 +1426,7 @@ def build_parser() -> argparse.ArgumentParser:
         help="also run a fast, 3-hour-window RUN SOCCER at each due horizon (near-close predictions)",
     )
     dt.add_argument("--run-model-version", default="dc_laplace_v1")
-    dt.add_argument("--run-engine-version", default="minute_engine_v1")
+    dt.add_argument("--run-engine-version", default="world_sim_v2")
     dt.add_argument("--run-worlds-version", default="worlds_v1")
     dt.set_defaults(func=cmd_dispatch_tick)
     dd = dpsub.add_parser("diagnostics", help="horizon-delivery diagnostics from the archived log")

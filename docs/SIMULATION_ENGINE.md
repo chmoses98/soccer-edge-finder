@@ -85,3 +85,15 @@ Production selection: `RunConfig.engine_version` (`minute_engine_v1` | `world_si
 id becomes `data_only.world_sim_v2` so v2 evidence never mixes with v1 cells. The full historical engine
 benchmark (analytic vs v1 vs v2 on a stratified subsample, both posteriors) is
 `data/research/world_sim_benchmark.json` (`research/dc_v2.py engines`).
+
+
+## Production default switched to `world_sim_v2` (2026-09-29)
+
+The engine reconciliation on 1,500 real matches (docs/RESEARCH_DC_V2.md) showed the minute engine's
+draw deficit (about 1.1 pt) and BTTS excess (about 1.3 pt) against the exact per-world Dixon-Coles matrix
+to be systematic, the audit's B2 defect; `world_sim_v2` reconciles within Monte Carlo error and prices
+full-time families analytically. `soccer run` and the dispatcher's fast run therefore default to
+`--engine-version world_sim_v2` from this date. The model default is unchanged (`dc_laplace_v1`; the v2
+model did not meet its acceptance). Every record carries `engine_version` and `model_family`
+(`data_only.world_sim_v2` for records priced by the new engine), so archived v1 records stay
+distinguishable and the switch is reversible by flag (`--engine-version minute_engine_v1`).

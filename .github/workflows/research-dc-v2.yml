@@ -52,6 +52,8 @@ jobs:
           sha256sum data/cache/Matches.csv
       - name: Walk-forward for ${{ matrix.variant }}
         timeout-minutes: 140
+        env:
+          PYTHONPATH: .
         run: python research/wf_common.py --variant "${{ matrix.variant }}"
       - uses: actions/upload-artifact@v4
         with:

@@ -32,13 +32,21 @@ def _dt(v: str | None) -> datetime | None:
         return datetime.fromisoformat(v)
 
 
-def lineup_rows(archive_root: Path) -> list[dict[str, Any]]:
+def lineup_rows(archive_root: Path, *, include_backfill: bool = False) -> list[dict[str, Any]]:
+    """Prospective capture attempts only by default: `lineups/history/` holds post-hoc backfilled XIs
+    (`backfill: true`, fetched long after kickoff for the oracle study); counting those as capture
+    attempts would report a lead time the capture pipeline never achieved."""
     out: list[dict[str, Any]] = []
     for p in sorted((archive_root / "lineups").glob("*/*.jsonl")):
+        if p.parent.name == "history" and not include_backfill:
+            continue
         with p.open(encoding="utf-8") as fh:
             for ln in fh:
                 if ln.strip():
-                    out.append(json.loads(ln))
+                    row = json.loads(ln)
+                    if row.get("backfill") and not include_backfill:
+                        continue
+                    out.append(row)
     return out
 
 
