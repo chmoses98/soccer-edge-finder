@@ -12,6 +12,11 @@ unchanged: `{"default": "RESEARCH_ONLY", "entries": {}}`). The promotion evaluat
 close observation). Nothing in this build changes that; the build makes the evidence pipeline capable of
 producing the proof the gates require, it does not produce the proof.
 
+**Update 2026-09-29 (reference gate):** a Pinnacle reference through the owner's existing The Odds API
+account (shared with `chmoses98/edge-finder-api`) is implemented and budget-guarded
+(docs/ODDS_API_REFERENCE.md). It turns on when the owner adds the same `ODDS_API_KEY` as a repository
+secret. Then the availability gate can pass, and the TRUE_CLOSE and CLV gates start accumulating evidence.
+
 ## B. MAIN / PRS
 * `main` at **6993fbddde53b36e13747892ea964c2b8a2bde79** (PR #19 merge, 2026-09-29T01:2xZ). CI (`ci.yml`:
   tests on 3.11/3.12 + `archive-verify`) green on every merge; the data-archive publisher's pre-commit

@@ -48,6 +48,10 @@ jobs:
           retention-days: 30
       - name: Microstructure summary (Phase 18) + policy replay (Phase 20)
         continue-on-error: true
+        env:
+          # tells the promotion evaluator whether the Pinnacle reference secret exists (the key itself is not
+          # passed to this job)
+          SOCCER_ODDS_API_CONFIGURED: ${{ secrets.ODDS_API_KEY != '' }}
         run: |
           python -m soccer_edge.cli microstructure --snapshots-dir archive/snapshots --out work/evaluation/microstructure_latest.json | tail -5
           python -m soccer_edge.cli replay-policies --archive-dir archive/predictions --settlements-dir archive/settlements --out work/evaluation/policy_replay_latest.json | tail -20

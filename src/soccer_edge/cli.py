@@ -5,7 +5,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 from soccer_edge.core.serialization import read_json, read_json_or, write_json
@@ -797,6 +797,12 @@ def cmd_dispatch_tick(args: argparse.Namespace) -> int:
         if src.exists():
             (out / rel).parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(src, out / rel)
+    # the shared Odds API credit ledger: the guard's spend history (append-merged back on publish)
+    budget_src = archive / "odds_api" / "budget"
+    if budget_src.is_dir():
+        (out / "odds_api" / "budget").mkdir(parents=True, exist_ok=True)
+        for f in sorted(budget_src.glob("*.jsonl"))[-31:]:
+            shutil.copyfile(f, out / "odds_api" / "budget" / f.name)
     batches = 0
     deadline = now + timedelta(minutes=args.max_hold_minutes)
     summary: list[dict] = []
@@ -864,6 +870,8 @@ def _dispatch_actions(out: Path, due, batch_id: str, args: argparse.Namespace) -
         done.append(f"reference:{'ok' if rc == 0 else 'empty'}")
     except Exception as exc:
         done.append(f"reference:error:{str(exc)[:80]}")
+    if not args.skip_odds_api:
+        done.append(_odds_api_action(out, due, batch_id))
     if args.with_run:
         # near-close predictions (the CLV evidence the promotion gates need): a FAST run scoped to the
         # next 3 hours, reconciled against the daily catalog; ledger index restored from the archive
@@ -930,6 +938,177 @@ def _dispatch_actions(out: Path, due, batch_id: str, args: argparse.Namespace) -
             except Exception as exc:
                 done.append(f"lineups:error:{str(exc)[:80]}")
     return done
+
+
+def _odds_api_action(out: Path, due, batch_id: str) -> str:
+    """Pinnacle reference via The Odds API for the due Kalshi-listed fixtures (budget-guarded, batched per
+    competition). Isolated like every other action: a failure is recorded, never fatal."""
+    from soccer_edge.reference.odds_api_capture import DueFixture, capture, status_summary
+    from soccer_edge.reference.odds_budget import BudgetConfig
+
+    try:
+        now = utc_now()
+        fixtures = [
+            DueFixture(
+                d.fixture.fixture_id,
+                d.fixture.competition_id,
+                d.fixture.kickoff_utc,
+                (d.fixture.kickoff_utc - now).total_seconds() / 60,
+                d.fixture.source == "run_output" or d.fixture.markets_discovered > 0,
+            )
+            for d in due
+        ]
+        stats = capture(
+            fixtures,
+            registry=_registry(),
+            out_root=out,
+            cfg=BudgetConfig.load(REPO_ROOT / "config" / "odds_api_budget.json"),
+            now=now,
+            batch_id=batch_id,
+        )
+        write_json(out / "odds_api" / "STATUS.json", status_summary(stats, now))
+        print("[odds_api]", json.dumps(status_summary(stats, now), default=str)[:800])
+        return (
+            f"odds_api:{stats.get('status', '?').lower()}:"
+            f"credits={stats.get('credits_charged', 0)}:rows={stats.get('snapshots', 0)}"
+        )
+    except Exception as exc:
+        return f"odds_api:error:{type(exc).__name__}:{str(exc)[:80]}"
+
+
+def cmd_odds_api_status(args: argparse.Namespace) -> int:
+    """Soccer's spend on the shared Odds API account, from the append-only ledger (no HTTP)."""
+    from collections import Counter
+
+    from soccer_edge.reference.odds_budget import BudgetConfig, BudgetLedger
+
+    root = Path(args.archive_dir)
+    now = utc_now()
+    cfg = BudgetConfig.load(REPO_ROOT / "config" / "odds_api_budget.json")
+    led = BudgetLedger(root)
+    rows = led.rows_since(now, args.days)
+    last = next(
+        (
+            r
+            for r in sorted(rows, key=lambda r: r.get("logged_at", ""), reverse=True)
+            if r.get("requests_remaining") is not None
+        ),
+        None,
+    )
+    by_day: dict[str, int] = {}
+    for r in rows:
+        day = (r.get("logged_at") or "")[:10]
+        by_day[day] = by_day.get(day, 0) + int(r.get("credits_charged") or 0)
+    print(
+        json.dumps(
+            {
+                "days": args.days,
+                "soccer_credits_charged": sum(by_day.values()),
+                "soccer_credits_by_day": dict(sorted(by_day.items())),
+                "rows_by_kind_status": Counter(f"{r.get('kind')}:{r.get('status')}" for r in rows),
+                "blocked_reasons": Counter(
+                    r.get("reason") for r in rows if r.get("status") == "BLOCKED_BUDGET_GUARD"
+                ),
+                "latest_account_quota": (
+                    {
+                        k: last.get(k)
+                        for k in (
+                            "logged_at",
+                            "requests_used",
+                            "requests_remaining",
+                            "requests_last",
+                        )
+                    }
+                    if last
+                    else None
+                ),
+                "guard": {
+                    "daily_credit_ceiling": cfg.daily_credit_ceiling,
+                    "rolling_30d_credit_ceiling": cfg.rolling_30d_credit_ceiling,
+                    "account_reserve_floor": cfg.account_reserve_floor,
+                    "spent_30d": led.spent(now, 30),
+                },
+            },
+            indent=1,
+            default=str,
+        )
+    )
+    return 0
+
+
+def cmd_odds_api_probe(args: argparse.Namespace) -> int:
+    """FREE endpoints only (/sports, optional /events): which soccer keys are active, the account's quota
+    headers, and whether every mapped competition has a live sport key. Spends no credits by design; the
+    ledger row proves it (credits_charged = x-requests-last)."""
+    from soccer_edge.providers.the_odds_api import SPORT_KEYS, OddsApiClient, api_key_configured
+    from soccer_edge.reference.odds_budget import BudgetLedger, charge
+
+    if not api_key_configured():
+        print(json.dumps({"status": "NOT_CONFIGURED", "secret": "ODDS_API_KEY"}))
+        return 2
+    now = utc_now()
+    led = BudgetLedger(Path(args.out_dir))
+    with OddsApiClient() as client:
+        resp = client.get_sports()
+        c, basis = charge(resp.quota, 0)
+        led.append(
+            now,
+            {
+                **resp.meta(),
+                "batch_id": "probe",
+                "status": "OK" if resp.ok else "REQUEST_FAILED",
+                "credits_charged": c,
+                "charge_basis": basis,
+            },
+        )
+        soccer = sorted(
+            (s for s in (resp.payload or []) if str(s.get("key", "")).startswith("soccer_")),
+            key=lambda s: s["key"],
+        )
+        active = {s["key"] for s in soccer if s.get("active")}
+        events = {}
+        for sk in args.events or []:
+            ev = client.get_events(sk, now, now + timedelta(days=args.days_ahead))
+            c2, b2 = charge(ev.quota, 0)
+            led.append(
+                now,
+                {
+                    **ev.meta(),
+                    "batch_id": "probe",
+                    "status": "OK" if ev.ok else "REQUEST_FAILED",
+                    "credits_charged": c2,
+                    "charge_basis": b2,
+                },
+            )
+            events[sk] = {
+                "meta": ev.meta(),
+                "events": len(ev.payload or []),
+                "sample": [
+                    (e.get("home_team"), e.get("away_team"), e.get("commence_time"))
+                    for e in (ev.payload or [])[:5]
+                ],
+            }
+    print(
+        json.dumps(
+            {
+                "sports_call": resp.meta(),
+                "soccer_keys_listed": len(soccer),
+                "soccer_keys_active": sorted(active),
+                "mapped_competitions": {
+                    cid: {
+                        "sport_key": sk,
+                        "active": sk in active,
+                        "listed": any(s["key"] == sk for s in soccer),
+                    }
+                    for cid, sk in sorted(SPORT_KEYS.items())
+                },
+                "events": events,
+            },
+            indent=1,
+            default=str,
+        )
+    )
+    return 0 if resp.ok else 1
 
 
 def cmd_dispatch_diagnostics(args: argparse.Namespace) -> int:
@@ -1425,6 +1604,11 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="also run a fast, 3-hour-window RUN SOCCER at each due horizon (near-close predictions)",
     )
+    dt.add_argument(
+        "--skip-odds-api",
+        action="store_true",
+        help="skip the budget-guarded Pinnacle reference capture (The Odds API)",
+    )
     dt.add_argument("--run-model-version", default="dc_laplace_v1")
     dt.add_argument("--run-engine-version", default="world_sim_v2")
     dt.add_argument("--run-worlds-version", default="worlds_v1")
@@ -1433,6 +1617,22 @@ def build_parser() -> argparse.ArgumentParser:
     dd.add_argument("--archive-dir", required=True)
     dd.add_argument("--out", default=None)
     dd.set_defaults(func=cmd_dispatch_diagnostics)
+
+    oa = sub.add_parser(
+        "odds-api", help="Pinnacle reference via The Odds API (shared account; budget-guarded)"
+    )
+    oasub = oa.add_subparsers(dest="odds_api_cmd", required=True)
+    oas = oasub.add_parser(
+        "status", help="soccer's credit spend + latest account quota (ledger only)"
+    )
+    oas.add_argument("--archive-dir", required=True, help="root holding odds_api/budget/")
+    oas.add_argument("--days", type=int, default=30)
+    oas.set_defaults(func=cmd_odds_api_status)
+    oap = oasub.add_parser("probe", help="FREE endpoints only: active soccer keys + quota headers")
+    oap.add_argument("--out-dir", required=True, help="ledger root (odds_api/budget/ is appended)")
+    oap.add_argument("--events", nargs="*", help="sport keys to list upcoming events for (free)")
+    oap.add_argument("--days-ahead", type=float, default=7.0)
+    oap.set_defaults(func=cmd_odds_api_probe)
 
     pe = sub.add_parser(
         "promote", help="promotion evaluator (report only; never edits authority.json)"

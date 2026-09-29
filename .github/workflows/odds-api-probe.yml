@@ -1,0 +1,53 @@
+name: odds-api-probe
+
+# Manual, FREE-endpoint-only check of the Odds API key shared with chmoses98/edge-finder-api: which soccer
+# sport keys are active, which mapped competitions have one, upcoming events for chosen keys, and the
+# account's quota headers. It never calls /odds, so it spends no credits; the appended ledger rows prove it
+# (credits_charged = the provider's x-requests-last). docs/ODDS_API_REFERENCE.md.
+
+on:
+  workflow_dispatch:
+    inputs:
+      events:
+        description: "space-separated sport keys to list upcoming events for (free), e.g. soccer_epl soccer_usa_mls"
+        type: string
+        default: "soccer_epl soccer_usa_mls"
+
+concurrency:
+  group: data-writer-archive-kickoff
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e .
+      - name: Probe (free endpoints only)
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          EVENTS: ${{ inputs.events }}
+        run: |
+          set -o pipefail
+          mkdir -p work
+          # shellcheck disable=SC2086
+          python -m soccer_edge.cli odds-api probe --out-dir work --events $EVENTS | tee work/probe.json
+      - name: Publish ledger rows
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          [ -d work/odds_api ] || exit 0
+          scripts/archive_publish.sh work/odds_api odds_api "odds-api-probe ${{ github.run_id }} $(date -u +%Y-%m-%dT%H:%MZ)"
+      - name: Summary
+        if: always()
+        run: |
+          { echo '## odds-api-probe'; echo '```json'; head -c 6000 work/probe.json 2>/dev/null; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
