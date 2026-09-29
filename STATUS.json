@@ -1,8 +1,8 @@
 {
-  "as_of": "2026-09-28T23:55:32.501456+00:00",
-  "events": 20,
+  "as_of": "2026-09-29T09:45:35.269044+00:00",
+  "events": 19,
   "events_skipped_unmapped": 3,
-  "fixtures_mapped": 17,
+  "fixtures_mapped": 16,
   "leagues": [
     "concacaf.nations.league",
     "fifa.friendly",
@@ -15,24 +15,28 @@
     "uefa.nations"
   ],
   "lineups": {
-    "captured": 0,
-    "events": 7,
+    "captured": 1,
+    "events": 19,
     "failures": [],
-    "published_post": 2,
-    "published_pre_kickoff": 3,
-    "unchanged": 7,
-    "unpublished": 2
+    "published_post": 0,
+    "published_pre_kickoff": 1,
+    "unchanged": 18,
+    "unpublished": 18
   },
   "map_proposals": {
+    "concacaf.nations.league": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "2645": "US Virgin Islands",
+        "2665": "Turks and Caicos Islands"
+      }
+    },
     "fifa.friendly": {
       "ambiguous": {},
       "proposed": {},
       "unresolved": {
-        "4390": "Maldives",
-        "6167": "Palestine",
-        "6723": "Tajikistan",
-        "6724": "Kyrgyz Republic",
-        "7507": "Turkmenistan"
+        "454": "Russia"
       }
     }
   },
@@ -41,15 +45,13 @@
   "scoreboard_failures": [],
   "unmapped_leagues": [],
   "unmapped_team_ids": {
-    "4390": "Maldives",
-    "6167": "Palestine",
-    "6723": "Tajikistan",
-    "6724": "Kyrgyz Republic",
-    "7507": "Turkmenistan"
+    "2645": "US Virgin Islands",
+    "2665": "Turks and Caicos Islands",
+    "454": "Russia"
   },
   "weather": {
-    "captured": 4,
-    "events": 7,
+    "captured": 16,
+    "events": 19,
     "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 3,

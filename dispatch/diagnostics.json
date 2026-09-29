@@ -5,18 +5,18 @@
       "achieved_minutes_p10": 57.49,
       "achieved_minutes_p90": 127.46,
       "delivered": 3,
-      "delivery_rate": 0.25,
+      "delivery_rate": 0.23076923076923078,
       "lateness_minutes_max": 62.51,
       "lateness_minutes_median": 2.51,
-      "missed": 9
+      "missed": 10
     },
     "15": {
       "achieved_minutes_median": 14.43,
-      "achieved_minutes_p10": 14.43,
+      "achieved_minutes_p10": 14.38,
       "achieved_minutes_p90": 14.43,
-      "delivered": 3,
-      "delivery_rate": 0.25,
-      "lateness_minutes_max": 0.57,
+      "delivered": 4,
+      "delivery_rate": 0.3076923076923077,
+      "lateness_minutes_max": 0.62,
       "lateness_minutes_median": 0.57,
       "missed": 9
     },
@@ -24,8 +24,8 @@
       "achieved_minutes_median": 25.0,
       "achieved_minutes_p10": 25.0,
       "achieved_minutes_p90": 30.45,
-      "delivered": 4,
-      "delivery_rate": 0.3333333333333333,
+      "delivered": 5,
+      "delivery_rate": 0.38461538461538464,
       "lateness_minutes_max": 5.0,
       "lateness_minutes_median": 5.0,
       "missed": 8
@@ -41,25 +41,74 @@
       "missed": 9
     },
     "60": {
-      "achieved_minutes_median": 57.49,
-      "achieved_minutes_p10": 57.49,
+      "achieved_minutes_median": 45.76,
+      "achieved_minutes_p10": 45.76,
       "achieved_minutes_p90": 57.49,
-      "delivered": 1,
-      "delivery_rate": 0.08333333333333333,
-      "lateness_minutes_max": 2.51,
+      "delivered": 2,
+      "delivery_rate": 0.15384615384615385,
+      "lateness_minutes_max": 14.24,
       "lateness_minutes_median": 2.51,
       "missed": 11
     }
   },
-  "delivered_total": 14,
-  "delivery_rate_total": 0.23333333333333334,
-  "fixtures_tracked": 12,
-  "generated_at": "2026-09-29T03:46:59Z",
+  "delivered_total": 17,
+  "delivery_rate_total": 0.265625,
+  "fixtures_tracked": 13,
+  "generated_at": "2026-09-29T09:45:37Z",
   "last_tick": {
-    "batches": 0,
-    "summary": []
+    "batches": 3,
+    "summary": [
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:rows=0",
+          "lineups:ok:9"
+        ],
+        "batch_id": "kd-20260929T090717Z",
+        "delivered": [
+          [
+            "fx:fifa.friendly:2026:nat.aus:nat.bra",
+            60,
+            45.76
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:rows=0",
+          "lineups:ok:9"
+        ],
+        "batch_id": "kd-20260929T092705Z",
+        "delivered": [
+          [
+            "fx:fifa.friendly:2026:nat.aus:nat.bra",
+            30,
+            30.28
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:rows=0",
+          "lineups:ok:9"
+        ],
+        "batch_id": "kd-20260929T094305Z",
+        "delivered": [
+          [
+            "fx:fifa.friendly:2026:nat.aus:nat.bra",
+            15,
+            14.38
+          ]
+        ]
+      }
+    ]
   },
-  "missed_total": 46,
+  "missed_total": 47,
   "n_pending_fixtures": 35,
   "pending_fixtures": [
     {
