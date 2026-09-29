@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-09-28T20:01:33.621772Z",
+  "as_of": "2026-09-29T01:09:19.690012Z",
   "by_competition": {
     "concacaf.nations_league": {
       "PENDING_EVIDENCE": 0,
-      "PENDING_KICKOFF": 384,
+      "PENDING_KICKOFF": 318,
       "PENDING_MAPPING": 0,
       "PENDING_RESULT": 0,
-      "SETTLED": 0,
+      "SETTLED": 138,
       "UNSETTLEABLE": 0,
       "UNSUPPORTED_SETTLEMENT": 0
     },
@@ -30,7 +30,7 @@
     },
     "fifa.friendly": {
       "PENDING_EVIDENCE": 0,
-      "PENDING_KICKOFF": 56,
+      "PENDING_KICKOFF": 130,
       "PENDING_MAPPING": 0,
       "PENDING_RESULT": 0,
       "SETTLED": 0,
@@ -65,11 +65,20 @@
       "UNSUPPORTED_SETTLEMENT": 0
     },
     "uefa.nations_league": {
-      "PENDING_EVIDENCE": 30,
-      "PENDING_KICKOFF": 1342,
+      "PENDING_EVIDENCE": 32,
+      "PENDING_KICKOFF": 1586,
       "PENDING_MAPPING": 0,
       "PENDING_RESULT": 0,
-      "SETTLED": 336,
+      "SETTLED": 700,
+      "UNSETTLEABLE": 0,
+      "UNSUPPORTED_SETTLEMENT": 0
+    },
+    "usa.mls": {
+      "PENDING_EVIDENCE": 0,
+      "PENDING_KICKOFF": 32,
+      "PENDING_MAPPING": 0,
+      "PENDING_RESULT": 0,
+      "SETTLED": 0,
       "UNSETTLEABLE": 0,
       "UNSUPPORTED_SETTLEMENT": 0
     }
@@ -77,100 +86,109 @@
   "by_family": {
     "btts": {
       "PENDING_EVIDENCE": 0,
-      "PENDING_KICKOFF": 44,
-      "PENDING_MAPPING": 0,
-      "PENDING_RESULT": 0,
-      "SETTLED": 6,
-      "UNSETTLEABLE": 0,
-      "UNSUPPORTED_SETTLEMENT": 0
-    },
-    "exact_score": {
-      "PENDING_EVIDENCE": 0,
-      "PENDING_KICKOFF": 660,
-      "PENDING_MAPPING": 0,
-      "PENDING_RESULT": 0,
-      "SETTLED": 180,
-      "UNSETTLEABLE": 0,
-      "UNSUPPORTED_SETTLEMENT": 0
-    },
-    "first_half_btts": {
-      "PENDING_EVIDENCE": 2,
-      "PENDING_KICKOFF": 36,
-      "PENDING_MAPPING": 0,
-      "PENDING_RESULT": 0,
-      "SETTLED": 4,
-      "UNSETTLEABLE": 0,
-      "UNSUPPORTED_SETTLEMENT": 0
-    },
-    "first_half_handicap": {
-      "PENDING_EVIDENCE": 4,
-      "PENDING_KICKOFF": 72,
-      "PENDING_MAPPING": 0,
-      "PENDING_RESULT": 0,
-      "SETTLED": 8,
-      "UNSETTLEABLE": 0,
-      "UNSUPPORTED_SETTLEMENT": 0
-    },
-    "first_half_result": {
-      "PENDING_EVIDENCE": 6,
-      "PENDING_KICKOFF": 108,
-      "PENDING_MAPPING": 0,
-      "PENDING_RESULT": 0,
-      "SETTLED": 12,
-      "UNSETTLEABLE": 0,
-      "UNSUPPORTED_SETTLEMENT": 0
-    },
-    "first_half_total": {
-      "PENDING_EVIDENCE": 6,
-      "PENDING_KICKOFF": 108,
-      "PENDING_MAPPING": 0,
-      "PENDING_RESULT": 0,
-      "SETTLED": 12,
-      "UNSETTLEABLE": 0,
-      "UNSUPPORTED_SETTLEMENT": 0
-    },
-    "first_to_score": {
-      "PENDING_EVIDENCE": 12,
-      "PENDING_KICKOFF": 44,
-      "PENDING_MAPPING": 0,
-      "PENDING_RESULT": 0,
-      "SETTLED": 0,
-      "UNSETTLEABLE": 0,
-      "UNSUPPORTED_SETTLEMENT": 0
-    },
-    "handicap": {
-      "PENDING_EVIDENCE": 0,
-      "PENDING_KICKOFF": 176,
-      "PENDING_MAPPING": 0,
-      "PENDING_RESULT": 0,
-      "SETTLED": 24,
-      "UNSETTLEABLE": 0,
-      "UNSUPPORTED_SETTLEMENT": 0
-    },
-    "match_result_3way": {
-      "PENDING_EVIDENCE": 0,
-      "PENDING_KICKOFF": 255,
+      "PENDING_KICKOFF": 50,
       "PENDING_MAPPING": 0,
       "PENDING_RESULT": 0,
       "SETTLED": 18,
       "UNSETTLEABLE": 0,
       "UNSUPPORTED_SETTLEMENT": 0
     },
-    "team_total": {
+    "exact_score": {
       "PENDING_EVIDENCE": 0,
-      "PENDING_KICKOFF": 132,
+      "PENDING_KICKOFF": 780,
       "PENDING_MAPPING": 0,
       "PENDING_RESULT": 0,
-      "SETTLED": 36,
+      "SETTLED": 360,
+      "UNSETTLEABLE": 0,
+      "UNSUPPORTED_SETTLEMENT": 0
+    },
+    "first_half_btts": {
+      "PENDING_EVIDENCE": 2,
+      "PENDING_KICKOFF": 40,
+      "PENDING_MAPPING": 0,
+      "PENDING_RESULT": 0,
+      "SETTLED": 16,
+      "UNSETTLEABLE": 0,
+      "UNSUPPORTED_SETTLEMENT": 0
+    },
+    "first_half_handicap": {
+      "PENDING_EVIDENCE": 4,
+      "PENDING_KICKOFF": 80,
+      "PENDING_MAPPING": 0,
+      "PENDING_RESULT": 0,
+      "SETTLED": 32,
+      "UNSETTLEABLE": 0,
+      "UNSUPPORTED_SETTLEMENT": 0
+    },
+    "first_half_result": {
+      "PENDING_EVIDENCE": 6,
+      "PENDING_KICKOFF": 120,
+      "PENDING_MAPPING": 0,
+      "PENDING_RESULT": 0,
+      "SETTLED": 48,
+      "UNSETTLEABLE": 0,
+      "UNSUPPORTED_SETTLEMENT": 0
+    },
+    "first_half_total": {
+      "PENDING_EVIDENCE": 6,
+      "PENDING_KICKOFF": 120,
+      "PENDING_MAPPING": 0,
+      "PENDING_RESULT": 0,
+      "SETTLED": 48,
+      "UNSETTLEABLE": 0,
+      "UNSUPPORTED_SETTLEMENT": 0
+    },
+    "first_to_score": {
+      "PENDING_EVIDENCE": 14,
+      "PENDING_KICKOFF": 52,
+      "PENDING_MAPPING": 0,
+      "PENDING_RESULT": 0,
+      "SETTLED": 10,
+      "UNSETTLEABLE": 0,
+      "UNSUPPORTED_SETTLEMENT": 0
+    },
+    "handicap": {
+      "PENDING_EVIDENCE": 0,
+      "PENDING_KICKOFF": 200,
+      "PENDING_MAPPING": 0,
+      "PENDING_RESULT": 0,
+      "SETTLED": 72,
+      "UNSETTLEABLE": 0,
+      "UNSUPPORTED_SETTLEMENT": 0
+    },
+    "match_result_3way": {
+      "PENDING_EVIDENCE": 0,
+      "PENDING_KICKOFF": 276,
+      "PENDING_MAPPING": 0,
+      "PENDING_RESULT": 0,
+      "SETTLED": 54,
+      "UNSETTLEABLE": 0,
+      "UNSUPPORTED_SETTLEMENT": 0
+    },
+    "second_half_result": {
+      "PENDING_EVIDENCE": 0,
+      "PENDING_KICKOFF": 3,
+      "PENDING_MAPPING": 0,
+      "PENDING_RESULT": 0,
+      "SETTLED": 0,
+      "UNSETTLEABLE": 0,
+      "UNSUPPORTED_SETTLEMENT": 0
+    },
+    "team_total": {
+      "PENDING_EVIDENCE": 0,
+      "PENDING_KICKOFF": 162,
+      "PENDING_MAPPING": 0,
+      "PENDING_RESULT": 0,
+      "SETTLED": 72,
       "UNSETTLEABLE": 0,
       "UNSUPPORTED_SETTLEMENT": 0
     },
     "total_goals": {
       "PENDING_EVIDENCE": 0,
-      "PENDING_KICKOFF": 264,
+      "PENDING_KICKOFF": 300,
       "PENDING_MAPPING": 0,
       "PENDING_RESULT": 0,
-      "SETTLED": 36,
+      "SETTLED": 108,
       "UNSETTLEABLE": 0,
       "UNSUPPORTED_SETTLEMENT": 0
     }
@@ -179,18 +197,18 @@
     "kalshi": {
       "KALSHI_CLOSE": 0,
       "NEAR_CLOSE": 0,
-      "NONE": 122,
-      "STALE": 244,
+      "NONE": 111,
+      "STALE": 423,
       "TRUE_CLOSE": 0
     },
     "kalshi_close_share": 0.0,
     "missing_kalshi_close_rate": 1.0,
     "missing_reference_close_rate": 1.0,
-    "records": 366,
+    "records": 534,
     "reference": {
       "KALSHI_CLOSE": 0,
       "NEAR_CLOSE": 0,
-      "NONE": 366,
+      "NONE": 534,
       "STALE": 0,
       "TRUE_CLOSE": 0
     },
@@ -198,7 +216,7 @@
     "true_close_share": 0.0
   },
   "grace_hours": 3.0,
-  "pending_evidence": 30,
+  "pending_evidence": 32,
   "pending_examples": [
     {
       "fixture_id": "fx:uefa.nations_league:2026-27:nat.arm:nat.mne",
@@ -227,6 +245,18 @@
     {
       "fixture_id": "fx:uefa.nations_league:2026-27:nat.arm:nat.mne",
       "prediction_record_id": "pred_92fcfc159511421b788d5707",
+      "reason": "period data missing (half-time split, extra time, penalties or first scorer)",
+      "state": "PENDING_EVIDENCE"
+    },
+    {
+      "fixture_id": "fx:uefa.nations_league:2026-27:nat.nir:nat.hun",
+      "prediction_record_id": "pred_86ffaffd21651048872d13e8",
+      "reason": "period data missing (half-time split, extra time, penalties or first scorer)",
+      "state": "PENDING_EVIDENCE"
+    },
+    {
+      "fixture_id": "fx:uefa.nations_league:2026-27:nat.nir:nat.hun",
+      "prediction_record_id": "pred_689313ccf7e56be0b4865db2",
       "reason": "period data missing (half-time split, extra time, penalties or first scorer)",
       "state": "PENDING_EVIDENCE"
     },
@@ -381,18 +411,18 @@
       "state": "PENDING_EVIDENCE"
     }
   ],
-  "pending_kickoff": 1899,
+  "pending_kickoff": 2183,
   "pending_mapping": 0,
   "pending_result": 0,
-  "predictions_total": 2265,
+  "predictions_total": 3053,
   "reasons": {
-    "PENDING_EVIDENCE: period data missing (half-time split, extra time, penalties or first scorer)": 30,
-    "PENDING_KICKOFF: kickoff + grace in the future": 1899
+    "PENDING_EVIDENCE: period data missing (half-time split, extra time, penalties or first scorer)": 32,
+    "PENDING_KICKOFF: kickoff + grace in the future": 2183
   },
   "schema": "settlement_coverage_v1",
-  "settleable_now": 366,
-  "settled": 336,
-  "settled_share_of_due": 0.9180327868852459,
+  "settleable_now": 870,
+  "settled": 838,
+  "settled_share_of_due": 0.9632183908045977,
   "unaccounted_settlement_records": 0,
   "unsettleable": 0,
   "unsupported_settlement": 0
