@@ -36,6 +36,9 @@ class MatchRow:
     away_goals: int
     weight: float = 1.0  # extra multiplicative weight (e.g., competition strength, neutral site)
     neutral: bool = False  # neutral venue: v2 fitter drops home advantage; v1 ignores the flag
+    # False for pseudo-observation rows with fractional targets (xG rows of xg_strength_v1): the v2
+    # fitter then skips the Dixon-Coles low-score correction for that row; v1 ignores the flag
+    dc_correction: bool = True
 
 
 @dataclass(frozen=True)

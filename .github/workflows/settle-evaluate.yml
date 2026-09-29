@@ -53,6 +53,7 @@ jobs:
           python -m soccer_edge.cli replay-policies --archive-dir archive/predictions --settlements-dir archive/settlements --out work/evaluation/policy_replay_latest.json | tail -20
           python -m soccer_edge.cli promote evaluate --archive-dir archive/predictions --settlements-dir archive/settlements --runs-dir archive/runs --archive-root archive --out work/evaluation/promotion_report.v1.json | tail -8
           python -m soccer_edge.cli lineups report --archive-dir archive --out work/evaluation/lineup_lead_time.v1.json | tail -12
+          python -m soccer_edge.cli uncertainty report --settlements-dir archive/settlements --out work/evaluation/uncertainty_coverage.v1.json | tail -12
           python -m soccer_edge.cli dispatch diagnostics --archive-dir archive --out work/evaluation/horizon_diagnostics.v1.json | tail -3
       - name: Publish
         if: ${{ steps.s.outcome == 'success' }}

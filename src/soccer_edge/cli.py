@@ -201,9 +201,10 @@ def cmd_run(args: argparse.Namespace) -> int:
     from soccer_edge.kalshi.client import KalshiPublicClient
     from soccer_edge.kalshi.discovery import discover
     from soccer_edge.model.strength_v2 import StrengthConfigV2
+    from soccer_edge.model.worlds import world_config_for
     from soccer_edge.pricing.edge import EdgeConfig
     from soccer_edge.run.inputs import DEFAULT_COMPETITIONS, assemble, build_inputs
-    from soccer_edge.run.pipeline import RunConfig, run, write_outputs
+    from soccer_edge.run.pipeline import RunConfig, run, stamp_decision_time, write_outputs
     from soccer_edge.run.simcache import SimCache
 
     t_start = time.time()
@@ -305,6 +306,8 @@ def cmd_run(args: argparse.Namespace) -> int:
         except Exception as exc:
             stats = {"error": str(exc)[:200]}
         print("[reference]", json.dumps(stats, default=str)[:600])
+    # the decision time is taken after the LAST input capture (reference odds are fetched above)
+    as_of = stamp_decision_time(inputs)
     cfg = RunConfig(
         run_date=run_date,
         window_hours=args.window_hours,
@@ -314,6 +317,7 @@ def cmd_run(args: argparse.Namespace) -> int:
         n_worlds=args.worlds,
         draws_per_world=args.draws,
         engine_version=args.engine_version,
+        world=world_config_for(getattr(args, "worlds_version", "worlds_v1")),
         edge=EdgeConfig(),
         enforce_freshness=not args.no_freshness_gate,
     )
@@ -465,6 +469,23 @@ def cmd_settle(args: argparse.Namespace) -> int:
         )
     (out / "SUMMARY.md").write_text("\n".join(lines) + "\n")
     print("\n".join(lines))
+    return 0
+
+
+def cmd_uncertainty_report(args: argparse.Namespace) -> int:
+    from soccer_edge.archive.ledger import PredictionLedger
+    from soccer_edge.evaluation.uncertainty import coverage_report, write_report
+
+    recs = list(PredictionLedger(Path(args.settlements_dir)).iter_records())
+    rep = coverage_report(recs)
+    write_report(rep, Path(args.out))
+    print(json.dumps({"n_cells": rep["n_cells"], "verdicts": rep["verdict_counts"]}))
+    for c in rep["cells"]:
+        if c["horizon"] == "any":
+            print(
+                f"  {c['model_family']} {c['worlds_version']} {c['market_family']}: n={c['n_settled']} "
+                f"coverage80={c['grouped_coverage_80']} market_inside={c['market_mid_inside_share']} {c['verdict']}"
+            )
     return 0
 
 
@@ -870,6 +891,8 @@ def _dispatch_actions(out: Path, due, batch_id: str, args: argparse.Namespace) -
                     args.run_model_version,
                     "--engine-version",
                     args.run_engine_version,
+                    "--worlds-version",
+                    args.run_worlds_version,
                 ]
             )
             rc = a.func(a)
@@ -1143,6 +1166,12 @@ def build_parser() -> argparse.ArgumentParser:
         default="minute_engine_v1",
         help="simulation engine (world_sim_v2 = exact DC score matrix, analytic full-time pricing)",
     )
+    r.add_argument(
+        "--worlds-version",
+        choices=["worlds_v1", "worlds_v2"],
+        default="worlds_v1",
+        help="world layer (worlds_v2 = Laplace x k parameter draw, no hand-set inflation term)",
+    )
     r.add_argument("--draws", type=int, default=100)
     r.add_argument("--out-dir", default=str(DATA / "runs" / "latest"))
     r.add_argument("--archive-dir", default=None, help="prediction ledger root (append-only)")
@@ -1395,6 +1424,7 @@ def build_parser() -> argparse.ArgumentParser:
     )
     dt.add_argument("--run-model-version", default="dc_laplace_v1")
     dt.add_argument("--run-engine-version", default="minute_engine_v1")
+    dt.add_argument("--run-worlds-version", default="worlds_v1")
     dt.set_defaults(func=cmd_dispatch_tick)
     dd = dpsub.add_parser("diagnostics", help="horizon-delivery diagnostics from the archived log")
     dd.add_argument("--archive-dir", required=True)
@@ -1418,6 +1448,13 @@ def build_parser() -> argparse.ArgumentParser:
     )
     pev.add_argument("--out", required=True)
     pev.set_defaults(func=cmd_promote_evaluate)
+    un = sub.add_parser("uncertainty", help="interval coverage of settled predictions")
+    unsub = un.add_subparsers(dest="uncertainty_cmd", required=True)
+    unr = unsub.add_parser("report", help="grouped 80% interval coverage per cell (audit F4)")
+    unr.add_argument("--settlements-dir", required=True)
+    unr.add_argument("--out", required=True)
+    unr.set_defaults(func=cmd_uncertainty_report)
+
     lu = sub.add_parser("lineups", help="lineup capture reliability")
     lusub = lu.add_subparsers(dest="lineups_cmd", required=True)
     lur = lusub.add_parser("report", help="lead-time distribution and pre-kickoff XI shares")

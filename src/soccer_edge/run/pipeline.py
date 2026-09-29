@@ -103,6 +103,10 @@ class RunConfig:
     # frozen holdout (docs/INTERNATIONAL_MODEL.md); the records are still archived as evidence
     intl_shadows_enabled: bool = False
 
+    @property
+    def worlds_version(self) -> str:
+        return self.world.version
+
 
 @dataclass
 class RunInputs:
@@ -570,6 +574,7 @@ def run(
                 fixture_summaries.get(w.fixture.fixture_id, {}),
                 selection_version=cfg.selection.version,
                 engine_version=cfg.engine_version,
+                worlds_version=cfg.world.version,
             )
         )
 
@@ -796,6 +801,30 @@ def _confidence_label(state: Authority, a: EdgeAssessment) -> str:
     return f"{base}; P(edge>0)={a.p_edge_positive:.0%}"
 
 
+def stamp_decision_time(inputs: RunInputs) -> datetime:
+    """Set the decision time AFTER the last input was gathered. Inputs captured inside the run (the
+    reference odds fetch, ESPN fixtures) are stamped when their fetch completes, which is after the
+    `as_of` the sweep was measured from; the guard compares every observation against the decision
+    time, so the decision time must be taken last. Production run 36475281249 (2026-09-28) failed
+    closed on a 41 ms gap for exactly this reason."""
+    now = utc_now()
+    latest = max(
+        (
+            t
+            for t in (
+                inputs.fixtures_observed_at,
+                inputs.results_observed_at,
+                inputs.market_observed_at,
+                inputs.reference_observed_at,
+            )
+            if t is not None
+        ),
+        default=now,
+    )
+    inputs.as_of = max(now, ensure_utc(latest))
+    return inputs.as_of
+
+
 def temporal_guard_for_inputs(inputs: RunInputs, as_of: datetime) -> TemporalGuard:
     """Fail closed when any input was observed after the decision time (docs/TEMPORAL_INTEGRITY.md)."""
     g = TemporalGuard(as_of)
@@ -818,6 +847,10 @@ def temporal_guard_for_inputs(inputs: RunInputs, as_of: datetime) -> TemporalGua
     return g
 
 
+def _opt_str(v: Any) -> str | None:
+    return None if v is None else str(v)
+
+
 def _contract_record(
     w: ContractWork,
     run_id: str,
@@ -827,6 +860,7 @@ def _contract_record(
     *,
     selection_version: str = SELECTION_V2.version,
     engine_version: str = ENGINE_V1,
+    worlds_version: str = "worlds_v1",
 ) -> dict[str, Any]:
     fx = w.fixture
     assert fx is not None and w.priced is not None
@@ -853,6 +887,7 @@ def _contract_record(
         "model_version": cm.posterior.version,
         "parameter_hash": cm.posterior.param_hash(),
         "world_hash": summ.get("world_hash"),
+        "worlds_version": worlds_version,
         "engine_version": summ.get("engine_version"),
         "sim_seed": summ.get("seed"),
         "data_as_of": iso_utc(inputs.results_observed_at),
@@ -870,9 +905,12 @@ def _contract_record(
             "yes_ask": str(w.market.yes_ask),
             "no_bid": str(w.market.no_bid),
             "no_ask": str(w.market.no_ask),
-            "yes_bid_size": str(w.market.yes_bid_size),  # depth behind the NO ask (1 - yes_bid)
-            "yes_ask_size": str(w.market.yes_ask_size),
-            "no_ask_size": str(w.market.no_ask_size),
+            # depth fields are null when the book has none (older records carry the string "None")
+            "yes_bid_size": _opt_str(
+                w.market.yes_bid_size
+            ),  # depth behind the NO ask (1 - yes_bid)
+            "yes_ask_size": _opt_str(w.market.yes_ask_size),
+            "no_ask_size": _opt_str(w.market.no_ask_size),
             "status": w.market.status,
             "price_unit": "dollars",
         },

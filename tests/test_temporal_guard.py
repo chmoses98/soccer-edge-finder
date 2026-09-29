@@ -116,3 +116,26 @@ def test_fit_competition_is_strict(monkeypatch):
     with pytest.raises(RuntimeError):
         modeling.fit_competition("c", [], as_of=date(2026, 9, 28))
     assert seen["strict"] is True
+
+
+def test_decision_time_is_stamped_after_the_last_input_capture(registry, epl_fixtures):
+    """Production run 36475281249 failed closed because the reference odds fetched inside the run were
+    stamped 41 ms after the decision time taken before the fetch; the decision time must come last."""
+    from datetime import timedelta
+
+    from soccer_edge.kalshi.client import KalshiPublicClient
+    from soccer_edge.kalshi.discovery import discover
+    from soccer_edge.kalshi.fake import FakeKalshi
+    from soccer_edge.run.pipeline import stamp_decision_time, temporal_guard_for_inputs
+    from tests.test_run_pipeline import _inputs
+
+    fake = FakeKalshi(epl_fixtures, registry)
+    d = discover(KalshiPublicClient(transport=fake.transport, max_retries=0))
+    inp = _inputs(registry, epl_fixtures, d)
+    early = inp.as_of
+    inp.reference_observed_at = early + timedelta(milliseconds=41)
+    with pytest.raises(FutureInformationError):
+        temporal_guard_for_inputs(inp, early)
+    stamped = stamp_decision_time(inp)
+    assert stamped >= inp.reference_observed_at  # never earlier than the last capture
+    temporal_guard_for_inputs(inp, stamped)  # passes

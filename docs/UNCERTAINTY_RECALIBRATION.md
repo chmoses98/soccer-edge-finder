@@ -249,3 +249,30 @@ with other jobs); analysis 357 s. Per-match posterior deviations are cached in
 `data/cache/recalibration_cache_v1.npz` (+ `.pkl` with posteriors, both git-ignored) and reused by
 `research/pedge_eval.py`; `--reuse-cache` skips the refits. Unit tests:
 `pytest -q tests/test_research_recalibration.py`.
+
+## Re-run on `dc_laplace_v2` (remediation phase 15; 2026-09-28)
+
+`PYTHONPATH=src python research/recalibration.py --model-version dc_laplace_v2` (same estimator, the v2
+fitter's Laplace posterior with intercept deviations, sigma_shared = 0 for the "current" candidate because
+worlds_v2 carries no hand-set inflation; result `data/research/recalibration_v2.json`, cache
+`data/cache/recalibration_cache_v2.npz`, 14,010 scored predictions, 15,968 groups).
+
+| | v1 (2026-09-28, earlier) | v2 |
+|---|---|---|
+| k_hat pooled (grouped outcome estimator) | 0.8139 | **0.8366** |
+| 95 % CI | 0.7275-0.8886 | 0.7657-0.8971 |
+| seasons on the same side of 1 | 6/7 | 6/7 |
+| per-season k_hat | | 2018-19 0.95, 2019-20 0.77, 2020-21 0.97, 2021-22 0.89, 2022-23 1.00, 2023-24 0.72, 2024-25 0.78, (2025-26 partial 0.30) |
+| market-implied k | 0.7248 | 0.6879 |
+| totals PIT variance z (current / no inflation) | -7.14 / -5.15 | -7.85 / -6.64 |
+| decision (rule applied mechanically) | global_outcome_k | global_outcome_k; **R4 not supported** |
+
+Reading: the better-specified v2 posterior moves k_hat towards 1 only slightly (0.81 -> 0.84); the
+Laplace covariance is still about 16 % too wide on the parameter scale, consistently across seasons. The
+audit's F4 acceptance for adopting a worlds_v2 scale requires, besides R2, the totals PIT variance z
+within +-3 on the holdout; it is -7.85, i.e. the totals distribution is misdispersed in a way no scalar
+on the parameter posterior fixes (the same finding as for v1). **k is therefore estimated but not
+adopted**: `worlds_v2` runs with `posterior_sd_scale = 1.0`, `WORLDS_V2_K_ESTIMATE = 0.8366` is recorded
+next to it with `WORLDS_V2_K_STATUS` explaining why, and the coverage report on settled production records
+(`soccer uncertainty report`) is the prospective evidence that would let an owner revisit this. Nothing
+here was tuned against the market.
