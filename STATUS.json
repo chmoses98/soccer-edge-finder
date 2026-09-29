@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-29T09:45:35.269044+00:00",
+  "as_of": "2026-09-29T15:57:28.461353+00:00",
   "events": 19,
   "events_skipped_unmapped": 3,
   "fixtures_mapped": 16,
@@ -15,13 +15,13 @@
     "uefa.nations"
   ],
   "lineups": {
-    "captured": 1,
-    "events": 19,
+    "captured": 3,
+    "events": 18,
     "failures": [],
     "published_post": 0,
-    "published_pre_kickoff": 1,
-    "unchanged": 18,
-    "unpublished": 18
+    "published_pre_kickoff": 3,
+    "unchanged": 15,
+    "unpublished": 15
   },
   "map_proposals": {
     "concacaf.nations.league": {
@@ -41,7 +41,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 0,
+  "results_appended": 1,
   "scoreboard_failures": [],
   "unmapped_leagues": [],
   "unmapped_team_ids": {
@@ -50,9 +50,12 @@
     "454": "Russia"
   },
   "weather": {
-    "captured": 16,
-    "events": 19,
-    "failures": [],
+    "captured": 13,
+    "events": 18,
+    "failures": [
+      "401861088: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Serravalle&count=5&language=en&",
+      "401861091: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Glasgow&count=5&language=en&for"
+    ],
     "forecast_miss": 0,
     "geocode_miss": 3,
     "no_venue": 0
