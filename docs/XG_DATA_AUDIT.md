@@ -75,3 +75,25 @@ gain over the goal-only fit has a 95 % CI above zero and a mean of at least 0.00
 `evaluate=true` runs it on a runner and commits `data/research/xg_strength_v1.json`; the result is
 recorded in docs/RESEARCH_RESULTS.md. Prospective football-data HxG/AxG accumulation continues either
 way; the `0.7 xG / 0.3 goals` blend in `model/xg_family.py` remains unvalidated and unused.
+
+### `xg_strength_v1` result (2026-09-29, `research-xg.yml` run 2, `data/research/xg_strength_v1.json`)
+
+| | goal-only (omega = 0) | xg_strength_v1 (omega = 0.75) |
+|---|---|---|
+| selection 2017-18..2020-21, n = 7,156: 1X2 log loss | 0.99044 | 0.98430 (0.25: 0.98730, 0.5: 0.98529) |
+| holdout 2021-22..2022-23, n = 3,638: 1X2 log loss | 0.99826 | 0.99215 |
+| holdout O/U 2.5 log loss | 0.68710 | 0.68250 |
+| paired 1X2 gain on the holdout | | **+0.0061 [0.0041, 0.0082]** |
+| paired O/U 2.5 gain | | +0.0046 [0.0026, 0.0066] |
+| per division (1X2 gain) | | E0 +0.0083, SP1 +0.0087, D1 +0.0056 (CIs exclude 0); I1 +0.0045, F1 +0.0033 (CIs touch 0) |
+
+**PASS under the pre-registered rule** (CI above zero and mean >= 0.003): fitting team strengths on goals
+plus xG improves out-of-sample 1X2 and totals log loss by about 0.005-0.006, consistently across
+divisions. Caveats recorded with the result: the chosen omega sits at the top of the grid {0.25, 0.5,
+0.75}, so the optimum may lie higher (a wider grid is a new pre-registration, not a re-run of this
+holdout); the xG source ends in 2022-23 and is retired, so the family cannot be run live on this data;
+the live path is the prospective football-data `HxG/AxG` feed (2026-27 onward) whose provider is
+undisclosed and whose comparability to the FiveThirtyEight xG has not been checked. `xg_strength_v1`
+therefore stays RESEARCH_ONLY with a positive historical result and no production wiring; the prospective
+evaluation plan (in-season walk-forward from matchday 8, decision after >= 1,700 settled matches) is the
+next step.

@@ -134,3 +134,9 @@ where the model weight is 0 today.
 
 STOP under the pre-registered rule: perfect-XI 1X2 gain -0.0009 [-0.0048, +0.0035] on 1,061 matches
 (O/U 2.5 -0.0046 [-0.0081, -0.0008]); four of five leagues chose no adjustment. docs/LINEUPS.md.
+
+## xg_strength_v1 one-time holdout (phase 20)
+
+PASS: paired 1X2 log-loss gain +0.0061 [0.0041, 0.0082] over the goal-only dc_laplace_v2 fit on the
+2021-22..2022-23 holdout (n = 3,638), omega = 0.75 chosen on 2017-18..2020-21; O/U 2.5 +0.0046. Stays
+RESEARCH_ONLY (historical xG source retired; prospective feed unverified). docs/XG_DATA_AUDIT.md.
