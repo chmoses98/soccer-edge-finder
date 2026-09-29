@@ -129,3 +129,8 @@ heavy-favourite pricing at Elo gap >= 400, neutral-site goal calibration) -> not
 logit(Bet365 de-vigged) is ~0.33 (1X2, home/away 0.37, draw 0.18) and ~0.27 (O/U 2.5) in logit units,
 ~0.065 probability points, nearly identical across dc_laplace_v1 and v2 variants. Used only by edge_v2,
 where the model weight is 0 today.
+
+## Lineup oracle result (phase 19)
+
+STOP under the pre-registered rule: perfect-XI 1X2 gain -0.0009 [-0.0048, +0.0035] on 1,061 matches
+(O/U 2.5 -0.0046 [-0.0081, -0.0008]); four of five leagues chose no adjustment. docs/LINEUPS.md.

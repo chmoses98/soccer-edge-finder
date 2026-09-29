@@ -1,19 +1,86 @@
 {
  "schema": "lineup_oracle_v1",
- "generated_at": "2026-09-28T20:16:25.915919+00:00",
- "by_league": {},
- "chosen_c": {},
+ "generated_at": "2026-09-29T00:56:12.771759+00:00",
+ "by_league": {
+  "eng.1": {
+   "n_eval": 316,
+   "c": 0.25,
+   "gain_1x2": -0.0030271567092098116,
+   "gain_ou25": -0.015294535834131021,
+   "share_with_regular_absent": 0.9810126582278481
+  },
+  "esp.1": {
+   "n_eval": 204,
+   "c": 0.0,
+   "gain_1x2": -0.0,
+   "gain_ou25": -0.0,
+   "share_with_regular_absent": 0.9852941176470589
+  },
+  "fra.1": {
+   "n_eval": 168,
+   "c": 0.0,
+   "gain_1x2": -0.0,
+   "gain_ou25": -0.0,
+   "share_with_regular_absent": 0.9880952380952381
+  },
+  "ger.1": {
+   "n_eval": 126,
+   "c": 0.0,
+   "gain_1x2": -0.0,
+   "gain_ou25": -0.0,
+   "share_with_regular_absent": 1.0
+  },
+  "ita.1": {
+   "n_eval": 247,
+   "c": 0.0,
+   "gain_1x2": -0.0,
+   "gain_ou25": -0.0,
+   "share_with_regular_absent": 0.9919028340080972
+  }
+ },
+ "chosen_c": {
+  "eng.1": 0.25,
+  "esp.1": 0.0,
+  "fra.1": 0.0,
+  "ger.1": 0.0,
+  "ita.1": 0.0
+ },
  "stop_threshold": 0.002,
- "decision": "NOT_EVALUATED: no historical XI data (run espn-lineup-backfill + lineup-backfill.yml first)",
- "input": "archive",
- "n_matches": 0,
+ "oracle_gain_1x2": {
+  "mean": -0.0009015848445902929,
+  "ci95": [
+   -0.004754510096254588,
+   0.0035188638491218506
+  ],
+  "n": 1061
+ },
+ "oracle_gain_ou25": {
+  "mean": -0.004555205771522529,
+  "ci95": [
+   -0.008140509553483763,
+   -0.0007508234259740249
+  ],
+  "n": 1061
+ },
+ "oracle_gain_1x2_regular_absent": {
+  "mean": -0.0012134495334500959,
+  "ci95": [
+   -0.005204964646831335,
+   0.003141343215310875
+  ],
+  "n": 1048
+ },
+ "clears_threshold": false,
+ "decision": "STOP: even perfect XI knowledge gains < 0.002 log loss; do not invest in lineup modelling yet",
+ "input": "/tmp/claude-0/arch/live",
+ "n_matches": 2648,
  "method_calibration": {
   "effect_0.0": {
    "oracle_gain_1x2": {
-    "mean": -0.003351388801267888,
+    "mean": -0.003351388801267106,
     "ci95": [
-     -0.009073751848522393,
-     0.0021831027349336835
+     -0.00907375184852221,
+     0.0021831027349351532
     ],
     "n": 558
    },
@@ -23,10 +90,10 @@
   },
   "effect_0.35": {
    "oracle_gain_1x2": {
-    "mean": 0.004287737244810752,
+    "mean": 0.004287737244812088,
     "ci95": [
-     -0.0021624975916064,
-     0.0102692980008072
+     -0.0021624975916058175,
+     0.010269298000810022
     ],
     "n": 558
    },

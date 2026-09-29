@@ -109,3 +109,25 @@ and a 0.35 log-attack star absent 20 % of the time), which is how the real-data 
 null league costs roughly the estimator's noise, and a large true effect is recovered only in part.
 The workflow `lineup-backfill.yml` runs backfill + study and commits `data/research/lineup_oracle_v1.json`.
 Stop rule (audit): if the oracle gain is < 0.002 log loss, do not invest in prospective lineup modelling.
+
+### Oracle result (2026-09-29, `data/research/lineup_oracle_v1.json`)
+
+Sample: 3,717 post-hoc XIs backfilled from ESPN (top-5, 2024-08 to 2026-09), 2,648 joined to
+football-data results through the explicit ESPN identity map (916 rows belong to teams the map does not
+carry yet, 152 have no result row; both are counted, not guessed). Evaluation half: 1,061 matches.
+
+| | mean gain (log loss) | 95 % CI | n |
+|---|---|---|---|
+| 1X2, perfect XI vs none | -0.0009 | [-0.0048, +0.0035] | 1,061 |
+| 1X2, matches with a regular absent | -0.0012 | [-0.0052, +0.0031] | 1,048 |
+| O/U 2.5 | -0.0046 | [-0.0081, -0.0008] | 1,061 |
+
+Four of five leagues chose `c = 0` on their selection half (no XI adjustment improved the fit); the
+Premier League chose 0.25 and lost 0.003 on its evaluation half. **Decision (pre-registered rule):
+STOP - even perfect XI knowledge does not clear 0.002 log loss; do not invest in prospective lineup
+modelling now.** Read with the method calibration: on a synthetic null league the same estimator costs
+-0.003, and a synthetic star worth 0.35 log-attack recovers only +0.004, so the study can detect large
+effects but not small ones at this sample size; the honest statement is "no detectable gain with two
+seasons of XIs", not "lineups carry no information". More seasons of post-hoc XIs (the backfill is
+budgeted and idempotent) and the missing ESPN team mappings would raise the power; the stop rule is
+applied as written.
