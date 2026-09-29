@@ -1,162 +1,132 @@
 {
   "by_horizon": {
     "120": {
-      "achieved_minutes_median": 117.49,
+      "achieved_minutes_median": 127.43,
       "achieved_minutes_p10": 57.49,
       "achieved_minutes_p90": 127.46,
-      "delivered": 3,
-      "delivery_rate": 0.2,
+      "delivered": 4,
+      "delivery_rate": 0.16,
       "lateness_minutes_max": 62.51,
       "lateness_minutes_median": 2.51,
-      "missed": 12
+      "missed": 21
     },
     "15": {
       "achieved_minutes_median": 14.38,
       "achieved_minutes_p10": 0.36,
       "achieved_minutes_p90": 14.43,
-      "delivered": 6,
-      "delivery_rate": 0.4,
+      "delivered": 7,
+      "delivery_rate": 0.2916666666666667,
       "lateness_minutes_max": 14.64,
-      "lateness_minutes_median": 0.57,
-      "missed": 9
+      "lateness_minutes_median": 0.62,
+      "missed": 17
     },
     "30": {
       "achieved_minutes_median": 25.0,
-      "achieved_minutes_p10": 25.0,
-      "achieved_minutes_p90": 30.45,
-      "delivered": 5,
-      "delivery_rate": 0.3333333333333333,
-      "lateness_minutes_max": 5.0,
+      "achieved_minutes_p10": 13.02,
+      "achieved_minutes_p90": 30.28,
+      "delivered": 6,
+      "delivery_rate": 0.25,
+      "lateness_minutes_max": 16.98,
       "lateness_minutes_median": 5.0,
-      "missed": 10
+      "missed": 18
     },
     "5": {
-      "achieved_minutes_median": 4.46,
+      "achieved_minutes_median": 4.38,
       "achieved_minutes_p10": 0.36,
       "achieved_minutes_p90": 4.46,
-      "delivered": 5,
-      "delivery_rate": 0.35714285714285715,
+      "delivered": 6,
+      "delivery_rate": 0.2608695652173913,
       "lateness_minutes_max": 4.64,
       "lateness_minutes_median": 0.54,
-      "missed": 9
+      "missed": 17
     },
     "60": {
       "achieved_minutes_median": 45.76,
       "achieved_minutes_p10": 45.76,
       "achieved_minutes_p90": 57.49,
       "delivered": 2,
-      "delivery_rate": 0.13333333333333333,
+      "delivery_rate": 0.08333333333333333,
       "lateness_minutes_max": 14.24,
       "lateness_minutes_median": 2.51,
-      "missed": 13
+      "missed": 22
     }
   },
-  "delivered_total": 21,
-  "delivery_rate_total": 0.28378378378378377,
-  "fixtures_tracked": 15,
-  "generated_at": "2026-09-29T15:59:38Z",
+  "delivered_total": 25,
+  "delivery_rate_total": 0.20833333333333334,
+  "fixtures_tracked": 25,
+  "generated_at": "2026-09-29T20:55:37Z",
   "last_tick": {
-    "batches": 1,
+    "batches": 4,
     "summary": [
       {
         "actions": [
           "kalshi_capture:ok",
           "reference:empty",
-          "odds_api:ok:credits=3:rows=0",
+          "odds_api:nothing_eligible:credits=0:rows=0",
           "lineups:ok:9"
         ],
-        "batch_id": "kd-20260929T155452Z",
+        "batch_id": "kd-20260929T204204Z",
         "delivered": [
           [
-            "fx:uefa.nations_league:2026-27:nat.mda:nat.fro",
+            "fx:concacaf.nations_league:2026-27:nat.guf:nat.sxm",
+            30,
+            13.02
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:rows=0",
+          "lineups:ok:9"
+        ],
+        "batch_id": "kd-20260929T204658Z",
+        "delivered": [
+          [
+            "fx:concacaf.nations_league:2026-27:nat.guf:nat.sxm",
             15,
-            0.36
-          ],
+            10.48
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:rows=0",
+          "lineups:ok:9"
+        ],
+        "batch_id": "kd-20260929T205005Z",
+        "delivered": [
           [
-            "fx:uefa.nations_league:2026-27:nat.mda:nat.fro",
+            "fx:concacaf.nations_league:2026-27:nat.aia:nat.aru",
+            120,
+            127.43
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:rows=0",
+          "lineups:ok:9"
+        ],
+        "batch_id": "kd-20260929T205305Z",
+        "delivered": [
+          [
+            "fx:concacaf.nations_league:2026-27:nat.guf:nat.sxm",
             5,
-            0.36
-          ],
-          [
-            "fx:uefa.nations_league:2026-27:nat.fin:nat.blr",
-            15,
-            0.36
-          ],
-          [
-            "fx:uefa.nations_league:2026-27:nat.fin:nat.blr",
-            5,
-            0.36
+            4.38
           ]
         ]
       }
     ]
   },
-  "missed_total": 53,
-  "n_pending_fixtures": 34,
+  "missed_total": 95,
+  "n_pending_fixtures": 35,
   "pending_fixtures": [
-    {
-      "competition_id": "uefa.nations_league",
-      "fixture_id": "fx:uefa.nations_league:2026-27:nat.svk:nat.kaz",
-      "kickoff_utc": "2026-09-29T18:45:00Z",
-      "markets_discovered": 62,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "uefa.nations_league",
-      "fixture_id": "fx:uefa.nations_league:2026-27:nat.smr:nat.alb",
-      "kickoff_utc": "2026-09-29T18:45:00Z",
-      "markets_discovered": 62,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "uefa.nations_league",
-      "fixture_id": "fx:uefa.nations_league:2026-27:nat.svn:nat.mkd",
-      "kickoff_utc": "2026-09-29T18:45:00Z",
-      "markets_discovered": 62,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "uefa.nations_league",
-      "fixture_id": "fx:uefa.nations_league:2026-27:nat.sco:nat.sui",
-      "kickoff_utc": "2026-09-29T18:45:00Z",
-      "markets_discovered": 62,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "uefa.nations_league",
-      "fixture_id": "fx:uefa.nations_league:2026-27:nat.lux:nat.isl",
-      "kickoff_utc": "2026-09-29T18:45:00Z",
-      "markets_discovered": 62,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "uefa.nations_league",
-      "fixture_id": "fx:uefa.nations_league:2026-27:nat.esp:nat.cro",
-      "kickoff_utc": "2026-09-29T18:45:00Z",
-      "markets_discovered": 62,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "uefa.nations_league",
-      "fixture_id": "fx:uefa.nations_league:2026-27:nat.cze:nat.eng",
-      "kickoff_utc": "2026-09-29T18:45:00Z",
-      "markets_discovered": 62,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "uefa.nations_league",
-      "fixture_id": "fx:uefa.nations_league:2026-27:nat.bul:nat.est",
-      "kickoff_utc": "2026-09-29T18:45:00Z",
-      "markets_discovered": 62,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "concacaf.nations_league",
-      "fixture_id": "fx:concacaf.nations_league:2026-27:nat.guf:nat.sxm",
-      "kickoff_utc": "2026-09-29T21:00:00Z",
-      "markets_discovered": 23,
-      "source": "run_output"
-    },
     {
       "competition_id": "concacaf.nations_league",
       "fixture_id": "fx:concacaf.nations_league:2026-27:nat.aia:nat.aru",
@@ -329,6 +299,76 @@
       "competition_id": "uefa.nations_league",
       "fixture_id": "fx:uefa.nations_league:2026-27:nat.kaz:nat.mda",
       "kickoff_utc": "2026-10-02T14:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "uefa.nations_league",
+      "fixture_id": "fx:uefa.nations_league:2026-27:nat.cyp:nat.arm",
+      "kickoff_utc": "2026-10-02T16:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "uefa.nations_league",
+      "fixture_id": "fx:uefa.nations_league:2026-27:nat.lva:nat.mne",
+      "kickoff_utc": "2026-10-02T16:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "uefa.nations_league",
+      "fixture_id": "fx:uefa.nations_league:2026-27:nat.bel:nat.tur",
+      "kickoff_utc": "2026-10-02T18:45:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "uefa.nations_league",
+      "fixture_id": "fx:uefa.nations_league:2026-27:nat.bih:nat.swe",
+      "kickoff_utc": "2026-10-02T18:45:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "uefa.nations_league",
+      "fixture_id": "fx:uefa.nations_league:2026-27:nat.fro:nat.svk",
+      "kickoff_utc": "2026-10-02T18:45:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "uefa.nations_league",
+      "fixture_id": "fx:uefa.nations_league:2026-27:nat.fra:nat.ita",
+      "kickoff_utc": "2026-10-02T18:45:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "uefa.nations_league",
+      "fixture_id": "fx:uefa.nations_league:2026-27:nat.hun:nat.geo",
+      "kickoff_utc": "2026-10-02T18:45:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "uefa.nations_league",
+      "fixture_id": "fx:uefa.nations_league:2026-27:nat.pol:nat.rou",
+      "kickoff_utc": "2026-10-02T18:45:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "uefa.nations_league",
+      "fixture_id": "fx:uefa.nations_league:2026-27:nat.ukr:nat.nir",
+      "kickoff_utc": "2026-10-02T18:45:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "concacaf.nations_league",
+      "fixture_id": "fx:concacaf.nations_league:2026-27:nat.lca:nat.glp",
+      "kickoff_utc": "2026-10-02T19:00:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }
