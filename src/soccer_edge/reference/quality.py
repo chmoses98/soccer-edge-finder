@@ -21,14 +21,16 @@ Free-source research (2026-09-28), see docs/REFERENCE_SOURCES.md for the evidenc
   (`research/move_v1.py`), never live.
 * Kalshi public API: KALSHI_ONLY.
 * No keyless, ToS-compliant, live near-kickoff sharp feed exists: Pinnacle's API, Betfair's exchange API
-  and every aggregator (The Odds API, OddsAPI, Betfair historical) require credentials or a paid plan;
-  scraping OddsPortal/Sofascore/Oddschecker violates their terms. `live_sharp_reference_available()` is
-  therefore False and the promotion evaluator keeps reference-anchored authority blocked until the owner
-  provides a credentialed source.
+  and every aggregator require credentials or a paid plan; scraping OddsPortal/Sofascore/Oddschecker
+  violates their terms.
+* The Odds API (Pinnacle) is implemented against the owner's EXISTING account, shared with the MLB repo
+  (2026-09-29; docs/ODDS_API_REFERENCE.md). `live_sharp_reference_available()` is True only where
+  `ODDS_API_KEY` (or the `SOCCER_ODDS_API_CONFIGURED` workflow flag) is present.
 """
 
 from __future__ import annotations
 
+import os
 from dataclasses import dataclass
 from enum import Enum
 
@@ -67,6 +69,8 @@ class ReferenceProviderSpec:
     best_quality: SourceQuality
     terms_ok: bool
     note: str = ""
+    implemented: bool = True
+    credential_env: str | None = None  # env var holding the owner's credential (never its value)
 
 
 REFERENCE_PROVIDERS: dict[str, ReferenceProviderSpec] = {
@@ -111,34 +115,60 @@ REFERENCE_PROVIDERS: dict[str, ReferenceProviderSpec] = {
     ),
     "the_odds_api": ReferenceProviderSpec(
         "the_odds_api",
-        "The Odds API (includes Pinnacle): near-kickoff sharp quotes",
+        "The Odds API v4, bookmakers=pinnacle: near-kickoff sharp quotes (1X2, totals, spreads main lines)",
         credentials_required=True,
-        cost="paid (free tier needs an API key)",
+        cost="paid; the owner's EXISTING account, shared with chmoses98/edge-finder-api (MLB)",
         live=True,
         near_kickoff=True,
         historical_open_close=False,
-        bookmakers=("pinnacle", "bet365"),
+        bookmakers=("pinnacle",),
         best_quality=SourceQuality.SHARP_REFERENCE,
         terms_ok=True,
-        note="NOT implemented: requires an owner-provided key (audit §R1); adapter slot reserved",
+        note=(
+            "implemented (providers/the_odds_api.py, reference/odds_api_capture.py); kickoff-dispatcher "
+            "entry + close captures, budget-guarded against the shared quota (docs/ODDS_API_REFERENCE.md)"
+        ),
+        implemented=True,
+        credential_env="ODDS_API_KEY",
     ),
 }
 
 
+CONFIGURED_FLAG_ENV = (
+    "SOCCER_ODDS_API_CONFIGURED"  # set by workflows that cannot see the key itself
+)
+
+
+def _credential_present(spec: ReferenceProviderSpec) -> bool:
+    if not spec.credential_env:
+        return False
+    return bool(os.environ.get(spec.credential_env, "").strip()) or (
+        os.environ.get(CONFIGURED_FLAG_ENV, "").strip().lower() == "true"
+    )
+
+
 def live_sharp_reference_available() -> tuple[bool, str]:
-    """Is there an implemented, credential-free, terms-compliant source of near-kickoff SHARP quotes?"""
+    """Is there an implemented, terms-compliant source of near-kickoff SHARP quotes that can run here?
+
+    Keyless sources always qualify; a credentialed source qualifies only when its credential is configured
+    in this environment (the owner's key, or the workflow flag that says the repository secret exists).
+    This is only the availability gate: the promotion evaluator separately requires the TRUE_CLOSE share
+    and CLV evidence that the captures actually produce."""
     for spec in REFERENCE_PROVIDERS.values():
-        if (
-            spec.live
+        if not (
+            spec.implemented
+            and spec.live
             and spec.near_kickoff
             and spec.best_quality is SourceQuality.SHARP_REFERENCE
-            and not spec.credentials_required
             and spec.terms_ok
         ):
+            continue
+        if not spec.credentials_required or _credential_present(spec):
             return True, spec.provider_id
     return (
         False,
-        "no free, keyless, terms-compliant live near-kickoff sharp source exists; football-data fixtures.csv "
-        "carries Pinnacle but refreshes a few times per week (pre-match, not close); reference-anchored "
-        "authority stays blocked (audit §R1)",
+        "no live near-kickoff sharp source can run here: the_odds_api (Pinnacle) is implemented but "
+        "ODDS_API_KEY is not configured in this environment; football-data fixtures.csv carries Pinnacle but "
+        "refreshes a few times per week (pre-match, not close); reference-anchored authority stays blocked "
+        "(audit §R1)",
     )

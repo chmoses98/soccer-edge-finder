@@ -1,0 +1,90 @@
+name: odds-api-probe
+
+# Manual check of the Odds API key shared with chmoses98/edge-finder-api. The probe step uses FREE
+# endpoints only (/sports, /events): active soccer keys, mapped competitions, upcoming events and the
+# account's quota headers; the ledger rows prove the cost (credits_charged = the provider's x-requests-last).
+# Optional `sample_capture`: ONE bounded, budget-guarded paid Pinnacle capture (at most one /odds call,
+# 3 credits) for one competition's Kalshi-listed fixtures from the published dispatch schedule.
+# docs/ODDS_API_REFERENCE.md.
+
+on:
+  workflow_dispatch:
+    inputs:
+      events:
+        description: "space-separated sport keys to list upcoming events for (free)"
+        type: string
+        default: "soccer_epl soccer_usa_mls soccer_uefa_nations_league"
+      sample_capture:
+        description: "also make ONE bounded paid Pinnacle capture (<= 3 credits, guarded)"
+        type: boolean
+        default: false
+      sample_competition:
+        description: "optional canonical competition id for the sample (default: earliest Kalshi-listed)"
+        type: string
+        default: ""
+
+concurrency:
+  group: data-writer-archive-kickoff
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e .
+      - name: Fetch archive tip (schedule + credit ledger)
+        run: |
+          git clone --quiet --depth 1 --branch data-archive "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" archive
+          mkdir -p work/odds_api/budget
+          cp archive/odds_api/budget/*.jsonl work/odds_api/budget/ 2>/dev/null || true
+      - name: Probe (free endpoints only)
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          EVENTS: ${{ inputs.events }}
+        run: |
+          set -o pipefail
+          # shellcheck disable=SC2086
+          python -m soccer_edge.cli odds-api probe --out-dir work --events $EVENTS | tee work/probe.json
+      - name: Sample capture (one bounded paid call)
+        if: ${{ inputs.sample_capture }}
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          COMP: ${{ inputs.sample_competition }}
+        run: |
+          set -o pipefail
+          EXTRA=""
+          [ -n "$COMP" ] && EXTRA="--competition $COMP"
+          # shellcheck disable=SC2086
+          python -m soccer_edge.cli odds-api sample --archive-dir archive --out-dir work $EXTRA | tee work/sample.json
+      - name: Status
+        if: always()
+        run: python -m soccer_edge.cli odds-api status --archive-dir work --days 30 | tee work/status.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: odds-api-probe-${{ github.run_id }}
+          path: work/
+          retention-days: 30
+      - name: Publish ledger + reference rows
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p pub
+          [ -d work/odds_api ] && cp -R work/odds_api pub/
+          [ -d work/reference ] && cp -R work/reference pub/
+          [ -n "$(ls -A pub)" ] || exit 0
+          scripts/archive_publish.sh pub . "odds-api-probe ${{ github.run_id }} $(date -u +%Y-%m-%dT%H:%MZ)"
+      - name: Summary
+        if: always()
+        run: |
+          { echo '## odds-api-probe'; echo '```json'; head -c 5000 work/probe.json 2>/dev/null; echo; head -c 3000 work/sample.json 2>/dev/null; echo; head -c 2000 work/status.json 2>/dev/null; echo '```'; } >> "$GITHUB_STEP_SUMMARY"

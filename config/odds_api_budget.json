@@ -1,0 +1,14 @@
+{
+  "$comment": "Soccer's share of the Odds API account SHARED with chmoses98/edge-finder-api (MLB). docs/ODDS_API_REFERENCE.md derives every number. Soccer yields first: it stops spending well above the point where the MLB collectors' own guards would trip.",
+  "schema": "odds_api_budget_v1",
+  "bookmakers": ["pinnacle"],
+  "markets": ["h2h", "totals", "spreads"],
+  "daily_credit_ceiling": 150,
+  "close_priority_credits": 45,
+  "rolling_30d_credit_ceiling": 2000,
+  "account_reserve_floor": 8000,
+  "entry_window_minutes": [30, 66],
+  "close_window_minutes": [0, 15],
+  "event_join_tolerance_minutes": 180,
+  "one_side_join_tolerance_minutes": 15
+}

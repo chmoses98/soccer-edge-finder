@@ -72,6 +72,8 @@ _RULES: tuple[tuple[str, str, bool, bool], ...] = (
     ("fixtures/espn/*/*.json", "espn_fixtures", False, True),
     ("recovery/*.json", "recovery_manifest", False, True),
     ("dispatch/horizons.jsonl", "horizon_log", False, False),
+    ("odds_api/budget/*.jsonl", "odds_api_budget", False, False),
+    ("odds_api/raw/*/*.json.gz", "odds_api_raw", False, True),
 )
 
 _MUTABLE_GLOBS = (

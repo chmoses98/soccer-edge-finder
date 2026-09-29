@@ -3,7 +3,7 @@ name: kickoff-dispatch
 # Kickoff-timed capture dispatcher (docs/KICKOFF_DISPATCH.md). A cheap stdlib decide step runs on a
 # dense off-round cron and reads the published schedule + delivery log from data-archive; only when a
 # required horizon (T-120/60/30/15/5) is satisfiable now does the bounded capture job run: Kalshi fast
-# snapshot + reference odds + lineups for the due fixtures, then it holds (sleeps) for the next window
+# snapshot + reference odds (football-data + budget-guarded Pinnacle via The Odds API) + lineups for the due fixtures, then it holds (sleeps) for the next window
 # if that is soon, records every delivered/missed horizon in an append-only log, and publishes.
 # GitHub cron drops slots; every tick is idempotent and catches up on whatever is still satisfiable.
 
@@ -65,6 +65,10 @@ jobs:
       - name: Dispatcher tick (capture every satisfiable horizon, hold for the next)
         id: tick
         timeout-minutes: 50
+        env:
+          # The SAME Odds API key/secret name as chmoses98/edge-finder-api (shared account). Absent -> the
+          # Pinnacle reference action logs NOT_CONFIGURED and makes no request. Never echoed.
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: |
           set -o pipefail
           mkdir -p work

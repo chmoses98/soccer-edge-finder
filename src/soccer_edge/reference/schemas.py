@@ -77,6 +77,13 @@ class ReferenceMarketSnapshot(BaseModel):
     source_quality: str | None = (
         None  # SHARP_REFERENCE | SECONDARY_REFERENCE | KALSHI_ONLY | UNAVAILABLE
     )
+    # --- v3 fields (Odds API reference, 2026-09-29; optional so older rows still load) ---
+    feed_quality: str | None = (
+        None  # e.g. PINNACLE_AGGREGATED_DELAYED: Pinnacle price via an aggregator
+    )
+    observation_latency_seconds: float | None = (
+        None  # captured_at - quoted_at (bookmaker last_update)
+    )
 
     def fingerprint(self) -> str:
         return content_hash(

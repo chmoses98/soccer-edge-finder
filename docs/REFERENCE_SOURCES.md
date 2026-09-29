@@ -8,10 +8,18 @@ Status: implemented (pre-launch remediation, phases 7–8; audit §G, §H, §K, 
 
 **None exists.** Every source that gives Pinnacle-class quotes near kickoff requires credentials or a paid
 plan (Pinnacle API, Betfair exchange API, The Odds API and other aggregators), and the sites that display
-sharp prices publicly (OddsPortal, Sofascore, Oddschecker) forbid scraping in their terms. This system
-therefore has **no TRUE_CLOSE-capable sharp feed**, `live_sharp_reference_available()` returns `False`,
-and reference-anchored authority stays blocked until the owner provides a credentialed source (audit §R1:
-the single most important owner decision). Nothing here calls Bet365 or a multi-book average "sharp".
+sharp prices publicly (OddsPortal, Sofascore, Oddschecker) forbid scraping in their terms. Nothing here
+calls Bet365 or a multi-book average "sharp".
+
+## Update 2026-09-29: the owner's existing Odds API account (shared with MLB)
+
+The owner already pays for The Odds API (20,000 credits/cycle, used by `chmoses98/edge-finder-api`).
+Pinnacle via that account is now implemented as a budget-guarded, kickoff-timed, per-competition-batched
+reference capture (entry at T-60 and a TRUE_CLOSE at ≤ 15 min), costing ~1,550 credits / 30 days in
+season. See **docs/ODDS_API_REFERENCE.md** for the audit of the MLB repo's consumption, the cost model, the
+guard that makes soccer yield to MLB, and the single owner action (add the same `ODDS_API_KEY` as a
+repository secret). Until that secret exists, the capture logs `NOT_CONFIGURED` and makes no request, and
+`live_sharp_reference_available()` stays False.
 
 What is implemented, honestly labelled:
 
@@ -20,7 +28,7 @@ What is implemented, honestly labelled:
 | `football_data_couk_fixtures` (fixtures.csv) | SHARP_REFERENCE (Pinnacle column) | yes | **no** (refreshed a few times a week; quote time unknown) | no | free, keyless |
 | `football_data_couk_historical` (season CSVs) | SHARP_REFERENCE | no | yes (PSCH etc. are closing) | **yes** (2019-20 →) | free, keyless |
 | `kalshi_public` | KALSHI_ONLY | yes | yes | no | free |
-| `the_odds_api` | SHARP_REFERENCE | yes | yes | no | key required — **not implemented** |
+| `the_odds_api` (bookmakers=pinnacle) | SHARP_REFERENCE | yes | **yes** (T-60 entry + ≤ 15 min close) | no | owner's existing shared key; ~1,550 credits / 30 d; **implemented**, active once `ODDS_API_KEY` is a repo secret |
 
 Because fixtures.csv quotes are stamped at *our* capture time and the upstream refresh cadence is a few
 times per week, a fixtures.csv capture that lands inside the close window is a coincidence, not a close.
