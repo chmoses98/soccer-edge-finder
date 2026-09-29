@@ -66,7 +66,9 @@ jobs:
         continue-on-error: true
         run: |
           git clone --quiet --depth 1 --branch data-archive "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" archive
-          python research/lineup_oracle.py --archive-dir archive --calibrate --out work/lineup_oracle_v1.json | tee -a work/backfill.log
+          mkdir -p data/cache
+          [ -s data/cache/Matches.csv ] || curl -sSL --retry 3 -o data/cache/Matches.csv https://raw.githubusercontent.com/xgabora/Club-Football-Match-Data-2000-2025/main/data/Matches.csv
+          python research/lineup_oracle.py --archive-dir archive --matches-csv data/cache/Matches.csv --calibrate --out work/lineup_oracle_v1.json | tee -a work/backfill.log
           cp work/lineup_oracle_v1.json data/research/lineup_oracle_v1.json
           git config user.name "soccer-edge-bot"; git config user.email "soccer-edge-bot@users.noreply.github.com"
           git add data/research/lineup_oracle_v1.json

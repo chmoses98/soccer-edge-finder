@@ -331,50 +331,116 @@ def synthetic(
     return out
 
 
-def load_archive_matches(archive_root: Path) -> list[dict[str, Any]]:
-    """Join `lineups/history/<league>.jsonl` post-hoc XIs with `results/espn/<league>.jsonl`."""
+ESPN_LEAGUE_TO_DIVISION = {
+    "eng.1": "E0",
+    "esp.1": "SP1",
+    "ger.1": "D1",
+    "ita.1": "I1",
+    "fra.1": "F1",
+}
+
+
+def load_archive_matches(
+    archive_root: Path, matches_csv: Path | None = None, *, verbose: bool = True
+) -> list[dict[str, Any]]:
+    """Join `lineups/history/<league>.jsonl` post-hoc XIs with match results.
+
+    Top-5 leagues: ESPN team ids -> canonical ids through the explicit ESPN identity map, results from
+    the football-data redistribution (`data/cache/Matches.csv`, the walk-forward benchmark's source),
+    matched on (home, away) and the kickoff date +-1 day. Other leagues: `results/espn/<league>.jsonl`
+    by ESPN event id. Unjoined rows are counted, never guessed."""
     import json as _json
 
+    from soccer_edge.providers.espn import EspnMap
+
+    emap = EspnMap.load()
     out = []
+    stats: dict[str, dict[str, int]] = {}
+    fd_index: dict[tuple[str, str, str], dict[str, Any]] = {}
+    csv_path = matches_csv or (REPO / "data" / "cache" / "Matches.csv")
+    if csv_path.exists():
+        from research.wf_common import seed_registry
+        from soccer_edge.providers.club_football_data import ClubFootballDataProvider
+
+        obs = ClubFootballDataProvider(seed_registry()).load(
+            divisions=tuple(ESPN_LEAGUE_TO_DIVISION.values()),
+            start_date="2023-07-01",
+            content=csv_path.read_bytes(),
+        )
+        for hm in obs.payload:
+            r = hm.result
+            fd_index[(hm.division, r.home_team_id, r.away_team_id, r.match_date)] = {
+                "date": date.fromisoformat(r.match_date),
+                "home": r.home_team_id,
+                "away": r.away_team_id,
+                "hg": r.home_goals,
+                "ag": r.away_goals,
+            }
     hist_dir = archive_root / "lineups" / "history"
     for p in sorted(hist_dir.glob("*.jsonl")) if hist_dir.exists() else []:
         league = p.stem
-        res_path = archive_root / "results" / "espn" / f"{league}.jsonl"
+        st = stats.setdefault(
+            league, {"rows": 0, "joined": 0, "no_result": 0, "unmapped": 0, "short_xi": 0}
+        )
         results = {}
+        res_path = archive_root / "results" / "espn" / f"{league}.jsonl"
         if res_path.exists():
             for ln in res_path.read_text().splitlines():
                 if ln.strip():
                     r = _json.loads(ln)
                     results[r["espn_event_id"]] = r
+        division = ESPN_LEAGUE_TO_DIVISION.get(league)
         for ln in p.read_text().splitlines():
             if not ln.strip():
                 continue
             row = _json.loads(ln)
-            r = results.get(str(row.get("espn_event_id")))
-            if r is None:
-                continue
+            st["rows"] += 1
             xi_h = [str(pl["athlete_id"]) for pl in row.get("home", []) if pl.get("starter")]
             xi_a = [str(pl["athlete_id"]) for pl in row.get("away", []) if pl.get("starter")]
             if len(xi_h) < 11 or len(xi_a) < 11:
+                st["short_xi"] += 1
                 continue
-            out.append(
-                {
+            rec = None
+            r = results.get(str(row.get("espn_event_id")))
+            if r is not None:
+                rec = {
                     "date": date.fromisoformat(r["match_date"]),
-                    "league": league,
                     "home": r["home_team_id"],
                     "away": r["away_team_id"],
                     "hg": r["home_goals"],
                     "ag": r["away_goals"],
-                    "home_xi": xi_h,
-                    "away_xi": xi_a,
                 }
-            )
+            elif division and fd_index:
+                h = emap.teams.get(str(row.get("home_espn_id")))
+                a = emap.teams.get(str(row.get("away_espn_id")))
+                if h is None or a is None:
+                    st["unmapped"] += 1
+                    continue
+                ko = row.get("kickoff_utc")
+                d0 = date.fromisoformat(ko[:10]) if ko else None
+                if d0 is not None:
+                    for dd in (0, 1, -1):
+                        cand = fd_index.get((division, h, a, (d0 + timedelta(days=dd)).isoformat()))
+                        if cand is not None:
+                            rec = cand
+                            break
+            if rec is None:
+                st["no_result"] += 1
+                continue
+            st["joined"] += 1
+            out.append({**rec, "league": league, "home_xi": xi_h, "away_xi": xi_a})
+    if verbose:
+        print("[oracle] join:", json.dumps(stats))
+    out.sort(key=lambda m: (m["league"], m["date"]))
     return out
 
 
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--archive-dir", default=None)
+    ap.add_argument(
+        "--matches-csv", default=None, help="football-data redistribution CSV (top-5 results)"
+    )
     ap.add_argument("--synthetic", action="store_true")
     ap.add_argument(
         "--calibrate",
@@ -386,7 +452,9 @@ def main(argv: list[str] | None = None) -> int:
     matches = (
         synthetic()
         if a.synthetic
-        else load_archive_matches(Path(a.archive_dir))
+        else load_archive_matches(
+            Path(a.archive_dir), Path(a.matches_csv) if a.matches_csv else None
+        )
         if a.archive_dir
         else []
     )
