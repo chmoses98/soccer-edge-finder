@@ -1,7 +1,7 @@
 {
-  "as_of": "2026-09-29T16:33:11.328066+00:00",
-  "events": 499,
-  "events_skipped_unmapped": 268,
+  "as_of": "2026-09-29T22:21:48.335488+00:00",
+  "events": 497,
+  "events_skipped_unmapped": 266,
   "fixtures_mapped": 231,
   "leagues": [
     "afc.champions",
@@ -74,13 +74,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 10,
-    "events": 40,
+    "captured": 16,
+    "events": 30,
     "failures": [],
     "published_post": 3,
-    "published_pre_kickoff": 0,
-    "unchanged": 30,
-    "unpublished": 37
+    "published_pre_kickoff": 1,
+    "unchanged": 14,
+    "unpublished": 26
   },
   "map_proposals": {
     "concacaf.nations.league": {
@@ -158,10 +158,8 @@
     }
   },
   "map_version": "4",
-  "results_appended": 1,
-  "scoreboard_failures": [
-    "swe.1 2026-10-02: fetch failed for https://site.api.espn.com/apis/site/v2/sports/soccer/swe.1/scoreboard?dates=2026100"
-  ],
+  "results_appended": 10,
+  "scoreboard_failures": [],
   "unmapped_leagues": [
     "bra.2",
     "chi.1",
@@ -234,18 +232,16 @@
     "8939": "Mozambique"
   },
   "weather": {
-    "captured": 23,
-    "events": 32,
+    "captured": 17,
+    "events": 25,
     "failures": [
+      "401877865: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=6.2450&longitude=-75.5715&hourly=te",
       "401877909: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bogota&count=5&language=en&form",
-      "401900609: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=21.7825&longitude=-72.2521&hourly=t",
       "401900594: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=18.4719&longitude=-69.8923&hourly=t",
-      "401900596: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Estadio%20Nacional%20de%20F\u00fatbo",
-      "401889274: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=54.9621&longitude=-1.6017&hourly=te",
-      "401889273: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Hartlepool&count=5&language=en&"
+      "401900596: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Estadio%20Nacional%20de%20F\u00fatbo"
     ],
     "forecast_miss": 0,
-    "geocode_miss": 3,
+    "geocode_miss": 4,
     "no_venue": 0
   }
 }
