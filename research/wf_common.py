@@ -20,6 +20,7 @@ import csv
 import dataclasses
 import hashlib
 import io
+import sys
 import time
 from collections import defaultdict
 from dataclasses import dataclass
@@ -645,6 +646,9 @@ def main(argv: list[str] | None = None) -> int:
     Used by research-dc-v2.yml to run the pre-registered grid as parallel runner jobs."""
     import argparse
 
+    # run as a script (`python research/wf_common.py`): the intercept fitter lives in research/
+    if str(REPO) not in sys.path:
+        sys.path.insert(0, str(REPO))
     ap = argparse.ArgumentParser()
     ap.add_argument("--variant", required=True, choices=sorted(VARIANTS))
     ap.add_argument("--posterior-samples", type=int, default=POSTERIOR_SAMPLES)
