@@ -61,6 +61,9 @@ from soccer_edge.reference.quality import quality_for_bookmaker
 from soccer_edge.reference.schemas import DevigMethod, ReferenceMarketSnapshot
 
 SOURCE = "the_odds_api"
+# Pinnacle's price as republished by an aggregator: the bookmaker's own last_update is kept (quoted_at) and
+# the gap to our capture is recorded, because an aggregated feed can lag the book itself.
+FEED_QUALITY = "PINNACLE_AGGREGATED_DELAYED"
 MARKET_FOR = {"h2h": "1x2", "totals": "ou", "spreads": "ah"}
 MARKET_FAMILY_FOR = {"1x2": "match_result_3way", "ou": "total_goals", "ah": "handicap"}
 INTERNATIONAL_PREFIXES = (
@@ -186,6 +189,11 @@ def snapshots_from_event(
             if market is None:
                 continue
             quoted = mk.get("last_update") or bk.get("last_update")
+            try:
+                q_at = parse_iso_utc(quoted) if quoted else None
+            except ValueError:
+                q_at = None
+            latency = (captured_at - q_at).total_seconds() if q_at is not None else None
             groups: dict[Decimal | None, dict[str, tuple[float, Decimal | None]]] = defaultdict(
                 dict
             )
@@ -245,7 +253,7 @@ def snapshots_from_event(
                             devigged_probability=float(probs[i]),
                             overround=float(inv.sum()),
                             captured_at=captured_at,
-                            quoted_at=parse_iso_utc(quoted) if quoted else None,
+                            quoted_at=q_at,
                             is_closing=False,
                             minutes_to_kickoff=mins,
                             liquidity_note=f"{book} screen price via The Odds API (event {ev.get('id')}); no size information",
@@ -256,6 +264,8 @@ def snapshots_from_event(
                             is_open=False,
                             is_close_candidate=0 <= mins <= NEAR_CLOSE_MAX_MINUTES,
                             source_quality=quality_for_bookmaker(book).value,
+                            feed_quality=FEED_QUALITY if book == "pinnacle" else None,
+                            observation_latency_seconds=latency,
                         )
                     )
     return snaps, incomplete
@@ -274,7 +284,12 @@ def capture(
     now: datetime,
     batch_id: str,
     client_factory: Callable[[], OddsApiClient] | None = None,
+    force_purpose: str | None = None,
+    max_paid_calls: int | None = None,
 ) -> dict[str, Any]:
+    """`force_purpose` (e.g. 'sample') ignores the entry/close windows and the already-captured check: every
+    Kalshi-listed fixture given is eligible, it is ledgered under that purpose (so it never counts as an
+    entry or close capture), and it is guarded like an entry capture. `max_paid_calls` bounds the tick."""
     ledger = BudgetLedger(out_root)
     stats: dict[str, Any] = {
         "batch_id": batch_id,
@@ -287,11 +302,11 @@ def capture(
     no_key: set[str] = set()
     seen: set[str] = set()
     for d in due:
-        p = _purpose(d, cfg)
+        p = force_purpose or _purpose(d, cfg)
         if (
             not d.has_kalshi_markets
             or p is None
-            or d.fixture_id in by_purpose[p]
+            or (force_purpose is None and d.fixture_id in by_purpose[p])
             or d.fixture_id in seen
         ):
             continue
@@ -351,10 +366,14 @@ def capture(
         # close captures first so they win the budget on a busy tick
         order = sorted(groups, key=lambda k: min(0 if p == "close" else 1 for _, p in groups[k]))
         per_sport: dict[str, Any] = {}
+        paid_calls = 0
         for sk in order:
             items = groups[sk]
             ps: dict[str, Any] = {"fixtures": len(items)}
             per_sport[sk] = ps
+            if max_paid_calls is not None and paid_calls >= max_paid_calls:
+                ps["status"] = "SKIPPED_MAX_PAID_CALLS"
+                continue
             if sk not in active:
                 ps["status"] = "SPORT_NOT_ACTIVE"
                 continue
@@ -410,6 +429,11 @@ def capture(
             joined_entry = [
                 f.fixture_id for f in fx_by_event.values() if purpose_of[f.fixture_id] == "entry"
             ]
+            joined_other = [
+                f.fixture_id
+                for f in fx_by_event.values()
+                if purpose_of[f.fixture_id] not in ("entry", "close")
+            ]
             g = decide(
                 ledger,
                 cfg,
@@ -430,6 +454,8 @@ def capture(
                         "credits_charged": 0,
                         "close_fixtures": joined_close,
                         "entry_fixtures": joined_entry,
+                        "other_fixtures": joined_other,
+                        "purpose": force_purpose,
                         **g,
                     },
                 )
@@ -438,6 +464,7 @@ def capture(
             od = client.get_odds(
                 sk, event_ids=sorted(fx_by_event), markets=cfg.markets, bookmakers=cfg.bookmakers
             )
+            paid_calls += 1
             # a paid call with no response may still have been billed: charge the design cost
             c, basis = (
                 charge(od.quota, cost)
@@ -493,6 +520,8 @@ def capture(
                     charge_basis=basis,
                     close_fixtures=joined_close if od.ok else [],
                     entry_fixtures=joined_entry if od.ok else [],
+                    other_fixtures=joined_other,
+                    purpose=force_purpose,
                     snapshots_written=written,
                     incomplete_markets=incomplete,
                     **g,

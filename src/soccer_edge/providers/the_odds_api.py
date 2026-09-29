@@ -23,6 +23,7 @@ fixtures Kalshi already lists.
 
 from __future__ import annotations
 
+import logging
 import os
 import re
 from dataclasses import dataclass, field
@@ -77,6 +78,11 @@ SPORT_KEYS: dict[str, str] = {
     "fifa.womens_world_cup": "soccer_fifa_world_cup_womens",
     "usa.nwsl": "soccer_usa_nwsl",
 }
+
+# httpx/httpcore log every request URL at INFO/DEBUG, and our URLs carry the key as a query parameter.
+# Nothing in this repo enables those levels, but pin them so no future logging config can leak the key.
+for _name in ("httpx", "httpcore"):
+    logging.getLogger(_name).setLevel(logging.WARNING)
 
 _KEY_RE = re.compile(r"(apiKey=)[^&\s]+", re.IGNORECASE)
 

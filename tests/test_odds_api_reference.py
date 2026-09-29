@@ -400,3 +400,72 @@ def test_sharp_availability_follows_the_credential(monkeypatch):
     monkeypatch.delenv("SOCCER_ODDS_API_CONFIGURED")
     monkeypatch.setenv("ODDS_API_KEY", KEY)
     assert live_sharp_reference_available() == (True, "the_odds_api")
+
+
+def test_feed_quality_latency_and_timestamps(tmp_path, registry, cfg, monkeypatch):
+    import soccer_edge.providers.the_odds_api as toa
+
+    monkeypatch.setattr(toa, "utc_now", lambda: NOW)
+    fp = FakeProvider()
+    capture(
+        _due(),
+        registry=registry,
+        out_root=tmp_path,
+        cfg=cfg,
+        now=NOW,
+        batch_id="kd",
+        client_factory=fp.factory(),
+    )
+    rows = read_jsonl(next((tmp_path / "reference").glob("*/oddsapi-kd.jsonl")))
+    assert rows and all(r["feed_quality"] == "PINNACLE_AGGREGATED_DELAYED" for r in rows)
+    r = rows[0]
+    assert r["quoted_at"].startswith("2026-10-03T13:49:00") and r["captured_at"].startswith(
+        "2026-10-03T13:50"
+    )
+    assert r["observation_latency_seconds"] == 60.0
+    assert r["kickoff_utc"].startswith("2026-10-03T14:00") or r["kickoff_utc"].startswith(
+        "2026-10-03T14:45"
+    )
+
+
+def test_sample_capture_is_bounded_and_never_counts_as_entry_or_close(tmp_path, registry, cfg):
+    fp = FakeProvider()
+    far = [DueFixture(d.fixture_id, d.competition_id, d.kickoff_utc, 600.0, True) for d in _due()]
+    stats = capture(
+        far,
+        registry=registry,
+        out_root=tmp_path,
+        cfg=cfg,
+        now=NOW,
+        batch_id="s1",
+        client_factory=fp.factory(),
+        force_purpose="sample",
+        max_paid_calls=1,
+    )
+    assert len(fp.paid()) == 1 and stats["credits_charged"] == 3 and stats["snapshots"] == 14
+    led = BudgetLedger(tmp_path)
+    assert (
+        led.fixtures_captured(NOW, "entry") == set()
+        and led.fixtures_captured(NOW, "close") == set()
+    )
+    assert led.rows("2026-10-03")[-1]["purpose"] == "sample"
+    # the windows still decide the dispatcher: a close tick after the sample still pays for its close
+    capture(
+        _due(),
+        registry=registry,
+        out_root=tmp_path,
+        cfg=cfg,
+        now=NOW,
+        batch_id="kd",
+        client_factory=fp.factory(),
+    )
+    assert len(fp.paid()) == 2
+
+
+def test_httpx_request_logging_cannot_leak_the_key():
+    import logging
+
+    import soccer_edge.providers.the_odds_api  # noqa: F401
+
+    assert logging.getLogger("httpx").getEffectiveLevel() >= logging.WARNING
+    assert logging.getLogger("httpcore").getEffectiveLevel() >= logging.WARNING

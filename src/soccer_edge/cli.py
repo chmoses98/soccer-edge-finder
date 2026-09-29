@@ -973,7 +973,67 @@ def _odds_api_action(out: Path, due, batch_id: str) -> str:
             f"credits={stats.get('credits_charged', 0)}:rows={stats.get('snapshots', 0)}"
         )
     except Exception as exc:
-        return f"odds_api:error:{type(exc).__name__}:{str(exc)[:80]}"
+        from soccer_edge.providers.the_odds_api import redact
+
+        return f"odds_api:error:{type(exc).__name__}:{redact(str(exc))[:80]}"
+
+
+def cmd_odds_api_sample(args: argparse.Namespace) -> int:
+    """ONE bounded Pinnacle capture (at most one paid call, ~3 credits, budget-guarded) for the Kalshi-listed
+    fixtures of a single competition in the published dispatch schedule. Rows are ordinary reference
+    snapshots (so they enter the close/CLV path); the ledger marks them purpose='sample', so they never
+    stand in for the dispatcher's entry or close captures."""
+    from soccer_edge.dispatch.horizons import load_schedule
+    from soccer_edge.providers.the_odds_api import SPORT_KEYS
+    from soccer_edge.reference.odds_api_capture import DueFixture, capture, status_summary
+    from soccer_edge.reference.odds_budget import BudgetConfig
+
+    now = utc_now()
+    archive = Path(args.archive_dir)
+    out = Path(args.out_dir)
+    sched_path = archive / "dispatch" / "schedule.json"
+    schedule = load_schedule(sched_path) if sched_path.exists() else []
+    horizon = now + timedelta(hours=args.hours)
+    listed = [
+        f
+        for f in schedule
+        if (f.source == "run_output" or f.markets_discovered > 0)
+        and now < f.kickoff_utc <= horizon
+        and f.competition_id in SPORT_KEYS
+        and (not args.competition or f.competition_id == args.competition)
+    ]
+    if not listed:
+        print(
+            json.dumps({"status": "NO_KALSHI_LISTED_FIXTURE_WITH_SPORT_KEY", "hours": args.hours})
+        )
+        return 2
+    comp = min(listed, key=lambda f: f.kickoff_utc).competition_id
+    fixtures = [
+        DueFixture(
+            f.fixture_id,
+            f.competition_id,
+            f.kickoff_utc,
+            (f.kickoff_utc - now).total_seconds() / 60,
+            True,
+        )
+        for f in listed
+        if f.competition_id == comp
+    ]
+    batch = f"sample-{now:%Y%m%dT%H%M%SZ}"
+    stats = capture(
+        fixtures,
+        registry=_registry(),
+        out_root=out,
+        cfg=BudgetConfig.load(REPO_ROOT / "config" / "odds_api_budget.json"),
+        now=now,
+        batch_id=batch,
+        force_purpose="sample",
+        max_paid_calls=1,
+    )
+    summary = {"competition": comp, "fixtures": len(fixtures), **status_summary(stats, now)}
+    write_json(out / "odds_api" / "SAMPLE_STATUS.json", summary)
+    print(json.dumps(summary, indent=1, default=str))
+    return 0 if stats.get("snapshots") else 1
 
 
 def cmd_odds_api_status(args: argparse.Namespace) -> int:
@@ -1094,6 +1154,12 @@ def cmd_odds_api_probe(args: argparse.Namespace) -> int:
                 "sports_call": resp.meta(),
                 "soccer_keys_listed": len(soccer),
                 "soccer_keys_active": sorted(active),
+                "soccer_metadata": {
+                    s["key"]: {
+                        k: s.get(k) for k in ("title", "description", "active", "has_outrights")
+                    }
+                    for s in soccer
+                },
                 "mapped_competitions": {
                     cid: {
                         "sport_key": sk,
@@ -1633,6 +1699,17 @@ def build_parser() -> argparse.ArgumentParser:
     oap.add_argument("--events", nargs="*", help="sport keys to list upcoming events for (free)")
     oap.add_argument("--days-ahead", type=float, default=7.0)
     oap.set_defaults(func=cmd_odds_api_probe)
+    osm = oasub.add_parser(
+        "sample",
+        help="ONE bounded paid Pinnacle capture for one competition's Kalshi-listed fixtures",
+    )
+    osm.add_argument(
+        "--archive-dir", required=True, help="data-archive clone (dispatch/schedule.json)"
+    )
+    osm.add_argument("--out-dir", required=True, help="publish root (reference/, odds_api/)")
+    osm.add_argument("--hours", type=float, default=48.0)
+    osm.add_argument("--competition", default=None)
+    osm.set_defaults(func=cmd_odds_api_sample)
 
     pe = sub.add_parser(
         "promote", help="promotion evaluator (report only; never edits authority.json)"
