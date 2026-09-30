@@ -13,6 +13,13 @@ from soccer_edge.model.strength import DixonColesFitter, MatchRow
 REPO = Path(__file__).resolve().parents[1]
 
 
+@pytest.fixture(autouse=True)
+def _not_in_actions(monkeypatch):
+    """Tests must behave the same locally and on the CI runner: the paid-call guard fails closed when
+    GITHUB_ACTIONS=true and no claim store is given, so tests that exercise that guard set it explicitly."""
+    monkeypatch.delenv("GITHUB_ACTIONS", raising=False)
+
+
 @pytest.fixture(scope="session")
 def registry() -> AliasRegistry:
     return AliasRegistry.from_directory(REPO / "data" / "registry")
