@@ -832,11 +832,22 @@ def cmd_dispatch_tick(args: argparse.Namespace) -> int:
     archive = Path(args.archive_dir)
     out = Path(args.out_dir)
     started = now = utc_now()
+    prev_sched = read_json_or(archive / SCHEDULE_FILE, {}) or {}
     sched_doc = _dispatch_schedule(archive, now)
     write_json(out / SCHEDULE_FILE, sched_doc)
     schedule = load_schedule(out / SCHEDULE_FILE)
     # first time each fixture entered the schedule: a window that closed before then is NOT_APPLICABLE
     first_seen = dict(read_json_or(archive / FIRST_SEEN_FILE, {}) or {})
+    # a fixture already known before this tick keeps the earliest evidence of that: its first log row or
+    # the previous schedule's build time (so a first_seen file started today cannot relabel old misses)
+    for r in load_log(archive / STATE_LOG):
+        if r.logged_at and r.logged_at < first_seen.get(r.fixture_id, "9999"):
+            first_seen[r.fixture_id] = r.logged_at
+    if prev_sched.get("generated_at"):
+        for d in prev_sched.get("fixtures", []):
+            fid = d.get("fixture_id")
+            if fid and prev_sched["generated_at"] < first_seen.get(fid, "9999"):
+                first_seen[fid] = prev_sched["generated_at"]
     for fx in schedule:
         first_seen.setdefault(fx.fixture_id, _iso(now))
     cutoff = _iso(now - timedelta(days=21))
