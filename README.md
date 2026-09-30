@@ -43,6 +43,7 @@ Only public Kalshi endpoints are used. No credentials are required for anything 
 | Operator command | `docs/RUN_SOCCER.md` |
 | App contract (versioned JSON) | `docs/APP_CONTRACT.md`, `docs/schemas/` |
 | Archive integrity (manifest, verify, recovery) | `docs/ARCHIVE_INTEGRITY.md` |
+| Scheduler reliability (external heartbeat, dispatcher, heartbeats, settlement dispatch) | `docs/SCHEDULER.md` |
 | Temporal integrity (no-future-information guard) | `docs/TEMPORAL_INTEGRITY.md` |
 | Settlement, storage, limitations, roadmap, handoff | `docs/SETTLEMENT.md`, `docs/STORAGE_STRATEGY.md`, `docs/KNOWN_LIMITATIONS.md`, `docs/ROADMAP.md`, `docs/HANDOFF.md` |
 

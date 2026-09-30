@@ -1,15 +1,28 @@
 name: kickoff-dispatch
+run-name: "kickoff-dispatch · ${{ inputs.source || github.event.client_payload.source || github.event_name }}"
 
-# Kickoff-timed capture dispatcher (docs/KICKOFF_DISPATCH.md). A cheap stdlib decide step runs on a
-# dense off-round cron and reads the published schedule + delivery log from data-archive; only when a
-# required horizon (T-120/60/30/15/5) is satisfiable now does the bounded capture job run: Kalshi fast
-# snapshot + reference odds (football-data + budget-guarded Pinnacle via The Odds API) + lineups for the due fixtures, then it holds (sleeps) for the next window
-# if that is soon, records every delivered/missed horizon in an append-only log, and publishes.
-# GitHub cron drops slots; every tick is idempotent and catches up on whatever is still satisfiable.
+# The ONE canonical dispatcher (docs/SCHEDULER.md). Every trigger runs the same stdlib decide step:
+#
+#   external heartbeat  POST /repos/<repo>/actions/workflows/kickoff-dispatch.yml/dispatches
+#                       {"ref":"main","inputs":{"source":"external-heartbeat"}}   <- PRIMARY timing source
+#   repository_dispatch event_type "wake-soccer-dispatcher"                       <- same logic, optional
+#   GitHub schedule     every 10 min on off-round minutes                          <- BACKUP only
+#   manual              workflow_dispatch from the Actions tab
+#
+# A trigger carries no work. `decide` reads data-archive, records a heartbeat row, dispatches settlement
+# when a fixture has finished, and starts `capture` only when a horizon (T-120/60/30/15/5) is due, newly
+# missed horizons need logging, or the schedule is stale. Nothing due is a normal, zero-cost success.
+# `capture` is the only job in the writer concurrency group: a newer wake never cancels a running capture,
+# and paid reference calls are claimed on data-archive first, so repeated or simultaneous wakes cannot pay
+# twice for the same fixture/purpose.
 
 on:
   workflow_dispatch:
     inputs:
+      source:
+        description: "trigger source label (external-heartbeat | manual)"
+        type: string
+        default: manual
       force:
         description: "run the capture job even when nothing is due"
         type: boolean
@@ -18,40 +31,49 @@ on:
         description: "also run a fast RUN SOCCER (3 h window) at each due horizon"
         type: boolean
         default: false
+  repository_dispatch:
+    types: [wake-soccer-dispatcher]
   schedule:
-    - cron: "4,14,24,34,44,54 * * * *"
-
-concurrency:
-  group: data-writer-archive-kickoff
-  cancel-in-progress: false
+    - cron: "7,17,27,37,47,57 * * * *"  # BACKUP heartbeat; GitHub drops most of these slots
 
 permissions:
-  contents: write
+  contents: write  # heartbeat rows, claims, archive publish (data-archive branch)
+  actions: write   # dispatch settle-evaluate; read in-progress runs
 
 jobs:
   decide:
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 4
     outputs:
-      due: ${{ steps.d.outputs.due }}
+      capture: ${{ steps.d.outputs.capture }}
       reason: ${{ steps.d.outputs.reason }}
+      source: ${{ steps.d.outputs.source }}
     steps:
       - uses: actions/checkout@v4
         with:
           sparse-checkout: |
             scripts/kickoff_decide.py
             src/soccer_edge/dispatch
+            config/dispatch.json
           sparse-checkout-cone-mode: false
-      - name: Any horizon due? (stdlib only, no install)
+      - name: Wake (stdlib only, no install)
         id: d
-        run: python3 scripts/kickoff_decide.py >> "$GITHUB_OUTPUT"
-      - run: echo "decide due=${{ steps.d.outputs.due }} (${{ steps.d.outputs.reason }})" >> "$GITHUB_STEP_SUMMARY"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TRIGGER_SOURCE: ${{ inputs.source || github.event.client_payload.source }}
+          FORCE: ${{ inputs.force }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: python3 scripts/kickoff_decide.py wake
+      - run: echo "wake source=${{ steps.d.outputs.source }} capture=${{ steps.d.outputs.capture }} settle=${{ steps.d.outputs.settle_dispatched }} (${{ steps.d.outputs.reason }})" >> "$GITHUB_STEP_SUMMARY"
 
   capture:
     needs: decide
-    if: ${{ needs.decide.outputs.due == 'true' || inputs.force }}
+    if: ${{ needs.decide.outputs.capture == 'true' }}
     runs-on: ubuntu-latest
     timeout-minutes: 55
+    concurrency:
+      group: data-writer-archive-kickoff
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -59,7 +81,7 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -e .
-      - name: Fetch archive tip (schedule, log, change-suppression state, ESPN fixtures)
+      - name: Fetch archive tip (schedule, log, heartbeats, change-suppression state, ESPN fixtures)
         run: |
           git clone --quiet --depth 1 --branch data-archive "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" archive
       - name: Dispatcher tick (capture every satisfiable horizon, hold for the next)
@@ -69,12 +91,13 @@ jobs:
           # The SAME Odds API key/secret name as chmoses98/edge-finder-api (shared account). Absent -> the
           # Pinnacle reference action logs NOT_CONFIGURED and makes no request. Never echoed.
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # claims on data-archive before paid calls
         run: |
           set -o pipefail
           mkdir -p work
           EXTRA=""
           [ "${{ inputs.with_run }}" = "true" ] && EXTRA="--with-run"
-          python -m soccer_edge.cli dispatch tick --archive-dir archive --out-dir work --max-hold-minutes 40 $EXTRA | tee work/tick.log
+          python -m soccer_edge.cli dispatch tick --archive-dir archive --out-dir work --max-hold-minutes 40 --summary-out tick_summary.json $EXTRA | tee work/tick.log
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -100,7 +123,13 @@ jobs:
           fi
           [ -d work/dispatch ] || exit 0
           scripts/archive_publish.sh work . "kickoff-dispatch ${{ github.run_id }} $(date -u +%Y-%m-%dT%H:%MZ)"
+      - name: Record capture completion heartbeat
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TRIGGER_SOURCE: ${{ inputs.source || github.event.client_payload.source }}
+        run: python3 scripts/kickoff_decide.py complete --tick-summary tick_summary.json --status "${{ job.status }}"
       - name: Summary
         if: always()
         run: |
-          { echo '## kickoff-dispatch'; echo '```'; tail -40 work/tick.log 2>/dev/null; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          { echo '## kickoff-dispatch'; echo '```'; tail -40 work/tick.log 2>/dev/null; echo '```'; } >> "$GITHUB_STEP_SUMMARY" || true

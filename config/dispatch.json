@@ -1,0 +1,7 @@
+{
+  "$comment": "Scheduler cadence used only to compute expected-vs-actual heartbeat reliability (docs/SCHEDULER.md). The external heartbeat is the primary timing source; the GitHub schedule is a backup.",
+  "schema": "dispatch_config_v1",
+  "external_heartbeat_minutes": 5,
+  "external_heartbeat_hours": "24/7",
+  "github_backup_minutes": 10
+}

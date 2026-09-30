@@ -286,20 +286,28 @@ def capture(
     client_factory: Callable[[], OddsApiClient] | None = None,
     force_purpose: str | None = None,
     max_paid_calls: int | None = None,
+    claim_fn: Callable[[list[str]], set[str]] | None = None,
 ) -> dict[str, Any]:
     """`force_purpose` (e.g. 'sample') ignores the entry/close windows and the already-captured check: every
     Kalshi-listed fixture given is eligible, it is ledgered under that purpose (so it never counts as an
-    entry or close capture), and it is guarded like an entry capture. `max_paid_calls` bounds the tick."""
+    entry or close capture), and it is guarded like an entry capture. `max_paid_calls` bounds the tick.
+
+    `claim_fn` (the dispatcher passes a data-archive ClaimStore) is called with the idempotency identities
+    `the_odds_api|<purpose>|<fixture_id>` right before a paid call and returns the ones this run now owns;
+    fixtures another run already claimed are dropped, and nothing is spent when none are left. Without it
+    the durable ledger check alone applies (sequential runs)."""
     ledger = BudgetLedger(out_root)
     stats: dict[str, Any] = {
         "batch_id": batch_id,
         "calls": [],
         "credits_charged": 0,
+        "paid_calls": 0,
         "snapshots": 0,
     }
     by_purpose = {p: ledger.fixtures_captured(now, p) for p in ("entry", "close")}
     groups: dict[str, list[tuple[DueFixture, str]]] = defaultdict(list)
     no_key: set[str] = set()
+    no_key_items: list[tuple[DueFixture, str]] = []
     seen: set[str] = set()
     for d in due:
         p = force_purpose or _purpose(d, cfg)
@@ -314,9 +322,27 @@ def capture(
         sk = SPORT_KEYS.get(d.competition_id)
         if sk is None:
             no_key.add(d.competition_id)
+            no_key_items.append((d, p))
             continue
         groups[sk].append((d, p))
     stats["no_sport_key"] = sorted(no_key)
+    # a close/entry window with no possible reference is recorded once, so the close report can say why
+    logged_nokey = ledger.fixtures_with_status(now, "NO_SPORT_KEY")
+    fresh = [(d, p) for d, p in no_key_items if (d.fixture_id, p) not in logged_nokey]
+    if fresh:
+        ledger.append(
+            now,
+            {
+                "kind": "odds",
+                "status": "NO_SPORT_KEY",
+                "batch_id": batch_id,
+                "request_made": False,
+                "credits_charged": 0,
+                "close_fixtures": [d.fixture_id for d, p in fresh if p == "close"],
+                "entry_fixtures": [d.fixture_id for d, p in fresh if p == "entry"],
+                "competitions": sorted({d.competition_id for d, _ in fresh}),
+            },
+        )
     stats["eligible_fixtures"] = sum(len(v) for v in groups.values())
     if not groups:
         stats["status"] = "NOTHING_ELIGIBLE"
@@ -376,6 +402,7 @@ def capture(
                 continue
             if sk not in active:
                 ps["status"] = "SPORT_NOT_ACTIVE"
+                _no_call_row(ledger, now, batch_id, sk, "SPORT_NOT_ACTIVE", items)
                 continue
             has_close = any(p == "close" for _, p in items)
             if events_cost:
@@ -421,6 +448,7 @@ def capture(
             ps["join"] = jstats
             if not fx_by_event:
                 ps["status"] = "NO_JOINED_EVENTS"
+                _no_call_row(ledger, now, batch_id, sk, "NO_JOINED_EVENTS", items)
                 continue
             purpose_of = {d.fixture_id: p for d, p in items}
             joined_close = [
@@ -461,10 +489,29 @@ def capture(
                 )
                 ps["status"] = f"{STATUS_BLOCKED}:{g['reason']}"
                 continue
+            if claim_fn is not None:
+                idents = {
+                    f"the_odds_api|{purpose_of[f.fixture_id]}|{f.fixture_id}": ev
+                    for ev, f in fx_by_event.items()
+                }
+                won = claim_fn(sorted(idents))
+                lost = [i for i in idents if i not in won]
+                if lost:
+                    ps["claimed_elsewhere"] = len(lost)
+                fx_by_event = {ev: fx_by_event[ev] for i, ev in idents.items() if i in won}
+                joined_close = [f for f in joined_close if f"the_odds_api|close|{f}" in won]
+                joined_entry = [f for f in joined_entry if f"the_odds_api|entry|{f}" in won]
+                joined_other = [
+                    f for f in joined_other if f"the_odds_api|{purpose_of[f]}|{f}" in won
+                ]
+                if not fx_by_event:
+                    ps["status"] = "NO_ACTION_ALREADY_CLAIMED"
+                    continue
             od = client.get_odds(
                 sk, event_ids=sorted(fx_by_event), markets=cfg.markets, bookmakers=cfg.bookmakers
             )
             paid_calls += 1
+            stats["paid_calls"] += 1
             # a paid call with no response may still have been billed: charge the design cost
             c, basis = (
                 charge(od.quota, cost)
@@ -475,6 +522,7 @@ def capture(
             stats["calls"].append(od.meta())
             remaining = _remaining(od, remaining)
             written = incomplete = 0
+            quoted: set[str] = set()
             if od.ok:
                 captured_at = od.responded_at or now
                 path = (
@@ -488,6 +536,8 @@ def capture(
                             continue
                         snaps, inc = snapshots_from_event(ev, fx, captured_at)
                         incomplete += inc
+                        if snaps:
+                            quoted.add(fx.fixture_id)
                         for sn in snaps:
                             fh.write(
                                 json.dumps(sn.to_record(batch_id), sort_keys=True, default=str)
@@ -521,6 +571,8 @@ def capture(
                     close_fixtures=joined_close if od.ok else [],
                     entry_fixtures=joined_entry if od.ok else [],
                     other_fixtures=joined_other,
+                    unjoined_fixtures=jstats.get("unjoined_fixtures", []),
+                    quoted_fixtures=sorted(quoted),
                     purpose=force_purpose,
                     snapshots_written=written,
                     incomplete_markets=incomplete,
@@ -542,6 +594,30 @@ def capture(
         return stats
     finally:
         client.close()
+
+
+def _no_call_row(  # noqa: PLR0917
+    ledger: BudgetLedger,
+    now: datetime,
+    batch_id: str,
+    sport_key: str,
+    status: str,
+    items: list[tuple[DueFixture, str]],
+) -> None:
+    """Record a window where no paid call was possible (sport inactive, no joinable event)."""
+    ledger.append(
+        now,
+        {
+            "kind": "odds",
+            "sport_key": sport_key,
+            "status": status,
+            "batch_id": batch_id,
+            "request_made": False,
+            "credits_charged": 0,
+            "close_fixtures": [d.fixture_id for d, p in items if p == "close"],
+            "entry_fixtures": [d.fixture_id for d, p in items if p == "entry"],
+        },
+    )
 
 
 def _remaining(resp: OddsApiResponse, default: int | None = None) -> int | None:
