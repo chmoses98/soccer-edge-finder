@@ -40,6 +40,14 @@ HORIZON_WINDOWS: dict[int, tuple[float, float]] = {
 }
 SCHEDULE_LOOKAHEAD_MINUTES = 130
 STATE_LOG = "dispatch/horizons.jsonl"
+FIRST_SEEN_FILE = "dispatch/first_seen.json"
+
+# terminal horizon states (PENDING is computed for horizons whose window has not closed yet)
+DELIVERED = "DELIVERED"
+MISSED_BEFORE_WAKE = "MISSED_BEFORE_WAKE"  # no dispatcher wake landed inside the window
+MISSED_EXECUTION_FAILURE = "MISSED_EXECUTION_FAILURE"  # a wake landed inside it but did not deliver
+NOT_APPLICABLE = "NOT_APPLICABLE"  # the fixture entered the schedule after the window had closed
+PENDING = "PENDING"
 SCHEDULE_FILE = "dispatch/schedule.json"
 DIAGNOSTICS_FILE = "dispatch/diagnostics.json"
 
@@ -95,6 +103,10 @@ class HorizonRow:
     lateness_minutes: float | None = None  # horizon - achieved (positive = later than nominal)
     batch_id: str | None = None
     actions: list[str] = field(default_factory=list)
+    # explicit terminal state (scheduler repair, 2026-09-30; older rows carry None = legacy):
+    # DELIVERED | MISSED_BEFORE_WAKE | MISSED_EXECUTION_FAILURE | NOT_APPLICABLE
+    state: str | None = None
+    reason: str | None = None
 
     def to_json(self) -> dict[str, Any]:
         return asdict(self)
@@ -210,9 +222,54 @@ def delivered_rows(
                 lateness_minutes=round(d.horizon - mtk, 2),
                 batch_id=batch_id,
                 actions=list(actions),
+                state=DELIVERED,
             )
         )
     return rows
+
+
+def window_bounds(kickoff: datetime, horizon: int) -> tuple[datetime, datetime]:
+    """(opens, closes) of a horizon's validity window in wall-clock time."""
+    lo, hi = HORIZON_WINDOWS[horizon]
+    return kickoff - timedelta(minutes=hi), kickoff - timedelta(minutes=lo)
+
+
+def classify_missed(
+    rows: list[HorizonRow], wake_times: list[datetime], first_seen: dict[str, str]
+) -> list[HorizonRow]:
+    """Give every newly missed row an explicit state:
+
+    * NOT_APPLICABLE when the fixture was first scheduled after the window had already closed;
+    * MISSED_EXECUTION_FAILURE when at least one dispatcher wake started inside the window (the
+      dispatcher ran but the horizon was not delivered: a failed capture, a stale decision, ...);
+    * MISSED_BEFORE_WAKE otherwise (no wake at all inside the window: the scheduler never fired).
+    """
+    out = []
+    for r in rows:
+        opens, closes = window_bounds(_dt(r.kickoff_utc), int(r.horizon))
+        seen = first_seen.get(r.fixture_id)
+        if seen is not None and _dt(seen) >= closes:
+            r.state, r.reason = (
+                NOT_APPLICABLE,
+                f"first scheduled {seen}, window closed {_iso(closes)}",
+            )
+        elif any(opens <= t <= closes for t in wake_times):
+            n = sum(1 for t in wake_times if opens <= t <= closes)
+            r.state, r.reason = (
+                MISSED_EXECUTION_FAILURE,
+                f"{n} dispatcher wake(s) inside the window",
+            )
+        else:
+            r.state, r.reason = MISSED_BEFORE_WAKE, "no dispatcher wake inside the window"
+        out.append(r)
+    return out
+
+
+def row_state(r: HorizonRow) -> str:
+    """Terminal state of a log row; legacy rows (before explicit states) map from their status."""
+    if r.state:
+        return r.state
+    return DELIVERED if r.status == "delivered" else MISSED_BEFORE_WAKE
 
 
 def diagnostics(

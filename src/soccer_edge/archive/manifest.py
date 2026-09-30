@@ -73,6 +73,9 @@ _RULES: tuple[tuple[str, str, bool, bool], ...] = (
     ("recovery/*.json", "recovery_manifest", False, True),
     ("dispatch/horizons.jsonl", "horizon_log", False, False),
     ("odds_api/budget/*.jsonl", "odds_api_budget", False, False),
+    ("dispatch/heartbeats/*.jsonl", "dispatch_heartbeat", False, False),
+    ("dispatch/settle_runs.jsonl", "settle_run_log", False, False),
+    ("claims/*/*/*.json", "dispatch_claim", False, True),
     ("odds_api/raw/*/*.json.gz", "odds_api_raw", False, True),
 )
 
@@ -91,6 +94,8 @@ _MUTABLE_GLOBS = (
     "manifest/*/*",
     "dispatch/schedule.json",
     "dispatch/diagnostics.json",
+    "dispatch/reliability.json",
+    "dispatch/first_seen.json",
 )
 
 

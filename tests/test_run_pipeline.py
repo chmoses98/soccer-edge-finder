@@ -187,6 +187,9 @@ def test_started_and_window_dispositions(registry, epl_fixtures, disc):
     inp.as_of = AS_OF - timedelta(days=10)
     for k in ("market_observed_at", "fixtures_observed_at", "results_observed_at"):
         setattr(inp, k, inp.as_of)
+    # the fake discovery is stamped with the wall clock; pin it to this decision time, otherwise the
+    # temporal guard (correctly) rejects it once the real date passes AS_OF - 10 days (2026-09-29)
+    inp.discovery.finished_at = inp.as_of
     # point-in-time: the model used at this earlier decision time must not have seen later results
     inp.models["eng.premier_league"] = _epl_model(epl_fixtures, as_of=inp.as_of.date())
     art = run(

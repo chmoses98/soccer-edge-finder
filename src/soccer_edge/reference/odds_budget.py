@@ -100,6 +100,15 @@ class BudgetLedger:
     def spent(self, now: datetime, days: int) -> int:
         return sum(int(r.get("credits_charged") or 0) for r in self.rows_since(now, days))
 
+    def fixtures_with_status(self, now: datetime, status: str) -> set[tuple[str, str]]:
+        """(fixture, purpose) pairs that already have a ledger row with this status (last 3 days)."""
+        out: set[tuple[str, str]] = set()
+        for r in self.rows_since(now, 3):
+            if r.get("status") == status:
+                for purpose in ("close", "entry"):
+                    out |= {(f, purpose) for f in r.get(f"{purpose}_fixtures") or []}
+        return out
+
     def fixtures_captured(self, now: datetime, purpose: str) -> set[str]:
         """Fixtures that already have a successful paid capture for `purpose` ('entry' | 'close')."""
         done: set[str] = set()

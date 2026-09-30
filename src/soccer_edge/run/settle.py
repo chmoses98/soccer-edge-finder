@@ -323,6 +323,7 @@ def settle_ledger(
     reference_dir: Path | None = None,
     et_possible_for: dict[str, bool] | None = None,
     coverage_rows: list[CoverageRow] | None = None,
+    close_attempts: dict[str, dict[str, Any]] | None = None,
 ) -> list[dict[str, Any]]:
     """Settle every due record that has sufficient evidence; classify every record into an explicit
     settlement state (appended to `coverage_rows` when given). Only SETTLED outcomes (yes/no/void) are
@@ -354,6 +355,11 @@ def settle_ledger(
         cv = close_v2_for_record(
             rec, ko, snap_rows.get(rec["ticker"], []), ref_rows.get(key, []) if key else []
         )
+        if close_attempts is not None:
+            from soccer_edge.reference.close_attempts import attempt_for
+
+            # why there is (or is not) an external reference close: dispatcher vs provider (scheduler repair)
+            cv["reference_attempt"] = attempt_for(close_attempts, rec["fixture_id"], ko, as_of)
         close_rows.append({"close_v2": cv})
         return cv
 

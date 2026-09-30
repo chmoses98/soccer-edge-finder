@@ -3,8 +3,18 @@ name: settle-evaluate
 # Daily: settle archived predictions against official results + captured close quotes,
 # recompute ModelHealthV1 rows and authority proposals. Never changes config/authority.json.
 
+# Triggers (docs/SCHEDULER.md): the kickoff dispatcher dispatches this workflow when a fixture with
+# predictions has finished (kickoff + 3 h 15 min) or pending results are due a retry; the daily cron is the
+# backup. Settlement is idempotent (settled records are skipped, pending ones re-evaluated), and every run
+# appends a settle_run_v1 row (dispatch/settle_runs.jsonl) that tells the dispatcher what is still pending.
+
 on:
   workflow_dispatch:
+    inputs:
+      source:
+        description: "who asked (dispatcher | manual)"
+        type: string
+        default: manual
   schedule:
     - cron: "49 4 * * *"
 
@@ -36,10 +46,12 @@ jobs:
       - name: Settle + evaluate
         timeout-minutes: 18
         id: s
+        env:
+          SETTLE_SOURCE: ${{ github.event_name == 'schedule' && 'github-schedule-backup' || inputs.source || 'manual' }}
         run: |
           set -o pipefail
-          mkdir -p work/evaluation
-          python -m soccer_edge.cli settle --archive-dir archive/predictions --snapshots-dir archive/snapshots --settlements-dir archive/settlements --reference-dir archive/reference --espn-dir archive --out-dir work/evaluation | tee work/settle.log
+          mkdir -p work/evaluation work/dispatch
+          python -m soccer_edge.cli settle --archive-dir archive/predictions --snapshots-dir archive/snapshots --settlements-dir archive/settlements --reference-dir archive/reference --espn-dir archive --out-dir work/evaluation --run-log work/dispatch/settle_runs.jsonl | tee work/settle.log
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -59,13 +71,16 @@ jobs:
           python -m soccer_edge.cli lineups report --archive-dir archive --out work/evaluation/lineup_lead_time.v1.json | tail -12
           python -m soccer_edge.cli uncertainty report --settlements-dir archive/settlements --out work/evaluation/uncertainty_coverage.v1.json | tail -12
           python -m soccer_edge.cli dispatch diagnostics --archive-dir archive --out work/evaluation/horizon_diagnostics.v1.json | tail -3
+          python -m soccer_edge.cli dispatch reliability --archive-dir archive > work/evaluation/dispatch_reliability.v1.json
+          python -m soccer_edge.cli dispatch close-report --archive-dir archive > work/evaluation/reference_close_attempts.v1.json
       - name: Publish
         if: ${{ steps.s.outcome == 'success' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          mkdir -p pub/settlements pub/evaluation
+          mkdir -p pub/settlements pub/evaluation pub/dispatch
           cp -R archive/settlements/. pub/settlements/ 2>/dev/null || true
           cp -R work/evaluation/. pub/evaluation/
+          cp work/dispatch/settle_runs.jsonl pub/dispatch/settle_runs.jsonl
           scripts/archive_publish.sh pub . "settle-evaluate $(date -u +%Y-%m-%dT%H:%MZ)"
       - run: cat work/evaluation/SUMMARY.md >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
