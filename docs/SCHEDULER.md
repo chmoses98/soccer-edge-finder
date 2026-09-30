@@ -64,7 +64,10 @@ Every (fixture, horizon) ends in exactly one state in `dispatch/horizons.jsonl` 
 Windows use actual minutes to kickoff: 120 → (60, 130], 60 → (30, 66], 30 → (15, 33], 15 → (5, 17],
 5 → (0, 7]. A late wake still delivers every horizon whose window it lands in (one batch). A horizon is
 never delivered after kickoff. A failed capture is not logged as delivered: the next wake retries while
-the window is open. Rows written before 2026-09-30 carry no state and read as DELIVERED / MISSED_BEFORE_WAKE
+the window is open. `first_seen` (dispatch/first_seen.json) takes the earliest evidence of a fixture: its
+first log row, the previous schedule's build time, else the current tick. One row was mislabelled before
+that rule existed: `fx:fifa.friendly:2026:nat.ltu:nat.and` T-120 on 2026-09-30 is NOT_APPLICABLE in the
+log and should read MISSED_BEFORE_WAKE. The log is append-only, so it stays as written. Rows written before 2026-09-30 carry no state and read as DELIVERED / MISSED_BEFORE_WAKE
 (the audit above shows those misses were scheduler absence).
 
 ## 4. Idempotency: no duplicate paid call

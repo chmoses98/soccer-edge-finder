@@ -560,3 +560,22 @@ def test_workflow_shape_one_dispatcher_all_triggers():
     assert "0" not in minute.split(",")
     # no credential in any URL query string of the dispatcher files
     assert "?access_token=" not in wf and "apiKey=" not in wf
+
+
+def test_first_seen_bootstrap_uses_prior_evidence(monkeypatch, tmp_path):
+    """A fixture already in the previous schedule is not NOT_APPLICABLE just because first_seen.json is new."""
+    fx = _fx(ko=T0 + timedelta(minutes=50))  # T-120 window closed 20 min ago
+    arch = tmp_path / "arch" / "dispatch"
+    arch.mkdir(parents=True)
+    (arch / "schedule.json").write_text(
+        json.dumps({"generated_at": _gen(T0 - timedelta(hours=20)), "fixtures": [fx.to_json()]})
+    )
+    _tick(monkeypatch, tmp_path, T0, [["kalshi_capture:ok"]], [fx])
+    rows = [
+        json.loads(x)
+        for x in (tmp_path / "out" / "dispatch" / "horizons.jsonl").read_text().splitlines()
+    ]
+    t120 = next(r for r in rows if r["horizon"] == 120)
+    assert t120["state"] == MISSED_BEFORE_WAKE
+    fs = json.loads((tmp_path / "out" / "dispatch" / "first_seen.json").read_text())
+    assert fs[fx.fixture_id] == _gen(T0 - timedelta(hours=20))
