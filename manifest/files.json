@@ -1,5 +1,17 @@
 {
   "files": {
+    "dispatch/heartbeats/2026-09-30.jsonl": {
+      "byte_length": 2126,
+      "closed": false,
+      "day": "2026-09-30",
+      "first_manifested_at": "2026-09-30T15:09:14.485252Z",
+      "immutable": false,
+      "line_count": 1,
+      "record_level": false,
+      "record_type": "dispatch_heartbeat",
+      "recovery_id": null,
+      "sha256_prefix": "cc058f0c157b0d800ae6264c30e5435e3c46b3096d83a11582ffe038e898872c"
+    },
     "dispatch/horizons.jsonl": {
       "byte_length": 35617,
       "closed": false,
@@ -11,6 +23,18 @@
       "record_type": "horizon_log",
       "recovery_id": null,
       "sha256_prefix": "0954e4cfa6d805bee2b5adc05ebbbe053fdc1fa1653d45190d693bebaf33dd84"
+    },
+    "dispatch/settle_runs.jsonl": {
+      "byte_length": 911,
+      "closed": false,
+      "day": null,
+      "first_manifested_at": "2026-09-30T15:09:14.485417Z",
+      "immutable": false,
+      "line_count": 1,
+      "record_level": false,
+      "record_type": "settle_run_log",
+      "recovery_id": null,
+      "sha256_prefix": "075551cfd74c8be0eeb90ad9e994c375c1e79eeac0d68272934cbea2650d989a"
     },
     "fixtures/espn/2026-09-28/espn-034707.json": {
       "byte_length": 157757,
@@ -1490,5 +1514,5 @@
     }
   },
   "manifest_version": 1,
-  "updated_at": "2026-09-30T13:01:37.323518Z"
+  "updated_at": "2026-09-30T15:09:14.503506Z"
 }
