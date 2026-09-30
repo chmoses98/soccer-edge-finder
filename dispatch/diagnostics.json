@@ -15,105 +15,53 @@
       "achieved_minutes_p10": 0.36,
       "achieved_minutes_p90": 14.43,
       "delivered": 7,
-      "delivery_rate": 0.2692307692307692,
+      "delivery_rate": 0.25925925925925924,
       "lateness_minutes_max": 14.64,
       "lateness_minutes_median": 0.62,
-      "missed": 19
+      "missed": 20
     },
     "30": {
       "achieved_minutes_median": 25.0,
       "achieved_minutes_p10": 13.02,
       "achieved_minutes_p90": 30.28,
       "delivered": 6,
-      "delivery_rate": 0.23076923076923078,
+      "delivery_rate": 0.2222222222222222,
       "lateness_minutes_max": 16.98,
       "lateness_minutes_median": 5.0,
-      "missed": 20
+      "missed": 21
     },
     "5": {
       "achieved_minutes_median": 4.38,
       "achieved_minutes_p10": 0.36,
       "achieved_minutes_p90": 4.46,
       "delivered": 7,
-      "delivery_rate": 0.28,
+      "delivery_rate": 0.2692307692307692,
       "lateness_minutes_max": 6.33,
       "lateness_minutes_median": 0.62,
-      "missed": 18
+      "missed": 19
     },
     "60": {
       "achieved_minutes_median": 45.76,
       "achieved_minutes_p10": 45.76,
       "achieved_minutes_p90": 57.49,
       "delivered": 2,
-      "delivery_rate": 0.07692307692307693,
+      "delivery_rate": 0.07407407407407407,
       "lateness_minutes_max": 14.24,
       "lateness_minutes_median": 2.51,
-      "missed": 24
+      "missed": 25
     }
   },
   "delivered_total": 28,
-  "delivery_rate_total": 0.21374045801526717,
+  "delivery_rate_total": 0.2074074074074074,
   "fixtures_tracked": 28,
-  "generated_at": "2026-09-30T00:22:36Z",
+  "generated_at": "2026-09-30T05:24:33Z",
   "last_tick": {
-    "batches": 2,
-    "summary": [
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:empty",
-          "odds_api:nothing_eligible:credits=0:rows=0",
-          "lineups:ok:9"
-        ],
-        "batch_id": "kd-20260929T235843Z",
-        "delivered": [
-          [
-            "fx:fifa.friendly:2026:nat.usa:nat.chi",
-            5,
-            -1.33
-          ],
-          [
-            "fx:concacaf.nations_league:2026-27:nat.blz:nat.vin",
-            120,
-            118.67
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:empty",
-          "odds_api:nothing_eligible:credits=0:rows=0",
-          "lineups:ok:9"
-        ],
-        "batch_id": "kd-20260930T002005Z",
-        "delivered": [
-          [
-            "fx:fifa.friendly:2026:nat.mex:nat.per",
-            120,
-            127.4
-          ]
-        ]
-      }
-    ]
+    "batches": 0,
+    "summary": []
   },
-  "missed_total": 103,
-  "n_pending_fixtures": 37,
+  "missed_total": 107,
+  "n_pending_fixtures": 42,
   "pending_fixtures": [
-    {
-      "competition_id": "concacaf.nations_league",
-      "fixture_id": "fx:concacaf.nations_league:2026-27:nat.blz:nat.vin",
-      "kickoff_utc": "2026-09-30T02:00:00Z",
-      "markets_discovered": 3,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "fifa.friendly",
-      "fixture_id": "fx:fifa.friendly:2026:nat.mex:nat.per",
-      "kickoff_utc": "2026-09-30T02:30:00Z",
-      "markets_discovered": 23,
-      "source": "run_output"
-    },
     {
       "competition_id": "fifa.friendly",
       "fixture_id": "fx:fifa.friendly:2026:nat.ltu:nat.and",
@@ -356,6 +304,55 @@
       "competition_id": "bra.serie_a",
       "fixture_id": "fx:bra.serie_a:2026:bra.sao_paulo:bra.santos",
       "kickoff_utc": "2026-10-02T23:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "concacaf.nations_league",
+      "fixture_id": "fx:concacaf.nations_league:2026-27:nat.brb:nat.ber",
+      "kickoff_utc": "2026-10-03T00:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "concacaf.nations_league",
+      "fixture_id": "fx:concacaf.nations_league:2026-27:nat.boe:nat.grn",
+      "kickoff_utc": "2026-10-03T00:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "concacaf.nations_league",
+      "fixture_id": "fx:concacaf.nations_league:2026-27:nat.mtq:nat.hon",
+      "kickoff_utc": "2026-10-03T00:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "fifa.friendly",
+      "fixture_id": "fx:fifa.friendly:2026:nat.col:nat.par",
+      "kickoff_utc": "2026-10-03T00:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "arg.primera",
+      "fixture_id": "fx:arg.primera:2026:arg.boca_juniors:arg.union",
+      "kickoff_utc": "2026-10-03T00:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "arg.primera",
+      "fixture_id": "fx:arg.primera:2026:arg.independiente_rivadavia:arg.gimnasia_la_plata",
+      "kickoff_utc": "2026-10-03T00:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "concacaf.nations_league",
+      "fixture_id": "fx:concacaf.nations_league:2026-27:nat.slv:nat.jam",
+      "kickoff_utc": "2026-10-03T02:00:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }
