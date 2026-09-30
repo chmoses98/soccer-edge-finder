@@ -1,7 +1,17 @@
 {
-  "as_of": "2026-09-29T10:56:05.310314Z",
+  "as_of": "2026-09-30T10:46:27.860729Z",
   "note": "proposals are applied by a human via config/authority.json",
   "proposals": {
+    "data_only.world_sim_v1.intl_pool|exact_score|T-12h": {
+      "current": "RESEARCH_ONLY",
+      "n": 600,
+      "proposed": "SHADOW"
+    },
+    "data_only.world_sim_v1.intl_pool|exact_score|T-24h": {
+      "current": "RESEARCH_ONLY",
+      "n": 300,
+      "proposed": "SHADOW"
+    },
     "data_only.world_sim_v1.intl_pool|exact_score|T-2h": {
       "current": "RESEARCH_ONLY",
       "n": 240,
@@ -9,12 +19,42 @@
     },
     "data_only.world_sim_v1.intl_pool|exact_score|any": {
       "current": "RESEARCH_ONLY",
-      "n": 240,
+      "n": 1140,
+      "proposed": "SHADOW"
+    },
+    "data_only.world_sim_v1.intl_pool|first_half_handicap|any": {
+      "current": "RESEARCH_ONLY",
+      "n": 106,
+      "proposed": "SHADOW"
+    },
+    "data_only.world_sim_v1.intl_pool|total_goals|any": {
+      "current": "RESEARCH_ONLY",
+      "n": 354,
+      "proposed": "SHADOW"
+    },
+    "data_only.world_sim_v1|exact_score|T-24h": {
+      "current": "RESEARCH_ONLY",
+      "n": 180,
       "proposed": "SHADOW"
     },
     "data_only.world_sim_v1|exact_score|any": {
       "current": "RESEARCH_ONLY",
-      "n": 120,
+      "n": 300,
+      "proposed": "SHADOW"
+    },
+    "data_only.world_sim_v1|total_goals|any": {
+      "current": "RESEARCH_ONLY",
+      "n": 126,
+      "proposed": "SHADOW"
+    },
+    "data_only.world_sim_v2.intl_pool|exact_score|T-12h": {
+      "current": "RESEARCH_ONLY",
+      "n": 240,
+      "proposed": "SHADOW"
+    },
+    "data_only.world_sim_v2.intl_pool|exact_score|any": {
+      "current": "RESEARCH_ONLY",
+      "n": 300,
       "proposed": "SHADOW"
     }
   }
