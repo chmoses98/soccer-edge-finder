@@ -302,6 +302,62 @@ def cmd_complete(a: argparse.Namespace) -> int:
     return 0
 
 
+CHAIN_MIN_LINK_MINUTES = (
+    20  # a link shorter than this never chains: no fast restart loop is possible
+)
+
+
+def chain_decision(result: str, chain_continue: bool, elapsed_minutes: float) -> tuple[bool, str]:
+    """Should the finished link dispatch exactly one successor?"""
+    if result == "success":
+        if not chain_continue:
+            return False, "link ended with no future window: chain stops"
+        if elapsed_minutes < CHAIN_MIN_LINK_MINUTES:
+            return (
+                False,
+                f"link ran {elapsed_minutes:.0f} min < {CHAIN_MIN_LINK_MINUTES}: refusing to chain",
+            )
+        return True, "link reached its time limit with windows ahead"
+    if result == "failure":
+        if elapsed_minutes < CHAIN_MIN_LINK_MINUTES:
+            return (
+                False,
+                f"link failed after {elapsed_minutes:.0f} min: no successor (backups restart)",
+            )
+        return True, "link failed after running a while: recovery successor"
+    return False, f"capture {result}: no successor"
+
+
+def _capture_minutes(repo: str, run_id: str) -> float:
+    code, jobs = _api("GET", f"/repos/{repo}/actions/runs/{run_id}/jobs")
+    for j in (jobs or {}).get("jobs", []) if code == 200 else []:
+        if j.get("name") == "capture" and j.get("started_at") and j.get("completed_at"):
+            a = datetime.fromisoformat(j["started_at"].replace("Z", "+00:00"))
+            b = datetime.fromisoformat(j["completed_at"].replace("Z", "+00:00"))
+            return (b - a).total_seconds() / 60
+    return 0.0
+
+
+def cmd_chain(a: argparse.Namespace) -> int:
+    repo = os.environ.get("GITHUB_REPOSITORY", "chmoses98/soccer-edge-finder")
+    result = os.environ.get("CAPTURE_RESULT", "")
+    cont = os.environ.get("CHAIN_CONTINUE", "") == "true"
+    elapsed = float(os.environ.get("ELAPSED_MINUTES") or 0)
+    if result == "failure":
+        elapsed = _capture_minutes(repo, os.environ.get("GITHUB_RUN_ID", ""))
+    go, why = chain_decision(result, cont, elapsed)
+    print(f"chain: {why}")
+    if not go:
+        return 0
+    code, _ = _api(
+        "POST",
+        f"/repos/{repo}/actions/workflows/kickoff-dispatch.yml/dispatches",
+        {"ref": os.environ.get("DEFAULT_BRANCH") or "main", "inputs": {"source": "chain"}},
+    )
+    print(f"successor dispatch HTTP {code}")
+    return 0 if code in (200, 204) else 1
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd")
@@ -312,9 +368,12 @@ def main(argv: list[str] | None = None) -> int:
     c = sub.add_parser("complete")
     c.add_argument("--tick-summary", required=True)
     c.add_argument("--status", required=True)
+    sub.add_parser("chain")
     a = ap.parse_args(argv)
     if a.cmd == "complete":
         return cmd_complete(a)
+    if a.cmd == "chain":
+        return cmd_chain(a)
     if a.cmd is None:
         a = ap.parse_args(["wake", *(argv or sys.argv[1:])])
     return cmd_wake(a)

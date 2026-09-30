@@ -1,9 +1,7 @@
 # Kickoff-timed capture dispatcher
 
-> **2026-09-30:** the GitHub cron is now only a backup. An external 5-minute heartbeat is the primary
-> clock; wakes record heartbeats, missed horizons carry explicit states, paid calls are claimed first and
-> settlement is dispatched when due. See **docs/SCHEDULER.md**, which supersedes the trigger description
-> below.
+> **2026-09-30:** superseded by the fixture-aware bounded chain in **docs/SCHEDULER.md** (no external
+> heartbeat; GitHub cron is only a restart backup).
 
 Status: implemented (pre-launch remediation, phase 6; audit §K "capture requirement", §I1). Workflow
 `kickoff-dispatch.yml`; logic `src/soccer_edge/dispatch/horizons.py`; commands `soccer dispatch

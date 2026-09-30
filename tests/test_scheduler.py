@@ -56,10 +56,13 @@ def _gen(now):
 
 
 def test_nothing_due_is_a_normal_no_op():
+    # no known future window at all: nothing runs
+    d = decide_wake([], _gen(T0), [], [], [], now=T0)
+    assert d.capture is False and d.settle is False and d.no_action_reason == "NO_WORK_DUE"
+    # a future window with the chain disabled (legacy tick): no capture now
     fx = _fx(ko=T0 + timedelta(hours=5))  # next window (T-120) opens in 2h50
-    d = decide_wake([fx], _gen(T0), [], [], [], now=T0)
-    assert d.capture is False and d.settle is False
-    assert d.no_action_reason == "NO_WORK_DUE"
+    d = decide_wake([fx], _gen(T0), [], [], [], now=T0, chain=False)
+    assert d.capture is False and d.no_action_reason == "NO_WORK_DUE"
     assert d.next_window_minutes == pytest.approx(170, abs=0.1)
 
 
@@ -218,9 +221,9 @@ def test_simultaneous_dispatchers_make_one_paid_call(archive_remote, tmp_path, m
     barrier = threading.Barrier(2)
     real_claim = ClaimStore.claim
 
-    def synced_claim(self, ids, meta, namespace="odds_api"):
+    def synced_claim(self, ids, meta, namespace="odds_api", **kw):
         barrier.wait(timeout=30)  # both runs reach the claim at the same moment
-        return real_claim(self, ids, meta, namespace)
+        return real_claim(self, ids, meta, namespace, **kw)
 
     monkeypatch.setattr(ClaimStore, "claim", synced_claim)
     results = {}
@@ -235,7 +238,9 @@ def test_simultaneous_dispatchers_make_one_paid_call(archive_remote, tmp_path, m
             now=NOW,
             batch_id=f"kd-{name}",
             client_factory=fp.factory(),
-            claim_fn=lambda ids, s=store, n=name: s.claim(ids, {"batch_id": n}),
+            claim_fn=lambda ids, rec, s=store, n=name: s.claim(
+                ids, {"batch_id": n}, call_record=rec
+            ),
         )
 
     threads = [threading.Thread(target=run, args=(n,)) for n in ("a", "b")]
@@ -376,7 +381,7 @@ def test_quota_floor_still_enforced_with_claims(tmp_path):
         now=NOW,
         batch_id="kd-f",
         client_factory=fp.factory(),
-        claim_fn=lambda ids: claimed.extend(ids) or set(ids),
+        claim_fn=lambda ids, rec: claimed.extend(ids) or set(ids),
     )
     assert fp.paid() == [] and claimed == []  # the guard refuses before any claim or spend
     assert st["per_sport"]["soccer_epl"]["status"].endswith("ACCOUNT_RESERVE_FLOOR")
@@ -464,7 +469,7 @@ def _run_wake(tmp_path, env_extra):
 
 def test_wake_script_external_and_backup_both_work(tmp_path):
     now = datetime.now(UTC)
-    sched = {"generated_at": _gen(now), "fixtures": [_fx(ko=now + timedelta(hours=8)).to_json()]}
+    sched = {"generated_at": _gen(now), "fixtures": []}  # empty day
     (tmp_path / "dispatch").mkdir()
     (tmp_path / "dispatch" / "schedule.json").write_text(json.dumps(sched))
     ext = _run_wake(
