@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-30T20:06:11.421907Z",
+  "as_of": "2026-09-30T23:21:02.206287Z",
   "by_competition": {
     "bra.2": {
       "fixtures": 2,
@@ -62,7 +62,13 @@
       "with_xi_ge_20min": 0
     },
     "uru.1": {
-      "fixtures": 1,
+      "fixtures": 2,
+      "median_lead_minutes": null,
+      "with_pre_kickoff_xi": 0,
+      "with_xi_ge_20min": 0
+    },
+    "usa.usl.1": {
+      "fixtures": 2,
       "median_lead_minutes": null,
       "with_pre_kickoff_xi": 0,
       "with_xi_ge_20min": 0
@@ -963,7 +969,7 @@
       "competition": "uru.1",
       "espn_event_id": "401905187",
       "final_state": "unconfirmed",
-      "kickoff_passed": false,
+      "kickoff_passed": true,
       "lead_time_seconds": null,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-09-30T23:00:00+00:00",
@@ -971,23 +977,23 @@
       "xi_first_observed_at": null
     },
     {
-      "capture_attempts": 1,
+      "capture_attempts": 2,
       "competition": "usa.1",
       "espn_event_id": "761833",
-      "final_state": "unconfirmed",
+      "final_state": "confirmed",
       "kickoff_passed": false,
-      "lead_time_seconds": null,
-      "observed_before_kickoff": false,
+      "lead_time_seconds": 1823.213283,
+      "observed_before_kickoff": true,
       "scheduled_kickoff_utc": "2026-09-30T23:30:00+00:00",
       "source": "espn_site_api",
-      "xi_first_observed_at": null
+      "xi_first_observed_at": "2026-09-30T22:59:36.786717+00:00"
     },
     {
       "capture_attempts": 1,
       "competition": "usa.usl.1",
       "espn_event_id": "401842261",
       "final_state": "unconfirmed",
-      "kickoff_passed": false,
+      "kickoff_passed": true,
       "lead_time_seconds": null,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-09-30T23:00:00+00:00",
@@ -999,7 +1005,7 @@
       "competition": "usa.usl.1",
       "espn_event_id": "401842259",
       "final_state": "unconfirmed",
-      "kickoff_passed": false,
+      "kickoff_passed": true,
       "lead_time_seconds": null,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-09-30T23:00:00+00:00",
@@ -1283,7 +1289,7 @@
       "xi_first_observed_at": null
     }
   ],
-  "fixtures_kickoff_passed": 73,
+  "fixtures_kickoff_passed": 76,
   "fixtures_tracked": 101,
   "lead_time_minutes": {
     "max": 57.59638495,
@@ -1295,8 +1301,8 @@
   },
   "post_kickoff_first_xi": 33,
   "schema": "lineup_lead_time_v1",
-  "share_pre_kickoff_xi": 0.1506849315068493,
-  "share_xi_ge_20min": 0.0821917808219178,
+  "share_pre_kickoff_xi": 0.14473684210526316,
+  "share_xi_ge_20min": 0.07894736842105263,
   "target": "audit \u00a7I1: >= 90% of priced fixtures with a confirmed XI captured >= 20 min before kickoff",
   "with_any_xi": 44,
   "with_pre_kickoff_xi": 11,

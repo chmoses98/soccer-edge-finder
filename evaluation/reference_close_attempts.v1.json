@@ -1,9 +1,10 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 6,
   "MISSED_DISPATCHER_CLOSE": 19,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 6,
+  "PINNACLE_QUOTED_NOTHING": 2,
   "NO_SPORT_KEY": 1,
-  "PINNACLE_QUOTED_NOTHING": 2
+  "PINNACLE_VALID_CLOSE": 1
  },
  "fixtures": {
   "fx:concacaf.nations_league:2026-27:nat.aia:nat.aru": {
@@ -145,6 +146,11 @@
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
    "batch_id": null
+  },
+  "fx:usa.mls:2026:usa.ny_red_bulls:usa.st_louis_city": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20260930T231305Z"
   }
  }
 }
