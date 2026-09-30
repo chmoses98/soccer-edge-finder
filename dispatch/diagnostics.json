@@ -5,27 +5,27 @@
       "achieved_minutes_p10": 57.49,
       "achieved_minutes_p90": 127.43,
       "delivered": 6,
-      "delivery_rate": 0.20689655172413793,
+      "delivery_rate": 0.2,
       "lateness_minutes_max": 62.51,
       "lateness_minutes_median": -7.4,
-      "missed": 23
+      "missed": 24
     },
     "15": {
-      "achieved_minutes_median": 14.42,
+      "achieved_minutes_median": 14.38,
       "achieved_minutes_p10": 0.36,
       "achieved_minutes_p90": 14.43,
-      "delivered": 8,
-      "delivery_rate": 0.2857142857142857,
+      "delivered": 9,
+      "delivery_rate": 0.3103448275862069,
       "lateness_minutes_max": 14.64,
       "lateness_minutes_median": 0.62,
       "missed": 20
     },
     "30": {
-      "achieved_minutes_median": 25.0,
+      "achieved_minutes_median": 30.28,
       "achieved_minutes_p10": 25.0,
       "achieved_minutes_p90": 30.42,
-      "delivered": 7,
-      "delivery_rate": 0.25,
+      "delivered": 8,
+      "delivery_rate": 0.27586206896551724,
       "lateness_minutes_max": 16.98,
       "lateness_minutes_median": 5.0,
       "missed": 21
@@ -41,26 +41,78 @@
       "missed": 19
     },
     "60": {
-      "achieved_minutes_median": 48.36,
+      "achieved_minutes_median": 56.4,
       "achieved_minutes_p10": 45.76,
       "achieved_minutes_p90": 57.49,
-      "delivered": 3,
-      "delivery_rate": 0.10714285714285714,
+      "delivered": 4,
+      "delivery_rate": 0.13793103448275862,
       "lateness_minutes_max": 14.24,
       "lateness_minutes_median": 11.64,
       "missed": 25
     }
   },
-  "delivered_total": 32,
-  "delivery_rate_total": 0.22857142857142856,
-  "fixtures_tracked": 29,
-  "generated_at": "2026-09-30T20:06:01Z",
+  "delivered_total": 35,
+  "delivery_rate_total": 0.24305555555555555,
+  "fixtures_tracked": 30,
+  "generated_at": "2026-09-30T23:15:38Z",
   "last_tick": {
-    "batches": 0,
-    "summary": []
+    "batches": 3,
+    "summary": [
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1"
+        ],
+        "batch_id": "kd-20260930T223055Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:usa.mls:2026:usa.ny_red_bulls:usa.st_louis_city",
+            60,
+            59.07
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1"
+        ],
+        "batch_id": "kd-20260930T225705Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:usa.mls:2026:usa.ny_red_bulls:usa.st_louis_city",
+            30,
+            32.92
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1"
+        ],
+        "batch_id": "kd-20260930T231305Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:usa.mls:2026:usa.ny_red_bulls:usa.st_louis_city",
+            15,
+            16.92
+          ]
+        ]
+      }
+    ]
   },
-  "missed_total": 108,
-  "n_pending_fixtures": 54,
+  "missed_total": 109,
+  "n_pending_fixtures": 56,
   "pending_fixtures": [
     {
       "competition_id": "usa.mls",
@@ -437,6 +489,20 @@
       "competition_id": "arg.primera",
       "fixture_id": "fx:arg.primera:2026:arg.newells:arg.lanus",
       "kickoff_utc": "2026-10-03T20:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "concacaf.nations_league",
+      "fixture_id": "fx:concacaf.nations_league:2026-27:nat.sxm:nat.vin",
+      "kickoff_utc": "2026-10-03T21:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "bra.serie_a",
+      "fixture_id": "fx:bra.serie_a:2026:bra.atletico_mineiro:bra.bragantino",
+      "kickoff_utc": "2026-10-03T21:30:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }
