@@ -1,0 +1,77 @@
+{
+ "cadence": {
+  "external_heartbeat_minutes": 5,
+  "github_backup_minutes": 10
+ },
+ "definition": "capture_success_rate = delivered / eligible horizons whose window closed in the span (NOT_APPLICABLE excluded); close_success_rate = fixtures with a T-15 or T-5 delivery / fixtures whose close windows closed in the span",
+ "generated_at": "2026-09-30T15:08:28Z",
+ "last_24h": {
+  "capture_runs": 0,
+  "capture_runs_failed": 0,
+  "capture_success_rate": 0.15942028985507245,
+  "close_fixtures_delivered": 4,
+  "close_fixtures_eligible": 14,
+  "close_success_rate": 0.2857142857142857,
+  "credits_spent": 0,
+  "external_heartbeats_actual": 1,
+  "external_heartbeats_expected": 288,
+  "external_trigger_success": 0.003472222222222222,
+  "fixtures_with_horizons": 15,
+  "github_backup_actual": 0,
+  "github_backup_expected": 144,
+  "github_backup_success": 0.0,
+  "heartbeats_actual": 1,
+  "heartbeats_by_source": {
+   "external-heartbeat": 1
+  },
+  "heartbeats_failed": 0,
+  "heartbeats_no_work_due": 0,
+  "horizon_states": {
+   "DELIVERED": 11,
+   "MISSED_BEFORE_WAKE": 58
+  },
+  "horizons_delivered": 11,
+  "horizons_eligible": 69,
+  "horizons_missed": 58,
+  "paid_calls": 0,
+  "span_hours": 24.0
+ },
+ "last_7d": {
+  "capture_runs": 0,
+  "capture_runs_failed": 0,
+  "capture_success_rate": 0.2074074074074074,
+  "close_fixtures_delivered": 8,
+  "close_fixtures_eligible": 27,
+  "close_success_rate": 0.2962962962962963,
+  "credits_spent": 0,
+  "external_heartbeats_actual": 1,
+  "external_heartbeats_expected": 2016,
+  "external_trigger_success": 0.000496031746031746,
+  "fixtures_with_horizons": 28,
+  "github_backup_actual": 0,
+  "github_backup_expected": 1008,
+  "github_backup_success": 0.0,
+  "heartbeats_actual": 1,
+  "heartbeats_by_source": {
+   "external-heartbeat": 1
+  },
+  "heartbeats_failed": 0,
+  "heartbeats_no_work_due": 0,
+  "horizon_states": {
+   "DELIVERED": 28,
+   "MISSED_BEFORE_WAKE": 107
+  },
+  "horizons_delivered": 28,
+  "horizons_eligible": 135,
+  "horizons_missed": 107,
+  "paid_calls": 0,
+  "span_hours": 168.0
+ },
+ "last_wake": {
+  "no_action_reason": null,
+  "started_at": "2026-09-30T15:08:28Z",
+  "status": "OK",
+  "trigger_source": "external-heartbeat"
+ },
+ "schema": "dispatch_reliability_v1"
+}
