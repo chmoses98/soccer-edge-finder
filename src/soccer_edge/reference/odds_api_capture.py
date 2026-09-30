@@ -24,6 +24,8 @@ from __future__ import annotations
 
 import gzip
 import json
+import os
+import time
 from collections import defaultdict
 from collections.abc import Callable
 from dataclasses import dataclass
@@ -286,7 +288,10 @@ def capture(
     client_factory: Callable[[], OddsApiClient] | None = None,
     force_purpose: str | None = None,
     max_paid_calls: int | None = None,
-    claim_fn: Callable[[list[str]], set[str]] | None = None,
+    claim_fn: Callable[[list[str], dict[str, Any]], set[str]] | None = None,
+    schedule_as_of: datetime | None = None,
+    time_fn: Callable[[], datetime] | None = None,
+    require_claims: bool | None = None,
 ) -> dict[str, Any]:
     """`force_purpose` (e.g. 'sample') ignores the entry/close windows and the already-captured check: every
     Kalshi-listed fixture given is eligible, it is ledgered under that purpose (so it never counts as an
@@ -295,7 +300,20 @@ def capture(
     `claim_fn` (the dispatcher passes a data-archive ClaimStore) is called with the idempotency identities
     `the_odds_api|<purpose>|<fixture_id>` right before a paid call and returns the ones this run now owns;
     fixtures another run already claimed are dropped, and nothing is spent when none are left. Without it
-    the durable ledger check alone applies (sequential runs)."""
+    the durable ledger check alone applies (sequential runs). It also receives a durable call record
+    (expected cost) that the store refuses when the daily / 30-day caps would be exceeded.
+
+    Spend-time guards, independent of the scheduler (docs/SCHEDULER.md "Runaway protection"): no paid call
+    when running in GitHub Actions without a claim store (`require_claims`), when the Kalshi listing behind
+    the schedule (`schedule_as_of`) is older than SPEND_SCHEDULE_MAX_AGE or unknown there, or for a fixture whose purpose window is not valid
+    at the moment of the call (fresh clock), that has kicked off, or whose provider commence time
+    disagrees with the schedule by more than SPEND_KICKOFF_TOLERANCE."""
+    in_actions = os.environ.get("GITHUB_ACTIONS") == "true"
+    if require_claims is None:
+        require_claims = in_actions
+    t0 = time.monotonic()
+    # the spend-time clock: `now` advanced by the real time spent in this call (free calls, joins)
+    clock = time_fn or (lambda: now + timedelta(seconds=time.monotonic() - t0))
     ledger = BudgetLedger(out_root)
     stats: dict[str, Any] = {
         "batch_id": batch_id,
@@ -489,12 +507,66 @@ def capture(
                 )
                 ps["status"] = f"{STATUS_BLOCKED}:{g['reason']}"
                 continue
+            refusal = _spend_refusal(
+                require_claims=require_claims,
+                has_claims=claim_fn is not None,
+                schedule_as_of=schedule_as_of,
+                schedule_required=in_actions,
+                at=clock(),
+            )
+            if refusal is None:
+                t_spend = clock()
+                commence = {
+                    e.get("id"): e.get("commence_time")
+                    for e in ev_resp.payload or []
+                    if e.get("id")
+                }
+                valid = {}
+                for ev, f in fx_by_event.items():
+                    why = _window_invalid(
+                        purpose_of[f.fixture_id], f, commence.get(ev), t_spend, cfg
+                    )
+                    if why:
+                        ps.setdefault("dropped_at_spend", []).append([f.fixture_id, why])
+                    else:
+                        valid[ev] = f
+                fx_by_event = valid
+                keep = {f.fixture_id for f in fx_by_event.values()}
+                joined_close = [f for f in joined_close if f in keep]
+                joined_entry = [f for f in joined_entry if f in keep]
+                joined_other = [f for f in joined_other if f in keep]
+                if not fx_by_event:
+                    refusal = "NO_VALID_WINDOW_AT_SPEND"
+            if refusal is not None:
+                ledger.append(
+                    now,
+                    {
+                        "kind": "odds",
+                        "sport_key": sk,
+                        "batch_id": batch_id,
+                        "status": STATUS_BLOCKED,
+                        "reason": refusal,
+                        "request_made": False,
+                        "credits_charged": 0,
+                        "close_fixtures": joined_close,
+                        "entry_fixtures": joined_entry,
+                        "purpose": force_purpose,
+                    },
+                )
+                ps["status"] = f"{STATUS_BLOCKED}:{refusal}"
+                continue
             if claim_fn is not None:
                 idents = {
                     f"the_odds_api|{purpose_of[f.fixture_id]}|{f.fixture_id}": ev
                     for ev, f in fx_by_event.items()
                 }
-                won = claim_fn(sorted(idents))
+                call_record = {
+                    "day": now.strftime("%Y-%m-%d"),
+                    "call_id": f"{batch_id}-{sk}",
+                    "sport_key": sk,
+                    "expected_cost": max(cost, int(g.get("expected_cost") or cost)),
+                }
+                won = claim_fn(sorted(idents), call_record)
                 lost = [i for i in idents if i not in won]
                 if lost:
                     ps["claimed_elsewhere"] = len(lost)
@@ -594,6 +666,58 @@ def capture(
         return stats
     finally:
         client.close()
+
+
+# the Kalshi listing (latest RUN SOCCER output) behind a paid capture may be at most this old; each
+# fixture is additionally re-validated against the provider's own commence time at the moment of spend
+SPEND_SCHEDULE_MAX_AGE = timedelta(hours=36)
+SPEND_KICKOFF_TOLERANCE_MINUTES = 30.0
+
+
+def _spend_refusal(
+    *,
+    require_claims: bool,
+    has_claims: bool,
+    schedule_as_of: datetime | None,
+    schedule_required: bool,
+    at: datetime,
+) -> str | None:
+    if require_claims and not has_claims:
+        return "NO_CLAIM_STORE"
+    if schedule_as_of is None:
+        return "SCHEDULE_AGE_UNKNOWN" if schedule_required else None
+    if at - schedule_as_of > SPEND_SCHEDULE_MAX_AGE:
+        return "STALE_SCHEDULE"
+    return None
+
+
+def _window_invalid(
+    purpose: str, fx: DueFixture, provider_commence: str | None, at: datetime, cfg: BudgetConfig
+) -> str | None:
+    """Why a paid capture for this fixture/purpose is not allowed right now (None = allowed)."""
+    mtk = (fx.kickoff_utc - at).total_seconds() / 60
+    if mtk <= 0:
+        return "KICKED_OFF"
+    if provider_commence:
+        try:
+            pc = parse_iso_utc(provider_commence)
+        except ValueError:
+            return "PROVIDER_COMMENCE_UNREADABLE"
+        if pc <= at:
+            return "PROVIDER_KICKED_OFF"
+        if abs((pc - fx.kickoff_utc).total_seconds()) / 60 > SPEND_KICKOFF_TOLERANCE_MINUTES:
+            return "KICKOFF_MISMATCH"
+    else:
+        return "PROVIDER_EVENT_MISSING"
+    if purpose == "close":
+        lo, hi = cfg.close_window_minutes
+    elif purpose == "entry":
+        lo, hi = cfg.entry_window_minutes
+    else:
+        return None  # 'sample': pregame only (checked above), bounded by max_paid_calls
+    if not (lo < mtk <= hi):
+        return f"OUTSIDE_{purpose.upper()}_WINDOW ({mtk:.1f} min)"
+    return None
 
 
 def _no_call_row(  # noqa: PLR0917

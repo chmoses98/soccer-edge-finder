@@ -752,12 +752,15 @@ def _dispatch_schedule(archive: Path, now) -> dict:
         espn_rows = [f.model_dump(mode="json") for f in fixtures]
     except Exception as exc:
         print(f"[dispatch] espn fixtures unreadable: {str(exc)[:120]}")
-    return build_schedule(
+    doc = build_schedule(
         run_output=run_out,
         espn_fixtures=espn_rows,
         priced_competitions=set(DEFAULT_COMPETITIONS) | set(ESPN_POOLS),
         now=now,
     )
+    # age of the Kalshi listing behind the schedule: the paid-call guard refuses to spend on a stale one
+    doc["kalshi_listing_as_of"] = (run_out or {}).get("generated_at")
+    return doc
 
 
 def cmd_dispatch_schedule(args: argparse.Namespace) -> int:
@@ -803,10 +806,51 @@ def cmd_dispatch_plan(args: argparse.Namespace) -> int:
     return 0
 
 
+def _refresh_archive(archive: Path) -> bool:
+    """Fast-forward the archive clone to the current data-archive tip (new run outputs, heartbeats)."""
+    import subprocess
+
+    if not (archive / ".git").exists():
+        return False
+    for cmd in (
+        ["git", "-C", str(archive), "fetch", "-q", "--depth", "1", "origin", "data-archive"],
+        ["git", "-C", str(archive), "reset", "-q", "--hard", "FETCH_HEAD"],
+    ):
+        if subprocess.run(cmd, capture_output=True, check=False, timeout=180).returncode != 0:
+            print("[dispatch] archive refresh failed; keeping the current clone")
+            return False
+    return True
+
+
+def _publish_batch(out: Path, message: str) -> str:
+    import subprocess
+
+    p = subprocess.run(
+        [str(REPO_ROOT / "scripts" / "kickoff_publish.sh"), str(out), message],
+        capture_output=True,
+        text=True,
+        check=False,
+        timeout=600,
+    )
+    return "published" if p.returncode == 0 else f"publish_failed:{p.returncode}"
+
+
+def _chain_lease():
+    from soccer_edge.dispatch.gitstore import ChainLease, github_remote_url
+
+    url = github_remote_url()
+    return ChainLease(url) if url else None
+
+
 def cmd_dispatch_tick(args: argparse.Namespace) -> int:
     """One dispatcher tick: log missed horizons (with an explicit state), run one bounded capture batch for
-    every horizon that is satisfiable now, optionally hold for the next window, write diagnostics.
-    Idempotent: delivered horizons are never re-captured, paid reference calls are claimed first."""
+    every horizon that is satisfiable now, hold for the next window, write diagnostics. Idempotent:
+    delivered horizons are never re-captured, paid reference calls are claimed first.
+
+    --chain (docs/SCHEDULER.md): a bounded LINK of the fixture-aware chain. It holds a single-chain lease,
+    sleeps between the actual fixture windows (no calls while sleeping), refreshes the archive + schedule
+    every --refresh-minutes, publishes after every batch, and ends at --max-tick-minutes or as soon as no
+    future window exists. The summary says whether a successor link is needed (chain_continue)."""
     import shutil
     import time
     from datetime import timedelta
@@ -817,6 +861,7 @@ def cmd_dispatch_tick(args: argparse.Namespace) -> int:
         FIRST_SEEN_FILE,
         SCHEDULE_FILE,
         STATE_LOG,
+        _dt,
         _iso,
         append_log,
         classify_missed,
@@ -832,11 +877,25 @@ def cmd_dispatch_tick(args: argparse.Namespace) -> int:
     archive = Path(args.archive_dir)
     out = Path(args.out_dir)
     started = now = utc_now()
+    run_id = os.environ.get("GITHUB_RUN_ID", "local")
+    hard_limit = started + timedelta(minutes=args.max_tick_minutes)
+    lease = _chain_lease() if args.chain else None
+    if lease is not None and not lease.acquire(run_id, now=now, minutes=args.max_tick_minutes + 15):
+        holder = (lease.holder or {}).get("run_id")
+        print(f"[dispatch] chain lease held by run {holder}; this link exits (no successor)")
+        if args.summary_out:
+            write_json(
+                Path(args.summary_out),
+                {
+                    "started_at": _iso(started),
+                    "completed_at": _iso(utc_now()),
+                    "lease_refused": True,
+                    "chain_continue": False,
+                    "elapsed_minutes": 0,
+                },
+            )
+        return 0
     prev_sched = read_json_or(archive / SCHEDULE_FILE, {}) or {}
-    sched_doc = _dispatch_schedule(archive, now)
-    write_json(out / SCHEDULE_FILE, sched_doc)
-    schedule = load_schedule(out / SCHEDULE_FILE)
-    # first time each fixture entered the schedule: a window that closed before then is NOT_APPLICABLE
     first_seen = dict(read_json_or(archive / FIRST_SEEN_FILE, {}) or {})
     # a fixture already known before this tick keeps the earliest evidence of that: its first log row or
     # the previous schedule's build time (so a first_seen file started today cannot relabel old misses)
@@ -848,11 +907,20 @@ def cmd_dispatch_tick(args: argparse.Namespace) -> int:
             fid = d.get("fixture_id")
             if fid and prev_sched["generated_at"] < first_seen.get(fid, "9999"):
                 first_seen[fid] = prev_sched["generated_at"]
-    for fx in schedule:
-        first_seen.setdefault(fx.fixture_id, _iso(now))
-    cutoff = _iso(now - timedelta(days=21))
-    first_seen = {k: v for k, v in first_seen.items() if v >= cutoff}
-    write_json(out / FIRST_SEEN_FILE, first_seen)
+
+    def rebuild_schedule(at):
+        doc = _dispatch_schedule(archive, at)
+        write_json(out / SCHEDULE_FILE, doc)
+        sched = load_schedule(out / SCHEDULE_FILE)
+        for fx in sched:
+            first_seen.setdefault(fx.fixture_id, _iso(at))
+        cutoff = _iso(at - timedelta(days=21))
+        for k in [k for k, v in first_seen.items() if v < cutoff]:
+            first_seen.pop(k)
+        write_json(out / FIRST_SEEN_FILE, first_seen)
+        return doc, sched
+
+    sched_doc, schedule = rebuild_schedule(now)
     wakes = wake_times(load_heartbeats(archive, now=now))
     log_path = out / STATE_LOG
     log_path.parent.mkdir(parents=True, exist_ok=True)
@@ -876,16 +944,25 @@ def cmd_dispatch_tick(args: argparse.Namespace) -> int:
         for f in sorted(budget_src.glob("*.jsonl"))[-31:]:
             shutil.copyfile(f, out / "odds_api" / "budget" / f.name)
     batches = 0
-    # the job itself is bounded (workflow timeout 55 min); a hold is allowed whenever the next window
-    # opens within --max-hold-minutes of NOW and the whole tick still ends before the hard limit
-    hard_limit = started + timedelta(minutes=args.max_tick_minutes)
     summary: list[dict] = []
     attempted: set[tuple[str, int]] = set()
     missed_states: dict[str, int] = {}
     delivered_n = 0
     held = 0.0
+    last_refresh = now
+    publishes: list[str] = []
+    upcoming: list = []
+    end_reason = "no_hold"
     while True:
         now = utc_now()
+        wakes.append(
+            now
+        )  # this link is awake: a window closing now without delivery is an execution miss
+        if args.chain and now - last_refresh >= timedelta(minutes=args.refresh_minutes):
+            if _refresh_archive(archive):
+                sched_doc, schedule = rebuild_schedule(now)
+                wakes.extend(wake_times(load_heartbeats(archive, now=now)))
+            last_refresh = now
         log = load_log(log_path)
         due, missed, upcoming = plan(schedule, log, now=now)
         missed = classify_missed(missed, wakes + [started], first_seen)
@@ -895,19 +972,35 @@ def cmd_dispatch_tick(args: argparse.Namespace) -> int:
         due = [d for d in due if (d.fixture.fixture_id, d.horizon) not in attempted]
         if not due:
             wait = minutes_until_next_window(upcoming)
-            if (
-                wait is not None
-                and wait <= args.max_hold_minutes
-                and now + timedelta(minutes=wait + 3) <= hard_limit
-                and not args.no_hold
-            ):
-                print(f"[dispatch] holding {wait:.1f} min for the next window")
-                time.sleep(wait * 60 + 5)
-                held += wait
-                continue
-            break
+            if args.no_hold:
+                end_reason = "no_hold"
+                break
+            if wait is None:
+                end_reason = "no_future_window"
+                break
+            left = (hard_limit - now).total_seconds() / 60
+            if args.chain:
+                if left <= 2:
+                    end_reason = "link_time_limit"
+                    break
+                # wake at the next horizon's NOMINAL time (T-60 at 60 min, T-15 at 15 min, ...), which is
+                # inside its window: the paid entry lands at T-60 and the paid close at T-15
+                nominal = min(u.minutes_to_kickoff - u.horizon for u in upcoming)
+                refresh_left = args.refresh_minutes - (now - last_refresh).total_seconds() / 60
+                nap = max(0.5, min(nominal, left - 1, max(refresh_left, 0.5)))
+            else:
+                if not (wait <= args.max_hold_minutes and wait + 3 <= left):
+                    end_reason = "next_window_beyond_hold"
+                    break
+                nap = wait
+            print(f"[dispatch] holding {nap:.1f} min (next window opens in {wait:.1f} min)")
+            time.sleep(nap * 60 + (0 if args.chain else 5))
+            held += nap
+            continue
         batch_id = f"kd-{now:%Y%m%dT%H%M%SZ}"
         attempted |= {(d.fixture.fixture_id, d.horizon) for d in due}
+        listing = sched_doc.get("kalshi_listing_as_of")
+        args.schedule_as_of = _dt(listing) if listing else None
         actions = _dispatch_actions(out, due, batch_id, args)
         captured = any(
             a.startswith(("kalshi_capture:ok", "kalshi_capture:incomplete")) for a in actions
@@ -929,7 +1022,13 @@ def cmd_dispatch_tick(args: argparse.Namespace) -> int:
                 "actions": actions,
             }
         )
+        if args.publish_each_batch:
+            write_json(
+                out / DIAGNOSTICS_FILE, diagnostics(load_log(log_path), schedule, now=utc_now())
+            )
+            publishes.append(_publish_batch(out, f"kickoff-dispatch {run_id} {batch_id}"))
         if args.no_hold:
+            end_reason = "no_hold"
             break
     diag = diagnostics(load_log(log_path), schedule, now=utc_now())
     diag["last_tick"] = {"batches": batches, "summary": summary}
@@ -942,9 +1041,15 @@ def cmd_dispatch_tick(args: argparse.Namespace) -> int:
                 credits += int(part.split("=", 1)[1] or 0)
             if part.startswith("paid="):
                 paid += int(part.split("=", 1)[1] or 0)
+    end = utc_now()
+    nxt = minutes_until_next_window(upcoming)
     tick = {
         "started_at": _iso(started),
-        "completed_at": _iso(utc_now()),
+        "completed_at": _iso(end),
+        "elapsed_minutes": round((end - started).total_seconds() / 60, 1),
+        "end_reason": end_reason,
+        "chain_continue": bool(args.chain and end_reason == "link_time_limit" and nxt is not None),
+        "next_window_minutes": None if nxt is None else round(nxt, 1),
         "batches": batches,
         "horizons_delivered": delivered_n,
         "horizons_missed_logged": sum(missed_states.values()),
@@ -953,7 +1058,10 @@ def cmd_dispatch_tick(args: argparse.Namespace) -> int:
         "credits_spent": credits,
         "odds_api": odds,
         "hold_minutes": round(held, 1),
+        "publishes": publishes,
     }
+    if lease is not None:
+        lease.release(run_id, now=end)
     if args.summary_out:
         write_json(Path(args.summary_out), tick)
     print(
@@ -967,6 +1075,8 @@ def cmd_dispatch_tick(args: argparse.Namespace) -> int:
                         "missed_states",
                         "paid_calls",
                         "credits_spent",
+                        "end_reason",
+                        "chain_continue",
                     )
                 },
                 "delivered_total": diag["delivered_total"],
@@ -1001,7 +1111,15 @@ def _dispatch_actions(out: Path, due, batch_id: str, args: argparse.Namespace) -
     except Exception as exc:
         done.append(f"reference:error:{str(exc)[:80]}")
     if not args.skip_odds_api:
-        done.append(_odds_api_action(out, due, batch_id, Path(args.archive_dir)))
+        done.append(
+            _odds_api_action(
+                out,
+                due,
+                batch_id,
+                Path(args.archive_dir),
+                schedule_as_of=getattr(args, "schedule_as_of", None),
+            )
+        )
     if args.with_run:
         # near-close predictions (the CLV evidence the promotion gates need): a FAST run scoped to the
         # next 3 hours, reconciled against the daily catalog; ledger index restored from the archive
@@ -1087,16 +1205,30 @@ def _claim_fn(archive_dir: Path | None, batch_id: str):
         url = p.stdout.strip() if p.returncode == 0 and "@" in p.stdout else None
     if url is None:
         return None
+    from soccer_edge.reference.odds_budget import BudgetConfig
+
+    cfg = BudgetConfig.load(REPO_ROOT / "config" / "odds_api_budget.json")
     store = ClaimStore(url)
     run = {"batch_id": batch_id, "run_id": os.environ.get("GITHUB_RUN_ID", "local")}
+    caps = {"daily": cfg.daily_credit_ceiling, "rolling_30d": cfg.rolling_30d_credit_ceiling}
 
-    def claim(identities: list[str]) -> set[str]:
-        return store.claim(identities, {**run, "claimed_at": utc_now().isoformat()})
+    def claim(identities: list[str], call_record: dict) -> set[str]:
+        won = store.claim(
+            identities,
+            {**run, "claimed_at": utc_now().isoformat()},
+            call_record=call_record,
+            caps=caps,
+        )
+        if store.last_reason:
+            print(f"[odds_api] claim: {store.last_reason}")
+        return won
 
     return claim
 
 
-def _odds_api_action(out: Path, due, batch_id: str, archive_dir: Path | None = None) -> str:
+def _odds_api_action(
+    out: Path, due, batch_id: str, archive_dir: Path | None = None, schedule_as_of=None
+) -> str:
     """Pinnacle reference via The Odds API for the due Kalshi-listed fixtures (budget-guarded, batched per
     competition). Isolated like every other action: a failure is recorded, never fatal."""
     from soccer_edge.reference.odds_api_capture import DueFixture, capture, status_summary
@@ -1122,6 +1254,7 @@ def _odds_api_action(out: Path, due, batch_id: str, archive_dir: Path | None = N
             now=now,
             batch_id=batch_id,
             claim_fn=_claim_fn(archive_dir, batch_id),
+            schedule_as_of=schedule_as_of,
         )
         write_json(out / "odds_api" / "STATUS.json", status_summary(stats, now))
         print("[odds_api]", json.dumps(status_summary(stats, now), default=str)[:800])
@@ -1930,6 +2063,17 @@ def build_parser() -> argparse.ArgumentParser:
         help="hard bound on the whole tick (job limit 55)",
     )
     dt.add_argument("--summary-out", default=None, help="write the tick summary JSON here")
+    dt.add_argument(
+        "--chain",
+        action="store_true",
+        help="bounded link of the fixture-aware chain: lease, hold between windows, refresh, successor flag",
+    )
+    dt.add_argument("--refresh-minutes", type=float, default=30.0)
+    dt.add_argument(
+        "--publish-each-batch",
+        action="store_true",
+        help="publish to data-archive after every batch",
+    )
     dt.add_argument("--no-hold", action="store_true")
     dt.add_argument("--skip-lineups", action="store_true")
     dt.add_argument(

@@ -5,10 +5,11 @@ repository_dispatch — runs exactly this decision. The trigger carries no work 
 reads the durable state on data-archive and decides:
 
 * capture: some required horizon (T-120/60/30/15/5) is satisfiable now, newly missed horizons need logging,
-  or the fixture schedule is stale;
+  the fixture schedule is stale, or (fixture-aware chain) a future window is known and no bounded link is
+  alive, so one is started to sleep until it;
 * settle: a fixture with predictions finished (kickoff + grace) since the last settlement run, or the last
   run left fixtures pending and is old enough to retry;
-* otherwise NO_WORK_DUE, which is a normal, successful, zero-cost outcome.
+* otherwise NO_WORK_DUE (no known future window, nothing to settle): a normal, zero-cost outcome.
 
 Each wake appends one heartbeat row (dispatch/heartbeats/<UTC date>.jsonl) so "no work was due" is
 distinguishable from "the dispatcher never ran" and from "it ran and failed".
@@ -42,7 +43,19 @@ GITHUB_BACKUP = "github-schedule-backup"
 MANUAL = "manual"
 REPOSITORY_DISPATCH = "repository-dispatch"
 DISPATCHER = "dispatcher"
-_KNOWN_SOURCES = {EXTERNAL, GITHUB_BACKUP, MANUAL, REPOSITORY_DISPATCH, DISPATCHER}
+CHAIN = "chain"  # successor link dispatched by the previous link
+WORKFLOW_RUN = (
+    "workflow-run"  # another workflow completed (event-driven restart of a stopped chain)
+)
+_KNOWN_SOURCES = {
+    EXTERNAL,
+    GITHUB_BACKUP,
+    MANUAL,
+    REPOSITORY_DISPATCH,
+    DISPATCHER,
+    CHAIN,
+    WORKFLOW_RUN,
+}
 
 SCHEDULE_MAX_AGE = timedelta(hours=3)  # older schedule -> a capture tick rebuilds it
 SETTLE_GRACE = timedelta(
@@ -59,6 +72,8 @@ def normalize_source(event_name: str | None, requested: str | None) -> str:
     req = (requested or "").strip().lower()
     if event_name == "schedule":
         return GITHUB_BACKUP
+    if event_name == "workflow_run":
+        return WORKFLOW_RUN
     if req in _KNOWN_SOURCES:
         return req
     if event_name == "repository_dispatch":
@@ -144,6 +159,7 @@ def decide_wake(
     now: datetime,
     capture_in_progress: bool = False,
     force: bool = False,
+    chain: bool = True,
 ) -> WakeDecision:
     due, missed, upcoming = plan(schedule, log, now=now)
     d = WakeDecision(capture=False, settle=False)
@@ -161,6 +177,10 @@ def decide_wake(
         wants.append("schedule stale or missing")
     if force:
         wants.append("forced")
+    if chain and upcoming and not wants:
+        # fixture-aware chain: a known future window and no link alive -> start a bounded link now; it
+        # sleeps until the window (no calls while sleeping) and chains a successor while windows remain
+        wants.append(f"chain: next window in {d.next_window_minutes:.0f} min")
     if wants and capture_in_progress and not force:
         d.reasons.append(
             "capture already in progress (it re-plans every loop); not queuing another"

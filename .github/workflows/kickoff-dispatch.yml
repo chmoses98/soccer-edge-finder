@@ -1,30 +1,32 @@
 name: kickoff-dispatch
 run-name: "kickoff-dispatch · ${{ inputs.source || github.event.client_payload.source || github.event_name }}"
 
-# The ONE canonical dispatcher (docs/SCHEDULER.md). Every trigger runs the same stdlib decide step:
+# The ONE canonical dispatcher, fixture-aware and bounded (docs/SCHEDULER.md). No external heartbeat.
 #
-#   external heartbeat  POST /repos/<repo>/actions/workflows/kickoff-dispatch.yml/dispatches
-#                       {"ref":"main","inputs":{"source":"external-heartbeat"}}   <- PRIMARY timing source
-#   repository_dispatch event_type "wake-soccer-dispatcher"                       <- same logic, optional
-#   GitHub schedule     every 10 min on off-round minutes                          <- BACKUP only
-#   manual              workflow_dispatch from the Actions tab
+#   decide   stdlib, ~15 s, every trigger: record a heartbeat, dispatch settlement when due, and start a
+#            capture LINK only when a known fixture window exists (or something is due / missed / stale)
+#            and no link is alive. No known future window -> NO_WORK_DUE, nothing else runs.
+#   capture  one bounded LINK (<= 5 h 30): holds the chain lease, sleeps until each real fixture window
+#            (no calls while sleeping), captures when due, publishes after every batch, refreshes the
+#            schedule every 30 min, and ends at its time limit or when no future window remains.
+#   chain    after a link that reached its time limit with windows still ahead (and ran >= 20 min),
+#            dispatches exactly one successor link. A chain therefore exists only while fixtures do.
 #
-# A trigger carries no work. `decide` reads data-archive, records a heartbeat row, dispatches settlement
-# when a fixture has finished, and starts `capture` only when a horizon (T-120/60/30/15/5) is due, newly
-# missed horizons need logging, or the schedule is stale. Nothing due is a normal, zero-cost success.
-# `capture` is the only job in the writer concurrency group: a newer wake never cancels a running capture,
-# and paid reference calls are claimed on data-archive first, so repeated or simultaneous wakes cannot pay
-# twice for the same fixture/purpose.
+# Triggers: the chain itself (workflow_dispatch source=chain); completion of the other data workflows
+# (workflow_run: event-driven restarts after a stopped/broken chain); an hourly GitHub schedule (backup
+# only; GitHub drops most slots); manual runs. External callers (workflow_dispatch / repository_dispatch)
+# still work but are not required. Paid Odds API calls stay behind the quota guard, claims and the
+# durable per-call caps regardless of how or how often this workflow is triggered.
 
 on:
   workflow_dispatch:
     inputs:
       source:
-        description: "trigger source label (external-heartbeat | manual)"
+        description: "trigger source label (chain | manual)"
         type: string
         default: manual
       force:
-        description: "run the capture job even when nothing is due"
+        description: "run the capture link even when nothing is due"
         type: boolean
         default: false
       with_run:
@@ -33,8 +35,11 @@ on:
         default: false
   repository_dispatch:
     types: [wake-soccer-dispatcher]
+  workflow_run:
+    workflows: [run-soccer, kalshi-discover, kalshi-capture, espn-lineups, settle-evaluate]
+    types: [completed]
   schedule:
-    - cron: "7,17,27,37,47,57 * * * *"  # BACKUP heartbeat; GitHub drops most of these slots
+    - cron: "7 * * * *"  # hourly BACKUP restart of a stopped chain; GitHub drops most slots
 
 permissions:
   contents: write  # heartbeat rows, claims, archive publish (data-archive branch)
@@ -70,7 +75,10 @@ jobs:
     needs: decide
     if: ${{ needs.decide.outputs.capture == 'true' }}
     runs-on: ubuntu-latest
-    timeout-minutes: 55
+    timeout-minutes: 350  # GitHub-hosted job limit is 360 min; the link itself ends at 330
+    outputs:
+      chain_continue: ${{ steps.tick.outputs.chain_continue }}
+      elapsed_minutes: ${{ steps.tick.outputs.elapsed_minutes }}
     concurrency:
       group: data-writer-archive-kickoff
       cancel-in-progress: false
@@ -84,9 +92,9 @@ jobs:
       - name: Fetch archive tip (schedule, log, heartbeats, change-suppression state, ESPN fixtures)
         run: |
           git clone --quiet --depth 1 --branch data-archive "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" archive
-      - name: Dispatcher tick (capture every satisfiable horizon, hold for the next)
+      - name: Bounded link (capture every due horizon, sleep until the next real window)
         id: tick
-        timeout-minutes: 50
+        timeout-minutes: 345
         env:
           # The SAME Odds API key/secret name as chmoses98/edge-finder-api (shared account). Absent -> the
           # Pinnacle reference action logs NOT_CONFIGURED and makes no request. Never echoed.
@@ -97,32 +105,19 @@ jobs:
           mkdir -p work
           EXTRA=""
           [ "${{ inputs.with_run }}" = "true" ] && EXTRA="--with-run"
-          python -m soccer_edge.cli dispatch tick --archive-dir archive --out-dir work --max-hold-minutes 40 --summary-out tick_summary.json $EXTRA | tee work/tick.log
+          python -m soccer_edge.cli dispatch tick --archive-dir archive --out-dir work --chain --max-tick-minutes 330 --refresh-minutes 30 --publish-each-batch --summary-out tick_summary.json $EXTRA | tee work/tick.log
+          python3 -c "import json;t=json.load(open('tick_summary.json'));print('chain_continue='+('true' if t.get('chain_continue') else 'false'));print('elapsed_minutes='+str(int(t.get('elapsed_minutes') or 0)))" >> "$GITHUB_OUTPUT"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: kickoff-${{ github.run_id }}
           path: work/
           retention-days: 7
-      - name: Publish
+      - name: Publish (final)
         if: always()
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          rm -f work/snapshots/latest_catalog.json
-          rm -rf work/results work/fixtures/espn work/simcache 2>/dev/null || true   # espn-sync side outputs: the lineups job owns those
-          # fast-run outputs: ledger day files + index, run outputs (no priced_contracts / diagnostics copies)
-          if [ -d work/ledger ]; then
-            mkdir -p work/predictions
-            for f in $(find work/ledger -name 'predictions.jsonl'); do d=$(basename $(dirname "$f")); mkdir -p work/predictions/$d; cat "$f" >> work/predictions/$d/predictions.jsonl; done
-            cp -f work/ledger/index.json work/predictions/index.json 2>/dev/null || true
-            rm -rf work/ledger
-          fi
-          if [ -d work/runs ]; then
-            for r in work/runs/*/; do rm -f "$r/priced_contracts.json" "$r/coverage_diagnostics.json"; done
-          fi
-          [ -d work/dispatch ] || exit 0
-          scripts/archive_publish.sh work . "kickoff-dispatch ${{ github.run_id }} $(date -u +%Y-%m-%dT%H:%MZ)"
+        run: scripts/kickoff_publish.sh work "kickoff-dispatch ${{ github.run_id }} $(date -u +%Y-%m-%dT%H:%MZ)"
       - name: Record capture completion heartbeat
         if: always()
         env:
@@ -133,3 +128,28 @@ jobs:
         if: always()
         run: |
           { echo '## kickoff-dispatch'; echo '```'; tail -40 work/tick.log 2>/dev/null; echo '```'; } >> "$GITHUB_STEP_SUMMARY" || true
+
+  chain:
+    needs: [decide, capture]
+    # exactly one successor: after a link that used its time with windows still ahead, or after a link that
+    # FAILED having run >= 20 min (recovery). A link that ended early, failed fast or was cancelled never
+    # chains (scripts/kickoff_decide.py chain_decision); event-driven restarts and the hourly backup cover it.
+    if: ${{ always() && needs.decide.outputs.capture == 'true' && (needs.capture.result == 'success' || needs.capture.result == 'failure') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            scripts/kickoff_decide.py
+            src/soccer_edge/dispatch
+            config/dispatch.json
+          sparse-checkout-cone-mode: false
+      - name: Dispatch the successor link (or stop the chain)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CAPTURE_RESULT: ${{ needs.capture.result }}
+          CHAIN_CONTINUE: ${{ needs.capture.outputs.chain_continue }}
+          ELAPSED_MINUTES: ${{ needs.capture.outputs.elapsed_minutes }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: python3 scripts/kickoff_decide.py chain
