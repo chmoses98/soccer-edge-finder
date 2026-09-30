@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-30T15:09:10.178885Z",
+  "as_of": "2026-09-30T20:06:11.421907Z",
   "by_competition": {
     "bra.2": {
       "fixtures": 2,
@@ -20,7 +20,7 @@
       "with_xi_ge_20min": 4
     },
     "eng.5": {
-      "fixtures": 10,
+      "fixtures": 12,
       "median_lead_minutes": null,
       "with_pre_kickoff_xi": 0,
       "with_xi_ge_20min": 0
@@ -32,7 +32,7 @@
       "with_xi_ge_20min": 0
     },
     "fifa.friendly": {
-      "fixtures": 13,
+      "fixtures": 15,
       "median_lead_minutes": 26.296422341666663,
       "with_pre_kickoff_xi": 2,
       "with_xi_ge_20min": 1
@@ -43,10 +43,22 @@
       "with_pre_kickoff_xi": 0,
       "with_xi_ge_20min": 0
     },
+    "per.1": {
+      "fixtures": 1,
+      "median_lead_minutes": 31.562411083333334,
+      "with_pre_kickoff_xi": 1,
+      "with_xi_ge_20min": 1
+    },
     "uefa.nations": {
       "fixtures": 18,
       "median_lead_minutes": 2.5031012083333333,
       "with_pre_kickoff_xi": 2,
+      "with_xi_ge_20min": 0
+    },
+    "uefa.wchampions": {
+      "fixtures": 5,
+      "median_lead_minutes": null,
+      "with_pre_kickoff_xi": 0,
       "with_xi_ge_20min": 0
     },
     "uru.1": {
@@ -743,28 +755,28 @@
       "xi_first_observed_at": null
     },
     {
-      "capture_attempts": 1,
+      "capture_attempts": 2,
       "competition": "eng.5",
       "espn_event_id": "401889269",
-      "final_state": "unconfirmed",
-      "kickoff_passed": false,
-      "lead_time_seconds": null,
+      "final_state": "post_hoc",
+      "kickoff_passed": true,
+      "lead_time_seconds": -2605.541011,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-09-30T18:45:00+00:00",
       "source": "espn_site_api",
-      "xi_first_observed_at": null
+      "xi_first_observed_at": "2026-09-30T19:28:25.541011+00:00"
     },
     {
-      "capture_attempts": 1,
+      "capture_attempts": 2,
       "competition": "eng.5",
       "espn_event_id": "401889268",
-      "final_state": "unconfirmed",
-      "kickoff_passed": false,
-      "lead_time_seconds": null,
+      "final_state": "post_hoc",
+      "kickoff_passed": true,
+      "lead_time_seconds": -2605.636287,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-09-30T18:45:00+00:00",
       "source": "espn_site_api",
-      "xi_first_observed_at": null
+      "xi_first_observed_at": "2026-09-30T19:28:25.636287+00:00"
     },
     {
       "capture_attempts": 1,
@@ -843,7 +855,7 @@
       "competition": "fifa.friendly",
       "espn_event_id": "401899825",
       "final_state": "unconfirmed",
-      "kickoff_passed": false,
+      "kickoff_passed": true,
       "lead_time_seconds": null,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-09-30T16:00:00+00:00",
@@ -851,11 +863,11 @@
       "xi_first_observed_at": null
     },
     {
-      "capture_attempts": 1,
+      "capture_attempts": 2,
       "competition": "fifa.friendly",
       "espn_event_id": "401912455",
       "final_state": "unconfirmed",
-      "kickoff_passed": false,
+      "kickoff_passed": true,
       "lead_time_seconds": null,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-09-30T18:00:00+00:00",
@@ -875,76 +887,76 @@
       "xi_first_observed_at": null
     },
     {
-      "capture_attempts": 1,
+      "capture_attempts": 2,
       "competition": "per.1",
       "espn_event_id": "401886198",
-      "final_state": "unconfirmed",
-      "kickoff_passed": false,
-      "lead_time_seconds": null,
-      "observed_before_kickoff": false,
+      "final_state": "confirmed",
+      "kickoff_passed": true,
+      "lead_time_seconds": 1893.744665,
+      "observed_before_kickoff": true,
       "scheduled_kickoff_utc": "2026-09-30T20:00:00+00:00",
       "source": "espn_site_api",
-      "xi_first_observed_at": null
+      "xi_first_observed_at": "2026-09-30T19:28:26.255335+00:00"
     },
     {
-      "capture_attempts": 1,
+      "capture_attempts": 2,
       "competition": "uefa.wchampions",
       "espn_event_id": "401917008",
-      "final_state": "unconfirmed",
-      "kickoff_passed": false,
-      "lead_time_seconds": null,
+      "final_state": "post_hoc",
+      "kickoff_passed": true,
+      "lead_time_seconds": -9807.30107,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-09-30T16:45:00+00:00",
       "source": "espn_site_api",
-      "xi_first_observed_at": null
+      "xi_first_observed_at": "2026-09-30T19:28:27.301070+00:00"
     },
     {
-      "capture_attempts": 1,
+      "capture_attempts": 2,
       "competition": "uefa.wchampions",
       "espn_event_id": "401917007",
-      "final_state": "unconfirmed",
-      "kickoff_passed": false,
-      "lead_time_seconds": null,
+      "final_state": "post_hoc",
+      "kickoff_passed": true,
+      "lead_time_seconds": -9807.475256,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-09-30T16:45:00+00:00",
       "source": "espn_site_api",
-      "xi_first_observed_at": null
+      "xi_first_observed_at": "2026-09-30T19:28:27.475256+00:00"
     },
     {
-      "capture_attempts": 1,
+      "capture_attempts": 2,
       "competition": "uefa.wchampions",
       "espn_event_id": "401917009",
-      "final_state": "unconfirmed",
-      "kickoff_passed": false,
-      "lead_time_seconds": null,
+      "final_state": "post_hoc",
+      "kickoff_passed": true,
+      "lead_time_seconds": -9807.567086,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-09-30T16:45:00+00:00",
       "source": "espn_site_api",
-      "xi_first_observed_at": null
+      "xi_first_observed_at": "2026-09-30T19:28:27.567086+00:00"
     },
     {
-      "capture_attempts": 1,
+      "capture_attempts": 2,
       "competition": "uefa.wchampions",
       "espn_event_id": "401917005",
-      "final_state": "unconfirmed",
-      "kickoff_passed": false,
-      "lead_time_seconds": null,
+      "final_state": "post_hoc",
+      "kickoff_passed": true,
+      "lead_time_seconds": -1707.906593,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-09-30T19:00:00+00:00",
       "source": "espn_site_api",
-      "xi_first_observed_at": null
+      "xi_first_observed_at": "2026-09-30T19:28:27.906593+00:00"
     },
     {
-      "capture_attempts": 1,
+      "capture_attempts": 2,
       "competition": "uefa.wchampions",
       "espn_event_id": "401917006",
-      "final_state": "unconfirmed",
-      "kickoff_passed": false,
-      "lead_time_seconds": null,
+      "final_state": "post_hoc",
+      "kickoff_passed": true,
+      "lead_time_seconds": -1708.002181,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-09-30T19:00:00+00:00",
       "source": "espn_site_api",
-      "xi_first_observed_at": null
+      "xi_first_observed_at": "2026-09-30T19:28:28.002181+00:00"
     },
     {
       "capture_attempts": 1,
@@ -1032,6 +1044,42 @@
     },
     {
       "capture_attempts": 1,
+      "competition": "concacaf.nations.league",
+      "espn_event_id": "401900601",
+      "final_state": "unconfirmed",
+      "kickoff_passed": false,
+      "lead_time_seconds": null,
+      "observed_before_kickoff": false,
+      "scheduled_kickoff_utc": "2026-10-01T19:00:00+00:00",
+      "source": "espn_site_api",
+      "xi_first_observed_at": null
+    },
+    {
+      "capture_attempts": 1,
+      "competition": "concacaf.nations.league",
+      "espn_event_id": "401900597",
+      "final_state": "unconfirmed",
+      "kickoff_passed": false,
+      "lead_time_seconds": null,
+      "observed_before_kickoff": false,
+      "scheduled_kickoff_utc": "2026-10-01T20:00:00+00:00",
+      "source": "espn_site_api",
+      "xi_first_observed_at": null
+    },
+    {
+      "capture_attempts": 1,
+      "competition": "concacaf.nations.league",
+      "espn_event_id": "401900600",
+      "final_state": "unconfirmed",
+      "kickoff_passed": false,
+      "lead_time_seconds": null,
+      "observed_before_kickoff": false,
+      "scheduled_kickoff_utc": "2026-10-01T21:00:00+00:00",
+      "source": "espn_site_api",
+      "xi_first_observed_at": null
+    },
+    {
+      "capture_attempts": 1,
       "competition": "fifa.friendly",
       "espn_event_id": "401924629",
       "final_state": "unconfirmed",
@@ -1056,6 +1104,174 @@
     },
     {
       "capture_attempts": 1,
+      "competition": "fifa.friendly",
+      "espn_event_id": "401919420",
+      "final_state": "unconfirmed",
+      "kickoff_passed": false,
+      "lead_time_seconds": null,
+      "observed_before_kickoff": false,
+      "scheduled_kickoff_utc": "2026-10-01T14:00:00+00:00",
+      "source": "espn_site_api",
+      "xi_first_observed_at": null
+    },
+    {
+      "capture_attempts": 1,
+      "competition": "fifa.friendly",
+      "espn_event_id": "401906313",
+      "final_state": "unconfirmed",
+      "kickoff_passed": false,
+      "lead_time_seconds": null,
+      "observed_before_kickoff": false,
+      "scheduled_kickoff_utc": "2026-10-01T18:00:00+00:00",
+      "source": "espn_site_api",
+      "xi_first_observed_at": null
+    },
+    {
+      "capture_attempts": 1,
+      "competition": "uefa.nations",
+      "espn_event_id": "401861093",
+      "final_state": "unconfirmed",
+      "kickoff_passed": false,
+      "lead_time_seconds": null,
+      "observed_before_kickoff": false,
+      "scheduled_kickoff_utc": "2026-10-01T16:00:00+00:00",
+      "source": "espn_site_api",
+      "xi_first_observed_at": null
+    },
+    {
+      "capture_attempts": 1,
+      "competition": "uefa.nations",
+      "espn_event_id": "401861096",
+      "final_state": "unconfirmed",
+      "kickoff_passed": false,
+      "lead_time_seconds": null,
+      "observed_before_kickoff": false,
+      "scheduled_kickoff_utc": "2026-10-01T18:45:00+00:00",
+      "source": "espn_site_api",
+      "xi_first_observed_at": null
+    },
+    {
+      "capture_attempts": 1,
+      "competition": "uefa.nations",
+      "espn_event_id": "401861097",
+      "final_state": "unconfirmed",
+      "kickoff_passed": false,
+      "lead_time_seconds": null,
+      "observed_before_kickoff": false,
+      "scheduled_kickoff_utc": "2026-10-01T18:45:00+00:00",
+      "source": "espn_site_api",
+      "xi_first_observed_at": null
+    },
+    {
+      "capture_attempts": 1,
+      "competition": "uefa.nations",
+      "espn_event_id": "401861098",
+      "final_state": "unconfirmed",
+      "kickoff_passed": false,
+      "lead_time_seconds": null,
+      "observed_before_kickoff": false,
+      "scheduled_kickoff_utc": "2026-10-01T18:45:00+00:00",
+      "source": "espn_site_api",
+      "xi_first_observed_at": null
+    },
+    {
+      "capture_attempts": 1,
+      "competition": "uefa.nations",
+      "espn_event_id": "401861095",
+      "final_state": "unconfirmed",
+      "kickoff_passed": false,
+      "lead_time_seconds": null,
+      "observed_before_kickoff": false,
+      "scheduled_kickoff_utc": "2026-10-01T18:45:00+00:00",
+      "source": "espn_site_api",
+      "xi_first_observed_at": null
+    },
+    {
+      "capture_attempts": 1,
+      "competition": "uefa.nations",
+      "espn_event_id": "401861099",
+      "final_state": "unconfirmed",
+      "kickoff_passed": false,
+      "lead_time_seconds": null,
+      "observed_before_kickoff": false,
+      "scheduled_kickoff_utc": "2026-10-01T18:45:00+00:00",
+      "source": "espn_site_api",
+      "xi_first_observed_at": null
+    },
+    {
+      "capture_attempts": 1,
+      "competition": "uefa.nations",
+      "espn_event_id": "401861094",
+      "final_state": "unconfirmed",
+      "kickoff_passed": false,
+      "lead_time_seconds": null,
+      "observed_before_kickoff": false,
+      "scheduled_kickoff_utc": "2026-10-01T18:45:00+00:00",
+      "source": "espn_site_api",
+      "xi_first_observed_at": null
+    },
+    {
+      "capture_attempts": 1,
+      "competition": "uefa.nations",
+      "espn_event_id": "401861100",
+      "final_state": "unconfirmed",
+      "kickoff_passed": false,
+      "lead_time_seconds": null,
+      "observed_before_kickoff": false,
+      "scheduled_kickoff_utc": "2026-10-01T18:45:00+00:00",
+      "source": "espn_site_api",
+      "xi_first_observed_at": null
+    },
+    {
+      "capture_attempts": 1,
+      "competition": "uefa.wchampions",
+      "espn_event_id": "401917004",
+      "final_state": "unconfirmed",
+      "kickoff_passed": false,
+      "lead_time_seconds": null,
+      "observed_before_kickoff": false,
+      "scheduled_kickoff_utc": "2026-10-01T16:45:00+00:00",
+      "source": "espn_site_api",
+      "xi_first_observed_at": null
+    },
+    {
+      "capture_attempts": 1,
+      "competition": "uefa.wchampions",
+      "espn_event_id": "401917003",
+      "final_state": "unconfirmed",
+      "kickoff_passed": false,
+      "lead_time_seconds": null,
+      "observed_before_kickoff": false,
+      "scheduled_kickoff_utc": "2026-10-01T16:45:00+00:00",
+      "source": "espn_site_api",
+      "xi_first_observed_at": null
+    },
+    {
+      "capture_attempts": 1,
+      "competition": "uefa.wchampions",
+      "espn_event_id": "401917002",
+      "final_state": "unconfirmed",
+      "kickoff_passed": false,
+      "lead_time_seconds": null,
+      "observed_before_kickoff": false,
+      "scheduled_kickoff_utc": "2026-10-01T19:00:00+00:00",
+      "source": "espn_site_api",
+      "xi_first_observed_at": null
+    },
+    {
+      "capture_attempts": 1,
+      "competition": "uefa.wchampions",
+      "espn_event_id": "401917001",
+      "final_state": "unconfirmed",
+      "kickoff_passed": false,
+      "lead_time_seconds": null,
+      "observed_before_kickoff": false,
+      "scheduled_kickoff_utc": "2026-10-01T19:00:00+00:00",
+      "source": "espn_site_api",
+      "xi_first_observed_at": null
+    },
+    {
+      "capture_attempts": 1,
       "competition": "usa.usl.1",
       "espn_event_id": "401842263",
       "final_state": "unconfirmed",
@@ -1067,22 +1283,22 @@
       "xi_first_observed_at": null
     }
   ],
-  "fixtures_kickoff_passed": 63,
-  "fixtures_tracked": 84,
+  "fixtures_kickoff_passed": 73,
+  "fixtures_tracked": 101,
   "lead_time_minutes": {
     "max": 57.59638495,
-    "median": 20.178746775,
+    "median": 25.056940450000003,
     "min": 2.5026216333333333,
-    "n": 10,
-    "p10": 2.503484868333333,
-    "p90": 50.83707641499999
+    "n": 11,
+    "p10": 2.5035807833333332,
+    "p90": 50.08604213333333
   },
-  "post_kickoff_first_xi": 26,
+  "post_kickoff_first_xi": 33,
   "schema": "lineup_lead_time_v1",
-  "share_pre_kickoff_xi": 0.15873015873015872,
-  "share_xi_ge_20min": 0.07936507936507936,
+  "share_pre_kickoff_xi": 0.1506849315068493,
+  "share_xi_ge_20min": 0.0821917808219178,
   "target": "audit \u00a7I1: >= 90% of priced fixtures with a confirmed XI captured >= 20 min before kickoff",
-  "with_any_xi": 36,
-  "with_pre_kickoff_xi": 10,
-  "with_xi_ge_20min_before_kickoff": 5
+  "with_any_xi": 44,
+  "with_pre_kickoff_xi": 11,
+  "with_xi_ge_20min_before_kickoff": 6
 }

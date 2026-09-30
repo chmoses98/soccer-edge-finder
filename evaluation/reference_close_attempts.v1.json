@@ -1,7 +1,8 @@
 {
  "counts": {
-  "MISSED_DISPATCHER_CLOSE": 19,
   "DISPATCHER_CLOSE_NO_ATTEMPT": 6,
+  "MISSED_DISPATCHER_CLOSE": 19,
+  "NO_SPORT_KEY": 1,
   "PINNACLE_QUOTED_NOTHING": 2
  },
  "fixtures": {
@@ -54,6 +55,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:fifa.friendly:2026:nat.ltu:nat.and": {
+   "state": "NO_SPORT_KEY",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20260930T154305Z"
   },
   "fx:fifa.friendly:2026:nat.mex:nat.per": {
    "state": "MISSED_DISPATCHER_CLOSE",
