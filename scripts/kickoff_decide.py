@@ -193,7 +193,7 @@ def cmd_wake(a: argparse.Namespace) -> int:
         code, _ = _api(
             "POST",
             f"/repos/{repo}/actions/workflows/settle-evaluate.yml/dispatches",
-            {"ref": os.environ.get("DEFAULT_BRANCH", "main"), "inputs": {"source": "dispatcher"}},
+            {"ref": os.environ.get("DEFAULT_BRANCH") or "main", "inputs": {"source": "dispatcher"}},
         )
         settle_dispatched = code in (200, 204)
         d.reasons.append(f"settle dispatch HTTP {code}")
