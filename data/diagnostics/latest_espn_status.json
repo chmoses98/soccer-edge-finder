@@ -1,8 +1,8 @@
 {
-  "as_of": "2026-09-29T22:21:48.335488+00:00",
-  "events": 497,
-  "events_skipped_unmapped": 266,
-  "fixtures_mapped": 231,
+  "as_of": "2026-09-30T05:40:29.829231+00:00",
+  "events": 408,
+  "events_skipped_unmapped": 210,
+  "fixtures_mapped": 198,
   "leagues": [
     "afc.champions",
     "arg.1",
@@ -74,13 +74,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 16,
-    "events": 30,
+    "captured": 2,
+    "events": 24,
     "failures": [],
-    "published_post": 3,
-    "published_pre_kickoff": 1,
-    "unchanged": 14,
-    "unpublished": 26
+    "published_post": 0,
+    "published_pre_kickoff": 0,
+    "unchanged": 22,
+    "unpublished": 24
   },
   "map_proposals": {
     "concacaf.nations.league": {
@@ -158,7 +158,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 10,
+  "results_appended": 5,
   "scoreboard_failures": [],
   "unmapped_leagues": [
     "bra.2",
@@ -232,16 +232,17 @@
     "8939": "Mozambique"
   },
   "weather": {
-    "captured": 17,
-    "events": 25,
+    "captured": 22,
+    "events": 32,
     "failures": [
-      "401877865: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=6.2450&longitude=-75.5715&hourly=te",
-      "401877909: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bogota&count=5&language=en&form",
-      "401900594: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=18.4719&longitude=-69.8923&hourly=t",
-      "401900596: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Estadio%20Nacional%20de%20F\u00fatbo"
+      "401860362: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Caxias%20do%20Sul&count=5&langu",
+      "401860363: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Fortaleza&count=5&language=en&f",
+      "401900599: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=North%20Sound&count=5&language=",
+      "401900598: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=18.2011&longitude=-67.1396&hourly=t",
+      "401883193: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Elda&count=5&language=en&format"
     ],
     "forecast_miss": 0,
-    "geocode_miss": 4,
+    "geocode_miss": 5,
     "no_venue": 0
   }
 }
