@@ -49,16 +49,16 @@
       "sha256_prefix": "3df13f390d6dfa1df7f0228300c225ff263bf762557c84f3e13a9f68c1c3c579"
     },
     "dispatch/horizons.jsonl": {
-      "byte_length": 64079,
+      "byte_length": 64892,
       "closed": false,
       "day": null,
       "first_manifested_at": "2026-09-28T20:29:36.243164Z",
       "immutable": false,
-      "line_count": 207,
+      "line_count": 209,
       "record_level": false,
       "record_type": "horizon_log",
       "recovery_id": null,
-      "sha256_prefix": "85ef2bdff79994f8e12d4e5d37ae9f3eae64293873e3890277c00c795609b2e6"
+      "sha256_prefix": "c65871c9648c30ad14a05211135103201f9a628bb3dd3bc5bf0bf387811ebfc0"
     },
     "dispatch/settle_runs.jsonl": {
       "byte_length": 9577,
@@ -733,16 +733,16 @@
       "sha256_prefix": "29380722b32dc58b1d7a4b31ba9f468aa11f8e89acc35ef68f86205b3f1a16d4"
     },
     "odds_api/budget/2026-10-01.jsonl": {
-      "byte_length": 696,
+      "byte_length": 1044,
       "closed": false,
       "day": "2026-10-01",
       "first_manifested_at": "2026-10-01T21:25:10.270747Z",
       "immutable": false,
-      "line_count": 2,
+      "line_count": 3,
       "record_level": false,
       "record_type": "odds_api_budget",
       "recovery_id": null,
-      "sha256_prefix": "e480c35403a443bfd30630d7e7e0d1f3a7c4e58b4ccb52888e5ae9bdea4b111a"
+      "sha256_prefix": "80f0c322f44b8fd5faa5119d34a04db4bfb5ab9faaadc91ec07ac1ee4a16d48b"
     },
     "odds_api/raw/2026-09-29/kd-20260929T155452Z-soccer_uefa_nations_league.json.gz": {
       "byte_length": 477,
@@ -2244,6 +2244,18 @@
       "recovery_id": null,
       "sha256_prefix": "bf945d6cb148f541280e3727570eab2f49fb82de95eb05c3ab92003b96f58030"
     },
+    "snapshots/2026-10-01/cap-20261001T215728Z.jsonl": {
+      "byte_length": 1094398,
+      "closed": false,
+      "day": "2026-10-01",
+      "first_manifested_at": "2026-10-01T21:57:38.198899Z",
+      "immutable": false,
+      "line_count": 1345,
+      "record_level": false,
+      "record_type": "kalshi_snapshot",
+      "recovery_id": null,
+      "sha256_prefix": "fdd0cca68f8f59168d8added72afbc8732c6bbe51b7315cd9e0f0029a1497cc7"
+    },
     "weather/2026-09-28.jsonl": {
       "byte_length": 42237,
       "closed": true,
@@ -2294,5 +2306,5 @@
     }
   },
   "manifest_version": 1,
-  "updated_at": "2026-10-01T21:52:50.925140Z"
+  "updated_at": "2026-10-01T21:57:38.199197Z"
 }
