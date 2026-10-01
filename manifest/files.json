@@ -49,16 +49,16 @@
       "sha256_prefix": "a2911587cf96231fbda6ac40f0ab427b0633c43d905e31a98553a0480d06d5cc"
     },
     "dispatch/horizons.jsonl": {
-      "byte_length": 62445,
+      "byte_length": 62852,
       "closed": false,
       "day": null,
       "first_manifested_at": "2026-09-28T20:29:36.243164Z",
       "immutable": false,
-      "line_count": 203,
+      "line_count": 204,
       "record_level": false,
       "record_type": "horizon_log",
       "recovery_id": null,
-      "sha256_prefix": "781d71ac9f6850ba26d50b083decb8b1242d40dc5375b1c334c2b22a641bdd5e"
+      "sha256_prefix": "d06ed37e0c966c3c5722dee417234d78f78d4494afb878e990d8d7cf59581a92"
     },
     "dispatch/settle_runs.jsonl": {
       "byte_length": 9577,
@@ -2208,6 +2208,18 @@
       "recovery_id": null,
       "sha256_prefix": "0a549ace440267c1c0bc17d0540dbfa4a90917adede0049d0bc1cd5e1393fac5"
     },
+    "snapshots/2026-10-01/cap-20261001T213228Z.jsonl": {
+      "byte_length": 1500632,
+      "closed": false,
+      "day": "2026-10-01",
+      "first_manifested_at": "2026-10-01T21:32:38.490069Z",
+      "immutable": false,
+      "line_count": 1851,
+      "record_level": false,
+      "record_type": "kalshi_snapshot",
+      "recovery_id": null,
+      "sha256_prefix": "63288c0146d64db16ecf2a63170f4723101cf7517202841db959d092f4b005e4"
+    },
     "weather/2026-09-28.jsonl": {
       "byte_length": 42237,
       "closed": true,
@@ -2245,18 +2257,18 @@
       "sha256_prefix": "5667bab06cf5d0df53d36d1e3074f578f0b7251d40c4e9926d5aaf94e056b1ba"
     },
     "weather/2026-10-01.jsonl": {
-      "byte_length": 130849,
+      "byte_length": 131394,
       "closed": false,
       "day": "2026-10-01",
       "first_manifested_at": "2026-10-01T06:21:18.032049Z",
       "immutable": false,
-      "line_count": 235,
+      "line_count": 236,
       "record_level": true,
       "record_type": "weather",
       "recovery_id": null,
-      "sha256_prefix": "d85efb2b4e416c6120c736e3666886b68365dc7f1c1784ec1d6a158a4f675ee7"
+      "sha256_prefix": "1853c4864cd3678f7a8b5529db2621587553569a7963b21be128b1d2fbc1a770"
     }
   },
   "manifest_version": 1,
-  "updated_at": "2026-10-01T21:25:10.294613Z"
+  "updated_at": "2026-10-01T21:32:38.490781Z"
 }
