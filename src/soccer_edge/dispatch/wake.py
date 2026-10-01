@@ -64,7 +64,10 @@ SETTLE_GRACE = timedelta(
 SETTLE_LOOKBACK = timedelta(hours=72)
 SETTLE_RETRY_AFTER = timedelta(hours=3)  # pending results: retry at most this often
 SETTLE_DEDUPE = timedelta(minutes=90)  # never dispatch settlement twice inside this window
-CAPTURE_STALE_AFTER = timedelta(minutes=50)  # an "in progress" capture older than this is ignored
+# an "in progress" capture older than this is ignored (a crashed run's job can linger). It must exceed the
+# longest possible link (capture job timeout 350 min): at 50 min, wakes during a 5.5 h link did not see it
+# and queued redundant links that GitHub then cancelled (2026-10-01 00:11 / 00:12).
+CAPTURE_STALE_AFTER = timedelta(minutes=360)
 
 
 def normalize_source(event_name: str | None, requested: str | None) -> str:
