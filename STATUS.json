@@ -1,32 +1,62 @@
 {
-  "as_of": "2026-10-01T23:22:43.571266+00:00",
-  "events": 1,
-  "events_skipped_unmapped": 0,
-  "fixtures_mapped": 1,
+  "as_of": "2026-10-01T23:32:32.143345+00:00",
+  "events": 18,
+  "events_skipped_unmapped": 3,
+  "fixtures_mapped": 15,
   "leagues": [
-    "usa.1"
+    "concacaf.nations.league",
+    "fifa.friendly",
+    "fifa.worldq.afc",
+    "fifa.worldq.caf",
+    "fifa.worldq.concacaf",
+    "fifa.worldq.conmebol",
+    "fifa.worldq.uefa",
+    "uefa.euroq",
+    "uefa.nations"
   ],
   "lineups": {
-    "captured": 0,
-    "events": 1,
+    "captured": 4,
+    "events": 6,
     "failures": [],
-    "published_post": 0,
-    "published_pre_kickoff": 0,
-    "unchanged": 1,
+    "published_post": 3,
+    "published_pre_kickoff": 2,
+    "unchanged": 2,
     "unpublished": 1
   },
-  "map_proposals": {},
+  "map_proposals": {
+    "concacaf.nations.league": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "2645": "US Virgin Islands"
+      }
+    },
+    "fifa.friendly": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "4380": "Syria",
+        "4388": "Lebanon",
+        "4390": "Maldives"
+      }
+    }
+  },
   "map_version": "4",
-  "results_appended": 0,
+  "results_appended": 10,
   "scoreboard_failures": [],
   "unmapped_leagues": [],
-  "unmapped_team_ids": {},
+  "unmapped_team_ids": {
+    "2645": "US Virgin Islands",
+    "4380": "Syria",
+    "4388": "Lebanon",
+    "4390": "Maldives"
+  },
   "weather": {
-    "captured": 1,
-    "events": 1,
+    "captured": 5,
+    "events": 6,
     "failures": [],
     "forecast_miss": 0,
-    "geocode_miss": 0,
+    "geocode_miss": 1,
     "no_venue": 0
   }
 }
