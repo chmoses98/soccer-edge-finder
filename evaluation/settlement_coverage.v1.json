@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-30T23:20:45.849379Z",
+  "as_of": "2026-10-01T04:50:53.590118Z",
   "by_competition": {
     "concacaf.nations_league": {
       "PENDING_EVIDENCE": 0,
@@ -75,9 +75,9 @@
     },
     "usa.mls": {
       "PENDING_EVIDENCE": 0,
-      "PENDING_KICKOFF": 96,
+      "PENDING_KICKOFF": 0,
       "PENDING_MAPPING": 0,
-      "PENDING_RESULT": 0,
+      "PENDING_RESULT": 96,
       "SETTLED": 0,
       "UNSETTLEABLE": 0,
       "UNSUPPORTED_SETTLEMENT": 0
@@ -86,9 +86,9 @@
   "by_family": {
     "btts": {
       "PENDING_EVIDENCE": 0,
-      "PENDING_KICKOFF": 3,
+      "PENDING_KICKOFF": 0,
       "PENDING_MAPPING": 3,
-      "PENDING_RESULT": 3,
+      "PENDING_RESULT": 6,
       "SETTLED": 94,
       "UNSETTLEABLE": 0,
       "UNSUPPORTED_SETTLEMENT": 0
@@ -104,36 +104,36 @@
     },
     "first_half_btts": {
       "PENDING_EVIDENCE": 2,
-      "PENDING_KICKOFF": 3,
+      "PENDING_KICKOFF": 0,
       "PENDING_MAPPING": 3,
-      "PENDING_RESULT": 0,
+      "PENDING_RESULT": 3,
       "SETTLED": 83,
       "UNSETTLEABLE": 0,
       "UNSUPPORTED_SETTLEMENT": 0
     },
     "first_half_handicap": {
       "PENDING_EVIDENCE": 4,
-      "PENDING_KICKOFF": 6,
+      "PENDING_KICKOFF": 0,
       "PENDING_MAPPING": 6,
-      "PENDING_RESULT": 0,
+      "PENDING_RESULT": 6,
       "SETTLED": 166,
       "UNSETTLEABLE": 0,
       "UNSUPPORTED_SETTLEMENT": 0
     },
     "first_half_result": {
       "PENDING_EVIDENCE": 6,
-      "PENDING_KICKOFF": 9,
+      "PENDING_KICKOFF": 0,
       "PENDING_MAPPING": 9,
-      "PENDING_RESULT": 0,
+      "PENDING_RESULT": 9,
       "SETTLED": 249,
       "UNSETTLEABLE": 0,
       "UNSUPPORTED_SETTLEMENT": 0
     },
     "first_half_total": {
       "PENDING_EVIDENCE": 6,
-      "PENDING_KICKOFF": 9,
+      "PENDING_KICKOFF": 0,
       "PENDING_MAPPING": 9,
-      "PENDING_RESULT": 0,
+      "PENDING_RESULT": 9,
       "SETTLED": 249,
       "UNSETTLEABLE": 0,
       "UNSUPPORTED_SETTLEMENT": 0
@@ -149,45 +149,45 @@
     },
     "handicap": {
       "PENDING_EVIDENCE": 0,
-      "PENDING_KICKOFF": 12,
+      "PENDING_KICKOFF": 0,
       "PENDING_MAPPING": 12,
-      "PENDING_RESULT": 12,
+      "PENDING_RESULT": 24,
       "SETTLED": 376,
       "UNSETTLEABLE": 0,
       "UNSUPPORTED_SETTLEMENT": 0
     },
     "match_result_3way": {
       "PENDING_EVIDENCE": 0,
-      "PENDING_KICKOFF": 126,
+      "PENDING_KICKOFF": 117,
       "PENDING_MAPPING": 9,
-      "PENDING_RESULT": 9,
+      "PENDING_RESULT": 18,
       "SETTLED": 297,
       "UNSETTLEABLE": 0,
       "UNSUPPORTED_SETTLEMENT": 0
     },
     "second_half_result": {
       "PENDING_EVIDENCE": 0,
-      "PENDING_KICKOFF": 9,
+      "PENDING_KICKOFF": 0,
       "PENDING_MAPPING": 0,
-      "PENDING_RESULT": 0,
+      "PENDING_RESULT": 9,
       "SETTLED": 0,
       "UNSETTLEABLE": 0,
       "UNSUPPORTED_SETTLEMENT": 0
     },
     "team_total": {
       "PENDING_EVIDENCE": 0,
-      "PENDING_KICKOFF": 18,
+      "PENDING_KICKOFF": 0,
       "PENDING_MAPPING": 0,
-      "PENDING_RESULT": 0,
+      "PENDING_RESULT": 18,
       "SETTLED": 348,
       "UNSETTLEABLE": 0,
       "UNSUPPORTED_SETTLEMENT": 0
     },
     "total_goals": {
       "PENDING_EVIDENCE": 0,
-      "PENDING_KICKOFF": 18,
+      "PENDING_KICKOFF": 0,
       "PENDING_MAPPING": 18,
-      "PENDING_RESULT": 18,
+      "PENDING_RESULT": 36,
       "SETTLED": 564,
       "UNSETTLEABLE": 0,
       "UNSUPPORTED_SETTLEMENT": 0
@@ -195,25 +195,25 @@
   },
   "close_completeness": {
     "kalshi": {
-      "KALSHI_CLOSE": 105,
+      "KALSHI_CLOSE": 192,
       "NEAR_CLOSE": 0,
-      "NONE": 24,
+      "NONE": 33,
       "STALE": 32,
       "TRUE_CLOSE": 0
     },
-    "kalshi_close_share": 0.6521739130434783,
-    "missing_kalshi_close_rate": 0.34782608695652173,
-    "missing_reference_close_rate": 1.0,
-    "records": 161,
+    "kalshi_close_share": 0.7470817120622568,
+    "missing_kalshi_close_rate": 0.2529182879377432,
+    "missing_reference_close_rate": 0.9533073929961089,
+    "records": 257,
     "reference": {
       "KALSHI_CLOSE": 0,
       "NEAR_CLOSE": 0,
-      "NONE": 161,
+      "NONE": 245,
       "STALE": 0,
-      "TRUE_CLOSE": 0
+      "TRUE_CLOSE": 12
     },
-    "reference_close_share": 0.0,
-    "true_close_share": 0.0
+    "reference_close_share": 0.04669260700389105,
+    "true_close_share": 0.04669260700389105
   },
   "grace_hours": 3.0,
   "pending_evidence": 50,
@@ -447,6 +447,48 @@
       "state": "PENDING_EVIDENCE"
     },
     {
+      "fixture_id": "fx:usa.mls:2026:usa.ny_red_bulls:usa.st_louis_city",
+      "prediction_record_id": "pred_6a2d1007e819a508ab5ea23c",
+      "reason": "no result reported yet",
+      "state": "PENDING_RESULT"
+    },
+    {
+      "fixture_id": "fx:usa.mls:2026:usa.ny_red_bulls:usa.st_louis_city",
+      "prediction_record_id": "pred_07b1accff5e69b0199553685",
+      "reason": "no result reported yet",
+      "state": "PENDING_RESULT"
+    },
+    {
+      "fixture_id": "fx:usa.mls:2026:usa.ny_red_bulls:usa.st_louis_city",
+      "prediction_record_id": "pred_582ffd019424bbc505a72c35",
+      "reason": "no result reported yet",
+      "state": "PENDING_RESULT"
+    },
+    {
+      "fixture_id": "fx:usa.mls:2026:usa.ny_red_bulls:usa.st_louis_city",
+      "prediction_record_id": "pred_ccc0863d23224f12ecb50b0f",
+      "reason": "no result reported yet",
+      "state": "PENDING_RESULT"
+    },
+    {
+      "fixture_id": "fx:usa.mls:2026:usa.ny_red_bulls:usa.st_louis_city",
+      "prediction_record_id": "pred_b1d461f3ceddac22e002792e",
+      "reason": "no result reported yet",
+      "state": "PENDING_RESULT"
+    },
+    {
+      "fixture_id": "fx:usa.mls:2026:usa.ny_red_bulls:usa.st_louis_city",
+      "prediction_record_id": "pred_765bf22f9e9f927c58fdb439",
+      "reason": "no result reported yet",
+      "state": "PENDING_RESULT"
+    },
+    {
+      "fixture_id": "fx:usa.mls:2026:usa.ny_red_bulls:usa.st_louis_city",
+      "prediction_record_id": "pred_ae7d3a4e012da50d47e3fe18",
+      "reason": "no result reported yet",
+      "state": "PENDING_RESULT"
+    },
+    {
       "fixture_id": "fx:fifa.friendly:2026:nat.ltu:nat.and",
       "prediction_record_id": "pred_aba0577e87fd1fa4ea8d3939",
       "reason": "no result reported yet",
@@ -475,64 +517,22 @@
       "prediction_record_id": "pred_440d0e651ab744b3c70d3df1",
       "reason": "no result reported yet",
       "state": "PENDING_RESULT"
-    },
-    {
-      "fixture_id": "fx:fifa.friendly:2026:nat.ltu:nat.and",
-      "prediction_record_id": "pred_937b70f5f1c860632685fcb9",
-      "reason": "no result reported yet",
-      "state": "PENDING_RESULT"
-    },
-    {
-      "fixture_id": "fx:fifa.friendly:2026:nat.aus:nat.bra",
-      "prediction_record_id": "pred_03876d34e9386b31db0ecc42",
-      "reason": "2 candidate results from espn_site_api",
-      "state": "PENDING_MAPPING"
-    },
-    {
-      "fixture_id": "fx:fifa.friendly:2026:nat.aus:nat.bra",
-      "prediction_record_id": "pred_e33fdc532a9da3e010f7a8df",
-      "reason": "2 candidate results from espn_site_api",
-      "state": "PENDING_MAPPING"
-    },
-    {
-      "fixture_id": "fx:fifa.friendly:2026:nat.aus:nat.bra",
-      "prediction_record_id": "pred_e5522ac6f2a75c915c261018",
-      "reason": "2 candidate results from espn_site_api",
-      "state": "PENDING_MAPPING"
-    },
-    {
-      "fixture_id": "fx:fifa.friendly:2026:nat.aus:nat.bra",
-      "prediction_record_id": "pred_d940fef625523cd0c1c2df70",
-      "reason": "2 candidate results from espn_site_api",
-      "state": "PENDING_MAPPING"
-    },
-    {
-      "fixture_id": "fx:fifa.friendly:2026:nat.aus:nat.bra",
-      "prediction_record_id": "pred_38f0a7379e67dfc3e99a617c",
-      "reason": "2 candidate results from espn_site_api",
-      "state": "PENDING_MAPPING"
-    },
-    {
-      "fixture_id": "fx:fifa.friendly:2026:nat.aus:nat.bra",
-      "prediction_record_id": "pred_20154b7392f9f5468331312b",
-      "reason": "2 candidate results from espn_site_api",
-      "state": "PENDING_MAPPING"
     }
   ],
-  "pending_kickoff": 213,
+  "pending_kickoff": 117,
   "pending_mapping": 69,
-  "pending_result": 42,
+  "pending_result": 138,
   "predictions_total": 4624,
   "reasons": {
     "PENDING_EVIDENCE: period data missing (half-time split, extra time, penalties or first scorer)": 50,
-    "PENDING_KICKOFF: kickoff + grace in the future": 213,
+    "PENDING_KICKOFF: kickoff + grace in the future": 117,
     "PENDING_MAPPING: 2 candidate results from espn_site_api": 69,
-    "PENDING_RESULT: no result reported yet": 42
+    "PENDING_RESULT: no result reported yet": 138
   },
   "schema": "settlement_coverage_v1",
-  "settleable_now": 4411,
+  "settleable_now": 4507,
   "settled": 4250,
-  "settled_share_of_due": 0.9635003400589436,
+  "settled_share_of_due": 0.9429775904149101,
   "unaccounted_settlement_records": 0,
   "unsettleable": 0,
   "unsupported_settlement": 0
