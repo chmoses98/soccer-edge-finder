@@ -37,16 +37,16 @@
       "sha256_prefix": "e982ef5cb4dcde13a2c0a4f8d0d075f9b691809534301f1c127d5241b9b26d4f"
     },
     "dispatch/heartbeats/2026-10-01.jsonl": {
-      "byte_length": 6380,
+      "byte_length": 7576,
       "closed": false,
       "day": "2026-10-01",
       "first_manifested_at": "2026-10-01T00:12:38.110227Z",
       "immutable": false,
-      "line_count": 10,
+      "line_count": 12,
       "record_level": false,
       "record_type": "dispatch_heartbeat",
       "recovery_id": null,
-      "sha256_prefix": "a649fdb8641ca0e7472cd49971513da6257d5a0fd9b8a3649b5497b6cce5ec55"
+      "sha256_prefix": "77a42fba6fd9a09203748b311cbee2a192d4715b133abb3402f7db672fafa908"
     },
     "dispatch/horizons.jsonl": {
       "byte_length": 39461,
@@ -553,52 +553,76 @@
       "sha256_prefix": "25095865f545fc1315fc766fa9ae465107d0bca9c2dfd6be157645e5efc211f3"
     },
     "lineups/2026-10-01/bra.2.jsonl": {
-      "byte_length": 1126,
+      "byte_length": 2252,
       "closed": false,
       "day": "2026-10-01",
       "first_manifested_at": "2026-10-01T06:21:18.014127Z",
+      "immutable": false,
+      "line_count": 4,
+      "record_level": true,
+      "record_type": "lineup",
+      "recovery_id": null,
+      "sha256_prefix": "fa8c6dc0ff58152dc73c8acb40857ef10a65d8cc5a60d27a69c46d864b5d2f09"
+    },
+    "lineups/2026-10-01/col.1.jsonl": {
+      "byte_length": 1124,
+      "closed": false,
+      "day": "2026-10-01",
+      "first_manifested_at": "2026-10-01T06:21:18.014229Z",
       "immutable": false,
       "line_count": 2,
       "record_level": true,
       "record_type": "lineup",
       "recovery_id": null,
-      "sha256_prefix": "c9831a1b193158b30373b1e920bdfbae6269562ff3d6529a8c4bdfb13ad3a798"
-    },
-    "lineups/2026-10-01/col.1.jsonl": {
-      "byte_length": 562,
-      "closed": false,
-      "day": "2026-10-01",
-      "first_manifested_at": "2026-10-01T06:21:18.014229Z",
-      "immutable": false,
-      "line_count": 1,
-      "record_level": true,
-      "record_type": "lineup",
-      "recovery_id": null,
-      "sha256_prefix": "6ad59951d449c6cad8c4998c63a0dd2f3b4ca47ec11b877d535d1b8d08f6bea3"
+      "sha256_prefix": "cb90ed611a4650eb0eb02fa911a99fbd52b953a3d04d4e713ccf179ec105ae3b"
     },
     "lineups/2026-10-01/concacaf.nations.league.jsonl": {
-      "byte_length": 2991,
+      "byte_length": 5982,
       "closed": false,
       "day": "2026-10-01",
       "first_manifested_at": "2026-10-01T06:21:18.014351Z",
       "immutable": false,
-      "line_count": 5,
+      "line_count": 10,
       "record_level": true,
       "record_type": "lineup",
       "recovery_id": null,
-      "sha256_prefix": "cadd147be12ee86ed0340ee10509931a741ed6acdabd76e573a1226359552e77"
+      "sha256_prefix": "366f78b4f5f9bb1229c0c3583e2a67b42a0d20f25ad1993f25ea5ab6d9eac2e6"
     },
-    "lineups/2026-10-01/usa.1.jsonl": {
-      "byte_length": 555,
+    "lineups/2026-10-01/fifa.friendly.jsonl": {
+      "byte_length": 2309,
       "closed": false,
       "day": "2026-10-01",
-      "first_manifested_at": "2026-10-01T06:21:18.014430Z",
+      "first_manifested_at": "2026-10-01T13:43:27.358478Z",
+      "immutable": false,
+      "line_count": 4,
+      "record_level": true,
+      "record_type": "lineup",
+      "recovery_id": null,
+      "sha256_prefix": "fdbfe3682244cc3ccc54d1ae4318aed9aaf2640461923bd2c79bb5cdcc904343"
+    },
+    "lineups/2026-10-01/uefa.nations.jsonl": {
+      "byte_length": 575,
+      "closed": false,
+      "day": "2026-10-01",
+      "first_manifested_at": "2026-10-01T13:43:27.358573Z",
       "immutable": false,
       "line_count": 1,
       "record_level": true,
       "record_type": "lineup",
       "recovery_id": null,
-      "sha256_prefix": "d257d7543f1573b92eb61804b5b68c7300a3fbca339c65436bc3e7af400757ef"
+      "sha256_prefix": "7d9119d445dd2b171ac26079581f7f284583e5dacd8f7cfa7e1448938d38d552"
+    },
+    "lineups/2026-10-01/usa.1.jsonl": {
+      "byte_length": 1110,
+      "closed": false,
+      "day": "2026-10-01",
+      "first_manifested_at": "2026-10-01T06:21:18.014430Z",
+      "immutable": false,
+      "line_count": 2,
+      "record_level": true,
+      "record_type": "lineup",
+      "recovery_id": null,
+      "sha256_prefix": "8e3ba83e80fab1657b98a29bfad6a092e58fe33ee62754e58b56c07c883272ae"
     },
     "lineups/history/eng.1.jsonl": {
       "byte_length": 5849432,
@@ -1885,18 +1909,18 @@
       "sha256_prefix": "5667bab06cf5d0df53d36d1e3074f578f0b7251d40c4e9926d5aaf94e056b1ba"
     },
     "weather/2026-10-01.jsonl": {
-      "byte_length": 15062,
+      "byte_length": 52516,
       "closed": false,
       "day": "2026-10-01",
       "first_manifested_at": "2026-10-01T06:21:18.032049Z",
       "immutable": false,
-      "line_count": 27,
+      "line_count": 95,
       "record_level": true,
       "record_type": "weather",
       "recovery_id": null,
-      "sha256_prefix": "acf6692f4f0d1f8f85d1b01ee1894448a29177ad96157cfd76b59c67ca5b7f63"
+      "sha256_prefix": "b33c152ba913d6761cb2e47ee111fb4fb513389c25552804c91b0efdcc7ad2a1"
     }
   },
   "manifest_version": 1,
-  "updated_at": "2026-10-01T11:13:16.979489Z"
+  "updated_at": "2026-10-01T13:43:27.377014Z"
 }
