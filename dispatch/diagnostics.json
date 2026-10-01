@@ -4,10 +4,10 @@
       "achieved_minutes_median": 124.88,
       "achieved_minutes_p10": 117.49,
       "achieved_minutes_p90": 127.43,
-      "delivered": 7,
-      "delivery_rate": 0.22580645161290322,
+      "delivered": 8,
+      "delivery_rate": 0.25,
       "lateness_minutes_max": 62.51,
-      "lateness_minutes_median": -4.88,
+      "lateness_minutes_median": 1.33,
       "missed": 24
     },
     "15": {
@@ -31,12 +31,12 @@
       "missed": 21
     },
     "5": {
-      "achieved_minutes_median": 4.38,
-      "achieved_minutes_p10": 0.36,
+      "achieved_minutes_median": 2.32,
+      "achieved_minutes_p10": -1.33,
       "achieved_minutes_p90": 4.46,
-      "delivered": 9,
-      "delivery_rate": 0.32142857142857145,
-      "lateness_minutes_max": 6.33,
+      "delivered": 10,
+      "delivery_rate": 0.3448275862068966,
+      "lateness_minutes_max": 7.0,
       "lateness_minutes_median": 0.62,
       "missed": 19
     },
@@ -51,93 +51,13 @@
       "missed": 25
     }
   },
-  "delivered_total": 40,
-  "delivery_rate_total": 0.2684563758389262,
-  "fixtures_tracked": 31,
-  "generated_at": "2026-10-01T15:49:10Z",
-  "last_tick": {
-    "batches": 4,
-    "summary": [
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:empty",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:9"
-        ],
-        "batch_id": "kd-20261001T135012Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:uefa.nations_league:2026-27:nat.aze:nat.lie",
-            120,
-            129.79
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:empty",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:9"
-        ],
-        "batch_id": "kd-20261001T150000Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:uefa.nations_league:2026-27:nat.aze:nat.lie",
-            60,
-            59.99
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:empty",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:9"
-        ],
-        "batch_id": "kd-20261001T153000Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:uefa.nations_league:2026-27:nat.aze:nat.lie",
-            30,
-            29.99
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:empty",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:9"
-        ],
-        "batch_id": "kd-20261001T154500Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:uefa.nations_league:2026-27:nat.aze:nat.lie",
-            15,
-            15.0
-          ]
-        ]
-      }
-    ]
-  },
+  "delivered_total": 42,
+  "delivery_rate_total": 0.2781456953642384,
+  "fixtures_tracked": 32,
+  "generated_at": "2026-10-01T16:01:59Z",
   "missed_total": 109,
-  "n_pending_fixtures": 58,
+  "n_pending_fixtures": 57,
   "pending_fixtures": [
-    {
-      "competition_id": "uefa.nations_league",
-      "fixture_id": "fx:uefa.nations_league:2026-27:nat.aze:nat.lie",
-      "kickoff_utc": "2026-10-01T16:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
     {
       "competition_id": "fifa.friendly",
       "fixture_id": "fx:fifa.friendly:2026:nat.pan:nat.nzl",

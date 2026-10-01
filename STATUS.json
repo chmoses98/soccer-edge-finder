@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-01T15:47:31.766049+00:00",
+  "as_of": "2026-10-01T15:57:39.514828+00:00",
   "events": 18,
   "events_skipped_unmapped": 3,
   "fixtures_mapped": 15,
@@ -52,11 +52,16 @@
     "4390": "Maldives"
   },
   "weather": {
-    "captured": 17,
+    "captured": 14,
     "events": 18,
-    "failures": [],
+    "failures": [
+      "401900594: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Santo%20Domingo&count=5&languag",
+      "401900596: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Estadio%20Nacional%20de%20F\u00fatbo",
+      "401861098: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Thessaloniki&count=5&language=e",
+      "401861095: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Debrecen&count=5&language=en&fo"
+    ],
     "forecast_miss": 0,
-    "geocode_miss": 1,
+    "geocode_miss": 0,
     "no_venue": 0
   }
 }
