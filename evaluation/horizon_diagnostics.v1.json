@@ -3,9 +3,9 @@
     "120": {
       "achieved_minutes_median": 117.33,
       "achieved_minutes_p10": 117.33,
-      "achieved_minutes_p90": 127.43,
-      "delivered": 16,
-      "delivery_rate": 0.4,
+      "achieved_minutes_p90": 127.4,
+      "delivered": 17,
+      "delivery_rate": 0.4146341463414634,
       "lateness_minutes_max": 62.51,
       "lateness_minutes_median": 2.67,
       "missed": 24
@@ -34,8 +34,8 @@
       "achieved_minutes_median": 2.48,
       "achieved_minutes_p10": 0.36,
       "achieved_minutes_p90": 4.46,
-      "delivered": 18,
-      "delivery_rate": 0.4864864864864865,
+      "delivered": 19,
+      "delivery_rate": 0.5,
       "lateness_minutes_max": 7.0,
       "lateness_minutes_median": 2.52,
       "missed": 19
@@ -51,20 +51,13 @@
       "missed": 25
     }
   },
-  "delivered_total": 85,
-  "delivery_rate_total": 0.4381443298969072,
-  "fixtures_tracked": 40,
-  "generated_at": "2026-10-01T18:49:16Z",
+  "delivered_total": 87,
+  "delivery_rate_total": 0.44387755102040816,
+  "fixtures_tracked": 41,
+  "generated_at": "2026-10-01T20:34:30Z",
   "missed_total": 109,
-  "n_pending_fixtures": 54,
+  "n_pending_fixtures": 58,
   "pending_fixtures": [
-    {
-      "competition_id": "concacaf.nations_league",
-      "fixture_id": "fx:concacaf.nations_league:2026-27:nat.vgb:nat.msr",
-      "kickoff_utc": "2026-10-01T19:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
     {
       "competition_id": "concacaf.nations_league",
       "fixture_id": "fx:concacaf.nations_league:2026-27:nat.dma:nat.guy",
@@ -433,6 +426,41 @@
       "competition_id": "fifa.friendly",
       "fixture_id": "fx:fifa.friendly:2026:nat.mar:nat.gha",
       "kickoff_utc": "2026-10-04T18:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "uefa.nations_league",
+      "fixture_id": "fx:uefa.nations_league:2026-27:nat.gre:nat.ger",
+      "kickoff_utc": "2026-10-04T18:45:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "uefa.nations_league",
+      "fixture_id": "fx:uefa.nations_league:2026-27:nat.ned:nat.srb",
+      "kickoff_utc": "2026-10-04T18:45:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "uefa.nations_league",
+      "fixture_id": "fx:uefa.nations_league:2026-27:nat.por:nat.nor",
+      "kickoff_utc": "2026-10-04T18:45:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "uefa.nations_league",
+      "fixture_id": "fx:uefa.nations_league:2026-27:nat.irl:nat.isr",
+      "kickoff_utc": "2026-10-04T18:45:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "uefa.nations_league",
+      "fixture_id": "fx:uefa.nations_league:2026-27:nat.wal:nat.den",
+      "kickoff_utc": "2026-10-04T18:45:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }
