@@ -1,13 +1,13 @@
 {
   "by_horizon": {
     "120": {
-      "achieved_minutes_median": 118.67,
-      "achieved_minutes_p10": 57.49,
+      "achieved_minutes_median": 124.88,
+      "achieved_minutes_p10": 117.49,
       "achieved_minutes_p90": 127.43,
-      "delivered": 6,
-      "delivery_rate": 0.2,
+      "delivered": 7,
+      "delivery_rate": 0.22580645161290322,
       "lateness_minutes_max": 62.51,
-      "lateness_minutes_median": -7.4,
+      "lateness_minutes_median": -4.88,
       "missed": 24
     },
     "15": {
@@ -51,16 +51,12 @@
       "missed": 25
     }
   },
-  "delivered_total": 36,
-  "delivery_rate_total": 0.2482758620689655,
-  "fixtures_tracked": 30,
-  "generated_at": "2026-10-01T10:19:30Z",
-  "last_tick": {
-    "batches": 0,
-    "summary": []
-  },
+  "delivered_total": 37,
+  "delivery_rate_total": 0.2534246575342466,
+  "fixtures_tracked": 31,
+  "generated_at": "2026-10-01T13:55:06Z",
   "missed_total": 109,
-  "n_pending_fixtures": 57,
+  "n_pending_fixtures": 58,
   "pending_fixtures": [
     {
       "competition_id": "uefa.nations_league",
@@ -458,6 +454,13 @@
       "competition_id": "fifa.friendly",
       "fixture_id": "fx:fifa.friendly:2026:nat.usa:nat.mex",
       "kickoff_utc": "2026-10-04T02:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "uefa.nations_league",
+      "fixture_id": "fx:uefa.nations_league:2026-27:nat.aze:nat.ltu",
+      "kickoff_utc": "2026-10-04T13:00:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }
