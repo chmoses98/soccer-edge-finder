@@ -1590,7 +1590,7 @@ def _odds_counts(action: str | None) -> tuple[int, int]:
     return paid, credits
 
 
-def _slate_actions(
+def _slate_actions(  # noqa: PLR0917
     out: Path,
     due,
     batch_id: str,

@@ -469,6 +469,7 @@ def _market(
 
 
 def _model_price(
+    *,
     run_id: str,
     ticker: str,
     rows: dict[str, SlateContractV1],
@@ -529,6 +530,7 @@ def _model_price(
 
 
 def _recommendation(
+    *,
     run_id: str,
     row: SlateContractV1,
     event: dict[str, Any],
@@ -851,7 +853,13 @@ def build_bundle(
         markets[ticker] = market
         model_prices.append(
             _model_price(
-                run_id, ticker, rows, event, slate_fx.get(any_row.fixture_id), board_entry, market
+                run_id=run_id,
+                ticker=ticker,
+                rows=rows,
+                event=event,
+                fx=slate_fx.get(any_row.fixture_id),
+                board_entry=board_entry,
+                market=market,
             )
         )
 
@@ -866,13 +874,13 @@ def build_bundle(
             thesis = theses.get(row.fixture_id)
             recommendations.append(
                 _recommendation(
-                    run_id,
-                    row,
-                    event,
-                    markets[ticker],
-                    slate_fx.get(row.fixture_id),
-                    slate,
-                    thesis["thesis_id"] if thesis else None,
+                    run_id=run_id,
+                    row=row,
+                    event=event,
+                    market=markets[ticker],
+                    fx=slate_fx.get(row.fixture_id),
+                    slate=slate,
+                    thesis_id=thesis["thesis_id"] if thesis else None,
                 )
             )
     if run_output is not None:
