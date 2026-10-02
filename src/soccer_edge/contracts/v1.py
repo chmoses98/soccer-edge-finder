@@ -231,4 +231,11 @@ def export_json_schemas(out_dir: Path) -> list[Path]:
         path = out_dir / f"{model.__name__}.schema.json"
         path.write_text(json.dumps(model.model_json_schema(), indent=2, sort_keys=True) + "\n")
         written.append(path)
+    from soccer_edge.contracts.slate_v1 import ActionableSlateV1
+
+    path = out_dir / "ActionableSlateV1.schema.json"
+    path.write_text(
+        json.dumps(ActionableSlateV1.model_json_schema(), indent=2, sort_keys=True) + "\n"
+    )
+    written.append(path)
     return written

@@ -1,0 +1,1191 @@
+{
+  "$defs": {
+    "InputFreshnessV1": {
+      "additionalProperties": false,
+      "description": "One input's timestamp and freshness. `current_until` / `stale_after` let a reader recompute the state\nat read time (state = CURRENT before current_until, AGING before stale_after, STALE after).",
+      "properties": {
+        "age_minutes_at_publish": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Age Minutes At Publish"
+        },
+        "current_until": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Current Until"
+        },
+        "detail": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Detail"
+        },
+        "observed_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Observed At"
+        },
+        "schema_version": {
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "stale_after": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Stale After"
+        },
+        "status": {
+          "enum": [
+            "CURRENT",
+            "AGING",
+            "STALE",
+            "UNAVAILABLE"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "title": "InputFreshnessV1",
+      "type": "object"
+    },
+    "SlateComputeV1": {
+      "additionalProperties": false,
+      "description": "What producing this slate cost. A reprice-only slate has simulations=0 and odds_api_calls=0.",
+      "properties": {
+        "fixtures_resimulated": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Fixtures Resimulated",
+          "type": "array"
+        },
+        "fixtures_reused_from_cache": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Fixtures Reused From Cache",
+          "type": "array"
+        },
+        "kalshi_capture_runtime_s": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Kalshi Capture Runtime S"
+        },
+        "mode": {
+          "enum": [
+            "reprice_only",
+            "model_refresh_and_reprice"
+          ],
+          "title": "Mode",
+          "type": "string"
+        },
+        "model_refresh_runtime_s": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Model Refresh Runtime S"
+        },
+        "odds_api_calls": {
+          "default": 0,
+          "title": "Odds Api Calls",
+          "type": "integer"
+        },
+        "odds_api_credits": {
+          "default": 0,
+          "title": "Odds Api Credits",
+          "type": "integer"
+        },
+        "reprice_runtime_s": {
+          "title": "Reprice Runtime S",
+          "type": "number"
+        },
+        "schema_version": {
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "simulations_run": {
+          "default": 0,
+          "title": "Simulations Run",
+          "type": "integer"
+        },
+        "trigger": {
+          "title": "Trigger",
+          "type": "string"
+        }
+      },
+      "required": [
+        "mode",
+        "trigger",
+        "reprice_runtime_s"
+      ],
+      "title": "SlateComputeV1",
+      "type": "object"
+    },
+    "SlateContractV1": {
+      "additionalProperties": false,
+      "description": "One contract side. Prices are dollar strings; probabilities floats in [0, 1] for THIS side.",
+      "properties": {
+        "action": {
+          "enum": [
+            "ACTIONABLE",
+            "RESEARCH_CANDIDATE",
+            "NO_EDGE",
+            "STALE_PRICE",
+            "NO_QUOTE",
+            "MODEL_INVALIDATED",
+            "MODEL_STALE",
+            "FEE_UNVERIFIED",
+            "EXCLUDED_BY_GATE"
+          ],
+          "title": "Action",
+          "type": "string"
+        },
+        "action_reasons": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Action Reasons",
+          "type": "array"
+        },
+        "action_valid_until": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "after this instant the price is no longer CURRENT: re-read",
+          "title": "Action Valid Until"
+        },
+        "authority": {
+          "enum": [
+            "RESEARCH_ONLY",
+            "SHADOW",
+            "LIMITED",
+            "TRUSTED"
+          ],
+          "title": "Authority",
+          "type": "string"
+        },
+        "available_size": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Available Size"
+        },
+        "best_expression": {
+          "default": false,
+          "title": "Best Expression",
+          "type": "boolean"
+        },
+        "bet_permitted": {
+          "default": false,
+          "title": "Bet Permitted",
+          "type": "boolean"
+        },
+        "bet_up_to_price": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Bet Up To Price"
+        },
+        "breakeven_price": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "executable price + fee per contract (probability units)",
+          "title": "Breakeven Price"
+        },
+        "competition": {
+          "title": "Competition",
+          "type": "string"
+        },
+        "context_observed_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Context Observed At"
+        },
+        "event_name": {
+          "title": "Event Name",
+          "type": "string"
+        },
+        "event_ticker": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Event Ticker"
+        },
+        "fee_adjusted_ev": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "model probability - break-even (per $1 contract)",
+          "title": "Fee Adjusted Ev"
+        },
+        "fee_per_contract": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Fee Per Contract"
+        },
+        "fixture_id": {
+          "title": "Fixture Id",
+          "type": "string"
+        },
+        "freshness": {
+          "additionalProperties": {
+            "enum": [
+              "CURRENT",
+              "AGING",
+              "STALE",
+              "UNAVAILABLE"
+            ],
+            "type": "string"
+          },
+          "description": "model / kalshi / reference / lineup / context state at publish",
+          "title": "Freshness",
+          "type": "object"
+        },
+        "kalshi_no_ask": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Kalshi No Ask"
+        },
+        "kalshi_no_bid": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Kalshi No Bid"
+        },
+        "kalshi_observed_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Kalshi Observed At"
+        },
+        "kalshi_price": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "executable ask for this side (never a midpoint)",
+          "title": "Kalshi Price"
+        },
+        "kalshi_yes_ask": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Kalshi Yes Ask"
+        },
+        "kalshi_yes_bid": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Kalshi Yes Bid"
+        },
+        "kickoff": {
+          "format": "date-time",
+          "title": "Kickoff",
+          "type": "string"
+        },
+        "lineup_observed_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lineup Observed At"
+        },
+        "lineup_status": {
+          "title": "Lineup Status",
+          "type": "string"
+        },
+        "market_description": {
+          "title": "Market Description",
+          "type": "string"
+        },
+        "market_family": {
+          "title": "Market Family",
+          "type": "string"
+        },
+        "model_family": {
+          "title": "Model Family",
+          "type": "string"
+        },
+        "model_generated_at": {
+          "format": "date-time",
+          "title": "Model Generated At",
+          "type": "string"
+        },
+        "model_posterior_edge_share": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Model Posterior Edge Share"
+        },
+        "model_probability": {
+          "title": "Model Probability",
+          "type": "number"
+        },
+        "model_probability_high": {
+          "title": "Model Probability High",
+          "type": "number"
+        },
+        "model_probability_low": {
+          "title": "Model Probability Low",
+          "type": "number"
+        },
+        "model_version": {
+          "title": "Model Version",
+          "type": "string"
+        },
+        "reference_anchored_ev": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "edge_v2 expected net EV against a CURRENT Pinnacle reference",
+          "title": "Reference Anchored Ev"
+        },
+        "reference_anchored_ev_lower": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reference Anchored Ev Lower"
+        },
+        "reference_freshness": {
+          "default": "UNAVAILABLE",
+          "enum": [
+            "CURRENT",
+            "AGING",
+            "STALE",
+            "UNAVAILABLE"
+          ],
+          "title": "Reference Freshness",
+          "type": "string"
+        },
+        "reference_observed_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reference Observed At"
+        },
+        "reference_probability": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reference Probability"
+        },
+        "reference_quality": {
+          "default": "UNAVAILABLE",
+          "title": "Reference Quality",
+          "type": "string"
+        },
+        "research_status": {
+          "title": "Research Status",
+          "type": "string"
+        },
+        "schema_version": {
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "side": {
+          "enum": [
+            "yes",
+            "no"
+          ],
+          "title": "Side",
+          "type": "string"
+        },
+        "ticker": {
+          "title": "Ticker",
+          "type": "string"
+        },
+        "worst_case_edge": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "q0.20 world probability - break-even (robust edge)",
+          "title": "Worst Case Edge"
+        }
+      },
+      "required": [
+        "fixture_id",
+        "event_name",
+        "competition",
+        "kickoff",
+        "market_family",
+        "market_description",
+        "ticker",
+        "side",
+        "model_probability",
+        "model_probability_low",
+        "model_probability_high",
+        "model_family",
+        "model_version",
+        "model_generated_at",
+        "kalshi_price",
+        "lineup_status",
+        "authority",
+        "research_status",
+        "action",
+        "freshness"
+      ],
+      "title": "SlateContractV1",
+      "type": "object"
+    },
+    "SlateFixtureV1": {
+      "additionalProperties": false,
+      "properties": {
+        "best_expressions": {
+          "description": "'ticker|side'",
+          "items": {
+            "type": "string"
+          },
+          "title": "Best Expressions",
+          "type": "array"
+        },
+        "competition": {
+          "title": "Competition",
+          "type": "string"
+        },
+        "competition_name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Competition Name"
+        },
+        "context": {
+          "$ref": "#/$defs/InputFreshnessV1"
+        },
+        "contracts_priced": {
+          "default": 0,
+          "title": "Contracts Priced",
+          "type": "integer"
+        },
+        "contracts_without_model": {
+          "default": 0,
+          "description": "open Kalshi contracts mapped to this fixture's events that the cached model did not price",
+          "title": "Contracts Without Model",
+          "type": "integer"
+        },
+        "event_name": {
+          "title": "Event Name",
+          "type": "string"
+        },
+        "fixture_id": {
+          "title": "Fixture Id",
+          "type": "string"
+        },
+        "kickoff": {
+          "format": "date-time",
+          "title": "Kickoff",
+          "type": "string"
+        },
+        "lineup": {
+          "$ref": "#/$defs/SlateLineupStateV1"
+        },
+        "minutes_to_kickoff_at_publish": {
+          "title": "Minutes To Kickoff At Publish",
+          "type": "number"
+        },
+        "model": {
+          "$ref": "#/$defs/SlateModelStateV1"
+        },
+        "reference": {
+          "$ref": "#/$defs/SlateReferenceStateV1"
+        },
+        "schema_version": {
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "fixture_id",
+        "event_name",
+        "competition",
+        "kickoff",
+        "minutes_to_kickoff_at_publish",
+        "model",
+        "lineup",
+        "context",
+        "reference"
+      ],
+      "title": "SlateFixtureV1",
+      "type": "object"
+    },
+    "SlateFreshnessPolicyV1": {
+      "additionalProperties": false,
+      "description": "Thresholds in minutes: CURRENT while age <= current_max, AGING while <= aging_max, else STALE.",
+      "properties": {
+        "action_requires": {
+          "description": "inputs that must be CURRENT (model: VALID and not STALE) for any action",
+          "items": {
+            "type": "string"
+          },
+          "title": "Action Requires",
+          "type": "array"
+        },
+        "context_aging_max": {
+          "title": "Context Aging Max",
+          "type": "number"
+        },
+        "context_current_max": {
+          "title": "Context Current Max",
+          "type": "number"
+        },
+        "kalshi_aging_max": {
+          "title": "Kalshi Aging Max",
+          "type": "number"
+        },
+        "kalshi_current_max": {
+          "title": "Kalshi Current Max",
+          "type": "number"
+        },
+        "lineup_aging_max": {
+          "title": "Lineup Aging Max",
+          "type": "number"
+        },
+        "lineup_current_max": {
+          "title": "Lineup Current Max",
+          "type": "number"
+        },
+        "model_aging_max": {
+          "title": "Model Aging Max",
+          "type": "number"
+        },
+        "model_current_max": {
+          "title": "Model Current Max",
+          "type": "number"
+        },
+        "reference_aging_max": {
+          "title": "Reference Aging Max",
+          "type": "number"
+        },
+        "reference_current_max": {
+          "title": "Reference Current Max",
+          "type": "number"
+        },
+        "schema_version": {
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "kalshi_current_max",
+        "kalshi_aging_max",
+        "reference_current_max",
+        "reference_aging_max",
+        "lineup_current_max",
+        "lineup_aging_max",
+        "context_current_max",
+        "context_aging_max",
+        "model_current_max",
+        "model_aging_max",
+        "action_requires"
+      ],
+      "title": "SlateFreshnessPolicyV1",
+      "type": "object"
+    },
+    "SlateLineupStateV1": {
+      "additionalProperties": false,
+      "properties": {
+        "freshness": {
+          "$ref": "#/$defs/InputFreshnessV1"
+        },
+        "last_change_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Last Change At"
+        },
+        "schema_version": {
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "unknown",
+            "unconfirmed",
+            "confirmed",
+            "post_hoc"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "status",
+        "freshness"
+      ],
+      "title": "SlateLineupStateV1",
+      "type": "object"
+    },
+    "SlateModelStateV1": {
+      "additionalProperties": false,
+      "properties": {
+        "engine_version": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Engine Version"
+        },
+        "freshness": {
+          "$ref": "#/$defs/InputFreshnessV1"
+        },
+        "invalidation_reasons": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Invalidation Reasons",
+          "type": "array"
+        },
+        "model_family": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Model Family"
+        },
+        "model_version": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Model Version"
+        },
+        "parameter_hash": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Parameter Hash"
+        },
+        "schema_version": {
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "sim_key": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sim Key"
+        },
+        "source_run_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Run Id"
+        },
+        "validity": {
+          "enum": [
+            "VALID",
+            "INVALIDATED",
+            "MISSING"
+          ],
+          "title": "Validity",
+          "type": "string"
+        },
+        "worlds_version": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Worlds Version"
+        }
+      },
+      "required": [
+        "validity",
+        "freshness"
+      ],
+      "title": "SlateModelStateV1",
+      "type": "object"
+    },
+    "SlateReferenceStateV1": {
+      "additionalProperties": false,
+      "properties": {
+        "bookmaker": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Bookmaker"
+        },
+        "freshness": {
+          "$ref": "#/$defs/InputFreshnessV1"
+        },
+        "quality": {
+          "default": "UNAVAILABLE",
+          "title": "Quality",
+          "type": "string"
+        },
+        "quoted_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "bookmaker's own last update",
+          "title": "Quoted At"
+        },
+        "role": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "entry | close | other (minutes before kickoff)",
+          "title": "Role"
+        },
+        "schema_version": {
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "freshness"
+      ],
+      "title": "SlateReferenceStateV1",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "actionable_until": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "the Kalshi prices stop being CURRENT at this instant",
+      "title": "Actionable Until"
+    },
+    "authority_summary": {
+      "title": "Authority Summary",
+      "type": "string"
+    },
+    "compute": {
+      "$ref": "#/$defs/SlateComputeV1"
+    },
+    "consumer_rule": {
+      "title": "Consumer Rule",
+      "type": "string"
+    },
+    "contract": {
+      "const": "actionable_slate.v1",
+      "default": "actionable_slate.v1",
+      "title": "Contract",
+      "type": "string"
+    },
+    "contracts": {
+      "items": {
+        "$ref": "#/$defs/SlateContractV1"
+      },
+      "title": "Contracts",
+      "type": "array"
+    },
+    "counts": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Counts",
+      "type": "object"
+    },
+    "extra": {
+      "additionalProperties": true,
+      "title": "Extra",
+      "type": "object"
+    },
+    "fixtures": {
+      "items": {
+        "$ref": "#/$defs/SlateFixtureV1"
+      },
+      "title": "Fixtures",
+      "type": "array"
+    },
+    "freshness_policy": {
+      "$ref": "#/$defs/SlateFreshnessPolicyV1"
+    },
+    "generated_at": {
+      "format": "date-time",
+      "title": "Generated At",
+      "type": "string"
+    },
+    "kalshi": {
+      "$ref": "#/$defs/InputFreshnessV1"
+    },
+    "kalshi_discovery_complete": {
+      "default": false,
+      "title": "Kalshi Discovery Complete",
+      "type": "boolean"
+    },
+    "kalshi_discovery_run_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Kalshi Discovery Run Id"
+    },
+    "lookahead_hours": {
+      "title": "Lookahead Hours",
+      "type": "number"
+    },
+    "model_board_generated_at": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Model Board Generated At"
+    },
+    "no_bets": {
+      "default": true,
+      "title": "No Bets",
+      "type": "boolean"
+    },
+    "removed_started": {
+      "description": "fixtures dropped because they kicked off",
+      "items": {
+        "type": "string"
+      },
+      "title": "Removed Started",
+      "type": "array"
+    },
+    "schema_version": {
+      "default": "1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "slate_id": {
+      "title": "Slate Id",
+      "type": "string"
+    },
+    "sport": {
+      "const": "soccer",
+      "default": "soccer",
+      "title": "Sport",
+      "type": "string"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "slate_id",
+    "generated_at",
+    "lookahead_hours",
+    "consumer_rule",
+    "freshness_policy",
+    "kalshi",
+    "authority_summary",
+    "compute"
+  ],
+  "title": "ActionableSlateV1",
+  "type": "object"
+}

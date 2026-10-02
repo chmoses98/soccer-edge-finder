@@ -75,6 +75,7 @@ _RULES: tuple[tuple[str, str, bool, bool], ...] = (
     ("odds_api/budget/*.jsonl", "odds_api_budget", False, False),
     ("dispatch/heartbeats/*.jsonl", "dispatch_heartbeat", False, False),
     ("dispatch/settle_runs.jsonl", "settle_run_log", False, False),
+    ("dispatch/slate_log/*.jsonl", "slate_reprice_log", False, False),
     ("claims/*/*/*.json", "dispatch_claim", False, True),
     ("odds_api/raw/*/*.json.gz", "odds_api_raw", False, True),
 )

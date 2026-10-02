@@ -133,6 +133,9 @@ class RunInputs:
     rest_contexts: dict[str, Any] = field(
         default_factory=dict
     )  # fixture_id -> RestContext (context only)
+    # fixture_id -> slate.observations.LineupObservation (ESPN sheet). A published XI enters the simulation
+    # content key and the model-board fingerprint, so a lineup change invalidates the cached fixture
+    lineup_observations: dict[str, Any] = field(default_factory=dict)
 
 
 @dataclass
@@ -162,6 +165,10 @@ class RunArtifacts:
     fixtures_repriced: list[str]
     prediction_record_ids: list[str]
     diagnostics: dict[str, Any] = field(default_factory=dict)
+    # model board entries (slate/board.py): fixture_id -> cached distribution + pricing-input fingerprint
+    board_entries: dict[str, dict[str, Any]] = field(default_factory=dict)
+    # cache-hit fixtures re-simulated (deterministically) only to rebuild joint draws for the reducer
+    fixtures_resimulated_for_reducer: list[str] = field(default_factory=list)
 
 
 def _simulate_fixture(posterior, ctx: MatchContext, fid: str, cfg: RunConfig, sim_cfg):
@@ -227,6 +234,7 @@ def run(
     fx_index = index_fixtures(inputs.fixtures)
     window_end = as_of + timedelta(hours=cfg.window_hours)
     works: dict[str, ContractWork] = {}
+    board_only: dict[str, list[ContractWork]] = {}
 
     # ---- mechanical dispositions ------------------------------------------------------------
     for tk, m in disc.markets.items():
@@ -328,6 +336,8 @@ def run(
         yq, nq = top_of_book(m, "yes"), top_of_book(m, "no")
         if not yq.is_quote and not nq.is_quote:
             cov.set(tk, Disposition.NO_QUOTE, "no executable quote on either side")
+            # priced for the model board only (a later quote can be repriced without a simulation)
+            board_only.setdefault(fx.fixture_id, []).append(w)
             continue
 
     # ---- simulation / repricing per fixture -----------------------------------------------------
@@ -341,6 +351,8 @@ def run(
     # fixtures repriced from the sim cache: (posterior, context) so draw-level payoffs can be rebuilt on demand
     cached_fixtures: dict[str, tuple[Any, MatchContext]] = {}
     fixture_ctx: dict[str, MatchContext] = {}
+    sim_keys: dict[str, str] = {}
+    fixture_inputs: dict[str, dict[str, Any]] = {}
     sim_cfg = (
         SimConfigV2(draws_per_world=cfg.draws_per_world)
         if cfg.engine_version == ENGINE_V2
@@ -375,28 +387,20 @@ def run(
             continue
         # resolve semantics first (so the cache key covers the exact contract set)
         for w in ws:
-            side_home = None
-            if w.assoc and w.assoc.side_team_id:
-                side_home = w.assoc.side_team_id == fx.home_team_id
-            elif w.spec.side_team_code and w.spec.side_team_code != "DRAW":
-                # fall back: soccer event codes are HOME then AWAY (verified live)
-                tc = w.spec.team_codes or ""
-                code = w.spec.side_team_code
-                if tc.startswith(code) and not tc.endswith(code):
-                    side_home = True
-                elif tc.endswith(code) and not tc.startswith(code):
-                    side_home = False
             try:
-                if w.spec.family is MarketFamily.FIRST_TO_SCORE and base_ctx.requires_winner:
-                    raise UnsupportedSemantics(
-                        f"{w.market.ticker}: first-to-score including extra time is not simulated for knockout legs"
-                    )
-                w.sem = resolve_semantics(w.spec, side_is_home=side_home)
+                w.sem = _resolve_semantics(w, fx, base_ctx)
             except UnsupportedSemantics as exc:
                 cov.set(w.market.ticker, Disposition.UNPRICEABLE, str(exc)[:160])
         ws = [w for w in ws if w.sem is not None]
         if not ws:
             continue
+        extras = []
+        for w in board_only.get(fid, []):
+            try:
+                w.sem = _resolve_semantics(w, fx, base_ctx)
+                extras.append(w)
+            except UnsupportedSemantics:
+                continue
         ctx_json = {
             "fixture": fid,
             "home": fx.home_team_id,
@@ -406,6 +410,11 @@ def run(
             "lineup_state": base_ctx.lineup_state.value,
             "players": [p.player_id for p in (*base_ctx.home_players, *base_ctx.away_players)],
         }
+        lu_obs = inputs.lineup_observations.get(fid)
+        lineup_key = getattr(lu_obs, "key", None) or "none"
+        if lineup_key != "none":
+            # a published XI is a pricing input: a new or revised sheet must not reuse a cached simulation
+            ctx_json["lineup_key"] = lineup_key
         key = sim_key(
             posterior_hash=cm.posterior.param_hash(),
             world_cfg=cfg.world.__dict__,
@@ -413,29 +422,32 @@ def run(
             context=ctx_json,
             seed=cfg.seed,
         )
+        sim_keys[fid] = key
+        fixture_inputs[fid] = {
+            "kickoff_utc": iso_utc(_kickoff(fx)),
+            "neutral_site": bool(base_ctx.neutral_site),
+            "requires_winner": bool(base_ctx.requires_winner),
+            "competition_id": fx.competition_id,
+            "stage": fx.stage,
+            "lineup_key": lineup_key,
+            "model_family": model_family_for(fx.competition_id, cfg.engine_version),
+            "model_version": cm.posterior.version,
+            "parameter_hash": cm.posterior.param_hash(),
+            "engine_version": cfg.engine_version,
+            "worlds_version": cfg.world.version,
+            "n_worlds": cfg.n_worlds,
+            "draws_per_world": cfg.draws_per_world,
+        }
         tickers = [w.market.ticker for w in ws]
         cached = sim_cache.load(fid) if sim_cache else None
         if cached and cached.sim_key == key and cached.has(tickers):
             repriced.append(fid)
             cached_fixtures[fid] = (cm.posterior, base_ctx)
             fixture_summaries[fid] = cached.summary
-            for w in ws:
-                c = cached.contracts[w.market.ticker]
-                w.priced = PricedProbability(
-                    w.market.ticker,
-                    c["fair_probability_mean"],
-                    c["fair_probability_median"],
-                    c["fair_probability_low"],
-                    c["fair_probability_high"],
-                    c["interval_level"],
-                    c["parameter_sd"],
-                    c["mc_standard_error"],
-                    c["n_worlds"],
-                    c["n_draws"],
-                    c["effective_draws"],
-                    expand_world_probs(c),
-                    c["description"],
-                )
+            for w in [*ws, *extras]:
+                c = cached.contracts.get(w.market.ticker)
+                if c is not None:
+                    w.priced = _priced_from_cache(w.market.ticker, c)
             continue
         worlds, out = _simulate_fixture(cm.posterior, base_ctx, fid, cfg, sim_cfg)
         simulated.append(fid)
@@ -450,6 +462,11 @@ def run(
                 priced_pairs.append((w.sem, w.priced))  # type: ignore[arg-type]
             except UnsupportedSemantics as exc:
                 cov.set(w.market.ticker, Disposition.UNPRICEABLE, str(exc)[:160])
+        for w in extras:
+            try:
+                w.priced = _price_contract(w, worlds, out, cfg)
+            except UnsupportedSemantics:
+                w.priced = None
         problems = coherence_audit(priced_pairs)
         if problems:
             for w in ws:
@@ -468,7 +485,11 @@ def run(
                     fid,
                     out.outcome_hash(),
                     summ,
-                    {w.market.ticker: compact(w.priced) for w in ws if w.priced is not None},
+                    {
+                        w.market.ticker: compact(w.priced)
+                        for w in [*ws, *extras]
+                        if w.priced is not None
+                    },
                 )
             )
 
@@ -484,6 +505,7 @@ def run(
             )
     candidates: list[Candidate] = []
     per_contract: list[dict[str, Any]] = []
+    reducer_resimulated: list[str] = []
     gate_excluded: dict[str, str] = {}
     for tk, w in works.items():
         if w.priced is None or tk in cov.dispositions:
@@ -532,6 +554,7 @@ def run(
                 fid_c = w.fixture.fixture_id
                 post_c, ctx_c = cached_fixtures.pop(fid_c)
                 _, out_c = _simulate_fixture(post_c, ctx_c, fid_c, cfg, sim_cfg)
+                reducer_resimulated.append(fid_c)
                 for w2 in by_fx.get(fid_c, []):
                     if w2.sem is not None:
                         w2.indicator = w2.sem.settle(out_c)
@@ -732,7 +755,121 @@ def run(
 
     md = render_markdown(output, reduced, fixture_summaries)
     diagnostics = build_coverage_diagnostics(works, cov, as_of, discovery_run_id=disc.run_id)
-    return RunArtifacts(output, md, cov, per_contract, simulated, repriced, record_ids, diagnostics)
+    board = _board_entries(
+        works, board_only, cov, fixture_inputs, sim_keys, fixture_summaries, inputs, run_id, as_of
+    )
+    return RunArtifacts(
+        output,
+        md,
+        cov,
+        per_contract,
+        simulated,
+        repriced,
+        record_ids,
+        diagnostics,
+        board,
+        reducer_resimulated,
+    )
+
+
+def _resolve_semantics(w: ContractWork, fx: Fixture, base_ctx: MatchContext) -> Semantics:
+    side_home = None
+    if w.assoc and w.assoc.side_team_id:
+        side_home = w.assoc.side_team_id == fx.home_team_id
+    elif w.spec.side_team_code and w.spec.side_team_code != "DRAW":
+        # fall back: soccer event codes are HOME then AWAY (verified live)
+        tc = w.spec.team_codes or ""
+        code = w.spec.side_team_code
+        if tc.startswith(code) and not tc.endswith(code):
+            side_home = True
+        elif tc.endswith(code) and not tc.startswith(code):
+            side_home = False
+    if w.spec.family is MarketFamily.FIRST_TO_SCORE and base_ctx.requires_winner:
+        raise UnsupportedSemantics(
+            f"{w.market.ticker}: first-to-score including extra time is not simulated for knockout legs"
+        )
+    return resolve_semantics(w.spec, side_is_home=side_home)
+
+
+def _priced_from_cache(ticker: str, c: dict[str, Any]) -> PricedProbability:
+    return PricedProbability(
+        ticker,
+        c["fair_probability_mean"],
+        c["fair_probability_median"],
+        c["fair_probability_low"],
+        c["fair_probability_high"],
+        c["interval_level"],
+        c["parameter_sd"],
+        c["mc_standard_error"],
+        c["n_worlds"],
+        c["n_draws"],
+        c["effective_draws"],
+        expand_world_probs(c),
+        c["description"],
+    )
+
+
+def _board_entries(  # noqa: PLR0917
+    works: dict[str, ContractWork],
+    board_only: dict[str, list[ContractWork]],
+    cov: CoverageLedger,
+    fixture_inputs: dict[str, dict[str, Any]],
+    sim_keys: dict[str, str],
+    summaries: dict[str, dict[str, Any]],
+    inputs: RunInputs,
+    run_id: str,
+    as_of: datetime,
+) -> dict[str, dict[str, Any]]:
+    """Model-board entries (slate/board.py) for every fixture with priced contracts: the PRICED contracts
+    plus the board-only no-quote contracts priced from the same draws. Coherence failures stay out."""
+    from soccer_edge.slate.board import contract_entry, fixture_entry
+
+    by_fx: dict[str, list[ContractWork]] = {}
+    for tk, w in works.items():
+        disp = cov.dispositions.get(tk, (None,))[0]
+        if w.priced is not None and w.fixture is not None and disp is Disposition.PRICED:
+            by_fx.setdefault(w.fixture.fixture_id, []).append(w)
+    for fid, ws in board_only.items():
+        if fid in by_fx:
+            by_fx[fid].extend(w for w in ws if w.priced is not None)
+    out: dict[str, dict[str, Any]] = {}
+    for fid, ws in by_fx.items():
+        fx = ws[0].fixture
+        assert fx is not None
+        if fid not in fixture_inputs:
+            continue
+        cm = inputs.models[fx.competition_id]
+        comp = inputs.registry.competitions.get(fx.competition_id)
+        lu = inputs.lineup_observations.get(fid)
+        out[fid] = fixture_entry(
+            fixture_id=fid,
+            event_name=_event_name(fx, inputs.registry),
+            competition_id=fx.competition_id,
+            competition_name=comp.name if comp else None,
+            home=fx.home_team_id,
+            away=fx.away_team_id,
+            inputs=fixture_inputs[fid],
+            model_generated_at=as_of,
+            model_fitted_at=cm.fitted_at,
+            results_observed_at=inputs.results_observed_at,
+            fixtures_observed_at=inputs.fixtures_observed_at,
+            source_run_id=run_id,
+            sim_key=sim_keys[fid],
+            lineup=lu.to_json() if hasattr(lu, "to_json") else None,
+            summary=summaries.get(fid, {}),
+            contracts={
+                w.market.ticker: contract_entry(
+                    w.priced,  # type: ignore[arg-type]
+                    family=w.spec.family.value,
+                    event_ticker=w.market.event_ticker,
+                    side=w.sem.side if w.sem else None,
+                    line=w.sem.line if w.sem else None,
+                    period=w.sem.period.value if w.sem else None,
+                )
+                for w in ws
+            },
+        )
+    return out
 
 
 def _side_ref(p_yes: float | None, side: str) -> float | None:

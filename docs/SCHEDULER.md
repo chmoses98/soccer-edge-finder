@@ -173,6 +173,15 @@ fixtures). It would call the same dispatch endpoint with a fine-grained token li
 (*Actions: Read and write*), which cannot read code or secrets. Paid API exposure stays bounded by §7–§8,
 whatever it sends. It needs owner approval and is **not** enabled.
 
+## 11b. Live slate cadence (2026-10-02, docs/ACTIONABLE_SLATE.md)
+
+Every batch now ends with a reprice of the cached model board on the batch's own Kalshi sweep. The model
+runs selectively (`--model-refresh selective`): at T-60 for the due fixture(s), at T-15 only when an input
+changed or T-60 was missed, at any horizon when a cached fixture is invalidated or missing. Between
+horizons a link that has a fixture within 12 h runs a free Kalshi capture + reprice every 15 min
+(`--slate-refresh-minutes 15`). None of this adds a paid call: the Odds API action keeps its own purpose
+windows, claims and durable caps. The simulation cache persists across links (`actions/cache`, `simcache/`).
+
 ## 12. Owner action
 
 **None.** No token, no external scheduler. Manual backstop: Actions → kickoff-dispatch → *Run workflow*.

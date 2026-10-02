@@ -16,9 +16,9 @@ on:
         description: "comma-separated competition ids (optional)"
         required: false
       fast:
-        description: "intraday run: sweep only series with markets at the last exhaustive discovery (reconciled)"
+        description: "intraday run: sweep only series with markets at the last exhaustive discovery (reconciled). Manual runs default to fast; the schedule stays exhaustive. For a current slate prefer REFRESH SOCCER SLATE."
         type: boolean
-        default: false
+        default: true
   schedule:
     - cron: "11 7,11,15,18 * * *"
 
@@ -59,13 +59,13 @@ jobs:
       - name: Persist simulation cache across runs (keys are content hashes of every pricing input)
         uses: actions/cache@v4
         with:
-          path: work/simcache
+          path: simcache  # same path as kickoff-dispatch / refresh-soccer-slate so the cache is shared
           key: simcache-${{ github.run_id }}
           restore-keys: |
             simcache-
       - name: Restore ledger index + sim cache from archive
         run: |
-          mkdir -p work/ledger work/simcache
+          mkdir -p work/ledger simcache
           if git ls-remote --exit-code --heads origin data-archive >/dev/null 2>&1; then
             git fetch --quiet --depth 1 origin data-archive
             git show origin/data-archive:predictions/index.json > work/ledger/index.json 2>/dev/null || echo "{}" > work/ledger/index.json
@@ -81,7 +81,9 @@ jobs:
             # ESPN-fed fixtures/results (Americas leagues + international pools), read-only
             git clone --quiet --depth 1 --branch data-archive "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" espn_archive 2>/dev/null || true
           fi
-          ARGS="--window ${{ inputs.window_hours || '48' }} --out-dir work/out --archive-dir work/ledger --sim-cache work/simcache --reference-dir work/reference"
+          ARGS="--window ${{ inputs.window_hours || '48' }} --out-dir work/out --archive-dir work/ledger --sim-cache simcache --reference-dir work/reference"
+          # live slate (docs/ACTIONABLE_SLATE.md): merge this run's fixtures into the model board, reprice on its sweep
+          ARGS="$ARGS --board-out work/slate/runs/latest.model_board.v1.json --slate-out-dir work/slate --slate-trigger run_soccer"
           [ -d espn_archive/results/espn ] && ARGS="$ARGS --espn-dir espn_archive"
           [ -n "${{ inputs.date }}" ] && ARGS="$ARGS --date ${{ inputs.date }}"
           [ "${{ inputs.fast }}" = "true" ] && ARGS="$ARGS --fast"
@@ -107,6 +109,7 @@ jobs:
             [ -f "work/out/$f" ] && cp "work/out/$f" pub/runs/$DAY/$RUN_ID/ || true
           done
           cp -f work/out/run_output.v1.json pub/runs/latest.run_output.v1.json   # pointer read by the dispatcher
+          [ -d work/slate ] && cp -R work/slate/. pub/ || true   # model board + actionable slate + reprice log
           # only the day files written this run + the index; index is rebuildable from day files
           find work/ledger -name 'predictions.jsonl' -newer work/run.log -o -name 'predictions.jsonl' | while read f; do d=$(basename $(dirname "$f")); mkdir -p pub/predictions/$d; cat "$f" >> pub/predictions/$d/predictions.jsonl; done
           cp -f work/ledger/index.json pub/predictions/index.json 2>/dev/null || true

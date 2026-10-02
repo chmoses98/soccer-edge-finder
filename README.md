@@ -24,6 +24,8 @@ soccer run --synthetic-kalshi --window 340 --no-freshness-gate   # offline demo 
 soccer discover --out data/catalog/latest_catalog.json  # exhaustive Kalshi soccer discovery only
 soccer capture --out-dir data/snapshots                 # discovery + change-suppressed quote snapshots
 soccer export-schemas                                   # app-contract JSON Schemas -> docs/schemas
+soccer slate reprice --catalog <capture>/latest_catalog.json --root <data-archive> --out-dir out  # reprice only (no model, no network)
+soccer slate refresh --archive-dir <data-archive> --out-dir out   # REFRESH SOCCER SLATE (capture -> lineups -> fast model -> reprice)
 soccer archive verify --archive-dir <data-archive tree>  # evidence integrity; non-zero on corruption
 ```
 
@@ -41,6 +43,7 @@ Only public Kalshi endpoints are used. No credentials are required for anything 
 | Pricing, fees, robust edge, expression | `docs/MARKET_PRICING.md`, `docs/MARKET_EXPRESSION.md` |
 | Evaluation and authority | `docs/CALIBRATION.md`, `docs/RESEARCH_AUTHORITY.md` |
 | Operator command | `docs/RUN_SOCCER.md` |
+| **Live actionable slate** (what ChatGPT reads: `runs/latest.actionable_slate.v1.json`; REFRESH SOCCER SLATE) | `docs/ACTIONABLE_SLATE.md` |
 | App contract (versioned JSON) | `docs/APP_CONTRACT.md`, `docs/schemas/` |
 | Archive integrity (manifest, verify, recovery) | `docs/ARCHIVE_INTEGRITY.md` |
 | Scheduler (fixture-aware bounded chain, runaway protection, heartbeats, settlement dispatch) | `docs/SCHEDULER.md` |
@@ -66,6 +69,7 @@ src/soccer_edge/
   families/    DATA_ONLY / MARKET_ONLY / HYBRID definitions, de-vig, logit blend
   contracts/   versioned app schemas (RecommendationV1, EventV1, ...)
   run/         RUN SOCCER pipeline, freshness gates, simulation cache, rendering
+  slate/       live slate: model board (cached distributions), reprice, invalidation, selective refresh
 data/          registry (committed), catalog index (committed, compact), everything else archived
 docs/          architecture, audits, contracts, handoff
 research/      walk-forward evaluation scripts and frozen results
