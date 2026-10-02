@@ -14,28 +14,28 @@
       "achieved_minutes_median": 12.39,
       "achieved_minutes_p10": 10.48,
       "achieved_minutes_p90": 14.43,
-      "delivered": 23,
-      "delivery_rate": 0.5227272727272727,
+      "delivered": 25,
+      "delivery_rate": 0.5434782608695652,
       "lateness_minutes_max": 14.64,
       "lateness_minutes_median": 2.61,
       "missed": 21
     },
     "30": {
-      "achieved_minutes_median": 27.33,
+      "achieved_minutes_median": 27.37,
       "achieved_minutes_p10": 25.0,
       "achieved_minutes_p90": 30.38,
-      "delivered": 22,
-      "delivery_rate": 0.5,
+      "delivered": 24,
+      "delivery_rate": 0.5217391304347826,
       "lateness_minutes_max": 16.98,
-      "lateness_minutes_median": 2.63,
+      "lateness_minutes_median": 2.67,
       "missed": 22
     },
     "5": {
       "achieved_minutes_median": 2.48,
       "achieved_minutes_p10": 0.36,
       "achieved_minutes_p90": 4.46,
-      "delivered": 23,
-      "delivery_rate": 0.5348837209302325,
+      "delivered": 25,
+      "delivery_rate": 0.5555555555555556,
       "lateness_minutes_max": 7.0,
       "lateness_minutes_median": 2.52,
       "missed": 20
@@ -44,34 +44,20 @@
       "achieved_minutes_median": 57.43,
       "achieved_minutes_p10": 48.36,
       "achieved_minutes_p90": 62.43,
-      "delivered": 18,
-      "delivery_rate": 0.4090909090909091,
+      "delivered": 20,
+      "delivery_rate": 0.43478260869565216,
       "lateness_minutes_max": 25.07,
       "lateness_minutes_median": 2.57,
       "missed": 26
     }
   },
-  "delivered_total": 108,
-  "delivery_rate_total": 0.4864864864864865,
+  "delivered_total": 116,
+  "delivery_rate_total": 0.5043478260869565,
   "fixtures_tracked": 47,
-  "generated_at": "2026-10-02T00:13:15Z",
+  "generated_at": "2026-10-02T02:50:41Z",
   "missed_total": 114,
-  "n_pending_fixtures": 59,
+  "n_pending_fixtures": 60,
   "pending_fixtures": [
-    {
-      "competition_id": "usa.mls",
-      "fixture_id": "fx:usa.mls:2026:usa.seattle_sounders:usa.sporting_kc",
-      "kickoff_utc": "2026-10-02T01:30:00Z",
-      "markets_discovered": 80,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "concacaf.nations_league",
-      "fixture_id": "fx:concacaf.nations_league:2026-27:nat.nca:nat.crc",
-      "kickoff_utc": "2026-10-02T02:00:00Z",
-      "markets_discovered": 23,
-      "source": "run_output"
-    },
     {
       "competition_id": "fifa.friendly",
       "fixture_id": "fx:fifa.friendly:2026:nat.kor:nat.ven",
@@ -468,6 +454,27 @@
       "competition_id": "concacaf.nations_league",
       "fixture_id": "fx:concacaf.nations_league:2026-27:nat.aru:nat.aia",
       "kickoff_utc": "2026-10-04T23:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "concacaf.nations_league",
+      "fixture_id": "fx:concacaf.nations_league:2026-27:nat.crc:nat.hai",
+      "kickoff_utc": "2026-10-05T00:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "arg.primera",
+      "fixture_id": "fx:arg.primera:2026:arg.estudiantes_rio_cuarto:arg.racing",
+      "kickoff_utc": "2026-10-05T00:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "concacaf.nations_league",
+      "fixture_id": "fx:concacaf.nations_league:2026-27:nat.nca:nat.dom",
+      "kickoff_utc": "2026-10-05T02:00:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }

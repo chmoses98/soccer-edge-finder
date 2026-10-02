@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-02T00:13:15.332147Z",
+  "as_of": "2026-10-02T02:50:41.173848Z",
   "by_competition": {
     "bra.2": {
       "fixtures": 4,
@@ -8,13 +8,13 @@
       "with_xi_ge_20min": 0
     },
     "col.1": {
-      "fixtures": 4,
+      "fixtures": 5,
       "median_lead_minutes": null,
       "with_pre_kickoff_xi": 0,
       "with_xi_ge_20min": 0
     },
     "concacaf.nations.league": {
-      "fixtures": 20,
+      "fixtures": 21,
       "median_lead_minutes": 26.249150616666665,
       "with_pre_kickoff_xi": 10,
       "with_xi_ge_20min": 9
@@ -68,7 +68,7 @@
       "with_xi_ge_20min": 0
     },
     "usa.1": {
-      "fixtures": 1,
+      "fixtures": 2,
       "median_lead_minutes": 30.38688805,
       "with_pre_kickoff_xi": 1,
       "with_xi_ge_20min": 1
@@ -1083,7 +1083,7 @@
       "competition": "col.1",
       "espn_event_id": "401877909",
       "final_state": "unconfirmed",
-      "kickoff_passed": false,
+      "kickoff_passed": true,
       "lead_time_seconds": null,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-10-02T01:00:00+00:00",
@@ -1371,7 +1371,7 @@
       "competition": "usa.1",
       "espn_event_id": "761798",
       "final_state": "unconfirmed",
-      "kickoff_passed": false,
+      "kickoff_passed": true,
       "lead_time_seconds": null,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-10-02T01:30:00+00:00",
@@ -1515,7 +1515,7 @@
       "competition": "concacaf.nations.league",
       "espn_event_id": "401900596",
       "final_state": "unconfirmed",
-      "kickoff_passed": false,
+      "kickoff_passed": true,
       "lead_time_seconds": null,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-10-02T02:00:00+00:00",
@@ -1547,7 +1547,7 @@
       "xi_first_observed_at": null
     },
     {
-      "capture_attempts": 1,
+      "capture_attempts": 2,
       "competition": "concacaf.nations.league",
       "espn_event_id": "401900603",
       "final_state": "unconfirmed",
@@ -1559,7 +1559,7 @@
       "xi_first_observed_at": null
     },
     {
-      "capture_attempts": 1,
+      "capture_attempts": 2,
       "competition": "concacaf.nations.league",
       "espn_event_id": "401900592",
       "final_state": "unconfirmed",
@@ -1571,7 +1571,7 @@
       "xi_first_observed_at": null
     },
     {
-      "capture_attempts": 1,
+      "capture_attempts": 2,
       "competition": "concacaf.nations.league",
       "espn_event_id": "401900590",
       "final_state": "unconfirmed",
@@ -1583,7 +1583,7 @@
       "xi_first_observed_at": null
     },
     {
-      "capture_attempts": 1,
+      "capture_attempts": 2,
       "competition": "concacaf.nations.league",
       "espn_event_id": "401900604",
       "final_state": "unconfirmed",
@@ -1655,7 +1655,7 @@
       "xi_first_observed_at": null
     },
     {
-      "capture_attempts": 1,
+      "capture_attempts": 2,
       "competition": "fifa.friendly",
       "espn_event_id": "401913267",
       "final_state": "unconfirmed",
@@ -1797,10 +1797,22 @@
       "scheduled_kickoff_utc": "2026-10-03T00:00:00+00:00",
       "source": "espn_site_api",
       "xi_first_observed_at": null
+    },
+    {
+      "capture_attempts": 1,
+      "competition": "concacaf.nations.league",
+      "espn_event_id": "401900602",
+      "final_state": "unconfirmed",
+      "kickoff_passed": false,
+      "lead_time_seconds": null,
+      "observed_before_kickoff": false,
+      "scheduled_kickoff_utc": "2026-10-03T02:00:00+00:00",
+      "source": "espn_site_api",
+      "xi_first_observed_at": null
     }
   ],
-  "fixtures_kickoff_passed": 107,
-  "fixtures_tracked": 143,
+  "fixtures_kickoff_passed": 110,
+  "fixtures_tracked": 144,
   "lead_time_minutes": {
     "max": 57.59638495,
     "median": 27.44865271666667,
@@ -1811,8 +1823,8 @@
   },
   "post_kickoff_first_xi": 43,
   "schema": "lineup_lead_time_v1",
-  "share_pre_kickoff_xi": 0.2616822429906542,
-  "share_xi_ge_20min": 0.18691588785046728,
+  "share_pre_kickoff_xi": 0.2545454545454545,
+  "share_xi_ge_20min": 0.18181818181818182,
   "target": "audit \u00a7I1: >= 90% of priced fixtures with a confirmed XI captured >= 20 min before kickoff",
   "with_any_xi": 71,
   "with_pre_kickoff_xi": 28,

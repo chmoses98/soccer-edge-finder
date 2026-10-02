@@ -1,10 +1,10 @@
 {
  "counts": {
-  "PINNACLE_QUOTED_NOTHING": 2,
-  "PINNACLE_VALID_CLOSE": 1,
   "DISPATCHER_CLOSE_NO_ATTEMPT": 16,
   "MISSED_DISPATCHER_CLOSE": 20,
-  "NO_SPORT_KEY": 5
+  "NO_SPORT_KEY": 6,
+  "PINNACLE_VALID_CLOSE": 2,
+  "PINNACLE_QUOTED_NOTHING": 2
  },
  "fixtures": {
   "fx:concacaf.nations_league:2026-27:nat.aia:nat.aru": {
@@ -66,6 +66,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:concacaf.nations_league:2026-27:nat.nca:nat.crc": {
+   "state": "NO_SPORT_KEY",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261002T014500Z"
   },
   "fx:concacaf.nations_league:2026-27:nat.skn:nat.grn": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -226,6 +231,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20260930T231305Z"
+  },
+  "fx:usa.mls:2026:usa.seattle_sounders:usa.sporting_kc": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261002T011500Z"
   }
  }
 }
