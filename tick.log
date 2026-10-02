@@ -1632,3 +1632,110 @@ unmapped teams: 6 | proposals: {'fifa.friendly': 0}
 [timings] {"assemble_fit_s": 3.46, "discovery_s": 0.01, "simulate_price_archive_s": 0.82, "total_s": 4.48, "mode": "fast+prefetched_sweep"}
 [board] 1 fixtures written by this run; 30 on the board -> work/runs/latest.model_board.v1.json
 [slate] {"slate_id": "slate-20261002T195715Z-e72261", "mode": "model_refresh_and_reprice", "fixtures": 29, "contract_sides": 1906, "simulations_run": 1, "odds_api_calls": 0, "reprice_runtime_s": 0.59, "price_changes_vs_previous": 49}
+# RUN SOCCER — 2026-10-02
+Run `run-20261002T195714Z-6ec424` generated 2026-10-02T19:57:15.481725Z · filters: {'leagues': [], 'games': ['fx:concacaf.nations_league:2026-27:nat.skn:nat.cub'], 'window_hours': 3, 'confirmed_lineups_only': False}
+
+## Coverage
+- contracts discovered: **6974** (discovery complete: True)
+- contracts evaluated: 23 · excluded mechanically: 3858 · unsupported/unknown: 3093
+- **unaccounted contracts: 0**
+- by disposition: priced=23, unknown_family=3, unsupported_family=3090, unmapped_event=1047, unmapped_team=297, no_fixture=167, filtered_by_operator=2347
+- competitions discovered: APFDDH, ARGNACB, ARGPREMDIV, BELGIANPL, BRASILEIRO, BRASILEIROB, BRASILEIROC, BUNDESLIGA, CANPL, CHLLDP, CHNL1, CHNSL, CONCACAFGC, CONCACAFNL, CONMEBOLLIB, CONMEBOLSUD, COPAAMERICA, COPADELREY, COPADOBRASIL, DENSUPERLIGA, DFBPOKAL, DIMAYOR, ECULP, EFL, EFLCHAMPIONSHIP, EFLL1, EKSTRAKLASA, ENGNL, EPL, EREDIVISIE, FA, FIFAW, INTLFRIENDLY, KLEAGUE, KNVB, LALIGA, LALIGA2, LIGAEXP, LIGAMX, LIGAPORTUGAL, LIGUE1, MLS, MLSEAST, MLSWEST, NWSL, PERLIGA1, PREMIERLEAGUE, SERIEA, SOCCER, SUPERLIG, SVK2L, TACAPORT, THAIL1, UCL, UCLLEAGUE, UECL, UEFAEURO, UEFANL, UEFANLGROUP, UEL, URYPD, USL, USLCUP, VENFUTVE, WC, WCW
+
+## Freshness
+- as_of: 2026-10-02T19:57:14.737487Z; market_observed_at: 2026-10-02T19:54:34.887232Z; fixtures_observed_at: 2026-10-02T19:23:15.709744Z; results_observed_at: 2026-10-02T14:56:55.234743Z; model_fitted_at: 2026-10-02T19:57:13.211396Z; temporal_guard: {'decision_time': '2026-10-02T19:57:14.737487Z', 'checked': {'fixtures': 1, 'market_snapshots': 2, 'reference_odds': 1, 'results': 15}, 'latest_observed_at': {'fixtures': '2026-10-02T19:23:15.709744Z', 'market_snapshots': '2026-10-02T19:57:03.719159Z', 'reference_odds': '2026-10-02T14:56:58.637034Z', 'results': '2026-10-02T19:57:14.529376Z'}, 'violations': [], 'ok': True}
+- no freshness violations
+
+## Recommendations
+**NO BETS** — no contract met the robust-edge bar under an authority level that permits recommendations.
+
+## Shadow / research-only expressions (0)
+These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW. They are NOT recommendations.
+
+## Events
+- St. Kitts and Nevis vs Cuba (CONCACAF Nations League) 2026-10-02T21:00:00Z · markets 23/23 evaluated · lineups unknown · xG 1.02-1.27 · 1X2 30%/29%/41%
+
+{
+  "outputs": {
+    "json": "work/runs/_pending/run_output.v1.json",
+    "md": "work/runs/_pending/RUN_SOCCER.md",
+    "contracts": "work/runs/_pending/priced_contracts.json",
+    "coverage": "work/runs/_pending/coverage.json",
+    "diagnostics": "work/runs/_pending/coverage_diagnostics.json"
+  },
+  "simulated": [
+    "fx:concacaf.nations_league:2026-27:nat.skn:nat.cub"
+  ],
+  "repriced": [],
+  "archived_records": 23
+}
+[dispatch] holding 11.9 min (next window opens in 7.4 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261002T201204Z",
+  "complete": true,
+  "discovered": 6974,
+  "written": 2117,
+  "path": "work/snapshots/2026-10-02/cap-20261002T201204Z.jsonl"
+}
+{
+  "reference_probabilities": 0,
+  "observed_at": "2026-10-02 14:56:58.637034+00:00",
+  "groups": 0,
+  "unmapped_fixture_groups": 0,
+  "incomplete_groups": 0,
+  "snapshots": 0,
+  "provider_notes": [
+    "46 rows, 46 skipped (unmapped division/team)",
+    "skipped_by_division={'E2': 3, 'E3': 8, 'EC': 11, 'SC1': 3, 'SC2': 5, 'SC3': 5, 'SP2': 11}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-02T20:12:07.869515Z", "batch_id": "kd-20261002T200934Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-10-02T20:12:07.901316+00:00",
+ "leagues": [
+  "arg.1"
+ ],
+ "events": 3,
+ "fixtures_mapped": 3,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 3,
+  "captured": 3,
+  "unchanged": 0,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 3,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 3,
+  "captured": 3,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": []
+ },
+ "map_version": "4"
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261002T201212Z-67850a", "mode": "reprice_only", "fixtures": 29, "contract_sides": 1906, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.588, "price_changes_vs_previous": 143}
+[dispatch] holding 8.0 min (next window opens in 14.4 min)
+{
+ "batches": 18,
+ "horizons_delivered": 52,
+ "missed_states": {},
+ "paid_calls": 4,
+ "credits_spent": 12,
+ "end_reason": "link_time_limit",
+ "chain_continue": true,
+ "delivered_total": 180,
+ "missed_total": 114,
+ "delivery_rate_total": 0.6122448979591837
+}
