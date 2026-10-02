@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261002T155737Z-484663` · generated 2026-10-02T15:57:37.089243Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
+slate `slate-20261002T161231Z-0b8c58` · generated 2026-10-02T16:12:31.735025Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-02T15:55:01.723496Z (CURRENT at publish; CURRENT until 2026-10-02T16:15:01.723496Z, STALE after 2026-10-02T16:25:01.723496Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-02T16:10:01.725974Z (CURRENT at publish; CURRENT until 2026-10-02T16:30:01.725974Z, STALE after 2026-10-02T16:40:01.725974Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-02T15:29:59.395508Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.84s
+model board generated 2026-10-02T15:29:59.395508Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.79s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,8 +12,6 @@ model board generated 2026-10-02T15:29:59.395508Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-02T16:00:00Z | Cyprus vs Armenia (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-10-02T16:00:00Z | Latvia vs Montenegro (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-10-02T18:45:00Z | Belgium vs Türkiye (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-10-02T18:45:00Z | Bosnia and Herzegovina vs Sweden (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-10-02T18:45:00Z | France vs Italy (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
@@ -59,14 +57,16 @@ model board generated 2026-10-02T15:29:59.395508Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 109
-action_NO_EDGE: 2268
-action_NO_QUOTE: 488
+action_EXCLUDED_BY_GATE: 114
+action_NO_EDGE: 2052
+action_NO_QUOTE: 455
 action_RESEARCH_CANDIDATE: 1
-contract_sides: 2866
-fixtures: 37
+contract_sides: 2622
+fixtures: 35
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
+
+Removed (kicked off): 2
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
