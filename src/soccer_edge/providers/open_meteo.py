@@ -10,6 +10,8 @@ issue time (=captured_at), so later research can compare forecast horizons. Noth
 from __future__ import annotations
 
 import json
+import time
+from collections.abc import Callable
 from dataclasses import dataclass
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -133,24 +135,48 @@ def capture_weather(
     as_of: datetime | None = None,
     horizon_hours: float = 72.0,
     max_events: int = 200,
+    time_budget_s: float | None = None,
+    max_consecutive_failures: int | None = None,
+    clock: Callable[[], float] = time.monotonic,
 ) -> dict[str, Any]:
     """events: EspnEvent-like objects with kickoff_utc, venue, venue_city, venue_country, espn_event_id, league.
-    Appends one row per (event, capture) to weather/<date>.jsonl; every capture is kept (forecasts change)."""
+    Appends one row per (event, capture) to weather/<date>.jsonl; every capture is kept (forecasts change).
+
+    Weather is context only, so it is BOUNDED: once `time_budget_s` has elapsed, or after
+    `max_consecutive_failures` failed fetches in a row (provider outage), the remaining in-window events are
+    counted as `skipped` and `stopped` names the reason. A slow Open-Meteo can therefore never consume the
+    calling job's time limit (2026-09-30..10-02: 60 s fetch timeouts pushed espn-lineups past its 15 min step
+    limit, losing the fixtures dump, results and STATUS.json of every run)."""
     as_of = as_of or utc_now()
-    stats = {
+    stats: dict[str, Any] = {
         "events": 0,
         "captured": 0,
         "no_venue": 0,
         "geocode_miss": 0,
         "forecast_miss": 0,
         "failures": [],
+        "skipped": 0,
+        "stopped": None,
     }
+    started = clock()
+    consecutive_failures = 0
     for ev in events[:max_events]:
         if not (
             as_of - timedelta(hours=3) <= ev.kickoff_utc <= as_of + timedelta(hours=horizon_hours)
         ):
             continue
         stats["events"] += 1
+        if stats["stopped"] is None:
+            if time_budget_s is not None and clock() - started >= time_budget_s:
+                stats["stopped"] = "time_budget"
+            elif (
+                max_consecutive_failures is not None
+                and consecutive_failures >= max_consecutive_failures
+            ):
+                stats["stopped"] = "consecutive_failures"
+        if stats["stopped"] is not None:
+            stats["skipped"] += 1
+            continue
         city, country = getattr(ev, "venue_city", None), getattr(ev, "venue_country", None)
         if not city:
             stats["no_venue"] += 1
@@ -159,11 +185,14 @@ def capture_weather(
             geo = provider.geocode(city, country)
             if geo is None:
                 stats["geocode_miss"] += 1
+                consecutive_failures = 0  # the provider answered
                 continue
             fc, observed = provider.forecast_at(geo, ev.kickoff_utc)
         except Exception as exc:
             stats["failures"].append(f"{ev.espn_event_id}: {str(exc)[:100]}")
+            consecutive_failures += 1
             continue
+        consecutive_failures = 0
         if fc is None:
             stats["forecast_miss"] += 1
             continue

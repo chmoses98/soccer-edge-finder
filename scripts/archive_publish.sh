@@ -5,6 +5,7 @@
 # concurrency is set by the workflow; rebase before push; never `|| true` the push.
 set -euo pipefail
 SRC="$1"; DEST="$2"; MSG="$3"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 BRANCH="${ARCHIVE_BRANCH:-data-archive}"
 WORK="$(mktemp -d)"
 git config --global user.name "soccer-edge-bot"
@@ -27,7 +28,10 @@ mkdir -p "$WORK/$DEST"
 # Copy without deleting anything already archived. Workflows rebuild their day files from scratch, so a
 # plain copy would REPLACE an archived .jsonl day file (2026-09-28: 830 prediction rows of one run were
 # overwritten by the next run). .jsonl files are therefore append-merged: every archived line is kept
-# and only lines not already present are appended. Other files (indexes, run outputs) are copied.
+# and only lines not already present are appended. predictions/index.json (a grow-only pointer index) is
+# union-merged so a long-running publisher never drops entries another writer added meanwhile (2026-10-01/02:
+# kickoff-dispatch links failed `index_missing_record` after run-soccer published mid-link). Other files
+# (run outputs, last_* state) are copied.
 SRC_ABS="$(cd "$SRC" && pwd)"
 ( cd "$SRC_ABS" && find . -type f -print0 ) | while IFS= read -r -d '' rel; do
   rel="${rel#./}"; src_f="$SRC_ABS/$rel"; dst_f="$WORK/$DEST/$rel"
@@ -37,6 +41,8 @@ SRC_ABS="$(cd "$SRC" && pwd)"
     new_lines="$(mktemp)"
     awk 'NR==FNR { seen[$0]=1; next } $0 != "" && !($0 in seen) { print; seen[$0]=1 }' "$dst_f" "$src_f" > "$new_lines"
     cat "$new_lines" >> "$dst_f"; rm -f "$new_lines"
+  elif [[ "$DEST/$rel" =~ (^|/)predictions/index\.json$ && -s "$dst_f" ]]; then
+    python3 "$SCRIPT_DIR/merge_json_index.py" "$dst_f" "$src_f" || { echo "::error::predictions index merge refused"; exit 1; }
   else
     cp -f "$src_f" "$dst_f"
   fi

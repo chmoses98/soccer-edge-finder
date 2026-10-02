@@ -104,6 +104,8 @@ def test_capture_weather_context_only(tmp_path):
         "geocode_miss": 1,
         "forecast_miss": 0,
         "failures": [],
+        "skipped": 0,
+        "stopped": None,
     }
     import json
 

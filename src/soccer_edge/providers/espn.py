@@ -709,6 +709,48 @@ def capture_lineups(
     return stats
 
 
+def espn_sync_health(status: dict[str, Any]) -> dict[str, Any]:
+    """Machine-readable health of one `espn-sync` run (stored as STATUS.json["health"]).
+
+    FAILED   - actionable: every scoreboard query failed (no fixture window could be built), or lineups were
+               due and every lineup fetch failed (the expected capture did not happen).
+    DEGRADED - the job did its work but something nonfatal is worth recording: some scoreboard / lineup
+               fetches failed, ESPN answered with no events at all (no evidence either way, so never
+               silently HEALTHY), or the context-only weather capture had failures or hit its budget.
+    HEALTHY  - otherwise. Unmapped ESPN teams/leagues are a standing human-mapping backlog, reported in the
+               status but not a health signal.
+    """
+    reasons: list[str] = []
+    failed: list[str] = []
+    queries = int(status.get("scoreboard_queries") or 0)
+    sb_fail = int(
+        status.get("scoreboard_failures_n") or len(status.get("scoreboard_failures") or [])
+    )
+    events = int(status.get("events") or 0)
+    if queries and sb_fail >= queries:
+        failed.append(f"scoreboard_all_failed:{sb_fail}/{queries}")
+    elif sb_fail:
+        reasons.append(f"scoreboard_partial_failures:{sb_fail}/{queries or '?'}")
+    if not failed and events == 0:
+        reasons.append("no_events_returned")
+    ln = status.get("lineups") or {}
+    ln_events, ln_fail = int(ln.get("events") or 0), len(ln.get("failures") or [])
+    if ln_events and ln_fail >= ln_events:
+        failed.append(f"lineups_all_failed:{ln_fail}/{ln_events}")
+    elif ln_fail:
+        reasons.append(f"lineups_partial_failures:{ln_fail}/{ln_events}")
+    wx = status.get("weather") or {}
+    if wx.get("error"):
+        reasons.append("weather_error")
+    if wx.get("failures"):
+        reasons.append(f"weather_failures:{len(wx['failures'])}")
+    if wx.get("stopped"):
+        reasons.append(f"weather_stopped:{wx['stopped']}:skipped={wx.get('skipped', 0)}")
+    if failed:
+        return {"state": "FAILED", "reasons": failed + reasons}
+    return {"state": "DEGRADED" if reasons else "HEALTHY", "reasons": reasons}
+
+
 # ---------------------------------------------------------------- competitions fed by ESPN (fixtures + FT results)
 
 # competition_id -> ESPN league slugs whose matches form the RESULTS POOL used to fit that competition's strengths.
