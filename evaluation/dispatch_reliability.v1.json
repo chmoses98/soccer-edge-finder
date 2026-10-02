@@ -1,24 +1,24 @@
 {
  "schema": "dispatch_reliability_v1",
- "generated_at": "2026-10-02T06:05:51Z",
+ "generated_at": "2026-10-02T10:45:48Z",
  "cadence": {
   "external_heartbeat_minutes": null,
   "github_backup_minutes": 60
  },
  "last_wake": {
-  "started_at": "2026-10-02T06:04:20Z",
-  "trigger_source": "workflow-run",
+  "started_at": "2026-10-02T08:25:34Z",
+  "trigger_source": "github-schedule-backup",
   "status": "OK",
-  "no_action_reason": null
+  "no_action_reason": "CAPTURE_IN_PROGRESS"
  },
  "last_24h": {
   "span_hours": 24.0,
-  "heartbeats_actual": 23,
+  "heartbeats_actual": 21,
   "heartbeats_by_source": {
    "chain": 4,
    "github-schedule-backup": 4,
    "manual": 1,
-   "workflow-run": 14
+   "workflow-run": 12
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -32,27 +32,27 @@
   "capture_runs_failed": 1,
   "paid_calls": 2,
   "credits_spent": 6,
-  "fixtures_with_horizons": 17,
-  "horizons_eligible": 85,
-  "horizons_delivered": 80,
+  "fixtures_with_horizons": 18,
+  "horizons_eligible": 88,
+  "horizons_delivered": 83,
   "horizons_missed": 5,
   "horizon_states": {
-   "DELIVERED": 80,
+   "DELIVERED": 83,
    "MISSED_BEFORE_WAKE": 3,
    "MISSED_EXECUTION_FAILURE": 2
   },
-  "capture_success_rate": 0.9411764705882353,
+  "capture_success_rate": 0.9431818181818182,
   "close_fixtures_eligible": 17,
   "close_fixtures_delivered": 16,
   "close_success_rate": 0.9411764705882353
  },
  "last_7d": {
   "span_hours": 168.0,
-  "heartbeats_actual": 32,
+  "heartbeats_actual": 34,
   "heartbeats_by_source": {
-   "chain": 5,
+   "chain": 6,
    "external-heartbeat": 3,
-   "github-schedule-backup": 6,
+   "github-schedule-backup": 7,
    "manual": 2,
    "workflow-run": 16
   },
@@ -62,23 +62,23 @@
   "external_heartbeats_actual": 3,
   "external_trigger_success": null,
   "github_backup_expected": 168,
-  "github_backup_actual": 6,
-  "github_backup_success": 0.03571428571428571,
-  "capture_runs": 8,
+  "github_backup_actual": 7,
+  "github_backup_success": 0.041666666666666664,
+  "capture_runs": 9,
   "capture_runs_failed": 1,
   "paid_calls": 4,
   "credits_spent": 12,
-  "fixtures_with_horizons": 47,
-  "horizons_eligible": 229,
-  "horizons_delivered": 116,
+  "fixtures_with_horizons": 48,
+  "horizons_eligible": 232,
+  "horizons_delivered": 119,
   "horizons_missed": 113,
   "horizon_states": {
-   "DELIVERED": 116,
+   "DELIVERED": 119,
    "MISSED_BEFORE_WAKE": 111,
    "MISSED_EXECUTION_FAILURE": 2,
    "NOT_APPLICABLE": 1
   },
-  "capture_success_rate": 0.5065502183406113,
+  "capture_success_rate": 0.5129310344827587,
   "close_fixtures_eligible": 46,
   "close_fixtures_delivered": 26,
   "close_success_rate": 0.5652173913043478
