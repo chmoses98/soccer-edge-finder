@@ -1,38 +1,66 @@
 {
-  "as_of": "2026-10-02T21:45:12.875427+00:00",
-  "events": 3,
-  "events_skipped_unmapped": 0,
-  "fixtures_mapped": 3,
+  "as_of": "2026-10-02T21:48:05.802787+00:00",
+  "events": 22,
+  "events_skipped_unmapped": 3,
+  "fixtures_mapped": 19,
   "health": {
     "reasons": [],
     "state": "HEALTHY"
   },
   "leagues": [
-    "arg.1"
+    "concacaf.nations.league",
+    "fifa.friendly",
+    "fifa.worldq.afc",
+    "fifa.worldq.caf",
+    "fifa.worldq.concacaf",
+    "fifa.worldq.conmebol",
+    "fifa.worldq.uefa",
+    "uefa.euroq",
+    "uefa.nations"
   ],
   "lineups": {
     "captured": 1,
-    "events": 3,
+    "events": 8,
     "failures": [],
-    "published_post": 0,
-    "published_pre_kickoff": 0,
-    "unchanged": 2,
-    "unpublished": 3
+    "published_post": 2,
+    "published_pre_kickoff": 1,
+    "unchanged": 7,
+    "unpublished": 5
   },
-  "map_proposals": {},
+  "map_proposals": {
+    "fifa.friendly": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "2850": "Congo DR",
+        "4211": "Uganda",
+        "5534": "Mauritius",
+        "5782": "Sri Lanka",
+        "6167": "Palestine",
+        "658": "China"
+      }
+    }
+  },
   "map_version": "4",
-  "results_appended": 0,
+  "results_appended": 12,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
-  "scoreboard_queries": 1,
+  "scoreboard_queries": 9,
   "unmapped_leagues": [],
-  "unmapped_team_ids": {},
+  "unmapped_team_ids": {
+    "2850": "Congo DR",
+    "4211": "Uganda",
+    "5534": "Mauritius",
+    "5782": "Sri Lanka",
+    "6167": "Palestine",
+    "658": "China"
+  },
   "weather": {
-    "captured": 3,
-    "events": 3,
+    "captured": 4,
+    "events": 8,
     "failures": [],
     "forecast_miss": 0,
-    "geocode_miss": 0,
+    "geocode_miss": 4,
     "no_venue": 0,
     "skipped": 0,
     "stopped": null
