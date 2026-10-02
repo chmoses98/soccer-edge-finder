@@ -1,10 +1,10 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 17,
   "MISSED_DISPATCHER_CLOSE": 20,
-  "NO_SPORT_KEY": 7,
-  "PINNACLE_VALID_CLOSE": 2,
-  "PINNACLE_QUOTED_NOTHING": 4
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 17,
+  "NO_SPORT_KEY": 8,
+  "PINNACLE_VALID_CLOSE": 4,
+  "PINNACLE_QUOTED_NOTHING": 9
  },
  "fixtures": {
   "fx:concacaf.nations_league:2026-27:nat.aia:nat.aru": {
@@ -67,6 +67,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:concacaf.nations_league:2026-27:nat.lca:nat.glp": {
+   "state": "NO_SPORT_KEY",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261002T184500Z"
+  },
   "fx:concacaf.nations_league:2026-27:nat.nca:nat.crc": {
    "state": "NO_SPORT_KEY",
    "close_horizon_delivered": true,
@@ -127,6 +132,16 @@
    "close_horizon_delivered": false,
    "batch_id": null
   },
+  "fx:uefa.nations_league:2026-27:nat.bel:nat.tur": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261002T183026Z"
+  },
+  "fx:uefa.nations_league:2026-27:nat.bih:nat.swe": {
+   "state": "PINNACLE_QUOTED_NOTHING",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261002T183026Z"
+  },
   "fx:uefa.nations_league:2026-27:nat.bul:nat.est": {
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
@@ -157,6 +172,16 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20260929T155452Z"
   },
+  "fx:uefa.nations_league:2026-27:nat.fra:nat.ita": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261002T183026Z"
+  },
+  "fx:uefa.nations_league:2026-27:nat.fro:nat.svk": {
+   "state": "PINNACLE_QUOTED_NOTHING",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261002T183026Z"
+  },
   "fx:uefa.nations_league:2026-27:nat.ger:nat.srb": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -166,6 +191,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:uefa.nations_league:2026-27:nat.hun:nat.geo": {
+   "state": "PINNACLE_QUOTED_NOTHING",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261002T183026Z"
   },
   "fx:uefa.nations_league:2026-27:nat.irl:nat.aut": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -207,6 +237,11 @@
    "close_horizon_delivered": false,
    "batch_id": null
   },
+  "fx:uefa.nations_league:2026-27:nat.pol:nat.rou": {
+   "state": "PINNACLE_QUOTED_NOTHING",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261002T183026Z"
+  },
   "fx:uefa.nations_league:2026-27:nat.rou:nat.bih": {
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
@@ -241,6 +276,11 @@
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
    "batch_id": null
+  },
+  "fx:uefa.nations_league:2026-27:nat.ukr:nat.nir": {
+   "state": "PINNACLE_QUOTED_NOTHING",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261002T183026Z"
   },
   "fx:uefa.nations_league:2026-27:nat.wal:nat.nor": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
