@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-02T08:53:01.167695+00:00",
+  "as_of": "2026-10-02T10:02:30.992857+00:00",
   "events": 22,
   "events_skipped_unmapped": 3,
   "fixtures_mapped": 19,
@@ -50,13 +50,11 @@
     "658": "China"
   },
   "weather": {
-    "captured": 13,
+    "captured": 15,
     "events": 22,
     "failures": [
-      "401914141: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Chongqing&count=5&language=en&f",
-      "401923178: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Saint%20Pierre&count=5&language",
-      "401861107: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Zenica&count=5&language=en&form",
-      "401861110: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=T\u00f3rshavn&count=5&language=en&fo"
+      "401861104: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=35.1728&longitude=33.3540&hourly=te",
+      "401861105: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=56.9460&longitude=24.1059&hourly=te"
     ],
     "forecast_miss": 0,
     "geocode_miss": 4,
