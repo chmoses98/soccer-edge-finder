@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261002T223237Z-8ae5e7` · generated 2026-10-02T22:32:37.236435Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
+slate `slate-20261002T224734Z-43c4af` · generated 2026-10-02T22:47:34.656088Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-02T22:30:00.018509Z (CURRENT at publish; CURRENT until 2026-10-02T22:50:00.018509Z, STALE after 2026-10-02T23:00:00.018509Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-02T22:45:00.018454Z (CURRENT at publish; CURRENT until 2026-10-02T23:05:00.018454Z, STALE after 2026-10-02T23:15:00.018454Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-02T22:32:36.589632Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.91s
+model board generated 2026-10-02T22:32:36.589632Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.76s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-02T22:32:36.589632Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-02T23:00:00Z | São Paulo vs Santos (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
+| 2026-10-02T23:00:00Z | São Paulo vs Santos (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
 | 2026-10-03T00:00:00Z | Bonaire vs Grenada (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-03T00:00:00Z | Barbados vs Bermuda (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-03T00:00:00Z | Martinique vs Honduras (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 23 | 0 |
@@ -57,9 +57,9 @@ model board generated 2026-10-02T22:32:36.589632Z · simulations this update: 1 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 77
-action_NO_EDGE: 2016
-action_NO_QUOTE: 458
+action_EXCLUDED_BY_GATE: 78
+action_NO_EDGE: 2014
+action_NO_QUOTE: 459
 action_RESEARCH_CANDIDATE: 1
 contract_sides: 2552
 fixtures: 35
