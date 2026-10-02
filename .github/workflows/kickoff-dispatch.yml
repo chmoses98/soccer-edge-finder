@@ -9,6 +9,10 @@ run-name: "kickoff-dispatch · ${{ inputs.source || github.event.client_payload.
 #   capture  one bounded LINK (<= 5 h 30): holds the chain lease, sleeps until each real fixture window
 #            (no calls while sleeping), captures when due, publishes after every batch, refreshes the
 #            schedule every 30 min, and ends at its time limit or when no future window remains.
+#            LIVE SLATE (docs/ACTIONABLE_SLATE.md): every batch reprices the cached model board on its own
+#            Kalshi sweep (runs/latest.actionable_slate.v1.json); the model reruns only at T-60, at T-15 when
+#            an input changed, or when a cached fixture is invalidated/missing; between horizons, while a
+#            fixture kicks off within 12 h, a free Kalshi capture + reprice runs every 15 min (no paid call).
 #   chain    after a link that reached its time limit with windows still ahead (and ran >= 20 min),
 #            dispatches exactly one successor link. A chain therefore exists only while fixtures do.
 #
@@ -30,7 +34,7 @@ on:
         type: boolean
         default: false
       with_run:
-        description: "also run a fast RUN SOCCER (3 h window) at each due horizon"
+        description: "model run at EVERY due horizon (default: selective - T-60, T-15 on input change, invalidated)"
         type: boolean
         default: false
   repository_dispatch:
@@ -89,6 +93,14 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -e .
+      - name: Persist the simulation cache across links (keys are content hashes of every pricing input)
+        uses: actions/cache@v4
+        with:
+          path: simcache
+          key: simcache-kickoff-${{ github.run_id }}
+          restore-keys: |
+            simcache-kickoff-
+            simcache-
       - name: Fetch archive tip (schedule, log, heartbeats, change-suppression state, ESPN fixtures)
         run: |
           git clone --quiet --depth 1 --branch data-archive "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" archive
@@ -105,7 +117,7 @@ jobs:
           mkdir -p work
           EXTRA=""
           [ "${{ inputs.with_run }}" = "true" ] && EXTRA="--with-run"
-          python -m soccer_edge.cli dispatch tick --archive-dir archive --out-dir work --chain --max-tick-minutes 330 --refresh-minutes 30 --publish-each-batch --summary-out tick_summary.json $EXTRA | tee work/tick.log
+          python -m soccer_edge.cli dispatch tick --archive-dir archive --out-dir work --chain --max-tick-minutes 330 --refresh-minutes 30 --publish-each-batch --summary-out tick_summary.json --sim-cache-dir simcache --slate-refresh-minutes 15 --slate-active-hours 12 $EXTRA | tee work/tick.log
           python3 -c "import json;t=json.load(open('tick_summary.json'));print('chain_continue='+('true' if t.get('chain_continue') else 'false'));print('elapsed_minutes='+str(int(t.get('elapsed_minutes') or 0)))" >> "$GITHUB_OUTPUT"
       - uses: actions/upload-artifact@v4
         if: always()

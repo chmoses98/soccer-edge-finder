@@ -23,6 +23,11 @@ fields are allowed; breaking changes create `v2.py` and `schema_version: 2.x` si
 * **`SettlementV1`** — outcome with refusal reason, evidence, Kalshi cross-check, P&L link.
 * **`CoverageReportV1`** — discovery completeness and the disposition partition with
   `unaccounted_contracts` (must be 0).
+* **`ActionableSlateV1`** (`contracts/slate_v1.py`, own version `1.0.0`) — the mutable latest-state
+  current-price board: one row per contract side with the cached model probability, the executable Kalshi
+  price, fees, EV, robust edge, Pinnacle reference, authority, an action, and separate freshness for model,
+  Kalshi, reference, lineup and context (docs/ACTIONABLE_SLATE.md). Published as
+  `runs/latest.actionable_slate.v1.json`. Presentation, not evidence.
 
 ## Conventions
 

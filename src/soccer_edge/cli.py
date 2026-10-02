@@ -49,6 +49,12 @@ def cmd_discover(args: argparse.Namespace) -> int:
 
 def cmd_capture(args: argparse.Namespace) -> int:
     """Discovery + snapshot batch (change-suppressed) written as JSONL."""
+    rc, _run = _capture_sweep(args)
+    return rc
+
+
+def _capture_sweep(args: argparse.Namespace):
+    """`soccer capture` returning (exit code, DiscoveryRun) so callers can reprice/run on the same sweep."""
     from soccer_edge.core.serialization import append_jsonl
     from soccer_edge.kalshi.capture import MarketSnapshot, SnapshotBatch
     from soccer_edge.kalshi.client import KalshiPublicClient
@@ -132,7 +138,7 @@ def cmd_capture(args: argparse.Namespace) -> int:
             indent=2,
         )
     )
-    return 0 if run.complete else 2
+    return (0 if run.complete else 2), run
 
 
 def _reference_capture(registry, fixtures, as_of, out_dir: Path | None):
@@ -263,12 +269,19 @@ def cmd_run(args: argparse.Namespace) -> int:
         else:
             print("[kalshi] --fast requested but no usable committed index; exhaustive discovery")
             full_index = None
-    disc = discover(client, sweep_series=sweep_series, known_series=known_series)
+    prefetched = getattr(args, "prefetched_discovery", None)
+    if prefetched is not None:
+        # the caller's capture sweep (seconds old) is the market input: no second discovery
+        disc = prefetched
+    else:
+        disc = discover(client, sweep_series=sweep_series, known_series=known_series)
     timings["discovery_s"] = round(time.time() - t_disc, 2)
     if full_index is not None:
         from soccer_edge.kalshi.reconcile import reconcile_fast_vs_full
 
-        rec = reconcile_fast_vs_full(disc.counters(), full_index)
+        # the sweep's catalog (series swept + markets), the same evidence the capture workflow reconciles;
+        # bare counters are 'status' evidence that can never prove completeness (always fell back)
+        rec = reconcile_fast_vs_full(disc.to_json(), full_index)
         write_json(Path(args.out_dir) / "fast_reconcile.json", rec)
         print(
             "[kalshi] fast reconciliation:",
@@ -290,6 +303,13 @@ def cmd_run(args: argparse.Namespace) -> int:
     inputs = build_inputs(
         registry, data, disc, as_of=as_of, authority_path=REPO_ROOT / "config" / "authority.json"
     )
+    slate_roots = _slate_roots(args)
+    if slate_roots:
+        from soccer_edge.slate.observations import fixture_context, lineup_observations
+
+        inputs.lineup_observations = lineup_observations(
+            slate_roots, fixture_context(slate_roots).espn_event_ids, now=as_of
+        )
     if not args.synthetic_kalshi and not args.no_reference:
         # reference odds are context: a failure here must never fail the run
         try:
@@ -329,10 +349,42 @@ def cmd_run(args: argparse.Namespace) -> int:
     timings["simulate_price_archive_s"] = round(time.time() - t_run, 2)
     timings["total_s"] = round(time.time() - t_start, 2)
     timings["mode"] = "fast" if (args.fast and full_index is not None) else "exhaustive"
+    if prefetched is not None:
+        timings["mode"] += "+prefetched_sweep"
     art.output = art.output.model_copy(
         update={"freshness": {**art.output.freshness, "stage_timings": timings}}
     )
     print("[timings]", json.dumps(timings))
+    args.result_stats = {
+        "simulated": list(art.fixtures_simulated),
+        "reused_from_cache": list(art.fixtures_repriced),
+        "resimulated_for_reducer": list(art.fixtures_resimulated_for_reducer),
+        "archived_records": len(art.prediction_record_ids),
+        "board_fixtures": len(art.board_entries),
+        "timings": timings,
+    }
+    if args.board_out:
+        _write_board(args, art, slate_roots)
+    if args.slate_out_dir:
+        _run_reprice(
+            out_root=Path(args.slate_out_dir),
+            roots=slate_roots,
+            view_disc=disc,
+            trigger=args.slate_trigger,
+            lookahead_hours=args.slate_lookahead_hours,
+            versions=_versions(args),
+            compute={
+                "mode": "model_refresh_and_reprice",
+                "simulations_run": len(art.fixtures_simulated)
+                + len(art.fixtures_resimulated_for_reducer),
+                "fixtures_resimulated": sorted(
+                    {*art.fixtures_simulated, *art.fixtures_resimulated_for_reducer}
+                ),
+                "fixtures_reused_from_cache": sorted(art.fixtures_repriced),
+                "model_refresh_runtime_s": timings["total_s"],
+                "kalshi_capture_runtime_s": getattr(args, "capture_runtime_s", None),
+            },
+        )
     paths = write_outputs(art, Path(args.out_dir))
     print(art.markdown)
     print(
@@ -348,6 +400,321 @@ def cmd_run(args: argparse.Namespace) -> int:
     )
     if args.fail_on_incomplete and not disc.complete:
         return 2
+    return 0
+
+
+# ------------------------------------------------------------------------------ live slate (docs/ACTIONABLE_SLATE.md)
+
+
+def _slate_roots(args: argparse.Namespace) -> list[Path]:
+    """Local data roots a reprice / model run reads observations from (newest first, de-duplicated)."""
+    roots: list[Path] = []
+    for r in [*(getattr(args, "slate_root", None) or []), getattr(args, "espn_dir", None)]:
+        if r and Path(r) not in roots:
+            roots.append(Path(r))
+    return roots
+
+
+def _versions(args: argparse.Namespace) -> dict[str, str]:
+    from soccer_edge.slate.invalidation import expected_versions
+
+    return expected_versions(
+        getattr(args, "model_version", None) or getattr(args, "run_model_version", None),
+        getattr(args, "engine_version", None) or getattr(args, "run_engine_version", None),
+        getattr(args, "worlds_version", None) or getattr(args, "run_worlds_version", None),
+    )
+
+
+def _write_board(args: argparse.Namespace, art, roots: list[Path]) -> dict:
+    from soccer_edge.slate.board import BOARD_FILE, load_board, merge_boards, save_board
+
+    now = utc_now()
+    base = load_board(
+        *[Path(b) for b in (args.board_in or [])],
+        Path(args.board_out),
+        *[r / BOARD_FILE for r in roots],
+        now=now,
+    )
+    board = merge_boards(base, {"fixtures": art.board_entries}, now=now)
+    save_board(Path(args.board_out), board)
+    print(
+        f"[board] {len(art.board_entries)} fixtures written by this run; "
+        f"{len(board['fixtures'])} on the board -> {args.board_out}"
+    )
+    return board
+
+
+def _run_reprice(
+    *,
+    out_root: Path,
+    roots: list[Path],
+    trigger: str,
+    lookahead_hours: float,
+    versions: dict[str, str] | None,
+    compute: dict | None = None,
+    view_disc=None,
+    view=None,
+) -> dict:
+    """Reprice the cached board against one Kalshi sweep and write the slate under `out_root`. Local data
+    only: no model fit, no simulation, no network."""
+    from soccer_edge.authority.policy import AuthorityMatrix
+    from soccer_edge.slate.board import BOARD_FILE, load_board
+    from soccer_edge.slate.market_view import MarketView
+    from soccer_edge.slate.reprice import RepriceContext, previous_slate, reprice, write_slate
+
+    now = utc_now()
+    all_roots = [out_root, *[r for r in roots if r != out_root]]
+    board = load_board(*[r / BOARD_FILE for r in all_roots], now=now)
+    if view is None and view_disc is not None:
+        view = MarketView.from_discovery(view_disc)
+    prev = previous_slate(*all_roots)
+    slate = reprice(
+        RepriceContext(
+            board=board,
+            view=view,
+            roots=all_roots,
+            now=now,
+            trigger=trigger,
+            lookahead_hours=lookahead_hours,
+            versions=versions,
+            authority=AuthorityMatrix.load(REPO_ROOT / "config" / "authority.json"),
+            compute={"trigger": trigger, **(compute or {})},
+        )
+    )
+    row = write_slate(out_root, slate, prev=prev)
+    print(
+        "[slate]",
+        json.dumps(
+            {
+                k: row[k]
+                for k in (
+                    "slate_id",
+                    "mode",
+                    "fixtures",
+                    "contract_sides",
+                    "simulations_run",
+                    "odds_api_calls",
+                    "reprice_runtime_s",
+                    "price_changes_vs_previous",
+                )
+            }
+        ),
+    )
+    return row
+
+
+def cmd_slate_reprice(args: argparse.Namespace) -> int:
+    """REPRICE ONLY: cached board x the given Kalshi sweep (latest_catalog.json). No model, no network."""
+    from soccer_edge.slate.market_view import MarketView
+
+    view = None
+    if args.catalog and Path(args.catalog).exists():
+        view = MarketView.from_catalog_json(read_json(Path(args.catalog)))
+    _run_reprice(
+        out_root=Path(args.out_dir),
+        roots=[Path(r) for r in (args.root or [])],
+        trigger=args.trigger,
+        lookahead_hours=args.lookahead_hours,
+        versions=_versions(args),
+        view=view,
+        compute={
+            "mode": "reprice_only",
+            "kalshi_capture_runtime_s": args.kalshi_capture_runtime_s,
+        },
+    )
+    return 0
+
+
+def _restore_state(archive: Path, out: Path) -> None:
+    """Change-suppression + ledger-index state a capture/run appends to (same set the tick restores)."""
+    import shutil
+
+    for rel in (
+        "snapshots/last_fingerprints.json",
+        "lineups/last_hashes.json",
+        "predictions/index.json",
+    ):
+        src = archive / rel
+        if src.exists() and not (out / rel).exists():
+            (out / rel).parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(src, out / rel)
+
+
+def _slate_model_refresh(
+    out: Path,
+    archive: Path,
+    disc,
+    *,
+    games: list[str] | None,
+    window_hours: int,
+    sim_cache: Path,
+    versions_args: argparse.Namespace,
+    trigger: str,
+    lookahead_hours: float,
+    capture_runtime_s: float | None,
+) -> dict:
+    """Fast model run on the caller's sweep (no second discovery) -> board -> reprice -> slate. Prediction
+    records go to out/ledger (immutable evidence of what the model said at this time)."""
+    import shutil
+    import time
+
+    parser = build_parser()
+    pending = out / "runs" / "_pending"
+    shutil.rmtree(pending, ignore_errors=True)
+    (out / "ledger").mkdir(parents=True, exist_ok=True)
+    if (out / "predictions" / "index.json").exists() and not (
+        out / "ledger" / "index.json"
+    ).exists():
+        shutil.copyfile(out / "predictions" / "index.json", out / "ledger" / "index.json")
+    argv = [
+        "run",
+        "--fast",
+        "--window",
+        str(window_hours),
+        "--out-dir",
+        str(pending),
+        "--archive-dir",
+        str(out / "ledger"),
+        "--sim-cache",
+        str(sim_cache),
+        "--reference-dir",
+        str(out / "reference"),
+        "--espn-dir",
+        str(archive),
+        "--slate-root",
+        str(out),
+        "--board-out",
+        str(out / "runs" / "latest.model_board.v1.json"),
+        "--slate-out-dir",
+        str(out),
+        "--slate-trigger",
+        trigger,
+        "--slate-lookahead-hours",
+        str(lookahead_hours),
+        "--model-version",
+        getattr(versions_args, "run_model_version", None) or "dc_laplace_v1",
+        "--engine-version",
+        getattr(versions_args, "run_engine_version", None) or "world_sim_v2",
+        "--worlds-version",
+        getattr(versions_args, "run_worlds_version", None) or "worlds_v1",
+    ]
+    for g in games or []:
+        argv += ["--game", g]
+    a = parser.parse_args(argv)
+    a.prefetched_discovery = disc
+    a.capture_runtime_s = capture_runtime_s
+    t0 = time.time()
+    rc = a.func(a)
+    stats = dict(getattr(a, "result_stats", {}) or {})
+    stats["rc"] = rc
+    stats["runtime_s"] = round(time.time() - t0, 2)
+    # archive layout runs/<day>/<run_id>/: `archive verify` resolves every prediction's run_id there
+    doc = read_json_or(pending / "run_output.v1.json", None)
+    if doc:
+        final = out / "runs" / f"{utc_now():%Y-%m-%d}" / doc["run_id"]
+        final.parent.mkdir(parents=True, exist_ok=True)
+        shutil.rmtree(final, ignore_errors=True)
+        pending.rename(final)
+        stats["run_dir"] = str(final)
+    return stats
+
+
+def cmd_slate_refresh(args: argparse.Namespace) -> int:
+    """REFRESH SOCCER SLATE (manual): fresh Kalshi sweep -> lineups near kickoff -> fast model run that
+    reuses every cached simulation whose inputs are unchanged -> reprice -> slate. Never calls The Odds
+    API (the paid Pinnacle entry/close stay with the kickoff chain)."""
+    import time
+
+    archive, out = Path(args.archive_dir), Path(args.out_dir)
+    out.mkdir(parents=True, exist_ok=True)
+    _restore_state(archive, out)
+    parser = build_parser()
+    t0 = time.time()
+    a = parser.parse_args(
+        ["capture", "--fast", "--status", "open", "--out-dir", str(out / "snapshots")]
+    )
+    rc_cap, disc = _capture_sweep(a)
+    cap_s = round(time.time() - t0, 2)
+    print(f"[refresh] kalshi capture rc={rc_cap} in {cap_s}s ({len(disc.markets)} contracts)")
+    if not args.skip_lineups:
+        _refresh_lineups(out, archive, hours=args.lineup_hours)
+    stats = _slate_model_refresh(
+        out,
+        archive,
+        disc,
+        games=None,
+        window_hours=args.window,
+        sim_cache=Path(args.sim_cache),
+        versions_args=args,
+        trigger="manual_refresh",
+        lookahead_hours=args.lookahead_hours,
+        capture_runtime_s=cap_s,
+    )
+    print("[refresh]", json.dumps({k: v for k, v in stats.items() if k != "timings"}, default=str))
+    if args.summary_out:
+        write_json(Path(args.summary_out), {"capture_rc": rc_cap, "capture_s": cap_s, **stats})
+    return 0 if stats.get("rc") == 0 else 2
+
+
+def _refresh_lineups(out: Path, archive: Path, *, hours: float) -> str:
+    """ESPN lineup sync (free) for the leagues of scheduled fixtures kicking off within `hours`."""
+    from datetime import timedelta
+
+    from soccer_edge.dispatch.horizons import load_schedule
+    from soccer_edge.providers.espn import ESPN_POOLS, EspnMap
+
+    now = utc_now()
+    sched = load_schedule(out / "dispatch" / "schedule.json") or load_schedule(
+        archive / "dispatch" / "schedule.json"
+    )
+    comps = {f.competition_id for f in sched if now < f.kickoff_utc <= now + timedelta(hours=hours)}
+    emap = EspnMap.load()
+    slugs = sorted(
+        {slug for slug, comp in emap.leagues.items() if comp in comps}
+        | {s for c in comps for s in ESPN_POOLS.get(c, ())}
+    )
+    if not slugs:
+        return "lineups:none_due"
+    try:
+        a = build_parser().parse_args(
+            [
+                "espn-sync",
+                "--leagues",
+                ",".join(slugs),
+                "--back-days",
+                "0",
+                "--forward-days",
+                "1",
+                "--max-lineups",
+                "60",
+                "--out-dir",
+                str(out),
+            ]
+        )
+        rc = a.func(a)
+        return f"lineups:{'ok' if rc == 0 else 'partial'}:{len(slugs)}"
+    except Exception as exc:
+        return f"lineups:error:{str(exc)[:80]}"
+
+
+def cmd_slate_merge_latest(args: argparse.Namespace) -> int:
+    """Publish-time merge of a mutable pointer onto the archive copy (scripts/archive_publish.sh): boards
+    union by fixture (newer entry wins); slates keep the one with the newer Kalshi observation; the
+    predictions index is a union (append-only records)."""
+    from soccer_edge.slate.board import merge_boards
+    from soccer_edge.slate.reprice import slate_order_key, write_slate_json
+
+    src, dst = read_json(Path(args.src)), read_json_or(Path(args.dst), None)
+    if args.kind == "index":
+        write_json(Path(args.dst), {**(dst or {}), **src})
+        return 0
+    if args.kind == "board":
+        write_json(Path(args.dst), merge_boards(dst, src, now=utc_now()))
+        return 0
+    if dst is None or slate_order_key(src) >= slate_order_key(dst):
+        write_slate_json(Path(args.dst), src)
+    else:
+        print(f"[slate] kept the archived slate (newer Kalshi observation) over {args.src}")
     return 0
 
 
@@ -953,6 +1320,17 @@ def cmd_dispatch_tick(args: argparse.Namespace) -> int:
     publishes: list[str] = []
     upcoming: list = []
     end_reason = "no_hold"
+    # free Kalshi capture + reprice between horizons while a fixture is near (docs/ACTIONABLE_SLATE.md)
+    slate_every = timedelta(minutes=args.slate_refresh_minutes or 0)
+    last_slate = None
+    slate_refreshes = 0
+
+    def slate_active(at) -> bool:
+        if not args.chain or slate_every <= timedelta(0):
+            return False
+        end = at + timedelta(hours=args.slate_active_hours)
+        return any(at < fx.kickoff_utc <= end for fx in schedule)
+
     while True:
         now = utc_now()
         wakes.append(
@@ -983,11 +1361,27 @@ def cmd_dispatch_tick(args: argparse.Namespace) -> int:
                 if left <= 2:
                     end_reason = "link_time_limit"
                     break
+                if slate_active(now) and (last_slate is None or now - last_slate >= slate_every):
+                    batch_id = f"ks-{now:%Y%m%dT%H%M%SZ}"
+                    acts = _slate_refresh(out, batch_id, args)
+                    last_slate = now  # the sweep started now: prices are observed from this instant
+                    slate_refreshes += 1
+                    summary.append(
+                        {"batch_id": batch_id, "slate_refresh": True, "due": [], "actions": acts}
+                    )
+                    if args.publish_each_batch:
+                        publishes.append(
+                            _publish_batch(out, f"kickoff-dispatch {run_id} {batch_id} slate")
+                        )
+                    continue
                 # wake at the next horizon's NOMINAL time (T-60 at 60 min, T-15 at 15 min, ...), which is
                 # inside its window: the paid entry lands at T-60 and the paid close at T-15
                 nominal = min(u.minutes_to_kickoff - u.horizon for u in upcoming)
                 refresh_left = args.refresh_minutes - (now - last_refresh).total_seconds() / 60
                 nap = max(0.5, min(nominal, left - 1, max(refresh_left, 0.5)))
+                if slate_active(now) and last_slate is not None:
+                    slate_left = (last_slate + slate_every - now).total_seconds() / 60
+                    nap = max(0.5, min(nap, slate_left))
             else:
                 if not (wait <= args.max_hold_minutes and wait + 3 <= left):
                     end_reason = "next_window_beyond_hold"
@@ -1007,6 +1401,7 @@ def cmd_dispatch_tick(args: argparse.Namespace) -> int:
         )
         batches += 1
         if captured:
+            last_slate = now  # every horizon batch repriced the slate on its own sweep
             rows = delivered_rows(due, now=utc_now(), batch_id=batch_id, actions=actions)
             append_log(log_path, rows)
             delivered_n += len(rows)
@@ -1059,6 +1454,18 @@ def cmd_dispatch_tick(args: argparse.Namespace) -> int:
         "odds_api": odds,
         "hold_minutes": round(held, 1),
         "publishes": publishes,
+        "slate_refreshes": slate_refreshes,
+        "model_refreshes": sum(
+            1 for b in summary for a in b["actions"] if a.startswith("model_refresh:ok")
+        ),
+        "simulations": sum(
+            int(part.split("=", 1)[1])
+            for b in summary
+            for a in b["actions"]
+            if a.startswith("model_refresh:")
+            for part in a.split(":")
+            if part.startswith("sim=")
+        ),
     }
     if lease is not None:
         lease.release(run_id, now=end)
@@ -1090,17 +1497,23 @@ def cmd_dispatch_tick(args: argparse.Namespace) -> int:
 
 
 def _dispatch_actions(out: Path, due, batch_id: str, args: argparse.Namespace) -> list[str]:
-    """Capture batch: Kalshi fast snapshot, reference odds, ESPN lineups for the due fixtures' leagues.
-    Each action is isolated: a failure is recorded, never fatal for the others."""
-    from soccer_edge.providers.espn import ESPN_POOLS, EspnMap
+    """Capture batch, in this order: Kalshi fast snapshot (free) -> football-data reference (free) ->
+    Pinnacle via The Odds API (paid, budget-guarded entry/close only) -> ESPN lineups (free) -> selective
+    model refresh (slate/refresh.py: T-60, T-15 on input change, invalidated/missing) -> reprice of the
+    whole slate on the same sweep. Each action is isolated: a failure is recorded, never fatal."""
+    import time
 
     parser = build_parser()
     done: list[str] = []
+    disc = None
+    cap_s = None
     try:
+        t0 = time.time()
         a = parser.parse_args(
             ["capture", "--fast", "--status", "open", "--out-dir", str(out / "snapshots")]
         )
-        rc = a.func(a)
+        rc, disc = _capture_sweep(a)
+        cap_s = round(time.time() - t0, 2)
         done.append(f"kalshi_capture:{'ok' if rc == 0 else 'incomplete'}")
     except Exception as exc:
         done.append(f"kalshi_capture:error:{str(exc)[:80]}")
@@ -1110,81 +1523,201 @@ def _dispatch_actions(out: Path, due, batch_id: str, args: argparse.Namespace) -
         done.append(f"reference:{'ok' if rc == 0 else 'empty'}")
     except Exception as exc:
         done.append(f"reference:error:{str(exc)[:80]}")
+    odds = None
     if not args.skip_odds_api:
-        done.append(
-            _odds_api_action(
-                out,
-                due,
-                batch_id,
-                Path(args.archive_dir),
-                schedule_as_of=getattr(args, "schedule_as_of", None),
-            )
+        odds = _odds_api_action(
+            out,
+            due,
+            batch_id,
+            Path(args.archive_dir),
+            schedule_as_of=getattr(args, "schedule_as_of", None),
         )
-    if args.with_run:
-        # near-close predictions (the CLV evidence the promotion gates need): a FAST run scoped to the
-        # next 3 hours, reconciled against the daily catalog; ledger index restored from the archive
-        try:
-            ledger_dir = out / "ledger"
-            ledger_dir.mkdir(parents=True, exist_ok=True)
-            run_out = out / "runs" / batch_id
-            a = parser.parse_args(
-                [
-                    "run",
-                    "--fast",
-                    "--window",
-                    "3",
-                    "--out-dir",
-                    str(run_out),
-                    "--archive-dir",
-                    str(ledger_dir),
-                    "--sim-cache",
-                    str(out / "simcache"),
-                    "--reference-dir",
-                    str(out / "reference"),
-                    "--espn-dir",
-                    str(args.archive_dir),
-                    "--model-version",
-                    args.run_model_version,
-                    "--engine-version",
-                    args.run_engine_version,
-                    "--worlds-version",
-                    args.run_worlds_version,
-                ]
-            )
-            rc = a.func(a)
-            done.append(f"run_soccer_fast:{'ok' if rc == 0 else 'incomplete'}")
-        except SystemExit as exc:
-            done.append(f"run_soccer_fast:exit:{exc.code}")
-        except Exception as exc:
-            done.append(f"run_soccer_fast:error:{str(exc)[:80]}")
+        done.append(odds)
     if not args.skip_lineups:
+        # before the model decision: a T-15 refresh depends on whether the XI changed
         comps = {d.fixture.competition_id for d in due}
-        emap = EspnMap.load()
-        slugs = sorted(
-            {slug for slug, comp in emap.leagues.items() if comp in comps}
-            | {s for c in comps for s in ESPN_POOLS.get(c, ())}
+        done.append(_lineup_action(out, comps))
+    if disc is not None:
+        done.extend(_slate_actions(out, due, batch_id, args, disc, cap_s, odds))
+    return done
+
+
+def _lineup_action(out: Path, comps: set[str]) -> str:
+    from soccer_edge.providers.espn import ESPN_POOLS, EspnMap
+
+    emap = EspnMap.load()
+    slugs = sorted(
+        {slug for slug, comp in emap.leagues.items() if comp in comps}
+        | {s for c in comps for s in ESPN_POOLS.get(c, ())}
+    )
+    if not slugs:
+        return "lineups:none_due"
+    try:
+        a = build_parser().parse_args(
+            [
+                "espn-sync",
+                "--leagues",
+                ",".join(slugs),
+                "--back-days",
+                "0",
+                "--forward-days",
+                "1",
+                "--max-lineups",
+                "60",
+                "--out-dir",
+                str(out),
+            ]
         )
-        if slugs:
-            try:
-                a = parser.parse_args(
-                    [
-                        "espn-sync",
-                        "--leagues",
-                        ",".join(slugs),
-                        "--back-days",
-                        "0",
-                        "--forward-days",
-                        "1",
-                        "--max-lineups",
-                        "60",
-                        "--out-dir",
-                        str(out),
-                    ]
-                )
-                rc = a.func(a)
-                done.append(f"lineups:{'ok' if rc == 0 else 'partial'}:{len(slugs)}")
-            except Exception as exc:
-                done.append(f"lineups:error:{str(exc)[:80]}")
+        rc = a.func(a)
+        return f"lineups:{'ok' if rc == 0 else 'partial'}:{len(slugs)}"
+    except Exception as exc:
+        return f"lineups:error:{str(exc)[:80]}"
+
+
+def _odds_counts(action: str | None) -> tuple[int, int]:
+    paid = credits = 0
+    for part in (action or "").split(":"):
+        if part.startswith("credits="):
+            credits = int(part.split("=", 1)[1] or 0)
+        if part.startswith("paid="):
+            paid = int(part.split("=", 1)[1] or 0)
+    return paid, credits
+
+
+def _slate_actions(  # noqa: PLR0917
+    out: Path,
+    due,
+    batch_id: str,
+    args: argparse.Namespace,
+    disc,
+    cap_s: float | None,
+    odds_action: str | None,
+) -> list[str]:
+    """Selective model refresh for the due fixtures that need one, then reprice everything."""
+    from soccer_edge.slate.board import BOARD_FILE, load_board
+    from soccer_edge.slate.observations import fixture_context, lineup_observations
+    from soccer_edge.slate.refresh import refresh_plan, refresh_window_hours
+
+    archive = Path(args.archive_dir)
+    roots = [out, archive]
+    now = utc_now()
+    mode = "every" if args.with_run else args.model_refresh
+    horizons = "/".join(f"T-{h}" for h in sorted({d.horizon for d in due}, reverse=True)) or "none"
+    trigger = f"kickoff_chain:{horizons}"
+    paid, credits = _odds_counts(odds_action)
+    done: list[str] = []
+    try:
+        board = load_board(*[r / BOARD_FILE for r in roots], now=now)
+        ctx = fixture_context(roots)
+        lineups = lineup_observations(roots, ctx.espn_event_ids, now=now)
+        need = refresh_plan(
+            due, board, ctx=ctx, lineups=lineups, versions=_versions(args), mode=mode
+        )
+    except Exception as exc:
+        need = {}
+        done.append(f"model_refresh:plan_error:{str(exc)[:80]}")
+    if need:
+        try:
+            stats = _slate_model_refresh(
+                out,
+                archive,
+                disc,
+                games=sorted(need),
+                window_hours=refresh_window_hours(due, set(need), now),
+                sim_cache=_tick_sim_cache(args),
+                versions_args=args,
+                trigger=trigger,
+                lookahead_hours=args.slate_lookahead_hours,
+                capture_runtime_s=cap_s,
+            )
+            reasons = ",".join(sorted({":".join(r.split(":")[:2]) for r in need.values()}))
+            done.append(
+                f"model_refresh:{'ok' if stats.get('rc') == 0 else 'incomplete'}:"
+                f"fixtures={len(need)}:sim={len(stats.get('simulated', []))}:"
+                f"cache={len(stats.get('reused_from_cache', []))}:why={reasons}"
+            )
+            # the run already repriced the whole slate on this sweep; record this batch's paid calls on it
+            _annotate_slate_odds(out, paid, credits)
+            return [*done, "slate_reprice:ok:via_model_refresh"]
+        except SystemExit as exc:
+            done.append(f"model_refresh:exit:{exc.code}")
+        except Exception as exc:
+            done.append(f"model_refresh:error:{str(exc)[:80]}")
+    else:
+        done.append(f"model_refresh:skipped:{mode}:no_input_change")
+    try:
+        row = _run_reprice(
+            out_root=out,
+            roots=[archive],
+            trigger=trigger,
+            lookahead_hours=args.slate_lookahead_hours,
+            versions=_versions(args),
+            view_disc=disc,
+            compute={
+                "mode": "reprice_only",
+                "kalshi_capture_runtime_s": cap_s,
+                # the batch's paid reference capture (if any) was decided by its own purpose windows and
+                # claims; it is reported here, never caused by the reprice
+                "odds_api_calls": paid,
+                "odds_api_credits": credits,
+            },
+        )
+        done.append(f"slate_reprice:ok:sides={row['contract_sides']}:sim=0")
+    except Exception as exc:
+        done.append(f"slate_reprice:error:{str(exc)[:80]}")
+    return done
+
+
+def _annotate_slate_odds(out: Path, paid: int, credits: int) -> None:
+    from soccer_edge.slate.reprice import SLATE_FILE, write_slate_json
+
+    p = out / SLATE_FILE
+    doc = read_json_or(p, None)
+    if doc is None:
+        return
+    doc["compute"]["odds_api_calls"] = paid
+    doc["compute"]["odds_api_credits"] = credits
+    write_slate_json(p, doc)
+
+
+def _tick_sim_cache(args: argparse.Namespace) -> Path:
+    """Simulation cache OUTSIDE the publish payload (kickoff_publish.sh clears <out>/simcache)."""
+    p = (
+        Path(args.sim_cache_dir)
+        if args.sim_cache_dir
+        else Path(args.out_dir).resolve().parent / "simcache"
+    )
+    p.mkdir(parents=True, exist_ok=True)
+    return p
+
+
+def _slate_refresh(out: Path, batch_id: str, args: argparse.Namespace) -> list[str]:
+    """Between horizons: free Kalshi capture + reprice of the cached board. No model, no paid call."""
+    import time
+
+    try:
+        t0 = time.time()
+        a = build_parser().parse_args(
+            ["capture", "--fast", "--status", "open", "--out-dir", str(out / "snapshots")]
+        )
+        rc, disc = _capture_sweep(a)
+        cap_s = round(time.time() - t0, 2)
+    except Exception as exc:
+        return [f"kalshi_capture:error:{str(exc)[:80]}"]
+    done = [f"kalshi_capture:{'ok' if rc == 0 else 'incomplete'}"]
+    try:
+        row = _run_reprice(
+            out_root=out,
+            roots=[Path(args.archive_dir)],
+            trigger="kalshi_capture:slate_refresh",
+            lookahead_hours=args.slate_lookahead_hours,
+            versions=_versions(args),
+            view_disc=disc,
+            compute={"mode": "reprice_only", "kalshi_capture_runtime_s": cap_s},
+        )
+        done.append(f"slate_reprice:ok:sides={row['contract_sides']}:sim=0")
+    except Exception as exc:
+        done.append(f"slate_reprice:error:{str(exc)[:80]}")
     return done
 
 
@@ -1838,7 +2371,68 @@ def build_parser() -> argparse.ArgumentParser:
         help="intraday run: sweep only series with markets at the last exhaustive discovery, reconcile against it",
     )
     r.add_argument("--fail-on-incomplete", action="store_true")
+    r.add_argument(
+        "--board-in", action="append", help="model board(s) to merge this run's fixtures onto"
+    )
+    r.add_argument(
+        "--board-out",
+        default=None,
+        help="write the merged model board (latest.model_board.v1.json)",
+    )
+    r.add_argument(
+        "--slate-out-dir",
+        default=None,
+        help="reprice the board on this run's sweep and write runs/latest.actionable_slate.v1.json here",
+    )
+    r.add_argument(
+        "--slate-root",
+        action="append",
+        help="local data root(s) for lineups / Pinnacle rows / fixture context (default: --espn-dir)",
+    )
+    r.add_argument("--slate-trigger", default="run_soccer")
+    r.add_argument("--slate-lookahead-hours", type=float, default=48.0)
     r.set_defaults(func=cmd_run)
+
+    sl = sub.add_parser("slate", help="live actionable slate (cached model x fresh Kalshi prices)")
+    slsub = sl.add_subparsers(dest="slate_cmd", required=True)
+    slr = slsub.add_parser(
+        "reprice", help="REPRICE ONLY: cached board x latest Kalshi sweep (no model, no network)"
+    )
+    slr.add_argument("--catalog", default=None, help="the capture's latest_catalog.json")
+    slr.add_argument("--out-dir", required=True, help="payload root (runs/, dispatch/slate_log/)")
+    slr.add_argument(
+        "--root", action="append", help="archive root(s) to read (board, lineups, ...)"
+    )
+    slr.add_argument("--trigger", default="kalshi_capture")
+    slr.add_argument("--lookahead-hours", type=float, default=48.0)
+    slr.add_argument("--kalshi-capture-runtime-s", type=float, default=None)
+    slr.add_argument("--run-model-version", default="dc_laplace_v1")
+    slr.add_argument("--run-engine-version", default="world_sim_v2")
+    slr.add_argument("--run-worlds-version", default="worlds_v1")
+    slr.set_defaults(func=cmd_slate_reprice)
+    slf = slsub.add_parser(
+        "refresh",
+        help="REFRESH SOCCER SLATE: capture -> lineups -> fast model (cache reuse) -> reprice (no Odds API)",
+    )
+    slf.add_argument("--archive-dir", required=True)
+    slf.add_argument("--out-dir", required=True)
+    slf.add_argument("--sim-cache", default="simcache")
+    slf.add_argument("--window", type=int, default=48, help="model window (hours ahead)")
+    slf.add_argument("--lookahead-hours", type=float, default=48.0)
+    slf.add_argument("--lineup-hours", type=float, default=3.0)
+    slf.add_argument("--skip-lineups", action="store_true")
+    slf.add_argument("--summary-out", default=None)
+    slf.add_argument("--run-model-version", default="dc_laplace_v1")
+    slf.add_argument("--run-engine-version", default="world_sim_v2")
+    slf.add_argument("--run-worlds-version", default="worlds_v1")
+    slf.set_defaults(func=cmd_slate_refresh)
+    slm = slsub.add_parser(
+        "merge-latest", help="publish-time merge of a latest board/slate pointer"
+    )
+    slm.add_argument("--src", required=True)
+    slm.add_argument("--dst", required=True)
+    slm.add_argument("--kind", choices=["board", "slate", "index"], required=True)
+    slm.set_defaults(func=cmd_slate_merge_latest)
 
     d = sub.add_parser("discover", help="exhaustive Kalshi soccer discovery -> catalog JSON")
     d.add_argument("--out", default=str(DATA / "catalog" / "latest_catalog.json"))
@@ -2101,6 +2695,30 @@ def build_parser() -> argparse.ArgumentParser:
     dt.add_argument("--run-model-version", default="dc_laplace_v1")
     dt.add_argument("--run-engine-version", default="world_sim_v2")
     dt.add_argument("--run-worlds-version", default="worlds_v1")
+    dt.add_argument(
+        "--model-refresh",
+        choices=["selective", "every", "off"],
+        default="selective",
+        help="model runs at due horizons: T-60, T-15 on input change, invalidated/missing (selective)",
+    )
+    dt.add_argument(
+        "--sim-cache-dir",
+        default=None,
+        help="simulation cache kept outside the publish payload (default: <out>/../simcache)",
+    )
+    dt.add_argument(
+        "--slate-refresh-minutes",
+        type=float,
+        default=0.0,
+        help="chain only: free Kalshi capture + reprice this often between horizons (0 = off)",
+    )
+    dt.add_argument(
+        "--slate-active-hours",
+        type=float,
+        default=12.0,
+        help="periodic slate refresh runs while a scheduled fixture kicks off within this many hours",
+    )
+    dt.add_argument("--slate-lookahead-hours", type=float, default=48.0)
     dt.set_defaults(func=cmd_dispatch_tick)
     du = dpsub.add_parser(
         "upcoming",

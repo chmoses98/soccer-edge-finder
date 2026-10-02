@@ -14,7 +14,10 @@ if [ -d "$WORK/ledger" ]; then
   rm -rf "$WORK/ledger"
 fi
 if [ -d "$WORK/runs" ]; then
-  for r in "$WORK"/runs/*/; do [ -d "$r" ] && rm -f "$r/priced_contracts.json" "$r/coverage_diagnostics.json"; done
+  # model-refresh runs live under runs/<day>/<run_id>/ (archive verify resolves run_ids there); older fast
+  # runs used runs/<batch_id>/. Neither publishes the ledger duplicate or the reconstructible diagnostics.
+  find "$WORK/runs" -mindepth 2 -maxdepth 3 \( -name priced_contracts.json -o -name coverage_diagnostics.json \) -delete
+  rm -rf "$WORK/runs/_pending"
 fi
 [ -d "$WORK/dispatch" ] || exit 0
 "$(dirname "$0")/archive_publish.sh" "$WORK" . "$MSG"

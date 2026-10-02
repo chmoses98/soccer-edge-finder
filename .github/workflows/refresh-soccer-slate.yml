@@ -1,0 +1,77 @@
+name: REFRESH SOCCER SLATE
+run-name: "REFRESH SOCCER SLATE · ${{ github.actor }}"
+
+# The ONE manual button for a current, actionable soccer slate (docs/ACTIONABLE_SLATE.md).
+#
+#   1. fresh Kalshi sweep (free, fast capture reconciled against the daily catalog)
+#   2. ESPN lineups for fixtures kicking off within 3 h (free)
+#   3. fast model run on that same sweep: refit (seconds), REUSE every cached simulation whose pricing
+#      inputs are unchanged, simulate only the rest; prediction records are archived as usual
+#   4. reprice every supported contract -> runs/latest.actionable_slate.v1.json (+ model board, reprice log)
+#
+# Never calls The Odds API: the paid Pinnacle entry (T-60) and close (T-15) stay with the kickoff chain.
+# Business logic lives in `soccer slate refresh`; this file only orchestrates.
+
+on:
+  workflow_dispatch:
+    inputs:
+      window_hours:
+        description: "model window (hours ahead of now)"
+        default: "48"
+
+concurrency:
+  group: data-writer-archive-slate
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e .
+      - name: Persist the simulation cache (shared with run-soccer and kickoff-dispatch)
+        uses: actions/cache@v4
+        with:
+          path: simcache
+          key: simcache-refresh-${{ github.run_id }}
+          restore-keys: |
+            simcache-
+      - name: Fetch archive tip (board, ledger index, ESPN fixtures/results, lineups, Pinnacle rows)
+        run: |
+          git clone --quiet --depth 1 --branch data-archive "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" archive
+      - name: Refresh (capture -> lineups -> fast model with cache reuse -> reprice)
+        id: refresh
+        timeout-minutes: 25
+        run: |
+          set -o pipefail
+          mkdir -p work simcache
+          python -m soccer_edge.cli slate refresh --archive-dir archive --out-dir work --sim-cache simcache --window "${{ inputs.window_hours || '48' }}" --summary-out refresh_summary.json | tee refresh.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: refresh-soccer-slate-${{ github.run_id }}
+          path: |
+            work/
+            refresh.log
+            refresh_summary.json
+          retention-days: 7
+      - name: Publish slate, board, snapshots, lineups, new prediction records
+        if: ${{ hashFiles('work/runs/latest.actionable_slate.v1.json') != '' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p work/dispatch   # kickoff_publish.sh publishes payloads that carry a dispatch/ dir
+          scripts/kickoff_publish.sh work "refresh-soccer-slate ${{ github.run_id }} $(date -u +%Y-%m-%dT%H:%MZ)"
+      - name: Summary
+        if: always()
+        run: |
+          { echo '## REFRESH SOCCER SLATE'; echo '```'; tail -25 refresh.log 2>/dev/null; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          head -40 work/runs/LATEST_ACTIONABLE_SLATE.md >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true

@@ -5,7 +5,6 @@
 # concurrency is set by the workflow; rebase before push; never `|| true` the push.
 set -euo pipefail
 SRC="$1"; DEST="$2"; MSG="$3"
-SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 BRANCH="${ARCHIVE_BRANCH:-data-archive}"
 WORK="$(mktemp -d)"
 git config --global user.name "soccer-edge-bot"
@@ -25,47 +24,81 @@ else
     git add README.md && git commit -qm "archive: bootstrap" )
 fi
 mkdir -p "$WORK/$DEST"
+SRC_ABS="$(cd "$SRC" && pwd)"
+HAVE_PKG=0; python -c "import soccer_edge" >/dev/null 2>&1 && HAVE_PKG=1
 # Copy without deleting anything already archived. Workflows rebuild their day files from scratch, so a
 # plain copy would REPLACE an archived .jsonl day file (2026-09-28: 830 prediction rows of one run were
 # overwritten by the next run). .jsonl files are therefore append-merged: every archived line is kept
-# and only lines not already present are appended. predictions/index.json (a grow-only pointer index) is
-# union-merged so a long-running publisher never drops entries another writer added meanwhile (2026-10-01/02:
-# kickoff-dispatch links failed `index_missing_record` after run-soccer published mid-link). Other files
-# (run outputs, last_* state) are copied.
-SRC_ABS="$(cd "$SRC" && pwd)"
-( cd "$SRC_ABS" && find . -type f -print0 ) | while IFS= read -r -d '' rel; do
-  rel="${rel#./}"; src_f="$SRC_ABS/$rel"; dst_f="$WORK/$DEST/$rel"
-  mkdir -p "$(dirname "$dst_f")"
-  if [[ "$rel" == *.jsonl && -s "$dst_f" ]]; then
-    if [ -n "$(tail -c1 "$dst_f")" ]; then printf '\n' >> "$dst_f"; fi
-    new_lines="$(mktemp)"
-    awk 'NR==FNR { seen[$0]=1; next } $0 != "" && !($0 in seen) { print; seen[$0]=1 }' "$dst_f" "$src_f" > "$new_lines"
-    cat "$new_lines" >> "$dst_f"; rm -f "$new_lines"
-  elif [[ "$DEST/$rel" =~ (^|/)predictions/index\.json$ && -s "$dst_f" ]]; then
-    python3 "$SCRIPT_DIR/merge_json_index.py" "$dst_f" "$src_f" || { echo "::error::predictions index merge refused"; exit 1; }
-  else
-    cp -f "$src_f" "$dst_f"
+# and only lines not already present are appended. The live-slate pointers are merged, never blindly
+# replaced (several workflows write them): the model board is a union by fixture (newer entry wins) and the
+# actionable slate keeps whichever copy has the newer Kalshi observation (docs/ACTIONABLE_SLATE.md). The
+# predictions index is a union (records are append-only; a payload's index can predate another writer's).
+# Other files (indexes, run outputs) are copied.
+apply_payload() {
+  ( cd "$SRC_ABS" && find . -type f -print0 ) | while IFS= read -r -d '' rel; do
+    rel="${rel#./}"; src_f="$SRC_ABS/$rel"; dst_f="$WORK/$DEST/$rel"
+    mkdir -p "$(dirname "$dst_f")"
+    if [[ "$rel" == *.jsonl && -s "$dst_f" ]]; then
+      if [ -n "$(tail -c1 "$dst_f")" ]; then printf '\n' >> "$dst_f"; fi
+      new_lines="$(mktemp)"
+      awk 'NR==FNR { seen[$0]=1; next } $0 != "" && !($0 in seen) { print; seen[$0]=1 }' "$dst_f" "$src_f" > "$new_lines"
+      cat "$new_lines" >> "$dst_f"; rm -f "$new_lines"
+    elif [[ "$HAVE_PKG" == 1 && -s "$dst_f" && ( "$rel" == predictions/index.json || "$rel" == */predictions/index.json ) ]]; then
+      # union: another writer may have archived records since this payload's index was restored
+      python -m soccer_edge.cli slate merge-latest --kind index --src "$src_f" --dst "$dst_f"
+    elif [[ "$HAVE_PKG" == 1 && -s "$dst_f" && "$rel" == */latest.model_board.v1.json ]]; then
+      python -m soccer_edge.cli slate merge-latest --kind board --src "$src_f" --dst "$dst_f"
+    elif [[ "$HAVE_PKG" == 1 && -s "$dst_f" && "$rel" == */latest.actionable_slate.v1.json ]]; then
+      python -m soccer_edge.cli slate merge-latest --kind slate --src "$src_f" --dst "$dst_f"
+    elif [[ "$HAVE_PKG" == 1 && -s "$dst_f" && "$rel" == */LATEST_ACTIONABLE_SLATE.md ]]; then
+      :  # rewritten below from whichever slate JSON was kept
+    else
+      cp -f "$src_f" "$dst_f"
+    fi
+  done
+  if [[ "$HAVE_PKG" == 1 && -f "$SRC_ABS/runs/latest.actionable_slate.v1.json" ]]; then
+    python - "$WORK/$DEST/runs" <<'PY'
+import sys
+from pathlib import Path
+from soccer_edge.contracts.slate_v1 import ActionableSlateV1
+from soccer_edge.core.serialization import read_json
+from soccer_edge.slate.render import render_slate_markdown
+d = Path(sys.argv[1])
+s = ActionableSlateV1.model_validate(read_json(d / "latest.actionable_slate.v1.json"))
+(d / "LATEST_ACTIONABLE_SLATE.md").write_text(render_slate_markdown(s), encoding="utf-8")
+PY
   fi
-done
+  # Integrity: extend the manifest over the merged tree and verify it. A manifest that does not verify means
+  # the archive lost or changed evidence; the publish is aborted rather than committing on top of corruption.
+  # Before the manifest is bootstrapped (archive-recover.yml with init_manifest) both steps are no-ops.
+  if [[ "$HAVE_PKG" == 1 ]]; then
+    ( cd "$WORK" && python -m soccer_edge.cli archive manifest --archive-dir "$WORK" --if-present ) || { echo "::error::archive manifest refused (corruption)"; return 1; }
+    ( cd "$WORK" && python -m soccer_edge.cli archive verify --archive-dir "$WORK" --allow-missing-manifest ) || { echo "::error::archive verify failed"; return 1; }
+  else
+    echo "archive: soccer_edge not importable; manifest/verify skipped"
+  fi
+  # size guard: refuse files > 45 MB (GH001 lesson)
+  if ( cd "$WORK" && find "$DEST" -type f -size +45M | grep -q . ); then echo "::error::file over 45MB in archive payload"; ( cd "$WORK" && find "$DEST" -type f -size +45M ); return 1; fi
+  ( cd "$WORK" && git add -- "$DEST" )
+}
+apply_payload || exit 1
 cd "$WORK"
-# Integrity: extend the manifest over the merged tree and verify it. A manifest that does not verify means
-# the archive lost or changed evidence; the publish is aborted rather than committing on top of corruption.
-# Before the manifest is bootstrapped (archive-recover.yml with init_manifest) both steps are no-ops.
-if python -c "import soccer_edge" >/dev/null 2>&1; then
-  python -m soccer_edge.cli archive manifest --archive-dir "$WORK" --if-present || { echo "::error::archive manifest refused (corruption)"; exit 1; }
-  python -m soccer_edge.cli archive verify --archive-dir "$WORK" --allow-missing-manifest || { echo "::error::archive verify failed"; exit 1; }
-else
-  echo "archive: soccer_edge not importable; manifest/verify skipped"
-fi
-# size guard: refuse files > 45 MB (GH001 lesson)
-if find "$DEST" -type f -size +45M | grep -q .; then echo "::error::file over 45MB in archive payload"; find "$DEST" -type f -size +45M; exit 1; fi
-git add -- "$DEST"
 if git diff --cached --quiet; then echo "archive: nothing new"; exit 0; fi
 git commit -qm "$MSG"
 for attempt in 1 2 3 4; do
   if git push --quiet origin "HEAD:$BRANCH"; then echo "archive: pushed to $BRANCH"; exit 0; fi
   echo "push rejected (attempt $attempt); rebasing"
-  git fetch --quiet origin "$BRANCH" && git rebase --quiet "origin/$BRANCH" || { echo "::error::rebase failed"; exit 1; }
+  git fetch --quiet origin "$BRANCH" || { echo "::error::fetch failed"; exit 1; }
+  if ! git rebase --quiet "origin/$BRANCH"; then
+    # both sides changed a mutable pointer (e.g. the latest slate): re-apply this payload onto the new tip
+    # with the same merge rules instead of failing the publish
+    echo "rebase conflict; re-applying the payload onto origin/$BRANCH"
+    git rebase --abort || true
+    git reset --quiet --hard "origin/$BRANCH"
+    apply_payload || exit 1
+    if git diff --cached --quiet; then echo "archive: nothing new after re-apply"; exit 0; fi
+    git commit -qm "$MSG"
+  fi
   sleep $((attempt * 3))
 done
 echo "::error::archive push failed after retries"; exit 1

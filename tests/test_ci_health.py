@@ -34,7 +34,6 @@ def _load_script(name: str):
 
 
 health_gate = _load_script("health_gate")
-merge_json_index = _load_script("merge_json_index")
 
 
 # ---------------------------------------------------------------- bounded weather capture
@@ -284,24 +283,6 @@ def test_espn_lineups_workflow_has_one_enforcement_point():
 # ---------------------------------------------------------------- grow-only predictions index
 
 
-def test_merge_index_union_archived_wins():
-    merged, st = merge_json_index.merge_index(
-        {"a": "d1/p.jsonl", "b": "d1/p.jsonl", "c": "d2/p.jsonl"},
-        {"a": "d1/p.jsonl", "d": "d3/p.jsonl", "c": "dX/p.jsonl"},
-    )
-    assert merged == {"a": "d1/p.jsonl", "b": "d1/p.jsonl", "c": "d2/p.jsonl", "d": "d3/p.jsonl"}
-    assert st == {"kept": 3, "added": 1, "conflicts": 1}
-
-
-def test_merge_index_refuses_corrupt_input(tmp_path):
-    dst = _write(tmp_path / "index.json", {"a": "x"})
-    (tmp_path / "in.json").write_text("[1, 2")
-    assert merge_json_index.main([str(dst), str(tmp_path / "in.json")]) == 2
-    assert json.loads(dst.read_text()) == {"a": "x"}  # untouched
-    _write(tmp_path / "list.json", ["a"])
-    assert merge_json_index.main([str(dst), str(tmp_path / "list.json")]) == 2
-
-
 def _pred_line(rid: str, run_id: str) -> str:
     from soccer_edge.archive.ledger import PredictionLedger
     from soccer_edge.core.serialization import canonical_json
@@ -379,7 +360,7 @@ def test_archive_publish_keeps_index_entries_added_by_a_concurrent_writer(tmp_pa
         check=False,
     )
     assert p.returncode == 0, p.stdout + p.stderr
-    assert '"added": 1' in p.stdout and "archive: pushed to data-archive" in p.stdout
+    assert "archive: pushed to data-archive" in p.stdout
     out = tmp_path / "out"
     _git(tmp_path, "clone", "-q", "--branch", "data-archive", str(remote), str(out), env=env)
     idx = json.loads((out / "predictions" / "index.json").read_text())
