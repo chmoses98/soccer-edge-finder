@@ -10,6 +10,9 @@ added only for these due fixtures:
            (T-60 missed). The Pinnacle close is the existing approved T-15 capture.
     T-120, T-30, T-5
            reprice only, unless the cached model is invalidated or missing for a fixture with Kalshi markets.
+    between horizons (periodic free refresh)
+           a scoped model run only for scheduled fixtures that entered the lookahead without ever being
+           modelled (`unmodelled_fixtures`), each attempted once per link.
 
 `mode`: 'selective' (default), 'every' (legacy `--with-run`: a model run at every due horizon),
 'off' (never; reprice only). A refresh never triggers a paid reference call: the paid calls are decided by
@@ -82,3 +85,26 @@ def refresh_window_hours(due: list[Any], fixture_ids: set[str], now: datetime) -
         if d.fixture.fixture_id in fixture_ids
     ]
     return max(3, int(max(mins, default=0) // 60) + 2)
+
+
+def unmodelled_fixtures(
+    schedule: list[Any],
+    board: dict[str, Any],
+    *,
+    now: datetime,
+    lookahead_hours: float,
+    attempted: set[str],
+) -> list[Any]:
+    """Scheduled fixtures inside the slate lookahead that no model run has priced yet (not on the board),
+    excluding ones already attempted by this link. They entered the rolling window after the last full
+    RUN SOCCER (whose window ended earlier), so without a scoped model run the slate would omit them.
+    A fixture without Kalshi markets prices nothing and is not retried by the same link."""
+    end = now + timedelta(hours=lookahead_hours)
+    on_board = set((board.get("fixtures") or {}).keys())
+    return [
+        fx
+        for fx in schedule
+        if now < fx.kickoff_utc <= end
+        and fx.fixture_id not in on_board
+        and fx.fixture_id not in attempted
+    ]

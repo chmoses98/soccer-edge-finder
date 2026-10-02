@@ -1330,6 +1330,9 @@ def cmd_dispatch_tick(args: argparse.Namespace) -> int:
     slate_every = timedelta(minutes=args.slate_refresh_minutes or 0)
     last_slate = None
     slate_refreshes = 0
+    models_attempted: set[str] = (
+        set()
+    )  # fixtures this link already tried to model on entering the window
 
     def slate_active(at) -> bool:
         if not args.chain or slate_every <= timedelta(0):
@@ -1369,7 +1372,9 @@ def cmd_dispatch_tick(args: argparse.Namespace) -> int:
                     break
                 if slate_active(now) and (last_slate is None or now - last_slate >= slate_every):
                     batch_id = f"ks-{now:%Y%m%dT%H%M%SZ}"
-                    acts = _slate_refresh(out, batch_id, args)
+                    acts = _slate_refresh(
+                        out, batch_id, args, schedule=schedule, attempted=models_attempted
+                    )
                     last_slate = now  # the sweep started now: prices are observed from this instant
                     slate_refreshes += 1
                     summary.append(
@@ -1685,8 +1690,17 @@ def _tick_sim_cache(args: argparse.Namespace) -> Path:
     return p
 
 
-def _slate_refresh(out: Path, batch_id: str, args: argparse.Namespace) -> list[str]:
-    """Between horizons: free Kalshi capture + reprice of the cached board. No model, no paid call."""
+def _slate_refresh(
+    out: Path,
+    batch_id: str,
+    args: argparse.Namespace,
+    *,
+    schedule: list | None = None,
+    attempted: set[str] | None = None,
+) -> list[str]:
+    """Between horizons: free Kalshi capture + reprice of the cached board. No paid call. A scoped model
+    run is added only for scheduled fixtures that entered the lookahead without ever being modelled
+    (slate/refresh.py `unmodelled_fixtures`), each attempted once per link (`attempted`)."""
     import time
 
     try:
@@ -1699,6 +1713,48 @@ def _slate_refresh(out: Path, batch_id: str, args: argparse.Namespace) -> list[s
     except Exception as exc:
         return [f"kalshi_capture:error:{str(exc)[:80]}"]
     done = [f"kalshi_capture:{'ok' if rc == 0 else 'incomplete'}"]
+    if schedule and attempted is not None and args.model_refresh != "off":
+        from math import ceil
+
+        from soccer_edge.slate.board import BOARD_FILE, load_board
+        from soccer_edge.slate.refresh import unmodelled_fixtures
+
+        now = utc_now()
+        archive = Path(args.archive_dir)
+        board = load_board(out / BOARD_FILE, archive / BOARD_FILE, now=now)
+        new = unmodelled_fixtures(
+            schedule,
+            board,
+            now=now,
+            lookahead_hours=args.slate_lookahead_hours,
+            attempted=attempted,
+        )
+        if new:
+            attempted |= {fx.fixture_id for fx in new}
+            hours = max((fx.kickoff_utc - now).total_seconds() / 3600 for fx in new)
+            try:
+                stats = _slate_model_refresh(
+                    out,
+                    archive,
+                    disc,
+                    games=sorted(fx.fixture_id for fx in new),
+                    window_hours=max(3, ceil(hours) + 1),
+                    sim_cache=_tick_sim_cache(args),
+                    versions_args=args,
+                    trigger="kalshi_capture:slate_refresh+new_fixtures",
+                    lookahead_hours=args.slate_lookahead_hours,
+                    capture_runtime_s=cap_s,
+                )
+                done.append(
+                    f"model_refresh:{'ok' if stats.get('rc') == 0 else 'incomplete'}:"
+                    f"fixtures={len(new)}:sim={len(stats.get('simulated', []))}:"
+                    f"board={stats.get('board_fixtures', 0)}:why=entered_lookahead_unmodelled"
+                )
+                return [*done, "slate_reprice:ok:via_model_refresh"]
+            except SystemExit as exc:
+                done.append(f"model_refresh:exit:{exc.code}")
+            except Exception as exc:
+                done.append(f"model_refresh:error:{str(exc)[:80]}")
     try:
         row = _run_reprice(
             out_root=out,
