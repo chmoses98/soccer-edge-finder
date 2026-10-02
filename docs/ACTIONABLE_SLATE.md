@@ -101,6 +101,7 @@ time; after `action_valid_until` every price is STALE_PRICE / NO ACTION, whateve
 |---|---|---|---|
 | any fresh Kalshi capture (kalshi-capture cron, chain batch) | reprice the whole board on that sweep | 0 | 0 |
 | chain, between horizons, a fixture within 12 h | free fast Kalshi capture + reprice every 15 min | 0 | 0 |
+| a scheduled fixture enters the 48 h lookahead without ever having been modelled (beyond the last RUN SOCCER window) | the next periodic refresh adds one fixture-scoped model run on the same sweep; attempted once per link | 1 per new fixture with Kalshi markets | 0 |
 | T-120, T-30 | capture + reprice; model only if the fixture is invalidated / missing | 0 normally | 0 |
 | **T-60** | capture → Pinnacle **entry** (existing guarded call) → lineups → **fast model refresh scoped to the due fixture(s)** on the same sweep (no second discovery; sim cache reused when inputs are unchanged) → board → reprice | ≤ 1 per due fixture (0 on a cache hit) | the existing entry call |
 | **T-15** | capture → Pinnacle **close** (existing) → lineups → model **only if** an input changed (XI published, kickoff, venue, version) or no refresh since T-60 → reprice | 0 unless an input changed | the existing close call |

@@ -829,7 +829,7 @@ def test_chain_reprices_every_15_minutes_between_horizons_for_free(monkeypatch, 
         horizon_batches.append((clock.now(), sorted(d.horizon for d in due), paid))
         return ["kalshi_capture:ok", f"odds_api:ok:credits={3 * paid}:paid={paid}:rows=0"]
 
-    def fake_refresh(out, batch_id, args):
+    def fake_refresh(out, batch_id, args, **kw):
         refreshes.append(clock.now())
         clock.sleep(150)  # a fast capture takes ~2.5 min
         return ["kalshi_capture:ok", "slate_reprice:ok:sides=10:sim=0"]
@@ -1001,3 +1001,63 @@ def test_fast_run_reconcile_gets_catalog_evidence_not_counters(built):
     assert reconcile_fast_vs_full(disc.counters(), index)["evidence_level"] == "insufficient"
     rec = reconcile_fast_vs_full(disc.to_json(), index)
     assert rec["evidence_level"] in ("series", "market")
+
+
+def test_fixture_entering_the_lookahead_is_modelled_once_by_the_periodic_refresh(
+    built, monkeypatch, tmp_path
+):
+    """A Kalshi-listed fixture beyond the last full run's window enters the rolling 48 h lookahead: the
+    free periodic refresh runs one scoped model run for it (no paid call), and never retries it in the
+    same link; fixtures already on the board are not re-modelled."""
+    import soccer_edge.cli as cli
+    from soccer_edge.slate.board import BOARD_FILE
+    from soccer_edge.slate.refresh import unmodelled_fixtures
+
+    board = built["board"]
+    on_board = sorted(board["fixtures"])[0]
+    sched = [
+        ScheduledFixture(on_board, KO, "eng.premier_league", "run_output", 40),
+        ScheduledFixture(
+            "fx:new:late", NOW + timedelta(hours=47), "uefa.nations_league", "espn", 0
+        ),
+        ScheduledFixture(
+            "fx:new:beyond", NOW + timedelta(hours=49), "uefa.nations_league", "espn", 0
+        ),
+        ScheduledFixture("fx:started", NOW - timedelta(minutes=5), "usa.mls", "espn", 0),
+    ]
+    got = unmodelled_fixtures(sched, board, now=NOW, lookahead_hours=48, attempted=set())
+    assert [fx.fixture_id for fx in got] == ["fx:new:late"]
+    assert (
+        unmodelled_fixtures(sched, board, now=NOW, lookahead_hours=48, attempted={"fx:new:late"})
+        == []
+    )
+
+    out, arch = tmp_path / "out", tmp_path / "arch"
+    arch.mkdir()
+    save_board(arch / BOARD_FILE, board)
+    calls: list[tuple[list[str], int]] = []
+    monkeypatch.setattr(cli, "utc_now", lambda: NOW)
+    monkeypatch.setattr(
+        cli,
+        "_capture_sweep",
+        lambda a: (0, replace_started(built["disc"], NOW - timedelta(minutes=1))),
+    )
+
+    def model_refresh(o, archive, d, *, games, window_hours, **k):
+        calls.append((games, window_hours))
+        return {"rc": 0, "simulated": [], "board_fixtures": 0}
+
+    monkeypatch.setattr(cli, "_slate_model_refresh", model_refresh)
+    args = cli.build_parser().parse_args(
+        ["dispatch", "tick", "--archive-dir", str(arch), "--out-dir", str(out), "--chain"]
+    )
+    attempted: set[str] = set()
+    a1 = cli._slate_refresh(out, "ks-1", args, schedule=sched, attempted=attempted)
+    assert calls == [(["fx:new:late"], 48)]  # window ceil(47 h) + 1 covers the kickoff
+    assert any("why=entered_lookahead_unmodelled" in a for a in a1)
+    a2 = cli._slate_refresh(out, "ks-2", args, schedule=sched, attempted=attempted)
+    assert len(calls) == 1  # attempted once per link, then plain reprice
+    assert any(a.startswith("slate_reprice:ok:sides=") for a in a2)
+    args.model_refresh = "off"
+    cli._slate_refresh(out, "ks-3", args, schedule=sched, attempted=set())
+    assert len(calls) == 1
