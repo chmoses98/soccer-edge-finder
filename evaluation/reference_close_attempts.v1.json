@@ -2,11 +2,21 @@
  "counts": {
   "MISSED_DISPATCHER_CLOSE": 20,
   "DISPATCHER_CLOSE_NO_ATTEMPT": 17,
-  "NO_SPORT_KEY": 8,
-  "PINNACLE_VALID_CLOSE": 4,
+  "NO_SPORT_KEY": 10,
+  "PINNACLE_VALID_CLOSE": 6,
   "PINNACLE_QUOTED_NOTHING": 9
  },
  "fixtures": {
+  "fx:arg.primera:2026:arg.independiente:arg.instituto": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261002T220000Z"
+  },
+  "fx:bra.serie_a:2026:bra.sao_paulo:bra.santos": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261002T224500Z"
+  },
   "fx:concacaf.nations_league:2026-27:nat.aia:nat.aru": {
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
@@ -77,10 +87,20 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261002T014500Z"
   },
+  "fx:concacaf.nations_league:2026-27:nat.skn:nat.cub": {
+   "state": "NO_SPORT_KEY",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261002T204500Z"
+  },
   "fx:concacaf.nations_league:2026-27:nat.skn:nat.grn": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:concacaf.nations_league:2026-27:nat.sur:nat.gua": {
+   "state": "NO_SPORT_KEY",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261002T214533Z"
   },
   "fx:concacaf.nations_league:2026-27:nat.sur:nat.mtq": {
    "state": "MISSED_DISPATCHER_CLOSE",

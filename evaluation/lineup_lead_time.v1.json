@@ -1,10 +1,28 @@
 {
-  "as_of": "2026-10-02T19:27:08.532771Z",
+  "as_of": "2026-10-02T23:22:55.918498Z",
   "by_competition": {
+    "arg.1": {
+      "fixtures": 1,
+      "median_lead_minutes": 12.4290696,
+      "with_pre_kickoff_xi": 1,
+      "with_xi_ge_20min": 0
+    },
+    "bra.1": {
+      "fixtures": 1,
+      "median_lead_minutes": 27.457223183333333,
+      "with_pre_kickoff_xi": 1,
+      "with_xi_ge_20min": 1
+    },
     "bra.2": {
-      "fixtures": 2,
+      "fixtures": 3,
       "median_lead_minutes": 1.0762882666666667,
       "with_pre_kickoff_xi": 1,
+      "with_xi_ge_20min": 0
+    },
+    "chi.1": {
+      "fixtures": 1,
+      "median_lead_minutes": null,
+      "with_pre_kickoff_xi": 0,
       "with_xi_ge_20min": 0
     },
     "col.1": {
@@ -14,10 +32,10 @@
       "with_xi_ge_20min": 0
     },
     "concacaf.nations.league": {
-      "fixtures": 9,
+      "fixtures": 11,
       "median_lead_minutes": 27.44865271666667,
-      "with_pre_kickoff_xi": 6,
-      "with_xi_ge_20min": 6
+      "with_pre_kickoff_xi": 8,
+      "with_xi_ge_20min": 8
     },
     "eng.5": {
       "fixtures": 2,
@@ -617,19 +635,19 @@
       "xi_first_observed_at": "2026-09-30T23:57:11.854113+00:00"
     },
     {
-      "capture_attempts": 5,
+      "capture_attempts": 9,
       "competition": "arg.1",
       "espn_event_id": "401841588",
-      "final_state": "unconfirmed",
-      "kickoff_passed": false,
-      "lead_time_seconds": null,
-      "observed_before_kickoff": false,
+      "final_state": "post_hoc",
+      "kickoff_passed": true,
+      "lead_time_seconds": 745.744176,
+      "observed_before_kickoff": true,
       "scheduled_kickoff_utc": "2026-10-02T22:15:00+00:00",
       "source": "espn_site_api",
-      "xi_first_observed_at": null
+      "xi_first_observed_at": "2026-10-02T22:02:34.255824+00:00"
     },
     {
-      "capture_attempts": 5,
+      "capture_attempts": 6,
       "competition": "arg.1",
       "espn_event_id": "401841594",
       "final_state": "unconfirmed",
@@ -641,7 +659,7 @@
       "xi_first_observed_at": null
     },
     {
-      "capture_attempts": 5,
+      "capture_attempts": 6,
       "competition": "arg.1",
       "espn_event_id": "401841587",
       "final_state": "unconfirmed",
@@ -653,23 +671,23 @@
       "xi_first_observed_at": null
     },
     {
-      "capture_attempts": 5,
+      "capture_attempts": 7,
       "competition": "bra.1",
       "espn_event_id": "401841169",
-      "final_state": "unconfirmed",
-      "kickoff_passed": false,
-      "lead_time_seconds": null,
-      "observed_before_kickoff": false,
+      "final_state": "confirmed",
+      "kickoff_passed": true,
+      "lead_time_seconds": 1647.433391,
+      "observed_before_kickoff": true,
       "scheduled_kickoff_utc": "2026-10-02T23:00:00+00:00",
       "source": "espn_site_api",
-      "xi_first_observed_at": null
+      "xi_first_observed_at": "2026-10-02T22:32:32.566609+00:00"
     },
     {
       "capture_attempts": 5,
       "competition": "bra.2",
       "espn_event_id": "401860364",
       "final_state": "unconfirmed",
-      "kickoff_passed": false,
+      "kickoff_passed": true,
       "lead_time_seconds": null,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-10-02T22:30:00+00:00",
@@ -717,7 +735,7 @@
       "competition": "chi.1",
       "espn_event_id": "401850654",
       "final_state": "unconfirmed",
-      "kickoff_passed": false,
+      "kickoff_passed": true,
       "lead_time_seconds": null,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-10-02T23:00:00+00:00",
@@ -749,7 +767,7 @@
       "xi_first_observed_at": null
     },
     {
-      "capture_attempts": 3,
+      "capture_attempts": 7,
       "competition": "concacaf.nations.league",
       "espn_event_id": "401900593",
       "final_state": "post_hoc",
@@ -761,28 +779,28 @@
       "xi_first_observed_at": "2026-10-02T18:29:53.283526+00:00"
     },
     {
-      "capture_attempts": 1,
+      "capture_attempts": 6,
       "competition": "concacaf.nations.league",
       "espn_event_id": "401900591",
-      "final_state": "unconfirmed",
-      "kickoff_passed": false,
-      "lead_time_seconds": null,
-      "observed_before_kickoff": false,
+      "final_state": "post_hoc",
+      "kickoff_passed": true,
+      "lead_time_seconds": 1646.352444,
+      "observed_before_kickoff": true,
       "scheduled_kickoff_utc": "2026-10-02T21:00:00+00:00",
       "source": "espn_site_api",
-      "xi_first_observed_at": null
+      "xi_first_observed_at": "2026-10-02T20:32:33.647556+00:00"
     },
     {
-      "capture_attempts": 2,
+      "capture_attempts": 4,
       "competition": "concacaf.nations.league",
       "espn_event_id": "401900603",
-      "final_state": "unconfirmed",
-      "kickoff_passed": false,
-      "lead_time_seconds": null,
-      "observed_before_kickoff": false,
+      "final_state": "post_hoc",
+      "kickoff_passed": true,
+      "lead_time_seconds": 1786.007509,
+      "observed_before_kickoff": true,
       "scheduled_kickoff_utc": "2026-10-02T22:00:00+00:00",
       "source": "espn_site_api",
-      "xi_first_observed_at": null
+      "xi_first_observed_at": "2026-10-02T21:30:13.992491+00:00"
     },
     {
       "capture_attempts": 2,
@@ -929,7 +947,7 @@
       "xi_first_observed_at": "2026-10-02T15:08:13.396762+00:00"
     },
     {
-      "capture_attempts": 4,
+      "capture_attempts": 8,
       "competition": "uefa.nations",
       "espn_event_id": "401861109",
       "final_state": "post_hoc",
@@ -941,7 +959,7 @@
       "xi_first_observed_at": "2026-10-02T17:57:02.519621+00:00"
     },
     {
-      "capture_attempts": 4,
+      "capture_attempts": 7,
       "competition": "uefa.nations",
       "espn_event_id": "401861107",
       "final_state": "post_hoc",
@@ -953,7 +971,7 @@
       "xi_first_observed_at": "2026-10-02T17:57:02.667416+00:00"
     },
     {
-      "capture_attempts": 4,
+      "capture_attempts": 7,
       "competition": "uefa.nations",
       "espn_event_id": "401861110",
       "final_state": "post_hoc",
@@ -965,7 +983,7 @@
       "xi_first_observed_at": "2026-10-02T17:57:02.851191+00:00"
     },
     {
-      "capture_attempts": 4,
+      "capture_attempts": 7,
       "competition": "uefa.nations",
       "espn_event_id": "401861103",
       "final_state": "post_hoc",
@@ -977,7 +995,7 @@
       "xi_first_observed_at": "2026-10-02T17:57:02.998418+00:00"
     },
     {
-      "capture_attempts": 4,
+      "capture_attempts": 7,
       "competition": "uefa.nations",
       "espn_event_id": "401861102",
       "final_state": "post_hoc",
@@ -989,7 +1007,7 @@
       "xi_first_observed_at": "2026-10-02T17:57:03.106512+00:00"
     },
     {
-      "capture_attempts": 4,
+      "capture_attempts": 7,
       "competition": "uefa.nations",
       "espn_event_id": "401861108",
       "final_state": "post_hoc",
@@ -1001,7 +1019,7 @@
       "xi_first_observed_at": "2026-10-02T17:57:03.283701+00:00"
     },
     {
-      "capture_attempts": 5,
+      "capture_attempts": 8,
       "competition": "uefa.nations",
       "espn_event_id": "401861106",
       "final_state": "post_hoc",
@@ -1925,22 +1943,22 @@
       "xi_first_observed_at": null
     }
   ],
-  "fixtures_kickoff_passed": 62,
+  "fixtures_kickoff_passed": 68,
   "fixtures_tracked": 154,
   "lead_time_minutes": {
     "max": 57.43608363333333,
-    "median": 47.943810658333334,
+    "median": 47.42712660833333,
     "min": 1.0762882666666667,
-    "n": 30,
-    "p10": 20.459868081666674,
-    "p90": 57.42985438166667
+    "n": 34,
+    "p10": 15.425443200000002,
+    "p90": 57.42940067666667
   },
   "post_kickoff_first_xi": 19,
   "schema": "lineup_lead_time_v1",
-  "share_pre_kickoff_xi": 0.4838709677419355,
-  "share_xi_ge_20min": 0.43548387096774194,
+  "share_pre_kickoff_xi": 0.5,
+  "share_xi_ge_20min": 0.4411764705882353,
   "target": "audit \u00a7I1: >= 90% of priced fixtures with a confirmed XI captured >= 20 min before kickoff",
-  "with_any_xi": 49,
-  "with_pre_kickoff_xi": 30,
-  "with_xi_ge_20min_before_kickoff": 27
+  "with_any_xi": 53,
+  "with_pre_kickoff_xi": 34,
+  "with_xi_ge_20min_before_kickoff": 30
 }
