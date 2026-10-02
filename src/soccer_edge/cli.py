@@ -279,7 +279,9 @@ def cmd_run(args: argparse.Namespace) -> int:
     if full_index is not None:
         from soccer_edge.kalshi.reconcile import reconcile_fast_vs_full
 
-        rec = reconcile_fast_vs_full(disc.counters(), full_index)
+        # the sweep's catalog (series swept + markets), the same evidence the capture workflow reconciles;
+        # bare counters are 'status' evidence that can never prove completeness (always fell back)
+        rec = reconcile_fast_vs_full(disc.to_json(), full_index)
         write_json(Path(args.out_dir) / "fast_reconcile.json", rec)
         print(
             "[kalshi] fast reconciliation:",

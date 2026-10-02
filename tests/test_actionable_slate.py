@@ -903,9 +903,13 @@ def test_model_refresh_end_to_end_reuses_cache_and_never_pays(
             [],
         ),
     )
-    monkeypatch.setattr(
-        reconcile, "reconcile_fast_vs_full", lambda *a, **k: {"complete_relative_to_full": True}
-    )
+    reconciled: list[dict] = []
+
+    def fake_reconcile(fast_doc, full_index):
+        reconciled.append(fast_doc)
+        return {"complete_relative_to_full": True}
+
+    monkeypatch.setattr(reconcile, "reconcile_fast_vs_full", fake_reconcile)
     monkeypatch.setattr(cli, "_reference_capture", lambda *a, **k: ({}, None, {}))
     monkeypatch.setattr(cli, "utc_now", lambda: NOW)
     import soccer_edge.providers.the_odds_api as toa
@@ -930,6 +934,8 @@ def test_model_refresh_end_to_end_reuses_cache_and_never_pays(
         capture_runtime_s=150.0,
     )
     s1 = cli._slate_model_refresh(out, arch, disc, **kw)
+    # the fast run reconciles the sweep's catalog (series + markets), never bare counters
+    assert reconciled and isinstance(reconciled[0].get("markets"), list)
     assert s1["rc"] == 0 and s1["simulated"] == [fid] and s1["board_fixtures"] == 1
     run_dir = Path(s1["run_dir"])
     assert run_dir.parent.name == f"{NOW:%Y-%m-%d}" and run_dir.name.startswith("run-")
@@ -973,3 +979,19 @@ def test_cli_model_defaults_match_the_invalidation_versions():
     t = cli.build_parser().parse_args(["dispatch", "tick", "--archive-dir", "a", "--out-dir", "o"])
     assert (t.run_model_version, t.run_engine_version, t.run_worlds_version) == want
     assert t.model_refresh == "selective" and t.slate_refresh_minutes == 0
+
+
+def test_fast_run_reconcile_gets_catalog_evidence_not_counters(built):
+    """Counters alone are 'insufficient' evidence and always forced the 13-minute exhaustive fallback;
+    the sweep's catalog reaches series/market evidence (same input as the capture workflow's check)."""
+    from soccer_edge.kalshi.reconcile import reconcile_fast_vs_full
+
+    disc = built["disc"]
+    index = {
+        "series": [{"ticker": s} for s in disc.series_records],
+        "series_with_markets": sorted({m.series_ticker for m in disc.markets.values()}),
+        "market_count": len(disc.markets),
+    }
+    assert reconcile_fast_vs_full(disc.counters(), index)["evidence_level"] == "insufficient"
+    rec = reconcile_fast_vs_full(disc.to_json(), index)
+    assert rec["evidence_level"] in ("series", "market")
