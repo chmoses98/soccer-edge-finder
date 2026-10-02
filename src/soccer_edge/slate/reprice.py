@@ -32,7 +32,7 @@ from soccer_edge.contracts.slate_v1 import (
     SlateModelStateV1,
     SlateReferenceStateV1,
 )
-from soccer_edge.core.serialization import append_jsonl, content_hash, read_json_or, write_json
+from soccer_edge.core.serialization import append_jsonl, content_hash, read_json_or
 from soccer_edge.core.time import ensure_utc, iso_utc
 from soccer_edge.kalshi.capture import label_horizon
 from soccer_edge.kalshi.executable import top_of_book
@@ -560,8 +560,7 @@ def write_slate(
     """Write the latest slate + its markdown, append one reprice-log row (dispatch/slate_log/<day>.jsonl)."""
     from soccer_edge.slate.render import render_slate_markdown
 
-    doc = slate.model_dump(mode="json")
-    write_json(out_root / SLATE_FILE, doc)
+    write_slate_json(out_root / SLATE_FILE, slate.model_dump(mode="json"))
     (out_root / SLATE_MD).write_text(render_slate_markdown(slate), encoding="utf-8")
     changes = price_changes(prev, slate)
     row = {
@@ -592,6 +591,15 @@ def write_slate(
     }
     append_jsonl(out_root / SLATE_LOG_DIR / f"{slate.generated_at:%Y-%m-%d}.jsonl", row)
     return row
+
+
+def write_slate_json(path: Path, doc: dict[str, Any]) -> None:
+    """Compact JSON (the slate is read by machines; ~20 % smaller than indented). Field order is kept:
+    header and freshness first, then fixtures, then contract sides with candidates first."""
+    import json
+
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(doc, separators=(",", ":"), default=str) + "\n", encoding="utf-8")
 
 
 def previous_slate(*roots: Path) -> dict[str, Any] | None:

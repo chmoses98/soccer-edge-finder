@@ -137,10 +137,10 @@ Competition/stage are part of the canonical fixture id, so a re-assignment arriv
 |---|---|---|
 | full RUN SOCCER (exhaustive, live 2026-09-29 … 10-01) | 804–815 s | Kalshi discovery 785–795 s; fit 8–11 s; simulate + price + archive 8–18 s |
 | fast model refresh in a chain batch | ≈ 10–20 s on top of the batch's own capture (from the live fit and simulation stage timings; no second discovery) | refit 8–11 s; simulation of the due fixture ≈ 1 s (0 on a cache hit) |
-| reprice only | 0.5 s for 43 fixtures / 1,032 contract sides (benchmark); 0.01 s for 24 sides | bet-up-to search per side |
+| reprice only | **0.56–0.89 s live for 37 fixtures / 2,866 contract sides** (2026-10-02); 0.5 s for 1,032 sides (benchmark) | bet-up-to search per side |
 | free Kalshi fast sweep feeding a reprice | ≈ 150 s (live batches) | Kalshi API pagination |
 
-A reprice is ≈ 1,600× cheaper than a full RUN SOCCER and does no simulation. 100 price snapshots with
+A reprice is more than 1,000× cheaper than a full RUN SOCCER (811 s vs < 1 s) and does no simulation. 100 price snapshots with
 unchanged inputs = 100 reprices, 0 simulations, 0 credits. Each slate's `compute` block and the append-only
 log `dispatch/slate_log/<day>.jsonl` (one row per reprice: trigger, mode, simulations, Odds API calls and
 credits, runtimes, number of price changes vs the previous slate with a sample) make this auditable.
@@ -149,6 +149,20 @@ One honest exception: a model run that reuses a cached simulation for a fixture 
 candidate re-simulates that fixture once, deterministically, to rebuild joint draws for the expression
 reducer (pre-existing pipeline behaviour). It is counted in `simulations_run`, never hidden. Reprices never
 do this; their best expression is the largest robust edge per fixture × family.
+
+### Live proof (2026-10-02, production data-archive)
+
+1. RUN SOCCER (manual, this branch; the fast sweep fell back to exhaustive discovery, 1,044 s) built the
+   first board: 37 fixtures across UEFA NL, CONCACAF NL, friendlies, Argentina, Brazil, kickoffs from
+   16:00Z today to 13:00Z on 10-04; 37 simulations; slate `slate-20261002T142040Z-9cfcd1`
+   (`model_refresh_and_reprice`, Kalshi observed 14:06:58Z, 0 Odds API calls).
+2. kalshi-capture (this branch) at 14:22Z: free fast sweep, then reprice only. Slate
+   `slate-20261002T142443Z-46d87b`: `reprice_only`, simulations 0, Odds API calls 0, credits 0, 0.56 s,
+   217 contract-side prices changed versus the previous slate. Example: Cyprus vs Armenia (16:00Z),
+   `KXUEFANLFTTS-26OCT02CYPARM-CYP` YES (first team to score: home): Kalshi ask 0.77 → 0.74, model
+   probability 0.6035 unchanged (same board, generated 14:20:20Z), break-even 0.782 → 0.753, fee-adjusted
+   EV −0.179 → −0.150, worst case −0.304 → −0.275, action NO_EDGE, valid until 14:42:03Z. The capture
+   commit touched no `odds_api/` path.
 
 ## 8. Research evidence stays clean
 

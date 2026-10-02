@@ -700,7 +700,7 @@ def cmd_slate_merge_latest(args: argparse.Namespace) -> int:
     union by fixture (newer entry wins); slates keep the one with the newer Kalshi observation; the
     predictions index is a union (append-only records)."""
     from soccer_edge.slate.board import merge_boards
-    from soccer_edge.slate.reprice import slate_order_key
+    from soccer_edge.slate.reprice import slate_order_key, write_slate_json
 
     src, dst = read_json(Path(args.src)), read_json_or(Path(args.dst), None)
     if args.kind == "index":
@@ -710,7 +710,7 @@ def cmd_slate_merge_latest(args: argparse.Namespace) -> int:
         write_json(Path(args.dst), merge_boards(dst, src, now=utc_now()))
         return 0
     if dst is None or slate_order_key(src) >= slate_order_key(dst):
-        write_json(Path(args.dst), src)
+        write_slate_json(Path(args.dst), src)
     else:
         print(f"[slate] kept the archived slate (newer Kalshi observation) over {args.src}")
     return 0
@@ -1667,7 +1667,7 @@ def _slate_actions(  # noqa: PLR0917
 
 
 def _annotate_slate_odds(out: Path, paid: int, credits: int) -> None:
-    from soccer_edge.slate.reprice import SLATE_FILE
+    from soccer_edge.slate.reprice import SLATE_FILE, write_slate_json
 
     p = out / SLATE_FILE
     doc = read_json_or(p, None)
@@ -1675,7 +1675,7 @@ def _annotate_slate_odds(out: Path, paid: int, credits: int) -> None:
         return
     doc["compute"]["odds_api_calls"] = paid
     doc["compute"]["odds_api_credits"] = credits
-    write_json(p, doc)
+    write_slate_json(p, doc)
 
 
 def _tick_sim_cache(args: argparse.Namespace) -> Path:
