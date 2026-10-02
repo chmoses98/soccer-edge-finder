@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261002T215424Z-269b65` · generated 2026-10-02T21:54:24.611175Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261002T215722Z-152b07` · generated 2026-10-02T21:57:22.990793Z · trigger `kickoff_chain:T-60/T-5` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-02T21:51:52.104695Z (CURRENT at publish; CURRENT until 2026-10-02T22:11:52.104695Z, STALE after 2026-10-02T22:21:52.104695Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-02T21:54:44.061666Z (CURRENT at publish; CURRENT until 2026-10-02T22:14:44.061666Z, STALE after 2026-10-02T22:24:44.061666Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-02T21:30:19.438129Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.77s
+model board generated 2026-10-02T21:57:22.339558Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.78s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -14,7 +14,7 @@ model board generated 2026-10-02T21:30:19.438129Z · simulations this update: 0 
 |---|---|---|---|---|---|---|---|
 | 2026-10-02T22:00:00Z | Suriname vs Guatemala (concacaf.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-02T22:15:00Z | Independiente vs Instituto (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
-| 2026-10-02T23:00:00Z | São Paulo vs Santos (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-02T23:00:00Z | São Paulo vs Santos (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
 | 2026-10-03T00:00:00Z | Bonaire vs Grenada (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-03T00:00:00Z | Barbados vs Bermuda (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-03T00:00:00Z | Martinique vs Honduras (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
@@ -59,11 +59,11 @@ model board generated 2026-10-02T21:30:19.438129Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 72
-action_NO_EDGE: 2046
-action_NO_QUOTE: 537
+action_EXCLUDED_BY_GATE: 73
+action_NO_EDGE: 2055
+action_NO_QUOTE: 497
 action_RESEARCH_CANDIDATE: 1
-contract_sides: 2656
+contract_sides: 2626
 fixtures: 37
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
