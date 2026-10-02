@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-02T10:02:30.992857+00:00",
+  "as_of": "2026-10-02T10:32:31.156106+00:00",
   "events": 22,
   "events_skipped_unmapped": 3,
   "fixtures_mapped": 19,
@@ -15,13 +15,13 @@
     "uefa.nations"
   ],
   "lineups": {
-    "captured": 0,
+    "captured": 1,
     "events": 22,
     "failures": [],
     "published_post": 0,
-    "published_pre_kickoff": 0,
-    "unchanged": 22,
-    "unpublished": 22
+    "published_pre_kickoff": 1,
+    "unchanged": 21,
+    "unpublished": 21
   },
   "map_proposals": {
     "fifa.friendly": {
@@ -50,12 +50,9 @@
     "658": "China"
   },
   "weather": {
-    "captured": 15,
+    "captured": 17,
     "events": 22,
-    "failures": [
-      "401861104: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=35.1728&longitude=33.3540&hourly=te",
-      "401861105: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=56.9460&longitude=24.1059&hourly=te"
-    ],
+    "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 4,
     "no_venue": 1
