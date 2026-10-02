@@ -1,5 +1,12 @@
 # RUN SOCCER
 
+> **For current prices read `runs/latest.actionable_slate.v1.json`, not `runs/latest.run_output.v1.json`.**
+> The run output is the model run's own record (prices as of its discovery sweep). The actionable slate is
+> repriced on every fresh Kalshi capture from the cached model board, with per-input freshness
+> (docs/ACTIONABLE_SLATE.md). Every run now merges its priced fixtures into the board
+> (`--board-out`) and reprices on its own sweep (`--slate-out-dir`). To refresh on demand, run
+> **REFRESH SOCCER SLATE** (manual RUN SOCCER now defaults to the fast sweep).
+
 ```
 soccer run --date 2026-10-10 [--league eng.premier_league ...] [--game eng.arsenal-eng.leeds]
            [--window 72] [--confirmed-lineups-only] [--worlds 1000] [--draws 100]

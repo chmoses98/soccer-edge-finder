@@ -52,6 +52,12 @@ dispatch, no workflow storm (at most one capture job at a time; ticks that find 
 delivery rate and the achieved-minute distribution. The pre-launch handoff reports these numbers; the
 promotion evaluator (phase 23) reads the missing-close rate from the same evidence.
 
+## Update (2026-10-02): selective model refresh + reprice
+
+`--with-run` now means a model run at every due horizon; the default is selective (T-60, T-15 on input
+change, invalidated/missing) and every batch reprices the actionable slate (docs/ACTIONABLE_SLATE.md).
+Refresh runs are archived under `runs/<day>/<run_id>/`.
+
 ## Update (phase 21): predictions at the horizons
 
 `soccer dispatch tick --with-run` (workflow input `with_run`) runs `soccer run --fast --window 3` at each

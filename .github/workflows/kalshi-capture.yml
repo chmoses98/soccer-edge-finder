@@ -55,6 +55,13 @@ jobs:
             git show origin/data-archive:reference/last_fingerprints.json > work/reference/last_fingerprints.json 2>/dev/null || true
           fi
           python -m soccer_edge.cli capture-reference --out-dir work/reference | tee work/reference.log
+      - name: Reprice the actionable slate on this sweep (cached model board; no model, no paid call)
+        if: ${{ hashFiles('work/snapshots/latest_catalog.json') != '' }}
+        timeout-minutes: 5
+        continue-on-error: true
+        run: |
+          scripts/slate_archive_view.sh archive_view
+          python -m soccer_edge.cli slate reprice --catalog work/snapshots/latest_catalog.json --out-dir work/slate --root archive_view --trigger kalshi_capture
       - uses: actions/upload-artifact@v4
         with:
           name: capture-${{ github.run_id }}
@@ -79,6 +86,7 @@ jobs:
           mkdir -p pub/snapshots pub/reference
           cp -R work/snapshots/. pub/snapshots/
           [ -d work/reference ] && cp -R work/reference/. pub/reference/ || true
+          [ -d work/slate ] && cp -R work/slate/. pub/ || true   # runs/latest.actionable_slate.v1.json + dispatch/slate_log
           scripts/archive_publish.sh pub . "capture ${{ github.run_id }} $(date -u +%Y-%m-%dT%H:%MZ)"
       - name: Summary
         run: |

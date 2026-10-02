@@ -32,6 +32,9 @@ inside the manifested prefix).
 
 Mutable pointer files (`index.json`, `last_*.json`, `STATUS.json`, `runs/latest.*`, `evaluation/*`, caches)
 are not manifested; they are rebuildable and are checked for consistency instead.
+The live-slate pointers (`runs/latest.model_board.v1.json`, `runs/latest.actionable_slate.v1.json`,
+`runs/LATEST_ACTIONABLE_SLATE.md`) are mutable too and are merged at publish time (docs/ACTIONABLE_SLATE.md
+§9); the reprice log `dispatch/slate_log/<day>.jsonl` is append-only and manifested like the other logs.
 
 ## Verifier
 
