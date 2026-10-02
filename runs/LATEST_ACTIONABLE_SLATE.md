@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261002T191202Z-c86a36` · generated 2026-10-02T19:12:02.259458Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261002T192703Z-3401dd` · generated 2026-10-02T19:27:03.585803Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-02T19:09:32.179241Z (CURRENT at publish; CURRENT until 2026-10-02T19:29:32.179241Z, STALE after 2026-10-02T19:39:32.179241Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-02T19:24:33.518419Z (CURRENT at publish; CURRENT until 2026-10-02T19:44:33.518419Z, STALE after 2026-10-02T19:54:33.518419Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-02T18:30:01.164960Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.59s
 
@@ -51,9 +51,9 @@ model board generated 2026-10-02T18:30:01.164960Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 58
-action_NO_EDGE: 1541
-action_NO_QUOTE: 306
+action_EXCLUDED_BY_GATE: 56
+action_NO_EDGE: 1542
+action_NO_QUOTE: 307
 action_RESEARCH_CANDIDATE: 1
 contract_sides: 1906
 fixtures: 29
