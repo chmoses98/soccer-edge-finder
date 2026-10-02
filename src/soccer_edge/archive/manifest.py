@@ -97,6 +97,11 @@ _MUTABLE_GLOBS = (
     "dispatch/diagnostics.json",
     "dispatch/reliability.json",
     "dispatch/first_seen.json",
+    # app/latest/*: the unified-UI payload (docs/APP_EXPORT.md), rebuilt by every publish from the
+    # merged tree; a derived view of the archive, never a ledger record, so never manifested.
+    "app/*",
+    "app/*/*",
+    "app/*/*/*",
 )
 
 

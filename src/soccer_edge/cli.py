@@ -22,6 +22,12 @@ def _registry():
     return AliasRegistry.from_directory(DATA / "registry")
 
 
+def cmd_app_export(args: argparse.Namespace) -> int:
+    from soccer_edge.app_export import run_from_args
+
+    return run_from_args(args)
+
+
 def cmd_export_schemas(args: argparse.Namespace) -> int:
     from soccer_edge.contracts import export_json_schemas
 
@@ -2582,6 +2588,15 @@ def build_parser() -> argparse.ArgumentParser:
     e = sub.add_parser("export-schemas", help="write JSON Schemas for the app contract")
     e.add_argument("--out", default=str(REPO_ROOT / "docs" / "schemas"))
     e.set_defaults(func=cmd_export_schemas)
+
+    ae = sub.add_parser(
+        "app-export",
+        help="archive root -> unified Edge Finder app payload (app/latest); never a bet",
+    )
+    from soccer_edge.app_export import add_arguments as add_app_export_arguments
+
+    add_app_export_arguments(ae)
+    ae.set_defaults(func=cmd_app_export)
 
     # --- kalshi-bet-router destination contract (no live routing is enabled by these) ---
     iw = sub.add_parser(

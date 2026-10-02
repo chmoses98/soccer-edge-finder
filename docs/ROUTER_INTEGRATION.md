@@ -191,3 +191,15 @@ model-provenance field) is refused as a whole, because the router must never cla
 join to prediction records happens in evaluation by ticker, side and time. No live routing exists, no
 routing was activated, and the settlement records written by `soccer settle` are independent of the
 router's settlement rows.
+
+## Update 2026-10-02: the router delivers through the contract's shared ledger
+
+The kalshi-bet-router now files SOCCER wagers and settlements through the SHARED destination ledger
+of the vendored contract (`contract/edge_finder_contract/routed_ledger.py`), on the orphan
+`accounting-data` branch (`data/accounting/wagers.jsonl`, `settlements.jsonl`), via the stdlib-only
+wrappers `scripts/accounting/import_routed_wagers.py`, `import_routed_settlements.py` and
+`validate_routed_ledger.py` with `LedgerSpec(sport="SOCCER", id_prefix="soc", ...)` -- see
+docs/ACCOUNTING.md. `src/soccer_edge/router` and the `soccer import-wagers` / `import-settlements` /
+`validate-positions-ledger` commands are untouched: they remain this repository's PositionV1
+translation layer and are not the ledger the router writes to. The app export (docs/APP_EXPORT.md)
+reads the shared ledger, not `archive/positions`.
