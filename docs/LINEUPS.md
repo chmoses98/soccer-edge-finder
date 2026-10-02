@@ -76,6 +76,12 @@ research-only placeholders, and the current benchmark must stay frozen for the w
 window to `data-archive` (`lineups/`, `fixtures/espn/`), `STATUS.json` (counts, unmapped ids, map proposals) to
 `data/diagnostics/latest_espn_status.json` on the calling branch.
 
+Run colour comes from `STATUS.json["health"]` through one final gate (`scripts/health_gate.py`):
+`HEALTHY` green; `DEGRADED` green + warning (some scoreboard/lineup fetches failed, ESPN returned no events,
+or the context-only weather capture failed / hit its 240 s budget); `FAILED` red (every scoreboard query
+failed, every due lineup fetch failed, or `STATUS.json` is missing because the sync step crashed or timed
+out). Unmapped teams/leagues are a mapping backlog, not a health signal.
+
 ## What would make lineups matter (research plan, not done)
 
 1. Measure confirmation lead time and the share of fixtures confirmed before Kalshi's last pre-kickoff quote.

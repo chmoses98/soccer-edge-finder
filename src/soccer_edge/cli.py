@@ -2468,6 +2468,18 @@ def build_parser() -> argparse.ArgumentParser:
     es.add_argument("--back-days", type=int, default=3)
     es.add_argument("--forward-days", type=int, default=8)
     es.add_argument("--max-lineups", type=int, default=150)
+    es.add_argument(
+        "--weather-budget-seconds",
+        type=float,
+        default=240.0,
+        help="wall-clock cap for the context-only weather capture (remaining events are skipped)",
+    )
+    es.add_argument(
+        "--weather-timeout-seconds",
+        type=float,
+        default=15.0,
+        help="per-request timeout for Open-Meteo fetches",
+    )
     es.add_argument("--out-dir", required=True)
     es.set_defaults(func=cmd_espn_sync)
 
@@ -2826,14 +2838,22 @@ def cmd_espn_sync(args: argparse.Namespace) -> int:
         prov, todo, out_dir / "lineups", as_of=as_of, max_events=args.max_lineups
     )
     # weather (context only): Open-Meteo forecast at kickoff hour for events within 72h
+    from soccer_edge.providers.http import CachedFetcher
     from soccer_edge.providers.open_meteo import OpenMeteoProvider, capture_weather
 
     try:
         wx = capture_weather(
-            OpenMeteoProvider(cache_path=out_dir / "weather" / "geocode_cache.json"),
+            OpenMeteoProvider(
+                fetcher=CachedFetcher(
+                    max_age=timedelta(hours=1), timeout=args.weather_timeout_seconds
+                ),
+                cache_path=out_dir / "weather" / "geocode_cache.json",
+            ),
             events,
             out_dir / "weather",
             as_of=as_of,
+            time_budget_s=args.weather_budget_seconds,
+            max_consecutive_failures=3,
         )
     except Exception as exc:
         wx = {"error": str(exc)[:200]}
@@ -2902,6 +2922,8 @@ def cmd_espn_sync(args: argparse.Namespace) -> int:
         "events_skipped_unmapped": rep.skipped_events,
         "unmapped_team_ids": rep.unmapped_team_ids,
         "unmapped_leagues": sorted(rep.unmapped_leagues),
+        "scoreboard_queries": len(leagues) * (args.back_days + args.forward_days),
+        "scoreboard_failures_n": len(failures),
         "scoreboard_failures": failures[:50],
         "lineups": ln_stats,
         "results_appended": res_written,
@@ -2909,6 +2931,10 @@ def cmd_espn_sync(args: argparse.Namespace) -> int:
         "map_proposals": proposals,
         "map_version": emap.version,
     }
+    from soccer_edge.providers.espn import espn_sync_health
+
+    # recorded, not enforced here: the workflow's single health gate fails the run only on FAILED
+    status["health"] = espn_sync_health(status)
     write_json(out_dir / "STATUS.json", status)
     print(
         json.dumps(

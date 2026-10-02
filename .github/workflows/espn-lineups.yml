@@ -39,7 +39,10 @@ jobs:
             git show "origin/data-archive:results/espn/$f" > "work/espn/results/espn/$f" 2>/dev/null || true
           done
       - name: ESPN sync
+        id: sync
         timeout-minutes: 15
+        env:
+          PYTHONUNBUFFERED: "1"  # progress reaches the log even if the step is killed at its time limit
         run: |
           set -o pipefail
           python -m soccer_edge.cli espn-sync --out-dir work/espn | tee work/espn.log
@@ -79,3 +82,9 @@ jobs:
           git config user.name "soccer-edge-bot"; git config user.email "soccer-edge-bot@users.noreply.github.com"
           git add data/diagnostics/latest_espn_status.json
           git diff --cached --quiet && echo "no change" || (git commit -m "diagnostics: espn status $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]" && git pull --rebase origin ${{ github.ref_name }} && git push origin HEAD:${{ github.ref_name }})
+      # The ONE enforcement point: STATUS.json["health"] (written by espn-sync) decides the colour.
+      # HEALTHY -> green; DEGRADED (partial ESPN / lineup failures, weather budget hit) -> green + warning;
+      # FAILED (no fixture window, all due lineup fetches failed, STATUS.json missing) -> red.
+      - name: Health
+        if: always()
+        run: python3 scripts/health_gate.py work/espn/STATUS.json --label espn-lineups --upstream-outcome "${{ steps.sync.outcome }}"
