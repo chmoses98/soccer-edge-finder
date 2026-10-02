@@ -933,7 +933,7 @@ def test_model_refresh_end_to_end_reuses_cache_and_never_pays(
         lookahead_hours=48,
         capture_runtime_s=150.0,
     )
-    s1 = cli._slate_model_refresh(out, arch, disc, **kw)
+    s1 = cli._slate_model_refresh(out, arch, disc, **kw, odds_api_calls=1, odds_api_credits=3)
     # the fast run reconciles the sweep's catalog (series + markets), never bare counters
     assert reconciled and isinstance(reconciled[0].get("markets"), list)
     assert s1["rc"] == 0 and s1["simulated"] == [fid] and s1["board_fixtures"] == 1
@@ -944,8 +944,14 @@ def test_model_refresh_end_to_end_reuses_cache_and_never_pays(
     assert set(board["fixtures"]) == {fid}
     slate = json.loads((out / SLATE_FILE).read_text())
     assert slate["compute"]["mode"] == "model_refresh_and_reprice"
-    assert slate["compute"]["simulations_run"] >= 1 and slate["compute"]["odds_api_calls"] == 0
+    assert (
+        slate["compute"]["simulations_run"] >= 1
+    )  # the refresh itself never pays (client patched)
     assert slate["compute"]["kalshi_capture_runtime_s"] == 150.0
+    # the batch's own approved paid call is reported on the slate AND its append-only log row
+    assert (slate["compute"]["odds_api_calls"], slate["compute"]["odds_api_credits"]) == (1, 3)
+    row = json.loads(next((out / SLATE_LOG_DIR).glob("*.jsonl")).read_text().splitlines()[-1])
+    assert (row["odds_api_calls"], row["odds_api_credits"]) == (1, 3)
     assert {c["fixture_id"] for c in slate["contracts"]} == {fid}
     records = [
         json.loads(ln)

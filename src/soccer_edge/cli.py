@@ -383,6 +383,8 @@ def cmd_run(args: argparse.Namespace) -> int:
                 "fixtures_reused_from_cache": sorted(art.fixtures_repriced),
                 "model_refresh_runtime_s": timings["total_s"],
                 "kalshi_capture_runtime_s": getattr(args, "capture_runtime_s", None),
+                "odds_api_calls": getattr(args, "slate_odds_api", (0, 0))[0],
+                "odds_api_credits": getattr(args, "slate_odds_api", (0, 0))[1],
             },
         )
     paths = write_outputs(art, Path(args.out_dir))
@@ -552,9 +554,12 @@ def _slate_model_refresh(
     trigger: str,
     lookahead_hours: float,
     capture_runtime_s: float | None,
+    odds_api_calls: int = 0,
+    odds_api_credits: int = 0,
 ) -> dict:
     """Fast model run on the caller's sweep (no second discovery) -> board -> reprice -> slate. Prediction
-    records go to out/ledger (immutable evidence of what the model said at this time)."""
+    records go to out/ledger (immutable evidence of what the model said at this time). The caller's batch
+    paid-call counts are reported on the slate and its log row (they are the batch's, never the run's)."""
     import shutil
     import time
 
@@ -603,6 +608,7 @@ def _slate_model_refresh(
     a = parser.parse_args(argv)
     a.prefetched_discovery = disc
     a.capture_runtime_s = capture_runtime_s
+    a.slate_odds_api = (odds_api_calls, odds_api_credits)
     t0 = time.time()
     rc = a.func(a)
     stats = dict(getattr(a, "result_stats", {}) or {})
@@ -1629,6 +1635,8 @@ def _slate_actions(  # noqa: PLR0917
                 trigger=trigger,
                 lookahead_hours=args.slate_lookahead_hours,
                 capture_runtime_s=cap_s,
+                odds_api_calls=paid,
+                odds_api_credits=credits,
             )
             reasons = ",".join(sorted({":".join(r.split(":")[:2]) for r in need.values()}))
             done.append(
@@ -1636,8 +1644,6 @@ def _slate_actions(  # noqa: PLR0917
                 f"fixtures={len(need)}:sim={len(stats.get('simulated', []))}:"
                 f"cache={len(stats.get('reused_from_cache', []))}:why={reasons}"
             )
-            # the run already repriced the whole slate on this sweep; record this batch's paid calls on it
-            _annotate_slate_odds(out, paid, credits)
             return [*done, "slate_reprice:ok:via_model_refresh"]
         except SystemExit as exc:
             done.append(f"model_refresh:exit:{exc.code}")
@@ -1666,18 +1672,6 @@ def _slate_actions(  # noqa: PLR0917
     except Exception as exc:
         done.append(f"slate_reprice:error:{str(exc)[:80]}")
     return done
-
-
-def _annotate_slate_odds(out: Path, paid: int, credits: int) -> None:
-    from soccer_edge.slate.reprice import SLATE_FILE, write_slate_json
-
-    p = out / SLATE_FILE
-    doc = read_json_or(p, None)
-    if doc is None:
-        return
-    doc["compute"]["odds_api_calls"] = paid
-    doc["compute"]["odds_api_credits"] = credits
-    write_slate_json(p, doc)
 
 
 def _tick_sim_cache(args: argparse.Namespace) -> Path:
