@@ -1,8 +1,15 @@
 {
-  "as_of": "2026-09-30T12:44:13.299292+00:00",
-  "events": 409,
-  "events_skipped_unmapped": 211,
-  "fixtures_mapped": 198,
+  "as_of": "2026-10-02T15:07:18.925378+00:00",
+  "events": 380,
+  "events_skipped_unmapped": 205,
+  "fixtures_mapped": 175,
+  "health": {
+    "reasons": [
+      "weather_failures:4",
+      "weather_stopped:consecutive_failures:skipped=101"
+    ],
+    "state": "DEGRADED"
+  },
   "leagues": [
     "afc.champions",
     "arg.1",
@@ -74,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 1,
-    "events": 23,
+    "captured": 69,
+    "events": 87,
     "failures": [],
-    "published_post": 0,
-    "published_pre_kickoff": 0,
-    "unchanged": 22,
-    "unpublished": 23
+    "published_post": 1,
+    "published_pre_kickoff": 2,
+    "unchanged": 18,
+    "unpublished": 84
   },
   "map_proposals": {
     "concacaf.nations.league": {
@@ -124,8 +131,10 @@
         "204": "Bolivia",
         "2844": "Benin",
         "2845": "Burkina Faso",
+        "2848": "Kenya",
         "2849": "Mali",
         "2850": "Congo DR",
+        "2851": "Rwanda",
         "4211": "Uganda",
         "4245": "Botswana",
         "4380": "Syria",
@@ -150,7 +159,6 @@
         "6725": "Namibia",
         "6726": "Seychelles",
         "7368": "Gambia",
-        "7507": "Turkmenistan",
         "8601": "Comoros",
         "8937": "Niger",
         "8939": "Mozambique"
@@ -158,18 +166,29 @@
     }
   },
   "map_version": "4",
-  "results_appended": 0,
+  "results_appended": 19,
   "scoreboard_failures": [],
+  "scoreboard_failures_n": 0,
+  "scoreboard_queries": 748,
   "unmapped_leagues": [
+    "bel.1",
     "bra.2",
     "chi.1",
+    "chn.1",
     "col.1",
+    "den.1",
     "eng.3",
     "eng.4",
     "eng.5",
     "esp.2",
     "esp.w.1",
+    "fra.2",
+    "ger.2",
+    "ita.2",
+    "jpn.1",
+    "nor.1",
     "per.1",
+    "swe.1",
     "uefa.wchampions",
     "uru.1",
     "usa.usl.1"
@@ -200,8 +219,10 @@
     "2665": "Turks and Caicos Islands",
     "2844": "Benin",
     "2845": "Burkina Faso",
+    "2848": "Kenya",
     "2849": "Mali",
     "2850": "Congo DR",
+    "2851": "Rwanda",
     "4211": "Uganda",
     "4245": "Botswana",
     "4380": "Syria",
@@ -226,22 +247,23 @@
     "6725": "Namibia",
     "6726": "Seychelles",
     "7368": "Gambia",
-    "7507": "Turkmenistan",
     "8601": "Comoros",
     "8937": "Niger",
     "8939": "Mozambique"
   },
   "weather": {
-    "captured": 26,
-    "events": 35,
+    "captured": 8,
+    "events": 113,
     "failures": [
-      "401860363: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-3.7172&longitude=-38.5431&hourly=t",
-      "401850654: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-36.8270&longitude=-73.0498&hourly=",
-      "401900590: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=10.6667&longitude=-61.5189&hourly=t",
-      "401900602: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=13.6893&longitude=-89.1872&hourly=t"
+      "401841584: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=C\u00f3rdoba&count=5&language=en&for",
+      "401841591: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rio%20Cuarto&count=5&language=e",
+      "401841169: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-23.5475&longitude=-46.6361&hourly=",
+      "401841168: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-19.9208&longitude=-43.9378&hourly="
     ],
     "forecast_miss": 0,
-    "geocode_miss": 5,
-    "no_venue": 0
+    "geocode_miss": 0,
+    "no_venue": 0,
+    "skipped": 101,
+    "stopped": "consecutive_failures"
   }
 }
