@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261002T173549Z-a25630` · generated 2026-10-02T17:35:49.609165Z · trigger `run_soccer` · mode `model_refresh_and_reprice`
+slate `slate-20261002T173903Z-87686f` · generated 2026-10-02T17:39:03.783627Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-02T17:31:52.437087Z (CURRENT at publish; CURRENT until 2026-10-02T17:51:52.437087Z, STALE after 2026-10-02T18:01:52.437087Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-02T17:36:33.616194Z (CURRENT at publish; CURRENT until 2026-10-02T17:56:33.616194Z, STALE after 2026-10-02T18:06:33.616194Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-02T17:35:26.724142Z · simulations this update: 33 · Odds API calls this update: 0 (credits 0) · reprice 0.87s
+model board generated 2026-10-02T14:20:20.637728Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.79s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -23,7 +23,7 @@ model board generated 2026-10-02T17:35:26.724142Z · simulations this update: 33
 | 2026-10-02T21:00:00Z | St. Kitts and Nevis vs Cuba (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-02T22:00:00Z | Suriname vs Guatemala (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-02T22:15:00Z | Independiente vs Instituto (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-10-02T23:00:00Z | São Paulo vs Santos (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-02T23:00:00Z | São Paulo vs Santos (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-03T00:00:00Z | Bonaire vs Grenada (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-03T00:00:00Z | Barbados vs Bermuda (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-03T00:00:00Z | Martinique vs Honduras (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 23 | 0 |
@@ -43,12 +43,10 @@ model board generated 2026-10-02T17:35:26.724142Z · simulations this update: 33
 | 2026-10-03T19:00:00Z | Ivory Coast vs Cameroon (fifa.friendly) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-03T20:00:00Z | Newell's Old Boys vs Lanús (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-03T21:00:00Z | Sint Maarten vs St. Vincent and the Grenadines (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-03T21:30:00Z | Atlético Mineiro vs Red Bull Bragantino (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-03T21:30:00Z | Atlético Mineiro vs Red Bull Bragantino (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-04T02:00:00Z | Belize vs French Guiana (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-04T02:00:00Z | United States vs Mexico (fifa.friendly) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-04T13:00:00Z | Azerbaijan vs Lithuania (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-10-04T16:00:00Z | Kosovo vs Austria (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-10-04T16:00:00Z | Malta vs Andorra (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 
 ## Candidates on CURRENT prices (1; RESEARCH_ONLY = analysis, never a bet)
 
@@ -59,12 +57,12 @@ model board generated 2026-10-02T17:35:26.724142Z · simulations this update: 33
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 106
-action_NO_EDGE: 2251
-action_NO_QUOTE: 448
+action_EXCLUDED_BY_GATE: 108
+action_NO_EDGE: 2055
+action_NO_QUOTE: 458
 action_RESEARCH_CANDIDATE: 1
-contract_sides: 2806
-fixtures: 37
+contract_sides: 2622
+fixtures: 35
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
