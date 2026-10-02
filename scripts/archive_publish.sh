@@ -68,6 +68,15 @@ s = ActionableSlateV1.model_validate(read_json(d / "latest.actionable_slate.v1.j
 (d / "LATEST_ACTIONABLE_SLATE.md").write_text(render_slate_markdown(s), encoding="utf-8")
 PY
   fi
+  # App export (docs/APP_EXPORT.md): the unified Edge Finder UI reads app/latest from this branch
+  # (contract/edge_finder_contract/registry.json). Built from the MERGED tree so every publisher
+  # carries it. It must never abort the publish: on failure the exporter writes health.json only
+  # (export_failed=true), keeps the last-known-good payload and exits 1, which is logged here.
+  if [[ "$HAVE_PKG" == 1 ]]; then
+    python -m soccer_edge.cli app-export --data-root "$WORK/$DEST" --out "$WORK/$DEST/app/latest" \
+      --commit-sha "${GITHUB_SHA:-}" --workflow-run-id "${GITHUB_RUN_ID:-}" \
+      || echo "::warning::app export failed; app/latest/health.json carries the failure (payload unchanged)"
+  fi
   # Integrity: extend the manifest over the merged tree and verify it. A manifest that does not verify means
   # the archive lost or changed evidence; the publish is aborted rather than committing on top of corruption.
   # Before the manifest is bootstrapped (archive-recover.yml with init_manifest) both steps are no-ops.

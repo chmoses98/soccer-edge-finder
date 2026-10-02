@@ -69,6 +69,7 @@ ignore = [
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["contract", "src"]
 addopts = "-q -ra"
 filterwarnings = ["error::DeprecationWarning:soccer_edge.*"]
 

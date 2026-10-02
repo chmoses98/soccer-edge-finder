@@ -1,0 +1,52 @@
+[
+ {
+  "authority": "RESEARCH_ONLY",
+  "brier": 0.22498,
+  "clv_points_mean": 0.0019,
+  "ece": 0.1737,
+  "fee_adjusted_realised_ev": null,
+  "horizon": "T-24h",
+  "interval_coverage_80": null,
+  "last_evaluated_at": "2026-10-02T15:45:15.173731Z",
+  "log_loss": 0.64244,
+  "market_family": "btts",
+  "market_log_loss": null,
+  "model_family": "data_only.world_sim_v1",
+  "n_settled": 10,
+  "notes": [
+   "SHADOW: need n>=100, have 10",
+   "SHADOW: ECE 0.174 > 0.08",
+   "LIMITED: need n>=300, have 10",
+   "LIMITED: ECE 0.174 > 0.05",
+   "LIMITED: 80% interval coverage None outside (0.7, 0.9)",
+   "TRUSTED: need n>=1000, have 10"
+  ],
+  "schema_version": "1.2.0",
+  "sport": "soccer"
+ },
+ {
+  "authority": "RESEARCH_ONLY",
+  "brier": 0.22498,
+  "clv_points_mean": 0.0019,
+  "ece": 0.1737,
+  "fee_adjusted_realised_ev": null,
+  "horizon": "any",
+  "interval_coverage_80": null,
+  "last_evaluated_at": "2026-10-02T15:45:15.173731Z",
+  "log_loss": 0.64244,
+  "market_family": "btts",
+  "market_log_loss": null,
+  "model_family": "data_only.world_sim_v1",
+  "n_settled": 10,
+  "notes": [
+   "SHADOW: need n>=100, have 10",
+   "SHADOW: ECE 0.174 > 0.08",
+   "LIMITED: need n>=300, have 10",
+   "LIMITED: ECE 0.174 > 0.05",
+   "LIMITED: 80% interval coverage None outside (0.7, 0.9)",
+   "TRUSTED: need n>=1000, have 10"
+  ],
+  "schema_version": "1.2.0",
+  "sport": "soccer"
+ }
+]
