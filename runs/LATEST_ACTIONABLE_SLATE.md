@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261002T203301Z-7c6ed8` · generated 2026-10-02T20:33:01.877381Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
+slate `slate-20261002T204740Z-805b88` · generated 2026-10-02T20:47:40.118242Z · trigger `kickoff_chain:T-15` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-02T20:30:00.018318Z (CURRENT at publish; CURRENT until 2026-10-02T20:50:00.018318Z, STALE after 2026-10-02T21:00:00.018318Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-02T20:45:00.018195Z (CURRENT at publish; CURRENT until 2026-10-02T21:05:00.018195Z, STALE after 2026-10-02T21:15:00.018195Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-02T20:33:00.562934Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.80s
+model board generated 2026-10-02T20:47:39.170917Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.78s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -14,13 +14,13 @@ model board generated 2026-10-02T20:33:00.562934Z · simulations this update: 1 
 |---|---|---|---|---|---|---|---|
 | 2026-10-02T21:00:00Z | St. Kitts and Nevis vs Cuba (concacaf.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-02T22:00:00Z | Suriname vs Guatemala (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
-| 2026-10-02T22:15:00Z | Independiente vs Instituto (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-02T22:15:00Z | Independiente vs Instituto (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-02T23:00:00Z | São Paulo vs Santos (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-03T00:00:00Z | Bonaire vs Grenada (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-03T00:00:00Z | Barbados vs Bermuda (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-03T00:00:00Z | Martinique vs Honduras (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-03T00:00:00Z | Colombia vs Paraguay (fifa.friendly) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
-| 2026-10-03T00:30:00Z | Boca Juniors vs Unión (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-03T00:30:00Z | Boca Juniors vs Unión (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-03T02:00:00Z | El Salvador vs Jamaica (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-03T13:00:00Z | Finland vs Albania (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-10-03T16:00:00Z | Belarus vs San Marino (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
@@ -60,9 +60,9 @@ model board generated 2026-10-02T20:33:00.562934Z · simulations this update: 1 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 69
-action_NO_EDGE: 2098
-action_NO_QUOTE: 534
+action_EXCLUDED_BY_GATE: 70
+action_NO_EDGE: 2094
+action_NO_QUOTE: 537
 action_RESEARCH_CANDIDATE: 1
 contract_sides: 2702
 fixtures: 38

@@ -1,13 +1,11 @@
 {
-  "as_of": "2026-10-02T20:32:32.598837+00:00",
+  "as_of": "2026-10-02T20:47:32.325893+00:00",
   "events": 22,
   "events_skipped_unmapped": 3,
   "fixtures_mapped": 19,
   "health": {
-    "reasons": [
-      "weather_failures:1"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
     "concacaf.nations.league",
@@ -44,7 +42,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 4,
+  "results_appended": 11,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 9,
@@ -58,11 +56,9 @@
     "658": "China"
   },
   "weather": {
-    "captured": 10,
+    "captured": 11,
     "events": 15,
-    "failures": [
-      "401861106: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Trnava&count=5&language=en&form"
-    ],
+    "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 4,
     "no_venue": 0,
