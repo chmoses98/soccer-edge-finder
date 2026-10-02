@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261002T142040Z-9cfcd1` · generated 2026-10-02T14:20:40.976050Z · trigger `run_soccer` · mode `model_refresh_and_reprice`
+slate `slate-20261002T142443Z-46d87b` · generated 2026-10-02T14:24:43.791569Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-02T14:06:58.940113Z (CURRENT at publish; CURRENT until 2026-10-02T14:26:58.940113Z, STALE after 2026-10-02T14:36:58.940113Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-02T14:22:03.572154Z (CURRENT at publish; CURRENT until 2026-10-02T14:42:03.572154Z, STALE after 2026-10-02T14:52:03.572154Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-02T14:20:20.637728Z · simulations this update: 37 · Odds API calls this update: 0 (credits 0) · reprice 0.89s
+model board generated 2026-10-02T14:20:20.637728Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.56s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -50,22 +50,19 @@ model board generated 2026-10-02T14:20:20.637728Z · simulations this update: 37
 | 2026-10-04T02:00:00Z | United States vs Mexico (fifa.friendly) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-04T13:00:00Z | Azerbaijan vs Lithuania (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 
-## Candidates on CURRENT prices (4; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (1; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Boca Juniors vs Unión | btts | yes | 0.4500 | 0.579 [0.450, 0.705] | +0.112 | +0.028 | 0.47 | - | * | RESEARCH_CANDIDATE |
-| Boca Juniors vs Unión | Result: away | yes | 0.1300 | 0.238 [0.114, 0.374] | +0.101 | +0.013 | 0.14 | - | * | RESEARCH_CANDIDATE |
 | Atlético Mineiro vs Red Bull Bragantino | btts | no | 0.4500 | 0.558 [0.435, 0.674] | +0.091 | +0.013 | 0.46 | - | * | RESEARCH_CANDIDATE |
-| Boca Juniors vs Unión | Total goals over 4.5 | yes | 0.1200 | 0.227 [0.096, 0.382] | +0.099 | +0.006 | 0.12 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 112
-action_NO_EDGE: 2385
-action_NO_QUOTE: 365
-action_RESEARCH_CANDIDATE: 4
+action_EXCLUDED_BY_GATE: 114
+action_NO_EDGE: 2259
+action_NO_QUOTE: 492
+action_RESEARCH_CANDIDATE: 1
 contract_sides: 2866
 fixtures: 37
 fixtures_model_invalidated: 0
