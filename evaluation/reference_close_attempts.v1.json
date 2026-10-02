@@ -1,10 +1,10 @@
 {
  "counts": {
-  "MISSED_DISPATCHER_CLOSE": 20,
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 16,
   "NO_SPORT_KEY": 7,
-  "PINNACLE_VALID_CLOSE": 2,
-  "PINNACLE_QUOTED_NOTHING": 2
+  "MISSED_DISPATCHER_CLOSE": 20,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 17,
+  "PINNACLE_QUOTED_NOTHING": 2,
+  "PINNACLE_VALID_CLOSE": 2
  },
  "fixtures": {
   "fx:concacaf.nations_league:2026-27:nat.aia:nat.aru": {
@@ -168,6 +168,11 @@
    "batch_id": null
   },
   "fx:uefa.nations_league:2026-27:nat.isr:nat.kos": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:uefa.nations_league:2026-27:nat.kaz:nat.mda": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
