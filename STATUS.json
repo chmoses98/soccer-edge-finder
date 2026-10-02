@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-02T14:00:12.201948+00:00",
+  "as_of": "2026-10-02T14:57:02.660161+00:00",
   "events": 22,
   "events_skipped_unmapped": 3,
   "fixtures_mapped": 19,
@@ -15,12 +15,12 @@
     "uefa.nations"
   ],
   "lineups": {
-    "captured": 0,
-    "events": 21,
+    "captured": 1,
+    "events": 20,
     "failures": [],
     "published_post": 1,
-    "published_pre_kickoff": 1,
-    "unchanged": 21,
+    "published_pre_kickoff": 0,
+    "unchanged": 19,
     "unpublished": 19
   },
   "map_proposals": {
@@ -50,9 +50,14 @@
     "658": "China"
   },
   "weather": {
-    "captured": 16,
-    "events": 21,
-    "failures": [],
+    "captured": 11,
+    "events": 20,
+    "failures": [
+      "401861101: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Astana&count=5&language=en&form",
+      "401861104: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Nicosia&count=5&language=en&for",
+      "401861108: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Warsaw&count=5&language=en&form",
+      "401861106: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Trnava&count=5&language=en&form"
+    ],
     "forecast_miss": 0,
     "geocode_miss": 4,
     "no_venue": 1
