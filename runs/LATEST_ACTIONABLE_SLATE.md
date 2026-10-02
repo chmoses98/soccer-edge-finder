@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261002T181503Z-d0eafc` · generated 2026-10-02T18:15:03.902738Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
+slate `slate-20261002T183001Z-3f9416` · generated 2026-10-02T18:30:01.978045Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-02T18:12:16.981849Z (CURRENT at publish; CURRENT until 2026-10-02T18:32:16.981849Z, STALE after 2026-10-02T18:42:16.981849Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-02T18:27:19.551415Z (CURRENT at publish; CURRENT until 2026-10-02T18:47:19.551415Z, STALE after 2026-10-02T18:57:19.551415Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-02T18:14:57.252618Z · simulations this update: 7 · Odds API calls this update: 0 (credits 0) · reprice 0.84s
+model board generated 2026-10-02T18:30:01.164960Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.85s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -19,7 +19,7 @@ model board generated 2026-10-02T18:14:57.252618Z · simulations this update: 7 
 | 2026-10-02T18:45:00Z | Hungary vs Georgia (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-10-02T18:45:00Z | Poland vs Romania (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-10-02T18:45:00Z | Ukraine vs Northern Ireland (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-10-02T19:00:00Z | St. Lucia vs Guadeloupe (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-10-02T19:00:00Z | St. Lucia vs Guadeloupe (concacaf.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-02T21:00:00Z | St. Kitts and Nevis vs Cuba (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-02T22:00:00Z | Suriname vs Guatemala (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-02T22:15:00Z | Independiente vs Instituto (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
@@ -59,9 +59,9 @@ model board generated 2026-10-02T18:14:57.252618Z · simulations this update: 7 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 100
-action_NO_EDGE: 2272
-action_NO_QUOTE: 433
+action_EXCLUDED_BY_GATE: 95
+action_NO_EDGE: 2275
+action_NO_QUOTE: 435
 action_RESEARCH_CANDIDATE: 1
 contract_sides: 2806
 fixtures: 37
