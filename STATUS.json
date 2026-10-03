@@ -1,38 +1,72 @@
 {
-  "as_of": "2026-10-03T16:45:08.023837+00:00",
-  "events": 3,
-  "events_skipped_unmapped": 0,
-  "fixtures_mapped": 3,
+  "as_of": "2026-10-03T16:55:41.262407+00:00",
+  "events": 19,
+  "events_skipped_unmapped": 6,
+  "fixtures_mapped": 13,
   "health": {
     "reasons": [],
     "state": "HEALTHY"
   },
   "leagues": [
-    "arg.1"
+    "concacaf.nations.league",
+    "fifa.friendly",
+    "fifa.worldq.afc",
+    "fifa.worldq.caf",
+    "fifa.worldq.concacaf",
+    "fifa.worldq.conmebol",
+    "fifa.worldq.uefa",
+    "uefa.euroq",
+    "uefa.nations"
   ],
   "lineups": {
-    "captured": 0,
-    "events": 3,
+    "captured": 5,
+    "events": 16,
     "failures": [],
-    "published_post": 0,
+    "published_post": 6,
     "published_pre_kickoff": 0,
-    "unchanged": 3,
-    "unpublished": 3
+    "unchanged": 11,
+    "unpublished": 10
   },
-  "map_proposals": {},
+  "map_proposals": {
+    "fifa.friendly": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "2845": "Burkina Faso",
+        "2849": "Mali",
+        "4385": "India",
+        "454": "Russia",
+        "4862": "Fiji",
+        "4864": "Vanuatu",
+        "5775": "Djibouti",
+        "5782": "Sri Lanka",
+        "6725": "Namibia"
+      }
+    }
+  },
   "map_version": "4",
-  "results_appended": 0,
+  "results_appended": 1,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
-  "scoreboard_queries": 1,
+  "scoreboard_queries": 9,
   "unmapped_leagues": [],
-  "unmapped_team_ids": {},
+  "unmapped_team_ids": {
+    "2845": "Burkina Faso",
+    "2849": "Mali",
+    "4385": "India",
+    "454": "Russia",
+    "4862": "Fiji",
+    "4864": "Vanuatu",
+    "5775": "Djibouti",
+    "5782": "Sri Lanka",
+    "6725": "Namibia"
+  },
   "weather": {
-    "captured": 3,
-    "events": 3,
+    "captured": 13,
+    "events": 16,
     "failures": [],
     "forecast_miss": 0,
-    "geocode_miss": 0,
+    "geocode_miss": 3,
     "no_venue": 0,
     "skipped": 0,
     "stopped": null
