@@ -4,13 +4,13 @@
   "github_backup_minutes": 60
  },
  "definition": "capture_success_rate = delivered / eligible horizons whose window closed in the span (NOT_APPLICABLE excluded); close_success_rate = fixtures with a T-15 or T-5 delivery / fixtures whose close windows closed in the span",
- "generated_at": "2026-10-03T12:52:29Z",
+ "generated_at": "2026-10-03T13:34:17Z",
  "last_24h": {
   "capture_runs": 5,
   "capture_runs_failed": 1,
   "capture_success_rate": 1.0,
-  "close_fixtures_delivered": 22,
-  "close_fixtures_eligible": 22,
+  "close_fixtures_delivered": 23,
+  "close_fixtures_eligible": 23,
   "close_success_rate": 1.0,
   "credits_spent": 36,
   "external_heartbeats_actual": 0,
@@ -41,10 +41,10 @@
  "last_7d": {
   "capture_runs": 15,
   "capture_runs_failed": 3,
-  "capture_success_rate": 0.6743515850144092,
-  "close_fixtures_delivered": 49,
-  "close_fixtures_eligible": 69,
-  "close_success_rate": 0.7101449275362319,
+  "capture_success_rate": 0.6762177650429799,
+  "close_fixtures_delivered": 50,
+  "close_fixtures_eligible": 70,
+  "close_success_rate": 0.7142857142857143,
   "credits_spent": 54,
   "external_heartbeats_actual": 3,
   "external_heartbeats_expected": null,
@@ -53,33 +53,33 @@
   "github_backup_actual": 12,
   "github_backup_expected": 168,
   "github_backup_success": 0.07142857142857142,
-  "heartbeats_actual": 67,
+  "heartbeats_actual": 68,
   "heartbeats_by_source": {
    "chain": 11,
    "external-heartbeat": 3,
    "github-schedule-backup": 12,
    "manual": 4,
-   "workflow-run": 37
+   "workflow-run": 38
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
   "horizon_states": {
-   "DELIVERED": 234,
+   "DELIVERED": 236,
    "MISSED_BEFORE_WAKE": 111,
    "MISSED_EXECUTION_FAILURE": 2,
    "NOT_APPLICABLE": 1
   },
-  "horizons_delivered": 234,
-  "horizons_eligible": 347,
+  "horizons_delivered": 236,
+  "horizons_eligible": 349,
   "horizons_missed": 113,
   "paid_calls": 18,
   "span_hours": 168.0
  },
  "last_wake": {
   "no_action_reason": null,
-  "started_at": "2026-10-03T12:52:29Z",
+  "started_at": "2026-10-03T13:34:17Z",
   "status": "OK",
-  "trigger_source": "chain"
+  "trigger_source": "workflow-run"
  },
  "schema": "dispatch_reliability_v1"
 }
