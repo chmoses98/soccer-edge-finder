@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261003T005835Z-cc9299` · generated 2026-10-03T00:58:35.248306Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261003T011234Z-17b3e0` · generated 2026-10-03T01:12:34.962489Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-03T00:55:03.043857Z (CURRENT at publish; CURRENT until 2026-10-03T01:15:03.043857Z, STALE after 2026-10-03T01:25:03.043857Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-03T01:10:03.046761Z (CURRENT at publish; CURRENT until 2026-10-03T01:30:03.046761Z, STALE after 2026-10-03T01:40:03.046761Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-03T00:58:34.251385Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.73s
+model board generated 2026-10-03T00:58:34.251385Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.73s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -55,9 +55,9 @@ model board generated 2026-10-03T00:58:34.251385Z · simulations this update: 1 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 58
-action_NO_EDGE: 1931
-action_NO_QUOTE: 434
+action_EXCLUDED_BY_GATE: 62
+action_NO_EDGE: 1923
+action_NO_QUOTE: 438
 action_RESEARCH_CANDIDATE: 1
 contract_sides: 2424
 fixtures: 33
@@ -65,6 +65,6 @@ fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
-Removed (kicked off): 5
+Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
