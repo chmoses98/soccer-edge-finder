@@ -3,37 +3,37 @@
   "commit_sha": "e6feb3165df7",
   "components": {
     "dispatch": {
-      "age_seconds": 847.0,
+      "age_seconds": 1787.6,
       "as_of": "2026-10-03T21:27:13Z",
       "detail": "kickoff dispatcher heartbeat",
       "status": "OK"
     },
     "espn_fixtures": {
-      "age_seconds": 914.9,
+      "age_seconds": 1855.5,
       "as_of": "2026-10-03T21:26:05Z",
       "detail": "ESPN fixture/lineup sync (STATUS.json)",
       "status": "OK"
     },
     "export": {
       "age_seconds": 14.2,
-      "as_of": "2026-10-03T21:41:05Z",
+      "as_of": "2026-10-03T21:56:46Z",
       "detail": null,
       "status": "OK"
     },
     "kalshi_sweep": {
-      "age_seconds": 19.8,
-      "as_of": "2026-10-03T21:41:00Z",
+      "age_seconds": 15.2,
+      "as_of": "2026-10-03T21:56:45Z",
       "detail": "exhaustive Kalshi soccer sweep (snapshots/STATUS.json)",
       "status": "OK"
     },
     "market_data": {
-      "age_seconds": 170.2,
-      "as_of": "2026-10-03T21:38:29Z",
+      "age_seconds": 208.9,
+      "as_of": "2026-10-03T21:53:31Z",
       "detail": null,
       "status": "OK"
     },
     "model": {
-      "age_seconds": 14.9,
+      "age_seconds": 955.5,
       "as_of": "2026-10-03T21:41:05Z",
       "detail": null,
       "status": "OK"
@@ -51,22 +51,22 @@
       "status": "UNKNOWN"
     }
   },
-  "data_age_seconds": 170.2,
+  "data_age_seconds": 955.5,
   "errors": [],
   "freshness_status": "FRESH",
-  "generated_at": "2026-10-03T21:41:20Z",
+  "generated_at": "2026-10-03T21:57:00Z",
   "kind": "health",
-  "last_export_attempt": "2026-10-03T21:41:20Z",
-  "last_market_capture": "2026-10-03T21:38:29Z",
+  "last_export_attempt": "2026-10-03T21:57:00Z",
+  "last_market_capture": "2026-10-03T21:53:31Z",
   "last_model_generated": "2026-10-03T21:41:05Z",
-  "last_successful_run": "2026-10-03T21:41:05Z",
+  "last_successful_run": "2026-10-03T21:56:46Z",
   "market_data_status": "OK",
   "model_status": "OK",
   "next_scheduled_run": "2026-10-03T23:50:01Z",
   "overall_status": "RESEARCH_ONLY",
-  "payload_run_id": "run_855507f79783992fa5d5",
+  "payload_run_id": "run_6a86a035676d1e2fa23a",
   "router_status": "UNKNOWN",
-  "run_id": "run_855507f79783992fa5d5",
+  "run_id": "run_6a86a035676d1e2fa23a",
   "schema_version": "edge_finder.app.v1",
   "settlement_status": "UNKNOWN",
   "sport": "SOCCER",
@@ -102,6 +102,7 @@
   },
   "warnings": [
     "no accounting dir: wagers/settlements not read",
+    "Kalshi sweep incomplete: contracts absent from it are UNAVAILABLE, not closed",
     "no_bets: every model family is RESEARCH_ONLY; nothing here is a bet"
   ]
 }
