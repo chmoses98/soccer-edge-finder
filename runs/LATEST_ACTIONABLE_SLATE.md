@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261003T001528Z-569f86` · generated 2026-10-03T00:15:28.551210Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261003T001827Z-25e1b1` · generated 2026-10-03T00:18:27.832956Z · trigger `kickoff_chain:T-15` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-03T00:12:53.368454Z (CURRENT at publish; CURRENT until 2026-10-03T00:32:53.368454Z, STALE after 2026-10-03T00:42:53.368454Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-03T00:15:48.939795Z (CURRENT at publish; CURRENT until 2026-10-03T00:35:48.939795Z, STALE after 2026-10-03T00:45:48.939795Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-03T00:15:27.714561Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.73s
+model board generated 2026-10-03T00:15:27.714561Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.72s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-03T00:15:27.714561Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-03T00:30:00Z | Boca Juniors vs Unión (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
+| 2026-10-03T00:30:00Z | Boca Juniors vs Unión (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
 | 2026-10-03T02:00:00Z | El Salvador vs Jamaica (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-03T13:00:00Z | Finland vs Albania (uefa.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-10-03T16:00:00Z | Belarus vs San Marino (uefa.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 61 | 1 |
@@ -56,9 +56,9 @@ model board generated 2026-10-03T00:15:27.714561Z · simulations this update: 1 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 56
-action_NO_EDGE: 1931
-action_NO_QUOTE: 464
+action_EXCLUDED_BY_GATE: 53
+action_NO_EDGE: 1933
+action_NO_QUOTE: 465
 action_RESEARCH_CANDIDATE: 1
 contract_sides: 2452
 fixtures: 34
