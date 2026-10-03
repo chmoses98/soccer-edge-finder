@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261003T175851Z-1ed3c7` · generated 2026-10-03T17:58:51.680093Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261003T181342Z-3bf542` · generated 2026-10-03T18:13:42.685342Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-03T17:56:11.904130Z (CURRENT at publish; CURRENT until 2026-10-03T18:16:11.904130Z, STALE after 2026-10-03T18:26:11.904130Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-03T18:11:11.906920Z (CURRENT at publish; CURRENT until 2026-10-03T18:31:11.906920Z, STALE after 2026-10-03T18:41:11.906920Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-03T17:58:50.869878Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.59s
+model board generated 2026-10-03T17:58:50.869878Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.57s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,6 @@ model board generated 2026-10-03T17:58:50.869878Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-03T18:00:00Z | Canada vs Peru (fifa.friendly) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-03T18:45:00Z | Spain vs Czechia (uefa.nations_league) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
 | 2026-10-03T18:45:00Z | North Macedonia vs Scotland (uefa.nations_league) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-10-03T18:45:00Z | Switzerland vs Slovenia (uefa.nations_league) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
@@ -51,17 +50,17 @@ model board generated 2026-10-03T17:58:50.869878Z · simulations this update: 1 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 53
-action_MODEL_INVALIDATED: 301
-action_NO_EDGE: 1223
-action_NO_QUOTE: 312
+action_EXCLUDED_BY_GATE: 51
+action_MODEL_INVALIDATED: 302
+action_NO_EDGE: 1181
+action_NO_QUOTE: 309
 action_RESEARCH_CANDIDATE: 1
-contract_sides: 1890
-fixtures: 29
+contract_sides: 1844
+fixtures: 28
 fixtures_model_invalidated: 3
 fixtures_model_missing: 0
 ```
 
-Removed (kicked off): 1
+Removed (kicked off): 2
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
