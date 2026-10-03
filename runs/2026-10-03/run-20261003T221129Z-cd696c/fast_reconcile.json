@@ -1,0 +1,67 @@
+{
+  "complete_relative_to_full": true,
+  "evidence_level": "series",
+  "fast": {
+    "complete": true,
+    "kind": "catalog",
+    "market_count": 6461,
+    "markets_available": true,
+    "run_id": "disc-20261003T220829Z-907f37",
+    "series_known": 1522,
+    "series_skipped_fast_mode": 1134,
+    "series_swept": 254,
+    "series_unswept_other": 134,
+    "series_with_markets": 217,
+    "statuses_requested": [
+      "open"
+    ],
+    "timestamp": "2026-10-03T22:11:24.584657Z"
+  },
+  "full": {
+    "complete": true,
+    "kind": "index",
+    "market_count": 6530,
+    "markets_available": false,
+    "run_id": "disc-20260927T232431Z-7e55f2",
+    "series_known": 1523,
+    "series_skipped_fast_mode": 0,
+    "series_swept": 1389,
+    "series_unswept_other": 134,
+    "series_with_markets": 253,
+    "statuses_requested": [
+      "open",
+      "unopened"
+    ],
+    "timestamp": "2026-09-27T23:37:39.975558Z"
+  },
+  "generated_at": "2026-10-03T22:11:29.312143Z",
+  "markets": {
+    "fast_total": 6461,
+    "full_not_fast_breakdown": {
+      "closed_between_runs": 0,
+      "in_skipped_series": 0,
+      "status_not_requested": 0,
+      "unexplained": 0
+    },
+    "full_total": 6530,
+    "in_both": null,
+    "in_fast_not_full": null,
+    "in_full_not_fast": null,
+    "unexplained_by_series": {}
+  },
+  "schema": "discovery_reconcile_v1",
+  "series": {
+    "in_full_not_known_to_fast": 2,
+    "new_in_fast": 1,
+    "skipped_by_fast": 1134,
+    "skipped_by_fast_with_markets_in_full": 0,
+    "skipped_by_fast_with_markets_in_full_tickers": [],
+    "swept_both": 253,
+    "swept_fast": 254,
+    "swept_full": 1389,
+    "with_markets_fast": 217,
+    "with_markets_full": 253,
+    "with_markets_full_not_swept_by_fast": 0
+  },
+  "violations": []
+}
