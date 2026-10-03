@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-02T23:50:32.183728+00:00",
-  "events": 380,
-  "events_skipped_unmapped": 205,
-  "fixtures_mapped": 175,
+  "as_of": "2026-10-03T05:25:23.977979+00:00",
+  "events": 513,
+  "events_skipped_unmapped": 278,
+  "fixtures_mapped": 235,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=106"
+      "weather_stopped:consecutive_failures:skipped=59"
     ],
     "state": "DEGRADED"
   },
@@ -81,12 +81,12 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 98,
-    "events": 104,
+    "captured": 68,
+    "events": 89,
     "failures": [],
-    "published_post": 8,
-    "published_pre_kickoff": 7,
-    "unchanged": 6,
+    "published_post": 0,
+    "published_pre_kickoff": 0,
+    "unchanged": 21,
     "unpublished": 89
   },
   "map_proposals": {
@@ -166,7 +166,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 9,
+  "results_appended": 12,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -252,17 +252,17 @@
     "8939": "Mozambique"
   },
   "weather": {
-    "captured": 9,
-    "events": 118,
+    "captured": 11,
+    "events": 73,
     "failures": [
-      "401841591: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-33.1304&longitude=-64.3527&hourly=",
-      "401841592: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-34.6131&longitude=-58.3772&hourly=",
-      "401841590: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=La%20Plata&count=5&language=en&"
+      "401841168: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Belo%20Horizonte&count=5&langua",
+      "401860369: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Florian\u00f3polis&count=5&language=",
+      "401860368: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Goi\u00e3nia&count=5&language=en&for"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 106,
+    "skipped": 59,
     "stopped": "consecutive_failures"
   }
 }
