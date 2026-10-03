@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261003T185915Z-45b0f8` · generated 2026-10-03T18:59:15.706487Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261003T191416Z-f2613d` · generated 2026-10-03T19:14:16.293585Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-03T18:56:31.899540Z (CURRENT at publish; CURRENT until 2026-10-03T19:16:31.899540Z, STALE after 2026-10-03T19:26:31.899540Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-03T19:11:31.902849Z (CURRENT at publish; CURRENT until 2026-10-03T19:31:31.902849Z, STALE after 2026-10-03T19:41:31.902849Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-03T18:46:33.982073Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.50s
+model board generated 2026-10-03T19:14:07.085272Z · simulations this update: 9 · Odds API calls this update: 0 (credits 0) · reprice 0.71s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,8 +12,7 @@ model board generated 2026-10-03T18:46:33.982073Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-03T19:00:00Z | Ivory Coast vs Cameroon (fifa.friendly) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
-| 2026-10-03T20:00:00Z | Newell's Old Boys vs Lanús (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
+| 2026-10-03T20:00:00Z | Newell's Old Boys vs Lanús (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
 | 2026-10-03T21:00:00Z | Sint Maarten vs St. Vincent and the Grenadines (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-03T21:30:00Z | Atlético Mineiro vs Red Bull Bragantino (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-04T02:00:00Z | Belize vs French Guiana (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 23 | 0 |
@@ -37,6 +36,15 @@ model board generated 2026-10-03T18:46:33.982073Z · simulations this update: 0 
 | 2026-10-05T00:00:00Z | Costa Rica vs Haiti (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-05T02:00:00Z | Nicaragua vs Dominican Republic (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-05T16:00:00Z | Cyprus vs Latvia (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-05T18:45:00Z | Liechtenstein vs Gibraltar (fifa.friendly) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-05T18:45:00Z | Bosnia and Herzegovina vs Poland (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-10-05T18:45:00Z | France vs Belgium (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-10-05T18:45:00Z | Italy vs Türkiye (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-10-05T18:45:00Z | Montenegro vs Armenia (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-10-05T18:45:00Z | Northern Ireland vs Georgia (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-10-05T18:45:00Z | Romania vs Sweden (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-10-05T18:45:00Z | Ukraine vs Hungary (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-10-05T19:00:00Z | Guadeloupe vs St. Lucia (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
 ## Candidates on CURRENT prices (1; RESEARCH_ONLY = analysis, never a bet)
 
@@ -47,12 +55,12 @@ model board generated 2026-10-03T18:46:33.982073Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 53
-action_NO_EDGE: 1185
-action_NO_QUOTE: 239
+action_EXCLUDED_BY_GATE: 79
+action_NO_EDGE: 1745
+action_NO_QUOTE: 517
 action_RESEARCH_CANDIDATE: 1
-contract_sides: 1478
-fixtures: 25
+contract_sides: 2342
+fixtures: 33
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
