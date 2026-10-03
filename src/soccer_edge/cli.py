@@ -28,6 +28,12 @@ def cmd_app_export(args: argparse.Namespace) -> int:
     return run_from_args(args)
 
 
+def cmd_research_export(args: argparse.Namespace) -> int:
+    from soccer_edge.research_export import run_from_args
+
+    return run_from_args(args)
+
+
 def cmd_export_schemas(args: argparse.Namespace) -> int:
     from soccer_edge.contracts import export_json_schemas
 
@@ -2597,6 +2603,29 @@ def build_parser() -> argparse.ArgumentParser:
 
     add_app_export_arguments(ae)
     ae.set_defaults(func=cmd_app_export)
+
+    rx = sub.add_parser(
+        "research-export",
+        help="archive root -> Edge Finder research explorer (app/latest/explorer), after app-export",
+    )
+    # mirrors soccer_edge.research_export.add_arguments (kept inline: that module imports the model stack)
+    rx.add_argument(
+        "--data-root", required=True, help="archive root (the same --data-root app-export read)"
+    )
+    rx.add_argument(
+        "--out", required=True, help="the published v1 app root, e.g. <archive>/app/latest"
+    )
+    rx.add_argument(
+        "--now", default=None, help="ISO-8601 UTC instant; default = the v1 manifest's generated_at"
+    )
+    rx.add_argument("--commit-sha", default=None)
+    rx.add_argument(
+        "--min-interval-minutes",
+        type=float,
+        default=0,
+        help="rebuild only when due (no explorer, new v1 events, or older than this); 0 = always",
+    )
+    rx.set_defaults(func=cmd_research_export)
 
     # --- kalshi-bet-router destination contract (no live routing is enabled by these) ---
     iw = sub.add_parser(

@@ -77,6 +77,28 @@ PY
       --commit-sha "${GITHUB_SHA:-}" --workflow-run-id "${GITHUB_RUN_ID:-}" \
       || echo "::warning::app export failed; app/latest/health.json carries the failure (payload unchanged)"
   fi
+  # Research explorer (docs/APP_EXPORT.md "Research explorer"): app/latest/explorer, built from the same
+  # merged tree right after the v1 export, as its own command so a research failure can never block the v1
+  # payload or this publish. It reuses the v1 manifest's run_id and generated_at. On failure the previous
+  # explorer tree is kept byte-identical (atomic publish), the job logs a research_export warning and the
+  # step summary records it; the push of app/latest carries the explorer when it succeeded. Gated by
+  # research.refresh_due (60 min): capture batches that bring no new v1 event skip the rebuild and leave
+  # the ~36 MB tree untouched (publish.publish never prunes explorer/).
+  if [[ "$HAVE_PKG" == 1 && -f "$WORK/$DEST/app/latest/manifest.json" ]]; then
+    RX_LOG="$(mktemp)"
+    if python -m soccer_edge.cli research-export --data-root "$WORK/$DEST" --out "$WORK/$DEST/app/latest" \
+        --commit-sha "${GITHUB_SHA:-}" --min-interval-minutes 60 >"$RX_LOG" 2>&1; then
+      RX_STATUS=ok
+    else
+      RX_STATUS=FAILED
+      echo "::warning title=research_export::research export failed; app/latest/explorer keeps the previous tree"
+    fi
+    cat "$RX_LOG"
+    if [ -n "${GITHUB_STEP_SUMMARY:-}" ]; then
+      { echo "### research_export: $RX_STATUS"; echo '```'; tail -n 3 "$RX_LOG"; echo '```'; } >>"$GITHUB_STEP_SUMMARY" || true
+    fi
+    rm -f "$RX_LOG"
+  fi
   # Integrity: extend the manifest over the merged tree and verify it. A manifest that does not verify means
   # the archive lost or changed evidence; the publish is aborted rather than committing on top of corruption.
   # Before the manifest is bootstrapped (archive-recover.yml with init_manifest) both steps are no-ops.

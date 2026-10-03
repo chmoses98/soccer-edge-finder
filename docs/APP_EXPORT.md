@@ -120,3 +120,91 @@ slate `slate-20261002T172404Z-39df8c`, run `run-20261002T142020Z-e11a59`: 37 eve
   signal.
 * `linkage.apply_links` returns a copy; an easy mistake is to ignore the return value (the adapter
   rebinds the list).
+
+## Research explorer (`app/latest/explorer`, contract 1.1.0)
+
+`soccer research-export` (`src/soccer_edge/research_export.py`, wrapper `scripts/research_export.py`)
+publishes the research graph beside the v1 payload, right after `app-export`, from the same archive root:
+
+    python -m soccer_edge.cli research-export --data-root <archive> --out <archive>/app/latest [--now ISO] [--commit-sha X]
+
+It reads the v1 publication it extends (`manifest.json` -> `run_id` and, unless `--now` is given,
+`generated_at`; `events/markets/model_prices/recommendations.json`), so every `evt_` / `prt_` / `mkt_` id is
+the v1 id (teams: `build.participant(TEAM, source "team_id", the slug)` exactly as `app_export._team`;
+past games and settled fixtures: `build.event(source "fixture_id", ...)`). It writes nothing outside
+`explorer/`, never touches the v1 files, and publishes atomically (`research.publish_explorer`): on any
+failure the previous tree stays byte-identical and the command exits 1. `scripts/archive_publish.sh` runs it
+as its own command after the v1 export (every publisher: run-soccer, kalshi-capture, kickoff-dispatch via
+`kickoff_publish.sh`, espn-lineups, settle-evaluate, backfills); a failure logs a `research_export` warning
+and a line in the step summary and never blocks the v1 payload or the push. Point-in-time: every timestamped
+input is cut at the publication instant (`now`).
+
+### Sources and what each becomes
+
+| Source (archive / main) | Becomes |
+| --- | --- |
+| `snapshots/<day>/cap-*.jsonl[.gz]` | `market_history/<evt_>.json`: every v1 ticker of the event (or every settled ticker), bid/ask/last/volume/OI per capture, `source = kalshi:<batch_id>` |
+| `predictions/<day>/predictions.jsonl[.gz]` | per-event `extensions.projection_history` (as_of, fair mean, 80 % low/high, Kalshi ask at the run, ledger run id) per ticker; run-axis `time_series` of `model_fair_probability` for the 3-way result tickers; rest/congestion context |
+| `settlements/<day>/predictions.jsonl[.gz]` (settled in the last 7 days) | settled-event documents (`status FINAL`) with per-ticker outcome, fair mean/interval, entry/close, close class and CLV, plus arithmetic Brier / log loss of model vs entry mid vs close mid |
+| `evaluation/model_health.v1.json` | `extensions.calibration` per event (model family x market family, horizon `any`; `validated: false` on `*.intl_pool`) and one calibration context note |
+| `results/espn/<league>.jsonl` (dedup by `espn_event_id`, last row wins; repeated fixture ids get `:occN`) | team game logs (last 40 per profile), opponents + head-to-head, form metrics per window, rankings, per-game GF/GA series (last 40), home/away splits, and the RESEARCH dc_laplace_v2 refit |
+| `data/international/results_v1.csv.gz` (main) + exact `intl:` -> `nat.` map from registry names/aliases | `elo_rating` (pre-match Elo of the latest archived match), Elo series (last 100 matches), international head-to-head |
+| `lineups/<day>/*`, `lineups/history/*` | `context.lineups`: newest sheet with players per event + per-athlete appearance counts over every stored sheet |
+| `weather/<day>.jsonl[.gz]` | `context.weather` (newest forecast revision) and `context.venue` |
+| `runs/latest.model_board.v1.json` | `distributions` (stored quantile levels 0.5/10.5/25.5/49.5/50.5/74.5/89.5/99.5 % of P(YES), mean, sd, n_worlds) and the board summary note |
+
+### Metrics (`metrics.json`)
+
+`points_per_game`, `goals_for_per_game`, `goals_against_per_game`, `goal_difference_per_game`,
+`clean_sheet_rate`, `btts_rate`, `over_2_5_rate` (PARTIAL; per competition pool: club leagues SEASON + L5,
+national teams L10 + L5; ranked over every team of the pool that meets the window filter), `elo_rating`
+(PARTIAL; ranked over the 122 exactly-mapped registry nations), `dc_attack` / `dc_defence` (RESEARCH: the
+repo's own `fit_competition` + `StrengthConfigV2` refit on `results/espn` per pool, 730-day lookback, ranked
+over teams with >= 8 effective matches; never the production posterior, which prices with dc_laplace_v1),
+`model_fair_probability` (VERIFIED ledger data, entity MARKET, run axis; the model itself is RESEARCH_ONLY).
+Projections from the international pool are published with `quality_status RESEARCH` (not validated).
+
+### Capabilities (audit `audit_soccer.md`, 2026-10-03)
+
+| Capability | Status | Why |
+| --- | --- | --- |
+| market_price_history, market_prices, raw_projections, team_props, game_markets, calibration, historical_accuracy, event_research, search | VERIFIED | production ledgers / captures on a cadence, tested, history present |
+| team_profiles, team_metrics, team_game_logs, historical_results, opponents, recent_form_windows, situational_splits, rankings, comparisons, time_series | PARTIAL | ESPN results are goals only, 2024-07 onward; club top-5 history is not committed |
+| opponent_adjustment | PARTIAL | ratings are not persisted; a labelled RESEARCH refit is shown |
+| lineups, player_game_logs | PARTIAL | sheets only: no minutes, no stats; ~50 % pre-kickoff XI |
+| projection_distributions | PARTIAL | current board only |
+| weather | PARTIAL | joined by espn_event_id; geocode health DEGRADED |
+| clv | PARTIAL | sharp reference almost never present |
+| advanced_stats | RESEARCH | xG 2016-2023 top-5 only, league offsets, intl_hier: frozen research outputs, not published |
+| player_profiles, player_metrics, usage, player_props, injuries, schedule_strength, matchup_metrics, play_by_play, venue_effects, wager_history | UNAVAILABLE | see each item's `reasons` |
+
+A PARTIAL/VERIFIED capability whose evidence is absent from a given publication (no lineup, forecast,
+board quantile, calibration cell or settlement for the published events) is published UNAVAILABLE with
+that reason instead of being claimed.
+
+### Sizes (2026-10-03 archive, 43 v1 + 49 settled events, `research.tree_bytes`)
+
+| explorer/ | files | bytes | largest file |
+| --- | --- | --- | --- |
+| teams | 202 | 7,829,663 | 49 KB (budget 150 KB) |
+| events | 92 | 8,086,371 | 144 KB (budget 150 KB; projection history shrinks to fit, 9 events trimmed) |
+| market_history | 78 | 14,544,338 | 377 KB (budget 400 KB; opening + latest k captures per ticker on 21 events) |
+| series | 341 | 4,010,128 | 35 KB |
+| rankings | 65 | 785,691 | 29 KB |
+| index.json / search_index.json / metrics.json / capabilities.json | 4 | 210,785 (compact, contract 1.1.1) / 166,872 / 24,841 / 21,719 | index budget 300 KB |
+
+Total ~35.7 MB. A real-archive export takes ~20 s CPU (load ~4 s; most of the rest is contract schema
+validation), so `archive_publish.sh` passes `--min-interval-minutes 60`: the rebuild runs only when
+`refresh_due` says so (no explorer yet, a v1 event the explorer lacks, or a tree older than 60 min).
+Settled events are published too, so extra explorer events never force a rebuild; otherwise the capture
+batches leave `explorer/` untouched (contract 1.1.1 `publish.publish` no longer prunes it). Largest GAME
+packet on the 2026-10-03 archive: 15,519 chars of text (61 markets, nothing truncated; budget 60,000).
+
+### Deliberately not published
+
+Player profiles (no canonical player ids; `data/registry` has `players: 0`), player metrics / usage /
+props, injuries, schedule strength, matchup metrics, venue effects, play-by-play, wagers (ledger empty),
+xG history and league / international hierarchical research ratings (RESEARCH, no ids for the published
+teams), the stored `horizon` / `minutes_to_kickoff` snapshot fields (unreliable: time to kickoff is
+`event.start_time_utc - captured_at`), sharp reference odds (112 rows), and any refit presented as the
+production posterior.
