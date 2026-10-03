@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-03T12:55:49.468397+00:00",
+  "as_of": "2026-10-03T13:55:40.950413+00:00",
   "events": 19,
   "events_skipped_unmapped": 6,
   "fixtures_mapped": 13,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=7"
+      "weather_stopped:consecutive_failures:skipped=2"
     ],
     "state": "DEGRADED"
   },
@@ -22,13 +22,13 @@
     "uefa.nations"
   ],
   "lineups": {
-    "captured": 0,
+    "captured": 2,
     "events": 17,
     "failures": [],
-    "published_post": 0,
+    "published_post": 1,
     "published_pre_kickoff": 1,
-    "unchanged": 17,
-    "unpublished": 16
+    "unchanged": 15,
+    "unpublished": 15
   },
   "map_proposals": {
     "fifa.friendly": {
@@ -65,17 +65,17 @@
     "6725": "Namibia"
   },
   "weather": {
-    "captured": 4,
+    "captured": 9,
     "events": 17,
     "failures": [
-      "401921544: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Buenos%20Aires&count=5&language",
-      "401905202: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Glendale&count=5&language=en&fo",
-      "401861111: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Helsinki&count=5&language=en&fo"
+      "401861115: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Tallinn&count=5&language=en&for",
+      "401861112: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Reykjavik&count=5&language=en&f",
+      "401861116: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Skopje&count=5&language=en&form"
     ],
     "forecast_miss": 0,
     "geocode_miss": 3,
     "no_venue": 0,
-    "skipped": 7,
+    "skipped": 2,
     "stopped": "consecutive_failures"
   }
 }
