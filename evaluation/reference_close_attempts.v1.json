@@ -1,16 +1,26 @@
 {
  "counts": {
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 19,
+  "PINNACLE_QUOTED_NOTHING": 15,
   "MISSED_DISPATCHER_CLOSE": 20,
-  "PINNACLE_QUOTED_NOTHING": 13,
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 18,
-  "NO_SPORT_KEY": 15,
-  "PINNACLE_VALID_CLOSE": 8
+  "PINNACLE_VALID_CLOSE": 11,
+  "NO_SPORT_KEY": 17
  },
  "fixtures": {
+  "fx:arg.primera:2026:arg.atletico_tucuman:arg.barracas_central": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
   "fx:arg.primera:2026:arg.boca_juniors:arg.union": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261003T001548Z"
+  },
+  "fx:arg.primera:2026:arg.defensa_y_justicia:arg.san_lorenzo": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261003T172913Z"
   },
   "fx:arg.primera:2026:arg.independiente:arg.instituto": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -21,6 +31,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:arg.primera:2026:arg.newells:arg.lanus": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261003T194500Z"
   },
   "fx:bra.serie_a:2026:bra.sao_paulo:bra.santos": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -147,6 +162,16 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:fifa.friendly:2026:nat.can:nat.per": {
+   "state": "NO_SPORT_KEY",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261003T174321Z"
+  },
+  "fx:fifa.friendly:2026:nat.civ:nat.cmr": {
+   "state": "NO_SPORT_KEY",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261003T184350Z"
+  },
   "fx:fifa.friendly:2026:nat.col:nat.par": {
    "state": "NO_SPORT_KEY",
    "close_horizon_delivered": true,
@@ -232,6 +257,11 @@
    "close_horizon_delivered": false,
    "batch_id": null
   },
+  "fx:uefa.nations_league:2026-27:nat.esp:nat.cze": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261003T183000Z"
+  },
   "fx:uefa.nations_league:2026-27:nat.est:nat.lux": {
    "state": "PINNACLE_QUOTED_NOTHING",
    "close_horizon_delivered": true,
@@ -307,6 +337,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20260929T155452Z"
   },
+  "fx:uefa.nations_league:2026-27:nat.mkd:nat.sco": {
+   "state": "PINNACLE_QUOTED_NOTHING",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261003T183000Z"
+  },
   "fx:uefa.nations_league:2026-27:nat.mlt:nat.gib": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -336,6 +371,11 @@
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
    "batch_id": null
+  },
+  "fx:uefa.nations_league:2026-27:nat.sui:nat.svn": {
+   "state": "PINNACLE_QUOTED_NOTHING",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261003T183000Z"
   },
   "fx:uefa.nations_league:2026-27:nat.svk:nat.kaz": {
    "state": "MISSED_DISPATCHER_CLOSE",
