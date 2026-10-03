@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261003T142609Z-421f0d` · generated 2026-10-03T14:26:09.124281Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261003T144109Z-eec5b6` · generated 2026-10-03T14:41:09.241137Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-03T14:23:37.127255Z (CURRENT at publish; CURRENT until 2026-10-03T14:43:37.127255Z, STALE after 2026-10-03T14:53:37.127255Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-03T14:38:37.129751Z (CURRENT at publish; CURRENT until 2026-10-03T14:58:37.129751Z, STALE after 2026-10-03T15:08:37.129751Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-03T12:41:37.075829Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.70s
+model board generated 2026-10-03T12:41:37.075829Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.71s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -50,14 +50,14 @@ model board generated 2026-10-03T12:41:37.075829Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Atlético Mineiro vs Red Bull Bragantino | btts | no | 0.4400 | 0.561 [0.435, 0.688] | +0.104 | +0.027 | 0.46 | - | * | RESEARCH_CANDIDATE |
+| Atlético Mineiro vs Red Bull Bragantino | btts | no | 0.4300 | 0.561 [0.435, 0.688] | +0.114 | +0.037 | 0.46 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 92
-action_NO_EDGE: 1836
-action_NO_QUOTE: 419
+action_EXCLUDED_BY_GATE: 94
+action_NO_EDGE: 1831
+action_NO_QUOTE: 422
 action_RESEARCH_CANDIDATE: 1
 contract_sides: 2348
 fixtures: 33
