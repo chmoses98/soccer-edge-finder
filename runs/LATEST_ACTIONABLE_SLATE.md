@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261003T210238Z-3bdab9` · generated 2026-10-03T21:02:38.588694Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
+slate `slate-20261003T211736Z-4be130` · generated 2026-10-03T21:17:36.685527Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-03T21:00:00.022633Z (CURRENT at publish; CURRENT until 2026-10-03T21:20:00.022633Z, STALE after 2026-10-03T21:30:00.022633Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-03T21:15:00.020376Z (CURRENT at publish; CURRENT until 2026-10-03T21:35:00.020376Z, STALE after 2026-10-03T21:45:00.020376Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-03T21:02:37.823762Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.79s
+model board generated 2026-10-03T21:02:37.823762Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.94s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-03T21:02:37.823762Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-03T21:30:00Z | Atlético Mineiro vs Red Bull Bragantino (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
+| 2026-10-03T21:30:00Z | Atlético Mineiro vs Red Bull Bragantino (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
 | 2026-10-04T02:00:00Z | Belize vs French Guiana (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-04T02:00:00Z | United States vs Mexico (fifa.friendly) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-04T13:00:00Z | Azerbaijan vs Lithuania (uefa.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 61 | 1 |
@@ -54,8 +54,8 @@ model board generated 2026-10-03T21:02:37.823762Z · simulations this update: 1 
 
 ```
 action_EXCLUDED_BY_GATE: 114
-action_NO_EDGE: 1894
-action_NO_QUOTE: 373
+action_NO_EDGE: 1897
+action_NO_QUOTE: 370
 action_RESEARCH_CANDIDATE: 1
 contract_sides: 2382
 fixtures: 31
