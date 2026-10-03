@@ -69768,13 +69768,13 @@
       "fixture_id": "fx:uefa.nations_league:2026-27:nat.fin:nat.alb",
       "fixtures_observed_at": "2026-10-03T11:47:08.646773Z",
       "home": "nat.fin",
-      "input_fingerprint": "sha256:0022e4d76f8a0e37155d04071667a67d0a330f47fb5b859ac3507384c1111da6",
+      "input_fingerprint": "sha256:c789ffba930e6feb948d2d37c3ab286b6ea9fa28cd2e2908bb4d3ad0b2757e3f",
       "inputs": {
         "competition_id": "uefa.nations_league",
         "draws_per_world": 100,
         "engine_version": "world_sim_v2",
         "kickoff_utc": "2026-10-03T13:00:00Z",
-        "lineup_key": "none",
+        "lineup_key": "sha256:459f6e8afc969b593fe566184b95d2e656dcc7adef3c34478ba906128d7b7475",
         "model_family": "data_only.world_sim_v2.intl_pool",
         "model_version": "dc_laplace_v1",
         "n_worlds": 1000,
@@ -69785,16 +69785,16 @@
         "worlds_version": "worlds_v1"
       },
       "lineup": {
-        "checked_at": "2026-10-03T11:58:45.881402Z",
-        "key": "none",
-        "last_change_at": "2026-10-03T00:57:37.842156Z",
-        "state": "unconfirmed"
+        "checked_at": "2026-10-03T12:31:48.033212Z",
+        "key": "sha256:459f6e8afc969b593fe566184b95d2e656dcc7adef3c34478ba906128d7b7475",
+        "last_change_at": "2026-10-03T12:31:48.033212Z",
+        "state": "confirmed"
       },
-      "model_fitted_at": "2026-10-03T11:59:44.446249Z",
-      "model_generated_at": "2026-10-03T11:59:45.505593Z",
+      "model_fitted_at": "2026-10-03T12:31:58.402257Z",
+      "model_generated_at": "2026-10-03T12:31:59.554289Z",
       "results_observed_at": "2026-10-03T07:25:15.378433Z",
-      "sim_key": "sha256:206495ceb53593f4a69d3736f37ddb6a370d9c3bba627cf824691851ecad20a3",
-      "source_run_id": "run-20261003T115945Z-597851",
+      "sim_key": "sha256:f0b30f2387ddb16d09250cc348f0a1ce93f6b32498fa65c5b5359c364177089d",
+      "source_run_id": "run-20261003T123159Z-e0f0c6",
       "summary": {
         "mean_away_goals": 0.91313,
         "mean_home_goals": 1.61419,
@@ -141001,6 +141001,6 @@
       }
     }
   },
-  "generated_at": "2026-10-03T11:59:45.505593Z",
+  "generated_at": "2026-10-03T12:31:59.554289Z",
   "quantile_levels": "(i + 0.5) / 100, i = 0..99"
 }
