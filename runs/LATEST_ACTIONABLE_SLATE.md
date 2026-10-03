@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261003T001827Z-25e1b1` · generated 2026-10-03T00:18:27.832956Z · trigger `kickoff_chain:T-15` · mode `model_refresh_and_reprice`
+slate `slate-20261003T002738Z-3b09b8` · generated 2026-10-03T00:27:38.957706Z · trigger `kickoff_chain:T-5` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-03T00:15:48.939795Z (CURRENT at publish; CURRENT until 2026-10-03T00:35:48.939795Z, STALE after 2026-10-03T00:45:48.939795Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-03T00:25:02.127324Z (CURRENT at publish; CURRENT until 2026-10-03T00:45:02.127324Z, STALE after 2026-10-03T00:55:02.127324Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-03T00:15:27.714561Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.72s
+model board generated 2026-10-03T00:15:27.714561Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.73s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,22 +12,22 @@ model board generated 2026-10-03T00:15:27.714561Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-03T00:30:00Z | Boca Juniors vs Unión (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
+| 2026-10-03T00:30:00Z | Boca Juniors vs Unión (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
 | 2026-10-03T02:00:00Z | El Salvador vs Jamaica (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 23 | 0 |
-| 2026-10-03T13:00:00Z | Finland vs Albania (uefa.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-10-03T16:00:00Z | Belarus vs San Marino (uefa.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-10-03T16:00:00Z | Croatia vs England (uefa.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-10-03T16:00:00Z | Estonia vs Luxembourg (uefa.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-10-03T16:00:00Z | Iceland vs Bulgaria (uefa.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-10-03T13:00:00Z | Finland vs Albania (uefa.nations_league) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-10-03T16:00:00Z | Belarus vs San Marino (uefa.nations_league) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-10-03T16:00:00Z | Croatia vs England (uefa.nations_league) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-10-03T16:00:00Z | Estonia vs Luxembourg (uefa.nations_league) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-10-03T16:00:00Z | Iceland vs Bulgaria (uefa.nations_league) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-10-03T17:45:00Z | Defensa y Justicia vs San Lorenzo (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-10-03T18:00:00Z | Canada vs Peru (fifa.friendly) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 23 | 0 |
-| 2026-10-03T18:45:00Z | Spain vs Czechia (uefa.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-10-03T18:45:00Z | North Macedonia vs Scotland (uefa.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-10-03T18:45:00Z | Switzerland vs Slovenia (uefa.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-10-03T19:00:00Z | Ivory Coast vs Cameroon (fifa.friendly) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-10-03T18:00:00Z | Canada vs Peru (fifa.friendly) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-10-03T18:45:00Z | Spain vs Czechia (uefa.nations_league) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-10-03T18:45:00Z | North Macedonia vs Scotland (uefa.nations_league) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-10-03T18:45:00Z | Switzerland vs Slovenia (uefa.nations_league) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-10-03T19:00:00Z | Ivory Coast vs Cameroon (fifa.friendly) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-03T20:00:00Z | Newell's Old Boys vs Lanús (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-03T21:00:00Z | Sint Maarten vs St. Vincent and the Grenadines (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-03T21:30:00Z | Atlético Mineiro vs Red Bull Bragantino (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-03T21:00:00Z | Sint Maarten vs St. Vincent and the Grenadines (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-03T21:30:00Z | Atlético Mineiro vs Red Bull Bragantino (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-04T02:00:00Z | Belize vs French Guiana (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-04T02:00:00Z | United States vs Mexico (fifa.friendly) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-04T13:00:00Z | Azerbaijan vs Lithuania (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
@@ -56,13 +56,13 @@ model board generated 2026-10-03T00:15:27.714561Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 53
-action_NO_EDGE: 1933
-action_NO_QUOTE: 465
+action_EXCLUDED_BY_GATE: 54
+action_NO_EDGE: 1930
+action_NO_QUOTE: 467
 action_RESEARCH_CANDIDATE: 1
 contract_sides: 2452
 fixtures: 34
-fixtures_model_invalidated: 0
+fixtures_model_invalidated: 1
 fixtures_model_missing: 0
 ```
 
