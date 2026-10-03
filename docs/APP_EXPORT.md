@@ -191,10 +191,14 @@ that reason instead of being claimed.
 | market_history | 78 | 14,544,338 | 377 KB (budget 400 KB; opening + latest k captures per ticker on 21 events) |
 | series | 341 | 4,010,128 | 35 KB |
 | rankings | 65 | 785,691 | 29 KB |
-| index.json / search_index.json / metrics.json / capabilities.json | 4 | 261,617 / 166,872 / 24,841 / 21,719 | index budget 300 KB |
+| index.json / search_index.json / metrics.json / capabilities.json | 4 | 210,785 (compact, contract 1.1.1) / 166,872 / 24,841 / 21,719 | index budget 300 KB |
 
-Total ~35.7 MB. The live-event market histories (~7 MB) change with every capture batch; settled ones are
-static. A real-archive export takes ~20 s CPU (load ~4 s; most of the rest is contract schema validation).
+Total ~35.7 MB. A real-archive export takes ~20 s CPU (load ~4 s; most of the rest is contract schema
+validation), so `archive_publish.sh` passes `--min-interval-minutes 60`: the rebuild runs only when
+`refresh_due` says so (no explorer yet, a v1 event the explorer lacks, or a tree older than 60 min).
+Settled events are published too, so extra explorer events never force a rebuild; otherwise the capture
+batches leave `explorer/` untouched (contract 1.1.1 `publish.publish` no longer prunes it). Largest GAME
+packet on the 2026-10-03 archive: 15,519 chars of text (61 markets, nothing truncated; budget 60,000).
 
 ### Deliberately not published
 

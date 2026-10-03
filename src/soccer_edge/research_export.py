@@ -3360,19 +3360,57 @@ def _check_no_secrets(docs: list[dict[str, Any]]) -> None:
                 )
 
 
+def refresh_due(app_root: Path, *, now: object, min_interval_seconds: float) -> tuple[bool, str]:
+    """``research.refresh_due`` for this sport. SOCCER also publishes settled fixtures as event
+    research, so the explorer's event list is a superset of the v1 events: only v1 events the explorer
+    does not have yet (new games) force a rebuild; settled extras, and v1 events that left the board,
+    wait for the interval refresh."""
+    due, reason = R.refresh_due(app_root, now=now, min_interval_seconds=min_interval_seconds)
+    if not due or not reason.startswith("v1 events changed"):
+        return due, reason
+    index = R.read_index(app_root) or {}
+    current = {e["event_id"] for e in _v1_items(Path(app_root), "events")}
+    published = {e["event_id"] for e in index.get("events", [])}
+    new = current - published
+    if new:
+        return True, f"v1 events changed ({len(new)} new)"
+    age = (timeutil.parse_ts(now) - timeutil.parse_ts(index["generated_at"])).total_seconds()
+    if age >= min_interval_seconds:
+        return True, f"explorer is {int(age)} s old (refresh every {int(min_interval_seconds)} s)"
+    return False, (
+        f"explorer is {int(age)} s old and has every v1 event "
+        f"({len(published - current)} settled/retired extras)"
+    )
+
+
 def export_explorer(
     *,
     app_root: Path,
     data_root: Path,
     now: datetime | str | None = None,
     commit_sha: str | None = None,
+    min_interval_seconds: float = 0,
     repo_root: Path = REPO_ROOT,
     log=print,
 ) -> int:
-    """Build and publish ``<app_root>/explorer``. Returns 0, or 1 with the previous tree untouched."""
+    """Build and publish ``<app_root>/explorer``. Returns 0, or 1 with the previous tree untouched.
+    With ``min_interval_seconds > 0`` the rebuild is skipped (exit 0, tree untouched) unless
+    :func:`refresh_due` says it is due."""
     app_root = Path(app_root)
     try:
         when = timeutil.parse_ts(now) if now is not None else None
+        if min_interval_seconds > 0:
+            manifest_path = app_root / "manifest.json"
+            if not manifest_path.exists():
+                raise ResearchExportError(
+                    f"no v1 manifest at {manifest_path}: run app-export first"
+                )
+            at = when or timeutil.parse_ts(_read_json(manifest_path)["generated_at"])
+            due, reason = refresh_due(app_root, now=at, min_interval_seconds=min_interval_seconds)
+            if not due:
+                log(f"research-export SKIPPED (not due: {reason}); explorer/ left untouched")
+                return 0
+            log(f"research-export due: {reason}")
         inputs = load_inputs(
             data_root=Path(data_root), app_root=app_root, now=when, repo_root=repo_root
         )
@@ -3418,6 +3456,12 @@ def add_arguments(ap: argparse.ArgumentParser) -> None:
         "--now", default=None, help="ISO-8601 UTC instant; default = the v1 manifest's generated_at"
     )
     ap.add_argument("--commit-sha", default=None)
+    ap.add_argument(
+        "--min-interval-minutes",
+        type=float,
+        default=0,
+        help="rebuild only when due (no explorer, new v1 events, or older than this); 0 = always",
+    )
 
 
 def run_from_args(args: argparse.Namespace) -> int:
@@ -3426,6 +3470,7 @@ def run_from_args(args: argparse.Namespace) -> int:
         data_root=Path(args.data_root),
         now=args.now or None,
         commit_sha=args.commit_sha or None,
+        min_interval_seconds=60.0 * float(getattr(args, "min_interval_minutes", 0) or 0),
     )
 
 

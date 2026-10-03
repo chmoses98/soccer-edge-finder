@@ -81,11 +81,13 @@ PY
   # merged tree right after the v1 export, as its own command so a research failure can never block the v1
   # payload or this publish. It reuses the v1 manifest's run_id and generated_at. On failure the previous
   # explorer tree is kept byte-identical (atomic publish), the job logs a research_export warning and the
-  # step summary records it; the push of app/latest carries the explorer when it succeeded.
+  # step summary records it; the push of app/latest carries the explorer when it succeeded. Gated by
+  # research.refresh_due (60 min): capture batches that bring no new v1 event skip the rebuild and leave
+  # the ~36 MB tree untouched (publish.publish never prunes explorer/).
   if [[ "$HAVE_PKG" == 1 && -f "$WORK/$DEST/app/latest/manifest.json" ]]; then
     RX_LOG="$(mktemp)"
     if python -m soccer_edge.cli research-export --data-root "$WORK/$DEST" --out "$WORK/$DEST/app/latest" \
-        --commit-sha "${GITHUB_SHA:-}" >"$RX_LOG" 2>&1; then
+        --commit-sha "${GITHUB_SHA:-}" --min-interval-minutes 60 >"$RX_LOG" 2>&1; then
       RX_STATUS=ok
     else
       RX_STATUS=FAILED

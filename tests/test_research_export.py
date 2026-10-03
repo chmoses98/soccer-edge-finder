@@ -14,7 +14,7 @@ from __future__ import annotations
 import json
 import os
 import shutil
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
 import pytest
@@ -340,3 +340,48 @@ def test_real_data_explorer(tmp_path):
         packet.build(app_root=out, scope_kind="GAME", event_id=ev["event_id"])["quality"]["missing"]
         == []
     )
+
+
+def test_refresh_gate_skips_within_the_interval(published, tmp_path):
+    root, _ = published
+    work = tmp_path / "gate"
+    shutil.copytree(root, work)
+    app = work / "app" / "latest"
+    before = R.digest_tree(app)
+    later = NOW + timedelta(minutes=20)
+    # a capture batch republishes v1 (same events); publish.publish keeps explorer/
+    assert app_export.export(data_root=work, out=app, now=later, log=_noop) == 0
+    assert R.digest_tree(app) == before
+    logs: list[str] = []
+    rc = research_export.export_explorer(
+        app_root=app, data_root=work, min_interval_seconds=3600, log=logs.append
+    )
+    assert rc == 0 and logs and "SKIPPED" in logs[0]
+    assert R.digest_tree(app) == before
+    due, reason = research_export.refresh_due(
+        app, now=NOW + timedelta(hours=2), min_interval_seconds=3600
+    )
+    assert due and "old" in reason
+
+
+def test_refresh_gate_rebuilds_when_v1_events_change(published, tmp_path):
+    root, _ = published
+    work = tmp_path / "gate2"
+    shutil.copytree(root, work)
+    app = work / "app" / "latest"
+    # the published explorer lacks one v1 event (as after a slate refresh adds a fixture)
+    index_path = app / "explorer" / "index.json"
+    index = json.loads(index_path.read_text())
+    dropped = next(e for e in _items(app, "events"))["event_id"]
+    index["events"] = [e for e in index["events"] if e["event_id"] != dropped]
+    index_path.write_text(json.dumps(index, indent=2, sort_keys=True) + "\n")
+    due, reason = research_export.refresh_due(app, now=NOW, min_interval_seconds=3600)
+    assert due and "1 new" in reason
+    logs: list[str] = []
+    rc = research_export.export_explorer(
+        app_root=app, data_root=work, min_interval_seconds=3600, log=logs.append
+    )
+    assert rc == 0 and any("due: v1 events changed" in m for m in logs)
+    rebuilt = R.read_index(app)
+    assert dropped in {e["event_id"] for e in rebuilt["events"]}
+    assert R.verify_explorer(app) == []

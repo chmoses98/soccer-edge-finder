@@ -2619,6 +2619,12 @@ def build_parser() -> argparse.ArgumentParser:
         "--now", default=None, help="ISO-8601 UTC instant; default = the v1 manifest's generated_at"
     )
     rx.add_argument("--commit-sha", default=None)
+    rx.add_argument(
+        "--min-interval-minutes",
+        type=float,
+        default=0,
+        help="rebuild only when due (no explorer, new v1 events, or older than this); 0 = always",
+    )
     rx.set_defaults(func=cmd_research_export)
 
     # --- kalshi-bet-router destination contract (no live routing is enabled by these) ---
