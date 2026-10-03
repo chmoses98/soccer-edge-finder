@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261003T181342Z-3bf542` · generated 2026-10-03T18:13:42.685342Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261003T181655Z-7accfb` · generated 2026-10-03T18:16:55.249904Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-03T18:11:11.906920Z (CURRENT at publish; CURRENT until 2026-10-03T18:31:11.906920Z, STALE after 2026-10-03T18:41:11.906920Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-03T18:14:11.233290Z (CURRENT at publish; CURRENT until 2026-10-03T18:34:11.233290Z, STALE after 2026-10-03T18:44:11.233290Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-03T17:58:50.869878Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.57s
+model board generated 2026-10-03T18:16:50.941012Z · simulations this update: 3 · Odds API calls this update: 0 (credits 0) · reprice 0.58s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,9 +12,9 @@ model board generated 2026-10-03T17:58:50.869878Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-03T18:45:00Z | Spain vs Czechia (uefa.nations_league) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
-| 2026-10-03T18:45:00Z | North Macedonia vs Scotland (uefa.nations_league) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-10-03T18:45:00Z | Switzerland vs Slovenia (uefa.nations_league) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-10-03T18:45:00Z | Spain vs Czechia (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
+| 2026-10-03T18:45:00Z | North Macedonia vs Scotland (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-10-03T18:45:00Z | Switzerland vs Slovenia (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-10-03T19:00:00Z | Ivory Coast vs Cameroon (fifa.friendly) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-03T20:00:00Z | Newell's Old Boys vs Lanús (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-03T21:00:00Z | Sint Maarten vs St. Vincent and the Grenadines (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -50,14 +50,13 @@ model board generated 2026-10-03T17:58:50.869878Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 51
-action_MODEL_INVALIDATED: 302
-action_NO_EDGE: 1181
-action_NO_QUOTE: 309
+action_EXCLUDED_BY_GATE: 74
+action_NO_EDGE: 1461
+action_NO_QUOTE: 308
 action_RESEARCH_CANDIDATE: 1
 contract_sides: 1844
 fixtures: 28
-fixtures_model_invalidated: 3
+fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
