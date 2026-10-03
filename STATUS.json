@@ -1,11 +1,14 @@
 {
-  "as_of": "2026-10-03T12:46:43.908696+00:00",
+  "as_of": "2026-10-03T12:55:49.468397+00:00",
   "events": 19,
   "events_skipped_unmapped": 6,
   "fixtures_mapped": 13,
   "health": {
-    "reasons": [],
-    "state": "HEALTHY"
+    "reasons": [
+      "weather_failures:3",
+      "weather_stopped:consecutive_failures:skipped=7"
+    ],
+    "state": "DEGRADED"
   },
   "leagues": [
     "concacaf.nations.league",
@@ -62,13 +65,17 @@
     "6725": "Namibia"
   },
   "weather": {
-    "captured": 14,
+    "captured": 4,
     "events": 17,
-    "failures": [],
+    "failures": [
+      "401921544: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Buenos%20Aires&count=5&language",
+      "401905202: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Glendale&count=5&language=en&fo",
+      "401861111: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Helsinki&count=5&language=en&fo"
+    ],
     "forecast_miss": 0,
     "geocode_miss": 3,
     "no_venue": 0,
-    "skipped": 0,
-    "stopped": null
+    "skipped": 7,
+    "stopped": "consecutive_failures"
   }
 }
