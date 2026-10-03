@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261003T000028Z-8a879b` · generated 2026-10-03T00:00:28.879711Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261003T001528Z-569f86` · generated 2026-10-03T00:15:28.551210Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-02T23:57:53.365617Z (CURRENT at publish; CURRENT until 2026-10-03T00:17:53.365617Z, STALE after 2026-10-03T00:27:53.365617Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-03T00:12:53.368454Z (CURRENT at publish; CURRENT until 2026-10-03T00:32:53.368454Z, STALE after 2026-10-03T00:42:53.368454Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-02T23:57:23.346402Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.84s
+model board generated 2026-10-03T00:15:27.714561Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.73s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -45,6 +45,7 @@ model board generated 2026-10-02T23:57:23.346402Z · simulations this update: 0 
 | 2026-10-04T22:00:00Z | Puerto Rico vs Cayman Islands (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-04T22:00:00Z | Trinidad and Tobago vs Curaçao (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-04T23:00:00Z | Aruba vs Anguilla (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-05T00:00:00Z | Costa Rica vs Haiti (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
 ## Candidates on CURRENT prices (1; RESEARCH_ONLY = analysis, never a bet)
 
@@ -55,12 +56,12 @@ model board generated 2026-10-02T23:57:23.346402Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 57
-action_NO_EDGE: 1904
-action_NO_QUOTE: 462
+action_EXCLUDED_BY_GATE: 56
+action_NO_EDGE: 1931
+action_NO_QUOTE: 464
 action_RESEARCH_CANDIDATE: 1
-contract_sides: 2424
-fixtures: 33
+contract_sides: 2452
+fixtures: 34
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
