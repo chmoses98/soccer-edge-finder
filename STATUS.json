@@ -1,14 +1,11 @@
 {
-  "as_of": "2026-10-03T00:57:35.653302+00:00",
+  "as_of": "2026-10-03T01:30:32.906410+00:00",
   "events": 19,
   "events_skipped_unmapped": 6,
   "fixtures_mapped": 13,
   "health": {
-    "reasons": [
-      "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=1"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
     "concacaf.nations.league",
@@ -22,12 +19,12 @@
     "uefa.nations"
   ],
   "lineups": {
-    "captured": 19,
+    "captured": 0,
     "events": 19,
     "failures": [],
     "published_post": 0,
     "published_pre_kickoff": 0,
-    "unchanged": 0,
+    "unchanged": 19,
     "unpublished": 19
   },
   "map_proposals": {
@@ -65,17 +62,13 @@
     "6725": "Namibia"
   },
   "weather": {
-    "captured": 11,
+    "captured": 15,
     "events": 19,
-    "failures": [
-      "401861112: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Reykjavik&count=5&language=en&f",
-      "401861116: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Skopje&count=5&language=en&form",
-      "401861118: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Oviedo&count=5&language=en&form"
-    ],
+    "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 3,
     "no_venue": 1,
-    "skipped": 1,
-    "stopped": "consecutive_failures"
+    "skipped": 0,
+    "stopped": null
   }
 }

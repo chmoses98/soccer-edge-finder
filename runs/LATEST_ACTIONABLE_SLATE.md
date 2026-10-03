@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261003T012735Z-1510ab` · generated 2026-10-03T01:27:35.583335Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261003T013038Z-6ecdcb` · generated 2026-10-03T01:30:38.708360Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-03T01:25:03.751093Z (CURRENT at publish; CURRENT until 2026-10-03T01:45:03.751093Z, STALE after 2026-10-03T01:55:03.751093Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-03T01:27:56.101869Z (CURRENT at publish; CURRENT until 2026-10-03T01:47:56.101869Z, STALE after 2026-10-03T01:57:56.101869Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-03T00:58:34.251385Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.73s
+model board generated 2026-10-03T00:58:34.251385Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.87s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -56,15 +56,13 @@ model board generated 2026-10-03T00:58:34.251385Z · simulations this update: 0 
 
 ```
 action_EXCLUDED_BY_GATE: 62
-action_NO_EDGE: 1928
-action_NO_QUOTE: 433
+action_NO_EDGE: 1927
+action_NO_QUOTE: 434
 action_RESEARCH_CANDIDATE: 1
 contract_sides: 2424
 fixtures: 33
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
-
-Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
