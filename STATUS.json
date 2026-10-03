@@ -1,78 +1,38 @@
 {
-  "as_of": "2026-10-03T16:41:10.589269+00:00",
-  "events": 19,
-  "events_skipped_unmapped": 6,
-  "fixtures_mapped": 13,
+  "as_of": "2026-10-03T16:45:08.023837+00:00",
+  "events": 3,
+  "events_skipped_unmapped": 0,
+  "fixtures_mapped": 3,
   "health": {
-    "reasons": [
-      "weather_failures:3"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
-    "concacaf.nations.league",
-    "fifa.friendly",
-    "fifa.worldq.afc",
-    "fifa.worldq.caf",
-    "fifa.worldq.concacaf",
-    "fifa.worldq.conmebol",
-    "fifa.worldq.uefa",
-    "uefa.euroq",
-    "uefa.nations"
+    "arg.1"
   ],
   "lineups": {
-    "captured": 6,
-    "events": 16,
+    "captured": 0,
+    "events": 3,
     "failures": [],
-    "published_post": 6,
+    "published_post": 0,
     "published_pre_kickoff": 0,
-    "unchanged": 10,
-    "unpublished": 10
+    "unchanged": 3,
+    "unpublished": 3
   },
-  "map_proposals": {
-    "fifa.friendly": {
-      "ambiguous": {},
-      "proposed": {},
-      "unresolved": {
-        "2845": "Burkina Faso",
-        "2849": "Mali",
-        "4385": "India",
-        "454": "Russia",
-        "4862": "Fiji",
-        "4864": "Vanuatu",
-        "5775": "Djibouti",
-        "5782": "Sri Lanka",
-        "6725": "Namibia"
-      }
-    }
-  },
+  "map_proposals": {},
   "map_version": "4",
-  "results_appended": 1,
+  "results_appended": 0,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
-  "scoreboard_queries": 9,
+  "scoreboard_queries": 1,
   "unmapped_leagues": [],
-  "unmapped_team_ids": {
-    "2845": "Burkina Faso",
-    "2849": "Mali",
-    "4385": "India",
-    "454": "Russia",
-    "4862": "Fiji",
-    "4864": "Vanuatu",
-    "5775": "Djibouti",
-    "5782": "Sri Lanka",
-    "6725": "Namibia"
-  },
+  "unmapped_team_ids": {},
   "weather": {
-    "captured": 10,
-    "events": 16,
-    "failures": [
-      "401861116: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=41.9965&longitude=21.4314&hourly=te",
-      "401861118: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=43.3603&longitude=-5.8448&hourly=te",
-      "401861117: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=47.0505&longitude=8.3064&hourly=tem"
-    ],
+    "captured": 3,
+    "events": 3,
+    "failures": [],
     "forecast_miss": 0,
-    "geocode_miss": 3,
+    "geocode_miss": 0,
     "no_venue": 0,
     "skipped": 0,
     "stopped": null
