@@ -1,38 +1,73 @@
 {
-  "as_of": "2026-10-03T17:16:44.904763+00:00",
-  "events": 3,
-  "events_skipped_unmapped": 0,
-  "fixtures_mapped": 3,
+  "as_of": "2026-10-03T17:31:49.236315+00:00",
+  "events": 22,
+  "events_skipped_unmapped": 6,
+  "fixtures_mapped": 16,
   "health": {
     "reasons": [],
     "state": "HEALTHY"
   },
   "leagues": [
-    "arg.1"
+    "arg.1",
+    "concacaf.nations.league",
+    "fifa.friendly",
+    "fifa.worldq.afc",
+    "fifa.worldq.caf",
+    "fifa.worldq.concacaf",
+    "fifa.worldq.conmebol",
+    "fifa.worldq.uefa",
+    "uefa.euroq",
+    "uefa.nations"
   ],
   "lineups": {
-    "captured": 1,
-    "events": 3,
+    "captured": 6,
+    "events": 18,
     "failures": [],
-    "published_post": 0,
-    "published_pre_kickoff": 1,
-    "unchanged": 2,
-    "unpublished": 2
+    "published_post": 5,
+    "published_pre_kickoff": 2,
+    "unchanged": 12,
+    "unpublished": 11
   },
-  "map_proposals": {},
+  "map_proposals": {
+    "fifa.friendly": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "2845": "Burkina Faso",
+        "2849": "Mali",
+        "4385": "India",
+        "454": "Russia",
+        "4862": "Fiji",
+        "4864": "Vanuatu",
+        "5775": "Djibouti",
+        "5782": "Sri Lanka",
+        "6725": "Namibia"
+      }
+    }
+  },
   "map_version": "4",
-  "results_appended": 0,
+  "results_appended": 1,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
-  "scoreboard_queries": 1,
+  "scoreboard_queries": 10,
   "unmapped_leagues": [],
-  "unmapped_team_ids": {},
+  "unmapped_team_ids": {
+    "2845": "Burkina Faso",
+    "2849": "Mali",
+    "4385": "India",
+    "454": "Russia",
+    "4862": "Fiji",
+    "4864": "Vanuatu",
+    "5775": "Djibouti",
+    "5782": "Sri Lanka",
+    "6725": "Namibia"
+  },
   "weather": {
-    "captured": 3,
-    "events": 3,
+    "captured": 15,
+    "events": 18,
     "failures": [],
     "forecast_miss": 0,
-    "geocode_miss": 0,
+    "geocode_miss": 3,
     "no_venue": 0,
     "skipped": 0,
     "stopped": null

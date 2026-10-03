@@ -23708,13 +23708,13 @@
       "fixture_id": "fx:fifa.friendly:2026:nat.can:nat.per",
       "fixtures_observed_at": "2026-10-03T16:28:09.595228Z",
       "home": "nat.can",
-      "input_fingerprint": "sha256:dec5fb45824eec7b0617bce19428d5f063f6ce1cddcfa9db2625de36cc4feeb2",
+      "input_fingerprint": "sha256:a264c028f69db87371477fbb0c86eccd82c558f42eeb0f83789957c1372959f5",
       "inputs": {
         "competition_id": "fifa.friendly",
         "draws_per_world": 100,
         "engine_version": "world_sim_v2",
         "kickoff_utc": "2026-10-03T18:00:00Z",
-        "lineup_key": "none",
+        "lineup_key": "sha256:f6441bc4a2af41ba7192eddd26c14e4f08278e53014777e522412462fcbea4b4",
         "model_family": "data_only.world_sim_v2.intl_pool",
         "model_version": "dc_laplace_v1",
         "n_worlds": 1000,
@@ -23725,16 +23725,16 @@
         "worlds_version": "worlds_v1"
       },
       "lineup": {
-        "checked_at": "2026-10-03T16:58:46.660595Z",
-        "key": "none",
-        "last_change_at": "2026-10-03T00:57:37.273585Z",
-        "state": "unconfirmed"
+        "checked_at": "2026-10-03T17:31:50.507522Z",
+        "key": "sha256:f6441bc4a2af41ba7192eddd26c14e4f08278e53014777e522412462fcbea4b4",
+        "last_change_at": "2026-10-03T17:31:50.507522Z",
+        "state": "confirmed"
       },
-      "model_fitted_at": "2026-10-03T16:58:49.810421Z",
-      "model_generated_at": "2026-10-03T16:58:50.651054Z",
+      "model_fitted_at": "2026-10-03T17:31:54.918639Z",
+      "model_generated_at": "2026-10-03T17:31:55.710178Z",
       "results_observed_at": "2026-10-03T12:55:40.655393Z",
-      "sim_key": "sha256:86df6c1e10e2b27fef64cabba26342dc5f45841456853d819c36f47f6ba09298",
-      "source_run_id": "run-20261003T165850Z-9ed041",
+      "sim_key": "sha256:5914addbe63673fb530fd752e24e65b963aff773da1ddba1dd7a3afd3a4a9d5c",
+      "source_run_id": "run-20261003T173155Z-81f01a",
       "summary": {
         "mean_away_goals": 0.75458,
         "mean_home_goals": 1.57803,
@@ -112566,6 +112566,6 @@
       }
     }
   },
-  "generated_at": "2026-10-03T16:58:50.651054Z",
+  "generated_at": "2026-10-03T17:31:55.710178Z",
   "quantile_levels": "(i + 0.5) / 100, i = 0..99"
 }
