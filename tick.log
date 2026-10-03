@@ -593,3 +593,104 @@ These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW
 
 ## Events
 - Finland vs Albania (UEFA Nations League) 2026-10-03T13:00:00Z · markets 61/62 evaluated · lineups unknown · xG 1.61-0.91 · 1X2 51%/26%/23%
+
+{
+  "outputs": {
+    "json": "work/runs/_pending/run_output.v1.json",
+    "md": "work/runs/_pending/RUN_SOCCER.md",
+    "contracts": "work/runs/_pending/priced_contracts.json",
+    "coverage": "work/runs/_pending/coverage.json",
+    "diagnostics": "work/runs/_pending/coverage_diagnostics.json"
+  },
+  "simulated": [
+    "fx:uefa.nations_league:2026-27:nat.fin:nat.alb"
+  ],
+  "repriced": [],
+  "archived_records": 61
+}
+[dispatch] holding 11.7 min (next window opens in 10.6 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261003T124638Z",
+  "complete": true,
+  "discovered": 6709,
+  "written": 1284,
+  "path": "work/snapshots/2026-10-03/cap-20261003T124638Z.jsonl"
+}
+{
+  "reference_probabilities": 0,
+  "observed_at": "2026-10-03 07:25:24.481142+00:00",
+  "groups": 0,
+  "unmapped_fixture_groups": 0,
+  "incomplete_groups": 0,
+  "snapshots": 0,
+  "provider_notes": [
+    "46 rows, 46 skipped (unmapped division/team)",
+    "skipped_by_division={'E2': 3, 'E3': 8, 'EC': 11, 'SC1': 3, 'SC2': 5, 'SC3': 5, 'SP2': 11}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-03T12:46:41.324462Z", "batch_id": "kd-20261003T124407Z", "credits_charged": 3, "paid_calls": 1, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 1, "per_sport": {"soccer_uefa_nations_league": {"fixtures": 1, "join": {"events": 5, "joined": 1, "ambiguous": 0, "unresolved_names": [], "unjoined_fixtures": []}, "status": "OK", "credits": 3, "snapshots": 0, "incomplete_markets": 0, "close_fixtures": 1, "entry_fixtures": 0}}, "remaining_after": 19817, "status": "OK"}
+{
+ "as_of": "2026-10-03T12:46:43.908696+00:00",
+ "leagues": [
+  "concacaf.nations.league",
+  "fifa.friendly",
+  "fifa.worldq.afc",
+  "fifa.worldq.caf",
+  "fifa.worldq.concacaf",
+  "fifa.worldq.conmebol",
+  "fifa.worldq.uefa",
+  "uefa.euroq",
+  "uefa.nations"
+ ],
+ "events": 19,
+ "fixtures_mapped": 13,
+ "events_skipped_unmapped": 6,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 9,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 17,
+  "captured": 0,
+  "unchanged": 17,
+  "published_pre_kickoff": 1,
+  "published_post": 0,
+  "unpublished": 16,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 17,
+  "captured": 14,
+  "no_venue": 0,
+  "geocode_miss": 3,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 9 | proposals: {'fifa.friendly': 0}
+[slate] {"slate_id": "slate-20261003T124647Z-1303ff", "mode": "reprice_only", "fixtures": 33, "contract_sides": 2406, "simulations_run": 0, "odds_api_calls": 1, "reprice_runtime_s": 0.749, "price_changes_vs_previous": 109}
+[dispatch] holding 4.5 min (next window opens in 5.8 min)
+{
+ "batches": 4,
+ "horizons_delivered": 4,
+ "missed_states": {},
+ "paid_calls": 2,
+ "credits_spent": 6,
+ "end_reason": "link_time_limit",
+ "chain_continue": true,
+ "delivered_total": 235,
+ "missed_total": 114,
+ "delivery_rate_total": 0.673352435530086
+}
