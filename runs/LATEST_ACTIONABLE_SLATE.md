@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261003T231219Z-f714bf` · generated 2026-10-03T23:12:19.550570Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261003T231249Z-10c358` · generated 2026-10-03T23:12:49.299212Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-03T23:09:00.882615Z (CURRENT at publish; CURRENT until 2026-10-03T23:29:00.882615Z, STALE after 2026-10-03T23:39:00.882615Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-03T23:10:05.015136Z (CURRENT at publish; CURRENT until 2026-10-03T23:30:05.015136Z, STALE after 2026-10-03T23:40:05.015136Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-03T22:11:29.429294Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.91s
+model board generated 2026-10-03T22:11:29.429294Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.77s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -61,7 +61,5 @@ fixtures: 32
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
-
-WARNING: Kalshi sweep incomplete: contracts absent from it are UNAVAILABLE, not closed
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.

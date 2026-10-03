@@ -1,9 +1,9 @@
 {
-  "batch_id": "cap-20261003T231218Z",
-  "captured_at": "2026-10-03T23:12:18.500299+00:00",
+  "batch_id": "cap-20261003T231234Z",
+  "captured_at": "2026-10-03T23:12:34.286343+00:00",
   "contracts_discovered": 6486,
   "counters": {
-    "complete": false,
+    "complete": true,
     "contracts_by_competition_code": {
       "?": 402,
       "APFDDH": 39,
@@ -106,14 +106,12 @@
     "contracts_discovered": 6486,
     "contracts_duplicate_seen": 0,
     "contracts_unknown_family": 3,
-    "events_discovered": 14716,
-    "failures": [
-      "KXUEFANLBTTS: events incomplete: [\"HTTP 429 on /events {'limit': 200, 'series_ticker': 'KXUEFANLBTTS', 'with_nested_markets': 'false'}: {'error': {'code': 'too_many_requests', 'message': 'too many requests'}}\"]"
-    ],
+    "events_discovered": 14820,
+    "failures": [],
     "milestones_note": "milestones type=soccer_tournament_multi_leg: 18332 rows, complete=True",
-    "request_count": 608,
-    "retry_count": 16,
-    "run_id": "disc-20261003T230900Z-2b37f9",
+    "request_count": 592,
+    "retry_count": 0,
+    "run_id": "disc-20261003T231005Z-f86cf5",
     "series_ambiguous_unswept": 134,
     "series_ambiguous_unswept_tickers": [
       "KX1HOMEGAME",
@@ -326,6 +324,6 @@
     "series_swept": 254,
     "series_total": 14584
   },
-  "discovery_complete": false,
-  "snapshots_written": 1695
+  "discovery_complete": true,
+  "snapshots_written": 1719
 }
