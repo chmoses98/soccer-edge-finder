@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261003T195925Z-86fbb5` · generated 2026-10-03T19:59:25.098792Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261003T201414Z-49219e` · generated 2026-10-03T20:14:14.798137Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-03T19:56:39.258735Z (CURRENT at publish; CURRENT until 2026-10-03T20:16:39.258735Z, STALE after 2026-10-03T20:26:39.258735Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-03T20:11:39.262103Z (CURRENT at publish; CURRENT until 2026-10-03T20:31:39.262103Z, STALE after 2026-10-03T20:41:39.262103Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-03T19:59:24.569362Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.92s
+model board generated 2026-10-03T19:59:24.569362Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.78s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,6 @@ model board generated 2026-10-03T19:59:24.569362Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-03T20:00:00Z | Newell's Old Boys vs Lanús (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
 | 2026-10-03T21:00:00Z | Sint Maarten vs St. Vincent and the Grenadines (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-03T21:30:00Z | Atlético Mineiro vs Red Bull Bragantino (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-04T02:00:00Z | Belize vs French Guiana (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
@@ -55,13 +54,13 @@ model board generated 2026-10-03T19:59:24.569362Z · simulations this update: 1 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 113
-action_NO_EDGE: 1892
-action_NO_QUOTE: 440
+action_EXCLUDED_BY_GATE: 111
+action_NO_EDGE: 1891
+action_NO_QUOTE: 415
 action_RESEARCH_CANDIDATE: 1
-contract_sides: 2446
-fixtures: 33
-fixtures_model_invalidated: 1
+contract_sides: 2418
+fixtures: 32
+fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
