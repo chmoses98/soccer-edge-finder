@@ -1,11 +1,13 @@
 {
-  "as_of": "2026-10-03T15:55:42.081888+00:00",
+  "as_of": "2026-10-03T16:41:10.589269+00:00",
   "events": 19,
   "events_skipped_unmapped": 6,
   "fixtures_mapped": 13,
   "health": {
-    "reasons": [],
-    "state": "HEALTHY"
+    "reasons": [
+      "weather_failures:3"
+    ],
+    "state": "DEGRADED"
   },
   "leagues": [
     "concacaf.nations.league",
@@ -19,12 +21,12 @@
     "uefa.nations"
   ],
   "lineups": {
-    "captured": 0,
-    "events": 17,
+    "captured": 6,
+    "events": 16,
     "failures": [],
-    "published_post": 3,
-    "published_pre_kickoff": 4,
-    "unchanged": 17,
+    "published_post": 6,
+    "published_pre_kickoff": 0,
+    "unchanged": 10,
     "unpublished": 10
   },
   "map_proposals": {
@@ -62,9 +64,13 @@
     "6725": "Namibia"
   },
   "weather": {
-    "captured": 14,
-    "events": 17,
-    "failures": [],
+    "captured": 10,
+    "events": 16,
+    "failures": [
+      "401861116: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=41.9965&longitude=21.4314&hourly=te",
+      "401861118: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=43.3603&longitude=-5.8448&hourly=te",
+      "401861117: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=47.0505&longitude=8.3064&hourly=tem"
+    ],
     "forecast_miss": 0,
     "geocode_miss": 3,
     "no_venue": 0,
