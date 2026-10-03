@@ -1,14 +1,11 @@
 {
-  "as_of": "2026-10-03T14:59:15.183032+00:00",
+  "as_of": "2026-10-03T15:32:12.808762+00:00",
   "events": 19,
   "events_skipped_unmapped": 6,
   "fixtures_mapped": 13,
   "health": {
-    "reasons": [
-      "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=2"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
     "concacaf.nations.league",
@@ -22,13 +19,13 @@
     "uefa.nations"
   ],
   "lineups": {
-    "captured": 3,
+    "captured": 7,
     "events": 17,
     "failures": [],
     "published_post": 2,
-    "published_pre_kickoff": 1,
-    "unchanged": 14,
-    "unpublished": 14
+    "published_pre_kickoff": 5,
+    "unchanged": 10,
+    "unpublished": 10
   },
   "map_proposals": {
     "fifa.friendly": {
@@ -65,17 +62,13 @@
     "6725": "Namibia"
   },
   "weather": {
-    "captured": 9,
+    "captured": 14,
     "events": 17,
-    "failures": [
-      "401861115: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=59.4370&longitude=24.7535&hourly=te",
-      "401861112: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Reykjavik&count=5&language=en&f",
-      "401861116: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=41.9965&longitude=21.4314&hourly=te"
-    ],
+    "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 3,
     "no_venue": 0,
-    "skipped": 2,
-    "stopped": "consecutive_failures"
+    "skipped": 0,
+    "stopped": null
   }
 }

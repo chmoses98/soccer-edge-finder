@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261003T152912Z-c8210a` · generated 2026-10-03T15:29:12.023506Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261003T153229Z-ebfb23` · generated 2026-10-03T15:32:29.024152Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-03T15:26:40.208087Z (CURRENT at publish; CURRENT until 2026-10-03T15:46:40.208087Z, STALE after 2026-10-03T15:56:40.208087Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-03T15:29:38.905595Z (CURRENT at publish; CURRENT until 2026-10-03T15:49:38.905595Z, STALE after 2026-10-03T15:59:38.905595Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-03T15:00:13.973627Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.71s
+model board generated 2026-10-03T15:32:24.095978Z · simulations this update: 4 · Odds API calls this update: 0 (credits 0) · reprice 0.70s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,10 +12,10 @@ model board generated 2026-10-03T15:00:13.973627Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-03T16:00:00Z | Belarus vs San Marino (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-10-03T16:00:00Z | Croatia vs England (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
-| 2026-10-03T16:00:00Z | Estonia vs Luxembourg (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-10-03T16:00:00Z | Iceland vs Bulgaria (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-10-03T16:00:00Z | Belarus vs San Marino (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-10-03T16:00:00Z | Croatia vs England (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
+| 2026-10-03T16:00:00Z | Estonia vs Luxembourg (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-10-03T16:00:00Z | Iceland vs Bulgaria (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-10-03T17:45:00Z | Defensa y Justicia vs San Lorenzo (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-03T18:00:00Z | Canada vs Peru (fifa.friendly) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-03T18:45:00Z | Spain vs Czechia (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
@@ -55,9 +55,9 @@ model board generated 2026-10-03T15:00:13.973627Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 88
+action_EXCLUDED_BY_GATE: 89
 action_NO_EDGE: 1841
-action_NO_QUOTE: 418
+action_NO_QUOTE: 417
 action_RESEARCH_CANDIDATE: 1
 contract_sides: 2348
 fixtures: 33
