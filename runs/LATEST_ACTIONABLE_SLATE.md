@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261003T153229Z-ebfb23` · generated 2026-10-03T15:32:29.024152Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
+slate `slate-20261003T154726Z-aee9a7` · generated 2026-10-03T15:47:26.419861Z · trigger `kickoff_chain:T-120/T-15` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-03T15:29:38.905595Z (CURRENT at publish; CURRENT until 2026-10-03T15:49:38.905595Z, STALE after 2026-10-03T15:59:38.905595Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-03T15:44:38.908926Z (CURRENT at publish; CURRENT until 2026-10-03T16:04:38.908926Z, STALE after 2026-10-03T16:14:38.908926Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-03T15:32:24.095978Z · simulations this update: 4 · Odds API calls this update: 0 (credits 0) · reprice 0.70s
+model board generated 2026-10-03T15:47:24.805183Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.71s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -13,16 +13,16 @@ model board generated 2026-10-03T15:32:24.095978Z · simulations this update: 4 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
 | 2026-10-03T16:00:00Z | Belarus vs San Marino (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-10-03T16:00:00Z | Croatia vs England (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
+| 2026-10-03T16:00:00Z | Croatia vs England (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 61 | 1 |
 | 2026-10-03T16:00:00Z | Estonia vs Luxembourg (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-10-03T16:00:00Z | Iceland vs Bulgaria (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-10-03T17:45:00Z | Defensa y Justicia vs San Lorenzo (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-03T17:45:00Z | Defensa y Justicia vs San Lorenzo (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-03T18:00:00Z | Canada vs Peru (fifa.friendly) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-03T18:45:00Z | Spain vs Czechia (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-10-03T18:45:00Z | North Macedonia vs Scotland (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-10-03T18:45:00Z | Switzerland vs Slovenia (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-10-03T19:00:00Z | Ivory Coast vs Cameroon (fifa.friendly) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
-| 2026-10-03T20:00:00Z | Newell's Old Boys vs Lanús (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-03T20:00:00Z | Newell's Old Boys vs Lanús (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-03T21:00:00Z | Sint Maarten vs St. Vincent and the Grenadines (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-03T21:30:00Z | Atlético Mineiro vs Red Bull Bragantino (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-04T02:00:00Z | Belize vs French Guiana (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
@@ -50,14 +50,14 @@ model board generated 2026-10-03T15:32:24.095978Z · simulations this update: 4 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Atlético Mineiro vs Red Bull Bragantino | btts | no | 0.4400 | 0.561 [0.435, 0.688] | +0.104 | +0.027 | 0.46 | - | * | RESEARCH_CANDIDATE |
+| Atlético Mineiro vs Red Bull Bragantino | btts | no | 0.4300 | 0.561 [0.435, 0.688] | +0.114 | +0.037 | 0.46 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 89
-action_NO_EDGE: 1841
-action_NO_QUOTE: 417
+action_EXCLUDED_BY_GATE: 92
+action_NO_EDGE: 1836
+action_NO_QUOTE: 419
 action_RESEARCH_CANDIDATE: 1
 contract_sides: 2348
 fixtures: 33
