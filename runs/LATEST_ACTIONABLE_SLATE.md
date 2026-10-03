@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261003T002738Z-3b09b8` · generated 2026-10-03T00:27:38.957706Z · trigger `kickoff_chain:T-5` · mode `model_refresh_and_reprice`
+slate `slate-20261003T004236Z-c81913` · generated 2026-10-03T00:42:36.785558Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-03T00:25:02.127324Z (CURRENT at publish; CURRENT until 2026-10-03T00:45:02.127324Z, STALE after 2026-10-03T00:55:02.127324Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-03T00:40:02.131179Z (CURRENT at publish; CURRENT until 2026-10-03T01:00:02.131179Z, STALE after 2026-10-03T01:10:02.131179Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-03T00:15:27.714561Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.73s
+model board generated 2026-10-03T00:15:27.714561Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.74s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,6 @@ model board generated 2026-10-03T00:15:27.714561Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-03T00:30:00Z | Boca Juniors vs Unión (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
 | 2026-10-03T02:00:00Z | El Salvador vs Jamaica (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-03T13:00:00Z | Finland vs Albania (uefa.nations_league) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-10-03T16:00:00Z | Belarus vs San Marino (uefa.nations_league) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
@@ -57,15 +56,15 @@ model board generated 2026-10-03T00:15:27.714561Z · simulations this update: 0 
 
 ```
 action_EXCLUDED_BY_GATE: 54
-action_NO_EDGE: 1930
-action_NO_QUOTE: 467
+action_NO_EDGE: 1933
+action_NO_QUOTE: 436
 action_RESEARCH_CANDIDATE: 1
-contract_sides: 2452
-fixtures: 34
-fixtures_model_invalidated: 1
+contract_sides: 2424
+fixtures: 33
+fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
-Removed (kicked off): 4
+Removed (kicked off): 5
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
