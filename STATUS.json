@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-03T10:55:15.551240+00:00",
+  "as_of": "2026-10-03T11:58:45.881402+00:00",
   "events": 19,
   "events_skipped_unmapped": 6,
   "fixtures_mapped": 13,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=6"
+      "weather_stopped:consecutive_failures:skipped=3"
     ],
     "state": "DEGRADED"
   },
@@ -65,17 +65,17 @@
     "6725": "Namibia"
   },
   "weather": {
-    "captured": 5,
+    "captured": 8,
     "events": 17,
     "failures": [
-      "401905202: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Glendale&count=5&language=en&fo",
-      "401861111: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Helsinki&count=5&language=en&fo",
-      "401861114: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Budapest&count=5&language=en&fo"
+      "401861113: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=45.3267&longitude=14.4424&hourly=te",
+      "401861115: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Tallinn&count=5&language=en&for",
+      "401861112: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Reykjavik&count=5&language=en&f"
     ],
     "forecast_miss": 0,
     "geocode_miss": 3,
     "no_venue": 0,
-    "skipped": 6,
+    "skipped": 3,
     "stopped": "consecutive_failures"
   }
 }
