@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261003T194740Z-984612` · generated 2026-10-03T19:47:40.864352Z · trigger `kickoff_chain:T-15` · mode `model_refresh_and_reprice`
+slate `slate-20261003T195609Z-65b187` · generated 2026-10-03T19:56:09.715169Z · trigger `kickoff_chain:T-5` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-03T19:45:00.020715Z (CURRENT at publish; CURRENT until 2026-10-03T20:05:00.020715Z, STALE after 2026-10-03T20:15:00.020715Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-03T19:53:31.181465Z (CURRENT at publish; CURRENT until 2026-10-03T20:13:31.181465Z, STALE after 2026-10-03T20:23:31.181465Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-03T19:14:07.085272Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.79s
+model board generated 2026-10-03T19:14:07.085272Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.95s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -14,7 +14,7 @@ model board generated 2026-10-03T19:14:07.085272Z · simulations this update: 0 
 |---|---|---|---|---|---|---|---|
 | 2026-10-03T20:00:00Z | Newell's Old Boys vs Lanús (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
 | 2026-10-03T21:00:00Z | Sint Maarten vs St. Vincent and the Grenadines (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-03T21:30:00Z | Atlético Mineiro vs Red Bull Bragantino (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-03T21:30:00Z | Atlético Mineiro vs Red Bull Bragantino (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-04T02:00:00Z | Belize vs French Guiana (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-04T02:00:00Z | United States vs Mexico (fifa.friendly) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-04T13:00:00Z | Azerbaijan vs Lithuania (uefa.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 61 | 1 |
@@ -55,9 +55,9 @@ model board generated 2026-10-03T19:14:07.085272Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 109
-action_NO_EDGE: 1893
-action_NO_QUOTE: 443
+action_EXCLUDED_BY_GATE: 112
+action_NO_EDGE: 1891
+action_NO_QUOTE: 442
 action_RESEARCH_CANDIDATE: 1
 contract_sides: 2446
 fixtures: 33
