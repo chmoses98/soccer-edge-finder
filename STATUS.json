@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-03T01:57:45.751617+00:00",
+  "as_of": "2026-10-03T10:55:15.551240+00:00",
   "events": 19,
   "events_skipped_unmapped": 6,
   "fixtures_mapped": 13,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=8"
+      "weather_stopped:consecutive_failures:skipped=6"
     ],
     "state": "DEGRADED"
   },
@@ -23,12 +23,12 @@
   ],
   "lineups": {
     "captured": 0,
-    "events": 19,
+    "events": 17,
     "failures": [],
     "published_post": 0,
     "published_pre_kickoff": 0,
-    "unchanged": 19,
-    "unpublished": 19
+    "unchanged": 17,
+    "unpublished": 17
   },
   "map_proposals": {
     "fifa.friendly": {
@@ -66,16 +66,16 @@
   },
   "weather": {
     "captured": 5,
-    "events": 19,
+    "events": 17,
     "failures": [
-      "401916228: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Hammadi%20Agrebi%20Stadium&coun",
-      "401921544: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Buenos%20Aires&count=5&language",
-      "401905202: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Glendale&count=5&language=en&fo"
+      "401905202: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Glendale&count=5&language=en&fo",
+      "401861111: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Helsinki&count=5&language=en&fo",
+      "401861114: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Budapest&count=5&language=en&fo"
     ],
     "forecast_miss": 0,
-    "geocode_miss": 2,
-    "no_venue": 1,
-    "skipped": 8,
+    "geocode_miss": 3,
+    "no_venue": 0,
+    "skipped": 6,
     "stopped": "consecutive_failures"
   }
 }
