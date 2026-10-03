@@ -1,12 +1,12 @@
 {
-  "batch_id": "cap-20261003T222650Z",
-  "captured_at": "2026-10-03T22:26:50.310361+00:00",
-  "contracts_discovered": 6443,
+  "batch_id": "cap-20261003T224145Z",
+  "captured_at": "2026-10-03T22:41:45.530845+00:00",
+  "contracts_discovered": 6367,
   "counters": {
     "complete": false,
     "contracts_by_competition_code": {
       "?": 402,
-      "APFDDH": 38,
+      "APFDDH": 40,
       "ARGNACB": 169,
       "ARGPREMDIV": 30,
       "BELGIANPL": 18,
@@ -33,7 +33,7 @@
       "EFLCHAMPIONSHIP": 24,
       "EFLL1": 39,
       "EKSTRAKLASA": 18,
-      "EPL": 385,
+      "EPL": 305,
       "EREDIVISIE": 18,
       "FA": 24,
       "FIFAW": 96,
@@ -49,7 +49,7 @@
       "MLS": 194,
       "MLSEAST": 15,
       "MLSWEST": 15,
-      "NWSL": 75,
+      "NWSL": 77,
       "PERLIGA1": 18,
       "PREMIERLEAGUE": 20,
       "SERIEA": 228,
@@ -81,7 +81,7 @@
       "competition_promotion": 24,
       "competition_qualification": 138,
       "competition_relegation": 96,
-      "competition_team_points": 384,
+      "competition_team_points": 304,
       "competition_top_n": 306,
       "competition_trophies": 32,
       "competition_winner": 1077,
@@ -91,7 +91,7 @@
       "first_half_result": 84,
       "first_half_total": 84,
       "first_to_score": 48,
-      "handicap": 497,
+      "handicap": 499,
       "match_result_3way": 1110,
       "match_winner_2way": 16,
       "player_award": 168,
@@ -99,22 +99,21 @@
       "season_player_total": 53,
       "soccer_special": 189,
       "team_total": 96,
-      "total_goals": 737,
+      "total_goals": 739,
       "tournament_advancement": 160,
       "unknown": 3
     },
-    "contracts_discovered": 6443,
+    "contracts_discovered": 6367,
     "contracts_duplicate_seen": 0,
     "contracts_unknown_family": 3,
-    "events_discovered": 14863,
+    "events_discovered": 14866,
     "failures": [
-      "KXCOPAAMERICA: events incomplete: [\"HTTP 429 on /events {'limit': 200, 'series_ticker': 'KXCOPAAMERICA', 'with_nested_markets': 'false'}: {'error': {'code': 'too_many_requests', 'message': 'too many requests'}}\"]",
-      "KXSERIEA: events incomplete: [\"HTTP 429 on /events {'limit': 200, 'series_ticker': 'KXSERIEA', 'with_nested_markets': 'false'}: {'error': {'code': 'too_many_requests', 'message': 'too many requests'}}\"]"
+      "KXEPLTEAMPOINTS: markets status=open incomplete: [\"HTTP 429 on /markets {'limit': 1000, 'series_ticker': 'KXEPLTEAMPOINTS', 'status': 'open'}: {'error': {'code': 'too_many_requests', 'message': 'too many requests'}}\"]"
     ],
     "milestones_note": "milestones type=soccer_tournament_multi_leg: 18332 rows, complete=True",
-    "request_count": 614,
-    "retry_count": 21,
-    "run_id": "disc-20261003T222331Z-963113",
+    "request_count": 610,
+    "retry_count": 18,
+    "run_id": "disc-20261003T223829Z-3a81e2",
     "series_ambiguous_unswept": 134,
     "series_ambiguous_unswept_tickers": [
       "KX1HOMEGAME",
@@ -328,5 +327,5 @@
     "series_total": 14584
   },
   "discovery_complete": false,
-  "snapshots_written": 1559
+  "snapshots_written": 1451
 }
