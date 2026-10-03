@@ -3068,4 +3068,65 @@ unmapped teams: 9 | proposals: {'fifa.friendly': 0}
   ],
   "written": 0
 }
-[odds_api]
+[odds_api] {"captured_at": "2026-10-03T01:48:22.398970Z", "batch_id": "kd-20261003T014548Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": ["concacaf.nations_league"], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-10-03T01:48:22.431001+00:00",
+ "leagues": [
+  "concacaf.nations.league",
+  "fifa.friendly",
+  "fifa.worldq.afc",
+  "fifa.worldq.caf",
+  "fifa.worldq.concacaf",
+  "fifa.worldq.conmebol",
+  "fifa.worldq.uefa",
+  "uefa.euroq",
+  "uefa.nations"
+ ],
+ "events": 19,
+ "fixtures_mapped": 13,
+ "events_skipped_unmapped": 6,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 9,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 19,
+  "captured": 0,
+  "unchanged": 19,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 19,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 19,
+  "captured": 15,
+  "no_venue": 1,
+  "geocode_miss": 3,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 9 | proposals: {'fifa.friendly': 0}
+[slate] {"slate_id": "slate-20261003T014825Z-35e623", "mode": "reprice_only", "fixtures": 33, "contract_sides": 2424, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.733, "price_changes_vs_previous": 81}
+[dispatch] holding 2.1 min (next window opens in 4.2 min)
+{
+ "batches": 27,
+ "horizons_delivered": 50,
+ "missed_states": {},
+ "paid_calls": 6,
+ "credits_spent": 18,
+ "end_reason": "link_time_limit",
+ "chain_continue": true,
+ "delivered_total": 230,
+ "missed_total": 114,
+ "delivery_rate_total": 0.6686046511627907
+}
