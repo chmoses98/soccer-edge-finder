@@ -31,11 +31,11 @@
       "missed": 22
     },
     "5": {
-      "achieved_minutes_median": 2.47,
+      "achieved_minutes_median": 2.48,
       "achieved_minutes_p10": 1.57,
       "achieved_minutes_p90": 4.28,
-      "delivered": 62,
-      "delivery_rate": 0.7560975609756098,
+      "delivered": 63,
+      "delivery_rate": 0.7590361445783133,
       "lateness_minutes_max": 7.0,
       "lateness_minutes_median": 2.52,
       "missed": 20
@@ -51,20 +51,13 @@
       "missed": 26
     }
   },
-  "delivered_total": 305,
-  "delivery_rate_total": 0.7279236276849642,
+  "delivered_total": 306,
+  "delivery_rate_total": 0.7285714285714285,
   "fixtures_tracked": 85,
-  "generated_at": "2026-10-03T21:17:37Z",
+  "generated_at": "2026-10-03T21:26:06Z",
   "missed_total": 114,
   "n_pending_fixtures": 55,
   "pending_fixtures": [
-    {
-      "competition_id": "bra.serie_a",
-      "fixture_id": "fx:bra.serie_a:2026:bra.atletico_mineiro:bra.bragantino",
-      "kickoff_utc": "2026-10-03T21:30:00Z",
-      "markets_discovered": 29,
-      "source": "run_output"
-    },
     {
       "competition_id": "fifa.friendly",
       "fixture_id": "fx:fifa.friendly:2026:nat.usa:nat.mex",
@@ -440,6 +433,13 @@
       "competition_id": "concacaf.nations_league",
       "fixture_id": "fx:concacaf.nations_league:2026-27:nat.maf:nat.bah",
       "kickoff_utc": "2026-10-06T20:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "concacaf.nations_league",
+      "fixture_id": "fx:concacaf.nations_league:2026-27:nat.vin:nat.sxm",
+      "kickoff_utc": "2026-10-06T21:00:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }
