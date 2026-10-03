@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261003T212605Z-afa6d2` · generated 2026-10-03T21:26:05.186865Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
+slate `slate-20261003T214105Z-0c3b88` · generated 2026-10-03T21:41:05.795288Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-03T21:23:31.568153Z (CURRENT at publish; CURRENT until 2026-10-03T21:43:31.568153Z, STALE after 2026-10-03T21:53:31.568153Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-03T21:38:29.848430Z (CURRENT at publish; CURRENT until 2026-10-03T21:58:29.848430Z, STALE after 2026-10-03T22:08:29.848430Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-03T21:02:37.823762Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.80s
+model board generated 2026-10-03T21:41:05.101017Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.79s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,6 @@ model board generated 2026-10-03T21:02:37.823762Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-03T21:30:00Z | Atlético Mineiro vs Red Bull Bragantino (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
 | 2026-10-04T02:00:00Z | Belize vs French Guiana (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-04T02:00:00Z | United States vs Mexico (fifa.friendly) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-04T13:00:00Z | Azerbaijan vs Lithuania (uefa.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 61 | 1 |
@@ -43,26 +42,25 @@ model board generated 2026-10-03T21:02:37.823762Z · simulations this update: 0 
 | 2026-10-05T18:45:00Z | Romania vs Sweden (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-10-05T18:45:00Z | Ukraine vs Hungary (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-10-05T19:00:00Z | Guadeloupe vs St. Lucia (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-05T21:00:00Z | Cuba vs St. Kitts and Nevis (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (1; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (0; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Atlético Mineiro vs Red Bull Bragantino | btts | no | 0.4300 | 0.561 [0.435, 0.688] | +0.114 | +0.037 | 0.46 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 115
+action_EXCLUDED_BY_GATE: 120
 action_NO_EDGE: 1899
-action_NO_QUOTE: 367
-action_RESEARCH_CANDIDATE: 1
+action_NO_QUOTE: 363
 contract_sides: 2382
 fixtures: 31
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
-Removed (kicked off): 1
+Removed (kicked off): 2
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
