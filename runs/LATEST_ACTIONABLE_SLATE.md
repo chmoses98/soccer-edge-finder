@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261003T121340Z-3a83fd` · generated 2026-10-03T12:13:40.997209Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261003T122842Z-f4cc4c` · generated 2026-10-03T12:28:42.636732Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-03T12:11:09.202054Z (CURRENT at publish; CURRENT until 2026-10-03T12:31:09.202054Z, STALE after 2026-10-03T12:41:09.202054Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-03T12:26:10.702302Z (CURRENT at publish; CURRENT until 2026-10-03T12:46:10.702302Z, STALE after 2026-10-03T12:56:10.702302Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-03T11:59:45.505593Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.73s
+model board generated 2026-10-03T11:59:45.505593Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.76s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -25,7 +25,7 @@ model board generated 2026-10-03T11:59:45.505593Z · simulations this update: 0 
 | 2026-10-03T19:00:00Z | Ivory Coast vs Cameroon (fifa.friendly) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-10-03T20:00:00Z | Newell's Old Boys vs Lanús (arg.primera) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-03T21:00:00Z | Sint Maarten vs St. Vincent and the Grenadines (concacaf.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-03T21:30:00Z | Atlético Mineiro vs Red Bull Bragantino (bra.serie_a) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-03T21:30:00Z | Atlético Mineiro vs Red Bull Bragantino (bra.serie_a) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-04T02:00:00Z | Belize vs French Guiana (concacaf.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-04T02:00:00Z | United States vs Mexico (fifa.friendly) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-04T13:00:00Z | Azerbaijan vs Lithuania (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
@@ -43,7 +43,7 @@ model board generated 2026-10-03T11:59:45.505593Z · simulations this update: 0 
 | 2026-10-04T22:00:00Z | Puerto Rico vs Cayman Islands (concacaf.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-04T22:00:00Z | Trinidad and Tobago vs Curaçao (concacaf.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-04T23:00:00Z | Aruba vs Anguilla (concacaf.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-10-05T00:00:00Z | Costa Rica vs Haiti (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-05T00:00:00Z | Costa Rica vs Haiti (concacaf.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-05T02:00:00Z | Nicaragua vs Dominican Republic (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
 ## Candidates on CURRENT prices (1; RESEARCH_ONLY = analysis, never a bet)
@@ -55,8 +55,8 @@ model board generated 2026-10-03T11:59:45.505593Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 84
-action_NO_EDGE: 1908
+action_EXCLUDED_BY_GATE: 88
+action_NO_EDGE: 1904
 action_NO_QUOTE: 413
 action_RESEARCH_CANDIDATE: 1
 contract_sides: 2406
