@@ -18863,13 +18863,13 @@
       "fixture_id": "fx:concacaf.nations_league:2026-27:nat.sxm:nat.vin",
       "fixtures_observed_at": "2026-10-03T18:26:11.094529Z",
       "home": "nat.sxm",
-      "input_fingerprint": "sha256:16232e837cdbbdb051cdbcbef6728a2096b3ab609c5295b5822f7023e73d41bf",
+      "input_fingerprint": "sha256:6c91041a807d3834b1071beaa692a3721f2bbee782a8e46cb7dca322ccb5016d",
       "inputs": {
         "competition_id": "concacaf.nations_league",
         "draws_per_world": 100,
         "engine_version": "world_sim_v2",
         "kickoff_utc": "2026-10-03T21:00:00Z",
-        "lineup_key": "none",
+        "lineup_key": "sha256:11db7432504ae34de8697c5ec825a749a3639c3761466106346ddb8d8416c562",
         "model_family": "data_only.world_sim_v2.intl_pool",
         "model_version": "dc_laplace_v1",
         "n_worlds": 1000,
@@ -18880,16 +18880,16 @@
         "worlds_version": "worlds_v1"
       },
       "lineup": {
-        "checked_at": "2026-10-03T19:59:12.900998Z",
-        "key": "none",
-        "last_change_at": "2026-10-03T00:57:36.752276Z",
-        "state": "unconfirmed"
+        "checked_at": "2026-10-03T20:32:29.152809Z",
+        "key": "sha256:11db7432504ae34de8697c5ec825a749a3639c3761466106346ddb8d8416c562",
+        "last_change_at": "2026-10-03T20:32:29.152809Z",
+        "state": "confirmed"
       },
-      "model_fitted_at": "2026-10-03T19:59:23.883174Z",
-      "model_generated_at": "2026-10-03T19:59:24.569362Z",
+      "model_fitted_at": "2026-10-03T20:32:33.328126Z",
+      "model_generated_at": "2026-10-03T20:32:33.980498Z",
       "results_observed_at": "2026-10-03T18:26:03.436581Z",
-      "sim_key": "sha256:5227c380e8bbd158278912f029a2e5485505dbd83629c10667989e78d97f4122",
-      "source_run_id": "run-20261003T195924Z-ff6e70",
+      "sim_key": "sha256:172e70d6581d24902724f964c61059ac3de8b1cbca8f36194c062d7dd4c9c75b",
+      "source_run_id": "run-20261003T203233Z-e111bd",
       "summary": {
         "mean_away_goals": 1.24023,
         "mean_home_goals": 0.73998,
@@ -141566,6 +141566,6 @@
       }
     }
   },
-  "generated_at": "2026-10-03T20:29:22.139385Z",
+  "generated_at": "2026-10-03T20:32:33.980498Z",
   "quantile_levels": "(i + 0.5) / 100, i = 0..99"
 }
