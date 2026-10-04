@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-04T00:43:37.941524+00:00",
+  "as_of": "2026-10-04T08:31:14.688741+00:00",
   "events": 585,
   "events_skipped_unmapped": 305,
   "fixtures_mapped": 280,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=25"
+      "weather_stopped:consecutive_failures:skipped=24"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 70,
-    "events": 73,
+    "captured": 58,
+    "events": 59,
     "failures": [],
-    "published_post": 8,
-    "published_pre_kickoff": 2,
-    "unchanged": 3,
-    "unpublished": 63
+    "published_post": 0,
+    "published_pre_kickoff": 0,
+    "unchanged": 1,
+    "unpublished": 59
   },
   "map_proposals": {
     "concacaf.nations.league": {
@@ -158,7 +158,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 6,
+  "results_appended": 9,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -236,17 +236,17 @@
     "8937": "Niger"
   },
   "weather": {
-    "captured": 9,
+    "captured": 10,
     "events": 37,
     "failures": [
-      "401860377: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-16.6786&longitude=-49.2539&hourly=",
-      "401860372: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Indaiatuba&count=5&language=en&",
-      "401878051: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Pasto&count=5&language=en&forma"
+      "401860372: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-23.0884&longitude=-47.2119&hourly=",
+      "401878051: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Pasto&count=5&language=en&forma",
+      "401878066: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=C\u00facuta&count=5&language=en&form"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 25,
+    "skipped": 24,
     "stopped": "consecutive_failures"
   }
 }
