@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-03T21:24:27.337665+00:00",
-  "events": 513,
-  "events_skipped_unmapped": 278,
-  "fixtures_mapped": 235,
+  "as_of": "2026-10-04T00:43:37.941524+00:00",
+  "events": 585,
+  "events_skipped_unmapped": 305,
+  "fixtures_mapped": 280,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=29"
+      "weather_stopped:consecutive_failures:skipped=25"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 76,
-    "events": 85,
+    "captured": 70,
+    "events": 73,
     "failures": [],
-    "published_post": 12,
-    "published_pre_kickoff": 3,
-    "unchanged": 9,
-    "unpublished": 70
+    "published_post": 8,
+    "published_pre_kickoff": 2,
+    "unchanged": 3,
+    "unpublished": 63
   },
   "map_proposals": {
     "concacaf.nations.league": {
@@ -136,19 +136,13 @@
         "2850": "Congo DR",
         "2851": "Rwanda",
         "4211": "Uganda",
-        "4245": "Botswana",
         "4380": "Syria",
         "4385": "India",
         "4388": "Lebanon",
         "4390": "Maldives",
         "454": "Russia",
-        "4861": "Solomon Islands",
         "4862": "Fiji",
-        "4863": "Tahiti",
         "4864": "Vanuatu",
-        "4884": "Cook Islands",
-        "4885": "Papua New Guinea",
-        "4888": "New Caledonia",
         "5534": "Mauritius",
         "5775": "Djibouti",
         "5782": "Sri Lanka",
@@ -157,16 +151,14 @@
         "6723": "Tajikistan",
         "6724": "Kyrgyz Republic",
         "6725": "Namibia",
-        "6726": "Seychelles",
         "7368": "Gambia",
         "8601": "Comoros",
-        "8937": "Niger",
-        "8939": "Mozambique"
+        "8937": "Niger"
       }
     }
   },
   "map_version": "4",
-  "results_appended": 10,
+  "results_appended": 6,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -224,19 +216,13 @@
     "2850": "Congo DR",
     "2851": "Rwanda",
     "4211": "Uganda",
-    "4245": "Botswana",
     "4380": "Syria",
     "4385": "India",
     "4388": "Lebanon",
     "4390": "Maldives",
     "454": "Russia",
-    "4861": "Solomon Islands",
     "4862": "Fiji",
-    "4863": "Tahiti",
     "4864": "Vanuatu",
-    "4884": "Cook Islands",
-    "4885": "Papua New Guinea",
-    "4888": "New Caledonia",
     "5534": "Mauritius",
     "5775": "Djibouti",
     "5782": "Sri Lanka",
@@ -245,24 +231,22 @@
     "6723": "Tajikistan",
     "6724": "Kyrgyz Republic",
     "6725": "Namibia",
-    "6726": "Seychelles",
     "7368": "Gambia",
     "8601": "Comoros",
-    "8937": "Niger",
-    "8939": "Mozambique"
+    "8937": "Niger"
   },
   "weather": {
-    "captured": 10,
-    "events": 42,
+    "captured": 9,
+    "events": 37,
     "failures": [
-      "401841168: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-19.9208&longitude=-43.9378&hourly=",
-      "401860368: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Goi\u00e3nia&count=5&language=en&for",
-      "401860371: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Cuiab\u00e1&count=5&language=en&form"
+      "401860377: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-16.6786&longitude=-49.2539&hourly=",
+      "401860372: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Indaiatuba&count=5&language=en&",
+      "401878051: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Pasto&count=5&language=en&forma"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 29,
+    "skipped": 25,
     "stopped": "consecutive_failures"
   }
 }
