@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-04T23:15:47.052696+00:00",
-  "events": 585,
-  "events_skipped_unmapped": 305,
-  "fixtures_mapped": 280,
+  "as_of": "2026-10-05T05:50:45.226924+00:00",
+  "events": 592,
+  "events_skipped_unmapped": 317,
+  "fixtures_mapped": 275,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=19"
+      "weather_stopped:consecutive_failures:skipped=22"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 40,
-    "events": 40,
+    "captured": 26,
+    "events": 26,
     "failures": [],
-    "published_post": 9,
+    "published_post": 0,
     "published_pre_kickoff": 0,
     "unchanged": 0,
-    "unpublished": 31
+    "unpublished": 26
   },
   "map_proposals": {
     "concacaf.nations.league": {
@@ -136,10 +136,8 @@
         "2850": "Congo DR",
         "2851": "Rwanda",
         "4211": "Uganda",
-        "4380": "Syria",
         "4385": "India",
         "4388": "Lebanon",
-        "4390": "Maldives",
         "454": "Russia",
         "4862": "Fiji",
         "4864": "Vanuatu",
@@ -158,11 +156,12 @@
     }
   },
   "map_version": "4",
-  "results_appended": 29,
+  "results_appended": 37,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
   "unmapped_leagues": [
+    "afc.champions",
     "bel.1",
     "bra.2",
     "chi.1",
@@ -181,7 +180,6 @@
     "nor.1",
     "per.1",
     "swe.1",
-    "uefa.wchampions",
     "uru.1",
     "usa.usl.1"
   ],
@@ -216,10 +214,8 @@
     "2850": "Congo DR",
     "2851": "Rwanda",
     "4211": "Uganda",
-    "4380": "Syria",
     "4385": "India",
     "4388": "Lebanon",
-    "4390": "Maldives",
     "454": "Russia",
     "4862": "Fiji",
     "4864": "Vanuatu",
@@ -236,17 +232,17 @@
     "8937": "Niger"
   },
   "weather": {
-    "captured": 15,
-    "events": 37,
+    "captured": 7,
+    "events": 32,
     "failures": [
-      "401878066: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=7.9074&longitude=-72.5049&hourly=te",
-      "401877909: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bogota&count=5&language=en&form",
-      "401877900: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bucaramanga&count=5&language=en"
+      "401841250: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-12.9756&longitude=-38.4910&hourly=",
+      "401841257: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rio%20de%20Janeiro&count=5&lang",
+      "401841249: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-19.9208&longitude=-43.9378&hourly="
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 19,
+    "skipped": 22,
     "stopped": "consecutive_failures"
   }
 }
