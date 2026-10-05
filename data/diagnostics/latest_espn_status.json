@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-05T14:52:47.011938+00:00",
-  "events": 592,
-  "events_skipped_unmapped": 317,
+  "as_of": "2026-10-05T22:43:45.120785+00:00",
+  "events": 591,
+  "events_skipped_unmapped": 316,
   "fixtures_mapped": 275,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=19"
+      "weather_stopped:consecutive_failures:skipped=20"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 31,
-    "events": 31,
+    "captured": 39,
+    "events": 39,
     "failures": [],
-    "published_post": 0,
+    "published_post": 5,
     "published_pre_kickoff": 0,
     "unchanged": 0,
-    "unpublished": 31
+    "unpublished": 34
   },
   "map_proposals": {
     "concacaf.nations.league": {
@@ -156,7 +156,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 37,
+  "results_appended": 48,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -233,16 +233,16 @@
   },
   "weather": {
     "captured": 10,
-    "events": 32,
+    "events": 33,
     "failures": [
+      "401841251: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-23.9608&longitude=-46.3336&hourly=",
       "401860380: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Recife&count=5&language=en&form",
-      "401860377: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Goi\u00e3nia&count=5&language=en&for",
-      "401860372: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Indaiatuba&count=5&language=en&"
+      "401860377: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Goi\u00e3nia&count=5&language=en&for"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 19,
+    "skipped": 20,
     "stopped": "consecutive_failures"
   }
 }
