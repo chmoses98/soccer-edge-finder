@@ -4,15 +4,15 @@
   "github_backup_minutes": 60
  },
  "definition": "capture_success_rate = delivered / eligible horizons whose window closed in the span (NOT_APPLICABLE excluded); close_success_rate = fixtures with a T-15 or T-5 delivery / fixtures whose close windows closed in the span",
- "generated_at": "2026-10-05T09:07:03Z",
+ "generated_at": "2026-10-05T11:54:00Z",
  "last_24h": {
-  "capture_runs": 4,
-  "capture_runs_failed": 4,
+  "capture_runs": 3,
+  "capture_runs_failed": 3,
   "capture_success_rate": null,
   "close_fixtures_delivered": 0,
   "close_fixtures_eligible": 0,
   "close_success_rate": null,
-  "credits_spent": 30,
+  "credits_spent": 18,
   "external_heartbeats_actual": 0,
   "external_heartbeats_expected": null,
   "external_trigger_success": null,
@@ -20,11 +20,11 @@
   "github_backup_actual": 5,
   "github_backup_expected": 24,
   "github_backup_success": 0.20833333333333334,
-  "heartbeats_actual": 22,
+  "heartbeats_actual": 20,
   "heartbeats_by_source": {
-   "chain": 5,
+   "chain": 4,
    "github-schedule-backup": 5,
-   "workflow-run": 12
+   "workflow-run": 11
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -32,7 +32,7 @@
   "horizons_delivered": 0,
   "horizons_eligible": 0,
   "horizons_missed": 0,
-  "paid_calls": 10,
+  "paid_calls": 6,
   "span_hours": 24.0
  },
  "last_7d": {
@@ -50,13 +50,13 @@
   "github_backup_actual": 21,
   "github_backup_expected": 168,
   "github_backup_success": 0.125,
-  "heartbeats_actual": 105,
+  "heartbeats_actual": 106,
   "heartbeats_by_source": {
    "chain": 19,
    "external-heartbeat": 3,
    "github-schedule-backup": 21,
    "manual": 4,
-   "workflow-run": 58
+   "workflow-run": 59
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -74,9 +74,9 @@
  },
  "last_wake": {
   "no_action_reason": null,
-  "started_at": "2026-10-05T09:07:03Z",
+  "started_at": "2026-10-05T11:54:00Z",
   "status": "OK",
-  "trigger_source": "chain"
+  "trigger_source": "workflow-run"
  },
  "schema": "dispatch_reliability_v1"
 }
