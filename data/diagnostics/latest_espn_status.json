@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-05T22:43:45.120785+00:00",
-  "events": 591,
-  "events_skipped_unmapped": 316,
-  "fixtures_mapped": 275,
+  "as_of": "2026-10-06T06:29:51.700775+00:00",
+  "events": 585,
+  "events_skipped_unmapped": 320,
+  "fixtures_mapped": 265,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=20"
+      "weather_stopped:consecutive_failures:skipped=18"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 39,
-    "events": 39,
+    "captured": 29,
+    "events": 29,
     "failures": [],
-    "published_post": 5,
+    "published_post": 0,
     "published_pre_kickoff": 0,
     "unchanged": 0,
-    "unpublished": 34
+    "unpublished": 29
   },
   "map_proposals": {
     "concacaf.nations.league": {
@@ -144,7 +144,6 @@
         "5534": "Mauritius",
         "5775": "Djibouti",
         "5782": "Sri Lanka",
-        "6167": "Palestine",
         "658": "China",
         "6723": "Tajikistan",
         "6724": "Kyrgyz Republic",
@@ -153,10 +152,25 @@
         "8601": "Comoros",
         "8937": "Niger"
       }
+    },
+    "nor.1": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "510": "Viking FK"
+      }
+    },
+    "uefa.champions": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "21922": "Sabah FK",
+        "510": "Viking FK"
+      }
     }
   },
   "map_version": "4",
-  "results_appended": 48,
+  "results_appended": 57,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -167,6 +181,7 @@
     "chi.1",
     "chn.1",
     "col.1",
+    "conmebol.sudamericana",
     "den.1",
     "eng.3",
     "eng.4",
@@ -204,6 +219,7 @@
     "18334": "AE Prat",
     "204": "Bolivia",
     "20776": "Anaitasuna",
+    "21922": "Sabah FK",
     "22372": "CD Bazt\u00e1n",
     "2645": "US Virgin Islands",
     "2665": "Turks and Caicos Islands",
@@ -219,10 +235,10 @@
     "454": "Russia",
     "4862": "Fiji",
     "4864": "Vanuatu",
+    "510": "Viking FK",
     "5534": "Mauritius",
     "5775": "Djibouti",
     "5782": "Sri Lanka",
-    "6167": "Palestine",
     "658": "China",
     "6723": "Tajikistan",
     "6724": "Kyrgyz Republic",
@@ -232,17 +248,17 @@
     "8937": "Niger"
   },
   "weather": {
-    "captured": 10,
-    "events": 33,
+    "captured": 6,
+    "events": 27,
     "failures": [
-      "401841251: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-23.9608&longitude=-46.3336&hourly=",
-      "401860380: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Recife&count=5&language=en&form",
-      "401860377: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Goi\u00e3nia&count=5&language=en&for"
+      "401841251: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Santos&count=5&language=en&form",
+      "401841256: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Curitiba&count=5&language=en&fo",
+      "401841248: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-22.9064&longitude=-43.1822&hourly="
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 20,
+    "skipped": 18,
     "stopped": "consecutive_failures"
   }
 }
