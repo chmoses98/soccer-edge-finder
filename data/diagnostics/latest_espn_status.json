@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-06T06:29:51.700775+00:00",
+  "as_of": "2026-10-06T15:16:40.247357+00:00",
   "events": 585,
   "events_skipped_unmapped": 320,
   "fixtures_mapped": 265,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=18"
+      "weather_stopped:consecutive_failures:skipped=21"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 29,
-    "events": 29,
+    "captured": 27,
+    "events": 27,
     "failures": [],
-    "published_post": 0,
+    "published_post": 2,
     "published_pre_kickoff": 0,
     "unchanged": 0,
-    "unpublished": 29
+    "unpublished": 25
   },
   "map_proposals": {
     "concacaf.nations.league": {
@@ -170,7 +170,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 57,
+  "results_appended": 58,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -249,7 +249,7 @@
   },
   "weather": {
     "captured": 6,
-    "events": 27,
+    "events": 30,
     "failures": [
       "401841251: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Santos&count=5&language=en&form",
       "401841256: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Curitiba&count=5&language=en&fo",
@@ -258,7 +258,7 @@
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 18,
+    "skipped": 21,
     "stopped": "consecutive_failures"
   }
 }
