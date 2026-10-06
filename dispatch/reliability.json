@@ -4,10 +4,10 @@
   "github_backup_minutes": 60
  },
  "definition": "capture_success_rate = delivered / eligible horizons whose window closed in the span (NOT_APPLICABLE excluded); close_success_rate = fixtures with a T-15 or T-5 delivery / fixtures whose close windows closed in the span",
- "generated_at": "2026-10-06T14:23:40Z",
+ "generated_at": "2026-10-06T15:04:55Z",
  "last_24h": {
-  "capture_runs": 3,
-  "capture_runs_failed": 3,
+  "capture_runs": 2,
+  "capture_runs_failed": 2,
   "capture_success_rate": null,
   "close_fixtures_delivered": 0,
   "close_fixtures_eligible": 0,
@@ -17,14 +17,14 @@
   "external_heartbeats_expected": null,
   "external_trigger_success": null,
   "fixtures_with_horizons": 0,
-  "github_backup_actual": 3,
+  "github_backup_actual": 4,
   "github_backup_expected": 24,
-  "github_backup_success": 0.125,
-  "heartbeats_actual": 17,
+  "github_backup_success": 0.16666666666666666,
+  "heartbeats_actual": 16,
   "heartbeats_by_source": {
-   "chain": 3,
-   "github-schedule-backup": 3,
-   "workflow-run": 11
+   "chain": 2,
+   "github-schedule-backup": 4,
+   "workflow-run": 10
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -38,7 +38,7 @@
  "last_7d": {
   "capture_runs": 27,
   "capture_runs_failed": 14,
-  "capture_success_rate": 0.8140845070422535,
+  "capture_success_rate": 0.8186968838526912,
   "close_fixtures_delivered": 60,
   "close_fixtures_eligible": 71,
   "close_success_rate": 0.8450704225352113,
@@ -47,14 +47,14 @@
   "external_heartbeats_expected": null,
   "external_trigger_success": null,
   "fixtures_with_horizons": 72,
-  "github_backup_actual": 24,
+  "github_backup_actual": 25,
   "github_backup_expected": 168,
-  "github_backup_success": 0.14285714285714285,
-  "heartbeats_actual": 124,
+  "github_backup_success": 0.1488095238095238,
+  "heartbeats_actual": 125,
   "heartbeats_by_source": {
    "chain": 22,
    "external-heartbeat": 3,
-   "github-schedule-backup": 24,
+   "github-schedule-backup": 25,
    "manual": 4,
    "workflow-run": 71
   },
@@ -62,21 +62,21 @@
   "heartbeats_no_work_due": 0,
   "horizon_states": {
    "DELIVERED": 289,
-   "MISSED_BEFORE_WAKE": 64,
+   "MISSED_BEFORE_WAKE": 62,
    "MISSED_EXECUTION_FAILURE": 2,
    "NOT_APPLICABLE": 1
   },
   "horizons_delivered": 289,
-  "horizons_eligible": 355,
-  "horizons_missed": 66,
+  "horizons_eligible": 353,
+  "horizons_missed": 64,
   "paid_calls": 38,
   "span_hours": 168.0
  },
  "last_wake": {
-  "no_action_reason": null,
-  "started_at": "2026-10-06T14:23:40Z",
+  "no_action_reason": "CAPTURE_IN_PROGRESS",
+  "started_at": "2026-10-06T15:04:55Z",
   "status": "OK",
-  "trigger_source": "workflow-run"
+  "trigger_source": "github-schedule-backup"
  },
  "schema": "dispatch_reliability_v1"
 }
