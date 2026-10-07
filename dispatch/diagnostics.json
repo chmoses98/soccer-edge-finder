@@ -54,52 +54,104 @@
   "delivered_total": 308,
   "delivery_rate_total": 0.6921348314606741,
   "fixtures_tracked": 90,
-  "generated_at": "2026-10-07T07:50:21Z",
+  "generated_at": "2026-10-07T13:20:52Z",
   "last_tick": {
-    "batches": 2,
+    "batches": 0,
     "summary": [
       {
         "actions": [
           "kalshi_capture:ok",
-          "reference:empty",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:9",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=326:sim=0"
+          "slate_reprice:ok:sides=280:sim=0"
         ],
-        "batch_id": "kd-20261007T022123Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:fifa.friendly:2026:nat.mex:nat.chi",
-            15,
-            8.61
-          ]
-        ]
+        "batch_id": "ks-20261007T105156Z",
+        "due": [],
+        "slate_refresh": true
       },
       {
         "actions": [
           "kalshi_capture:ok",
-          "reference:empty",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:9",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=326:sim=0"
+          "slate_reprice:ok:sides=280:sim=0"
         ],
-        "batch_id": "kd-20261007T022431Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:fifa.friendly:2026:nat.mex:nat.chi",
-            5,
-            5.48
-          ]
-        ]
+        "batch_id": "ks-20261007T110656Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=280:sim=0"
+        ],
+        "batch_id": "ks-20261007T112227Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=280:sim=0"
+        ],
+        "batch_id": "ks-20261007T113727Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=280:sim=0"
+        ],
+        "batch_id": "ks-20261007T115228Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=280:sim=0"
+        ],
+        "batch_id": "ks-20261007T120728Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=280:sim=0"
+        ],
+        "batch_id": "ks-20261007T122230Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=280:sim=0"
+        ],
+        "batch_id": "ks-20261007T123730Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=280:sim=0"
+        ],
+        "batch_id": "ks-20261007T125230Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=280:sim=0"
+        ],
+        "batch_id": "ks-20261007T130730Z",
+        "due": [],
+        "slate_refresh": true
       }
     ]
   },
   "missed_total": 137,
-  "n_pending_fixtures": 22,
+  "n_pending_fixtures": 26,
   "pending_fixtures": [
     {
       "competition_id": "bra.serie_a",
@@ -254,6 +306,34 @@
       "kickoff_utc": "2026-10-10T03:00:00Z",
       "markets_discovered": 14,
       "source": "run_output"
+    },
+    {
+      "competition_id": "eng.premier_league",
+      "fixture_id": "fx:eng.premier_league:2026-27:eng.arsenal:eng.leeds:matchday_6",
+      "kickoff_utc": "2026-10-10T11:30:00Z",
+      "markets_discovered": 3,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "eng.premier_league",
+      "fixture_id": "fx:eng.premier_league:2026-27:eng.arsenal:eng.leeds",
+      "kickoff_utc": "2026-10-10T11:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "esp.la_liga",
+      "fixture_id": "fx:esp.la_liga:2026-27:esp.rayo_vallecano:esp.athletic_bilbao:matchday_8",
+      "kickoff_utc": "2026-10-10T12:00:00Z",
+      "markets_discovered": 3,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "esp.la_liga",
+      "fixture_id": "fx:esp.la_liga:2026-27:esp.rayo_vallecano:esp.athletic_bilbao",
+      "kickoff_utc": "2026-10-10T12:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
     }
   ],
   "required_horizons": [
