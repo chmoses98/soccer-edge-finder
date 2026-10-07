@@ -3,11 +3,11 @@
     "120": {
       "achieved_minutes_median": 123.39,
       "achieved_minutes_p10": 117.33,
-      "achieved_minutes_p90": 127.25,
-      "delivered": 65,
-      "delivery_rate": 0.6842105263157895,
+      "achieved_minutes_p90": 125.78,
+      "delivered": 66,
+      "delivery_rate": 0.6875,
       "lateness_minutes_max": 62.51,
-      "lateness_minutes_median": -3.39,
+      "lateness_minutes_median": -3.79,
       "missed": 30
     },
     "15": {
@@ -33,9 +33,9 @@
     "5": {
       "achieved_minutes_median": 2.48,
       "achieved_minutes_p10": 1.57,
-      "achieved_minutes_p90": 4.28,
-      "delivered": 64,
-      "delivery_rate": 0.7272727272727273,
+      "achieved_minutes_p90": 4.38,
+      "delivered": 67,
+      "delivery_rate": 0.7362637362637363,
       "lateness_minutes_max": 7.0,
       "lateness_minutes_median": 2.52,
       "missed": 24
@@ -51,34 +51,13 @@
       "missed": 31
     }
   },
-  "delivered_total": 323,
-  "delivery_rate_total": 0.7021739130434783,
-  "fixtures_tracked": 95,
-  "generated_at": "2026-10-07T22:17:05Z",
+  "delivered_total": 327,
+  "delivery_rate_total": 0.7047413793103449,
+  "fixtures_tracked": 96,
+  "generated_at": "2026-10-07T22:25:26Z",
   "missed_total": 137,
-  "n_pending_fixtures": 51,
+  "n_pending_fixtures": 49,
   "pending_fixtures": [
-    {
-      "competition_id": "bra.serie_a",
-      "fixture_id": "fx:bra.serie_a:2026:bra.bragantino:bra.mirassol",
-      "kickoff_utc": "2026-10-07T22:30:00Z",
-      "markets_discovered": 29,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "bra.serie_a",
-      "fixture_id": "fx:bra.serie_a:2026:bra.internacional:bra.corinthians",
-      "kickoff_utc": "2026-10-07T22:30:00Z",
-      "markets_discovered": 29,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "bra.serie_a",
-      "fixture_id": "fx:bra.serie_a:2026:bra.remo:bra.gremio",
-      "kickoff_utc": "2026-10-07T22:30:00Z",
-      "markets_discovered": 29,
-      "source": "run_output"
-    },
     {
       "competition_id": "bra.serie_a",
       "fixture_id": "fx:bra.serie_a:2026:bra.vitoria:bra.chapecoense",
@@ -412,6 +391,13 @@
       "competition_id": "bra.serie_a",
       "fixture_id": "fx:bra.serie_a:2026:bra.vasco:bra.remo",
       "kickoff_utc": "2026-10-10T21:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "arg.primera",
+      "fixture_id": "fx:arg.primera:2026:arg.tigre:arg.banfield",
+      "kickoff_utc": "2026-10-10T22:15:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }
