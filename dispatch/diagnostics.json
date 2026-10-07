@@ -33,9 +33,9 @@
     "5": {
       "achieved_minutes_median": 2.48,
       "achieved_minutes_p10": 1.57,
-      "achieved_minutes_p90": 4.45,
-      "delivered": 68,
-      "delivery_rate": 0.7391304347826086,
+      "achieved_minutes_p90": 4.46,
+      "delivered": 69,
+      "delivery_rate": 0.7419354838709677,
       "lateness_minutes_max": 7.0,
       "lateness_minutes_median": 2.52,
       "missed": 24
@@ -51,20 +51,13 @@
       "missed": 31
     }
   },
-  "delivered_total": 333,
-  "delivery_rate_total": 0.7085106382978723,
+  "delivered_total": 334,
+  "delivery_rate_total": 0.7091295116772823,
   "fixtures_tracked": 96,
-  "generated_at": "2026-10-07T23:17:27Z",
+  "generated_at": "2026-10-07T23:25:26Z",
   "missed_total": 137,
-  "n_pending_fixtures": 48,
+  "n_pending_fixtures": 49,
   "pending_fixtures": [
-    {
-      "competition_id": "bra.serie_a",
-      "fixture_id": "fx:bra.serie_a:2026:bra.botafogo:bra.vasco",
-      "kickoff_utc": "2026-10-07T23:30:00Z",
-      "markets_discovered": 29,
-      "source": "run_output"
-    },
     {
       "competition_id": "bra.serie_a",
       "fixture_id": "fx:bra.serie_a:2026:bra.cruzeiro:bra.sao_paulo",
@@ -391,6 +384,20 @@
       "competition_id": "arg.primera",
       "fixture_id": "fx:arg.primera:2026:arg.tigre:arg.banfield",
       "kickoff_utc": "2026-10-10T22:15:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "mex.liga_mx",
+      "fixture_id": "fx:mex.liga_mx:2026:mex.juarez:mex.tijuana",
+      "kickoff_utc": "2026-10-10T23:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "mex.liga_mx",
+      "fixture_id": "fx:mex.liga_mx:2026:mex.queretaro:mex.atlante",
+      "kickoff_utc": "2026-10-10T23:00:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }

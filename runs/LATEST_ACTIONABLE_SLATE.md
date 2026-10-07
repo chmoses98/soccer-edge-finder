@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261007T232047Z-0d19bf` · generated 2026-10-07T23:20:47.212676Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261007T232525Z-b1f0fc` · generated 2026-10-07T23:25:25.942258Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-07T23:18:13.300987Z (CURRENT at publish; CURRENT until 2026-10-07T23:38:13.300987Z, STALE after 2026-10-07T23:48:13.300987Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-07T23:23:03.130905Z (CURRENT at publish; CURRENT until 2026-10-07T23:43:03.130905Z, STALE after 2026-10-07T23:53:03.130905Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-07T23:02:27.637273Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.22s
+model board generated 2026-10-07T23:02:27.637273Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.16s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -22,7 +22,7 @@ model board generated 2026-10-07T23:02:27.637273Z · simulations this update: 0 
 | 2026-10-09T18:45:00Z | Lens vs Lyon (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-09T19:00:00Z | Málaga vs Espanyol (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 71 | 0 |
 
-## Candidates on CURRENT prices (11; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (12; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -36,14 +36,15 @@ model board generated 2026-10-07T23:02:27.637273Z · simulations this update: 0 
 | Botafogo vs Vasco da Gama | home wins by more than 1.5 | yes | 0.1400 | 0.258 [0.131, 0.406] | +0.110 | +0.015 | 0.15 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Vasco da Gama | btts | no | 0.3700 | 0.483 [0.356, 0.605] | +0.097 | +0.014 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Vasco da Gama | home wins by more than 2.5 | yes | 0.0500 | 0.115 [0.039, 0.213] | +0.062 | +0.002 | 0.05 | - |  | RESEARCH_CANDIDATE |
+| Santos vs Flamengo | home wins by more than 1.5 | yes | 0.0800 | 0.155 [0.067, 0.271] | +0.070 | +0.002 | 0.08 | - | * | RESEARCH_CANDIDATE |
 | Santos vs Flamengo | Result: away | no | 0.4750 | 0.591 [0.439, 0.748] | +0.099 | +0.000 | 0.47 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 174
+action_NO_EDGE: 173
 action_NO_QUOTE: 497
-action_RESEARCH_CANDIDATE: 11
+action_RESEARCH_CANDIDATE: 12
 contract_sides: 682
 fixtures: 9
 fixtures_model_invalidated: 0
