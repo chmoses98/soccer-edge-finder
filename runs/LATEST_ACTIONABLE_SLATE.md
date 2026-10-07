@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261007T141011Z-94d84e` · generated 2026-10-07T14:10:11.655682Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261007T142513Z-62aa71` · generated 2026-10-07T14:25:13.044158Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-07T14:07:52.407065Z (CURRENT at publish; CURRENT until 2026-10-07T14:27:52.407065Z, STALE after 2026-10-07T14:37:52.407065Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-07T14:22:53.614542Z (CURRENT at publish; CURRENT until 2026-10-07T14:42:53.614542Z, STALE after 2026-10-07T14:52:53.614542Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-07T01:42:52.733903Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.11s
 
@@ -29,12 +29,12 @@ model board generated 2026-10-07T01:42:52.733903Z · simulations this update: 0 
 |---|---|---|---|---|---|---|---|---|---|---|
 | Athletico Paranaense vs Atlético Mineiro | Result: home | yes | 0.2550 | 0.501 [0.343, 0.670] | +0.232 | +0.122 | 0.37 | - | * | RESEARCH_CANDIDATE |
 | Athletico Paranaense vs Atlético Mineiro | home wins by more than 1.5 | yes | 0.0900 | 0.273 [0.139, 0.433] | +0.177 | +0.076 | 0.16 | - | * | RESEARCH_CANDIDATE |
-| Botafogo vs Vasco da Gama | Result: away | no | 0.6000 | 0.734 [0.604, 0.851] | +0.117 | +0.040 | 0.64 | - | * | RESEARCH_CANDIDATE |
+| Botafogo vs Vasco da Gama | Result: away | no | 0.5950 | 0.734 [0.604, 0.851] | +0.122 | +0.045 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Vasco da Gama | Result: home | yes | 0.3250 | 0.478 [0.321, 0.639] | +0.138 | +0.033 | 0.35 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Vasco da Gama | away wins by more than 1.5 | no | 0.8100 | 0.890 [0.811, 0.954] | +0.070 | +0.027 | 0.83 | - | * | RESEARCH_CANDIDATE |
+| Botafogo vs Vasco da Gama | away wins by more than 2.5 | no | 0.9300 | 0.964 [0.929, 0.990] | +0.029 | +0.013 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Vitória vs Chapecoense | Result: home | no | 0.3800 | 0.516 [0.352, 0.674] | +0.119 | +0.012 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | Vitória vs Chapecoense | Result: away | yes | 0.1550 | 0.253 [0.137, 0.379] | +0.089 | +0.006 | 0.16 | - |  | RESEARCH_CANDIDATE |
-| Athletico Paranaense vs Atlético Mineiro | home wins by more than 2.5 | yes | 0.0500 | 0.123 [0.042, 0.229] | +0.070 | +0.004 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Vasco da Gama | home wins by more than 1.5 | yes | 0.1500 | 0.258 [0.131, 0.406] | +0.099 | +0.004 | 0.15 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Vasco da Gama | home wins by more than 2.5 | yes | 0.0500 | 0.115 [0.039, 0.213] | +0.062 | +0.002 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Vitória vs Chapecoense | away wins by more than 1.5 | yes | 0.0500 | 0.100 [0.041, 0.172] | +0.047 | +0.000 | 0.05 | - | * | RESEARCH_CANDIDATE |
