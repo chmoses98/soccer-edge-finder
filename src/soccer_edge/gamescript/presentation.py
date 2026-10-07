@@ -53,9 +53,16 @@ def data_confidence(
     ctype = ((ctx.get("competition_type") or {}).get("value")) or "UNKNOWN"
     model = (slate_fx or {}).get("model") or {}
     lineup = ((slate_fx or {}).get("lineup") or {}).get("status") or "unknown"
+    if slate_fx is None:
+        # beyond the slate lookahead: the board entry itself is the model state (validity is checked at the
+        # first reprice that includes the fixture)
+        model_ok = entry.get("model_generated_at") is not None
+    else:
+        model_ok = model.get("validity") == "VALID" and (
+            (model.get("freshness") or {}).get("status") in ("CURRENT", "AGING")
+        )
     gates = {
-        "model_valid_and_fresh": model.get("validity") == "VALID"
-        and ((model.get("freshness") or {}).get("status") in ("CURRENT", "AGING")),
+        "model_valid_and_fresh": model_ok,
         "team_sample_adequate": min(effs) >= 8.0 if effs else False,
         "team_sample_strong": min(effs) >= 20.0 if effs else False,
         "competitive_fixture": ctype not in ("INTERNATIONAL_FRIENDLY", "CLUB_FRIENDLY", "UNKNOWN"),
@@ -392,7 +399,12 @@ def story(entry: dict[str, Any], surv: dict[str, Any] | None) -> dict[str, Any]:
     if surv:
         best = surv.get("best_robust")
         spec = surv.get("best_script_specific")
-        if surv.get("price_status") != "CURRENT":
+        if surv.get("price_status") == "OUTSIDE_SLATE_LOOKAHEAD":
+            edge_clause = (
+                "the fixture is beyond the 48-hour repricing window, so no edge is stated yet"
+            )
+            edge_kind = "NOT_YET_REPRICED"
+        elif surv.get("price_status") != "CURRENT":
             edge_clause, edge_kind = (
                 "prices are not current, so no edge is stated",
                 "PRICE_NOT_CURRENT",
@@ -458,7 +470,9 @@ def script_engine_payload(
     by_key = {r["key"]: r for r in rows}
     kal = slate_meta.get("kalshi") or {}
     price_status = kal.get("status") or "UNAVAILABLE"
-    if ((slate_fx or {}).get("model") or {}).get("validity") != "VALID":
+    if slate_fx is None:
+        price_status = "OUTSIDE_SLATE_LOOKAHEAD"
+    elif (slate_fx.get("model") or {}).get("validity") != "VALID":
         price_status = "MODEL_NOT_VALID"
     best_robust = by_key.get(fx_sc.get("best_robust_expression") or "")
     best_spec = by_key.get(fx_sc.get("best_script_specific_expression") or "")

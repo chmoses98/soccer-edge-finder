@@ -17,6 +17,10 @@ import re
 from typing import Any
 
 CONTEXT_VERSION = "match_context_v1"
+REST_SOURCE = (
+    "days since the team's previous match in the archive (results of archived competitions only; a match in a "
+    "competition the archive does not hold is missed)"
+)
 CONFEDERATIONS = {"UEFA", "CONMEBOL", "CONCACAF", "CAF", "AFC", "OFC", "FIFA"}
 
 
@@ -163,10 +167,10 @@ def match_context(
         "neutral_site": _f(
             bool(neutral_site), "KNOWN", "ESPN neutralSite / international venue-country rule"
         ),
-        "rest_days_home": _f(rest_days_home, "DERIVED", "days since the previous archived match")
+        "rest_days_home": _f(rest_days_home, "DERIVED", REST_SOURCE)
         if rest_days_home is not None
         else _unavailable("no previous match in the archive"),
-        "rest_days_away": _f(rest_days_away, "DERIVED", "days since the previous archived match")
+        "rest_days_away": _f(rest_days_away, "DERIVED", REST_SOURCE)
         if rest_days_away is not None
         else _unavailable("no previous match in the archive"),
         "rotation_uncertainty": rot,

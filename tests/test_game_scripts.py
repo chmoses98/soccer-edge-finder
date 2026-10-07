@@ -716,6 +716,15 @@ def test_v1_engine_publishes_scripts_as_unavailable(registry, tmp_path):
     assert p["status"] == "UNAVAILABLE"
 
 
+def test_fixture_beyond_the_slate_lookahead_is_not_called_invalid(built):
+    e = next(iter(built["board"]["fixtures"].values()))
+    p = script_engine_payload(e, None, [], intl_pool=False)
+    assert p["status"] == "OK"
+    assert p["survivability"]["price_status"] == "OUTSIDE_SLATE_LOOKAHEAD"
+    assert p["data_confidence"]["gates"]["model_valid_and_fresh"]
+    assert p["glance"]["story"]["parts"]["edge_kind"] == "NOT_YET_REPRICED"
+
+
 def test_payload_sizes_stay_bounded(built):
     for e in built["board"]["fixtures"].values():
         assert len(json.dumps(e["scripts"])) < 20_000
