@@ -1,10 +1,10 @@
 {
  "counts": {
-  "PINNACLE_VALID_CLOSE": 12,
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 19,
   "PINNACLE_QUOTED_NOTHING": 15,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 19,
   "MISSED_DISPATCHER_CLOSE": 24,
-  "NO_SPORT_KEY": 19
+  "NO_SPORT_KEY": 19,
+  "PINNACLE_VALID_CLOSE": 16
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.atletico_tucuman:arg.barracas_central": {
@@ -42,10 +42,30 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261003T211500Z"
   },
+  "fx:bra.serie_a:2026:bra.bragantino:bra.mirassol": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261007T221439Z"
+  },
+  "fx:bra.serie_a:2026:bra.internacional:bra.corinthians": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261007T221439Z"
+  },
+  "fx:bra.serie_a:2026:bra.remo:bra.gremio": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261007T221439Z"
+  },
   "fx:bra.serie_a:2026:bra.sao_paulo:bra.santos": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261002T224500Z"
+  },
+  "fx:bra.serie_a:2026:bra.vitoria:bra.chapecoense": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261007T224441Z"
   },
   "fx:concacaf.nations_league:2026-27:nat.aia:nat.aru": {
    "state": "MISSED_DISPATCHER_CLOSE",

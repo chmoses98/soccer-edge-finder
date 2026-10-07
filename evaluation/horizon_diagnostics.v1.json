@@ -3,89 +3,61 @@
     "120": {
       "achieved_minutes_median": 123.39,
       "achieved_minutes_p10": 117.33,
-      "achieved_minutes_p90": 127.25,
-      "delivered": 60,
-      "delivery_rate": 0.6666666666666666,
+      "achieved_minutes_p90": 125.78,
+      "delivered": 66,
+      "delivery_rate": 0.6875,
       "lateness_minutes_max": 62.51,
-      "lateness_minutes_median": -3.39,
+      "lateness_minutes_median": -3.79,
       "missed": 30
     },
     "15": {
       "achieved_minutes_median": 12.39,
       "achieved_minutes_p10": 11.47,
       "achieved_minutes_p90": 14.3,
-      "delivered": 64,
-      "delivery_rate": 0.7191011235955056,
+      "delivered": 68,
+      "delivery_rate": 0.7311827956989247,
       "lateness_minutes_max": 14.64,
       "lateness_minutes_median": 2.61,
       "missed": 25
     },
     "30": {
-      "achieved_minutes_median": 27.5,
-      "achieved_minutes_p10": 26.95,
-      "achieved_minutes_p90": 29.94,
-      "delivered": 62,
-      "delivery_rate": 0.6966292134831461,
+      "achieved_minutes_median": 27.84,
+      "achieved_minutes_p10": 27.33,
+      "achieved_minutes_p90": 29.91,
+      "delivered": 67,
+      "delivery_rate": 0.7127659574468085,
       "lateness_minutes_max": 16.98,
-      "lateness_minutes_median": 2.5,
+      "lateness_minutes_median": 2.16,
       "missed": 27
     },
     "5": {
       "achieved_minutes_median": 2.48,
       "achieved_minutes_p10": 1.57,
-      "achieved_minutes_p90": 4.28,
-      "delivered": 64,
-      "delivery_rate": 0.7272727272727273,
+      "achieved_minutes_p90": 4.45,
+      "delivered": 68,
+      "delivery_rate": 0.7391304347826086,
       "lateness_minutes_max": 7.0,
       "lateness_minutes_median": 2.52,
       "missed": 24
     },
     "60": {
-      "achieved_minutes_median": 60.73,
+      "achieved_minutes_median": 60.95,
       "achieved_minutes_p10": 55.3,
       "achieved_minutes_p90": 62.7,
-      "delivered": 58,
-      "delivery_rate": 0.651685393258427,
+      "delivered": 63,
+      "delivery_rate": 0.6702127659574468,
       "lateness_minutes_max": 25.07,
-      "lateness_minutes_median": -0.73,
+      "lateness_minutes_median": -0.95,
       "missed": 31
     }
   },
-  "delivered_total": 308,
-  "delivery_rate_total": 0.6921348314606741,
-  "fixtures_tracked": 90,
-  "generated_at": "2026-10-07T18:54:00Z",
+  "delivered_total": 332,
+  "delivery_rate_total": 0.7078891257995735,
+  "fixtures_tracked": 96,
+  "generated_at": "2026-10-07T23:14:41Z",
   "missed_total": 137,
-  "n_pending_fixtures": 38,
+  "n_pending_fixtures": 48,
   "pending_fixtures": [
-    {
-      "competition_id": "bra.serie_a",
-      "fixture_id": "fx:bra.serie_a:2026:bra.bragantino:bra.mirassol",
-      "kickoff_utc": "2026-10-07T22:30:00Z",
-      "markets_discovered": 29,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "bra.serie_a",
-      "fixture_id": "fx:bra.serie_a:2026:bra.internacional:bra.corinthians",
-      "kickoff_utc": "2026-10-07T22:30:00Z",
-      "markets_discovered": 29,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "bra.serie_a",
-      "fixture_id": "fx:bra.serie_a:2026:bra.remo:bra.gremio",
-      "kickoff_utc": "2026-10-07T22:30:00Z",
-      "markets_discovered": 29,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "bra.serie_a",
-      "fixture_id": "fx:bra.serie_a:2026:bra.vitoria:bra.chapecoense",
-      "kickoff_utc": "2026-10-07T23:00:00Z",
-      "markets_discovered": 29,
-      "source": "run_output"
-    },
     {
       "competition_id": "bra.serie_a",
       "fixture_id": "fx:bra.serie_a:2026:bra.botafogo:bra.vasco",
@@ -137,6 +109,13 @@
     },
     {
       "competition_id": "ger.bundesliga",
+      "fixture_id": "fx:ger.bundesliga:2026-27:ger.dortmund:ger.werder_bremen:matchday_5",
+      "kickoff_utc": "2026-10-09T18:30:00Z",
+      "markets_discovered": 80,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "ger.bundesliga",
       "fixture_id": "fx:ger.bundesliga:2026-27:ger.dortmund:ger.werder_bremen",
       "kickoff_utc": "2026-10-09T18:30:00Z",
       "markets_discovered": 0,
@@ -144,10 +123,24 @@
     },
     {
       "competition_id": "fra.ligue_1",
+      "fixture_id": "fx:fra.ligue_1:2026-27:fra.lens:fra.lyon:matchday_6",
+      "kickoff_utc": "2026-10-09T18:45:00Z",
+      "markets_discovered": 32,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "fra.ligue_1",
       "fixture_id": "fx:fra.ligue_1:2026-27:fra.lens:fra.lyon",
       "kickoff_utc": "2026-10-09T18:45:00Z",
       "markets_discovered": 0,
       "source": "espn"
+    },
+    {
+      "competition_id": "esp.la_liga",
+      "fixture_id": "fx:esp.la_liga:2026-27:esp.malaga:esp.espanyol:matchday_8",
+      "kickoff_utc": "2026-10-09T19:00:00Z",
+      "markets_discovered": 72,
+      "source": "run_output"
     },
     {
       "competition_id": "esp.la_liga",
@@ -321,6 +314,83 @@
       "competition_id": "usa.mls",
       "fixture_id": "fx:usa.mls:2026:usa.toronto:usa.cf_montreal",
       "kickoff_utc": "2026-10-10T17:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.chicago_fire:usa.nycfc",
+      "kickoff_utc": "2026-10-10T18:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "arg.primera",
+      "fixture_id": "fx:arg.primera:2026:arg.barracas_central:arg.huracan",
+      "kickoff_utc": "2026-10-10T18:45:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "fra.ligue_1",
+      "fixture_id": "fx:fra.ligue_1:2026-27:fra.monaco:fra.toulouse",
+      "kickoff_utc": "2026-10-10T18:45:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "fra.ligue_1",
+      "fixture_id": "fx:fra.ligue_1:2026-27:fra.brest:fra.angers",
+      "kickoff_utc": "2026-10-10T18:45:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "fra.ligue_1",
+      "fixture_id": "fx:fra.ligue_1:2026-27:fra.lorient:fra.paris_fc",
+      "kickoff_utc": "2026-10-10T18:45:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "fra.ligue_1",
+      "fixture_id": "fx:fra.ligue_1:2026-27:fra.psg:fra.le_mans",
+      "kickoff_utc": "2026-10-10T18:45:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "ita.serie_a",
+      "fixture_id": "fx:ita.serie_a:2026-27:ita.napoli:ita.frosinone",
+      "kickoff_utc": "2026-10-10T18:45:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "esp.la_liga",
+      "fixture_id": "fx:esp.la_liga:2026-27:esp.real_madrid:esp.villarreal",
+      "kickoff_utc": "2026-10-10T19:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "arg.primera",
+      "fixture_id": "fx:arg.primera:2026:arg.central_cordoba:arg.estudiantes",
+      "kickoff_utc": "2026-10-10T20:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "bra.serie_a",
+      "fixture_id": "fx:bra.serie_a:2026:bra.vasco:bra.remo",
+      "kickoff_utc": "2026-10-10T21:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "arg.primera",
+      "fixture_id": "fx:arg.primera:2026:arg.tigre:arg.banfield",
+      "kickoff_utc": "2026-10-10T22:15:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }
