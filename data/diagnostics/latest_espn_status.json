@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-07T08:47:53.054159+00:00",
+  "as_of": "2026-10-07T17:27:40.369105+00:00",
   "events": 535,
   "events_skipped_unmapped": 261,
   "fixtures_mapped": 274,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=22"
+      "weather_stopped:consecutive_failures:skipped=52"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 11,
-    "events": 11,
+    "captured": 12,
+    "events": 12,
     "failures": [],
     "published_post": 0,
     "published_pre_kickoff": 0,
     "unchanged": 0,
-    "unpublished": 11
+    "unpublished": 12
   },
   "map_proposals": {
     "concacaf.nations.league": {
@@ -159,7 +159,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 68,
+  "results_appended": 0,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -226,17 +226,17 @@
     "8937": "Niger"
   },
   "weather": {
-    "captured": 6,
-    "events": 31,
+    "captured": 9,
+    "events": 64,
     "failures": [
-      "401841253: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-22.9527&longitude=-46.5442&hourly=",
-      "401841252: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bel\u00e9m&count=5&language=en&forma",
-      "401841250: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Salvador&count=5&language=en&fo"
+      "401841252: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-1.4558&longitude=-48.5044&hourly=t",
+      "401841250: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Salvador&count=5&language=en&fo",
+      "401841257: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rio%20de%20Janeiro&count=5&lang"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 22,
+    "skipped": 52,
     "stopped": "consecutive_failures"
   }
 }
