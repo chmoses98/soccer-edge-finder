@@ -41,6 +41,8 @@ class CachedFixtureSim:
     outcome_hash: str
     summary: dict[str, Any]
     contracts: dict[str, dict[str, Any]]  # ticker -> compact priced probability
+    # game-script layer (gamescript/conditional.py) computed from the same worlds; None for older entries
+    scripts: dict[str, Any] | None = None
 
     def has(self, tickers: list[str]) -> bool:
         return all(t in self.contracts for t in tickers)
@@ -86,7 +88,12 @@ class SimCache:
             return None
         d = json.loads(p.read_text())
         return CachedFixtureSim(
-            d["sim_key"], d["fixture_id"], d["outcome_hash"], d["summary"], d["contracts"]
+            d["sim_key"],
+            d["fixture_id"],
+            d["outcome_hash"],
+            d["summary"],
+            d["contracts"],
+            d.get("scripts"),
         )
 
     def save(self, c: CachedFixtureSim) -> None:

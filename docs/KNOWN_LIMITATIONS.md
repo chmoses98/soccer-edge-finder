@@ -66,3 +66,13 @@
     `data_only.world_sim_v1.intl_pool` so they never count toward the club-league evidence cells; they must be
     read as noise until a walk-forward on the pooled international archive exists.
 
+
+
+## Game scripts (2026-10-07)
+
+* Script shares are simulation shares of world_sim_v2, which has no game-state dynamics; they are not calibrated
+  against observed script frequencies yet.
+* world_sim_v2's draw-level first scorer is independent of its half-time split (marginals exact, joint not); the
+  script layer uses the coherent exact kernel instead (docs/SIMULATION_ENGINE.md).
+* Context (leg, aggregate, standings, motivation) is display-only and mostly UNAVAILABLE from the current feeds.
+* A confirmed XI does not move probabilities (no validated player layer); lineup re-scripting reports zero deltas.

@@ -25,6 +25,8 @@ class CompetitionModel:
     results_used: int
     latest_result_date: date | None
     teams_missing: list[str]
+    # per team: schedule strength and raw form over the fit window (gamescript/matchup.py; display only)
+    team_context: dict[str, dict] | None = None
 
 
 def rows_from_results(results: list[MatchResult]) -> list[MatchRow]:
@@ -69,4 +71,15 @@ def fit_competition(
     known = set(post.teams)
     missing = [t for t in teams if t not in known]
     latest = max((r.date for r in rows), default=None)
-    return CompetitionModel(competition_id, post, utc_now(), len(rows), latest, missing)
+    try:
+        from soccer_edge.gamescript.matchup import team_context_from_rows
+
+        team_ctx = team_context_from_rows(
+            rows,
+            post,
+            as_of=as_of,
+            decay_per_day=float(getattr(post.config, "decay_per_day", 0.0065)),
+        )
+    except Exception:  # display-only context never blocks a fit
+        team_ctx = None
+    return CompetitionModel(competition_id, post, utc_now(), len(rows), latest, missing, team_ctx)

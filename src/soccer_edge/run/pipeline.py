@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import time
 import uuid
 from dataclasses import dataclass, field
 from datetime import date, datetime, timedelta
@@ -18,6 +19,8 @@ from soccer_edge.contracts.v1 import CoverageReportV1, EventV1, RecommendationV1
 from soccer_edge.core.serialization import content_hash
 from soccer_edge.core.temporal import FutureInformationError, TemporalGuard
 from soccer_edge.core.time import ensure_utc, iso_utc, minutes_until, utc_now
+from soccer_edge.gamescript.cells import CellSpec
+from soccer_edge.gamescript.conditional import ScriptLayer
 from soccer_edge.identity.models import Fixture, FixtureStatus
 from soccer_edge.identity.registry import AliasRegistry
 from soccer_edge.kalshi.association import Association, associate, index_fixtures
@@ -171,11 +174,19 @@ class RunArtifacts:
     fixtures_resimulated_for_reducer: list[str] = field(default_factory=list)
 
 
+def _world_set(posterior, ctx: MatchContext, fid: str, cfg: RunConfig):
+    """The fixture's worlds (no simulation) and the generator state after them; deterministic in
+    (seed, fixture id). The script layer needs only the worlds, so a cache-hit fixture whose cache predates
+    the script layer rebuilds them here without simulating."""
+    rng = np.random.default_rng(cfg.seed ^ (int(content_hash(fid).split(":")[1][:8], 16)))
+    worlds = WorldGenerator(posterior, cfg.world).generate(ctx, cfg.n_worlds, rng)
+    return worlds, rng
+
+
 def _simulate_fixture(posterior, ctx: MatchContext, fid: str, cfg: RunConfig, sim_cfg):
     """Worlds + joint outcomes for one fixture; deterministic in (seed, fixture id), so a cache-hit
     fixture re-simulated here reproduces the draws its cached prices were computed from."""
-    rng = np.random.default_rng(cfg.seed ^ (int(content_hash(fid).split(":")[1][:8], 16)))
-    worlds = WorldGenerator(posterior, cfg.world).generate(ctx, cfg.n_worlds, rng)
+    worlds, rng = _world_set(posterior, ctx, fid, cfg)
     seed = int(rng.integers(0, 2**31 - 1))
     if cfg.engine_version == ENGINE_V2:
         out = simulate_v2(worlds, ctx, sim_cfg, seed=seed)
@@ -184,14 +195,45 @@ def _simulate_fixture(posterior, ctx: MatchContext, fid: str, cfg: RunConfig, si
     return worlds, out
 
 
+def _score_mats(worlds) -> np.ndarray:
+    mats = getattr(worlds, "_score_mats", None)
+    if mats is None:
+        mats = score_matrices(worlds.lam_home, worlds.mu_away, worlds.rho)
+        worlds._score_mats = mats  # cached per fixture (WorldSet is a plain dataclass)
+    return mats
+
+
+def _script_layer(worlds, ctx: MatchContext, ws: list, sim_cfg, cfg: RunConfig) -> dict[str, Any]:
+    """Exact script layer for one fixture (gamescript/conditional.py): fixture block + per-contract
+    conditionals. Only world_sim_v2 has the timing kernel the layer is exact for; other engines publish the
+    layer as UNAVAILABLE rather than approximating it."""
+    if cfg.engine_version != ENGINE_V2:
+        return {"status": "UNAVAILABLE", "reason": f"script layer requires {ENGINE_V2}"}
+    layer = ScriptLayer(
+        _score_mats(worlds),
+        first_half_share=sim_cfg.first_half_share,
+        lam=worlds.lam_home,
+        mu=worlds.mu_away,
+        requires_winner=ctx.requires_winner,
+        knockout={
+            "first_leg_home_goals": ctx.first_leg_home_goals if ctx.two_leg_second_leg else 0,
+            "first_leg_away_goals": ctx.first_leg_away_goals if ctx.two_leg_second_leg else 0,
+            "away_goals_rule": ctx.away_goals_rule,
+            "two_leg_second_leg": ctx.two_leg_second_leg,
+            "extra_time_intensity": sim_cfg.extra_time_intensity,
+            "penalty_home_win_prob": sim_cfg.penalty_home_win_prob,
+        },
+        interval_level=cfg.interval_level,
+    )
+    specs = {w.market.ticker: CellSpec.from_semantics(w.sem) for w in ws if w.sem is not None}
+    contracts, gaps = layer.contracts(specs)
+    return {"status": "OK", "block": layer.fixture_block(), "contracts": contracts, "gaps": gaps}
+
+
 def _price_contract(w, worlds, out, cfg: RunConfig):
     """world_sim_v2: exact per-world probabilities for full-time families; engine draws otherwise."""
     if cfg.engine_version == ENGINE_V2 and is_analytic(w.sem):
-        mats = getattr(worlds, "_score_mats", None)
-        if mats is None:
-            mats = score_matrices(worlds.lam_home, worlds.mu_away, worlds.rho)
-            worlds._score_mats = mats  # cached per fixture (WorldSet is a plain dataclass)
-        return price_analytic(w.sem, mats, interval_level=cfg.interval_level)
+        return price_analytic(w.sem, _score_mats(worlds), interval_level=cfg.interval_level)
     return price(w.sem, out, interval_level=cfg.interval_level)
 
 
@@ -353,6 +395,10 @@ def run(
     fixture_ctx: dict[str, MatchContext] = {}
     sim_keys: dict[str, str] = {}
     fixture_inputs: dict[str, dict[str, Any]] = {}
+    # game-script layer per fixture (gamescript/): exact over the worlds, cached with the simulation
+    script_data: dict[str, dict[str, Any]] = {}
+    scripts_worlds_rebuilt: list[str] = []
+    script_seconds = 0.0
     sim_cfg = (
         SimConfigV2(draws_per_world=cfg.draws_per_world)
         if cfg.engine_version == ENGINE_V2
@@ -448,6 +494,22 @@ def run(
                 c = cached.contracts.get(w.market.ticker)
                 if c is not None:
                     w.priced = _priced_from_cache(w.market.ticker, c)
+            priced_ws = [w for w in [*ws, *extras] if w.priced is not None]
+            sl = cached.scripts or {}
+            covered = set(sl.get("contracts") or {}) | set(sl.get("gaps") or {})
+            if sl.get("status") == "OK" and {w.market.ticker for w in priced_ws} <= covered:
+                script_data[fid] = sl
+            else:
+                # the cache predates the script layer (or lacks a contract): rebuild the worlds only - the
+                # layer is exact over the worlds' score matrices, so no simulation is needed
+                t_sl = time.perf_counter()
+                worlds_c, _ = _world_set(cm.posterior, base_ctx, fid, cfg)
+                script_data[fid] = _script_layer(worlds_c, base_ctx, priced_ws, sim_cfg, cfg)
+                script_seconds += time.perf_counter() - t_sl
+                scripts_worlds_rebuilt.append(fid)
+                if sim_cache and script_data[fid].get("status") == "OK":
+                    cached.scripts = script_data[fid]
+                    sim_cache.save(cached)
             continue
         worlds, out = _simulate_fixture(cm.posterior, base_ctx, fid, cfg, sim_cfg)
         simulated.append(fid)
@@ -478,6 +540,11 @@ def run(
                     )
             warnings.append(f"coherence failure on {fid}: {problems[0]}")
             continue
+        t_sl = time.perf_counter()
+        script_data[fid] = _script_layer(
+            worlds, base_ctx, [w for w in [*ws, *extras] if w.priced is not None], sim_cfg, cfg
+        )
+        script_seconds += time.perf_counter() - t_sl
         if sim_cache:
             sim_cache.save(
                 CachedFixtureSim(
@@ -490,6 +557,7 @@ def run(
                         for w in [*ws, *extras]
                         if w.priced is not None
                     },
+                    scripts=script_data[fid] if script_data[fid].get("status") == "OK" else None,
                 )
             )
 
@@ -756,8 +824,24 @@ def run(
     md = render_markdown(output, reduced, fixture_summaries)
     diagnostics = build_coverage_diagnostics(works, cov, as_of, discovery_run_id=disc.run_id)
     board = _board_entries(
-        works, board_only, cov, fixture_inputs, sim_keys, fixture_summaries, inputs, run_id, as_of
+        works,
+        board_only,
+        cov,
+        fixture_inputs,
+        sim_keys,
+        fixture_summaries,
+        inputs,
+        run_id,
+        as_of,
+        script_data=script_data,
+        fixture_ctx=fixture_ctx,
     )
+    diagnostics["script_layer"] = {
+        "fixtures": sum(1 for v in script_data.values() if v.get("status") == "OK"),
+        "unavailable": sorted(f for f, v in script_data.items() if v.get("status") != "OK"),
+        "worlds_rebuilt_without_simulation": sorted(scripts_worlds_rebuilt),
+        "runtime_s": round(script_seconds, 3),
+    }
     return RunArtifacts(
         output,
         md,
@@ -819,6 +903,9 @@ def _board_entries(  # noqa: PLR0917
     inputs: RunInputs,
     run_id: str,
     as_of: datetime,
+    *,
+    script_data: dict[str, dict[str, Any]] | None = None,
+    fixture_ctx: dict[str, MatchContext] | None = None,
 ) -> dict[str, dict[str, Any]]:
     """Model-board entries (slate/board.py) for every fixture with priced contracts: the PRICED contracts
     plus the board-only no-quote contracts priced from the same draws. Coherence failures stay out."""
@@ -841,6 +928,14 @@ def _board_entries(  # noqa: PLR0917
         cm = inputs.models[fx.competition_id]
         comp = inputs.registry.competitions.get(fx.competition_id)
         lu = inputs.lineup_observations.get(fid)
+        sl = (script_data or {}).get(fid) or {"status": "UNAVAILABLE", "reason": "no script layer"}
+        sc_contracts = sl.get("contracts") or {}
+        scripts_block = (
+            {**sl["block"], "status": "OK", "contract_gaps": sl.get("gaps") or {}}
+            if sl.get("status") == "OK"
+            else {"status": "UNAVAILABLE", "reason": sl.get("reason")}
+        )
+        ctx_m = (fixture_ctx or {}).get(fid)
         out[fid] = fixture_entry(
             fixture_id=fid,
             event_name=_event_name(fx, inputs.registry),
@@ -865,11 +960,63 @@ def _board_entries(  # noqa: PLR0917
                     side=w.sem.side if w.sem else None,
                     line=w.sem.line if w.sem else None,
                     period=w.sem.period.value if w.sem else None,
+                    k=w.sem.k if w.sem else None,
+                    script=sc_contracts.get(w.market.ticker),
                 )
                 for w in ws
             },
+            scripts=scripts_block,
+            matchup=_matchup(cm, fx, ctx_m),
+            match_context=_match_context(fx, ctx_m, inputs, comp),
         )
     return out
+
+
+def _matchup(cm: CompetitionModel, fx: Fixture, ctx: MatchContext | None) -> dict[str, Any] | None:
+    from soccer_edge.gamescript.matchup import matchup_block
+
+    post = cm.posterior
+    if fx.home_team_id not in post.teams or fx.away_team_id not in post.teams:
+        return None
+    try:
+        return matchup_block(
+            post,
+            fx.home_team_id,
+            fx.away_team_id,
+            neutral=bool(ctx.neutral_site if ctx else fx.neutral_site),
+            team_context=getattr(cm, "team_context", None),
+            pool_label=cm.competition_id,
+        )
+    except Exception as exc:  # display-only intelligence never blocks a model run
+        return {"status": "UNAVAILABLE", "reason": f"matchup failed: {exc}"[:160]}
+
+
+def _match_context(
+    fx: Fixture, ctx: MatchContext | None, inputs: RunInputs, comp: Any
+) -> dict[str, Any]:
+    from soccer_edge.gamescript.context import match_context
+    from soccer_edge.identity.models import TeamKind
+
+    teams = [inputs.registry.teams.get(t) for t in (fx.home_team_id, fx.away_team_id)]
+    national = (
+        all(t.kind is TeamKind.NATIONAL for t in teams if t is not None) if all(teams) else None
+    )
+    rc = inputs.rest_contexts.get(fx.fixture_id)
+    return match_context(
+        competition=comp,
+        competition_id=fx.competition_id,
+        stage=fx.stage,
+        leg_number=fx.leg_number,
+        requires_winner=bool(ctx.requires_winner if ctx else fx.penalties_possible),
+        neutral_site=bool(ctx.neutral_site if ctx else fx.neutral_site),
+        national=national,
+        rest_days_home=getattr(rc, "rest_days_home", None),
+        rest_days_away=getattr(rc, "rest_days_away", None),
+        two_leg_second_leg=bool(ctx.two_leg_second_leg) if ctx else False,
+        first_leg=(ctx.first_leg_home_goals, ctx.first_leg_away_goals)
+        if ctx and ctx.two_leg_second_leg
+        else None,
+    )
 
 
 def _side_ref(p_yes: float | None, side: str) -> float | None:

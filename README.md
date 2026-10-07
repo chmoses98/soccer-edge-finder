@@ -44,6 +44,7 @@ Only public Kalshi endpoints are used. No credentials are required for anything 
 | Evaluation and authority | `docs/CALIBRATION.md`, `docs/RESEARCH_AUTHORITY.md` |
 | Operator command | `docs/RUN_SOCCER.md` |
 | **Live actionable slate** (what ChatGPT reads: `runs/latest.actionable_slate.v1.json`; REFRESH SOCCER SLATE) | `docs/ACTIONABLE_SLATE.md` |
+| **Game-script engine** (scripts, P(market given script), script survivability, SIFT payload) | `docs/GAME_SCRIPTS.md`, `docs/SIFT_SOCCER_HANDOFF.md` |
 | App contract (versioned JSON) | `docs/APP_CONTRACT.md`, `docs/schemas/` |
 | Archive integrity (manifest, verify, recovery) | `docs/ARCHIVE_INTEGRITY.md` |
 | Scheduler (fixture-aware bounded chain, runaway protection, heartbeats, settlement dispatch) | `docs/SCHEDULER.md` |
@@ -70,6 +71,7 @@ src/soccer_edge/
   contracts/   versioned app schemas (RecommendationV1, EventV1, ...)
   run/         RUN SOCCER pipeline, freshness gates, simulation cache, rendering
   slate/       live slate: model board (cached distributions), reprice, invalidation, selective refresh
+  gamescript/  game scripts: exact script layer, survivability, expressions, matchup, context, SIFT payload
 data/          registry (committed), catalog index (committed, compact), everything else archived
 docs/          architecture, audits, contracts, handoff
 research/      walk-forward evaluation scripts and frozen results

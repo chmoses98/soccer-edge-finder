@@ -55,6 +55,7 @@ from edge_finder_contract import research as R  # noqa: E402, N812
 from edge_finder_contract.publish import dumps  # noqa: E402
 
 from soccer_edge import __version__  # noqa: E402
+from soccer_edge.gamescript.presentation import script_engine_payload  # noqa: E402
 from soccer_edge.identity.registry import AliasRegistry  # noqa: E402
 from soccer_edge.model.strength_v2 import StrengthConfigV2  # noqa: E402
 from soccer_edge.providers.interfaces import MatchResult  # noqa: E402
@@ -73,6 +74,10 @@ RESULTS_DIR = "results/espn"
 LINEUPS_DIR = "lineups"
 WEATHER_DIR = "weather"
 BOARD_FILE = "runs/latest.model_board.v1.json"
+SLATE_FILE = "runs/latest.actionable_slate.v1.json"
+# the soccer script-engine payload (event_research.extensions.soccer_script_engine) gets this share of the
+# per-event budget before projection history; beyond it the payload trims deep evidence (recorded in `trimmed`)
+SCRIPT_ENGINE_MAX_BYTES = 75_000
 MODEL_HEALTH_FILE = "evaluation/model_health.v1.json"
 REGISTRY_DIR = REPO_ROOT / "data" / "registry"
 INTL_RESULTS_FILE = REPO_ROOT / "data" / "international" / "results_v1.csv.gz"
@@ -321,6 +326,8 @@ class ResearchInputs:
     espn_team_map: dict[str, str]
     sources: dict[str, Any] = field(default_factory=dict)
     warnings: list[str] = field(default_factory=list)
+    # latest actionable slate (price-time script survivability; gamescript/presentation.py)
+    slate: dict[str, Any] = field(default_factory=dict)
 
 
 def _read_json(path: Path) -> Any:
@@ -629,6 +636,8 @@ def load_inputs(
     weather = _load_weather(data_root, now, wanted_espn)
     board_path = data_root / BOARD_FILE
     board = _read_json(board_path) if board_path.exists() else {}
+    slate_path = data_root / SLATE_FILE
+    slate = _read_json(slate_path) if slate_path.exists() else {}
     mh_path = data_root / MODEL_HEALTH_FILE
     mh = _read_json(mh_path) if mh_path.exists() else []
     if isinstance(
@@ -675,6 +684,7 @@ def load_inputs(
         intl_date_max=intl_date_max,
         espn_team_map=espn_team_map,
         warnings=warnings,
+        slate=slate if isinstance(slate, dict) else {},
     )
 
 
@@ -2179,6 +2189,12 @@ def _event_docs(ctx: Ctx) -> tuple[list[dict[str, Any]], dict[str, Any]]:
         r["market_id"]: (bool(r["research_only"]), r["authority"]) for r in inputs.recommendations
     }
     board_fx = (inputs.board or {}).get("fixtures", {}) if isinstance(inputs.board, dict) else {}
+    slate = inputs.slate or {}
+    slate_fx_by = {f.get("fixture_id"): f for f in slate.get("fixtures") or []}
+    slate_rows_by: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for c in slate.get("contracts") or []:
+        slate_rows_by[c.get("fixture_id")].append(c)
+    slate_meta = {"slate_id": slate.get("slate_id"), "kalshi": slate.get("kalshi") or {}}
     for eid in sorted(ctx.events):
         ev = ctx.events[eid]
         fid = ctx.event_fixture[eid]
@@ -2495,6 +2511,19 @@ def _event_docs(ctx: Ctx) -> tuple[list[dict[str, Any]], dict[str, Any]]:
                 model_generated_at=_iso(bf.get("model_generated_at")),
                 quality_status="RESEARCH" if intl else "PARTIAL",
             )
+        if is_v1:
+            ext["soccer_script_engine"] = _fit_script_payload(
+                script_engine_payload(
+                    bf,
+                    slate_fx_by.get(fid),
+                    slate_rows_by.get(fid, []),
+                    intl_pool=intl,
+                    slate_meta=slate_meta,
+                )
+            )
+            stats.setdefault("script_engine_events", []).append(
+                {"fixture_id": fid, "status": ext["soccer_script_engine"].get("status")}
+            )
         if rest:
             ext["rest_congestion"] = rest
         if settlement:
@@ -2540,6 +2569,16 @@ def _event_docs(ctx: Ctx) -> tuple[list[dict[str, Any]], dict[str, Any]]:
                 extensions=ext,
             )
             over = len(dumps(doc)) - EVENT_MAX_BYTES
+            if over > 0 and not ext["projection_history"] and "soccer_script_engine" in ext:
+                # projection history is gone and the document is still over budget: trim the script payload's
+                # deep evidence further (recorded in its `trimmed` list), once per remaining step
+                sp = ext["soccer_script_engine"]
+                before = len(dumps(sp))
+                ext["soccer_script_engine"] = _fit_script_payload(
+                    sp, max_bytes=max(5_000, before - over - 2_000)
+                )
+                if len(dumps(ext["soccer_script_engine"])) < before:
+                    continue
             if over <= 0 or not ext["projection_history"]:
                 break
             budget = max(0, budget - over - 2_000)
@@ -2552,6 +2591,55 @@ def _event_docs(ctx: Ctx) -> tuple[list[dict[str, Any]], dict[str, Any]]:
             )
         docs.append(doc)
     return docs, stats
+
+
+def _fit_script_payload(
+    payload: dict[str, Any], max_bytes: int = SCRIPT_ENGINE_MAX_BYTES
+) -> dict[str, Any]:
+    """Keep the script-engine payload inside SCRIPT_ENGINE_MAX_BYTES by trimming deep evidence in a fixed
+    order; what was trimmed is recorded (never silently)."""
+    trimmed: list[str] = []
+
+    def size() -> int:
+        return len(dumps(payload))
+
+    steps = [
+        (
+            "matrix.low_high",
+            lambda: [r.__setitem__(slice(5, 7), [None, None]) for r in payload["matrix"]["rows"]],
+        ),
+        ("cards.temporal", lambda: [c.pop("temporal", None) for c in payload["scripts"]["cards"]]),
+        (
+            "survivability.rows>25",
+            lambda: payload["survivability"].__setitem__(
+                "rows", payload["survivability"]["rows"][:25]
+            ),
+        ),
+        ("cards.profile", lambda: [c.pop("profile", None) for c in payload["scripts"]["cards"]]),
+        (
+            "matrix.exact_score_rows",
+            lambda: payload["matrix"].__setitem__(
+                "rows",
+                [
+                    r
+                    for r in payload["matrix"]["rows"]
+                    if r[1] not in ("exact_score", "first_half_exact_score")
+                ],
+            ),
+        ),
+    ]
+    if payload.get("status") != "OK":
+        return payload
+    for name, fn in steps:
+        if size() <= max_bytes:
+            break
+        fn()
+        trimmed.append(name)
+    if trimmed:
+        payload["trimmed"] = sorted(
+            set(payload.get("trimmed") or []) | set(trimmed), key=[n for n, _ in steps].index
+        )
+    return payload
 
 
 # ----------------------------------------------------------------------------- profiles
