@@ -201,7 +201,7 @@ leaves the slate (no pregame script edge survives kickoff). Survivability never 
 | `runs/latest.model_board.v1.json` fixtures[fid] | `scripts` (shares, intervals, profiles, temporal, score grid, contract_gaps), `matchup`, `match_context`, `lineup_history`; contracts[t].`sc` {p, sp[6], lo[6], hi[6]}, `k` | model_board.v1 (additive) |
 | `runs/latest.actionable_slate.v1.json` | fixtures[].`scripts` (SlateFixtureScriptsV1), contracts[].`script_robustness` (ScriptRobustnessV1) | actionable_slate.v1, schema 1.1.0 (additive; `docs/schemas/ActionableSlateV1.schema.json`) |
 | `app/latest/markets.json` items[].extensions.`script_robustness` | compact label / category / edge / support / stance per side | edge_finder.app.v1 extensions |
-| `app/latest/events.json` items[].extensions.slate.`scripts` | shares, primary/secondary, best robust expression | edge_finder.app.v1 extensions |
+| `app/latest/events.json` items[].extensions.`scripts` | shares, primary/secondary, best robust expression | edge_finder.app.v1 extensions |
 | `app/latest/explorer/events/<evt>.json` `extensions.soccer_script_engine` | the full SIFT payload `soccer_script_engine.v1` | edge_finder.app.v1 `event_research.extensions` |
 
 Discovery for SIFT: `explorer/index.json` -> `events[]` (event_id, path) -> the event document -> `extensions.soccer_script_engine`.
@@ -317,3 +317,8 @@ more than 1.5' at 31% conditional fair probability against a 83% break-even." Sc
 more than 1.5" at 0.15, SCRIPT_DEPENDENT (only HOME_CONTROL supports it; TIGHT_LOW_EVENT settles it at 0 %). The six
 home-side rows (home ML, home -1.5/-2.5, away not winning, away not winning by 2+/3+) form one HOME_CONTROL thesis
 group.
+4. **After merge to main** (`112c726`): kalshi-capture on main at 02:36Z, slate `slate-20261007T023638Z-aa9d3b`
+   (`reprice_only`, 0 simulations, 0 Odds API calls); the explorer rebuilt at 02:36:24Z with the merged rules:
+   `verify_explorer` clean, 59 / 59 v1 events carry the payload (10 priced CURRENT inside the 48 h slate window, 49
+   `OUTSIDE_SLATE_LOOKAHEAD`), largest event file 101.5 KB, thesis groups of 1-4 sides, every `markets.json` item
+   carries `extensions.script_robustness`.

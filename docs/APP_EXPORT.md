@@ -128,7 +128,7 @@ Every v1 event's `explorer/events/<evt>.json` carries `extensions.soccer_script_
 matrix, matchup, context, lineup re-scripting, data confidence, data gaps, freshness, authority, provenance. It is
 built from `runs/latest.model_board.v1.json` and `runs/latest.actionable_slate.v1.json` of the same merged tree,
 held under 75 KB (deep evidence trimmed in a fixed, recorded order). `markets.json` items carry a compact
-`extensions.script_robustness` per side and `events.json` items `extensions.slate.scripts`. No contract change:
+`extensions.script_robustness` per side and `events.json` items `extensions.scripts`. No contract change:
 `event_research.extensions` is the shared contract's sport-specific slot. Spec: `docs/GAME_SCRIPTS.md`.
 
 ## Research explorer (`app/latest/explorer`, contract 1.1.0)
