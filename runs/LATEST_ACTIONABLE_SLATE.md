@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261007T202534Z-1f5d19` · generated 2026-10-07T20:25:34.143072Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261007T204021Z-36a736` · generated 2026-10-07T20:40:21.849167Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-07T20:23:02.936819Z (CURRENT at publish; CURRENT until 2026-10-07T20:43:02.936819Z, STALE after 2026-10-07T20:53:02.936819Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-07T20:38:01.626857Z (CURRENT at publish; CURRENT until 2026-10-07T20:58:01.626857Z, STALE after 2026-10-07T21:08:01.626857Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-07T19:10:29.071971Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.34s
+model board generated 2026-10-07T19:10:29.071971Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.22s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -42,10 +42,10 @@ model board generated 2026-10-07T19:10:29.071971Z · simulations this update: 0 
 | Athletico Paranaense vs Atlético Mineiro | home wins by more than 2.5 | yes | 0.0400 | 0.123 [0.042, 0.229] | +0.080 | +0.015 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Vitória vs Chapecoense | away wins by more than 1.5 | yes | 0.0400 | 0.100 [0.041, 0.172] | +0.057 | +0.011 | 0.05 | - | * | RESEARCH_CANDIDATE |
 | Vitória vs Chapecoense | home wins by more than 1.5 | no | 0.6300 | 0.742 [0.590, 0.868] | +0.095 | +0.006 | 0.63 | - |  | RESEARCH_CANDIDATE |
+| Santos vs Flamengo | Result: away | no | 0.4700 | 0.591 [0.439, 0.748] | +0.104 | +0.005 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Vasco da Gama | btts | no | 0.3800 | 0.483 [0.356, 0.605] | +0.087 | +0.003 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Vitória vs Chapecoense | home wins by more than 2.5 | no | 0.8200 | 0.887 [0.787, 0.960] | +0.056 | +0.003 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Vasco da Gama | home wins by more than 2.5 | yes | 0.0500 | 0.115 [0.039, 0.213] | +0.062 | +0.002 | 0.05 | - |  | RESEARCH_CANDIDATE |
-| Santos vs Flamengo | Result: away | no | 0.4750 | 0.591 [0.439, 0.748] | +0.099 | +0.000 | 0.47 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
