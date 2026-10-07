@@ -398,6 +398,14 @@ def test_survivability_labels_follow_the_published_rules():
     d = survivability(shares, [1.0, 0.0, 0.2, 0.1, 0.0, 0.0], 0.33)
     assert d["label"] == "SCRIPT_DEPENDENT" and d["supporting_scripts"] == 1
     assert d["counter_case"]["reason_code"] == "BELOW_BREAKEVEN"
+    # a longshot narrowly positive in a big script but carried by one low-frequency script -> SCRIPT_DEPENDENT
+    sh = [0.40, 0.10, 0.19, 0.165, 0.065, 0.08]
+    o = survivability(sh, [0.099, 0.045, 0.0, 0.44, 0.004, 0.018], 0.0746)
+    assert o["supporting_scripts"] == 2 and o["edge_concentration"] >= 0.75
+    assert o["label"] == "SCRIPT_DEPENDENT"
+    # value spread over a big certain script stays ROBUST (BTTS-No-like: TIGHT share >= 0.25)
+    b = survivability([0.29, 0.10, 0.29, 0.12, 0.08, 0.12], [0.60, 0.0, 1.0, 0.0, 0.0, 0.50], 0.457)
+    assert b["label"] == "ROBUST"
     # below break-even everywhere that matters -> NO_EDGE
     assert survivability(shares, [0.1] * 6, 0.5)["label"] == "NO_EDGE"
     # immaterial scripts never count (AWAY_CHASE 0.08 < 1/12)

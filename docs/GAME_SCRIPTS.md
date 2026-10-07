@@ -117,14 +117,19 @@ for a side with break-even b = executable ask + Kalshi fee per contract (`pricin
 | `strongest_support` | script with the largest positive contribution |
 | `counter_case` | material script with the most negative contribution: share, p, edge, contribution, reason code (`SCRIPT_SETTLES_AGAINST`: p = 0; `BELOW_BREAKEVEN`; `NO_MATERIAL_OPPOSITION`), one templated sentence |
 
-Labels (first match): `NO_EDGE` (overall <= 0) · `SCRIPT_DEPENDENT` (<= 1 supporting material script) ·
+Labels (first match): `NO_EDGE` (overall <= 0) · `SCRIPT_DEPENDENT` (<= 1 supporting material script, or
+>= 75 % of the positive value from one script with share < 25 % and no edge left without it) ·
 `VERY_ROBUST` (support >= 0.80 and >= 3 supporting) · `ROBUST` (>= 0.60) · `MIXED` (>= 0.35) · `FRAGILE`.
 Categories: `ROBUST_ACROSS_SCRIPTS` (VERY_ROBUST, ROBUST), `MIXED`, `SCRIPT_SPECIFIC_UPSIDE` (FRAGILE,
 SCRIPT_DEPENDENT), `NO_EDGE`. No composite score.
 
 Why support and not `edge_ex_top_script` decides dependence: scripts are outcome-defined, so a moneyline side always
 wins in its control script; removing that script removes most of any modest edge by construction. The metric is
-published, but labelling every moneyline "dependent" would describe the taxonomy, not the price.
+published, but labelling every moneyline "dependent" would describe the taxonomy, not the price. It does decide
+dependence together with concentration when the carrying script is low-frequency: on the first live board an
+Over 5.5 at 7c was +2.4 pts in the largest script (HOME_CONTROL) but drew 86 % of its value from
+OPEN_END_TO_END (16.5 %); it is SCRIPT_DEPENDENT, while a BTTS-No whose value sits in a 29 % TIGHT_LOW_EVENT
+script stays ROBUST.
 
 **Zero simulations.** A reprice reads the cached conditionals and the side's break-even; a price move changes edges,
 stances, labels, rankings and groups and never a share (tests `test_quote_only_reprice_runs_zero_simulations_and_moves_survivability`,

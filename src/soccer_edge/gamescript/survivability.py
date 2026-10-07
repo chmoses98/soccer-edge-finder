@@ -18,7 +18,9 @@ fee per contract, `pricing/edge.assess`) and script conditionals p_S (YES: p_S, 
 
 Labels (first rule that matches; descriptive, never a bet signal):
     NO_EDGE           e <= 0
-    SCRIPT_DEPENDENT  at most one material script supports the side (the value needs one specific game)
+    SCRIPT_DEPENDENT  at most one material script supports the side (the value needs one specific game), or
+                      the value is concentrated in one LOW-FREQUENCY script: edge concentration >= 0.75, that
+                      script's share < 0.25, and edge ex top script <= 0
     VERY_ROBUST       weighted support >= 0.80 and >= 3 supporting material scripts
     ROBUST            weighted support >= 0.60
     MIXED             weighted support >= 0.35
@@ -35,6 +37,10 @@ from soccer_edge.gamescript.taxonomy import MATERIAL_SHARE_MIN, SCRIPT_IDS, SCRI
 
 SURVIVABILITY_VERSION = "script_survivability_v1"
 SUPPORT_BAND = 0.02
+# "concentrated almost entirely in one low-frequency game state": >= 3/4 of the positive value from one
+# script that occurs in fewer than one in four modelled matches, with no edge left without it
+CONCENTRATION_DEPENDENT = 0.75
+LOW_FREQUENCY_SHARE = 0.25
 VERY_ROBUST_SUPPORT = 0.80
 VERY_ROBUST_MIN_SCRIPTS = 3
 ROBUST_SUPPORT = 0.60
@@ -61,7 +67,8 @@ RULES = {
     "edge_ex_top_script": "(overall edge - top contribution) / (1 - top script share)",
     "labels": [
         "NO_EDGE: overall edge <= 0",
-        "SCRIPT_DEPENDENT: at most one supporting material script",
+        "SCRIPT_DEPENDENT: at most one supporting material script, or edge concentration >= "
+        f"{CONCENTRATION_DEPENDENT} in a script with share < {LOW_FREQUENCY_SHARE} and edge_ex_top_script <= 0",
         f"VERY_ROBUST: weighted support >= {VERY_ROBUST_SUPPORT} and >= {VERY_ROBUST_MIN_SCRIPTS} supporting",
         f"ROBUST: weighted support >= {ROBUST_SUPPORT}",
         f"MIXED: weighted support >= {MIXED_SUPPORT}",
@@ -124,7 +131,14 @@ def survivability(
     worst_i = min(material_idx, key=lambda i: edges[i]) if material_idx else None  # type: ignore[arg-type,return-value]
     if overall <= 0:
         label = "NO_EDGE"
-    elif n_sup <= 1:
+    elif n_sup <= 1 or (
+        concentration is not None
+        and concentration >= CONCENTRATION_DEPENDENT
+        and top_i is not None
+        and shares[top_i] < LOW_FREQUENCY_SHARE
+        and ex_top is not None
+        and ex_top <= 0
+    ):
         label = "SCRIPT_DEPENDENT"
     elif w_sup >= VERY_ROBUST_SUPPORT and n_sup >= VERY_ROBUST_MIN_SCRIPTS:
         label = "VERY_ROBUST"
