@@ -2569,6 +2569,16 @@ def _event_docs(ctx: Ctx) -> tuple[list[dict[str, Any]], dict[str, Any]]:
                 extensions=ext,
             )
             over = len(dumps(doc)) - EVENT_MAX_BYTES
+            if over > 0 and not ext["projection_history"] and "soccer_script_engine" in ext:
+                # projection history is gone and the document is still over budget: trim the script payload's
+                # deep evidence further (recorded in its `trimmed` list), once per remaining step
+                sp = ext["soccer_script_engine"]
+                before = len(dumps(sp))
+                ext["soccer_script_engine"] = _fit_script_payload(
+                    sp, max_bytes=max(5_000, before - over - 2_000)
+                )
+                if len(dumps(ext["soccer_script_engine"])) < before:
+                    continue
             if over <= 0 or not ext["projection_history"]:
                 break
             budget = max(0, budget - over - 2_000)
@@ -2583,7 +2593,9 @@ def _event_docs(ctx: Ctx) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     return docs, stats
 
 
-def _fit_script_payload(payload: dict[str, Any]) -> dict[str, Any]:
+def _fit_script_payload(
+    payload: dict[str, Any], max_bytes: int = SCRIPT_ENGINE_MAX_BYTES
+) -> dict[str, Any]:
     """Keep the script-engine payload inside SCRIPT_ENGINE_MAX_BYTES by trimming deep evidence in a fixed
     order; what was trimmed is recorded (never silently)."""
     trimmed: list[str] = []
@@ -2619,12 +2631,14 @@ def _fit_script_payload(payload: dict[str, Any]) -> dict[str, Any]:
     if payload.get("status") != "OK":
         return payload
     for name, fn in steps:
-        if size() <= SCRIPT_ENGINE_MAX_BYTES:
+        if size() <= max_bytes:
             break
         fn()
         trimmed.append(name)
     if trimmed:
-        payload["trimmed"] = trimmed
+        payload["trimmed"] = sorted(
+            set(payload.get("trimmed") or []) | set(trimmed), key=[n for n, _ in steps].index
+        )
     return payload
 
 

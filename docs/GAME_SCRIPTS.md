@@ -142,8 +142,10 @@ selection policy's minimum edge; the lists never feed the selection). Ranking is
 label, then worst-case (q0.20) edge > 0, then `edge_ex_top_script`, then overall edge (`robust_rank`, 1 = best).
 
 Same thesis: payoff correlation phi under the exact joint (rebuilt at reprice time from the board's mean score
-grid x the kernel; to-advance via the stored advance table). phi >= 0.5 links two sides; groups are connected
-components with an `anchor_script` (largest summed positive contribution) and a `best_expression` (top-ranked
+grid x the kernel; to-advance via the stored advance table). Groups are formed in rank order: a side joins the
+first group whose best expression it tracks with phi >= 0.5, else it leads a new group (leader grouping: every
+member is a correlated re-expression of its group's best side; single linkage chained 16-17 loosely related sides
+into one group on the first live board). Each group has an `anchor_script` (largest summed positive contribution) and a `best_expression` (top-ranked
 member). Home ML, home -0.5, home team O1.5 land in one dominant-home group (test). The fixture summary gives
 `robust_edges`, `mixed_edges`, `script_specific_edges`, `thesis_groups`, `best_robust_expression`,
 `best_script_specific_expression`, and an explicit `no_compelling_edge` with its reason.

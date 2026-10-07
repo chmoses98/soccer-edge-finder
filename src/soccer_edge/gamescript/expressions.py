@@ -3,11 +3,13 @@
 Neither output changes the production selection policy, authority or any action; they are presentation and
 research fields that sit next to them.
 
-Same thesis. Two candidate sides monetise the same match thesis when their payoffs are strongly correlated under
+Same thesis. A candidate side re-expresses another's match thesis when their payoffs are strongly correlated under
 the model's joint distribution. The joint is exact and cheap at reprice time: the board stores the mean
 full-time score grid, and the world-independent timing kernel (kernel.cell_kernel) extends it to
-(h, a, h1, a1, first scorer), where every supported contract is an indicator (cells.cell_indicator). phi >= 0.5 links
-two sides; groups are the connected components (single linkage). A group's anchor script is the script with the
+(h, a, h1, a1, first scorer), where every supported contract is an indicator (cells.cell_indicator). Groups are
+formed in rank order: a side joins the first group whose best expression it tracks with phi >= 0.5, else it leads a
+new group (leader grouping; single linkage chained 16-17 weakly related sides on the first live board). A group's
+anchor script is the script with the
 largest summed positive edge contribution across its members - the "match thesis" the group expresses.
 
 Robust ranking (lexicographic, no composite score):
@@ -119,24 +121,22 @@ def thesis_groups(
         for a, i in enumerate(ok):
             for b, j in enumerate(ok):
                 phi[i, j] = sub[a, b]
-    parent = list(range(n))
-
-    def find(x: int) -> int:
-        while parent[x] != x:
-            parent[x] = parent[parent[x]]
-            x = parent[x]
-        return x
-
-    for i in range(n):
-        for j in range(i + 1, n):
-            if phi[i, j] >= SAME_THESIS_PHI:
-                parent[find(i)] = find(j)
-    comps: dict[int, list[int]] = {}
-    for i in range(n):
-        comps.setdefault(find(i), []).append(i)
+    # leader grouping in rank order: a side joins the first group whose BEST expression it tracks
+    # (phi >= SAME_THESIS_PHI); otherwise it leads a new group. Every member is therefore a correlated
+    # re-expression of its group's best side (single linkage would chain weakly related sides together).
+    order = sorted(range(n), key=lambda i: rank_key(rows[i]))
+    leaders: list[int] = []
+    members_of: dict[int, list[int]] = {}
+    for i in order:
+        lead = next((ld for ld in leaders if phi[i, ld] >= SAME_THESIS_PHI), None)
+        if lead is None:
+            leaders.append(i)
+            members_of[i] = [i]
+        else:
+            members_of[lead].append(i)
     groups: list[dict[str, Any]] = []
     correlated: dict[str, dict[str, float]] = {}
-    ordered = sorted(comps.values(), key=lambda m: min(rank_key(rows[i]) for i in m))
+    ordered = [members_of[ld] for ld in leaders]
     for gi, members in enumerate(ordered, start=1):
         members = sorted(members, key=lambda i: rank_key(rows[i]))
         contrib = np.zeros(len(SCRIPT_IDS))
