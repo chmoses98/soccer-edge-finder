@@ -1,9 +1,9 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 19,
+  "MISSED_DISPATCHER_CLOSE": 24,
   "PINNACLE_VALID_CLOSE": 12,
-  "MISSED_DISPATCHER_CLOSE": 20,
-  "NO_SPORT_KEY": 18,
+  "NO_SPORT_KEY": 19,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 19,
   "PINNACLE_QUOTED_NOTHING": 15
  },
  "fixtures": {
@@ -102,6 +102,11 @@
    "close_horizon_delivered": false,
    "batch_id": null
   },
+  "fx:concacaf.nations_league:2026-27:nat.guf:nat.blz": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
+  },
   "fx:concacaf.nations_league:2026-27:nat.guf:nat.sxm": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -187,6 +192,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261002T234305Z"
   },
+  "fx:fifa.friendly:2026:nat.col:nat.per": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
+  },
   "fx:fifa.friendly:2026:nat.kor:nat.ven": {
    "state": "NO_SPORT_KEY",
    "close_horizon_delivered": true,
@@ -197,6 +207,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20260930T154305Z"
   },
+  "fx:fifa.friendly:2026:nat.mex:nat.chi": {
+   "state": "NO_SPORT_KEY",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261007T022123Z"
+  },
   "fx:fifa.friendly:2026:nat.mex:nat.per": {
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
@@ -205,6 +220,11 @@
   "fx:fifa.friendly:2026:nat.pan:nat.nzl": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:fifa.friendly:2026:nat.usa:nat.can": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
    "batch_id": null
   },
   "fx:fifa.friendly:2026:nat.usa:nat.chi": {
@@ -415,6 +435,11 @@
   "fx:uefa.nations_league:2026-27:nat.wal:nat.nor": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:usa.mls:2026:usa.chicago_fire:usa.vancouver_whitecaps": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
    "batch_id": null
   },
   "fx:usa.mls:2026:usa.ny_red_bulls:usa.st_louis_city": {

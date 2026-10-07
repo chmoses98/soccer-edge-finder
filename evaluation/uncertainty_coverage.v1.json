@@ -1,6 +1,6 @@
 {
  "schema": "uncertainty_coverage_v1",
- "generated_at": "2026-10-03T23:16:19.898716+00:00",
+ "generated_at": "2026-10-07T07:12:34.718727+00:00",
  "estimator": "grouped (bin by fair probability; realised rate vs the bin's mean interval)",
  "band": [
   0.7,
@@ -9,8 +9,8 @@
  "min_n": 30,
  "n_cells": 255,
  "verdict_counts": {
-  "WITHIN_BAND": 10,
-  "OUTSIDE_BAND": 28,
+  "WITHIN_BAND": 9,
+  "OUTSIDE_BAND": 29,
   "INSUFFICIENT": 19
  },
  "cells": [
@@ -4200,38 +4200,38 @@
    "worlds_version": "worlds_v1",
    "market_family": "match_result_3way",
    "horizon": "T-24h",
-   "n_settled": 30,
-   "mean_width": 0.23267200000000005,
+   "n_settled": 39,
+   "mean_width": 0.2320134102564102,
    "naive_outcome_inside_share": 0.0,
    "market_mid_inside_share": 1.0,
-   "n_with_market_mid": 30,
-   "grouped_coverage_80": 0.2,
+   "n_with_market_mid": 39,
+   "grouped_coverage_80": 0.2564102564102564,
    "bins": [
     {
      "bin": 2,
-     "n": 16,
-     "mean_pred": 0.2702,
-     "mean_obs": 0.125,
-     "mean_lo": 0.1815,
-     "mean_hi": 0.3676,
+     "n": 19,
+     "mean_pred": 0.2738,
+     "mean_obs": 0.1053,
+     "mean_lo": 0.19,
+     "mean_hi": 0.3654,
      "obs_inside": false
     },
     {
      "bin": 3,
-     "n": 6,
-     "mean_pred": 0.3384,
-     "mean_obs": 0.3333,
-     "mean_lo": 0.2208,
-     "mean_hi": 0.4659,
+     "n": 10,
+     "mean_pred": 0.3346,
+     "mean_obs": 0.3,
+     "mean_lo": 0.2118,
+     "mean_hi": 0.471,
      "obs_inside": true
     },
     {
      "bin": 4,
-     "n": 6,
-     "mean_pred": 0.4259,
-     "mean_obs": 0.6667,
-     "mean_lo": 0.276,
-     "mean_hi": 0.5836,
+     "n": 8,
+     "mean_pred": 0.4201,
+     "mean_obs": 0.75,
+     "mean_lo": 0.2715,
+     "mean_hi": 0.576,
      "obs_inside": false
     },
     {
@@ -4350,12 +4350,12 @@
    "worlds_version": "worlds_v1",
    "market_family": "match_result_3way",
    "horizon": "any",
-   "n_settled": 87,
-   "mean_width": 0.2286569770114943,
+   "n_settled": 96,
+   "mean_width": 0.22876583333333333,
    "naive_outcome_inside_share": 0.0,
    "market_mid_inside_share": 1.0,
-   "n_with_market_mid": 87,
-   "grouped_coverage_80": 0.8620689655172413,
+   "n_with_market_mid": 96,
+   "grouped_coverage_80": 0.3645833333333333,
    "bins": [
     {
      "bin": 1,
@@ -4368,29 +4368,29 @@
     },
     {
      "bin": 2,
-     "n": 46,
-     "mean_pred": 0.2689,
-     "mean_obs": 0.1957,
-     "mean_lo": 0.183,
-     "mean_hi": 0.3619,
-     "obs_inside": true
+     "n": 49,
+     "mean_pred": 0.2704,
+     "mean_obs": 0.1837,
+     "mean_lo": 0.1862,
+     "mean_hi": 0.3614,
+     "obs_inside": false
     },
     {
      "bin": 3,
-     "n": 14,
-     "mean_pred": 0.3494,
-     "mean_obs": 0.4286,
-     "mean_lo": 0.2164,
-     "mean_hi": 0.4934,
+     "n": 18,
+     "mean_pred": 0.3449,
+     "mean_obs": 0.3889,
+     "mean_lo": 0.2124,
+     "mean_hi": 0.4901,
      "obs_inside": true
     },
     {
      "bin": 4,
-     "n": 15,
-     "mean_pred": 0.4312,
-     "mean_obs": 0.4,
-     "mean_lo": 0.2821,
-     "mean_hi": 0.5877,
+     "n": 17,
+     "mean_pred": 0.4278,
+     "mean_obs": 0.4706,
+     "mean_lo": 0.2793,
+     "mean_hi": 0.5837,
      "obs_inside": true
     },
     {
@@ -4412,8 +4412,8 @@
      "obs_inside": false
     }
    ],
-   "verdict": "WITHIN_BAND",
-   "direction": "ok"
+   "verdict": "OUTSIDE_BAND",
+   "direction": "too_narrow"
   },
   {
    "model_family": "data_only.world_sim_v2",

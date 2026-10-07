@@ -1,6 +1,6 @@
-# settle-evaluate 2026-10-03 23:14Z
+# settle-evaluate 2026-10-07 07:11Z
 
-- newly settled: 4062
+- newly settled: 9
 - cells evaluated: 236
 - authority proposals: 21
 
@@ -102,11 +102,11 @@
 | data_only.world_sim_v2 | handicap | any | 84 | 0.58468 | 0.61919 | 0.1909 | 0.0 | 0.0041 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-12h | 3 | 0.51737 | None | 0.3866 | None | None | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-15m | 3 | 0.72164 | None | 0.2924 | None | 0.0033 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | match_result_3way | T-24h | 30 | 0.55825 | 0.54548 | 0.157 | 0.2 | -0.0013 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | match_result_3way | T-24h | 39 | 0.55453 | 0.57145 | 0.182 | 0.256 | -0.0013 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-2h | 18 | 0.54324 | 0.56011 | 0.1208 | None | 0.0086 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-60m | 3 | 0.72164 | None | 0.2924 | None | 0.0083 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-6h | 30 | 0.55285 | 0.56565 | 0.1711 | 0.7 | 0.0087 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | match_result_3way | any | 87 | 0.56314 | 0.56923 | 0.1042 | 0.862 | 0.0064 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | match_result_3way | any | 96 | 0.56117 | 0.57756 | 0.103 | 0.365 | 0.0064 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | second_half_result | T-2h | 3 | 0.38963 | None | 0.3108 | None | 0.0167 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | second_half_result | T-6h | 3 | 0.38963 | None | 0.3108 | None | 0.0083 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | second_half_result | any | 6 | 0.38963 | None | 0.3108 | None | 0.0125 | RESEARCH_ONLY |

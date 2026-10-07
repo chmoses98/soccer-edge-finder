@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-03T23:16:10.913589+00:00",
+  "as_of": "2026-10-07T07:12:26.988263+00:00",
   "cells": [
     {
       "cell": {
@@ -385,34 +385,34 @@
         "market_family": "match_result_3way",
         "model_family": "data_only.world_sim_v2"
       },
-      "due": 33,
+      "due": 42,
       "failed_gates": [
+        "integrity:missing_close_rate",
         "clv:min_selected_sides",
         "clv:min_fixtures",
         "clv:lower_bound_not_positive",
         "clv:mean_below_1pt",
         "clv:sign_not_stable",
         "kalshi:no_close_observations",
-        "prediction:worse_than_kalshi_mid",
         "prediction:no_reference_sample",
         "prediction:ece",
         "uncertainty:coverage_outside_band",
         "liquidity:no_depth_data"
       ],
       "metrics": {
-        "ece": 0.17784181818181818,
+        "ece": 0.1966202857142857,
         "fixtures": 0,
-        "interval_coverage_80": 0.18181818181818182,
-        "log_loss_kalshi_mid": 0.5389397276773745,
-        "log_loss_model": 0.5545379579763914,
-        "missing_close_rate": 0.0,
+        "interval_coverage_80": 0.23809523809523808,
+        "log_loss_kalshi_mid": 0.5644598310916614,
+        "log_loss_model": 0.5518774336175359,
+        "missing_close_rate": 0.2142857142857143,
         "selected_sides": 0,
         "settlement_rate": 1.0,
         "sharp_reference_available": true,
         "true_close_share": 1.0
       },
       "n_failed_gates": 11,
-      "settled": 33,
+      "settled": 42,
       "verdict": "NOT_ELIGIBLE"
     },
     {
