@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-06T21:02:23.802107+00:00",
-  "events": 585,
-  "events_skipped_unmapped": 320,
-  "fixtures_mapped": 265,
+  "as_of": "2026-10-07T01:37:55.018278+00:00",
+  "events": 536,
+  "events_skipped_unmapped": 262,
+  "fixtures_mapped": 274,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=26"
+      "weather_stopped:consecutive_failures:skipped=27"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 28,
-    "events": 28,
+    "captured": 20,
+    "events": 20,
     "failures": [],
-    "published_post": 12,
-    "published_pre_kickoff": 0,
+    "published_post": 7,
+    "published_pre_kickoff": 1,
     "unchanged": 0,
-    "unpublished": 16
+    "unpublished": 12
   },
   "map_proposals": {
     "concacaf.nations.league": {
@@ -102,26 +102,20 @@
       "ambiguous": {},
       "proposed": {},
       "unresolved": {
-        "131403": "Atl\u00e9tico Calatayud",
         "131412": "Maracena",
         "131419": "Atl\u00e9tico Melilla",
         "133831": "Sporting Hortaleza",
         "133832": "Atl\u00e9tico Pinatarense",
         "133833": "Atl\u00e9tico Uni\u00f3n G\u00fc\u00edmar",
         "133836": "CD San Jos\u00e9",
-        "133838": "CD Tede\u00f3n",
         "133840": "CF San Rafael",
         "133841": "CP Talayuela",
         "133842": "Ribadesella",
         "133843": "Sporting de Alc\u00e1zar",
-        "133844": "UB Lebrijana",
         "133846": "Tavernes de la Valldigna",
         "133847": "Auriense Cented Academy",
         "133850": "SD Noja",
-        "133851": "Ceuta 6 de Junio",
-        "18334": "AE Prat",
-        "20776": "Anaitasuna",
-        "22372": "CD Bazt\u00e1n"
+        "18334": "AE Prat"
       }
     },
     "fifa.friendly": {
@@ -130,7 +124,6 @@
       "unresolved": {
         "204": "Bolivia",
         "2844": "Benin",
-        "2845": "Burkina Faso",
         "2848": "Kenya",
         "2849": "Mali",
         "2850": "Congo DR",
@@ -139,15 +132,11 @@
         "4385": "India",
         "4388": "Lebanon",
         "454": "Russia",
-        "4862": "Fiji",
-        "4864": "Vanuatu",
         "5534": "Mauritius",
-        "5775": "Djibouti",
         "5782": "Sri Lanka",
         "658": "China",
         "6723": "Tajikistan",
         "6724": "Kyrgyz Republic",
-        "6725": "Namibia",
         "7368": "Gambia",
         "8601": "Comoros",
         "8937": "Niger"
@@ -170,7 +159,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 69,
+  "results_appended": 63,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -199,32 +188,25 @@
     "usa.usl.1"
   ],
   "unmapped_team_ids": {
-    "131403": "Atl\u00e9tico Calatayud",
     "131412": "Maracena",
     "131419": "Atl\u00e9tico Melilla",
     "133831": "Sporting Hortaleza",
     "133832": "Atl\u00e9tico Pinatarense",
     "133833": "Atl\u00e9tico Uni\u00f3n G\u00fc\u00edmar",
     "133836": "CD San Jos\u00e9",
-    "133838": "CD Tede\u00f3n",
     "133840": "CF San Rafael",
     "133841": "CP Talayuela",
     "133842": "Ribadesella",
     "133843": "Sporting de Alc\u00e1zar",
-    "133844": "UB Lebrijana",
     "133846": "Tavernes de la Valldigna",
     "133847": "Auriense Cented Academy",
     "133850": "SD Noja",
-    "133851": "Ceuta 6 de Junio",
     "18334": "AE Prat",
     "204": "Bolivia",
-    "20776": "Anaitasuna",
     "21922": "Sabah FK",
-    "22372": "CD Bazt\u00e1n",
     "2645": "US Virgin Islands",
     "2665": "Turks and Caicos Islands",
     "2844": "Benin",
-    "2845": "Burkina Faso",
     "2848": "Kenya",
     "2849": "Mali",
     "2850": "Congo DR",
@@ -233,32 +215,28 @@
     "4385": "India",
     "4388": "Lebanon",
     "454": "Russia",
-    "4862": "Fiji",
-    "4864": "Vanuatu",
     "510": "Viking FK",
     "5534": "Mauritius",
-    "5775": "Djibouti",
     "5782": "Sri Lanka",
     "658": "China",
     "6723": "Tajikistan",
     "6724": "Kyrgyz Republic",
-    "6725": "Namibia",
     "7368": "Gambia",
     "8601": "Comoros",
     "8937": "Niger"
   },
   "weather": {
-    "captured": 6,
+    "captured": 5,
     "events": 35,
     "failures": [
-      "401841250: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-12.9756&longitude=-38.4910&hourly=",
-      "401841257: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rio%20de%20Janeiro&count=5&lang",
-      "401841249: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-19.9208&longitude=-43.9378&hourly="
+      "401841255: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-30.0328&longitude=-51.2302&hourly=",
+      "401841253: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bragan\u00e7a%20Paulista&count=5&lan",
+      "401841252: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bel\u00e9m&count=5&language=en&forma"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 26,
+    "skipped": 27,
     "stopped": "consecutive_failures"
   }
 }
