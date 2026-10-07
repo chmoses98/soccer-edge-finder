@@ -1,22 +1,32 @@
 {
-  "as_of": "2026-10-03T21:26:05.098134+00:00",
-  "events": 1,
+  "as_of": "2026-10-07T02:23:58.037925+00:00",
+  "events": 0,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 1,
+  "fixtures_mapped": 0,
   "health": {
-    "reasons": [],
-    "state": "HEALTHY"
+    "reasons": [
+      "no_events_returned"
+    ],
+    "state": "DEGRADED"
   },
   "leagues": [
-    "bra.1"
+    "concacaf.nations.league",
+    "fifa.friendly",
+    "fifa.worldq.afc",
+    "fifa.worldq.caf",
+    "fifa.worldq.concacaf",
+    "fifa.worldq.conmebol",
+    "fifa.worldq.uefa",
+    "uefa.euroq",
+    "uefa.nations"
   ],
   "lineups": {
     "captured": 0,
-    "events": 1,
+    "events": 0,
     "failures": [],
     "published_post": 0,
-    "published_pre_kickoff": 1,
-    "unchanged": 1,
+    "published_pre_kickoff": 0,
+    "unchanged": 0,
     "unpublished": 0
   },
   "map_proposals": {},
@@ -24,12 +34,12 @@
   "results_appended": 0,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
-  "scoreboard_queries": 1,
+  "scoreboard_queries": 9,
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 1,
-    "events": 1,
+    "captured": 0,
+    "events": 0,
     "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 0,
