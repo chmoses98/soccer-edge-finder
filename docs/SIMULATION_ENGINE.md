@@ -97,3 +97,14 @@ full-time families analytically. `soccer run` and the dispatcher's fast run ther
 model did not meet its acceptance). Every record carries `engine_version` and `model_family`
 (`data_only.world_sim_v2` for records priced by the new engine), so archived v1 records stay
 distinguishable and the switch is reversible by flag (`--engine-version minute_engine_v1`).
+
+
+## Joint coherence note (2026-10-07, game-script audit)
+
+In `world_sim_v2` the first-scorer draw (`h/(h+a)`) and the first-goal minute are drawn independently of the
+half-time split. Each marginal is exact, so every single-contract price is right, but the joint is not: a draw can
+carry a 0-1 half-time score and a home first goal. Draw-level correlations between first-scorer and half-time
+contracts (the production expression reducer) inherit this. The game-script layer does not use the draws: it uses
+the exact timing kernel (half-time split binomial, first scorer exchangeable within the half), which is coherent
+(docs/GAME_SCRIPTS.md section 3). Making the engine coherent would re-draw first-scorer arrays (same distribution,
+different Monte Carlo realisations) and belongs in a versioned engine change.

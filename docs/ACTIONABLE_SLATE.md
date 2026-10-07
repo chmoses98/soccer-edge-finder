@@ -189,3 +189,11 @@ failing.
 
 None. Optional: Actions → **REFRESH SOCCER SLATE** → Run workflow, when a current slate is wanted right now
 (the chain keeps it current automatically while a fixture is within 12 h).
+
+## 11. Game scripts on the slate (2026-10-07, schema 1.1.0, additive)
+
+Every reprice also computes, from the board's cached script conditionals and the side's break-even, a
+`script_robustness` block per contract side (label, conditional edges per script, stances, weighted support,
+counter-case, thesis group, robust rank) and a `scripts` summary per fixture (shares, primary/secondary, robust /
+mixed / script-specific research edges, thesis groups, best robust expression, `no_compelling_edge`). Zero
+simulations; actions, authority and the selection policy are unchanged. Full detail: `docs/GAME_SCRIPTS.md`.

@@ -121,6 +121,16 @@ slate `slate-20261002T172404Z-39df8c`, run `run-20261002T142020Z-e11a59`: 37 eve
 * `linkage.apply_links` returns a copy; an easy mistake is to ignore the return value (the adapter
   rebinds the list).
 
+## Soccer script engine in the explorer (2026-10-07)
+
+Every v1 event's `explorer/events/<evt>.json` carries `extensions.soccer_script_engine`
+(`soccer_script_engine.v1`): glance, script cards, survivability at the slate price, the script x market
+matrix, matchup, context, lineup re-scripting, data confidence, data gaps, freshness, authority, provenance. It is
+built from `runs/latest.model_board.v1.json` and `runs/latest.actionable_slate.v1.json` of the same merged tree,
+held under 75 KB (deep evidence trimmed in a fixed, recorded order). `markets.json` items carry a compact
+`extensions.script_robustness` per side and `events.json` items `extensions.slate.scripts`. No contract change:
+`event_research.extensions` is the shared contract's sport-specific slot. Spec: `docs/GAME_SCRIPTS.md`.
+
 ## Research explorer (`app/latest/explorer`, contract 1.1.0)
 
 `soccer research-export` (`src/soccer_edge/research_export.py`, wrapper `scripts/research_export.py`)
