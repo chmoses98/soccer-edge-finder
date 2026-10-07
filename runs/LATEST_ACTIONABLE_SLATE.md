@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261007T201056Z-5a430f` · generated 2026-10-07T20:10:56.158080Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261007T202534Z-1f5d19` · generated 2026-10-07T20:25:34.143072Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-07T20:08:35.676932Z (CURRENT at publish; CURRENT until 2026-10-07T20:28:35.676932Z, STALE after 2026-10-07T20:38:35.676932Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-07T20:23:02.936819Z (CURRENT at publish; CURRENT until 2026-10-07T20:43:02.936819Z, STALE after 2026-10-07T20:53:02.936819Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-07T19:10:29.071971Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.22s
+model board generated 2026-10-07T19:10:29.071971Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.34s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,12 +12,12 @@ model board generated 2026-10-07T19:10:29.071971Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-07T22:30:00Z | Red Bull Bragantino vs Mirassol (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-07T22:30:00Z | Internacional vs Corinthians (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-07T22:30:00Z | Remo vs Grêmio (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-07T23:00:00Z | Vitória vs Chapecoense (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-07T23:30:00Z | Botafogo vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-08T00:30:00Z | Cruzeiro vs São Paulo (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-07T22:30:00Z | Red Bull Bragantino vs Mirassol (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-07T22:30:00Z | Internacional vs Corinthians (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-07T22:30:00Z | Remo vs Grêmio (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-07T23:00:00Z | Vitória vs Chapecoense (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-07T23:30:00Z | Botafogo vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-08T00:30:00Z | Cruzeiro vs São Paulo (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-08T22:30:00Z | Santos vs Flamengo (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-08T23:00:00Z | Athletico Paranaense vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-09T00:30:00Z | Fluminense vs Coritiba (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
