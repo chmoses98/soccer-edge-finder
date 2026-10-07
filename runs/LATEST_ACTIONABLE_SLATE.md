@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261007T212526Z-807070` · generated 2026-10-07T21:25:26.142328Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261007T212902Z-c0a19b` · generated 2026-10-07T21:29:02.692440Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-07T21:23:02.393023Z (CURRENT at publish; CURRENT until 2026-10-07T21:43:02.393023Z, STALE after 2026-10-07T21:53:02.393023Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-07T21:26:26.898994Z (CURRENT at publish; CURRENT until 2026-10-07T21:46:26.898994Z, STALE after 2026-10-07T21:56:26.898994Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-07T20:48:27.974644Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.22s
+model board generated 2026-10-07T21:29:01.030322Z · simulations this update: 3 · Odds API calls this update: 1 (credits 3) · reprice 0.22s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,9 +12,9 @@ model board generated 2026-10-07T20:48:27.974644Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-07T22:30:00Z | Red Bull Bragantino vs Mirassol (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-07T22:30:00Z | Internacional vs Corinthians (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-07T22:30:00Z | Remo vs Grêmio (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-07T22:30:00Z | Red Bull Bragantino vs Mirassol (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
+| 2026-10-07T22:30:00Z | Internacional vs Corinthians (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
+| 2026-10-07T22:30:00Z | Remo vs Grêmio (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
 | 2026-10-07T23:00:00Z | Vitória vs Chapecoense (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-07T23:30:00Z | Botafogo vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-08T00:30:00Z | Cruzeiro vs São Paulo (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -51,9 +51,9 @@ model board generated 2026-10-07T20:48:27.974644Z · simulations this update: 0 
 
 ```
 action_NO_EDGE: 281
-action_NO_QUOTE: 647
+action_NO_QUOTE: 557
 action_RESEARCH_CANDIDATE: 16
-contract_sides: 944
+contract_sides: 854
 fixtures: 13
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
