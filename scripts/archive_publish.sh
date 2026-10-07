@@ -108,8 +108,10 @@ PY
   else
     echo "archive: soccer_edge not importable; manifest/verify skipped"
   fi
-  # size guard: refuse files > 45 MB (GH001 lesson)
-  if ( cd "$WORK" && find "$DEST" -type f -size +45M | grep -q . ); then echo "::error::file over 45MB in archive payload"; ( cd "$WORK" && find "$DEST" -type f -size +45M ); return 1; fi
+  # size guard: refuse files > 45 MB (GH001 lesson). Only tracked payload files count: with DEST="." the
+  # clone's own .git pack (the shallow history, > 45 MB since 2026-10-04) is not a file we commit, and
+  # scanning it failed every RUN SOCCER publish from 2026-10-04 to 2026-10-07.
+  if ( cd "$WORK" && find "$DEST" -path "$DEST/.git" -prune -o -type f -size +45M -print | grep -q . ); then echo "::error::file over 45MB in archive payload"; ( cd "$WORK" && find "$DEST" -path "$DEST/.git" -prune -o -type f -size +45M -print ); return 1; fi
   ( cd "$WORK" && git add -- "$DEST" )
 }
 apply_payload || exit 1
