@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261007T232834Z-6920d8` · generated 2026-10-07T23:28:34.538289Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261007T234328Z-2284eb` · generated 2026-10-07T23:43:28.515876Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-07T23:26:03.377481Z (CURRENT at publish; CURRENT until 2026-10-07T23:46:03.377481Z, STALE after 2026-10-07T23:56:03.377481Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-07T23:41:03.382553Z (CURRENT at publish; CURRENT until 2026-10-08T00:01:03.382553Z, STALE after 2026-10-08T00:11:03.382553Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-07T23:28:33.667181Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.15s
+model board generated 2026-10-07T23:28:33.667181Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.14s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,6 @@ model board generated 2026-10-07T23:28:33.667181Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-07T23:30:00Z | Botafogo vs Vasco da Gama (bra.serie_a) | INVALIDATED: lineup_changed:revised:confirmed | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
 | 2026-10-08T00:30:00Z | Cruzeiro vs São Paulo (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
 | 2026-10-08T22:30:00Z | Santos vs Flamengo (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-08T23:00:00Z | Athletico Paranaense vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -34,16 +33,15 @@ model board generated 2026-10-07T23:28:33.667181Z · simulations this update: 1 
 ## Counts
 
 ```
-action_MODEL_INVALIDATED: 28
 action_NO_EDGE: 153
 action_NO_QUOTE: 467
 action_RESEARCH_CANDIDATE: 4
-contract_sides: 652
-fixtures: 9
-fixtures_model_invalidated: 1
+contract_sides: 624
+fixtures: 8
+fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
-Removed (kicked off): 4
+Removed (kicked off): 2
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
