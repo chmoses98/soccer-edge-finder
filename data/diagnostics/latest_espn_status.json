@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-07T01:37:55.018278+00:00",
-  "events": 536,
-  "events_skipped_unmapped": 262,
+  "as_of": "2026-10-07T08:47:53.054159+00:00",
+  "events": 535,
+  "events_skipped_unmapped": 261,
   "fixtures_mapped": 274,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=27"
+      "weather_stopped:consecutive_failures:skipped=22"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 20,
-    "events": 20,
+    "captured": 11,
+    "events": 11,
     "failures": [],
-    "published_post": 7,
-    "published_pre_kickoff": 1,
+    "published_post": 0,
+    "published_pre_kickoff": 0,
     "unchanged": 0,
-    "unpublished": 12
+    "unpublished": 11
   },
   "map_proposals": {
     "concacaf.nations.league": {
@@ -159,7 +159,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 63,
+  "results_appended": 68,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -226,17 +226,17 @@
     "8937": "Niger"
   },
   "weather": {
-    "captured": 5,
-    "events": 35,
+    "captured": 6,
+    "events": 31,
     "failures": [
-      "401841255: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-30.0328&longitude=-51.2302&hourly=",
-      "401841253: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bragan\u00e7a%20Paulista&count=5&lan",
-      "401841252: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bel\u00e9m&count=5&language=en&forma"
+      "401841253: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-22.9527&longitude=-46.5442&hourly=",
+      "401841252: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bel\u00e9m&count=5&language=en&forma",
+      "401841250: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Salvador&count=5&language=en&fo"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 27,
+    "skipped": 22,
     "stopped": "consecutive_failures"
   }
 }
