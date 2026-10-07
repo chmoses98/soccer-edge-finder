@@ -55,7 +55,7 @@
           "title": "Observed At"
         },
         "schema_version": {
-          "default": "1.0.0",
+          "default": "1.1.0",
           "title": "Schema Version",
           "type": "string"
         },
@@ -87,6 +87,329 @@
         "status"
       ],
       "title": "InputFreshnessV1",
+      "type": "object"
+    },
+    "ScriptCounterCaseV1": {
+      "additionalProperties": false,
+      "description": "The strongest opposing MATERIAL script for a contract side at the current price.",
+      "properties": {
+        "contribution": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "share x conditional edge",
+          "title": "Contribution"
+        },
+        "edge": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "P(this side | script) - break-even",
+          "title": "Edge"
+        },
+        "p": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "P(this side | script)",
+          "title": "P"
+        },
+        "reason_code": {
+          "enum": [
+            "SCRIPT_SETTLES_AGAINST",
+            "BELOW_BREAKEVEN",
+            "NO_MATERIAL_OPPOSITION"
+          ],
+          "title": "Reason Code",
+          "type": "string"
+        },
+        "schema_version": {
+          "default": "1.1.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "script": {
+          "title": "Script",
+          "type": "string"
+        },
+        "share": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Share"
+        },
+        "statement": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Statement"
+        }
+      },
+      "required": [
+        "script",
+        "reason_code"
+      ],
+      "title": "ScriptCounterCaseV1",
+      "type": "object"
+    },
+    "ScriptRobustnessV1": {
+      "additionalProperties": false,
+      "description": "Script survivability of one contract side at the CURRENT executable price (gamescript/survivability.py).\nComputed by the reprice from cached P(contract | script) - no simulation. Research presentation only: it\nnever changes `action`, authority or the selection policy.",
+      "properties": {
+        "category": {
+          "enum": [
+            "ROBUST_ACROSS_SCRIPTS",
+            "MIXED",
+            "SCRIPT_SPECIFIC_UPSIDE",
+            "NO_EDGE"
+          ],
+          "title": "Category",
+          "type": "string"
+        },
+        "conditional_edges": {
+          "description": "per script, in the fixture's `scripts` order",
+          "items": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title": "Conditional Edges",
+          "type": "array"
+        },
+        "counter_case": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ScriptCounterCaseV1"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "decomposition_residual": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "p_script - model_probability: 0 for analytic families, Monte Carlo error otherwise",
+          "title": "Decomposition Residual"
+        },
+        "edge_concentration": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Edge Concentration"
+        },
+        "edge_ex_top_script": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Edge Ex Top Script"
+        },
+        "label": {
+          "enum": [
+            "VERY_ROBUST",
+            "ROBUST",
+            "MIXED",
+            "FRAGILE",
+            "SCRIPT_DEPENDENT",
+            "NO_EDGE"
+          ],
+          "title": "Label",
+          "type": "string"
+        },
+        "material_scripts": {
+          "default": 0,
+          "title": "Material Scripts",
+          "type": "integer"
+        },
+        "neutral_scripts": {
+          "default": 0,
+          "title": "Neutral Scripts",
+          "type": "integer"
+        },
+        "opposing_scripts": {
+          "default": 0,
+          "title": "Opposing Scripts",
+          "type": "integer"
+        },
+        "overall_edge": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "P(side) on the script basis - break-even (= sum of share x conditional edge)",
+          "title": "Overall Edge"
+        },
+        "p_script": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "P(side) on the exact script basis",
+          "title": "P Script"
+        },
+        "robust_rank": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "1 = best research expression of the fixture (gamescript/expressions.py)",
+          "title": "Robust Rank"
+        },
+        "schema_version": {
+          "default": "1.1.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "stance": {
+          "default": "",
+          "description": "one character per script: S supports, O opposes, N neutral, - immaterial",
+          "title": "Stance",
+          "type": "string"
+        },
+        "strongest_support": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Strongest Support"
+        },
+        "supporting_scripts": {
+          "default": 0,
+          "title": "Supporting Scripts",
+          "type": "integer"
+        },
+        "thesis_group": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "same-thesis group id (research edges only; payoff phi >= 0.5)",
+          "title": "Thesis Group"
+        },
+        "weighted_oppose_share": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Weighted Oppose Share"
+        },
+        "weighted_support_share": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Weighted Support Share"
+        },
+        "worst_material_script": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Worst Material Script"
+        }
+      },
+      "required": [
+        "label",
+        "category"
+      ],
+      "title": "ScriptRobustnessV1",
       "type": "object"
     },
     "SlateComputeV1": {
@@ -154,7 +477,7 @@
           "type": "number"
         },
         "schema_version": {
-          "default": "1.0.0",
+          "default": "1.1.0",
           "title": "Schema Version",
           "type": "string"
         },
@@ -596,9 +919,20 @@
           "type": "string"
         },
         "schema_version": {
-          "default": "1.0.0",
+          "default": "1.1.0",
           "title": "Schema Version",
           "type": "string"
+        },
+        "script_robustness": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ScriptRobustnessV1"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
         },
         "side": {
           "enum": [
@@ -649,6 +983,214 @@
         "freshness"
       ],
       "title": "SlateContractV1",
+      "type": "object"
+    },
+    "SlateFixtureScriptsV1": {
+      "additionalProperties": false,
+      "description": "Fixture-level script summary at this slate's prices. Shares are model (market-blind) values copied from\nthe board; edge lists depend on the current price. Keys are 'ticker|side'.",
+      "properties": {
+        "best_robust_expression": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Best Robust Expression"
+        },
+        "best_script_specific_expression": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Best Script Specific Expression"
+        },
+        "material": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Material",
+          "type": "array"
+        },
+        "mixed_edges": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Mixed Edges",
+          "type": "array"
+        },
+        "no_compelling_edge": {
+          "default": true,
+          "title": "No Compelling Edge",
+          "type": "boolean"
+        },
+        "no_compelling_edge_reason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "No Compelling Edge Reason"
+        },
+        "priced_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Kalshi observation the edges use",
+          "title": "Priced At"
+        },
+        "primary": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Primary"
+        },
+        "reason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reason"
+        },
+        "research_edge_min": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Research Edge Min"
+        },
+        "robust_edges": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Robust Edges",
+          "type": "array"
+        },
+        "schema_version": {
+          "default": "1.1.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "script_specific_edges": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Script Specific Edges",
+          "type": "array"
+        },
+        "scripts": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Scripts",
+          "type": "array"
+        },
+        "secondary": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Secondary"
+        },
+        "shares": {
+          "items": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title": "Shares",
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "OK",
+            "UNAVAILABLE"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "survivability_version": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Survivability Version"
+        },
+        "taxonomy_version": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Taxonomy Version"
+        },
+        "thesis_groups": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Thesis Groups",
+          "type": "array"
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "title": "SlateFixtureScriptsV1",
       "type": "object"
     },
     "SlateFixtureV1": {
@@ -719,9 +1261,20 @@
           "$ref": "#/$defs/SlateReferenceStateV1"
         },
         "schema_version": {
-          "default": "1.0.0",
+          "default": "1.1.0",
           "title": "Schema Version",
           "type": "string"
+        },
+        "scripts": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SlateFixtureScriptsV1"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
         }
       },
       "required": [
@@ -791,7 +1344,7 @@
           "type": "number"
         },
         "schema_version": {
-          "default": "1.0.0",
+          "default": "1.1.0",
           "title": "Schema Version",
           "type": "string"
         }
@@ -832,7 +1385,7 @@
           "title": "Last Change At"
         },
         "schema_version": {
-          "default": "1.0.0",
+          "default": "1.1.0",
           "title": "Schema Version",
           "type": "string"
         },
@@ -916,7 +1469,7 @@
           "title": "Parameter Hash"
         },
         "schema_version": {
-          "default": "1.0.0",
+          "default": "1.1.0",
           "title": "Schema Version",
           "type": "string"
         },
@@ -1024,7 +1577,7 @@
           "title": "Role"
         },
         "schema_version": {
-          "default": "1.0.0",
+          "default": "1.1.0",
           "title": "Schema Version",
           "type": "string"
         }
@@ -1154,7 +1707,7 @@
       "type": "array"
     },
     "schema_version": {
-      "default": "1.0.0",
+      "default": "1.1.0",
       "title": "Schema Version",
       "type": "string"
     },

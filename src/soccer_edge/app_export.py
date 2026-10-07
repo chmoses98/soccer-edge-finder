@@ -408,6 +408,17 @@ def _event_extensions(ev: EventV1 | None, fx: SlateFixtureV1 | None) -> dict[str
             "contracts_without_model": fx.contracts_without_model,
             "best_expressions": list(fx.best_expressions),
         }
+        if fx.scripts is not None and fx.scripts.status == "OK":
+            ext["scripts"] = {
+                "taxonomy_version": fx.scripts.taxonomy_version,
+                "scripts": list(fx.scripts.scripts),
+                "shares": list(fx.scripts.shares),
+                "primary": fx.scripts.primary,
+                "secondary": fx.scripts.secondary,
+                "best_robust_expression": fx.scripts.best_robust_expression,
+                "no_compelling_edge": fx.scripts.no_compelling_edge,
+                "detail": "explorer event_research.extensions.soccer_script_engine",
+            }
     return ext
 
 
@@ -442,6 +453,21 @@ def _market(
         "best_expression": any(r.best_expression for r in rows.values()),
         "kalshi_freshness": any_row.freshness.get("kalshi"),
     }
+    sr = {
+        s: {
+            "label": r.script_robustness.label,
+            "category": r.script_robustness.category,
+            "overall_edge": r.script_robustness.overall_edge,
+            "weighted_support_share": r.script_robustness.weighted_support_share,
+            "stance": r.script_robustness.stance,
+        }
+        for s, r in sorted(rows.items())
+        if r.script_robustness is not None
+    }
+    if sr:
+        # compact survivability at this slate's price; full detail in the explorer event document
+        # (event_research.extensions.soccer_script_engine, docs/GAME_SCRIPTS.md)
+        ext["script_robustness"] = sr
     if period:
         ext["period"] = period
     return build.market(

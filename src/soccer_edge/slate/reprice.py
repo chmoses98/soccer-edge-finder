@@ -52,6 +52,7 @@ from soccer_edge.slate.observations import (
     lineup_observations,
     pinnacle_rows,
 )
+from soccer_edge.slate.scripts import contract_robustness, fixture_scripts
 
 SLATE_FILE = "runs/latest.actionable_slate.v1.json"
 SLATE_MD = "runs/LATEST_ACTIONABLE_SLATE.md"
@@ -281,6 +282,11 @@ def reprice(rc: RepriceContext) -> ActionableSlateV1:
                     complete=bool(view and view.complete),
                 )
                 p_side = _side(priced.fair_mean, side)
+                sr = (
+                    contract_robustness(e, c, side, float(ea.breakeven), float(p_side))
+                    if ea is not None
+                    else None
+                )
                 lo = priced.p_low if side == "yes" else 1 - priced.p_high
                 hi = priced.p_high if side == "yes" else 1 - priced.p_low
                 fx_contracts.append(
@@ -339,8 +345,15 @@ def reprice(rc: RepriceContext) -> ActionableSlateV1:
                         action_reasons=why,
                         action_valid_until=kal.current_until,
                         freshness=fr_map,  # type: ignore[arg-type]
+                        script_robustness=sr,
                     )
                 )
+        scripts_summary, fx_contracts = fixture_scripts(
+            e,
+            fx_contracts,
+            kalshi_status=kal.status if validity == "VALID" else "MODEL_INVALIDATED",
+            priced_at=view.observed_at if view is not None else None,
+        )
         best = _best_expressions(fx_contracts)
         fx_contracts = [
             c.model_copy(update={"best_expression": f"{c.ticker}|{c.side}" in best})
@@ -389,6 +402,7 @@ def reprice(rc: RepriceContext) -> ActionableSlateV1:
                 contracts_priced=len(board_tickers),
                 contracts_without_model=len(unmodelled),
                 best_expressions=sorted(best),
+                scripts=scripts_summary,
             )
         )
     # fixtures with Kalshi markets that the board has no model for (new listing, or out of the last window)

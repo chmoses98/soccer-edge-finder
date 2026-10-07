@@ -16,11 +16,11 @@ from datetime import datetime
 from decimal import Decimal
 from typing import Any, Literal
 
-from pydantic import Field
+from pydantic import Field, model_serializer
 
 from soccer_edge.contracts.v1 import AuthorityLevel, _Base
 
-SLATE_CONTRACT_VERSION = "1.0.0"
+SLATE_CONTRACT_VERSION = "1.1.0"  # 1.1.0: additive game-script fields (docs/GAME_SCRIPTS.md)
 
 FreshnessState = Literal["CURRENT", "AGING", "STALE", "UNAVAILABLE"]
 ModelValidity = Literal["VALID", "INVALIDATED", "MISSING"]
@@ -101,6 +101,92 @@ class SlateReferenceStateV1(_SlateBase):
     freshness: InputFreshnessV1
 
 
+class ScriptCounterCaseV1(_SlateBase):
+    """The strongest opposing MATERIAL script for a contract side at the current price."""
+
+    script: str
+    share: float | None = None
+    p: float | None = Field(default=None, description="P(this side | script)")
+    edge: float | None = Field(default=None, description="P(this side | script) - break-even")
+    contribution: float | None = Field(default=None, description="share x conditional edge")
+    reason_code: Literal["SCRIPT_SETTLES_AGAINST", "BELOW_BREAKEVEN", "NO_MATERIAL_OPPOSITION"]
+    statement: str | None = None
+
+
+class ScriptRobustnessV1(_SlateBase):
+    """Script survivability of one contract side at the CURRENT executable price (gamescript/survivability.py).
+    Computed by the reprice from cached P(contract | script) - no simulation. Research presentation only: it
+    never changes `action`, authority or the selection policy."""
+
+    label: Literal["VERY_ROBUST", "ROBUST", "MIXED", "FRAGILE", "SCRIPT_DEPENDENT", "NO_EDGE"]
+    category: Literal["ROBUST_ACROSS_SCRIPTS", "MIXED", "SCRIPT_SPECIFIC_UPSIDE", "NO_EDGE"]
+    overall_edge: float | None = Field(
+        default=None,
+        description="P(side) on the script basis - break-even (= sum of share x conditional edge)",
+    )
+    p_script: float | None = Field(default=None, description="P(side) on the exact script basis")
+    decomposition_residual: float | None = Field(
+        default=None,
+        description="p_script - model_probability: 0 for analytic families, Monte Carlo error otherwise",
+    )
+    conditional_edges: list[float | None] = Field(
+        default_factory=list, description="per script, in the fixture's `scripts` order"
+    )
+    stance: str = Field(
+        default="",
+        description="one character per script: S supports, O opposes, N neutral, - immaterial",
+    )
+    material_scripts: int = 0
+    supporting_scripts: int = 0
+    opposing_scripts: int = 0
+    neutral_scripts: int = 0
+    weighted_support_share: float | None = None
+    weighted_oppose_share: float | None = None
+    worst_material_script: dict[str, Any] | None = None
+    edge_concentration: float | None = None
+    edge_ex_top_script: float | None = None
+    strongest_support: dict[str, Any] | None = None
+    counter_case: ScriptCounterCaseV1 | None = None
+    thesis_group: str | None = Field(
+        default=None, description="same-thesis group id (research edges only; payoff phi >= 0.5)"
+    )
+    robust_rank: int | None = Field(
+        default=None,
+        description="1 = best research expression of the fixture (gamescript/expressions.py)",
+    )
+
+    @model_serializer(mode="wrap")
+    def _compact(self, handler: Any) -> Any:
+        # one of these per contract side: unset (None) components are omitted, not written as null
+        d = handler(self)
+        return {k: v for k, v in d.items() if v is not None} if isinstance(d, dict) else d
+
+
+class SlateFixtureScriptsV1(_SlateBase):
+    """Fixture-level script summary at this slate's prices. Shares are model (market-blind) values copied from
+    the board; edge lists depend on the current price. Keys are 'ticker|side'."""
+
+    status: Literal["OK", "UNAVAILABLE"]
+    reason: str | None = None
+    taxonomy_version: str | None = None
+    survivability_version: str | None = None
+    scripts: list[str] = Field(default_factory=list)
+    shares: list[float | None] = Field(default_factory=list)
+    primary: str | None = None
+    secondary: str | None = None
+    material: list[str] = Field(default_factory=list)
+    research_edge_min: float | None = None
+    robust_edges: list[str] = Field(default_factory=list)
+    mixed_edges: list[str] = Field(default_factory=list)
+    script_specific_edges: list[str] = Field(default_factory=list)
+    thesis_groups: list[dict[str, Any]] = Field(default_factory=list)
+    best_robust_expression: str | None = None
+    best_script_specific_expression: str | None = None
+    no_compelling_edge: bool = True
+    no_compelling_edge_reason: str | None = None
+    priced_at: datetime | None = Field(default=None, description="Kalshi observation the edges use")
+
+
 class SlateFixtureV1(_SlateBase):
     fixture_id: str
     event_name: str
@@ -118,6 +204,7 @@ class SlateFixtureV1(_SlateBase):
         description="open Kalshi contracts mapped to this fixture's events that the cached model did not price",
     )
     best_expressions: list[str] = Field(default_factory=list, description="'ticker|side'")
+    scripts: SlateFixtureScriptsV1 | None = None
 
 
 class SlateContractV1(_SlateBase):
@@ -188,6 +275,7 @@ class SlateContractV1(_SlateBase):
     freshness: dict[str, FreshnessState] = Field(
         description="model / kalshi / reference / lineup / context state at publish"
     )
+    script_robustness: ScriptRobustnessV1 | None = None
 
 
 class SlateComputeV1(_SlateBase):

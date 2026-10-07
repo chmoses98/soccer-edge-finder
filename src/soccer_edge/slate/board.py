@@ -73,8 +73,10 @@ def contract_entry(
     side: str | None,
     line: Any,
     period: str | None,
+    k: int | None = None,
+    script: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
-    return {
+    out = {
         "event_ticker": event_ticker,
         "family": family,
         "side": side,
@@ -89,6 +91,15 @@ def contract_entry(
         "n_worlds": priced.n_worlds,
         "q": world_quantiles(priced.world_probs),
     }
+    if k is not None:
+        out["k"] = (
+            k  # packed exact score / player threshold: lets a reprice rebuild the settlement rule
+        )
+    if script is not None:
+        # P(YES | script) per script in the taxonomy order (gamescript/), its interval, and the exact P(YES)
+        # on the script basis (equal to `p` for analytic families; within Monte Carlo error otherwise)
+        out["sc"] = script
+    return out
 
 
 def fingerprint(inputs: dict[str, Any]) -> str:
@@ -113,6 +124,9 @@ def fixture_entry(
     lineup: dict[str, Any] | None,
     summary: dict[str, Any],
     contracts: dict[str, dict[str, Any]],
+    scripts: dict[str, Any] | None = None,
+    matchup: dict[str, Any] | None = None,
+    match_context: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     keep = (
         "p_home",
@@ -141,6 +155,10 @@ def fixture_entry(
         "lineup": lineup,
         "summary": {k: summary[k] for k in keep if k in summary},
         "contracts": contracts,
+        # model-time intelligence for the script engine / SIFT (all market-blind; docs/GAME_SCRIPTS.md)
+        "scripts": scripts,
+        "matchup": matchup,
+        "match_context": match_context,
     }
 
 
@@ -165,8 +183,15 @@ def merge_boards(*boards: dict[str, Any] | None, now: datetime) -> dict[str, Any
             continue
         for fid, e in (b.get("fixtures") or {}).items():
             cur = out["fixtures"].get(fid)
-            if cur is None or _dt(e["model_generated_at"]) >= _dt(cur["model_generated_at"]):
+            if cur is None:
                 out["fixtures"][fid] = e
+                continue
+            newer, older = (
+                (e, cur)
+                if _dt(e["model_generated_at"]) >= _dt(cur["model_generated_at"])
+                else (cur, e)
+            )
+            out["fixtures"][fid] = carry_lineup_history(newer, older)
     for fid in list(out["fixtures"]):
         e = out["fixtures"][fid]
         ko = _dt(e["inputs"].get("kickoff_utc"))
@@ -179,6 +204,52 @@ def merge_boards(*boards: dict[str, Any] | None, now: datetime) -> dict[str, Any
     out["generated_at"] = iso_utc(max(gens)) if gens else None
     out["fixtures"] = dict(sorted(out["fixtures"].items()))
     return out
+
+
+LINEUP_HISTORY_MAX = 4
+
+
+def model_snapshot(e: dict[str, Any]) -> dict[str, Any]:
+    """The pricing state of one board entry, small enough to keep as history (lineup re-scripting)."""
+    sc = e.get("scripts") or {}
+    snap = {
+        "model_generated_at": e.get("model_generated_at"),
+        "lineup_key": (e.get("inputs") or {}).get("lineup_key"),
+        "lineup_state": (e.get("lineup") or {}).get("state"),
+        "sim_key": e.get("sim_key"),
+        "summary": e.get("summary"),
+    }
+    if sc.get("status") == "OK":
+        snap["scripts"] = {
+            "taxonomy_version": sc.get("taxonomy_version"),
+            "shares": sc.get("shares"),
+            "primary": sc.get("primary"),
+            "secondary": sc.get("secondary"),
+        }
+    return snap
+
+
+def carry_lineup_history(newer: dict[str, Any], older: dict[str, Any]) -> dict[str, Any]:
+    """When a fixture's lineup input changed between two model states, keep the earlier state(s) on the newer
+    entry as `lineup_history` (oldest first) so a reader can show pre-lineup vs current scripts. Only genuine
+    model states are kept - nothing is reconstructed. Deterministic and order-safe like the merge itself."""
+    if newer is older:
+        return newer
+    hist = list(older.get("lineup_history") or [])
+    for h in newer.get("lineup_history") or []:
+        if h not in hist:
+            hist.append(h)
+    new_key = (newer.get("inputs") or {}).get("lineup_key")
+    old_key = (older.get("inputs") or {}).get("lineup_key")
+    if new_key != old_key:
+        snap = model_snapshot(older)
+        if snap not in hist:
+            hist.append(snap)
+    hist = sorted(hist, key=lambda h: h.get("model_generated_at") or "")
+    hist = [h for h in hist if h.get("model_generated_at") != newer.get("model_generated_at")]
+    if not hist:
+        return newer
+    return {**newer, "lineup_history": hist[-LINEUP_HISTORY_MAX:]}
 
 
 def load_board(*paths: Path, now: datetime) -> dict[str, Any]:
