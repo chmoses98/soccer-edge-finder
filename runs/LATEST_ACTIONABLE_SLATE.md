@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261007T174028Z-415a96` · generated 2026-10-07T17:40:28.710641Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261007T175519Z-e5b3f7` · generated 2026-10-07T17:55:19.012875Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-07T17:37:58.761215Z (CURRENT at publish; CURRENT until 2026-10-07T17:57:58.761215Z, STALE after 2026-10-07T18:07:58.761215Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-07T17:52:59.472305Z (CURRENT at publish; CURRENT until 2026-10-07T18:12:59.472305Z, STALE after 2026-10-07T18:22:59.472305Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-07T14:40:56.224405Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.17s
 
@@ -12,12 +12,12 @@ model board generated 2026-10-07T14:40:56.224405Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-07T22:30:00Z | Red Bull Bragantino vs Mirassol (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-07T22:30:00Z | Internacional vs Corinthians (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-07T22:30:00Z | Remo vs Grêmio (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-07T23:00:00Z | Vitória vs Chapecoense (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-07T23:30:00Z | Botafogo vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-08T00:30:00Z | Cruzeiro vs São Paulo (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-07T22:30:00Z | Red Bull Bragantino vs Mirassol (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-07T22:30:00Z | Internacional vs Corinthians (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-07T22:30:00Z | Remo vs Grêmio (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-07T23:00:00Z | Vitória vs Chapecoense (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-07T23:30:00Z | Botafogo vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-08T00:30:00Z | Cruzeiro vs São Paulo (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-08T22:30:00Z | Santos vs Flamengo (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-08T23:00:00Z | Athletico Paranaense vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-09T00:30:00Z | Fluminense vs Coritiba (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -34,8 +34,8 @@ model board generated 2026-10-07T14:40:56.224405Z · simulations this update: 0 
 | Botafogo vs Vasco da Gama | away wins by more than 1.5 | no | 0.8000 | 0.890 [0.811, 0.954] | +0.079 | +0.036 | 0.83 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Vasco da Gama | away wins by more than 2.5 | no | 0.9100 | 0.964 [0.929, 0.990] | +0.048 | +0.032 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Vitória vs Chapecoense | Result: home | no | 0.3650 | 0.516 [0.352, 0.674] | +0.135 | +0.027 | 0.39 | - | * | RESEARCH_CANDIDATE |
+| Vitória vs Chapecoense | Result: away | yes | 0.1450 | 0.253 [0.137, 0.379] | +0.100 | +0.016 | 0.16 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Vasco da Gama | home wins by more than 1.5 | yes | 0.1400 | 0.258 [0.131, 0.406] | +0.110 | +0.015 | 0.15 | - |  | RESEARCH_CANDIDATE |
-| Vitória vs Chapecoense | Result: away | yes | 0.1500 | 0.253 [0.137, 0.379] | +0.094 | +0.011 | 0.16 | - |  | RESEARCH_CANDIDATE |
 | Vitória vs Chapecoense | home wins by more than 1.5 | no | 0.6300 | 0.742 [0.590, 0.868] | +0.095 | +0.006 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | Athletico Paranaense vs Atlético Mineiro | home wins by more than 2.5 | yes | 0.0500 | 0.123 [0.042, 0.229] | +0.070 | +0.004 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Vasco da Gama | btts | no | 0.3800 | 0.483 [0.356, 0.605] | +0.087 | +0.003 | 0.38 | - | * | RESEARCH_CANDIDATE |
