@@ -278,6 +278,42 @@ publishes UNAVAILABLE · board block size bounds.
 * No empirical calibration of script frequencies yet (needs goal-minute history; ESPN scoreboards carry goal minutes).
 * Leg / aggregate / standings inputs are not supplied by the fixture feed; context fields say UNAVAILABLE.
 * Player markets: no production player layer; such contracts carry no script conditionals.
+* On a sim-cache hit the pre-existing expression reducer still re-simulates every fixture with a quoted side
+  (pipeline `fixtures_resimulated_for_reducer`); scripts never need it. Worth fixing separately.
 * Explorer survivability is as fresh as the last research export (gated at 60 min unless new events arrive); the
   payload's `freshness.market.current_until` says when to stop trusting it, and the matrix + fee model allow a
   client-side recompute at a live ask.
+
+## 16. Live proof (2026-10-07, production data-archive, this branch's workflows)
+
+1. **RUN SOCCER** `run-20261007T013102Z-b79365` (on the branch, exhaustive-reconciled fast
+   sweep, 96 h window): 59 real fixtures across Brasileirão, Premier League, La Liga, Ligue 1, Bundesliga, Serie A,
+   Liga MX, MLS, CONCACAF Nations League (French Guiana v Belize, neutral, INTERNATIONAL_COMPETITIVE) and an
+   international friendly (Mexico v Chile, FRIENDLY + NEUTRAL_SITE, data confidence LOW). No knockout / second-leg
+   fixture was listed, so those contexts are covered by tests only. All 59 board entries carry `scripts`;
+   decomposition over 547 priced contracts: max |sum share x P(M|S) - P(M)| = 2.0e-5 (rounding of published
+   values); max |script-basis P - board P| = 0.0022 (half-time / first-scorer families, board Monte Carlo error;
+   analytic families identical). 59 explorer events carry `soccer_script_engine` with status OK; `verify_explorer`
+   clean; largest event document 139.9 KB (budget 145 KB), largest payload 71.6 KB.
+   (The first attempt, run 37554747664, computed everything but its publish was refused by the archive size guard
+   scanning `.git`; the same failure had stopped every scheduled RUN SOCCER since 2026-10-04. Fixed in
+   `scripts/archive_publish.sh`.)
+2. **Quote-only reprice** (kalshi-capture on the branch, slate `slate-20261007T013724Z-23473c`): mode
+   `reprice_only`, `simulations_run` 0, Odds API calls 0, reprice 0.28 s, board unchanged (01:31:02Z); shares of
+   all 12 slate fixtures identical to the model run; 18 sides moved price and 2 changed survivability on price
+   alone, e.g. Botafogo v Vasco "home wins by more than 1.5" YES 0.15 -> 0.16 (model 0.2582 unchanged): stance
+   `SNONOO` -> `SNOOOO` (AWAY_CHASE neutral -> opposes).
+3. **Second RUN SOCCER** `run-20261007T014252Z-ceb98c`: all 59 fixtures `fixtures_reused_from_cache` with their
+   scripts served from the simulation cache. Its 59 re-simulations are the pre-existing expression-reducer path,
+   which re-simulates every cache-hit fixture that has any quoted side (see section 15).
+
+Example (Botafogo v Vasco da Gama, Brasileirão, 2026-10-07 23:30Z): H/D/A 0.478 / 0.256 / 0.266; shares HOME_CONTROL
+0.277, TIGHT_LOW_EVENT 0.258, OPEN_END_TO_END 0.141, AWAY_CONTROL 0.133, HOME_CHASE 0.104, AWAY_CHASE 0.086.
+P(home win | S) = [1.00, 0.44, 0.40, 0.36, 0.00, 0.00]; P(O2.5 | S) = [0.70, 0.44, 0.00, 1.00, 0.33, 0.68] in the
+canonical order; sum share x conditional = 0.4782 and 0.5002 = the board's analytic prices. Robust expression:
+NO on "away wins by more than 1.5" at 0.82 (break-even 0.830, fair 0.890), VERY_ROBUST, supported in 5 of 6 material
+scripts (weighted support 0.87); counter-case "Away control is 13% of simulations and prices NO on 'away wins by
+more than 1.5' at 31% conditional fair probability against a 83% break-even." Script-specific: YES "home wins by
+more than 1.5" at 0.15, SCRIPT_DEPENDENT (only HOME_CONTROL supports it; TIGHT_LOW_EVENT settles it at 0 %). The six
+home-side rows (home ML, home -1.5/-2.5, away not winning, away not winning by 2+/3+) form one HOME_CONTROL thesis
+group.
