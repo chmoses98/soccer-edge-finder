@@ -54,9 +54,52 @@
   "delivered_total": 308,
   "delivery_rate_total": 0.6921348314606741,
   "fixtures_tracked": 90,
-  "generated_at": "2026-10-07T02:26:58Z",
+  "generated_at": "2026-10-07T07:50:21Z",
+  "last_tick": {
+    "batches": 2,
+    "summary": [
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:9",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=326:sim=0"
+        ],
+        "batch_id": "kd-20261007T022123Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:fifa.friendly:2026:nat.mex:nat.chi",
+            15,
+            8.61
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:9",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=326:sim=0"
+        ],
+        "batch_id": "kd-20261007T022431Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:fifa.friendly:2026:nat.mex:nat.chi",
+            5,
+            5.48
+          ]
+        ]
+      }
+    ]
+  },
   "missed_total": 137,
-  "n_pending_fixtures": 21,
+  "n_pending_fixtures": 22,
   "pending_fixtures": [
     {
       "competition_id": "bra.serie_a",
@@ -202,6 +245,13 @@
       "competition_id": "mex.liga_mx",
       "fixture_id": "fx:mex.liga_mx:2026:mex.puebla:mex.leon",
       "kickoff_utc": "2026-10-10T01:00:00Z",
+      "markets_discovered": 14,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "mex.liga_mx",
+      "fixture_id": "fx:mex.liga_mx:2026:mex.tigres:mex.toluca",
+      "kickoff_utc": "2026-10-10T03:00:00Z",
       "markets_discovered": 14,
       "source": "run_output"
     }
