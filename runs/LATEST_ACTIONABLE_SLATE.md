@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261008T192901Z-2ee33e` · generated 2026-10-08T19:29:01.893998Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261008T194402Z-21da1c` · generated 2026-10-08T19:44:02.046587Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-08T19:26:34.145265Z (CURRENT at publish; CURRENT until 2026-10-08T19:46:34.145265Z, STALE after 2026-10-08T19:56:34.145265Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-08T19:41:34.148832Z (CURRENT at publish; CURRENT until 2026-10-08T20:01:34.148832Z, STALE after 2026-10-08T20:11:34.148832Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-08T19:14:01.867233Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.24s
 
@@ -50,7 +50,7 @@ model board generated 2026-10-08T19:14:01.867233Z · simulations this update: 0 
 | 2026-10-10T18:45:00Z | Napoli vs Frosinone (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T19:00:00Z | Real Madrid vs Villarreal (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (51; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (50; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -99,9 +99,9 @@ model board generated 2026-10-08T19:14:01.867233Z · simulations this update: 0 
 
 ```
 action_MODEL_STALE: 56
-action_NO_EDGE: 471
+action_NO_EDGE: 472
 action_NO_QUOTE: 200
-action_RESEARCH_CANDIDATE: 51
+action_RESEARCH_CANDIDATE: 50
 contract_sides: 778
 fixtures: 37
 fixtures_model_invalidated: 0
