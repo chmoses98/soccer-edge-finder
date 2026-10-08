@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-08T13:42:58.026928+00:00",
+  "as_of": "2026-10-08T19:59:29.090280+00:00",
   "events": 519,
   "events_skipped_unmapped": 249,
   "fixtures_mapped": 270,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=74"
+      "weather_stopped:consecutive_failures:skipped=70"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 13,
-    "events": 17,
+    "captured": 38,
+    "events": 42,
     "failures": [],
-    "published_post": 0,
-    "published_pre_kickoff": 0,
+    "published_post": 1,
+    "published_pre_kickoff": 1,
     "unchanged": 4,
-    "unpublished": 17
+    "unpublished": 40
   },
   "map_proposals": {
     "bel.1": {
@@ -267,17 +267,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 12,
-    "events": 89,
+    "captured": 28,
+    "events": 101,
     "failures": [
-      "401878974: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=50.8890&longitude=3.4276&hourly=tem",
-      "401878971: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Liege&count=5&language=en&forma",
-      "401841251: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-23.9608&longitude=-46.3336&hourly="
+      "401860389: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-16.6786&longitude=-49.2539&hourly=",
+      "401850660: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=El%20Salvador&count=5&language=",
+      "401850664: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Talcahuano&count=5&language=en&"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 74,
+    "skipped": 70,
     "stopped": "consecutive_failures"
   }
 }
