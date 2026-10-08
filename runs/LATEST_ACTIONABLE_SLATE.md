@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261008T172853Z-d2881a` · generated 2026-10-08T17:28:53.964984Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261008T174354Z-68ca87` · generated 2026-10-08T17:43:54.170580Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-08T17:26:26.273346Z (CURRENT at publish; CURRENT until 2026-10-08T17:46:26.273346Z, STALE after 2026-10-08T17:56:26.273346Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-08T17:41:26.276463Z (CURRENT at publish; CURRENT until 2026-10-08T18:01:26.276463Z, STALE after 2026-10-08T18:11:26.276463Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-08T16:58:30.036806Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.21s
+model board generated 2026-10-08T16:58:30.036806Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.20s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -59,11 +59,11 @@ model board generated 2026-10-08T16:58:30.036806Z · simulations this update: 0 
 | Deportivo Alavés vs Atlético Madrid | Result: home | yes | 0.2200 | 0.390 [0.241, 0.555] | +0.158 | +0.048 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs León | away team total over 0.5 | no | 0.2500 | 0.391 [0.256, 0.519] | +0.128 | +0.041 | 0.28 | - |  | RESEARCH_CANDIDATE |
 | Inter Milan vs Parma | Result: home | no | 0.1400 | 0.290 [0.147, 0.449] | +0.141 | +0.040 | 0.17 | - | * | RESEARCH_CANDIDATE |
-| FC Barcelona vs Getafe | Result: home | no | 0.0900 | 0.222 [0.100, 0.363] | +0.127 | +0.037 | 0.12 | - | * | RESEARCH_CANDIDATE |
+| SC Paderborn 07 vs VfB Stuttgart | Result: home | yes | 0.1900 | 0.373 [0.193, 0.585] | +0.172 | +0.039 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs León | btts | no | 0.4500 | 0.577 [0.452, 0.695] | +0.109 | +0.035 | 0.48 | - | * | RESEARCH_CANDIDATE |
-| FC Barcelona vs Getafe | Result: draw | yes | 0.0600 | 0.149 [0.073, 0.236] | +0.085 | +0.031 | 0.08 | - |  | RESEARCH_CANDIDATE |
+| FC Barcelona vs Getafe | Result: draw | yes | 0.0600 | 0.149 [0.073, 0.236] | +0.085 | +0.031 | 0.08 | - | * | RESEARCH_CANDIDATE |
 | Santos vs Flamengo | Result: away | no | 0.4550 | 0.596 [0.439, 0.748] | +0.123 | +0.028 | 0.48 | - | * | RESEARCH_CANDIDATE |
-| SC Paderborn 07 vs VfB Stuttgart | Result: home | yes | 0.2000 | 0.373 [0.193, 0.585] | +0.162 | +0.028 | 0.22 | - |  | RESEARCH_CANDIDATE |
+| FC Barcelona vs Getafe | Result: home | no | 0.1000 | 0.222 [0.100, 0.363] | +0.116 | +0.026 | 0.12 | - |  | RESEARCH_CANDIDATE |
 | SC Paderborn 07 vs VfB Stuttgart | Result: draw | yes | 0.2000 | 0.286 [0.211, 0.367] | +0.075 | +0.026 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Athletico Paranaense vs Atlético Mineiro | home wins by more than 2.5 | yes | 0.0300 | 0.124 [0.039, 0.244] | +0.092 | +0.025 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Inter Milan vs Parma | Result: draw | yes | 0.0900 | 0.171 [0.097, 0.247] | +0.075 | +0.025 | 0.11 | - |  | RESEARCH_CANDIDATE |
