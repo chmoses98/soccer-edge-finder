@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261008T202829Z-d43ec1` · generated 2026-10-08T20:28:29.180409Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261008T204319Z-9739d1` · generated 2026-10-08T20:43:19.962764Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-08T20:25:53.456941Z (CURRENT at publish; CURRENT until 2026-10-08T20:45:53.456941Z, STALE after 2026-10-08T20:55:53.456941Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-08T20:40:51.315647Z (CURRENT at publish; CURRENT until 2026-10-08T21:00:51.315647Z, STALE after 2026-10-08T21:10:51.315647Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-08T19:14:01.867233Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.24s
 
@@ -50,7 +50,7 @@ model board generated 2026-10-08T19:14:01.867233Z · simulations this update: 0 
 | 2026-10-10T18:45:00Z | Napoli vs Frosinone (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T19:00:00Z | Real Madrid vs Villarreal (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (51; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (50; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -90,18 +90,18 @@ model board generated 2026-10-08T19:14:01.867233Z · simulations this update: 0 
 | Inter Milan vs Parma | Result: away | yes | 0.0500 | 0.119 [0.046, 0.212] | +0.065 | +0.009 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Bahia | Total goals over 2.5 | no | 0.4000 | 0.532 [0.359, 0.691] | +0.115 | +0.009 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Tigres UANL vs Toluca | away team total over 0.5 | no | 0.2200 | 0.320 [0.196, 0.446] | +0.088 | +0.008 | 0.22 | - | * | RESEARCH_CANDIDATE |
-| Puebla vs León | Result: away | no | 0.6000 | 0.707 [0.571, 0.836] | +0.090 | +0.008 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Bahia | Total goals over 1.5 | no | 0.1800 | 0.283 [0.154, 0.416] | +0.093 | +0.007 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs León | away wins by more than 1.5 | no | 0.8300 | 0.887 [0.805, 0.955] | +0.047 | +0.007 | 0.83 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs León | away wins by more than 2.5 | no | 0.9400 | 0.965 [0.931, 0.991] | +0.021 | +0.006 | 0.94 | - |  | RESEARCH_CANDIDATE |
+| Tigres UANL vs Toluca | away team total over 2.5 | no | 0.8100 | 0.875 [0.776, 0.952] | +0.055 | +0.006 | 0.81 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_MODEL_STALE: 56
-action_NO_EDGE: 471
+action_NO_EDGE: 472
 action_NO_QUOTE: 200
-action_RESEARCH_CANDIDATE: 51
+action_RESEARCH_CANDIDATE: 50
 contract_sides: 778
 fixtures: 37
 fixtures_model_invalidated: 0
