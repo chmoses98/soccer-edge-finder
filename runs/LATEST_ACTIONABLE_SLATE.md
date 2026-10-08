@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261008T140643Z-b62bad` · generated 2026-10-08T14:06:43.242054Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261008T141312Z-40a2e6` · generated 2026-10-08T14:13:12.717316Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-08T14:04:07.086003Z (CURRENT at publish; CURRENT until 2026-10-08T14:24:07.086003Z, STALE after 2026-10-08T14:34:07.086003Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-08T14:10:45.158283Z (CURRENT at publish; CURRENT until 2026-10-08T14:30:45.158283Z, STALE after 2026-10-08T14:40:45.158283Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-08T13:43:10.610834Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.12s
+model board generated 2026-10-08T14:13:12.134040Z · simulations this update: 4 · Odds API calls this update: 0 (credits 0) · reprice 0.07s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -29,10 +29,10 @@ model board generated 2026-10-08T13:43:10.610834Z · simulations this update: 0 
 | 2026-10-10T13:30:00Z | Mainz 05 vs Bayer Leverkusen (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T13:30:00Z | SC Paderborn 07 vs VfB Stuttgart (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T13:30:00Z | Union Berlin vs SV Elversberg (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-10T14:00:00Z | Aston Villa vs Brentford (eng.premier_league) | VALID (STALE) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-10T14:00:00Z | Chelsea vs Bournemouth (eng.premier_league) | VALID (STALE) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-10T14:00:00Z | Ipswich Town vs Fulham (eng.premier_league) | VALID (STALE) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-10T14:00:00Z | Sunderland vs Brighton & Hove Albion (eng.premier_league) | VALID (STALE) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-10T14:00:00Z | Aston Villa vs Brentford (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-10T14:00:00Z | Chelsea vs Bournemouth (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-10T14:00:00Z | Ipswich Town vs Fulham (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-10T14:00:00Z | Sunderland vs Brighton & Hove Albion (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
 ## Candidates on CURRENT prices (19; RESEARCH_ONLY = analysis, never a bet)
 
@@ -52,17 +52,17 @@ model board generated 2026-10-08T13:43:10.610834Z · simulations this update: 0 
 | Arsenal vs Leeds United | Result: away | yes | 0.1100 | 0.211 [0.104, 0.342] | +0.094 | +0.015 | 0.12 | - |  | RESEARCH_CANDIDATE |
 | Arsenal vs Leeds United | Result: draw | yes | 0.1900 | 0.262 [0.190, 0.331] | +0.061 | +0.014 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Mainz 05 vs Bayer Leverkusen | Result: away | no | 0.5600 | 0.686 [0.527, 0.841] | +0.109 | +0.012 | 0.57 | - | * | RESEARCH_CANDIDATE |
-| Santos vs Flamengo | away wins by more than 1.5 | no | 0.7000 | 0.793 [0.672, 0.900] | +0.079 | +0.011 | 0.71 | - | * | RESEARCH_CANDIDATE |
+| Santos vs Flamengo | away wins by more than 2.5 | no | 0.8600 | 0.915 [0.845, 0.971] | +0.046 | +0.012 | 0.87 | - | * | RESEARCH_CANDIDATE |
+| Santos vs Flamengo | away wins by more than 1.5 | no | 0.7000 | 0.793 [0.672, 0.900] | +0.079 | +0.011 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Bahia | btts | no | 0.4500 | 0.555 [0.425, 0.677] | +0.088 | +0.007 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Santos vs Flamengo | Result: home | yes | 0.2200 | 0.333 [0.198, 0.494] | +0.101 | +0.004 | 0.22 | - |  | RESEARCH_CANDIDATE |
-| Santos vs Flamengo | away wins by more than 2.5 | no | 0.8700 | 0.915 [0.845, 0.971] | +0.037 | +0.002 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Bahia | Total goals over 0.5 | no | 0.0500 | 0.092 [0.039, 0.156] | +0.039 | +0.000 | 0.05 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_MODEL_STALE: 80
-action_NO_EDGE: 158
+action_MODEL_STALE: 56
+action_NO_EDGE: 182
 action_NO_QUOTE: 121
 action_RESEARCH_CANDIDATE: 19
 contract_sides: 378
