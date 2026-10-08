@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261008T000137Z-738539` · generated 2026-10-08T00:01:37.863627Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261008T001632Z-48b6aa` · generated 2026-10-08T00:16:32.203083Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-07T23:59:05.168563Z (CURRENT at publish; CURRENT until 2026-10-08T00:19:05.168563Z, STALE after 2026-10-08T00:29:05.168563Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-08T00:14:05.172928Z (CURRENT at publish; CURRENT until 2026-10-08T00:34:05.172928Z, STALE after 2026-10-08T00:44:05.172928Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-07T23:28:33.667181Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.12s
+model board generated 2026-10-07T23:28:33.667181Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.12s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-07T23:28:33.667181Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-08T00:30:00Z | Cruzeiro vs São Paulo (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
+| 2026-10-08T00:30:00Z | Cruzeiro vs São Paulo (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
 | 2026-10-08T22:30:00Z | Santos vs Flamengo (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-08T23:00:00Z | Athletico Paranaense vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-09T00:30:00Z | Fluminense vs Coritiba (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -21,21 +21,22 @@ model board generated 2026-10-07T23:28:33.667181Z · simulations this update: 0 
 | 2026-10-09T18:45:00Z | Lens vs Lyon (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-09T19:00:00Z | Málaga vs Espanyol (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 71 | 0 |
 
-## Candidates on CURRENT prices (4; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (5; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Athletico Paranaense vs Atlético Mineiro | Result: home | yes | 0.2550 | 0.501 [0.343, 0.670] | +0.232 | +0.122 | 0.37 | - | * | RESEARCH_CANDIDATE |
 | Athletico Paranaense vs Atlético Mineiro | home wins by more than 1.5 | yes | 0.0900 | 0.273 [0.139, 0.433] | +0.177 | +0.076 | 0.16 | - | * | RESEARCH_CANDIDATE |
 | Athletico Paranaense vs Atlético Mineiro | home wins by more than 2.5 | yes | 0.0400 | 0.123 [0.042, 0.229] | +0.080 | +0.015 | 0.05 | - |  | RESEARCH_CANDIDATE |
+| Palmeiras vs Bahia | Total goals over 0.5 | no | 0.0500 | 0.092 [0.039, 0.156] | +0.039 | +0.000 | 0.05 | - | * | RESEARCH_CANDIDATE |
 | Santos vs Flamengo | Result: away | no | 0.4750 | 0.591 [0.439, 0.748] | +0.099 | +0.000 | 0.47 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 153
+action_NO_EDGE: 152
 action_NO_QUOTE: 467
-action_RESEARCH_CANDIDATE: 4
+action_RESEARCH_CANDIDATE: 5
 contract_sides: 624
 fixtures: 8
 fixtures_model_invalidated: 0
