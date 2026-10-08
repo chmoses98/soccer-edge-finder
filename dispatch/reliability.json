@@ -4,7 +4,7 @@
   "github_backup_minutes": 60
  },
  "definition": "capture_success_rate = delivered / eligible horizons whose window closed in the span (NOT_APPLICABLE excluded); close_success_rate = fixtures with a T-15 or T-5 delivery / fixtures whose close windows closed in the span",
- "generated_at": "2026-10-08T20:09:45Z",
+ "generated_at": "2026-10-08T20:58:11Z",
  "last_24h": {
   "capture_runs": 3,
   "capture_runs_failed": 0,
@@ -40,7 +40,7 @@
  "last_7d": {
   "capture_runs": 30,
   "capture_runs_failed": 16,
-  "capture_success_rate": 0.98046875,
+  "capture_success_rate": 0.9920948616600791,
   "close_fixtures_delivered": 51,
   "close_fixtures_eligible": 52,
   "close_success_rate": 0.9807692307692307,
@@ -63,19 +63,19 @@
   "heartbeats_no_work_due": 0,
   "horizon_states": {
    "DELIVERED": 251,
-   "MISSED_BEFORE_WAKE": 3,
-   "MISSED_EXECUTION_FAILURE": 2,
+   "MISSED_BEFORE_WAKE": 1,
+   "MISSED_EXECUTION_FAILURE": 1,
    "NOT_APPLICABLE": 23
   },
   "horizons_delivered": 251,
-  "horizons_eligible": 256,
-  "horizons_missed": 5,
+  "horizons_eligible": 253,
+  "horizons_missed": 2,
   "paid_calls": 44,
   "span_hours": 168.0
  },
  "last_wake": {
   "no_action_reason": "CAPTURE_IN_PROGRESS",
-  "started_at": "2026-10-08T20:09:45Z",
+  "started_at": "2026-10-08T20:58:11Z",
   "status": "OK",
   "trigger_source": "workflow-run"
  },
