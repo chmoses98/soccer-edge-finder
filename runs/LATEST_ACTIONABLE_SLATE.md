@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261008T205823Z-03a105` · generated 2026-10-08T20:58:23.485759Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261008T211319Z-857f7e` · generated 2026-10-08T21:13:19.756678Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-08T20:55:52.338485Z (CURRENT at publish; CURRENT until 2026-10-08T21:15:52.338485Z, STALE after 2026-10-08T21:25:52.338485Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-08T21:10:51.319094Z (CURRENT at publish; CURRENT until 2026-10-08T21:30:51.319094Z, STALE after 2026-10-08T21:40:51.319094Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-08T19:14:01.867233Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.39s
+model board generated 2026-10-08T19:14:01.867233Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.26s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -49,8 +49,9 @@ model board generated 2026-10-08T19:14:01.867233Z · simulations this update: 0 
 | 2026-10-10T18:45:00Z | Paris Saint-Germain vs Le Mans (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T18:45:00Z | Napoli vs Frosinone (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T19:00:00Z | Real Madrid vs Villarreal (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-10T21:00:00Z | Vasco da Gama vs Remo (bra.serie_a) | INVALIDATED: kickoff_changed:2026-10-10T20:00:00Z->2026-10-10T21:00:00+00 | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (49; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (48; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -66,12 +67,12 @@ model board generated 2026-10-08T19:14:01.867233Z · simulations this update: 0 
 | Deportivo Alavés vs Atlético Madrid | Result: away | no | 0.4700 | 0.637 [0.482, 0.786] | +0.150 | +0.051 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs León | away team total over 1.5 | no | 0.6000 | 0.744 [0.604, 0.859] | +0.128 | +0.049 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Deportivo Alavés vs Atlético Madrid | Result: home | yes | 0.2200 | 0.390 [0.241, 0.555] | +0.158 | +0.048 | 0.26 | - |  | RESEARCH_CANDIDATE |
-| Paris Saint-Germain vs Le Mans | Result: draw | yes | 0.0600 | 0.173 [0.075, 0.271] | +0.109 | +0.044 | 0.1 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs León | away team total over 0.5 | no | 0.2500 | 0.391 [0.256, 0.519] | +0.128 | +0.041 | 0.28 | - |  | RESEARCH_CANDIDATE |
 | Inter Milan vs Parma | Result: home | no | 0.1400 | 0.290 [0.147, 0.449] | +0.141 | +0.040 | 0.17 | - | * | RESEARCH_CANDIDATE |
 | SC Paderborn 07 vs VfB Stuttgart | Result: home | yes | 0.1900 | 0.373 [0.193, 0.585] | +0.172 | +0.039 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | FC Barcelona vs Getafe | Result: home | no | 0.0900 | 0.222 [0.100, 0.363] | +0.127 | +0.037 | 0.12 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs León | btts | no | 0.4500 | 0.577 [0.452, 0.695] | +0.109 | +0.035 | 0.48 | - | * | RESEARCH_CANDIDATE |
+| Paris Saint-Germain vs Le Mans | Result: draw | yes | 0.0700 | 0.173 [0.075, 0.271] | +0.099 | +0.034 | 0.1 | - |  | RESEARCH_CANDIDATE |
 | FC Barcelona vs Getafe | Result: draw | yes | 0.0600 | 0.149 [0.073, 0.236] | +0.085 | +0.031 | 0.08 | - |  | RESEARCH_CANDIDATE |
 | Santos vs Flamengo | Result: away | no | 0.4550 | 0.596 [0.439, 0.748] | +0.123 | +0.028 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | SC Paderborn 07 vs VfB Stuttgart | Result: draw | yes | 0.2000 | 0.286 [0.211, 0.367] | +0.075 | +0.026 | 0.22 | - |  | RESEARCH_CANDIDATE |
@@ -98,13 +99,14 @@ model board generated 2026-10-08T19:14:01.867233Z · simulations this update: 0 
 ## Counts
 
 ```
+action_MODEL_INVALIDATED: 27
 action_MODEL_STALE: 56
-action_NO_EDGE: 473
-action_NO_QUOTE: 200
-action_RESEARCH_CANDIDATE: 49
-contract_sides: 778
-fixtures: 37
-fixtures_model_invalidated: 0
+action_NO_EDGE: 474
+action_NO_QUOTE: 201
+action_RESEARCH_CANDIDATE: 48
+contract_sides: 806
+fixtures: 38
+fixtures_model_invalidated: 1
 fixtures_model_missing: 0
 ```
 
