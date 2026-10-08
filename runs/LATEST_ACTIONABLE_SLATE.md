@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261008T191402Z-aeeb99` · generated 2026-10-08T19:14:02.454812Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261008T192901Z-2ee33e` · generated 2026-10-08T19:29:01.893998Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-08T19:11:31.097574Z (CURRENT at publish; CURRENT until 2026-10-08T19:31:31.097574Z, STALE after 2026-10-08T19:41:31.097574Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-08T19:26:34.145265Z (CURRENT at publish; CURRENT until 2026-10-08T19:46:34.145265Z, STALE after 2026-10-08T19:56:34.145265Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-08T19:14:01.867233Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.24s
+model board generated 2026-10-08T19:14:01.867233Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.24s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -83,17 +83,17 @@ model board generated 2026-10-08T19:14:01.867233Z · simulations this update: 1 
 | Paris Saint-Germain vs Le Mans | Result: away | yes | 0.0400 | 0.145 [0.036, 0.285] | +0.103 | +0.015 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Bahia | btts | no | 0.4400 | 0.552 [0.423, 0.670] | +0.094 | +0.015 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Arsenal vs Leeds United | Result: draw | yes | 0.1900 | 0.262 [0.190, 0.331] | +0.061 | +0.014 | 0.2 | - |  | RESEARCH_CANDIDATE |
-| Palmeiras vs Bahia | Total goals over 3.5 | no | 0.6200 | 0.736 [0.580, 0.867] | +0.100 | +0.013 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs León | away team total over 2.5 | no | 0.8600 | 0.916 [0.842, 0.971] | +0.048 | +0.013 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Mainz 05 vs Bayer Leverkusen | Result: away | no | 0.5600 | 0.686 [0.527, 0.841] | +0.109 | +0.012 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Santos vs Flamengo | away wins by more than 1.5 | no | 0.7000 | 0.797 [0.676, 0.904] | +0.083 | +0.012 | 0.71 | - | * | RESEARCH_CANDIDATE |
 | Santos vs Flamengo | away wins by more than 2.5 | no | 0.8600 | 0.917 [0.844, 0.973] | +0.049 | +0.011 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Napoli vs Frosinone | Result: away | yes | 0.1500 | 0.289 [0.122, 0.485] | +0.130 | +0.011 | 0.16 | - |  | RESEARCH_CANDIDATE |
 | Inter Milan vs Parma | Result: away | yes | 0.0500 | 0.119 [0.046, 0.212] | +0.065 | +0.009 | 0.05 | - |  | RESEARCH_CANDIDATE |
-| Palmeiras vs Bahia | Total goals over 2.5 | no | 0.4000 | 0.532 [0.359, 0.691] | +0.115 | +0.009 | 0.4 | - |  | RESEARCH_CANDIDATE |
+| Palmeiras vs Bahia | Total goals over 2.5 | no | 0.4000 | 0.532 [0.359, 0.691] | +0.115 | +0.009 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Tigres UANL vs Toluca | away team total over 0.5 | no | 0.2200 | 0.320 [0.196, 0.446] | +0.088 | +0.008 | 0.22 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Bahia | Total goals over 1.5 | no | 0.1800 | 0.283 [0.154, 0.416] | +0.093 | +0.007 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs León | away wins by more than 1.5 | no | 0.8300 | 0.887 [0.805, 0.955] | +0.047 | +0.007 | 0.83 | - | * | RESEARCH_CANDIDATE |
+| Puebla vs León | away wins by more than 2.5 | no | 0.9400 | 0.965 [0.931, 0.991] | +0.021 | +0.006 | 0.94 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
