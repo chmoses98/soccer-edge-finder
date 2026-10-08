@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-08T11:25:07.764118Z",
+  "as_of": "2026-10-08T11:38:49.990387Z",
   "by_competition": {
     "arg.primera": {
       "PENDING_EVIDENCE": 0,
@@ -39,7 +39,7 @@
     },
     "esp.la_liga": {
       "PENDING_EVIDENCE": 0,
-      "PENDING_KICKOFF": 107,
+      "PENDING_KICKOFF": 110,
       "PENDING_MAPPING": 0,
       "PENDING_RESULT": 0,
       "SETTLED": 0,
@@ -57,7 +57,7 @@
     },
     "fra.ligue_1": {
       "PENDING_EVIDENCE": 0,
-      "PENDING_KICKOFF": 74,
+      "PENDING_KICKOFF": 77,
       "PENDING_MAPPING": 0,
       "PENDING_RESULT": 0,
       "SETTLED": 0,
@@ -66,7 +66,7 @@
     },
     "ger.bundesliga": {
       "PENDING_EVIDENCE": 0,
-      "PENDING_KICKOFF": 130,
+      "PENDING_KICKOFF": 133,
       "PENDING_MAPPING": 0,
       "PENDING_RESULT": 0,
       "SETTLED": 0,
@@ -194,7 +194,7 @@
     },
     "match_result_3way": {
       "PENDING_EVIDENCE": 0,
-      "PENDING_KICKOFF": 360,
+      "PENDING_KICKOFF": 369,
       "PENDING_MAPPING": 0,
       "PENDING_RESULT": 102,
       "SETTLED": 1203,
@@ -231,25 +231,25 @@
   },
   "close_completeness": {
     "kalshi": {
-      "KALSHI_CLOSE": 882,
+      "KALSHI_CLOSE": 392,
       "NEAR_CLOSE": 0,
-      "NONE": 307,
+      "NONE": 127,
       "STALE": 210,
       "TRUE_CLOSE": 0
     },
-    "kalshi_close_share": 0.6304503216583274,
-    "missing_kalshi_close_rate": 0.3695496783416726,
-    "missing_reference_close_rate": 0.8770550393137956,
-    "records": 1399,
+    "kalshi_close_share": 0.5377229080932785,
+    "missing_kalshi_close_rate": 0.4622770919067215,
+    "missing_reference_close_rate": 0.9314128943758573,
+    "records": 729,
     "reference": {
       "KALSHI_CLOSE": 0,
       "NEAR_CLOSE": 0,
-      "NONE": 1227,
+      "NONE": 679,
       "STALE": 0,
-      "TRUE_CLOSE": 172
+      "TRUE_CLOSE": 50
     },
-    "reference_close_share": 0.12294496068620443,
-    "true_close_share": 0.12294496068620443
+    "reference_close_share": 0.06858710562414266,
+    "true_close_share": 0.06858710562414266
   },
   "grace_hours": 3.0,
   "pending_evidence": 274,
@@ -555,13 +555,13 @@
       "state": "PENDING_EVIDENCE"
     }
   ],
-  "pending_kickoff": 1269,
+  "pending_kickoff": 1278,
   "pending_mapping": 0,
   "pending_result": 455,
-  "predictions_total": 16838,
+  "predictions_total": 16847,
   "reasons": {
     "PENDING_EVIDENCE: period data missing (half-time split, extra time, penalties or first scorer)": 274,
-    "PENDING_KICKOFF: kickoff + grace in the future": 1269,
+    "PENDING_KICKOFF: kickoff + grace in the future": 1278,
     "PENDING_RESULT: no result reported yet": 455
   },
   "schema": "settlement_coverage_v1",
