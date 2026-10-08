@@ -5948,13 +5948,13 @@
       "fixture_id": "fx:bra.serie_a:2026:bra.athletico_paranaense:bra.atletico_mineiro",
       "fixtures_observed_at": "2026-10-08T19:59:29.090280Z",
       "home": "bra.athletico_paranaense",
-      "input_fingerprint": "sha256:2cc8a88f7570092bf07b2f8161c7ccc80d050dac68b1ba2ff3f0a6a7210f28fd",
+      "input_fingerprint": "sha256:81f25494dec89a411bf03ea7ef36635a7ca371c2cadbb99e4f87f805ffbdc7fd",
       "inputs": {
         "competition_id": "bra.serie_a",
         "draws_per_world": 100,
         "engine_version": "world_sim_v2",
         "kickoff_utc": "2026-10-08T23:00:00Z",
-        "lineup_key": "none",
+        "lineup_key": "sha256:1cf8c6671c23366ac83a4ac973d17c8b8baad8eb7a4228bfe9a581b894c9ff78",
         "model_family": "data_only.world_sim_v2",
         "model_version": "dc_laplace_v1",
         "n_worlds": 1000,
@@ -5965,11 +5965,41 @@
         "worlds_version": "worlds_v1"
       },
       "lineup": {
-        "checked_at": "2026-10-08T21:58:26.368350Z",
-        "key": "none",
-        "last_change_at": "2026-10-08T00:01:28.055967Z",
-        "state": "unconfirmed"
+        "checked_at": "2026-10-08T22:30:42.001718Z",
+        "key": "sha256:1cf8c6671c23366ac83a4ac973d17c8b8baad8eb7a4228bfe9a581b894c9ff78",
+        "last_change_at": "2026-10-08T22:27:21.676169Z",
+        "state": "confirmed"
       },
+      "lineup_history": [
+        {
+          "lineup_key": "none",
+          "lineup_state": "unconfirmed",
+          "model_generated_at": "2026-10-08T21:58:30.072110Z",
+          "scripts": {
+            "primary": "HOME_CONTROL",
+            "secondary": "TIGHT_LOW_EVENT",
+            "shares": [
+              0.29372,
+              0.10429,
+              0.27965,
+              0.12267,
+              0.08338,
+              0.11629
+            ],
+            "taxonomy_version": "soccer_scripts_v1"
+          },
+          "sim_key": "sha256:3ceef469c7104e336ddf5d6420fb7588d734ce39ffa8917542464e795de0b3ce",
+          "summary": {
+            "mean_away_goals": 0.99905,
+            "mean_home_goals": 1.6048,
+            "p_away": 0.23754,
+            "p_btts": 0.48739,
+            "p_draw": 0.26181,
+            "p_home": 0.50065,
+            "p_over_2_5": 0.47202
+          }
+        }
+      ],
       "match_context": {
         "aggregate": {
           "source": "no aggregate (not a second leg)",
@@ -6195,8 +6225,8 @@
         "source": "production posterior (dc_laplace_v1) that priced this fixture",
         "version": "dc_matchup_v1"
       },
-      "model_fitted_at": "2026-10-08T21:58:29.089377Z",
-      "model_generated_at": "2026-10-08T21:58:30.072110Z",
+      "model_fitted_at": "2026-10-08T22:30:46.462288Z",
+      "model_generated_at": "2026-10-08T22:30:47.817436Z",
       "results_observed_at": "2026-10-08T16:58:19.515966Z",
       "scripts": {
         "contract_gaps": {},
@@ -6814,8 +6844,8 @@
           }
         }
       },
-      "sim_key": "sha256:3ceef469c7104e336ddf5d6420fb7588d734ce39ffa8917542464e795de0b3ce",
-      "source_run_id": "run-20261008T215830Z-223036",
+      "sim_key": "sha256:2dac259a208f2c249782778c4b35d983675cecf8e3486954a9e054d138969039",
+      "source_run_id": "run-20261008T223047Z-7d6cd5",
       "summary": {
         "mean_away_goals": 0.99905,
         "mean_home_goals": 1.6048,
@@ -421337,6 +421367,6 @@
       }
     }
   },
-  "generated_at": "2026-10-08T22:27:25.380757Z",
+  "generated_at": "2026-10-08T22:30:47.817436Z",
   "quantile_levels": "(i + 0.5) / 100, i = 0..99"
 }
