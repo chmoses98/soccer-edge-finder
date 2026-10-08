@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261008T232740Z-6f5583` · generated 2026-10-08T23:27:40.605406Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261008T234233Z-dbc37c` · generated 2026-10-08T23:42:33.116752Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-08T23:25:02.884832Z (CURRENT at publish; CURRENT until 2026-10-08T23:45:02.884832Z, STALE after 2026-10-08T23:55:02.884832Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-08T23:40:05.667989Z (CURRENT at publish; CURRENT until 2026-10-09T00:00:05.667989Z, STALE after 2026-10-09T00:10:05.667989Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-08T23:27:39.154836Z · simulations this update: 2 · Odds API calls this update: 1 (credits 3) · reprice 0.42s
+model board generated 2026-10-08T23:27:39.154836Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.49s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -51,8 +51,15 @@ model board generated 2026-10-08T23:27:39.154836Z · simulations this update: 2 
 | 2026-10-10T21:00:00Z | Vasco da Gama vs Remo (bra.serie_a) | INVALIDATED: kickoff_changed:2026-10-10T20:00:00Z->2026-10-10T21:00:00+00 | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-10T23:00:00Z | FC Juárez vs Tijuana (mex.liga_mx) | VALID (STALE) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-10T23:00:00Z | Querétaro vs Atlante (mex.liga_mx) | VALID (STALE) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-10T23:30:00Z | Atlanta United vs FC Cincinnati (usa.mls) | VALID (STALE) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-10T23:30:00Z | Charlotte FC vs FC Dallas (usa.mls) | VALID (STALE) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-10T23:30:00Z | Inter Miami vs D.C. United (usa.mls) | VALID (STALE) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-10T23:30:00Z | New England Revolution vs Seattle Sounders (usa.mls) | VALID (STALE) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-10T23:30:00Z | New York Red Bulls vs San Diego FC (usa.mls) | VALID (STALE) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-10T23:30:00Z | Orlando City vs Columbus Crew (usa.mls) | VALID (STALE) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-10T23:30:00Z | Philadelphia Union vs Real Salt Lake (usa.mls) | VALID (STALE) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (53; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (54; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -101,16 +108,16 @@ model board generated 2026-10-08T23:27:39.154836Z · simulations this update: 2 
 
 ```
 action_MODEL_INVALIDATED: 27
-action_MODEL_STALE: 56
-action_NO_EDGE: 678
+action_MODEL_STALE: 252
+action_NO_EDGE: 677
 action_NO_QUOTE: 138
-action_RESEARCH_CANDIDATE: 53
-contract_sides: 952
-fixtures: 39
+action_RESEARCH_CANDIDATE: 54
+contract_sides: 1148
+fixtures: 46
 fixtures_model_invalidated: 1
 fixtures_model_missing: 0
 ```
 
-Removed (kicked off): 2
+Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
