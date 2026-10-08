@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261008T142814Z-e96809` · generated 2026-10-08T14:28:14.499786Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261008T144311Z-cb796c` · generated 2026-10-08T14:43:11.587509Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-08T14:25:47.031011Z (CURRENT at publish; CURRENT until 2026-10-08T14:45:47.031011Z, STALE after 2026-10-08T14:55:47.031011Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-08T14:40:47.033478Z (CURRENT at publish; CURRENT until 2026-10-08T15:00:47.033478Z, STALE after 2026-10-08T15:10:47.033478Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-08T14:28:14.223785Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.07s
+model board generated 2026-10-08T14:28:14.223785Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.07s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -35,7 +35,7 @@ model board generated 2026-10-08T14:28:14.223785Z · simulations this update: 1 
 | 2026-10-10T14:00:00Z | Sunderland vs Brighton & Hove Albion (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T14:15:00Z | Deportivo Alavés vs Atlético Madrid (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (21; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (22; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -55,19 +55,20 @@ model board generated 2026-10-08T14:28:14.223785Z · simulations this update: 1 
 | Arsenal vs Leeds United | Result: away | yes | 0.1100 | 0.211 [0.104, 0.342] | +0.094 | +0.015 | 0.12 | - |  | RESEARCH_CANDIDATE |
 | Arsenal vs Leeds United | Result: draw | yes | 0.1900 | 0.262 [0.190, 0.331] | +0.061 | +0.014 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Mainz 05 vs Bayer Leverkusen | Result: away | no | 0.5600 | 0.686 [0.527, 0.841] | +0.109 | +0.012 | 0.57 | - | * | RESEARCH_CANDIDATE |
-| Santos vs Flamengo | away wins by more than 2.5 | no | 0.8600 | 0.915 [0.845, 0.971] | +0.046 | +0.012 | 0.87 | - | * | RESEARCH_CANDIDATE |
-| Santos vs Flamengo | away wins by more than 1.5 | no | 0.7000 | 0.793 [0.672, 0.900] | +0.079 | +0.011 | 0.71 | - |  | RESEARCH_CANDIDATE |
+| Santos vs Flamengo | away wins by more than 1.5 | no | 0.7000 | 0.793 [0.672, 0.900] | +0.079 | +0.011 | 0.71 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Bahia | btts | no | 0.4500 | 0.555 [0.425, 0.677] | +0.088 | +0.007 | 0.45 | - | * | RESEARCH_CANDIDATE |
-| Santos vs Flamengo | Result: home | yes | 0.2200 | 0.333 [0.198, 0.494] | +0.101 | +0.004 | 0.22 | - |  | RESEARCH_CANDIDATE |
-| Palmeiras vs Bahia | Total goals over 0.5 | no | 0.0500 | 0.092 [0.039, 0.156] | +0.039 | +0.000 | 0.05 | - | * | RESEARCH_CANDIDATE |
+| Palmeiras vs Bahia | Total goals over 2.5 | no | 0.4000 | 0.536 [0.358, 0.702] | +0.119 | +0.006 | 0.4 | - | * | RESEARCH_CANDIDATE |
+| Santos vs Flamengo | away wins by more than 2.5 | no | 0.8700 | 0.915 [0.845, 0.971] | +0.037 | +0.002 | 0.87 | - |  | RESEARCH_CANDIDATE |
+| Palmeiras vs Bahia | Total goals over 3.5 | no | 0.6300 | 0.739 [0.579, 0.873] | +0.093 | +0.001 | 0.63 | - |  | RESEARCH_CANDIDATE |
+| Palmeiras vs Bahia | Total goals over 0.5 | no | 0.0500 | 0.092 [0.039, 0.156] | +0.039 | +0.000 | 0.05 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_MODEL_STALE: 56
-action_NO_EDGE: 186
+action_NO_EDGE: 185
 action_NO_QUOTE: 121
-action_RESEARCH_CANDIDATE: 21
+action_RESEARCH_CANDIDATE: 22
 contract_sides: 384
 fixtures: 22
 fixtures_model_invalidated: 0
