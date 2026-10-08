@@ -34,8 +34,8 @@
       "achieved_minutes_median": 2.48,
       "achieved_minutes_p10": 1.57,
       "achieved_minutes_p90": 4.46,
-      "delivered": 71,
-      "delivery_rate": 0.7473684210526316,
+      "delivered": 72,
+      "delivery_rate": 0.75,
       "lateness_minutes_max": 7.0,
       "lateness_minutes_median": 2.52,
       "missed": 24
@@ -51,20 +51,13 @@
       "missed": 31
     }
   },
-  "delivered_total": 349,
-  "delivery_rate_total": 0.7181069958847737,
+  "delivered_total": 350,
+  "delivery_rate_total": 0.7186858316221766,
   "fixtures_tracked": 100,
-  "generated_at": "2026-10-08T22:47:38Z",
+  "generated_at": "2026-10-08T22:57:30Z",
   "missed_total": 137,
-  "n_pending_fixtures": 113,
+  "n_pending_fixtures": 112,
   "pending_fixtures": [
-    {
-      "competition_id": "bra.serie_a",
-      "fixture_id": "fx:bra.serie_a:2026:bra.athletico_paranaense:bra.atletico_mineiro",
-      "kickoff_utc": "2026-10-08T23:00:00Z",
-      "markets_discovered": 29,
-      "source": "run_output"
-    },
     {
       "competition_id": "bra.serie_a",
       "fixture_id": "fx:bra.serie_a:2026:bra.palmeiras:bra.bahia",
@@ -755,6 +748,13 @@
       "competition_id": "ita.serie_a",
       "fixture_id": "fx:ita.serie_a:2026-27:ita.sassuolo:ita.milan",
       "kickoff_utc": "2026-10-11T16:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "esp.la_liga",
+      "fixture_id": "fx:esp.la_liga:2026-27:esp.real_betis:esp.osasuna",
+      "kickoff_utc": "2026-10-11T16:30:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }

@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261008T224737Z-332e5c` · generated 2026-10-08T22:47:37.406856Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261008T225730Z-d3a8d5` · generated 2026-10-08T22:57:30.053373Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-08T22:45:00.018760Z (CURRENT at publish; CURRENT until 2026-10-08T23:05:00.018760Z, STALE after 2026-10-08T23:15:00.018760Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-08T22:55:00.018424Z (CURRENT at publish; CURRENT until 2026-10-08T23:15:00.018424Z, STALE after 2026-10-08T23:25:00.018424Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-08T22:35:53.411467Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.53s
+model board generated 2026-10-08T22:35:53.411467Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.41s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -81,6 +81,7 @@ model board generated 2026-10-08T22:35:53.411467Z · simulations this update: 0 
 | FC Barcelona vs Getafe | Result: draw | yes | 0.0600 | 0.149 [0.073, 0.236] | +0.085 | +0.031 | 0.08 | - |  | RESEARCH_CANDIDATE |
 | SC Paderborn 07 vs VfB Stuttgart | Result: draw | yes | 0.2000 | 0.286 [0.211, 0.367] | +0.075 | +0.026 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Tigres UANL vs Toluca | away team total over 1.5 | no | 0.5400 | 0.670 [0.516, 0.806] | +0.113 | +0.025 | 0.56 | - | * | RESEARCH_CANDIDATE |
+| Athletico Paranaense vs Atlético Mineiro | home wins by more than 2.5 | yes | 0.0300 | 0.124 [0.039, 0.244] | +0.092 | +0.025 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Inter Milan vs Parma | Result: draw | yes | 0.0900 | 0.171 [0.097, 0.247] | +0.075 | +0.025 | 0.11 | - |  | RESEARCH_CANDIDATE |
 | Tigres UANL vs Toluca | btts | no | 0.4100 | 0.531 [0.398, 0.656] | +0.104 | +0.020 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Toronto FC vs CF Montréal | First-half result: away | no | 0.7700 | 0.841 [0.759, 0.911] | +0.059 | +0.016 | 0.78 | - | * | RESEARCH_CANDIDATE |
@@ -88,7 +89,6 @@ model board generated 2026-10-08T22:35:53.411467Z · simulations this update: 0 
 | Paris Saint-Germain vs Le Mans | Result: away | yes | 0.0400 | 0.145 [0.036, 0.285] | +0.103 | +0.015 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Bahia | btts | no | 0.4400 | 0.552 [0.423, 0.670] | +0.094 | +0.015 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Arsenal vs Leeds United | Result: draw | yes | 0.1900 | 0.262 [0.190, 0.331] | +0.061 | +0.014 | 0.2 | - |  | RESEARCH_CANDIDATE |
-| Athletico Paranaense vs Atlético Mineiro | home wins by more than 2.5 | yes | 0.0400 | 0.124 [0.039, 0.244] | +0.082 | +0.014 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Toronto FC vs CF Montréal | away wins by more than 1.5 | no | 0.9000 | 0.943 [0.899, 0.979] | +0.037 | +0.014 | 0.91 | - | * | RESEARCH_CANDIDATE |
 | Chicago Fire vs New York City FC | away team total over 1.5 | no | 0.6600 | 0.757 [0.637, 0.861] | +0.081 | +0.013 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Napoli vs Frosinone | Result: away | yes | 0.1500 | 0.289 [0.122, 0.485] | +0.130 | +0.011 | 0.16 | - |  | RESEARCH_CANDIDATE |
