@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261008T154315Z-06b7c1` · generated 2026-10-08T15:43:15.422094Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261008T155817Z-d7bffe` · generated 2026-10-08T15:58:17.915814Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-08T15:40:50.421834Z (CURRENT at publish; CURRENT until 2026-10-08T16:00:50.421834Z, STALE after 2026-10-08T16:10:50.421834Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-08T15:55:53.008809Z (CURRENT at publish; CURRENT until 2026-10-08T16:15:53.008809Z, STALE after 2026-10-08T16:25:53.008809Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-08T15:28:17.369378Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.22s
+model board generated 2026-10-08T15:28:17.369378Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.19s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -38,7 +38,7 @@ model board generated 2026-10-08T15:28:17.369378Z · simulations this update: 0 
 | 2026-10-10T14:15:00Z | Deportivo Alavés vs Atlético Madrid (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 57 | 0 |
 | 2026-10-10T15:15:00Z | Lille vs Le Havre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (36; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (37; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -65,7 +65,6 @@ model board generated 2026-10-08T15:28:17.369378Z · simulations this update: 0 
 | Arsenal vs Leeds United | Result: draw | yes | 0.1900 | 0.262 [0.190, 0.331] | +0.061 | +0.014 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Mainz 05 vs Bayer Leverkusen | Result: away | no | 0.5600 | 0.686 [0.527, 0.841] | +0.109 | +0.012 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Santos vs Flamengo | away wins by more than 1.5 | no | 0.7000 | 0.797 [0.676, 0.904] | +0.083 | +0.012 | 0.71 | - | * | RESEARCH_CANDIDATE |
-| Santos vs Flamengo | away wins by more than 2.5 | no | 0.8600 | 0.917 [0.844, 0.973] | +0.049 | +0.011 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Tigres UANL vs Toluca | btts | no | 0.4200 | 0.531 [0.398, 0.656] | +0.094 | +0.010 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Bahia | Total goals over 2.5 | no | 0.4000 | 0.532 [0.359, 0.691] | +0.115 | +0.009 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Tigres UANL vs Toluca | away team total over 0.5 | no | 0.2200 | 0.320 [0.196, 0.446] | +0.088 | +0.008 | 0.22 | - |  | RESEARCH_CANDIDATE |
@@ -74,6 +73,8 @@ model board generated 2026-10-08T15:28:17.369378Z · simulations this update: 0 
 | Tigres UANL vs Toluca | Total goals over 2.5 | no | 0.4500 | 0.575 [0.400, 0.727] | +0.107 | +0.005 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Bahia | Total goals over 3.5 | no | 0.6300 | 0.736 [0.580, 0.867] | +0.090 | +0.003 | 0.63 | - |  | RESEARCH_CANDIDATE |
 | Santos vs Flamengo | Result: home | yes | 0.2200 | 0.333 [0.194, 0.477] | +0.101 | +0.003 | 0.22 | - |  | RESEARCH_CANDIDATE |
+| Santos vs Flamengo | home wins by more than 2.5 | yes | 0.0200 | 0.058 [0.017, 0.115] | +0.037 | +0.003 | 0.02 | - |  | RESEARCH_CANDIDATE |
+| Santos vs Flamengo | away wins by more than 2.5 | no | 0.8700 | 0.917 [0.844, 0.973] | +0.039 | +0.002 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Bahia | Total goals over 0.5 | no | 0.0500 | 0.092 [0.040, 0.148] | +0.038 | +0.001 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Tigres UANL vs Toluca | Total goals over 4.5 | no | 0.8400 | 0.893 [0.797, 0.963] | +0.044 | +0.000 | 0.84 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs León | Total goals over 2.5 | no | 0.5100 | 0.620 [0.448, 0.770] | +0.093 | +0.000 | 0.51 | - | * | RESEARCH_CANDIDATE |
@@ -82,9 +83,9 @@ model board generated 2026-10-08T15:28:17.369378Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 426
+action_NO_EDGE: 425
 action_NO_QUOTE: 2354
-action_RESEARCH_CANDIDATE: 36
+action_RESEARCH_CANDIDATE: 37
 contract_sides: 2816
 fixtures: 25
 fixtures_model_invalidated: 0
