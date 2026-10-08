@@ -1,0 +1,88 @@
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261008T002606Z",
+  "complete": true,
+  "discovered": 5077,
+  "written": 843,
+  "path": "work/snapshots/2026-10-08/cap-20261008T002606Z.jsonl"
+}
+{
+  "reference_probabilities": 0,
+  "observed_at": "2026-10-08 00:26:16.073529+00:00",
+  "groups": 0,
+  "unmapped_fixture_groups": 0,
+  "incomplete_groups": 0,
+  "snapshots": 0,
+  "provider_notes": [
+    "46 rows, 46 skipped (unmapped division/team)",
+    "skipped_by_division={'E2': 3, 'E3': 8, 'EC': 11, 'SC1': 3, 'SC2': 5, 'SC3': 5, 'SP2': 11}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-08T00:26:17.346372Z", "batch_id": "kd-20261008T002346Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-10-08T00:26:17.364484+00:00",
+ "leagues": [
+  "bra.1"
+ ],
+ "events": 4,
+ "fixtures_mapped": 4,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 1,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 4,
+  "captured": 0,
+  "unchanged": 4,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 4,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 4,
+  "captured": 4,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261008T002622Z-2fac3d", "mode": "reprice_only", "fixtures": 8, "contract_sides": 624, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.083, "price_changes_vs_previous": 20}
+[dispatch] holding 11.9 min (next window opens in 1193.1 min)
+[dispatch] holding 15.0 min (next window opens in 1181.2 min)
+[dispatch] holding 30.0 min (next window opens in 1166.3 min)
+[dispatch] holding 30.0 min (next window opens in 1136.2 min)
+[dispatch] holding 30.0 min (next window opens in 1106.2 min)
+[dispatch] holding 30.0 min (next window opens in 1076.2 min)
+[dispatch] holding 30.0 min (next window opens in 1046.2 min)
+[dispatch] holding 30.0 min (next window opens in 1016.2 min)
+[dispatch] holding 30.0 min (next window opens in 986.2 min)
+[dispatch] holding 30.0 min (next window opens in 956.2 min)
+[dispatch] holding 30.0 min (next window opens in 926.2 min)
+[dispatch] holding 28.9 min (next window opens in 896.2 min)
+{
+ "batches": 1,
+ "horizons_delivered": 1,
+ "missed_states": {},
+ "paid_calls": 0,
+ "credits_spent": 0,
+ "end_reason": "link_time_limit",
+ "chain_continue": true,
+ "delivered_total": 338,
+ "missed_total": 137,
+ "delivery_rate_total": 0.7115789473684211
+}
