@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261008T184356Z-56d173` · generated 2026-10-08T18:43:56.854692Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261008T185903Z-06a078` · generated 2026-10-08T18:59:03.190620Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-08T18:41:29.162713Z (CURRENT at publish; CURRENT until 2026-10-08T19:01:29.162713Z, STALE after 2026-10-08T19:11:29.162713Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-08T18:56:31.094220Z (CURRENT at publish; CURRENT until 2026-10-08T19:16:31.094220Z, STALE after 2026-10-08T19:26:31.094220Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-08T16:58:30.036806Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.23s
+model board generated 2026-10-08T18:59:01.929081Z · simulations this update: 5 · Odds API calls this update: 0 (credits 0) · reprice 0.24s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -43,8 +43,13 @@ model board generated 2026-10-08T16:58:30.036806Z · simulations this update: 0 
 | 2026-10-10T16:30:00Z | RB Leipzig vs Eintracht Frankfurt (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T17:00:00Z | Toronto FC vs CF Montréal (usa.mls) | VALID (STALE) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-10T18:30:00Z | Chicago Fire vs New York City FC (usa.mls) | VALID (STALE) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-10T18:45:00Z | Brest vs Angers (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-10T18:45:00Z | Lorient vs Paris FC (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-10T18:45:00Z | AS Monaco vs Toulouse (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-10T18:45:00Z | Paris Saint-Germain vs Le Mans (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-10T18:45:00Z | Napoli vs Frosinone (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (46; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (51; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -53,11 +58,14 @@ model board generated 2026-10-08T16:58:30.036806Z · simulations this update: 0 
 | Athletico Paranaense vs Atlético Mineiro | Result: home | yes | 0.2550 | 0.500 [0.333, 0.671] | +0.232 | +0.121 | 0.37 | - | * | RESEARCH_CANDIDATE |
 | FC Augsburg vs Bayern Munich | Result: home | yes | 0.0800 | 0.272 [0.119, 0.450] | +0.187 | +0.076 | 0.15 | - |  | RESEARCH_CANDIDATE |
 | Athletico Paranaense vs Atlético Mineiro | home wins by more than 1.5 | yes | 0.0900 | 0.274 [0.131, 0.445] | +0.178 | +0.075 | 0.16 | - | * | RESEARCH_CANDIDATE |
+| Napoli vs Frosinone | Result: home | no | 0.3400 | 0.560 [0.344, 0.773] | +0.204 | +0.066 | 0.4 | - | * | RESEARCH_CANDIDATE |
+| Paris Saint-Germain vs Le Mans | Result: home | no | 0.1000 | 0.319 [0.114, 0.537] | +0.213 | +0.063 | 0.15 | - | * | RESEARCH_CANDIDATE |
 | FC Augsburg vs Bayern Munich | Result: draw | yes | 0.1000 | 0.195 [0.146, 0.243] | +0.089 | +0.059 | 0.15 | - |  | RESEARCH_CANDIDATE |
 | Arsenal vs Leeds United | Result: home | no | 0.2900 | 0.473 [0.308, 0.645] | +0.169 | +0.056 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Deportivo Alavés vs Atlético Madrid | Result: away | no | 0.4700 | 0.637 [0.482, 0.786] | +0.150 | +0.051 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs León | away team total over 1.5 | no | 0.6000 | 0.744 [0.604, 0.859] | +0.128 | +0.049 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Deportivo Alavés vs Atlético Madrid | Result: home | yes | 0.2200 | 0.390 [0.241, 0.555] | +0.158 | +0.048 | 0.26 | - |  | RESEARCH_CANDIDATE |
+| Paris Saint-Germain vs Le Mans | Result: draw | yes | 0.0600 | 0.173 [0.075, 0.271] | +0.109 | +0.044 | 0.1 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs León | away team total over 0.5 | no | 0.2500 | 0.391 [0.256, 0.519] | +0.128 | +0.041 | 0.28 | - |  | RESEARCH_CANDIDATE |
 | Inter Milan vs Parma | Result: home | no | 0.1400 | 0.290 [0.147, 0.449] | +0.141 | +0.040 | 0.17 | - | * | RESEARCH_CANDIDATE |
 | SC Paderborn 07 vs VfB Stuttgart | Result: home | yes | 0.1900 | 0.373 [0.193, 0.585] | +0.172 | +0.039 | 0.22 | - |  | RESEARCH_CANDIDATE |
@@ -70,34 +78,31 @@ model board generated 2026-10-08T16:58:30.036806Z · simulations this update: 0 
 | Inter Milan vs Parma | Result: draw | yes | 0.0900 | 0.171 [0.097, 0.247] | +0.075 | +0.025 | 0.11 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Bahia | Total goals over 3.5 | no | 0.6100 | 0.736 [0.580, 0.867] | +0.109 | +0.023 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | Arsenal vs Leeds United | Result: away | yes | 0.1100 | 0.211 [0.104, 0.342] | +0.094 | +0.015 | 0.12 | - |  | RESEARCH_CANDIDATE |
+| Paris Saint-Germain vs Le Mans | Result: away | yes | 0.0400 | 0.145 [0.036, 0.285] | +0.103 | +0.015 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Bahia | btts | no | 0.4400 | 0.552 [0.423, 0.670] | +0.094 | +0.015 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Arsenal vs Leeds United | Result: draw | yes | 0.1900 | 0.262 [0.190, 0.331] | +0.061 | +0.014 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs León | away team total over 2.5 | no | 0.8600 | 0.916 [0.842, 0.971] | +0.048 | +0.013 | 0.87 | - |  | RESEARCH_CANDIDATE |
+| Mainz 05 vs Bayer Leverkusen | Result: away | no | 0.5600 | 0.686 [0.527, 0.841] | +0.109 | +0.012 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Santos vs Flamengo | away wins by more than 1.5 | no | 0.7000 | 0.797 [0.676, 0.904] | +0.083 | +0.012 | 0.71 | - | * | RESEARCH_CANDIDATE |
 | Santos vs Flamengo | away wins by more than 2.5 | no | 0.8600 | 0.917 [0.844, 0.973] | +0.049 | +0.011 | 0.87 | - |  | RESEARCH_CANDIDATE |
+| Napoli vs Frosinone | Result: away | yes | 0.1500 | 0.289 [0.122, 0.485] | +0.130 | +0.011 | 0.16 | - |  | RESEARCH_CANDIDATE |
 | Tigres UANL vs Toluca | btts | no | 0.4200 | 0.531 [0.398, 0.656] | +0.094 | +0.010 | 0.42 | - | * | RESEARCH_CANDIDATE |
+| Napoli vs Frosinone | Result: draw | yes | 0.2000 | 0.271 [0.191, 0.356] | +0.060 | +0.009 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Inter Milan vs Parma | Result: away | yes | 0.0500 | 0.119 [0.046, 0.212] | +0.065 | +0.009 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Bahia | Total goals over 2.5 | no | 0.4000 | 0.532 [0.359, 0.691] | +0.115 | +0.009 | 0.4 | - |  | RESEARCH_CANDIDATE |
+| Santos vs Flamengo | Result: home | yes | 0.2150 | 0.333 [0.194, 0.477] | +0.106 | +0.009 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Tigres UANL vs Toluca | away team total over 0.5 | no | 0.2200 | 0.320 [0.196, 0.446] | +0.088 | +0.008 | 0.22 | - | * | RESEARCH_CANDIDATE |
-| Puebla vs León | Result: away | no | 0.6000 | 0.707 [0.571, 0.836] | +0.090 | +0.008 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Bahia | Total goals over 1.5 | no | 0.1800 | 0.283 [0.154, 0.416] | +0.093 | +0.007 | 0.18 | - |  | RESEARCH_CANDIDATE |
-| Puebla vs León | away wins by more than 1.5 | no | 0.8300 | 0.887 [0.805, 0.955] | +0.047 | +0.007 | 0.83 | - | * | RESEARCH_CANDIDATE |
-| Puebla vs León | away wins by more than 2.5 | no | 0.9400 | 0.965 [0.931, 0.991] | +0.021 | +0.006 | 0.94 | - |  | RESEARCH_CANDIDATE |
-| Tigres UANL vs Toluca | away team total over 2.5 | no | 0.8100 | 0.875 [0.776, 0.952] | +0.055 | +0.006 | 0.81 | - |  | RESEARCH_CANDIDATE |
-| Tigres UANL vs Toluca | away team total over 1.5 | no | 0.5600 | 0.670 [0.516, 0.806] | +0.093 | +0.006 | 0.56 | - |  | RESEARCH_CANDIDATE |
-| Tigres UANL vs Toluca | Total goals over 2.5 | no | 0.4500 | 0.575 [0.400, 0.727] | +0.107 | +0.005 | 0.45 | - | * | RESEARCH_CANDIDATE |
-| Santos vs Flamengo | Result: home | yes | 0.2200 | 0.333 [0.194, 0.477] | +0.101 | +0.003 | 0.22 | - |  | RESEARCH_CANDIDATE |
-| Santos vs Flamengo | home wins by more than 1.5 | yes | 0.0800 | 0.154 [0.066, 0.259] | +0.069 | +0.003 | 0.08 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_MODEL_STALE: 56
-action_NO_EDGE: 440
+action_NO_EDGE: 465
 action_NO_QUOTE: 200
-action_RESEARCH_CANDIDATE: 46
-contract_sides: 742
-fixtures: 31
+action_RESEARCH_CANDIDATE: 51
+contract_sides: 772
+fixtures: 36
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
