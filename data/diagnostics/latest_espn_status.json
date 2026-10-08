@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-07T23:10:16.836877+00:00",
-  "events": 535,
-  "events_skipped_unmapped": 261,
-  "fixtures_mapped": 274,
+  "as_of": "2026-10-08T06:15:32.431232+00:00",
+  "events": 518,
+  "events_skipped_unmapped": 249,
+  "fixtures_mapped": 269,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=65"
+      "weather_stopped:consecutive_failures:skipped=69"
     ],
     "state": "DEGRADED"
   },
@@ -81,40 +81,44 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 19,
-    "events": 21,
+    "captured": 6,
+    "events": 10,
     "failures": [],
-    "published_post": 6,
-    "published_pre_kickoff": 4,
-    "unchanged": 2,
-    "unpublished": 11
+    "published_post": 0,
+    "published_pre_kickoff": 0,
+    "unchanged": 4,
+    "unpublished": 10
   },
   "map_proposals": {
+    "bel.1": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "936": "Sint-Truidense"
+      }
+    },
     "concacaf.nations.league": {
       "ambiguous": {},
       "proposed": {},
       "unresolved": {
-        "2645": "US Virgin Islands",
         "2665": "Turks and Caicos Islands"
+      }
+    },
+    "den.1": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "7853": "AGF",
+        "909": "F.C. K\u00f8benhavn"
       }
     },
     "esp.copa_del_rey": {
       "ambiguous": {},
       "proposed": {},
       "unresolved": {
-        "131412": "Maracena",
-        "131419": "Atl\u00e9tico Melilla",
         "133831": "Sporting Hortaleza",
-        "133832": "Atl\u00e9tico Pinatarense",
         "133833": "Atl\u00e9tico Uni\u00f3n G\u00fc\u00edmar",
-        "133836": "CD San Jos\u00e9",
         "133840": "CF San Rafael",
-        "133841": "CP Talayuela",
-        "133842": "Ribadesella",
-        "133843": "Sporting de Alc\u00e1zar",
-        "133846": "Tavernes de la Valldigna",
-        "133847": "Auriense Cented Academy",
-        "133850": "SD Noja",
         "18334": "AE Prat"
       }
     },
@@ -122,23 +126,17 @@
       "ambiguous": {},
       "proposed": {},
       "unresolved": {
-        "204": "Bolivia",
         "2844": "Benin",
         "2848": "Kenya",
-        "2849": "Mali",
         "2850": "Congo DR",
         "2851": "Rwanda",
         "4211": "Uganda",
         "4385": "India",
-        "4388": "Lebanon",
         "454": "Russia",
         "5534": "Mauritius",
         "5782": "Sri Lanka",
         "658": "China",
         "6723": "Tajikistan",
-        "6724": "Kyrgyz Republic",
-        "7368": "Gambia",
-        "8601": "Comoros",
         "8937": "Niger"
       }
     },
@@ -146,7 +144,16 @@
       "ambiguous": {},
       "proposed": {},
       "unresolved": {
-        "510": "Viking FK"
+        "510": "Viking FK",
+        "620": "SK Brann",
+        "987": "Lillestrom"
+      }
+    },
+    "swe.1": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "20301": "Mj\u00e4llby AIF"
       }
     },
     "uefa.champions": {
@@ -156,10 +163,42 @@
         "21922": "Sabah FK",
         "510": "Viking FK"
       }
+    },
+    "uefa.europa": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "1010": "OFI Crete",
+        "13083": "Hapoel Be'er",
+        "20024": "Ararat-Armenia",
+        "21615": "Torreense",
+        "490": "Levski Sofia",
+        "987": "Lillestrom"
+      }
+    },
+    "uefa.europa.conf": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "19246": "Riga FC",
+        "20025": "Iberia 1999",
+        "20028": "Kauno Zalgiris",
+        "20301": "Mj\u00e4llby AIF",
+        "20703": "Inter D'Escaldes",
+        "21943": "Egnatia",
+        "3024": "FC Thun",
+        "489": "Hajduk Split",
+        "620": "SK Brann",
+        "7853": "AGF",
+        "8089": "CSU Craiova",
+        "8169": "KuPS Kuopio",
+        "909": "F.C. K\u00f8benhavn",
+        "936": "Sint-Truidense"
+      }
     }
   },
   "map_version": "4",
-  "results_appended": 0,
+  "results_appended": 6,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -176,7 +215,6 @@
     "eng.4",
     "eng.5",
     "esp.2",
-    "esp.w.1",
     "fra.2",
     "ger.2",
     "ita.2",
@@ -188,55 +226,58 @@
     "usa.usl.1"
   ],
   "unmapped_team_ids": {
-    "131412": "Maracena",
-    "131419": "Atl\u00e9tico Melilla",
+    "1010": "OFI Crete",
+    "13083": "Hapoel Be'er",
     "133831": "Sporting Hortaleza",
-    "133832": "Atl\u00e9tico Pinatarense",
     "133833": "Atl\u00e9tico Uni\u00f3n G\u00fc\u00edmar",
-    "133836": "CD San Jos\u00e9",
     "133840": "CF San Rafael",
-    "133841": "CP Talayuela",
-    "133842": "Ribadesella",
-    "133843": "Sporting de Alc\u00e1zar",
-    "133846": "Tavernes de la Valldigna",
-    "133847": "Auriense Cented Academy",
-    "133850": "SD Noja",
     "18334": "AE Prat",
-    "204": "Bolivia",
+    "19246": "Riga FC",
+    "20024": "Ararat-Armenia",
+    "20025": "Iberia 1999",
+    "20028": "Kauno Zalgiris",
+    "20301": "Mj\u00e4llby AIF",
+    "20703": "Inter D'Escaldes",
+    "21615": "Torreense",
     "21922": "Sabah FK",
-    "2645": "US Virgin Islands",
+    "21943": "Egnatia",
     "2665": "Turks and Caicos Islands",
     "2844": "Benin",
     "2848": "Kenya",
-    "2849": "Mali",
     "2850": "Congo DR",
     "2851": "Rwanda",
+    "3024": "FC Thun",
     "4211": "Uganda",
     "4385": "India",
-    "4388": "Lebanon",
     "454": "Russia",
+    "489": "Hajduk Split",
+    "490": "Levski Sofia",
     "510": "Viking FK",
     "5534": "Mauritius",
     "5782": "Sri Lanka",
+    "620": "SK Brann",
     "658": "China",
     "6723": "Tajikistan",
-    "6724": "Kyrgyz Republic",
-    "7368": "Gambia",
-    "8601": "Comoros",
-    "8937": "Niger"
+    "7853": "AGF",
+    "8089": "CSU Craiova",
+    "8169": "KuPS Kuopio",
+    "8937": "Niger",
+    "909": "F.C. K\u00f8benhavn",
+    "936": "Sint-Truidense",
+    "987": "Lillestrom"
   },
   "weather": {
-    "captured": 7,
-    "events": 75,
+    "captured": 9,
+    "events": 81,
     "failures": [
-      "401878976: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Beveren&count=5&language=en&for",
       "401878977: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Brugge&count=5&language=en&form",
-      "401878978: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=La%20Louvi\u00e8re&count=5&language="
+      "401878978: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=La%20Louvi\u00e8re&count=5&language=",
+      "401878973: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Genk&count=5&language=en&format"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 65,
+    "skipped": 69,
     "stopped": "consecutive_failures"
   }
 }
