@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261008T124304Z-6f93df` · generated 2026-10-08T12:43:04.614348Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261008T125805Z-f5f7b0` · generated 2026-10-08T12:58:05.395261Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-08T12:40:40.704139Z (CURRENT at publish; CURRENT until 2026-10-08T13:00:40.704139Z, STALE after 2026-10-08T13:10:40.704139Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-08T12:55:41.550164Z (CURRENT at publish; CURRENT until 2026-10-08T13:15:41.550164Z, STALE after 2026-10-08T13:25:41.550164Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-08T12:13:05.427363Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.05s
 
@@ -28,7 +28,7 @@ model board generated 2026-10-08T12:13:05.427363Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Athletico Paranaense vs Atlético Mineiro | Result: home | yes | 0.2750 | 0.501 [0.343, 0.670] | +0.212 | +0.101 | 0.37 | - | * | RESEARCH_CANDIDATE |
+| Athletico Paranaense vs Atlético Mineiro | Result: home | yes | 0.2700 | 0.501 [0.343, 0.670] | +0.217 | +0.107 | 0.37 | - | * | RESEARCH_CANDIDATE |
 | Athletico Paranaense vs Atlético Mineiro | home wins by more than 1.5 | yes | 0.1000 | 0.273 [0.139, 0.433] | +0.167 | +0.065 | 0.16 | - | * | RESEARCH_CANDIDATE |
 | Arsenal vs Leeds United | Result: home | no | 0.3000 | 0.473 [0.308, 0.645] | +0.158 | +0.045 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs León | btts | no | 0.4500 | 0.577 [0.453, 0.695] | +0.109 | +0.035 | 0.48 | - | * | RESEARCH_CANDIDATE |
