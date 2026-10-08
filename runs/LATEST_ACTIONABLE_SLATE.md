@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261008T231231Z-0aba51` · generated 2026-10-08T23:12:31.059707Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261008T232740Z-6f5583` · generated 2026-10-08T23:27:40.605406Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-08T23:10:02.855495Z (CURRENT at publish; CURRENT until 2026-10-08T23:30:02.855495Z, STALE after 2026-10-08T23:40:02.855495Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-08T23:25:02.884832Z (CURRENT at publish; CURRENT until 2026-10-08T23:45:02.884832Z, STALE after 2026-10-08T23:55:02.884832Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-08T22:35:53.411467Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.42s
+model board generated 2026-10-08T23:27:39.154836Z · simulations this update: 2 · Odds API calls this update: 1 (credits 3) · reprice 0.42s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,8 +12,8 @@ model board generated 2026-10-08T22:35:53.411467Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-09T00:30:00Z | Fluminense vs Coritiba (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-09T00:30:00Z | Palmeiras vs Bahia (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-09T00:30:00Z | Fluminense vs Coritiba (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
+| 2026-10-09T00:30:00Z | Palmeiras vs Bahia (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
 | 2026-10-09T18:30:00Z | Borussia Dortmund vs Werder Bremen (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-09T18:45:00Z | Lens vs Lyon (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-09T19:00:00Z | Málaga vs Espanyol (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -66,7 +66,6 @@ model board generated 2026-10-08T22:35:53.411467Z · simulations this update: 0 
 | FC Augsburg vs Bayern Munich | Result: draw | yes | 0.1000 | 0.195 [0.146, 0.243] | +0.089 | +0.059 | 0.15 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs León | away team total over 1.5 | no | 0.5900 | 0.744 [0.604, 0.859] | +0.137 | +0.059 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Arsenal vs Leeds United | Result: home | no | 0.2900 | 0.473 [0.308, 0.645] | +0.169 | +0.056 | 0.34 | - | * | RESEARCH_CANDIDATE |
-| Toronto FC vs CF Montréal | away team total over 0.5 | no | 0.2900 | 0.439 [0.314, 0.558] | +0.135 | +0.054 | 0.34 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs León | away team total over 0.5 | no | 0.2400 | 0.391 [0.256, 0.519] | +0.139 | +0.051 | 0.28 | - |  | RESEARCH_CANDIDATE |
 | Deportivo Alavés vs Atlético Madrid | Result: away | no | 0.4700 | 0.637 [0.482, 0.786] | +0.150 | +0.051 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | Deportivo Alavés vs Atlético Madrid | Result: home | yes | 0.2200 | 0.390 [0.241, 0.555] | +0.158 | +0.048 | 0.26 | - |  | RESEARCH_CANDIDATE |
@@ -76,6 +75,7 @@ model board generated 2026-10-08T22:35:53.411467Z · simulations this update: 0 
 | Chicago Fire vs New York City FC | btts | no | 0.3900 | 0.519 [0.404, 0.634] | +0.112 | +0.038 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | FC Barcelona vs Getafe | Result: home | no | 0.0900 | 0.222 [0.100, 0.363] | +0.127 | +0.037 | 0.12 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs León | btts | no | 0.4500 | 0.577 [0.452, 0.695] | +0.109 | +0.035 | 0.48 | - | * | RESEARCH_CANDIDATE |
+| Toronto FC vs CF Montréal | away team total over 0.5 | no | 0.3100 | 0.439 [0.314, 0.558] | +0.114 | +0.034 | 0.34 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs León | away team total over 2.5 | no | 0.8400 | 0.916 [0.842, 0.971] | +0.067 | +0.032 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | FC Barcelona vs Getafe | Result: draw | yes | 0.0600 | 0.149 [0.073, 0.236] | +0.085 | +0.031 | 0.08 | - |  | RESEARCH_CANDIDATE |
 | SC Paderborn 07 vs VfB Stuttgart | Result: draw | yes | 0.2000 | 0.286 [0.211, 0.367] | +0.075 | +0.026 | 0.22 | - |  | RESEARCH_CANDIDATE |
@@ -102,10 +102,10 @@ model board generated 2026-10-08T22:35:53.411467Z · simulations this update: 0 
 ```
 action_MODEL_INVALIDATED: 27
 action_MODEL_STALE: 56
-action_NO_EDGE: 676
-action_NO_QUOTE: 200
+action_NO_EDGE: 678
+action_NO_QUOTE: 138
 action_RESEARCH_CANDIDATE: 53
-contract_sides: 1012
+contract_sides: 952
 fixtures: 39
 fixtures_model_invalidated: 1
 fixtures_model_missing: 0
