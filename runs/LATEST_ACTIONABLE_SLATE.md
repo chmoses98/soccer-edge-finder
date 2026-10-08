@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261008T194402Z-21da1c` · generated 2026-10-08T19:44:02.046587Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261008T195903Z-18c9b9` · generated 2026-10-08T19:59:03.090715Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-08T19:41:34.148832Z (CURRENT at publish; CURRENT until 2026-10-08T20:01:34.148832Z, STALE after 2026-10-08T20:11:34.148832Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-08T19:56:35.292583Z (CURRENT at publish; CURRENT until 2026-10-08T20:16:35.292583Z, STALE after 2026-10-08T20:26:35.292583Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-08T19:14:01.867233Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.24s
 
@@ -50,7 +50,7 @@ model board generated 2026-10-08T19:14:01.867233Z · simulations this update: 0 
 | 2026-10-10T18:45:00Z | Napoli vs Frosinone (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T19:00:00Z | Real Madrid vs Villarreal (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (50; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (51; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -78,7 +78,6 @@ model board generated 2026-10-08T19:14:01.867233Z · simulations this update: 0 
 | Athletico Paranaense vs Atlético Mineiro | home wins by more than 2.5 | yes | 0.0300 | 0.124 [0.039, 0.244] | +0.092 | +0.025 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Inter Milan vs Parma | Result: draw | yes | 0.0900 | 0.171 [0.097, 0.247] | +0.075 | +0.025 | 0.11 | - |  | RESEARCH_CANDIDATE |
 | Tigres UANL vs Toluca | btts | no | 0.4100 | 0.531 [0.398, 0.656] | +0.104 | +0.020 | 0.42 | - | * | RESEARCH_CANDIDATE |
-| Napoli vs Frosinone | Result: draw | yes | 0.1900 | 0.271 [0.191, 0.356] | +0.071 | +0.020 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Arsenal vs Leeds United | Result: away | yes | 0.1100 | 0.211 [0.104, 0.342] | +0.094 | +0.015 | 0.12 | - |  | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Le Mans | Result: away | yes | 0.0400 | 0.145 [0.036, 0.285] | +0.103 | +0.015 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Bahia | btts | no | 0.4400 | 0.552 [0.423, 0.670] | +0.094 | +0.015 | 0.45 | - | * | RESEARCH_CANDIDATE |
@@ -88,20 +87,21 @@ model board generated 2026-10-08T19:14:01.867233Z · simulations this update: 0 
 | Santos vs Flamengo | away wins by more than 1.5 | no | 0.7000 | 0.797 [0.676, 0.904] | +0.083 | +0.012 | 0.71 | - | * | RESEARCH_CANDIDATE |
 | Santos vs Flamengo | away wins by more than 2.5 | no | 0.8600 | 0.917 [0.844, 0.973] | +0.049 | +0.011 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Napoli vs Frosinone | Result: away | yes | 0.1500 | 0.289 [0.122, 0.485] | +0.130 | +0.011 | 0.16 | - |  | RESEARCH_CANDIDATE |
+| Napoli vs Frosinone | Result: draw | yes | 0.2000 | 0.271 [0.191, 0.356] | +0.060 | +0.009 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Inter Milan vs Parma | Result: away | yes | 0.0500 | 0.119 [0.046, 0.212] | +0.065 | +0.009 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Bahia | Total goals over 2.5 | no | 0.4000 | 0.532 [0.359, 0.691] | +0.115 | +0.009 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Tigres UANL vs Toluca | away team total over 0.5 | no | 0.2200 | 0.320 [0.196, 0.446] | +0.088 | +0.008 | 0.22 | - | * | RESEARCH_CANDIDATE |
+| Puebla vs León | Result: away | no | 0.6000 | 0.707 [0.571, 0.836] | +0.090 | +0.008 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Bahia | Total goals over 1.5 | no | 0.1800 | 0.283 [0.154, 0.416] | +0.093 | +0.007 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs León | away wins by more than 1.5 | no | 0.8300 | 0.887 [0.805, 0.955] | +0.047 | +0.007 | 0.83 | - | * | RESEARCH_CANDIDATE |
-| Puebla vs León | away wins by more than 2.5 | no | 0.9400 | 0.965 [0.931, 0.991] | +0.021 | +0.006 | 0.94 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_MODEL_STALE: 56
-action_NO_EDGE: 472
+action_NO_EDGE: 471
 action_NO_QUOTE: 200
-action_RESEARCH_CANDIDATE: 50
+action_RESEARCH_CANDIDATE: 51
 contract_sides: 778
 fixtures: 37
 fixtures_model_invalidated: 0
