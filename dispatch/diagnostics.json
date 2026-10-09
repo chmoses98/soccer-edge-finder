@@ -1,11 +1,11 @@
 {
   "by_horizon": {
     "120": {
-      "achieved_minutes_median": 123.86,
+      "achieved_minutes_median": 123.79,
       "achieved_minutes_p10": 117.33,
       "achieved_minutes_p90": 125.77,
-      "delivered": 77,
-      "delivery_rate": 0.719626168224299,
+      "delivered": 78,
+      "delivery_rate": 0.7222222222222222,
       "lateness_minutes_max": 62.51,
       "lateness_minutes_median": -3.86,
       "missed": 30
@@ -34,8 +34,8 @@
       "achieved_minutes_median": 2.48,
       "achieved_minutes_p10": 1.57,
       "achieved_minutes_p90": 4.45,
-      "delivered": 79,
-      "delivery_rate": 0.7669902912621359,
+      "delivered": 81,
+      "delivery_rate": 0.7714285714285715,
       "lateness_minutes_max": 7.0,
       "lateness_minutes_median": 2.52,
       "missed": 24
@@ -51,27 +51,13 @@
       "missed": 31
     }
   },
-  "delivered_total": 391,
-  "delivery_rate_total": 0.740530303030303,
-  "fixtures_tracked": 107,
-  "generated_at": "2026-10-09T18:46:14Z",
+  "delivered_total": 394,
+  "delivery_rate_total": 0.7419962335216572,
+  "fixtures_tracked": 108,
+  "generated_at": "2026-10-09T18:57:42Z",
   "missed_total": 137,
-  "n_pending_fixtures": 120,
+  "n_pending_fixtures": 118,
   "pending_fixtures": [
-    {
-      "competition_id": "esp.la_liga",
-      "fixture_id": "fx:esp.la_liga:2026-27:esp.malaga:esp.espanyol:matchday_8",
-      "kickoff_utc": "2026-10-09T19:00:00Z",
-      "markets_discovered": 72,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "esp.la_liga",
-      "fixture_id": "fx:esp.la_liga:2026-27:esp.malaga:esp.espanyol",
-      "kickoff_utc": "2026-10-09T19:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
     {
       "competition_id": "arg.primera",
       "fixture_id": "fx:arg.primera:2026:arg.gimnasia_la_plata:arg.atletico_tucuman",
@@ -755,6 +741,20 @@
       "competition_id": "ger.bundesliga",
       "fixture_id": "fx:ger.bundesliga:2026-27:ger.freiburg:ger.schalke",
       "kickoff_utc": "2026-10-11T15:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "ita.serie_a",
+      "fixture_id": "fx:ita.serie_a:2026-27:ita.sassuolo:ita.milan",
+      "kickoff_utc": "2026-10-11T16:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "esp.la_liga",
+      "fixture_id": "fx:esp.la_liga:2026-27:esp.real_betis:esp.osasuna",
+      "kickoff_utc": "2026-10-11T16:30:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }
