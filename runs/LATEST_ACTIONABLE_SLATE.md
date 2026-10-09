@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261009T135405Z-a9397c` · generated 2026-10-09T13:54:05.182551Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261009T140907Z-f983d1` · generated 2026-10-09T14:09:07.861220Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-09T13:51:34.653457Z (CURRENT at publish; CURRENT until 2026-10-09T14:11:34.653457Z, STALE after 2026-10-09T14:21:34.653457Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-09T14:06:37.370170Z (CURRENT at publish; CURRENT until 2026-10-09T14:26:37.370170Z, STALE after 2026-10-09T14:36:37.370170Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-09T13:39:08.903989Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.53s
+model board generated 2026-10-09T13:39:08.903989Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.71s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -73,7 +73,7 @@ model board generated 2026-10-09T13:39:08.903989Z · simulations this update: 0 
 | 2026-10-11T13:00:00Z | Lecce vs Bologna (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-11T13:30:00Z | 1. FC Köln vs Borussia Mönchengladbach (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (72; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (73; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -94,12 +94,12 @@ model board generated 2026-10-09T13:39:08.903989Z · simulations this update: 0 
 | Arsenal vs Leeds United | Result: home | no | 0.3000 | 0.473 [0.308, 0.646] | +0.158 | +0.045 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs León | btts | no | 0.4400 | 0.577 [0.452, 0.695] | +0.119 | +0.045 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Vancouver Whitecaps | btts | no | 0.3900 | 0.525 [0.405, 0.638] | +0.118 | +0.043 | 0.43 | - | * | RESEARCH_CANDIDATE |
-| Los Angeles FC vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.6200 | 0.758 [0.618, 0.875] | +0.121 | +0.041 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Inter Milan vs Parma | Result: home | no | 0.1400 | 0.290 [0.146, 0.451] | +0.142 | +0.041 | 0.17 | - | * | RESEARCH_CANDIDATE |
 | SC Paderborn 07 vs VfB Stuttgart | Result: home | yes | 0.1900 | 0.373 [0.193, 0.585] | +0.173 | +0.039 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Toronto FC vs CF Montréal | away team total over 2.5 | no | 0.8700 | 0.940 [0.888, 0.979] | +0.062 | +0.037 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Hull City vs Everton | Result: home | yes | 0.2600 | 0.458 [0.247, 0.679] | +0.184 | +0.035 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Le Mans | Result: draw | yes | 0.0700 | 0.174 [0.075, 0.271] | +0.099 | +0.034 | 0.1 | - |  | RESEARCH_CANDIDATE |
+| Los Angeles FC vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.6300 | 0.758 [0.618, 0.875] | +0.111 | +0.031 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | FC Barcelona vs Getafe | Result: draw | yes | 0.0600 | 0.149 [0.073, 0.236] | +0.085 | +0.031 | 0.08 | - | * | RESEARCH_CANDIDATE |
 | Tigres UANL vs Toluca | btts | no | 0.4000 | 0.531 [0.398, 0.656] | +0.114 | +0.030 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Chicago Fire vs New York City FC | btts | no | 0.4000 | 0.519 [0.404, 0.634] | +0.102 | +0.028 | 0.42 | - | * | RESEARCH_CANDIDATE |
@@ -113,19 +113,19 @@ model board generated 2026-10-09T13:39:08.903989Z · simulations this update: 0 
 | Puebla vs León | away team total over 2.5 | no | 0.8500 | 0.916 [0.842, 0.971] | +0.058 | +0.023 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Napoli vs Frosinone | Result: draw | yes | 0.1900 | 0.272 [0.189, 0.356] | +0.071 | +0.021 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Tigres UANL vs Toluca | away team total over 0.5 | no | 0.2100 | 0.320 [0.196, 0.446] | +0.098 | +0.019 | 0.22 | - | * | RESEARCH_CANDIDATE |
+| Puebla vs León | away wins by more than 1.5 | no | 0.8200 | 0.887 [0.805, 0.955] | +0.056 | +0.016 | 0.83 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Vancouver Whitecaps | Total goals over 1.5 | no | 0.1900 | 0.304 [0.179, 0.430] | +0.103 | +0.016 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Toronto FC vs CF Montréal | First-half result: away | no | 0.7700 | 0.841 [0.759, 0.911] | +0.059 | +0.016 | 0.78 | - | * | RESEARCH_CANDIDATE |
 | Tigres UANL vs Toluca | away team total over 1.5 | no | 0.5500 | 0.670 [0.516, 0.806] | +0.103 | +0.015 | 0.56 | - |  | RESEARCH_CANDIDATE |
-| Arsenal vs Leeds United | Result: away | yes | 0.1100 | 0.211 [0.103, 0.342] | +0.095 | +0.015 | 0.12 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_MODEL_INVALIDATED: 27
 action_MODEL_STALE: 420
-action_NO_EDGE: 901
+action_NO_EDGE: 900
 action_NO_QUOTE: 204
-action_RESEARCH_CANDIDATE: 72
+action_RESEARCH_CANDIDATE: 73
 contract_sides: 1624
 fixtures: 60
 fixtures_model_invalidated: 1
