@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261009T105351Z-3fb782` · generated 2026-10-09T10:53:51.122429Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261009T110853Z-e5d89f` · generated 2026-10-09T11:08:53.132547Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-09T10:51:20.837183Z (CURRENT at publish; CURRENT until 2026-10-09T11:11:20.837183Z, STALE after 2026-10-09T11:21:20.837183Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-09T11:06:23.280597Z (CURRENT at publish; CURRENT until 2026-10-09T11:26:23.280597Z, STALE after 2026-10-09T11:36:23.280597Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-09T10:38:53.569377Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.52s
+model board generated 2026-10-09T10:38:53.569377Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.67s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -66,7 +66,7 @@ model board generated 2026-10-09T10:38:53.569377Z · simulations this update: 0 
 | 2026-10-11T03:10:00Z | Club América vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-11T10:30:00Z | Como vs AS Roma (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (70; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (71; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -108,17 +108,17 @@ model board generated 2026-10-09T10:38:53.569377Z · simulations this update: 0 
 | Toronto FC vs CF Montréal | First-half result: away | no | 0.7700 | 0.841 [0.759, 0.911] | +0.059 | +0.016 | 0.78 | - | * | RESEARCH_CANDIDATE |
 | Tigres UANL vs Toluca | away team total over 1.5 | no | 0.5500 | 0.670 [0.516, 0.806] | +0.103 | +0.015 | 0.56 | - |  | RESEARCH_CANDIDATE |
 | Arsenal vs Leeds United | Result: away | yes | 0.1100 | 0.211 [0.103, 0.342] | +0.095 | +0.015 | 0.12 | - |  | RESEARCH_CANDIDATE |
+| Tigres UANL vs Toluca | Total goals over 2.5 | no | 0.4400 | 0.575 [0.400, 0.727] | +0.117 | +0.015 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Le Mans | Result: away | yes | 0.0400 | 0.146 [0.036, 0.285] | +0.103 | +0.015 | 0.05 | - |  | RESEARCH_CANDIDATE |
-| Arsenal vs Leeds United | Result: draw | yes | 0.1900 | 0.262 [0.190, 0.331] | +0.061 | +0.014 | 0.2 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_MODEL_INVALIDATED: 27
 action_MODEL_STALE: 420
-action_NO_EDGE: 857
+action_NO_EDGE: 856
 action_NO_QUOTE: 208
-action_RESEARCH_CANDIDATE: 70
+action_RESEARCH_CANDIDATE: 71
 contract_sides: 1582
 fixtures: 53
 fixtures_model_invalidated: 1
