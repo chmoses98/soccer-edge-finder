@@ -1,10 +1,10 @@
 {
  "counts": {
   "PINNACLE_QUOTED_NOTHING": 15,
-  "PINNACLE_VALID_CLOSE": 18,
+  "PINNACLE_VALID_CLOSE": 22,
   "DISPATCHER_CLOSE_NO_ATTEMPT": 19,
-  "NO_SPORT_KEY": 19,
-  "MISSED_DISPATCHER_CLOSE": 24
+  "MISSED_DISPATCHER_CLOSE": 24,
+  "NO_SPORT_KEY": 19
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.atletico_tucuman:arg.barracas_central": {
@@ -37,6 +37,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261003T194500Z"
   },
+  "fx:bra.serie_a:2026:bra.athletico_paranaense:bra.atletico_mineiro": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261008T224500Z"
+  },
   "fx:bra.serie_a:2026:bra.atletico_mineiro:bra.bragantino": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
@@ -57,15 +62,30 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261008T001405Z"
   },
+  "fx:bra.serie_a:2026:bra.fluminense:bra.coritiba": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261009T001313Z"
+  },
   "fx:bra.serie_a:2026:bra.internacional:bra.corinthians": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261007T221439Z"
   },
+  "fx:bra.serie_a:2026:bra.palmeiras:bra.bahia": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261009T001313Z"
+  },
   "fx:bra.serie_a:2026:bra.remo:bra.gremio": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261007T221439Z"
+  },
+  "fx:bra.serie_a:2026:bra.santos:bra.flamengo": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261008T221412Z"
   },
   "fx:bra.serie_a:2026:bra.sao_paulo:bra.santos": {
    "state": "PINNACLE_VALID_CLOSE",
