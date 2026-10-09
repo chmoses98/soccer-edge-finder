@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261009T164022Z-fe549d` · generated 2026-10-09T16:40:22.771383Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261009T165420Z-058e36` · generated 2026-10-09T16:54:20.608069Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-09T16:36:48.410522Z (CURRENT at publish; CURRENT until 2026-10-09T16:56:48.410522Z, STALE after 2026-10-09T17:06:48.410522Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-09T16:51:44.547591Z (CURRENT at publish; CURRENT until 2026-10-09T17:11:44.547591Z, STALE after 2026-10-09T17:21:44.547591Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-09T16:09:56.635121Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.79s
+model board generated 2026-10-09T16:09:56.635121Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.70s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -79,12 +79,12 @@ model board generated 2026-10-09T16:09:56.635121Z · simulations this update: 0 
 | 2026-10-11T15:30:00Z | SC Freiburg vs Schalke 04 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-11T16:00:00Z | Sassuolo vs AC Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (177; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (178; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Vasco da Gama vs Remo | Result: home | yes | 0.0950 | 0.574 [0.423, 0.731] | +0.473 | +0.374 | 0.45 | - | * | RESEARCH_CANDIDATE |
-| Vasco da Gama vs Remo | home wins by more than 1.5 | yes | 0.0600 | 0.344 [0.198, 0.511] | +0.281 | +0.176 | 0.22 | - | * | RESEARCH_CANDIDATE |
+| Vasco da Gama vs Remo | home wins by more than 1.5 | yes | 0.0500 | 0.344 [0.198, 0.511] | +0.291 | +0.186 | 0.22 | - | * | RESEARCH_CANDIDATE |
 | FC Augsburg vs Bayern Munich | Result: away | no | 0.1700 | 0.467 [0.268, 0.665] | +0.287 | +0.158 | 0.32 | - | * | RESEARCH_CANDIDATE |
 | SC Paderborn 07 vs VfB Stuttgart | Result: away | no | 0.4000 | 0.659 [0.471, 0.831] | +0.242 | +0.122 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | away team total over 1.5 | no | 0.4700 | 0.690 [0.551, 0.816] | +0.203 | +0.120 | 0.59 | - | * | RESEARCH_CANDIDATE |
@@ -110,7 +110,6 @@ model board generated 2026-10-09T16:09:56.635121Z · simulations this update: 0 
 | Minnesota United vs Houston Dynamo | btts | no | 0.4000 | 0.560 [0.440, 0.677] | +0.143 | +0.064 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | First-half total goals over 1.5 | no | 0.5300 | 0.686 [0.558, 0.802] | +0.139 | +0.061 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Deportivo Alavés vs Atlético Madrid | Result: away | no | 0.4600 | 0.637 [0.486, 0.783] | +0.159 | +0.060 | 0.51 | - | * | RESEARCH_CANDIDATE |
-| New York Red Bulls vs San Diego FC | Total goals over 5.5 | no | 0.8500 | 0.943 [0.886, 0.985] | +0.085 | +0.060 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | FC Augsburg vs Bayern Munich | Result: draw | yes | 0.1000 | 0.195 [0.146, 0.243] | +0.089 | +0.060 | 0.15 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Nashville SC | Total goals over 2.5 | no | 0.4500 | 0.616 [0.458, 0.754] | +0.148 | +0.055 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Vancouver Whitecaps | btts | no | 0.3800 | 0.525 [0.405, 0.638] | +0.128 | +0.053 | 0.43 | - | * | RESEARCH_CANDIDATE |
@@ -118,6 +117,7 @@ model board generated 2026-10-09T16:09:56.635121Z · simulations this update: 0 
 | New England Revolution vs Seattle Sounders | away team total over 2.5 | no | 0.8600 | 0.944 [0.897, 0.981] | +0.076 | +0.052 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs León | away team total over 0.5 | no | 0.2400 | 0.391 [0.256, 0.519] | +0.139 | +0.051 | 0.28 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Nashville SC | away team total over 1.5 | no | 0.5000 | 0.656 [0.505, 0.788] | +0.138 | +0.050 | 0.55 | - | * | RESEARCH_CANDIDATE |
+| New York Red Bulls vs San Diego FC | Total goals over 5.5 | no | 0.8600 | 0.943 [0.886, 0.985] | +0.075 | +0.050 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs León | away team total over 1.5 | no | 0.6000 | 0.744 [0.604, 0.860] | +0.127 | +0.049 | 0.65 | - |  | RESEARCH_CANDIDATE |
 | Deportivo Alavés vs Atlético Madrid | Result: home | yes | 0.2200 | 0.389 [0.237, 0.560] | +0.157 | +0.048 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | away team total over 0.5 | no | 0.2000 | 0.337 [0.219, 0.458] | +0.126 | +0.047 | 0.24 | - |  | RESEARCH_CANDIDATE |
@@ -127,9 +127,9 @@ model board generated 2026-10-09T16:09:56.635121Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2568
-action_NO_QUOTE: 745
-action_RESEARCH_CANDIDATE: 177
+action_NO_EDGE: 2566
+action_NO_QUOTE: 746
+action_RESEARCH_CANDIDATE: 178
 contract_sides: 3490
 fixtures: 66
 fixtures_model_invalidated: 0
