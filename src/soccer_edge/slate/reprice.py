@@ -41,7 +41,7 @@ from soccer_edge.pricing.edge import EdgeConfig, assess
 from soccer_edge.pricing.edge_v2 import EdgeV2Config, assess_v2
 from soccer_edge.reference.capture import reference_for_contract
 from soccer_edge.run.pipeline import INTL_POOL_COMPETITIONS
-from soccer_edge.slate.board import priced_from_entry
+from soccer_edge.slate.board import orientation_conflicts, priced_from_entry
 from soccer_edge.slate.freshness import SlateFreshnessPolicy, classify
 from soccer_edge.slate.invalidation import current_kickoff, invalidation_reasons
 from soccer_edge.slate.market_view import MarketView
@@ -227,8 +227,12 @@ def reprice(rc: RepriceContext) -> ActionableSlateV1:
             "context": context_fr.status,
         }
         fx_contracts: list[SlateContractV1] = []
-        board_tickers = set(e["contracts"])
+        # a contract whose side cannot be trusted is never published (it counts as unmodelled)
+        untrusted = orientation_conflicts(e["contracts"])
+        board_tickers = set(e["contracts"]) - set(untrusted)
         for ticker, c in sorted(e["contracts"].items()):
+            if ticker in untrusted:
+                continue
             m = view.markets.get(ticker) if view is not None else None
             regime = view.regime(m) if (view is not None and m is not None) else None
             priced = priced_from_entry(ticker, c)

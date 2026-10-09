@@ -315,6 +315,7 @@ def run(
                 "unmapped_event": Disposition.UNMAPPED_EVENT,
                 "unmapped_team": Disposition.UNMAPPED_TEAM,
                 "ambiguous_team": Disposition.UNMAPPED_TEAM,
+                "side_conflict": Disposition.UNMAPPED_TEAM,
                 "no_fixture": Disposition.NO_FIXTURE,
                 "competition_only": Disposition.UNSUPPORTED_FAMILY,
                 "not_match_scope": Disposition.UNSUPPORTED_FAMILY,
@@ -437,9 +438,6 @@ def run(
                 w.sem = _resolve_semantics(w, fx, base_ctx)
             except UnsupportedSemantics as exc:
                 cov.set(w.market.ticker, Disposition.UNPRICEABLE, str(exc)[:160])
-        ws = [w for w in ws if w.sem is not None]
-        if not ws:
-            continue
         extras = []
         for w in board_only.get(fid, []):
             try:
@@ -447,6 +445,20 @@ def run(
                 extras.append(w)
             except UnsupportedSemantics:
                 continue
+        # two contracts of one event resolved to the same side (e.g. both 3-way team legs -> 'home'):
+        # at least one orientation is wrong and we cannot tell which, so neither is priced
+        dup = _duplicate_side_tickers([w for w in [*ws, *extras] if w.sem is not None])
+        for w in ws:
+            if w.market.ticker in dup and w.sem is not None:
+                cov.set(w.market.ticker, Disposition.UNPRICEABLE, dup[w.market.ticker])
+                w.sem = None
+        for w in extras:
+            if w.market.ticker in dup:
+                w.sem = None
+        extras = [w for w in extras if w.sem is not None]
+        ws = [w for w in ws if w.sem is not None]
+        if not ws:
+            continue
         ctx_json = {
             "fixture": fid,
             "home": fx.home_team_id,
@@ -486,7 +498,12 @@ def run(
         }
         tickers = [w.market.ticker for w in ws]
         cached = sim_cache.load(fid) if sim_cache else None
-        if cached and cached.sim_key == key and cached.has(tickers):
+        if (
+            cached
+            and cached.sim_key == key
+            and cached.has(tickers)
+            and _cached_semantics_match(cached, [*ws, *extras])
+        ):
             repriced.append(fid)
             cached_fixtures[fid] = (cm.posterior, base_ctx)
             fixture_summaries[fid] = cached.summary
@@ -553,7 +570,7 @@ def run(
                     out.outcome_hash(),
                     summ,
                     {
-                        w.market.ticker: compact(w.priced)
+                        w.market.ticker: {**compact(w.priced), "semantics": _sem_signature(w.sem)}
                         for w in [*ws, *extras]
                         if w.priced is not None
                     },
@@ -873,6 +890,50 @@ def _resolve_semantics(w: ContractWork, fx: Fixture, base_ctx: MatchContext) -> 
             f"{w.market.ticker}: first-to-score including extra time is not simulated for knockout legs"
         )
     return resolve_semantics(w.spec, side_is_home=side_home)
+
+
+_SIDE_FROM_TEAM_CODE_EXEMPT = frozenset({MarketFamily.PLAYER_GOALS})  # side comes from the lineup
+
+
+def _duplicate_side_tickers(ws: list[ContractWork]) -> dict[str, str]:
+    """Tickers of one fixture whose resolved semantics collide: same event, family, period, side, line
+    and k under different tickers. Kalshi lists one contract per outcome, so a collision means a team
+    code was mapped to the wrong side (the 2026-10-10 Vasco v Remo board priced both 3-way team legs
+    as 'home'). Returns ticker -> reason for every member of a colliding group."""
+    groups: dict[tuple[Any, ...], list[str]] = {}
+    for w in ws:
+        sem = w.sem
+        if sem is None or sem.side is None or sem.family in _SIDE_FROM_TEAM_CODE_EXEMPT:
+            continue
+        key = (w.market.event_ticker, sem.family, sem.period, sem.side, sem.line, sem.k)
+        groups.setdefault(key, []).append(w.market.ticker)
+    out: dict[str, str] = {}
+    for key, tks in groups.items():
+        if len(set(tks)) > 1:
+            for tk in tks:
+                out[tk] = (
+                    f"side mapping collision: {sorted(set(tks))} all resolve to "
+                    f"{key[1].value}/{key[3]}"
+                )[:160]
+    return out
+
+
+def _sem_signature(sem: Semantics | None) -> str | None:
+    if sem is None:
+        return None
+    return f"{sem.family.value}|{sem.period.value}|{sem.side}|{sem.line}|{sem.k}"
+
+
+def _cached_semantics_match(cached: CachedFixtureSim, ws: list[ContractWork]) -> bool:
+    """A cached price is reusable only if it was computed for the same resolved semantics: the sim key
+    covers the model and context, not how each ticker was oriented, so a mapping fix (or a changed
+    mapping) must not replay a probability priced on the other side. Entries written before the
+    signature existed carry none and are recomputed once."""
+    for w in ws:
+        c = cached.contracts.get(w.market.ticker)
+        if c is not None and c.get("semantics") != _sem_signature(w.sem):
+            return False
+    return True
 
 
 def _priced_from_cache(ticker: str, c: dict[str, Any]) -> PricedProbability:
