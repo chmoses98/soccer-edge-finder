@@ -34,8 +34,8 @@
       "achieved_minutes_median": 2.48,
       "achieved_minutes_p10": 1.57,
       "achieved_minutes_p90": 4.46,
-      "delivered": 72,
-      "delivery_rate": 0.75,
+      "delivered": 74,
+      "delivery_rate": 0.7551020408163265,
       "lateness_minutes_max": 7.0,
       "lateness_minutes_median": 2.52,
       "missed": 24
@@ -51,27 +51,13 @@
       "missed": 31
     }
   },
-  "delivered_total": 356,
-  "delivery_rate_total": 0.7221095334685599,
+  "delivered_total": 358,
+  "delivery_rate_total": 0.7232323232323232,
   "fixtures_tracked": 100,
-  "generated_at": "2026-10-09T00:15:45Z",
+  "generated_at": "2026-10-09T00:27:30Z",
   "missed_total": 137,
-  "n_pending_fixtures": 115,
+  "n_pending_fixtures": 113,
   "pending_fixtures": [
-    {
-      "competition_id": "bra.serie_a",
-      "fixture_id": "fx:bra.serie_a:2026:bra.palmeiras:bra.bahia",
-      "kickoff_utc": "2026-10-09T00:30:00Z",
-      "markets_discovered": 29,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "bra.serie_a",
-      "fixture_id": "fx:bra.serie_a:2026:bra.fluminense:bra.coritiba",
-      "kickoff_utc": "2026-10-09T00:30:00Z",
-      "markets_discovered": 29,
-      "source": "run_output"
-    },
     {
       "competition_id": "arg.primera",
       "fixture_id": "fx:arg.primera:2026:arg.aldosivi:arg.sarmiento",
@@ -755,6 +741,20 @@
       "competition_id": "esp.la_liga",
       "fixture_id": "fx:esp.la_liga:2026-27:esp.real_betis:esp.osasuna",
       "kickoff_utc": "2026-10-11T16:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "arg.primera",
+      "fixture_id": "fx:arg.primera:2026:arg.san_lorenzo:arg.deportivo_riestra",
+      "kickoff_utc": "2026-10-11T17:45:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "fra.ligue_1",
+      "fixture_id": "fx:fra.ligue_1:2026-27:fra.troyes:fra.marseille",
+      "kickoff_utc": "2026-10-11T18:45:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }
