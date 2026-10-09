@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261009T155449Z-a6f467` · generated 2026-10-09T15:54:49.228497Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261009T160957Z-083a7b` · generated 2026-10-09T16:09:57.606908Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-09T15:52:17.145255Z (CURRENT at publish; CURRENT until 2026-10-09T16:12:17.145255Z, STALE after 2026-10-09T16:22:17.145255Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-09T16:07:20.667338Z (CURRENT at publish; CURRENT until 2026-10-09T16:27:20.667338Z, STALE after 2026-10-09T16:37:20.667338Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-09T15:39:53.107812Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.88s
+model board generated 2026-10-09T16:09:56.635121Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 1.70s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -77,8 +77,9 @@ model board generated 2026-10-09T15:39:53.107812Z · simulations this update: 0 
 | 2026-10-11T15:15:00Z | Rennes vs AJ Auxerre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-11T15:30:00Z | Liverpool vs Manchester City (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-11T15:30:00Z | SC Freiburg vs Schalke 04 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-11T16:00:00Z | Sassuolo vs AC Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (178; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (179; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -106,11 +107,11 @@ model board generated 2026-10-09T15:39:53.107812Z · simulations this update: 0 
 | Los Angeles FC vs Vancouver Whitecaps | away team total over 1.5 | no | 0.5700 | 0.725 [0.598, 0.836] | +0.138 | +0.065 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | Total goals over 1.5 | no | 0.1300 | 0.285 [0.163, 0.415] | +0.147 | +0.064 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Minnesota United vs Houston Dynamo | btts | no | 0.4000 | 0.560 [0.440, 0.677] | +0.143 | +0.064 | 0.46 | - | * | RESEARCH_CANDIDATE |
-| Paris Saint-Germain vs Le Mans | Result: home | no | 0.1000 | 0.319 [0.114, 0.538] | +0.213 | +0.063 | 0.16 | - | * | RESEARCH_CANDIDATE |
 | Deportivo Alavés vs Atlético Madrid | Result: away | no | 0.4600 | 0.637 [0.486, 0.783] | +0.159 | +0.060 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | FC Augsburg vs Bayern Munich | Result: draw | yes | 0.1000 | 0.195 [0.146, 0.243] | +0.089 | +0.060 | 0.15 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Nashville SC | Total goals over 2.5 | no | 0.4500 | 0.616 [0.458, 0.754] | +0.148 | +0.055 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Vancouver Whitecaps | btts | no | 0.3800 | 0.525 [0.405, 0.638] | +0.128 | +0.053 | 0.43 | - | * | RESEARCH_CANDIDATE |
+| Paris Saint-Germain vs Le Mans | Result: home | no | 0.1100 | 0.319 [0.114, 0.538] | +0.202 | +0.053 | 0.16 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Seattle Sounders | away team total over 2.5 | no | 0.8600 | 0.944 [0.897, 0.981] | +0.076 | +0.052 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs León | away team total over 0.5 | no | 0.2400 | 0.391 [0.256, 0.519] | +0.139 | +0.051 | 0.28 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | First-half total goals over 1.5 | no | 0.5400 | 0.686 [0.558, 0.802] | +0.129 | +0.051 | 0.59 | - | * | RESEARCH_CANDIDATE |
@@ -126,11 +127,11 @@ model board generated 2026-10-09T15:39:53.107812Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2559
-action_NO_QUOTE: 747
-action_RESEARCH_CANDIDATE: 178
-contract_sides: 3484
-fixtures: 65
+action_NO_EDGE: 2565
+action_NO_QUOTE: 746
+action_RESEARCH_CANDIDATE: 179
+contract_sides: 3490
+fixtures: 66
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
