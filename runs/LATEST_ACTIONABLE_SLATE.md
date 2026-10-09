@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261009T095319Z-16bd20` · generated 2026-10-09T09:53:19.270681Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261009T100849Z-3f46a0` · generated 2026-10-09T10:08:49.493255Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-09T09:50:49.218159Z (CURRENT at publish; CURRENT until 2026-10-09T10:10:49.218159Z, STALE after 2026-10-09T10:20:49.218159Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-09T10:06:19.852193Z (CURRENT at publish; CURRENT until 2026-10-09T10:26:19.852193Z, STALE after 2026-10-09T10:36:19.852193Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-09T09:38:29.919081Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.52s
+model board generated 2026-10-09T09:38:29.919081Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.51s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -65,7 +65,7 @@ model board generated 2026-10-09T09:38:29.919081Z · simulations this update: 0 
 | 2026-10-11T02:30:00Z | Los Angeles FC vs Vancouver Whitecaps (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-11T03:10:00Z | Club América vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 
-## Candidates on CURRENT prices (69; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (70; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -115,9 +115,9 @@ model board generated 2026-10-09T09:38:29.919081Z · simulations this update: 0 
 ```
 action_MODEL_INVALIDATED: 27
 action_MODEL_STALE: 420
-action_NO_EDGE: 852
+action_NO_EDGE: 851
 action_NO_QUOTE: 208
-action_RESEARCH_CANDIDATE: 69
+action_RESEARCH_CANDIDATE: 70
 contract_sides: 1576
 fixtures: 52
 fixtures_model_invalidated: 1
