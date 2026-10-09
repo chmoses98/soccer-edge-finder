@@ -1,12 +1,17 @@
 {
  "counts": {
+  "MISSED_DISPATCHER_CLOSE": 24,
+  "PINNACLE_VALID_CLOSE": 25,
   "NO_SPORT_KEY": 19,
   "PINNACLE_QUOTED_NOTHING": 15,
-  "MISSED_DISPATCHER_CLOSE": 24,
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 19,
-  "PINNACLE_VALID_CLOSE": 22
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 24
  },
  "fixtures": {
+  "fx:arg.primera:2026:arg.aldosivi:arg.sarmiento": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
   "fx:arg.primera:2026:arg.atletico_tucuman:arg.barracas_central": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -21,6 +26,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261003T172913Z"
+  },
+  "fx:arg.primera:2026:arg.gimnasia_la_plata:arg.atletico_tucuman": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
   },
   "fx:arg.primera:2026:arg.independiente:arg.instituto": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -222,6 +232,16 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:esp.la_liga:2026-27:esp.malaga:esp.espanyol": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:esp.la_liga:2026-27:esp.malaga:esp.espanyol:matchday_8": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261009T184332Z"
+  },
   "fx:fifa.friendly:2026:nat.aus:nat.bra": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -281,6 +301,26 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:fra.ligue_1:2026-27:fra.lens:fra.lyon": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:fra.ligue_1:2026-27:fra.lens:fra.lyon:matchday_6": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261009T182902Z"
+  },
+  "fx:ger.bundesliga:2026-27:ger.dortmund:ger.werder_bremen": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:ger.bundesliga:2026-27:ger.dortmund:ger.werder_bremen:matchday_5": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261009T181345Z"
   },
   "fx:uefa.nations_league:2026-27:nat.aze:nat.lie": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
