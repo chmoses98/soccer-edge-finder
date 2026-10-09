@@ -34,37 +34,30 @@
       "achieved_minutes_median": 2.48,
       "achieved_minutes_p10": 1.57,
       "achieved_minutes_p90": 4.46,
-      "delivered": 74,
-      "delivery_rate": 0.7551020408163265,
+      "delivered": 75,
+      "delivery_rate": 0.7575757575757576,
       "lateness_minutes_max": 7.0,
       "lateness_minutes_median": 2.52,
       "missed": 24
     },
     "60": {
-      "achieved_minutes_median": 61.0,
+      "achieved_minutes_median": 61.12,
       "achieved_minutes_p10": 56.4,
       "achieved_minutes_p90": 62.7,
-      "delivered": 69,
-      "delivery_rate": 0.69,
+      "delivered": 71,
+      "delivery_rate": 0.696078431372549,
       "lateness_minutes_max": 25.07,
-      "lateness_minutes_median": -1.0,
+      "lateness_minutes_median": -1.12,
       "missed": 31
     }
   },
-  "delivered_total": 368,
-  "delivery_rate_total": 0.7287128712871287,
+  "delivered_total": 371,
+  "delivery_rate_total": 0.7303149606299213,
   "fixtures_tracked": 107,
-  "generated_at": "2026-10-09T17:17:39Z",
+  "generated_at": "2026-10-09T17:27:45Z",
   "missed_total": 137,
-  "n_pending_fixtures": 125,
+  "n_pending_fixtures": 124,
   "pending_fixtures": [
-    {
-      "competition_id": "arg.primera",
-      "fixture_id": "fx:arg.primera:2026:arg.aldosivi:arg.sarmiento",
-      "kickoff_utc": "2026-10-09T17:30:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
     {
       "competition_id": "ger.bundesliga",
       "fixture_id": "fx:ger.bundesliga:2026-27:ger.dortmund:ger.werder_bremen:matchday_5",
@@ -757,6 +750,13 @@
       "kickoff_utc": "2026-10-11T13:30:00Z",
       "markets_discovered": 0,
       "source": "espn"
+    },
+    {
+      "competition_id": "esp.la_liga",
+      "fixture_id": "fx:esp.la_liga:2026-27:esp.real_sociedad:esp.deportivo:matchday_8",
+      "kickoff_utc": "2026-10-11T14:15:00Z",
+      "markets_discovered": 14,
+      "source": "run_output"
     }
   ],
   "required_horizons": [
