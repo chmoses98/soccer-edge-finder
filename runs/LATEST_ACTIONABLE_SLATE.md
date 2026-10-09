@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261009T102349Z-0c0941` · generated 2026-10-09T10:23:49.638440Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261009T103854Z-f75d05` · generated 2026-10-09T10:38:54.451694Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-09T10:21:19.856118Z (CURRENT at publish; CURRENT until 2026-10-09T10:41:19.856118Z, STALE after 2026-10-09T10:51:19.856118Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-09T10:36:20.833723Z (CURRENT at publish; CURRENT until 2026-10-09T10:56:20.833723Z, STALE after 2026-10-09T11:06:20.833723Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-09T09:38:29.919081Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.52s
+model board generated 2026-10-09T10:38:53.569377Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.51s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -64,6 +64,7 @@ model board generated 2026-10-09T09:38:29.919081Z · simulations this update: 0 
 | 2026-10-11T01:30:00Z | Colorado Rapids vs San Jose Earthquakes (usa.mls) | VALID (STALE) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-11T02:30:00Z | Los Angeles FC vs Vancouver Whitecaps (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-11T03:10:00Z | Club América vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-10-11T10:30:00Z | Como vs AS Roma (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
 ## Candidates on CURRENT prices (70; RESEARCH_ONLY = analysis, never a bet)
 
@@ -89,12 +90,12 @@ model board generated 2026-10-09T09:38:29.919081Z · simulations this update: 0 
 | Los Angeles FC vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.6200 | 0.758 [0.618, 0.875] | +0.121 | +0.041 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Inter Milan vs Parma | Result: home | no | 0.1400 | 0.290 [0.146, 0.451] | +0.142 | +0.041 | 0.17 | - | * | RESEARCH_CANDIDATE |
 | SC Paderborn 07 vs VfB Stuttgart | Result: home | yes | 0.1900 | 0.373 [0.193, 0.585] | +0.173 | +0.039 | 0.22 | - |  | RESEARCH_CANDIDATE |
-| FC Barcelona vs Getafe | Result: home | no | 0.0900 | 0.223 [0.100, 0.364] | +0.127 | +0.037 | 0.12 | - | * | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Le Mans | Result: draw | yes | 0.0700 | 0.174 [0.075, 0.271] | +0.099 | +0.034 | 0.1 | - |  | RESEARCH_CANDIDATE |
-| FC Barcelona vs Getafe | Result: draw | yes | 0.0600 | 0.149 [0.073, 0.236] | +0.085 | +0.031 | 0.08 | - |  | RESEARCH_CANDIDATE |
+| FC Barcelona vs Getafe | Result: draw | yes | 0.0600 | 0.149 [0.073, 0.236] | +0.085 | +0.031 | 0.08 | - | * | RESEARCH_CANDIDATE |
 | Tigres UANL vs Toluca | btts | no | 0.4000 | 0.531 [0.398, 0.656] | +0.114 | +0.030 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Chicago Fire vs New York City FC | btts | no | 0.4000 | 0.519 [0.404, 0.634] | +0.102 | +0.028 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.4100 | 0.556 [0.394, 0.705] | +0.129 | +0.027 | 0.43 | - |  | RESEARCH_CANDIDATE |
+| FC Barcelona vs Getafe | Result: home | no | 0.1000 | 0.223 [0.100, 0.364] | +0.116 | +0.027 | 0.12 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Vancouver Whitecaps | Total goals over 4.5 | no | 0.8000 | 0.885 [0.793, 0.956] | +0.074 | +0.026 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | SC Paderborn 07 vs VfB Stuttgart | Result: draw | yes | 0.2000 | 0.286 [0.210, 0.367] | +0.075 | +0.026 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Vancouver Whitecaps | away team total over 1.5 | no | 0.6100 | 0.725 [0.598, 0.836] | +0.098 | +0.025 | 0.63 | - | * | RESEARCH_CANDIDATE |
@@ -115,11 +116,11 @@ model board generated 2026-10-09T09:38:29.919081Z · simulations this update: 0 
 ```
 action_MODEL_INVALIDATED: 27
 action_MODEL_STALE: 420
-action_NO_EDGE: 851
+action_NO_EDGE: 857
 action_NO_QUOTE: 208
 action_RESEARCH_CANDIDATE: 70
-contract_sides: 1576
-fixtures: 52
+contract_sides: 1582
+fixtures: 53
 fixtures_model_invalidated: 1
 fixtures_model_missing: 0
 ```
