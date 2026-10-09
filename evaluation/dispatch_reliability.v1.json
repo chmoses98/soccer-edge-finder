@@ -1,23 +1,23 @@
 {
  "schema": "dispatch_reliability_v1",
- "generated_at": "2026-10-09T09:02:25Z",
+ "generated_at": "2026-10-09T11:33:33Z",
  "cadence": {
   "external_heartbeat_minutes": null,
   "github_backup_minutes": 60
  },
  "last_wake": {
-  "started_at": "2026-10-09T09:00:16Z",
-  "trigger_source": "github-schedule-backup",
+  "started_at": "2026-10-09T09:35:00Z",
+  "trigger_source": "chain",
   "status": "OK",
   "no_action_reason": null
  },
  "last_24h": {
   "span_hours": 24.0,
-  "heartbeats_actual": 18,
+  "heartbeats_actual": 19,
   "heartbeats_by_source": {
    "chain": 4,
    "github-schedule-backup": 4,
-   "workflow-run": 10
+   "workflow-run": 11
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -47,10 +47,10 @@
   "span_hours": 168.0,
   "heartbeats_actual": 148,
   "heartbeats_by_source": {
-   "chain": 28,
+   "chain": 29,
    "github-schedule-backup": 29,
    "manual": 2,
-   "workflow-run": 89
+   "workflow-run": 88
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -60,21 +60,21 @@
   "github_backup_expected": 168,
   "github_backup_actual": 29,
   "github_backup_success": 0.17261904761904762,
-  "capture_runs": 29,
+  "capture_runs": 30,
   "capture_runs_failed": 15,
   "paid_calls": 46,
   "credits_spent": 138,
-  "fixtures_with_horizons": 49,
-  "horizons_eligible": 242,
-  "horizons_delivered": 242,
+  "fixtures_with_horizons": 48,
+  "horizons_eligible": 237,
+  "horizons_delivered": 237,
   "horizons_missed": 0,
   "horizon_states": {
-   "DELIVERED": 242,
+   "DELIVERED": 237,
    "NOT_APPLICABLE": 23
   },
   "capture_success_rate": 1.0,
-  "close_fixtures_eligible": 49,
-  "close_fixtures_delivered": 49,
+  "close_fixtures_eligible": 48,
+  "close_fixtures_delivered": 48,
   "close_success_rate": 1.0
  },
  "definition": "capture_success_rate = delivered / eligible horizons whose window closed in the span (NOT_APPLICABLE excluded); close_success_rate = fixtures with a T-15 or T-5 delivery / fixtures whose close windows closed in the span"
