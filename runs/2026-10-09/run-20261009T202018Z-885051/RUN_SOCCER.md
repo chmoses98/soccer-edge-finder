@@ -1,0 +1,173 @@
+# RUN SOCCER — 2026-10-09
+Run `run-20261009T202018Z-885051` generated 2026-10-09T20:22:45.236048Z · filters: {'leagues': [], 'games': [], 'window_hours': 48, 'confirmed_lineups_only': False}
+
+## Coverage
+- contracts discovered: **15567** (discovery complete: True)
+- contracts evaluated: 4600 · excluded mechanically: 7750 · unsupported/unknown: 3217
+- **unaccounted contracts: 0**
+- by disposition: priced=4600, started=151, ambiguous_ownership=48, unknown_family=151, unsupported_family=3066, unmapped_event=4512, unmapped_team=1166, no_fixture=1178, out_of_window=641, unpriceable=54
+- competitions discovered: AFCCL, ALEAGUE, ALLSVENSKAN, APFDDH, ARGNACB, ARGPREMDIV, BELGIANPL, BOLPDIV, BRASILEIRO, BRASILEIROB, BRASILEIROC, BUNDESLIGA, BUNDESLIGA2, BUNDESLIGA2H, CANPL, CHLLDP, CHNL1, CHNSL, CONCACAFGC, CONCACAFNL, CONMEBOLLIB, CONMEBOLSUD, COPAAMERICA, COPADELREY, COPADOBRASIL, CZEFL, CZEFNL, DENSUPERLIGA, DFBPOKAL, DIMAYOR, ECULP, EFL, EFLCHAMPIONSHIP, EFLL1, EGYPL, EKSTRAKLASA, ELITESERIEN, ENGNL, EPL, EPL2H, EREDIVISIE, ETTAN, FA, FIFAW, FINYL, FROPL, GER3L, HNL, IDNSL, ISRNL, ISRNLCUP, ISRPL, J2LEAGUE, JLEAGUE, K2LEAGUE, KLEAGUE, KNVB, LALIGA, LALIGA2, LALIGA2H, LIGAEXP, LIGAMX, LIGAMX2H, LIGAPORTUGAL, LIGUE1, LIGUE12H, LIGUE2, LVAVIR, MLS, MLS2H, MLSEAST, MLSWEST, NWSL, PERLIGA1, PREMIERLEAGUE, SAUDIPL, SCOTTISHPREM, SERIEA, SERIEA2H, SERIEB, SERIEC, SGPPL, SLGREECE, SOCCER, SRBSL, SUPERLIG, SVK2L, SVKCUP, SVNPL, SWISSLEAGUE, TACAPORT, TFF1LIG, THAIL1, TWEEDEDIV, UCL, UCLLEAGUE, UECL, UEFAEURO, UEFANL, UEFANLGROUP, UEL, URYPD, USL, USOPENCUP, VENFUTVE, VLEAGUE1, WC, WCW
+
+## Freshness
+- as_of: 2026-10-09T20:20:18.861918Z; market_observed_at: 2026-10-09T20:05:34.286638Z; fixtures_observed_at: 2026-10-09T20:05:32.414781Z; results_observed_at: 2026-10-09T20:05:25.621000Z; model_fitted_at: 2026-10-09T20:05:32.824532Z; temporal_guard: {'decision_time': '2026-10-09T20:20:18.861918Z', 'checked': {'fixtures': 1, 'market_snapshots': 2, 'reference_odds': 1, 'results': 15}, 'latest_observed_at': {'fixtures': '2026-10-09T20:05:32.414781Z', 'market_snapshots': '2026-10-09T20:20:16.698224Z', 'reference_odds': '2026-10-09T20:20:16.875472Z', 'results': '2026-10-09T20:05:34.276921Z'}, 'violations': [], 'ok': True}
+- no freshness violations
+
+## Recommendations
+**NO BETS** — no contract met the robust-edge bar under an authority level that permits recommendations.
+
+## Shadow / research-only expressions (215)
+These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW. They are NOT recommendations.
+- SC Paderborn 07 vs VfB Stuttgart · away team total over 1.5 · NO @ 0.3100 · fair 71.1% [52.0%–87.4%] · edge +38.6% · P(+) 98% · RESEARCH_ONLY · `KXBUNDESLIGATEAMTOTAL-26OCT10PADVFB-VFB2`
+- SC Paderborn 07 vs VfB Stuttgart · away team total over 2.5 · NO @ 0.5700 · fair 89.2% [78.0%–97.6%] · edge +30.5% · P(+) 98% · RESEARCH_ONLY · `KXBUNDESLIGATEAMTOTAL-26OCT10PADVFB-VFB3`
+- FC Augsburg vs Bayern Munich · away wins by more than 2.5 · NO @ 0.5100 · fair 81.7% [67.4%–93.7%] · edge +29.0% · P(+) 98% · RESEARCH_ONLY · `KXBUNDESLIGASPREAD-26OCT10FCABMU-BMU3`
+- SC Paderborn 07 vs VfB Stuttgart · Total goals over 3.5 · NO @ 0.4900 · fair 80.1% [63.6%–93.5%] · edge +29.4% · P(+) 97% · RESEARCH_ONLY · `KXBUNDESLIGATOTAL-26OCT10PADVFB-4`
+- Napoli vs Frosinone · home team total over 1.5 · NO @ 0.3200 · fair 63.2% [39.5%–84.2%] · edge +29.7% · P(+) 94% · RESEARCH_ONLY · `KXSERIEATEAMTOTAL-26OCT10NAPFRO-NAP2`
+- SC Paderborn 07 vs VfB Stuttgart · away team total over 0.5 · NO @ 0.1000 · fair 36.8% [19.9%–54.1%] · edge +26.1% · P(+) 98% · RESEARCH_ONLY · `KXBUNDESLIGATEAMTOTAL-26OCT10PADVFB-VFB1`
+- FC Augsburg vs Bayern Munich · First-half result: away · NO @ 0.3400 · fair 58.4% [42.8%–73.2%] · edge +22.8% · P(+) 96% · RESEARCH_ONLY · `KXBUNDESLIGA1H-26OCT10FCABMU-BMU`
+- SC Paderborn 07 vs VfB Stuttgart · First-half result: away · NO @ 0.5300 · fair 74.6% [60.8%–87.2%] · edge +19.9% · P(+) 95% · RESEARCH_ONLY · `KXBUNDESLIGA1H-26OCT10PADVFB-VFB`
+- SC Paderborn 07 vs VfB Stuttgart · First-half total goals over 1.5 · NO @ 0.5100 · fair 74.3% [59.8%–87.2%] · edge +21.5% · P(+) 96% · RESEARCH_ONLY · `KXBUNDESLIGA1HTOTAL-26OCT10PADVFB-2`
+- Cagliari vs Juventus · away team total over 1.5 · NO @ 0.4800 · fair 69.8% [54.7%–83.6%] · edge +20.1% · P(+) 94% · RESEARCH_ONLY · `KXSERIEATEAMTOTAL-26OCT11CAGJUV-JUV2`
+- New York Red Bulls vs San Diego FC · away team total over 1.5 · NO @ 0.4800 · fair 69.0% [55.1%–81.6%] · edge +19.3% · P(+) 96% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT10NYRBSD-SD2`
+- New York Red Bulls vs San Diego FC · Total goals over 3.5 · NO @ 0.5300 · fair 73.7% [58.7%–86.3%] · edge +19.0% · P(+) 94% · RESEARCH_ONLY · `KXMLSTOTAL-26OCT10NYRBSD-4`
+- FC Augsburg vs Bayern Munich · First half: away wins by more than 1.5 · NO @ 0.6500 · fair 83.4% [71.8%–93.2%] · edge +16.8% · P(+) 95% · RESEARCH_ONLY · `KXBUNDESLIGA1HSPREAD-26OCT10FCABMU-BMU2`
+- Cagliari vs Juventus · Result: away · NO @ 0.4000 · fair 61.6% [47.1%–76.3%] · edge +20.0% · P(+) 96% · RESEARCH_ONLY · `KXSERIEAGAME-26OCT11CAGJUV-JUV`
+- New York Red Bulls vs San Diego FC · btts · NO @ 0.3100 · fair 50.3% [37.6%–62.3%] · edge +17.8% · P(+) 96% · RESEARCH_ONLY · `KXMLSBTTS-26OCT10NYRBSD-BTTS`
+- Napoli vs Frosinone · Total goals over 3.5 · NO @ 0.5800 · fair 78.9% [61.5%–92.9%] · edge +19.2% · P(+) 91% · RESEARCH_ONLY · `KXSERIEATOTAL-26OCT10NAPFRO-4`
+- New England Revolution vs Seattle Sounders · away team total over 1.5 · NO @ 0.6300 · fair 79.9% [69.3%–89.1%] · edge +15.3% · P(+) 95% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT10NESEA-SEA2`
+- SC Paderborn 07 vs VfB Stuttgart · First-half total goals over 0.5 · NO @ 0.1900 · fair 38.7% [24.8%–54.2%] · edge +18.6% · P(+) 96% · RESEARCH_ONLY · `KXBUNDESLIGA1HTOTAL-26OCT10PADVFB-1`
+- FC Augsburg vs Bayern Munich · First team to score: away · NO @ 0.2300 · fair 42.3% [27.8%–56.2%] · edge +18.1% · P(+) 94% · RESEARCH_ONLY · `KXBUNDESLIGAFTTS-26OCT10FCABMU-BMU`
+- Paris Saint-Germain vs Le Mans · First-half result: home · NO @ 0.2700 · fair 48.8% [29.7%–68.2%] · edge +20.4% · P(+) 91% · RESEARCH_ONLY · `KXLIGUE11H-26OCT10PSGMAN-PSG`
+- Querétaro vs Atlante · btts · NO @ 0.4300 · fair 61.4% [47.7%–74.1%] · edge +16.7% · P(+) 94% · RESEARCH_ONLY · `KXLIGAMXBTTS-26OCT10QUEALA-BTTS`
+- Toronto FC vs CF Montréal · away team total over 0.5 · NO @ 0.2600 · fair 43.9% [31.3%–55.8%] · edge +16.5% · P(+) 96% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT10TORMTL-MTL1`
+- Hull City vs Everton · away team total over 1.5 · NO @ 0.5800 · fair 77.2% [59.3%–90.9%] · edge +17.5% · P(+) 90% · RESEARCH_ONLY · `KXEPLTEAMTOTAL-26OCT11HULEVE-EVE2`
+- New England Revolution vs Seattle Sounders · btts · NO @ 0.3800 · fair 55.3% [43.8%–66.6%] · edge +15.7% · P(+) 95% · RESEARCH_ONLY · `KXMLSBTTS-26OCT10NESEA-BTTS`
+- SC Paderborn 07 vs VfB Stuttgart · First half: away wins by more than 1.5 · NO @ 0.8200 · fair 94.2% [87.9%–99.1%] · edge +11.2% · P(+) 96% · RESEARCH_ONLY · `KXBUNDESLIGA1HSPREAD-26OCT10PADVFB-VFB2`
+- Paris Saint-Germain vs Le Mans · home wins by more than 1.5 · NO @ 0.2600 · fair 52.5% [25.4%–77.4%] · edge +25.1% · P(+) 88% · RESEARCH_ONLY · `KXLIGUE1SPREAD-26OCT10PSGMAN-PSG2`
+- Toronto FC vs CF Montréal · away team total over 1.5 · NO @ 0.6300 · fair 79.0% [67.7%–88.4%] · edge +14.4% · P(+) 94% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT10TORMTL-MTL2`
+- Cagliari vs Juventus · away team total over 0.5 · NO @ 0.1700 · fair 34.7% [21.6%–48.5%] · edge +16.7% · P(+) 95% · RESEARCH_ONLY · `KXSERIEATEAMTOTAL-26OCT11CAGJUV-JUV1`
+- Querétaro vs Atlante · away team total over 1.5 · NO @ 0.6800 · fair 83.4% [72.1%–92.8%] · edge +13.8% · P(+) 93% · RESEARCH_ONLY · `KXLIGAMXTEAMTOTAL-26OCT10QUEALA-ALA2`
+- Napoli vs Frosinone · First-half result: home · NO @ 0.5000 · fair 68.4% [51.8%–83.2%] · edge +16.6% · P(+) 90% · RESEARCH_ONLY · `KXSERIEA1H-26OCT10NAPFRO-NAP`
+- New York Red Bulls vs San Diego FC · away team total over 2.5 · NO @ 0.7600 · fair 88.8% [80.4%–95.5%] · edge +11.5% · P(+) 95% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT10NYRBSD-SD3`
+- SC Paderborn 07 vs VfB Stuttgart · First-half total goals over 2.5 · NO @ 0.7900 · fair 91.5% [83.9%–98.1%] · edge +11.4% · P(+) 94% · RESEARCH_ONLY · `KXBUNDESLIGA1HTOTAL-26OCT10PADVFB-3`
+- Hull City vs Everton · Result: away · NO @ 0.5400 · fair 73.6% [55.2%–89.1%] · edge +17.9% · P(+) 90% · RESEARCH_ONLY · `KXEPLGAME-26OCT11HULEVE-EVE`
+- Paris Saint-Germain vs Le Mans · First half: home wins by more than 1.5 · NO @ 0.5900 · fair 77.1% [58.8%–92.2%] · edge +16.4% · P(+) 89% · RESEARCH_ONLY · `KXLIGUE11HSPREAD-26OCT10PSGMAN-PSG2`
+- Cagliari vs Juventus · First-half result: away · NO @ 0.5700 · fair 72.4% [60.8%–84.2%] · edge +13.7% · P(+) 94% · RESEARCH_ONLY · `KXSERIEA1H-26OCT11CAGJUV-JUV`
+- Cagliari vs Juventus · Result: home · YES @ 0.1500 · fair 32.3% [19.0%–47.7%] · edge +16.4% · P(+) 96% · RESEARCH_ONLY · `KXSERIEAGAME-26OCT11CAGJUV-CAG`
+- Mainz 05 vs Bayer Leverkusen · away team total over 1.5 · NO @ 0.4400 · fair 62.2% [45.2%–77.8%] · edge +16.5% · P(+) 89% · RESEARCH_ONLY · `KXBUNDESLIGATEAMTOTAL-26OCT10M05LEV-LEV2`
+- Deportivo Alavés vs Atlético Madrid · Result: away · NO @ 0.4600 · fair 63.7% [48.6%–78.3%] · edge +15.9% · P(+) 91% · RESEARCH_ONLY · `KXLALIGAGAME-26OCT10ALAATM-ATM`
+- FC Augsburg vs Bayern Munich · Result: draw · YES @ 0.1000 · fair 19.5% [14.6%–24.3%] · edge +8.9% · P(+) 97% · RESEARCH_ONLY · `KXBUNDESLIGAGAME-26OCT10FCABMU-TIE`
+- Napoli vs Frosinone · First-half total goals over 1.5 · NO @ 0.5700 · fair 72.8% [57.8%–86.2%] · edge +14.1% · P(+) 89% · RESEARCH_ONLY · `KXSERIEA1HTOTAL-26OCT10NAPFRO-2`
+
+## Expressions removed by the reducer (157)
+- `KXLIGAMXTEAMTOTAL-26OCT10QUEALA-ALA1` no: redundant with KXLIGAMXBTTS-26OCT10QUEALA-BTTS/no (corr +0.79); best expression kept
+- `KXLIGAMXTEAMTOTAL-26OCT09TIGTOL-TOL1` no: dominated by KXLIGAMXBTTS-26OCT09TIGTOL-BTTS/no (corr +0.65)
+- `KXLIGAMXTOTAL-26OCT09TIGTOL-2` no: dominated by KXLIGAMXBTTS-26OCT09TIGTOL-BTTS/no (corr +0.65)
+- `KXLIGAMXBTTS-26OCT09PUELEO-BTTS` no: dominated by KXLIGAMXTEAMTOTAL-26OCT09PUELEO-LEO1/no (corr +0.69)
+- `KXLIGAMXTOTAL-26OCT09PUELEO-2` no: dominated by KXLIGAMXTEAMTOTAL-26OCT09PUELEO-LEO1/no (corr +0.48)
+- `KXLIGAMXFTTS-26OCT09PUELEO-LEO` no: dominated by KXLIGAMXTEAMTOTAL-26OCT09PUELEO-LEO1/no (corr +0.64)
+- `KXLIGAMXSPREAD-26OCT09PUELEO-LEO3` no: dominated by KXLIGAMXTEAMTOTAL-26OCT09PUELEO-LEO3/no (corr +0.64)
+- `KXLIGAMXSPREAD-26OCT09PUELEO-LEO2` no: dominated by KXLIGAMXTEAMTOTAL-26OCT09PUELEO-LEO2/no (corr +0.61)
+- `KXBUNDESLIGASPREAD-26OCT10PADVFB-VFB3` no: dominated by KXBUNDESLIGATEAMTOTAL-26OCT10PADVFB-VFB3/no (corr +0.67)
+- `KXBUNDESLIGASPREAD-26OCT10PADVFB-VFB2` no: dominated by KXBUNDESLIGATEAMTOTAL-26OCT10PADVFB-VFB2/no (corr +0.65)
+- `KXBUNDESLIGATOTAL-26OCT10PADVFB-3` no: redundant with KXBUNDESLIGATOTAL-26OCT10PADVFB-4/no (corr +0.64); best expression kept
+- `KXBUNDESLIGATOTAL-26OCT10PADVFB-5` no: dominated by KXBUNDESLIGATOTAL-26OCT10PADVFB-4/no (corr +0.64)
+- `KXBUNDESLIGATOTAL-26OCT10PADVFB-6` no: dominated by KXBUNDESLIGATOTAL-26OCT10PADVFB-4/no (corr +0.41)
+- `KXBUNDESLIGABTTS-26OCT10PADVFB-BTTS` no: dominated by KXBUNDESLIGATEAMTOTAL-26OCT10PADVFB-VFB1/no (corr +0.64)
+- `KXBUNDESLIGAGAME-26OCT10PADVFB-VFB` no: dominated by KXBUNDESLIGATEAMTOTAL-26OCT10PADVFB-VFB1/no (corr +0.55)
+- `KXBUNDESLIGATOTAL-26OCT10PADVFB-2` no: dominated by KXBUNDESLIGATEAMTOTAL-26OCT10PADVFB-VFB1/no (corr +0.50)
+- `KXBUNDESLIGAFTTS-26OCT10PADVFB-VFB` no: dominated by KXBUNDESLIGATEAMTOTAL-26OCT10PADVFB-VFB1/no (corr +0.65)
+- `KXBUNDESLIGASCORE-26OCT10PADVFB-PAD0VFB0` yes: redundant with KXBUNDESLIGATOTAL-26OCT10PADVFB-1/no (corr +1.00); best expression kept
+- `KXBUNDESLIGAGAME-26OCT10PADVFB-TIE` yes: dominated by KXBUNDESLIGATOTAL-26OCT10PADVFB-1/no (corr +0.61)
+- `KXBUNDESLIGA1HSCORE-26OCT10PADVFB-PAD0VFB2` no: dominated by KXBUNDESLIGA1HSPREAD-26OCT10PADVFB-VFB2/no (corr +0.85)
+- `KXBUNDESLIGA1HSCORE-26OCT10PADVFB-PAD0VFB0` yes: dominated by KXBUNDESLIGA1HTOTAL-26OCT10PADVFB-1/no (corr +1.00)
+- `KXBUNDESLIGA1H-26OCT10PADVFB-TIE` yes: dominated by KXBUNDESLIGA1HTOTAL-26OCT10PADVFB-1/no (corr +0.84)
+- `KXBUNDESLIGA1HBTTS-26OCT10PADVFB-BTTS` no: dominated by KXBUNDESLIGA1HTOTAL-26OCT10PADVFB-2/no (corr +0.69)
+- `KXBUNDESLIGABTTS-26OCT10M05LEV-BTTS` no: dominated by KXBUNDESLIGATEAMTOTAL-26OCT10M05LEV-LEV1/no (corr +0.72)
+- `KXBUNDESLIGASPREAD-26OCT10FCABMU-BMU2` no: redundant with KXBUNDESLIGASPREAD-26OCT10FCABMU-BMU3/no (corr +0.66); best expression kept
+- `KXBUNDESLIGATEAMTOTAL-26OCT10FCABMU-BMU3` no: redundant with KXBUNDESLIGASPREAD-26OCT10FCABMU-BMU3/no (corr +0.60); best expression kept
+- `KXBUNDESLIGAGAME-26OCT10FCABMU-BMU` no: dominated by KXBUNDESLIGASPREAD-26OCT10FCABMU-BMU3/no (corr +0.44)
+- `KXBUNDESLIGATEAMTOTAL-26OCT10FCABMU-BMU2` no: dominated by KXBUNDESLIGASPREAD-26OCT10FCABMU-BMU3/no (corr +0.36)
+- `KXBUNDESLIGAGAME-26OCT10FCABMU-FCA` yes: dominated by KXBUNDESLIGASPREAD-26OCT10FCABMU-BMU3/no (corr +0.29)
+- `KXBUNDESLIGASPREAD-26OCT10FCABMU-FCA2` yes: dominated by KXBUNDESLIGASPREAD-26OCT10FCABMU-BMU3/no (corr +0.19)
+- `KXBUNDESLIGASPREAD-26OCT10FCABMU-FCA3` yes: dominated by KXBUNDESLIGASPREAD-26OCT10FCABMU-BMU3/no (corr +0.12)
+- `KXBUNDESLIGATOTAL-26OCT10FCABMU-5` no: dominated by KXBUNDESLIGATOTAL-26OCT10FCABMU-4/no (corr +0.69)
+- `KXBUNDESLIGATOTAL-26OCT10FCABMU-6` no: dominated by KXBUNDESLIGATOTAL-26OCT10FCABMU-4/no (corr +0.48)
+- `KXBUNDESLIGATOTAL-26OCT10FCABMU-3` no: dominated by KXBUNDESLIGATOTAL-26OCT10FCABMU-4/no (corr +0.66)
+- `KXBUNDESLIGA1HSCORE-26OCT10FCABMU-FCA1BMU0` yes: dominated by KXBUNDESLIGA1H-26OCT10FCABMU-FCA/yes (corr +0.67)
+- `KXBUNDESLIGA1H-26OCT10FCABMU-TIE` yes: dominated by KXBUNDESLIGA1H-26OCT10FCABMU-BMU/no (corr +0.61)
+- `KXBUNDESLIGA1HSCORE-26OCT10FCABMU-FCA0BMU0` yes: dominated by KXBUNDESLIGA1H-26OCT10FCABMU-BMU/no (corr +0.43)
+- `KXBUNDESLIGA1HTOTAL-26OCT10FCABMU-1` no: dominated by KXBUNDESLIGA1H-26OCT10FCABMU-BMU/no (corr +0.43)
+- `KXBUNDESLIGAFTTS-26OCT10FCABMU-FCA` yes: dominated by KXBUNDESLIGAFTTS-26OCT10FCABMU-BMU/no (corr +0.94)
+- `KXSERIEASPREAD-26OCT11CAGJUV-JUV2` no: redundant with KXSERIEATEAMTOTAL-26OCT11CAGJUV-JUV2/no (corr +0.67); best expression kept
+
+## Events
+- SC Freiburg vs Schalke 04 (Bundesliga) 2026-10-11T15:30:00Z · markets 79/80 evaluated · lineups unknown · xG 1.98-0.84 · 1X2 61%/22%/18%
+- 1. FC Köln vs Borussia Mönchengladbach (Bundesliga) 2026-10-11T13:30:00Z · markets 79/80 evaluated · lineups unknown · xG 2.05-1.24 · 1X2 55%/21%/24%
+- RB Leipzig vs Eintracht Frankfurt (Bundesliga) 2026-10-10T16:30:00Z · markets 79/80 evaluated · lineups unknown · xG 2.43-1.10 · 1X2 65%/18%/17%
+- Union Berlin vs SV Elversberg (Bundesliga) 2026-10-10T13:30:00Z · markets 79/80 evaluated · lineups unknown · xG 1.65-1.66 · 1X2 38%/22%/40%
+- TSG Hoffenheim vs Hamburger SV (Bundesliga) 2026-10-10T13:30:00Z · markets 79/80 evaluated · lineups unknown · xG 2.36-0.99 · 1X2 66%/18%/16%
+- SC Paderborn 07 vs VfB Stuttgart (Bundesliga) 2026-10-10T13:30:00Z · markets 79/80 evaluated · lineups unknown · xG 1.16-1.08 · 1X2 37%/29%/34%
+- Mainz 05 vs Bayer Leverkusen (Bundesliga) 2026-10-10T13:30:00Z · markets 32/32 evaluated · lineups unknown · xG 1.67-1.33 · 1X2 45%/23%/31%
+- FC Augsburg vs Bayern Munich (Bundesliga) 2026-10-10T13:30:00Z · markets 79/80 evaluated · lineups unknown · xG 1.51-2.22 · 1X2 27%/19%/53%
+- Club América vs Monterrey (Liga MX) 2026-10-11T03:10:00Z · markets 79/80 evaluated · lineups unknown · xG 2.21-1.01 · 1X2 63%/20%/17%
+- Atlas vs Guadalajara (Liga MX) 2026-10-11T01:00:00Z · markets 79/80 evaluated · lineups unknown · xG 1.33-1.34 · 1X2 37%/26%/37%
+- Querétaro vs Atlante (Liga MX) 2026-10-10T23:00:00Z · markets 79/80 evaluated · lineups unknown · xG 1.60-0.72 · 1X2 56%/26%/18%
+- FC Juárez vs Tijuana (Liga MX) 2026-10-10T23:00:00Z · markets 32/32 evaluated · lineups unknown · xG 1.33-1.51 · 1X2 34%/25%/41%
+- Tigres UANL vs Toluca (Liga MX) 2026-10-10T03:00:00Z · markets 79/80 evaluated · lineups unknown · xG 1.22-1.19 · 1X2 36%/28%/35%
+- Puebla vs León (Liga MX) 2026-10-10T01:00:00Z · markets 79/80 evaluated · lineups unknown · xG 1.24-0.98 · 1X2 42%/29%/29%
+- Troyes vs Marseille (Ligue 1) 2026-10-11T18:45:00Z · markets 79/80 evaluated · lineups unknown · xG 1.16-1.62 · 1X2 29%/24%/47%
+- Rennes vs AJ Auxerre (Ligue 1) 2026-10-11T15:15:00Z · markets 79/80 evaluated · lineups unknown · xG 1.99-1.14 · 1X2 56%/22%/22%
+- Nice vs Strasbourg (Ligue 1) 2026-10-11T13:00:00Z · markets 79/80 evaluated · lineups unknown · xG 1.35-1.42 · 1X2 36%/25%/39%
+- Brest vs Angers (Ligue 1) 2026-10-10T18:45:00Z · markets 79/80 evaluated · lineups unknown · xG 1.53-0.99 · 1X2 49%/26%/25%
+- Paris Saint-Germain vs Le Mans (Ligue 1) 2026-10-10T18:45:00Z · markets 79/80 evaluated · lineups unknown · xG 2.49-0.94 · 1X2 68%/17%/15%
+- Lorient vs Paris FC (Ligue 1) 2026-10-10T18:45:00Z · markets 79/80 evaluated · lineups unknown · xG 1.26-1.16 · 1X2 39%/27%/34%
+- AS Monaco vs Toulouse (Ligue 1) 2026-10-10T18:45:00Z · markets 79/80 evaluated · lineups unknown · xG 1.99-0.97 · 1X2 59%/22%/19%
+- Lille vs Le Havre (Ligue 1) 2026-10-10T15:15:00Z · markets 79/80 evaluated · lineups unknown · xG 1.62-0.72 · 1X2 58%/25%/17%
+- Cagliari vs Juventus (Serie A) 2026-10-11T18:45:00Z · markets 32/32 evaluated · lineups unknown · xG 0.99-1.11 · 1X2 32%/29%/39%
+- Sassuolo vs AC Milan (Serie A) 2026-10-11T16:00:00Z · markets 79/80 evaluated · lineups unknown · xG 1.28-1.35 · 1X2 36%/25%/39%
+- Lecce vs Bologna (Serie A) 2026-10-11T13:00:00Z · markets 79/80 evaluated · lineups unknown · xG 1.08-1.10 · 1X2 35%/29%/36%
+- Lazio vs Monza (Serie A) 2026-10-11T13:00:00Z · markets 32/32 evaluated · lineups unknown · xG 1.98-0.93 · 1X2 60%/21%/19%
+- Como vs AS Roma (Serie A) 2026-10-11T10:30:00Z · markets 79/80 evaluated · lineups unknown · xG 1.37-1.33 · 1X2 38%/25%/37%
+- Napoli vs Frosinone (Serie A) 2026-10-10T18:45:00Z · markets 79/80 evaluated · lineups unknown · xG 1.33-0.98 · 1X2 44%/27%/29%
+- Inter Milan vs Parma (Serie A) 2026-10-10T16:00:00Z · markets 32/32 evaluated · lineups unknown · xG 2.36-0.78 · 1X2 71%/17%/12%
+- Genoa vs Fiorentina (Serie A) 2026-10-10T13:00:00Z · markets 79/80 evaluated · lineups unknown · xG 1.31-1.13 · 1X2 41%/27%/33%
+- Atlético Mineiro vs Santos (Brasileirão Série A) 2026-10-11T19:00:00Z · markets 29/29 evaluated · lineups unknown · xG 1.62-1.11 · 1X2 48%/26%/26%
+- São Paulo vs Vitória (Brasileirão Série A) 2026-10-11T00:00:00Z · markets 29/29 evaluated · lineups unknown · xG 1.34-0.87 · 1X2 47%/29%/24%
+- Vasco da Gama vs Remo (Brasileirão Série A) 2026-10-10T21:00:00Z · markets 29/29 evaluated · lineups unknown · xG 1.87-0.95 · 1X2 57%/23%/19%
+- Racing Santander vs Valencia (La Liga) 2026-10-11T19:00:00Z · markets 79/80 evaluated · lineups unknown · xG 1.78-1.55 · 1X2 43%/22%/35%
+- Elche vs Celta Vigo (La Liga) 2026-10-11T12:00:00Z · markets 73/74 evaluated · lineups unknown · xG 1.50-1.24 · 1X2 43%/25%/32%
+- Real Madrid vs Villarreal (La Liga) 2026-10-10T19:00:00Z · markets 85/86 evaluated · lineups unknown · xG 2.44-1.13 · 1X2 65%/18%/17%
+- FC Barcelona vs Getafe (La Liga) 2026-10-10T16:30:00Z · markets 76/77 evaluated · lineups unknown · xG 2.52-0.58 · 1X2 78%/15%/7%
+- Deportivo Alavés vs Atlético Madrid (La Liga) 2026-10-10T14:15:00Z · markets 75/76 evaluated · lineups unknown · xG 1.46-1.39 · 1X2 39%/25%/36%
+- Rayo Vallecano vs Athletic Club (La Liga) 2026-10-10T12:00:00Z · markets 74/75 evaluated · lineups unknown · xG 1.54-1.09 · 1X2 47%/25%/28%
+- Liverpool vs Manchester City (Premier League) 2026-10-11T15:30:00Z · markets 82/83 evaluated · lineups unknown · xG 1.48-1.45 · 1X2 39%/24%/37%
+- Hull City vs Everton (Premier League) 2026-10-11T13:00:00Z · markets 73/74 evaluated · lineups unknown · xG 1.34-0.90 · 1X2 46%/28%/26%
+- Crystal Palace vs Nottingham Forest (Premier League) 2026-10-11T13:00:00Z · markets 75/76 evaluated · lineups unknown · xG 1.32-1.34 · 1X2 37%/26%/38%
+- Manchester United vs Tottenham Hotspur (Premier League) 2026-10-10T16:30:00Z · markets 80/81 evaluated · lineups unknown · xG 2.22-0.92 · 1X2 65%/19%/16%
+- Sunderland vs Brighton & Hove Albion (Premier League) 2026-10-10T14:00:00Z · markets 75/76 evaluated · lineups unknown · xG 1.26-1.58 · 1X2 31%/24%/45%
+- Ipswich Town vs Fulham (Premier League) 2026-10-10T14:00:00Z · markets 82/83 evaluated · lineups unknown · xG 1.50-1.29 · 1X2 42%/25%/34%
+- Chelsea vs Bournemouth (Premier League) 2026-10-10T14:00:00Z · markets 79/80 evaluated · lineups unknown · xG 1.68-1.34 · 1X2 45%/23%/32%
+- Aston Villa vs Brentford (Premier League) 2026-10-10T14:00:00Z · markets 80/81 evaluated · lineups unknown · xG 1.42-1.35 · 1X2 39%/25%/36%
+- Arsenal vs Leeds United (Premier League) 2026-10-10T11:30:00Z · markets 69/70 evaluated · lineups unknown · xG 1.51-0.81 · 1X2 53%/26%/21%
+- Los Angeles FC vs Vancouver Whitecaps (Major League Soccer) 2026-10-11T02:30:00Z · markets 79/80 evaluated · lineups unknown · xG 1.45-1.03 · 1X2 46%/27%/27%
+- Colorado Rapids vs San Jose Earthquakes (Major League Soccer) 2026-10-11T01:30:00Z · markets 79/80 evaluated · lineups unknown · xG 1.56-1.02 · 1X2 49%/26%/25%
+- Sporting Kansas City vs Portland Timbers (Major League Soccer) 2026-10-11T00:30:00Z · markets 79/80 evaluated · lineups unknown · xG 1.85-1.57 · 1X2 44%/22%/34%
+- Minnesota United vs Houston Dynamo (Major League Soccer) 2026-10-11T00:30:00Z · markets 79/80 evaluated · lineups unknown · xG 1.35-0.96 · 1X2 45%/28%/27%
+- Austin FC vs Nashville SC (Major League Soccer) 2026-10-11T00:30:00Z · markets 79/80 evaluated · lineups unknown · xG 1.01-1.23 · 1X2 30%/29%/41%
+- Philadelphia Union vs Real Salt Lake (Major League Soccer) 2026-10-10T23:30:00Z · markets 79/80 evaluated · lineups unknown · xG 2.66-0.87 · 1X2 74%/15%/11%
+- Orlando City vs Columbus Crew (Major League Soccer) 2026-10-10T23:30:00Z · markets 79/80 evaluated · lineups unknown · xG 2.06-1.21 · 1X2 56%/21%/23%
+- New York Red Bulls vs San Diego FC (Major League Soccer) 2026-10-10T23:30:00Z · markets 79/80 evaluated · lineups unknown · xG 1.44-1.14 · 1X2 44%/26%/30%
+- New England Revolution vs Seattle Sounders (Major League Soccer) 2026-10-10T23:30:00Z · markets 79/80 evaluated · lineups unknown · xG 1.75-0.82 · 1X2 58%/24%/18%
+- Inter Miami vs D.C. United (Major League Soccer) 2026-10-10T23:30:00Z · markets 79/80 evaluated · lineups unknown · xG 2.72-1.01 · 1X2 72%/16%/13%
+- Charlotte FC vs FC Dallas (Major League Soccer) 2026-10-10T23:30:00Z · markets 79/80 evaluated · lineups unknown · xG 1.88-1.03 · 1X2 56%/23%/21%
+- Atlanta United vs FC Cincinnati (Major League Soccer) 2026-10-10T23:30:00Z · markets 79/80 evaluated · lineups unknown · xG 2.00-1.28 · 1X2 53%/22%/25%
+- Chicago Fire vs New York City FC (Major League Soccer) 2026-10-10T18:30:00Z · markets 79/80 evaluated · lineups unknown · xG 1.70-0.94 · 1X2 54%/24%/21%
+- Toronto FC vs CF Montréal (Major League Soccer) 2026-10-10T17:00:00Z · markets 79/80 evaluated · lineups unknown · xG 1.87-0.85 · 1X2 60%/23%/17%
+- Real Betis vs Osasuna (La Liga) 2026-10-11T16:30:00Z · markets 32/32 evaluated · lineups unknown · xG 1.95-0.81 · 1X2 63%/22%/16%
+- Real Sociedad vs Deportivo La Coruña (La Liga) 2026-10-11T14:15:00Z · markets 32/32 evaluated · lineups unknown · xG 1.74-1.17 · 1X2 50%/23%/27%
+- Central Córdoba vs Estudiantes de La Plata (Liga Profesional Argentina) 2026-10-10T20:00:00Z · markets 14/14 evaluated · lineups unknown · xG 0.92-1.21 · 1X2 28%/30%/42%
+- Unión vs Defensa y Justicia (Liga Profesional Argentina) 2026-10-10T00:45:00Z · markets 14/14 evaluated · lineups unknown · xG 1.62-1.50 · 1X2 41%/23%/36%
+- Instituto vs Boca Juniors (Liga Profesional Argentina) 2026-10-09T22:30:00Z · markets 14/14 evaluated · lineups unknown · xG 1.24-1.28 · 1X2 36%/27%/37%
+- San Lorenzo vs Deportivo Riestra (Liga Profesional Argentina) 2026-10-11T17:45:00Z · markets 3/3 evaluated · lineups unknown · xG 0.81-0.75 · 1X2 34%/36%/30%
+- Platense vs Argentinos Juniors (Liga Profesional Argentina) 2026-10-11T20:00:00Z · markets 3/3 evaluated · lineups unknown · xG 0.96-1.32 · 1X2 27%/28%/45%
+- Tigre vs Banfield (Liga Profesional Argentina) 2026-10-10T22:15:00Z · markets 3/3 evaluated · lineups unknown · xG 1.42-0.99 · 1X2 46%/27%/27%
