@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261009T080732Z-d6d312` · generated 2026-10-09T08:07:32.633534Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261009T082232Z-f432af` · generated 2026-10-09T08:22:32.810875Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-09T08:05:02.478233Z (CURRENT at publish; CURRENT until 2026-10-09T08:25:02.478233Z, STALE after 2026-10-09T08:35:02.478233Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-09T08:20:02.482427Z (CURRENT at publish; CURRENT until 2026-10-09T08:40:02.482427Z, STALE after 2026-10-09T08:50:02.482427Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-09T05:37:04.242700Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.66s
 
@@ -65,7 +65,7 @@ model board generated 2026-10-09T05:37:04.242700Z · simulations this update: 0 
 | 2026-10-11T02:30:00Z | Los Angeles FC vs Vancouver Whitecaps (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-11T03:10:00Z | Club América vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 
-## Candidates on CURRENT prices (66; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (67; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -115,9 +115,9 @@ model board generated 2026-10-09T05:37:04.242700Z · simulations this update: 0 
 ```
 action_MODEL_INVALIDATED: 27
 action_MODEL_STALE: 420
-action_NO_EDGE: 862
+action_NO_EDGE: 861
 action_NO_QUOTE: 201
-action_RESEARCH_CANDIDATE: 66
+action_RESEARCH_CANDIDATE: 67
 contract_sides: 1576
 fixtures: 52
 fixtures_model_invalidated: 1
