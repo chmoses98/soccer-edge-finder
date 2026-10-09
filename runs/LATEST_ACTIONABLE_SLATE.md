@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261009T070728Z-6614ed` · generated 2026-10-09T07:07:28.645505Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261009T072228Z-2e7e99` · generated 2026-10-09T07:22:28.723240Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-09T07:04:58.661081Z (CURRENT at publish; CURRENT until 2026-10-09T07:24:58.661081Z, STALE after 2026-10-09T07:34:58.661081Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-09T07:19:58.666163Z (CURRENT at publish; CURRENT until 2026-10-09T07:39:58.666163Z, STALE after 2026-10-09T07:49:58.666163Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-09T05:37:04.242700Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.66s
 
@@ -79,6 +79,7 @@ model board generated 2026-10-09T05:37:04.242700Z · simulations this update: 0 
 | Paris Saint-Germain vs Le Mans | Result: home | no | 0.1000 | 0.319 [0.114, 0.538] | +0.213 | +0.063 | 0.16 | - | * | RESEARCH_CANDIDATE |
 | FC Augsburg vs Bayern Munich | Result: draw | yes | 0.1000 | 0.195 [0.146, 0.243] | +0.089 | +0.060 | 0.15 | - |  | RESEARCH_CANDIDATE |
 | Arsenal vs Leeds United | Result: home | no | 0.2900 | 0.473 [0.308, 0.646] | +0.169 | +0.056 | 0.34 | - | * | RESEARCH_CANDIDATE |
+| Los Angeles FC vs Vancouver Whitecaps | away team total over 1.5 | no | 0.5800 | 0.725 [0.598, 0.836] | +0.128 | +0.055 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs León | away team total over 0.5 | no | 0.2400 | 0.391 [0.256, 0.519] | +0.139 | +0.051 | 0.28 | - | * | RESEARCH_CANDIDATE |
 | Deportivo Alavés vs Atlético Madrid | Result: away | no | 0.4700 | 0.637 [0.486, 0.783] | +0.149 | +0.050 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs León | away team total over 1.5 | no | 0.6000 | 0.744 [0.604, 0.859] | +0.128 | +0.049 | 0.65 | - |  | RESEARCH_CANDIDATE |
@@ -97,7 +98,6 @@ model board generated 2026-10-09T05:37:04.242700Z · simulations this update: 0 
 | Los Angeles FC vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.4100 | 0.556 [0.394, 0.705] | +0.129 | +0.027 | 0.43 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Vancouver Whitecaps | Total goals over 4.5 | no | 0.8000 | 0.885 [0.793, 0.956] | +0.074 | +0.026 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | SC Paderborn 07 vs VfB Stuttgart | Result: draw | yes | 0.2000 | 0.286 [0.210, 0.367] | +0.075 | +0.026 | 0.22 | - |  | RESEARCH_CANDIDATE |
-| Los Angeles FC vs Vancouver Whitecaps | away team total over 1.5 | no | 0.6100 | 0.725 [0.598, 0.836] | +0.098 | +0.025 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | Inter Milan vs Parma | Result: draw | yes | 0.0900 | 0.171 [0.096, 0.247] | +0.076 | +0.025 | 0.11 | - |  | RESEARCH_CANDIDATE |
 | Chicago Fire vs New York City FC | away team total over 1.5 | no | 0.6500 | 0.757 [0.637, 0.861] | +0.091 | +0.023 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs León | away team total over 2.5 | no | 0.8500 | 0.916 [0.842, 0.971] | +0.058 | +0.023 | 0.87 | - |  | RESEARCH_CANDIDATE |
@@ -115,8 +115,8 @@ model board generated 2026-10-09T05:37:04.242700Z · simulations this update: 0 
 ```
 action_MODEL_INVALIDATED: 27
 action_MODEL_STALE: 420
-action_NO_EDGE: 864
-action_NO_QUOTE: 200
+action_NO_EDGE: 863
+action_NO_QUOTE: 201
 action_RESEARCH_CANDIDATE: 65
 contract_sides: 1576
 fixtures: 52
