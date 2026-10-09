@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-09T00:27:25.447302+00:00",
+  "as_of": "2026-10-09T09:13:01.738869+00:00",
   "events": 528,
   "events_skipped_unmapped": 261,
   "fixtures_mapped": 267,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=108"
+      "weather_stopped:consecutive_failures:skipped=97"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 48,
-    "events": 48,
+    "captured": 49,
+    "events": 49,
     "failures": [],
-    "published_post": 5,
-    "published_pre_kickoff": 3,
+    "published_post": 0,
+    "published_pre_kickoff": 2,
     "unchanged": 0,
-    "unpublished": 40
+    "unpublished": 47
   },
   "map_proposals": {
     "bel.1": {
@@ -192,7 +192,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 0,
+  "results_appended": 4,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -256,17 +256,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 7,
-    "events": 118,
+    "captured": 12,
+    "events": 112,
     "failures": [
-      "401841603: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-34.6131&longitude=-58.3772&hourly=",
-      "401841601: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-34.6131&longitude=-58.3772&hourly=",
-      "401841605: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-34.6131&longitude=-58.3772&hourly="
+      "401841600: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-31.4065&longitude=-64.1885&hourly=",
+      "401878976: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Beveren&count=5&language=en&for",
+      "401878977: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Brugge&count=5&language=en&form"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 108,
+    "skipped": 97,
     "stopped": "consecutive_failures"
   }
 }
