@@ -129,7 +129,8 @@ class FakeKalshi:
             hc, ac = _code(home.name), _code(away.name)
             if hc == ac:
                 ac = ac[:2] + "X"
-            ev = f"{_mon(fx.kickoff_utc or __import__('datetime').datetime.fromisoformat(fx.kickoff_date + 'T15:00:00+00:00'))}{ac}{hc}"
+            # live soccer event codes are HOME then AWAY, like the title ('Sao Paulo vs Santos' -> SPASAN)
+            ev = f"{_mon(fx.kickoff_utc or __import__('datetime').datetime.fromisoformat(fx.kickoff_date + 'T15:00:00+00:00'))}{hc}{ac}"
             close = fx.kickoff_utc or __import__("datetime").datetime.fromisoformat(
                 fx.kickoff_date + "T15:00:00+00:00"
             )

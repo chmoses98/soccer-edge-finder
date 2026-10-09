@@ -294,7 +294,7 @@ class ContractSpec:
     competition_code: str | None
     competition_id: str | None
     event_date: str | None  # YYYY-MM-DD from the ticker (Kalshi's event date, often US-local)
-    team_codes: str | None  # raw AWAYHOME code string from the ticker
+    team_codes: str | None  # raw HOMEAWAY code string from the ticker (verified live: 'VDGCR')
     side_team_code: str | None = (
         None  # team the contract references (spread/team total/player team)
     )

@@ -13,6 +13,7 @@ prediction ledger keeps what each model run predicted at its own time.
 
 from __future__ import annotations
 
+import re
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Any
@@ -99,6 +100,50 @@ def contract_entry(
         # P(YES | script) per script in the taxonomy order (gamescript/), its interval, and the exact P(YES)
         # on the script basis (equal to `p` for analytic families; within Monte Carlo error otherwise)
         out["sc"] = script
+    return out
+
+
+def orientation_conflicts(contracts: dict[str, dict[str, Any]]) -> dict[str, str]:
+    """Board contracts whose home/away side cannot be trusted -> reason. A reprice never publishes them.
+
+    Two structural checks, independent of team names (a board written before the 2026-10-09 Vasco v
+    Remo mapping fix carries 'Result: home' for Remo's leg KXBRASILEIROGAME-26OCT10VDGCR-CR):
+      - position: a leg code found at the start (end) of the HOME-then-AWAY event pair code must be
+        priced as 'home' ('away');
+      - collision: two tickers of one event priced as the same family/period/side/line/k."""
+    from soccer_edge.kalshi.association import structural_position
+    from soccer_edge.kalshi.taxonomy import parse_event_code
+
+    out: dict[str, str] = {}
+    groups: dict[tuple[Any, ...], list[str]] = {}
+    for tk, c in contracts.items():
+        side = c.get("side")
+        if side not in ("home", "away") or c.get("family") == "player_goals":
+            continue
+        groups.setdefault(
+            (
+                c.get("event_ticker"),
+                c.get("family"),
+                c.get("period"),
+                side,
+                c.get("line"),
+                c.get("k"),
+            ),
+            [],
+        ).append(tk)
+        parts = tk.split("-")
+        if len(parts) < 3:
+            continue
+        _, pair = parse_event_code(parts[1])
+        lead = re.match(r"[A-Z]+", parts[2])  # 'CR3' -> CR, 'VDG1CR0' -> VDG (first-named team)
+        code = lead.group(0) if lead else ""
+        pos = structural_position(code, pair)
+        if pos is not None and side != ("home", "away")[pos]:
+            out[tk] = f"side {side} contradicts leg {code!r} at position {pos} of {pair!r}"
+    for key, tks in groups.items():
+        if len(tks) > 1:
+            for tk in tks:
+                out.setdefault(tk, f"side collision: {sorted(tks)} all priced as {key[3]}")
     return out
 
 
