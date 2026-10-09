@@ -20,6 +20,21 @@ def _not_in_actions(monkeypatch):
     monkeypatch.delenv("GITHUB_ACTIONS", raising=False)
 
 
+# The fake Kalshi discovery stamps its run with the wall clock, while the pipeline tests decide at a fixed
+# AS_OF (2026-10-09T12:00Z, test_run_pipeline.py and the suites that import it). From that instant on, every
+# discovery "observed" after the decision time and the temporal guard rightly refused it, so the suite failed on
+# any run after 2026-10-09 noon. Discovery in tests is a recorded observation: date it just before AS_OF.
+TEST_DISCOVERY_CLOCK = datetime(2026, 10, 9, 11, 0, tzinfo=UTC)
+
+
+@pytest.fixture(autouse=True, scope="session")
+def _discovery_clock():
+    # session scope: module-scoped fixtures (test_game_scripts.py) run discovery before any function fixture
+    with pytest.MonkeyPatch.context() as mp:
+        mp.setattr("soccer_edge.kalshi.discovery.utc_now", lambda: TEST_DISCOVERY_CLOCK)
+        yield
+
+
 @pytest.fixture(scope="session")
 def registry() -> AliasRegistry:
     return AliasRegistry.from_directory(REPO / "data" / "registry")
