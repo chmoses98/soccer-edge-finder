@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261009T132402Z-c60bed` · generated 2026-10-09T13:24:02.324209Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261009T133909Z-af58dc` · generated 2026-10-09T13:39:09.421176Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-09T13:21:31.627596Z (CURRENT at publish; CURRENT until 2026-10-09T13:41:31.627596Z, STALE after 2026-10-09T13:51:31.627596Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-09T13:36:34.650201Z (CURRENT at publish; CURRENT until 2026-10-09T13:56:34.650201Z, STALE after 2026-10-09T14:06:34.650201Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-09T13:09:04.594254Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.53s
+model board generated 2026-10-09T13:39:08.903989Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.54s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -71,6 +71,7 @@ model board generated 2026-10-09T13:09:04.594254Z · simulations this update: 0 
 | 2026-10-11T13:00:00Z | Nice vs Strasbourg (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-11T13:00:00Z | Lazio vs Monza (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-11T13:00:00Z | Lecce vs Bologna (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-11T13:30:00Z | 1. FC Köln vs Borussia Mönchengladbach (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
 ## Candidates on CURRENT prices (76; RESEARCH_ONLY = analysis, never a bet)
 
@@ -122,11 +123,11 @@ model board generated 2026-10-09T13:09:04.594254Z · simulations this update: 0 
 ```
 action_MODEL_INVALIDATED: 27
 action_MODEL_STALE: 420
-action_NO_EDGE: 891
+action_NO_EDGE: 897
 action_NO_QUOTE: 204
 action_RESEARCH_CANDIDATE: 76
-contract_sides: 1618
-fixtures: 59
+contract_sides: 1624
+fixtures: 60
 fixtures_model_invalidated: 1
 fixtures_model_missing: 0
 ```
