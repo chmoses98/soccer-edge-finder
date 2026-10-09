@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261009T215741Z-7b5a80` · generated 2026-10-09T21:57:41.445749Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261009T220116Z-b566ef` · generated 2026-10-09T22:01:16.212572Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-09T21:55:07.447672Z (CURRENT at publish; CURRENT until 2026-10-09T22:15:07.447672Z, STALE after 2026-10-09T22:25:07.447672Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-09T21:58:37.868182Z (CURRENT at publish; CURRENT until 2026-10-09T22:18:37.868182Z, STALE after 2026-10-09T22:28:37.868182Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-09T20:40:38.994578Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.92s
+model board generated 2026-10-09T20:40:38.994578Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.93s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -86,7 +86,7 @@ model board generated 2026-10-09T20:40:38.994578Z · simulations this update: 0 
 | 2026-10-11T20:30:00Z | Grêmio vs Internacional (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-11T20:30:00Z | Palmeiras vs Corinthians (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (186; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (187; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -134,9 +134,9 @@ model board generated 2026-10-09T20:40:38.994578Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2686
+action_NO_EDGE: 2685
 action_NO_QUOTE: 800
-action_RESEARCH_CANDIDATE: 186
+action_RESEARCH_CANDIDATE: 187
 contract_sides: 3672
 fixtures: 73
 fixtures_model_invalidated: 0
