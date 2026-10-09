@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261009T125400Z-fb0387` · generated 2026-10-09T12:54:00.747623Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261009T130905Z-358d0b` · generated 2026-10-09T13:09:05.878706Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-09T12:51:30.394724Z (CURRENT at publish; CURRENT until 2026-10-09T13:11:30.394724Z, STALE after 2026-10-09T13:21:30.394724Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-09T13:06:31.624106Z (CURRENT at publish; CURRENT until 2026-10-09T13:26:31.624106Z, STALE after 2026-10-09T13:36:31.624106Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-09T12:09:00.408253Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.51s
+model board generated 2026-10-09T13:09:04.594254Z · simulations this update: 5 · Odds API calls this update: 0 (credits 0) · reprice 0.53s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -66,8 +66,13 @@ model board generated 2026-10-09T12:09:00.408253Z · simulations this update: 0 
 | 2026-10-11T03:10:00Z | Club América vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-11T10:30:00Z | Como vs AS Roma (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-11T12:00:00Z | Elche vs Celta Vigo (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-11T13:00:00Z | Crystal Palace vs Nottingham Forest (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-11T13:00:00Z | Hull City vs Everton (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-11T13:00:00Z | Nice vs Strasbourg (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-11T13:00:00Z | Lazio vs Monza (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-11T13:00:00Z | Lecce vs Bologna (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (72; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (77; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -75,9 +80,10 @@ model board generated 2026-10-09T12:09:00.408253Z · simulations this update: 0 
 | SC Paderborn 07 vs VfB Stuttgart | Result: away | no | 0.4000 | 0.659 [0.471, 0.831] | +0.242 | +0.122 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | Toronto FC vs CF Montréal | away team total over 1.5 | no | 0.6200 | 0.790 [0.677, 0.884] | +0.154 | +0.090 | 0.71 | - | * | RESEARCH_CANDIDATE |
 | FC Augsburg vs Bayern Munich | Result: home | yes | 0.0800 | 0.272 [0.119, 0.451] | +0.187 | +0.076 | 0.15 | - |  | RESEARCH_CANDIDATE |
+| Toronto FC vs CF Montréal | away team total over 0.5 | no | 0.2700 | 0.439 [0.314, 0.558] | +0.155 | +0.075 | 0.34 | - |  | RESEARCH_CANDIDATE |
 | Toronto FC vs CF Montréal | btts | no | 0.3700 | 0.533 [0.414, 0.646] | +0.147 | +0.071 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Napoli vs Frosinone | Result: home | no | 0.3400 | 0.560 [0.333, 0.773] | +0.204 | +0.069 | 0.4 | - | * | RESEARCH_CANDIDATE |
-| Toronto FC vs CF Montréal | away team total over 0.5 | no | 0.2800 | 0.439 [0.314, 0.558] | +0.145 | +0.065 | 0.34 | - |  | RESEARCH_CANDIDATE |
+| Hull City vs Everton | Result: away | no | 0.5400 | 0.736 [0.552, 0.891] | +0.179 | +0.068 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Le Mans | Result: home | no | 0.1000 | 0.319 [0.114, 0.538] | +0.213 | +0.063 | 0.16 | - | * | RESEARCH_CANDIDATE |
 | FC Augsburg vs Bayern Munich | Result: draw | yes | 0.1000 | 0.195 [0.146, 0.243] | +0.089 | +0.060 | 0.15 | - |  | RESEARCH_CANDIDATE |
 | Arsenal vs Leeds United | Result: home | no | 0.2900 | 0.473 [0.308, 0.646] | +0.169 | +0.056 | 0.34 | - | * | RESEARCH_CANDIDATE |
@@ -91,6 +97,7 @@ model board generated 2026-10-09T12:09:00.408253Z · simulations this update: 0 
 | Los Angeles FC vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.6200 | 0.758 [0.618, 0.875] | +0.121 | +0.041 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Inter Milan vs Parma | Result: home | no | 0.1400 | 0.290 [0.146, 0.451] | +0.142 | +0.041 | 0.17 | - | * | RESEARCH_CANDIDATE |
 | SC Paderborn 07 vs VfB Stuttgart | Result: home | yes | 0.1900 | 0.373 [0.193, 0.585] | +0.173 | +0.039 | 0.22 | - |  | RESEARCH_CANDIDATE |
+| Hull City vs Everton | Result: home | yes | 0.2600 | 0.458 [0.247, 0.679] | +0.184 | +0.035 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Vancouver Whitecaps | away team total over 1.5 | no | 0.6000 | 0.725 [0.598, 0.836] | +0.108 | +0.035 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Le Mans | Result: draw | yes | 0.0700 | 0.174 [0.075, 0.271] | +0.099 | +0.034 | 0.1 | - |  | RESEARCH_CANDIDATE |
 | FC Barcelona vs Getafe | Result: draw | yes | 0.0600 | 0.149 [0.073, 0.236] | +0.085 | +0.031 | 0.08 | - | * | RESEARCH_CANDIDATE |
@@ -99,29 +106,27 @@ model board generated 2026-10-09T12:09:00.408253Z · simulations this update: 0 
 | Los Angeles FC vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.4100 | 0.556 [0.394, 0.705] | +0.129 | +0.027 | 0.43 | - |  | RESEARCH_CANDIDATE |
 | FC Barcelona vs Getafe | Result: home | no | 0.1000 | 0.223 [0.100, 0.364] | +0.116 | +0.027 | 0.12 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Vancouver Whitecaps | Total goals over 4.5 | no | 0.8000 | 0.885 [0.793, 0.956] | +0.074 | +0.026 | 0.82 | - |  | RESEARCH_CANDIDATE |
+| Lecce vs Bologna | Result: away | no | 0.5000 | 0.638 [0.477, 0.779] | +0.120 | +0.026 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | SC Paderborn 07 vs VfB Stuttgart | Result: draw | yes | 0.2000 | 0.286 [0.210, 0.367] | +0.075 | +0.026 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Inter Milan vs Parma | Result: draw | yes | 0.0900 | 0.171 [0.096, 0.247] | +0.076 | +0.025 | 0.11 | - |  | RESEARCH_CANDIDATE |
+| Lecce vs Bologna | Result: home | yes | 0.2100 | 0.352 [0.209, 0.511] | +0.130 | +0.024 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs León | away team total over 2.5 | no | 0.8500 | 0.916 [0.842, 0.971] | +0.058 | +0.023 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Napoli vs Frosinone | Result: draw | yes | 0.1900 | 0.272 [0.189, 0.356] | +0.071 | +0.021 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Tigres UANL vs Toluca | away team total over 0.5 | no | 0.2100 | 0.320 [0.196, 0.446] | +0.098 | +0.019 | 0.22 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs León | away wins by more than 1.5 | no | 0.8200 | 0.887 [0.805, 0.955] | +0.056 | +0.016 | 0.83 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Vancouver Whitecaps | Total goals over 1.5 | no | 0.1900 | 0.304 [0.179, 0.430] | +0.103 | +0.016 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Toronto FC vs CF Montréal | First-half result: away | no | 0.7700 | 0.841 [0.759, 0.911] | +0.059 | +0.016 | 0.78 | - | * | RESEARCH_CANDIDATE |
-| Tigres UANL vs Toluca | away team total over 1.5 | no | 0.5500 | 0.670 [0.516, 0.806] | +0.103 | +0.015 | 0.56 | - |  | RESEARCH_CANDIDATE |
-| Arsenal vs Leeds United | Result: away | yes | 0.1100 | 0.211 [0.103, 0.342] | +0.095 | +0.015 | 0.12 | - |  | RESEARCH_CANDIDATE |
-| Puebla vs León | Exact score 1-0 (home-away) | yes | 0.0800 | 0.132 [0.083, 0.178] | +0.047 | +0.015 | 0.09 | - | * | RESEARCH_CANDIDATE |
-| Tigres UANL vs Toluca | Total goals over 2.5 | no | 0.4400 | 0.575 [0.400, 0.727] | +0.117 | +0.015 | 0.45 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_MODEL_INVALIDATED: 27
 action_MODEL_STALE: 420
-action_NO_EDGE: 860
-action_NO_QUOTE: 209
-action_RESEARCH_CANDIDATE: 72
-contract_sides: 1588
-fixtures: 54
+action_NO_EDGE: 890
+action_NO_QUOTE: 204
+action_RESEARCH_CANDIDATE: 77
+contract_sides: 1618
+fixtures: 59
 fixtures_model_invalidated: 1
 fixtures_model_missing: 0
 ```
