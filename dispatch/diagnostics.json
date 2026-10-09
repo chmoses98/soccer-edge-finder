@@ -33,9 +33,9 @@
     "5": {
       "achieved_minutes_median": 2.48,
       "achieved_minutes_p10": 1.57,
-      "achieved_minutes_p90": 4.46,
-      "delivered": 75,
-      "delivery_rate": 0.7575757575757576,
+      "achieved_minutes_p90": 4.45,
+      "delivered": 77,
+      "delivery_rate": 0.7623762376237624,
       "lateness_minutes_max": 7.0,
       "lateness_minutes_median": 2.52,
       "missed": 24
@@ -51,27 +51,13 @@
       "missed": 31
     }
   },
-  "delivered_total": 381,
-  "delivery_rate_total": 0.7355212355212355,
+  "delivered_total": 383,
+  "delivery_rate_total": 0.7365384615384616,
   "fixtures_tracked": 107,
-  "generated_at": "2026-10-09T18:16:27Z",
+  "generated_at": "2026-10-09T18:27:38Z",
   "missed_total": 137,
-  "n_pending_fixtures": 124,
+  "n_pending_fixtures": 122,
   "pending_fixtures": [
-    {
-      "competition_id": "ger.bundesliga",
-      "fixture_id": "fx:ger.bundesliga:2026-27:ger.dortmund:ger.werder_bremen:matchday_5",
-      "kickoff_utc": "2026-10-09T18:30:00Z",
-      "markets_discovered": 80,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "ger.bundesliga",
-      "fixture_id": "fx:ger.bundesliga:2026-27:ger.dortmund:ger.werder_bremen",
-      "kickoff_utc": "2026-10-09T18:30:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
     {
       "competition_id": "fra.ligue_1",
       "fixture_id": "fx:fra.ligue_1:2026-27:fra.lens:fra.lyon:matchday_6",
@@ -757,6 +743,20 @@
       "kickoff_utc": "2026-10-11T14:15:00Z",
       "markets_discovered": 14,
       "source": "run_output"
+    },
+    {
+      "competition_id": "esp.la_liga",
+      "fixture_id": "fx:esp.la_liga:2026-27:esp.real_sociedad:esp.deportivo",
+      "kickoff_utc": "2026-10-11T14:15:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "fra.ligue_1",
+      "fixture_id": "fx:fra.ligue_1:2026-27:fra.rennes:fra.auxerre",
+      "kickoff_utc": "2026-10-11T15:15:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
     }
   ],
   "required_horizons": [
