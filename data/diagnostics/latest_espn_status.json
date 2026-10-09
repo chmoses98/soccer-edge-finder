@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-09T17:02:16.136356+00:00",
+  "as_of": "2026-10-09T22:44:11.823114+00:00",
   "events": 528,
   "events_skipped_unmapped": 261,
   "fixtures_mapped": 267,
   "health": {
     "reasons": [
-      "weather_failures:6",
-      "weather_stopped:consecutive_failures:skipped=95"
+      "weather_failures:3",
+      "weather_stopped:consecutive_failures:skipped=109"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 145,
+    "captured": 149,
     "events": 150,
     "failures": [],
-    "published_post": 7,
-    "published_pre_kickoff": 3,
-    "unchanged": 5,
-    "unpublished": 140
+    "published_post": 2,
+    "published_pre_kickoff": 1,
+    "unchanged": 1,
+    "unpublished": 147
   },
   "map_proposals": {
     "bel.1": {
@@ -192,7 +192,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 2,
+  "results_appended": 10,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -256,20 +256,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 12,
-    "events": 113,
+    "captured": 6,
+    "events": 120,
     "failures": [
-      "401841603: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-34.6131&longitude=-58.3772&hourly=",
-      "401841601: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-34.6131&longitude=-58.3772&hourly=",
-      "401841602: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rosario&count=5&language=en&for",
-      "401841600: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-31.4065&longitude=-64.1885&hourly=",
-      "401878976: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=51.2119&longitude=4.2563&hourly=tem",
-      "401878977: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Brugge&count=5&language=en&form"
+      "401841613: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-32.9468&longitude=-60.6393&hourly=",
+      "401841611: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Buenos%20Aires&count=5&language",
+      "401841610: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Santiago%20del%20Estero&count=5"
     ],
     "forecast_miss": 0,
-    "geocode_miss": 0,
+    "geocode_miss": 2,
     "no_venue": 0,
-    "skipped": 95,
+    "skipped": 109,
     "stopped": "consecutive_failures"
   }
 }
