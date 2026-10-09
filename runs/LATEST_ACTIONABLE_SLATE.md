@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261009T110853Z-e5d89f` · generated 2026-10-09T11:08:53.132547Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261009T112353Z-445d07` · generated 2026-10-09T11:23:53.032723Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-09T11:06:23.280597Z (CURRENT at publish; CURRENT until 2026-10-09T11:26:23.280597Z, STALE after 2026-10-09T11:36:23.280597Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-09T11:21:23.284844Z (CURRENT at publish; CURRENT until 2026-10-09T11:41:23.284844Z, STALE after 2026-10-09T11:51:23.284844Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-09T10:38:53.569377Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.67s
+model board generated 2026-10-09T10:38:53.569377Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.52s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -15,10 +15,10 @@ model board generated 2026-10-09T10:38:53.569377Z · simulations this update: 0 
 | 2026-10-09T18:30:00Z | Borussia Dortmund vs Werder Bremen (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-09T18:45:00Z | Lens vs Lyon (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-09T19:00:00Z | Málaga vs Espanyol (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-09T22:30:00Z | Instituto vs Boca Juniors (arg.primera) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-10T00:45:00Z | Unión vs Defensa y Justicia (arg.primera) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-10T01:00:00Z | Puebla vs León (mex.liga_mx) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-10-10T03:00:00Z | Tigres UANL vs Toluca (mex.liga_mx) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-10-09T22:30:00Z | Instituto vs Boca Juniors (arg.primera) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-10T00:45:00Z | Unión vs Defensa y Justicia (arg.primera) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-10T01:00:00Z | Puebla vs León (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-10-10T03:00:00Z | Tigres UANL vs Toluca (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-10T11:30:00Z | Arsenal vs Leeds United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T12:00:00Z | Rayo Vallecano vs Athletic Club (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T13:00:00Z | Genoa vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
