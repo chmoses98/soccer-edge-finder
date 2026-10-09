@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261009T211240Z-6cfdd4` · generated 2026-10-09T21:12:40.044107Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261009T212749Z-1bb2fe` · generated 2026-10-09T21:27:49.906400Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-09T21:10:06.011264Z (CURRENT at publish; CURRENT until 2026-10-09T21:30:06.011264Z, STALE after 2026-10-09T21:40:06.011264Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-09T21:25:06.016461Z (CURRENT at publish; CURRENT until 2026-10-09T21:45:06.016461Z, STALE after 2026-10-09T21:55:06.016461Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-09T20:40:38.994578Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.95s
+model board generated 2026-10-09T20:40:38.994578Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 1.80s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-09T20:40:38.994578Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-09T22:30:00Z | Instituto vs Boca Juniors (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-09T22:30:00Z | Instituto vs Boca Juniors (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
 | 2026-10-10T00:45:00Z | Unión vs Defensa y Justicia (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-10T01:00:00Z | Puebla vs León (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-10T03:00:00Z | Tigres UANL vs Toluca (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
@@ -104,11 +104,11 @@ model board generated 2026-10-09T20:40:38.994578Z · simulations this update: 0 
 | New York Red Bulls vs San Diego FC | Total goals over 4.5 | no | 0.7200 | 0.871 [0.768, 0.951] | +0.137 | +0.086 | 0.8 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Atlante | btts | no | 0.4300 | 0.614 [0.477, 0.741] | +0.167 | +0.085 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | Toronto FC vs CF Montréal | away team total over 0.5 | no | 0.2600 | 0.439 [0.313, 0.558] | +0.165 | +0.084 | 0.34 | - |  | RESEARCH_CANDIDATE |
-| Querétaro vs Atlante | away team total over 0.5 | no | 0.3100 | 0.501 [0.353, 0.645] | +0.176 | +0.083 | 0.39 | - | * | RESEARCH_CANDIDATE |
-| Toronto FC vs CF Montréal | btts | no | 0.3600 | 0.533 [0.414, 0.646] | +0.157 | +0.081 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | away team total over 2.5 | no | 0.7500 | 0.888 [0.804, 0.955] | +0.125 | +0.081 | 0.83 | - |  | RESEARCH_CANDIDATE |
-| Querétaro vs Atlante | away team total over 1.5 | no | 0.6800 | 0.834 [0.721, 0.928] | +0.138 | +0.078 | 0.76 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Atlante | away team total over 1.5 | no | 0.6800 | 0.834 [0.721, 0.928] | +0.138 | +0.078 | 0.76 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Seattle Sounders | away team total over 0.5 | no | 0.2800 | 0.450 [0.327, 0.571] | +0.156 | +0.076 | 0.35 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Atlante | away team total over 0.5 | no | 0.3200 | 0.501 [0.353, 0.645] | +0.166 | +0.072 | 0.39 | - |  | RESEARCH_CANDIDATE |
+| Toronto FC vs CF Montréal | btts | no | 0.3700 | 0.533 [0.414, 0.646] | +0.147 | +0.071 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Napoli vs Frosinone | Result: home | no | 0.3400 | 0.560 [0.333, 0.773] | +0.204 | +0.069 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Hull City vs Everton | Result: away | no | 0.5400 | 0.736 [0.552, 0.891] | +0.179 | +0.068 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Vancouver Whitecaps | away team total over 1.5 | no | 0.5700 | 0.725 [0.598, 0.836] | +0.138 | +0.065 | 0.63 | - | * | RESEARCH_CANDIDATE |
@@ -134,8 +134,8 @@ model board generated 2026-10-09T20:40:38.994578Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2683
-action_NO_QUOTE: 803
+action_NO_EDGE: 2685
+action_NO_QUOTE: 801
 action_RESEARCH_CANDIDATE: 186
 contract_sides: 3672
 fixtures: 73
