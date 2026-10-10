@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261010T021155Z-20eea8` · generated 2026-10-10T02:11:55.173578Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261010T022637Z-c9350f` · generated 2026-10-10T02:26:37.380206Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-10T02:09:03.497125Z (CURRENT at publish; CURRENT until 2026-10-10T02:29:03.497125Z, STALE after 2026-10-10T02:39:03.497125Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-10T02:24:03.502093Z (CURRENT at publish; CURRENT until 2026-10-10T02:44:03.502093Z, STALE after 2026-10-10T02:54:03.502093Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-10T02:11:47.503091Z · simulations this update: 41 · Odds API calls this update: 0 (credits 0) · reprice 1.77s
+model board generated 2026-10-10T02:11:47.503091Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.70s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-10T02:11:47.503091Z · simulations this update: 41
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-10T03:00:00Z | Tigres UANL vs Toluca (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 79 | 1 |
+| 2026-10-10T03:00:00Z | Tigres UANL vs Toluca (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 79 | 1 |
 | 2026-10-10T11:30:00Z | Arsenal vs Leeds United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T12:00:00Z | Rayo Vallecano vs Athletic Club (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T13:00:00Z | Genoa vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -39,9 +39,9 @@ model board generated 2026-10-10T02:11:47.503091Z · simulations this update: 41
 | 2026-10-10T18:45:00Z | Paris Saint-Germain vs Le Mans (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T18:45:00Z | Napoli vs Frosinone (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T19:00:00Z | Real Madrid vs Villarreal (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-10T20:00:00Z | Central Córdoba vs Estudiantes de La Plata (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-10T20:00:00Z | Central Córdoba vs Estudiantes de La Plata (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-10T21:00:00Z | Vasco da Gama vs Remo (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-10T22:15:00Z | Tigre vs Banfield (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-10T22:15:00Z | Tigre vs Banfield (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T23:00:00Z | FC Juárez vs Tijuana (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-10T23:00:00Z | Querétaro vs Atlante (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-10T23:30:00Z | Atlanta United vs FC Cincinnati (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
@@ -92,7 +92,7 @@ model board generated 2026-10-10T02:11:47.503091Z · simulations this update: 41
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| FC Augsburg vs Bayern Munich | Result: away | no | 0.1600 | 0.485 [0.288, 0.684] | +0.316 | +0.184 | 0.33 | - | * | RESEARCH_CANDIDATE |
+| FC Augsburg vs Bayern Munich | Result: away | no | 0.1700 | 0.485 [0.288, 0.684] | +0.306 | +0.173 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | SC Paderborn 07 vs VfB Stuttgart | Result: away | no | 0.4000 | 0.654 [0.462, 0.823] | +0.237 | +0.121 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | away team total over 1.5 | no | 0.4700 | 0.690 [0.551, 0.816] | +0.203 | +0.120 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Cagliari vs Juventus | Result: away | no | 0.3900 | 0.615 [0.463, 0.759] | +0.208 | +0.114 | 0.5 | - | * | RESEARCH_CANDIDATE |
@@ -136,8 +136,8 @@ model board generated 2026-10-10T02:11:47.503091Z · simulations this update: 41
 ## Counts
 
 ```
-action_NO_EDGE: 2785
-action_NO_QUOTE: 687
+action_NO_EDGE: 2784
+action_NO_QUOTE: 688
 action_RESEARCH_CANDIDATE: 198
 contract_sides: 3670
 fixtures: 75
