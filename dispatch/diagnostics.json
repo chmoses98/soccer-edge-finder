@@ -34,8 +34,8 @@
       "achieved_minutes_median": 2.48,
       "achieved_minutes_p10": 1.57,
       "achieved_minutes_p90": 4.45,
-      "delivered": 83,
-      "delivery_rate": 0.7757009345794392,
+      "delivered": 84,
+      "delivery_rate": 0.7777777777777778,
       "lateness_minutes_max": 7.0,
       "lateness_minutes_median": 2.52,
       "missed": 24
@@ -51,20 +51,13 @@
       "missed": 31
     }
   },
-  "delivered_total": 410,
-  "delivery_rate_total": 0.7495429616087751,
+  "delivered_total": 411,
+  "delivery_rate_total": 0.75,
   "fixtures_tracked": 111,
-  "generated_at": "2026-10-10T00:33:22Z",
+  "generated_at": "2026-10-10T00:42:42Z",
   "missed_total": 137,
-  "n_pending_fixtures": 132,
+  "n_pending_fixtures": 131,
   "pending_fixtures": [
-    {
-      "competition_id": "arg.primera",
-      "fixture_id": "fx:arg.primera:2026:arg.union:arg.defensa_y_justicia",
-      "kickoff_utc": "2026-10-10T00:45:00Z",
-      "markets_discovered": 14,
-      "source": "run_output"
-    },
     {
       "competition_id": "mex.liga_mx",
       "fixture_id": "fx:mex.liga_mx:2026:mex.puebla:mex.leon",
@@ -757,6 +750,13 @@
       "kickoff_utc": "2026-10-11T16:00:00Z",
       "markets_discovered": 80,
       "source": "run_output"
+    },
+    {
+      "competition_id": "ita.serie_a",
+      "fixture_id": "fx:ita.serie_a:2026-27:ita.sassuolo:ita.milan",
+      "kickoff_utc": "2026-10-11T16:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
     }
   ],
   "required_horizons": [
