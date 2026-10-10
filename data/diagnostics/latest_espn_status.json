@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-10T18:41:35.128038+00:00",
+  "as_of": "2026-10-10T23:38:29.807599+00:00",
   "events": 664,
   "events_skipped_unmapped": 338,
   "fixtures_mapped": 326,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=68"
+      "weather_stopped:consecutive_failures:skipped=69"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 126,
-    "events": 150,
+    "captured": 124,
+    "events": 132,
     "failures": [],
-    "published_post": 21,
-    "published_pre_kickoff": 12,
-    "unchanged": 24,
-    "unpublished": 117
+    "published_post": 17,
+    "published_pre_kickoff": 3,
+    "unchanged": 8,
+    "unpublished": 112
   },
   "map_proposals": {
     "bel.1": {
@@ -173,7 +173,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 38,
+  "results_appended": 17,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -232,7 +232,7 @@
   },
   "weather": {
     "captured": 5,
-    "events": 78,
+    "events": 79,
     "failures": [
       "401912649: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Kyoto&count=5&language=en&forma",
       "401912648: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Pohang&count=5&language=en&form",
@@ -241,7 +241,7 @@
     "forecast_miss": 0,
     "geocode_miss": 2,
     "no_venue": 0,
-    "skipped": 68,
+    "skipped": 69,
     "stopped": "consecutive_failures"
   }
 }
