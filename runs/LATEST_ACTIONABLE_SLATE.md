@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261010T143502Z-faab0a` · generated 2026-10-10T14:35:02.356172Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261010T144246Z-fca253` · generated 2026-10-10T14:42:46.239917Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-10T14:32:15.070749Z (CURRENT at publish; CURRENT until 2026-10-10T14:52:15.070749Z, STALE after 2026-10-10T15:02:15.070749Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-10T14:40:03.372746Z (CURRENT at publish; CURRENT until 2026-10-10T15:00:03.372746Z, STALE after 2026-10-10T15:10:03.372746Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-10T14:12:54.005711Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 2.24s
+model board generated 2026-10-10T14:42:41.631679Z · simulations this update: 28 · Odds API calls this update: 0 (credits 0) · reprice 2.14s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -13,18 +13,18 @@ model board generated 2026-10-10T14:12:54.005711Z · simulations this update: 0 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
 | 2026-10-10T15:15:00Z | Lille vs Le Havre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
-| 2026-10-10T16:00:00Z | Inter Milan vs Parma (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
-| 2026-10-10T16:30:00Z | Manchester United vs Tottenham Hotspur (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 80 | 0 |
-| 2026-10-10T16:30:00Z | FC Barcelona vs Getafe (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 76 | 0 |
-| 2026-10-10T16:30:00Z | RB Leipzig vs Eintracht Frankfurt (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 0 |
+| 2026-10-10T16:00:00Z | Inter Milan vs Parma (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-10T16:30:00Z | Manchester United vs Tottenham Hotspur (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-10T16:30:00Z | FC Barcelona vs Getafe (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-10T16:30:00Z | RB Leipzig vs Eintracht Frankfurt (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T17:00:00Z | Toronto FC vs CF Montréal (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-10T18:30:00Z | Chicago Fire vs New York City FC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-10-10T18:45:00Z | Brest vs Angers (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 0 |
-| 2026-10-10T18:45:00Z | Lorient vs Paris FC (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 0 |
-| 2026-10-10T18:45:00Z | AS Monaco vs Toulouse (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 0 |
-| 2026-10-10T18:45:00Z | Paris Saint-Germain vs Le Mans (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 0 |
-| 2026-10-10T18:45:00Z | Napoli vs Frosinone (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 0 |
-| 2026-10-10T19:00:00Z | Real Madrid vs Villarreal (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 85 | 0 |
+| 2026-10-10T18:45:00Z | Brest vs Angers (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-10T18:45:00Z | Lorient vs Paris FC (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-10T18:45:00Z | AS Monaco vs Toulouse (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-10T18:45:00Z | Paris Saint-Germain vs Le Mans (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-10T18:45:00Z | Napoli vs Frosinone (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-10T19:00:00Z | Real Madrid vs Villarreal (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T20:00:00Z | Central Córdoba vs Estudiantes de La Plata (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-10T21:00:00Z | Vasco da Gama vs Remo (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-10T22:15:00Z | Tigre vs Banfield (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
@@ -45,25 +45,25 @@ model board generated 2026-10-10T14:12:54.005711Z · simulations this update: 0 
 | 2026-10-11T01:30:00Z | Colorado Rapids vs San Jose Earthquakes (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-11T02:30:00Z | Los Angeles FC vs Vancouver Whitecaps (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-11T03:10:00Z | Club América vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-10-11T10:30:00Z | Como vs AS Roma (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 0 |
-| 2026-10-11T12:00:00Z | Elche vs Celta Vigo (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 73 | 0 |
-| 2026-10-11T13:00:00Z | Crystal Palace vs Nottingham Forest (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 75 | 0 |
-| 2026-10-11T13:00:00Z | Hull City vs Everton (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 73 | 0 |
-| 2026-10-11T13:00:00Z | Nice vs Strasbourg (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 0 |
-| 2026-10-11T13:00:00Z | Lazio vs Monza (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
-| 2026-10-11T13:00:00Z | Lecce vs Bologna (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 0 |
-| 2026-10-11T13:30:00Z | 1. FC Köln vs Borussia Mönchengladbach (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 0 |
-| 2026-10-11T14:15:00Z | Real Sociedad vs Deportivo La Coruña (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
-| 2026-10-11T15:15:00Z | Rennes vs AJ Auxerre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 0 |
-| 2026-10-11T15:30:00Z | Liverpool vs Manchester City (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 82 | 0 |
-| 2026-10-11T15:30:00Z | SC Freiburg vs Schalke 04 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 0 |
-| 2026-10-11T16:00:00Z | Sassuolo vs AC Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 0 |
-| 2026-10-11T16:30:00Z | Real Betis vs Osasuna (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
+| 2026-10-11T10:30:00Z | Como vs AS Roma (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-11T12:00:00Z | Elche vs Celta Vigo (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-11T13:00:00Z | Crystal Palace vs Nottingham Forest (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-11T13:00:00Z | Hull City vs Everton (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-11T13:00:00Z | Nice vs Strasbourg (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-11T13:00:00Z | Lazio vs Monza (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-11T13:00:00Z | Lecce vs Bologna (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-11T13:30:00Z | 1. FC Köln vs Borussia Mönchengladbach (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-11T14:15:00Z | Real Sociedad vs Deportivo La Coruña (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-11T15:15:00Z | Rennes vs AJ Auxerre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-11T15:30:00Z | Liverpool vs Manchester City (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-11T15:30:00Z | SC Freiburg vs Schalke 04 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-11T16:00:00Z | Sassuolo vs AC Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-11T16:30:00Z | Real Betis vs Osasuna (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-11T17:45:00Z | San Lorenzo vs Deportivo Riestra (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-11T18:45:00Z | Troyes vs Marseille (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 0 |
-| 2026-10-11T18:45:00Z | Cagliari vs Juventus (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
+| 2026-10-11T18:45:00Z | Troyes vs Marseille (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-11T18:45:00Z | Cagliari vs Juventus (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-11T19:00:00Z | Atlético Mineiro vs Santos (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-11T19:00:00Z | Racing Santander vs Valencia (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 0 |
+| 2026-10-11T19:00:00Z | Racing Santander vs Valencia (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-11T20:00:00Z | Platense vs Argentinos Juniors (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-11T20:30:00Z | Flamengo vs Fluminense (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-11T20:30:00Z | Grêmio vs Internacional (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -76,7 +76,7 @@ model board generated 2026-10-10T14:12:54.005711Z · simulations this update: 0 
 | 2026-10-12T00:30:00Z | Talleres vs Independiente (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-12T01:15:00Z | Pumas UNAM vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 
-## Candidates on CURRENT prices (191; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (192; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -86,11 +86,11 @@ model board generated 2026-10-10T14:12:54.005711Z · simulations this update: 0 
 | New York Red Bulls vs San Diego FC | away team total over 2.5 | no | 0.7200 | 0.888 [0.803, 0.955] | +0.154 | +0.114 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | Total goals over 2.5 | no | 0.3000 | 0.532 [0.362, 0.687] | +0.217 | +0.113 | 0.41 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Seattle Sounders | away team total over 0.5 | no | 0.2500 | 0.450 [0.325, 0.573] | +0.186 | +0.105 | 0.35 | - | * | RESEARCH_CANDIDATE |
+| New York Red Bulls vs San Diego FC | Total goals over 4.5 | no | 0.7000 | 0.871 [0.765, 0.951] | +0.156 | +0.104 | 0.8 | - |  | RESEARCH_CANDIDATE |
 | Cagliari vs Juventus | Result: away | no | 0.4000 | 0.615 [0.463, 0.759] | +0.198 | +0.104 | 0.5 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Atlante | away team total over 0.5 | no | 0.2900 | 0.501 [0.353, 0.645] | +0.196 | +0.103 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Seattle Sounders | btts | no | 0.3600 | 0.553 [0.438, 0.667] | +0.177 | +0.103 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Seattle Sounders | away team total over 1.5 | no | 0.6200 | 0.799 [0.691, 0.892] | +0.162 | +0.100 | 0.72 | - |  | RESEARCH_CANDIDATE |
-| New York Red Bulls vs San Diego FC | Total goals over 4.5 | no | 0.7100 | 0.871 [0.765, 0.951] | +0.146 | +0.094 | 0.8 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Atlante | away team total over 0.5 | no | 0.3000 | 0.501 [0.353, 0.645] | +0.186 | +0.093 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | Toronto FC vs CF Montréal | away team total over 1.5 | no | 0.6200 | 0.790 [0.680, 0.884] | +0.154 | +0.090 | 0.71 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Atlante | away team total over 1.5 | no | 0.6700 | 0.833 [0.720, 0.928] | +0.148 | +0.088 | 0.76 | - |  | RESEARCH_CANDIDATE |
 | Toronto FC vs CF Montréal | away team total over 0.5 | no | 0.2600 | 0.439 [0.316, 0.558] | +0.165 | +0.085 | 0.34 | - |  | RESEARCH_CANDIDATE |
@@ -109,7 +109,6 @@ model board generated 2026-10-10T14:12:54.005711Z · simulations this update: 0 
 | Charlotte FC vs FC Dallas | away team total over 1.5 | no | 0.5700 | 0.723 [0.584, 0.842] | +0.136 | +0.059 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Vancouver Whitecaps | btts | no | 0.3700 | 0.524 [0.402, 0.635] | +0.138 | +0.058 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Hull City vs Everton | Result: away | no | 0.5500 | 0.736 [0.550, 0.891] | +0.168 | +0.058 | 0.6 | - | * | RESEARCH_CANDIDATE |
-| Los Angeles FC vs Vancouver Whitecaps | away team total over 0.5 | no | 0.2200 | 0.368 [0.247, 0.485] | +0.136 | +0.058 | 0.27 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Nashville SC | Total goals over 2.5 | no | 0.4500 | 0.616 [0.467, 0.756] | +0.148 | +0.057 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | First half: both teams to score | no | 0.7000 | 0.820 [0.728, 0.892] | +0.106 | +0.055 | 0.75 | - | * | RESEARCH_CANDIDATE |
 | Vasco da Gama vs Remo | Result: home | no | 0.2550 | 0.427 [0.269, 0.587] | +0.159 | +0.053 | 0.3 | - | * | RESEARCH_CANDIDATE |
@@ -118,16 +117,17 @@ model board generated 2026-10-10T14:12:54.005711Z · simulations this update: 0 
 | Minnesota United vs Houston Dynamo | btts | no | 0.4100 | 0.560 [0.438, 0.678] | +0.133 | +0.051 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Chicago Fire vs New York City FC | away team total over 0.5 | no | 0.2600 | 0.401 [0.279, 0.518] | +0.127 | +0.050 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Napoli vs Frosinone | Result: home | no | 0.3600 | 0.560 [0.337, 0.763] | +0.184 | +0.049 | 0.4 | - | * | RESEARCH_CANDIDATE |
-| New York Red Bulls vs San Diego FC | First-half total goals over 0.5 | no | 0.2000 | 0.330 [0.228, 0.442] | +0.119 | +0.049 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | First-half total goals over 2.5 | no | 0.7900 | 0.889 [0.809, 0.961] | +0.087 | +0.048 | 0.84 | - |  | RESEARCH_CANDIDATE |
+| Los Angeles FC vs Vancouver Whitecaps | away team total over 0.5 | no | 0.2300 | 0.368 [0.247, 0.485] | +0.125 | +0.047 | 0.27 | - |  | RESEARCH_CANDIDATE |
+| Austin FC vs Nashville SC | Total goals over 3.5 | no | 0.6800 | 0.806 [0.689, 0.906] | +0.110 | +0.046 | 0.72 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2952
-action_NO_QUOTE: 4415
-action_RESEARCH_CANDIDATE: 191
-contract_sides: 7558
+action_NO_EDGE: 2951
+action_NO_QUOTE: 799
+action_RESEARCH_CANDIDATE: 192
+contract_sides: 3942
 fixtures: 63
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
