@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261010T082811Z-71129b` · generated 2026-10-10T08:28:11.031253Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261010T084312Z-a82405` · generated 2026-10-10T08:43:12.661682Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-10T08:25:38.013044Z (CURRENT at publish; CURRENT until 2026-10-10T08:45:38.013044Z, STALE after 2026-10-10T08:55:38.013044Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-10T08:40:39.579478Z (CURRENT at publish; CURRENT until 2026-10-10T09:00:39.579478Z, STALE after 2026-10-10T09:10:39.579478Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-10T07:42:59.935504Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.44s
+model board generated 2026-10-10T07:42:59.935504Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.56s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -78,16 +78,16 @@ model board generated 2026-10-10T07:42:59.935504Z · simulations this update: 0 
 | 2026-10-11T19:00:00Z | Atlético Mineiro vs Santos (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-11T19:00:00Z | Racing Santander vs Valencia (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-11T20:00:00Z | Platense vs Argentinos Juniors (arg.primera) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-11T20:30:00Z | Flamengo vs Fluminense (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-10-11T20:30:00Z | Grêmio vs Internacional (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-10-11T20:30:00Z | Palmeiras vs Corinthians (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-11T20:30:00Z | Flamengo vs Fluminense (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-11T20:30:00Z | Grêmio vs Internacional (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-11T20:30:00Z | Palmeiras vs Corinthians (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-11T22:30:00Z | Bahia vs Mirassol (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-11T23:00:00Z | Atlético San Luis vs Santos Laguna (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-11T23:00:00Z | St. Louis City SC vs LA Galaxy (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-11T23:10:00Z | Pachuca vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-12T01:15:00Z | Pumas UNAM vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (192; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (194; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -135,9 +135,9 @@ model board generated 2026-10-10T07:42:59.935504Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2701
-action_NO_QUOTE: 619
-action_RESEARCH_CANDIDATE: 192
+action_NO_EDGE: 2697
+action_NO_QUOTE: 621
+action_RESEARCH_CANDIDATE: 194
 contract_sides: 3512
 fixtures: 74
 fixtures_model_invalidated: 0
