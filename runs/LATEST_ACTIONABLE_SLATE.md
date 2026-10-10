@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261010T153226Z-9b6a56` · generated 2026-10-10T15:32:26.663730Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261010T154728Z-70028d` · generated 2026-10-10T15:47:28.903237Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-10T15:29:50.149997Z (CURRENT at publish; CURRENT until 2026-10-10T15:49:50.149997Z, STALE after 2026-10-10T15:59:50.149997Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-10T15:44:50.155998Z (CURRENT at publish; CURRENT until 2026-10-10T16:04:50.155998Z, STALE after 2026-10-10T16:14:50.155998Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-10T15:28:42.784795Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 2.14s
+model board generated 2026-10-10T15:28:42.784795Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 1.96s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,10 +12,10 @@ model board generated 2026-10-10T15:28:42.784795Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-10T16:00:00Z | Inter Milan vs Parma (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
-| 2026-10-10T16:30:00Z | Manchester United vs Tottenham Hotspur (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
-| 2026-10-10T16:30:00Z | FC Barcelona vs Getafe (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
-| 2026-10-10T16:30:00Z | RB Leipzig vs Eintracht Frankfurt (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
+| 2026-10-10T16:00:00Z | Inter Milan vs Parma (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
+| 2026-10-10T16:30:00Z | Manchester United vs Tottenham Hotspur (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
+| 2026-10-10T16:30:00Z | FC Barcelona vs Getafe (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
+| 2026-10-10T16:30:00Z | RB Leipzig vs Eintracht Frankfurt (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
 | 2026-10-10T17:00:00Z | Toronto FC vs CF Montréal (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-10T18:30:00Z | Chicago Fire vs New York City FC (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-10T18:45:00Z | Brest vs Angers (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -75,13 +75,13 @@ model board generated 2026-10-10T15:28:42.784795Z · simulations this update: 0 
 | 2026-10-12T00:30:00Z | Talleres vs Independiente (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-12T01:15:00Z | Pumas UNAM vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 
-## Candidates on CURRENT prices (192; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (191; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| New York Red Bulls vs San Diego FC | away team total over 1.5 | no | 0.4500 | 0.692 [0.550, 0.815] | +0.224 | +0.146 | 0.59 | - | * | RESEARCH_CANDIDATE |
+| New York Red Bulls vs San Diego FC | away team total over 1.5 | no | 0.4600 | 0.692 [0.550, 0.815] | +0.214 | +0.136 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | Total goals over 3.5 | no | 0.5000 | 0.737 [0.583, 0.864] | +0.219 | +0.134 | 0.63 | - | * | RESEARCH_CANDIDATE |
-| New York Red Bulls vs San Diego FC | btts | no | 0.2900 | 0.503 [0.379, 0.626] | +0.199 | +0.120 | 0.4 | - | * | RESEARCH_CANDIDATE |
+| New York Red Bulls vs San Diego FC | btts | no | 0.2800 | 0.503 [0.379, 0.626] | +0.209 | +0.130 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | away team total over 2.5 | no | 0.7200 | 0.888 [0.803, 0.955] | +0.154 | +0.114 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | Total goals over 4.5 | no | 0.6900 | 0.871 [0.765, 0.951] | +0.166 | +0.114 | 0.8 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | Total goals over 2.5 | no | 0.3000 | 0.532 [0.362, 0.687] | +0.217 | +0.113 | 0.41 | - |  | RESEARCH_CANDIDATE |
@@ -123,9 +123,9 @@ model board generated 2026-10-10T15:28:42.784795Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2950
-action_NO_QUOTE: 794
-action_RESEARCH_CANDIDATE: 192
+action_NO_EDGE: 2953
+action_NO_QUOTE: 792
+action_RESEARCH_CANDIDATE: 191
 contract_sides: 3936
 fixtures: 62
 fixtures_model_invalidated: 0
