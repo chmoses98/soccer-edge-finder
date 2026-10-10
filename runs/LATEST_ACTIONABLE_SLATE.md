@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261010T092823Z-283dd5` · generated 2026-10-10T09:28:23.510331Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261010T094316Z-0ae874` · generated 2026-10-10T09:43:16.631199Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-10T09:25:41.968175Z (CURRENT at publish; CURRENT until 2026-10-10T09:45:41.968175Z, STALE after 2026-10-10T09:55:41.968175Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-10T09:40:43.551093Z (CURRENT at publish; CURRENT until 2026-10-10T10:00:43.551093Z, STALE after 2026-10-10T10:10:43.551093Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-10T07:42:59.935504Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.38s
+model board generated 2026-10-10T07:42:59.935504Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.54s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -116,7 +116,6 @@ model board generated 2026-10-10T07:42:59.935504Z · simulations this update: 0 
 | Cagliari vs Juventus | Result: home | yes | 0.1500 | 0.321 [0.188, 0.476] | +0.162 | +0.070 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | Result: away | no | 0.5200 | 0.696 [0.552, 0.829] | +0.159 | +0.066 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Vancouver Whitecaps | away team total over 1.5 | no | 0.5700 | 0.725 [0.598, 0.836] | +0.138 | +0.065 | 0.63 | - | * | RESEARCH_CANDIDATE |
-| FC Augsburg vs Bayern Munich | Result: draw | yes | 0.1000 | 0.200 [0.146, 0.248] | +0.093 | +0.064 | 0.16 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Vancouver Whitecaps | btts | no | 0.3700 | 0.525 [0.405, 0.638] | +0.138 | +0.063 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | Result: home | yes | 0.2700 | 0.454 [0.298, 0.622] | +0.170 | +0.062 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | First-half total goals over 1.5 | no | 0.5300 | 0.686 [0.558, 0.802] | +0.139 | +0.061 | 0.59 | - | * | RESEARCH_CANDIDATE |
@@ -129,14 +128,15 @@ model board generated 2026-10-10T07:42:59.935504Z · simulations this update: 0 
 | Chicago Fire vs New York City FC | btts | no | 0.3700 | 0.519 [0.404, 0.635] | +0.133 | +0.058 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Nashville SC | Total goals over 2.5 | no | 0.4500 | 0.616 [0.458, 0.754] | +0.148 | +0.055 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | First half: both teams to score | no | 0.7000 | 0.820 [0.728, 0.902] | +0.105 | +0.055 | 0.75 | - | * | RESEARCH_CANDIDATE |
+| FC Augsburg vs Bayern Munich | Result: draw | yes | 0.1100 | 0.200 [0.146, 0.248] | +0.083 | +0.054 | 0.16 | - |  | RESEARCH_CANDIDATE |
 | Minnesota United vs Houston Dynamo | btts | no | 0.4100 | 0.560 [0.440, 0.677] | +0.133 | +0.054 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Le Mans | Result: home | no | 0.1100 | 0.320 [0.114, 0.539] | +0.203 | +0.053 | 0.16 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2688
-action_NO_QUOTE: 627
+action_NO_EDGE: 2689
+action_NO_QUOTE: 626
 action_RESEARCH_CANDIDATE: 197
 contract_sides: 3512
 fixtures: 74
