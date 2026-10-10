@@ -34,44 +34,30 @@
       "achieved_minutes_median": 2.44,
       "achieved_minutes_p10": 2.1,
       "achieved_minutes_p90": 4.38,
-      "delivered": 90,
-      "delivery_rate": 0.7894736842105263,
+      "delivered": 92,
+      "delivery_rate": 0.7931034482758621,
       "lateness_minutes_max": 7.0,
-      "lateness_minutes_median": 2.53,
+      "lateness_minutes_median": 2.57,
       "missed": 24
     },
     "60": {
-      "achieved_minutes_median": 62.07,
+      "achieved_minutes_median": 62.12,
       "achieved_minutes_p10": 57.43,
-      "achieved_minutes_p90": 62.6,
-      "delivered": 96,
-      "delivery_rate": 0.7559055118110236,
+      "achieved_minutes_p90": 62.54,
+      "delivered": 104,
+      "delivery_rate": 0.7703703703703704,
       "lateness_minutes_max": 25.07,
-      "lateness_minutes_median": -1.54,
+      "lateness_minutes_median": -2.1,
       "missed": 31
     }
   },
-  "delivered_total": 476,
-  "delivery_rate_total": 0.7765089722675367,
+  "delivered_total": 486,
+  "delivery_rate_total": 0.7800963081861958,
   "fixtures_tracked": 138,
-  "generated_at": "2026-10-10T12:46:10Z",
+  "generated_at": "2026-10-10T12:57:46Z",
   "missed_total": 137,
-  "n_pending_fixtures": 125,
+  "n_pending_fixtures": 123,
   "pending_fixtures": [
-    {
-      "competition_id": "ita.serie_a",
-      "fixture_id": "fx:ita.serie_a:2026-27:ita.genoa:ita.fiorentina:matchday_6",
-      "kickoff_utc": "2026-10-10T13:00:00Z",
-      "markets_discovered": 80,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "ita.serie_a",
-      "fixture_id": "fx:ita.serie_a:2026-27:ita.genoa:ita.fiorentina",
-      "kickoff_utc": "2026-10-10T13:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
     {
       "competition_id": "ger.bundesliga",
       "fixture_id": "fx:ger.bundesliga:2026-27:ger.union_berlin:ger.elversberg:matchday_5",
@@ -757,6 +743,20 @@
       "kickoff_utc": "2026-10-11T18:45:00Z",
       "markets_discovered": 0,
       "source": "espn"
+    },
+    {
+      "competition_id": "ita.serie_a",
+      "fixture_id": "fx:ita.serie_a:2026-27:ita.cagliari:ita.juventus",
+      "kickoff_utc": "2026-10-11T18:45:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "bra.serie_a",
+      "fixture_id": "fx:bra.serie_a:2026:bra.atletico_mineiro:bra.santos",
+      "kickoff_utc": "2026-10-11T19:00:00Z",
+      "markets_discovered": 29,
+      "source": "run_output"
     }
   ],
   "required_horizons": [
