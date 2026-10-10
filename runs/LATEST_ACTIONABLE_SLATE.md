@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261010T134645Z-64ad6e` · generated 2026-10-10T13:46:45.063599Z · trigger `kickoff_chain:T-30/T-15` · mode `reprice_only`
+slate `slate-20261010T135745Z-3bf2fb` · generated 2026-10-10T13:57:45.373252Z · trigger `kickoff_chain:T-120/T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-10T13:43:35.322331Z (CURRENT at publish; CURRENT until 2026-10-10T14:03:35.322331Z, STALE after 2026-10-10T14:13:35.322331Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-10T13:55:04.306947Z (CURRENT at publish; CURRENT until 2026-10-10T14:15:04.306947Z, STALE after 2026-10-10T14:25:04.306947Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-10T13:11:52.318911Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 1.81s
+model board generated 2026-10-10T13:11:52.318911Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.82s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -79,7 +79,7 @@ model board generated 2026-10-10T13:11:52.318911Z · simulations this update: 0 
 | 2026-10-11T23:10:00Z | Pachuca vs Necaxa (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-12T01:15:00Z | Pumas UNAM vs Cruz Azul (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (189; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (188; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -127,9 +127,9 @@ model board generated 2026-10-10T13:11:52.318911Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2713
-action_NO_QUOTE: 562
-action_RESEARCH_CANDIDATE: 189
+action_NO_EDGE: 2717
+action_NO_QUOTE: 559
+action_RESEARCH_CANDIDATE: 188
 contract_sides: 3464
 fixtures: 66
 fixtures_model_invalidated: 0

@@ -4,10 +4,10 @@
       "achieved_minutes_median": 122.49,
       "achieved_minutes_p10": 117.54,
       "achieved_minutes_p90": 125.62,
-      "delivered": 110,
-      "delivery_rate": 0.7857142857142857,
+      "delivered": 112,
+      "delivery_rate": 0.7887323943661971,
       "lateness_minutes_max": 62.51,
-      "lateness_minutes_median": -2.54,
+      "lateness_minutes_median": -2.49,
       "missed": 30
     },
     "15": {
@@ -32,10 +32,10 @@
     },
     "5": {
       "achieved_minutes_median": 2.36,
-      "achieved_minutes_p10": 2.22,
+      "achieved_minutes_p10": 2.2,
       "achieved_minutes_p90": 4.28,
-      "delivered": 102,
-      "delivery_rate": 0.8095238095238095,
+      "delivered": 110,
+      "delivery_rate": 0.8208955223880597,
       "lateness_minutes_max": 7.0,
       "lateness_minutes_median": 2.64,
       "missed": 24
@@ -51,69 +51,13 @@
       "missed": 31
     }
   },
-  "delivered_total": 538,
-  "delivery_rate_total": 0.797037037037037,
-  "fixtures_tracked": 140,
-  "generated_at": "2026-10-10T13:46:47Z",
+  "delivered_total": 548,
+  "delivery_rate_total": 0.8,
+  "fixtures_tracked": 142,
+  "generated_at": "2026-10-10T13:57:47Z",
   "missed_total": 137,
-  "n_pending_fixtures": 113,
+  "n_pending_fixtures": 105,
   "pending_fixtures": [
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.sunderland:eng.brighton:matchday_6",
-      "kickoff_utc": "2026-10-10T14:00:00Z",
-      "markets_discovered": 76,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.ipswich:eng.fulham:matchday_6",
-      "kickoff_utc": "2026-10-10T14:00:00Z",
-      "markets_discovered": 83,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.chelsea:eng.bournemouth:matchday_6",
-      "kickoff_utc": "2026-10-10T14:00:00Z",
-      "markets_discovered": 80,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.aston_villa:eng.brentford:matchday_6",
-      "kickoff_utc": "2026-10-10T14:00:00Z",
-      "markets_discovered": 81,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.aston_villa:eng.brentford",
-      "kickoff_utc": "2026-10-10T14:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.chelsea:eng.bournemouth",
-      "kickoff_utc": "2026-10-10T14:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.ipswich:eng.fulham",
-      "kickoff_utc": "2026-10-10T14:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.sunderland:eng.brighton",
-      "kickoff_utc": "2026-10-10T14:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
     {
       "competition_id": "esp.la_liga",
       "fixture_id": "fx:esp.la_liga:2026-27:esp.alaves:esp.atletico_madrid:matchday_8",
@@ -755,6 +699,62 @@
       "competition_id": "mex.liga_mx",
       "fixture_id": "fx:mex.liga_mx:2026:mex.san_luis:mex.santos_laguna",
       "kickoff_utc": "2026-10-11T23:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.st_louis_city:usa.la_galaxy",
+      "kickoff_utc": "2026-10-11T23:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "mex.liga_mx",
+      "fixture_id": "fx:mex.liga_mx:2026:mex.pachuca:mex.necaxa",
+      "kickoff_utc": "2026-10-11T23:10:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "arg.primera",
+      "fixture_id": "fx:arg.primera:2026:arg.talleres:arg.independiente",
+      "kickoff_utc": "2026-10-12T00:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "mex.liga_mx",
+      "fixture_id": "fx:mex.liga_mx:2026:mex.pumas:mex.cruz_azul",
+      "kickoff_utc": "2026-10-12T01:15:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "ita.serie_a",
+      "fixture_id": "fx:ita.serie_a:2026-27:ita.atalanta:ita.venezia",
+      "kickoff_utc": "2026-10-12T16:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "ita.serie_a",
+      "fixture_id": "fx:ita.serie_a:2026-27:ita.torino:ita.udinese",
+      "kickoff_utc": "2026-10-12T18:45:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "arg.primera",
+      "fixture_id": "fx:arg.primera:2026:arg.lanus:arg.velez",
+      "kickoff_utc": "2026-10-12T19:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "bra.serie_a",
+      "fixture_id": "fx:bra.serie_a:2026:bra.coritiba:bra.botafogo",
+      "kickoff_utc": "2026-10-12T19:00:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }
