@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-10T06:00:52.942355+00:00",
+  "as_of": "2026-10-10T12:41:26.725426+00:00",
   "events": 664,
   "events_skipped_unmapped": 338,
   "fixtures_mapped": 326,
   "health": {
     "reasons": [
-      "weather_failures:14",
-      "weather_stopped:consecutive_failures:skipped=55"
+      "weather_failures:3",
+      "weather_stopped:consecutive_failures:skipped=84"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 142,
+    "captured": 127,
     "events": 150,
     "failures": [],
-    "published_post": 3,
-    "published_pre_kickoff": 0,
-    "unchanged": 8,
-    "unpublished": 147
+    "published_post": 19,
+    "published_pre_kickoff": 7,
+    "unchanged": 23,
+    "unpublished": 124
   },
   "map_proposals": {
     "bel.1": {
@@ -173,7 +173,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 5,
+  "results_appended": 2,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -231,28 +231,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 18,
-    "events": 89,
+    "captured": 6,
+    "events": 95,
     "failures": [
-      "401841610: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Santiago%20del%20Estero&count=5",
-      "401841603: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-34.6131&longitude=-58.3772&hourly=",
-      "401841601: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-34.6131&longitude=-58.3772&hourly=",
-      "401841602: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rosario&count=5&language=en&for",
-      "401841600: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=C\u00f3rdoba&count=5&language=en&for",
-      "401878977: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Brugge&count=5&language=en&form",
-      "401878978: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=La%20Louvi\u00e8re&count=5&language=",
-      "401878974: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Waregem&count=5&language=en&for",
-      "401878971: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Liege&count=5&language=en&forma",
-      "401841263: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-22.9064&longitude=-43.1822&hourly=",
-      "401841267: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Porto%20Alegre&count=5&language",
-      "401841266: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Salvador&count=5&language=en&fo",
-      "401841264: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Curitiba&count=5&language=en&fo",
-      "401841265: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-27.0964&longitude=-52.6183&hourly="
+      "401912648: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=36.0292&longitude=129.3648&hourly=t",
+      "401912626: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Shanghai&count=5&language=en&fo",
+      "401912647: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Buriram&count=5&language=en&for"
     ],
     "forecast_miss": 0,
     "geocode_miss": 2,
     "no_venue": 0,
-    "skipped": 55,
+    "skipped": 84,
     "stopped": "consecutive_failures"
   }
 }
