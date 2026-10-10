@@ -1,10 +1,10 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 38,
-  "PINNACLE_VALID_CLOSE": 43,
+  "PINNACLE_VALID_CLOSE": 54,
   "MISSED_DISPATCHER_CLOSE": 24,
+  "NO_SPORT_KEY": 19,
   "PINNACLE_QUOTED_NOTHING": 15,
-  "NO_SPORT_KEY": 19
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 48
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.sarmiento": {
@@ -13,6 +13,11 @@
    "batch_id": null
   },
   "fx:arg.primera:2026:arg.atletico_tucuman:arg.barracas_central": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:arg.primera:2026:arg.barracas_central:arg.huracan": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
@@ -282,6 +287,16 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261010T134335Z"
   },
+  "fx:eng.premier_league:2026-27:eng.man_united:eng.tottenham": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:eng.premier_league:2026-27:eng.man_united:eng.tottenham:matchday_6": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261010T161458Z"
+  },
   "fx:eng.premier_league:2026-27:eng.sunderland:eng.brighton": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -301,6 +316,16 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261010T135846Z"
+  },
+  "fx:esp.la_liga:2026-27:esp.barcelona:esp.getafe": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:esp.la_liga:2026-27:esp.barcelona:esp.getafe:matchday_8": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261010T161458Z"
   },
   "fx:esp.la_liga:2026-27:esp.malaga:esp.espanyol": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -382,6 +407,16 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:fra.ligue_1:2026-27:fra.brest:fra.angers": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:fra.ligue_1:2026-27:fra.brest:fra.angers:matchday_6": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261010T182855Z"
+  },
   "fx:fra.ligue_1:2026-27:fra.lens:fra.lyon": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -401,6 +436,36 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261010T145859Z"
+  },
+  "fx:fra.ligue_1:2026-27:fra.lorient:fra.paris_fc": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:fra.ligue_1:2026-27:fra.lorient:fra.paris_fc:matchday_6": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261010T182855Z"
+  },
+  "fx:fra.ligue_1:2026-27:fra.monaco:fra.toulouse": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:fra.ligue_1:2026-27:fra.monaco:fra.toulouse:matchday_6": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261010T182855Z"
+  },
+  "fx:fra.ligue_1:2026-27:fra.psg:fra.le_mans": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:fra.ligue_1:2026-27:fra.psg:fra.le_mans:matchday_6": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261010T182855Z"
   },
   "fx:ger.bundesliga:2026-27:ger.augsburg:ger.bayern": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -431,6 +496,16 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261010T131501Z"
+  },
+  "fx:ger.bundesliga:2026-27:ger.leipzig:ger.frankfurt": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:ger.bundesliga:2026-27:ger.leipzig:ger.frankfurt:matchday_5": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261010T161458Z"
   },
   "fx:ger.bundesliga:2026-27:ger.mainz:ger.leverkusen": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -471,6 +546,26 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261010T124329Z"
+  },
+  "fx:ita.serie_a:2026-27:ita.inter:ita.parma": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:ita.serie_a:2026-27:ita.inter:ita.parma:matchday_6": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261010T154450Z"
+  },
+  "fx:ita.serie_a:2026-27:ita.napoli:ita.frosinone": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:ita.serie_a:2026-27:ita.napoli:ita.frosinone:matchday_6": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261010T182855Z"
   },
   "fx:mex.liga_mx:2026:mex.puebla:mex.leon": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -687,6 +782,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:usa.mls:2026:usa.chicago_fire:usa.nycfc": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261010T181407Z"
+  },
   "fx:usa.mls:2026:usa.chicago_fire:usa.vancouver_whitecaps": {
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
@@ -701,6 +801,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261002T011500Z"
+  },
+  "fx:usa.mls:2026:usa.toronto:usa.cf_montreal": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261010T164421Z"
   }
  }
 }
