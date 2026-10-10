@@ -1,13 +1,13 @@
 {
   "by_horizon": {
     "120": {
-      "achieved_minutes_median": 122.78,
+      "achieved_minutes_median": 122.49,
       "achieved_minutes_p10": 117.49,
       "achieved_minutes_p90": 125.62,
-      "delivered": 98,
-      "delivery_rate": 0.765625,
+      "delivered": 106,
+      "delivery_rate": 0.7794117647058824,
       "lateness_minutes_max": 62.51,
-      "lateness_minutes_median": -2.91,
+      "lateness_minutes_median": -2.54,
       "missed": 30
     },
     "15": {
@@ -31,11 +31,11 @@
       "missed": 27
     },
     "5": {
-      "achieved_minutes_median": 2.47,
+      "achieved_minutes_median": 2.44,
       "achieved_minutes_p10": 2.1,
       "achieved_minutes_p90": 4.38,
-      "delivered": 88,
-      "delivery_rate": 0.7857142857142857,
+      "delivered": 90,
+      "delivery_rate": 0.7894736842105263,
       "lateness_minutes_max": 7.0,
       "lateness_minutes_median": 2.53,
       "missed": 24
@@ -43,35 +43,21 @@
     "60": {
       "achieved_minutes_median": 61.4,
       "achieved_minutes_p10": 57.33,
-      "achieved_minutes_p90": 62.7,
-      "delivered": 84,
-      "delivery_rate": 0.7304347826086957,
+      "achieved_minutes_p90": 62.6,
+      "delivered": 86,
+      "delivery_rate": 0.7350427350427351,
       "lateness_minutes_max": 25.07,
-      "lateness_minutes_median": -1.4,
+      "lateness_minutes_median": -1.41,
       "missed": 31
     }
   },
-  "delivered_total": 448,
-  "delivery_rate_total": 0.7658119658119659,
-  "fixtures_tracked": 128,
-  "generated_at": "2026-10-10T11:46:19Z",
+  "delivered_total": 460,
+  "delivery_rate_total": 0.7705192629815746,
+  "fixtures_tracked": 136,
+  "generated_at": "2026-10-10T11:57:46Z",
   "missed_total": 137,
-  "n_pending_fixtures": 127,
+  "n_pending_fixtures": 125,
   "pending_fixtures": [
-    {
-      "competition_id": "esp.la_liga",
-      "fixture_id": "fx:esp.la_liga:2026-27:esp.rayo_vallecano:esp.athletic_bilbao:matchday_8",
-      "kickoff_utc": "2026-10-10T12:00:00Z",
-      "markets_discovered": 75,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "esp.la_liga",
-      "fixture_id": "fx:esp.la_liga:2026-27:esp.rayo_vallecano:esp.athletic_bilbao",
-      "kickoff_utc": "2026-10-10T12:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
     {
       "competition_id": "ita.serie_a",
       "fixture_id": "fx:ita.serie_a:2026-27:ita.genoa:ita.fiorentina:matchday_6",
@@ -757,6 +743,20 @@
       "kickoff_utc": "2026-10-11T18:45:00Z",
       "markets_discovered": 80,
       "source": "run_output"
+    },
+    {
+      "competition_id": "ita.serie_a",
+      "fixture_id": "fx:ita.serie_a:2026-27:ita.cagliari:ita.juventus:matchday_6",
+      "kickoff_utc": "2026-10-11T18:45:00Z",
+      "markets_discovered": 32,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "fra.ligue_1",
+      "fixture_id": "fx:fra.ligue_1:2026-27:fra.troyes:fra.marseille",
+      "kickoff_utc": "2026-10-11T18:45:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
     }
   ],
   "required_horizons": [
