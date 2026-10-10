@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261010T125743Z-aeaf63` · generated 2026-10-10T12:57:43.467312Z · trigger `kickoff_chain:T-60/T-5` · mode `model_refresh_and_reprice`
+slate `slate-20261010T130148Z-8d27d9` · generated 2026-10-10T13:01:48.583533Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-10T12:55:00.020682Z (CURRENT at publish; CURRENT until 2026-10-10T13:15:00.020682Z, STALE after 2026-10-10T13:25:00.020682Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-10T12:59:12.518059Z (CURRENT at publish; CURRENT until 2026-10-10T13:19:12.518059Z, STALE after 2026-10-10T13:29:12.518059Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-10T12:57:42.415545Z · simulations this update: 4 · Odds API calls this update: 1 (credits 3) · reprice 1.66s
+model board generated 2026-10-10T12:57:42.415545Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.50s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,6 @@ model board generated 2026-10-10T12:57:42.415545Z · simulations this update: 4 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-10T13:00:00Z | Genoa vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
 | 2026-10-10T13:30:00Z | FC Augsburg vs Bayern Munich (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
 | 2026-10-10T13:30:00Z | TSG Hoffenheim vs Hamburger SV (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
 | 2026-10-10T13:30:00Z | Mainz 05 vs Bayer Leverkusen (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
@@ -120,24 +119,24 @@ model board generated 2026-10-10T12:57:42.415545Z · simulations this update: 4 
 | New York Red Bulls vs San Diego FC | First-half total goals over 1.5 | no | 0.5300 | 0.686 [0.558, 0.802] | +0.139 | +0.061 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Nashville SC | away team total over 1.5 | no | 0.4900 | 0.656 [0.505, 0.788] | +0.148 | +0.060 | 0.55 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Vancouver Whitecaps | away team total over 0.5 | no | 0.2200 | 0.369 [0.251, 0.485] | +0.137 | +0.060 | 0.27 | - |  | RESEARCH_CANDIDATE |
+| Deportivo Alavés vs Atlético Madrid | Result: away | no | 0.4600 | 0.637 [0.486, 0.784] | +0.159 | +0.060 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | Napoli vs Frosinone | Result: home | no | 0.3500 | 0.560 [0.337, 0.763] | +0.194 | +0.059 | 0.4 | - | * | RESEARCH_CANDIDATE |
-| Deportivo Alavés vs Atlético Madrid | Result: home | yes | 0.2100 | 0.389 [0.238, 0.561] | +0.168 | +0.059 | 0.26 | - | * | RESEARCH_CANDIDATE |
+| Deportivo Alavés vs Atlético Madrid | Result: home | yes | 0.2100 | 0.389 [0.238, 0.561] | +0.168 | +0.059 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs FC Dallas | away team total over 1.5 | no | 0.5700 | 0.723 [0.583, 0.843] | +0.136 | +0.058 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | Hull City vs Everton | Result: away | no | 0.5500 | 0.736 [0.550, 0.891] | +0.168 | +0.058 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Nashville SC | Total goals over 2.5 | no | 0.4500 | 0.616 [0.458, 0.754] | +0.148 | +0.055 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | First half: both teams to score | no | 0.7000 | 0.820 [0.728, 0.902] | +0.105 | +0.055 | 0.75 | - | * | RESEARCH_CANDIDATE |
 | Minnesota United vs Houston Dynamo | btts | no | 0.4100 | 0.560 [0.440, 0.677] | +0.133 | +0.054 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Chicago Fire vs New York City FC | away team total over 1.5 | no | 0.6200 | 0.757 [0.637, 0.860] | +0.120 | +0.052 | 0.67 | - | * | RESEARCH_CANDIDATE |
-| New England Revolution vs Seattle Sounders | away team total over 2.5 | no | 0.8600 | 0.944 [0.897, 0.981] | +0.076 | +0.052 | 0.91 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2734
-action_NO_QUOTE: 568
+action_NO_EDGE: 2729
+action_NO_QUOTE: 567
 action_RESEARCH_CANDIDATE: 198
-contract_sides: 3500
-fixtures: 72
+contract_sides: 3494
+fixtures: 71
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
