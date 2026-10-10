@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261010T024836Z-441f8b` · generated 2026-10-10T02:48:36.736068Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261010T025736Z-420ec1` · generated 2026-10-10T02:57:36.002767Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-10T02:45:58.464327Z (CURRENT at publish; CURRENT until 2026-10-10T03:05:58.464327Z, STALE after 2026-10-10T03:15:58.464327Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-10T02:55:00.019618Z (CURRENT at publish; CURRENT until 2026-10-10T03:15:00.019618Z, STALE after 2026-10-10T03:25:00.019618Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-10T02:11:47.503091Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 1.73s
+model board generated 2026-10-10T02:11:47.503091Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.57s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -102,11 +102,11 @@ model board generated 2026-10-10T02:11:47.503091Z · simulations this update: 0 
 | New England Revolution vs Seattle Sounders | away team total over 1.5 | no | 0.6200 | 0.799 [0.693, 0.891] | +0.163 | +0.101 | 0.72 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | btts | no | 0.3100 | 0.503 [0.376, 0.623] | +0.178 | +0.099 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Seattle Sounders | away team total over 0.5 | no | 0.2600 | 0.450 [0.327, 0.571] | +0.177 | +0.097 | 0.35 | - |  | RESEARCH_CANDIDATE |
-| New York Red Bulls vs San Diego FC | Total goals over 4.5 | no | 0.7100 | 0.871 [0.768, 0.951] | +0.146 | +0.095 | 0.8 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Seattle Sounders | btts | no | 0.3700 | 0.553 [0.438, 0.666] | +0.167 | +0.092 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | away team total over 2.5 | no | 0.7400 | 0.888 [0.804, 0.955] | +0.134 | +0.091 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | FC Augsburg vs Bayern Munich | Result: home | yes | 0.0700 | 0.286 [0.125, 0.469] | +0.211 | +0.089 | 0.15 | - |  | RESEARCH_CANDIDATE |
 | Toronto FC vs CF Montréal | away team total over 1.5 | no | 0.6200 | 0.790 [0.677, 0.884] | +0.154 | +0.089 | 0.71 | - | * | RESEARCH_CANDIDATE |
+| New York Red Bulls vs San Diego FC | Total goals over 4.5 | no | 0.7200 | 0.871 [0.768, 0.951] | +0.137 | +0.086 | 0.8 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Atlante | btts | no | 0.4300 | 0.614 [0.477, 0.741] | +0.167 | +0.085 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | Toronto FC vs CF Montréal | away team total over 0.5 | no | 0.2600 | 0.439 [0.313, 0.558] | +0.165 | +0.084 | 0.34 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Atlante | away team total over 1.5 | no | 0.6800 | 0.834 [0.721, 0.928] | +0.138 | +0.078 | 0.76 | - |  | RESEARCH_CANDIDATE |

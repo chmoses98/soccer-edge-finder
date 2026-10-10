@@ -2173,16 +2173,16 @@
       "sha256_prefix": "21a74b2869d18be0fcb93bfaad30d4428e7ca8f13907ceda14607d367c2d392c"
     },
     "dispatch/horizons.jsonl": {
-      "byte_length": 229061,
+      "byte_length": 229540,
       "closed": false,
       "day": null,
       "first_manifested_at": "2026-09-28T20:29:36.243164Z",
       "immutable": false,
-      "line_count": 554,
+      "line_count": 555,
       "record_level": false,
       "record_type": "horizon_log",
       "recovery_id": null,
-      "sha256_prefix": "73d53837072be5704ac813771f16376e92ca4ca18ad07b5482ee0941be039751"
+      "sha256_prefix": "276eb25d8574d1287e87f2523be9f5dfa176543f56052feaab35e8944f7e0b20"
     },
     "dispatch/settle_runs.jsonl": {
       "byte_length": 49120,
@@ -2257,16 +2257,16 @@
       "sha256_prefix": "b33fcc6e688004b03a311e437d7cfffc591ddaaa52dff14fb7e7212e5beab072"
     },
     "dispatch/slate_log/2026-10-10.jsonl": {
-      "byte_length": 47006,
+      "byte_length": 49514,
       "closed": false,
       "day": "2026-10-10",
       "first_manifested_at": "2026-10-10T00:00:57.409570Z",
       "immutable": false,
-      "line_count": 17,
+      "line_count": 18,
       "record_level": false,
       "record_type": "slate_reprice_log",
       "recovery_id": null,
-      "sha256_prefix": "38cdd95e9a1d35bf32287ff54fde7685899cb563c94fe1b0c90a79cb2b5a8fa1"
+      "sha256_prefix": "6f946b8d38775531502e7f3a3207f297eb9ba1e38fbc43e24d8ab556033cd0a5"
     },
     "fixtures/espn/2026-09-28/espn-034707.json": {
       "byte_length": 157757,
@@ -19412,6 +19412,18 @@
       "recovery_id": null,
       "sha256_prefix": "bca59547f9b2ca1da4eaabed0d3ef183d349cdb29d16efd276a2b9c0b405334f"
     },
+    "snapshots/2026-10-10/cap-20261010T025732Z.jsonl": {
+      "byte_length": 780488,
+      "closed": false,
+      "day": "2026-10-10",
+      "first_manifested_at": "2026-10-10T02:58:17.426285Z",
+      "immutable": false,
+      "line_count": 962,
+      "record_level": false,
+      "record_type": "kalshi_snapshot",
+      "recovery_id": null,
+      "sha256_prefix": "b954e599a8927e56b4e480fda14c14dde847169d3db72c3602f69db7903061bf"
+    },
     "weather/2026-09-28.jsonl": {
       "byte_length": 42237,
       "closed": true,
@@ -19544,5 +19556,5 @@
     }
   },
   "manifest_version": 1,
-  "updated_at": "2026-10-10T02:49:18.697152Z"
+  "updated_at": "2026-10-10T02:58:17.426733Z"
 }
