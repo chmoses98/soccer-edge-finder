@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261010T185335Z-9a4c3a` · generated 2026-10-10T18:53:35.879426Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261010T185711Z-01df7a` · generated 2026-10-10T18:57:11.198746Z · trigger `kickoff_chain:T-60/T-5` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-10T18:50:51.823172Z (CURRENT at publish; CURRENT until 2026-10-10T19:10:51.823172Z, STALE after 2026-10-10T19:20:51.823172Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-10T18:54:27.737437Z (CURRENT at publish; CURRENT until 2026-10-10T19:14:27.737437Z, STALE after 2026-10-10T19:24:27.737437Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-10T18:27:44.474821Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.18s
+model board generated 2026-10-10T18:27:44.474821Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.21s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -13,9 +13,9 @@ model board generated 2026-10-10T18:27:44.474821Z · simulations this update: 0 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
 | 2026-10-10T19:00:00Z | Real Madrid vs Villarreal (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
-| 2026-10-10T20:00:00Z | Central Córdoba vs Estudiantes de La Plata (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-10T20:00:00Z | Central Córdoba vs Estudiantes de La Plata (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-10T21:00:00Z | Vasco da Gama vs Remo (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-10T22:15:00Z | Tigre vs Banfield (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-10T22:15:00Z | Tigre vs Banfield (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-10T23:00:00Z | FC Juárez vs Tijuana (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-10T23:00:00Z | Querétaro vs Atlante (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-10T23:30:00Z | Atlanta United vs FC Cincinnati (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
@@ -65,7 +65,7 @@ model board generated 2026-10-10T18:27:44.474821Z · simulations this update: 0 
 | 2026-10-12T01:15:00Z | Pumas UNAM vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-12T16:30:00Z | Atalanta vs Venezia (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (159; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (158; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -113,9 +113,9 @@ model board generated 2026-10-10T18:27:44.474821Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2703
-action_NO_QUOTE: 710
-action_RESEARCH_CANDIDATE: 159
+action_NO_EDGE: 2705
+action_NO_QUOTE: 709
+action_RESEARCH_CANDIDATE: 158
 contract_sides: 3572
 fixtures: 52
 fixtures_model_invalidated: 0
