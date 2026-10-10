@@ -1,40 +1,49 @@
 {
-  "as_of": "2026-10-10T14:46:31.648471+00:00",
-  "events": 5,
+  "as_of": "2026-10-10T15:01:39.737984+00:00",
+  "events": 22,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 5,
+  "fixtures_mapped": 22,
   "health": {
-    "reasons": [],
-    "state": "HEALTHY"
+    "reasons": [
+      "weather_failures:3",
+      "weather_stopped:consecutive_failures:skipped=8"
+    ],
+    "state": "DEGRADED"
   },
   "leagues": [
-    "fra.1"
+    "fra.1",
+    "ita.1",
+    "usa.1"
   ],
   "lineups": {
-    "captured": 1,
-    "events": 5,
+    "captured": 15,
+    "events": 22,
     "failures": [],
-    "published_post": 0,
+    "published_post": 1,
     "published_pre_kickoff": 1,
-    "unchanged": 4,
-    "unpublished": 4
+    "unchanged": 7,
+    "unpublished": 20
   },
   "map_proposals": {},
   "map_version": "4",
-  "results_appended": 0,
+  "results_appended": 1,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
-  "scoreboard_queries": 1,
+  "scoreboard_queries": 3,
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 5,
-    "events": 5,
-    "failures": [],
+    "captured": 11,
+    "events": 22,
+    "failures": [
+      "761852: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=35.2271&longitude=-80.8431&hourly=t",
+      "761847: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Miami&count=5&language=en&forma",
+      "761851: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Foxborough&count=5&language=en&"
+    ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 0,
-    "stopped": null
+    "skipped": 8,
+    "stopped": "consecutive_failures"
   }
 }
