@@ -1,25 +1,23 @@
 {
-  "as_of": "2026-10-09T23:59:36.057362+00:00",
-  "events": 2,
+  "as_of": "2026-10-10T00:14:36.310739+00:00",
+  "events": 4,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 2,
+  "fixtures_mapped": 4,
   "health": {
-    "reasons": [
-      "weather_failures:2"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
-    "mex.1"
+    "arg.1"
   ],
   "lineups": {
-    "captured": 0,
-    "events": 2,
+    "captured": 4,
+    "events": 4,
     "failures": [],
     "published_post": 0,
     "published_pre_kickoff": 0,
-    "unchanged": 2,
-    "unpublished": 2
+    "unchanged": 0,
+    "unpublished": 4
   },
   "map_proposals": {},
   "map_version": "4",
@@ -30,12 +28,9 @@
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 0,
-    "events": 2,
-    "failures": [
-      "401876954: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=19.0478&longitude=-98.2072&hourly=t",
-      "401876953: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=25.7417&longitude=-100.3022&hourly="
-    ],
+    "captured": 4,
+    "events": 4,
+    "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
