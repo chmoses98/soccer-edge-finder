@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261010T224614Z-013776` · generated 2026-10-10T22:46:14.800459Z · trigger `kickoff_chain:T-15` · mode `model_refresh_and_reprice`
+slate `slate-20261010T225329Z-24a62b` · generated 2026-10-10T22:53:29.704620Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-10T22:43:30.822112Z (CURRENT at publish; CURRENT until 2026-10-10T23:03:30.822112Z, STALE after 2026-10-10T23:13:30.822112Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-10T22:50:55.569510Z (CURRENT at publish; CURRENT until 2026-10-10T23:10:55.569510Z, STALE after 2026-10-10T23:20:55.569510Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-10T22:46:10.750373Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 1.39s
+model board generated 2026-10-10T22:46:10.750373Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.11s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -66,7 +66,7 @@ model board generated 2026-10-10T22:46:10.750373Z · simulations this update: 1 
 | 2026-10-12T19:00:00Z | Coventry City vs Newcastle United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 84 | 0 |
 | 2026-10-12T19:00:00Z | Levante vs Sevilla (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 72 | 0 |
 
-## Candidates on CURRENT prices (179; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (178; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -80,8 +80,8 @@ model board generated 2026-10-10T22:46:10.750373Z · simulations this update: 1 
 | New York Red Bulls vs San Diego FC | away team total over 2.5 | no | 0.7200 | 0.888 [0.803, 0.955] | +0.154 | +0.114 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | Total goals over 4.5 | no | 0.6900 | 0.871 [0.765, 0.951] | +0.166 | +0.114 | 0.8 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Atlante | away team total over 0.5 | no | 0.2800 | 0.501 [0.353, 0.645] | +0.207 | +0.113 | 0.39 | - | * | RESEARCH_CANDIDATE |
+| New England Revolution vs Seattle Sounders | btts | no | 0.3500 | 0.553 [0.438, 0.667] | +0.187 | +0.113 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Cagliari vs Juventus | Result: away | no | 0.4000 | 0.615 [0.463, 0.759] | +0.198 | +0.104 | 0.5 | - | * | RESEARCH_CANDIDATE |
-| New England Revolution vs Seattle Sounders | btts | no | 0.3600 | 0.553 [0.438, 0.667] | +0.177 | +0.103 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Atlante | away team total over 1.5 | no | 0.6600 | 0.833 [0.720, 0.928] | +0.158 | +0.097 | 0.76 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | away team total over 0.5 | no | 0.1600 | 0.338 [0.218, 0.457] | +0.169 | +0.093 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs FC Dallas | away team total over 1.5 | no | 0.5500 | 0.723 [0.584, 0.842] | +0.156 | +0.079 | 0.62 | - | * | RESEARCH_CANDIDATE |
@@ -114,9 +114,9 @@ model board generated 2026-10-10T22:46:10.750373Z · simulations this update: 1 
 ## Counts
 
 ```
-action_NO_EDGE: 2761
-action_NO_QUOTE: 3402
-action_RESEARCH_CANDIDATE: 179
+action_NO_EDGE: 2763
+action_NO_QUOTE: 3401
+action_RESEARCH_CANDIDATE: 178
 contract_sides: 6342
 fixtures: 53
 fixtures_model_invalidated: 0
