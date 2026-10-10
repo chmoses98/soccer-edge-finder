@@ -1,38 +1,44 @@
 {
-  "as_of": "2026-10-10T16:17:40.270175+00:00",
-  "events": 16,
+  "as_of": "2026-10-10T16:27:38.800926+00:00",
+  "events": 30,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 16,
+  "fixtures_mapped": 30,
   "health": {
-    "reasons": [],
-    "state": "HEALTHY"
+    "reasons": [
+      "weather_failures:2"
+    ],
+    "state": "DEGRADED"
   },
   "leagues": [
     "eng.1",
     "esp.1",
-    "ger.1"
+    "ger.1",
+    "usa.1"
   ],
   "lineups": {
-    "captured": 2,
-    "events": 14,
+    "captured": 1,
+    "events": 28,
     "failures": [],
     "published_post": 10,
-    "published_pre_kickoff": 3,
-    "unchanged": 12,
-    "unpublished": 1
+    "published_pre_kickoff": 4,
+    "unchanged": 27,
+    "unpublished": 14
   },
   "map_proposals": {},
   "map_version": "4",
   "results_appended": 11,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
-  "scoreboard_queries": 3,
+  "scoreboard_queries": 4,
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 14,
-    "events": 14,
-    "failures": [],
+    "captured": 26,
+    "events": 28,
+    "failures": [
+      "761857: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=39.8083&longitude=-104.9339&hourly=",
+      "761858: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Los%20Angeles&count=5&language="
+    ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
