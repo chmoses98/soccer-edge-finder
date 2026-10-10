@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261010T212422Z-43f136` · generated 2026-10-10T21:24:22.105316Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261010T213825Z-2bfcec` · generated 2026-10-10T21:38:25.479815Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-10T21:20:52.226955Z (CURRENT at publish; CURRENT until 2026-10-10T21:40:52.226955Z, STALE after 2026-10-10T21:50:52.226955Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-10T21:35:48.934119Z (CURRENT at publish; CURRENT until 2026-10-10T21:55:48.934119Z, STALE after 2026-10-10T22:05:48.934119Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-10T20:57:06.339931Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.04s
+model board generated 2026-10-10T20:57:06.339931Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.27s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -67,7 +67,7 @@ model board generated 2026-10-10T20:57:06.339931Z · simulations this update: 0 
 | 2026-10-12T19:00:00Z | Coventry City vs Newcastle United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 84 | 0 |
 | 2026-10-12T19:00:00Z | Levante vs Sevilla (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 72 | 0 |
 
-## Candidates on CURRENT prices (162; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (166; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -77,10 +77,10 @@ model board generated 2026-10-10T20:57:06.339931Z · simulations this update: 0 
 | New York Red Bulls vs San Diego FC | Total goals over 2.5 | no | 0.2900 | 0.532 [0.362, 0.687] | +0.227 | +0.124 | 0.41 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | away team total over 2.5 | no | 0.7200 | 0.888 [0.803, 0.955] | +0.154 | +0.114 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | Total goals over 4.5 | no | 0.6900 | 0.871 [0.765, 0.951] | +0.166 | +0.114 | 0.8 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Atlante | away team total over 0.5 | no | 0.2800 | 0.501 [0.353, 0.645] | +0.207 | +0.113 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Seattle Sounders | away team total over 1.5 | no | 0.6100 | 0.799 [0.691, 0.892] | +0.172 | +0.110 | 0.72 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Seattle Sounders | away team total over 0.5 | no | 0.2500 | 0.450 [0.325, 0.573] | +0.186 | +0.105 | 0.35 | - |  | RESEARCH_CANDIDATE |
 | Cagliari vs Juventus | Result: away | no | 0.4000 | 0.615 [0.463, 0.759] | +0.198 | +0.104 | 0.5 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Atlante | away team total over 0.5 | no | 0.2900 | 0.501 [0.353, 0.645] | +0.196 | +0.103 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Atlante | away team total over 1.5 | no | 0.6600 | 0.833 [0.720, 0.928] | +0.158 | +0.097 | 0.76 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Atlante | btts | no | 0.4200 | 0.614 [0.478, 0.741] | +0.177 | +0.095 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | away team total over 0.5 | no | 0.1600 | 0.338 [0.218, 0.457] | +0.169 | +0.093 | 0.24 | - |  | RESEARCH_CANDIDATE |
@@ -115,9 +115,9 @@ model board generated 2026-10-10T20:57:06.339931Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2725
-action_NO_QUOTE: 3483
-action_RESEARCH_CANDIDATE: 162
+action_NO_EDGE: 2755
+action_NO_QUOTE: 3449
+action_RESEARCH_CANDIDATE: 166
 contract_sides: 6370
 fixtures: 54
 fixtures_model_invalidated: 0
