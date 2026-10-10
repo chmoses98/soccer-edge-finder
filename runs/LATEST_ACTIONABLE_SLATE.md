@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261010T012742Z-b63a92` · generated 2026-10-10T01:27:42.716201Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261010T014238Z-267634` · generated 2026-10-10T01:42:38.438290Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-10T01:25:01.647285Z (CURRENT at publish; CURRENT until 2026-10-10T01:45:01.647285Z, STALE after 2026-10-10T01:55:01.647285Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-10T01:40:04.110607Z (CURRENT at publish; CURRENT until 2026-10-10T02:00:04.110607Z, STALE after 2026-10-10T02:10:04.110607Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-10T01:27:41.412222Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 1.84s
+model board generated 2026-10-10T01:27:41.412222Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 2.07s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -88,7 +88,7 @@ model board generated 2026-10-10T01:27:41.412222Z · simulations this update: 1 
 | 2026-10-11T23:10:00Z | Pachuca vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-12T01:15:00Z | Pumas UNAM vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (190; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (191; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -112,11 +112,13 @@ model board generated 2026-10-10T01:27:41.412222Z · simulations this update: 1 
 | Querétaro vs Atlante | away team total over 1.5 | no | 0.6800 | 0.834 [0.721, 0.928] | +0.138 | +0.078 | 0.76 | - |  | RESEARCH_CANDIDATE |
 | Toronto FC vs CF Montréal | btts | no | 0.3700 | 0.533 [0.414, 0.646] | +0.147 | +0.071 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Napoli vs Frosinone | Result: home | no | 0.3400 | 0.560 [0.333, 0.773] | +0.204 | +0.069 | 0.4 | - | * | RESEARCH_CANDIDATE |
+| Los Angeles FC vs Vancouver Whitecaps | away team total over 1.5 | no | 0.5700 | 0.725 [0.598, 0.836] | +0.138 | +0.065 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | Total goals over 1.5 | no | 0.1300 | 0.285 [0.163, 0.415] | +0.147 | +0.064 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Minnesota United vs Houston Dynamo | btts | no | 0.4000 | 0.560 [0.440, 0.677] | +0.143 | +0.064 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Cagliari vs Juventus | Result: home | yes | 0.1500 | 0.323 [0.190, 0.477] | +0.164 | +0.063 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | Result: home | yes | 0.2700 | 0.454 [0.298, 0.622] | +0.170 | +0.062 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Nashville SC | away team total over 1.5 | no | 0.4900 | 0.656 [0.505, 0.788] | +0.148 | +0.060 | 0.55 | - | * | RESEARCH_CANDIDATE |
+| Deportivo Alavés vs Atlético Madrid | Result: away | no | 0.4600 | 0.637 [0.486, 0.783] | +0.159 | +0.060 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | Total goals over 5.5 | no | 0.8500 | 0.943 [0.886, 0.985] | +0.085 | +0.060 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | FC Augsburg vs Bayern Munich | Result: draw | yes | 0.1000 | 0.195 [0.146, 0.243] | +0.089 | +0.060 | 0.15 | - |  | RESEARCH_CANDIDATE |
 | Hull City vs Everton | Result: away | no | 0.5500 | 0.736 [0.552, 0.891] | +0.169 | +0.058 | 0.6 | - | * | RESEARCH_CANDIDATE |
@@ -130,15 +132,13 @@ model board generated 2026-10-10T01:27:41.412222Z · simulations this update: 1 
 | New England Revolution vs Seattle Sounders | away team total over 2.5 | no | 0.8600 | 0.944 [0.897, 0.981] | +0.076 | +0.052 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | Vasco da Gama vs Remo | Result: home | no | 0.2600 | 0.426 [0.269, 0.577] | +0.152 | +0.051 | 0.3 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | First-half total goals over 1.5 | no | 0.5400 | 0.686 [0.558, 0.802] | +0.129 | +0.051 | 0.59 | - | * | RESEARCH_CANDIDATE |
-| Deportivo Alavés vs Atlético Madrid | Result: away | no | 0.4700 | 0.637 [0.486, 0.783] | +0.149 | +0.050 | 0.51 | - | * | RESEARCH_CANDIDATE |
-| Deportivo Alavés vs Atlético Madrid | Result: home | yes | 0.2200 | 0.389 [0.237, 0.560] | +0.157 | +0.048 | 0.26 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2786
-action_NO_QUOTE: 694
-action_RESEARCH_CANDIDATE: 190
+action_NO_EDGE: 2787
+action_NO_QUOTE: 692
+action_RESEARCH_CANDIDATE: 191
 contract_sides: 3670
 fixtures: 75
 fixtures_model_invalidated: 0
