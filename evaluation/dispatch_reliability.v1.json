@@ -1,13 +1,13 @@
 {
  "schema": "dispatch_reliability_v1",
- "generated_at": "2026-10-10T01:46:27Z",
+ "generated_at": "2026-10-10T06:10:15Z",
  "cadence": {
   "external_heartbeat_minutes": null,
   "github_backup_minutes": 60
  },
  "last_wake": {
-  "started_at": "2026-10-10T01:44:01Z",
-  "trigger_source": "github-schedule-backup",
+  "started_at": "2026-10-10T06:07:21Z",
+  "trigger_source": "workflow-run",
   "status": "OK",
   "no_action_reason": null
  },
@@ -16,8 +16,8 @@
   "heartbeats_actual": 19,
   "heartbeats_by_source": {
    "chain": 4,
-   "github-schedule-backup": 5,
-   "workflow-run": 10
+   "github-schedule-backup": 4,
+   "workflow-run": 11
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -25,22 +25,22 @@
   "external_heartbeats_actual": 0,
   "external_trigger_success": null,
   "github_backup_expected": 24,
-  "github_backup_actual": 5,
-  "github_backup_success": 0.20833333333333334,
+  "github_backup_actual": 4,
+  "github_backup_success": 0.16666666666666666,
   "capture_runs": 3,
   "capture_runs_failed": 0,
-  "paid_calls": 6,
-  "credits_spent": 18,
-  "fixtures_with_horizons": 11,
-  "horizons_eligible": 55,
-  "horizons_delivered": 55,
+  "paid_calls": 13,
+  "credits_spent": 39,
+  "fixtures_with_horizons": 12,
+  "horizons_eligible": 60,
+  "horizons_delivered": 60,
   "horizons_missed": 0,
   "horizon_states": {
-   "DELIVERED": 55
+   "DELIVERED": 60
   },
   "capture_success_rate": 1.0,
-  "close_fixtures_eligible": 11,
-  "close_fixtures_delivered": 11,
+  "close_fixtures_eligible": 12,
+  "close_fixtures_delivered": 12,
   "close_success_rate": 1.0
  },
  "last_7d": {
@@ -61,14 +61,14 @@
   "github_backup_success": 0.17261904761904762,
   "capture_runs": 29,
   "capture_runs_failed": 14,
-  "paid_calls": 42,
-  "credits_spent": 126,
+  "paid_calls": 49,
+  "credits_spent": 147,
   "fixtures_with_horizons": 38,
-  "horizons_eligible": 184,
-  "horizons_delivered": 184,
+  "horizons_eligible": 187,
+  "horizons_delivered": 187,
   "horizons_missed": 0,
   "horizon_states": {
-   "DELIVERED": 184,
+   "DELIVERED": 187,
    "NOT_APPLICABLE": 23
   },
   "capture_success_rate": 1.0,
