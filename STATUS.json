@@ -1,40 +1,48 @@
 {
-  "as_of": "2026-10-10T15:47:28.401085+00:00",
-  "events": 3,
+  "as_of": "2026-10-10T15:57:44.677260+00:00",
+  "events": 17,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 3,
+  "fixtures_mapped": 17,
   "health": {
-    "reasons": [],
-    "state": "HEALTHY"
+    "reasons": [
+      "weather_failures:3",
+      "weather_stopped:consecutive_failures:skipped=3"
+    ],
+    "state": "DEGRADED"
   },
   "leagues": [
-    "ita.1"
+    "ita.1",
+    "usa.1"
   ],
   "lineups": {
-    "captured": 1,
-    "events": 3,
+    "captured": 0,
+    "events": 17,
     "failures": [],
     "published_post": 1,
     "published_pre_kickoff": 1,
-    "unchanged": 2,
-    "unpublished": 1
+    "unchanged": 17,
+    "unpublished": 15
   },
   "map_proposals": {},
   "map_version": "4",
   "results_appended": 1,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
-  "scoreboard_queries": 1,
+  "scoreboard_queries": 2,
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 3,
-    "events": 3,
-    "failures": [],
+    "captured": 11,
+    "events": 17,
+    "failures": [
+      "761853: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=41.4092&longitude=-75.6649&hourly=t",
+      "761856: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Austin&count=5&language=en&form",
+      "761854: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Saint%20Paul&count=5&language=e"
+    ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 0,
-    "stopped": null
+    "skipped": 3,
+    "stopped": "consecutive_failures"
   }
 }
