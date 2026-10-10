@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261010T181652Z-ee93bb` · generated 2026-10-10T18:16:52.805715Z · trigger `kickoff_chain:T-30/T-15` · mode `reprice_only`
+slate `slate-20261010T182748Z-e70a32` · generated 2026-10-10T18:27:48.057696Z · trigger `kickoff_chain:T-5` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-10T18:14:07.218364Z (CURRENT at publish; CURRENT until 2026-10-10T18:34:07.218364Z, STALE after 2026-10-10T18:44:07.218364Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-10T18:25:03.888981Z (CURRENT at publish; CURRENT until 2026-10-10T18:45:03.888981Z, STALE after 2026-10-10T18:55:03.888981Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-10T18:01:52.256800Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 2.08s
+model board generated 2026-10-10T18:27:44.474821Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 2.07s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -19,9 +19,9 @@ model board generated 2026-10-10T18:01:52.256800Z · simulations this update: 0 
 | 2026-10-10T18:45:00Z | Paris Saint-Germain vs Le Mans (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
 | 2026-10-10T18:45:00Z | Napoli vs Frosinone (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
 | 2026-10-10T19:00:00Z | Real Madrid vs Villarreal (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
-| 2026-10-10T20:00:00Z | Central Córdoba vs Estudiantes de La Plata (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-10T20:00:00Z | Central Córdoba vs Estudiantes de La Plata (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-10T21:00:00Z | Vasco da Gama vs Remo (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-10T22:15:00Z | Tigre vs Banfield (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-10T22:15:00Z | Tigre vs Banfield (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-10T23:00:00Z | FC Juárez vs Tijuana (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-10T23:00:00Z | Querétaro vs Atlante (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-10T23:30:00Z | Atlanta United vs FC Cincinnati (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
@@ -71,7 +71,7 @@ model board generated 2026-10-10T18:01:52.256800Z · simulations this update: 0 
 | 2026-10-12T01:15:00Z | Pumas UNAM vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-12T16:30:00Z | Atalanta vs Venezia (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (177; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (179; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -109,19 +109,19 @@ model board generated 2026-10-10T18:01:52.256800Z · simulations this update: 0 
 | Vasco da Gama vs Remo | Result: home | no | 0.2550 | 0.427 [0.269, 0.587] | +0.159 | +0.053 | 0.3 | - | * | RESEARCH_CANDIDATE |
 | Chicago Fire vs New York City FC | away team total over 0.5 | no | 0.2600 | 0.401 [0.279, 0.518] | +0.127 | +0.050 | 0.3 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | First-half total goals over 2.5 | no | 0.7900 | 0.889 [0.809, 0.961] | +0.087 | +0.048 | 0.84 | - |  | RESEARCH_CANDIDATE |
-| Pumas UNAM vs Cruz Azul | away wins by more than 1.5 | no | 0.7500 | 0.863 [0.764, 0.940] | +0.100 | +0.046 | 0.79 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Nashville SC | Total goals over 3.5 | no | 0.6800 | 0.806 [0.689, 0.906] | +0.110 | +0.046 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Nashville SC | btts | no | 0.4300 | 0.568 [0.452, 0.683] | +0.121 | +0.045 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Nashville SC | away team total over 2.5 | no | 0.7600 | 0.867 [0.772, 0.944] | +0.094 | +0.044 | 0.8 | - |  | RESEARCH_CANDIDATE |
+| New England Revolution vs Seattle Sounders | away team total over 2.5 | no | 0.8700 | 0.944 [0.896, 0.981] | +0.066 | +0.042 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | Minnesota United vs Houston Dynamo | btts | no | 0.4200 | 0.560 [0.438, 0.678] | +0.123 | +0.041 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Atlante | away team total over 2.5 | no | 0.8900 | 0.956 [0.912, 0.990] | +0.060 | +0.041 | 0.93 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2833
+action_NO_EDGE: 2831
 action_NO_QUOTE: 750
-action_RESEARCH_CANDIDATE: 177
+action_RESEARCH_CANDIDATE: 179
 contract_sides: 3760
 fixtures: 58
 fixtures_model_invalidated: 0
