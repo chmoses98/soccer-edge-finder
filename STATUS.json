@@ -1,47 +1,40 @@
 {
-  "as_of": "2026-10-10T21:23:26.926496+00:00",
-  "events": 14,
+  "as_of": "2026-10-10T21:47:34.585440+00:00",
+  "events": 4,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 14,
+  "fixtures_mapped": 4,
   "health": {
-    "reasons": [
-      "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=4"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
-    "usa.1"
+    "arg.1"
   ],
   "lineups": {
-    "captured": 1,
-    "events": 13,
+    "captured": 2,
+    "events": 3,
     "failures": [],
     "published_post": 1,
     "published_pre_kickoff": 0,
-    "unchanged": 12,
-    "unpublished": 12
+    "unchanged": 1,
+    "unpublished": 2
   },
   "map_proposals": {},
   "map_version": "4",
-  "results_appended": 2,
+  "results_appended": 1,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 1,
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 6,
-    "events": 13,
-    "failures": [
-      "761849: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Chester&count=5&language=en&for",
-      "761853: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Harrison&count=5&language=en&fo",
-      "761856: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Austin&count=5&language=en&form"
-    ],
+    "captured": 3,
+    "events": 3,
+    "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 4,
-    "stopped": "consecutive_failures"
+    "skipped": 0,
+    "stopped": null
   }
 }
