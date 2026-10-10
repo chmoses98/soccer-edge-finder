@@ -1,10 +1,10 @@
 {
  "counts": {
-  "MISSED_DISPATCHER_CLOSE": 24,
-  "PINNACLE_VALID_CLOSE": 25,
   "NO_SPORT_KEY": 19,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 24,
+  "PINNACLE_VALID_CLOSE": 26,
   "PINNACLE_QUOTED_NOTHING": 15,
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 24
+  "MISSED_DISPATCHER_CLOSE": 24
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.sarmiento": {
@@ -41,6 +41,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:arg.primera:2026:arg.instituto:arg.boca_juniors": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261009T221340Z"
   },
   "fx:arg.primera:2026:arg.newells:arg.lanus": {
    "state": "PINNACLE_VALID_CLOSE",
