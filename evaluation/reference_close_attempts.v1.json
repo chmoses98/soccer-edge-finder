@@ -1,10 +1,10 @@
 {
  "counts": {
-  "PINNACLE_VALID_CLOSE": 54,
-  "MISSED_DISPATCHER_CLOSE": 24,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 49,
   "NO_SPORT_KEY": 19,
-  "PINNACLE_QUOTED_NOTHING": 15,
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 48
+  "MISSED_DISPATCHER_CLOSE": 24,
+  "PINNACLE_VALID_CLOSE": 58,
+  "PINNACLE_QUOTED_NOTHING": 15
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.sarmiento": {
@@ -26,6 +26,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261003T001548Z"
+  },
+  "fx:arg.primera:2026:arg.central_cordoba:arg.estudiantes": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261010T194300Z"
   },
   "fx:arg.primera:2026:arg.defensa_y_justicia:arg.san_lorenzo": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -56,6 +61,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261003T194500Z"
+  },
+  "fx:arg.primera:2026:arg.tigre:arg.banfield": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261010T215806Z"
   },
   "fx:arg.primera:2026:arg.union:arg.defensa_y_justicia": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -116,6 +126,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261002T224500Z"
+  },
+  "fx:bra.serie_a:2026:bra.vasco:bra.remo": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261010T204334Z"
   },
   "fx:bra.serie_a:2026:bra.vitoria:bra.chapecoense": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -346,6 +361,16 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261010T114338Z"
+  },
+  "fx:esp.la_liga:2026-27:esp.real_madrid:esp.villarreal": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:esp.la_liga:2026-27:esp.real_madrid:esp.villarreal:matchday_8": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261010T184342Z"
   },
   "fx:fifa.friendly:2026:nat.aus:nat.bra": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
