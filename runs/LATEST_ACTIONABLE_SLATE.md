@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261010T091315Z-c402cb` · generated 2026-10-10T09:13:15.076870Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261010T092823Z-283dd5` · generated 2026-10-10T09:28:23.510331Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-10T09:10:41.964008Z (CURRENT at publish; CURRENT until 2026-10-10T09:30:41.964008Z, STALE after 2026-10-10T09:40:41.964008Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-10T09:25:41.968175Z (CURRENT at publish; CURRENT until 2026-10-10T09:45:41.968175Z, STALE after 2026-10-10T09:55:41.968175Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-10T07:42:59.935504Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.42s
+model board generated 2026-10-10T07:42:59.935504Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.38s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -91,7 +91,7 @@ model board generated 2026-10-10T07:42:59.935504Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| FC Augsburg vs Bayern Munich | Result: away | no | 0.1600 | 0.485 [0.288, 0.684] | +0.316 | +0.184 | 0.33 | - | * | RESEARCH_CANDIDATE |
+| FC Augsburg vs Bayern Munich | Result: away | no | 0.1700 | 0.485 [0.288, 0.684] | +0.306 | +0.173 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | away team total over 1.5 | no | 0.4500 | 0.690 [0.551, 0.816] | +0.223 | +0.140 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | Total goals over 3.5 | no | 0.5000 | 0.737 [0.587, 0.863] | +0.219 | +0.136 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | Total goals over 2.5 | no | 0.2900 | 0.532 [0.365, 0.686] | +0.227 | +0.125 | 0.41 | - |  | RESEARCH_CANDIDATE |
@@ -135,8 +135,8 @@ model board generated 2026-10-10T07:42:59.935504Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2689
-action_NO_QUOTE: 626
+action_NO_EDGE: 2688
+action_NO_QUOTE: 627
 action_RESEARCH_CANDIDATE: 197
 contract_sides: 3512
 fixtures: 74
