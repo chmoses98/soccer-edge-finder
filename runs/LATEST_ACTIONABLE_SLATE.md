@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261010T004239Z-2f8d0f` · generated 2026-10-10T00:42:39.650723Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
+slate `slate-20261010T004617Z-6248ee` · generated 2026-10-10T00:46:17.477518Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-10T00:40:03.062025Z (CURRENT at publish; CURRENT until 2026-10-10T01:00:03.062025Z, STALE after 2026-10-10T01:10:03.062025Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-10T00:43:37.098552Z (CURRENT at publish; CURRENT until 2026-10-10T01:03:37.098552Z, STALE after 2026-10-10T01:13:37.098552Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-10T00:00:10.675911Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.89s
+model board generated 2026-10-10T00:00:10.675911Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 2.10s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,9 +12,8 @@ model board generated 2026-10-10T00:00:10.675911Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-10T00:45:00Z | Unión vs Defensa y Justicia (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
-| 2026-10-10T01:00:00Z | Puebla vs León (mex.liga_mx) | VALID (CURRENT) | unconfirmed (AGING) | AGING entry | CURRENT | 79 | 1 |
-| 2026-10-10T03:00:00Z | Tigres UANL vs Toluca (mex.liga_mx) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-10-10T01:00:00Z | Puebla vs León (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT close | CURRENT | 79 | 1 |
+| 2026-10-10T03:00:00Z | Tigres UANL vs Toluca (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-10T11:30:00Z | Arsenal vs Leeds United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T12:00:00Z | Rayo Vallecano vs Athletic Club (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T13:00:00Z | Genoa vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -33,27 +32,27 @@ model board generated 2026-10-10T00:00:10.675911Z · simulations this update: 0 
 | 2026-10-10T16:30:00Z | Manchester United vs Tottenham Hotspur (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T16:30:00Z | FC Barcelona vs Getafe (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T16:30:00Z | RB Leipzig vs Eintracht Frankfurt (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-10T17:00:00Z | Toronto FC vs CF Montréal (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-10-10T18:30:00Z | Chicago Fire vs New York City FC (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-10-10T17:00:00Z | Toronto FC vs CF Montréal (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-10-10T18:30:00Z | Chicago Fire vs New York City FC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-10T18:45:00Z | Brest vs Angers (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T18:45:00Z | Lorient vs Paris FC (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T18:45:00Z | AS Monaco vs Toulouse (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T18:45:00Z | Paris Saint-Germain vs Le Mans (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T18:45:00Z | Napoli vs Frosinone (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T19:00:00Z | Real Madrid vs Villarreal (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-10T20:00:00Z | Central Córdoba vs Estudiantes de La Plata (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-10-10T21:00:00Z | Vasco da Gama vs Remo (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-10T22:15:00Z | Tigre vs Banfield (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-10T20:00:00Z | Central Córdoba vs Estudiantes de La Plata (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-10T21:00:00Z | Vasco da Gama vs Remo (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-10T22:15:00Z | Tigre vs Banfield (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-10T23:00:00Z | FC Juárez vs Tijuana (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-10T23:00:00Z | Querétaro vs Atlante (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-10-10T23:30:00Z | Atlanta United vs FC Cincinnati (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-10-10T23:30:00Z | Atlanta United vs FC Cincinnati (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-10T23:30:00Z | Charlotte FC vs FC Dallas (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-10T23:30:00Z | Inter Miami vs D.C. United (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-10T23:30:00Z | New England Revolution vs Seattle Sounders (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-10T23:30:00Z | New York Red Bulls vs San Diego FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-10T23:30:00Z | Orlando City vs Columbus Crew (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-10T23:30:00Z | Philadelphia Union vs Real Salt Lake (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-10-11T00:00:00Z | São Paulo vs Vitória (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-11T00:00:00Z | São Paulo vs Vitória (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-11T00:30:00Z | Austin FC vs Nashville SC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-11T00:30:00Z | Minnesota United vs Houston Dynamo (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-11T00:30:00Z | Sporting Kansas City vs Portland Timbers (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
@@ -89,7 +88,7 @@ model board generated 2026-10-10T00:00:10.675911Z · simulations this update: 0 
 | 2026-10-11T23:00:00Z | St. Louis City SC vs LA Galaxy (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-11T23:10:00Z | Pachuca vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (205; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (206; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -130,20 +129,22 @@ model board generated 2026-10-10T00:00:10.675911Z · simulations this update: 0 
 | Los Angeles FC vs Vancouver Whitecaps | btts | no | 0.3800 | 0.525 [0.405, 0.638] | +0.128 | +0.053 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Le Mans | Result: home | no | 0.1100 | 0.319 [0.114, 0.538] | +0.202 | +0.053 | 0.16 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Seattle Sounders | away team total over 2.5 | no | 0.8600 | 0.944 [0.897, 0.981] | +0.076 | +0.052 | 0.91 | - |  | RESEARCH_CANDIDATE |
+| Vasco da Gama vs Remo | Result: home | no | 0.2600 | 0.426 [0.269, 0.577] | +0.152 | +0.051 | 0.3 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | First-half total goals over 1.5 | no | 0.5400 | 0.686 [0.558, 0.802] | +0.129 | +0.051 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Vancouver Whitecaps | away team total over 0.5 | no | 0.2300 | 0.369 [0.251, 0.485] | +0.126 | +0.050 | 0.27 | - |  | RESEARCH_CANDIDATE |
-| Deportivo Alavés vs Atlético Madrid | Result: home | yes | 0.2200 | 0.389 [0.237, 0.560] | +0.157 | +0.048 | 0.26 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2857
-action_NO_QUOTE: 766
-action_RESEARCH_CANDIDATE: 205
-contract_sides: 3828
-fixtures: 76
+action_NO_EDGE: 2856
+action_NO_QUOTE: 738
+action_RESEARCH_CANDIDATE: 206
+contract_sides: 3800
+fixtures: 75
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
+
+Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
