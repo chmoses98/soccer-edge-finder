@@ -1,40 +1,37 @@
 {
-  "as_of": "2026-10-10T14:12:38.919730+00:00",
-  "events": 4,
+  "as_of": "2026-10-10T14:27:39.235816+00:00",
+  "events": 16,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 4,
+  "fixtures_mapped": 16,
   "health": {
-    "reasons": [
-      "scoreboard_partial_failures:1/2"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
+    "eng.1",
     "esp.1",
-    "fra.1"
+    "ger.1"
   ],
   "lineups": {
-    "captured": 0,
-    "events": 4,
+    "captured": 10,
+    "events": 16,
     "failures": [],
-    "published_post": 1,
-    "published_pre_kickoff": 1,
-    "unchanged": 4,
-    "unpublished": 2
+    "published_post": 12,
+    "published_pre_kickoff": 0,
+    "unchanged": 6,
+    "unpublished": 4
   },
   "map_proposals": {},
   "map_version": "4",
-  "results_appended": 1,
-  "scoreboard_failures": [
-    "fra.1 2026-10-10: fetch failed for https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard?dates=2026101"
-  ],
-  "scoreboard_failures_n": 1,
-  "scoreboard_queries": 2,
+  "results_appended": 2,
+  "scoreboard_failures": [],
+  "scoreboard_failures_n": 0,
+  "scoreboard_queries": 3,
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 4,
-    "events": 4,
+    "captured": 16,
+    "events": 16,
     "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 0,
