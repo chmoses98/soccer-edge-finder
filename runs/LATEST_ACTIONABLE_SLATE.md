@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261010T183136Z-7cd45c` · generated 2026-10-10T18:31:36.187452Z · trigger `kickoff_chain:T-30/T-15` · mode `reprice_only`
+slate `slate-20261010T184236Z-2f7217` · generated 2026-10-10T18:42:36.712292Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-10T18:28:55.300509Z (CURRENT at publish; CURRENT until 2026-10-10T18:48:55.300509Z, STALE after 2026-10-10T18:58:55.300509Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-10T18:40:00.026213Z (CURRENT at publish; CURRENT until 2026-10-10T19:00:00.026213Z, STALE after 2026-10-10T19:10:00.026213Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-10T18:27:44.474821Z · simulations this update: 0 · Odds API calls this update: 2 (credits 6) · reprice 1.84s
+model board generated 2026-10-10T18:27:44.474821Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 2.01s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -70,7 +70,7 @@ model board generated 2026-10-10T18:27:44.474821Z · simulations this update: 0 
 | 2026-10-12T01:15:00Z | Pumas UNAM vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-12T16:30:00Z | Atalanta vs Venezia (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (163; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (162; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -89,13 +89,13 @@ model board generated 2026-10-10T18:27:44.474821Z · simulations this update: 0 
 | Querétaro vs Atlante | away team total over 1.5 | no | 0.6700 | 0.833 [0.720, 0.928] | +0.148 | +0.088 | 0.76 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | Total goals over 1.5 | no | 0.1200 | 0.285 [0.160, 0.418] | +0.158 | +0.072 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | away team total over 0.5 | no | 0.1800 | 0.338 [0.218, 0.457] | +0.148 | +0.072 | 0.24 | - |  | RESEARCH_CANDIDATE |
+| Los Angeles FC vs Vancouver Whitecaps | away team total over 1.5 | no | 0.5600 | 0.724 [0.592, 0.836] | +0.147 | +0.071 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | Cagliari vs Juventus | Result: home | yes | 0.1500 | 0.321 [0.188, 0.476] | +0.162 | +0.070 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | First-half total goals over 1.5 | no | 0.5300 | 0.687 [0.558, 0.812] | +0.140 | +0.069 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | Total goals over 5.5 | no | 0.8400 | 0.943 [0.884, 0.985] | +0.094 | +0.069 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs FC Dallas | away team total over 1.5 | no | 0.5600 | 0.723 [0.584, 0.842] | +0.146 | +0.069 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | Result: away | no | 0.5200 | 0.696 [0.552, 0.829] | +0.159 | +0.066 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | Result: home | yes | 0.2700 | 0.454 [0.298, 0.622] | +0.170 | +0.062 | 0.33 | - |  | RESEARCH_CANDIDATE |
-| Los Angeles FC vs Vancouver Whitecaps | away team total over 1.5 | no | 0.5700 | 0.724 [0.592, 0.836] | +0.137 | +0.061 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Nashville SC | away team total over 1.5 | no | 0.4900 | 0.657 [0.511, 0.787] | +0.149 | +0.061 | 0.55 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | First-half total goals over 0.5 | no | 0.1900 | 0.330 [0.228, 0.442] | +0.130 | +0.059 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Vancouver Whitecaps | btts | no | 0.3700 | 0.524 [0.402, 0.635] | +0.138 | +0.058 | 0.42 | - | * | RESEARCH_CANDIDATE |
@@ -105,22 +105,22 @@ model board generated 2026-10-10T18:27:44.474821Z · simulations this update: 0 
 | Charlotte FC vs FC Dallas | away team total over 0.5 | no | 0.2200 | 0.369 [0.241, 0.493] | +0.137 | +0.056 | 0.27 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | First half: both teams to score | no | 0.7000 | 0.820 [0.728, 0.892] | +0.106 | +0.055 | 0.75 | - | * | RESEARCH_CANDIDATE |
 | Vasco da Gama vs Remo | Result: home | no | 0.2550 | 0.427 [0.269, 0.587] | +0.159 | +0.053 | 0.3 | - | * | RESEARCH_CANDIDATE |
+| New England Revolution vs Seattle Sounders | away team total over 2.5 | no | 0.8600 | 0.944 [0.896, 0.981] | +0.076 | +0.051 | 0.91 | - |  | RESEARCH_CANDIDATE |
+| Charlotte FC vs FC Dallas | away team total over 2.5 | no | 0.8100 | 0.906 [0.828, 0.965] | +0.085 | +0.049 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | First-half total goals over 2.5 | no | 0.7900 | 0.889 [0.809, 0.961] | +0.087 | +0.048 | 0.84 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Nashville SC | Total goals over 3.5 | no | 0.6800 | 0.806 [0.689, 0.906] | +0.110 | +0.046 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Nashville SC | btts | no | 0.4300 | 0.568 [0.452, 0.683] | +0.121 | +0.045 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Nashville SC | away team total over 2.5 | no | 0.7600 | 0.867 [0.772, 0.944] | +0.094 | +0.044 | 0.8 | - |  | RESEARCH_CANDIDATE |
-| Atlanta United vs FC Cincinnati | away team total over 1.5 | no | 0.4900 | 0.638 [0.488, 0.775] | +0.130 | +0.043 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Minnesota United vs Houston Dynamo | btts | no | 0.4200 | 0.560 [0.438, 0.678] | +0.123 | +0.041 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Atlante | away team total over 2.5 | no | 0.8900 | 0.956 [0.912, 0.990] | +0.060 | +0.041 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Vancouver Whitecaps | away team total over 2.5 | no | 0.8200 | 0.907 [0.834, 0.963] | +0.077 | +0.041 | 0.86 | - |  | RESEARCH_CANDIDATE |
-| Austin FC vs Nashville SC | away team total over 0.5 | no | 0.1800 | 0.307 [0.193, 0.424] | +0.117 | +0.040 | 0.21 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2705
-action_NO_QUOTE: 734
-action_RESEARCH_CANDIDATE: 163
+action_NO_EDGE: 2730
+action_NO_QUOTE: 710
+action_RESEARCH_CANDIDATE: 162
 contract_sides: 3602
 fixtures: 57
 fixtures_model_invalidated: 0
