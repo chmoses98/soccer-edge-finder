@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261010T132737Z-9b582a` · generated 2026-10-10T13:27:37.466511Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
+slate `slate-20261010T133118Z-d11d29` · generated 2026-10-10T13:31:18.483835Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-10T13:25:00.024806Z (CURRENT at publish; CURRENT until 2026-10-10T13:45:00.024806Z, STALE after 2026-10-10T13:55:00.024806Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-10T13:28:35.317338Z (CURRENT at publish; CURRENT until 2026-10-10T13:48:35.317338Z, STALE after 2026-10-10T13:58:35.317338Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-10T13:11:52.318911Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.91s
+model board generated 2026-10-10T13:11:52.318911Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.89s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,11 +12,6 @@ model board generated 2026-10-10T13:11:52.318911Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-10T13:30:00Z | FC Augsburg vs Bayern Munich (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
-| 2026-10-10T13:30:00Z | TSG Hoffenheim vs Hamburger SV (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
-| 2026-10-10T13:30:00Z | Mainz 05 vs Bayer Leverkusen (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
-| 2026-10-10T13:30:00Z | SC Paderborn 07 vs VfB Stuttgart (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
-| 2026-10-10T13:30:00Z | Union Berlin vs SV Elversberg (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
 | 2026-10-10T14:00:00Z | Aston Villa vs Brentford (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
 | 2026-10-10T14:00:00Z | Chelsea vs Bournemouth (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
 | 2026-10-10T14:00:00Z | Ipswich Town vs Fulham (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
@@ -82,13 +77,12 @@ model board generated 2026-10-10T13:11:52.318911Z · simulations this update: 0 
 | 2026-10-11T23:00:00Z | Atlético San Luis vs Santos Laguna (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-11T23:00:00Z | St. Louis City SC vs LA Galaxy (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-11T23:10:00Z | Pachuca vs Necaxa (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-10-12T01:15:00Z | Pumas UNAM vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-12T01:15:00Z | Pumas UNAM vs Cruz Azul (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (193; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (187; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| FC Augsburg vs Bayern Munich | Result: away | no | 0.1600 | 0.485 [0.288, 0.684] | +0.316 | +0.184 | 0.33 | 0.160 | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | away team total over 1.5 | no | 0.4500 | 0.690 [0.551, 0.816] | +0.223 | +0.140 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | Total goals over 3.5 | no | 0.5000 | 0.737 [0.587, 0.863] | +0.219 | +0.136 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | btts | no | 0.2800 | 0.503 [0.376, 0.623] | +0.209 | +0.130 | 0.4 | - | * | RESEARCH_CANDIDATE |
@@ -99,8 +93,6 @@ model board generated 2026-10-10T13:11:52.318911Z · simulations this update: 0 
 | New England Revolution vs Seattle Sounders | btts | no | 0.3600 | 0.553 [0.438, 0.666] | +0.177 | +0.102 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Seattle Sounders | away team total over 1.5 | no | 0.6200 | 0.799 [0.693, 0.891] | +0.163 | +0.101 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | away team total over 2.5 | no | 0.7300 | 0.888 [0.804, 0.955] | +0.144 | +0.100 | 0.83 | - |  | RESEARCH_CANDIDATE |
-| SC Paderborn 07 vs VfB Stuttgart | Result: away | no | 0.4200 | 0.654 [0.462, 0.823] | +0.217 | +0.100 | 0.51 | 0.414 | * | RESEARCH_CANDIDATE |
-| FC Augsburg vs Bayern Munich | Result: home | yes | 0.0600 | 0.286 [0.125, 0.469] | +0.222 | +0.100 | 0.15 | 0.058 |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | Total goals over 4.5 | no | 0.7100 | 0.871 [0.768, 0.951] | +0.146 | +0.095 | 0.8 | - |  | RESEARCH_CANDIDATE |
 | Toronto FC vs CF Montréal | away team total over 1.5 | no | 0.6200 | 0.790 [0.677, 0.884] | +0.154 | +0.089 | 0.71 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Atlante | btts | no | 0.4300 | 0.614 [0.477, 0.741] | +0.167 | +0.085 | 0.51 | - | * | RESEARCH_CANDIDATE |
@@ -126,21 +118,24 @@ model board generated 2026-10-10T13:11:52.318911Z · simulations this update: 0 
 | Hull City vs Everton | Result: away | no | 0.5500 | 0.736 [0.550, 0.891] | +0.168 | +0.058 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Nashville SC | Total goals over 2.5 | no | 0.4500 | 0.616 [0.458, 0.754] | +0.148 | +0.055 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs San Diego FC | First half: both teams to score | no | 0.7000 | 0.820 [0.728, 0.902] | +0.105 | +0.055 | 0.75 | - | * | RESEARCH_CANDIDATE |
-| FC Augsburg vs Bayern Munich | Result: draw | yes | 0.1100 | 0.200 [0.146, 0.248] | +0.083 | +0.054 | 0.16 | 0.102 |  | RESEARCH_CANDIDATE |
 | Minnesota United vs Houston Dynamo | btts | no | 0.4100 | 0.560 [0.440, 0.677] | +0.133 | +0.054 | 0.46 | - | * | RESEARCH_CANDIDATE |
+| Chicago Fire vs New York City FC | away team total over 1.5 | no | 0.6200 | 0.757 [0.637, 0.860] | +0.120 | +0.052 | 0.67 | - | * | RESEARCH_CANDIDATE |
+| Vasco da Gama vs Remo | Result: home | no | 0.2600 | 0.426 [0.269, 0.577] | +0.152 | +0.051 | 0.3 | - | * | RESEARCH_CANDIDATE |
+| Chicago Fire vs New York City FC | away team total over 0.5 | no | 0.2600 | 0.401 [0.280, 0.520] | +0.128 | +0.050 | 0.3 | - |  | RESEARCH_CANDIDATE |
+| New York Red Bulls vs San Diego FC | First-half total goals over 2.5 | no | 0.7900 | 0.890 [0.819, 0.951] | +0.088 | +0.048 | 0.84 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2736
+action_NO_EDGE: 2712
 action_NO_QUOTE: 565
-action_RESEARCH_CANDIDATE: 193
-contract_sides: 3494
-fixtures: 71
+action_RESEARCH_CANDIDATE: 187
+contract_sides: 3464
+fixtures: 66
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
-Removed (kicked off): 1
+Removed (kicked off): 6
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
