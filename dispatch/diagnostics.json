@@ -1,13 +1,13 @@
 {
   "by_horizon": {
     "120": {
-      "achieved_minutes_median": 123.39,
-      "achieved_minutes_p10": 117.33,
-      "achieved_minutes_p90": 125.75,
-      "delivered": 88,
-      "delivery_rate": 0.7457627118644068,
+      "achieved_minutes_median": 122.78,
+      "achieved_minutes_p10": 117.49,
+      "achieved_minutes_p90": 125.62,
+      "delivered": 98,
+      "delivery_rate": 0.765625,
       "lateness_minutes_max": 62.51,
-      "lateness_minutes_median": -3.39,
+      "lateness_minutes_median": -2.91,
       "missed": 30
     },
     "15": {
@@ -32,12 +32,12 @@
     },
     "5": {
       "achieved_minutes_median": 2.47,
-      "achieved_minutes_p10": 1.57,
+      "achieved_minutes_p10": 2.1,
       "achieved_minutes_p90": 4.38,
-      "delivered": 86,
-      "delivery_rate": 0.7818181818181819,
+      "delivered": 88,
+      "delivery_rate": 0.7857142857142857,
       "lateness_minutes_max": 7.0,
-      "lateness_minutes_median": 2.52,
+      "lateness_minutes_median": 2.53,
       "missed": 24
     },
     "60": {
@@ -51,27 +51,13 @@
       "missed": 31
     }
   },
-  "delivered_total": 432,
-  "delivery_rate_total": 0.7592267135325131,
-  "fixtures_tracked": 118,
-  "generated_at": "2026-10-10T11:17:10Z",
+  "delivered_total": 444,
+  "delivery_rate_total": 0.7641996557659209,
+  "fixtures_tracked": 128,
+  "generated_at": "2026-10-10T11:27:45Z",
   "missed_total": 137,
-  "n_pending_fixtures": 129,
+  "n_pending_fixtures": 127,
   "pending_fixtures": [
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.arsenal:eng.leeds:matchday_6",
-      "kickoff_utc": "2026-10-10T11:30:00Z",
-      "markets_discovered": 70,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.arsenal:eng.leeds",
-      "kickoff_utc": "2026-10-10T11:30:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
     {
       "competition_id": "esp.la_liga",
       "fixture_id": "fx:esp.la_liga:2026-27:esp.rayo_vallecano:esp.athletic_bilbao:matchday_8",
@@ -757,6 +743,20 @@
       "kickoff_utc": "2026-10-11T16:30:00Z",
       "markets_discovered": 0,
       "source": "espn"
+    },
+    {
+      "competition_id": "arg.primera",
+      "fixture_id": "fx:arg.primera:2026:arg.san_lorenzo:arg.deportivo_riestra",
+      "kickoff_utc": "2026-10-11T17:45:00Z",
+      "markets_discovered": 3,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "fra.ligue_1",
+      "fixture_id": "fx:fra.ligue_1:2026-27:fra.troyes:fra.marseille:matchday_6",
+      "kickoff_utc": "2026-10-11T18:45:00Z",
+      "markets_discovered": 80,
+      "source": "run_output"
     }
   ],
   "required_horizons": [
