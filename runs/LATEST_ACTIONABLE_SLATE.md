@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261011T024234Z-3efc28` · generated 2026-10-11T02:42:34.234017Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261011T025737Z-820111` · generated 2026-10-11T02:57:37.245186Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-11T02:40:00.017065Z (CURRENT at publish; CURRENT until 2026-10-11T03:00:00.017065Z, STALE after 2026-10-11T03:10:00.017065Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-11T02:55:00.839867Z (CURRENT at publish; CURRENT until 2026-10-11T03:15:00.839867Z, STALE after 2026-10-11T03:25:00.839867Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-11T02:12:40.161953Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.30s
+model board generated 2026-10-11T02:12:40.161953Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.31s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-11T02:12:40.161953Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-11T03:10:00Z | Club América vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 79 | 1 |
+| 2026-10-11T03:10:00Z | Club América vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT close | CURRENT | 79 | 1 |
 | 2026-10-11T10:30:00Z | Como vs AS Roma (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-11T12:00:00Z | Elche vs Celta Vigo (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-11T13:00:00Z | Crystal Palace vs Nottingham Forest (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -66,7 +66,6 @@ model board generated 2026-10-11T02:12:40.161953Z · simulations this update: 0 
 | Pumas UNAM vs Cruz Azul | First team to score: away | no | 0.4500 | 0.590 [0.468, 0.712] | +0.123 | +0.043 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | First-half result: away | no | 0.6300 | 0.749 [0.638, 0.842] | +0.103 | +0.042 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Necaxa | away team total over 0.5 | no | 0.3400 | 0.473 [0.345, 0.596] | +0.118 | +0.041 | 0.38 | - | * | RESEARCH_CANDIDATE |
-| Pachuca vs Necaxa | away team total over 1.5 | no | 0.7100 | 0.817 [0.712, 0.904] | +0.092 | +0.039 | 0.75 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | away wins by more than 1.5 | no | 0.7600 | 0.863 [0.764, 0.940] | +0.090 | +0.036 | 0.79 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs LA Galaxy | btts | no | 0.3700 | 0.500 [0.372, 0.608] | +0.114 | +0.036 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | home wins by more than 1.5 | yes | 0.1100 | 0.246 [0.124, 0.392] | +0.129 | +0.035 | 0.14 | - |  | RESEARCH_CANDIDATE |
@@ -75,6 +74,7 @@ model board generated 2026-10-11T02:12:40.161953Z · simulations this update: 0 
 | Grêmio vs Internacional | Result: away | no | 0.6050 | 0.734 [0.606, 0.849] | +0.112 | +0.031 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Necaxa | btts | no | 0.4300 | 0.552 [0.434, 0.666] | +0.105 | +0.030 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Lecce vs Bologna | Result: home | yes | 0.2100 | 0.353 [0.211, 0.513] | +0.131 | +0.030 | 0.23 | - | * | RESEARCH_CANDIDATE |
+| Pachuca vs Necaxa | away team total over 1.5 | no | 0.7200 | 0.817 [0.712, 0.904] | +0.083 | +0.030 | 0.75 | - |  | RESEARCH_CANDIDATE |
 | Lecce vs Bologna | Result: away | no | 0.5000 | 0.639 [0.491, 0.780] | +0.122 | +0.027 | 0.52 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | First team to score: home | yes | 0.4000 | 0.527 [0.388, 0.662] | +0.110 | +0.023 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | away team total over 2.5 | no | 0.7600 | 0.852 [0.739, 0.936] | +0.079 | +0.022 | 0.78 | - |  | RESEARCH_CANDIDATE |
@@ -82,20 +82,20 @@ model board generated 2026-10-11T02:12:40.161953Z · simulations this update: 0 
 | Pumas UNAM vs Cruz Azul | away wins by more than 2.5 | no | 0.9000 | 0.949 [0.901, 0.985] | +0.043 | +0.019 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs LA Galaxy | away team total over 2.5 | no | 0.8900 | 0.938 [0.884, 0.978] | +0.042 | +0.019 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | Grêmio vs Internacional | away wins by more than 1.5 | no | 0.8300 | 0.898 [0.822, 0.957] | +0.058 | +0.019 | 0.84 | - | * | RESEARCH_CANDIDATE |
-| Sassuolo vs AC Milan | Result: away | no | 0.4700 | 0.611 [0.443, 0.765] | +0.123 | +0.019 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Necaxa | away team total over 2.5 | no | 0.9100 | 0.951 [0.908, 0.984] | +0.035 | +0.017 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | First-half result: home | yes | 0.2400 | 0.349 [0.228, 0.472] | +0.096 | +0.017 | 0.25 | - |  | RESEARCH_CANDIDATE |
-| Sassuolo vs AC Milan | Result: home | yes | 0.2200 | 0.359 [0.203, 0.525] | +0.127 | +0.017 | 0.23 | - |  | RESEARCH_CANDIDATE |
-| Grêmio vs Internacional | Result: home | yes | 0.3250 | 0.449 [0.307, 0.606] | +0.109 | +0.007 | 0.33 | - |  | RESEARCH_CANDIDATE |
+| Sassuolo vs AC Milan | Result: home | yes | 0.2200 | 0.359 [0.203, 0.525] | +0.127 | +0.017 | 0.23 | - | * | RESEARCH_CANDIDATE |
+| Sassuolo vs AC Milan | Result: away | no | 0.4800 | 0.611 [0.443, 0.765] | +0.113 | +0.009 | 0.48 | - |  | RESEARCH_CANDIDATE |
 | Torino vs Udinese | Result: draw | no | 0.7000 | 0.753 [0.696, 0.805] | +0.038 | +0.004 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | Levante vs Sevilla | Result: home | yes | 0.3500 | 0.477 [0.316, 0.658] | +0.111 | +0.003 | 0.35 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Corinthians | btts | no | 0.5500 | 0.637 [0.525, 0.740] | +0.069 | +0.002 | 0.55 | - | * | RESEARCH_CANDIDATE |
+| Grêmio vs Internacional | Result: home | yes | 0.3300 | 0.449 [0.307, 0.606] | +0.104 | +0.002 | 0.33 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 905
-action_NO_QUOTE: 339
+action_NO_EDGE: 906
+action_NO_QUOTE: 338
 action_RESEARCH_CANDIDATE: 34
 contract_sides: 1278
 fixtures: 39
