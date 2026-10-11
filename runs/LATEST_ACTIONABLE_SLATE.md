@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261011T025737Z-820111` · generated 2026-10-11T02:57:37.245186Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261011T030733Z-3e4cc0` · generated 2026-10-11T03:07:33.698374Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-11T02:55:00.839867Z (CURRENT at publish; CURRENT until 2026-10-11T03:15:00.839867Z, STALE after 2026-10-11T03:25:00.839867Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-11T03:05:00.018086Z (CURRENT at publish; CURRENT until 2026-10-11T03:25:00.018086Z, STALE after 2026-10-11T03:35:00.018086Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-11T02:12:40.161953Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.31s
+model board generated 2026-10-11T02:12:40.161953Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.32s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -82,9 +82,9 @@ model board generated 2026-10-11T02:12:40.161953Z · simulations this update: 0 
 | Pumas UNAM vs Cruz Azul | away wins by more than 2.5 | no | 0.9000 | 0.949 [0.901, 0.985] | +0.043 | +0.019 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs LA Galaxy | away team total over 2.5 | no | 0.8900 | 0.938 [0.884, 0.978] | +0.042 | +0.019 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | Grêmio vs Internacional | away wins by more than 1.5 | no | 0.8300 | 0.898 [0.822, 0.957] | +0.058 | +0.019 | 0.84 | - | * | RESEARCH_CANDIDATE |
-| Pachuca vs Necaxa | away team total over 2.5 | no | 0.9100 | 0.951 [0.908, 0.984] | +0.035 | +0.017 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | First-half result: home | yes | 0.2400 | 0.349 [0.228, 0.472] | +0.096 | +0.017 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | Sassuolo vs AC Milan | Result: home | yes | 0.2200 | 0.359 [0.203, 0.525] | +0.127 | +0.017 | 0.23 | - | * | RESEARCH_CANDIDATE |
+| Pumas UNAM vs Cruz Azul | home wins by more than 2.5 | yes | 0.0400 | 0.111 [0.039, 0.206] | +0.068 | +0.010 | 0.04 | - |  | RESEARCH_CANDIDATE |
 | Sassuolo vs AC Milan | Result: away | no | 0.4800 | 0.611 [0.443, 0.765] | +0.113 | +0.009 | 0.48 | - |  | RESEARCH_CANDIDATE |
 | Torino vs Udinese | Result: draw | no | 0.7000 | 0.753 [0.696, 0.805] | +0.038 | +0.004 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | Levante vs Sevilla | Result: home | yes | 0.3500 | 0.477 [0.316, 0.658] | +0.111 | +0.003 | 0.35 | - | * | RESEARCH_CANDIDATE |
@@ -94,8 +94,8 @@ model board generated 2026-10-11T02:12:40.161953Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 906
-action_NO_QUOTE: 338
+action_NO_EDGE: 907
+action_NO_QUOTE: 337
 action_RESEARCH_CANDIDATE: 34
 contract_sides: 1278
 fixtures: 39
