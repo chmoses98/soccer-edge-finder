@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261011T124642Z-ec116d` · generated 2026-10-11T12:46:42.134285Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261011T125736Z-7e26f4` · generated 2026-10-11T12:57:36.037858Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-11T12:44:02.792221Z (CURRENT at publish; CURRENT until 2026-10-11T13:04:02.792221Z, STALE after 2026-10-11T13:14:02.792221Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-11T12:55:00.060172Z (CURRENT at publish; CURRENT until 2026-10-11T13:15:00.060172Z, STALE after 2026-10-11T13:25:00.060172Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-11T12:27:47.507721Z · simulations this update: 0 · Odds API calls this update: 3 (credits 9) · reprice 0.56s
+model board generated 2026-10-11T12:27:47.507721Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.56s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -49,16 +49,16 @@ model board generated 2026-10-11T12:27:47.507721Z · simulations this update: 0 
 | 2026-10-12T22:30:00Z | Chapecoense vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-13T00:00:00Z | Red Bull Bragantino vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (36; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (35; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Cagliari vs Juventus | Result: away | no | 0.3700 | 0.615 [0.463, 0.760] | +0.229 | +0.134 | 0.5 | - | * | RESEARCH_CANDIDATE |
+| Hull City vs Everton | Result: away | no | 0.5100 | 0.735 [0.550, 0.891] | +0.208 | +0.097 | 0.6 | 0.517 | * | RESEARCH_CANDIDATE |
 | Cagliari vs Juventus | Result: home | yes | 0.1400 | 0.321 [0.189, 0.477] | +0.173 | +0.080 | 0.21 | - |  | RESEARCH_CANDIDATE |
-| Hull City vs Everton | Result: away | no | 0.5300 | 0.735 [0.550, 0.891] | +0.188 | +0.077 | 0.6 | 0.517 | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | Result: away | no | 0.5200 | 0.696 [0.552, 0.829] | +0.159 | +0.066 | 0.58 | - | * | RESEARCH_CANDIDATE |
+| Hull City vs Everton | Result: home | yes | 0.2300 | 0.457 [0.244, 0.685] | +0.215 | +0.064 | 0.29 | 0.229 |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | Result: home | yes | 0.2700 | 0.454 [0.298, 0.622] | +0.170 | +0.062 | 0.33 | - |  | RESEARCH_CANDIDATE |
-| Hull City vs Everton | Result: home | yes | 0.2400 | 0.457 [0.244, 0.685] | +0.205 | +0.053 | 0.29 | 0.229 |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | First team to score: away | no | 0.4500 | 0.590 [0.468, 0.712] | +0.123 | +0.043 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Necaxa | away team total over 0.5 | no | 0.3400 | 0.473 [0.345, 0.596] | +0.118 | +0.041 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | away wins by more than 1.5 | no | 0.7600 | 0.863 [0.764, 0.940] | +0.090 | +0.036 | 0.79 | - | * | RESEARCH_CANDIDATE |
@@ -82,7 +82,6 @@ model board generated 2026-10-11T12:27:47.507721Z · simulations this update: 0 
 | Pachuca vs Necaxa | away team total over 2.5 | no | 0.9200 | 0.951 [0.908, 0.984] | +0.026 | +0.008 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Sassuolo vs AC Milan | Result: home | yes | 0.2300 | 0.359 [0.203, 0.525] | +0.116 | +0.007 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Grêmio vs Internacional | Result: home | yes | 0.3250 | 0.449 [0.307, 0.606] | +0.109 | +0.007 | 0.33 | - | * | RESEARCH_CANDIDATE |
-| Atlético San Luis vs Santos Laguna | away team total over 0.5 | no | 0.2700 | 0.373 [0.243, 0.500] | +0.089 | +0.005 | 0.27 | - | * | RESEARCH_CANDIDATE |
 | Torino vs Udinese | Result: draw | no | 0.7000 | 0.753 [0.696, 0.805] | +0.038 | +0.004 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | First half: away wins by more than 1.5 | no | 0.9000 | 0.935 [0.879, 0.981] | +0.029 | +0.004 | 0.9 | - | * | RESEARCH_CANDIDATE |
 | Levante vs Sevilla | Result: home | yes | 0.3500 | 0.477 [0.316, 0.658] | +0.111 | +0.003 | 0.35 | - | * | RESEARCH_CANDIDATE |
@@ -93,9 +92,9 @@ model board generated 2026-10-11T12:27:47.507721Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 759
+action_NO_EDGE: 760
 action_NO_QUOTE: 313
-action_RESEARCH_CANDIDATE: 36
+action_RESEARCH_CANDIDATE: 35
 contract_sides: 1108
 fixtures: 36
 fixtures_model_invalidated: 0
