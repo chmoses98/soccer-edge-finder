@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261011T004736Z-aad4dd` · generated 2026-10-11T00:47:36.356047Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261011T005739Z-764a8c` · generated 2026-10-11T00:57:39.350535Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-11T00:45:00.017022Z (CURRENT at publish; CURRENT until 2026-10-11T01:05:00.017022Z, STALE after 2026-10-11T01:15:00.017022Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-11T00:55:05.057659Z (CURRENT at publish; CURRENT until 2026-10-11T01:15:05.057659Z, STALE after 2026-10-11T01:25:05.057659Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-11T00:29:35.179816Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.51s
+model board generated 2026-10-11T00:29:35.179816Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.75s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -53,7 +53,7 @@ model board generated 2026-10-11T00:29:35.179816Z · simulations this update: 0 
 | 2026-10-12T19:00:00Z | Coventry City vs Newcastle United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 84 | 0 |
 | 2026-10-12T19:00:00Z | Levante vs Sevilla (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 72 | 0 |
 
-## Candidates on CURRENT prices (57; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (59; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -92,18 +92,18 @@ model board generated 2026-10-11T00:29:35.179816Z · simulations this update: 0 
 | Sassuolo vs AC Milan | Result: away | no | 0.4700 | 0.611 [0.442, 0.765] | +0.123 | +0.018 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Necaxa | away team total over 2.5 | no | 0.9100 | 0.951 [0.908, 0.984] | +0.035 | +0.017 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Sassuolo vs AC Milan | Result: home | yes | 0.2200 | 0.358 [0.204, 0.525] | +0.126 | +0.017 | 0.23 | - |  | RESEARCH_CANDIDATE |
+| Los Angeles FC vs Vancouver Whitecaps | First half: both teams to score | no | 0.7600 | 0.832 [0.748, 0.912] | +0.059 | +0.015 | 0.77 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Vancouver Whitecaps | First-half total goals over 0.5 | no | 0.2500 | 0.342 [0.228, 0.452] | +0.079 | +0.015 | 0.26 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Vancouver Whitecaps | Exact score 1-0 (home-away) | yes | 0.0700 | 0.119 [0.074, 0.165] | +0.045 | +0.014 | 0.08 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Vancouver Whitecaps | Total goals over 5.5 | no | 0.9100 | 0.951 [0.901, 0.987] | +0.035 | +0.012 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | First-half result: away | no | 0.6600 | 0.749 [0.638, 0.842] | +0.073 | +0.012 | 0.67 | - | * | RESEARCH_CANDIDATE |
-| Grêmio vs Internacional | away wins by more than 2.5 | no | 0.9400 | 0.969 [0.938, 0.991] | +0.025 | +0.012 | 0.95 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1239
-action_NO_QUOTE: 3186
-action_RESEARCH_CANDIDATE: 57
+action_NO_EDGE: 1235
+action_NO_QUOTE: 3188
+action_RESEARCH_CANDIDATE: 59
 contract_sides: 4482
 fixtures: 40
 fixtures_model_invalidated: 0
