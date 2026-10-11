@@ -80,3 +80,195 @@ These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW
 - Troyes vs Marseille (Ligue 1) 2026-10-11T18:45:00Z · markets 3/3 evaluated · lineups unknown · xG 1.16-1.62 · 1X2 29%/24%/47%
 - Rennes vs AJ Auxerre (Ligue 1) 2026-10-11T15:15:00Z · markets 3/3 evaluated · lineups unknown · xG 1.99-1.14 · 1X2 56%/22%/22%
 - Nice vs Strasbourg (Ligue 1) 2026-10-11T13:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.35-1.42 · 1X2 36%/25%/39%
+
+{
+  "outputs": {
+    "json": "work/runs/_pending/run_output.v1.json",
+    "md": "work/runs/_pending/RUN_SOCCER.md",
+    "contracts": "work/runs/_pending/priced_contracts.json",
+    "coverage": "work/runs/_pending/coverage.json",
+    "diagnostics": "work/runs/_pending/coverage_diagnostics.json"
+  },
+  "simulated": [],
+  "repriced": [
+    "fx:ger.bundesliga:2026-27:ger.freiburg:ger.schalke:matchday_5",
+    "fx:ger.bundesliga:2026-27:ger.koln:ger.gladbach:matchday_5",
+    "fx:esp.la_liga:2026-27:esp.levante:esp.sevilla:matchday_8",
+    "fx:esp.la_liga:2026-27:esp.racing_santander:esp.valencia:matchday_8",
+    "fx:esp.la_liga:2026-27:esp.real_betis:esp.osasuna:matchday_8",
+    "fx:esp.la_liga:2026-27:esp.real_sociedad:esp.deportivo:matchday_8",
+    "fx:esp.la_liga:2026-27:esp.elche:esp.celta_vigo:matchday_8",
+    "fx:ita.serie_a:2026-27:ita.torino:ita.udinese:matchday_6",
+    "fx:ita.serie_a:2026-27:ita.atalanta:ita.venezia:matchday_6",
+    "fx:ita.serie_a:2026-27:ita.cagliari:ita.juventus:matchday_6",
+    "fx:ita.serie_a:2026-27:ita.sassuolo:ita.milan:matchday_6",
+    "fx:ita.serie_a:2026-27:ita.lecce:ita.bologna:matchday_6",
+    "fx:ita.serie_a:2026-27:ita.lazio:ita.monza:matchday_6",
+    "fx:ita.serie_a:2026-27:ita.como:ita.roma:matchday_6",
+    "fx:eng.premier_league:2026-27:eng.coventry:eng.newcastle:matchday_6",
+    "fx:eng.premier_league:2026-27:eng.liverpool:eng.man_city:matchday_6",
+    "fx:eng.premier_league:2026-27:eng.hull:eng.everton:matchday_6",
+    "fx:eng.premier_league:2026-27:eng.crystal_palace:eng.nottm_forest:matchday_6",
+    "fx:fra.ligue_1:2026-27:fra.troyes:fra.marseille:matchday_6",
+    "fx:fra.ligue_1:2026-27:fra.rennes:fra.auxerre:matchday_6",
+    "fx:fra.ligue_1:2026-27:fra.nice:fra.strasbourg:matchday_6"
+  ],
+  "archived_records": 63
+}
+[dispatch] holding 11.4 min (next window opens in 140.8 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261011T061310Z",
+  "complete": true,
+  "discovered": 5485,
+  "written": 1138,
+  "path": "work/snapshots/2026-10-11/cap-20261011T061310Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261011T061311Z-d4caa3", "mode": "reprice_only", "fixtures": 38, "contract_sides": 1120, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.234, "price_changes_vs_previous": 154}
+[dispatch] holding 11.3 min (next window opens in 125.7 min)
+[dispatch] holding 0.5 min (next window opens in 114.4 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261011T062840Z",
+  "complete": true,
+  "discovered": 5485,
+  "written": 864,
+  "path": "work/snapshots/2026-10-11/cap-20261011T062840Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261011T062841Z-2197c1", "mode": "reprice_only", "fixtures": 38, "contract_sides": 1120, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.232, "price_changes_vs_previous": 82}
+[dispatch] holding 11.6 min (next window opens in 110.4 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261011T064340Z",
+  "complete": true,
+  "discovered": 5485,
+  "written": 1095,
+  "path": "work/snapshots/2026-10-11/cap-20261011T064340Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261011T064341Z-4194b3", "mode": "reprice_only", "fixtures": 38, "contract_sides": 1120, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.229, "price_changes_vs_previous": 67}
+[dispatch] holding 11.1 min (next window opens in 95.4 min)
+[dispatch] holding 0.5 min (next window opens in 84.4 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261011T065841Z",
+  "complete": true,
+  "discovered": 5485,
+  "written": 750,
+  "path": "work/snapshots/2026-10-11/cap-20261011T065841Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261011T065842Z-bf9d15", "mode": "reprice_only", "fixtures": 38, "contract_sides": 1120, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.243, "price_changes_vs_previous": 47}
+[dispatch] holding 11.6 min (next window opens in 80.4 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261011T071412Z",
+  "complete": true,
+  "discovered": 5485,
+  "written": 863,
+  "path": "work/snapshots/2026-10-11/cap-20261011T071412Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261011T071412Z-a852c6", "mode": "reprice_only", "fixtures": 38, "contract_sides": 1120, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.24, "price_changes_vs_previous": 54}
+[dispatch] holding 10.3 min (next window opens in 64.7 min)
+[dispatch] holding 0.6 min (next window opens in 54.4 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261011T072843Z",
+  "complete": true,
+  "discovered": 5485,
+  "written": 837,
+  "path": "work/snapshots/2026-10-11/cap-20261011T072843Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261011T072843Z-7c7fde", "mode": "reprice_only", "fixtures": 38, "contract_sides": 1120, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.241, "price_changes_vs_previous": 67}
+[dispatch] holding 11.6 min (next window opens in 50.4 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261011T074342Z",
+  "complete": true,
+  "discovered": 5485,
+  "written": 836,
+  "path": "work/snapshots/2026-10-11/cap-20261011T074342Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261011T074343Z-65f9c1", "mode": "reprice_only", "fixtures": 38, "contract_sides": 1120, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.228, "price_changes_vs_previous": 87}
+[dispatch] holding 11.0 min (next window opens in 35.4 min)
+[dispatch] holding 0.6 min (next window opens in 24.4 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261011T075843Z",
+  "complete": true,
+  "discovered": 5485,
+  "written": 1028,
+  "path": "work/snapshots/2026-10-11/cap-20261011T075843Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261011T075844Z-ff797e", "mode": "reprice_only", "fixtures": 38, "contract_sides": 1120, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.233, "price_changes_vs_previous": 63}
+[dispatch] holding 11.6 min (next window opens in 20.4 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261011T081343Z",
+  "complete": true,
+  "discovered": 5485,
+  "written": 874,
+  "path": "work/snapshots/2026-10-11/cap-20261011T081343Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261011T081344Z-6d75b9", "mode": "reprice_only", "fixtures": 38, "contract_sides": 1120, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.247, "price_changes_vs_previous": 52}
+[dispatch] holding 11.0 min (next window opens in 5.4 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261011T082808Z",
+  "complete": true,
+  "discovered": 5485,
+  "written": 959,
+  "path": "work/snapshots/2026-10-11/cap-20261011T082808Z.jsonl"
+}
+{
+  "reference_probabilities": 240,
+  "observed_at": "2026-10-11 05:58:18.547564+00:00",
+  "groups": 450,
+  "unmapped_fixture_groups": 210,
+  "incomplete_groups": 0,
+  "snapshots": 864,
+  "provider_notes": [
+    "199 rows, 109 skipped (unmapped division/team)",
+    "skipped_by_division={'B1': 9, 'D2': 9, 'E2': 12, 'E3': 12, 'EC': 12, 'F2': 9, 'G1': 7, 'I2': 10, 'N1': 2, 'SC1': 5, 'SC2': 5, 'SC3': 5, 'SP2': 11, 'T1': 1}",
+    "unknown_teams={'N1:For Sittard': 1, 'N1:Nijmegen': 1, 'T1:Goztep': 1}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-11T08:28:10.539376Z", "batch_id": "kd-20261011T082536Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-10-11T08:28:10.558007+00:00",
+ "leagues": [
+  "ita.1"
+ ],
+ "events": 5,
+ "fixtures_mapped": 5,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 1,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 5,
+  "captured": 0,
+  "unchanged": 5,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 5,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 5,
+  "captured": 5,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
