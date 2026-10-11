@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261011T130151Z-fdf401` · generated 2026-10-11T13:01:51.994227Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261011T131754Z-06a019` · generated 2026-10-11T13:17:54.859516Z · trigger `kickoff_chain:T-120/T-60/T-15` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-11T12:59:17.032418Z (CURRENT at publish; CURRENT until 2026-10-11T13:19:17.032418Z, STALE after 2026-10-11T13:29:17.032418Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-11T13:14:19.167352Z (CURRENT at publish; CURRENT until 2026-10-11T13:34:19.167352Z, STALE after 2026-10-11T13:44:19.167352Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-11T12:27:47.507721Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.54s
+model board generated 2026-10-11T13:17:54.177655Z · simulations this update: 1 · Odds API calls this update: 2 (credits 6) · reprice 0.54s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,8 +12,8 @@ model board generated 2026-10-11T12:27:47.507721Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-11T13:30:00Z | 1. FC Köln vs Borussia Mönchengladbach (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
-| 2026-10-11T14:15:00Z | Real Sociedad vs Deportivo La Coruña (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-11T13:30:00Z | 1. FC Köln vs Borussia Mönchengladbach (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
+| 2026-10-11T14:15:00Z | Real Sociedad vs Deportivo La Coruña (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
 | 2026-10-11T15:15:00Z | Rennes vs AJ Auxerre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-11T15:30:00Z | Liverpool vs Manchester City (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-11T15:30:00Z | SC Freiburg vs Schalke 04 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -67,20 +67,20 @@ model board generated 2026-10-11T12:27:47.507721Z · simulations this update: 0 
 | Pumas UNAM vs Cruz Azul | away team total over 0.5 | no | 0.1800 | 0.289 [0.171, 0.404] | +0.099 | +0.021 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | away wins by more than 2.5 | no | 0.9000 | 0.949 [0.901, 0.985] | +0.043 | +0.019 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | First-half result: home | yes | 0.2400 | 0.349 [0.228, 0.472] | +0.096 | +0.017 | 0.25 | - |  | RESEARCH_CANDIDATE |
+| Sassuolo vs AC Milan | Result: home | yes | 0.2200 | 0.359 [0.203, 0.525] | +0.127 | +0.017 | 0.23 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | away team total over 2.5 | no | 0.7700 | 0.852 [0.739, 0.936] | +0.069 | +0.013 | 0.78 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Corinthians | btts | no | 0.5400 | 0.637 [0.525, 0.740] | +0.079 | +0.012 | 0.55 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs LA Galaxy | away team total over 2.5 | no | 0.9000 | 0.938 [0.884, 0.978] | +0.032 | +0.010 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | home wins by more than 2.5 | yes | 0.0400 | 0.111 [0.039, 0.206] | +0.068 | +0.010 | 0.04 | - |  | RESEARCH_CANDIDATE |
-| Sassuolo vs AC Milan | Result: away | no | 0.4800 | 0.611 [0.443, 0.765] | +0.113 | +0.009 | 0.48 | - | * | RESEARCH_CANDIDATE |
+| Sassuolo vs AC Milan | Result: away | no | 0.4800 | 0.611 [0.443, 0.765] | +0.113 | +0.009 | 0.48 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Necaxa | away team total over 2.5 | no | 0.9200 | 0.951 [0.908, 0.984] | +0.026 | +0.008 | 0.92 | - |  | RESEARCH_CANDIDATE |
-| Sassuolo vs AC Milan | Result: home | yes | 0.2300 | 0.359 [0.203, 0.525] | +0.116 | +0.007 | 0.23 | - |  | RESEARCH_CANDIDATE |
-| Grêmio vs Internacional | Result: home | yes | 0.3250 | 0.449 [0.307, 0.606] | +0.109 | +0.007 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | Atlético San Luis vs Santos Laguna | away team total over 0.5 | no | 0.2700 | 0.373 [0.243, 0.500] | +0.089 | +0.005 | 0.27 | - | * | RESEARCH_CANDIDATE |
 | Torino vs Udinese | Result: draw | no | 0.7000 | 0.753 [0.696, 0.805] | +0.038 | +0.004 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | First half: away wins by more than 1.5 | no | 0.9000 | 0.935 [0.879, 0.981] | +0.029 | +0.004 | 0.9 | - | * | RESEARCH_CANDIDATE |
 | Levante vs Sevilla | Result: home | yes | 0.3500 | 0.477 [0.316, 0.658] | +0.111 | +0.003 | 0.35 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Necaxa | away wins by more than 1.5 | no | 0.9300 | 0.956 [0.916, 0.985] | +0.021 | +0.003 | 0.93 | - | * | RESEARCH_CANDIDATE |
 | Grêmio vs Internacional | home wins by more than 1.5 | yes | 0.1300 | 0.223 [0.114, 0.354] | +0.085 | +0.002 | 0.13 | - | * | RESEARCH_CANDIDATE |
+| Grêmio vs Internacional | Result: home | yes | 0.3300 | 0.449 [0.307, 0.606] | +0.104 | +0.002 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | Grêmio vs Internacional | Result: away | no | 0.6350 | 0.734 [0.606, 0.849] | +0.083 | +0.001 | 0.63 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
