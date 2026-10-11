@@ -54,7 +54,489 @@
   "delivered_total": 753,
   "delivery_rate_total": 0.8229508196721311,
   "fixtures_tracked": 184,
-  "generated_at": "2026-10-11T03:07:34Z",
+  "generated_at": "2026-10-11T05:53:30Z",
+  "last_tick": {
+    "batches": 16,
+    "summary": [
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=6:paid=2:rows=14",
+          "lineups:ok:3",
+          "model_refresh:ok:fixtures=4:sim=4:cache=0:why=T-15:invalidated,T-15:no_model_refresh_since_t60,T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261011T002221Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:usa.mls:2026:usa.sporting_kc:usa.portland_timbers",
+            15,
+            7.64
+          ],
+          [
+            "fx:usa.mls:2026:usa.minnesota_united:usa.houston_dynamo",
+            15,
+            7.64
+          ],
+          [
+            "fx:usa.mls:2026:usa.austin:usa.nashville",
+            15,
+            7.64
+          ],
+          [
+            "fx:arg.primera:2026:arg.river_plate:arg.estudiantes_rio_cuarto",
+            15,
+            7.64
+          ],
+          [
+            "fx:mex.liga_mx:2026:mex.atlas:mex.guadalajara",
+            60,
+            37.64
+          ],
+          [
+            "fx:usa.mls:2026:usa.colorado_rapids:usa.san_jose_earthquakes",
+            120,
+            67.64
+          ],
+          [
+            "fx:usa.mls:2026:usa.lafc:usa.vancouver_whitecaps",
+            120,
+            127.64
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=0:paid=0:rows=0",
+          "lineups:ok:2",
+          "model_refresh:ok:fixtures=1:sim=1:cache=0:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261011T002657Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:usa.mls:2026:usa.sporting_kc:usa.portland_timbers",
+            5,
+            3.04
+          ],
+          [
+            "fx:usa.mls:2026:usa.minnesota_united:usa.houston_dynamo",
+            5,
+            3.04
+          ],
+          [
+            "fx:usa.mls:2026:usa.austin:usa.nashville",
+            5,
+            3.04
+          ],
+          [
+            "fx:arg.primera:2026:arg.river_plate:arg.estudiantes_rio_cuarto",
+            5,
+            3.04
+          ],
+          [
+            "fx:usa.mls:2026:usa.colorado_rapids:usa.san_jose_earthquakes",
+            60,
+            63.04
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=4482:sim=0"
+        ],
+        "batch_id": "kd-20261011T003036Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:mex.liga_mx:2026:mex.atlas:mex.guadalajara",
+            30,
+            29.4
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=4482:sim=0"
+        ],
+        "batch_id": "kd-20261011T004500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:mex.liga_mx:2026:mex.atlas:mex.guadalajara",
+            15,
+            15.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=4482:sim=0"
+        ],
+        "batch_id": "kd-20261011T005505Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:mex.liga_mx:2026:mex.atlas:mex.guadalajara",
+            5,
+            4.92
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=4324:sim=0"
+        ],
+        "batch_id": "kd-20261011T005835Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:usa.mls:2026:usa.colorado_rapids:usa.san_jose_earthquakes",
+            30,
+            31.42
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=4324:sim=0"
+        ],
+        "batch_id": "kd-20261011T010205Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:mex.liga_mx:2026:mex.america:mex.monterrey",
+            120,
+            127.91
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=4324:sim=0"
+        ],
+        "batch_id": "kd-20261011T011500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:usa.mls:2026:usa.colorado_rapids:usa.san_jose_earthquakes",
+            15,
+            15.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:ok:fixtures=1:sim=1:cache=0:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261011T012501Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:usa.mls:2026:usa.colorado_rapids:usa.san_jose_earthquakes",
+            5,
+            4.98
+          ],
+          [
+            "fx:usa.mls:2026:usa.lafc:usa.vancouver_whitecaps",
+            60,
+            64.98
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "model_refresh:ok:fixtures=25:sim=23:board=23:why=entered_lookahead_unmodelled",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "ks-20261011T014001Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1436:sim=0"
+        ],
+        "batch_id": "ks-20261011T015504Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1436:sim=0"
+        ],
+        "batch_id": "kd-20261011T015832Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:usa.mls:2026:usa.lafc:usa.vancouver_whitecaps",
+            30,
+            31.46
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:ok:fixtures=1:sim=1:cache=0:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261011T021000Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:mex.liga_mx:2026:mex.america:mex.monterrey",
+            60,
+            60.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1436:sim=0"
+        ],
+        "batch_id": "kd-20261011T021336Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:usa.mls:2026:usa.lafc:usa.vancouver_whitecaps",
+            15,
+            16.39
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1436:sim=0"
+        ],
+        "batch_id": "kd-20261011T022501Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:usa.mls:2026:usa.lafc:usa.vancouver_whitecaps",
+            5,
+            4.97
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1278:sim=0"
+        ],
+        "batch_id": "kd-20261011T024000Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:mex.liga_mx:2026:mex.america:mex.monterrey",
+            30,
+            30.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1278:sim=0"
+        ],
+        "batch_id": "kd-20261011T025500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:mex.liga_mx:2026:mex.america:mex.monterrey",
+            15,
+            14.99
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1278:sim=0"
+        ],
+        "batch_id": "kd-20261011T030500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:mex.liga_mx:2026:mex.america:mex.monterrey",
+            5,
+            5.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1120:sim=0"
+        ],
+        "batch_id": "ks-20261011T032000Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1120:sim=0"
+        ],
+        "batch_id": "ks-20261011T033501Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1120:sim=0"
+        ],
+        "batch_id": "ks-20261011T035001Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1120:sim=0"
+        ],
+        "batch_id": "ks-20261011T040502Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1120:sim=0"
+        ],
+        "batch_id": "ks-20261011T042002Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1120:sim=0"
+        ],
+        "batch_id": "ks-20261011T043504Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1120:sim=0"
+        ],
+        "batch_id": "ks-20261011T045004Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1120:sim=0"
+        ],
+        "batch_id": "ks-20261011T050505Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1120:sim=0"
+        ],
+        "batch_id": "ks-20261011T052005Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1120:sim=0"
+        ],
+        "batch_id": "ks-20261011T053506Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1120:sim=0"
+        ],
+        "batch_id": "ks-20261011T055006Z",
+        "due": [],
+        "slate_refresh": true
+      }
+    ]
+  },
   "missed_total": 162,
   "n_pending_fixtures": 61,
   "pending_fixtures": [
