@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-11T05:57:54.763658+00:00",
+  "as_of": "2026-10-11T13:07:19.741545+00:00",
   "events": 751,
   "events_skipped_unmapped": 383,
   "fixtures_mapped": 368,
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 4,
-    "events": 99,
+    "captured": 32,
+    "events": 96,
     "failures": [],
-    "published_post": 2,
+    "published_post": 27,
     "published_pre_kickoff": 2,
-    "unchanged": 95,
-    "unpublished": 95
+    "unchanged": 64,
+    "unpublished": 67
   },
   "map_proposals": {
     "bel.1": {
@@ -173,7 +173,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 19,
+  "results_appended": 5,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -231,12 +231,12 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 4,
-    "events": 75,
+    "captured": 5,
+    "events": 76,
     "failures": [
-      "401912650: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Newcastle&count=5&language=en&f",
       "401912649: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Kyoto&count=5&language=en&forma",
-      "401912648: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Pohang&count=5&language=en&form"
+      "401912648: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Pohang&count=5&language=en&form",
+      "401912626: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Shanghai&count=5&language=en&fo"
     ],
     "forecast_miss": 0,
     "geocode_miss": 2,
