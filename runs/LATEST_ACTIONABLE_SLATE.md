@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261011T131754Z-06a019` · generated 2026-10-11T13:17:54.859516Z · trigger `kickoff_chain:T-120/T-60/T-15` · mode `model_refresh_and_reprice`
+slate `slate-20261011T132736Z-cfa970` · generated 2026-10-11T13:27:36.837944Z · trigger `kickoff_chain:T-120/T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-11T13:14:19.167352Z (CURRENT at publish; CURRENT until 2026-10-11T13:34:19.167352Z, STALE after 2026-10-11T13:44:19.167352Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-11T13:25:00.031011Z (CURRENT at publish; CURRENT until 2026-10-11T13:45:00.031011Z, STALE after 2026-10-11T13:55:00.031011Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-11T13:17:54.177655Z · simulations this update: 1 · Odds API calls this update: 2 (credits 6) · reprice 0.54s
+model board generated 2026-10-11T13:17:54.177655Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.54s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -49,7 +49,7 @@ model board generated 2026-10-11T13:17:54.177655Z · simulations this update: 1 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Cagliari vs Juventus | Result: away | no | 0.3700 | 0.615 [0.463, 0.760] | +0.229 | +0.134 | 0.5 | - | * | RESEARCH_CANDIDATE |
-| Cagliari vs Juventus | Result: home | yes | 0.1400 | 0.321 [0.189, 0.477] | +0.173 | +0.080 | 0.21 | - |  | RESEARCH_CANDIDATE |
+| Cagliari vs Juventus | Result: home | yes | 0.1300 | 0.321 [0.189, 0.477] | +0.183 | +0.091 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | Result: away | no | 0.5200 | 0.696 [0.552, 0.829] | +0.159 | +0.066 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | Result: home | yes | 0.2700 | 0.454 [0.298, 0.622] | +0.170 | +0.062 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | First team to score: away | no | 0.4500 | 0.590 [0.468, 0.712] | +0.123 | +0.043 | 0.49 | - | * | RESEARCH_CANDIDATE |
@@ -86,8 +86,8 @@ model board generated 2026-10-11T13:17:54.177655Z · simulations this update: 1 
 ## Counts
 
 ```
-action_NO_EDGE: 731
-action_NO_QUOTE: 313
+action_NO_EDGE: 733
+action_NO_QUOTE: 311
 action_RESEARCH_CANDIDATE: 34
 contract_sides: 1078
 fixtures: 31
