@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261011T052237Z-ca5fb8` · generated 2026-10-11T05:22:37.326997Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261011T053738Z-ce0539` · generated 2026-10-11T05:37:38.642667Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-11T05:20:05.249208Z (CURRENT at publish; CURRENT until 2026-10-11T05:40:05.249208Z, STALE after 2026-10-11T05:50:05.249208Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-11T05:35:06.717288Z (CURRENT at publish; CURRENT until 2026-10-11T05:55:06.717288Z, STALE after 2026-10-11T06:05:06.717288Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-11T01:42:36.106649Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.24s
 
@@ -67,30 +67,30 @@ model board generated 2026-10-11T01:42:36.106649Z · simulations this update: 0 
 | Pumas UNAM vs Cruz Azul | First team to score: away | no | 0.4500 | 0.590 [0.468, 0.712] | +0.123 | +0.043 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | First-half result: away | no | 0.6300 | 0.749 [0.638, 0.842] | +0.103 | +0.042 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Necaxa | away team total over 0.5 | no | 0.3400 | 0.473 [0.345, 0.596] | +0.118 | +0.041 | 0.38 | - | * | RESEARCH_CANDIDATE |
+| Pachuca vs Necaxa | away team total over 1.5 | no | 0.7100 | 0.817 [0.712, 0.904] | +0.092 | +0.039 | 0.75 | - |  | RESEARCH_CANDIDATE |
 | Hull City vs Everton | Result: home | yes | 0.2600 | 0.457 [0.244, 0.685] | +0.184 | +0.033 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | away team total over 1.5 | no | 0.4900 | 0.633 [0.472, 0.770] | +0.126 | +0.032 | 0.52 | - | * | RESEARCH_CANDIDATE |
+| Pumas UNAM vs Cruz Azul | away team total over 2.5 | no | 0.7500 | 0.852 [0.739, 0.936] | +0.088 | +0.032 | 0.78 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Necaxa | btts | no | 0.4300 | 0.552 [0.434, 0.666] | +0.105 | +0.030 | 0.45 | - | * | RESEARCH_CANDIDATE |
-| Pachuca vs Necaxa | away team total over 1.5 | no | 0.7200 | 0.817 [0.712, 0.904] | +0.083 | +0.030 | 0.75 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs LA Galaxy | away team total over 2.5 | no | 0.8800 | 0.938 [0.884, 0.978] | +0.051 | +0.029 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | home wins by more than 1.5 | yes | 0.1200 | 0.246 [0.124, 0.392] | +0.118 | +0.024 | 0.14 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | First team to score: home | yes | 0.4000 | 0.527 [0.388, 0.662] | +0.110 | +0.023 | 0.42 | - |  | RESEARCH_CANDIDATE |
-| Pumas UNAM vs Cruz Azul | away team total over 2.5 | no | 0.7600 | 0.852 [0.739, 0.936] | +0.079 | +0.022 | 0.78 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | away team total over 0.5 | no | 0.1800 | 0.289 [0.171, 0.404] | +0.099 | +0.021 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | away wins by more than 2.5 | no | 0.9000 | 0.949 [0.901, 0.985] | +0.043 | +0.019 | 0.92 | - |  | RESEARCH_CANDIDATE |
-| Lecce vs Bologna | Result: home | yes | 0.2200 | 0.353 [0.211, 0.513] | +0.121 | +0.019 | 0.23 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Necaxa | away team total over 2.5 | no | 0.9100 | 0.951 [0.908, 0.984] | +0.035 | +0.017 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | First-half result: home | yes | 0.2400 | 0.349 [0.228, 0.472] | +0.096 | +0.017 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | Sassuolo vs AC Milan | Result: home | yes | 0.2200 | 0.359 [0.203, 0.525] | +0.127 | +0.017 | 0.23 | - | * | RESEARCH_CANDIDATE |
-| Lecce vs Bologna | Result: away | no | 0.5100 | 0.639 [0.491, 0.780] | +0.112 | +0.017 | 0.52 | - |  | RESEARCH_CANDIDATE |
+| Lecce vs Bologna | Result: away | no | 0.5100 | 0.639 [0.491, 0.780] | +0.112 | +0.017 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | Grêmio vs Internacional | Result: away | no | 0.6200 | 0.734 [0.606, 0.849] | +0.097 | +0.016 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Corinthians | btts | no | 0.5400 | 0.637 [0.525, 0.740] | +0.079 | +0.012 | 0.55 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | home wins by more than 2.5 | yes | 0.0400 | 0.111 [0.039, 0.206] | +0.068 | +0.010 | 0.04 | - |  | RESEARCH_CANDIDATE |
 | Grêmio vs Internacional | away wins by more than 1.5 | no | 0.8400 | 0.898 [0.822, 0.957] | +0.049 | +0.009 | 0.84 | - | * | RESEARCH_CANDIDATE |
+| Lecce vs Bologna | Result: home | yes | 0.2300 | 0.353 [0.211, 0.513] | +0.110 | +0.009 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Sassuolo vs AC Milan | Result: away | no | 0.4800 | 0.611 [0.443, 0.765] | +0.113 | +0.009 | 0.48 | - |  | RESEARCH_CANDIDATE |
+| Grêmio vs Internacional | Result: home | yes | 0.3250 | 0.449 [0.307, 0.606] | +0.109 | +0.007 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | Torino vs Udinese | Result: draw | no | 0.7000 | 0.753 [0.696, 0.805] | +0.038 | +0.004 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | First half: away wins by more than 1.5 | no | 0.9000 | 0.935 [0.879, 0.981] | +0.029 | +0.004 | 0.9 | - | * | RESEARCH_CANDIDATE |
 | Levante vs Sevilla | Result: home | yes | 0.3500 | 0.477 [0.316, 0.658] | +0.111 | +0.003 | 0.35 | - | * | RESEARCH_CANDIDATE |
-| Grêmio vs Internacional | Result: home | yes | 0.3300 | 0.449 [0.307, 0.606] | +0.104 | +0.002 | 0.33 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 

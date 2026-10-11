@@ -1377,3 +1377,202 @@ unmapped teams: 0 | proposals: {}
   "written": 0
 }
 [odds_api] {"captured_at": "2026-10-11T02:57:34.333867Z", "batch_id": "kd-20261011T025500Z", "credits_charged": 3, "paid_calls": 1, "snapshots": 7, "no_sport_key": [], "eligible_fixtures": 1, "per_sport": {"soccer_mexico_ligamx": {"fixtures": 1, "join": {"events": 2, "joined": 1, "ambiguous": 0, "unresolved_names": [], "unjoined_fixtures": []}, "status": "OK", "credits": 3, "snapshots": 7, "incomplete_markets": 0, "close_fixtures": 1, "entry_fixtures": 0}}, "remaining_after": 18960, "status": "OK"}
+{
+ "as_of": "2026-10-11T02:57:36.347661+00:00",
+ "leagues": [
+  "mex.1"
+ ],
+ "events": 3,
+ "fixtures_mapped": 3,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 1,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 3,
+  "captured": 0,
+  "unchanged": 3,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 3,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 3,
+  "captured": 3,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261011T025737Z-820111", "mode": "reprice_only", "fixtures": 39, "contract_sides": 1278, "simulations_run": 0, "odds_api_calls": 1, "reprice_runtime_s": 0.308, "price_changes_vs_previous": 56}
+[dispatch] holding 6.2 min (next window opens in 4.2 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261011T030731Z",
+  "complete": true,
+  "discovered": 5795,
+  "written": 918,
+  "path": "work/snapshots/2026-10-11/cap-20261011T030731Z.jsonl"
+}
+{
+  "reference_probabilities": 240,
+  "observed_at": "2026-10-11 00:25:00.834807+00:00",
+  "groups": 450,
+  "unmapped_fixture_groups": 210,
+  "incomplete_groups": 0,
+  "snapshots": 864,
+  "provider_notes": [
+    "199 rows, 109 skipped (unmapped division/team)",
+    "skipped_by_division={'B1': 9, 'D2': 9, 'E2': 12, 'E3': 12, 'EC': 12, 'F2': 9, 'G1': 7, 'I2': 10, 'N1': 2, 'SC1': 5, 'SC2': 5, 'SC3': 5, 'SP2': 11, 'T1': 1}",
+    "unknown_teams={'N1:For Sittard': 1, 'N1:Nijmegen': 1, 'T1:Goztep': 1}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-11T03:07:33.608440Z", "batch_id": "kd-20261011T030500Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-10-11T03:07:33.630199+00:00",
+ "leagues": [
+  "mex.1"
+ ],
+ "events": 3,
+ "fixtures_mapped": 3,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 1,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 3,
+  "captured": 0,
+  "unchanged": 3,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 3,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 3,
+  "captured": 3,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261011T030733Z-3e4cc0", "mode": "reprice_only", "fixtures": 39, "contract_sides": 1278, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.319, "price_changes_vs_previous": 42}
+[dispatch] holding 11.5 min (next window opens in 311.5 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261011T032231Z",
+  "complete": true,
+  "discovered": 5761,
+  "written": 955,
+  "path": "work/snapshots/2026-10-11/cap-20261011T032231Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261011T032232Z-76ec27", "mode": "reprice_only", "fixtures": 38, "contract_sides": 1120, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.254, "price_changes_vs_previous": 42}
+[dispatch] holding 11.6 min (next window opens in 296.6 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261011T033733Z",
+  "complete": true,
+  "discovered": 5760,
+  "written": 897,
+  "path": "work/snapshots/2026-10-11/cap-20261011T033733Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261011T033734Z-453bd4", "mode": "reprice_only", "fixtures": 38, "contract_sides": 1120, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.261, "price_changes_vs_previous": 33}
+[dispatch] holding 11.6 min (next window opens in 281.5 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261011T035233Z",
+  "complete": true,
+  "discovered": 5673,
+  "written": 1018,
+  "path": "work/snapshots/2026-10-11/cap-20261011T035233Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261011T035234Z-e706d9", "mode": "reprice_only", "fixtures": 38, "contract_sides": 1120, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.486, "price_changes_vs_previous": 25}
+[dispatch] holding 11.5 min (next window opens in 266.5 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261011T040734Z",
+  "complete": true,
+  "discovered": 5663,
+  "written": 1524,
+  "path": "work/snapshots/2026-10-11/cap-20261011T040734Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261011T040734Z-a8ea29", "mode": "reprice_only", "fixtures": 38, "contract_sides": 1120, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.255, "price_changes_vs_previous": 65}
+[dispatch] holding 11.3 min (next window opens in 251.3 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261011T042234Z",
+  "complete": true,
+  "discovered": 5608,
+  "written": 1256,
+  "path": "work/snapshots/2026-10-11/cap-20261011T042234Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261011T042235Z-7cf3e5", "mode": "reprice_only", "fixtures": 38, "contract_sides": 1120, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.295, "price_changes_vs_previous": 44}
+[dispatch] holding 11.5 min (next window opens in 236.5 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261011T043736Z",
+  "complete": true,
+  "discovered": 5603,
+  "written": 1053,
+  "path": "work/snapshots/2026-10-11/cap-20261011T043736Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261011T043736Z-742da6", "mode": "reprice_only", "fixtures": 38, "contract_sides": 1120, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.24, "price_changes_vs_previous": 38}
+[dispatch] holding 11.6 min (next window opens in 221.5 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261011T045236Z",
+  "complete": true,
+  "discovered": 5544,
+  "written": 865,
+  "path": "work/snapshots/2026-10-11/cap-20261011T045236Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261011T045236Z-9a7538", "mode": "reprice_only", "fixtures": 38, "contract_sides": 1120, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.243, "price_changes_vs_previous": 28}
+[dispatch] holding 0.5 min (next window opens in 206.5 min)
+[dispatch] holding 11.1 min (next window opens in 206.0 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261011T050736Z",
+  "complete": true,
+  "discovered": 5544,
+  "written": 1061,
+  "path": "work/snapshots/2026-10-11/cap-20261011T050736Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261011T050737Z-b7dffe", "mode": "reprice_only", "fixtures": 38, "contract_sides": 1120, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.249, "price_changes_vs_previous": 20}
+[dispatch] holding 11.3 min (next window opens in 191.2 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261011T052236Z",
+  "complete": true,
+  "discovered": 5485,
+  "written": 985,
+  "path": "work/snapshots/2026-10-11/cap-20261011T052236Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261011T052237Z-ca5fb8", "mode": "reprice_only", "fixtures": 38, "contract_sides": 1120, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.24, "price_changes_vs_previous": 69}
+[dispatch] holding 0.5 min (next window opens in 176.5 min)
+[dispatch] holding 11.1 min (next window opens in 176.0 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
