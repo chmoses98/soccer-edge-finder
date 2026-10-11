@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261011T104233Z-f80bcd` · generated 2026-10-11T10:42:33.301570Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261011T105804Z-4a9004` · generated 2026-10-11T10:58:04.102181Z · trigger `kickoff_chain:T-120/T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-11T10:40:01.262251Z (CURRENT at publish; CURRENT until 2026-10-11T11:00:01.262251Z, STALE after 2026-10-11T11:10:01.262251Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-11T10:55:01.267299Z (CURRENT at publish; CURRENT until 2026-10-11T11:15:01.267299Z, STALE after 2026-10-11T11:25:01.267299Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-11T09:28:16.185894Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.23s
+model board generated 2026-10-11T10:58:03.801396Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.44s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-11T09:28:16.185894Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-11T12:00:00Z | Elche vs Celta Vigo (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-11T12:00:00Z | Elche vs Celta Vigo (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
 | 2026-10-11T13:00:00Z | Crystal Palace vs Nottingham Forest (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-11T13:00:00Z | Hull City vs Everton (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-11T13:00:00Z | Nice vs Strasbourg (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
