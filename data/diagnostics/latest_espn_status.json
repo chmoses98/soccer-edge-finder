@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-10T23:38:29.807599+00:00",
-  "events": 664,
-  "events_skipped_unmapped": 338,
-  "fixtures_mapped": 326,
+  "as_of": "2026-10-11T05:57:54.763658+00:00",
+  "events": 751,
+  "events_skipped_unmapped": 383,
+  "fixtures_mapped": 368,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=69"
+      "weather_stopped:consecutive_failures:skipped=66"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 124,
-    "events": 132,
+    "captured": 4,
+    "events": 99,
     "failures": [],
-    "published_post": 17,
-    "published_pre_kickoff": 3,
-    "unchanged": 8,
-    "unpublished": 112
+    "published_post": 2,
+    "published_pre_kickoff": 2,
+    "unchanged": 95,
+    "unpublished": 95
   },
   "map_proposals": {
     "bel.1": {
@@ -173,7 +173,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 17,
+  "results_appended": 19,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -231,17 +231,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 5,
-    "events": 79,
+    "captured": 4,
+    "events": 75,
     "failures": [
+      "401912650: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Newcastle&count=5&language=en&f",
       "401912649: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Kyoto&count=5&language=en&forma",
-      "401912648: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Pohang&count=5&language=en&form",
-      "401912626: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Shanghai&count=5&language=en&fo"
+      "401912648: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Pohang&count=5&language=en&form"
     ],
     "forecast_miss": 0,
     "geocode_miss": 2,
     "no_venue": 0,
-    "skipped": 69,
+    "skipped": 66,
     "stopped": "consecutive_failures"
   }
 }
