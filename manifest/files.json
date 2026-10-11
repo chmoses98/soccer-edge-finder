@@ -3877,16 +3877,16 @@
       "sha256_prefix": "e88c911ba970deb2bcc7697015a6fdfb31186f9a33dfb35cfda698bba127bbaf"
     },
     "dispatch/horizons.jsonl": {
-      "byte_length": 426265,
+      "byte_length": 431214,
       "closed": false,
       "day": null,
       "first_manifested_at": "2026-09-28T20:29:36.243164Z",
       "immutable": false,
-      "line_count": 961,
+      "line_count": 971,
       "record_level": false,
       "record_type": "horizon_log",
       "recovery_id": null,
-      "sha256_prefix": "915e8163d733e14d7f02bc1861bdd0b98842035d617566d1ed1f60c292b1a167"
+      "sha256_prefix": "920dd9a00548b9c16aa59bb2ee9ec5f42d80c0f349c1036e95f56c73f2a1d74a"
     },
     "dispatch/settle_runs.jsonl": {
       "byte_length": 65755,
@@ -3973,16 +3973,16 @@
       "sha256_prefix": "d81c51a4563ead5d0dcbc838f704ff41fa5e9a546b70c82441868665c5864f8c"
     },
     "dispatch/slate_log/2026-10-11.jsonl": {
-      "byte_length": 167019,
+      "byte_length": 169752,
       "closed": false,
       "day": "2026-10-11",
       "first_manifested_at": "2026-10-11T00:26:44.043028Z",
       "immutable": false,
-      "line_count": 60,
+      "line_count": 61,
       "record_level": false,
       "record_type": "slate_reprice_log",
       "recovery_id": null,
-      "sha256_prefix": "5738b86aec465da6f5fbde8d0225e3735aaa99d52f322360c18428cceccddd11"
+      "sha256_prefix": "55dd7aa5c6ff2bebeaf1b60e0be1f8d0bc52be6bdaae7ba8b531eb4457fefdb9"
     },
     "fixtures/espn/2026-09-28/espn-034707.json": {
       "byte_length": 157757,
@@ -6556,6 +6556,18 @@
       "recovery_id": null,
       "sha256_prefix": "5d7ec40b1bcf83827b11cc6993133892d642c7733b4d473b612de03cbf5b1590"
     },
+    "lineups/2026-10-11/eng.1.jsonl": {
+      "byte_length": 14275,
+      "closed": false,
+      "day": "2026-10-11",
+      "first_manifested_at": "2026-10-11T12:32:35.761490Z",
+      "immutable": false,
+      "line_count": 2,
+      "record_level": true,
+      "record_type": "lineup",
+      "recovery_id": null,
+      "sha256_prefix": "e56edaa635abc464d6df6fe0ebe9b358549a4d326fe0c5c737694e6d74d3eb34"
+    },
     "lineups/2026-10-11/esp.1.jsonl": {
       "byte_length": 16481,
       "closed": false,
@@ -6568,17 +6580,29 @@
       "recovery_id": null,
       "sha256_prefix": "411bb672f3f2449d010b119c64cf54c66a18e13c440008b1e51aa2f3e3fdc5c2"
     },
+    "lineups/2026-10-11/fra.1.jsonl": {
+      "byte_length": 7175,
+      "closed": false,
+      "day": "2026-10-11",
+      "first_manifested_at": "2026-10-11T12:32:35.761754Z",
+      "immutable": false,
+      "line_count": 1,
+      "record_level": true,
+      "record_type": "lineup",
+      "recovery_id": null,
+      "sha256_prefix": "f1a921b6eab47803678658e4c42dde2f40ba35ed375dc3e065ef036006287bef"
+    },
     "lineups/2026-10-11/ita.1.jsonl": {
-      "byte_length": 33560,
+      "byte_length": 58947,
       "closed": false,
       "day": "2026-10-11",
       "first_manifested_at": "2026-10-11T10:02:27.198125Z",
       "immutable": false,
-      "line_count": 4,
+      "line_count": 7,
       "record_level": true,
       "record_type": "lineup",
       "recovery_id": null,
-      "sha256_prefix": "cc2b8afa9324247471d571a9c165c81c626614d0eb4a2f7637fbf3637c70d3bf"
+      "sha256_prefix": "f1e13ec1dd1f687571387f2b43413c7e83370d65403bd777f72b3d99901cd174"
     },
     "lineups/2026-10-11/jpn.1.jsonl": {
       "byte_length": 21468,
@@ -27140,6 +27164,18 @@
       "recovery_id": null,
       "sha256_prefix": "234604391c9fc63945b90b6d551c0b670163735306e64a55691ce066ecc1b5ff"
     },
+    "snapshots/2026-10-11/cap-20261011T123133Z.jsonl": {
+      "byte_length": 417339,
+      "closed": false,
+      "day": "2026-10-11",
+      "first_manifested_at": "2026-10-11T12:32:35.924363Z",
+      "immutable": false,
+      "line_count": 513,
+      "record_level": false,
+      "record_type": "kalshi_snapshot",
+      "recovery_id": null,
+      "sha256_prefix": "22b1546aa6472d48d776fead9e5cc2b09f2236b0cfcc525438c00e827bc3456c"
+    },
     "weather/2026-09-28.jsonl": {
       "byte_length": 42237,
       "closed": true,
@@ -27284,5 +27320,5 @@
     }
   },
   "manifest_version": 1,
-  "updated_at": "2026-10-11T12:28:45.486738Z"
+  "updated_at": "2026-10-11T12:32:35.925215Z"
 }
