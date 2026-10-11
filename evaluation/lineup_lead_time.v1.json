@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-11T05:41:45.633612Z",
+  "as_of": "2026-10-11T11:09:44.842213Z",
   "by_competition": {
     "arg.1": {
       "fixtures": 17,
@@ -32,7 +32,7 @@
       "with_xi_ge_20min": 0
     },
     "chn.1": {
-      "fixtures": 5,
+      "fixtures": 6,
       "median_lead_minutes": null,
       "with_pre_kickoff_xi": 0,
       "with_xi_ge_20min": 0
@@ -62,7 +62,7 @@
       "with_xi_ge_20min": 6
     },
     "eng.2": {
-      "fixtures": 11,
+      "fixtures": 12,
       "median_lead_minutes": null,
       "with_pre_kickoff_xi": 0,
       "with_xi_ge_20min": 0
@@ -146,10 +146,10 @@
       "with_xi_ge_20min": 0
     },
     "ita.1": {
-      "fixtures": 3,
-      "median_lead_minutes": 28.22386715,
-      "with_pre_kickoff_xi": 3,
-      "with_xi_ge_20min": 3
+      "fixtures": 4,
+      "median_lead_minutes": 28.248512083333335,
+      "with_pre_kickoff_xi": 4,
+      "with_xi_ge_20min": 4
     },
     "ita.2": {
       "fixtures": 7,
@@ -158,9 +158,9 @@
       "with_xi_ge_20min": 0
     },
     "jpn.1": {
-      "fixtures": 7,
-      "median_lead_minutes": 45.059465958333334,
-      "with_pre_kickoff_xi": 2,
+      "fixtures": 10,
+      "median_lead_minutes": 22.888093291666667,
+      "with_pre_kickoff_xi": 4,
       "with_xi_ge_20min": 2
     },
     "ksa.1": {
@@ -176,7 +176,7 @@
       "with_xi_ge_20min": 2
     },
     "ned.1": {
-      "fixtures": 5,
+      "fixtures": 6,
       "median_lead_minutes": 36.340252674999995,
       "with_pre_kickoff_xi": 2,
       "with_xi_ge_20min": 1
@@ -200,7 +200,7 @@
       "with_xi_ge_20min": 2
     },
     "sco.1": {
-      "fixtures": 4,
+      "fixtures": 5,
       "median_lead_minutes": null,
       "with_pre_kickoff_xi": 0,
       "with_xi_ge_20min": 0
@@ -212,7 +212,7 @@
       "with_xi_ge_20min": 0
     },
     "tur.1": {
-      "fixtures": 5,
+      "fixtures": 6,
       "median_lead_minutes": null,
       "with_pre_kickoff_xi": 0,
       "with_xi_ge_20min": 0
@@ -5649,7 +5649,7 @@
       "competition": "chn.1",
       "espn_event_id": "401861476",
       "final_state": "unconfirmed",
-      "kickoff_passed": false,
+      "kickoff_passed": true,
       "lead_time_seconds": null,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-10-11T10:00:00+00:00",
@@ -5805,7 +5805,7 @@
       "competition": "eng.2",
       "espn_event_id": "401880237",
       "final_state": "unconfirmed",
-      "kickoff_passed": false,
+      "kickoff_passed": true,
       "lead_time_seconds": null,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-10-11T11:00:00+00:00",
@@ -6005,16 +6005,16 @@
       "xi_first_observed_at": null
     },
     {
-      "capture_attempts": 3,
+      "capture_attempts": 6,
       "competition": "ita.1",
       "espn_event_id": "401874940",
-      "final_state": "unconfirmed",
-      "kickoff_passed": false,
-      "lead_time_seconds": null,
-      "observed_before_kickoff": false,
+      "final_state": "post_hoc",
+      "kickoff_passed": true,
+      "lead_time_seconds": 1696.389421,
+      "observed_before_kickoff": true,
       "scheduled_kickoff_utc": "2026-10-11T10:30:00+00:00",
       "source": "espn_site_api",
-      "xi_first_observed_at": null
+      "xi_first_observed_at": "2026-10-11T10:01:43.610579+00:00"
     },
     {
       "capture_attempts": 3,
@@ -6101,47 +6101,47 @@
       "xi_first_observed_at": null
     },
     {
-      "capture_attempts": 4,
+      "capture_attempts": 5,
       "competition": "jpn.1",
       "espn_event_id": "401877576",
-      "final_state": "unconfirmed",
+      "final_state": "post_hoc",
       "kickoff_passed": true,
-      "lead_time_seconds": null,
+      "lead_time_seconds": -3556.869415,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-10-11T05:00:00+00:00",
       "source": "espn_site_api",
-      "xi_first_observed_at": null
+      "xi_first_observed_at": "2026-10-11T05:59:16.869415+00:00"
     },
     {
-      "capture_attempts": 4,
+      "capture_attempts": 5,
       "competition": "jpn.1",
       "espn_event_id": "401877618",
-      "final_state": "unconfirmed",
-      "kickoff_passed": false,
-      "lead_time_seconds": null,
-      "observed_before_kickoff": false,
+      "final_state": "confirmed",
+      "kickoff_passed": true,
+      "lead_time_seconds": 43.070643,
+      "observed_before_kickoff": true,
       "scheduled_kickoff_utc": "2026-10-11T06:00:00+00:00",
       "source": "espn_site_api",
-      "xi_first_observed_at": null
+      "xi_first_observed_at": "2026-10-11T05:59:16.929357+00:00"
     },
     {
-      "capture_attempts": 4,
+      "capture_attempts": 5,
       "competition": "jpn.1",
       "espn_event_id": "401877574",
-      "final_state": "unconfirmed",
-      "kickoff_passed": false,
-      "lead_time_seconds": null,
-      "observed_before_kickoff": false,
+      "final_state": "confirmed",
+      "kickoff_passed": true,
+      "lead_time_seconds": 42.975466,
+      "observed_before_kickoff": true,
       "scheduled_kickoff_utc": "2026-10-11T06:00:00+00:00",
       "source": "espn_site_api",
-      "xi_first_observed_at": null
+      "xi_first_observed_at": "2026-10-11T05:59:17.024534+00:00"
     },
     {
       "capture_attempts": 4,
       "competition": "jpn.1",
       "espn_event_id": "401877608",
       "final_state": "unconfirmed",
-      "kickoff_passed": false,
+      "kickoff_passed": true,
       "lead_time_seconds": null,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-10-11T07:00:00+00:00",
@@ -6197,16 +6197,16 @@
       "xi_first_observed_at": null
     },
     {
-      "capture_attempts": 1,
+      "capture_attempts": 2,
       "competition": "mex.1",
       "espn_event_id": "401876950",
-      "final_state": "unconfirmed",
+      "final_state": "post_hoc",
       "kickoff_passed": true,
-      "lead_time_seconds": null,
+      "lead_time_seconds": -10157.670568,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-10-11T03:10:00+00:00",
       "source": "espn_site_api",
-      "xi_first_observed_at": null
+      "xi_first_observed_at": "2026-10-11T05:59:17.670568+00:00"
     },
     {
       "capture_attempts": 1,
@@ -6249,7 +6249,7 @@
       "competition": "ned.1",
       "espn_event_id": "401875587",
       "final_state": "unconfirmed",
-      "kickoff_passed": false,
+      "kickoff_passed": true,
       "lead_time_seconds": null,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-10-11T10:15:00+00:00",
@@ -6257,22 +6257,22 @@
       "xi_first_observed_at": null
     }
   ],
-  "fixtures_kickoff_passed": 451,
+  "fixtures_kickoff_passed": 460,
   "fixtures_tracked": 546,
   "lead_time_minutes": {
     "max": 57.43608363333333,
-    "median": 28.623734116666665,
+    "median": 28.53238064166667,
     "min": 0.5079127666666666,
-    "n": 139,
-    "p10": 13.340185133333335,
-    "p90": 48.220894990000005
+    "n": 142,
+    "p10": 11.537670465000001,
+    "p90": 47.95775999166667
   },
-  "post_kickoff_first_xi": 110,
+  "post_kickoff_first_xi": 112,
   "schema": "lineup_lead_time_v1",
-  "share_pre_kickoff_xi": 0.3082039911308204,
-  "share_xi_ge_20min": 0.24168514412416853,
+  "share_pre_kickoff_xi": 0.30869565217391304,
+  "share_xi_ge_20min": 0.2391304347826087,
   "target": "audit \u00a7I1: >= 90% of priced fixtures with a confirmed XI captured >= 20 min before kickoff",
-  "with_any_xi": 249,
-  "with_pre_kickoff_xi": 139,
-  "with_xi_ge_20min_before_kickoff": 109
+  "with_any_xi": 254,
+  "with_pre_kickoff_xi": 142,
+  "with_xi_ge_20min_before_kickoff": 110
 }
