@@ -1,49 +1,42 @@
 {
-  "as_of": "2026-10-11T17:42:39.062584+00:00",
-  "events": 13,
+  "as_of": "2026-10-11T17:57:37.257693+00:00",
+  "events": 14,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 13,
+  "fixtures_mapped": 14,
   "health": {
-    "reasons": [
-      "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=1"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
     "arg.1",
-    "fra.1",
-    "ita.1"
+    "bra.1",
+    "esp.1"
   ],
   "lineups": {
-    "captured": 3,
-    "events": 9,
+    "captured": 2,
+    "events": 12,
     "failures": [],
     "published_post": 2,
-    "published_pre_kickoff": 1,
-    "unchanged": 6,
-    "unpublished": 6
+    "published_pre_kickoff": 0,
+    "unchanged": 10,
+    "unpublished": 10
   },
   "map_proposals": {},
   "map_version": "4",
-  "results_appended": 5,
+  "results_appended": 2,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 3,
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 5,
-    "events": 9,
-    "failures": [
-      "401876441: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=48.1111&longitude=-1.6743&hourly=te",
-      "401876440: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Paris&count=5&language=en&forma",
-      "401874789: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=44.6983&longitude=10.6312&hourly=te"
-    ],
+    "captured": 12,
+    "events": 12,
+    "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 1,
-    "stopped": "consecutive_failures"
+    "skipped": 0,
+    "stopped": null
   }
 }
