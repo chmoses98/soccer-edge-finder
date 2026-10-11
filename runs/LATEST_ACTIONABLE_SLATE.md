@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261011T160126Z-dcdfc3` · generated 2026-10-11T16:01:26.994003Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261011T161629Z-b88cc7` · generated 2026-10-11T16:16:29.739398Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-11T15:58:51.965937Z (CURRENT at publish; CURRENT until 2026-10-11T16:18:51.965937Z, STALE after 2026-10-11T16:28:51.965937Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-11T16:13:52.827812Z (CURRENT at publish; CURRENT until 2026-10-11T16:33:52.827812Z, STALE after 2026-10-11T16:43:52.827812Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-11T15:27:40.821571Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.62s
+model board generated 2026-10-11T15:27:40.821571Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.63s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-11T15:27:40.821571Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-11T16:30:00Z | Real Betis vs Osasuna (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
+| 2026-10-11T16:30:00Z | Real Betis vs Osasuna (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
 | 2026-10-11T17:45:00Z | San Lorenzo vs Deportivo Riestra (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-11T18:45:00Z | Troyes vs Marseille (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 0 |
 | 2026-10-11T18:45:00Z | Cagliari vs Juventus (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
@@ -43,7 +43,7 @@ model board generated 2026-10-11T15:27:40.821571Z · simulations this update: 0 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Cagliari vs Juventus | Result: away | no | 0.3900 | 0.615 [0.463, 0.760] | +0.208 | +0.114 | 0.5 | - | * | RESEARCH_CANDIDATE |
-| Cagliari vs Juventus | Result: home | yes | 0.1400 | 0.321 [0.189, 0.477] | +0.173 | +0.080 | 0.21 | - |  | RESEARCH_CANDIDATE |
+| Cagliari vs Juventus | Result: home | yes | 0.1500 | 0.321 [0.189, 0.477] | +0.162 | +0.070 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | Result: home | yes | 0.2700 | 0.459 [0.301, 0.631] | +0.175 | +0.063 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | Result: away | no | 0.5300 | 0.702 [0.557, 0.840] | +0.154 | +0.062 | 0.59 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | First team to score: away | no | 0.4500 | 0.592 [0.468, 0.722] | +0.125 | +0.043 | 0.49 | - | * | RESEARCH_CANDIDATE |
@@ -77,8 +77,8 @@ model board generated 2026-10-11T15:27:40.821571Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 699
-action_NO_QUOTE: 1404
+action_NO_EDGE: 701
+action_NO_QUOTE: 1402
 action_RESEARCH_CANDIDATE: 31
 contract_sides: 2134
 fixtures: 25
@@ -86,6 +86,6 @@ fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
-Removed (kicked off): 4
+Removed (kicked off): 3
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
