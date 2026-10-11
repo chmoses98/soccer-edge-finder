@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261011T074343Z-65f9c1` · generated 2026-10-11T07:43:43.447024Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261011T075844Z-ff797e` · generated 2026-10-11T07:58:44.121003Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-11T07:41:11.505239Z (CURRENT at publish; CURRENT until 2026-10-11T08:01:11.505239Z, STALE after 2026-10-11T08:11:11.505239Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-11T07:56:12.194048Z (CURRENT at publish; CURRENT until 2026-10-11T08:16:12.194048Z, STALE after 2026-10-11T08:26:12.194048Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-11T05:58:19.730371Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.23s
 
@@ -58,8 +58,8 @@ model board generated 2026-10-11T05:58:19.730371Z · simulations this update: 0 
 | Cagliari vs Juventus | Result: away | no | 0.3900 | 0.615 [0.463, 0.760] | +0.208 | +0.114 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Cagliari vs Juventus | Result: home | yes | 0.1400 | 0.321 [0.189, 0.477] | +0.173 | +0.080 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Hull City vs Everton | Result: away | no | 0.5400 | 0.735 [0.550, 0.891] | +0.178 | +0.067 | 0.6 | - | * | RESEARCH_CANDIDATE |
-| Pumas UNAM vs Cruz Azul | Result: away | no | 0.5200 | 0.696 [0.552, 0.829] | +0.159 | +0.066 | 0.58 | - | * | RESEARCH_CANDIDATE |
-| Pumas UNAM vs Cruz Azul | Result: home | yes | 0.2700 | 0.454 [0.298, 0.622] | +0.170 | +0.062 | 0.33 | - |  | RESEARCH_CANDIDATE |
+| Pumas UNAM vs Cruz Azul | Result: home | yes | 0.2700 | 0.454 [0.298, 0.622] | +0.170 | +0.062 | 0.33 | - | * | RESEARCH_CANDIDATE |
+| Pumas UNAM vs Cruz Azul | Result: away | no | 0.5300 | 0.696 [0.552, 0.829] | +0.149 | +0.056 | 0.58 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | First team to score: away | no | 0.4500 | 0.590 [0.468, 0.712] | +0.123 | +0.043 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Necaxa | away team total over 0.5 | no | 0.3400 | 0.473 [0.345, 0.596] | +0.118 | +0.041 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | away wins by more than 1.5 | no | 0.7600 | 0.863 [0.764, 0.940] | +0.090 | +0.036 | 0.79 | - | * | RESEARCH_CANDIDATE |
