@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261011T151237Z-c8d9e4` · generated 2026-10-11T15:12:37.300899Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
+slate `slate-20261011T151631Z-2380cb` · generated 2026-10-11T15:16:31.439380Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-11T15:10:02.492936Z (CURRENT at publish; CURRENT until 2026-10-11T15:30:02.492936Z, STALE after 2026-10-11T15:40:02.492936Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-11T15:13:53.638374Z (CURRENT at publish; CURRENT until 2026-10-11T15:33:53.638374Z, STALE after 2026-10-11T15:43:53.638374Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-11T15:01:39.372924Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.78s
+model board generated 2026-10-11T15:01:39.372924Z · simulations this update: 0 · Odds API calls this update: 2 (credits 6) · reprice 0.63s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,9 +12,8 @@ model board generated 2026-10-11T15:01:39.372924Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-11T15:15:00Z | Rennes vs AJ Auxerre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
-| 2026-10-11T15:30:00Z | Liverpool vs Manchester City (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
-| 2026-10-11T15:30:00Z | SC Freiburg vs Schalke 04 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
+| 2026-10-11T15:30:00Z | Liverpool vs Manchester City (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
+| 2026-10-11T15:30:00Z | SC Freiburg vs Schalke 04 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
 | 2026-10-11T16:00:00Z | Sassuolo vs AC Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
 | 2026-10-11T16:30:00Z | Real Betis vs Osasuna (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-11T17:45:00Z | San Lorenzo vs Deportivo Riestra (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
@@ -60,9 +59,9 @@ model board generated 2026-10-11T15:01:39.372924Z · simulations this update: 0 
 | St. Louis City SC vs LA Galaxy | away team total over 0.5 | no | 0.3200 | 0.447 [0.319, 0.568] | +0.112 | +0.029 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs LA Galaxy | away team total over 1.5 | no | 0.6900 | 0.796 [0.683, 0.889] | +0.092 | +0.027 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Necaxa | btts | no | 0.4300 | 0.557 [0.423, 0.675] | +0.110 | +0.026 | 0.45 | - | * | RESEARCH_CANDIDATE |
-| Pumas UNAM vs Cruz Azul | away team total over 1.5 | no | 0.5000 | 0.636 [0.476, 0.775] | +0.119 | +0.025 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | away wins by more than 2.5 | no | 0.9000 | 0.951 [0.902, 0.985] | +0.044 | +0.022 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Necaxa | away team total over 1.5 | no | 0.7200 | 0.819 [0.705, 0.913] | +0.085 | +0.019 | 0.73 | - |  | RESEARCH_CANDIDATE |
+| Pumas UNAM vs Cruz Azul | away team total over 1.5 | no | 0.5100 | 0.636 [0.476, 0.775] | +0.109 | +0.015 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | away team total over 2.5 | no | 0.7700 | 0.854 [0.742, 0.938] | +0.071 | +0.015 | 0.78 | - |  | RESEARCH_CANDIDATE |
 | Grêmio vs Internacional | Result: away | no | 0.6350 | 0.739 [0.620, 0.852] | +0.088 | +0.014 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | away team total over 0.5 | no | 0.1900 | 0.291 [0.173, 0.409] | +0.091 | +0.012 | 0.2 | - |  | RESEARCH_CANDIDATE |
@@ -83,11 +82,11 @@ model board generated 2026-10-11T15:01:39.372924Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 721
+action_NO_EDGE: 715
 action_NO_QUOTE: 1462
 action_RESEARCH_CANDIDATE: 33
-contract_sides: 2216
-fixtures: 29
+contract_sides: 2210
+fixtures: 28
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
