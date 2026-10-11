@@ -10683,13 +10683,13 @@
       "fixture_id": "fx:bra.serie_a:2026:bra.bahia:bra.mirassol",
       "fixtures_observed_at": "2026-10-11T19:00:32.574484Z",
       "home": "bra.bahia",
-      "input_fingerprint": "sha256:c77e190bf5a0d47d02a8ea84ae2bf26097bc2fecad418a88e1981493e6d0b0bf",
+      "input_fingerprint": "sha256:804cbd336904cffa278f1e9cd75e29ac8ec500c21ed1195b55376c5811e9336f",
       "inputs": {
         "competition_id": "bra.serie_a",
         "draws_per_world": 100,
         "engine_version": "world_sim_v2",
         "kickoff_utc": "2026-10-11T22:30:00Z",
-        "lineup_key": "none",
+        "lineup_key": "sha256:2b0596357b6aaf6aaa1d96cceb3a8c9b6679a503ec57fa42aa92d139b2283e10",
         "model_family": "data_only.world_sim_v2",
         "model_version": "dc_laplace_v1",
         "n_worlds": 1000,
@@ -10700,11 +10700,41 @@
         "worlds_version": "worlds_v1"
       },
       "lineup": {
-        "checked_at": "2026-10-11T21:27:02.349503Z",
-        "key": "none",
-        "last_change_at": "2026-10-10T23:39:56.214043Z",
-        "state": "unconfirmed"
+        "checked_at": "2026-10-11T22:00:44.092412Z",
+        "key": "sha256:2b0596357b6aaf6aaa1d96cceb3a8c9b6679a503ec57fa42aa92d139b2283e10",
+        "last_change_at": "2026-10-11T22:00:44.092412Z",
+        "state": "confirmed"
       },
+      "lineup_history": [
+        {
+          "lineup_key": "none",
+          "lineup_state": "unconfirmed",
+          "model_generated_at": "2026-10-11T21:27:08.010295Z",
+          "scripts": {
+            "primary": "HOME_CONTROL",
+            "secondary": "TIGHT_LOW_EVENT",
+            "shares": [
+              0.32554,
+              0.10619,
+              0.25104,
+              0.13344,
+              0.07971,
+              0.10409
+            ],
+            "taxonomy_version": "soccer_scripts_v1"
+          },
+          "sim_key": "sha256:b94bf09afa0c4113941eba08f72d8e401d4c6e6eba3c1d59c801f669e7b361d1",
+          "summary": {
+            "mean_away_goals": 0.99013,
+            "mean_home_goals": 1.75053,
+            "p_away": 0.21384,
+            "p_btts": 0.50518,
+            "p_draw": 0.24644,
+            "p_home": 0.53972,
+            "p_over_2_5": 0.50693
+          }
+        }
+      ],
       "match_context": {
         "aggregate": {
           "source": "no aggregate (not a second leg)",
@@ -10930,8 +10960,8 @@
         "source": "production posterior (dc_laplace_v1) that priced this fixture",
         "version": "dc_matchup_v1"
       },
-      "model_fitted_at": "2026-10-11T21:27:07.143547Z",
-      "model_generated_at": "2026-10-11T21:27:08.010295Z",
+      "model_fitted_at": "2026-10-11T22:00:48.279515Z",
+      "model_generated_at": "2026-10-11T22:00:49.236980Z",
       "results_observed_at": "2026-10-11T17:08:21.752266Z",
       "scripts": {
         "contract_gaps": {},
@@ -11548,8 +11578,8 @@
           }
         }
       },
-      "sim_key": "sha256:b94bf09afa0c4113941eba08f72d8e401d4c6e6eba3c1d59c801f669e7b361d1",
-      "source_run_id": "run-20261011T212708Z-eba760",
+      "sim_key": "sha256:1fa3c87149d3a6354a659f25b1f88b889c97451801ce9c4036116e2751d2fc19",
+      "source_run_id": "run-20261011T220049Z-0230b0",
       "summary": {
         "mean_away_goals": 0.99013,
         "mean_home_goals": 1.75053,
@@ -111072,7 +111102,7 @@
       },
       "event_name": "Atl\u00e9tico San Luis vs Santos Laguna",
       "fixture_id": "fx:mex.liga_mx:2026:mex.san_luis:mex.santos_laguna",
-      "fixtures_observed_at": "2026-10-11T19:40:26.080101Z",
+      "fixtures_observed_at": "2026-10-11T19:00:32.574484Z",
       "home": "mex.san_luis",
       "input_fingerprint": "sha256:86d4d67d46a7befff292be2c37b47b634a87f10eb30757b0036c09385bfa95fb",
       "inputs": {
@@ -111091,7 +111121,7 @@
         "worlds_version": "worlds_v1"
       },
       "lineup": {
-        "checked_at": "2026-10-10T23:40:03.904493Z",
+        "checked_at": "2026-10-11T22:00:42.537981Z",
         "key": "none",
         "last_change_at": "2026-10-10T23:40:03.904493Z",
         "state": "unconfirmed"
@@ -111321,9 +111351,9 @@
         "source": "production posterior (dc_laplace_v1) that priced this fixture",
         "version": "dc_matchup_v1"
       },
-      "model_fitted_at": "2026-10-11T19:40:26.646413Z",
-      "model_generated_at": "2026-10-11T19:54:40.712705Z",
-      "results_observed_at": "2026-10-11T19:40:18.744588Z",
+      "model_fitted_at": "2026-10-11T22:00:48.264395Z",
+      "model_generated_at": "2026-10-11T22:00:49.236980Z",
+      "results_observed_at": "2026-10-11T17:08:21.752266Z",
       "scripts": {
         "contract_gaps": {},
         "evidence": {
@@ -111940,7 +111970,7 @@
         }
       },
       "sim_key": "sha256:ff0cdc877c5cd3e3e9b62e1ff8313cc5429b8bbba7a9540d0578d3538088fb6c",
-      "source_run_id": "run-20261011T195440Z-b4379d",
+      "source_run_id": "run-20261011T220049Z-0230b0",
       "summary": {
         "mean_away_goals": 1.02004,
         "mean_home_goals": 1.68184,
@@ -116535,7 +116565,7 @@
       },
       "event_name": "St. Louis City SC vs LA Galaxy",
       "fixture_id": "fx:usa.mls:2026:usa.st_louis_city:usa.la_galaxy",
-      "fixtures_observed_at": "2026-10-11T19:40:26.080101Z",
+      "fixtures_observed_at": "2026-10-11T19:00:32.574484Z",
       "home": "usa.st_louis_city",
       "input_fingerprint": "sha256:93b12ee04fa17ff161cbb0aece5354d9b3c7c2c9336e603673f225625f2c428d",
       "inputs": {
@@ -116554,7 +116584,7 @@
         "worlds_version": "worlds_v1"
       },
       "lineup": {
-        "checked_at": "2026-10-10T23:40:08.763006Z",
+        "checked_at": "2026-10-11T22:00:42.537981Z",
         "key": "none",
         "last_change_at": "2026-10-10T23:40:08.763006Z",
         "state": "unconfirmed"
@@ -116784,9 +116814,9 @@
         "source": "production posterior (dc_laplace_v1) that priced this fixture",
         "version": "dc_matchup_v1"
       },
-      "model_fitted_at": "2026-10-11T19:40:26.620840Z",
-      "model_generated_at": "2026-10-11T19:54:40.712705Z",
-      "results_observed_at": "2026-10-11T19:40:18.744588Z",
+      "model_fitted_at": "2026-10-11T22:00:48.250029Z",
+      "model_generated_at": "2026-10-11T22:00:49.236980Z",
+      "results_observed_at": "2026-10-11T17:08:21.752266Z",
       "scripts": {
         "contract_gaps": {},
         "evidence": {
@@ -117402,7 +117432,7 @@
         }
       },
       "sim_key": "sha256:f693f37597d487a8f82c58334925d94adcbc230ebb8fb4fe6683cd6bf920346d",
-      "source_run_id": "run-20261011T195440Z-b4379d",
+      "source_run_id": "run-20261011T220049Z-0230b0",
       "summary": {
         "mean_away_goals": 0.82673,
         "mean_home_goals": 2.27663,
@@ -117414,6 +117444,6 @@
       }
     }
   },
-  "generated_at": "2026-10-11T21:27:08.010295Z",
+  "generated_at": "2026-10-11T22:00:49.236980Z",
   "quantile_levels": "(i + 0.5) / 100, i = 0..99"
 }
