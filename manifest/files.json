@@ -1560,6 +1560,18 @@
       "recovery_id": null,
       "sha256_prefix": "b6e508c9054da18cc4e3ca8b9d7ce28f703838518f0c3e8619ec886cbfc33dec"
     },
+    "claims/odds_api/b1/b111fb9b56cf9659fffefe39e533489f.json": {
+      "byte_length": 206,
+      "closed": true,
+      "day": null,
+      "first_manifested_at": "2026-10-11T01:18:23.008000Z",
+      "immutable": true,
+      "line_count": null,
+      "record_level": false,
+      "record_type": "dispatch_claim",
+      "recovery_id": null,
+      "sha256_prefix": "ace9037b82c3d871c170186b00f46d352b26246c4bdf039b58316444c5a50284"
+    },
     "claims/odds_api/b1/b179efbf4155c5db8658f98708a87d8a.json": {
       "byte_length": 192,
       "closed": true,
@@ -3396,6 +3408,18 @@
       "recovery_id": null,
       "sha256_prefix": "2eedf035331f2f07b0e689b6bdc4d4a437e13d76e45b964a49ec564a47190e8c"
     },
+    "claims/odds_api_calls/2026-10-11/kd-20261011T011500Z-soccer_usa_mls.json": {
+      "byte_length": 331,
+      "closed": true,
+      "day": "2026-10-11",
+      "first_manifested_at": "2026-10-11T01:18:23.012323Z",
+      "immutable": true,
+      "line_count": null,
+      "record_level": false,
+      "record_type": "dispatch_claim",
+      "recovery_id": null,
+      "sha256_prefix": "91b194e6601a4517a6bd9af70025e5415612885ee35c328c3f867f370a2a0e52"
+    },
     "dispatch/heartbeats/2026-09-30.jsonl": {
       "byte_length": 6914,
       "closed": true,
@@ -3541,16 +3565,16 @@
       "sha256_prefix": "b8315fe37a422186447131798e897b3b85b9293a6d6a87893cbf8964231e04fc"
     },
     "dispatch/horizons.jsonl": {
-      "byte_length": 398571,
+      "byte_length": 399057,
       "closed": false,
       "day": null,
       "first_manifested_at": "2026-09-28T20:29:36.243164Z",
       "immutable": false,
-      "line_count": 905,
+      "line_count": 906,
       "record_level": false,
       "record_type": "horizon_log",
       "recovery_id": null,
-      "sha256_prefix": "e5fe9ab66faa5bbe93b4dc07e9c9914bdda6ef67e0e26263a333a4a4b26353d4"
+      "sha256_prefix": "61e73f1b6b1c6e188027b469d5a160193f31a43cc346d22b1d902b50be86c781"
     },
     "dispatch/settle_runs.jsonl": {
       "byte_length": 60619,
@@ -3637,16 +3661,16 @@
       "sha256_prefix": "d81c51a4563ead5d0dcbc838f704ff41fa5e9a546b70c82441868665c5864f8c"
     },
     "dispatch/slate_log/2026-10-11.jsonl": {
-      "byte_length": 20423,
+      "byte_length": 23236,
       "closed": false,
       "day": "2026-10-11",
       "first_manifested_at": "2026-10-11T00:26:44.043028Z",
       "immutable": false,
-      "line_count": 7,
+      "line_count": 8,
       "record_level": false,
       "record_type": "slate_reprice_log",
       "recovery_id": null,
-      "sha256_prefix": "e38998c3801304836946b29ce179bfe206af605e52f85f6d2e5a9a43992b70f8"
+      "sha256_prefix": "87c8c8ee1c336c0d4424d3fd681ff8055a4589f55b5aefddc0906fcd4c70fc5c"
     },
     "fixtures/espn/2026-09-28/espn-034707.json": {
       "byte_length": 157757,
@@ -6382,16 +6406,16 @@
       "sha256_prefix": "f107c187e0120741ff1bf9c2e4b8c5c2eff918ce4f763c0ab2438674cc4598e8"
     },
     "odds_api/budget/2026-10-11.jsonl": {
-      "byte_length": 7405,
+      "byte_length": 9671,
       "closed": false,
       "day": "2026-10-11",
       "first_manifested_at": "2026-10-11T00:26:44.052904Z",
       "immutable": false,
-      "line_count": 10,
+      "line_count": 13,
       "record_level": false,
       "record_type": "odds_api_budget",
       "recovery_id": null,
-      "sha256_prefix": "dd475781f8172e2975533266c8da112d81079d92f6bed464b7d6abaa6647e7ab"
+      "sha256_prefix": "b3945cd2e6d781b254565fc2fe09b0c22e5dea802ba168122ddc2bffcf7b0028"
     },
     "odds_api/raw/2026-09-29/kd-20260929T155452Z-soccer_uefa_nations_league.json.gz": {
       "byte_length": 477,
@@ -7544,6 +7568,18 @@
       "record_type": "odds_api_raw",
       "recovery_id": null,
       "sha256_prefix": "b9ce347dff236d99d27dddede2c8b372a9bd0d128b54e16af46782b08bd96ebe"
+    },
+    "odds_api/raw/2026-10-11/kd-20261011T011500Z-soccer_usa_mls.json.gz": {
+      "byte_length": 553,
+      "closed": true,
+      "day": "2026-10-11",
+      "first_manifested_at": "2026-10-11T01:18:23.027646Z",
+      "immutable": true,
+      "line_count": null,
+      "record_level": false,
+      "record_type": "odds_api_raw",
+      "recovery_id": null,
+      "sha256_prefix": "7a7137c2cacb4a044e70ff0d1eefde8926fd8fe26e4649d4a7570959008f57fe"
     },
     "predictions/2026-09-27/predictions.jsonl": {
       "byte_length": 361328,
@@ -8793,6 +8829,18 @@
       "record_type": "reference",
       "recovery_id": null,
       "sha256_prefix": "d10b06104bd5f58ee62618214fb0cc204474d4abe75205bcfc3996ed69811f62"
+    },
+    "reference/2026-10-11/oddsapi-kd-20261011T011500Z.jsonl": {
+      "byte_length": 7547,
+      "closed": false,
+      "day": "2026-10-11",
+      "first_manifested_at": "2026-10-11T01:18:23.043099Z",
+      "immutable": false,
+      "line_count": 7,
+      "record_level": false,
+      "record_type": "reference",
+      "recovery_id": null,
+      "sha256_prefix": "fa6b1a755aabcdedef44c0dbdbf9fb966ebdf089d765f918cafdaea6b30bb035"
     },
     "results/espn/arg.1.jsonl": {
       "byte_length": 770476,
@@ -25388,6 +25436,18 @@
       "recovery_id": null,
       "sha256_prefix": "4d74774b153b8407c7f34d7a3f9a8e2febeba2afba83f457057819e503f7b90f"
     },
+    "snapshots/2026-10-11/cap-20261011T011731Z.jsonl": {
+      "byte_length": 1311142,
+      "closed": false,
+      "day": "2026-10-11",
+      "first_manifested_at": "2026-10-11T01:18:23.115434Z",
+      "immutable": false,
+      "line_count": 1616,
+      "record_level": false,
+      "record_type": "kalshi_snapshot",
+      "recovery_id": null,
+      "sha256_prefix": "a2fd0da58f61e215198401ca74d025c1ff22f09f43aa38a7fc0528f480142950"
+    },
     "weather/2026-09-28.jsonl": {
       "byte_length": 42237,
       "closed": true,
@@ -25532,5 +25592,5 @@
     }
   },
   "manifest_version": 1,
-  "updated_at": "2026-10-11T01:05:26.059646Z"
+  "updated_at": "2026-10-11T01:18:23.115826Z"
 }
