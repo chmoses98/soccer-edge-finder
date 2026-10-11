@@ -1,10 +1,10 @@
 {
  "counts": {
-  "NO_SPORT_KEY": 19,
-  "PINNACLE_VALID_CLOSE": 83,
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 70,
+  "PINNACLE_VALID_CLOSE": 87,
+  "MISSED_DISPATCHER_CLOSE": 32,
   "PINNACLE_QUOTED_NOTHING": 15,
-  "MISSED_DISPATCHER_CLOSE": 32
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 71,
+  "NO_SPORT_KEY": 19
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.sarmiento": {
@@ -62,7 +62,17 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261003T194500Z"
   },
+  "fx:arg.primera:2026:arg.platense:arg.argentinos_juniors": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261011T194348Z"
+  },
   "fx:arg.primera:2026:arg.river_plate:arg.estudiantes_rio_cuarto": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:arg.primera:2026:arg.rosario_central:arg.independiente_rivadavia": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
@@ -112,10 +122,20 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261008T001405Z"
   },
+  "fx:bra.serie_a:2026:bra.flamengo:bra.fluminense": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261011T201500Z"
+  },
   "fx:bra.serie_a:2026:bra.fluminense:bra.coritiba": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261009T001313Z"
+  },
+  "fx:bra.serie_a:2026:bra.gremio:bra.internacional": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261011T201500Z"
   },
   "fx:bra.serie_a:2026:bra.internacional:bra.corinthians": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -126,6 +146,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261009T001313Z"
+  },
+  "fx:bra.serie_a:2026:bra.palmeiras:bra.corinthians": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261011T201500Z"
   },
   "fx:bra.serie_a:2026:bra.remo:bra.gremio": {
    "state": "PINNACLE_VALID_CLOSE",
