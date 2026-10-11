@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261011T050737Z-b7dffe` · generated 2026-10-11T05:07:37.368160Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261011T052237Z-ca5fb8` · generated 2026-10-11T05:22:37.326997Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-11T05:05:05.244221Z (CURRENT at publish; CURRENT until 2026-10-11T05:25:05.244221Z, STALE after 2026-10-11T05:35:05.244221Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-11T05:20:05.249208Z (CURRENT at publish; CURRENT until 2026-10-11T05:40:05.249208Z, STALE after 2026-10-11T05:50:05.249208Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-11T01:42:36.106649Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.25s
+model board generated 2026-10-11T01:42:36.106649Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.24s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -51,7 +51,7 @@ model board generated 2026-10-11T01:42:36.106649Z · simulations this update: 0 
 | 2026-10-12T22:30:00Z | Chapecoense vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-13T00:00:00Z | Red Bull Bragantino vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (35; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (36; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -78,25 +78,26 @@ model board generated 2026-10-11T01:42:36.106649Z · simulations this update: 0 
 | Pumas UNAM vs Cruz Azul | away team total over 0.5 | no | 0.1800 | 0.289 [0.171, 0.404] | +0.099 | +0.021 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | away wins by more than 2.5 | no | 0.9000 | 0.949 [0.901, 0.985] | +0.043 | +0.019 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Lecce vs Bologna | Result: home | yes | 0.2200 | 0.353 [0.211, 0.513] | +0.121 | +0.019 | 0.23 | - | * | RESEARCH_CANDIDATE |
+| Pachuca vs Necaxa | away team total over 2.5 | no | 0.9100 | 0.951 [0.908, 0.984] | +0.035 | +0.017 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | First-half result: home | yes | 0.2400 | 0.349 [0.228, 0.472] | +0.096 | +0.017 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | Sassuolo vs AC Milan | Result: home | yes | 0.2200 | 0.359 [0.203, 0.525] | +0.127 | +0.017 | 0.23 | - | * | RESEARCH_CANDIDATE |
 | Lecce vs Bologna | Result: away | no | 0.5100 | 0.639 [0.491, 0.780] | +0.112 | +0.017 | 0.52 | - |  | RESEARCH_CANDIDATE |
 | Grêmio vs Internacional | Result: away | no | 0.6200 | 0.734 [0.606, 0.849] | +0.097 | +0.016 | 0.63 | - | * | RESEARCH_CANDIDATE |
+| Palmeiras vs Corinthians | btts | no | 0.5400 | 0.637 [0.525, 0.740] | +0.079 | +0.012 | 0.55 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | home wins by more than 2.5 | yes | 0.0400 | 0.111 [0.039, 0.206] | +0.068 | +0.010 | 0.04 | - |  | RESEARCH_CANDIDATE |
 | Grêmio vs Internacional | away wins by more than 1.5 | no | 0.8400 | 0.898 [0.822, 0.957] | +0.049 | +0.009 | 0.84 | - | * | RESEARCH_CANDIDATE |
 | Sassuolo vs AC Milan | Result: away | no | 0.4800 | 0.611 [0.443, 0.765] | +0.113 | +0.009 | 0.48 | - |  | RESEARCH_CANDIDATE |
 | Torino vs Udinese | Result: draw | no | 0.7000 | 0.753 [0.696, 0.805] | +0.038 | +0.004 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | First half: away wins by more than 1.5 | no | 0.9000 | 0.935 [0.879, 0.981] | +0.029 | +0.004 | 0.9 | - | * | RESEARCH_CANDIDATE |
 | Levante vs Sevilla | Result: home | yes | 0.3500 | 0.477 [0.316, 0.658] | +0.111 | +0.003 | 0.35 | - | * | RESEARCH_CANDIDATE |
-| Palmeiras vs Corinthians | btts | no | 0.5500 | 0.637 [0.525, 0.740] | +0.069 | +0.002 | 0.55 | - | * | RESEARCH_CANDIDATE |
 | Grêmio vs Internacional | Result: home | yes | 0.3300 | 0.449 [0.307, 0.606] | +0.104 | +0.002 | 0.33 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 765
+action_NO_EDGE: 764
 action_NO_QUOTE: 320
-action_RESEARCH_CANDIDATE: 35
+action_RESEARCH_CANDIDATE: 36
 contract_sides: 1120
 fixtures: 38
 fixtures_model_invalidated: 0
