@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261011T194627Z-90fc36` · generated 2026-10-11T19:46:27.108003Z · trigger `kickoff_chain:T-15` · mode `model_refresh_and_reprice`
+slate `slate-20261011T195736Z-18f553` · generated 2026-10-11T19:57:36.384803Z · trigger `kickoff_chain:T-5` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-11T19:43:48.665099Z (CURRENT at publish; CURRENT until 2026-10-11T20:03:48.665099Z, STALE after 2026-10-11T20:13:48.665099Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-11T19:55:00.017500Z (CURRENT at publish; CURRENT until 2026-10-11T20:15:00.017500Z, STALE after 2026-10-11T20:25:00.017500Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-11T19:27:41.118520Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.21s
+model board generated 2026-10-11T19:27:41.118520Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.39s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -32,7 +32,7 @@ model board generated 2026-10-11T19:27:41.118520Z · simulations this update: 0 
 | 2026-10-12T22:30:00Z | Chapecoense vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-13T00:00:00Z | Red Bull Bragantino vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 
-## Candidates on CURRENT prices (28; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (27; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -62,15 +62,14 @@ model board generated 2026-10-11T19:27:41.118520Z · simulations this update: 0 
 | Pachuca vs Necaxa | away team total over 2.5 | no | 0.9200 | 0.952 [0.904, 0.986] | +0.027 | +0.003 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Levante vs Sevilla | Result: home | yes | 0.3500 | 0.477 [0.316, 0.658] | +0.111 | +0.003 | 0.35 | - | * | RESEARCH_CANDIDATE |
 | Atlético San Luis vs Santos Laguna | btts | no | 0.4000 | 0.502 [0.365, 0.629] | +0.086 | +0.002 | 0.4 | - | * | RESEARCH_CANDIDATE |
-| Grêmio vs Internacional | Result: home | yes | 0.3350 | 0.455 [0.312, 0.606] | +0.104 | +0.002 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Necaxa | away wins by more than 1.5 | no | 0.9300 | 0.956 [0.913, 0.987] | +0.021 | +0.002 | 0.93 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 663
+action_NO_EDGE: 664
 action_NO_QUOTE: 277
-action_RESEARCH_CANDIDATE: 28
+action_RESEARCH_CANDIDATE: 27
 contract_sides: 968
 fixtures: 19
 fixtures_model_invalidated: 1
