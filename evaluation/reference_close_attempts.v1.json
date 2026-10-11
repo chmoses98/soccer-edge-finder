@@ -1,10 +1,10 @@
 {
  "counts": {
-  "MISSED_DISPATCHER_CLOSE": 32,
-  "PINNACLE_VALID_CLOSE": 78,
-  "PINNACLE_QUOTED_NOTHING": 15,
   "NO_SPORT_KEY": 19,
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 67
+  "PINNACLE_VALID_CLOSE": 83,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 70,
+  "PINNACLE_QUOTED_NOTHING": 15,
+  "MISSED_DISPATCHER_CLOSE": 32
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.sarmiento": {
@@ -67,6 +67,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:arg.primera:2026:arg.san_lorenzo:arg.deportivo_riestra": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261011T173000Z"
+  },
   "fx:arg.primera:2026:arg.tigre:arg.banfield": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
@@ -86,6 +91,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261003T211500Z"
+  },
+  "fx:bra.serie_a:2026:bra.atletico_mineiro:bra.santos": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261011T184335Z"
   },
   "fx:bra.serie_a:2026:bra.botafogo:bra.vasco": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -402,6 +412,16 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261009T184332Z"
   },
+  "fx:esp.la_liga:2026-27:esp.racing_santander:esp.valencia": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:esp.la_liga:2026-27:esp.racing_santander:esp.valencia:matchday_8": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261011T184335Z"
+  },
   "fx:esp.la_liga:2026-27:esp.rayo_vallecano:esp.athletic_bilbao": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -582,6 +602,16 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261011T145855Z"
   },
+  "fx:fra.ligue_1:2026-27:fra.troyes:fra.marseille": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:fra.ligue_1:2026-27:fra.troyes:fra.marseille:matchday_6": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261011T182836Z"
+  },
   "fx:ger.bundesliga:2026-27:ger.augsburg:ger.bayern": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -671,6 +701,16 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261010T131501Z"
+  },
+  "fx:ita.serie_a:2026-27:ita.cagliari:ita.juventus": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:ita.serie_a:2026-27:ita.cagliari:ita.juventus:matchday_6": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261011T182836Z"
   },
   "fx:ita.serie_a:2026-27:ita.como:ita.roma": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
