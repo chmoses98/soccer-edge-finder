@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261011T144236Z-e353fa` · generated 2026-10-11T14:42:36.178341Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261011T144629Z-8669b7` · generated 2026-10-11T14:46:29.828338Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-11T14:40:04.160473Z (CURRENT at publish; CURRENT until 2026-10-11T15:00:04.160473Z, STALE after 2026-10-11T15:10:04.160473Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-11T14:43:55.072378Z (CURRENT at publish; CURRENT until 2026-10-11T15:03:55.072378Z, STALE after 2026-10-11T15:13:55.072378Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-11T14:27:47.157786Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.75s
+model board generated 2026-10-11T14:27:47.157786Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.61s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -13,8 +13,8 @@ model board generated 2026-10-11T14:27:47.157786Z · simulations this update: 0 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
 | 2026-10-11T15:15:00Z | Rennes vs AJ Auxerre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
-| 2026-10-11T15:30:00Z | Liverpool vs Manchester City (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
-| 2026-10-11T15:30:00Z | SC Freiburg vs Schalke 04 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
+| 2026-10-11T15:30:00Z | Liverpool vs Manchester City (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
+| 2026-10-11T15:30:00Z | SC Freiburg vs Schalke 04 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
 | 2026-10-11T16:00:00Z | Sassuolo vs AC Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 0 |
 | 2026-10-11T16:30:00Z | Real Betis vs Osasuna (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-11T17:45:00Z | San Lorenzo vs Deportivo Riestra (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
