@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261011T161629Z-b88cc7` · generated 2026-10-11T16:16:29.739398Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261011T162735Z-bd09ef` · generated 2026-10-11T16:27:35.632096Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-11T16:13:52.827812Z (CURRENT at publish; CURRENT until 2026-10-11T16:33:52.827812Z, STALE after 2026-10-11T16:43:52.827812Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-11T16:25:00.030667Z (CURRENT at publish; CURRENT until 2026-10-11T16:45:00.030667Z, STALE after 2026-10-11T16:55:00.030667Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-11T15:27:40.821571Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.63s
+model board generated 2026-10-11T15:27:40.821571Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.63s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -38,7 +38,7 @@ model board generated 2026-10-11T15:27:40.821571Z · simulations this update: 0 
 | 2026-10-12T22:30:00Z | Chapecoense vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-13T00:00:00Z | Red Bull Bragantino vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 
-## Candidates on CURRENT prices (31; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (33; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -54,10 +54,12 @@ model board generated 2026-10-11T15:27:40.821571Z · simulations this update: 0 
 | Pumas UNAM vs Cruz Azul | First team to score: home | yes | 0.3900 | 0.528 [0.388, 0.672] | +0.122 | +0.031 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Necaxa | away team total over 0.5 | no | 0.3400 | 0.478 [0.338, 0.612] | +0.123 | +0.030 | 0.36 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs LA Galaxy | away team total over 0.5 | no | 0.3200 | 0.447 [0.319, 0.568] | +0.112 | +0.029 | 0.34 | - | * | RESEARCH_CANDIDATE |
+| Pachuca vs Necaxa | First-half exact score 2-3 (home-away) | no | 0.9700 | 0.999 [1.000, 1.000] | +0.027 | +0.028 | 0.99 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs LA Galaxy | away team total over 1.5 | no | 0.6900 | 0.796 [0.683, 0.889] | +0.092 | +0.027 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Necaxa | btts | no | 0.4300 | 0.557 [0.423, 0.675] | +0.110 | +0.026 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | away wins by more than 2.5 | no | 0.9000 | 0.951 [0.902, 0.985] | +0.044 | +0.022 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Necaxa | away team total over 1.5 | no | 0.7200 | 0.819 [0.705, 0.913] | +0.085 | +0.019 | 0.73 | - |  | RESEARCH_CANDIDATE |
+| Pumas UNAM vs Cruz Azul | First-half exact score 3-2 (home-away) | no | 0.9700 | 0.997 [0.990, 1.000] | +0.025 | +0.018 | 0.98 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | away team total over 1.5 | no | 0.5100 | 0.636 [0.476, 0.775] | +0.109 | +0.015 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | away team total over 2.5 | no | 0.7700 | 0.854 [0.742, 0.938] | +0.071 | +0.015 | 0.78 | - |  | RESEARCH_CANDIDATE |
 | Grêmio vs Internacional | Result: away | no | 0.6350 | 0.739 [0.620, 0.852] | +0.088 | +0.014 | 0.64 | - | * | RESEARCH_CANDIDATE |
@@ -77,9 +79,9 @@ model board generated 2026-10-11T15:27:40.821571Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 701
-action_NO_QUOTE: 1402
-action_RESEARCH_CANDIDATE: 31
+action_NO_EDGE: 700
+action_NO_QUOTE: 1401
+action_RESEARCH_CANDIDATE: 33
 contract_sides: 2134
 fixtures: 25
 fixtures_model_invalidated: 0
