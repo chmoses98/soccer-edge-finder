@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261011T230733Z-d98572` · generated 2026-10-11T23:07:33.881861Z · trigger `kickoff_chain:T-120/T-5` · mode `reprice_only`
+slate `slate-20261011T231808Z-1f725d` · generated 2026-10-11T23:18:08.175705Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-11T23:05:00.018631Z (CURRENT at publish; CURRENT until 2026-10-11T23:25:00.018631Z, STALE after 2026-10-11T23:35:00.018631Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-11T23:15:23.647412Z (CURRENT at publish; CURRENT until 2026-10-11T23:35:23.647412Z, STALE after 2026-10-11T23:45:23.647412Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-11T22:46:21.410825Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.17s
+model board generated 2026-10-11T22:46:21.410825Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.19s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,6 @@ model board generated 2026-10-11T22:46:21.410825Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-11T23:10:00Z | Pachuca vs Necaxa (mex.liga_mx) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 79 | 1 |
 | 2026-10-12T00:30:00Z | Talleres vs Independiente (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-12T01:15:00Z | Pumas UNAM vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-12T16:30:00Z | Atalanta vs Venezia (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 0 |
@@ -24,7 +23,7 @@ model board generated 2026-10-11T22:46:21.410825Z · simulations this update: 0 
 | 2026-10-12T22:30:00Z | Chapecoense vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-13T00:00:00Z | Red Bull Bragantino vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 
-## Candidates on CURRENT prices (22; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (17; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -32,13 +31,10 @@ model board generated 2026-10-11T22:46:21.410825Z · simulations this update: 0 
 | Pumas UNAM vs Cruz Azul | Result: away | no | 0.5300 | 0.702 [0.557, 0.840] | +0.154 | +0.062 | 0.59 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | First team to score: away | no | 0.4500 | 0.592 [0.468, 0.722] | +0.125 | +0.043 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | away wins by more than 1.5 | no | 0.7600 | 0.866 [0.765, 0.944] | +0.093 | +0.040 | 0.8 | - | * | RESEARCH_CANDIDATE |
-| Pachuca vs Necaxa | away team total over 0.5 | no | 0.3300 | 0.478 [0.338, 0.612] | +0.133 | +0.040 | 0.36 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | home wins by more than 1.5 | yes | 0.1100 | 0.251 [0.124, 0.407] | +0.134 | +0.037 | 0.14 | - |  | RESEARCH_CANDIDATE |
-| Pachuca vs Necaxa | btts | no | 0.4200 | 0.557 [0.423, 0.675] | +0.120 | +0.036 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | First-half result: away | no | 0.6400 | 0.752 [0.638, 0.852] | +0.096 | +0.032 | 0.67 | - | * | RESEARCH_CANDIDATE |
-| Pumas UNAM vs Cruz Azul | First team to score: home | yes | 0.3900 | 0.528 [0.388, 0.672] | +0.122 | +0.031 | 0.42 | - |  | RESEARCH_CANDIDATE |
-| Pachuca vs Necaxa | away team total over 1.5 | no | 0.7100 | 0.819 [0.705, 0.913] | +0.095 | +0.029 | 0.73 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | away wins by more than 2.5 | no | 0.9000 | 0.951 [0.902, 0.985] | +0.044 | +0.022 | 0.92 | - |  | RESEARCH_CANDIDATE |
+| Pumas UNAM vs Cruz Azul | First team to score: home | yes | 0.4000 | 0.528 [0.388, 0.672] | +0.111 | +0.021 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | away team total over 1.5 | no | 0.5100 | 0.636 [0.476, 0.775] | +0.109 | +0.015 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | away team total over 2.5 | no | 0.7700 | 0.854 [0.742, 0.938] | +0.071 | +0.015 | 0.78 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | Second-half result: away | no | 0.6300 | 0.731 [0.608, 0.842] | +0.085 | +0.014 | 0.64 | - | * | RESEARCH_CANDIDATE |
@@ -48,17 +44,15 @@ model board generated 2026-10-11T22:46:21.410825Z · simulations this update: 0 
 | Torino vs Udinese | Result: draw | no | 0.7000 | 0.753 [0.696, 0.805] | +0.038 | +0.004 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | First half: away wins by more than 1.5 | no | 0.9000 | 0.936 [0.879, 0.981] | +0.030 | +0.004 | 0.9 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | Exact score 0-2 (home-away) | no | 0.9300 | 0.955 [0.927, 0.980] | +0.021 | +0.003 | 0.93 | - | * | RESEARCH_CANDIDATE |
-| Pachuca vs Necaxa | away team total over 2.5 | no | 0.9200 | 0.952 [0.904, 0.986] | +0.027 | +0.003 | 0.92 | - |  | RESEARCH_CANDIDATE |
-| Pachuca vs Necaxa | away wins by more than 1.5 | no | 0.9300 | 0.956 [0.913, 0.987] | +0.021 | +0.002 | 0.93 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 363
-action_NO_QUOTE: 789
-action_RESEARCH_CANDIDATE: 22
-contract_sides: 1174
-fixtures: 11
+action_NO_EDGE: 231
+action_NO_QUOTE: 768
+action_RESEARCH_CANDIDATE: 17
+contract_sides: 1016
+fixtures: 10
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
