@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261011T183117Z-00d798` · generated 2026-10-11T18:31:17.913894Z · trigger `kickoff_chain:T-120/T-30/T-15` · mode `model_refresh_and_reprice`
+slate `slate-20261011T184236Z-6d3370` · generated 2026-10-11T18:42:36.439223Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-11T18:28:36.059295Z (CURRENT at publish; CURRENT until 2026-10-11T18:48:36.059295Z, STALE after 2026-10-11T18:58:36.059295Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-11T18:40:02.082149Z (CURRENT at publish; CURRENT until 2026-10-11T19:00:02.082149Z, STALE after 2026-10-11T19:10:02.082149Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-11T18:31:17.297227Z · simulations this update: 1 · Odds API calls this update: 2 (credits 6) · reprice 0.24s
+model board generated 2026-10-11T18:31:17.297227Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.24s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -17,11 +17,11 @@ model board generated 2026-10-11T18:31:17.297227Z · simulations this update: 1 
 | 2026-10-11T19:00:00Z | Atlético Mineiro vs Santos (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-11T19:00:00Z | Racing Santander vs Valencia (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-11T20:00:00Z | Platense vs Argentinos Juniors (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-10-11T20:30:00Z | Flamengo vs Fluminense (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-11T20:30:00Z | Grêmio vs Internacional (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-11T20:30:00Z | Palmeiras vs Corinthians (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-11T20:30:00Z | Flamengo vs Fluminense (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-11T20:30:00Z | Grêmio vs Internacional (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-11T20:30:00Z | Palmeiras vs Corinthians (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-11T22:15:00Z | Racing Club vs Belgrano (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-10-11T22:30:00Z | Bahia vs Mirassol (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-11T22:30:00Z | Bahia vs Mirassol (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-11T23:00:00Z | Atlético San Luis vs Santos Laguna (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-11T23:00:00Z | St. Louis City SC vs LA Galaxy (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-11T23:10:00Z | Pachuca vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
@@ -36,7 +36,7 @@ model board generated 2026-10-11T18:31:17.297227Z · simulations this update: 1 
 | 2026-10-12T22:30:00Z | Chapecoense vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-13T00:00:00Z | Red Bull Bragantino vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 
-## Candidates on CURRENT prices (32; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (31; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -52,12 +52,13 @@ model board generated 2026-10-11T18:31:17.297227Z · simulations this update: 1 
 | Pumas UNAM vs Cruz Azul | First team to score: home | yes | 0.3900 | 0.528 [0.388, 0.672] | +0.122 | +0.031 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Necaxa | away team total over 0.5 | no | 0.3400 | 0.478 [0.338, 0.612] | +0.123 | +0.030 | 0.36 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs LA Galaxy | away team total over 0.5 | no | 0.3200 | 0.447 [0.319, 0.568] | +0.112 | +0.029 | 0.34 | - | * | RESEARCH_CANDIDATE |
-| Pachuca vs Necaxa | away team total over 1.5 | no | 0.7100 | 0.819 [0.705, 0.913] | +0.095 | +0.029 | 0.73 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs LA Galaxy | away team total over 1.5 | no | 0.6900 | 0.796 [0.683, 0.889] | +0.092 | +0.027 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Necaxa | btts | no | 0.4300 | 0.557 [0.423, 0.675] | +0.110 | +0.026 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | away wins by more than 2.5 | no | 0.9000 | 0.951 [0.902, 0.985] | +0.044 | +0.022 | 0.92 | - |  | RESEARCH_CANDIDATE |
+| Pachuca vs Necaxa | away team total over 1.5 | no | 0.7200 | 0.819 [0.705, 0.913] | +0.085 | +0.019 | 0.73 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | away team total over 1.5 | no | 0.5100 | 0.636 [0.476, 0.775] | +0.109 | +0.015 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | Grêmio vs Internacional | Result: away | no | 0.6350 | 0.739 [0.620, 0.852] | +0.088 | +0.014 | 0.64 | - | * | RESEARCH_CANDIDATE |
+| Pachuca vs Necaxa | away team total over 2.5 | no | 0.9100 | 0.952 [0.904, 0.986] | +0.036 | +0.012 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | away team total over 0.5 | no | 0.1900 | 0.291 [0.173, 0.409] | +0.091 | +0.012 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs LA Galaxy | away team total over 2.5 | no | 0.9000 | 0.943 [0.892, 0.980] | +0.037 | +0.011 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | home wins by more than 2.5 | yes | 0.0400 | 0.115 [0.038, 0.218] | +0.072 | +0.011 | 0.04 | - |  | RESEARCH_CANDIDATE |
@@ -67,18 +68,16 @@ model board generated 2026-10-11T18:31:17.297227Z · simulations this update: 1 
 | Grêmio vs Internacional | home wins by more than 1.5 | yes | 0.1300 | 0.228 [0.117, 0.359] | +0.090 | +0.005 | 0.13 | - | * | RESEARCH_CANDIDATE |
 | Torino vs Udinese | Result: draw | no | 0.7000 | 0.753 [0.696, 0.805] | +0.038 | +0.004 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | First half: away wins by more than 1.5 | no | 0.9000 | 0.936 [0.879, 0.981] | +0.030 | +0.004 | 0.9 | - | * | RESEARCH_CANDIDATE |
-| Pachuca vs Necaxa | away team total over 2.5 | no | 0.9200 | 0.952 [0.904, 0.986] | +0.027 | +0.003 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Levante vs Sevilla | Result: home | yes | 0.3500 | 0.477 [0.316, 0.658] | +0.111 | +0.003 | 0.35 | - | * | RESEARCH_CANDIDATE |
 | Atlético San Luis vs Santos Laguna | btts | no | 0.4000 | 0.502 [0.365, 0.629] | +0.086 | +0.002 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Necaxa | away wins by more than 1.5 | no | 0.9300 | 0.956 [0.913, 0.987] | +0.021 | +0.002 | 0.93 | - | * | RESEARCH_CANDIDATE |
-| Atlético San Luis vs Santos Laguna | away team total over 0.5 | no | 0.2700 | 0.375 [0.241, 0.508] | +0.091 | +0.001 | 0.27 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 703
+action_NO_EDGE: 704
 action_NO_QUOTE: 369
-action_RESEARCH_CANDIDATE: 32
+action_RESEARCH_CANDIDATE: 31
 contract_sides: 1104
 fixtures: 23
 fixtures_model_invalidated: 0
