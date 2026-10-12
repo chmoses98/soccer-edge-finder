@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261012T191224Z-920a2a` · generated 2026-10-12T19:12:24.265388Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261012T192727Z-624223` · generated 2026-10-12T19:27:27.990853Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-12T19:10:00.782766Z (CURRENT at publish; CURRENT until 2026-10-12T19:30:00.782766Z, STALE after 2026-10-12T19:40:00.782766Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-12T19:25:00.791786Z (CURRENT at publish; CURRENT until 2026-10-12T19:45:00.791786Z, STALE after 2026-10-12T19:55:00.791786Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-12T18:31:51.541502Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.09s
 
@@ -12,8 +12,8 @@ model board generated 2026-10-12T18:31:51.541502Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-12T22:30:00Z | Chapecoense vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-13T00:00:00Z | Red Bull Bragantino vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-12T22:30:00Z | Chapecoense vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-13T00:00:00Z | Red Bull Bragantino vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 
 ## Candidates on CURRENT prices (4; RESEARCH_ONLY = analysis, never a bet)
 
