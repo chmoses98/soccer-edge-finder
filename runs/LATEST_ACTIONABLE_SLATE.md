@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261012T125717Z-101b4e` · generated 2026-10-12T12:57:17.339486Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261012T131217Z-6e9818` · generated 2026-10-12T13:12:17.539803Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-12T12:54:53.954663Z (CURRENT at publish; CURRENT until 2026-10-12T13:14:53.954663Z, STALE after 2026-10-12T13:24:53.954663Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-12T13:09:53.961267Z (CURRENT at publish; CURRENT until 2026-10-12T13:29:53.961267Z, STALE after 2026-10-12T13:39:53.961267Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-12T09:56:51.000451Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.07s
 
@@ -21,19 +21,20 @@ model board generated 2026-10-12T09:56:51.000451Z · simulations this update: 0 
 | 2026-10-12T22:30:00Z | Chapecoense vs Athletico Paranaense (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-13T00:00:00Z | Red Bull Bragantino vs Cruzeiro (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 
-## Candidates on CURRENT prices (2; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (3; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Torino vs Udinese | Result: draw | no | 0.6900 | 0.753 [0.696, 0.805] | +0.048 | +0.013 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | Levante vs Sevilla | Result: draw | no | 0.7000 | 0.759 [0.703, 0.814] | +0.045 | +0.007 | 0.7 | - | * | RESEARCH_CANDIDATE |
+| Red Bull Bragantino vs Cruzeiro | btts | no | 0.4100 | 0.509 [0.391, 0.631] | +0.082 | +0.006 | 0.41 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 106
+action_NO_EDGE: 105
 action_NO_QUOTE: 118
-action_RESEARCH_CANDIDATE: 2
+action_RESEARCH_CANDIDATE: 3
 contract_sides: 226
 fixtures: 8
 fixtures_model_invalidated: 0
