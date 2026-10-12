@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261012T175744Z-df3c32` · generated 2026-10-12T17:57:44.435173Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261012T180541Z-3bc9d2` · generated 2026-10-12T18:05:41.659109Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-12T17:55:03.700561Z (CURRENT at publish; CURRENT until 2026-10-12T18:15:03.700561Z, STALE after 2026-10-12T18:25:03.700561Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-12T18:03:07.128016Z (CURRENT at publish; CURRENT until 2026-10-12T18:23:07.128016Z, STALE after 2026-10-12T18:33:07.128016Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-12T17:57:42.720387Z · simulations this update: 3 · Odds API calls this update: 4 (credits 12) · reprice 0.11s
+model board generated 2026-10-12T17:57:42.720387Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.13s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -26,8 +26,8 @@ model board generated 2026-10-12T17:57:42.720387Z · simulations this update: 3 
 |---|---|---|---|---|---|---|---|---|---|---|
 | Torino vs Udinese | Result: draw | no | 0.6800 | 0.753 [0.696, 0.805] | +0.057 | +0.023 | 0.7 | 0.679 | * | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Cruzeiro | btts | no | 0.3900 | 0.509 [0.381, 0.637] | +0.102 | +0.022 | 0.41 | - | * | RESEARCH_CANDIDATE |
-| Levante vs Sevilla | Result: draw | no | 0.7000 | 0.759 [0.703, 0.814] | +0.045 | +0.007 | 0.7 | 0.699 | * | RESEARCH_CANDIDATE |
-| Levante vs Sevilla | Result: home | yes | 0.3500 | 0.477 [0.315, 0.659] | +0.111 | +0.003 | 0.35 | 0.350 |  | RESEARCH_CANDIDATE |
+| Levante vs Sevilla | Result: home | yes | 0.3400 | 0.477 [0.315, 0.659] | +0.121 | +0.013 | 0.35 | 0.350 | * | RESEARCH_CANDIDATE |
+| Levante vs Sevilla | Result: draw | no | 0.7000 | 0.759 [0.703, 0.814] | +0.045 | +0.007 | 0.7 | 0.699 |  | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Cruzeiro | Total goals over 3.5 | no | 0.6500 | 0.751 [0.606, 0.876] | +0.085 | +0.002 | 0.65 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
