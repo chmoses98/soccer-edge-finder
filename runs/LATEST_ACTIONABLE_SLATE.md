@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261012T184627Z-608226` · generated 2026-10-12T18:46:27.126955Z · trigger `kickoff_chain:T-15` · mode `model_refresh_and_reprice`
+slate `slate-20261012T185730Z-c42577` · generated 2026-10-12T18:57:30.375393Z · trigger `kickoff_chain:T-5` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-12T18:43:51.569047Z (CURRENT at publish; CURRENT until 2026-10-12T19:03:51.569047Z, STALE after 2026-10-12T19:13:51.569047Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-12T18:55:00.032412Z (CURRENT at publish; CURRENT until 2026-10-12T19:15:00.032412Z, STALE after 2026-10-12T19:25:00.032412Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-12T18:31:51.541502Z · simulations this update: 0 · Odds API calls this update: 4 (credits 12) · reprice 0.11s
+model board generated 2026-10-12T18:31:51.541502Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.11s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -19,20 +19,21 @@ model board generated 2026-10-12T18:31:51.541502Z · simulations this update: 0 
 | 2026-10-12T22:30:00Z | Chapecoense vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-13T00:00:00Z | Red Bull Bragantino vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 
-## Candidates on CURRENT prices (3; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (4; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Levante vs Sevilla | Result: home | yes | 0.3300 | 0.477 [0.315, 0.659] | +0.131 | +0.023 | 0.35 | 0.330 | * | RESEARCH_CANDIDATE |
+| Levante vs Sevilla | Result: home | yes | 0.3200 | 0.477 [0.315, 0.659] | +0.142 | +0.034 | 0.35 | 0.330 | * | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Cruzeiro | btts | no | 0.3900 | 0.509 [0.381, 0.637] | +0.102 | +0.022 | 0.41 | - | * | RESEARCH_CANDIDATE |
-| Red Bull Bragantino vs Cruzeiro | Total goals over 3.5 | no | 0.6500 | 0.751 [0.606, 0.876] | +0.085 | +0.002 | 0.65 | - | * | RESEARCH_CANDIDATE |
+| Red Bull Bragantino vs Cruzeiro | Total goals over 2.5 | no | 0.4200 | 0.548 [0.384, 0.705] | +0.111 | +0.007 | 0.42 | - | * | RESEARCH_CANDIDATE |
+| Red Bull Bragantino vs Cruzeiro | Total goals over 3.5 | no | 0.6500 | 0.751 [0.606, 0.876] | +0.085 | +0.002 | 0.65 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 93
+action_NO_EDGE: 92
 action_NO_QUOTE: 88
-action_RESEARCH_CANDIDATE: 3
+action_RESEARCH_CANDIDATE: 4
 contract_sides: 184
 fixtures: 6
 fixtures_model_invalidated: 1
