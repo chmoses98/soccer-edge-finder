@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261012T234614Z-9ed2c1` · generated 2026-10-12T23:46:14.058589Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261012T235725Z-cc5e57` · generated 2026-10-12T23:57:25.169280Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-12T23:43:46.502542Z (CURRENT at publish; CURRENT until 2026-10-13T00:03:46.502542Z, STALE after 2026-10-13T00:13:46.502542Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-12T23:55:00.024004Z (CURRENT at publish; CURRENT until 2026-10-13T00:15:00.024004Z, STALE after 2026-10-13T00:25:00.024004Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-12T23:31:06.595813Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.05s
+model board generated 2026-10-12T23:31:06.595813Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.05s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -18,7 +18,7 @@ model board generated 2026-10-12T23:31:06.595813Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Red Bull Bragantino vs Cruzeiro | btts | no | 0.3700 | 0.509 [0.381, 0.637] | +0.122 | +0.042 | 0.41 | - | * | RESEARCH_CANDIDATE |
+| Red Bull Bragantino vs Cruzeiro | btts | no | 0.3800 | 0.509 [0.381, 0.637] | +0.112 | +0.032 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Cruzeiro | Total goals over 2.5 | no | 0.4100 | 0.548 [0.384, 0.705] | +0.121 | +0.017 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Cruzeiro | Total goals over 1.5 | no | 0.1900 | 0.294 [0.169, 0.430] | +0.093 | +0.007 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Cruzeiro | Total goals over 0.5 | no | 0.0500 | 0.097 [0.046, 0.160] | +0.044 | +0.006 | 0.05 | - |  | RESEARCH_CANDIDATE |
