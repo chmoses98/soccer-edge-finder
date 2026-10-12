@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261012T185730Z-c42577` · generated 2026-10-12T18:57:30.375393Z · trigger `kickoff_chain:T-5` · mode `model_refresh_and_reprice`
+slate `slate-20261012T191224Z-920a2a` · generated 2026-10-12T19:12:24.265388Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-12T18:55:00.032412Z (CURRENT at publish; CURRENT until 2026-10-12T19:15:00.032412Z, STALE after 2026-10-12T19:25:00.032412Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-12T19:10:00.782766Z (CURRENT at publish; CURRENT until 2026-10-12T19:30:00.782766Z, STALE after 2026-10-12T19:40:00.782766Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-12T18:31:51.541502Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.11s
+model board generated 2026-10-12T18:31:51.541502Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.09s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,10 +12,6 @@ model board generated 2026-10-12T18:31:51.541502Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-12T19:00:00Z | Lanús vs Vélez Sarsfield (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
-| 2026-10-12T19:00:00Z | Coritiba vs Botafogo (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
-| 2026-10-12T19:00:00Z | Coventry City vs Newcastle United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
-| 2026-10-12T19:00:00Z | Levante vs Sevilla (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
 | 2026-10-12T22:30:00Z | Chapecoense vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-13T00:00:00Z | Red Bull Bragantino vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 
@@ -23,23 +19,23 @@ model board generated 2026-10-12T18:31:51.541502Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Levante vs Sevilla | Result: home | yes | 0.3200 | 0.477 [0.315, 0.659] | +0.142 | +0.034 | 0.35 | 0.330 | * | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Cruzeiro | btts | no | 0.3900 | 0.509 [0.381, 0.637] | +0.102 | +0.022 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Cruzeiro | Total goals over 2.5 | no | 0.4200 | 0.548 [0.384, 0.705] | +0.111 | +0.007 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Cruzeiro | Total goals over 3.5 | no | 0.6500 | 0.751 [0.606, 0.876] | +0.085 | +0.002 | 0.65 | - |  | RESEARCH_CANDIDATE |
+| Red Bull Bragantino vs Cruzeiro | Total goals over 5.5 | no | 0.9200 | 0.949 [0.897, 0.987] | +0.024 | +0.000 | 0.92 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 92
-action_NO_QUOTE: 88
+action_NO_EDGE: 52
+action_NO_QUOTE: 60
 action_RESEARCH_CANDIDATE: 4
-contract_sides: 184
-fixtures: 6
-fixtures_model_invalidated: 1
+contract_sides: 116
+fixtures: 2
+fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
-Removed (kicked off): 1
+Removed (kicked off): 5
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
