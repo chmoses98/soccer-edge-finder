@@ -1,7 +1,7 @@
 {
-  "batch_id": "cap-20261012T233100Z",
-  "captured_at": "2026-10-12T23:31:00.625041+00:00",
-  "contracts_discovered": 4614,
+  "batch_id": "cap-20261012T234608Z",
+  "captured_at": "2026-10-12T23:46:08.955657+00:00",
+  "contracts_discovered": 4896,
   "counters": {
     "complete": true,
     "contracts_by_competition_code": {
@@ -11,7 +11,7 @@
       "ARGPREMDIV": 30,
       "BELGIANPL": 18,
       "BRASILEIRO": 260,
-      "BRASILEIROB": 108,
+      "BRASILEIROB": 102,
       "BRASILEIROC": 3,
       "BUNDESLIGA": 222,
       "CANPL": 3,
@@ -45,7 +45,7 @@
       "LIGAMX": 250,
       "LIGAPORTUGAL": 18,
       "LIGUE1": 226,
-      "MLS": 512,
+      "MLS": 800,
       "MLSEAST": 15,
       "MLSWEST": 15,
       "NWSL": 16,
@@ -84,10 +84,13 @@
       "competition_top_n": 306,
       "competition_trophies": 32,
       "competition_winner": 1061,
-      "first_half_btts": 3,
-      "first_half_handicap": 6,
+      "exact_score": 180,
+      "first_half_btts": 2,
+      "first_half_exact_score": 90,
+      "first_half_handicap": 4,
       "first_half_result": 6,
-      "first_half_total": 9,
+      "first_half_total": 6,
+      "first_to_score": 18,
       "handicap": 245,
       "match_result_3way": 858,
       "player_award": 168,
@@ -98,15 +101,15 @@
       "tournament_advancement": 160,
       "unknown": 3
     },
-    "contracts_discovered": 4614,
+    "contracts_discovered": 4896,
     "contracts_duplicate_seen": 0,
     "contracts_unknown_family": 3,
-    "events_discovered": 12275,
+    "events_discovered": 12811,
     "failures": [],
     "milestones_note": "milestones type=soccer_tournament_multi_leg: 19241 rows, complete=True",
-    "request_count": 562,
+    "request_count": 567,
     "retry_count": 0,
-    "run_id": "disc-20261012T232839Z-6cd7fd",
+    "run_id": "disc-20261012T234346Z-d46946",
     "series_ambiguous_unswept": 133,
     "series_ambiguous_unswept_tickers": [
       "KX1HOMEGAME",
@@ -312,13 +315,13 @@
     ],
     "series_by_ownership": {
       "ambiguous": 134,
-      "not_soccer": 13448,
+      "not_soccer": 13450,
       "soccer": 1393
     },
     "series_skipped_fast_mode": 1134,
     "series_swept": 260,
-    "series_total": 14975
+    "series_total": 14977
   },
   "discovery_complete": true,
-  "snapshots_written": 474
+  "snapshots_written": 1056
 }
