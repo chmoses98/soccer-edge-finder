@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261012T162725Z-3400e9` · generated 2026-10-12T16:27:25.814145Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
+slate `slate-20261012T164228Z-fa5df7` · generated 2026-10-12T16:42:28.284019Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-12T16:25:00.031230Z (CURRENT at publish; CURRENT until 2026-10-12T16:45:00.031230Z, STALE after 2026-10-12T16:55:00.031230Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-12T16:40:01.248805Z (CURRENT at publish; CURRENT until 2026-10-12T17:00:01.248805Z, STALE after 2026-10-12T17:10:01.248805Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-12T15:43:34.194171Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.13s
 
@@ -12,7 +12,6 @@ model board generated 2026-10-12T15:43:34.194171Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-12T16:30:00Z | Atalanta vs Venezia (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
 | 2026-10-12T18:45:00Z | Torino vs Udinese (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-12T19:00:00Z | Lanús vs Vélez Sarsfield (arg.primera) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-12T19:00:00Z | Coritiba vs Botafogo (bra.serie_a) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -35,13 +34,15 @@ model board generated 2026-10-12T15:43:34.194171Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 102
+action_NO_EDGE: 96
 action_NO_QUOTE: 118
 action_RESEARCH_CANDIDATE: 6
-contract_sides: 226
-fixtures: 8
+contract_sides: 220
+fixtures: 7
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
+
+Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
