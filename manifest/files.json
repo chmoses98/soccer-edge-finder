@@ -4717,16 +4717,16 @@
       "sha256_prefix": "2d8c3cec86d7e9c047978c8ffe67095f65e01f174a8ec402f8672d478e5c30d3"
     },
     "dispatch/settle_runs.jsonl": {
-      "byte_length": 74633,
+      "byte_length": 76871,
       "closed": false,
       "day": null,
       "first_manifested_at": "2026-09-30T15:09:14.485417Z",
       "immutable": false,
-      "line_count": 55,
+      "line_count": 56,
       "record_level": false,
       "record_type": "settle_run_log",
       "recovery_id": null,
-      "sha256_prefix": "602dac3285a9806d64a5298bed6c067cd56e4f968987b90ce0184b1e469cf1c6"
+      "sha256_prefix": "20384714a5415dae7b3f2daa0adc06f793c37a4949ecb113373c39ebdefb3ae5"
     },
     "dispatch/slate_log/2026-10-02.jsonl": {
       "byte_length": 177314,
@@ -22352,6 +22352,18 @@
       "recovery_id": null,
       "sha256_prefix": "b67e744e711df78ee72dde27750cb234b253a548c91faf91f60d04d4120d6d2f"
     },
+    "settlements/2026-10-12/predictions.jsonl": {
+      "byte_length": 3916052,
+      "closed": false,
+      "day": "2026-10-12",
+      "first_manifested_at": "2026-10-12T00:45:33.981127Z",
+      "immutable": false,
+      "line_count": 1540,
+      "record_level": true,
+      "record_type": "settlement",
+      "recovery_id": null,
+      "sha256_prefix": "1df4767f554f03fdf8377b8b37af0b333cdaf9ffd707641fb9671e86bdaa5a25"
+    },
     "snapshots/2026-09-27/cap-20260927T234517Z.jsonl": {
       "byte_length": 5211978,
       "closed": true,
@@ -31496,5 +31508,5 @@
     }
   },
   "manifest_version": 1,
-  "updated_at": "2026-10-12T00:43:23.486564Z"
+  "updated_at": "2026-10-12T00:45:34.114421Z"
 }

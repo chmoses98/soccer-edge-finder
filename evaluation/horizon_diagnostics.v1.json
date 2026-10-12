@@ -3,9 +3,9 @@
     "120": {
       "achieved_minutes_median": 122.25,
       "achieved_minutes_p10": 117.78,
-      "achieved_minutes_p90": 125.62,
-      "delivered": 200,
-      "delivery_rate": 0.8695652173913043,
+      "achieved_minutes_p90": 125.75,
+      "delivered": 202,
+      "delivery_rate": 0.8706896551724138,
       "lateness_minutes_max": 62.51,
       "lateness_minutes_median": -2.25,
       "missed": 30
@@ -13,9 +13,9 @@
     "15": {
       "achieved_minutes_median": 12.91,
       "achieved_minutes_p10": 11.8,
-      "achieved_minutes_p90": 13.76,
-      "delivered": 191,
-      "delivery_rate": 0.8526785714285714,
+      "achieved_minutes_p90": 13.78,
+      "delivered": 197,
+      "delivery_rate": 0.8565217391304348,
       "lateness_minutes_max": 14.64,
       "lateness_minutes_median": 2.09,
       "missed": 33
@@ -23,9 +23,9 @@
     "30": {
       "achieved_minutes_median": 28.35,
       "achieved_minutes_p10": 27.33,
-      "achieved_minutes_p90": 29.56,
-      "delivered": 193,
-      "delivery_rate": 0.8577777777777778,
+      "achieved_minutes_p90": 29.5,
+      "delivered": 198,
+      "delivery_rate": 0.8608695652173913,
       "lateness_minutes_max": 16.98,
       "lateness_minutes_median": 1.65,
       "missed": 32
@@ -33,9 +33,9 @@
     "5": {
       "achieved_minutes_median": 2.34,
       "achieved_minutes_p10": 1.65,
-      "achieved_minutes_p90": 3.82,
-      "delivered": 191,
-      "delivery_rate": 0.8565022421524664,
+      "achieved_minutes_p90": 3.62,
+      "delivered": 197,
+      "delivery_rate": 0.8602620087336245,
       "lateness_minutes_max": 7.0,
       "lateness_minutes_median": 2.66,
       "missed": 32
@@ -44,62 +44,20 @@
       "achieved_minutes_median": 62.14,
       "achieved_minutes_p10": 57.43,
       "achieved_minutes_p90": 62.54,
-      "delivered": 191,
-      "delivery_rate": 0.8451327433628318,
+      "delivered": 196,
+      "delivery_rate": 0.8484848484848485,
       "lateness_minutes_max": 25.74,
-      "lateness_minutes_median": -2.14,
+      "lateness_minutes_median": -2.12,
       "missed": 35
     }
   },
-  "delivered_total": 966,
-  "delivery_rate_total": 0.8563829787234043,
-  "fixtures_tracked": 230,
-  "generated_at": "2026-10-11T21:56:10Z",
+  "delivered_total": 990,
+  "delivery_rate_total": 0.859375,
+  "fixtures_tracked": 232,
+  "generated_at": "2026-10-12T00:44:35Z",
   "missed_total": 162,
-  "n_pending_fixtures": 20,
+  "n_pending_fixtures": 21,
   "pending_fixtures": [
-    {
-      "competition_id": "arg.primera",
-      "fixture_id": "fx:arg.primera:2026:arg.racing:arg.belgrano",
-      "kickoff_utc": "2026-10-11T22:15:00Z",
-      "markets_discovered": 14,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "bra.serie_a",
-      "fixture_id": "fx:bra.serie_a:2026:bra.bahia:bra.mirassol",
-      "kickoff_utc": "2026-10-11T22:30:00Z",
-      "markets_discovered": 29,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "usa.mls",
-      "fixture_id": "fx:usa.mls:2026:usa.st_louis_city:usa.la_galaxy",
-      "kickoff_utc": "2026-10-11T23:00:00Z",
-      "markets_discovered": 32,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "mex.liga_mx",
-      "fixture_id": "fx:mex.liga_mx:2026:mex.san_luis:mex.santos_laguna",
-      "kickoff_utc": "2026-10-11T23:00:00Z",
-      "markets_discovered": 80,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "mex.liga_mx",
-      "fixture_id": "fx:mex.liga_mx:2026:mex.pachuca:mex.necaxa",
-      "kickoff_utc": "2026-10-11T23:10:00Z",
-      "markets_discovered": 80,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "arg.primera",
-      "fixture_id": "fx:arg.primera:2026:arg.talleres:arg.independiente",
-      "kickoff_utc": "2026-10-12T00:30:00Z",
-      "markets_discovered": 14,
-      "source": "run_output"
-    },
     {
       "competition_id": "mex.liga_mx",
       "fixture_id": "fx:mex.liga_mx:2026:mex.pumas:mex.cruz_azul",
@@ -197,6 +155,55 @@
       "kickoff_utc": "2026-10-13T00:00:00Z",
       "markets_discovered": 29,
       "source": "run_output"
+    },
+    {
+      "competition_id": "arg.primera",
+      "fixture_id": "fx:arg.primera:2026:arg.sarmiento:arg.river_plate",
+      "kickoff_utc": "2026-10-14T22:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.cf_montreal:usa.atlanta_united",
+      "kickoff_utc": "2026-10-14T23:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.columbus_crew:usa.charlotte",
+      "kickoff_utc": "2026-10-14T23:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.dc_united:usa.ny_red_bulls",
+      "kickoff_utc": "2026-10-14T23:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.cincinnati:usa.new_england",
+      "kickoff_utc": "2026-10-14T23:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.inter_miami:usa.nycfc",
+      "kickoff_utc": "2026-10-14T23:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.toronto:usa.orlando_city",
+      "kickoff_utc": "2026-10-14T23:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
     }
   ],
   "required_horizons": [
