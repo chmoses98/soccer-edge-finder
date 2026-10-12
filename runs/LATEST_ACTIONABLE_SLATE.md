@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261012T121215Z-a4b85a` · generated 2026-10-12T12:12:15.438265Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261012T122716Z-bc3dc4` · generated 2026-10-12T12:27:16.097260Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-12T12:09:52.110846Z (CURRENT at publish; CURRENT until 2026-10-12T12:29:52.110846Z, STALE after 2026-10-12T12:39:52.110846Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-12T12:24:52.575268Z (CURRENT at publish; CURRENT until 2026-10-12T12:44:52.575268Z, STALE after 2026-10-12T12:54:52.575268Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-12T09:56:51.000451Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.06s
+model board generated 2026-10-12T09:56:51.000451Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.07s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -21,18 +21,19 @@ model board generated 2026-10-12T09:56:51.000451Z · simulations this update: 0 
 | 2026-10-12T22:30:00Z | Chapecoense vs Athletico Paranaense (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-13T00:00:00Z | Red Bull Bragantino vs Cruzeiro (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 
-## Candidates on CURRENT prices (1; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (2; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Torino vs Udinese | Result: draw | no | 0.6900 | 0.753 [0.696, 0.805] | +0.048 | +0.013 | 0.7 | - | * | RESEARCH_CANDIDATE |
+| Levante vs Sevilla | Result: draw | no | 0.7000 | 0.759 [0.703, 0.814] | +0.045 | +0.007 | 0.7 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 107
+action_NO_EDGE: 106
 action_NO_QUOTE: 118
-action_RESEARCH_CANDIDATE: 1
+action_RESEARCH_CANDIDATE: 2
 contract_sides: 226
 fixtures: 8
 fixtures_model_invalidated: 0
