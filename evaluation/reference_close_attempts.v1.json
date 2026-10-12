@@ -1,10 +1,10 @@
 {
  "counts": {
-  "PINNACLE_VALID_CLOSE": 100,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 76,
+  "PINNACLE_QUOTED_NOTHING": 15,
+  "PINNACLE_VALID_CLOSE": 101,
   "MISSED_DISPATCHER_CLOSE": 32,
-  "NO_SPORT_KEY": 19,
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 75,
-  "PINNACLE_QUOTED_NOTHING": 15
+  "NO_SPORT_KEY": 19
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.sarmiento": {
@@ -38,6 +38,11 @@
    "batch_id": "kd-20261003T172913Z"
   },
   "fx:arg.primera:2026:arg.gimnasia_la_plata:arg.atletico_tucuman": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:arg.primera:2026:arg.gimnasia_mendoza:arg.newells": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
@@ -136,6 +141,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261007T221439Z"
+  },
+  "fx:bra.serie_a:2026:bra.chapecoense:bra.athletico_paranaense": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261012T221340Z"
   },
   "fx:bra.serie_a:2026:bra.coritiba:bra.botafogo": {
    "state": "PINNACLE_VALID_CLOSE",
