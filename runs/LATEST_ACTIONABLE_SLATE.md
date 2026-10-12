@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261012T010108Z-c90c9e` · generated 2026-10-12T01:01:08.228287Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261012T011230Z-e97942` · generated 2026-10-12T01:12:30.897165Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-12T00:58:34.207783Z (CURRENT at publish; CURRENT until 2026-10-12T01:18:34.207783Z, STALE after 2026-10-12T01:28:34.207783Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-12T01:10:00.018686Z (CURRENT at publish; CURRENT until 2026-10-12T01:30:00.018686Z, STALE after 2026-10-12T01:40:00.018686Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-12T00:16:04.203758Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.11s
+model board generated 2026-10-12T00:16:04.203758Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.09s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -22,7 +22,7 @@ model board generated 2026-10-12T00:16:04.203758Z · simulations this update: 0 
 | 2026-10-12T22:30:00Z | Chapecoense vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-13T00:00:00Z | Red Bull Bragantino vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
 
-## Candidates on CURRENT prices (11; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (10; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -30,7 +30,6 @@ model board generated 2026-10-12T00:16:04.203758Z · simulations this update: 0 
 | Pumas UNAM vs Cruz Azul | First team to score: away | no | 0.4800 | 0.590 [0.458, 0.712] | +0.093 | +0.013 | 0.49 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | home wins by more than 1.5 | yes | 0.1400 | 0.250 [0.125, 0.399] | +0.102 | +0.006 | 0.14 | - | * | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Cruzeiro | btts | no | 0.4100 | 0.509 [0.391, 0.631] | +0.082 | +0.006 | 0.41 | - | * | RESEARCH_CANDIDATE |
-| Pumas UNAM vs Cruz Azul | First-half result: away | no | 0.6700 | 0.752 [0.638, 0.852] | +0.067 | +0.005 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Torino vs Udinese | Result: draw | no | 0.7000 | 0.753 [0.696, 0.805] | +0.038 | +0.004 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | Result: away | no | 0.5900 | 0.700 [0.559, 0.827] | +0.094 | +0.003 | 0.59 | 0.524 | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | away wins by more than 2.5 | no | 0.9200 | 0.950 [0.905, 0.985] | +0.025 | +0.002 | 0.92 | - |  | RESEARCH_CANDIDATE |
@@ -41,9 +40,9 @@ model board generated 2026-10-12T00:16:04.203758Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 236
+action_NO_EDGE: 237
 action_NO_QUOTE: 137
-action_RESEARCH_CANDIDATE: 11
+action_RESEARCH_CANDIDATE: 10
 contract_sides: 384
 fixtures: 9
 fixtures_model_invalidated: 0
