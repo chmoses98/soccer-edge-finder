@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261011T234740Z-e54106` · generated 2026-10-11T23:47:40.974990Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261012T000234Z-14e25e` · generated 2026-10-12T00:02:34.858904Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-11T23:45:01.674222Z (CURRENT at publish; CURRENT until 2026-10-12T00:05:01.674222Z, STALE after 2026-10-12T00:15:01.674222Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-12T00:00:00.018541Z (CURRENT at publish; CURRENT until 2026-10-12T00:20:00.018541Z, STALE after 2026-10-12T00:30:00.018541Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-11T23:22:40.228085Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.12s
+model board generated 2026-10-11T23:22:40.228085Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.10s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -23,7 +23,7 @@ model board generated 2026-10-11T23:22:40.228085Z · simulations this update: 0 
 | 2026-10-12T22:30:00Z | Chapecoense vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-13T00:00:00Z | Red Bull Bragantino vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 
-## Candidates on CURRENT prices (18; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (19; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -37,27 +37,28 @@ model board generated 2026-10-11T23:22:40.228085Z · simulations this update: 0 
 | Pumas UNAM vs Cruz Azul | First team to score: home | yes | 0.4000 | 0.528 [0.388, 0.672] | +0.111 | +0.021 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | away team total over 1.5 | no | 0.5100 | 0.636 [0.476, 0.775] | +0.109 | +0.015 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | Second-half result: away | no | 0.6300 | 0.731 [0.608, 0.842] | +0.085 | +0.014 | 0.64 | - | * | RESEARCH_CANDIDATE |
+| Pumas UNAM vs Cruz Azul | First half: away wins by more than 1.5 | no | 0.8900 | 0.936 [0.879, 0.981] | +0.039 | +0.013 | 0.9 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | away team total over 0.5 | no | 0.1900 | 0.291 [0.173, 0.409] | +0.091 | +0.012 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | home wins by more than 2.5 | yes | 0.0400 | 0.115 [0.038, 0.218] | +0.072 | +0.011 | 0.04 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | First-half result: home | yes | 0.2400 | 0.353 [0.218, 0.492] | +0.100 | +0.007 | 0.24 | - |  | RESEARCH_CANDIDATE |
+| Red Bull Bragantino vs Cruzeiro | btts | no | 0.4100 | 0.509 [0.391, 0.631] | +0.082 | +0.006 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | away team total over 2.5 | no | 0.7800 | 0.854 [0.742, 0.938] | +0.062 | +0.005 | 0.78 | - |  | RESEARCH_CANDIDATE |
 | Torino vs Udinese | Result: draw | no | 0.7000 | 0.753 [0.696, 0.805] | +0.038 | +0.004 | 0.7 | - | * | RESEARCH_CANDIDATE |
-| Pumas UNAM vs Cruz Azul | First half: away wins by more than 1.5 | no | 0.9000 | 0.936 [0.879, 0.981] | +0.030 | +0.004 | 0.9 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | Exact score 0-2 (home-away) | no | 0.9300 | 0.955 [0.927, 0.980] | +0.021 | +0.003 | 0.93 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Cruz Azul | First-half exact score 1-0 (home-away) | yes | 0.1400 | 0.194 [0.128, 0.262] | +0.045 | +0.002 | 0.14 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 230
+action_NO_EDGE: 229
 action_NO_QUOTE: 164
-action_RESEARCH_CANDIDATE: 18
+action_RESEARCH_CANDIDATE: 19
 contract_sides: 412
 fixtures: 10
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
-Removed (kicked off): 3
+Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
