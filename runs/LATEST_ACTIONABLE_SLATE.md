@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261012T220101Z-867892` · generated 2026-10-12T22:01:01.746655Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261012T221611Z-ad446d` · generated 2026-10-12T22:16:11.262328Z · trigger `kickoff_chain:T-15` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-12T21:58:38.454856Z (CURRENT at publish; CURRENT until 2026-10-12T22:18:38.454856Z, STALE after 2026-10-12T22:28:38.454856Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-12T22:13:40.963047Z (CURRENT at publish; CURRENT until 2026-10-12T22:33:40.963047Z, STALE after 2026-10-12T22:43:40.963047Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-12T21:27:31.496072Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.06s
+model board generated 2026-10-12T22:16:10.105972Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.06s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-12T21:27:31.496072Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-12T22:30:00Z | Chapecoense vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
+| 2026-10-12T22:30:00Z | Chapecoense vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
 | 2026-10-13T00:00:00Z | Red Bull Bragantino vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 
 ## Candidates on CURRENT prices (6; RESEARCH_ONLY = analysis, never a bet)
