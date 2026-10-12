@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261012T085312Z-cb6364` · generated 2026-10-12T08:53:12.693066Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261012T090812Z-4baa14` · generated 2026-10-12T09:08:12.689252Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-12T08:50:49.094183Z (CURRENT at publish; CURRENT until 2026-10-12T09:10:49.094183Z, STALE after 2026-10-12T09:20:49.094183Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-12T09:05:49.103548Z (CURRENT at publish; CURRENT until 2026-10-12T09:25:49.103548Z, STALE after 2026-10-12T09:35:49.103548Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-12T04:52:46.653439Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.11s
 
@@ -25,7 +25,7 @@ model board generated 2026-10-12T04:52:46.653439Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Torino vs Udinese | Result: draw | no | 0.7000 | 0.753 [0.696, 0.805] | +0.038 | +0.004 | 0.7 | - | * | RESEARCH_CANDIDATE |
+| Torino vs Udinese | Result: draw | no | 0.6900 | 0.753 [0.696, 0.805] | +0.048 | +0.013 | 0.7 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
