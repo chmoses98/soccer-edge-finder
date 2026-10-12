@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261012T183152Z-2b7fcb` · generated 2026-10-12T18:31:52.556750Z · trigger `kickoff_chain:T-30/T-15` · mode `model_refresh_and_reprice`
+slate `slate-20261012T184227Z-3a1881` · generated 2026-10-12T18:42:27.113184Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-12T18:29:19.733756Z (CURRENT at publish; CURRENT until 2026-10-12T18:49:19.733756Z, STALE after 2026-10-12T18:59:19.733756Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-12T18:40:01.434155Z (CURRENT at publish; CURRENT until 2026-10-12T19:00:01.434155Z, STALE after 2026-10-12T19:10:01.434155Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-12T18:31:51.541502Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.11s
+model board generated 2026-10-12T18:31:51.541502Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.11s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -17,8 +17,8 @@ model board generated 2026-10-12T18:31:51.541502Z · simulations this update: 1 
 | 2026-10-12T19:00:00Z | Coritiba vs Botafogo (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
 | 2026-10-12T19:00:00Z | Coventry City vs Newcastle United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
 | 2026-10-12T19:00:00Z | Levante vs Sevilla (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
-| 2026-10-12T22:30:00Z | Chapecoense vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-13T00:00:00Z | Red Bull Bragantino vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-12T22:30:00Z | Chapecoense vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-13T00:00:00Z | Red Bull Bragantino vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
 
 ## Candidates on CURRENT prices (4; RESEARCH_ONLY = analysis, never a bet)
 
