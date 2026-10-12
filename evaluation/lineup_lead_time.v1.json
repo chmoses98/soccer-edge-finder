@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-12T00:44:32.381092Z",
+  "as_of": "2026-10-12T04:21:23.224917Z",
   "by_competition": {
     "arg.1": {
       "fixtures": 22,
@@ -38,7 +38,7 @@
       "with_xi_ge_20min": 0
     },
     "col.1": {
-      "fixtures": 16,
+      "fixtures": 17,
       "median_lead_minutes": 27.760112474999996,
       "with_pre_kickoff_xi": 2,
       "with_xi_ge_20min": 1
@@ -170,7 +170,7 @@
       "with_xi_ge_20min": 1
     },
     "mex.1": {
-      "fixtures": 8,
+      "fixtures": 9,
       "median_lead_minutes": 28.816900958333335,
       "with_pre_kickoff_xi": 4,
       "with_xi_ge_20min": 4
@@ -5709,7 +5709,7 @@
       "competition": "col.1",
       "espn_event_id": "401877915",
       "final_state": "unconfirmed",
-      "kickoff_passed": false,
+      "kickoff_passed": true,
       "lead_time_seconds": null,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-10-12T01:15:00+00:00",
@@ -6237,7 +6237,7 @@
       "competition": "mex.1",
       "espn_event_id": "401876947",
       "final_state": "unconfirmed",
-      "kickoff_passed": false,
+      "kickoff_passed": true,
       "lead_time_seconds": null,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-10-12T01:15:00+00:00",
@@ -6257,7 +6257,7 @@
       "xi_first_observed_at": "2026-10-11T13:08:40.203320+00:00"
     }
   ],
-  "fixtures_kickoff_passed": 544,
+  "fixtures_kickoff_passed": 546,
   "fixtures_tracked": 577,
   "lead_time_minutes": {
     "max": 57.43608363333333,
@@ -6269,8 +6269,8 @@
   },
   "post_kickoff_first_xi": 149,
   "schema": "lineup_lead_time_v1",
-  "share_pre_kickoff_xi": 0.3180147058823529,
-  "share_xi_ge_20min": 0.2536764705882353,
+  "share_pre_kickoff_xi": 0.31684981684981683,
+  "share_xi_ge_20min": 0.25274725274725274,
   "target": "audit \u00a7I1: >= 90% of priced fixtures with a confirmed XI captured >= 20 min before kickoff",
   "with_any_xi": 322,
   "with_pre_kickoff_xi": 173,

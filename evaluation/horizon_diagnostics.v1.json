@@ -13,19 +13,19 @@
     "15": {
       "achieved_minutes_median": 12.91,
       "achieved_minutes_p10": 11.8,
-      "achieved_minutes_p90": 13.78,
-      "delivered": 197,
-      "delivery_rate": 0.8565217391304348,
+      "achieved_minutes_p90": 13.82,
+      "delivered": 198,
+      "delivery_rate": 0.8571428571428571,
       "lateness_minutes_max": 14.64,
-      "lateness_minutes_median": 2.09,
+      "lateness_minutes_median": 1.96,
       "missed": 33
     },
     "30": {
       "achieved_minutes_median": 28.35,
       "achieved_minutes_p10": 27.33,
       "achieved_minutes_p90": 29.5,
-      "delivered": 198,
-      "delivery_rate": 0.8608695652173913,
+      "delivered": 199,
+      "delivery_rate": 0.8614718614718615,
       "lateness_minutes_max": 16.98,
       "lateness_minutes_median": 1.65,
       "missed": 32
@@ -34,10 +34,10 @@
       "achieved_minutes_median": 2.34,
       "achieved_minutes_p10": 1.65,
       "achieved_minutes_p90": 3.62,
-      "delivered": 197,
-      "delivery_rate": 0.8602620087336245,
+      "delivered": 198,
+      "delivery_rate": 0.8608695652173913,
       "lateness_minutes_max": 7.0,
-      "lateness_minutes_median": 2.66,
+      "lateness_minutes_median": 2.65,
       "missed": 32
     },
     "60": {
@@ -51,20 +51,13 @@
       "missed": 35
     }
   },
-  "delivered_total": 990,
-  "delivery_rate_total": 0.859375,
+  "delivered_total": 993,
+  "delivery_rate_total": 0.8597402597402597,
   "fixtures_tracked": 232,
-  "generated_at": "2026-10-12T00:44:35Z",
+  "generated_at": "2026-10-12T04:21:25Z",
   "missed_total": 162,
-  "n_pending_fixtures": 21,
+  "n_pending_fixtures": 29,
   "pending_fixtures": [
-    {
-      "competition_id": "mex.liga_mx",
-      "fixture_id": "fx:mex.liga_mx:2026:mex.pumas:mex.cruz_azul",
-      "kickoff_utc": "2026-10-12T01:15:00Z",
-      "markets_discovered": 80,
-      "source": "run_output"
-    },
     {
       "competition_id": "ita.serie_a",
       "fixture_id": "fx:ita.serie_a:2026-27:ita.atalanta:ita.venezia:matchday_6",
@@ -202,6 +195,69 @@
       "competition_id": "usa.mls",
       "fixture_id": "fx:usa.mls:2026:usa.toronto:usa.orlando_city",
       "kickoff_utc": "2026-10-14T23:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.chicago_fire:usa.philadelphia_union",
+      "kickoff_utc": "2026-10-15T00:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.fc_dallas:usa.seattle_sounders",
+      "kickoff_utc": "2026-10-15T00:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.nashville:usa.sporting_kc",
+      "kickoff_utc": "2026-10-15T00:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.st_louis_city:usa.vancouver_whitecaps",
+      "kickoff_utc": "2026-10-15T00:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.colorado_rapids:usa.minnesota_united",
+      "kickoff_utc": "2026-10-15T01:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.real_salt_lake:usa.san_jose_earthquakes",
+      "kickoff_utc": "2026-10-15T01:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.la_galaxy:usa.portland_timbers",
+      "kickoff_utc": "2026-10-15T02:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.lafc:usa.austin",
+      "kickoff_utc": "2026-10-15T02:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.san_diego:usa.houston_dynamo",
+      "kickoff_utc": "2026-10-15T02:30:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }
