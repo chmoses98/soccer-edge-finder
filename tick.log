@@ -1441,3 +1441,84 @@ unmapped teams: 0 | proposals: {}
   "written": 645,
   "path": "work/snapshots/2026-10-12/cap-20261012T202725Z.jsonl"
 }
+{
+  "reference_probabilities": 240,
+  "observed_at": "2026-10-12 15:28:37.508960+00:00",
+  "groups": 450,
+  "unmapped_fixture_groups": 210,
+  "incomplete_groups": 0,
+  "snapshots": 864,
+  "provider_notes": [
+    "199 rows, 109 skipped (unmapped division/team)",
+    "skipped_by_division={'B1': 9, 'D2': 9, 'E2': 12, 'E3': 12, 'EC': 12, 'F2': 9, 'G1': 7, 'I2': 10, 'N1': 2, 'SC1': 5, 'SC2': 5, 'SC3': 5, 'SP2': 11, 'T1': 1}",
+    "unknown_teams={'N1:For Sittard': 1, 'N1:Nijmegen': 1, 'T1:Goztep': 1}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-12T20:27:28.846852Z", "batch_id": "kd-20261012T202502Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-10-12T20:27:28.877551+00:00",
+ "leagues": [
+  "arg.1",
+  "bra.1"
+ ],
+ "events": 5,
+ "fixtures_mapped": 5,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 2,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 5,
+  "captured": 2,
+  "unchanged": 3,
+  "published_pre_kickoff": 0,
+  "published_post": 2,
+  "unpublished": 3,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 5,
+  "captured": 5,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261012T202730Z-54679e", "mode": "reprice_only", "fixtures": 2, "contract_sides": 116, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.095, "price_changes_vs_previous": 10}
+[dispatch] holding 3.8 min (next window opens in 27.6 min)
+[dispatch] holding 6.8 min (next window opens in 23.7 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261012T204226Z",
+  "complete": true,
+  "discovered": 4737,
+  "written": 575,
+  "path": "work/snapshots/2026-10-12/cap-20261012T204226Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261012T204227Z-7e9b73", "mode": "reprice_only", "fixtures": 2, "contract_sides": 116, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.087, "price_changes_vs_previous": 5}
+[dispatch] holding 11.2 min (next window opens in 13.2 min)
+{
+ "batches": 15,
+ "horizons_delivered": 51,
+ "missed_states": {},
+ "paid_calls": 12,
+ "credits_spent": 36,
+ "end_reason": "link_time_limit",
+ "chain_continue": true,
+ "delivered_total": 1046,
+ "missed_total": 162,
+ "delivery_rate_total": 0.8658940397350994
+}
