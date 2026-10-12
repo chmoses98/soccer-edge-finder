@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261012T201226Z-5d5caa` · generated 2026-10-12T20:12:26.260182Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261012T202730Z-54679e` · generated 2026-10-12T20:27:30.168014Z · trigger `kickoff_chain:T-120/T-60` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-12T20:10:02.921872Z (CURRENT at publish; CURRENT until 2026-10-12T20:30:02.921872Z, STALE after 2026-10-12T20:40:02.921872Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-12T20:25:02.931824Z (CURRENT at publish; CURRENT until 2026-10-12T20:45:02.931824Z, STALE after 2026-10-12T20:55:02.931824Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-12T16:56:56.005007Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.22s
+model board generated 2026-10-12T16:56:56.005007Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.10s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,8 +12,8 @@ model board generated 2026-10-12T16:56:56.005007Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-12T22:30:00Z | Chapecoense vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-13T00:00:00Z | Red Bull Bragantino vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-12T22:30:00Z | Chapecoense vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-13T00:00:00Z | Red Bull Bragantino vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 
 ## Candidates on CURRENT prices (5; RESEARCH_ONLY = analysis, never a bet)
 
