@@ -4,15 +4,15 @@
   "github_backup_minutes": 60
  },
  "definition": "capture_success_rate = delivered / eligible horizons whose window closed in the span (NOT_APPLICABLE excluded); close_success_rate = fixtures with a T-15 or T-5 delivery / fixtures whose close windows closed in the span",
- "generated_at": "2026-10-13T15:16:59Z",
+ "generated_at": "2026-10-13T16:09:34Z",
  "last_24h": {
-  "capture_runs": 4,
+  "capture_runs": 3,
   "capture_runs_failed": 0,
   "capture_success_rate": 1.0,
   "close_fixtures_delivered": 13,
   "close_fixtures_eligible": 13,
   "close_success_rate": 1.0,
-  "credits_spent": 48,
+  "credits_spent": 12,
   "external_heartbeats_actual": 0,
   "external_heartbeats_expected": null,
   "external_trigger_success": null,
@@ -20,26 +20,26 @@
   "github_backup_actual": 3,
   "github_backup_expected": 24,
   "github_backup_success": 0.125,
-  "heartbeats_actual": 19,
+  "heartbeats_actual": 18,
   "heartbeats_by_source": {
-   "chain": 5,
+   "chain": 4,
    "github-schedule-backup": 3,
    "workflow-run": 11
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
   "horizon_states": {
-   "DELIVERED": 65
+   "DELIVERED": 61
   },
-  "horizons_delivered": 65,
-  "horizons_eligible": 65,
+  "horizons_delivered": 61,
+  "horizons_eligible": 61,
   "horizons_missed": 0,
-  "paid_calls": 16,
+  "paid_calls": 4,
   "span_hours": 24.0
  },
  "last_7d": {
-  "capture_runs": 30,
-  "capture_runs_failed": 3,
+  "capture_runs": 29,
+  "capture_runs_failed": 2,
   "capture_success_rate": 0.9678249678249679,
   "close_fixtures_delivered": 148,
   "close_fixtures_eligible": 156,
@@ -52,11 +52,11 @@
   "github_backup_actual": 27,
   "github_backup_expected": 168,
   "github_backup_success": 0.16071428571428573,
-  "heartbeats_actual": 139,
+  "heartbeats_actual": 137,
   "heartbeats_by_source": {
-   "chain": 31,
+   "chain": 30,
    "github-schedule-backup": 27,
-   "workflow-run": 81
+   "workflow-run": 80
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -73,8 +73,8 @@
   "span_hours": 168.0
  },
  "last_wake": {
-  "no_action_reason": null,
-  "started_at": "2026-10-13T15:16:59Z",
+  "no_action_reason": "CAPTURE_IN_PROGRESS",
+  "started_at": "2026-10-13T16:09:34Z",
   "status": "OK",
   "trigger_source": "workflow-run"
  },
