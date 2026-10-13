@@ -3,38 +3,38 @@
   "commit_sha": "b6f617f80445",
   "components": {
     "dispatch": {
-      "age_seconds": 2058.8,
-      "as_of": "2026-10-13T12:58:15Z",
+      "age_seconds": 6085.5,
+      "as_of": "2026-10-13T13:34:08Z",
       "detail": "kickoff dispatcher heartbeat",
-      "status": "OK"
+      "status": "STALE"
     },
     "espn_fixtures": {
-      "age_seconds": 48908.9,
+      "age_seconds": 55088.6,
       "as_of": "2026-10-12T23:57:24Z",
       "detail": "ESPN fixture/lineup sync (STATUS.json)",
       "status": "OK"
     },
     "export": {
-      "age_seconds": 23022.7,
-      "as_of": "2026-10-13T07:08:51Z",
+      "age_seconds": 53.9,
+      "as_of": "2026-10-13T15:14:39Z",
       "detail": null,
-      "status": "STALE"
+      "status": "OK"
     },
     "kalshi_sweep": {
-      "age_seconds": 23037.0,
+      "age_seconds": 29216.7,
       "as_of": "2026-10-13T07:08:36Z",
       "detail": "exhaustive Kalshi soccer sweep (snapshots/STATUS.json)",
       "status": "STALE"
     },
     "market_data": {
-      "age_seconds": 23182.7,
-      "as_of": "2026-10-13T07:06:11Z",
+      "age_seconds": 938.3,
+      "as_of": "2026-10-13T14:59:55Z",
       "detail": null,
-      "status": "STALE"
+      "status": "OK"
     },
     "model": {
-      "age_seconds": 45794.4,
-      "as_of": "2026-10-13T00:49:19Z",
+      "age_seconds": 110.3,
+      "as_of": "2026-10-13T15:13:43Z",
       "detail": null,
       "status": "OK"
     },
@@ -51,22 +51,22 @@
       "status": "UNKNOWN"
     }
   },
-  "data_age_seconds": 45794.4,
+  "data_age_seconds": 938.3,
   "errors": [],
-  "freshness_status": "STALE",
-  "generated_at": "2026-10-13T13:32:33Z",
+  "freshness_status": "FRESH",
+  "generated_at": "2026-10-13T15:15:33Z",
   "kind": "health",
-  "last_export_attempt": "2026-10-13T13:32:33Z",
-  "last_market_capture": "2026-10-13T07:06:11Z",
-  "last_model_generated": "2026-10-13T00:49:19Z",
-  "last_successful_run": "2026-10-13T07:08:51Z",
-  "market_data_status": "STALE",
+  "last_export_attempt": "2026-10-13T15:15:33Z",
+  "last_market_capture": "2026-10-13T14:59:55Z",
+  "last_model_generated": "2026-10-13T15:13:43Z",
+  "last_successful_run": "2026-10-13T15:14:39Z",
+  "market_data_status": "OK",
   "model_status": "OK",
-  "next_scheduled_run": "2026-10-14T19:50:03Z",
-  "overall_status": "STALE",
-  "payload_run_id": "run_cb40c44dfd3009756b71",
+  "next_scheduled_run": "2026-10-14T19:50:02Z",
+  "overall_status": "RESEARCH_ONLY",
+  "payload_run_id": "run_8ae4915858fd8d19501b",
   "router_status": "UNKNOWN",
-  "run_id": "run_cb40c44dfd3009756b71",
+  "run_id": "run_8ae4915858fd8d19501b",
   "schema_version": "edge_finder.app.v1",
   "settlement_status": "UNKNOWN",
   "sport": "SOCCER",
