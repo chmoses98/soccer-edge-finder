@@ -1,12 +1,12 @@
 {
  "schema": "dispatch_reliability_v1",
- "generated_at": "2026-10-12T23:22:45Z",
+ "generated_at": "2026-10-13T00:56:04Z",
  "cadence": {
   "external_heartbeat_minutes": null,
   "github_backup_minutes": 60
  },
  "last_wake": {
-  "started_at": "2026-10-12T23:17:14Z",
+  "started_at": "2026-10-13T00:51:50Z",
   "trigger_source": "workflow-run",
   "status": "OK",
   "no_action_reason": null
@@ -31,12 +31,12 @@
   "capture_runs_failed": 0,
   "paid_calls": 12,
   "credits_spent": 36,
-  "fixtures_with_horizons": 15,
-  "horizons_eligible": 71,
-  "horizons_delivered": 71,
+  "fixtures_with_horizons": 14,
+  "horizons_eligible": 68,
+  "horizons_delivered": 68,
   "horizons_missed": 0,
   "horizon_states": {
-   "DELIVERED": 71
+   "DELIVERED": 68
   },
   "capture_success_rate": 1.0,
   "close_fixtures_eligible": 14,
@@ -45,10 +45,10 @@
  },
  "last_7d": {
   "span_hours": 168.0,
-  "heartbeats_actual": 138,
+  "heartbeats_actual": 137,
   "heartbeats_by_source": {
    "chain": 30,
-   "github-schedule-backup": 28,
+   "github-schedule-backup": 27,
    "workflow-run": 80
   },
   "heartbeats_failed": 0,
@@ -57,26 +57,26 @@
   "external_heartbeats_actual": 0,
   "external_trigger_success": null,
   "github_backup_expected": 168,
-  "github_backup_actual": 28,
-  "github_backup_success": 0.16666666666666666,
+  "github_backup_actual": 27,
+  "github_backup_success": 0.16071428571428573,
   "capture_runs": 29,
   "capture_runs_failed": 5,
   "paid_calls": 128,
   "credits_spent": 384,
   "fixtures_with_horizons": 156,
-  "horizons_eligible": 773,
-  "horizons_delivered": 748,
+  "horizons_eligible": 777,
+  "horizons_delivered": 752,
   "horizons_missed": 25,
   "horizon_states": {
-   "DELIVERED": 748,
+   "DELIVERED": 752,
    "MISSED_BEFORE_WAKE": 20,
    "MISSED_EXECUTION_FAILURE": 5,
    "NOT_APPLICABLE": 23
   },
-  "capture_success_rate": 0.9676584734799483,
-  "close_fixtures_eligible": 155,
-  "close_fixtures_delivered": 147,
-  "close_success_rate": 0.9483870967741935
+  "capture_success_rate": 0.9678249678249679,
+  "close_fixtures_eligible": 156,
+  "close_fixtures_delivered": 148,
+  "close_success_rate": 0.9487179487179487
  },
  "definition": "capture_success_rate = delivered / eligible horizons whose window closed in the span (NOT_APPLICABLE excluded); close_success_rate = fixtures with a T-15 or T-5 delivery / fixtures whose close windows closed in the span"
 }
