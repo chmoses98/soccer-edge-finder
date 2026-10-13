@@ -881,3 +881,196 @@ unmapped teams: 0 | proposals: {}
 [timings] {"assemble_fit_s": 2.82, "discovery_s": 0.0, "simulate_price_archive_s": 0.91, "total_s": 4.09, "mode": "fast+prefetched_sweep"}
 [board] 1 fixtures written by this run; 1 on the board -> work/runs/latest.model_board.v1.json
 [slate] {"slate_id": "slate-20261012T233107Z-5f8642", "mode": "model_refresh_and_reprice", "fixtures": 1, "contract_sides": 28, "simulations_run": 1, "odds_api_calls": 0, "reprice_runtime_s": 0.053, "price_changes_vs_previous": 6}
+# RUN SOCCER — 2026-10-12
+Run `run-20261012T233106Z-46e97d` generated 2026-10-12T23:31:07.467361Z · filters: {'leagues': [], 'games': ['fx:bra.serie_a:2026:bra.bragantino:bra.cruzeiro'], 'window_hours': 3, 'confirmed_lineups_only': False}
+
+## Coverage
+- contracts discovered: **4614** (discovery complete: True)
+- contracts evaluated: 14 · excluded mechanically: 1531 · unsupported/unknown: 3069
+- **unaccounted contracts: 0**
+- by disposition: priced=14, unknown_family=3, unsupported_family=3066, unmapped_event=412, no_fixture=132, filtered_by_operator=987
+- competitions discovered: APFDDH, ARGNACB, ARGPREMDIV, BELGIANPL, BRASILEIRO, BRASILEIROB, BRASILEIROC, BUNDESLIGA, CANPL, CHLLDP, CHNSL, CONCACAFGC, CONCACAFNL, CONMEBOLLIB, CONMEBOLSUD, COPAAMERICA, COPADELREY, COPADOBRASIL, DENSUPERLIGA, DFBPOKAL, DIMAYOR, ECULP, EFL, EFLCHAMPIONSHIP, EFLL1, EKSTRAKLASA, EPL, EREDIVISIE, FA, FIFAW, ISRNL, KLEAGUE, KNVB, LALIGA, LALIGA2, LIGAEXP, LIGAMX, LIGAPORTUGAL, LIGUE1, MLS, MLSEAST, MLSWEST, NWSL, PERLIGA1, PREMIERLEAGUE, SERIEA, SOCCER, SUPERLIG, SVK2L, SVKCUP, TACAPORT, THAIL1, UCL, UCLLEAGUE, UECL, UEFAEURO, UEFANL, UEFANLGROUP, UEL, URYPD, USL, VENFUTVE, WC, WCW
+
+## Freshness
+- as_of: 2026-10-12T23:31:06.595813Z; market_observed_at: 2026-10-12T23:28:39.351235Z; fixtures_observed_at: 2026-10-12T21:00:24.208807Z; results_observed_at: 2026-10-12T21:00:22.310186Z; model_fitted_at: 2026-10-12T23:31:05.117022Z; temporal_guard: {'decision_time': '2026-10-12T23:31:06.595813Z', 'checked': {'fixtures': 1, 'market_snapshots': 2, 'reference_odds': 1, 'results': 15}, 'latest_observed_at': {'fixtures': '2026-10-12T21:00:24.208807Z', 'market_snapshots': '2026-10-12T23:31:00.542014Z', 'reference_odds': '2026-10-12T21:00:24.404498Z', 'results': '2026-10-12T23:31:06.225016Z'}, 'violations': [], 'ok': True}
+- no freshness violations
+
+## Recommendations
+**NO BETS** — no contract met the robust-edge bar under an authority level that permits recommendations.
+
+## Shadow / research-only expressions (3)
+These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW. They are NOT recommendations.
+- Red Bull Bragantino vs Cruzeiro · btts · NO @ 0.3700 · fair 50.9% [38.1%–63.7%] · edge +12.2% · P(+) 89% · RESEARCH_ONLY · `KXBRASILEIROBTTS-26OCT12RBBCRU-BTTS`
+- Red Bull Bragantino vs Cruzeiro · Total goals over 2.5 · NO @ 0.4100 · fair 54.8% [38.4%–70.5%] · edge +12.1% · P(+) 83% · RESEARCH_ONLY · `KXBRASILEIROTOTAL-26OCT12RBBCRU-3`
+- Red Bull Bragantino vs Cruzeiro · Total goals over 0.5 · NO @ 0.0500 · fair 9.7% [4.6%–16.0%] · edge +4.4% · P(+) 85% · RESEARCH_ONLY · `KXBRASILEIROTOTAL-26OCT12RBBCRU-1`
+
+## Expressions removed by the reducer (3)
+- `KXBRASILEIROTOTAL-26OCT12RBBCRU-2` no: dominated by KXBRASILEIROBTTS-26OCT12RBBCRU-BTTS/no (corr +0.64)
+- `KXBRASILEIROTOTAL-26OCT12RBBCRU-4` no: dominated by KXBRASILEIROTOTAL-26OCT12RBBCRU-3/no (corr +0.64)
+- `KXBRASILEIROTOTAL-26OCT12RBBCRU-5` no: dominated by KXBRASILEIROTOTAL-26OCT12RBBCRU-3/no (corr +0.41)
+
+## Events
+- Red Bull Bragantino vs Cruzeiro (Brasileirão Série A) 2026-10-13T00:00:00Z · markets 14/14 evaluated · lineups unknown · xG 1.34-1.18 · 1X2 40%/28%/32%
+
+{
+  "outputs": {
+    "json": "work/runs/_pending/run_output.v1.json",
+    "md": "work/runs/_pending/RUN_SOCCER.md",
+    "contracts": "work/runs/_pending/priced_contracts.json",
+    "coverage": "work/runs/_pending/coverage.json",
+    "diagnostics": "work/runs/_pending/coverage_diagnostics.json"
+  },
+  "simulated": [
+    "fx:bra.serie_a:2026:bra.bragantino:bra.cruzeiro"
+  ],
+  "repriced": [],
+  "archived_records": 14
+}
+[dispatch] holding 11.3 min (next window opens in 10.7 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261012T234608Z",
+  "complete": true,
+  "discovered": 4896,
+  "written": 1056,
+  "path": "work/snapshots/2026-10-12/cap-20261012T234608Z.jsonl"
+}
+{
+  "reference_probabilities": 240,
+  "observed_at": "2026-10-12 21:00:24.404498+00:00",
+  "groups": 450,
+  "unmapped_fixture_groups": 210,
+  "incomplete_groups": 0,
+  "snapshots": 864,
+  "provider_notes": [
+    "199 rows, 109 skipped (unmapped division/team)",
+    "skipped_by_division={'B1': 9, 'D2': 9, 'E2': 12, 'E3': 12, 'EC': 12, 'F2': 9, 'G1': 7, 'I2': 10, 'N1': 2, 'SC1': 5, 'SC2': 5, 'SC3': 5, 'SP2': 11, 'T1': 1}",
+    "unknown_teams={'N1:For Sittard': 1, 'N1:Nijmegen': 1, 'T1:Goztep': 1}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-12T23:46:11.278262Z", "batch_id": "kd-20261012T234346Z", "credits_charged": 3, "paid_calls": 1, "snapshots": 7, "no_sport_key": [], "eligible_fixtures": 1, "per_sport": {"soccer_brazil_campeonato": {"fixtures": 1, "join": {"events": 2, "joined": 1, "ambiguous": 0, "unresolved_names": ["Bragantino-SP"], "unjoined_fixtures": []}, "status": "OK", "credits": 3, "snapshots": 7, "incomplete_markets": 0, "close_fixtures": 1, "entry_fixtures": 0}}, "remaining_after": 18684, "status": "OK"}
+{
+ "as_of": "2026-10-12T23:46:12.977747+00:00",
+ "leagues": [
+  "bra.1"
+ ],
+ "events": 3,
+ "fixtures_mapped": 3,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 1,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 2,
+  "captured": 1,
+  "unchanged": 1,
+  "published_pre_kickoff": 1,
+  "published_post": 1,
+  "unpublished": 0,
+  "failures": []
+ },
+ "results_appended": 1,
+ "weather": {
+  "events": 2,
+  "captured": 2,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261012T234614Z-9ed2c1", "mode": "reprice_only", "fixtures": 1, "contract_sides": 28, "simulations_run": 0, "odds_api_calls": 1, "reprice_runtime_s": 0.051, "price_changes_vs_previous": 0}
+[dispatch] holding 7.1 min (next window opens in 5.1 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261012T235722Z",
+  "complete": true,
+  "discovered": 4894,
+  "written": 1090,
+  "path": "work/snapshots/2026-10-12/cap-20261012T235722Z.jsonl"
+}
+{
+  "reference_probabilities": 240,
+  "observed_at": "2026-10-12 21:00:24.404498+00:00",
+  "groups": 450,
+  "unmapped_fixture_groups": 210,
+  "incomplete_groups": 0,
+  "snapshots": 864,
+  "provider_notes": [
+    "199 rows, 109 skipped (unmapped division/team)",
+    "skipped_by_division={'B1': 9, 'D2': 9, 'E2': 12, 'E3': 12, 'EC': 12, 'F2': 9, 'G1': 7, 'I2': 10, 'N1': 2, 'SC1': 5, 'SC2': 5, 'SC3': 5, 'SP2': 11, 'T1': 1}",
+    "unknown_teams={'N1:For Sittard': 1, 'N1:Nijmegen': 1, 'T1:Goztep': 1}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-12T23:57:24.857814Z", "batch_id": "kd-20261012T235500Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-10-12T23:57:24.885794+00:00",
+ "leagues": [
+  "bra.1"
+ ],
+ "events": 3,
+ "fixtures_mapped": 3,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 1,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 2,
+  "captured": 1,
+  "unchanged": 1,
+  "published_pre_kickoff": 1,
+  "published_post": 1,
+  "unpublished": 0,
+  "failures": []
+ },
+ "results_appended": 1,
+ "weather": {
+  "events": 2,
+  "captured": 2,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261012T235725Z-cc5e57", "mode": "reprice_only", "fixtures": 1, "contract_sides": 28, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.051, "price_changes_vs_previous": 4}
+[dispatch] holding 3.7 min (next window opens in 2631.4 min)
+[dispatch] holding 30.0 min (next window opens in 2627.7 min)
+[dispatch] holding 30.0 min (next window opens in 2597.6 min)
+[dispatch] holding 30.0 min (next window opens in 2567.6 min)
+[dispatch] holding 30.0 min (next window opens in 2537.6 min)
+[dispatch] holding 24.5 min (next window opens in 2507.6 min)
+{
+ "batches": 11,
+ "horizons_delivered": 12,
+ "missed_states": {},
+ "paid_calls": 4,
+ "credits_spent": 12,
+ "end_reason": "link_time_limit",
+ "chain_continue": true,
+ "delivered_total": 1058,
+ "missed_total": 162,
+ "delivery_rate_total": 0.8672131147540983
+}
