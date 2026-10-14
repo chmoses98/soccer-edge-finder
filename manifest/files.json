@@ -5784,6 +5784,18 @@
       "recovery_id": null,
       "sha256_prefix": "a28f4eb5c77839dad377b4804e529b170c9f8250e062149be31ff1e43ebefacb"
     },
+    "fixtures/espn/2026-10-14/espn-134919.json": {
+      "byte_length": 212361,
+      "closed": true,
+      "day": "2026-10-14",
+      "first_manifested_at": "2026-10-14T13:52:34.000617Z",
+      "immutable": true,
+      "line_count": null,
+      "record_level": false,
+      "record_type": "espn_fixtures",
+      "recovery_id": null,
+      "sha256_prefix": "484ce556c6af4f4dce31118aa3c6dd09b8015ef3e2f9f4b1128248a67e5902f0"
+    },
     "lineups/2026-09-28/bra.2.jsonl": {
       "byte_length": 562,
       "closed": true,
@@ -8693,16 +8705,16 @@
       "sha256_prefix": "c8b26b7122b7eb483bc1d21ea3640550b48656a400bdd86ede7aff83c0ed52cc"
     },
     "lineups/2026-10-14/arg.1.jsonl": {
-      "byte_length": 1122,
+      "byte_length": 1683,
       "closed": false,
       "day": "2026-10-14",
       "first_manifested_at": "2026-10-14T01:21:21.498648Z",
       "immutable": false,
-      "line_count": 2,
+      "line_count": 3,
       "record_level": true,
       "record_type": "lineup",
       "recovery_id": null,
-      "sha256_prefix": "24105047c68c444be2d560cfdea9740eb117f43b23933aa149a063f3806d5920"
+      "sha256_prefix": "1bcce721d44cae85b30edf312ba6cd5f8c2b94868d5626c8f1dc935c9130cc78"
     },
     "lineups/2026-10-14/bra.2.jsonl": {
       "byte_length": 7818,
@@ -8717,88 +8729,100 @@
       "sha256_prefix": "4b7d6700df3f654f6dd500f5c1bc0c3d1a8f0cc9eb1e0d60a6ecc734639601a0"
     },
     "lineups/2026-10-14/col.1.jsonl": {
-      "byte_length": 16824,
+      "byte_length": 17949,
       "closed": false,
       "day": "2026-10-14",
       "first_manifested_at": "2026-10-14T01:21:21.498885Z",
-      "immutable": false,
-      "line_count": 6,
-      "record_level": true,
-      "record_type": "lineup",
-      "recovery_id": null,
-      "sha256_prefix": "7a406d0a9430e7ab1c84aebe282cd6c0783d785e2ee9f85c4c96acb01f66cbbb"
-    },
-    "lineups/2026-10-14/conmebol.libertadores.jsonl": {
-      "byte_length": 1188,
-      "closed": false,
-      "day": "2026-10-14",
-      "first_manifested_at": "2026-10-14T01:21:21.498921Z",
-      "immutable": false,
-      "line_count": 2,
-      "record_level": true,
-      "record_type": "lineup",
-      "recovery_id": null,
-      "sha256_prefix": "0bca2d28241604502eb2d8d26e127ce1f9d33865855261380c0957742a6a42ec"
-    },
-    "lineups/2026-10-14/conmebol.sudamericana.jsonl": {
-      "byte_length": 9469,
-      "closed": false,
-      "day": "2026-10-14",
-      "first_manifested_at": "2026-10-14T01:21:21.499002Z",
-      "immutable": false,
-      "line_count": 3,
-      "record_level": true,
-      "record_type": "lineup",
-      "recovery_id": null,
-      "sha256_prefix": "676d4b66cfaa122d5cf9c74d8bb88aaa95cfd5a4fab59431390773ca02c24cb3"
-    },
-    "lineups/2026-10-14/eng.2.jsonl": {
-      "byte_length": 4480,
-      "closed": false,
-      "day": "2026-10-14",
-      "first_manifested_at": "2026-10-14T01:21:21.499048Z",
       "immutable": false,
       "line_count": 8,
       "record_level": true,
       "record_type": "lineup",
       "recovery_id": null,
-      "sha256_prefix": "98c3633d714dde302a958c81a594e5147b0a117da66ebcb85835769b3a17ce9e"
+      "sha256_prefix": "f891cc13ec9684d18f43809f2d7f485ccb01ee41f3f5c9510efcec6f4f42f4d9"
+    },
+    "lineups/2026-10-14/conmebol.libertadores.jsonl": {
+      "byte_length": 1782,
+      "closed": false,
+      "day": "2026-10-14",
+      "first_manifested_at": "2026-10-14T01:21:21.498921Z",
+      "immutable": false,
+      "line_count": 3,
+      "record_level": true,
+      "record_type": "lineup",
+      "recovery_id": null,
+      "sha256_prefix": "764ca5f074b779ed44435e3135fc28a5a6af4b9ad22ca6923da0d9d11cb518b3"
+    },
+    "lineups/2026-10-14/conmebol.sudamericana.jsonl": {
+      "byte_length": 10064,
+      "closed": false,
+      "day": "2026-10-14",
+      "first_manifested_at": "2026-10-14T01:21:21.499002Z",
+      "immutable": false,
+      "line_count": 4,
+      "record_level": true,
+      "record_type": "lineup",
+      "recovery_id": null,
+      "sha256_prefix": "d32acc4dcf91f7a4b49c8b546f101f23486ee5f4c289ab738af9b374d6bac132"
+    },
+    "lineups/2026-10-14/eng.2.jsonl": {
+      "byte_length": 6720,
+      "closed": false,
+      "day": "2026-10-14",
+      "first_manifested_at": "2026-10-14T01:21:21.499048Z",
+      "immutable": false,
+      "line_count": 12,
+      "record_level": true,
+      "record_type": "lineup",
+      "recovery_id": null,
+      "sha256_prefix": "e0aca109d0aea99a2c3acb282579c2c6b83ea059f0e4d08ded342ebf7d52da43"
+    },
+    "lineups/2026-10-14/ksa.1.jsonl": {
+      "byte_length": 1692,
+      "closed": false,
+      "day": "2026-10-14",
+      "first_manifested_at": "2026-10-14T13:52:34.011789Z",
+      "immutable": false,
+      "line_count": 3,
+      "record_level": true,
+      "record_type": "lineup",
+      "recovery_id": null,
+      "sha256_prefix": "cd505f230cf3253bb81b0787a3b230d3de2792aefb223ac429fc5fb35c9ee99b"
     },
     "lineups/2026-10-14/uefa.champions.jsonl": {
-      "byte_length": 10408,
+      "byte_length": 15612,
       "closed": false,
       "day": "2026-10-14",
       "first_manifested_at": "2026-10-14T01:21:21.499120Z",
       "immutable": false,
-      "line_count": 18,
+      "line_count": 27,
       "record_level": true,
       "record_type": "lineup",
       "recovery_id": null,
-      "sha256_prefix": "e47633079d63a0c5f962e823318ed23d3462e6478d540b9a613a659caf1a3b52"
+      "sha256_prefix": "248c1258de8118c21d2719b5027586fbac01a8f10e59e843dec6d041bfcf8ee5"
     },
     "lineups/2026-10-14/usa.1.jsonl": {
-      "byte_length": 16686,
+      "byte_length": 25029,
       "closed": false,
       "day": "2026-10-14",
       "first_manifested_at": "2026-10-14T01:21:21.499220Z",
       "immutable": false,
-      "line_count": 30,
+      "line_count": 45,
       "record_level": true,
       "record_type": "lineup",
       "recovery_id": null,
-      "sha256_prefix": "41b651c81dea11509ca79e9ca99956f41ece197a12b7b89bc4876723f2ea904b"
+      "sha256_prefix": "9af44c52cc506cc6430fe383318993934655da026e89cf46b49d7e15aa98a0d2"
     },
     "lineups/2026-10-14/usa.usl.1.jsonl": {
-      "byte_length": 15802,
+      "byte_length": 23703,
       "closed": false,
       "day": "2026-10-14",
       "first_manifested_at": "2026-10-14T01:21:21.499297Z",
       "immutable": false,
-      "line_count": 6,
+      "line_count": 9,
       "record_level": true,
       "record_type": "lineup",
       "recovery_id": null,
-      "sha256_prefix": "b007960bc55059fe8f4ca02e78f34883476fc52216fa4ddf2071f92d8e69eeb0"
+      "sha256_prefix": "ed20e45192f801bce20a7bf2c8b49b2336ff7a8d258d700383f91903eaf43334"
     },
     "lineups/history/eng.1.jsonl": {
       "byte_length": 5849432,
@@ -35119,18 +35143,18 @@
       "sha256_prefix": "cb734b67fb5d170613c20ab6e6184c34e2fec04245cbb4f26b6ba7cbd00d2e7e"
     },
     "weather/2026-10-14.jsonl": {
-      "byte_length": 11619,
+      "byte_length": 17698,
       "closed": false,
       "day": "2026-10-14",
       "first_manifested_at": "2026-10-14T01:21:21.604170Z",
       "immutable": false,
-      "line_count": 21,
+      "line_count": 32,
       "record_level": true,
       "record_type": "weather",
       "recovery_id": null,
-      "sha256_prefix": "ec91ddbe4d72e2e531377b7b6e254be9b55e97ca6d85dd67f2eba6a3401955fe"
+      "sha256_prefix": "c81d96d12daa8eaf7940b4109f5c40316e938900d3b1d7e444c567a1d3ab6374"
     }
   },
   "manifest_version": 1,
-  "updated_at": "2026-10-14T13:49:01.900277Z"
+  "updated_at": "2026-10-14T13:52:34.210979Z"
 }
