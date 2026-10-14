@@ -1,13 +1,13 @@
 {
  "schema": "dispatch_reliability_v1",
- "generated_at": "2026-10-14T01:55:19Z",
+ "generated_at": "2026-10-14T06:15:07Z",
  "cadence": {
   "external_heartbeat_minutes": null,
   "github_backup_minutes": 60
  },
  "last_wake": {
-  "started_at": "2026-10-14T01:51:02Z",
-  "trigger_source": "github-schedule-backup",
+  "started_at": "2026-10-14T06:11:27Z",
+  "trigger_source": "chain",
   "status": "OK",
   "no_action_reason": null
  },
@@ -43,11 +43,11 @@
  },
  "last_7d": {
   "span_hours": 168.0,
-  "heartbeats_actual": 136,
+  "heartbeats_actual": 135,
   "heartbeats_by_source": {
    "chain": 31,
    "github-schedule-backup": 28,
-   "workflow-run": 77
+   "workflow-run": 76
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -61,20 +61,19 @@
   "capture_runs_failed": 1,
   "paid_calls": 132,
   "credits_spent": 396,
-  "fixtures_with_horizons": 156,
-  "horizons_eligible": 777,
-  "horizons_delivered": 752,
+  "fixtures_with_horizons": 155,
+  "horizons_eligible": 775,
+  "horizons_delivered": 750,
   "horizons_missed": 25,
   "horizon_states": {
-   "DELIVERED": 752,
+   "DELIVERED": 750,
    "MISSED_BEFORE_WAKE": 20,
-   "MISSED_EXECUTION_FAILURE": 5,
-   "NOT_APPLICABLE": 3
+   "MISSED_EXECUTION_FAILURE": 5
   },
-  "capture_success_rate": 0.9678249678249679,
-  "close_fixtures_eligible": 156,
-  "close_fixtures_delivered": 148,
-  "close_success_rate": 0.9487179487179487
+  "capture_success_rate": 0.967741935483871,
+  "close_fixtures_eligible": 155,
+  "close_fixtures_delivered": 147,
+  "close_success_rate": 0.9483870967741935
  },
  "definition": "capture_success_rate = delivered / eligible horizons whose window closed in the span (NOT_APPLICABLE excluded); close_success_rate = fixtures with a T-15 or T-5 delivery / fixtures whose close windows closed in the span"
 }
