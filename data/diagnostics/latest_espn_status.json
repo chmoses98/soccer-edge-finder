@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-14T13:49:19.540112+00:00",
+  "as_of": "2026-10-14T18:42:40.955920+00:00",
   "events": 632,
   "events_skipped_unmapped": 318,
   "fixtures_mapped": 314,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=20"
+      "weather_stopped:consecutive_failures:skipped=40"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 39,
-    "events": 39,
+    "captured": 76,
+    "events": 76,
     "failures": [],
-    "published_post": 1,
-    "published_pre_kickoff": 0,
+    "published_post": 3,
+    "published_pre_kickoff": 11,
     "unchanged": 0,
-    "unpublished": 38
+    "unpublished": 62
   },
   "map_proposals": {
     "bel.1": {
@@ -173,7 +173,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 0,
+  "results_appended": 2,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -230,17 +230,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 11,
-    "events": 34,
+    "captured": 13,
+    "events": 56,
     "failures": [
-      "401861477: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=34.7578&longitude=113.6486&hourly=t",
-      "401861478: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Dalian&count=5&language=en&form",
-      "401861510: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=36.0649&longitude=120.3804&hourly=t"
+      "401861478: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=38.9122&longitude=121.6022&hourly=t",
+      "401861510: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=36.0649&longitude=120.3804&hourly=t",
+      "401861511: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Yuxi&count=5&language=en&format"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 20,
+    "skipped": 40,
     "stopped": "consecutive_failures"
   }
 }
