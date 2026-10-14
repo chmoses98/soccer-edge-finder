@@ -1,10 +1,10 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 76,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 77,
   "PINNACLE_VALID_CLOSE": 102,
-  "NO_SPORT_KEY": 19,
+  "PINNACLE_QUOTED_NOTHING": 15,
   "MISSED_DISPATCHER_CLOSE": 32,
-  "PINNACLE_QUOTED_NOTHING": 15
+  "NO_SPORT_KEY": 19
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.sarmiento": {
@@ -96,6 +96,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261011T173000Z"
+  },
+  "fx:arg.primera:2026:arg.sarmiento:arg.river_plate": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
   },
   "fx:arg.primera:2026:arg.talleres:arg.independiente": {
    "state": "PINNACLE_VALID_CLOSE",
