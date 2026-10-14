@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261014T120213Z-12d8dd` · generated 2026-10-14T12:02:13.984559Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261014T121743Z-df354e` · generated 2026-10-14T12:17:43.813337Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-14T11:59:44.069439Z (CURRENT at publish; CURRENT until 2026-10-14T12:19:44.069439Z, STALE after 2026-10-14T12:29:44.069439Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-14T12:15:13.856460Z (CURRENT at publish; CURRENT until 2026-10-14T12:35:13.856460Z, STALE after 2026-10-14T12:45:13.856460Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-13T20:53:18.232219Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.25s
+model board generated 2026-10-13T20:53:18.232219Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.36s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -53,6 +53,7 @@ model board generated 2026-10-13T20:53:18.232219Z · simulations this update: 0 
 | Los Angeles FC vs Austin FC | Total goals over 2.5 | no | 0.3900 | 0.565 [0.398, 0.727] | +0.158 | +0.059 | 0.44 | - |  | RESEARCH_CANDIDATE |
 | San Diego FC vs Houston Dynamo | Total goals over 3.5 | no | 0.6500 | 0.794 [0.665, 0.899] | +0.128 | +0.058 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | San Diego FC vs Houston Dynamo | Total goals over 2.5 | no | 0.4300 | 0.600 [0.441, 0.744] | +0.153 | +0.057 | 0.48 | - |  | RESEARCH_CANDIDATE |
+| Columbus Crew vs Charlotte FC | Total goals over 3.5 | no | 0.5500 | 0.711 [0.552, 0.845] | +0.144 | +0.057 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | D.C. United vs New York Red Bulls | First-half total goals over 1.5 | no | 0.5700 | 0.714 [0.598, 0.822] | +0.126 | +0.053 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | San Diego FC vs Houston Dynamo | away team total over 1.5 | no | 0.6300 | 0.763 [0.647, 0.865] | +0.117 | +0.050 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs San Jose Earthquakes | btts | no | 0.3500 | 0.494 [0.375, 0.608] | +0.128 | +0.050 | 0.39 | - | * | RESEARCH_CANDIDATE |
@@ -62,8 +63,7 @@ model board generated 2026-10-13T20:53:18.232219Z · simulations this update: 0 
 | San Diego FC vs Houston Dynamo | away team total over 0.5 | no | 0.2700 | 0.408 [0.289, 0.527] | +0.124 | +0.047 | 0.31 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs San Jose Earthquakes | Total goals over 2.5 | no | 0.3500 | 0.513 [0.353, 0.670] | +0.147 | +0.046 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs Sporting Kansas City | away team total over 1.5 | no | 0.7600 | 0.863 [0.779, 0.933] | +0.090 | +0.045 | 0.8 | - | * | RESEARCH_CANDIDATE |
-| Columbus Crew vs Charlotte FC | Total goals over 2.5 | no | 0.3400 | 0.502 [0.334, 0.659] | +0.147 | +0.045 | 0.38 | - | * | RESEARCH_CANDIDATE |
-| Columbus Crew vs Charlotte FC | Total goals over 4.5 | no | 0.7400 | 0.854 [0.739, 0.941] | +0.100 | +0.044 | 0.78 | - |  | RESEARCH_CANDIDATE |
+| Columbus Crew vs Charlotte FC | Total goals over 2.5 | no | 0.3400 | 0.502 [0.334, 0.659] | +0.147 | +0.045 | 0.38 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Austin FC | Total goals over 4.5 | no | 0.7900 | 0.889 [0.796, 0.963] | +0.087 | +0.044 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | San Diego FC vs Houston Dynamo | Total goals over 1.5 | no | 0.2000 | 0.341 [0.209, 0.472] | +0.130 | +0.043 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | CF Montréal vs Atlanta United | Total goals over 5.5 | no | 0.9000 | 0.965 [0.932, 0.991] | +0.059 | +0.043 | 0.94 | - |  | RESEARCH_CANDIDATE |
@@ -76,8 +76,8 @@ model board generated 2026-10-13T20:53:18.232219Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1872
-action_NO_QUOTE: 265
+action_NO_EDGE: 1820
+action_NO_QUOTE: 317
 action_RESEARCH_CANDIDATE: 139
 contract_sides: 2276
 fixtures: 15
