@@ -1,13 +1,11 @@
 {
-  "as_of": "2026-10-14T23:17:48.415037+00:00",
+  "as_of": "2026-10-14T23:22:58.880220+00:00",
   "events": 15,
   "events_skipped_unmapped": 0,
   "fixtures_mapped": 15,
   "health": {
-    "reasons": [
-      "weather_failures:2"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
     "usa.1"
@@ -30,12 +28,9 @@
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 12,
+    "captured": 14,
     "events": 15,
-    "failures": [
-      "761873: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Los%20Angeles&count=5&language=",
-      "761872: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=San%20Diego&count=5&language=en"
-    ],
+    "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 1,
     "no_venue": 0,
