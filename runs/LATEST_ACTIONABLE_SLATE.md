@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261014T200941Z-c232a6` · generated 2026-10-14T20:09:41.896578Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261014T202443Z-35bc3d` · generated 2026-10-14T20:24:43.897190Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-14T20:06:59.815265Z (CURRENT at publish; CURRENT until 2026-10-14T20:26:59.815265Z, STALE after 2026-10-14T20:36:59.815265Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-14T20:22:01.946247Z (CURRENT at publish; CURRENT until 2026-10-14T20:42:01.946247Z, STALE after 2026-10-14T20:52:01.946247Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-14T19:34:47.441542Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.26s
+model board generated 2026-10-14T19:34:47.441542Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.24s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -33,7 +33,7 @@ model board generated 2026-10-14T19:34:47.441542Z · simulations this update: 0 
 | 2026-10-16T18:45:00Z | Frosinone vs Sassuolo (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-16T19:00:00Z | Deportivo La Coruña vs Levante (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 72 | 0 |
 
-## Candidates on CURRENT prices (140; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (141; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -72,8 +72,8 @@ model board generated 2026-10-14T19:34:47.441542Z · simulations this update: 0 
 | Real Salt Lake vs San Jose Earthquakes | Total goals over 3.5 | no | 0.5700 | 0.721 [0.573, 0.852] | +0.134 | +0.049 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | D.C. United vs New York Red Bulls | Total goals over 5.5 | no | 0.8800 | 0.957 [0.910, 0.989] | +0.069 | +0.049 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | FC Dallas vs Seattle Sounders | away team total over 0.5 | no | 0.2500 | 0.395 [0.272, 0.513] | +0.132 | +0.049 | 0.29 | - |  | RESEARCH_CANDIDATE |
-| D.C. United vs New York Red Bulls | First-half exact score 0-0 (home-away) | yes | 0.2200 | 0.353 [0.248, 0.462] | +0.121 | +0.048 | 0.26 | - | * | RESEARCH_CANDIDATE |
 | D.C. United vs New York Red Bulls | First-half total goals over 0.5 | no | 0.2200 | 0.353 [0.248, 0.462] | +0.121 | +0.048 | 0.26 | - |  | RESEARCH_CANDIDATE |
+| Toronto FC vs Orlando City | away team total over 1.5 | no | 0.4800 | 0.630 [0.486, 0.760] | +0.133 | +0.047 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | CF Montréal vs Atlanta United | First-half total goals over 0.5 | no | 0.2400 | 0.371 [0.258, 0.482] | +0.119 | +0.047 | 0.28 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Austin FC | away team total over 0.5 | no | 0.3800 | 0.515 [0.399, 0.630] | +0.119 | +0.047 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs San Jose Earthquakes | Total goals over 2.5 | no | 0.3500 | 0.513 [0.352, 0.670] | +0.147 | +0.046 | 0.39 | - |  | RESEARCH_CANDIDATE |
@@ -81,9 +81,9 @@ model board generated 2026-10-14T19:34:47.441542Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1861
+action_NO_EDGE: 1860
 action_NO_QUOTE: 887
-action_RESEARCH_CANDIDATE: 140
+action_RESEARCH_CANDIDATE: 141
 contract_sides: 2888
 fixtures: 20
 fixtures_model_invalidated: 0
