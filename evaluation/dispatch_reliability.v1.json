@@ -1,12 +1,12 @@
 {
  "schema": "dispatch_reliability_v1",
- "generated_at": "2026-10-13T22:43:44Z",
+ "generated_at": "2026-10-14T01:55:19Z",
  "cadence": {
   "external_heartbeat_minutes": null,
   "github_backup_minutes": 60
  },
  "last_wake": {
-  "started_at": "2026-10-13T22:39:42Z",
+  "started_at": "2026-10-14T01:51:02Z",
   "trigger_source": "github-schedule-backup",
   "status": "OK",
   "no_action_reason": null
@@ -15,9 +15,9 @@
   "span_hours": 24.0,
   "heartbeats_actual": 21,
   "heartbeats_by_source": {
-   "chain": 4,
+   "chain": 5,
    "github-schedule-backup": 4,
-   "workflow-run": 13
+   "workflow-run": 12
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -27,29 +27,27 @@
   "github_backup_expected": 24,
   "github_backup_actual": 4,
   "github_backup_success": 0.16666666666666666,
-  "capture_runs": 3,
+  "capture_runs": 4,
   "capture_runs_failed": 0,
   "paid_calls": 0,
   "credits_spent": 0,
-  "fixtures_with_horizons": 1,
-  "horizons_eligible": 5,
-  "horizons_delivered": 5,
+  "fixtures_with_horizons": 0,
+  "horizons_eligible": 0,
+  "horizons_delivered": 0,
   "horizons_missed": 0,
-  "horizon_states": {
-   "DELIVERED": 5
-  },
-  "capture_success_rate": 1.0,
-  "close_fixtures_eligible": 1,
-  "close_fixtures_delivered": 1,
-  "close_success_rate": 1.0
+  "horizon_states": {},
+  "capture_success_rate": null,
+  "close_fixtures_eligible": 0,
+  "close_fixtures_delivered": 0,
+  "close_success_rate": null
  },
  "last_7d": {
   "span_hours": 168.0,
-  "heartbeats_actual": 139,
+  "heartbeats_actual": 136,
   "heartbeats_by_source": {
-   "chain": 30,
+   "chain": 31,
    "github-schedule-backup": 28,
-   "workflow-run": 81
+   "workflow-run": 77
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -59,7 +57,7 @@
   "github_backup_expected": 168,
   "github_backup_actual": 28,
   "github_backup_success": 0.16666666666666666,
-  "capture_runs": 29,
+  "capture_runs": 30,
   "capture_runs_failed": 1,
   "paid_calls": 132,
   "credits_spent": 396,
@@ -71,7 +69,7 @@
    "DELIVERED": 752,
    "MISSED_BEFORE_WAKE": 20,
    "MISSED_EXECUTION_FAILURE": 5,
-   "NOT_APPLICABLE": 23
+   "NOT_APPLICABLE": 3
   },
   "capture_success_rate": 0.9678249678249679,
   "close_fixtures_eligible": 156,

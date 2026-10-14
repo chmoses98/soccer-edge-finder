@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-13T22:43:41.557591Z",
+  "as_of": "2026-10-14T01:55:15.266066Z",
   "by_competition": {
     "afc.champions": {
       "fixtures": 14,
@@ -44,9 +44,9 @@
       "with_xi_ge_20min": 0
     },
     "col.1": {
-      "fixtures": 17,
-      "median_lead_minutes": 27.760112474999996,
-      "with_pre_kickoff_xi": 2,
+      "fixtures": 19,
+      "median_lead_minutes": 14.424006616666667,
+      "with_pre_kickoff_xi": 3,
       "with_xi_ge_20min": 1
     },
     "concacaf.nations.league": {
@@ -54,6 +54,12 @@
       "median_lead_minutes": 28.422803050000002,
       "with_pre_kickoff_xi": 12,
       "with_xi_ge_20min": 12
+    },
+    "conmebol.sudamericana": {
+      "fixtures": 1,
+      "median_lead_minutes": null,
+      "with_pre_kickoff_xi": 0,
+      "with_xi_ge_20min": 0
     },
     "den.1": {
       "fixtures": 6,
@@ -6269,22 +6275,22 @@
       "xi_first_observed_at": "2026-10-11T13:08:40.203320+00:00"
     }
   ],
-  "fixtures_kickoff_passed": 603,
-  "fixtures_tracked": 625,
+  "fixtures_kickoff_passed": 606,
+  "fixtures_tracked": 643,
   "lead_time_minutes": {
     "max": 57.43608363333333,
-    "median": 28.4525334,
+    "median": 28.448858383333334,
     "min": 0.5079127666666666,
-    "n": 187,
-    "p10": 13.574081256666666,
-    "p90": 47.94645291
+    "n": 188,
+    "p10": 13.226295691666667,
+    "p90": 47.946157595
   },
-  "post_kickoff_first_xi": 169,
+  "post_kickoff_first_xi": 172,
   "schema": "lineup_lead_time_v1",
-  "share_pre_kickoff_xi": 0.3101160862354892,
-  "share_xi_ge_20min": 0.24378109452736318,
+  "share_pre_kickoff_xi": 0.3102310231023102,
+  "share_xi_ge_20min": 0.24257425742574257,
   "target": "audit \u00a7I1: >= 90% of priced fixtures with a confirmed XI captured >= 20 min before kickoff",
-  "with_any_xi": 356,
-  "with_pre_kickoff_xi": 187,
+  "with_any_xi": 360,
+  "with_pre_kickoff_xi": 188,
   "with_xi_ge_20min_before_kickoff": 147
 }
