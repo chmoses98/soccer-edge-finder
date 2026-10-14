@@ -1,12 +1,11 @@
 {
-  "as_of": "2026-10-14T23:02:45.545812+00:00",
+  "as_of": "2026-10-14T23:17:48.415037+00:00",
   "events": 15,
   "events_skipped_unmapped": 0,
   "fixtures_mapped": 15,
   "health": {
     "reasons": [
-      "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=6"
+      "weather_failures:2"
     ],
     "state": "DEGRADED"
   },
@@ -14,12 +13,12 @@
     "usa.1"
   ],
   "lineups": {
-    "captured": 6,
+    "captured": 0,
     "events": 15,
     "failures": [],
     "published_post": 0,
     "published_pre_kickoff": 6,
-    "unchanged": 9,
+    "unchanged": 15,
     "unpublished": 9
   },
   "map_proposals": {},
@@ -31,17 +30,16 @@
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 6,
+    "captured": 12,
     "events": 15,
     "failures": [
-      "761869: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Chicago&count=5&language=en&for",
-      "761867: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Toyota%20Stadium&count=5&langua",
-      "761866: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Nashville&count=5&language=en&f"
+      "761873: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Los%20Angeles&count=5&language=",
+      "761872: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=San%20Diego&count=5&language=en"
     ],
     "forecast_miss": 0,
-    "geocode_miss": 0,
+    "geocode_miss": 1,
     "no_venue": 0,
-    "skipped": 6,
-    "stopped": "consecutive_failures"
+    "skipped": 0,
+    "stopped": null
   }
 }
