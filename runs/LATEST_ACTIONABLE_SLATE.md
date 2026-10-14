@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261014T203943Z-6ce110` · generated 2026-10-14T20:39:43.882656Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261014T205445Z-2eb10a` · generated 2026-10-14T20:54:45.161365Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-14T20:37:01.955649Z (CURRENT at publish; CURRENT until 2026-10-14T20:57:01.955649Z, STALE after 2026-10-14T21:07:01.955649Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-14T20:52:03.101201Z (CURRENT at publish; CURRENT until 2026-10-14T21:12:03.101201Z, STALE after 2026-10-14T21:22:03.101201Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-14T19:34:47.441542Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.05s
 
@@ -12,28 +12,28 @@ model board generated 2026-10-14T19:34:47.441542Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-14T23:30:00Z | CF Montréal vs Atlanta United (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-10-14T23:30:00Z | FC Cincinnati vs New England Revolution (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-10-14T23:30:00Z | Columbus Crew vs Charlotte FC (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-10-14T23:30:00Z | D.C. United vs New York Red Bulls (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-10-14T23:30:00Z | Inter Miami vs New York City FC (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-10-14T23:30:00Z | Toronto FC vs Orlando City (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-10-15T00:30:00Z | Chicago Fire vs Philadelphia Union (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-10-15T00:30:00Z | FC Dallas vs Seattle Sounders (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-10-15T00:30:00Z | Nashville SC vs Sporting Kansas City (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-10-15T00:30:00Z | St. Louis City SC vs Vancouver Whitecaps (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 32 | 0 |
-| 2026-10-15T01:30:00Z | Colorado Rapids vs Minnesota United (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-10-15T01:30:00Z | Real Salt Lake vs San Jose Earthquakes (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-10-15T02:30:00Z | LA Galaxy vs Portland Timbers (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-10-15T02:30:00Z | Los Angeles FC vs Austin FC (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-10-15T02:30:00Z | San Diego FC vs Houston Dynamo (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-10-14T23:30:00Z | CF Montréal vs Atlanta United (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-10-14T23:30:00Z | FC Cincinnati vs New England Revolution (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-10-14T23:30:00Z | Columbus Crew vs Charlotte FC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-10-14T23:30:00Z | D.C. United vs New York Red Bulls (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-10-14T23:30:00Z | Inter Miami vs New York City FC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-10-14T23:30:00Z | Toronto FC vs Orlando City (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-10-15T00:30:00Z | Chicago Fire vs Philadelphia Union (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-10-15T00:30:00Z | FC Dallas vs Seattle Sounders (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-10-15T00:30:00Z | Nashville SC vs Sporting Kansas City (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-10-15T00:30:00Z | St. Louis City SC vs Vancouver Whitecaps (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 32 | 0 |
+| 2026-10-15T01:30:00Z | Colorado Rapids vs Minnesota United (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-10-15T01:30:00Z | Real Salt Lake vs San Jose Earthquakes (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-10-15T02:30:00Z | LA Galaxy vs Portland Timbers (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-10-15T02:30:00Z | Los Angeles FC vs Austin FC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-10-15T02:30:00Z | San Diego FC vs Houston Dynamo (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-10-15T23:00:00Z | Huracán vs Gimnasia La Plata (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-16T18:30:00Z | Eintracht Frankfurt vs 1. FC Köln (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-16T18:45:00Z | Le Mans vs Toulouse (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-16T18:45:00Z | Frosinone vs Sassuolo (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-16T19:00:00Z | Deportivo La Coruña vs Levante (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 72 | 0 |
 
-## Candidates on CURRENT prices (141; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (139; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -41,8 +41,8 @@ model board generated 2026-10-14T19:34:47.441542Z · simulations this update: 0 
 | D.C. United vs New York Red Bulls | btts | no | 0.3300 | 0.546 [0.427, 0.663] | +0.201 | +0.125 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | D.C. United vs New York Red Bulls | Total goals over 3.5 | no | 0.5600 | 0.772 [0.633, 0.888] | +0.195 | +0.118 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | D.C. United vs New York Red Bulls | Total goals over 2.5 | no | 0.3400 | 0.574 [0.409, 0.725] | +0.218 | +0.118 | 0.45 | - |  | RESEARCH_CANDIDATE |
+| CF Montréal vs Atlanta United | away team total over 1.5 | no | 0.5600 | 0.760 [0.648, 0.862] | +0.183 | +0.115 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | CF Montréal vs Atlanta United | Total goals over 2.5 | no | 0.3900 | 0.602 [0.462, 0.740] | +0.195 | +0.105 | 0.49 | - | * | RESEARCH_CANDIDATE |
-| CF Montréal vs Atlanta United | away team total over 1.5 | no | 0.5700 | 0.760 [0.648, 0.862] | +0.173 | +0.105 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | CF Montréal vs Atlanta United | btts | no | 0.3700 | 0.563 [0.453, 0.676] | +0.177 | +0.105 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | CF Montréal vs Atlanta United | Total goals over 3.5 | no | 0.6100 | 0.796 [0.685, 0.897] | +0.170 | +0.104 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | D.C. United vs New York Red Bulls | away team total over 0.5 | no | 0.2000 | 0.396 [0.277, 0.523] | +0.184 | +0.101 | 0.29 | - |  | RESEARCH_CANDIDATE |
@@ -81,9 +81,9 @@ model board generated 2026-10-14T19:34:47.441542Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1861
-action_NO_QUOTE: 886
-action_RESEARCH_CANDIDATE: 141
+action_NO_EDGE: 1864
+action_NO_QUOTE: 885
+action_RESEARCH_CANDIDATE: 139
 contract_sides: 2888
 fixtures: 20
 fixtures_model_invalidated: 0
