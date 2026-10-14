@@ -1039,3 +1039,46 @@ These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW
 - D.C. United vs New York Red Bulls (Major League Soccer) 2026-10-14T23:30:00Z · markets 79/80 evaluated · lineups unknown · xG 1.45-0.96 · 1X2 48%/27%/26%
 - Columbus Crew vs Charlotte FC (Major League Soccer) 2026-10-14T23:30:00Z · markets 79/80 evaluated · lineups unknown · xG 1.53-1.17 · 1X2 45%/26%/30%
 - FC Cincinnati vs New England Revolution (Major League Soccer) 2026-10-14T23:30:00Z · markets 79/80 evaluated · lineups unknown · xG 2.15-1.39 · 1X2 54%/21%/25%
+
+{
+  "outputs": {
+    "json": "work/runs/_pending/run_output.v1.json",
+    "md": "work/runs/_pending/RUN_SOCCER.md",
+    "contracts": "work/runs/_pending/priced_contracts.json",
+    "coverage": "work/runs/_pending/coverage.json",
+    "diagnostics": "work/runs/_pending/coverage_diagnostics.json"
+  },
+  "simulated": [
+    "fx:usa.mls:2026:usa.toronto:usa.orlando_city",
+    "fx:usa.mls:2026:usa.cf_montreal:usa.atlanta_united",
+    "fx:usa.mls:2026:usa.inter_miami:usa.nycfc",
+    "fx:usa.mls:2026:usa.dc_united:usa.ny_red_bulls",
+    "fx:usa.mls:2026:usa.columbus_crew:usa.charlotte",
+    "fx:usa.mls:2026:usa.cincinnati:usa.new_england"
+  ],
+  "repriced": [],
+  "archived_records": 474
+}
+[dispatch] holding 9.9 min (next window opens in 26.8 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261014T224244Z",
+  "complete": true,
+  "discovered": 6234,
+  "written": 1838,
+  "path": "work/snapshots/2026-10-14/cap-20261014T224244Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261014T224245Z-c2175b", "mode": "reprice_only", "fixtures": 20, "contract_sides": 2888, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 1.274, "price_changes_vs_previous": 274}
+[dispatch] holding 1.6 min (next window opens in 12.6 min)
+{
+ "batches": 7,
+ "horizons_delivered": 21,
+ "missed_states": {},
+ "paid_calls": 1,
+ "credits_spent": 3,
+ "end_reason": "link_time_limit",
+ "chain_continue": true,
+ "delivered_total": 1079,
+ "missed_total": 162,
+ "delivery_rate_total": 0.8694601128122482
+}
