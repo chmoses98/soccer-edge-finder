@@ -17907,15 +17907,15 @@
       },
       "event_name": "CF Montr\u00e9al vs Atlanta United",
       "fixture_id": "fx:usa.mls:2026:usa.cf_montreal:usa.atlanta_united",
-      "fixtures_observed_at": "2026-10-14T18:42:40.955920Z",
+      "fixtures_observed_at": "2026-10-14T22:52:08.239948Z",
       "home": "usa.cf_montreal",
-      "input_fingerprint": "sha256:7f282808cbf9481528afc41d26a9aae11ecdb3148cd2a06cbe7b524741f8d0c9",
+      "input_fingerprint": "sha256:3438776c84b99ead28fe7aed8d7cb6c3222596d147d8485d410f59be555bbe17",
       "inputs": {
         "competition_id": "usa.mls",
         "draws_per_world": 100,
         "engine_version": "world_sim_v2",
         "kickoff_utc": "2026-10-14T23:30:00Z",
-        "lineup_key": "none",
+        "lineup_key": "sha256:56d59eaff4a689865dd5669606fe1efbab02d34fed74df26975167986f02026a",
         "model_family": "data_only.world_sim_v2",
         "model_version": "dc_laplace_v1",
         "n_worlds": 1000,
@@ -17926,11 +17926,41 @@
         "worlds_version": "worlds_v1"
       },
       "lineup": {
-        "checked_at": "2026-10-14T22:27:49.595649Z",
-        "key": "none",
-        "last_change_at": "2026-10-14T21:29:06.007380Z",
-        "state": "unconfirmed"
+        "checked_at": "2026-10-14T23:02:45.697384Z",
+        "key": "sha256:56d59eaff4a689865dd5669606fe1efbab02d34fed74df26975167986f02026a",
+        "last_change_at": "2026-10-14T23:02:45.697384Z",
+        "state": "confirmed"
       },
+      "lineup_history": [
+        {
+          "lineup_key": "none",
+          "lineup_state": "unconfirmed",
+          "model_generated_at": "2026-10-14T22:28:01.732722Z",
+          "scripts": {
+            "primary": "TIGHT_LOW_EVENT",
+            "secondary": "HOME_CONTROL",
+            "shares": [
+              0.25487,
+              0.10203,
+              0.34138,
+              0.09331,
+              0.08676,
+              0.12165
+            ],
+            "taxonomy_version": "soccer_scripts_v1"
+          },
+          "sim_key": "sha256:cd253931db74a99c7279a3799032f2b60b5eb25e140abcced946aeb5cb7d9e30",
+          "summary": {
+            "mean_away_goals": 0.93342,
+            "mean_home_goals": 1.35747,
+            "p_away": 0.25903,
+            "p_btts": 0.43867,
+            "p_draw": 0.28226,
+            "p_home": 0.45871,
+            "p_over_2_5": 0.39832
+          }
+        }
+      ],
       "match_context": {
         "aggregate": {
           "source": "no aggregate (not a second leg)",
@@ -18156,9 +18186,9 @@
         "source": "production posterior (dc_laplace_v1) that priced this fixture",
         "version": "dc_matchup_v1"
       },
-      "model_fitted_at": "2026-10-14T22:28:00.516047Z",
-      "model_generated_at": "2026-10-14T22:28:01.732722Z",
-      "results_observed_at": "2026-10-14T17:19:33.444959Z",
+      "model_fitted_at": "2026-10-14T23:03:42.189072Z",
+      "model_generated_at": "2026-10-14T23:03:43.646849Z",
+      "results_observed_at": "2026-10-14T22:52:00.486187Z",
       "scripts": {
         "contract_gaps": {},
         "evidence": {
@@ -18775,8 +18805,8 @@
           }
         }
       },
-      "sim_key": "sha256:cd253931db74a99c7279a3799032f2b60b5eb25e140abcced946aeb5cb7d9e30",
-      "source_run_id": "run-20261014T222801Z-01ad5e",
+      "sim_key": "sha256:3c8ee9a8a39baa5489e7a3ea524f7022cdba93eee79dc2e5029a8ba02ef9e597",
+      "source_run_id": "run-20261014T230343Z-b3962e",
       "summary": {
         "mean_away_goals": 0.93342,
         "mean_home_goals": 1.35747,
@@ -42366,15 +42396,15 @@
       },
       "event_name": "FC Cincinnati vs New England Revolution",
       "fixture_id": "fx:usa.mls:2026:usa.cincinnati:usa.new_england",
-      "fixtures_observed_at": "2026-10-14T18:42:40.955920Z",
+      "fixtures_observed_at": "2026-10-14T22:52:08.239948Z",
       "home": "usa.cincinnati",
-      "input_fingerprint": "sha256:7f282808cbf9481528afc41d26a9aae11ecdb3148cd2a06cbe7b524741f8d0c9",
+      "input_fingerprint": "sha256:d0f370bba45fab98a229fe724b80c0624ad22ceef211ed9a1346186439505f8a",
       "inputs": {
         "competition_id": "usa.mls",
         "draws_per_world": 100,
         "engine_version": "world_sim_v2",
         "kickoff_utc": "2026-10-14T23:30:00Z",
-        "lineup_key": "none",
+        "lineup_key": "sha256:65f620deae8a16038da89349752e7c4fbc225380ec979e44ddfbc767820d868b",
         "model_family": "data_only.world_sim_v2",
         "model_version": "dc_laplace_v1",
         "n_worlds": 1000,
@@ -42385,11 +42415,41 @@
         "worlds_version": "worlds_v1"
       },
       "lineup": {
-        "checked_at": "2026-10-14T22:27:49.595649Z",
-        "key": "none",
-        "last_change_at": "2026-10-14T21:29:06.336442Z",
-        "state": "unconfirmed"
+        "checked_at": "2026-10-14T23:02:46.162460Z",
+        "key": "sha256:65f620deae8a16038da89349752e7c4fbc225380ec979e44ddfbc767820d868b",
+        "last_change_at": "2026-10-14T23:02:46.162460Z",
+        "state": "confirmed"
       },
+      "lineup_history": [
+        {
+          "lineup_key": "none",
+          "lineup_state": "unconfirmed",
+          "model_generated_at": "2026-10-14T22:28:01.732722Z",
+          "scripts": {
+            "primary": "HOME_CONTROL",
+            "secondary": "OPEN_END_TO_END",
+            "shares": [
+              0.31253,
+              0.09859,
+              0.14559,
+              0.24488,
+              0.07322,
+              0.12519
+            ],
+            "taxonomy_version": "soccer_scripts_v1"
+          },
+          "sim_key": "sha256:74c7596a109fbf782763a436a8796cdd6c9005b1d6a32a6b50d85371b63b62a4",
+          "summary": {
+            "mean_away_goals": 1.39324,
+            "mean_home_goals": 2.14996,
+            "p_away": 0.25367,
+            "p_btts": 0.64108,
+            "p_draw": 0.20816,
+            "p_home": 0.53817,
+            "p_over_2_5": 0.6706
+          }
+        }
+      ],
       "match_context": {
         "aggregate": {
           "source": "no aggregate (not a second leg)",
@@ -42615,9 +42675,9 @@
         "source": "production posterior (dc_laplace_v1) that priced this fixture",
         "version": "dc_matchup_v1"
       },
-      "model_fitted_at": "2026-10-14T22:28:00.516047Z",
-      "model_generated_at": "2026-10-14T22:28:01.732722Z",
-      "results_observed_at": "2026-10-14T17:19:33.444959Z",
+      "model_fitted_at": "2026-10-14T23:03:42.189072Z",
+      "model_generated_at": "2026-10-14T23:03:43.646849Z",
+      "results_observed_at": "2026-10-14T22:52:00.486187Z",
       "scripts": {
         "contract_gaps": {},
         "evidence": {
@@ -43233,8 +43293,8 @@
           }
         }
       },
-      "sim_key": "sha256:74c7596a109fbf782763a436a8796cdd6c9005b1d6a32a6b50d85371b63b62a4",
-      "source_run_id": "run-20261014T222801Z-01ad5e",
+      "sim_key": "sha256:d04ab73cf28c00d55cb63b3bb2b75e6ee77b5c2be016b73c55666cb0ffb4dd41",
+      "source_run_id": "run-20261014T230343Z-b3962e",
       "summary": {
         "mean_away_goals": 1.39324,
         "mean_home_goals": 2.14996,
@@ -66824,15 +66884,15 @@
       },
       "event_name": "Columbus Crew vs Charlotte FC",
       "fixture_id": "fx:usa.mls:2026:usa.columbus_crew:usa.charlotte",
-      "fixtures_observed_at": "2026-10-14T18:42:40.955920Z",
+      "fixtures_observed_at": "2026-10-14T22:52:08.239948Z",
       "home": "usa.columbus_crew",
-      "input_fingerprint": "sha256:7f282808cbf9481528afc41d26a9aae11ecdb3148cd2a06cbe7b524741f8d0c9",
+      "input_fingerprint": "sha256:cb843e89b7950530d05a446f234d7a25a6224592f6cf1c8a5f24d7956c17d328",
       "inputs": {
         "competition_id": "usa.mls",
         "draws_per_world": 100,
         "engine_version": "world_sim_v2",
         "kickoff_utc": "2026-10-14T23:30:00Z",
-        "lineup_key": "none",
+        "lineup_key": "sha256:63b72c34f314e139fbc54bb620365664a51455b6cd3d1dd61226f8103495c80d",
         "model_family": "data_only.world_sim_v2",
         "model_version": "dc_laplace_v1",
         "n_worlds": 1000,
@@ -66843,11 +66903,41 @@
         "worlds_version": "worlds_v1"
       },
       "lineup": {
-        "checked_at": "2026-10-14T22:27:49.595649Z",
-        "key": "none",
-        "last_change_at": "2026-10-14T21:29:06.095646Z",
-        "state": "unconfirmed"
+        "checked_at": "2026-10-14T23:02:45.859946Z",
+        "key": "sha256:63b72c34f314e139fbc54bb620365664a51455b6cd3d1dd61226f8103495c80d",
+        "last_change_at": "2026-10-14T23:02:45.859946Z",
+        "state": "confirmed"
       },
+      "lineup_history": [
+        {
+          "lineup_key": "none",
+          "lineup_state": "unconfirmed",
+          "model_generated_at": "2026-10-14T22:28:01.732722Z",
+          "scripts": {
+            "primary": "TIGHT_LOW_EVENT",
+            "secondary": "HOME_CONTROL",
+            "shares": [
+              0.25372,
+              0.10255,
+              0.26082,
+              0.14386,
+              0.08936,
+              0.14969
+            ],
+            "taxonomy_version": "soccer_scripts_v1"
+          },
+          "sim_key": "sha256:13ac128dc99bc50881675feb25cf9429b3644f045f2941a29dc3557b50254e25",
+          "summary": {
+            "mean_away_goals": 1.17306,
+            "mean_home_goals": 1.53264,
+            "p_away": 0.29516,
+            "p_btts": 0.52398,
+            "p_draw": 0.25527,
+            "p_home": 0.44957,
+            "p_over_2_5": 0.49979
+          }
+        }
+      ],
       "match_context": {
         "aggregate": {
           "source": "no aggregate (not a second leg)",
@@ -67073,9 +67163,9 @@
         "source": "production posterior (dc_laplace_v1) that priced this fixture",
         "version": "dc_matchup_v1"
       },
-      "model_fitted_at": "2026-10-14T22:28:00.516047Z",
-      "model_generated_at": "2026-10-14T22:28:01.732722Z",
-      "results_observed_at": "2026-10-14T17:19:33.444959Z",
+      "model_fitted_at": "2026-10-14T23:03:42.189072Z",
+      "model_generated_at": "2026-10-14T23:03:43.646849Z",
+      "results_observed_at": "2026-10-14T22:52:00.486187Z",
       "scripts": {
         "contract_gaps": {},
         "evidence": {
@@ -67692,8 +67782,8 @@
           }
         }
       },
-      "sim_key": "sha256:13ac128dc99bc50881675feb25cf9429b3644f045f2941a29dc3557b50254e25",
-      "source_run_id": "run-20261014T222801Z-01ad5e",
+      "sim_key": "sha256:badcccd54d6976245e93b02dbf1cd12b6d73b656f4d46e0b76b3c936db7dbbde",
+      "source_run_id": "run-20261014T230343Z-b3962e",
       "summary": {
         "mean_away_goals": 1.17306,
         "mean_home_goals": 1.53264,
@@ -79054,15 +79144,15 @@
       },
       "event_name": "D.C. United vs New York Red Bulls",
       "fixture_id": "fx:usa.mls:2026:usa.dc_united:usa.ny_red_bulls",
-      "fixtures_observed_at": "2026-10-14T18:42:40.955920Z",
+      "fixtures_observed_at": "2026-10-14T22:52:08.239948Z",
       "home": "usa.dc_united",
-      "input_fingerprint": "sha256:7f282808cbf9481528afc41d26a9aae11ecdb3148cd2a06cbe7b524741f8d0c9",
+      "input_fingerprint": "sha256:b85d34ef25f485872bd136cb16c9164e84c0404d6bc6cfc5c3bc8b3c621ce5dd",
       "inputs": {
         "competition_id": "usa.mls",
         "draws_per_world": 100,
         "engine_version": "world_sim_v2",
         "kickoff_utc": "2026-10-14T23:30:00Z",
-        "lineup_key": "none",
+        "lineup_key": "sha256:9a4c13769797783a8e63637406b04382575ca4ba6e03b7f39714183b9a97cc10",
         "model_family": "data_only.world_sim_v2",
         "model_version": "dc_laplace_v1",
         "n_worlds": 1000,
@@ -79073,11 +79163,41 @@
         "worlds_version": "worlds_v1"
       },
       "lineup": {
-        "checked_at": "2026-10-14T22:27:49.595649Z",
-        "key": "none",
-        "last_change_at": "2026-10-14T21:29:06.178042Z",
-        "state": "unconfirmed"
+        "checked_at": "2026-10-14T23:02:46.028343Z",
+        "key": "sha256:9a4c13769797783a8e63637406b04382575ca4ba6e03b7f39714183b9a97cc10",
+        "last_change_at": "2026-10-14T23:02:46.028343Z",
+        "state": "confirmed"
       },
+      "lineup_history": [
+        {
+          "lineup_key": "none",
+          "lineup_state": "unconfirmed",
+          "model_generated_at": "2026-10-14T22:28:01.732722Z",
+          "scripts": {
+            "primary": "TIGHT_LOW_EVENT",
+            "secondary": "HOME_CONTROL",
+            "shares": [
+              0.26955,
+              0.10234,
+              0.31862,
+              0.10374,
+              0.08504,
+              0.12072
+            ],
+            "taxonomy_version": "soccer_scripts_v1"
+          },
+          "sim_key": "sha256:fc996aa3d02c1f6f116fe26dd27ead86b5861050bcc0ffd33120f542091c35fd",
+          "summary": {
+            "mean_away_goals": 0.96343,
+            "mean_home_goals": 1.4486,
+            "p_away": 0.25511,
+            "p_btts": 0.45376,
+            "p_draw": 0.26901,
+            "p_home": 0.47588,
+            "p_over_2_5": 0.4285
+          }
+        }
+      ],
       "match_context": {
         "aggregate": {
           "source": "no aggregate (not a second leg)",
@@ -79303,9 +79423,9 @@
         "source": "production posterior (dc_laplace_v1) that priced this fixture",
         "version": "dc_matchup_v1"
       },
-      "model_fitted_at": "2026-10-14T22:28:00.516047Z",
-      "model_generated_at": "2026-10-14T22:28:01.732722Z",
-      "results_observed_at": "2026-10-14T17:19:33.444959Z",
+      "model_fitted_at": "2026-10-14T23:03:42.189072Z",
+      "model_generated_at": "2026-10-14T23:03:43.646849Z",
+      "results_observed_at": "2026-10-14T22:52:00.486187Z",
       "scripts": {
         "contract_gaps": {},
         "evidence": {
@@ -79922,8 +80042,8 @@
           }
         }
       },
-      "sim_key": "sha256:fc996aa3d02c1f6f116fe26dd27ead86b5861050bcc0ffd33120f542091c35fd",
-      "source_run_id": "run-20261014T222801Z-01ad5e",
+      "sim_key": "sha256:bb825220453f571b8807b2be78928caf4a30d416d92b25a766ce79e3aecffce0",
+      "source_run_id": "run-20261014T230343Z-b3962e",
       "summary": {
         "mean_away_goals": 0.96343,
         "mean_home_goals": 1.4486,
@@ -103513,15 +103633,15 @@
       },
       "event_name": "Inter Miami vs New York City FC",
       "fixture_id": "fx:usa.mls:2026:usa.inter_miami:usa.nycfc",
-      "fixtures_observed_at": "2026-10-14T18:42:40.955920Z",
+      "fixtures_observed_at": "2026-10-14T22:52:08.239948Z",
       "home": "usa.inter_miami",
-      "input_fingerprint": "sha256:7f282808cbf9481528afc41d26a9aae11ecdb3148cd2a06cbe7b524741f8d0c9",
+      "input_fingerprint": "sha256:2a0ce6c2c64a2e63dd8ab1cf7ee28258c0ba794a201104936841197c752cb367",
       "inputs": {
         "competition_id": "usa.mls",
         "draws_per_world": 100,
         "engine_version": "world_sim_v2",
         "kickoff_utc": "2026-10-14T23:30:00Z",
-        "lineup_key": "none",
+        "lineup_key": "sha256:a15fdf74262baf4f364db45de22cc696726bdc3ef64ef27853f92f9ce63c8aba",
         "model_family": "data_only.world_sim_v2",
         "model_version": "dc_laplace_v1",
         "n_worlds": 1000,
@@ -103532,11 +103652,41 @@
         "worlds_version": "worlds_v1"
       },
       "lineup": {
-        "checked_at": "2026-10-14T22:27:49.595649Z",
-        "key": "none",
-        "last_change_at": "2026-10-14T21:29:06.466074Z",
-        "state": "unconfirmed"
+        "checked_at": "2026-10-14T23:02:46.296334Z",
+        "key": "sha256:a15fdf74262baf4f364db45de22cc696726bdc3ef64ef27853f92f9ce63c8aba",
+        "last_change_at": "2026-10-14T23:02:46.296334Z",
+        "state": "confirmed"
       },
+      "lineup_history": [
+        {
+          "lineup_key": "none",
+          "lineup_state": "unconfirmed",
+          "model_generated_at": "2026-10-14T22:28:01.732722Z",
+          "scripts": {
+            "primary": "HOME_CONTROL",
+            "secondary": "TIGHT_LOW_EVENT",
+            "shares": [
+              0.39077,
+              0.10364,
+              0.18459,
+              0.17041,
+              0.0664,
+              0.08419
+            ],
+            "taxonomy_version": "soccer_scripts_v1"
+          },
+          "sim_key": "sha256:14672c5ffeb9c76c615b9c11aba452a15daf684eb43f5e5463a1bf1aeb4f3ecc",
+          "summary": {
+            "mean_away_goals": 1.03615,
+            "mean_home_goals": 2.17498,
+            "p_away": 0.17704,
+            "p_btts": 0.55182,
+            "p_draw": 0.20312,
+            "p_home": 0.61984,
+            "p_over_2_5": 0.60894
+          }
+        }
+      ],
       "match_context": {
         "aggregate": {
           "source": "no aggregate (not a second leg)",
@@ -103762,9 +103912,9 @@
         "source": "production posterior (dc_laplace_v1) that priced this fixture",
         "version": "dc_matchup_v1"
       },
-      "model_fitted_at": "2026-10-14T22:28:00.516047Z",
-      "model_generated_at": "2026-10-14T22:28:01.732722Z",
-      "results_observed_at": "2026-10-14T17:19:33.444959Z",
+      "model_fitted_at": "2026-10-14T23:03:42.189072Z",
+      "model_generated_at": "2026-10-14T23:03:43.646849Z",
+      "results_observed_at": "2026-10-14T22:52:00.486187Z",
       "scripts": {
         "contract_gaps": {},
         "evidence": {
@@ -104380,8 +104530,8 @@
           }
         }
       },
-      "sim_key": "sha256:14672c5ffeb9c76c615b9c11aba452a15daf684eb43f5e5463a1bf1aeb4f3ecc",
-      "source_run_id": "run-20261014T222801Z-01ad5e",
+      "sim_key": "sha256:1eaad5107cd12c917318ab5a34b58ff3f17dadf711875fbbbeb313172832c2f3",
+      "source_run_id": "run-20261014T230343Z-b3962e",
       "summary": {
         "mean_away_goals": 1.03615,
         "mean_home_goals": 2.17498,
@@ -182349,15 +182499,15 @@
       },
       "event_name": "Toronto FC vs Orlando City",
       "fixture_id": "fx:usa.mls:2026:usa.toronto:usa.orlando_city",
-      "fixtures_observed_at": "2026-10-14T18:42:40.955920Z",
+      "fixtures_observed_at": "2026-10-14T22:52:08.239948Z",
       "home": "usa.toronto",
-      "input_fingerprint": "sha256:7f282808cbf9481528afc41d26a9aae11ecdb3148cd2a06cbe7b524741f8d0c9",
+      "input_fingerprint": "sha256:634610147c85f984382453a1feb1427c5cabd2da664941ec6a0a1a13e40ec975",
       "inputs": {
         "competition_id": "usa.mls",
         "draws_per_world": 100,
         "engine_version": "world_sim_v2",
         "kickoff_utc": "2026-10-14T23:30:00Z",
-        "lineup_key": "none",
+        "lineup_key": "sha256:e1b508c54853ebb64e81a1fbbba9dd55289476ac94a87e202982547f1a0c8f3a",
         "model_family": "data_only.world_sim_v2",
         "model_version": "dc_laplace_v1",
         "n_worlds": 1000,
@@ -182368,11 +182518,41 @@
         "worlds_version": "worlds_v1"
       },
       "lineup": {
-        "checked_at": "2026-10-14T22:27:49.595649Z",
-        "key": "none",
-        "last_change_at": "2026-10-14T21:29:06.634771Z",
-        "state": "unconfirmed"
+        "checked_at": "2026-10-14T23:02:46.422014Z",
+        "key": "sha256:e1b508c54853ebb64e81a1fbbba9dd55289476ac94a87e202982547f1a0c8f3a",
+        "last_change_at": "2026-10-14T23:02:46.422014Z",
+        "state": "confirmed"
       },
+      "lineup_history": [
+        {
+          "lineup_key": "none",
+          "lineup_state": "unconfirmed",
+          "model_generated_at": "2026-10-14T22:28:01.732722Z",
+          "scripts": {
+            "primary": "HOME_CONTROL",
+            "secondary": "OPEN_END_TO_END",
+            "shares": [
+              0.31355,
+              0.10172,
+              0.16723,
+              0.21567,
+              0.07662,
+              0.12521
+            ],
+            "taxonomy_version": "soccer_scripts_v1"
+          },
+          "sim_key": "sha256:1f3b918d13f3547ed9178f8602df0acf03aca3010f7b6504c076b830449cc9f9",
+          "summary": {
+            "mean_away_goals": 1.30145,
+            "mean_home_goals": 2.02058,
+            "p_away": 0.25206,
+            "p_btts": 0.60869,
+            "p_draw": 0.21618,
+            "p_home": 0.53176,
+            "p_over_2_5": 0.63168
+          }
+        }
+      ],
       "match_context": {
         "aggregate": {
           "source": "no aggregate (not a second leg)",
@@ -182598,9 +182778,9 @@
         "source": "production posterior (dc_laplace_v1) that priced this fixture",
         "version": "dc_matchup_v1"
       },
-      "model_fitted_at": "2026-10-14T22:28:00.516047Z",
-      "model_generated_at": "2026-10-14T22:28:01.732722Z",
-      "results_observed_at": "2026-10-14T17:19:33.444959Z",
+      "model_fitted_at": "2026-10-14T23:03:42.189072Z",
+      "model_generated_at": "2026-10-14T23:03:43.646849Z",
+      "results_observed_at": "2026-10-14T22:52:00.486187Z",
       "scripts": {
         "contract_gaps": {},
         "evidence": {
@@ -183216,8 +183396,8 @@
           }
         }
       },
-      "sim_key": "sha256:1f3b918d13f3547ed9178f8602df0acf03aca3010f7b6504c076b830449cc9f9",
-      "source_run_id": "run-20261014T222801Z-01ad5e",
+      "sim_key": "sha256:de322fe7bc8217682cd83e9eed0d8e382d95c296f2f2b23411713283fdd58595",
+      "source_run_id": "run-20261014T230343Z-b3962e",
       "summary": {
         "mean_away_goals": 1.30145,
         "mean_home_goals": 2.02058,
@@ -183229,6 +183409,6 @@
       }
     }
   },
-  "generated_at": "2026-10-14T22:52:11.470467Z",
+  "generated_at": "2026-10-14T23:03:43.646849Z",
   "quantile_levels": "(i + 0.5) / 100, i = 0..99"
 }

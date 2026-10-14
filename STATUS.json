@@ -1,23 +1,26 @@
 {
-  "as_of": "2026-10-14T22:27:49.595649+00:00",
+  "as_of": "2026-10-14T23:02:45.545812+00:00",
   "events": 15,
   "events_skipped_unmapped": 0,
   "fixtures_mapped": 15,
   "health": {
-    "reasons": [],
-    "state": "HEALTHY"
+    "reasons": [
+      "weather_failures:3",
+      "weather_stopped:consecutive_failures:skipped=6"
+    ],
+    "state": "DEGRADED"
   },
   "leagues": [
     "usa.1"
   ],
   "lineups": {
-    "captured": 0,
+    "captured": 6,
     "events": 15,
     "failures": [],
     "published_post": 0,
-    "published_pre_kickoff": 0,
-    "unchanged": 15,
-    "unpublished": 15
+    "published_pre_kickoff": 6,
+    "unchanged": 9,
+    "unpublished": 9
   },
   "map_proposals": {},
   "map_version": "4",
@@ -28,13 +31,17 @@
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 14,
+    "captured": 6,
     "events": 15,
-    "failures": [],
+    "failures": [
+      "761869: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Chicago&count=5&language=en&for",
+      "761867: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Toyota%20Stadium&count=5&langua",
+      "761866: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Nashville&count=5&language=en&f"
+    ],
     "forecast_miss": 0,
-    "geocode_miss": 1,
+    "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 0,
-    "stopped": null
+    "skipped": 6,
+    "stopped": "consecutive_failures"
   }
 }
