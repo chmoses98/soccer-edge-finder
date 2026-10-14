@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-14T01:17:06.495542+00:00",
+  "as_of": "2026-10-14T07:45:59.048846+00:00",
   "events": 632,
   "events_skipped_unmapped": 318,
   "fixtures_mapped": 314,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=13"
+      "weather_stopped:consecutive_failures:skipped=12"
     ],
     "state": "DEGRADED"
   },
@@ -81,11 +81,11 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 42,
-    "events": 42,
+    "captured": 38,
+    "events": 38,
     "failures": [],
-    "published_post": 4,
-    "published_pre_kickoff": 1,
+    "published_post": 1,
+    "published_pre_kickoff": 0,
     "unchanged": 0,
     "unpublished": 37
   },
@@ -230,17 +230,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 11,
-    "events": 27,
+    "captured": 10,
+    "events": 25,
     "failures": [
-      "401861477: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=34.7578&longitude=113.6486&hourly=t",
-      "401877951: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bucaramanga&count=5&language=en",
-      "401877892: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=4.6097&longitude=-74.0817&hourly=te"
+      "401860398: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-23.0884&longitude=-47.2119&hourly=",
+      "401860399: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-8.0539&longitude=-34.8811&hourly=t",
+      "401861477: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=34.7578&longitude=113.6486&hourly=t"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 13,
+    "skipped": 12,
     "stopped": "consecutive_failures"
   }
 }
