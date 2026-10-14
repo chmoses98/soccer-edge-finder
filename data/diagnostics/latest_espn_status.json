@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-14T07:45:59.048846+00:00",
+  "as_of": "2026-10-14T13:49:19.540112+00:00",
   "events": 632,
   "events_skipped_unmapped": 318,
   "fixtures_mapped": 314,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=12"
+      "weather_stopped:consecutive_failures:skipped=20"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 38,
-    "events": 38,
+    "captured": 39,
+    "events": 39,
     "failures": [],
     "published_post": 1,
     "published_pre_kickoff": 0,
     "unchanged": 0,
-    "unpublished": 37
+    "unpublished": 38
   },
   "map_proposals": {
     "bel.1": {
@@ -230,17 +230,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 10,
-    "events": 25,
+    "captured": 11,
+    "events": 34,
     "failures": [
-      "401860398: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-23.0884&longitude=-47.2119&hourly=",
-      "401860399: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-8.0539&longitude=-34.8811&hourly=t",
-      "401861477: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=34.7578&longitude=113.6486&hourly=t"
+      "401861477: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=34.7578&longitude=113.6486&hourly=t",
+      "401861478: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Dalian&count=5&language=en&form",
+      "401861510: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=36.0649&longitude=120.3804&hourly=t"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 12,
+    "skipped": 20,
     "stopped": "consecutive_failures"
   }
 }
