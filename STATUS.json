@@ -1,23 +1,26 @@
 {
-  "as_of": "2026-10-14T20:59:03.807546+00:00",
-  "events": 1,
+  "as_of": "2026-10-14T21:29:05.709887+00:00",
+  "events": 15,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 1,
+  "fixtures_mapped": 15,
   "health": {
-    "reasons": [],
-    "state": "HEALTHY"
+    "reasons": [
+      "weather_failures:3",
+      "weather_stopped:consecutive_failures:skipped=4"
+    ],
+    "state": "DEGRADED"
   },
   "leagues": [
-    "arg.1"
+    "usa.1"
   ],
   "lineups": {
-    "captured": 0,
-    "events": 1,
+    "captured": 15,
+    "events": 15,
     "failures": [],
     "published_post": 0,
     "published_pre_kickoff": 0,
-    "unchanged": 1,
-    "unpublished": 1
+    "unchanged": 0,
+    "unpublished": 15
   },
   "map_proposals": {},
   "map_version": "4",
@@ -28,13 +31,17 @@
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 1,
-    "events": 1,
-    "failures": [],
+    "captured": 7,
+    "events": 15,
+    "failures": [
+      "761866: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Nashville&count=5&language=en&f",
+      "761868: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=St.%20Louis&count=5&language=en",
+      "761871: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Commerce%20City&count=5&languag"
+    ],
     "forecast_miss": 0,
-    "geocode_miss": 0,
+    "geocode_miss": 1,
     "no_venue": 0,
-    "skipped": 0,
-    "stopped": null
+    "skipped": 4,
+    "stopped": "consecutive_failures"
   }
 }
