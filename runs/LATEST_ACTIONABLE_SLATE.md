@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261014T103020Z-baa715` · generated 2026-10-14T10:30:20.369196Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261014T104551Z-4ba5b1` · generated 2026-10-14T10:45:51.904683Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-14T10:27:50.879055Z (CURRENT at publish; CURRENT until 2026-10-14T10:47:50.879055Z, STALE after 2026-10-14T10:57:50.879055Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-14T10:43:22.254623Z (CURRENT at publish; CURRENT until 2026-10-14T11:03:22.254623Z, STALE after 2026-10-14T11:13:22.254623Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-13T20:53:18.232219Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.55s
+model board generated 2026-10-13T20:53:18.232219Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.74s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -66,18 +66,18 @@ model board generated 2026-10-13T20:53:18.232219Z · simulations this update: 0 
 | San Diego FC vs Houston Dynamo | Total goals over 1.5 | no | 0.2000 | 0.341 [0.209, 0.472] | +0.130 | +0.043 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | CF Montréal vs Atlanta United | Total goals over 5.5 | no | 0.9000 | 0.965 [0.932, 0.991] | +0.059 | +0.043 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | D.C. United vs New York Red Bulls | First-half total goals over 1.5 | no | 0.5800 | 0.714 [0.598, 0.822] | +0.116 | +0.043 | 0.62 | - | * | RESEARCH_CANDIDATE |
+| Chicago Fire vs Philadelphia Union | away team total over 1.5 | no | 0.4700 | 0.618 [0.478, 0.754] | +0.131 | +0.041 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | D.C. United vs New York Red Bulls | Total goals over 5.5 | no | 0.8900 | 0.957 [0.910, 0.989] | +0.060 | +0.040 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | San Diego FC vs Houston Dynamo | Total goals over 4.5 | no | 0.8200 | 0.907 [0.829, 0.967] | +0.077 | +0.039 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | D.C. United vs New York Red Bulls | away team total over 2.5 | no | 0.8400 | 0.921 [0.861, 0.972] | +0.072 | +0.038 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | D.C. United vs New York Red Bulls | First-half total goals over 0.5 | no | 0.2300 | 0.351 [0.248, 0.462] | +0.108 | +0.038 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Austin FC | away team total over 0.5 | no | 0.3900 | 0.516 [0.400, 0.630] | +0.109 | +0.037 | 0.42 | - | * | RESEARCH_CANDIDATE |
-| Columbus Crew vs Charlotte FC | Total goals over 3.5 | no | 0.5700 | 0.711 [0.552, 0.845] | +0.124 | +0.037 | 0.6 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1859
-action_NO_QUOTE: 282
+action_NO_EDGE: 1858
+action_NO_QUOTE: 283
 action_RESEARCH_CANDIDATE: 135
 contract_sides: 2276
 fixtures: 15
