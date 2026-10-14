@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-13T16:06:06.035132+00:00",
-  "events": 766,
-  "events_skipped_unmapped": 389,
-  "fixtures_mapped": 377,
+  "as_of": "2026-10-14T01:17:06.495542+00:00",
+  "events": 632,
+  "events_skipped_unmapped": 318,
+  "fixtures_mapped": 314,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=23"
+      "weather_stopped:consecutive_failures:skipped=13"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 27,
-    "events": 27,
+    "captured": 42,
+    "events": 42,
     "failures": [],
-    "published_post": 1,
-    "published_pre_kickoff": 2,
+    "published_post": 4,
+    "published_pre_kickoff": 1,
     "unchanged": 0,
-    "unpublished": 24
+    "unpublished": 37
   },
   "map_proposals": {
     "bel.1": {
@@ -189,7 +189,6 @@
     "den.1",
     "eng.3",
     "eng.4",
-    "eng.5",
     "esp.2",
     "esp.w.1",
     "fra.2",
@@ -231,17 +230,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 3,
-    "events": 29,
+    "captured": 11,
+    "events": 27,
     "failures": [
-      "401912645: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Kobe&count=5&language=en&format",
-      "401841598: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Junin&count=5&language=en&forma",
-      "401841622: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-34.6131&longitude=-58.3772&hourly="
+      "401861477: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=34.7578&longitude=113.6486&hourly=t",
+      "401877951: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bucaramanga&count=5&language=en",
+      "401877892: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=4.6097&longitude=-74.0817&hourly=te"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 23,
+    "skipped": 13,
     "stopped": "consecutive_failures"
   }
 }
