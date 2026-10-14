@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261014T170259Z-f661f6` · generated 2026-10-14T17:02:59.727999Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261014T171943Z-2ae43d` · generated 2026-10-14T17:19:43.637541Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-14T17:00:29.713040Z (CURRENT at publish; CURRENT until 2026-10-14T17:20:29.713040Z, STALE after 2026-10-14T17:30:29.713040Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-14T17:17:03.378606Z (CURRENT at publish; CURRENT until 2026-10-14T17:37:03.378606Z, STALE after 2026-10-14T17:47:03.378606Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-14T13:05:52.851656Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.25s
+model board generated 2026-10-14T13:05:52.851656Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.04s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -38,10 +38,10 @@ model board generated 2026-10-14T13:05:52.851656Z · simulations this update: 0 
 | D.C. United vs New York Red Bulls | btts | no | 0.3200 | 0.546 [0.427, 0.663] | +0.211 | +0.135 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | D.C. United vs New York Red Bulls | Total goals over 2.5 | no | 0.3300 | 0.574 [0.409, 0.725] | +0.228 | +0.128 | 0.45 | - |  | RESEARCH_CANDIDATE |
 | D.C. United vs New York Red Bulls | away team total over 0.5 | no | 0.1900 | 0.396 [0.277, 0.523] | +0.195 | +0.112 | 0.29 | - |  | RESEARCH_CANDIDATE |
+| CF Montréal vs Atlanta United | Total goals over 2.5 | no | 0.3900 | 0.602 [0.462, 0.740] | +0.195 | +0.105 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | CF Montréal vs Atlanta United | away team total over 1.5 | no | 0.5700 | 0.760 [0.648, 0.862] | +0.173 | +0.105 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | CF Montréal vs Atlanta United | btts | no | 0.3700 | 0.563 [0.453, 0.676] | +0.177 | +0.105 | 0.47 | - | * | RESEARCH_CANDIDATE |
-| CF Montréal vs Atlanta United | Total goals over 3.5 | no | 0.6100 | 0.796 [0.685, 0.897] | +0.170 | +0.104 | 0.71 | - | * | RESEARCH_CANDIDATE |
-| CF Montréal vs Atlanta United | Total goals over 2.5 | no | 0.4000 | 0.602 [0.462, 0.740] | +0.185 | +0.095 | 0.49 | - |  | RESEARCH_CANDIDATE |
+| CF Montréal vs Atlanta United | Total goals over 3.5 | no | 0.6100 | 0.796 [0.685, 0.897] | +0.170 | +0.104 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | D.C. United vs New York Red Bulls | away team total over 2.5 | no | 0.7800 | 0.921 [0.860, 0.972] | +0.129 | +0.095 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | D.C. United vs New York Red Bulls | Total goals over 4.5 | no | 0.7500 | 0.894 [0.804, 0.962] | +0.131 | +0.087 | 0.84 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Charlotte FC | Total goals over 2.5 | no | 0.3000 | 0.502 [0.334, 0.660] | +0.188 | +0.085 | 0.38 | - | * | RESEARCH_CANDIDATE |
@@ -77,8 +77,8 @@ model board generated 2026-10-14T13:05:52.851656Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1831
-action_NO_QUOTE: 306
+action_NO_EDGE: 1832
+action_NO_QUOTE: 305
 action_RESEARCH_CANDIDATE: 145
 contract_sides: 2282
 fixtures: 16
