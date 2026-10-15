@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-15T13:03:59.281838Z",
+  "as_of": "2026-10-15T17:27:30.771252Z",
   "by_competition": {
     "afc.champions": {
       "fixtures": 16,
@@ -182,7 +182,7 @@
       "with_xi_ge_20min": 2
     },
     "ksa.1": {
-      "fixtures": 9,
+      "fixtures": 12,
       "median_lead_minutes": 31.342061983333334,
       "with_pre_kickoff_xi": 1,
       "with_xi_ge_20min": 1
@@ -240,6 +240,18 @@
       "median_lead_minutes": 16.125908583333334,
       "with_pre_kickoff_xi": 9,
       "with_xi_ge_20min": 2
+    },
+    "uefa.europa": {
+      "fixtures": 8,
+      "median_lead_minutes": null,
+      "with_pre_kickoff_xi": 0,
+      "with_xi_ge_20min": 0
+    },
+    "uefa.europa.conf": {
+      "fixtures": 10,
+      "median_lead_minutes": null,
+      "with_pre_kickoff_xi": 0,
+      "with_xi_ge_20min": 0
     },
     "uefa.nations": {
       "fixtures": 34,
@@ -6281,8 +6293,8 @@
       "xi_first_observed_at": "2026-10-11T13:08:40.203320+00:00"
     }
   ],
-  "fixtures_kickoff_passed": 643,
-  "fixtures_tracked": 688,
+  "fixtures_kickoff_passed": 664,
+  "fixtures_tracked": 707,
   "lead_time_minutes": {
     "max": 57.43608363333333,
     "median": 28.283435216666664,
@@ -6291,12 +6303,12 @@
     "p10": 12.01944508666667,
     "p90": 47.76141228666667
   },
-  "post_kickoff_first_xi": 180,
+  "post_kickoff_first_xi": 200,
   "schema": "lineup_lead_time_v1",
-  "share_pre_kickoff_xi": 0.32192846034214617,
-  "share_xi_ge_20min": 0.23950233281493002,
+  "share_pre_kickoff_xi": 0.3117469879518072,
+  "share_xi_ge_20min": 0.2319277108433735,
   "target": "audit \u00a7I1: >= 90% of priced fixtures with a confirmed XI captured >= 20 min before kickoff",
-  "with_any_xi": 387,
+  "with_any_xi": 407,
   "with_pre_kickoff_xi": 207,
   "with_xi_ge_20min_before_kickoff": 154
 }
