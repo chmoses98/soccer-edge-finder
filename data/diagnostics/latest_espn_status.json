@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-14T23:18:26.993024+00:00",
-  "events": 632,
-  "events_skipped_unmapped": 318,
-  "fixtures_mapped": 314,
+  "as_of": "2026-10-15T04:51:00.039603+00:00",
+  "events": 576,
+  "events_skipped_unmapped": 283,
+  "fixtures_mapped": 293,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=49"
+      "weather_stopped:consecutive_failures:skipped=61"
     ],
     "state": "DEGRADED"
   },
@@ -81,38 +81,21 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 49,
-    "events": 64,
+    "captured": 45,
+    "events": 45,
     "failures": [],
-    "published_post": 5,
-    "published_pre_kickoff": 7,
-    "unchanged": 15,
-    "unpublished": 52
+    "published_post": 3,
+    "published_pre_kickoff": 0,
+    "unchanged": 0,
+    "unpublished": 42
   },
   "map_proposals": {
-    "bel.1": {
-      "ambiguous": {},
-      "proposed": {},
-      "unresolved": {
-        "936": "Sint-Truidense"
-      }
-    },
     "den.1": {
       "ambiguous": {},
       "proposed": {},
       "unresolved": {
         "7853": "AGF",
         "909": "F.C. K\u00f8benhavn"
-      }
-    },
-    "esp.copa_del_rey": {
-      "ambiguous": {},
-      "proposed": {},
-      "unresolved": {
-        "133831": "Sporting Hortaleza",
-        "133833": "Atl\u00e9tico Uni\u00f3n G\u00fc\u00edmar",
-        "133840": "CF San Rafael",
-        "18334": "AE Prat"
       }
     },
     "nor.1": {
@@ -173,14 +156,13 @@
     }
   },
   "map_version": "4",
-  "results_appended": 11,
+  "results_appended": 17,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
   "unmapped_leagues": [
     "afc.champions",
     "aus.1",
-    "bel.1",
     "bra.2",
     "chi.1",
     "chn.1",
@@ -204,10 +186,6 @@
   "unmapped_team_ids": {
     "1010": "OFI Crete",
     "13083": "Hapoel Be'er",
-    "133831": "Sporting Hortaleza",
-    "133833": "Atl\u00e9tico Uni\u00f3n G\u00fc\u00edmar",
-    "133840": "CF San Rafael",
-    "18334": "AE Prat",
     "19246": "Riga FC",
     "20024": "Ararat-Armenia",
     "20025": "Iberia 1999",
@@ -230,17 +208,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 9,
-    "events": 61,
+    "captured": 10,
+    "events": 74,
     "failures": [
-      "401892162: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Sydney&count=5&language=en&form",
-      "401892161: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Auckland&count=5&language=en&fo",
-      "401892160: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-33.8678&longitude=151.2073&hourly="
+      "401892160: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-33.8678&longitude=151.2073&hourly=",
+      "401892159: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=New%20South%20Wales&count=5&lan",
+      "401892158: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Wellington&count=5&language=en&"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 49,
+    "skipped": 61,
     "stopped": "consecutive_failures"
   }
 }
