@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261015T170031Z-2646b4` · generated 2026-10-15T17:00:31.472274Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261015T171532Z-571ac5` · generated 2026-10-15T17:15:32.648073Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-15T16:57:50.888645Z (CURRENT at publish; CURRENT until 2026-10-15T17:17:50.888645Z, STALE after 2026-10-15T17:27:50.888645Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-15T17:12:50.898427Z (CURRENT at publish; CURRENT until 2026-10-15T17:32:50.898427Z, STALE after 2026-10-15T17:42:50.898427Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-15T16:30:33.741330Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.25s
+model board generated 2026-10-15T16:30:33.741330Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.26s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -48,18 +48,18 @@ model board generated 2026-10-15T16:30:33.741330Z · simulations this update: 0 
 | Strasbourg vs Paris Saint-Germain | Result: away | no | 0.3000 | 0.602 [0.414, 0.783] | +0.288 | +0.170 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Strasbourg vs Paris Saint-Germain | Result: home | yes | 0.1400 | 0.376 [0.202, 0.570] | +0.227 | +0.112 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | Real Betis vs FC Barcelona | Result: away | no | 0.2900 | 0.519 [0.341, 0.686] | +0.215 | +0.098 | 0.38 | - | * | RESEARCH_CANDIDATE |
-| Everton vs Chelsea | Result: away | no | 0.5500 | 0.732 [0.582, 0.867] | +0.164 | +0.074 | 0.62 | - | * | RESEARCH_CANDIDATE |
-| Everton vs Chelsea | Result: home | yes | 0.2900 | 0.494 [0.314, 0.676] | +0.190 | +0.073 | 0.36 | - |  | RESEARCH_CANDIDATE |
+| Everton vs Chelsea | Result: home | yes | 0.2900 | 0.494 [0.314, 0.676] | +0.190 | +0.073 | 0.36 | - | * | RESEARCH_CANDIDATE |
+| Everton vs Chelsea | Result: away | no | 0.5600 | 0.732 [0.582, 0.867] | +0.154 | +0.064 | 0.62 | - |  | RESEARCH_CANDIDATE |
 | Espanyol vs Atlético Madrid | Result: away | no | 0.4400 | 0.608 [0.437, 0.758] | +0.151 | +0.048 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | btts | no | 0.4600 | 0.596 [0.481, 0.710] | +0.119 | +0.046 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Real Betis vs FC Barcelona | Result: home | yes | 0.1400 | 0.295 [0.152, 0.447] | +0.146 | +0.044 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Fulham vs Hull City | Result: home | no | 0.4400 | 0.627 [0.424, 0.814] | +0.170 | +0.040 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Espanyol vs Atlético Madrid | Result: home | yes | 0.2000 | 0.354 [0.203, 0.519] | +0.143 | +0.037 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | away team total over 0.5 | no | 0.3500 | 0.474 [0.343, 0.598] | +0.108 | +0.024 | 0.37 | - | * | RESEARCH_CANDIDATE |
+| Tijuana vs Puebla | away team total over 1.5 | no | 0.7200 | 0.818 [0.710, 0.906] | +0.084 | +0.023 | 0.74 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | Total goals over 3.5 | no | 0.6900 | 0.796 [0.662, 0.910] | +0.091 | +0.018 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | Strasbourg vs Paris Saint-Germain | Result: draw | yes | 0.1700 | 0.227 [0.181, 0.275] | +0.047 | +0.016 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | Total goals over 2.5 | no | 0.4700 | 0.605 [0.438, 0.762] | +0.117 | +0.016 | 0.48 | - |  | RESEARCH_CANDIDATE |
-| Tijuana vs Puebla | away team total over 1.5 | no | 0.7300 | 0.818 [0.710, 0.906] | +0.074 | +0.013 | 0.74 | - |  | RESEARCH_CANDIDATE |
 | Real Betis vs FC Barcelona | Result: draw | yes | 0.1700 | 0.224 [0.176, 0.271] | +0.044 | +0.013 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | Total goals over 1.5 | no | 0.2300 | 0.346 [0.202, 0.493] | +0.103 | +0.011 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | Total goals over 4.5 | no | 0.8500 | 0.908 [0.826, 0.972] | +0.049 | +0.010 | 0.86 | - |  | RESEARCH_CANDIDATE |
