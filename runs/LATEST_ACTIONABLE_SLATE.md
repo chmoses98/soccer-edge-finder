@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261015T212235Z-a893e2` · generated 2026-10-15T21:22:35.700925Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261015T213811Z-c7be70` · generated 2026-10-15T21:38:11.344611Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-15T21:19:48.422487Z (CURRENT at publish; CURRENT until 2026-10-15T21:39:48.422487Z, STALE after 2026-10-15T21:49:48.422487Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-15T21:35:20.209479Z (CURRENT at publish; CURRENT until 2026-10-15T21:55:20.209479Z, STALE after 2026-10-15T22:05:20.209479Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-15T21:07:46.211077Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.23s
+model board generated 2026-10-15T21:38:10.474705Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.23s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-15T21:07:46.211077Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-15T23:00:00Z | Huracán vs Gimnasia La Plata (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-15T23:00:00Z | Huracán vs Gimnasia La Plata (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-16T18:30:00Z | Eintracht Frankfurt vs 1. FC Köln (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-16T18:45:00Z | Le Mans vs Toulouse (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-16T18:45:00Z | Frosinone vs Sassuolo (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -48,6 +48,7 @@ model board generated 2026-10-15T21:07:46.211077Z · simulations this update: 0 
 | 2026-10-17T19:00:00Z | Valencia vs Athletic Club (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-17T20:30:00Z | Minnesota United vs St. Louis City SC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-17T21:00:00Z | Botafogo vs Chapecoense (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-17T21:30:00Z | Atlético Mineiro vs Coritiba (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
 ## Candidates on CURRENT prices (22; RESEARCH_ONLY = analysis, never a bet)
 
@@ -56,8 +57,8 @@ model board generated 2026-10-15T21:07:46.211077Z · simulations this update: 0 
 | Strasbourg vs Paris Saint-Germain | Result: away | no | 0.3000 | 0.602 [0.414, 0.783] | +0.288 | +0.170 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Strasbourg vs Paris Saint-Germain | Result: home | yes | 0.1400 | 0.376 [0.202, 0.570] | +0.227 | +0.112 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | Real Betis vs FC Barcelona | Result: away | no | 0.3000 | 0.519 [0.341, 0.686] | +0.204 | +0.087 | 0.38 | - | * | RESEARCH_CANDIDATE |
-| Everton vs Chelsea | Result: away | no | 0.5500 | 0.732 [0.582, 0.867] | +0.164 | +0.074 | 0.62 | - | * | RESEARCH_CANDIDATE |
-| Everton vs Chelsea | Result: home | yes | 0.2900 | 0.494 [0.314, 0.676] | +0.190 | +0.073 | 0.36 | - |  | RESEARCH_CANDIDATE |
+| Everton vs Chelsea | Result: away | no | 0.5600 | 0.732 [0.582, 0.867] | +0.154 | +0.064 | 0.62 | - | * | RESEARCH_CANDIDATE |
+| Everton vs Chelsea | Result: home | yes | 0.3000 | 0.494 [0.314, 0.676] | +0.179 | +0.063 | 0.36 | - |  | RESEARCH_CANDIDATE |
 | Espanyol vs Atlético Madrid | Result: away | no | 0.4300 | 0.608 [0.437, 0.758] | +0.161 | +0.058 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Espanyol vs Atlético Madrid | Result: home | yes | 0.1900 | 0.354 [0.203, 0.519] | +0.153 | +0.047 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | btts | no | 0.4600 | 0.596 [0.481, 0.710] | +0.119 | +0.046 | 0.5 | - | * | RESEARCH_CANDIDATE |
@@ -70,20 +71,20 @@ model board generated 2026-10-15T21:07:46.211077Z · simulations this update: 0 
 | Tijuana vs Puebla | Total goals over 2.5 | no | 0.4700 | 0.605 [0.438, 0.762] | +0.117 | +0.016 | 0.48 | - |  | RESEARCH_CANDIDATE |
 | Real Betis vs FC Barcelona | Result: draw | yes | 0.1700 | 0.224 [0.176, 0.271] | +0.044 | +0.013 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | Total goals over 1.5 | no | 0.2300 | 0.346 [0.202, 0.493] | +0.103 | +0.011 | 0.24 | - |  | RESEARCH_CANDIDATE |
-| Valencia vs Athletic Club | Result: away | no | 0.5700 | 0.684 [0.543, 0.816] | +0.097 | +0.010 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | Total goals over 4.5 | no | 0.8500 | 0.908 [0.826, 0.972] | +0.049 | +0.010 | 0.86 | - |  | RESEARCH_CANDIDATE |
-| Valencia vs Athletic Club | Result: home | yes | 0.2900 | 0.413 [0.261, 0.573] | +0.109 | +0.005 | 0.29 | - |  | RESEARCH_CANDIDATE |
+| Valencia vs Athletic Club | Result: home | yes | 0.2900 | 0.413 [0.261, 0.573] | +0.109 | +0.005 | 0.29 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | away team total over 2.5 | no | 0.9200 | 0.952 [0.907, 0.985] | +0.027 | +0.005 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Philadelphia Union vs Charlotte FC | btts | no | 0.3400 | 0.434 [0.313, 0.553] | +0.078 | +0.001 | 0.34 | - | * | RESEARCH_CANDIDATE |
+| Valencia vs Athletic Club | Result: away | no | 0.5800 | 0.684 [0.543, 0.816] | +0.087 | +0.000 | 0.58 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 644
-action_NO_QUOTE: 170
+action_NO_EDGE: 671
+action_NO_QUOTE: 171
 action_RESEARCH_CANDIDATE: 22
-contract_sides: 836
-fixtures: 36
+contract_sides: 864
+fixtures: 37
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
