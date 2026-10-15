@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261015T172628Z-729d3c` · generated 2026-10-15T17:26:28.232241Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261015T173033Z-bec89c` · generated 2026-10-15T17:30:33.292537Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-15T17:23:34.377544Z (CURRENT at publish; CURRENT until 2026-10-15T17:43:34.377544Z, STALE after 2026-10-15T17:53:34.377544Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-15T17:27:51.740139Z (CURRENT at publish; CURRENT until 2026-10-15T17:47:51.740139Z, STALE after 2026-10-15T17:57:51.740139Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-15T16:30:33.741330Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.33s
+model board generated 2026-10-15T16:30:33.741330Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.26s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -48,8 +48,8 @@ model board generated 2026-10-15T16:30:33.741330Z · simulations this update: 0 
 | Strasbourg vs Paris Saint-Germain | Result: away | no | 0.3000 | 0.602 [0.414, 0.783] | +0.288 | +0.170 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Strasbourg vs Paris Saint-Germain | Result: home | yes | 0.1400 | 0.376 [0.202, 0.570] | +0.227 | +0.112 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | Real Betis vs FC Barcelona | Result: away | no | 0.2900 | 0.519 [0.341, 0.686] | +0.215 | +0.098 | 0.38 | - | * | RESEARCH_CANDIDATE |
-| Everton vs Chelsea | Result: away | no | 0.5600 | 0.732 [0.582, 0.867] | +0.154 | +0.064 | 0.62 | - | * | RESEARCH_CANDIDATE |
-| Everton vs Chelsea | Result: home | yes | 0.3000 | 0.494 [0.314, 0.676] | +0.179 | +0.063 | 0.36 | - |  | RESEARCH_CANDIDATE |
+| Everton vs Chelsea | Result: away | no | 0.5500 | 0.732 [0.582, 0.867] | +0.164 | +0.074 | 0.62 | - | * | RESEARCH_CANDIDATE |
+| Everton vs Chelsea | Result: home | yes | 0.2900 | 0.494 [0.314, 0.676] | +0.190 | +0.073 | 0.36 | - |  | RESEARCH_CANDIDATE |
 | Espanyol vs Atlético Madrid | Result: away | no | 0.4400 | 0.608 [0.437, 0.758] | +0.151 | +0.048 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | btts | no | 0.4600 | 0.596 [0.481, 0.710] | +0.119 | +0.046 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Real Betis vs FC Barcelona | Result: home | yes | 0.1400 | 0.295 [0.152, 0.447] | +0.146 | +0.044 | 0.18 | - |  | RESEARCH_CANDIDATE |
