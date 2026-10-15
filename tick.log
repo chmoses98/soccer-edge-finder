@@ -721,3 +721,105 @@ These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW
 
 ## Events
 - Minnesota United vs St. Louis City SC (Major League Soccer) 2026-10-17T20:30:00Z · markets 14/14 evaluated · lineups unknown · xG 1.69-1.67 · 1X2 39%/23%/38%
+
+{
+  "outputs": {
+    "json": "work/runs/_pending/run_output.v1.json",
+    "md": "work/runs/_pending/RUN_SOCCER.md",
+    "contracts": "work/runs/_pending/priced_contracts.json",
+    "coverage": "work/runs/_pending/coverage.json",
+    "diagnostics": "work/runs/_pending/coverage_diagnostics.json"
+  },
+  "simulated": [
+    "fx:usa.mls:2026:usa.minnesota_united:usa.st_louis_city"
+  ],
+  "repriced": [],
+  "archived_records": 14
+}
+[dispatch] holding 9.7 min (next window opens in 16.6 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261015T204549Z",
+  "complete": true,
+  "discovered": 5612,
+  "written": 1019,
+  "path": "work/snapshots/2026-10-15/cap-20261015T204549Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261015T204551Z-f6e8a1", "mode": "reprice_only", "fixtures": 35, "contract_sides": 4264, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.549, "price_changes_vs_previous": 15}
+[dispatch] holding 8.5 min (next window opens in 2.3 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261015T205859Z",
+  "complete": true,
+  "discovered": 5604,
+  "written": 738,
+  "path": "work/snapshots/2026-10-15/cap-20261015T205859Z.jsonl"
+}
+{
+  "reference_probabilities": 0,
+  "observed_at": "2026-10-15 15:30:06.755128+00:00",
+  "groups": 60,
+  "unmapped_fixture_groups": 60,
+  "incomplete_groups": 0,
+  "snapshots": 0,
+  "provider_notes": [
+    "14 rows, 2 skipped (unmapped division/team)",
+    "skipped_by_division={'E2': 1, 'SC1': 1}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-15T20:59:02.219023Z", "batch_id": "kd-20261015T205611Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-10-15T20:59:02.252046+00:00",
+ "leagues": [
+  "arg.1"
+ ],
+ "events": 1,
+ "fixtures_mapped": 1,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 1,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 1,
+  "captured": 1,
+  "unchanged": 0,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 1,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 1,
+  "captured": 1,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261015T205903Z-be7512", "mode": "reprice_only", "fixtures": 35, "contract_sides": 4264, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.703, "price_changes_vs_previous": 17}
+{
+ "batches": 1,
+ "horizons_delivered": 1,
+ "missed_states": {},
+ "paid_calls": 0,
+ "credits_spent": 0,
+ "end_reason": "link_time_limit",
+ "chain_continue": true,
+ "delivered_total": 1139,
+ "missed_total": 162,
+ "delivery_rate_total": 0.8754803996925442
+}
