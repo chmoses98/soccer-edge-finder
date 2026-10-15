@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261015T015751Z-255d10` · generated 2026-10-15T01:57:51.070475Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261015T020222Z-c803cf` · generated 2026-10-15T02:02:22.840151Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-15T01:55:04.025247Z (CURRENT at publish; CURRENT until 2026-10-15T02:15:04.025247Z, STALE after 2026-10-15T02:25:04.025247Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-15T01:59:30.820272Z (CURRENT at publish; CURRENT until 2026-10-15T02:19:30.820272Z, STALE after 2026-10-15T02:29:30.820272Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-15T01:42:52.637874Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.37s
 
@@ -23,7 +23,7 @@ model board generated 2026-10-15T01:42:52.637874Z · simulations this update: 0 
 | 2026-10-16T23:00:00Z | Mirassol vs Internacional (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-17T01:00:00Z | Necaxa vs Atlas (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (47; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (48; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -71,9 +71,9 @@ model board generated 2026-10-15T01:42:52.637874Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 539
+action_NO_EDGE: 538
 action_NO_QUOTE: 100
-action_RESEARCH_CANDIDATE: 47
+action_RESEARCH_CANDIDATE: 48
 contract_sides: 686
 fixtures: 10
 fixtures_model_invalidated: 0
