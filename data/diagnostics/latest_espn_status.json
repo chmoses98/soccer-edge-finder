@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-15T04:51:00.039603+00:00",
+  "as_of": "2026-10-15T11:40:38.790904+00:00",
   "events": 576,
   "events_skipped_unmapped": 283,
   "fixtures_mapped": 293,
   "health": {
     "reasons": [
-      "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=61"
+      "weather_failures:4",
+      "weather_stopped:consecutive_failures:skipped=53"
     ],
     "state": "DEGRADED"
   },
@@ -84,10 +84,10 @@
     "captured": 45,
     "events": 45,
     "failures": [],
-    "published_post": 3,
+    "published_post": 0,
     "published_pre_kickoff": 0,
     "unchanged": 0,
-    "unpublished": 42
+    "unpublished": 45
   },
   "map_proposals": {
     "den.1": {
@@ -102,7 +102,7 @@
       "ambiguous": {},
       "proposed": {},
       "unresolved": {
-        "510": "Viking FK",
+        "510": "VIKING FK",
         "620": "SK Brann",
         "987": "Lillestrom"
       }
@@ -119,7 +119,7 @@
       "proposed": {},
       "unresolved": {
         "21922": "Sabah FK",
-        "510": "Viking FK"
+        "510": "VIKING FK"
       }
     },
     "uefa.europa": {
@@ -156,7 +156,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 17,
+  "results_appended": 0,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -198,7 +198,7 @@
     "3024": "FC Thun",
     "489": "Hajduk Split",
     "490": "Levski Sofia",
-    "510": "Viking FK",
+    "510": "VIKING FK",
     "620": "SK Brann",
     "7853": "AGF",
     "8089": "CSU Craiova",
@@ -208,17 +208,18 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 10,
-    "events": 74,
+    "captured": 21,
+    "events": 78,
     "failures": [
-      "401892160: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-33.8678&longitude=151.2073&hourly=",
-      "401892159: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=New%20South%20Wales&count=5&lan",
-      "401892158: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Wellington&count=5&language=en&"
+      "401860392: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-3.7172&longitude=-38.5431&hourly=t",
+      "401861477: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Zhengzhou&count=5&language=en&f",
+      "401861478: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Dalian&count=5&language=en&form",
+      "401861510: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Qingdao&count=5&language=en&for"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 61,
+    "skipped": 53,
     "stopped": "consecutive_failures"
   }
 }
