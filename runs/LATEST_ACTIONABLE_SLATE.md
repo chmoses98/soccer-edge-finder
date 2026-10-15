@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261015T213811Z-c7be70` · generated 2026-10-15T21:38:11.344611Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261015T215307Z-b0fd4e` · generated 2026-10-15T21:53:07.512922Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-15T21:35:20.209479Z (CURRENT at publish; CURRENT until 2026-10-15T21:55:20.209479Z, STALE after 2026-10-15T22:05:20.209479Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-15T21:50:20.215753Z (CURRENT at publish; CURRENT until 2026-10-15T22:10:20.215753Z, STALE after 2026-10-15T22:20:20.215753Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-15T21:38:10.474705Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.23s
+model board generated 2026-10-15T21:38:10.474705Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.21s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -71,17 +71,17 @@ model board generated 2026-10-15T21:38:10.474705Z · simulations this update: 1 
 | Tijuana vs Puebla | Total goals over 2.5 | no | 0.4700 | 0.605 [0.438, 0.762] | +0.117 | +0.016 | 0.48 | - |  | RESEARCH_CANDIDATE |
 | Real Betis vs FC Barcelona | Result: draw | yes | 0.1700 | 0.224 [0.176, 0.271] | +0.044 | +0.013 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | Total goals over 1.5 | no | 0.2300 | 0.346 [0.202, 0.493] | +0.103 | +0.011 | 0.24 | - |  | RESEARCH_CANDIDATE |
+| Valencia vs Athletic Club | Result: away | no | 0.5700 | 0.684 [0.543, 0.816] | +0.097 | +0.010 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | Total goals over 4.5 | no | 0.8500 | 0.908 [0.826, 0.972] | +0.049 | +0.010 | 0.86 | - |  | RESEARCH_CANDIDATE |
-| Valencia vs Athletic Club | Result: home | yes | 0.2900 | 0.413 [0.261, 0.573] | +0.109 | +0.005 | 0.29 | - | * | RESEARCH_CANDIDATE |
+| Valencia vs Athletic Club | Result: home | yes | 0.2900 | 0.413 [0.261, 0.573] | +0.109 | +0.005 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | away team total over 2.5 | no | 0.9200 | 0.952 [0.907, 0.985] | +0.027 | +0.005 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Philadelphia Union vs Charlotte FC | btts | no | 0.3400 | 0.434 [0.313, 0.553] | +0.078 | +0.001 | 0.34 | - | * | RESEARCH_CANDIDATE |
-| Valencia vs Athletic Club | Result: away | no | 0.5800 | 0.684 [0.543, 0.816] | +0.087 | +0.000 | 0.58 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 671
-action_NO_QUOTE: 171
+action_NO_EDGE: 673
+action_NO_QUOTE: 169
 action_RESEARCH_CANDIDATE: 22
 contract_sides: 864
 fixtures: 37
