@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-15T17:08:54.750523+00:00",
+  "as_of": "2026-10-15T21:32:28.410612+00:00",
   "events": 576,
   "events_skipped_unmapped": 283,
   "fixtures_mapped": 293,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=72"
+      "weather_stopped:consecutive_failures:skipped=89"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 63,
-    "events": 63,
+    "captured": 48,
+    "events": 49,
     "failures": [],
-    "published_post": 20,
+    "published_post": 19,
     "published_pre_kickoff": 0,
-    "unchanged": 0,
-    "unpublished": 43
+    "unchanged": 1,
+    "unpublished": 30
   },
   "map_proposals": {
     "den.1": {
@@ -156,7 +156,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 2,
+  "results_appended": 19,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -208,17 +208,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 16,
-    "events": 91,
+    "captured": 11,
+    "events": 103,
     "failures": [
-      "401841271: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-25.4278&longitude=-49.2731&hourly=",
-      "401841273: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-23.5475&longitude=-46.6361&hourly=",
-      "401860398: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-23.0884&longitude=-47.2119&hourly="
+      "401892162: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-33.8678&longitude=151.2073&hourly=",
+      "401892161: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Auckland&count=5&language=en&fo",
+      "401892160: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-33.8678&longitude=151.2073&hourly="
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 72,
+    "skipped": 89,
     "stopped": "consecutive_failures"
   }
 }
