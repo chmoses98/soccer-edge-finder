@@ -1,10 +1,10 @@
 {
  "counts": {
+  "PINNACLE_VALID_CLOSE": 114,
   "DISPATCHER_CLOSE_NO_ATTEMPT": 77,
-  "PINNACLE_VALID_CLOSE": 102,
+  "NO_SPORT_KEY": 19,
   "PINNACLE_QUOTED_NOTHING": 15,
-  "MISSED_DISPATCHER_CLOSE": 32,
-  "NO_SPORT_KEY": 19
+  "MISSED_DISPATCHER_CLOSE": 32
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.sarmiento": {
@@ -1152,6 +1152,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:usa.mls:2026:usa.cf_montreal:usa.atlanta_united": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261014T231500Z"
+  },
   "fx:usa.mls:2026:usa.charlotte:usa.fc_dallas": {
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
@@ -1162,20 +1167,55 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261010T181407Z"
   },
+  "fx:usa.mls:2026:usa.chicago_fire:usa.philadelphia_union": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261015T001405Z"
+  },
   "fx:usa.mls:2026:usa.chicago_fire:usa.vancouver_whitecaps": {
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
    "batch_id": null
+  },
+  "fx:usa.mls:2026:usa.cincinnati:usa.new_england": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261014T231500Z"
+  },
+  "fx:usa.mls:2026:usa.colorado_rapids:usa.minnesota_united": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261015T011431Z"
   },
   "fx:usa.mls:2026:usa.colorado_rapids:usa.san_jose_earthquakes": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261011T011500Z"
   },
+  "fx:usa.mls:2026:usa.columbus_crew:usa.charlotte": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261014T231500Z"
+  },
+  "fx:usa.mls:2026:usa.dc_united:usa.ny_red_bulls": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261014T231500Z"
+  },
+  "fx:usa.mls:2026:usa.fc_dallas:usa.seattle_sounders": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261015T001405Z"
+  },
   "fx:usa.mls:2026:usa.inter_miami:usa.dc_united": {
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
    "batch_id": null
+  },
+  "fx:usa.mls:2026:usa.inter_miami:usa.nycfc": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261014T231500Z"
   },
   "fx:usa.mls:2026:usa.lafc:usa.vancouver_whitecaps": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -1186,6 +1226,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:usa.mls:2026:usa.nashville:usa.sporting_kc": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261015T001405Z"
   },
   "fx:usa.mls:2026:usa.new_england:usa.seattle_sounders": {
    "state": "MISSED_DISPATCHER_CLOSE",
@@ -1212,6 +1257,11 @@
    "close_horizon_delivered": false,
    "batch_id": null
   },
+  "fx:usa.mls:2026:usa.real_salt_lake:usa.san_jose_earthquakes": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261015T011431Z"
+  },
   "fx:usa.mls:2026:usa.seattle_sounders:usa.sporting_kc": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
@@ -1227,10 +1277,20 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261011T224327Z"
   },
+  "fx:usa.mls:2026:usa.st_louis_city:usa.vancouver_whitecaps": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261015T001405Z"
+  },
   "fx:usa.mls:2026:usa.toronto:usa.cf_montreal": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261010T164421Z"
+  },
+  "fx:usa.mls:2026:usa.toronto:usa.orlando_city": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261014T231500Z"
   }
  }
 }
