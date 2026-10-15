@@ -3,37 +3,37 @@
   "commit_sha": "1133a324b2a0",
   "components": {
     "dispatch": {
-      "age_seconds": 3800.5,
+      "age_seconds": 10427.5,
       "as_of": "2026-10-15T01:25:33Z",
       "detail": "kickoff dispatcher heartbeat",
       "status": "STALE"
     },
     "espn_fixtures": {
-      "age_seconds": 59.9,
+      "age_seconds": 6687.0,
       "as_of": "2026-10-15T02:27:53Z",
       "detail": "ESPN fixture/lineup sync (STATUS.json)",
       "status": "OK"
     },
     "export": {
-      "age_seconds": 59.7,
+      "age_seconds": 6686.8,
       "as_of": "2026-10-15T02:27:53Z",
       "detail": null,
       "status": "OK"
     },
     "kalshi_sweep": {
-      "age_seconds": 63.4,
+      "age_seconds": 6690.5,
       "as_of": "2026-10-15T02:27:50Z",
       "detail": "exhaustive Kalshi soccer sweep (snapshots/STATUS.json)",
-      "status": "OK"
+      "status": "STALE"
     },
     "market_data": {
-      "age_seconds": 232.0,
+      "age_seconds": 6859.1,
       "as_of": "2026-10-15T02:25:01Z",
       "detail": null,
-      "status": "OK"
+      "status": "STALE"
     },
     "model": {
-      "age_seconds": 2760.8,
+      "age_seconds": 9387.9,
       "as_of": "2026-10-15T01:42:52Z",
       "detail": null,
       "status": "OK"
@@ -51,19 +51,19 @@
       "status": "UNKNOWN"
     }
   },
-  "data_age_seconds": 2760.8,
+  "data_age_seconds": 9387.9,
   "errors": [],
-  "freshness_status": "FRESH",
-  "generated_at": "2026-10-15T02:28:53Z",
+  "freshness_status": "STALE",
+  "generated_at": "2026-10-15T04:19:20Z",
   "kind": "health",
-  "last_export_attempt": "2026-10-15T02:28:53Z",
+  "last_export_attempt": "2026-10-15T04:19:20Z",
   "last_market_capture": "2026-10-15T02:25:01Z",
   "last_model_generated": "2026-10-15T01:42:52Z",
   "last_successful_run": "2026-10-15T02:27:53Z",
-  "market_data_status": "OK",
+  "market_data_status": "STALE",
   "model_status": "OK",
   "next_scheduled_run": "2026-10-15T01:57:03Z",
-  "overall_status": "RESEARCH_ONLY",
+  "overall_status": "STALE",
   "payload_run_id": "run_fb4bc35dac517373b57f",
   "router_status": "UNKNOWN",
   "run_id": "run_fb4bc35dac517373b57f",
