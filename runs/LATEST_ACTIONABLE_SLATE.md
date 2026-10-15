@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261015T154457Z-8d5965` · generated 2026-10-15T15:44:57.012376Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261015T160031Z-8b55bd` · generated 2026-10-15T16:00:31.805891Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-15T15:42:16.244674Z (CURRENT at publish; CURRENT until 2026-10-15T16:02:16.244674Z, STALE after 2026-10-15T16:12:16.244674Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-15T15:57:46.402439Z (CURRENT at publish; CURRENT until 2026-10-15T16:17:46.402439Z, STALE after 2026-10-15T16:27:46.402439Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-15T15:30:08.279525Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.24s
+model board generated 2026-10-15T16:00:31.206575Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.24s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -36,6 +36,7 @@ model board generated 2026-10-15T15:30:08.279525Z · simulations this update: 0 
 | 2026-10-17T14:00:00Z | Manchester City vs Ipswich Town (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-17T14:15:00Z | Villarreal vs Elche (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-17T15:15:00Z | Strasbourg vs Paris Saint-Germain (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-17T16:00:00Z | Bologna vs Inter Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
 ## Candidates on CURRENT prices (16; RESEARCH_ONLY = analysis, never a bet)
 
@@ -44,7 +45,7 @@ model board generated 2026-10-15T15:30:08.279525Z · simulations this update: 0 
 | Strasbourg vs Paris Saint-Germain | Result: away | no | 0.3000 | 0.602 [0.414, 0.783] | +0.288 | +0.170 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Strasbourg vs Paris Saint-Germain | Result: home | yes | 0.1400 | 0.376 [0.202, 0.570] | +0.227 | +0.112 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | Everton vs Chelsea | Result: away | no | 0.5500 | 0.732 [0.582, 0.867] | +0.164 | +0.074 | 0.62 | - | * | RESEARCH_CANDIDATE |
-| Everton vs Chelsea | Result: home | yes | 0.3000 | 0.494 [0.314, 0.676] | +0.179 | +0.063 | 0.36 | - |  | RESEARCH_CANDIDATE |
+| Everton vs Chelsea | Result: home | yes | 0.2900 | 0.494 [0.314, 0.676] | +0.190 | +0.073 | 0.36 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | btts | no | 0.4500 | 0.596 [0.481, 0.710] | +0.129 | +0.056 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Espanyol vs Atlético Madrid | Result: away | no | 0.4400 | 0.608 [0.437, 0.758] | +0.151 | +0.048 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Fulham vs Hull City | Result: home | no | 0.4400 | 0.627 [0.424, 0.814] | +0.170 | +0.040 | 0.47 | - | * | RESEARCH_CANDIDATE |
@@ -61,11 +62,11 @@ model board generated 2026-10-15T15:30:08.279525Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 421
-action_NO_QUOTE: 135
+action_NO_EDGE: 428
+action_NO_QUOTE: 134
 action_RESEARCH_CANDIDATE: 16
-contract_sides: 572
-fixtures: 24
+contract_sides: 578
+fixtures: 25
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
