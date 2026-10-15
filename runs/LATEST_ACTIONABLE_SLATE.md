@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261015T001654Z-e86bc4` · generated 2026-10-15T00:16:54.606985Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261015T002257Z-265c3a` · generated 2026-10-15T00:22:57.402074Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-15T00:14:05.414225Z (CURRENT at publish; CURRENT until 2026-10-15T00:34:05.414225Z, STALE after 2026-10-15T00:44:05.414225Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-15T00:20:11.079900Z (CURRENT at publish; CURRENT until 2026-10-15T00:40:11.079900Z, STALE after 2026-10-15T00:50:11.079900Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-14T23:42:28.217004Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.76s
+model board generated 2026-10-14T23:42:28.217004Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.78s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -28,7 +28,7 @@ model board generated 2026-10-14T23:42:28.217004Z · simulations this update: 0 
 | 2026-10-16T19:00:00Z | Deportivo La Coruña vs Levante (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-16T23:00:00Z | Mirassol vs Internacional (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (74; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (75; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -63,6 +63,7 @@ model board generated 2026-10-14T23:42:28.217004Z · simulations this update: 0 
 | St. Louis City SC vs Vancouver Whitecaps | away team total over 1.5 | no | 0.5400 | 0.666 [0.523, 0.791] | +0.109 | +0.029 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Austin FC | First-half total goals over 2.5 | no | 0.8300 | 0.901 [0.829, 0.961] | +0.061 | +0.028 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Austin FC | First-half exact score 0-0 (home-away) | yes | 0.2400 | 0.352 [0.238, 0.472] | +0.099 | +0.027 | 0.26 | - | * | RESEARCH_CANDIDATE |
+| Chicago Fire vs Philadelphia Union | away team total over 0.5 | no | 0.1700 | 0.276 [0.173, 0.388] | +0.096 | +0.025 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs San Jose Earthquakes | Total goals over 5.5 | no | 0.8800 | 0.938 [0.879, 0.982] | +0.050 | +0.024 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Chicago Fire vs Philadelphia Union | away team total over 2.5 | no | 0.7500 | 0.843 [0.744, 0.929] | +0.080 | +0.023 | 0.77 | - |  | RESEARCH_CANDIDATE |
 | San Diego FC vs Houston Dynamo | First-half total goals over 1.5 | no | 0.6200 | 0.728 [0.608, 0.842] | +0.092 | +0.023 | 0.64 | - | * | RESEARCH_CANDIDATE |
@@ -71,14 +72,13 @@ model board generated 2026-10-14T23:42:28.217004Z · simulations this update: 0 
 | St. Louis City SC vs Vancouver Whitecaps | away team total over 0.5 | no | 0.2100 | 0.315 [0.201, 0.428] | +0.093 | +0.021 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | San Diego FC vs Houston Dynamo | Total goals over 5.5 | no | 0.9200 | 0.963 [0.924, 0.991] | +0.038 | +0.021 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | San Diego FC vs Houston Dynamo | away team total over 2.5 | no | 0.8700 | 0.928 [0.870, 0.973] | +0.050 | +0.021 | 0.89 | - |  | RESEARCH_CANDIDATE |
-| San Diego FC vs Houston Dynamo | Exact score 1-0 (home-away) | yes | 0.0800 | 0.134 [0.089, 0.182] | +0.049 | +0.019 | 0.09 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1148
-action_NO_QUOTE: 164
-action_RESEARCH_CANDIDATE: 74
+action_NO_EDGE: 1151
+action_NO_QUOTE: 160
+action_RESEARCH_CANDIDATE: 75
 contract_sides: 1386
 fixtures: 15
 fixtures_model_invalidated: 0
