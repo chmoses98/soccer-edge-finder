@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261015T121300Z-899609` · generated 2026-10-15T12:13:00.909413Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261015T122800Z-c25e7d` · generated 2026-10-15T12:28:00.027294Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-15T12:10:17.071494Z (CURRENT at publish; CURRENT until 2026-10-15T12:30:17.071494Z, STALE after 2026-10-15T12:40:17.071494Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-15T12:25:18.600579Z (CURRENT at publish; CURRENT until 2026-10-15T12:45:18.600579Z, STALE after 2026-10-15T12:55:18.600579Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-15T12:13:00.609338Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.09s
+model board generated 2026-10-15T12:13:00.609338Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.09s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -31,7 +31,7 @@ model board generated 2026-10-15T12:13:00.609338Z · simulations this update: 1 
 | Everton vs Chelsea | Result: away | no | 0.5600 | 0.732 [0.582, 0.867] | +0.154 | +0.064 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | Everton vs Chelsea | Result: home | yes | 0.3000 | 0.494 [0.314, 0.676] | +0.179 | +0.063 | 0.36 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | btts | no | 0.4500 | 0.596 [0.481, 0.710] | +0.129 | +0.056 | 0.5 | - | * | RESEARCH_CANDIDATE |
-| Espanyol vs Atlético Madrid | Result: away | no | 0.4500 | 0.608 [0.437, 0.758] | +0.141 | +0.038 | 0.48 | - | * | RESEARCH_CANDIDATE |
+| Espanyol vs Atlético Madrid | Result: away | no | 0.4400 | 0.608 [0.437, 0.758] | +0.151 | +0.048 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Espanyol vs Atlético Madrid | Result: home | yes | 0.2000 | 0.354 [0.203, 0.519] | +0.143 | +0.037 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | Total goals over 3.5 | no | 0.6900 | 0.796 [0.662, 0.910] | +0.091 | +0.018 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | Total goals over 2.5 | no | 0.4700 | 0.605 [0.438, 0.762] | +0.117 | +0.016 | 0.48 | - |  | RESEARCH_CANDIDATE |
@@ -42,8 +42,8 @@ model board generated 2026-10-15T12:13:00.609338Z · simulations this update: 1 
 ## Counts
 
 ```
-action_NO_EDGE: 363
-action_NO_QUOTE: 69
+action_NO_EDGE: 361
+action_NO_QUOTE: 71
 action_RESEARCH_CANDIDATE: 10
 contract_sides: 442
 fixtures: 11
