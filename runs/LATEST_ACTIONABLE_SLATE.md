@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261015T174533Z-a5a90e` · generated 2026-10-15T17:45:33.306468Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261015T180039Z-73d935` · generated 2026-10-15T18:00:39.964735Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-15T17:42:51.750459Z (CURRENT at publish; CURRENT until 2026-10-15T18:02:51.750459Z, STALE after 2026-10-15T18:12:51.750459Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-15T17:57:53.753893Z (CURRENT at publish; CURRENT until 2026-10-15T18:17:53.753893Z, STALE after 2026-10-15T18:27:53.753893Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-15T16:30:33.741330Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.27s
 
@@ -47,7 +47,7 @@ model board generated 2026-10-15T16:30:33.741330Z · simulations this update: 0 
 |---|---|---|---|---|---|---|---|---|---|---|
 | Strasbourg vs Paris Saint-Germain | Result: away | no | 0.3000 | 0.602 [0.414, 0.783] | +0.288 | +0.170 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Strasbourg vs Paris Saint-Germain | Result: home | yes | 0.1400 | 0.376 [0.202, 0.570] | +0.227 | +0.112 | 0.24 | - |  | RESEARCH_CANDIDATE |
-| Real Betis vs FC Barcelona | Result: away | no | 0.2900 | 0.519 [0.341, 0.686] | +0.215 | +0.098 | 0.38 | - | * | RESEARCH_CANDIDATE |
+| Real Betis vs FC Barcelona | Result: away | no | 0.3000 | 0.519 [0.341, 0.686] | +0.204 | +0.087 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Everton vs Chelsea | Result: away | no | 0.5500 | 0.732 [0.582, 0.867] | +0.164 | +0.074 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | Everton vs Chelsea | Result: home | yes | 0.2900 | 0.494 [0.314, 0.676] | +0.190 | +0.073 | 0.36 | - |  | RESEARCH_CANDIDATE |
 | Espanyol vs Atlético Madrid | Result: away | no | 0.4400 | 0.608 [0.437, 0.758] | +0.151 | +0.048 | 0.48 | - | * | RESEARCH_CANDIDATE |
