@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261015T201549Z-49afd7` · generated 2026-10-15T20:15:49.951522Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261015T203056Z-dd1451` · generated 2026-10-15T20:30:56.658258Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-15T20:13:02.043503Z (CURRENT at publish; CURRENT until 2026-10-15T20:33:02.043503Z, STALE after 2026-10-15T20:43:02.043503Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-15T20:28:03.118245Z (CURRENT at publish; CURRENT until 2026-10-15T20:48:03.118245Z, STALE after 2026-10-15T20:58:03.118245Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-15T19:21:09.960059Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.70s
+model board generated 2026-10-15T20:30:55.126968Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.54s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -46,6 +46,7 @@ model board generated 2026-10-15T19:21:09.960059Z · simulations this update: 0 
 | 2026-10-17T18:45:00Z | Troyes vs Lens (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-17T18:45:00Z | AS Roma vs Genoa (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-17T19:00:00Z | Valencia vs Athletic Club (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 72 | 0 |
+| 2026-10-17T20:30:00Z | Minnesota United vs St. Louis City SC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
 ## Candidates on CURRENT prices (22; RESEARCH_ONLY = analysis, never a bet)
 
@@ -77,11 +78,11 @@ model board generated 2026-10-15T19:21:09.960059Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 587
-action_NO_QUOTE: 3627
+action_NO_EDGE: 614
+action_NO_QUOTE: 3628
 action_RESEARCH_CANDIDATE: 22
-contract_sides: 4236
-fixtures: 34
+contract_sides: 4264
+fixtures: 35
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
