@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261015T125800Z-aa1098` · generated 2026-10-15T12:58:00.508219Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261015T131304Z-056fb7` · generated 2026-10-15T13:13:04.864423Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-15T12:55:19.347318Z (CURRENT at publish; CURRENT until 2026-10-15T13:15:19.347318Z, STALE after 2026-10-15T13:25:19.347318Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-15T13:10:19.327231Z (CURRENT at publish; CURRENT until 2026-10-15T13:30:19.327231Z, STALE after 2026-10-15T13:40:19.327231Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-15T12:13:00.609338Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.09s
+model board generated 2026-10-15T13:13:04.258967Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.09s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -23,6 +23,7 @@ model board generated 2026-10-15T12:13:00.609338Z · simulations this update: 0 
 | 2026-10-17T03:05:00Z | Tijuana vs Puebla (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-17T11:30:00Z | Everton vs Chelsea (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-17T12:00:00Z | Espanyol vs Atlético Madrid (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-17T13:00:00Z | Venezia vs Napoli (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
 ## Candidates on CURRENT prices (10; RESEARCH_ONLY = analysis, never a bet)
 
@@ -33,20 +34,20 @@ model board generated 2026-10-15T12:13:00.609338Z · simulations this update: 0 
 | Tijuana vs Puebla | btts | no | 0.4500 | 0.596 [0.481, 0.710] | +0.129 | +0.056 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Espanyol vs Atlético Madrid | Result: away | no | 0.4400 | 0.608 [0.437, 0.758] | +0.151 | +0.048 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Espanyol vs Atlético Madrid | Result: home | yes | 0.2000 | 0.354 [0.203, 0.519] | +0.143 | +0.037 | 0.23 | - |  | RESEARCH_CANDIDATE |
-| Tijuana vs Puebla | Total goals over 3.5 | no | 0.6900 | 0.796 [0.662, 0.910] | +0.091 | +0.018 | 0.7 | - | * | RESEARCH_CANDIDATE |
-| Tijuana vs Puebla | Total goals over 2.5 | no | 0.4700 | 0.605 [0.438, 0.762] | +0.117 | +0.016 | 0.48 | - |  | RESEARCH_CANDIDATE |
+| Tijuana vs Puebla | Total goals over 2.5 | no | 0.4700 | 0.605 [0.438, 0.762] | +0.117 | +0.016 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | Total goals over 1.5 | no | 0.2300 | 0.346 [0.202, 0.493] | +0.103 | +0.011 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | Total goals over 4.5 | no | 0.8500 | 0.908 [0.826, 0.972] | +0.049 | +0.010 | 0.86 | - |  | RESEARCH_CANDIDATE |
+| Tijuana vs Puebla | Total goals over 3.5 | no | 0.7000 | 0.796 [0.662, 0.910] | +0.081 | +0.008 | 0.7 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | away team total over 1.5 | no | 0.7400 | 0.818 [0.710, 0.906] | +0.064 | +0.004 | 0.74 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 362
-action_NO_QUOTE: 70
+action_NO_EDGE: 367
+action_NO_QUOTE: 71
 action_RESEARCH_CANDIDATE: 10
-contract_sides: 442
-fixtures: 11
+contract_sides: 448
+fixtures: 12
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
