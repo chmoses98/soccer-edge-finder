@@ -1,10 +1,10 @@
 {
  "counts": {
-  "PINNACLE_VALID_CLOSE": 114,
+  "PINNACLE_VALID_CLOSE": 117,
+  "MISSED_DISPATCHER_CLOSE": 32,
   "DISPATCHER_CLOSE_NO_ATTEMPT": 77,
   "NO_SPORT_KEY": 19,
-  "PINNACLE_QUOTED_NOTHING": 15,
-  "MISSED_DISPATCHER_CLOSE": 32
+  "PINNACLE_QUOTED_NOTHING": 15
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.sarmiento": {
@@ -1217,6 +1217,16 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261014T231500Z"
   },
+  "fx:usa.mls:2026:usa.la_galaxy:usa.portland_timbers": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261015T021430Z"
+  },
+  "fx:usa.mls:2026:usa.lafc:usa.austin": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261015T021430Z"
+  },
   "fx:usa.mls:2026:usa.lafc:usa.vancouver_whitecaps": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
@@ -1261,6 +1271,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261015T011431Z"
+  },
+  "fx:usa.mls:2026:usa.san_diego:usa.houston_dynamo": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261015T021430Z"
   },
   "fx:usa.mls:2026:usa.seattle_sounders:usa.sporting_kc": {
    "state": "PINNACLE_VALID_CLOSE",
