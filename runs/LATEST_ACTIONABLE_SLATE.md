@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261015T193048Z-d77f9a` · generated 2026-10-15T19:30:48.735305Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261015T194548Z-4db9ca` · generated 2026-10-15T19:45:48.717820Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-15T19:28:00.646907Z (CURRENT at publish; CURRENT until 2026-10-15T19:48:00.646907Z, STALE after 2026-10-15T19:58:00.646907Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-15T19:43:00.657390Z (CURRENT at publish; CURRENT until 2026-10-15T20:03:00.657390Z, STALE after 2026-10-15T20:13:00.657390Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-15T19:21:09.960059Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.70s
+model board generated 2026-10-15T19:21:09.960059Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.69s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -51,9 +51,9 @@ model board generated 2026-10-15T19:21:09.960059Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Strasbourg vs Paris Saint-Germain | Result: away | no | 0.3000 | 0.602 [0.414, 0.783] | +0.288 | +0.170 | 0.46 | - | * | RESEARCH_CANDIDATE |
+| Strasbourg vs Paris Saint-Germain | Result: away | no | 0.3100 | 0.602 [0.414, 0.783] | +0.278 | +0.159 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Strasbourg vs Paris Saint-Germain | Result: home | yes | 0.1400 | 0.376 [0.202, 0.570] | +0.227 | +0.112 | 0.24 | - |  | RESEARCH_CANDIDATE |
-| Real Betis vs FC Barcelona | Result: away | no | 0.2900 | 0.519 [0.341, 0.686] | +0.215 | +0.098 | 0.38 | - | * | RESEARCH_CANDIDATE |
+| Real Betis vs FC Barcelona | Result: away | no | 0.3000 | 0.519 [0.341, 0.686] | +0.204 | +0.087 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Everton vs Chelsea | Result: away | no | 0.5500 | 0.732 [0.582, 0.867] | +0.164 | +0.074 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | Everton vs Chelsea | Result: home | yes | 0.2900 | 0.494 [0.314, 0.676] | +0.190 | +0.073 | 0.36 | - |  | RESEARCH_CANDIDATE |
 | Espanyol vs Atlético Madrid | Result: away | no | 0.4300 | 0.608 [0.437, 0.758] | +0.161 | +0.058 | 0.48 | - | * | RESEARCH_CANDIDATE |
@@ -77,8 +77,8 @@ model board generated 2026-10-15T19:21:09.960059Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 580
-action_NO_QUOTE: 3634
+action_NO_EDGE: 583
+action_NO_QUOTE: 3631
 action_RESEARCH_CANDIDATE: 22
 contract_sides: 4236
 fixtures: 34
