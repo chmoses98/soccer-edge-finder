@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261015T223148Z-214467` · generated 2026-10-15T22:31:48.627838Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261015T224655Z-d44d8d` · generated 2026-10-15T22:46:55.076484Z · trigger `kickoff_chain:T-15` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-15T22:28:58.821953Z (CURRENT at publish; CURRENT until 2026-10-15T22:48:58.821953Z, STALE after 2026-10-15T22:58:58.821953Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-15T22:43:59.900704Z (CURRENT at publish; CURRENT until 2026-10-15T23:03:59.900704Z, STALE after 2026-10-15T23:13:59.900704Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-15T21:38:10.474705Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.34s
+model board generated 2026-10-15T21:38:10.474705Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.21s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-15T21:38:10.474705Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-15T23:00:00Z | Huracán vs Gimnasia La Plata (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
+| 2026-10-15T23:00:00Z | Huracán vs Gimnasia La Plata (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
 | 2026-10-16T18:30:00Z | Eintracht Frankfurt vs 1. FC Köln (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-16T18:45:00Z | Le Mans vs Toulouse (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-16T18:45:00Z | Frosinone vs Sassuolo (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -80,12 +80,12 @@ model board generated 2026-10-15T21:38:10.474705Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 671
-action_NO_QUOTE: 171
+action_NO_EDGE: 672
+action_NO_QUOTE: 170
 action_RESEARCH_CANDIDATE: 22
 contract_sides: 864
 fixtures: 37
-fixtures_model_invalidated: 0
+fixtures_model_invalidated: 1
 fixtures_model_missing: 0
 ```
 
