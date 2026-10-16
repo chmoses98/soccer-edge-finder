@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261016T150131Z-351c7d` · generated 2026-10-16T15:01:31.836162Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261016T151639Z-cdba07` · generated 2026-10-16T15:16:39.885319Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-16T14:58:36.805620Z (CURRENT at publish; CURRENT until 2026-10-16T15:18:36.805620Z, STALE after 2026-10-16T15:28:36.805620Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-16T15:13:38.929692Z (CURRENT at publish; CURRENT until 2026-10-16T15:33:38.929692Z, STALE after 2026-10-16T15:43:38.929692Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-16T14:16:30.540492Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.98s
+model board generated 2026-10-16T15:16:38.289199Z · simulations this update: 3 · Odds API calls this update: 0 (credits 0) · reprice 2.03s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -77,8 +77,11 @@ model board generated 2026-10-16T14:16:30.540492Z · simulations this update: 0 
 | 2026-10-18T13:00:00Z | Fiorentina vs Como (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T13:30:00Z | Bayer Leverkusen vs SC Freiburg (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T14:15:00Z | Celta Vigo vs Deportivo Alavés (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-18T15:15:00Z | Le Havre vs AJ Auxerre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-18T15:15:00Z | Lorient vs AS Monaco (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-18T15:15:00Z | Paris FC vs Rennes (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (205; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (206; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -109,7 +112,6 @@ model board generated 2026-10-16T14:16:30.540492Z · simulations this update: 0 
 | Austin FC vs Vancouver Whitecaps | Result: away | no | 0.4100 | 0.585 [0.446, 0.712] | +0.158 | +0.072 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Chicago Fire | away team total over 1.5 | no | 0.5300 | 0.697 [0.556, 0.815] | +0.150 | +0.072 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | Real Betis vs FC Barcelona | Result: away | no | 0.3000 | 0.502 [0.333, 0.676] | +0.188 | +0.071 | 0.36 | - | * | RESEARCH_CANDIDATE |
-| New York Red Bulls vs Toronto FC | Total goals over 2.5 | no | 0.3300 | 0.527 [0.361, 0.687] | +0.182 | +0.071 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Toronto FC | away team total over 1.5 | no | 0.5700 | 0.732 [0.598, 0.850] | +0.145 | +0.070 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Nashville SC | btts | no | 0.3600 | 0.528 [0.404, 0.649] | +0.152 | +0.070 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Vancouver Whitecaps | away wins by more than 1.5 | no | 0.6500 | 0.797 [0.688, 0.890] | +0.132 | +0.070 | 0.72 | - | * | RESEARCH_CANDIDATE |
@@ -119,6 +121,7 @@ model board generated 2026-10-16T14:16:30.540492Z · simulations this update: 0 
 | Everton vs Chelsea | Result: away | no | 0.5600 | 0.732 [0.581, 0.868] | +0.154 | +0.064 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs Los Angeles FC | Total goals over 4.5 | no | 0.8400 | 0.940 [0.888, 0.980] | +0.091 | +0.064 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Everton vs Chelsea | Result: home | yes | 0.3000 | 0.494 [0.313, 0.676] | +0.179 | +0.062 | 0.36 | - |  | RESEARCH_CANDIDATE |
+| New York Red Bulls vs Toronto FC | Total goals over 2.5 | no | 0.3400 | 0.527 [0.361, 0.687] | +0.171 | +0.060 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Nashville SC | away team total over 1.5 | no | 0.4500 | 0.622 [0.465, 0.763] | +0.155 | +0.060 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs Querétaro | home team total over 1.5 | no | 0.5500 | 0.716 [0.547, 0.853] | +0.149 | +0.060 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Vancouver Whitecaps | away wins by more than 2.5 | no | 0.8200 | 0.920 [0.861, 0.968] | +0.090 | +0.059 | 0.88 | - |  | RESEARCH_CANDIDATE |
@@ -126,11 +129,11 @@ model board generated 2026-10-16T14:16:30.540492Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2734
-action_NO_QUOTE: 831
-action_RESEARCH_CANDIDATE: 205
-contract_sides: 3770
-fixtures: 65
+action_NO_EDGE: 2755
+action_NO_QUOTE: 827
+action_RESEARCH_CANDIDATE: 206
+contract_sides: 3788
+fixtures: 68
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
