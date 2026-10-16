@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261016T160144Z-3a9f37` · generated 2026-10-16T16:01:44.213770Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261016T161643Z-df8ed8` · generated 2026-10-16T16:16:43.949010Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-16T15:58:43.952985Z (CURRENT at publish; CURRENT until 2026-10-16T16:18:43.952985Z, STALE after 2026-10-16T16:28:43.952985Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-16T16:13:47.978114Z (CURRENT at publish; CURRENT until 2026-10-16T16:33:47.978114Z, STALE after 2026-10-16T16:43:47.978114Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-16T16:01:43.174978Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 2.07s
+model board generated 2026-10-16T16:01:43.174978Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 2.07s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -95,8 +95,8 @@ model board generated 2026-10-16T16:01:43.174978Z · simulations this update: 1 
 | New York City FC vs Los Angeles FC | Total goals over 2.5 | no | 0.4500 | 0.675 [0.537, 0.801] | +0.208 | +0.122 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Strasbourg vs Paris Saint-Germain | Result: home | yes | 0.1400 | 0.376 [0.202, 0.571] | +0.228 | +0.113 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs Los Angeles FC | Total goals over 3.5 | no | 0.6700 | 0.850 [0.752, 0.930] | +0.164 | +0.109 | 0.78 | - |  | RESEARCH_CANDIDATE |
-| Austin FC vs Vancouver Whitecaps | away team total over 1.5 | no | 0.3800 | 0.598 [0.454, 0.733] | +0.201 | +0.109 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs CF Montréal | btts | no | 0.4200 | 0.615 [0.508, 0.729] | +0.178 | +0.108 | 0.52 | - | * | RESEARCH_CANDIDATE |
+| Austin FC vs Vancouver Whitecaps | away team total over 1.5 | no | 0.3900 | 0.598 [0.454, 0.733] | +0.191 | +0.098 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Vancouver Whitecaps | away team total over 2.5 | no | 0.6600 | 0.829 [0.723, 0.918] | +0.153 | +0.092 | 0.75 | - |  | RESEARCH_CANDIDATE |
 | Atlanta United vs Inter Miami | away team total over 1.5 | no | 0.3700 | 0.569 [0.421, 0.708] | +0.182 | +0.091 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Nottingham Forest vs Arsenal | Result: away | no | 0.4100 | 0.624 [0.464, 0.778] | +0.197 | +0.090 | 0.49 | - | * | RESEARCH_CANDIDATE |
@@ -108,7 +108,6 @@ model board generated 2026-10-16T16:01:43.174978Z · simulations this update: 1 
 | Seattle Sounders vs CF Montréal | Total goals over 2.5 | no | 0.3500 | 0.556 [0.384, 0.719] | +0.190 | +0.084 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs Querétaro | btts | no | 0.4000 | 0.586 [0.457, 0.705] | +0.169 | +0.084 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Toronto FC | btts | no | 0.3300 | 0.512 [0.382, 0.631] | +0.167 | +0.080 | 0.4 | - | * | RESEARCH_CANDIDATE |
-| Seattle Sounders vs CF Montréal | away team total over 0.5 | no | 0.3700 | 0.538 [0.421, 0.660] | +0.152 | +0.077 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs CF Montréal | Total goals over 3.5 | no | 0.5800 | 0.757 [0.606, 0.884] | +0.160 | +0.076 | 0.65 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Nashville SC | Total goals over 3.5 | no | 0.6000 | 0.770 [0.637, 0.884] | +0.153 | +0.075 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Toronto FC | Total goals over 3.5 | no | 0.5500 | 0.733 [0.582, 0.864] | +0.166 | +0.073 | 0.62 | - | * | RESEARCH_CANDIDATE |
@@ -119,21 +118,22 @@ model board generated 2026-10-16T16:01:43.174978Z · simulations this update: 1 
 | New York Red Bulls vs Toronto FC | away team total over 1.5 | no | 0.5700 | 0.732 [0.598, 0.850] | +0.145 | +0.070 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Nashville SC | btts | no | 0.3600 | 0.528 [0.404, 0.649] | +0.152 | +0.070 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Vancouver Whitecaps | away wins by more than 1.5 | no | 0.6500 | 0.797 [0.688, 0.890] | +0.132 | +0.070 | 0.72 | - | * | RESEARCH_CANDIDATE |
+| Seattle Sounders vs CF Montréal | away team total over 0.5 | no | 0.3800 | 0.538 [0.421, 0.660] | +0.141 | +0.067 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs CF Montréal | away team total over 1.5 | no | 0.7400 | 0.863 [0.785, 0.934] | +0.110 | +0.066 | 0.8 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | btts | no | 0.4400 | 0.596 [0.479, 0.709] | +0.139 | +0.066 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Everton vs Chelsea | Result: away | no | 0.5600 | 0.732 [0.581, 0.868] | +0.154 | +0.064 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs Los Angeles FC | Total goals over 4.5 | no | 0.8400 | 0.940 [0.888, 0.980] | +0.091 | +0.064 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Nottingham Forest vs Arsenal | Result: home | yes | 0.1600 | 0.337 [0.195, 0.495] | +0.168 | +0.064 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Everton vs Chelsea | Result: home | yes | 0.3000 | 0.494 [0.313, 0.676] | +0.179 | +0.062 | 0.36 | - |  | RESEARCH_CANDIDATE |
+| Seattle Sounders vs CF Montréal | Total goals over 4.5 | no | 0.7600 | 0.884 [0.784, 0.960] | +0.111 | +0.062 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Toronto FC | Total goals over 2.5 | no | 0.3400 | 0.527 [0.361, 0.687] | +0.171 | +0.060 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Nashville SC | away team total over 1.5 | no | 0.4500 | 0.622 [0.465, 0.763] | +0.155 | +0.060 | 0.5 | - | * | RESEARCH_CANDIDATE |
-| Santos Laguna vs Querétaro | home team total over 1.5 | no | 0.5500 | 0.716 [0.547, 0.853] | +0.149 | +0.060 | 0.61 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2767
-action_NO_QUOTE: 827
+action_NO_EDGE: 2770
+action_NO_QUOTE: 824
 action_RESEARCH_CANDIDATE: 212
 contract_sides: 3806
 fixtures: 71
