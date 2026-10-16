@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261016T112848Z-9a290a` · generated 2026-10-16T11:28:48.170495Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261016T114349Z-118fa4` · generated 2026-10-16T11:43:49.860581Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-16T11:25:54.521094Z (CURRENT at publish; CURRENT until 2026-10-16T11:45:54.521094Z, STALE after 2026-10-16T11:55:54.521094Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-16T11:40:56.012316Z (CURRENT at publish; CURRENT until 2026-10-16T12:00:56.012316Z, STALE after 2026-10-16T12:10:56.012316Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-16T10:43:47.666705Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.02s
+model board generated 2026-10-16T10:43:47.666705Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.87s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -111,14 +111,14 @@ model board generated 2026-10-16T10:43:47.666705Z · simulations this update: 0 
 | New York City FC vs Los Angeles FC | Total goals over 4.5 | no | 0.8400 | 0.940 [0.888, 0.980] | +0.091 | +0.064 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Vancouver Whitecaps | away team total over 0.5 | no | 0.1200 | 0.260 [0.161, 0.365] | +0.132 | +0.062 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | Everton vs Chelsea | Result: home | yes | 0.3000 | 0.494 [0.313, 0.676] | +0.179 | +0.062 | 0.36 | - |  | RESEARCH_CANDIDATE |
-| Seattle Sounders vs CF Montréal | Total goals over 4.5 | no | 0.7600 | 0.884 [0.784, 0.960] | +0.111 | +0.062 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs Querétaro | home team total over 1.5 | no | 0.5500 | 0.716 [0.547, 0.853] | +0.149 | +0.060 | 0.61 | - | * | RESEARCH_CANDIDATE |
+| Austin FC vs Vancouver Whitecaps | away wins by more than 2.5 | no | 0.8200 | 0.920 [0.861, 0.968] | +0.090 | +0.059 | 0.88 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2627
-action_NO_QUOTE: 689
+action_NO_EDGE: 2621
+action_NO_QUOTE: 695
 action_RESEARCH_CANDIDATE: 200
 contract_sides: 3516
 fixtures: 56
