@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261016T205846Z-617d70` · generated 2026-10-16T20:58:46.095544Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261016T211346Z-22b5c2` · generated 2026-10-16T21:13:46.080945Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-16T20:55:39.053490Z (CURRENT at publish; CURRENT until 2026-10-16T21:15:39.053490Z, STALE after 2026-10-16T21:25:39.053490Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-16T21:10:39.064787Z (CURRENT at publish; CURRENT until 2026-10-16T21:30:39.064787Z, STALE after 2026-10-16T21:40:39.064787Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-16T19:22:50.404922Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 1.96s
+model board generated 2026-10-16T21:13:39.094075Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 2.02s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-16T19:22:50.404922Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-16T22:00:00Z | Defensa y Justicia vs Instituto (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
+| 2026-10-16T22:00:00Z | Defensa y Justicia vs Instituto (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
 | 2026-10-16T23:00:00Z | Mirassol vs Internacional (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-17T00:30:00Z | Boca Juniors vs Talleres (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-17T01:00:00Z | Necaxa vs Atlas (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -86,8 +86,9 @@ model board generated 2026-10-16T19:22:50.404922Z · simulations this update: 0 
 | 2026-10-18T19:00:00Z | Fluminense vs Santos (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-18T19:00:00Z | Grêmio vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-18T19:00:00Z | Real Madrid vs Sevilla (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-18T21:00:00Z | FC Cincinnati vs Columbus Crew (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (217; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (220; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -123,23 +124,23 @@ model board generated 2026-10-16T19:22:50.404922Z · simulations this update: 0 
 | San Jose Earthquakes vs Nashville SC | btts | no | 0.3600 | 0.528 [0.404, 0.649] | +0.152 | +0.070 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Vancouver Whitecaps | away wins by more than 1.5 | no | 0.6500 | 0.797 [0.688, 0.890] | +0.132 | +0.070 | 0.72 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs CF Montréal | away team total over 0.5 | no | 0.3800 | 0.538 [0.421, 0.660] | +0.141 | +0.067 | 0.44 | - | * | RESEARCH_CANDIDATE |
+| Tijuana vs Puebla | btts | no | 0.4400 | 0.596 [0.479, 0.709] | +0.139 | +0.066 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs Los Angeles FC | Total goals over 4.5 | no | 0.8400 | 0.940 [0.888, 0.980] | +0.091 | +0.064 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Nottingham Forest vs Arsenal | Result: home | yes | 0.1600 | 0.337 [0.195, 0.495] | +0.168 | +0.064 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs CF Montréal | Total goals over 4.5 | no | 0.7600 | 0.884 [0.784, 0.960] | +0.111 | +0.062 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Nashville SC | away team total over 1.5 | no | 0.4500 | 0.622 [0.465, 0.763] | +0.155 | +0.060 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs Querétaro | home team total over 1.5 | no | 0.5500 | 0.716 [0.547, 0.853] | +0.149 | +0.060 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Vancouver Whitecaps | away wins by more than 2.5 | no | 0.8200 | 0.920 [0.861, 0.968] | +0.090 | +0.059 | 0.88 | - |  | RESEARCH_CANDIDATE |
-| New York Red Bulls vs Toronto FC | Total goals over 4.5 | no | 0.7400 | 0.868 [0.764, 0.951] | +0.115 | +0.056 | 0.79 | - |  | RESEARCH_CANDIDATE |
-| Tijuana vs Puebla | btts | no | 0.4500 | 0.596 [0.479, 0.709] | +0.128 | +0.056 | 0.5 | - | * | RESEARCH_CANDIDATE |
+| Santos Laguna vs Querétaro | Total goals over 4.5 | no | 0.8200 | 0.924 [0.852, 0.976] | +0.093 | +0.057 | 0.88 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2819
-action_NO_QUOTE: 854
-action_RESEARCH_CANDIDATE: 217
-contract_sides: 3890
-fixtures: 74
+action_NO_EDGE: 2923
+action_NO_QUOTE: 901
+action_RESEARCH_CANDIDATE: 220
+contract_sides: 4044
+fixtures: 75
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
