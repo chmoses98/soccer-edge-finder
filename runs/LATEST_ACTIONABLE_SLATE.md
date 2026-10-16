@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261016T094339Z-9f2bb1` · generated 2026-10-16T09:43:39.707518Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261016T095839Z-b0326c` · generated 2026-10-16T09:58:39.691464Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-16T09:40:46.508708Z (CURRENT at publish; CURRENT until 2026-10-16T10:00:46.508708Z, STALE after 2026-10-16T10:10:46.508708Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-16T09:55:46.548463Z (CURRENT at publish; CURRENT until 2026-10-16T10:15:46.548463Z, STALE after 2026-10-16T10:25:46.548463Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-16T08:13:14.244720Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.83s
+model board generated 2026-10-16T08:13:14.244720Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.08s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -68,7 +68,7 @@ model board generated 2026-10-16T08:13:14.244720Z · simulations this update: 0 
 | 2026-10-18T02:30:00Z | Seattle Sounders vs CF Montréal (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-18T03:10:00Z | Cruz Azul vs FC Juárez (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (167; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (172; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -80,11 +80,11 @@ model board generated 2026-10-16T08:13:14.244720Z · simulations this update: 0 
 | Seattle Sounders vs CF Montréal | btts | no | 0.4200 | 0.615 [0.508, 0.729] | +0.178 | +0.108 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Vancouver Whitecaps | away team total over 2.5 | no | 0.6500 | 0.829 [0.723, 0.918] | +0.163 | +0.101 | 0.75 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs Los Angeles FC | Total goals over 3.5 | no | 0.6800 | 0.850 [0.752, 0.930] | +0.154 | +0.099 | 0.78 | - |  | RESEARCH_CANDIDATE |
+| Santos Laguna vs Querétaro | Total goals over 2.5 | no | 0.4300 | 0.639 [0.477, 0.784] | +0.192 | +0.090 | 0.51 | - | * | RESEARCH_CANDIDATE |
+| Seattle Sounders vs CF Montréal | away team total over 0.5 | no | 0.3600 | 0.538 [0.421, 0.660] | +0.162 | +0.087 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs Los Angeles FC | Total goals over 1.5 | no | 0.2200 | 0.411 [0.278, 0.545] | +0.178 | +0.087 | 0.3 | - |  | RESEARCH_CANDIDATE |
+| Santos Laguna vs Querétaro | Total goals over 3.5 | no | 0.6500 | 0.822 [0.699, 0.922] | +0.156 | +0.086 | 0.73 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs Querétaro | btts | no | 0.4000 | 0.586 [0.457, 0.705] | +0.169 | +0.084 | 0.48 | - | * | RESEARCH_CANDIDATE |
-| Santos Laguna vs Querétaro | Total goals over 2.5 | no | 0.4400 | 0.639 [0.477, 0.784] | +0.182 | +0.080 | 0.51 | - | * | RESEARCH_CANDIDATE |
-| Seattle Sounders vs CF Montréal | away team total over 0.5 | no | 0.3700 | 0.538 [0.421, 0.660] | +0.152 | +0.077 | 0.44 | - | * | RESEARCH_CANDIDATE |
-| Santos Laguna vs Querétaro | Total goals over 3.5 | no | 0.6600 | 0.822 [0.699, 0.922] | +0.146 | +0.076 | 0.73 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs CF Montréal | Total goals over 3.5 | no | 0.5800 | 0.757 [0.606, 0.884] | +0.160 | +0.076 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Nashville SC | Total goals over 3.5 | no | 0.6000 | 0.770 [0.637, 0.884] | +0.153 | +0.075 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs CF Montréal | Total goals over 2.5 | no | 0.3600 | 0.556 [0.384, 0.719] | +0.180 | +0.074 | 0.43 | - |  | RESEARCH_CANDIDATE |
@@ -116,9 +116,9 @@ model board generated 2026-10-16T08:13:14.244720Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2650
-action_NO_QUOTE: 693
-action_RESEARCH_CANDIDATE: 167
+action_NO_EDGE: 2649
+action_NO_QUOTE: 689
+action_RESEARCH_CANDIDATE: 172
 contract_sides: 3510
 fixtures: 55
 fixtures_model_invalidated: 0
