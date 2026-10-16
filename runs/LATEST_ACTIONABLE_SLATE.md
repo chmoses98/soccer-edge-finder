@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261016T064200Z-927626` · generated 2026-10-16T06:42:00.699419Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261016T065529Z-271622` · generated 2026-10-16T06:55:29.169306Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-16T06:37:36.348643Z (CURRENT at publish; CURRENT until 2026-10-16T06:57:36.348643Z, STALE after 2026-10-16T07:07:36.348643Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-16T06:52:35.873862Z (CURRENT at publish; CURRENT until 2026-10-16T07:12:35.873862Z, STALE after 2026-10-16T07:22:35.873862Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-16T06:40:39.666943Z · simulations this update: 44 · Odds API calls this update: 0 (credits 0) · reprice 1.91s
+model board generated 2026-10-16T06:40:39.666943Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.71s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -68,7 +68,7 @@ model board generated 2026-10-16T06:40:39.666943Z · simulations this update: 44
 | 2026-10-18T02:30:00Z | Seattle Sounders vs CF Montréal (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-18T03:10:00Z | Cruz Azul vs FC Juárez (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (164; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (167; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -78,10 +78,10 @@ model board generated 2026-10-16T06:40:39.666943Z · simulations this update: 44
 | New York City FC vs Los Angeles FC | Total goals over 2.5 | no | 0.4600 | 0.675 [0.537, 0.801] | +0.198 | +0.112 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Vancouver Whitecaps | away team total over 1.5 | no | 0.3800 | 0.598 [0.454, 0.733] | +0.201 | +0.109 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs CF Montréal | btts | no | 0.4200 | 0.615 [0.508, 0.729] | +0.178 | +0.108 | 0.52 | - | * | RESEARCH_CANDIDATE |
+| Austin FC vs Vancouver Whitecaps | away team total over 2.5 | no | 0.6500 | 0.829 [0.723, 0.918] | +0.163 | +0.101 | 0.75 | - |  | RESEARCH_CANDIDATE |
+| New York City FC vs Los Angeles FC | Total goals over 3.5 | no | 0.6800 | 0.850 [0.752, 0.930] | +0.154 | +0.099 | 0.78 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs CF Montréal | away team total over 0.5 | no | 0.3500 | 0.538 [0.421, 0.660] | +0.172 | +0.098 | 0.44 | - | * | RESEARCH_CANDIDATE |
-| Austin FC vs Vancouver Whitecaps | away team total over 2.5 | no | 0.6600 | 0.829 [0.723, 0.918] | +0.153 | +0.092 | 0.75 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs Querétaro | Total goals over 2.5 | no | 0.4300 | 0.639 [0.477, 0.784] | +0.192 | +0.090 | 0.51 | - | * | RESEARCH_CANDIDATE |
-| New York City FC vs Los Angeles FC | Total goals over 3.5 | no | 0.6900 | 0.850 [0.752, 0.930] | +0.145 | +0.089 | 0.78 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs Los Angeles FC | Total goals over 1.5 | no | 0.2200 | 0.411 [0.278, 0.545] | +0.178 | +0.087 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs Querétaro | Total goals over 3.5 | no | 0.6500 | 0.822 [0.699, 0.922] | +0.156 | +0.086 | 0.73 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs CF Montréal | away team total over 1.5 | no | 0.7200 | 0.863 [0.785, 0.934] | +0.129 | +0.086 | 0.8 | - |  | RESEARCH_CANDIDATE |
@@ -116,9 +116,9 @@ model board generated 2026-10-16T06:40:39.666943Z · simulations this update: 44
 ## Counts
 
 ```
-action_NO_EDGE: 2654
-action_NO_QUOTE: 692
-action_RESEARCH_CANDIDATE: 164
+action_NO_EDGE: 2652
+action_NO_QUOTE: 691
+action_RESEARCH_CANDIDATE: 167
 contract_sides: 3510
 fixtures: 55
 fixtures_model_invalidated: 0
