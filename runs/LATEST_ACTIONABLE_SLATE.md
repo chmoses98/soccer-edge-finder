@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261016T122852Z-705524` · generated 2026-10-16T12:28:52.340207Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261016T124356Z-10dd24` · generated 2026-10-16T12:43:56.093793Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-16T12:25:58.779323Z (CURRENT at publish; CURRENT until 2026-10-16T12:45:58.779323Z, STALE after 2026-10-16T12:55:58.779323Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-16T12:41:02.209023Z (CURRENT at publish; CURRENT until 2026-10-16T13:01:02.209023Z, STALE after 2026-10-16T13:11:02.209023Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-16T12:13:55.444460Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.78s
+model board generated 2026-10-16T12:13:55.444460Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.05s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -70,7 +70,7 @@ model board generated 2026-10-16T12:13:55.444460Z · simulations this update: 0 
 | 2026-10-18T10:30:00Z | Udinese vs Lecce (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T12:00:00Z | Osasuna vs Racing Santander (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (191; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (198; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -102,6 +102,7 @@ model board generated 2026-10-16T12:13:55.444460Z · simulations this update: 0 
 | Austin FC vs Vancouver Whitecaps | Result: away | no | 0.4100 | 0.585 [0.446, 0.712] | +0.158 | +0.072 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Chicago Fire | away team total over 1.5 | no | 0.5300 | 0.697 [0.556, 0.815] | +0.150 | +0.072 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | Real Betis vs FC Barcelona | Result: away | no | 0.3000 | 0.502 [0.333, 0.676] | +0.188 | +0.071 | 0.36 | - | * | RESEARCH_CANDIDATE |
+| New York Red Bulls vs Toronto FC | Total goals over 2.5 | no | 0.3300 | 0.527 [0.361, 0.687] | +0.182 | +0.071 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Nashville SC | btts | no | 0.3600 | 0.528 [0.404, 0.649] | +0.152 | +0.070 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Vancouver Whitecaps | away wins by more than 1.5 | no | 0.6500 | 0.797 [0.688, 0.890] | +0.132 | +0.070 | 0.72 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | btts | no | 0.4400 | 0.596 [0.481, 0.710] | +0.139 | +0.066 | 0.5 | - | * | RESEARCH_CANDIDATE |
@@ -111,16 +112,15 @@ model board generated 2026-10-16T12:13:55.444460Z · simulations this update: 0 
 | New York City FC vs Los Angeles FC | Total goals over 4.5 | no | 0.8400 | 0.940 [0.888, 0.980] | +0.091 | +0.064 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Vancouver Whitecaps | away team total over 0.5 | no | 0.1200 | 0.260 [0.161, 0.365] | +0.132 | +0.062 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | Everton vs Chelsea | Result: home | yes | 0.3000 | 0.494 [0.313, 0.676] | +0.179 | +0.062 | 0.36 | - |  | RESEARCH_CANDIDATE |
-| New York Red Bulls vs Toronto FC | Total goals over 2.5 | no | 0.3400 | 0.527 [0.361, 0.687] | +0.171 | +0.060 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs Querétaro | home team total over 1.5 | no | 0.5500 | 0.716 [0.547, 0.853] | +0.149 | +0.060 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Vancouver Whitecaps | away wins by more than 2.5 | no | 0.8200 | 0.920 [0.861, 0.968] | +0.090 | +0.059 | 0.88 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2636
+action_NO_EDGE: 2629
 action_NO_QUOTE: 695
-action_RESEARCH_CANDIDATE: 191
+action_RESEARCH_CANDIDATE: 198
 contract_sides: 3522
 fixtures: 57
 fixtures_model_invalidated: 0
