@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261016T154639Z-99be00` · generated 2026-10-16T15:46:39.346014Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261016T160144Z-3a9f37` · generated 2026-10-16T16:01:44.213770Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-16T15:43:43.942034Z (CURRENT at publish; CURRENT until 2026-10-16T16:03:43.942034Z, STALE after 2026-10-16T16:13:43.942034Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-16T15:58:43.952985Z (CURRENT at publish; CURRENT until 2026-10-16T16:18:43.952985Z, STALE after 2026-10-16T16:28:43.952985Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-16T15:31:38.441092Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 2.09s
+model board generated 2026-10-16T16:01:43.174978Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 2.07s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -82,8 +82,9 @@ model board generated 2026-10-16T15:31:38.441092Z · simulations this update: 0 
 | 2026-10-18T15:15:00Z | Paris FC vs Rennes (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T15:30:00Z | Nottingham Forest vs Arsenal (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T15:30:00Z | Borussia Mönchengladbach vs TSG Hoffenheim (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-18T16:00:00Z | AC Milan vs Atalanta (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (213; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (212; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -131,11 +132,11 @@ model board generated 2026-10-16T15:31:38.441092Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2761
-action_NO_QUOTE: 826
-action_RESEARCH_CANDIDATE: 213
-contract_sides: 3800
-fixtures: 70
+action_NO_EDGE: 2767
+action_NO_QUOTE: 827
+action_RESEARCH_CANDIDATE: 212
+contract_sides: 3806
+fixtures: 71
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
