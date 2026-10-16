@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-16T07:18:37.253589+00:00",
+  "as_of": "2026-10-16T13:19:57.979083+00:00",
   "events": 590,
   "events_skipped_unmapped": 287,
   "fixtures_mapped": 303,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=96"
+      "weather_stopped:consecutive_failures:skipped=94"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 43,
-    "events": 43,
+    "captured": 121,
+    "events": 121,
     "failures": [],
-    "published_post": 0,
+    "published_post": 2,
     "published_pre_kickoff": 0,
     "unchanged": 0,
-    "unpublished": 43
+    "unpublished": 119
   },
   "map_proposals": {
     "den.1": {
@@ -156,7 +156,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 2,
+  "results_appended": 0,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -210,17 +210,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 9,
-    "events": 108,
+    "captured": 10,
+    "events": 107,
     "failures": [
-      "401841624: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-33.1304&longitude=-64.3527&hourly=",
-      "401841628: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=C\u00f3rdoba&count=5&language=en&for",
-      "401892162: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Sydney&count=5&language=en&form"
+      "401841628: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-31.4065&longitude=-64.1885&hourly=",
+      "401892161: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Auckland&count=5&language=en&fo",
+      "401892160: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-33.8678&longitude=151.2073&hourly="
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 96,
+    "skipped": 94,
     "stopped": "consecutive_failures"
   }
 }
