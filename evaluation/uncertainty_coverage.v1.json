@@ -1,6 +1,6 @@
 {
  "schema": "uncertainty_coverage_v1",
- "generated_at": "2026-10-16T07:10:12.515551+00:00",
+ "generated_at": "2026-10-16T09:24:55.325847+00:00",
  "estimator": "grouped (bin by fair probability; realised rate vs the bin's mean interval)",
  "band": [
   0.7,
@@ -3622,12 +3622,12 @@
    "worlds_version": "worlds_v1",
    "market_family": "btts",
    "horizon": "T-2h",
-   "n_settled": 77,
-   "mean_width": 0.25422290909090917,
+   "n_settled": 78,
+   "mean_width": 0.25427956410256414,
    "naive_outcome_inside_share": 0.0,
-   "market_mid_inside_share": 0.7012987012987013,
-   "n_with_market_mid": 77,
-   "grouped_coverage_80": 0.36363636363636365,
+   "market_mid_inside_share": 0.7051282051282052,
+   "n_with_market_mid": 78,
+   "grouped_coverage_80": 0.358974358974359,
    "bins": [
     {
      "bin": 2,
@@ -3649,11 +3649,11 @@
     },
     {
      "bin": 4,
-     "n": 38,
-     "mean_pred": 0.4557,
-     "mean_obs": 0.6579,
-     "mean_lo": 0.3314,
-     "mean_hi": 0.5857,
+     "n": 39,
+     "mean_pred": 0.4555,
+     "mean_obs": 0.6667,
+     "mean_lo": 0.3311,
+     "mean_hi": 0.5856,
      "obs_inside": false
     },
     {
@@ -3749,12 +3749,12 @@
    "worlds_version": "worlds_v1",
    "market_family": "btts",
    "horizon": "T-6h",
-   "n_settled": 68,
-   "mean_width": 0.24485391176470592,
+   "n_settled": 69,
+   "mean_width": 0.2450537391304348,
    "naive_outcome_inside_share": 0.0,
-   "market_mid_inside_share": 0.7058823529411765,
-   "n_with_market_mid": 68,
-   "grouped_coverage_80": 0.3235294117647059,
+   "market_mid_inside_share": 0.7101449275362319,
+   "n_with_market_mid": 69,
+   "grouped_coverage_80": 0.3188405797101449,
    "bins": [
     {
      "bin": 3,
@@ -3767,11 +3767,11 @@
     },
     {
      "bin": 4,
-     "n": 36,
-     "mean_pred": 0.4586,
-     "mean_obs": 0.75,
-     "mean_lo": 0.3384,
-     "mean_hi": 0.5846,
+     "n": 37,
+     "mean_pred": 0.4583,
+     "mean_obs": 0.7568,
+     "mean_lo": 0.338,
+     "mean_hi": 0.5845,
      "obs_inside": false
     },
     {
@@ -3815,12 +3815,12 @@
    "worlds_version": "worlds_v1",
    "market_family": "btts",
    "horizon": "any",
-   "n_settled": 642,
-   "mean_width": 0.2559563660436137,
+   "n_settled": 644,
+   "mean_width": 0.25596470652173914,
    "naive_outcome_inside_share": 0.0,
-   "market_mid_inside_share": 0.7414330218068536,
-   "n_with_market_mid": 642,
-   "grouped_coverage_80": 0.43146417445482865,
+   "market_mid_inside_share": 0.7422360248447205,
+   "n_with_market_mid": 644,
+   "grouped_coverage_80": 0.4301242236024845,
    "bins": [
     {
      "bin": 2,
@@ -3842,11 +3842,11 @@
     },
     {
      "bin": 4,
-     "n": 274,
-     "mean_pred": 0.4561,
-     "mean_obs": 0.7518,
-     "mean_lo": 0.3322,
-     "mean_hi": 0.586,
+     "n": 276,
+     "mean_pred": 0.456,
+     "mean_obs": 0.7536,
+     "mean_lo": 0.3321,
+     "mean_hi": 0.5859,
      "obs_inside": false
     },
     {
@@ -7608,29 +7608,29 @@
    "worlds_version": "worlds_v1",
    "market_family": "handicap",
    "horizon": "T-2h",
-   "n_settled": 308,
-   "mean_width": 0.17540315584415583,
+   "n_settled": 312,
+   "mean_width": 0.1749608141025641,
    "naive_outcome_inside_share": 0.0,
-   "market_mid_inside_share": 0.9124579124579124,
-   "n_with_market_mid": 297,
-   "grouped_coverage_80": 0.9967532467532467,
+   "market_mid_inside_share": 0.9136212624584718,
+   "n_with_market_mid": 301,
+   "grouped_coverage_80": 0.9967948717948718,
    "bins": [
     {
      "bin": 0,
-     "n": 138,
-     "mean_pred": 0.0496,
-     "mean_obs": 0.0725,
+     "n": 140,
+     "mean_pred": 0.0497,
+     "mean_obs": 0.0714,
      "mean_lo": 0.015,
-     "mean_hi": 0.0961,
+     "mean_hi": 0.0963,
      "obs_inside": true
     },
     {
      "bin": 1,
-     "n": 90,
-     "mean_pred": 0.1394,
-     "mean_obs": 0.1556,
-     "mean_lo": 0.0543,
-     "mean_hi": 0.2474,
+     "n": 92,
+     "mean_pred": 0.1398,
+     "mean_obs": 0.1522,
+     "mean_lo": 0.0547,
+     "mean_hi": 0.2477,
      "obs_inside": true
     },
     {
@@ -7827,29 +7827,29 @@
    "worlds_version": "worlds_v1",
    "market_family": "handicap",
    "horizon": "T-6h",
-   "n_settled": 272,
-   "mean_width": 0.16617471323529412,
+   "n_settled": 276,
+   "mean_width": 0.16580842028985507,
    "naive_outcome_inside_share": 0.0,
-   "market_mid_inside_share": 0.928030303030303,
-   "n_with_market_mid": 264,
-   "grouped_coverage_80": 0.9963235294117647,
+   "market_mid_inside_share": 0.9291044776119403,
+   "n_with_market_mid": 268,
+   "grouped_coverage_80": 0.9963768115942029,
    "bins": [
     {
      "bin": 0,
-     "n": 125,
-     "mean_pred": 0.052,
-     "mean_obs": 0.072,
+     "n": 127,
+     "mean_pred": 0.0521,
+     "mean_obs": 0.0709,
      "mean_lo": 0.0168,
-     "mean_hi": 0.0986,
+     "mean_hi": 0.0988,
      "obs_inside": true
     },
     {
      "bin": 1,
-     "n": 81,
-     "mean_pred": 0.1419,
-     "mean_obs": 0.1728,
-     "mean_lo": 0.058,
-     "mean_hi": 0.2464,
+     "n": 83,
+     "mean_pred": 0.1423,
+     "mean_obs": 0.1687,
+     "mean_lo": 0.0583,
+     "mean_hi": 0.2468,
      "obs_inside": true
     },
     {
@@ -7920,28 +7920,28 @@
    "worlds_version": "worlds_v1",
    "market_family": "handicap",
    "horizon": "any",
-   "n_settled": 2568,
-   "mean_width": 0.17739242523364487,
+   "n_settled": 2576,
+   "mean_width": 0.17727909627329191,
    "naive_outcome_inside_share": 0.0,
-   "market_mid_inside_share": 0.8944199116820554,
-   "n_with_market_mid": 2491,
-   "grouped_coverage_80": 0.9976635514018691,
+   "market_mid_inside_share": 0.8947579031612645,
+   "n_with_market_mid": 2499,
+   "grouped_coverage_80": 0.9976708074534162,
    "bins": [
     {
      "bin": 0,
-     "n": 1150,
+     "n": 1154,
      "mean_pred": 0.0519,
-     "mean_obs": 0.0548,
+     "mean_obs": 0.0546,
      "mean_lo": 0.0157,
      "mean_hi": 0.1005,
      "obs_inside": true
     },
     {
      "bin": 1,
-     "n": 767,
+     "n": 771,
      "mean_pred": 0.1436,
-     "mean_obs": 0.1199,
-     "mean_lo": 0.0558,
+     "mean_obs": 0.1193,
+     "mean_lo": 0.0559,
      "mean_hi": 0.2546,
      "obs_inside": true
     },
@@ -8232,12 +8232,12 @@
    "worlds_version": "worlds_v1",
    "market_family": "match_result_3way",
    "horizon": "T-24h",
-   "n_settled": 1797,
-   "mean_width": 0.24609946688925988,
+   "n_settled": 1803,
+   "mean_width": 0.24605140210759843,
    "naive_outcome_inside_share": 0.0,
-   "market_mid_inside_share": 0.869226488592098,
-   "n_with_market_mid": 1797,
-   "grouped_coverage_80": 0.9910962715637173,
+   "market_mid_inside_share": 0.8696616749861342,
+   "n_with_market_mid": 1803,
+   "grouped_coverage_80": 0.9911259012756517,
    "bins": [
     {
      "bin": 0,
@@ -8259,11 +8259,11 @@
     },
     {
      "bin": 2,
-     "n": 673,
-     "mean_pred": 0.2515,
-     "mean_obs": 0.2585,
-     "mean_lo": 0.1706,
-     "mean_hi": 0.3371,
+     "n": 677,
+     "mean_pred": 0.2517,
+     "mean_obs": 0.26,
+     "mean_lo": 0.1708,
+     "mean_hi": 0.3374,
      "obs_inside": true
     },
     {
@@ -8277,11 +8277,11 @@
     },
     {
      "bin": 4,
-     "n": 217,
-     "mean_pred": 0.4479,
-     "mean_obs": 0.5346,
+     "n": 219,
+     "mean_pred": 0.4477,
+     "mean_obs": 0.5297,
      "mean_lo": 0.2771,
-     "mean_hi": 0.6275,
+     "mean_hi": 0.6271,
      "obs_inside": true
     },
     {
@@ -8329,12 +8329,12 @@
    "worlds_version": "worlds_v1",
    "market_family": "match_result_3way",
    "horizon": "T-2h",
-   "n_settled": 309,
-   "mean_width": 0.23965141423948222,
+   "n_settled": 312,
+   "mean_width": 0.2394756314102564,
    "naive_outcome_inside_share": 0.0,
-   "market_mid_inside_share": 0.9223300970873787,
-   "n_with_market_mid": 309,
-   "grouped_coverage_80": 0.9385113268608414,
+   "market_mid_inside_share": 0.9230769230769231,
+   "n_with_market_mid": 312,
+   "grouped_coverage_80": 0.9391025641025641,
    "bins": [
     {
      "bin": 0,
@@ -8356,11 +8356,11 @@
     },
     {
      "bin": 2,
-     "n": 131,
-     "mean_pred": 0.2543,
-     "mean_obs": 0.2901,
-     "mean_lo": 0.1704,
-     "mean_hi": 0.3435,
+     "n": 133,
+     "mean_pred": 0.2549,
+     "mean_obs": 0.2932,
+     "mean_lo": 0.1708,
+     "mean_hi": 0.3441,
      "obs_inside": true
     },
     {
@@ -8374,11 +8374,11 @@
     },
     {
      "bin": 4,
-     "n": 43,
-     "mean_pred": 0.4546,
-     "mean_obs": 0.4419,
-     "mean_lo": 0.29,
-     "mean_hi": 0.6276,
+     "n": 44,
+     "mean_pred": 0.4538,
+     "mean_obs": 0.4318,
+     "mean_lo": 0.2896,
+     "mean_hi": 0.6262,
      "obs_inside": true
     },
     {
@@ -8602,12 +8602,12 @@
    "worlds_version": "worlds_v1",
    "market_family": "match_result_3way",
    "horizon": "T-6h",
-   "n_settled": 381,
-   "mean_width": 0.24119436482939632,
+   "n_settled": 384,
+   "mean_width": 0.2410394869791667,
    "naive_outcome_inside_share": 0.0,
-   "market_mid_inside_share": 0.9186351706036745,
-   "n_with_market_mid": 381,
-   "grouped_coverage_80": 0.9921259842519685,
+   "market_mid_inside_share": 0.9192708333333334,
+   "n_with_market_mid": 384,
+   "grouped_coverage_80": 0.9921875,
    "bins": [
     {
      "bin": 0,
@@ -8629,11 +8629,11 @@
     },
     {
      "bin": 2,
-     "n": 158,
-     "mean_pred": 0.2531,
-     "mean_obs": 0.2785,
-     "mean_lo": 0.172,
-     "mean_hi": 0.3383,
+     "n": 160,
+     "mean_pred": 0.2536,
+     "mean_obs": 0.2812,
+     "mean_lo": 0.1724,
+     "mean_hi": 0.3389,
      "obs_inside": true
     },
     {
@@ -8647,11 +8647,11 @@
     },
     {
      "bin": 4,
-     "n": 49,
-     "mean_pred": 0.4492,
-     "mean_obs": 0.3878,
-     "mean_lo": 0.285,
-     "mean_hi": 0.6232,
+     "n": 50,
+     "mean_pred": 0.4486,
+     "mean_obs": 0.38,
+     "mean_lo": 0.2847,
+     "mean_hi": 0.6221,
      "obs_inside": true
     },
     {
@@ -8787,12 +8787,12 @@
    "worlds_version": "worlds_v1",
    "market_family": "match_result_3way",
    "horizon": "any",
-   "n_settled": 3639,
-   "mean_width": 0.24533963533937894,
+   "n_settled": 3651,
+   "mean_width": 0.2452777565050671,
    "naive_outcome_inside_share": 0.0,
-   "market_mid_inside_share": 0.8834844737565265,
-   "n_with_market_mid": 3639,
-   "grouped_coverage_80": 0.9920307776861775,
+   "market_mid_inside_share": 0.8838674335798411,
+   "n_with_market_mid": 3651,
+   "grouped_coverage_80": 0.9920569706929608,
    "bins": [
     {
      "bin": 0,
@@ -8814,11 +8814,11 @@
     },
     {
      "bin": 2,
-     "n": 1429,
-     "mean_pred": 0.2521,
-     "mean_obs": 0.2652,
-     "mean_lo": 0.1704,
-     "mean_hi": 0.3384,
+     "n": 1437,
+     "mean_pred": 0.2523,
+     "mean_obs": 0.2665,
+     "mean_lo": 0.1706,
+     "mean_hi": 0.3387,
      "obs_inside": true
     },
     {
@@ -8832,11 +8832,11 @@
     },
     {
      "bin": 4,
-     "n": 459,
-     "mean_pred": 0.4495,
-     "mean_obs": 0.4946,
-     "mean_lo": 0.2802,
-     "mean_hi": 0.6277,
+     "n": 463,
+     "mean_pred": 0.4492,
+     "mean_obs": 0.4903,
+     "mean_lo": 0.2801,
+     "mean_hi": 0.6273,
      "obs_inside": true
     },
     {
@@ -11052,20 +11052,20 @@
    "worlds_version": "worlds_v1",
    "market_family": "total_goals",
    "horizon": "T-2h",
-   "n_settled": 462,
-   "mean_width": 0.2286824826839827,
+   "n_settled": 468,
+   "mean_width": 0.22836810256410256,
    "naive_outcome_inside_share": 0.0,
-   "market_mid_inside_share": 0.9025974025974026,
-   "n_with_market_mid": 462,
-   "grouped_coverage_80": 0.5887445887445888,
+   "market_mid_inside_share": 0.9038461538461539,
+   "n_with_market_mid": 468,
+   "grouped_coverage_80": 0.5897435897435898,
    "bins": [
     {
      "bin": 0,
-     "n": 66,
-     "mean_pred": 0.0609,
-     "mean_obs": 0.1061,
-     "mean_lo": 0.0162,
-     "mean_hi": 0.1235,
+     "n": 68,
+     "mean_pred": 0.0611,
+     "mean_obs": 0.1029,
+     "mean_lo": 0.0163,
+     "mean_hi": 0.1238,
      "obs_inside": true
     },
     {
@@ -11079,11 +11079,11 @@
     },
     {
      "bin": 2,
-     "n": 58,
-     "mean_pred": 0.248,
-     "mean_obs": 0.3276,
-     "mean_lo": 0.1153,
-     "mean_hi": 0.408,
+     "n": 59,
+     "mean_pred": 0.2475,
+     "mean_obs": 0.322,
+     "mean_lo": 0.115,
+     "mean_hi": 0.4071,
      "obs_inside": true
     },
     {
@@ -11097,11 +11097,11 @@
     },
     {
      "bin": 4,
-     "n": 37,
-     "mean_pred": 0.4504,
-     "mean_obs": 0.6486,
-     "mean_lo": 0.2825,
-     "mean_hi": 0.6307,
+     "n": 38,
+     "mean_pred": 0.4493,
+     "mean_obs": 0.6579,
+     "mean_lo": 0.2816,
+     "mean_hi": 0.6293,
      "obs_inside": false
     },
     {
@@ -11115,10 +11115,10 @@
     },
     {
      "bin": 6,
-     "n": 36,
-     "mean_pred": 0.6488,
-     "mean_obs": 0.8889,
-     "mean_lo": 0.4903,
+     "n": 37,
+     "mean_pred": 0.6492,
+     "mean_obs": 0.8919,
+     "mean_lo": 0.491,
      "mean_hi": 0.8023,
      "obs_inside": false
     },
@@ -11133,11 +11133,11 @@
     },
     {
      "bin": 8,
-     "n": 41,
-     "mean_pred": 0.8568,
-     "mean_obs": 0.9268,
-     "mean_lo": 0.7654,
-     "mean_hi": 0.937,
+     "n": 42,
+     "mean_pred": 0.8576,
+     "mean_obs": 0.9286,
+     "mean_lo": 0.7668,
+     "mean_hi": 0.9373,
      "obs_inside": true
     },
     {
@@ -11370,20 +11370,20 @@
    "worlds_version": "worlds_v1",
    "market_family": "total_goals",
    "horizon": "T-6h",
-   "n_settled": 408,
-   "mean_width": 0.21779565441176468,
+   "n_settled": 414,
+   "mean_width": 0.21759804830917873,
    "naive_outcome_inside_share": 0.0,
-   "market_mid_inside_share": 0.8970588235294118,
-   "n_with_market_mid": 408,
-   "grouped_coverage_80": 0.5661764705882353,
+   "market_mid_inside_share": 0.8985507246376812,
+   "n_with_market_mid": 414,
+   "grouped_coverage_80": 0.5603864734299517,
    "bins": [
     {
      "bin": 0,
-     "n": 61,
-     "mean_pred": 0.0597,
-     "mean_obs": 0.1639,
-     "mean_lo": 0.0166,
-     "mean_hi": 0.1193,
+     "n": 63,
+     "mean_pred": 0.06,
+     "mean_obs": 0.1587,
+     "mean_lo": 0.0167,
+     "mean_hi": 0.1198,
      "obs_inside": false
     },
     {
@@ -11397,11 +11397,11 @@
     },
     {
      "bin": 2,
-     "n": 55,
-     "mean_pred": 0.2433,
-     "mean_obs": 0.3818,
-     "mean_lo": 0.1165,
-     "mean_hi": 0.395,
+     "n": 56,
+     "mean_pred": 0.2427,
+     "mean_obs": 0.375,
+     "mean_lo": 0.1162,
+     "mean_hi": 0.3942,
      "obs_inside": true
     },
     {
@@ -11415,11 +11415,11 @@
     },
     {
      "bin": 4,
-     "n": 35,
-     "mean_pred": 0.4453,
-     "mean_obs": 0.6286,
-     "mean_lo": 0.2847,
-     "mean_hi": 0.6179,
+     "n": 36,
+     "mean_pred": 0.4443,
+     "mean_obs": 0.6389,
+     "mean_lo": 0.2838,
+     "mean_hi": 0.6168,
      "obs_inside": false
     },
     {
@@ -11433,11 +11433,11 @@
     },
     {
      "bin": 6,
-     "n": 39,
-     "mean_pred": 0.6477,
-     "mean_obs": 0.8974,
-     "mean_lo": 0.4981,
-     "mean_hi": 0.7933,
+     "n": 40,
+     "mean_pred": 0.6481,
+     "mean_obs": 0.9,
+     "mean_lo": 0.4986,
+     "mean_hi": 0.7936,
      "obs_inside": false
     },
     {
@@ -11451,11 +11451,11 @@
     },
     {
      "bin": 8,
-     "n": 42,
-     "mean_pred": 0.8584,
-     "mean_obs": 0.9524,
-     "mean_lo": 0.7729,
-     "mean_hi": 0.9345,
+     "n": 43,
+     "mean_pred": 0.8591,
+     "mean_obs": 0.9535,
+     "mean_lo": 0.7741,
+     "mean_hi": 0.9348,
      "obs_inside": false
     },
     {
@@ -11582,20 +11582,20 @@
    "worlds_version": "worlds_v1",
    "market_family": "total_goals",
    "horizon": "any",
-   "n_settled": 3852,
-   "mean_width": 0.2300412092419522,
+   "n_settled": 3864,
+   "mean_width": 0.22996083540372672,
    "naive_outcome_inside_share": 0.0,
-   "market_mid_inside_share": 0.9002338269680437,
-   "n_with_market_mid": 3849,
-   "grouped_coverage_80": 0.7847871235721703,
+   "market_mid_inside_share": 0.9005439005439005,
+   "n_with_market_mid": 3861,
+   "grouped_coverage_80": 0.7844202898550725,
    "bins": [
     {
      "bin": 0,
-     "n": 569,
-     "mean_pred": 0.0644,
-     "mean_obs": 0.1178,
-     "mean_lo": 0.0168,
-     "mean_hi": 0.1307,
+     "n": 573,
+     "mean_pred": 0.0645,
+     "mean_obs": 0.1169,
+     "mean_lo": 0.0169,
+     "mean_hi": 0.1308,
      "obs_inside": true
     },
     {
@@ -11609,11 +11609,11 @@
     },
     {
      "bin": 2,
-     "n": 445,
-     "mean_pred": 0.2496,
-     "mean_obs": 0.3506,
-     "mean_lo": 0.1172,
-     "mean_hi": 0.4081,
+     "n": 447,
+     "mean_pred": 0.2495,
+     "mean_obs": 0.349,
+     "mean_lo": 0.1171,
+     "mean_hi": 0.4079,
      "obs_inside": true
     },
     {
@@ -11627,11 +11627,11 @@
     },
     {
      "bin": 4,
-     "n": 297,
-     "mean_pred": 0.4468,
-     "mean_obs": 0.5993,
-     "mean_lo": 0.28,
-     "mean_hi": 0.6257,
+     "n": 299,
+     "mean_pred": 0.4466,
+     "mean_obs": 0.602,
+     "mean_lo": 0.2798,
+     "mean_hi": 0.6254,
      "obs_inside": true
     },
     {
@@ -11645,10 +11645,10 @@
     },
     {
      "bin": 6,
-     "n": 286,
-     "mean_pred": 0.6481,
-     "mean_obs": 0.8706,
-     "mean_lo": 0.4911,
+     "n": 288,
+     "mean_pred": 0.6482,
+     "mean_obs": 0.8715,
+     "mean_lo": 0.4913,
      "mean_hi": 0.8006,
      "obs_inside": false
     },
@@ -11663,11 +11663,11 @@
     },
     {
      "bin": 8,
-     "n": 305,
-     "mean_pred": 0.8575,
-     "mean_obs": 0.9475,
-     "mean_lo": 0.767,
-     "mean_hi": 0.9373,
+     "n": 307,
+     "mean_pred": 0.8577,
+     "mean_obs": 0.9479,
+     "mean_lo": 0.7673,
+     "mean_hi": 0.9374,
      "obs_inside": false
     },
     {
