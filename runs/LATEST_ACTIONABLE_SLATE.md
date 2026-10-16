@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261015T225753Z-ffab45` · generated 2026-10-15T22:57:53.297646Z · trigger `kickoff_chain:T-5` · mode `model_refresh_and_reprice`
+slate `slate-20261016T005031Z-83a138` · generated 2026-10-16T00:50:31.204234Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-15T22:55:00.023478Z (CURRENT at publish; CURRENT until 2026-10-15T23:15:00.023478Z, STALE after 2026-10-15T23:25:00.023478Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-16T00:47:26.563139Z (CURRENT at publish; CURRENT until 2026-10-16T01:07:26.563139Z, STALE after 2026-10-16T01:17:26.563139Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-15T21:38:10.474705Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.21s
+model board generated 2026-10-15T21:38:10.474705Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.20s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,15 +12,14 @@ model board generated 2026-10-15T21:38:10.474705Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-15T23:00:00Z | Huracán vs Gimnasia La Plata (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
 | 2026-10-16T18:30:00Z | Eintracht Frankfurt vs 1. FC Köln (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-16T18:45:00Z | Le Mans vs Toulouse (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-16T18:45:00Z | Frosinone vs Sassuolo (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-16T19:00:00Z | Deportivo La Coruña vs Levante (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-16T22:00:00Z | Defensa y Justicia vs Instituto (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-16T23:00:00Z | Mirassol vs Internacional (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-17T00:30:00Z | Boca Juniors vs Talleres (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-17T01:00:00Z | Necaxa vs Atlas (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-16T23:00:00Z | Mirassol vs Internacional (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-17T00:30:00Z | Boca Juniors vs Talleres (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-17T01:00:00Z | Necaxa vs Atlas (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-17T03:00:00Z | Atlante vs Pumas UNAM (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-17T03:05:00Z | Tijuana vs Puebla (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-17T11:30:00Z | Everton vs Chelsea (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -50,7 +49,7 @@ model board generated 2026-10-15T21:38:10.474705Z · simulations this update: 0 
 | 2026-10-17T21:00:00Z | Botafogo vs Chapecoense (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-17T21:30:00Z | Atlético Mineiro vs Coritiba (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (22; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (21; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -65,27 +64,26 @@ model board generated 2026-10-15T21:38:10.474705Z · simulations this update: 0 
 | Real Betis vs FC Barcelona | Result: home | yes | 0.1400 | 0.295 [0.152, 0.447] | +0.146 | +0.044 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Fulham vs Hull City | Result: home | no | 0.4400 | 0.627 [0.424, 0.814] | +0.170 | +0.040 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | away team total over 0.5 | no | 0.3500 | 0.474 [0.343, 0.598] | +0.108 | +0.024 | 0.37 | - | * | RESEARCH_CANDIDATE |
-| Tijuana vs Puebla | away team total over 1.5 | no | 0.7200 | 0.818 [0.710, 0.906] | +0.084 | +0.023 | 0.74 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | Total goals over 3.5 | no | 0.6900 | 0.796 [0.662, 0.910] | +0.091 | +0.018 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | Strasbourg vs Paris Saint-Germain | Result: draw | yes | 0.1700 | 0.227 [0.181, 0.275] | +0.047 | +0.016 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | Total goals over 2.5 | no | 0.4700 | 0.605 [0.438, 0.762] | +0.117 | +0.016 | 0.48 | - |  | RESEARCH_CANDIDATE |
+| Tijuana vs Puebla | away team total over 1.5 | no | 0.7300 | 0.818 [0.710, 0.906] | +0.074 | +0.013 | 0.74 | - |  | RESEARCH_CANDIDATE |
 | Real Betis vs FC Barcelona | Result: draw | yes | 0.1700 | 0.224 [0.176, 0.271] | +0.044 | +0.013 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | Total goals over 1.5 | no | 0.2300 | 0.346 [0.202, 0.493] | +0.103 | +0.011 | 0.24 | - |  | RESEARCH_CANDIDATE |
-| Valencia vs Athletic Club | Result: away | no | 0.5700 | 0.684 [0.543, 0.816] | +0.097 | +0.010 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | Total goals over 4.5 | no | 0.8500 | 0.908 [0.826, 0.972] | +0.049 | +0.010 | 0.86 | - |  | RESEARCH_CANDIDATE |
-| Valencia vs Athletic Club | Result: home | yes | 0.2900 | 0.413 [0.261, 0.573] | +0.109 | +0.005 | 0.29 | - |  | RESEARCH_CANDIDATE |
+| Valencia vs Athletic Club | Result: home | yes | 0.2900 | 0.413 [0.261, 0.573] | +0.109 | +0.005 | 0.29 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Puebla | away team total over 2.5 | no | 0.9200 | 0.952 [0.907, 0.985] | +0.027 | +0.005 | 0.92 | - |  | RESEARCH_CANDIDATE |
-| Philadelphia Union vs Charlotte FC | btts | no | 0.3400 | 0.434 [0.313, 0.553] | +0.078 | +0.001 | 0.34 | - | * | RESEARCH_CANDIDATE |
+| Valencia vs Athletic Club | Result: away | no | 0.5800 | 0.684 [0.543, 0.816] | +0.087 | +0.000 | 0.58 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_NO_EDGE: 672
-action_NO_QUOTE: 170
-action_RESEARCH_CANDIDATE: 22
-contract_sides: 864
-fixtures: 37
-fixtures_model_invalidated: 1
+action_NO_QUOTE: 143
+action_RESEARCH_CANDIDATE: 21
+contract_sides: 836
+fixtures: 36
+fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
