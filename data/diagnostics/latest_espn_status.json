@@ -1,8 +1,8 @@
 {
-  "as_of": "2026-10-15T21:32:28.410612+00:00",
-  "events": 576,
-  "events_skipped_unmapped": 283,
-  "fixtures_mapped": 293,
+  "as_of": "2026-10-16T00:29:31.693303+00:00",
+  "events": 590,
+  "events_skipped_unmapped": 287,
+  "fixtures_mapped": 303,
   "health": {
     "reasons": [
       "weather_failures:3",
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 48,
-    "events": 49,
+    "captured": 33,
+    "events": 33,
     "failures": [],
-    "published_post": 19,
+    "published_post": 2,
     "published_pre_kickoff": 0,
-    "unchanged": 1,
-    "unpublished": 30
+    "unchanged": 0,
+    "unpublished": 31
   },
   "map_proposals": {
     "den.1": {
@@ -156,13 +156,14 @@
     }
   },
   "map_version": "4",
-  "results_appended": 19,
+  "results_appended": 0,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
   "unmapped_leagues": [
     "afc.champions",
     "aus.1",
+    "bel.1",
     "bra.2",
     "chi.1",
     "chn.1",
@@ -171,6 +172,7 @@
     "den.1",
     "eng.3",
     "eng.4",
+    "eng.5",
     "esp.2",
     "esp.w.1",
     "fra.2",
@@ -208,12 +210,12 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 11,
-    "events": 103,
+    "captured": 17,
+    "events": 109,
     "failures": [
-      "401892162: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-33.8678&longitude=151.2073&hourly=",
-      "401892161: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Auckland&count=5&language=en&fo",
-      "401892160: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-33.8678&longitude=151.2073&hourly="
+      "401841275: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-20.8192&longitude=-49.5211&hourly=",
+      "401841268: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rio%20de%20Janeiro&count=5&lang",
+      "401841270: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Belo%20Horizonte&count=5&langua"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
