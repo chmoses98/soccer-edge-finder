@@ -1,22 +1,22 @@
 {
  "schema": "dispatch_reliability_v1",
- "generated_at": "2026-10-16T21:07:19Z",
+ "generated_at": "2026-10-16T23:08:17Z",
  "cadence": {
   "external_heartbeat_minutes": null,
   "github_backup_minutes": 60
  },
  "last_wake": {
-  "started_at": "2026-10-16T21:01:11Z",
-  "trigger_source": "github-schedule-backup",
+  "started_at": "2026-10-16T23:01:16Z",
+  "trigger_source": "workflow-run",
   "status": "OK",
   "no_action_reason": null
  },
  "last_24h": {
   "span_hours": 24.0,
-  "heartbeats_actual": 24,
+  "heartbeats_actual": 23,
   "heartbeats_by_source": {
    "chain": 4,
-   "github-schedule-backup": 6,
+   "github-schedule-backup": 5,
    "workflow-run": 14
   },
   "heartbeats_failed": 0,
@@ -25,18 +25,18 @@
   "external_heartbeats_actual": 0,
   "external_trigger_success": null,
   "github_backup_expected": 24,
-  "github_backup_actual": 6,
-  "github_backup_success": 0.25,
+  "github_backup_actual": 5,
+  "github_backup_success": 0.20833333333333334,
   "capture_runs": 3,
   "capture_runs_failed": 0,
   "paid_calls": 8,
   "credits_spent": 24,
   "fixtures_with_horizons": 10,
-  "horizons_eligible": 46,
-  "horizons_delivered": 46,
+  "horizons_eligible": 47,
+  "horizons_delivered": 47,
   "horizons_missed": 0,
   "horizon_states": {
-   "DELIVERED": 46
+   "DELIVERED": 47
   },
   "capture_success_rate": 1.0,
   "close_fixtures_eligible": 9,
@@ -48,8 +48,8 @@
   "heartbeats_actual": 144,
   "heartbeats_by_source": {
    "chain": 30,
-   "github-schedule-backup": 32,
-   "workflow-run": 82
+   "github-schedule-backup": 31,
+   "workflow-run": 83
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -57,22 +57,22 @@
   "external_heartbeats_actual": 0,
   "external_trigger_success": null,
   "github_backup_expected": 168,
-  "github_backup_actual": 32,
-  "github_backup_success": 0.19047619047619047,
+  "github_backup_actual": 31,
+  "github_backup_success": 0.18452380952380953,
   "capture_runs": 29,
   "capture_runs_failed": 1,
   "paid_calls": 123,
   "credits_spent": 369,
   "fixtures_with_horizons": 163,
-  "horizons_eligible": 811,
-  "horizons_delivered": 786,
+  "horizons_eligible": 812,
+  "horizons_delivered": 787,
   "horizons_missed": 25,
   "horizon_states": {
-   "DELIVERED": 786,
+   "DELIVERED": 787,
    "MISSED_BEFORE_WAKE": 20,
    "MISSED_EXECUTION_FAILURE": 5
   },
-  "capture_success_rate": 0.969173859432799,
+  "capture_success_rate": 0.9692118226600985,
   "close_fixtures_eligible": 162,
   "close_fixtures_delivered": 154,
   "close_success_rate": 0.9506172839506173
