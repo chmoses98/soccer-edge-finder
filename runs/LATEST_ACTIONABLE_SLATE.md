@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261016T082805Z-524cb5` · generated 2026-10-16T08:28:05.793633Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261016T084334Z-3ae4f9` · generated 2026-10-16T08:43:34.937077Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-16T08:25:12.752569Z (CURRENT at publish; CURRENT until 2026-10-16T08:45:12.752569Z, STALE after 2026-10-16T08:55:12.752569Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-16T08:40:41.941260Z (CURRENT at publish; CURRENT until 2026-10-16T09:00:41.941260Z, STALE after 2026-10-16T09:10:41.941260Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-16T08:13:14.244720Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.01s
+model board generated 2026-10-16T08:13:14.244720Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.82s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -45,7 +45,7 @@ model board generated 2026-10-16T08:13:14.244720Z · simulations this update: 0 
 | 2026-10-17T18:45:00Z | Troyes vs Lens (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-17T18:45:00Z | AS Roma vs Genoa (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-17T19:00:00Z | Valencia vs Athletic Club (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-17T20:30:00Z | Minnesota United vs St. Louis City SC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-17T20:30:00Z | Minnesota United vs St. Louis City SC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-17T21:00:00Z | Botafogo vs Chapecoense (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-17T21:30:00Z | Atlético Mineiro vs Coritiba (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-17T22:30:00Z | Athletico Paranaense vs Palmeiras (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
@@ -68,7 +68,7 @@ model board generated 2026-10-16T08:13:14.244720Z · simulations this update: 0 
 | 2026-10-18T02:30:00Z | Seattle Sounders vs CF Montréal (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-18T03:10:00Z | Cruz Azul vs FC Juárez (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (167; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (166; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -117,8 +117,8 @@ model board generated 2026-10-16T08:13:14.244720Z · simulations this update: 0 
 
 ```
 action_NO_EDGE: 2662
-action_NO_QUOTE: 681
-action_RESEARCH_CANDIDATE: 167
+action_NO_QUOTE: 682
+action_RESEARCH_CANDIDATE: 166
 contract_sides: 3510
 fixtures: 55
 fixtures_model_invalidated: 0
