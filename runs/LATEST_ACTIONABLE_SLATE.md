@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261017T124334Z-f16674` · generated 2026-10-17T12:43:34.673838Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261017T124837Z-afb656` · generated 2026-10-17T12:48:37.208730Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-17T12:40:21.431662Z (CURRENT at publish; CURRENT until 2026-10-17T13:00:21.431662Z, STALE after 2026-10-17T13:10:21.431662Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-17T12:45:34.795115Z (CURRENT at publish; CURRENT until 2026-10-17T13:05:34.795115Z, STALE after 2026-10-17T13:15:34.795115Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-17T12:43:25.685800Z · simulations this update: 38 · Odds API calls this update: 0 (credits 0) · reprice 1.34s
+model board generated 2026-10-17T12:43:25.685800Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 1.56s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-17T12:43:25.685800Z · simulations this update: 38
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-17T13:00:00Z | Venezia vs Napoli (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
+| 2026-10-17T13:00:00Z | Venezia vs Napoli (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
 | 2026-10-17T13:30:00Z | SV Elversberg vs FC Augsburg (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
 | 2026-10-17T13:30:00Z | Hamburger SV vs VfB Stuttgart (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
 | 2026-10-17T13:30:00Z | Schalke 04 vs Mainz 05 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
@@ -85,7 +85,7 @@ model board generated 2026-10-17T12:43:25.685800Z · simulations this update: 38
 | 2026-10-18T23:15:00Z | Belgrano vs River Plate (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-19T01:00:00Z | Monterrey vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (232; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (233; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -133,9 +133,9 @@ model board generated 2026-10-17T12:43:25.685800Z · simulations this update: 38
 ## Counts
 
 ```
-action_NO_EDGE: 2842
+action_NO_EDGE: 2841
 action_NO_QUOTE: 836
-action_RESEARCH_CANDIDATE: 232
+action_RESEARCH_CANDIDATE: 233
 contract_sides: 3910
 fixtures: 72
 fixtures_model_invalidated: 0
