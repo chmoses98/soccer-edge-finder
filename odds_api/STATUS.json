@@ -1,10 +1,38 @@
 {
-  "batch_id": "kd-20261017T185500Z",
-  "captured_at": "2026-10-17T18:57:56.132351Z",
+  "batch_id": "kd-20261017T192504Z",
+  "captured_at": "2026-10-17T19:28:01.359890Z",
   "credits_charged": 0,
-  "eligible_fixtures": 0,
+  "eligible_fixtures": 2,
   "no_sport_key": [],
   "paid_calls": 0,
+  "per_sport": {
+    "soccer_argentina_primera_division": {
+      "fixtures": 1,
+      "join": {
+        "ambiguous": 0,
+        "events": 5,
+        "joined": 1,
+        "unjoined_fixtures": [],
+        "unresolved_names": [
+          "CA Tigre BA",
+          "Velez Sarsfield BA"
+        ]
+      },
+      "status": "BLOCKED_BUDGET_GUARD:DAILY_CEILING_ENTRY_SHARE"
+    },
+    "soccer_usa_mls": {
+      "fixtures": 1,
+      "join": {
+        "ambiguous": 0,
+        "events": 7,
+        "joined": 1,
+        "unjoined_fixtures": [],
+        "unresolved_names": []
+      },
+      "status": "BLOCKED_BUDGET_GUARD:DAILY_CEILING_ENTRY_SHARE"
+    }
+  },
+  "remaining_after": 18153,
   "snapshots": 0,
-  "status": "NOTHING_ELIGIBLE"
+  "status": "OK"
 }
