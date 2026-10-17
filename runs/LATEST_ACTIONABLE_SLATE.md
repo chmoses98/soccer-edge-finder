@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261017T124837Z-afb656` · generated 2026-10-17T12:48:37.208730Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261017T125808Z-1a7724` · generated 2026-10-17T12:58:08.372100Z · trigger `kickoff_chain:T-60/T-5` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-17T12:45:34.795115Z (CURRENT at publish; CURRENT until 2026-10-17T13:05:34.795115Z, STALE after 2026-10-17T13:15:34.795115Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-17T12:55:00.027644Z (CURRENT at publish; CURRENT until 2026-10-17T13:15:00.027644Z, STALE after 2026-10-17T13:25:00.027644Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-17T12:43:25.685800Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 1.56s
+model board generated 2026-10-17T12:58:07.068789Z · simulations this update: 3 · Odds API calls this update: 1 (credits 3) · reprice 1.30s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -18,9 +18,9 @@ model board generated 2026-10-17T12:43:25.685800Z · simulations this update: 0 
 | 2026-10-17T13:30:00Z | Schalke 04 vs Mainz 05 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
 | 2026-10-17T13:30:00Z | Union Berlin vs Borussia Dortmund (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
 | 2026-10-17T13:30:00Z | Werder Bremen vs SC Paderborn 07 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
-| 2026-10-17T14:00:00Z | Brentford vs Liverpool (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-17T14:00:00Z | Fulham vs Hull City (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-17T14:00:00Z | Manchester City vs Ipswich Town (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-17T14:00:00Z | Brentford vs Liverpool (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
+| 2026-10-17T14:00:00Z | Fulham vs Hull City (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
+| 2026-10-17T14:00:00Z | Manchester City vs Ipswich Town (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
 | 2026-10-17T14:15:00Z | Villarreal vs Elche (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-17T15:15:00Z | Strasbourg vs Paris Saint-Germain (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-17T16:00:00Z | Bologna vs Inter Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -85,7 +85,7 @@ model board generated 2026-10-17T12:43:25.685800Z · simulations this update: 0 
 | 2026-10-18T23:15:00Z | Belgrano vs River Plate (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-19T01:00:00Z | Monterrey vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (233; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (236; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -133,9 +133,9 @@ model board generated 2026-10-17T12:43:25.685800Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2841
+action_NO_EDGE: 2838
 action_NO_QUOTE: 836
-action_RESEARCH_CANDIDATE: 233
+action_RESEARCH_CANDIDATE: 236
 contract_sides: 3910
 fixtures: 72
 fixtures_model_invalidated: 0
