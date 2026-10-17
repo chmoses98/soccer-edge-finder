@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-17T00:34:20.797208+00:00",
+  "as_of": "2026-10-17T07:06:02.879766+00:00",
   "events": 753,
   "events_skipped_unmapped": 386,
   "fixtures_mapped": 367,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=73"
+      "weather_stopped:consecutive_failures:skipped=71"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 150,
+    "captured": 17,
     "events": 150,
     "failures": [],
-    "published_post": 5,
-    "published_pre_kickoff": 1,
-    "unchanged": 0,
-    "unpublished": 144
+    "published_post": 7,
+    "published_pre_kickoff": 0,
+    "unchanged": 133,
+    "unpublished": 143
   },
   "map_proposals": {
     "den.1": {
@@ -156,7 +156,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 1,
+  "results_appended": 6,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -210,17 +210,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 12,
-    "events": 88,
+    "captured": 9,
+    "events": 83,
     "failures": [
-      "401841617: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-34.5939&longitude=-60.9464&hourly=",
-      "401841625: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-34.6131&longitude=-58.3772&hourly=",
-      "401892161: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Auckland&count=5&language=en&fo"
+      "401841620: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-32.9468&longitude=-60.6393&hourly=",
+      "401841617: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Junin&count=5&language=en&forma",
+      "401841625: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-34.6131&longitude=-58.3772&hourly="
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 73,
+    "skipped": 71,
     "stopped": "consecutive_failures"
   }
 }
