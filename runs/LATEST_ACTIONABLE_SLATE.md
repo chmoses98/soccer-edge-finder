@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261017T204800Z-9415b5` · generated 2026-10-17T20:48:00.844262Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261017T204938Z-0c536c` · generated 2026-10-17T20:49:38.121754Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-17T20:45:00.025658Z (CURRENT at publish; CURRENT until 2026-10-17T21:05:00.025658Z, STALE after 2026-10-17T21:15:00.025658Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-17T20:46:28.971256Z (CURRENT at publish; CURRENT until 2026-10-17T21:06:28.971256Z, STALE after 2026-10-17T21:16:28.971256Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-17T20:33:39.446218Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 1.19s
+model board generated 2026-10-17T20:33:39.446218Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 2.08s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,8 +12,8 @@ model board generated 2026-10-17T20:33:39.446218Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-17T21:00:00Z | Botafogo vs Chapecoense (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
-| 2026-10-17T21:30:00Z | Atlético Mineiro vs Coritiba (bra.serie_a) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-17T21:00:00Z | Botafogo vs Chapecoense (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-17T21:30:00Z | Atlético Mineiro vs Coritiba (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-17T22:30:00Z | Athletico Paranaense vs Palmeiras (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-17T23:00:00Z | Santos Laguna vs Querétaro (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-17T23:07:00Z | Guadalajara vs Tigres UANL (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -66,7 +66,7 @@ model board generated 2026-10-17T20:33:39.446218Z · simulations this update: 0 
 | 2026-10-19T19:00:00Z | Tottenham Hotspur vs Coventry City (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-19T19:00:00Z | Getafe vs Rayo Vallecano (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (242; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (241; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -75,10 +75,10 @@ model board generated 2026-10-17T20:33:39.446218Z · simulations this update: 0 
 | New York Red Bulls vs Toronto FC | Total goals over 3.5 | no | 0.4900 | 0.733 [0.581, 0.864] | +0.225 | +0.132 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs Los Angeles FC | away team total over 0.5 | no | 0.2200 | 0.443 [0.321, 0.562] | +0.211 | +0.131 | 0.34 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Toronto FC | Total goals over 2.5 | no | 0.2800 | 0.527 [0.360, 0.688] | +0.233 | +0.122 | 0.39 | - |  | RESEARCH_CANDIDATE |
+| Austin FC vs Vancouver Whitecaps | away team total over 1.5 | no | 0.3700 | 0.598 [0.455, 0.733] | +0.212 | +0.119 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs Querétaro | home team total over 1.5 | no | 0.4900 | 0.716 [0.545, 0.854] | +0.208 | +0.119 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Inter Miami | away team total over 1.5 | no | 0.3500 | 0.569 [0.421, 0.709] | +0.203 | +0.112 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs Los Angeles FC | Total goals over 2.5 | no | 0.4600 | 0.675 [0.537, 0.801] | +0.197 | +0.111 | 0.57 | - | * | RESEARCH_CANDIDATE |
-| Austin FC vs Vancouver Whitecaps | away team total over 1.5 | no | 0.3800 | 0.598 [0.455, 0.733] | +0.201 | +0.109 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Inter Miami | away team total over 2.5 | no | 0.6200 | 0.808 [0.692, 0.906] | +0.171 | +0.107 | 0.73 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs CF Montréal | btts | no | 0.4200 | 0.615 [0.508, 0.729] | +0.178 | +0.107 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Toronto FC | Total goals over 4.5 | no | 0.6900 | 0.868 [0.763, 0.951] | +0.163 | +0.105 | 0.79 | - |  | RESEARCH_CANDIDATE |
@@ -114,13 +114,12 @@ model board generated 2026-10-17T20:33:39.446218Z · simulations this update: 0 
 ## Counts
 
 ```
-action_MODEL_INVALIDATED: 28
-action_NO_EDGE: 2592
-action_NO_QUOTE: 636
-action_RESEARCH_CANDIDATE: 242
+action_NO_EDGE: 2620
+action_NO_QUOTE: 637
+action_RESEARCH_CANDIDATE: 241
 contract_sides: 3498
 fixtures: 53
-fixtures_model_invalidated: 1
+fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
