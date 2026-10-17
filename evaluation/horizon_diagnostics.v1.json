@@ -4,88 +4,60 @@
       "achieved_minutes_median": 122.25,
       "achieved_minutes_p10": 117.78,
       "achieved_minutes_p90": 126.35,
-      "delivered": 242,
-      "delivery_rate": 0.8897058823529411,
+      "delivered": 244,
+      "delivery_rate": 0.8840579710144928,
       "lateness_minutes_max": 62.51,
       "lateness_minutes_median": -2.25,
-      "missed": 30
+      "missed": 32
     },
     "15": {
-      "achieved_minutes_median": 12.87,
+      "achieved_minutes_median": 12.82,
       "achieved_minutes_p10": 11.62,
       "achieved_minutes_p90": 13.77,
-      "delivered": 237,
-      "delivery_rate": 0.8777777777777778,
+      "delivered": 239,
+      "delivery_rate": 0.8690909090909091,
       "lateness_minutes_max": 14.64,
-      "lateness_minutes_median": 2.13,
-      "missed": 33
+      "lateness_minutes_median": 2.18,
+      "missed": 36
     },
     "30": {
       "achieved_minutes_median": 28.25,
       "achieved_minutes_p10": 27.3,
       "achieved_minutes_p90": 29.34,
-      "delivered": 238,
-      "delivery_rate": 0.8814814814814815,
+      "delivered": 240,
+      "delivery_rate": 0.8727272727272727,
       "lateness_minutes_max": 16.98,
       "lateness_minutes_median": 1.75,
-      "missed": 32
+      "missed": 35
     },
     "5": {
       "achieved_minutes_median": 2.34,
-      "achieved_minutes_p10": 1.79,
+      "achieved_minutes_p10": 1.77,
       "achieved_minutes_p90": 2.82,
-      "delivered": 237,
-      "delivery_rate": 0.8810408921933085,
+      "delivered": 239,
+      "delivery_rate": 0.8722627737226277,
       "lateness_minutes_max": 7.0,
       "lateness_minutes_median": 2.66,
-      "missed": 32
+      "missed": 35
     },
     "60": {
       "achieved_minutes_median": 62.1,
       "achieved_minutes_p10": 57.49,
       "achieved_minutes_p90": 62.5,
-      "delivered": 236,
-      "delivery_rate": 0.8708487084870848,
+      "delivered": 238,
+      "delivery_rate": 0.8654545454545455,
       "lateness_minutes_max": 25.74,
       "lateness_minutes_median": -2.1,
-      "missed": 35
+      "missed": 37
     }
   },
-  "delivered_total": 1190,
-  "delivery_rate_total": 0.8801775147928994,
-  "fixtures_tracked": 272,
-  "generated_at": "2026-10-16T23:08:16Z",
-  "missed_total": 162,
+  "delivered_total": 1200,
+  "delivery_rate_total": 0.8727272727272727,
+  "fixtures_tracked": 276,
+  "generated_at": "2026-10-17T04:22:43Z",
+  "missed_total": 175,
   "n_pending_fixtures": 126,
   "pending_fixtures": [
-    {
-      "competition_id": "arg.primera",
-      "fixture_id": "fx:arg.primera:2026:arg.boca_juniors:arg.talleres",
-      "kickoff_utc": "2026-10-17T00:30:00Z",
-      "markets_discovered": 14,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "mex.liga_mx",
-      "fixture_id": "fx:mex.liga_mx:2026:mex.necaxa:mex.atlas",
-      "kickoff_utc": "2026-10-17T01:00:00Z",
-      "markets_discovered": 77,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "mex.liga_mx",
-      "fixture_id": "fx:mex.liga_mx:2026:mex.atlante:mex.pumas",
-      "kickoff_utc": "2026-10-17T03:00:00Z",
-      "markets_discovered": 77,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "mex.liga_mx",
-      "fixture_id": "fx:mex.liga_mx:2026:mex.tijuana:mex.puebla",
-      "kickoff_utc": "2026-10-17T03:05:00Z",
-      "markets_discovered": 32,
-      "source": "run_output"
-    },
     {
       "competition_id": "eng.premier_league",
       "fixture_id": "fx:eng.premier_league:2026-27:eng.everton:eng.chelsea:matchday_7",
@@ -757,6 +729,34 @@
       "kickoff_utc": "2026-10-18T15:30:00Z",
       "markets_discovered": 77,
       "source": "run_output"
+    },
+    {
+      "competition_id": "eng.premier_league",
+      "fixture_id": "fx:eng.premier_league:2026-27:eng.nottm_forest:eng.arsenal",
+      "kickoff_utc": "2026-10-18T15:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "ger.bundesliga",
+      "fixture_id": "fx:ger.bundesliga:2026-27:ger.gladbach:ger.hoffenheim",
+      "kickoff_utc": "2026-10-18T15:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "ita.serie_a",
+      "fixture_id": "fx:ita.serie_a:2026-27:ita.milan:ita.atalanta:matchday_7",
+      "kickoff_utc": "2026-10-18T16:00:00Z",
+      "markets_discovered": 77,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "ita.serie_a",
+      "fixture_id": "fx:ita.serie_a:2026-27:ita.milan:ita.atalanta",
+      "kickoff_utc": "2026-10-18T16:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
     }
   ],
   "required_horizons": [

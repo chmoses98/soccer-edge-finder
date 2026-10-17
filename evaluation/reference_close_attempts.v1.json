@@ -1,10 +1,10 @@
 {
  "counts": {
-  "PINNACLE_VALID_CLOSE": 123,
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 81,
-  "NO_SPORT_KEY": 19,
   "PINNACLE_QUOTED_NOTHING": 15,
-  "MISSED_DISPATCHER_CLOSE": 32
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 81,
+  "PINNACLE_VALID_CLOSE": 125,
+  "MISSED_DISPATCHER_CLOSE": 35,
+  "NO_SPORT_KEY": 19
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.sarmiento": {
@@ -20,6 +20,11 @@
   "fx:arg.primera:2026:arg.barracas_central:arg.huracan": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:arg.primera:2026:arg.boca_juniors:arg.talleres": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
    "batch_id": null
   },
   "fx:arg.primera:2026:arg.boca_juniors:arg.union": {
@@ -196,6 +201,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261007T221439Z"
+  },
+  "fx:bra.serie_a:2026:bra.mirassol:bra.internacional": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
   },
   "fx:bra.serie_a:2026:bra.palmeiras:bra.bahia": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -947,6 +957,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261011T025500Z"
   },
+  "fx:mex.liga_mx:2026:mex.atlante:mex.pumas": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261017T024503Z"
+  },
   "fx:mex.liga_mx:2026:mex.atlas:mex.guadalajara": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
@@ -956,6 +971,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261010T224330Z"
+  },
+  "fx:mex.liga_mx:2026:mex.necaxa:mex.atlas": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
   },
   "fx:mex.liga_mx:2026:mex.pachuca:mex.necaxa": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -986,6 +1006,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261010T024558Z"
+  },
+  "fx:mex.liga_mx:2026:mex.tijuana:mex.puebla": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261017T025016Z"
   },
   "fx:uefa.nations_league:2026-27:nat.aze:nat.lie": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
