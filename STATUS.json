@@ -1,25 +1,23 @@
 {
-  "as_of": "2026-10-17T20:03:06.977462+00:00",
+  "as_of": "2026-10-17T20:18:01.247330+00:00",
   "events": 19,
   "events_skipped_unmapped": 0,
   "fixtures_mapped": 19,
   "health": {
-    "reasons": [
-      "weather_failures:3"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
     "arg.1",
     "usa.1"
   ],
   "lineups": {
-    "captured": 5,
+    "captured": 1,
     "events": 19,
     "failures": [],
     "published_post": 2,
     "published_pre_kickoff": 3,
-    "unchanged": 14,
+    "unchanged": 18,
     "unpublished": 14
   },
   "map_proposals": {},
@@ -31,13 +29,9 @@
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 16,
+    "captured": 19,
     "events": 19,
-    "failures": [
-      "761888: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=45.5234&longitude=-122.6762&hourly=",
-      "761886: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=San%20Jose&count=5&language=en&",
-      "761885: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=47.6062&longitude=-122.3321&hourly="
-    ],
+    "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,

@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261017T200409Z-4f1ed9` · generated 2026-10-17T20:04:09.370873Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
+slate `slate-20261017T201809Z-64328a` · generated 2026-10-17T20:18:09.652744Z · trigger `kickoff_chain:T-15` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-17T20:00:10.260688Z (CURRENT at publish; CURRENT until 2026-10-17T20:20:10.260688Z, STALE after 2026-10-17T20:30:10.260688Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-17T20:15:00.061003Z (CURRENT at publish; CURRENT until 2026-10-17T20:35:00.061003Z, STALE after 2026-10-17T20:45:00.061003Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-17T20:04:06.892119Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.93s
+model board generated 2026-10-17T20:04:06.892119Z · simulations this update: 0 · Odds API calls this update: 2 (credits 6) · reprice 0.92s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,8 +12,8 @@ model board generated 2026-10-17T20:04:06.892119Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-17T20:30:00Z | Platense vs Lanús (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-10-17T20:30:00Z | Minnesota United vs St. Louis City SC (usa.mls) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 32 | 0 |
+| 2026-10-17T20:30:00Z | Platense vs Lanús (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
+| 2026-10-17T20:30:00Z | Minnesota United vs St. Louis City SC (usa.mls) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 32 | 0 |
 | 2026-10-17T21:00:00Z | Botafogo vs Chapecoense (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-17T21:30:00Z | Atlético Mineiro vs Coritiba (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-17T22:30:00Z | Athletico Paranaense vs Palmeiras (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -68,7 +68,7 @@ model board generated 2026-10-17T20:04:06.892119Z · simulations this update: 1 
 | 2026-10-19T19:00:00Z | Tottenham Hotspur vs Coventry City (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-19T19:00:00Z | Getafe vs Rayo Vallecano (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (245; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (244; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -116,9 +116,9 @@ model board generated 2026-10-17T20:04:06.892119Z · simulations this update: 1 
 ## Counts
 
 ```
-action_NO_EDGE: 2672
+action_NO_EDGE: 2673
 action_NO_QUOTE: 703
-action_RESEARCH_CANDIDATE: 245
+action_RESEARCH_CANDIDATE: 244
 contract_sides: 3620
 fixtures: 55
 fixtures_model_invalidated: 1
