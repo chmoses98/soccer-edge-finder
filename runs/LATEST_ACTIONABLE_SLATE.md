@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261017T114801Z-4423a8` · generated 2026-10-17T11:48:01.101378Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261017T115302Z-7ac5aa` · generated 2026-10-17T11:53:02.258254Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-17T11:45:00.035162Z (CURRENT at publish; CURRENT until 2026-10-17T12:05:00.035162Z, STALE after 2026-10-17T12:15:00.035162Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-17T11:50:02.773288Z (CURRENT at publish; CURRENT until 2026-10-17T12:10:02.773288Z, STALE after 2026-10-17T12:20:02.773288Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-17T10:59:43.273834Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 2.14s
+model board generated 2026-10-17T10:59:43.273834Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 2.01s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -84,7 +84,7 @@ model board generated 2026-10-17T10:59:43.273834Z · simulations this update: 0 
 | 2026-10-18T22:30:00Z | Remo vs Red Bull Bragantino (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-19T01:00:00Z | Monterrey vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (233; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (231; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -92,10 +92,10 @@ model board generated 2026-10-17T10:59:43.273834Z · simulations this update: 0 
 | New York City FC vs Los Angeles FC | btts | no | 0.4000 | 0.622 [0.508, 0.727] | +0.205 | +0.136 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs Los Angeles FC | away team total over 1.5 | no | 0.5800 | 0.794 [0.686, 0.886] | +0.197 | +0.134 | 0.71 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Toronto FC | Total goals over 3.5 | no | 0.5000 | 0.733 [0.582, 0.864] | +0.215 | +0.123 | 0.62 | - | * | RESEARCH_CANDIDATE |
-| New York City FC vs Los Angeles FC | away team total over 0.5 | no | 0.2300 | 0.443 [0.321, 0.562] | +0.201 | +0.121 | 0.34 | - |  | RESEARCH_CANDIDATE |
 | Strasbourg vs Paris Saint-Germain | Result: home | yes | 0.1400 | 0.376 [0.202, 0.572] | +0.228 | +0.113 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs Los Angeles FC | Total goals over 2.5 | no | 0.4600 | 0.675 [0.537, 0.801] | +0.198 | +0.112 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Toronto FC | Total goals over 2.5 | no | 0.2900 | 0.527 [0.361, 0.687] | +0.223 | +0.112 | 0.39 | - |  | RESEARCH_CANDIDATE |
+| New York City FC vs Los Angeles FC | away team total over 0.5 | no | 0.2400 | 0.443 [0.321, 0.562] | +0.191 | +0.110 | 0.34 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs Querétaro | home team total over 1.5 | no | 0.5000 | 0.716 [0.547, 0.853] | +0.199 | +0.110 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Vancouver Whitecaps | away team total over 1.5 | no | 0.3800 | 0.598 [0.454, 0.733] | +0.201 | +0.109 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs CF Montréal | Total goals over 3.5 | no | 0.5500 | 0.757 [0.606, 0.884] | +0.189 | +0.106 | 0.65 | - | * | RESEARCH_CANDIDATE |
@@ -132,9 +132,9 @@ model board generated 2026-10-17T10:59:43.273834Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2831
+action_NO_EDGE: 2833
 action_NO_QUOTE: 698
-action_RESEARCH_CANDIDATE: 233
+action_RESEARCH_CANDIDATE: 231
 contract_sides: 3762
 fixtures: 71
 fixtures_model_invalidated: 0
