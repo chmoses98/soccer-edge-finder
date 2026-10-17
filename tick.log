@@ -1046,3 +1046,36 @@ unmapped teams: 0 | proposals: {}
 [dispatch] holding 5.3 min (next window opens in 194.4 min)
 [dispatch] holding 4.7 min (next window opens in 189.0 min)
 [capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261017T061834Z",
+  "complete": true,
+  "discovered": 7270,
+  "written": 1693,
+  "path": "work/snapshots/2026-10-17/cap-20261017T061834Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261017T061836Z-9b1dc9", "mode": "reprice_only", "fixtures": 72, "contract_sides": 3768, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 1.94, "price_changes_vs_previous": 204}
+[dispatch] holding 10.0 min (next window opens in 179.4 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261017T063334Z",
+  "complete": true,
+  "discovered": 7270,
+  "written": 1510,
+  "path": "work/snapshots/2026-10-17/cap-20261017T063334Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261017T063336Z-8e5fc8", "mode": "reprice_only", "fixtures": 72, "contract_sides": 3768, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 2.136, "price_changes_vs_previous": 247}
+{
+ "batches": 9,
+ "horizons_delivered": 10,
+ "missed_states": {
+  "MISSED_BEFORE_WAKE": 9,
+  "MISSED_EXECUTION_FAILURE": 4
+ },
+ "paid_calls": 4,
+ "credits_spent": 12,
+ "end_reason": "link_time_limit",
+ "chain_continue": true,
+ "delivered_total": 1200,
+ "missed_total": 175,
+ "delivery_rate_total": 0.8727272727272727
+}
