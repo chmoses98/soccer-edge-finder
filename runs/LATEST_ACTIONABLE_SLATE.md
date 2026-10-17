@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261017T165957Z-f9a3b6` · generated 2026-10-17T16:59:57.906192Z · trigger `kickoff_chain:T-120/T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261017T171450Z-9c8314` · generated 2026-10-17T17:14:50.526146Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-17T16:56:53.539258Z (CURRENT at publish; CURRENT until 2026-10-17T17:16:53.539258Z, STALE after 2026-10-17T17:26:53.539258Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-17T17:11:51.574957Z (CURRENT at publish; CURRENT until 2026-10-17T17:31:51.574957Z, STALE after 2026-10-17T17:41:51.574957Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-17T15:28:14.787967Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 1.26s
+model board generated 2026-10-17T17:14:49.483296Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 1.48s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -69,8 +69,9 @@ model board generated 2026-10-17T15:28:14.787967Z · simulations this update: 0 
 | 2026-10-18T22:30:00Z | Remo vs Red Bull Bragantino (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-18T23:15:00Z | Belgrano vs River Plate (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-19T01:00:00Z | Monterrey vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-19T16:30:00Z | Monza vs Cagliari (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (221; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (222; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -118,15 +119,15 @@ model board generated 2026-10-17T15:28:14.787967Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2790
-action_NO_QUOTE: 809
-action_RESEARCH_CANDIDATE: 221
-contract_sides: 3820
-fixtures: 57
+action_NO_EDGE: 2800
+action_NO_QUOTE: 804
+action_RESEARCH_CANDIDATE: 222
+contract_sides: 3826
+fixtures: 58
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
-Removed (kicked off): 4
+Removed (kicked off): 3
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
