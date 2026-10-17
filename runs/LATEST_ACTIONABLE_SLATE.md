@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261017T154824Z-41ab75` · generated 2026-10-17T15:48:24.639468Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261017T155348Z-e67066` · generated 2026-10-17T15:53:48.266202Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-17T15:45:15.655578Z (CURRENT at publish; CURRENT until 2026-10-17T16:05:15.655578Z, STALE after 2026-10-17T16:15:15.655578Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-17T15:50:47.263851Z (CURRENT at publish; CURRENT until 2026-10-17T16:10:47.263851Z, STALE after 2026-10-17T16:20:47.263851Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-17T15:28:14.787967Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 2.05s
+model board generated 2026-10-17T15:28:14.787967Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.49s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,17 +12,17 @@ model board generated 2026-10-17T15:28:14.787967Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-17T16:00:00Z | Bologna vs Inter Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
+| 2026-10-17T16:00:00Z | Bologna vs Inter Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
 | 2026-10-17T16:30:00Z | Newcastle United vs Aston Villa (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
 | 2026-10-17T16:30:00Z | Real Betis vs FC Barcelona (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
 | 2026-10-17T16:30:00Z | Bayern Munich vs RB Leipzig (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
-| 2026-10-17T18:00:00Z | Banfield vs Argentinos Juniors (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-17T18:00:00Z | Banfield vs Argentinos Juniors (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-17T18:30:00Z | Philadelphia Union vs Charlotte FC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-17T18:45:00Z | Lille vs Brest (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-17T18:45:00Z | Troyes vs Lens (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-17T18:45:00Z | AS Roma vs Genoa (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-17T19:00:00Z | Valencia vs Athletic Club (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-17T20:30:00Z | Platense vs Lanús (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-17T20:30:00Z | Platense vs Lanús (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-17T20:30:00Z | Minnesota United vs St. Louis City SC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-17T21:00:00Z | Botafogo vs Chapecoense (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-17T21:30:00Z | Atlético Mineiro vs Coritiba (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -74,7 +74,7 @@ model board generated 2026-10-17T15:28:14.787967Z · simulations this update: 0 
 | 2026-10-18T23:15:00Z | Belgrano vs River Plate (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-19T01:00:00Z | Monterrey vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (217; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (215; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -122,9 +122,9 @@ model board generated 2026-10-17T15:28:14.787967Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2807
-action_NO_QUOTE: 820
-action_RESEARCH_CANDIDATE: 217
+action_NO_EDGE: 2810
+action_NO_QUOTE: 819
+action_RESEARCH_CANDIDATE: 215
 contract_sides: 3844
 fixtures: 61
 fixtures_model_invalidated: 0
