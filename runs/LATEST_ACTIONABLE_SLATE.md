@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261017T134802Z-c2f727` · generated 2026-10-17T13:48:02.390464Z · trigger `kickoff_chain:T-30/T-15` · mode `reprice_only`
+slate `slate-20261017T135313Z-da8d47` · generated 2026-10-17T13:53:13.899712Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-17T13:45:02.404732Z (CURRENT at publish; CURRENT until 2026-10-17T14:05:02.404732Z, STALE after 2026-10-17T14:15:02.404732Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-17T13:50:15.429767Z (CURRENT at publish; CURRENT until 2026-10-17T14:10:15.429767Z, STALE after 2026-10-17T14:20:15.429767Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-17T13:13:53.756468Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 1.41s
+model board generated 2026-10-17T13:13:53.756468Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.57s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -79,7 +79,7 @@ model board generated 2026-10-17T13:13:53.756468Z · simulations this update: 0 
 | 2026-10-18T23:15:00Z | Belgrano vs River Plate (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-19T01:00:00Z | Monterrey vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (231; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (222; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -115,7 +115,6 @@ model board generated 2026-10-17T13:13:53.756468Z · simulations this update: 0 
 | Santos Laguna vs Querétaro | home team total over 2.5 | no | 0.7700 | 0.899 [0.799, 0.969] | +0.117 | +0.074 | 0.84 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Nashville SC | Total goals over 2.5 | no | 0.3800 | 0.570 [0.413, 0.718] | +0.173 | +0.072 | 0.45 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Vancouver Whitecaps | Result: away | no | 0.4100 | 0.585 [0.446, 0.713] | +0.158 | +0.072 | 0.48 | - | * | RESEARCH_CANDIDATE |
-| New England Revolution vs Chicago Fire | away team total over 1.5 | no | 0.5300 | 0.697 [0.556, 0.816] | +0.150 | +0.072 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs CF Montréal | Total goals over 4.5 | no | 0.7500 | 0.883 [0.783, 0.960] | +0.120 | +0.071 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Vancouver Whitecaps | away wins by more than 1.5 | no | 0.6500 | 0.798 [0.688, 0.890] | +0.132 | +0.070 | 0.72 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Nashville SC | btts | no | 0.3600 | 0.528 [0.404, 0.649] | +0.152 | +0.070 | 0.42 | - | * | RESEARCH_CANDIDATE |
@@ -123,13 +122,14 @@ model board generated 2026-10-17T13:13:53.756468Z · simulations this update: 0 
 | Seattle Sounders vs CF Montréal | away team total over 0.5 | no | 0.3800 | 0.538 [0.420, 0.661] | +0.141 | +0.067 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs Querétaro | Total goals over 1.5 | no | 0.2000 | 0.376 [0.229, 0.521] | +0.165 | +0.065 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Toronto FC | Total goals over 1.5 | no | 0.1200 | 0.280 [0.154, 0.414] | +0.153 | +0.064 | 0.18 | - |  | RESEARCH_CANDIDATE |
+| New York City FC vs Los Angeles FC | Total goals over 4.5 | no | 0.8400 | 0.940 [0.888, 0.980] | +0.090 | +0.064 | 0.9 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2771
-action_NO_QUOTE: 872
-action_RESEARCH_CANDIDATE: 231
+action_NO_EDGE: 2770
+action_NO_QUOTE: 882
+action_RESEARCH_CANDIDATE: 222
 contract_sides: 3874
 fixtures: 66
 fixtures_model_invalidated: 0
