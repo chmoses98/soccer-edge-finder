@@ -2506,3 +2506,270 @@ These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW
 
 ## Events
 - Athletico Paranaense vs Palmeiras (Brasileirão Série A) 2026-10-17T22:30:00Z · markets 14/14 evaluated · lineups unknown · xG 1.41-1.24 · 1X2 40%/27%/33%
+
+{
+  "outputs": {
+    "json": "work/runs/_pending/run_output.v1.json",
+    "md": "work/runs/_pending/RUN_SOCCER.md",
+    "contracts": "work/runs/_pending/priced_contracts.json",
+    "coverage": "work/runs/_pending/coverage.json",
+    "diagnostics": "work/runs/_pending/coverage_diagnostics.json"
+  },
+  "simulated": [
+    "fx:bra.serie_a:2026:bra.athletico_paranaense:bra.palmeiras"
+  ],
+  "repriced": [],
+  "archived_records": 14
+}
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261017T222311Z",
+  "complete": true,
+  "discovered": 6977,
+  "written": 1039,
+  "path": "work/snapshots/2026-10-17/cap-20261017T222311Z.jsonl"
+}
+{
+  "reference_probabilities": 240,
+  "observed_at": "2026-10-17 18:16:11.726416+00:00",
+  "groups": 415,
+  "unmapped_fixture_groups": 175,
+  "incomplete_groups": 0,
+  "snapshots": 864,
+  "provider_notes": [
+    "169 rows, 86 skipped (unmapped division/team)",
+    "skipped_by_division={'D2': 9, 'E2': 12, 'E3': 12, 'F2': 9, 'G1': 6, 'I2': 10, 'N1': 1, 'SC1': 5, 'SC2': 5, 'SC3': 5, 'SP2': 11, 'T1': 1}",
+    "unknown_teams={'N1:Nijmegen': 1, 'T1:Goztep': 1}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-17T22:23:13.259188Z", "batch_id": "kd-20261017T222017Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-10-17T22:23:13.283538+00:00",
+ "leagues": [
+  "usa.1"
+ ],
+ "events": 14,
+ "fixtures_mapped": 14,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 1,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 13,
+  "captured": 1,
+  "unchanged": 12,
+  "published_pre_kickoff": 0,
+  "published_post": 1,
+  "unpublished": 12,
+  "failures": []
+ },
+ "results_appended": 1,
+ "weather": {
+  "events": 13,
+  "captured": 13,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261017T222319Z-c8b8aa", "mode": "reprice_only", "fixtures": 51, "contract_sides": 3412, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.957, "price_changes_vs_previous": 25}
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261017T222852Z",
+  "complete": true,
+  "discovered": 6972,
+  "written": 1317,
+  "path": "work/snapshots/2026-10-17/cap-20261017T222852Z.jsonl"
+}
+{
+  "reference_probabilities": 240,
+  "observed_at": "2026-10-17 18:16:11.726416+00:00",
+  "groups": 415,
+  "unmapped_fixture_groups": 175,
+  "incomplete_groups": 0,
+  "snapshots": 864,
+  "provider_notes": [
+    "169 rows, 86 skipped (unmapped division/team)",
+    "skipped_by_division={'D2': 9, 'E2': 12, 'E3': 12, 'F2': 9, 'G1': 6, 'I2': 10, 'N1': 1, 'SC1': 5, 'SC2': 5, 'SC3': 5, 'SP2': 11, 'T1': 1}",
+    "unknown_teams={'N1:Nijmegen': 1, 'T1:Goztep': 1}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-17T22:28:54.123622Z", "batch_id": "kd-20261017T222553Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 5, "per_sport": {"soccer_usa_mls": {"fixtures": 5, "join": {"events": 13, "joined": 5, "ambiguous": 0, "unresolved_names": [], "unjoined_fixtures": []}, "status": "BLOCKED_BUDGET_GUARD:DAILY_CEILING_ENTRY_SHARE"}}, "remaining_after": 18122, "status": "OK"}
+{
+ "as_of": "2026-10-17T22:28:54.401657+00:00",
+ "leagues": [
+  "bra.1",
+  "usa.1"
+ ],
+ "events": 18,
+ "fixtures_mapped": 18,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 2,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 17,
+  "captured": 2,
+  "unchanged": 15,
+  "published_pre_kickoff": 1,
+  "published_post": 3,
+  "unpublished": 13,
+  "failures": []
+ },
+ "results_appended": 1,
+ "weather": {
+  "events": 17,
+  "captured": 17,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 0 | proposals: {}
+[data] historical: 3581 matches from club_football_match_data; flags=['ok']
+[data] eng.premier_league 2026-27: 380 fixtures, 45 results (25 new vs historical)
+[data] esp.la_liga 2026-27: 380 fixtures, 64 results (36 new vs historical)
+[data] ger.bundesliga 2026-27: 306 fixtures, 33 results (25 new vs historical)
+[data] ita.serie_a 2026-27: 380 fixtures, 50 results (30 new vs historical)
+[data] fra.ligue_1 2026-27: 306 fixtures, 41 results (24 new vs historical)
+[data] usa.mls: espn 45 fixtures, 1204 pooled results (usa.1)
+[data] mex.liga_mx: espn 23 fixtures, 704 pooled results (mex.1)
+[data] bra.serie_a: espn 18 fixtures, 679 pooled results (bra.1)
+[data] arg.primera: espn 23 fixtures, 1170 pooled results (arg.1)
+[data] uefa.nations_league: espn 0 fixtures, 1142 pooled results (uefa.nations,fifa.friendly,fifa.worldq.uefa,fifa.worldq.conmebol,fifa.worldq.concacaf,fifa.worldq.afc,fifa.worldq.caf,uefa.euroq,concacaf.nations.league)
+[data] fifa.friendly: espn 0 fixtures, 1142 pooled results (uefa.nations,fifa.friendly,fifa.worldq.uefa,fifa.worldq.conmebol,fifa.worldq.concacaf,fifa.worldq.afc,fifa.worldq.caf,uefa.euroq,concacaf.nations.league)
+[data] concacaf.nations_league: espn 0 fixtures, 1142 pooled results (uefa.nations,fifa.friendly,fifa.worldq.uefa,fifa.worldq.conmebol,fifa.worldq.concacaf,fifa.worldq.afc,fifa.worldq.caf,uefa.euroq,concacaf.nations.league)
+[data] fifa.world_cup_qualifiers: espn 0 fixtures, 1142 pooled results (uefa.nations,fifa.friendly,fifa.worldq.uefa,fifa.worldq.conmebol,fifa.worldq.concacaf,fifa.worldq.afc,fifa.worldq.caf,uefa.euroq,concacaf.nations.league)
+[data] uefa.euro_qualifiers: espn 0 fixtures, 1142 pooled results (uefa.nations,fifa.friendly,fifa.worldq.uefa,fifa.worldq.conmebol,fifa.worldq.concacaf,fifa.worldq.afc,fifa.worldq.caf,uefa.euroq,concacaf.nations.league)
+[kalshi] fast mode: sweeping 253 series with markets at the last full discovery
+[kalshi] fast reconciliation: {"complete_relative_to_full": true, "evidence_level": "series"}
+[kalshi] {"run_id": "disc-20261017T222558Z-da3a33", "complete": true, "series_total": 15188, "series_by_ownership": {"not_soccer": 13616, "soccer": 1438, "ambiguous": 134}, "series_swept": 305, "series_ambiguous_unswept": 133, "series_skipped_fast_mode": 1134, "series_ambiguous_unswept_tickers": ["KX1HOMEGAME", "KX1STHOMEGAME", "KXACQUIREMANU", "KXAFCA", "KXAFCAC1H", "KXAFCAC1HBTTS", "KXAFCAC1HSPREAD", "KXAFCAC1HTOTAL", "KXAFCACADVANCE", "KXAFCACBTTS", "KXAFCACFTTS", "KXAFCACGAME", "KXAFCACMOV", "KXAFCACSCORE", "KXAFCACSPREAD", "KXAFCACTEAMTOTAL", "KXAFCACTOTAL", "KXAFCCL1H", "KXAFCCL1HBTTS", "KXAFCCL1HSPREAD", "KXAFCCL1HTOTAL", "KXAFCCLADVANCE", "KXAFCCLBTTS", "KXAFCCLFTTS", "KXAFCCLGAME", "KXAFCCLMOF", "KXAFCCLMOV", "KXAFCCLSCORE", "KXAFCCLSPREAD", "KXAFCCLTEAMTOTAL", "KXAFCCLTOTAL", "KXAFCON", "KXAFCON1H", "KXAFCON1HBTTS", "KXAFCON1HSPREAD", "KXAFCON1HTOTAL", "KXAFCONADVANCE", "KXAFCONBTTS", "KXAFCONFTTS", "KXAFCONGAME", "KXAFCONMOV", "KXAFCONSCORE", "KXAFCONSPREAD", "KXAFCONTEAMTOTAL", "KXAFCONTOTAL", "KXAFLGAME", "KXALEAGUE1H", "KXALEAGUE1HBTTS", "KXALEAGUE1HSPREAD", "KXALEAGUE1HTOTAL", "KXALEAGUEADVANCE", "KXALEAGUEBTTS", "KXALEAGUEGAME", "KXALEAGUESPREAD", "KXALEAGUETEAMTOTAL", "KXALEAGUETOTAL", "KXALLSVENSKANADVANCE", "KXALLSVENSKANBTTS", "KXALLSVENSKANGAME", "KXALLSVENSKANSPREAD", "KXALLSVENSKANTOTAL", "KXALMVP", "KXAPFDDHADVANCE", "KXARCHIVETEST", "KXARGNACBADVANCE", "KXARGPREMDIVADVANCE", "KXARGPREMDIVBTTS", "KXARGPREMDIVGAME", "KXARGPREMDIVSPREAD", "KXARGPREMDIVTOTAL", "KXARKCOACH", "KXARODGRETIRE", "KXARSENALCUPS", "KXASEANADVANCE", "KXASEANBTTS", "KXASEANGAME", "KXASEANSPREAD", "KXASEANTOTAL", "KXATLCOACH", "KXAUBCOACH", "KXBABYNAMEBOY", "KXBABYNAMEGIRL", "KXBALLERLEAGUE", "KXBALLERLEAGUEGAME", "KXBALOGUNPLAY", "KXBELGIANPLADVANCE", "KXBELGIANPLBTTS", "KXBELGIANPLGAME", "KXBELGIANPLSPREAD", "KXBELGIANPLTOTAL", "KXBOLPDIVADVANCE", "KXBOLPDIVGAME", "KXBRASILEIRO1H", "KXBRASILEIRO1HBTTS", "KXBRASILEIRO1HSPREAD", "KXBRASILEIRO1HTOTAL", "KXBRASILEIROADVANCE", "KXBRASILEIROBADVANCE", "KXBRASILEIROBTEAMTOTAL", "KXBRASILEIROC1H", "KXBRASILEIROC1HBTTS", "KXBRASILEIROC1HSPREAD", "KXBRASILEIROC1HTOTAL", "KXBRASILEIROCADVANCE", "KXBRASILEIROCTEAMTOTAL", "KXBRASILEIROFTTS", "KXBRASILEIROMOV", "KXBRASILEIRORELEGATION", "KXBRASILEIROSCORE", "KXBRASILEIROTEAMTOTAL", "KXBRASILEIROTOP", "KXBUNDESLIGA1H", "KXBUNDESLIGA1HBTTS", "KXBUNDESLIGA1HSCORE", "KXBUNDESLIGA1HSPREAD", "KXBUNDESLIGA1HTOTAL", "KXBUNDESLIGA2ADVANCE", "KXBUNDESLIGA2BTTS", "KXBUNDESLIGA2GAME", "KXBUNDESLIGA2H", "KXBUNDESLIGA2HBTTS", "KXBUNDESLIGA2HSPREAD", "KXBUNDESLIGA2HTOTAL", "KXBUNDESLIGA2SPREAD", "KXBUNDESLIGA2TOTAL", "KXBUNDESLIGAADVANCE", "KXBUNDESLIGABTTS", "KXBUNDESLIGACORNERS", "KXBUNDESLIGAFIRSTGOAL", "KXBUNDESLIGAFTTS", "KXBUNDESLIGAGOAL", "KXBUNDESLIGAMOV", "KXBUNDESLIGASCORE", "KXBUNDESLIGASPREAD", "KXBUNDESLIGATCORNERS", "KXBUNDESLIGATEAMTOTAL", "KXBUNDESLIGATOP4", "KXBUNDESLIGATOTAL", "KXCALCOACH", "KXCANIMAKETHIS", "KXCANPLADVANCE", "KXCANPLBTTS", "KXCANPLSPREAD", "KXCANPLTOTAL", "KXCCARCOACH", "KXCFLGAME", "KXCFLSPREAD", "KXCFLTOTAL", "KXCHLLDPADVANCE", "KXCHLLDPBTTS", "KXCHLLDPGAME", "KXCHLLDPSPREAD", "KXCHLLDPTOTAL", "KXCHNL1ADVANCE", "KXCHNL1BTTS", "KXCHNL1SPREAD", "KXCHNL1TOTAL", "KXCHNSLADVANCE", "KXCHNSLBTTS", "KXCHNSLGAME", "KXCHNSLSPREAD", "KXCHNSLTOTAL", "KXCLUBFBTTS", "KXCLUBFGAME", "KXCLUBFSPREAD", "KXCLUBFTOTAL", "KXCLUBWC", "KXCLUBWC1H", "KXCLUBWC1HBTTS", "KXCLUBWC1HSCORE", "KXCLUBWC1HSPREAD", "KXCLUBWC1HTOTAL", "KXCLUBWC2H", "KXCLUBWC2HBTTS", "KXCLUBWC2HSPREAD", "KXCLUBWC2HTOTAL", "KXCLUBWCADVANCE", "KXCLUBWCBTTS", "KXCLUBWCFTTS", "KXCLUBWCGA", "KXCLUBWCGAME", "KXCLUBWCGB", "KXCLUBWCGC", "KXCLUBWCGD", "KXCLUBWCGE", "KXCLUBWCGF", "KXCLUBWCGG", "KXCLUBWCGH", "KXCLUBWCMOF", "KXCLUBWCMOV", "KXCLUBWCSCORE", "KXCLUBWCSPREAD", "KXCLUBWCTEAMTOTAL", "KXCLUBWCTOTAL", "KXCOACHONDATE", "KXCOACHOUTOLEMISS", "KXCOACHOUTUNC", "KXCOLLEGEGAMEDAY", "KXCOLLEGEGAMEDAYGUEST", "KXCONCACAFCCUP1H"], "events_discovered": 17695, "contracts_discovered": 6972, "contracts_duplicate_seen": 0, "contracts_by_family": {"btts": 148, "competition_head_to_head": 20, "competition_host": 26, "competition_last_place": 132, "competition_points_margin": 30, "competition_promotion": 24, "competition_qualification": 138, "competition_relegation": 96, "competition_team_points": 384, "competition_top_n": 306, "competition_trophies": 32, "competition_winner": 1061, "exact_score": 588, "first_half_btts": 23, "first_half_exact_score": 285, "first_half_handicap": 46, "first_half_result": 69, "first_half_total": 69, "handicap": 559, "match_result_3way": 1101, "player_award": 168, "player_season_leader": 247, "season_player_total": 53, "second_half_result": 60, "soccer_special": 189, "team_total": 121, "total_goals": 834, "tournament_advancement": 160, "unknown": 3}, "contracts_by_competition_code": {"?": 402, "APFDDH": 47, "ARGNACB": 143, "ARGPREMDIV": 30, "AUTBUNDES": 42, "BELGIANPL": 18, "BRASILEIRO": 314, "BRASILEIROB": 144, "BUNDESLIGA": 222, "BUNDESLIGAW": 45, "CHLLDP": 16, "CHNL1": 9, "CHNSL": 16, "CONCACAFGC": 23, "CONCACAFNL": 41, "CONMEBOLLIB": 4, "CONMEBOLSUD": 4, "COPAAMERICA": 25, "COPADELREY": 23, "COPADOBRASIL": 16, "DENSUPERLIGA": 12, "DFBPOKAL": 21, "DIMAYOR": 80, "ECULP": 16, "EFL": 37, "EFLCHAMPIONSHIP": 24, "EFLL1": 193, "EKSTRAKLASA": 18, "EPL": 409, "EREDIVISIE": 18, "FA": 24, "FRAPLW": 14, "HUNNB1": 28, "INDSL": 31, "ISRNL": 9, "KLEAGUE": 12, "KNVB": 21, "LALIGA": 270, "LALIGA2": 73, "LIGAEXP": 27, "LIGAF": 56, "LIGAMX": 722, "LIGAMX2H": 36, "LIGAPORTUGAL": 18, "LIGUE1": 232, "MLS": 1244, "MLS2H": 84, "MLSEAST": 15, "MLSWEST": 15, "NWSL": 89, "PERLIGA1": 36, "PREMIERLEAGUE": 20, "QSTARS": 22, "ROML1": 34, "SAPSL": 14, "SERIEA": 273, "SOCCER": 2, "SUPERLIG": 18, "SVK2L": 17, "SVKCUP": 6, "TACAPORT": 20, "THAIL1": 16, "UCL": 354, "UCLLEAGUE": 16, "UECL": 36, "UEFAEURO": 60, "UEFANL": 48, "UEFANLGROUP": 16, "UEL": 36, "URYPD": 61, "USL": 217, "VENFUTVE": 14, "WC": 172, "WCW": 32}, "contracts_unknown_family": 3, "request_count": 691, "retry_count": 0, "milestones_note": "milestones type=soccer_tournament_multi_leg: 19928 rows, complete=True"}
+[reference] {"groups": 415, "unmapped_fixture_groups": 175, "incomplete_groups": 0, "snapshots": 864, "provider_notes": ["169 rows, 86 skipped (unmapped division/team)", "skipped_by_division={'D2': 9, 'E2': 12, 'E3': 12, 'F2': 9, 'G1': 6, 'I2': 10, 'N1': 1, 'SC1': 5, 'SC2': 5, 'SC3': 5, 'SP2': 11, 'T1': 1}", "unknown_teams={'N1:Nijmegen': 1, 'T1:Goztep': 1}", "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"], "written": 0}
+[timings] {"assemble_fit_s": 2.41, "discovery_s": 0.0, "simulate_price_archive_s": 25.05, "total_s": 27.66, "mode": "fast+prefetched_sweep"}
+[board] 5 fixtures written by this run; 52 on the board -> work/runs/latest.model_board.v1.json
+[slate] {"slate_id": "slate-20261017T222926Z-ef9563", "mode": "model_refresh_and_reprice", "fixtures": 51, "contract_sides": 3412, "simulations_run": 5, "odds_api_calls": 0, "reprice_runtime_s": 0.968, "price_changes_vs_previous": 42}
+# RUN SOCCER — 2026-10-17
+Run `run-20261017T222901Z-bf3ac7` generated 2026-10-17T22:29:26.235206Z · filters: {'leagues': [], 'games': ['fx:usa.mls:2026:usa.atlanta_united:usa.inter_miami', 'fx:usa.mls:2026:usa.new_england:usa.chicago_fire', 'fx:usa.mls:2026:usa.ny_red_bulls:usa.toronto', 'fx:usa.mls:2026:usa.nycfc:usa.lafc', 'fx:usa.mls:2026:usa.orlando_city:usa.dc_united'], 'window_hours': 3, 'confirmed_lineups_only': False}
+
+## Coverage
+- contracts discovered: **6972** (discovery complete: True)
+- contracts evaluated: 385 · excluded mechanically: 3518 · unsupported/unknown: 3069
+- **unaccounted contracts: 0**
+- by disposition: priced=385, unknown_family=3, unsupported_family=3066, unmapped_event=1397, unmapped_team=49, no_fixture=180, filtered_by_operator=1892
+- competitions discovered: APFDDH, ARGNACB, ARGPREMDIV, AUTBUNDES, BELGIANPL, BRASILEIRO, BRASILEIROB, BUNDESLIGA, BUNDESLIGAW, CHLLDP, CHNL1, CHNSL, CONCACAFGC, CONCACAFNL, CONMEBOLLIB, CONMEBOLSUD, COPAAMERICA, COPADELREY, COPADOBRASIL, DENSUPERLIGA, DFBPOKAL, DIMAYOR, ECULP, EFL, EFLCHAMPIONSHIP, EFLL1, EKSTRAKLASA, EPL, EREDIVISIE, FA, FRAPLW, HUNNB1, INDSL, ISRNL, KLEAGUE, KNVB, LALIGA, LALIGA2, LIGAEXP, LIGAF, LIGAMX, LIGAMX2H, LIGAPORTUGAL, LIGUE1, MLS, MLS2H, MLSEAST, MLSWEST, NWSL, PERLIGA1, PREMIERLEAGUE, QSTARS, ROML1, SAPSL, SERIEA, SOCCER, SUPERLIG, SVK2L, SVKCUP, TACAPORT, THAIL1, UCL, UCLLEAGUE, UECL, UEFAEURO, UEFANL, UEFANLGROUP, UEL, URYPD, USL, VENFUTVE, WC, WCW
+
+## Freshness
+- as_of: 2026-10-17T22:29:01.269088Z; market_observed_at: 2026-10-17T22:25:58.358578Z; fixtures_observed_at: 2026-10-17T18:34:20.389030Z; results_observed_at: 2026-10-17T18:16:04.676147Z; model_fitted_at: 2026-10-17T22:29:00.151766Z; temporal_guard: {'decision_time': '2026-10-17T22:29:01.269088Z', 'checked': {'fixtures': 1, 'market_snapshots': 2, 'reference_odds': 1, 'results': 15}, 'latest_observed_at': {'fixtures': '2026-10-17T18:34:20.389030Z', 'market_snapshots': '2026-10-17T22:28:51.927469Z', 'reference_odds': '2026-10-17T18:16:11.726416Z', 'results': '2026-10-17T22:29:01.071887Z'}, 'violations': [], 'ok': True}
+- no freshness violations
+
+## Recommendations
+**NO BETS** — no contract met the robust-edge bar under an authority level that permits recommendations.
+
+## Shadow / research-only expressions (56)
+These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW. They are NOT recommendations.
+- New York City FC vs Los Angeles FC · away team total over 1.5 · NO @ 0.5500 · fair 79.4% [68.6%–88.6%] · edge +22.6% · P(+) 99% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT17NYCLAFC-LAFC2`
+- New York City FC vs Los Angeles FC · away team total over 0.5 · NO @ 0.2100 · fair 44.3% [32.1%–56.2%] · edge +22.2% · P(+) 99% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT17NYCLAFC-LAFC1`
+- New York Red Bulls vs Toronto FC · Total goals over 3.5 · NO @ 0.4900 · fair 73.3% [58.1%–86.4%] · edge +22.5% · P(+) 96% · RESEARCH_ONLY · `KXMLSTOTAL-26OCT17NYRBTOR-4`
+- Atlanta United vs Inter Miami · away team total over 1.5 · NO @ 0.3400 · fair 56.9% [42.1%–70.9%] · edge +21.3% · P(+) 96% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT17ATLMIA-MIA2`
+- New York City FC vs Los Angeles FC · Total goals over 2.5 · NO @ 0.4500 · fair 67.5% [53.7%–80.1%] · edge +20.7% · P(+) 97% · RESEARCH_ONLY · `KXMLSTOTAL-26OCT17NYCLAFC-3`
+- Atlanta United vs Inter Miami · away team total over 2.5 · NO @ 0.6100 · fair 80.8% [69.2%–90.6%] · edge +18.1% · P(+) 96% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT17ATLMIA-MIA3`
+- New York City FC vs Los Angeles FC · away team total over 2.5 · NO @ 0.8100 · fair 94.2% [89.3%–97.9%] · edge +12.1% · P(+) 99% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT17NYCLAFC-LAFC3`
+- New York Red Bulls vs Toronto FC · btts · NO @ 0.3200 · fair 51.2% [38.2%–63.1%] · edge +17.7% · P(+) 97% · RESEARCH_ONLY · `KXMLSBTTS-26OCT17NYRBTOR-BTTS`
+- New York Red Bulls vs Toronto FC · First-half total goals over 1.5 · NO @ 0.5100 · fair 68.4% [54.8%–80.2%] · edge +15.7% · P(+) 94% · RESEARCH_ONLY · `KXMLS1HTOTAL-26OCT17NYRBTOR-2`
+- Atlanta United vs Inter Miami · Total goals over 3.5 · NO @ 0.4500 · fair 64.3% [48.6%–78.7%] · edge +17.6% · P(+) 92% · RESEARCH_ONLY · `KXMLSTOTAL-26OCT17ATLMIA-4`
+- New England Revolution vs Chicago Fire · away team total over 1.5 · NO @ 0.5300 · fair 69.7% [55.6%–81.6%] · edge +15.0% · P(+) 91% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT17NECHI-CHI2`
+- Atlanta United vs Inter Miami · away team total over 0.5 · NO @ 0.1000 · fair 23.9% [14.3%–34.2%] · edge +13.3% · P(+) 97% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT17ATLMIA-MIA1`
+- New England Revolution vs Chicago Fire · away team total over 0.5 · NO @ 0.2000 · fair 34.2% [22.2%–45.8%] · edge +13.1% · P(+) 93% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT17NECHI-CHI1`
+- New York City FC vs Los Angeles FC · First-half total goals over 1.5 · NO @ 0.6400 · fair 77.6% [66.8%–87.2%] · edge +12.0% · P(+) 93% · RESEARCH_ONLY · `KXMLS1HTOTAL-26OCT17NYCLAFC-2`
+- Atlanta United vs Inter Miami · away wins by more than 1.5 · NO @ 0.6900 · fair 81.8% [71.2%–90.9%] · edge +11.3% · P(+) 92% · RESEARCH_ONLY · `KXMLSSPREAD-26OCT17ATLMIA-MIA2`
+- New England Revolution vs Chicago Fire · away team total over 2.5 · NO @ 0.7900 · fair 89.2% [80.8%–95.5%] · edge +9.1% · P(+) 91% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT17NECHI-CHI3`
+- New York Red Bulls vs Toronto FC · First-half total goals over 0.5 · NO @ 0.1900 · fair 32.9% [21.8%–44.2%] · edge +12.8% · P(+) 92% · RESEARCH_ONLY · `KXMLS1HTOTAL-26OCT17NYRBTOR-1`
+- New York Red Bulls vs Toronto FC · away team total over 1.5 · NO @ 0.5900 · fair 73.2% [59.8%–85.0%] · edge +12.6% · P(+) 89% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT17NYRBTOR-TOR2`
+- New York City FC vs Los Angeles FC · First-half total goals over 0.5 · NO @ 0.2800 · fair 42.1% [29.8%–54.2%] · edge +12.6% · P(+) 91% · RESEARCH_ONLY · `KXMLS1HTOTAL-26OCT17NYCLAFC-1`
+- New York Red Bulls vs Toronto FC · home team total over 0.5 · NO @ 0.1000 · fair 22.3% [11.1%–33.5%] · edge +11.7% · P(+) 91% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT17NYRBTOR-NYRB1`
+- Atlanta United vs Inter Miami · First-half total goals over 1.5 · NO @ 0.4700 · fair 61.8% [48.7%–74.2%] · edge +13.0% · P(+) 90% · RESEARCH_ONLY · `KXMLS1HTOTAL-26OCT17ATLMIA-2`
+- New York Red Bulls vs Toronto FC · First-half total goals over 2.5 · NO @ 0.7900 · fair 88.7% [80.8%–96.1%] · edge +8.5% · P(+) 90% · RESEARCH_ONLY · `KXMLS1HTOTAL-26OCT17NYRBTOR-3`
+- Atlanta United vs Inter Miami · away wins by more than 2.5 · NO @ 0.8500 · fair 92.6% [87.0%–97.3%] · edge +6.7% · P(+) 92% · RESEARCH_ONLY · `KXMLSSPREAD-26OCT17ATLMIA-MIA3`
+- New York City FC vs Los Angeles FC · Result: away · NO @ 0.6100 · fair 73.7% [62.0%–84.5%] · edge +11.0% · P(+) 88% · RESEARCH_ONLY · `KXMLSGAME-26OCT17NYCLAFC-LAFC`
+- New York City FC vs Los Angeles FC · Total goals over 0.5 · NO @ 0.0600 · fair 14.8% [8.1%–22.1%] · edge +8.4% · P(+) 97% · RESEARCH_ONLY · `KXMLSTOTAL-26OCT17NYCLAFC-1`
+- New York City FC vs Los Angeles FC · Exact score 1-0 (home-away) · YES @ 0.0800 · fair 15.2% [10.7%–19.8%] · edge +6.7% · P(+) 97% · RESEARCH_ONLY · `KXMLSSCORE-26OCT17NYCLAFC-NYC1LAFC0`
+- New York City FC vs Los Angeles FC · First-half result: away · NO @ 0.6900 · fair 80.0% [70.8%–88.2%] · edge +9.5% · P(+) 92% · RESEARCH_ONLY · `KXMLS1H-26OCT17NYCLAFC-LAFC`
+- Atlanta United vs Inter Miami · First-half result: away · NO @ 0.5900 · fair 70.4% [58.8%–81.2%] · edge +9.7% · P(+) 87% · RESEARCH_ONLY · `KXMLS1H-26OCT17ATLMIA-MIA`
+- Orlando City vs D.C. United · btts · NO @ 0.3000 · fair 42.5% [30.7%–54.0%] · edge +11.0% · P(+) 88% · RESEARCH_ONLY · `KXMLSBTTS-26OCT17ORLDCU-BTTS`
+- Atlanta United vs Inter Miami · First half: away wins by more than 1.5 · NO @ 0.8400 · fair 91.5% [85.9%–97.1%] · edge +6.6% · P(+) 94% · RESEARCH_ONLY · `KXMLS1HSPREAD-26OCT17ATLMIA-MIA2`
+- Atlanta United vs Inter Miami · First-half total goals over 0.5 · NO @ 0.1700 · fair 27.2% [17.8%–37.2%] · edge +9.3% · P(+) 90% · RESEARCH_ONLY · `KXMLS1HTOTAL-26OCT17ATLMIA-1`
+- New York Red Bulls vs Toronto FC · away team total over 2.5 · NO @ 0.8400 · fair 91.1% [83.8%–96.8%] · edge +6.2% · P(+) 87% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT17NYRBTOR-TOR3`
+- New York City FC vs Los Angeles FC · First half: away wins by more than 1.5 · NO @ 0.9200 · fair 96.4% [92.9%–99.1%] · edge +3.9% · P(+) 92% · RESEARCH_ONLY · `KXMLS1HSPREAD-26OCT17NYCLAFC-LAFC2`
+- New York City FC vs Los Angeles FC · Total goals over 5.5 · NO @ 0.9400 · fair 97.9% [95.6%–99.5%] · edge +3.5% · P(+) 95% · RESEARCH_ONLY · `KXMLSTOTAL-26OCT17NYCLAFC-6`
+- Orlando City vs D.C. United · away team total over 1.5 · NO @ 0.5900 · fair 71.0% [58.1%–83.1%] · edge +10.4% · P(+) 86% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT17ORLDCU-DCU2`
+- New York City FC vs Los Angeles FC · First-half total goals over 2.5 · NO @ 0.8800 · fair 93.7% [87.9%–98.1%] · edge +5.0% · P(+) 90% · RESEARCH_ONLY · `KXMLS1HTOTAL-26OCT17NYCLAFC-3`
+- New York Red Bulls vs Toronto FC · Exact score 1-0 (home-away) · YES @ 0.0600 · fair 11.7% [6.7%–16.5%] · edge +5.3% · P(+) 92% · RESEARCH_ONLY · `KXMLSSCORE-26OCT17NYRBTOR-NYRB1TOR0`
+- New York Red Bulls vs Toronto FC · Total goals over 0.5 · NO @ 0.0300 · fair 8.8% [3.8%–14.5%] · edge +5.6% · P(+) 94% · RESEARCH_ONLY · `KXMLSTOTAL-26OCT17NYRBTOR-1`
+- Atlanta United vs Inter Miami · First-half total goals over 2.5 · NO @ 0.7600 · fair 84.6% [75.9%–92.1%] · edge +7.3% · P(+) 85% · RESEARCH_ONLY · `KXMLS1HTOTAL-26OCT17ATLMIA-3`
+- New England Revolution vs Chicago Fire · away wins by more than 1.5 · NO @ 0.8400 · fair 90.4% [83.3%–95.8%] · edge +5.5% · P(+) 87% · RESEARCH_ONLY · `KXMLSSPREAD-26OCT17NECHI-CHI2`
+
+## Expressions removed by the reducer (34)
+- `KXMLS2H-26OCT17NYCLAFC-LAFC` no: dominated by KXMLSGAME-26OCT17NYCLAFC-LAFC/no (corr +0.61)
+- `KXMLS1HBTTS-26OCT17NYCLAFC-BTTS` no: dominated by KXMLS1HTOTAL-26OCT17NYCLAFC-2/no (corr +0.69)
+- `KXMLS1HSCORE-26OCT17NYCLAFC-NYC1LAFC1` no: dominated by KXMLS1HTOTAL-26OCT17NYCLAFC-2/no (corr +0.53)
+- `KXMLS1HSCORE-26OCT17NYCLAFC-NYC0LAFC0` yes: dominated by KXMLS1HTOTAL-26OCT17NYCLAFC-1/no (corr +1.00)
+- `KXMLS1H-26OCT17NYCLAFC-TIE` yes: dominated by KXMLS1HTOTAL-26OCT17NYCLAFC-1/no (corr +0.85)
+- `KXMLSSPREAD-26OCT17NYCLAFC-LAFC3` no: dominated by KXMLSTEAMTOTAL-26OCT17NYCLAFC-LAFC3/no (corr +0.64)
+- `KXMLSSPREAD-26OCT17NYCLAFC-LAFC2` no: dominated by KXMLSTEAMTOTAL-26OCT17NYCLAFC-LAFC2/no (corr +0.62)
+- `KXMLSBTTS-26OCT17NYCLAFC-BTTS` no: dominated by KXMLSTEAMTOTAL-26OCT17NYCLAFC-LAFC1/no (corr +0.70)
+- `KXMLSTOTAL-26OCT17NYCLAFC-2` no: dominated by KXMLSTEAMTOTAL-26OCT17NYCLAFC-LAFC1/no (corr +0.48)
+- `KXMLSSCORE-26OCT17NYCLAFC-NYC0LAFC0` yes: dominated by KXMLSTOTAL-26OCT17NYCLAFC-1/no (corr +1.00)
+- `KXMLSTOTAL-26OCT17NYCLAFC-4` no: redundant with KXMLSTOTAL-26OCT17NYCLAFC-3/no (corr +0.60); best expression kept
+- `KXMLSTOTAL-26OCT17NYCLAFC-5` no: dominated by KXMLSTOTAL-26OCT17NYCLAFC-3/no (corr +0.36)
+- `KXMLSBTTS-26OCT17NECHI-BTTS` no: dominated by KXMLSTEAMTOTAL-26OCT17NECHI-CHI1/no (corr +0.78)
+- `KXMLS1HSCORE-26OCT17ATLMIA-ATL0MIA0` yes: dominated by KXMLS1HTOTAL-26OCT17ATLMIA-1/no (corr +1.00)
+- `KXMLS1HBTTS-26OCT17ATLMIA-BTTS` no: redundant with KXMLS1HTOTAL-26OCT17ATLMIA-2/no (corr +0.70); best expression kept
+- `KXMLSGAME-26OCT17ATLMIA-MIA` no: redundant with KXMLSSPREAD-26OCT17ATLMIA-MIA2/no (corr +0.62); best expression kept
+- `KXMLSBTTS-26OCT17ATLMIA-BTTS` no: dominated by KXMLSTEAMTOTAL-26OCT17ATLMIA-MIA1/no (corr +0.66)
+- `KXMLSTOTAL-26OCT17ATLMIA-2` no: dominated by KXMLSTEAMTOTAL-26OCT17ATLMIA-MIA1/no (corr +0.48)
+- `KXMLSTOTAL-26OCT17ATLMIA-1` no: redundant with KXMLSSCORE-26OCT17ATLMIA-ATL0MIA0/yes (corr +1.00); best expression kept
+- `KXMLSTOTAL-26OCT17ATLMIA-3` no: redundant with KXMLSTOTAL-26OCT17ATLMIA-4/no (corr +0.65); best expression kept
+- `KXMLSTOTAL-26OCT17ATLMIA-5` no: dominated by KXMLSTOTAL-26OCT17ATLMIA-4/no (corr +0.66)
+- `KXMLSTOTAL-26OCT17ATLMIA-6` no: dominated by KXMLSTOTAL-26OCT17ATLMIA-4/no (corr +0.44)
+- `KXMLS1HSCORE-26OCT17NYRBTOR-NYRB0TOR0` yes: dominated by KXMLS1HTOTAL-26OCT17NYRBTOR-1/no (corr +1.00)
+- `KXMLS1HBTTS-26OCT17NYRBTOR-BTTS` no: dominated by KXMLS1HTOTAL-26OCT17NYRBTOR-2/no (corr +0.68)
+- `KXMLSTOTAL-26OCT17NYRBTOR-3` no: redundant with KXMLSTOTAL-26OCT17NYRBTOR-4/no (corr +0.64); best expression kept
+- `KXMLSTOTAL-26OCT17NYRBTOR-5` no: dominated by KXMLSTOTAL-26OCT17NYRBTOR-4/no (corr +0.64)
+- `KXMLSTEAMTOTAL-26OCT17NYRBTOR-NYRB2` no: dominated by KXMLSTOTAL-26OCT17NYRBTOR-4/no (corr +0.50)
+- `KXMLSTEAMTOTAL-26OCT17NYRBTOR-NYRB3` no: dominated by KXMLSTOTAL-26OCT17NYRBTOR-4/no (corr +0.60)
+- `KXMLSTOTAL-26OCT17NYRBTOR-6` no: dominated by KXMLSTOTAL-26OCT17NYRBTOR-4/no (corr +0.40)
+- `KXMLSSPREAD-26OCT17NYRBTOR-NYRB3` no: dominated by KXMLSTOTAL-26OCT17NYRBTOR-4/no (corr +0.27)
+- `KXMLSTOTAL-26OCT17NYRBTOR-2` no: dominated by KXMLSBTTS-26OCT17NYRBTOR-BTTS/no (corr +0.61)
+- `KXMLSTEAMTOTAL-26OCT17NYRBTOR-TOR1` no: dominated by KXMLSBTTS-26OCT17NYRBTOR-BTTS/no (corr +0.76)
+- `KXMLSSCORE-26OCT17NYRBTOR-NYRB0TOR0` yes: dominated by KXMLSTOTAL-26OCT17NYRBTOR-1/no (corr +1.00)
+- `KXMLSTEAMTOTAL-26OCT17ORLDCU-DCU1` no: dominated by KXMLSBTTS-26OCT17ORLDCU-BTTS/no (corr +0.86)
+
+## Events
+- Orlando City vs D.C. United (Major League Soccer) 2026-10-17T23:30:00Z · markets 77/77 evaluated · lineups unknown · xG 2.34-1.07 · 1X2 64%/19%/17%
+- New York Red Bulls vs Toronto FC (Major League Soccer) 2026-10-17T23:30:00Z · markets 77/77 evaluated · lineups unknown · xG 1.59-1.01 · 1X2 50%/26%/24%
+- New York City FC vs Los Angeles FC (Major League Soccer) 2026-10-17T23:30:00Z · markets 77/77 evaluated · lineups unknown · xG 1.17-0.84 · 1X2 43%/31%/26%
+- New England Revolution vs Chicago Fire (Major League Soccer) 2026-10-17T23:30:00Z · markets 77/77 evaluated · lineups unknown · xG 1.79-1.11 · 1X2 52%/24%/24%
+- Atlanta United vs Inter Miami (Major League Soccer) 2026-10-17T23:30:00Z · markets 77/77 evaluated · lineups unknown · xG 1.53-1.49 · 1X2 39%/24%/37%
