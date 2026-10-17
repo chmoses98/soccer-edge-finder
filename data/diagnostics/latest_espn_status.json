@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-16T21:26:18.976596+00:00",
-  "events": 590,
-  "events_skipped_unmapped": 287,
-  "fixtures_mapped": 303,
+  "as_of": "2026-10-17T00:34:20.797208+00:00",
+  "events": 753,
+  "events_skipped_unmapped": 386,
+  "fixtures_mapped": 367,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=88"
+      "weather_stopped:consecutive_failures:skipped=73"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 148,
+    "captured": 150,
     "events": 150,
     "failures": [],
-    "published_post": 8,
+    "published_post": 5,
     "published_pre_kickoff": 1,
-    "unchanged": 2,
-    "unpublished": 141
+    "unchanged": 0,
+    "unpublished": 144
   },
   "map_proposals": {
     "den.1": {
@@ -156,7 +156,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 7,
+  "results_appended": 1,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -210,17 +210,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 16,
-    "events": 107,
+    "captured": 12,
+    "events": 88,
     "failures": [
-      "401841268: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-22.9064&longitude=-43.1822&hourly=",
-      "401841270: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Belo%20Horizonte&count=5&langua",
-      "401841271: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Curitiba&count=5&language=en&fo"
+      "401841617: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-34.5939&longitude=-60.9464&hourly=",
+      "401841625: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-34.6131&longitude=-58.3772&hourly=",
+      "401892161: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Auckland&count=5&language=en&fo"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 88,
+    "skipped": 73,
     "stopped": "consecutive_failures"
   }
 }
