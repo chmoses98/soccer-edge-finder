@@ -54,7 +54,1203 @@
   "delivered_total": 1394,
   "delivery_rate_total": 0.8884639898024219,
   "fixtures_tracked": 320,
-  "generated_at": "2026-10-17T18:03:21Z",
+  "generated_at": "2026-10-17T18:09:16Z",
+  "last_tick": {
+    "batches": 33,
+    "summary": [
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "model_refresh:ok:fixtures=42:sim=0:board=38:why=entered_lookahead_unmodelled",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "ks-20261017T124021Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3910:sim=0"
+        ],
+        "batch_id": "kd-20261017T124534Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ita.serie_a:2026-27:ita.venezia:ita.napoli:matchday_7",
+            15,
+            14.42
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.venezia:ita.napoli",
+            15,
+            14.42
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=21",
+          "lineups:ok:2",
+          "model_refresh:ok:fixtures=3:sim=0:cache=3:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261017T125500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ita.serie_a:2026-27:ita.venezia:ita.napoli:matchday_7",
+            5,
+            5.0
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.venezia:ita.napoli",
+            5,
+            5.0
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.man_city:eng.ipswich:matchday_7",
+            60,
+            65.0
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.fulham:eng.hull:matchday_7",
+            60,
+            65.0
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.brentford:eng.liverpool:matchday_7",
+            60,
+            65.0
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.brentford:eng.liverpool",
+            60,
+            65.0
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.fulham:eng.hull",
+            60,
+            65.0
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.man_city:eng.ipswich",
+            60,
+            65.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3904:sim=0"
+        ],
+        "batch_id": "kd-20261017T130006Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ger.bundesliga:2026-27:ger.union_berlin:ger.dortmund:matchday_6",
+            30,
+            29.89
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.werder_bremen:ger.paderborn:matchday_6",
+            30,
+            29.89
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.elversberg:ger.augsburg:matchday_6",
+            30,
+            29.89
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.schalke:ger.mainz:matchday_6",
+            30,
+            29.89
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.hamburg:ger.stuttgart:matchday_6",
+            30,
+            29.89
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.union_berlin:ger.dortmund",
+            30,
+            29.89
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.hamburg:ger.stuttgart",
+            30,
+            29.89
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.schalke:ger.mainz",
+            30,
+            29.89
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.elversberg:ger.augsburg",
+            30,
+            29.89
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.werder_bremen:ger.paderborn",
+            30,
+            29.89
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3904:sim=0"
+        ],
+        "batch_id": "kd-20261017T130544Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:fra.ligue_1:2026-27:fra.strasbourg:fra.psg:matchday_7",
+            120,
+            129.25
+          ],
+          [
+            "fx:fra.ligue_1:2026-27:fra.strasbourg:fra.psg",
+            120,
+            129.25
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:ok:fixtures=1:sim=0:cache=1:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261017T131041Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:esp.la_liga:2026-27:esp.villarreal:esp.elche:matchday_9",
+            60,
+            64.31
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.villarreal:esp.elche",
+            60,
+            64.31
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=35",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3904:sim=0"
+        ],
+        "batch_id": "kd-20261017T131553Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ger.bundesliga:2026-27:ger.union_berlin:ger.dortmund:matchday_6",
+            15,
+            14.1
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.werder_bremen:ger.paderborn:matchday_6",
+            15,
+            14.1
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.elversberg:ger.augsburg:matchday_6",
+            15,
+            14.1
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.schalke:ger.mainz:matchday_6",
+            15,
+            14.1
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.hamburg:ger.stuttgart:matchday_6",
+            15,
+            14.1
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.union_berlin:ger.dortmund",
+            15,
+            14.1
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.hamburg:ger.stuttgart",
+            15,
+            14.1
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.schalke:ger.mainz",
+            15,
+            14.1
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.elversberg:ger.augsburg",
+            15,
+            14.1
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.werder_bremen:ger.paderborn",
+            15,
+            14.1
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3904:sim=0"
+        ],
+        "batch_id": "kd-20261017T132500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ger.bundesliga:2026-27:ger.union_berlin:ger.dortmund:matchday_6",
+            5,
+            5.0
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.werder_bremen:ger.paderborn:matchday_6",
+            5,
+            5.0
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.elversberg:ger.augsburg:matchday_6",
+            5,
+            5.0
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.schalke:ger.mainz:matchday_6",
+            5,
+            5.0
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.hamburg:ger.stuttgart:matchday_6",
+            5,
+            5.0
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.union_berlin:ger.dortmund",
+            5,
+            5.0
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.hamburg:ger.stuttgart",
+            5,
+            5.0
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.schalke:ger.mainz",
+            5,
+            5.0
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.elversberg:ger.augsburg",
+            5,
+            5.0
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.werder_bremen:ger.paderborn",
+            5,
+            5.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3874:sim=0"
+        ],
+        "batch_id": "kd-20261017T133000Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:eng.premier_league:2026-27:eng.man_city:eng.ipswich:matchday_7",
+            30,
+            29.99
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.fulham:eng.hull:matchday_7",
+            30,
+            29.99
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.brentford:eng.liverpool:matchday_7",
+            30,
+            29.99
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.brentford:eng.liverpool",
+            30,
+            29.99
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.fulham:eng.hull",
+            30,
+            29.99
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.man_city:eng.ipswich",
+            30,
+            29.99
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=21",
+          "lineups:ok:2",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3874:sim=0"
+        ],
+        "batch_id": "kd-20261017T134502Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:eng.premier_league:2026-27:eng.man_city:eng.ipswich:matchday_7",
+            15,
+            14.96
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.fulham:eng.hull:matchday_7",
+            15,
+            14.96
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.brentford:eng.liverpool:matchday_7",
+            15,
+            14.96
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.brentford:eng.liverpool",
+            15,
+            14.96
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.fulham:eng.hull",
+            15,
+            14.96
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.man_city:eng.ipswich",
+            15,
+            14.96
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.villarreal:esp.elche:matchday_9",
+            30,
+            29.96
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.villarreal:esp.elche",
+            30,
+            29.96
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:2",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3874:sim=0"
+        ],
+        "batch_id": "kd-20261017T135015Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ita.serie_a:2026-27:ita.bologna:ita.inter:matchday_7",
+            120,
+            129.74
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.real_betis:esp.barcelona",
+            120,
+            129.74
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.bologna:ita.inter",
+            120,
+            129.74
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3874:sim=0"
+        ],
+        "batch_id": "kd-20261017T135530Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:eng.premier_league:2026-27:eng.man_city:eng.ipswich:matchday_7",
+            5,
+            4.5
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.fulham:eng.hull:matchday_7",
+            5,
+            4.5
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.brentford:eng.liverpool:matchday_7",
+            5,
+            4.5
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.brentford:eng.liverpool",
+            5,
+            4.5
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.fulham:eng.hull",
+            5,
+            4.5
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.man_city:eng.ipswich",
+            5,
+            4.5
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3856:sim=0"
+        ],
+        "batch_id": "kd-20261017T140046Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:esp.la_liga:2026-27:esp.villarreal:esp.elche:matchday_9",
+            15,
+            14.22
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.villarreal:esp.elche",
+            15,
+            14.22
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:2",
+          "model_refresh:ok:fixtures=1:sim=0:cache=1:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261017T141000Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:esp.la_liga:2026-27:esp.villarreal:esp.elche:matchday_9",
+            5,
+            5.0
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.villarreal:esp.elche",
+            5,
+            5.0
+          ],
+          [
+            "fx:fra.ligue_1:2026-27:fra.strasbourg:fra.psg:matchday_7",
+            60,
+            65.0
+          ],
+          [
+            "fx:fra.ligue_1:2026-27:fra.strasbourg:fra.psg",
+            60,
+            65.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:3",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3850:sim=0"
+        ],
+        "batch_id": "kd-20261017T142504Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:eng.premier_league:2026-27:eng.newcastle:eng.aston_villa:matchday_7",
+            120,
+            124.92
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.real_betis:esp.barcelona:matchday_9",
+            120,
+            124.92
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.bayern:ger.leipzig:matchday_6",
+            120,
+            124.92
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.newcastle:eng.aston_villa",
+            120,
+            124.92
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.bayern:ger.leipzig",
+            120,
+            124.92
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=3850:sim=0"
+        ],
+        "batch_id": "ks-20261017T144004Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3850:sim=0"
+        ],
+        "batch_id": "kd-20261017T144500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:fra.ligue_1:2026-27:fra.strasbourg:fra.psg:matchday_7",
+            30,
+            30.0
+          ],
+          [
+            "fx:fra.ligue_1:2026-27:fra.strasbourg:fra.psg",
+            30,
+            30.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=6:paid=2:rows=14",
+          "lineups:ok:3",
+          "model_refresh:ok:fixtures=1:sim=0:cache=1:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261017T150001Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:fra.ligue_1:2026-27:fra.strasbourg:fra.psg:matchday_7",
+            15,
+            14.97
+          ],
+          [
+            "fx:fra.ligue_1:2026-27:fra.strasbourg:fra.psg",
+            15,
+            14.97
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.bologna:ita.inter:matchday_7",
+            60,
+            59.97
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.real_betis:esp.barcelona",
+            60,
+            59.97
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.bologna:ita.inter",
+            60,
+            59.97
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3850:sim=0"
+        ],
+        "batch_id": "kd-20261017T151000Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:fra.ligue_1:2026-27:fra.strasbourg:fra.psg:matchday_7",
+            5,
+            5.0
+          ],
+          [
+            "fx:fra.ligue_1:2026-27:fra.strasbourg:fra.psg",
+            5,
+            5.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=9:paid=3:rows=21",
+          "lineups:ok:3",
+          "model_refresh:ok:fixtures=3:sim=0:cache=3:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261017T152503Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:eng.premier_league:2026-27:eng.newcastle:eng.aston_villa:matchday_7",
+            60,
+            64.94
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.real_betis:esp.barcelona:matchday_9",
+            60,
+            64.94
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.bayern:ger.leipzig:matchday_6",
+            60,
+            64.94
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.newcastle:eng.aston_villa",
+            60,
+            64.94
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.bayern:ger.leipzig",
+            60,
+            64.94
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:2",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3844:sim=0"
+        ],
+        "batch_id": "kd-20261017T153018Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ita.serie_a:2026-27:ita.bologna:ita.inter:matchday_7",
+            30,
+            29.69
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.real_betis:esp.barcelona",
+            30,
+            29.69
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.bologna:ita.inter",
+            30,
+            29.69
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:2",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3844:sim=0"
+        ],
+        "batch_id": "kd-20261017T154500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ita.serie_a:2026-27:ita.bologna:ita.inter:matchday_7",
+            15,
+            15.0
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.real_betis:esp.barcelona",
+            15,
+            15.0
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.bologna:ita.inter",
+            15,
+            15.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3844:sim=0"
+        ],
+        "batch_id": "kd-20261017T155044Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.banfield:arg.argentinos_juniors",
+            120,
+            129.26
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3844:sim=0"
+        ],
+        "batch_id": "kd-20261017T155547Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ita.serie_a:2026-27:ita.bologna:ita.inter:matchday_7",
+            5,
+            4.2
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.bologna:ita.inter",
+            5,
+            4.2
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:3",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3838:sim=0"
+        ],
+        "batch_id": "kd-20261017T160042Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:eng.premier_league:2026-27:eng.newcastle:eng.aston_villa:matchday_7",
+            30,
+            29.29
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.real_betis:esp.barcelona:matchday_9",
+            30,
+            29.29
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.bayern:ger.leipzig:matchday_6",
+            30,
+            29.29
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.newcastle:eng.aston_villa",
+            30,
+            29.29
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.bayern:ger.leipzig",
+            30,
+            29.29
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=9:paid=3:rows=21",
+          "lineups:ok:3",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3838:sim=0"
+        ],
+        "batch_id": "kd-20261017T161500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:eng.premier_league:2026-27:eng.newcastle:eng.aston_villa:matchday_7",
+            15,
+            15.0
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.real_betis:esp.barcelona:matchday_9",
+            15,
+            15.0
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.bayern:ger.leipzig:matchday_6",
+            15,
+            15.0
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.newcastle:eng.aston_villa",
+            15,
+            15.0
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.bayern:ger.leipzig",
+            15,
+            15.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3838:sim=0"
+        ],
+        "batch_id": "kd-20261017T162040Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:usa.mls:2026:usa.philadelphia_union:usa.charlotte",
+            120,
+            129.33
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:3",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3838:sim=0"
+        ],
+        "batch_id": "kd-20261017T162651Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:eng.premier_league:2026-27:eng.newcastle:eng.aston_villa:matchday_7",
+            5,
+            3.14
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.real_betis:esp.barcelona:matchday_9",
+            5,
+            3.14
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.bayern:ger.leipzig:matchday_6",
+            5,
+            3.14
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.newcastle:eng.aston_villa",
+            5,
+            3.14
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.real_betis:esp.barcelona",
+            5,
+            3.14
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.bayern:ger.leipzig",
+            5,
+            3.14
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:2",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3820:sim=0"
+        ],
+        "batch_id": "kd-20261017T164151Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:fra.ligue_1:2026-27:fra.lille:fra.brest:matchday_7",
+            120,
+            123.14
+          ],
+          [
+            "fx:fra.ligue_1:2026-27:fra.troyes:fra.lens:matchday_7",
+            120,
+            123.14
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.roma:ita.genoa:matchday_7",
+            120,
+            123.14
+          ],
+          [
+            "fx:fra.ligue_1:2026-27:fra.lille:fra.brest",
+            120,
+            123.14
+          ],
+          [
+            "fx:fra.ligue_1:2026-27:fra.troyes:fra.lens",
+            120,
+            123.14
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.roma:ita.genoa",
+            120,
+            123.14
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:2",
+          "model_refresh:ok:fixtures=1:sim=0:cache=0:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261017T165651Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.banfield:arg.argentinos_juniors",
+            60,
+            63.14
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.valencia:esp.athletic_bilbao:matchday_9",
+            120,
+            123.14
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.valencia:esp.athletic_bilbao",
+            120,
+            123.14
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "model_refresh:ok:fixtures=1:sim=1:board=1:why=entered_lookahead_unmodelled",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "ks-20261017T171151Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:ok:fixtures=1:sim=1:cache=0:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261017T172651Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:usa.mls:2026:usa.philadelphia_union:usa.charlotte",
+            60,
+            63.14
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3826:sim=0"
+        ],
+        "batch_id": "kd-20261017T173212Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.banfield:arg.argentinos_juniors",
+            30,
+            27.79
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=9:paid=3:rows=28",
+          "lineups:ok:3",
+          "model_refresh:ok:fixtures=4:sim=0:cache=3:why=T-15:invalidated,T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261017T174500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.banfield:arg.argentinos_juniors",
+            15,
+            15.0
+          ],
+          [
+            "fx:fra.ligue_1:2026-27:fra.lille:fra.brest:matchday_7",
+            60,
+            60.0
+          ],
+          [
+            "fx:fra.ligue_1:2026-27:fra.troyes:fra.lens:matchday_7",
+            60,
+            60.0
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.roma:ita.genoa:matchday_7",
+            60,
+            60.0
+          ],
+          [
+            "fx:fra.ligue_1:2026-27:fra.lille:fra.brest",
+            60,
+            60.0
+          ],
+          [
+            "fx:fra.ligue_1:2026-27:fra.troyes:fra.lens",
+            60,
+            60.0
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.roma:ita.genoa",
+            60,
+            60.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:2",
+          "model_refresh:ok:fixtures=2:sim=0:cache=1:why=T-5:invalidated,T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261017T175500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.banfield:arg.argentinos_juniors",
+            5,
+            5.0
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.valencia:esp.athletic_bilbao:matchday_9",
+            60,
+            65.0
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.valencia:esp.athletic_bilbao",
+            60,
+            65.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:ok:fixtures=1:sim=1:cache=0:why=T-30:invalidated",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261017T180006Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:usa.mls:2026:usa.philadelphia_union:usa.charlotte",
+            30,
+            29.89
+          ]
+        ]
+      }
+    ]
+  },
   "missed_total": 175,
   "n_pending_fixtures": 91,
   "pending_fixtures": [
