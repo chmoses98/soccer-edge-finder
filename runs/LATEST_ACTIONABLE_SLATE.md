@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261017T221803Z-5326a8` · generated 2026-10-17T22:18:03.090162Z · trigger `kickoff_chain:T-15` · mode `model_refresh_and_reprice`
+slate `slate-20261017T222319Z-c8b8aa` · generated 2026-10-17T22:23:19.029184Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-17T22:15:00.026625Z (CURRENT at publish; CURRENT until 2026-10-17T22:35:00.026625Z, STALE after 2026-10-17T22:45:00.026625Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-17T22:20:17.386294Z (CURRENT at publish; CURRENT until 2026-10-17T22:40:17.386294Z, STALE after 2026-10-17T22:50:17.386294Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-17T22:18:01.577511Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.96s
+model board generated 2026-10-17T22:18:01.577511Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.96s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -15,21 +15,21 @@ model board generated 2026-10-17T22:18:01.577511Z · simulations this update: 1 
 | 2026-10-17T22:30:00Z | Athletico Paranaense vs Palmeiras (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
 | 2026-10-17T23:00:00Z | Santos Laguna vs Querétaro (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-17T23:07:00Z | Guadalajara vs Tigres UANL (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-17T23:30:00Z | Atlanta United vs Inter Miami (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-17T23:30:00Z | New England Revolution vs Chicago Fire (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-17T23:30:00Z | New York Red Bulls vs Toronto FC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-17T23:30:00Z | New York City FC vs Los Angeles FC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-17T23:30:00Z | Orlando City vs D.C. United (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-18T00:00:00Z | São Paulo vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-18T00:30:00Z | Austin FC vs Vancouver Whitecaps (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-18T00:30:00Z | Houston Dynamo vs FC Dallas (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-18T00:30:00Z | Sporting Kansas City vs Real Salt Lake (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-17T23:30:00Z | Atlanta United vs Inter Miami (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-17T23:30:00Z | New England Revolution vs Chicago Fire (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-17T23:30:00Z | New York Red Bulls vs Toronto FC (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-17T23:30:00Z | New York City FC vs Los Angeles FC (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-17T23:30:00Z | Orlando City vs D.C. United (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-18T00:00:00Z | São Paulo vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-18T00:30:00Z | Austin FC vs Vancouver Whitecaps (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-18T00:30:00Z | Houston Dynamo vs FC Dallas (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-18T00:30:00Z | Sporting Kansas City vs Real Salt Lake (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-18T01:00:00Z | León vs Club América (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-18T01:00:00Z | Toluca vs Atlético San Luis (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-18T02:30:00Z | LA Galaxy vs San Diego FC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-18T02:30:00Z | Portland Timbers vs Colorado Rapids (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-18T02:30:00Z | San Jose Earthquakes vs Nashville SC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-18T02:30:00Z | Seattle Sounders vs CF Montréal (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-18T02:30:00Z | LA Galaxy vs San Diego FC (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-18T02:30:00Z | Portland Timbers vs Colorado Rapids (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-18T02:30:00Z | San Jose Earthquakes vs Nashville SC (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-18T02:30:00Z | Seattle Sounders vs CF Montréal (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-18T03:10:00Z | Cruz Azul vs FC Juárez (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-18T10:30:00Z | Udinese vs Lecce (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T12:00:00Z | Osasuna vs Racing Santander (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -50,8 +50,8 @@ model board generated 2026-10-17T22:18:01.577511Z · simulations this update: 1 
 | 2026-10-18T17:45:00Z | Racing Club vs Independiente (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 9 | 0 |
 | 2026-10-18T18:45:00Z | Lyon vs Nice (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T18:45:00Z | Juventus vs Lazio (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-18T19:00:00Z | Fluminense vs Santos (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-18T19:00:00Z | Grêmio vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-18T19:00:00Z | Fluminense vs Santos (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-18T19:00:00Z | Grêmio vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-18T19:00:00Z | Real Madrid vs Sevilla (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T21:00:00Z | Estudiantes de La Plata vs San Lorenzo (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T21:00:00Z | FC Cincinnati vs Columbus Crew (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -107,7 +107,7 @@ model board generated 2026-10-17T22:18:01.577511Z · simulations this update: 1 
 | San Jose Earthquakes vs Nashville SC | btts | no | 0.3600 | 0.528 [0.404, 0.649] | +0.152 | +0.070 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Inter Miami | Total goals over 3.5 | no | 0.4600 | 0.643 [0.486, 0.787] | +0.166 | +0.069 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs CF Montréal | away team total over 0.5 | no | 0.3800 | 0.538 [0.420, 0.661] | +0.141 | +0.067 | 0.44 | - | * | RESEARCH_CANDIDATE |
-| Santos Laguna vs Querétaro | Total goals over 1.5 | no | 0.2000 | 0.376 [0.229, 0.521] | +0.165 | +0.065 | 0.26 | - |  | RESEARCH_CANDIDATE |
+| Atlanta United vs Inter Miami | Total goals over 2.5 | no | 0.2500 | 0.430 [0.278, 0.580] | +0.167 | +0.066 | 0.31 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
