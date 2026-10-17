@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261017T174807Z-09e7c4` · generated 2026-10-17T17:48:07.233965Z · trigger `kickoff_chain:T-60/T-15` · mode `model_refresh_and_reprice`
+slate `slate-20261017T175802Z-789656` · generated 2026-10-17T17:58:02.706791Z · trigger `kickoff_chain:T-60/T-5` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-17T17:45:00.030653Z (CURRENT at publish; CURRENT until 2026-10-17T18:05:00.030653Z, STALE after 2026-10-17T18:15:00.030653Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-17T17:55:00.030192Z (CURRENT at publish; CURRENT until 2026-10-17T18:15:00.030192Z, STALE after 2026-10-17T18:25:00.030192Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-17T17:48:05.785306Z · simulations this update: 3 · Odds API calls this update: 3 (credits 9) · reprice 1.28s
+model board generated 2026-10-17T17:58:01.930582Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 1.50s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -17,7 +17,7 @@ model board generated 2026-10-17T17:48:05.785306Z · simulations this update: 3 
 | 2026-10-17T18:45:00Z | Lille vs Brest (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
 | 2026-10-17T18:45:00Z | Troyes vs Lens (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
 | 2026-10-17T18:45:00Z | AS Roma vs Genoa (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
-| 2026-10-17T19:00:00Z | Valencia vs Athletic Club (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-17T19:00:00Z | Valencia vs Athletic Club (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
 | 2026-10-17T20:30:00Z | Platense vs Lanús (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-17T20:30:00Z | Minnesota United vs St. Louis City SC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-17T21:00:00Z | Botafogo vs Chapecoense (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -71,7 +71,7 @@ model board generated 2026-10-17T17:48:05.785306Z · simulations this update: 3 
 | 2026-10-19T01:00:00Z | Monterrey vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-19T16:30:00Z | Monza vs Cagliari (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (225; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (226; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -119,9 +119,9 @@ model board generated 2026-10-17T17:48:05.785306Z · simulations this update: 3 
 ## Counts
 
 ```
-action_NO_EDGE: 2815
+action_NO_EDGE: 2814
 action_NO_QUOTE: 786
-action_RESEARCH_CANDIDATE: 225
+action_RESEARCH_CANDIDATE: 226
 contract_sides: 3826
 fixtures: 58
 fixtures_model_invalidated: 1
