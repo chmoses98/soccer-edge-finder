@@ -1,0 +1,236 @@
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261017T181604Z",
+  "complete": true,
+  "discovered": 7022,
+  "written": 1675,
+  "path": "work/snapshots/2026-10-17/cap-20261017T181604Z.jsonl"
+}
+{
+  "reference_probabilities": 240,
+  "observed_at": "2026-10-17 18:16:11.726416+00:00",
+  "groups": 415,
+  "unmapped_fixture_groups": 175,
+  "incomplete_groups": 0,
+  "snapshots": 864,
+  "provider_notes": [
+    "169 rows, 86 skipped (unmapped division/team)",
+    "skipped_by_division={'D2': 9, 'E2': 12, 'E3': 12, 'F2': 9, 'G1': 6, 'I2': 10, 'N1': 1, 'SC1': 5, 'SC2': 5, 'SC3': 5, 'SP2': 11, 'T1': 1}",
+    "unknown_teams={'N1:Nijmegen': 1, 'T1:Goztep': 1}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-17T18:16:13.050511Z", "batch_id": "kd-20261017T181309Z", "credits_charged": 3, "paid_calls": 1, "snapshots": 7, "no_sport_key": [], "eligible_fixtures": 1, "per_sport": {"soccer_usa_mls": {"fixtures": 1, "join": {"events": 2, "joined": 1, "ambiguous": 0, "unresolved_names": [], "unjoined_fixtures": []}, "status": "OK", "credits": 3, "snapshots": 7, "incomplete_markets": 0, "close_fixtures": 1, "entry_fixtures": 0}}, "remaining_after": 18162, "status": "OK"}
+{
+ "as_of": "2026-10-17T18:16:15.624572+00:00",
+ "leagues": [
+  "fra.1",
+  "ita.1",
+  "usa.1"
+ ],
+ "events": 20,
+ "fixtures_mapped": 20,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 3,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 18,
+  "captured": 4,
+  "unchanged": 14,
+  "published_pre_kickoff": 4,
+  "published_post": 1,
+  "unpublished": 13,
+  "failures": []
+ },
+ "results_appended": 3,
+ "weather": {
+  "events": 18,
+  "captured": 6,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [
+   "761880: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=33.7490&longitude=-84.3880&hourly=t",
+   "761879: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Foxborough&count=5&language=en&",
+   "761877: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=New%20York&count=5&language=en&"
+  ],
+  "skipped": 9,
+  "stopped": "consecutive_failures"
+ },
+ "map_version": "4",
+ "health": {
+  "state": "DEGRADED",
+  "reasons": [
+   "weather_failures:3",
+   "weather_stopped:consecutive_failures:skipped=9"
+  ]
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261017T181711Z-1614a1", "mode": "reprice_only", "fixtures": 57, "contract_sides": 3798, "simulations_run": 0, "odds_api_calls": 1, "reprice_runtime_s": 1.152, "price_changes_vs_previous": 109}
+[dispatch] holding 5.6 min (next window opens in 0.6 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261017T182754Z",
+  "complete": true,
+  "discovered": 7021,
+  "written": 1762,
+  "path": "work/snapshots/2026-10-17/cap-20261017T182754Z.jsonl"
+}
+{
+  "reference_probabilities": 240,
+  "observed_at": "2026-10-17 18:16:11.726416+00:00",
+  "groups": 415,
+  "unmapped_fixture_groups": 175,
+  "incomplete_groups": 0,
+  "snapshots": 864,
+  "provider_notes": [
+    "169 rows, 86 skipped (unmapped division/team)",
+    "skipped_by_division={'D2': 9, 'E2': 12, 'E3': 12, 'F2': 9, 'G1': 6, 'I2': 10, 'N1': 1, 'SC1': 5, 'SC2': 5, 'SC3': 5, 'SP2': 11, 'T1': 1}",
+    "unknown_teams={'N1:Nijmegen': 1, 'T1:Goztep': 1}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-17T18:27:56.105002Z", "batch_id": "kd-20261017T182500Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-10-17T18:27:56.126204+00:00",
+ "leagues": [
+  "arg.1",
+  "usa.1"
+ ],
+ "events": 19,
+ "fixtures_mapped": 19,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 2,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 19,
+  "captured": 1,
+  "unchanged": 18,
+  "published_pre_kickoff": 1,
+  "published_post": 1,
+  "unpublished": 17,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 19,
+  "captured": 11,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [
+   "761878: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Harrison&count=5&language=en&fo",
+   "761882: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=30.2672&longitude=-97.7431&hourly=t",
+   "761883: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Houston&count=5&language=en&for"
+  ],
+  "skipped": 5,
+  "stopped": "consecutive_failures"
+ },
+ "map_version": "4",
+ "health": {
+  "state": "DEGRADED",
+  "reasons": [
+   "weather_failures:3",
+   "weather_stopped:consecutive_failures:skipped=5"
+  ]
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261017T182852Z-8d730c", "mode": "reprice_only", "fixtures": 57, "contract_sides": 3798, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 1.136, "price_changes_vs_previous": 183}
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261017T183338Z",
+  "complete": true,
+  "discovered": 6982,
+  "written": 1546,
+  "path": "work/snapshots/2026-10-17/cap-20261017T183338Z.jsonl"
+}
+{
+  "reference_probabilities": 240,
+  "observed_at": "2026-10-17 18:16:11.726416+00:00",
+  "groups": 415,
+  "unmapped_fixture_groups": 175,
+  "incomplete_groups": 0,
+  "snapshots": 864,
+  "provider_notes": [
+    "169 rows, 86 skipped (unmapped division/team)",
+    "skipped_by_division={'D2': 9, 'E2': 12, 'E3': 12, 'F2': 9, 'G1': 6, 'I2': 10, 'N1': 1, 'SC1': 5, 'SC2': 5, 'SC3': 5, 'SP2': 11, 'T1': 1}",
+    "unknown_teams={'N1:Nijmegen': 1, 'T1:Goztep': 1}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-17T18:33:40.285719Z", "batch_id": "kd-20261017T183044Z", "credits_charged": 6, "paid_calls": 2, "snapshots": 21, "no_sport_key": [], "eligible_fixtures": 3, "per_sport": {"soccer_france_ligue_one": {"fixtures": 2, "join": {"events": 2, "joined": 2, "ambiguous": 0, "unresolved_names": [], "unjoined_fixtures": []}, "status": "OK", "credits": 3, "snapshots": 14, "incomplete_markets": 0, "close_fixtures": 2, "entry_fixtures": 0}, "soccer_italy_serie_a": {"fixtures": 1, "join": {"events": 1, "joined": 1, "ambiguous": 0, "unresolved_names": [], "unjoined_fixtures": []}, "status": "OK", "credits": 3, "snapshots": 7, "incomplete_markets": 0, "close_fixtures": 1, "entry_fixtures": 0}}, "remaining_after": 18156, "status": "OK"}
+{
+ "as_of": "2026-10-17T18:33:44.372473+00:00",
+ "leagues": [
+  "esp.1",
+  "fra.1",
+  "ita.1"
+ ],
+ "events": 10,
+ "fixtures_mapped": 10,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 3,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 6,
+  "captured": 2,
+  "unchanged": 4,
+  "published_pre_kickoff": 4,
+  "published_post": 2,
+  "unpublished": 0,
+  "failures": []
+ },
+ "results_appended": 6,
+ "weather": {
+  "events": 6,
+  "captured": 6,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261017T183347Z-e355c1", "mode": "reprice_only", "fixtures": 56, "contract_sides": 3644, "simulations_run": 0, "odds_api_calls": 2, "reprice_runtime_s": 1.105, "price_changes_vs_previous": 101}
+[dispatch] holding 4.4 min (next window opens in 2.4 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261017T184254Z",
+  "complete": true,
+  "discovered": 6981,
+  "written": 1478,
+  "path": "work/snapshots/2026-10-17/cap-20261017T184254Z.jsonl"
+}
+{
+  "reference_probabilities": 240,
+  "observed_at": "2026-10-17 18:16:11.726416+00:00",
+  "groups": 415,
+  "unmapped_fixture_groups": 175,
+  "incomplete_groups": 0,
+  "snapshots": 864,
+  "provider_notes": [
+    "169 rows, 86 skipped (unmapped division/team)",
+    "skipped_by_division={'D2': 9, 'E2': 12, 'E3': 12, 'F2': 9, 'G1': 6, 'I2': 10, 'N1': 1, 'SC1': 5, 'SC2': 5, 'SC3': 5, 'SP2': 11, 'T1': 1}",
+    "unknown_teams={'N1:Nijmegen': 1, 'T1:Goztep': 1}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
