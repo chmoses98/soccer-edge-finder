@@ -1,49 +1,48 @@
 {
-  "as_of": "2026-10-17T18:16:15.624572+00:00",
-  "events": 20,
+  "as_of": "2026-10-17T18:27:56.126204+00:00",
+  "events": 19,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 20,
+  "fixtures_mapped": 19,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=9"
+      "weather_stopped:consecutive_failures:skipped=5"
     ],
     "state": "DEGRADED"
   },
   "leagues": [
-    "fra.1",
-    "ita.1",
+    "arg.1",
     "usa.1"
   ],
   "lineups": {
-    "captured": 4,
-    "events": 18,
+    "captured": 1,
+    "events": 19,
     "failures": [],
     "published_post": 1,
-    "published_pre_kickoff": 4,
-    "unchanged": 14,
-    "unpublished": 13
+    "published_pre_kickoff": 1,
+    "unchanged": 18,
+    "unpublished": 17
   },
   "map_proposals": {},
   "map_version": "4",
-  "results_appended": 3,
+  "results_appended": 0,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
-  "scoreboard_queries": 3,
+  "scoreboard_queries": 2,
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 6,
-    "events": 18,
+    "captured": 11,
+    "events": 19,
     "failures": [
-      "761880: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=33.7490&longitude=-84.3880&hourly=t",
-      "761879: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Foxborough&count=5&language=en&",
-      "761877: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=New%20York&count=5&language=en&"
+      "761878: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Harrison&count=5&language=en&fo",
+      "761882: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=30.2672&longitude=-97.7431&hourly=t",
+      "761883: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Houston&count=5&language=en&for"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 9,
+    "skipped": 5,
     "stopped": "consecutive_failures"
   }
 }
