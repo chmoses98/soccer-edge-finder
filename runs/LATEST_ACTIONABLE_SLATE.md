@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261017T131853Z-6ee59b` · generated 2026-10-17T13:18:53.812226Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261017T132757Z-7239af` · generated 2026-10-17T13:27:57.601383Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-17T13:15:53.736549Z (CURRENT at publish; CURRENT until 2026-10-17T13:35:53.736549Z, STALE after 2026-10-17T13:45:53.736549Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-17T13:25:00.028629Z (CURRENT at publish; CURRENT until 2026-10-17T13:45:00.028629Z, STALE after 2026-10-17T13:55:00.028629Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-17T13:13:53.756468Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 1.57s
+model board generated 2026-10-17T13:13:53.756468Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.46s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -84,7 +84,7 @@ model board generated 2026-10-17T13:13:53.756468Z · simulations this update: 0 
 | 2026-10-18T23:15:00Z | Belgrano vs River Plate (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-19T01:00:00Z | Monterrey vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (230; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (226; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -93,7 +93,6 @@ model board generated 2026-10-17T13:13:53.756468Z · simulations this update: 0 
 | New York City FC vs Los Angeles FC | away team total over 1.5 | no | 0.5800 | 0.794 [0.686, 0.886] | +0.197 | +0.134 | 0.71 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Toronto FC | Total goals over 3.5 | no | 0.5000 | 0.733 [0.581, 0.864] | +0.215 | +0.122 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs Los Angeles FC | away team total over 0.5 | no | 0.2300 | 0.443 [0.321, 0.562] | +0.201 | +0.121 | 0.34 | - |  | RESEARCH_CANDIDATE |
-| Strasbourg vs Paris Saint-Germain | Result: home | yes | 0.1400 | 0.376 [0.202, 0.572] | +0.228 | +0.113 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Toronto FC | Total goals over 2.5 | no | 0.2900 | 0.527 [0.360, 0.688] | +0.223 | +0.111 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs Los Angeles FC | Total goals over 2.5 | no | 0.4600 | 0.675 [0.537, 0.801] | +0.197 | +0.111 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Vancouver Whitecaps | away team total over 1.5 | no | 0.3800 | 0.598 [0.455, 0.733] | +0.201 | +0.109 | 0.48 | - | * | RESEARCH_CANDIDATE |
@@ -101,6 +100,7 @@ model board generated 2026-10-17T13:13:53.756468Z · simulations this update: 0 
 | Seattle Sounders vs CF Montréal | Total goals over 3.5 | no | 0.5500 | 0.756 [0.606, 0.884] | +0.189 | +0.105 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Toronto FC | Total goals over 4.5 | no | 0.6900 | 0.868 [0.763, 0.951] | +0.163 | +0.105 | 0.79 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs CF Montréal | Total goals over 2.5 | no | 0.3300 | 0.556 [0.383, 0.719] | +0.210 | +0.103 | 0.43 | - |  | RESEARCH_CANDIDATE |
+| Strasbourg vs Paris Saint-Germain | Result: home | yes | 0.1500 | 0.376 [0.202, 0.572] | +0.217 | +0.102 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | Atlanta United vs Inter Miami | away team total over 1.5 | no | 0.3600 | 0.569 [0.421, 0.709] | +0.193 | +0.102 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs Los Angeles FC | Total goals over 3.5 | no | 0.6800 | 0.849 [0.752, 0.930] | +0.154 | +0.098 | 0.78 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs CF Montréal | btts | no | 0.4300 | 0.615 [0.508, 0.729] | +0.168 | +0.097 | 0.52 | - | * | RESEARCH_CANDIDATE |
@@ -132,9 +132,9 @@ model board generated 2026-10-17T13:13:53.756468Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2842
+action_NO_EDGE: 2846
 action_NO_QUOTE: 832
-action_RESEARCH_CANDIDATE: 230
+action_RESEARCH_CANDIDATE: 226
 contract_sides: 3904
 fixtures: 71
 fixtures_model_invalidated: 0
