@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261017T223436Z-4fea79` · generated 2026-10-17T22:34:36.241617Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
+slate `slate-20261017T223937Z-b8069d` · generated 2026-10-17T22:39:37.128512Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-17T22:31:29.774720Z (CURRENT at publish; CURRENT until 2026-10-17T22:51:29.774720Z, STALE after 2026-10-17T23:01:29.774720Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-17T22:36:41.143599Z (CURRENT at publish; CURRENT until 2026-10-17T22:56:41.143599Z, STALE after 2026-10-17T23:06:41.143599Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-17T22:34:30.244773Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.92s
+model board generated 2026-10-17T22:34:30.244773Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.96s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -46,7 +46,7 @@ model board generated 2026-10-17T22:34:30.244773Z · simulations this update: 1 
 | 2026-10-18T15:30:00Z | Borussia Mönchengladbach vs TSG Hoffenheim (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T16:00:00Z | AC Milan vs Atalanta (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T16:30:00Z | Málaga vs Real Sociedad (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-18T17:45:00Z | Racing Club vs Independiente (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 9 | 0 |
+| 2026-10-18T17:45:00Z | Racing Club vs Independiente (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 9 | 0 |
 | 2026-10-18T18:45:00Z | Lyon vs Nice (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T18:45:00Z | Juventus vs Lazio (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T19:00:00Z | Fluminense vs Santos (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -63,15 +63,15 @@ model board generated 2026-10-17T22:34:30.244773Z · simulations this update: 1 
 | 2026-10-19T19:00:00Z | Tottenham Hotspur vs Coventry City (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-19T19:00:00Z | Getafe vs Rayo Vallecano (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (248; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (249; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | New York City FC vs Los Angeles FC | away team total over 1.5 | no | 0.5600 | 0.794 [0.686, 0.886] | +0.216 | +0.154 | 0.71 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs Los Angeles FC | btts | no | 0.4000 | 0.621 [0.507, 0.728] | +0.205 | +0.136 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Toronto FC | Total goals over 3.5 | no | 0.4900 | 0.733 [0.581, 0.864] | +0.225 | +0.132 | 0.62 | - | * | RESEARCH_CANDIDATE |
+| Atlanta United vs Inter Miami | away team total over 1.5 | no | 0.3300 | 0.569 [0.421, 0.709] | +0.223 | +0.132 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs Los Angeles FC | away team total over 0.5 | no | 0.2200 | 0.443 [0.321, 0.562] | +0.211 | +0.131 | 0.34 | - |  | RESEARCH_CANDIDATE |
-| Atlanta United vs Inter Miami | away team total over 1.5 | no | 0.3400 | 0.569 [0.421, 0.709] | +0.213 | +0.122 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Toronto FC | Total goals over 2.5 | no | 0.2800 | 0.527 [0.360, 0.688] | +0.233 | +0.122 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs Los Angeles FC | Total goals over 2.5 | no | 0.4500 | 0.675 [0.537, 0.801] | +0.207 | +0.121 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Vancouver Whitecaps | away team total over 1.5 | no | 0.3700 | 0.598 [0.455, 0.733] | +0.212 | +0.119 | 0.48 | - | * | RESEARCH_CANDIDATE |
@@ -82,9 +82,7 @@ model board generated 2026-10-17T22:34:30.244773Z · simulations this update: 1 
 | Seattle Sounders vs CF Montréal | Total goals over 2.5 | no | 0.3300 | 0.556 [0.383, 0.719] | +0.210 | +0.103 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Vancouver Whitecaps | away team total over 2.5 | no | 0.6500 | 0.829 [0.723, 0.918] | +0.163 | +0.102 | 0.75 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs Querétaro | Total goals over 2.5 | no | 0.4200 | 0.639 [0.475, 0.784] | +0.202 | +0.100 | 0.51 | - | * | RESEARCH_CANDIDATE |
-| Santos Laguna vs Querétaro | home team total over 1.5 | no | 0.5100 | 0.716 [0.545, 0.854] | +0.188 | +0.099 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs Los Angeles FC | Total goals over 1.5 | no | 0.2100 | 0.410 [0.277, 0.545] | +0.189 | +0.097 | 0.3 | - |  | RESEARCH_CANDIDATE |
-| New York City FC vs Los Angeles FC | away team total over 2.5 | no | 0.8100 | 0.942 [0.893, 0.979] | +0.121 | +0.096 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs Querétaro | Total goals over 3.5 | no | 0.6400 | 0.822 [0.698, 0.921] | +0.166 | +0.096 | 0.73 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs CF Montréal | Total goals over 3.5 | no | 0.5600 | 0.756 [0.606, 0.884] | +0.179 | +0.095 | 0.65 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs Querétaro | btts | no | 0.3900 | 0.586 [0.456, 0.705] | +0.179 | +0.094 | 0.48 | - | * | RESEARCH_CANDIDATE |
@@ -92,6 +90,8 @@ model board generated 2026-10-17T22:34:30.244773Z · simulations this update: 1 
 | New York Red Bulls vs Toronto FC | home team total over 1.5 | no | 0.3300 | 0.541 [0.356, 0.701] | +0.195 | +0.090 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Toronto FC | btts | no | 0.3200 | 0.512 [0.382, 0.631] | +0.177 | +0.090 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Toronto FC | home team total over 2.5 | no | 0.6000 | 0.782 [0.624, 0.901] | +0.165 | +0.089 | 0.69 | - |  | RESEARCH_CANDIDATE |
+| Santos Laguna vs Querétaro | home team total over 1.5 | no | 0.5200 | 0.716 [0.545, 0.854] | +0.178 | +0.089 | 0.6 | - | * | RESEARCH_CANDIDATE |
+| New York City FC vs Los Angeles FC | away team total over 2.5 | no | 0.8200 | 0.942 [0.893, 0.979] | +0.112 | +0.087 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Nashville SC | Total goals over 3.5 | no | 0.5900 | 0.770 [0.637, 0.884] | +0.163 | +0.084 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | LA Galaxy vs San Diego FC | away team total over 1.5 | no | 0.4600 | 0.649 [0.507, 0.779] | +0.171 | +0.083 | 0.54 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Nashville SC | Total goals over 2.5 | no | 0.3700 | 0.570 [0.413, 0.718] | +0.184 | +0.083 | 0.45 | - |  | RESEARCH_CANDIDATE |
@@ -104,16 +104,16 @@ model board generated 2026-10-17T22:34:30.244773Z · simulations this update: 1 
 | Santos Laguna vs Querétaro | home team total over 0.5 | no | 0.1900 | 0.366 [0.215, 0.510] | +0.165 | +0.071 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs CF Montréal | Total goals over 4.5 | no | 0.7500 | 0.883 [0.783, 0.960] | +0.120 | +0.071 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Nashville SC | btts | no | 0.3600 | 0.528 [0.404, 0.649] | +0.152 | +0.070 | 0.42 | - | * | RESEARCH_CANDIDATE |
+| Atlanta United vs Inter Miami | Total goals over 4.5 | no | 0.6500 | 0.804 [0.679, 0.909] | +0.138 | +0.068 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Atlanta United vs Inter Miami | away team total over 0.5 | no | 0.1000 | 0.239 [0.143, 0.342] | +0.133 | +0.067 | 0.16 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs CF Montréal | away team total over 0.5 | no | 0.3800 | 0.538 [0.420, 0.661] | +0.141 | +0.067 | 0.44 | - | * | RESEARCH_CANDIDATE |
-| Atlanta United vs Inter Miami | Total goals over 2.5 | no | 0.2500 | 0.430 [0.278, 0.580] | +0.167 | +0.066 | 0.31 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2567
-action_NO_QUOTE: 569
-action_RESEARCH_CANDIDATE: 248
+action_NO_EDGE: 2565
+action_NO_QUOTE: 570
+action_RESEARCH_CANDIDATE: 249
 contract_sides: 3384
 fixtures: 50
 fixtures_model_invalidated: 0
