@@ -7141,16 +7141,16 @@
       "sha256_prefix": "90feb13302ea70950c305f7ba73fa5cca0c684a4f881bab52d7afd3716ee8461"
     },
     "dispatch/horizons.jsonl": {
-      "byte_length": 747599,
+      "byte_length": 748103,
       "closed": false,
       "day": null,
       "first_manifested_at": "2026-09-28T20:29:36.243164Z",
       "immutable": false,
-      "line_count": 1615,
+      "line_count": 1616,
       "record_level": false,
       "record_type": "horizon_log",
       "recovery_id": null,
-      "sha256_prefix": "d7630fa9c1b9a0084c8eb85b802bb67fee7ef590ad8f648338336e19ddb2e281"
+      "sha256_prefix": "396519ebd78336c570094febdf00ce12d50f3ac7f263c7bf1260cf0423b6b66f"
     },
     "dispatch/settle_runs.jsonl": {
       "byte_length": 183159,
@@ -7309,16 +7309,16 @@
       "sha256_prefix": "92d06287bd19c3c25827adb6643f3805ac5f1690dfcbbee94a6e19e000daf683"
     },
     "dispatch/slate_log/2026-10-17.jsonl": {
-      "byte_length": 316072,
+      "byte_length": 318826,
       "closed": false,
       "day": "2026-10-17",
       "first_manifested_at": "2026-10-17T01:11:59.964156Z",
       "immutable": false,
-      "line_count": 110,
+      "line_count": 111,
       "record_level": false,
       "record_type": "slate_reprice_log",
       "recovery_id": null,
-      "sha256_prefix": "884cc34d2456218c5caf3fa719720e32c08b79f27a1a18f3801bde6439fc36b5"
+      "sha256_prefix": "9a26c3f424b37fa3e949aa614163dc6f05e8dd14830f160114952d89f5d455dc"
     },
     "fixtures/espn/2026-09-28/espn-034707.json": {
       "byte_length": 157757,
@@ -15277,16 +15277,16 @@
       "sha256_prefix": "c84e652c84aa0173f76bdda478723aea25a540de88789e32dea0e6c0a07e6a51"
     },
     "predictions/2026-10-17/predictions.jsonl": {
-      "byte_length": 42619992,
+      "byte_length": 42687032,
       "closed": false,
       "day": "2026-10-17",
       "first_manifested_at": "2026-10-17T01:27:50.325697Z",
       "immutable": false,
-      "line_count": 9081,
+      "line_count": 9095,
       "record_level": true,
       "record_type": "prediction",
       "recovery_id": null,
-      "sha256_prefix": "ebd8191b9851cc6d4653d8068822f144f105a13d4b1e3080910a8e4f9e707882"
+      "sha256_prefix": "b72be7d2c28a6fbb85cfbd6d033b65b0a67feb333d7db405194bca93d0448c28"
     },
     "recovery/cmp-20261002T100019Z.json": {
       "byte_length": 6776,
@@ -33526,6 +33526,54 @@
       "recovery_id": null,
       "sha256_prefix": "ad0fca645427bb818e7655cf35a3326f41977c3171c019004ba753abc28dd615"
     },
+    "runs/2026-10-17/run-20261017T203339Z-603558/RUN_SOCCER.md": {
+      "byte_length": 2406,
+      "closed": true,
+      "day": "2026-10-17",
+      "first_manifested_at": "2026-10-17T20:35:17.295207Z",
+      "immutable": true,
+      "line_count": null,
+      "record_level": false,
+      "record_type": "run_output",
+      "recovery_id": null,
+      "sha256_prefix": "67442e67f53f2c9755d80fa8ec67aedef9a2f4cbb972edf90d83152c0fabd164"
+    },
+    "runs/2026-10-17/run-20261017T203339Z-603558/coverage.json": {
+      "byte_length": 635,
+      "closed": true,
+      "day": "2026-10-17",
+      "first_manifested_at": "2026-10-17T20:35:17.295268Z",
+      "immutable": true,
+      "line_count": null,
+      "record_level": false,
+      "record_type": "run_output",
+      "recovery_id": null,
+      "sha256_prefix": "5df652bf2e9906a391d28b4e307c17345b183dd37a0cf5c24455829c6cc758dd"
+    },
+    "runs/2026-10-17/run-20261017T203339Z-603558/fast_reconcile.json": {
+      "byte_length": 1744,
+      "closed": true,
+      "day": "2026-10-17",
+      "first_manifested_at": "2026-10-17T20:35:17.295299Z",
+      "immutable": true,
+      "line_count": null,
+      "record_level": false,
+      "record_type": "run_output",
+      "recovery_id": null,
+      "sha256_prefix": "db035a9cdaee33747859e97d22c0ab6caccedb852a7ffd80fb4075b6f2d74f9c"
+    },
+    "runs/2026-10-17/run-20261017T203339Z-603558/run_output.v1.json": {
+      "byte_length": 5232,
+      "closed": true,
+      "day": "2026-10-17",
+      "first_manifested_at": "2026-10-17T20:35:17.295331Z",
+      "immutable": true,
+      "line_count": null,
+      "record_level": false,
+      "record_type": "run_output",
+      "recovery_id": null,
+      "sha256_prefix": "26a35e7127d8cae24d12d6076a7aadce006220d8ab090fce2eae777eccfc892d"
+    },
     "settlements/2026-09-28/predictions.jsonl": {
       "byte_length": 810853,
       "closed": true,
@@ -47528,6 +47576,18 @@
       "recovery_id": null,
       "sha256_prefix": "2308d095c240d6cb2c531e6626d39a9bc60f27493a95c75f630417026b8e95a5"
     },
+    "snapshots/2026-10-17/cap-20261017T203333Z.jsonl": {
+      "byte_length": 2049314,
+      "closed": false,
+      "day": "2026-10-17",
+      "first_manifested_at": "2026-10-17T20:35:17.382390Z",
+      "immutable": false,
+      "line_count": 2524,
+      "record_level": false,
+      "record_type": "kalshi_snapshot",
+      "recovery_id": null,
+      "sha256_prefix": "b997e836d33ad9d4f7903da4913a6d379fb5a58b2d3fd9f81d281bcae2461617"
+    },
     "weather/2026-09-28.jsonl": {
       "byte_length": 42237,
       "closed": true,
@@ -47744,5 +47804,5 @@
     }
   },
   "manifest_version": 1,
-  "updated_at": "2026-10-17T20:30:16.203706Z"
+  "updated_at": "2026-10-17T20:35:17.383121Z"
 }
