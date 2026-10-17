@@ -1,10 +1,10 @@
 {
  "counts": {
-  "PINNACLE_QUOTED_NOTHING": 15,
-  "PINNACLE_VALID_CLOSE": 139,
+  "PINNACLE_VALID_CLOSE": 143,
   "MISSED_DISPATCHER_CLOSE": 35,
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 96,
-  "NO_SPORT_KEY": 19
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 98,
+  "NO_SPORT_KEY": 19,
+  "PINNACLE_QUOTED_NOTHING": 15
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.sarmiento": {
@@ -16,6 +16,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:arg.primera:2026:arg.banfield:arg.argentinos_juniors": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261017T174500Z"
   },
   "fx:arg.primera:2026:arg.barracas_central:arg.huracan": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -502,6 +507,16 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261010T161458Z"
   },
+  "fx:eng.premier_league:2026-27:eng.newcastle:eng.aston_villa": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:eng.premier_league:2026-27:eng.newcastle:eng.aston_villa:matchday_7": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261017T161500Z"
+  },
   "fx:eng.premier_league:2026-27:eng.sunderland:eng.brighton": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -606,6 +621,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:esp.la_liga:2026-27:esp.real_betis:esp.barcelona:matchday_9": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261017T161500Z"
   },
   "fx:esp.la_liga:2026-27:esp.real_betis:esp.osasuna": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -826,6 +846,16 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261010T131501Z"
+  },
+  "fx:ger.bundesliga:2026-27:ger.bayern:ger.leipzig": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:ger.bundesliga:2026-27:ger.bayern:ger.leipzig:matchday_6": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261017T161500Z"
   },
   "fx:ger.bundesliga:2026-27:ger.dortmund:ger.werder_bremen": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
