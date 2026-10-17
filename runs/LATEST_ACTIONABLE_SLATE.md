@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261017T050330Z-93266e` · generated 2026-10-17T05:03:30.385584Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261017T051832Z-ee86a4` · generated 2026-10-17T05:18:32.262414Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-17T05:00:34.367856Z (CURRENT at publish; CURRENT until 2026-10-17T05:20:34.367856Z, STALE after 2026-10-17T05:30:34.367856Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-17T05:15:36.282906Z (CURRENT at publish; CURRENT until 2026-10-17T05:35:36.282906Z, STALE after 2026-10-17T05:45:36.282906Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-17T01:25:12.875994Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 2.12s
+model board generated 2026-10-17T01:25:12.875994Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 2.09s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -108,13 +108,14 @@ model board generated 2026-10-17T01:25:12.875994Z · simulations this update: 0 
 | Seattle Sounders vs CF Montréal | away team total over 0.5 | no | 0.3600 | 0.538 [0.421, 0.660] | +0.162 | +0.087 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Inter Miami | away team total over 2.5 | no | 0.6400 | 0.807 [0.692, 0.905] | +0.151 | +0.087 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs Los Angeles FC | Total goals over 1.5 | no | 0.2200 | 0.411 [0.278, 0.545] | +0.178 | +0.087 | 0.3 | - |  | RESEARCH_CANDIDATE |
-| New York City FC vs Los Angeles FC | away team total over 2.5 | no | 0.8200 | 0.942 [0.893, 0.979] | +0.112 | +0.087 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs CF Montréal | Total goals over 3.5 | no | 0.5700 | 0.757 [0.606, 0.884] | +0.169 | +0.086 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs Querétaro | Total goals over 3.5 | no | 0.6500 | 0.822 [0.699, 0.922] | +0.156 | +0.086 | 0.73 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Nashville SC | Total goals over 3.5 | no | 0.5900 | 0.770 [0.637, 0.884] | +0.163 | +0.085 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs CF Montréal | Total goals over 2.5 | no | 0.3500 | 0.556 [0.384, 0.719] | +0.190 | +0.084 | 0.43 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Chicago Fire | away team total over 1.5 | no | 0.5200 | 0.697 [0.556, 0.815] | +0.160 | +0.082 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Toronto FC | Total goals over 2.5 | no | 0.3200 | 0.527 [0.361, 0.687] | +0.192 | +0.081 | 0.39 | - | * | RESEARCH_CANDIDATE |
+| New York City FC vs Los Angeles FC | away team total over 2.5 | no | 0.8300 | 0.942 [0.893, 0.979] | +0.102 | +0.077 | 0.91 | - |  | RESEARCH_CANDIDATE |
+| New York Red Bulls vs Toronto FC | Total goals over 4.5 | no | 0.7200 | 0.868 [0.764, 0.951] | +0.134 | +0.076 | 0.79 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Toronto FC | Total goals over 3.5 | no | 0.5500 | 0.733 [0.582, 0.864] | +0.166 | +0.073 | 0.62 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Nashville SC | Total goals over 2.5 | no | 0.3800 | 0.570 [0.413, 0.719] | +0.174 | +0.072 | 0.45 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Vancouver Whitecaps | Result: away | no | 0.4100 | 0.585 [0.446, 0.712] | +0.158 | +0.072 | 0.48 | - | * | RESEARCH_CANDIDATE |
@@ -122,7 +123,6 @@ model board generated 2026-10-17T01:25:12.875994Z · simulations this update: 0 
 | San Jose Earthquakes vs Nashville SC | btts | no | 0.3600 | 0.528 [0.404, 0.649] | +0.152 | +0.070 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Nashville SC | away team total over 1.5 | no | 0.4400 | 0.622 [0.465, 0.763] | +0.165 | +0.070 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Vancouver Whitecaps | away wins by more than 1.5 | no | 0.6500 | 0.797 [0.688, 0.890] | +0.132 | +0.070 | 0.72 | - | * | RESEARCH_CANDIDATE |
-| New York Red Bulls vs Toronto FC | Total goals over 4.5 | no | 0.7300 | 0.868 [0.764, 0.951] | +0.125 | +0.066 | 0.79 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs Querétaro | Total goals over 1.5 | no | 0.2000 | 0.376 [0.230, 0.521] | +0.165 | +0.066 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs Los Angeles FC | Total goals over 4.5 | no | 0.8400 | 0.940 [0.888, 0.980] | +0.091 | +0.064 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Nottingham Forest vs Arsenal | Result: home | yes | 0.1600 | 0.337 [0.194, 0.496] | +0.168 | +0.063 | 0.22 | - |  | RESEARCH_CANDIDATE |
@@ -133,8 +133,8 @@ model board generated 2026-10-17T01:25:12.875994Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2802
-action_NO_QUOTE: 735
+action_NO_EDGE: 2792
+action_NO_QUOTE: 745
 action_RESEARCH_CANDIDATE: 231
 contract_sides: 3768
 fixtures: 72
