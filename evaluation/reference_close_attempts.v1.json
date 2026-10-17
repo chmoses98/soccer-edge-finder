@@ -1,10 +1,10 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 103,
-  "PINNACLE_VALID_CLOSE": 151,
+  "PINNACLE_VALID_CLOSE": 155,
+  "PINNACLE_QUOTED_NOTHING": 15,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 105,
   "MISSED_DISPATCHER_CLOSE": 35,
-  "NO_SPORT_KEY": 19,
-  "PINNACLE_QUOTED_NOTHING": 15
+  "NO_SPORT_KEY": 19
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.sarmiento": {
@@ -13,6 +13,11 @@
    "batch_id": null
   },
   "fx:arg.primera:2026:arg.atletico_tucuman:arg.barracas_central": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:arg.primera:2026:arg.atletico_tucuman:arg.rosario_central": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
@@ -147,15 +152,30 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261010T003036Z"
   },
+  "fx:arg.primera:2026:arg.velez:arg.gimnasia_mendoza": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
   "fx:bra.serie_a:2026:bra.athletico_paranaense:bra.atletico_mineiro": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261008T224500Z"
   },
+  "fx:bra.serie_a:2026:bra.athletico_paranaense:bra.palmeiras": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261017T221500Z"
+  },
   "fx:bra.serie_a:2026:bra.atletico_mineiro:bra.bragantino": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261003T211500Z"
+  },
+  "fx:bra.serie_a:2026:bra.atletico_mineiro:bra.coritiba": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261017T211500Z"
   },
   "fx:bra.serie_a:2026:bra.atletico_mineiro:bra.santos": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -1197,6 +1217,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261011T004500Z"
   },
+  "fx:mex.liga_mx:2026:mex.guadalajara:mex.tigres": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261017T225012Z"
+  },
   "fx:mex.liga_mx:2026:mex.juarez:mex.tijuana": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
@@ -1231,6 +1256,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261011T224327Z"
+  },
+  "fx:mex.liga_mx:2026:mex.santos_laguna:mex.queretaro": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261017T224500Z"
   },
   "fx:mex.liga_mx:2026:mex.tigres:mex.toluca": {
    "state": "PINNACLE_VALID_CLOSE",
