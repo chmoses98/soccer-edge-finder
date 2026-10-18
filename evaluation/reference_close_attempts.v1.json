@@ -1,10 +1,10 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 124,
-  "PINNACLE_VALID_CLOSE": 177,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 125,
+  "PINNACLE_VALID_CLOSE": 181,
   "MISSED_DISPATCHER_CLOSE": 36,
-  "NO_SPORT_KEY": 19,
-  "PINNACLE_QUOTED_NOTHING": 15
+  "PINNACLE_QUOTED_NOTHING": 15,
+  "NO_SPORT_KEY": 19
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.sarmiento": {
@@ -56,6 +56,16 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261003T172913Z"
+  },
+  "fx:arg.primera:2026:arg.estudiantes:arg.san_lorenzo": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261018T204500Z"
+  },
+  "fx:arg.primera:2026:arg.estudiantes_rio_cuarto:arg.aldosivi": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
   },
   "fx:arg.primera:2026:arg.gimnasia_la_plata:arg.atletico_tucuman": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -187,6 +197,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261011T184335Z"
   },
+  "fx:bra.serie_a:2026:bra.bahia:bra.flamengo": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261018T211500Z"
+  },
   "fx:bra.serie_a:2026:bra.bahia:bra.mirassol": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
@@ -271,6 +286,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261011T201500Z"
+  },
+  "fx:bra.serie_a:2026:bra.remo:bra.bragantino": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261018T221458Z"
   },
   "fx:bra.serie_a:2026:bra.remo:bra.gremio": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -1721,6 +1741,11 @@
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
    "batch_id": null
+  },
+  "fx:usa.mls:2026:usa.cincinnati:usa.columbus_crew": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261018T204500Z"
   },
   "fx:usa.mls:2026:usa.cincinnati:usa.new_england": {
    "state": "PINNACLE_VALID_CLOSE",
