@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261018T131347Z-d9e31d` · generated 2026-10-18T13:13:47.372901Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261018T131913Z-f77fc8` · generated 2026-10-18T13:19:13.787923Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-18T13:10:44.969102Z (CURRENT at publish; CURRENT until 2026-10-18T13:30:44.969102Z, STALE after 2026-10-18T13:40:44.969102Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-18T13:16:16.641131Z (CURRENT at publish; CURRENT until 2026-10-18T13:36:16.641131Z, STALE after 2026-10-18T13:46:16.641131Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-18T13:13:46.593517Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.51s
+model board generated 2026-10-18T13:13:46.593517Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.52s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-18T13:13:46.593517Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-18T13:30:00Z | Bayer Leverkusen vs SC Freiburg (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 77 | 0 |
+| 2026-10-18T13:30:00Z | Bayer Leverkusen vs SC Freiburg (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 77 | 0 |
 | 2026-10-18T14:15:00Z | Celta Vigo vs Deportivo Alavés (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
 | 2026-10-18T15:15:00Z | Le Havre vs AJ Auxerre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-18T15:15:00Z | Lorient vs AS Monaco (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
