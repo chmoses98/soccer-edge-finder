@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261018T134458Z-326ab1` · generated 2026-10-18T13:44:58.928389Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261018T140000Z-fd6513` · generated 2026-10-18T14:00:00.196813Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-18T13:42:03.494477Z (CURRENT at publish; CURRENT until 2026-10-18T14:02:03.494477Z, STALE after 2026-10-18T14:12:03.494477Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-18T13:57:03.509758Z (CURRENT at publish; CURRENT until 2026-10-18T14:17:03.509758Z, STALE after 2026-10-18T14:27:03.509758Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-18T13:13:46.593517Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.52s
+model board generated 2026-10-18T13:13:46.593517Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.50s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -40,7 +40,7 @@ model board generated 2026-10-18T13:13:46.593517Z · simulations this update: 0 
 | 2026-10-19T23:00:00Z | Corinthians vs Vitória (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-20T00:15:00Z | Deportivo Riestra vs Unión (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (26; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (24; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -60,10 +60,8 @@ model board generated 2026-10-18T13:13:46.593517Z · simulations this update: 0 
 | FC Cincinnati vs Columbus Crew | away team total over 1.5 | no | 0.4800 | 0.601 [0.447, 0.747] | +0.104 | +0.006 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away wins by more than 1.5 | no | 0.8300 | 0.887 [0.799, 0.957] | +0.048 | +0.006 | 0.83 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away wins by more than 2.5 | no | 0.9300 | 0.957 [0.913, 0.989] | +0.023 | +0.005 | 0.93 | - |  | RESEARCH_CANDIDATE |
-| Fluminense vs Santos | Result: home | yes | 0.4300 | 0.553 [0.401, 0.717] | +0.106 | +0.004 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | Borussia Mönchengladbach vs TSG Hoffenheim | Result: home | yes | 0.3200 | 0.468 [0.281, 0.656] | +0.132 | +0.004 | 0.32 | - | * | RESEARCH_CANDIDATE |
 | Remo vs Red Bull Bragantino | btts | no | 0.4100 | 0.513 [0.387, 0.636] | +0.086 | +0.003 | 0.41 | - | * | RESEARCH_CANDIDATE |
-| Borussia Mönchengladbach vs TSG Hoffenheim | Result: away | no | 0.5500 | 0.681 [0.498, 0.837] | +0.114 | +0.003 | 0.55 | - |  | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away team total over 2.5 | no | 0.7500 | 0.830 [0.717, 0.925] | +0.067 | +0.003 | 0.75 | - |  | RESEARCH_CANDIDATE |
 | Remo vs Red Bull Bragantino | Result: away | no | 0.5650 | 0.671 [0.529, 0.801] | +0.089 | +0.002 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Remo vs Red Bull Bragantino | away wins by more than 1.5 | no | 0.7900 | 0.857 [0.757, 0.936] | +0.056 | +0.002 | 0.79 | - | * | RESEARCH_CANDIDATE |
@@ -74,15 +72,15 @@ model board generated 2026-10-18T13:13:46.593517Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 463
+action_NO_EDGE: 465
 action_NO_QUOTE: 2079
-action_RESEARCH_CANDIDATE: 26
+action_RESEARCH_CANDIDATE: 24
 contract_sides: 2568
 fixtures: 27
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
-Removed (kicked off): 6
+Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
