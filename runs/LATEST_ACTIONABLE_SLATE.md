@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261018T224247Z-f43027` · generated 2026-10-18T22:42:47.169627Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261018T224813Z-a0e6ba` · generated 2026-10-18T22:48:13.561824Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-18T22:40:01.435014Z (CURRENT at publish; CURRENT until 2026-10-18T23:00:01.435014Z, STALE after 2026-10-18T23:10:01.435014Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-18T22:45:22.953639Z (CURRENT at publish; CURRENT until 2026-10-18T23:05:22.953639Z, STALE after 2026-10-18T23:15:22.953639Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-18T22:02:51.110005Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.11s
 
@@ -12,7 +12,7 @@ model board generated 2026-10-18T22:02:51.110005Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-18T23:15:00Z | Belgrano vs River Plate (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-18T23:15:00Z | Belgrano vs River Plate (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-19T01:00:00Z | Monterrey vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-19T16:30:00Z | Monza vs Cagliari (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-19T18:45:00Z | Parma vs Torino (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -27,8 +27,8 @@ model board generated 2026-10-18T22:02:51.110005Z · simulations this update: 0 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Monterrey vs Pachuca | home team total over 1.5 | no | 0.4000 | 0.584 [0.399, 0.755] | +0.167 | +0.054 | 0.45 | - | * | RESEARCH_CANDIDATE |
+| Monterrey vs Pachuca | home team total over 2.5 | no | 0.6800 | 0.814 [0.670, 0.929] | +0.119 | +0.043 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home wins by more than 1.5 | no | 0.6500 | 0.779 [0.647, 0.896] | +0.113 | +0.034 | 0.68 | - | * | RESEARCH_CANDIDATE |
-| Monterrey vs Pachuca | home team total over 2.5 | no | 0.6900 | 0.814 [0.670, 0.929] | +0.109 | +0.033 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | First-half result: home | no | 0.5600 | 0.674 [0.548, 0.782] | +0.097 | +0.022 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home team total over 0.5 | no | 0.1400 | 0.255 [0.132, 0.388] | +0.106 | +0.021 | 0.16 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | Result: home | no | 0.4200 | 0.564 [0.404, 0.723] | +0.127 | +0.020 | 0.43 | - | * | RESEARCH_CANDIDATE |
@@ -51,7 +51,7 @@ action_NO_QUOTE: 671
 action_RESEARCH_CANDIDATE: 16
 contract_sides: 858
 fixtures: 9
-fixtures_model_invalidated: 0
+fixtures_model_invalidated: 1
 fixtures_model_missing: 0
 ```
 
