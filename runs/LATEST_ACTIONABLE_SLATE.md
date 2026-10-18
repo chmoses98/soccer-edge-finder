@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261018T113826Z-ec5c10` · generated 2026-10-18T11:38:26.193473Z · trigger `kickoff_chain:T-120/T-30` · mode `reprice_only`
+slate `slate-20261018T114758Z-781b90` · generated 2026-10-18T11:47:58.378958Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-18T11:35:20.407397Z (CURRENT at publish; CURRENT until 2026-10-18T11:55:20.407397Z, STALE after 2026-10-18T12:05:20.407397Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-18T11:45:00.040827Z (CURRENT at publish; CURRENT until 2026-10-18T12:05:00.040827Z, STALE after 2026-10-18T12:15:00.040827Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-18T10:59:02.033215Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.39s
+model board generated 2026-10-18T10:59:02.033215Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.38s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-18T10:59:02.033215Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-18T12:00:00Z | Osasuna vs Racing Santander (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
+| 2026-10-18T12:00:00Z | Osasuna vs Racing Santander (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
 | 2026-10-18T13:00:00Z | Bournemouth vs Sunderland (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T13:00:00Z | Brighton & Hove Albion vs Crystal Palace (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T13:00:00Z | Leeds United vs Manchester United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -54,14 +54,14 @@ model board generated 2026-10-18T10:59:02.033215Z · simulations this update: 0 
 | Monterrey vs Pachuca | home team total over 1.5 | no | 0.4000 | 0.588 [0.409, 0.748] | +0.171 | +0.060 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home team total over 2.5 | no | 0.6800 | 0.817 [0.680, 0.926] | +0.122 | +0.048 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home wins by more than 1.5 | no | 0.6500 | 0.784 [0.653, 0.894] | +0.118 | +0.039 | 0.68 | - | * | RESEARCH_CANDIDATE |
-| Fluminense vs Santos | Result: away | no | 0.6750 | 0.787 [0.670, 0.893] | +0.097 | +0.028 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | First-half result: home | no | 0.5600 | 0.678 [0.538, 0.792] | +0.101 | +0.023 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Fluminense vs Santos | home wins by more than 1.5 | yes | 0.1900 | 0.331 [0.179, 0.499] | +0.131 | +0.022 | 0.21 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | Result: away | no | 0.6400 | 0.756 [0.626, 0.870] | +0.100 | +0.022 | 0.66 | - | * | RESEARCH_CANDIDATE |
-| Fluminense vs Santos | Result: home | yes | 0.4050 | 0.554 [0.396, 0.719] | +0.132 | +0.022 | 0.42 | - |  | RESEARCH_CANDIDATE |
+| Fluminense vs Santos | Result: home | yes | 0.4050 | 0.554 [0.396, 0.719] | +0.132 | +0.022 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | Result: home | yes | 0.4100 | 0.551 [0.389, 0.711] | +0.124 | +0.021 | 0.43 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home wins by more than 2.5 | no | 0.8400 | 0.910 [0.834, 0.971] | +0.061 | +0.020 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | Result: home | no | 0.4300 | 0.571 [0.414, 0.720] | +0.124 | +0.020 | 0.44 | - | * | RESEARCH_CANDIDATE |
+| Fluminense vs Santos | Result: away | no | 0.6850 | 0.787 [0.670, 0.893] | +0.087 | +0.018 | 0.7 | - |  | RESEARCH_CANDIDATE |
 | Lyon vs Nice | Result: away | no | 0.7700 | 0.857 [0.756, 0.946] | +0.075 | +0.017 | 0.78 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away team total over 1.5 | no | 0.4800 | 0.602 [0.451, 0.739] | +0.105 | +0.016 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home team total over 0.5 | no | 0.1500 | 0.257 [0.137, 0.380] | +0.098 | +0.014 | 0.16 | - |  | RESEARCH_CANDIDATE |
@@ -77,7 +77,7 @@ model board generated 2026-10-18T10:59:02.033215Z · simulations this update: 0 
 | Monterrey vs Pachuca | Result: away | yes | 0.2000 | 0.304 [0.171, 0.443] | +0.092 | +0.005 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Borussia Mönchengladbach vs TSG Hoffenheim | Result: away | no | 0.5500 | 0.681 [0.498, 0.837] | +0.114 | +0.003 | 0.55 | - |  | RESEARCH_CANDIDATE |
 | Angers vs Marseille | Result: home | yes | 0.2500 | 0.379 [0.217, 0.558] | +0.116 | +0.003 | 0.25 | - |  | RESEARCH_CANDIDATE |
-| Osasuna vs Racing Santander | Result: draw | no | 0.7500 | 0.810 [0.742, 0.888] | +0.047 | +0.000 | 0.75 | 0.743 | * | RESEARCH_CANDIDATE |
+| Osasuna vs Racing Santander | Result: draw | no | 0.7500 | 0.810 [0.742, 0.888] | +0.047 | +0.000 | 0.75 | 0.744 | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
