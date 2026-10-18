@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261018T090208Z-cd8e49` · generated 2026-10-18T09:02:08.830241Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261018T091710Z-5a866d` · generated 2026-10-18T09:17:10.894722Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-18T08:59:14.026228Z (CURRENT at publish; CURRENT until 2026-10-18T09:19:14.026228Z, STALE after 2026-10-18T09:29:14.026228Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-18T09:14:16.106599Z (CURRENT at publish; CURRENT until 2026-10-18T09:34:16.106599Z, STALE after 2026-10-18T09:44:16.106599Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-18T05:46:40.402295Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.35s
+model board generated 2026-10-18T05:46:40.402295Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.34s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -51,7 +51,7 @@ model board generated 2026-10-18T05:46:40.402295Z · simulations this update: 0 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Nottingham Forest vs Arsenal | Result: away | no | 0.3900 | 0.625 [0.464, 0.779] | +0.218 | +0.111 | 0.5 | - | * | RESEARCH_CANDIDATE |
-| Nottingham Forest vs Arsenal | Result: home | yes | 0.1400 | 0.338 [0.195, 0.496] | +0.189 | +0.083 | 0.21 | - |  | RESEARCH_CANDIDATE |
+| Nottingham Forest vs Arsenal | Result: home | yes | 0.1500 | 0.338 [0.195, 0.496] | +0.179 | +0.073 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home team total over 1.5 | no | 0.4000 | 0.588 [0.409, 0.748] | +0.171 | +0.060 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home wins by more than 1.5 | no | 0.6500 | 0.784 [0.653, 0.894] | +0.118 | +0.039 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home team total over 2.5 | no | 0.6900 | 0.817 [0.680, 0.926] | +0.112 | +0.038 | 0.72 | - |  | RESEARCH_CANDIDATE |
@@ -85,8 +85,8 @@ model board generated 2026-10-18T05:46:40.402295Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 500
-action_NO_QUOTE: 205
+action_NO_EDGE: 501
+action_NO_QUOTE: 204
 action_RESEARCH_CANDIDATE: 31
 contract_sides: 736
 fixtures: 33
