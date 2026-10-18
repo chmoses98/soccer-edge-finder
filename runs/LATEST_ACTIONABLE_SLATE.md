@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261018T161757Z-3c40de` · generated 2026-10-18T16:17:57.412352Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261018T162757Z-e3f947` · generated 2026-10-18T16:27:57.697615Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-18T16:15:00.042584Z (CURRENT at publish; CURRENT until 2026-10-18T16:35:00.042584Z, STALE after 2026-10-18T16:45:00.042584Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-18T16:25:02.204140Z (CURRENT at publish; CURRENT until 2026-10-18T16:45:02.204140Z, STALE after 2026-10-18T16:55:02.204140Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-18T15:28:02.483794Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.46s
+model board generated 2026-10-18T15:28:02.483794Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.46s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -33,7 +33,7 @@ model board generated 2026-10-18T15:28:02.483794Z · simulations this update: 0 
 | 2026-10-19T23:00:00Z | Corinthians vs Vitória (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-20T00:15:00Z | Deportivo Riestra vs Unión (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (22; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (21; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -44,16 +44,15 @@ model board generated 2026-10-18T15:28:02.483794Z · simulations this update: 0 
 | Monterrey vs Pachuca | home team total over 0.5 | no | 0.1400 | 0.255 [0.132, 0.388] | +0.106 | +0.021 | 0.16 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | Result: home | no | 0.4200 | 0.564 [0.404, 0.723] | +0.127 | +0.020 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | Result: away | no | 0.6400 | 0.753 [0.608, 0.875] | +0.097 | +0.018 | 0.65 | - | * | RESEARCH_CANDIDATE |
-| Lyon vs Nice | Result: away | no | 0.7700 | 0.857 [0.756, 0.946] | +0.075 | +0.017 | 0.78 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home wins by more than 2.5 | no | 0.8400 | 0.908 [0.828, 0.971] | +0.058 | +0.015 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | Result: home | yes | 0.4100 | 0.548 [0.374, 0.714] | +0.121 | +0.012 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | Remo vs Red Bull Bragantino | away wins by more than 2.5 | no | 0.9100 | 0.950 [0.901, 0.985] | +0.035 | +0.011 | 0.92 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away team total over 0.5 | no | 0.1700 | 0.264 [0.157, 0.379] | +0.084 | +0.009 | 0.17 | - | * | RESEARCH_CANDIDATE |
+| Lyon vs Nice | Result: away | no | 0.7800 | 0.857 [0.756, 0.946] | +0.065 | +0.007 | 0.78 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away team total over 1.5 | no | 0.4800 | 0.601 [0.447, 0.747] | +0.104 | +0.006 | 0.48 | - |  | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away wins by more than 1.5 | no | 0.8300 | 0.887 [0.799, 0.957] | +0.048 | +0.006 | 0.83 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | Result: away | yes | 0.1900 | 0.294 [0.169, 0.438] | +0.094 | +0.005 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away wins by more than 2.5 | no | 0.9300 | 0.957 [0.913, 0.989] | +0.023 | +0.005 | 0.93 | - |  | RESEARCH_CANDIDATE |
-| FC Cincinnati vs Columbus Crew | Second-half result: away | no | 0.6800 | 0.765 [0.658, 0.872] | +0.070 | +0.005 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Remo vs Red Bull Bragantino | btts | no | 0.4100 | 0.513 [0.387, 0.636] | +0.086 | +0.003 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away team total over 2.5 | no | 0.7500 | 0.830 [0.717, 0.925] | +0.067 | +0.003 | 0.75 | - |  | RESEARCH_CANDIDATE |
 | Remo vs Red Bull Bragantino | Result: away | no | 0.5650 | 0.671 [0.529, 0.801] | +0.089 | +0.002 | 0.56 | - | * | RESEARCH_CANDIDATE |
@@ -63,9 +62,9 @@ model board generated 2026-10-18T15:28:02.483794Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 425
+action_NO_EDGE: 426
 action_NO_QUOTE: 1135
-action_RESEARCH_CANDIDATE: 22
+action_RESEARCH_CANDIDATE: 21
 contract_sides: 1582
 fixtures: 20
 fixtures_model_invalidated: 0
