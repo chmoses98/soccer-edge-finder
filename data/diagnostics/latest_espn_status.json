@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-18T16:01:40.550722+00:00",
+  "as_of": "2026-10-18T18:55:58.454120+00:00",
   "events": 817,
   "events_skipped_unmapped": 428,
   "fixtures_mapped": 389,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=24"
+      "weather_stopped:consecutive_failures:skipped=11"
     ],
     "state": "DEGRADED"
   },
@@ -82,12 +82,12 @@
   ],
   "lineups": {
     "captured": 35,
-    "events": 71,
+    "events": 57,
     "failures": [],
-    "published_post": 25,
-    "published_pre_kickoff": 3,
-    "unchanged": 36,
-    "unpublished": 43
+    "published_post": 18,
+    "published_pre_kickoff": 8,
+    "unchanged": 22,
+    "unpublished": 31
   },
   "map_proposals": {
     "bel.1": {
@@ -163,7 +163,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 19,
+  "results_appended": 10,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -216,17 +216,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 7,
-    "events": 34,
+    "captured": 18,
+    "events": 32,
     "failures": [
-      "401841277: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-22.9064&longitude=-43.1822&hourly=",
-      "401841276: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Porto%20Alegre&count=5&language",
-      "401841269: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Salvador&count=5&language=en&fo"
+      "401877774: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=6.2450&longitude=-75.5715&hourly=te",
+      "401878059: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bucaramanga&count=5&language=en",
+      "401877840: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Villavicencio&count=5&language="
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 24,
+    "skipped": 11,
     "stopped": "consecutive_failures"
   }
 }
