@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261018T173017Z-1b31b1` · generated 2026-10-18T17:30:17.076583Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261018T173513Z-25fc30` · generated 2026-10-18T17:35:13.807137Z · trigger `kickoff_chain:T-15` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-18T17:27:21.228272Z (CURRENT at publish; CURRENT until 2026-10-18T17:47:21.228272Z, STALE after 2026-10-18T17:57:21.228272Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-18T17:32:15.357479Z (CURRENT at publish; CURRENT until 2026-10-18T17:52:15.357479Z, STALE after 2026-10-18T18:02:15.357479Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-18T17:30:15.367789Z · simulations this update: 7 · Odds API calls this update: 0 (credits 0) · reprice 0.16s
+model board generated 2026-10-18T17:30:15.367789Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.38s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-18T17:30:15.367789Z · simulations this update: 7 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-18T17:45:00Z | Racing Club vs Independiente (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
+| 2026-10-18T17:45:00Z | Racing Club vs Independiente (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
 | 2026-10-18T18:45:00Z | Lyon vs Nice (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T18:45:00Z | Juventus vs Lazio (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T19:00:00Z | Fluminense vs Santos (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -59,8 +59,8 @@ model board generated 2026-10-18T17:30:15.367789Z · simulations this update: 7 
 ## Counts
 
 ```
-action_NO_EDGE: 422
-action_NO_QUOTE: 295
+action_NO_EDGE: 425
+action_NO_QUOTE: 292
 action_RESEARCH_CANDIDATE: 19
 contract_sides: 736
 fixtures: 19
