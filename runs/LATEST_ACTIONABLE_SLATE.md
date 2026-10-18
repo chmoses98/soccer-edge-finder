@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261018T203307Z-b6036d` · generated 2026-10-18T20:33:07.126049Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
+slate `slate-20261018T204757Z-453160` · generated 2026-10-18T20:47:57.569600Z · trigger `kickoff_chain:T-15` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-18T20:30:05.928050Z (CURRENT at publish; CURRENT until 2026-10-18T20:50:05.928050Z, STALE after 2026-10-18T21:00:05.928050Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-18T20:45:00.025719Z (CURRENT at publish; CURRENT until 2026-10-18T21:05:00.025719Z, STALE after 2026-10-18T21:15:00.025719Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-18T20:33:00.768021Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.20s
+model board generated 2026-10-18T20:33:00.768021Z · simulations this update: 0 · Odds API calls this update: 2 (credits 6) · reprice 0.17s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,8 +12,8 @@ model board generated 2026-10-18T20:33:00.768021Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-18T21:00:00Z | Estudiantes de La Plata vs San Lorenzo (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-10-18T21:00:00Z | FC Cincinnati vs Columbus Crew (usa.mls) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 77 | 0 |
+| 2026-10-18T21:00:00Z | Estudiantes de La Plata vs San Lorenzo (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
+| 2026-10-18T21:00:00Z | FC Cincinnati vs Columbus Crew (usa.mls) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 77 | 0 |
 | 2026-10-18T21:30:00Z | Bahia vs Flamengo (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-18T22:30:00Z | Remo vs Red Bull Bragantino (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-18T23:15:00Z | Belgrano vs River Plate (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
@@ -40,20 +40,20 @@ model board generated 2026-10-18T20:33:00.768021Z · simulations this update: 1 
 | FC Cincinnati vs Columbus Crew | away team total over 1.5 | no | 0.4700 | 0.601 [0.447, 0.747] | +0.114 | +0.016 | 0.48 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home wins by more than 2.5 | no | 0.8400 | 0.908 [0.828, 0.971] | +0.058 | +0.015 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | Remo vs Red Bull Bragantino | btts | no | 0.4000 | 0.513 [0.387, 0.636] | +0.096 | +0.013 | 0.41 | - | * | RESEARCH_CANDIDATE |
-| FC Cincinnati vs Columbus Crew | Result: home | yes | 0.4100 | 0.548 [0.374, 0.714] | +0.121 | +0.012 | 0.42 | 0.418 | * | RESEARCH_CANDIDATE |
 | Bahia vs Flamengo | btts | no | 0.4000 | 0.508 [0.380, 0.636] | +0.091 | +0.010 | 0.4 | - | * | RESEARCH_CANDIDATE |
-| FC Cincinnati vs Columbus Crew | Result: away | no | 0.6500 | 0.753 [0.608, 0.875] | +0.087 | +0.009 | 0.65 | 0.657 |  | RESEARCH_CANDIDATE |
+| Bahia vs Flamengo | Total goals over 2.5 | no | 0.4200 | 0.547 [0.381, 0.706] | +0.110 | +0.010 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away wins by more than 1.5 | no | 0.8300 | 0.887 [0.799, 0.957] | +0.048 | +0.006 | 0.83 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | Result: away | yes | 0.1900 | 0.294 [0.169, 0.438] | +0.094 | +0.005 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away wins by more than 2.5 | no | 0.9300 | 0.957 [0.913, 0.989] | +0.023 | +0.005 | 0.93 | - |  | RESEARCH_CANDIDATE |
+| Bahia vs Flamengo | Total goals over 3.5 | no | 0.6500 | 0.750 [0.604, 0.876] | +0.084 | +0.004 | 0.65 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | Total goals over 3.5 | no | 0.6300 | 0.737 [0.582, 0.868] | +0.090 | +0.004 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away team total over 2.5 | no | 0.7500 | 0.830 [0.717, 0.925] | +0.067 | +0.003 | 0.75 | - |  | RESEARCH_CANDIDATE |
-| FC Cincinnati vs Columbus Crew | home wins by more than 1.5 | yes | 0.2200 | 0.344 [0.189, 0.518] | +0.112 | +0.003 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Remo vs Red Bull Bragantino | Result: away | no | 0.5650 | 0.671 [0.529, 0.801] | +0.089 | +0.002 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Remo vs Red Bull Bragantino | away wins by more than 1.5 | no | 0.7900 | 0.857 [0.757, 0.936] | +0.056 | +0.002 | 0.79 | - | * | RESEARCH_CANDIDATE |
 | Remo vs Red Bull Bragantino | away wins by more than 2.5 | no | 0.9200 | 0.950 [0.901, 0.985] | +0.025 | +0.002 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | First half: home wins by more than 1.5 | no | 0.8500 | 0.906 [0.839, 0.971] | +0.047 | +0.001 | 0.85 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | Total goals over 0.5 | no | 0.0500 | 0.092 [0.040, 0.151] | +0.039 | +0.001 | 0.05 | - |  | RESEARCH_CANDIDATE |
+| Monterrey vs Pachuca | Exact score 0-1 (home-away) | yes | 0.0500 | 0.084 [0.042, 0.134] | +0.031 | +0.001 | 0.05 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
