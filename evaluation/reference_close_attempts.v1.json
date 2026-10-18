@@ -1,9 +1,9 @@
 {
  "counts": {
-  "MISSED_DISPATCHER_CLOSE": 35,
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 105,
   "PINNACLE_VALID_CLOSE": 155,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 105,
   "NO_SPORT_KEY": 19,
+  "MISSED_DISPATCHER_CLOSE": 36,
   "PINNACLE_QUOTED_NOTHING": 15
  },
  "fixtures": {
@@ -1216,6 +1216,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261011T004500Z"
+  },
+  "fx:mex.liga_mx:2026:mex.cruz_azul:mex.juarez": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
   },
   "fx:mex.liga_mx:2026:mex.guadalajara:mex.tigres": {
    "state": "PINNACLE_VALID_CLOSE",
