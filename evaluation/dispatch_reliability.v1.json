@@ -1,12 +1,12 @@
 {
  "schema": "dispatch_reliability_v1",
- "generated_at": "2026-10-18T16:52:16Z",
+ "generated_at": "2026-10-18T18:34:28Z",
  "cadence": {
   "external_heartbeat_minutes": null,
   "github_backup_minutes": 60
  },
  "last_wake": {
-  "started_at": "2026-10-18T16:13:39Z",
+  "started_at": "2026-10-18T18:27:28Z",
   "trigger_source": "workflow-run",
   "status": "OK",
   "no_action_reason": null
@@ -28,29 +28,29 @@
   "github_backup_actual": 7,
   "github_backup_success": 0.2916666666666667,
   "capture_runs": 3,
-  "capture_runs_failed": 2,
-  "paid_calls": 22,
-  "credits_spent": 66,
-  "fixtures_with_horizons": 65,
-  "horizons_eligible": 282,
-  "horizons_delivered": 277,
+  "capture_runs_failed": 1,
+  "paid_calls": 32,
+  "credits_spent": 96,
+  "fixtures_with_horizons": 71,
+  "horizons_eligible": 274,
+  "horizons_delivered": 269,
   "horizons_missed": 5,
   "horizon_states": {
-   "DELIVERED": 277,
+   "DELIVERED": 269,
    "MISSED_BEFORE_WAKE": 5
   },
-  "capture_success_rate": 0.9822695035460993,
-  "close_fixtures_eligible": 53,
-  "close_fixtures_delivered": 52,
-  "close_success_rate": 0.9811320754716981
+  "capture_success_rate": 0.9817518248175182,
+  "close_fixtures_eligible": 52,
+  "close_fixtures_delivered": 51,
+  "close_success_rate": 0.9807692307692307
  },
  "last_7d": {
   "span_hours": 168.0,
-  "heartbeats_actual": 153,
+  "heartbeats_actual": 155,
   "heartbeats_by_source": {
    "chain": 30,
    "github-schedule-backup": 35,
-   "workflow-run": 88
+   "workflow-run": 90
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -62,18 +62,18 @@
   "github_backup_success": 0.20833333333333334,
   "capture_runs": 29,
   "capture_runs_failed": 3,
-  "paid_calls": 112,
-  "credits_spent": 336,
-  "fixtures_with_horizons": 163,
-  "horizons_eligible": 771,
-  "horizons_delivered": 753,
+  "paid_calls": 124,
+  "credits_spent": 372,
+  "fixtures_with_horizons": 170,
+  "horizons_eligible": 773,
+  "horizons_delivered": 755,
   "horizons_missed": 18,
   "horizon_states": {
-   "DELIVERED": 753,
+   "DELIVERED": 755,
    "MISSED_BEFORE_WAKE": 14,
    "MISSED_EXECUTION_FAILURE": 4
   },
-  "capture_success_rate": 0.9766536964980544,
+  "capture_success_rate": 0.9767141009055628,
   "close_fixtures_eligible": 151,
   "close_fixtures_delivered": 147,
   "close_success_rate": 0.9735099337748344
