@@ -4,11 +4,11 @@
   "github_backup_minutes": 60
  },
  "definition": "capture_success_rate = delivered / eligible horizons whose window closed in the span (NOT_APPLICABLE excluded); close_success_rate = fixtures with a T-15 or T-5 delivery / fixtures whose close windows closed in the span",
- "generated_at": "2026-10-18T09:18:06Z",
+ "generated_at": "2026-10-18T09:55:32Z",
  "last_24h": {
   "capture_runs": 3,
   "capture_runs_failed": 2,
-  "capture_success_rate": 0.9828178694158075,
+  "capture_success_rate": 0.9829351535836177,
   "close_fixtures_delivered": 54,
   "close_fixtures_eligible": 55,
   "close_success_rate": 0.9818181818181818,
@@ -16,7 +16,7 @@
   "external_heartbeats_actual": 0,
   "external_heartbeats_expected": null,
   "external_trigger_success": null,
-  "fixtures_with_horizons": 66,
+  "fixtures_with_horizons": 68,
   "github_backup_actual": 6,
   "github_backup_expected": 24,
   "github_backup_success": 0.25,
@@ -29,11 +29,11 @@
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
   "horizon_states": {
-   "DELIVERED": 286,
+   "DELIVERED": 288,
    "MISSED_BEFORE_WAKE": 5
   },
-  "horizons_delivered": 286,
-  "horizons_eligible": 291,
+  "horizons_delivered": 288,
+  "horizons_eligible": 293,
   "horizons_missed": 5,
   "paid_calls": 41,
   "span_hours": 24.0
@@ -49,15 +49,15 @@
   "external_heartbeats_actual": 0,
   "external_heartbeats_expected": null,
   "external_trigger_success": null,
-  "fixtures_with_horizons": 158,
+  "fixtures_with_horizons": 160,
   "github_backup_actual": 34,
   "github_backup_expected": 168,
   "github_backup_success": 0.20238095238095238,
-  "heartbeats_actual": 152,
+  "heartbeats_actual": 153,
   "heartbeats_by_source": {
    "chain": 30,
    "github-schedule-backup": 34,
-   "workflow-run": 88
+   "workflow-run": 89
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -74,7 +74,7 @@
  },
  "last_wake": {
   "no_action_reason": "CAPTURE_IN_PROGRESS",
-  "started_at": "2026-10-18T09:18:06Z",
+  "started_at": "2026-10-18T09:55:32Z",
   "status": "OK",
   "trigger_source": "workflow-run"
  },
