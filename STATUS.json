@@ -1,50 +1,41 @@
 {
-  "as_of": "2026-10-18T10:58:01.332962+00:00",
-  "events": 17,
+  "as_of": "2026-10-18T11:38:22.174058+00:00",
+  "events": 6,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 17,
+  "fixtures_mapped": 6,
   "health": {
-    "reasons": [
-      "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=6"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
-    "eng.1",
     "esp.1",
-    "fra.1",
-    "ita.1"
+    "ger.1"
   ],
   "lineups": {
-    "captured": 1,
-    "events": 17,
+    "captured": 0,
+    "events": 6,
     "failures": [],
-    "published_post": 1,
-    "published_pre_kickoff": 0,
-    "unchanged": 16,
-    "unpublished": 16
+    "published_post": 0,
+    "published_pre_kickoff": 1,
+    "unchanged": 6,
+    "unpublished": 5
   },
   "map_proposals": {},
   "map_version": "4",
   "results_appended": 0,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
-  "scoreboard_queries": 4,
+  "scoreboard_queries": 2,
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 8,
-    "events": 17,
-    "failures": [
-      "401876439: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Angers&count=5&language=en&form",
-      "401876438: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Le%20Havre&count=5&language=en&",
-      "401876435: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=47.7482&longitude=-3.3718&hourly=te"
-    ],
+    "captured": 6,
+    "events": 6,
+    "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 6,
-    "stopped": "consecutive_failures"
+    "skipped": 0,
+    "stopped": null
   }
 }

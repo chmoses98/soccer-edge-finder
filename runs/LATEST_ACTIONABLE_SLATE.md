@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261018T111256Z-eb607f` · generated 2026-10-18T11:12:56.583570Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261018T113826Z-ec5c10` · generated 2026-10-18T11:38:26.193473Z · trigger `kickoff_chain:T-120/T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-18T11:10:01.733261Z (CURRENT at publish; CURRENT until 2026-10-18T11:30:01.733261Z, STALE after 2026-10-18T11:40:01.733261Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-18T11:35:20.407397Z (CURRENT at publish; CURRENT until 2026-10-18T11:55:20.407397Z, STALE after 2026-10-18T12:05:20.407397Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-18T10:59:02.033215Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.35s
+model board generated 2026-10-18T10:59:02.033215Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.39s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-18T10:59:02.033215Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-18T12:00:00Z | Osasuna vs Racing Santander (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
+| 2026-10-18T12:00:00Z | Osasuna vs Racing Santander (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
 | 2026-10-18T13:00:00Z | Bournemouth vs Sunderland (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T13:00:00Z | Brighton & Hove Albion vs Crystal Palace (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T13:00:00Z | Leeds United vs Manchester United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -45,7 +45,7 @@ model board generated 2026-10-18T10:59:02.033215Z · simulations this update: 0 
 | 2026-10-19T19:00:00Z | Getafe vs Rayo Vallecano (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-19T23:00:00Z | Corinthians vs Vitória (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (30; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (29; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -72,26 +72,23 @@ model board generated 2026-10-18T10:59:02.033215Z · simulations this update: 0 
 | Angers vs Marseille | Result: away | no | 0.5100 | 0.643 [0.474, 0.799] | +0.116 | +0.009 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away wins by more than 1.5 | no | 0.8300 | 0.890 [0.811, 0.955] | +0.050 | +0.007 | 0.83 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away wins by more than 2.5 | no | 0.9300 | 0.959 [0.921, 0.988] | +0.024 | +0.006 | 0.93 | - |  | RESEARCH_CANDIDATE |
-| Bahia vs Flamengo | btts | no | 0.4000 | 0.504 [0.374, 0.627] | +0.088 | +0.006 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Remo vs Red Bull Bragantino | btts | no | 0.4100 | 0.515 [0.386, 0.638] | +0.088 | +0.006 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away team total over 0.5 | no | 0.1800 | 0.264 [0.159, 0.371] | +0.073 | +0.005 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | Result: away | yes | 0.2000 | 0.304 [0.171, 0.443] | +0.092 | +0.005 | 0.2 | - |  | RESEARCH_CANDIDATE |
-| Fluminense vs Santos | away wins by more than 1.5 | no | 0.8700 | 0.916 [0.851, 0.968] | +0.038 | +0.004 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Borussia Mönchengladbach vs TSG Hoffenheim | Result: away | no | 0.5500 | 0.681 [0.498, 0.837] | +0.114 | +0.003 | 0.55 | - |  | RESEARCH_CANDIDATE |
+| Angers vs Marseille | Result: home | yes | 0.2500 | 0.379 [0.217, 0.558] | +0.116 | +0.003 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | Osasuna vs Racing Santander | Result: draw | no | 0.7500 | 0.810 [0.742, 0.888] | +0.047 | +0.000 | 0.75 | 0.743 | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 498
+action_NO_EDGE: 499
 action_NO_QUOTE: 202
-action_RESEARCH_CANDIDATE: 30
+action_RESEARCH_CANDIDATE: 29
 contract_sides: 730
 fixtures: 32
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
-
-Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
