@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261018T104254Z-dab64a` · generated 2026-10-18T10:42:54.841837Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261018T105902Z-c63661` · generated 2026-10-18T10:59:02.597602Z · trigger `kickoff_chain:T-120/T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-18T10:40:00.083649Z (CURRENT at publish; CURRENT until 2026-10-18T11:00:00.083649Z, STALE after 2026-10-18T11:10:00.083649Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-18T10:55:01.716666Z (CURRENT at publish; CURRENT until 2026-10-18T11:15:01.716666Z, STALE after 2026-10-18T11:25:01.716666Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-18T09:32:23.081804Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.34s
+model board generated 2026-10-18T10:59:02.033215Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.34s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-18T09:32:23.081804Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-18T12:00:00Z | Osasuna vs Racing Santander (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-18T12:00:00Z | Osasuna vs Racing Santander (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
 | 2026-10-18T13:00:00Z | Bournemouth vs Sunderland (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T13:00:00Z | Brighton & Hove Albion vs Crystal Palace (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T13:00:00Z | Leeds United vs Manchester United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -78,7 +78,7 @@ model board generated 2026-10-18T09:32:23.081804Z · simulations this update: 0 
 | Monterrey vs Pachuca | Result: away | yes | 0.2000 | 0.304 [0.171, 0.443] | +0.092 | +0.005 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Fluminense vs Santos | away wins by more than 1.5 | no | 0.8700 | 0.916 [0.851, 0.968] | +0.038 | +0.004 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Borussia Mönchengladbach vs TSG Hoffenheim | Result: away | no | 0.5500 | 0.681 [0.498, 0.837] | +0.114 | +0.003 | 0.55 | - |  | RESEARCH_CANDIDATE |
-| Osasuna vs Racing Santander | Result: draw | no | 0.7500 | 0.810 [0.742, 0.888] | +0.047 | +0.000 | 0.75 | - | * | RESEARCH_CANDIDATE |
+| Osasuna vs Racing Santander | Result: draw | no | 0.7500 | 0.810 [0.742, 0.888] | +0.047 | +0.000 | 0.75 | 0.743 | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
