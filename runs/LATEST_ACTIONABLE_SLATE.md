@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261018T151814Z-1cda38` · generated 2026-10-18T15:18:14.408836Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261018T152803Z-0e052d` · generated 2026-10-18T15:28:03.130918Z · trigger `kickoff_chain:T-60/T-5` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-18T15:15:14.634153Z (CURRENT at publish; CURRENT until 2026-10-18T15:35:14.634153Z, STALE after 2026-10-18T15:45:14.634153Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-18T15:25:01.565272Z (CURRENT at publish; CURRENT until 2026-10-18T15:45:01.565272Z, STALE after 2026-10-18T15:55:01.565272Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-18T15:03:07.795782Z · simulations this update: 0 · Odds API calls this update: 2 (credits 6) · reprice 0.44s
+model board generated 2026-10-18T15:28:02.483794Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.42s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -15,7 +15,7 @@ model board generated 2026-10-18T15:03:07.795782Z · simulations this update: 0 
 | 2026-10-18T15:30:00Z | Nottingham Forest vs Arsenal (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
 | 2026-10-18T15:30:00Z | Borussia Mönchengladbach vs TSG Hoffenheim (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
 | 2026-10-18T16:00:00Z | AC Milan vs Atalanta (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
-| 2026-10-18T16:30:00Z | Málaga vs Real Sociedad (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
+| 2026-10-18T16:30:00Z | Málaga vs Real Sociedad (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
 | 2026-10-18T17:45:00Z | Racing Club vs Independiente (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-18T18:45:00Z | Lyon vs Nice (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-18T18:45:00Z | Juventus vs Lazio (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
@@ -36,12 +36,12 @@ model board generated 2026-10-18T15:03:07.795782Z · simulations this update: 0 
 | 2026-10-19T23:00:00Z | Corinthians vs Vitória (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-20T00:15:00Z | Deportivo Riestra vs Unión (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (27; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (26; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Nottingham Forest vs Arsenal | Result: away | no | 0.3600 | 0.625 [0.464, 0.779] | +0.249 | +0.142 | 0.5 | 0.355 | * | RESEARCH_CANDIDATE |
-| Nottingham Forest vs Arsenal | Result: home | yes | 0.1400 | 0.338 [0.195, 0.496] | +0.189 | +0.083 | 0.21 | 0.131 |  | RESEARCH_CANDIDATE |
+| Nottingham Forest vs Arsenal | Result: home | yes | 0.1300 | 0.338 [0.195, 0.496] | +0.200 | +0.094 | 0.21 | 0.131 |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home team total over 1.5 | no | 0.4000 | 0.584 [0.399, 0.755] | +0.167 | +0.054 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home team total over 2.5 | no | 0.6800 | 0.814 [0.670, 0.929] | +0.119 | +0.043 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home wins by more than 1.5 | no | 0.6500 | 0.779 [0.647, 0.896] | +0.113 | +0.034 | 0.68 | - | * | RESEARCH_CANDIDATE |
@@ -58,7 +58,6 @@ model board generated 2026-10-18T15:03:07.795782Z · simulations this update: 0 
 | FC Cincinnati vs Columbus Crew | away wins by more than 1.5 | no | 0.8300 | 0.887 [0.799, 0.957] | +0.048 | +0.006 | 0.83 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | Result: away | yes | 0.1900 | 0.294 [0.169, 0.438] | +0.094 | +0.005 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away wins by more than 2.5 | no | 0.9300 | 0.957 [0.913, 0.989] | +0.023 | +0.005 | 0.93 | - |  | RESEARCH_CANDIDATE |
-| Borussia Mönchengladbach vs TSG Hoffenheim | Result: home | yes | 0.3200 | 0.468 [0.281, 0.656] | +0.132 | +0.004 | 0.32 | 0.317 | * | RESEARCH_CANDIDATE |
 | Remo vs Red Bull Bragantino | btts | no | 0.4100 | 0.513 [0.387, 0.636] | +0.086 | +0.003 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away team total over 2.5 | no | 0.7500 | 0.830 [0.717, 0.925] | +0.067 | +0.003 | 0.75 | - |  | RESEARCH_CANDIDATE |
 | Remo vs Red Bull Bragantino | Result: away | no | 0.5650 | 0.671 [0.529, 0.801] | +0.089 | +0.002 | 0.56 | - | * | RESEARCH_CANDIDATE |
@@ -71,10 +70,10 @@ model board generated 2026-10-18T15:03:07.795782Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 438
-action_NO_QUOTE: 1193
-action_RESEARCH_CANDIDATE: 27
-contract_sides: 1658
+action_NO_EDGE: 439
+action_NO_QUOTE: 1135
+action_RESEARCH_CANDIDATE: 26
+contract_sides: 1600
 fixtures: 23
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
