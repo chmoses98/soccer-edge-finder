@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261018T101635Z-d99151` · generated 2026-10-18T10:16:35.326911Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261018T102757Z-5a1b4f` · generated 2026-10-18T10:27:57.886257Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-18T10:13:34.007085Z (CURRENT at publish; CURRENT until 2026-10-18T10:33:34.007085Z, STALE after 2026-10-18T10:43:34.007085Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-18T10:25:00.038383Z (CURRENT at publish; CURRENT until 2026-10-18T10:45:00.038383Z, STALE after 2026-10-18T10:55:00.038383Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-18T09:32:23.081804Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.35s
+model board generated 2026-10-18T09:32:23.081804Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.35s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -55,15 +55,15 @@ model board generated 2026-10-18T09:32:23.081804Z · simulations this update: 0 
 | Monterrey vs Pachuca | home team total over 1.5 | no | 0.4000 | 0.588 [0.409, 0.748] | +0.171 | +0.060 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home wins by more than 1.5 | no | 0.6500 | 0.784 [0.653, 0.894] | +0.118 | +0.039 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home team total over 2.5 | no | 0.6900 | 0.817 [0.680, 0.926] | +0.112 | +0.038 | 0.72 | - |  | RESEARCH_CANDIDATE |
-| Lyon vs Nice | Result: away | no | 0.7600 | 0.857 [0.756, 0.946] | +0.084 | +0.026 | 0.78 | - | * | RESEARCH_CANDIDATE |
+| Fluminense vs Santos | Result: away | no | 0.6750 | 0.787 [0.670, 0.893] | +0.097 | +0.028 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | First-half result: home | no | 0.5600 | 0.678 [0.538, 0.792] | +0.101 | +0.023 | 0.58 | - | * | RESEARCH_CANDIDATE |
-| Fluminense vs Santos | Result: away | no | 0.6800 | 0.787 [0.670, 0.893] | +0.092 | +0.023 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | Fluminense vs Santos | home wins by more than 1.5 | yes | 0.1900 | 0.331 [0.179, 0.499] | +0.131 | +0.022 | 0.21 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | Result: away | no | 0.6400 | 0.756 [0.626, 0.870] | +0.100 | +0.022 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Fluminense vs Santos | Result: home | yes | 0.4050 | 0.554 [0.396, 0.719] | +0.132 | +0.022 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | Result: home | yes | 0.4100 | 0.551 [0.389, 0.711] | +0.124 | +0.021 | 0.43 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home wins by more than 2.5 | no | 0.8400 | 0.910 [0.834, 0.971] | +0.061 | +0.020 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | Result: home | no | 0.4300 | 0.571 [0.414, 0.720] | +0.124 | +0.020 | 0.44 | - | * | RESEARCH_CANDIDATE |
+| Lyon vs Nice | Result: away | no | 0.7700 | 0.857 [0.756, 0.946] | +0.075 | +0.017 | 0.78 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away team total over 1.5 | no | 0.4800 | 0.602 [0.451, 0.739] | +0.105 | +0.016 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Bahia vs Flamengo | btts | no | 0.3900 | 0.504 [0.374, 0.627] | +0.098 | +0.016 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home team total over 0.5 | no | 0.1500 | 0.257 [0.137, 0.380] | +0.098 | +0.014 | 0.16 | - |  | RESEARCH_CANDIDATE |
