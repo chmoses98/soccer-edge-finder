@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261018T142808Z-5bcf01` · generated 2026-10-18T14:28:08.075660Z · trigger `kickoff_chain:T-120/T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261018T144255Z-fde0d3` · generated 2026-10-18T14:42:55.095478Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-18T14:25:02.439172Z (CURRENT at publish; CURRENT until 2026-10-18T14:45:02.439172Z, STALE after 2026-10-18T14:55:02.439172Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-18T14:40:02.453437Z (CURRENT at publish; CURRENT until 2026-10-18T15:00:02.453437Z, STALE after 2026-10-18T15:10:02.453437Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-18T14:28:06.998450Z · simulations this update: 2 · Odds API calls this update: 2 (credits 6) · reprice 0.48s
+model board generated 2026-10-18T14:28:06.998450Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.49s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -39,28 +39,28 @@ model board generated 2026-10-18T14:28:06.998450Z · simulations this update: 2 
 | 2026-10-19T23:00:00Z | Corinthians vs Vitória (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-20T00:15:00Z | Deportivo Riestra vs Unión (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (26; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (25; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Nottingham Forest vs Arsenal | Result: away | no | 0.3800 | 0.625 [0.464, 0.779] | +0.228 | +0.121 | 0.5 | 0.373 | * | RESEARCH_CANDIDATE |
-| Nottingham Forest vs Arsenal | Result: home | yes | 0.1500 | 0.338 [0.195, 0.496] | +0.179 | +0.073 | 0.21 | 0.141 |  | RESEARCH_CANDIDATE |
+| Nottingham Forest vs Arsenal | Result: away | no | 0.3700 | 0.625 [0.464, 0.779] | +0.238 | +0.131 | 0.5 | 0.373 | * | RESEARCH_CANDIDATE |
+| Nottingham Forest vs Arsenal | Result: home | yes | 0.1400 | 0.338 [0.195, 0.496] | +0.189 | +0.083 | 0.21 | 0.141 |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home team total over 1.5 | no | 0.4000 | 0.584 [0.399, 0.755] | +0.167 | +0.054 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home team total over 2.5 | no | 0.6800 | 0.814 [0.670, 0.929] | +0.119 | +0.043 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home wins by more than 1.5 | no | 0.6500 | 0.779 [0.647, 0.896] | +0.113 | +0.034 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | First-half result: home | no | 0.5600 | 0.674 [0.548, 0.782] | +0.097 | +0.022 | 0.58 | - | * | RESEARCH_CANDIDATE |
+| Monterrey vs Pachuca | home team total over 0.5 | no | 0.1400 | 0.255 [0.132, 0.388] | +0.106 | +0.021 | 0.16 | - |  | RESEARCH_CANDIDATE |
+| Monterrey vs Pachuca | Result: home | no | 0.4200 | 0.564 [0.404, 0.723] | +0.127 | +0.020 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | Result: away | no | 0.6400 | 0.753 [0.608, 0.875] | +0.097 | +0.018 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Lyon vs Nice | Result: away | no | 0.7700 | 0.857 [0.756, 0.946] | +0.075 | +0.017 | 0.78 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home wins by more than 2.5 | no | 0.8400 | 0.908 [0.828, 0.971] | +0.058 | +0.015 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | Result: home | yes | 0.4100 | 0.548 [0.374, 0.714] | +0.121 | +0.012 | 0.42 | - |  | RESEARCH_CANDIDATE |
-| Monterrey vs Pachuca | home team total over 0.5 | no | 0.1500 | 0.255 [0.132, 0.388] | +0.096 | +0.011 | 0.16 | - |  | RESEARCH_CANDIDATE |
-| Monterrey vs Pachuca | Result: home | no | 0.4300 | 0.564 [0.404, 0.723] | +0.117 | +0.010 | 0.43 | - | * | RESEARCH_CANDIDATE |
+| Lorient vs AS Monaco | Result: home | yes | 0.2400 | 0.381 [0.217, 0.556] | +0.128 | +0.011 | 0.25 | 0.252 | * | RESEARCH_CANDIDATE |
 | Fluminense vs Santos | home wins by more than 2.5 | yes | 0.0800 | 0.165 [0.067, 0.299] | +0.080 | +0.006 | 0.08 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away team total over 1.5 | no | 0.4800 | 0.601 [0.447, 0.747] | +0.104 | +0.006 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away wins by more than 1.5 | no | 0.8300 | 0.887 [0.799, 0.957] | +0.048 | +0.006 | 0.83 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | Result: away | yes | 0.1900 | 0.294 [0.169, 0.438] | +0.094 | +0.005 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away wins by more than 2.5 | no | 0.9300 | 0.957 [0.913, 0.989] | +0.023 | +0.005 | 0.93 | - |  | RESEARCH_CANDIDATE |
-| Borussia Mönchengladbach vs TSG Hoffenheim | Result: home | yes | 0.3200 | 0.468 [0.281, 0.656] | +0.132 | +0.004 | 0.32 | 0.315 | * | RESEARCH_CANDIDATE |
 | Remo vs Red Bull Bragantino | btts | no | 0.4100 | 0.513 [0.387, 0.636] | +0.086 | +0.003 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away team total over 2.5 | no | 0.7500 | 0.830 [0.717, 0.925] | +0.067 | +0.003 | 0.75 | - |  | RESEARCH_CANDIDATE |
 | Remo vs Red Bull Bragantino | Result: away | no | 0.5650 | 0.671 [0.529, 0.801] | +0.089 | +0.002 | 0.56 | - | * | RESEARCH_CANDIDATE |
@@ -68,20 +68,19 @@ model board generated 2026-10-18T14:28:06.998450Z · simulations this update: 2 
 | Remo vs Red Bull Bragantino | away wins by more than 2.5 | no | 0.9200 | 0.950 [0.901, 0.985] | +0.025 | +0.002 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | First half: home wins by more than 1.5 | no | 0.8500 | 0.906 [0.839, 0.971] | +0.047 | +0.001 | 0.85 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | Total goals over 0.5 | no | 0.0500 | 0.092 [0.040, 0.151] | +0.039 | +0.001 | 0.05 | - | * | RESEARCH_CANDIDATE |
-| Lorient vs AS Monaco | Result: home | yes | 0.2500 | 0.381 [0.217, 0.556] | +0.118 | +0.000 | 0.25 | 0.252 | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 457
+action_NO_EDGE: 458
 action_NO_QUOTE: 1341
-action_RESEARCH_CANDIDATE: 26
+action_RESEARCH_CANDIDATE: 25
 contract_sides: 1824
 fixtures: 26
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
-Removed (kicked off): 2
+Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
