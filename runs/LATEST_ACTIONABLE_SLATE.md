@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261018T140000Z-fd6513` · generated 2026-10-18T14:00:00.196813Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261018T140521Z-16a547` · generated 2026-10-18T14:05:21.322129Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-18T13:57:03.509758Z (CURRENT at publish; CURRENT until 2026-10-18T14:17:03.509758Z, STALE after 2026-10-18T14:27:03.509758Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-18T14:02:23.576900Z (CURRENT at publish; CURRENT until 2026-10-18T14:22:23.576900Z, STALE after 2026-10-18T14:32:23.576900Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-18T13:13:46.593517Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.50s
+model board generated 2026-10-18T13:13:46.593517Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.52s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-18T13:13:46.593517Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-18T14:15:00Z | Celta Vigo vs Deportivo Alavés (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
+| 2026-10-18T14:15:00Z | Celta Vigo vs Deportivo Alavés (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
 | 2026-10-18T15:15:00Z | Le Havre vs AJ Auxerre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-18T15:15:00Z | Lorient vs AS Monaco (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-18T15:15:00Z | Paris FC vs Rennes (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -40,7 +40,7 @@ model board generated 2026-10-18T13:13:46.593517Z · simulations this update: 0 
 | 2026-10-19T23:00:00Z | Corinthians vs Vitória (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-20T00:15:00Z | Deportivo Riestra vs Unión (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (24; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (25; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -68,13 +68,14 @@ model board generated 2026-10-18T13:13:46.593517Z · simulations this update: 0 
 | Remo vs Red Bull Bragantino | away wins by more than 2.5 | no | 0.9200 | 0.950 [0.901, 0.985] | +0.025 | +0.002 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | First half: home wins by more than 1.5 | no | 0.8500 | 0.906 [0.839, 0.971] | +0.047 | +0.001 | 0.85 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | Total goals over 0.5 | no | 0.0500 | 0.092 [0.040, 0.151] | +0.039 | +0.001 | 0.05 | - | * | RESEARCH_CANDIDATE |
+| Lorient vs AS Monaco | Result: home | yes | 0.2500 | 0.381 [0.217, 0.556] | +0.118 | +0.000 | 0.25 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 465
+action_NO_EDGE: 464
 action_NO_QUOTE: 2079
-action_RESEARCH_CANDIDATE: 24
+action_RESEARCH_CANDIDATE: 25
 contract_sides: 2568
 fixtures: 27
 fixtures_model_invalidated: 0
