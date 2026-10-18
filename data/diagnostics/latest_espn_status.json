@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-18T04:53:56.761543+00:00",
+  "as_of": "2026-10-18T11:21:02.948951+00:00",
   "events": 818,
   "events_skipped_unmapped": 428,
   "fixtures_mapped": 390,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=31"
+      "weather_stopped:consecutive_failures:skipped=34"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 107,
-    "events": 107,
+    "captured": 18,
+    "events": 96,
     "failures": [],
     "published_post": 9,
-    "published_pre_kickoff": 1,
-    "unchanged": 0,
-    "unpublished": 97
+    "published_pre_kickoff": 8,
+    "unchanged": 78,
+    "unpublished": 79
   },
   "map_proposals": {
     "bel.1": {
@@ -163,7 +163,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 25,
+  "results_appended": 1,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -216,17 +216,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 9,
-    "events": 43,
+    "captured": 5,
+    "events": 42,
     "failures": [
-      "401841276: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-30.0328&longitude=-51.2302&hourly=",
-      "401841269: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Salvador&count=5&language=en&fo",
-      "401841274: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bel\u00e9m&count=5&language=en&forma"
+      "401841617: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Junin&count=5&language=en&forma",
+      "401841625: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-34.6131&longitude=-58.3772&hourly=",
+      "401841277: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rio%20de%20Janeiro&count=5&lang"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 31,
+    "skipped": 34,
     "stopped": "consecutive_failures"
   }
 }
