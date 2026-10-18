@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261018T083215Z-1665e7` · generated 2026-10-18T08:32:15.968497Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261018T084708Z-492ffb` · generated 2026-10-18T08:47:08.806990Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-18T08:29:12.733747Z (CURRENT at publish; CURRENT until 2026-10-18T08:49:12.733747Z, STALE after 2026-10-18T08:59:12.733747Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-18T08:44:13.973972Z (CURRENT at publish; CURRENT until 2026-10-18T09:04:13.973972Z, STALE after 2026-10-18T09:14:13.973972Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-18T05:46:40.402295Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.35s
 
@@ -68,6 +68,7 @@ model board generated 2026-10-18T05:46:40.402295Z · simulations this update: 0 
 | Bahia vs Flamengo | btts | no | 0.3900 | 0.504 [0.374, 0.627] | +0.098 | +0.016 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home team total over 0.5 | no | 0.1500 | 0.257 [0.137, 0.380] | +0.098 | +0.014 | 0.16 | - |  | RESEARCH_CANDIDATE |
 | Borussia Mönchengladbach vs TSG Hoffenheim | Result: home | yes | 0.3100 | 0.468 [0.281, 0.656] | +0.143 | +0.014 | 0.32 | - | * | RESEARCH_CANDIDATE |
+| Fluminense vs Santos | home wins by more than 2.5 | yes | 0.0700 | 0.166 [0.065, 0.291] | +0.091 | +0.012 | 0.08 | - |  | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away team total over 2.5 | no | 0.7500 | 0.831 [0.719, 0.921] | +0.068 | +0.011 | 0.76 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | First half: home wins by more than 1.5 | no | 0.8500 | 0.905 [0.819, 0.971] | +0.047 | +0.011 | 0.86 | - | * | RESEARCH_CANDIDATE |
 | Lyon vs Nice | Result: home | yes | 0.5100 | 0.645 [0.481, 0.811] | +0.118 | +0.009 | 0.51 | - |  | RESEARCH_CANDIDATE |
@@ -79,7 +80,6 @@ model board generated 2026-10-18T05:46:40.402295Z · simulations this update: 0 
 | Monterrey vs Pachuca | Result: away | yes | 0.2000 | 0.304 [0.171, 0.443] | +0.092 | +0.005 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Bahia vs Flamengo | Total goals over 2.5 | no | 0.4200 | 0.547 [0.378, 0.701] | +0.110 | +0.004 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Borussia Mönchengladbach vs TSG Hoffenheim | Result: away | no | 0.5500 | 0.681 [0.498, 0.837] | +0.114 | +0.003 | 0.55 | - |  | RESEARCH_CANDIDATE |
-| Fluminense vs Santos | home wins by more than 2.5 | yes | 0.0800 | 0.166 [0.065, 0.291] | +0.081 | +0.002 | 0.08 | - |  | RESEARCH_CANDIDATE |
 | Osasuna vs Racing Santander | Result: draw | no | 0.7500 | 0.810 [0.742, 0.888] | +0.047 | +0.000 | 0.75 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
