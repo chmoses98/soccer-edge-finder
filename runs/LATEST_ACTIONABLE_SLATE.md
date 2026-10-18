@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261018T122321Z-a2605a` · generated 2026-10-18T12:23:21.564598Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261018T122838Z-8c9091` · generated 2026-10-18T12:28:38.460431Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-18T12:20:17.637035Z (CURRENT at publish; CURRENT until 2026-10-18T12:40:17.637035Z, STALE after 2026-10-18T12:50:17.637035Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-18T12:25:35.871455Z (CURRENT at publish; CURRENT until 2026-10-18T12:45:35.871455Z, STALE after 2026-10-18T12:55:35.871455Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-18T12:23:15.339057Z · simulations this update: 21 · Odds API calls this update: 0 (credits 0) · reprice 0.38s
+model board generated 2026-10-18T12:28:37.851386Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.38s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -17,7 +17,7 @@ model board generated 2026-10-18T12:23:15.339057Z · simulations this update: 21
 | 2026-10-18T13:00:00Z | Leeds United vs Manchester United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
 | 2026-10-18T13:00:00Z | Angers vs Marseille (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
 | 2026-10-18T13:00:00Z | Fiorentina vs Como (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
-| 2026-10-18T13:30:00Z | Bayer Leverkusen vs SC Freiburg (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-18T13:30:00Z | Bayer Leverkusen vs SC Freiburg (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
 | 2026-10-18T14:15:00Z | Celta Vigo vs Deportivo Alavés (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T15:15:00Z | Le Havre vs AJ Auxerre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T15:15:00Z | Lorient vs AS Monaco (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -56,20 +56,20 @@ model board generated 2026-10-18T12:23:15.339057Z · simulations this update: 21
 | Monterrey vs Pachuca | First-half result: home | no | 0.5600 | 0.678 [0.538, 0.792] | +0.101 | +0.023 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Fluminense vs Santos | home wins by more than 1.5 | yes | 0.1900 | 0.331 [0.179, 0.499] | +0.131 | +0.022 | 0.21 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | Result: away | no | 0.6400 | 0.756 [0.626, 0.870] | +0.100 | +0.022 | 0.66 | - | * | RESEARCH_CANDIDATE |
-| Fluminense vs Santos | Result: home | yes | 0.4050 | 0.554 [0.396, 0.719] | +0.132 | +0.022 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | Result: home | yes | 0.4100 | 0.551 [0.389, 0.711] | +0.124 | +0.021 | 0.43 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home wins by more than 2.5 | no | 0.8400 | 0.910 [0.834, 0.971] | +0.061 | +0.020 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | Result: home | no | 0.4300 | 0.571 [0.414, 0.720] | +0.124 | +0.020 | 0.44 | - | * | RESEARCH_CANDIDATE |
-| Fluminense vs Santos | Result: away | no | 0.6850 | 0.787 [0.670, 0.893] | +0.087 | +0.018 | 0.7 | - |  | RESEARCH_CANDIDATE |
+| Angers vs Marseille | Result: away | no | 0.5000 | 0.643 [0.474, 0.799] | +0.126 | +0.019 | 0.51 | 0.492 | * | RESEARCH_CANDIDATE |
+| Fluminense vs Santos | Result: home | yes | 0.4100 | 0.554 [0.396, 0.719] | +0.127 | +0.017 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Lyon vs Nice | Result: away | no | 0.7700 | 0.857 [0.756, 0.946] | +0.075 | +0.017 | 0.78 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away team total over 1.5 | no | 0.4800 | 0.602 [0.451, 0.739] | +0.105 | +0.016 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home team total over 0.5 | no | 0.1500 | 0.257 [0.137, 0.380] | +0.098 | +0.014 | 0.16 | - |  | RESEARCH_CANDIDATE |
 | Borussia Mönchengladbach vs TSG Hoffenheim | Result: home | yes | 0.3100 | 0.468 [0.281, 0.656] | +0.143 | +0.014 | 0.32 | - | * | RESEARCH_CANDIDATE |
-| Angers vs Marseille | Result: home | yes | 0.2400 | 0.379 [0.217, 0.558] | +0.126 | +0.013 | 0.25 | 0.245 | * | RESEARCH_CANDIDATE |
+| Angers vs Marseille | Result: home | yes | 0.2400 | 0.379 [0.217, 0.558] | +0.126 | +0.013 | 0.25 | 0.245 |  | RESEARCH_CANDIDATE |
+| Fluminense vs Santos | Result: away | no | 0.6900 | 0.787 [0.670, 0.893] | +0.082 | +0.013 | 0.7 | - |  | RESEARCH_CANDIDATE |
 | Fluminense vs Santos | home wins by more than 2.5 | yes | 0.0700 | 0.166 [0.065, 0.291] | +0.091 | +0.012 | 0.08 | - |  | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away team total over 2.5 | no | 0.7500 | 0.831 [0.719, 0.921] | +0.068 | +0.011 | 0.76 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | First half: home wins by more than 1.5 | no | 0.8500 | 0.905 [0.819, 0.971] | +0.047 | +0.011 | 0.86 | - | * | RESEARCH_CANDIDATE |
-| Angers vs Marseille | Result: away | no | 0.5100 | 0.643 [0.474, 0.799] | +0.116 | +0.009 | 0.51 | 0.492 |  | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away wins by more than 1.5 | no | 0.8300 | 0.890 [0.811, 0.955] | +0.050 | +0.007 | 0.83 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away wins by more than 2.5 | no | 0.9300 | 0.959 [0.921, 0.988] | +0.024 | +0.006 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | Remo vs Red Bull Bragantino | btts | no | 0.4100 | 0.515 [0.386, 0.638] | +0.088 | +0.006 | 0.41 | - | * | RESEARCH_CANDIDATE |
