@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261018T150308Z-3d0715` · generated 2026-10-18T15:03:08.516858Z · trigger `kickoff_chain:T-60/T-30/T-15` · mode `model_refresh_and_reprice`
+slate `slate-20261018T151255Z-e28063` · generated 2026-10-18T15:12:55.838413Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-18T15:00:02.555630Z (CURRENT at publish; CURRENT until 2026-10-18T15:20:02.555630Z, STALE after 2026-10-18T15:30:02.555630Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-18T15:10:00.042786Z (CURRENT at publish; CURRENT until 2026-10-18T15:30:00.042786Z, STALE after 2026-10-18T15:40:00.042786Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-18T15:03:07.795782Z · simulations this update: 1 · Odds API calls this update: 2 (credits 6) · reprice 0.48s
+model board generated 2026-10-18T15:03:07.795782Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.49s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -39,7 +39,7 @@ model board generated 2026-10-18T15:03:07.795782Z · simulations this update: 1 
 | 2026-10-19T23:00:00Z | Corinthians vs Vitória (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-20T00:15:00Z | Deportivo Riestra vs Unión (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (27; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (28; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -61,6 +61,7 @@ model board generated 2026-10-18T15:03:07.795782Z · simulations this update: 1 
 | FC Cincinnati vs Columbus Crew | away wins by more than 1.5 | no | 0.8300 | 0.887 [0.799, 0.957] | +0.048 | +0.006 | 0.83 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | Result: away | yes | 0.1900 | 0.294 [0.169, 0.438] | +0.094 | +0.005 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away wins by more than 2.5 | no | 0.9300 | 0.957 [0.913, 0.989] | +0.023 | +0.005 | 0.93 | - |  | RESEARCH_CANDIDATE |
+| Borussia Mönchengladbach vs TSG Hoffenheim | Result: home | yes | 0.3200 | 0.468 [0.281, 0.656] | +0.132 | +0.004 | 0.32 | 0.315 | * | RESEARCH_CANDIDATE |
 | Remo vs Red Bull Bragantino | btts | no | 0.4100 | 0.513 [0.387, 0.636] | +0.086 | +0.003 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away team total over 2.5 | no | 0.7500 | 0.830 [0.717, 0.925] | +0.067 | +0.003 | 0.75 | - |  | RESEARCH_CANDIDATE |
 | Remo vs Red Bull Bragantino | Result: away | no | 0.5650 | 0.671 [0.529, 0.801] | +0.089 | +0.002 | 0.56 | - | * | RESEARCH_CANDIDATE |
@@ -74,9 +75,9 @@ model board generated 2026-10-18T15:03:07.795782Z · simulations this update: 1 
 ## Counts
 
 ```
-action_NO_EDGE: 456
+action_NO_EDGE: 455
 action_NO_QUOTE: 1193
-action_RESEARCH_CANDIDATE: 27
+action_RESEARCH_CANDIDATE: 28
 contract_sides: 1676
 fixtures: 26
 fixtures_model_invalidated: 0
