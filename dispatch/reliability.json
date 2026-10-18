@@ -4,38 +4,38 @@
   "github_backup_minutes": 60
  },
  "definition": "capture_success_rate = delivered / eligible horizons whose window closed in the span (NOT_APPLICABLE excluded); close_success_rate = fixtures with a T-15 or T-5 delivery / fixtures whose close windows closed in the span",
- "generated_at": "2026-10-18T16:48:56Z",
+ "generated_at": "2026-10-18T17:07:16Z",
  "last_24h": {
-  "capture_runs": 3,
+  "capture_runs": 4,
   "capture_runs_failed": 2,
-  "capture_success_rate": 0.9822695035460993,
+  "capture_success_rate": 0.9822064056939501,
   "close_fixtures_delivered": 52,
   "close_fixtures_eligible": 53,
   "close_success_rate": 0.9811320754716981,
-  "credits_spent": 66,
+  "credits_spent": 132,
   "external_heartbeats_actual": 0,
   "external_heartbeats_expected": null,
   "external_trigger_success": null,
   "fixtures_with_horizons": 65,
-  "github_backup_actual": 7,
+  "github_backup_actual": 6,
   "github_backup_expected": 24,
-  "github_backup_success": 0.2916666666666667,
-  "heartbeats_actual": 27,
+  "github_backup_success": 0.25,
+  "heartbeats_actual": 26,
   "heartbeats_by_source": {
    "chain": 4,
-   "github-schedule-backup": 7,
+   "github-schedule-backup": 6,
    "workflow-run": 16
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
   "horizon_states": {
-   "DELIVERED": 277,
+   "DELIVERED": 276,
    "MISSED_BEFORE_WAKE": 5
   },
-  "horizons_delivered": 277,
-  "horizons_eligible": 282,
+  "horizons_delivered": 276,
+  "horizons_eligible": 281,
   "horizons_missed": 5,
-  "paid_calls": 22,
+  "paid_calls": 44,
   "span_hours": 24.0
  },
  "last_7d": {
@@ -45,7 +45,7 @@
   "close_fixtures_delivered": 147,
   "close_fixtures_eligible": 151,
   "close_success_rate": 0.9735099337748344,
-  "credits_spent": 336,
+  "credits_spent": 372,
   "external_heartbeats_actual": 0,
   "external_heartbeats_expected": null,
   "external_trigger_success": null,
@@ -53,9 +53,9 @@
   "github_backup_actual": 35,
   "github_backup_expected": 168,
   "github_backup_success": 0.20833333333333334,
-  "heartbeats_actual": 154,
+  "heartbeats_actual": 153,
   "heartbeats_by_source": {
-   "chain": 30,
+   "chain": 29,
    "github-schedule-backup": 35,
    "workflow-run": 89
   },
@@ -69,7 +69,7 @@
   "horizons_delivered": 753,
   "horizons_eligible": 771,
   "horizons_missed": 18,
-  "paid_calls": 112,
+  "paid_calls": 124,
   "span_hours": 168.0
  },
  "last_wake": {
