@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-17T22:37:16.740674+00:00",
-  "events": 753,
-  "events_skipped_unmapped": 386,
-  "fixtures_mapped": 367,
+  "as_of": "2026-10-18T04:53:56.761543+00:00",
+  "events": 818,
+  "events_skipped_unmapped": 428,
+  "fixtures_mapped": 390,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=50"
+      "weather_stopped:consecutive_failures:skipped=31"
     ],
     "state": "DEGRADED"
   },
@@ -81,15 +81,22 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 125,
-    "events": 144,
+    "captured": 107,
+    "events": 107,
     "failures": [],
-    "published_post": 10,
-    "published_pre_kickoff": 10,
-    "unchanged": 19,
-    "unpublished": 124
+    "published_post": 9,
+    "published_pre_kickoff": 1,
+    "unchanged": 0,
+    "unpublished": 97
   },
   "map_proposals": {
+    "bel.1": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "936": "Sint-Truidense"
+      }
+    },
     "den.1": {
       "ambiguous": {},
       "proposed": {},
@@ -156,12 +163,11 @@
     }
   },
   "map_version": "4",
-  "results_appended": 13,
+  "results_appended": 25,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
   "unmapped_leagues": [
-    "afc.champions",
     "aus.1",
     "bel.1",
     "bra.2",
@@ -211,16 +217,16 @@
   },
   "weather": {
     "captured": 9,
-    "events": 62,
+    "events": 43,
     "failures": [
-      "401841617: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-34.5939&longitude=-60.9464&hourly=",
-      "401841625: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-34.6131&longitude=-58.3772&hourly=",
-      "401892158: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Wellington&count=5&language=en&"
+      "401841276: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-30.0328&longitude=-51.2302&hourly=",
+      "401841269: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Salvador&count=5&language=en&fo",
+      "401841274: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bel\u00e9m&count=5&language=en&forma"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 50,
+    "skipped": 31,
     "stopped": "consecutive_failures"
   }
 }
