@@ -1,43 +1,36 @@
 {
-  "as_of": "2026-10-18T11:58:00.639542+00:00",
-  "events": 17,
+  "as_of": "2026-10-18T12:08:17.242139+00:00",
+  "events": 4,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 17,
+  "fixtures_mapped": 4,
   "health": {
-    "reasons": [
-      "weather_failures:1"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
-    "eng.1",
-    "esp.1",
-    "fra.1",
-    "ita.1"
+    "esp.1"
   ],
   "lineups": {
-    "captured": 2,
-    "events": 17,
+    "captured": 1,
+    "events": 4,
     "failures": [],
     "published_post": 1,
-    "published_pre_kickoff": 1,
-    "unchanged": 15,
-    "unpublished": 15
+    "published_pre_kickoff": 0,
+    "unchanged": 3,
+    "unpublished": 3
   },
   "map_proposals": {},
   "map_version": "4",
   "results_appended": 0,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
-  "scoreboard_queries": 4,
+  "scoreboard_queries": 1,
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 16,
-    "events": 17,
-    "failures": [
-      "401874765: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Torino&count=5&language=en&form"
-    ],
+    "captured": 4,
+    "events": 4,
+    "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,

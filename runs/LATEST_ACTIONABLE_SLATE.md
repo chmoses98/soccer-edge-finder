@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261018T115829Z-0bbe0d` · generated 2026-10-18T11:58:29.873899Z · trigger `kickoff_chain:T-60/T-5` · mode `model_refresh_and_reprice`
+slate `slate-20261018T120817Z-b850c0` · generated 2026-10-18T12:08:17.689398Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-18T11:55:00.039420Z (CURRENT at publish; CURRENT until 2026-10-18T12:15:00.039420Z, STALE after 2026-10-18T12:25:00.039420Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-18T12:05:21.131142Z (CURRENT at publish; CURRENT until 2026-10-18T12:25:21.131142Z, STALE after 2026-10-18T12:35:21.131142Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-18T11:58:28.277015Z · simulations this update: 5 · Odds API calls this update: 3 (credits 9) · reprice 0.37s
+model board generated 2026-10-18T11:58:28.277015Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.38s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,6 @@ model board generated 2026-10-18T11:58:28.277015Z · simulations this update: 5 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-18T12:00:00Z | Osasuna vs Racing Santander (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
 | 2026-10-18T13:00:00Z | Bournemouth vs Sunderland (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
 | 2026-10-18T13:00:00Z | Brighton & Hove Albion vs Crystal Palace (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
 | 2026-10-18T13:00:00Z | Leeds United vs Manchester United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
@@ -45,7 +44,7 @@ model board generated 2026-10-18T11:58:28.277015Z · simulations this update: 5 
 | 2026-10-19T19:00:00Z | Getafe vs Rayo Vallecano (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-19T23:00:00Z | Corinthians vs Vitória (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (29; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (28; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -77,18 +76,19 @@ model board generated 2026-10-18T11:58:28.277015Z · simulations this update: 5 
 | Monterrey vs Pachuca | Result: away | yes | 0.2000 | 0.304 [0.171, 0.443] | +0.092 | +0.005 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Borussia Mönchengladbach vs TSG Hoffenheim | Result: away | no | 0.5500 | 0.681 [0.498, 0.837] | +0.114 | +0.003 | 0.55 | - |  | RESEARCH_CANDIDATE |
 | Angers vs Marseille | Result: home | yes | 0.2500 | 0.379 [0.217, 0.558] | +0.116 | +0.003 | 0.25 | 0.245 |  | RESEARCH_CANDIDATE |
-| Osasuna vs Racing Santander | Result: draw | no | 0.7500 | 0.810 [0.742, 0.888] | +0.047 | +0.000 | 0.75 | 0.744 | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 499
+action_NO_EDGE: 494
 action_NO_QUOTE: 202
-action_RESEARCH_CANDIDATE: 29
-contract_sides: 730
-fixtures: 32
+action_RESEARCH_CANDIDATE: 28
+contract_sides: 724
+fixtures: 31
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
+
+Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
