@@ -1,10 +1,44 @@
 {
-  "batch_id": "kd-20261018T215958Z",
-  "captured_at": "2026-10-18T22:02:47.612987Z",
-  "credits_charged": 0,
-  "eligible_fixtures": 0,
+  "batch_id": "kd-20261018T221458Z",
+  "captured_at": "2026-10-18T22:17:45.483889Z",
+  "credits_charged": 3,
+  "eligible_fixtures": 2,
   "no_sport_key": [],
-  "paid_calls": 0,
-  "snapshots": 0,
-  "status": "NOTHING_ELIGIBLE"
+  "paid_calls": 1,
+  "per_sport": {
+    "soccer_argentina_primera_division": {
+      "fixtures": 1,
+      "join": {
+        "ambiguous": 0,
+        "events": 3,
+        "joined": 1,
+        "unjoined_fixtures": [],
+        "unresolved_names": [
+          "Aldosivi Mar del Plata"
+        ]
+      },
+      "status": "BLOCKED_BUDGET_GUARD:DAILY_CEILING_ENTRY_SHARE"
+    },
+    "soccer_brazil_campeonato": {
+      "close_fixtures": 1,
+      "credits": 3,
+      "entry_fixtures": 0,
+      "fixtures": 1,
+      "incomplete_markets": 0,
+      "join": {
+        "ambiguous": 0,
+        "events": 2,
+        "joined": 1,
+        "unjoined_fixtures": [],
+        "unresolved_names": [
+          "Bragantino-SP"
+        ]
+      },
+      "snapshots": 7,
+      "status": "OK"
+    }
+  },
+  "remaining_after": 17927,
+  "snapshots": 7,
+  "status": "OK"
 }
