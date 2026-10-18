@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261018T091710Z-5a866d` · generated 2026-10-18T09:17:10.894722Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261018T093223Z-7afd4f` · generated 2026-10-18T09:32:23.670503Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-18T09:14:16.106599Z (CURRENT at publish; CURRENT until 2026-10-18T09:34:16.106599Z, STALE after 2026-10-18T09:44:16.106599Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-18T09:29:16.119308Z (CURRENT at publish; CURRENT until 2026-10-18T09:49:16.119308Z, STALE after 2026-10-18T09:59:16.119308Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-18T05:46:40.402295Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.34s
+model board generated 2026-10-18T09:32:23.081804Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.34s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-18T05:46:40.402295Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-18T10:30:00Z | Udinese vs Lecce (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-18T10:30:00Z | Udinese vs Lecce (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
 | 2026-10-18T12:00:00Z | Osasuna vs Racing Santander (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T13:00:00Z | Bournemouth vs Sunderland (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T13:00:00Z | Brighton & Hove Albion vs Crystal Palace (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
