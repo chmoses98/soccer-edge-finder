@@ -820,3 +820,64 @@ unmapped teams: 0 | proposals: {}
 [timings] {"assemble_fit_s": 3.35, "discovery_s": 0.0, "simulate_price_archive_s": 0.44, "total_s": 4.03, "mode": "fast+prefetched_sweep"}
 [board] 1 fixtures written by this run; 33 on the board -> work/runs/latest.model_board.v1.json
 [slate] {"slate_id": "slate-20261018T105902Z-c63661", "mode": "model_refresh_and_reprice", "fixtures": 32, "contract_sides": 730, "simulations_run": 1, "odds_api_calls": 1, "reprice_runtime_s": 0.337, "price_changes_vs_previous": 12}
+# RUN SOCCER — 2026-10-18
+Run `run-20261018T105902Z-ac0c07` generated 2026-10-18T10:59:02.422077Z · filters: {'leagues': [], 'games': ['fx:esp.la_liga:2026-27:esp.osasuna:esp.racing_santander:matchday_9'], 'window_hours': 3, 'confirmed_lineups_only': False}
+
+## Coverage
+- contracts discovered: **5503** (discovery complete: True)
+- contracts evaluated: 3 · excluded mechanically: 2431 · unsupported/unknown: 3069
+- **unaccounted contracts: 0**
+- by disposition: priced=3, unknown_family=3, unsupported_family=3066, unmapped_event=1133, unmapped_team=28, no_fixture=161, filtered_by_operator=1109
+- competitions discovered: APFDDH, ARGNACB, ARGPREMDIV, AUTBUNDES, BELGIANPL, BRASILEIRO, BRASILEIROB, BUNDESLIGA, BUNDESLIGAW, CHLLDP, CHNL1, CHNSL, CONCACAFGC, CONCACAFNL, CONMEBOLLIB, CONMEBOLSUD, COPAAMERICA, COPADELREY, COPADOBRASIL, DENSUPERLIGA, DFBPOKAL, DIMAYOR, ECULP, EFL, EFLCHAMPIONSHIP, EFLL1, EKSTRAKLASA, EPL, EREDIVISIE, FA, FRAPLW, HUNNB1, INDSL, ISRNL, KLEAGUE, KNVB, LALIGA, LALIGA2, LIGAEXP, LIGAF, LIGAMX, LIGAMX2H, LIGAPORTUGAL, LIGUE1, MLS, MLS2H, MLSEAST, MLSWEST, NWSL, PERLIGA1, PREMIERLEAGUE, QSTARS, ROML1, SAPSL, SERIEA, SOCCER, SUPERLIG, SVK2L, SVKCUP, TACAPORT, THAIL1, UCL, UCLLEAGUE, UECL, UEFAEURO, UEFANL, UEFANLGROUP, UEL, URYPD, USL, VENFUTVE, WC, WCW
+
+## Freshness
+- as_of: 2026-10-18T10:59:02.033215Z; market_observed_at: 2026-10-18T10:55:01.716666Z; fixtures_observed_at: 2026-10-18T05:46:36.941916Z; results_observed_at: 2026-10-18T05:46:29.989136Z; model_fitted_at: 2026-10-18T10:59:00.595228Z; temporal_guard: {'decision_time': '2026-10-18T10:59:02.033215Z', 'checked': {'fixtures': 1, 'market_snapshots': 2, 'reference_odds': 1, 'results': 15}, 'latest_observed_at': {'fixtures': '2026-10-18T05:46:36.941916Z', 'market_snapshots': '2026-10-18T10:57:55.425441Z', 'reference_odds': '2026-10-18T05:46:38.842473Z', 'results': '2026-10-18T10:59:01.793375Z'}, 'violations': [], 'ok': True}
+- no freshness violations
+
+## Recommendations
+**NO BETS** — no contract met the robust-edge bar under an authority level that permits recommendations.
+
+## Shadow / research-only expressions (0)
+These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW. They are NOT recommendations.
+
+## Events
+- Osasuna vs Racing Santander (La Liga) 2026-10-18T12:00:00Z · markets 3/3 evaluated · lineups unknown · xG 2.34-1.25 · 1X2 60%/19%/21%
+
+{
+  "outputs": {
+    "json": "work/runs/_pending/run_output.v1.json",
+    "md": "work/runs/_pending/RUN_SOCCER.md",
+    "contracts": "work/runs/_pending/priced_contracts.json",
+    "coverage": "work/runs/_pending/coverage.json",
+    "diagnostics": "work/runs/_pending/coverage_diagnostics.json"
+  },
+  "simulated": [],
+  "repriced": [
+    "fx:esp.la_liga:2026-27:esp.osasuna:esp.racing_santander:matchday_9"
+  ],
+  "archived_records": 3
+}
+[dispatch] holding 8.2 min (next window opens in 18.1 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261018T111255Z",
+  "complete": true,
+  "discovered": 5503,
+  "written": 746,
+  "path": "work/snapshots/2026-10-18/cap-20261018T111255Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261018T111256Z-eb607f", "mode": "reprice_only", "fixtures": 32, "contract_sides": 730, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.348, "price_changes_vs_previous": 31}
+{
+ "batches": 7,
+ "horizons_delivered": 24,
+ "missed_states": {
+  "MISSED_BEFORE_WAKE": 5
+ },
+ "paid_calls": 3,
+ "credits_spent": 9,
+ "end_reason": "link_time_limit",
+ "chain_continue": true,
+ "delivered_total": 1510,
+ "missed_total": 180,
+ "delivery_rate_total": 0.893491124260355
+}
