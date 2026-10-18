@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-18T18:55:58.454120+00:00",
+  "as_of": "2026-10-18T22:29:04.750024+00:00",
   "events": 817,
   "events_skipped_unmapped": 428,
   "fixtures_mapped": 389,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=11"
+      "weather_stopped:consecutive_failures:skipped=14"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 35,
-    "events": 57,
+    "captured": 32,
+    "events": 36,
     "failures": [],
-    "published_post": 18,
-    "published_pre_kickoff": 8,
-    "unchanged": 22,
-    "unpublished": 31
+    "published_post": 10,
+    "published_pre_kickoff": 3,
+    "unchanged": 4,
+    "unpublished": 23
   },
   "map_proposals": {
     "bel.1": {
@@ -109,7 +109,7 @@
       "ambiguous": {},
       "proposed": {},
       "unresolved": {
-        "510": "VIKING FK",
+        "510": "Viking FK",
         "620": "SK Brann",
         "987": "Lillestrom"
       }
@@ -126,7 +126,7 @@
       "proposed": {},
       "unresolved": {
         "21922": "Sabah FK",
-        "510": "VIKING FK"
+        "510": "Viking FK"
       }
     },
     "uefa.europa": {
@@ -206,7 +206,7 @@
     "3024": "FC Thun",
     "489": "Hajduk Split",
     "490": "Levski Sofia",
-    "510": "VIKING FK",
+    "510": "Viking FK",
     "620": "SK Brann",
     "7853": "AGF",
     "8089": "CSU Craiova",
@@ -216,17 +216,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 18,
-    "events": 32,
+    "captured": 8,
+    "events": 25,
     "failures": [
-      "401877774: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=6.2450&longitude=-75.5715&hourly=te",
-      "401878059: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bucaramanga&count=5&language=en",
-      "401877840: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Villavicencio&count=5&language="
+      "401841272: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-23.5475&longitude=-46.6361&hourly=",
+      "401860396: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Goi\u00e3nia&count=5&language=en&for",
+      "401860401: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Goi\u00e3nia&count=5&language=en&for"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 11,
+    "skipped": 14,
     "stopped": "consecutive_failures"
   }
 }
