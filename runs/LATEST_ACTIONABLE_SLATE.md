@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261018T094712Z-203571` · generated 2026-10-18T09:47:12.681530Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261018T095304Z-9b5caf` · generated 2026-10-18T09:53:04.014388Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-18T09:44:17.838347Z (CURRENT at publish; CURRENT until 2026-10-18T10:04:17.838347Z, STALE after 2026-10-18T10:14:17.838347Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-18T09:50:01.057422Z (CURRENT at publish; CURRENT until 2026-10-18T10:10:01.057422Z, STALE after 2026-10-18T10:20:01.057422Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-18T09:32:23.081804Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.35s
 
@@ -12,7 +12,7 @@ model board generated 2026-10-18T09:32:23.081804Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-18T10:30:00Z | Udinese vs Lecce (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
+| 2026-10-18T10:30:00Z | Udinese vs Lecce (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
 | 2026-10-18T12:00:00Z | Osasuna vs Racing Santander (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T13:00:00Z | Bournemouth vs Sunderland (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T13:00:00Z | Brighton & Hove Albion vs Crystal Palace (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
