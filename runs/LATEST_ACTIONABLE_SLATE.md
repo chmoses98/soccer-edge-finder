@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261018T060129Z-50fb9d` · generated 2026-10-18T06:01:29.891983Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261018T061700Z-f5c752` · generated 2026-10-18T06:17:00.680567Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-18T05:58:35.098899Z (CURRENT at publish; CURRENT until 2026-10-18T06:18:35.098899Z, STALE after 2026-10-18T06:28:35.098899Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-18T06:14:05.856623Z (CURRENT at publish; CURRENT until 2026-10-18T06:34:05.856623Z, STALE after 2026-10-18T06:44:05.856623Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-18T05:46:40.402295Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.34s
 
@@ -28,25 +28,25 @@ model board generated 2026-10-18T05:46:40.402295Z · simulations this update: 0 
 | 2026-10-18T15:30:00Z | Borussia Mönchengladbach vs TSG Hoffenheim (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T16:00:00Z | AC Milan vs Atalanta (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T16:30:00Z | Málaga vs Real Sociedad (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-18T17:45:00Z | Racing Club vs Independiente (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 9 | 0 |
+| 2026-10-18T17:45:00Z | Racing Club vs Independiente (arg.primera) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 9 | 0 |
 | 2026-10-18T18:45:00Z | Lyon vs Nice (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-18T18:45:00Z | Juventus vs Lazio (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-18T19:00:00Z | Fluminense vs Santos (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-18T19:00:00Z | Grêmio vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-18T19:00:00Z | Fluminense vs Santos (bra.serie_a) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-18T19:00:00Z | Grêmio vs Cruzeiro (bra.serie_a) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-18T19:00:00Z | Real Madrid vs Sevilla (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-18T21:00:00Z | Estudiantes de La Plata vs San Lorenzo (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-18T21:00:00Z | FC Cincinnati vs Columbus Crew (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-18T21:30:00Z | Bahia vs Flamengo (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-18T22:30:00Z | Remo vs Red Bull Bragantino (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-18T23:15:00Z | Belgrano vs River Plate (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-19T01:00:00Z | Monterrey vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-18T21:00:00Z | Estudiantes de La Plata vs San Lorenzo (arg.primera) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-18T21:00:00Z | FC Cincinnati vs Columbus Crew (usa.mls) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-18T21:30:00Z | Bahia vs Flamengo (bra.serie_a) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-18T22:30:00Z | Remo vs Red Bull Bragantino (bra.serie_a) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-18T23:15:00Z | Belgrano vs River Plate (arg.primera) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-19T01:00:00Z | Monterrey vs Pachuca (mex.liga_mx) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-19T16:30:00Z | Monza vs Cagliari (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-19T18:45:00Z | Parma vs Torino (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-19T19:00:00Z | Tottenham Hotspur vs Coventry City (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-19T19:00:00Z | Getafe vs Rayo Vallecano (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-19T23:00:00Z | Corinthians vs Vitória (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (30; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (29; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -62,7 +62,6 @@ model board generated 2026-10-18T05:46:40.402295Z · simulations this update: 0 
 | Fluminense vs Santos | Result: home | yes | 0.4050 | 0.554 [0.396, 0.719] | +0.132 | +0.022 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | Result: home | yes | 0.4100 | 0.551 [0.389, 0.711] | +0.124 | +0.021 | 0.43 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | Result: home | no | 0.4300 | 0.571 [0.414, 0.720] | +0.124 | +0.020 | 0.44 | - | * | RESEARCH_CANDIDATE |
-| FC Cincinnati vs Columbus Crew | away wins by more than 1.5 | no | 0.8200 | 0.890 [0.811, 0.955] | +0.059 | +0.017 | 0.83 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away team total over 1.5 | no | 0.4800 | 0.602 [0.451, 0.739] | +0.105 | +0.016 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Bahia vs Flamengo | btts | no | 0.3900 | 0.504 [0.374, 0.627] | +0.098 | +0.016 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home team total over 0.5 | no | 0.1500 | 0.257 [0.137, 0.380] | +0.098 | +0.014 | 0.16 | - |  | RESEARCH_CANDIDATE |
@@ -71,7 +70,7 @@ model board generated 2026-10-18T05:46:40.402295Z · simulations this update: 0 
 | FC Cincinnati vs Columbus Crew | away team total over 2.5 | no | 0.7500 | 0.831 [0.719, 0.921] | +0.068 | +0.011 | 0.76 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home wins by more than 2.5 | no | 0.8500 | 0.910 [0.834, 0.971] | +0.051 | +0.011 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | Lyon vs Nice | Result: home | yes | 0.5100 | 0.645 [0.481, 0.811] | +0.118 | +0.009 | 0.51 | - |  | RESEARCH_CANDIDATE |
-| FC Cincinnati vs Columbus Crew | home wins by more than 1.5 | yes | 0.2200 | 0.347 [0.192, 0.514] | +0.115 | +0.009 | 0.22 | - |  | RESEARCH_CANDIDATE |
+| FC Cincinnati vs Columbus Crew | away wins by more than 1.5 | no | 0.8300 | 0.890 [0.811, 0.955] | +0.050 | +0.007 | 0.83 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away wins by more than 2.5 | no | 0.9300 | 0.959 [0.921, 0.988] | +0.024 | +0.006 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | Remo vs Red Bull Bragantino | btts | no | 0.4100 | 0.515 [0.386, 0.638] | +0.088 | +0.006 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Columbus Crew | away team total over 0.5 | no | 0.1800 | 0.264 [0.159, 0.371] | +0.073 | +0.005 | 0.18 | - |  | RESEARCH_CANDIDATE |
@@ -84,9 +83,9 @@ model board generated 2026-10-18T05:46:40.402295Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 501
+action_NO_EDGE: 502
 action_NO_QUOTE: 205
-action_RESEARCH_CANDIDATE: 30
+action_RESEARCH_CANDIDATE: 29
 contract_sides: 736
 fixtures: 33
 fixtures_model_invalidated: 0
