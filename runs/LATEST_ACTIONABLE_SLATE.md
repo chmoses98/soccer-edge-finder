@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261018T234119Z-0fa55c` · generated 2026-10-18T23:41:19.408744Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261018T235619Z-724c4e` · generated 2026-10-18T23:56:19.452625Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-18T23:38:34.987042Z (CURRENT at publish; CURRENT until 2026-10-18T23:58:34.987042Z, STALE after 2026-10-19T00:08:34.987042Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-18T23:53:34.997040Z (CURRENT at publish; CURRENT until 2026-10-19T00:13:34.997040Z, STALE after 2026-10-19T00:23:34.997040Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-18T23:26:19.009823Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.08s
+model board generated 2026-10-18T23:26:19.009823Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.25s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -17,9 +17,9 @@ model board generated 2026-10-18T23:26:19.009823Z · simulations this update: 0 
 | 2026-10-19T18:45:00Z | Parma vs Torino (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-19T19:00:00Z | Tottenham Hotspur vs Coventry City (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-19T19:00:00Z | Getafe vs Rayo Vallecano (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-19T22:00:00Z | Newell's Old Boys vs Central Córdoba (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-19T22:00:00Z | Newell's Old Boys vs Central Córdoba (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-19T23:00:00Z | Corinthians vs Vitória (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-20T00:15:00Z | Deportivo Riestra vs Unión (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-20T00:15:00Z | Deportivo Riestra vs Unión (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 3 | 0 |
 
 ## Candidates on CURRENT prices (18; RESEARCH_ONLY = analysis, never a bet)
 
@@ -28,10 +28,10 @@ model board generated 2026-10-18T23:26:19.009823Z · simulations this update: 0 
 | Monterrey vs Pachuca | home team total over 1.5 | no | 0.3900 | 0.584 [0.399, 0.755] | +0.177 | +0.064 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home team total over 2.5 | no | 0.6700 | 0.814 [0.670, 0.929] | +0.129 | +0.052 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | home team total over 0.5 | no | 0.1300 | 0.255 [0.132, 0.388] | +0.117 | +0.032 | 0.16 | - |  | RESEARCH_CANDIDATE |
-| Monterrey vs Pachuca | home wins by more than 2.5 | no | 0.8300 | 0.908 [0.828, 0.971] | +0.068 | +0.025 | 0.85 | - | * | RESEARCH_CANDIDATE |
-| Monterrey vs Pachuca | home wins by more than 1.5 | no | 0.6600 | 0.779 [0.647, 0.896] | +0.103 | +0.024 | 0.68 | - |  | RESEARCH_CANDIDATE |
+| Monterrey vs Pachuca | home wins by more than 1.5 | no | 0.6600 | 0.779 [0.647, 0.896] | +0.103 | +0.024 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | First-half result: home | no | 0.5600 | 0.674 [0.548, 0.782] | +0.097 | +0.022 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | Result: home | no | 0.4200 | 0.564 [0.404, 0.723] | +0.127 | +0.020 | 0.43 | - | * | RESEARCH_CANDIDATE |
+| Monterrey vs Pachuca | home wins by more than 2.5 | no | 0.8400 | 0.908 [0.828, 0.971] | +0.058 | +0.015 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | Total goals over 3.5 | no | 0.6200 | 0.737 [0.582, 0.868] | +0.100 | +0.014 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | Total goals over 2.5 | no | 0.4000 | 0.532 [0.361, 0.693] | +0.115 | +0.009 | 0.4 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Pachuca | Total goals over 4.5 | no | 0.8000 | 0.870 [0.764, 0.953] | +0.059 | +0.006 | 0.8 | - |  | RESEARCH_CANDIDATE |
