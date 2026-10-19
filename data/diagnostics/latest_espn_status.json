@@ -1,12 +1,13 @@
 {
-  "as_of": "2026-10-19T13:41:24.416122+00:00",
-  "events": 799,
-  "events_skipped_unmapped": 424,
+  "as_of": "2026-10-19T20:08:17.884734+00:00",
+  "events": 795,
+  "events_skipped_unmapped": 420,
   "fixtures_mapped": 375,
   "health": {
     "reasons": [
+      "scoreboard_partial_failures:1/748",
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=8"
+      "weather_stopped:consecutive_failures:skipped=7"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +82,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 22,
-    "events": 22,
+    "captured": 50,
+    "events": 53,
     "failures": [],
-    "published_post": 0,
+    "published_post": 8,
     "published_pre_kickoff": 0,
-    "unchanged": 0,
-    "unpublished": 22
+    "unchanged": 3,
+    "unpublished": 45
   },
   "map_proposals": {
     "bel.1": {
@@ -163,9 +164,11 @@
     }
   },
   "map_version": "4",
-  "results_appended": 0,
-  "scoreboard_failures": [],
-  "scoreboard_failures_n": 0,
+  "results_appended": 5,
+  "scoreboard_failures": [
+    "chn.1 2026-10-17: fetch failed for https://site.api.espn.com/apis/site/v2/sports/soccer/chn.1/scoreboard?dates=2026101"
+  ],
+  "scoreboard_failures_n": 1,
   "scoreboard_queries": 748,
   "unmapped_leagues": [
     "afc.champions",
@@ -218,7 +221,7 @@
   },
   "weather": {
     "captured": 8,
-    "events": 19,
+    "events": 18,
     "failures": [
       "401878033: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=4.6097&longitude=-74.0817&hourly=te",
       "401878021: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=C\u00facuta&count=5&language=en&form",
@@ -227,7 +230,7 @@
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 8,
+    "skipped": 7,
     "stopped": "consecutive_failures"
   }
 }
