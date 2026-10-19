@@ -54,7 +54,537 @@
   "delivered_total": 1771,
   "delivery_rate_total": 0.9077396207073296,
   "fixtures_tracked": 401,
-  "generated_at": "2026-10-19T21:01:54Z",
+  "generated_at": "2026-10-19T21:19:27Z",
+  "last_tick": {
+    "batches": 15,
+    "summary": [
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "model_refresh:ok:fixtures=5:sim=0:board=4:why=entered_lookahead_unmodelled",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "ks-20261019T154712Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=754:sim=0"
+        ],
+        "batch_id": "kd-20261019T160000Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ita.serie_a:2026-27:ita.monza:ita.cagliari:matchday_7",
+            30,
+            30.0
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.monza:ita.cagliari",
+            30,
+            30.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=754:sim=0"
+        ],
+        "batch_id": "kd-20261019T161500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ita.serie_a:2026-27:ita.monza:ita.cagliari:matchday_7",
+            15,
+            15.0
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.monza:ita.cagliari",
+            15,
+            15.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=754:sim=0"
+        ],
+        "batch_id": "kd-20261019T162504Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ita.serie_a:2026-27:ita.monza:ita.cagliari:matchday_7",
+            5,
+            4.93
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.monza:ita.cagliari",
+            5,
+            4.93
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=748:sim=0"
+        ],
+        "batch_id": "kd-20261019T164004Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ita.serie_a:2026-27:ita.parma:ita.torino:matchday_7",
+            120,
+            124.93
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.parma:ita.torino",
+            120,
+            124.93
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:2",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=748:sim=0"
+        ],
+        "batch_id": "kd-20261019T165028Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:esp.la_liga:2026-27:esp.getafe:esp.rayo_vallecano:matchday_9",
+            120,
+            129.53
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.tottenham:eng.coventry:matchday_7",
+            120,
+            129.53
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.tottenham:eng.coventry",
+            120,
+            129.53
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.getafe:esp.rayo_vallecano",
+            120,
+            129.53
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=748:sim=0"
+        ],
+        "batch_id": "ks-20261019T170528Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=748:sim=0"
+        ],
+        "batch_id": "ks-20261019T172059Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=748:sim=0"
+        ],
+        "batch_id": "ks-20261019T173559Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:ok:fixtures=1:sim=0:cache=1:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261019T174123Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ita.serie_a:2026-27:ita.parma:ita.torino:matchday_7",
+            60,
+            63.61
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.parma:ita.torino",
+            60,
+            63.61
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=6:paid=2:rows=14",
+          "lineups:ok:2",
+          "model_refresh:ok:fixtures=2:sim=0:cache=2:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261019T175625Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:esp.la_liga:2026-27:esp.getafe:esp.rayo_vallecano:matchday_9",
+            60,
+            63.57
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.tottenham:eng.coventry:matchday_7",
+            60,
+            63.57
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.tottenham:eng.coventry",
+            60,
+            63.57
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.getafe:esp.rayo_vallecano",
+            60,
+            63.57
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "model_refresh:ok:fixtures=1:sim=0:board=0:why=entered_lookahead_unmodelled",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "ks-20261019T181125Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=748:sim=0"
+        ],
+        "batch_id": "kd-20261019T181708Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ita.serie_a:2026-27:ita.parma:ita.torino:matchday_7",
+            30,
+            27.86
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.parma:ita.torino",
+            30,
+            27.86
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:3",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=748:sim=0"
+        ],
+        "batch_id": "kd-20261019T183001Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ita.serie_a:2026-27:ita.parma:ita.torino:matchday_7",
+            15,
+            14.97
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.parma:ita.torino",
+            15,
+            14.97
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.getafe:esp.rayo_vallecano:matchday_9",
+            30,
+            29.97
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.tottenham:eng.coventry:matchday_7",
+            30,
+            29.97
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.tottenham:eng.coventry",
+            30,
+            29.97
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.getafe:esp.rayo_vallecano",
+            30,
+            29.97
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=748:sim=0"
+        ],
+        "batch_id": "kd-20261019T184000Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ita.serie_a:2026-27:ita.parma:ita.torino:matchday_7",
+            5,
+            5.0
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.parma:ita.torino",
+            5,
+            5.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=6:paid=2:rows=14",
+          "lineups:ok:2",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=742:sim=0"
+        ],
+        "batch_id": "kd-20261019T184544Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:esp.la_liga:2026-27:esp.getafe:esp.rayo_vallecano:matchday_9",
+            15,
+            14.26
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.tottenham:eng.coventry:matchday_7",
+            15,
+            14.26
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.tottenham:eng.coventry",
+            15,
+            14.26
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.getafe:esp.rayo_vallecano",
+            15,
+            14.26
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:2",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=742:sim=0"
+        ],
+        "batch_id": "kd-20261019T185502Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:esp.la_liga:2026-27:esp.getafe:esp.rayo_vallecano:matchday_9",
+            5,
+            4.97
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.tottenham:eng.coventry:matchday_7",
+            5,
+            4.97
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.tottenham:eng.coventry",
+            5,
+            4.97
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.getafe:esp.rayo_vallecano",
+            5,
+            4.97
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=730:sim=0"
+        ],
+        "batch_id": "ks-20261019T191002Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=730:sim=0"
+        ],
+        "batch_id": "ks-20261019T192503Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=730:sim=0"
+        ],
+        "batch_id": "ks-20261019T194003Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=730:sim=0"
+        ],
+        "batch_id": "kd-20261019T195247Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.newells:arg.central_cordoba",
+            120,
+            127.21
+          ],
+          [
+            "fx:arg.primera:2026:arg.sarmiento:arg.barracas_central",
+            120,
+            127.21
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=730:sim=0"
+        ],
+        "batch_id": "ks-20261019T200747Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=730:sim=0"
+        ],
+        "batch_id": "ks-20261019T202319Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=730:sim=0"
+        ],
+        "batch_id": "ks-20261019T203819Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=730:sim=0"
+        ],
+        "batch_id": "kd-20261019T205247Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:bra.serie_a:2026:bra.corinthians:bra.vitoria",
+            120,
+            127.21
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:ok:fixtures=1:sim=0:cache=0:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261019T205903Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.newells:arg.central_cordoba",
+            60,
+            60.95
+          ],
+          [
+            "fx:arg.primera:2026:arg.sarmiento:arg.barracas_central",
+            60,
+            60.95
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=730:sim=0"
+        ],
+        "batch_id": "ks-20261019T211403Z",
+        "due": [],
+        "slate_refresh": true
+      }
+    ]
+  },
   "missed_total": 180,
   "n_pending_fixtures": 15,
   "pending_fixtures": [

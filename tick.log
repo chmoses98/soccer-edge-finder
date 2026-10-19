@@ -1368,3 +1368,38 @@ Run `run-20261019T210153Z-8756f5` generated 2026-10-19T21:01:53.952216Z · filte
 These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW. They are NOT recommendations.
 
 ## Events
+
+{
+  "outputs": {
+    "json": "work/runs/_pending/run_output.v1.json",
+    "md": "work/runs/_pending/RUN_SOCCER.md",
+    "contracts": "work/runs/_pending/priced_contracts.json",
+    "coverage": "work/runs/_pending/coverage.json",
+    "diagnostics": "work/runs/_pending/coverage_diagnostics.json"
+  },
+  "simulated": [],
+  "repriced": [],
+  "archived_records": 0
+}
+[dispatch] holding 9.5 min (next window opens in 22.5 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261019T211641Z",
+  "complete": true,
+  "discovered": 4901,
+  "written": 1111,
+  "path": "work/snapshots/2026-10-19/cap-20261019T211641Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261019T211641Z-e3439e", "mode": "reprice_only", "fixtures": 7, "contract_sides": 730, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.349, "price_changes_vs_previous": 46}
+{
+ "batches": 15,
+ "horizons_delivered": 41,
+ "missed_states": {},
+ "paid_calls": 8,
+ "credits_spent": 24,
+ "end_reason": "link_time_limit",
+ "chain_continue": true,
+ "delivered_total": 1771,
+ "missed_total": 180,
+ "delivery_rate_total": 0.9077396207073296
+}
