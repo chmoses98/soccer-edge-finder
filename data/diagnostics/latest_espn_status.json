@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-19T04:54:12.320723+00:00",
+  "as_of": "2026-10-19T13:41:24.416122+00:00",
   "events": 799,
   "events_skipped_unmapped": 424,
   "fixtures_mapped": 375,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=10"
+      "weather_stopped:consecutive_failures:skipped=8"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 20,
-    "events": 20,
+    "captured": 22,
+    "events": 22,
     "failures": [],
     "published_post": 0,
     "published_pre_kickoff": 0,
     "unchanged": 0,
-    "unpublished": 20
+    "unpublished": 22
   },
   "map_proposals": {
     "bel.1": {
@@ -163,7 +163,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 9,
+  "results_appended": 0,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -217,17 +217,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 6,
+    "captured": 8,
     "events": 19,
     "failures": [
-      "401878019: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Pasto&count=5&language=en&forma",
-      "401878040: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Cali&count=5&language=en&format",
-      "401878033: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bogota&count=5&language=en&form"
+      "401878033: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=4.6097&longitude=-74.0817&hourly=te",
+      "401878021: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=C\u00facuta&count=5&language=en&form",
+      "401877892: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=4.6097&longitude=-74.0817&hourly=te"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 10,
+    "skipped": 8,
     "stopped": "consecutive_failures"
   }
 }
