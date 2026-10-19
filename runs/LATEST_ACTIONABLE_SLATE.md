@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261019T150127Z-c5eafa` · generated 2026-10-19T15:01:27.830585Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261019T151626Z-8c202e` · generated 2026-10-19T15:16:26.060558Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-19T14:58:41.124002Z (CURRENT at publish; CURRENT until 2026-10-19T15:18:41.124002Z, STALE after 2026-10-19T15:28:41.124002Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-19T15:13:41.849933Z (CURRENT at publish; CURRENT until 2026-10-19T15:33:41.849933Z, STALE after 2026-10-19T15:43:41.849933Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-19T10:15:59.844663Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.46s
+model board generated 2026-10-19T10:15:59.844663Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.27s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -24,22 +24,21 @@ model board generated 2026-10-19T10:15:59.844663Z · simulations this update: 0 
 | 2026-10-21T01:00:00Z | Atlético San Luis vs Querétaro (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-21T03:00:00Z | Tigres UANL vs León (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (5; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (4; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Corinthians vs Vitória | Result: home | no | 0.3800 | 0.519 [0.363, 0.673] | +0.123 | +0.025 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Corinthians vs Vitória | Result: away | yes | 0.1450 | 0.247 [0.138, 0.364] | +0.093 | +0.015 | 0.15 | - |  | RESEARCH_CANDIDATE |
 | Corinthians vs Vitória | away wins by more than 1.5 | yes | 0.0400 | 0.093 [0.037, 0.160] | +0.050 | +0.010 | 0.04 | - | * | RESEARCH_CANDIDATE |
-| Tigres UANL vs León | away team total over 0.5 | no | 0.3300 | 0.431 [0.311, 0.551] | +0.085 | +0.006 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | Atlético San Luis vs Querétaro | btts | no | 0.4300 | 0.538 [0.408, 0.665] | +0.091 | +0.004 | 0.43 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 437
-action_NO_QUOTE: 142
-action_RESEARCH_CANDIDATE: 5
+action_NO_EDGE: 439
+action_NO_QUOTE: 141
+action_RESEARCH_CANDIDATE: 4
 contract_sides: 584
 fixtures: 11
 fixtures_model_invalidated: 0
