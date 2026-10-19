@@ -1,10 +1,10 @@
 {
  "counts": {
+  "NO_SPORT_KEY": 19,
+  "PINNACLE_VALID_CLOSE": 183,
   "DISPATCHER_CLOSE_NO_ATTEMPT": 125,
-  "PINNACLE_VALID_CLOSE": 181,
   "MISSED_DISPATCHER_CLOSE": 36,
-  "PINNACLE_QUOTED_NOTHING": 15,
-  "NO_SPORT_KEY": 19
+  "PINNACLE_QUOTED_NOTHING": 15
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.sarmiento": {
@@ -31,6 +31,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:arg.primera:2026:arg.belgrano:arg.river_plate": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261018T230321Z"
   },
   "fx:arg.primera:2026:arg.boca_juniors:arg.talleres": {
    "state": "MISSED_DISPATCHER_CLOSE",
@@ -1456,6 +1461,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261010T224330Z"
+  },
+  "fx:mex.liga_mx:2026:mex.monterrey:mex.pachuca": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261019T004320Z"
   },
   "fx:mex.liga_mx:2026:mex.necaxa:mex.atlas": {
    "state": "MISSED_DISPATCHER_CLOSE",
