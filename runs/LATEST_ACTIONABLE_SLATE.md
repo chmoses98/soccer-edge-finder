@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261019T095712Z-f72a22` · generated 2026-10-19T09:57:12.747829Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261019T101601Z-71eb56` · generated 2026-10-19T10:16:01.272992Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-19T09:54:28.701745Z (CURRENT at publish; CURRENT until 2026-10-19T10:14:28.701745Z, STALE after 2026-10-19T10:24:28.701745Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-19T10:13:03.807960Z (CURRENT at publish; CURRENT until 2026-10-19T10:33:03.807960Z, STALE after 2026-10-19T10:43:03.807960Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-19T04:41:44.226920Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.30s
+model board generated 2026-10-19T10:15:59.844663Z · simulations this update: 4 · Odds API calls this update: 0 (credits 0) · reprice 0.26s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -28,15 +28,15 @@ model board generated 2026-10-19T04:41:44.226920Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Corinthians vs Vitória | Result: away | yes | 0.1500 | 0.247 [0.138, 0.364] | +0.088 | +0.010 | 0.15 | - | * | RESEARCH_CANDIDATE |
+| Corinthians vs Vitória | Result: away | yes | 0.1450 | 0.247 [0.138, 0.364] | +0.093 | +0.015 | 0.15 | - | * | RESEARCH_CANDIDATE |
 | Corinthians vs Vitória | Result: home | no | 0.4000 | 0.519 [0.363, 0.673] | +0.103 | +0.005 | 0.4 | - |  | RESEARCH_CANDIDATE |
 | Atlético San Luis vs Querétaro | btts | no | 0.4300 | 0.538 [0.408, 0.665] | +0.091 | +0.004 | 0.43 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 442
-action_NO_QUOTE: 139
+action_NO_EDGE: 441
+action_NO_QUOTE: 140
 action_RESEARCH_CANDIDATE: 3
 contract_sides: 584
 fixtures: 11
