@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261019T204057Z-1a9655` · generated 2026-10-19T20:40:57.348248Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261019T205531Z-978807` · generated 2026-10-19T20:55:31.257197Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-19T20:38:19.047777Z (CURRENT at publish; CURRENT until 2026-10-19T20:58:19.047777Z, STALE after 2026-10-19T21:08:19.047777Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-19T20:52:48.836512Z (CURRENT at publish; CURRENT until 2026-10-19T21:12:48.836512Z, STALE after 2026-10-19T21:22:48.836512Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-19T15:32:52.515482Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.34s
 
@@ -13,7 +13,7 @@ model board generated 2026-10-19T15:32:52.515482Z · simulations this update: 0 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
 | 2026-10-19T22:00:00Z | Newell's Old Boys vs Central Córdoba (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-10-19T23:00:00Z | Corinthians vs Vitória (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-19T23:00:00Z | Corinthians vs Vitória (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-20T00:15:00Z | Deportivo Riestra vs Unión (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-21T00:07:00Z | Guadalajara vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-21T01:00:00Z | FC Juárez vs Atlante (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -32,8 +32,8 @@ model board generated 2026-10-19T15:32:52.515482Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 510
-action_NO_QUOTE: 216
+action_NO_EDGE: 509
+action_NO_QUOTE: 217
 action_RESEARCH_CANDIDATE: 4
 contract_sides: 730
 fixtures: 7
