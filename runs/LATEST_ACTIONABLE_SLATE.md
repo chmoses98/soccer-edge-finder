@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261019T223259Z-b8b12c` · generated 2026-10-19T22:32:59.128146Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
+slate `slate-20261019T224744Z-34b9f5` · generated 2026-10-19T22:47:44.272217Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-19T22:30:12.641375Z (CURRENT at publish; CURRENT until 2026-10-19T22:50:12.641375Z, STALE after 2026-10-19T23:00:12.641375Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-19T22:45:01.173241Z (CURRENT at publish; CURRENT until 2026-10-19T23:05:01.173241Z, STALE after 2026-10-19T23:15:01.173241Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-19T22:32:57.251541Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.35s
+model board generated 2026-10-19T22:32:57.251541Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.37s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-19T22:32:57.251541Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-19T23:00:00Z | Corinthians vs Vitória (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
+| 2026-10-19T23:00:00Z | Corinthians vs Vitória (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
 | 2026-10-20T00:15:00Z | Deportivo Riestra vs Unión (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-21T00:07:00Z | Guadalajara vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-21T01:00:00Z | FC Juárez vs Atlante (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -23,8 +23,8 @@ model board generated 2026-10-19T22:32:57.251541Z · simulations this update: 1 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Corinthians vs Vitória | Result: home | no | 0.3950 | 0.526 [0.365, 0.674] | +0.114 | +0.011 | 0.4 | 0.354 | * | RESEARCH_CANDIDATE |
-| Corinthians vs Vitória | Result: away | yes | 0.1550 | 0.248 [0.136, 0.368] | +0.084 | +0.007 | 0.16 | 0.127 |  | RESEARCH_CANDIDATE |
+| Corinthians vs Vitória | Result: home | no | 0.3950 | 0.526 [0.365, 0.674] | +0.114 | +0.011 | 0.4 | 0.402 | * | RESEARCH_CANDIDATE |
+| Corinthians vs Vitória | Result: away | yes | 0.1600 | 0.248 [0.136, 0.368] | +0.078 | +0.001 | 0.16 | 0.149 |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
