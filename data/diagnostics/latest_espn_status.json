@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-18T22:29:04.750024+00:00",
-  "events": 817,
-  "events_skipped_unmapped": 428,
-  "fixtures_mapped": 389,
+  "as_of": "2026-10-19T04:54:12.320723+00:00",
+  "events": 799,
+  "events_skipped_unmapped": 424,
+  "fixtures_mapped": 375,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=14"
+      "weather_stopped:consecutive_failures:skipped=10"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 32,
-    "events": 36,
+    "captured": 20,
+    "events": 20,
     "failures": [],
-    "published_post": 10,
-    "published_pre_kickoff": 3,
-    "unchanged": 4,
-    "unpublished": 23
+    "published_post": 0,
+    "published_pre_kickoff": 0,
+    "unchanged": 0,
+    "unpublished": 20
   },
   "map_proposals": {
     "bel.1": {
@@ -163,11 +163,12 @@
     }
   },
   "map_version": "4",
-  "results_appended": 10,
+  "results_appended": 9,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
   "unmapped_leagues": [
+    "afc.champions",
     "aus.1",
     "bel.1",
     "bra.2",
@@ -216,17 +217,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 8,
-    "events": 25,
+    "captured": 6,
+    "events": 19,
     "failures": [
-      "401841272: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-23.5475&longitude=-46.6361&hourly=",
-      "401860396: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Goi\u00e3nia&count=5&language=en&for",
-      "401860401: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Goi\u00e3nia&count=5&language=en&for"
+      "401878019: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Pasto&count=5&language=en&forma",
+      "401878040: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Cali&count=5&language=en&format",
+      "401878033: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bogota&count=5&language=en&form"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 14,
+    "skipped": 10,
     "stopped": "consecutive_failures"
   }
 }
