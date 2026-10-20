@@ -1,12 +1,11 @@
 {
-  "as_of": "2026-10-20T11:49:15.306090+00:00",
+  "as_of": "2026-10-20T17:18:18.471575+00:00",
   "events": 816,
   "events_skipped_unmapped": 448,
   "fixtures_mapped": 368,
   "health": {
     "reasons": [
-      "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=1"
+      "weather_failures:2"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +80,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 57,
-    "events": 57,
+    "captured": 68,
+    "events": 68,
     "failures": [],
-    "published_post": 0,
-    "published_pre_kickoff": 0,
+    "published_post": 4,
+    "published_pre_kickoff": 2,
     "unchanged": 0,
-    "unpublished": 57
+    "unpublished": 62
   },
   "map_proposals": {
     "bel.1": {
@@ -209,7 +208,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 0,
+  "results_appended": 2,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -271,17 +270,16 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 10,
-    "events": 14,
+    "captured": 13,
+    "events": 15,
     "failures": [
-      "401912521: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rio%20de%20Janeiro&count=5&lang",
-      "401913957: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rio%20de%20Janeiro&count=5&lang",
-      "401913956: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-34.9033&longitude=-56.1882&hourly="
+      "401874550: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=56.4607&longitude=10.0364&hourly=te",
+      "401880277: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Wolverhampton&count=5&language="
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 1,
-    "stopped": "consecutive_failures"
+    "skipped": 0,
+    "stopped": null
   }
 }
