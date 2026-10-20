@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261020T225333Z-1ee489` · generated 2026-10-20T22:53:33.750276Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261020T230847Z-61015e` · generated 2026-10-20T23:08:47.651790Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-20T22:50:46.688800Z (CURRENT at publish; CURRENT until 2026-10-20T23:10:46.688800Z, STALE after 2026-10-20T23:20:46.688800Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-20T23:05:45.348840Z (CURRENT at publish; CURRENT until 2026-10-20T23:25:45.348840Z, STALE after 2026-10-20T23:35:45.348840Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-20T19:27:34.582602Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.91s
+model board generated 2026-10-20T23:08:39.150766Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.93s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-20T19:27:34.582602Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-21T00:07:00Z | Guadalajara vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-21T00:07:00Z | Guadalajara vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 77 | 0 |
 | 2026-10-21T01:00:00Z | FC Juárez vs Atlante (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-21T01:00:00Z | Atlético San Luis vs Querétaro (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-21T03:10:00Z | Tigres UANL vs León (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -58,7 +58,6 @@ model board generated 2026-10-20T19:27:34.582602Z · simulations this update: 0 
 | Tigres UANL vs León | away team total over 1.5 | no | 0.6900 | 0.785 [0.667, 0.881] | +0.080 | +0.015 | 0.7 | - |  | RESEARCH_CANDIDATE |
 | Toluca vs Tijuana | Total goals over 5.5 | no | 0.8700 | 0.928 [0.854, 0.982] | +0.050 | +0.015 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | Exact score 1-0 (home-away) | yes | 0.0800 | 0.129 [0.083, 0.174] | +0.044 | +0.014 | 0.09 | - | * | RESEARCH_CANDIDATE |
-| FC Juárez vs Atlante | away team total over 0.5 | no | 0.2000 | 0.314 [0.179, 0.451] | +0.102 | +0.013 | 0.21 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | First-half total goals over 1.5 | no | 0.6600 | 0.757 [0.638, 0.862] | +0.081 | +0.012 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Toluca vs Tijuana | Result: draw | yes | 0.1700 | 0.233 [0.157, 0.304] | +0.053 | +0.009 | 0.17 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | Exact score 1-2 (home-away) | no | 0.9100 | 0.939 [0.918, 0.959] | +0.023 | +0.009 | 0.91 | - |  | RESEARCH_CANDIDATE |
@@ -67,13 +66,14 @@ model board generated 2026-10-20T19:27:34.582602Z · simulations this update: 0 
 | Tigres UANL vs León | away team total over 2.5 | no | 0.9000 | 0.938 [0.882, 0.978] | +0.031 | +0.005 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Toluca vs Tijuana | home wins by more than 2.5 | no | 0.7300 | 0.823 [0.685, 0.933] | +0.080 | +0.005 | 0.73 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | First-half exact score 0-0 (home-away) | yes | 0.3000 | 0.402 [0.278, 0.512] | +0.087 | +0.005 | 0.3 | - | * | RESEARCH_CANDIDATE |
+| Puebla vs Monterrey | First-half total goals over 0.5 | no | 0.3000 | 0.402 [0.278, 0.512] | +0.087 | +0.005 | 0.3 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_MODEL_INVALIDATED: 123
-action_NO_EDGE: 1035
-action_NO_QUOTE: 241
+action_NO_EDGE: 1039
+action_NO_QUOTE: 237
 action_RESEARCH_CANDIDATE: 51
 contract_sides: 1450
 fixtures: 10
