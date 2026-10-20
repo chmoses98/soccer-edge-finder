@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-20T05:04:19.197754+00:00",
+  "as_of": "2026-10-20T11:49:15.306090+00:00",
   "events": 816,
   "events_skipped_unmapped": 448,
   "fixtures_mapped": 368,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=3"
+      "weather_stopped:consecutive_failures:skipped=1"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 47,
-    "events": 47,
+    "captured": 57,
+    "events": 57,
     "failures": [],
     "published_post": 0,
     "published_pre_kickoff": 0,
     "unchanged": 0,
-    "unpublished": 47
+    "unpublished": 57
   },
   "map_proposals": {
     "bel.1": {
@@ -209,7 +209,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 4,
+  "results_appended": 0,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -271,17 +271,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 7,
-    "events": 13,
+    "captured": 10,
+    "events": 14,
     "failures": [
-      "401877877: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Medellin&count=5&language=en&fo",
-      "401912520: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-23.5475&longitude=-46.6361&hourly=",
-      "401912521: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rio%20de%20Janeiro&count=5&lang"
+      "401912521: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rio%20de%20Janeiro&count=5&lang",
+      "401913957: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rio%20de%20Janeiro&count=5&lang",
+      "401913956: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-34.9033&longitude=-56.1882&hourly="
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 3,
+    "skipped": 1,
     "stopped": "consecutive_failures"
   }
 }
