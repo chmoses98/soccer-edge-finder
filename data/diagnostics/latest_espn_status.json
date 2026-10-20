@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-19T23:48:09.994166+00:00",
-  "events": 799,
-  "events_skipped_unmapped": 424,
-  "fixtures_mapped": 375,
+  "as_of": "2026-10-20T05:04:19.197754+00:00",
+  "events": 816,
+  "events_skipped_unmapped": 448,
+  "fixtures_mapped": 368,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=7"
+      "weather_stopped:consecutive_failures:skipped=3"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 53,
-    "events": 53,
+    "captured": 47,
+    "events": 47,
     "failures": [],
-    "published_post": 4,
-    "published_pre_kickoff": 1,
+    "published_post": 0,
+    "published_pre_kickoff": 0,
     "unchanged": 0,
-    "unpublished": 48
+    "unpublished": 47
   },
   "map_proposals": {
     "bel.1": {
@@ -103,6 +103,52 @@
       "unresolved": {
         "7853": "AGF",
         "909": "F.C. K\u00f8benhavn"
+      }
+    },
+    "eng.3": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "342": "Peterborough United",
+        "387": "Bradford City"
+      }
+    },
+    "eng.4": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "3891": "Fleetwood Town"
+      }
+    },
+    "eng.league_cup": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "342": "Peterborough United",
+        "387": "Bradford City",
+        "3891": "Fleetwood Town"
+      }
+    },
+    "ger.2": {
+      "ambiguous": {},
+      "proposed": {
+        "121": "ger.bochum",
+        "3812": "ger.darmstadt"
+      },
+      "unresolved": {
+        "4471": "Karlsruher SC"
+      }
+    },
+    "ger.dfb_pokal": {
+      "ambiguous": {},
+      "proposed": {
+        "121": "ger.bochum",
+        "3812": "ger.darmstadt"
+      },
+      "unresolved": {
+        "4471": "Karlsruher SC",
+        "6631": "SG Sonnenhof Gro\u00dfaspach",
+        "9705": "Rot-Weiss Essen"
       }
     },
     "nor.1": {
@@ -194,6 +240,7 @@
   ],
   "unmapped_team_ids": {
     "1010": "OFI Crete",
+    "121": "VfL Bochum",
     "13083": "Hapoel Be'er",
     "19246": "Riga FC",
     "20024": "Ararat-Armenia",
@@ -205,29 +252,36 @@
     "21922": "Sabah FK",
     "21943": "Egnatia",
     "3024": "FC Thun",
+    "342": "Peterborough United",
+    "3812": "SV Darmstadt 98",
+    "387": "Bradford City",
+    "3891": "Fleetwood Town",
+    "4471": "Karlsruher SC",
     "489": "Hajduk Split",
     "490": "Levski Sofia",
     "510": "Viking FK",
     "620": "SK Brann",
+    "6631": "SG Sonnenhof Gro\u00dfaspach",
     "7853": "AGF",
     "8089": "CSU Craiova",
     "8169": "KuPS Kuopio",
     "909": "F.C. K\u00f8benhavn",
     "936": "Sint-Truidense",
+    "9705": "Rot-Weiss Essen",
     "987": "Lillestrom"
   },
   "weather": {
     "captured": 7,
-    "events": 17,
+    "events": 13,
     "failures": [
-      "401878040: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=3.4305&longitude=-76.5199&hourly=te",
-      "401878033: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bogota&count=5&language=en&form",
-      "401878021: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=C\u00facuta&count=5&language=en&form"
+      "401877877: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Medellin&count=5&language=en&fo",
+      "401912520: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-23.5475&longitude=-46.6361&hourly=",
+      "401912521: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rio%20de%20Janeiro&count=5&lang"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 7,
+    "skipped": 3,
     "stopped": "consecutive_failures"
   }
 }
