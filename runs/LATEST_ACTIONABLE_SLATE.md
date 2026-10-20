@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261020T195343Z-0ae8b2` · generated 2026-10-20T19:53:43.282304Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261020T200833Z-8915a7` · generated 2026-10-20T20:08:33.022283Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-20T19:50:49.207114Z (CURRENT at publish; CURRENT until 2026-10-20T20:10:49.207114Z, STALE after 2026-10-20T20:20:49.207114Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-20T20:05:49.220660Z (CURRENT at publish; CURRENT until 2026-10-20T20:25:49.220660Z, STALE after 2026-10-20T20:35:49.220660Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-20T19:27:34.582602Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.79s
+model board generated 2026-10-20T19:27:34.582602Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.80s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -23,7 +23,7 @@ model board generated 2026-10-20T19:27:34.582602Z · simulations this update: 0 
 | 2026-10-22T03:10:00Z | Pachuca vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-22T03:10:00Z | Santos Laguna vs Pumas UNAM (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (51; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (50; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -50,7 +50,6 @@ model board generated 2026-10-20T19:27:34.582602Z · simulations this update: 0 
 | Puebla vs Monterrey | First half: away wins by more than 1.5 | no | 0.9000 | 0.953 [0.909, 0.991] | +0.046 | +0.024 | 0.92 | - | * | RESEARCH_CANDIDATE |
 | Toluca vs Tijuana | First-half total goals over 0.5 | no | 0.2100 | 0.306 [0.198, 0.422] | +0.084 | +0.016 | 0.22 | - | * | RESEARCH_CANDIDATE |
 | Toluca vs Tijuana | Total goals over 1.5 | no | 0.1400 | 0.252 [0.130, 0.391] | +0.103 | +0.016 | 0.15 | - |  | RESEARCH_CANDIDATE |
-| Puebla vs Monterrey | Total goals over 5.5 | no | 0.9400 | 0.973 [0.941, 0.994] | +0.029 | +0.016 | 0.95 | - |  | RESEARCH_CANDIDATE |
 | Tigres UANL vs León | away team total over 1.5 | no | 0.6900 | 0.785 [0.667, 0.881] | +0.080 | +0.015 | 0.7 | - |  | RESEARCH_CANDIDATE |
 | Toluca vs Tijuana | Total goals over 5.5 | no | 0.8700 | 0.928 [0.854, 0.982] | +0.050 | +0.015 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | Exact score 1-0 (home-away) | yes | 0.0800 | 0.129 [0.083, 0.174] | +0.044 | +0.014 | 0.09 | - | * | RESEARCH_CANDIDATE |
@@ -67,13 +66,14 @@ model board generated 2026-10-20T19:27:34.582602Z · simulations this update: 0 
 | Toluca vs Tijuana | home wins by more than 2.5 | no | 0.7300 | 0.823 [0.685, 0.933] | +0.080 | +0.005 | 0.73 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | First-half exact score 0-0 (home-away) | yes | 0.3000 | 0.402 [0.278, 0.512] | +0.087 | +0.005 | 0.3 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | First-half total goals over 0.5 | no | 0.3000 | 0.402 [0.278, 0.512] | +0.087 | +0.005 | 0.3 | - |  | RESEARCH_CANDIDATE |
+| Puebla vs Monterrey | Exact score 0-0 (home-away) | yes | 0.0800 | 0.137 [0.069, 0.206] | +0.052 | +0.004 | 0.08 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1148
-action_NO_QUOTE: 251
-action_RESEARCH_CANDIDATE: 51
+action_NO_EDGE: 1150
+action_NO_QUOTE: 250
+action_RESEARCH_CANDIDATE: 50
 contract_sides: 1450
 fixtures: 10
 fixtures_model_invalidated: 0
