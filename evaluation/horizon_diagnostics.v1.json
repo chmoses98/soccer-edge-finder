@@ -1,11 +1,11 @@
 {
   "by_horizon": {
     "120": {
-      "achieved_minutes_median": 122.28,
+      "achieved_minutes_median": 122.3,
       "achieved_minutes_p10": 118.52,
-      "achieved_minutes_p90": 126.62,
-      "delivered": 369,
-      "delivery_rate": 0.917910447761194,
+      "achieved_minutes_p90": 126.65,
+      "delivered": 372,
+      "delivery_rate": 0.9185185185185185,
       "lateness_minutes_max": 62.51,
       "lateness_minutes_median": -2.28,
       "missed": 33
@@ -21,11 +21,11 @@
       "missed": 37
     },
     "30": {
-      "achieved_minutes_median": 27.79,
+      "achieved_minutes_median": 27.83,
       "achieved_minutes_p10": 26.11,
       "achieved_minutes_p90": 29.2,
-      "delivered": 354,
-      "delivery_rate": 0.9076923076923077,
+      "delivered": 355,
+      "delivery_rate": 0.907928388746803,
       "lateness_minutes_max": 16.98,
       "lateness_minutes_median": 2.17,
       "missed": 36
@@ -44,19 +44,19 @@
       "achieved_minutes_median": 61.74,
       "achieved_minutes_p10": 57.43,
       "achieved_minutes_p90": 62.4,
-      "delivered": 358,
-      "delivery_rate": 0.9040404040404041,
+      "delivered": 359,
+      "delivery_rate": 0.9042821158690176,
       "lateness_minutes_max": 25.74,
       "lateness_minutes_median": -1.74,
       "missed": 38
     }
   },
-  "delivered_total": 1786,
-  "delivery_rate_total": 0.9084435401831129,
-  "fixtures_tracked": 402,
-  "generated_at": "2026-10-20T20:39:58Z",
+  "delivered_total": 1791,
+  "delivery_rate_total": 0.908675799086758,
+  "fixtures_tracked": 405,
+  "generated_at": "2026-10-20T23:55:33Z",
   "missed_total": 180,
-  "n_pending_fixtures": 17,
+  "n_pending_fixtures": 19,
   "pending_fixtures": [
     {
       "competition_id": "mex.liga_mx",
@@ -173,7 +173,21 @@
     {
       "competition_id": "arg.primera",
       "fixture_id": "fx:arg.primera:2026:arg.gimnasia_la_plata:arg.sarmiento",
-      "kickoff_utc": "2026-10-23T20:00:00Z",
+      "kickoff_utc": "2026-10-23T21:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "arg.primera",
+      "fixture_id": "fx:arg.primera:2026:arg.gimnasia_mendoza:arg.platense",
+      "kickoff_utc": "2026-10-23T21:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "bra.serie_a",
+      "fixture_id": "fx:bra.serie_a:2026:bra.cruzeiro:bra.remo",
+      "kickoff_utc": "2026-10-23T23:00:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }
