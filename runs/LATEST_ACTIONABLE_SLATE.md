@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261021T195557Z-56a269` · generated 2026-10-21T19:55:57.978366Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261021T201057Z-8e9609` · generated 2026-10-21T20:10:57.761319Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-21T19:53:15.438174Z (CURRENT at publish; CURRENT until 2026-10-21T20:13:15.438174Z, STALE after 2026-10-21T20:23:15.438174Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-21T20:08:15.446988Z (CURRENT at publish; CURRENT until 2026-10-21T20:28:15.446988Z, STALE after 2026-10-21T20:38:15.446988Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-21T19:34:00.963290Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.42s
+model board generated 2026-10-21T19:34:00.963290Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.23s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -23,7 +23,7 @@ model board generated 2026-10-21T19:34:00.963290Z · simulations this update: 0 
 | 2026-10-23T18:45:00Z | Torino vs Monza (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-23T19:00:00Z | Ipswich Town vs Nottingham Forest (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 81 | 0 |
 
-## Candidates on CURRENT prices (51; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (52; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -71,9 +71,9 @@ model board generated 2026-10-21T19:34:00.963290Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 707
-action_NO_QUOTE: 700
-action_RESEARCH_CANDIDATE: 51
+action_NO_EDGE: 705
+action_NO_QUOTE: 701
+action_RESEARCH_CANDIDATE: 52
 contract_sides: 1458
 fixtures: 10
 fixtures_model_invalidated: 0
