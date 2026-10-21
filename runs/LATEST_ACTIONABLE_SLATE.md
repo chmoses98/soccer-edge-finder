@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261021T204059Z-715dd8` · generated 2026-10-21T20:40:59.663697Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261021T205525Z-978789` · generated 2026-10-21T20:55:25.521575Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-21T20:38:17.179009Z (CURRENT at publish; CURRENT until 2026-10-21T20:58:17.179009Z, STALE after 2026-10-21T21:08:17.179009Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-21T20:52:40.103232Z (CURRENT at publish; CURRENT until 2026-10-21T21:12:40.103232Z, STALE after 2026-10-21T21:22:40.103232Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-21T19:34:00.963290Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.26s
+model board generated 2026-10-21T19:34:00.963290Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.23s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-21T19:34:00.963290Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-21T23:00:00Z | FC Cincinnati vs D.C. United (usa.mls) | VALID (CURRENT) | confirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-21T23:00:00Z | FC Cincinnati vs D.C. United (usa.mls) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-22T01:00:00Z | Atlas vs Club América (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-22T01:00:00Z | Puebla vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-22T01:00:00Z | Toluca vs Tijuana (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 32 | 0 |
@@ -66,7 +66,7 @@ model board generated 2026-10-21T19:34:00.963290Z · simulations this update: 0 
 | Puebla vs Monterrey | First-half total goals over 0.5 | no | 0.2900 | 0.400 [0.278, 0.512] | +0.096 | +0.016 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Toluca vs Tijuana | First-half result: draw | yes | 0.3100 | 0.406 [0.308, 0.503] | +0.081 | +0.015 | 0.32 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | Exact score 0-0 (home-away) | yes | 0.0700 | 0.137 [0.070, 0.205] | +0.063 | +0.014 | 0.08 | - |  | RESEARCH_CANDIDATE |
-| Puebla vs Monterrey | home wins by more than 1.5 | yes | 0.0800 | 0.170 [0.076, 0.281] | +0.085 | +0.013 | 0.09 | - |  | RESEARCH_CANDIDATE |
+| Toluca vs Tijuana | Total goals over 0.5 | no | 0.0300 | 0.079 [0.032, 0.136] | +0.047 | +0.012 | 0.04 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
