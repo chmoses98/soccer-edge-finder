@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261021T103134Z-b957a9` · generated 2026-10-21T10:31:34.022732Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261021T104634Z-4fca70` · generated 2026-10-21T10:46:34.298384Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-21T10:28:51.823468Z (CURRENT at publish; CURRENT until 2026-10-21T10:48:51.823468Z, STALE after 2026-10-21T10:58:51.823468Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-21T10:43:51.836446Z (CURRENT at publish; CURRENT until 2026-10-21T11:03:51.836446Z, STALE after 2026-10-21T11:13:51.836446Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-20T19:27:34.582602Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.34s
+model board generated 2026-10-20T19:27:34.582602Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.35s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -31,8 +31,8 @@ model board generated 2026-10-20T19:27:34.582602Z · simulations this update: 0 
 | Puebla vs Monterrey | First-half result: away | no | 0.6200 | 0.768 [0.668, 0.862] | +0.132 | +0.074 | 0.69 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | Second-half result: away | no | 0.5900 | 0.741 [0.627, 0.843] | +0.134 | +0.063 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | Total goals over 2.5 | no | 0.4700 | 0.645 [0.487, 0.779] | +0.157 | +0.063 | 0.53 | - | * | RESEARCH_CANDIDATE |
+| Puebla vs Monterrey | away wins by more than 2.5 | no | 0.8800 | 0.963 [0.929, 0.989] | +0.076 | +0.061 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Toluca vs Tijuana | home team total over 1.5 | no | 0.2700 | 0.462 [0.275, 0.643] | +0.178 | +0.054 | 0.32 | - | * | RESEARCH_CANDIDATE |
-| Puebla vs Monterrey | away wins by more than 2.5 | no | 0.8900 | 0.963 [0.929, 0.989] | +0.066 | +0.052 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Toluca vs Tijuana | Total goals over 2.5 | no | 0.3100 | 0.491 [0.315, 0.665] | +0.166 | +0.051 | 0.36 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | Total goals over 3.5 | no | 0.7000 | 0.827 [0.708, 0.919] | +0.112 | +0.048 | 0.74 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | Result: home | yes | 0.2300 | 0.384 [0.245, 0.538] | +0.142 | +0.045 | 0.27 | - |  | RESEARCH_CANDIDATE |
