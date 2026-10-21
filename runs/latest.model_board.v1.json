@@ -1,6 +1,1316 @@
 {
   "contract": "model_board.v1",
   "fixtures": {
+    "fx:ger.bundesliga:2026-27:ger.stuttgart:ger.gladbach:matchday_7": {
+      "away": "ger.gladbach",
+      "competition_id": "ger.bundesliga",
+      "competition_name": "Bundesliga",
+      "contracts": {
+        "KXBUNDESLIGAGAME-26OCT23VFBBMG-BMG": {
+          "description": "Result: away",
+          "event_ticker": "KXBUNDESLIGAGAME-26OCT23VFBBMG",
+          "family": "match_result_3way",
+          "interval_level": 0.8,
+          "line": null,
+          "n_worlds": 1000,
+          "p": 0.130818,
+          "p_high": 0.235684,
+          "p_low": 0.044201,
+          "param_sd": 0.078355,
+          "period": "regulation",
+          "q": [
+            0.01427,
+            0.01838,
+            0.02279,
+            0.02682,
+            0.02981,
+            0.0338,
+            0.03679,
+            0.03877,
+            0.04085,
+            0.0426,
+            0.0461,
+            0.04927,
+            0.05108,
+            0.05404,
+            0.05618,
+            0.0571,
+            0.0589,
+            0.0605,
+            0.06153,
+            0.06306,
+            0.06587,
+            0.06741,
+            0.06929,
+            0.07011,
+            0.07135,
+            0.07292,
+            0.07554,
+            0.077,
+            0.07849,
+            0.08028,
+            0.08133,
+            0.08183,
+            0.08312,
+            0.08424,
+            0.08573,
+            0.08769,
+            0.09068,
+            0.09295,
+            0.09436,
+            0.09594,
+            0.09706,
+            0.09872,
+            0.10176,
+            0.10282,
+            0.10544,
+            0.10718,
+            0.1084,
+            0.11053,
+            0.11419,
+            0.1153,
+            0.11645,
+            0.11853,
+            0.11996,
+            0.1221,
+            0.1231,
+            0.12456,
+            0.12808,
+            0.13058,
+            0.13356,
+            0.13556,
+            0.13797,
+            0.14033,
+            0.14265,
+            0.14388,
+            0.14632,
+            0.14885,
+            0.15087,
+            0.15418,
+            0.15717,
+            0.15914,
+            0.16125,
+            0.16367,
+            0.16671,
+            0.17052,
+            0.17265,
+            0.17598,
+            0.17944,
+            0.1842,
+            0.1875,
+            0.19171,
+            0.19351,
+            0.19614,
+            0.19952,
+            0.20478,
+            0.20918,
+            0.21285,
+            0.21923,
+            0.22407,
+            0.22893,
+            0.23308,
+            0.23804,
+            0.24344,
+            0.24839,
+            0.25882,
+            0.26844,
+            0.2809,
+            0.30642,
+            0.31824,
+            0.34253,
+            0.40631
+          ],
+          "sc": {
+            "hi": [
+              0.0,
+              0.0,
+              0.3039,
+              0.2195,
+              0.4244,
+              1.0
+            ],
+            "lo": [
+              0.0,
+              0.0,
+              0.1421,
+              0.0686,
+              0.2114,
+              1.0
+            ],
+            "p": 0.130818,
+            "sp": [
+              0.0,
+              0.0,
+              0.22051,
+              0.13778,
+              0.30753,
+              1.0
+            ]
+          },
+          "side": "away"
+        },
+        "KXBUNDESLIGAGAME-26OCT23VFBBMG-TIE": {
+          "description": "Result: draw",
+          "event_ticker": "KXBUNDESLIGAGAME-26OCT23VFBBMG",
+          "family": "match_result_3way",
+          "interval_level": 0.8,
+          "line": null,
+          "n_worlds": 1000,
+          "p": 0.158704,
+          "p_high": 0.236993,
+          "p_low": 0.084869,
+          "param_sd": 0.058338,
+          "period": "regulation",
+          "q": [
+            0.0347,
+            0.04409,
+            0.04955,
+            0.05694,
+            0.0633,
+            0.06547,
+            0.07086,
+            0.07637,
+            0.07876,
+            0.08384,
+            0.08634,
+            0.08938,
+            0.09217,
+            0.09442,
+            0.09664,
+            0.09925,
+            0.10083,
+            0.10148,
+            0.10451,
+            0.10587,
+            0.10843,
+            0.11009,
+            0.11091,
+            0.11259,
+            0.11416,
+            0.11648,
+            0.11812,
+            0.11982,
+            0.1214,
+            0.12268,
+            0.12369,
+            0.12482,
+            0.12677,
+            0.12853,
+            0.13009,
+            0.13157,
+            0.13308,
+            0.13473,
+            0.13677,
+            0.13915,
+            0.14133,
+            0.14303,
+            0.14445,
+            0.14587,
+            0.14708,
+            0.14933,
+            0.15068,
+            0.15319,
+            0.15644,
+            0.15902,
+            0.16037,
+            0.16274,
+            0.16472,
+            0.16749,
+            0.16857,
+            0.17008,
+            0.17162,
+            0.17277,
+            0.17399,
+            0.17535,
+            0.17635,
+            0.17767,
+            0.17934,
+            0.18108,
+            0.18273,
+            0.18394,
+            0.18542,
+            0.18679,
+            0.18791,
+            0.18965,
+            0.19148,
+            0.19312,
+            0.19467,
+            0.19582,
+            0.19733,
+            0.19869,
+            0.19977,
+            0.20131,
+            0.20219,
+            0.20433,
+            0.20553,
+            0.20901,
+            0.21181,
+            0.21382,
+            0.21625,
+            0.21964,
+            0.22338,
+            0.22653,
+            0.23021,
+            0.23491,
+            0.2378,
+            0.24303,
+            0.24675,
+            0.2499,
+            0.25405,
+            0.25961,
+            0.26647,
+            0.27276,
+            0.28412,
+            0.31187
+          ],
+          "sc": {
+            "hi": [
+              0.0,
+              0.5222,
+              0.322,
+              0.4042,
+              0.7886,
+              0.0
+            ],
+            "lo": [
+              0.0,
+              0.2046,
+              0.168,
+              0.18,
+              0.5756,
+              0.0
+            ],
+            "p": 0.158704,
+            "sp": [
+              0.0,
+              0.35633,
+              0.24509,
+              0.29377,
+              0.69247,
+              0.0
+            ]
+          },
+          "side": "draw"
+        },
+        "KXBUNDESLIGAGAME-26OCT23VFBBMG-VFB": {
+          "description": "Result: home",
+          "event_ticker": "KXBUNDESLIGAGAME-26OCT23VFBBMG",
+          "family": "match_result_3way",
+          "interval_level": 0.8,
+          "line": null,
+          "n_worlds": 1000,
+          "p": 0.710478,
+          "p_high": 0.867126,
+          "p_low": 0.53317,
+          "param_sd": 0.129331,
+          "period": "regulation",
+          "q": [
+            0.36399,
+            0.40294,
+            0.42582,
+            0.4546,
+            0.4821,
+            0.49106,
+            0.50646,
+            0.5107,
+            0.52329,
+            0.53034,
+            0.5357,
+            0.5414,
+            0.54831,
+            0.55367,
+            0.5612,
+            0.56983,
+            0.57702,
+            0.58588,
+            0.59271,
+            0.59853,
+            0.6033,
+            0.60722,
+            0.6108,
+            0.6132,
+            0.61995,
+            0.62605,
+            0.62921,
+            0.63191,
+            0.63695,
+            0.64109,
+            0.64596,
+            0.65224,
+            0.65653,
+            0.66099,
+            0.66433,
+            0.66797,
+            0.67067,
+            0.67242,
+            0.67812,
+            0.68208,
+            0.68624,
+            0.68934,
+            0.694,
+            0.69698,
+            0.70063,
+            0.70289,
+            0.71085,
+            0.71524,
+            0.71721,
+            0.72116,
+            0.72556,
+            0.7297,
+            0.73263,
+            0.73513,
+            0.74214,
+            0.74466,
+            0.74585,
+            0.75396,
+            0.75747,
+            0.76202,
+            0.76395,
+            0.76801,
+            0.76984,
+            0.77135,
+            0.77412,
+            0.77877,
+            0.78219,
+            0.78754,
+            0.79078,
+            0.79329,
+            0.79664,
+            0.79947,
+            0.8011,
+            0.80453,
+            0.80714,
+            0.81218,
+            0.81536,
+            0.81778,
+            0.82096,
+            0.82347,
+            0.82797,
+            0.83094,
+            0.83496,
+            0.83737,
+            0.83964,
+            0.84313,
+            0.84866,
+            0.85134,
+            0.85631,
+            0.86465,
+            0.87026,
+            0.87548,
+            0.88436,
+            0.89127,
+            0.89925,
+            0.90579,
+            0.91617,
+            0.92573,
+            0.93698,
+            0.94926
+          ],
+          "sc": {
+            "hi": [
+              1.0,
+              0.7954,
+              0.635,
+              0.7376,
+              0.0,
+              0.0
+            ],
+            "lo": [
+              1.0,
+              0.4778,
+              0.4318,
+              0.4077,
+              0.0,
+              0.0
+            ],
+            "p": 0.710478,
+            "sp": [
+              1.0,
+              0.64367,
+              0.5344,
+              0.56845,
+              0.0,
+              0.0
+            ]
+          },
+          "side": "home"
+        }
+      },
+      "event_name": "VfB Stuttgart vs Borussia M\u00f6nchengladbach",
+      "fixture_id": "fx:ger.bundesliga:2026-27:ger.stuttgart:ger.gladbach:matchday_7",
+      "fixtures_observed_at": "2026-10-21T18:40:32.298923Z",
+      "home": "ger.stuttgart",
+      "input_fingerprint": "sha256:2f03128d4997fb41b7ebc62a6daf7e9ebeb10ab13e30008cfb6a06ee1547fb9f",
+      "inputs": {
+        "competition_id": "ger.bundesliga",
+        "draws_per_world": 100,
+        "engine_version": "world_sim_v2",
+        "kickoff_utc": "2026-10-23T18:30:00Z",
+        "lineup_key": "none",
+        "model_family": "data_only.world_sim_v2",
+        "model_version": "dc_laplace_v1",
+        "n_worlds": 1000,
+        "neutral_site": false,
+        "parameter_hash": "sha256:6d40980f25bae0d960c6b340e257cf39f57734fa567fb77106472e4dad809790",
+        "requires_winner": false,
+        "stage": "Matchday 7",
+        "worlds_version": "worlds_v1"
+      },
+      "lineup": null,
+      "match_context": {
+        "aggregate": {
+          "source": "no aggregate (not a second leg)",
+          "status": "DERIVED",
+          "value": null
+        },
+        "competition_format": {
+          "source": "registry",
+          "status": "KNOWN",
+          "value": "league"
+        },
+        "competition_id": "ger.bundesliga",
+        "competition_name": {
+          "source": "registry",
+          "status": "KNOWN",
+          "value": "Bundesliga"
+        },
+        "competition_type": {
+          "source": "registry format league",
+          "status": "DERIVED",
+          "value": "LEAGUE"
+        },
+        "draw_utility": {
+          "source": "not objectively derivable without standings and scenario inputs",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "flags": [],
+        "knockout": {
+          "source": "registry format league (round robin)",
+          "status": "DERIVED",
+          "value": false
+        },
+        "leg_number": {
+          "source": "single match (not a two-legged tie)",
+          "status": "DERIVED",
+          "value": null
+        },
+        "model_effect": "DISPLAY_ONLY. Production probabilities use only neutral_site (no home advantage) and requires_winner (extra time / penalties for to-advance contracts); no motivation adjustment is applied.",
+        "must_win": {
+          "source": "not objectively derivable without standings and scenario inputs",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "neutral_site": {
+          "source": "ESPN neutralSite / international venue-country rule",
+          "status": "KNOWN",
+          "value": false
+        },
+        "requires_winner": {
+          "source": "fixture feed (penalties possible)",
+          "status": "KNOWN",
+          "value": false
+        },
+        "rest_days_away": {
+          "source": "days since the team's previous match in the archive (results of archived competitions only; a match in a competition the archive does not hold is missed)",
+          "status": "DERIVED",
+          "value": 34
+        },
+        "rest_days_home": {
+          "source": "days since the team's previous match in the archive (results of archived competitions only; a match in a competition the archive does not hold is missed)",
+          "status": "DERIVED",
+          "value": 34
+        },
+        "rotation_uncertainty": {
+          "source": "no rotation / availability provider; XI publication is the only availability input",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "stage": {
+          "source": "fixture feed",
+          "status": "KNOWN",
+          "value": "Matchday 7"
+        },
+        "stage_kind": {
+          "source": "pattern over the stage label",
+          "status": "DERIVED",
+          "value": "ROUND_ROBIN"
+        },
+        "standings_implications": {
+          "source": "no standings / qualification-scenario input",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "version": "match_context_v1"
+      },
+      "matchup": {
+        "away": {
+          "attack": {
+            "log_rate": -0.0265,
+            "percentile": 0.447,
+            "sd": 0.2194,
+            "z": -0.265
+          },
+          "defence": {
+            "log_rate": -0.2375,
+            "percentile": 0.079,
+            "sd": 0.1954,
+            "z": -1.256
+          },
+          "effective_matches": 9.6,
+          "expected_vs_average_opponent": {
+            "away": {
+              "conceded": 2.15,
+              "scored": 0.997
+            },
+            "home": {
+              "conceded": 1.324,
+              "scored": 1.619
+            },
+            "neutral": {
+              "conceded": 1.324,
+              "scored": 0.997
+            }
+          },
+          "net_rating": {
+            "percentile": 0.289,
+            "value": -0.264,
+            "z": -0.764
+          },
+          "raw_form": {
+            "basis": "unadjusted context (not opponent-adjusted; not a strength estimate)",
+            "goals_against_per_match": 1.742,
+            "goals_for_per_match": 1.355,
+            "matches_365d": 31
+          },
+          "sample_quality": "MEDIUM",
+          "schedule_strength": {
+            "basis": "decay-weighted mean (attack + defence) of opponents faced in the 730-day fit window",
+            "matches_in_window": 65,
+            "mean_opponent_net_rating": 0.1016,
+            "percentile_vs_pool": 0.652
+          },
+          "team_id": "ger.gladbach"
+        },
+        "evidence_status": "MODEL_DERIVED",
+        "home": {
+          "attack": {
+            "log_rate": 0.2223,
+            "percentile": 0.816,
+            "sd": 0.2033,
+            "z": 0.683
+          },
+          "defence": {
+            "log_rate": 0.0242,
+            "percentile": 0.658,
+            "sd": 0.2079,
+            "z": 0.28
+          },
+          "effective_matches": 9.6,
+          "expected_vs_average_opponent": {
+            "away": {
+              "conceded": 1.655,
+              "scored": 1.279
+            },
+            "home": {
+              "conceded": 1.019,
+              "scored": 2.077
+            },
+            "neutral": {
+              "conceded": 1.019,
+              "scored": 1.279
+            }
+          },
+          "net_rating": {
+            "percentile": 0.711,
+            "value": 0.2465,
+            "z": 0.612
+          },
+          "raw_form": {
+            "basis": "unadjusted context (not opponent-adjusted; not a strength estimate)",
+            "goals_against_per_match": 1.677,
+            "goals_for_per_match": 2.129,
+            "matches_365d": 31
+          },
+          "sample_quality": "MEDIUM",
+          "schedule_strength": {
+            "basis": "decay-weighted mean (attack + defence) of opponents faced in the 730-day fit window",
+            "matches_in_window": 65,
+            "mean_opponent_net_rating": 0.1433,
+            "percentile_vs_pool": 0.739
+          },
+          "team_id": "ger.stuttgart"
+        },
+        "home_advantage_log_rate": 0.4851,
+        "matchups": {
+          "AWAY_ATTACK_vs_HOME_DEFENSE": {
+            "advantage_log_rate": -0.1173,
+            "advantage_sd": 0.3042,
+            "advantage_side": "HOME",
+            "attack_percentile": 0.447,
+            "attack_z": -0.265,
+            "defence_percentile": 0.658,
+            "defence_z": 0.28,
+            "evidence_quality": "MEDIUM",
+            "expected_goals_average_pairing": 1.069,
+            "expected_goals_model": 0.951,
+            "label": "BALANCED",
+            "p_attack_advantage": 0.35,
+            "z_gap": -0.545
+          },
+          "HOME_ATTACK_vs_AWAY_DEFENSE": {
+            "advantage_log_rate": 0.3933,
+            "advantage_sd": 0.2843,
+            "advantage_side": "HOME",
+            "attack_percentile": 0.816,
+            "attack_z": 0.683,
+            "defence_percentile": 0.079,
+            "defence_z": -1.256,
+            "evidence_quality": "MEDIUM",
+            "expected_goals_average_pairing": 1.736,
+            "expected_goals_model": 2.573,
+            "label": "MAJOR_HOME_ATTACK_EDGE",
+            "p_attack_advantage": 0.917,
+            "z_gap": 1.938
+          }
+        },
+        "metric_kind": "DIXON_COLES_LATENT_LOG_RATE (opponent- and schedule-adjusted; not xG)",
+        "neutral_site": false,
+        "pool": "ger.bundesliga",
+        "pool_reference_teams": 19,
+        "primary_mismatch": "HOME_ATTACK_vs_AWAY_DEFENSE",
+        "source": "production posterior (dc_laplace_v1) that priced this fixture",
+        "version": "dc_matchup_v1"
+      },
+      "model_fitted_at": "2026-10-21T18:40:32.519733Z",
+      "model_generated_at": "2026-10-21T18:40:34.699414Z",
+      "results_observed_at": "2026-10-21T18:40:26.482585Z",
+      "scripts": {
+        "contract_gaps": {},
+        "evidence": {
+          "conditional_probabilities": "MODEL_DERIVED",
+          "shares": "SIMULATION_DERIVED",
+          "tactical_interpretation": "UNAVAILABLE",
+          "taxonomy": "DESCRIPTIVE_MODEL_DERIVED",
+          "temporal_profile": "MODEL_DERIVED_TIMING_ASSUMPTION (no game-state dynamics in world_sim_v2)"
+        },
+        "first_half_share": 0.441,
+        "interval_level": 0.8,
+        "layer_version": "soccer_script_layer_v1",
+        "material": [
+          "HOME_CONTROL",
+          "HOME_CHASE",
+          "TIGHT_LOW_EVENT",
+          "OPEN_END_TO_END"
+        ],
+        "material_min_share": 0.083333,
+        "material_rule": "simulation_share >= 1 / (2 * K)",
+        "method": "exact: per-world Dixon-Coles score matrices x the world_sim_v2 timing kernel (half-time split ~ binomial(first_half_share), first scorer exchangeable); no Monte Carlo",
+        "n_worlds": 1000,
+        "not_modelled": [
+          "red cards (world_sim_v2 drops red-card dynamics)",
+          "game-state effects on scoring rates (not fitted)"
+        ],
+        "overall_profile": {
+          "exp_away_goals": 0.9997,
+          "exp_home_goals": 2.6919,
+          "ht_ft": {
+            "A/A": 0.0719,
+            "A/D": 0.0348,
+            "A/H": 0.0351,
+            "D/A": 0.0483,
+            "D/D": 0.0892,
+            "D/H": 0.1821,
+            "H/A": 0.0106,
+            "H/D": 0.0348,
+            "H/H": 0.4934
+          },
+          "p_away_1plus": 0.6148,
+          "p_away_2plus": 0.2633,
+          "p_away_3plus": 0.0884,
+          "p_away_clean_sheet": 0.0884,
+          "p_away_scores_first": 0.2669,
+          "p_away_win": 0.1308,
+          "p_btts": 0.5608,
+          "p_draw": 0.1587,
+          "p_home_1plus": 0.9116,
+          "p_home_2plus": 0.7171,
+          "p_home_3plus": 0.4865,
+          "p_home_clean_sheet": 0.3852,
+          "p_home_scores_first": 0.6986,
+          "p_home_win": 0.7105,
+          "p_level_at_half_time": 0.3195,
+          "p_no_goal": 0.0345,
+          "p_over_1_5": 0.8594,
+          "p_over_2_5": 0.6865,
+          "p_over_3_5": 0.4903,
+          "typical_scores": [
+            {
+              "p": 0.0891,
+              "score": "2-0"
+            },
+            {
+              "p": 0.0811,
+              "score": "2-1"
+            },
+            {
+              "p": 0.0757,
+              "score": "3-0"
+            }
+          ]
+        },
+        "primary": "HOME_CONTROL",
+        "profiles": {
+          "AWAY_CHASE": {
+            "exp_away_goals": 1.4102,
+            "exp_home_goals": 1.0,
+            "ht_ft": {
+              "A/A": 0.0415,
+              "A/D": 0.0,
+              "A/H": 0.0,
+              "D/A": 0.1493,
+              "D/D": 0.3511,
+              "D/H": 0.0,
+              "H/A": 0.1167,
+              "H/D": 0.3414,
+              "H/H": 0.0
+            },
+            "p_away_1plus": 1.0,
+            "p_away_2plus": 0.3075,
+            "p_away_3plus": 0.0797,
+            "p_away_clean_sheet": 0.0,
+            "p_away_scores_first": 0.0,
+            "p_away_win": 0.3075,
+            "p_btts": 1.0,
+            "p_draw": 0.6925,
+            "p_home_1plus": 1.0,
+            "p_home_2plus": 0.0,
+            "p_home_3plus": 0.0,
+            "p_home_clean_sheet": 0.0,
+            "p_home_scores_first": 1.0,
+            "p_home_win": 0.0,
+            "p_level_at_half_time": 0.5004,
+            "p_no_goal": 0.0,
+            "p_over_1_5": 1.0,
+            "p_over_2_5": 0.3075,
+            "p_over_3_5": 0.0797,
+            "typical_scores": [
+              {
+                "p": 0.6925,
+                "score": "1-1"
+              },
+              {
+                "p": 0.2279,
+                "score": "1-2"
+              },
+              {
+                "p": 0.0614,
+                "score": "1-3"
+              }
+            ]
+          },
+          "AWAY_CONTROL": {
+            "exp_away_goals": 2.4886,
+            "exp_home_goals": 0.6076,
+            "ht_ft": {
+              "A/A": 0.726,
+              "A/D": 0.0,
+              "A/H": 0.0,
+              "D/A": 0.274,
+              "D/D": 0.0,
+              "D/H": 0.0,
+              "H/A": 0.0,
+              "H/D": 0.0,
+              "H/H": 0.0
+            },
+            "p_away_1plus": 1.0,
+            "p_away_2plus": 1.0,
+            "p_away_3plus": 0.3521,
+            "p_away_clean_sheet": 0.3924,
+            "p_away_scores_first": 1.0,
+            "p_away_win": 1.0,
+            "p_btts": 0.6076,
+            "p_draw": 0.0,
+            "p_home_1plus": 0.6076,
+            "p_home_2plus": 0.0,
+            "p_home_3plus": 0.0,
+            "p_home_clean_sheet": 0.0,
+            "p_home_scores_first": 0.0,
+            "p_home_win": 0.0,
+            "p_level_at_half_time": 0.274,
+            "p_no_goal": 0.0,
+            "p_over_1_5": 1.0,
+            "p_over_2_5": 0.7379,
+            "p_over_3_5": 0.2584,
+            "typical_scores": [
+              {
+                "p": 0.3858,
+                "score": "1-2"
+              },
+              {
+                "p": 0.2621,
+                "score": "0-2"
+              },
+              {
+                "p": 0.1559,
+                "score": "1-3"
+              }
+            ]
+          },
+          "HOME_CHASE": {
+            "exp_away_goals": 1.0,
+            "exp_home_goals": 2.3321,
+            "ht_ft": {
+              "A/A": 0.0,
+              "A/D": 0.1757,
+              "A/H": 0.2025,
+              "D/A": 0.0,
+              "D/D": 0.1806,
+              "D/H": 0.2853,
+              "H/A": 0.0,
+              "H/D": 0.0,
+              "H/H": 0.1559
+            },
+            "p_away_1plus": 1.0,
+            "p_away_2plus": 0.0,
+            "p_away_3plus": 0.0,
+            "p_away_clean_sheet": 0.0,
+            "p_away_scores_first": 1.0,
+            "p_away_win": 0.0,
+            "p_btts": 1.0,
+            "p_draw": 0.3563,
+            "p_home_1plus": 1.0,
+            "p_home_2plus": 0.6437,
+            "p_home_3plus": 0.3625,
+            "p_home_clean_sheet": 0.0,
+            "p_home_scores_first": 0.0,
+            "p_home_win": 0.6437,
+            "p_level_at_half_time": 0.4659,
+            "p_no_goal": 0.0,
+            "p_over_1_5": 1.0,
+            "p_over_2_5": 0.6437,
+            "p_over_3_5": 0.3625,
+            "typical_scores": [
+              {
+                "p": 0.3563,
+                "score": "1-1"
+              },
+              {
+                "p": 0.2812,
+                "score": "2-1"
+              },
+              {
+                "p": 0.1795,
+                "score": "3-1"
+              }
+            ]
+          },
+          "HOME_CONTROL": {
+            "exp_away_goals": 0.4081,
+            "exp_home_goals": 3.53,
+            "ht_ft": {
+              "A/A": 0.0,
+              "A/D": 0.0,
+              "A/H": 0.0,
+              "D/A": 0.0,
+              "D/D": 0.0,
+              "D/H": 0.1854,
+              "H/A": 0.0,
+              "H/D": 0.0,
+              "H/H": 0.8146
+            },
+            "p_away_1plus": 0.4081,
+            "p_away_2plus": 0.0,
+            "p_away_3plus": 0.0,
+            "p_away_clean_sheet": 0.0,
+            "p_away_scores_first": 0.0,
+            "p_away_win": 0.0,
+            "p_btts": 0.4081,
+            "p_draw": 0.0,
+            "p_home_1plus": 1.0,
+            "p_home_2plus": 1.0,
+            "p_home_3plus": 0.6926,
+            "p_home_clean_sheet": 0.5919,
+            "p_home_scores_first": 1.0,
+            "p_home_win": 1.0,
+            "p_level_at_half_time": 0.1854,
+            "p_no_goal": 0.0,
+            "p_over_1_5": 1.0,
+            "p_over_2_5": 0.8088,
+            "p_over_3_5": 0.5301,
+            "typical_scores": [
+              {
+                "p": 0.1912,
+                "score": "2-0"
+              },
+              {
+                "p": 0.1625,
+                "score": "3-0"
+              },
+              {
+                "p": 0.1162,
+                "score": "2-1"
+              }
+            ]
+          },
+          "OPEN_END_TO_END": {
+            "exp_away_goals": 2.4641,
+            "exp_home_goals": 3.5009,
+            "ht_ft": {
+              "A/A": 0.0724,
+              "A/D": 0.0942,
+              "A/H": 0.0822,
+              "D/A": 0.0398,
+              "D/D": 0.1053,
+              "D/H": 0.1388,
+              "H/A": 0.0257,
+              "H/D": 0.0942,
+              "H/H": 0.3475
+            },
+            "p_away_1plus": 1.0,
+            "p_away_2plus": 1.0,
+            "p_away_3plus": 0.337,
+            "p_away_clean_sheet": 0.0,
+            "p_away_scores_first": 0.4286,
+            "p_away_win": 0.1378,
+            "p_btts": 1.0,
+            "p_draw": 0.2938,
+            "p_home_1plus": 1.0,
+            "p_home_2plus": 1.0,
+            "p_home_3plus": 0.6811,
+            "p_home_clean_sheet": 0.0,
+            "p_home_scores_first": 0.5714,
+            "p_home_win": 0.5685,
+            "p_level_at_half_time": 0.2839,
+            "p_no_goal": 0.0,
+            "p_over_1_5": 1.0,
+            "p_over_2_5": 1.0,
+            "p_over_3_5": 1.0,
+            "typical_scores": [
+              {
+                "p": 0.2123,
+                "score": "2-2"
+              },
+              {
+                "p": 0.1812,
+                "score": "3-2"
+              },
+              {
+                "p": 0.1247,
+                "score": "4-2"
+              }
+            ]
+          },
+          "TIGHT_LOW_EVENT": {
+            "exp_away_goals": 0.2205,
+            "exp_home_goals": 0.5344,
+            "ht_ft": {
+              "A/A": 0.0972,
+              "A/D": 0.0,
+              "A/H": 0.0,
+              "D/A": 0.1233,
+              "D/D": 0.2451,
+              "D/H": 0.2987,
+              "H/A": 0.0,
+              "H/D": 0.0,
+              "H/H": 0.2357
+            },
+            "p_away_1plus": 0.2205,
+            "p_away_2plus": 0.0,
+            "p_away_3plus": 0.0,
+            "p_away_clean_sheet": 0.4656,
+            "p_away_scores_first": 0.2205,
+            "p_away_win": 0.2205,
+            "p_btts": 0.0,
+            "p_draw": 0.2451,
+            "p_home_1plus": 0.5344,
+            "p_home_2plus": 0.0,
+            "p_home_3plus": 0.0,
+            "p_home_clean_sheet": 0.7795,
+            "p_home_scores_first": 0.5344,
+            "p_home_win": 0.5344,
+            "p_level_at_half_time": 0.6671,
+            "p_no_goal": 0.2451,
+            "p_over_1_5": 0.0,
+            "p_over_2_5": 0.0,
+            "p_over_3_5": 0.0,
+            "typical_scores": [
+              {
+                "p": 0.5344,
+                "score": "1-0"
+              },
+              {
+                "p": 0.2451,
+                "score": "0-0"
+              },
+              {
+                "p": 0.2205,
+                "score": "0-1"
+              }
+            ]
+          }
+        },
+        "score_grid": [
+          [
+            0.034466,
+            0.031011,
+            0.015325,
+            0.00548,
+            0.001605,
+            0.000411,
+            9.6e-05,
+            2.1e-05,
+            4e-06,
+            1e-06,
+            0.0
+          ],
+          [
+            0.075153,
+            0.068539,
+            0.03383,
+            0.012151,
+            0.003571,
+            0.000916,
+            0.000214,
+            4.6e-05,
+            1e-05,
+            2e-06,
+            0.0
+          ],
+          [
+            0.089051,
+            0.081138,
+            0.040247,
+            0.014509,
+            0.004279,
+            0.0011,
+            0.000256,
+            5.6e-05,
+            1.1e-05,
+            2e-06,
+            0.0
+          ],
+          [
+            0.075679,
+            0.069069,
+            0.034361,
+            0.012434,
+            0.003681,
+            0.00095,
+            0.000222,
+            4.8e-05,
+            1e-05,
+            2e-06,
+            0.0
+          ],
+          [
+            0.051813,
+            0.047362,
+            0.02364,
+            0.008595,
+            0.002559,
+            0.000664,
+            0.000156,
+            3.4e-05,
+            7e-06,
+            1e-06,
+            0.0
+          ],
+          [
+            0.030383,
+            0.027832,
+            0.013954,
+            0.005107,
+            0.001533,
+            0.000401,
+            9.5e-05,
+            2.1e-05,
+            4e-06,
+            1e-06,
+            0.0
+          ],
+          [
+            0.015849,
+            0.014567,
+            0.007352,
+            0.002717,
+            0.000825,
+            0.000218,
+            5.2e-05,
+            1.1e-05,
+            2e-06,
+            0.0,
+            0.0
+          ],
+          [
+            0.007547,
+            0.006975,
+            0.003556,
+            0.001332,
+            0.000411,
+            0.00011,
+            2.7e-05,
+            6e-06,
+            1e-06,
+            0.0,
+            0.0
+          ],
+          [
+            0.003343,
+            0.003118,
+            0.001613,
+            0.000615,
+            0.000193,
+            5.3e-05,
+            1.3e-05,
+            3e-06,
+            1e-06,
+            0.0,
+            0.0
+          ],
+          [
+            0.001399,
+            0.001323,
+            0.000698,
+            0.000273,
+            8.8e-05,
+            2.4e-05,
+            6e-06,
+            1e-06,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.00056,
+            0.00054,
+            0.000292,
+            0.000117,
+            3.9e-05,
+            1.1e-05,
+            3e-06,
+            1e-06,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "scripts": [
+          "HOME_CONTROL",
+          "HOME_CHASE",
+          "TIGHT_LOW_EVENT",
+          "OPEN_END_TO_END",
+          "AWAY_CHASE",
+          "AWAY_CONTROL"
+        ],
+        "secondary": "OPEN_END_TO_END",
+        "share_high": [
+          0.627,
+          0.1085,
+          0.2518,
+          0.3098,
+          0.0789,
+          0.1122
+        ],
+        "share_low": [
+          0.3057,
+          0.0805,
+          0.046,
+          0.088,
+          0.0221,
+          0.0176
+        ],
+        "shares": [
+          0.46564,
+          0.09617,
+          0.14063,
+          0.1896,
+          0.04949,
+          0.05847
+        ],
+        "status": "OK",
+        "taxonomy_version": "soccer_scripts_v1",
+        "temporal": {
+          "AWAY_CHASE": {
+            "mean_first_goal_minute": 29.806,
+            "minutes_away_leading": 7.367,
+            "minutes_home_leading": 27.848,
+            "minutes_level": 54.785,
+            "p_away_ever_trailed": 1.0,
+            "p_goal_after_75": 0.392,
+            "p_home_ever_trailed": 0.308,
+            "p_lead_changed_hands": 0.308,
+            "p_level_at_75": 0.584
+          },
+          "AWAY_CONTROL": {
+            "mean_first_goal_minute": 25.498,
+            "minutes_away_leading": 59.269,
+            "minutes_home_leading": 0.0,
+            "minutes_level": 30.731,
+            "p_away_ever_trailed": 0.0,
+            "p_goal_after_75": 0.459,
+            "p_home_ever_trailed": 1.0,
+            "p_lead_changed_hands": 0.0,
+            "p_level_at_75": 0.09
+          },
+          "HOME_CHASE": {
+            "mean_first_goal_minute": 25.468,
+            "minutes_away_leading": 23.335,
+            "minutes_home_leading": 19.871,
+            "minutes_level": 46.794,
+            "p_away_ever_trailed": 0.644,
+            "p_goal_after_75": 0.489,
+            "p_home_ever_trailed": 1.0,
+            "p_lead_changed_hands": 0.644,
+            "p_level_at_75": 0.385
+          },
+          "HOME_CONTROL": {
+            "mean_first_goal_minute": 22.233,
+            "minutes_away_leading": 0.0,
+            "minutes_home_leading": 65.37,
+            "minutes_level": 24.63,
+            "p_away_ever_trailed": 1.0,
+            "p_goal_after_75": 0.538,
+            "p_home_ever_trailed": 0.0,
+            "p_lead_changed_hands": 0.0,
+            "p_level_at_75": 0.035
+          },
+          "OPEN_END_TO_END": {
+            "mean_first_goal_minute": 15.445,
+            "minutes_away_leading": 18.234,
+            "minutes_home_leading": 38.582,
+            "minutes_level": 33.184,
+            "p_away_ever_trailed": 0.84,
+            "p_goal_after_75": 0.691,
+            "p_home_ever_trailed": 0.589,
+            "p_lead_changed_hands": 0.429,
+            "p_level_at_75": 0.26
+          },
+          "TIGHT_LOW_EVENT": {
+            "mean_first_goal_minute": 47.715,
+            "minutes_away_leading": 9.236,
+            "minutes_home_leading": 22.686,
+            "minutes_level": 58.079,
+            "p_away_ever_trailed": 0.534,
+            "p_goal_after_75": 0.132,
+            "p_home_ever_trailed": 0.221,
+            "p_lead_changed_hands": 0.0,
+            "p_level_at_75": 0.377
+          }
+        }
+      },
+      "sim_key": "sha256:1e0703d05e81767e9354ea9a5b12af36948363002f8f1313c1b80a7c1cbe89b7",
+      "source_run_id": "run-20261021T184034Z-09d4a0",
+      "summary": {
+        "mean_away_goals": 1.0004,
+        "mean_home_goals": 2.68968,
+        "p_away": 0.13137,
+        "p_btts": 0.55981,
+        "p_draw": 0.15799,
+        "p_home": 0.71064,
+        "p_over_2_5": 0.68708
+      }
+    },
     "fx:mex.liga_mx:2026:mex.atlas:mex.america": {
       "away": "mex.america",
       "competition_id": "mex.liga_mx",
@@ -65213,6 +66523,6 @@
       }
     }
   },
-  "generated_at": "2026-10-21T13:10:39.161837Z",
+  "generated_at": "2026-10-21T18:40:34.699414Z",
   "quantile_levels": "(i + 0.5) / 100, i = 0..99"
 }
