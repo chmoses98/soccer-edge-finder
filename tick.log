@@ -1032,3 +1032,75 @@ unmapped teams: 0 | proposals: {}
 [reference] {"groups": 10, "unmapped_fixture_groups": 5, "incomplete_groups": 0, "snapshots": 18, "provider_notes": ["27 rows, 25 skipped (unmapped division/team)", "skipped_by_division={'E2': 12, 'E3': 12, 'SC1': 1}", "unknown_teams={}", "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"], "written": 0}
 [timings] {"assemble_fit_s": 2.15, "discovery_s": 0.01, "simulate_price_archive_s": 0.85, "total_s": 3.33, "mode": "fast+prefetched_sweep"}
 [board] 1 fixtures written by this run; 11 on the board -> work/runs/latest.model_board.v1.json
+[slate] {"slate_id": "slate-20261021T231533Z-3df3bf", "mode": "model_refresh_and_reprice", "fixtures": 10, "contract_sides": 1326, "simulations_run": 1, "odds_api_calls": 0, "reprice_runtime_s": 0.206, "price_changes_vs_previous": 60}
+# RUN SOCCER — 2026-10-21
+Run `run-20261021T231532Z-6c52b7` generated 2026-10-21T23:15:33.123997Z · filters: {'leagues': [], 'games': ['fx:bra.serie_a:2026:bra.cruzeiro:bra.remo'], 'window_hours': 49, 'confirmed_lineups_only': False}
+
+## Coverage
+- contracts discovered: **5475** (discovery complete: True)
+- contracts evaluated: 11 · excluded mechanically: 2395 · unsupported/unknown: 3069
+- **unaccounted contracts: 0**
+- by disposition: priced=11, unknown_family=3, unsupported_family=3066, unmapped_event=942, unmapped_team=54, no_fixture=123, filtered_by_operator=1273, unpriceable=3
+- competitions discovered: APFDDH, ARGNACB, ARGPREMDIV, AUTBUNDES, BELGIANPL, BRASILEIRO, BRASILEIROB, BUNDESLIGA, BUNDESLIGAW, CANPL, CHLLDP, CHNL1, CHNSL, CONCACAFGC, CONCACAFNL, CONMEBOLLIB, CONMEBOLSUD, COPAAMERICA, COPADELREY, COPADOBRASIL, DENSUPERLIGA, DFBPOKAL, DIMAYOR, ECULP, EFL, EFLCHAMPIONSHIP, EFLL1, EKSTRAKLASA, ENGNL, EPL, EREDIVISIE, FA, FRAPLW, HUNNB1, INDSL, ISRNL, KLEAGUE, KNVB, LALIGA, LALIGA2, LIGAEXP, LIGAF, LIGAMX, LIGAMX2H, LIGAPORTUGAL, LIGUE1, MLS, MLS2H, MLSEAST, MLSWEST, NWSL, PERLIGA1, PREMIERLEAGUE, QSTARS, ROML1, SERIEA, SOCCER, SUPERLIG, SVK2L, TACAPORT, THAIL1, UCL, UCLLEAGUE, UECL, UEFAEURO, UEFANL, UEFANLGROUP, UEL, URYPD, USL, VENFUTVE, WC, WCW
+
+## Freshness
+- as_of: 2026-10-21T23:15:32.300430Z; market_observed_at: 2026-10-21T23:12:47.266453Z; fixtures_observed_at: 2026-10-21T18:44:57.249704Z; results_observed_at: 2026-10-21T18:40:26.482585Z; model_fitted_at: 2026-10-21T23:15:31.094419Z; temporal_guard: {'decision_time': '2026-10-21T23:15:32.300430Z', 'checked': {'fixtures': 1, 'market_snapshots': 2, 'reference_odds': 1, 'results': 15}, 'latest_observed_at': {'fixtures': '2026-10-21T18:44:57.249704Z', 'market_snapshots': '2026-10-21T23:15:29.155523Z', 'reference_odds': '2026-10-21T18:40:33.404466Z', 'results': '2026-10-21T23:15:31.976025Z'}, 'violations': [], 'ok': True}
+- no freshness violations
+
+## Recommendations
+**NO BETS** — no contract met the robust-edge bar under an authority level that permits recommendations.
+
+## Shadow / research-only expressions (0)
+These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW. They are NOT recommendations.
+
+## Events
+- Cruzeiro vs Remo (Brasileirão Série A) 2026-10-23T23:00:00Z · markets 11/14 evaluated · lineups unknown · xG 2.16-0.92 · 1X2 64%/21%/15%
+
+{
+  "outputs": {
+    "json": "work/runs/_pending/run_output.v1.json",
+    "md": "work/runs/_pending/RUN_SOCCER.md",
+    "contracts": "work/runs/_pending/priced_contracts.json",
+    "coverage": "work/runs/_pending/coverage.json",
+    "diagnostics": "work/runs/_pending/coverage_diagnostics.json"
+  },
+  "simulated": [
+    "fx:bra.serie_a:2026:bra.cruzeiro:bra.remo"
+  ],
+  "repriced": [],
+  "archived_records": 11
+}
+[dispatch] holding 4.5 min (next window opens in 35.9 min)
+[dispatch] holding 5.1 min (next window opens in 31.4 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261021T233031Z",
+  "complete": true,
+  "discovered": 5475,
+  "written": 1498,
+  "path": "work/snapshots/2026-10-21/cap-20261021T233031Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261021T233031Z-501637", "mode": "reprice_only", "fixtures": 10, "contract_sides": 1326, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.21, "price_changes_vs_previous": 65}
+[dispatch] holding 9.9 min (next window opens in 21.1 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261021T234531Z",
+  "complete": true,
+  "discovered": 5480,
+  "written": 1264,
+  "path": "work/snapshots/2026-10-21/cap-20261021T234531Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261021T234531Z-b54243", "mode": "reprice_only", "fixtures": 10, "contract_sides": 1326, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.216, "price_changes_vs_previous": 35}
+[dispatch] holding 3.8 min (next window opens in 6.2 min)
+{
+ "batches": 6,
+ "horizons_delivered": 8,
+ "missed_states": {},
+ "paid_calls": 2,
+ "credits_spent": 6,
+ "end_reason": "link_time_limit",
+ "chain_continue": true,
+ "delivered_total": 1819,
+ "missed_total": 180,
+ "delivery_rate_total": 0.9099549774887443
+}
