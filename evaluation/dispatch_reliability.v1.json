@@ -1,23 +1,23 @@
 {
  "schema": "dispatch_reliability_v1",
- "generated_at": "2026-10-21T09:51:09Z",
+ "generated_at": "2026-10-21T13:21:16Z",
  "cadence": {
   "external_heartbeat_minutes": null,
   "github_backup_minutes": 60
  },
  "last_wake": {
-  "started_at": "2026-10-21T08:06:29Z",
+  "started_at": "2026-10-21T13:14:57Z",
   "trigger_source": "workflow-run",
   "status": "OK",
-  "no_action_reason": "CAPTURE_IN_PROGRESS"
+  "no_action_reason": null
  },
  "last_24h": {
   "span_hours": 24.0,
   "heartbeats_actual": 22,
   "heartbeats_by_source": {
-   "chain": 4,
+   "chain": 5,
    "github-schedule-backup": 5,
-   "workflow-run": 13
+   "workflow-run": 12
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -27,7 +27,7 @@
   "github_backup_expected": 24,
   "github_backup_actual": 5,
   "github_backup_success": 0.20833333333333334,
-  "capture_runs": 3,
+  "capture_runs": 4,
   "capture_runs_failed": 0,
   "paid_calls": 6,
   "credits_spent": 18,
@@ -45,10 +45,10 @@
  },
  "last_7d": {
   "span_hours": 168.0,
-  "heartbeats_actual": 163,
+  "heartbeats_actual": 164,
   "heartbeats_by_source": {
    "chain": 30,
-   "github-schedule-backup": 38,
+   "github-schedule-backup": 39,
    "workflow-run": 95
   },
   "heartbeats_failed": 0,
@@ -57,8 +57,8 @@
   "external_heartbeats_actual": 0,
   "external_trigger_success": null,
   "github_backup_expected": 168,
-  "github_backup_actual": 38,
-  "github_backup_success": 0.2261904761904762,
+  "github_backup_actual": 39,
+  "github_backup_success": 0.23214285714285715,
   "capture_runs": 29,
   "capture_runs_failed": 3,
   "paid_calls": 139,
