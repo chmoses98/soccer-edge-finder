@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261021T233031Z-501637` · generated 2026-10-21T23:30:31.776773Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261021T234239Z-850780` · generated 2026-10-21T23:42:39.063816Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-21T23:27:49.271838Z (CURRENT at publish; CURRENT until 2026-10-21T23:47:49.271838Z, STALE after 2026-10-21T23:57:49.271838Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-21T23:39:42.612735Z (CURRENT at publish; CURRENT until 2026-10-21T23:59:42.612735Z, STALE after 2026-10-22T00:09:42.612735Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-21T23:15:32.300430Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.21s
+model board generated 2026-10-21T23:15:32.300430Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.36s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -23,19 +23,19 @@ model board generated 2026-10-21T23:15:32.300430Z · simulations this update: 0 
 | 2026-10-23T19:00:00Z | Ipswich Town vs Nottingham Forest (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 81 | 0 |
 | 2026-10-23T23:00:00Z | Cruzeiro vs Remo (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 11 | 3 |
 
-## Candidates on CURRENT prices (60; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (63; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Puebla vs Monterrey | away team total over 1.5 | no | 0.4900 | 0.743 [0.618, 0.852] | +0.235 | +0.162 | 0.65 | - | * | RESEARCH_CANDIDATE |
+| Puebla vs Monterrey | away team total over 1.5 | no | 0.4800 | 0.743 [0.618, 0.852] | +0.245 | +0.172 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | Result: away | no | 0.4700 | 0.692 [0.560, 0.811] | +0.205 | +0.126 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | away team total over 0.5 | no | 0.1800 | 0.388 [0.266, 0.508] | +0.197 | +0.117 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | away team total over 2.5 | no | 0.7600 | 0.917 [0.851, 0.969] | +0.144 | +0.111 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Toluca vs Tijuana | home team total over 2.5 | no | 0.4800 | 0.713 [0.530, 0.867] | +0.215 | +0.105 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | away wins by more than 1.5 | no | 0.7200 | 0.880 [0.798, 0.946] | +0.145 | +0.105 | 0.82 | - | * | RESEARCH_CANDIDATE |
 | Toluca vs Tijuana | home team total over 1.5 | no | 0.2300 | 0.462 [0.276, 0.642] | +0.220 | +0.094 | 0.32 | - |  | RESEARCH_CANDIDATE |
-| Puebla vs Monterrey | First-half result: away | no | 0.6100 | 0.767 [0.668, 0.862] | +0.141 | +0.083 | 0.69 | - | * | RESEARCH_CANDIDATE |
 | Toluca vs Tijuana | home wins by more than 2.5 | no | 0.6600 | 0.823 [0.684, 0.933] | +0.148 | +0.074 | 0.73 | - | * | RESEARCH_CANDIDATE |
+| Puebla vs Monterrey | First-half result: away | no | 0.6200 | 0.767 [0.668, 0.862] | +0.131 | +0.074 | 0.69 | - | * | RESEARCH_CANDIDATE |
 | Toluca vs Tijuana | Total goals over 2.5 | no | 0.2900 | 0.490 [0.314, 0.665] | +0.186 | +0.073 | 0.36 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | Second-half result: away | no | 0.5800 | 0.740 [0.628, 0.842] | +0.143 | +0.073 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Toluca vs Tijuana | Total goals over 3.5 | no | 0.5100 | 0.699 [0.529, 0.850] | +0.171 | +0.073 | 0.58 | - |  | RESEARCH_CANDIDATE |
@@ -71,9 +71,9 @@ model board generated 2026-10-21T23:15:32.300430Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 588
+action_NO_EDGE: 585
 action_NO_QUOTE: 678
-action_RESEARCH_CANDIDATE: 60
+action_RESEARCH_CANDIDATE: 63
 contract_sides: 1326
 fixtures: 10
 fixtures_model_invalidated: 0
