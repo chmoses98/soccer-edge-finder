@@ -54,9 +54,145 @@
   "delivered_total": 1806,
   "delivery_rate_total": 0.9093655589123867,
   "fixtures_tracked": 406,
-  "generated_at": "2026-10-21T03:07:45Z",
+  "generated_at": "2026-10-21T06:53:33Z",
+  "last_tick": {
+    "batches": 4,
+    "summary": [
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "model_refresh:ok:fixtures=1:sim=0:board=0:why=entered_lookahead_unmodelled",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "ks-20261021T012438Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=988:sim=0"
+        ],
+        "batch_id": "ks-20261021T013938Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=988:sim=0"
+        ],
+        "batch_id": "ks-20261021T015505Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:ok:fixtures=1:sim=1:cache=0:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261021T021000Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:mex.liga_mx:2026:mex.tigres:mex.leon",
+            60,
+            60.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=988:sim=0"
+        ],
+        "batch_id": "ks-20261021T022504Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=988:sim=0"
+        ],
+        "batch_id": "kd-20261021T024000Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:mex.liga_mx:2026:mex.tigres:mex.leon",
+            30,
+            30.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=988:sim=0"
+        ],
+        "batch_id": "kd-20261021T025433Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:mex.liga_mx:2026:mex.tigres:mex.leon",
+            15,
+            15.43
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=988:sim=0"
+        ],
+        "batch_id": "kd-20261021T030500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:mex.liga_mx:2026:mex.tigres:mex.leon",
+            5,
+            5.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=834:sim=0"
+        ],
+        "batch_id": "ks-20261021T062439Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=834:sim=0"
+        ],
+        "batch_id": "ks-20261021T063939Z",
+        "due": [],
+        "slate_refresh": true
+      }
+    ]
+  },
   "missed_total": 180,
-  "n_pending_fixtures": 17,
+  "n_pending_fixtures": 18,
   "pending_fixtures": [
     {
       "competition_id": "esp.la_liga",
@@ -174,6 +310,13 @@
       "competition_id": "mex.liga_mx",
       "fixture_id": "fx:mex.liga_mx:2026:mex.necaxa:mex.juarez",
       "kickoff_utc": "2026-10-24T01:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "mex.liga_mx",
+      "fixture_id": "fx:mex.liga_mx:2026:mex.atlante:mex.san_luis",
+      "kickoff_utc": "2026-10-24T03:00:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }
