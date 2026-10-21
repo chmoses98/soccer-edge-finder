@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261021T170103Z-79994e` · generated 2026-10-21T17:01:03.088488Z · trigger `kickoff_chain:T-60` · mode `reprice_only`
+slate `slate-20261021T171559Z-ebec67` · generated 2026-10-21T17:15:59.909702Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-21T16:58:15.316295Z (CURRENT at publish; CURRENT until 2026-10-21T17:18:15.316295Z, STALE after 2026-10-21T17:28:15.316295Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-21T17:13:16.302818Z (CURRENT at publish; CURRENT until 2026-10-21T17:33:16.302818Z, STALE after 2026-10-21T17:43:16.302818Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-21T13:10:39.161837Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.59s
+model board generated 2026-10-21T13:10:39.161837Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.45s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -19,7 +19,7 @@ model board generated 2026-10-21T13:10:39.161837Z · simulations this update: 0 
 | 2026-10-22T03:10:00Z | Pachuca vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-22T03:10:00Z | Santos Laguna vs Pumas UNAM (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (54; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (51; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -35,12 +35,12 @@ model board generated 2026-10-21T13:10:39.161837Z · simulations this update: 0 
 | Puebla vs Monterrey | First-half result: away | no | 0.6200 | 0.767 [0.668, 0.862] | +0.131 | +0.074 | 0.69 | - | * | RESEARCH_CANDIDATE |
 | Toluca vs Tijuana | home team total over 1.5 | no | 0.2500 | 0.462 [0.276, 0.642] | +0.199 | +0.073 | 0.32 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | Total goals over 1.5 | no | 0.2100 | 0.379 [0.239, 0.512] | +0.158 | +0.066 | 0.27 | - |  | RESEARCH_CANDIDATE |
+| Toluca vs Tijuana | home wins by more than 2.5 | no | 0.6700 | 0.823 [0.684, 0.933] | +0.138 | +0.064 | 0.73 | - | * | RESEARCH_CANDIDATE |
 | Toluca vs Tijuana | Total goals over 2.5 | no | 0.3000 | 0.490 [0.314, 0.665] | +0.176 | +0.063 | 0.36 | - | * | RESEARCH_CANDIDATE |
 | Toluca vs Tijuana | Total goals over 3.5 | no | 0.5200 | 0.699 [0.529, 0.850] | +0.161 | +0.063 | 0.58 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | away wins by more than 2.5 | no | 0.8800 | 0.963 [0.930, 0.989] | +0.076 | +0.061 | 0.94 | - |  | RESEARCH_CANDIDATE |
-| Toluca vs Tijuana | home wins by more than 1.5 | no | 0.4600 | 0.649 [0.476, 0.810] | +0.171 | +0.061 | 0.52 | - | * | RESEARCH_CANDIDATE |
+| Toluca vs Tijuana | home wins by more than 1.5 | no | 0.4600 | 0.649 [0.476, 0.810] | +0.171 | +0.061 | 0.52 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | Total goals over 4.5 | no | 0.8300 | 0.927 [0.858, 0.975] | +0.087 | +0.055 | 0.88 | - |  | RESEARCH_CANDIDATE |
-| Toluca vs Tijuana | home wins by more than 2.5 | no | 0.6800 | 0.823 [0.684, 0.933] | +0.128 | +0.054 | 0.73 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | First-half total goals over 1.5 | no | 0.6300 | 0.757 [0.638, 0.862] | +0.111 | +0.044 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | Second-half result: away | no | 0.6100 | 0.740 [0.628, 0.842] | +0.113 | +0.043 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Toluca vs Tijuana | First-half result: home | no | 0.4300 | 0.576 [0.428, 0.712] | +0.129 | +0.043 | 0.47 | - | * | RESEARCH_CANDIDATE |
@@ -67,9 +67,9 @@ model board generated 2026-10-21T13:10:39.161837Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 677
-action_NO_QUOTE: 103
-action_RESEARCH_CANDIDATE: 54
+action_NO_EDGE: 681
+action_NO_QUOTE: 102
+action_RESEARCH_CANDIDATE: 51
 contract_sides: 834
 fixtures: 6
 fixtures_model_invalidated: 0
