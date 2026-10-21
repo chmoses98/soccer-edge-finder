@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261021T081626Z-491f21` · generated 2026-10-21T08:16:26.500409Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261021T083127Z-a4baa7` · generated 2026-10-21T08:31:27.330607Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-21T08:13:44.212681Z (CURRENT at publish; CURRENT until 2026-10-21T08:33:44.212681Z, STALE after 2026-10-21T08:43:44.212681Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-21T08:28:45.161618Z (CURRENT at publish; CURRENT until 2026-10-21T08:48:45.161618Z, STALE after 2026-10-21T08:58:45.161618Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-20T19:27:34.582602Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.34s
 
@@ -12,14 +12,14 @@ model board generated 2026-10-20T19:27:34.582602Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-21T23:00:00Z | FC Cincinnati vs D.C. United (usa.mls) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-21T23:00:00Z | FC Cincinnati vs D.C. United (usa.mls) | INVALIDATED: lineup_changed:published:confirmed | confirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-22T01:00:00Z | Atlas vs Club América (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-22T01:00:00Z | Puebla vs Monterrey (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-22T01:00:00Z | Toluca vs Tijuana (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-22T03:10:00Z | Pachuca vs Cruz Azul (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-22T03:10:00Z | Santos Laguna vs Pumas UNAM (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (46; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (45; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -51,7 +51,6 @@ model board generated 2026-10-20T19:27:34.582602Z · simulations this update: 0 
 | Puebla vs Monterrey | First-half total goals over 0.5 | no | 0.2900 | 0.402 [0.278, 0.512] | +0.098 | +0.016 | 0.3 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | Exact score 0-0 (home-away) | yes | 0.0700 | 0.137 [0.069, 0.206] | +0.063 | +0.015 | 0.08 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | Total goals over 0.5 | no | 0.0700 | 0.137 [0.069, 0.206] | +0.063 | +0.015 | 0.08 | - |  | RESEARCH_CANDIDATE |
-| Toluca vs Tijuana | home wins by more than 2.5 | no | 0.7200 | 0.823 [0.685, 0.933] | +0.089 | +0.015 | 0.73 | - | * | RESEARCH_CANDIDATE |
 | Toluca vs Tijuana | Total goals over 5.5 | no | 0.8700 | 0.928 [0.854, 0.982] | +0.050 | +0.015 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | Toluca vs Tijuana | First-half total goals over 1.5 | no | 0.5400 | 0.659 [0.518, 0.792] | +0.101 | +0.013 | 0.55 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | First-half total goals over 1.5 | no | 0.6600 | 0.757 [0.638, 0.862] | +0.081 | +0.012 | 0.67 | - |  | RESEARCH_CANDIDATE |
@@ -59,18 +58,19 @@ model board generated 2026-10-20T19:27:34.582602Z · simulations this update: 0 
 | Atlas vs Club América | Result: away | no | 0.5300 | 0.650 [0.502, 0.793] | +0.103 | +0.010 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Toluca vs Tijuana | Result: draw | yes | 0.1700 | 0.233 [0.157, 0.304] | +0.053 | +0.009 | 0.17 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | Exact score 1-2 (home-away) | no | 0.9100 | 0.939 [0.918, 0.959] | +0.023 | +0.009 | 0.91 | - |  | RESEARCH_CANDIDATE |
-| Toluca vs Tijuana | home wins by more than 1.5 | no | 0.5100 | 0.648 [0.475, 0.810] | +0.121 | +0.009 | 0.51 | - |  | RESEARCH_CANDIDATE |
 | Toluca vs Tijuana | First half: home wins by more than 1.5 | no | 0.7700 | 0.850 [0.749, 0.941] | +0.067 | +0.008 | 0.77 | - | * | RESEARCH_CANDIDATE |
 | Atlas vs Club América | away wins by more than 1.5 | no | 0.7500 | 0.832 [0.719, 0.924] | +0.069 | +0.006 | 0.75 | - | * | RESEARCH_CANDIDATE |
+| Toluca vs Tijuana | home wins by more than 2.5 | no | 0.7300 | 0.823 [0.685, 0.933] | +0.080 | +0.005 | 0.73 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | First-half exact score 0-0 (home-away) | yes | 0.3000 | 0.402 [0.278, 0.512] | +0.087 | +0.005 | 0.3 | - | * | RESEARCH_CANDIDATE |
+| Puebla vs Monterrey | Result: draw | yes | 0.2500 | 0.308 [0.249, 0.365] | +0.045 | +0.004 | 0.25 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_MODEL_INVALIDATED: 124
-action_NO_EDGE: 513
+action_NO_EDGE: 514
 action_NO_QUOTE: 151
-action_RESEARCH_CANDIDATE: 46
+action_RESEARCH_CANDIDATE: 45
 contract_sides: 834
 fixtures: 6
 fixtures_model_invalidated: 1
