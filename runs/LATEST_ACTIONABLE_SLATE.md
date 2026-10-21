@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261021T201057Z-8e9609` · generated 2026-10-21T20:10:57.761319Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261021T202559Z-9725db` · generated 2026-10-21T20:25:59.584705Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-21T20:08:15.446988Z (CURRENT at publish; CURRENT until 2026-10-21T20:28:15.446988Z, STALE after 2026-10-21T20:38:15.446988Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-21T20:23:17.170592Z (CURRENT at publish; CURRENT until 2026-10-21T20:43:17.170592Z, STALE after 2026-10-21T20:53:17.170592Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-21T19:34:00.963290Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.23s
+model board generated 2026-10-21T19:34:00.963290Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.24s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -66,7 +66,7 @@ model board generated 2026-10-21T19:34:00.963290Z · simulations this update: 0 
 | Puebla vs Monterrey | First-half total goals over 0.5 | no | 0.2900 | 0.400 [0.278, 0.512] | +0.096 | +0.016 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Toluca vs Tijuana | First-half result: draw | yes | 0.3100 | 0.406 [0.308, 0.503] | +0.081 | +0.015 | 0.32 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | Exact score 0-0 (home-away) | yes | 0.0700 | 0.137 [0.070, 0.205] | +0.063 | +0.014 | 0.08 | - |  | RESEARCH_CANDIDATE |
-| Toluca vs Tijuana | Total goals over 0.5 | no | 0.0300 | 0.079 [0.032, 0.136] | +0.047 | +0.012 | 0.04 | - |  | RESEARCH_CANDIDATE |
+| Puebla vs Monterrey | home wins by more than 1.5 | yes | 0.0800 | 0.170 [0.076, 0.281] | +0.085 | +0.013 | 0.09 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
