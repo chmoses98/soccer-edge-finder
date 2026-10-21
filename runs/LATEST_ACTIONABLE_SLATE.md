@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261021T003249Z-2403ae` · generated 2026-10-21T00:32:49.983064Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261021T004748Z-3cd0e2` · generated 2026-10-21T00:47:48.239663Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-21T00:30:03.034721Z (CURRENT at publish; CURRENT until 2026-10-21T00:50:03.034721Z, STALE after 2026-10-21T01:00:03.034721Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-21T00:45:00.040817Z (CURRENT at publish; CURRENT until 2026-10-21T01:05:00.040817Z, STALE after 2026-10-21T01:15:00.040817Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-20T23:59:08.303599Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.67s
+model board generated 2026-10-20T23:59:08.303599Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.66s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,8 +12,8 @@ model board generated 2026-10-20T23:59:08.303599Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-21T01:00:00Z | FC Juárez vs Atlante (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 77 | 0 |
-| 2026-10-21T01:00:00Z | Atlético San Luis vs Querétaro (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 77 | 0 |
+| 2026-10-21T01:00:00Z | FC Juárez vs Atlante (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT close | CURRENT | 77 | 0 |
+| 2026-10-21T01:00:00Z | Atlético San Luis vs Querétaro (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT close | CURRENT | 77 | 0 |
 | 2026-10-21T03:10:00Z | Tigres UANL vs León (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-21T23:00:00Z | FC Cincinnati vs D.C. United (usa.mls) | INVALIDATED: lineup_changed:published:confirmed | confirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-22T01:00:00Z | Atlas vs Club América (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -22,7 +22,7 @@ model board generated 2026-10-20T23:59:08.303599Z · simulations this update: 0 
 | 2026-10-22T03:10:00Z | Pachuca vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-22T03:10:00Z | Santos Laguna vs Pumas UNAM (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (47; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (49; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -64,16 +64,16 @@ model board generated 2026-10-20T23:59:08.303599Z · simulations this update: 0 
 | Toluca vs Tijuana | home wins by more than 2.5 | no | 0.7300 | 0.823 [0.685, 0.933] | +0.080 | +0.005 | 0.73 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | First-half exact score 0-0 (home-away) | yes | 0.3000 | 0.402 [0.278, 0.512] | +0.087 | +0.005 | 0.3 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | First-half total goals over 0.5 | no | 0.3000 | 0.402 [0.278, 0.512] | +0.087 | +0.005 | 0.3 | - |  | RESEARCH_CANDIDATE |
+| Atlético San Luis vs Querétaro | away team total over 1.5 | no | 0.6200 | 0.720 [0.588, 0.843] | +0.083 | +0.005 | 0.62 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | Exact score 0-0 (home-away) | yes | 0.0800 | 0.137 [0.069, 0.206] | +0.052 | +0.004 | 0.08 | - |  | RESEARCH_CANDIDATE |
-| Puebla vs Monterrey | Total goals over 0.5 | no | 0.0800 | 0.137 [0.069, 0.206] | +0.052 | +0.004 | 0.08 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_MODEL_INVALIDATED: 124
-action_NO_EDGE: 907
-action_NO_QUOTE: 218
-action_RESEARCH_CANDIDATE: 47
+action_NO_EDGE: 904
+action_NO_QUOTE: 219
+action_RESEARCH_CANDIDATE: 49
 contract_sides: 1296
 fixtures: 9
 fixtures_model_invalidated: 1
