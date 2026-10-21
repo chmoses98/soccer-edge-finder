@@ -1,11 +1,11 @@
 {
   "by_horizon": {
     "120": {
-      "achieved_minutes_median": 122.3,
+      "achieved_minutes_median": 122.28,
       "achieved_minutes_p10": 118.52,
       "achieved_minutes_p90": 126.65,
-      "delivered": 372,
-      "delivery_rate": 0.9185185185185185,
+      "delivered": 373,
+      "delivery_rate": 0.9187192118226601,
       "lateness_minutes_max": 62.51,
       "lateness_minutes_median": -2.28,
       "missed": 33
@@ -14,78 +14,50 @@
       "achieved_minutes_median": 12.33,
       "achieved_minutes_p10": 11.34,
       "achieved_minutes_p90": 13.69,
-      "delivered": 353,
-      "delivery_rate": 0.9051282051282051,
+      "delivered": 357,
+      "delivery_rate": 0.9060913705583756,
       "lateness_minutes_max": 14.64,
       "lateness_minutes_median": 2.67,
       "missed": 37
     },
     "30": {
-      "achieved_minutes_median": 27.83,
+      "achieved_minutes_median": 27.79,
       "achieved_minutes_p10": 26.11,
       "achieved_minutes_p90": 29.2,
-      "delivered": 355,
-      "delivery_rate": 0.907928388746803,
+      "delivered": 358,
+      "delivery_rate": 0.9086294416243654,
       "lateness_minutes_max": 16.98,
-      "lateness_minutes_median": 2.17,
+      "lateness_minutes_median": 2.21,
       "missed": 36
     },
     "5": {
-      "achieved_minutes_median": 2.24,
+      "achieved_minutes_median": 2.25,
       "achieved_minutes_p10": 1.48,
-      "achieved_minutes_p90": 2.58,
-      "delivered": 352,
-      "delivery_rate": 0.9072164948453608,
+      "achieved_minutes_p90": 2.6,
+      "delivered": 356,
+      "delivery_rate": 0.9081632653061225,
       "lateness_minutes_max": 7.0,
       "lateness_minutes_median": 2.76,
       "missed": 36
     },
     "60": {
-      "achieved_minutes_median": 61.74,
+      "achieved_minutes_median": 61.72,
       "achieved_minutes_p10": 57.43,
       "achieved_minutes_p90": 62.4,
-      "delivered": 359,
-      "delivery_rate": 0.9042821158690176,
+      "delivered": 362,
+      "delivery_rate": 0.905,
       "lateness_minutes_max": 25.74,
-      "lateness_minutes_median": -1.74,
+      "lateness_minutes_median": -1.72,
       "missed": 38
     }
   },
-  "delivered_total": 1791,
-  "delivery_rate_total": 0.908675799086758,
-  "fixtures_tracked": 405,
-  "generated_at": "2026-10-20T23:55:33Z",
+  "delivered_total": 1806,
+  "delivery_rate_total": 0.9093655589123867,
+  "fixtures_tracked": 406,
+  "generated_at": "2026-10-21T04:43:36Z",
   "missed_total": 180,
-  "n_pending_fixtures": 19,
+  "n_pending_fixtures": 17,
   "pending_fixtures": [
-    {
-      "competition_id": "mex.liga_mx",
-      "fixture_id": "fx:mex.liga_mx:2026:mex.guadalajara:mex.necaxa",
-      "kickoff_utc": "2026-10-21T00:07:00Z",
-      "markets_discovered": 77,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "mex.liga_mx",
-      "fixture_id": "fx:mex.liga_mx:2026:mex.juarez:mex.atlante",
-      "kickoff_utc": "2026-10-21T01:00:00Z",
-      "markets_discovered": 77,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "mex.liga_mx",
-      "fixture_id": "fx:mex.liga_mx:2026:mex.san_luis:mex.queretaro",
-      "kickoff_utc": "2026-10-21T01:00:00Z",
-      "markets_discovered": 77,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "mex.liga_mx",
-      "fixture_id": "fx:mex.liga_mx:2026:mex.tigres:mex.leon",
-      "kickoff_utc": "2026-10-21T03:10:00Z",
-      "markets_discovered": 77,
-      "source": "run_output"
-    },
     {
       "competition_id": "esp.la_liga",
       "fixture_id": "fx:esp.la_liga:2026-27:esp.levante:esp.athletic_bilbao",
@@ -188,6 +160,20 @@
       "competition_id": "bra.serie_a",
       "fixture_id": "fx:bra.serie_a:2026:bra.cruzeiro:bra.remo",
       "kickoff_utc": "2026-10-23T23:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "arg.primera",
+      "fixture_id": "fx:arg.primera:2026:arg.tigre:arg.atletico_tucuman",
+      "kickoff_utc": "2026-10-24T00:15:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "mex.liga_mx",
+      "fixture_id": "fx:mex.liga_mx:2026:mex.necaxa:mex.juarez",
+      "kickoff_utc": "2026-10-24T01:00:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }
