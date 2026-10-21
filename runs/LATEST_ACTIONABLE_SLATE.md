@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261021T234239Z-850780` · generated 2026-10-21T23:42:39.063816Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261021T234531Z-b54243` · generated 2026-10-21T23:45:31.914813Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-21T23:39:42.612735Z (CURRENT at publish; CURRENT until 2026-10-21T23:59:42.612735Z, STALE after 2026-10-22T00:09:42.612735Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-21T23:42:49.280853Z (CURRENT at publish; CURRENT until 2026-10-22T00:02:49.280853Z, STALE after 2026-10-22T00:12:49.280853Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-21T23:15:32.300430Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.36s
+model board generated 2026-10-21T23:15:32.300430Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.22s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -23,7 +23,7 @@ model board generated 2026-10-21T23:15:32.300430Z · simulations this update: 0 
 | 2026-10-23T19:00:00Z | Ipswich Town vs Nottingham Forest (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 81 | 0 |
 | 2026-10-23T23:00:00Z | Cruzeiro vs Remo (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 11 | 3 |
 
-## Candidates on CURRENT prices (63; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (64; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -71,9 +71,9 @@ model board generated 2026-10-21T23:15:32.300430Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 585
+action_NO_EDGE: 584
 action_NO_QUOTE: 678
-action_RESEARCH_CANDIDATE: 63
+action_RESEARCH_CANDIDATE: 64
 contract_sides: 1326
 fixtures: 10
 fixtures_model_invalidated: 0
