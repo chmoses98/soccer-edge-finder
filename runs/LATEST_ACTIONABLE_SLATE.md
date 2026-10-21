@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261021T110135Z-58c80d` · generated 2026-10-21T11:01:35.955500Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261021T111635Z-fff507` · generated 2026-10-21T11:16:35.914708Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-21T10:58:53.633443Z (CURRENT at publish; CURRENT until 2026-10-21T11:18:53.633443Z, STALE after 2026-10-21T11:28:53.633443Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-21T11:13:53.646101Z (CURRENT at publish; CURRENT until 2026-10-21T11:33:53.646101Z, STALE after 2026-10-21T11:43:53.646101Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-20T19:27:34.582602Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.48s
+model board generated 2026-10-20T19:27:34.582602Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.34s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -26,8 +26,8 @@ model board generated 2026-10-20T19:27:34.582602Z · simulations this update: 0 
 | Puebla vs Monterrey | away team total over 1.5 | no | 0.4900 | 0.742 [0.616, 0.850] | +0.235 | +0.164 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | away team total over 0.5 | no | 0.1800 | 0.387 [0.264, 0.504] | +0.197 | +0.118 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | away team total over 2.5 | no | 0.7600 | 0.917 [0.850, 0.968] | +0.144 | +0.112 | 0.87 | - |  | RESEARCH_CANDIDATE |
+| Puebla vs Monterrey | Result: away | no | 0.4900 | 0.692 [0.563, 0.813] | +0.184 | +0.108 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | away wins by more than 1.5 | no | 0.7200 | 0.879 [0.799, 0.946] | +0.145 | +0.106 | 0.83 | - | * | RESEARCH_CANDIDATE |
-| Puebla vs Monterrey | Result: away | no | 0.5000 | 0.692 [0.563, 0.813] | +0.174 | +0.098 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | First-half result: away | no | 0.6200 | 0.768 [0.668, 0.862] | +0.132 | +0.074 | 0.69 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | Second-half result: away | no | 0.5900 | 0.741 [0.627, 0.843] | +0.134 | +0.063 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Monterrey | Total goals over 2.5 | no | 0.4700 | 0.645 [0.487, 0.779] | +0.157 | +0.063 | 0.53 | - | * | RESEARCH_CANDIDATE |
@@ -67,9 +67,9 @@ model board generated 2026-10-20T19:27:34.582602Z · simulations this update: 0 
 ## Counts
 
 ```
-action_MODEL_INVALIDATED: 127
+action_MODEL_INVALIDATED: 131
 action_NO_EDGE: 515
-action_NO_QUOTE: 148
+action_NO_QUOTE: 144
 action_RESEARCH_CANDIDATE: 44
 contract_sides: 834
 fixtures: 6
