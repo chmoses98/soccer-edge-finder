@@ -1,12 +1,13 @@
 {
-  "as_of": "2026-10-21T18:44:57.249704+00:00",
+  "as_of": "2026-10-21T23:32:41.643162+00:00",
   "events": 719,
   "events_skipped_unmapped": 393,
   "fixtures_mapped": 326,
   "health": {
     "reasons": [
+      "scoreboard_partial_failures:1/748",
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=50"
+      "weather_stopped:consecutive_failures:skipped=61"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +82,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 57,
-    "events": 62,
+    "captured": 48,
+    "events": 53,
     "failures": [],
-    "published_post": 3,
-    "published_pre_kickoff": 9,
+    "published_post": 5,
+    "published_pre_kickoff": 1,
     "unchanged": 5,
-    "unpublished": 50
+    "unpublished": 47
   },
   "map_proposals": {
     "bel.1": {
@@ -226,9 +227,11 @@
     }
   },
   "map_version": "4",
-  "results_appended": 2,
-  "scoreboard_failures": [],
-  "scoreboard_failures_n": 0,
+  "results_appended": 7,
+  "scoreboard_failures": [
+    "isr.1 2026-10-24: fetch failed for https://site.api.espn.com/apis/site/v2/sports/soccer/isr.1/scoreboard?dates=2026102"
+  ],
+  "scoreboard_failures_n": 1,
   "scoreboard_queries": 748,
   "unmapped_leagues": [
     "afc.champions",
@@ -298,17 +301,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 8,
-    "events": 61,
+    "captured": 13,
+    "events": 77,
     "failures": [
-      "401878967: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Kortrijk&count=5&language=en&fo",
-      "401878968: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Antwerp&count=5&language=en&for",
-      "401878969: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Leuven&count=5&language=en&form"
+      "401878965: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Westerlo&count=5&language=en&fo",
+      "401878966: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=La%20Louvi\u00e8re&count=5&language=",
+      "401841287: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Belo%20Horizonte&count=5&langua"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 50,
+    "skipped": 61,
     "stopped": "consecutive_failures"
   }
 }
