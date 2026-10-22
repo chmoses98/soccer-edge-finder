@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261022T013242Z-065a6e` · generated 2026-10-22T01:32:42.066163Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261022T014743Z-1d0be6` · generated 2026-10-22T01:47:43.549862Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-22T01:30:03.551014Z (CURRENT at publish; CURRENT until 2026-10-22T01:50:03.551014Z, STALE after 2026-10-22T02:00:03.551014Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-22T01:45:05.284986Z (CURRENT at publish; CURRENT until 2026-10-22T02:05:05.284986Z, STALE after 2026-10-22T02:15:05.284986Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-22T01:17:44.678113Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.12s
 
@@ -12,8 +12,8 @@ model board generated 2026-10-22T01:17:44.678113Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-22T03:10:00Z | Pachuca vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-22T03:10:00Z | Santos Laguna vs Pumas UNAM (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-22T03:10:00Z | Pachuca vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-22T03:10:00Z | Santos Laguna vs Pumas UNAM (mex.liga_mx) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-23T18:30:00Z | VfB Stuttgart vs Borussia Mönchengladbach (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-23T18:45:00Z | Brest vs Nice (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-23T18:45:00Z | Torino vs Monza (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -21,20 +21,19 @@ model board generated 2026-10-22T01:17:44.678113Z · simulations this update: 0 
 | 2026-10-23T23:00:00Z | Cruzeiro vs Remo (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 11 | 3 |
 | 2026-10-24T01:00:00Z | Necaxa vs FC Juárez (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (3; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (2; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Santos Laguna vs Pumas UNAM | btts | no | 0.3600 | 0.464 [0.329, 0.591] | +0.088 | +0.005 | 0.36 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Cruz Azul | Result: away | no | 0.5800 | 0.687 [0.531, 0.819] | +0.089 | +0.002 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Cruz Azul | away team total over 1.5 | no | 0.5000 | 0.621 [0.447, 0.765] | +0.104 | +0.001 | 0.5 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 422
-action_NO_QUOTE: 83
-action_RESEARCH_CANDIDATE: 3
+action_NO_EDGE: 429
+action_NO_QUOTE: 77
+action_RESEARCH_CANDIDATE: 2
 contract_sides: 508
 fixtures: 8
 fixtures_model_invalidated: 0
