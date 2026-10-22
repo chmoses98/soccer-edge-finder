@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-22T17:41:58.554203+00:00",
+  "as_of": "2026-10-22T21:53:07.359070+00:00",
   "events": 698,
   "events_skipped_unmapped": 411,
   "fixtures_mapped": 287,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=81"
+      "weather_stopped:consecutive_failures:skipped=87"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 67,
-    "events": 67,
+    "captured": 27,
+    "events": 58,
     "failures": [],
     "published_post": 18,
     "published_pre_kickoff": 0,
-    "unchanged": 0,
-    "unpublished": 49
+    "unchanged": 31,
+    "unpublished": 40
   },
   "map_proposals": {
     "bel.1": {
@@ -184,14 +184,14 @@
         "131474": "UD Ourense",
         "133831": "Sporting Hortaleza",
         "133832": "Atl\u00e9tico Pinatarense",
-        "133834": "CIUDAD DE LUCENA",
-        "133835": "CD PAMPLONA",
-        "133837": "CD TARANC\u00d3N",
-        "133839": "CF CALAMOCHA",
+        "133834": "Ciudad De Lucena",
+        "133835": "CD Pamplona",
+        "133837": "CD Tarancon",
+        "133839": "CF Calamocha",
         "133842": "Ribadesella",
         "133843": "Sporting de Alc\u00e1zar",
         "133844": "UB Lebrijana",
-        "133845": "UD CASTELLONENSE",
+        "133845": "UD Castellonense",
         "133846": "Tavernes de la Valldigna",
         "133847": "Auriense Cented Academy",
         "14263": "Atl\u00e9tico Baleares",
@@ -356,7 +356,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 3,
+  "results_appended": 20,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -407,14 +407,14 @@
     "131474": "UD Ourense",
     "133831": "Sporting Hortaleza",
     "133832": "Atl\u00e9tico Pinatarense",
-    "133834": "CIUDAD DE LUCENA",
-    "133835": "CD PAMPLONA",
-    "133837": "CD TARANC\u00d3N",
-    "133839": "CF CALAMOCHA",
+    "133834": "Ciudad De Lucena",
+    "133835": "CD Pamplona",
+    "133837": "CD Tarancon",
+    "133839": "CF Calamocha",
     "133842": "Ribadesella",
     "133843": "Sporting de Alc\u00e1zar",
     "133844": "UB Lebrijana",
-    "133845": "UD CASTELLONENSE",
+    "133845": "UD Castellonense",
     "133846": "Tavernes de la Valldigna",
     "133847": "Auriense Cented Academy",
     "138": "VfL Wolfsburg",
@@ -524,17 +524,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 12,
-    "events": 96,
+    "captured": 13,
+    "events": 103,
     "failures": [
+      "401892152: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-41.2866&longitude=174.7756&hourly=",
       "401892151: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-33.8678&longitude=151.2073&hourly=",
-      "401878967: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=50.8280&longitude=3.2649&hourly=tem",
-      "401878968: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=51.2205&longitude=4.4003&hourly=tem"
+      "401878967: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=50.8280&longitude=3.2649&hourly=tem"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 81,
+    "skipped": 87,
     "stopped": "consecutive_failures"
   }
 }
