@@ -1,23 +1,23 @@
 {
  "schema": "dispatch_reliability_v1",
- "generated_at": "2026-10-22T12:54:54Z",
+ "generated_at": "2026-10-22T19:34:20Z",
  "cadence": {
   "external_heartbeat_minutes": null,
   "github_backup_minutes": 60
  },
  "last_wake": {
-  "started_at": "2026-10-22T12:47:39Z",
+  "started_at": "2026-10-22T19:00:01Z",
   "trigger_source": "workflow-run",
   "status": "OK",
   "no_action_reason": null
  },
  "last_24h": {
   "span_hours": 24.0,
-  "heartbeats_actual": 23,
+  "heartbeats_actual": 21,
   "heartbeats_by_source": {
    "chain": 4,
    "github-schedule-backup": 5,
-   "workflow-run": 14
+   "workflow-run": 12
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -29,27 +29,27 @@
   "github_backup_success": 0.20833333333333334,
   "capture_runs": 3,
   "capture_runs_failed": 0,
-  "paid_calls": 6,
-  "credits_spent": 18,
-  "fixtures_with_horizons": 7,
-  "horizons_eligible": 35,
-  "horizons_delivered": 35,
+  "paid_calls": 4,
+  "credits_spent": 12,
+  "fixtures_with_horizons": 6,
+  "horizons_eligible": 30,
+  "horizons_delivered": 30,
   "horizons_missed": 0,
   "horizon_states": {
-   "DELIVERED": 35
+   "DELIVERED": 30
   },
   "capture_success_rate": 1.0,
-  "close_fixtures_eligible": 7,
-  "close_fixtures_delivered": 7,
+  "close_fixtures_eligible": 6,
+  "close_fixtures_delivered": 6,
   "close_success_rate": 1.0
  },
  "last_7d": {
   "span_hours": 168.0,
-  "heartbeats_actual": 164,
+  "heartbeats_actual": 162,
   "heartbeats_by_source": {
    "chain": 30,
-   "github-schedule-backup": 39,
-   "workflow-run": 95
+   "github-schedule-backup": 38,
+   "workflow-run": 94
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -57,8 +57,8 @@
   "external_heartbeats_actual": 0,
   "external_trigger_success": null,
   "github_backup_expected": 168,
-  "github_backup_actual": 39,
-  "github_backup_success": 0.23214285714285715,
+  "github_backup_actual": 38,
+  "github_backup_success": 0.2261904761904762,
   "capture_runs": 29,
   "capture_runs_failed": 3,
   "paid_calls": 137,

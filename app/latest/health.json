@@ -1,39 +1,39 @@
 {
   "bet_authority": "RESEARCH_ONLY",
-  "commit_sha": "ed396a5a6303",
+  "commit_sha": "1983ab196959",
   "components": {
     "dispatch": {
-      "age_seconds": 1733.7,
-      "as_of": "2026-10-22T17:18:14Z",
+      "age_seconds": 2174.1,
+      "as_of": "2026-10-22T19:00:04Z",
       "detail": "kickoff dispatcher heartbeat",
       "status": "OK"
     },
     "espn_fixtures": {
-      "age_seconds": 52767.6,
+      "age_seconds": 59318.1,
       "as_of": "2026-10-22T03:07:40Z",
       "detail": "ESPN fixture/lineup sync (STATUS.json)",
       "status": "OK"
     },
     "export": {
-      "age_seconds": 164.5,
+      "age_seconds": 6715.0,
       "as_of": "2026-10-22T17:44:23Z",
       "detail": null,
       "status": "OK"
     },
     "kalshi_sweep": {
-      "age_seconds": 180.4,
+      "age_seconds": 6730.9,
       "as_of": "2026-10-22T17:44:07Z",
       "detail": "exhaustive Kalshi soccer sweep (snapshots/STATUS.json)",
-      "status": "OK"
+      "status": "STALE"
     },
     "market_data": {
-      "age_seconds": 342.4,
+      "age_seconds": 6892.9,
       "as_of": "2026-10-22T17:41:25Z",
       "detail": null,
-      "status": "OK"
+      "status": "STALE"
     },
     "model": {
-      "age_seconds": 15854.4,
+      "age_seconds": 22404.9,
       "as_of": "2026-10-22T13:22:53Z",
       "detail": null,
       "status": "OK"
@@ -51,19 +51,19 @@
       "status": "UNKNOWN"
     }
   },
-  "data_age_seconds": 15854.4,
+  "data_age_seconds": 22404.9,
   "errors": [],
-  "freshness_status": "FRESH",
-  "generated_at": "2026-10-22T17:47:07Z",
+  "freshness_status": "STALE",
+  "generated_at": "2026-10-22T19:36:18Z",
   "kind": "health",
-  "last_export_attempt": "2026-10-22T17:47:07Z",
+  "last_export_attempt": "2026-10-22T19:36:18Z",
   "last_market_capture": "2026-10-22T17:41:25Z",
   "last_model_generated": "2026-10-22T13:22:53Z",
   "last_successful_run": "2026-10-22T17:44:23Z",
-  "market_data_status": "OK",
+  "market_data_status": "STALE",
   "model_status": "OK",
-  "next_scheduled_run": null,
-  "overall_status": "RESEARCH_ONLY",
+  "next_scheduled_run": "2026-10-23T16:20:04Z",
+  "overall_status": "STALE",
   "payload_run_id": "run_bb8845d7e9ef92d7a42f",
   "router_status": "UNKNOWN",
   "run_id": "run_bb8845d7e9ef92d7a42f",
