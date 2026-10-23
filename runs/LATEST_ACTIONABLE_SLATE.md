@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261023T093713Z-faeaf5` · generated 2026-10-23T09:37:13.166465Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261023T095215Z-1f39b6` · generated 2026-10-23T09:52:15.006081Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-23T09:34:20.107281Z (CURRENT at publish; CURRENT until 2026-10-23T09:54:20.107281Z, STALE after 2026-10-23T10:04:20.107281Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-23T09:49:21.622489Z (CURRENT at publish; CURRENT until 2026-10-23T10:09:21.622489Z, STALE after 2026-10-23T10:19:21.622489Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-23T06:51:44.407741Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.77s
+model board generated 2026-10-23T06:51:44.407741Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.64s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -61,7 +61,7 @@ model board generated 2026-10-23T06:51:44.407741Z · simulations this update: 0 
 | 2026-10-25T02:30:00Z | San Diego FC vs Seattle Sounders (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-25T03:10:00Z | Pumas UNAM vs Tigres UANL (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (152; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (154; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -109,9 +109,9 @@ model board generated 2026-10-23T06:51:44.407741Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2426
-action_NO_QUOTE: 586
-action_RESEARCH_CANDIDATE: 152
+action_NO_EDGE: 2416
+action_NO_QUOTE: 594
+action_RESEARCH_CANDIDATE: 154
 contract_sides: 3164
 fixtures: 48
 fixtures_model_invalidated: 0
