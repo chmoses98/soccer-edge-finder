@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261023T172636Z-4d1f21` · generated 2026-10-23T17:26:36.482976Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261023T173236Z-f21638` · generated 2026-10-23T17:32:36.716892Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-23T17:23:42.511053Z (CURRENT at publish; CURRENT until 2026-10-23T17:43:42.511053Z, STALE after 2026-10-23T17:53:42.511053Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-23T17:29:32.725934Z (CURRENT at publish; CURRENT until 2026-10-23T17:49:32.725934Z, STALE after 2026-10-23T17:59:32.725934Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-23T17:11:04.979373Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.49s
+model board generated 2026-10-23T17:32:35.341299Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 1.51s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-23T17:11:04.979373Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-23T18:30:00Z | VfB Stuttgart vs Borussia Mönchengladbach (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-23T18:30:00Z | VfB Stuttgart vs Borussia Mönchengladbach (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
 | 2026-10-23T18:45:00Z | Brest vs Nice (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-23T18:45:00Z | Torino vs Monza (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-23T19:00:00Z | Ipswich Town vs Nottingham Forest (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 81 | 0 |
@@ -87,7 +87,7 @@ model board generated 2026-10-23T17:11:04.979373Z · simulations this update: 0 
 | 2026-10-25T16:30:00Z | SC Freiburg vs Bayern Munich (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-25T17:00:00Z | Lecce vs Juventus (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (170; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (175; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -130,15 +130,15 @@ model board generated 2026-10-23T17:11:04.979373Z · simulations this update: 0 
 | Colorado Rapids vs Vancouver Whitecaps | First-half total goals over 0.5 | no | 0.2600 | 0.389 [0.278, 0.502] | +0.115 | +0.047 | 0.3 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | away team total over 0.5 | no | 0.2000 | 0.328 [0.223, 0.442] | +0.117 | +0.045 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Vancouver Whitecaps | First-half total goals over 1.5 | no | 0.6200 | 0.748 [0.638, 0.852] | +0.112 | +0.044 | 0.66 | - |  | RESEARCH_CANDIDATE |
-| Atlanta United vs Chicago Fire | First-half total goals over 1.5 | no | 0.5600 | 0.689 [0.578, 0.802] | +0.112 | +0.043 | 0.6 | - | * | RESEARCH_CANDIDATE |
+| CF Montréal vs Nashville SC | away team total over 1.5 | no | 0.4100 | 0.561 [0.406, 0.702] | +0.135 | +0.043 | 0.45 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2567
-action_NO_QUOTE: 4047
-action_RESEARCH_CANDIDATE: 170
-contract_sides: 6784
+action_NO_EDGE: 2563
+action_NO_QUOTE: 3898
+action_RESEARCH_CANDIDATE: 175
+contract_sides: 6636
 fixtures: 74
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
