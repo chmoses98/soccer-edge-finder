@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261023T120723Z-df5395` · generated 2026-10-23T12:07:23.095522Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261023T122625Z-0b3e13` · generated 2026-10-23T12:26:25.222831Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-23T12:04:29.746339Z (CURRENT at publish; CURRENT until 2026-10-23T12:24:29.746339Z, STALE after 2026-10-23T12:34:29.746339Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-23T12:23:12.811570Z (CURRENT at publish; CURRENT until 2026-10-23T12:43:12.811570Z, STALE after 2026-10-23T12:53:12.811570Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-23T11:37:27.692867Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.60s
+model board generated 2026-10-23T12:26:15.164834Z · simulations this update: 24 · Odds API calls this update: 0 (credits 0) · reprice 1.15s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -61,8 +61,12 @@ model board generated 2026-10-23T11:37:27.692867Z · simulations this update: 0 
 | 2026-10-25T02:30:00Z | San Diego FC vs Seattle Sounders (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-25T03:10:00Z | Pumas UNAM vs Tigres UANL (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-25T11:30:00Z | Inter Milan vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-25T12:00:00Z | Atlético Madrid vs Deportivo La Coruña (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-25T12:00:00Z | Racing Santander vs Espanyol (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-25T12:00:00Z | Rayo Vallecano vs Elche (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-25T12:00:00Z | Valencia vs Villarreal (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (160; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (157; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -110,11 +114,11 @@ model board generated 2026-10-23T11:37:27.692867Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2416
-action_NO_QUOTE: 594
-action_RESEARCH_CANDIDATE: 160
-contract_sides: 3170
-fixtures: 49
+action_NO_EDGE: 2446
+action_NO_QUOTE: 591
+action_RESEARCH_CANDIDATE: 157
+contract_sides: 3194
+fixtures: 53
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
