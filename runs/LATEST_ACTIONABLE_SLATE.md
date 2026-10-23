@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261023T212757Z-42877a` · generated 2026-10-23T21:27:57.932242Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
+slate `slate-20261023T213750Z-c7cba8` · generated 2026-10-23T21:37:50.286793Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-23T21:25:00.050550Z (CURRENT at publish; CURRENT until 2026-10-23T21:45:00.050550Z, STALE after 2026-10-23T21:55:00.050550Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-23T21:34:43.774154Z (CURRENT at publish; CURRENT until 2026-10-23T21:54:43.774154Z, STALE after 2026-10-23T22:04:43.774154Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-23T20:15:25.037056Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.93s
+model board generated 2026-10-23T20:15:25.037056Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.90s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -84,19 +84,21 @@ model board generated 2026-10-23T20:15:25.037056Z · simulations this update: 0 
 | 2026-10-25T17:00:00Z | Lecce vs Juventus (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-25T19:45:00Z | Udinese vs AC Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (171; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (170; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Hull City vs Brentford | Result: away | no | 0.4300 | 0.694 [0.502, 0.865] | +0.247 | +0.130 | 0.55 | - | * | RESEARCH_CANDIDATE |
 | SC Freiburg vs Bayern Munich | Result: away | no | 0.2900 | 0.541 [0.348, 0.730] | +0.236 | +0.116 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Inter Miami | Total goals over 3.5 | no | 0.4300 | 0.645 [0.490, 0.789] | +0.197 | +0.101 | 0.53 | - | * | RESEARCH_CANDIDATE |
+| New York Red Bulls vs Inter Miami | away team total over 1.5 | no | 0.3200 | 0.522 [0.367, 0.669] | +0.187 | +0.096 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.4300 | 0.629 [0.488, 0.758] | +0.182 | +0.094 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | CF Montréal vs Nashville SC | Total goals over 2.5 | no | 0.4000 | 0.596 [0.444, 0.732] | +0.180 | +0.091 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | CF Montréal vs Nashville SC | Total goals over 3.5 | no | 0.6200 | 0.792 [0.668, 0.892] | +0.156 | +0.090 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.6500 | 0.817 [0.709, 0.907] | +0.151 | +0.089 | 0.74 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Inter Miami | Total goals over 4.5 | no | 0.6300 | 0.805 [0.683, 0.910] | +0.159 | +0.089 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | away team total over 1.5 | no | 0.5000 | 0.683 [0.557, 0.803] | +0.165 | +0.087 | 0.58 | - | * | RESEARCH_CANDIDATE |
+| New York Red Bulls vs Inter Miami | away team total over 2.5 | no | 0.6000 | 0.770 [0.636, 0.883] | +0.154 | +0.085 | 0.68 | - |  | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | Total goals over 3.5 | no | 0.5600 | 0.742 [0.602, 0.857] | +0.165 | +0.084 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | Total goals over 2.5 | no | 0.3400 | 0.536 [0.380, 0.676] | +0.180 | +0.082 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Vancouver Whitecaps | btts | no | 0.4000 | 0.571 [0.459, 0.679] | +0.154 | +0.080 | 0.47 | - | * | RESEARCH_CANDIDATE |
@@ -106,8 +108,7 @@ model board generated 2026-10-23T20:15:25.037056Z · simulations this update: 0 
 | Colorado Rapids vs Vancouver Whitecaps | Total goals over 1.5 | no | 0.2000 | 0.364 [0.241, 0.490] | +0.153 | +0.067 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | btts | no | 0.3300 | 0.485 [0.371, 0.600] | +0.139 | +0.067 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | SC Freiburg vs Bayern Munich | Result: home | yes | 0.1400 | 0.330 [0.167, 0.510] | +0.181 | +0.066 | 0.2 | - |  | RESEARCH_CANDIDATE |
-| New York Red Bulls vs Inter Miami | away team total over 1.5 | no | 0.3500 | 0.522 [0.367, 0.669] | +0.156 | +0.065 | 0.41 | - | * | RESEARCH_CANDIDATE |
-| New York Red Bulls vs Inter Miami | away team total over 2.5 | no | 0.6200 | 0.770 [0.636, 0.883] | +0.134 | +0.065 | 0.68 | - |  | RESEARCH_CANDIDATE |
+| New York Red Bulls vs Inter Miami | btts | no | 0.2600 | 0.416 [0.300, 0.536] | +0.143 | +0.064 | 0.32 | - | * | RESEARCH_CANDIDATE |
 | CF Montréal vs Nashville SC | away team total over 1.5 | no | 0.3900 | 0.561 [0.406, 0.702] | +0.155 | +0.063 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | Total goals over 4.5 | no | 0.7500 | 0.875 [0.780, 0.947] | +0.112 | +0.063 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Inter Miami | Total goals over 5.5 | no | 0.7900 | 0.905 [0.827, 0.967] | +0.103 | +0.063 | 0.85 | - |  | RESEARCH_CANDIDATE |
@@ -119,7 +120,6 @@ model board generated 2026-10-23T20:15:25.037056Z · simulations this update: 0 
 | San Diego FC vs Seattle Sounders | Total goals over 3.5 | no | 0.5400 | 0.705 [0.558, 0.836] | +0.148 | +0.059 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Lazio vs Parma | Result: home | no | 0.3100 | 0.493 [0.318, 0.651] | +0.168 | +0.057 | 0.36 | - | * | RESEARCH_CANDIDATE |
 | Udinese vs AC Milan | Result: away | no | 0.4300 | 0.609 [0.437, 0.764] | +0.162 | +0.056 | 0.48 | - | * | RESEARCH_CANDIDATE |
-| New York Red Bulls vs Inter Miami | btts | no | 0.2700 | 0.416 [0.300, 0.536] | +0.133 | +0.053 | 0.32 | - | * | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | away team total over 0.5 | no | 0.2200 | 0.359 [0.247, 0.475] | +0.127 | +0.051 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | Udinese vs AC Milan | Result: home | yes | 0.1800 | 0.349 [0.197, 0.515] | +0.159 | +0.051 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Inter Miami | First-half total goals over 1.5 | no | 0.4700 | 0.618 [0.488, 0.742] | +0.130 | +0.051 | 0.52 | - | * | RESEARCH_CANDIDATE |
@@ -132,9 +132,9 @@ model board generated 2026-10-23T20:15:25.037056Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2562
-action_NO_QUOTE: 689
-action_RESEARCH_CANDIDATE: 171
+action_NO_EDGE: 2566
+action_NO_QUOTE: 686
+action_RESEARCH_CANDIDATE: 170
 contract_sides: 3422
 fixtures: 71
 fixtures_model_invalidated: 0
