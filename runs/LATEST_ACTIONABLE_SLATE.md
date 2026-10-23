@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261023T145655Z-d480f3` · generated 2026-10-23T14:56:55.913590Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261023T151155Z-b4e570` · generated 2026-10-23T15:11:55.118754Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-23T14:54:00.740555Z (CURRENT at publish; CURRENT until 2026-10-23T15:14:00.740555Z, STALE after 2026-10-23T15:24:00.740555Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-23T15:09:00.761948Z (CURRENT at publish; CURRENT until 2026-10-23T15:29:00.761948Z, STALE after 2026-10-23T15:39:00.761948Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-23T14:42:07.032046Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.65s
+model board generated 2026-10-23T14:42:07.032046Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.38s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -80,7 +80,7 @@ model board generated 2026-10-23T14:42:07.032046Z · simulations this update: 0 
 | 2026-10-25T14:00:00Z | Genoa vs Venezia (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-25T14:30:00Z | TSG Hoffenheim vs Bayer Leverkusen (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (169; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (175; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -100,10 +100,10 @@ model board generated 2026-10-23T14:42:07.032046Z · simulations this update: 0 
 | Colorado Rapids vs Vancouver Whitecaps | btts | no | 0.4000 | 0.571 [0.459, 0.679] | +0.154 | +0.080 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | btts | no | 0.3300 | 0.498 [0.379, 0.610] | +0.153 | +0.079 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Inter Miami | Total goals over 2.5 | no | 0.2400 | 0.431 [0.282, 0.583] | +0.178 | +0.078 | 0.31 | - |  | RESEARCH_CANDIDATE |
-| Lazio vs Parma | Result: home | no | 0.2900 | 0.493 [0.318, 0.651] | +0.189 | +0.077 | 0.36 | - | * | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | btts | no | 0.3200 | 0.485 [0.371, 0.600] | +0.150 | +0.077 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Vancouver Whitecaps | away team total over 1.5 | no | 0.5200 | 0.686 [0.550, 0.798] | +0.148 | +0.069 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Vancouver Whitecaps | Total goals over 1.5 | no | 0.2000 | 0.364 [0.241, 0.490] | +0.153 | +0.067 | 0.26 | - |  | RESEARCH_CANDIDATE |
+| Lazio vs Parma | Result: home | no | 0.3000 | 0.493 [0.318, 0.651] | +0.178 | +0.067 | 0.36 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | away team total over 0.5 | no | 0.1800 | 0.328 [0.223, 0.442] | +0.138 | +0.066 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | Total goals over 4.5 | no | 0.7500 | 0.875 [0.780, 0.947] | +0.112 | +0.063 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Inter Miami | Total goals over 5.5 | no | 0.7900 | 0.905 [0.827, 0.967] | +0.103 | +0.063 | 0.85 | - |  | RESEARCH_CANDIDATE |
@@ -128,9 +128,9 @@ model board generated 2026-10-23T14:42:07.032046Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2518
-action_NO_QUOTE: 4099
-action_RESEARCH_CANDIDATE: 169
+action_NO_EDGE: 2516
+action_NO_QUOTE: 4095
+action_RESEARCH_CANDIDATE: 175
 contract_sides: 6786
 fixtures: 67
 fixtures_model_invalidated: 0
