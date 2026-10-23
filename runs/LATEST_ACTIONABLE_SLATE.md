@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261023T110718Z-1a8e56` · generated 2026-10-23T11:07:18.540717Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261023T112219Z-9bc4ce` · generated 2026-10-23T11:22:19.757459Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-23T11:04:25.391942Z (CURRENT at publish; CURRENT until 2026-10-23T11:24:25.391942Z, STALE after 2026-10-23T11:34:25.391942Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-23T11:19:26.317686Z (CURRENT at publish; CURRENT until 2026-10-23T11:39:26.317686Z, STALE after 2026-10-23T11:49:26.317686Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-23T06:51:44.407741Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.79s
+model board generated 2026-10-23T06:51:44.407741Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.62s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -91,7 +91,6 @@ model board generated 2026-10-23T06:51:44.407741Z · simulations this update: 0 
 | San Diego FC vs Seattle Sounders | Total goals over 3.5 | no | 0.5400 | 0.705 [0.558, 0.836] | +0.148 | +0.059 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Lazio vs Parma | Result: home | no | 0.3100 | 0.493 [0.318, 0.651] | +0.168 | +0.057 | 0.36 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Inter Miami | btts | no | 0.2700 | 0.416 [0.300, 0.536] | +0.133 | +0.053 | 0.32 | - | * | RESEARCH_CANDIDATE |
-| CF Montréal vs Nashville SC | away team total over 1.5 | no | 0.4000 | 0.561 [0.407, 0.702] | +0.144 | +0.053 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | CF Montréal vs Nashville SC | Total goals over 1.5 | no | 0.1900 | 0.335 [0.210, 0.459] | +0.134 | +0.053 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | CF Montréal vs Nashville SC | Total goals over 4.5 | no | 0.8100 | 0.907 [0.831, 0.964] | +0.087 | +0.051 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Inter Miami | First-half total goals over 1.5 | no | 0.4700 | 0.618 [0.488, 0.742] | +0.130 | +0.051 | 0.52 | - | * | RESEARCH_CANDIDATE |
@@ -105,12 +104,13 @@ model board generated 2026-10-23T06:51:44.407741Z · simulations this update: 0 
 | Pumas UNAM vs Tigres UANL | away team total over 1.5 | no | 0.6000 | 0.742 [0.612, 0.853] | +0.125 | +0.047 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Vancouver Whitecaps | First-half total goals over 0.5 | no | 0.2600 | 0.389 [0.278, 0.502] | +0.115 | +0.047 | 0.3 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs Minnesota United | away team total over 0.5 | no | 0.2700 | 0.405 [0.290, 0.518] | +0.122 | +0.044 | 0.31 | - |  | RESEARCH_CANDIDATE |
+| Orlando City vs New York City FC | away team total over 2.5 | no | 0.7900 | 0.887 [0.807, 0.953] | +0.085 | +0.044 | 0.83 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2419
-action_NO_QUOTE: 587
+action_NO_EDGE: 2412
+action_NO_QUOTE: 594
 action_RESEARCH_CANDIDATE: 158
 contract_sides: 3164
 fixtures: 48
