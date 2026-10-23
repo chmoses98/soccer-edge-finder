@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261023T085211Z-6c717a` · generated 2026-10-23T08:52:11.526402Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261023T090711Z-b0a715` · generated 2026-10-23T09:07:11.321539Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-23T08:49:18.021035Z (CURRENT at publish; CURRENT until 2026-10-23T09:09:18.021035Z, STALE after 2026-10-23T09:19:18.021035Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-23T09:04:18.038023Z (CURRENT at publish; CURRENT until 2026-10-23T09:24:18.038023Z, STALE after 2026-10-23T09:34:18.038023Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-23T06:51:44.407741Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.59s
+model board generated 2026-10-23T06:51:44.407741Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.80s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -61,7 +61,7 @@ model board generated 2026-10-23T06:51:44.407741Z · simulations this update: 0 
 | 2026-10-25T02:30:00Z | San Diego FC vs Seattle Sounders (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-25T03:10:00Z | Pumas UNAM vs Tigres UANL (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (153; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (160; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -80,13 +80,13 @@ model board generated 2026-10-23T06:51:44.407741Z · simulations this update: 0 
 | New York Red Bulls vs Inter Miami | Total goals over 2.5 | no | 0.2400 | 0.431 [0.282, 0.583] | +0.178 | +0.078 | 0.31 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Inter Miami | away team total over 1.5 | no | 0.3400 | 0.522 [0.367, 0.669] | +0.167 | +0.076 | 0.41 | - |  | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | away team total over 1.5 | no | 0.5500 | 0.715 [0.592, 0.829] | +0.148 | +0.073 | 0.62 | - | * | RESEARCH_CANDIDATE |
-| Orlando City vs New York City FC | away team total over 1.5 | no | 0.5200 | 0.688 [0.556, 0.809] | +0.151 | +0.072 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Vancouver Whitecaps | Total goals over 1.5 | no | 0.2000 | 0.364 [0.241, 0.490] | +0.153 | +0.067 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | btts | no | 0.3300 | 0.485 [0.371, 0.600] | +0.139 | +0.067 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | away team total over 0.5 | no | 0.1800 | 0.328 [0.223, 0.442] | +0.138 | +0.066 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | Total goals over 4.5 | no | 0.7500 | 0.875 [0.780, 0.947] | +0.112 | +0.063 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Inter Miami | Total goals over 5.5 | no | 0.7900 | 0.905 [0.827, 0.967] | +0.103 | +0.063 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | CF Montréal vs Nashville SC | btts | no | 0.4300 | 0.582 [0.465, 0.693] | +0.135 | +0.063 | 0.49 | - | * | RESEARCH_CANDIDATE |
+| Orlando City vs New York City FC | away team total over 1.5 | no | 0.5300 | 0.688 [0.556, 0.809] | +0.141 | +0.062 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | away team total over 2.5 | no | 0.7700 | 0.885 [0.808, 0.950] | +0.102 | +0.060 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | Total goals over 3.5 | no | 0.5400 | 0.705 [0.558, 0.836] | +0.148 | +0.059 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Lazio vs Parma | Result: home | no | 0.3100 | 0.493 [0.318, 0.651] | +0.168 | +0.057 | 0.36 | - | * | RESEARCH_CANDIDATE |
@@ -109,9 +109,9 @@ model board generated 2026-10-23T06:51:44.407741Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2420
-action_NO_QUOTE: 591
-action_RESEARCH_CANDIDATE: 153
+action_NO_EDGE: 2412
+action_NO_QUOTE: 592
+action_RESEARCH_CANDIDATE: 160
 contract_sides: 3164
 fixtures: 48
 fixtures_model_invalidated: 0
