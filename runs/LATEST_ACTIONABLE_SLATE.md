@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261023T075208Z-a5e6fd` · generated 2026-10-23T07:52:08.075129Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261023T080707Z-e9ff6f` · generated 2026-10-23T08:07:07.834097Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-23T07:49:14.579763Z (CURRENT at publish; CURRENT until 2026-10-23T08:09:14.579763Z, STALE after 2026-10-23T08:19:14.579763Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-23T08:04:14.624481Z (CURRENT at publish; CURRENT until 2026-10-23T08:24:14.624481Z, STALE after 2026-10-23T08:34:14.624481Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-23T06:51:44.407741Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.60s
+model board generated 2026-10-23T06:51:44.407741Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.81s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -96,6 +96,7 @@ model board generated 2026-10-23T06:51:44.407741Z · simulations this update: 0 
 | CF Montréal vs Nashville SC | Total goals over 4.5 | no | 0.8100 | 0.907 [0.831, 0.964] | +0.087 | +0.051 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Inter Miami | First-half total goals over 1.5 | no | 0.4700 | 0.618 [0.488, 0.742] | +0.130 | +0.051 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Vancouver Whitecaps | Total goals over 4.5 | no | 0.8300 | 0.922 [0.860, 0.971] | +0.082 | +0.050 | 0.88 | - |  | RESEARCH_CANDIDATE |
+| Colorado Rapids vs Vancouver Whitecaps | away team total over 1.5 | no | 0.5400 | 0.686 [0.550, 0.798] | +0.128 | +0.049 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | Total goals over 1.5 | no | 0.1500 | 0.284 [0.168, 0.400] | +0.125 | +0.049 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs New York City FC | away team total over 0.5 | no | 0.2000 | 0.334 [0.222, 0.449] | +0.123 | +0.048 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | Total goals over 4.5 | no | 0.7300 | 0.850 [0.744, 0.936] | +0.106 | +0.048 | 0.77 | - |  | RESEARCH_CANDIDATE |
@@ -104,13 +105,12 @@ model board generated 2026-10-23T06:51:44.407741Z · simulations this update: 0 
 | Colorado Rapids vs Vancouver Whitecaps | First-half total goals over 0.5 | no | 0.2600 | 0.389 [0.278, 0.502] | +0.115 | +0.047 | 0.3 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs New York City FC | away team total over 2.5 | no | 0.7900 | 0.887 [0.807, 0.953] | +0.085 | +0.044 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Vancouver Whitecaps | First-half total goals over 1.5 | no | 0.6200 | 0.748 [0.638, 0.852] | +0.112 | +0.044 | 0.66 | - |  | RESEARCH_CANDIDATE |
-| Atlanta United vs Chicago Fire | First-half total goals over 1.5 | no | 0.5600 | 0.689 [0.578, 0.802] | +0.112 | +0.043 | 0.6 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2417
-action_NO_QUOTE: 593
+action_NO_EDGE: 2412
+action_NO_QUOTE: 598
 action_RESEARCH_CANDIDATE: 154
 contract_sides: 3164
 fixtures: 48
