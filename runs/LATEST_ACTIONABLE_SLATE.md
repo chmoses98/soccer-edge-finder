@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261023T171110Z-ac8dae` · generated 2026-10-23T17:11:10.073169Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261023T172636Z-4d1f21` · generated 2026-10-23T17:26:36.482976Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-23T17:08:08.169622Z (CURRENT at publish; CURRENT until 2026-10-23T17:28:08.169622Z, STALE after 2026-10-23T17:38:08.169622Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-23T17:23:42.511053Z (CURRENT at publish; CURRENT until 2026-10-23T17:43:42.511053Z, STALE after 2026-10-23T17:53:42.511053Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-23T17:11:04.979373Z · simulations this update: 8 · Odds API calls this update: 0 (credits 0) · reprice 1.37s
+model board generated 2026-10-23T17:11:04.979373Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.49s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -91,7 +91,7 @@ model board generated 2026-10-23T17:11:04.979373Z · simulations this update: 8 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Hull City vs Brentford | Result: away | no | 0.4300 | 0.694 [0.502, 0.865] | +0.247 | +0.130 | 0.55 | - | * | RESEARCH_CANDIDATE |
+| Hull City vs Brentford | Result: away | no | 0.4400 | 0.694 [0.502, 0.865] | +0.237 | +0.120 | 0.55 | - | * | RESEARCH_CANDIDATE |
 | SC Freiburg vs Bayern Munich | Result: away | no | 0.2900 | 0.541 [0.348, 0.730] | +0.236 | +0.116 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | CF Montréal vs Nashville SC | Total goals over 2.5 | no | 0.3900 | 0.596 [0.444, 0.732] | +0.190 | +0.101 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Inter Miami | Total goals over 3.5 | no | 0.4300 | 0.645 [0.490, 0.789] | +0.197 | +0.101 | 0.53 | - | * | RESEARCH_CANDIDATE |
@@ -135,8 +135,8 @@ model board generated 2026-10-23T17:11:04.979373Z · simulations this update: 8 
 ## Counts
 
 ```
-action_NO_EDGE: 2569
-action_NO_QUOTE: 4045
+action_NO_EDGE: 2567
+action_NO_QUOTE: 4047
 action_RESEARCH_CANDIDATE: 170
 contract_sides: 6784
 fixtures: 74
