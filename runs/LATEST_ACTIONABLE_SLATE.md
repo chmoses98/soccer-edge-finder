@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261023T113728Z-bfcc9e` · generated 2026-10-23T11:37:28.947034Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261023T115222Z-05b2f3` · generated 2026-10-23T11:52:22.960455Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-23T11:34:26.870581Z (CURRENT at publish; CURRENT until 2026-10-23T11:54:26.870581Z, STALE after 2026-10-23T12:04:26.870581Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-23T11:49:29.732499Z (CURRENT at publish; CURRENT until 2026-10-23T12:09:29.732499Z, STALE after 2026-10-23T12:19:29.732499Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-23T11:37:27.692867Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 1.67s
+model board generated 2026-10-23T11:37:27.692867Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.79s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -62,7 +62,7 @@ model board generated 2026-10-23T11:37:27.692867Z · simulations this update: 1 
 | 2026-10-25T03:10:00Z | Pumas UNAM vs Tigres UANL (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-25T11:30:00Z | Inter Milan vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (159; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (160; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -110,9 +110,9 @@ model board generated 2026-10-23T11:37:27.692867Z · simulations this update: 1 
 ## Counts
 
 ```
-action_NO_EDGE: 2418
-action_NO_QUOTE: 593
-action_RESEARCH_CANDIDATE: 159
+action_NO_EDGE: 2416
+action_NO_QUOTE: 594
+action_RESEARCH_CANDIDATE: 160
 contract_sides: 3170
 fixtures: 49
 fixtures_model_invalidated: 0
