@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261023T161200Z-6ec7f9` · generated 2026-10-23T16:12:00.845429Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261023T162610Z-83e10c` · generated 2026-10-23T16:26:10.648282Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-23T16:09:06.183853Z (CURRENT at publish; CURRENT until 2026-10-23T16:29:06.183853Z, STALE after 2026-10-23T16:39:06.183853Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-23T16:23:13.273308Z (CURRENT at publish; CURRENT until 2026-10-23T16:43:13.273308Z, STALE after 2026-10-23T16:53:13.273308Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-23T15:27:01.869637Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.82s
+model board generated 2026-10-23T15:27:01.869637Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.36s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -80,7 +80,7 @@ model board generated 2026-10-23T15:27:01.869637Z · simulations this update: 0 
 | 2026-10-25T14:00:00Z | Genoa vs Venezia (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-25T14:30:00Z | TSG Hoffenheim vs Bayer Leverkusen (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (160; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (166; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -90,13 +90,14 @@ model board generated 2026-10-23T15:27:01.869637Z · simulations this update: 0 
 | Colorado Rapids vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.4300 | 0.629 [0.488, 0.758] | +0.182 | +0.094 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.6500 | 0.817 [0.709, 0.907] | +0.151 | +0.089 | 0.74 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Inter Miami | Total goals over 4.5 | no | 0.6300 | 0.805 [0.683, 0.910] | +0.159 | +0.089 | 0.72 | - |  | RESEARCH_CANDIDATE |
-| New York Red Bulls vs Inter Miami | Total goals over 2.5 | no | 0.2300 | 0.431 [0.282, 0.583] | +0.188 | +0.088 | 0.31 | - |  | RESEARCH_CANDIDATE |
+| Atlanta United vs Chicago Fire | away team total over 1.5 | no | 0.5000 | 0.683 [0.557, 0.803] | +0.165 | +0.087 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | Total goals over 3.5 | no | 0.5600 | 0.742 [0.602, 0.857] | +0.165 | +0.084 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | Total goals over 2.5 | no | 0.3400 | 0.536 [0.380, 0.676] | +0.180 | +0.082 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | CF Montréal vs Nashville SC | Total goals over 3.5 | no | 0.6300 | 0.792 [0.668, 0.892] | +0.146 | +0.080 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Vancouver Whitecaps | btts | no | 0.4000 | 0.571 [0.459, 0.679] | +0.154 | +0.080 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | btts | no | 0.3300 | 0.498 [0.379, 0.610] | +0.153 | +0.079 | 0.4 | - | * | RESEARCH_CANDIDATE |
-| Atlanta United vs Chicago Fire | away team total over 1.5 | no | 0.5100 | 0.683 [0.557, 0.803] | +0.155 | +0.077 | 0.58 | - | * | RESEARCH_CANDIDATE |
+| New York Red Bulls vs Inter Miami | Total goals over 2.5 | no | 0.2400 | 0.431 [0.282, 0.583] | +0.178 | +0.078 | 0.31 | - |  | RESEARCH_CANDIDATE |
+| San Diego FC vs Seattle Sounders | away team total over 1.5 | no | 0.5500 | 0.715 [0.592, 0.829] | +0.148 | +0.073 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Vancouver Whitecaps | Total goals over 1.5 | no | 0.2000 | 0.364 [0.241, 0.490] | +0.153 | +0.067 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | btts | no | 0.3300 | 0.485 [0.371, 0.600] | +0.139 | +0.067 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | Total goals over 4.5 | no | 0.7500 | 0.875 [0.780, 0.947] | +0.112 | +0.063 | 0.81 | - |  | RESEARCH_CANDIDATE |
@@ -109,6 +110,7 @@ model board generated 2026-10-23T15:27:01.869637Z · simulations this update: 0 
 | New York Red Bulls vs Inter Miami | away team total over 1.5 | no | 0.3600 | 0.522 [0.367, 0.669] | +0.146 | +0.055 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Inter Miami | away team total over 2.5 | no | 0.6300 | 0.770 [0.636, 0.883] | +0.124 | +0.055 | 0.68 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Inter Miami | btts | no | 0.2700 | 0.416 [0.300, 0.536] | +0.133 | +0.053 | 0.32 | - | * | RESEARCH_CANDIDATE |
+| San Diego FC vs Seattle Sounders | away team total over 0.5 | no | 0.2200 | 0.359 [0.247, 0.475] | +0.127 | +0.051 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Inter Miami | First-half total goals over 1.5 | no | 0.4700 | 0.618 [0.488, 0.742] | +0.130 | +0.051 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | CF Montréal vs Nashville SC | Total goals over 4.5 | no | 0.8100 | 0.907 [0.830, 0.964] | +0.087 | +0.050 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Vancouver Whitecaps | Total goals over 4.5 | no | 0.8300 | 0.922 [0.860, 0.971] | +0.082 | +0.050 | 0.88 | - |  | RESEARCH_CANDIDATE |
@@ -120,17 +122,15 @@ model board generated 2026-10-23T15:27:01.869637Z · simulations this update: 0 
 | Atlanta United vs Chicago Fire | away team total over 0.5 | no | 0.2000 | 0.328 [0.223, 0.442] | +0.117 | +0.045 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Vancouver Whitecaps | First-half total goals over 1.5 | no | 0.6200 | 0.748 [0.638, 0.852] | +0.112 | +0.044 | 0.66 | - |  | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | First-half total goals over 1.5 | no | 0.5600 | 0.689 [0.578, 0.802] | +0.112 | +0.043 | 0.6 | - | * | RESEARCH_CANDIDATE |
+| Orlando City vs New York City FC | away team total over 1.5 | no | 0.5500 | 0.688 [0.556, 0.809] | +0.121 | +0.042 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | away team total over 2.5 | no | 0.7900 | 0.885 [0.808, 0.950] | +0.083 | +0.041 | 0.83 | - |  | RESEARCH_CANDIDATE |
-| Colorado Rapids vs Vancouver Whitecaps | First-half exact score 0-0 (home-away) | yes | 0.2700 | 0.389 [0.278, 0.502] | +0.105 | +0.036 | 0.3 | - | * | RESEARCH_CANDIDATE |
-| Atlanta United vs Chicago Fire | First-half exact score 0-0 (home-away) | yes | 0.2200 | 0.331 [0.228, 0.432] | +0.099 | +0.036 | 0.25 | - | * | RESEARCH_CANDIDATE |
-| Atlanta United vs Chicago Fire | First-half total goals over 0.5 | no | 0.2200 | 0.331 [0.228, 0.432] | +0.099 | +0.036 | 0.25 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2515
-action_NO_QUOTE: 4089
-action_RESEARCH_CANDIDATE: 160
+action_NO_EDGE: 2520
+action_NO_QUOTE: 4078
+action_RESEARCH_CANDIDATE: 166
 contract_sides: 6764
 fixtures: 67
 fixtures_model_invalidated: 0
