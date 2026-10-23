@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261023T132642Z-719a25` · generated 2026-10-23T13:26:42.578503Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261023T134142Z-992efe` · generated 2026-10-23T13:41:42.985753Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-23T13:23:48.429604Z (CURRENT at publish; CURRENT until 2026-10-23T13:43:48.429604Z, STALE after 2026-10-23T13:53:48.429604Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-23T13:38:48.447518Z (CURRENT at publish; CURRENT until 2026-10-23T13:58:48.447518Z, STALE after 2026-10-23T14:08:48.447518Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-23T13:11:42.465889Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.47s
+model board generated 2026-10-23T13:11:42.465889Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.75s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -72,18 +72,18 @@ model board generated 2026-10-23T13:11:42.465889Z · simulations this update: 0 
 | 2026-10-25T12:00:00Z | Sevilla vs Osasuna (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-25T12:00:00Z | Valencia vs Villarreal (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 76 | 0 |
 
-## Candidates on CURRENT prices (172; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (175; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | New York Red Bulls vs Inter Miami | Total goals over 3.5 | no | 0.4300 | 0.645 [0.490, 0.789] | +0.197 | +0.101 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | away team total over 1.5 | no | 0.4900 | 0.683 [0.557, 0.803] | +0.175 | +0.097 | 0.58 | - | * | RESEARCH_CANDIDATE |
-| New York Red Bulls vs Inter Miami | away team total over 1.5 | no | 0.3200 | 0.522 [0.367, 0.669] | +0.187 | +0.096 | 0.41 | - | * | RESEARCH_CANDIDATE |
-| New York Red Bulls vs Inter Miami | away team total over 2.5 | no | 0.5900 | 0.770 [0.636, 0.883] | +0.163 | +0.094 | 0.68 | - |  | RESEARCH_CANDIDATE |
+| New York Red Bulls vs Inter Miami | away team total over 2.5 | no | 0.5900 | 0.770 [0.636, 0.883] | +0.163 | +0.094 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.4300 | 0.629 [0.488, 0.758] | +0.182 | +0.094 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | CF Montréal vs Nashville SC | Total goals over 2.5 | no | 0.4000 | 0.596 [0.444, 0.732] | +0.180 | +0.091 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.6500 | 0.817 [0.709, 0.907] | +0.151 | +0.089 | 0.74 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Inter Miami | Total goals over 4.5 | no | 0.6300 | 0.805 [0.683, 0.910] | +0.159 | +0.089 | 0.72 | - |  | RESEARCH_CANDIDATE |
+| New York Red Bulls vs Inter Miami | away team total over 1.5 | no | 0.3300 | 0.522 [0.367, 0.669] | +0.177 | +0.086 | 0.41 | - |  | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | Total goals over 3.5 | no | 0.5600 | 0.742 [0.602, 0.857] | +0.165 | +0.084 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | Total goals over 2.5 | no | 0.3400 | 0.536 [0.380, 0.676] | +0.180 | +0.082 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | CF Montréal vs Nashville SC | Total goals over 3.5 | no | 0.6300 | 0.792 [0.668, 0.892] | +0.146 | +0.080 | 0.71 | - |  | RESEARCH_CANDIDATE |
@@ -120,9 +120,9 @@ model board generated 2026-10-23T13:11:42.465889Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2464
-action_NO_QUOTE: 4102
-action_RESEARCH_CANDIDATE: 172
+action_NO_EDGE: 2462
+action_NO_QUOTE: 4101
+action_RESEARCH_CANDIDATE: 175
 contract_sides: 6738
 fixtures: 59
 fixtures_model_invalidated: 0
