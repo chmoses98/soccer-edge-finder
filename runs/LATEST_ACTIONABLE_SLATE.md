@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261023T124106Z-9a3936` · generated 2026-10-23T12:41:06.182341Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261023T125637Z-8210c8` · generated 2026-10-23T12:56:37.604152Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-23T12:38:12.835645Z (CURRENT at publish; CURRENT until 2026-10-23T12:58:12.835645Z, STALE after 2026-10-23T13:08:12.835645Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-23T12:53:44.277650Z (CURRENT at publish; CURRENT until 2026-10-23T13:13:44.277650Z, STALE after 2026-10-23T13:23:44.277650Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-23T12:26:15.164834Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.54s
+model board generated 2026-10-23T12:26:15.164834Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.07s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -66,11 +66,11 @@ model board generated 2026-10-23T12:26:15.164834Z · simulations this update: 0 
 | 2026-10-25T12:00:00Z | Rayo Vallecano vs Elche (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-25T12:00:00Z | Valencia vs Villarreal (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (167; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (168; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| New York Red Bulls vs Inter Miami | Total goals over 3.5 | no | 0.4200 | 0.645 [0.490, 0.789] | +0.207 | +0.111 | 0.53 | - | * | RESEARCH_CANDIDATE |
+| New York Red Bulls vs Inter Miami | Total goals over 3.5 | no | 0.4300 | 0.645 [0.490, 0.789] | +0.197 | +0.101 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | away team total over 1.5 | no | 0.4900 | 0.683 [0.557, 0.803] | +0.175 | +0.097 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Inter Miami | away team total over 1.5 | no | 0.3200 | 0.522 [0.367, 0.669] | +0.187 | +0.096 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Inter Miami | away team total over 2.5 | no | 0.5900 | 0.770 [0.636, 0.883] | +0.163 | +0.094 | 0.68 | - |  | RESEARCH_CANDIDATE |
@@ -114,9 +114,9 @@ model board generated 2026-10-23T12:26:15.164834Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2442
-action_NO_QUOTE: 585
-action_RESEARCH_CANDIDATE: 167
+action_NO_EDGE: 2433
+action_NO_QUOTE: 593
+action_RESEARCH_CANDIDATE: 168
 contract_sides: 3194
 fixtures: 53
 fixtures_model_invalidated: 0
