@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261023T214255Z-eabd4d` · generated 2026-10-23T21:42:55.558291Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261023T215808Z-ddf174` · generated 2026-10-23T21:58:08.576799Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-23T21:40:00.066429Z (CURRENT at publish; CURRENT until 2026-10-23T22:00:00.066429Z, STALE after 2026-10-23T22:10:00.066429Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-23T21:55:02.252860Z (CURRENT at publish; CURRENT until 2026-10-23T22:15:02.252860Z, STALE after 2026-10-23T22:25:02.252860Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-23T20:15:25.037056Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.90s
+model board generated 2026-10-23T21:58:06.661336Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 1.69s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-23T20:15:25.037056Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-23T23:00:00Z | Cruzeiro vs Remo (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 21 | 3 |
+| 2026-10-23T23:00:00Z | Cruzeiro vs Remo (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 11 | 3 |
 | 2026-10-24T01:00:00Z | Necaxa vs FC Juárez (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-24T03:00:00Z | Atlante vs Atlético San Luis (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-24T11:30:00Z | Aston Villa vs Manchester City (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -30,14 +30,14 @@ model board generated 2026-10-23T20:15:25.037056Z · simulations this update: 0 
 | 2026-10-24T16:30:00Z | Chelsea vs Tottenham Hotspur (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-24T16:30:00Z | Borussia Dortmund vs Eintracht Frankfurt (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-24T17:30:00Z | CF Montréal vs Nashville SC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-24T17:45:00Z | Banfield vs Lanús (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-24T17:45:00Z | Banfield vs Lanús (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-24T18:45:00Z | Lens vs Paris FC (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-24T18:45:00Z | Lazio vs Parma (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-24T19:30:00Z | Internacional vs Botafogo (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-24T19:30:00Z | Mirassol vs São Paulo (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-24T19:30:00Z | Vitória vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-24T19:30:00Z | Internacional vs Botafogo (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-24T19:30:00Z | Mirassol vs São Paulo (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-24T19:30:00Z | Vitória vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-24T19:30:00Z | Columbus Crew vs Toronto FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-24T20:00:00Z | Talleres vs Defensa y Justicia (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-24T20:00:00Z | Talleres vs Defensa y Justicia (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-24T21:30:00Z | Palmeiras vs Red Bull Bragantino (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-24T21:30:00Z | Vasco da Gama vs Corinthians (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-24T21:30:00Z | New York Red Bulls vs Inter Miami (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -84,7 +84,7 @@ model board generated 2026-10-23T20:15:25.037056Z · simulations this update: 0 
 | 2026-10-25T17:00:00Z | Lecce vs Juventus (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-25T19:45:00Z | Udinese vs AC Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (170; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (171; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -132,10 +132,10 @@ model board generated 2026-10-23T20:15:25.037056Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2566
-action_NO_QUOTE: 686
-action_RESEARCH_CANDIDATE: 170
-contract_sides: 3422
+action_NO_EDGE: 2559
+action_NO_QUOTE: 672
+action_RESEARCH_CANDIDATE: 171
+contract_sides: 3402
 fixtures: 71
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
