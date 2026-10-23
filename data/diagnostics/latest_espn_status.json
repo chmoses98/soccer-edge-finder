@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-23T13:38:11.277807+00:00",
+  "as_of": "2026-10-23T18:29:50.984549+00:00",
   "events": 714,
   "events_skipped_unmapped": 422,
   "fixtures_mapped": 292,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=86"
+      "weather_stopped:consecutive_failures:skipped=100"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 108,
+    "captured": 140,
     "events": 150,
     "failures": [],
-    "published_post": 1,
-    "published_pre_kickoff": 0,
-    "unchanged": 42,
-    "unpublished": 149
+    "published_post": 15,
+    "published_pre_kickoff": 5,
+    "unchanged": 10,
+    "unpublished": 130
   },
   "map_proposals": {
     "bel.1": {
@@ -356,7 +356,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 0,
+  "results_appended": 2,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -524,17 +524,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 14,
-    "events": 103,
+    "captured": 5,
+    "events": 109,
     "failures": [
-      "401892153: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-37.8140&longitude=144.9633&hourly=",
-      "401892152: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-41.2866&longitude=174.7756&hourly=",
-      "401892151: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-33.8678&longitude=151.2073&hourly="
+      "401841638: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=La%20Plata&count=5&language=en&",
+      "401841637: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Mendoza&count=5&language=en&for",
+      "401841643: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Buenos%20Aires&count=5&language"
     ],
     "forecast_miss": 0,
-    "geocode_miss": 0,
+    "geocode_miss": 1,
     "no_venue": 0,
-    "skipped": 86,
+    "skipped": 100,
     "stopped": "consecutive_failures"
   }
 }
