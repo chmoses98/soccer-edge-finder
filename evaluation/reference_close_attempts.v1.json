@@ -1,10 +1,10 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 138,
-  "PINNACLE_VALID_CLOSE": 204,
-  "MISSED_DISPATCHER_CLOSE": 38,
   "NO_SPORT_KEY": 19,
-  "PINNACLE_QUOTED_NOTHING": 15
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 138,
+  "PINNACLE_VALID_CLOSE": 206,
+  "PINNACLE_QUOTED_NOTHING": 15,
+  "MISSED_DISPATCHER_CLOSE": 38
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.sarmiento": {
@@ -1572,6 +1572,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261017T024503Z"
   },
+  "fx:mex.liga_mx:2026:mex.atlante:mex.san_luis": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261024T024502Z"
+  },
   "fx:mex.liga_mx:2026:mex.atlas:mex.america": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
@@ -1616,6 +1621,11 @@
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
    "batch_id": null
+  },
+  "fx:mex.liga_mx:2026:mex.necaxa:mex.juarez": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261024T004500Z"
   },
   "fx:mex.liga_mx:2026:mex.pachuca:mex.cruz_azul": {
    "state": "PINNACLE_VALID_CLOSE",
