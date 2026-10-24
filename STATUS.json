@@ -1,40 +1,54 @@
 {
-  "as_of": "2026-10-24T16:46:12.340884+00:00",
-  "events": 4,
+  "as_of": "2026-10-24T18:43:08.238647+00:00",
+  "events": 34,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 4,
+  "fixtures_mapped": 34,
   "health": {
-    "reasons": [],
-    "state": "HEALTHY"
+    "reasons": [
+      "weather_failures:5",
+      "weather_stopped:consecutive_failures:skipped=19"
+    ],
+    "state": "DEGRADED"
   },
   "leagues": [
-    "arg.1"
+    "arg.1",
+    "bra.1",
+    "esp.1",
+    "fra.1",
+    "ita.1",
+    "usa.1"
   ],
   "lineups": {
-    "captured": 0,
-    "events": 4,
+    "captured": 14,
+    "events": 30,
     "failures": [],
-    "published_post": 0,
-    "published_pre_kickoff": 0,
-    "unchanged": 4,
-    "unpublished": 4
+    "published_post": 4,
+    "published_pre_kickoff": 6,
+    "unchanged": 16,
+    "unpublished": 20
   },
   "map_proposals": {},
   "map_version": "4",
-  "results_appended": 0,
+  "results_appended": 6,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
-  "scoreboard_queries": 1,
+  "scoreboard_queries": 6,
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 4,
-    "events": 4,
-    "failures": [],
+    "captured": 6,
+    "events": 30,
+    "failures": [
+      "401841641: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Buenos%20Aires&count=5&language",
+      "401841632: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Buenos%20Aires&count=5&language",
+      "401841281: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-22.9064&longitude=-43.1822&hourly=",
+      "401841278: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Chapec\u00f3&count=5&language=en&for",
+      "401841282: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Santos&count=5&language=en&form"
+    ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 0,
-    "stopped": null
+    "skipped": 19,
+    "stopped": "consecutive_failures"
   }
 }
