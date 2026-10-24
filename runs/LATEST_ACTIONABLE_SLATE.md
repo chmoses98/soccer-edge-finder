@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261024T135304Z-6f186f` · generated 2026-10-24T13:53:04.765570Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261024T135856Z-fd1c58` · generated 2026-10-24T13:58:56.781790Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-24T13:50:05.380668Z (CURRENT at publish; CURRENT until 2026-10-24T14:10:05.380668Z, STALE after 2026-10-24T14:20:05.380668Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-24T13:55:57.940134Z (CURRENT at publish; CURRENT until 2026-10-24T14:15:57.940134Z, STALE after 2026-10-24T14:25:57.940134Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-24T12:58:05.644124Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.14s
+model board generated 2026-10-24T12:58:05.644124Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.91s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -78,7 +78,7 @@ model board generated 2026-10-24T12:58:05.644124Z · simulations this update: 0 
 | 2026-10-26T01:05:00Z | Club América vs Pachuca (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-26T03:10:00Z | Tijuana vs Santos Laguna (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (211; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (209; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -91,12 +91,12 @@ model board generated 2026-10-24T12:58:05.644124Z · simulations this update: 0 
 | SC Freiburg vs Bayern Munich | Result: away | no | 0.3000 | 0.541 [0.348, 0.729] | +0.227 | +0.105 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | CF Montréal vs Nashville SC | Total goals over 2.5 | no | 0.3900 | 0.596 [0.444, 0.732] | +0.190 | +0.101 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | Total goals over 3.5 | no | 0.5500 | 0.742 [0.602, 0.857] | +0.175 | +0.094 | 0.64 | - | * | RESEARCH_CANDIDATE |
-| CF Montréal vs Nashville SC | away team total over 1.5 | no | 0.3600 | 0.561 [0.406, 0.702] | +0.185 | +0.094 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | away team total over 1.5 | no | 0.5300 | 0.715 [0.592, 0.829] | +0.168 | +0.093 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | CF Montréal vs Nashville SC | Total goals over 3.5 | no | 0.6200 | 0.792 [0.668, 0.892] | +0.156 | +0.090 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | btts | no | 0.3200 | 0.498 [0.379, 0.610] | +0.163 | +0.089 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Inter Miami | away team total over 1.5 | no | 0.3300 | 0.522 [0.367, 0.669] | +0.177 | +0.086 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.4400 | 0.629 [0.488, 0.758] | +0.172 | +0.084 | 0.52 | - | * | RESEARCH_CANDIDATE |
+| CF Montréal vs Nashville SC | away team total over 1.5 | no | 0.3700 | 0.561 [0.406, 0.702] | +0.175 | +0.083 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | away team total over 1.5 | no | 0.6800 | 0.833 [0.738, 0.912] | +0.138 | +0.083 | 0.76 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | Total goals over 2.5 | no | 0.3400 | 0.536 [0.380, 0.676] | +0.180 | +0.082 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.6600 | 0.817 [0.709, 0.907] | +0.141 | +0.079 | 0.74 | - |  | RESEARCH_CANDIDATE |
@@ -114,7 +114,6 @@ model board generated 2026-10-24T12:58:05.644124Z · simulations this update: 0 
 | Houston Dynamo vs Minnesota United | away team total over 1.5 | no | 0.6100 | 0.762 [0.649, 0.859] | +0.135 | +0.067 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | SC Freiburg vs Bayern Munich | Result: home | yes | 0.1400 | 0.330 [0.167, 0.511] | +0.182 | +0.066 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | away team total over 0.5 | no | 0.1800 | 0.328 [0.223, 0.442] | +0.138 | +0.066 | 0.24 | - |  | RESEARCH_CANDIDATE |
-| Houston Dynamo vs Minnesota United | away team total over 0.5 | no | 0.2500 | 0.405 [0.290, 0.518] | +0.142 | +0.065 | 0.31 | - |  | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | away team total over 2.5 | no | 0.7900 | 0.903 [0.834, 0.960] | +0.101 | +0.064 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | Hull City vs Brentford | Result: home | yes | 0.2000 | 0.420 [0.214, 0.646] | +0.208 | +0.063 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | CF Montréal vs Nashville SC | Total goals over 1.5 | no | 0.1800 | 0.335 [0.210, 0.459] | +0.144 | +0.063 | 0.24 | - |  | RESEARCH_CANDIDATE |
@@ -122,13 +121,14 @@ model board generated 2026-10-24T12:58:05.644124Z · simulations this update: 0 
 | CF Montréal vs Nashville SC | Total goals over 4.5 | no | 0.8000 | 0.907 [0.830, 0.964] | +0.096 | +0.060 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 3.5 | no | 0.5500 | 0.716 [0.544, 0.855] | +0.149 | +0.060 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | Total goals over 3.5 | no | 0.5400 | 0.705 [0.558, 0.836] | +0.148 | +0.059 | 0.59 | - | * | RESEARCH_CANDIDATE |
+| Los Angeles FC vs LA Galaxy | Total goals over 2.5 | no | 0.3300 | 0.509 [0.327, 0.673] | +0.164 | +0.058 | 0.38 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2699
+action_NO_EDGE: 2701
 action_NO_QUOTE: 632
-action_RESEARCH_CANDIDATE: 211
+action_RESEARCH_CANDIDATE: 209
 contract_sides: 3542
 fixtures: 65
 fixtures_model_invalidated: 0
