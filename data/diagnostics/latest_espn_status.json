@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-23T23:15:07.421008+00:00",
-  "events": 714,
-  "events_skipped_unmapped": 422,
-  "fixtures_mapped": 292,
+  "as_of": "2026-10-24T04:48:22.936170+00:00",
+  "events": 814,
+  "events_skipped_unmapped": 469,
+  "fixtures_mapped": 345,
   "health": {
     "reasons": [
-      "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=102"
+      "weather_failures:4",
+      "weather_stopped:consecutive_failures:skipped=88"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 26,
+    "captured": 27,
     "events": 150,
     "failures": [],
-    "published_post": 6,
+    "published_post": 2,
     "published_pre_kickoff": 1,
-    "unchanged": 124,
-    "unpublished": 143
+    "unchanged": 123,
+    "unpublished": 147
   },
   "map_proposals": {
     "bel.1": {
@@ -318,7 +318,6 @@
       "ambiguous": {},
       "proposed": {},
       "unresolved": {
-        "21922": "Sabah FK",
         "510": "Viking FK"
       }
     },
@@ -356,7 +355,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 12,
+  "results_appended": 7,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -448,7 +447,6 @@
     "21717": "Atl\u00e9tico Paso",
     "21722": "Manresa",
     "21723": "Utebo",
-    "21922": "Sabah FK",
     "21943": "Egnatia",
     "22043": "Mijas Las Lagunas",
     "22080": "Arosa",
@@ -524,17 +522,18 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 6,
-    "events": 112,
+    "captured": 11,
+    "events": 104,
     "failures": [
-      "401841637: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-32.8895&longitude=-68.8458&hourly=",
-      "401841643: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-34.6131&longitude=-58.3772&hourly=",
-      "401841641: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-34.6131&longitude=-58.3772&hourly="
+      "401841636: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Avellaneda&count=5&language=en&",
+      "401841640: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-34.6131&longitude=-58.3772&hourly=",
+      "401841639: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Santiago%20del%20Estero&count=5",
+      "401841630: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-32.9468&longitude=-60.6393&hourly="
     ],
     "forecast_miss": 0,
     "geocode_miss": 1,
     "no_venue": 0,
-    "skipped": 102,
+    "skipped": 88,
     "stopped": "consecutive_failures"
   }
 }
