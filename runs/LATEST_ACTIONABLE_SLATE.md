@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261024T224621Z-f82c6e` · generated 2026-10-24T22:46:21.356240Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261024T225804Z-4a090c` · generated 2026-10-24T22:58:04.223351Z · trigger `kickoff_chain:T-120/T-60/T-5` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-24T22:43:22.796891Z (CURRENT at publish; CURRENT until 2026-10-24T23:03:22.796891Z, STALE after 2026-10-24T23:13:22.796891Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-24T22:55:00.039195Z (CURRENT at publish; CURRENT until 2026-10-24T23:15:00.039195Z, STALE after 2026-10-24T23:25:00.039195Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-24T22:31:19.670142Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 1.53s
+model board generated 2026-10-24T22:58:02.264733Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 1.41s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -16,7 +16,7 @@ model board generated 2026-10-24T22:31:19.670142Z · simulations this update: 0 
 | 2026-10-24T23:30:00Z | Atlanta United vs Chicago Fire (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-24T23:30:00Z | Orlando City vs New York City FC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-24T23:30:00Z | Philadelphia Union vs New England Revolution (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-25T00:00:00Z | Santos vs Bahia (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-25T00:00:00Z | Santos vs Bahia (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-25T00:30:00Z | FC Dallas vs San Jose Earthquakes (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-25T00:30:00Z | Houston Dynamo vs Minnesota United (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-25T00:30:00Z | Sporting Kansas City vs Austin FC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -63,7 +63,7 @@ model board generated 2026-10-24T22:31:19.670142Z · simulations this update: 0 
 | 2026-10-26T01:05:00Z | Club América vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-26T03:10:00Z | Tijuana vs Santos Laguna (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 
-## Candidates on CURRENT prices (174; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (175; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -94,6 +94,7 @@ model board generated 2026-10-24T22:31:19.670142Z · simulations this update: 0 
 | Colorado Rapids vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.6800 | 0.817 [0.709, 0.908] | +0.122 | +0.060 | 0.74 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Vancouver Whitecaps | btts | no | 0.4200 | 0.570 [0.458, 0.679] | +0.133 | +0.059 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | Total goals over 3.5 | no | 0.5400 | 0.705 [0.557, 0.836] | +0.148 | +0.059 | 0.59 | - | * | RESEARCH_CANDIDATE |
+| Atlanta United vs Chicago Fire | Total goals over 1.5 | no | 0.1400 | 0.284 [0.167, 0.401] | +0.136 | +0.059 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 2.5 | no | 0.3300 | 0.509 [0.327, 0.673] | +0.164 | +0.058 | 0.38 | - |  | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | Total goals over 2.5 | no | 0.3200 | 0.495 [0.339, 0.646] | +0.159 | +0.058 | 0.37 | - |  | RESEARCH_CANDIDATE |
 | SC Freiburg vs Bayern Munich | Result: home | yes | 0.1500 | 0.330 [0.167, 0.511] | +0.171 | +0.056 | 0.2 | - |  | RESEARCH_CANDIDATE |
@@ -102,7 +103,6 @@ model board generated 2026-10-24T22:31:19.670142Z · simulations this update: 0 
 | León vs Toluca | Result: away | no | 0.4800 | 0.640 [0.487, 0.787] | +0.142 | +0.049 | 0.52 | 0.477 | * | RESEARCH_CANDIDATE |
 | León vs Toluca | away wins by more than 1.5 | no | 0.7000 | 0.825 [0.711, 0.923] | +0.111 | +0.049 | 0.75 | - | * | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Vancouver Whitecaps | away team total over 1.5 | no | 0.5400 | 0.686 [0.550, 0.798] | +0.128 | +0.049 | 0.58 | - | * | RESEARCH_CANDIDATE |
-| Atlanta United vs Chicago Fire | Total goals over 1.5 | no | 0.1500 | 0.284 [0.167, 0.401] | +0.125 | +0.048 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs New York City FC | away team total over 0.5 | no | 0.2000 | 0.334 [0.222, 0.450] | +0.123 | +0.048 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | Total goals over 4.5 | no | 0.7300 | 0.850 [0.743, 0.936] | +0.106 | +0.048 | 0.77 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 4.5 | no | 0.7400 | 0.856 [0.732, 0.946] | +0.103 | +0.047 | 0.78 | - |  | RESEARCH_CANDIDATE |
@@ -111,10 +111,10 @@ model board generated 2026-10-24T22:31:19.670142Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2259
-action_NO_QUOTE: 3459
-action_RESEARCH_CANDIDATE: 174
-contract_sides: 5892
+action_NO_EDGE: 2257
+action_NO_QUOTE: 3430
+action_RESEARCH_CANDIDATE: 175
+contract_sides: 5862
 fixtures: 50
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
