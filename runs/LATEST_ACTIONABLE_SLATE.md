@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261024T214655Z-10a4b2` · generated 2026-10-24T21:46:55.514489Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
+slate `slate-20261024T214932Z-e5cdcb` · generated 2026-10-24T21:49:32.965666Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-24T21:43:51.289579Z (CURRENT at publish; CURRENT until 2026-10-24T22:03:51.289579Z, STALE after 2026-10-24T22:13:51.289579Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-24T21:46:28.213665Z (CURRENT at publish; CURRENT until 2026-10-24T22:06:28.213665Z, STALE after 2026-10-24T22:16:28.213665Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-24T21:31:57.064880Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.39s
+model board generated 2026-10-24T21:31:57.064880Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.25s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,21 +12,21 @@ model board generated 2026-10-24T21:31:57.064880Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-24T22:15:00Z | San Lorenzo vs Newell's Old Boys (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
-| 2026-10-24T22:30:00Z | Chapecoense vs Fluminense (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | AGING entry | CURRENT | 14 | 0 |
+| 2026-10-24T22:15:00Z | San Lorenzo vs Newell's Old Boys (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | AGING entry | CURRENT | 14 | 0 |
+| 2026-10-24T22:30:00Z | Chapecoense vs Fluminense (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
 | 2026-10-24T23:00:00Z | León vs Toluca (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-24T23:30:00Z | Atlanta United vs Chicago Fire (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-24T23:30:00Z | Orlando City vs New York City FC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-24T23:30:00Z | Philadelphia Union vs New England Revolution (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-25T00:00:00Z | Santos vs Bahia (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-25T00:30:00Z | FC Dallas vs San Jose Earthquakes (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-25T00:30:00Z | Houston Dynamo vs Minnesota United (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-25T00:30:00Z | Sporting Kansas City vs Austin FC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-24T23:30:00Z | Atlanta United vs Chicago Fire (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-24T23:30:00Z | Orlando City vs New York City FC (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-24T23:30:00Z | Philadelphia Union vs New England Revolution (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-25T00:00:00Z | Santos vs Bahia (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-25T00:30:00Z | FC Dallas vs San Jose Earthquakes (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-25T00:30:00Z | Houston Dynamo vs Minnesota United (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-25T00:30:00Z | Sporting Kansas City vs Austin FC (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-25T01:00:00Z | Monterrey vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-25T01:30:00Z | Colorado Rapids vs Vancouver Whitecaps (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-25T01:30:00Z | Real Salt Lake vs St. Louis City SC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 32 | 0 |
-| 2026-10-25T02:30:00Z | Portland Timbers vs Charlotte FC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-25T02:30:00Z | San Diego FC vs Seattle Sounders (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-25T01:30:00Z | Colorado Rapids vs Vancouver Whitecaps (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-25T01:30:00Z | Real Salt Lake vs St. Louis City SC (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 32 | 0 |
+| 2026-10-25T02:30:00Z | Portland Timbers vs Charlotte FC (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-25T02:30:00Z | San Diego FC vs Seattle Sounders (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-25T03:10:00Z | Pumas UNAM vs Tigres UANL (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-25T11:30:00Z | Inter Milan vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-25T12:00:00Z | Athletic Club vs Getafe (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 65 | 0 |
@@ -53,10 +53,10 @@ model board generated 2026-10-24T21:31:57.064880Z · simulations this update: 0 
 | 2026-10-25T16:30:00Z | Sunderland vs Leeds United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 74 | 0 |
 | 2026-10-25T16:30:00Z | SC Freiburg vs Bayern Munich (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-25T17:00:00Z | Lecce vs Juventus (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
-| 2026-10-25T17:45:00Z | Aldosivi vs Belgrano (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-25T17:45:00Z | Aldosivi vs Belgrano (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-25T19:45:00Z | Paris Saint-Germain vs Lyon (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-25T19:45:00Z | Udinese vs AC Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-25T20:00:00Z | Independiente vs Boca Juniors (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-25T20:00:00Z | Independiente vs Boca Juniors (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-25T22:15:00Z | River Plate vs Racing Club (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-25T23:00:00Z | Atlas vs Puebla (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-26T00:30:00Z | Central Córdoba vs Vélez Sarsfield (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -113,12 +113,12 @@ model board generated 2026-10-24T21:31:57.064880Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2289
-action_NO_QUOTE: 3492
+action_NO_EDGE: 2291
+action_NO_QUOTE: 3490
 action_RESEARCH_CANDIDATE: 167
 contract_sides: 5948
 fixtures: 52
-fixtures_model_invalidated: 1
+fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
