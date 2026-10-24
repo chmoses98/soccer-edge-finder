@@ -1,25 +1,23 @@
 {
-  "as_of": "2026-10-24T19:18:05.787262+00:00",
+  "as_of": "2026-10-24T19:25:13.296343+00:00",
   "events": 21,
   "events_skipped_unmapped": 0,
   "fixtures_mapped": 21,
   "health": {
-    "reasons": [
-      "weather_failures:4"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
     "bra.1",
     "usa.1"
   ],
   "lineups": {
-    "captured": 3,
+    "captured": 0,
     "events": 21,
     "failures": [],
     "published_post": 1,
     "published_pre_kickoff": 4,
-    "unchanged": 18,
+    "unchanged": 21,
     "unpublished": 16
   },
   "map_proposals": {},
@@ -31,14 +29,9 @@
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 16,
+    "captured": 20,
     "events": 21,
-    "failures": [
-      "761891: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Harrison&count=5&language=en&fo",
-      "761898: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Sandy&count=5&language=en&forma",
-      "761902: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Portland&count=5&language=en&fo",
-      "761901: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=San%20Diego&count=5&language=en"
-    ],
+    "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 1,
     "no_venue": 0,
