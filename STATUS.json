@@ -1,41 +1,48 @@
 {
-  "as_of": "2026-10-24T18:58:05.168590+00:00",
-  "events": 8,
+  "as_of": "2026-10-24T19:03:51.185356+00:00",
+  "events": 21,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 8,
+  "fixtures_mapped": 21,
   "health": {
-    "reasons": [],
-    "state": "HEALTHY"
+    "reasons": [
+      "weather_failures:3",
+      "weather_stopped:consecutive_failures:skipped=9"
+    ],
+    "state": "DEGRADED"
   },
   "leagues": [
-    "arg.1",
-    "esp.1"
+    "bra.1",
+    "usa.1"
   ],
   "lineups": {
-    "captured": 1,
-    "events": 6,
+    "captured": 3,
+    "events": 21,
     "failures": [],
-    "published_post": 2,
-    "published_pre_kickoff": 1,
-    "unchanged": 5,
-    "unpublished": 3
+    "published_post": 1,
+    "published_pre_kickoff": 4,
+    "unchanged": 18,
+    "unpublished": 16
   },
   "map_proposals": {},
   "map_version": "4",
-  "results_appended": 3,
+  "results_appended": 0,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 2,
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 6,
-    "events": 6,
-    "failures": [],
+    "captured": 9,
+    "events": 21,
+    "failures": [
+      "761891: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Harrison&count=5&language=en&fo",
+      "761893: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Atlanta&count=5&language=en&for",
+      "761895: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Washington&count=5&language=en&"
+    ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 0,
-    "stopped": null
+    "skipped": 9,
+    "stopped": "consecutive_failures"
   }
 }
