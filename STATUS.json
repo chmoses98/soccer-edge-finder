@@ -1,43 +1,36 @@
 {
-  "as_of": "2026-10-24T12:38:26.242098+00:00",
-  "events": 10,
+  "as_of": "2026-10-24T12:47:59.242186+00:00",
+  "events": 4,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 10,
+  "fixtures_mapped": 4,
   "health": {
-    "reasons": [
-      "weather_failures:3"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
-    "ger.1",
     "ita.1"
   ],
   "lineups": {
-    "captured": 4,
-    "events": 10,
+    "captured": 0,
+    "events": 4,
     "failures": [],
     "published_post": 0,
-    "published_pre_kickoff": 4,
-    "unchanged": 6,
-    "unpublished": 6
+    "published_pre_kickoff": 2,
+    "unchanged": 4,
+    "unpublished": 2
   },
   "map_proposals": {},
   "map_version": "4",
   "results_appended": 0,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
-  "scoreboard_queries": 2,
+  "scoreboard_queries": 1,
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 7,
-    "events": 10,
-    "failures": [
-      "401884758: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Augsburg&count=5&language=en&fo",
-      "401874948: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Napoli&count=5&language=en&form",
-      "401874955: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Roma&count=5&language=en&format"
-    ],
+    "captured": 4,
+    "events": 4,
+    "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
