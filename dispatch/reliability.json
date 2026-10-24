@@ -4,7 +4,7 @@
   "github_backup_minutes": 60
  },
  "definition": "capture_success_rate = delivered / eligible horizons whose window closed in the span (NOT_APPLICABLE excluded); close_success_rate = fixtures with a T-15 or T-5 delivery / fixtures whose close windows closed in the span",
- "generated_at": "2026-10-24T12:39:03Z",
+ "generated_at": "2026-10-24T12:42:14Z",
  "last_24h": {
   "capture_runs": 2,
   "capture_runs_failed": 0,
@@ -20,11 +20,11 @@
   "github_backup_actual": 6,
   "github_backup_expected": 24,
   "github_backup_success": 0.25,
-  "heartbeats_actual": 22,
+  "heartbeats_actual": 23,
   "heartbeats_by_source": {
    "chain": 3,
    "github-schedule-backup": 6,
-   "workflow-run": 13
+   "workflow-run": 14
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -40,13 +40,13 @@
   "span_hours": 24.0
  },
  "last_7d": {
-  "capture_runs": 28,
+  "capture_runs": 27,
   "capture_runs_failed": 2,
   "capture_success_rate": 0.9694444444444444,
   "close_fixtures_delivered": 137,
   "close_fixtures_eligible": 140,
   "close_success_rate": 0.9785714285714285,
-  "credits_spent": 354,
+  "credits_spent": 288,
   "external_heartbeats_actual": 0,
   "external_heartbeats_expected": null,
   "external_trigger_success": null,
@@ -54,11 +54,11 @@
   "github_backup_actual": 39,
   "github_backup_expected": 168,
   "github_backup_success": 0.23214285714285715,
-  "heartbeats_actual": 159,
+  "heartbeats_actual": 160,
   "heartbeats_by_source": {
    "chain": 28,
    "github-schedule-backup": 39,
-   "workflow-run": 92
+   "workflow-run": 93
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -70,14 +70,14 @@
   "horizons_delivered": 698,
   "horizons_eligible": 720,
   "horizons_missed": 22,
-  "paid_calls": 118,
+  "paid_calls": 96,
   "span_hours": 168.0
  },
  "last_wake": {
   "no_action_reason": "CAPTURE_IN_PROGRESS",
-  "started_at": "2026-10-24T12:39:03Z",
+  "started_at": "2026-10-24T12:42:14Z",
   "status": "OK",
-  "trigger_source": "github-schedule-backup"
+  "trigger_source": "workflow-run"
  },
  "schema": "dispatch_reliability_v1"
 }
