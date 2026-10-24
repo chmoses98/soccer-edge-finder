@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261024T140423Z-f198cf` · generated 2026-10-24T14:04:23.671250Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261024T141303Z-83b783` · generated 2026-10-24T14:13:03.856671Z · trigger `kickoff_chain:T-60/T-5` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-24T14:01:26.570288Z (CURRENT at publish; CURRENT until 2026-10-24T14:21:26.570288Z, STALE after 2026-10-24T14:31:26.570288Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-24T14:10:02.747150Z (CURRENT at publish; CURRENT until 2026-10-24T14:30:02.747150Z, STALE after 2026-10-24T14:40:02.747150Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-24T12:58:05.644124Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.11s
+model board generated 2026-10-24T14:13:03.189703Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.89s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -76,13 +76,10 @@ model board generated 2026-10-24T12:58:05.644124Z · simulations this update: 0 
 | 2026-10-26T01:05:00Z | Club América vs Pachuca (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-26T03:10:00Z | Tijuana vs Santos Laguna (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (205; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (204; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Rayo Vallecano vs Elche | Result: away | no | 0.0100 | 0.754 [0.619, 0.876] | +0.743 | +0.655 | 0.64 | - | * | RESEARCH_CANDIDATE |
-| Rayo Vallecano vs Elche | Result: home | yes | 0.0100 | 0.530 [0.362, 0.701] | +0.519 | +0.406 | 0.4 | - |  | RESEARCH_CANDIDATE |
-| Rayo Vallecano vs Elche | Result: draw | yes | 0.0100 | 0.224 [0.167, 0.278] | +0.213 | +0.180 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | Hull City vs Brentford | Result: away | no | 0.4300 | 0.694 [0.499, 0.865] | +0.247 | +0.129 | 0.55 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | away team total over 1.5 | no | 0.4800 | 0.683 [0.557, 0.803] | +0.185 | +0.107 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | SC Freiburg vs Bayern Munich | Result: away | no | 0.3000 | 0.541 [0.348, 0.729] | +0.227 | +0.105 | 0.4 | - | * | RESEARCH_CANDIDATE |
@@ -120,13 +117,16 @@ model board generated 2026-10-24T12:58:05.644124Z · simulations this update: 0 
 | Colorado Rapids vs Vancouver Whitecaps | Total goals over 1.5 | no | 0.2100 | 0.364 [0.241, 0.490] | +0.142 | +0.057 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | away team total over 1.5 | no | 0.7100 | 0.833 [0.738, 0.912] | +0.109 | +0.054 | 0.76 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Inter Miami | Total goals over 5.5 | no | 0.8000 | 0.905 [0.827, 0.967] | +0.094 | +0.053 | 0.85 | - |  | RESEARCH_CANDIDATE |
+| CF Montréal vs Nashville SC | btts | no | 0.4400 | 0.582 [0.465, 0.693] | +0.125 | +0.052 | 0.49 | - | * | RESEARCH_CANDIDATE |
+| San Diego FC vs Seattle Sounders | away team total over 0.5 | no | 0.2200 | 0.359 [0.247, 0.475] | +0.127 | +0.051 | 0.26 | - |  | RESEARCH_CANDIDATE |
+| Colorado Rapids vs Vancouver Whitecaps | Total goals over 4.5 | no | 0.8300 | 0.922 [0.860, 0.971] | +0.082 | +0.050 | 0.88 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2688
-action_NO_QUOTE: 637
-action_RESEARCH_CANDIDATE: 205
+action_NO_EDGE: 2687
+action_NO_QUOTE: 639
+action_RESEARCH_CANDIDATE: 204
 contract_sides: 3530
 fixtures: 63
 fixtures_model_invalidated: 0
