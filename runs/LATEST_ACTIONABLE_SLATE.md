@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261024T085500Z-ec9ed9` · generated 2026-10-24T08:55:00.724016Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261024T090956Z-e1285e` · generated 2026-10-24T09:09:56.578214Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-24T08:51:58.980072Z (CURRENT at publish; CURRENT until 2026-10-24T09:11:58.980072Z, STALE after 2026-10-24T09:21:58.980072Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-24T09:07:01.224130Z (CURRENT at publish; CURRENT until 2026-10-24T09:27:01.224130Z, STALE after 2026-10-24T09:37:01.224130Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-24T06:39:22.188598Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.50s
+model board generated 2026-10-24T06:39:22.188598Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.22s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -110,12 +110,12 @@ model board generated 2026-10-24T06:39:22.188598Z · simulations this update: 0 
 | Colorado Rapids vs Vancouver Whitecaps | btts | no | 0.4000 | 0.571 [0.459, 0.679] | +0.154 | +0.080 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | away team total over 2.5 | no | 0.7500 | 0.885 [0.808, 0.950] | +0.122 | +0.079 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Vancouver Whitecaps | away team total over 1.5 | no | 0.5100 | 0.686 [0.550, 0.798] | +0.158 | +0.079 | 0.58 | - | * | RESEARCH_CANDIDATE |
-| Los Angeles FC vs LA Galaxy | away team total over 0.5 | no | 0.3200 | 0.495 [0.371, 0.611] | +0.159 | +0.078 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | btts | no | 0.3200 | 0.485 [0.371, 0.600] | +0.150 | +0.077 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | Total goals over 4.5 | no | 0.7400 | 0.875 [0.780, 0.947] | +0.122 | +0.072 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | away team total over 0.5 | no | 0.2000 | 0.359 [0.247, 0.475] | +0.148 | +0.072 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | CF Montréal vs Nashville SC | away team total over 2.5 | no | 0.6500 | 0.802 [0.677, 0.902] | +0.136 | +0.071 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Inter Miami | Total goals over 4.5 | no | 0.6500 | 0.805 [0.683, 0.910] | +0.139 | +0.069 | 0.72 | - |  | RESEARCH_CANDIDATE |
+| Los Angeles FC vs LA Galaxy | away team total over 0.5 | no | 0.3300 | 0.495 [0.371, 0.611] | +0.149 | +0.068 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Inter Miami | Total goals over 2.5 | no | 0.2500 | 0.431 [0.282, 0.583] | +0.168 | +0.067 | 0.31 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Vancouver Whitecaps | Total goals over 1.5 | no | 0.2000 | 0.364 [0.241, 0.490] | +0.153 | +0.067 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | SC Freiburg vs Bayern Munich | Result: home | yes | 0.1400 | 0.330 [0.167, 0.511] | +0.182 | +0.066 | 0.2 | - |  | RESEARCH_CANDIDATE |
@@ -134,8 +134,8 @@ model board generated 2026-10-24T06:39:22.188598Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2712
-action_NO_QUOTE: 655
+action_NO_EDGE: 2711
+action_NO_QUOTE: 656
 action_RESEARCH_CANDIDATE: 223
 contract_sides: 3590
 fixtures: 73
