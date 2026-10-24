@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261024T113412Z-7bad57` · generated 2026-10-24T11:34:12.411803Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261024T114759Z-57cd37` · generated 2026-10-24T11:47:59.354359Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-24T11:31:14.713426Z (CURRENT at publish; CURRENT until 2026-10-24T11:51:14.713426Z, STALE after 2026-10-24T12:01:14.713426Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-24T11:45:01.445552Z (CURRENT at publish; CURRENT until 2026-10-24T12:05:01.445552Z, STALE after 2026-10-24T12:15:01.445552Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-24T10:30:43.846623Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.24s
+model board generated 2026-10-24T10:30:43.846623Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.54s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -34,16 +34,16 @@ model board generated 2026-10-24T10:30:43.846623Z · simulations this update: 0 
 | 2026-10-24T19:30:00Z | Vitória vs Athletico Paranaense (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-24T19:30:00Z | Columbus Crew vs Toronto FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-24T20:00:00Z | Talleres vs Defensa y Justicia (arg.primera) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-24T21:30:00Z | Palmeiras vs Red Bull Bragantino (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-24T21:30:00Z | Vasco da Gama vs Corinthians (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-24T21:30:00Z | Palmeiras vs Red Bull Bragantino (bra.serie_a) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-24T21:30:00Z | Vasco da Gama vs Corinthians (bra.serie_a) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-24T21:30:00Z | New York Red Bulls vs Inter Miami (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-24T22:15:00Z | San Lorenzo vs Newell's Old Boys (arg.primera) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-24T22:30:00Z | Chapecoense vs Fluminense (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-24T22:30:00Z | Chapecoense vs Fluminense (bra.serie_a) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-24T23:00:00Z | León vs Toluca (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-24T23:30:00Z | Atlanta United vs Chicago Fire (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-24T23:30:00Z | Orlando City vs New York City FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-24T23:30:00Z | Philadelphia Union vs New England Revolution (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-25T00:00:00Z | Santos vs Bahia (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-25T00:00:00Z | Santos vs Bahia (bra.serie_a) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-25T00:30:00Z | FC Dallas vs San Jose Earthquakes (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-25T00:30:00Z | Houston Dynamo vs Minnesota United (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-25T00:30:00Z | Sporting Kansas City vs Austin FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -85,7 +85,7 @@ model board generated 2026-10-24T10:30:43.846623Z · simulations this update: 0 
 | 2026-10-26T01:05:00Z | Club América vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-26T03:10:00Z | Tijuana vs Santos Laguna (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (219; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (218; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -133,9 +133,9 @@ model board generated 2026-10-24T10:30:43.846623Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2723
+action_NO_EDGE: 2724
 action_NO_QUOTE: 642
-action_RESEARCH_CANDIDATE: 219
+action_RESEARCH_CANDIDATE: 218
 contract_sides: 3584
 fixtures: 72
 fixtures_model_invalidated: 0
