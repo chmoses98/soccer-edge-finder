@@ -1825,3 +1825,263 @@ unmapped teams: 0 | proposals: {}
 unmapped teams: 0 | proposals: {}
 [slate] {"slate_id": "slate-20261024T154025Z-98ccfb", "mode": "reprice_only", "fixtures": 62, "contract_sides": 3524, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 1.172, "price_changes_vs_previous": 258}
 [capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261024T154556Z",
+  "complete": true,
+  "discovered": 7525,
+  "written": 2503,
+  "path": "work/snapshots/2026-10-24/cap-20261024T154556Z.jsonl"
+}
+{
+  "reference_probabilities": 235,
+  "observed_at": "2026-10-24 12:38:22.783655+00:00",
+  "groups": 450,
+  "unmapped_fixture_groups": 215,
+  "incomplete_groups": 0,
+  "snapshots": 846,
+  "provider_notes": [
+    "194 rows, 104 skipped (unmapped division/team)",
+    "skipped_by_division={'B1': 9, 'D2': 9, 'E2': 12, 'E3': 12, 'EC': 12, 'F2': 9, 'G1': 7, 'I2': 10, 'N1': 2, 'SC1': 5, 'SC2': 5, 'SP2': 11, 'T1': 1}",
+    "unknown_teams={'N1:For Sittard': 1, 'N1:Nijmegen': 1, 'T1:Goztep': 1}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-24T15:45:58.881493Z", "batch_id": "kd-20261024T154302Z", "credits_charged": 3, "paid_calls": 1, "snapshots": 7, "no_sport_key": [], "eligible_fixtures": 1, "per_sport": {"soccer_italy_serie_a": {"fixtures": 1, "join": {"events": 2, "joined": 1, "ambiguous": 0, "unresolved_names": [], "unjoined_fixtures": []}, "status": "OK", "credits": 3, "snapshots": 7, "incomplete_markets": 0, "close_fixtures": 1, "entry_fixtures": 0}}, "remaining_after": 17542, "status": "OK"}
+{
+ "as_of": "2026-10-24T15:46:01.082733+00:00",
+ "leagues": [
+  "ita.1"
+ ],
+ "events": 4,
+ "fixtures_mapped": 4,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 1,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 4,
+  "captured": 0,
+  "unchanged": 4,
+  "published_pre_kickoff": 1,
+  "published_post": 2,
+  "unpublished": 1,
+  "failures": []
+ },
+ "results_appended": 2,
+ "weather": {
+  "events": 4,
+  "captured": 4,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261024T154602Z-59dcfd", "mode": "reprice_only", "fixtures": 62, "contract_sides": 3524, "simulations_run": 0, "odds_api_calls": 1, "reprice_runtime_s": 1.177, "price_changes_vs_previous": 467}
+[dispatch] holding 6.3 min (next window opens in 4.3 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261024T155754Z",
+  "complete": true,
+  "discovered": 7490,
+  "written": 2831,
+  "path": "work/snapshots/2026-10-24/cap-20261024T155754Z.jsonl"
+}
+{
+  "reference_probabilities": 235,
+  "observed_at": "2026-10-24 12:38:22.783655+00:00",
+  "groups": 450,
+  "unmapped_fixture_groups": 215,
+  "incomplete_groups": 0,
+  "snapshots": 846,
+  "provider_notes": [
+    "194 rows, 104 skipped (unmapped division/team)",
+    "skipped_by_division={'B1': 9, 'D2': 9, 'E2': 12, 'E3': 12, 'EC': 12, 'F2': 9, 'G1': 7, 'I2': 10, 'N1': 2, 'SC1': 5, 'SC2': 5, 'SP2': 11, 'T1': 1}",
+    "unknown_teams={'N1:For Sittard': 1, 'N1:Nijmegen': 1, 'T1:Goztep': 1}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-24T15:57:56.714746Z", "batch_id": "kd-20261024T155500Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-10-24T15:57:56.735286+00:00",
+ "leagues": [
+  "ita.1"
+ ],
+ "events": 4,
+ "fixtures_mapped": 4,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 1,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 4,
+  "captured": 1,
+  "unchanged": 3,
+  "published_pre_kickoff": 1,
+  "published_post": 2,
+  "unpublished": 1,
+  "failures": []
+ },
+ "results_appended": 2,
+ "weather": {
+  "events": 4,
+  "captured": 4,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261024T155757Z-444a14", "mode": "reprice_only", "fixtures": 62, "contract_sides": 3524, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 1.154, "price_changes_vs_previous": 362}
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261024T160338Z",
+  "complete": true,
+  "discovered": 7332,
+  "written": 2847,
+  "path": "work/snapshots/2026-10-24/cap-20261024T160338Z.jsonl"
+}
+{
+  "reference_probabilities": 235,
+  "observed_at": "2026-10-24 12:38:22.783655+00:00",
+  "groups": 450,
+  "unmapped_fixture_groups": 215,
+  "incomplete_groups": 0,
+  "snapshots": 846,
+  "provider_notes": [
+    "194 rows, 104 skipped (unmapped division/team)",
+    "skipped_by_division={'B1': 9, 'D2': 9, 'E2': 12, 'E3': 12, 'EC': 12, 'F2': 9, 'G1': 7, 'I2': 10, 'N1': 2, 'SC1': 5, 'SC2': 5, 'SP2': 11, 'T1': 1}",
+    "unknown_teams={'N1:For Sittard': 1, 'N1:Nijmegen': 1, 'T1:Goztep': 1}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-24T16:03:40.764320Z", "batch_id": "kd-20261024T160044Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-10-24T16:03:40.782428+00:00",
+ "leagues": [
+  "eng.1",
+  "esp.1",
+  "ger.1"
+ ],
+ "events": 14,
+ "fixtures_mapped": 14,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 3,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 12,
+  "captured": 7,
+  "unchanged": 5,
+  "published_pre_kickoff": 3,
+  "published_post": 8,
+  "unpublished": 1,
+  "failures": []
+ },
+ "results_appended": 9,
+ "weather": {
+  "events": 12,
+  "captured": 12,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261024T160343Z-453616", "mode": "reprice_only", "fixtures": 61, "contract_sides": 3518, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 1.169, "price_changes_vs_previous": 490}
+[dispatch] holding 0.5 min (next window opens in 6.0 min)
+[dispatch] holding 7.5 min (next window opens in 5.5 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261024T161756Z",
+  "complete": true,
+  "discovered": 7311,
+  "written": 2957,
+  "path": "work/snapshots/2026-10-24/cap-20261024T161756Z.jsonl"
+}
+{
+  "reference_probabilities": 235,
+  "observed_at": "2026-10-24 12:38:22.783655+00:00",
+  "groups": 450,
+  "unmapped_fixture_groups": 215,
+  "incomplete_groups": 0,
+  "snapshots": 846,
+  "provider_notes": [
+    "194 rows, 104 skipped (unmapped division/team)",
+    "skipped_by_division={'B1': 9, 'D2': 9, 'E2': 12, 'E3': 12, 'EC': 12, 'F2': 9, 'G1': 7, 'I2': 10, 'N1': 2, 'SC1': 5, 'SC2': 5, 'SP2': 11, 'T1': 1}",
+    "unknown_teams={'N1:For Sittard': 1, 'N1:Nijmegen': 1, 'T1:Goztep': 1}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-24T16:17:58.459624Z", "batch_id": "kd-20261024T161502Z", "credits_charged": 6, "paid_calls": 2, "snapshots": 14, "no_sport_key": [], "eligible_fixtures": 2, "per_sport": {"soccer_epl": {"fixtures": 1, "join": {"events": 1, "joined": 1, "ambiguous": 0, "unresolved_names": [], "unjoined_fixtures": []}, "status": "OK", "credits": 3, "snapshots": 7, "incomplete_markets": 0, "close_fixtures": 1, "entry_fixtures": 0}, "soccer_germany_bundesliga": {"fixtures": 1, "join": {"events": 1, "joined": 1, "ambiguous": 0, "unresolved_names": [], "unjoined_fixtures": []}, "status": "OK", "credits": 3, "snapshots": 7, "incomplete_markets": 0, "close_fixtures": 1, "entry_fixtures": 0}}, "remaining_after": 17536, "status": "OK"}
+{
+ "as_of": "2026-10-24T16:18:02.844553+00:00",
+ "leagues": [
+  "eng.1",
+  "esp.1",
+  "ger.1"
+ ],
+ "events": 14,
+ "fixtures_mapped": 14,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 3,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 12,
+  "captured": 1,
+  "unchanged": 11,
+  "published_pre_kickoff": 3,
+  "published_post": 8,
+  "unpublished": 1,
+  "failures": []
+ },
+ "results_appended": 10,
+ "weather": {
+  "events": 12,
+  "captured": 12,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
