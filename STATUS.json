@@ -1,49 +1,39 @@
 {
-  "as_of": "2026-10-24T16:27:58.216813+00:00",
-  "events": 28,
+  "as_of": "2026-10-24T16:40:26.268441+00:00",
+  "events": 5,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 28,
+  "fixtures_mapped": 5,
   "health": {
-    "reasons": [
-      "weather_failures:5"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
-    "eng.1",
-    "esp.1",
-    "ger.1",
-    "usa.1"
+    "fra.1",
+    "ita.1"
   ],
   "lineups": {
-    "captured": 0,
-    "events": 26,
+    "captured": 1,
+    "events": 3,
     "failures": [],
-    "published_post": 8,
-    "published_pre_kickoff": 3,
-    "unchanged": 26,
-    "unpublished": 15
+    "published_post": 1,
+    "published_pre_kickoff": 0,
+    "unchanged": 2,
+    "unpublished": 2
   },
   "map_proposals": {},
   "map_version": "4",
-  "results_appended": 10,
+  "results_appended": 2,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
-  "scoreboard_queries": 4,
+  "scoreboard_queries": 2,
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 20,
-    "events": 26,
-    "failures": [
-      "761890: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Columbus&count=5&language=en&fo",
-      "761891: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=41.4092&longitude=-75.6649&hourly=t",
-      "761898: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Sandy&count=5&language=en&forma",
-      "761902: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Portland&count=5&language=en&fo",
-      "761901: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=San%20Diego&count=5&language=en"
-    ],
+    "captured": 3,
+    "events": 3,
+    "failures": [],
     "forecast_miss": 0,
-    "geocode_miss": 1,
+    "geocode_miss": 0,
     "no_venue": 0,
     "skipped": 0,
     "stopped": null
