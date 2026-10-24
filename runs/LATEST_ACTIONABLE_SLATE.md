@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261024T023631Z-4f4879` · generated 2026-10-24T02:36:31.517540Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261024T024803Z-4ea89a` · generated 2026-10-24T02:48:03.135233Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-24T02:33:32.728690Z (CURRENT at publish; CURRENT until 2026-10-24T02:53:32.728690Z, STALE after 2026-10-24T03:03:32.728690Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-24T02:45:02.493458Z (CURRENT at publish; CURRENT until 2026-10-24T03:05:02.493458Z, STALE after 2026-10-24T03:15:02.493458Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-24T01:59:58.177954Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 2.13s
+model board generated 2026-10-24T01:59:58.177954Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 2.13s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-24T01:59:58.177954Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-24T03:00:00Z | Atlante vs Atlético San Luis (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 77 | 0 |
+| 2026-10-24T03:00:00Z | Atlante vs Atlético San Luis (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT close | CURRENT | 77 | 0 |
 | 2026-10-24T11:30:00Z | Aston Villa vs Manchester City (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-24T13:00:00Z | Cagliari vs Bologna (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-24T13:00:00Z | Como vs Sassuolo (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -86,7 +86,7 @@ model board generated 2026-10-24T01:59:58.177954Z · simulations this update: 0 
 | 2026-10-26T01:00:00Z | Los Angeles FC vs LA Galaxy (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-26T01:05:00Z | Club América vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (209; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (206; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -95,7 +95,6 @@ model board generated 2026-10-24T01:59:58.177954Z · simulations this update: 0 
 | Los Angeles FC vs LA Galaxy | btts | no | 0.3800 | 0.571 [0.452, 0.683] | +0.174 | +0.099 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | away team total over 1.5 | no | 0.4900 | 0.683 [0.557, 0.803] | +0.175 | +0.097 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.4300 | 0.629 [0.488, 0.758] | +0.182 | +0.094 | 0.52 | - | * | RESEARCH_CANDIDATE |
-| San Diego FC vs Seattle Sounders | away team total over 1.5 | no | 0.5300 | 0.715 [0.592, 0.829] | +0.168 | +0.093 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | CF Montréal vs Nashville SC | Total goals over 2.5 | no | 0.4000 | 0.596 [0.444, 0.732] | +0.180 | +0.091 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Inter Miami | Total goals over 3.5 | no | 0.4400 | 0.645 [0.490, 0.789] | +0.187 | +0.091 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | CF Montréal vs Nashville SC | Total goals over 3.5 | no | 0.6200 | 0.792 [0.668, 0.892] | +0.156 | +0.090 | 0.71 | - |  | RESEARCH_CANDIDATE |
@@ -105,6 +104,7 @@ model board generated 2026-10-24T01:59:58.177954Z · simulations this update: 0 
 | New York Red Bulls vs Inter Miami | away team total over 1.5 | no | 0.3300 | 0.522 [0.367, 0.669] | +0.177 | +0.086 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Inter Miami | away team total over 2.5 | no | 0.6000 | 0.770 [0.636, 0.883] | +0.154 | +0.085 | 0.68 | - |  | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | Total goals over 3.5 | no | 0.5600 | 0.742 [0.602, 0.857] | +0.165 | +0.084 | 0.64 | - | * | RESEARCH_CANDIDATE |
+| San Diego FC vs Seattle Sounders | away team total over 1.5 | no | 0.5400 | 0.715 [0.592, 0.829] | +0.158 | +0.083 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | Total goals over 2.5 | no | 0.3400 | 0.536 [0.380, 0.676] | +0.180 | +0.082 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Vancouver Whitecaps | btts | no | 0.4000 | 0.571 [0.459, 0.679] | +0.154 | +0.080 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | away team total over 2.5 | no | 0.7500 | 0.885 [0.808, 0.950] | +0.122 | +0.079 | 0.83 | - |  | RESEARCH_CANDIDATE |
@@ -129,14 +129,14 @@ model board generated 2026-10-24T01:59:58.177954Z · simulations this update: 0 
 | San Diego FC vs Seattle Sounders | Total goals over 3.5 | no | 0.5400 | 0.705 [0.558, 0.836] | +0.148 | +0.059 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 2.5 | no | 0.3300 | 0.509 [0.327, 0.673] | +0.164 | +0.058 | 0.38 | - |  | RESEARCH_CANDIDATE |
 | Udinese vs AC Milan | Result: away | no | 0.4300 | 0.609 [0.432, 0.764] | +0.162 | +0.057 | 0.48 | - | * | RESEARCH_CANDIDATE |
-| Lazio vs Parma | Result: home | no | 0.3100 | 0.493 [0.318, 0.650] | +0.168 | +0.057 | 0.36 | - | * | RESEARCH_CANDIDATE |
+| Orlando City vs New York City FC | away team total over 1.5 | no | 0.5400 | 0.688 [0.556, 0.809] | +0.131 | +0.052 | 0.59 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2781
-action_NO_QUOTE: 726
-action_RESEARCH_CANDIDATE: 209
+action_NO_EDGE: 2778
+action_NO_QUOTE: 732
+action_RESEARCH_CANDIDATE: 206
 contract_sides: 3716
 fixtures: 73
 fixtures_model_invalidated: 0
