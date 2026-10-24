@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-24T04:48:22.936170+00:00",
+  "as_of": "2026-10-24T11:23:48.232473+00:00",
   "events": 814,
   "events_skipped_unmapped": 469,
   "fixtures_mapped": 345,
   "health": {
     "reasons": [
-      "weather_failures:4",
-      "weather_stopped:consecutive_failures:skipped=88"
+      "weather_failures:3",
+      "weather_stopped:consecutive_failures:skipped=89"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 27,
+    "captured": 60,
     "events": 150,
     "failures": [],
-    "published_post": 2,
-    "published_pre_kickoff": 1,
-    "unchanged": 123,
-    "unpublished": 147
+    "published_post": 6,
+    "published_pre_kickoff": 15,
+    "unchanged": 90,
+    "unpublished": 129
   },
   "map_proposals": {
     "bel.1": {
@@ -355,7 +355,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 7,
+  "results_appended": 1,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -522,18 +522,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 11,
-    "events": 104,
+    "captured": 5,
+    "events": 98,
     "failures": [
-      "401841636: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Avellaneda&count=5&language=en&",
-      "401841640: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-34.6131&longitude=-58.3772&hourly=",
-      "401841639: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Santiago%20del%20Estero&count=5",
-      "401841630: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-32.9468&longitude=-60.6393&hourly="
+      "401912636: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Daejeon&count=5&language=en&for",
+      "401912638: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Iskandar%20Puteri&count=5&langu",
+      "401912637: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Kyoto&count=5&language=en&forma"
     ],
     "forecast_miss": 0,
     "geocode_miss": 1,
     "no_venue": 0,
-    "skipped": 88,
+    "skipped": 89,
     "stopped": "consecutive_failures"
   }
 }
