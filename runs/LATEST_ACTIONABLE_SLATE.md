@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261024T011519Z-2bf35c` · generated 2026-10-24T01:15:19.665647Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261024T012945Z-fc95d5` · generated 2026-10-24T01:29:45.863324Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-24T01:11:49.628630Z (CURRENT at publish; CURRENT until 2026-10-24T01:31:49.628630Z, STALE after 2026-10-24T01:41:49.628630Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-24T01:26:49.646486Z (CURRENT at publish; CURRENT until 2026-10-24T01:46:49.646486Z, STALE after 2026-10-24T01:56:49.646486Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-24T01:14:49.269381Z · simulations this update: 44 · Odds API calls this update: 0 (credits 0) · reprice 1.82s
+model board generated 2026-10-24T01:14:49.269381Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.87s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-24T01:14:49.269381Z · simulations this update: 44
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-24T03:00:00Z | Atlante vs Atlético San Luis (mex.liga_mx) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-24T03:00:00Z | Atlante vs Atlético San Luis (mex.liga_mx) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-24T11:30:00Z | Aston Villa vs Manchester City (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-24T13:00:00Z | Cagliari vs Bologna (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-24T13:00:00Z | Como vs Sassuolo (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -36,20 +36,20 @@ model board generated 2026-10-24T01:14:49.269381Z · simulations this update: 44
 | 2026-10-24T19:30:00Z | Vitória vs Athletico Paranaense (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-24T19:30:00Z | Columbus Crew vs Toronto FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-24T20:00:00Z | Talleres vs Defensa y Justicia (arg.primera) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-24T21:30:00Z | Palmeiras vs Red Bull Bragantino (bra.serie_a) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-24T21:30:00Z | Vasco da Gama vs Corinthians (bra.serie_a) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-24T21:30:00Z | Palmeiras vs Red Bull Bragantino (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-24T21:30:00Z | Vasco da Gama vs Corinthians (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-24T21:30:00Z | New York Red Bulls vs Inter Miami (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-24T22:15:00Z | San Lorenzo vs Newell's Old Boys (arg.primera) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-24T22:30:00Z | Chapecoense vs Fluminense (bra.serie_a) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-24T23:00:00Z | León vs Toluca (mex.liga_mx) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-24T22:30:00Z | Chapecoense vs Fluminense (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-24T23:00:00Z | León vs Toluca (mex.liga_mx) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-24T23:30:00Z | Atlanta United vs Chicago Fire (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-24T23:30:00Z | Orlando City vs New York City FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-24T23:30:00Z | Philadelphia Union vs New England Revolution (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-25T00:00:00Z | Santos vs Bahia (bra.serie_a) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-25T00:00:00Z | Santos vs Bahia (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-25T00:30:00Z | FC Dallas vs San Jose Earthquakes (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-25T00:30:00Z | Houston Dynamo vs Minnesota United (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-25T00:30:00Z | Sporting Kansas City vs Austin FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-25T01:00:00Z | Monterrey vs Guadalajara (mex.liga_mx) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-25T01:00:00Z | Monterrey vs Guadalajara (mex.liga_mx) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-25T01:30:00Z | Colorado Rapids vs Vancouver Whitecaps (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-25T01:30:00Z | Real Salt Lake vs St. Louis City SC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-25T02:30:00Z | Portland Timbers vs Charlotte FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -86,7 +86,7 @@ model board generated 2026-10-24T01:14:49.269381Z · simulations this update: 44
 | 2026-10-26T01:00:00Z | Los Angeles FC vs LA Galaxy (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-26T01:05:00Z | Club América vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (194; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (197; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -124,19 +124,19 @@ model board generated 2026-10-24T01:14:49.269381Z · simulations this update: 44
 | San Diego FC vs Seattle Sounders | Total goals over 3.5 | no | 0.5400 | 0.705 [0.558, 0.836] | +0.148 | +0.059 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 2.5 | no | 0.3300 | 0.509 [0.327, 0.673] | +0.164 | +0.058 | 0.38 | - |  | RESEARCH_CANDIDATE |
 | Udinese vs AC Milan | Result: away | no | 0.4300 | 0.609 [0.432, 0.764] | +0.162 | +0.057 | 0.48 | - | * | RESEARCH_CANDIDATE |
+| Atlanta United vs Chicago Fire | away team total over 0.5 | no | 0.1900 | 0.328 [0.223, 0.442] | +0.127 | +0.055 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Inter Miami | btts | no | 0.2700 | 0.416 [0.300, 0.536] | +0.133 | +0.053 | 0.32 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs New York City FC | away team total over 1.5 | no | 0.5400 | 0.688 [0.556, 0.809] | +0.131 | +0.052 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Udinese vs AC Milan | Result: home | yes | 0.1800 | 0.349 [0.196, 0.513] | +0.159 | +0.051 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Inter Miami | First-half total goals over 1.5 | no | 0.4700 | 0.618 [0.488, 0.742] | +0.130 | +0.051 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | Total goals over 1.5 | no | 0.1500 | 0.284 [0.168, 0.400] | +0.125 | +0.049 | 0.19 | - |  | RESEARCH_CANDIDATE |
-| San Diego FC vs Seattle Sounders | Total goals over 4.5 | no | 0.7300 | 0.850 [0.744, 0.936] | +0.106 | +0.048 | 0.77 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2767
-action_NO_QUOTE: 755
-action_RESEARCH_CANDIDATE: 194
+action_NO_EDGE: 2762
+action_NO_QUOTE: 757
+action_RESEARCH_CANDIDATE: 197
 contract_sides: 3716
 fixtures: 73
 fixtures_model_invalidated: 0
