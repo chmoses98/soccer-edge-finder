@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261024T191929Z-448a38` · generated 2026-10-24T19:19:29.342166Z · trigger `kickoff_chain:T-15` · mode `model_refresh_and_reprice`
+slate `slate-20261024T192513Z-0350bf` · generated 2026-10-24T19:25:13.169719Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-24T19:15:06.268398Z (CURRENT at publish; CURRENT until 2026-10-24T19:35:06.268398Z, STALE after 2026-10-24T19:45:06.268398Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-24T19:22:05.809177Z (CURRENT at publish; CURRENT until 2026-10-24T19:42:05.809177Z, STALE after 2026-10-24T19:52:05.809177Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-24T19:19:20.914525Z · simulations this update: 2 · Odds API calls this update: 2 (credits 6) · reprice 1.33s
+model board generated 2026-10-24T19:19:20.914525Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.95s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -68,7 +68,7 @@ model board generated 2026-10-24T19:19:20.914525Z · simulations this update: 2 
 | 2026-10-26T01:05:00Z | Club América vs Pachuca (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-26T03:10:00Z | Tijuana vs Santos Laguna (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (189; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (188; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -97,7 +97,6 @@ model board generated 2026-10-24T19:19:20.914525Z · simulations this update: 2 
 | San Diego FC vs Seattle Sounders | away team total over 0.5 | no | 0.2100 | 0.359 [0.247, 0.475] | +0.137 | +0.062 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 3.5 | no | 0.5500 | 0.716 [0.544, 0.855] | +0.149 | +0.060 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | Total goals over 3.5 | no | 0.5400 | 0.705 [0.558, 0.836] | +0.148 | +0.059 | 0.59 | - | * | RESEARCH_CANDIDATE |
-| León vs Toluca | away team total over 1.5 | no | 0.4200 | 0.594 [0.428, 0.746] | +0.157 | +0.058 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 2.5 | no | 0.3300 | 0.509 [0.327, 0.673] | +0.164 | +0.058 | 0.38 | - |  | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | Total goals over 2.5 | no | 0.3200 | 0.495 [0.339, 0.646] | +0.159 | +0.058 | 0.37 | - |  | RESEARCH_CANDIDATE |
 | SC Freiburg vs Bayern Munich | Result: home | yes | 0.1500 | 0.330 [0.167, 0.511] | +0.171 | +0.056 | 0.2 | - |  | RESEARCH_CANDIDATE |
@@ -107,6 +106,7 @@ model board generated 2026-10-24T19:19:20.914525Z · simulations this update: 2 
 | Colorado Rapids vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.6900 | 0.817 [0.709, 0.907] | +0.112 | +0.050 | 0.74 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Vancouver Whitecaps | btts | no | 0.4300 | 0.571 [0.459, 0.679] | +0.123 | +0.049 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Chicago Fire | Total goals over 1.5 | no | 0.1500 | 0.284 [0.168, 0.400] | +0.125 | +0.049 | 0.19 | - |  | RESEARCH_CANDIDATE |
+| León vs Toluca | away team total over 1.5 | no | 0.4300 | 0.594 [0.428, 0.746] | +0.147 | +0.048 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | Total goals over 4.5 | no | 0.7300 | 0.850 [0.744, 0.936] | +0.106 | +0.048 | 0.77 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | away team total over 0.5 | no | 0.3500 | 0.495 [0.371, 0.611] | +0.129 | +0.048 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 4.5 | no | 0.7400 | 0.856 [0.732, 0.946] | +0.103 | +0.047 | 0.78 | - |  | RESEARCH_CANDIDATE |
@@ -116,9 +116,9 @@ model board generated 2026-10-24T19:19:20.914525Z · simulations this update: 2 
 ## Counts
 
 ```
-action_NO_EDGE: 2534
-action_NO_QUOTE: 521
-action_RESEARCH_CANDIDATE: 189
+action_NO_EDGE: 2536
+action_NO_QUOTE: 520
+action_RESEARCH_CANDIDATE: 188
 contract_sides: 3244
 fixtures: 55
 fixtures_model_invalidated: 0
