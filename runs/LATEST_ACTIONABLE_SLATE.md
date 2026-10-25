@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261025T151305Z-b6bcee` · generated 2026-10-25T15:13:05.112927Z · trigger `kickoff_chain:T-60/T-5` · mode `model_refresh_and_reprice`
+slate `slate-20261025T152809Z-7e6fcc` · generated 2026-10-25T15:28:09.792100Z · trigger `kickoff_chain:T-120/T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-25T15:10:00.093302Z (CURRENT at publish; CURRENT until 2026-10-25T15:30:00.093302Z, STALE after 2026-10-25T15:40:00.093302Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-25T15:25:02.411238Z (CURRENT at publish; CURRENT until 2026-10-25T15:45:02.411238Z, STALE after 2026-10-25T15:55:02.411238Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-25T15:13:03.037449Z · simulations this update: 4 · Odds API calls this update: 1 (credits 3) · reprice 0.55s
+model board generated 2026-10-25T15:28:08.549039Z · simulations this update: 2 · Odds API calls this update: 2 (credits 6) · reprice 0.54s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,12 +12,12 @@ model board generated 2026-10-25T15:13:03.037449Z · simulations this update: 4 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-25T16:15:00Z | Angers vs Lorient (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
-| 2026-10-25T16:15:00Z | AJ Auxerre vs Le Mans (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
-| 2026-10-25T16:15:00Z | Marseille vs Le Havre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
-| 2026-10-25T16:15:00Z | Rennes vs Strasbourg (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
-| 2026-10-25T16:30:00Z | Sunderland vs Leeds United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-25T16:30:00Z | SC Freiburg vs Bayern Munich (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-25T16:15:00Z | Angers vs Lorient (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
+| 2026-10-25T16:15:00Z | AJ Auxerre vs Le Mans (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
+| 2026-10-25T16:15:00Z | Marseille vs Le Havre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
+| 2026-10-25T16:15:00Z | Rennes vs Strasbourg (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
+| 2026-10-25T16:30:00Z | Sunderland vs Leeds United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
+| 2026-10-25T16:30:00Z | SC Freiburg vs Bayern Munich (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
 | 2026-10-25T17:00:00Z | Lecce vs Juventus (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-25T17:45:00Z | Aldosivi vs Belgrano (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-25T19:45:00Z | Paris Saint-Germain vs Lyon (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -46,10 +46,10 @@ model board generated 2026-10-25T15:13:03.037449Z · simulations this update: 4 
 | Los Angeles FC vs LA Galaxy | Total goals over 3.5 | no | 0.5600 | 0.722 [0.571, 0.848] | +0.145 | +0.061 | 0.62 | - |  | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Lyon | Result: home | no | 0.3000 | 0.484 [0.287, 0.679] | +0.169 | +0.049 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 4.5 | no | 0.7500 | 0.861 [0.755, 0.943] | +0.098 | +0.045 | 0.79 | - |  | RESEARCH_CANDIDATE |
-| SC Freiburg vs Bayern Munich | Result: away | no | 0.3600 | 0.542 [0.347, 0.730] | +0.166 | +0.044 | 0.4 | - | * | RESEARCH_CANDIDATE |
+| SC Freiburg vs Bayern Munich | Result: away | no | 0.3600 | 0.542 [0.347, 0.730] | +0.166 | +0.044 | 0.4 | 0.353 | * | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | btts | no | 0.4000 | 0.534 [0.409, 0.653] | +0.118 | +0.038 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | Total goals over 2.5 | no | 0.4100 | 0.567 [0.403, 0.723] | +0.140 | +0.036 | 0.44 | - | * | RESEARCH_CANDIDATE |
-| SC Freiburg vs Bayern Munich | Result: home | yes | 0.1700 | 0.330 [0.167, 0.512] | +0.151 | +0.035 | 0.2 | - |  | RESEARCH_CANDIDATE |
+| SC Freiburg vs Bayern Munich | Result: home | yes | 0.1700 | 0.330 [0.167, 0.512] | +0.151 | +0.035 | 0.2 | 0.169 |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | away team total over 2.5 | no | 0.9000 | 0.957 [0.921, 0.984] | +0.051 | +0.034 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 1.5 | no | 0.1500 | 0.268 [0.149, 0.389] | +0.109 | +0.031 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | First half: both teams to score | no | 0.7600 | 0.846 [0.769, 0.921] | +0.073 | +0.027 | 0.78 | - | * | RESEARCH_CANDIDATE |
