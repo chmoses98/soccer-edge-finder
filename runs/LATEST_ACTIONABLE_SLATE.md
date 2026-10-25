@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261025T014312Z-634b43` · generated 2026-10-25T01:43:12.383257Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261025T015756Z-710830` · generated 2026-10-25T01:57:56.285725Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-25T01:40:01.960089Z (CURRENT at publish; CURRENT until 2026-10-25T02:00:01.960089Z, STALE after 2026-10-25T02:10:01.960089Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-25T01:55:01.983608Z (CURRENT at publish; CURRENT until 2026-10-25T02:15:01.983608Z, STALE after 2026-10-25T02:25:01.983608Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-25T01:43:00.204545Z · simulations this update: 25 · Odds API calls this update: 0 (credits 0) · reprice 0.82s
+model board generated 2026-10-25T01:43:00.204545Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.97s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -54,23 +54,23 @@ model board generated 2026-10-25T01:43:00.204545Z · simulations this update: 25
 | 2026-10-26T22:30:00Z | Coritiba vs Grêmio (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-26T23:00:00Z | Flamengo vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (89; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (90; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Hull City vs Brentford | Result: away | no | 0.4300 | 0.694 [0.496, 0.866] | +0.246 | +0.126 | 0.55 | - | * | RESEARCH_CANDIDATE |
+| San Diego FC vs Seattle Sounders | away team total over 1.5 | no | 0.5200 | 0.716 [0.591, 0.828] | +0.178 | +0.103 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | btts | no | 0.3800 | 0.571 [0.452, 0.683] | +0.174 | +0.099 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | SC Freiburg vs Bayern Munich | Result: away | no | 0.3100 | 0.542 [0.347, 0.730] | +0.217 | +0.095 | 0.4 | - | * | RESEARCH_CANDIDATE |
-| San Diego FC vs Seattle Sounders | away team total over 1.5 | no | 0.5300 | 0.716 [0.591, 0.828] | +0.168 | +0.093 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | btts | no | 0.3100 | 0.488 [0.370, 0.601] | +0.163 | +0.091 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | away team total over 0.5 | no | 0.3100 | 0.495 [0.371, 0.611] | +0.170 | +0.088 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | away team total over 1.5 | no | 0.6800 | 0.833 [0.738, 0.912] | +0.138 | +0.083 | 0.76 | - |  | RESEARCH_CANDIDATE |
+| San Diego FC vs Seattle Sounders | away team total over 0.5 | no | 0.1900 | 0.359 [0.246, 0.475] | +0.158 | +0.082 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | Total goals over 3.5 | no | 0.5300 | 0.710 [0.568, 0.841] | +0.163 | +0.080 | 0.61 | 0.527 | * | RESEARCH_CANDIDATE |
 | Hull City vs Brentford | Result: home | yes | 0.1900 | 0.419 [0.214, 0.647] | +0.219 | +0.074 | 0.26 | - |  | RESEARCH_CANDIDATE |
-| San Diego FC vs Seattle Sounders | away team total over 0.5 | no | 0.2000 | 0.359 [0.246, 0.475] | +0.148 | +0.072 | 0.26 | - |  | RESEARCH_CANDIDATE |
+| San Diego FC vs Seattle Sounders | away team total over 2.5 | no | 0.7800 | 0.903 [0.833, 0.960] | +0.111 | +0.074 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 3.5 | no | 0.5400 | 0.716 [0.544, 0.855] | +0.159 | +0.070 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | Total goals over 2.5 | no | 0.3200 | 0.500 [0.348, 0.653] | +0.165 | +0.068 | 0.38 | - |  | RESEARCH_CANDIDATE |
-| San Diego FC vs Seattle Sounders | away team total over 2.5 | no | 0.7900 | 0.903 [0.833, 0.960] | +0.102 | +0.064 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 2.5 | no | 0.3300 | 0.509 [0.327, 0.673] | +0.164 | +0.058 | 0.38 | - |  | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | Total goals over 4.5 | no | 0.7300 | 0.854 [0.752, 0.939] | +0.110 | +0.056 | 0.78 | - |  | RESEARCH_CANDIDATE |
 | SC Freiburg vs Bayern Munich | Result: home | yes | 0.1500 | 0.330 [0.167, 0.512] | +0.172 | +0.056 | 0.2 | - |  | RESEARCH_CANDIDATE |
@@ -94,7 +94,7 @@ model board generated 2026-10-25T01:43:00.204545Z · simulations this update: 25
 | Los Angeles FC vs LA Galaxy | First half: both teams to score | no | 0.7600 | 0.846 [0.768, 0.911] | +0.073 | +0.027 | 0.78 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Charlotte FC | Total goals over 3.5 | no | 0.5200 | 0.661 [0.501, 0.803] | +0.123 | +0.026 | 0.54 | 0.517 |  | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | First half: both teams to score | no | 0.7200 | 0.811 [0.727, 0.892] | +0.077 | +0.026 | 0.74 | - | * | RESEARCH_CANDIDATE |
-| Portland Timbers vs Charlotte FC | Total goals over 4.5 | no | 0.7100 | 0.818 [0.694, 0.918] | +0.093 | +0.024 | 0.73 | - |  | RESEARCH_CANDIDATE |
+| San Diego FC vs Seattle Sounders | Exact score 1-0 (home-away) | yes | 0.0500 | 0.107 [0.065, 0.152] | +0.054 | +0.025 | 0.07 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Exact score 1-0 (home-away) | yes | 0.0700 | 0.134 [0.077, 0.189] | +0.059 | +0.023 | 0.09 | - | * | RESEARCH_CANDIDATE |
 | Lecce vs Juventus | Result: away | no | 0.3600 | 0.513 [0.345, 0.679] | +0.137 | +0.022 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Tigres UANL | btts | no | 0.4200 | 0.532 [0.409, 0.650] | +0.094 | +0.021 | 0.44 | - | * | RESEARCH_CANDIDATE |
@@ -102,9 +102,9 @@ model board generated 2026-10-25T01:43:00.204545Z · simulations this update: 25
 ## Counts
 
 ```
-action_NO_EDGE: 1103
+action_NO_EDGE: 1102
 action_NO_QUOTE: 332
-action_RESEARCH_CANDIDATE: 89
+action_RESEARCH_CANDIDATE: 90
 contract_sides: 1524
 fixtures: 41
 fixtures_model_invalidated: 0
