@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261025T193322Z-f75aa8` · generated 2026-10-25T19:33:22.848859Z · trigger `kickoff_chain:T-30/T-15` · mode `model_refresh_and_reprice`
+slate `slate-20261025T194253Z-c61afd` · generated 2026-10-25T19:42:53.433402Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-25T19:30:00.052890Z (CURRENT at publish; CURRENT until 2026-10-25T19:50:00.052890Z, STALE after 2026-10-25T20:00:00.052890Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-25T19:40:03.692075Z (CURRENT at publish; CURRENT until 2026-10-25T20:00:03.692075Z, STALE after 2026-10-25T20:10:03.692075Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-25T19:14:08.545019Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.48s
+model board generated 2026-10-25T19:16:44.050840Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.50s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,12 +12,12 @@ model board generated 2026-10-25T19:14:08.545019Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-25T19:45:00Z | Paris Saint-Germain vs Lyon (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-25T19:45:00Z | Udinese vs AC Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
+| 2026-10-25T19:45:00Z | Paris Saint-Germain vs Lyon (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
+| 2026-10-25T19:45:00Z | Udinese vs AC Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 77 | 0 |
 | 2026-10-25T20:00:00Z | Independiente vs Boca Juniors (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
-| 2026-10-25T22:15:00Z | River Plate vs Racing Club (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-25T22:15:00Z | River Plate vs Racing Club (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-25T23:00:00Z | Atlas vs Puebla (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-26T00:30:00Z | Central Córdoba vs Vélez Sarsfield (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-26T00:30:00Z | Central Córdoba vs Vélez Sarsfield (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-26T01:00:00Z | Querétaro vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-26T01:00:00Z | Los Angeles FC vs LA Galaxy (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-26T01:05:00Z | Club América vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -26,7 +26,7 @@ model board generated 2026-10-25T19:14:08.545019Z · simulations this update: 0 
 | 2026-10-26T22:30:00Z | Coritiba vs Grêmio (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-26T23:00:00Z | Flamengo vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-27T00:15:00Z | Instituto vs Deportivo Riestra (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-27T17:30:00Z | Sassuolo vs Lazio (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-27T17:30:00Z | Sassuolo vs Lazio (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 
 ## Candidates on CURRENT prices (35; RESEARCH_ONLY = analysis, never a bet)
 
@@ -38,25 +38,25 @@ model board generated 2026-10-25T19:14:08.545019Z · simulations this update: 0 
 | Los Angeles FC vs LA Galaxy | Total goals over 3.5 | no | 0.5500 | 0.722 [0.571, 0.848] | +0.154 | +0.071 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Lyon | Result: home | no | 0.2900 | 0.484 [0.287, 0.679] | +0.180 | +0.060 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 2.5 | no | 0.3400 | 0.514 [0.351, 0.664] | +0.158 | +0.058 | 0.39 | - |  | RESEARCH_CANDIDATE |
+| Tijuana vs Santos Laguna | btts | no | 0.3900 | 0.534 [0.409, 0.653] | +0.128 | +0.048 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 4.5 | no | 0.7500 | 0.861 [0.755, 0.943] | +0.098 | +0.045 | 0.79 | - |  | RESEARCH_CANDIDATE |
-| Tijuana vs Santos Laguna | btts | no | 0.4000 | 0.534 [0.409, 0.653] | +0.118 | +0.038 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | Total goals over 2.5 | no | 0.4100 | 0.567 [0.403, 0.723] | +0.140 | +0.036 | 0.44 | - | * | RESEARCH_CANDIDATE |
+| Los Angeles FC vs LA Galaxy | away team total over 2.5 | no | 0.9000 | 0.957 [0.921, 0.984] | +0.051 | +0.034 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 1.5 | no | 0.1500 | 0.268 [0.149, 0.389] | +0.109 | +0.031 | 0.18 | - |  | RESEARCH_CANDIDATE |
+| Udinese vs AC Milan | Result: home | yes | 0.2000 | 0.349 [0.197, 0.514] | +0.138 | +0.029 | 0.22 | 0.197 | * | RESEARCH_CANDIDATE |
+| Udinese vs AC Milan | Result: away | no | 0.4600 | 0.609 [0.433, 0.764] | +0.131 | +0.027 | 0.48 | 0.465 |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | First half: both teams to score | no | 0.7600 | 0.846 [0.769, 0.921] | +0.073 | +0.027 | 0.78 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Exact score 1-0 (home-away) | yes | 0.0700 | 0.132 [0.081, 0.181] | +0.058 | +0.026 | 0.09 | - | * | RESEARCH_CANDIDATE |
-| Los Angeles FC vs LA Galaxy | away team total over 2.5 | no | 0.9100 | 0.957 [0.921, 0.984] | +0.042 | +0.025 | 0.93 | - |  | RESEARCH_CANDIDATE |
-| Paris Saint-Germain vs Lyon | Result: away | yes | 0.1200 | 0.249 [0.114, 0.406] | +0.121 | +0.025 | 0.14 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 5.5 | no | 0.8800 | 0.938 [0.878, 0.982] | +0.051 | +0.025 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | First-half total goals over 1.5 | no | 0.5600 | 0.676 [0.548, 0.793] | +0.098 | +0.023 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | Total goals over 3.5 | no | 0.6500 | 0.767 [0.626, 0.887] | +0.101 | +0.020 | 0.66 | - |  | RESEARCH_CANDIDATE |
-| Udinese vs AC Milan | Result: home | yes | 0.2100 | 0.349 [0.197, 0.514] | +0.128 | +0.019 | 0.22 | 0.197 | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Exact score 2-0 (home-away) | yes | 0.0800 | 0.124 [0.092, 0.156] | +0.039 | +0.019 | 0.09 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | Total goals over 1.5 | no | 0.1900 | 0.311 [0.180, 0.447] | +0.110 | +0.019 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Exact score 0-0 (home-away) | yes | 0.0300 | 0.084 [0.039, 0.134] | +0.052 | +0.018 | 0.04 | - |  | RESEARCH_CANDIDATE |
-| Udinese vs AC Milan | Result: away | no | 0.4700 | 0.609 [0.433, 0.764] | +0.121 | +0.017 | 0.48 | 0.465 |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | First-half exact score 0-0 (home-away) | yes | 0.2200 | 0.320 [0.208, 0.432] | +0.088 | +0.016 | 0.23 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | First-half total goals over 0.5 | no | 0.2200 | 0.320 [0.208, 0.432] | +0.088 | +0.016 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Lyon | Result: draw | yes | 0.1700 | 0.235 [0.167, 0.299] | +0.055 | +0.014 | 0.18 | - |  | RESEARCH_CANDIDATE |
+| Paris Saint-Germain vs Lyon | Result: away | yes | 0.1300 | 0.249 [0.114, 0.406] | +0.111 | +0.014 | 0.14 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | Total goals over 4.5 | no | 0.8200 | 0.891 [0.799, 0.961] | +0.060 | +0.013 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | First-half total goals over 2.5 | no | 0.8200 | 0.883 [0.799, 0.951] | +0.053 | +0.010 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 0.5 | no | 0.0400 | 0.084 [0.039, 0.134] | +0.042 | +0.008 | 0.04 | - |  | RESEARCH_CANDIDATE |
@@ -71,10 +71,10 @@ model board generated 2026-10-25T19:14:08.545019Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 639
-action_NO_QUOTE: 236
+action_NO_EDGE: 640
+action_NO_QUOTE: 499
 action_RESEARCH_CANDIDATE: 35
-contract_sides: 910
+contract_sides: 1174
 fixtures: 15
 fixtures_model_invalidated: 1
 fixtures_model_missing: 0
