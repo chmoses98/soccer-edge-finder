@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261025T064018Z-48f398` · generated 2026-10-25T06:40:18.761133Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261025T065501Z-e30963` · generated 2026-10-25T06:55:01.619575Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-25T06:37:09.237161Z (CURRENT at publish; CURRENT until 2026-10-25T06:57:09.237161Z, STALE after 2026-10-25T07:07:09.237161Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-25T06:52:09.254852Z (CURRENT at publish; CURRENT until 2026-10-25T07:12:09.254852Z, STALE after 2026-10-25T07:22:09.254852Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-25T06:40:10.826390Z · simulations this update: 23 · Odds API calls this update: 0 (credits 0) · reprice 0.57s
+model board generated 2026-10-25T06:40:10.826390Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.57s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -79,7 +79,6 @@ model board generated 2026-10-25T06:40:10.826390Z · simulations this update: 23
 | Tijuana vs Santos Laguna | Total goals over 3.5 | no | 0.6500 | 0.767 [0.621, 0.890] | +0.102 | +0.020 | 0.67 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 5.5 | no | 0.8800 | 0.935 [0.862, 0.983] | +0.047 | +0.019 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Udinese vs AC Milan | Result: home | yes | 0.2100 | 0.349 [0.197, 0.514] | +0.128 | +0.019 | 0.22 | - | * | RESEARCH_CANDIDATE |
-| Udinese vs AC Milan | Result: away | no | 0.4700 | 0.609 [0.433, 0.764] | +0.121 | +0.017 | 0.48 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | Total goals over 4.5 | no | 0.8200 | 0.891 [0.796, 0.963] | +0.061 | +0.013 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | away team total over 0.5 | no | 0.2800 | 0.388 [0.263, 0.513] | +0.094 | +0.011 | 0.29 | - | * | RESEARCH_CANDIDATE |
 | Atlas vs Puebla | btts | no | 0.4700 | 0.567 [0.448, 0.679] | +0.080 | +0.011 | 0.48 | - | * | RESEARCH_CANDIDATE |
@@ -88,6 +87,7 @@ model board generated 2026-10-25T06:40:10.826390Z · simulations this update: 23
 | Tijuana vs Santos Laguna | Total goals over 0.5 | no | 0.0500 | 0.104 [0.049, 0.167] | +0.051 | +0.009 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | First-half exact score 0-0 (home-away) | yes | 0.2200 | 0.319 [0.198, 0.432] | +0.087 | +0.008 | 0.22 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | First-half total goals over 0.5 | no | 0.2200 | 0.319 [0.198, 0.432] | +0.087 | +0.008 | 0.22 | - |  | RESEARCH_CANDIDATE |
+| Udinese vs AC Milan | Result: away | no | 0.4800 | 0.609 [0.433, 0.764] | +0.111 | +0.007 | 0.48 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Exact score 2-0 (home-away) | yes | 0.0900 | 0.126 [0.091, 0.158] | +0.030 | +0.007 | 0.09 | - |  | RESEARCH_CANDIDATE |
 | Lecce vs Juventus | Result: home | yes | 0.1400 | 0.245 [0.122, 0.383] | +0.096 | +0.006 | 0.14 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Exact score 0-0 (home-away) | yes | 0.0400 | 0.083 [0.033, 0.140] | +0.040 | +0.006 | 0.04 | - |  | RESEARCH_CANDIDATE |
