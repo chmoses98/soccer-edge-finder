@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261025T161254Z-b31182` · generated 2026-10-25T16:12:54.204598Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
+slate `slate-20261025T161903Z-00dd18` · generated 2026-10-25T16:19:03.774779Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-25T16:10:00.053925Z (CURRENT at publish; CURRENT until 2026-10-25T16:30:00.053925Z, STALE after 2026-10-25T16:40:00.053925Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-25T16:16:05.881117Z (CURRENT at publish; CURRENT until 2026-10-25T16:36:05.881117Z, STALE after 2026-10-25T16:46:05.881117Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-25T16:03:06.348422Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.55s
+model board generated 2026-10-25T16:03:06.348422Z · simulations this update: 0 · Odds API calls this update: 2 (credits 6) · reprice 0.53s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,20 +12,16 @@ model board generated 2026-10-25T16:03:06.348422Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-25T16:15:00Z | Angers vs Lorient (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
-| 2026-10-25T16:15:00Z | AJ Auxerre vs Le Mans (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
-| 2026-10-25T16:15:00Z | Marseille vs Le Havre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
-| 2026-10-25T16:15:00Z | Rennes vs Strasbourg (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
-| 2026-10-25T16:30:00Z | Sunderland vs Leeds United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
-| 2026-10-25T16:30:00Z | SC Freiburg vs Bayern Munich (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
-| 2026-10-25T17:00:00Z | Lecce vs Juventus (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
-| 2026-10-25T17:45:00Z | Aldosivi vs Belgrano (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-25T16:30:00Z | Sunderland vs Leeds United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
+| 2026-10-25T16:30:00Z | SC Freiburg vs Bayern Munich (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
+| 2026-10-25T17:00:00Z | Lecce vs Juventus (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
+| 2026-10-25T17:45:00Z | Aldosivi vs Belgrano (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-25T19:45:00Z | Paris Saint-Germain vs Lyon (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-25T19:45:00Z | Udinese vs AC Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-25T20:00:00Z | Independiente vs Boca Juniors (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-10-25T22:15:00Z | River Plate vs Racing Club (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-25T20:00:00Z | Independiente vs Boca Juniors (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-25T22:15:00Z | River Plate vs Racing Club (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-25T23:00:00Z | Atlas vs Puebla (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-26T00:30:00Z | Central Córdoba vs Vélez Sarsfield (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-26T00:30:00Z | Central Córdoba vs Vélez Sarsfield (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-26T01:00:00Z | Querétaro vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-26T01:00:00Z | Los Angeles FC vs LA Galaxy (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-26T01:05:00Z | Club América vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -42,11 +38,11 @@ model board generated 2026-10-25T16:03:06.348422Z · simulations this update: 0 
 | Los Angeles FC vs LA Galaxy | btts | no | 0.3800 | 0.567 [0.454, 0.670] | +0.170 | +0.103 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | away team total over 1.5 | no | 0.6800 | 0.830 [0.738, 0.903] | +0.134 | +0.085 | 0.76 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | away team total over 0.5 | no | 0.3200 | 0.488 [0.370, 0.594] | +0.153 | +0.080 | 0.39 | - |  | RESEARCH_CANDIDATE |
-| SC Freiburg vs Bayern Munich | Result: away | no | 0.3300 | 0.542 [0.347, 0.730] | +0.196 | +0.075 | 0.4 | 0.353 | * | RESEARCH_CANDIDATE |
+| SC Freiburg vs Bayern Munich | Result: away | no | 0.3300 | 0.542 [0.347, 0.730] | +0.196 | +0.075 | 0.4 | 0.334 | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 2.5 | no | 0.3300 | 0.514 [0.351, 0.664] | +0.168 | +0.069 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 3.5 | no | 0.5600 | 0.722 [0.571, 0.848] | +0.145 | +0.061 | 0.62 | - |  | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Lyon | Result: home | no | 0.3000 | 0.484 [0.287, 0.679] | +0.169 | +0.049 | 0.34 | - | * | RESEARCH_CANDIDATE |
-| SC Freiburg vs Bayern Munich | Result: home | yes | 0.1600 | 0.330 [0.167, 0.512] | +0.161 | +0.045 | 0.2 | 0.169 |  | RESEARCH_CANDIDATE |
+| SC Freiburg vs Bayern Munich | Result: home | yes | 0.1600 | 0.330 [0.167, 0.512] | +0.161 | +0.045 | 0.2 | 0.156 |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 4.5 | no | 0.7500 | 0.861 [0.755, 0.943] | +0.098 | +0.045 | 0.79 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | btts | no | 0.4000 | 0.534 [0.409, 0.653] | +0.118 | +0.038 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | Total goals over 2.5 | no | 0.4100 | 0.567 [0.403, 0.723] | +0.140 | +0.036 | 0.44 | - | * | RESEARCH_CANDIDATE |
@@ -81,13 +77,15 @@ model board generated 2026-10-25T16:03:06.348422Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 668
-action_NO_QUOTE: 268
+action_NO_EDGE: 645
+action_NO_QUOTE: 267
 action_RESEARCH_CANDIDATE: 38
-contract_sides: 974
-fixtures: 22
+contract_sides: 950
+fixtures: 18
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
+
+Removed (kicked off): 4
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
