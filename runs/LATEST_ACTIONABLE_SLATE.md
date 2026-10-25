@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261025T150144Z-08fcca` · generated 2026-10-25T15:01:44.553022Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261025T151305Z-b6bcee` · generated 2026-10-25T15:13:05.112927Z · trigger `kickoff_chain:T-60/T-5` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-25T14:58:49.951925Z (CURRENT at publish; CURRENT until 2026-10-25T15:18:49.951925Z, STALE after 2026-10-25T15:28:49.951925Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-25T15:10:00.093302Z (CURRENT at publish; CURRENT until 2026-10-25T15:30:00.093302Z, STALE after 2026-10-25T15:40:00.093302Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-25T14:42:55.953139Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.56s
+model board generated 2026-10-25T15:13:03.037449Z · simulations this update: 4 · Odds API calls this update: 1 (credits 3) · reprice 0.55s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,10 +12,10 @@ model board generated 2026-10-25T14:42:55.953139Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-25T16:15:00Z | Angers vs Lorient (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-25T16:15:00Z | AJ Auxerre vs Le Mans (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-25T16:15:00Z | Marseille vs Le Havre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-25T16:15:00Z | Rennes vs Strasbourg (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-25T16:15:00Z | Angers vs Lorient (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
+| 2026-10-25T16:15:00Z | AJ Auxerre vs Le Mans (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
+| 2026-10-25T16:15:00Z | Marseille vs Le Havre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
+| 2026-10-25T16:15:00Z | Rennes vs Strasbourg (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
 | 2026-10-25T16:30:00Z | Sunderland vs Leeds United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-25T16:30:00Z | SC Freiburg vs Bayern Munich (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-25T17:00:00Z | Lecce vs Juventus (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
