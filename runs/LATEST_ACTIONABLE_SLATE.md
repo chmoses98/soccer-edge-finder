@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261025T213154Z-447b15` · generated 2026-10-25T21:31:54.042815Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261025T214702Z-378490` · generated 2026-10-25T21:47:02.806923Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-25T21:29:06.081567Z (CURRENT at publish; CURRENT until 2026-10-25T21:49:06.081567Z, STALE after 2026-10-25T21:59:06.081567Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-25T21:44:07.708075Z (CURRENT at publish; CURRENT until 2026-10-25T22:04:07.708075Z, STALE after 2026-10-25T22:14:07.708075Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-25T20:24:16.883165Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.51s
 
@@ -12,22 +12,22 @@ model board generated 2026-10-25T20:24:16.883165Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-25T22:15:00Z | River Plate vs Racing Club (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
+| 2026-10-25T22:15:00Z | River Plate vs Racing Club (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
 | 2026-10-25T23:00:00Z | Atlas vs Puebla (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-26T00:30:00Z | Central Córdoba vs Vélez Sarsfield (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-26T01:00:00Z | Querétaro vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-26T01:00:00Z | Los Angeles FC vs LA Galaxy (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-26T01:05:00Z | Club América vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-26T03:10:00Z | Tijuana vs Santos Laguna (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 32 | 0 |
-| 2026-10-26T22:00:00Z | Unión vs Estudiantes de La Plata (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-26T22:30:00Z | Coritiba vs Grêmio (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-26T23:00:00Z | Flamengo vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-26T22:00:00Z | Unión vs Estudiantes de La Plata (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-26T22:30:00Z | Coritiba vs Grêmio (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-26T23:00:00Z | Flamengo vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-27T00:15:00Z | Instituto vs Deportivo Riestra (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-27T17:30:00Z | Sassuolo vs Lazio (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-27T19:45:00Z | AS Roma vs Cagliari (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-27T19:45:00Z | Torino vs Como (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (31; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (32; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -55,6 +55,7 @@ model board generated 2026-10-25T20:24:16.883165Z · simulations this update: 0 
 | Tijuana vs Santos Laguna | Total goals over 4.5 | no | 0.8200 | 0.891 [0.799, 0.961] | +0.060 | +0.013 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | First-half total goals over 2.5 | no | 0.8200 | 0.883 [0.799, 0.951] | +0.053 | +0.010 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 0.5 | no | 0.0400 | 0.084 [0.039, 0.134] | +0.042 | +0.008 | 0.04 | - |  | RESEARCH_CANDIDATE |
+| Tijuana vs Santos Laguna | Total goals over 5.5 | no | 0.9200 | 0.954 [0.906, 0.989] | +0.029 | +0.007 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Flamengo vs Atlético Mineiro | Result: draw | yes | 0.1650 | 0.228 [0.149, 0.304] | +0.053 | +0.005 | 0.16 | - | * | RESEARCH_CANDIDATE |
 | Atlas vs Puebla | btts | no | 0.4700 | 0.563 [0.444, 0.684] | +0.076 | +0.003 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | First-half total goals over 1.5 | no | 0.6200 | 0.706 [0.588, 0.822] | +0.070 | +0.002 | 0.62 | - | * | RESEARCH_CANDIDATE |
@@ -66,12 +67,12 @@ model board generated 2026-10-25T20:24:16.883165Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 651
+action_NO_EDGE: 650
 action_NO_QUOTE: 258
-action_RESEARCH_CANDIDATE: 31
+action_RESEARCH_CANDIDATE: 32
 contract_sides: 940
 fixtures: 14
-fixtures_model_invalidated: 0
+fixtures_model_invalidated: 1
 fixtures_model_missing: 0
 ```
 
