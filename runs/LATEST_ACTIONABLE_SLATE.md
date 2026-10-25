@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261025T102538Z-12ba44` · generated 2026-10-25T10:25:38.030695Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261025T103204Z-6f6f20` · generated 2026-10-25T10:32:04.178453Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-25T10:22:45.526848Z (CURRENT at publish; CURRENT until 2026-10-25T10:42:45.526848Z, STALE after 2026-10-25T10:52:45.526848Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-25T10:29:01.059483Z (CURRENT at publish; CURRENT until 2026-10-25T10:49:01.059483Z, STALE after 2026-10-25T10:59:01.059483Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-25T06:40:10.826390Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.56s
+model board generated 2026-10-25T10:32:03.480534Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.72s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-25T06:40:10.826390Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-25T11:30:00Z | Inter Milan vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-25T11:30:00Z | Inter Milan vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
 | 2026-10-25T12:00:00Z | Athletic Club vs Getafe (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-25T12:00:00Z | Atlético Madrid vs Deportivo La Coruña (esp.la_liga) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 51 | 0 |
 | 2026-10-25T12:00:00Z | FC Barcelona vs Real Madrid (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -51,7 +51,7 @@ model board generated 2026-10-25T06:40:10.826390Z · simulations this update: 0 
 | 2026-10-26T22:30:00Z | Coritiba vs Grêmio (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-26T23:00:00Z | Flamengo vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (42; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (43; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -93,15 +93,15 @@ model board generated 2026-10-25T06:40:10.826390Z · simulations this update: 0 
 | Los Angeles FC vs LA Galaxy | Exact score 0-0 (home-away) | yes | 0.0400 | 0.083 [0.033, 0.140] | +0.040 | +0.006 | 0.04 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 0.5 | no | 0.0400 | 0.083 [0.033, 0.140] | +0.040 | +0.006 | 0.04 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Cruz Azul | away team total over 0.5 | no | 0.1800 | 0.279 [0.158, 0.401] | +0.089 | +0.005 | 0.18 | - | * | RESEARCH_CANDIDATE |
+| Tijuana vs Santos Laguna | away team total over 2.5 | no | 0.8700 | 0.917 [0.849, 0.970] | +0.039 | +0.005 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | away team total over 1.5 | no | 0.6500 | 0.743 [0.614, 0.856] | +0.077 | +0.002 | 0.65 | - |  | RESEARCH_CANDIDATE |
-| Lecce vs Juventus | Result: away | no | 0.3800 | 0.513 [0.345, 0.679] | +0.116 | +0.001 | 0.38 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 740
-action_NO_QUOTE: 280
-action_RESEARCH_CANDIDATE: 42
+action_NO_EDGE: 741
+action_NO_QUOTE: 278
+action_RESEARCH_CANDIDATE: 43
 contract_sides: 1062
 fixtures: 38
 fixtures_model_invalidated: 0
