@@ -1,13 +1,18 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 182,
-  "PINNACLE_VALID_CLOSE": 256,
-  "NO_SPORT_KEY": 19,
-  "MISSED_DISPATCHER_CLOSE": 45,
+  "PINNACLE_VALID_CLOSE": 257,
+  "MISSED_DISPATCHER_CLOSE": 47,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 183,
   "PINNACLE_QUOTED_NOTHING": 15,
+  "NO_SPORT_KEY": 19,
   "NO_REFERENCE_EVENT": 1
  },
  "fixtures": {
+  "fx:arg.primera:2026:arg.aldosivi:arg.belgrano": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
+  },
   "fx:arg.primera:2026:arg.aldosivi:arg.sarmiento": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -1083,6 +1088,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261011T135845Z"
   },
+  "fx:esp.la_liga:2026-27:esp.real_sociedad:esp.levante": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
+  },
   "fx:esp.la_liga:2026-27:esp.real_sociedad:esp.levante:matchday_10": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -1877,6 +1887,16 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261011T124402Z"
+  },
+  "fx:ita.serie_a:2026-27:ita.lecce:ita.juventus": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:ita.serie_a:2026-27:ita.lecce:ita.juventus:matchday_8": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261025T164500Z"
   },
   "fx:ita.serie_a:2026-27:ita.milan:ita.atalanta": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
