@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261025T082532Z-9630f8` · generated 2026-10-25T08:25:32.668440Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261025T084033Z-5afdbd` · generated 2026-10-25T08:40:33.582886Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-25T08:22:40.150670Z (CURRENT at publish; CURRENT until 2026-10-25T08:42:40.150670Z, STALE after 2026-10-25T08:52:40.150670Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-25T08:37:41.037753Z (CURRENT at publish; CURRENT until 2026-10-25T08:57:41.037753Z, STALE after 2026-10-25T09:07:41.037753Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-25T06:40:10.826390Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.75s
+model board generated 2026-10-25T06:40:10.826390Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.70s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -60,8 +60,8 @@ model board generated 2026-10-25T06:40:10.826390Z · simulations this update: 0 
 | Los Angeles FC vs LA Galaxy | away team total over 0.5 | no | 0.3200 | 0.495 [0.371, 0.611] | +0.159 | +0.078 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | Hull City vs Brentford | Result: home | yes | 0.1900 | 0.419 [0.214, 0.647] | +0.219 | +0.074 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | away team total over 1.5 | no | 0.6900 | 0.833 [0.738, 0.912] | +0.128 | +0.074 | 0.76 | - |  | RESEARCH_CANDIDATE |
+| SC Freiburg vs Bayern Munich | Result: away | no | 0.3400 | 0.542 [0.347, 0.730] | +0.186 | +0.064 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 2.5 | no | 0.3300 | 0.509 [0.327, 0.673] | +0.164 | +0.058 | 0.38 | - | * | RESEARCH_CANDIDATE |
-| SC Freiburg vs Bayern Munich | Result: away | no | 0.3500 | 0.542 [0.347, 0.730] | +0.176 | +0.054 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 3.5 | no | 0.5600 | 0.716 [0.544, 0.855] | +0.139 | +0.050 | 0.61 | - |  | RESEARCH_CANDIDATE |
 | SC Freiburg vs Bayern Munich | Result: home | yes | 0.1600 | 0.330 [0.167, 0.512] | +0.161 | +0.045 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | btts | no | 0.4000 | 0.540 [0.418, 0.657] | +0.123 | +0.045 | 0.44 | - | * | RESEARCH_CANDIDATE |
