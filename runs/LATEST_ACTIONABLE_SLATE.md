@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261025T113355Z-626306` · generated 2026-10-25T11:33:55.819333Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261025T114801Z-0297f9` · generated 2026-10-25T11:48:01.497198Z · trigger `kickoff_chain:T-15` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-25T11:31:00.584448Z (CURRENT at publish; CURRENT until 2026-10-25T11:51:00.584448Z, STALE after 2026-10-25T12:01:00.584448Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-25T11:45:01.381153Z (CURRENT at publish; CURRENT until 2026-10-25T12:05:01.381153Z, STALE after 2026-10-25T12:15:01.381153Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-25T10:59:48.089990Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.56s
 
@@ -69,7 +69,6 @@ model board generated 2026-10-25T10:59:48.089990Z · simulations this update: 0 
 | SC Freiburg vs Bayern Munich | Result: home | yes | 0.1700 | 0.330 [0.167, 0.512] | +0.151 | +0.035 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | away team total over 2.5 | no | 0.9000 | 0.958 [0.921, 0.986] | +0.052 | +0.034 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | First half: both teams to score | no | 0.7600 | 0.846 [0.768, 0.911] | +0.073 | +0.027 | 0.78 | - | * | RESEARCH_CANDIDATE |
-| Athletic Club vs Getafe | Result: home | no | 0.3800 | 0.523 [0.366, 0.673] | +0.126 | +0.025 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 1.5 | no | 0.1500 | 0.267 [0.138, 0.397] | +0.108 | +0.025 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Exact score 1-0 (home-away) | yes | 0.0700 | 0.134 [0.077, 0.189] | +0.059 | +0.023 | 0.09 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | First-half total goals over 1.5 | no | 0.5600 | 0.672 [0.528, 0.792] | +0.095 | +0.021 | 0.58 | - | * | RESEARCH_CANDIDATE |
@@ -77,6 +76,7 @@ model board generated 2026-10-25T10:59:48.089990Z · simulations this update: 0 
 | Los Angeles FC vs LA Galaxy | Total goals over 5.5 | no | 0.8800 | 0.935 [0.862, 0.983] | +0.047 | +0.019 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Celta Vigo vs Real Betis | Result: away | no | 0.5800 | 0.703 [0.560, 0.829] | +0.106 | +0.019 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Udinese vs AC Milan | Result: home | yes | 0.2100 | 0.349 [0.197, 0.514] | +0.128 | +0.019 | 0.22 | - | * | RESEARCH_CANDIDATE |
+| Athletic Club vs Getafe | Result: home | no | 0.3900 | 0.523 [0.366, 0.673] | +0.116 | +0.015 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Lyon | Result: draw | yes | 0.1700 | 0.235 [0.167, 0.299] | +0.055 | +0.014 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Lyon | Result: away | yes | 0.1300 | 0.249 [0.114, 0.406] | +0.111 | +0.014 | 0.14 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | Total goals over 4.5 | no | 0.8200 | 0.891 [0.796, 0.963] | +0.061 | +0.013 | 0.83 | - |  | RESEARCH_CANDIDATE |
