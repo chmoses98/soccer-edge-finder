@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261025T004818Z-e493af` · generated 2026-10-25T00:48:18.490893Z · trigger `kickoff_chain:T-15` · mode `model_refresh_and_reprice`
+slate `slate-20261025T005757Z-d96e66` · generated 2026-10-25T00:57:57.508498Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-25T00:45:06.111009Z (CURRENT at publish; CURRENT until 2026-10-25T01:05:06.111009Z, STALE after 2026-10-25T01:15:06.111009Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-25T00:55:00.051584Z (CURRENT at publish; CURRENT until 2026-10-25T01:15:00.051584Z, STALE after 2026-10-25T01:25:00.051584Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-25T00:48:09.427409Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 1.43s
+model board generated 2026-10-25T00:48:09.427409Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.24s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -13,8 +13,8 @@ model board generated 2026-10-25T00:48:09.427409Z · simulations this update: 1 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
 | 2026-10-25T01:00:00Z | Monterrey vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT close | CURRENT | 77 | 0 |
-| 2026-10-25T01:30:00Z | Colorado Rapids vs Vancouver Whitecaps (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | CURRENT entry | CURRENT | 77 | 0 |
-| 2026-10-25T01:30:00Z | Real Salt Lake vs St. Louis City SC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | CURRENT entry | CURRENT | 32 | 0 |
+| 2026-10-25T01:30:00Z | Colorado Rapids vs Vancouver Whitecaps (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | AGING entry | CURRENT | 77 | 0 |
+| 2026-10-25T01:30:00Z | Real Salt Lake vs St. Louis City SC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | AGING entry | CURRENT | 32 | 0 |
 | 2026-10-25T02:30:00Z | Portland Timbers vs Charlotte FC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-25T02:30:00Z | San Diego FC vs Seattle Sounders (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-25T03:10:00Z | Pumas UNAM vs Tigres UANL (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -55,7 +55,7 @@ model board generated 2026-10-25T00:48:09.427409Z · simulations this update: 1 
 | 2026-10-26T01:05:00Z | Club América vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-26T03:10:00Z | Tijuana vs Santos Laguna (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 
-## Candidates on CURRENT prices (107; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (108; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -104,8 +104,8 @@ model board generated 2026-10-25T00:48:09.427409Z · simulations this update: 1 
 
 ```
 action_NO_EDGE: 1362
-action_NO_QUOTE: 3287
-action_RESEARCH_CANDIDATE: 107
+action_NO_QUOTE: 3286
+action_RESEARCH_CANDIDATE: 108
 contract_sides: 4756
 fixtures: 42
 fixtures_model_invalidated: 0
