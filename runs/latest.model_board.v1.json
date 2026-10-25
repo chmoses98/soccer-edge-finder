@@ -22030,8 +22030,8 @@
         "source": "production posterior (dc_laplace_v1) that priced this fixture",
         "version": "dc_matchup_v1"
       },
-      "model_fitted_at": "2026-10-25T18:44:14.569893Z",
-      "model_generated_at": "2026-10-25T18:44:16.223186Z",
+      "model_fitted_at": "2026-10-25T19:14:07.031580Z",
+      "model_generated_at": "2026-10-25T19:14:08.545019Z",
       "results_observed_at": "2026-10-25T18:37:08.625940Z",
       "scripts": {
         "contract_gaps": {},
@@ -22649,7 +22649,7 @@
         }
       },
       "sim_key": "sha256:399cc319c1d6489d952392cbc981a3949d60aa33576d92732ca5b96d550579f0",
-      "source_run_id": "run-20261025T184416Z-411c51",
+      "source_run_id": "run-20261025T191408Z-3b8daa",
       "summary": {
         "mean_away_goals": 1.09521,
         "mean_home_goals": 1.73779,
@@ -22658,6 +22658,1318 @@
         "p_draw": 0.23539,
         "p_home": 0.51382,
         "p_over_2_5": 0.52203
+      }
+    },
+    "fx:ita.serie_a:2026-27:ita.sassuolo:ita.lazio:matchday_9": {
+      "away": "ita.lazio",
+      "competition_id": "ita.serie_a",
+      "competition_name": "Serie A",
+      "contracts": {
+        "KXSERIEAGAME-26OCT27SASLAZ-LAZ": {
+          "description": "Result: away",
+          "event_ticker": "KXSERIEAGAME-26OCT27SASLAZ",
+          "family": "match_result_3way",
+          "interval_level": 0.8,
+          "line": null,
+          "n_worlds": 1000,
+          "p": 0.338765,
+          "p_high": 0.499346,
+          "p_low": 0.196708,
+          "param_sd": 0.11725,
+          "period": "regulation",
+          "q": [
+            0.0985,
+            0.12013,
+            0.12976,
+            0.14034,
+            0.15145,
+            0.16313,
+            0.17002,
+            0.18103,
+            0.1852,
+            0.19404,
+            0.1972,
+            0.19893,
+            0.20288,
+            0.20877,
+            0.21404,
+            0.21743,
+            0.22128,
+            0.22596,
+            0.22869,
+            0.23011,
+            0.23574,
+            0.23897,
+            0.24148,
+            0.24436,
+            0.2475,
+            0.24979,
+            0.25391,
+            0.25658,
+            0.25922,
+            0.26215,
+            0.26595,
+            0.26917,
+            0.27423,
+            0.27854,
+            0.28287,
+            0.28679,
+            0.29081,
+            0.29347,
+            0.29737,
+            0.29928,
+            0.30327,
+            0.30634,
+            0.30892,
+            0.31183,
+            0.3151,
+            0.3177,
+            0.32056,
+            0.32515,
+            0.32796,
+            0.33068,
+            0.33275,
+            0.33611,
+            0.33892,
+            0.34488,
+            0.34836,
+            0.35109,
+            0.35342,
+            0.35603,
+            0.35952,
+            0.36124,
+            0.36625,
+            0.37013,
+            0.3732,
+            0.37692,
+            0.37963,
+            0.38192,
+            0.38504,
+            0.38864,
+            0.39159,
+            0.39541,
+            0.39767,
+            0.40255,
+            0.40729,
+            0.41236,
+            0.41518,
+            0.4191,
+            0.4236,
+            0.43127,
+            0.4379,
+            0.44154,
+            0.44588,
+            0.4546,
+            0.45677,
+            0.46111,
+            0.46588,
+            0.46947,
+            0.47309,
+            0.4794,
+            0.489,
+            0.49641,
+            0.50078,
+            0.50664,
+            0.51783,
+            0.52441,
+            0.53895,
+            0.54324,
+            0.5592,
+            0.57038,
+            0.6117,
+            0.65007
+          ],
+          "sc": {
+            "hi": [
+              0.0,
+              0.0,
+              0.4334,
+              0.3704,
+              0.482,
+              1.0
+            ],
+            "lo": [
+              0.0,
+              0.0,
+              0.2437,
+              0.1598,
+              0.2444,
+              1.0
+            ],
+            "p": 0.338765,
+            "sp": [
+              0.0,
+              0.0,
+              0.33416,
+              0.25716,
+              0.35622,
+              1.0
+            ]
+          },
+          "side": "away"
+        },
+        "KXSERIEAGAME-26OCT27SASLAZ-SAS": {
+          "description": "Result: home",
+          "event_ticker": "KXSERIEAGAME-26OCT27SASLAZ",
+          "family": "match_result_3way",
+          "interval_level": 0.8,
+          "line": null,
+          "n_worlds": 1000,
+          "p": 0.396928,
+          "p_high": 0.575474,
+          "p_low": 0.24001,
+          "param_sd": 0.130824,
+          "period": "regulation",
+          "q": [
+            0.13826,
+            0.16125,
+            0.17743,
+            0.19428,
+            0.20346,
+            0.20888,
+            0.21575,
+            0.22622,
+            0.23015,
+            0.23473,
+            0.24134,
+            0.24488,
+            0.24832,
+            0.25077,
+            0.25711,
+            0.26143,
+            0.266,
+            0.27255,
+            0.2756,
+            0.2799,
+            0.28453,
+            0.28804,
+            0.29269,
+            0.29431,
+            0.29805,
+            0.29972,
+            0.30176,
+            0.30559,
+            0.31072,
+            0.3145,
+            0.31892,
+            0.32132,
+            0.32646,
+            0.32939,
+            0.33201,
+            0.3339,
+            0.33851,
+            0.34177,
+            0.34447,
+            0.34917,
+            0.35219,
+            0.35674,
+            0.36005,
+            0.36366,
+            0.36652,
+            0.37025,
+            0.37267,
+            0.37543,
+            0.37735,
+            0.38059,
+            0.38285,
+            0.38678,
+            0.39045,
+            0.39461,
+            0.39941,
+            0.40443,
+            0.40772,
+            0.40983,
+            0.41474,
+            0.41968,
+            0.42291,
+            0.42447,
+            0.42718,
+            0.43156,
+            0.43513,
+            0.43972,
+            0.44436,
+            0.44943,
+            0.45226,
+            0.45543,
+            0.45902,
+            0.46487,
+            0.46854,
+            0.47231,
+            0.47988,
+            0.48578,
+            0.49179,
+            0.49544,
+            0.50087,
+            0.50735,
+            0.5135,
+            0.51776,
+            0.5225,
+            0.52713,
+            0.53727,
+            0.54463,
+            0.55139,
+            0.55815,
+            0.56752,
+            0.57375,
+            0.57867,
+            0.58892,
+            0.59787,
+            0.61216,
+            0.62354,
+            0.65313,
+            0.67169,
+            0.68832,
+            0.70287,
+            0.74532
+          ],
+          "sc": {
+            "hi": [
+              1.0,
+              0.5343,
+              0.4627,
+              0.4529,
+              0.0,
+              0.0
+            ],
+            "lo": [
+              1.0,
+              0.2566,
+              0.2601,
+              0.1909,
+              0.0,
+              0.0
+            ],
+            "p": 0.396928,
+            "sp": [
+              1.0,
+              0.38934,
+              0.35892,
+              0.30735,
+              0.0,
+              0.0
+            ]
+          },
+          "side": "home"
+        },
+        "KXSERIEAGAME-26OCT27SASLAZ-TIE": {
+          "description": "Result: draw",
+          "event_ticker": "KXSERIEAGAME-26OCT27SASLAZ",
+          "family": "match_result_3way",
+          "interval_level": 0.8,
+          "line": null,
+          "n_worlds": 1000,
+          "p": 0.264307,
+          "p_high": 0.327836,
+          "p_low": 0.205166,
+          "param_sd": 0.047966,
+          "period": "regulation",
+          "q": [
+            0.14676,
+            0.15963,
+            0.16826,
+            0.18082,
+            0.1844,
+            0.18818,
+            0.19551,
+            0.19845,
+            0.20028,
+            0.20386,
+            0.20558,
+            0.20888,
+            0.21085,
+            0.2145,
+            0.21749,
+            0.21911,
+            0.221,
+            0.22227,
+            0.22388,
+            0.2249,
+            0.22653,
+            0.22758,
+            0.22888,
+            0.23007,
+            0.23129,
+            0.23254,
+            0.23397,
+            0.23451,
+            0.23613,
+            0.2372,
+            0.23912,
+            0.24055,
+            0.2417,
+            0.24306,
+            0.24412,
+            0.24508,
+            0.24611,
+            0.24764,
+            0.24871,
+            0.24959,
+            0.25051,
+            0.2513,
+            0.25258,
+            0.2539,
+            0.25468,
+            0.25562,
+            0.25697,
+            0.25772,
+            0.2595,
+            0.26068,
+            0.26233,
+            0.2636,
+            0.26479,
+            0.26599,
+            0.26722,
+            0.26893,
+            0.27002,
+            0.27139,
+            0.27235,
+            0.2746,
+            0.27575,
+            0.27722,
+            0.27855,
+            0.28006,
+            0.28206,
+            0.28319,
+            0.284,
+            0.28511,
+            0.28647,
+            0.28797,
+            0.28945,
+            0.29082,
+            0.2922,
+            0.29337,
+            0.29441,
+            0.29794,
+            0.29919,
+            0.30162,
+            0.30327,
+            0.30479,
+            0.30657,
+            0.30845,
+            0.31087,
+            0.31255,
+            0.31493,
+            0.31676,
+            0.31905,
+            0.32195,
+            0.32342,
+            0.32674,
+            0.32861,
+            0.33164,
+            0.33596,
+            0.33957,
+            0.34289,
+            0.34603,
+            0.35127,
+            0.36136,
+            0.37126,
+            0.38119
+          ],
+          "sc": {
+            "hi": [
+              0.0,
+              0.7434,
+              0.3817,
+              0.5318,
+              0.7556,
+              0.0
+            ],
+            "lo": [
+              0.0,
+              0.4657,
+              0.2305,
+              0.3347,
+              0.518,
+              0.0
+            ],
+            "p": 0.264307,
+            "sp": [
+              0.0,
+              0.61066,
+              0.30692,
+              0.43549,
+              0.64378,
+              0.0
+            ]
+          },
+          "side": "draw"
+        }
+      },
+      "event_name": "Sassuolo vs Lazio",
+      "fixture_id": "fx:ita.serie_a:2026-27:ita.sassuolo:ita.lazio:matchday_9",
+      "fixtures_observed_at": "2026-10-25T18:37:15.686012Z",
+      "home": "ita.sassuolo",
+      "input_fingerprint": "sha256:6c4984efb9526d7d698afdf88952b973051e7508ba716451b750a70f2856b48e",
+      "inputs": {
+        "competition_id": "ita.serie_a",
+        "draws_per_world": 100,
+        "engine_version": "world_sim_v2",
+        "kickoff_utc": "2026-10-27T17:30:00Z",
+        "lineup_key": "none",
+        "model_family": "data_only.world_sim_v2",
+        "model_version": "dc_laplace_v1",
+        "n_worlds": 1000,
+        "neutral_site": false,
+        "parameter_hash": "sha256:d1d9964dbde12b186576bf3661904cb4847c8f735e6a12bfbacf39724eb327b3",
+        "requires_winner": false,
+        "stage": "Matchday 9",
+        "worlds_version": "worlds_v1"
+      },
+      "lineup": null,
+      "match_context": {
+        "aggregate": {
+          "source": "no aggregate (not a second leg)",
+          "status": "DERIVED",
+          "value": null
+        },
+        "competition_format": {
+          "source": "registry",
+          "status": "KNOWN",
+          "value": "league"
+        },
+        "competition_id": "ita.serie_a",
+        "competition_name": {
+          "source": "registry",
+          "status": "KNOWN",
+          "value": "Serie A"
+        },
+        "competition_type": {
+          "source": "registry format league",
+          "status": "DERIVED",
+          "value": "LEAGUE"
+        },
+        "draw_utility": {
+          "source": "not objectively derivable without standings and scenario inputs",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "flags": [],
+        "knockout": {
+          "source": "registry format league (round robin)",
+          "status": "DERIVED",
+          "value": false
+        },
+        "leg_number": {
+          "source": "single match (not a two-legged tie)",
+          "status": "DERIVED",
+          "value": null
+        },
+        "model_effect": "DISPLAY_ONLY. Production probabilities use only neutral_site (no home advantage) and requires_winner (extra time / penalties for to-advance contracts); no motivation adjustment is applied.",
+        "must_win": {
+          "source": "not objectively derivable without standings and scenario inputs",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "neutral_site": {
+          "source": "ESPN neutralSite / international venue-country rule",
+          "status": "KNOWN",
+          "value": false
+        },
+        "requires_winner": {
+          "source": "fixture feed (penalties possible)",
+          "status": "KNOWN",
+          "value": false
+        },
+        "rest_days_away": {
+          "source": "days since the team's previous match in the archive (results of archived competitions only; a match in a competition the archive does not hold is missed)",
+          "status": "DERIVED",
+          "value": 38
+        },
+        "rest_days_home": {
+          "source": "days since the team's previous match in the archive (results of archived competitions only; a match in a competition the archive does not hold is missed)",
+          "status": "DERIVED",
+          "value": 39
+        },
+        "rotation_uncertainty": {
+          "source": "no rotation / availability provider; XI publication is the only availability input",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "stage": {
+          "source": "fixture feed",
+          "status": "KNOWN",
+          "value": "Matchday 9"
+        },
+        "stage_kind": {
+          "source": "pattern over the stage label",
+          "status": "DERIVED",
+          "value": "ROUND_ROBIN"
+        },
+        "standings_implications": {
+          "source": "no standings / qualification-scenario input",
+          "status": "UNAVAILABLE",
+          "value": null
+        },
+        "version": "match_context_v1"
+      },
+      "matchup": {
+        "away": {
+          "attack": {
+            "log_rate": 0.0423,
+            "percentile": 0.543,
+            "sd": 0.2143,
+            "z": 0.127
+          },
+          "defence": {
+            "log_rate": 0.1653,
+            "percentile": 0.717,
+            "sd": 0.2262,
+            "z": 0.871
+          },
+          "effective_matches": 10.9,
+          "expected_vs_average_opponent": {
+            "away": {
+              "conceded": 1.096,
+              "scored": 1.048
+            },
+            "home": {
+              "conceded": 0.857,
+              "scored": 1.34
+            },
+            "neutral": {
+              "conceded": 0.857,
+              "scored": 1.048
+            }
+          },
+          "net_rating": {
+            "percentile": 0.674,
+            "value": 0.2075,
+            "z": 0.508
+          },
+          "raw_form": {
+            "basis": "unadjusted context (not opponent-adjusted; not a strength estimate)",
+            "goals_against_per_match": 1.0,
+            "goals_for_per_match": 1.083,
+            "matches_365d": 36
+          },
+          "sample_quality": "MEDIUM",
+          "schedule_strength": {
+            "basis": "decay-weighted mean (attack + defence) of opponents faced in the 730-day fit window",
+            "matches_in_window": 73,
+            "mean_opponent_net_rating": -0.0161,
+            "percentile_vs_pool": 0.5
+          },
+          "team_id": "ita.lazio"
+        },
+        "evidence_status": "MODEL_DERIVED",
+        "home": {
+          "attack": {
+            "log_rate": 0.1246,
+            "percentile": 0.717,
+            "sd": 0.2152,
+            "z": 0.468
+          },
+          "defence": {
+            "log_rate": -0.0878,
+            "percentile": 0.413,
+            "sd": 0.2138,
+            "z": -0.429
+          },
+          "effective_matches": 10.3,
+          "expected_vs_average_opponent": {
+            "away": {
+              "conceded": 1.412,
+              "scored": 1.138
+            },
+            "home": {
+              "conceded": 1.104,
+              "scored": 1.455
+            },
+            "neutral": {
+              "conceded": 1.104,
+              "scored": 1.138
+            }
+          },
+          "net_rating": {
+            "percentile": 0.543,
+            "value": 0.0368,
+            "z": 0.075
+          },
+          "raw_form": {
+            "basis": "unadjusted context (not opponent-adjusted; not a strength estimate)",
+            "goals_against_per_match": 1.417,
+            "goals_for_per_match": 1.306,
+            "matches_365d": 36
+          },
+          "sample_quality": "MEDIUM",
+          "schedule_strength": {
+            "basis": "decay-weighted mean (attack + defence) of opponents faced in the 730-day fit window",
+            "matches_in_window": 43,
+            "mean_opponent_net_rating": 0.0344,
+            "percentile_vs_pool": 0.542
+          },
+          "team_id": "ita.sassuolo"
+        },
+        "home_advantage_log_rate": 0.2459,
+        "matchups": {
+          "AWAY_ATTACK_vs_HOME_DEFENSE": {
+            "advantage_log_rate": 0.1143,
+            "advantage_sd": 0.3044,
+            "advantage_side": "AWAY",
+            "attack_percentile": 0.543,
+            "attack_z": 0.127,
+            "defence_percentile": 0.413,
+            "defence_z": -0.429,
+            "evidence_quality": "MEDIUM",
+            "expected_goals_average_pairing": 1.016,
+            "expected_goals_model": 1.139,
+            "label": "BALANCED",
+            "p_attack_advantage": 0.646,
+            "z_gap": 0.557
+          },
+          "HOME_ATTACK_vs_AWAY_DEFENSE": {
+            "advantage_log_rate": -0.0565,
+            "advantage_sd": 0.314,
+            "advantage_side": "AWAY",
+            "attack_percentile": 0.717,
+            "attack_z": 0.468,
+            "defence_percentile": 0.717,
+            "defence_z": 0.871,
+            "evidence_quality": "MEDIUM",
+            "expected_goals_average_pairing": 1.299,
+            "expected_goals_model": 1.228,
+            "label": "BALANCED",
+            "p_attack_advantage": 0.429,
+            "z_gap": -0.403
+          }
+        },
+        "metric_kind": "DIXON_COLES_LATENT_LOG_RATE (opponent- and schedule-adjusted; not xG)",
+        "neutral_site": false,
+        "pool": "ita.serie_a",
+        "pool_reference_teams": 23,
+        "primary_mismatch": "AWAY_ATTACK_vs_HOME_DEFENSE",
+        "source": "production posterior (dc_laplace_v1) that priced this fixture",
+        "version": "dc_matchup_v1"
+      },
+      "model_fitted_at": "2026-10-25T19:14:06.988802Z",
+      "model_generated_at": "2026-10-25T19:14:08.545019Z",
+      "results_observed_at": "2026-10-25T18:37:08.625940Z",
+      "scripts": {
+        "contract_gaps": {},
+        "evidence": {
+          "conditional_probabilities": "MODEL_DERIVED",
+          "shares": "SIMULATION_DERIVED",
+          "tactical_interpretation": "UNAVAILABLE",
+          "taxonomy": "DESCRIPTIVE_MODEL_DERIVED",
+          "temporal_profile": "MODEL_DERIVED_TIMING_ASSUMPTION (no game-state dynamics in world_sim_v2)"
+        },
+        "first_half_share": 0.441,
+        "interval_level": 0.8,
+        "layer_version": "soccer_script_layer_v1",
+        "material": [
+          "HOME_CONTROL",
+          "HOME_CHASE",
+          "TIGHT_LOW_EVENT",
+          "OPEN_END_TO_END",
+          "AWAY_CHASE",
+          "AWAY_CONTROL"
+        ],
+        "material_min_share": 0.083333,
+        "material_rule": "simulation_share >= 1 / (2 * K)",
+        "method": "exact: per-world Dixon-Coles score matrices x the world_sim_v2 timing kernel (half-time split ~ binomial(first_half_share), first scorer exchangeable); no Monte Carlo",
+        "n_worlds": 1000,
+        "not_modelled": [
+          "red cards (world_sim_v2 drops red-card dynamics)",
+          "game-state effects on scoring rates (not fitted)"
+        ],
+        "overall_profile": {
+          "exp_away_goals": 1.1748,
+          "exp_home_goals": 1.3134,
+          "ht_ft": {
+            "A/A": 0.1938,
+            "A/D": 0.0453,
+            "A/H": 0.02,
+            "D/A": 0.1274,
+            "D/D": 0.1737,
+            "D/H": 0.1437,
+            "H/A": 0.0175,
+            "H/D": 0.0453,
+            "H/H": 0.2332
+          },
+          "p_away_1plus": 0.6728,
+          "p_away_2plus": 0.3244,
+          "p_away_3plus": 0.1233,
+          "p_away_clean_sheet": 0.2943,
+          "p_away_scores_first": 0.4301,
+          "p_away_win": 0.3388,
+          "p_btts": 0.4742,
+          "p_draw": 0.2643,
+          "p_home_1plus": 0.7057,
+          "p_home_2plus": 0.3688,
+          "p_home_3plus": 0.1559,
+          "p_home_clean_sheet": 0.3272,
+          "p_home_scores_first": 0.4742,
+          "p_home_win": 0.3969,
+          "p_level_at_half_time": 0.4448,
+          "p_no_goal": 0.0957,
+          "p_over_1_5": 0.6883,
+          "p_over_2_5": 0.4441,
+          "p_over_3_5": 0.2459,
+          "typical_scores": [
+            {
+              "p": 0.116,
+              "score": "1-1"
+            },
+            {
+              "p": 0.1119,
+              "score": "1-0"
+            },
+            {
+              "p": 0.1042,
+              "score": "0-1"
+            }
+          ]
+        },
+        "primary": "TIGHT_LOW_EVENT",
+        "profiles": {
+          "AWAY_CHASE": {
+            "exp_away_goals": 1.498,
+            "exp_home_goals": 1.0,
+            "ht_ft": {
+              "A/A": 0.0514,
+              "A/D": 0.0,
+              "A/H": 0.0,
+              "D/A": 0.1718,
+              "D/D": 0.3264,
+              "D/H": 0.0,
+              "H/A": 0.133,
+              "H/D": 0.3174,
+              "H/H": 0.0
+            },
+            "p_away_1plus": 1.0,
+            "p_away_2plus": 0.3562,
+            "p_away_3plus": 0.1058,
+            "p_away_clean_sheet": 0.0,
+            "p_away_scores_first": 0.0,
+            "p_away_win": 0.3562,
+            "p_btts": 1.0,
+            "p_draw": 0.6438,
+            "p_home_1plus": 1.0,
+            "p_home_2plus": 0.0,
+            "p_home_3plus": 0.0,
+            "p_home_clean_sheet": 0.0,
+            "p_home_scores_first": 1.0,
+            "p_home_win": 0.0,
+            "p_level_at_half_time": 0.4982,
+            "p_no_goal": 0.0,
+            "p_over_1_5": 1.0,
+            "p_over_2_5": 0.3562,
+            "p_over_3_5": 0.1058,
+            "typical_scores": [
+              {
+                "p": 0.6438,
+                "score": "1-1"
+              },
+              {
+                "p": 0.2504,
+                "score": "1-2"
+              },
+              {
+                "p": 0.0782,
+                "score": "1-3"
+              }
+            ]
+          },
+          "AWAY_CONTROL": {
+            "exp_away_goals": 2.5701,
+            "exp_home_goals": 0.4489,
+            "ht_ft": {
+              "A/A": 0.7389,
+              "A/D": 0.0,
+              "A/H": 0.0,
+              "D/A": 0.2611,
+              "D/D": 0.0,
+              "D/H": 0.0,
+              "H/A": 0.0,
+              "H/D": 0.0,
+              "H/H": 0.0
+            },
+            "p_away_1plus": 1.0,
+            "p_away_2plus": 1.0,
+            "p_away_3plus": 0.3934,
+            "p_away_clean_sheet": 0.5511,
+            "p_away_scores_first": 1.0,
+            "p_away_win": 1.0,
+            "p_btts": 0.4489,
+            "p_draw": 0.0,
+            "p_home_1plus": 0.4489,
+            "p_home_2plus": 0.0,
+            "p_home_3plus": 0.0,
+            "p_home_clean_sheet": 0.0,
+            "p_home_scores_first": 0.0,
+            "p_home_win": 0.0,
+            "p_level_at_half_time": 0.2611,
+            "p_no_goal": 0.0,
+            "p_over_1_5": 1.0,
+            "p_over_2_5": 0.6566,
+            "p_over_3_5": 0.2514,
+            "typical_scores": [
+              {
+                "p": 0.3434,
+                "score": "0-2"
+              },
+              {
+                "p": 0.2632,
+                "score": "1-2"
+              },
+              {
+                "p": 0.142,
+                "score": "0-3"
+              }
+            ]
+          },
+          "HOME_CHASE": {
+            "exp_away_goals": 1.0,
+            "exp_home_goals": 1.5716,
+            "ht_ft": {
+              "A/A": 0.0,
+              "A/D": 0.3011,
+              "A/H": 0.1428,
+              "D/A": 0.0,
+              "D/D": 0.3096,
+              "D/H": 0.1863,
+              "H/A": 0.0,
+              "H/D": 0.0,
+              "H/H": 0.0602
+            },
+            "p_away_1plus": 1.0,
+            "p_away_2plus": 0.0,
+            "p_away_3plus": 0.0,
+            "p_away_clean_sheet": 0.0,
+            "p_away_scores_first": 1.0,
+            "p_away_win": 0.0,
+            "p_btts": 1.0,
+            "p_draw": 0.6107,
+            "p_home_1plus": 1.0,
+            "p_home_2plus": 0.3893,
+            "p_home_3plus": 0.1293,
+            "p_home_clean_sheet": 0.0,
+            "p_home_scores_first": 0.0,
+            "p_home_win": 0.3893,
+            "p_level_at_half_time": 0.4959,
+            "p_no_goal": 0.0,
+            "p_over_1_5": 1.0,
+            "p_over_2_5": 0.3893,
+            "p_over_3_5": 0.1293,
+            "typical_scores": [
+              {
+                "p": 0.6107,
+                "score": "1-1"
+              },
+              {
+                "p": 0.2601,
+                "score": "2-1"
+              },
+              {
+                "p": 0.0907,
+                "score": "3-1"
+              }
+            ]
+          },
+          "HOME_CONTROL": {
+            "exp_away_goals": 0.4327,
+            "exp_home_goals": 2.6752,
+            "ht_ft": {
+              "A/A": 0.0,
+              "A/D": 0.0,
+              "A/H": 0.0,
+              "D/A": 0.0,
+              "D/D": 0.0,
+              "D/H": 0.2512,
+              "H/A": 0.0,
+              "H/D": 0.0,
+              "H/H": 0.7488
+            },
+            "p_away_1plus": 0.4327,
+            "p_away_2plus": 0.0,
+            "p_away_3plus": 0.0,
+            "p_away_clean_sheet": 0.0,
+            "p_away_scores_first": 0.0,
+            "p_away_win": 0.0,
+            "p_btts": 0.4327,
+            "p_draw": 0.0,
+            "p_home_1plus": 1.0,
+            "p_home_2plus": 1.0,
+            "p_home_3plus": 0.4368,
+            "p_home_clean_sheet": 0.5673,
+            "p_home_scores_first": 1.0,
+            "p_home_win": 1.0,
+            "p_level_at_half_time": 0.2512,
+            "p_no_goal": 0.0,
+            "p_over_1_5": 1.0,
+            "p_over_2_5": 0.6711,
+            "p_over_3_5": 0.2847,
+            "typical_scores": [
+              {
+                "p": 0.3289,
+                "score": "2-0"
+              },
+              {
+                "p": 0.2342,
+                "score": "2-1"
+              },
+              {
+                "p": 0.1522,
+                "score": "3-0"
+              }
+            ]
+          },
+          "OPEN_END_TO_END": {
+            "exp_away_goals": 2.5549,
+            "exp_home_goals": 2.6548,
+            "ht_ft": {
+              "A/A": 0.1374,
+              "A/D": 0.1381,
+              "A/H": 0.0532,
+              "D/A": 0.0739,
+              "D/D": 0.1593,
+              "D/H": 0.0866,
+              "H/A": 0.0458,
+              "H/D": 0.1381,
+              "H/H": 0.1675
+            },
+            "p_away_1plus": 1.0,
+            "p_away_2plus": 1.0,
+            "p_away_3plus": 0.3833,
+            "p_away_clean_sheet": 0.0,
+            "p_away_scores_first": 0.4925,
+            "p_away_win": 0.2572,
+            "p_btts": 1.0,
+            "p_draw": 0.4355,
+            "p_home_1plus": 1.0,
+            "p_home_2plus": 1.0,
+            "p_home_3plus": 0.4255,
+            "p_home_clean_sheet": 0.0,
+            "p_home_scores_first": 0.5075,
+            "p_home_win": 0.3074,
+            "p_level_at_half_time": 0.3199,
+            "p_no_goal": 0.0,
+            "p_over_1_5": 1.0,
+            "p_over_2_5": 1.0,
+            "p_over_3_5": 1.0,
+            "typical_scores": [
+              {
+                "p": 0.3552,
+                "score": "2-2"
+              },
+              {
+                "p": 0.1659,
+                "score": "3-2"
+              },
+              {
+                "p": 0.1487,
+                "score": "2-3"
+              }
+            ]
+          },
+          "TIGHT_LOW_EVENT": {
+            "exp_away_goals": 0.3342,
+            "exp_home_goals": 0.3589,
+            "ht_ft": {
+              "A/A": 0.1474,
+              "A/D": 0.0,
+              "A/H": 0.0,
+              "D/A": 0.1868,
+              "D/D": 0.3069,
+              "D/H": 0.2006,
+              "H/A": 0.0,
+              "H/D": 0.0,
+              "H/H": 0.1583
+            },
+            "p_away_1plus": 0.3342,
+            "p_away_2plus": 0.0,
+            "p_away_3plus": 0.0,
+            "p_away_clean_sheet": 0.6411,
+            "p_away_scores_first": 0.3342,
+            "p_away_win": 0.3342,
+            "p_btts": 0.0,
+            "p_draw": 0.3069,
+            "p_home_1plus": 0.3589,
+            "p_home_2plus": 0.0,
+            "p_home_3plus": 0.0,
+            "p_home_clean_sheet": 0.6658,
+            "p_home_scores_first": 0.3589,
+            "p_home_win": 0.3589,
+            "p_level_at_half_time": 0.6944,
+            "p_no_goal": 0.3069,
+            "p_over_1_5": 0.0,
+            "p_over_2_5": 0.0,
+            "p_over_3_5": 0.0,
+            "typical_scores": [
+              {
+                "p": 0.3589,
+                "score": "1-0"
+              },
+              {
+                "p": 0.3342,
+                "score": "0-1"
+              },
+              {
+                "p": 0.3069,
+                "score": "0-0"
+              }
+            ]
+          }
+        },
+        "score_grid": [
+          [
+            0.095662,
+            0.104152,
+            0.05887,
+            0.024337,
+            0.008143,
+            0.002343,
+            0.000601,
+            0.000141,
+            3.1e-05,
+            6e-06,
+            1e-06
+          ],
+          [
+            0.111869,
+            0.115994,
+            0.067678,
+            0.028167,
+            0.009502,
+            0.002763,
+            0.000719,
+            0.000172,
+            3.9e-05,
+            8e-06,
+            2e-06
+          ],
+          [
+            0.069383,
+            0.074104,
+            0.042938,
+            0.017982,
+            0.006115,
+            0.001798,
+            0.000476,
+            0.000116,
+            2.7e-05,
+            6e-06,
+            1e-06
+          ],
+          [
+            0.032094,
+            0.034443,
+            0.020059,
+            0.008449,
+            0.002894,
+            0.00086,
+            0.000231,
+            5.8e-05,
+            1.4e-05,
+            3e-06,
+            1e-06
+          ],
+          [
+            0.012283,
+            0.013257,
+            0.007762,
+            0.003287,
+            0.001134,
+            0.00034,
+            9.2e-05,
+            2.3e-05,
+            6e-06,
+            1e-06,
+            0.0
+          ],
+          [
+            0.004137,
+            0.004497,
+            0.002649,
+            0.001128,
+            0.000391,
+            0.000118,
+            3.2e-05,
+            8e-06,
+            2e-06,
+            0.0,
+            0.0
+          ],
+          [
+            0.001271,
+            0.001393,
+            0.000827,
+            0.000354,
+            0.000123,
+            3.7e-05,
+            1e-05,
+            3e-06,
+            1e-06,
+            0.0,
+            0.0
+          ],
+          [
+            0.000363,
+            0.000402,
+            0.000241,
+            0.000104,
+            3.6e-05,
+            1.1e-05,
+            3e-06,
+            1e-06,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            9.8e-05,
+            0.000109,
+            6.6e-05,
+            2.9e-05,
+            1e-05,
+            3e-06,
+            1e-06,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            2.5e-05,
+            2.8e-05,
+            1.7e-05,
+            8e-06,
+            3e-06,
+            1e-06,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            6e-06,
+            7e-06,
+            4e-06,
+            2e-06,
+            1e-06,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "scripts": [
+          "HOME_CONTROL",
+          "HOME_CHASE",
+          "TIGHT_LOW_EVENT",
+          "OPEN_END_TO_END",
+          "AWAY_CHASE",
+          "AWAY_CONTROL"
+        ],
+        "secondary": "HOME_CONTROL",
+        "share_high": [
+          0.3454,
+          0.108,
+          0.4729,
+          0.2159,
+          0.1069,
+          0.2763
+        ],
+        "share_low": [
+          0.0996,
+          0.0792,
+          0.1677,
+          0.0454,
+          0.0705,
+          0.0845
+        ],
+        "shares": [
+          0.21092,
+          0.09498,
+          0.31168,
+          0.1209,
+          0.09009,
+          0.17143
+        ],
+        "status": "OK",
+        "taxonomy_version": "soccer_scripts_v1",
+        "temporal": {
+          "AWAY_CHASE": {
+            "mean_first_goal_minute": 29.254,
+            "minutes_away_leading": 8.786,
+            "minutes_home_leading": 27.407,
+            "minutes_level": 53.807,
+            "p_away_ever_trailed": 1.0,
+            "p_goal_after_75": 0.403,
+            "p_home_ever_trailed": 0.356,
+            "p_lead_changed_hands": 0.356,
+            "p_level_at_75": 0.562
+          },
+          "AWAY_CONTROL": {
+            "mean_first_goal_minute": 26.013,
+            "minutes_away_leading": 60.252,
+            "minutes_home_leading": 0.0,
+            "minutes_level": 29.748,
+            "p_away_ever_trailed": 0.0,
+            "p_goal_after_75": 0.449,
+            "p_home_ever_trailed": 1.0,
+            "p_lead_changed_hands": 0.0,
+            "p_level_at_75": 0.068
+          },
+          "HOME_CHASE": {
+            "mean_first_goal_minute": 29.237,
+            "minutes_away_leading": 26.758,
+            "minutes_home_leading": 9.825,
+            "minutes_level": 53.418,
+            "p_away_ever_trailed": 0.389,
+            "p_goal_after_75": 0.416,
+            "p_home_ever_trailed": 1.0,
+            "p_lead_changed_hands": 0.389,
+            "p_level_at_75": 0.537
+          },
+          "HOME_CONTROL": {
+            "mean_first_goal_minute": 25.518,
+            "minutes_away_leading": 0.0,
+            "minutes_home_leading": 61.032,
+            "minutes_level": 28.968,
+            "p_away_ever_trailed": 1.0,
+            "p_goal_after_75": 0.468,
+            "p_home_ever_trailed": 0.0,
+            "p_lead_changed_hands": 0.0,
+            "p_level_at_75": 0.061
+          },
+          "OPEN_END_TO_END": {
+            "mean_first_goal_minute": 16.992,
+            "minutes_away_leading": 24.956,
+            "minutes_home_leading": 27.267,
+            "minutes_level": 37.777,
+            "p_away_ever_trailed": 0.728,
+            "p_goal_after_75": 0.648,
+            "p_home_ever_trailed": 0.701,
+            "p_lead_changed_hands": 0.429,
+            "p_level_at_75": 0.337
+          },
+          "TIGHT_LOW_EVENT": {
+            "mean_first_goal_minute": 47.823,
+            "minutes_away_leading": 13.995,
+            "minutes_home_leading": 15.236,
+            "minutes_level": 60.768,
+            "p_away_ever_trailed": 0.359,
+            "p_goal_after_75": 0.122,
+            "p_home_ever_trailed": 0.334,
+            "p_lead_changed_hands": 0.0,
+            "p_level_at_75": 0.429
+          }
+        }
+      },
+      "sim_key": "sha256:2482008714a1989c79f267a2e98f7c66ef013729eed26bbe6c96a188a346f2e0",
+      "source_run_id": "run-20261025T191408Z-3b8daa",
+      "summary": {
+        "mean_away_goals": 1.17426,
+        "mean_home_goals": 1.31119,
+        "p_away": 0.33842,
+        "p_btts": 0.4747,
+        "p_draw": 0.2658,
+        "p_home": 0.39578,
+        "p_over_2_5": 0.44433
       }
     },
     "fx:ita.serie_a:2026-27:ita.udinese:ita.milan:matchday_8": {
@@ -23341,8 +24653,8 @@
         "source": "production posterior (dc_laplace_v1) that priced this fixture",
         "version": "dc_matchup_v1"
       },
-      "model_fitted_at": "2026-10-25T18:44:14.526626Z",
-      "model_generated_at": "2026-10-25T18:44:16.223186Z",
+      "model_fitted_at": "2026-10-25T19:14:06.988802Z",
+      "model_generated_at": "2026-10-25T19:14:08.545019Z",
       "results_observed_at": "2026-10-25T18:37:08.625940Z",
       "scripts": {
         "contract_gaps": {},
@@ -23961,7 +25273,7 @@
         }
       },
       "sim_key": "sha256:3a5678f718d49384767248bc45c8d2a3eb2f620b9569b8ffc1507728653329b6",
-      "source_run_id": "run-20261025T184416Z-411c51",
+      "source_run_id": "run-20261025T191408Z-3b8daa",
       "summary": {
         "mean_away_goals": 1.31099,
         "mean_home_goals": 1.2293,
@@ -77209,6 +78521,6 @@
       }
     }
   },
-  "generated_at": "2026-10-25T18:44:16.223186Z",
+  "generated_at": "2026-10-25T19:14:08.545019Z",
   "quantile_levels": "(i + 0.5) / 100, i = 0..99"
 }
