@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261025T105342Z-410f4a` · generated 2026-10-25T10:53:42.843206Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261025T105950Z-d94d14` · generated 2026-10-25T10:59:50.052172Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-25T10:50:47.630351Z (CURRENT at publish; CURRENT until 2026-10-25T11:10:47.630351Z, STALE after 2026-10-25T11:20:47.630351Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-25T10:56:48.246168Z (CURRENT at publish; CURRENT until 2026-10-25T11:16:48.246168Z, STALE after 2026-10-25T11:26:48.246168Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-25T10:32:03.480534Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.57s
+model board generated 2026-10-25T10:59:48.089990Z · simulations this update: 5 · Odds API calls this update: 0 (credits 0) · reprice 0.56s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -81,6 +81,7 @@ model board generated 2026-10-25T10:32:03.480534Z · simulations this update: 0 
 | Paris Saint-Germain vs Lyon | Result: draw | yes | 0.1700 | 0.235 [0.167, 0.299] | +0.055 | +0.014 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Lyon | Result: away | yes | 0.1300 | 0.249 [0.114, 0.406] | +0.111 | +0.014 | 0.14 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | Total goals over 4.5 | no | 0.8200 | 0.891 [0.796, 0.963] | +0.061 | +0.013 | 0.83 | - |  | RESEARCH_CANDIDATE |
+| Lecce vs Juventus | Result: away | no | 0.3700 | 0.513 [0.345, 0.679] | +0.126 | +0.011 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | away team total over 0.5 | no | 0.2800 | 0.388 [0.263, 0.513] | +0.094 | +0.011 | 0.29 | - | * | RESEARCH_CANDIDATE |
 | Atlas vs Puebla | btts | no | 0.4700 | 0.567 [0.448, 0.679] | +0.080 | +0.011 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | Total goals over 1.5 | no | 0.2000 | 0.313 [0.179, 0.457] | +0.101 | +0.011 | 0.21 | - |  | RESEARCH_CANDIDATE |
@@ -94,7 +95,6 @@ model board generated 2026-10-25T10:32:03.480534Z · simulations this update: 0 
 | Los Angeles FC vs LA Galaxy | Total goals over 0.5 | no | 0.0400 | 0.083 [0.033, 0.140] | +0.040 | +0.006 | 0.04 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Cruz Azul | away team total over 0.5 | no | 0.1800 | 0.279 [0.158, 0.401] | +0.089 | +0.005 | 0.18 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | away team total over 2.5 | no | 0.8700 | 0.917 [0.849, 0.970] | +0.039 | +0.005 | 0.87 | - |  | RESEARCH_CANDIDATE |
-| Tijuana vs Santos Laguna | away team total over 1.5 | no | 0.6500 | 0.743 [0.614, 0.856] | +0.077 | +0.002 | 0.65 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
