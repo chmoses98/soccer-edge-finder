@@ -1,10 +1,42 @@
 {
-  "batch_id": "kd-20261025T191751Z",
-  "captured_at": "2026-10-25T19:20:41.908934Z",
-  "credits_charged": 0,
-  "eligible_fixtures": 0,
+  "batch_id": "kd-20261025T193000Z",
+  "captured_at": "2026-10-25T19:32:49.467774Z",
+  "credits_charged": 3,
+  "eligible_fixtures": 2,
   "no_sport_key": [],
-  "paid_calls": 0,
-  "snapshots": 0,
-  "status": "NOTHING_ELIGIBLE"
+  "paid_calls": 1,
+  "per_sport": {
+    "soccer_france_ligue_one": {
+      "fixtures": 1,
+      "join": {
+        "ambiguous": 0,
+        "events": 0,
+        "joined": 0,
+        "unjoined_fixtures": [
+          "fx:fra.ligue_1:2026-27:fra.psg:fra.lyon:matchday_8"
+        ],
+        "unresolved_names": []
+      },
+      "status": "NO_JOINED_EVENTS"
+    },
+    "soccer_italy_serie_a": {
+      "close_fixtures": 1,
+      "credits": 3,
+      "entry_fixtures": 0,
+      "fixtures": 1,
+      "incomplete_markets": 0,
+      "join": {
+        "ambiguous": 0,
+        "events": 1,
+        "joined": 1,
+        "unjoined_fixtures": [],
+        "unresolved_names": []
+      },
+      "snapshots": 7,
+      "status": "OK"
+    }
+  },
+  "remaining_after": 17334,
+  "snapshots": 7,
+  "status": "OK"
 }
