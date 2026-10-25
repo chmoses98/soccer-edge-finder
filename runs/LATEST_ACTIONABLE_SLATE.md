@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261025T021024Z-2b165b` · generated 2026-10-25T02:10:24.121575Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261025T021651Z-fcfe0f` · generated 2026-10-25T02:16:51.331942Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-25T02:07:10.019798Z (CURRENT at publish; CURRENT until 2026-10-25T02:27:10.019798Z, STALE after 2026-10-25T02:37:10.019798Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-25T02:13:46.836633Z (CURRENT at publish; CURRENT until 2026-10-25T02:33:46.836633Z, STALE after 2026-10-25T02:43:46.836633Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-25T02:10:15.614378Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.82s
+model board generated 2026-10-25T02:10:15.614378Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.83s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,9 +12,9 @@ model board generated 2026-10-25T02:10:15.614378Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-25T02:30:00Z | Portland Timbers vs Charlotte FC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | AGING entry | CURRENT | 77 | 0 |
-| 2026-10-25T02:30:00Z | San Diego FC vs Seattle Sounders (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | AGING entry | CURRENT | 77 | 0 |
-| 2026-10-25T03:10:00Z | Pumas UNAM vs Tigres UANL (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 77 | 0 |
+| 2026-10-25T02:30:00Z | Portland Timbers vs Charlotte FC (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT close | CURRENT | 77 | 0 |
+| 2026-10-25T02:30:00Z | San Diego FC vs Seattle Sounders (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT close | CURRENT | 77 | 0 |
+| 2026-10-25T03:10:00Z | Pumas UNAM vs Tigres UANL (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | CURRENT entry | CURRENT | 77 | 0 |
 | 2026-10-25T11:30:00Z | Inter Milan vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-25T12:00:00Z | Athletic Club vs Getafe (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-25T12:00:00Z | Atlético Madrid vs Deportivo La Coruña (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 51 | 0 |
@@ -45,16 +45,16 @@ model board generated 2026-10-25T02:10:15.614378Z · simulations this update: 1 
 | 2026-10-25T19:45:00Z | Udinese vs AC Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-25T20:00:00Z | Independiente vs Boca Juniors (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-25T22:15:00Z | River Plate vs Racing Club (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-25T23:00:00Z | Atlas vs Puebla (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-25T23:00:00Z | Atlas vs Puebla (mex.liga_mx) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-26T00:30:00Z | Central Córdoba vs Vélez Sarsfield (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-26T01:00:00Z | Querétaro vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-26T01:00:00Z | Los Angeles FC vs LA Galaxy (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-26T01:05:00Z | Club América vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-26T01:00:00Z | Querétaro vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-26T01:00:00Z | Los Angeles FC vs LA Galaxy (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-26T01:05:00Z | Club América vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-26T03:10:00Z | Tijuana vs Santos Laguna (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-26T22:30:00Z | Coritiba vs Grêmio (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-26T23:00:00Z | Flamengo vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (91; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (93; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -92,19 +92,19 @@ model board generated 2026-10-25T02:10:15.614378Z · simulations this update: 1 
 | Los Angeles FC vs LA Galaxy | Total goals over 5.5 | no | 0.8700 | 0.935 [0.862, 0.983] | +0.057 | +0.029 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Portland Timbers vs Charlotte FC | btts | no | 0.3100 | 0.430 [0.314, 0.543] | +0.105 | +0.029 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | First half: both teams to score | no | 0.7600 | 0.846 [0.768, 0.911] | +0.073 | +0.027 | 0.78 | - | * | RESEARCH_CANDIDATE |
-| Portland Timbers vs Charlotte FC | Total goals over 3.5 | no | 0.5200 | 0.661 [0.501, 0.803] | +0.123 | +0.026 | 0.54 | 0.517 |  | RESEARCH_CANDIDATE |
+| Portland Timbers vs Charlotte FC | Total goals over 3.5 | no | 0.5200 | 0.661 [0.501, 0.803] | +0.123 | +0.026 | 0.54 | 0.516 |  | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | First half: both teams to score | no | 0.7200 | 0.811 [0.727, 0.892] | +0.077 | +0.026 | 0.74 | - | * | RESEARCH_CANDIDATE |
-| San Diego FC vs Seattle Sounders | Exact score 1-0 (home-away) | yes | 0.0500 | 0.107 [0.065, 0.152] | +0.054 | +0.025 | 0.07 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Exact score 1-0 (home-away) | yes | 0.0700 | 0.134 [0.077, 0.189] | +0.059 | +0.023 | 0.09 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Tigres UANL | away team total over 1.5 | no | 0.6300 | 0.741 [0.619, 0.851] | +0.094 | +0.022 | 0.65 | - |  | RESEARCH_CANDIDATE |
 | Lecce vs Juventus | Result: away | no | 0.3600 | 0.513 [0.345, 0.679] | +0.137 | +0.022 | 0.38 | - | * | RESEARCH_CANDIDATE |
+| Portland Timbers vs Charlotte FC | home team total over 1.5 | no | 0.3900 | 0.535 [0.362, 0.695] | +0.129 | +0.022 | 0.41 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1101
+action_NO_EDGE: 1099
 action_NO_QUOTE: 332
-action_RESEARCH_CANDIDATE: 91
+action_RESEARCH_CANDIDATE: 93
 contract_sides: 1524
 fixtures: 41
 fixtures_model_invalidated: 0
