@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-24T22:36:31.905296+00:00",
-  "events": 814,
-  "events_skipped_unmapped": 469,
-  "fixtures_mapped": 345,
+  "as_of": "2026-10-25T04:54:48.698124+00:00",
+  "events": 890,
+  "events_skipped_unmapped": 507,
+  "fixtures_mapped": 383,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=55"
+      "weather_stopped:consecutive_failures:skipped=44"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 128,
-    "events": 142,
+    "captured": 104,
+    "events": 109,
     "failures": [],
-    "published_post": 12,
-    "published_pre_kickoff": 7,
-    "unchanged": 14,
-    "unpublished": 123
+    "published_post": 8,
+    "published_pre_kickoff": 1,
+    "unchanged": 5,
+    "unpublished": 100
   },
   "map_proposals": {
     "bel.1": {
@@ -302,7 +302,6 @@
       "ambiguous": {},
       "proposed": {},
       "unresolved": {
-        "510": "Viking FK",
         "620": "SK Brann",
         "987": "Lillestrom"
       }
@@ -312,13 +311,6 @@
       "proposed": {},
       "unresolved": {
         "20301": "Mj\u00e4llby AIF"
-      }
-    },
-    "uefa.champions": {
-      "ambiguous": {},
-      "proposed": {},
-      "unresolved": {
-        "510": "Viking FK"
       }
     },
     "uefa.europa": {
@@ -355,7 +347,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 13,
+  "results_appended": 22,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -367,7 +359,6 @@
     "chi.1",
     "chn.1",
     "col.1",
-    "conmebol.sudamericana",
     "den.1",
     "eng.3",
     "eng.4",
@@ -478,7 +469,6 @@
     "4515": "Mirand\u00e9s",
     "489": "Hajduk Split",
     "490": "Levski Sofia",
-    "510": "Viking FK",
     "5401": "Real Jaen CF",
     "5404": "Ceuta",
     "5413": "Huesca",
@@ -522,17 +512,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 6,
-    "events": 65,
+    "captured": 8,
+    "events": 56,
     "failures": [
-      "401912638: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Iskandar%20Puteri&count=5&langu",
-      "401912637: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Kyoto&count=5&language=en&forma",
-      "401912639: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Shanghai&count=5&language=en&fo"
+      "401912639: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=31.2222&longitude=121.4581&hourly=t",
+      "401912621: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Beijing&count=5&language=en&for",
+      "401912635: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Ratchaburi&count=5&language=en&"
     ],
     "forecast_miss": 0,
     "geocode_miss": 1,
     "no_venue": 0,
-    "skipped": 55,
+    "skipped": 44,
     "stopped": "consecutive_failures"
   }
 }
