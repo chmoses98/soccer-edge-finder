@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261025T053800Z-63e737` · generated 2026-10-25T05:38:00.145902Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261025T055302Z-8ff916` · generated 2026-10-25T05:53:02.077911Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-25T05:35:07.378461Z (CURRENT at publish; CURRENT until 2026-10-25T05:55:07.378461Z, STALE after 2026-10-25T06:05:07.378461Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-25T05:50:09.084641Z (CURRENT at publish; CURRENT until 2026-10-25T06:10:09.084641Z, STALE after 2026-10-25T06:20:09.084641Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-25T01:43:00.204545Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.72s
+model board generated 2026-10-25T01:43:00.204545Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.71s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -51,7 +51,7 @@ model board generated 2026-10-25T01:43:00.204545Z · simulations this update: 0 
 | 2026-10-26T22:30:00Z | Coritiba vs Grêmio (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-26T23:00:00Z | Flamengo vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (47; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (46; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -71,6 +71,7 @@ model board generated 2026-10-25T01:43:00.204545Z · simulations this update: 0 
 | Celta Vigo vs Real Betis | Result: away | no | 0.5700 | 0.703 [0.560, 0.829] | +0.116 | +0.029 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 4.5 | no | 0.7600 | 0.856 [0.732, 0.946] | +0.083 | +0.027 | 0.78 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | First half: both teams to score | no | 0.7600 | 0.846 [0.768, 0.911] | +0.073 | +0.027 | 0.78 | - | * | RESEARCH_CANDIDATE |
+| Athletic Club vs Getafe | Result: home | no | 0.3800 | 0.523 [0.366, 0.673] | +0.126 | +0.025 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 1.5 | no | 0.1500 | 0.267 [0.138, 0.397] | +0.108 | +0.025 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Exact score 1-0 (home-away) | yes | 0.0700 | 0.134 [0.077, 0.189] | +0.059 | +0.023 | 0.09 | - | * | RESEARCH_CANDIDATE |
 | Lecce vs Juventus | Result: away | no | 0.3600 | 0.513 [0.345, 0.679] | +0.137 | +0.022 | 0.38 | - | * | RESEARCH_CANDIDATE |
@@ -79,7 +80,6 @@ model board generated 2026-10-25T01:43:00.204545Z · simulations this update: 0 
 | Los Angeles FC vs LA Galaxy | Total goals over 5.5 | no | 0.8800 | 0.935 [0.862, 0.983] | +0.047 | +0.019 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Udinese vs AC Milan | Result: home | yes | 0.2100 | 0.349 [0.197, 0.514] | +0.128 | +0.019 | 0.22 | - | * | RESEARCH_CANDIDATE |
 | Udinese vs AC Milan | Result: away | no | 0.4700 | 0.609 [0.433, 0.764] | +0.121 | +0.017 | 0.48 | - |  | RESEARCH_CANDIDATE |
-| Athletic Club vs Getafe | Result: home | no | 0.3900 | 0.523 [0.366, 0.673] | +0.116 | +0.015 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | Total goals over 4.5 | no | 0.8200 | 0.891 [0.796, 0.963] | +0.061 | +0.013 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | away team total over 0.5 | no | 0.2800 | 0.388 [0.263, 0.513] | +0.094 | +0.011 | 0.29 | - | * | RESEARCH_CANDIDATE |
 | Atlas vs Puebla | btts | no | 0.4700 | 0.567 [0.448, 0.679] | +0.080 | +0.011 | 0.48 | - | * | RESEARCH_CANDIDATE |
@@ -99,9 +99,9 @@ model board generated 2026-10-25T01:43:00.204545Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 735
-action_NO_QUOTE: 280
-action_RESEARCH_CANDIDATE: 47
+action_NO_EDGE: 738
+action_NO_QUOTE: 278
+action_RESEARCH_CANDIDATE: 46
 contract_sides: 1062
 fixtures: 38
 fixtures_model_invalidated: 0
