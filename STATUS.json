@@ -1,50 +1,41 @@
 {
-  "as_of": "2026-10-25T18:37:17.266168+00:00",
-  "events": 20,
+  "as_of": "2026-10-25T18:44:07.616580+00:00",
+  "events": 11,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 20,
+  "fixtures_mapped": 11,
   "health": {
-    "reasons": [
-      "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=4"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
-    "arg.1",
-    "esp.1",
     "fra.1",
     "ita.1"
   ],
   "lineups": {
-    "captured": 8,
-    "events": 14,
+    "captured": 0,
+    "events": 7,
     "failures": [],
-    "published_post": 8,
+    "published_post": 6,
     "published_pre_kickoff": 0,
-    "unchanged": 6,
-    "unpublished": 6
+    "unchanged": 7,
+    "unpublished": 1
   },
   "map_proposals": {},
   "map_version": "4",
-  "results_appended": 11,
+  "results_appended": 9,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
-  "scoreboard_queries": 4,
+  "scoreboard_queries": 2,
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
     "captured": 7,
-    "events": 14,
-    "failures": [
-      "401876429: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Auxerre&count=5&language=en&for",
-      "401876430: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Angers&count=5&language=en&form",
-      "401876426: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Marseille&count=5&language=en&f"
-    ],
+    "events": 7,
+    "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 4,
-    "stopped": "consecutive_failures"
+    "skipped": 0,
+    "stopped": null
   }
 }
