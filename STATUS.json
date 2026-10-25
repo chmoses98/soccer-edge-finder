@@ -1,40 +1,50 @@
 {
-  "as_of": "2026-10-25T12:47:54.359380+00:00",
-  "events": 4,
+  "as_of": "2026-10-25T12:57:58.791637+00:00",
+  "events": 20,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 4,
+  "fixtures_mapped": 20,
   "health": {
-    "reasons": [],
-    "state": "HEALTHY"
+    "reasons": [
+      "weather_failures:3",
+      "weather_stopped:consecutive_failures:skipped=6"
+    ],
+    "state": "DEGRADED"
   },
   "leagues": [
-    "esp.1"
+    "eng.1",
+    "esp.1",
+    "fra.1",
+    "ita.1"
   ],
   "lineups": {
-    "captured": 0,
-    "events": 4,
+    "captured": 1,
+    "events": 20,
     "failures": [],
-    "published_post": 0,
+    "published_post": 1,
     "published_pre_kickoff": 1,
-    "unchanged": 4,
-    "unpublished": 3
+    "unchanged": 19,
+    "unpublished": 18
   },
   "map_proposals": {},
   "map_version": "4",
   "results_appended": 0,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
-  "scoreboard_queries": 1,
+  "scoreboard_queries": 4,
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 4,
-    "events": 4,
-    "failures": [],
+    "captured": 11,
+    "events": 20,
+    "failures": [
+      "401876430: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=47.4716&longitude=-0.5520&hourly=te",
+      "401876426: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Marseille&count=5&language=en&f",
+      "401876424: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rennes&count=5&language=en&form"
+    ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 0,
-    "stopped": null
+    "skipped": 6,
+    "stopped": "consecutive_failures"
   }
 }

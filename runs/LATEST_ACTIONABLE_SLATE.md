@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261025T124754Z-6a2071` · generated 2026-10-25T12:47:54.798245Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261025T125901Z-511b15` · generated 2026-10-25T12:59:01.450991Z · trigger `kickoff_chain:T-60/T-5` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-25T12:45:00.052661Z (CURRENT at publish; CURRENT until 2026-10-25T13:05:00.052661Z, STALE after 2026-10-25T13:15:00.052661Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-25T12:55:00.052220Z (CURRENT at publish; CURRENT until 2026-10-25T13:15:00.052220Z, STALE after 2026-10-25T13:25:00.052220Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-25T10:59:48.089990Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.55s
+model board generated 2026-10-25T12:58:58.762583Z · simulations this update: 7 · Odds API calls this update: 3 (credits 9) · reprice 0.54s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,13 +12,13 @@ model board generated 2026-10-25T10:59:48.089990Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-25T14:00:00Z | Crystal Palace vs Newcastle United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-25T14:00:00Z | Hull City vs Brentford (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-25T14:00:00Z | Liverpool vs Brighton & Hove Albion (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-25T14:00:00Z | Manchester United vs Bournemouth (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-25T14:00:00Z | AS Monaco vs Lille (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-25T14:00:00Z | Atalanta vs Frosinone (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-25T14:00:00Z | Genoa vs Venezia (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-25T14:00:00Z | Crystal Palace vs Newcastle United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
+| 2026-10-25T14:00:00Z | Hull City vs Brentford (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
+| 2026-10-25T14:00:00Z | Liverpool vs Brighton & Hove Albion (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
+| 2026-10-25T14:00:00Z | Manchester United vs Bournemouth (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
+| 2026-10-25T14:00:00Z | AS Monaco vs Lille (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
+| 2026-10-25T14:00:00Z | Atalanta vs Frosinone (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
+| 2026-10-25T14:00:00Z | Genoa vs Venezia (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
 | 2026-10-25T14:30:00Z | TSG Hoffenheim vs Bayer Leverkusen (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-25T16:15:00Z | Angers vs Lorient (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-25T16:15:00Z | AJ Auxerre vs Le Mans (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -45,10 +45,10 @@ model board generated 2026-10-25T10:59:48.089990Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Hull City vs Brentford | Result: away | no | 0.4300 | 0.694 [0.496, 0.866] | +0.246 | +0.126 | 0.55 | - | * | RESEARCH_CANDIDATE |
+| Hull City vs Brentford | Result: away | no | 0.4300 | 0.694 [0.496, 0.866] | +0.246 | +0.126 | 0.55 | 0.419 | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | btts | no | 0.3800 | 0.571 [0.452, 0.683] | +0.174 | +0.099 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | away team total over 0.5 | no | 0.3200 | 0.495 [0.371, 0.611] | +0.159 | +0.078 | 0.39 | - | * | RESEARCH_CANDIDATE |
-| Hull City vs Brentford | Result: home | yes | 0.1900 | 0.419 [0.214, 0.647] | +0.219 | +0.074 | 0.26 | - |  | RESEARCH_CANDIDATE |
+| Hull City vs Brentford | Result: home | yes | 0.1900 | 0.419 [0.214, 0.647] | +0.219 | +0.074 | 0.26 | 0.188 |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | away team total over 1.5 | no | 0.6900 | 0.833 [0.738, 0.912] | +0.128 | +0.074 | 0.76 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 2.5 | no | 0.3300 | 0.509 [0.327, 0.673] | +0.164 | +0.058 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Lyon | Result: home | no | 0.3000 | 0.484 [0.287, 0.679] | +0.169 | +0.049 | 0.34 | - | * | RESEARCH_CANDIDATE |
@@ -83,7 +83,7 @@ model board generated 2026-10-25T10:59:48.089990Z · simulations this update: 0 
 | Querétaro vs Cruz Azul | away team total over 0.5 | no | 0.1800 | 0.279 [0.158, 0.401] | +0.089 | +0.005 | 0.18 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | away team total over 2.5 | no | 0.8700 | 0.917 [0.849, 0.970] | +0.039 | +0.005 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | away team total over 1.5 | no | 0.6500 | 0.743 [0.614, 0.856] | +0.077 | +0.002 | 0.65 | - |  | RESEARCH_CANDIDATE |
-| Genoa vs Venezia | Result: home | yes | 0.4400 | 0.595 [0.372, 0.795] | +0.137 | +0.001 | 0.44 | - | * | RESEARCH_CANDIDATE |
+| Genoa vs Venezia | Result: home | yes | 0.4400 | 0.595 [0.372, 0.795] | +0.137 | +0.001 | 0.44 | 0.437 | * | RESEARCH_CANDIDATE |
 | Flamengo vs Atlético Mineiro | Result: draw | yes | 0.1650 | 0.226 [0.151, 0.303] | +0.051 | +0.001 | 0.16 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
