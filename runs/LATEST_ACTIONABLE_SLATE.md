@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261025T200918Z-8f1552` · generated 2026-10-25T20:09:18.337421Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261025T202210Z-d719c1` · generated 2026-10-25T20:22:10.679978Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-25T20:06:26.759061Z (CURRENT at publish; CURRENT until 2026-10-25T20:26:26.759061Z, STALE after 2026-10-25T20:36:26.759061Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-25T20:19:07.008842Z (CURRENT at publish; CURRENT until 2026-10-25T20:39:07.008842Z, STALE after 2026-10-25T20:49:07.008842Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-25T19:16:44.050840Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.48s
+model board generated 2026-10-25T19:16:44.050840Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.54s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -25,7 +25,7 @@ model board generated 2026-10-25T19:16:44.050840Z · simulations this update: 0 
 | 2026-10-27T00:15:00Z | Instituto vs Deportivo Riestra (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-27T17:30:00Z | Sassuolo vs Lazio (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 
-## Candidates on CURRENT prices (31; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (30; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -55,7 +55,6 @@ model board generated 2026-10-25T19:16:44.050840Z · simulations this update: 0 
 | Los Angeles FC vs LA Galaxy | Total goals over 0.5 | no | 0.0400 | 0.084 [0.039, 0.134] | +0.042 | +0.008 | 0.04 | - |  | RESEARCH_CANDIDATE |
 | Flamengo vs Atlético Mineiro | Result: draw | yes | 0.1650 | 0.228 [0.149, 0.304] | +0.053 | +0.005 | 0.16 | - | * | RESEARCH_CANDIDATE |
 | Atlas vs Puebla | btts | no | 0.4700 | 0.563 [0.444, 0.684] | +0.076 | +0.003 | 0.47 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Cruz Azul | away wins by more than 2.5 | no | 0.8900 | 0.931 [0.869, 0.979] | +0.035 | +0.003 | 0.89 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | First-half total goals over 1.5 | no | 0.6200 | 0.706 [0.588, 0.822] | +0.070 | +0.002 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | away team total over 1.5 | no | 0.6400 | 0.735 [0.606, 0.848] | +0.079 | +0.001 | 0.64 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Cruz Azul | away team total over 0.5 | no | 0.1800 | 0.271 [0.156, 0.392] | +0.081 | +0.001 | 0.18 | - | * | RESEARCH_CANDIDATE |
@@ -64,9 +63,9 @@ model board generated 2026-10-25T19:16:44.050840Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 634
+action_NO_EDGE: 635
 action_NO_QUOTE: 263
-action_RESEARCH_CANDIDATE: 31
+action_RESEARCH_CANDIDATE: 30
 contract_sides: 928
 fixtures: 12
 fixtures_model_invalidated: 0
