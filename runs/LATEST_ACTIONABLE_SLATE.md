@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261025T024300Z-12d633` · generated 2026-10-25T02:43:00.876893Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261025T025801Z-d0d99e` · generated 2026-10-25T02:58:01.725350Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-25T02:40:00.538447Z (CURRENT at publish; CURRENT until 2026-10-25T03:00:00.538447Z, STALE after 2026-10-25T03:10:00.538447Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-25T02:55:01.693850Z (CURRENT at publish; CURRENT until 2026-10-25T03:15:01.693850Z, STALE after 2026-10-25T03:25:01.693850Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-25T02:10:15.614378Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.68s
+model board generated 2026-10-25T02:10:15.614378Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.64s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-25T02:10:15.614378Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-25T03:10:00Z | Pumas UNAM vs Tigres UANL (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 77 | 0 |
+| 2026-10-25T03:10:00Z | Pumas UNAM vs Tigres UANL (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT close | CURRENT | 77 | 0 |
 | 2026-10-25T11:30:00Z | Inter Milan vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-25T12:00:00Z | Athletic Club vs Getafe (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-25T12:00:00Z | Atlético Madrid vs Deportivo La Coruña (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 51 | 0 |
@@ -22,7 +22,7 @@ model board generated 2026-10-25T02:10:15.614378Z · simulations this update: 0 
 | 2026-10-25T12:00:00Z | Rayo Vallecano vs Elche (esp.la_liga) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-25T12:00:00Z | Real Sociedad vs Levante (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-25T12:00:00Z | Sevilla vs Osasuna (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-25T12:00:00Z | Valencia vs Villarreal (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-25T12:00:00Z | Valencia vs Villarreal (esp.la_liga) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-25T14:00:00Z | Crystal Palace vs Newcastle United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-25T14:00:00Z | Hull City vs Brentford (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-25T14:00:00Z | Liverpool vs Brighton & Hove Albion (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -52,7 +52,7 @@ model board generated 2026-10-25T02:10:15.614378Z · simulations this update: 0 
 | 2026-10-26T22:30:00Z | Coritiba vs Grêmio (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-26T23:00:00Z | Flamengo vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (53; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (50; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -67,14 +67,12 @@ model board generated 2026-10-25T02:10:15.614378Z · simulations this update: 0 
 | SC Freiburg vs Bayern Munich | Result: home | yes | 0.1500 | 0.330 [0.167, 0.512] | +0.172 | +0.056 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 4.5 | no | 0.7400 | 0.856 [0.732, 0.946] | +0.103 | +0.047 | 0.78 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | btts | no | 0.4000 | 0.540 [0.418, 0.657] | +0.123 | +0.045 | 0.44 | - | * | RESEARCH_CANDIDATE |
+| Los Angeles FC vs LA Galaxy | away team total over 2.5 | no | 0.8900 | 0.958 [0.921, 0.986] | +0.061 | +0.043 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | Udinese vs AC Milan | Result: home | yes | 0.1900 | 0.349 [0.197, 0.514] | +0.149 | +0.040 | 0.22 | - | * | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Lyon | Result: home | no | 0.3100 | 0.484 [0.287, 0.679] | +0.159 | +0.039 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Udinese vs AC Milan | Result: away | no | 0.4500 | 0.609 [0.433, 0.764] | +0.142 | +0.037 | 0.48 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | Total goals over 2.5 | no | 0.4100 | 0.568 [0.398, 0.729] | +0.141 | +0.036 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 1.5 | no | 0.1400 | 0.267 [0.138, 0.397] | +0.118 | +0.035 | 0.17 | - |  | RESEARCH_CANDIDATE |
-| Los Angeles FC vs LA Galaxy | away team total over 2.5 | no | 0.9000 | 0.958 [0.921, 0.986] | +0.052 | +0.034 | 0.93 | - |  | RESEARCH_CANDIDATE |
-| Pumas UNAM vs Tigres UANL | away team total over 0.5 | no | 0.2600 | 0.385 [0.267, 0.507] | +0.112 | +0.032 | 0.29 | - | * | RESEARCH_CANDIDATE |
-| Pumas UNAM vs Tigres UANL | away team total over 1.5 | no | 0.6200 | 0.741 [0.619, 0.851] | +0.104 | +0.032 | 0.65 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | First-half total goals over 1.5 | no | 0.5500 | 0.672 [0.528, 0.792] | +0.105 | +0.031 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Celta Vigo vs Real Betis | Result: away | no | 0.5700 | 0.703 [0.560, 0.829] | +0.116 | +0.029 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 5.5 | no | 0.8700 | 0.935 [0.862, 0.983] | +0.057 | +0.029 | 0.9 | - |  | RESEARCH_CANDIDATE |
@@ -87,7 +85,6 @@ model board generated 2026-10-25T02:10:15.614378Z · simulations this update: 0 
 | Athletic Club vs Getafe | Result: home | no | 0.3900 | 0.523 [0.366, 0.673] | +0.116 | +0.015 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Tigres UANL | btts | no | 0.4200 | 0.531 [0.404, 0.649] | +0.094 | +0.015 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Lyon | Result: draw | yes | 0.1700 | 0.235 [0.167, 0.299] | +0.055 | +0.014 | 0.18 | - |  | RESEARCH_CANDIDATE |
-| Pumas UNAM vs Tigres UANL | away team total over 2.5 | no | 0.8600 | 0.916 [0.852, 0.968] | +0.048 | +0.014 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | Total goals over 4.5 | no | 0.8200 | 0.891 [0.796, 0.963] | +0.061 | +0.013 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | away team total over 0.5 | no | 0.2800 | 0.388 [0.263, 0.513] | +0.094 | +0.011 | 0.29 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | Total goals over 1.5 | no | 0.2000 | 0.313 [0.179, 0.457] | +0.101 | +0.011 | 0.21 | - |  | RESEARCH_CANDIDATE |
@@ -96,13 +93,16 @@ model board generated 2026-10-25T02:10:15.614378Z · simulations this update: 0 
 | Los Angeles FC vs LA Galaxy | Exact score 2-0 (home-away) | yes | 0.0900 | 0.126 [0.091, 0.158] | +0.030 | +0.007 | 0.09 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Cruz Azul | away team total over 1.5 | no | 0.4900 | 0.619 [0.450, 0.767] | +0.112 | +0.006 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Exact score 0-0 (home-away) | yes | 0.0400 | 0.083 [0.033, 0.140] | +0.040 | +0.006 | 0.04 | - |  | RESEARCH_CANDIDATE |
+| Los Angeles FC vs LA Galaxy | Total goals over 0.5 | no | 0.0400 | 0.083 [0.033, 0.140] | +0.040 | +0.006 | 0.04 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Cruz Azul | away team total over 0.5 | no | 0.1800 | 0.279 [0.158, 0.401] | +0.089 | +0.005 | 0.18 | - |  | RESEARCH_CANDIDATE |
+| Tijuana vs Santos Laguna | away team total over 2.5 | no | 0.8700 | 0.917 [0.849, 0.970] | +0.039 | +0.005 | 0.87 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 863
-action_NO_QUOTE: 300
-action_RESEARCH_CANDIDATE: 53
+action_NO_EDGE: 868
+action_NO_QUOTE: 298
+action_RESEARCH_CANDIDATE: 50
 contract_sides: 1216
 fixtures: 39
 fixtures_model_invalidated: 0
