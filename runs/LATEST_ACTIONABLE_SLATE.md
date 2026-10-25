@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261025T144300Z-b62809` · generated 2026-10-25T14:43:00.112253Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261025T144906Z-273d54` · generated 2026-10-25T14:49:06.780586Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-25T14:40:00.072920Z (CURRENT at publish; CURRENT until 2026-10-25T15:00:00.072920Z, STALE after 2026-10-25T15:10:00.072920Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-25T14:46:12.324810Z (CURRENT at publish; CURRENT until 2026-10-25T15:06:12.324810Z, STALE after 2026-10-25T15:16:12.324810Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-25T14:42:55.953139Z · simulations this update: 9 · Odds API calls this update: 0 (credits 0) · reprice 0.54s
+model board generated 2026-10-25T14:42:55.953139Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.55s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -50,10 +50,10 @@ model board generated 2026-10-25T14:42:55.953139Z · simulations this update: 9 
 | Tijuana vs Santos Laguna | btts | no | 0.4000 | 0.534 [0.409, 0.653] | +0.118 | +0.038 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | Total goals over 2.5 | no | 0.4100 | 0.567 [0.403, 0.723] | +0.140 | +0.036 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | SC Freiburg vs Bayern Munich | Result: home | yes | 0.1700 | 0.330 [0.167, 0.512] | +0.151 | +0.035 | 0.2 | - |  | RESEARCH_CANDIDATE |
+| Los Angeles FC vs LA Galaxy | away team total over 2.5 | no | 0.9000 | 0.957 [0.921, 0.984] | +0.051 | +0.034 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 1.5 | no | 0.1500 | 0.268 [0.149, 0.389] | +0.109 | +0.031 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | First half: both teams to score | no | 0.7600 | 0.846 [0.769, 0.921] | +0.073 | +0.027 | 0.78 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Exact score 1-0 (home-away) | yes | 0.0700 | 0.132 [0.081, 0.181] | +0.058 | +0.026 | 0.09 | - | * | RESEARCH_CANDIDATE |
-| Los Angeles FC vs LA Galaxy | away team total over 2.5 | no | 0.9100 | 0.957 [0.921, 0.984] | +0.042 | +0.025 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 5.5 | no | 0.8800 | 0.938 [0.878, 0.982] | +0.051 | +0.025 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | First-half total goals over 1.5 | no | 0.5600 | 0.676 [0.548, 0.793] | +0.098 | +0.023 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | Total goals over 3.5 | no | 0.6500 | 0.767 [0.626, 0.887] | +0.101 | +0.020 | 0.66 | - |  | RESEARCH_CANDIDATE |
