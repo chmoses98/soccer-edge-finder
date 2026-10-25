@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261025T202210Z-d719c1` · generated 2026-10-25T20:22:10.679978Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261025T202417Z-d86f65` · generated 2026-10-25T20:24:17.946288Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-25T20:19:07.008842Z (CURRENT at publish; CURRENT until 2026-10-25T20:39:07.008842Z, STALE after 2026-10-25T20:49:07.008842Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-25T20:21:25.236873Z (CURRENT at publish; CURRENT until 2026-10-25T20:41:25.236873Z, STALE after 2026-10-25T20:51:25.236873Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-25T19:16:44.050840Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.54s
+model board generated 2026-10-25T20:24:16.883165Z · simulations this update: 2 · Odds API calls this update: 0 (credits 0) · reprice 0.65s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -24,6 +24,8 @@ model board generated 2026-10-25T19:16:44.050840Z · simulations this update: 0 
 | 2026-10-26T23:00:00Z | Flamengo vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-27T00:15:00Z | Instituto vs Deportivo Riestra (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-27T17:30:00Z | Sassuolo vs Lazio (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
+| 2026-10-27T19:45:00Z | AS Roma vs Cagliari (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-27T19:45:00Z | Torino vs Como (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
 ## Candidates on CURRENT prices (30; RESEARCH_ONLY = analysis, never a bet)
 
@@ -63,11 +65,11 @@ model board generated 2026-10-25T19:16:44.050840Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 635
+action_NO_EDGE: 647
 action_NO_QUOTE: 263
 action_RESEARCH_CANDIDATE: 30
-contract_sides: 928
-fixtures: 12
+contract_sides: 940
+fixtures: 14
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
