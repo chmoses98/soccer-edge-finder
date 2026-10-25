@@ -1,10 +1,10 @@
 {
  "counts": {
-  "PINNACLE_VALID_CLOSE": 229,
-  "MISSED_DISPATCHER_CLOSE": 40,
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 157,
-  "PINNACLE_QUOTED_NOTHING": 15,
+  "PINNACLE_VALID_CLOSE": 235,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 158,
   "NO_SPORT_KEY": 19,
+  "MISSED_DISPATCHER_CLOSE": 40,
+  "PINNACLE_QUOTED_NOTHING": 15,
   "NO_REFERENCE_EVENT": 1
  },
  "fixtures": {
@@ -178,6 +178,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261011T173000Z"
   },
+  "fx:arg.primera:2026:arg.san_lorenzo:arg.newells": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261024T215851Z"
+  },
   "fx:arg.primera:2026:arg.sarmiento:arg.barracas_central": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -277,6 +282,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261012T221340Z"
+  },
+  "fx:bra.serie_a:2026:bra.chapecoense:bra.fluminense": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261024T221633Z"
   },
   "fx:bra.serie_a:2026:bra.corinthians:bra.vitoria": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -1823,6 +1833,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261010T224330Z"
   },
+  "fx:mex.liga_mx:2026:mex.leon:mex.toluca": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261024T224322Z"
+  },
   "fx:mex.liga_mx:2026:mex.monterrey:mex.pachuca": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
@@ -2113,6 +2128,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:usa.mls:2026:usa.atlanta_united:usa.chicago_fire": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261024T231504Z"
+  },
   "fx:usa.mls:2026:usa.atlanta_united:usa.cincinnati": {
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
@@ -2187,6 +2207,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261024T191506Z"
+  },
+  "fx:usa.mls:2026:usa.dc_united:usa.cincinnati": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
   },
   "fx:usa.mls:2026:usa.dc_united:usa.ny_red_bulls": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -2263,10 +2288,20 @@
    "close_horizon_delivered": false,
    "batch_id": null
   },
+  "fx:usa.mls:2026:usa.orlando_city:usa.nycfc": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261024T231504Z"
+  },
   "fx:usa.mls:2026:usa.philadelphia_union:usa.charlotte": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261017T181309Z"
+  },
+  "fx:usa.mls:2026:usa.philadelphia_union:usa.new_england": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261024T231504Z"
   },
   "fx:usa.mls:2026:usa.philadelphia_union:usa.real_salt_lake": {
    "state": "MISSED_DISPATCHER_CLOSE",
