@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261025T004114Z-2c5696` · generated 2026-10-25T00:41:14.677456Z · trigger `kickoff_chain:T-120/T-60/T-30` · mode `model_refresh_and_reprice`
+slate `slate-20261025T004818Z-e493af` · generated 2026-10-25T00:48:18.490893Z · trigger `kickoff_chain:T-15` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-25T00:37:44.479254Z (CURRENT at publish; CURRENT until 2026-10-25T00:57:44.479254Z, STALE after 2026-10-25T01:07:44.479254Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-25T00:45:06.111009Z (CURRENT at publish; CURRENT until 2026-10-25T01:05:06.111009Z, STALE after 2026-10-25T01:15:06.111009Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-25T00:41:02.424770Z · simulations this update: 2 · Odds API calls this update: 1 (credits 3) · reprice 1.23s
+model board generated 2026-10-25T00:48:09.427409Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 1.43s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,11 +12,11 @@ model board generated 2026-10-25T00:41:02.424770Z · simulations this update: 2 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-25T01:00:00Z | Monterrey vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-25T01:30:00Z | Colorado Rapids vs Vancouver Whitecaps (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 77 | 0 |
-| 2026-10-25T01:30:00Z | Real Salt Lake vs St. Louis City SC (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 32 | 0 |
-| 2026-10-25T02:30:00Z | Portland Timbers vs Charlotte FC (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-25T02:30:00Z | San Diego FC vs Seattle Sounders (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-25T01:00:00Z | Monterrey vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT close | CURRENT | 77 | 0 |
+| 2026-10-25T01:30:00Z | Colorado Rapids vs Vancouver Whitecaps (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | CURRENT entry | CURRENT | 77 | 0 |
+| 2026-10-25T01:30:00Z | Real Salt Lake vs St. Louis City SC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | CURRENT entry | CURRENT | 32 | 0 |
+| 2026-10-25T02:30:00Z | Portland Timbers vs Charlotte FC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-25T02:30:00Z | San Diego FC vs Seattle Sounders (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-25T03:10:00Z | Pumas UNAM vs Tigres UANL (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-25T11:30:00Z | Inter Milan vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-25T12:00:00Z | Athletic Club vs Getafe (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 65 | 0 |
@@ -55,7 +55,7 @@ model board generated 2026-10-25T00:41:02.424770Z · simulations this update: 2 
 | 2026-10-26T01:05:00Z | Club América vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-26T03:10:00Z | Tijuana vs Santos Laguna (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 
-## Candidates on CURRENT prices (110; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (107; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -69,10 +69,10 @@ model board generated 2026-10-25T00:41:02.424770Z · simulations this update: 2 
 | Hull City vs Brentford | Result: home | yes | 0.1900 | 0.420 [0.214, 0.646] | +0.219 | +0.073 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 3.5 | no | 0.5400 | 0.716 [0.544, 0.855] | +0.159 | +0.070 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | Total goals over 3.5 | no | 0.5300 | 0.705 [0.557, 0.836] | +0.158 | +0.069 | 0.59 | - | * | RESEARCH_CANDIDATE |
-| Colorado Rapids vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.6800 | 0.820 [0.705, 0.909] | +0.125 | +0.064 | 0.74 | - | * | RESEARCH_CANDIDATE |
+| Colorado Rapids vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.4600 | 0.633 [0.483, 0.762] | +0.156 | +0.069 | 0.52 | - | * | RESEARCH_CANDIDATE |
+| Colorado Rapids vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.6800 | 0.820 [0.705, 0.909] | +0.125 | +0.064 | 0.74 | - |  | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | away team total over 2.5 | no | 0.7900 | 0.903 [0.833, 0.960] | +0.101 | +0.064 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | away team total over 0.5 | no | 0.2100 | 0.359 [0.246, 0.476] | +0.137 | +0.061 | 0.26 | - |  | RESEARCH_CANDIDATE |
-| Colorado Rapids vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.4700 | 0.633 [0.483, 0.762] | +0.146 | +0.059 | 0.52 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 2.5 | no | 0.3300 | 0.509 [0.327, 0.673] | +0.164 | +0.058 | 0.38 | - |  | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | Total goals over 2.5 | no | 0.3200 | 0.495 [0.339, 0.646] | +0.159 | +0.058 | 0.37 | - |  | RESEARCH_CANDIDATE |
 | SC Freiburg vs Bayern Munich | Result: home | yes | 0.1500 | 0.330 [0.167, 0.511] | +0.171 | +0.056 | 0.2 | - |  | RESEARCH_CANDIDATE |
@@ -85,7 +85,6 @@ model board generated 2026-10-25T00:41:02.424770Z · simulations this update: 2 
 | Paris Saint-Germain vs Lyon | Result: home | no | 0.3100 | 0.484 [0.287, 0.679] | +0.159 | +0.040 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Vancouver Whitecaps | away team total over 0.5 | no | 0.2100 | 0.336 [0.220, 0.450] | +0.114 | +0.038 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | Udinese vs AC Milan | Result: away | no | 0.4500 | 0.609 [0.432, 0.764] | +0.141 | +0.037 | 0.48 | - | * | RESEARCH_CANDIDATE |
-| Portland Timbers vs Charlotte FC | Total goals over 3.5 | no | 0.5000 | 0.656 [0.494, 0.806] | +0.139 | +0.036 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | Total goals over 2.5 | no | 0.4100 | 0.568 [0.398, 0.729] | +0.141 | +0.036 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 1.5 | no | 0.1400 | 0.267 [0.138, 0.397] | +0.118 | +0.035 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | away team total over 2.5 | no | 0.9000 | 0.958 [0.921, 0.986] | +0.052 | +0.034 | 0.93 | - |  | RESEARCH_CANDIDATE |
@@ -93,19 +92,20 @@ model board generated 2026-10-25T00:41:02.424770Z · simulations this update: 2 
 | San Diego FC vs Seattle Sounders | Total goals over 5.5 | no | 0.8600 | 0.932 [0.870, 0.979] | +0.064 | +0.033 | 0.89 | - |  | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | First-half total goals over 1.5 | no | 0.5400 | 0.662 [0.528, 0.782] | +0.105 | +0.033 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Celta Vigo vs Real Betis | Result: away | no | 0.5700 | 0.702 [0.569, 0.827] | +0.115 | +0.032 | 0.6 | - | * | RESEARCH_CANDIDATE |
-| Portland Timbers vs Charlotte FC | Total goals over 2.5 | no | 0.2900 | 0.443 [0.285, 0.604] | +0.139 | +0.031 | 0.32 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | First-half total goals over 1.5 | no | 0.5500 | 0.672 [0.528, 0.792] | +0.105 | +0.031 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Udinese vs AC Milan | Result: home | yes | 0.2000 | 0.349 [0.196, 0.513] | +0.138 | +0.030 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Tigres UANL | away team total over 0.5 | no | 0.2600 | 0.386 [0.261, 0.509] | +0.113 | +0.029 | 0.28 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | First half: both teams to score | no | 0.7600 | 0.846 [0.768, 0.911] | +0.073 | +0.027 | 0.78 | - | * | RESEARCH_CANDIDATE |
 | San Diego FC vs Seattle Sounders | Total goals over 1.5 | no | 0.1400 | 0.253 [0.143, 0.371] | +0.104 | +0.027 | 0.16 | - |  | RESEARCH_CANDIDATE |
+| Portland Timbers vs Charlotte FC | Total goals over 3.5 | no | 0.5100 | 0.656 [0.494, 0.806] | +0.129 | +0.026 | 0.53 | - | * | RESEARCH_CANDIDATE |
+| Colorado Rapids vs Vancouver Whitecaps | First-half exact score 0-0 (home-away) | yes | 0.2800 | 0.392 [0.288, 0.502] | +0.098 | +0.026 | 0.3 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1359
+action_NO_EDGE: 1362
 action_NO_QUOTE: 3287
-action_RESEARCH_CANDIDATE: 110
+action_RESEARCH_CANDIDATE: 107
 contract_sides: 4756
 fixtures: 42
 fixtures_model_invalidated: 0
