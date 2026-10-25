@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261025T195754Z-091513` · generated 2026-10-25T19:57:54.841236Z · trigger `kickoff_chain:T-5` · mode `model_refresh_and_reprice`
+slate `slate-20261025T200918Z-8f1552` · generated 2026-10-25T20:09:18.337421Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-25T19:55:00.054077Z (CURRENT at publish; CURRENT until 2026-10-25T20:15:00.054077Z, STALE after 2026-10-25T20:25:00.054077Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-25T20:06:26.759061Z (CURRENT at publish; CURRENT until 2026-10-25T20:26:26.759061Z, STALE after 2026-10-25T20:36:26.759061Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-25T19:16:44.050840Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.48s
 
@@ -12,7 +12,6 @@ model board generated 2026-10-25T19:16:44.050840Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-25T20:00:00Z | Independiente vs Boca Juniors (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
 | 2026-10-25T22:15:00Z | River Plate vs Racing Club (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-25T23:00:00Z | Atlas vs Puebla (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-26T00:30:00Z | Central Córdoba vs Vélez Sarsfield (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
@@ -34,7 +33,7 @@ model board generated 2026-10-25T19:16:44.050840Z · simulations this update: 0 
 | Los Angeles FC vs LA Galaxy | away team total over 0.5 | no | 0.3200 | 0.488 [0.370, 0.594] | +0.153 | +0.080 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | away team total over 1.5 | no | 0.6900 | 0.830 [0.738, 0.903] | +0.125 | +0.075 | 0.76 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 3.5 | no | 0.5500 | 0.722 [0.571, 0.848] | +0.154 | +0.071 | 0.62 | - | * | RESEARCH_CANDIDATE |
-| Los Angeles FC vs LA Galaxy | Total goals over 2.5 | no | 0.3400 | 0.514 [0.351, 0.664] | +0.158 | +0.058 | 0.39 | - |  | RESEARCH_CANDIDATE |
+| Los Angeles FC vs LA Galaxy | Total goals over 2.5 | no | 0.3300 | 0.514 [0.351, 0.664] | +0.168 | +0.069 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | btts | no | 0.3900 | 0.534 [0.409, 0.653] | +0.128 | +0.048 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 4.5 | no | 0.7500 | 0.861 [0.755, 0.943] | +0.098 | +0.045 | 0.79 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | Total goals over 2.5 | no | 0.4100 | 0.567 [0.403, 0.723] | +0.140 | +0.036 | 0.44 | - | * | RESEARCH_CANDIDATE |
@@ -47,12 +46,12 @@ model board generated 2026-10-25T19:16:44.050840Z · simulations this update: 0 
 | Tijuana vs Santos Laguna | Total goals over 3.5 | no | 0.6500 | 0.767 [0.626, 0.887] | +0.101 | +0.020 | 0.66 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Exact score 2-0 (home-away) | yes | 0.0800 | 0.124 [0.092, 0.156] | +0.039 | +0.019 | 0.09 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | Total goals over 1.5 | no | 0.1900 | 0.311 [0.180, 0.447] | +0.110 | +0.019 | 0.2 | - |  | RESEARCH_CANDIDATE |
+| Los Angeles FC vs LA Galaxy | Exact score 0-0 (home-away) | yes | 0.0300 | 0.084 [0.039, 0.134] | +0.052 | +0.018 | 0.04 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | First-half exact score 0-0 (home-away) | yes | 0.2200 | 0.320 [0.208, 0.432] | +0.088 | +0.016 | 0.23 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | First-half total goals over 0.5 | no | 0.2200 | 0.320 [0.208, 0.432] | +0.088 | +0.016 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | away team total over 0.5 | no | 0.2700 | 0.380 [0.257, 0.502] | +0.096 | +0.013 | 0.28 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | Total goals over 4.5 | no | 0.8200 | 0.891 [0.799, 0.961] | +0.060 | +0.013 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | First-half total goals over 2.5 | no | 0.8200 | 0.883 [0.799, 0.951] | +0.053 | +0.010 | 0.83 | - |  | RESEARCH_CANDIDATE |
-| Los Angeles FC vs LA Galaxy | Exact score 0-0 (home-away) | yes | 0.0400 | 0.084 [0.039, 0.134] | +0.042 | +0.008 | 0.04 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 0.5 | no | 0.0400 | 0.084 [0.039, 0.134] | +0.042 | +0.008 | 0.04 | - |  | RESEARCH_CANDIDATE |
 | Flamengo vs Atlético Mineiro | Result: draw | yes | 0.1650 | 0.228 [0.149, 0.304] | +0.053 | +0.005 | 0.16 | - | * | RESEARCH_CANDIDATE |
 | Atlas vs Puebla | btts | no | 0.4700 | 0.563 [0.444, 0.684] | +0.076 | +0.003 | 0.47 | - | * | RESEARCH_CANDIDATE |
@@ -66,14 +65,14 @@ model board generated 2026-10-25T19:16:44.050840Z · simulations this update: 0 
 
 ```
 action_NO_EDGE: 634
-action_NO_QUOTE: 291
+action_NO_QUOTE: 263
 action_RESEARCH_CANDIDATE: 31
-contract_sides: 956
-fixtures: 13
-fixtures_model_invalidated: 1
+contract_sides: 928
+fixtures: 12
+fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
-Removed (kicked off): 2
+Removed (kicked off): 3
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
