@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261025T224754Z-ac235b` · generated 2026-10-25T22:47:54.895458Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261025T225359Z-63901b` · generated 2026-10-25T22:53:59.312454Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-25T22:45:02.410077Z (CURRENT at publish; CURRENT until 2026-10-25T23:05:02.410077Z, STALE after 2026-10-25T23:15:02.410077Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-25T22:51:07.916024Z (CURRENT at publish; CURRENT until 2026-10-25T23:11:07.916024Z, STALE after 2026-10-25T23:21:07.916024Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-25T22:34:15.052669Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.51s
+model board generated 2026-10-25T22:34:15.052669Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.51s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -15,7 +15,7 @@ model board generated 2026-10-25T22:34:15.052669Z · simulations this update: 0 
 | 2026-10-25T23:00:00Z | Atlas vs Puebla (mex.liga_mx) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 77 | 0 |
 | 2026-10-26T00:30:00Z | Central Córdoba vs Vélez Sarsfield (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-26T01:00:00Z | Querétaro vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-26T01:00:00Z | Los Angeles FC vs LA Galaxy (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-26T01:00:00Z | Los Angeles FC vs LA Galaxy (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-26T01:05:00Z | Club América vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-26T03:10:00Z | Tijuana vs Santos Laguna (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-26T22:00:00Z | Unión vs Estudiantes de La Plata (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -30,7 +30,7 @@ model board generated 2026-10-25T22:34:15.052669Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Los Angeles FC vs LA Galaxy | btts | no | 0.3800 | 0.567 [0.454, 0.670] | +0.170 | +0.103 | 0.48 | - | * | RESEARCH_CANDIDATE |
+| Los Angeles FC vs LA Galaxy | btts | no | 0.3700 | 0.567 [0.454, 0.670] | +0.180 | +0.113 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | away team total over 0.5 | no | 0.3100 | 0.488 [0.370, 0.594] | +0.163 | +0.090 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | away team total over 1.5 | no | 0.6800 | 0.830 [0.738, 0.903] | +0.134 | +0.085 | 0.76 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 3.5 | no | 0.5500 | 0.722 [0.571, 0.848] | +0.154 | +0.071 | 0.62 | - | * | RESEARCH_CANDIDATE |
