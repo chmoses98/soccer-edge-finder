@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261026T151029Z-7a60dd` · generated 2026-10-26T15:10:29.300299Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261026T152531Z-e561dc` · generated 2026-10-26T15:25:31.963064Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-26T15:07:50.260218Z (CURRENT at publish; CURRENT until 2026-10-26T15:27:50.260218Z, STALE after 2026-10-26T15:37:50.260218Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-26T15:22:52.750421Z (CURRENT at publish; CURRENT until 2026-10-26T15:42:52.750421Z, STALE after 2026-10-26T15:52:52.750421Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-26T14:41:12.310348Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.08s
 
@@ -25,8 +25,8 @@ model board generated 2026-10-26T14:41:12.310348Z · simulations this update: 0 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Flamengo vs Atlético Mineiro | Result: home | no | 0.2300 | 0.368 [0.220, 0.519] | +0.125 | +0.026 | 0.25 | - | * | RESEARCH_CANDIDATE |
-| Flamengo vs Atlético Mineiro | home wins by more than 1.5 | no | 0.4600 | 0.609 [0.434, 0.768] | +0.132 | +0.024 | 0.48 | - | * | RESEARCH_CANDIDATE |
-| Flamengo vs Atlético Mineiro | home wins by more than 2.5 | no | 0.6900 | 0.799 [0.656, 0.912] | +0.094 | +0.016 | 0.7 | - |  | RESEARCH_CANDIDATE |
+| Flamengo vs Atlético Mineiro | home wins by more than 2.5 | no | 0.6900 | 0.799 [0.656, 0.912] | +0.094 | +0.016 | 0.7 | - | * | RESEARCH_CANDIDATE |
+| Flamengo vs Atlético Mineiro | home wins by more than 1.5 | no | 0.4700 | 0.609 [0.434, 0.768] | +0.122 | +0.014 | 0.48 | - |  | RESEARCH_CANDIDATE |
 | Flamengo vs Atlético Mineiro | Result: draw | yes | 0.1550 | 0.227 [0.148, 0.301] | +0.063 | +0.013 | 0.16 | - |  | RESEARCH_CANDIDATE |
 | AS Roma vs Cagliari | Result: home | no | 0.2800 | 0.400 [0.228, 0.583] | +0.106 | +0.001 | 0.28 | - | * | RESEARCH_CANDIDATE |
 
