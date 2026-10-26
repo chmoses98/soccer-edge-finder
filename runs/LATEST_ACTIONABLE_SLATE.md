@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261026T003707Z-7ac5c5` · generated 2026-10-26T00:37:07.474966Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261026T004754Z-29cc7c` · generated 2026-10-26T00:47:54.122372Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-26T00:34:18.449871Z (CURRENT at publish; CURRENT until 2026-10-26T00:54:18.449871Z, STALE after 2026-10-26T01:04:18.449871Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-26T00:45:00.056368Z (CURRENT at publish; CURRENT until 2026-10-26T01:05:00.056368Z, STALE after 2026-10-26T01:15:00.056368Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-26T00:30:41.830067Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.41s
+model board generated 2026-10-26T00:30:41.830067Z · simulations this update: 0 · Odds API calls this update: 2 (credits 6) · reprice 0.41s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,9 +12,9 @@ model board generated 2026-10-26T00:30:41.830067Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-26T01:00:00Z | Querétaro vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-26T01:00:00Z | Los Angeles FC vs LA Galaxy (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-26T01:05:00Z | Club América vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 77 | 0 |
+| 2026-10-26T01:00:00Z | Querétaro vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT close | CURRENT | 77 | 0 |
+| 2026-10-26T01:00:00Z | Los Angeles FC vs LA Galaxy (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT close | CURRENT | 77 | 0 |
+| 2026-10-26T01:05:00Z | Club América vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 77 | 0 |
 | 2026-10-26T03:10:00Z | Tijuana vs Santos Laguna (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-26T22:00:00Z | Unión vs Estudiantes de La Plata (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-26T22:30:00Z | Coritiba vs Grêmio (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -52,8 +52,7 @@ model board generated 2026-10-26T00:30:41.830067Z · simulations this update: 0 
 | Los Angeles FC vs LA Galaxy | Exact score 0-0 (home-away) | yes | 0.0300 | 0.085 [0.036, 0.141] | +0.053 | +0.017 | 0.04 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | Total goals over 0.5 | no | 0.0300 | 0.085 [0.036, 0.141] | +0.053 | +0.017 | 0.04 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | away team total over 0.5 | no | 0.2700 | 0.380 [0.257, 0.502] | +0.096 | +0.013 | 0.28 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Cruz Azul | First-half result: away | no | 0.6200 | 0.711 [0.598, 0.822] | +0.075 | +0.012 | 0.63 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Cruz Azul | Result: away | no | 0.5100 | 0.630 [0.479, 0.779] | +0.103 | +0.010 | 0.52 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Cruz Azul | Result: away | no | 0.5100 | 0.630 [0.479, 0.779] | +0.103 | +0.010 | 0.52 | 0.504 | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs LA Galaxy | First-half total goals over 2.5 | no | 0.8100 | 0.883 [0.799, 0.951] | +0.062 | +0.009 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | Total goals over 5.5 | no | 0.9200 | 0.954 [0.906, 0.989] | +0.029 | +0.007 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Cruz Azul | away wins by more than 1.5 | no | 0.7400 | 0.822 [0.705, 0.921] | +0.069 | +0.007 | 0.74 | - | * | RESEARCH_CANDIDATE |
@@ -63,6 +62,7 @@ model board generated 2026-10-26T00:30:41.830067Z · simulations this update: 0 
 | Querétaro vs Cruz Azul | away team total over 2.5 | no | 0.7500 | 0.833 [0.707, 0.930] | +0.070 | +0.004 | 0.75 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Cruz Azul | First half: away wins by more than 1.5 | no | 0.8800 | 0.922 [0.859, 0.971] | +0.035 | +0.003 | 0.88 | - | * | RESEARCH_CANDIDATE |
 | Flamengo vs Atlético Mineiro | Result: home | no | 0.2550 | 0.370 [0.220, 0.519] | +0.102 | +0.002 | 0.25 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Cruz Azul | First-half result: away | no | 0.6300 | 0.711 [0.598, 0.822] | +0.065 | +0.002 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | First-half total goals over 1.5 | no | 0.6200 | 0.706 [0.588, 0.822] | +0.070 | +0.002 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | away team total over 1.5 | no | 0.6400 | 0.735 [0.606, 0.848] | +0.079 | +0.001 | 0.64 | - |  | RESEARCH_CANDIDATE |
 | AS Roma vs Cagliari | Result: home | no | 0.2800 | 0.399 [0.228, 0.582] | +0.105 | +0.001 | 0.28 | - | * | RESEARCH_CANDIDATE |
