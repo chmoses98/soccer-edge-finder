@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261026T205939Z-067e5b` · generated 2026-10-26T20:59:39.479555Z · trigger `kickoff_chain:T-120/T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261026T210621Z-ce976b` · generated 2026-10-26T21:06:21.515725Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-26T20:56:54.865113Z (CURRENT at publish; CURRENT until 2026-10-26T21:16:54.865113Z, STALE after 2026-10-26T21:26:54.865113Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-26T21:03:32.247364Z (CURRENT at publish; CURRENT until 2026-10-26T21:23:32.247364Z, STALE after 2026-10-26T21:33:32.247364Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-26T20:14:34.454689Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.13s
+model board generated 2026-10-26T20:55:31.365550Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.19s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -16,16 +16,16 @@ model board generated 2026-10-26T20:14:34.454689Z · simulations this update: 0 
 | 2026-10-26T22:30:00Z | Coritiba vs Grêmio (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-26T23:00:00Z | Flamengo vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-27T00:15:00Z | Instituto vs Deportivo Riestra (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-10-27T17:30:00Z | Sassuolo vs Lazio (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-27T19:45:00Z | AS Roma vs Cagliari (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-27T19:45:00Z | Torino vs Como (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-28T17:30:00Z | AC Milan vs Bologna (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-28T17:30:00Z | Parma vs Udinese (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-28T17:30:00Z | Venezia vs Inter Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-28T19:45:00Z | Genoa vs Juventus (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-28T19:45:00Z | Monza vs Napoli (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-27T17:30:00Z | Sassuolo vs Lazio (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
+| 2026-10-27T19:45:00Z | AS Roma vs Cagliari (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-27T19:45:00Z | Torino vs Como (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-28T17:30:00Z | AC Milan vs Bologna (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-28T17:30:00Z | Parma vs Udinese (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-28T17:30:00Z | Venezia vs Inter Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
+| 2026-10-28T19:45:00Z | Genoa vs Juventus (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
+| 2026-10-28T19:45:00Z | Monza vs Napoli (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (6; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (8; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -35,14 +35,16 @@ model board generated 2026-10-26T20:14:34.454689Z · simulations this update: 0 
 | Flamengo vs Atlético Mineiro | Result: draw | yes | 0.1550 | 0.227 [0.148, 0.301] | +0.063 | +0.013 | 0.16 | - |  | RESEARCH_CANDIDATE |
 | AS Roma vs Cagliari | Result: home | no | 0.2700 | 0.400 [0.228, 0.583] | +0.116 | +0.011 | 0.28 | - | * | RESEARCH_CANDIDATE |
 | Flamengo vs Atlético Mineiro | Total goals over 2.5 | no | 0.3800 | 0.516 [0.334, 0.686] | +0.119 | +0.008 | 0.38 | - | * | RESEARCH_CANDIDATE |
+| Flamengo vs Atlético Mineiro | Result: away | yes | 0.0750 | 0.141 [0.064, 0.228] | +0.061 | +0.005 | 0.07 | - |  | RESEARCH_CANDIDATE |
+| Flamengo vs Atlético Mineiro | Total goals over 1.5 | no | 0.1700 | 0.271 [0.139, 0.408] | +0.091 | +0.003 | 0.17 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 97
-action_NO_QUOTE: 117
-action_RESEARCH_CANDIDATE: 6
-contract_sides: 220
+action_NO_EDGE: 95
+action_NO_QUOTE: 1031
+action_RESEARCH_CANDIDATE: 8
+contract_sides: 1134
 fixtures: 12
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
