@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261026T220523Z-289698` · generated 2026-10-26T22:05:23.706156Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
+slate `slate-20261026T221127Z-0b4c06` · generated 2026-10-26T22:11:27.538319Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-26T22:02:41.377953Z (CURRENT at publish; CURRENT until 2026-10-26T22:22:41.377953Z, STALE after 2026-10-26T22:32:41.377953Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-26T22:08:50.177102Z (CURRENT at publish; CURRENT until 2026-10-26T22:28:50.177102Z, STALE after 2026-10-26T22:38:50.177102Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-26T22:05:21.729663Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.21s
+model board generated 2026-10-26T22:05:21.729663Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.37s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -13,8 +13,8 @@ model board generated 2026-10-26T22:05:21.729663Z · simulations this update: 1 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
 | 2026-10-26T22:30:00Z | Coritiba vs Grêmio (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
-| 2026-10-26T23:00:00Z | Flamengo vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
-| 2026-10-27T00:15:00Z | Instituto vs Deportivo Riestra (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-10-26T23:00:00Z | Flamengo vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | CURRENT entry | CURRENT | 14 | 0 |
+| 2026-10-27T00:15:00Z | Instituto vs Deportivo Riestra (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-27T17:30:00Z | Sassuolo vs Lazio (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-27T19:45:00Z | AS Roma vs Cagliari (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-27T19:45:00Z | Torino vs Como (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -24,7 +24,7 @@ model board generated 2026-10-26T22:05:21.729663Z · simulations this update: 1 
 | 2026-10-28T19:45:00Z | Genoa vs Juventus (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-28T19:45:00Z | Monza vs Napoli (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (6; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (5; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -32,15 +32,14 @@ model board generated 2026-10-26T22:05:21.729663Z · simulations this update: 1 
 | Flamengo vs Atlético Mineiro | Result: home | no | 0.2350 | 0.368 [0.220, 0.519] | +0.120 | +0.021 | 0.25 | 0.222 | * | RESEARCH_CANDIDATE |
 | Flamengo vs Atlético Mineiro | Result: draw | yes | 0.1550 | 0.227 [0.148, 0.301] | +0.063 | +0.013 | 0.16 | 0.147 |  | RESEARCH_CANDIDATE |
 | AS Roma vs Cagliari | Result: home | no | 0.2700 | 0.400 [0.228, 0.583] | +0.116 | +0.011 | 0.28 | - | * | RESEARCH_CANDIDATE |
-| Flamengo vs Atlético Mineiro | Total goals over 0.5 | no | 0.0400 | 0.087 [0.036, 0.147] | +0.045 | +0.008 | 0.04 | - | * | RESEARCH_CANDIDATE |
 | Flamengo vs Atlético Mineiro | home wins by more than 2.5 | no | 0.7000 | 0.799 [0.656, 0.912] | +0.085 | +0.007 | 0.7 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 97
+action_NO_EDGE: 98
 action_NO_QUOTE: 943
-action_RESEARCH_CANDIDATE: 6
+action_RESEARCH_CANDIDATE: 5
 contract_sides: 1046
 fixtures: 11
 fixtures_model_invalidated: 0
