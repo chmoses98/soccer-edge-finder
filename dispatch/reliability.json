@@ -4,11 +4,11 @@
   "github_backup_minutes": 60
  },
  "definition": "capture_success_rate = delivered / eligible horizons whose window closed in the span (NOT_APPLICABLE excluded); close_success_rate = fixtures with a T-15 or T-5 delivery / fixtures whose close windows closed in the span",
- "generated_at": "2026-10-26T07:59:49Z",
+ "generated_at": "2026-10-26T10:46:35Z",
  "last_24h": {
   "capture_runs": 1,
   "capture_runs_failed": 0,
-  "capture_success_rate": 0.9678571428571429,
+  "capture_success_rate": 0.9676258992805755,
   "close_fixtures_delivered": 54,
   "close_fixtures_eligible": 56,
   "close_success_rate": 0.9642857142857143,
@@ -20,33 +20,33 @@
   "github_backup_actual": 6,
   "github_backup_expected": 24,
   "github_backup_success": 0.25,
-  "heartbeats_actual": 24,
+  "heartbeats_actual": 23,
   "heartbeats_by_source": {
    "chain": 4,
    "github-schedule-backup": 6,
-   "workflow-run": 14
+   "workflow-run": 13
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
   "horizon_states": {
-   "DELIVERED": 271,
+   "DELIVERED": 269,
    "MISSED_BEFORE_WAKE": 7,
    "MISSED_EXECUTION_FAILURE": 2
   },
-  "horizons_delivered": 271,
-  "horizons_eligible": 280,
+  "horizons_delivered": 269,
+  "horizons_eligible": 278,
   "horizons_missed": 9,
   "paid_calls": 6,
   "span_hours": 24.0
  },
  "last_7d": {
-  "capture_runs": 25,
+  "capture_runs": 24,
   "capture_runs_failed": 0,
   "capture_success_rate": 0.9031847133757962,
   "close_fixtures_delivered": 146,
   "close_fixtures_eligible": 157,
   "close_success_rate": 0.9299363057324841,
-  "credits_spent": 150,
+  "credits_spent": 147,
   "external_heartbeats_actual": 0,
   "external_heartbeats_expected": null,
   "external_trigger_success": null,
@@ -54,9 +54,9 @@
   "github_backup_actual": 37,
   "github_backup_expected": 168,
   "github_backup_success": 0.22023809523809523,
-  "heartbeats_actual": 157,
+  "heartbeats_actual": 156,
   "heartbeats_by_source": {
-   "chain": 28,
+   "chain": 27,
    "github-schedule-backup": 37,
    "workflow-run": 92
   },
@@ -70,12 +70,12 @@
   "horizons_delivered": 709,
   "horizons_eligible": 785,
   "horizons_missed": 76,
-  "paid_calls": 50,
+  "paid_calls": 49,
   "span_hours": 168.0
  },
  "last_wake": {
-  "no_action_reason": null,
-  "started_at": "2026-10-26T07:59:49Z",
+  "no_action_reason": "CAPTURE_IN_PROGRESS",
+  "started_at": "2026-10-26T10:46:35Z",
   "status": "OK",
   "trigger_source": "workflow-run"
  },
