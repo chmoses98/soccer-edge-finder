@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261026T013634Z-dc7f06` · generated 2026-10-26T01:36:34.081058Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261026T015134Z-12dba1` · generated 2026-10-26T01:51:34.137653Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-26T01:33:47.403830Z (CURRENT at publish; CURRENT until 2026-10-26T01:53:47.403830Z, STALE after 2026-10-26T02:03:47.403830Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-26T01:48:47.423747Z (CURRENT at publish; CURRENT until 2026-10-26T02:08:47.423747Z, STALE after 2026-10-26T02:18:47.423747Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-26T01:21:36.882166Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.16s
+model board generated 2026-10-26T01:21:36.882166Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.15s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-26T01:21:36.882166Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-26T03:10:00Z | Tijuana vs Santos Laguna (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 32 | 0 |
+| 2026-10-26T03:10:00Z | Tijuana vs Santos Laguna (mex.liga_mx) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-26T22:00:00Z | Unión vs Estudiantes de La Plata (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-26T22:30:00Z | Coritiba vs Grêmio (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-26T23:00:00Z | Flamengo vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -25,12 +25,12 @@ model board generated 2026-10-26T01:21:36.882166Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Tijuana vs Santos Laguna | btts | no | 0.3900 | 0.534 [0.409, 0.653] | +0.128 | +0.048 | 0.43 | - | * | RESEARCH_CANDIDATE |
-| Tijuana vs Santos Laguna | Total goals over 3.5 | no | 0.6400 | 0.767 [0.626, 0.887] | +0.111 | +0.029 | 0.66 | - | * | RESEARCH_CANDIDATE |
-| Tijuana vs Santos Laguna | Total goals over 2.5 | no | 0.4200 | 0.567 [0.403, 0.723] | +0.130 | +0.025 | 0.44 | - |  | RESEARCH_CANDIDATE |
+| Tijuana vs Santos Laguna | btts | no | 0.3800 | 0.534 [0.409, 0.653] | +0.138 | +0.058 | 0.43 | - | * | RESEARCH_CANDIDATE |
+| Tijuana vs Santos Laguna | Total goals over 2.5 | no | 0.4100 | 0.567 [0.403, 0.723] | +0.140 | +0.036 | 0.44 | - | * | RESEARCH_CANDIDATE |
+| Tijuana vs Santos Laguna | Total goals over 3.5 | no | 0.6400 | 0.767 [0.626, 0.887] | +0.111 | +0.029 | 0.66 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | away team total over 0.5 | no | 0.2600 | 0.380 [0.257, 0.502] | +0.107 | +0.023 | 0.28 | - | * | RESEARCH_CANDIDATE |
+| Tijuana vs Santos Laguna | Total goals over 4.5 | no | 0.8100 | 0.891 [0.799, 0.961] | +0.070 | +0.022 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | Total goals over 1.5 | no | 0.1900 | 0.311 [0.180, 0.447] | +0.110 | +0.019 | 0.2 | - |  | RESEARCH_CANDIDATE |
-| Tijuana vs Santos Laguna | Total goals over 4.5 | no | 0.8200 | 0.891 [0.799, 0.961] | +0.060 | +0.013 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | away team total over 1.5 | no | 0.6300 | 0.735 [0.606, 0.848] | +0.089 | +0.011 | 0.64 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | Total goals over 5.5 | no | 0.9200 | 0.954 [0.906, 0.989] | +0.029 | +0.007 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | First half: both teams to score | no | 0.7700 | 0.834 [0.748, 0.912] | +0.052 | +0.006 | 0.77 | - | * | RESEARCH_CANDIDATE |
