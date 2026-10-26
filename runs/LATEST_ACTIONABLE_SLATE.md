@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261026T195935Z-d0dba9` · generated 2026-10-26T19:59:35.375595Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
+slate `slate-20261026T201435Z-f6d70c` · generated 2026-10-26T20:14:35.612244Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-26T19:56:54.999324Z (CURRENT at publish; CURRENT until 2026-10-26T20:16:54.999324Z, STALE after 2026-10-26T20:26:54.999324Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-26T20:11:53.632295Z (CURRENT at publish; CURRENT until 2026-10-26T20:31:53.632295Z, STALE after 2026-10-26T20:41:53.632295Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-26T17:46:36.076905Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.11s
+model board generated 2026-10-26T20:14:34.454689Z · simulations this update: 2 · Odds API calls this update: 0 (credits 0) · reprice 0.15s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -22,6 +22,8 @@ model board generated 2026-10-26T17:46:36.076905Z · simulations this update: 0 
 | 2026-10-28T17:30:00Z | AC Milan vs Bologna (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-28T17:30:00Z | Parma vs Udinese (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-28T17:30:00Z | Venezia vs Inter Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-28T19:45:00Z | Genoa vs Juventus (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-28T19:45:00Z | Monza vs Napoli (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
 ## Candidates on CURRENT prices (6; RESEARCH_ONLY = analysis, never a bet)
 
@@ -37,11 +39,11 @@ model board generated 2026-10-26T17:46:36.076905Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 85
+action_NO_EDGE: 97
 action_NO_QUOTE: 117
 action_RESEARCH_CANDIDATE: 6
-contract_sides: 208
-fixtures: 10
+contract_sides: 220
+fixtures: 12
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
