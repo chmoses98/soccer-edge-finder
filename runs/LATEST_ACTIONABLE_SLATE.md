@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261026T162533Z-0f61f5` · generated 2026-10-26T16:25:33.196861Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261026T164033Z-73a6e1` · generated 2026-10-26T16:40:33.167041Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-26T16:22:55.545402Z (CURRENT at publish; CURRENT until 2026-10-26T16:42:55.545402Z, STALE after 2026-10-26T16:52:55.545402Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-26T16:37:55.558278Z (CURRENT at publish; CURRENT until 2026-10-26T16:57:55.558278Z, STALE after 2026-10-26T17:07:55.558278Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-26T14:41:12.310348Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.11s
 
@@ -24,8 +24,8 @@ model board generated 2026-10-26T14:41:12.310348Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
+| Flamengo vs Atlético Mineiro | Result: home | no | 0.2250 | 0.368 [0.220, 0.519] | +0.130 | +0.031 | 0.25 | - | * | RESEARCH_CANDIDATE |
 | Flamengo vs Atlético Mineiro | home wins by more than 1.5 | no | 0.4600 | 0.609 [0.434, 0.768] | +0.132 | +0.024 | 0.48 | - | * | RESEARCH_CANDIDATE |
-| Flamengo vs Atlético Mineiro | Result: home | no | 0.2350 | 0.368 [0.220, 0.519] | +0.120 | +0.021 | 0.25 | - | * | RESEARCH_CANDIDATE |
 | Flamengo vs Atlético Mineiro | home wins by more than 2.5 | no | 0.6900 | 0.799 [0.656, 0.912] | +0.094 | +0.016 | 0.7 | - |  | RESEARCH_CANDIDATE |
 | Flamengo vs Atlético Mineiro | Result: draw | yes | 0.1550 | 0.227 [0.148, 0.301] | +0.063 | +0.013 | 0.16 | - |  | RESEARCH_CANDIDATE |
 | AS Roma vs Cagliari | Result: home | no | 0.2800 | 0.400 [0.228, 0.583] | +0.106 | +0.001 | 0.28 | - | * | RESEARCH_CANDIDATE |
