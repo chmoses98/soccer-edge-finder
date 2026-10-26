@@ -7788,15 +7788,15 @@
       },
       "event_name": "Coritiba vs Gr\u00eamio",
       "fixture_id": "fx:bra.serie_a:2026:bra.coritiba:bra.gremio",
-      "fixtures_observed_at": "2026-10-26T17:46:32.766060Z",
+      "fixtures_observed_at": "2026-10-26T21:53:02.838815Z",
       "home": "bra.coritiba",
-      "input_fingerprint": "sha256:4b4e79d5e66d926587b3140a113582556f5bea2182045de72c520fc73dc5ca8d",
+      "input_fingerprint": "sha256:37214c51398dc02740ba0d10dfd59ac250026401aca075ae75bfae555214c9d4",
       "inputs": {
         "competition_id": "bra.serie_a",
         "draws_per_world": 100,
         "engine_version": "world_sim_v2",
         "kickoff_utc": "2026-10-26T22:30:00Z",
-        "lineup_key": "none",
+        "lineup_key": "sha256:49a4e04210d6c266e5b5ec6c8fbe7b78d41d4e976617ac2c1b0b91bd4c5ec698",
         "model_family": "data_only.world_sim_v2",
         "model_version": "dc_laplace_v1",
         "n_worlds": 1000,
@@ -7807,11 +7807,41 @@
         "worlds_version": "worlds_v1"
       },
       "lineup": {
-        "checked_at": "2026-10-26T21:29:34.003281Z",
-        "key": "none",
-        "last_change_at": "2026-10-26T20:29:33.389415Z",
-        "state": "unconfirmed"
+        "checked_at": "2026-10-26T22:05:17.595338Z",
+        "key": "sha256:49a4e04210d6c266e5b5ec6c8fbe7b78d41d4e976617ac2c1b0b91bd4c5ec698",
+        "last_change_at": "2026-10-26T21:57:38.573955Z",
+        "state": "confirmed"
       },
+      "lineup_history": [
+        {
+          "lineup_key": "none",
+          "lineup_state": "unconfirmed",
+          "model_generated_at": "2026-10-26T21:29:38.880446Z",
+          "scripts": {
+            "primary": "HOME_CONTROL",
+            "secondary": "TIGHT_LOW_EVENT",
+            "shares": [
+              0.26802,
+              0.10481,
+              0.25437,
+              0.1422,
+              0.08913,
+              0.14147
+            ],
+            "taxonomy_version": "soccer_scripts_v1"
+          },
+          "sim_key": "sha256:bf30dad40448a0f952c5ef336530dcd800db211d988ec3d4cc7b2ec0a437e223",
+          "summary": {
+            "mean_away_goals": 1.14839,
+            "mean_home_goals": 1.57068,
+            "p_away": 0.2799,
+            "p_btts": 0.52237,
+            "p_draw": 0.26061,
+            "p_home": 0.45949,
+            "p_over_2_5": 0.5026
+          }
+        }
+      ],
       "match_context": {
         "aggregate": {
           "source": "no aggregate (not a second leg)",
@@ -8037,8 +8067,8 @@
         "source": "production posterior (dc_laplace_v1) that priced this fixture",
         "version": "dc_matchup_v1"
       },
-      "model_fitted_at": "2026-10-26T21:29:37.491993Z",
-      "model_generated_at": "2026-10-26T21:29:38.880446Z",
+      "model_fitted_at": "2026-10-26T22:05:20.149481Z",
+      "model_generated_at": "2026-10-26T22:05:21.729663Z",
       "results_observed_at": "2026-10-26T17:46:25.814948Z",
       "scripts": {
         "contract_gaps": {},
@@ -8656,8 +8686,8 @@
           }
         }
       },
-      "sim_key": "sha256:bf30dad40448a0f952c5ef336530dcd800db211d988ec3d4cc7b2ec0a437e223",
-      "source_run_id": "run-20261026T212938Z-503d34",
+      "sim_key": "sha256:6c7f9d4aa1f2111b655b070631cf6c9ed27c5e496c8d7ee22088c56cfb912068",
+      "source_run_id": "run-20261026T220521Z-54cd38",
       "summary": {
         "mean_away_goals": 1.14839,
         "mean_home_goals": 1.57068,
@@ -87621,6 +87651,6 @@
       }
     }
   },
-  "generated_at": "2026-10-26T21:57:42.758599Z",
+  "generated_at": "2026-10-26T22:05:21.729663Z",
   "quantile_levels": "(i + 0.5) / 100, i = 0..99"
 }
