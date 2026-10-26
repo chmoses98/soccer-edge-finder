@@ -1,11 +1,11 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 185,
-  "PINNACLE_VALID_CLOSE": 261,
-  "PINNACLE_QUOTED_NOTHING": 15,
-  "MISSED_DISPATCHER_CLOSE": 47,
   "NO_SPORT_KEY": 19,
-  "NO_REFERENCE_EVENT": 2
+  "MISSED_DISPATCHER_CLOSE": 47,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 187,
+  "PINNACLE_VALID_CLOSE": 265,
+  "NO_REFERENCE_EVENT": 2,
+  "PINNACLE_QUOTED_NOTHING": 15
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.belgrano": {
@@ -38,6 +38,11 @@
    "close_horizon_delivered": false,
    "batch_id": null
   },
+  "fx:arg.primera:2026:arg.barracas_central:arg.estudiantes_rio_cuarto": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
   "fx:arg.primera:2026:arg.barracas_central:arg.huracan": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -62,6 +67,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261010T194300Z"
+  },
+  "fx:arg.primera:2026:arg.central_cordoba:arg.velez": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
   },
   "fx:arg.primera:2026:arg.defensa_y_justicia:arg.instituto": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -2043,6 +2053,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261011T025500Z"
   },
+  "fx:mex.liga_mx:2026:mex.america:mex.pachuca": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261026T005130Z"
+  },
   "fx:mex.liga_mx:2026:mex.atlante:mex.pumas": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
@@ -2153,6 +2168,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261010T224330Z"
   },
+  "fx:mex.liga_mx:2026:mex.queretaro:mex.cruz_azul": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261026T004500Z"
+  },
   "fx:mex.liga_mx:2026:mex.san_luis:mex.queretaro": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
@@ -2187,6 +2207,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261017T025016Z"
+  },
+  "fx:mex.liga_mx:2026:mex.tijuana:mex.santos_laguna": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261026T025445Z"
   },
   "fx:mex.liga_mx:2026:mex.toluca:mex.tijuana": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -2527,6 +2552,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261015T021430Z"
+  },
+  "fx:usa.mls:2026:usa.lafc:usa.la_galaxy": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261026T004500Z"
   },
   "fx:usa.mls:2026:usa.lafc:usa.vancouver_whitecaps": {
    "state": "PINNACLE_VALID_CLOSE",
