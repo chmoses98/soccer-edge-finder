@@ -54,290 +54,154 @@
   "delivered_total": 2435,
   "delivery_rate_total": 0.9048680787811223,
   "fixtures_tracked": 547,
-  "generated_at": "2026-10-26T05:56:31Z",
+  "generated_at": "2026-10-26T11:46:25Z",
   "last_tick": {
-    "batches": 10,
+    "batches": 0,
     "summary": [
       {
         "actions": [
           "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:ok:credits=3:paid=1:rows=7",
-          "lineups:ok:3",
-          "model_refresh:ok:fixtures=3:sim=3:cache=0:why=T-60:primary_refresh",
+          "model_refresh:ok:fixtures=6:sim=0:board=3:why=entered_lookahead_unmodelled",
           "slate_reprice:ok:via_model_refresh"
         ],
-        "batch_id": "kd-20261026T002735Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:arg.primera:2026:arg.central_cordoba:arg.velez",
-            5,
-            2.41
-          ],
-          [
-            "fx:arg.primera:2026:arg.barracas_central:arg.estudiantes_rio_cuarto",
-            5,
-            2.41
-          ],
-          [
-            "fx:mex.liga_mx:2026:mex.queretaro:mex.cruz_azul",
-            60,
-            32.41
-          ],
-          [
-            "fx:mex.liga_mx:2026:mex.queretaro:mex.cruz_azul",
-            30,
-            32.41
-          ],
-          [
-            "fx:usa.mls:2026:usa.lafc:usa.la_galaxy",
-            60,
-            32.41
-          ],
-          [
-            "fx:usa.mls:2026:usa.lafc:usa.la_galaxy",
-            30,
-            32.41
-          ],
-          [
-            "fx:mex.liga_mx:2026:mex.america:mex.pachuca",
-            60,
-            37.41
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=730:sim=0"
-        ],
-        "batch_id": "kd-20261026T003418Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:mex.liga_mx:2026:mex.america:mex.pachuca",
-            30,
-            30.69
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:ok:credits=6:paid=2:rows=14",
-          "lineups:ok:2",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=730:sim=0"
-        ],
-        "batch_id": "kd-20261026T004500Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:mex.liga_mx:2026:mex.queretaro:mex.cruz_azul",
-            15,
-            15.0
-          ],
-          [
-            "fx:usa.mls:2026:usa.lafc:usa.la_galaxy",
-            15,
-            15.0
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:ok:credits=3:paid=1:rows=7",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=730:sim=0"
-        ],
-        "batch_id": "kd-20261026T005130Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:mex.liga_mx:2026:mex.america:mex.pachuca",
-            15,
-            13.49
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:2",
-          "model_refresh:ok:fixtures=2:sim=0:cache=0:why=T-5:invalidated",
-          "slate_reprice:ok:via_model_refresh"
-        ],
-        "batch_id": "kd-20261026T005734Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:mex.liga_mx:2026:mex.queretaro:mex.cruz_azul",
-            5,
-            2.43
-          ],
-          [
-            "fx:usa.mls:2026:usa.lafc:usa.la_galaxy",
-            5,
-            2.43
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:ok:fixtures=1:sim=0:cache=0:why=T-5:invalidated",
-          "slate_reprice:ok:via_model_refresh"
-        ],
-        "batch_id": "kd-20261026T010346Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:mex.liga_mx:2026:mex.america:mex.pachuca",
-            5,
-            1.23
-          ],
-          [
-            "fx:mex.liga_mx:2026:mex.tijuana:mex.santos_laguna",
-            120,
-            126.23
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "model_refresh:ok:fixtures=6:sim=3:board=3:why=entered_lookahead_unmodelled",
-          "slate_reprice:ok:via_model_refresh"
-        ],
-        "batch_id": "ks-20261026T011846Z",
+        "batch_id": "ks-20261026T074729Z",
         "due": [],
         "slate_refresh": true
       },
       {
         "actions": [
           "kalshi_capture:ok",
-          "slate_reprice:ok:sides=210:sim=0"
+          "slate_reprice:ok:sides=146:sim=0"
         ],
-        "batch_id": "ks-20261026T013347Z",
+        "batch_id": "ks-20261026T080229Z",
         "due": [],
         "slate_refresh": true
       },
       {
         "actions": [
           "kalshi_capture:ok",
-          "slate_reprice:ok:sides=210:sim=0"
+          "slate_reprice:ok:sides=146:sim=0"
         ],
-        "batch_id": "ks-20261026T014847Z",
+        "batch_id": "ks-20261026T081801Z",
         "due": [],
         "slate_refresh": true
       },
       {
         "actions": [
           "kalshi_capture:ok",
-          "slate_reprice:ok:sides=210:sim=0"
+          "slate_reprice:ok:sides=146:sim=0"
         ],
-        "batch_id": "ks-20261026T020348Z",
+        "batch_id": "ks-20261026T083301Z",
         "due": [],
         "slate_refresh": true
       },
       {
         "actions": [
           "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:ok:credits=3:paid=1:rows=7",
-          "lineups:ok:1",
-          "model_refresh:ok:fixtures=1:sim=1:cache=0:why=T-60:primary_refresh",
-          "slate_reprice:ok:via_model_refresh"
+          "slate_reprice:ok:sides=146:sim=0"
         ],
-        "batch_id": "kd-20261026T020944Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:mex.liga_mx:2026:mex.tijuana:mex.santos_laguna",
-            60,
-            60.26
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=210:sim=0"
-        ],
-        "batch_id": "ks-20261026T022444Z",
+        "batch_id": "ks-20261026T084803Z",
         "due": [],
         "slate_refresh": true
       },
       {
         "actions": [
           "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=210:sim=0"
+          "slate_reprice:ok:sides=146:sim=0"
         ],
-        "batch_id": "kd-20261026T023945Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:mex.liga_mx:2026:mex.tijuana:mex.santos_laguna",
-            30,
-            30.24
-          ]
-        ]
+        "batch_id": "ks-20261026T090303Z",
+        "due": [],
+        "slate_refresh": true
       },
       {
         "actions": [
           "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:ok:credits=3:paid=1:rows=7",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=210:sim=0"
+          "slate_reprice:ok:sides=146:sim=0"
         ],
-        "batch_id": "kd-20261026T025445Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:mex.liga_mx:2026:mex.tijuana:mex.santos_laguna",
-            15,
-            15.24
-          ]
-        ]
+        "batch_id": "ks-20261026T091804Z",
+        "due": [],
+        "slate_refresh": true
       },
       {
         "actions": [
           "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=210:sim=0"
+          "slate_reprice:ok:sides=146:sim=0"
         ],
-        "batch_id": "kd-20261026T030501Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:mex.liga_mx:2026:mex.tijuana:mex.santos_laguna",
-            5,
-            4.97
-          ]
-        ]
+        "batch_id": "ks-20261026T093304Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=146:sim=0"
+        ],
+        "batch_id": "ks-20261026T094807Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=146:sim=0"
+        ],
+        "batch_id": "ks-20261026T100307Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=146:sim=0"
+        ],
+        "batch_id": "ks-20261026T101809Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=146:sim=0"
+        ],
+        "batch_id": "ks-20261026T103309Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=146:sim=0"
+        ],
+        "batch_id": "ks-20261026T104810Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=146:sim=0"
+        ],
+        "batch_id": "ks-20261026T110310Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=146:sim=0"
+        ],
+        "batch_id": "ks-20261026T111812Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=146:sim=0"
+        ],
+        "batch_id": "ks-20261026T113312Z",
+        "due": [],
+        "slate_refresh": true
       }
     ]
   },
