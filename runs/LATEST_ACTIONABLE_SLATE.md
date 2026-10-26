@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261026T185920Z-e62018` · generated 2026-10-26T18:59:20.045292Z · trigger `kickoff_chain:T-60` · mode `reprice_only`
+slate `slate-20261026T190603Z-aa8bfd` · generated 2026-10-26T19:06:03.327033Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-26T18:56:38.518261Z (CURRENT at publish; CURRENT until 2026-10-26T19:16:38.518261Z, STALE after 2026-10-26T19:26:38.518261Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-26T19:03:22.858693Z (CURRENT at publish; CURRENT until 2026-10-26T19:23:22.858693Z, STALE after 2026-10-26T19:33:22.858693Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-26T17:46:36.076905Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.14s
 
@@ -23,7 +23,7 @@ model board generated 2026-10-26T17:46:36.076905Z · simulations this update: 0 
 | 2026-10-28T17:30:00Z | Parma vs Udinese (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-28T17:30:00Z | Venezia vs Inter Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (8; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (7; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -31,17 +31,16 @@ model board generated 2026-10-26T17:46:36.076905Z · simulations this update: 0 
 | Flamengo vs Atlético Mineiro | home wins by more than 1.5 | no | 0.4500 | 0.609 [0.434, 0.768] | +0.142 | +0.035 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Flamengo vs Atlético Mineiro | Result: draw | yes | 0.1500 | 0.227 [0.148, 0.301] | +0.068 | +0.019 | 0.16 | - |  | RESEARCH_CANDIDATE |
 | Flamengo vs Atlético Mineiro | home wins by more than 2.5 | no | 0.6900 | 0.799 [0.656, 0.912] | +0.094 | +0.016 | 0.7 | - |  | RESEARCH_CANDIDATE |
-| Flamengo vs Atlético Mineiro | Total goals over 2.5 | no | 0.3800 | 0.516 [0.334, 0.686] | +0.119 | +0.008 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Flamengo vs Atlético Mineiro | Result: away | yes | 0.0750 | 0.141 [0.064, 0.228] | +0.061 | +0.005 | 0.07 | - |  | RESEARCH_CANDIDATE |
-| Flamengo vs Atlético Mineiro | Total goals over 1.5 | no | 0.1700 | 0.271 [0.139, 0.408] | +0.091 | +0.003 | 0.17 | - |  | RESEARCH_CANDIDATE |
+| Flamengo vs Atlético Mineiro | Total goals over 1.5 | no | 0.1700 | 0.271 [0.139, 0.408] | +0.091 | +0.003 | 0.17 | - | * | RESEARCH_CANDIDATE |
 | AS Roma vs Cagliari | Result: home | no | 0.2800 | 0.400 [0.228, 0.583] | +0.106 | +0.001 | 0.28 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 83
+action_NO_EDGE: 84
 action_NO_QUOTE: 117
-action_RESEARCH_CANDIDATE: 8
+action_RESEARCH_CANDIDATE: 7
 contract_sides: 208
 fixtures: 10
 fixtures_model_invalidated: 0
