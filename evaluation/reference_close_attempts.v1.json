@@ -1,10 +1,10 @@
 {
  "counts": {
-  "PINNACLE_VALID_CLOSE": 259,
   "DISPATCHER_CLOSE_NO_ATTEMPT": 185,
+  "PINNACLE_VALID_CLOSE": 261,
+  "PINNACLE_QUOTED_NOTHING": 15,
   "MISSED_DISPATCHER_CLOSE": 47,
   "NO_SPORT_KEY": 19,
-  "PINNACLE_QUOTED_NOTHING": 15,
   "NO_REFERENCE_EVENT": 2
  },
  "fixtures": {
@@ -177,6 +177,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:arg.primera:2026:arg.river_plate:arg.racing": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261025T215907Z"
   },
   "fx:arg.primera:2026:arg.rosario_central:arg.huracan": {
    "state": "MISSED_DISPATCHER_CLOSE",
@@ -2057,6 +2062,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261011T004500Z"
+  },
+  "fx:mex.liga_mx:2026:mex.atlas:mex.puebla": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261025T224502Z"
   },
   "fx:mex.liga_mx:2026:mex.cruz_azul:mex.juarez": {
    "state": "MISSED_DISPATCHER_CLOSE",
