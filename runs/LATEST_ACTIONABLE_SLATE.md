@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261026T011305Z-693491` · generated 2026-10-26T01:13:05.157315Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261026T012138Z-d24d2d` · generated 2026-10-26T01:21:38.423258Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-26T01:10:01.654557Z (CURRENT at publish; CURRENT until 2026-10-26T01:30:01.654557Z, STALE after 2026-10-26T01:40:01.654557Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-26T01:18:46.422038Z (CURRENT at publish; CURRENT until 2026-10-26T01:38:46.422038Z, STALE after 2026-10-26T01:48:46.422038Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-26T00:30:41.830067Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.16s
+model board generated 2026-10-26T01:21:36.882166Z · simulations this update: 3 · Odds API calls this update: 0 (credits 0) · reprice 0.15s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -14,10 +14,10 @@ model board generated 2026-10-26T00:30:41.830067Z · simulations this update: 0 
 |---|---|---|---|---|---|---|---|
 | 2026-10-26T03:10:00Z | Tijuana vs Santos Laguna (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-26T22:00:00Z | Unión vs Estudiantes de La Plata (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-26T22:30:00Z | Coritiba vs Grêmio (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-26T23:00:00Z | Flamengo vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-26T22:30:00Z | Coritiba vs Grêmio (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-26T23:00:00Z | Flamengo vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-27T00:15:00Z | Instituto vs Deportivo Riestra (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-27T17:30:00Z | Sassuolo vs Lazio (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
+| 2026-10-27T17:30:00Z | Sassuolo vs Lazio (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-27T19:45:00Z | AS Roma vs Cagliari (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-27T19:45:00Z | Torino vs Como (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
@@ -37,16 +37,16 @@ model board generated 2026-10-26T00:30:41.830067Z · simulations this update: 0 
 | Flamengo vs Atlético Mineiro | Result: draw | yes | 0.1650 | 0.228 [0.149, 0.304] | +0.053 | +0.005 | 0.16 | - | * | RESEARCH_CANDIDATE |
 | Flamengo vs Atlético Mineiro | Result: home | no | 0.2550 | 0.370 [0.220, 0.519] | +0.102 | +0.002 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | First-half total goals over 1.5 | no | 0.6200 | 0.706 [0.588, 0.822] | +0.070 | +0.002 | 0.62 | - | * | RESEARCH_CANDIDATE |
-| AS Roma vs Cagliari | Result: home | no | 0.2800 | 0.399 [0.228, 0.582] | +0.105 | +0.001 | 0.28 | - | * | RESEARCH_CANDIDATE |
+| AS Roma vs Cagliari | Result: home | no | 0.2800 | 0.400 [0.228, 0.583] | +0.106 | +0.001 | 0.28 | - | * | RESEARCH_CANDIDATE |
 | Flamengo vs Atlético Mineiro | Total goals over 3.5 | no | 0.6200 | 0.725 [0.561, 0.868] | +0.088 | +0.000 | 0.62 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_NO_EDGE: 123
-action_NO_QUOTE: 131
+action_NO_QUOTE: 73
 action_RESEARCH_CANDIDATE: 14
-contract_sides: 268
+contract_sides: 210
 fixtures: 8
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
