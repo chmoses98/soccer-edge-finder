@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-26T00:46:53.169168+00:00",
-  "events": 888,
-  "events_skipped_unmapped": 517,
+  "as_of": "2026-10-26T07:54:53.778139+00:00",
+  "events": 887,
+  "events_skipped_unmapped": 516,
   "fixtures_mapped": 371,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=33"
+      "weather_stopped:consecutive_failures:skipped=27"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 37,
-    "events": 40,
+    "captured": 24,
+    "events": 26,
     "failures": [],
-    "published_post": 8,
-    "published_pre_kickoff": 4,
-    "unchanged": 3,
-    "unpublished": 28
+    "published_post": 0,
+    "published_pre_kickoff": 0,
+    "unchanged": 2,
+    "unpublished": 26
   },
   "map_proposals": {
     "eng.3": {
@@ -285,7 +285,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 6,
+  "results_appended": 8,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -430,17 +430,17 @@
     "9812": "Girona"
   },
   "weather": {
-    "captured": 6,
-    "events": 43,
+    "captured": 7,
+    "events": 38,
     "failures": [
-      "401912638: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Iskandar%20Puteri&count=5&langu",
       "401912637: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Kyoto&count=5&language=en&forma",
-      "401912639: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Shanghai&count=5&language=en&fo"
+      "401912639: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Shanghai&count=5&language=en&fo",
+      "401912621: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Beijing&count=5&language=en&for"
     ],
     "forecast_miss": 0,
     "geocode_miss": 1,
     "no_venue": 0,
-    "skipped": 33,
+    "skipped": 27,
     "stopped": "consecutive_failures"
   }
 }
