@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261026T132525Z-4ed2c9` · generated 2026-10-26T13:25:25.606390Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261026T134025Z-a6fcf2` · generated 2026-10-26T13:40:25.700265Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-26T13:22:46.437857Z (CURRENT at publish; CURRENT until 2026-10-26T13:42:46.437857Z, STALE after 2026-10-26T13:52:46.437857Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-26T13:37:46.453058Z (CURRENT at publish; CURRENT until 2026-10-26T13:57:46.453058Z, STALE after 2026-10-26T14:07:46.453058Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-26T11:55:04.811687Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.09s
+model board generated 2026-10-26T11:55:04.811687Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.10s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -29,8 +29,8 @@ model board generated 2026-10-26T11:55:04.811687Z · simulations this update: 0 
 | Flamengo vs Atlético Mineiro | home wins by more than 2.5 | no | 0.6900 | 0.801 [0.658, 0.920] | +0.096 | +0.022 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Flamengo vs Atlético Mineiro | Result: draw | yes | 0.1550 | 0.228 [0.149, 0.304] | +0.063 | +0.015 | 0.16 | - |  | RESEARCH_CANDIDATE |
 | Flamengo vs Atlético Mineiro | Total goals over 2.5 | no | 0.3900 | 0.519 [0.342, 0.694] | +0.113 | +0.006 | 0.39 | - | * | RESEARCH_CANDIDATE |
+| Flamengo vs Atlético Mineiro | Total goals over 4.5 | no | 0.7900 | 0.862 [0.746, 0.953] | +0.060 | +0.006 | 0.79 | - |  | RESEARCH_CANDIDATE |
 | AS Roma vs Cagliari | Result: home | no | 0.2800 | 0.400 [0.228, 0.583] | +0.106 | +0.001 | 0.28 | - | * | RESEARCH_CANDIDATE |
-| Flamengo vs Atlético Mineiro | Result: away | yes | 0.0800 | 0.142 [0.067, 0.232] | +0.057 | +0.001 | 0.08 | - |  | RESEARCH_CANDIDATE |
 | Flamengo vs Atlético Mineiro | Total goals over 3.5 | no | 0.6200 | 0.725 [0.561, 0.868] | +0.088 | +0.000 | 0.62 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
