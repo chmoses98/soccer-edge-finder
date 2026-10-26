@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261026T010640Z-d78a6e` · generated 2026-10-26T01:06:40.330668Z · trigger `kickoff_chain:T-120/T-5` · mode `model_refresh_and_reprice`
+slate `slate-20261026T011305Z-693491` · generated 2026-10-26T01:13:05.157315Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-26T01:03:46.401557Z (CURRENT at publish; CURRENT until 2026-10-26T01:23:46.401557Z, STALE after 2026-10-26T01:33:46.401557Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-26T01:10:01.654557Z (CURRENT at publish; CURRENT until 2026-10-26T01:30:01.654557Z, STALE after 2026-10-26T01:40:01.654557Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-26T00:30:41.830067Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.17s
+model board generated 2026-10-26T00:30:41.830067Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.16s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -26,7 +26,7 @@ model board generated 2026-10-26T00:30:41.830067Z · simulations this update: 0 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Tijuana vs Santos Laguna | btts | no | 0.3900 | 0.534 [0.409, 0.653] | +0.128 | +0.048 | 0.43 | - | * | RESEARCH_CANDIDATE |
-| Tijuana vs Santos Laguna | Total goals over 2.5 | no | 0.4100 | 0.567 [0.403, 0.723] | +0.140 | +0.036 | 0.44 | - | * | RESEARCH_CANDIDATE |
+| Tijuana vs Santos Laguna | Total goals over 2.5 | no | 0.4200 | 0.567 [0.403, 0.723] | +0.130 | +0.025 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | Total goals over 4.5 | no | 0.8100 | 0.891 [0.799, 0.961] | +0.070 | +0.022 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | Total goals over 3.5 | no | 0.6500 | 0.767 [0.626, 0.887] | +0.101 | +0.020 | 0.66 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Santos Laguna | Total goals over 1.5 | no | 0.1900 | 0.311 [0.180, 0.447] | +0.110 | +0.019 | 0.2 | - |  | RESEARCH_CANDIDATE |
