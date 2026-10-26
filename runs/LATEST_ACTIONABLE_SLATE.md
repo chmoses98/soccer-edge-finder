@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261026T213637Z-225777` · generated 2026-10-26T21:36:37.945827Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
+slate `slate-20261026T214742Z-575d8c` · generated 2026-10-26T21:47:42.321658Z · trigger `kickoff_chain:T-15` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-26T21:33:56.806070Z (CURRENT at publish; CURRENT until 2026-10-26T21:53:56.806070Z, STALE after 2026-10-26T22:03:56.806070Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-26T21:45:00.057172Z (CURRENT at publish; CURRENT until 2026-10-26T22:05:00.057172Z, STALE after 2026-10-26T22:15:00.057172Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-26T21:29:38.880446Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.22s
+model board generated 2026-10-26T21:29:38.880446Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.23s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,8 +12,8 @@ model board generated 2026-10-26T21:29:38.880446Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-26T22:00:00Z | Unión vs Estudiantes de La Plata (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
-| 2026-10-26T22:30:00Z | Coritiba vs Grêmio (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | CURRENT entry | CURRENT | 14 | 0 |
+| 2026-10-26T22:00:00Z | Unión vs Estudiantes de La Plata (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
+| 2026-10-26T22:30:00Z | Coritiba vs Grêmio (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | AGING entry | CURRENT | 14 | 0 |
 | 2026-10-26T23:00:00Z | Flamengo vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-27T00:15:00Z | Instituto vs Deportivo Riestra (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-27T17:30:00Z | Sassuolo vs Lazio (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
@@ -29,7 +29,7 @@ model board generated 2026-10-26T21:29:38.880446Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Flamengo vs Atlético Mineiro | Result: home | no | 0.2200 | 0.368 [0.220, 0.519] | +0.136 | +0.037 | 0.25 | - | * | RESEARCH_CANDIDATE |
+| Flamengo vs Atlético Mineiro | Result: home | no | 0.2250 | 0.368 [0.220, 0.519] | +0.130 | +0.031 | 0.25 | - | * | RESEARCH_CANDIDATE |
 | Flamengo vs Atlético Mineiro | home wins by more than 1.5 | no | 0.4600 | 0.609 [0.434, 0.768] | +0.132 | +0.024 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Flamengo vs Atlético Mineiro | Result: draw | yes | 0.1500 | 0.227 [0.148, 0.301] | +0.068 | +0.019 | 0.16 | - |  | RESEARCH_CANDIDATE |
 | Flamengo vs Atlético Mineiro | home wins by more than 2.5 | no | 0.6900 | 0.799 [0.656, 0.912] | +0.094 | +0.016 | 0.7 | - |  | RESEARCH_CANDIDATE |
