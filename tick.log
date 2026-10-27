@@ -169,3 +169,71 @@ These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW
 - Sassuolo vs Lazio (Serie A) 2026-10-27T17:30:00Z · markets 3/3 evaluated · lineups unknown · xG 1.31-1.17 · 1X2 40%/27%/34%
 - AS Roma vs Cagliari (Serie A) 2026-10-27T19:45:00Z · markets 3/3 evaluated · lineups unknown · xG 1.74-0.74 · 1X2 60%/23%/17%
 - Torino vs Como (Serie A) 2026-10-27T19:45:00Z · markets 3/3 evaluated · lineups unknown · xG 1.10-1.59 · 1X2 27%/25%/48%
+
+{
+  "outputs": {
+    "json": "work/runs/_pending/run_output.v1.json",
+    "md": "work/runs/_pending/RUN_SOCCER.md",
+    "contracts": "work/runs/_pending/priced_contracts.json",
+    "coverage": "work/runs/_pending/coverage.json",
+    "diagnostics": "work/runs/_pending/coverage_diagnostics.json"
+  },
+  "simulated": [
+    "fx:usa.mls:2026:usa.vancouver_whitecaps:usa.san_diego",
+    "fx:usa.mls:2026:usa.san_jose_earthquakes:usa.colorado_rapids",
+    "fx:usa.mls:2026:usa.seattle_sounders:usa.houston_dynamo",
+    "fx:usa.mls:2026:usa.nashville:usa.philadelphia_union",
+    "fx:usa.mls:2026:usa.minnesota_united:usa.sporting_kc",
+    "fx:usa.mls:2026:usa.fc_dallas:usa.columbus_crew",
+    "fx:usa.mls:2026:usa.chicago_fire:usa.orlando_city",
+    "fx:usa.mls:2026:usa.austin:usa.real_salt_lake",
+    "fx:usa.mls:2026:usa.toronto:usa.dc_united",
+    "fx:usa.mls:2026:usa.nycfc:usa.atlanta_united",
+    "fx:usa.mls:2026:usa.new_england:usa.ny_red_bulls",
+    "fx:usa.mls:2026:usa.inter_miami:usa.cincinnati",
+    "fx:usa.mls:2026:usa.charlotte:usa.cf_montreal",
+    "fx:usa.mls:2026:usa.st_louis_city:usa.portland_timbers",
+    "fx:mex.liga_mx:2026:mex.america:mex.tijuana",
+    "fx:bra.serie_a:2026:bra.remo:bra.botafogo",
+    "fx:bra.serie_a:2026:bra.bahia:bra.sao_paulo",
+    "fx:bra.serie_a:2026:bra.santos:bra.palmeiras",
+    "fx:bra.serie_a:2026:bra.bragantino:bra.chapecoense",
+    "fx:bra.serie_a:2026:bra.fluminense:bra.internacional",
+    "fx:ita.serie_a:2026-27:ita.milan:ita.bologna:matchday_9",
+    "fx:ita.serie_a:2026-27:ita.parma:ita.udinese:matchday_9",
+    "fx:ita.serie_a:2026-27:ita.venezia:ita.inter:matchday_9",
+    "fx:ita.serie_a:2026-27:ita.genoa:ita.juventus:matchday_9",
+    "fx:ita.serie_a:2026-27:ita.monza:ita.napoli:matchday_9",
+    "fx:ita.serie_a:2026-27:ita.sassuolo:ita.lazio:matchday_9",
+    "fx:ita.serie_a:2026-27:ita.roma:ita.cagliari:matchday_9",
+    "fx:ita.serie_a:2026-27:ita.torino:ita.como:matchday_9"
+  ],
+  "repriced": [],
+  "archived_records": 1159
+}
+[dispatch] holding 7.5 min (next window opens in 555.4 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261027T061450Z",
+  "complete": true,
+  "discovered": 5923,
+  "written": 1405,
+  "path": "work/snapshots/2026-10-27/cap-20261027T061450Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261027T061451Z-f12cfb", "mode": "reprice_only", "fixtures": 28, "contract_sides": 2318, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.913, "price_changes_vs_previous": 210}
+[dispatch] holding 8.4 min (next window opens in 542.3 min)
+{
+ "batches": 0,
+ "horizons_delivered": 0,
+ "missed_states": {
+  "MISSED_BEFORE_WAKE": 6,
+  "MISSED_EXECUTION_FAILURE": 1
+ },
+ "paid_calls": 0,
+ "credits_spent": 0,
+ "end_reason": "link_time_limit",
+ "chain_continue": true,
+ "delivered_total": 2458,
+ "missed_total": 263,
+ "delivery_rate_total": 0.9033443586916575
+}
