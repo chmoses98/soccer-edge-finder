@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261027T081937Z-4edd19` · generated 2026-10-27T08:19:37.294807Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261027T083439Z-628142` · generated 2026-10-27T08:34:39.197334Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-27T08:16:54.822907Z (CURRENT at publish; CURRENT until 2026-10-27T08:36:54.822907Z, STALE after 2026-10-27T08:46:54.822907Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-27T08:31:56.777295Z (CURRENT at publish; CURRENT until 2026-10-27T08:51:56.777295Z, STALE after 2026-10-27T09:01:56.777295Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-27T06:34:16.293033Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.68s
 
@@ -41,7 +41,7 @@ model board generated 2026-10-27T06:34:16.293033Z · simulations this update: 0 
 | 2026-10-29T02:30:00Z | Vancouver Whitecaps vs San Diego FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-29T03:00:00Z | Club América vs Tijuana (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 
-## Candidates on CURRENT prices (152; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (153; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -89,9 +89,9 @@ model board generated 2026-10-27T06:34:16.293033Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1876
+action_NO_EDGE: 1875
 action_NO_QUOTE: 290
-action_RESEARCH_CANDIDATE: 152
+action_RESEARCH_CANDIDATE: 153
 contract_sides: 2318
 fixtures: 28
 fixtures_model_invalidated: 0
