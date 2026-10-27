@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261027T114949Z-b4ac5e` · generated 2026-10-27T11:49:49.459450Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261027T120925Z-cd7d0d` · generated 2026-10-27T12:09:25.637108Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-27T11:47:06.814443Z (CURRENT at publish; CURRENT until 2026-10-27T12:07:06.814443Z, STALE after 2026-10-27T12:17:06.814443Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-27T12:06:30.068290Z (CURRENT at publish; CURRENT until 2026-10-27T12:26:30.068290Z, STALE after 2026-10-27T12:36:30.068290Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-27T06:34:16.293033Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.67s
+model board generated 2026-10-27T12:09:22.795910Z · simulations this update: 8 · Odds API calls this update: 0 (credits 0) · reprice 0.68s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -41,7 +41,7 @@ model board generated 2026-10-27T06:34:16.293033Z · simulations this update: 0 
 | 2026-10-29T02:30:00Z | Vancouver Whitecaps vs San Diego FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-29T03:00:00Z | Club América vs Tijuana (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 
-## Candidates on CURRENT prices (152; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (151; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -52,10 +52,10 @@ model board generated 2026-10-27T06:34:16.293033Z · simulations this update: 0 
 | Seattle Sounders vs Houston Dynamo | Total goals over 3.5 | no | 0.6500 | 0.853 [0.753, 0.932] | +0.187 | +0.133 | 0.78 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | btts | no | 0.4200 | 0.637 [0.525, 0.735] | +0.200 | +0.131 | 0.55 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Colorado Rapids | btts | no | 0.3800 | 0.584 [0.477, 0.690] | +0.188 | +0.118 | 0.49 | - | * | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Colorado Rapids | away team total over 1.5 | no | 0.6100 | 0.801 [0.699, 0.889] | +0.174 | +0.118 | 0.73 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | Total goals over 1.5 | no | 0.2000 | 0.416 [0.276, 0.550] | +0.205 | +0.115 | 0.31 | - |  | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Colorado Rapids | away team total over 0.5 | no | 0.2500 | 0.451 [0.333, 0.567] | +0.188 | +0.113 | 0.36 | - |  | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Colorado Rapids | away team total over 1.5 | no | 0.6200 | 0.801 [0.699, 0.889] | +0.164 | +0.108 | 0.73 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | away team total over 2.5 | no | 0.8300 | 0.959 [0.928, 0.986] | +0.119 | +0.104 | 0.93 | - |  | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Colorado Rapids | away team total over 0.5 | no | 0.2600 | 0.451 [0.333, 0.567] | +0.177 | +0.103 | 0.36 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs Atlanta United | btts | no | 0.4000 | 0.589 [0.479, 0.693] | +0.172 | +0.101 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | Total goals over 3.5 | no | 0.5500 | 0.750 [0.601, 0.870] | +0.182 | +0.100 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | Total goals over 2.5 | no | 0.3300 | 0.546 [0.378, 0.696] | +0.201 | +0.098 | 0.42 | - |  | RESEARCH_CANDIDATE |
@@ -81,17 +81,17 @@ model board generated 2026-10-27T06:34:16.293033Z · simulations this update: 0 
 | Charlotte FC vs CF Montréal | away team total over 0.5 | no | 0.3400 | 0.499 [0.383, 0.613] | +0.143 | +0.067 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | First half: both teams to score | no | 0.7300 | 0.853 [0.779, 0.921] | +0.110 | +0.066 | 0.79 | - | * | RESEARCH_CANDIDATE |
 | Toronto FC vs D.C. United | away team total over 0.5 | no | 0.2600 | 0.422 [0.300, 0.540] | +0.148 | +0.066 | 0.32 | - |  | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Colorado Rapids | away team total over 2.5 | no | 0.8500 | 0.945 [0.900, 0.980] | +0.086 | +0.065 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Colorado Rapids | Total goals over 4.5 | no | 0.8000 | 0.912 [0.837, 0.967] | +0.100 | +0.064 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | Total goals over 1.5 | no | 0.1400 | 0.294 [0.168, 0.418] | +0.146 | +0.061 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs CF Montréal | btts | no | 0.4000 | 0.552 [0.435, 0.663] | +0.135 | +0.061 | 0.45 | - | * | RESEARCH_CANDIDATE |
+| New York City FC vs Atlanta United | Total goals over 3.5 | no | 0.6200 | 0.768 [0.630, 0.888] | +0.132 | +0.058 | 0.67 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1877
-action_NO_QUOTE: 289
-action_RESEARCH_CANDIDATE: 152
+action_NO_EDGE: 1864
+action_NO_QUOTE: 303
+action_RESEARCH_CANDIDATE: 151
 contract_sides: 2318
 fixtures: 28
 fixtures_model_invalidated: 0
