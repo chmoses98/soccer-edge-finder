@@ -54,9 +54,346 @@
   "delivered_total": 2493,
   "delivery_rate_total": 0.9045718432510885,
   "fixtures_tracked": 560,
-  "generated_at": "2026-10-27T21:57:26Z",
+  "generated_at": "2026-10-27T23:18:36Z",
+  "last_tick": {
+    "batches": 9,
+    "summary": [
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "model_refresh:ok:fixtures=9:sim=1:board=8:why=entered_lookahead_unmodelled",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "ks-20261027T174940Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=2468:sim=0"
+        ],
+        "batch_id": "ks-20261027T180440Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=2468:sim=0"
+        ],
+        "batch_id": "ks-20261027T182012Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=2468:sim=0"
+        ],
+        "batch_id": "ks-20261027T183512Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=14",
+          "lineups:ok:1",
+          "model_refresh:ok:fixtures=2:sim=0:cache=2:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261027T184132Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ita.serie_a:2026-27:ita.torino:ita.como:matchday_9",
+            60,
+            63.46
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.roma:ita.cagliari:matchday_9",
+            60,
+            63.46
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.roma:ita.cagliari",
+            60,
+            63.46
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.torino:ita.como",
+            60,
+            63.46
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=2468:sim=0"
+        ],
+        "batch_id": "ks-20261027T185634Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=2468:sim=0"
+        ],
+        "batch_id": "ks-20261027T191134Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=2468:sim=0"
+        ],
+        "batch_id": "kd-20261027T191810Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ita.serie_a:2026-27:ita.torino:ita.como:matchday_9",
+            30,
+            26.82
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.roma:ita.cagliari:matchday_9",
+            30,
+            26.82
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.roma:ita.cagliari",
+            30,
+            26.82
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.torino:ita.como",
+            30,
+            26.82
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=14",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=2468:sim=0"
+        ],
+        "batch_id": "kd-20261027T193003Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ita.serie_a:2026-27:ita.torino:ita.como:matchday_9",
+            15,
+            14.94
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.roma:ita.cagliari:matchday_9",
+            15,
+            14.94
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.roma:ita.cagliari",
+            15,
+            14.94
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.torino:ita.como",
+            15,
+            14.94
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=2468:sim=0"
+        ],
+        "batch_id": "kd-20261027T194000Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ita.serie_a:2026-27:ita.torino:ita.como:matchday_9",
+            5,
+            5.0
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.roma:ita.cagliari:matchday_9",
+            5,
+            5.0
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.roma:ita.cagliari",
+            5,
+            5.0
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.torino:ita.como",
+            5,
+            5.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=2456:sim=0"
+        ],
+        "batch_id": "kd-20261027T195437Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.argentinos_juniors:arg.independiente_rivadavia",
+            120,
+            125.38
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "model_refresh:ok:fixtures=1:sim=1:board=1:why=entered_lookahead_unmodelled",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "ks-20261027T200937Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=2462:sim=0"
+        ],
+        "batch_id": "ks-20261027T202510Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=2462:sim=0"
+        ],
+        "batch_id": "ks-20261027T204010Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=2462:sim=0"
+        ],
+        "batch_id": "kd-20261027T205437Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.argentinos_juniors:arg.independiente_rivadavia",
+            60,
+            65.38
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=2462:sim=0"
+        ],
+        "batch_id": "ks-20261027T210937Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=3318:sim=0"
+        ],
+        "batch_id": "ks-20261027T212510Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3318:sim=0"
+        ],
+        "batch_id": "kd-20261027T213130Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.argentinos_juniors:arg.independiente_rivadavia",
+            30,
+            28.48
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3318:sim=0"
+        ],
+        "batch_id": "kd-20261027T214500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.argentinos_juniors:arg.independiente_rivadavia",
+            15,
+            15.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3318:sim=0"
+        ],
+        "batch_id": "kd-20261027T215437Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.argentinos_juniors:arg.independiente_rivadavia",
+            5,
+            5.38
+          ]
+        ]
+      }
+    ]
+  },
   "missed_total": 263,
-  "n_pending_fixtures": 42,
+  "n_pending_fixtures": 44,
   "pending_fixtures": [
     {
       "competition_id": "ita.serie_a",
@@ -349,6 +686,20 @@
       "competition_id": "fra.ligue_1",
       "fixture_id": "fx:fra.ligue_1:2026-27:fra.lille:fra.lens",
       "kickoff_utc": "2026-10-30T20:05:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "arg.primera",
+      "fixture_id": "fx:arg.primera:2026:arg.estudiantes_rio_cuarto:arg.gimnasia_la_plata",
+      "kickoff_utc": "2026-10-30T22:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "arg.primera",
+      "fixture_id": "fx:arg.primera:2026:arg.huracan:arg.tigre",
+      "kickoff_utc": "2026-10-30T22:00:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }
