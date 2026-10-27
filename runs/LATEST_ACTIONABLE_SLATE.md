@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261027T094942Z-a37fed` · generated 2026-10-27T09:49:42.552171Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261027T100443Z-23541c` · generated 2026-10-27T10:04:43.972349Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-27T09:47:00.224003Z (CURRENT at publish; CURRENT until 2026-10-27T10:07:00.224003Z, STALE after 2026-10-27T10:17:00.224003Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-27T10:02:01.726945Z (CURRENT at publish; CURRENT until 2026-10-27T10:22:01.726945Z, STALE after 2026-10-27T10:32:01.726945Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-27T06:34:16.293033Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.66s
+model board generated 2026-10-27T06:34:16.293033Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.85s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -41,7 +41,7 @@ model board generated 2026-10-27T06:34:16.293033Z · simulations this update: 0 
 | 2026-10-29T02:30:00Z | Vancouver Whitecaps vs San Diego FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-29T03:00:00Z | Club América vs Tijuana (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 
-## Candidates on CURRENT prices (151; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (152; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -89,9 +89,9 @@ model board generated 2026-10-27T06:34:16.293033Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1863
-action_NO_QUOTE: 304
-action_RESEARCH_CANDIDATE: 151
+action_NO_EDGE: 1864
+action_NO_QUOTE: 302
+action_RESEARCH_CANDIDATE: 152
 contract_sides: 2318
 fixtures: 28
 fixtures_model_invalidated: 0
