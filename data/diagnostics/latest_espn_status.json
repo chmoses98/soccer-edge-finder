@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-27T14:39:35.392198+00:00",
+  "as_of": "2026-10-27T20:48:37.213112+00:00",
   "events": 886,
   "events_skipped_unmapped": 517,
   "fixtures_mapped": 369,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=6"
+      "weather_stopped:consecutive_failures:skipped=13"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 67,
-    "events": 67,
+    "captured": 124,
+    "events": 125,
     "failures": [],
-    "published_post": 3,
+    "published_post": 49,
     "published_pre_kickoff": 0,
-    "unchanged": 0,
-    "unpublished": 64
+    "unchanged": 1,
+    "unpublished": 76
   },
   "map_proposals": {
     "eng.3": {
@@ -278,14 +278,14 @@
         "2428": "Hannover 96",
         "269": "1. FC N\u00fcrnberg",
         "4471": "Karlsruher SC",
-        "6631": "SG Sonnenhof Gro\u00dfaspach",
+        "6631": "SG Sonnenhof Gro\u00dfaspch",
         "7017": "Dynamo Dresden",
         "9705": "Rot-Weiss Essen"
       }
     }
   },
   "map_version": "4",
-  "results_appended": 1,
+  "results_appended": 2,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -403,7 +403,7 @@
     "5463": "Ponferradina",
     "5464": "Portugalete",
     "5535": "Badajoz",
-    "6631": "SG Sonnenhof Gro\u00dfaspach",
+    "6631": "SG Sonnenhof Gro\u00dfaspch",
     "6825": "Gimnastica Segoviana",
     "6827": "Alcoyano",
     "6832": "Almer\u00eda",
@@ -430,17 +430,17 @@
     "9812": "Girona"
   },
   "weather": {
-    "captured": 15,
-    "events": 24,
+    "captured": 7,
+    "events": 23,
     "failures": [
-      "401841290: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-30.0328&longitude=-51.2302&hourly=",
-      "401860406: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Fortaleza&count=5&language=en&f",
-      "401850663: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-33.4569&longitude=-70.6483&hourly="
+      "401841291: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bragan\u00e7a%20Paulista&count=5&lan",
+      "401841293: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Santos&count=5&language=en&form",
+      "401841296: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Salvador&count=5&language=en&fo"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 6,
+    "skipped": 13,
     "stopped": "consecutive_failures"
   }
 }
