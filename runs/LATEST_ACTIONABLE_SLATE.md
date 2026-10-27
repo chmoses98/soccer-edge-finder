@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261027T182256Z-c2fabe` · generated 2026-10-27T18:22:56.174392Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261027T183756Z-93291d` · generated 2026-10-27T18:37:56.354472Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-27T18:20:12.185266Z (CURRENT at publish; CURRENT until 2026-10-27T18:40:12.185266Z, STALE after 2026-10-27T18:50:12.185266Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-27T18:35:12.205082Z (CURRENT at publish; CURRENT until 2026-10-27T18:55:12.205082Z, STALE after 2026-10-27T19:05:12.205082Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-27T17:52:34.665432Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.29s
 
@@ -55,9 +55,9 @@ model board generated 2026-10-27T17:52:34.665432Z · simulations this update: 0 
 | Seattle Sounders vs Houston Dynamo | Total goals over 1.5 | no | 0.1900 | 0.416 [0.276, 0.550] | +0.215 | +0.125 | 0.31 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Colorado Rapids | btts | no | 0.3800 | 0.584 [0.477, 0.690] | +0.188 | +0.118 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Colorado Rapids | away team total over 0.5 | no | 0.2500 | 0.451 [0.333, 0.567] | +0.188 | +0.113 | 0.36 | - |  | RESEARCH_CANDIDATE |
+| New England Revolution vs New York Red Bulls | Total goals over 3.5 | no | 0.5400 | 0.750 [0.601, 0.870] | +0.192 | +0.110 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | away team total over 2.5 | no | 0.8300 | 0.959 [0.928, 0.986] | +0.119 | +0.104 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs Atlanta United | btts | no | 0.4000 | 0.589 [0.479, 0.693] | +0.172 | +0.101 | 0.5 | - | * | RESEARCH_CANDIDATE |
-| New England Revolution vs New York Red Bulls | Total goals over 3.5 | no | 0.5500 | 0.750 [0.601, 0.870] | +0.182 | +0.100 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | Total goals over 2.5 | no | 0.3300 | 0.546 [0.378, 0.696] | +0.201 | +0.098 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Colorado Rapids | Total goals over 2.5 | no | 0.4000 | 0.608 [0.453, 0.745] | +0.191 | +0.098 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | home team total over 1.5 | no | 0.4500 | 0.649 [0.490, 0.783] | +0.182 | +0.094 | 0.54 | - | * | RESEARCH_CANDIDATE |
@@ -97,7 +97,5 @@ fixtures: 28
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
-
-Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
