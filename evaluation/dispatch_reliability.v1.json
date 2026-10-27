@@ -1,23 +1,23 @@
 {
  "schema": "dispatch_reliability_v1",
- "generated_at": "2026-10-26T19:25:41Z",
+ "generated_at": "2026-10-27T01:40:02Z",
  "cadence": {
   "external_heartbeat_minutes": null,
   "github_backup_minutes": 60
  },
  "last_wake": {
-  "started_at": "2026-10-26T19:15:46Z",
+  "started_at": "2026-10-27T00:47:24Z",
   "trigger_source": "github-schedule-backup",
   "status": "OK",
   "no_action_reason": null
  },
  "last_24h": {
   "span_hours": 24.0,
-  "heartbeats_actual": 21,
+  "heartbeats_actual": 17,
   "heartbeats_by_source": {
    "chain": 4,
-   "github-schedule-backup": 5,
-   "workflow-run": 12
+   "github-schedule-backup": 4,
+   "workflow-run": 9
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -25,33 +25,31 @@
   "external_heartbeats_actual": 0,
   "external_trigger_success": null,
   "github_backup_expected": 24,
-  "github_backup_actual": 5,
-  "github_backup_success": 0.20833333333333334,
+  "github_backup_actual": 4,
+  "github_backup_success": 0.16666666666666666,
   "capture_runs": 3,
-  "capture_runs_failed": 0,
-  "paid_calls": 6,
-  "credits_spent": 18,
-  "fixtures_with_horizons": 15,
-  "horizons_eligible": 61,
-  "horizons_delivered": 57,
-  "horizons_missed": 4,
+  "capture_runs_failed": 1,
+  "paid_calls": 7,
+  "credits_spent": 21,
+  "fixtures_with_horizons": 7,
+  "horizons_eligible": 28,
+  "horizons_delivered": 28,
+  "horizons_missed": 0,
   "horizon_states": {
-   "DELIVERED": 57,
-   "MISSED_BEFORE_WAKE": 2,
-   "MISSED_EXECUTION_FAILURE": 2
+   "DELIVERED": 28
   },
-  "capture_success_rate": 0.9344262295081968,
-  "close_fixtures_eligible": 13,
-  "close_fixtures_delivered": 13,
+  "capture_success_rate": 1.0,
+  "close_fixtures_eligible": 5,
+  "close_fixtures_delivered": 5,
   "close_success_rate": 1.0
  },
  "last_7d": {
   "span_hours": 168.0,
-  "heartbeats_actual": 158,
+  "heartbeats_actual": 155,
   "heartbeats_by_source": {
    "chain": 28,
-   "github-schedule-backup": 38,
-   "workflow-run": 92
+   "github-schedule-backup": 37,
+   "workflow-run": 90
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -59,22 +57,22 @@
   "external_heartbeats_actual": 0,
   "external_trigger_success": null,
   "github_backup_expected": 168,
-  "github_backup_actual": 38,
-  "github_backup_success": 0.2261904761904762,
+  "github_backup_actual": 37,
+  "github_backup_success": 0.22023809523809523,
   "capture_runs": 25,
-  "capture_runs_failed": 0,
-  "paid_calls": 41,
-  "credits_spent": 123,
+  "capture_runs_failed": 1,
+  "paid_calls": 43,
+  "credits_spent": 129,
   "fixtures_with_horizons": 151,
-  "horizons_eligible": 749,
-  "horizons_delivered": 673,
+  "horizons_eligible": 748,
+  "horizons_delivered": 672,
   "horizons_missed": 76,
   "horizon_states": {
-   "DELIVERED": 673,
+   "DELIVERED": 672,
    "MISSED_BEFORE_WAKE": 37,
    "MISSED_EXECUTION_FAILURE": 39
   },
-  "capture_success_rate": 0.8985313751668892,
+  "capture_success_rate": 0.8983957219251337,
   "close_fixtures_eligible": 149,
   "close_fixtures_delivered": 138,
   "close_success_rate": 0.9261744966442953
