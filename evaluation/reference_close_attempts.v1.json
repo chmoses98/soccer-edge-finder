@@ -1,10 +1,10 @@
 {
  "counts": {
-  "PINNACLE_VALID_CLOSE": 268,
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 190,
+  "PINNACLE_VALID_CLOSE": 270,
+  "MISSED_DISPATCHER_CLOSE": 49,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 193,
   "PINNACLE_QUOTED_NOTHING": 15,
   "NO_SPORT_KEY": 19,
-  "MISSED_DISPATCHER_CLOSE": 49,
   "NO_REFERENCE_EVENT": 2
  },
  "fixtures": {
@@ -14,6 +14,11 @@
    "batch_id": null
   },
   "fx:arg.primera:2026:arg.aldosivi:arg.sarmiento": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:arg.primera:2026:arg.argentinos_juniors:arg.independiente_rivadavia": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
@@ -2008,6 +2013,16 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261019T183001Z"
   },
+  "fx:ita.serie_a:2026-27:ita.roma:ita.cagliari": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:ita.serie_a:2026-27:ita.roma:ita.cagliari:matchday_9": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261027T193003Z"
+  },
   "fx:ita.serie_a:2026-27:ita.roma:ita.genoa": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -2037,6 +2052,16 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261011T154403Z"
+  },
+  "fx:ita.serie_a:2026-27:ita.torino:ita.como": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:ita.serie_a:2026-27:ita.torino:ita.como:matchday_9": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261027T193003Z"
   },
   "fx:ita.serie_a:2026-27:ita.torino:ita.monza": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
