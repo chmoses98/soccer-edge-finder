@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261026T222736Z-f81e20` · generated 2026-10-26T22:27:36.688610Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
+slate `slate-20261027T003404Z-41e38f` · generated 2026-10-27T00:34:04.552344Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-26T22:25:00.056270Z (CURRENT at publish; CURRENT until 2026-10-26T22:45:00.056270Z, STALE after 2026-10-26T22:55:00.056270Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-27T00:31:13.465177Z (CURRENT at publish; CURRENT until 2026-10-27T00:51:13.465177Z, STALE after 2026-10-27T01:01:13.465177Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-26T22:05:21.729663Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.20s
+model board generated 2026-10-26T20:55:31.365550Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.19s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,9 +12,6 @@ model board generated 2026-10-26T22:05:21.729663Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-26T22:30:00Z | Coritiba vs Grêmio (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
-| 2026-10-26T23:00:00Z | Flamengo vs Atlético Mineiro (bra.serie_a) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
-| 2026-10-27T00:15:00Z | Instituto vs Deportivo Riestra (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-27T17:30:00Z | Sassuolo vs Lazio (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-27T19:45:00Z | AS Roma vs Cagliari (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-27T19:45:00Z | Torino vs Como (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -33,13 +30,12 @@ model board generated 2026-10-26T22:05:21.729663Z · simulations this update: 0 
 ## Counts
 
 ```
-action_MODEL_INVALIDATED: 27
-action_NO_EDGE: 75
-action_NO_QUOTE: 943
+action_NO_EDGE: 47
+action_NO_QUOTE: 914
 action_RESEARCH_CANDIDATE: 1
-contract_sides: 1046
-fixtures: 11
-fixtures_model_invalidated: 1
+contract_sides: 962
+fixtures: 8
+fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
