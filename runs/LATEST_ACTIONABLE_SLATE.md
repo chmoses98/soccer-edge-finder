@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261027T103445Z-712d12` · generated 2026-10-27T10:34:45.368485Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261027T104945Z-5ce114` · generated 2026-10-27T10:49:45.472993Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-27T10:32:02.967957Z (CURRENT at publish; CURRENT until 2026-10-27T10:52:02.967957Z, STALE after 2026-10-27T11:02:02.967957Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-27T10:47:02.982073Z (CURRENT at publish; CURRENT until 2026-10-27T11:07:02.982073Z, STALE after 2026-10-27T11:17:02.982073Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-27T06:34:16.293033Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.66s
 
@@ -41,7 +41,7 @@ model board generated 2026-10-27T06:34:16.293033Z · simulations this update: 0 
 | 2026-10-29T02:30:00Z | Vancouver Whitecaps vs San Diego FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-29T03:00:00Z | Club América vs Tijuana (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 
-## Candidates on CURRENT prices (152; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (150; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -89,9 +89,9 @@ model board generated 2026-10-27T06:34:16.293033Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1872
-action_NO_QUOTE: 294
-action_RESEARCH_CANDIDATE: 152
+action_NO_EDGE: 1873
+action_NO_QUOTE: 295
+action_RESEARCH_CANDIDATE: 150
 contract_sides: 2318
 fixtures: 28
 fixtures_model_invalidated: 0
