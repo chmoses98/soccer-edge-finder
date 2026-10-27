@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261027T172746Z-1fdef0` · generated 2026-10-27T17:27:46.336764Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
+slate `slate-20261027T173812Z-714f9c` · generated 2026-10-27T17:38:12.433546Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-27T17:25:00.040577Z (CURRENT at publish; CURRENT until 2026-10-27T17:45:00.040577Z, STALE after 2026-10-27T17:55:00.040577Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-27T17:35:23.935504Z (CURRENT at publish; CURRENT until 2026-10-27T17:55:23.935504Z, STALE after 2026-10-27T18:05:23.935504Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-27T16:31:18.782149Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.77s
+model board generated 2026-10-27T16:31:18.782149Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.74s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,6 @@ model board generated 2026-10-27T16:31:18.782149Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-27T17:30:00Z | Sassuolo vs Lazio (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
 | 2026-10-27T19:45:00Z | AS Roma vs Cagliari (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-27T19:45:00Z | Torino vs Como (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-28T17:30:00Z | AC Milan vs Bologna (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -41,7 +40,7 @@ model board generated 2026-10-27T16:31:18.782149Z · simulations this update: 0 
 | 2026-10-29T02:30:00Z | Vancouver Whitecaps vs San Diego FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-29T03:00:00Z | Club América vs Tijuana (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 
-## Candidates on CURRENT prices (153; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (152; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -89,13 +88,15 @@ model board generated 2026-10-27T16:31:18.782149Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1876
-action_NO_QUOTE: 1295
-action_RESEARCH_CANDIDATE: 153
-contract_sides: 3324
-fixtures: 28
+action_NO_EDGE: 1872
+action_NO_QUOTE: 1294
+action_RESEARCH_CANDIDATE: 152
+contract_sides: 3318
+fixtures: 27
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
+
+Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
