@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261027T185918Z-aa3733` · generated 2026-10-27T18:59:18.686192Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261027T191418Z-6e2ba7` · generated 2026-10-27T19:14:18.769481Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-27T18:56:34.676154Z (CURRENT at publish; CURRENT until 2026-10-27T19:16:34.676154Z, STALE after 2026-10-27T19:26:34.676154Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-27T19:11:34.696070Z (CURRENT at publish; CURRENT until 2026-10-27T19:31:34.696070Z, STALE after 2026-10-27T19:41:34.696070Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-27T18:44:28.283963Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.30s
 
@@ -12,8 +12,8 @@ model board generated 2026-10-27T18:44:28.283963Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-27T19:45:00Z | AS Roma vs Cagliari (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
-| 2026-10-27T19:45:00Z | Torino vs Como (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
+| 2026-10-27T19:45:00Z | AS Roma vs Cagliari (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
+| 2026-10-27T19:45:00Z | Torino vs Como (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
 | 2026-10-28T17:30:00Z | AC Milan vs Bologna (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-28T17:30:00Z | Parma vs Udinese (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-28T17:30:00Z | Venezia vs Inter Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -41,7 +41,7 @@ model board generated 2026-10-27T18:44:28.283963Z · simulations this update: 0 
 | 2026-10-29T03:00:00Z | Club América vs Tijuana (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-29T17:30:00Z | Frosinone vs Lecce (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (152; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (151; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -89,9 +89,9 @@ model board generated 2026-10-27T18:44:28.283963Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1876
-action_NO_QUOTE: 440
-action_RESEARCH_CANDIDATE: 152
+action_NO_EDGE: 1879
+action_NO_QUOTE: 438
+action_RESEARCH_CANDIDATE: 151
 contract_sides: 2468
 fixtures: 28
 fixtures_model_invalidated: 0
