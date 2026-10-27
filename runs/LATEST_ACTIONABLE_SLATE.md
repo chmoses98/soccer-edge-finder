@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261027T200258Z-4a0b37` · generated 2026-10-27T20:02:58.899275Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261027T201225Z-86a87d` · generated 2026-10-27T20:12:25.960417Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-27T19:59:59.327723Z (CURRENT at publish; CURRENT until 2026-10-27T20:19:59.327723Z, STALE after 2026-10-27T20:29:59.327723Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-27T20:09:37.111249Z (CURRENT at publish; CURRENT until 2026-10-27T20:29:37.111249Z, STALE after 2026-10-27T20:39:37.111249Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-27T18:44:28.283963Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.89s
+model board generated 2026-10-27T20:12:25.062800Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 1.29s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -38,6 +38,7 @@ model board generated 2026-10-27T18:44:28.283963Z · simulations this update: 0 
 | 2026-10-29T02:30:00Z | Vancouver Whitecaps vs San Diego FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-29T03:00:00Z | Club América vs Tijuana (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-29T17:30:00Z | Frosinone vs Lecce (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-29T19:45:00Z | Fiorentina vs Atalanta (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
 ## Candidates on CURRENT prices (150; RESEARCH_ONLY = analysis, never a bet)
 
@@ -87,11 +88,11 @@ model board generated 2026-10-27T18:44:28.283963Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1867
-action_NO_QUOTE: 439
+action_NO_EDGE: 1874
+action_NO_QUOTE: 438
 action_RESEARCH_CANDIDATE: 150
-contract_sides: 2456
-fixtures: 26
+contract_sides: 2462
+fixtures: 27
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
