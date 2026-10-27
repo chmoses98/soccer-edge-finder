@@ -1,10 +1,10 @@
 {
  "counts": {
-  "PINNACLE_VALID_CLOSE": 267,
+  "MISSED_DISPATCHER_CLOSE": 49,
   "DISPATCHER_CLOSE_NO_ATTEMPT": 189,
-  "MISSED_DISPATCHER_CLOSE": 47,
-  "PINNACLE_QUOTED_NOTHING": 15,
+  "PINNACLE_VALID_CLOSE": 267,
   "NO_SPORT_KEY": 19,
+  "PINNACLE_QUOTED_NOTHING": 15,
   "NO_REFERENCE_EVENT": 2
  },
  "fixtures": {
@@ -147,6 +147,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261009T221340Z"
+  },
+  "fx:arg.primera:2026:arg.instituto:arg.deportivo_riestra": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
   },
   "fx:arg.primera:2026:arg.lanus:arg.velez": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -347,6 +352,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261008T001405Z"
+  },
+  "fx:bra.serie_a:2026:bra.flamengo:bra.atletico_mineiro": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
   },
   "fx:bra.serie_a:2026:bra.flamengo:bra.fluminense": {
    "state": "PINNACLE_VALID_CLOSE",
