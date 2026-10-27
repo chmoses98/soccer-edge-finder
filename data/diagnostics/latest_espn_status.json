@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-27T08:00:42.593639+00:00",
+  "as_of": "2026-10-27T14:39:35.392198+00:00",
   "events": 886,
   "events_skipped_unmapped": 517,
   "fixtures_mapped": 369,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=11"
+      "weather_stopped:consecutive_failures:skipped=6"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 69,
-    "events": 70,
+    "captured": 67,
+    "events": 67,
     "failures": [],
-    "published_post": 0,
+    "published_post": 3,
     "published_pre_kickoff": 0,
-    "unchanged": 1,
-    "unpublished": 70
+    "unchanged": 0,
+    "unpublished": 64
   },
   "map_proposals": {
     "eng.3": {
@@ -430,17 +430,17 @@
     "9812": "Girona"
   },
   "weather": {
-    "captured": 13,
-    "events": 27,
+    "captured": 15,
+    "events": 24,
     "failures": [
-      "401841293: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-23.9608&longitude=-46.3336&hourly=",
-      "401841296: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Salvador&count=5&language=en&fo",
-      "401841297: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bel\u00e9m&count=5&language=en&forma"
+      "401841290: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-30.0328&longitude=-51.2302&hourly=",
+      "401860406: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Fortaleza&count=5&language=en&f",
+      "401850663: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-33.4569&longitude=-70.6483&hourly="
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 11,
+    "skipped": 6,
     "stopped": "consecutive_failures"
   }
 }
