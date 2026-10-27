@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261027T100443Z-23541c` · generated 2026-10-27T10:04:43.972349Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261027T101944Z-2fbc0b` · generated 2026-10-27T10:19:44.295508Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-27T10:02:01.726945Z (CURRENT at publish; CURRENT until 2026-10-27T10:22:01.726945Z, STALE after 2026-10-27T10:32:01.726945Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-27T10:17:01.740678Z (CURRENT at publish; CURRENT until 2026-10-27T10:37:01.740678Z, STALE after 2026-10-27T10:47:01.740678Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-27T06:34:16.293033Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.85s
+model board generated 2026-10-27T06:34:16.293033Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.87s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -81,16 +81,16 @@ model board generated 2026-10-27T06:34:16.293033Z · simulations this update: 0 
 | New England Revolution vs New York Red Bulls | First half: both teams to score | no | 0.7300 | 0.853 [0.779, 0.921] | +0.110 | +0.066 | 0.79 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Colorado Rapids | Total goals over 4.5 | no | 0.8000 | 0.912 [0.837, 0.967] | +0.100 | +0.064 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | away team total over 0.5 | no | 0.3300 | 0.489 [0.367, 0.599] | +0.143 | +0.063 | 0.39 | - |  | RESEARCH_CANDIDATE |
-| Charlotte FC vs CF Montréal | away team total over 1.5 | no | 0.7100 | 0.838 [0.750, 0.913] | +0.113 | +0.062 | 0.77 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | Total goals over 1.5 | no | 0.1400 | 0.294 [0.168, 0.418] | +0.146 | +0.061 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs CF Montréal | btts | no | 0.4000 | 0.552 [0.435, 0.663] | +0.135 | +0.061 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs Atlanta United | Total goals over 3.5 | no | 0.6200 | 0.768 [0.630, 0.888] | +0.132 | +0.058 | 0.67 | - | * | RESEARCH_CANDIDATE |
+| Seattle Sounders vs Houston Dynamo | home team total over 0.5 | no | 0.1600 | 0.302 [0.181, 0.418] | +0.133 | +0.056 | 0.21 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1864
-action_NO_QUOTE: 302
+action_NO_EDGE: 1870
+action_NO_QUOTE: 296
 action_RESEARCH_CANDIDATE: 152
 contract_sides: 2318
 fixtures: 28
