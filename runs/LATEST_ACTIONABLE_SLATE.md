@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261028T074114Z-12179a` · generated 2026-10-28T07:41:14.237560Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261028T075616Z-7713a6` · generated 2026-10-28T07:56:16.612504Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-28T07:38:29.694827Z (CURRENT at publish; CURRENT until 2026-10-28T07:58:29.694827Z, STALE after 2026-10-28T08:08:29.694827Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-28T07:53:32.067085Z (CURRENT at publish; CURRENT until 2026-10-28T08:13:32.067085Z, STALE after 2026-10-28T08:23:32.067085Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-28T06:25:46.679859Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.34s
+model board generated 2026-10-28T06:25:46.679859Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.49s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -53,15 +53,15 @@ model board generated 2026-10-28T06:25:46.679859Z · simulations this update: 0 
 | Seattle Sounders vs Houston Dynamo | Total goals over 2.5 | no | 0.4200 | 0.681 [0.539, 0.805] | +0.244 | +0.158 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | Total goals over 3.5 | no | 0.6500 | 0.853 [0.753, 0.932] | +0.187 | +0.133 | 0.78 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | Total goals over 3.5 | no | 0.5200 | 0.750 [0.601, 0.870] | +0.212 | +0.130 | 0.65 | - | * | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Colorado Rapids | away team total over 1.5 | no | 0.6000 | 0.801 [0.699, 0.889] | +0.184 | +0.128 | 0.73 | - | * | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Colorado Rapids | away team total over 0.5 | no | 0.2400 | 0.451 [0.333, 0.567] | +0.198 | +0.124 | 0.36 | - |  | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Colorado Rapids | away team total over 0.5 | no | 0.2400 | 0.451 [0.333, 0.567] | +0.198 | +0.124 | 0.36 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | btts | no | 0.4300 | 0.637 [0.525, 0.735] | +0.190 | +0.121 | 0.55 | - | * | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Colorado Rapids | away team total over 1.5 | no | 0.6100 | 0.801 [0.699, 0.889] | +0.174 | +0.118 | 0.73 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | Total goals over 1.5 | no | 0.2000 | 0.416 [0.276, 0.550] | +0.205 | +0.115 | 0.31 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | away team total over 2.5 | no | 0.8200 | 0.959 [0.928, 0.986] | +0.129 | +0.114 | 0.93 | - |  | RESEARCH_CANDIDATE |
-| New York City FC vs Atlanta United | btts | no | 0.3900 | 0.589 [0.479, 0.693] | +0.183 | +0.112 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | Total goals over 2.5 | no | 0.3200 | 0.546 [0.378, 0.696] | +0.211 | +0.108 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Colorado Rapids | btts | no | 0.3900 | 0.584 [0.477, 0.690] | +0.178 | +0.108 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Real Salt Lake | away team total over 1.5 | no | 0.5100 | 0.706 [0.573, 0.820] | +0.179 | +0.104 | 0.61 | - | * | RESEARCH_CANDIDATE |
+| New York City FC vs Atlanta United | btts | no | 0.4000 | 0.589 [0.479, 0.693] | +0.172 | +0.101 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Charlotte FC vs CF Montréal | away team total over 0.5 | no | 0.3100 | 0.499 [0.383, 0.613] | +0.174 | +0.098 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | Total goals over 4.5 | no | 0.7200 | 0.880 [0.779, 0.954] | +0.146 | +0.096 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | home team total over 1.5 | no | 0.4500 | 0.649 [0.490, 0.783] | +0.182 | +0.094 | 0.54 | - | * | RESEARCH_CANDIDATE |
@@ -76,23 +76,23 @@ model board generated 2026-10-28T06:25:46.679859Z · simulations this update: 0 
 | New England Revolution vs New York Red Bulls | First-half total goals over 1.5 | no | 0.5300 | 0.697 [0.568, 0.802] | +0.149 | +0.081 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Colorado Rapids | Total goals over 2.5 | no | 0.4200 | 0.608 [0.453, 0.745] | +0.171 | +0.078 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Colorado Rapids | Total goals over 3.5 | no | 0.6400 | 0.800 [0.676, 0.900] | +0.144 | +0.077 | 0.71 | - |  | RESEARCH_CANDIDATE |
-| Seattle Sounders vs Houston Dynamo | First-half exact score 0-0 (home-away) | yes | 0.2600 | 0.424 [0.308, 0.532] | +0.151 | +0.077 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | First-half total goals over 0.5 | no | 0.2600 | 0.424 [0.308, 0.532] | +0.151 | +0.077 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs Atlanta United | Total goals over 2.5 | no | 0.3800 | 0.569 [0.406, 0.725] | +0.173 | +0.075 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | away team total over 0.5 | no | 0.3200 | 0.489 [0.367, 0.599] | +0.153 | +0.073 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | Total goals over 1.5 | no | 0.1300 | 0.294 [0.168, 0.418] | +0.157 | +0.071 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Real Salt Lake | away team total over 2.5 | no | 0.7800 | 0.898 [0.820, 0.957] | +0.106 | +0.068 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs Atlanta United | Total goals over 3.5 | no | 0.6100 | 0.768 [0.630, 0.888] | +0.142 | +0.068 | 0.67 | - |  | RESEARCH_CANDIDATE |
+| Seattle Sounders vs Houston Dynamo | First-half exact score 0-0 (home-away) | yes | 0.2700 | 0.424 [0.308, 0.532] | +0.140 | +0.066 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | Toronto FC vs D.C. United | away team total over 0.5 | no | 0.2600 | 0.422 [0.300, 0.540] | +0.148 | +0.066 | 0.32 | - | * | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Colorado Rapids | Total goals over 1.5 | no | 0.1900 | 0.346 [0.216, 0.475] | +0.146 | +0.062 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | away team total over 1.5 | no | 0.7000 | 0.830 [0.735, 0.906] | +0.115 | +0.060 | 0.76 | - |  | RESEARCH_CANDIDATE |
 | Toronto FC vs D.C. United | away team total over 1.5 | no | 0.6300 | 0.776 [0.662, 0.873] | +0.130 | +0.059 | 0.69 | - |  | RESEARCH_CANDIDATE |
+| New England Revolution vs New York Red Bulls | First-half total goals over 0.5 | no | 0.2000 | 0.338 [0.227, 0.452] | +0.127 | +0.059 | 0.25 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1919
-action_NO_QUOTE: 457
+action_NO_EDGE: 1920
+action_NO_QUOTE: 456
 action_RESEARCH_CANDIDATE: 170
 contract_sides: 2546
 fixtures: 30
