@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-28T16:44:54.371226+00:00",
-  "events": 720,
-  "events_skipped_unmapped": 413,
+  "as_of": "2026-10-28T22:52:55.513141+00:00",
+  "events": 714,
+  "events_skipped_unmapped": 407,
   "fixtures_mapped": 307,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=35"
+      "weather_stopped:consecutive_failures:skipped=46"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 102,
-    "events": 104,
+    "captured": 61,
+    "events": 72,
     "failures": [],
-    "published_post": 1,
+    "published_post": 8,
     "published_pre_kickoff": 7,
-    "unchanged": 2,
-    "unpublished": 96
+    "unchanged": 11,
+    "unpublished": 57
   },
   "map_proposals": {
     "eng.3": {
@@ -117,11 +117,9 @@
     "esp.2": {
       "ambiguous": {},
       "proposed": {
-        "17534": "esp.leganes",
         "3747": "esp.granada",
         "3842": "esp.cadiz",
         "6832": "esp.almeria",
-        "84": "esp.mallorca",
         "92": "esp.real_oviedo",
         "95": "esp.valladolid",
         "98": "esp.las_palmas",
@@ -144,11 +142,9 @@
     "esp.copa_del_rey": {
       "ambiguous": {},
       "proposed": {
-        "17534": "esp.leganes",
         "3747": "esp.granada",
         "3842": "esp.cadiz",
         "6832": "esp.almeria",
-        "84": "esp.mallorca",
         "92": "esp.real_oviedo",
         "95": "esp.valladolid",
         "98": "esp.las_palmas",
@@ -171,23 +167,19 @@
         "133832": "Atl\u00e9tico Pinatarense",
         "133834": "Ciudad De Lucena",
         "133835": "CD Pamplona",
-        "133837": "CD Tarancon",
         "133839": "CF Calamocha",
         "133842": "Ribadesella",
         "133843": "Sporting de Alc\u00e1zar",
         "133844": "UB Lebrijana",
         "133845": "UD Castellonense",
-        "133846": "Tavernes de la Valldigna",
         "133847": "Auriense Cented Academy",
         "14263": "Atl\u00e9tico Baleares",
         "17565": "Zamora CF",
         "17569": "CD Varea",
         "17570": "Gimn\u00e1stica Torrelavega",
-        "17573": "Trival Valderas",
         "17888": "CD Laredo",
         "18334": "AE Prat",
         "18342": "San Sebasti\u00e1n de los Reyes",
-        "19288": "CD Artistico Navalcarnero",
         "19294": "Unionistas de Salamanca",
         "20179": "FC Andorra",
         "20776": "Anaitasuna",
@@ -207,7 +199,6 @@
         "22432": "CD Cuarte",
         "22437": "CD Minera",
         "22439": "Real \u00c1vila",
-        "22440": "Salamanca UDS",
         "245": "Tenerife",
         "2571": "Recreativo Huelva",
         "2737": "Albacete",
@@ -228,7 +219,6 @@
         "5464": "Portugalete",
         "5535": "Badajoz",
         "6825": "Gimnastica Segoviana",
-        "6827": "Alcoyano",
         "6856": "Sestao",
         "6858": "Guijuelo",
         "7041": "Pe\u00f1a Sport",
@@ -300,7 +290,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 0,
+  "results_appended": 17,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -349,26 +339,21 @@
     "133832": "Atl\u00e9tico Pinatarense",
     "133834": "Ciudad De Lucena",
     "133835": "CD Pamplona",
-    "133837": "CD Tarancon",
     "133839": "CF Calamocha",
     "133842": "Ribadesella",
     "133843": "Sporting de Alc\u00e1zar",
     "133844": "UB Lebrijana",
     "133845": "UD Castellonense",
-    "133846": "Tavernes de la Valldigna",
     "133847": "Auriense Cented Academy",
     "138": "VfL Wolfsburg",
     "14263": "Atl\u00e9tico Baleares",
-    "17534": "Legan\u00e9s",
     "17565": "Zamora CF",
     "17569": "CD Varea",
     "17570": "Gimn\u00e1stica Torrelavega",
-    "17573": "Trival Valderas",
     "17888": "CD Laredo",
     "18334": "AE Prat",
     "18342": "San Sebasti\u00e1n de los Reyes",
     "19233": "SSV Jeddeloh II",
-    "19288": "CD Artistico Navalcarnero",
     "19294": "Unionistas de Salamanca",
     "20179": "FC Andorra",
     "20776": "Anaitasuna",
@@ -389,7 +374,6 @@
     "22432": "CD Cuarte",
     "22437": "CD Minera",
     "22439": "Real \u00c1vila",
-    "22440": "Salamanca UDS",
     "2428": "Hannover 96",
     "245": "Tenerife",
     "2571": "Recreativo Huelva",
@@ -421,7 +405,6 @@
     "5535": "Badajoz",
     "6631": "SG Sonnenhof Gro\u00dfaspch",
     "6825": "Gimnastica Segoviana",
-    "6827": "Alcoyano",
     "6832": "Almer\u00eda",
     "6856": "Sestao",
     "6858": "Guijuelo",
@@ -430,7 +413,6 @@
     "7206": "UD Logro\u00f1\u00e9s",
     "7320": "Eldense",
     "7884": "Holstein Kiel",
-    "84": "Mallorca",
     "8447": "C\u00f3rdoba",
     "8678": "Real Uni\u00f3n Irun",
     "8961": "Coruxo",
@@ -447,16 +429,16 @@
   },
   "weather": {
     "captured": 10,
-    "events": 48,
+    "events": 59,
     "failures": [
-      "401841289: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rio%20de%20Janeiro&count=5&lang",
-      "401841291: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bragan\u00e7a%20Paulista&count=5&lan",
-      "401841293: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Santos&count=5&language=en&form"
+      "401878956: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Waregem&count=5&language=en&for",
+      "401878958: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Mechelen&count=5&language=en&fo",
+      "401878953: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=50.6337&longitude=5.5675&hourly=tem"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 35,
+    "skipped": 46,
     "stopped": "consecutive_failures"
   }
 }
