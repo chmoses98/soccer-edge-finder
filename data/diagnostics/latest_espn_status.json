@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-28T08:48:34.774641+00:00",
-  "events": 719,
+  "as_of": "2026-10-28T16:44:54.371226+00:00",
+  "events": 720,
   "events_skipped_unmapped": 413,
-  "fixtures_mapped": 306,
+  "fixtures_mapped": 307,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=19"
+      "weather_stopped:consecutive_failures:skipped=35"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 92,
-    "events": 92,
+    "captured": 102,
+    "events": 104,
     "failures": [],
-    "published_post": 0,
-    "published_pre_kickoff": 0,
-    "unchanged": 0,
-    "unpublished": 92
+    "published_post": 1,
+    "published_pre_kickoff": 7,
+    "unchanged": 2,
+    "unpublished": 96
   },
   "map_proposals": {
     "eng.3": {
@@ -190,7 +190,7 @@
         "19288": "CD Artistico Navalcarnero",
         "19294": "Unionistas de Salamanca",
         "20179": "FC Andorra",
-        "20776": "ANAITASUNA",
+        "20776": "Anaitasuna",
         "20821": "Coria",
         "20824": "Llanera",
         "21290": "CE Europa",
@@ -371,7 +371,7 @@
     "19288": "CD Artistico Navalcarnero",
     "19294": "Unionistas de Salamanca",
     "20179": "FC Andorra",
-    "20776": "ANAITASUNA",
+    "20776": "Anaitasuna",
     "20821": "Coria",
     "20824": "Llanera",
     "21290": "CE Europa",
@@ -447,16 +447,16 @@
   },
   "weather": {
     "captured": 10,
-    "events": 32,
+    "events": 48,
     "failures": [
-      "401878956: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=50.8890&longitude=3.4276&hourly=tem",
       "401841289: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rio%20de%20Janeiro&count=5&lang",
-      "401841291: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bragan\u00e7a%20Paulista&count=5&lan"
+      "401841291: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bragan\u00e7a%20Paulista&count=5&lan",
+      "401841293: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Santos&count=5&language=en&form"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 19,
+    "skipped": 35,
     "stopped": "consecutive_failures"
   }
 }
