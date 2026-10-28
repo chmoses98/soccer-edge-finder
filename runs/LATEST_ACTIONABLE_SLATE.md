@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261028T105626Z-f8a9cf` · generated 2026-10-28T10:56:26.616156Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261028T111126Z-665e3e` · generated 2026-10-28T11:11:26.544528Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-28T10:53:42.117575Z (CURRENT at publish; CURRENT until 2026-10-28T11:13:42.117575Z, STALE after 2026-10-28T11:23:42.117575Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-28T11:08:42.136794Z (CURRENT at publish; CURRENT until 2026-10-28T11:28:42.136794Z, STALE after 2026-10-28T11:38:42.136794Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-28T06:25:46.679859Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.38s
+model board generated 2026-10-28T06:25:46.679859Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.53s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -75,7 +75,6 @@ model board generated 2026-10-28T06:25:46.679859Z · simulations this update: 0 
 | Charlotte FC vs CF Montréal | btts | no | 0.3800 | 0.552 [0.435, 0.663] | +0.155 | +0.081 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | First-half total goals over 1.5 | no | 0.5300 | 0.697 [0.568, 0.802] | +0.149 | +0.081 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Colorado Rapids | Total goals over 2.5 | no | 0.4200 | 0.608 [0.453, 0.745] | +0.171 | +0.078 | 0.49 | - | * | RESEARCH_CANDIDATE |
-| Seattle Sounders vs Houston Dynamo | First-half exact score 0-0 (home-away) | yes | 0.2600 | 0.424 [0.308, 0.532] | +0.151 | +0.077 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | First-half total goals over 0.5 | no | 0.2600 | 0.424 [0.308, 0.532] | +0.151 | +0.077 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs Atlanta United | Total goals over 2.5 | no | 0.3800 | 0.569 [0.406, 0.725] | +0.173 | +0.075 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Colorado Rapids | away team total over 2.5 | no | 0.8400 | 0.945 [0.900, 0.980] | +0.096 | +0.075 | 0.91 | - |  | RESEARCH_CANDIDATE |
@@ -86,6 +85,7 @@ model board generated 2026-10-28T06:25:46.679859Z · simulations this update: 0 
 | Austin FC vs Real Salt Lake | away team total over 2.5 | no | 0.7800 | 0.898 [0.820, 0.957] | +0.106 | +0.068 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs Atlanta United | Total goals over 3.5 | no | 0.6100 | 0.768 [0.630, 0.888] | +0.142 | +0.068 | 0.67 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Colorado Rapids | Total goals over 3.5 | no | 0.6500 | 0.800 [0.676, 0.900] | +0.134 | +0.067 | 0.71 | - |  | RESEARCH_CANDIDATE |
+| Seattle Sounders vs Houston Dynamo | First-half exact score 0-0 (home-away) | yes | 0.2700 | 0.424 [0.308, 0.532] | +0.140 | +0.066 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | Toronto FC vs D.C. United | away team total over 0.5 | no | 0.2600 | 0.422 [0.300, 0.540] | +0.148 | +0.066 | 0.32 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
