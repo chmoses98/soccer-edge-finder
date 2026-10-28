@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261028T200326Z-27f6b5` · generated 2026-10-28T20:03:26.640312Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261028T201253Z-ce8dae` · generated 2026-10-28T20:12:53.551431Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-28T20:00:23.089380Z (CURRENT at publish; CURRENT until 2026-10-28T20:20:23.089380Z, STALE after 2026-10-28T20:30:23.089380Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-28T20:10:02.947204Z (CURRENT at publish; CURRENT until 2026-10-28T20:30:02.947204Z, STALE after 2026-10-28T20:40:02.947204Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-28T19:57:52.828286Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.43s
+model board generated 2026-10-28T20:12:52.487352Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 1.38s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -39,8 +39,9 @@ model board generated 2026-10-28T19:57:52.828286Z · simulations this update: 0 
 | 2026-10-30T00:30:00Z | Grêmio vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-30T18:00:00Z | Le Havre vs Paris Saint-Germain (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-30T19:30:00Z | SV Elversberg vs Mainz 05 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-30T20:05:00Z | Lille vs Lens (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (206; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (207; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -88,11 +89,11 @@ model board generated 2026-10-28T19:57:52.828286Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1939
+action_NO_EDGE: 1944
 action_NO_QUOTE: 473
-action_RESEARCH_CANDIDATE: 206
-contract_sides: 2618
-fixtures: 27
+action_RESEARCH_CANDIDATE: 207
+contract_sides: 2624
+fixtures: 28
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
