@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261028T220503Z-a19a6e` · generated 2026-10-28T22:05:03.065899Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
+slate `slate-20261028T221752Z-e80a65` · generated 2026-10-28T22:17:52.417636Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-28T22:02:04.495283Z (CURRENT at publish; CURRENT until 2026-10-28T22:22:04.495283Z, STALE after 2026-10-28T22:32:04.495283Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-28T22:15:00.059002Z (CURRENT at publish; CURRENT until 2026-10-28T22:35:00.059002Z, STALE after 2026-10-28T22:45:00.059002Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-28T22:04:57.493482Z · simulations this update: 3 · Odds API calls this update: 0 (credits 0) · reprice 1.48s
+model board generated 2026-10-28T22:04:57.493482Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 1.48s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,9 +12,9 @@ model board generated 2026-10-28T22:04:57.493482Z · simulations this update: 3 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-28T22:30:00Z | Red Bull Bragantino vs Chapecoense (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
-| 2026-10-28T22:30:00Z | Fluminense vs Internacional (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
-| 2026-10-28T22:30:00Z | Santos vs Palmeiras (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
+| 2026-10-28T22:30:00Z | Red Bull Bragantino vs Chapecoense (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
+| 2026-10-28T22:30:00Z | Fluminense vs Internacional (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
+| 2026-10-28T22:30:00Z | Santos vs Palmeiras (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
 | 2026-10-28T23:30:00Z | Charlotte FC vs CF Montréal (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-28T23:30:00Z | Inter Miami vs FC Cincinnati (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-28T23:30:00Z | New England Revolution vs New York Red Bulls (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -41,7 +41,7 @@ model board generated 2026-10-28T22:04:57.493482Z · simulations this update: 3 
 | 2026-10-30T19:30:00Z | SV Elversberg vs Mainz 05 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-30T20:05:00Z | Lille vs Lens (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 44 | 0 |
 
-## Candidates on CURRENT prices (212; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (211; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -72,9 +72,9 @@ model board generated 2026-10-28T22:04:57.493482Z · simulations this update: 3 
 | Seattle Sounders vs Houston Dynamo | First-half total goals over 0.5 | no | 0.2600 | 0.425 [0.318, 0.532] | +0.151 | +0.085 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | First-half total goals over 1.5 | no | 0.6200 | 0.780 [0.668, 0.872] | +0.143 | +0.084 | 0.7 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | Result: away | no | 0.7000 | 0.850 [0.765, 0.925] | +0.136 | +0.082 | 0.78 | - | * | RESEARCH_CANDIDATE |
-| New York City FC vs Atlanta United | away team total over 0.5 | no | 0.3200 | 0.491 [0.374, 0.604] | +0.156 | +0.079 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Real Salt Lake | away team total over 2.5 | no | 0.7700 | 0.898 [0.820, 0.957] | +0.115 | +0.078 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | Le Havre vs Paris Saint-Germain | Result: draw | yes | 0.1300 | 0.257 [0.196, 0.320] | +0.119 | +0.077 | 0.2 | - |  | RESEARCH_CANDIDATE |
+| New England Revolution vs New York Red Bulls | First-half result: away | no | 0.7300 | 0.859 [0.789, 0.921] | +0.115 | +0.076 | 0.8 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | First half: both teams to score | no | 0.7200 | 0.855 [0.779, 0.921] | +0.121 | +0.076 | 0.79 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Real Salt Lake | away team total over 0.5 | no | 0.1900 | 0.351 [0.233, 0.464] | +0.150 | +0.076 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | First-half exact score 0-0 (home-away) | yes | 0.2700 | 0.425 [0.318, 0.532] | +0.141 | +0.074 | 0.34 | - | * | RESEARCH_CANDIDATE |
@@ -83,15 +83,15 @@ model board generated 2026-10-28T22:04:57.493482Z · simulations this update: 3 
 | New England Revolution vs New York Red Bulls | First-half total goals over 1.5 | no | 0.5400 | 0.696 [0.568, 0.803] | +0.139 | +0.071 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Portland Timbers | Result: home | yes | 0.4900 | 0.679 [0.528, 0.825] | +0.172 | +0.071 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Portland Timbers | home wins by more than 1.5 | yes | 0.2700 | 0.473 [0.300, 0.657] | +0.190 | +0.069 | 0.33 | - | * | RESEARCH_CANDIDATE |
+| New York City FC vs Atlanta United | away team total over 0.5 | no | 0.3300 | 0.491 [0.374, 0.604] | +0.146 | +0.069 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | FC Dallas vs Columbus Crew | away team total over 1.5 | no | 0.5500 | 0.715 [0.585, 0.833] | +0.148 | +0.069 | 0.61 | - | * | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Colorado Rapids | Total goals over 2.5 | no | 0.4300 | 0.608 [0.456, 0.745] | +0.161 | +0.068 | 0.49 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1962
-action_NO_QUOTE: 944
-action_RESEARCH_CANDIDATE: 212
+action_NO_EDGE: 1966
+action_NO_QUOTE: 941
+action_RESEARCH_CANDIDATE: 211
 contract_sides: 3118
 fixtures: 28
 fixtures_model_invalidated: 0
