@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-27T20:48:37.213112+00:00",
-  "events": 886,
-  "events_skipped_unmapped": 517,
-  "fixtures_mapped": 369,
+  "as_of": "2026-10-28T01:48:16.046948+00:00",
+  "events": 719,
+  "events_skipped_unmapped": 413,
+  "fixtures_mapped": 306,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=13"
+      "weather_stopped:consecutive_failures:skipped=22"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 124,
-    "events": 125,
+    "captured": 95,
+    "events": 95,
     "failures": [],
-    "published_post": 49,
+    "published_post": 3,
     "published_pre_kickoff": 0,
-    "unchanged": 1,
-    "unpublished": 76
+    "unchanged": 0,
+    "unpublished": 92
   },
   "map_proposals": {
     "eng.3": {
@@ -282,10 +282,25 @@
         "7017": "Dynamo Dresden",
         "9705": "Rot-Weiss Essen"
       }
+    },
+    "nor.1": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "510": "Viking FK"
+      }
+    },
+    "uefa.champions": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "21922": "Sabah FK",
+        "510": "Viking FK"
+      }
     }
   },
   "map_version": "4",
-  "results_appended": 2,
+  "results_appended": 5,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -295,7 +310,6 @@
     "bel.1",
     "bra.2",
     "chi.1",
-    "chn.1",
     "col.1",
     "den.1",
     "eng.3",
@@ -367,6 +381,7 @@
     "21717": "Atl\u00e9tico Paso",
     "21722": "Manresa",
     "21723": "Utebo",
+    "21922": "Sabah FK",
     "22043": "Mijas Las Lagunas",
     "22080": "Arosa",
     "22084": "Covadonga",
@@ -394,6 +409,7 @@
     "4471": "Karlsruher SC",
     "4475": "Conquense",
     "4515": "Mirand\u00e9s",
+    "510": "Viking FK",
     "5401": "Real Jaen CF",
     "5404": "Ceuta",
     "5413": "Huesca",
@@ -431,16 +447,16 @@
   },
   "weather": {
     "captured": 7,
-    "events": 23,
+    "events": 32,
     "failures": [
-      "401841291: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bragan\u00e7a%20Paulista&count=5&lan",
-      "401841293: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Santos&count=5&language=en&form",
-      "401841296: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Salvador&count=5&language=en&fo"
+      "401878956: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Waregem&count=5&language=en&for",
+      "401841289: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rio%20de%20Janeiro&count=5&lang",
+      "401841291: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bragan\u00e7a%20Paulista&count=5&lan"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 13,
+    "skipped": 22,
     "stopped": "consecutive_failures"
   }
 }
