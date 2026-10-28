@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261028T160945Z-cfed43` · generated 2026-10-28T16:09:45.745671Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261028T162445Z-4fd385` · generated 2026-10-28T16:24:45.750913Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-28T16:07:00.703172Z (CURRENT at publish; CURRENT until 2026-10-28T16:27:00.703172Z, STALE after 2026-10-28T16:37:00.703172Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-28T16:22:00.727641Z (CURRENT at publish; CURRENT until 2026-10-28T16:42:00.727641Z, STALE after 2026-10-28T16:52:00.727641Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-28T14:21:32.638855Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.67s
+model board generated 2026-10-28T14:21:32.638855Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.53s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -43,7 +43,7 @@ model board generated 2026-10-28T14:21:32.638855Z · simulations this update: 0 
 | 2026-10-29T23:00:00Z | Vasco da Gama vs Flamengo (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-30T00:30:00Z | Grêmio vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 
-## Candidates on CURRENT prices (192; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (199; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -56,11 +56,11 @@ model board generated 2026-10-28T14:21:32.638855Z · simulations this update: 0 
 | Seattle Sounders vs Houston Dynamo | btts | no | 0.4200 | 0.637 [0.524, 0.735] | +0.200 | +0.131 | 0.55 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Colorado Rapids | away team total over 1.5 | no | 0.6000 | 0.800 [0.698, 0.889] | +0.184 | +0.126 | 0.72 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Colorado Rapids | away team total over 0.5 | no | 0.2400 | 0.450 [0.332, 0.567] | +0.198 | +0.122 | 0.35 | - |  | RESEARCH_CANDIDATE |
+| New York City FC vs Atlanta United | btts | no | 0.3800 | 0.589 [0.479, 0.693] | +0.193 | +0.122 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | Total goals over 3.5 | no | 0.5300 | 0.750 [0.602, 0.870] | +0.202 | +0.120 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | Total goals over 2.5 | no | 0.3100 | 0.546 [0.379, 0.697] | +0.221 | +0.119 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | Total goals over 1.5 | no | 0.2000 | 0.415 [0.276, 0.550] | +0.204 | +0.115 | 0.31 | - |  | RESEARCH_CANDIDATE |
-| New York City FC vs Atlanta United | btts | no | 0.3900 | 0.589 [0.479, 0.693] | +0.183 | +0.111 | 0.5 | - | * | RESEARCH_CANDIDATE |
-| Austin FC vs Real Salt Lake | away team total over 1.5 | no | 0.5100 | 0.707 [0.572, 0.820] | +0.179 | +0.104 | 0.61 | - | * | RESEARCH_CANDIDATE |
+| Austin FC vs Real Salt Lake | away team total over 1.5 | no | 0.5000 | 0.707 [0.572, 0.820] | +0.189 | +0.114 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs Atlanta United | away team total over 0.5 | no | 0.3000 | 0.491 [0.374, 0.604] | +0.177 | +0.100 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Colorado Rapids | btts | no | 0.4000 | 0.584 [0.477, 0.691] | +0.168 | +0.098 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Charlotte FC vs CF Montréal | away team total over 0.5 | no | 0.3100 | 0.499 [0.382, 0.614] | +0.174 | +0.097 | 0.4 | - | * | RESEARCH_CANDIDATE |
@@ -91,9 +91,9 @@ model board generated 2026-10-28T14:21:32.638855Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1956
+action_NO_EDGE: 1949
 action_NO_QUOTE: 1344
-action_RESEARCH_CANDIDATE: 192
+action_RESEARCH_CANDIDATE: 199
 contract_sides: 3492
 fixtures: 30
 fixtures_model_invalidated: 0
