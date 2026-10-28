@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261028T134117Z-1eafab` · generated 2026-10-28T13:41:17.567491Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261028T134719Z-5a9ff4` · generated 2026-10-28T13:47:19.549468Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-28T13:38:18.182551Z (CURRENT at publish; CURRENT until 2026-10-28T13:58:18.182551Z, STALE after 2026-10-28T14:08:18.182551Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-28T13:44:30.875649Z (CURRENT at publish; CURRENT until 2026-10-28T14:04:30.875649Z, STALE after 2026-10-28T14:14:30.875649Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-28T12:01:48.603091Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.91s
+model board generated 2026-10-28T12:01:48.603091Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.49s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -43,7 +43,7 @@ model board generated 2026-10-28T12:01:48.603091Z · simulations this update: 0 
 | 2026-10-29T23:00:00Z | Vasco da Gama vs Flamengo (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-30T00:30:00Z | Grêmio vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (181; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (180; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -59,9 +59,9 @@ model board generated 2026-10-28T12:01:48.603091Z · simulations this update: 0 
 | New England Revolution vs New York Red Bulls | away team total over 2.5 | no | 0.8100 | 0.959 [0.928, 0.986] | +0.138 | +0.123 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | Total goals over 2.5 | no | 0.3100 | 0.546 [0.378, 0.696] | +0.222 | +0.119 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | Total goals over 1.5 | no | 0.2000 | 0.416 [0.276, 0.550] | +0.205 | +0.115 | 0.31 | - |  | RESEARCH_CANDIDATE |
-| New York City FC vs Atlanta United | btts | no | 0.3900 | 0.589 [0.479, 0.693] | +0.183 | +0.112 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Colorado Rapids | btts | no | 0.3900 | 0.584 [0.477, 0.690] | +0.178 | +0.108 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Real Salt Lake | away team total over 1.5 | no | 0.5100 | 0.706 [0.573, 0.820] | +0.179 | +0.104 | 0.61 | - | * | RESEARCH_CANDIDATE |
+| New York City FC vs Atlanta United | btts | no | 0.4000 | 0.589 [0.479, 0.693] | +0.172 | +0.101 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs Atlanta United | away team total over 0.5 | no | 0.3000 | 0.492 [0.374, 0.604] | +0.177 | +0.100 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | Charlotte FC vs CF Montréal | away team total over 0.5 | no | 0.3100 | 0.499 [0.383, 0.613] | +0.174 | +0.098 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | Total goals over 4.5 | no | 0.7200 | 0.880 [0.779, 0.954] | +0.146 | +0.096 | 0.81 | - |  | RESEARCH_CANDIDATE |
@@ -91,9 +91,9 @@ model board generated 2026-10-28T12:01:48.603091Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1958
-action_NO_QUOTE: 407
-action_RESEARCH_CANDIDATE: 181
+action_NO_EDGE: 1961
+action_NO_QUOTE: 405
+action_RESEARCH_CANDIDATE: 180
 contract_sides: 2546
 fixtures: 30
 fixtures_model_invalidated: 0
