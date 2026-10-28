@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-28T01:48:16.046948+00:00",
+  "as_of": "2026-10-28T08:48:34.774641+00:00",
   "events": 719,
   "events_skipped_unmapped": 413,
   "fixtures_mapped": 306,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=22"
+      "weather_stopped:consecutive_failures:skipped=19"
     ],
     "state": "DEGRADED"
   },
@@ -81,10 +81,10 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 95,
-    "events": 95,
+    "captured": 92,
+    "events": 92,
     "failures": [],
-    "published_post": 3,
+    "published_post": 0,
     "published_pre_kickoff": 0,
     "unchanged": 0,
     "unpublished": 92
@@ -190,7 +190,7 @@
         "19288": "CD Artistico Navalcarnero",
         "19294": "Unionistas de Salamanca",
         "20179": "FC Andorra",
-        "20776": "Anaitasuna",
+        "20776": "ANAITASUNA",
         "20821": "Coria",
         "20824": "Llanera",
         "21290": "CE Europa",
@@ -300,7 +300,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 5,
+  "results_appended": 0,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -371,7 +371,7 @@
     "19288": "CD Artistico Navalcarnero",
     "19294": "Unionistas de Salamanca",
     "20179": "FC Andorra",
-    "20776": "Anaitasuna",
+    "20776": "ANAITASUNA",
     "20821": "Coria",
     "20824": "Llanera",
     "21290": "CE Europa",
@@ -446,17 +446,17 @@
     "9812": "Girona"
   },
   "weather": {
-    "captured": 7,
+    "captured": 10,
     "events": 32,
     "failures": [
-      "401878956: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Waregem&count=5&language=en&for",
+      "401878956: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=50.8890&longitude=3.4276&hourly=tem",
       "401841289: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rio%20de%20Janeiro&count=5&lang",
       "401841291: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bragan\u00e7a%20Paulista&count=5&lan"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 22,
+    "skipped": 19,
     "stopped": "consecutive_failures"
   }
 }
