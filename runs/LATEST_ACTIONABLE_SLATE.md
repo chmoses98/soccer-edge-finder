@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261028T191334Z-d8c33a` · generated 2026-10-28T19:13:34.811270Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261028T192015Z-c7c285` · generated 2026-10-28T19:20:15.856779Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-28T19:10:48.962891Z (CURRENT at publish; CURRENT until 2026-10-28T19:30:48.962891Z, STALE after 2026-10-28T19:40:48.962891Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-28T19:17:24.966058Z (CURRENT at publish; CURRENT until 2026-10-28T19:37:24.966058Z, STALE after 2026-10-28T19:47:24.966058Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-28T18:43:17.929478Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.56s
+model board generated 2026-10-28T18:43:17.929478Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.50s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -41,7 +41,7 @@ model board generated 2026-10-28T18:43:17.929478Z · simulations this update: 0 
 | 2026-10-30T00:30:00Z | Grêmio vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-30T18:00:00Z | Le Havre vs Paris Saint-Germain (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (201; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (202; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -61,10 +61,10 @@ model board generated 2026-10-28T18:43:17.929478Z · simulations this update: 0 
 | Seattle Sounders vs Houston Dynamo | Total goals over 1.5 | no | 0.2000 | 0.415 [0.276, 0.550] | +0.204 | +0.115 | 0.31 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Real Salt Lake | away team total over 1.5 | no | 0.5000 | 0.707 [0.572, 0.820] | +0.189 | +0.114 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | Charlotte FC vs CF Montréal | away team total over 1.5 | no | 0.6600 | 0.837 [0.750, 0.913] | +0.162 | +0.111 | 0.77 | - |  | RESEARCH_CANDIDATE |
+| Seattle Sounders vs Houston Dynamo | home team total over 1.5 | no | 0.4400 | 0.649 [0.489, 0.783] | +0.192 | +0.102 | 0.54 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Colorado Rapids | btts | no | 0.4000 | 0.584 [0.477, 0.691] | +0.168 | +0.098 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Le Havre vs Paris Saint-Germain | Result: home | yes | 0.0800 | 0.286 [0.146, 0.443] | +0.201 | +0.097 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | Total goals over 4.5 | no | 0.7200 | 0.880 [0.780, 0.954] | +0.145 | +0.096 | 0.81 | - |  | RESEARCH_CANDIDATE |
-| Seattle Sounders vs Houston Dynamo | home team total over 1.5 | no | 0.4500 | 0.649 [0.489, 0.783] | +0.182 | +0.092 | 0.54 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs Atlanta United | btts | no | 0.4100 | 0.589 [0.479, 0.693] | +0.162 | +0.091 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Charlotte FC vs CF Montréal | btts | no | 0.3700 | 0.552 [0.435, 0.663] | +0.165 | +0.091 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Real Salt Lake | away team total over 2.5 | no | 0.7600 | 0.898 [0.820, 0.957] | +0.125 | +0.088 | 0.85 | - |  | RESEARCH_CANDIDATE |
@@ -89,9 +89,9 @@ model board generated 2026-10-28T18:43:17.929478Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1950
+action_NO_EDGE: 1949
 action_NO_QUOTE: 473
-action_RESEARCH_CANDIDATE: 201
+action_RESEARCH_CANDIDATE: 202
 contract_sides: 2624
 fixtures: 28
 fixtures_model_invalidated: 0
