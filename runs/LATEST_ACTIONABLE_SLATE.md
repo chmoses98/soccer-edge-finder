@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261028T182837Z-03d2bc` · generated 2026-10-28T18:28:37.553398Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261028T184319Z-34fb4f` · generated 2026-10-28T18:43:19.319801Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-28T18:25:51.790993Z (CURRENT at publish; CURRENT until 2026-10-28T18:45:51.790993Z, STALE after 2026-10-28T18:55:51.790993Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-28T18:40:20.306877Z (CURRENT at publish; CURRENT until 2026-10-28T19:00:20.306877Z, STALE after 2026-10-28T19:10:20.306877Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-28T18:13:41.485632Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.52s
+model board generated 2026-10-28T18:43:17.929478Z · simulations this update: 2 · Odds API calls this update: 1 (credits 3) · reprice 1.35s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,8 +12,8 @@ model board generated 2026-10-28T18:13:41.485632Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-28T19:45:00Z | Genoa vs Juventus (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-28T19:45:00Z | Monza vs Napoli (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-28T19:45:00Z | Genoa vs Juventus (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
+| 2026-10-28T19:45:00Z | Monza vs Napoli (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
 | 2026-10-28T22:30:00Z | Red Bull Bragantino vs Chapecoense (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-28T22:30:00Z | Fluminense vs Internacional (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-28T22:30:00Z | Santos vs Palmeiras (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -41,20 +41,20 @@ model board generated 2026-10-28T18:13:41.485632Z · simulations this update: 0 
 | 2026-10-30T00:30:00Z | Grêmio vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-30T18:00:00Z | Le Havre vs Paris Saint-Germain (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (200; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (199; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | New England Revolution vs New York Red Bulls | away team total over 1.5 | no | 0.5400 | 0.834 [0.753, 0.910] | +0.276 | +0.229 | 0.77 | - | * | RESEARCH_CANDIDATE |
+| New England Revolution vs New York Red Bulls | away team total over 0.5 | no | 0.2000 | 0.493 [0.385, 0.606] | +0.282 | +0.212 | 0.4 | - |  | RESEARCH_CANDIDATE |
 | Le Havre vs Paris Saint-Germain | Result: away | no | 0.2100 | 0.543 [0.362, 0.714] | +0.322 | +0.203 | 0.4 | - | * | RESEARCH_CANDIDATE |
-| New England Revolution vs New York Red Bulls | away team total over 0.5 | no | 0.2100 | 0.493 [0.385, 0.606] | +0.272 | +0.201 | 0.4 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | btts | no | 0.3200 | 0.582 [0.480, 0.681] | +0.247 | +0.178 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | Total goals over 2.5 | no | 0.4200 | 0.681 [0.539, 0.804] | +0.244 | +0.158 | 0.57 | - | * | RESEARCH_CANDIDATE |
-| New England Revolution vs New York Red Bulls | away team total over 2.5 | no | 0.7900 | 0.959 [0.928, 0.986] | +0.157 | +0.142 | 0.93 | - |  | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Colorado Rapids | away team total over 1.5 | no | 0.5900 | 0.800 [0.698, 0.889] | +0.193 | +0.136 | 0.72 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | Total goals over 3.5 | no | 0.6500 | 0.853 [0.753, 0.932] | +0.187 | +0.132 | 0.78 | - |  | RESEARCH_CANDIDATE |
+| New England Revolution vs New York Red Bulls | away team total over 2.5 | no | 0.8000 | 0.959 [0.928, 0.986] | +0.148 | +0.132 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | btts | no | 0.4200 | 0.637 [0.524, 0.735] | +0.200 | +0.131 | 0.55 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | Total goals over 3.5 | no | 0.5200 | 0.750 [0.602, 0.870] | +0.212 | +0.130 | 0.65 | - | * | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Colorado Rapids | away team total over 1.5 | no | 0.6000 | 0.800 [0.698, 0.889] | +0.184 | +0.126 | 0.72 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Colorado Rapids | away team total over 0.5 | no | 0.2400 | 0.450 [0.332, 0.567] | +0.198 | +0.122 | 0.35 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | Total goals over 2.5 | no | 0.3100 | 0.546 [0.379, 0.697] | +0.221 | +0.119 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs CF Montréal | away team total over 0.5 | no | 0.2900 | 0.499 [0.382, 0.614] | +0.194 | +0.118 | 0.4 | - | * | RESEARCH_CANDIDATE |
@@ -67,6 +67,7 @@ model board generated 2026-10-28T18:13:41.485632Z · simulations this update: 0 
 | Seattle Sounders vs Houston Dynamo | home team total over 1.5 | no | 0.4500 | 0.649 [0.489, 0.783] | +0.182 | +0.092 | 0.54 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs Atlanta United | btts | no | 0.4100 | 0.589 [0.479, 0.693] | +0.162 | +0.091 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Charlotte FC vs CF Montréal | btts | no | 0.3700 | 0.552 [0.435, 0.663] | +0.165 | +0.091 | 0.45 | - | * | RESEARCH_CANDIDATE |
+| Austin FC vs Real Salt Lake | away team total over 2.5 | no | 0.7600 | 0.898 [0.820, 0.957] | +0.125 | +0.088 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | home team total over 2.5 | no | 0.7100 | 0.862 [0.754, 0.942] | +0.137 | +0.086 | 0.79 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | First half: both teams to score | no | 0.7100 | 0.855 [0.779, 0.921] | +0.130 | +0.086 | 0.79 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | Total goals over 4.5 | no | 0.8200 | 0.941 [0.889, 0.981] | +0.111 | +0.085 | 0.9 | - |  | RESEARCH_CANDIDATE |
@@ -76,7 +77,6 @@ model board generated 2026-10-28T18:13:41.485632Z · simulations this update: 0 
 | New England Revolution vs New York Red Bulls | First-half total goals over 1.5 | no | 0.5300 | 0.696 [0.568, 0.803] | +0.149 | +0.081 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs Atlanta United | away team total over 0.5 | no | 0.3200 | 0.491 [0.374, 0.604] | +0.156 | +0.079 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | FC Dallas vs Columbus Crew | away team total over 1.5 | no | 0.5400 | 0.715 [0.585, 0.833] | +0.157 | +0.079 | 0.61 | - | * | RESEARCH_CANDIDATE |
-| Austin FC vs Real Salt Lake | away team total over 2.5 | no | 0.7700 | 0.898 [0.820, 0.957] | +0.115 | +0.078 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | Le Havre vs Paris Saint-Germain | Result: draw | yes | 0.1300 | 0.257 [0.196, 0.320] | +0.119 | +0.077 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Real Salt Lake | away team total over 0.5 | no | 0.1900 | 0.351 [0.233, 0.464] | +0.150 | +0.076 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | First-half exact score 0-0 (home-away) | yes | 0.2700 | 0.425 [0.318, 0.532] | +0.141 | +0.074 | 0.34 | - | * | RESEARCH_CANDIDATE |
@@ -89,15 +89,13 @@ model board generated 2026-10-28T18:13:41.485632Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1943
-action_NO_QUOTE: 481
-action_RESEARCH_CANDIDATE: 200
+action_NO_EDGE: 1952
+action_NO_QUOTE: 473
+action_RESEARCH_CANDIDATE: 199
 contract_sides: 2624
 fixtures: 28
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
-
-Removed (kicked off): 3
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
