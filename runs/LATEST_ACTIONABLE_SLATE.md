@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261028T223352Z-83f5cc` · generated 2026-10-28T22:33:52.880454Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261028T224800Z-66a7eb` · generated 2026-10-28T22:48:00.208874Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-28T22:30:10.064428Z (CURRENT at publish; CURRENT until 2026-10-28T22:50:10.064428Z, STALE after 2026-10-28T23:00:10.064428Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-28T22:45:10.084308Z (CURRENT at publish; CURRENT until 2026-10-28T23:05:10.084308Z, STALE after 2026-10-28T23:15:10.084308Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-28T22:33:11.252876Z · simulations this update: 5 · Odds API calls this update: 1 (credits 3) · reprice 1.60s
+model board generated 2026-10-28T22:33:11.252876Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.48s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -38,7 +38,7 @@ model board generated 2026-10-28T22:33:11.252876Z · simulations this update: 5 
 | 2026-10-30T19:30:00Z | SV Elversberg vs Mainz 05 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-30T20:05:00Z | Lille vs Lens (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 44 | 0 |
 
-## Candidates on CURRENT prices (204; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (202; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -62,33 +62,33 @@ model board generated 2026-10-28T22:33:11.252876Z · simulations this update: 5 
 | Seattle Sounders vs Houston Dynamo | home team total over 1.5 | no | 0.4400 | 0.649 [0.489, 0.783] | +0.192 | +0.102 | 0.54 | - | * | RESEARCH_CANDIDATE |
 | Charlotte FC vs CF Montréal | btts | no | 0.3600 | 0.552 [0.435, 0.663] | +0.176 | +0.101 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Le Havre vs Paris Saint-Germain | Result: home | yes | 0.0800 | 0.286 [0.146, 0.443] | +0.201 | +0.097 | 0.17 | - |  | RESEARCH_CANDIDATE |
+| New England Revolution vs New York Red Bulls | Result: away | no | 0.6900 | 0.850 [0.765, 0.925] | +0.145 | +0.092 | 0.78 | 0.697 | * | RESEARCH_CANDIDATE |
 | New York City FC vs Atlanta United | btts | no | 0.4100 | 0.589 [0.479, 0.693] | +0.162 | +0.091 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | Total goals over 4.5 | no | 0.7300 | 0.880 [0.780, 0.954] | +0.136 | +0.086 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | home team total over 2.5 | no | 0.7100 | 0.862 [0.754, 0.942] | +0.137 | +0.086 | 0.79 | - |  | RESEARCH_CANDIDATE |
+| New England Revolution vs New York Red Bulls | First half: both teams to score | no | 0.7100 | 0.855 [0.779, 0.921] | +0.130 | +0.086 | 0.79 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | Total goals over 4.5 | no | 0.8200 | 0.941 [0.889, 0.981] | +0.111 | +0.085 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | First-half total goals over 0.5 | no | 0.2600 | 0.425 [0.318, 0.532] | +0.151 | +0.085 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | First-half total goals over 1.5 | no | 0.6200 | 0.780 [0.668, 0.872] | +0.143 | +0.084 | 0.7 | - |  | RESEARCH_CANDIDATE |
-| New England Revolution vs New York Red Bulls | Result: away | no | 0.7000 | 0.850 [0.765, 0.925] | +0.136 | +0.082 | 0.78 | 0.697 | * | RESEARCH_CANDIDATE |
+| New York City FC vs Atlanta United | away team total over 0.5 | no | 0.3200 | 0.491 [0.374, 0.604] | +0.156 | +0.079 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Real Salt Lake | away team total over 2.5 | no | 0.7700 | 0.898 [0.820, 0.957] | +0.115 | +0.078 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | Le Havre vs Paris Saint-Germain | Result: draw | yes | 0.1300 | 0.257 [0.196, 0.320] | +0.119 | +0.077 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | First-half result: away | no | 0.7300 | 0.859 [0.789, 0.921] | +0.115 | +0.076 | 0.8 | - | * | RESEARCH_CANDIDATE |
-| New England Revolution vs New York Red Bulls | First half: both teams to score | no | 0.7200 | 0.855 [0.779, 0.921] | +0.121 | +0.076 | 0.79 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Real Salt Lake | away team total over 0.5 | no | 0.1900 | 0.351 [0.233, 0.464] | +0.150 | +0.076 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | First-half exact score 0-0 (home-away) | yes | 0.2700 | 0.425 [0.318, 0.532] | +0.141 | +0.074 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Colorado Rapids | away team total over 2.5 | no | 0.8400 | 0.945 [0.900, 0.980] | +0.096 | +0.074 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | First-half total goals over 1.5 | no | 0.5400 | 0.696 [0.568, 0.803] | +0.139 | +0.071 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Portland Timbers | Result: home | yes | 0.4900 | 0.679 [0.528, 0.825] | +0.172 | +0.071 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Portland Timbers | home wins by more than 1.5 | yes | 0.2700 | 0.473 [0.300, 0.657] | +0.190 | +0.069 | 0.33 | - | * | RESEARCH_CANDIDATE |
-| New York City FC vs Atlanta United | away team total over 0.5 | no | 0.3300 | 0.491 [0.374, 0.604] | +0.146 | +0.069 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | FC Dallas vs Columbus Crew | away team total over 1.5 | no | 0.5500 | 0.715 [0.585, 0.833] | +0.148 | +0.069 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Colorado Rapids | Total goals over 2.5 | no | 0.4300 | 0.608 [0.456, 0.745] | +0.161 | +0.068 | 0.49 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1899
-action_NO_QUOTE: 931
-action_RESEARCH_CANDIDATE: 204
+action_NO_EDGE: 1900
+action_NO_QUOTE: 932
+action_RESEARCH_CANDIDATE: 202
 contract_sides: 3034
 fixtures: 25
 fixtures_model_invalidated: 0
