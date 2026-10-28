@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261028T072614Z-36df4e` · generated 2026-10-28T07:26:14.294325Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261028T074114Z-12179a` · generated 2026-10-28T07:41:14.237560Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-28T07:23:29.675495Z (CURRENT at publish; CURRENT until 2026-10-28T07:43:29.675495Z, STALE after 2026-10-28T07:53:29.675495Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-28T07:38:29.694827Z (CURRENT at publish; CURRENT until 2026-10-28T07:58:29.694827Z, STALE after 2026-10-28T08:08:29.694827Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-28T06:25:46.679859Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.28s
+model board generated 2026-10-28T06:25:46.679859Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.34s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -43,7 +43,7 @@ model board generated 2026-10-28T06:25:46.679859Z · simulations this update: 0 
 | 2026-10-29T23:00:00Z | Vasco da Gama vs Flamengo (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-30T00:30:00Z | Grêmio vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (171; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (170; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -76,13 +76,13 @@ model board generated 2026-10-28T06:25:46.679859Z · simulations this update: 0 
 | New England Revolution vs New York Red Bulls | First-half total goals over 1.5 | no | 0.5300 | 0.697 [0.568, 0.802] | +0.149 | +0.081 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Colorado Rapids | Total goals over 2.5 | no | 0.4200 | 0.608 [0.453, 0.745] | +0.171 | +0.078 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Colorado Rapids | Total goals over 3.5 | no | 0.6400 | 0.800 [0.676, 0.900] | +0.144 | +0.077 | 0.71 | - |  | RESEARCH_CANDIDATE |
+| Seattle Sounders vs Houston Dynamo | First-half exact score 0-0 (home-away) | yes | 0.2600 | 0.424 [0.308, 0.532] | +0.151 | +0.077 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | First-half total goals over 0.5 | no | 0.2600 | 0.424 [0.308, 0.532] | +0.151 | +0.077 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs Atlanta United | Total goals over 2.5 | no | 0.3800 | 0.569 [0.406, 0.725] | +0.173 | +0.075 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | away team total over 0.5 | no | 0.3200 | 0.489 [0.367, 0.599] | +0.153 | +0.073 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs New York Red Bulls | Total goals over 1.5 | no | 0.1300 | 0.294 [0.168, 0.418] | +0.157 | +0.071 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Real Salt Lake | away team total over 2.5 | no | 0.7800 | 0.898 [0.820, 0.957] | +0.106 | +0.068 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs Atlanta United | Total goals over 3.5 | no | 0.6100 | 0.768 [0.630, 0.888] | +0.142 | +0.068 | 0.67 | - |  | RESEARCH_CANDIDATE |
-| Seattle Sounders vs Houston Dynamo | First-half exact score 0-0 (home-away) | yes | 0.2700 | 0.424 [0.308, 0.532] | +0.140 | +0.066 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | Toronto FC vs D.C. United | away team total over 0.5 | no | 0.2600 | 0.422 [0.300, 0.540] | +0.148 | +0.066 | 0.32 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Colorado Rapids | Total goals over 1.5 | no | 0.1900 | 0.346 [0.216, 0.475] | +0.146 | +0.062 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | away team total over 1.5 | no | 0.7000 | 0.830 [0.735, 0.906] | +0.115 | +0.060 | 0.76 | - |  | RESEARCH_CANDIDATE |
@@ -91,9 +91,9 @@ model board generated 2026-10-28T06:25:46.679859Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1920
-action_NO_QUOTE: 455
-action_RESEARCH_CANDIDATE: 171
+action_NO_EDGE: 1919
+action_NO_QUOTE: 457
+action_RESEARCH_CANDIDATE: 170
 contract_sides: 2546
 fixtures: 30
 fixtures_model_invalidated: 0
