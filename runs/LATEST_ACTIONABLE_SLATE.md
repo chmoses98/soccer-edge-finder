@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261029T010910Z-eb46b1` · generated 2026-10-29T01:09:10.093301Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261029T012356Z-2c3f77` · generated 2026-10-29T01:23:56.782013Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-29T01:06:08.230715Z (CURRENT at publish; CURRENT until 2026-10-29T01:26:08.230715Z, STALE after 2026-10-29T01:36:08.230715Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-29T01:21:10.848061Z (CURRENT at publish; CURRENT until 2026-10-29T01:41:10.848061Z, STALE after 2026-10-29T01:51:10.848061Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-29T01:09:01.835855Z · simulations this update: 2 · Odds API calls this update: 0 (credits 0) · reprice 0.64s
+model board generated 2026-10-29T01:09:01.835855Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.57s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -15,7 +15,7 @@ model board generated 2026-10-29T01:09:01.835855Z · simulations this update: 2 
 | 2026-10-29T02:30:00Z | San Jose Earthquakes vs Colorado Rapids (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-29T02:30:00Z | Seattle Sounders vs Houston Dynamo (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-29T02:30:00Z | Vancouver Whitecaps vs San Diego FC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-29T03:00:00Z | Club América vs Tijuana (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 32 | 0 |
+| 2026-10-29T03:00:00Z | Club América vs Tijuana (mex.liga_mx) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-29T17:30:00Z | Frosinone vs Lecce (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-29T19:45:00Z | Fiorentina vs Atalanta (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-29T22:30:00Z | Atlético Mineiro vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -52,12 +52,12 @@ model board generated 2026-10-29T01:09:01.835855Z · simulations this update: 2 
 | San Jose Earthquakes vs Colorado Rapids | away team total over 2.5 | no | 0.8500 | 0.945 [0.900, 0.980] | +0.086 | +0.064 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | away team total over 0.5 | no | 0.3300 | 0.488 [0.367, 0.600] | +0.143 | +0.063 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs San Diego FC | away team total over 1.5 | no | 0.6400 | 0.777 [0.666, 0.875] | +0.121 | +0.058 | 0.69 | - | * | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Colorado Rapids | Total goals over 3.5 | no | 0.6600 | 0.800 [0.680, 0.900] | +0.124 | +0.057 | 0.71 | - | * | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Colorado Rapids | Total goals over 2.5 | no | 0.4400 | 0.608 [0.456, 0.745] | +0.151 | +0.058 | 0.49 | - | * | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Colorado Rapids | Total goals over 3.5 | no | 0.6600 | 0.800 [0.680, 0.900] | +0.124 | +0.057 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs San Diego FC | away team total over 0.5 | no | 0.2800 | 0.423 [0.304, 0.543] | +0.129 | +0.053 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | Exact score 0-0 (home-away) | yes | 0.0500 | 0.153 [0.084, 0.226] | +0.100 | +0.052 | 0.09 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | away team total over 1.5 | no | 0.7100 | 0.830 [0.735, 0.906] | +0.105 | +0.050 | 0.76 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | First half: both teams to score | no | 0.7900 | 0.885 [0.819, 0.941] | +0.083 | +0.048 | 0.84 | - | * | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Colorado Rapids | Total goals over 2.5 | no | 0.4500 | 0.608 [0.456, 0.745] | +0.141 | +0.047 | 0.49 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Colorado Rapids | Total goals over 4.5 | no | 0.8200 | 0.912 [0.839, 0.967] | +0.081 | +0.045 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs San Diego FC | btts | no | 0.3400 | 0.474 [0.361, 0.590] | +0.119 | +0.044 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | First-half total goals over 2.5 | no | 0.8600 | 0.937 [0.879, 0.981] | +0.069 | +0.042 | 0.9 | - |  | RESEARCH_CANDIDATE |
@@ -76,8 +76,8 @@ model board generated 2026-10-29T01:09:01.835855Z · simulations this update: 2 
 ## Counts
 
 ```
-action_NO_EDGE: 656
-action_NO_QUOTE: 148
+action_NO_EDGE: 665
+action_NO_QUOTE: 139
 action_RESEARCH_CANDIDATE: 70
 contract_sides: 874
 fixtures: 15
