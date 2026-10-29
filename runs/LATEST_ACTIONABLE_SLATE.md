@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261029T212811Z-2982c9` · generated 2026-10-29T21:28:11.238506Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261029T214302Z-354e95` · generated 2026-10-29T21:43:02.821791Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-29T21:25:07.893788Z (CURRENT at publish; CURRENT until 2026-10-29T21:45:07.893788Z, STALE after 2026-10-29T21:55:07.893788Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-29T21:40:12.023626Z (CURRENT at publish; CURRENT until 2026-10-29T22:00:12.023626Z, STALE after 2026-10-29T22:10:12.023626Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-29T21:28:08.560691Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.66s
+model board generated 2026-10-29T21:28:08.560691Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.86s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -53,7 +53,7 @@ model board generated 2026-10-29T21:28:08.560691Z · simulations this update: 1 
 | 2026-10-31T21:00:00Z | LA Galaxy vs Austin FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 62 | 0 |
 | 2026-10-31T21:00:00Z | San Jose Earthquakes vs Real Salt Lake (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 62 | 0 |
 
-## Candidates on CURRENT prices (73; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (75; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -89,21 +89,21 @@ model board generated 2026-10-29T21:28:08.560691Z · simulations this update: 1 
 | Tottenham Hotspur vs Crystal Palace | Result: home | no | 0.3800 | 0.537 [0.347, 0.713] | +0.141 | +0.021 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs San Diego FC | home wins by more than 2.5 | yes | 0.1600 | 0.294 [0.152, 0.459] | +0.125 | +0.021 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | Total goals over 1.5 | no | 0.1800 | 0.293 [0.169, 0.422] | +0.103 | +0.018 | 0.19 | - |  | RESEARCH_CANDIDATE |
-| LA Galaxy vs Austin FC | home team total over 1.5 | no | 0.3200 | 0.462 [0.296, 0.627] | +0.127 | +0.018 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs D.C. United | Total goals over 2.5 | no | 0.3200 | 0.462 [0.306, 0.620] | +0.126 | +0.018 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | Charlotte FC vs Orlando City | Result: away | no | 0.7300 | 0.824 [0.716, 0.923] | +0.080 | +0.017 | 0.74 | - | * | RESEARCH_CANDIDATE |
 | Charlotte FC vs Orlando City | away team total over 1.5 | no | 0.5100 | 0.636 [0.494, 0.770] | +0.109 | +0.016 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | Total goals over 5.5 | no | 0.8900 | 0.939 [0.881, 0.983] | +0.043 | +0.016 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs D.C. United | btts | no | 0.4300 | 0.539 [0.417, 0.655] | +0.092 | +0.015 | 0.44 | - | * | RESEARCH_CANDIDATE |
-| LA Galaxy vs Austin FC | home team total over 2.5 | no | 0.5900 | 0.716 [0.555, 0.857] | +0.109 | +0.014 | 0.6 | - |  | RESEARCH_CANDIDATE |
+| LA Galaxy vs Austin FC | home team total over 2.5 | no | 0.5900 | 0.716 [0.555, 0.857] | +0.109 | +0.014 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | First-half total goals over 0.5 | no | 0.2400 | 0.339 [0.228, 0.452] | +0.086 | +0.014 | 0.25 | - | * | RESEARCH_CANDIDATE |
+| New York City FC vs CF Montréal | First-half total goals over 1.5 | no | 0.5900 | 0.695 [0.568, 0.812] | +0.088 | +0.013 | 0.6 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1512
-action_NO_QUOTE: 327
-action_RESEARCH_CANDIDATE: 73
+action_NO_EDGE: 1519
+action_NO_QUOTE: 318
+action_RESEARCH_CANDIDATE: 75
 contract_sides: 1912
 fixtures: 40
 fixtures_model_invalidated: 0
