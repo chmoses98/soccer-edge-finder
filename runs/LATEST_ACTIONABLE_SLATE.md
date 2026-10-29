@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261029T122918Z-f2dbd0` · generated 2026-10-29T12:29:18.764566Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261029T124422Z-474bdf` · generated 2026-10-29T12:44:22.977523Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-29T12:26:37.895887Z (CURRENT at publish; CURRENT until 2026-10-29T12:46:37.895887Z, STALE after 2026-10-29T12:56:37.895887Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-29T12:41:37.912793Z (CURRENT at publish; CURRENT until 2026-10-29T13:01:37.912793Z, STALE after 2026-10-29T13:11:37.912793Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-29T11:28:56.396551Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.17s
+model board generated 2026-10-29T12:44:22.000240Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.18s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -24,6 +24,7 @@ model board generated 2026-10-29T11:28:56.396551Z · simulations this update: 0 
 | 2026-10-31T01:00:00Z | FC Juárez vs Querétaro (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-31T01:00:00Z | Atlético San Luis vs Atlas (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-31T03:00:00Z | Puebla vs Pumas UNAM (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-31T12:30:00Z | Chelsea vs Manchester United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
 ## Candidates on CURRENT prices (11; RESEARCH_ONLY = analysis, never a bet)
 
@@ -44,11 +45,11 @@ model board generated 2026-10-29T11:28:56.396551Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 377
+action_NO_EDGE: 383
 action_NO_QUOTE: 114
 action_RESEARCH_CANDIDATE: 11
-contract_sides: 502
-fixtures: 12
+contract_sides: 508
+fixtures: 13
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
