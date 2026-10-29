@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261029T093813Z-4650ac` · generated 2026-10-29T09:38:13.207756Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261029T095313Z-2e47ab` · generated 2026-10-29T09:53:13.839748Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-29T09:35:31.787259Z (CURRENT at publish; CURRENT until 2026-10-29T09:55:31.787259Z, STALE after 2026-10-29T10:05:31.787259Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-29T09:50:32.410157Z (CURRENT at publish; CURRENT until 2026-10-29T10:10:32.410157Z, STALE after 2026-10-29T10:20:32.410157Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-29T05:52:40.271893Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.39s
+model board generated 2026-10-29T05:52:40.271893Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.26s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -25,7 +25,7 @@ model board generated 2026-10-29T05:52:40.271893Z · simulations this update: 0 
 | 2026-10-31T01:00:00Z | Atlético San Luis vs Atlas (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-31T03:00:00Z | Puebla vs Pumas UNAM (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (9; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (10; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -38,13 +38,14 @@ model board generated 2026-10-29T05:52:40.271893Z · simulations this update: 0 
 | Atlético San Luis vs Atlas | Result: home | yes | 0.3600 | 0.489 [0.339, 0.656] | +0.113 | +0.011 | 0.37 | - | * | RESEARCH_CANDIDATE |
 | Corinthians vs Mirassol | Result: away | yes | 0.1950 | 0.290 [0.171, 0.416] | +0.084 | +0.006 | 0.2 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Pumas UNAM | away team total over 0.5 | no | 0.2200 | 0.313 [0.198, 0.428] | +0.081 | +0.004 | 0.22 | - | * | RESEARCH_CANDIDATE |
+| Atlético Mineiro vs Cruzeiro | Result: home | yes | 0.3450 | 0.458 [0.307, 0.606] | +0.097 | +0.001 | 0.34 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 379
+action_NO_EDGE: 378
 action_NO_QUOTE: 114
-action_RESEARCH_CANDIDATE: 9
+action_RESEARCH_CANDIDATE: 10
 contract_sides: 502
 fixtures: 12
 fixtures_model_invalidated: 0
