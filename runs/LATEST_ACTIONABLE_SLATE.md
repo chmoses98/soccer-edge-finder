@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261029T194252Z-e3cec7` · generated 2026-10-29T19:42:52.028221Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
+slate `slate-20261029T195755Z-8bfeeb` · generated 2026-10-29T19:57:55.089431Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-29T19:40:00.050000Z (CURRENT at publish; CURRENT until 2026-10-29T20:00:00.050000Z, STALE after 2026-10-29T20:10:00.050000Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-29T19:55:00.069960Z (CURRENT at publish; CURRENT until 2026-10-29T20:15:00.069960Z, STALE after 2026-10-29T20:25:00.069960Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-29T19:13:29.482650Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.56s
+model board generated 2026-10-29T19:57:53.652624Z · simulations this update: 2 · Odds API calls this update: 0 (credits 0) · reprice 0.58s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,6 @@ model board generated 2026-10-29T19:13:29.482650Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-29T19:45:00Z | Fiorentina vs Atalanta (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
 | 2026-10-29T22:30:00Z | Atlético Mineiro vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-29T23:00:00Z | Vasco da Gama vs Flamengo (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-30T00:30:00Z | Grêmio vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -48,8 +47,10 @@ model board generated 2026-10-29T19:13:29.482650Z · simulations this update: 0 
 | 2026-10-31T19:00:00Z | Coritiba vs Vitória (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 11 | 0 |
 | 2026-10-31T19:00:00Z | Sporting Kansas City vs FC Dallas (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-31T19:00:00Z | St. Louis City SC vs San Diego FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
+| 2026-10-31T19:45:00Z | Troyes vs Le Mans (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-31T19:45:00Z | AC Milan vs Inter Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (45; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (50; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -58,17 +59,17 @@ model board generated 2026-10-29T19:13:29.482650Z · simulations this update: 0 
 | New York City FC vs CF Montréal | btts | no | 0.4700 | 0.625 [0.522, 0.724] | +0.138 | +0.075 | 0.54 | - | * | RESEARCH_CANDIDATE |
 | Le Havre vs Paris Saint-Germain | Result: draw | yes | 0.1400 | 0.257 [0.196, 0.320] | +0.109 | +0.067 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs San Diego FC | Result: away | no | 0.7300 | 0.854 [0.758, 0.935] | +0.110 | +0.057 | 0.78 | - | * | RESEARCH_CANDIDATE |
-| New York City FC vs CF Montréal | away team total over 0.5 | no | 0.4200 | 0.558 [0.452, 0.668] | +0.121 | +0.049 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs San Diego FC | Result: home | yes | 0.5300 | 0.683 [0.537, 0.823] | +0.135 | +0.045 | 0.57 | - |  | RESEARCH_CANDIDATE |
 | Werder Bremen vs TSG Hoffenheim | Result: away | no | 0.5800 | 0.737 [0.587, 0.883] | +0.140 | +0.045 | 0.62 | - | * | RESEARCH_CANDIDATE |
+| New York City FC vs CF Montréal | away team total over 0.5 | no | 0.4300 | 0.558 [0.452, 0.668] | +0.110 | +0.039 | 0.46 | - | * | RESEARCH_CANDIDATE |
+| New York City FC vs CF Montréal | Total goals over 3.5 | no | 0.6100 | 0.747 [0.600, 0.869] | +0.120 | +0.038 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs San Diego FC | home wins by more than 1.5 | yes | 0.3200 | 0.481 [0.316, 0.656] | +0.146 | +0.037 | 0.35 | - | * | RESEARCH_CANDIDATE |
 | FC Augsburg vs SC Freiburg | Result: away | no | 0.5700 | 0.714 [0.557, 0.857] | +0.127 | +0.036 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | Werder Bremen vs TSG Hoffenheim | Result: home | yes | 0.3400 | 0.517 [0.337, 0.722] | +0.161 | +0.035 | 0.37 | - |  | RESEARCH_CANDIDATE |
 | Hull City vs Ipswich Town | Result: away | no | 0.6500 | 0.805 [0.623, 0.948] | +0.139 | +0.035 | 0.68 | - | * | RESEARCH_CANDIDATE |
-| New York City FC vs CF Montréal | Total goals over 2.5 | no | 0.3900 | 0.543 [0.377, 0.695] | +0.137 | +0.034 | 0.42 | - | * | RESEARCH_CANDIDATE |
+| New York City FC vs CF Montréal | Total goals over 2.5 | no | 0.3900 | 0.543 [0.377, 0.695] | +0.137 | +0.034 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | SV Elversberg vs Mainz 05 | Result: away | no | 0.5600 | 0.732 [0.522, 0.910] | +0.155 | +0.033 | 0.59 | - | * | RESEARCH_CANDIDATE |
-| St. Louis City SC vs San Diego FC | away team total over 1.5 | no | 0.5700 | 0.695 [0.569, 0.819] | +0.108 | +0.028 | 0.59 | - | * | RESEARCH_CANDIDATE |
-| New York City FC vs CF Montréal | Total goals over 3.5 | no | 0.6200 | 0.747 [0.600, 0.869] | +0.110 | +0.028 | 0.64 | - |  | RESEARCH_CANDIDATE |
+| New York City FC vs CF Montréal | Total goals over 4.5 | no | 0.7900 | 0.877 [0.778, 0.953] | +0.076 | +0.026 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | FC Augsburg vs SC Freiburg | Result: home | yes | 0.3200 | 0.485 [0.306, 0.668] | +0.149 | +0.026 | 0.34 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | away team total over 1.5 | no | 0.8000 | 0.877 [0.811, 0.938] | +0.065 | +0.025 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | SV Elversberg vs Mainz 05 | Result: home | yes | 0.3100 | 0.518 [0.274, 0.770] | +0.193 | +0.025 | 0.33 | - |  | RESEARCH_CANDIDATE |
@@ -79,31 +80,33 @@ model board generated 2026-10-29T19:13:29.482650Z · simulations this update: 0 
 | New York City FC vs CF Montréal | Total goals over 1.5 | no | 0.1800 | 0.293 [0.169, 0.422] | +0.103 | +0.018 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs D.C. United | Total goals over 2.5 | no | 0.3200 | 0.462 [0.306, 0.620] | +0.126 | +0.018 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | Charlotte FC vs Orlando City | Result: away | no | 0.7300 | 0.824 [0.716, 0.923] | +0.080 | +0.017 | 0.74 | - | * | RESEARCH_CANDIDATE |
-| New York City FC vs CF Montréal | Total goals over 4.5 | no | 0.8000 | 0.877 [0.778, 0.953] | +0.066 | +0.017 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs D.C. United | btts | no | 0.4300 | 0.539 [0.417, 0.655] | +0.092 | +0.015 | 0.44 | - | * | RESEARCH_CANDIDATE |
+| New York City FC vs CF Montréal | First-half total goals over 1.5 | no | 0.5900 | 0.695 [0.568, 0.812] | +0.088 | +0.013 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | Tottenham Hotspur vs Crystal Palace | Result: away | yes | 0.1700 | 0.294 [0.149, 0.451] | +0.114 | +0.013 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs San Diego FC | away wins by more than 1.5 | no | 0.9000 | 0.944 [0.897, 0.980] | +0.038 | +0.013 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | Exact score 1-0 (home-away) | yes | 0.1000 | 0.152 [0.100, 0.204] | +0.046 | +0.011 | 0.11 | - | * | RESEARCH_CANDIDATE |
 | Atlético San Luis vs Atlas | Result: home | yes | 0.3600 | 0.489 [0.339, 0.656] | +0.113 | +0.011 | 0.37 | - | * | RESEARCH_CANDIDATE |
+| New York City FC vs CF Montréal | First half: both teams to score | no | 0.8100 | 0.871 [0.799, 0.931] | +0.051 | +0.009 | 0.81 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Pumas UNAM | away team total over 1.5 | no | 0.5500 | 0.663 [0.518, 0.791] | +0.096 | +0.009 | 0.55 | - | * | RESEARCH_CANDIDATE |
+| St. Louis City SC vs San Diego FC | away team total over 1.5 | no | 0.5900 | 0.695 [0.569, 0.819] | +0.088 | +0.008 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | Total goals over 5.5 | no | 0.9100 | 0.947 [0.893, 0.986] | +0.031 | +0.008 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Orlando City | Result: home | yes | 0.5200 | 0.647 [0.485, 0.805] | +0.109 | +0.007 | 0.52 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs D.C. United | Total goals over 3.5 | no | 0.5500 | 0.674 [0.519, 0.817] | +0.107 | +0.006 | 0.55 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Orlando City | away wins by more than 1.5 | no | 0.8800 | 0.925 [0.865, 0.975] | +0.038 | +0.006 | 0.88 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Pumas UNAM | away team total over 0.5 | no | 0.2200 | 0.313 [0.198, 0.428] | +0.081 | +0.004 | 0.22 | - |  | RESEARCH_CANDIDATE |
-| Columbus Crew vs D.C. United | Total goals over 4.5 | no | 0.7400 | 0.827 [0.710, 0.926] | +0.074 | +0.003 | 0.74 | - |  | RESEARCH_CANDIDATE |
-| New York City FC vs CF Montréal | Exact score 0-0 (home-away) | yes | 0.0500 | 0.093 [0.042, 0.149] | +0.040 | +0.003 | 0.05 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1316
-action_NO_QUOTE: 321
-action_RESEARCH_CANDIDATE: 45
-contract_sides: 1682
-fixtures: 36
+action_NO_EDGE: 1318
+action_NO_QUOTE: 320
+action_RESEARCH_CANDIDATE: 50
+contract_sides: 1688
+fixtures: 37
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
+
+Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
