@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261029T125921Z-320c63` · generated 2026-10-29T12:59:21.202522Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261029T131428Z-4c660d` · generated 2026-10-29T13:14:28.052033Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-29T12:56:40.251444Z (CURRENT at publish; CURRENT until 2026-10-29T13:16:40.251444Z, STALE after 2026-10-29T13:26:40.251444Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-29T13:11:40.747708Z (CURRENT at publish; CURRENT until 2026-10-29T13:31:40.747708Z, STALE after 2026-10-29T13:41:40.747708Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-29T12:44:22.000240Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.29s
+model board generated 2026-10-29T12:44:22.000240Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.19s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -21,8 +21,8 @@ model board generated 2026-10-29T12:44:22.000240Z · simulations this update: 0 
 | 2026-10-30T19:30:00Z | SV Elversberg vs Mainz 05 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-30T20:05:00Z | Lille vs Lens (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-30T23:00:00Z | Corinthians vs Mirassol (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-10-31T01:00:00Z | FC Juárez vs Querétaro (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-31T01:00:00Z | Atlético San Luis vs Atlas (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-31T01:00:00Z | FC Juárez vs Querétaro (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-31T01:00:00Z | Atlético San Luis vs Atlas (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-31T03:00:00Z | Puebla vs Pumas UNAM (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-31T12:30:00Z | Chelsea vs Manchester United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
@@ -35,10 +35,10 @@ model board generated 2026-10-29T12:44:22.000240Z · simulations this update: 0 
 | Le Havre vs Paris Saint-Germain | Result: draw | yes | 0.1300 | 0.257 [0.196, 0.320] | +0.119 | +0.077 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | SV Elversberg vs Mainz 05 | Result: away | no | 0.5600 | 0.732 [0.522, 0.910] | +0.155 | +0.033 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | SV Elversberg vs Mainz 05 | Result: home | yes | 0.3100 | 0.518 [0.274, 0.770] | +0.193 | +0.025 | 0.33 | - |  | RESEARCH_CANDIDATE |
+| Puebla vs Pumas UNAM | away team total over 0.5 | no | 0.2100 | 0.313 [0.198, 0.428] | +0.091 | +0.014 | 0.22 | - | * | RESEARCH_CANDIDATE |
 | Atlético San Luis vs Atlas | Result: home | yes | 0.3600 | 0.489 [0.339, 0.656] | +0.113 | +0.011 | 0.37 | - | * | RESEARCH_CANDIDATE |
-| Puebla vs Pumas UNAM | away team total over 1.5 | no | 0.5500 | 0.663 [0.518, 0.791] | +0.096 | +0.009 | 0.55 | - | * | RESEARCH_CANDIDATE |
+| Puebla vs Pumas UNAM | away team total over 1.5 | no | 0.5500 | 0.663 [0.518, 0.791] | +0.096 | +0.009 | 0.55 | - |  | RESEARCH_CANDIDATE |
 | Corinthians vs Mirassol | Result: away | yes | 0.1950 | 0.290 [0.171, 0.416] | +0.084 | +0.006 | 0.2 | - | * | RESEARCH_CANDIDATE |
-| Puebla vs Pumas UNAM | away team total over 0.5 | no | 0.2200 | 0.313 [0.198, 0.428] | +0.081 | +0.004 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Pumas UNAM | away team total over 2.5 | no | 0.8100 | 0.872 [0.778, 0.945] | +0.051 | +0.002 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | FC Juárez vs Querétaro | btts | no | 0.4400 | 0.533 [0.411, 0.651] | +0.076 | +0.001 | 0.44 | - | * | RESEARCH_CANDIDATE |
 
