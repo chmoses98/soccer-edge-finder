@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261029T155850Z-76a3a2` · generated 2026-10-29T15:58:50.651434Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261029T161348Z-380db4` · generated 2026-10-29T16:13:48.141716Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-29T15:56:06.578295Z (CURRENT at publish; CURRENT until 2026-10-29T16:16:06.578295Z, STALE after 2026-10-29T16:26:06.578295Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-29T16:11:04.127944Z (CURRENT at publish; CURRENT until 2026-10-29T16:31:04.127944Z, STALE after 2026-10-29T16:41:04.127944Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-29T15:14:37.327565Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.34s
+model board generated 2026-10-29T15:14:37.327565Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.33s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -46,8 +46,8 @@ model board generated 2026-10-29T15:14:37.327565Z · simulations this update: 0 
 | Le Havre vs Paris Saint-Germain | Result: away | no | 0.2000 | 0.544 [0.362, 0.715] | +0.333 | +0.214 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Le Havre vs Paris Saint-Germain | Result: home | yes | 0.0800 | 0.287 [0.147, 0.444] | +0.202 | +0.097 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | Le Havre vs Paris Saint-Germain | Result: draw | yes | 0.1300 | 0.257 [0.196, 0.320] | +0.119 | +0.077 | 0.2 | - |  | RESEARCH_CANDIDATE |
-| FC Augsburg vs SC Freiburg | Result: away | no | 0.5600 | 0.714 [0.557, 0.857] | +0.137 | +0.046 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | Werder Bremen vs TSG Hoffenheim | Result: away | no | 0.5800 | 0.737 [0.587, 0.883] | +0.140 | +0.045 | 0.62 | - | * | RESEARCH_CANDIDATE |
+| FC Augsburg vs SC Freiburg | Result: away | no | 0.5700 | 0.714 [0.557, 0.857] | +0.127 | +0.036 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | FC Augsburg vs SC Freiburg | Result: home | yes | 0.3100 | 0.485 [0.306, 0.668] | +0.160 | +0.036 | 0.34 | - |  | RESEARCH_CANDIDATE |
 | Werder Bremen vs TSG Hoffenheim | Result: home | yes | 0.3400 | 0.517 [0.337, 0.722] | +0.161 | +0.035 | 0.37 | - |  | RESEARCH_CANDIDATE |
 | Hull City vs Ipswich Town | Result: away | no | 0.6500 | 0.805 [0.623, 0.948] | +0.139 | +0.035 | 0.68 | - | * | RESEARCH_CANDIDATE |
