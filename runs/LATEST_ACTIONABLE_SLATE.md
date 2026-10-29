@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261029T211320Z-5bf047` · generated 2026-10-29T21:13:20.306822Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261029T212811Z-2982c9` · generated 2026-10-29T21:28:11.238506Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-29T21:10:07.874370Z (CURRENT at publish; CURRENT until 2026-10-29T21:30:07.874370Z, STALE after 2026-10-29T21:40:07.874370Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-29T21:25:07.893788Z (CURRENT at publish; CURRENT until 2026-10-29T21:45:07.893788Z, STALE after 2026-10-29T21:55:07.893788Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-29T21:13:01.791541Z · simulations this update: 2 · Odds API calls this update: 0 (credits 0) · reprice 0.66s
+model board generated 2026-10-29T21:28:08.560691Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.66s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-29T21:13:01.791541Z · simulations this update: 2 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-29T22:30:00Z | Atlético Mineiro vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-29T22:30:00Z | Atlético Mineiro vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
 | 2026-10-29T23:00:00Z | Vasco da Gama vs Flamengo (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-30T00:30:00Z | Grêmio vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-30T18:00:00Z | Le Havre vs Paris Saint-Germain (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -53,7 +53,7 @@ model board generated 2026-10-29T21:13:01.791541Z · simulations this update: 2 
 | 2026-10-31T21:00:00Z | LA Galaxy vs Austin FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 62 | 0 |
 | 2026-10-31T21:00:00Z | San Jose Earthquakes vs Real Salt Lake (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 62 | 0 |
 
-## Candidates on CURRENT prices (70; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (73; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -78,10 +78,10 @@ model board generated 2026-10-29T21:13:01.791541Z · simulations this update: 2 
 | FC Augsburg vs SC Freiburg | Result: away | no | 0.5700 | 0.714 [0.557, 0.857] | +0.127 | +0.036 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | Werder Bremen vs TSG Hoffenheim | Result: home | yes | 0.3400 | 0.517 [0.337, 0.722] | +0.161 | +0.035 | 0.37 | - | * | RESEARCH_CANDIDATE |
 | Werder Bremen vs TSG Hoffenheim | Result: away | no | 0.5900 | 0.737 [0.587, 0.883] | +0.130 | +0.035 | 0.62 | - |  | RESEARCH_CANDIDATE |
-| Hull City vs Ipswich Town | Result: away | no | 0.6500 | 0.805 [0.623, 0.948] | +0.139 | +0.035 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | SV Elversberg vs Mainz 05 | Result: away | no | 0.5600 | 0.732 [0.522, 0.910] | +0.155 | +0.033 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | Total goals over 4.5 | no | 0.7900 | 0.877 [0.778, 0.953] | +0.076 | +0.026 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | FC Augsburg vs SC Freiburg | Result: home | yes | 0.3200 | 0.485 [0.306, 0.668] | +0.149 | +0.026 | 0.34 | - |  | RESEARCH_CANDIDATE |
+| Hull City vs Ipswich Town | Result: away | no | 0.6600 | 0.805 [0.623, 0.948] | +0.129 | +0.025 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | SV Elversberg vs Mainz 05 | Result: home | yes | 0.3100 | 0.518 [0.274, 0.770] | +0.193 | +0.025 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | Hull City vs Ipswich Town | Result: home | yes | 0.3700 | 0.581 [0.325, 0.838] | +0.195 | +0.025 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | Schalke 04 vs RB Leipzig | Result: away | no | 0.4800 | 0.662 [0.430, 0.867] | +0.165 | +0.024 | 0.5 | - | * | RESEARCH_CANDIDATE |
@@ -101,10 +101,10 @@ model board generated 2026-10-29T21:13:01.791541Z · simulations this update: 2 
 ## Counts
 
 ```
-action_NO_EDGE: 1515
-action_NO_QUOTE: 357
-action_RESEARCH_CANDIDATE: 70
-contract_sides: 1942
+action_NO_EDGE: 1512
+action_NO_QUOTE: 327
+action_RESEARCH_CANDIDATE: 73
+contract_sides: 1912
 fixtures: 40
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
