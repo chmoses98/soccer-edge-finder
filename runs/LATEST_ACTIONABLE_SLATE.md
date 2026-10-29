@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261029T102314Z-1268e8` · generated 2026-10-29T10:23:14.360763Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261029T103814Z-b01e70` · generated 2026-10-29T10:38:14.415328Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-29T10:20:33.005287Z (CURRENT at publish; CURRENT until 2026-10-29T10:40:33.005287Z, STALE after 2026-10-29T10:50:33.005287Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-29T10:35:33.026907Z (CURRENT at publish; CURRENT until 2026-10-29T10:55:33.026907Z, STALE after 2026-10-29T11:05:33.026907Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-29T05:52:40.271893Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.38s
+model board generated 2026-10-29T05:52:40.271893Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.26s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -25,28 +25,29 @@ model board generated 2026-10-29T05:52:40.271893Z · simulations this update: 0 
 | 2026-10-31T01:00:00Z | Atlético San Luis vs Atlas (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-31T03:00:00Z | Puebla vs Pumas UNAM (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (11; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (12; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Le Havre vs Paris Saint-Germain | Result: away | no | 0.2000 | 0.544 [0.362, 0.715] | +0.333 | +0.214 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Le Havre vs Paris Saint-Germain | Result: home | yes | 0.0800 | 0.287 [0.147, 0.444] | +0.202 | +0.097 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | Le Havre vs Paris Saint-Germain | Result: draw | yes | 0.1300 | 0.257 [0.196, 0.320] | +0.119 | +0.077 | 0.2 | - |  | RESEARCH_CANDIDATE |
-| SV Elversberg vs Mainz 05 | Result: away | no | 0.5500 | 0.732 [0.522, 0.910] | +0.165 | +0.043 | 0.59 | - | * | RESEARCH_CANDIDATE |
+| SV Elversberg vs Mainz 05 | Result: away | no | 0.5600 | 0.732 [0.522, 0.910] | +0.155 | +0.033 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | SV Elversberg vs Mainz 05 | Result: home | yes | 0.3100 | 0.518 [0.274, 0.770] | +0.193 | +0.025 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | FC Juárez vs Querétaro | btts | no | 0.4300 | 0.533 [0.411, 0.651] | +0.086 | +0.011 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Atlético San Luis vs Atlas | Result: home | yes | 0.3600 | 0.489 [0.339, 0.656] | +0.113 | +0.011 | 0.37 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Pumas UNAM | away team total over 1.5 | no | 0.5500 | 0.663 [0.518, 0.791] | +0.096 | +0.009 | 0.55 | - | * | RESEARCH_CANDIDATE |
 | Corinthians vs Mirassol | Result: away | yes | 0.1950 | 0.290 [0.171, 0.416] | +0.084 | +0.006 | 0.2 | - | * | RESEARCH_CANDIDATE |
+| Corinthians vs Mirassol | away wins by more than 1.5 | yes | 0.0600 | 0.118 [0.054, 0.196] | +0.054 | +0.005 | 0.06 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Pumas UNAM | away team total over 0.5 | no | 0.2200 | 0.313 [0.198, 0.428] | +0.081 | +0.004 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Pumas UNAM | away team total over 2.5 | no | 0.8100 | 0.872 [0.778, 0.945] | +0.051 | +0.002 | 0.81 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 377
+action_NO_EDGE: 376
 action_NO_QUOTE: 114
-action_RESEARCH_CANDIDATE: 11
+action_RESEARCH_CANDIDATE: 12
 contract_sides: 502
 fixtures: 12
 fixtures_model_invalidated: 0
