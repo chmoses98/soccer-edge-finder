@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-29T14:51:26.149649Z",
+  "as_of": "2026-10-29T21:30:29.392149Z",
   "by_competition": {
     "afc.champions": {
       "fixtures": 32,
@@ -110,7 +110,7 @@
       "with_xi_ge_20min": 0
     },
     "eng.league_cup": {
-      "fixtures": 7,
+      "fixtures": 8,
       "median_lead_minutes": null,
       "with_pre_kickoff_xi": 0,
       "with_xi_ge_20min": 0
@@ -134,9 +134,9 @@
       "with_xi_ge_20min": 8
     },
     "esp.copa_del_rey": {
-      "fixtures": 52,
-      "median_lead_minutes": null,
-      "with_pre_kickoff_xi": 0,
+      "fixtures": 66,
+      "median_lead_minutes": 10.161131025000001,
+      "with_pre_kickoff_xi": 4,
       "with_xi_ge_20min": 0
     },
     "esp.w.1": {
@@ -182,10 +182,10 @@
       "with_xi_ge_20min": 0
     },
     "ita.1": {
-      "fixtures": 38,
-      "median_lead_minutes": 26.9428519,
-      "with_pre_kickoff_xi": 37,
-      "with_xi_ge_20min": 35
+      "fixtures": 40,
+      "median_lead_minutes": 26.7197481,
+      "with_pre_kickoff_xi": 39,
+      "with_xi_ge_20min": 36
     },
     "ita.2": {
       "fixtures": 40,
@@ -200,7 +200,7 @@
       "with_xi_ge_20min": 2
     },
     "ksa.1": {
-      "fixtures": 33,
+      "fixtures": 35,
       "median_lead_minutes": 40.65561713333333,
       "with_pre_kickoff_xi": 3,
       "with_xi_ge_20min": 3
@@ -224,10 +224,10 @@
       "with_xi_ge_20min": 0
     },
     "per.1": {
-      "fixtures": 33,
-      "median_lead_minutes": 24.99453948333333,
-      "with_pre_kickoff_xi": 4,
-      "with_xi_ge_20min": 3
+      "fixtures": 35,
+      "median_lead_minutes": 29.19046438333333,
+      "with_pre_kickoff_xi": 5,
+      "with_xi_ge_20min": 4
     },
     "por.1": {
       "fixtures": 19,
@@ -242,7 +242,7 @@
       "with_xi_ge_20min": 1
     },
     "swe.1": {
-      "fixtures": 29,
+      "fixtures": 32,
       "median_lead_minutes": null,
       "with_pre_kickoff_xi": 0,
       "with_xi_ge_20min": 0
@@ -278,9 +278,9 @@
       "with_xi_ge_20min": 26
     },
     "uefa.wchampions": {
-      "fixtures": 14,
-      "median_lead_minutes": null,
-      "with_pre_kickoff_xi": 0,
+      "fixtures": 18,
+      "median_lead_minutes": 10.0794666,
+      "with_pre_kickoff_xi": 2,
       "with_xi_ge_20min": 0
     },
     "uru.1": {
@@ -6311,22 +6311,22 @@
       "xi_first_observed_at": "2026-10-11T13:08:40.203320+00:00"
     }
   ],
-  "fixtures_kickoff_passed": 1639,
-  "fixtures_tracked": 1676,
+  "fixtures_kickoff_passed": 1667,
+  "fixtures_tracked": 1698,
   "lead_time_minutes": {
     "max": 1514.49315995,
-    "median": 27.200439783333334,
+    "median": 27.094660475,
     "min": 0.2201323,
-    "n": 469,
-    "p10": 10.056431630000011,
-    "p90": 44.08518322
+    "n": 478,
+    "p10": 9.504616501666673,
+    "p90": 44.083342523333336
   },
-  "post_kickoff_first_xi": 671,
+  "post_kickoff_first_xi": 695,
   "schema": "lineup_lead_time_v1",
-  "share_pre_kickoff_xi": 0.28615009151921905,
-  "share_xi_ge_20min": 0.21720561317876755,
+  "share_pre_kickoff_xi": 0.28674265146970607,
+  "share_xi_ge_20min": 0.21475704859028194,
   "target": "audit \u00a7I1: >= 90% of priced fixtures with a confirmed XI captured >= 20 min before kickoff",
-  "with_any_xi": 1140,
-  "with_pre_kickoff_xi": 469,
-  "with_xi_ge_20min_before_kickoff": 356
+  "with_any_xi": 1173,
+  "with_pre_kickoff_xi": 478,
+  "with_xi_ge_20min_before_kickoff": 358
 }
