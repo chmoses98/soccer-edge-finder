@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-29T06:03:45.020060+00:00",
+  "as_of": "2026-10-29T13:21:26.917280+00:00",
   "events": 655,
   "events_skipped_unmapped": 376,
   "fixtures_mapped": 279,
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 1,
-    "events": 44,
+    "captured": 4,
+    "events": 47,
     "failures": [],
     "published_post": 0,
     "published_pre_kickoff": 0,
     "unchanged": 43,
-    "unpublished": 44
+    "unpublished": 47
   },
   "map_proposals": {
     "bel.1": {
@@ -350,7 +350,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 20,
+  "results_appended": 0,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -511,12 +511,12 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 10,
-    "events": 73,
+    "captured": 14,
+    "events": 77,
     "failures": [
-      "401892147: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Sydney&count=5&language=en&form",
-      "401892146: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-37.8140&longitude=144.9633&hourly=",
-      "401878956: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Waregem&count=5&language=en&for"
+      "401878958: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=51.0257&longitude=4.4776&hourly=tem",
+      "401878953: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Liege&count=5&language=en&forma",
+      "401878960: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Brussels&count=5&language=en&fo"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
