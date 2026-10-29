@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261029T070805Z-3cc50f` · generated 2026-10-29T07:08:05.766753Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261029T072307Z-2d3bd9` · generated 2026-10-29T07:23:07.240642Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-29T07:05:24.279467Z (CURRENT at publish; CURRENT until 2026-10-29T07:25:24.279467Z, STALE after 2026-10-29T07:35:24.279467Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-29T07:20:25.729785Z (CURRENT at publish; CURRENT until 2026-10-29T07:40:25.729785Z, STALE after 2026-10-29T07:50:25.729785Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-29T05:52:40.271893Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.23s
+model board generated 2026-10-29T05:52:40.271893Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.21s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -31,7 +31,7 @@ model board generated 2026-10-29T05:52:40.271893Z · simulations this update: 0 
 |---|---|---|---|---|---|---|---|---|---|---|
 | Le Havre vs Paris Saint-Germain | Result: away | no | 0.2100 | 0.544 [0.362, 0.715] | +0.322 | +0.204 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Le Havre vs Paris Saint-Germain | Result: home | yes | 0.0900 | 0.287 [0.147, 0.444] | +0.191 | +0.087 | 0.17 | - |  | RESEARCH_CANDIDATE |
-| Le Havre vs Paris Saint-Germain | Result: draw | yes | 0.1300 | 0.257 [0.196, 0.320] | +0.119 | +0.077 | 0.2 | - |  | RESEARCH_CANDIDATE |
+| Le Havre vs Paris Saint-Germain | Result: draw | yes | 0.1500 | 0.257 [0.196, 0.320] | +0.098 | +0.056 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | SV Elversberg vs Mainz 05 | Result: away | no | 0.5600 | 0.732 [0.522, 0.910] | +0.155 | +0.033 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | SV Elversberg vs Mainz 05 | Result: home | yes | 0.3100 | 0.518 [0.274, 0.770] | +0.193 | +0.025 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | Atlético San Luis vs Atlas | Result: home | yes | 0.3600 | 0.489 [0.339, 0.656] | +0.113 | +0.011 | 0.37 | - | * | RESEARCH_CANDIDATE |
@@ -41,8 +41,8 @@ model board generated 2026-10-29T05:52:40.271893Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 377
-action_NO_QUOTE: 117
+action_NO_EDGE: 360
+action_NO_QUOTE: 134
 action_RESEARCH_CANDIDATE: 8
 contract_sides: 502
 fixtures: 12
