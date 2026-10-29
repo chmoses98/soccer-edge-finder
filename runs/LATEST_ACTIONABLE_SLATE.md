@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261029T003139Z-91f60b` · generated 2026-10-29T00:31:39.654232Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261029T003134Z-054d44` · generated 2026-10-29T00:31:34.827132Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-29T00:28:42.157624Z (CURRENT at publish; CURRENT until 2026-10-29T00:48:42.157624Z, STALE after 2026-10-29T00:58:42.157624Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-29T00:28:45.766313Z (CURRENT at publish; CURRENT until 2026-10-29T00:48:45.766313Z, STALE after 2026-10-29T00:58:45.766313Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-29T00:17:56.530735Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.30s
+model board generated 2026-10-29T00:17:56.530735Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.37s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -18,9 +18,9 @@ model board generated 2026-10-29T00:17:56.530735Z · simulations this update: 0 
 | 2026-10-29T03:00:00Z | Club América vs Tijuana (mex.liga_mx) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-29T17:30:00Z | Frosinone vs Lecce (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-29T19:45:00Z | Fiorentina vs Atalanta (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-29T22:30:00Z | Atlético Mineiro vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-29T23:00:00Z | Vasco da Gama vs Flamengo (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-30T00:30:00Z | Grêmio vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-29T22:30:00Z | Atlético Mineiro vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-29T23:00:00Z | Vasco da Gama vs Flamengo (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-30T00:30:00Z | Grêmio vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-30T18:00:00Z | Le Havre vs Paris Saint-Germain (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-30T19:30:00Z | SV Elversberg vs Mainz 05 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-30T20:05:00Z | Lille vs Lens (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 44 | 0 |
@@ -73,8 +73,8 @@ model board generated 2026-10-29T00:17:56.530735Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 524
-action_NO_QUOTE: 725
+action_NO_EDGE: 526
+action_NO_QUOTE: 723
 action_RESEARCH_CANDIDATE: 65
 contract_sides: 1314
 fixtures: 12
