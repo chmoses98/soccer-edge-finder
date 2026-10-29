@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261029T215813Z-297f7f` · generated 2026-10-29T21:58:13.301618Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261029T220443Z-2c2d18` · generated 2026-10-29T22:04:43.622115Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-29T21:55:12.039339Z (CURRENT at publish; CURRENT until 2026-10-29T22:15:12.039339Z, STALE after 2026-10-29T22:25:12.039339Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-29T22:01:45.499752Z (CURRENT at publish; CURRENT until 2026-10-29T22:21:45.499752Z, STALE after 2026-10-29T22:31:45.499752Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-29T21:58:11.226047Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.68s
+model board generated 2026-10-29T22:04:41.402395Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.67s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-29T21:58:11.226047Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-29T22:30:00Z | Atlético Mineiro vs Cruzeiro (bra.serie_a) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
+| 2026-10-29T22:30:00Z | Atlético Mineiro vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
 | 2026-10-29T23:00:00Z | Vasco da Gama vs Flamengo (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
 | 2026-10-30T00:30:00Z | Grêmio vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-30T18:00:00Z | Le Havre vs Paris Saint-Germain (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -53,7 +53,7 @@ model board generated 2026-10-29T21:58:11.226047Z · simulations this update: 1 
 | 2026-10-31T21:00:00Z | LA Galaxy vs Austin FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 62 | 0 |
 | 2026-10-31T21:00:00Z | San Jose Earthquakes vs Real Salt Lake (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 62 | 0 |
 
-## Candidates on CURRENT prices (76; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (81; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -94,20 +94,19 @@ model board generated 2026-10-29T21:58:11.226047Z · simulations this update: 1 
 | Columbus Crew vs D.C. United | Total goals over 2.5 | no | 0.3200 | 0.462 [0.306, 0.620] | +0.126 | +0.018 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | Charlotte FC vs Orlando City | Result: away | no | 0.7300 | 0.824 [0.716, 0.923] | +0.080 | +0.017 | 0.74 | - | * | RESEARCH_CANDIDATE |
 | Charlotte FC vs Orlando City | away team total over 1.5 | no | 0.5100 | 0.636 [0.494, 0.770] | +0.109 | +0.016 | 0.52 | - | * | RESEARCH_CANDIDATE |
+| Atlético Mineiro vs Cruzeiro | Result: away | no | 0.6000 | 0.710 [0.579, 0.837] | +0.093 | +0.016 | 0.61 | 0.620 | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | Total goals over 5.5 | no | 0.8900 | 0.939 [0.881, 0.983] | +0.043 | +0.016 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs D.C. United | btts | no | 0.4300 | 0.539 [0.417, 0.655] | +0.092 | +0.015 | 0.44 | - | * | RESEARCH_CANDIDATE |
-| Puebla vs Pumas UNAM | away team total over 0.5 | no | 0.2100 | 0.313 [0.198, 0.428] | +0.091 | +0.014 | 0.22 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_MODEL_INVALIDATED: 28
-action_NO_EDGE: 1493
+action_NO_EDGE: 1516
 action_NO_QUOTE: 285
-action_RESEARCH_CANDIDATE: 76
+action_RESEARCH_CANDIDATE: 81
 contract_sides: 1882
 fixtures: 40
-fixtures_model_invalidated: 1
+fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
