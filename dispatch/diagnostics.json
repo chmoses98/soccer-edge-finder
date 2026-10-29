@@ -54,444 +54,208 @@
   "delivered_total": 2617,
   "delivery_rate_total": 0.9005505849965588,
   "fixtures_tracked": 590,
-  "generated_at": "2026-10-29T05:32:35Z",
+  "generated_at": "2026-10-29T11:18:49Z",
   "last_tick": {
-    "batches": 12,
+    "batches": 0,
     "summary": [
       {
         "actions": [
           "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:2",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=2264:sim=0"
-        ],
-        "batch_id": "kd-20261029T000338Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:usa.mls:2026:usa.nashville:usa.philadelphia_union",
-            30,
-            26.36
-          ],
-          [
-            "fx:usa.mls:2026:usa.minnesota_united:usa.sporting_kc",
-            30,
-            26.36
-          ],
-          [
-            "fx:usa.mls:2026:usa.fc_dallas:usa.columbus_crew",
-            30,
-            26.36
-          ],
-          [
-            "fx:usa.mls:2026:usa.chicago_fire:usa.orlando_city",
-            30,
-            26.36
-          ],
-          [
-            "fx:usa.mls:2026:usa.austin:usa.real_salt_lake",
-            30,
-            26.36
-          ],
-          [
-            "fx:usa.mls:2026:usa.st_louis_city:usa.portland_timbers",
-            30,
-            26.36
-          ],
-          [
-            "fx:bra.serie_a:2026:bra.remo:bra.botafogo",
-            30,
-            26.36
-          ],
-          [
-            "fx:bra.serie_a:2026:bra.bahia:bra.sao_paulo",
-            30,
-            26.36
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:ok:credits=6:paid=2:rows=56",
-          "lineups:ok:2",
-          "model_refresh:ok:fixtures=8:sim=8:cache=0:why=T-15:no_model_refresh_since_t60",
+          "model_refresh:ok:fixtures=12:sim=1:board=6:why=entered_lookahead_unmodelled",
           "slate_reprice:ok:via_model_refresh"
         ],
-        "batch_id": "kd-20261029T001500Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:usa.mls:2026:usa.nashville:usa.philadelphia_union",
-            15,
-            15.0
-          ],
-          [
-            "fx:usa.mls:2026:usa.minnesota_united:usa.sporting_kc",
-            15,
-            15.0
-          ],
-          [
-            "fx:usa.mls:2026:usa.fc_dallas:usa.columbus_crew",
-            15,
-            15.0
-          ],
-          [
-            "fx:usa.mls:2026:usa.chicago_fire:usa.orlando_city",
-            15,
-            15.0
-          ],
-          [
-            "fx:usa.mls:2026:usa.austin:usa.real_salt_lake",
-            15,
-            15.0
-          ],
-          [
-            "fx:usa.mls:2026:usa.st_louis_city:usa.portland_timbers",
-            15,
-            15.0
-          ],
-          [
-            "fx:bra.serie_a:2026:bra.remo:bra.botafogo",
-            15,
-            15.0
-          ],
-          [
-            "fx:bra.serie_a:2026:bra.bahia:bra.sao_paulo",
-            15,
-            15.0
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=2204:sim=0"
-        ],
-        "batch_id": "kd-20261029T002219Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:usa.mls:2026:usa.vancouver_whitecaps:usa.san_diego",
-            120,
-            127.67
-          ],
-          [
-            "fx:usa.mls:2026:usa.san_jose_earthquakes:usa.colorado_rapids",
-            120,
-            127.67
-          ],
-          [
-            "fx:usa.mls:2026:usa.seattle_sounders:usa.houston_dynamo",
-            120,
-            127.67
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:2",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=1314:sim=0"
-        ],
-        "batch_id": "kd-20261029T002845Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:usa.mls:2026:usa.nashville:usa.philadelphia_union",
-            5,
-            1.24
-          ],
-          [
-            "fx:usa.mls:2026:usa.minnesota_united:usa.sporting_kc",
-            5,
-            1.24
-          ],
-          [
-            "fx:usa.mls:2026:usa.fc_dallas:usa.columbus_crew",
-            5,
-            1.24
-          ],
-          [
-            "fx:usa.mls:2026:usa.chicago_fire:usa.orlando_city",
-            5,
-            1.24
-          ],
-          [
-            "fx:usa.mls:2026:usa.austin:usa.real_salt_lake",
-            5,
-            1.24
-          ],
-          [
-            "fx:usa.mls:2026:usa.st_louis_city:usa.portland_timbers",
-            5,
-            1.24
-          ],
-          [
-            "fx:bra.serie_a:2026:bra.remo:bra.botafogo",
-            5,
-            1.24
-          ],
-          [
-            "fx:bra.serie_a:2026:bra.bahia:bra.sao_paulo",
-            5,
-            1.24
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "model_refresh:ok:fixtures=12:sim=6:board=6:why=entered_lookahead_unmodelled",
-          "slate_reprice:ok:via_model_refresh"
-        ],
-        "batch_id": "ks-20261029T004348Z",
+        "batch_id": "ks-20261029T054953Z",
         "due": [],
         "slate_refresh": true
       },
       {
         "actions": [
           "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=758:sim=0"
+          "slate_reprice:ok:sides=502:sim=0"
         ],
-        "batch_id": "kd-20261029T005107Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:mex.liga_mx:2026:mex.america:mex.tijuana",
-            120,
-            128.87
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "model_refresh:ok:fixtures=2:sim=2:board=2:why=entered_lookahead_unmodelled",
-          "slate_reprice:ok:via_model_refresh"
-        ],
-        "batch_id": "ks-20261029T010608Z",
+        "batch_id": "ks-20261029T060453Z",
         "due": [],
         "slate_refresh": true
       },
       {
         "actions": [
           "kalshi_capture:ok",
-          "slate_reprice:ok:sides=874:sim=0"
+          "slate_reprice:ok:sides=502:sim=0"
         ],
-        "batch_id": "ks-20261029T012110Z",
+        "batch_id": "ks-20261029T062023Z",
         "due": [],
         "slate_refresh": true
       },
       {
         "actions": [
           "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:ok:credits=3:paid=1:rows=21",
-          "lineups:ok:1",
-          "model_refresh:ok:fixtures=3:sim=3:cache=0:why=T-60:primary_refresh",
-          "slate_reprice:ok:via_model_refresh"
+          "slate_reprice:ok:sides=502:sim=0"
         ],
-        "batch_id": "kd-20261029T012728Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:usa.mls:2026:usa.vancouver_whitecaps:usa.san_diego",
-            60,
-            62.52
-          ],
-          [
-            "fx:usa.mls:2026:usa.san_jose_earthquakes:usa.colorado_rapids",
-            60,
-            62.52
-          ],
-          [
-            "fx:usa.mls:2026:usa.seattle_sounders:usa.houston_dynamo",
-            60,
-            62.52
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=874:sim=0"
-        ],
-        "batch_id": "ks-20261029T014228Z",
+        "batch_id": "ks-20261029T063523Z",
         "due": [],
         "slate_refresh": true
       },
       {
         "actions": [
           "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:ok:credits=3:paid=1:rows=7",
-          "lineups:ok:2",
-          "model_refresh:ok:fixtures=1:sim=1:cache=0:why=T-60:primary_refresh",
-          "slate_reprice:ok:via_model_refresh"
+          "slate_reprice:ok:sides=502:sim=0"
         ],
-        "batch_id": "kd-20261029T015730Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:usa.mls:2026:usa.vancouver_whitecaps:usa.san_diego",
-            30,
-            32.49
-          ],
-          [
-            "fx:usa.mls:2026:usa.san_jose_earthquakes:usa.colorado_rapids",
-            30,
-            32.49
-          ],
-          [
-            "fx:usa.mls:2026:usa.seattle_sounders:usa.houston_dynamo",
-            30,
-            32.49
-          ],
-          [
-            "fx:mex.liga_mx:2026:mex.america:mex.tijuana",
-            60,
-            62.49
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=874:sim=0"
-        ],
-        "batch_id": "ks-20261029T021230Z",
+        "batch_id": "ks-20261029T065024Z",
         "due": [],
         "slate_refresh": true
       },
       {
         "actions": [
           "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:ok:credits=3:paid=1:rows=21",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=874:sim=0"
+          "slate_reprice:ok:sides=502:sim=0"
         ],
-        "batch_id": "kd-20261029T021915Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:usa.mls:2026:usa.vancouver_whitecaps:usa.san_diego",
-            15,
-            10.73
-          ],
-          [
-            "fx:usa.mls:2026:usa.san_jose_earthquakes:usa.colorado_rapids",
-            15,
-            10.73
-          ],
-          [
-            "fx:usa.mls:2026:usa.seattle_sounders:usa.houston_dynamo",
-            15,
-            10.73
-          ]
-        ]
+        "batch_id": "ks-20261029T070524Z",
+        "due": [],
+        "slate_refresh": true
       },
       {
         "actions": [
           "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=874:sim=0"
+          "slate_reprice:ok:sides=502:sim=0"
         ],
-        "batch_id": "kd-20261029T022549Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:usa.mls:2026:usa.vancouver_whitecaps:usa.san_diego",
-            5,
-            4.18
-          ],
-          [
-            "fx:usa.mls:2026:usa.san_jose_earthquakes:usa.colorado_rapids",
-            5,
-            4.18
-          ],
-          [
-            "fx:usa.mls:2026:usa.seattle_sounders:usa.houston_dynamo",
-            5,
-            4.18
-          ]
-        ]
+        "batch_id": "ks-20261029T072025Z",
+        "due": [],
+        "slate_refresh": true
       },
       {
         "actions": [
           "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=412:sim=0"
+          "slate_reprice:ok:sides=502:sim=0"
         ],
-        "batch_id": "kd-20261029T023205Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:mex.liga_mx:2026:mex.america:mex.tijuana",
-            30,
-            27.9
-          ]
-        ]
+        "batch_id": "ks-20261029T073526Z",
+        "due": [],
+        "slate_refresh": true
       },
       {
         "actions": [
           "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:ok:credits=3:paid=1:rows=7",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=412:sim=0"
+          "slate_reprice:ok:sides=502:sim=0"
         ],
-        "batch_id": "kd-20261029T024500Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:mex.liga_mx:2026:mex.america:mex.tijuana",
-            15,
-            15.0
-          ]
-        ]
+        "batch_id": "ks-20261029T075027Z",
+        "due": [],
+        "slate_refresh": true
       },
       {
         "actions": [
           "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=412:sim=0"
+          "slate_reprice:ok:sides=502:sim=0"
         ],
-        "batch_id": "kd-20261029T025501Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:mex.liga_mx:2026:mex.america:mex.tijuana",
-            5,
-            4.98
-          ]
-        ]
+        "batch_id": "ks-20261029T080527Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=502:sim=0"
+        ],
+        "batch_id": "ks-20261029T082029Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=502:sim=0"
+        ],
+        "batch_id": "ks-20261029T083529Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=502:sim=0"
+        ],
+        "batch_id": "ks-20261029T085030Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=502:sim=0"
+        ],
+        "batch_id": "ks-20261029T090530Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=502:sim=0"
+        ],
+        "batch_id": "ks-20261029T092031Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=502:sim=0"
+        ],
+        "batch_id": "ks-20261029T093531Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=502:sim=0"
+        ],
+        "batch_id": "ks-20261029T095032Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=502:sim=0"
+        ],
+        "batch_id": "ks-20261029T100532Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=502:sim=0"
+        ],
+        "batch_id": "ks-20261029T102032Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=502:sim=0"
+        ],
+        "batch_id": "ks-20261029T103532Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=502:sim=0"
+        ],
+        "batch_id": "ks-20261029T105034Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=502:sim=0"
+        ],
+        "batch_id": "ks-20261029T110534Z",
+        "due": [],
+        "slate_refresh": true
       }
     ]
   },
