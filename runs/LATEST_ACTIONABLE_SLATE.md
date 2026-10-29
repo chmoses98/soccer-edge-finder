@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261029T145931Z-7b24cd` · generated 2026-10-29T14:59:31.830108Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261029T151439Z-560822` · generated 2026-10-29T15:14:39.349402Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-29T14:56:49.261355Z (CURRENT at publish; CURRENT until 2026-10-29T15:16:49.261355Z, STALE after 2026-10-29T15:26:49.261355Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-29T15:11:49.278148Z (CURRENT at publish; CURRENT until 2026-10-29T15:31:49.278148Z, STALE after 2026-10-29T15:41:49.278148Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-29T14:48:09.367578Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.32s
+model board generated 2026-10-29T15:14:37.327565Z · simulations this update: 5 · Odds API calls this update: 0 (credits 0) · reprice 0.33s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -33,8 +33,13 @@ model board generated 2026-10-29T14:48:09.367578Z · simulations this update: 0 
 | 2026-10-31T14:30:00Z | Bayer Leverkusen vs VfB Stuttgart (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 59 | 0 |
 | 2026-10-31T14:30:00Z | Schalke 04 vs RB Leipzig (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 59 | 0 |
 | 2026-10-31T14:30:00Z | Werder Bremen vs TSG Hoffenheim (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 59 | 0 |
+| 2026-10-31T15:00:00Z | Bournemouth vs Leeds United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-31T15:00:00Z | Brentford vs Nottingham Forest (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-31T15:00:00Z | Coventry City vs Sunderland (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-31T15:00:00Z | Hull City vs Ipswich Town (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-31T15:00:00Z | Manchester City vs Brighton & Hove Albion (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (16; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (18; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -45,12 +50,14 @@ model board generated 2026-10-29T14:48:09.367578Z · simulations this update: 0 
 | Werder Bremen vs TSG Hoffenheim | Result: away | no | 0.5800 | 0.737 [0.587, 0.883] | +0.140 | +0.045 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | FC Augsburg vs SC Freiburg | Result: home | yes | 0.3100 | 0.485 [0.306, 0.668] | +0.160 | +0.036 | 0.34 | - |  | RESEARCH_CANDIDATE |
 | Werder Bremen vs TSG Hoffenheim | Result: home | yes | 0.3400 | 0.517 [0.337, 0.722] | +0.161 | +0.035 | 0.37 | - |  | RESEARCH_CANDIDATE |
+| Hull City vs Ipswich Town | Result: away | no | 0.6500 | 0.805 [0.623, 0.948] | +0.139 | +0.035 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | SV Elversberg vs Mainz 05 | Result: away | no | 0.5600 | 0.732 [0.522, 0.910] | +0.155 | +0.033 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | SV Elversberg vs Mainz 05 | Result: home | yes | 0.3100 | 0.518 [0.274, 0.770] | +0.193 | +0.025 | 0.33 | - |  | RESEARCH_CANDIDATE |
+| Hull City vs Ipswich Town | Result: home | yes | 0.3700 | 0.581 [0.325, 0.838] | +0.195 | +0.025 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | Schalke 04 vs RB Leipzig | Result: away | no | 0.4800 | 0.662 [0.430, 0.867] | +0.165 | +0.024 | 0.5 | - | * | RESEARCH_CANDIDATE |
-| Puebla vs Pumas UNAM | away team total over 0.5 | no | 0.2100 | 0.313 [0.198, 0.428] | +0.091 | +0.014 | 0.22 | - | * | RESEARCH_CANDIDATE |
 | Atlético San Luis vs Atlas | Result: home | yes | 0.3600 | 0.489 [0.339, 0.656] | +0.113 | +0.011 | 0.37 | - | * | RESEARCH_CANDIDATE |
-| Puebla vs Pumas UNAM | away team total over 1.5 | no | 0.5500 | 0.663 [0.518, 0.791] | +0.096 | +0.009 | 0.55 | - |  | RESEARCH_CANDIDATE |
+| Puebla vs Pumas UNAM | away team total over 1.5 | no | 0.5500 | 0.663 [0.518, 0.791] | +0.096 | +0.009 | 0.55 | - | * | RESEARCH_CANDIDATE |
+| Puebla vs Pumas UNAM | away team total over 0.5 | no | 0.2200 | 0.313 [0.198, 0.428] | +0.081 | +0.004 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Schalke 04 vs RB Leipzig | Result: home | yes | 0.2300 | 0.406 [0.182, 0.664] | +0.164 | +0.002 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Pumas UNAM | away team total over 2.5 | no | 0.8100 | 0.872 [0.778, 0.945] | +0.051 | +0.002 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | FC Juárez vs Querétaro | btts | no | 0.4400 | 0.533 [0.411, 0.651] | +0.076 | +0.001 | 0.44 | - | * | RESEARCH_CANDIDATE |
@@ -58,11 +65,11 @@ model board generated 2026-10-29T14:48:09.367578Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 557
+action_NO_EDGE: 585
 action_NO_QUOTE: 1689
-action_RESEARCH_CANDIDATE: 16
-contract_sides: 2262
-fixtures: 21
+action_RESEARCH_CANDIDATE: 18
+contract_sides: 2292
+fixtures: 26
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
