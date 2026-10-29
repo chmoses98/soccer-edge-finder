@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261029T195755Z-8bfeeb` · generated 2026-10-29T19:57:55.089431Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261029T200017Z-0c95c6` · generated 2026-10-29T20:00:17.149026Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-29T19:55:00.069960Z (CURRENT at publish; CURRENT until 2026-10-29T20:15:00.069960Z, STALE after 2026-10-29T20:25:00.069960Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-29T19:57:16.669705Z (CURRENT at publish; CURRENT until 2026-10-29T20:17:16.669705Z, STALE after 2026-10-29T20:27:16.669705Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-29T19:57:53.652624Z · simulations this update: 2 · Odds API calls this update: 0 (credits 0) · reprice 0.58s
+model board generated 2026-10-29T19:13:29.482650Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.90s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -47,10 +47,8 @@ model board generated 2026-10-29T19:57:53.652624Z · simulations this update: 2 
 | 2026-10-31T19:00:00Z | Coritiba vs Vitória (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 11 | 0 |
 | 2026-10-31T19:00:00Z | Sporting Kansas City vs FC Dallas (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-31T19:00:00Z | St. Louis City SC vs San Diego FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
-| 2026-10-31T19:45:00Z | Troyes vs Le Mans (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-31T19:45:00Z | AC Milan vs Inter Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (50; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (49; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -88,21 +86,21 @@ model board generated 2026-10-29T19:57:53.652624Z · simulations this update: 2 
 | Atlético San Luis vs Atlas | Result: home | yes | 0.3600 | 0.489 [0.339, 0.656] | +0.113 | +0.011 | 0.37 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | First half: both teams to score | no | 0.8100 | 0.871 [0.799, 0.931] | +0.051 | +0.009 | 0.81 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Pumas UNAM | away team total over 1.5 | no | 0.5500 | 0.663 [0.518, 0.791] | +0.096 | +0.009 | 0.55 | - | * | RESEARCH_CANDIDATE |
-| St. Louis City SC vs San Diego FC | away team total over 1.5 | no | 0.5900 | 0.695 [0.569, 0.819] | +0.088 | +0.008 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | Total goals over 5.5 | no | 0.9100 | 0.947 [0.893, 0.986] | +0.031 | +0.008 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Orlando City | Result: home | yes | 0.5200 | 0.647 [0.485, 0.805] | +0.109 | +0.007 | 0.52 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs D.C. United | Total goals over 3.5 | no | 0.5500 | 0.674 [0.519, 0.817] | +0.107 | +0.006 | 0.55 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Orlando City | away wins by more than 1.5 | no | 0.8800 | 0.925 [0.865, 0.975] | +0.038 | +0.006 | 0.88 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Pumas UNAM | away team total over 0.5 | no | 0.2200 | 0.313 [0.198, 0.428] | +0.081 | +0.004 | 0.22 | - |  | RESEARCH_CANDIDATE |
+| New York City FC vs CF Montréal | First-half total goals over 0.5 | no | 0.2500 | 0.339 [0.228, 0.452] | +0.075 | +0.003 | 0.25 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1318
+action_NO_EDGE: 1307
 action_NO_QUOTE: 320
-action_RESEARCH_CANDIDATE: 50
-contract_sides: 1688
-fixtures: 37
+action_RESEARCH_CANDIDATE: 49
+contract_sides: 1676
+fixtures: 35
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
