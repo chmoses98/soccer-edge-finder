@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261029T025749Z-90bc09` · generated 2026-10-29T02:57:49.245929Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
+slate `slate-20261029T055251Z-a86512` · generated 2026-10-29T05:52:51.801468Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-29T02:55:01.106809Z (CURRENT at publish; CURRENT until 2026-10-29T03:15:01.106809Z, STALE after 2026-10-29T03:25:01.106809Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-29T05:49:53.430888Z (CURRENT at publish; CURRENT until 2026-10-29T06:09:53.430888Z, STALE after 2026-10-29T06:19:53.430888Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-29T02:00:25.528075Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.17s
+model board generated 2026-10-29T05:52:40.271893Z · simulations this update: 6 · Odds API calls this update: 0 (credits 0) · reprice 0.25s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,6 @@ model board generated 2026-10-29T02:00:25.528075Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-29T03:00:00Z | Club América vs Tijuana (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT close | CURRENT | 32 | 0 |
 | 2026-10-29T17:30:00Z | Frosinone vs Lecce (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-29T19:45:00Z | Fiorentina vs Atalanta (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-29T22:30:00Z | Atlético Mineiro vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -24,8 +23,9 @@ model board generated 2026-10-29T02:00:25.528075Z · simulations this update: 0 
 | 2026-10-30T23:00:00Z | Corinthians vs Mirassol (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-10-31T01:00:00Z | FC Juárez vs Querétaro (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-31T01:00:00Z | Atlético San Luis vs Atlas (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-31T03:00:00Z | Puebla vs Pumas UNAM (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (9; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (10; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -37,20 +37,19 @@ model board generated 2026-10-29T02:00:25.528075Z · simulations this update: 0 
 | Corinthians vs Mirassol | Result: away | yes | 0.1900 | 0.290 [0.171, 0.416] | +0.089 | +0.012 | 0.2 | - | * | RESEARCH_CANDIDATE |
 | FC Juárez vs Querétaro | btts | no | 0.4300 | 0.533 [0.411, 0.651] | +0.086 | +0.011 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Atlético San Luis vs Atlas | Result: home | yes | 0.3600 | 0.489 [0.339, 0.656] | +0.113 | +0.011 | 0.37 | - | * | RESEARCH_CANDIDATE |
-| Corinthians vs Mirassol | Result: home | no | 0.4500 | 0.569 [0.418, 0.710] | +0.101 | +0.009 | 0.45 | - |  | RESEARCH_CANDIDATE |
+| FC Juárez vs Querétaro | Total goals over 2.5 | no | 0.4600 | 0.577 [0.421, 0.730] | +0.100 | +0.006 | 0.46 | - | * | RESEARCH_CANDIDATE |
+| Corinthians vs Mirassol | away wins by more than 1.5 | yes | 0.0600 | 0.118 [0.054, 0.196] | +0.054 | +0.005 | 0.06 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 313
-action_NO_QUOTE: 90
-action_RESEARCH_CANDIDATE: 9
-contract_sides: 412
+action_NO_EDGE: 378
+action_NO_QUOTE: 114
+action_RESEARCH_CANDIDATE: 10
+contract_sides: 502
 fixtures: 12
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
-
-Removed (kicked off): 3
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
