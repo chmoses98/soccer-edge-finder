@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261029T204257Z-4188a3` · generated 2026-10-29T20:42:57.337641Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261029T205801Z-f619f2` · generated 2026-10-29T20:58:01.658204Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-29T20:40:06.290529Z (CURRENT at publish; CURRENT until 2026-10-29T21:00:06.290529Z, STALE after 2026-10-29T21:10:06.290529Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-29T20:55:06.668798Z (CURRENT at publish; CURRENT until 2026-10-29T21:15:06.668798Z, STALE after 2026-10-29T21:25:06.668798Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-29T20:12:58.288592Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.59s
+model board generated 2026-10-29T20:12:58.288592Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.64s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -62,17 +62,17 @@ model board generated 2026-10-29T20:12:58.288592Z · simulations this update: 0 
 | New York City FC vs CF Montréal | away team total over 0.5 | no | 0.4100 | 0.558 [0.452, 0.668] | +0.131 | +0.059 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs San Diego FC | Result: away | no | 0.7300 | 0.854 [0.758, 0.935] | +0.110 | +0.057 | 0.78 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs San Diego FC | Result: home | yes | 0.5300 | 0.683 [0.537, 0.823] | +0.135 | +0.045 | 0.57 | - |  | RESEARCH_CANDIDATE |
-| Werder Bremen vs TSG Hoffenheim | Result: away | no | 0.5800 | 0.737 [0.587, 0.883] | +0.140 | +0.045 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | away team total over 1.5 | no | 0.7800 | 0.877 [0.811, 0.938] | +0.085 | +0.045 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | Total goals over 2.5 | no | 0.3800 | 0.543 [0.377, 0.695] | +0.147 | +0.044 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | Total goals over 3.5 | no | 0.6100 | 0.747 [0.600, 0.869] | +0.120 | +0.038 | 0.64 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs San Diego FC | home wins by more than 1.5 | yes | 0.3200 | 0.481 [0.316, 0.656] | +0.146 | +0.037 | 0.35 | - | * | RESEARCH_CANDIDATE |
 | FC Augsburg vs SC Freiburg | Result: away | no | 0.5700 | 0.714 [0.557, 0.857] | +0.127 | +0.036 | 0.6 | - | * | RESEARCH_CANDIDATE |
-| Werder Bremen vs TSG Hoffenheim | Result: home | yes | 0.3400 | 0.517 [0.337, 0.722] | +0.161 | +0.035 | 0.37 | - |  | RESEARCH_CANDIDATE |
-| Hull City vs Ipswich Town | Result: away | no | 0.6500 | 0.805 [0.623, 0.948] | +0.139 | +0.035 | 0.68 | - | * | RESEARCH_CANDIDATE |
+| Werder Bremen vs TSG Hoffenheim | Result: home | yes | 0.3400 | 0.517 [0.337, 0.722] | +0.161 | +0.035 | 0.37 | - | * | RESEARCH_CANDIDATE |
+| Werder Bremen vs TSG Hoffenheim | Result: away | no | 0.5900 | 0.737 [0.587, 0.883] | +0.130 | +0.035 | 0.62 | - |  | RESEARCH_CANDIDATE |
 | SV Elversberg vs Mainz 05 | Result: away | no | 0.5600 | 0.732 [0.522, 0.910] | +0.155 | +0.033 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | Total goals over 4.5 | no | 0.7900 | 0.877 [0.778, 0.953] | +0.076 | +0.026 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | FC Augsburg vs SC Freiburg | Result: home | yes | 0.3200 | 0.485 [0.306, 0.668] | +0.149 | +0.026 | 0.34 | - |  | RESEARCH_CANDIDATE |
+| Hull City vs Ipswich Town | Result: away | no | 0.6600 | 0.805 [0.623, 0.948] | +0.129 | +0.025 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | SV Elversberg vs Mainz 05 | Result: home | yes | 0.3100 | 0.518 [0.274, 0.770] | +0.193 | +0.025 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | Hull City vs Ipswich Town | Result: home | yes | 0.3700 | 0.581 [0.325, 0.838] | +0.195 | +0.025 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | Schalke 04 vs RB Leipzig | Result: away | no | 0.4800 | 0.662 [0.430, 0.867] | +0.165 | +0.024 | 0.5 | - | * | RESEARCH_CANDIDATE |
@@ -99,15 +99,13 @@ model board generated 2026-10-29T20:12:58.288592Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1323
-action_NO_QUOTE: 316
+action_NO_EDGE: 1324
+action_NO_QUOTE: 315
 action_RESEARCH_CANDIDATE: 55
 contract_sides: 1694
 fixtures: 38
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
-
-Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
