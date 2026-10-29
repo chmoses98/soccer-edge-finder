@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-28T22:52:55.513141+00:00",
-  "events": 714,
-  "events_skipped_unmapped": 407,
-  "fixtures_mapped": 307,
+  "as_of": "2026-10-29T06:03:45.020060+00:00",
+  "events": 655,
+  "events_skipped_unmapped": 376,
+  "fixtures_mapped": 279,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=46"
+      "weather_stopped:consecutive_failures:skipped=60"
     ],
     "state": "DEGRADED"
   },
@@ -81,15 +81,30 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 61,
-    "events": 72,
+    "captured": 1,
+    "events": 44,
     "failures": [],
-    "published_post": 8,
-    "published_pre_kickoff": 7,
-    "unchanged": 11,
-    "unpublished": 57
+    "published_post": 0,
+    "published_pre_kickoff": 0,
+    "unchanged": 43,
+    "unpublished": 44
   },
   "map_proposals": {
+    "bel.1": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "936": "Sint-Truidense"
+      }
+    },
+    "den.1": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "7853": "AGF",
+        "909": "F.C. K\u00f8benhavn"
+      }
+    },
     "eng.3": {
       "ambiguous": {},
       "proposed": {},
@@ -120,6 +135,7 @@
         "3747": "esp.granada",
         "3842": "esp.cadiz",
         "6832": "esp.almeria",
+        "84": "esp.mallorca",
         "92": "esp.real_oviedo",
         "95": "esp.valladolid",
         "98": "esp.las_palmas",
@@ -145,6 +161,7 @@
         "3747": "esp.granada",
         "3842": "esp.cadiz",
         "6832": "esp.almeria",
+        "84": "esp.mallorca",
         "92": "esp.real_oviedo",
         "95": "esp.valladolid",
         "98": "esp.las_palmas",
@@ -167,6 +184,7 @@
         "133832": "Atl\u00e9tico Pinatarense",
         "133834": "Ciudad De Lucena",
         "133835": "CD Pamplona",
+        "133837": "CD Tarancon",
         "133839": "CF Calamocha",
         "133842": "Ribadesella",
         "133843": "Sporting de Alc\u00e1zar",
@@ -219,6 +237,7 @@
         "5464": "Portugalete",
         "5535": "Badajoz",
         "6825": "Gimnastica Segoviana",
+        "6827": "Alcoyano",
         "6856": "Sestao",
         "6858": "Guijuelo",
         "7041": "Pe\u00f1a Sport",
@@ -277,7 +296,16 @@
       "ambiguous": {},
       "proposed": {},
       "unresolved": {
-        "510": "Viking FK"
+        "510": "Viking FK",
+        "620": "SK Brann",
+        "987": "Lillestrom"
+      }
+    },
+    "swe.1": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "20301": "Mj\u00e4llby AIF"
       }
     },
     "uefa.champions": {
@@ -287,10 +315,42 @@
         "21922": "Sabah FK",
         "510": "Viking FK"
       }
+    },
+    "uefa.europa": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "1010": "OFI Crete",
+        "13083": "Hapoel Be'er",
+        "20024": "Ararat-Armenia",
+        "21615": "Torreense",
+        "490": "Levski Sofia",
+        "987": "Lillestrom"
+      }
+    },
+    "uefa.europa.conf": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "19246": "Riga FC",
+        "20025": "Iberia 1999",
+        "20028": "Kauno Zalgiris",
+        "20301": "Mj\u00e4llby AIF",
+        "20703": "Inter D'Escaldes",
+        "21943": "Egnatia",
+        "3024": "FC Thun",
+        "489": "Hajduk Split",
+        "620": "SK Brann",
+        "7853": "AGF",
+        "8089": "CSU Craiova",
+        "8169": "KuPS Kuopio",
+        "909": "F.C. K\u00f8benhavn",
+        "936": "Sint-Truidense"
+      }
     }
   },
   "map_version": "4",
-  "results_appended": 17,
+  "results_appended": 20,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -320,6 +380,7 @@
   ],
   "unmapped_team_ids": {
     "100": "Numancia",
+    "1010": "OFI Crete",
     "10382": "1. FC Magdeburg",
     "10629": "Cultural Leonesa",
     "11487": "CD Sabadell",
@@ -329,6 +390,7 @@
     "12597": "Burgos",
     "129": "Hertha Berlin",
     "130": "Kaiserslautern",
+    "13083": "Hapoel Be'er",
     "131403": "Atl\u00e9tico Calatayud",
     "131463": "Alcal\u00e1",
     "131465": "Atl\u00e9tico Tordesillas",
@@ -339,6 +401,7 @@
     "133832": "Atl\u00e9tico Pinatarense",
     "133834": "Ciudad De Lucena",
     "133835": "CD Pamplona",
+    "133837": "CD Tarancon",
     "133839": "CF Calamocha",
     "133842": "Ribadesella",
     "133843": "Sporting de Alc\u00e1zar",
@@ -354,19 +417,27 @@
     "18334": "AE Prat",
     "18342": "San Sebasti\u00e1n de los Reyes",
     "19233": "SSV Jeddeloh II",
+    "19246": "Riga FC",
     "19294": "Unionistas de Salamanca",
+    "20024": "Ararat-Armenia",
+    "20025": "Iberia 1999",
+    "20028": "Kauno Zalgiris",
     "20179": "FC Andorra",
+    "20301": "Mj\u00e4llby AIF",
+    "20703": "Inter D'Escaldes",
     "20776": "Anaitasuna",
     "20821": "Coria",
     "20824": "Llanera",
     "21290": "CE Europa",
     "21291": "Calvo Sotelo",
     "21299": "Aguilas",
+    "21615": "Torreense",
     "21713": "Manacor",
     "21717": "Atl\u00e9tico Paso",
     "21722": "Manresa",
     "21723": "Utebo",
     "21922": "Sabah FK",
+    "21943": "Egnatia",
     "22043": "Mijas Las Lagunas",
     "22080": "Arosa",
     "22084": "Covadonga",
@@ -379,6 +450,7 @@
     "2571": "Recreativo Huelva",
     "269": "1. FC N\u00fcrnberg",
     "2737": "Albacete",
+    "3024": "FC Thun",
     "342": "Peterborough United",
     "3747": "Granada",
     "3748": "Pontevedra",
@@ -393,6 +465,8 @@
     "4471": "Karlsruher SC",
     "4475": "Conquense",
     "4515": "Mirand\u00e9s",
+    "489": "Hajduk Split",
+    "490": "Levski Sofia",
     "510": "Viking FK",
     "5401": "Real Jaen CF",
     "5404": "Ceuta",
@@ -403,8 +477,10 @@
     "5463": "Ponferradina",
     "5464": "Portugalete",
     "5535": "Badajoz",
+    "620": "SK Brann",
     "6631": "SG Sonnenhof Gro\u00dfaspch",
     "6825": "Gimnastica Segoviana",
+    "6827": "Alcoyano",
     "6832": "Almer\u00eda",
     "6856": "Sestao",
     "6858": "Guijuelo",
@@ -412,33 +488,40 @@
     "7041": "Pe\u00f1a Sport",
     "7206": "UD Logro\u00f1\u00e9s",
     "7320": "Eldense",
+    "7853": "AGF",
     "7884": "Holstein Kiel",
+    "8089": "CSU Craiova",
+    "8169": "KuPS Kuopio",
+    "84": "Mallorca",
     "8447": "C\u00f3rdoba",
     "8678": "Real Uni\u00f3n Irun",
     "8961": "Coruxo",
     "9028": "Rayo Majadahonda",
+    "909": "F.C. K\u00f8benhavn",
     "91": "Real Zaragoza",
     "9141": "Don Benito",
     "92": "Real Oviedo",
+    "936": "Sint-Truidense",
     "9414": "Poblense",
     "9449": "Antequera CF",
     "95": "Real Valladolid",
     "9705": "Rot-Weiss Essen",
     "98": "Las Palmas",
-    "9812": "Girona"
+    "9812": "Girona",
+    "987": "Lillestrom"
   },
   "weather": {
     "captured": 10,
-    "events": 59,
+    "events": 73,
     "failures": [
-      "401878956: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Waregem&count=5&language=en&for",
-      "401878958: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Mechelen&count=5&language=en&fo",
-      "401878953: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=50.6337&longitude=5.5675&hourly=tem"
+      "401892147: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Sydney&count=5&language=en&form",
+      "401892146: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-37.8140&longitude=144.9633&hourly=",
+      "401878956: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Waregem&count=5&language=en&for"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 46,
+    "skipped": 60,
     "stopped": "consecutive_failures"
   }
 }
