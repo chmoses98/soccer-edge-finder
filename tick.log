@@ -1,0 +1,241 @@
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261029T000622Z",
+  "complete": true,
+  "discovered": 6161,
+  "written": 3279,
+  "path": "work/snapshots/2026-10-29/cap-20261029T000622Z.jsonl"
+}
+{
+  "reference_probabilities": 50,
+  "observed_at": "2026-10-29 00:06:31.123932+00:00",
+  "groups": 80,
+  "unmapped_fixture_groups": 30,
+  "incomplete_groups": 0,
+  "snapshots": 180,
+  "provider_notes": [
+    "46 rows, 30 skipped (unmapped division/team)",
+    "skipped_by_division={'E2': 5, 'E3': 1, 'EC': 12, 'I2': 10, 'SC1': 1, 'SC2': 1}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-29T00:06:31.977591Z", "batch_id": "kd-20261029T000338Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-10-29T00:06:31.998739+00:00",
+ "leagues": [
+  "bra.1",
+  "usa.1"
+ ],
+ "events": 3,
+ "fixtures_mapped": 3,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 2,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 3,
+  "captured": 0,
+  "unchanged": 3,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 3,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 3,
+  "captured": 3,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261029T000635Z-674146", "mode": "reprice_only", "fixtures": 20, "contract_sides": 2264, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.821, "price_changes_vs_previous": 435}
+[dispatch] holding 4.9 min (next window opens in 2.9 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261029T001744Z",
+  "complete": true,
+  "discovered": 6196,
+  "written": 1582,
+  "path": "work/snapshots/2026-10-29/cap-20261029T001744Z.jsonl"
+}
+{
+  "reference_probabilities": 50,
+  "observed_at": "2026-10-29 00:06:31.123932+00:00",
+  "groups": 80,
+  "unmapped_fixture_groups": 30,
+  "incomplete_groups": 0,
+  "snapshots": 180,
+  "provider_notes": [
+    "46 rows, 30 skipped (unmapped division/team)",
+    "skipped_by_division={'E2': 5, 'E3': 1, 'EC': 12, 'I2': 10, 'SC1': 1, 'SC2': 1}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-29T00:17:48.003132Z", "batch_id": "kd-20261029T001500Z", "credits_charged": 6, "paid_calls": 2, "snapshots": 56, "no_sport_key": [], "eligible_fixtures": 8, "per_sport": {"soccer_usa_mls": {"fixtures": 6, "join": {"events": 14, "joined": 6, "ambiguous": 0, "unresolved_names": [], "unjoined_fixtures": []}, "status": "OK", "credits": 3, "snapshots": 42, "incomplete_markets": 0, "close_fixtures": 6, "entry_fixtures": 0}, "soccer_brazil_campeonato": {"fixtures": 2, "join": {"events": 5, "joined": 2, "ambiguous": 0, "unresolved_names": ["Bragantino-SP"], "unjoined_fixtures": []}, "status": "OK", "credits": 3, "snapshots": 14, "incomplete_markets": 0, "close_fixtures": 2, "entry_fixtures": 0}}, "remaining_after": 17076, "status": "OK"}
+{
+ "as_of": "2026-10-29T00:17:51.855781+00:00",
+ "leagues": [
+  "bra.1",
+  "usa.1"
+ ],
+ "events": 3,
+ "fixtures_mapped": 3,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 2,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 3,
+  "captured": 0,
+  "unchanged": 3,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 3,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 3,
+  "captured": 3,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 0 | proposals: {}
+[data] historical: 3506 matches from club_football_match_data; flags=['ok']
+[data] eng.premier_league 2026-27: 380 fixtures, 45 results (25 new vs historical)
+[data] esp.la_liga 2026-27: 380 fixtures, 64 results (36 new vs historical)
+[data] ger.bundesliga 2026-27: 306 fixtures, 33 results (25 new vs historical)
+[data] ita.serie_a 2026-27: 380 fixtures, 50 results (30 new vs historical)
+[data] fra.ligue_1 2026-27: 306 fixtures, 41 results (24 new vs historical)
+[data] usa.mls: espn 30 fixtures, 1235 pooled results (usa.1)
+[data] mex.liga_mx: espn 14 fixtures, 728 pooled results (mex.1)
+[data] bra.serie_a: espn 19 fixtures, 698 pooled results (bra.1)
+[data] arg.primera: espn 23 fixtures, 1197 pooled results (arg.1)
+[data] uefa.nations_league: espn 0 fixtures, 1142 pooled results (uefa.nations,fifa.friendly,fifa.worldq.uefa,fifa.worldq.conmebol,fifa.worldq.concacaf,fifa.worldq.afc,fifa.worldq.caf,uefa.euroq,concacaf.nations.league)
+[data] fifa.friendly: espn 0 fixtures, 1142 pooled results (uefa.nations,fifa.friendly,fifa.worldq.uefa,fifa.worldq.conmebol,fifa.worldq.concacaf,fifa.worldq.afc,fifa.worldq.caf,uefa.euroq,concacaf.nations.league)
+[data] concacaf.nations_league: espn 0 fixtures, 1142 pooled results (uefa.nations,fifa.friendly,fifa.worldq.uefa,fifa.worldq.conmebol,fifa.worldq.concacaf,fifa.worldq.afc,fifa.worldq.caf,uefa.euroq,concacaf.nations.league)
+[data] fifa.world_cup_qualifiers: espn 0 fixtures, 1142 pooled results (uefa.nations,fifa.friendly,fifa.worldq.uefa,fifa.worldq.conmebol,fifa.worldq.concacaf,fifa.worldq.afc,fifa.worldq.caf,uefa.euroq,concacaf.nations.league)
+[data] uefa.euro_qualifiers: espn 0 fixtures, 1142 pooled results (uefa.nations,fifa.friendly,fifa.worldq.uefa,fifa.worldq.conmebol,fifa.worldq.concacaf,fifa.worldq.afc,fifa.worldq.caf,uefa.euroq,concacaf.nations.league)
+[kalshi] fast mode: sweeping 253 series with markets at the last full discovery
+[kalshi] fast reconciliation: {"complete_relative_to_full": true, "evidence_level": "series"}
+[kalshi] {"run_id": "disc-20261029T001500Z-6e1dd2", "complete": true, "series_total": 15462, "series_by_ownership": {"not_soccer": 13894, "soccer": 1436, "ambiguous": 132}, "series_swept": 305, "series_ambiguous_unswept": 131, "series_skipped_fast_mode": 1132, "series_ambiguous_unswept_tickers": ["KX1HOMEGAME", "KX1STHOMEGAME", "KXACQUIREMANU", "KXAFCA", "KXAFCAC1H", "KXAFCAC1HBTTS", "KXAFCAC1HSPREAD", "KXAFCAC1HTOTAL", "KXAFCACADVANCE", "KXAFCACBTTS", "KXAFCACFTTS", "KXAFCACGAME", "KXAFCACMOV", "KXAFCACSCORE", "KXAFCACSPREAD", "KXAFCACTEAMTOTAL", "KXAFCACTOTAL", "KXAFCCL1H", "KXAFCCL1HBTTS", "KXAFCCL1HSPREAD", "KXAFCCL1HTOTAL", "KXAFCCLADVANCE", "KXAFCCLBTTS", "KXAFCCLFTTS", "KXAFCCLGAME", "KXAFCCLMOF", "KXAFCCLMOV", "KXAFCCLSCORE", "KXAFCCLSPREAD", "KXAFCCLTEAMTOTAL", "KXAFCCLTOTAL", "KXAFCON", "KXAFCON1H", "KXAFCON1HBTTS", "KXAFCON1HSPREAD", "KXAFCON1HTOTAL", "KXAFCONADVANCE", "KXAFCONBTTS", "KXAFCONFTTS", "KXAFCONGAME", "KXAFCONMOV", "KXAFCONSCORE", "KXAFCONSPREAD", "KXAFCONTEAMTOTAL", "KXAFCONTOTAL", "KXAFLGAME", "KXALEAGUE1H", "KXALEAGUE1HBTTS", "KXALEAGUE1HSPREAD", "KXALEAGUE1HTOTAL", "KXALEAGUEADVANCE", "KXALEAGUEBTTS", "KXALEAGUEGAME", "KXALEAGUESPREAD", "KXALEAGUETEAMTOTAL", "KXALEAGUETOTAL", "KXALLSVENSKANADVANCE", "KXALLSVENSKANBTTS", "KXALLSVENSKANGAME", "KXALLSVENSKANSPREAD", "KXALLSVENSKANTOTAL", "KXALMVP", "KXAPFDDHADVANCE", "KXARCHIVETEST", "KXARGNACBADVANCE", "KXARGPREMDIVADVANCE", "KXARGPREMDIVBTTS", "KXARGPREMDIVGAME", "KXARGPREMDIVSPREAD", "KXARGPREMDIVTOTAL", "KXARKCOACH", "KXARODGRETIRE", "KXARSENALCUPS", "KXASEANADVANCE", "KXASEANBTTS", "KXASEANGAME", "KXASEANSPREAD", "KXASEANTOTAL", "KXATLCOACH", "KXAUBCOACH", "KXBABYNAMEBOY", "KXBABYNAMEGIRL", "KXBALLERLEAGUE", "KXBALLERLEAGUEGAME", "KXBALOGUNPLAY", "KXBELGIANPLADVANCE", "KXBELGIANPLBTTS", "KXBELGIANPLGAME", "KXBELGIANPLSPREAD", "KXBELGIANPLTOTAL", "KXBOLPDIVADVANCE", "KXBOLPDIVGAME", "KXBRASILEIRO1H", "KXBRASILEIRO1HBTTS", "KXBRASILEIRO1HSPREAD", "KXBRASILEIRO1HTOTAL", "KXBRASILEIROADVANCE", "KXBRASILEIROBADVANCE", "KXBRASILEIROBTEAMTOTAL", "KXBRASILEIROC1H", "KXBRASILEIROC1HBTTS", "KXBRASILEIROC1HSPREAD", "KXBRASILEIROC1HTOTAL", "KXBRASILEIROCADVANCE", "KXBRASILEIROCTEAMTOTAL", "KXBRASILEIROFTTS", "KXBRASILEIROMOV", "KXBRASILEIRORELEGATION", "KXBRASILEIROSCORE", "KXBRASILEIROTEAMTOTAL", "KXBRASILEIROTOP", "KXBUNDESLIGA1H", "KXBUNDESLIGA1HBTTS", "KXBUNDESLIGA1HSCORE", "KXBUNDESLIGA1HSPREAD", "KXBUNDESLIGA1HTOTAL", "KXBUNDESLIGA2ADVANCE", "KXBUNDESLIGA2BTTS", "KXBUNDESLIGA2GAME", "KXBUNDESLIGA2H", "KXBUNDESLIGA2HBTTS", "KXBUNDESLIGA2HSPREAD", "KXBUNDESLIGA2HTOTAL", "KXBUNDESLIGA2SPREAD", "KXBUNDESLIGA2TOTAL", "KXBUNDESLIGAADVANCE", "KXBUNDESLIGABTTS", "KXBUNDESLIGACORNERS", "KXBUNDESLIGAFIRSTGOAL", "KXBUNDESLIGAFTTS", "KXBUNDESLIGAGOAL", "KXBUNDESLIGAMOV", "KXBUNDESLIGASCORE", "KXBUNDESLIGASPREAD", "KXBUNDESLIGATCORNERS", "KXBUNDESLIGATEAMTOTAL", "KXBUNDESLIGATOP4", "KXBUNDESLIGATOTAL", "KXCALCOACH", "KXCANIMAKETHIS", "KXCANPLADVANCE", "KXCANPLBTTS", "KXCANPLSPREAD", "KXCANPLTOTAL", "KXCCARCOACH", "KXCFLGAME", "KXCFLSPREAD", "KXCFLTOTAL", "KXCHLLDPADVANCE", "KXCHLLDPBTTS", "KXCHLLDPGAME", "KXCHLLDPSPREAD", "KXCHLLDPTOTAL", "KXCHNL1ADVANCE", "KXCHNL1BTTS", "KXCHNL1SPREAD", "KXCHNL1TOTAL", "KXCHNSLADVANCE", "KXCHNSLBTTS", "KXCHNSLGAME", "KXCHNSLSPREAD", "KXCHNSLTOTAL", "KXCLUBFBTTS", "KXCLUBFGAME", "KXCLUBFSPREAD", "KXCLUBFTOTAL", "KXCLUBWC", "KXCLUBWC1H", "KXCLUBWC1HBTTS", "KXCLUBWC1HSCORE", "KXCLUBWC1HSPREAD", "KXCLUBWC1HTOTAL", "KXCLUBWC2H", "KXCLUBWC2HBTTS", "KXCLUBWC2HSPREAD", "KXCLUBWC2HTOTAL", "KXCLUBWCADVANCE", "KXCLUBWCBTTS", "KXCLUBWCFTTS", "KXCLUBWCGA", "KXCLUBWCGAME", "KXCLUBWCGB", "KXCLUBWCGC", "KXCLUBWCGD", "KXCLUBWCGE", "KXCLUBWCGF", "KXCLUBWCGG", "KXCLUBWCGH", "KXCLUBWCMOF", "KXCLUBWCMOV", "KXCLUBWCSCORE", "KXCLUBWCSPREAD", "KXCLUBWCTEAMTOTAL", "KXCLUBWCTOTAL", "KXCOACHONDATE", "KXCOACHOUTOLEMISS", "KXCOACHOUTUNC", "KXCOLLEGEGAMEDAY", "KXCOLLEGEGAMEDAYGUEST", "KXCONCACAFCCUP1H"], "events_discovered": 16760, "contracts_discovered": 6196, "contracts_duplicate_seen": 0, "contracts_by_family": {"btts": 93, "competition_head_to_head": 20, "competition_host": 26, "competition_last_place": 132, "competition_points_margin": 30, "competition_promotion": 24, "competition_qualification": 138, "competition_relegation": 96, "competition_team_points": 384, "competition_top_n": 306, "competition_trophies": 32, "competition_winner": 1057, "exact_score": 450, "first_half_btts": 15, "first_half_exact_score": 225, "first_half_handicap": 30, "first_half_result": 45, "first_half_total": 45, "handicap": 346, "match_result_3way": 1233, "match_winner_2way": 74, "player_award": 81, "player_season_leader": 247, "season_player_total": 53, "second_half_result": 45, "soccer_special": 189, "team_total": 98, "total_goals": 519, "tournament_advancement": 160, "unknown": 3}, "contracts_by_competition_code": {"?": 315, "APFDDH": 30, "ARGNACB": 45, "ARGPREMDIV": 30, "AUTBUNDES": 18, "BELGIANPL": 18, "BRASILEIRO": 286, "BRASILEIROB": 74, "BUNDESLIGA": 222, "BUNDESLIGAW": 14, "CANPL": 6, "CHLLDP": 16, "CHNL1": 24, "CHNSL": 16, "CONCACAFGC": 23, "CONCACAFNL": 41, "CONMEBOLLIB": 4, "CONMEBOLSUD": 4, "COPAAMERICA": 25, "COPADELREY": 208, "COPADOBRASIL": 16, "DENSUPERLIGA": 12, "DFBPOKAL": 21, "DIMAYOR": 60, "ECULP": 16, "EFL": 33, "EFLCHAMPIONSHIP": 24, "EFLL1": 166, "EKSTRAKLASA": 18, "ENGNL": 36, "EPL": 400, "EREDIVISIE": 18, "FA": 24, "FRAPLW": 18, "HUNNB1": 18, "INDSL": 15, "ISRNL": 12, "KLEAGUE": 12, "KNVB": 21, "LALIGA": 270, "LALIGA2": 24, "LIGAEXP": 24, "LIGAF": 21, "LIGAMX": 300, "LIGAMX2H": 6, "LIGAPORTUGAL": 18, "LIGUE1": 226, "MLS": 1397, "MLS2H": 84, "MLSEAST": 15, "MLSWEST": 15, "NWSL": 40, "PERLIGA1": 42, "PREMIERLEAGUE": 20, "ROML1": 18, "SAPSL": 24, "SERIEA": 252, "SOCCER": 2, "SUPERLIG": 18, "SVK2L": 24, "TACAPORT": 20, "THAIL1": 16, "UCL": 354, "UCLLEAGUE": 16, "UCLW": 12, "UECL": 36, "UEFAEURO": 60, "UEFANL": 72, "UEFANLGROUP": 16, "UEL": 36, "URYPD": 37, "USL": 104, "VENFUTVE": 14, "WC": 172, "WCW": 32}, "contracts_unknown_family": 3, "request_count": 655, "retry_count": 0, "milestones_note": "milestones type=soccer_tournament_multi_leg: 21398 rows, complete=True"}
+[reference] {"groups": 80, "unmapped_fixture_groups": 30, "incomplete_groups": 0, "snapshots": 180, "provider_notes": ["46 rows, 30 skipped (unmapped division/team)", "skipped_by_division={'E2': 5, 'E3': 1, 'EC': 12, 'I2': 10, 'SC1': 1, 'SC2': 1}", "unknown_teams={}", "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"], "written": 0}
+[timings] {"assemble_fit_s": 3.57, "discovery_s": 0.0, "simulate_price_archive_s": 50.75, "total_s": 54.53, "mode": "fast+prefetched_sweep"}
+[board] 8 fixtures written by this run; 25 on the board -> work/runs/latest.model_board.v1.json
+[slate] {"slate_id": "slate-20261029T001847Z-f7d3e7", "mode": "model_refresh_and_reprice", "fixtures": 20, "contract_sides": 2204, "simulations_run": 8, "odds_api_calls": 2, "reprice_runtime_s": 1.023, "price_changes_vs_previous": 74}
+# RUN SOCCER — 2026-10-29
+Run `run-20261029T001756Z-e82962` generated 2026-10-29T00:18:47.135071Z · filters: {'leagues': [], 'games': ['fx:bra.serie_a:2026:bra.bahia:bra.sao_paulo', 'fx:bra.serie_a:2026:bra.remo:bra.botafogo', 'fx:usa.mls:2026:usa.austin:usa.real_salt_lake', 'fx:usa.mls:2026:usa.chicago_fire:usa.orlando_city', 'fx:usa.mls:2026:usa.fc_dallas:usa.columbus_crew', 'fx:usa.mls:2026:usa.minnesota_united:usa.sporting_kc', 'fx:usa.mls:2026:usa.nashville:usa.philadelphia_union', 'fx:usa.mls:2026:usa.st_louis_city:usa.portland_timbers'], 'window_hours': 3, 'confirmed_lineups_only': False}
+
+## Coverage
+- contracts discovered: **6196** (discovery complete: True)
+- contracts evaluated: 445 · excluded mechanically: 2773 · unsupported/unknown: 2978
+- **unaccounted contracts: 0**
+- by disposition: priced=445, unknown_family=3, unsupported_family=2975, unmapped_event=885, unmapped_team=287, no_fixture=126, filtered_by_operator=1475
+- competitions discovered: APFDDH, ARGNACB, ARGPREMDIV, AUTBUNDES, BELGIANPL, BRASILEIRO, BRASILEIROB, BUNDESLIGA, BUNDESLIGAW, CANPL, CHLLDP, CHNL1, CHNSL, CONCACAFGC, CONCACAFNL, CONMEBOLLIB, CONMEBOLSUD, COPAAMERICA, COPADELREY, COPADOBRASIL, DENSUPERLIGA, DFBPOKAL, DIMAYOR, ECULP, EFL, EFLCHAMPIONSHIP, EFLL1, EKSTRAKLASA, ENGNL, EPL, EREDIVISIE, FA, FRAPLW, HUNNB1, INDSL, ISRNL, KLEAGUE, KNVB, LALIGA, LALIGA2, LIGAEXP, LIGAF, LIGAMX, LIGAMX2H, LIGAPORTUGAL, LIGUE1, MLS, MLS2H, MLSEAST, MLSWEST, NWSL, PERLIGA1, PREMIERLEAGUE, ROML1, SAPSL, SERIEA, SOCCER, SUPERLIG, SVK2L, TACAPORT, THAIL1, UCL, UCLLEAGUE, UCLW, UECL, UEFAEURO, UEFANL, UEFANLGROUP, UEL, URYPD, USL, VENFUTVE, WC, WCW
+
+## Freshness
+- as_of: 2026-10-29T00:17:56.530735Z; market_observed_at: 2026-10-29T00:15:00.058013Z; fixtures_observed_at: 2026-10-29T00:06:30.855841Z; results_observed_at: 2026-10-29T00:06:23.680806Z; model_fitted_at: 2026-10-29T00:17:55.072320Z; temporal_guard: {'decision_time': '2026-10-29T00:17:56.530735Z', 'checked': {'fixtures': 1, 'market_snapshots': 2, 'reference_odds': 1, 'results': 15}, 'latest_observed_at': {'fixtures': '2026-10-29T00:06:30.855841Z', 'market_snapshots': '2026-10-29T00:17:44.595101Z', 'reference_odds': '2026-10-29T00:06:31.123932Z', 'results': '2026-10-29T00:17:56.319680Z'}, 'violations': [], 'ok': True}
+- no freshness violations
+
+## Recommendations
+**NO BETS** — no contract met the robust-edge bar under an authority level that permits recommendations.
+
+## Shadow / research-only expressions (53)
+These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW. They are NOT recommendations.
+- Austin FC vs Real Salt Lake · away team total over 1.5 · NO @ 0.4700 · fair 70.7% [57.1%–82.1%] · edge +21.9% · P(+) 97% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT28ATXRSL-RSL2`
+- Austin FC vs Real Salt Lake · away team total over 2.5 · NO @ 0.7500 · fair 89.8% [81.9%–95.7%] · edge +13.5% · P(+) 96% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT28ATXRSL-RSL3`
+- Austin FC vs Real Salt Lake · away team total over 0.5 · NO @ 0.1800 · fair 35.1% [23.2%–46.5%] · edge +16.1% · P(+) 96% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT28ATXRSL-RSL1`
+- Austin FC vs Real Salt Lake · Result: away · NO @ 0.5500 · fair 72.9% [61.0%–84.0%] · edge +16.2% · P(+) 94% · RESEARCH_ONLY · `KXMLSGAME-26OCT28ATXRSL-RSL`
+- Austin FC vs Real Salt Lake · away wins by more than 1.5 · NO @ 0.7700 · fair 89.0% [81.9%–95.0%] · edge +10.8% · P(+) 96% · RESEARCH_ONLY · `KXMLSSPREAD-26OCT28ATXRSL-RSL2`
+- FC Dallas vs Columbus Crew · away team total over 1.5 · NO @ 0.5500 · fair 71.5% [58.5%–83.4%] · edge +14.8% · P(+) 93% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT28DALCLB-CLB2`
+- St. Louis City SC vs Portland Timbers · Result: home · YES @ 0.5000 · fair 67.9% [52.7%–82.5%] · edge +16.2% · P(+) 91% · RESEARCH_ONLY · `KXMLSGAME-26OCT28STLPOR-STL`
+- FC Dallas vs Columbus Crew · away team total over 0.5 · NO @ 0.2100 · fair 35.9% [24.2%–48.2%] · edge +13.7% · P(+) 94% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT28DALCLB-CLB1`
+- Austin FC vs Real Salt Lake · First-half result: away · NO @ 0.6500 · fair 77.7% [67.8%–86.2%] · edge +11.1% · P(+) 93% · RESEARCH_ONLY · `KXMLS1H-26OCT28ATXRSL-RSL`
+- Austin FC vs Real Salt Lake · Second-half result: away · NO @ 0.6200 · fair 75.5% [64.8%–85.2%] · edge +11.9% · P(+) 93% · RESEARCH_ONLY · `KXMLS2H-26OCT28ATXRSL-RSL`
+- Nashville SC vs Philadelphia Union · away team total over 0.5 · NO @ 0.3000 · fair 44.1% [32.5%–56.3%] · edge +12.6% · P(+) 91% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT28NSHPHI-PHI1`
+- Austin FC vs Real Salt Lake · Result: home · YES @ 0.3000 · fair 46.4% [31.7%–62.0%] · edge +14.9% · P(+) 90% · RESEARCH_ONLY · `KXMLSGAME-26OCT28ATXRSL-ATX`
+- Remo vs Botafogo · btts · NO @ 0.4000 · fair 54.6% [42.4%–66.0%] · edge +12.9% · P(+) 91% · RESEARCH_ONLY · `KXBRASILEIROBTTS-26OCT28CRBOT-BTTS`
+- Nashville SC vs Philadelphia Union · away team total over 1.5 · NO @ 0.6700 · fair 79.2% [69.0%–88.6%] · edge +10.7% · P(+) 90% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT28NSHPHI-PHI2`
+- Nashville SC vs Philadelphia Union · Result: home · YES @ 0.4900 · fair 64.8% [49.8%–79.1%] · edge +14.0% · P(+) 89% · RESEARCH_ONLY · `KXMLSGAME-26OCT28NSHPHI-NSH`
+- St. Louis City SC vs Portland Timbers · Result: away · NO @ 0.7400 · fair 85.6% [76.1%–93.7%] · edge +10.2% · P(+) 91% · RESEARCH_ONLY · `KXMLSGAME-26OCT28STLPOR-POR`
+- FC Dallas vs Columbus Crew · away team total over 2.5 · NO @ 0.8100 · fair 90.3% [82.9%–96.2%] · edge +8.2% · P(+) 92% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT28DALCLB-CLB3`
+- Bahia vs São Paulo · btts · NO @ 0.4400 · fair 57.0% [45.1%–68.5%] · edge +11.3% · P(+) 89% · RESEARCH_ONLY · `KXBRASILEIROBTTS-26OCT28BAHSPA-BTTS`
+- Austin FC vs Real Salt Lake · away wins by more than 2.5 · NO @ 0.9100 · fair 96.5% [93.4%–98.9%] · edge +4.9% · P(+) 95% · RESEARCH_ONLY · `KXMLSSPREAD-26OCT28ATXRSL-RSL3`
+- Nashville SC vs Philadelphia Union · Result: away · NO @ 0.7600 · fair 85.5% [77.2%–93.1%] · edge +8.2% · P(+) 90% · RESEARCH_ONLY · `KXMLSGAME-26OCT28NSHPHI-PHI`
+- Austin FC vs Real Salt Lake · First half: away wins by more than 1.5 · NO @ 0.9000 · fair 95.1% [90.9%–99.1%] · edge +4.5% · P(+) 91% · RESEARCH_ONLY · `KXMLS1HSPREAD-26OCT28ATXRSL-RSL2`
+- Remo vs Botafogo · Total goals over 2.5 · NO @ 0.4400 · fair 58.6% [42.2%–73.2%] · edge +12.9% · P(+) 85% · RESEARCH_ONLY · `KXBRASILEIROTOTAL-26OCT28CRBOT-3`
+- Nashville SC vs Philadelphia Union · away team total over 2.5 · NO @ 0.8900 · fair 94.1% [89.5%–97.9%] · edge +4.4% · P(+) 89% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT28NSHPHI-PHI3`
+- St. Louis City SC vs Portland Timbers · away team total over 1.5 · NO @ 0.6000 · fair 71.7% [58.5%–83.4%] · edge +10.1% · P(+) 85% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT28STLPOR-POR2`
+- FC Dallas vs Columbus Crew · Result: away · NO @ 0.6900 · fair 79.2% [66.4%–89.6%] · edge +8.7% · P(+) 84% · RESEARCH_ONLY · `KXMLSGAME-26OCT28DALCLB-CLB`
+- Austin FC vs Real Salt Lake · Exact score 2-0 (home-away) · YES @ 0.0400 · fair 8.3% [5.4%–11.4%] · edge +4.0% · P(+) 96% · RESEARCH_ONLY · `KXMLSSCORE-26OCT28ATXRSL-ATX2RSL0`
+- FC Dallas vs Columbus Crew · away wins by more than 1.5 · NO @ 0.8600 · fair 91.8% [84.8%–96.9%] · edge +5.0% · P(+) 86% · RESEARCH_ONLY · `KXMLSSPREAD-26OCT28DALCLB-CLB2`
+- Nashville SC vs Philadelphia Union · First-half result: away · NO @ 0.7800 · fair 85.7% [77.9%–92.1%] · edge +6.5% · P(+) 87% · RESEARCH_ONLY · `KXMLS1H-26OCT28NSHPHI-PHI`
+- Nashville SC vs Philadelphia Union · Second-half result: away · NO @ 0.7700 · fair 84.9% [75.9%–93.1%] · edge +6.7% · P(+) 86% · RESEARCH_ONLY · `KXMLS2H-26OCT28NSHPHI-PHI`
+- St. Louis City SC vs Portland Timbers · away team total over 0.5 · NO @ 0.2500 · fair 36.1% [24.2%–48.3%] · edge +9.8% · P(+) 85% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT28STLPOR-POR1`
+- St. Louis City SC vs Portland Timbers · Second-half result: away · NO @ 0.7600 · fair 84.3% [74.9%–93.1%] · edge +7.0% · P(+) 85% · RESEARCH_ONLY · `KXMLS2H-26OCT28STLPOR-POR`
+- Nashville SC vs Philadelphia Union · Exact score 2-0 (home-away) · YES @ 0.0700 · fair 11.2% [7.7%–14.5%] · edge +3.8% · P(+) 92% · RESEARCH_ONLY · `KXMLSSCORE-26OCT28NSHPHI-NSH2PHI0`
+- Nashville SC vs Philadelphia Union · away wins by more than 1.5 · NO @ 0.9100 · fair 95.2% [91.8%–98.3%] · edge +3.7% · P(+) 91% · RESEARCH_ONLY · `KXMLSSPREAD-26OCT28NSHPHI-PHI2`
+- FC Dallas vs Columbus Crew · Exact score 2-0 (home-away) · YES @ 0.0500 · fair 9.1% [5.9%–12.3%] · edge +3.8% · P(+) 93% · RESEARCH_ONLY · `KXMLSSCORE-26OCT28DALCLB-DAL2CLB0`
+- FC Dallas vs Columbus Crew · First-half result: away · NO @ 0.7300 · fair 81.0% [71.8%–89.2%] · edge +6.7% · P(+) 84% · RESEARCH_ONLY · `KXMLS1H-26OCT28DALCLB-CLB`
+- FC Dallas vs Columbus Crew · Second-half result: away · NO @ 0.7100 · fair 79.8% [69.8%–89.2%] · edge +7.4% · P(+) 84% · RESEARCH_ONLY · `KXMLS2H-26OCT28DALCLB-CLB`
+- St. Louis City SC vs Portland Timbers · away wins by more than 1.5 · NO @ 0.9000 · fair 94.6% [90.0%–98.2%] · edge +4.0% · P(+) 87% · RESEARCH_ONLY · `KXMLSSPREAD-26OCT28STLPOR-POR2`
+- Austin FC vs Real Salt Lake · Exact score 1-0 (home-away) · YES @ 0.0600 · fair 10.9% [6.2%–15.3%] · edge +4.5% · P(+) 89% · RESEARCH_ONLY · `KXMLSSCORE-26OCT28ATXRSL-ATX1RSL0`
+- St. Louis City SC vs Portland Timbers · away team total over 2.5 · NO @ 0.8400 · fair 90.4% [82.9%–96.2%] · edge +5.4% · P(+) 85% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT28STLPOR-POR3`
+- Austin FC vs Real Salt Lake · Total goals over 2.5 · NO @ 0.3900 · fair 52.5% [35.7%–67.9%] · edge +11.9% · P(+) 83% · RESEARCH_ONLY · `KXMLSTOTAL-26OCT28ATXRSL-3`
+
+## Expressions removed by the reducer (18)
+- `KXMLSSPREAD-26OCT28STLPOR-STL2` yes: redundant with KXMLSGAME-26OCT28STLPOR-STL/yes (corr +0.65); best expression kept
+- `KXMLSSPREAD-26OCT28STLPOR-STL3` yes: dominated by KXMLSGAME-26OCT28STLPOR-STL/yes (corr +0.44)
+- `KXMLSSPREAD-26OCT28NSHPHI-NSH2` yes: redundant with KXMLSGAME-26OCT28NSHPHI-NSH/yes (corr +0.62); best expression kept
+- `KXMLSSPREAD-26OCT28NSHPHI-NSH3` yes: dominated by KXMLSGAME-26OCT28NSHPHI-NSH/yes (corr +0.40)
+- `KXMLSBTTS-26OCT28NSHPHI-BTTS` no: dominated by KXMLSTEAMTOTAL-26OCT28NSHPHI-PHI1/no (corr +0.86)
+- `KXMLSBTTS-26OCT28DALCLB-BTTS` no: dominated by KXMLSTEAMTOTAL-26OCT28DALCLB-CLB1/no (corr +0.81)
+- `KXMLSSPREAD-26OCT28ATXRSL-ATX2` yes: dominated by KXMLSGAME-26OCT28ATXRSL-ATX/yes (corr +0.61)
+- `KXMLSBTTS-26OCT28ATXRSL-BTTS` no: dominated by KXMLSTEAMTOTAL-26OCT28ATXRSL-RSL1/no (corr +0.74)
+- `KXMLSTOTAL-26OCT28ATXRSL-2` no: dominated by KXMLSTEAMTOTAL-26OCT28ATXRSL-RSL1/no (corr +0.47)
+- `KXMLSTOTAL-26OCT28ATXRSL-5` no: redundant with KXMLSTOTAL-26OCT28ATXRSL-3/no (corr +0.41); best expression kept
+- `KXMLSTOTAL-26OCT28ATXRSL-4` no: dominated by KXMLSTOTAL-26OCT28ATXRSL-3/no (corr +0.64)
+- `KXBRASILEIROTOTAL-26OCT28CRBOT-4` no: dominated by KXBRASILEIROTOTAL-26OCT28CRBOT-3/no (corr +0.63)
+- `KXBRASILEIROTOTAL-26OCT28CRBOT-5` no: dominated by KXBRASILEIROTOTAL-26OCT28CRBOT-3/no (corr +0.39)
+- `KXBRASILEIROTOTAL-26OCT28CRBOT-6` no: dominated by KXBRASILEIROTOTAL-26OCT28CRBOT-3/no (corr +0.24)
+- `KXBRASILEIROTOTAL-26OCT28CRBOT-2` no: dominated by KXBRASILEIROBTTS-26OCT28CRBOT-BTTS/no (corr +0.63)
+- `KXBRASILEIROTOTAL-26OCT28BAHSPA-3` no: redundant with KXBRASILEIROTOTAL-26OCT28BAHSPA-4/no (corr +0.62); best expression kept
+- `KXBRASILEIROTOTAL-26OCT28BAHSPA-5` no: dominated by KXBRASILEIROTOTAL-26OCT28BAHSPA-4/no (corr +0.63)
+- `KXBRASILEIROTOTAL-26OCT28BAHSPA-2` no: dominated by KXBRASILEIROBTTS-26OCT28BAHSPA-BTTS/no (corr +0.62)
+
+## Events
+- Bahia vs São Paulo (Brasileirão Série A) 2026-10-29T00:30:00Z · markets 14/14 evaluated · lineups unknown · xG 1.45-0.87 · 1X2 50%/28%/23%
+- Remo vs Botafogo (Brasileirão Série A) 2026-10-29T00:30:00Z · markets 14/14 evaluated · lineups unknown · xG 1.36-0.99 · 1X2 45%/28%/27%
+- St. Louis City SC vs Portland Timbers (Major League Soccer) 2026-10-29T00:30:00Z · markets 32/32 evaluated · lineups unknown · xG 2.55-1.05 · 1X2 68%/18%/14%
+- Nashville SC vs Philadelphia Union (Major League Soccer) 2026-10-29T00:30:00Z · markets 77/77 evaluated · lineups unknown · xG 2.10-0.84 · 1X2 65%/21%/15%
+- Minnesota United vs Sporting Kansas City (Major League Soccer) 2026-10-29T00:30:00Z · markets 77/77 evaluated · lineups unknown · xG 2.83-1.07 · 1X2 72%/15%/12%
+- FC Dallas vs Columbus Crew (Major League Soccer) 2026-10-29T00:30:00Z · markets 77/77 evaluated · lineups unknown · xG 1.95-1.06 · 1X2 57%/23%/21%
+- Chicago Fire vs Orlando City (Major League Soccer) 2026-10-29T00:30:00Z · markets 77/77 evaluated · lineups unknown · xG 2.52-1.31 · 1X2 62%/19%/19%
+- Austin FC vs Real Salt Lake (Major League Soccer) 2026-10-29T00:30:00Z · markets 77/77 evaluated · lineups unknown · xG 1.52-1.08 · 1X2 46%/27%/27%
