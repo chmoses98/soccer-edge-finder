@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261029T022208Z-961929` · generated 2026-10-29T02:22:08.626689Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261029T022837Z-e50f05` · generated 2026-10-29T02:28:37.507284Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-29T02:19:18.246333Z (CURRENT at publish; CURRENT until 2026-10-29T02:39:18.246333Z, STALE after 2026-10-29T02:49:18.246333Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-29T02:25:49.316285Z (CURRENT at publish; CURRENT until 2026-10-29T02:45:49.316285Z, STALE after 2026-10-29T02:55:49.316285Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-29T02:00:25.528075Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.41s
+model board generated 2026-10-29T02:00:25.528075Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.41s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -28,18 +28,18 @@ model board generated 2026-10-29T02:00:25.528075Z · simulations this update: 0 
 | 2026-10-31T01:00:00Z | FC Juárez vs Querétaro (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-31T01:00:00Z | Atlético San Luis vs Atlas (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 
-## Candidates on CURRENT prices (71; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (73; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Le Havre vs Paris Saint-Germain | Result: away | no | 0.2100 | 0.544 [0.362, 0.715] | +0.322 | +0.204 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | Total goals over 2.5 | no | 0.4200 | 0.680 [0.538, 0.804] | +0.243 | +0.157 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | Total goals over 3.5 | no | 0.6400 | 0.853 [0.753, 0.932] | +0.196 | +0.142 | 0.78 | - |  | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Colorado Rapids | away team total over 1.5 | no | 0.6000 | 0.800 [0.697, 0.888] | +0.183 | +0.126 | 0.72 | - | * | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Colorado Rapids | away team total over 0.5 | no | 0.2400 | 0.450 [0.331, 0.567] | +0.198 | +0.122 | 0.35 | - |  | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Colorado Rapids | away team total over 0.5 | no | 0.2400 | 0.450 [0.331, 0.567] | +0.198 | +0.122 | 0.35 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | home team total over 1.5 | no | 0.4200 | 0.649 [0.488, 0.783] | +0.212 | +0.121 | 0.54 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | btts | no | 0.4300 | 0.637 [0.522, 0.735] | +0.190 | +0.120 | 0.54 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Colorado Rapids | btts | no | 0.3800 | 0.584 [0.477, 0.691] | +0.188 | +0.118 | 0.49 | - | * | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Colorado Rapids | away team total over 1.5 | no | 0.6100 | 0.800 [0.697, 0.888] | +0.174 | +0.116 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | Total goals over 1.5 | no | 0.2000 | 0.415 [0.275, 0.551] | +0.204 | +0.114 | 0.31 | - |  | RESEARCH_CANDIDATE |
 | Le Havre vs Paris Saint-Germain | Result: home | yes | 0.0800 | 0.287 [0.147, 0.444] | +0.202 | +0.097 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | home team total over 2.5 | no | 0.7000 | 0.861 [0.753, 0.942] | +0.147 | +0.095 | 0.79 | - |  | RESEARCH_CANDIDATE |
@@ -50,10 +50,10 @@ model board generated 2026-10-29T02:00:25.528075Z · simulations this update: 0 
 | Seattle Sounders vs Houston Dynamo | First-half total goals over 1.5 | no | 0.6200 | 0.780 [0.678, 0.872] | +0.144 | +0.084 | 0.7 | - |  | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs San Diego FC | away team total over 1.5 | no | 0.6200 | 0.777 [0.666, 0.874] | +0.140 | +0.078 | 0.69 | - | * | RESEARCH_CANDIDATE |
 | Le Havre vs Paris Saint-Germain | Result: draw | yes | 0.1300 | 0.257 [0.196, 0.320] | +0.119 | +0.077 | 0.2 | - |  | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Colorado Rapids | away team total over 2.5 | no | 0.8400 | 0.945 [0.899, 0.980] | +0.096 | +0.074 | 0.91 | - |  | RESEARCH_CANDIDATE |
+| Vancouver Whitecaps vs San Diego FC | btts | no | 0.3100 | 0.474 [0.361, 0.590] | +0.150 | +0.075 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Colorado Rapids | Total goals over 2.5 | no | 0.4300 | 0.608 [0.455, 0.746] | +0.161 | +0.068 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Colorado Rapids | Total goals over 3.5 | no | 0.6500 | 0.800 [0.679, 0.900] | +0.134 | +0.067 | 0.71 | - |  | RESEARCH_CANDIDATE |
-| Vancouver Whitecaps vs San Diego FC | btts | no | 0.3200 | 0.474 [0.361, 0.590] | +0.139 | +0.064 | 0.38 | - | * | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Colorado Rapids | away team total over 2.5 | no | 0.8500 | 0.945 [0.899, 0.980] | +0.086 | +0.064 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs San Diego FC | away team total over 0.5 | no | 0.2700 | 0.423 [0.304, 0.543] | +0.139 | +0.063 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | away team total over 0.5 | no | 0.3400 | 0.488 [0.366, 0.600] | +0.133 | +0.052 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Houston Dynamo | Exact score 0-0 (home-away) | yes | 0.0500 | 0.153 [0.084, 0.225] | +0.100 | +0.052 | 0.09 | - | * | RESEARCH_CANDIDATE |
@@ -76,9 +76,9 @@ model board generated 2026-10-29T02:00:25.528075Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 664
+action_NO_EDGE: 662
 action_NO_QUOTE: 139
-action_RESEARCH_CANDIDATE: 71
+action_RESEARCH_CANDIDATE: 73
 contract_sides: 874
 fixtures: 15
 fixtures_model_invalidated: 0
