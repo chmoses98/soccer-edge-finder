@@ -808,3 +808,41 @@ These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW
 
 ## Events
 - Frosinone vs Lecce (Serie A) 2026-10-29T17:30:00Z · markets 3/3 evaluated · lineups unknown · xG 1.65-0.75 · 1X2 57%/25%/19%
+
+{
+  "outputs": {
+    "json": "work/runs/_pending/run_output.v1.json",
+    "md": "work/runs/_pending/RUN_SOCCER.md",
+    "contracts": "work/runs/_pending/priced_contracts.json",
+    "coverage": "work/runs/_pending/coverage.json",
+    "diagnostics": "work/runs/_pending/coverage_diagnostics.json"
+  },
+  "simulated": [],
+  "repriced": [
+    "fx:ita.serie_a:2026-27:ita.frosinone:ita.lecce:matchday_9"
+  ],
+  "archived_records": 3
+}
+[dispatch] holding 7.5 min (next window opens in 23.4 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261029T164347Z",
+  "complete": true,
+  "discovered": 5158,
+  "written": 923,
+  "path": "work/snapshots/2026-10-29/cap-20261029T164347Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261029T164348Z-89a0ef", "mode": "reprice_only", "fixtures": 26, "contract_sides": 2144, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.332, "price_changes_vs_previous": 23}
+[dispatch] holding 7.2 min (next window opens in 9.2 min)
+{
+ "batches": 2,
+ "horizons_delivered": 4,
+ "missed_states": {},
+ "paid_calls": 1,
+ "credits_spent": 3,
+ "end_reason": "link_time_limit",
+ "chain_continue": true,
+ "delivered_total": 2621,
+ "missed_total": 289,
+ "delivery_rate_total": 0.9006872852233677
+}
