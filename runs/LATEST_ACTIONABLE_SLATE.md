@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261029T192056Z-6f744b` · generated 2026-10-29T19:20:56.922559Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261029T193259Z-af346e` · generated 2026-10-29T19:32:59.045092Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-29T19:18:04.461448Z (CURRENT at publish; CURRENT until 2026-10-29T19:38:04.461448Z, STALE after 2026-10-29T19:48:04.461448Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-29T19:30:03.290829Z (CURRENT at publish; CURRENT until 2026-10-29T19:50:03.290829Z, STALE after 2026-10-29T20:00:03.290829Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-29T19:13:29.482650Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.58s
+model board generated 2026-10-29T19:13:29.482650Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.60s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-29T19:13:29.482650Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-29T19:45:00Z | Fiorentina vs Atalanta (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
+| 2026-10-29T19:45:00Z | Fiorentina vs Atalanta (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
 | 2026-10-29T22:30:00Z | Atlético Mineiro vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-29T23:00:00Z | Vasco da Gama vs Flamengo (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-30T00:30:00Z | Grêmio vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -53,8 +53,8 @@ model board generated 2026-10-29T19:13:29.482650Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Le Havre vs Paris Saint-Germain | Result: away | no | 0.2100 | 0.544 [0.362, 0.715] | +0.322 | +0.204 | 0.4 | - | * | RESEARCH_CANDIDATE |
-| Le Havre vs Paris Saint-Germain | Result: home | yes | 0.0800 | 0.287 [0.147, 0.444] | +0.202 | +0.097 | 0.17 | - |  | RESEARCH_CANDIDATE |
+| Le Havre vs Paris Saint-Germain | Result: away | no | 0.2200 | 0.544 [0.362, 0.715] | +0.312 | +0.193 | 0.4 | - | * | RESEARCH_CANDIDATE |
+| Le Havre vs Paris Saint-Germain | Result: home | yes | 0.0900 | 0.287 [0.147, 0.444] | +0.191 | +0.087 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | btts | no | 0.4700 | 0.625 [0.522, 0.724] | +0.138 | +0.075 | 0.54 | - | * | RESEARCH_CANDIDATE |
 | Le Havre vs Paris Saint-Germain | Result: draw | yes | 0.1400 | 0.257 [0.196, 0.320] | +0.109 | +0.067 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs San Diego FC | Result: away | no | 0.7300 | 0.854 [0.758, 0.935] | +0.110 | +0.057 | 0.78 | - | * | RESEARCH_CANDIDATE |
@@ -97,8 +97,8 @@ model board generated 2026-10-29T19:13:29.482650Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1302
-action_NO_QUOTE: 336
+action_NO_EDGE: 1312
+action_NO_QUOTE: 326
 action_RESEARCH_CANDIDATE: 44
 contract_sides: 1682
 fixtures: 36
