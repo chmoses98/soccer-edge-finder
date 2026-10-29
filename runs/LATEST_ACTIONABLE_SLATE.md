@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261029T144433Z-a3e336` · generated 2026-10-29T14:44:33.552059Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261029T145931Z-7b24cd` · generated 2026-10-29T14:59:31.830108Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-29T14:41:45.468070Z (CURRENT at publish; CURRENT until 2026-10-29T15:01:45.468070Z, STALE after 2026-10-29T15:11:45.468070Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-29T14:56:49.261355Z (CURRENT at publish; CURRENT until 2026-10-29T15:16:49.261355Z, STALE after 2026-10-29T15:26:49.261355Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-29T14:44:31.595626Z · simulations this update: 5 · Odds API calls this update: 0 (credits 0) · reprice 0.20s
+model board generated 2026-10-29T14:48:09.367578Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.32s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,27 +12,29 @@ model board generated 2026-10-29T14:44:31.595626Z · simulations this update: 5 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-29T17:30:00Z | Frosinone vs Lecce (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-29T19:45:00Z | Fiorentina vs Atalanta (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-29T22:30:00Z | Atlético Mineiro vs Cruzeiro (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-29T23:00:00Z | Vasco da Gama vs Flamengo (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-30T00:30:00Z | Grêmio vs Athletico Paranaense (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-30T18:00:00Z | Le Havre vs Paris Saint-Germain (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-30T19:30:00Z | SV Elversberg vs Mainz 05 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-30T20:05:00Z | Lille vs Lens (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-30T23:00:00Z | Corinthians vs Mirassol (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-10-31T01:00:00Z | FC Juárez vs Querétaro (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-31T01:00:00Z | Atlético San Luis vs Atlas (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-29T17:30:00Z | Frosinone vs Lecce (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-29T19:45:00Z | Fiorentina vs Atalanta (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-29T22:30:00Z | Atlético Mineiro vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-29T23:00:00Z | Vasco da Gama vs Flamengo (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-30T00:30:00Z | Grêmio vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-30T18:00:00Z | Le Havre vs Paris Saint-Germain (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-30T19:30:00Z | SV Elversberg vs Mainz 05 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
+| 2026-10-30T20:05:00Z | Lille vs Lens (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-30T22:00:00Z | Huracán vs Tigre (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-30T23:00:00Z | Corinthians vs Mirassol (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-31T00:15:00Z | Racing Club vs Aldosivi (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-31T01:00:00Z | FC Juárez vs Querétaro (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-31T01:00:00Z | Atlético San Luis vs Atlas (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-31T03:00:00Z | Puebla vs Pumas UNAM (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-31T12:30:00Z | Chelsea vs Manchester United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-31T14:00:00Z | Bologna vs Monza (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-31T14:30:00Z | FC Augsburg vs SC Freiburg (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-31T14:30:00Z | Borussia Mönchengladbach vs SC Paderborn 07 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-31T14:30:00Z | Bayer Leverkusen vs VfB Stuttgart (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-31T14:30:00Z | Schalke 04 vs RB Leipzig (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-31T14:30:00Z | Werder Bremen vs TSG Hoffenheim (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-31T12:30:00Z | Chelsea vs Manchester United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 66 | 0 |
+| 2026-10-31T14:00:00Z | Bologna vs Monza (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-31T14:30:00Z | FC Augsburg vs SC Freiburg (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 59 | 0 |
+| 2026-10-31T14:30:00Z | Borussia Mönchengladbach vs SC Paderborn 07 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 59 | 0 |
+| 2026-10-31T14:30:00Z | Bayer Leverkusen vs VfB Stuttgart (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 59 | 0 |
+| 2026-10-31T14:30:00Z | Schalke 04 vs RB Leipzig (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 59 | 0 |
+| 2026-10-31T14:30:00Z | Werder Bremen vs TSG Hoffenheim (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 59 | 0 |
 
-## Candidates on CURRENT prices (17; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (16; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -51,17 +53,16 @@ model board generated 2026-10-29T14:44:31.595626Z · simulations this update: 5 
 | Puebla vs Pumas UNAM | away team total over 1.5 | no | 0.5500 | 0.663 [0.518, 0.791] | +0.096 | +0.009 | 0.55 | - |  | RESEARCH_CANDIDATE |
 | Schalke 04 vs RB Leipzig | Result: home | yes | 0.2300 | 0.406 [0.182, 0.664] | +0.164 | +0.002 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Pumas UNAM | away team total over 2.5 | no | 0.8100 | 0.872 [0.778, 0.945] | +0.051 | +0.002 | 0.81 | - |  | RESEARCH_CANDIDATE |
-| Corinthians vs Mirassol | Result: away | yes | 0.2000 | 0.290 [0.171, 0.416] | +0.079 | +0.001 | 0.2 | - | * | RESEARCH_CANDIDATE |
 | FC Juárez vs Querétaro | btts | no | 0.4400 | 0.533 [0.411, 0.651] | +0.076 | +0.001 | 0.44 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 413
-action_NO_QUOTE: 114
-action_RESEARCH_CANDIDATE: 17
-contract_sides: 544
-fixtures: 19
+action_NO_EDGE: 557
+action_NO_QUOTE: 1689
+action_RESEARCH_CANDIDATE: 16
+contract_sides: 2262
+fixtures: 21
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
