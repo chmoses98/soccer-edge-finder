@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261029T085311Z-e91ef4` · generated 2026-10-29T08:53:11.619976Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261029T090811Z-26163e` · generated 2026-10-29T09:08:11.802572Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-29T08:50:30.284021Z (CURRENT at publish; CURRENT until 2026-10-29T09:10:30.284021Z, STALE after 2026-10-29T09:20:30.284021Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-29T09:05:30.332159Z (CURRENT at publish; CURRENT until 2026-10-29T09:25:30.332159Z, STALE after 2026-10-29T09:35:30.332159Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-29T05:52:40.271893Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.21s
+model board generated 2026-10-29T05:52:40.271893Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.29s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -30,19 +30,19 @@ model board generated 2026-10-29T05:52:40.271893Z · simulations this update: 0 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Le Havre vs Paris Saint-Germain | Result: away | no | 0.2100 | 0.544 [0.362, 0.715] | +0.322 | +0.204 | 0.4 | - | * | RESEARCH_CANDIDATE |
-| Le Havre vs Paris Saint-Germain | Result: home | yes | 0.0900 | 0.287 [0.147, 0.444] | +0.191 | +0.087 | 0.17 | - |  | RESEARCH_CANDIDATE |
-| Le Havre vs Paris Saint-Germain | Result: draw | yes | 0.1500 | 0.257 [0.196, 0.320] | +0.098 | +0.056 | 0.2 | - |  | RESEARCH_CANDIDATE |
+| Le Havre vs Paris Saint-Germain | Result: home | yes | 0.0800 | 0.287 [0.147, 0.444] | +0.202 | +0.097 | 0.17 | - |  | RESEARCH_CANDIDATE |
+| Le Havre vs Paris Saint-Germain | Result: draw | yes | 0.1200 | 0.257 [0.196, 0.320] | +0.130 | +0.088 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | SV Elversberg vs Mainz 05 | Result: away | no | 0.5600 | 0.732 [0.522, 0.910] | +0.155 | +0.033 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | SV Elversberg vs Mainz 05 | Result: home | yes | 0.3100 | 0.518 [0.274, 0.770] | +0.193 | +0.025 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | Atlético San Luis vs Atlas | Result: home | yes | 0.3600 | 0.489 [0.339, 0.656] | +0.113 | +0.011 | 0.37 | - | * | RESEARCH_CANDIDATE |
-| Corinthians vs Mirassol | Result: away | yes | 0.2000 | 0.290 [0.171, 0.416] | +0.079 | +0.001 | 0.2 | - | * | RESEARCH_CANDIDATE |
+| Corinthians vs Mirassol | Result: away | yes | 0.1950 | 0.290 [0.171, 0.416] | +0.084 | +0.006 | 0.2 | - | * | RESEARCH_CANDIDATE |
 | FC Juárez vs Querétaro | btts | no | 0.4400 | 0.533 [0.411, 0.651] | +0.076 | +0.001 | 0.44 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 358
-action_NO_QUOTE: 136
+action_NO_EDGE: 380
+action_NO_QUOTE: 114
 action_RESEARCH_CANDIDATE: 8
 contract_sides: 502
 fixtures: 12
