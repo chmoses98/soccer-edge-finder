@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261029T200017Z-0c95c6` · generated 2026-10-29T20:00:17.149026Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261029T201259Z-7a0288` · generated 2026-10-29T20:12:59.155861Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-29T19:57:16.669705Z (CURRENT at publish; CURRENT until 2026-10-29T20:17:16.669705Z, STALE after 2026-10-29T20:27:16.669705Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-29T20:10:03.491114Z (CURRENT at publish; CURRENT until 2026-10-29T20:30:03.491114Z, STALE after 2026-10-29T20:40:03.491114Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-29T19:13:29.482650Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.90s
+model board generated 2026-10-29T20:12:58.288592Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.58s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -47,8 +47,11 @@ model board generated 2026-10-29T19:13:29.482650Z · simulations this update: 0 
 | 2026-10-31T19:00:00Z | Coritiba vs Vitória (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 11 | 0 |
 | 2026-10-31T19:00:00Z | Sporting Kansas City vs FC Dallas (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-31T19:00:00Z | St. Louis City SC vs San Diego FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
+| 2026-10-31T19:45:00Z | Troyes vs Le Mans (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-31T19:45:00Z | AC Milan vs Inter Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-31T20:00:00Z | Aston Villa vs Fulham (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (49; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (50; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -91,16 +94,16 @@ model board generated 2026-10-29T19:13:29.482650Z · simulations this update: 0 
 | Columbus Crew vs D.C. United | Total goals over 3.5 | no | 0.5500 | 0.674 [0.519, 0.817] | +0.107 | +0.006 | 0.55 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Orlando City | away wins by more than 1.5 | no | 0.8800 | 0.925 [0.865, 0.975] | +0.038 | +0.006 | 0.88 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Pumas UNAM | away team total over 0.5 | no | 0.2200 | 0.313 [0.198, 0.428] | +0.081 | +0.004 | 0.22 | - |  | RESEARCH_CANDIDATE |
-| New York City FC vs CF Montréal | First-half total goals over 0.5 | no | 0.2500 | 0.339 [0.228, 0.452] | +0.075 | +0.003 | 0.25 | - |  | RESEARCH_CANDIDATE |
+| New York City FC vs CF Montréal | First-half exact score 0-0 (home-away) | yes | 0.2500 | 0.339 [0.228, 0.452] | +0.075 | +0.003 | 0.25 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1307
-action_NO_QUOTE: 320
-action_RESEARCH_CANDIDATE: 49
-contract_sides: 1676
-fixtures: 35
+action_NO_EDGE: 1325
+action_NO_QUOTE: 319
+action_RESEARCH_CANDIDATE: 50
+contract_sides: 1694
+fixtures: 38
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
