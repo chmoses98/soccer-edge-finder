@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261029T214302Z-354e95` · generated 2026-10-29T21:43:02.821791Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261029T215813Z-297f7f` · generated 2026-10-29T21:58:13.301618Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-29T21:40:12.023626Z (CURRENT at publish; CURRENT until 2026-10-29T22:00:12.023626Z, STALE after 2026-10-29T22:10:12.023626Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-29T21:55:12.039339Z (CURRENT at publish; CURRENT until 2026-10-29T22:15:12.039339Z, STALE after 2026-10-29T22:25:12.039339Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-29T21:28:08.560691Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.86s
+model board generated 2026-10-29T21:58:11.226047Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.68s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,8 +12,8 @@ model board generated 2026-10-29T21:28:08.560691Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-29T22:30:00Z | Atlético Mineiro vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
-| 2026-10-29T23:00:00Z | Vasco da Gama vs Flamengo (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-10-29T22:30:00Z | Atlético Mineiro vs Cruzeiro (bra.serie_a) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
+| 2026-10-29T23:00:00Z | Vasco da Gama vs Flamengo (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
 | 2026-10-30T00:30:00Z | Grêmio vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-30T18:00:00Z | Le Havre vs Paris Saint-Germain (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-30T19:30:00Z | SV Elversberg vs Mainz 05 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -53,18 +53,20 @@ model board generated 2026-10-29T21:28:08.560691Z · simulations this update: 0 
 | 2026-10-31T21:00:00Z | LA Galaxy vs Austin FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 62 | 0 |
 | 2026-10-31T21:00:00Z | San Jose Earthquakes vs Real Salt Lake (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 62 | 0 |
 
-## Candidates on CURRENT prices (75; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (76; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Le Havre vs Paris Saint-Germain | Result: away | no | 0.2300 | 0.544 [0.362, 0.715] | +0.302 | +0.183 | 0.4 | - | * | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Real Salt Lake | away team total over 1.5 | no | 0.5400 | 0.748 [0.631, 0.851] | +0.190 | +0.117 | 0.65 | - | * | RESEARCH_CANDIDATE |
+| Le Havre vs Paris Saint-Germain | Result: away | no | 0.2200 | 0.544 [0.362, 0.715] | +0.312 | +0.193 | 0.4 | - | * | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Real Salt Lake | away team total over 1.5 | no | 0.5700 | 0.748 [0.631, 0.851] | +0.160 | +0.088 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Le Havre vs Paris Saint-Germain | Result: home | yes | 0.0900 | 0.287 [0.147, 0.444] | +0.191 | +0.087 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | btts | no | 0.4600 | 0.625 [0.522, 0.724] | +0.148 | +0.085 | 0.54 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | btts | no | 0.3500 | 0.512 [0.395, 0.625] | +0.146 | +0.073 | 0.42 | - | * | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Real Salt Lake | away team total over 0.5 | no | 0.2300 | 0.391 [0.275, 0.507] | +0.149 | +0.069 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Le Havre vs Paris Saint-Germain | Result: draw | yes | 0.1400 | 0.257 [0.196, 0.320] | +0.109 | +0.067 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | away team total over 0.5 | no | 0.4100 | 0.558 [0.452, 0.668] | +0.131 | +0.059 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs San Diego FC | Result: away | no | 0.7300 | 0.854 [0.758, 0.935] | +0.110 | +0.057 | 0.78 | - | * | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Real Salt Lake | away team total over 2.5 | no | 0.8300 | 0.920 [0.860, 0.968] | +0.080 | +0.047 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs San Diego FC | Result: home | yes | 0.5300 | 0.683 [0.537, 0.823] | +0.135 | +0.045 | 0.57 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | away team total over 1.5 | no | 0.7800 | 0.877 [0.811, 0.938] | +0.085 | +0.045 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | Total goals over 2.5 | no | 0.3800 | 0.543 [0.377, 0.695] | +0.147 | +0.044 | 0.42 | - | * | RESEARCH_CANDIDATE |
@@ -94,19 +96,18 @@ model board generated 2026-10-29T21:28:08.560691Z · simulations this update: 0 
 | Charlotte FC vs Orlando City | away team total over 1.5 | no | 0.5100 | 0.636 [0.494, 0.770] | +0.109 | +0.016 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | Total goals over 5.5 | no | 0.8900 | 0.939 [0.881, 0.983] | +0.043 | +0.016 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs D.C. United | btts | no | 0.4300 | 0.539 [0.417, 0.655] | +0.092 | +0.015 | 0.44 | - | * | RESEARCH_CANDIDATE |
-| LA Galaxy vs Austin FC | home team total over 2.5 | no | 0.5900 | 0.716 [0.555, 0.857] | +0.109 | +0.014 | 0.6 | - | * | RESEARCH_CANDIDATE |
-| New York City FC vs CF Montréal | First-half total goals over 0.5 | no | 0.2400 | 0.339 [0.228, 0.452] | +0.086 | +0.014 | 0.25 | - | * | RESEARCH_CANDIDATE |
-| New York City FC vs CF Montréal | First-half total goals over 1.5 | no | 0.5900 | 0.695 [0.568, 0.812] | +0.088 | +0.013 | 0.6 | - |  | RESEARCH_CANDIDATE |
+| Puebla vs Pumas UNAM | away team total over 0.5 | no | 0.2100 | 0.313 [0.198, 0.428] | +0.091 | +0.014 | 0.22 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1519
-action_NO_QUOTE: 318
-action_RESEARCH_CANDIDATE: 75
-contract_sides: 1912
+action_MODEL_INVALIDATED: 28
+action_NO_EDGE: 1493
+action_NO_QUOTE: 285
+action_RESEARCH_CANDIDATE: 76
+contract_sides: 1882
 fixtures: 40
-fixtures_model_invalidated: 0
+fixtures_model_invalidated: 1
 fixtures_model_missing: 0
 ```
 
