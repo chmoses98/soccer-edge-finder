@@ -15,27 +15,27 @@
       "achieved_minutes_p10": 10.92,
       "achieved_minutes_p90": 13.6,
       "delivered": 513,
-      "delivery_rate": 0.8875432525951558,
+      "delivery_rate": 0.8844827586206897,
       "lateness_minutes_max": 14.64,
       "lateness_minutes_median": 2.93,
-      "missed": 65
+      "missed": 67
     },
     "30": {
       "achieved_minutes_median": 27.3,
       "achieved_minutes_p10": 25.0,
       "achieved_minutes_p90": 28.92,
       "delivered": 515,
-      "delivery_rate": 0.8910034602076125,
+      "delivery_rate": 0.8879310344827587,
       "lateness_minutes_max": 16.98,
       "lateness_minutes_median": 2.7,
-      "missed": 63
+      "missed": 65
     },
     "5": {
       "achieved_minutes_median": 2.14,
       "achieved_minutes_p10": 0.33,
       "achieved_minutes_p90": 2.56,
-      "delivered": 515,
-      "delivery_rate": 0.8940972222222222,
+      "delivered": 517,
+      "delivery_rate": 0.8944636678200693,
       "lateness_minutes_max": 7.39,
       "lateness_minutes_median": 2.86,
       "missed": 61
@@ -51,267 +51,13 @@
       "missed": 60
     }
   },
-  "delivered_total": 2621,
-  "delivery_rate_total": 0.9006872852233677,
+  "delivered_total": 2623,
+  "delivery_rate_total": 0.899519890260631,
   "fixtures_tracked": 592,
-  "generated_at": "2026-10-29T16:55:03Z",
-  "last_tick": {
-    "batches": 2,
-    "summary": [
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "model_refresh:ok:fixtures=11:sim=0:board=5:why=entered_lookahead_unmodelled",
-          "slate_reprice:ok:via_model_refresh"
-        ],
-        "batch_id": "ks-20261029T112610Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=502:sim=0"
-        ],
-        "batch_id": "ks-20261029T114110Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=502:sim=0"
-        ],
-        "batch_id": "ks-20261029T115636Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=502:sim=0"
-        ],
-        "batch_id": "ks-20261029T121136Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=502:sim=0"
-        ],
-        "batch_id": "ks-20261029T122637Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "model_refresh:ok:fixtures=1:sim=1:board=1:why=entered_lookahead_unmodelled",
-          "slate_reprice:ok:via_model_refresh"
-        ],
-        "batch_id": "ks-20261029T124137Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=508:sim=0"
-        ],
-        "batch_id": "ks-20261029T125640Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "model_refresh:ok:fixtures=1:sim=0:board=0:why=entered_lookahead_unmodelled",
-          "slate_reprice:ok:via_model_refresh"
-        ],
-        "batch_id": "ks-20261029T131140Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=508:sim=0"
-        ],
-        "batch_id": "ks-20261029T132641Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=508:sim=0"
-        ],
-        "batch_id": "ks-20261029T134141Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=508:sim=0"
-        ],
-        "batch_id": "ks-20261029T135643Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "model_refresh:ok:fixtures=1:sim=1:board=1:why=entered_lookahead_unmodelled",
-          "slate_reprice:ok:via_model_refresh"
-        ],
-        "batch_id": "ks-20261029T141143Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=514:sim=0"
-        ],
-        "batch_id": "ks-20261029T142645Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "model_refresh:ok:fixtures=5:sim=5:board=5:why=entered_lookahead_unmodelled",
-          "slate_reprice:ok:via_model_refresh"
-        ],
-        "batch_id": "ks-20261029T144145Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=2262:sim=0"
-        ],
-        "batch_id": "ks-20261029T145649Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "model_refresh:ok:fixtures=5:sim=5:board=5:why=entered_lookahead_unmodelled",
-          "slate_reprice:ok:via_model_refresh"
-        ],
-        "batch_id": "ks-20261029T151149Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=2292:sim=0"
-        ],
-        "batch_id": "kd-20261029T152604Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:ita.serie_a:2026-27:ita.frosinone:ita.lecce:matchday_9",
-            120,
-            123.93
-          ],
-          [
-            "fx:ita.serie_a:2026-27:ita.frosinone:ita.lecce",
-            120,
-            123.93
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "model_refresh:ok:fixtures=1:sim=0:board=0:why=entered_lookahead_unmodelled",
-          "slate_reprice:ok:via_model_refresh"
-        ],
-        "batch_id": "ks-20261029T154104Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=2292:sim=0"
-        ],
-        "batch_id": "ks-20261029T155604Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=2292:sim=0"
-        ],
-        "batch_id": "ks-20261029T161104Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:ok:credits=3:paid=1:rows=7",
-          "lineups:ok:1",
-          "model_refresh:ok:fixtures=1:sim=0:cache=1:why=T-60:primary_refresh",
-          "slate_reprice:ok:via_model_refresh"
-        ],
-        "batch_id": "kd-20261029T162604Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:ita.serie_a:2026-27:ita.frosinone:ita.lecce:matchday_9",
-            60,
-            63.93
-          ],
-          [
-            "fx:ita.serie_a:2026-27:ita.frosinone:ita.lecce",
-            60,
-            63.93
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=2144:sim=0"
-        ],
-        "batch_id": "ks-20261029T164104Z",
-        "due": [],
-        "slate_refresh": true
-      }
-    ]
-  },
-  "missed_total": 289,
-  "n_pending_fixtures": 78,
+  "generated_at": "2026-10-29T17:28:07Z",
+  "missed_total": 293,
+  "n_pending_fixtures": 79,
   "pending_fixtures": [
-    {
-      "competition_id": "ita.serie_a",
-      "fixture_id": "fx:ita.serie_a:2026-27:ita.frosinone:ita.lecce:matchday_9",
-      "kickoff_utc": "2026-10-29T17:30:00Z",
-      "markets_discovered": 77,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "ita.serie_a",
-      "fixture_id": "fx:ita.serie_a:2026-27:ita.frosinone:ita.lecce",
-      "kickoff_utc": "2026-10-29T17:30:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
     {
       "competition_id": "ita.serie_a",
       "fixture_id": "fx:ita.serie_a:2026-27:ita.fiorentina:ita.atalanta:matchday_9",
@@ -841,6 +587,27 @@
       "competition_id": "fra.ligue_1",
       "fixture_id": "fx:fra.ligue_1:2026-27:fra.paris_fc:fra.monaco",
       "kickoff_utc": "2026-11-01T16:15:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "eng.premier_league",
+      "fixture_id": "fx:eng.premier_league:2026-27:eng.liverpool:eng.arsenal",
+      "kickoff_utc": "2026-11-01T16:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "ger.bundesliga",
+      "fixture_id": "fx:ger.bundesliga:2026-27:ger.frankfurt:ger.hamburg",
+      "kickoff_utc": "2026-11-01T16:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "ita.serie_a",
+      "fixture_id": "fx:ita.serie_a:2026-27:ita.lecce:ita.genoa",
+      "kickoff_utc": "2026-11-01T17:00:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }
