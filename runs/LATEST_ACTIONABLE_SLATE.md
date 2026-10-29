@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261029T193259Z-af346e` · generated 2026-10-29T19:32:59.045092Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261029T194252Z-e3cec7` · generated 2026-10-29T19:42:52.028221Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-29T19:30:03.290829Z (CURRENT at publish; CURRENT until 2026-10-29T19:50:03.290829Z, STALE after 2026-10-29T20:00:03.290829Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-29T19:40:00.050000Z (CURRENT at publish; CURRENT until 2026-10-29T20:00:00.050000Z, STALE after 2026-10-29T20:10:00.050000Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-29T19:13:29.482650Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.60s
+model board generated 2026-10-29T19:13:29.482650Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.56s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -49,11 +49,11 @@ model board generated 2026-10-29T19:13:29.482650Z · simulations this update: 0 
 | 2026-10-31T19:00:00Z | Sporting Kansas City vs FC Dallas (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-31T19:00:00Z | St. Louis City SC vs San Diego FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 
-## Candidates on CURRENT prices (44; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (45; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Le Havre vs Paris Saint-Germain | Result: away | no | 0.2200 | 0.544 [0.362, 0.715] | +0.312 | +0.193 | 0.4 | - | * | RESEARCH_CANDIDATE |
+| Le Havre vs Paris Saint-Germain | Result: away | no | 0.2300 | 0.544 [0.362, 0.715] | +0.302 | +0.183 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Le Havre vs Paris Saint-Germain | Result: home | yes | 0.0900 | 0.287 [0.147, 0.444] | +0.191 | +0.087 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | btts | no | 0.4700 | 0.625 [0.522, 0.724] | +0.138 | +0.075 | 0.54 | - | * | RESEARCH_CANDIDATE |
 | Le Havre vs Paris Saint-Germain | Result: draw | yes | 0.1400 | 0.257 [0.196, 0.320] | +0.109 | +0.067 | 0.2 | - |  | RESEARCH_CANDIDATE |
@@ -75,7 +75,6 @@ model board generated 2026-10-29T19:13:29.482650Z · simulations this update: 0 
 | Hull City vs Ipswich Town | Result: home | yes | 0.3700 | 0.581 [0.325, 0.838] | +0.195 | +0.025 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | Schalke 04 vs RB Leipzig | Result: away | no | 0.4800 | 0.662 [0.430, 0.867] | +0.165 | +0.024 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Tottenham Hotspur vs Crystal Palace | Result: home | no | 0.3800 | 0.537 [0.347, 0.713] | +0.141 | +0.021 | 0.4 | - | * | RESEARCH_CANDIDATE |
-| St. Louis City SC vs San Diego FC | away team total over 0.5 | no | 0.2300 | 0.340 [0.230, 0.463] | +0.098 | +0.021 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs San Diego FC | home wins by more than 2.5 | yes | 0.1600 | 0.294 [0.152, 0.459] | +0.125 | +0.021 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | Total goals over 1.5 | no | 0.1800 | 0.293 [0.169, 0.422] | +0.103 | +0.018 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs D.C. United | Total goals over 2.5 | no | 0.3200 | 0.462 [0.306, 0.620] | +0.126 | +0.018 | 0.33 | - | * | RESEARCH_CANDIDATE |
@@ -84,6 +83,7 @@ model board generated 2026-10-29T19:13:29.482650Z · simulations this update: 0 
 | Columbus Crew vs D.C. United | btts | no | 0.4300 | 0.539 [0.417, 0.655] | +0.092 | +0.015 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Tottenham Hotspur vs Crystal Palace | Result: away | yes | 0.1700 | 0.294 [0.149, 0.451] | +0.114 | +0.013 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs San Diego FC | away wins by more than 1.5 | no | 0.9000 | 0.944 [0.897, 0.980] | +0.038 | +0.013 | 0.91 | - |  | RESEARCH_CANDIDATE |
+| New York City FC vs CF Montréal | Exact score 1-0 (home-away) | yes | 0.1000 | 0.152 [0.100, 0.204] | +0.046 | +0.011 | 0.11 | - | * | RESEARCH_CANDIDATE |
 | Atlético San Luis vs Atlas | Result: home | yes | 0.3600 | 0.489 [0.339, 0.656] | +0.113 | +0.011 | 0.37 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Pumas UNAM | away team total over 1.5 | no | 0.5500 | 0.663 [0.518, 0.791] | +0.096 | +0.009 | 0.55 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | Total goals over 5.5 | no | 0.9100 | 0.947 [0.893, 0.986] | +0.031 | +0.008 | 0.91 | - |  | RESEARCH_CANDIDATE |
@@ -92,14 +92,14 @@ model board generated 2026-10-29T19:13:29.482650Z · simulations this update: 0 
 | Charlotte FC vs Orlando City | away wins by more than 1.5 | no | 0.8800 | 0.925 [0.865, 0.975] | +0.038 | +0.006 | 0.88 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Pumas UNAM | away team total over 0.5 | no | 0.2200 | 0.313 [0.198, 0.428] | +0.081 | +0.004 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs D.C. United | Total goals over 4.5 | no | 0.7400 | 0.827 [0.710, 0.926] | +0.074 | +0.003 | 0.74 | - |  | RESEARCH_CANDIDATE |
-| Schalke 04 vs RB Leipzig | Result: home | yes | 0.2300 | 0.406 [0.182, 0.664] | +0.164 | +0.002 | 0.23 | - |  | RESEARCH_CANDIDATE |
+| New York City FC vs CF Montréal | Exact score 0-0 (home-away) | yes | 0.0500 | 0.093 [0.042, 0.149] | +0.040 | +0.003 | 0.05 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1312
-action_NO_QUOTE: 326
-action_RESEARCH_CANDIDATE: 44
+action_NO_EDGE: 1316
+action_NO_QUOTE: 321
+action_RESEARCH_CANDIDATE: 45
 contract_sides: 1682
 fixtures: 36
 fixtures_model_invalidated: 0
