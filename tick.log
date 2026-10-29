@@ -1095,3 +1095,224 @@ unmapped teams: 0 | proposals: {}
 }
 unmapped teams: 0 | proposals: {}
 [slate] {"slate_id": "slate-20261029T022837Z-e50f05", "mode": "reprice_only", "fixtures": 15, "contract_sides": 874, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.406, "price_changes_vs_previous": 64}
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261029T023450Z",
+  "complete": true,
+  "discovered": 5656,
+  "written": 1287,
+  "path": "work/snapshots/2026-10-29/cap-20261029T023450Z.jsonl"
+}
+{
+  "reference_probabilities": 50,
+  "observed_at": "2026-10-29 00:06:31.123932+00:00",
+  "groups": 80,
+  "unmapped_fixture_groups": 30,
+  "incomplete_groups": 0,
+  "snapshots": 180,
+  "provider_notes": [
+    "46 rows, 30 skipped (unmapped division/team)",
+    "skipped_by_division={'E2': 5, 'E3': 1, 'EC': 12, 'I2': 10, 'SC1': 1, 'SC2': 1}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-29T02:34:53.985367Z", "batch_id": "kd-20261029T023205Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-10-29T02:34:54.013130+00:00",
+ "leagues": [
+  "mex.1"
+ ],
+ "events": 0,
+ "fixtures_mapped": 0,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 1,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 0,
+  "captured": 0,
+  "unchanged": 0,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 0,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 0,
+  "captured": 0,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "DEGRADED",
+  "reasons": [
+   "no_events_returned"
+  ]
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261029T023454Z-1f8f60", "mode": "reprice_only", "fixtures": 12, "contract_sides": 412, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.174, "price_changes_vs_previous": 3}
+[dispatch] holding 6.4 min (next window opens in 4.4 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261029T024744Z",
+  "complete": true,
+  "discovered": 5333,
+  "written": 1388,
+  "path": "work/snapshots/2026-10-29/cap-20261029T024744Z.jsonl"
+}
+{
+  "reference_probabilities": 50,
+  "observed_at": "2026-10-29 00:06:31.123932+00:00",
+  "groups": 80,
+  "unmapped_fixture_groups": 30,
+  "incomplete_groups": 0,
+  "snapshots": 180,
+  "provider_notes": [
+    "46 rows, 30 skipped (unmapped division/team)",
+    "skipped_by_division={'E2': 5, 'E3': 1, 'EC': 12, 'I2': 10, 'SC1': 1, 'SC2': 1}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-29T02:47:48.039321Z", "batch_id": "kd-20261029T024500Z", "credits_charged": 3, "paid_calls": 1, "snapshots": 7, "no_sport_key": [], "eligible_fixtures": 1, "per_sport": {"soccer_mexico_ligamx": {"fixtures": 1, "join": {"events": 1, "joined": 1, "ambiguous": 0, "unresolved_names": [], "unjoined_fixtures": []}, "status": "OK", "credits": 3, "snapshots": 7, "incomplete_markets": 0, "close_fixtures": 1, "entry_fixtures": 0}}, "remaining_after": 17039, "status": "OK"}
+{
+ "as_of": "2026-10-29T02:47:50.492762+00:00",
+ "leagues": [
+  "mex.1"
+ ],
+ "events": 0,
+ "fixtures_mapped": 0,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 1,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 0,
+  "captured": 0,
+  "unchanged": 0,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 0,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 0,
+  "captured": 0,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "DEGRADED",
+  "reasons": [
+   "no_events_returned"
+  ]
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261029T024750Z-c528cf", "mode": "reprice_only", "fixtures": 12, "contract_sides": 412, "simulations_run": 0, "odds_api_calls": 1, "reprice_runtime_s": 0.172, "price_changes_vs_previous": 30}
+[dispatch] holding 3.6 min (next window opens in 1.6 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261029T025745Z",
+  "complete": true,
+  "discovered": 5333,
+  "written": 1020,
+  "path": "work/snapshots/2026-10-29/cap-20261029T025745Z.jsonl"
+}
+{
+  "reference_probabilities": 50,
+  "observed_at": "2026-10-29 00:06:31.123932+00:00",
+  "groups": 80,
+  "unmapped_fixture_groups": 30,
+  "incomplete_groups": 0,
+  "snapshots": 180,
+  "provider_notes": [
+    "46 rows, 30 skipped (unmapped division/team)",
+    "skipped_by_division={'E2': 5, 'E3': 1, 'EC': 12, 'I2': 10, 'SC1': 1, 'SC2': 1}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-29T02:57:49.169728Z", "batch_id": "kd-20261029T025501Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-10-29T02:57:49.197830+00:00",
+ "leagues": [
+  "mex.1"
+ ],
+ "events": 0,
+ "fixtures_mapped": 0,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 1,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 0,
+  "captured": 0,
+  "unchanged": 0,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 0,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 0,
+  "captured": 0,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "DEGRADED",
+  "reasons": [
+   "no_events_returned"
+  ]
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261029T025749Z-90bc09", "mode": "reprice_only", "fixtures": 12, "contract_sides": 412, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.171, "price_changes_vs_previous": 22}
+[dispatch] holding 20.0 min (next window opens in 738.6 min)
+[dispatch] holding 30.0 min (next window opens in 718.6 min)
+[dispatch] holding 30.0 min (next window opens in 688.6 min)
+[dispatch] holding 30.0 min (next window opens in 658.6 min)
+[dispatch] holding 30.0 min (next window opens in 628.6 min)
+[dispatch] holding 11.2 min (next window opens in 598.6 min)
+{
+ "batches": 12,
+ "horizons_delivered": 44,
+ "missed_states": {
+  "MISSED_BEFORE_WAKE": 15,
+  "MISSED_EXECUTION_FAILURE": 8
+ },
+ "paid_calls": 6,
+ "credits_spent": 18,
+ "end_reason": "link_time_limit",
+ "chain_continue": true,
+ "delivered_total": 2617,
+ "missed_total": 289,
+ "delivery_rate_total": 0.9005505849965588
+}
