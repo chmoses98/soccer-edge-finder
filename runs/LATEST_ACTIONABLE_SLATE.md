@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261030T140728Z-2c8221` · generated 2026-10-30T14:07:28.398538Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261030T142222Z-0ba630` · generated 2026-10-30T14:22:22.209594Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-30T14:04:26.694624Z (CURRENT at publish; CURRENT until 2026-10-30T14:24:26.694624Z, STALE after 2026-10-30T14:34:26.694624Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-30T14:19:26.709488Z (CURRENT at publish; CURRENT until 2026-10-30T14:39:26.709488Z, STALE after 2026-10-30T14:49:26.709488Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-30T14:07:26.432605Z · simulations this update: 3 · Odds API calls this update: 0 (credits 0) · reprice 1.65s
+model board generated 2026-10-30T14:07:26.432605Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.43s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -64,7 +64,7 @@ model board generated 2026-10-30T14:07:26.432605Z · simulations this update: 3 
 | 2026-11-01T14:00:00Z | Frosinone vs Torino (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-01T14:00:00Z | Lazio vs Cagliari (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (164; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (162; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -92,7 +92,6 @@ model board generated 2026-10-30T14:07:26.432605Z · simulations this update: 3 
 | SV Elversberg vs Mainz 05 | Result: away | no | 0.5300 | 0.732 [0.520, 0.910] | +0.184 | +0.063 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 4.5 | no | 0.8100 | 0.921 [0.840, 0.980] | +0.100 | +0.061 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs San Diego FC | Result: away | no | 0.7300 | 0.854 [0.758, 0.935] | +0.110 | +0.057 | 0.78 | - | * | RESEARCH_CANDIDATE |
-| Guadalajara vs Atlante | away team total over 1.5 | no | 0.7700 | 0.882 [0.802, 0.947] | +0.099 | +0.057 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Tigres UANL | away team total over 0.5 | no | 0.2900 | 0.439 [0.307, 0.561] | +0.135 | +0.056 | 0.34 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | btts | no | 0.3900 | 0.535 [0.415, 0.649] | +0.128 | +0.055 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | Total goals over 2.5 | no | 0.3700 | 0.543 [0.377, 0.695] | +0.157 | +0.054 | 0.42 | - | * | RESEARCH_CANDIDATE |
@@ -100,7 +99,6 @@ model board generated 2026-10-30T14:07:26.432605Z · simulations this update: 3 
 | Monterrey vs Tijuana | home wins by more than 1.5 | no | 0.6200 | 0.759 [0.611, 0.882] | +0.123 | +0.047 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Le Havre vs Paris Saint-Germain | Result: draw | yes | 0.1600 | 0.257 [0.196, 0.321] | +0.088 | +0.046 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs San Diego FC | Result: home | yes | 0.5300 | 0.683 [0.537, 0.823] | +0.135 | +0.045 | 0.57 | - |  | RESEARCH_CANDIDATE |
-| New York City FC vs CF Montréal | away team total over 1.5 | no | 0.7800 | 0.877 [0.811, 0.938] | +0.085 | +0.045 | 0.82 | - | * | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | Total goals over 3.5 | no | 0.6400 | 0.772 [0.635, 0.885] | +0.116 | +0.042 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | Total goals over 3.5 | no | 0.5800 | 0.725 [0.576, 0.853] | +0.128 | +0.042 | 0.62 | - |  | RESEARCH_CANDIDATE |
 | Lazio vs Cagliari | Result: away | yes | 0.1300 | 0.271 [0.143, 0.412] | +0.133 | +0.042 | 0.17 | - |  | RESEARCH_CANDIDATE |
@@ -108,13 +106,15 @@ model board generated 2026-10-30T14:07:26.432605Z · simulations this update: 3 
 | Monterrey vs Tijuana | First-half total goals over 2.5 | no | 0.8000 | 0.893 [0.809, 0.961] | +0.082 | +0.039 | 0.84 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | First half: both teams to score | no | 0.8000 | 0.891 [0.829, 0.951] | +0.080 | +0.039 | 0.84 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Pumas UNAM | away team total over 1.5 | no | 0.5200 | 0.663 [0.518, 0.791] | +0.126 | +0.039 | 0.55 | - | * | RESEARCH_CANDIDATE |
+| New York City FC vs CF Montréal | away team total over 0.5 | no | 0.4300 | 0.558 [0.452, 0.668] | +0.110 | +0.039 | 0.46 | - | * | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Real Salt Lake | Result: away | no | 0.6600 | 0.779 [0.673, 0.879] | +0.103 | +0.038 | 0.69 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1999
-action_NO_QUOTE: 339
-action_RESEARCH_CANDIDATE: 164
+action_NO_EDGE: 1995
+action_NO_QUOTE: 345
+action_RESEARCH_CANDIDATE: 162
 contract_sides: 2502
 fixtures: 51
 fixtures_model_invalidated: 0
