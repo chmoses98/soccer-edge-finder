@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261030T172322Z-402076` · generated 2026-10-30T17:23:22.748293Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261030T173046Z-cc96b1` · generated 2026-10-30T17:30:46.030366Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-30T17:20:23.472611Z (CURRENT at publish; CURRENT until 2026-10-30T17:40:23.472611Z, STALE after 2026-10-30T17:50:23.472611Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-30T17:27:46.985533Z (CURRENT at publish; CURRENT until 2026-10-30T17:47:46.985533Z, STALE after 2026-10-30T17:57:46.985533Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-30T17:15:08.652560Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.70s
+model board generated 2026-10-30T17:15:08.652560Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.71s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -89,7 +89,6 @@ model board generated 2026-10-30T17:15:08.652560Z · simulations this update: 0 
 | Le Havre vs Paris Saint-Germain | Result: home | yes | 0.1000 | 0.287 [0.147, 0.445] | +0.181 | +0.076 | 0.17 | 0.091 |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | btts | no | 0.3500 | 0.512 [0.395, 0.625] | +0.146 | +0.073 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | away team total over 0.5 | no | 0.4000 | 0.570 [0.441, 0.693] | +0.153 | +0.073 | 0.47 | - | * | RESEARCH_CANDIDATE |
-| Pachuca vs Tigres UANL | away team total over 1.5 | no | 0.6400 | 0.790 [0.669, 0.886] | +0.134 | +0.072 | 0.71 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 1.5 | no | 0.1900 | 0.378 [0.219, 0.546] | +0.177 | +0.069 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Tigres UANL | First-half total goals over 2.5 | no | 0.8000 | 0.917 [0.849, 0.971] | +0.106 | +0.069 | 0.87 | - | * | RESEARCH_CANDIDATE |
 | Levante vs Atlético Madrid | Result: home | yes | 0.1700 | 0.362 [0.198, 0.540] | +0.182 | +0.068 | 0.23 | - |  | RESEARCH_CANDIDATE |
@@ -99,12 +98,13 @@ model board generated 2026-10-30T17:15:08.652560Z · simulations this update: 0 
 | Monterrey vs Tijuana | home team total over 2.5 | no | 0.6500 | 0.805 [0.659, 0.918] | +0.139 | +0.060 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs San Diego FC | Result: away | no | 0.7300 | 0.854 [0.758, 0.935] | +0.110 | +0.057 | 0.78 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | away team total over 2.5 | no | 0.8200 | 0.920 [0.860, 0.968] | +0.090 | +0.056 | 0.87 | - |  | RESEARCH_CANDIDATE |
-| Pachuca vs Tigres UANL | away team total over 0.5 | no | 0.2900 | 0.439 [0.307, 0.561] | +0.135 | +0.056 | 0.34 | - |  | RESEARCH_CANDIDATE |
+| Pachuca vs Tigres UANL | away team total over 0.5 | no | 0.2900 | 0.439 [0.307, 0.561] | +0.135 | +0.056 | 0.34 | - | * | RESEARCH_CANDIDATE |
+| Le Havre vs Paris Saint-Germain | Result: draw | yes | 0.1500 | 0.257 [0.196, 0.321] | +0.098 | +0.056 | 0.2 | 0.149 |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | btts | no | 0.3900 | 0.535 [0.415, 0.649] | +0.128 | +0.055 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | Total goals over 2.5 | no | 0.3700 | 0.543 [0.377, 0.695] | +0.157 | +0.054 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | SV Elversberg vs Mainz 05 | Result: home | yes | 0.2800 | 0.518 [0.273, 0.771] | +0.224 | +0.054 | 0.33 | - |  | RESEARCH_CANDIDATE |
+| Pachuca vs Tigres UANL | away team total over 1.5 | no | 0.6600 | 0.790 [0.669, 0.886] | +0.114 | +0.053 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Tijuana | home wins by more than 1.5 | no | 0.6200 | 0.759 [0.611, 0.882] | +0.123 | +0.047 | 0.66 | - | * | RESEARCH_CANDIDATE |
-| Le Havre vs Paris Saint-Germain | Result: draw | yes | 0.1600 | 0.257 [0.196, 0.321] | +0.088 | +0.046 | 0.2 | 0.149 |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs San Diego FC | Result: home | yes | 0.5300 | 0.683 [0.537, 0.823] | +0.135 | +0.045 | 0.57 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | Total goals over 3.5 | no | 0.6400 | 0.772 [0.635, 0.885] | +0.116 | +0.042 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | Total goals over 3.5 | no | 0.5800 | 0.725 [0.576, 0.853] | +0.128 | +0.042 | 0.62 | - | * | RESEARCH_CANDIDATE |
