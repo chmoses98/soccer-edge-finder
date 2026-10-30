@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261030T201618Z-02d826` · generated 2026-10-30T20:16:18.044990Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261030T201707Z-f12d44` · generated 2026-10-30T20:17:07.031102Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-30T20:13:06.039708Z (CURRENT at publish; CURRENT until 2026-10-30T20:33:06.039708Z, STALE after 2026-10-30T20:43:06.039708Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-30T20:13:50.287112Z (CURRENT at publish; CURRENT until 2026-10-30T20:33:50.287112Z, STALE after 2026-10-30T20:43:50.287112Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-30T19:35:55.037486Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.55s
+model board generated 2026-10-30T20:16:50.425925Z · simulations this update: 38 · Odds API calls this update: 0 (credits 0) · reprice 1.46s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -53,6 +53,7 @@ model board generated 2026-10-30T19:35:55.037486Z · simulations this update: 0 
 | 2026-11-01T01:30:00Z | Colorado Rapids vs Chicago Fire (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-01T03:10:00Z | Club América vs Toluca (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-01T11:30:00Z | Como vs Venezia (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-01T12:00:00Z | Athletic Club vs Real Sociedad (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-01T12:00:00Z | FC Barcelona vs Deportivo Alavés (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-01T12:00:00Z | Elche vs Valencia (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-01T12:00:00Z | Getafe vs Sevilla (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -68,8 +69,10 @@ model board generated 2026-10-30T19:35:55.037486Z · simulations this update: 0 
 | 2026-11-01T16:30:00Z | Liverpool vs Arsenal (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-01T16:30:00Z | Eintracht Frankfurt vs Hamburger SV (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-01T17:00:00Z | Lecce vs Genoa (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-01T19:45:00Z | Marseille vs Toulouse (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-01T19:45:00Z | Juventus vs Napoli (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (172; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (171; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -117,11 +120,11 @@ model board generated 2026-10-30T19:35:55.037486Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2019
+action_NO_EDGE: 2038
 action_NO_QUOTE: 341
-action_RESEARCH_CANDIDATE: 172
-contract_sides: 2532
-fixtures: 56
+action_RESEARCH_CANDIDATE: 171
+contract_sides: 2550
+fixtures: 59
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
