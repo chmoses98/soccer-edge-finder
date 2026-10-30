@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261030T090048Z-5ed38d` · generated 2026-10-30T09:00:48.606079Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261030T091548Z-7f8a56` · generated 2026-10-30T09:15:48.992058Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-30T08:57:56.564607Z (CURRENT at publish; CURRENT until 2026-10-30T09:17:56.564607Z, STALE after 2026-10-30T09:27:56.564607Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-30T09:12:56.539928Z (CURRENT at publish; CURRENT until 2026-10-30T09:32:56.539928Z, STALE after 2026-10-30T09:42:56.539928Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-30T07:00:25.275894Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.86s
+model board generated 2026-10-30T07:00:25.275894Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.66s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -47,29 +47,29 @@ model board generated 2026-10-30T07:00:25.275894Z · simulations this update: 0 
 | 2026-10-31T19:45:00Z | Troyes vs Le Mans (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-31T19:45:00Z | AC Milan vs Inter Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-31T20:00:00Z | Aston Villa vs Fulham (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-31T21:00:00Z | LA Galaxy vs Austin FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 62 | 0 |
-| 2026-10-31T21:00:00Z | San Jose Earthquakes vs Real Salt Lake (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 62 | 0 |
+| 2026-10-31T21:00:00Z | LA Galaxy vs Austin FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 62 | 0 |
+| 2026-10-31T21:00:00Z | San Jose Earthquakes vs Real Salt Lake (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 62 | 0 |
 | 2026-10-31T23:00:00Z | Pachuca vs Tigres UANL (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-01T01:05:00Z | Monterrey vs Tijuana (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-11-01T01:07:00Z | Guadalajara vs Atlante (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-01T01:30:00Z | Colorado Rapids vs Chicago Fire (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-01T03:10:00Z | Club América vs Toluca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (152; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (151; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Le Havre vs Paris Saint-Germain | Result: away | no | 0.2400 | 0.544 [0.362, 0.716] | +0.292 | +0.173 | 0.4 | - | * | RESEARCH_CANDIDATE |
-| Guadalajara vs Atlante | btts | no | 0.4600 | 0.664 [0.544, 0.770] | +0.186 | +0.114 | 0.57 | - | * | RESEARCH_CANDIDATE |
+| Guadalajara vs Atlante | btts | no | 0.4500 | 0.664 [0.544, 0.770] | +0.197 | +0.124 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 2.5 | no | 0.4000 | 0.637 [0.458, 0.800] | +0.220 | +0.109 | 0.5 | - | * | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Real Salt Lake | away team total over 1.5 | no | 0.5600 | 0.748 [0.631, 0.851] | +0.170 | +0.097 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 3.5 | no | 0.6300 | 0.819 [0.682, 0.930] | +0.172 | +0.096 | 0.72 | - |  | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Real Salt Lake | away team total over 1.5 | no | 0.5700 | 0.748 [0.631, 0.851] | +0.160 | +0.088 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | btts | no | 0.4600 | 0.625 [0.522, 0.724] | +0.148 | +0.085 | 0.54 | - | * | RESEARCH_CANDIDATE |
+| Guadalajara vs Atlante | Total goals over 1.5 | no | 0.1800 | 0.378 [0.219, 0.546] | +0.187 | +0.080 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | First-half total goals over 2.5 | no | 0.8000 | 0.926 [0.859, 0.981] | +0.115 | +0.079 | 0.88 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Tigres UANL | btts | no | 0.4100 | 0.582 [0.460, 0.690] | +0.155 | +0.077 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Le Havre vs Paris Saint-Germain | Result: home | yes | 0.1000 | 0.287 [0.147, 0.445] | +0.181 | +0.076 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | btts | no | 0.3500 | 0.512 [0.395, 0.625] | +0.146 | +0.073 | 0.42 | - | * | RESEARCH_CANDIDATE |
-| Guadalajara vs Atlante | Total goals over 1.5 | no | 0.1900 | 0.378 [0.219, 0.546] | +0.177 | +0.069 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | away team total over 0.5 | no | 0.2300 | 0.391 [0.275, 0.507] | +0.149 | +0.069 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Tigres UANL | First-half total goals over 2.5 | no | 0.8000 | 0.917 [0.849, 0.971] | +0.106 | +0.069 | 0.87 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 4.5 | no | 0.8100 | 0.921 [0.840, 0.980] | +0.100 | +0.061 | 0.87 | - |  | RESEARCH_CANDIDATE |
@@ -103,9 +103,9 @@ model board generated 2026-10-30T07:00:25.275894Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1944
-action_NO_QUOTE: 352
-action_RESEARCH_CANDIDATE: 152
+action_NO_EDGE: 1946
+action_NO_QUOTE: 351
+action_RESEARCH_CANDIDATE: 151
 contract_sides: 2448
 fixtures: 42
 fixtures_model_invalidated: 0
