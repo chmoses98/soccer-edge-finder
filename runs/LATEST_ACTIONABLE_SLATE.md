@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261030T155232Z-184026` · generated 2026-10-30T15:52:32.559026Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261030T160004Z-f93a43` · generated 2026-10-30T16:00:04.175008Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-30T15:49:37.081835Z (CURRENT at publish; CURRENT until 2026-10-30T16:09:37.081835Z, STALE after 2026-10-30T16:19:37.081835Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-30T15:56:59.915030Z (CURRENT at publish; CURRENT until 2026-10-30T16:16:59.915030Z, STALE after 2026-10-30T16:26:59.915030Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-30T15:22:33.669089Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.47s
+model board generated 2026-10-30T15:22:33.669089Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.49s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -66,7 +66,7 @@ model board generated 2026-10-30T15:22:33.669089Z · simulations this update: 0 
 | 2026-11-01T14:00:00Z | Lazio vs Cagliari (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-01T14:30:00Z | Union Berlin vs 1. FC Köln (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (169; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (170; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -114,9 +114,9 @@ model board generated 2026-10-30T15:22:33.669089Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2010
-action_NO_QUOTE: 335
-action_RESEARCH_CANDIDATE: 169
+action_NO_EDGE: 2006
+action_NO_QUOTE: 338
+action_RESEARCH_CANDIDATE: 170
 contract_sides: 2514
 fixtures: 53
 fixtures_model_invalidated: 0
