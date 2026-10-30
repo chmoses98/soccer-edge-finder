@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261030T151240Z-527278` · generated 2026-10-30T15:12:40.370863Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261030T152235Z-f7ac39` · generated 2026-10-30T15:22:35.095065Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-30T15:09:30.012654Z (CURRENT at publish; CURRENT until 2026-10-30T15:29:30.012654Z, STALE after 2026-10-30T15:39:30.012654Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-30T15:19:33.832648Z (CURRENT at publish; CURRENT until 2026-10-30T15:39:33.832648Z, STALE after 2026-10-30T15:49:33.832648Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-30T14:37:30.408690Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.94s
+model board generated 2026-10-30T15:22:33.669089Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 1.47s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -58,6 +58,7 @@ model board generated 2026-10-30T14:37:30.408690Z · simulations this update: 0 
 | 2026-11-01T12:00:00Z | FC Barcelona vs Deportivo Alavés (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-01T12:00:00Z | Getafe vs Sevilla (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-01T12:00:00Z | Levante vs Atlético Madrid (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-01T12:00:00Z | Racing Santander vs Real Madrid (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-01T12:00:00Z | Rayo Vallecano vs Celta Vigo (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-01T12:00:00Z | Real Betis vs Málaga (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-01T14:00:00Z | Strasbourg vs AJ Auxerre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -65,15 +66,15 @@ model board generated 2026-10-30T14:37:30.408690Z · simulations this update: 0 
 | 2026-11-01T14:00:00Z | Lazio vs Cagliari (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-01T14:30:00Z | Union Berlin vs 1. FC Köln (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (163; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (168; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Le Havre vs Paris Saint-Germain | Result: away | no | 0.2500 | 0.544 [0.362, 0.716] | +0.281 | +0.162 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | away team total over 1.5 | no | 0.5400 | 0.748 [0.631, 0.851] | +0.190 | +0.117 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | btts | no | 0.4600 | 0.664 [0.544, 0.770] | +0.186 | +0.114 | 0.57 | - | * | RESEARCH_CANDIDATE |
+| Lazio vs Cagliari | Result: home | no | 0.3300 | 0.563 [0.388, 0.726] | +0.217 | +0.108 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 2.5 | no | 0.4100 | 0.637 [0.458, 0.800] | +0.210 | +0.099 | 0.5 | - | * | RESEARCH_CANDIDATE |
-| Lazio vs Cagliari | Result: home | no | 0.3400 | 0.563 [0.388, 0.726] | +0.207 | +0.098 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 3.5 | no | 0.6300 | 0.819 [0.682, 0.930] | +0.172 | +0.096 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | Levante vs Atlético Madrid | Result: away | no | 0.3800 | 0.597 [0.419, 0.765] | +0.201 | +0.091 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | btts | no | 0.4600 | 0.625 [0.522, 0.724] | +0.148 | +0.085 | 0.54 | - | * | RESEARCH_CANDIDATE |
@@ -84,13 +85,13 @@ model board generated 2026-10-30T14:37:30.408690Z · simulations this update: 0 
 | San Jose Earthquakes vs Real Salt Lake | btts | no | 0.3500 | 0.512 [0.395, 0.625] | +0.146 | +0.073 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | away team total over 0.5 | no | 0.4000 | 0.570 [0.441, 0.693] | +0.153 | +0.073 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Tigres UANL | away team total over 1.5 | no | 0.6400 | 0.790 [0.669, 0.886] | +0.134 | +0.072 | 0.71 | - | * | RESEARCH_CANDIDATE |
-| Monterrey vs Tijuana | home team total over 1.5 | no | 0.3700 | 0.571 [0.389, 0.733] | +0.185 | +0.071 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 1.5 | no | 0.1900 | 0.378 [0.219, 0.546] | +0.177 | +0.069 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Tigres UANL | First-half total goals over 2.5 | no | 0.8000 | 0.917 [0.849, 0.971] | +0.106 | +0.069 | 0.87 | - | * | RESEARCH_CANDIDATE |
 | Levante vs Atlético Madrid | Result: home | yes | 0.1700 | 0.362 [0.198, 0.540] | +0.182 | +0.068 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | away team total over 2.5 | no | 0.8100 | 0.920 [0.860, 0.968] | +0.099 | +0.066 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | SV Elversberg vs Mainz 05 | Result: away | no | 0.5300 | 0.732 [0.520, 0.910] | +0.184 | +0.063 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 4.5 | no | 0.8100 | 0.921 [0.840, 0.980] | +0.100 | +0.061 | 0.87 | - |  | RESEARCH_CANDIDATE |
+| Monterrey vs Tijuana | home team total over 1.5 | no | 0.3800 | 0.571 [0.389, 0.733] | +0.174 | +0.061 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Tijuana | home team total over 2.5 | no | 0.6500 | 0.805 [0.659, 0.918] | +0.139 | +0.060 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs San Diego FC | Result: away | no | 0.7300 | 0.854 [0.758, 0.935] | +0.110 | +0.057 | 0.78 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Tigres UANL | away team total over 0.5 | no | 0.2900 | 0.439 [0.307, 0.561] | +0.135 | +0.056 | 0.34 | - |  | RESEARCH_CANDIDATE |
@@ -101,6 +102,7 @@ model board generated 2026-10-30T14:37:30.408690Z · simulations this update: 0 
 | Le Havre vs Paris Saint-Germain | Result: draw | yes | 0.1600 | 0.257 [0.196, 0.321] | +0.088 | +0.046 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs San Diego FC | Result: home | yes | 0.5300 | 0.683 [0.537, 0.823] | +0.135 | +0.045 | 0.57 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | Total goals over 3.5 | no | 0.6400 | 0.772 [0.635, 0.885] | +0.116 | +0.042 | 0.68 | - | * | RESEARCH_CANDIDATE |
+| Racing Santander vs Real Madrid | Result: away | no | 0.1900 | 0.387 [0.183, 0.610] | +0.186 | +0.042 | 0.23 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | Total goals over 3.5 | no | 0.5800 | 0.725 [0.576, 0.853] | +0.128 | +0.042 | 0.62 | - |  | RESEARCH_CANDIDATE |
 | Lazio vs Cagliari | Result: away | yes | 0.1300 | 0.271 [0.143, 0.412] | +0.133 | +0.042 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | Total goals over 2.5 | no | 0.4200 | 0.573 [0.411, 0.721] | +0.136 | +0.040 | 0.45 | - |  | RESEARCH_CANDIDATE |
@@ -108,16 +110,15 @@ model board generated 2026-10-30T14:37:30.408690Z · simulations this update: 0 
 | Guadalajara vs Atlante | First half: both teams to score | no | 0.8000 | 0.891 [0.829, 0.951] | +0.080 | +0.039 | 0.84 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Pumas UNAM | away team total over 1.5 | no | 0.5200 | 0.663 [0.518, 0.791] | +0.126 | +0.039 | 0.55 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | away team total over 0.5 | no | 0.4300 | 0.558 [0.452, 0.668] | +0.110 | +0.039 | 0.46 | - | * | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Real Salt Lake | Result: away | no | 0.6600 | 0.779 [0.673, 0.879] | +0.103 | +0.038 | 0.69 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2010
+action_NO_EDGE: 2011
 action_NO_QUOTE: 335
-action_RESEARCH_CANDIDATE: 163
-contract_sides: 2508
-fixtures: 52
+action_RESEARCH_CANDIDATE: 168
+contract_sides: 2514
+fixtures: 53
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
