@@ -2,9 +2,9 @@
  "counts": {
   "PINNACLE_VALID_CLOSE": 293,
   "DISPATCHER_CLOSE_NO_ATTEMPT": 200,
-  "MISSED_DISPATCHER_CLOSE": 54,
   "PINNACLE_QUOTED_NOTHING": 15,
   "NO_SPORT_KEY": 19,
+  "MISSED_DISPATCHER_CLOSE": 56,
   "NO_REFERENCE_EVENT": 2
  },
  "fixtures": {
@@ -398,6 +398,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261018T184501Z"
   },
+  "fx:bra.serie_a:2026:bra.gremio:bra.athletico_paranaense": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
+  },
   "fx:bra.serie_a:2026:bra.gremio:bra.cruzeiro": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
@@ -487,6 +492,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261024T211620Z"
+  },
+  "fx:bra.serie_a:2026:bra.vasco:bra.flamengo": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
   },
   "fx:bra.serie_a:2026:bra.vasco:bra.remo": {
    "state": "PINNACLE_VALID_CLOSE",
