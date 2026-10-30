@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-30T05:59:51.236259+00:00",
-  "events": 666,
-  "events_skipped_unmapped": 381,
+  "as_of": "2026-10-30T13:09:58.539992+00:00",
+  "events": 667,
+  "events_skipped_unmapped": 382,
   "fixtures_mapped": 285,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=79"
+      "weather_stopped:consecutive_failures:skipped=74"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 9,
-    "events": 50,
+    "captured": 89,
+    "events": 128,
     "failures": [],
-    "published_post": 0,
+    "published_post": 1,
     "published_pre_kickoff": 0,
-    "unchanged": 41,
-    "unpublished": 50
+    "unchanged": 39,
+    "unpublished": 127
   },
   "map_proposals": {
     "bel.1": {
@@ -365,7 +365,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 3,
+  "results_appended": 0,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -530,17 +530,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 14,
-    "events": 96,
+    "captured": 18,
+    "events": 95,
     "failures": [
-      "401892147: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-33.8678&longitude=151.2073&hourly=",
-      "401892146: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-37.8140&longitude=144.9633&hourly=",
-      "401892145: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Perth&count=5&language=en&forma"
+      "401878953: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=50.6337&longitude=5.5675&hourly=tem",
+      "401878960: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Brussels&count=5&language=en&fo",
+      "401878957: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Beveren&count=5&language=en&for"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 79,
+    "skipped": 74,
     "stopped": "consecutive_failures"
   }
 }
