@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261030T114558Z-b075e9` · generated 2026-10-30T11:45:58.788872Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261030T120101Z-d01c38` · generated 2026-10-30T12:01:01.505883Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-30T11:43:05.776297Z (CURRENT at publish; CURRENT until 2026-10-30T12:03:05.776297Z, STALE after 2026-10-30T12:13:05.776297Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-30T11:58:08.382901Z (CURRENT at publish; CURRENT until 2026-10-30T12:18:08.382901Z, STALE after 2026-10-30T12:28:08.382901Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-30T11:31:01.429945Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.62s
+model board generated 2026-10-30T11:31:01.429945Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.87s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -56,7 +56,7 @@ model board generated 2026-10-30T11:31:01.429945Z · simulations this update: 0 
 | 2026-11-01T03:10:00Z | Club América vs Toluca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-01T11:30:00Z | Como vs Venezia (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (145; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (148; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -77,10 +77,10 @@ model board generated 2026-10-30T11:31:01.429945Z · simulations this update: 0 
 | Guadalajara vs Atlante | Total goals over 1.5 | no | 0.1900 | 0.378 [0.219, 0.546] | +0.177 | +0.069 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Tigres UANL | First-half total goals over 2.5 | no | 0.8000 | 0.917 [0.849, 0.971] | +0.106 | +0.069 | 0.87 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Tigres UANL | away team total over 0.5 | no | 0.2800 | 0.439 [0.307, 0.561] | +0.145 | +0.067 | 0.34 | - |  | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Real Salt Lake | away team total over 2.5 | no | 0.8100 | 0.920 [0.860, 0.968] | +0.099 | +0.066 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | SV Elversberg vs Mainz 05 | Result: away | no | 0.5300 | 0.732 [0.520, 0.910] | +0.184 | +0.063 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 4.5 | no | 0.8100 | 0.921 [0.840, 0.980] | +0.100 | +0.061 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs San Diego FC | Result: away | no | 0.7300 | 0.854 [0.758, 0.935] | +0.110 | +0.057 | 0.78 | - | * | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Real Salt Lake | away team total over 2.5 | no | 0.8200 | 0.920 [0.860, 0.968] | +0.090 | +0.056 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | Total goals over 2.5 | no | 0.3500 | 0.518 [0.356, 0.670] | +0.152 | +0.049 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Tijuana | home wins by more than 1.5 | no | 0.6200 | 0.759 [0.611, 0.882] | +0.123 | +0.047 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Le Havre vs Paris Saint-Germain | Result: draw | yes | 0.1600 | 0.257 [0.196, 0.321] | +0.088 | +0.046 | 0.2 | - |  | RESEARCH_CANDIDATE |
@@ -88,6 +88,7 @@ model board generated 2026-10-30T11:31:01.429945Z · simulations this update: 0 
 | Colorado Rapids vs Chicago Fire | btts | no | 0.4000 | 0.535 [0.415, 0.649] | +0.118 | +0.045 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | Total goals over 2.5 | no | 0.3800 | 0.543 [0.377, 0.695] | +0.147 | +0.044 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | Total goals over 3.5 | no | 0.6400 | 0.772 [0.635, 0.885] | +0.116 | +0.042 | 0.68 | - | * | RESEARCH_CANDIDATE |
+| Guadalajara vs Atlante | away team total over 0.5 | no | 0.4300 | 0.570 [0.441, 0.693] | +0.123 | +0.042 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | Total goals over 3.5 | no | 0.5800 | 0.725 [0.576, 0.853] | +0.128 | +0.042 | 0.62 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Tijuana | First-half total goals over 2.5 | no | 0.8000 | 0.893 [0.809, 0.961] | +0.082 | +0.039 | 0.84 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | First half: both teams to score | no | 0.8000 | 0.891 [0.829, 0.951] | +0.080 | +0.039 | 0.84 | - | * | RESEARCH_CANDIDATE |
@@ -99,14 +100,13 @@ model board generated 2026-10-30T11:31:01.429945Z · simulations this update: 0 
 | St. Louis City SC vs San Diego FC | home wins by more than 1.5 | yes | 0.3200 | 0.481 [0.316, 0.656] | +0.146 | +0.037 | 0.35 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | away wins by more than 1.5 | no | 0.8400 | 0.918 [0.862, 0.965] | +0.069 | +0.037 | 0.87 | - | * | RESEARCH_CANDIDATE |
 | FC Augsburg vs SC Freiburg | Result: away | no | 0.5700 | 0.714 [0.557, 0.857] | +0.127 | +0.037 | 0.6 | - | * | RESEARCH_CANDIDATE |
-| Guadalajara vs Atlante | First-half exact score 0-0 (home-away) | yes | 0.2600 | 0.397 [0.268, 0.522] | +0.124 | +0.037 | 0.29 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1961
-action_NO_QUOTE: 348
-action_RESEARCH_CANDIDATE: 145
+action_NO_EDGE: 1959
+action_NO_QUOTE: 347
+action_RESEARCH_CANDIDATE: 148
 contract_sides: 2454
 fixtures: 43
 fixtures_model_invalidated: 0
