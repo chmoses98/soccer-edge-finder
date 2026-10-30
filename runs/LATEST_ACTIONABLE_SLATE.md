@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261030T214611Z-af275c` · generated 2026-10-30T21:46:11.449149Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261030T215354Z-0d564d` · generated 2026-10-30T21:53:54.750810Z · trigger `kickoff_chain:T-15` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-30T21:42:56.039030Z (CURRENT at publish; CURRENT until 2026-10-30T22:02:56.039030Z, STALE after 2026-10-30T22:12:56.039030Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-30T21:50:50.917919Z (CURRENT at publish; CURRENT until 2026-10-30T22:10:50.917919Z, STALE after 2026-10-30T22:20:50.917919Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-30T21:45:56.232258Z · simulations this update: 2 · Odds API calls this update: 0 (credits 0) · reprice 1.58s
+model board generated 2026-10-30T21:45:56.232258Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.55s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-30T21:45:56.232258Z · simulations this update: 2 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-30T22:00:00Z | Huracán vs Tigre (arg.primera) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-30T22:00:00Z | Huracán vs Tigre (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-30T23:00:00Z | Corinthians vs Mirassol (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-10-31T00:15:00Z | Racing Club vs Aldosivi (arg.primera) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-31T01:00:00Z | FC Juárez vs Querétaro (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -75,7 +75,7 @@ model board generated 2026-10-30T21:45:56.232258Z · simulations this update: 2 
 | 2026-11-01T21:30:00Z | Atlanta United vs Toronto FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 59 | 0 |
 | 2026-11-01T21:30:00Z | Nashville SC vs New York Red Bulls (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 59 | 0 |
 
-## Candidates on CURRENT prices (192; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (188; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -123,12 +123,12 @@ model board generated 2026-10-30T21:45:56.232258Z · simulations this update: 2 
 ## Counts
 
 ```
-action_NO_EDGE: 2225
+action_NO_EDGE: 2229
 action_NO_QUOTE: 397
-action_RESEARCH_CANDIDATE: 192
+action_RESEARCH_CANDIDATE: 188
 contract_sides: 2814
 fixtures: 62
-fixtures_model_invalidated: 0
+fixtures_model_invalidated: 1
 fixtures_model_missing: 0
 ```
 
