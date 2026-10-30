@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261030T195452Z-2445ce` · generated 2026-10-30T19:54:52.457988Z · trigger `kickoff_chain:T-120/T-15` · mode `reprice_only`
+slate `slate-20261030T200143Z-49f410` · generated 2026-10-30T20:01:43.308917Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-30T19:51:49.509469Z (CURRENT at publish; CURRENT until 2026-10-30T20:11:49.509469Z, STALE after 2026-10-30T20:21:49.509469Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-30T19:58:44.632006Z (CURRENT at publish; CURRENT until 2026-10-30T20:18:44.632006Z, STALE after 2026-10-30T20:28:44.632006Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-30T19:35:55.037486Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 1.60s
+model board generated 2026-10-30T19:35:55.037486Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.64s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -13,9 +13,9 @@ model board generated 2026-10-30T19:35:55.037486Z · simulations this update: 0 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
 | 2026-10-30T20:05:00Z | Lille vs Lens (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
-| 2026-10-30T22:00:00Z | Huracán vs Tigre (arg.primera) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-30T22:00:00Z | Huracán vs Tigre (arg.primera) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-30T23:00:00Z | Corinthians vs Mirassol (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-10-31T00:15:00Z | Racing Club vs Aldosivi (arg.primera) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-10-31T00:15:00Z | Racing Club vs Aldosivi (arg.primera) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-31T01:00:00Z | FC Juárez vs Querétaro (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-31T01:00:00Z | Atlético San Luis vs Atlas (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-31T03:00:00Z | Puebla vs Pumas UNAM (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -70,13 +70,10 @@ model board generated 2026-10-30T19:35:55.037486Z · simulations this update: 0 
 | 2026-11-01T16:30:00Z | Eintracht Frankfurt vs Hamburger SV (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-01T17:00:00Z | Lecce vs Genoa (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (170; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (168; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Nice vs Rennes | Result: home | no | 0.0100 | 0.625 [0.450, 0.788] | +0.615 | +0.506 | 0.49 | - | * | RESEARCH_CANDIDATE |
-| Nice vs Rennes | Result: away | yes | 0.0100 | 0.367 [0.206, 0.535] | +0.356 | +0.252 | 0.24 | - |  | RESEARCH_CANDIDATE |
-| Nice vs Rennes | Result: draw | yes | 0.0100 | 0.259 [0.205, 0.315] | +0.248 | +0.214 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | away team total over 1.5 | no | 0.5400 | 0.748 [0.631, 0.851] | +0.190 | +0.117 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | btts | no | 0.4600 | 0.664 [0.544, 0.770] | +0.186 | +0.114 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 2.5 | no | 0.4000 | 0.637 [0.458, 0.800] | +0.220 | +0.109 | 0.5 | - | * | RESEARCH_CANDIDATE |
@@ -103,6 +100,7 @@ model board generated 2026-10-30T19:35:55.037486Z · simulations this update: 0 
 | Guadalajara vs Atlante | away team total over 1.5 | no | 0.7700 | 0.882 [0.802, 0.947] | +0.099 | +0.057 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | btts | no | 0.3900 | 0.535 [0.415, 0.649] | +0.128 | +0.055 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | Total goals over 2.5 | no | 0.3700 | 0.543 [0.377, 0.695] | +0.157 | +0.054 | 0.42 | - | * | RESEARCH_CANDIDATE |
+| Guadalajara vs Atlante | First-half total goals over 1.5 | no | 0.6100 | 0.754 [0.638, 0.862] | +0.127 | +0.053 | 0.66 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | Total goals over 2.5 | no | 0.3500 | 0.518 [0.356, 0.670] | +0.152 | +0.049 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Tijuana | home wins by more than 1.5 | no | 0.6200 | 0.759 [0.611, 0.882] | +0.123 | +0.047 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | FC Augsburg vs SC Freiburg | Result: away | no | 0.5600 | 0.714 [0.557, 0.857] | +0.137 | +0.047 | 0.6 | - | * | RESEARCH_CANDIDATE |
@@ -114,13 +112,15 @@ model board generated 2026-10-30T19:35:55.037486Z · simulations this update: 0 
 | Colorado Rapids vs Chicago Fire | Total goals over 2.5 | no | 0.4200 | 0.573 [0.411, 0.721] | +0.136 | +0.040 | 0.45 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Tijuana | First-half total goals over 2.5 | no | 0.8000 | 0.893 [0.809, 0.961] | +0.082 | +0.039 | 0.84 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | First half: both teams to score | no | 0.8000 | 0.891 [0.829, 0.951] | +0.080 | +0.039 | 0.84 | - | * | RESEARCH_CANDIDATE |
+| Puebla vs Pumas UNAM | away team total over 1.5 | no | 0.5200 | 0.663 [0.518, 0.791] | +0.126 | +0.039 | 0.55 | - | * | RESEARCH_CANDIDATE |
+| Pachuca vs Tigres UANL | away team total over 2.5 | no | 0.8700 | 0.940 [0.883, 0.979] | +0.062 | +0.038 | 0.91 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2026
-action_NO_QUOTE: 342
-action_RESEARCH_CANDIDATE: 170
+action_NO_EDGE: 2029
+action_NO_QUOTE: 341
+action_RESEARCH_CANDIDATE: 168
 contract_sides: 2538
 fixtures: 57
 fixtures_model_invalidated: 0
