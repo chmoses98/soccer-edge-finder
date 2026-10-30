@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261030T173046Z-cc96b1` · generated 2026-10-30T17:30:46.030366Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261030T174551Z-cb87ba` · generated 2026-10-30T17:45:51.386067Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-30T17:27:46.985533Z (CURRENT at publish; CURRENT until 2026-10-30T17:47:46.985533Z, STALE after 2026-10-30T17:57:46.985533Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-30T17:42:50.216624Z (CURRENT at publish; CURRENT until 2026-10-30T18:02:50.216624Z, STALE after 2026-10-30T18:12:50.216624Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-30T17:15:08.652560Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.71s
+model board generated 2026-10-30T17:45:50.078715Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 1.53s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -57,6 +57,7 @@ model board generated 2026-10-30T17:15:08.652560Z · simulations this update: 0 
 | 2026-11-01T03:10:00Z | Club América vs Toluca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-01T11:30:00Z | Como vs Venezia (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-01T12:00:00Z | FC Barcelona vs Deportivo Alavés (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-01T12:00:00Z | Elche vs Valencia (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-01T12:00:00Z | Getafe vs Sevilla (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-01T12:00:00Z | Levante vs Atlético Madrid (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-01T12:00:00Z | Racing Santander vs Real Madrid (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -71,14 +72,14 @@ model board generated 2026-10-30T17:15:08.652560Z · simulations this update: 0 
 | 2026-11-01T16:30:00Z | Eintracht Frankfurt vs Hamburger SV (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-01T17:00:00Z | Lecce vs Genoa (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (166; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (165; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Le Havre vs Paris Saint-Germain | Result: away | no | 0.2500 | 0.544 [0.362, 0.716] | +0.281 | +0.162 | 0.4 | 0.240 | * | RESEARCH_CANDIDATE |
+| Le Havre vs Paris Saint-Germain | Result: away | no | 0.2400 | 0.544 [0.362, 0.716] | +0.292 | +0.173 | 0.4 | 0.240 | * | RESEARCH_CANDIDATE |
+| Guadalajara vs Atlante | btts | no | 0.4600 | 0.664 [0.544, 0.770] | +0.186 | +0.114 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Lazio vs Cagliari | Result: home | no | 0.3300 | 0.563 [0.388, 0.726] | +0.217 | +0.108 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | away team total over 1.5 | no | 0.5500 | 0.748 [0.631, 0.851] | +0.180 | +0.107 | 0.65 | - | * | RESEARCH_CANDIDATE |
-| Guadalajara vs Atlante | btts | no | 0.4700 | 0.664 [0.544, 0.770] | +0.176 | +0.104 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Levante vs Atlético Madrid | Result: away | no | 0.3700 | 0.597 [0.419, 0.765] | +0.211 | +0.102 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 2.5 | no | 0.4100 | 0.637 [0.458, 0.800] | +0.210 | +0.099 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 3.5 | no | 0.6400 | 0.819 [0.682, 0.930] | +0.162 | +0.086 | 0.72 | - |  | RESEARCH_CANDIDATE |
@@ -119,11 +120,11 @@ model board generated 2026-10-30T17:15:08.652560Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2046
-action_NO_QUOTE: 332
-action_RESEARCH_CANDIDATE: 166
-contract_sides: 2544
-fixtures: 58
+action_NO_EDGE: 2035
+action_NO_QUOTE: 350
+action_RESEARCH_CANDIDATE: 165
+contract_sides: 2550
+fixtures: 59
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
