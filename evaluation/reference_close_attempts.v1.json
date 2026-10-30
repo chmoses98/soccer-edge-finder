@@ -1,9 +1,9 @@
 {
  "counts": {
-  "NO_SPORT_KEY": 19,
-  "PINNACLE_VALID_CLOSE": 293,
-  "MISSED_DISPATCHER_CLOSE": 56,
   "DISPATCHER_CLOSE_NO_ATTEMPT": 200,
+  "MISSED_DISPATCHER_CLOSE": 61,
+  "PINNACLE_VALID_CLOSE": 293,
+  "NO_SPORT_KEY": 19,
   "PINNACLE_QUOTED_NOTHING": 15,
   "NO_REFERENCE_EVENT": 2
  },
@@ -1343,6 +1343,16 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261018T150002Z"
   },
+  "fx:fra.ligue_1:2026-27:fra.le_havre:fra.psg": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
+  },
+  "fx:fra.ligue_1:2026-27:fra.le_havre:fra.psg:matchday_9": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
+  },
   "fx:fra.ligue_1:2026-27:fra.le_mans:fra.toulouse": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -1452,6 +1462,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261010T182855Z"
+  },
+  "fx:fra.ligue_1:2026-27:fra.nice:fra.rennes": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
   },
   "fx:fra.ligue_1:2026-27:fra.nice:fra.strasbourg": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -1612,6 +1627,16 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261017T131553Z"
+  },
+  "fx:ger.bundesliga:2026-27:ger.elversberg:ger.mainz": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
+  },
+  "fx:ger.bundesliga:2026-27:ger.elversberg:ger.mainz:matchday_8": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
   },
   "fx:ger.bundesliga:2026-27:ger.frankfurt:ger.koln": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
