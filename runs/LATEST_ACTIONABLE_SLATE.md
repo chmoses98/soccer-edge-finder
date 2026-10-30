@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261030T130721Z-25d5a4` · generated 2026-10-30T13:07:21.492763Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261030T132325Z-8c5d53` · generated 2026-10-30T13:23:25.966310Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-30T13:04:21.771814Z (CURRENT at publish; CURRENT until 2026-10-30T13:24:21.771814Z, STALE after 2026-10-30T13:34:21.771814Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-30T13:19:21.797357Z (CURRENT at publish; CURRENT until 2026-10-30T13:39:21.797357Z, STALE after 2026-10-30T13:49:21.797357Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-30T13:07:20.455180Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 1.45s
+model board generated 2026-10-30T13:07:20.455180Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.67s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -61,7 +61,7 @@ model board generated 2026-10-30T13:07:20.455180Z · simulations this update: 1 
 | 2026-11-01T12:00:00Z | Rayo Vallecano vs Celta Vigo (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-01T12:00:00Z | Real Betis vs Málaga (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (160; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (161; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -102,16 +102,16 @@ model board generated 2026-10-30T13:07:20.455180Z · simulations this update: 1 
 | Colorado Rapids vs Chicago Fire | Total goals over 2.5 | no | 0.4200 | 0.573 [0.411, 0.721] | +0.136 | +0.040 | 0.45 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Tijuana | First-half total goals over 2.5 | no | 0.8000 | 0.893 [0.809, 0.961] | +0.082 | +0.039 | 0.84 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | First half: both teams to score | no | 0.8000 | 0.891 [0.829, 0.951] | +0.080 | +0.039 | 0.84 | - | * | RESEARCH_CANDIDATE |
+| Puebla vs Pumas UNAM | away team total over 1.5 | no | 0.5200 | 0.663 [0.518, 0.791] | +0.126 | +0.039 | 0.55 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | away team total over 0.5 | no | 0.4300 | 0.558 [0.452, 0.668] | +0.110 | +0.039 | 0.46 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | Result: away | no | 0.6600 | 0.779 [0.673, 0.879] | +0.103 | +0.038 | 0.69 | - | * | RESEARCH_CANDIDATE |
-| Pachuca vs Tigres UANL | Total goals over 3.5 | no | 0.6800 | 0.802 [0.678, 0.907] | +0.107 | +0.038 | 0.71 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1985
+action_NO_EDGE: 1984
 action_NO_QUOTE: 339
-action_RESEARCH_CANDIDATE: 160
+action_RESEARCH_CANDIDATE: 161
 contract_sides: 2484
 fixtures: 48
 fixtures_model_invalidated: 0
