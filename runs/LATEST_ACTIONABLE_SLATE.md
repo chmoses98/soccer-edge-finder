@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261030T231502Z-384b45` · generated 2026-10-30T23:15:02.916150Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261030T233003Z-f76aa2` · generated 2026-10-30T23:30:03.928863Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-30T23:11:56.078924Z (CURRENT at publish; CURRENT until 2026-10-30T23:31:56.078924Z, STALE after 2026-10-30T23:41:56.078924Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-30T23:26:53.299992Z (CURRENT at publish; CURRENT until 2026-10-30T23:46:53.299992Z, STALE after 2026-10-30T23:56:53.299992Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-30T22:30:13.815562Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 1.57s
+model board generated 2026-10-30T23:29:53.571901Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 1.66s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-30T22:30:13.815562Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-31T00:15:00Z | Racing Club vs Aldosivi (arg.primera) | VALID (AGING) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 3 | 0 |
+| 2026-10-31T00:15:00Z | Racing Club vs Aldosivi (arg.primera) | VALID (AGING) | unconfirmed (CURRENT) | AGING entry | CURRENT | 3 | 0 |
 | 2026-10-31T01:00:00Z | FC Juárez vs Querétaro (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-31T01:00:00Z | Atlético San Luis vs Atlas (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-31T03:00:00Z | Puebla vs Pumas UNAM (mex.liga_mx) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -72,8 +72,9 @@ model board generated 2026-10-30T22:30:13.815562Z · simulations this update: 0 
 | 2026-11-01T20:30:00Z | Vancouver Whitecaps vs Seattle Sounders (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-01T21:30:00Z | Atlanta United vs Toronto FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 59 | 0 |
 | 2026-11-01T21:30:00Z | Nashville SC vs New York Red Bulls (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 59 | 0 |
+| 2026-11-01T23:00:00Z | Santos Laguna vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (192; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (195; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -99,6 +100,7 @@ model board generated 2026-10-30T22:30:13.815562Z · simulations this update: 0 
 | Guadalajara vs Atlante | Total goals over 1.5 | no | 0.1900 | 0.378 [0.219, 0.546] | +0.177 | +0.069 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | away team total over 0.5 | no | 0.4000 | 0.558 [0.452, 0.668] | +0.141 | +0.069 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Levante vs Atlético Madrid | Result: home | yes | 0.1700 | 0.362 [0.198, 0.540] | +0.182 | +0.068 | 0.23 | - |  | RESEARCH_CANDIDATE |
+| Santos Laguna vs Necaxa | btts | no | 0.3600 | 0.514 [0.394, 0.625] | +0.138 | +0.065 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Tigres UANL | away team total over 1.5 | no | 0.6500 | 0.790 [0.669, 0.886] | +0.124 | +0.063 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 4.5 | no | 0.8100 | 0.921 [0.840, 0.980] | +0.100 | +0.061 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Tijuana | home team total over 2.5 | no | 0.6500 | 0.805 [0.659, 0.918] | +0.139 | +0.060 | 0.71 | - |  | RESEARCH_CANDIDATE |
@@ -116,16 +118,15 @@ model board generated 2026-10-30T22:30:13.815562Z · simulations this update: 0 
 | St. Louis City SC vs San Diego FC | Result: home | yes | 0.5300 | 0.683 [0.537, 0.823] | +0.135 | +0.045 | 0.57 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | away team total over 1.5 | no | 0.7800 | 0.877 [0.811, 0.938] | +0.085 | +0.045 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | Total goals over 3.5 | no | 0.6400 | 0.772 [0.635, 0.885] | +0.116 | +0.042 | 0.68 | - | * | RESEARCH_CANDIDATE |
-| Lazio vs Cagliari | Result: away | yes | 0.1300 | 0.271 [0.143, 0.412] | +0.133 | +0.042 | 0.17 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2210
-action_NO_QUOTE: 348
-action_RESEARCH_CANDIDATE: 192
-contract_sides: 2750
-fixtures: 60
+action_NO_EDGE: 2339
+action_NO_QUOTE: 370
+action_RESEARCH_CANDIDATE: 195
+contract_sides: 2904
+fixtures: 61
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
