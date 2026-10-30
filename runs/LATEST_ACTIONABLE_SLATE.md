@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261030T084547Z-b97c3a` · generated 2026-10-30T08:45:47.418610Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261030T090048Z-5ed38d` · generated 2026-10-30T09:00:48.606079Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-30T08:42:55.111325Z (CURRENT at publish; CURRENT until 2026-10-30T09:02:55.111325Z, STALE after 2026-10-30T09:12:55.111325Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-30T08:57:56.564607Z (CURRENT at publish; CURRENT until 2026-10-30T09:17:56.564607Z, STALE after 2026-10-30T09:27:56.564607Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-30T07:00:25.275894Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.66s
+model board generated 2026-10-30T07:00:25.275894Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.86s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -55,7 +55,7 @@ model board generated 2026-10-30T07:00:25.275894Z · simulations this update: 0 
 | 2026-11-01T01:30:00Z | Colorado Rapids vs Chicago Fire (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-01T03:10:00Z | Club América vs Toluca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (153; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (152; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -104,8 +104,8 @@ model board generated 2026-10-30T07:00:25.275894Z · simulations this update: 0 
 
 ```
 action_NO_EDGE: 1944
-action_NO_QUOTE: 351
-action_RESEARCH_CANDIDATE: 153
+action_NO_QUOTE: 352
+action_RESEARCH_CANDIDATE: 152
 contract_sides: 2448
 fixtures: 42
 fixtures_model_invalidated: 0
