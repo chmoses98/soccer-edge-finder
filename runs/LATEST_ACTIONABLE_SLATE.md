@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261030T193555Z-d40e69` · generated 2026-10-30T19:35:55.892111Z · trigger `kickoff_chain:T-60/T-30` · mode `model_refresh_and_reprice`
+slate `slate-20261030T194758Z-92cf9f` · generated 2026-10-30T19:47:58.684819Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-30T19:32:42.746857Z (CURRENT at publish; CURRENT until 2026-10-30T19:52:42.746857Z, STALE after 2026-10-30T20:02:42.746857Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-30T19:45:00.060924Z (CURRENT at publish; CURRENT until 2026-10-30T20:05:00.060924Z, STALE after 2026-10-30T20:15:00.060924Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-30T19:35:55.037486Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 1.42s
+model board generated 2026-10-30T19:35:55.037486Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.59s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -74,7 +74,7 @@ model board generated 2026-10-30T19:35:55.037486Z · simulations this update: 1 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Nice vs Rennes | Result: home | no | 0.0200 | 0.625 [0.450, 0.788] | +0.604 | +0.495 | 0.49 | - | * | RESEARCH_CANDIDATE |
+| Nice vs Rennes | Result: home | no | 0.0100 | 0.625 [0.450, 0.788] | +0.615 | +0.506 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Nice vs Rennes | Result: away | yes | 0.0100 | 0.367 [0.206, 0.535] | +0.356 | +0.252 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | Nice vs Rennes | Result: draw | yes | 0.0100 | 0.259 [0.205, 0.315] | +0.248 | +0.214 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | away team total over 1.5 | no | 0.5400 | 0.748 [0.631, 0.851] | +0.190 | +0.117 | 0.65 | - | * | RESEARCH_CANDIDATE |
@@ -90,7 +90,6 @@ model board generated 2026-10-30T19:35:55.037486Z · simulations this update: 1 
 | Pachuca vs Tigres UANL | btts | no | 0.4100 | 0.582 [0.460, 0.690] | +0.155 | +0.077 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | btts | no | 0.3500 | 0.512 [0.395, 0.625] | +0.146 | +0.073 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Tijuana | home team total over 1.5 | no | 0.3700 | 0.571 [0.389, 0.733] | +0.185 | +0.071 | 0.44 | - | * | RESEARCH_CANDIDATE |
-| Monterrey vs Tijuana | home team total over 2.5 | no | 0.6400 | 0.805 [0.659, 0.918] | +0.149 | +0.070 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 1.5 | no | 0.1900 | 0.378 [0.219, 0.546] | +0.177 | +0.069 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | away team total over 0.5 | no | 0.4000 | 0.558 [0.452, 0.668] | +0.141 | +0.069 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Tigres UANL | First-half total goals over 2.5 | no | 0.8000 | 0.917 [0.849, 0.971] | +0.106 | +0.069 | 0.87 | - | * | RESEARCH_CANDIDATE |
@@ -98,6 +97,7 @@ model board generated 2026-10-30T19:35:55.037486Z · simulations this update: 1 
 | Pachuca vs Tigres UANL | away team total over 0.5 | no | 0.2800 | 0.439 [0.307, 0.561] | +0.145 | +0.067 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Tigres UANL | away team total over 1.5 | no | 0.6500 | 0.790 [0.669, 0.886] | +0.124 | +0.063 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 4.5 | no | 0.8100 | 0.921 [0.840, 0.980] | +0.100 | +0.061 | 0.87 | - |  | RESEARCH_CANDIDATE |
+| Monterrey vs Tijuana | home team total over 2.5 | no | 0.6500 | 0.805 [0.659, 0.918] | +0.139 | +0.060 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs San Diego FC | Result: away | no | 0.7300 | 0.854 [0.758, 0.935] | +0.110 | +0.057 | 0.78 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | away team total over 1.5 | no | 0.7700 | 0.882 [0.802, 0.947] | +0.099 | +0.057 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | away team total over 2.5 | no | 0.8200 | 0.920 [0.860, 0.968] | +0.090 | +0.056 | 0.87 | - |  | RESEARCH_CANDIDATE |
