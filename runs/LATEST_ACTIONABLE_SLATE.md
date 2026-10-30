@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261030T153732Z-22cbef` · generated 2026-10-30T15:37:32.501785Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261030T155232Z-184026` · generated 2026-10-30T15:52:32.559026Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-30T15:34:37.058231Z (CURRENT at publish; CURRENT until 2026-10-30T15:54:37.058231Z, STALE after 2026-10-30T16:04:37.058231Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-30T15:49:37.081835Z (CURRENT at publish; CURRENT until 2026-10-30T16:09:37.081835Z, STALE after 2026-10-30T16:19:37.081835Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-30T15:22:33.669089Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.70s
+model board generated 2026-10-30T15:22:33.669089Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.47s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -97,15 +97,15 @@ model board generated 2026-10-30T15:22:33.669089Z · simulations this update: 0 
 | Pachuca vs Tigres UANL | away team total over 0.5 | no | 0.2900 | 0.439 [0.307, 0.561] | +0.135 | +0.056 | 0.34 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | btts | no | 0.3900 | 0.535 [0.415, 0.649] | +0.128 | +0.055 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | Total goals over 2.5 | no | 0.3700 | 0.543 [0.377, 0.695] | +0.157 | +0.054 | 0.42 | - | * | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Real Salt Lake | Total goals over 2.5 | no | 0.3500 | 0.518 [0.356, 0.670] | +0.152 | +0.049 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Tijuana | home wins by more than 1.5 | no | 0.6200 | 0.759 [0.611, 0.882] | +0.123 | +0.047 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Le Havre vs Paris Saint-Germain | Result: draw | yes | 0.1600 | 0.257 [0.196, 0.321] | +0.088 | +0.046 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs San Diego FC | Result: home | yes | 0.5300 | 0.683 [0.537, 0.823] | +0.135 | +0.045 | 0.57 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | away team total over 1.5 | no | 0.7800 | 0.877 [0.811, 0.938] | +0.085 | +0.045 | 0.82 | - | * | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | Total goals over 3.5 | no | 0.6400 | 0.772 [0.635, 0.885] | +0.116 | +0.042 | 0.68 | - | * | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Real Salt Lake | Total goals over 3.5 | no | 0.5800 | 0.725 [0.576, 0.853] | +0.128 | +0.042 | 0.62 | - |  | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Real Salt Lake | Total goals over 3.5 | no | 0.5800 | 0.725 [0.576, 0.853] | +0.128 | +0.042 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | Lazio vs Cagliari | Result: away | yes | 0.1300 | 0.271 [0.143, 0.412] | +0.133 | +0.042 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | Total goals over 2.5 | no | 0.4200 | 0.573 [0.411, 0.721] | +0.136 | +0.040 | 0.45 | - |  | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Real Salt Lake | Total goals over 2.5 | no | 0.3600 | 0.518 [0.356, 0.670] | +0.142 | +0.039 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | Monterrey vs Tijuana | First-half total goals over 2.5 | no | 0.8000 | 0.893 [0.809, 0.961] | +0.082 | +0.039 | 0.84 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | First half: both teams to score | no | 0.8000 | 0.891 [0.829, 0.951] | +0.080 | +0.039 | 0.84 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Pumas UNAM | away team total over 1.5 | no | 0.5200 | 0.663 [0.518, 0.791] | +0.126 | +0.039 | 0.55 | - | * | RESEARCH_CANDIDATE |
@@ -114,8 +114,8 @@ model board generated 2026-10-30T15:22:33.669089Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2008
-action_NO_QUOTE: 337
+action_NO_EDGE: 2010
+action_NO_QUOTE: 335
 action_RESEARCH_CANDIDATE: 169
 contract_sides: 2514
 fixtures: 53
