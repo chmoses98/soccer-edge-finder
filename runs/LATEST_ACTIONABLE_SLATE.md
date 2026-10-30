@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261030T220104Z-c5660f` · generated 2026-10-30T22:01:04.082846Z · trigger `kickoff_chain:T-60/T-5` · mode `model_refresh_and_reprice`
+slate `slate-20261030T220803Z-386f38` · generated 2026-10-30T22:08:03.162263Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-30T21:57:54.723787Z (CURRENT at publish; CURRENT until 2026-10-30T22:17:54.723787Z, STALE after 2026-10-30T22:27:54.723787Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-30T22:05:04.118745Z (CURRENT at publish; CURRENT until 2026-10-30T22:25:04.118745Z, STALE after 2026-10-30T22:35:04.118745Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-30T22:01:01.541363Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 1.58s
+model board generated 2026-10-30T22:01:01.541363Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.80s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-30T22:01:01.541363Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-30T23:00:00Z | Corinthians vs Mirassol (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
+| 2026-10-30T23:00:00Z | Corinthians vs Mirassol (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | CURRENT entry | CURRENT | 14 | 0 |
 | 2026-10-31T00:15:00Z | Racing Club vs Aldosivi (arg.primera) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-31T01:00:00Z | FC Juárez vs Querétaro (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-31T01:00:00Z | Atlético San Luis vs Atlas (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -37,7 +37,7 @@ model board generated 2026-10-30T22:01:01.541363Z · simulations this update: 1 
 | 2026-10-31T18:00:00Z | FC Cincinnati vs Philadelphia Union (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-31T18:00:00Z | Columbus Crew vs D.C. United (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-31T18:00:00Z | New York City FC vs CF Montréal (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-31T19:00:00Z | Coritiba vs Vitória (bra.serie_a) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 11 | 0 |
+| 2026-10-31T19:00:00Z | Coritiba vs Vitória (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 11 | 0 |
 | 2026-10-31T19:00:00Z | Sporting Kansas City vs FC Dallas (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-31T19:00:00Z | St. Louis City SC vs San Diego FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-31T19:45:00Z | Lyon vs Angers (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -74,7 +74,7 @@ model board generated 2026-10-30T22:01:01.541363Z · simulations this update: 1 
 | 2026-11-01T21:30:00Z | Atlanta United vs Toronto FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 59 | 0 |
 | 2026-11-01T21:30:00Z | Nashville SC vs New York Red Bulls (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 59 | 0 |
 
-## Candidates on CURRENT prices (189; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (191; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -122,9 +122,9 @@ model board generated 2026-10-30T22:01:01.541363Z · simulations this update: 1 
 ## Counts
 
 ```
-action_NO_EDGE: 2229
-action_NO_QUOTE: 360
-action_RESEARCH_CANDIDATE: 189
+action_NO_EDGE: 2228
+action_NO_QUOTE: 359
+action_RESEARCH_CANDIDATE: 191
 contract_sides: 2778
 fixtures: 61
 fixtures_model_invalidated: 0
