@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261030T233003Z-f76aa2` · generated 2026-10-30T23:30:03.928863Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261030T234529Z-d07c84` · generated 2026-10-30T23:45:29.977604Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-30T23:26:53.299992Z (CURRENT at publish; CURRENT until 2026-10-30T23:46:53.299992Z, STALE after 2026-10-30T23:56:53.299992Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-30T23:42:26.275322Z (CURRENT at publish; CURRENT until 2026-10-31T00:02:26.275322Z, STALE after 2026-10-31T00:12:26.275322Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-30T23:29:53.571901Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 1.66s
+model board generated 2026-10-30T23:29:53.571901Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.65s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,10 +12,10 @@ model board generated 2026-10-30T23:29:53.571901Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-31T00:15:00Z | Racing Club vs Aldosivi (arg.primera) | VALID (AGING) | unconfirmed (CURRENT) | AGING entry | CURRENT | 3 | 0 |
+| 2026-10-31T00:15:00Z | Racing Club vs Aldosivi (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | AGING entry | CURRENT | 3 | 0 |
 | 2026-10-31T01:00:00Z | FC Juárez vs Querétaro (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-31T01:00:00Z | Atlético San Luis vs Atlas (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-31T03:00:00Z | Puebla vs Pumas UNAM (mex.liga_mx) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-31T03:00:00Z | Puebla vs Pumas UNAM (mex.liga_mx) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-31T12:30:00Z | Chelsea vs Manchester United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-31T14:00:00Z | Bologna vs Monza (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-31T14:30:00Z | FC Augsburg vs SC Freiburg (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -127,7 +127,7 @@ action_NO_QUOTE: 370
 action_RESEARCH_CANDIDATE: 195
 contract_sides: 2904
 fixtures: 61
-fixtures_model_invalidated: 0
+fixtures_model_invalidated: 1
 fixtures_model_missing: 0
 ```
 
