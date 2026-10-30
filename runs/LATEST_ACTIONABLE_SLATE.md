@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261030T074544Z-203bc5` · generated 2026-10-30T07:45:44.428723Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261030T080045Z-718647` · generated 2026-10-30T08:00:45.716965Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-30T07:42:52.086976Z (CURRENT at publish; CURRENT until 2026-10-30T08:02:52.086976Z, STALE after 2026-10-30T08:12:52.086976Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-30T07:57:53.069578Z (CURRENT at publish; CURRENT until 2026-10-30T08:17:53.069578Z, STALE after 2026-10-30T08:27:53.069578Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-30T07:00:25.275894Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.94s
+model board generated 2026-10-30T07:00:25.275894Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.68s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -65,11 +65,11 @@ model board generated 2026-10-30T07:00:25.275894Z · simulations this update: 0 
 | Guadalajara vs Atlante | Total goals over 3.5 | no | 0.6200 | 0.819 [0.682, 0.930] | +0.182 | +0.106 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | away team total over 1.5 | no | 0.5700 | 0.748 [0.631, 0.851] | +0.160 | +0.088 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | btts | no | 0.4600 | 0.625 [0.522, 0.724] | +0.148 | +0.085 | 0.54 | - | * | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Real Salt Lake | btts | no | 0.3400 | 0.512 [0.395, 0.625] | +0.156 | +0.083 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | away team total over 0.5 | no | 0.2200 | 0.391 [0.275, 0.507] | +0.159 | +0.079 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | First-half total goals over 2.5 | no | 0.8000 | 0.926 [0.859, 0.981] | +0.115 | +0.079 | 0.88 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Tigres UANL | btts | no | 0.4100 | 0.582 [0.460, 0.690] | +0.155 | +0.077 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Le Havre vs Paris Saint-Germain | Result: home | yes | 0.1000 | 0.287 [0.147, 0.445] | +0.181 | +0.076 | 0.17 | - |  | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Real Salt Lake | btts | no | 0.3500 | 0.512 [0.395, 0.625] | +0.146 | +0.073 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 1.5 | no | 0.1900 | 0.378 [0.219, 0.546] | +0.177 | +0.069 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Tigres UANL | First-half total goals over 2.5 | no | 0.8000 | 0.917 [0.849, 0.971] | +0.106 | +0.069 | 0.87 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 4.5 | no | 0.8100 | 0.921 [0.840, 0.980] | +0.100 | +0.061 | 0.87 | - |  | RESEARCH_CANDIDATE |
