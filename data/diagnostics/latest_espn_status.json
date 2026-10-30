@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-29T19:48:29.056202+00:00",
-  "events": 655,
-  "events_skipped_unmapped": 376,
-  "fixtures_mapped": 279,
+  "as_of": "2026-10-30T00:09:46.883283+00:00",
+  "events": 666,
+  "events_skipped_unmapped": 381,
+  "fixtures_mapped": 285,
   "health": {
     "reasons": [
-      "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=76"
+      "weather_failures:4",
+      "weather_stopped:consecutive_failures:skipped=87"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 62,
-    "events": 68,
+    "captured": 47,
+    "events": 47,
     "failures": [],
-    "published_post": 25,
-    "published_pre_kickoff": 8,
-    "unchanged": 6,
-    "unpublished": 35
+    "published_post": 3,
+    "published_pre_kickoff": 2,
+    "unchanged": 0,
+    "unpublished": 42
   },
   "map_proposals": {
     "bel.1": {
@@ -107,9 +107,12 @@
     },
     "eng.3": {
       "ambiguous": {},
-      "proposed": {},
+      "proposed": {
+        "375": "eng.leicester"
+      },
       "unresolved": {
         "342": "Peterborough United",
+        "351": "Cambridge United",
         "387": "Bradford City"
       }
     },
@@ -117,7 +120,19 @@
       "ambiguous": {},
       "proposed": {},
       "unresolved": {
+        "308": "Bristol Rovers",
         "3891": "Fleetwood Town"
+      }
+    },
+    "eng.fa": {
+      "ambiguous": {},
+      "proposed": {
+        "375": "eng.leicester"
+      },
+      "unresolved": {
+        "308": "Bristol Rovers",
+        "351": "Cambridge United",
+        "4489": "Oxford City"
       }
     },
     "eng.league_cup": {
@@ -350,7 +365,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 2,
+  "results_appended": 4,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -451,9 +466,12 @@
     "269": "1. FC N\u00fcrnberg",
     "2737": "Albacete",
     "3024": "FC Thun",
+    "308": "Bristol Rovers",
     "342": "Peterborough United",
+    "351": "Cambridge United",
     "3747": "Granada",
     "3748": "Pontevedra",
+    "375": "Leicester City",
     "3752": "Eibar",
     "3788": "Sporting Gij\u00f3n",
     "3812": "SV Darmstadt 98",
@@ -464,6 +482,7 @@
     "4438": "Castell\u00f3n",
     "4471": "Karlsruher SC",
     "4475": "Conquense",
+    "4489": "Oxford City",
     "4515": "Mirand\u00e9s",
     "489": "Hajduk Split",
     "490": "Levski Sofia",
@@ -511,17 +530,18 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 9,
-    "events": 88,
+    "captured": 10,
+    "events": 101,
     "failures": [
-      "401892149: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-32.9295&longitude=151.7801&hourly=",
-      "401892148: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Melbourne&count=5&language=en&f",
-      "401892147: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Sydney&count=5&language=en&form"
+      "401841650: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rosario&count=5&language=en&for",
+      "401892150: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Brisbane&count=5&language=en&fo",
+      "401892149: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Newcastle&count=5&language=en&f",
+      "401892148: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Melbourne&count=5&language=en&f"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 76,
+    "skipped": 87,
     "stopped": "consecutive_failures"
   }
 }
