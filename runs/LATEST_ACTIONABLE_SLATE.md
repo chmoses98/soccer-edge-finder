@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261030T070059Z-7ad6c5` · generated 2026-10-30T07:00:59.613461Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261030T071516Z-b7052c` · generated 2026-10-30T07:15:16.611866Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-30T06:57:24.400225Z (CURRENT at publish; CURRENT until 2026-10-30T07:17:24.400225Z, STALE after 2026-10-30T07:27:24.400225Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-30T07:12:24.413651Z (CURRENT at publish; CURRENT until 2026-10-30T07:32:24.413651Z, STALE after 2026-10-30T07:42:24.413651Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-30T07:00:25.275894Z · simulations this update: 27 · Odds API calls this update: 0 (credits 0) · reprice 0.63s
+model board generated 2026-10-30T07:00:25.275894Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.87s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -41,9 +41,9 @@ model board generated 2026-10-30T07:00:25.275894Z · simulations this update: 27
 | 2026-10-31T18:00:00Z | FC Cincinnati vs Philadelphia Union (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-31T18:00:00Z | Columbus Crew vs D.C. United (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-31T18:00:00Z | New York City FC vs CF Montréal (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-31T19:00:00Z | Coritiba vs Vitória (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 11 | 0 |
-| 2026-10-31T19:00:00Z | Sporting Kansas City vs FC Dallas (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-31T19:00:00Z | St. Louis City SC vs San Diego FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
+| 2026-10-31T19:00:00Z | Coritiba vs Vitória (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 11 | 0 |
+| 2026-10-31T19:00:00Z | Sporting Kansas City vs FC Dallas (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-31T19:00:00Z | St. Louis City SC vs San Diego FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-31T19:45:00Z | Troyes vs Le Mans (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-31T19:45:00Z | AC Milan vs Inter Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-31T20:00:00Z | Aston Villa vs Fulham (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -55,12 +55,12 @@ model board generated 2026-10-30T07:00:25.275894Z · simulations this update: 27
 | 2026-11-01T01:30:00Z | Colorado Rapids vs Chicago Fire (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-01T03:10:00Z | Club América vs Toluca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (150; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (151; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Le Havre vs Paris Saint-Germain | Result: away | no | 0.2400 | 0.544 [0.362, 0.716] | +0.292 | +0.173 | 0.4 | - | * | RESEARCH_CANDIDATE |
-| Guadalajara vs Atlante | btts | no | 0.4600 | 0.664 [0.544, 0.770] | +0.186 | +0.114 | 0.57 | - | * | RESEARCH_CANDIDATE |
+| Guadalajara vs Atlante | btts | no | 0.4500 | 0.664 [0.544, 0.770] | +0.197 | +0.124 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 2.5 | no | 0.4000 | 0.637 [0.458, 0.800] | +0.220 | +0.109 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 3.5 | no | 0.6200 | 0.819 [0.682, 0.930] | +0.182 | +0.106 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | away team total over 1.5 | no | 0.5700 | 0.748 [0.631, 0.851] | +0.160 | +0.088 | 0.65 | - | * | RESEARCH_CANDIDATE |
@@ -77,11 +77,12 @@ model board generated 2026-10-30T07:00:25.275894Z · simulations this update: 27
 | New York City FC vs CF Montréal | away team total over 0.5 | no | 0.4100 | 0.558 [0.452, 0.668] | +0.131 | +0.059 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Tijuana | home wins by more than 1.5 | no | 0.6100 | 0.759 [0.611, 0.882] | +0.132 | +0.056 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Le Havre vs Paris Saint-Germain | Result: draw | yes | 0.1500 | 0.257 [0.196, 0.321] | +0.098 | +0.056 | 0.2 | - |  | RESEARCH_CANDIDATE |
+| Pachuca vs Tigres UANL | away team total over 1.5 | no | 0.6600 | 0.790 [0.669, 0.886] | +0.114 | +0.053 | 0.71 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | Total goals over 2.5 | no | 0.3500 | 0.518 [0.356, 0.670] | +0.152 | +0.049 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs San Diego FC | home wins by more than 1.5 | yes | 0.3100 | 0.481 [0.316, 0.656] | +0.156 | +0.048 | 0.35 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs San Diego FC | Result: away | no | 0.7400 | 0.854 [0.758, 0.935] | +0.101 | +0.048 | 0.78 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | away team total over 2.5 | no | 0.8300 | 0.920 [0.860, 0.968] | +0.080 | +0.047 | 0.87 | - |  | RESEARCH_CANDIDATE |
-| Pachuca vs Tigres UANL | away team total over 0.5 | no | 0.3000 | 0.439 [0.307, 0.561] | +0.124 | +0.046 | 0.34 | - | * | RESEARCH_CANDIDATE |
+| Pachuca vs Tigres UANL | away team total over 0.5 | no | 0.3000 | 0.439 [0.307, 0.561] | +0.124 | +0.046 | 0.34 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs San Diego FC | Result: home | yes | 0.5300 | 0.683 [0.537, 0.823] | +0.135 | +0.045 | 0.57 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | btts | no | 0.4000 | 0.535 [0.415, 0.649] | +0.118 | +0.045 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | away team total over 1.5 | no | 0.7800 | 0.877 [0.811, 0.938] | +0.085 | +0.045 | 0.82 | - |  | RESEARCH_CANDIDATE |
@@ -98,14 +99,13 @@ model board generated 2026-10-30T07:00:25.275894Z · simulations this update: 27
 | New York City FC vs CF Montréal | Total goals over 3.5 | no | 0.6100 | 0.747 [0.600, 0.869] | +0.120 | +0.038 | 0.64 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Tigres UANL | Total goals over 2.5 | no | 0.4600 | 0.612 [0.455, 0.757] | +0.135 | +0.038 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | away wins by more than 1.5 | no | 0.8400 | 0.918 [0.862, 0.965] | +0.069 | +0.037 | 0.87 | - | * | RESEARCH_CANDIDATE |
-| FC Augsburg vs SC Freiburg | Result: away | no | 0.5700 | 0.714 [0.557, 0.857] | +0.127 | +0.037 | 0.6 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1948
-action_NO_QUOTE: 350
-action_RESEARCH_CANDIDATE: 150
+action_NO_EDGE: 1945
+action_NO_QUOTE: 352
+action_RESEARCH_CANDIDATE: 151
 contract_sides: 2448
 fixtures: 42
 fixtures_model_invalidated: 0
