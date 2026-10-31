@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261031T074055Z-748268` · generated 2026-10-31T07:40:55.087090Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261031T075529Z-d6a289` · generated 2026-10-31T07:55:29.139895Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-31T07:37:31.978050Z (CURRENT at publish; CURRENT until 2026-10-31T07:57:31.978050Z, STALE after 2026-10-31T08:07:31.978050Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-31T07:52:32.002140Z (CURRENT at publish; CURRENT until 2026-10-31T08:12:32.002140Z, STALE after 2026-10-31T08:22:32.002140Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-31T07:40:38.112213Z · simulations this update: 38 · Odds API calls this update: 0 (credits 0) · reprice 1.61s
+model board generated 2026-10-31T07:40:38.112213Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.84s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -74,7 +74,7 @@ model board generated 2026-10-31T07:40:38.112213Z · simulations this update: 38
 | 2026-11-02T01:30:00Z | Los Angeles FC vs Minnesota United (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-02T02:45:00Z | Portland Timbers vs Houston Dynamo (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (174; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (173; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -105,6 +105,7 @@ model board generated 2026-10-31T07:40:38.112213Z · simulations this update: 38
 | Portland Timbers vs Houston Dynamo | Total goals over 2.5 | no | 0.4000 | 0.575 [0.417, 0.725] | +0.158 | +0.061 | 0.46 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | away team total over 1.5 | no | 0.4500 | 0.616 [0.474, 0.750] | +0.149 | +0.059 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs Necaxa | btts | no | 0.3700 | 0.514 [0.394, 0.625] | +0.128 | +0.055 | 0.42 | - | * | RESEARCH_CANDIDATE |
+| Vancouver Whitecaps vs Seattle Sounders | Total goals over 4.5 | no | 0.7600 | 0.878 [0.785, 0.957] | +0.105 | +0.054 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Hull City vs Ipswich Town | Result: away | no | 0.6300 | 0.804 [0.621, 0.948] | +0.158 | +0.053 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | Total goals over 2.5 | no | 0.4100 | 0.573 [0.411, 0.721] | +0.146 | +0.050 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | away team total over 0.5 | no | 0.2300 | 0.371 [0.252, 0.492] | +0.128 | +0.049 | 0.27 | - | * | RESEARCH_CANDIDATE |
@@ -116,16 +117,15 @@ model board generated 2026-10-31T07:40:38.112213Z · simulations this update: 38
 | Guadalajara vs Atlante | First-half total goals over 0.5 | no | 0.2500 | 0.397 [0.268, 0.522] | +0.134 | +0.047 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Atlanta United vs Toronto FC | btts | no | 0.3400 | 0.476 [0.364, 0.588] | +0.120 | +0.047 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | away team total over 1.5 | no | 0.5900 | 0.727 [0.600, 0.841] | +0.120 | +0.044 | 0.63 | - |  | RESEARCH_CANDIDATE |
-| Vancouver Whitecaps vs Seattle Sounders | Total goals over 4.5 | no | 0.7700 | 0.878 [0.785, 0.957] | +0.095 | +0.044 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Hull City vs Ipswich Town | Result: home | yes | 0.3500 | 0.580 [0.325, 0.838] | +0.214 | +0.043 | 0.39 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_MODEL_STALE: 762
-action_NO_EDGE: 1744
-action_NO_QUOTE: 372
-action_RESEARCH_CANDIDATE: 174
+action_MODEL_STALE: 763
+action_NO_EDGE: 1745
+action_NO_QUOTE: 371
+action_RESEARCH_CANDIDATE: 173
 contract_sides: 3052
 fixtures: 61
 fixtures_model_invalidated: 0
