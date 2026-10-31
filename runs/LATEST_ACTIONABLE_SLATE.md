@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261031T104109Z-c2853d` · generated 2026-10-31T10:41:09.751438Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261031T105615Z-821d44` · generated 2026-10-31T10:56:15.491612Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-31T10:38:12.853985Z (CURRENT at publish; CURRENT until 2026-10-31T10:58:12.853985Z, STALE after 2026-10-31T11:08:12.853985Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-31T10:53:12.879654Z (CURRENT at publish; CURRENT until 2026-10-31T11:13:12.879654Z, STALE after 2026-10-31T11:23:12.879654Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-31T07:40:38.112213Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.73s
+model board generated 2026-10-31T07:40:38.112213Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.56s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -78,7 +78,7 @@ model board generated 2026-10-31T07:40:38.112213Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Nashville SC vs New York Red Bulls | btts | no | 0.4100 | 0.658 [0.552, 0.752] | +0.231 | +0.172 | 0.58 | - | * | RESEARCH_CANDIDATE |
+| Nashville SC vs New York Red Bulls | btts | no | 0.4200 | 0.658 [0.552, 0.752] | +0.221 | +0.162 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Levante vs Atlético Madrid | Result: away | no | 0.3600 | 0.598 [0.419, 0.765] | +0.221 | +0.112 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | btts | no | 0.4000 | 0.596 [0.480, 0.702] | +0.179 | +0.112 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 2.5 | no | 0.4000 | 0.637 [0.458, 0.800] | +0.220 | +0.109 | 0.5 | - | * | RESEARCH_CANDIDATE |
@@ -122,9 +122,9 @@ model board generated 2026-10-31T07:40:38.112213Z · simulations this update: 0 
 ## Counts
 
 ```
-action_MODEL_STALE: 980
-action_NO_EDGE: 1536
-action_NO_QUOTE: 402
+action_MODEL_STALE: 981
+action_NO_EDGE: 1538
+action_NO_QUOTE: 399
 action_RESEARCH_CANDIDATE: 134
 contract_sides: 3052
 fixtures: 61
