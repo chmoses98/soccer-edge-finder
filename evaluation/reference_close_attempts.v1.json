@@ -1,12 +1,12 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 221,
-  "PINNACLE_VALID_CLOSE": 296,
-  "CLOSE_BLOCKED_BUDGET": 7,
-  "MISSED_DISPATCHER_CLOSE": 66,
-  "PINNACLE_QUOTED_NOTHING": 15,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 227,
   "NO_SPORT_KEY": 19,
-  "NO_REFERENCE_EVENT": 3
+  "PINNACLE_VALID_CLOSE": 296,
+  "MISSED_DISPATCHER_CLOSE": 74,
+  "NO_REFERENCE_EVENT": 3,
+  "PINNACLE_QUOTED_NOTHING": 15,
+  "CLOSE_BLOCKED_BUDGET": 7
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.belgrano": {
@@ -88,6 +88,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261003T172913Z"
+  },
+  "fx:arg.primera:2026:arg.deportivo_riestra:arg.talleres": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
   },
   "fx:arg.primera:2026:arg.deportivo_riestra:arg.union": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -289,6 +294,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:arg.primera:2026:arg.velez:arg.san_lorenzo": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
   "fx:bra.serie_a:2026:bra.athletico_paranaense:bra.atletico_mineiro": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
@@ -388,6 +398,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261026T221455Z"
+  },
+  "fx:bra.serie_a:2026:bra.coritiba:bra.vitoria": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
   },
   "fx:bra.serie_a:2026:bra.cruzeiro:bra.remo": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -693,6 +708,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261010T134335Z"
+  },
+  "fx:eng.premier_league:2026-27:eng.aston_villa:eng.fulham": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
   },
   "fx:eng.premier_league:2026-27:eng.aston_villa:eng.man_city": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -1035,6 +1055,11 @@
    "batch_id": null
   },
   "fx:esp.la_liga:2026-27:esp.atletico_madrid:esp.deportivo:matchday_10": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:esp.la_liga:2026-27:esp.barcelona:esp.alaves": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
@@ -1644,6 +1669,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261024T150000Z"
   },
+  "fx:fra.ligue_1:2026-27:fra.troyes:fra.le_mans": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
+  },
   "fx:fra.ligue_1:2026-27:fra.troyes:fra.lens": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -2238,6 +2268,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261028T171350Z"
+  },
+  "fx:ita.serie_a:2026-27:ita.milan:ita.inter": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
   },
   "fx:ita.serie_a:2026-27:ita.monza:ita.cagliari": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -2889,6 +2924,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261014T231500Z"
   },
+  "fx:usa.mls:2026:usa.cincinnati:usa.philadelphia_union": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
+  },
   "fx:usa.mls:2026:usa.colorado_rapids:usa.minnesota_united": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
@@ -2908,6 +2948,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261014T231500Z"
+  },
+  "fx:usa.mls:2026:usa.columbus_crew:usa.dc_united": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
   },
   "fx:usa.mls:2026:usa.columbus_crew:usa.toronto": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -2958,6 +3003,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261014T231500Z"
+  },
+  "fx:usa.mls:2026:usa.la_galaxy:usa.austin": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
   },
   "fx:usa.mls:2026:usa.la_galaxy:usa.portland_timbers": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -3034,6 +3084,11 @@
    "close_horizon_delivered": false,
    "batch_id": null
   },
+  "fx:usa.mls:2026:usa.nycfc:usa.cf_montreal": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
+  },
   "fx:usa.mls:2026:usa.orlando_city:usa.columbus_crew": {
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
@@ -3089,6 +3144,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261029T021915Z"
   },
+  "fx:usa.mls:2026:usa.san_jose_earthquakes:usa.real_salt_lake": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
   "fx:usa.mls:2026:usa.seattle_sounders:usa.houston_dynamo": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
@@ -3100,6 +3160,11 @@
    "batch_id": "kd-20261002T011500Z"
   },
   "fx:usa.mls:2026:usa.sporting_kc:usa.austin": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
+  },
+  "fx:usa.mls:2026:usa.sporting_kc:usa.fc_dallas": {
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
    "batch_id": null
@@ -3118,6 +3183,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261029T001500Z"
+  },
+  "fx:usa.mls:2026:usa.st_louis_city:usa.san_diego": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
   },
   "fx:usa.mls:2026:usa.st_louis_city:usa.vancouver_whitecaps": {
    "state": "PINNACLE_VALID_CLOSE",
