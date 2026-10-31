@@ -2,10 +2,10 @@
   "by_horizon": {
     "120": {
       "achieved_minutes_median": 122.52,
-      "achieved_minutes_p10": 118.69,
+      "achieved_minutes_p10": 118.67,
       "achieved_minutes_p90": 126.59,
-      "delivered": 569,
-      "delivery_rate": 0.9297385620915033,
+      "delivered": 570,
+      "delivery_rate": 0.9298531810766721,
       "lateness_minutes_max": 62.51,
       "lateness_minutes_median": -2.52,
       "missed": 43
@@ -14,85 +14,50 @@
       "achieved_minutes_median": 12.04,
       "achieved_minutes_p10": 10.68,
       "achieved_minutes_p90": 13.6,
-      "delivered": 522,
-      "delivery_rate": 0.8758389261744967,
+      "delivered": 523,
+      "delivery_rate": 0.870216306156406,
       "lateness_minutes_max": 14.64,
       "lateness_minutes_median": 2.96,
-      "missed": 74
+      "missed": 78
     },
     "30": {
       "achieved_minutes_median": 27.33,
       "achieved_minutes_p10": 24.92,
       "achieved_minutes_p90": 29.03,
-      "delivered": 529,
-      "delivery_rate": 0.8846153846153846,
+      "delivered": 530,
+      "delivery_rate": 0.8818635607321131,
       "lateness_minutes_max": 16.98,
       "lateness_minutes_median": 2.67,
-      "missed": 69
+      "missed": 71
     },
     "5": {
       "achieved_minutes_median": 2.14,
       "achieved_minutes_p10": 0.07,
       "achieved_minutes_p90": 2.56,
-      "delivered": 525,
-      "delivery_rate": 0.8838383838383839,
+      "delivered": 526,
+      "delivery_rate": 0.8781302170283807,
       "lateness_minutes_max": 7.39,
       "lateness_minutes_median": 2.86,
-      "missed": 69
+      "missed": 73
     },
     "60": {
       "achieved_minutes_median": 61.27,
       "achieved_minutes_p10": 56.98,
       "achieved_minutes_p90": 62.25,
-      "delivered": 540,
-      "delivery_rate": 0.8940397350993378,
+      "delivered": 541,
+      "delivery_rate": 0.8912685337726524,
       "lateness_minutes_max": 31.12,
       "lateness_minutes_median": -1.27,
-      "missed": 64
+      "missed": 66
     }
   },
-  "delivered_total": 2685,
-  "delivery_rate_total": 0.8938082556591211,
-  "fixtures_tracked": 612,
-  "generated_at": "2026-10-30T23:58:17Z",
-  "missed_total": 319,
-  "n_pending_fixtures": 87,
+  "delivered_total": 2690,
+  "delivery_rate_total": 0.8904336312479312,
+  "fixtures_tracked": 613,
+  "generated_at": "2026-10-31T06:36:37Z",
+  "missed_total": 331,
+  "n_pending_fixtures": 84,
   "pending_fixtures": [
-    {
-      "competition_id": "arg.primera",
-      "fixture_id": "fx:arg.primera:2026:arg.racing:arg.aldosivi",
-      "kickoff_utc": "2026-10-31T00:15:00Z",
-      "markets_discovered": 3,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "arg.primera",
-      "fixture_id": "fx:arg.primera:2026:arg.sarmiento:arg.rosario_central",
-      "kickoff_utc": "2026-10-31T00:15:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "mex.liga_mx",
-      "fixture_id": "fx:mex.liga_mx:2026:mex.juarez:mex.queretaro",
-      "kickoff_utc": "2026-10-31T01:00:00Z",
-      "markets_discovered": 77,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "mex.liga_mx",
-      "fixture_id": "fx:mex.liga_mx:2026:mex.san_luis:mex.atlas",
-      "kickoff_utc": "2026-10-31T01:00:00Z",
-      "markets_discovered": 77,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "mex.liga_mx",
-      "fixture_id": "fx:mex.liga_mx:2026:mex.puebla:mex.pumas",
-      "kickoff_utc": "2026-10-31T03:00:00Z",
-      "markets_discovered": 77,
-      "source": "run_output"
-    },
     {
       "competition_id": "eng.premier_league",
       "fixture_id": "fx:eng.premier_league:2026-27:eng.chelsea:eng.man_united:matchday_9",
@@ -664,6 +629,20 @@
       "competition_id": "bra.serie_a",
       "fixture_id": "fx:bra.serie_a:2026:bra.bragantino:bra.santos",
       "kickoff_utc": "2026-11-02T23:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "arg.primera",
+      "fixture_id": "fx:arg.primera:2026:arg.atletico_tucuman:arg.argentinos_juniors",
+      "kickoff_utc": "2026-11-03T00:15:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "arg.primera",
+      "fixture_id": "fx:arg.primera:2026:arg.independiente_rivadavia:arg.banfield",
+      "kickoff_utc": "2026-11-03T00:15:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }

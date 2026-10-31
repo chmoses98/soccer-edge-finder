@@ -1,10 +1,10 @@
 {
  "counts": {
-  "PINNACLE_VALID_CLOSE": 295,
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 203,
-  "MISSED_DISPATCHER_CLOSE": 61,
   "PINNACLE_QUOTED_NOTHING": 15,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 203,
+  "PINNACLE_VALID_CLOSE": 296,
   "NO_SPORT_KEY": 19,
+  "MISSED_DISPATCHER_CLOSE": 65,
   "NO_REFERENCE_EVENT": 3
  },
  "fixtures": {
@@ -193,6 +193,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261017T201500Z"
   },
+  "fx:arg.primera:2026:arg.racing:arg.aldosivi": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
+  },
   "fx:arg.primera:2026:arg.racing:arg.belgrano": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
@@ -241,6 +246,11 @@
   "fx:arg.primera:2026:arg.sarmiento:arg.river_plate": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:arg.primera:2026:arg.sarmiento:arg.rosario_central": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
    "batch_id": null
   },
   "fx:arg.primera:2026:arg.talleres:arg.defensa_y_justicia": {
@@ -2338,6 +2348,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261021T004500Z"
   },
+  "fx:mex.liga_mx:2026:mex.juarez:mex.queretaro": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
+  },
   "fx:mex.liga_mx:2026:mex.juarez:mex.tijuana": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
@@ -2388,6 +2403,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261022T004502Z"
   },
+  "fx:mex.liga_mx:2026:mex.puebla:mex.pumas": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261031T024502Z"
+  },
   "fx:mex.liga_mx:2026:mex.pumas:mex.cruz_azul": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
@@ -2407,6 +2427,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261026T004500Z"
+  },
+  "fx:mex.liga_mx:2026:mex.san_luis:mex.atlas": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
   },
   "fx:mex.liga_mx:2026:mex.san_luis:mex.queretaro": {
    "state": "PINNACLE_VALID_CLOSE",
