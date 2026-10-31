@@ -1,11 +1,11 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 200,
+  "PINNACLE_VALID_CLOSE": 295,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 203,
   "MISSED_DISPATCHER_CLOSE": 61,
-  "PINNACLE_VALID_CLOSE": 293,
-  "NO_SPORT_KEY": 19,
   "PINNACLE_QUOTED_NOTHING": 15,
-  "NO_REFERENCE_EVENT": 2
+  "NO_SPORT_KEY": 19,
+  "NO_REFERENCE_EVENT": 3
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.belgrano": {
@@ -103,6 +103,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:arg.primera:2026:arg.estudiantes_rio_cuarto:arg.gimnasia_la_plata": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
   "fx:arg.primera:2026:arg.gimnasia_la_plata:arg.atletico_tucuman": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -127,6 +132,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261015T224359Z"
+  },
+  "fx:arg.primera:2026:arg.huracan:arg.tigre": {
+   "state": "NO_REFERENCE_EVENT",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261030T215050Z"
   },
   "fx:arg.primera:2026:arg.independiente:arg.boca_juniors": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -347,6 +357,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261024T221633Z"
+  },
+  "fx:bra.serie_a:2026:bra.corinthians:bra.mirassol": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261030T224921Z"
   },
   "fx:bra.serie_a:2026:bra.corinthians:bra.vitoria": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -1223,6 +1238,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261017T140046Z"
   },
+  "fx:esp.la_liga:2026-27:esp.villarreal:esp.espanyol": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
   "fx:fifa.friendly:2026:nat.aus:nat.bra": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -1402,6 +1422,16 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261010T145859Z"
+  },
+  "fx:fra.ligue_1:2026-27:fra.lille:fra.lens": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:fra.ligue_1:2026-27:fra.lille:fra.lens:matchday_9": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261030T195149Z"
   },
   "fx:fra.ligue_1:2026-27:fra.lorient:fra.monaco": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",

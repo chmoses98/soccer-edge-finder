@@ -1,12 +1,12 @@
 {
  "schema": "dispatch_reliability_v1",
- "generated_at": "2026-10-30T19:58:53Z",
+ "generated_at": "2026-10-30T23:58:17Z",
  "cadence": {
   "external_heartbeat_minutes": null,
   "github_backup_minutes": 60
  },
  "last_wake": {
-  "started_at": "2026-10-30T19:26:49Z",
+  "started_at": "2026-10-30T23:46:07Z",
   "trigger_source": "github-schedule-backup",
   "status": "OK",
   "no_action_reason": null
@@ -31,19 +31,19 @@
   "capture_runs_failed": 0,
   "paid_calls": 0,
   "credits_spent": 0,
-  "fixtures_with_horizons": 11,
-  "horizons_eligible": 49,
-  "horizons_delivered": 23,
-  "horizons_missed": 26,
+  "fixtures_with_horizons": 14,
+  "horizons_eligible": 63,
+  "horizons_delivered": 41,
+  "horizons_missed": 22,
   "horizon_states": {
-   "DELIVERED": 23,
-   "MISSED_BEFORE_WAKE": 23,
+   "DELIVERED": 41,
+   "MISSED_BEFORE_WAKE": 19,
    "MISSED_EXECUTION_FAILURE": 3
   },
-  "capture_success_rate": 0.46938775510204084,
-  "close_fixtures_eligible": 8,
-  "close_fixtures_delivered": 1,
-  "close_success_rate": 0.125
+  "capture_success_rate": 0.6507936507936508,
+  "close_fixtures_eligible": 12,
+  "close_fixtures_delivered": 6,
+  "close_success_rate": 0.5
  },
  "last_7d": {
   "span_hours": 168.0,
@@ -65,19 +65,19 @@
   "capture_runs_failed": 1,
   "paid_calls": 41,
   "credits_spent": 123,
-  "fixtures_with_horizons": 183,
-  "horizons_eligible": 909,
-  "horizons_delivered": 787,
+  "fixtures_with_horizons": 185,
+  "horizons_eligible": 917,
+  "horizons_delivered": 795,
   "horizons_missed": 122,
   "horizon_states": {
-   "DELIVERED": 787,
+   "DELIVERED": 795,
    "MISSED_BEFORE_WAKE": 80,
    "MISSED_EXECUTION_FAILURE": 42
   },
-  "capture_success_rate": 0.8657865786578658,
-  "close_fixtures_eligible": 180,
-  "close_fixtures_delivered": 157,
-  "close_success_rate": 0.8722222222222222
+  "capture_success_rate": 0.8669574700109052,
+  "close_fixtures_eligible": 183,
+  "close_fixtures_delivered": 160,
+  "close_success_rate": 0.8743169398907104
  },
  "definition": "capture_success_rate = delivered / eligible horizons whose window closed in the span (NOT_APPLICABLE excluded); close_success_rate = fixtures with a T-15 or T-5 delivery / fixtures whose close windows closed in the span"
 }
