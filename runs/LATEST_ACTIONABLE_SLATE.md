@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261031T075529Z-d6a289` · generated 2026-10-31T07:55:29.139895Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261031T081100Z-f57bc6` · generated 2026-10-31T08:11:00.104659Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-31T07:52:32.002140Z (CURRENT at publish; CURRENT until 2026-10-31T08:12:32.002140Z, STALE after 2026-10-31T08:22:32.002140Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-31T08:08:02.917974Z (CURRENT at publish; CURRENT until 2026-10-31T08:28:02.917974Z, STALE after 2026-10-31T08:38:02.917974Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-31T07:40:38.112213Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.84s
+model board generated 2026-10-31T07:40:38.112213Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.80s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -34,17 +34,17 @@ model board generated 2026-10-31T07:40:38.112213Z · simulations this update: 0 
 | 2026-10-31T18:00:00Z | New York City FC vs CF Montréal (usa.mls) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-31T19:00:00Z | Coritiba vs Vitória (bra.serie_a) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 11 | 0 |
 | 2026-10-31T19:00:00Z | Sporting Kansas City vs FC Dallas (usa.mls) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-31T19:00:00Z | St. Louis City SC vs San Diego FC (usa.mls) | VALID (STALE) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 32 | 0 |
+| 2026-10-31T19:00:00Z | St. Louis City SC vs San Diego FC (usa.mls) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-31T19:45:00Z | Lyon vs Angers (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-31T19:45:00Z | Troyes vs Le Mans (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-31T19:45:00Z | AC Milan vs Inter Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-31T20:00:00Z | Aston Villa vs Fulham (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-31T21:00:00Z | LA Galaxy vs Austin FC (usa.mls) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 62 | 0 |
-| 2026-10-31T21:00:00Z | San Jose Earthquakes vs Real Salt Lake (usa.mls) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 62 | 0 |
+| 2026-10-31T21:00:00Z | LA Galaxy vs Austin FC (usa.mls) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 62 | 0 |
+| 2026-10-31T21:00:00Z | San Jose Earthquakes vs Real Salt Lake (usa.mls) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 62 | 0 |
 | 2026-10-31T23:00:00Z | Pachuca vs Tigres UANL (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-01T01:05:00Z | Monterrey vs Tijuana (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-11-01T01:07:00Z | Guadalajara vs Atlante (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-01T01:30:00Z | Colorado Rapids vs Chicago Fire (usa.mls) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-01T01:30:00Z | Colorado Rapids vs Chicago Fire (usa.mls) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-01T03:10:00Z | Club América vs Toluca (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-01T11:30:00Z | Como vs Venezia (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-01T12:00:00Z | Athletic Club vs Real Sociedad (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -74,7 +74,7 @@ model board generated 2026-10-31T07:40:38.112213Z · simulations this update: 0 
 | 2026-11-02T01:30:00Z | Los Angeles FC vs Minnesota United (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-02T02:45:00Z | Portland Timbers vs Houston Dynamo (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (173; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (174; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -113,19 +113,19 @@ model board generated 2026-10-31T07:40:38.112213Z · simulations this update: 0 
 | New England Revolution vs Inter Miami | Result: away | no | 0.5900 | 0.731 [0.610, 0.849] | +0.124 | +0.048 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | Result: away | no | 0.6500 | 0.779 [0.673, 0.879] | +0.113 | +0.048 | 0.69 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | away team total over 1.5 | no | 0.7800 | 0.882 [0.802, 0.947] | +0.090 | +0.047 | 0.82 | - |  | RESEARCH_CANDIDATE |
-| Guadalajara vs Atlante | First-half exact score 0-0 (home-away) | yes | 0.2500 | 0.397 [0.268, 0.522] | +0.134 | +0.047 | 0.29 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | First-half total goals over 0.5 | no | 0.2500 | 0.397 [0.268, 0.522] | +0.134 | +0.047 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Atlanta United vs Toronto FC | btts | no | 0.3400 | 0.476 [0.364, 0.588] | +0.120 | +0.047 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | away team total over 1.5 | no | 0.5900 | 0.727 [0.600, 0.841] | +0.120 | +0.044 | 0.63 | - |  | RESEARCH_CANDIDATE |
 | Hull City vs Ipswich Town | Result: home | yes | 0.3500 | 0.580 [0.325, 0.838] | +0.214 | +0.043 | 0.39 | - |  | RESEARCH_CANDIDATE |
+| Colorado Rapids vs Chicago Fire | Total goals over 3.5 | no | 0.6400 | 0.772 [0.635, 0.885] | +0.116 | +0.042 | 0.68 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_MODEL_STALE: 763
-action_NO_EDGE: 1745
-action_NO_QUOTE: 371
-action_RESEARCH_CANDIDATE: 173
+action_NO_EDGE: 1743
+action_NO_QUOTE: 372
+action_RESEARCH_CANDIDATE: 174
 contract_sides: 3052
 fixtures: 61
 fixtures_model_invalidated: 0
