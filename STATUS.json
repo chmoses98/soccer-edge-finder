@@ -1,50 +1,41 @@
 {
-  "as_of": "2026-10-31T13:51:36.866627+00:00",
-  "events": 21,
+  "as_of": "2026-10-31T13:58:45.122876+00:00",
+  "events": 11,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 21,
+  "fixtures_mapped": 11,
   "health": {
-    "reasons": [
-      "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=9"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
     "eng.1",
-    "esp.1",
-    "ger.1",
     "ita.1"
   ],
   "lineups": {
-    "captured": 7,
-    "events": 21,
+    "captured": 0,
+    "events": 11,
     "failures": [],
-    "published_post": 2,
-    "published_pre_kickoff": 5,
-    "unchanged": 14,
-    "unpublished": 14
+    "published_post": 1,
+    "published_pre_kickoff": 1,
+    "unchanged": 11,
+    "unpublished": 9
   },
   "map_proposals": {},
   "map_version": "4",
   "results_appended": 0,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
-  "scoreboard_queries": 4,
+  "scoreboard_queries": 2,
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 9,
-    "events": 21,
-    "failures": [
-      "401882818: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=40.4165&longitude=-3.7026&hourly=te",
-      "401882825: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Sevilla&count=5&language=en&for",
-      "401882822: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Barcelona&count=5&language=en&f"
-    ],
+    "captured": 11,
+    "events": 11,
+    "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 9,
-    "stopped": "consecutive_failures"
+    "skipped": 0,
+    "stopped": null
   }
 }
