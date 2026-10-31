@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261031T232727Z-d082f3` · generated 2026-10-31T23:27:27.796214Z · trigger `kickoff_chain:T-120/T-60` · mode `reprice_only`
+slate `slate-20261031T234225Z-d97353` · generated 2026-10-31T23:42:25.213871Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-31T23:24:26.772459Z (CURRENT at publish; CURRENT until 2026-10-31T23:44:26.772459Z, STALE after 2026-10-31T23:54:26.772459Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-31T23:39:29.624179Z (CURRENT at publish; CURRENT until 2026-10-31T23:59:29.624179Z, STALE after 2026-11-01T00:09:29.624179Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-31T23:19:42.402991Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.93s
+model board generated 2026-10-31T23:19:42.402991Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.08s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -88,17 +88,17 @@ model board generated 2026-10-31T23:19:42.402991Z · simulations this update: 0 
 | Atlanta United vs Toronto FC | Total goals over 2.5 | no | 0.3500 | 0.493 [0.336, 0.642] | +0.127 | +0.030 | 0.37 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | Total goals over 1.5 | no | 0.1500 | 0.278 [0.148, 0.418] | +0.119 | +0.030 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | away wins by more than 2.5 | no | 0.9000 | 0.956 [0.916, 0.985] | +0.049 | +0.030 | 0.93 | - |  | RESEARCH_CANDIDATE |
+| Nashville SC vs New York Red Bulls | Exact score 1-0 (home-away) | yes | 0.0800 | 0.153 [0.093, 0.211] | +0.068 | +0.029 | 0.1 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | home team total over 1.5 | no | 0.4400 | 0.586 [0.411, 0.740] | +0.129 | +0.029 | 0.46 | - | * | RESEARCH_CANDIDATE |
-| Nashville SC vs New York Red Bulls | Exact score 2-0 (home-away) | yes | 0.1000 | 0.154 [0.122, 0.184] | +0.048 | +0.028 | 0.12 | - | * | RESEARCH_CANDIDATE |
+| Nashville SC vs New York Red Bulls | Exact score 2-0 (home-away) | yes | 0.1000 | 0.154 [0.122, 0.184] | +0.048 | +0.028 | 0.12 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Minnesota United | away team total over 0.5 | no | 0.3100 | 0.429 [0.311, 0.547] | +0.104 | +0.027 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | Total goals over 5.5 | no | 0.8900 | 0.947 [0.897, 0.987] | +0.051 | +0.026 | 0.91 | - |  | RESEARCH_CANDIDATE |
-| Portland Timbers vs Houston Dynamo | First-half total goals over 0.5 | no | 0.2500 | 0.357 [0.248, 0.472] | +0.094 | +0.025 | 0.27 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_MODEL_STALE: 472
-action_NO_EDGE: 949
+action_MODEL_STALE: 473
+action_NO_EDGE: 948
 action_NO_QUOTE: 225
 action_RESEARCH_CANDIDATE: 80
 contract_sides: 1726
