@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261031T112612Z-9861ae` · generated 2026-10-31T11:26:12.363106Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261031T113306Z-5c4dcf` · generated 2026-10-31T11:33:06.406047Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-31T11:23:15.338621Z (CURRENT at publish; CURRENT until 2026-10-31T11:43:15.338621Z, STALE after 2026-10-31T11:53:15.338621Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-31T11:29:59.501145Z (CURRENT at publish; CURRENT until 2026-10-31T11:49:59.501145Z, STALE after 2026-10-31T11:59:59.501145Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-31T07:40:38.112213Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.62s
+model board generated 2026-10-31T11:33:05.198877Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 1.56s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -68,7 +68,7 @@ model board generated 2026-10-31T07:40:38.112213Z · simulations this update: 0 
 | 2026-11-01T20:30:00Z | Vancouver Whitecaps vs Seattle Sounders (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-01T21:30:00Z | Atlanta United vs Toronto FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 59 | 0 |
 | 2026-11-01T21:30:00Z | Nashville SC vs New York Red Bulls (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 59 | 0 |
-| 2026-11-01T23:00:00Z | Santos Laguna vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-01T23:00:00Z | Santos Laguna vs Necaxa (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-02T00:00:00Z | New England Revolution vs Inter Miami (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-02T01:10:00Z | Cruz Azul vs León (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-02T01:30:00Z | Los Angeles FC vs Minnesota United (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -122,9 +122,9 @@ model board generated 2026-10-31T07:40:38.112213Z · simulations this update: 0 
 ## Counts
 
 ```
-action_MODEL_STALE: 988
-action_NO_EDGE: 1559
-action_NO_QUOTE: 371
+action_MODEL_STALE: 989
+action_NO_EDGE: 1563
+action_NO_QUOTE: 366
 action_RESEARCH_CANDIDATE: 134
 contract_sides: 3052
 fixtures: 61
