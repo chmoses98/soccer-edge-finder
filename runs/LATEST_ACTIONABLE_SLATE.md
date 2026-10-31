@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261031T165230Z-32e72a` · generated 2026-10-31T16:52:30.359312Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261031T165914Z-4ff175` · generated 2026-10-31T16:59:14.406715Z · trigger `kickoff_chain:T-120/T-60/T-5` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-31T16:49:30.441026Z (CURRENT at publish; CURRENT until 2026-10-31T17:09:30.441026Z, STALE after 2026-10-31T17:19:30.441026Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-31T16:55:46.761204Z (CURRENT at publish; CURRENT until 2026-10-31T17:15:46.761204Z, STALE after 2026-10-31T17:25:46.761204Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-31T16:31:08.124938Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.97s
+model board generated 2026-10-31T16:58:50.836384Z · simulations this update: 3 · Odds API calls this update: 0 (credits 0) · reprice 0.78s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -16,10 +16,10 @@ model board generated 2026-10-31T16:31:08.124938Z · simulations this update: 0 
 | 2026-10-31T17:00:00Z | Charlotte FC vs Orlando City (usa.mls) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-31T17:30:00Z | Tottenham Hotspur vs Crystal Palace (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-31T17:30:00Z | Bayern Munich vs Borussia Dortmund (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-31T18:00:00Z | FC Cincinnati vs Philadelphia Union (usa.mls) | VALID (STALE) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-31T18:00:00Z | Columbus Crew vs D.C. United (usa.mls) | VALID (STALE) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-31T18:00:00Z | New York City FC vs CF Montréal (usa.mls) | VALID (STALE) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-10-31T19:00:00Z | Coritiba vs Vitória (bra.serie_a) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 11 | 0 |
+| 2026-10-31T18:00:00Z | FC Cincinnati vs Philadelphia Union (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-31T18:00:00Z | Columbus Crew vs D.C. United (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-31T18:00:00Z | New York City FC vs CF Montréal (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-31T19:00:00Z | Coritiba vs Vitória (bra.serie_a) | VALID (STALE) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 11 | 0 |
 | 2026-10-31T19:00:00Z | Sporting Kansas City vs FC Dallas (usa.mls) | VALID (STALE) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-31T19:00:00Z | St. Louis City SC vs San Diego FC (usa.mls) | VALID (STALE) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-10-31T19:45:00Z | Lyon vs Angers (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -61,12 +61,12 @@ model board generated 2026-10-31T16:31:08.124938Z · simulations this update: 0 
 | 2026-11-02T01:30:00Z | Los Angeles FC vs Minnesota United (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-02T02:45:00Z | Portland Timbers vs Houston Dynamo (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (144; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (166; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Rayo Vallecano vs Celta Vigo | Result: home | no | 0.0200 | 0.558 [0.391, 0.716] | +0.537 | +0.434 | 0.43 | - | * | RESEARCH_CANDIDATE |
-| Rayo Vallecano vs Celta Vigo | Result: draw | yes | 0.0200 | 0.265 [0.204, 0.325] | +0.243 | +0.206 | 0.21 | - |  | RESEARCH_CANDIDATE |
+| Rayo Vallecano vs Celta Vigo | Result: home | no | 0.0100 | 0.558 [0.391, 0.716] | +0.548 | +0.444 | 0.43 | - | * | RESEARCH_CANDIDATE |
+| Rayo Vallecano vs Celta Vigo | Result: draw | yes | 0.0100 | 0.265 [0.204, 0.325] | +0.254 | +0.217 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Rayo Vallecano vs Celta Vigo | Result: away | yes | 0.0100 | 0.293 [0.167, 0.440] | +0.283 | +0.194 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | btts | no | 0.4200 | 0.658 [0.552, 0.752] | +0.221 | +0.162 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | btts | no | 0.4600 | 0.664 [0.544, 0.770] | +0.186 | +0.114 | 0.57 | - | * | RESEARCH_CANDIDATE |
@@ -74,6 +74,7 @@ model board generated 2026-10-31T16:31:08.124938Z · simulations this update: 0 
 | Guadalajara vs Atlante | Total goals over 2.5 | no | 0.4000 | 0.637 [0.458, 0.800] | +0.220 | +0.109 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Lazio vs Cagliari | Result: home | no | 0.3300 | 0.563 [0.387, 0.727] | +0.217 | +0.108 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 3.5 | no | 0.6200 | 0.819 [0.682, 0.930] | +0.182 | +0.106 | 0.72 | - |  | RESEARCH_CANDIDATE |
+| New York City FC vs CF Montréal | btts | no | 0.4500 | 0.626 [0.516, 0.725] | +0.158 | +0.092 | 0.54 | - | * | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | Total goals over 2.5 | no | 0.3400 | 0.543 [0.385, 0.706] | +0.187 | +0.083 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Tigres UANL | away team total over 0.5 | no | 0.2700 | 0.439 [0.307, 0.561] | +0.155 | +0.077 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Tigres UANL | btts | no | 0.4100 | 0.582 [0.460, 0.690] | +0.155 | +0.077 | 0.48 | - | * | RESEARCH_CANDIDATE |
@@ -81,38 +82,37 @@ model board generated 2026-10-31T16:31:08.124938Z · simulations this update: 0 
 | Colorado Rapids vs Chicago Fire | btts | no | 0.3700 | 0.535 [0.415, 0.649] | +0.148 | +0.075 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | away team total over 0.5 | no | 0.4000 | 0.570 [0.441, 0.693] | +0.153 | +0.073 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Tigres UANL | away team total over 1.5 | no | 0.6400 | 0.790 [0.669, 0.886] | +0.134 | +0.072 | 0.71 | - |  | RESEARCH_CANDIDATE |
-| Guadalajara vs Atlante | Total goals over 4.5 | no | 0.8000 | 0.921 [0.840, 0.980] | +0.109 | +0.070 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 1.5 | no | 0.1900 | 0.378 [0.219, 0.546] | +0.177 | +0.069 | 0.25 | - |  | RESEARCH_CANDIDATE |
+| New York City FC vs CF Montréal | away team total over 0.5 | no | 0.4000 | 0.558 [0.447, 0.664] | +0.142 | +0.069 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | Total goals over 3.5 | no | 0.5800 | 0.747 [0.608, 0.876] | +0.150 | +0.065 | 0.64 | - |  | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | First-half total goals over 1.5 | no | 0.6000 | 0.754 [0.638, 0.862] | +0.137 | +0.063 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Total goals over 3.5 | no | 0.6200 | 0.773 [0.641, 0.888] | +0.137 | +0.063 | 0.68 | - | * | RESEARCH_CANDIDATE |
+| Guadalajara vs Atlante | Total goals over 4.5 | no | 0.8100 | 0.921 [0.840, 0.980] | +0.100 | +0.061 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Total goals over 2.5 | no | 0.4000 | 0.575 [0.417, 0.725] | +0.158 | +0.061 | 0.46 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | away team total over 1.5 | no | 0.4500 | 0.616 [0.474, 0.750] | +0.149 | +0.059 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | Result: away | no | 0.5800 | 0.731 [0.610, 0.849] | +0.134 | +0.058 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | away team total over 1.5 | no | 0.7700 | 0.882 [0.802, 0.947] | +0.099 | +0.057 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs Necaxa | btts | no | 0.3700 | 0.514 [0.394, 0.625] | +0.128 | +0.055 | 0.42 | - | * | RESEARCH_CANDIDATE |
+| New York City FC vs CF Montréal | away team total over 1.5 | no | 0.7700 | 0.877 [0.807, 0.936] | +0.095 | +0.054 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Orlando City | away team total over 2.5 | no | 0.7400 | 0.854 [0.756, 0.928] | +0.101 | +0.052 | 0.79 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | Total goals over 3.5 | no | 0.6300 | 0.772 [0.635, 0.885] | +0.126 | +0.052 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | home team total over 1.5 | no | 0.3500 | 0.545 [0.354, 0.727] | +0.179 | +0.051 | 0.4 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | Total goals over 2.5 | no | 0.4100 | 0.573 [0.411, 0.721] | +0.146 | +0.050 | 0.45 | - |  | RESEARCH_CANDIDATE |
-| Colorado Rapids vs Chicago Fire | away team total over 0.5 | no | 0.2300 | 0.371 [0.252, 0.492] | +0.128 | +0.049 | 0.27 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | btts | no | 0.4000 | 0.542 [0.425, 0.654] | +0.126 | +0.049 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | Total goals over 3.5 | no | 0.5700 | 0.727 [0.565, 0.867] | +0.140 | +0.048 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | First-half exact score 0-0 (home-away) | yes | 0.2500 | 0.397 [0.268, 0.522] | +0.134 | +0.047 | 0.29 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | First-half total goals over 0.5 | no | 0.2500 | 0.397 [0.268, 0.522] | +0.134 | +0.047 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Atlanta United vs Toronto FC | btts | no | 0.3400 | 0.476 [0.364, 0.588] | +0.120 | +0.047 | 0.38 | - | * | RESEARCH_CANDIDATE |
+| New York City FC vs CF Montréal | Total goals over 2.5 | no | 0.3700 | 0.544 [0.376, 0.706] | +0.158 | +0.047 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | Total goals over 2.5 | no | 0.3500 | 0.522 [0.345, 0.692] | +0.156 | +0.045 | 0.39 | - |  | RESEARCH_CANDIDATE |
-| Colorado Rapids vs Chicago Fire | away team total over 1.5 | no | 0.5900 | 0.727 [0.600, 0.841] | +0.120 | +0.044 | 0.63 | - |  | RESEARCH_CANDIDATE |
-| Vancouver Whitecaps vs Seattle Sounders | Total goals over 4.5 | no | 0.7700 | 0.878 [0.785, 0.957] | +0.095 | +0.044 | 0.81 | - |  | RESEARCH_CANDIDATE |
-| New England Revolution vs Inter Miami | away wins by more than 1.5 | no | 0.7800 | 0.879 [0.798, 0.945] | +0.087 | +0.042 | 0.82 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_MODEL_STALE: 860
-action_NO_EDGE: 1626
-action_NO_QUOTE: 344
-action_RESEARCH_CANDIDATE: 144
+action_MODEL_STALE: 447
+action_NO_EDGE: 2016
+action_NO_QUOTE: 345
+action_RESEARCH_CANDIDATE: 166
 contract_sides: 2974
 fixtures: 48
 fixtures_model_invalidated: 0
