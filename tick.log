@@ -1,0 +1,229 @@
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261031T195613Z",
+  "complete": true,
+  "discovered": 6193,
+  "written": 3251,
+  "path": "work/snapshots/2026-10-31/cap-20261031T195613Z.jsonl"
+}
+{
+  "reference_probabilities": 230,
+  "observed_at": "2026-10-31 19:56:17.457196+00:00",
+  "groups": 435,
+  "unmapped_fixture_groups": 205,
+  "incomplete_groups": 0,
+  "snapshots": 828,
+  "provider_notes": [
+    "196 rows, 109 skipped (unmapped division/team)",
+    "skipped_by_division={'B1': 9, 'D2': 9, 'E2': 12, 'E3': 12, 'EC': 12, 'F2': 9, 'G1': 7, 'I2': 10, 'N1': 2, 'SC1': 5, 'SC2': 5, 'SC3': 5, 'SP2': 11, 'T1': 1}",
+    "unknown_teams={'N1:For Sittard': 1, 'N1:Nijmegen': 1, 'T1:Goztep': 1}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-31T19:56:19.251582Z", "batch_id": "kd-20261031T195318Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-10-31T19:56:19.275536+00:00",
+ "leagues": [
+  "arg.1",
+  "eng.1",
+  "esp.1",
+  "usa.1"
+ ],
+ "events": 24,
+ "fixtures_mapped": 24,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 4,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 16,
+  "captured": 11,
+  "unchanged": 5,
+  "published_pre_kickoff": 3,
+  "published_post": 8,
+  "unpublished": 5,
+  "failures": []
+ },
+ "results_appended": 11,
+ "weather": {
+  "events": 16,
+  "captured": 7,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [
+   "761922: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Charlotte&count=5&language=en&f",
+   "761924: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Columbus&count=5&language=en&fo",
+   "761919: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Cincinnati&count=5&language=en&"
+  ],
+  "skipped": 6,
+  "stopped": "consecutive_failures"
+ },
+ "map_version": "4",
+ "health": {
+  "state": "DEGRADED",
+  "reasons": [
+   "weather_failures:3",
+   "weather_stopped:consecutive_failures:skipped=6"
+  ]
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261031T195714Z-425b66", "mode": "reprice_only", "fixtures": 35, "contract_sides": 2082, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 1.004, "price_changes_vs_previous": 207}
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261031T200515Z",
+  "complete": true,
+  "discovered": 6104,
+  "written": 1447,
+  "path": "work/snapshots/2026-10-31/cap-20261031T200515Z.jsonl"
+}
+{
+  "reference_probabilities": 230,
+  "observed_at": "2026-10-31 19:56:17.457196+00:00",
+  "groups": 435,
+  "unmapped_fixture_groups": 205,
+  "incomplete_groups": 0,
+  "snapshots": 828,
+  "provider_notes": [
+    "196 rows, 109 skipped (unmapped division/team)",
+    "skipped_by_division={'B1': 9, 'D2': 9, 'E2': 12, 'E3': 12, 'EC': 12, 'F2': 9, 'G1': 7, 'I2': 10, 'N1': 2, 'SC1': 5, 'SC2': 5, 'SC3': 5, 'SP2': 11, 'T1': 1}",
+    "unknown_teams={'N1:For Sittard': 1, 'N1:Nijmegen': 1, 'T1:Goztep': 1}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-31T20:05:18.656557Z", "batch_id": "kd-20261031T200220Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-10-31T20:05:18.687102+00:00",
+ "leagues": [
+  "usa.1"
+ ],
+ "events": 9,
+ "fixtures_mapped": 9,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 1,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 8,
+  "captured": 0,
+  "unchanged": 8,
+  "published_pre_kickoff": 0,
+  "published_post": 5,
+  "unpublished": 3,
+  "failures": []
+ },
+ "results_appended": 1,
+ "weather": {
+  "events": 8,
+  "captured": 6,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [
+   "761929: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=San%20Jose&count=5&language=en&",
+   "761923: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Commerce%20City&count=5&languag"
+  ],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "DEGRADED",
+  "reasons": [
+   "weather_failures:2"
+  ]
+ }
+}
+unmapped teams: 0 | proposals: {}
+[data] historical: 3477 matches from club_football_match_data; flags=['ok']
+[data] eng.premier_league 2026-27: 380 fixtures, 45 results (25 new vs historical)
+[data] esp.la_liga 2026-27: 380 fixtures, 64 results (36 new vs historical)
+[data] ger.bundesliga 2026-27: 306 fixtures, 33 results (25 new vs historical)
+[data] ita.serie_a 2026-27: 380 fixtures, 50 results (30 new vs historical)
+[data] fra.ligue_1 2026-27: 306 fixtures, 41 results (24 new vs historical)
+[data] usa.mls: espn 44 fixtures, 1249 pooled results (usa.1)
+[data] mex.liga_mx: espn 17 fixtures, 732 pooled results (mex.1)
+[data] bra.serie_a: espn 20 fixtures, 707 pooled results (bra.1)
+[data] arg.primera: espn 15 fixtures, 1201 pooled results (arg.1)
+[data] uefa.nations_league: espn 0 fixtures, 1142 pooled results (uefa.nations,fifa.friendly,fifa.worldq.uefa,fifa.worldq.conmebol,fifa.worldq.concacaf,fifa.worldq.afc,fifa.worldq.caf,uefa.euroq,concacaf.nations.league)
+[data] fifa.friendly: espn 0 fixtures, 1142 pooled results (uefa.nations,fifa.friendly,fifa.worldq.uefa,fifa.worldq.conmebol,fifa.worldq.concacaf,fifa.worldq.afc,fifa.worldq.caf,uefa.euroq,concacaf.nations.league)
+[data] concacaf.nations_league: espn 0 fixtures, 1142 pooled results (uefa.nations,fifa.friendly,fifa.worldq.uefa,fifa.worldq.conmebol,fifa.worldq.concacaf,fifa.worldq.afc,fifa.worldq.caf,uefa.euroq,concacaf.nations.league)
+[data] fifa.world_cup_qualifiers: espn 0 fixtures, 1142 pooled results (uefa.nations,fifa.friendly,fifa.worldq.uefa,fifa.worldq.conmebol,fifa.worldq.concacaf,fifa.worldq.afc,fifa.worldq.caf,uefa.euroq,concacaf.nations.league)
+[data] uefa.euro_qualifiers: espn 0 fixtures, 1142 pooled results (uefa.nations,fifa.friendly,fifa.worldq.uefa,fifa.worldq.conmebol,fifa.worldq.concacaf,fifa.worldq.afc,fifa.worldq.caf,uefa.euroq,concacaf.nations.league)
+[kalshi] fast mode: sweeping 253 series with markets at the last full discovery
+[kalshi] fast reconciliation: {"complete_relative_to_full": true, "evidence_level": "series"}
+[kalshi] {"run_id": "disc-20261031T200220Z-28af89", "complete": true, "series_total": 15580, "series_by_ownership": {"not_soccer": 14012, "soccer": 1436, "ambiguous": 132}, "series_swept": 305, "series_ambiguous_unswept": 131, "series_skipped_fast_mode": 1132, "series_ambiguous_unswept_tickers": ["KX1HOMEGAME", "KX1STHOMEGAME", "KXACQUIREMANU", "KXAFCA", "KXAFCAC1H", "KXAFCAC1HBTTS", "KXAFCAC1HSPREAD", "KXAFCAC1HTOTAL", "KXAFCACADVANCE", "KXAFCACBTTS", "KXAFCACFTTS", "KXAFCACGAME", "KXAFCACMOV", "KXAFCACSCORE", "KXAFCACSPREAD", "KXAFCACTEAMTOTAL", "KXAFCACTOTAL", "KXAFCCL1H", "KXAFCCL1HBTTS", "KXAFCCL1HSPREAD", "KXAFCCL1HTOTAL", "KXAFCCLADVANCE", "KXAFCCLBTTS", "KXAFCCLFTTS", "KXAFCCLGAME", "KXAFCCLMOF", "KXAFCCLMOV", "KXAFCCLSCORE", "KXAFCCLSPREAD", "KXAFCCLTEAMTOTAL", "KXAFCCLTOTAL", "KXAFCON", "KXAFCON1H", "KXAFCON1HBTTS", "KXAFCON1HSPREAD", "KXAFCON1HTOTAL", "KXAFCONADVANCE", "KXAFCONBTTS", "KXAFCONFTTS", "KXAFCONGAME", "KXAFCONMOV", "KXAFCONSCORE", "KXAFCONSPREAD", "KXAFCONTEAMTOTAL", "KXAFCONTOTAL", "KXAFLGAME", "KXALEAGUE1H", "KXALEAGUE1HBTTS", "KXALEAGUE1HSPREAD", "KXALEAGUE1HTOTAL", "KXALEAGUEADVANCE", "KXALEAGUEBTTS", "KXALEAGUEGAME", "KXALEAGUESPREAD", "KXALEAGUETEAMTOTAL", "KXALEAGUETOTAL", "KXALLSVENSKANADVANCE", "KXALLSVENSKANBTTS", "KXALLSVENSKANGAME", "KXALLSVENSKANSPREAD", "KXALLSVENSKANTOTAL", "KXALMVP", "KXAPFDDHADVANCE", "KXARCHIVETEST", "KXARGNACBADVANCE", "KXARGPREMDIVADVANCE", "KXARGPREMDIVBTTS", "KXARGPREMDIVGAME", "KXARGPREMDIVSPREAD", "KXARGPREMDIVTOTAL", "KXARKCOACH", "KXARODGRETIRE", "KXARSENALCUPS", "KXASEANADVANCE", "KXASEANBTTS", "KXASEANGAME", "KXASEANSPREAD", "KXASEANTOTAL", "KXATLCOACH", "KXAUBCOACH", "KXBABYNAMEBOY", "KXBABYNAMEGIRL", "KXBALLERLEAGUE", "KXBALLERLEAGUEGAME", "KXBALOGUNPLAY", "KXBELGIANPLADVANCE", "KXBELGIANPLBTTS", "KXBELGIANPLGAME", "KXBELGIANPLSPREAD", "KXBELGIANPLTOTAL", "KXBOLPDIVADVANCE", "KXBOLPDIVGAME", "KXBRASILEIRO1H", "KXBRASILEIRO1HBTTS", "KXBRASILEIRO1HSPREAD", "KXBRASILEIRO1HTOTAL", "KXBRASILEIROADVANCE", "KXBRASILEIROBADVANCE", "KXBRASILEIROBTEAMTOTAL", "KXBRASILEIROC1H", "KXBRASILEIROC1HBTTS", "KXBRASILEIROC1HSPREAD", "KXBRASILEIROC1HTOTAL", "KXBRASILEIROCADVANCE", "KXBRASILEIROCTEAMTOTAL", "KXBRASILEIROFTTS", "KXBRASILEIROMOV", "KXBRASILEIRORELEGATION", "KXBRASILEIROSCORE", "KXBRASILEIROTEAMTOTAL", "KXBRASILEIROTOP", "KXBUNDESLIGA1H", "KXBUNDESLIGA1HBTTS", "KXBUNDESLIGA1HSCORE", "KXBUNDESLIGA1HSPREAD", "KXBUNDESLIGA1HTOTAL", "KXBUNDESLIGA2ADVANCE", "KXBUNDESLIGA2BTTS", "KXBUNDESLIGA2GAME", "KXBUNDESLIGA2H", "KXBUNDESLIGA2HBTTS", "KXBUNDESLIGA2HSPREAD", "KXBUNDESLIGA2HTOTAL", "KXBUNDESLIGA2SPREAD", "KXBUNDESLIGA2TOTAL", "KXBUNDESLIGAADVANCE", "KXBUNDESLIGABTTS", "KXBUNDESLIGACORNERS", "KXBUNDESLIGAFIRSTGOAL", "KXBUNDESLIGAFTTS", "KXBUNDESLIGAGOAL", "KXBUNDESLIGAMOV", "KXBUNDESLIGASCORE", "KXBUNDESLIGASPREAD", "KXBUNDESLIGATCORNERS", "KXBUNDESLIGATEAMTOTAL", "KXBUNDESLIGATOP4", "KXBUNDESLIGATOTAL", "KXCALCOACH", "KXCANIMAKETHIS", "KXCANPLADVANCE", "KXCANPLBTTS", "KXCANPLSPREAD", "KXCANPLTOTAL", "KXCCARCOACH", "KXCFLGAME", "KXCFLSPREAD", "KXCFLTOTAL", "KXCHLLDPADVANCE", "KXCHLLDPBTTS", "KXCHLLDPGAME", "KXCHLLDPSPREAD", "KXCHLLDPTOTAL", "KXCHNL1ADVANCE", "KXCHNL1BTTS", "KXCHNL1SPREAD", "KXCHNL1TOTAL", "KXCHNSLADVANCE", "KXCHNSLBTTS", "KXCHNSLGAME", "KXCHNSLSPREAD", "KXCHNSLTOTAL", "KXCLUBFBTTS", "KXCLUBFGAME", "KXCLUBFSPREAD", "KXCLUBFTOTAL", "KXCLUBWC", "KXCLUBWC1H", "KXCLUBWC1HBTTS", "KXCLUBWC1HSCORE", "KXCLUBWC1HSPREAD", "KXCLUBWC1HTOTAL", "KXCLUBWC2H", "KXCLUBWC2HBTTS", "KXCLUBWC2HSPREAD", "KXCLUBWC2HTOTAL", "KXCLUBWCADVANCE", "KXCLUBWCBTTS", "KXCLUBWCFTTS", "KXCLUBWCGA", "KXCLUBWCGAME", "KXCLUBWCGB", "KXCLUBWCGC", "KXCLUBWCGD", "KXCLUBWCGE", "KXCLUBWCGF", "KXCLUBWCGG", "KXCLUBWCGH", "KXCLUBWCMOF", "KXCLUBWCMOV", "KXCLUBWCSCORE", "KXCLUBWCSPREAD", "KXCLUBWCTEAMTOTAL", "KXCLUBWCTOTAL", "KXCOACHONDATE", "KXCOACHOUTOLEMISS", "KXCOACHOUTUNC", "KXCOLLEGEGAMEDAY", "KXCOLLEGEGAMEDAYGUEST", "KXCONCACAFCCUP1H"], "events_discovered": 20132, "contracts_discovered": 6104, "contracts_duplicate_seen": 0, "contracts_by_family": {"btts": 104, "competition_head_to_head": 20, "competition_host": 26, "competition_last_place": 132, "competition_points_margin": 30, "competition_promotion": 24, "competition_qualification": 138, "competition_relegation": 96, "competition_team_points": 384, "competition_top_n": 306, "competition_trophies": 32, "competition_winner": 1052, "exact_score": 586, "first_half_btts": 18, "first_half_exact_score": 225, "first_half_handicap": 36, "first_half_result": 54, "first_half_total": 54, "handicap": 403, "match_result_3way": 858, "match_winner_2way": 18, "player_award": 81, "player_season_leader": 247, "season_player_total": 53, "second_half_result": 60, "soccer_special": 189, "team_total": 125, "total_goals": 590, "tournament_advancement": 160, "unknown": 3}, "contracts_by_competition_code": {"?": 315, "APFDDH": 69, "ARGNACB": 160, "ARGPREMDIV": 30, "AUTBUNDES": 56, "BELGIANPL": 18, "BRASILEIRO": 217, "BRASILEIROB": 169, "BUNDESLIGA": 201, "CANPL": 6, "CHLLDP": 16, "CHNSL": 16, "CONCACAFGC": 23, "CONCACAFNL": 41, "CONMEBOLLIB": 2, "CONMEBOLSUD": 2, "COPAAMERICA": 25, "COPADELREY": 68, "COPADOBRASIL": 16, "DENSUPERLIGA": 12, "DFBPOKAL": 21, "DIMAYOR": 35, "ECULP": 16, "EFL": 32, "EFLCHAMPIONSHIP": 24, "EFLL1": 23, "EFLTROPHY": 3, "EKSTRAKLASA": 18, "EPL": 379, "EREDIVISIE": 18, "FA": 24, "FRAPLW": 14, "HUNNB1": 57, "INDSL": 28, "ISRNL": 12, "KLEAGUE": 12, "KNVB": 21, "LALIGA": 258, "LALIGA2": 68, "LIGAEXP": 15, "LIGAF": 45, "LIGAMX": 595, "LIGAMX2H": 36, "LIGAPORTUGAL": 18, "LIGUE1": 217, "MLS": 1047, "MLS2H": 84, "MLSEAST": 15, "MLSWEST": 15, "NWSL": 40, "PERLIGA1": 45, "PREMIERLEAGUE": 20, "ROML1": 48, "SAPSL": 27, "SERIEA": 240, "SOCCER": 2, "SUPERLIG": 18, "SVK2L": 14, "SVKCUP": 6, "TACAPORT": 20, "THAIL1": 16, "UCL": 354, "UCLLEAGUE": 16, "UECL": 36, "UEFAEURO": 60, "UEFANL": 126, "UEFANLGROUP": 16, "UEL": 36, "URYPD": 67, "USL": 67, "VENFUTVE": 14, "WC": 172, "WCW": 32}, "contracts_unknown_family": 3, "request_count": 695, "retry_count": 0, "milestones_note": "milestones type=soccer_tournament_multi_leg: 21562 rows, complete=True"}
+[reference] {"groups": 435, "unmapped_fixture_groups": 205, "incomplete_groups": 0, "snapshots": 828, "provider_notes": ["196 rows, 109 skipped (unmapped division/team)", "skipped_by_division={'B1': 9, 'D2': 9, 'E2': 12, 'E3': 12, 'EC': 12, 'F2': 9, 'G1': 7, 'I2': 10, 'N1': 2, 'SC1': 5, 'SC2': 5, 'SC3': 5, 'SP2': 11, 'T1': 1}", "unknown_teams={'N1:For Sittard': 1, 'N1:Nijmegen': 1, 'T1:Goztep': 1}", "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"], "written": 0}
+[timings] {"assemble_fit_s": 3.79, "discovery_s": 0.01, "simulate_price_archive_s": 19.1, "total_s": 23.29, "mode": "fast+prefetched_sweep"}
+[board] 2 fixtures written by this run; 38 on the board -> work/runs/latest.model_board.v1.json
+[slate] {"slate_id": "slate-20261031T200619Z-69ef76", "mode": "model_refresh_and_reprice", "fixtures": 34, "contract_sides": 2136, "simulations_run": 2, "odds_api_calls": 0, "reprice_runtime_s": 1.11, "price_changes_vs_previous": 111}
+# RUN SOCCER — 2026-10-31
+Run `run-20261031T200600Z-aa57c1` generated 2026-10-31T20:06:19.497062Z · filters: {'leagues': [], 'games': ['fx:usa.mls:2026:usa.la_galaxy:usa.austin', 'fx:usa.mls:2026:usa.san_jose_earthquakes:usa.real_salt_lake'], 'window_hours': 3, 'confirmed_lineups_only': False}
+
+## Coverage
+- contracts discovered: **6104** (discovery complete: True)
+- contracts evaluated: 154 · excluded mechanically: 2977 · unsupported/unknown: 2973
+- **unaccounted contracts: 0**
+- by disposition: priced=154, unknown_family=3, unsupported_family=2970, unmapped_event=1083, unmapped_team=132, no_fixture=108, filtered_by_operator=1654
+- competitions discovered: APFDDH, ARGNACB, ARGPREMDIV, AUTBUNDES, BELGIANPL, BRASILEIRO, BRASILEIROB, BUNDESLIGA, CANPL, CHLLDP, CHNSL, CONCACAFGC, CONCACAFNL, CONMEBOLLIB, CONMEBOLSUD, COPAAMERICA, COPADELREY, COPADOBRASIL, DENSUPERLIGA, DFBPOKAL, DIMAYOR, ECULP, EFL, EFLCHAMPIONSHIP, EFLL1, EFLTROPHY, EKSTRAKLASA, EPL, EREDIVISIE, FA, FRAPLW, HUNNB1, INDSL, ISRNL, KLEAGUE, KNVB, LALIGA, LALIGA2, LIGAEXP, LIGAF, LIGAMX, LIGAMX2H, LIGAPORTUGAL, LIGUE1, MLS, MLS2H, MLSEAST, MLSWEST, NWSL, PERLIGA1, PREMIERLEAGUE, ROML1, SAPSL, SERIEA, SOCCER, SUPERLIG, SVK2L, SVKCUP, TACAPORT, THAIL1, UCL, UCLLEAGUE, UECL, UEFAEURO, UEFANL, UEFANLGROUP, UEL, URYPD, USL, VENFUTVE, WC, WCW
+
+## Freshness
+- as_of: 2026-10-31T20:06:00.498023Z; market_observed_at: 2026-10-31T20:02:20.501400Z; fixtures_observed_at: 2026-10-31T19:56:17.096785Z; results_observed_at: 2026-10-31T19:56:14.275486Z; model_fitted_at: 2026-10-31T20:05:58.615927Z; temporal_guard: {'decision_time': '2026-10-31T20:06:00.498023Z', 'checked': {'fixtures': 1, 'market_snapshots': 2, 'reference_odds': 1, 'results': 15}, 'latest_observed_at': {'fixtures': '2026-10-31T19:56:17.096785Z', 'market_snapshots': '2026-10-31T20:05:15.260088Z', 'reference_odds': '2026-10-31T19:56:17.457196Z', 'results': '2026-10-31T20:06:00.091018Z'}, 'violations': [], 'ok': True}
+- no freshness violations
+
+## Recommendations
+**NO BETS** — no contract met the robust-edge bar under an authority level that permits recommendations.
+
+## Shadow / research-only expressions (23)
+These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW. They are NOT recommendations.
+- San Jose Earthquakes vs Real Salt Lake · away team total over 1.5 · NO @ 0.5300 · fair 71.9% [59.3%–83.0%] · edge +17.1% · P(+) 95% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT31SJRSL-RSL2`
+- San Jose Earthquakes vs Real Salt Lake · away team total over 0.5 · NO @ 0.2000 · fair 36.2% [24.8%–47.7%] · edge +15.1% · P(+) 96% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT31SJRSL-RSL1`
+- San Jose Earthquakes vs Real Salt Lake · away team total over 2.5 · NO @ 0.7900 · fair 90.5% [83.4%–96.1%] · edge +10.3% · P(+) 95% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT31SJRSL-RSL3`
+- LA Galaxy vs Austin FC · home team total over 2.5 · NO @ 0.5400 · fair 70.7% [53.3%–85.2%] · edge +15.0% · P(+) 86% · RESEARCH_ONLY · `KXMLSTEAMTOTAL-26OCT31LAGATX-LAG3`
+- San Jose Earthquakes vs Real Salt Lake · Total goals over 3.5 · NO @ 0.5800 · fair 71.2% [56.8%–84.4%] · edge +11.5% · P(+) 85% · RESEARCH_ONLY · `KXMLSTOTAL-26OCT31SJRSL-4`
+- San Jose Earthquakes vs Real Salt Lake · Result: away · NO @ 0.6500 · fair 75.7% [64.0%–86.0%] · edge +9.1% · P(+) 87% · RESEARCH_ONLY · `KXMLSGAME-26OCT31SJRSL-RSL`
+- LA Galaxy vs Austin FC · Total goals over 1.5 · NO @ 0.1200 · fair 22.5% [11.6%–34.0%] · edge +9.7% · P(+) 86% · RESEARCH_ONLY · `KXMLSTOTAL-26OCT31LAGATX-2`
+- San Jose Earthquakes vs Real Salt Lake · away wins by more than 1.5 · NO @ 0.8400 · fair 90.5% [84.0%–95.7%] · edge +5.6% · P(+) 88% · RESEARCH_ONLY · `KXMLSSPREAD-26OCT31SJRSL-RSL2`
+- San Jose Earthquakes vs Real Salt Lake · First-half result: away · NO @ 0.7100 · fair 79.3% [69.8%–88.2%] · edge +6.8% · P(+) 84% · RESEARCH_ONLY · `KXMLS1H-26OCT31SJRSL-RSL`
+- San Jose Earthquakes vs Real Salt Lake · Exact score 2-0 (home-away) · YES @ 0.0500 · fair 8.9% [5.9%–12.0%] · edge +3.6% · P(+) 94% · RESEARCH_ONLY · `KXMLSSCORE-26OCT31SJRSL-SJ2RSL0`
+- San Jose Earthquakes vs Real Salt Lake · Exact score 1-0 (home-away) · YES @ 0.0600 · fair 10.8% [6.4%–15.3%] · edge +4.4% · P(+) 90% · RESEARCH_ONLY · `KXMLSSCORE-26OCT31SJRSL-SJ1RSL0`
+- San Jose Earthquakes vs Real Salt Lake · away wins by more than 2.5 · NO @ 0.9400 · fair 97.1% [94.5%–99.0%] · edge +2.7% · P(+) 90% · RESEARCH_ONLY · `KXMLSSPREAD-26OCT31SJRSL-RSL3`
+- San Jose Earthquakes vs Real Salt Lake · First-half total goals over 1.5 · NO @ 0.5700 · fair 66.9% [53.8%–78.2%] · edge +8.2% · P(+) 83% · RESEARCH_ONLY · `KXMLS1HTOTAL-26OCT31SJRSL-2`
+- LA Galaxy vs Austin FC · First-half result: home · NO @ 0.4800 · fair 58.5% [44.8%–71.2%] · edge +8.7% · P(+) 82% · RESEARCH_ONLY · `KXMLS1H-26OCT31LAGATX-LAG`
+- LA Galaxy vs Austin FC · First-half total goals over 0.5 · NO @ 0.2000 · fair 28.7% [18.8%–38.2%] · edge +7.6% · P(+) 82% · RESEARCH_ONLY · `KXMLS1HTOTAL-26OCT31LAGATX-1`
+- San Jose Earthquakes vs Real Salt Lake · First-half total goals over 0.5 · NO @ 0.2200 · fair 31.4% [20.8%–42.2%] · edge +8.2% · P(+) 83% · RESEARCH_ONLY · `KXMLS1HTOTAL-26OCT31SJRSL-1`
+- LA Galaxy vs Austin FC · First half: home wins by more than 1.5 · NO @ 0.7800 · fair 85.3% [75.9%–93.1%] · edge +6.1% · P(+) 82% · RESEARCH_ONLY · `KXMLS1HSPREAD-26OCT31LAGATX-LAG2`
+- San Jose Earthquakes vs Real Salt Lake · Total goals over 0.5 · NO @ 0.0400 · fair 8.1% [3.8%–13.1%] · edge +3.8% · P(+) 86% · RESEARCH_ONLY · `KXMLSTOTAL-26OCT31SJRSL-1`
+- San Jose Earthquakes vs Real Salt Lake · Second-half result: away · NO @ 0.7000 · fair 77.7% [67.8%–87.2%] · edge +6.2% · P(+) 81% · RESEARCH_ONLY · `KXMLS2H-26OCT31SJRSL-RSL`
+- LA Galaxy vs Austin FC · Total goals over 0.5 · NO @ 0.0300 · fair 6.7% [2.7%–11.1%] · edge +3.5% · P(+) 86% · RESEARCH_ONLY · `KXMLSTOTAL-26OCT31LAGATX-1`
+- San Jose Earthquakes vs Real Salt Lake · First half: away wins by more than 1.5 · NO @ 0.9200 · fair 95.6% [91.9%–99.1%] · edge +3.0% · P(+) 87% · RESEARCH_ONLY · `KXMLS1HSPREAD-26OCT31SJRSL-RSL2`
+- LA Galaxy vs Austin FC · First-half total goals over 1.5 · NO @ 0.5300 · fair 63.6% [50.8%–75.2%] · edge +8.8% · P(+) 83% · RESEARCH_ONLY · `KXMLS1HTOTAL-26OCT31LAGATX-2`
+- LA Galaxy vs Austin FC · btts · NO @ 0.3800 · fair 47.3% [35.4%–58.3%] · edge +7.7% · P(+) 81% · RESEARCH_ONLY · `KXMLSBTTS-26OCT31LAGATX-BTTS`
+
+## Expressions removed by the reducer (17)
+- `KXMLSBTTS-26OCT31SJRSL-BTTS` no: dominated by KXMLSTEAMTOTAL-26OCT31SJRSL-RSL1/no (corr +0.77)
+- `KXMLSTOTAL-26OCT31SJRSL-2` no: dominated by KXMLSTEAMTOTAL-26OCT31SJRSL-RSL1/no (corr +0.46)
+- `KXMLS1HBTTS-26OCT31SJRSL-BTTS` no: dominated by KXMLS1HTOTAL-26OCT31SJRSL-2/no (corr +0.68)
+- `KXMLSSCORE-26OCT31SJRSL-SJ0RSL0` yes: dominated by KXMLSTOTAL-26OCT31SJRSL-1/no (corr +1.00)
+- `KXMLSTOTAL-26OCT31SJRSL-5` no: redundant with KXMLSTOTAL-26OCT31SJRSL-4/no (corr +0.65); best expression kept
+- `KXMLSTOTAL-26OCT31SJRSL-3` no: redundant with KXMLSTOTAL-26OCT31SJRSL-4/no (corr +0.64); best expression kept
+- `KXMLSTOTAL-26OCT31SJRSL-6` no: redundant with KXMLSTOTAL-26OCT31SJRSL-4/no (corr +0.42); best expression kept
+- `KXMLSSCORE-26OCT31LAGATX-LAG0ATX0` yes: dominated by KXMLSTOTAL-26OCT31LAGATX-1/no (corr +1.00)
+- `KXMLSTEAMTOTAL-26OCT31LAGATX-LAG2` no: redundant with KXMLSTEAMTOTAL-26OCT31LAGATX-LAG3/no (corr +0.59); best expression kept
+- `KXMLSTOTAL-26OCT31LAGATX-4` no: dominated by KXMLSTEAMTOTAL-26OCT31LAGATX-LAG3/no (corr +0.64)
+- `KXMLSTOTAL-26OCT31LAGATX-3` no: dominated by KXMLSTEAMTOTAL-26OCT31LAGATX-LAG3/no (corr +0.59)
+- `KXMLSTOTAL-26OCT31LAGATX-5` no: dominated by KXMLSTEAMTOTAL-26OCT31LAGATX-LAG3/no (corr +0.55)
+- `KXMLSTOTAL-26OCT31LAGATX-6` no: dominated by KXMLSTEAMTOTAL-26OCT31LAGATX-LAG3/no (corr +0.41)
+- `KXMLSSPREAD-26OCT31LAGATX-LAG2` no: dominated by KXMLSTEAMTOTAL-26OCT31LAGATX-LAG3/no (corr +0.66)
+- `KXMLSSPREAD-26OCT31LAGATX-LAG3` no: dominated by KXMLSTEAMTOTAL-26OCT31LAGATX-LAG3/no (corr +0.70)
+- `KXMLSGAME-26OCT31LAGATX-LAG` no: dominated by KXMLSTEAMTOTAL-26OCT31LAGATX-LAG3/no (corr +0.49)
+- `KXMLSGAME-26OCT31LAGATX-TIE` yes: dominated by KXMLSTEAMTOTAL-26OCT31LAGATX-LAG3/no (corr +0.29)
+
+## Events
+- San Jose Earthquakes vs Real Salt Lake (Major League Soccer) 2026-10-31T21:00:00Z · markets 77/77 evaluated · lineups unknown · xG 1.65-1.04 · 1X2 51%/25%/24%
+- LA Galaxy vs Austin FC (Major League Soccer) 2026-10-31T21:00:00Z · markets 77/77 evaluated · lineups unknown · xG 1.88-1.02 · 1X2 56%/23%/21%

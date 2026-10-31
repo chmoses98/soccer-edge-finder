@@ -1,50 +1,45 @@
 {
-  "as_of": "2026-10-31T19:56:19.275536+00:00",
-  "events": 24,
+  "as_of": "2026-10-31T20:05:18.687102+00:00",
+  "events": 9,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 24,
+  "fixtures_mapped": 9,
   "health": {
     "reasons": [
-      "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=6"
+      "weather_failures:2"
     ],
     "state": "DEGRADED"
   },
   "leagues": [
-    "arg.1",
-    "eng.1",
-    "esp.1",
     "usa.1"
   ],
   "lineups": {
-    "captured": 11,
-    "events": 16,
+    "captured": 0,
+    "events": 8,
     "failures": [],
-    "published_post": 8,
-    "published_pre_kickoff": 3,
-    "unchanged": 5,
-    "unpublished": 5
+    "published_post": 5,
+    "published_pre_kickoff": 0,
+    "unchanged": 8,
+    "unpublished": 3
   },
   "map_proposals": {},
   "map_version": "4",
-  "results_appended": 11,
+  "results_appended": 1,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
-  "scoreboard_queries": 4,
+  "scoreboard_queries": 1,
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 7,
-    "events": 16,
+    "captured": 6,
+    "events": 8,
     "failures": [
-      "761922: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Charlotte&count=5&language=en&f",
-      "761924: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Columbus&count=5&language=en&fo",
-      "761919: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Cincinnati&count=5&language=en&"
+      "761929: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=San%20Jose&count=5&language=en&",
+      "761923: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Commerce%20City&count=5&languag"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 6,
-    "stopped": "consecutive_failures"
+    "skipped": 0,
+    "stopped": null
   }
 }
