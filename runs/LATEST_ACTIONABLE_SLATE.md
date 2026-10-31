@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261030T234529Z-d07c84` · generated 2026-10-30T23:45:29.977604Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
+slate `slate-20261031T000517Z-b37cb5` · generated 2026-10-31T00:05:17.747487Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-30T23:42:26.275322Z (CURRENT at publish; CURRENT until 2026-10-31T00:02:26.275322Z, STALE after 2026-10-31T00:12:26.275322Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-31T00:02:08.113788Z (CURRENT at publish; CURRENT until 2026-10-31T00:22:08.113788Z, STALE after 2026-10-31T00:32:08.113788Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-30T23:29:53.571901Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.65s
+model board generated 2026-10-30T23:29:53.571901Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.48s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -74,7 +74,7 @@ model board generated 2026-10-30T23:29:53.571901Z · simulations this update: 0 
 | 2026-11-01T21:30:00Z | Nashville SC vs New York Red Bulls (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 59 | 0 |
 | 2026-11-01T23:00:00Z | Santos Laguna vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (195; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (199; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -122,15 +122,13 @@ model board generated 2026-10-30T23:29:53.571901Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2339
-action_NO_QUOTE: 370
-action_RESEARCH_CANDIDATE: 195
+action_NO_EDGE: 2336
+action_NO_QUOTE: 369
+action_RESEARCH_CANDIDATE: 199
 contract_sides: 2904
 fixtures: 61
 fixtures_model_invalidated: 1
 fixtures_model_missing: 0
 ```
-
-Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
