@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261031T120217Z-1f1c1f` · generated 2026-10-31T12:02:17.849799Z · trigger `kickoff_chain:T-60/T-30` · mode `reprice_only`
+slate `slate-20261031T121719Z-e89ddf` · generated 2026-10-31T12:17:19.939114Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-31T11:59:16.674712Z (CURRENT at publish; CURRENT until 2026-10-31T12:19:16.674712Z, STALE after 2026-10-31T12:29:16.674712Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-31T12:14:19.267079Z (CURRENT at publish; CURRENT until 2026-10-31T12:34:19.267079Z, STALE after 2026-10-31T12:44:19.267079Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-31T11:33:05.198877Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.77s
+model board generated 2026-10-31T11:33:05.198877Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.84s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -74,12 +74,12 @@ model board generated 2026-10-31T11:33:05.198877Z · simulations this update: 0 
 | 2026-11-02T01:30:00Z | Los Angeles FC vs Minnesota United (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-02T02:45:00Z | Portland Timbers vs Houston Dynamo (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (134; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (135; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Nashville SC vs New York Red Bulls | btts | no | 0.4100 | 0.658 [0.552, 0.752] | +0.231 | +0.172 | 0.58 | - | * | RESEARCH_CANDIDATE |
-| Levante vs Atlético Madrid | Result: away | no | 0.3600 | 0.598 [0.419, 0.765] | +0.221 | +0.112 | 0.47 | - | * | RESEARCH_CANDIDATE |
+| Levante vs Atlético Madrid | Result: away | no | 0.3500 | 0.598 [0.419, 0.765] | +0.232 | +0.122 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | btts | no | 0.4000 | 0.596 [0.480, 0.702] | +0.179 | +0.112 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 2.5 | no | 0.4000 | 0.637 [0.458, 0.800] | +0.220 | +0.109 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Lazio vs Cagliari | Result: home | no | 0.3300 | 0.563 [0.387, 0.727] | +0.217 | +0.108 | 0.43 | - | * | RESEARCH_CANDIDATE |
@@ -122,10 +122,10 @@ model board generated 2026-10-31T11:33:05.198877Z · simulations this update: 0 
 ## Counts
 
 ```
-action_MODEL_STALE: 989
-action_NO_EDGE: 1568
-action_NO_QUOTE: 361
-action_RESEARCH_CANDIDATE: 134
+action_MODEL_STALE: 988
+action_NO_EDGE: 1565
+action_NO_QUOTE: 364
+action_RESEARCH_CANDIDATE: 135
 contract_sides: 3052
 fixtures: 61
 fixtures_model_invalidated: 0
