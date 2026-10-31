@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261031T224759Z-1d6168` · generated 2026-10-31T22:47:59.187457Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261031T225758Z-6cb25e` · generated 2026-10-31T22:57:58.608129Z · trigger `kickoff_chain:T-120/T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-31T22:45:00.064980Z (CURRENT at publish; CURRENT until 2026-10-31T23:05:00.064980Z, STALE after 2026-10-31T23:15:00.064980Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-31T22:55:00.065812Z (CURRENT at publish; CURRENT until 2026-10-31T23:15:00.065812Z, STALE after 2026-10-31T23:25:00.065812Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-31T22:36:28.012569Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.98s
+model board generated 2026-10-31T22:36:28.012569Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.13s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -49,7 +49,7 @@ model board generated 2026-10-31T22:36:28.012569Z · simulations this update: 0 
 | 2026-11-02T19:45:00Z | Atalanta vs Parma (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-02T20:00:00Z | Newcastle United vs Everton (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (92; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (94; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -65,15 +65,16 @@ model board generated 2026-10-31T22:36:28.012569Z · simulations this update: 0 
 | New England Revolution vs Inter Miami | Result: away | no | 0.5800 | 0.731 [0.610, 0.849] | +0.134 | +0.058 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Tigres UANL | Total goals over 2.5 | no | 0.4400 | 0.612 [0.454, 0.758] | +0.155 | +0.058 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | Total goals over 3.5 | no | 0.5600 | 0.727 [0.565, 0.867] | +0.150 | +0.058 | 0.61 | - | * | RESEARCH_CANDIDATE |
+| Pachuca vs Tigres UANL | Total goals over 3.5 | no | 0.6600 | 0.802 [0.678, 0.907] | +0.127 | +0.058 | 0.71 | - |  | RESEARCH_CANDIDATE |
+| Pachuca vs Tigres UANL | away team total over 0.5 | no | 0.2900 | 0.439 [0.306, 0.562] | +0.134 | +0.056 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | Total goals over 2.5 | no | 0.3400 | 0.522 [0.345, 0.692] | +0.167 | +0.056 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs Necaxa | btts | no | 0.3700 | 0.514 [0.394, 0.625] | +0.128 | +0.055 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | btts | no | 0.4000 | 0.542 [0.425, 0.654] | +0.126 | +0.049 | 0.44 | - | * | RESEARCH_CANDIDATE |
-| Pachuca vs Tigres UANL | Total goals over 3.5 | no | 0.6700 | 0.802 [0.678, 0.907] | +0.117 | +0.048 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Atlanta United vs Toronto FC | btts | no | 0.3400 | 0.476 [0.364, 0.588] | +0.120 | +0.047 | 0.38 | - | * | RESEARCH_CANDIDATE |
-| Pachuca vs Tigres UANL | away team total over 0.5 | no | 0.3000 | 0.439 [0.306, 0.562] | +0.124 | +0.046 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | Total goals over 4.5 | no | 0.7700 | 0.878 [0.785, 0.957] | +0.095 | +0.044 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Racing Santander vs Real Madrid | Result: away | no | 0.1900 | 0.387 [0.182, 0.612] | +0.187 | +0.043 | 0.23 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | Total goals over 4.5 | no | 0.7500 | 0.863 [0.750, 0.952] | +0.100 | +0.043 | 0.79 | - |  | RESEARCH_CANDIDATE |
+| Pachuca vs Tigres UANL | away team total over 1.5 | no | 0.6700 | 0.790 [0.669, 0.886] | +0.104 | +0.043 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | away wins by more than 1.5 | no | 0.7800 | 0.879 [0.798, 0.945] | +0.087 | +0.042 | 0.82 | - | * | RESEARCH_CANDIDATE |
 | Lazio vs Cagliari | Result: away | yes | 0.1300 | 0.271 [0.142, 0.412] | +0.133 | +0.042 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Total goals over 1.5 | no | 0.1800 | 0.317 [0.191, 0.450] | +0.127 | +0.042 | 0.22 | - |  | RESEARCH_CANDIDATE |
@@ -84,7 +85,6 @@ model board generated 2026-10-31T22:36:28.012569Z · simulations this update: 0 
 | Vancouver Whitecaps vs Seattle Sounders | Total goals over 1.5 | no | 0.1600 | 0.292 [0.170, 0.427] | +0.123 | +0.036 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Minnesota United | btts | no | 0.3900 | 0.514 [0.394, 0.627] | +0.107 | +0.034 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs Necaxa | away team total over 0.5 | no | 0.2900 | 0.419 [0.292, 0.540] | +0.115 | +0.033 | 0.32 | - | * | RESEARCH_CANDIDATE |
-| Pachuca vs Tigres UANL | away team total over 1.5 | no | 0.6800 | 0.790 [0.669, 0.886] | +0.094 | +0.033 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Sassuolo vs Fiorentina | Result: away | no | 0.5900 | 0.732 [0.573, 0.868] | +0.126 | +0.033 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Toronto FC | Total goals over 3.5 | no | 0.5700 | 0.704 [0.554, 0.833] | +0.117 | +0.032 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Total goals over 5.5 | no | 0.9000 | 0.957 [0.913, 0.989] | +0.051 | +0.031 | 0.93 | - |  | RESEARCH_CANDIDATE |
@@ -98,9 +98,9 @@ model board generated 2026-10-31T22:36:28.012569Z · simulations this update: 0 
 
 ```
 action_MODEL_STALE: 466
-action_NO_EDGE: 1045
+action_NO_EDGE: 1043
 action_NO_QUOTE: 249
-action_RESEARCH_CANDIDATE: 92
+action_RESEARCH_CANDIDATE: 94
 contract_sides: 1852
 fixtures: 36
 fixtures_model_invalidated: 0
