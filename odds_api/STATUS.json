@@ -1,10 +1,35 @@
 {
-  "batch_id": "kd-20261031T122116Z",
-  "captured_at": "2026-10-31T12:24:16.353691Z",
+  "batch_id": "kd-20261031T134832Z",
+  "captured_at": "2026-10-31T13:51:36.481957Z",
   "credits_charged": 0,
-  "eligible_fixtures": 0,
+  "eligible_fixtures": 6,
   "no_sport_key": [],
   "paid_calls": 0,
+  "per_sport": {
+    "soccer_germany_bundesliga": {
+      "fixtures": 5,
+      "join": {
+        "ambiguous": 0,
+        "events": 6,
+        "joined": 5,
+        "unjoined_fixtures": [],
+        "unresolved_names": []
+      },
+      "status": "BLOCKED_BUDGET_GUARD:STALE_SCHEDULE"
+    },
+    "soccer_italy_serie_a": {
+      "fixtures": 1,
+      "join": {
+        "ambiguous": 0,
+        "events": 2,
+        "joined": 1,
+        "unjoined_fixtures": [],
+        "unresolved_names": []
+      },
+      "status": "BLOCKED_BUDGET_GUARD:STALE_SCHEDULE"
+    }
+  },
+  "remaining_after": 16987,
   "snapshots": 0,
-  "status": "NOTHING_ELIGIBLE"
+  "status": "OK"
 }
