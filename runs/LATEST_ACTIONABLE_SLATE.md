@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261031T203608Z-643a8f` · generated 2026-10-31T20:36:08.339116Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
+slate `slate-20261031T204758Z-bb469a` · generated 2026-10-31T20:47:58.689191Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-31T20:32:44.941025Z (CURRENT at publish; CURRENT until 2026-10-31T20:52:44.941025Z, STALE after 2026-10-31T21:02:44.941025Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-31T20:45:00.062431Z (CURRENT at publish; CURRENT until 2026-10-31T21:05:00.062431Z, STALE after 2026-10-31T21:15:00.062431Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-31T20:35:49.428027Z · simulations this update: 2 · Odds API calls this update: 0 (credits 0) · reprice 1.12s
+model board generated 2026-10-31T20:35:49.428027Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.15s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -56,18 +56,19 @@ model board generated 2026-10-31T20:35:49.428027Z · simulations this update: 2 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Nashville SC vs New York Red Bulls | btts | no | 0.4200 | 0.658 [0.552, 0.752] | +0.221 | +0.162 | 0.58 | - | * | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Real Salt Lake | away team total over 1.5 | no | 0.5100 | 0.719 [0.593, 0.830] | +0.191 | +0.117 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | btts | no | 0.4000 | 0.596 [0.480, 0.702] | +0.179 | +0.112 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | Lazio vs Cagliari | Result: home | no | 0.3300 | 0.563 [0.387, 0.727] | +0.217 | +0.108 | 0.43 | - | * | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Real Salt Lake | away team total over 1.5 | no | 0.5200 | 0.719 [0.593, 0.830] | +0.181 | +0.107 | 0.62 | - | * | RESEARCH_CANDIDATE |
-| FC Barcelona vs Deportivo Alavés | Result: home | no | 0.0200 | 0.208 [0.086, 0.351] | +0.187 | +0.095 | 0.1 | - | * | RESEARCH_CANDIDATE |
-| LA Galaxy vs Austin FC | home team total over 2.5 | no | 0.5000 | 0.707 [0.533, 0.852] | +0.190 | +0.092 | 0.59 | - | * | RESEARCH_CANDIDATE |
+| FC Barcelona vs Deportivo Alavés | Result: home | no | 0.0100 | 0.208 [0.086, 0.351] | +0.198 | +0.106 | 0.1 | - | * | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | Total goals over 2.5 | no | 0.3400 | 0.543 [0.385, 0.706] | +0.187 | +0.083 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | LA Galaxy vs Austin FC | Total goals over 3.5 | no | 0.4700 | 0.668 [0.502, 0.809] | +0.180 | +0.082 | 0.55 | - | * | RESEARCH_CANDIDATE |
+| LA Galaxy vs Austin FC | home team total over 2.5 | no | 0.5100 | 0.707 [0.533, 0.852] | +0.180 | +0.082 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | LA Galaxy vs Austin FC | home team total over 1.5 | no | 0.2500 | 0.453 [0.279, 0.618] | +0.190 | +0.080 | 0.32 | - |  | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Real Salt Lake | away team total over 2.5 | no | 0.7800 | 0.905 [0.834, 0.961] | +0.113 | +0.076 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | away team total over 0.5 | no | 0.2000 | 0.362 [0.248, 0.477] | +0.151 | +0.075 | 0.27 | - |  | RESEARCH_CANDIDATE |
 | LA Galaxy vs Austin FC | home wins by more than 1.5 | no | 0.4900 | 0.665 [0.497, 0.805] | +0.157 | +0.068 | 0.55 | - | * | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Real Salt Lake | away team total over 2.5 | no | 0.7900 | 0.905 [0.834, 0.961] | +0.103 | +0.067 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | LA Galaxy vs Austin FC | Total goals over 2.5 | no | 0.2700 | 0.455 [0.292, 0.609] | +0.171 | +0.066 | 0.33 | - |  | RESEARCH_CANDIDATE |
+| FC Barcelona vs Deportivo Alavés | Result: draw | yes | 0.0100 | 0.124 [0.057, 0.199] | +0.114 | +0.065 | 0.07 | - |  | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | Total goals over 3.5 | no | 0.5800 | 0.747 [0.608, 0.876] | +0.150 | +0.065 | 0.64 | - |  | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Total goals over 3.5 | no | 0.6200 | 0.773 [0.641, 0.888] | +0.137 | +0.063 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Total goals over 2.5 | no | 0.4000 | 0.575 [0.417, 0.725] | +0.158 | +0.061 | 0.46 | - |  | RESEARCH_CANDIDATE |
@@ -79,7 +80,6 @@ model board generated 2026-10-31T20:35:49.428027Z · simulations this update: 2 
 | LA Galaxy vs Austin FC | home wins by more than 2.5 | no | 0.7000 | 0.833 [0.704, 0.931] | +0.119 | +0.058 | 0.75 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | Total goals over 2.5 | no | 0.3400 | 0.522 [0.345, 0.692] | +0.167 | +0.056 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs Necaxa | btts | no | 0.3700 | 0.514 [0.394, 0.625] | +0.128 | +0.055 | 0.42 | - | * | RESEARCH_CANDIDATE |
-| FC Barcelona vs Deportivo Alavés | Result: draw | yes | 0.0200 | 0.124 [0.057, 0.199] | +0.103 | +0.054 | 0.07 | - |  | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | btts | no | 0.4000 | 0.542 [0.425, 0.654] | +0.126 | +0.049 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Atlanta United vs Toronto FC | btts | no | 0.3400 | 0.476 [0.364, 0.588] | +0.120 | +0.047 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | Total goals over 4.5 | no | 0.7700 | 0.878 [0.785, 0.957] | +0.095 | +0.044 | 0.81 | - |  | RESEARCH_CANDIDATE |
@@ -99,8 +99,8 @@ model board generated 2026-10-31T20:35:49.428027Z · simulations this update: 2 
 ## Counts
 
 ```
-action_MODEL_STALE: 598
-action_NO_EDGE: 1151
+action_MODEL_STALE: 599
+action_NO_EDGE: 1150
 action_NO_QUOTE: 289
 action_RESEARCH_CANDIDATE: 122
 contract_sides: 2160
@@ -109,6 +109,6 @@ fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
-Removed (kicked off): 4
+Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
