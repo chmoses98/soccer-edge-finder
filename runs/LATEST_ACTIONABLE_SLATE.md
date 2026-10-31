@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261031T084100Z-72b8ac` · generated 2026-10-31T08:41:00.985351Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261031T085601Z-bae654` · generated 2026-10-31T08:56:01.020102Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-31T08:38:04.181260Z (CURRENT at publish; CURRENT until 2026-10-31T08:58:04.181260Z, STALE after 2026-10-31T09:08:04.181260Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-31T08:53:04.203180Z (CURRENT at publish; CURRENT until 2026-10-31T09:13:04.203180Z, STALE after 2026-10-31T09:23:04.203180Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-31T07:40:38.112213Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.78s
+model board generated 2026-10-31T07:40:38.112213Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.62s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -74,7 +74,7 @@ model board generated 2026-10-31T07:40:38.112213Z · simulations this update: 0 
 | 2026-11-02T01:30:00Z | Los Angeles FC vs Minnesota United (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-02T02:45:00Z | Portland Timbers vs Houston Dynamo (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (174; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (173; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -122,10 +122,10 @@ model board generated 2026-10-31T07:40:38.112213Z · simulations this update: 0 
 ## Counts
 
 ```
-action_MODEL_STALE: 762
-action_NO_EDGE: 1745
-action_NO_QUOTE: 371
-action_RESEARCH_CANDIDATE: 174
+action_MODEL_STALE: 763
+action_NO_EDGE: 1747
+action_NO_QUOTE: 369
+action_RESEARCH_CANDIDATE: 173
 contract_sides: 3052
 fixtures: 61
 fixtures_model_invalidated: 0
