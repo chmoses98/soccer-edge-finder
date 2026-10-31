@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-31T06:05:36.428938+00:00",
+  "as_of": "2026-10-31T13:20:49.643780+00:00",
   "events": 754,
   "events_skipped_unmapped": 409,
   "fixtures_mapped": 345,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=82"
+      "weather_stopped:consecutive_failures:skipped=84"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 18,
-    "events": 149,
+    "captured": 61,
+    "events": 150,
     "failures": [],
-    "published_post": 7,
-    "published_pre_kickoff": 1,
-    "unchanged": 131,
-    "unpublished": 141
+    "published_post": 20,
+    "published_pre_kickoff": 2,
+    "unchanged": 89,
+    "unpublished": 128
   },
   "map_proposals": {
     "bel.1": {
@@ -438,7 +438,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 6,
+  "results_appended": 1,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -630,17 +630,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 5,
-    "events": 90,
+    "captured": 6,
+    "events": 93,
     "failures": [
-      "401912608: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Ar-Rayyan&count=5&language=en&f",
-      "401841656: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Buenos%20Aires&count=5&language",
-      "401841646: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Buenos%20Aires&count=5&language"
+      "401912606: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-32.9295&longitude=151.7801&hourly=",
+      "401912617: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Jeonju&count=5&language=en&form",
+      "401912604: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Kashiwa&count=5&language=en&for"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 82,
+    "skipped": 84,
     "stopped": "consecutive_failures"
   }
 }
