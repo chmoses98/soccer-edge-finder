@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261031T023432Z-dd30fc` · generated 2026-10-31T02:34:32.115861Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261031T024805Z-0a7ce9` · generated 2026-10-31T02:48:05.294856Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-31T02:31:32.676930Z (CURRENT at publish; CURRENT until 2026-10-31T02:51:32.676930Z, STALE after 2026-10-31T03:01:32.676930Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-31T02:45:02.986006Z (CURRENT at publish; CURRENT until 2026-10-31T03:05:02.986006Z, STALE after 2026-10-31T03:15:02.986006Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-31T02:12:44.424645Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.91s
+model board generated 2026-10-31T02:12:44.424645Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 1.91s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-10-31T02:12:44.424645Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-31T03:00:00Z | Puebla vs Pumas UNAM (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 77 | 0 |
+| 2026-10-31T03:00:00Z | Puebla vs Pumas UNAM (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT close | CURRENT | 77 | 0 |
 | 2026-10-31T12:30:00Z | Chelsea vs Manchester United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-31T14:00:00Z | Bologna vs Monza (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-31T14:30:00Z | FC Augsburg vs SC Freiburg (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -74,7 +74,7 @@ model board generated 2026-10-31T02:12:44.424645Z · simulations this update: 0 
 | 2026-11-02T01:10:00Z | Cruz Azul vs León (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-02T01:30:00Z | Los Angeles FC vs Minnesota United (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (219; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (217; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -91,12 +91,11 @@ model board generated 2026-10-31T02:12:44.424645Z · simulations this update: 0 
 | San Jose Earthquakes vs Real Salt Lake | away team total over 2.5 | no | 0.7900 | 0.920 [0.860, 0.968] | +0.118 | +0.085 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | btts | no | 0.3400 | 0.512 [0.395, 0.625] | +0.156 | +0.083 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | Total goals over 2.5 | no | 0.3400 | 0.543 [0.385, 0.706] | +0.187 | +0.083 | 0.42 | - | * | RESEARCH_CANDIDATE |
-| Monterrey vs Tijuana | home team total over 1.5 | no | 0.3600 | 0.571 [0.389, 0.733] | +0.195 | +0.081 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | First-half total goals over 2.5 | no | 0.8000 | 0.926 [0.859, 0.981] | +0.115 | +0.079 | 0.88 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Tigres UANL | away team total over 0.5 | no | 0.2700 | 0.439 [0.307, 0.561] | +0.155 | +0.077 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | Total goals over 3.5 | no | 0.5700 | 0.747 [0.608, 0.876] | +0.160 | +0.075 | 0.64 | - |  | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | away team total over 0.5 | no | 0.4000 | 0.570 [0.441, 0.693] | +0.153 | +0.073 | 0.47 | - | * | RESEARCH_CANDIDATE |
-| Monterrey vs Tijuana | home team total over 2.5 | no | 0.6400 | 0.805 [0.659, 0.918] | +0.149 | +0.070 | 0.71 | - |  | RESEARCH_CANDIDATE |
+| Monterrey vs Tijuana | home team total over 1.5 | no | 0.3700 | 0.571 [0.389, 0.733] | +0.185 | +0.071 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 1.5 | no | 0.1900 | 0.378 [0.219, 0.546] | +0.177 | +0.069 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | away team total over 0.5 | no | 0.4000 | 0.558 [0.452, 0.668] | +0.141 | +0.069 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Levante vs Atlético Madrid | Result: home | yes | 0.1700 | 0.362 [0.198, 0.540] | +0.183 | +0.068 | 0.23 | - |  | RESEARCH_CANDIDATE |
@@ -112,6 +111,7 @@ model board generated 2026-10-31T02:12:44.424645Z · simulations this update: 0 
 | Vancouver Whitecaps vs Seattle Sounders | Total goals over 4.5 | no | 0.7600 | 0.878 [0.785, 0.957] | +0.105 | +0.054 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | First-half total goals over 1.5 | no | 0.6100 | 0.754 [0.638, 0.862] | +0.127 | +0.053 | 0.66 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | Total goals over 3.5 | no | 0.5700 | 0.725 [0.576, 0.853] | +0.138 | +0.052 | 0.62 | - | * | RESEARCH_CANDIDATE |
+| Monterrey vs Tijuana | home team total over 2.5 | no | 0.6600 | 0.805 [0.659, 0.918] | +0.129 | +0.050 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | Total goals over 2.5 | no | 0.3500 | 0.518 [0.356, 0.670] | +0.152 | +0.049 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | away team total over 1.5 | no | 0.4600 | 0.616 [0.474, 0.750] | +0.139 | +0.048 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs San Diego FC | home wins by more than 1.5 | yes | 0.3100 | 0.481 [0.316, 0.656] | +0.156 | +0.048 | 0.35 | - | * | RESEARCH_CANDIDATE |
@@ -122,9 +122,9 @@ model board generated 2026-10-31T02:12:44.424645Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2451
-action_NO_QUOTE: 382
-action_RESEARCH_CANDIDATE: 219
+action_NO_EDGE: 2452
+action_NO_QUOTE: 383
+action_RESEARCH_CANDIDATE: 217
 contract_sides: 3052
 fixtures: 61
 fixtures_model_invalidated: 0
