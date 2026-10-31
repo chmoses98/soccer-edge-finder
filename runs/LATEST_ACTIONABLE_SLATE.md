@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261031T031319Z-381feb` · generated 2026-10-31T03:13:19.429263Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261031T032758Z-05d036` · generated 2026-10-31T03:27:58.765161Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-31T03:10:01.895815Z (CURRENT at publish; CURRENT until 2026-10-31T03:30:01.895815Z, STALE after 2026-10-31T03:40:01.895815Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-31T03:25:01.828125Z (CURRENT at publish; CURRENT until 2026-10-31T03:45:01.828125Z, STALE after 2026-10-31T03:55:01.828125Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-31T03:13:08.617335Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 1.92s
+model board generated 2026-10-31T03:13:08.617335Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.72s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -74,7 +74,7 @@ model board generated 2026-10-31T03:13:08.617335Z · simulations this update: 1 
 | 2026-11-02T01:30:00Z | Los Angeles FC vs Minnesota United (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-02T02:45:00Z | Portland Timbers vs Houston Dynamo (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (219; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (217; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -83,18 +83,18 @@ model board generated 2026-10-31T03:13:08.617335Z · simulations this update: 1 
 | Vancouver Whitecaps vs Seattle Sounders | btts | no | 0.3900 | 0.596 [0.480, 0.702] | +0.189 | +0.122 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | btts | no | 0.4600 | 0.664 [0.544, 0.770] | +0.186 | +0.114 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Levante vs Atlético Madrid | Result: away | no | 0.3600 | 0.598 [0.419, 0.765] | +0.221 | +0.112 | 0.47 | - | * | RESEARCH_CANDIDATE |
+| Guadalajara vs Atlante | Total goals over 2.5 | no | 0.4000 | 0.637 [0.458, 0.800] | +0.220 | +0.109 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Lazio vs Cagliari | Result: home | no | 0.3300 | 0.563 [0.387, 0.727] | +0.217 | +0.108 | 0.43 | - | * | RESEARCH_CANDIDATE |
-| Guadalajara vs Atlante | Total goals over 2.5 | no | 0.4100 | 0.637 [0.458, 0.800] | +0.210 | +0.099 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 3.5 | no | 0.6300 | 0.819 [0.682, 0.930] | +0.172 | +0.096 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | btts | no | 0.4500 | 0.625 [0.522, 0.724] | +0.158 | +0.095 | 0.54 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | away team total over 0.5 | no | 0.2100 | 0.391 [0.275, 0.507] | +0.169 | +0.090 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | away team total over 2.5 | no | 0.7900 | 0.920 [0.860, 0.968] | +0.118 | +0.085 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Real Salt Lake | btts | no | 0.3400 | 0.512 [0.395, 0.625] | +0.156 | +0.083 | 0.42 | - | * | RESEARCH_CANDIDATE |
+| Guadalajara vs Atlante | away team total over 0.5 | no | 0.3900 | 0.570 [0.441, 0.693] | +0.163 | +0.083 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | Total goals over 2.5 | no | 0.3400 | 0.543 [0.385, 0.706] | +0.187 | +0.083 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | First-half total goals over 2.5 | no | 0.8000 | 0.926 [0.859, 0.981] | +0.115 | +0.079 | 0.88 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Tigres UANL | away team total over 0.5 | no | 0.2700 | 0.439 [0.307, 0.561] | +0.155 | +0.077 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | Total goals over 3.5 | no | 0.5700 | 0.747 [0.608, 0.876] | +0.160 | +0.075 | 0.64 | - |  | RESEARCH_CANDIDATE |
-| Guadalajara vs Atlante | away team total over 0.5 | no | 0.4000 | 0.570 [0.441, 0.693] | +0.153 | +0.073 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 1.5 | no | 0.1900 | 0.378 [0.219, 0.546] | +0.177 | +0.069 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | New York City FC vs CF Montréal | away team total over 0.5 | no | 0.4000 | 0.558 [0.452, 0.668] | +0.141 | +0.069 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Levante vs Atlético Madrid | Result: home | yes | 0.1700 | 0.362 [0.198, 0.540] | +0.183 | +0.068 | 0.23 | - |  | RESEARCH_CANDIDATE |
@@ -122,9 +122,9 @@ model board generated 2026-10-31T03:13:08.617335Z · simulations this update: 1 
 ## Counts
 
 ```
-action_NO_EDGE: 2421
-action_NO_QUOTE: 412
-action_RESEARCH_CANDIDATE: 219
+action_NO_EDGE: 2442
+action_NO_QUOTE: 393
+action_RESEARCH_CANDIDATE: 217
 contract_sides: 3052
 fixtures: 61
 fixtures_model_invalidated: 0
