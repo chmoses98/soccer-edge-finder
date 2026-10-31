@@ -489,3 +489,253 @@ unmapped teams: 0 | proposals: {}
   ],
   "written": 0
 }
+[odds_api] {"captured_at": "2026-10-31T14:47:57.915016Z", "batch_id": "kd-20261031T144500Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-10-31T14:47:57.936846+00:00",
+ "leagues": [
+  "eng.1",
+  "esp.1"
+ ],
+ "events": 12,
+ "fixtures_mapped": 12,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 2,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 12,
+  "captured": 2,
+  "unchanged": 10,
+  "published_pre_kickoff": 6,
+  "published_post": 2,
+  "unpublished": 4,
+  "failures": []
+ },
+ "results_appended": 1,
+ "weather": {
+  "events": 12,
+  "captured": 12,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261031T144759Z-c630cf", "mode": "reprice_only", "fixtures": 54, "contract_sides": 3010, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 1.062, "price_changes_vs_previous": 94}
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261031T145428Z",
+  "complete": true,
+  "discovered": 6806,
+  "written": 1546,
+  "path": "work/snapshots/2026-10-31/cap-20261031T145428Z.jsonl"
+}
+{
+  "reference_probabilities": 230,
+  "observed_at": "2026-10-31 13:51:35.436726+00:00",
+  "groups": 435,
+  "unmapped_fixture_groups": 205,
+  "incomplete_groups": 0,
+  "snapshots": 828,
+  "provider_notes": [
+    "196 rows, 109 skipped (unmapped division/team)",
+    "skipped_by_division={'B1': 9, 'D2': 9, 'E2': 12, 'E3': 12, 'EC': 12, 'F2': 9, 'G1': 7, 'I2': 10, 'N1': 2, 'SC1': 5, 'SC2': 5, 'SC3': 5, 'SP2': 11, 'T1': 1}",
+    "unknown_teams={'N1:For Sittard': 1, 'N1:Nijmegen': 1, 'T1:Goztep': 1}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-31T14:54:30.411536Z", "batch_id": "kd-20261031T145130Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-10-31T14:54:30.430144+00:00",
+ "leagues": [
+  "ita.1",
+  "usa.1"
+ ],
+ "events": 12,
+ "fixtures_mapped": 12,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 2,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 12,
+  "captured": 5,
+  "unchanged": 7,
+  "published_pre_kickoff": 0,
+  "published_post": 1,
+  "unpublished": 11,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 12,
+  "captured": 7,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [
+   "761928: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Kansas%20City&count=5&language=",
+   "761926: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=St.%20Louis&count=5&language=en",
+   "761925: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Carson&count=5&language=en&form"
+  ],
+  "skipped": 2,
+  "stopped": "consecutive_failures"
+ },
+ "map_version": "4",
+ "health": {
+  "state": "DEGRADED",
+  "reasons": [
+   "weather_failures:3",
+   "weather_stopped:consecutive_failures:skipped=2"
+  ]
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261031T145524Z-de0abd", "mode": "reprice_only", "fixtures": 54, "contract_sides": 3010, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.959, "price_changes_vs_previous": 139}
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261031T150153Z",
+  "complete": true,
+  "discovered": 6785,
+  "written": 2480,
+  "path": "work/snapshots/2026-10-31/cap-20261031T150153Z.jsonl"
+}
+{
+  "reference_probabilities": 230,
+  "observed_at": "2026-10-31 13:51:35.436726+00:00",
+  "groups": 435,
+  "unmapped_fixture_groups": 205,
+  "incomplete_groups": 0,
+  "snapshots": 828,
+  "provider_notes": [
+    "196 rows, 109 skipped (unmapped division/team)",
+    "skipped_by_division={'B1': 9, 'D2': 9, 'E2': 12, 'E3': 12, 'EC': 12, 'F2': 9, 'G1': 7, 'I2': 10, 'N1': 2, 'SC1': 5, 'SC2': 5, 'SC3': 5, 'SP2': 11, 'T1': 1}",
+    "unknown_teams={'N1:For Sittard': 1, 'N1:Nijmegen': 1, 'T1:Goztep': 1}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-31T15:01:56.353820Z", "batch_id": "kd-20261031T145855Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-10-31T15:01:56.373270+00:00",
+ "leagues": [
+  "eng.1",
+  "esp.1"
+ ],
+ "events": 12,
+ "fixtures_mapped": 12,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 2,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 12,
+  "captured": 5,
+  "unchanged": 7,
+  "published_pre_kickoff": 1,
+  "published_post": 7,
+  "unpublished": 4,
+  "failures": []
+ },
+ "results_appended": 2,
+ "weather": {
+  "events": 12,
+  "captured": 9,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [
+   "401879249: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=45.1602&longitude=-98.3229&hourly=t",
+   "401879247: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=52.4066&longitude=-1.5122&hourly=te",
+   "401879245: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=53.4809&longitude=-2.2374&hourly=te"
+  ],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "DEGRADED",
+  "reasons": [
+   "weather_failures:3"
+  ]
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261031T150246Z-643135", "mode": "reprice_only", "fixtures": 49, "contract_sides": 2980, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.981, "price_changes_vs_previous": 210}
+[dispatch] holding 4.0 min (next window opens in 2.0 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261031T151255Z",
+  "complete": true,
+  "discovered": 6795,
+  "written": 2945,
+  "path": "work/snapshots/2026-10-31/cap-20261031T151255Z.jsonl"
+}
+{
+  "reference_probabilities": 230,
+  "observed_at": "2026-10-31 13:51:35.436726+00:00",
+  "groups": 435,
+  "unmapped_fixture_groups": 205,
+  "incomplete_groups": 0,
+  "snapshots": 828,
+  "provider_notes": [
+    "196 rows, 109 skipped (unmapped division/team)",
+    "skipped_by_division={'B1': 9, 'D2': 9, 'E2': 12, 'E3': 12, 'EC': 12, 'F2': 9, 'G1': 7, 'I2': 10, 'N1': 2, 'SC1': 5, 'SC2': 5, 'SC3': 5, 'SP2': 11, 'T1': 1}",
+    "unknown_teams={'N1:For Sittard': 1, 'N1:Nijmegen': 1, 'T1:Goztep': 1}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-10-31T15:12:58.044787Z", "batch_id": "kd-20261031T151000Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-10-31T15:12:58.063227+00:00",
+ "leagues": [
+  "esp.1"
+ ],
+ "events": 4,
+ "fixtures_mapped": 4,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 1,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 4,
+  "captured": 0,
+  "unchanged": 4,
+  "published_pre_kickoff": 1,
+  "published_post": 1,
+  "unpublished": 2,
+  "failures": []
+ },
+ "results_appended": 1,
+ "weather": {
+  "events": 4,
+  "captured": 4,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261031T151259Z-c62035", "mode": "reprice_only", "fixtures": 49, "contract_sides": 2980, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.925, "price_changes_vs_previous": 324}

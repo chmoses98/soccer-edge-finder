@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261031T150246Z-643135` · generated 2026-10-31T15:02:46.395046Z · trigger `kickoff_chain:T-15/T-5` · mode `reprice_only`
+slate `slate-20261031T151259Z-c62035` · generated 2026-10-31T15:12:59.014440Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-31T14:58:56.313940Z (CURRENT at publish; CURRENT until 2026-10-31T15:18:56.313940Z, STALE after 2026-10-31T15:28:56.313940Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-31T15:10:00.039478Z (CURRENT at publish; CURRENT until 2026-10-31T15:30:00.039478Z, STALE after 2026-10-31T15:40:00.039478Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-31T13:52:36.903157Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.98s
+model board generated 2026-10-31T13:52:36.903157Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.93s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -62,7 +62,7 @@ model board generated 2026-10-31T13:52:36.903157Z · simulations this update: 0 
 | 2026-11-02T01:30:00Z | Los Angeles FC vs Minnesota United (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-02T02:45:00Z | Portland Timbers vs Houston Dynamo (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (130; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (128; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -78,42 +78,42 @@ model board generated 2026-10-31T13:52:36.903157Z · simulations this update: 0 
 | Vancouver Whitecaps vs Seattle Sounders | Total goals over 3.5 | no | 0.5700 | 0.747 [0.608, 0.876] | +0.160 | +0.075 | 0.64 | - |  | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | away team total over 0.5 | no | 0.4000 | 0.570 [0.441, 0.693] | +0.153 | +0.073 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Tigres UANL | away team total over 1.5 | no | 0.6400 | 0.790 [0.669, 0.886] | +0.134 | +0.072 | 0.71 | - |  | RESEARCH_CANDIDATE |
-| Guadalajara vs Atlante | Total goals over 4.5 | no | 0.8000 | 0.921 [0.840, 0.980] | +0.109 | +0.070 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 1.5 | no | 0.1900 | 0.378 [0.219, 0.546] | +0.177 | +0.069 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Tigres UANL | btts | no | 0.4200 | 0.582 [0.460, 0.690] | +0.145 | +0.067 | 0.48 | - | * | RESEARCH_CANDIDATE |
+| Guadalajara vs Atlante | Total goals over 4.5 | no | 0.8100 | 0.921 [0.840, 0.980] | +0.100 | +0.061 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Total goals over 2.5 | no | 0.4000 | 0.575 [0.417, 0.725] | +0.158 | +0.061 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | Result: away | no | 0.5800 | 0.731 [0.610, 0.849] | +0.134 | +0.058 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs Necaxa | btts | no | 0.3700 | 0.514 [0.394, 0.625] | +0.128 | +0.055 | 0.42 | - | * | RESEARCH_CANDIDATE |
-| Vancouver Whitecaps vs Seattle Sounders | Total goals over 4.5 | no | 0.7600 | 0.878 [0.785, 0.957] | +0.105 | +0.054 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | First-half total goals over 1.5 | no | 0.6100 | 0.754 [0.638, 0.862] | +0.127 | +0.053 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Total goals over 3.5 | no | 0.6300 | 0.773 [0.641, 0.888] | +0.127 | +0.053 | 0.68 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | Total goals over 3.5 | no | 0.6300 | 0.772 [0.635, 0.885] | +0.126 | +0.052 | 0.68 | - | * | RESEARCH_CANDIDATE |
-| Guadalajara vs Atlante | home team total over 1.5 | no | 0.3500 | 0.545 [0.354, 0.727] | +0.179 | +0.051 | 0.4 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | Total goals over 2.5 | no | 0.4100 | 0.573 [0.411, 0.721] | +0.146 | +0.050 | 0.45 | - |  | RESEARCH_CANDIDATE |
-| Colorado Rapids vs Chicago Fire | away team total over 0.5 | no | 0.2300 | 0.371 [0.252, 0.492] | +0.128 | +0.049 | 0.27 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | btts | no | 0.4000 | 0.542 [0.425, 0.654] | +0.126 | +0.049 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | away team total over 1.5 | no | 0.4600 | 0.616 [0.474, 0.750] | +0.139 | +0.048 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | Total goals over 3.5 | no | 0.5700 | 0.727 [0.565, 0.867] | +0.140 | +0.048 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | away team total over 1.5 | no | 0.7800 | 0.882 [0.802, 0.947] | +0.090 | +0.047 | 0.82 | - |  | RESEARCH_CANDIDATE |
-| Guadalajara vs Atlante | First-half exact score 0-0 (home-away) | yes | 0.2500 | 0.397 [0.268, 0.522] | +0.134 | +0.047 | 0.29 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | First-half total goals over 0.5 | no | 0.2500 | 0.397 [0.268, 0.522] | +0.134 | +0.047 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Atlanta United vs Toronto FC | btts | no | 0.3400 | 0.476 [0.364, 0.588] | +0.120 | +0.047 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | Total goals over 2.5 | no | 0.3500 | 0.522 [0.345, 0.692] | +0.156 | +0.045 | 0.39 | - |  | RESEARCH_CANDIDATE |
-| Colorado Rapids vs Chicago Fire | away team total over 1.5 | no | 0.5900 | 0.727 [0.600, 0.841] | +0.120 | +0.044 | 0.63 | - |  | RESEARCH_CANDIDATE |
+| Colorado Rapids vs Chicago Fire | away team total over 1.5 | no | 0.5900 | 0.727 [0.600, 0.841] | +0.120 | +0.044 | 0.63 | - | * | RESEARCH_CANDIDATE |
+| Vancouver Whitecaps vs Seattle Sounders | Total goals over 4.5 | no | 0.7700 | 0.878 [0.785, 0.957] | +0.095 | +0.044 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | away wins by more than 1.5 | no | 0.7800 | 0.879 [0.798, 0.945] | +0.087 | +0.042 | 0.82 | - | * | RESEARCH_CANDIDATE |
 | Lazio vs Cagliari | Result: away | yes | 0.1300 | 0.271 [0.142, 0.412] | +0.133 | +0.042 | 0.17 | - |  | RESEARCH_CANDIDATE |
-| Guadalajara vs Atlante | home team total over 2.5 | no | 0.6300 | 0.782 [0.622, 0.915] | +0.136 | +0.042 | 0.67 | - |  | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Total goals over 4.5 | no | 0.8000 | 0.895 [0.811, 0.962] | +0.084 | +0.042 | 0.84 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | Total goals over 4.5 | no | 0.8000 | 0.894 [0.806, 0.961] | +0.083 | +0.041 | 0.84 | - |  | RESEARCH_CANDIDATE |
-| Monterrey vs Tijuana | home team total over 1.5 | no | 0.4000 | 0.571 [0.389, 0.733] | +0.154 | +0.041 | 0.44 | - | * | RESEARCH_CANDIDATE |
+| Colorado Rapids vs Chicago Fire | away team total over 0.5 | no | 0.2400 | 0.371 [0.252, 0.492] | +0.118 | +0.039 | 0.27 | - |  | RESEARCH_CANDIDATE |
+| New England Revolution vs Inter Miami | away wins by more than 2.5 | no | 0.8900 | 0.956 [0.916, 0.985] | +0.059 | +0.039 | 0.93 | - |  | RESEARCH_CANDIDATE |
+| Guadalajara vs Atlante | First half: both teams to score | no | 0.8000 | 0.891 [0.829, 0.951] | +0.080 | +0.039 | 0.84 | - | * | RESEARCH_CANDIDATE |
+| New England Revolution vs Inter Miami | Result: home | yes | 0.3500 | 0.505 [0.356, 0.666] | +0.139 | +0.038 | 0.38 | - |  | RESEARCH_CANDIDATE |
+| Pachuca vs Tigres UANL | Total goals over 3.5 | no | 0.6800 | 0.802 [0.678, 0.907] | +0.107 | +0.038 | 0.71 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_MODEL_STALE: 993
-action_NO_EDGE: 1496
-action_NO_QUOTE: 361
-action_RESEARCH_CANDIDATE: 130
+action_MODEL_STALE: 990
+action_NO_EDGE: 1487
+action_NO_QUOTE: 375
+action_RESEARCH_CANDIDATE: 128
 contract_sides: 2980
 fixtures: 49
 fixtures_model_invalidated: 0
