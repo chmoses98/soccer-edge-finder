@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261031T140503Z-d75921` · generated 2026-10-31T14:05:03.472284Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261031T141802Z-ada604` · generated 2026-10-31T14:18:02.507858Z · trigger `kickoff_chain:T-60/T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-31T14:01:58.472033Z (CURRENT at publish; CURRENT until 2026-10-31T14:21:58.472033Z, STALE after 2026-10-31T14:31:58.472033Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-31T14:15:00.047912Z (CURRENT at publish; CURRENT until 2026-10-31T14:35:00.047912Z, STALE after 2026-10-31T14:45:00.047912Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-31T13:52:36.903157Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.96s
+model board generated 2026-10-31T13:52:36.903157Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.98s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -67,19 +67,19 @@ model board generated 2026-10-31T13:52:36.903157Z · simulations this update: 0 
 | 2026-11-01T21:30:00Z | Atlanta United vs Toronto FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 59 | 0 |
 | 2026-11-01T21:30:00Z | Nashville SC vs New York Red Bulls (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 59 | 0 |
 | 2026-11-01T23:00:00Z | Santos Laguna vs Necaxa (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-02T00:00:00Z | New England Revolution vs Inter Miami (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-02T01:10:00Z | Cruz Azul vs León (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-02T01:30:00Z | Los Angeles FC vs Minnesota United (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-02T00:00:00Z | New England Revolution vs Inter Miami (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-02T01:10:00Z | Cruz Azul vs León (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-02T01:30:00Z | Los Angeles FC vs Minnesota United (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-02T02:45:00Z | Portland Timbers vs Houston Dynamo (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (136; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (137; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Levante vs Atlético Madrid | Result: away | no | 0.1800 | 0.598 [0.419, 0.765] | +0.407 | +0.298 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Levante vs Atlético Madrid | Result: home | yes | 0.0400 | 0.362 [0.198, 0.540] | +0.320 | +0.205 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | btts | no | 0.4200 | 0.658 [0.552, 0.752] | +0.221 | +0.162 | 0.58 | - | * | RESEARCH_CANDIDATE |
-| Vancouver Whitecaps vs Seattle Sounders | btts | no | 0.3900 | 0.596 [0.480, 0.702] | +0.189 | +0.122 | 0.51 | - | * | RESEARCH_CANDIDATE |
+| Vancouver Whitecaps vs Seattle Sounders | btts | no | 0.4000 | 0.596 [0.480, 0.702] | +0.179 | +0.112 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 2.5 | no | 0.4000 | 0.637 [0.458, 0.800] | +0.220 | +0.109 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Lazio vs Cagliari | Result: home | no | 0.3300 | 0.563 [0.387, 0.727] | +0.217 | +0.108 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 3.5 | no | 0.6200 | 0.819 [0.682, 0.930] | +0.182 | +0.106 | 0.72 | - |  | RESEARCH_CANDIDATE |
@@ -95,25 +95,25 @@ model board generated 2026-10-31T13:52:36.903157Z · simulations this update: 0 
 | Pachuca vs Tigres UANL | btts | no | 0.4200 | 0.582 [0.460, 0.690] | +0.145 | +0.067 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | First-half total goals over 1.5 | no | 0.6000 | 0.754 [0.638, 0.862] | +0.137 | +0.063 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Total goals over 3.5 | no | 0.6200 | 0.773 [0.641, 0.888] | +0.137 | +0.063 | 0.68 | - | * | RESEARCH_CANDIDATE |
+| Hull City vs Ipswich Town | Result: away | no | 0.6200 | 0.804 [0.621, 0.948] | +0.168 | +0.063 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Total goals over 2.5 | no | 0.4000 | 0.575 [0.417, 0.725] | +0.158 | +0.061 | 0.46 | - |  | RESEARCH_CANDIDATE |
+| New England Revolution vs Inter Miami | away team total over 1.5 | no | 0.4500 | 0.616 [0.474, 0.750] | +0.149 | +0.059 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | Result: away | no | 0.5800 | 0.731 [0.610, 0.849] | +0.134 | +0.058 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs Necaxa | btts | no | 0.3700 | 0.514 [0.394, 0.625] | +0.128 | +0.055 | 0.42 | - | * | RESEARCH_CANDIDATE |
-| Levante vs Atlético Madrid | Result: draw | yes | 0.1400 | 0.235 [0.188, 0.286] | +0.087 | +0.054 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | Total goals over 4.5 | no | 0.7600 | 0.878 [0.785, 0.957] | +0.105 | +0.054 | 0.81 | - |  | RESEARCH_CANDIDATE |
-| Hull City vs Ipswich Town | Result: away | no | 0.6300 | 0.804 [0.621, 0.948] | +0.158 | +0.053 | 0.68 | - | * | RESEARCH_CANDIDATE |
+| Hull City vs Ipswich Town | Result: home | yes | 0.3400 | 0.580 [0.325, 0.838] | +0.225 | +0.053 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | Total goals over 3.5 | no | 0.6300 | 0.772 [0.635, 0.885] | +0.126 | +0.052 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | home team total over 1.5 | no | 0.3500 | 0.545 [0.354, 0.727] | +0.179 | +0.051 | 0.4 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | Total goals over 2.5 | no | 0.4100 | 0.573 [0.411, 0.721] | +0.146 | +0.050 | 0.45 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | away team total over 0.5 | no | 0.2300 | 0.371 [0.252, 0.492] | +0.128 | +0.049 | 0.27 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | btts | no | 0.4000 | 0.542 [0.425, 0.654] | +0.126 | +0.049 | 0.44 | - | * | RESEARCH_CANDIDATE |
-| New England Revolution vs Inter Miami | away team total over 1.5 | no | 0.4600 | 0.616 [0.474, 0.750] | +0.139 | +0.048 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | Total goals over 3.5 | no | 0.5700 | 0.727 [0.565, 0.867] | +0.140 | +0.048 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | away team total over 1.5 | no | 0.7800 | 0.882 [0.802, 0.947] | +0.090 | +0.047 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | First-half total goals over 0.5 | no | 0.2500 | 0.397 [0.268, 0.522] | +0.134 | +0.047 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Atlanta United vs Toronto FC | btts | no | 0.3400 | 0.476 [0.364, 0.588] | +0.120 | +0.047 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | Total goals over 2.5 | no | 0.3500 | 0.522 [0.345, 0.692] | +0.156 | +0.045 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | away team total over 1.5 | no | 0.5900 | 0.727 [0.600, 0.841] | +0.120 | +0.044 | 0.63 | - |  | RESEARCH_CANDIDATE |
-| Hull City vs Ipswich Town | Result: home | yes | 0.3500 | 0.580 [0.325, 0.838] | +0.214 | +0.043 | 0.39 | - |  | RESEARCH_CANDIDATE |
+| Levante vs Atlético Madrid | Result: draw | yes | 0.1500 | 0.235 [0.188, 0.286] | +0.076 | +0.044 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | away wins by more than 1.5 | no | 0.7800 | 0.879 [0.798, 0.945] | +0.087 | +0.042 | 0.82 | - | * | RESEARCH_CANDIDATE |
 | Lazio vs Cagliari | Result: away | yes | 0.1300 | 0.271 [0.142, 0.412] | +0.133 | +0.042 | 0.17 | - |  | RESEARCH_CANDIDATE |
 
@@ -121,9 +121,9 @@ model board generated 2026-10-31T13:52:36.903157Z · simulations this update: 0 
 
 ```
 action_MODEL_STALE: 992
-action_NO_EDGE: 1559
-action_NO_QUOTE: 353
-action_RESEARCH_CANDIDATE: 136
+action_NO_EDGE: 1556
+action_NO_QUOTE: 355
+action_RESEARCH_CANDIDATE: 137
 contract_sides: 3040
 fixtures: 59
 fixtures_model_invalidated: 0
