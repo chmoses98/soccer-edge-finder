@@ -1,42 +1,50 @@
 {
-  "as_of": "2026-10-31T17:27:57.840157+00:00",
-  "events": 18,
+  "as_of": "2026-10-31T19:56:19.275536+00:00",
+  "events": 24,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 18,
+  "fixtures_mapped": 24,
   "health": {
-    "reasons": [],
-    "state": "HEALTHY"
+    "reasons": [
+      "weather_failures:3",
+      "weather_stopped:consecutive_failures:skipped=6"
+    ],
+    "state": "DEGRADED"
   },
   "leagues": [
+    "arg.1",
     "eng.1",
     "esp.1",
-    "ger.1"
+    "usa.1"
   ],
   "lineups": {
-    "captured": 0,
+    "captured": 11,
     "events": 16,
     "failures": [],
-    "published_post": 11,
+    "published_post": 8,
     "published_pre_kickoff": 3,
-    "unchanged": 16,
-    "unpublished": 2
+    "unchanged": 5,
+    "unpublished": 5
   },
   "map_proposals": {},
   "map_version": "4",
-  "results_appended": 13,
+  "results_appended": 11,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
-  "scoreboard_queries": 3,
+  "scoreboard_queries": 4,
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 16,
+    "captured": 7,
     "events": 16,
-    "failures": [],
+    "failures": [
+      "761922: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Charlotte&count=5&language=en&f",
+      "761924: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Columbus&count=5&language=en&fo",
+      "761919: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Cincinnati&count=5&language=en&"
+    ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 0,
-    "stopped": null
+    "skipped": 6,
+    "stopped": "consecutive_failures"
   }
 }
