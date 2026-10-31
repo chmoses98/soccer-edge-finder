@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261031T164552Z-7c59ff` · generated 2026-10-31T16:45:52.192668Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261031T165230Z-32e72a` · generated 2026-10-31T16:52:30.359312Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-31T16:42:56.006783Z (CURRENT at publish; CURRENT until 2026-10-31T17:02:56.006783Z, STALE after 2026-10-31T17:12:56.006783Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-31T16:49:30.441026Z (CURRENT at publish; CURRENT until 2026-10-31T17:09:30.441026Z, STALE after 2026-10-31T17:19:30.441026Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-10-31T16:31:08.124938Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.97s
 
@@ -61,13 +61,13 @@ model board generated 2026-10-31T16:31:08.124938Z · simulations this update: 0 
 | 2026-11-02T01:30:00Z | Los Angeles FC vs Minnesota United (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-02T02:45:00Z | Portland Timbers vs Houston Dynamo (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (143; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (144; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Rayo Vallecano vs Celta Vigo | Result: home | no | 0.0700 | 0.558 [0.391, 0.716] | +0.484 | +0.380 | 0.43 | - | * | RESEARCH_CANDIDATE |
-| Rayo Vallecano vs Celta Vigo | Result: away | yes | 0.0200 | 0.293 [0.167, 0.440] | +0.272 | +0.184 | 0.19 | - |  | RESEARCH_CANDIDATE |
-| Rayo Vallecano vs Celta Vigo | Result: draw | yes | 0.0600 | 0.265 [0.204, 0.325] | +0.201 | +0.163 | 0.21 | - |  | RESEARCH_CANDIDATE |
+| Rayo Vallecano vs Celta Vigo | Result: home | no | 0.0200 | 0.558 [0.391, 0.716] | +0.537 | +0.434 | 0.43 | - | * | RESEARCH_CANDIDATE |
+| Rayo Vallecano vs Celta Vigo | Result: draw | yes | 0.0200 | 0.265 [0.204, 0.325] | +0.243 | +0.206 | 0.21 | - |  | RESEARCH_CANDIDATE |
+| Rayo Vallecano vs Celta Vigo | Result: away | yes | 0.0100 | 0.293 [0.167, 0.440] | +0.283 | +0.194 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | btts | no | 0.4200 | 0.658 [0.552, 0.752] | +0.221 | +0.162 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | btts | no | 0.4600 | 0.664 [0.544, 0.770] | +0.186 | +0.114 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | btts | no | 0.4000 | 0.596 [0.480, 0.702] | +0.179 | +0.112 | 0.51 | - | * | RESEARCH_CANDIDATE |
@@ -111,8 +111,8 @@ model board generated 2026-10-31T16:31:08.124938Z · simulations this update: 0 
 ```
 action_MODEL_STALE: 860
 action_NO_EDGE: 1626
-action_NO_QUOTE: 345
-action_RESEARCH_CANDIDATE: 143
+action_NO_QUOTE: 344
+action_RESEARCH_CANDIDATE: 144
 contract_sides: 2974
 fixtures: 48
 fixtures_model_invalidated: 0
