@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261031T224004Z-154f72` · generated 2026-10-31T22:40:04.883535Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261031T224759Z-1d6168` · generated 2026-10-31T22:47:59.187457Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-10-31T22:36:56.271222Z (CURRENT at publish; CURRENT until 2026-10-31T22:56:56.271222Z, STALE after 2026-10-31T23:06:56.271222Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-31T22:45:00.064980Z (CURRENT at publish; CURRENT until 2026-10-31T23:05:00.064980Z, STALE after 2026-10-31T23:15:00.064980Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-31T22:02:08.590012Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.00s
+model board generated 2026-10-31T22:36:28.012569Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.98s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,11 +12,11 @@ model board generated 2026-10-31T22:02:08.590012Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-10-31T23:00:00Z | Pachuca vs Tigres UANL (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-01T01:05:00Z | Monterrey vs Tijuana (mex.liga_mx) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 32 | 0 |
-| 2026-11-01T01:07:00Z | Guadalajara vs Atlante (mex.liga_mx) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-31T23:00:00Z | Pachuca vs Tigres UANL (mex.liga_mx) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-01T01:05:00Z | Monterrey vs Tijuana (mex.liga_mx) | VALID (STALE) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 32 | 0 |
+| 2026-11-01T01:07:00Z | Guadalajara vs Atlante (mex.liga_mx) | VALID (STALE) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-01T01:30:00Z | Colorado Rapids vs Chicago Fire (usa.mls) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-01T03:10:00Z | Club América vs Toluca (mex.liga_mx) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-01T03:10:00Z | Club América vs Toluca (mex.liga_mx) | VALID (STALE) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-01T11:30:00Z | Como vs Venezia (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-01T12:00:00Z | Athletic Club vs Real Sociedad (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-01T12:00:00Z | FC Barcelona vs Deportivo Alavés (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
