@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261031T155438Z-c572b4` · generated 2026-10-31T15:54:38.529843Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261031T160106Z-31ff95` · generated 2026-10-31T16:01:06.951236Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-10-31T15:51:33.480068Z (CURRENT at publish; CURRENT until 2026-10-31T16:11:33.480068Z, STALE after 2026-10-31T16:21:33.480068Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-10-31T15:57:53.500997Z (CURRENT at publish; CURRENT until 2026-10-31T16:17:53.500997Z, STALE after 2026-10-31T16:27:53.500997Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-10-31T15:39:29.206720Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.95s
+model board generated 2026-10-31T16:00:58.571461Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.76s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -14,7 +14,7 @@ model board generated 2026-10-31T15:39:29.206720Z · simulations this update: 0 
 |---|---|---|---|---|---|---|---|
 | 2026-10-31T16:15:00Z | Nice vs Rennes (fra.ligue_1) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-31T17:00:00Z | Udinese vs AS Roma (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-10-31T17:00:00Z | Charlotte FC vs Orlando City (usa.mls) | VALID (STALE) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-10-31T17:00:00Z | Charlotte FC vs Orlando City (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-10-31T17:30:00Z | Tottenham Hotspur vs Crystal Palace (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-31T17:30:00Z | Bayern Munich vs Borussia Dortmund (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-10-31T18:00:00Z | FC Cincinnati vs Philadelphia Union (usa.mls) | VALID (STALE) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -62,13 +62,15 @@ model board generated 2026-10-31T15:39:29.206720Z · simulations this update: 0 
 | 2026-11-02T01:30:00Z | Los Angeles FC vs Minnesota United (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-02T02:45:00Z | Portland Timbers vs Houston Dynamo (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (132; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (140; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Nashville SC vs New York Red Bulls | btts | no | 0.4200 | 0.658 [0.552, 0.752] | +0.221 | +0.162 | 0.58 | - | * | RESEARCH_CANDIDATE |
+| Rayo Vallecano vs Celta Vigo | Result: home | no | 0.3200 | 0.558 [0.391, 0.716] | +0.223 | +0.120 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | btts | no | 0.4000 | 0.596 [0.480, 0.702] | +0.179 | +0.112 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 2.5 | no | 0.4000 | 0.637 [0.458, 0.800] | +0.220 | +0.109 | 0.5 | - | * | RESEARCH_CANDIDATE |
+| Rayo Vallecano vs Celta Vigo | Result: away | yes | 0.0900 | 0.293 [0.167, 0.440] | +0.198 | +0.109 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Lazio vs Cagliari | Result: home | no | 0.3300 | 0.563 [0.387, 0.727] | +0.217 | +0.108 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | Total goals over 3.5 | no | 0.6200 | 0.819 [0.682, 0.930] | +0.182 | +0.106 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | btts | no | 0.4700 | 0.664 [0.544, 0.770] | +0.176 | +0.104 | 0.57 | - | * | RESEARCH_CANDIDATE |
@@ -88,6 +90,7 @@ model board generated 2026-10-31T15:39:29.206720Z · simulations this update: 0 
 | Guadalajara vs Atlante | First-half total goals over 1.5 | no | 0.6100 | 0.754 [0.638, 0.862] | +0.127 | +0.053 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Total goals over 3.5 | no | 0.6300 | 0.773 [0.641, 0.888] | +0.127 | +0.053 | 0.68 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | Total goals over 3.5 | no | 0.6300 | 0.772 [0.635, 0.885] | +0.126 | +0.052 | 0.68 | - | * | RESEARCH_CANDIDATE |
+| Guadalajara vs Atlante | home team total over 1.5 | no | 0.3500 | 0.545 [0.354, 0.727] | +0.179 | +0.051 | 0.4 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | Total goals over 2.5 | no | 0.4100 | 0.573 [0.411, 0.721] | +0.146 | +0.050 | 0.45 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | away team total over 0.5 | no | 0.2300 | 0.371 [0.252, 0.492] | +0.128 | +0.049 | 0.27 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | btts | no | 0.4000 | 0.542 [0.425, 0.654] | +0.126 | +0.049 | 0.44 | - | * | RESEARCH_CANDIDATE |
@@ -96,30 +99,25 @@ model board generated 2026-10-31T15:39:29.206720Z · simulations this update: 0 
 | Guadalajara vs Atlante | First-half exact score 0-0 (home-away) | yes | 0.2500 | 0.397 [0.268, 0.522] | +0.134 | +0.047 | 0.29 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Atlante | First-half total goals over 0.5 | no | 0.2500 | 0.397 [0.268, 0.522] | +0.134 | +0.047 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Atlanta United vs Toronto FC | btts | no | 0.3400 | 0.476 [0.364, 0.588] | +0.120 | +0.047 | 0.38 | - | * | RESEARCH_CANDIDATE |
+| Charlotte FC vs Orlando City | away team total over 1.5 | no | 0.4900 | 0.634 [0.491, 0.754] | +0.127 | +0.046 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | Total goals over 2.5 | no | 0.3500 | 0.522 [0.345, 0.692] | +0.156 | +0.045 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | Colorado Rapids vs Chicago Fire | away team total over 1.5 | no | 0.5900 | 0.727 [0.600, 0.841] | +0.120 | +0.044 | 0.63 | - |  | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | Total goals over 4.5 | no | 0.7700 | 0.878 [0.785, 0.957] | +0.095 | +0.044 | 0.81 | - |  | RESEARCH_CANDIDATE |
+| Charlotte FC vs Orlando City | away team total over 2.5 | no | 0.7500 | 0.854 [0.756, 0.928] | +0.091 | +0.043 | 0.79 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | away wins by more than 1.5 | no | 0.7800 | 0.879 [0.798, 0.945] | +0.087 | +0.042 | 0.82 | - | * | RESEARCH_CANDIDATE |
 | Lazio vs Cagliari | Result: away | yes | 0.1300 | 0.271 [0.142, 0.412] | +0.133 | +0.042 | 0.17 | - |  | RESEARCH_CANDIDATE |
-| Atlanta United vs Toronto FC | Total goals over 3.5 | no | 0.5600 | 0.704 [0.554, 0.833] | +0.127 | +0.042 | 0.6 | - | * | RESEARCH_CANDIDATE |
-| Portland Timbers vs Houston Dynamo | Total goals over 4.5 | no | 0.8000 | 0.895 [0.811, 0.962] | +0.084 | +0.042 | 0.84 | - |  | RESEARCH_CANDIDATE |
-| Guadalajara vs Atlante | home team total over 1.5 | no | 0.3600 | 0.545 [0.354, 0.727] | +0.169 | +0.041 | 0.4 | - |  | RESEARCH_CANDIDATE |
-| Colorado Rapids vs Chicago Fire | Total goals over 4.5 | no | 0.8000 | 0.894 [0.806, 0.961] | +0.083 | +0.041 | 0.84 | - |  | RESEARCH_CANDIDATE |
-| New England Revolution vs Inter Miami | away wins by more than 2.5 | no | 0.8900 | 0.956 [0.916, 0.985] | +0.059 | +0.039 | 0.93 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_MODEL_STALE: 995
-action_NO_EDGE: 1484
-action_NO_QUOTE: 369
-action_RESEARCH_CANDIDATE: 132
+action_MODEL_STALE: 858
+action_NO_EDGE: 1619
+action_NO_QUOTE: 363
+action_RESEARCH_CANDIDATE: 140
 contract_sides: 2980
 fixtures: 49
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
-
-Removed (kicked off): 5
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
