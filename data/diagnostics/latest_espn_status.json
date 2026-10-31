@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-31T00:16:37.697913+00:00",
+  "as_of": "2026-10-31T06:05:36.428938+00:00",
   "events": 754,
   "events_skipped_unmapped": 409,
   "fixtures_mapped": 345,
   "health": {
     "reasons": [
-      "weather_failures:5",
-      "weather_stopped:consecutive_failures:skipped=78"
+      "weather_failures:3",
+      "weather_stopped:consecutive_failures:skipped=82"
     ],
     "state": "DEGRADED"
   },
@@ -81,12 +81,12 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 148,
-    "events": 150,
+    "captured": 18,
+    "events": 149,
     "failures": [],
-    "published_post": 8,
+    "published_post": 7,
     "published_pre_kickoff": 1,
-    "unchanged": 2,
+    "unchanged": 131,
     "unpublished": 141
   },
   "map_proposals": {
@@ -438,7 +438,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 10,
+  "results_appended": 6,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -630,19 +630,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 15,
-    "events": 98,
+    "captured": 5,
+    "events": 90,
     "failures": [
-      "401841645: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=C\u00f3rdoba&count=5&language=en&for",
-      "401841650: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rosario&count=5&language=en&for",
-      "401841657: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-34.6131&longitude=-58.3772&hourly=",
-      "401841649: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-34.6131&longitude=-58.3772&hourly=",
-      "401841644: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Tucuman&count=5&language=en&for"
+      "401912608: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Ar-Rayyan&count=5&language=en&f",
+      "401841656: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Buenos%20Aires&count=5&language",
+      "401841646: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Buenos%20Aires&count=5&language"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 78,
+    "skipped": 82,
     "stopped": "consecutive_failures"
   }
 }
