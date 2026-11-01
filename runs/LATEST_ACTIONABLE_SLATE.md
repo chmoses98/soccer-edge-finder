@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261101T105940Z-1246f8` · generated 2026-11-01T10:59:40.915091Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261101T110721Z-307c63` · generated 2026-11-01T11:07:21.144023Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-01T10:56:37.673791Z (CURRENT at publish; CURRENT until 2026-11-01T11:16:37.673791Z, STALE after 2026-11-01T11:26:37.673791Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-01T11:04:21.337742Z (CURRENT at publish; CURRENT until 2026-11-01T11:24:21.337742Z, STALE after 2026-11-01T11:34:21.337742Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-01T07:14:04.684833Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.68s
+model board generated 2026-11-01T07:14:04.684833Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.82s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -45,7 +45,7 @@ model board generated 2026-11-01T07:14:04.684833Z · simulations this update: 0 
 | 2026-11-02T20:00:00Z | Newcastle United vs Everton (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-02T23:00:00Z | Red Bull Bragantino vs Santos (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (56; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (57; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -80,7 +80,6 @@ model board generated 2026-11-01T07:14:04.684833Z · simulations this update: 0 
 | Lazio vs Cagliari | Result: draw | yes | 0.2100 | 0.292 [0.218, 0.367] | +0.070 | +0.022 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Sassuolo vs Fiorentina | Result: home | yes | 0.3400 | 0.501 [0.314, 0.684] | +0.145 | +0.020 | 0.35 | - |  | RESEARCH_CANDIDATE |
 | Racing Santander vs Real Madrid | Result: home | yes | 0.0800 | 0.212 [0.072, 0.394] | +0.127 | +0.018 | 0.09 | - |  | RESEARCH_CANDIDATE |
-| New England Revolution vs Inter Miami | home wins by more than 2.5 | yes | 0.0600 | 0.148 [0.063, 0.265] | +0.084 | +0.018 | 0.07 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs Necaxa | away team total over 2.5 | no | 0.8800 | 0.932 [0.872, 0.975] | +0.044 | +0.016 | 0.89 | - |  | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | First-half total goals over 0.5 | no | 0.2600 | 0.357 [0.248, 0.472] | +0.084 | +0.015 | 0.27 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Minnesota United | away team total over 2.5 | no | 0.8900 | 0.937 [0.886, 0.977] | +0.040 | +0.014 | 0.9 | - |  | RESEARCH_CANDIDATE |
@@ -89,14 +88,15 @@ model board generated 2026-11-01T07:14:04.684833Z · simulations this update: 0 
 | Portland Timbers vs Houston Dynamo | First-half total goals over 1.5 | no | 0.6100 | 0.714 [0.588, 0.822] | +0.087 | +0.013 | 0.62 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | First half: away wins by more than 1.5 | no | 0.8900 | 0.938 [0.889, 0.981] | +0.042 | +0.013 | 0.9 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Total goals over 5.5 | no | 0.9200 | 0.957 [0.913, 0.989] | +0.032 | +0.013 | 0.93 | - |  | RESEARCH_CANDIDATE |
+| Getafe vs Sevilla | Result: home | yes | 0.2800 | 0.411 [0.254, 0.573] | +0.116 | +0.012 | 0.29 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_MODEL_STALE: 224
-action_NO_EDGE: 751
-action_NO_QUOTE: 169
-action_RESEARCH_CANDIDATE: 56
+action_NO_EDGE: 752
+action_NO_QUOTE: 167
+action_RESEARCH_CANDIDATE: 57
 contract_sides: 1200
 fixtures: 32
 fixtures_model_invalidated: 0
