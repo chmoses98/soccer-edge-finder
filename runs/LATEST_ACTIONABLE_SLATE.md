@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261101T215659Z-9d6323` · generated 2026-11-01T21:56:59.570969Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261101T220413Z-031d21` · generated 2026-11-01T22:04:13.057837Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-01T21:53:59.392549Z (CURRENT at publish; CURRENT until 2026-11-01T22:13:59.392549Z, STALE after 2026-11-01T22:23:59.392549Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-01T22:01:00.805326Z (CURRENT at publish; CURRENT until 2026-11-01T22:21:00.805326Z, STALE after 2026-11-01T22:31:00.805326Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-01T21:28:05.279263Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.54s
+model board generated 2026-11-01T22:04:03.187641Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.70s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,11 +12,11 @@ model board generated 2026-11-01T21:28:05.279263Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-01T23:00:00Z | Santos Laguna vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-02T00:00:00Z | New England Revolution vs Inter Miami (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-02T01:10:00Z | Cruz Azul vs León (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-02T01:30:00Z | Los Angeles FC vs Minnesota United (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-02T02:45:00Z | Portland Timbers vs Houston Dynamo (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-01T23:00:00Z | Santos Laguna vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 77 | 0 |
+| 2026-11-02T00:00:00Z | New England Revolution vs Inter Miami (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-02T01:10:00Z | Cruz Azul vs León (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-02T01:30:00Z | Los Angeles FC vs Minnesota United (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-02T02:45:00Z | Portland Timbers vs Houston Dynamo (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-02T17:30:00Z | Sassuolo vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-02T19:45:00Z | Atalanta vs Parma (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-02T20:00:00Z | Newcastle United vs Everton (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 82 | 0 |
@@ -28,20 +28,20 @@ model board generated 2026-11-01T21:28:05.279263Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| New England Revolution vs Inter Miami | away team total over 1.5 | no | 0.4000 | 0.618 [0.472, 0.750] | +0.201 | +0.112 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | Result: away | no | 0.5400 | 0.734 [0.607, 0.842] | +0.176 | +0.102 | 0.64 | - | * | RESEARCH_CANDIDATE |
+| New England Revolution vs Inter Miami | away team total over 1.5 | no | 0.4100 | 0.618 [0.472, 0.750] | +0.191 | +0.102 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | Result: home | yes | 0.3100 | 0.510 [0.358, 0.653] | +0.185 | +0.085 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | away wins by more than 1.5 | no | 0.7400 | 0.881 [0.799, 0.943] | +0.127 | +0.085 | 0.82 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | away team total over 2.5 | no | 0.6900 | 0.843 [0.739, 0.927] | +0.138 | +0.082 | 0.77 | - |  | RESEARCH_CANDIDATE |
-| Santos Laguna vs Necaxa | away team total over 1.5 | no | 0.6300 | 0.774 [0.653, 0.877] | +0.128 | +0.060 | 0.69 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | away team total over 0.5 | no | 0.1400 | 0.275 [0.170, 0.383] | +0.126 | +0.056 | 0.19 | - |  | RESEARCH_CANDIDATE |
-| Santos Laguna vs Necaxa | away team total over 0.5 | no | 0.2700 | 0.421 [0.293, 0.548] | +0.138 | +0.056 | 0.32 | - |  | RESEARCH_CANDIDATE |
+| Santos Laguna vs Necaxa | away team total over 0.5 | no | 0.2700 | 0.421 [0.293, 0.548] | +0.138 | +0.056 | 0.32 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Total goals over 2.5 | no | 0.4000 | 0.572 [0.418, 0.712] | +0.156 | +0.055 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | First-half result: away | no | 0.6300 | 0.762 [0.658, 0.852] | +0.115 | +0.054 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs Necaxa | btts | no | 0.3700 | 0.516 [0.387, 0.643] | +0.129 | +0.054 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | Second-half result: away | no | 0.6200 | 0.753 [0.638, 0.852] | +0.117 | +0.054 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Minnesota United | btts | no | 0.3700 | 0.512 [0.399, 0.627] | +0.126 | +0.053 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | away wins by more than 2.5 | no | 0.8800 | 0.956 [0.917, 0.985] | +0.069 | +0.051 | 0.93 | - |  | RESEARCH_CANDIDATE |
+| Santos Laguna vs Necaxa | away team total over 1.5 | no | 0.6400 | 0.774 [0.653, 0.877] | +0.118 | +0.050 | 0.69 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | home wins by more than 1.5 | yes | 0.1500 | 0.301 [0.170, 0.435] | +0.142 | +0.050 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Total goals over 3.5 | no | 0.6300 | 0.772 [0.642, 0.880] | +0.126 | +0.048 | 0.67 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Minnesota United | away team total over 0.5 | no | 0.2900 | 0.426 [0.306, 0.545] | +0.122 | +0.046 | 0.33 | - | * | RESEARCH_CANDIDATE |
@@ -64,16 +64,16 @@ model board generated 2026-11-01T21:28:05.279263Z · simulations this update: 0 
 | Los Angeles FC vs Minnesota United | away team total over 2.5 | no | 0.8900 | 0.936 [0.883, 0.976] | +0.039 | +0.014 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | First-half total goals over 1.5 | no | 0.6100 | 0.713 [0.598, 0.822] | +0.086 | +0.013 | 0.62 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | Second-half result: home | yes | 0.3200 | 0.432 [0.298, 0.562] | +0.096 | +0.013 | 0.33 | - |  | RESEARCH_CANDIDATE |
+| Portland Timbers vs Houston Dynamo | Exact score 0-0 (home-away) | yes | 0.0500 | 0.104 [0.050, 0.162] | +0.050 | +0.012 | 0.06 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Total goals over 0.5 | no | 0.0500 | 0.104 [0.050, 0.162] | +0.050 | +0.012 | 0.06 | - |  | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Total goals over 5.5 | no | 0.9200 | 0.957 [0.914, 0.988] | +0.032 | +0.011 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | Exact score 3-0 (home-away) | yes | 0.0200 | 0.046 [0.024, 0.067] | +0.024 | +0.010 | 0.02 | - | * | RESEARCH_CANDIDATE |
-| New England Revolution vs Inter Miami | Exact score 2-0 (home-away) | yes | 0.0400 | 0.070 [0.043, 0.099] | +0.028 | +0.009 | 0.04 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 677
-action_NO_QUOTE: 583
+action_NO_EDGE: 680
+action_NO_QUOTE: 580
 action_RESEARCH_CANDIDATE: 52
 contract_sides: 1312
 fixtures: 11
