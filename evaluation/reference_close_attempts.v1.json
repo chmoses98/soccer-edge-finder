@@ -1,12 +1,12 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 229,
-  "PINNACLE_VALID_CLOSE": 296,
+  "PINNACLE_VALID_CLOSE": 301,
+  "MISSED_DISPATCHER_CLOSE": 80,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 235,
   "NO_SPORT_KEY": 19,
-  "MISSED_DISPATCHER_CLOSE": 74,
   "PINNACLE_QUOTED_NOTHING": 15,
-  "NO_REFERENCE_EVENT": 3,
-  "CLOSE_BLOCKED_BUDGET": 7
+  "CLOSE_BLOCKED_BUDGET": 7,
+  "NO_REFERENCE_EVENT": 3
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.belgrano": {
@@ -58,6 +58,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261018T230321Z"
+  },
+  "fx:arg.primera:2026:arg.boca_juniors:arg.river_plate": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261101T174508Z"
   },
   "fx:arg.primera:2026:arg.boca_juniors:arg.talleres": {
    "state": "MISSED_DISPATCHER_CLOSE",
@@ -914,6 +919,16 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261018T124501Z"
   },
+  "fx:eng.premier_league:2026-27:eng.liverpool:eng.arsenal": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:eng.premier_league:2026-27:eng.liverpool:eng.arsenal:matchday_9": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261101T161859Z"
+  },
   "fx:eng.premier_league:2026-27:eng.liverpool:eng.brighton": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -1124,6 +1139,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261011T114500Z"
   },
+  "fx:esp.la_liga:2026-27:esp.elche:esp.valencia": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
   "fx:esp.la_liga:2026-27:esp.espanyol:esp.atletico_madrid": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -1143,6 +1163,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261019T184544Z"
+  },
+  "fx:esp.la_liga:2026-27:esp.getafe:esp.sevilla": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
   },
   "fx:esp.la_liga:2026-27:esp.levante:esp.athletic_bilbao": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -1197,6 +1222,11 @@
   "fx:esp.la_liga:2026-27:esp.racing_santander:esp.espanyol": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:esp.la_liga:2026-27:esp.racing_santander:esp.real_madrid": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
    "batch_id": null
   },
   "fx:esp.la_liga:2026-27:esp.racing_santander:esp.valencia": {
@@ -1544,6 +1574,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261010T182855Z"
   },
+  "fx:fra.ligue_1:2026-27:fra.lyon:fra.angers": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
   "fx:fra.ligue_1:2026-27:fra.lyon:fra.nice": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -1599,6 +1634,16 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261011T124402Z"
   },
+  "fx:fra.ligue_1:2026-27:fra.paris_fc:fra.monaco": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:fra.ligue_1:2026-27:fra.paris_fc:fra.monaco:matchday_9": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261101T160514Z"
+  },
   "fx:fra.ligue_1:2026-27:fra.paris_fc:fra.rennes": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -1648,6 +1693,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261025T160002Z"
+  },
+  "fx:fra.ligue_1:2026-27:fra.strasbourg:fra.auxerre": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
   },
   "fx:fra.ligue_1:2026-27:fra.strasbourg:fra.psg": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -1778,6 +1828,16 @@
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
    "batch_id": null
+  },
+  "fx:ger.bundesliga:2026-27:ger.frankfurt:ger.hamburg": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:ger.bundesliga:2026-27:ger.frankfurt:ger.hamburg:matchday_8": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261101T161859Z"
   },
   "fx:ger.bundesliga:2026-27:ger.frankfurt:ger.koln": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -2009,6 +2069,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261010T131501Z"
   },
+  "fx:ger.bundesliga:2026-27:ger.union_berlin:ger.koln": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
+  },
   "fx:ger.bundesliga:2026-27:ger.werder_bremen:ger.hoffenheim": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -2154,6 +2219,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261016T182930Z"
   },
+  "fx:ita.serie_a:2026-27:ita.frosinone:ita.torino": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
+  },
   "fx:ita.serie_a:2026-27:ita.genoa:ita.fiorentina": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -2214,6 +2284,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261018T183000Z"
   },
+  "fx:ita.serie_a:2026-27:ita.lazio:ita.cagliari": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
+  },
   "fx:ita.serie_a:2026-27:ita.lazio:ita.monza": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -2243,6 +2318,16 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261011T124402Z"
+  },
+  "fx:ita.serie_a:2026-27:ita.lecce:ita.genoa": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:ita.serie_a:2026-27:ita.lecce:ita.genoa:matchday_10": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261101T164500Z"
   },
   "fx:ita.serie_a:2026-27:ita.lecce:ita.juventus": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
