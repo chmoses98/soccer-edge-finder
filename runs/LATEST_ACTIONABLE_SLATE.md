@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261101T155333Z-1cfb2f` · generated 2026-11-01T15:53:33.365622Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261101T160029Z-cce709` · generated 2026-11-01T16:00:29.195616Z · trigger `kickoff_chain:T-60/T-30` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-01T15:50:33.681666Z (CURRENT at publish; CURRENT until 2026-11-01T16:10:33.681666Z, STALE after 2026-11-01T16:20:33.681666Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-01T15:57:20.196768Z (CURRENT at publish; CURRENT until 2026-11-01T16:17:20.196768Z, STALE after 2026-11-01T16:27:20.196768Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-01T15:30:30.465384Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.85s
+model board generated 2026-11-01T16:00:28.374147Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 1.01s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -15,12 +15,12 @@ model board generated 2026-11-01T15:30:30.465384Z · simulations this update: 0 
 | 2026-11-01T16:15:00Z | Paris FC vs AS Monaco (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
 | 2026-11-01T16:30:00Z | Liverpool vs Arsenal (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
 | 2026-11-01T16:30:00Z | Eintracht Frankfurt vs Hamburger SV (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
-| 2026-11-01T17:00:00Z | Lecce vs Genoa (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-01T18:00:00Z | Boca Juniors vs River Plate (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-01T17:00:00Z | Lecce vs Genoa (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
+| 2026-11-01T18:00:00Z | Boca Juniors vs River Plate (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-01T19:45:00Z | Marseille vs Toulouse (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-01T19:45:00Z | Juventus vs Napoli (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-11-01T20:30:00Z | Vancouver Whitecaps vs Seattle Sounders (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-01T21:30:00Z | Newell's Old Boys vs Unión (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-01T21:30:00Z | Newell's Old Boys vs Unión (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-01T21:30:00Z | Atlanta United vs Toronto FC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-01T21:30:00Z | Nashville SC vs New York Red Bulls (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-01T23:00:00Z | Santos Laguna vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -84,9 +84,9 @@ model board generated 2026-11-01T15:30:30.465384Z · simulations this update: 0 
 
 ```
 action_NO_EDGE: 1050
-action_NO_QUOTE: 1057
+action_NO_QUOTE: 909
 action_RESEARCH_CANDIDATE: 113
-contract_sides: 2220
+contract_sides: 2072
 fixtures: 22
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
