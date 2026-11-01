@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261101T173438Z-4b4f54` · generated 2026-11-01T17:34:38.292966Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261101T174123Z-c1ffa4` · generated 2026-11-01T17:41:23.184351Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-01T17:31:41.308725Z (CURRENT at publish; CURRENT until 2026-11-01T17:51:41.308725Z, STALE after 2026-11-01T18:01:41.308725Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-01T17:38:24.661551Z (CURRENT at publish; CURRENT until 2026-11-01T17:58:24.661551Z, STALE after 2026-11-01T18:08:24.661551Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-01T16:00:28.374147Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.82s
 
@@ -16,7 +16,7 @@ model board generated 2026-11-01T16:00:28.374147Z · simulations this update: 0 
 | 2026-11-01T19:45:00Z | Marseille vs Toulouse (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-01T19:45:00Z | Juventus vs Napoli (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-11-01T20:30:00Z | Vancouver Whitecaps vs Seattle Sounders (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-01T21:30:00Z | Newell's Old Boys vs Unión (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-01T21:30:00Z | Newell's Old Boys vs Unión (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-01T21:30:00Z | Atlanta United vs Toronto FC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-01T21:30:00Z | Nashville SC vs New York Red Bulls (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-01T23:00:00Z | Santos Laguna vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -31,7 +31,7 @@ model board generated 2026-11-01T16:00:28.374147Z · simulations this update: 0 
 | 2026-11-02T22:00:00Z | Platense vs Central Córdoba (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-02T23:00:00Z | Red Bull Bragantino vs Santos (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 
-## Candidates on CURRENT prices (112; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (114; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -79,9 +79,9 @@ model board generated 2026-11-01T16:00:28.374147Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1024
+action_NO_EDGE: 1022
 action_NO_QUOTE: 912
-action_RESEARCH_CANDIDATE: 112
+action_RESEARCH_CANDIDATE: 114
 contract_sides: 2048
 fixtures: 18
 fixtures_model_invalidated: 0
