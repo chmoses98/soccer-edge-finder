@@ -3,37 +3,37 @@
   "commit_sha": "bc6072ba7a66",
   "components": {
     "dispatch": {
-      "age_seconds": 699.5,
-      "as_of": "2026-11-01T01:17:42Z",
+      "age_seconds": 18091.6,
+      "as_of": "2026-11-01T01:38:00Z",
       "detail": "kickoff dispatcher heartbeat",
-      "status": "OK"
+      "status": "STALE"
     },
     "espn_fixtures": {
-      "age_seconds": 7316.4,
+      "age_seconds": 25926.6,
       "as_of": "2026-10-31T23:27:25Z",
       "detail": "ESPN fixture/lineup sync (STATUS.json)",
       "status": "OK"
     },
     "export": {
-      "age_seconds": 140.9,
+      "age_seconds": 18751.1,
       "as_of": "2026-11-01T01:27:00Z",
       "detail": null,
-      "status": "OK"
+      "status": "STALE"
     },
     "kalshi_sweep": {
-      "age_seconds": 156.4,
+      "age_seconds": 18766.6,
       "as_of": "2026-11-01T01:26:45Z",
       "detail": "exhaustive Kalshi soccer sweep (snapshots/STATUS.json)",
-      "status": "OK"
+      "status": "STALE"
     },
     "market_data": {
-      "age_seconds": 331.1,
+      "age_seconds": 18941.3,
       "as_of": "2026-11-01T01:23:50Z",
       "detail": null,
-      "status": "OK"
+      "status": "STALE"
     },
     "model": {
-      "age_seconds": 7779.0,
+      "age_seconds": 26389.2,
       "as_of": "2026-10-31T23:19:42Z",
       "detail": null,
       "status": "OK"
@@ -51,19 +51,19 @@
       "status": "UNKNOWN"
     }
   },
-  "data_age_seconds": 7779.0,
+  "data_age_seconds": 26389.2,
   "errors": [],
-  "freshness_status": "FRESH",
-  "generated_at": "2026-11-01T01:29:21Z",
+  "freshness_status": "STALE",
+  "generated_at": "2026-11-01T06:39:31Z",
   "kind": "health",
-  "last_export_attempt": "2026-11-01T01:29:21Z",
+  "last_export_attempt": "2026-11-01T06:39:31Z",
   "last_market_capture": "2026-11-01T01:23:50Z",
   "last_model_generated": "2026-10-31T23:19:42Z",
   "last_successful_run": "2026-11-01T01:27:00Z",
-  "market_data_status": "OK",
+  "market_data_status": "STALE",
   "model_status": "OK",
   "next_scheduled_run": null,
-  "overall_status": "RESEARCH_ONLY",
+  "overall_status": "STALE",
   "payload_run_id": "run_b685aaff859424b36ecd",
   "router_status": "UNKNOWN",
   "run_id": "run_b685aaff859424b36ecd",
