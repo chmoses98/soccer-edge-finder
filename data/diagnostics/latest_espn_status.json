@@ -1,11 +1,14 @@
 {
-  "as_of": "2026-11-01T06:35:54.417680+00:00",
+  "as_of": "2026-11-01T15:37:29.729881+00:00",
   "events": 822,
   "events_skipped_unmapped": 452,
   "fixtures_mapped": 370,
   "health": {
-    "reasons": [],
-    "state": "HEALTHY"
+    "reasons": [
+      "weather_failures:3",
+      "weather_stopped:consecutive_failures:skipped=44"
+    ],
+    "state": "DEGRADED"
   },
   "leagues": [
     "afc.champions",
@@ -78,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 30,
-    "events": 113,
+    "captured": 50,
+    "events": 105,
     "failures": [],
-    "published_post": 5,
-    "published_pre_kickoff": 0,
-    "unchanged": 83,
-    "unpublished": 108
+    "published_post": 34,
+    "published_pre_kickoff": 7,
+    "unchanged": 55,
+    "unpublished": 64
   },
   "map_proposals": {
     "bel.1": {
@@ -417,7 +420,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 7,
+  "results_appended": 11,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -609,13 +612,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 54,
-    "events": 55,
-    "failures": [],
+    "captured": 7,
+    "events": 54,
+    "failures": [
+      "401912617: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Jeonju&count=5&language=en&form",
+      "401912604: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Kashiwa&count=5&language=en&for",
+      "401912605: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Kobe&count=5&language=en&format"
+    ],
     "forecast_miss": 0,
-    "geocode_miss": 1,
+    "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 0,
-    "stopped": null
+    "skipped": 44,
+    "stopped": "consecutive_failures"
   }
 }
