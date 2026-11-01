@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261101T091428Z-1bad9d` · generated 2026-11-01T09:14:28.899913Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261101T092937Z-632c42` · generated 2026-11-01T09:29:37.697769Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-01T09:11:32.676663Z (CURRENT at publish; CURRENT until 2026-11-01T09:31:32.676663Z, STALE after 2026-11-01T09:41:32.676663Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-01T09:26:32.702785Z (CURRENT at publish; CURRENT until 2026-11-01T09:46:32.702785Z, STALE after 2026-11-01T09:56:32.702785Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-01T07:14:04.684833Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.87s
+model board generated 2026-11-01T07:14:04.684833Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.68s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -77,6 +77,7 @@ model board generated 2026-11-01T07:14:04.684833Z · simulations this update: 0 
 | Portland Timbers vs Houston Dynamo | btts | no | 0.4100 | 0.542 [0.425, 0.654] | +0.116 | +0.039 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | Result: away | no | 0.8400 | 0.920 [0.864, 0.967] | +0.071 | +0.039 | 0.88 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | Exact score 2-0 (home-away) | yes | 0.0900 | 0.154 [0.122, 0.184] | +0.059 | +0.038 | 0.12 | - |  | RESEARCH_CANDIDATE |
+| New England Revolution vs Inter Miami | home wins by more than 1.5 | yes | 0.1600 | 0.298 [0.168, 0.454] | +0.128 | +0.036 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | First-half result: away | no | 0.6500 | 0.763 [0.668, 0.862] | +0.097 | +0.034 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | Total goals over 5.5 | no | 0.8700 | 0.939 [0.874, 0.985] | +0.061 | +0.033 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Total goals over 4.5 | no | 0.8100 | 0.895 [0.811, 0.962] | +0.074 | +0.032 | 0.84 | - |  | RESEARCH_CANDIDATE |
@@ -86,7 +87,6 @@ model board generated 2026-11-01T07:14:04.684833Z · simulations this update: 0 
 | Portland Timbers vs Houston Dynamo | home team total over 1.5 | no | 0.4400 | 0.586 [0.411, 0.740] | +0.129 | +0.029 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Getafe vs Sevilla | Result: away | no | 0.6000 | 0.723 [0.579, 0.842] | +0.106 | +0.027 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | Sassuolo vs Fiorentina | Result: away | no | 0.6000 | 0.733 [0.569, 0.866] | +0.116 | +0.026 | 0.62 | - | * | RESEARCH_CANDIDATE |
-| New England Revolution vs Inter Miami | home wins by more than 1.5 | yes | 0.1700 | 0.298 [0.168, 0.454] | +0.118 | +0.026 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | First-half total goals over 0.5 | no | 0.2500 | 0.357 [0.248, 0.472] | +0.094 | +0.025 | 0.27 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Minnesota United | away team total over 2.5 | no | 0.8800 | 0.937 [0.886, 0.977] | +0.050 | +0.024 | 0.9 | - |  | RESEARCH_CANDIDATE |
 
@@ -94,8 +94,8 @@ model board generated 2026-11-01T07:14:04.684833Z · simulations this update: 0 
 
 ```
 action_MODEL_STALE: 28
-action_NO_EDGE: 904
-action_NO_QUOTE: 187
+action_NO_EDGE: 903
+action_NO_QUOTE: 188
 action_RESEARCH_CANDIDATE: 81
 contract_sides: 1200
 fixtures: 32
