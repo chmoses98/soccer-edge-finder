@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261101T164758Z-58bb94` · generated 2026-11-01T16:47:58.717608Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261101T165804Z-21e0cf` · generated 2026-11-01T16:58:04.276906Z · trigger `kickoff_chain:T-60/T-5` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-01T16:45:00.095016Z (CURRENT at publish; CURRENT until 2026-11-01T17:05:00.095016Z, STALE after 2026-11-01T17:15:00.095016Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-01T16:55:00.064747Z (CURRENT at publish; CURRENT until 2026-11-01T17:15:00.064747Z, STALE after 2026-11-01T17:25:00.064747Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-01T16:00:28.374147Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.82s
+model board generated 2026-11-01T16:00:28.374147Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.83s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -13,11 +13,11 @@ model board generated 2026-11-01T16:00:28.374147Z · simulations this update: 0 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
 | 2026-11-01T17:00:00Z | Lecce vs Genoa (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
-| 2026-11-01T18:00:00Z | Boca Juniors vs River Plate (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-01T18:00:00Z | Boca Juniors vs River Plate (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
 | 2026-11-01T19:45:00Z | Marseille vs Toulouse (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-01T19:45:00Z | Juventus vs Napoli (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-11-01T20:30:00Z | Vancouver Whitecaps vs Seattle Sounders (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-01T21:30:00Z | Newell's Old Boys vs Unión (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-01T21:30:00Z | Newell's Old Boys vs Unión (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-01T21:30:00Z | Atlanta United vs Toronto FC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-01T21:30:00Z | Nashville SC vs New York Red Bulls (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-01T23:00:00Z | Santos Laguna vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -36,16 +36,16 @@ model board generated 2026-11-01T16:00:28.374147Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Nashville SC vs New York Red Bulls | away team total over 0.5 | no | 0.3000 | 0.610 [0.499, 0.715] | +0.295 | +0.227 | 0.52 | - | * | RESEARCH_CANDIDATE |
+| Nashville SC vs New York Red Bulls | away team total over 0.5 | no | 0.3100 | 0.610 [0.499, 0.715] | +0.285 | +0.216 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | btts | no | 0.3800 | 0.659 [0.551, 0.755] | +0.262 | +0.199 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | away team total over 1.5 | no | 0.6700 | 0.906 [0.846, 0.955] | +0.220 | +0.188 | 0.86 | - |  | RESEARCH_CANDIDATE |
-| Vancouver Whitecaps vs Seattle Sounders | away team total over 0.5 | no | 0.2900 | 0.510 [0.390, 0.629] | +0.206 | +0.127 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | btts | no | 0.3800 | 0.592 [0.478, 0.699] | +0.195 | +0.123 | 0.5 | - | * | RESEARCH_CANDIDATE |
-| Vancouver Whitecaps vs Seattle Sounders | away team total over 1.5 | no | 0.6600 | 0.845 [0.757, 0.921] | +0.170 | +0.119 | 0.78 | - |  | RESEARCH_CANDIDATE |
-| Nashville SC vs New York Red Bulls | Total goals over 2.5 | no | 0.2900 | 0.516 [0.348, 0.677] | +0.211 | +0.099 | 0.38 | - | * | RESEARCH_CANDIDATE |
+| Vancouver Whitecaps vs Seattle Sounders | away team total over 1.5 | no | 0.6600 | 0.845 [0.757, 0.921] | +0.170 | +0.119 | 0.78 | - | * | RESEARCH_CANDIDATE |
+| Vancouver Whitecaps vs Seattle Sounders | away team total over 0.5 | no | 0.3000 | 0.510 [0.390, 0.629] | +0.196 | +0.117 | 0.41 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | Result: away | no | 0.5500 | 0.734 [0.607, 0.842] | +0.167 | +0.092 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | away team total over 1.5 | no | 0.4200 | 0.618 [0.472, 0.750] | +0.181 | +0.092 | 0.51 | - | * | RESEARCH_CANDIDATE |
-| Nashville SC vs New York Red Bulls | Total goals over 3.5 | no | 0.5200 | 0.722 [0.567, 0.857] | +0.185 | +0.090 | 0.61 | - |  | RESEARCH_CANDIDATE |
+| Nashville SC vs New York Red Bulls | Total goals over 3.5 | no | 0.5200 | 0.722 [0.567, 0.857] | +0.185 | +0.090 | 0.61 | - | * | RESEARCH_CANDIDATE |
+| Nashville SC vs New York Red Bulls | Total goals over 2.5 | no | 0.3000 | 0.516 [0.348, 0.677] | +0.201 | +0.089 | 0.38 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | First half: both teams to score | no | 0.7500 | 0.880 [0.819, 0.941] | +0.117 | +0.077 | 0.83 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | Total goals over 4.5 | no | 0.7100 | 0.861 [0.752, 0.947] | +0.136 | +0.076 | 0.78 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | Result: home | yes | 0.3200 | 0.510 [0.358, 0.653] | +0.175 | +0.075 | 0.39 | - |  | RESEARCH_CANDIDATE |
