@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261101T162852Z-f14593` · generated 2026-11-01T16:28:52.886134Z · trigger `kickoff_chain:T-60/T-5` · mode `reprice_only`
+slate `slate-20261101T163543Z-cc3b55` · generated 2026-11-01T16:35:43.138263Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-01T16:25:56.784943Z (CURRENT at publish; CURRENT until 2026-11-01T16:45:56.784943Z, STALE after 2026-11-01T16:55:56.784943Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-01T16:32:46.868214Z (CURRENT at publish; CURRENT until 2026-11-01T16:52:46.868214Z, STALE after 2026-11-01T17:02:46.868214Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-01T16:00:28.374147Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.83s
 
@@ -12,8 +12,6 @@ model board generated 2026-11-01T16:00:28.374147Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-01T16:30:00Z | Liverpool vs Arsenal (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
-| 2026-11-01T16:30:00Z | Eintracht Frankfurt vs Hamburger SV (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
 | 2026-11-01T17:00:00Z | Lecce vs Genoa (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
 | 2026-11-01T18:00:00Z | Boca Juniors vs River Plate (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-01T19:45:00Z | Marseille vs Toulouse (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -38,21 +36,21 @@ model board generated 2026-11-01T16:00:28.374147Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Nashville SC vs New York Red Bulls | away team total over 0.5 | no | 0.3100 | 0.610 [0.499, 0.715] | +0.285 | +0.216 | 0.52 | - | * | RESEARCH_CANDIDATE |
+| Nashville SC vs New York Red Bulls | away team total over 0.5 | no | 0.3000 | 0.610 [0.499, 0.715] | +0.295 | +0.227 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | btts | no | 0.3800 | 0.659 [0.551, 0.755] | +0.262 | +0.199 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | away team total over 1.5 | no | 0.6700 | 0.906 [0.846, 0.955] | +0.220 | +0.188 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | away team total over 0.5 | no | 0.2900 | 0.510 [0.390, 0.629] | +0.206 | +0.127 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | btts | no | 0.3800 | 0.592 [0.478, 0.699] | +0.195 | +0.123 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | away team total over 1.5 | no | 0.6600 | 0.845 [0.757, 0.921] | +0.170 | +0.119 | 0.78 | - |  | RESEARCH_CANDIDATE |
+| New England Revolution vs Inter Miami | Result: away | no | 0.5500 | 0.734 [0.607, 0.842] | +0.167 | +0.092 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | away team total over 1.5 | no | 0.4200 | 0.618 [0.472, 0.750] | +0.181 | +0.092 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | Total goals over 3.5 | no | 0.5200 | 0.722 [0.567, 0.857] | +0.185 | +0.090 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | Total goals over 2.5 | no | 0.3000 | 0.516 [0.348, 0.677] | +0.201 | +0.089 | 0.38 | - |  | RESEARCH_CANDIDATE |
+| Nashville SC vs New York Red Bulls | away team total over 2.5 | no | 0.8900 | 0.983 [0.966, 0.995] | +0.086 | +0.079 | 0.97 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | First half: both teams to score | no | 0.7500 | 0.880 [0.819, 0.941] | +0.117 | +0.077 | 0.83 | - | * | RESEARCH_CANDIDATE |
-| New England Revolution vs Inter Miami | Result: home | yes | 0.3200 | 0.510 [0.358, 0.653] | +0.175 | +0.075 | 0.39 | - | * | RESEARCH_CANDIDATE |
+| New England Revolution vs Inter Miami | Result: home | yes | 0.3200 | 0.510 [0.358, 0.653] | +0.175 | +0.075 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | away wins by more than 1.5 | no | 0.7500 | 0.881 [0.799, 0.943] | +0.118 | +0.075 | 0.82 | - | * | RESEARCH_CANDIDATE |
-| New England Revolution vs Inter Miami | Result: away | no | 0.5700 | 0.734 [0.607, 0.842] | +0.147 | +0.073 | 0.64 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | away team total over 2.5 | no | 0.7000 | 0.843 [0.739, 0.927] | +0.128 | +0.072 | 0.77 | - |  | RESEARCH_CANDIDATE |
-| Nashville SC vs New York Red Bulls | away team total over 2.5 | no | 0.9000 | 0.983 [0.966, 0.995] | +0.077 | +0.069 | 0.97 | - |  | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | Total goals over 3.5 | no | 0.5800 | 0.744 [0.582, 0.868] | +0.147 | +0.068 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | Total goals over 4.5 | no | 0.7200 | 0.861 [0.752, 0.947] | +0.127 | +0.066 | 0.78 | - |  | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | Total goals over 2.5 | no | 0.3600 | 0.540 [0.361, 0.693] | +0.164 | +0.065 | 0.42 | - |  | RESEARCH_CANDIDATE |
@@ -82,15 +80,15 @@ model board generated 2026-11-01T16:00:28.374147Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1044
-action_NO_QUOTE: 910
+action_NO_EDGE: 1031
+action_NO_QUOTE: 911
 action_RESEARCH_CANDIDATE: 112
-contract_sides: 2066
-fixtures: 21
+contract_sides: 2054
+fixtures: 19
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
-Removed (kicked off): 1
+Removed (kicked off): 3
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
