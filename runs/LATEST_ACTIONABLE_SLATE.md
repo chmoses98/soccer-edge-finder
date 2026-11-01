@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261101T154518Z-b3e222` · generated 2026-11-01T15:45:18.371199Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261101T155333Z-1cfb2f` · generated 2026-11-01T15:53:33.365622Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-01T15:42:21.328739Z (CURRENT at publish; CURRENT until 2026-11-01T16:02:21.328739Z, STALE after 2026-11-01T16:12:21.328739Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-01T15:50:33.681666Z (CURRENT at publish; CURRENT until 2026-11-01T16:10:33.681666Z, STALE after 2026-11-01T16:20:33.681666Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-01T15:30:30.465384Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.84s
+model board generated 2026-11-01T15:30:30.465384Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.85s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -13,14 +13,14 @@ model board generated 2026-11-01T15:30:30.465384Z · simulations this update: 0 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
 | 2026-11-01T16:15:00Z | Paris FC vs AS Monaco (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
-| 2026-11-01T16:30:00Z | Liverpool vs Arsenal (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
-| 2026-11-01T16:30:00Z | Eintracht Frankfurt vs Hamburger SV (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
+| 2026-11-01T16:30:00Z | Liverpool vs Arsenal (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
+| 2026-11-01T16:30:00Z | Eintracht Frankfurt vs Hamburger SV (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
 | 2026-11-01T17:00:00Z | Lecce vs Genoa (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-01T18:00:00Z | Boca Juniors vs River Plate (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-01T18:00:00Z | Boca Juniors vs River Plate (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-01T19:45:00Z | Marseille vs Toulouse (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-01T19:45:00Z | Juventus vs Napoli (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-11-01T20:30:00Z | Vancouver Whitecaps vs Seattle Sounders (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-01T21:30:00Z | Newell's Old Boys vs Unión (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-01T21:30:00Z | Newell's Old Boys vs Unión (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-01T21:30:00Z | Atlanta United vs Toronto FC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-01T21:30:00Z | Nashville SC vs New York Red Bulls (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-01T23:00:00Z | Santos Laguna vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -57,12 +57,12 @@ model board generated 2026-11-01T15:30:30.465384Z · simulations this update: 0 
 | Vancouver Whitecaps vs Seattle Sounders | Total goals over 2.5 | no | 0.3600 | 0.540 [0.361, 0.693] | +0.164 | +0.065 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Minnesota United | btts | no | 0.3600 | 0.512 [0.399, 0.627] | +0.136 | +0.063 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | away team total over 2.5 | no | 0.9100 | 0.983 [0.966, 0.995] | +0.067 | +0.060 | 0.97 | - |  | RESEARCH_CANDIDATE |
+| Vancouver Whitecaps vs Seattle Sounders | away team total over 2.5 | no | 0.8800 | 0.963 [0.930, 0.988] | +0.076 | +0.059 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | Total goals over 4.5 | no | 0.7300 | 0.861 [0.752, 0.947] | +0.117 | +0.057 | 0.78 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs Necaxa | away team total over 0.5 | no | 0.2700 | 0.421 [0.293, 0.548] | +0.138 | +0.056 | 0.32 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Total goals over 2.5 | no | 0.4000 | 0.572 [0.418, 0.712] | +0.156 | +0.055 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs Necaxa | btts | no | 0.3700 | 0.516 [0.387, 0.643] | +0.129 | +0.054 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs Necaxa | away team total over 1.5 | no | 0.6400 | 0.774 [0.653, 0.877] | +0.118 | +0.050 | 0.69 | - |  | RESEARCH_CANDIDATE |
-| Vancouver Whitecaps vs Seattle Sounders | away team total over 2.5 | no | 0.8900 | 0.963 [0.930, 0.988] | +0.066 | +0.050 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | home wins by more than 1.5 | yes | 0.1500 | 0.301 [0.170, 0.435] | +0.142 | +0.050 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Total goals over 3.5 | no | 0.6300 | 0.772 [0.642, 0.880] | +0.126 | +0.048 | 0.67 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | Total goals over 1.5 | no | 0.1300 | 0.272 [0.148, 0.402] | +0.135 | +0.047 | 0.17 | - |  | RESEARCH_CANDIDATE |
