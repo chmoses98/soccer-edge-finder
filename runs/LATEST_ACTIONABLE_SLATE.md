@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261101T081425Z-d4d1b3` · generated 2026-11-01T08:14:25.193620Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261101T082924Z-fb9842` · generated 2026-11-01T08:29:24.952024Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-01T08:11:29.069446Z (CURRENT at publish; CURRENT until 2026-11-01T08:31:29.069446Z, STALE after 2026-11-01T08:41:29.069446Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-01T08:26:29.090993Z (CURRENT at publish; CURRENT until 2026-11-01T08:46:29.090993Z, STALE after 2026-11-01T08:56:29.090993Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-01T07:14:04.684833Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.68s
+model board generated 2026-11-01T07:14:04.684833Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.82s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -57,7 +57,6 @@ model board generated 2026-11-01T07:14:04.684833Z · simulations this update: 0 
 | Nashville SC vs New York Red Bulls | Total goals over 2.5 | no | 0.3300 | 0.522 [0.345, 0.692] | +0.177 | +0.066 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Minnesota United | btts | no | 0.3600 | 0.514 [0.394, 0.627] | +0.138 | +0.064 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | Total goals over 4.5 | no | 0.7300 | 0.863 [0.750, 0.952] | +0.120 | +0.062 | 0.79 | - |  | RESEARCH_CANDIDATE |
-| New England Revolution vs Inter Miami | away wins by more than 1.5 | no | 0.7600 | 0.879 [0.798, 0.945] | +0.106 | +0.062 | 0.82 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Total goals over 2.5 | no | 0.4000 | 0.575 [0.417, 0.725] | +0.158 | +0.061 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | away team total over 1.5 | no | 0.4500 | 0.616 [0.474, 0.750] | +0.149 | +0.059 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | Result: away | no | 0.5800 | 0.731 [0.610, 0.849] | +0.134 | +0.058 | 0.63 | - | * | RESEARCH_CANDIDATE |
@@ -65,6 +64,7 @@ model board generated 2026-11-01T07:14:04.684833Z · simulations this update: 0 
 | Vancouver Whitecaps vs Seattle Sounders | Total goals over 3.5 | no | 0.5900 | 0.747 [0.608, 0.876] | +0.140 | +0.055 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs Necaxa | away team total over 0.5 | no | 0.2700 | 0.419 [0.292, 0.540] | +0.135 | +0.054 | 0.32 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Total goals over 3.5 | no | 0.6300 | 0.773 [0.641, 0.888] | +0.127 | +0.053 | 0.68 | - |  | RESEARCH_CANDIDATE |
+| New England Revolution vs Inter Miami | away wins by more than 1.5 | no | 0.7700 | 0.879 [0.798, 0.945] | +0.097 | +0.052 | 0.82 | - | * | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | Total goals over 2.5 | no | 0.3700 | 0.543 [0.385, 0.706] | +0.157 | +0.052 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | away team total over 2.5 | no | 0.7200 | 0.842 [0.741, 0.927] | +0.108 | +0.050 | 0.77 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | Result: home | yes | 0.3400 | 0.505 [0.356, 0.666] | +0.150 | +0.049 | 0.38 | - |  | RESEARCH_CANDIDATE |
