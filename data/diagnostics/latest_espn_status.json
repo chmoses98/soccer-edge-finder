@@ -1,14 +1,11 @@
 {
-  "as_of": "2026-10-31T23:36:32.243579+00:00",
-  "events": 754,
-  "events_skipped_unmapped": 409,
-  "fixtures_mapped": 345,
+  "as_of": "2026-11-01T06:35:54.417680+00:00",
+  "events": 822,
+  "events_skipped_unmapped": 452,
+  "fixtures_mapped": 370,
   "health": {
-    "reasons": [
-      "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=61"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
     "afc.champions",
@@ -81,13 +78,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 28,
-    "events": 123,
+    "captured": 30,
+    "events": 113,
     "failures": [],
-    "published_post": 7,
+    "published_post": 5,
     "published_pre_kickoff": 0,
-    "unchanged": 95,
-    "unpublished": 116
+    "unchanged": 83,
+    "unpublished": 108
   },
   "map_proposals": {
     "bel.1": {
@@ -111,7 +108,8 @@
         "301": "eng.luton",
         "307": "eng.plymouth",
         "311": "eng.oxford",
-        "375": "eng.leicester"
+        "375": "eng.leicester",
+        "399": "eng.sheffield_wednesday"
       },
       "unresolved": {
         "2567": "Burton Albion",
@@ -131,13 +129,15 @@
         "3802": "AFC Wimbledon",
         "387": "Bradford City",
         "390": "Milton Keynes Dons",
-        "397": "Barnsley"
+        "397": "Barnsley",
+        "400": "Stockport County"
       }
     },
     "eng.4": {
       "ambiguous": {},
       "proposed": {},
       "unresolved": {
+        "2594": "Crawley Town",
         "2731": "Accrington Stanley",
         "280": "Barnet",
         "302": "Shrewsbury Town",
@@ -146,12 +146,14 @@
         "315": "York City",
         "320": "Cheltenham Town",
         "324": "Exeter City",
+        "332": "Oldham Athletic",
         "339": "Colchester United",
         "341": "Swindon Town",
         "343": "Chesterfield",
         "345": "Tranmere Rovers",
         "348": "Port Vale",
         "353": "Northampton Town",
+        "386": "Grimsby Town",
         "389": "Gillingham",
         "3891": "Fleetwood Town",
         "396": "Crewe Alexandra",
@@ -189,7 +191,8 @@
         "301": "eng.luton",
         "307": "eng.plymouth",
         "311": "eng.oxford",
-        "375": "eng.leicester"
+        "375": "eng.leicester",
+        "399": "eng.sheffield_wednesday"
       },
       "unresolved": {
         "10167": "AFC Hornchurch",
@@ -197,13 +200,17 @@
         "132144": "Salisbury FC",
         "132415": "AFC Rushden & Diamonds",
         "133366": "Sholing",
+        "133370": "Wimborne Town",
         "13884": "AFC Fylde",
         "19262": "Harrogate Town",
+        "20770": "Cray Wanderers",
         "20771": "Marine",
         "21711": "Alvechurch",
         "22468": "Harborough Town",
         "2567": "Burton Albion",
         "2588": "Guiseley",
+        "2589": "Stafford Rangers",
+        "2594": "Crawley Town",
         "2595": "Boreham Wood",
         "2731": "Accrington Stanley",
         "279": "Doncaster Rovers",
@@ -226,6 +233,7 @@
         "322": "Carlisle United",
         "3231": "Sutton United",
         "324": "Exeter City",
+        "332": "Oldham Athletic",
         "335": "Huddersfield Town",
         "338": "Reading",
         "339": "Colchester United",
@@ -241,6 +249,7 @@
         "351": "Cambridge United",
         "353": "Northampton Town",
         "3802": "AFC Wimbledon",
+        "386": "Grimsby Town",
         "387": "Bradford City",
         "3887": "Wealdstone",
         "389": "Gillingham",
@@ -249,6 +258,7 @@
         "390": "Milton Keynes Dons",
         "396": "Crewe Alexandra",
         "397": "Barnsley",
+        "400": "Stockport County",
         "401": "Walsall",
         "402": "Rotherham United",
         "4489": "Oxford City",
@@ -349,37 +359,6 @@
         "9449": "Antequera CF"
       }
     },
-    "ger.2": {
-      "ambiguous": {},
-      "proposed": {
-        "138": "ger.wolfsburg",
-        "7884": "ger.holstein_kiel"
-      },
-      "unresolved": {
-        "10382": "1. FC Magdeburg",
-        "129": "Hertha Berlin",
-        "130": "Kaiserslautern",
-        "2428": "Hannover 96",
-        "269": "1. FC N\u00fcrnberg",
-        "7017": "Dynamo Dresden"
-      }
-    },
-    "ger.dfb_pokal": {
-      "ambiguous": {},
-      "proposed": {
-        "138": "ger.wolfsburg",
-        "7884": "ger.holstein_kiel"
-      },
-      "unresolved": {
-        "10382": "1. FC Magdeburg",
-        "129": "Hertha Berlin",
-        "130": "Kaiserslautern",
-        "19233": "SSV Jeddeloh II",
-        "2428": "Hannover 96",
-        "269": "1. FC N\u00fcrnberg",
-        "7017": "Dynamo Dresden"
-      }
-    },
     "nor.1": {
       "ambiguous": {},
       "proposed": {},
@@ -438,7 +417,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 24,
+  "results_appended": 7,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -448,6 +427,7 @@
     "bel.1",
     "bra.2",
     "chi.1",
+    "chn.1",
     "col.1",
     "den.1",
     "eng.3",
@@ -470,12 +450,9 @@
     "100": "Numancia",
     "1010": "OFI Crete",
     "10167": "AFC Hornchurch",
-    "10382": "1. FC Magdeburg",
     "11487": "CD Sabadell",
     "12587": "Amorebieta",
     "12597": "Burgos",
-    "129": "Hertha Berlin",
-    "130": "Kaiserslautern",
     "13083": "Hapoel Be'er",
     "131403": "Atl\u00e9tico Calatayud",
     "131466": "Cieza",
@@ -485,13 +462,13 @@
     "132144": "Salisbury FC",
     "132415": "AFC Rushden & Diamonds",
     "133366": "Sholing",
+    "133370": "Wimborne Town",
     "133831": "Sporting Hortaleza",
     "133835": "CD Pamplona",
     "133837": "CD Tarancon",
     "133842": "Ribadesella",
     "133844": "UB Lebrijana",
     "133847": "Auriense Cented Academy",
-    "138": "VfL Wolfsburg",
     "13884": "AFC Fylde",
     "14263": "Atl\u00e9tico Baleares",
     "17565": "Zamora CF",
@@ -500,7 +477,6 @@
     "17888": "CD Laredo",
     "18334": "AE Prat",
     "18342": "San Sebasti\u00e1n de los Reyes",
-    "19233": "SSV Jeddeloh II",
     "19246": "Riga FC",
     "19262": "Harrogate Town",
     "19294": "Unionistas de Salamanca",
@@ -510,6 +486,7 @@
     "20179": "FC Andorra",
     "20301": "Mj\u00e4llby AIF",
     "20703": "Inter D'Escaldes",
+    "20770": "Cray Wanderers",
     "20771": "Marine",
     "20776": "Anaitasuna",
     "20821": "Coria",
@@ -525,12 +502,12 @@
     "22437": "CD Minera",
     "22439": "Real \u00c1vila",
     "22468": "Harborough Town",
-    "2428": "Hannover 96",
     "245": "Tenerife",
     "2567": "Burton Albion",
     "2588": "Guiseley",
+    "2589": "Stafford Rangers",
+    "2594": "Crawley Town",
     "2595": "Boreham Wood",
-    "269": "1. FC N\u00fcrnberg",
     "2731": "Accrington Stanley",
     "2737": "Albacete",
     "279": "Doncaster Rovers",
@@ -557,6 +534,7 @@
     "322": "Carlisle United",
     "3231": "Sutton United",
     "324": "Exeter City",
+    "332": "Oldham Athletic",
     "335": "Huddersfield Town",
     "338": "Reading",
     "339": "Colchester United",
@@ -578,6 +556,7 @@
     "3802": "AFC Wimbledon",
     "3835": "Xerez",
     "3842": "C\u00e1diz",
+    "386": "Grimsby Town",
     "387": "Bradford City",
     "3887": "Wealdstone",
     "389": "Gillingham",
@@ -586,6 +565,8 @@
     "390": "Milton Keynes Dons",
     "396": "Crewe Alexandra",
     "397": "Barnsley",
+    "399": "Sheffield Wednesday",
+    "400": "Stockport County",
     "401": "Walsall",
     "402": "Rotherham United",
     "4438": "Castell\u00f3n",
@@ -610,12 +591,10 @@
     "649": "Worcester City",
     "6827": "Alcoyano",
     "6858": "Guijuelo",
-    "7017": "Dynamo Dresden",
     "7041": "Pe\u00f1a Sport",
     "7206": "UD Logro\u00f1\u00e9s",
     "7320": "Eldense",
     "7853": "AGF",
-    "7884": "Holstein Kiel",
     "8089": "CSU Craiova",
     "8169": "KuPS Kuopio",
     "84": "Mallorca",
@@ -630,17 +609,13 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 6,
-    "events": 70,
-    "failures": [
-      "401912606: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-32.9295&longitude=151.7801&hourly=",
-      "401912617: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Jeonju&count=5&language=en&form",
-      "401912604: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Kashiwa&count=5&language=en&for"
-    ],
+    "captured": 54,
+    "events": 55,
+    "failures": [],
     "forecast_miss": 0,
-    "geocode_miss": 0,
+    "geocode_miss": 1,
     "no_venue": 0,
-    "skipped": 61,
-    "stopped": "consecutive_failures"
+    "skipped": 0,
+    "stopped": null
   }
 }
