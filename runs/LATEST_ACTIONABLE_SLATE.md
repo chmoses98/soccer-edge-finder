@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261101T111801Z-10ac42` · generated 2026-11-01T11:18:01.287704Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261101T112758Z-e2b9f2` · generated 2026-11-01T11:27:58.038898Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-01T11:15:02.224593Z (CURRENT at publish; CURRENT until 2026-11-01T11:35:02.224593Z, STALE after 2026-11-01T11:45:02.224593Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-01T11:25:00.065093Z (CURRENT at publish; CURRENT until 2026-11-01T11:45:00.065093Z, STALE after 2026-11-01T11:55:00.065093Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-01T07:14:04.684833Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.65s
+model board generated 2026-11-01T07:14:04.684833Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.78s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -43,9 +43,9 @@ model board generated 2026-11-01T07:14:04.684833Z · simulations this update: 0 
 | 2026-11-02T17:30:00Z | Sassuolo vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-02T19:45:00Z | Atalanta vs Parma (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-02T20:00:00Z | Newcastle United vs Everton (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-02T23:00:00Z | Red Bull Bragantino vs Santos (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-02T23:00:00Z | Red Bull Bragantino vs Santos (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (56; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (57; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -59,28 +59,28 @@ model board generated 2026-11-01T07:14:04.684833Z · simulations this update: 0 
 | Santos Laguna vs Necaxa | btts | no | 0.3700 | 0.514 [0.394, 0.625] | +0.128 | +0.055 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Total goals over 3.5 | no | 0.6300 | 0.773 [0.641, 0.888] | +0.127 | +0.053 | 0.68 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | Result: home | yes | 0.3400 | 0.505 [0.356, 0.666] | +0.150 | +0.049 | 0.38 | - |  | RESEARCH_CANDIDATE |
+| Santos Laguna vs Necaxa | away team total over 1.5 | no | 0.6400 | 0.772 [0.651, 0.873] | +0.116 | +0.048 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Minnesota United | away team total over 0.5 | no | 0.2900 | 0.429 [0.311, 0.547] | +0.125 | +0.047 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | Racing Santander vs Real Madrid | Result: away | no | 0.1900 | 0.388 [0.182, 0.614] | +0.187 | +0.044 | 0.23 | - | * | RESEARCH_CANDIDATE |
-| Santos Laguna vs Necaxa | away team total over 0.5 | no | 0.2800 | 0.419 [0.292, 0.540] | +0.125 | +0.044 | 0.32 | - | * | RESEARCH_CANDIDATE |
+| Santos Laguna vs Necaxa | away team total over 0.5 | no | 0.2800 | 0.419 [0.292, 0.540] | +0.125 | +0.044 | 0.32 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Minnesota United | away team total over 1.5 | no | 0.6600 | 0.782 [0.674, 0.877] | +0.107 | +0.043 | 0.7 | - |  | RESEARCH_CANDIDATE |
 | Lazio vs Cagliari | Result: away | yes | 0.1300 | 0.272 [0.145, 0.420] | +0.134 | +0.041 | 0.16 | - |  | RESEARCH_CANDIDATE |
-| Santos Laguna vs Necaxa | away team total over 1.5 | no | 0.6500 | 0.772 [0.651, 0.873] | +0.106 | +0.038 | 0.68 | - |  | RESEARCH_CANDIDATE |
+| Portland Timbers vs Houston Dynamo | btts | no | 0.4100 | 0.542 [0.425, 0.654] | +0.116 | +0.039 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | home wins by more than 1.5 | yes | 0.1600 | 0.298 [0.168, 0.454] | +0.128 | +0.036 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | First-half result: away | no | 0.6500 | 0.763 [0.668, 0.862] | +0.097 | +0.034 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Total goals over 4.5 | no | 0.8100 | 0.895 [0.811, 0.962] | +0.074 | +0.032 | 0.84 | - |  | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Total goals over 1.5 | no | 0.1900 | 0.317 [0.191, 0.450] | +0.117 | +0.031 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | away wins by more than 2.5 | no | 0.9000 | 0.956 [0.916, 0.985] | +0.049 | +0.030 | 0.93 | - |  | RESEARCH_CANDIDATE |
-| Portland Timbers vs Houston Dynamo | btts | no | 0.4200 | 0.542 [0.425, 0.654] | +0.105 | +0.029 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | home team total over 1.5 | no | 0.4400 | 0.586 [0.411, 0.740] | +0.129 | +0.029 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | home team total over 2.5 | no | 0.7100 | 0.818 [0.682, 0.922] | +0.093 | +0.027 | 0.73 | - |  | RESEARCH_CANDIDATE |
 | Getafe vs Sevilla | Result: away | no | 0.6000 | 0.723 [0.579, 0.842] | +0.106 | +0.027 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | Sassuolo vs Fiorentina | Result: away | no | 0.6000 | 0.733 [0.569, 0.866] | +0.116 | +0.026 | 0.62 | - | * | RESEARCH_CANDIDATE |
-| Portland Timbers vs Houston Dynamo | First-half exact score 0-0 (home-away) | yes | 0.2500 | 0.357 [0.248, 0.472] | +0.094 | +0.025 | 0.27 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | away team total over 0.5 | no | 0.1700 | 0.273 [0.172, 0.382] | +0.094 | +0.023 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Lazio vs Cagliari | Result: draw | yes | 0.2100 | 0.292 [0.218, 0.367] | +0.070 | +0.022 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Sassuolo vs Fiorentina | Result: home | yes | 0.3400 | 0.501 [0.314, 0.684] | +0.145 | +0.020 | 0.35 | - |  | RESEARCH_CANDIDATE |
 | Racing Santander vs Real Madrid | Result: home | yes | 0.0800 | 0.212 [0.072, 0.394] | +0.127 | +0.018 | 0.09 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs Necaxa | away team total over 2.5 | no | 0.8800 | 0.932 [0.872, 0.975] | +0.044 | +0.016 | 0.89 | - |  | RESEARCH_CANDIDATE |
+| Portland Timbers vs Houston Dynamo | First-half exact score 0-0 (home-away) | yes | 0.2600 | 0.357 [0.248, 0.472] | +0.084 | +0.015 | 0.27 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | First-half total goals over 0.5 | no | 0.2600 | 0.357 [0.248, 0.472] | +0.084 | +0.015 | 0.27 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Minnesota United | away team total over 2.5 | no | 0.8900 | 0.937 [0.886, 0.977] | +0.040 | +0.014 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Exact score 0-0 (home-away) | yes | 0.0500 | 0.105 [0.052, 0.168] | +0.052 | +0.014 | 0.06 | - | * | RESEARCH_CANDIDATE |
@@ -94,9 +94,9 @@ model board generated 2026-11-01T07:14:04.684833Z · simulations this update: 0 
 
 ```
 action_MODEL_STALE: 224
-action_NO_EDGE: 753
+action_NO_EDGE: 752
 action_NO_QUOTE: 167
-action_RESEARCH_CANDIDATE: 56
+action_RESEARCH_CANDIDATE: 57
 contract_sides: 1200
 fixtures: 32
 fixtures_model_invalidated: 0
