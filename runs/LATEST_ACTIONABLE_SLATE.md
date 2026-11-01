@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261101T171756Z-e455c7` · generated 2026-11-01T17:17:56.940961Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261101T172756Z-b76f5d` · generated 2026-11-01T17:27:56.680860Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-01T17:15:00.066486Z (CURRENT at publish; CURRENT until 2026-11-01T17:35:00.066486Z, STALE after 2026-11-01T17:45:00.066486Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-01T17:25:00.064655Z (CURRENT at publish; CURRENT until 2026-11-01T17:45:00.064655Z, STALE after 2026-11-01T17:55:00.064655Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-01T16:00:28.374147Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.97s
+model board generated 2026-11-01T16:00:28.374147Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.83s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -31,7 +31,7 @@ model board generated 2026-11-01T16:00:28.374147Z · simulations this update: 0 
 | 2026-11-02T22:00:00Z | Platense vs Central Córdoba (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-02T23:00:00Z | Red Bull Bragantino vs Santos (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 
-## Candidates on CURRENT prices (113; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (112; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -80,8 +80,8 @@ model board generated 2026-11-01T16:00:28.374147Z · simulations this update: 0 
 
 ```
 action_NO_EDGE: 1023
-action_NO_QUOTE: 912
-action_RESEARCH_CANDIDATE: 113
+action_NO_QUOTE: 913
+action_RESEARCH_CANDIDATE: 112
 contract_sides: 2048
 fixtures: 18
 fixtures_model_invalidated: 0
