@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261101T102936Z-a0a201` · generated 2026-11-01T10:29:36.934309Z · trigger `kickoff_chain:T-60` · mode `reprice_only`
+slate `slate-20261101T104433Z-fedb07` · generated 2026-11-01T10:44:33.373483Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-01T10:26:36.063015Z (CURRENT at publish; CURRENT until 2026-11-01T10:46:36.063015Z, STALE after 2026-11-01T10:56:36.063015Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-01T10:41:37.648157Z (CURRENT at publish; CURRENT until 2026-11-01T11:01:37.648157Z, STALE after 2026-11-01T11:11:37.648157Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-01T07:14:04.684833Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.65s
+model board generated 2026-11-01T07:14:04.684833Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.81s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -45,16 +45,16 @@ model board generated 2026-11-01T07:14:04.684833Z · simulations this update: 0 
 | 2026-11-02T20:00:00Z | Newcastle United vs Everton (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-02T23:00:00Z | Red Bull Bragantino vs Santos (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (55; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (57; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Lazio vs Cagliari | Result: home | no | 0.3300 | 0.563 [0.383, 0.731] | +0.218 | +0.107 | 0.43 | - | * | RESEARCH_CANDIDATE |
+| New England Revolution vs Inter Miami | away team total over 1.5 | no | 0.4400 | 0.616 [0.474, 0.750] | +0.159 | +0.069 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | Result: away | no | 0.5700 | 0.731 [0.610, 0.849] | +0.144 | +0.068 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Minnesota United | btts | no | 0.3600 | 0.514 [0.394, 0.627] | +0.138 | +0.064 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Total goals over 2.5 | no | 0.4000 | 0.575 [0.417, 0.725] | +0.158 | +0.061 | 0.46 | - | * | RESEARCH_CANDIDATE |
-| New England Revolution vs Inter Miami | away team total over 2.5 | no | 0.7100 | 0.842 [0.741, 0.927] | +0.118 | +0.060 | 0.77 | - | * | RESEARCH_CANDIDATE |
-| New England Revolution vs Inter Miami | away team total over 1.5 | no | 0.4500 | 0.616 [0.474, 0.750] | +0.149 | +0.059 | 0.5 | - |  | RESEARCH_CANDIDATE |
+| New England Revolution vs Inter Miami | away team total over 2.5 | no | 0.7100 | 0.842 [0.741, 0.927] | +0.118 | +0.060 | 0.77 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs Necaxa | btts | no | 0.3700 | 0.514 [0.394, 0.625] | +0.128 | +0.055 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | Total goals over 3.5 | no | 0.6300 | 0.773 [0.641, 0.888] | +0.127 | +0.053 | 0.68 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | away wins by more than 1.5 | no | 0.7700 | 0.879 [0.798, 0.945] | +0.097 | +0.052 | 0.82 | - | * | RESEARCH_CANDIDATE |
@@ -94,9 +94,9 @@ model board generated 2026-11-01T07:14:04.684833Z · simulations this update: 0 
 
 ```
 action_MODEL_STALE: 224
-action_NO_EDGE: 753
-action_NO_QUOTE: 168
-action_RESEARCH_CANDIDATE: 55
+action_NO_EDGE: 750
+action_NO_QUOTE: 169
+action_RESEARCH_CANDIDATE: 57
 contract_sides: 1200
 fixtures: 32
 fixtures_model_invalidated: 0
