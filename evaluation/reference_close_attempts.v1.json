@@ -1,12 +1,12 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 227,
-  "NO_SPORT_KEY": 19,
   "PINNACLE_VALID_CLOSE": 296,
-  "MISSED_DISPATCHER_CLOSE": 74,
-  "NO_REFERENCE_EVENT": 3,
+  "NO_SPORT_KEY": 19,
   "PINNACLE_QUOTED_NOTHING": 15,
-  "CLOSE_BLOCKED_BUDGET": 7
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 228,
+  "MISSED_DISPATCHER_CLOSE": 74,
+  "CLOSE_BLOCKED_BUDGET": 7,
+  "NO_REFERENCE_EVENT": 3
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.belgrano": {
@@ -2553,6 +2553,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261011T225500Z"
+  },
+  "fx:mex.liga_mx:2026:mex.pachuca:mex.tigres": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
   },
   "fx:mex.liga_mx:2026:mex.puebla:mex.leon": {
    "state": "PINNACLE_VALID_CLOSE",
