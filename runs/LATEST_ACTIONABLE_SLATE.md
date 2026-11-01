@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261101T162202Z-4fd4db` · generated 2026-11-01T16:22:02.053552Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261101T162852Z-f14593` · generated 2026-11-01T16:28:52.886134Z · trigger `kickoff_chain:T-60/T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-01T16:18:59.670123Z (CURRENT at publish; CURRENT until 2026-11-01T16:38:59.670123Z, STALE after 2026-11-01T16:48:59.670123Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-01T16:25:56.784943Z (CURRENT at publish; CURRENT until 2026-11-01T16:45:56.784943Z, STALE after 2026-11-01T16:55:56.784943Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-01T16:00:28.374147Z · simulations this update: 0 · Odds API calls this update: 2 (credits 6) · reprice 0.83s
+model board generated 2026-11-01T16:00:28.374147Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.83s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -34,13 +34,13 @@ model board generated 2026-11-01T16:00:28.374147Z · simulations this update: 0 
 | 2026-11-02T22:00:00Z | Platense vs Central Córdoba (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-02T23:00:00Z | Red Bull Bragantino vs Santos (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 
-## Candidates on CURRENT prices (113; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (112; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Nashville SC vs New York Red Bulls | away team total over 0.5 | no | 0.3100 | 0.610 [0.499, 0.715] | +0.285 | +0.216 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | btts | no | 0.3800 | 0.659 [0.551, 0.755] | +0.262 | +0.199 | 0.57 | - | * | RESEARCH_CANDIDATE |
-| Nashville SC vs New York Red Bulls | away team total over 1.5 | no | 0.6800 | 0.906 [0.846, 0.955] | +0.210 | +0.178 | 0.86 | - |  | RESEARCH_CANDIDATE |
+| Nashville SC vs New York Red Bulls | away team total over 1.5 | no | 0.6700 | 0.906 [0.846, 0.955] | +0.220 | +0.188 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | away team total over 0.5 | no | 0.2900 | 0.510 [0.390, 0.629] | +0.206 | +0.127 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | btts | no | 0.3800 | 0.592 [0.478, 0.699] | +0.195 | +0.123 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | away team total over 1.5 | no | 0.6600 | 0.845 [0.757, 0.921] | +0.170 | +0.119 | 0.78 | - |  | RESEARCH_CANDIDATE |
@@ -68,6 +68,7 @@ model board generated 2026-11-01T16:00:28.374147Z · simulations this update: 0 
 | Nashville SC vs New York Red Bulls | Total goals over 1.5 | no | 0.1300 | 0.272 [0.148, 0.402] | +0.135 | +0.047 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Seattle Sounders | Total goals over 4.5 | no | 0.7700 | 0.875 [0.764, 0.953] | +0.093 | +0.046 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Los Angeles FC vs Minnesota United | away team total over 0.5 | no | 0.2900 | 0.426 [0.306, 0.545] | +0.122 | +0.046 | 0.33 | - | * | RESEARCH_CANDIDATE |
+| New England Revolution vs Inter Miami | away team total over 0.5 | no | 0.1500 | 0.275 [0.170, 0.383] | +0.116 | +0.045 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | Result: away | no | 0.8400 | 0.923 [0.871, 0.967] | +0.073 | +0.044 | 0.88 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Inter Miami | First-half result: away | no | 0.6400 | 0.762 [0.658, 0.852] | +0.105 | +0.044 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Portland Timbers vs Houston Dynamo | btts | no | 0.4100 | 0.541 [0.426, 0.649] | +0.114 | +0.042 | 0.45 | - | * | RESEARCH_CANDIDATE |
@@ -77,14 +78,13 @@ model board generated 2026-11-01T16:00:28.374147Z · simulations this update: 0 
 | Vancouver Whitecaps vs Seattle Sounders | Total goals over 1.5 | no | 0.1600 | 0.291 [0.159, 0.420] | +0.121 | +0.040 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | Exact score 2-0 (home-away) | yes | 0.0900 | 0.156 [0.122, 0.187] | +0.060 | +0.040 | 0.12 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs New York Red Bulls | First-half total goals over 0.5 | no | 0.2000 | 0.321 [0.208, 0.432] | +0.110 | +0.039 | 0.23 | - |  | RESEARCH_CANDIDATE |
-| Nashville SC vs New York Red Bulls | Total goals over 5.5 | no | 0.8600 | 0.938 [0.876, 0.983] | +0.069 | +0.039 | 0.9 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1043
+action_NO_EDGE: 1044
 action_NO_QUOTE: 910
-action_RESEARCH_CANDIDATE: 113
+action_RESEARCH_CANDIDATE: 112
 contract_sides: 2066
 fixtures: 21
 fixtures_model_invalidated: 0
