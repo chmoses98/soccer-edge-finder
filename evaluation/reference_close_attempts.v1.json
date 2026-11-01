@@ -1,12 +1,12 @@
 {
  "counts": {
-  "PINNACLE_VALID_CLOSE": 296,
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 228,
+  "CLOSE_BLOCKED_BUDGET": 7,
   "MISSED_DISPATCHER_CLOSE": 74,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 229,
+  "PINNACLE_VALID_CLOSE": 296,
   "NO_SPORT_KEY": 19,
-  "NO_REFERENCE_EVENT": 3,
   "PINNACLE_QUOTED_NOTHING": 15,
-  "CLOSE_BLOCKED_BUDGET": 7
+  "NO_REFERENCE_EVENT": 3
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.belgrano": {
@@ -2108,6 +2108,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261024T124500Z"
+  },
+  "fx:ita.serie_a:2026-27:ita.como:ita.venezia": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
   },
   "fx:ita.serie_a:2026-27:ita.fiorentina:ita.atalanta": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
