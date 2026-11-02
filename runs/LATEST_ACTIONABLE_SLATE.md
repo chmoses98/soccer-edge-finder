@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261102T112126Z-d5ea1b` · generated 2026-11-02T11:21:26.735834Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261102T130224Z-c523fb` · generated 2026-11-02T13:02:24.033549Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-02T11:18:45.311471Z (CURRENT at publish; CURRENT until 2026-11-02T11:38:45.311471Z, STALE after 2026-11-02T11:48:45.311471Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-02T12:59:29.875012Z (CURRENT at publish; CURRENT until 2026-11-02T13:19:29.875012Z, STALE after 2026-11-02T13:29:29.875012Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-02T06:20:56.946003Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.14s
+model board generated 2026-11-02T13:02:22.195720Z · simulations this update: 3 · Odds API calls this update: 0 (credits 0) · reprice 0.08s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -21,7 +21,7 @@ model board generated 2026-11-02T06:20:56.946003Z · simulations this update: 0 
 | 2026-11-03T22:30:00Z | Chapecoense vs Mirassol (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-04T00:30:00Z | Internacional vs Coritiba (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (5; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (8; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -29,14 +29,17 @@ model board generated 2026-11-02T06:20:56.946003Z · simulations this update: 0 
 | Sassuolo vs Fiorentina | Result: home | yes | 0.3400 | 0.501 [0.314, 0.685] | +0.145 | +0.020 | 0.35 | - |  | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Santos | btts | no | 0.3800 | 0.486 [0.366, 0.607] | +0.090 | +0.012 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Santos | Total goals over 2.5 | no | 0.3800 | 0.510 [0.351, 0.667] | +0.113 | +0.008 | 0.38 | - | * | RESEARCH_CANDIDATE |
+| Red Bull Bragantino vs Santos | Total goals over 1.5 | no | 0.1700 | 0.264 [0.150, 0.390] | +0.084 | +0.002 | 0.17 | - |  | RESEARCH_CANDIDATE |
+| Red Bull Bragantino vs Santos | Total goals over 3.5 | no | 0.6100 | 0.718 [0.571, 0.851] | +0.092 | +0.002 | 0.61 | - |  | RESEARCH_CANDIDATE |
 | Atalanta vs Parma | Result: draw | yes | 0.2100 | 0.276 [0.196, 0.357] | +0.055 | +0.001 | 0.21 | - | * | RESEARCH_CANDIDATE |
+| Red Bull Bragantino vs Santos | Total goals over 5.5 | no | 0.9000 | 0.937 [0.877, 0.982] | +0.031 | +0.001 | 0.9 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 97
+action_NO_EDGE: 94
 action_NO_QUOTE: 42
-action_RESEARCH_CANDIDATE: 5
+action_RESEARCH_CANDIDATE: 8
 contract_sides: 144
 fixtures: 8
 fixtures_model_invalidated: 0
