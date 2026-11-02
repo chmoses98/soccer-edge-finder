@@ -1,12 +1,12 @@
 {
  "counts": {
-  "PINNACLE_VALID_CLOSE": 305,
-  "MISSED_DISPATCHER_CLOSE": 84,
+  "PINNACLE_VALID_CLOSE": 307,
+  "PINNACLE_QUOTED_NOTHING": 15,
   "DISPATCHER_CLOSE_NO_ATTEMPT": 237,
-  "CLOSE_BLOCKED_BUDGET": 7,
+  "MISSED_DISPATCHER_CLOSE": 84,
   "NO_SPORT_KEY": 19,
-  "NO_REFERENCE_EVENT": 3,
-  "PINNACLE_QUOTED_NOTHING": 15
+  "CLOSE_BLOCKED_BUDGET": 7,
+  "NO_REFERENCE_EVENT": 3
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.belgrano": {
@@ -2614,6 +2614,11 @@
    "close_horizon_delivered": false,
    "batch_id": null
   },
+  "fx:mex.liga_mx:2026:mex.cruz_azul:mex.leon": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261102T005500Z"
+  },
   "fx:mex.liga_mx:2026:mex.guadalajara:mex.necaxa": {
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
@@ -3193,6 +3198,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261015T001405Z"
+  },
+  "fx:usa.mls:2026:usa.new_england:usa.inter_miami": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261101T234653Z"
   },
   "fx:usa.mls:2026:usa.new_england:usa.ny_red_bulls": {
    "state": "MISSED_DISPATCHER_CLOSE",
