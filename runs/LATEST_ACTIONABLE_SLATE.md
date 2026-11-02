@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261102T163221Z-426371` · generated 2026-11-02T16:32:21.376886Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261102T164707Z-a26679` · generated 2026-11-02T16:47:07.860901Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-02T16:29:28.222980Z (CURRENT at publish; CURRENT until 2026-11-02T16:49:28.222980Z, STALE after 2026-11-02T16:59:28.222980Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-02T16:44:26.159534Z (CURRENT at publish; CURRENT until 2026-11-02T17:04:26.159534Z, STALE after 2026-11-02T17:14:26.159534Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-02T16:32:20.759676Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.07s
+model board generated 2026-11-02T16:32:20.759676Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.07s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -25,9 +25,9 @@ model board generated 2026-11-02T16:32:20.759676Z · simulations this update: 1 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Sassuolo vs Fiorentina | Result: away | no | 0.6000 | 0.733 [0.570, 0.866] | +0.116 | +0.026 | 0.62 | 0.599 | * | RESEARCH_CANDIDATE |
+| Sassuolo vs Fiorentina | Result: away | no | 0.5900 | 0.733 [0.570, 0.866] | +0.126 | +0.036 | 0.62 | 0.599 | * | RESEARCH_CANDIDATE |
+| Sassuolo vs Fiorentina | Result: home | yes | 0.3300 | 0.501 [0.314, 0.685] | +0.155 | +0.030 | 0.35 | 0.341 |  | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Santos | btts | no | 0.3700 | 0.486 [0.366, 0.607] | +0.100 | +0.022 | 0.39 | - | * | RESEARCH_CANDIDATE |
-| Sassuolo vs Fiorentina | Result: home | yes | 0.3400 | 0.501 [0.314, 0.685] | +0.145 | +0.020 | 0.35 | 0.341 |  | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Santos | Total goals over 2.5 | no | 0.3700 | 0.510 [0.351, 0.667] | +0.123 | +0.019 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Santos | Total goals over 3.5 | no | 0.6000 | 0.718 [0.571, 0.851] | +0.101 | +0.012 | 0.61 | - |  | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Santos | Total goals over 1.5 | no | 0.1700 | 0.264 [0.150, 0.390] | +0.084 | +0.002 | 0.17 | - |  | RESEARCH_CANDIDATE |
