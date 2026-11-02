@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261102T174249Z-175d4c` · generated 2026-11-02T17:42:49.173133Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261102T175748Z-f30b7b` · generated 2026-11-02T17:57:48.766394Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-02T17:40:02.204663Z (CURRENT at publish; CURRENT until 2026-11-02T18:00:02.204663Z, STALE after 2026-11-02T18:10:02.204663Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-02T17:55:02.228033Z (CURRENT at publish; CURRENT until 2026-11-02T18:15:02.228033Z, STALE after 2026-11-02T18:25:02.228033Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-02T16:32:20.759676Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.07s
 
@@ -20,24 +20,25 @@ model board generated 2026-11-02T16:32:20.759676Z · simulations this update: 0 
 | 2026-11-03T22:30:00Z | Chapecoense vs Mirassol (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-04T00:30:00Z | Internacional vs Coritiba (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (7; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (8; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Red Bull Bragantino vs Santos | btts | no | 0.3700 | 0.486 [0.366, 0.607] | +0.100 | +0.022 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Santos | Total goals over 3.5 | no | 0.5900 | 0.718 [0.571, 0.851] | +0.111 | +0.022 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Santos | Total goals over 2.5 | no | 0.3700 | 0.510 [0.351, 0.667] | +0.123 | +0.019 | 0.38 | - |  | RESEARCH_CANDIDATE |
-| Atalanta vs Parma | Result: draw | yes | 0.2000 | 0.276 [0.196, 0.357] | +0.065 | +0.012 | 0.21 | - | * | RESEARCH_CANDIDATE |
-| Atalanta vs Parma | Result: home | no | 0.3500 | 0.487 [0.315, 0.656] | +0.122 | +0.004 | 0.35 | - |  | RESEARCH_CANDIDATE |
+| Atalanta vs Parma | Result: home | no | 0.3400 | 0.487 [0.315, 0.656] | +0.132 | +0.015 | 0.35 | - | * | RESEARCH_CANDIDATE |
+| Atalanta vs Parma | Result: draw | yes | 0.2000 | 0.276 [0.196, 0.357] | +0.065 | +0.012 | 0.21 | - |  | RESEARCH_CANDIDATE |
+| Red Bull Bragantino vs Santos | Total goals over 0.5 | no | 0.0400 | 0.084 [0.039, 0.140] | +0.041 | +0.007 | 0.04 | - |  | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Santos | Total goals over 1.5 | no | 0.1700 | 0.264 [0.150, 0.390] | +0.084 | +0.002 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Santos | Total goals over 5.5 | no | 0.9000 | 0.937 [0.877, 0.982] | +0.031 | +0.001 | 0.9 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 89
+action_NO_EDGE: 88
 action_NO_QUOTE: 42
-action_RESEARCH_CANDIDATE: 7
+action_RESEARCH_CANDIDATE: 8
 contract_sides: 138
 fixtures: 7
 fixtures_model_invalidated: 0
