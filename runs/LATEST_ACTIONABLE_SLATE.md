@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261102T164707Z-a26679` · generated 2026-11-02T16:47:07.860901Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261102T170211Z-0e7e61` · generated 2026-11-02T17:02:11.865941Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-02T16:44:26.159534Z (CURRENT at publish; CURRENT until 2026-11-02T17:04:26.159534Z, STALE after 2026-11-02T17:14:26.159534Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-02T16:59:27.310736Z (CURRENT at publish; CURRENT until 2026-11-02T17:19:27.310736Z, STALE after 2026-11-02T17:29:27.310736Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-02T16:32:20.759676Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.07s
+model board generated 2026-11-02T16:32:20.759676Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.08s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-02T16:32:20.759676Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-02T17:30:00Z | Sassuolo vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
+| 2026-11-02T17:30:00Z | Sassuolo vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
 | 2026-11-02T19:45:00Z | Atalanta vs Parma (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-02T20:00:00Z | Newcastle United vs Everton (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-02T22:00:00Z | Defensa y Justicia vs Independiente (arg.primera) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 3 | 0 |
