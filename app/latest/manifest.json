@@ -1,10 +1,10 @@
 {
   "commit_sha": "6673820a1f81",
   "counts": {
-    "board": 7,
-    "events": 7,
-    "markets": 58,
-    "model_prices": 58,
+    "board": 9,
+    "events": 9,
+    "markets": 86,
+    "model_prices": 86,
     "recommendations": 0,
     "runs": 1,
     "settlements": 0,
@@ -13,123 +13,137 @@
   },
   "files": {
     "board": {
-      "bytes": 5779,
-      "count": 7,
+      "bytes": 7403,
+      "count": 9,
       "kind": "board",
       "path": "board.json",
-      "sha256": "e2eaa645ec50a6586bffbc2e296d7c442e4fad937d110cd1837fc0b91644cfc8"
+      "sha256": "f7f0d08ac998c4052e3c753bf9c5d58a884753e809343520d19ad327886bf4a2"
+    },
+    "event_detail/evt_13408122c68dceedf605": {
+      "bytes": 32783,
+      "count": null,
+      "kind": "event_detail",
+      "path": "event_detail/evt_13408122c68dceedf605.json",
+      "sha256": "b8b4465212cdd6dd97b60f21dd88f6a842ac923fd0d22ba233921a29bb3bb524"
     },
     "event_detail/evt_19ee7acc127e231855dc": {
       "bytes": 1991,
       "count": null,
       "kind": "event_detail",
       "path": "event_detail/evt_19ee7acc127e231855dc.json",
-      "sha256": "6129403648da67435cd53df91c5a9ef7a10160c0a886ff8962b4332cff6c0a43"
+      "sha256": "14c74067f2a82582aab135bd1c37c4567c06c0f6154327e3916b256085145302"
     },
     "event_detail/evt_2d939460492525d02bef": {
-      "bytes": 61044,
+      "bytes": 61060,
       "count": null,
       "kind": "event_detail",
       "path": "event_detail/evt_2d939460492525d02bef.json",
-      "sha256": "07d2d97385a9cdcfd250b67d86eac2897f8a1718c6ce07104544220187793157"
+      "sha256": "b901330fd3db77003ebd01b65290b0b31197541d922b2113ab168bd5e8247378"
     },
     "event_detail/evt_496db95515efa7f5e2b9": {
       "bytes": 6603,
       "count": null,
       "kind": "event_detail",
       "path": "event_detail/evt_496db95515efa7f5e2b9.json",
-      "sha256": "01d71db0a05fa6d2443b09ba04e2487e8d1f503624a26cfdf8d7de6510d54bde"
+      "sha256": "798c938c39f5f9bd1d0e127f61034f6b0fe3976bbce8f8c700ab87507702be6b"
+    },
+    "event_detail/evt_4e39fb40159118d2cf1c": {
+      "bytes": 32963,
+      "count": null,
+      "kind": "event_detail",
+      "path": "event_detail/evt_4e39fb40159118d2cf1c.json",
+      "sha256": "cfc9d2871f372d06fa048d2074e754c019f3b82c041039a510aac73e55cdcd4d"
     },
     "event_detail/evt_68d3b01e9e61b526dbca": {
       "bytes": 3465,
       "count": null,
       "kind": "event_detail",
       "path": "event_detail/evt_68d3b01e9e61b526dbca.json",
-      "sha256": "65e23ebd9ab97689d24eb63cd25db01da95f17a216e73d319190db3423e77999"
+      "sha256": "2b769265323d0dd29f57d8b209ef261723ef10aa8611b0edad1cdc8ba17055c3"
     },
     "event_detail/evt_8d82d86fc553d599f56c": {
       "bytes": 4118,
       "count": null,
       "kind": "event_detail",
       "path": "event_detail/evt_8d82d86fc553d599f56c.json",
-      "sha256": "b69f294d8103b8a35bc22872973b9f58d6a2c576137f704b2ca2635e046ff9aa"
+      "sha256": "25ea98912dcd02022965c7efa58853f571ec18b67b82f52659e636d36698fc0f"
     },
     "event_detail/evt_a5d6abe2d3021e7bdeb0": {
       "bytes": 61204,
       "count": null,
       "kind": "event_detail",
       "path": "event_detail/evt_a5d6abe2d3021e7bdeb0.json",
-      "sha256": "902964d14cb03cc4c871d9e31edab91dedfab6b827a4eab87fc6f339de69705a"
+      "sha256": "57fb35d656a82015a8944d0e742e58630d1535e764c27ff912511ed32c0835c9"
     },
     "event_detail/evt_fb8d99ae10ab21425882": {
       "bytes": 2032,
       "count": null,
       "kind": "event_detail",
       "path": "event_detail/evt_fb8d99ae10ab21425882.json",
-      "sha256": "1c40788b3e1d4e7233f3057359fbc523209783cd36c84d94695dd0c87f864389"
+      "sha256": "401cd6ae0e0d049f17a578591193723bc818d075292180c9f00d71487ccde07e"
     },
     "events": {
-      "bytes": 9571,
-      "count": 7,
+      "bytes": 13136,
+      "count": 9,
       "kind": "events",
       "path": "events.json",
-      "sha256": "0e11279c147e8e5bd75a47eea8c92bb8acab299a7c2d9af6230255079a35bc16"
+      "sha256": "f459ff8c2a3689090f4d72edb2d8a2ae721f3d1d89a2de29efc6de3e60b76462"
     },
     "markets": {
-      "bytes": 67821,
-      "count": 58,
+      "bytes": 104338,
+      "count": 86,
       "kind": "markets",
       "path": "markets.json",
-      "sha256": "fedb0e240a64b2286e87109d54be240702f5b37e1398fc4e6cadbe61b6ebdc7d"
+      "sha256": "dbf7c55c58d95ba215389898bbdad0faf1a0fc14aa1f857e5b0cb210f5841b03"
     },
     "model_prices": {
-      "bytes": 49273,
-      "count": 58,
+      "bytes": 73221,
+      "count": 86,
       "kind": "model_prices",
       "path": "model_prices.json",
-      "sha256": "566f8f37835e0183f3bbc5482e006d894c87e598d0cd6d44317b8866fb294c2c"
+      "sha256": "700f6e538c34eb8ce01e182af0f93b986678aa0e0d50ba8ed9682c4da1f09c5d"
     },
     "performance": {
       "bytes": 996,
       "count": null,
       "kind": "performance",
       "path": "performance.json",
-      "sha256": "8d58669da64a7fe237e1578c7ecb80969d950e38b6c0f0cb4801fa6a3b449a80"
+      "sha256": "c374c4c7dc72a33289af9d6442e19bffc3ac70b2d14c1702923e102444a6eea3"
     },
     "recommendations": {
       "bytes": 177,
       "count": 0,
       "kind": "recommendations",
       "path": "recommendations.json",
-      "sha256": "cd8f8518316654f53a32d6e235fcd549355e3abf927e39864662337131c2058b"
+      "sha256": "082824992f5d9b9f1dedaa9d4da271f157b0298015b55658fee8229c0c569103"
     },
     "runs": {
       "bytes": 1171,
       "count": 1,
       "kind": "runs",
       "path": "runs.json",
-      "sha256": "d58cd3b9ab96f3fb7332dc49a9f61b25309c115cd239beb16c8ddc5f8d4fe237"
+      "sha256": "d9b3873cb29c95c230629dde515675bd13490cb66d55e8caa29b5d566fab1980"
     },
     "settlements": {
       "bytes": 173,
       "count": 0,
       "kind": "settlements",
       "path": "settlements.json",
-      "sha256": "a4f97032cf02b357ba2b27e186deab8ee863fc4e5438043d7832cc74b37278b8"
+      "sha256": "c86e1a7f33bdbef520b37209d4bb637ff45cc978bca20aaa0965ced73ccd7545"
     },
     "theses": {
       "bytes": 8400,
       "count": 3,
       "kind": "theses",
       "path": "theses.json",
-      "sha256": "5339882ee782e684b60f568384d4ad73275c10102cde697c6870eaf1b71c35e8"
+      "sha256": "2a6212e16c27c99cda76b901e16c11e81813f2ca16cdb87d26b809fb66bdb50d"
     },
     "wagers": {
       "bytes": 168,
       "count": 0,
       "kind": "wagers",
       "path": "wagers.json",
-      "sha256": "b95e6f5a78c8f31e08b982e824c2adfdbdde3174d45be0eee6b4ed3001e325a8"
+      "sha256": "10ecee1428f14fb2cc735a24506d739884bb4fc405d0b435fa658172aa4ef956"
     }
   },
   "freshness": {
@@ -138,18 +152,18 @@
       "status": "FRESH"
     },
     "kalshi": {
-      "as_of": "2026-11-02T23:10:02Z",
+      "as_of": "2026-11-02T23:25:02Z",
       "status": "FRESH"
     },
     "model": {
-      "as_of": "2026-11-02T22:31:17Z",
+      "as_of": "2026-11-02T23:27:44Z",
       "status": "FRESH"
     }
   },
-  "generated_at": "2026-11-02T23:13:09Z",
+  "generated_at": "2026-11-02T23:28:12Z",
   "kind": "manifest",
   "model_version": "dc_laplace_v1",
-  "run_id": "run_8891a8db5e92401da8d8",
+  "run_id": "run_d6950df75bc5caf813d7",
   "schema_version": "edge_finder.app.v1",
   "source_branch": "data-archive",
   "source_repo": "chmoses98/soccer-edge-finder",
