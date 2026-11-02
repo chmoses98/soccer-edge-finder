@@ -1,10 +1,10 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 567,
+  "PINNACLE_QUOTED_NOTHING": 2,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 568,
   "MISSED_DISPATCHER_CLOSE": 84,
-  "PINNACLE_VALID_CLOSE": 12,
-  "CLOSE_BLOCKED_BUDGET": 7,
-  "PINNACLE_QUOTED_NOTHING": 2
+  "PINNACLE_VALID_CLOSE": 13,
+  "CLOSE_BLOCKED_BUDGET": 7
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.belgrano": {
@@ -2471,6 +2471,16 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:ita.serie_a:2026-27:ita.sassuolo:ita.fiorentina": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:ita.serie_a:2026-27:ita.sassuolo:ita.fiorentina:matchday_10": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261102T171426Z"
   },
   "fx:ita.serie_a:2026-27:ita.sassuolo:ita.lazio": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
