@@ -1,6 +1,6 @@
 {
  "schema": "dispatch_reliability_v1",
- "generated_at": "2026-11-02T10:14:23Z",
+ "generated_at": "2026-11-02T12:56:06Z",
  "cadence": {
   "external_heartbeat_minutes": null,
   "github_backup_minutes": 60
@@ -13,11 +13,11 @@
  },
  "last_24h": {
   "span_hours": 24.0,
-  "heartbeats_actual": 18,
+  "heartbeats_actual": 15,
   "heartbeats_by_source": {
-   "chain": 3,
+   "chain": 2,
    "github-schedule-backup": 4,
-   "workflow-run": 11
+   "workflow-run": 9
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -27,32 +27,32 @@
   "github_backup_expected": 24,
   "github_backup_actual": 4,
   "github_backup_success": 0.16666666666666666,
-  "capture_runs": 6,
+  "capture_runs": 5,
   "capture_runs_failed": 0,
   "paid_calls": 0,
   "credits_spent": 0,
-  "fixtures_with_horizons": 34,
-  "horizons_eligible": 155,
-  "horizons_delivered": 99,
-  "horizons_missed": 56,
+  "fixtures_with_horizons": 33,
+  "horizons_eligible": 146,
+  "horizons_delivered": 92,
+  "horizons_missed": 54,
   "horizon_states": {
-   "DELIVERED": 99,
-   "MISSED_BEFORE_WAKE": 38,
-   "MISSED_EXECUTION_FAILURE": 18,
+   "DELIVERED": 92,
+   "MISSED_BEFORE_WAKE": 37,
+   "MISSED_EXECUTION_FAILURE": 17,
    "NOT_APPLICABLE": 1
   },
-  "capture_success_rate": 0.6387096774193548,
-  "close_fixtures_eligible": 30,
-  "close_fixtures_delivered": 20,
-  "close_success_rate": 0.6666666666666666
+  "capture_success_rate": 0.6301369863013698,
+  "close_fixtures_eligible": 29,
+  "close_fixtures_delivered": 19,
+  "close_success_rate": 0.6551724137931034
  },
  "last_7d": {
   "span_hours": 168.0,
-  "heartbeats_actual": 134,
+  "heartbeats_actual": 44,
   "heartbeats_by_source": {
-   "chain": 24,
-   "github-schedule-backup": 30,
-   "workflow-run": 80
+   "chain": 8,
+   "github-schedule-backup": 10,
+   "workflow-run": 26
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -60,12 +60,12 @@
   "external_heartbeats_actual": 0,
   "external_trigger_success": null,
   "github_backup_expected": 168,
-  "github_backup_actual": 30,
-  "github_backup_success": 0.17857142857142858,
-  "capture_runs": 26,
-  "capture_runs_failed": 1,
-  "paid_calls": 20,
-  "credits_spent": 60,
+  "github_backup_actual": 10,
+  "github_backup_success": 0.05952380952380952,
+  "capture_runs": 12,
+  "capture_runs_failed": 0,
+  "paid_calls": 0,
+  "credits_spent": 0,
   "fixtures_with_horizons": 145,
   "horizons_eligible": 695,
   "horizons_delivered": 515,
