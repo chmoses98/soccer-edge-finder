@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261102T195749Z-fc02b9` · generated 2026-11-02T19:57:49.466529Z · trigger `kickoff_chain:T-120/T-5` · mode `reprice_only`
+slate `slate-20261102T201243Z-76cc45` · generated 2026-11-02T20:12:43.831621Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-02T19:55:00.074042Z (CURRENT at publish; CURRENT until 2026-11-02T20:15:00.074042Z, STALE after 2026-11-02T20:25:00.074042Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-02T20:10:01.333312Z (CURRENT at publish; CURRENT until 2026-11-02T20:30:01.333312Z, STALE after 2026-11-02T20:40:01.333312Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-02T19:12:15.865449Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.09s
 
@@ -12,7 +12,6 @@ model board generated 2026-11-02T19:12:15.865449Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-02T20:00:00Z | Newcastle United vs Everton (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
 | 2026-11-02T22:00:00Z | Defensa y Justicia vs Independiente (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-02T22:00:00Z | Platense vs Central Córdoba (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-02T23:00:00Z | Red Bull Bragantino vs Santos (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -34,15 +33,15 @@ model board generated 2026-11-02T19:12:15.865449Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 83
+action_NO_EDGE: 77
 action_NO_QUOTE: 146
 action_RESEARCH_CANDIDATE: 7
-contract_sides: 236
-fixtures: 6
+contract_sides: 230
+fixtures: 5
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
-Removed (kicked off): 1
+Removed (kicked off): 2
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
