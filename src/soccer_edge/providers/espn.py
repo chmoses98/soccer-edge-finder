@@ -100,6 +100,8 @@ class EspnEvent:
     goal_events: tuple[GoalEvent, ...] = ()
     home_shootout: int | None = None
     away_shootout: int | None = None
+    card_events: tuple[CardEvent, ...] = ()
+    cards_complete: bool = False
 
 
 @dataclass(frozen=True)
@@ -149,6 +151,30 @@ def parse_goal_events(details: list[dict[str, Any]]) -> tuple[list[GoalEvent], b
             )
         )
     return out, complete
+
+
+@dataclass(frozen=True)
+class CardEvent:
+    """A booking from the scoreboard `competitions[0].details` list (yellowCard / redCard flags)."""
+
+    team_espn_id: str
+    red: bool
+
+
+def parse_card_events(details: list[dict[str, Any]]) -> tuple[list[CardEvent], bool]:
+    """(card events, complete). complete=False when `details` is empty/absent (zero cards cannot be told apart
+    from details not being served) or when any card play lacks a team id. Callers then emit NO card fields."""
+    if not details:
+        return [], False
+    out: list[CardEvent] = []
+    for d in details:
+        if not (d.get("yellowCard") or d.get("redCard")):
+            continue
+        team = (d.get("team") or {}).get("id")
+        if team is None:
+            return [], False
+        out.append(CardEvent(team_espn_id=str(team), red=bool(d.get("redCard"))))
+    return out, True
 
 
 @dataclass(frozen=True)
@@ -332,6 +358,7 @@ def parse_scoreboard(league: str, body: dict[str, Any]) -> list[EspnEvent]:
                 return None
 
         goals, goals_complete = parse_goal_events(comp.get("details") or [])
+        cards, cards_complete = parse_card_events(comp.get("details") or [])
         out.append(
             EspnEvent(
                 espn_event_id=str(ev["id"]),
@@ -367,6 +394,8 @@ def parse_scoreboard(league: str, body: dict[str, Any]) -> list[EspnEvent]:
                 goal_events=tuple(goals) if goals_complete else (),
                 home_shootout=_score(home, "shootoutScore"),
                 away_shootout=_score(away, "shootoutScore"),
+                card_events=tuple(cards),
+                cards_complete=cards_complete,
             )
         )
     return out
@@ -844,6 +873,13 @@ def result_evidence(ev: EspnEvent) -> dict[str, Any]:
             )
     elif pen_status:
         out["decided_on_penalties"] = True
+    if ev.cards_complete:
+        hy = sum(1 for c in ev.card_events if c.team_espn_id == ev.home_espn_id and not c.red)
+        ay = sum(1 for c in ev.card_events if c.team_espn_id == ev.away_espn_id and not c.red)
+        hr = sum(1 for c in ev.card_events if c.team_espn_id == ev.home_espn_id and c.red)
+        ar = sum(1 for c in ev.card_events if c.team_espn_id == ev.away_espn_id and c.red)
+        if hy + ay + hr + ar == len(ev.card_events):      # every card attributed to one of the two teams, else emit nothing
+            out.update({"home_yellow": hy, "away_yellow": ay, "home_red": hr, "away_red": ar, "cards_source": "espn_scoreboard_details"})
     goals = [g for g in ev.goal_events if not g.shootout]
     if goals or name == "STATUS_FULL_TIME":
         # own goals are credited to the opponent of the team ESPN lists on the play
@@ -917,6 +953,7 @@ def _result_row_upgrades(prev: dict[str, Any], new: dict[str, Any]) -> bool:
         "home_goals_regulation",
         "winner_after_penalties",
         "first_scorer_team",
+        "home_yellow",
     ):
         if prev.get(key) is None and new.get(key) is not None:
             return True

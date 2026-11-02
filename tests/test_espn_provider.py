@@ -373,3 +373,56 @@ def test_assemble_reads_espn_archive(tmp_path, registry):
     assert any(f.fixture_id == fx["fixture_id"] for f in data.fixtures)
     assert "usa.mls" in data.models and len(data.results["usa.mls"]) == 60
     assert any("espn 1 fixtures, 60 pooled results" in n for n in data.notes)
+
+
+def _body_with_details(details):
+    body = _scoreboard_body()
+    body["events"][0]["competitions"][0]["details"] = details
+    return body
+
+
+def _results(details):
+    from soccer_edge.providers.espn import results_from_events
+
+    emap = EspnMap(leagues={"eng.1": "eng.premier_league"}, teams={"349": "eng.bournemouth", "364": "eng.liverpool"})
+    return results_from_events(parse_scoreboard("eng.1", _body_with_details(details)), emap, MappingReport())[0]
+
+
+def test_cards_are_counted_from_real_probe_scoreboard_details():
+    """Real ESPN payload (data/samples/espn_xg_probe.json, eng.1 first_event details): cards carry yellowCard/redCard
+    flags and the team id; the result row must expose them instead of leaving the slots empty."""
+    details = json.loads(PROBE.read_text())["espn"]["eng.1"]["first_event"]["details_sample"]
+    yellows = [d for d in details if d.get("yellowCard")]
+    assert yellows, "the probe sample must contain a booking"
+    r = _results(details)
+    want_away = sum(1 for d in yellows if d["team"]["id"] == "364")
+    want_home = sum(1 for d in yellows if d["team"]["id"] == "349")
+    assert (r.away_yellow, r.home_yellow) == (want_away, want_home)
+    assert (r.home_red, r.away_red) == (0, 0) and r.cards_source == "espn_scoreboard_details"
+
+
+def test_cards_red_cards_and_fail_closed_cases():
+    team = lambda i: {"id": i}
+    ev = lambda **k: {"type": {"text": "x"}, "clock": {"displayValue": "10'"}, "scoringPlay": False, "yellowCard": False, "redCard": False, **k}
+    r = _results([ev(team=team("349"), redCard=True), ev(team=team("349"), yellowCard=True), ev(team=team("364"), yellowCard=True), ev(team=team("364"), yellowCard=True)])
+    assert (r.home_red, r.home_yellow, r.away_yellow, r.away_red) == (1, 1, 2, 0)
+    # details absent/empty: zero cards cannot be told from 'not served' -> no card fields
+    for d in (None, []):
+        x = _results(d)
+        assert (x.home_yellow, x.away_yellow, x.home_red, x.away_red, x.cards_source) == (None,) * 5
+    # a booking with no team id, or from a team that is neither side: emit nothing rather than a wrong count
+    assert _results([ev(yellowCard=True)]).home_yellow is None
+    assert _results([ev(team=team("777"), yellowCard=True)]).home_yellow is None
+    # details with only goals and no bookings: zero cards is a real, complete answer
+    g = _results([ev(team=team("364"), scoringPlay=True, scoreValue=1)])
+    assert (g.home_yellow, g.away_yellow, g.home_red, g.away_red) == (0, 0, 0, 0)
+
+
+def test_cards_upgrade_an_archived_row_that_lacked_them(tmp_path):
+    from soccer_edge.providers.espn import EspnArchive, result_record
+
+    old = _results(None); new = _results([{"clock": {"displayValue": "46'"}, "team": {"id": "364"}, "scoringPlay": False, "yellowCard": True, "redCard": False}])
+    arch = EspnArchive(tmp_path)
+    assert arch.append_results("eng.1", [result_record(old, "401879276", "eng.1")]) == 1
+    assert arch.append_results("eng.1", [result_record(new, "401879276", "eng.1")]) == 1      # richer row appended, last row wins
+    assert arch.results(("eng.1",))[0].away_yellow == 1

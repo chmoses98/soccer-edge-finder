@@ -66,6 +66,7 @@ class MatchResult(_Row):
     goal_events_source: str | None = (
         None  # provenance of the timed goal events (e.g. espn_scoreboard_details)
     )
+    cards_source: str | None = None  # provenance of the card counts (espn_scoreboard_details)
     result_source: str | None = None  # provider that reported the result
 
 
