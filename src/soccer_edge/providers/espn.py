@@ -208,6 +208,7 @@ class LineupSnapshot:
     away: tuple[LineupPlayer, ...]
     source_url: str
     content_hash: str
+    team_stats: dict[str, Any] | None = None  # RAW boxscore.teams[].statistics, verbatim names/values (post-match only)
 
     @property
     def published(self) -> bool:
@@ -261,6 +262,11 @@ class LineupSnapshot:
             "away": [_p(p) for p in self.away],
             "source_url": self.source_url,
             "content_hash": self.content_hash,
+            **(
+                {"team_stats_schema": "espn_summary_boxscore_raw_v1", "team_stats": self.team_stats}
+                if self.team_stats
+                else {}
+            ),
         }
 
 
@@ -457,6 +463,7 @@ def parse_summary_lineups(
 
     hf, hp, htid = _side("home")
     af, ap, atid = _side("away")
+    stats = parse_summary_team_stats(body) if state == "post" else None
     return LineupSnapshot(
         espn_event_id=str(event_id),
         league=league,
@@ -470,8 +477,61 @@ def parse_summary_lineups(
         home=hp,
         away=ap,
         source_url=source_url,
-        content_hash=content_hash({"r": rosters, "s": state}),
+        content_hash=content_hash(
+            {"r": rosters, "s": state, **({"t": stats} if stats else {})}
+        ),
+        team_stats=stats,
     )
+
+
+def parse_summary_team_stats(body: dict[str, Any]) -> dict[str, Any] | None:
+    """RAW team statistics from `boxscore.teams[]` of a summary body: {team_espn_id: {"homeAway", "stats": {name: value}}}.
+    Names and values are stored verbatim (displayValue, else value) so the mapping to named fields can be corrected
+    later without recapture. Returns None when the box score carries no statistics (pre-match, unavailable)."""
+    out: dict[str, Any] = {}
+    for t in (body.get("boxscore") or {}).get("teams") or []:
+        tid = str((t.get("team") or {}).get("id") or "")
+        stats: dict[str, Any] = {}
+        for st in t.get("statistics") or []:
+            name = st.get("name")
+            if name in (None, ""):
+                continue
+            val = st.get("displayValue") if st.get("displayValue") not in (None, "") else st.get("value")
+            if val not in (None, ""):
+                stats[str(name)] = val
+        if tid and stats:
+            out[tid] = {"homeAway": t.get("homeAway"), "stats": stats}
+    return out or None
+
+
+# ESPN statistic names -> MatchResult field stems. UNVERIFIED against a captured payload (the sandbox cannot reach
+# ESPN); the raw names are archived verbatim, so a wrong/missing name yields no field, never a wrong one.
+BOX_STAT_NAMES = {
+    "totalShots": "shots",
+    "shotsOnTarget": "shots_on_target",
+    "wonCorners": "corners",
+    "yellowCards": "yellow",
+    "redCards": "red",
+}
+
+
+def box_stats_fields(
+    team_stats: dict[str, Any] | None, home_espn_id: str | None, away_espn_id: str | None
+) -> dict[str, int]:
+    """home_/away_ integer fields for the whitelisted statistics; a field is emitted only when BOTH sides report an
+    integer value for it."""
+    if not team_stats or not home_espn_id or not away_espn_id:
+        return {}
+    h = (team_stats.get(str(home_espn_id)) or {}).get("stats") or {}
+    a = (team_stats.get(str(away_espn_id)) or {}).get("stats") or {}
+    out: dict[str, int] = {}
+    for name, stem in BOX_STAT_NAMES.items():
+        try:
+            hv, av = int(float(h[name])), int(float(a[name]))
+        except (KeyError, TypeError, ValueError):
+            continue
+        out[f"home_{stem}"], out[f"away_{stem}"] = hv, av
+    return out
 
 
 def parse_teams(body: dict[str, Any]) -> list[dict[str, str]]:

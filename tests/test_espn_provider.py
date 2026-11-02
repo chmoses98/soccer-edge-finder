@@ -426,3 +426,40 @@ def test_cards_upgrade_an_archived_row_that_lacked_them(tmp_path):
     assert arch.append_results("eng.1", [result_record(old, "401879276", "eng.1")]) == 1
     assert arch.append_results("eng.1", [result_record(new, "401879276", "eng.1")]) == 1      # richer row appended, last row wins
     assert arch.results(("eng.1",))[0].away_yellow == 1
+
+
+# NOTE: the box-score shape below follows ESPN's summary `boxscore.teams[].statistics[]` ({name, displayValue}) as
+# documented/observed in the wild; no captured payload is available in this sandbox, so these tests pin the
+# parser's behaviour (verbatim capture, whitelist mapping, fail-closed) and are NOT evidence that ESPN's names match.
+def _summary_with_stats(state="post", stats_home=None, stats_away=None):
+    body = _summary_body(state=state)
+    body.setdefault("header", {}).setdefault("competitions", [{"competitors": []}])
+    body["header"]["competitions"][0].setdefault("status", {})["type"] = {"state": state}
+    mk = lambda tid, ha, st: {"team": {"id": tid}, "homeAway": ha, "statistics": [{"name": k, "displayValue": str(v)} for k, v in (st or {}).items()]}
+    body["boxscore"] = {"teams": [mk("349", "home", stats_home), mk("364", "away", stats_away)]}
+    return body
+
+
+def test_box_stats_are_captured_raw_post_match_only_and_hash_changes():
+    from soccer_edge.providers.espn import box_stats_fields, parse_summary_lineups
+    now = datetime(2026, 9, 20, 16, 0, tzinfo=UTC)
+    post = parse_summary_lineups("eng.1", "1", _summary_with_stats("post", {"totalShots": 14, "wonCorners": 6, "weirdStat": "x"}, {"totalShots": 9, "wonCorners": 3}), captured_at=now, source_url="u")
+    pre = parse_summary_lineups("eng.1", "1", _summary_with_stats("pre", {"totalShots": 14}, {"totalShots": 9}), captured_at=now, source_url="u")
+    assert post.team_stats["349"]["stats"]["weirdStat"] == "x"          # verbatim, including names we do not map
+    assert pre.team_stats is None                                         # never captured before the match is over
+    assert "team_stats" in post.to_record() and "team_stats" not in pre.to_record()
+    nostat = parse_summary_lineups("eng.1", "1", _summary_with_stats("post", None, None), captured_at=now, source_url="u")
+    assert nostat.team_stats is None and nostat.content_hash != post.content_hash
+    # whitelist mapping: only integer stats reported by BOTH sides
+    assert box_stats_fields(post.team_stats, "349", "364") == {"home_shots": 14, "away_shots": 9, "home_corners": 6, "away_corners": 3}
+    assert box_stats_fields({"349": {"stats": {"totalShots": "7"}}}, "349", "364") == {}      # away side missing -> nothing
+    assert box_stats_fields({"349": {"stats": {"totalShots": "n/a"}}, "364": {"stats": {"totalShots": "3"}}}, "349", "364") == {}
+    assert box_stats_fields(None, "349", "364") == {}
+
+
+def test_capture_lineups_appends_the_post_match_stats_row_even_if_the_xi_is_unchanged(tmp_path):
+    from soccer_edge.providers.espn import parse_summary_lineups
+    now = datetime(2026, 9, 20, 16, 0, tzinfo=UTC)
+    a = parse_summary_lineups("eng.1", "1", _summary_with_stats("post", None, None), captured_at=now, source_url="u")
+    b = parse_summary_lineups("eng.1", "1", _summary_with_stats("post", {"totalShots": 1}, {"totalShots": 2}), captured_at=now, source_url="u")
+    assert a.content_hash != b.content_hash                               # change suppression will NOT swallow the stats row
