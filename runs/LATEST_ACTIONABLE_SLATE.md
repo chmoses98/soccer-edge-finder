@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261102T082119Z-ccf653` · generated 2026-11-02T08:21:19.529896Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261102T083619Z-8ae7e6` · generated 2026-11-02T08:36:19.824063Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-02T08:18:38.233747Z (CURRENT at publish; CURRENT until 2026-11-02T08:38:38.233747Z, STALE after 2026-11-02T08:48:38.233747Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-02T08:33:38.303210Z (CURRENT at publish; CURRENT until 2026-11-02T08:53:38.303210Z, STALE after 2026-11-02T09:03:38.303210Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-02T06:20:56.946003Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.09s
+model board generated 2026-11-02T06:20:56.946003Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.10s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -21,21 +21,22 @@ model board generated 2026-11-02T06:20:56.946003Z · simulations this update: 0 
 | 2026-11-03T22:30:00Z | Chapecoense vs Mirassol (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-04T00:30:00Z | Internacional vs Coritiba (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (4; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (5; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Sassuolo vs Fiorentina | Result: away | no | 0.6000 | 0.733 [0.570, 0.866] | +0.116 | +0.026 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | Sassuolo vs Fiorentina | Result: home | yes | 0.3400 | 0.501 [0.314, 0.685] | +0.145 | +0.020 | 0.35 | - |  | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Santos | btts | no | 0.3800 | 0.486 [0.366, 0.607] | +0.090 | +0.012 | 0.39 | - | * | RESEARCH_CANDIDATE |
+| Red Bull Bragantino vs Santos | Total goals over 2.5 | no | 0.3800 | 0.510 [0.351, 0.667] | +0.113 | +0.008 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Atalanta vs Parma | Result: draw | yes | 0.2100 | 0.276 [0.196, 0.357] | +0.055 | +0.001 | 0.21 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 98
+action_NO_EDGE: 97
 action_NO_QUOTE: 42
-action_RESEARCH_CANDIDATE: 4
+action_RESEARCH_CANDIDATE: 5
 contract_sides: 144
 fixtures: 8
 fixtures_model_invalidated: 0
