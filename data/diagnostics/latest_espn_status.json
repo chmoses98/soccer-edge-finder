@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-02T01:47:27.491943+00:00",
+  "as_of": "2026-11-02T09:41:30.109149+00:00",
   "events": 784,
   "events_skipped_unmapped": 423,
   "fixtures_mapped": 361,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=34"
+      "weather_stopped:consecutive_failures:skipped=29"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 14,
-    "events": 50,
+    "captured": 4,
+    "events": 44,
     "failures": [],
-    "published_post": 7,
-    "published_pre_kickoff": 1,
-    "unchanged": 36,
-    "unpublished": 42
+    "published_post": 0,
+    "published_pre_kickoff": 0,
+    "unchanged": 40,
+    "unpublished": 44
   },
   "map_proposals": {
     "bel.1": {
@@ -372,7 +372,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 19,
+  "results_appended": 4,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -525,17 +525,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 6,
-    "events": 43,
+    "captured": 9,
+    "events": 41,
     "failures": [
-      "401912606: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Newcastle&count=5&language=en&f",
-      "401912617: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Jeonju&count=5&language=en&form",
-      "401912604: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Kashiwa&count=5&language=en&for"
+      "401912605: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=34.6913&longitude=135.1830&hourly=t",
+      "401912615: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Hanoi&count=5&language=en&forma",
+      "401912616: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Pathum%20Thani&count=5&language"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 34,
+    "skipped": 29,
     "stopped": "consecutive_failures"
   }
 }
