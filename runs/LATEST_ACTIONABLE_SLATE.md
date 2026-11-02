@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261102T183556Z-f566c2` · generated 2026-11-02T18:35:56.827895Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261102T184206Z-07be03` · generated 2026-11-02T18:42:06.981699Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-02T18:33:01.430503Z (CURRENT at publish; CURRENT until 2026-11-02T18:53:01.430503Z, STALE after 2026-11-02T19:03:01.430503Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-02T18:39:02.993508Z (CURRENT at publish; CURRENT until 2026-11-02T18:59:02.993508Z, STALE after 2026-11-02T19:09:02.993508Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-02T17:36:58.804389Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.15s
+model board generated 2026-11-02T18:42:06.368744Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.11s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-02T17:36:58.804389Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-02T19:45:00Z | Atalanta vs Parma (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-02T19:45:00Z | Atalanta vs Parma (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
 | 2026-11-02T20:00:00Z | Newcastle United vs Everton (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 82 | 0 |
 | 2026-11-02T22:00:00Z | Defensa y Justicia vs Independiente (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-02T22:00:00Z | Platense vs Central Córdoba (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
@@ -27,8 +27,8 @@ model board generated 2026-11-02T17:36:58.804389Z · simulations this update: 0 
 | Red Bull Bragantino vs Santos | Total goals over 3.5 | no | 0.5900 | 0.724 [0.572, 0.854] | +0.117 | +0.029 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Santos | btts | no | 0.3700 | 0.491 [0.367, 0.615] | +0.105 | +0.026 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Santos | Total goals over 2.5 | no | 0.3700 | 0.516 [0.352, 0.672] | +0.130 | +0.025 | 0.39 | - |  | RESEARCH_CANDIDATE |
-| Atalanta vs Parma | Result: home | no | 0.3400 | 0.487 [0.315, 0.656] | +0.132 | +0.015 | 0.35 | - | * | RESEARCH_CANDIDATE |
-| Atalanta vs Parma | Result: draw | yes | 0.2000 | 0.276 [0.196, 0.357] | +0.065 | +0.012 | 0.21 | - |  | RESEARCH_CANDIDATE |
+| Atalanta vs Parma | Result: home | no | 0.3400 | 0.487 [0.315, 0.656] | +0.132 | +0.015 | 0.35 | 0.335 | * | RESEARCH_CANDIDATE |
+| Atalanta vs Parma | Result: draw | yes | 0.2000 | 0.276 [0.196, 0.357] | +0.065 | +0.012 | 0.21 | 0.189 |  | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Santos | Total goals over 0.5 | no | 0.0400 | 0.086 [0.039, 0.141] | +0.044 | +0.008 | 0.04 | - |  | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Santos | Total goals over 1.5 | no | 0.1700 | 0.269 [0.148, 0.397] | +0.089 | +0.008 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Santos | Total goals over 4.5 | no | 0.7900 | 0.862 [0.756, 0.946] | +0.061 | +0.005 | 0.79 | - |  | RESEARCH_CANDIDATE |
@@ -38,9 +38,9 @@ model board generated 2026-11-02T17:36:58.804389Z · simulations this update: 0 
 
 ```
 action_NO_EDGE: 87
-action_NO_QUOTE: 452
+action_NO_QUOTE: 304
 action_RESEARCH_CANDIDATE: 9
-contract_sides: 548
+contract_sides: 400
 fixtures: 7
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
