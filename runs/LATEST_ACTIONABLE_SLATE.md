@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261103T234243Z-e5dc87` · generated 2026-11-03T23:42:43.425218Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261103T235743Z-c83afd` · generated 2026-11-03T23:57:43.455668Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-03T23:40:07.412779Z (CURRENT at publish; CURRENT until 2026-11-04T00:00:07.412779Z, STALE after 2026-11-04T00:10:07.412779Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-03T23:55:07.457575Z (CURRENT at publish; CURRENT until 2026-11-04T00:15:07.457575Z, STALE after 2026-11-04T00:25:07.457575Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-03T23:27:50.305023Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.06s
 
@@ -12,7 +12,7 @@ model board generated 2026-11-03T23:27:50.305023Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-04T00:30:00Z | Internacional vs Coritiba (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
+| 2026-11-04T00:30:00Z | Internacional vs Coritiba (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
 | 2026-11-04T22:30:00Z | Athletico Paranaense vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-04T22:30:00Z | Flamengo vs Grêmio (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-05T00:30:00Z | Botafogo vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -27,9 +27,9 @@ model board generated 2026-11-03T23:27:50.305023Z · simulations this update: 0 
 | Botafogo vs Atlético Mineiro | Result: home | no | 0.3950 | 0.614 [0.456, 0.749] | +0.202 | +0.104 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | home wins by more than 1.5 | no | 0.6500 | 0.820 [0.705, 0.913] | +0.154 | +0.085 | 0.73 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | home wins by more than 2.5 | no | 0.8400 | 0.932 [0.867, 0.979] | +0.083 | +0.050 | 0.89 | - |  | RESEARCH_CANDIDATE |
+| Palmeiras vs Remo | Total goals over 3.5 | no | 0.6100 | 0.758 [0.608, 0.885] | +0.131 | +0.046 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Result: away | yes | 0.1900 | 0.330 [0.201, 0.462] | +0.130 | +0.043 | 0.23 | - |  | RESEARCH_CANDIDATE |
-| Palmeiras vs Remo | Total goals over 2.5 | no | 0.3900 | 0.557 [0.385, 0.720] | +0.151 | +0.042 | 0.43 | - | * | RESEARCH_CANDIDATE |
-| Palmeiras vs Remo | Total goals over 3.5 | no | 0.6200 | 0.758 [0.608, 0.885] | +0.122 | +0.036 | 0.65 | - |  | RESEARCH_CANDIDATE |
+| Palmeiras vs Remo | Total goals over 2.5 | no | 0.3900 | 0.557 [0.385, 0.720] | +0.151 | +0.042 | 0.43 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Total goals over 3.5 | no | 0.6500 | 0.772 [0.639, 0.884] | +0.106 | +0.033 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 1.5 | no | 0.1700 | 0.304 [0.170, 0.445] | +0.124 | +0.032 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Total goals over 2.5 | no | 0.4300 | 0.572 [0.415, 0.719] | +0.125 | +0.030 | 0.45 | - |  | RESEARCH_CANDIDATE |
