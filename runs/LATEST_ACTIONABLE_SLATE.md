@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261103T133435Z-0c6990` · generated 2026-11-03T13:34:35.081655Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261103T134935Z-485ef1` · generated 2026-11-03T13:49:35.133404Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-03T13:31:58.394188Z (CURRENT at publish; CURRENT until 2026-11-03T13:51:58.394188Z, STALE after 2026-11-03T14:01:58.394188Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-03T13:46:58.422387Z (CURRENT at publish; CURRENT until 2026-11-03T14:06:58.422387Z, STALE after 2026-11-03T14:16:58.422387Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-03T01:46:24.161896Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.11s
+model board generated 2026-11-03T01:46:24.161896Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.12s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,12 +12,12 @@ model board generated 2026-11-03T01:46:24.161896Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-03T22:30:00Z | Chapecoense vs Mirassol (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-04T00:30:00Z | Internacional vs Coritiba (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-04T22:30:00Z | Athletico Paranaense vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-04T22:30:00Z | Flamengo vs Grêmio (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-05T00:30:00Z | Botafogo vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-05T00:30:00Z | São Paulo vs Corinthians (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-03T22:30:00Z | Chapecoense vs Mirassol (bra.serie_a) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-04T00:30:00Z | Internacional vs Coritiba (bra.serie_a) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-04T22:30:00Z | Athletico Paranaense vs Vasco da Gama (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-04T22:30:00Z | Flamengo vs Grêmio (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-05T00:30:00Z | Botafogo vs Atlético Mineiro (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-05T00:30:00Z | São Paulo vs Corinthians (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 
 ## Candidates on CURRENT prices (4; RESEARCH_ONLY = analysis, never a bet)
 
