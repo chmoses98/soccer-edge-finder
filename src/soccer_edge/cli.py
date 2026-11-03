@@ -2531,6 +2531,13 @@ def build_parser() -> argparse.ArgumentParser:
     es.add_argument("--forward-days", type=int, default=8)
     es.add_argument("--max-lineups", type=int, default=150)
     es.add_argument(
+        "--post-lookback-hours",
+        type=float,
+        default=30.0,
+        help="also (re)fetch FINISHED matches that kicked off up to this long ago so box scores are archived "
+        "even when a scheduled run is missed (change-suppressed; lower priority than pre-kickoff capture)",
+    )
+    es.add_argument(
         "--weather-budget-seconds",
         type=float,
         default=240.0,
@@ -2926,8 +2933,9 @@ def cmd_espn_sync(args: argparse.Namespace) -> int:
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     # lineups: events kicking off within [-3h, +26h] of now (pre-kickoff sheets + post-match sheets for history)
-    lo, hi = as_of - timedelta(hours=3), as_of + timedelta(hours=26)
-    todo = [e for e in events if lo <= e.kickoff_utc <= hi]
+    from soccer_edge.providers.espn import select_lineup_events
+
+    todo = select_lineup_events(events, as_of, post_lookback_hours=args.post_lookback_hours)
     box_snaps: dict = {}
     ln_stats = capture_lineups(
         prov,

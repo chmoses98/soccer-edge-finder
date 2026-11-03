@@ -796,3 +796,50 @@ def test_end_to_end_scoreboard_then_box_score_archival_is_append_only_and_timest
         last.box_stats_captured_at == at.isoformat()
         and last.box_stats_source == "espn_summary_boxscore"
     )
+
+
+def test_select_lineup_events_keeps_prekickoff_first_and_adds_finished_matches_beyond_3h():
+    from datetime import UTC, datetime, timedelta
+
+    from soccer_edge.providers.espn import EspnEvent, select_lineup_events
+
+    now = datetime(2026, 11, 3, 18, 0, tzinfo=UTC)
+
+    def ev(i, hours, state):
+        return EspnEvent(
+            espn_event_id=i,
+            league="eng.1",
+            kickoff_utc=now + timedelta(hours=hours),
+            state=state,
+            status_name="x",
+            home_espn_id="1",
+            away_espn_id="2",
+            home_name="a",
+            away_name="b",
+            home_abbr="A",
+            away_abbr="B",
+            venue=None,
+            neutral_site=False,
+            home_score=None,
+            away_score=None,
+            season_year=2026,
+            season_slug="2026-27",
+        )
+
+    events = [
+        ev("old_post", -10, "post"),
+        ev("old_pre", -10, "pre"),
+        ev("too_old", -40, "post"),
+        ev("recent", -2, "post"),
+        ev("soon", 5, "pre"),
+    ]
+    got = [e.espn_event_id for e in select_lineup_events(events, now, post_lookback_hours=30)]
+    assert got == [
+        "recent",
+        "soon",
+        "old_post",
+    ]  # window group first; finished-only late group; nothing older than 30h
+    assert [e.espn_event_id for e in select_lineup_events(events, now, post_lookback_hours=0)] == [
+        "recent",
+        "soon",
+    ]

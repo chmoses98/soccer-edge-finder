@@ -789,6 +789,31 @@ class EspnProvider:
         return Observation(payload=parse_teams(body), provenance=prov)
 
 
+def select_lineup_events(
+    events: list[EspnEvent], as_of: datetime, *, post_lookback_hours: float = 30.0
+) -> list[EspnEvent]:
+    """Events to snapshot this run, in priority order.
+
+    1. kickoff within [-3h, +26h] of ``as_of`` (pre-kickoff sheets + just-finished matches);
+    2. FINISHED matches (state 'post') that kicked off earlier, back to ``post_lookback_hours``.
+
+    Why (2): the box score is only final ~2h after kickoff, and the sync cron fires every ~2h (and GitHub drops many
+    scheduled runs). With only the [-3h] window a match is inside its post-final window for ~1h, so many matches
+    would never get their box-score row archived. Re-fetching an already-archived finished match is cheap and is
+    change-suppressed by content hash (no duplicate rows). Group 1 stays first so ``max_events`` can never starve
+    pre-kickoff capture."""
+    lo, hi = as_of - timedelta(hours=3), as_of + timedelta(hours=26)
+    first = [e for e in events if lo <= e.kickoff_utc <= hi]
+    seen = {e.espn_event_id for e in first}
+    floor = as_of - timedelta(hours=post_lookback_hours)
+    late = [
+        e
+        for e in events
+        if floor <= e.kickoff_utc < lo and e.state == "post" and e.espn_event_id not in seen
+    ]
+    return first + sorted(late, key=lambda e: e.kickoff_utc, reverse=True)
+
+
 def capture_lineups(
     provider: EspnProvider,
     events: list[EspnEvent],
