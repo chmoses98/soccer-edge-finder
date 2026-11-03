@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261103T220242Z-3baf02` · generated 2026-11-03T22:02:42.027256Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
+slate `slate-20261103T221746Z-22f281` · generated 2026-11-03T22:17:46.332448Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-03T22:00:00.042136Z (CURRENT at publish; CURRENT until 2026-11-03T22:20:00.042136Z, STALE after 2026-11-03T22:30:00.042136Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-03T22:15:01.996434Z (CURRENT at publish; CURRENT until 2026-11-03T22:35:01.996434Z, STALE after 2026-11-03T22:45:01.996434Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-03T22:02:40.470662Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.06s
+model board generated 2026-11-03T22:02:40.470662Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.07s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-03T22:02:40.470662Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-03T22:30:00Z | Chapecoense vs Mirassol (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
+| 2026-11-03T22:30:00Z | Chapecoense vs Mirassol (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
 | 2026-11-04T00:30:00Z | Internacional vs Coritiba (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-04T22:30:00Z | Athletico Paranaense vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-04T22:30:00Z | Flamengo vs Grêmio (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -27,8 +27,8 @@ model board generated 2026-11-03T22:02:40.470662Z · simulations this update: 1 
 | Botafogo vs Atlético Mineiro | home wins by more than 1.5 | no | 0.6600 | 0.820 [0.705, 0.913] | +0.144 | +0.075 | 0.73 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | home wins by more than 2.5 | no | 0.8400 | 0.932 [0.867, 0.979] | +0.083 | +0.050 | 0.89 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Result: away | yes | 0.1850 | 0.330 [0.201, 0.462] | +0.135 | +0.048 | 0.23 | - |  | RESEARCH_CANDIDATE |
-| Botafogo vs Atlético Mineiro | Total goals over 2.5 | no | 0.4300 | 0.572 [0.415, 0.719] | +0.125 | +0.030 | 0.45 | - | * | RESEARCH_CANDIDATE |
-| Botafogo vs Atlético Mineiro | Total goals over 3.5 | no | 0.6600 | 0.772 [0.639, 0.884] | +0.096 | +0.023 | 0.68 | - |  | RESEARCH_CANDIDATE |
+| Botafogo vs Atlético Mineiro | Total goals over 3.5 | no | 0.6500 | 0.772 [0.639, 0.884] | +0.106 | +0.033 | 0.68 | - | * | RESEARCH_CANDIDATE |
+| Botafogo vs Atlético Mineiro | Total goals over 2.5 | no | 0.4300 | 0.572 [0.415, 0.719] | +0.125 | +0.030 | 0.45 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Result: draw | yes | 0.2200 | 0.284 [0.232, 0.336] | +0.052 | +0.018 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Total goals over 4.5 | no | 0.8300 | 0.894 [0.809, 0.960] | +0.054 | +0.012 | 0.84 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | away wins by more than 1.5 | yes | 0.0700 | 0.141 [0.066, 0.225] | +0.067 | +0.011 | 0.08 | - |  | RESEARCH_CANDIDATE |
