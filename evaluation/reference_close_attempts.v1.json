@@ -1,9 +1,9 @@
 {
  "counts": {
-  "PINNACLE_QUOTED_NOTHING": 2,
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 568,
   "MISSED_DISPATCHER_CLOSE": 84,
-  "PINNACLE_VALID_CLOSE": 13,
+  "PINNACLE_VALID_CLOSE": 18,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 574,
+  "PINNACLE_QUOTED_NOTHING": 2,
   "CLOSE_BLOCKED_BUDGET": 7
  },
  "fixtures": {
@@ -18,6 +18,11 @@
    "batch_id": null
   },
   "fx:arg.primera:2026:arg.argentinos_juniors:arg.independiente_rivadavia": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:arg.primera:2026:arg.atletico_tucuman:arg.argentinos_juniors": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
@@ -86,6 +91,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:arg.primera:2026:arg.defensa_y_justicia:arg.independiente": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261102T214438Z"
   },
   "fx:arg.primera:2026:arg.defensa_y_justicia:arg.instituto": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -162,6 +172,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:arg.primera:2026:arg.independiente_rivadavia:arg.banfield": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
   "fx:arg.primera:2026:arg.independiente_rivadavia:arg.gimnasia_la_plata": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -211,6 +226,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:arg.primera:2026:arg.platense:arg.central_cordoba": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261102T214438Z"
   },
   "fx:arg.primera:2026:arg.platense:arg.lanus": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -386,6 +406,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:bra.serie_a:2026:bra.bragantino:bra.santos": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261102T224332Z"
   },
   "fx:bra.serie_a:2026:bra.chapecoense:bra.athletico_paranaense": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -1007,6 +1032,16 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:eng.premier_league:2026-27:eng.newcastle:eng.everton": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:eng.premier_league:2026-27:eng.newcastle:eng.everton:matchday_9": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261102T194343Z"
+  },
   "fx:eng.premier_league:2026-27:eng.nottm_forest:eng.arsenal": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -1143,6 +1178,11 @@
    "batch_id": null
   },
   "fx:esp.la_liga:2026-27:esp.deportivo:esp.levante:matchday_9": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:esp.la_liga:2026-27:esp.deportivo:esp.osasuna": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
@@ -1568,6 +1608,11 @@
    "batch_id": null
   },
   "fx:fra.ligue_1:2026-27:fra.lille:fra.lens:matchday_9": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:fra.ligue_1:2026-27:fra.lorient:fra.brest": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
@@ -2126,6 +2171,16 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:ita.serie_a:2026-27:ita.atalanta:ita.parma": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:ita.serie_a:2026-27:ita.atalanta:ita.parma:matchday_10": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261102T192907Z"
   },
   "fx:ita.serie_a:2026-27:ita.atalanta:ita.venezia": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
