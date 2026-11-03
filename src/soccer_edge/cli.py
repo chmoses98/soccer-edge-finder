@@ -2531,6 +2531,13 @@ def build_parser() -> argparse.ArgumentParser:
     es.add_argument("--forward-days", type=int, default=8)
     es.add_argument("--max-lineups", type=int, default=150)
     es.add_argument(
+        "--post-lookback-hours",
+        type=float,
+        default=30.0,
+        help="also (re)fetch FINISHED matches that kicked off up to this long ago so box scores are archived "
+        "even when a scheduled run is missed (change-suppressed; lower priority than pre-kickoff capture)",
+    )
+    es.add_argument(
         "--weather-budget-seconds",
         type=float,
         default=240.0,
@@ -2553,6 +2560,12 @@ def build_parser() -> argparse.ArgumentParser:
     eb.add_argument("--start", required=True, help="YYYY-MM-DD")
     eb.add_argument("--end", default=None, help="YYYY-MM-DD (default today)")
     eb.add_argument("--out-dir", required=True)
+    eb.add_argument(
+        "--box-summary-budget",
+        type=int,
+        default=0,
+        help="opt-in total ESPN summary requests across all leagues; 0 preserves existing score-only backfill",
+    )
     eb.set_defaults(func=cmd_espn_backfill)
     elb = sub.add_parser(
         "espn-lineup-backfill",
@@ -2926,10 +2939,17 @@ def cmd_espn_sync(args: argparse.Namespace) -> int:
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     # lineups: events kicking off within [-3h, +26h] of now (pre-kickoff sheets + post-match sheets for history)
-    lo, hi = as_of - timedelta(hours=3), as_of + timedelta(hours=26)
-    todo = [e for e in events if lo <= e.kickoff_utc <= hi]
+    from soccer_edge.providers.espn import select_lineup_events
+
+    todo = select_lineup_events(events, as_of, post_lookback_hours=args.post_lookback_hours)
+    box_snaps: dict = {}
     ln_stats = capture_lineups(
-        prov, todo, out_dir / "lineups", as_of=as_of, max_events=args.max_lineups
+        prov,
+        todo,
+        out_dir / "lineups",
+        as_of=as_of,
+        max_events=args.max_lineups,
+        snapshots_out=box_snaps,
     )
     # weather (context only): Open-Meteo forecast at kickoff hour for events within 72h
     from soccer_edge.providers.http import CachedFetcher
@@ -2987,7 +3007,12 @@ def cmd_espn_sync(args: argparse.Namespace) -> int:
         f.model_dump(mode="json") | {"espn_event_id": rep.espn_event_by_fixture.get(f.fixture_id)}
         for f in fixtures
     ]
-    from soccer_edge.providers.espn import EspnArchive, result_record, results_from_events
+    from soccer_edge.providers.espn import (
+        EspnArchive,
+        enrich_result_rows,
+        result_record,
+        results_from_events,
+    )
 
     arch = EspnArchive(out_dir)
     res_written = 0
@@ -2997,6 +3022,7 @@ def cmd_espn_sync(args: argparse.Namespace) -> int:
         for e in evs:
             for r in results_from_events([e], emap):
                 rows.append(result_record(r, e.espn_event_id, lg))
+        enrich_result_rows(rows, box_snaps)
         res_written += arch.append_results(lg, rows)
     write_json(
         out_dir / "fixtures" / f"{as_of:%Y-%m-%d}" / f"espn-{as_of:%H%M%S}.json",
@@ -3050,12 +3076,13 @@ def cmd_espn_backfill(args: argparse.Namespace) -> int:
     """Runner-side, one-off/incremental: per-day scoreboards over a date range -> results/espn/<league>.jsonl."""
     from datetime import date as _date
 
-    from soccer_edge.core.serialization import write_json
+    from soccer_edge.core.serialization import read_jsonl, write_json
     from soccer_edge.providers.espn import (
         EspnArchive,
         EspnMap,
         EspnProvider,
         MappingReport,
+        hydrate_finished_result_boxes,
         result_record,
         results_from_events,
     )
@@ -3068,7 +3095,15 @@ def cmd_espn_backfill(args: argparse.Namespace) -> int:
         _date.fromisoformat(args.end) if args.end else utc_now().date(),
     )
     days = (end - start).days + 1
-    summary: dict[str, object] = {"start": str(start), "end": str(end), "leagues": {}}
+    remaining_box_budget = getattr(args, "box_summary_budget", 0)
+    if remaining_box_budget < 0:
+        raise ValueError("--box-summary-budget must be nonnegative")
+    summary: dict[str, object] = {
+        "start": str(start),
+        "end": str(end),
+        "leagues": {},
+        "box_summary_budget": remaining_box_budget,
+    }
     for lg in args.leagues.split(","):
         events, failures = prov.fixtures_window([lg], start, days)
         rep = MappingReport()
@@ -3076,11 +3111,31 @@ def cmd_espn_backfill(args: argparse.Namespace) -> int:
         for e in events:
             for r in results_from_events([e], emap, rep):
                 rows.append(result_record(r, e.espn_event_id, lg))
+        # Backfill is a separate, explicit repair path. Live lineup sync only revisits finished matches
+        # for ~30h; older results cannot regain box fields from that window alone.
+        box_repair: dict[str, object] = {"enabled": False}
+        if getattr(args, "box_summary_budget", 0) > 0:
+            latest = {}
+            existing_path = arch.results_path(lg)
+            if existing_path.exists():
+                for old in read_jsonl(existing_path):
+                    latest[str(old.get("espn_event_id"))] = old
+            completed_ids = {
+                event_id
+                for event_id, old in latest.items()
+                if old.get("box_stats_source") == "espn_summary_boxscore"
+            }
+            box_repair = hydrate_finished_result_boxes(
+                prov, events, rows, budget=remaining_box_budget, already_complete=completed_ids
+            )
+            box_repair["enabled"] = True
+            remaining_box_budget -= box_repair["requested"]
         n = arch.append_results(lg, rows)
         summary["leagues"][lg] = {
             "events": len(events),
             "finished_mapped": len(rows),
             "appended": n,
+            "box_repair": box_repair,
             "failures": len(failures),
             "unmapped_team_ids": rep.unmapped_team_ids,
             "skipped": rep.skipped_events,

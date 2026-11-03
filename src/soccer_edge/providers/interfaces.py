@@ -66,6 +66,14 @@ class MatchResult(_Row):
     goal_events_source: str | None = (
         None  # provenance of the timed goal events (e.g. espn_scoreboard_details)
     )
+    cards_source: str | None = (
+        None  # provenance of the card counts (espn_scoreboard_details | espn_summary_boxscore)
+    )
+    # 'boxscore_exact' = ESPN box-score team totals; 'scoreboard_unreconciled' = counted from scoreboard `details`
+    # (probe: differs from the box score in 2/8 matches, by +1) - not exact, not a proven lower bound.
+    cards_basis: str | None = None
+    box_stats_source: str | None = None  # provenance of shots / corners (espn_summary_boxscore)
+    box_stats_captured_at: str | None = None  # when the box score was observed (UTC ISO)
     result_source: str | None = None  # provider that reported the result
 
 

@@ -100,6 +100,8 @@ class EspnEvent:
     goal_events: tuple[GoalEvent, ...] = ()
     home_shootout: int | None = None
     away_shootout: int | None = None
+    card_events: tuple[CardEvent, ...] = ()
+    cards_complete: bool = False
 
 
 @dataclass(frozen=True)
@@ -152,6 +154,30 @@ def parse_goal_events(details: list[dict[str, Any]]) -> tuple[list[GoalEvent], b
 
 
 @dataclass(frozen=True)
+class CardEvent:
+    """A booking from the scoreboard `competitions[0].details` list (yellowCard / redCard flags)."""
+
+    team_espn_id: str
+    red: bool
+
+
+def parse_card_events(details: list[dict[str, Any]]) -> tuple[list[CardEvent], bool]:
+    """(card events, complete). complete=False when `details` is empty/absent (zero cards cannot be told apart
+    from details not being served) or when any card play lacks a team id. Callers then emit NO card fields."""
+    if not details:
+        return [], False
+    out: list[CardEvent] = []
+    for d in details:
+        if not (d.get("yellowCard") or d.get("redCard")):
+            continue
+        team = (d.get("team") or {}).get("id")
+        if team is None:
+            return [], False
+        out.append(CardEvent(team_espn_id=str(team), red=bool(d.get("redCard"))))
+    return out, True
+
+
+@dataclass(frozen=True)
 class LineupPlayer:
     espn_athlete_id: str
     name: str
@@ -182,6 +208,9 @@ class LineupSnapshot:
     away: tuple[LineupPlayer, ...]
     source_url: str
     content_hash: str
+    team_stats: dict[str, Any] | None = (
+        None  # RAW boxscore.teams[].statistics, verbatim names/values (post-match only)
+    )
 
     @property
     def published(self) -> bool:
@@ -235,6 +264,11 @@ class LineupSnapshot:
             "away": [_p(p) for p in self.away],
             "source_url": self.source_url,
             "content_hash": self.content_hash,
+            **(
+                {"team_stats_schema": "espn_summary_boxscore_raw_v1", "team_stats": self.team_stats}
+                if self.team_stats
+                else {}
+            ),
         }
 
 
@@ -332,6 +366,7 @@ def parse_scoreboard(league: str, body: dict[str, Any]) -> list[EspnEvent]:
                 return None
 
         goals, goals_complete = parse_goal_events(comp.get("details") or [])
+        cards, cards_complete = parse_card_events(comp.get("details") or [])
         out.append(
             EspnEvent(
                 espn_event_id=str(ev["id"]),
@@ -367,6 +402,8 @@ def parse_scoreboard(league: str, body: dict[str, Any]) -> list[EspnEvent]:
                 goal_events=tuple(goals) if goals_complete else (),
                 home_shootout=_score(home, "shootoutScore"),
                 away_shootout=_score(away, "shootoutScore"),
+                card_events=tuple(cards),
+                cards_complete=cards_complete,
             )
         )
     return out
@@ -428,6 +465,7 @@ def parse_summary_lineups(
 
     hf, hp, htid = _side("home")
     af, ap, atid = _side("away")
+    stats = parse_summary_team_stats(body) if state == "post" else None
     return LineupSnapshot(
         espn_event_id=str(event_id),
         league=league,
@@ -441,8 +479,150 @@ def parse_summary_lineups(
         home=hp,
         away=ap,
         source_url=source_url,
-        content_hash=content_hash({"r": rosters, "s": state}),
+        content_hash=content_hash({"r": rosters, "s": state, **({"t": stats} if stats else {})}),
+        team_stats=stats,
     )
+
+
+def parse_summary_team_stats(body: dict[str, Any]) -> dict[str, Any] | None:
+    """RAW team statistics from `boxscore.teams[]` of a summary body: {team_espn_id: {"homeAway", "stats": {name: value}}}.
+    Names and values are stored verbatim (displayValue, else value) so the mapping to named fields can be corrected
+    later without recapture. Returns None when the box score carries no statistics (pre-match, unavailable)."""
+    out: dict[str, Any] = {}
+    for t in (body.get("boxscore") or {}).get("teams") or []:
+        tid = str((t.get("team") or {}).get("id") or "")
+        stats: dict[str, Any] = {}
+        for st in t.get("statistics") or []:
+            name = st.get("name")
+            if name in (None, ""):
+                continue
+            val = (
+                st.get("displayValue")
+                if st.get("displayValue") not in (None, "")
+                else st.get("value")
+            )
+            if val not in (None, ""):
+                stats[str(name)] = val
+        if tid and stats:
+            out[tid] = {"homeAway": t.get("homeAway"), "stats": stats}
+    return out or None
+
+
+# ESPN statistic names -> MatchResult field stems. VERIFIED against real post-match summary payloads: sift-alpha
+# ESPN probe run 41543056159 (2026-11-02T23:40Z, 8 completed matches in eng/esp/ger/ita.1) - every name below was
+# present for both teams in 8/8 matches. The same payloads carry NO xG / expected-goals statistic, so xG is NOT
+# available from ESPN and home_xg/away_xg are never filled from here. Raw names are still archived verbatim.
+BOX_STAT_NAMES = {
+    "totalShots": "shots",
+    "shotsOnTarget": "shots_on_target",
+    "wonCorners": "corners",
+    "yellowCards": "yellow",
+    "redCards": "red",
+}
+
+
+def box_stats_fields(
+    team_stats: dict[str, Any] | None, home_espn_id: str | None, away_espn_id: str | None
+) -> dict[str, int]:
+    """home_/away_ integer fields for the whitelisted statistics; a field is emitted only when BOTH sides report an
+    integer value for it."""
+    if not team_stats or not home_espn_id or not away_espn_id:
+        return {}
+    h = (team_stats.get(str(home_espn_id)) or {}).get("stats") or {}
+    a = (team_stats.get(str(away_espn_id)) or {}).get("stats") or {}
+    out: dict[str, int] = {}
+    for name, stem in BOX_STAT_NAMES.items():
+        try:
+            hv, av = int(float(h[name])), int(float(a[name]))
+        except (KeyError, TypeError, ValueError):
+            continue
+        out[f"home_{stem}"], out[f"away_{stem}"] = hv, av
+    return out
+
+
+def box_result_fields(snap: LineupSnapshot | None) -> dict[str, Any]:
+    """Result-row fields from a post-match summary box score, with provenance. Empty unless the snapshot is a
+    post-match one carrying statistics. Fields ESPN does not report for BOTH teams stay absent (never 0).
+    Box-score cards are the team totals ESPN itself reports -> cards_basis 'boxscore_exact'."""
+    if snap is None or snap.event_state != "post" or not snap.team_stats:
+        return {}
+    fields = box_stats_fields(snap.team_stats, snap.home_espn_id, snap.away_espn_id)
+    if not fields:
+        return {}
+    out: dict[str, Any] = dict(fields)
+    out["box_stats_source"] = "espn_summary_boxscore"
+    out["box_stats_captured_at"] = snap.captured_at.isoformat()
+    if "home_yellow" in fields and "home_red" in fields:
+        out["cards_source"] = "espn_summary_boxscore"
+        out["cards_basis"] = "boxscore_exact"
+    else:  # only one card kind reported: do not keep half a card line
+        for k in ("home_yellow", "away_yellow", "home_red", "away_red"):
+            out.pop(k, None)
+    return out
+
+
+def enrich_result_rows(rows: list[dict[str, Any]], snaps: dict[str, LineupSnapshot]) -> int:
+    """Merge box-score fields into archived-result rows by espn_event_id (in place). Box-score values supersede
+    scoreboard-derived cards. Returns the number of rows enriched."""
+    n = 0
+    for r in rows:
+        extra = box_result_fields(snaps.get(r.get("espn_event_id")))
+        if extra:
+            r.update(extra)
+            n += 1
+    return n
+
+
+def hydrate_finished_result_boxes(
+    provider: Any,
+    events: list[EspnEvent],
+    rows: list[dict[str, Any]],
+    *,
+    budget: int,
+    already_complete: set[str] | None = None,
+) -> dict[str, Any]:
+    """Optional, BOUNDED historical result-box hydration independent of the live lineup lookback.
+
+    This is for one-off espn-backfill repair, not for claiming pregame/PIT availability. Results remain
+    append-only and box fields are emitted only for a post-match snapshot with populated bilateral stats.
+    A finished event older than the live 30h lineup window can be repaired with fresh summary evidence.
+    """
+    if budget < 0:
+        raise ValueError("box-summary budget must be nonnegative")
+    complete = already_complete or set()
+    target = {str(r.get("espn_event_id")) for r in rows if r.get("espn_event_id")}
+    todo = [
+        e
+        for e in events
+        if e.state == "post"
+        and str(e.espn_event_id) in target
+        and str(e.espn_event_id) not in complete
+    ]
+    snapshots: dict[str, LineupSnapshot] = {}
+    failures: list[str] = []
+    requested = 0
+    without_box = 0
+    for e in todo:
+        if requested >= budget:
+            break
+        requested += 1
+        try:
+            snap = provider.lineup(e.league, e.espn_event_id).payload
+            if box_result_fields(snap):
+                snapshots[str(e.espn_event_id)] = snap
+            else:
+                without_box += 1
+        except Exception as exc:
+            failures.append(f"{e.league}/{e.espn_event_id}: {str(exc)[:100]}")
+    return {
+        "eligible_missing": len(todo),
+        "requested": requested,
+        "with_box_stats": len(snapshots),
+        "enriched": enrich_result_rows(rows, snapshots),
+        "without_box": without_box,
+        "deferred_budget": max(0, len(todo) - requested),
+        "failures": failures,
+    }
 
 
 def parse_teams(body: dict[str, Any]) -> list[dict[str, str]]:
@@ -661,6 +841,31 @@ class EspnProvider:
         return Observation(payload=parse_teams(body), provenance=prov)
 
 
+def select_lineup_events(
+    events: list[EspnEvent], as_of: datetime, *, post_lookback_hours: float = 30.0
+) -> list[EspnEvent]:
+    """Events to snapshot this run, in priority order.
+
+    1. kickoff within [-3h, +26h] of ``as_of`` (pre-kickoff sheets + just-finished matches);
+    2. FINISHED matches (state 'post') that kicked off earlier, back to ``post_lookback_hours``.
+
+    Why (2): the box score is only final ~2h after kickoff, and the sync cron fires every ~2h (and GitHub drops many
+    scheduled runs). With only the [-3h] window a match is inside its post-final window for ~1h, so many matches
+    would never get their box-score row archived. Re-fetching an already-archived finished match is cheap and is
+    change-suppressed by content hash (no duplicate rows). Group 1 stays first so ``max_events`` can never starve
+    pre-kickoff capture."""
+    lo, hi = as_of - timedelta(hours=3), as_of + timedelta(hours=26)
+    first = [e for e in events if lo <= e.kickoff_utc <= hi]
+    seen = {e.espn_event_id for e in first}
+    floor = as_of - timedelta(hours=post_lookback_hours)
+    late = [
+        e
+        for e in events
+        if floor <= e.kickoff_utc < lo and e.state == "post" and e.espn_event_id not in seen
+    ]
+    return first + sorted(late, key=lambda e: e.kickoff_utc, reverse=True)
+
+
 def capture_lineups(
     provider: EspnProvider,
     events: list[EspnEvent],
@@ -668,6 +873,7 @@ def capture_lineups(
     *,
     as_of: datetime | None = None,
     max_events: int = 200,
+    snapshots_out: dict[str, LineupSnapshot] | None = None,
 ) -> dict[str, Any]:
     """Prospective lineup capture: one JSONL row per (event, capture) — appended, never rewritten. Change-suppressed
     by content hash per event (data/lineups/<date>/<league>.jsonl + last_hashes.json)."""
@@ -693,6 +899,10 @@ def capture_lineups(
             stats["failures"].append(f"{ev.league}/{ev.espn_event_id}: {str(exc)[:100]}")
             continue
         snap = obs.payload
+        if snapshots_out is not None and snap.team_stats:
+            snapshots_out[ev.espn_event_id] = (
+                snap  # post-match box score, even when the row below is change-suppressed
+            )
         if snap.lineup_state == "confirmed":
             stats["published_pre_kickoff"] += 1
         elif snap.lineup_state == "post_hoc":
@@ -844,6 +1054,24 @@ def result_evidence(ev: EspnEvent) -> dict[str, Any]:
             )
     elif pen_status:
         out["decided_on_penalties"] = True
+    if ev.cards_complete:
+        hy = sum(1 for c in ev.card_events if c.team_espn_id == ev.home_espn_id and not c.red)
+        ay = sum(1 for c in ev.card_events if c.team_espn_id == ev.away_espn_id and not c.red)
+        hr = sum(1 for c in ev.card_events if c.team_espn_id == ev.home_espn_id and c.red)
+        ar = sum(1 for c in ev.card_events if c.team_espn_id == ev.away_espn_id and c.red)
+        if hy + ay + hr + ar == len(
+            ev.card_events
+        ):  # every card attributed to one of the two teams, else emit nothing
+            out.update(
+                {
+                    "home_yellow": hy,
+                    "away_yellow": ay,
+                    "home_red": hr,
+                    "away_red": ar,
+                    "cards_source": "espn_scoreboard_details",
+                    "cards_basis": "scoreboard_unreconciled",
+                }
+            )
     goals = [g for g in ev.goal_events if not g.shootout]
     if goals or name == "STATUS_FULL_TIME":
         # own goals are credited to the opponent of the team ESPN lists on the play
@@ -917,10 +1145,16 @@ def _result_row_upgrades(prev: dict[str, Any], new: dict[str, Any]) -> bool:
         "home_goals_regulation",
         "winner_after_penalties",
         "first_scorer_team",
+        "home_yellow",
+        "home_shots",
+        "home_corners",
     ):
         if prev.get(key) is None and new.get(key) is not None:
             return True
-    return False
+    # box-score cards are exact and supersede scoreboard-derived ones (which probes showed can differ)
+    return (
+        new.get("cards_basis") == "boxscore_exact" and prev.get("cards_basis") != "boxscore_exact"
+    )
 
 
 class EspnArchive:
