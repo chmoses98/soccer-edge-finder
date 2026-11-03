@@ -758,6 +758,15 @@ def test_archive_publish_merges_latest_pointers(built, tmp_path):
 
     env = {**os.environ, **env}
     env.pop("GITHUB_TOKEN", None)
+    # The fixtures are pinned to KO (2026-10-10); board pruning is relative to the clock, so freeze it in the
+    # publish subprocess (test-only: a sitecustomize on PYTHONPATH patches core.time.utc_now before any import).
+    clock_dir = tmp_path / "frozen_clock"
+    clock_dir.mkdir()
+    (clock_dir / "sitecustomize.py").write_text(
+        "import datetime as _d\nimport soccer_edge.core.time as _t\n"
+        f"_t.utc_now = lambda: _d.datetime.fromisoformat({NOW.isoformat()!r})\n"
+    )
+    env["PYTHONPATH"] = os.pathsep.join(filter(None, [str(clock_dir), env.get("PYTHONPATH", "")]))
     subprocess.run(["git", "-C", str(seed), "add", "."], check=True, env=env)
     subprocess.run(["git", "-C", str(seed), "commit", "-qm", "seed"], check=True, env=env)
     subprocess.run(
@@ -912,6 +921,11 @@ def test_model_refresh_end_to_end_reuses_cache_and_never_pays(
     monkeypatch.setattr(reconcile, "reconcile_fast_vs_full", fake_reconcile)
     monkeypatch.setattr(cli, "_reference_capture", lambda *a, **k: ({}, None, {}))
     monkeypatch.setattr(cli, "utc_now", lambda: NOW)
+    import soccer_edge.run.pipeline as _pipeline
+
+    monkeypatch.setattr(
+        _pipeline, "utc_now", lambda: NOW
+    )  # decision time is stamped inside the pipeline
     import soccer_edge.providers.the_odds_api as toa
 
     def no_paid(*a, **k):
