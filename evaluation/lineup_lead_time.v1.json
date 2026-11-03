@@ -1,10 +1,10 @@
 {
-  "as_of": "2026-11-03T12:08:42.033661Z",
+  "as_of": "2026-11-03T12:28:44.327804Z",
   "by_competition": {
     "afc.champions": {
-      "fixtures": 10,
-      "median_lead_minutes": null,
-      "with_pre_kickoff_xi": 0,
+      "fixtures": 12,
+      "median_lead_minutes": 11.751063583333332,
+      "with_pre_kickoff_xi": 2,
       "with_xi_ge_20min": 0
     },
     "arg.1": {
@@ -3885,7 +3885,7 @@
       "competition": "afc.champions",
       "espn_event_id": "401912615",
       "final_state": "confirmed",
-      "kickoff_passed": false,
+      "kickoff_passed": true,
       "lead_time_seconds": 705.111429,
       "observed_before_kickoff": true,
       "scheduled_kickoff_utc": "2026-11-03T12:15:00+00:00",
@@ -3897,7 +3897,7 @@
       "competition": "afc.champions",
       "espn_event_id": "401912616",
       "final_state": "confirmed",
-      "kickoff_passed": false,
+      "kickoff_passed": true,
       "lead_time_seconds": 705.016201,
       "observed_before_kickoff": true,
       "scheduled_kickoff_utc": "2026-11-03T12:15:00+00:00",
@@ -4373,22 +4373,22 @@
       "xi_first_observed_at": null
     }
   ],
-  "fixtures_kickoff_passed": 309,
+  "fixtures_kickoff_passed": 311,
   "fixtures_tracked": 345,
   "lead_time_minutes": {
     "max": 57.21010881666667,
-    "median": 24.960208783333332,
+    "median": 24.95966243333333,
     "min": 0.025024583333333333,
-    "n": 73,
-    "p10": 7.83154254,
-    "p90": 38.33513940333333
+    "n": 75,
+    "p10": 7.954322413333333,
+    "p90": 38.33463094
   },
   "post_kickoff_first_xi": 124,
   "schema": "lineup_lead_time_v1",
-  "share_pre_kickoff_xi": 0.23624595469255663,
-  "share_xi_ge_20min": 0.18122977346278318,
+  "share_pre_kickoff_xi": 0.24115755627009647,
+  "share_xi_ge_20min": 0.18006430868167203,
   "target": "audit \u00a7I1: >= 90% of priced fixtures with a confirmed XI captured >= 20 min before kickoff",
-  "with_any_xi": 197,
-  "with_pre_kickoff_xi": 73,
+  "with_any_xi": 199,
+  "with_pre_kickoff_xi": 75,
   "with_xi_ge_20min_before_kickoff": 56
 }
