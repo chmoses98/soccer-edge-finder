@@ -2561,7 +2561,9 @@ def build_parser() -> argparse.ArgumentParser:
     eb.add_argument("--end", default=None, help="YYYY-MM-DD (default today)")
     eb.add_argument("--out-dir", required=True)
     eb.add_argument(
-        "--box-summary-budget", type=int, default=0,
+        "--box-summary-budget",
+        type=int,
+        default=0,
         help="opt-in total ESPN summary requests across all leagues; 0 preserves existing score-only backfill",
     )
     eb.set_defaults(func=cmd_espn_backfill)
@@ -3080,9 +3082,9 @@ def cmd_espn_backfill(args: argparse.Namespace) -> int:
         EspnMap,
         EspnProvider,
         MappingReport,
+        hydrate_finished_result_boxes,
         result_record,
         results_from_events,
-        hydrate_finished_result_boxes,
     )
 
     emap = EspnMap.load()
@@ -3096,8 +3098,12 @@ def cmd_espn_backfill(args: argparse.Namespace) -> int:
     remaining_box_budget = getattr(args, "box_summary_budget", 0)
     if remaining_box_budget < 0:
         raise ValueError("--box-summary-budget must be nonnegative")
-    summary: dict[str, object] = {"start": str(start), "end": str(end), "leagues": {},
-                                  "box_summary_budget": remaining_box_budget}
+    summary: dict[str, object] = {
+        "start": str(start),
+        "end": str(end),
+        "leagues": {},
+        "box_summary_budget": remaining_box_budget,
+    }
     for lg in args.leagues.split(","):
         events, failures = prov.fixtures_window([lg], start, days)
         rep = MappingReport()
@@ -3115,7 +3121,8 @@ def cmd_espn_backfill(args: argparse.Namespace) -> int:
                 for old in read_jsonl(existing_path):
                     latest[str(old.get("espn_event_id"))] = old
             completed_ids = {
-                event_id for event_id, old in latest.items()
+                event_id
+                for event_id, old in latest.items()
                 if old.get("box_stats_source") == "espn_summary_boxscore"
             }
             box_repair = hydrate_finished_result_boxes(

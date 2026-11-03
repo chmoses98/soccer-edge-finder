@@ -848,26 +848,41 @@ def test_select_lineup_events_keeps_prekickoff_first_and_adds_finished_matches_b
 def test_historical_box_repair_reaches_outside_live_lookback_and_respects_budget():
     """A finished match missed by the live lookback can gain exact stats in bounded backfill."""
     from types import SimpleNamespace
+
     from soccer_edge.providers.espn import hydrate_finished_result_boxes
 
     captured = datetime(2026, 11, 3, 21, 20, tzinfo=UTC)
-    home = {"totalShots": "17", "shotsOnTarget": "2", "wonCorners": "7",
-            "yellowCards": "2", "redCards": "0"}
-    away = {"totalShots": "17", "shotsOnTarget": "6", "wonCorners": "2",
-            "yellowCards": "5", "redCards": "0"}
+    home = {
+        "totalShots": "17",
+        "shotsOnTarget": "2",
+        "wonCorners": "7",
+        "yellowCards": "2",
+        "redCards": "0",
+    }
+    away = {
+        "totalShots": "17",
+        "shotsOnTarget": "6",
+        "wonCorners": "2",
+        "yellowCards": "5",
+        "redCards": "0",
+    }
     calls = []
 
     class FakeProvider:
         def lineup(self, league, event_id):
             calls.append((league, event_id))
             snap = parse_summary_lineups(
-                league, event_id, _summary_with_stats("post", home, away),
-                captured_at=captured, source_url="https://site.api.espn.com/soccer/summary"
+                league,
+                event_id,
+                _summary_with_stats("post", home, away),
+                captured_at=captured,
+                source_url="https://site.api.espn.com/soccer/summary",
             )
             return SimpleNamespace(payload=snap)
 
-    events = [SimpleNamespace(league="bra.1", espn_event_id=i, state="post")
-              for i in ("old1", "old2")]
+    events = [
+        SimpleNamespace(league="bra.1", espn_event_id=i, state="post") for i in ("old1", "old2")
+    ]
     events.append(SimpleNamespace(league="bra.1", espn_event_id="future", state="pre"))
     rows = [{"espn_event_id": i} for i in ("old1", "old2")]
     first = hydrate_finished_result_boxes(FakeProvider(), events, rows, budget=1)

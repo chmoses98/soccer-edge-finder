@@ -573,7 +573,6 @@ def enrich_result_rows(rows: list[dict[str, Any]], snaps: dict[str, LineupSnapsh
     return n
 
 
-
 def hydrate_finished_result_boxes(
     provider: Any,
     events: list[EspnEvent],
@@ -593,8 +592,10 @@ def hydrate_finished_result_boxes(
     complete = already_complete or set()
     target = {str(r.get("espn_event_id")) for r in rows if r.get("espn_event_id")}
     todo = [
-        e for e in events
-        if e.state == "post" and str(e.espn_event_id) in target
+        e
+        for e in events
+        if e.state == "post"
+        and str(e.espn_event_id) in target
         and str(e.espn_event_id) not in complete
     ]
     snapshots: dict[str, LineupSnapshot] = {}
