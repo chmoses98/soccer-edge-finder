@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-03T12:02:25.385182+00:00",
-  "events": 757,
-  "events_skipped_unmapped": 411,
+  "as_of": "2026-11-03T19:37:40.374061+00:00",
+  "events": 760,
+  "events_skipped_unmapped": 414,
   "fixtures_mapped": 346,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=18"
+      "weather_stopped:consecutive_failures:skipped=13"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 39,
-    "events": 39,
+    "captured": 54,
+    "events": 55,
     "failures": [],
-    "published_post": 3,
-    "published_pre_kickoff": 2,
-    "unchanged": 0,
-    "unpublished": 34
+    "published_post": 4,
+    "published_pre_kickoff": 20,
+    "unchanged": 1,
+    "unpublished": 31
   },
   "map_proposals": {
     "bel.1": {
@@ -301,10 +301,12 @@
         "20776": "Anaitasuna",
         "21291": "Calvo Sotelo",
         "21723": "Utebo",
+        "22043": "Mijas Las Lagunas",
         "22437": "CD Minera",
         "245": "Tenerife",
         "2737": "Albacete",
         "3752": "Eibar",
+        "5401": "Real Jaen CF",
         "5419": "FC Cartagena",
         "5421": "Barakaldo",
         "5464": "Portugalete",
@@ -312,6 +314,16 @@
         "6827": "Alcoyano",
         "7206": "UD Logro\u00f1\u00e9s",
         "8678": "Real Uni\u00f3n Irun"
+      }
+    },
+    "fra.coupe_de_france": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "134137": "AS ETOILE MATOURY",
+        "134139": "OLYMPIQUE DE CAYENNE",
+        "134140": "Sporting Club Baie-Mahault",
+        "134141": "Siroco Les Abymes"
       }
     },
     "nor.1": {
@@ -372,7 +384,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 0,
+  "results_appended": 1,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -418,6 +430,10 @@
     "133835": "CD Pamplona",
     "133837": "CD Tarancon",
     "133846": "Tavernes de la Valldigna",
+    "134137": "AS ETOILE MATOURY",
+    "134139": "OLYMPIQUE DE CAYENNE",
+    "134140": "Sporting Club Baie-Mahault",
+    "134141": "Siroco Les Abymes",
     "13884": "AFC Fylde",
     "17534": "Legan\u00e9s",
     "17573": "Trival Valderas",
@@ -437,6 +453,7 @@
     "21723": "Utebo",
     "21922": "Sabah FK",
     "21943": "Egnatia",
+    "22043": "Mijas Las Lagunas",
     "22437": "CD Minera",
     "22468": "Harborough Town",
     "245": "Tenerife",
@@ -507,6 +524,7 @@
     "489": "Hajduk Split",
     "490": "Levski Sofia",
     "510": "Viking FK",
+    "5401": "Real Jaen CF",
     "5419": "FC Cartagena",
     "5421": "Barakaldo",
     "5464": "Portugalete",
@@ -529,17 +547,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 11,
-    "events": 33,
+    "captured": 12,
+    "events": 29,
     "failures": [
-      "401878967: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=50.8280&longitude=3.2649&hourly=tem",
-      "401841304: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Chapec\u00f3&count=5&language=en&for",
-      "401841301: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Porto%20Alegre&count=5&language"
+      "401841298: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-23.9608&longitude=-46.3336&hourly=",
+      "401841300: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Sao%20Paulo&count=5&language=en",
+      "401841303: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Belo%20Horizonte&count=5&langua"
     ],
     "forecast_miss": 0,
     "geocode_miss": 1,
     "no_venue": 0,
-    "skipped": 18,
+    "skipped": 13,
     "stopped": "consecutive_failures"
   }
 }
