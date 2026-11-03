@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261103T140435Z-53f9ad` · generated 2026-11-03T14:04:35.859593Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261103T141935Z-d7751c` · generated 2026-11-03T14:19:35.946962Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-03T14:01:59.152260Z (CURRENT at publish; CURRENT until 2026-11-03T14:21:59.152260Z, STALE after 2026-11-03T14:31:59.152260Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-03T14:16:59.178661Z (CURRENT at publish; CURRENT until 2026-11-03T14:36:59.178661Z, STALE after 2026-11-03T14:46:59.178661Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-03T01:46:24.161896Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.12s
+model board generated 2026-11-03T01:46:24.161896Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.11s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -23,7 +23,7 @@ model board generated 2026-11-03T01:46:24.161896Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Botafogo vs Atlético Mineiro | Result: home | no | 0.5000 | 0.625 [0.479, 0.763] | +0.108 | +0.019 | 0.51 | - | * | RESEARCH_CANDIDATE |
+| Botafogo vs Atlético Mineiro | Result: home | no | 0.5050 | 0.625 [0.479, 0.763] | +0.103 | +0.014 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | home wins by more than 1.5 | no | 0.7500 | 0.827 [0.719, 0.920] | +0.064 | +0.006 | 0.75 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | home wins by more than 2.5 | no | 0.9000 | 0.936 [0.873, 0.981] | +0.029 | +0.003 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Total goals over 3.5 | no | 0.6700 | 0.765 [0.629, 0.879] | +0.080 | +0.001 | 0.67 | - | * | RESEARCH_CANDIDATE |
