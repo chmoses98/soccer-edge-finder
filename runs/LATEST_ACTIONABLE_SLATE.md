@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261103T225739Z-797ae0` · generated 2026-11-03T22:57:39.630991Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261103T231242Z-6c6182` · generated 2026-11-03T23:12:42.103525Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-03T22:55:03.696861Z (CURRENT at publish; CURRENT until 2026-11-03T23:15:03.696861Z, STALE after 2026-11-03T23:25:03.696861Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-03T23:10:06.360076Z (CURRENT at publish; CURRENT until 2026-11-03T23:30:06.360076Z, STALE after 2026-11-03T23:40:06.360076Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-03T22:42:41.985701Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.07s
 
@@ -31,10 +31,10 @@ model board generated 2026-11-03T22:42:41.985701Z · simulations this update: 0 
 | Botafogo vs Atlético Mineiro | Result: away | yes | 0.1900 | 0.330 [0.201, 0.462] | +0.130 | +0.043 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 2.5 | no | 0.3900 | 0.557 [0.385, 0.720] | +0.151 | +0.042 | 0.43 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Total goals over 3.5 | no | 0.6500 | 0.772 [0.639, 0.884] | +0.106 | +0.033 | 0.68 | - | * | RESEARCH_CANDIDATE |
+| Palmeiras vs Remo | Total goals over 1.5 | no | 0.1700 | 0.304 [0.170, 0.445] | +0.124 | +0.032 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Total goals over 2.5 | no | 0.4300 | 0.572 [0.415, 0.719] | +0.125 | +0.030 | 0.45 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Result: draw | yes | 0.1300 | 0.215 [0.134, 0.294] | +0.077 | +0.024 | 0.15 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 4.5 | no | 0.8000 | 0.885 [0.785, 0.961] | +0.074 | +0.023 | 0.82 | - |  | RESEARCH_CANDIDATE |
-| Palmeiras vs Remo | Total goals over 1.5 | no | 0.1800 | 0.304 [0.170, 0.445] | +0.114 | +0.021 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Result: draw | yes | 0.2200 | 0.284 [0.232, 0.336] | +0.052 | +0.018 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Result: home | no | 0.1950 | 0.314 [0.180, 0.457] | +0.108 | +0.015 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Total goals over 4.5 | no | 0.8300 | 0.894 [0.809, 0.960] | +0.054 | +0.012 | 0.84 | - |  | RESEARCH_CANDIDATE |
