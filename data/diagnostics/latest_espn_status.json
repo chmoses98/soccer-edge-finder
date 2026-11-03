@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-02T20:33:38.234716+00:00",
-  "events": 792,
-  "events_skipped_unmapped": 427,
-  "fixtures_mapped": 365,
+  "as_of": "2026-11-03T12:02:25.385182+00:00",
+  "events": 757,
+  "events_skipped_unmapped": 411,
+  "fixtures_mapped": 346,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=28"
+      "weather_stopped:consecutive_failures:skipped=18"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 55,
-    "events": 65,
+    "captured": 39,
+    "events": 39,
     "failures": [],
-    "published_post": 18,
+    "published_post": 3,
     "published_pre_kickoff": 2,
-    "unchanged": 10,
-    "unpublished": 45
+    "unchanged": 0,
+    "unpublished": 34
   },
   "map_proposals": {
     "bel.1": {
@@ -152,7 +152,6 @@
         "332": "Oldham Athletic",
         "339": "Colchester United",
         "341": "Swindon Town",
-        "343": "Chesterfield",
         "345": "Tranmere Rovers",
         "348": "Port Vale",
         "353": "Northampton Town",
@@ -162,16 +161,13 @@
         "396": "Crewe Alexandra",
         "401": "Walsall",
         "402": "Rotherham United",
-        "4703": "Salford City",
-        "635": "Newport County"
+        "4703": "Salford City"
       }
     },
     "eng.5": {
       "ambiguous": {},
       "proposed": {},
       "unresolved": {
-        "10167": "AFC Hornchurch",
-        "13884": "AFC Fylde",
         "19262": "Harrogate Town",
         "2595": "Boreham Wood",
         "282": "Forest Green Rovers",
@@ -278,6 +274,7 @@
     "esp.2": {
       "ambiguous": {},
       "proposed": {
+        "17534": "esp.leganes",
         "84": "esp.mallorca"
       },
       "unresolved": {
@@ -290,6 +287,7 @@
     "esp.copa_del_rey": {
       "ambiguous": {},
       "proposed": {
+        "17534": "esp.leganes",
         "84": "esp.mallorca"
       },
       "unresolved": {
@@ -298,6 +296,8 @@
         "131470": "Reus FC Reddis",
         "133835": "CD Pamplona",
         "133837": "CD Tarancon",
+        "133846": "Tavernes de la Valldigna",
+        "17573": "Trival Valderas",
         "20776": "Anaitasuna",
         "21291": "Calvo Sotelo",
         "21723": "Utebo",
@@ -372,7 +372,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 2,
+  "results_appended": 0,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -397,6 +397,7 @@
     "nor.1",
     "per.1",
     "swe.1",
+    "uefa.wchampions",
     "uru.1",
     "usa.usl.1"
   ],
@@ -416,7 +417,10 @@
     "133370": "Wimborne Town",
     "133835": "CD Pamplona",
     "133837": "CD Tarancon",
+    "133846": "Tavernes de la Valldigna",
     "13884": "AFC Fylde",
+    "17534": "Legan\u00e9s",
+    "17573": "Trival Valderas",
     "19246": "Riga FC",
     "19262": "Harrogate Town",
     "20024": "Ararat-Armenia",
@@ -525,17 +529,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 6,
-    "events": 37,
+    "captured": 11,
+    "events": 33,
     "failures": [
-      "401912615: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=21.0245&longitude=105.8412&hourly=t",
-      "401912616: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Pathum%20Thani&count=5&language",
-      "401912607: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Basra&count=5&language=en&forma"
+      "401878967: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=50.8280&longitude=3.2649&hourly=tem",
+      "401841304: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Chapec\u00f3&count=5&language=en&for",
+      "401841301: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Porto%20Alegre&count=5&language"
     ],
     "forecast_miss": 0,
-    "geocode_miss": 0,
+    "geocode_miss": 1,
     "no_venue": 0,
-    "skipped": 28,
+    "skipped": 18,
     "stopped": "consecutive_failures"
   }
 }
