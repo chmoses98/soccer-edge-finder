@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261103T114125Z-d7e17d` · generated 2026-11-03T11:41:25.383735Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261103T115625Z-c58e8f` · generated 2026-11-03T11:56:25.884304Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-03T11:38:48.791984Z (CURRENT at publish; CURRENT until 2026-11-03T11:58:48.791984Z, STALE after 2026-11-03T12:08:48.791984Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-03T11:53:49.364646Z (CURRENT at publish; CURRENT until 2026-11-03T12:13:49.364646Z, STALE after 2026-11-03T12:23:49.364646Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-03T01:46:24.161896Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.06s
 
@@ -23,7 +23,7 @@ model board generated 2026-11-03T01:46:24.161896Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Botafogo vs Atlético Mineiro | Result: home | no | 0.5100 | 0.625 [0.479, 0.763] | +0.098 | +0.009 | 0.51 | - | * | RESEARCH_CANDIDATE |
+| Botafogo vs Atlético Mineiro | Result: home | no | 0.5000 | 0.625 [0.479, 0.763] | +0.108 | +0.019 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | home wins by more than 1.5 | no | 0.7500 | 0.827 [0.719, 0.920] | +0.064 | +0.006 | 0.75 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | home wins by more than 2.5 | no | 0.9000 | 0.936 [0.873, 0.981] | +0.029 | +0.003 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Total goals over 3.5 | no | 0.6700 | 0.765 [0.629, 0.879] | +0.080 | +0.001 | 0.67 | - | * | RESEARCH_CANDIDATE |
