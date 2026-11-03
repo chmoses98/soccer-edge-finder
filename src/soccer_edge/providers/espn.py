@@ -504,8 +504,10 @@ def parse_summary_team_stats(body: dict[str, Any]) -> dict[str, Any] | None:
     return out or None
 
 
-# ESPN statistic names -> MatchResult field stems. UNVERIFIED against a captured payload (the sandbox cannot reach
-# ESPN); the raw names are archived verbatim, so a wrong/missing name yields no field, never a wrong one.
+# ESPN statistic names -> MatchResult field stems. VERIFIED against real post-match summary payloads: sift-alpha
+# ESPN probe run 41543056159 (2026-11-02T23:40Z, 8 completed matches in eng/esp/ger/ita.1) - every name below was
+# present for both teams in 8/8 matches. The same payloads carry NO xG / expected-goals statistic, so xG is NOT
+# available from ESPN and home_xg/away_xg are never filled from here. Raw names are still archived verbatim.
 BOX_STAT_NAMES = {
     "totalShots": "shots",
     "shotsOnTarget": "shots_on_target",
@@ -532,6 +534,39 @@ def box_stats_fields(
             continue
         out[f"home_{stem}"], out[f"away_{stem}"] = hv, av
     return out
+
+
+def box_result_fields(snap: "LineupSnapshot | None") -> dict[str, Any]:
+    """Result-row fields from a post-match summary box score, with provenance. Empty unless the snapshot is a
+    post-match one carrying statistics. Fields ESPN does not report for BOTH teams stay absent (never 0).
+    Box-score cards are the team totals ESPN itself reports -> cards_basis 'boxscore_exact'."""
+    if snap is None or snap.event_state != "post" or not snap.team_stats:
+        return {}
+    fields = box_stats_fields(snap.team_stats, snap.home_espn_id, snap.away_espn_id)
+    if not fields:
+        return {}
+    out: dict[str, Any] = dict(fields)
+    out["box_stats_source"] = "espn_summary_boxscore"
+    out["box_stats_captured_at"] = snap.captured_at.isoformat()
+    if "home_yellow" in fields and "home_red" in fields:
+        out["cards_source"] = "espn_summary_boxscore"
+        out["cards_basis"] = "boxscore_exact"
+    else:                      # only one card kind reported: do not keep half a card line
+        for k in ("home_yellow", "away_yellow", "home_red", "away_red"):
+            out.pop(k, None)
+    return out
+
+
+def enrich_result_rows(rows: list[dict[str, Any]], snaps: dict[str, "LineupSnapshot"]) -> int:
+    """Merge box-score fields into archived-result rows by espn_event_id (in place). Box-score values supersede
+    scoreboard-derived cards. Returns the number of rows enriched."""
+    n = 0
+    for r in rows:
+        extra = box_result_fields(snaps.get(r.get("espn_event_id")))
+        if extra:
+            r.update(extra)
+            n += 1
+    return n
 
 
 def parse_teams(body: dict[str, Any]) -> list[dict[str, str]]:
@@ -757,6 +792,7 @@ def capture_lineups(
     *,
     as_of: datetime | None = None,
     max_events: int = 200,
+    snapshots_out: dict[str, "LineupSnapshot"] | None = None,
 ) -> dict[str, Any]:
     """Prospective lineup capture: one JSONL row per (event, capture) — appended, never rewritten. Change-suppressed
     by content hash per event (data/lineups/<date>/<league>.jsonl + last_hashes.json)."""
@@ -782,6 +818,8 @@ def capture_lineups(
             stats["failures"].append(f"{ev.league}/{ev.espn_event_id}: {str(exc)[:100]}")
             continue
         snap = obs.payload
+        if snapshots_out is not None and snap.team_stats:
+            snapshots_out[ev.espn_event_id] = snap      # post-match box score, even when the row below is change-suppressed
         if snap.lineup_state == "confirmed":
             stats["published_pre_kickoff"] += 1
         elif snap.lineup_state == "post_hoc":
@@ -939,7 +977,7 @@ def result_evidence(ev: EspnEvent) -> dict[str, Any]:
         hr = sum(1 for c in ev.card_events if c.team_espn_id == ev.home_espn_id and c.red)
         ar = sum(1 for c in ev.card_events if c.team_espn_id == ev.away_espn_id and c.red)
         if hy + ay + hr + ar == len(ev.card_events):      # every card attributed to one of the two teams, else emit nothing
-            out.update({"home_yellow": hy, "away_yellow": ay, "home_red": hr, "away_red": ar, "cards_source": "espn_scoreboard_details"})
+            out.update({"home_yellow": hy, "away_yellow": ay, "home_red": hr, "away_red": ar, "cards_source": "espn_scoreboard_details", "cards_basis": "scoreboard_unreconciled"})
     goals = [g for g in ev.goal_events if not g.shootout]
     if goals or name == "STATUS_FULL_TIME":
         # own goals are credited to the opponent of the team ESPN lists on the play
@@ -1014,9 +1052,14 @@ def _result_row_upgrades(prev: dict[str, Any], new: dict[str, Any]) -> bool:
         "winner_after_penalties",
         "first_scorer_team",
         "home_yellow",
+        "home_shots",
+        "home_corners",
     ):
         if prev.get(key) is None and new.get(key) is not None:
             return True
+    # box-score cards are exact and supersede scoreboard-derived ones (which probes showed can differ)
+    if new.get("cards_basis") == "boxscore_exact" and prev.get("cards_basis") != "boxscore_exact":
+        return True
     return False
 
 

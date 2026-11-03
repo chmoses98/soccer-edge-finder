@@ -2928,8 +2928,14 @@ def cmd_espn_sync(args: argparse.Namespace) -> int:
     # lineups: events kicking off within [-3h, +26h] of now (pre-kickoff sheets + post-match sheets for history)
     lo, hi = as_of - timedelta(hours=3), as_of + timedelta(hours=26)
     todo = [e for e in events if lo <= e.kickoff_utc <= hi]
+    box_snaps: dict = {}
     ln_stats = capture_lineups(
-        prov, todo, out_dir / "lineups", as_of=as_of, max_events=args.max_lineups
+        prov,
+        todo,
+        out_dir / "lineups",
+        as_of=as_of,
+        max_events=args.max_lineups,
+        snapshots_out=box_snaps,
     )
     # weather (context only): Open-Meteo forecast at kickoff hour for events within 72h
     from soccer_edge.providers.http import CachedFetcher
@@ -2987,7 +2993,12 @@ def cmd_espn_sync(args: argparse.Namespace) -> int:
         f.model_dump(mode="json") | {"espn_event_id": rep.espn_event_by_fixture.get(f.fixture_id)}
         for f in fixtures
     ]
-    from soccer_edge.providers.espn import EspnArchive, result_record, results_from_events
+    from soccer_edge.providers.espn import (
+        EspnArchive,
+        enrich_result_rows,
+        result_record,
+        results_from_events,
+    )
 
     arch = EspnArchive(out_dir)
     res_written = 0
@@ -2997,6 +3008,7 @@ def cmd_espn_sync(args: argparse.Namespace) -> int:
         for e in evs:
             for r in results_from_events([e], emap):
                 rows.append(result_record(r, e.espn_event_id, lg))
+        enrich_result_rows(rows, box_snaps)
         res_written += arch.append_results(lg, rows)
     write_json(
         out_dir / "fixtures" / f"{as_of:%Y-%m-%d}" / f"espn-{as_of:%H%M%S}.json",

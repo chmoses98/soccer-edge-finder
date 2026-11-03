@@ -463,3 +463,80 @@ def test_capture_lineups_appends_the_post_match_stats_row_even_if_the_xi_is_unch
     a = parse_summary_lineups("eng.1", "1", _summary_with_stats("post", None, None), captured_at=now, source_url="u")
     b = parse_summary_lineups("eng.1", "1", _summary_with_stats("post", {"totalShots": 1}, {"totalShots": 2}), captured_at=now, source_url="u")
     assert a.content_hash != b.content_hash                               # change suppression will NOT swallow the stats row
+
+
+# ---- real ESPN payload facts: sift-alpha probe run 41543056159 (2026-11-02T23:40Z), match 401882821 (esp.1, a red card) ----
+REAL_HOME = {"yellowCards": "2", "redCards": "0", "wonCorners": "2", "totalShots": "11", "shotsOnTarget": "5", "foulsCommitted": "18", "possessionPct": "47"}
+REAL_AWAY = {"yellowCards": "4", "redCards": "1", "wonCorners": "2", "totalShots": "12", "shotsOnTarget": "4", "foulsCommitted": "18", "possessionPct": "53.7"}
+
+
+def test_real_probe_stat_names_map_shots_corners_cards_with_provenance():
+    from soccer_edge.providers.espn import box_result_fields
+
+    at = datetime(2026, 11, 2, 23, 40, tzinfo=UTC)
+    snap = parse_summary_lineups("eng.1", "1", _summary_with_stats("post", REAL_HOME, REAL_AWAY), captured_at=at, source_url="u")
+    f = box_result_fields(snap)
+    assert (f["home_shots"], f["away_shots"], f["home_shots_on_target"], f["away_shots_on_target"]) == (11, 12, 5, 4)
+    assert (f["home_corners"], f["away_corners"]) == (2, 2)
+    assert (f["home_yellow"], f["away_yellow"], f["home_red"], f["away_red"]) == (2, 4, 0, 1)
+    assert f["box_stats_source"] == "espn_summary_boxscore" and f["box_stats_captured_at"] == at.isoformat()
+    assert (f["cards_source"], f["cards_basis"]) == ("espn_summary_boxscore", "boxscore_exact")
+    assert not any("xg" in k for k in f)          # ESPN box scores carry no xG: never invented
+
+
+def test_missing_box_values_stay_missing_not_zero_and_pre_match_gives_nothing():
+    from soccer_edge.providers.espn import box_result_fields
+
+    at = datetime(2026, 11, 2, 23, 40, tzinfo=UTC)
+    no_corners_h = {k: v for k, v in REAL_HOME.items() if k != "wonCorners"}
+    f = box_result_fields(parse_summary_lineups("eng.1", "1", _summary_with_stats("post", no_corners_h, REAL_AWAY), captured_at=at, source_url="u"))
+    assert "home_corners" not in f and "away_corners" not in f and f["home_shots"] == 11     # absent, not 0
+    only_yellow = {"yellowCards": "1", "totalShots": "3"}
+    g = box_result_fields(parse_summary_lineups("eng.1", "1", _summary_with_stats("post", only_yellow, only_yellow), captured_at=at, source_url="u"))
+    assert "home_yellow" not in g and "cards_basis" not in g and g["home_shots"] == 3     # half a card line is dropped
+    assert box_result_fields(parse_summary_lineups("eng.1", "1", _summary_with_stats("pre", REAL_HOME, REAL_AWAY), captured_at=at, source_url="u")) == {}
+    assert box_result_fields(None) == {}
+
+
+def test_box_score_cards_supersede_unreconciled_scoreboard_cards():
+    """Probe match 401882826: scoreboard details counted 4 away yellows, the box score says 3. The box score wins and the
+    archived row is upgraded by appending (file stays append-only)."""
+    from soccer_edge.providers.espn import EspnArchive, enrich_result_rows, result_record
+
+    team = lambda i: {"id": i}
+    ev = lambda t: {"type": {"text": "x"}, "clock": {"displayValue": "10'"}, "scoringPlay": False, "yellowCard": True, "redCard": False, "team": team(t)}
+    r = _results([ev("349")] * 2 + [ev("364")] * 4)
+    assert (r.home_yellow, r.away_yellow, r.cards_basis) == (2, 4, "scoreboard_unreconciled")
+    sb_row = result_record(r, "evt", "eng.1")
+    at = datetime(2026, 11, 2, 23, 40, tzinfo=UTC)
+    home = {"yellowCards": "2", "redCards": "0", "totalShots": "13"}
+    away = {"yellowCards": "3", "redCards": "0", "totalShots": "14"}
+    snap = parse_summary_lineups("eng.1", "evt", _summary_with_stats("post", home, away), captured_at=at, source_url="u")
+    row = dict(sb_row)
+    assert enrich_result_rows([row], {"evt": snap}) == 1
+    assert (row["away_yellow"], row["cards_basis"], row["home_shots"]) == (3, "boxscore_exact", 13)
+    import tempfile
+    with tempfile.TemporaryDirectory() as d:
+        arch = EspnArchive(Path(d))
+        assert arch.append_results("eng.1", [sb_row]) == 1
+        assert arch.append_results("eng.1", [dict(sb_row)]) == 0            # identical re-read: nothing appended
+        assert arch.append_results("eng.1", [row]) == 1                     # box score upgrades it
+        assert arch.append_results("eng.1", [row]) == 0
+        got = arch.results(("eng.1",))[0]
+        assert (got.away_yellow, got.home_shots, got.box_stats_captured_at) == (3, 13, at.isoformat())
+
+
+def test_capture_lineups_exposes_post_match_snapshots_even_when_hash_unchanged(tmp_path):
+    at = datetime(2026, 11, 2, 23, 40, tzinfo=UTC)
+    body = _summary_with_stats("post", REAL_HOME, REAL_AWAY)
+
+    class P:
+        def lineup(self, league, eid):
+            from types import SimpleNamespace
+            return SimpleNamespace(payload=parse_summary_lineups(league, eid, body, captured_at=at, source_url="u"))
+
+    ev = parse_scoreboard("eng.1", _scoreboard_body())[:1]
+    first, second = {}, {}
+    s1 = capture_lineups(P(), ev, tmp_path, as_of=at, snapshots_out=first)
+    s2 = capture_lineups(P(), ev, tmp_path, as_of=at, snapshots_out=second)
+    assert (s1["captured"], s2["unchanged"]) == (1, 1) and len(first) == len(second) == 1
