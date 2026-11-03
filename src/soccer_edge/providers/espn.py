@@ -573,6 +573,57 @@ def enrich_result_rows(rows: list[dict[str, Any]], snaps: dict[str, LineupSnapsh
     return n
 
 
+
+def hydrate_finished_result_boxes(
+    provider: Any,
+    events: list[EspnEvent],
+    rows: list[dict[str, Any]],
+    *,
+    budget: int,
+    already_complete: set[str] | None = None,
+) -> dict[str, Any]:
+    """Optional, BOUNDED historical result-box hydration independent of the live lineup lookback.
+
+    This is for one-off espn-backfill repair, not for claiming pregame/PIT availability. Results remain
+    append-only and box fields are emitted only for a post-match snapshot with populated bilateral stats.
+    A finished event older than the live 30h lineup window can be repaired with fresh summary evidence.
+    """
+    if budget < 0:
+        raise ValueError("box-summary budget must be nonnegative")
+    complete = already_complete or set()
+    target = {str(r.get("espn_event_id")) for r in rows if r.get("espn_event_id")}
+    todo = [
+        e for e in events
+        if e.state == "post" and str(e.espn_event_id) in target
+        and str(e.espn_event_id) not in complete
+    ]
+    snapshots: dict[str, LineupSnapshot] = {}
+    failures: list[str] = []
+    requested = 0
+    without_box = 0
+    for e in todo:
+        if requested >= budget:
+            break
+        requested += 1
+        try:
+            snap = provider.lineup(e.league, e.espn_event_id).payload
+            if box_result_fields(snap):
+                snapshots[str(e.espn_event_id)] = snap
+            else:
+                without_box += 1
+        except Exception as exc:
+            failures.append(f"{e.league}/{e.espn_event_id}: {str(exc)[:100]}")
+    return {
+        "eligible_missing": len(todo),
+        "requested": requested,
+        "with_box_stats": len(snapshots),
+        "enriched": enrich_result_rows(rows, snapshots),
+        "without_box": without_box,
+        "deferred_budget": max(0, len(todo) - requested),
+        "failures": failures,
+    }
+
+
 def parse_teams(body: dict[str, Any]) -> list[dict[str, str]]:
     out = []
     for sp in body.get("sports") or []:
