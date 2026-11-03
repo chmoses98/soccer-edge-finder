@@ -6,6 +6,7 @@ run without a model fit, a simulation, a network call or a ledger write."""
 from __future__ import annotations
 
 import json
+import os
 import subprocess
 from datetime import UTC, date, datetime, timedelta
 from decimal import Decimal
@@ -739,6 +740,26 @@ def test_t5_batch_reprices_without_model_or_paid_call(monkeypatch, tmp_path, bui
     assert any(a.startswith("slate_reprice:ok") for a in actions)
 
 
+def _with_fixed_clock(env: dict, when: datetime, where: Path) -> dict:
+    """An environment in which every `python` child process sees `when` as the current time.
+
+    archive_publish.sh runs `python -m soccer_edge.cli slate merge-latest` as a subprocess, so patching `utc_now` in the test
+    process cannot reach it; with the wall clock the board merge drops every fixture that kicked off more than an hour ago, and
+    these fixtures are dated 2026-10-10. A `sitecustomize` on PYTHONPATH rebinds `soccer_edge.core.time.utc_now` before any
+    module imports it, so no production code changes.
+    """
+    where.mkdir(parents=True, exist_ok=True)
+    (where / "sitecustomize.py").write_text(
+        "from datetime import datetime\n"
+        "import soccer_edge.core.time as _t\n"
+        f"_FIXED = datetime.fromisoformat({when.isoformat()!r})\n"
+        "_t.utc_now = lambda: _FIXED\n"
+    )
+    out = dict(env)
+    out["PYTHONPATH"] = os.pathsep.join(filter(None, [str(where), env.get("PYTHONPATH", "")]))
+    return out
+
+
 def test_archive_publish_merges_latest_pointers(built, tmp_path):
     """scripts/archive_publish.sh: the newer slate survives an older publish; boards union by fixture."""
     from soccer_edge.slate.board import BOARD_FILE
@@ -754,10 +775,9 @@ def test_archive_publish_merges_latest_pointers(built, tmp_path):
         "GIT_COMMITTER_NAME": "t",
         "GIT_COMMITTER_EMAIL": "t@t",
     }
-    import os
-
     env = {**os.environ, **env}
     env.pop("GITHUB_TOKEN", None)
+    env = _with_fixed_clock(env, NOW, tmp_path / "clock")
     subprocess.run(["git", "-C", str(seed), "add", "."], check=True, env=env)
     subprocess.run(["git", "-C", str(seed), "commit", "-qm", "seed"], check=True, env=env)
     subprocess.run(
@@ -912,6 +932,9 @@ def test_model_refresh_end_to_end_reuses_cache_and_never_pays(
     monkeypatch.setattr(reconcile, "reconcile_fast_vs_full", fake_reconcile)
     monkeypatch.setattr(cli, "_reference_capture", lambda *a, **k: ({}, None, {}))
     monkeypatch.setattr(cli, "utc_now", lambda: NOW)
+    # `stamp_decision_time` reads the pipeline module's own `utc_now`; leaving it on the wall clock made the decision time
+    # drift away from the NOW-based fixtures (freshness: "market age 23 days") as the calendar moved.
+    monkeypatch.setattr(pipeline_mod, "utc_now", lambda: NOW)
     import soccer_edge.providers.the_odds_api as toa
 
     def no_paid(*a, **k):
