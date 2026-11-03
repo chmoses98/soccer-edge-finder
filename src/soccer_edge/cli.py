@@ -2560,6 +2560,10 @@ def build_parser() -> argparse.ArgumentParser:
     eb.add_argument("--start", required=True, help="YYYY-MM-DD")
     eb.add_argument("--end", default=None, help="YYYY-MM-DD (default today)")
     eb.add_argument("--out-dir", required=True)
+    eb.add_argument(
+        "--box-summary-budget", type=int, default=0,
+        help="opt-in total ESPN summary requests across all leagues; 0 preserves existing score-only backfill",
+    )
     eb.set_defaults(func=cmd_espn_backfill)
     elb = sub.add_parser(
         "espn-lineup-backfill",
@@ -3070,7 +3074,7 @@ def cmd_espn_backfill(args: argparse.Namespace) -> int:
     """Runner-side, one-off/incremental: per-day scoreboards over a date range -> results/espn/<league>.jsonl."""
     from datetime import date as _date
 
-    from soccer_edge.core.serialization import write_json
+    from soccer_edge.core.serialization import read_jsonl, write_json
     from soccer_edge.providers.espn import (
         EspnArchive,
         EspnMap,
@@ -3078,6 +3082,7 @@ def cmd_espn_backfill(args: argparse.Namespace) -> int:
         MappingReport,
         result_record,
         results_from_events,
+        hydrate_finished_result_boxes,
     )
 
     emap = EspnMap.load()
@@ -3088,7 +3093,11 @@ def cmd_espn_backfill(args: argparse.Namespace) -> int:
         _date.fromisoformat(args.end) if args.end else utc_now().date(),
     )
     days = (end - start).days + 1
-    summary: dict[str, object] = {"start": str(start), "end": str(end), "leagues": {}}
+    remaining_box_budget = getattr(args, "box_summary_budget", 0)
+    if remaining_box_budget < 0:
+        raise ValueError("--box-summary-budget must be nonnegative")
+    summary: dict[str, object] = {"start": str(start), "end": str(end), "leagues": {},
+                                  "box_summary_budget": remaining_box_budget}
     for lg in args.leagues.split(","):
         events, failures = prov.fixtures_window([lg], start, days)
         rep = MappingReport()
@@ -3096,11 +3105,30 @@ def cmd_espn_backfill(args: argparse.Namespace) -> int:
         for e in events:
             for r in results_from_events([e], emap, rep):
                 rows.append(result_record(r, e.espn_event_id, lg))
+        # Backfill is a separate, explicit repair path. Live lineup sync only revisits finished matches
+        # for ~30h; older results cannot regain box fields from that window alone.
+        box_repair: dict[str, object] = {"enabled": False}
+        if getattr(args, "box_summary_budget", 0) > 0:
+            latest = {}
+            existing_path = arch.results_path(lg)
+            if existing_path.exists():
+                for old in read_jsonl(existing_path):
+                    latest[str(old.get("espn_event_id"))] = old
+            completed_ids = {
+                event_id for event_id, old in latest.items()
+                if old.get("box_stats_source") == "espn_summary_boxscore"
+            }
+            box_repair = hydrate_finished_result_boxes(
+                prov, events, rows, budget=remaining_box_budget, already_complete=completed_ids
+            )
+            box_repair["enabled"] = True
+            remaining_box_budget -= box_repair["requested"]
         n = arch.append_results(lg, rows)
         summary["leagues"][lg] = {
             "events": len(events),
             "finished_mapped": len(rows),
             "appended": n,
+            "box_repair": box_repair,
             "failures": len(failures),
             "unmapped_team_ids": rep.unmapped_team_ids,
             "skipped": rep.skipped_events,
