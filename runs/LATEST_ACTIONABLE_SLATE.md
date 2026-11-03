@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261103T074915Z-9811bd` · generated 2026-11-03T07:49:15.800302Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261103T105626Z-55aefd` · generated 2026-11-03T10:56:26.039879Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-03T07:46:28.352519Z (CURRENT at publish; CURRENT until 2026-11-03T08:06:28.352519Z, STALE after 2026-11-03T08:16:28.352519Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-03T10:53:49.619100Z (CURRENT at publish; CURRENT until 2026-11-03T11:13:49.619100Z, STALE after 2026-11-03T11:23:49.619100Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-03T01:46:24.161896Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.06s
+model board generated 2026-11-03T01:46:24.161896Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.21s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -19,22 +19,21 @@ model board generated 2026-11-03T01:46:24.161896Z · simulations this update: 0 
 | 2026-11-05T00:30:00Z | Botafogo vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-05T00:30:00Z | São Paulo vs Corinthians (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 
-## Candidates on CURRENT prices (5; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (4; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Botafogo vs Atlético Mineiro | Result: home | no | 0.5000 | 0.625 [0.479, 0.763] | +0.108 | +0.019 | 0.51 | - | * | RESEARCH_CANDIDATE |
-| Botafogo vs Atlético Mineiro | home wins by more than 1.5 | no | 0.7400 | 0.827 [0.719, 0.920] | +0.074 | +0.016 | 0.75 | - | * | RESEARCH_CANDIDATE |
+| Botafogo vs Atlético Mineiro | Result: home | no | 0.5100 | 0.625 [0.479, 0.763] | +0.098 | +0.009 | 0.51 | - | * | RESEARCH_CANDIDATE |
+| Botafogo vs Atlético Mineiro | home wins by more than 1.5 | no | 0.7500 | 0.827 [0.719, 0.920] | +0.064 | +0.006 | 0.75 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | home wins by more than 2.5 | no | 0.9000 | 0.936 [0.873, 0.981] | +0.029 | +0.003 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Total goals over 3.5 | no | 0.6700 | 0.765 [0.629, 0.879] | +0.080 | +0.001 | 0.67 | - | * | RESEARCH_CANDIDATE |
-| Botafogo vs Atlético Mineiro | Total goals over 0.5 | no | 0.0600 | 0.102 [0.050, 0.162] | +0.038 | +0.000 | 0.06 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 162
+action_NO_EDGE: 163
 action_NO_QUOTE: 181
-action_RESEARCH_CANDIDATE: 5
+action_RESEARCH_CANDIDATE: 4
 contract_sides: 348
 fixtures: 6
 fixtures_model_invalidated: 0
