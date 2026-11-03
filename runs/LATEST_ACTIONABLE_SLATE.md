@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261103T200423Z-4650f9` · generated 2026-11-03T20:04:23.071454Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261103T201923Z-352e24` · generated 2026-11-03T20:19:23.368991Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-03T20:01:46.493622Z (CURRENT at publish; CURRENT until 2026-11-03T20:21:46.493622Z, STALE after 2026-11-03T20:31:46.493622Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-03T20:16:46.560174Z (CURRENT at publish; CURRENT until 2026-11-03T20:36:46.560174Z, STALE after 2026-11-03T20:46:46.560174Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-03T15:18:17.770287Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.06s
 
@@ -12,28 +12,32 @@ model board generated 2026-11-03T15:18:17.770287Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-03T22:30:00Z | Chapecoense vs Mirassol (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-04T00:30:00Z | Internacional vs Coritiba (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-03T22:30:00Z | Chapecoense vs Mirassol (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-04T00:30:00Z | Internacional vs Coritiba (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-04T22:30:00Z | Athletico Paranaense vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-04T22:30:00Z | Flamengo vs Grêmio (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-05T00:30:00Z | Botafogo vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-05T00:30:00Z | São Paulo vs Corinthians (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 
-## Candidates on CURRENT prices (4; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (8; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
+| Botafogo vs Atlético Mineiro | Result: home | no | 0.4800 | 0.614 [0.456, 0.749] | +0.117 | +0.018 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Total goals over 3.5 | no | 0.6700 | 0.772 [0.639, 0.884] | +0.086 | +0.013 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Total goals over 2.5 | no | 0.4500 | 0.572 [0.415, 0.719] | +0.105 | +0.009 | 0.45 | - |  | RESEARCH_CANDIDATE |
+| Botafogo vs Atlético Mineiro | home wins by more than 1.5 | no | 0.7300 | 0.820 [0.705, 0.913] | +0.076 | +0.007 | 0.73 | - | * | RESEARCH_CANDIDATE |
+| Flamengo vs Grêmio | Result: home | no | 0.1600 | 0.265 [0.134, 0.402] | +0.095 | +0.005 | 0.16 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | btts | no | 0.4300 | 0.526 [0.405, 0.639] | +0.079 | +0.004 | 0.43 | - | * | RESEARCH_CANDIDATE |
+| Flamengo vs Grêmio | Result: draw | yes | 0.1100 | 0.171 [0.097, 0.248] | +0.054 | +0.003 | 0.11 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Total goals over 4.5 | no | 0.8400 | 0.894 [0.809, 0.960] | +0.045 | +0.003 | 0.84 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 163
+action_NO_EDGE: 159
 action_NO_QUOTE: 181
-action_RESEARCH_CANDIDATE: 4
+action_RESEARCH_CANDIDATE: 8
 contract_sides: 348
 fixtures: 6
 fixtures_model_invalidated: 0
