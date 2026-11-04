@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261104T225829Z-502bc5` · generated 2026-11-04T22:58:29.659347Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261104T231334Z-c3ed1b` · generated 2026-11-04T23:13:34.502098Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-04T22:55:50.151499Z (CURRENT at publish; CURRENT until 2026-11-04T23:15:50.151499Z, STALE after 2026-11-04T23:25:50.151499Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-04T23:10:51.243016Z (CURRENT at publish; CURRENT until 2026-11-04T23:30:51.243016Z, STALE after 2026-11-04T23:40:51.243016Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-04T22:00:01.120985Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.33s
+model board generated 2026-11-04T23:13:32.242776Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.16s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -21,6 +21,7 @@ model board generated 2026-11-04T22:00:01.120985Z · simulations this update: 0 
 | 2026-11-06T19:30:00Z | Hamburger SV vs Borussia Mönchengladbach (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-06T19:45:00Z | Toulouse vs Strasbourg (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 59 | 0 |
 | 2026-11-06T19:45:00Z | Venezia vs Udinese (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 71 | 0 |
+| 2026-11-06T23:00:00Z | Vitória vs Fluminense (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
 ## Candidates on CURRENT prices (25; RESEARCH_ONLY = analysis, never a bet)
 
@@ -38,13 +39,13 @@ model board generated 2026-11-04T22:00:01.120985Z · simulations this update: 0 
 | Botafogo vs Atlético Mineiro | away wins by more than 1.5 | yes | 0.0600 | 0.141 [0.067, 0.231] | +0.078 | +0.023 | 0.08 | - |  | RESEARCH_CANDIDATE |
 | Venezia vs Udinese | Result: home | no | 0.5800 | 0.739 [0.544, 0.909] | +0.142 | +0.023 | 0.6 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 0.5 | no | 0.0400 | 0.100 [0.045, 0.162] | +0.057 | +0.017 | 0.05 | - |  | RESEARCH_CANDIDATE |
+| São Paulo vs Corinthians | Result: home | yes | 0.3550 | 0.486 [0.338, 0.638] | +0.115 | +0.016 | 0.37 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Result: draw | yes | 0.1400 | 0.214 [0.129, 0.294] | +0.066 | +0.014 | 0.15 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Result: home | no | 0.2000 | 0.311 [0.177, 0.445] | +0.100 | +0.013 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Result: draw | yes | 0.2250 | 0.282 [0.232, 0.334] | +0.045 | +0.012 | 0.23 | - |  | RESEARCH_CANDIDATE |
-| São Paulo vs Corinthians | Result: home | yes | 0.3600 | 0.486 [0.338, 0.638] | +0.110 | +0.011 | 0.37 | - | * | RESEARCH_CANDIDATE |
+| São Paulo vs Corinthians | Result: away | no | 0.6700 | 0.762 [0.643, 0.866] | +0.077 | +0.010 | 0.68 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | btts | no | 0.5600 | 0.652 [0.542, 0.756] | +0.075 | +0.007 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | home wins by more than 2.5 | no | 0.6700 | 0.772 [0.616, 0.896] | +0.087 | +0.006 | 0.67 | - | * | RESEARCH_CANDIDATE |
-| São Paulo vs Corinthians | Result: away | no | 0.6750 | 0.762 [0.643, 0.866] | +0.072 | +0.005 | 0.68 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | home wins by more than 1.5 | no | 0.4400 | 0.564 [0.385, 0.720] | +0.107 | +0.005 | 0.44 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Total goals over 2.5 | no | 0.4500 | 0.567 [0.412, 0.713] | +0.099 | +0.004 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | São Paulo vs Corinthians | home wins by more than 1.5 | yes | 0.1500 | 0.252 [0.131, 0.393] | +0.093 | +0.003 | 0.15 | - | * | RESEARCH_CANDIDATE |
@@ -55,11 +56,11 @@ model board generated 2026-11-04T22:00:01.120985Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 104
+action_NO_EDGE: 132
 action_NO_QUOTE: 381
 action_RESEARCH_CANDIDATE: 25
-contract_sides: 510
-fixtures: 9
+contract_sides: 538
+fixtures: 10
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```

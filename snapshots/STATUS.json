@@ -1,7 +1,7 @@
 {
-  "batch_id": "cap-20261104T225828Z",
-  "captured_at": "2026-11-04T22:58:28.666111+00:00",
-  "contracts_discovered": 4294,
+  "batch_id": "cap-20261104T231327Z",
+  "captured_at": "2026-11-04T23:13:27.379069+00:00",
+  "contracts_discovered": 4326,
   "counters": {
     "complete": true,
     "contracts_by_competition_code": {
@@ -10,8 +10,8 @@
       "ARGPREMDIV": 30,
       "AUTBUNDES": 18,
       "BELGIANPL": 18,
-      "BRASILEIRO": 179,
-      "BRASILEIROB": 74,
+      "BRASILEIRO": 180,
+      "BRASILEIROB": 105,
       "BUNDESLIGA": 195,
       "BUNDESLIGAW": 18,
       "CANPL": 6,
@@ -75,7 +75,7 @@
       "WCW": 32
     },
     "contracts_by_family": {
-      "btts": 43,
+      "btts": 45,
       "competition_head_to_head": 20,
       "competition_host": 26,
       "competition_last_place": 132,
@@ -87,26 +87,30 @@
       "competition_top_n": 306,
       "competition_trophies": 32,
       "competition_winner": 1052,
-      "handicap": 174,
+      "first_half_btts": 1,
+      "first_half_handicap": 2,
+      "first_half_result": 3,
+      "first_half_total": 3,
+      "handicap": 183,
       "match_result_3way": 825,
       "match_winner_2way": 20,
       "player_award": 81,
       "player_season_leader": 247,
       "season_player_total": 53,
       "soccer_special": 189,
-      "total_goals": 259,
+      "total_goals": 271,
       "tournament_advancement": 160,
       "unknown": 3
     },
-    "contracts_discovered": 4294,
+    "contracts_discovered": 4326,
     "contracts_duplicate_seen": 0,
     "contracts_unknown_family": 3,
-    "events_discovered": 11719,
+    "events_discovered": 12489,
     "failures": [],
     "milestones_note": "milestones type=soccer_tournament_multi_leg: 22068 rows, complete=True",
-    "request_count": 617,
+    "request_count": 621,
     "retry_count": 0,
-    "run_id": "disc-20261104T225550Z-cdf366",
+    "run_id": "disc-20261104T231051Z-917563",
     "series_ambiguous_unswept": 131,
     "series_ambiguous_unswept_tickers": [
       "KX1HOMEGAME",
@@ -320,5 +324,5 @@
     "series_total": 15690
   },
   "discovery_complete": true,
-  "snapshots_written": 1181
+  "snapshots_written": 1277
 }
