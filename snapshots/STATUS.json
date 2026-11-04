@@ -1,9 +1,9 @@
 {
-  "batch_id": "cap-20261104T200009Z",
-  "captured_at": "2026-11-04T20:00:09.947669+00:00",
-  "contracts_discovered": 4283,
+  "batch_id": "cap-20261104T202013Z",
+  "captured_at": "2026-11-04T20:20:13.610047+00:00",
+  "contracts_discovered": 4294,
   "counters": {
-    "complete": false,
+    "complete": true,
     "contracts_by_competition_code": {
       "?": 315,
       "APFDDH": 69,
@@ -11,7 +11,7 @@
       "AUTBUNDES": 18,
       "BELGIANPL": 18,
       "BRASILEIRO": 176,
-      "BRASILEIROB": 63,
+      "BRASILEIROB": 74,
       "BUNDESLIGA": 195,
       "BUNDESLIGAW": 18,
       "CANPL": 6,
@@ -76,7 +76,7 @@
       "WCW": 32
     },
     "contracts_by_family": {
-      "btts": 42,
+      "btts": 43,
       "competition_head_to_head": 20,
       "competition_host": 26,
       "competition_last_place": 132,
@@ -88,28 +88,26 @@
       "competition_top_n": 306,
       "competition_trophies": 32,
       "competition_winner": 1052,
-      "handicap": 168,
+      "handicap": 172,
       "match_result_3way": 828,
       "match_winner_2way": 20,
       "player_award": 81,
       "player_season_leader": 247,
       "season_player_total": 53,
       "soccer_special": 189,
-      "total_goals": 252,
+      "total_goals": 258,
       "tournament_advancement": 160,
       "unknown": 3
     },
-    "contracts_discovered": 4283,
+    "contracts_discovered": 4294,
     "contracts_duplicate_seen": 0,
     "contracts_unknown_family": 3,
-    "events_discovered": 11992,
-    "failures": [
-      "KXMLSGAME: events incomplete: [\"HTTP 504 on /events {'limit': 200, 'series_ticker': 'KXMLSGAME', 'with_nested_markets': 'false', 'cursor': 'CgYIqPyQzwYSF0tYTUxTR0FNRS0yNkFQUjE4UEhJRENV'}: {'error': {'code': 'context_deadline_exceeded', 'message': 'context deadline exceeded'}}\"]"
-    ],
+    "events_discovered": 12428,
+    "failures": [],
     "milestones_note": "milestones type=soccer_tournament_multi_leg: 22068 rows, complete=True",
-    "request_count": 626,
-    "retry_count": 6,
-    "run_id": "disc-20261104T195603Z-7b95d0",
+    "request_count": 622,
+    "retry_count": 0,
+    "run_id": "disc-20261104T201737Z-3c7c7d",
     "series_ambiguous_unswept": 131,
     "series_ambiguous_unswept_tickers": [
       "KX1HOMEGAME",
@@ -322,6 +320,6 @@
     "series_swept": 305,
     "series_total": 15688
   },
-  "discovery_complete": false,
-  "snapshots_written": 929
+  "discovery_complete": true,
+  "snapshots_written": 863
 }
