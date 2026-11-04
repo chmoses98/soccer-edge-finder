@@ -31,18 +31,6 @@
       "default": null,
       "title": "Close Class"
     },
-    "clv_fee_aware_points": {
-      "anyOf": [
-        {
-          "type": "number"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "title": "Clv Fee Aware Points"
-    },
     "clv_entry_fee_adjusted_points": {
       "anyOf": [
         {
@@ -55,7 +43,7 @@
       "default": null,
       "title": "Clv Entry Fee Adjusted Points"
     },
-    "entry_fee_per_contract": {
+    "clv_fee_aware_points": {
       "anyOf": [
         {
           "type": "number"
@@ -65,7 +53,7 @@
         }
       ],
       "default": null,
-      "title": "Entry Fee Per Contract"
+      "title": "Clv Fee Aware Points"
     },
     "clv_price_points": {
       "anyOf": [
@@ -90,6 +78,18 @@
       ],
       "default": null,
       "title": "Clv Probability Points"
+    },
+    "entry_fee_per_contract": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Entry Fee Per Contract"
     },
     "event_id": {
       "title": "Event Id",
