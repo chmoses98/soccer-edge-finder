@@ -270,7 +270,9 @@ def clv_fields(
         )
     entry_fee = entry_adj = None
     if fee_type in ("quadratic", "quadratic_with_maker_fees"):
-        entry_fee = fee_per_contract(entry_price, FeeRegime(fee_type, Decimal(fee_multiplier or "1")))
+        entry_fee = fee_per_contract(
+            entry_price, FeeRegime(fee_type, Decimal(fee_multiplier or "1"))
+        )
         if prob is not None:
             entry_adj = prob - float(entry_fee)
     return {
