@@ -1,12 +1,13 @@
 {
-  "as_of": "2026-11-03T19:37:40.374061+00:00",
-  "events": 760,
-  "events_skipped_unmapped": 414,
-  "fixtures_mapped": 346,
+  "as_of": "2026-11-04T01:15:37.087776+00:00",
+  "events": 620,
+  "events_skipped_unmapped": 341,
+  "fixtures_mapped": 279,
   "health": {
     "reasons": [
+      "scoreboard_partial_failures:2/748",
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=13"
+      "weather_stopped:consecutive_failures:skipped=24"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +82,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 54,
-    "events": 55,
+    "captured": 87,
+    "events": 92,
     "failures": [],
-    "published_post": 4,
-    "published_pre_kickoff": 20,
-    "unchanged": 1,
-    "unpublished": 31
+    "published_post": 58,
+    "published_pre_kickoff": 0,
+    "unchanged": 5,
+    "unpublished": 34
   },
   "map_proposals": {
     "bel.1": {
@@ -109,79 +110,23 @@
       "ambiguous": {},
       "proposed": {
         "301": "eng.luton",
-        "307": "eng.plymouth",
         "311": "eng.oxford",
-        "375": "eng.leicester",
         "399": "eng.sheffield_wednesday"
       },
       "unresolved": {
-        "2567": "Burton Albion",
-        "279": "Doncaster Rovers",
-        "285": "Stevenage",
         "304": "Mansfield Town",
-        "309": "Leyton Orient",
-        "3129": "Bromley",
         "335": "Huddersfield Town",
         "338": "Reading",
-        "340": "Notts County",
-        "342": "Peterborough United",
-        "344": "Wycombe Wanderers",
         "346": "Blackpool",
-        "350": "Wigan Athletic",
-        "351": "Cambridge United",
-        "3802": "AFC Wimbledon",
-        "387": "Bradford City",
-        "390": "Milton Keynes Dons",
-        "397": "Barnsley",
-        "400": "Stockport County"
+        "350": "Wigan Athletic"
       }
     },
     "eng.4": {
       "ambiguous": {},
       "proposed": {},
       "unresolved": {
-        "2594": "Crawley Town",
-        "2731": "Accrington Stanley",
-        "280": "Barnet",
-        "302": "Shrewsbury Town",
-        "303": "Rochdale",
-        "308": "Bristol Rovers",
-        "315": "York City",
-        "320": "Cheltenham Town",
-        "324": "Exeter City",
         "332": "Oldham Athletic",
-        "339": "Colchester United",
-        "341": "Swindon Town",
-        "345": "Tranmere Rovers",
-        "348": "Port Vale",
-        "353": "Northampton Town",
-        "386": "Grimsby Town",
-        "389": "Gillingham",
-        "3891": "Fleetwood Town",
-        "396": "Crewe Alexandra",
-        "401": "Walsall",
-        "402": "Rotherham United",
-        "4703": "Salford City"
-      }
-    },
-    "eng.5": {
-      "ambiguous": {},
-      "proposed": {},
-      "unresolved": {
-        "19262": "Harrogate Town",
-        "2595": "Boreham Wood",
-        "282": "Forest Green Rovers",
-        "284": "Yeovil Town",
-        "312": "FC Halifax Town",
-        "313": "Scunthorpe United",
-        "319": "Kidderminster Harriers",
-        "322": "Carlisle United",
-        "3231": "Sutton United",
-        "3887": "Wealdstone",
-        "3897": "Eastleigh",
-        "632": "Aldershot Town",
-        "633": "Altrincham",
-        "642": "Barrow"
+        "353": "Northampton Town"
       }
     },
     "eng.fa": {
@@ -316,12 +261,20 @@
         "8678": "Real Uni\u00f3n Irun"
       }
     },
+    "fifa.friendly": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "14561": "Chinese Taipei",
+        "7349": "Vietnam"
+      }
+    },
     "fra.coupe_de_france": {
       "ambiguous": {},
       "proposed": {},
       "unresolved": {
-        "134137": "AS ETOILE MATOURY",
-        "134139": "OLYMPIQUE DE CAYENNE",
+        "134137": "AS Etoile Matoury",
+        "134139": "Olympique De Cayenne",
         "134140": "Sporting Club Baie-Mahault",
         "134141": "Siroco Les Abymes"
       }
@@ -384,9 +337,12 @@
     }
   },
   "map_version": "4",
-  "results_appended": 1,
-  "scoreboard_failures": [],
-  "scoreboard_failures_n": 0,
+  "results_appended": 78,
+  "scoreboard_failures": [
+    "eng.3 2026-11-05: fetch failed for https://site.api.espn.com/apis/site/v2/sports/soccer/eng.3/scoreboard?dates=2026110",
+    "swe.1 2026-11-06: fetch failed for https://site.api.espn.com/apis/site/v2/sports/soccer/swe.1/scoreboard?dates=2026110"
+  ],
+  "scoreboard_failures_n": 2,
   "scoreboard_queries": 748,
   "unmapped_leagues": [
     "afc.champions",
@@ -430,11 +386,12 @@
     "133835": "CD Pamplona",
     "133837": "CD Tarancon",
     "133846": "Tavernes de la Valldigna",
-    "134137": "AS ETOILE MATOURY",
-    "134139": "OLYMPIQUE DE CAYENNE",
+    "134137": "AS Etoile Matoury",
+    "134139": "Olympique De Cayenne",
     "134140": "Sporting Club Baie-Mahault",
     "134141": "Siroco Les Abymes",
     "13884": "AFC Fylde",
+    "14561": "Chinese Taipei",
     "17534": "Legan\u00e9s",
     "17573": "Trival Valderas",
     "19246": "Riga FC",
@@ -537,6 +494,7 @@
     "649": "Worcester City",
     "6827": "Alcoyano",
     "7206": "UD Logro\u00f1\u00e9s",
+    "7349": "Vietnam",
     "7853": "AGF",
     "8089": "CSU Craiova",
     "8169": "KuPS Kuopio",
@@ -547,17 +505,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 12,
-    "events": 29,
+    "captured": 11,
+    "events": 38,
     "failures": [
-      "401841298: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-23.9608&longitude=-46.3336&hourly=",
-      "401841300: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Sao%20Paulo&count=5&language=en",
-      "401841303: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Belo%20Horizonte&count=5&langua"
+      "401878967: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Kortrijk&count=5&language=en&fo",
+      "401878951: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Liege&count=5&language=en&forma",
+      "401841304: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-27.0964&longitude=-52.6183&hourly="
     ],
     "forecast_miss": 0,
-    "geocode_miss": 1,
+    "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 13,
+    "skipped": 24,
     "stopped": "consecutive_failures"
   }
 }
