@@ -13,6 +13,9 @@ on:
       start:
         description: YYYY-MM-DD
         default: "2024-07-01"
+      box_summary_budget:
+        description: total ESPN summary requests for historical box-score repair (0 = score-only, default)
+        default: "0"
 
 concurrency:
   group: espn-backfill
@@ -43,7 +46,7 @@ jobs:
         timeout-minutes: 110
         run: |
           set -o pipefail
-          python -m soccer_edge.cli espn-backfill --leagues "${{ inputs.leagues }}" --start "${{ inputs.start }}" --out-dir work/espn | tee work/backfill.log
+          python -m soccer_edge.cli espn-backfill --leagues "${{ inputs.leagues }}" --start "${{ inputs.start }}" --box-summary-budget "${{ inputs.box_summary_budget }}" --out-dir work/espn | tee work/backfill.log
       - name: Publish results to data-archive
         if: always()
         env:
