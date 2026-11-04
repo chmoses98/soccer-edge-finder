@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261104T131220Z-f6475a` · generated 2026-11-04T13:12:20.724795Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261104T132751Z-211679` · generated 2026-11-04T13:27:51.482321Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-04T13:09:43.168966Z (CURRENT at publish; CURRENT until 2026-11-04T13:29:43.168966Z, STALE after 2026-11-04T13:39:43.168966Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-04T13:25:13.639146Z (CURRENT at publish; CURRENT until 2026-11-04T13:45:13.639146Z, STALE after 2026-11-04T13:55:13.639146Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-04T10:55:22.993399Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.08s
 
@@ -34,13 +34,14 @@ model board generated 2026-11-04T10:55:22.993399Z · simulations this update: 0 
 | Palmeiras vs Remo | Result: draw | yes | 0.1300 | 0.215 [0.134, 0.294] | +0.077 | +0.024 | 0.15 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | away wins by more than 1.5 | yes | 0.0600 | 0.141 [0.066, 0.225] | +0.077 | +0.022 | 0.08 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 1.5 | no | 0.1800 | 0.304 [0.170, 0.445] | +0.114 | +0.021 | 0.2 | - |  | RESEARCH_CANDIDATE |
-| Flamengo vs Grêmio | Result: home | no | 0.1450 | 0.265 [0.134, 0.402] | +0.111 | +0.021 | 0.16 | - | * | RESEARCH_CANDIDATE |
 | Flamengo vs Grêmio | home wins by more than 1.5 | no | 0.3300 | 0.484 [0.302, 0.662] | +0.138 | +0.019 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Flamengo vs Grêmio | home wins by more than 2.5 | no | 0.5500 | 0.691 [0.507, 0.847] | +0.123 | +0.018 | 0.56 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Result: home | no | 0.1950 | 0.314 [0.180, 0.457] | +0.108 | +0.015 | 0.2 | - |  | RESEARCH_CANDIDATE |
+| Flamengo vs Grêmio | Result: home | no | 0.1500 | 0.265 [0.134, 0.402] | +0.106 | +0.015 | 0.16 | - | * | RESEARCH_CANDIDATE |
 | Flamengo vs Grêmio | Total goals over 2.5 | no | 0.2700 | 0.414 [0.241, 0.584] | +0.130 | +0.014 | 0.28 | - | * | RESEARCH_CANDIDATE |
 | Flamengo vs Grêmio | Result: draw | yes | 0.1000 | 0.171 [0.097, 0.248] | +0.065 | +0.014 | 0.11 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Result: draw | yes | 0.2250 | 0.284 [0.232, 0.336] | +0.047 | +0.013 | 0.23 | - |  | RESEARCH_CANDIDATE |
+| Flamengo vs Grêmio | Total goals over 3.5 | no | 0.4800 | 0.625 [0.438, 0.790] | +0.127 | +0.012 | 0.49 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | home wins by more than 2.5 | no | 0.6600 | 0.774 [0.631, 0.896] | +0.098 | +0.012 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Total goals over 2.5 | no | 0.4500 | 0.572 [0.415, 0.719] | +0.105 | +0.009 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | home wins by more than 1.5 | no | 0.4300 | 0.567 [0.401, 0.729] | +0.120 | +0.008 | 0.43 | - |  | RESEARCH_CANDIDATE |
@@ -49,7 +50,6 @@ model board generated 2026-11-04T10:55:22.993399Z · simulations this update: 0 
 | Botafogo vs Atlético Mineiro | Total goals over 3.5 | no | 0.6800 | 0.772 [0.639, 0.884] | +0.076 | +0.003 | 0.68 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Total goals over 4.5 | no | 0.8400 | 0.894 [0.809, 0.960] | +0.045 | +0.003 | 0.84 | - |  | RESEARCH_CANDIDATE |
 | Flamengo vs Grêmio | Total goals over 1.5 | no | 0.1100 | 0.198 [0.091, 0.316] | +0.082 | +0.002 | 0.11 | - |  | RESEARCH_CANDIDATE |
-| Flamengo vs Grêmio | Total goals over 3.5 | no | 0.4900 | 0.625 [0.438, 0.790] | +0.117 | +0.002 | 0.49 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 5.5 | no | 0.9200 | 0.951 [0.897, 0.989] | +0.026 | +0.002 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | away wins by more than 2.5 | yes | 0.0200 | 0.048 [0.016, 0.088] | +0.026 | +0.001 | 0.02 | - |  | RESEARCH_CANDIDATE |
 
