@@ -1,9 +1,9 @@
 {
-  "batch_id": "cap-20261104T194337Z",
-  "captured_at": "2026-11-04T19:43:37.846771+00:00",
+  "batch_id": "cap-20261104T200009Z",
+  "captured_at": "2026-11-04T20:00:09.947669+00:00",
   "contracts_discovered": 4283,
   "counters": {
-    "complete": true,
+    "complete": false,
     "contracts_by_competition_code": {
       "?": 315,
       "APFDDH": 69,
@@ -102,12 +102,14 @@
     "contracts_discovered": 4283,
     "contracts_duplicate_seen": 0,
     "contracts_unknown_family": 3,
-    "events_discovered": 12425,
-    "failures": [],
+    "events_discovered": 11992,
+    "failures": [
+      "KXMLSGAME: events incomplete: [\"HTTP 504 on /events {'limit': 200, 'series_ticker': 'KXMLSGAME', 'with_nested_markets': 'false', 'cursor': 'CgYIqPyQzwYSF0tYTUxTR0FNRS0yNkFQUjE4UEhJRENV'}: {'error': {'code': 'context_deadline_exceeded', 'message': 'context deadline exceeded'}}\"]"
+    ],
     "milestones_note": "milestones type=soccer_tournament_multi_leg: 22068 rows, complete=True",
-    "request_count": 622,
-    "retry_count": 0,
-    "run_id": "disc-20261104T194101Z-5f4518",
+    "request_count": 626,
+    "retry_count": 6,
+    "run_id": "disc-20261104T195603Z-7b95d0",
     "series_ambiguous_unswept": 131,
     "series_ambiguous_unswept_tickers": [
       "KX1HOMEGAME",
@@ -320,6 +322,6 @@
     "series_swept": 305,
     "series_total": 15688
   },
-  "discovery_complete": true,
-  "snapshots_written": 731
+  "discovery_complete": false,
+  "snapshots_written": 929
 }
