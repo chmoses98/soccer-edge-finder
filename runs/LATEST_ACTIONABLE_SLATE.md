@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261104T112544Z-bec59f` · generated 2026-11-04T11:25:44.870013Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261104T114044Z-251ac0` · generated 2026-11-04T11:40:44.852793Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-04T11:23:07.982080Z (CURRENT at publish; CURRENT until 2026-11-04T11:43:07.982080Z, STALE after 2026-11-04T11:53:07.982080Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-04T11:38:08.008407Z (CURRENT at publish; CURRENT until 2026-11-04T11:58:08.008407Z, STALE after 2026-11-04T12:08:08.008407Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-04T10:55:22.993399Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.14s
 
@@ -24,9 +24,9 @@ model board generated 2026-11-04T10:55:22.993399Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Botafogo vs Atlético Mineiro | Result: home | no | 0.4150 | 0.614 [0.456, 0.749] | +0.182 | +0.083 | 0.49 | - | * | RESEARCH_CANDIDATE |
+| Botafogo vs Atlético Mineiro | Result: home | no | 0.4050 | 0.614 [0.456, 0.749] | +0.192 | +0.093 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | home wins by more than 1.5 | no | 0.6700 | 0.820 [0.705, 0.913] | +0.135 | +0.065 | 0.73 | - | * | RESEARCH_CANDIDATE |
-| Botafogo vs Atlético Mineiro | Result: away | yes | 0.1850 | 0.330 [0.201, 0.462] | +0.135 | +0.048 | 0.23 | - |  | RESEARCH_CANDIDATE |
+| Botafogo vs Atlético Mineiro | Result: away | yes | 0.1800 | 0.330 [0.201, 0.462] | +0.140 | +0.054 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 3.5 | no | 0.6100 | 0.758 [0.608, 0.885] | +0.131 | +0.046 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 2.5 | no | 0.3900 | 0.557 [0.385, 0.720] | +0.151 | +0.042 | 0.43 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | home wins by more than 2.5 | no | 0.8500 | 0.932 [0.867, 0.979] | +0.073 | +0.041 | 0.89 | - |  | RESEARCH_CANDIDATE |
@@ -34,14 +34,14 @@ model board generated 2026-11-04T10:55:22.993399Z · simulations this update: 0 
 | Palmeiras vs Remo | Total goals over 4.5 | no | 0.8000 | 0.885 [0.785, 0.961] | +0.074 | +0.023 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 1.5 | no | 0.1800 | 0.304 [0.170, 0.445] | +0.114 | +0.021 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Flamengo vs Grêmio | Result: home | no | 0.1450 | 0.265 [0.134, 0.402] | +0.111 | +0.021 | 0.16 | - | * | RESEARCH_CANDIDATE |
+| Flamengo vs Grêmio | home wins by more than 2.5 | no | 0.5500 | 0.691 [0.507, 0.847] | +0.123 | +0.018 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Result: home | no | 0.1950 | 0.314 [0.180, 0.457] | +0.108 | +0.015 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Flamengo vs Grêmio | Result: draw | yes | 0.1000 | 0.171 [0.097, 0.248] | +0.065 | +0.014 | 0.11 | - |  | RESEARCH_CANDIDATE |
+| Botafogo vs Atlético Mineiro | Result: draw | yes | 0.2250 | 0.284 [0.232, 0.336] | +0.047 | +0.013 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | home wins by more than 2.5 | no | 0.6600 | 0.774 [0.631, 0.896] | +0.098 | +0.012 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | away wins by more than 1.5 | yes | 0.0700 | 0.141 [0.066, 0.225] | +0.067 | +0.011 | 0.08 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Total goals over 2.5 | no | 0.4500 | 0.572 [0.415, 0.719] | +0.105 | +0.009 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | home wins by more than 1.5 | no | 0.4300 | 0.567 [0.401, 0.729] | +0.120 | +0.008 | 0.43 | - |  | RESEARCH_CANDIDATE |
-| Flamengo vs Grêmio | home wins by more than 2.5 | no | 0.5600 | 0.691 [0.507, 0.847] | +0.113 | +0.008 | 0.56 | - | * | RESEARCH_CANDIDATE |
-| Botafogo vs Atlético Mineiro | Result: draw | yes | 0.2300 | 0.284 [0.232, 0.336] | +0.041 | +0.007 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Flamengo vs Grêmio | Total goals over 2.5 | no | 0.2800 | 0.414 [0.241, 0.584] | +0.120 | +0.004 | 0.28 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Total goals over 0.5 | no | 0.0600 | 0.105 [0.052, 0.167] | +0.041 | +0.004 | 0.06 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Total goals over 3.5 | no | 0.6800 | 0.772 [0.639, 0.884] | +0.076 | +0.003 | 0.68 | - |  | RESEARCH_CANDIDATE |
