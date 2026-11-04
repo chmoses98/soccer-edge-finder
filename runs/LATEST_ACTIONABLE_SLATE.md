@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261104T205442Z-3e1933` · generated 2026-11-04T20:54:42.961608Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261104T210944Z-7988ae` · generated 2026-11-04T21:09:44.058722Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-04T20:52:05.817399Z (CURRENT at publish; CURRENT until 2026-11-04T21:12:05.817399Z, STALE after 2026-11-04T21:22:05.817399Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-04T21:07:06.860138Z (CURRENT at publish; CURRENT until 2026-11-04T21:27:06.860138Z, STALE after 2026-11-04T21:37:06.860138Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-04T20:14:43.353014Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.18s
 
@@ -12,10 +12,10 @@ model board generated 2026-11-04T20:14:43.353014Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-04T22:30:00Z | Athletico Paranaense vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-04T22:30:00Z | Flamengo vs Grêmio (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-05T00:30:00Z | Botafogo vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-05T00:30:00Z | São Paulo vs Corinthians (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-04T22:30:00Z | Athletico Paranaense vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-04T22:30:00Z | Flamengo vs Grêmio (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-05T00:30:00Z | Botafogo vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-05T00:30:00Z | São Paulo vs Corinthians (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-05T18:00:00Z | Aldosivi vs River Plate (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-05T22:15:00Z | Gimnasia La Plata vs Belgrano (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-05T22:30:00Z | Palmeiras vs Remo (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -51,10 +51,10 @@ model board generated 2026-11-04T20:14:43.353014Z · simulations this update: 0 
 | Flamengo vs Grêmio | Total goals over 4.5 | no | 0.6700 | 0.787 [0.636, 0.912] | +0.101 | +0.016 | 0.68 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Result: home | no | 0.2000 | 0.311 [0.177, 0.445] | +0.100 | +0.013 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Result: draw | yes | 0.2250 | 0.282 [0.232, 0.334] | +0.045 | +0.012 | 0.23 | - |  | RESEARCH_CANDIDATE |
+| Athletico Paranaense vs Vasco da Gama | Result: away | no | 0.7100 | 0.802 [0.691, 0.902] | +0.077 | +0.012 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | Flamengo vs Grêmio | Total goals over 5.5 | no | 0.8200 | 0.892 [0.791, 0.968] | +0.062 | +0.010 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | Athletico Paranaense vs Vasco da Gama | home wins by more than 2.5 | yes | 0.0900 | 0.188 [0.076, 0.324] | +0.092 | +0.008 | 0.09 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Total goals over 3.5 | no | 0.6700 | 0.768 [0.636, 0.881] | +0.082 | +0.008 | 0.67 | - | * | RESEARCH_CANDIDATE |
-| Athletico Paranaense vs Vasco da Gama | Result: away | no | 0.7150 | 0.802 [0.691, 0.902] | +0.073 | +0.007 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | btts | no | 0.5600 | 0.652 [0.542, 0.756] | +0.075 | +0.007 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 0.5 | no | 0.0500 | 0.100 [0.045, 0.162] | +0.047 | +0.006 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | home wins by more than 2.5 | no | 0.6700 | 0.772 [0.616, 0.896] | +0.087 | +0.006 | 0.67 | - | * | RESEARCH_CANDIDATE |
