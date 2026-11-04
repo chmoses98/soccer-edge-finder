@@ -814,3 +814,246 @@ These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW
 
 ## Events
 - Internacional vs Coritiba (Brasileirão Série A) 2026-11-04T00:30:00Z · markets 14/14 evaluated · lineups unknown · xG 1.71-0.91 · 1X2 55%/25%/20%
+
+{
+  "outputs": {
+    "json": "work/runs/_pending/run_output.v1.json",
+    "md": "work/runs/_pending/RUN_SOCCER.md",
+    "contracts": "work/runs/_pending/priced_contracts.json",
+    "coverage": "work/runs/_pending/coverage.json",
+    "diagnostics": "work/runs/_pending/coverage_diagnostics.json"
+  },
+  "simulated": [
+    "fx:bra.serie_a:2026:bra.internacional:bra.coritiba"
+  ],
+  "repriced": [],
+  "archived_records": 14
+}
+[dispatch] holding 9.5 min (next window opens in 27.9 min)
+[dispatch] holding 1.5 min (next window opens in 18.4 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261103T234242Z",
+  "complete": true,
+  "discovered": 4186,
+  "written": 449,
+  "path": "work/snapshots/2026-11-03/cap-20261103T234242Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261103T234243Z-e5dc87", "mode": "reprice_only", "fixtures": 7, "contract_sides": 294, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.061, "price_changes_vs_previous": 9}
+[dispatch] holding 11.2 min (next window opens in 13.1 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261103T235743Z",
+  "complete": true,
+  "discovered": 4186,
+  "written": 456,
+  "path": "work/snapshots/2026-11-03/cap-20261103T235743Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261103T235743Z-c83afd", "mode": "reprice_only", "fixtures": 7, "contract_sides": 294, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.062, "price_changes_vs_previous": 7}
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261104T000157Z",
+  "complete": true,
+  "discovered": 4185,
+  "written": 299,
+  "path": "work/snapshots/2026-11-04/cap-20261104T000157Z.jsonl"
+}
+{
+  "reference_probabilities": 0,
+  "observed_at": "2026-11-03 19:04:10.912651+00:00",
+  "groups": 60,
+  "unmapped_fixture_groups": 60,
+  "incomplete_groups": 0,
+  "snapshots": 0,
+  "provider_notes": [
+    "17 rows, 5 skipped (unmapped division/team)",
+    "skipped_by_division={'B1': 1, 'E2': 3, 'E3': 1}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-11-04T00:01:59.116695Z", "batch_id": "kd-20261103T235921Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-11-04T00:01:59.133017+00:00",
+ "leagues": [
+  "bra.1"
+ ],
+ "events": 4,
+ "fixtures_mapped": 4,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 1,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 4,
+  "captured": 4,
+  "unchanged": 0,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 4,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 4,
+  "captured": 4,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261104T000206Z-307b6a", "mode": "reprice_only", "fixtures": 7, "contract_sides": 294, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.055, "price_changes_vs_previous": 1}
+[dispatch] holding 5.3 min (next window opens in 9.7 min)
+[dispatch] holding 5.7 min (next window opens in 4.4 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261104T001658Z",
+  "complete": true,
+  "discovered": 4195,
+  "written": 830,
+  "path": "work/snapshots/2026-11-04/cap-20261104T001658Z.jsonl"
+}
+{
+  "reference_probabilities": 0,
+  "observed_at": "2026-11-03 19:04:10.912651+00:00",
+  "groups": 60,
+  "unmapped_fixture_groups": 60,
+  "incomplete_groups": 0,
+  "snapshots": 0,
+  "provider_notes": [
+    "17 rows, 5 skipped (unmapped division/team)",
+    "skipped_by_division={'B1': 1, 'E2': 3, 'E3': 1}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-11-04T00:17:00.680329Z", "batch_id": "kd-20261104T001423Z", "credits_charged": 3, "paid_calls": 1, "snapshots": 7, "no_sport_key": [], "eligible_fixtures": 1, "per_sport": {"soccer_brazil_campeonato": {"fixtures": 1, "join": {"events": 2, "joined": 1, "ambiguous": 0, "unresolved_names": [], "unjoined_fixtures": []}, "status": "OK", "credits": 3, "snapshots": 7, "incomplete_markets": 0, "close_fixtures": 1, "entry_fixtures": 0}}, "remaining_after": 19898, "status": "OK"}
+{
+ "as_of": "2026-11-04T00:17:03.505914+00:00",
+ "leagues": [
+  "bra.1"
+ ],
+ "events": 4,
+ "fixtures_mapped": 4,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 1,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 4,
+  "captured": 0,
+  "unchanged": 4,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 4,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 4,
+  "captured": 4,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261104T001704Z-2beb36", "mode": "reprice_only", "fixtures": 7, "contract_sides": 294, "simulations_run": 0, "odds_api_calls": 1, "reprice_runtime_s": 0.058, "price_changes_vs_previous": 14}
+[dispatch] holding 6.7 min (next window opens in 4.7 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261104T002735Z",
+  "complete": true,
+  "discovered": 4195,
+  "written": 635,
+  "path": "work/snapshots/2026-11-04/cap-20261104T002735Z.jsonl"
+}
+{
+  "reference_probabilities": 0,
+  "observed_at": "2026-11-03 19:04:10.912651+00:00",
+  "groups": 60,
+  "unmapped_fixture_groups": 60,
+  "incomplete_groups": 0,
+  "snapshots": 0,
+  "provider_notes": [
+    "17 rows, 5 skipped (unmapped division/team)",
+    "skipped_by_division={'B1': 1, 'E2': 3, 'E3': 1}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-11-04T00:27:37.337304Z", "batch_id": "kd-20261104T002500Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-11-04T00:27:37.355201+00:00",
+ "leagues": [
+  "bra.1"
+ ],
+ "events": 4,
+ "fixtures_mapped": 4,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 1,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 4,
+  "captured": 0,
+  "unchanged": 4,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 4,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 4,
+  "captured": 4,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261104T002738Z-28cfab", "mode": "reprice_only", "fixtures": 7, "contract_sides": 294, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.058, "price_changes_vs_previous": 9}
+{
+ "batches": 9,
+ "horizons_delivered": 10,
+ "missed_states": {},
+ "paid_calls": 4,
+ "credits_spent": 12,
+ "end_reason": "link_time_limit",
+ "chain_continue": true,
+ "delivered_total": 3023,
+ "missed_total": 439,
+ "delivery_rate_total": 0.8731946851530907
+}
