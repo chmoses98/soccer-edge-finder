@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261104T210944Z-7988ae` · generated 2026-11-04T21:09:44.058722Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261104T212443Z-35e1bb` · generated 2026-11-04T21:24:43.987775Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-04T21:07:06.860138Z (CURRENT at publish; CURRENT until 2026-11-04T21:27:06.860138Z, STALE after 2026-11-04T21:37:06.860138Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-04T21:22:06.885758Z (CURRENT at publish; CURRENT until 2026-11-04T21:42:06.885758Z, STALE after 2026-11-04T21:52:06.885758Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-04T20:14:43.353014Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.18s
 
@@ -30,11 +30,11 @@ model board generated 2026-11-04T20:14:43.353014Z · simulations this update: 0 
 |---|---|---|---|---|---|---|---|---|---|---|
 | Botafogo vs Atlético Mineiro | Result: home | no | 0.3800 | 0.612 [0.462, 0.752] | +0.215 | +0.125 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | home wins by more than 1.5 | no | 0.6400 | 0.818 [0.704, 0.915] | +0.162 | +0.100 | 0.74 | - | * | RESEARCH_CANDIDATE |
-| Botafogo vs Atlético Mineiro | Result: away | yes | 0.1650 | 0.329 [0.201, 0.466] | +0.155 | +0.067 | 0.22 | - |  | RESEARCH_CANDIDATE |
+| Botafogo vs Atlético Mineiro | Result: away | yes | 0.1600 | 0.329 [0.201, 0.466] | +0.160 | +0.072 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | home wins by more than 2.5 | no | 0.8300 | 0.931 [0.869, 0.979] | +0.091 | +0.063 | 0.89 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 3.5 | no | 0.6100 | 0.758 [0.612, 0.881] | +0.132 | +0.049 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 2.5 | no | 0.3900 | 0.558 [0.389, 0.714] | +0.152 | +0.046 | 0.43 | - |  | RESEARCH_CANDIDATE |
-| Venezia vs Udinese | Result: away | yes | 0.3000 | 0.517 [0.295, 0.742] | +0.202 | +0.046 | 0.34 | - | * | RESEARCH_CANDIDATE |
+| Venezia vs Udinese | Result: away | yes | 0.3100 | 0.517 [0.295, 0.742] | +0.192 | +0.035 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Flamengo vs Grêmio | home wins by more than 1.5 | no | 0.3200 | 0.481 [0.312, 0.647] | +0.146 | +0.033 | 0.35 | - | * | RESEARCH_CANDIDATE |
 | Venezia vs Udinese | Result: home | no | 0.5700 | 0.739 [0.544, 0.909] | +0.152 | +0.033 | 0.6 | - |  | RESEARCH_CANDIDATE |
 | Athletico Paranaense vs Vasco da Gama | home wins by more than 1.5 | yes | 0.2100 | 0.360 [0.203, 0.528] | +0.138 | +0.030 | 0.23 | - | * | RESEARCH_CANDIDATE |
