@@ -1,13 +1,13 @@
 {
   "by_horizon": {
     "120": {
-      "achieved_minutes_median": 122.51,
+      "achieved_minutes_median": 122.52,
       "achieved_minutes_p10": 118.28,
       "achieved_minutes_p90": 126.42,
-      "delivered": 649,
-      "delivery_rate": 0.917963224893918,
+      "delivered": 651,
+      "delivery_rate": 0.918194640338505,
       "lateness_minutes_max": 62.51,
-      "lateness_minutes_median": -2.51,
+      "lateness_minutes_median": -2.52,
       "missed": 58
     },
     "15": {
@@ -51,90 +51,12 @@
       "missed": 89
     }
   },
-  "delivered_total": 3023,
-  "delivery_rate_total": 0.8731946851530907,
-  "fixtures_tracked": 707,
-  "generated_at": "2026-11-04T12:51:32Z",
-  "last_tick": {
-    "batches": 0,
-    "summary": [
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "model_refresh:ok:fixtures=2:sim=1:board=1:why=entered_lookahead_unmodelled",
-          "slate_reprice:ok:via_model_refresh"
-        ],
-        "batch_id": "ks-20261104T105236Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=294:sim=0"
-        ],
-        "batch_id": "ks-20261104T110736Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=294:sim=0"
-        ],
-        "batch_id": "ks-20261104T112307Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=294:sim=0"
-        ],
-        "batch_id": "ks-20261104T113807Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=294:sim=0"
-        ],
-        "batch_id": "ks-20261104T115308Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=294:sim=0"
-        ],
-        "batch_id": "ks-20261104T120808Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=294:sim=0"
-        ],
-        "batch_id": "ks-20261104T122310Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=294:sim=0"
-        ],
-        "batch_id": "ks-20261104T123810Z",
-        "due": [],
-        "slate_refresh": true
-      }
-    ]
-  },
+  "delivered_total": 3025,
+  "delivery_rate_total": 0.8732678983833718,
+  "fixtures_tracked": 709,
+  "generated_at": "2026-11-04T20:24:47Z",
   "missed_total": 439,
-  "n_pending_fixtures": 23,
+  "n_pending_fixtures": 42,
   "pending_fixtures": [
     {
       "competition_id": "bra.serie_a",
@@ -175,22 +97,22 @@
       "competition_id": "arg.primera",
       "fixture_id": "fx:arg.primera:2026:arg.gimnasia_la_plata:arg.belgrano",
       "kickoff_utc": "2026-11-05T22:15:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 3,
+      "source": "run_output"
     },
     {
       "competition_id": "bra.serie_a",
       "fixture_id": "fx:bra.serie_a:2026:bra.palmeiras:bra.remo",
       "kickoff_utc": "2026-11-05T22:30:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 29,
+      "source": "run_output"
     },
     {
       "competition_id": "bra.serie_a",
       "fixture_id": "fx:bra.serie_a:2026:bra.cruzeiro:bra.bahia",
       "kickoff_utc": "2026-11-06T00:30:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 29,
+      "source": "run_output"
     },
     {
       "competition_id": "arg.primera",
@@ -294,6 +216,139 @@
       "competition_id": "mex.liga_mx",
       "fixture_id": "fx:mex.liga_mx:2026:mex.atlante:mex.santos_laguna",
       "kickoff_utc": "2026-11-07T03:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "eng.premier_league",
+      "fixture_id": "fx:eng.premier_league:2026-27:eng.leeds:eng.tottenham",
+      "kickoff_utc": "2026-11-07T12:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "esp.la_liga",
+      "fixture_id": "fx:esp.la_liga:2026-27:esp.malaga:esp.racing_santander",
+      "kickoff_utc": "2026-11-07T13:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "ita.serie_a",
+      "fixture_id": "fx:ita.serie_a:2026-27:ita.cagliari:ita.frosinone",
+      "kickoff_utc": "2026-11-07T14:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "ita.serie_a",
+      "fixture_id": "fx:ita.serie_a:2026-27:ita.torino:ita.lecce",
+      "kickoff_utc": "2026-11-07T14:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "ger.bundesliga",
+      "fixture_id": "fx:ger.bundesliga:2026-27:ger.dortmund:ger.elversberg",
+      "kickoff_utc": "2026-11-07T14:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "ger.bundesliga",
+      "fixture_id": "fx:ger.bundesliga:2026-27:ger.mainz:ger.bayern",
+      "kickoff_utc": "2026-11-07T14:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "ger.bundesliga",
+      "fixture_id": "fx:ger.bundesliga:2026-27:ger.leipzig:ger.augsburg",
+      "kickoff_utc": "2026-11-07T14:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "ger.bundesliga",
+      "fixture_id": "fx:ger.bundesliga:2026-27:ger.paderborn:ger.frankfurt",
+      "kickoff_utc": "2026-11-07T14:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "eng.premier_league",
+      "fixture_id": "fx:eng.premier_league:2026-27:eng.arsenal:eng.hull",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "eng.premier_league",
+      "fixture_id": "fx:eng.premier_league:2026-27:eng.fulham:eng.newcastle",
+      "kickoff_utc": "2026-11-07T15:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "esp.la_liga",
+      "fixture_id": "fx:esp.la_liga:2026-27:esp.espanyol:esp.deportivo",
+      "kickoff_utc": "2026-11-07T15:15:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "ita.serie_a",
+      "fixture_id": "fx:ita.serie_a:2026-27:ita.parma:ita.bologna",
+      "kickoff_utc": "2026-11-07T17:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "eng.premier_league",
+      "fixture_id": "fx:eng.premier_league:2026-27:eng.nottm_forest:eng.man_city",
+      "kickoff_utc": "2026-11-07T17:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "esp.la_liga",
+      "fixture_id": "fx:esp.la_liga:2026-27:esp.osasuna:esp.athletic_bilbao",
+      "kickoff_utc": "2026-11-07T17:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "ger.bundesliga",
+      "fixture_id": "fx:ger.bundesliga:2026-27:ger.stuttgart:ger.werder_bremen",
+      "kickoff_utc": "2026-11-07T17:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "arg.primera",
+      "fixture_id": "fx:arg.primera:2026:arg.gimnasia_mendoza:arg.independiente_rivadavia",
+      "kickoff_utc": "2026-11-07T18:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "arg.primera",
+      "fixture_id": "fx:arg.primera:2026:arg.talleres:arg.estudiantes",
+      "kickoff_utc": "2026-11-07T18:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "fra.ligue_1",
+      "fixture_id": "fx:fra.ligue_1:2026-27:fra.auxerre:fra.paris_fc",
+      "kickoff_utc": "2026-11-07T18:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "ita.serie_a",
+      "fixture_id": "fx:ita.serie_a:2026-27:ita.roma:ita.sassuolo",
+      "kickoff_utc": "2026-11-07T19:45:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }
