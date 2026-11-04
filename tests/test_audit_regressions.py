@@ -63,6 +63,8 @@ def test_clv_ignores_empty_book_sentinels():
         "clv_probability_points": None,
         "clv_price_points": None,
         "clv_fee_aware_points": None,
+        "clv_entry_fee_adjusted_points": None,
+        "entry_fee_per_contract": None,
     }
     # no asks (yes_ask 1): YES side has no executable close and no mid
     yes = clv_fields(

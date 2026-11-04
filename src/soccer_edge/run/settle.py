@@ -231,11 +231,19 @@ def clv_fields(
     probability CLV: (close mid - entry price) for YES; (entry - close mid) for NO.
     price CLV: executable close on the same side vs entry (YES: close_yes_ask - entry; NO: close_no_ask - entry
     where close_no_ask = 1 - close_yes_bid), i.e. what it would cost to enter at close.
-    fee-aware CLV: price CLV minus the change in per-contract fee between entry and close prices."""
+    fee-aware CLV (LEGACY, kept unchanged because the promotion gate ``kalshi:fee_aware_clv_negative`` reads it):
+    price CLV minus the CHANGE in per-contract fee between entry and close prices. That is a fee DELTA, not the
+    entry fee: a flat 50c market scores 0 instead of minus the entry fee, and a close nearer 50c than the entry
+    is credited a smaller close fee. A position held to settlement pays no closing fee.
+    entry-fee-adjusted quoted-execution CLV (``clv_entry_fee_adjusted_points``): clv_probability_points (close mid
+    minus entry ask, pre-fee) minus the ENTRY fee per contract, charged exactly once, no closing fee. None when the
+    fee regime is unknown (never zero). Repointing any gate to this field is a separate authority decision."""
     empty = {
         "clv_probability_points": None,
         "clv_price_points": None,
         "clv_fee_aware_points": None,
+        "clv_entry_fee_adjusted_points": None,
+        "entry_fee_per_contract": None,
     }
     if entry_price is None or close_yes_bid is None or close_yes_ask is None:
         return empty
@@ -260,10 +268,19 @@ def clv_fields(
             (close_exec + fee_per_contract(close_exec, regime))
             - (entry_price + fee_per_contract(entry_price, regime))
         )
+    entry_fee = entry_adj = None
+    if fee_type in ("quadratic", "quadratic_with_maker_fees"):
+        entry_fee = fee_per_contract(
+            entry_price, FeeRegime(fee_type, Decimal(fee_multiplier or "1"))
+        )
+        if prob is not None:
+            entry_adj = prob - float(entry_fee)
     return {
         "clv_probability_points": round(prob, 6) if prob is not None else None,
         "clv_price_points": round(price_clv, 6),
         "clv_fee_aware_points": round(fee_aware, 6),
+        "clv_entry_fee_adjusted_points": round(entry_adj, 6) if entry_adj is not None else None,
+        "entry_fee_per_contract": round(float(entry_fee), 6) if entry_fee is not None else None,
     }
 
 
