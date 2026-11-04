@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261104T203942Z-b20f71` · generated 2026-11-04T20:39:42.906837Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261104T205028Z-3578f5` · generated 2026-11-04T20:50:28.653743Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-04T20:37:05.820684Z (CURRENT at publish; CURRENT until 2026-11-04T20:57:05.820684Z, STALE after 2026-11-04T21:07:05.820684Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-04T20:47:37.230097Z (CURRENT at publish; CURRENT until 2026-11-04T21:07:37.230097Z, STALE after 2026-11-04T21:17:37.230097Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-04T20:14:43.353014Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.17s
+model board generated 2026-11-04T20:14:43.353014Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.20s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -24,7 +24,7 @@ model board generated 2026-11-04T20:14:43.353014Z · simulations this update: 0 
 | 2026-11-06T19:45:00Z | Toulouse vs Strasbourg (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 59 | 0 |
 | 2026-11-06T19:45:00Z | Venezia vs Udinese (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 71 | 0 |
 
-## Candidates on CURRENT prices (38; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (39; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -62,6 +62,7 @@ model board generated 2026-11-04T20:14:43.353014Z · simulations this update: 0 
 | São Paulo vs Corinthians | Result: away | no | 0.6750 | 0.762 [0.643, 0.866] | +0.072 | +0.005 | 0.68 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | home wins by more than 1.5 | no | 0.4400 | 0.564 [0.385, 0.720] | +0.107 | +0.005 | 0.44 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Total goals over 2.5 | no | 0.4500 | 0.567 [0.412, 0.713] | +0.099 | +0.004 | 0.45 | - |  | RESEARCH_CANDIDATE |
+| São Paulo vs Corinthians | home wins by more than 1.5 | yes | 0.1500 | 0.252 [0.131, 0.393] | +0.093 | +0.003 | 0.15 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 5.5 | no | 0.9200 | 0.951 [0.899, 0.988] | +0.025 | +0.003 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Flamengo vs Grêmio | Total goals over 1.5 | no | 0.1100 | 0.197 [0.092, 0.319] | +0.080 | +0.003 | 0.11 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Atlético Mineiro | Total goals over 0.5 | no | 0.0600 | 0.103 [0.051, 0.159] | +0.039 | +0.001 | 0.06 | - |  | RESEARCH_CANDIDATE |
@@ -70,9 +71,9 @@ model board generated 2026-11-04T20:14:43.353014Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 146
+action_NO_EDGE: 145
 action_NO_QUOTE: 442
-action_RESEARCH_CANDIDATE: 38
+action_RESEARCH_CANDIDATE: 39
 contract_sides: 626
 fixtures: 11
 fixtures_model_invalidated: 0
