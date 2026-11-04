@@ -1,10 +1,10 @@
 {
  "counts": {
-  "PINNACLE_VALID_CLOSE": 18,
   "DISPATCHER_CLOSE_NO_ATTEMPT": 574,
   "MISSED_DISPATCHER_CLOSE": 84,
-  "CLOSE_BLOCKED_BUDGET": 7,
-  "PINNACLE_QUOTED_NOTHING": 2
+  "PINNACLE_VALID_CLOSE": 20,
+  "PINNACLE_QUOTED_NOTHING": 2,
+  "CLOSE_BLOCKED_BUDGET": 7
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.belgrano": {
@@ -422,6 +422,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:bra.serie_a:2026:bra.chapecoense:bra.mirassol": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261103T221501Z"
+  },
   "fx:bra.serie_a:2026:bra.corinthians:bra.mirassol": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -506,6 +511,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:bra.serie_a:2026:bra.internacional:bra.coritiba": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261104T001423Z"
   },
   "fx:bra.serie_a:2026:bra.mirassol:bra.internacional": {
    "state": "MISSED_DISPATCHER_CLOSE",
