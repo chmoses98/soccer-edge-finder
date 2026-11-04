@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261104T184311Z-0508ef` · generated 2026-11-04T18:43:11.949293Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261104T185837Z-7c04a2` · generated 2026-11-04T18:58:37.954058Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-04T18:40:29.736366Z (CURRENT at publish; CURRENT until 2026-11-04T19:00:29.736366Z, STALE after 2026-11-04T19:10:29.736366Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-04T18:56:00.795844Z (CURRENT at publish; CURRENT until 2026-11-04T19:16:00.795844Z, STALE after 2026-11-04T19:26:00.795844Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-04T15:38:34.685451Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.14s
 
@@ -32,8 +32,8 @@ model board generated 2026-11-04T15:38:34.685451Z · simulations this update: 0 
 | Palmeiras vs Remo | Total goals over 2.5 | no | 0.3900 | 0.558 [0.389, 0.714] | +0.152 | +0.046 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 3.5 | no | 0.6200 | 0.758 [0.612, 0.881] | +0.122 | +0.040 | 0.66 | - |  | RESEARCH_CANDIDATE |
 | Flamengo vs Grêmio | home wins by more than 1.5 | no | 0.3200 | 0.481 [0.312, 0.647] | +0.146 | +0.033 | 0.35 | - | * | RESEARCH_CANDIDATE |
-| Athletico Paranaense vs Vasco da Gama | Result: home | yes | 0.4300 | 0.581 [0.420, 0.735] | +0.134 | +0.031 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Flamengo vs Grêmio | Result: home | no | 0.1400 | 0.261 [0.143, 0.393] | +0.113 | +0.030 | 0.16 | - | * | RESEARCH_CANDIDATE |
+| Athletico Paranaense vs Vasco da Gama | Result: home | yes | 0.4350 | 0.581 [0.420, 0.735] | +0.129 | +0.026 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 1.5 | no | 0.1800 | 0.305 [0.173, 0.440] | +0.115 | +0.026 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 4.5 | no | 0.8000 | 0.884 [0.788, 0.959] | +0.073 | +0.025 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | Flamengo vs Grêmio | home wins by more than 2.5 | no | 0.5400 | 0.689 [0.523, 0.838] | +0.132 | +0.025 | 0.56 | - |  | RESEARCH_CANDIDATE |
