@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-04T09:26:07.316474+00:00",
+  "as_of": "2026-11-04T18:03:16.009764+00:00",
   "events": 621,
   "events_skipped_unmapped": 342,
   "fixtures_mapped": 279,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=20"
+      "weather_stopped:consecutive_failures:skipped=48"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 10,
-    "events": 69,
+    "captured": 55,
+    "events": 106,
     "failures": [],
-    "published_post": 36,
-    "published_pre_kickoff": 1,
-    "unchanged": 59,
-    "unpublished": 32
+    "published_post": 37,
+    "published_pre_kickoff": 0,
+    "unchanged": 51,
+    "unpublished": 69
   },
   "map_proposals": {
     "bel.1": {
@@ -501,17 +501,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 14,
-    "events": 37,
+    "captured": 16,
+    "events": 67,
     "failures": [
-      "401878951: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=50.6337&longitude=5.5675&hourly=tem",
-      "401841306: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-25.4278&longitude=-49.2731&hourly=",
-      "401841307: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-22.9064&longitude=-43.1822&hourly="
+      "401878947: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=51.0905&longitude=4.9154&hourly=tem",
+      "401878949: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Leuven&count=5&language=en&form",
+      "401841306: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-25.4278&longitude=-49.2731&hourly="
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 20,
+    "skipped": 48,
     "stopped": "consecutive_failures"
   }
 }
