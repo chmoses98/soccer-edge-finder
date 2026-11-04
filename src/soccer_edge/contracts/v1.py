@@ -182,6 +182,8 @@ class SettlementV1(_Base):
     clv_probability_points: float | None = None
     clv_price_points: float | None = None
     clv_fee_aware_points: float | None = None
+    clv_entry_fee_adjusted_points: float | None = None
+    entry_fee_per_contract: float | None = None
     reference_close_probability: float | None = None
 
 

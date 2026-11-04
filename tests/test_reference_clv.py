@@ -122,3 +122,26 @@ def test_clv_is_side_aware_and_fee_aware():
         fee_multiplier=None,
     )
     assert none["clv_probability_points"] is None
+
+
+def test_entry_fee_adjusted_clv_charges_the_entry_fee_once_never_a_fee_delta():
+    # Flat market: entry ask 50c, close 49/51 (mid 50c). Probability CLV is 0; the only cost is the ENTRY fee.
+    flat = clv_fields(side="yes", entry_price=Decimal("0.50"), close_yes_bid=Decimal("0.49"),
+                      close_yes_ask=Decimal("0.51"), fee_type="quadratic", fee_multiplier="1")
+    fee = flat["entry_fee_per_contract"]
+    assert fee is not None and fee > 0
+    assert flat["clv_probability_points"] == 0.0
+    assert flat["clv_entry_fee_adjusted_points"] == round(0.0 - fee, 6)       # exactly one entry fee
+    # The legacy field is a fee DELTA (entry fee at 50c vs close-ask fee at 51c): ~0, i.e. it hides the entry fee.
+    assert abs(flat["clv_fee_aware_points"] - flat["clv_price_points"]) < fee
+
+
+def test_entry_fee_adjusted_clv_no_side_and_unknown_fee_regime():
+    no = clv_fields(side="no", entry_price=Decimal("0.50"), close_yes_bid=Decimal("0.58"),
+                    close_yes_ask=Decimal("0.60"), fee_type="quadratic", fee_multiplier="1")
+    assert no["clv_probability_points"] == -0.09          # NO: (1 - 0.59) - 0.50
+    assert no["clv_entry_fee_adjusted_points"] == round(-0.09 - no["entry_fee_per_contract"], 6)
+    unknown = clv_fields(side="yes", entry_price=Decimal("0.50"), close_yes_bid=Decimal("0.49"),
+                         close_yes_ask=Decimal("0.51"), fee_type=None, fee_multiplier=None)
+    assert unknown["clv_entry_fee_adjusted_points"] is None and unknown["entry_fee_per_contract"] is None
+    assert unknown["clv_probability_points"] == 0.0     # market movement is still reported; fee is never assumed 0

@@ -43,6 +43,30 @@
       "default": null,
       "title": "Clv Fee Aware Points"
     },
+    "clv_entry_fee_adjusted_points": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Clv Entry Fee Adjusted Points"
+    },
+    "entry_fee_per_contract": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Entry Fee Per Contract"
+    },
     "clv_price_points": {
       "anyOf": [
         {
