@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-04T12:55:16.935688Z",
+  "as_of": "2026-11-04T17:13:52.346197Z",
   "by_competition": {
     "afc.champions": {
       "fixtures": 16,
@@ -127,6 +127,12 @@
       "with_pre_kickoff_xi": 1,
       "with_xi_ge_20min": 0
     },
+    "fra.coupe_de_france": {
+      "fixtures": 1,
+      "median_lead_minutes": null,
+      "with_pre_kickoff_xi": 0,
+      "with_xi_ge_20min": 0
+    },
     "ger.1": {
       "fixtures": 8,
       "median_lead_minutes": 38.33067685,
@@ -216,6 +222,12 @@
       "median_lead_minutes": 20.19172625,
       "with_pre_kickoff_xi": 7,
       "with_xi_ge_20min": 7
+    },
+    "uefa.europa": {
+      "fixtures": 1,
+      "median_lead_minutes": null,
+      "with_pre_kickoff_xi": 0,
+      "with_xi_ge_20min": 0
     },
     "uru.1": {
       "fixtures": 8,
@@ -4497,7 +4509,7 @@
       "competition": "fra.coupe_de_france",
       "espn_event_id": "401933098",
       "final_state": "unconfirmed",
-      "kickoff_passed": false,
+      "kickoff_passed": true,
       "lead_time_seconds": null,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-11-04T17:00:00+00:00",
@@ -4629,7 +4641,7 @@
       "competition": "uefa.europa",
       "espn_event_id": "401915551",
       "final_state": "unconfirmed",
-      "kickoff_passed": false,
+      "kickoff_passed": true,
       "lead_time_seconds": null,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-11-04T15:30:00+00:00",
@@ -4721,7 +4733,7 @@
       "xi_first_observed_at": null
     }
   ],
-  "fixtures_kickoff_passed": 345,
+  "fixtures_kickoff_passed": 347,
   "fixtures_tracked": 373,
   "lead_time_minutes": {
     "max": 57.21010881666667,
@@ -4733,8 +4745,8 @@
   },
   "post_kickoff_first_xi": 137,
   "schema": "lineup_lead_time_v1",
-  "share_pre_kickoff_xi": 0.2811594202898551,
-  "share_xi_ge_20min": 0.19710144927536233,
+  "share_pre_kickoff_xi": 0.27953890489913547,
+  "share_xi_ge_20min": 0.19596541786743515,
   "target": "audit \u00a7I1: >= 90% of priced fixtures with a confirmed XI captured >= 20 min before kickoff",
   "with_any_xi": 234,
   "with_pre_kickoff_xi": 97,
