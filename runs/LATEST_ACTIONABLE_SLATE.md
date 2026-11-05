@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261105T211340Z-359a03` · generated 2026-11-05T21:13:40.391446Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261105T212843Z-89afda` · generated 2026-11-05T21:28:43.546489Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-05T21:10:24.482006Z (CURRENT at publish; CURRENT until 2026-11-05T21:30:24.482006Z, STALE after 2026-11-05T21:40:24.482006Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-05T21:25:24.502216Z (CURRENT at publish; CURRENT until 2026-11-05T21:45:24.502216Z, STALE after 2026-11-05T21:55:24.502216Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-05T19:58:13.886019Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.59s
+model board generated 2026-11-05T21:28:41.199959Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.34s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,9 +12,9 @@ model board generated 2026-11-05T19:58:13.886019Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-05T22:15:00Z | Gimnasia La Plata vs Belgrano (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
-| 2026-11-05T22:30:00Z | Palmeiras vs Remo (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-06T00:30:00Z | Cruzeiro vs Bahia (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-05T22:15:00Z | Gimnasia La Plata vs Belgrano (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | AGING entry | CURRENT | 14 | 0 |
+| 2026-11-05T22:30:00Z | Palmeiras vs Remo (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
+| 2026-11-06T00:30:00Z | Cruzeiro vs Bahia (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-06T19:30:00Z | Hamburger SV vs Borussia Mönchengladbach (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-06T19:45:00Z | Toulouse vs Strasbourg (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-06T19:45:00Z | Venezia vs Udinese (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -89,15 +89,15 @@ model board generated 2026-11-05T19:58:13.886019Z · simulations this update: 0 
 | Palmeiras vs Remo | Total goals over 0.5 | no | 0.0400 | 0.102 [0.046, 0.167] | +0.059 | +0.019 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Mainz 05 vs Bayern Munich | Result: draw | yes | 0.1400 | 0.197 [0.143, 0.251] | +0.048 | +0.018 | 0.15 | - |  | RESEARCH_CANDIDATE |
 | Atlante vs Santos Laguna | First half: both teams to score | no | 0.7700 | 0.847 [0.769, 0.921] | +0.065 | +0.018 | 0.78 | - | * | RESEARCH_CANDIDATE |
-| Palmeiras vs Remo | Result: draw | yes | 0.1350 | 0.215 [0.134, 0.296] | +0.072 | +0.017 | 0.15 | - | * | RESEARCH_CANDIDATE |
+| Palmeiras vs Remo | Result: draw | yes | 0.1350 | 0.215 [0.134, 0.296] | +0.072 | +0.017 | 0.15 | 0.125 | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_NO_EDGE: 483
-action_NO_QUOTE: 2130
+action_NO_QUOTE: 2100
 action_RESEARCH_CANDIDATE: 61
-contract_sides: 2674
+contract_sides: 2644
 fixtures: 33
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
