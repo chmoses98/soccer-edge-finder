@@ -1,17 +1,17 @@
 {
-  "batch_id": "cap-20261105T185753Z",
-  "captured_at": "2026-11-05T18:57:53.260675+00:00",
-  "contracts_discovered": 4665,
+  "batch_id": "cap-20261105T191306Z",
+  "captured_at": "2026-11-05T19:13:06.721626+00:00",
+  "contracts_discovered": 4698,
   "counters": {
     "complete": true,
     "contracts_by_competition_code": {
       "?": 315,
       "APFDDH": 44,
       "ARGPREMDIV": 30,
-      "AUTBUNDES": 18,
+      "AUTBUNDES": 29,
       "BELGIANPL": 18,
       "BRASILEIRO": 132,
-      "BRASILEIROB": 116,
+      "BRASILEIROB": 127,
       "BUNDESLIGA": 195,
       "BUNDESLIGAW": 43,
       "CANPL": 6,
@@ -57,7 +57,7 @@
       "PERLIGA1": 45,
       "PREMIERLEAGUE": 20,
       "QSTARS": 22,
-      "ROML1": 35,
+      "ROML1": 46,
       "SERIEA": 216,
       "SOCCER": 2,
       "SUPERLIG": 18,
@@ -78,7 +78,7 @@
       "WCW": 32
     },
     "contracts_by_family": {
-      "btts": 58,
+      "btts": 61,
       "competition_head_to_head": 20,
       "competition_host": 26,
       "competition_last_place": 132,
@@ -96,7 +96,7 @@
       "first_half_handicap": 8,
       "first_half_result": 12,
       "first_half_total": 12,
-      "handicap": 226,
+      "handicap": 238,
       "match_result_3way": 855,
       "match_winner_2way": 16,
       "player_award": 81,
@@ -105,20 +105,20 @@
       "second_half_result": 9,
       "soccer_special": 189,
       "team_total": 18,
-      "total_goals": 339,
+      "total_goals": 357,
       "tournament_advancement": 160,
       "unknown": 3
     },
-    "contracts_discovered": 4665,
+    "contracts_discovered": 4698,
     "contracts_duplicate_seen": 0,
     "contracts_unknown_family": 3,
-    "events_discovered": 15413,
+    "events_discovered": 15476,
     "failures": [],
     "milestones_note": "milestones type=soccer_tournament_multi_leg: 22100 rows, complete=True",
-    "request_count": 671,
+    "request_count": 718,
     "retry_count": 0,
-    "run_id": "disc-20261105T185504Z-e84df8",
-    "series_ambiguous_unswept": 131,
+    "run_id": "disc-20261105T191006Z-ea6c72",
+    "series_ambiguous_unswept": 135,
     "series_ambiguous_unswept_tickers": [
       "KX1HOMEGAME",
       "KX1STHOMEGAME",
@@ -141,6 +141,10 @@
       "KXAFCCL1HBTTS",
       "KXAFCCL1HSPREAD",
       "KXAFCCL1HTOTAL",
+      "KXAFCCL2ADVANCE",
+      "KXAFCCL2BTTS",
+      "KXAFCCL2SPREAD",
+      "KXAFCCL2TOTAL",
       "KXAFCCLADVANCE",
       "KXAFCCLBTTS",
       "KXAFCCLFTTS",
@@ -315,21 +319,17 @@
       "KXCLUBWCTEAMTOTAL",
       "KXCLUBWCTOTAL",
       "KXCOACHONDATE",
-      "KXCOACHOUTOLEMISS",
-      "KXCOACHOUTUNC",
-      "KXCOLLEGEGAMEDAY",
-      "KXCOLLEGEGAMEDAYGUEST",
-      "KXCONCACAFCCUP1H"
+      "KXCOACHOUTOLEMISS"
     ],
     "series_by_ownership": {
-      "ambiguous": 133,
-      "not_soccer": 14183,
-      "soccer": 1447
+      "ambiguous": 137,
+      "not_soccer": 14184,
+      "soccer": 1491
     },
     "series_skipped_fast_mode": 1132,
-    "series_swept": 317,
-    "series_total": 15763
+    "series_swept": 361,
+    "series_total": 15812
   },
   "discovery_complete": true,
-  "snapshots_written": 1474
+  "snapshots_written": 1090
 }
