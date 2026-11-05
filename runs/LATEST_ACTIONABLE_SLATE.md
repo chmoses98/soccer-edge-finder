@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261105T101306Z-4d22ac` · generated 2026-11-05T10:13:06.074453Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261105T102805Z-413fd8` · generated 2026-11-05T10:28:05.998804Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-05T10:10:25.024247Z (CURRENT at publish; CURRENT until 2026-11-05T10:30:25.024247Z, STALE after 2026-11-05T10:40:25.024247Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-05T10:25:25.047748Z (CURRENT at publish; CURRENT until 2026-11-05T10:45:25.047748Z, STALE after 2026-11-05T10:55:25.047748Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-05T08:42:42.099168Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.25s
 
@@ -27,7 +27,7 @@ model board generated 2026-11-05T08:42:42.099168Z · simulations this update: 0 
 | 2026-11-07T01:00:00Z | Atlético San Luis vs FC Juárez (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-07T03:00:00Z | Atlante vs Santos Laguna (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (28; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (29; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -44,8 +44,9 @@ model board generated 2026-11-05T08:42:42.099168Z · simulations this update: 0 
 | Palmeiras vs Remo | Total goals over 1.5 | no | 0.1700 | 0.299 [0.170, 0.440] | +0.120 | +0.027 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 4.5 | no | 0.7900 | 0.881 [0.785, 0.959] | +0.079 | +0.027 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Venezia vs Udinese | Result: home | no | 0.5800 | 0.739 [0.540, 0.909] | +0.142 | +0.023 | 0.6 | - |  | RESEARCH_CANDIDATE |
-| Palmeiras vs Remo | Result: draw | yes | 0.1300 | 0.211 [0.129, 0.289] | +0.073 | +0.022 | 0.15 | - | * | RESEARCH_CANDIDATE |
+| Atlante vs Santos Laguna | Total goals over 5.5 | no | 0.9200 | 0.962 [0.922, 0.992] | +0.037 | +0.018 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | Necaxa vs Tijuana | home team total over 1.5 | no | 0.5500 | 0.681 [0.522, 0.819] | +0.113 | +0.017 | 0.56 | - | * | RESEARCH_CANDIDATE |
+| Palmeiras vs Remo | Result: draw | yes | 0.1350 | 0.211 [0.129, 0.289] | +0.068 | +0.016 | 0.15 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Result: home | no | 0.1950 | 0.308 [0.176, 0.440] | +0.102 | +0.016 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 0.5 | no | 0.0400 | 0.097 [0.044, 0.161] | +0.054 | +0.015 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Atlante vs Santos Laguna | First-half exact score 0-0 (home-away) | yes | 0.2700 | 0.372 [0.258, 0.492] | +0.089 | +0.014 | 0.28 | - | * | RESEARCH_CANDIDATE |
@@ -63,9 +64,9 @@ model board generated 2026-11-05T08:42:42.099168Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 395
+action_NO_EDGE: 394
 action_NO_QUOTE: 215
-action_RESEARCH_CANDIDATE: 28
+action_RESEARCH_CANDIDATE: 29
 contract_sides: 638
 fixtures: 14
 fixtures_model_invalidated: 0
