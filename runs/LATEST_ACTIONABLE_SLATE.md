@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261105T191307Z-b38153` · generated 2026-11-05T19:13:07.702355Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261105T192808Z-c139d7` · generated 2026-11-05T19:28:08.235192Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-05T19:10:06.154779Z (CURRENT at publish; CURRENT until 2026-11-05T19:30:06.154779Z, STALE after 2026-11-05T19:40:06.154779Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-05T19:25:06.180604Z (CURRENT at publish; CURRENT until 2026-11-05T19:45:06.180604Z, STALE after 2026-11-05T19:55:06.180604Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-05T18:12:53.129990Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.50s
+model board generated 2026-11-05T18:12:53.129990Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.51s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -45,7 +45,7 @@ model board generated 2026-11-05T18:12:53.129990Z · simulations this update: 0 
 | 2026-11-07T17:00:00Z | Parma vs Bologna (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-07T17:30:00Z | VfB Stuttgart vs Werder Bremen (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (60; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (61; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -78,6 +78,7 @@ model board generated 2026-11-05T18:12:53.129990Z · simulations this update: 0 
 | Necaxa vs Tijuana | home team total over 1.5 | no | 0.5400 | 0.681 [0.522, 0.819] | +0.123 | +0.027 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | SC Paderborn 07 vs Eintracht Frankfurt | Result: away | no | 0.5600 | 0.714 [0.513, 0.879] | +0.137 | +0.026 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Necaxa vs Tijuana | Total goals over 3.5 | no | 0.6300 | 0.754 [0.610, 0.875] | +0.107 | +0.025 | 0.65 | - | * | RESEARCH_CANDIDATE |
+| Atlante vs Santos Laguna | First-half exact score 0-0 (home-away) | yes | 0.2600 | 0.372 [0.258, 0.492] | +0.099 | +0.025 | 0.28 | - | * | RESEARCH_CANDIDATE |
 | Atlante vs Santos Laguna | First-half total goals over 0.5 | no | 0.2600 | 0.372 [0.258, 0.492] | +0.099 | +0.025 | 0.28 | - |  | RESEARCH_CANDIDATE |
 | Nottingham Forest vs Manchester City | Result: away | no | 0.4400 | 0.595 [0.415, 0.763] | +0.137 | +0.024 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Venezia vs Udinese | Result: home | no | 0.5800 | 0.739 [0.540, 0.909] | +0.142 | +0.023 | 0.6 | - |  | RESEARCH_CANDIDATE |
@@ -88,14 +89,13 @@ model board generated 2026-11-05T18:12:53.129990Z · simulations this update: 0 
 | AJ Auxerre vs Paris FC | Result: home | yes | 0.2200 | 0.371 [0.204, 0.555] | +0.139 | +0.020 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 0.5 | no | 0.0400 | 0.102 [0.046, 0.167] | +0.059 | +0.019 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Mainz 05 vs Bayern Munich | Result: draw | yes | 0.1400 | 0.197 [0.143, 0.251] | +0.048 | +0.018 | 0.15 | - |  | RESEARCH_CANDIDATE |
-| Atlante vs Santos Laguna | First half: both teams to score | no | 0.7700 | 0.847 [0.769, 0.921] | +0.065 | +0.018 | 0.78 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_NO_EDGE: 477
-action_NO_QUOTE: 2131
-action_RESEARCH_CANDIDATE: 60
+action_NO_QUOTE: 2130
+action_RESEARCH_CANDIDATE: 61
 contract_sides: 2668
 fixtures: 32
 fixtures_model_invalidated: 0
