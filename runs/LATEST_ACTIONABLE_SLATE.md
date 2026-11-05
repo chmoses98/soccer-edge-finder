@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261105T225809Z-4a2553` · generated 2026-11-05T22:58:09.015635Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261105T231324Z-a6e1b3` · generated 2026-11-05T23:13:24.598624Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-05T22:55:01.324222Z (CURRENT at publish; CURRENT until 2026-11-05T23:15:01.324222Z, STALE after 2026-11-05T23:25:01.324222Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-05T23:10:03.353973Z (CURRENT at publish; CURRENT until 2026-11-05T23:30:03.353973Z, STALE after 2026-11-05T23:40:03.353973Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-05T22:03:16.995067Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.82s
+model board generated 2026-11-05T23:13:14.799629Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.77s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-05T22:03:16.995067Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-06T00:30:00Z | Cruzeiro vs Bahia (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-06T00:30:00Z | Cruzeiro vs Bahia (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-06T19:30:00Z | Hamburger SV vs Borussia Mönchengladbach (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-06T19:45:00Z | Toulouse vs Strasbourg (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-06T19:45:00Z | Venezia vs Udinese (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -52,6 +52,7 @@ model board generated 2026-11-05T22:03:16.995067Z · simulations this update: 0 
 | 2026-11-07T21:00:00Z | New York Red Bulls vs Atlanta United (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-07T21:00:00Z | Orlando City vs New England Revolution (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-07T21:00:00Z | Philadelphia Union vs Toronto FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-07T23:00:00Z | Atlas vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
 ## Candidates on CURRENT prices (117; RESEARCH_ONLY = analysis, never a bet)
 
@@ -101,11 +102,11 @@ model board generated 2026-11-05T22:03:16.995067Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1434
-action_NO_QUOTE: 441
+action_NO_EDGE: 1543
+action_NO_QUOTE: 486
 action_RESEARCH_CANDIDATE: 117
-contract_sides: 1992
-fixtures: 40
+contract_sides: 2146
+fixtures: 41
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
