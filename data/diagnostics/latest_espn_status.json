@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-04T18:03:16.009764+00:00",
-  "events": 621,
-  "events_skipped_unmapped": 342,
-  "fixtures_mapped": 279,
+  "as_of": "2026-11-05T00:15:17.660419+00:00",
+  "events": 530,
+  "events_skipped_unmapped": 291,
+  "fixtures_mapped": 239,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=48"
+      "weather_stopped:consecutive_failures:skipped=76"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 55,
-    "events": 106,
+    "captured": 26,
+    "events": 101,
     "failures": [],
-    "published_post": 37,
-    "published_pre_kickoff": 0,
-    "unchanged": 51,
-    "unpublished": 69
+    "published_post": 45,
+    "published_pre_kickoff": 2,
+    "unchanged": 75,
+    "unpublished": 54
   },
   "map_proposals": {
     "bel.1": {
@@ -109,14 +109,12 @@
       "ambiguous": {},
       "proposed": {
         "301": "eng.luton",
-        "311": "eng.oxford",
-        "399": "eng.sheffield_wednesday"
+        "311": "eng.oxford"
       },
       "unresolved": {
         "304": "Mansfield Town",
         "335": "Huddersfield Town",
         "338": "Reading",
-        "346": "Blackpool",
         "350": "Wigan Athletic"
       }
     },
@@ -242,6 +240,7 @@
         "133837": "CD Tarancon",
         "133846": "Tavernes de la Valldigna",
         "17573": "Trival Valderas",
+        "19288": "CD Artistico Navalcarnero",
         "20776": "Anaitasuna",
         "21291": "Calvo Sotelo",
         "21723": "Utebo",
@@ -265,17 +264,29 @@
       "proposed": {},
       "unresolved": {
         "14561": "Chinese Taipei",
+        "4385": "India",
+        "454": "Russia",
+        "6686": "Eswatini",
         "7349": "Vietnam"
+      }
+    },
+    "fra.2": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "6994": "Grenoble"
       }
     },
     "fra.coupe_de_france": {
       "ambiguous": {},
       "proposed": {},
       "unresolved": {
+        "134117": "Chamb\u00e9ry Savoie",
         "134137": "AS Etoile Matoury",
         "134139": "Olympique De Cayenne",
         "134140": "Sporting Club Baie-Mahault",
-        "134141": "Siroco Les Abymes"
+        "134141": "Siroco Les Abymes",
+        "6994": "Grenoble"
       }
     },
     "nor.1": {
@@ -336,7 +347,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 1,
+  "results_appended": 11,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -382,6 +393,7 @@
     "133835": "CD Pamplona",
     "133837": "CD Tarancon",
     "133846": "Tavernes de la Valldigna",
+    "134117": "Chamb\u00e9ry Savoie",
     "134137": "AS Etoile Matoury",
     "134139": "Olympique De Cayenne",
     "134140": "Sporting Club Baie-Mahault",
@@ -392,6 +404,7 @@
     "17573": "Trival Valderas",
     "19246": "Riga FC",
     "19262": "Harrogate Town",
+    "19288": "CD Artistico Navalcarnero",
     "20024": "Ararat-Armenia",
     "20025": "Iberia 1999",
     "20028": "Kauno Zalgiris",
@@ -472,7 +485,9 @@
     "400": "Stockport County",
     "401": "Walsall",
     "402": "Rotherham United",
+    "4385": "India",
     "4489": "Oxford City",
+    "454": "Russia",
     "4703": "Salford City",
     "489": "Hajduk Split",
     "490": "Levski Sofia",
@@ -488,7 +503,9 @@
     "635": "Newport County",
     "642": "Barrow",
     "649": "Worcester City",
+    "6686": "Eswatini",
     "6827": "Alcoyano",
+    "6994": "Grenoble",
     "7206": "UD Logro\u00f1\u00e9s",
     "7349": "Vietnam",
     "7853": "AGF",
@@ -501,17 +518,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 16,
-    "events": 67,
+    "captured": 13,
+    "events": 92,
     "failures": [
-      "401878947: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=51.0905&longitude=4.9154&hourly=tem",
-      "401878949: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Leuven&count=5&language=en&form",
-      "401841306: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-25.4278&longitude=-49.2731&hourly="
+      "401892144: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Sydney&count=5&language=en&form",
+      "401892143: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Auckland&count=5&language=en&fo",
+      "401892142: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Melbourne&count=5&language=en&f"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 48,
+    "skipped": 76,
     "stopped": "consecutive_failures"
   }
 }
