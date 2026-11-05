@@ -15,30 +15,30 @@
       "achieved_minutes_p10": 10.48,
       "achieved_minutes_p90": 13.54,
       "delivered": 592,
-      "delivery_rate": 0.8592162554426706,
+      "delivery_rate": 0.8567293777134588,
       "lateness_minutes_max": 14.64,
       "lateness_minutes_median": 3.0,
-      "missed": 97
+      "missed": 99
     },
     "30": {
       "achieved_minutes_median": 27.3,
       "achieved_minutes_p10": 24.8,
       "achieved_minutes_p90": 29.07,
       "delivered": 591,
-      "delivery_rate": 0.8565217391304348,
+      "delivery_rate": 0.8540462427745664,
       "lateness_minutes_max": 16.98,
       "lateness_minutes_median": 2.7,
-      "missed": 99
+      "missed": 101
     },
     "5": {
       "achieved_minutes_median": 2.08,
       "achieved_minutes_p10": 0.04,
       "achieved_minutes_p90": 2.56,
       "delivered": 591,
-      "delivery_rate": 0.8602620087336245,
+      "delivery_rate": 0.8577648766328012,
       "lateness_minutes_max": 7.8,
       "lateness_minutes_median": 2.92,
-      "missed": 96
+      "missed": 98
     },
     "60": {
       "achieved_minutes_median": 61.18,
@@ -52,378 +52,102 @@
     }
   },
   "delivered_total": 3037,
-  "delivery_rate_total": 0.8737054085155351,
+  "delivery_rate_total": 0.8721998851234922,
   "fixtures_tracked": 711,
-  "generated_at": "2026-11-04T23:54:26Z",
+  "generated_at": "2026-11-05T08:12:45Z",
   "last_tick": {
-    "batches": 7,
+    "batches": 0,
     "summary": [
       {
         "actions": [
           "kalshi_capture:ok",
-          "model_refresh:ok:fixtures=1:sim=0:board=0:why=entered_lookahead_unmodelled",
+          "model_refresh:ok:fixtures=9:sim=4:board=4:why=entered_lookahead_unmodelled",
           "slate_reprice:ok:via_model_refresh"
         ],
-        "batch_id": "ks-20261104T182529Z",
+        "batch_id": "ks-20261105T061353Z",
         "due": [],
         "slate_refresh": true
       },
       {
         "actions": [
           "kalshi_capture:ok",
-          "slate_reprice:ok:sides=360:sim=0"
+          "slate_reprice:ok:sides=638:sim=0"
         ],
-        "batch_id": "ks-20261104T184029Z",
+        "batch_id": "ks-20261105T062853Z",
         "due": [],
         "slate_refresh": true
       },
       {
         "actions": [
           "kalshi_capture:ok",
-          "slate_reprice:ok:sides=360:sim=0"
+          "slate_reprice:ok:sides=638:sim=0"
         ],
-        "batch_id": "ks-20261104T185600Z",
+        "batch_id": "ks-20261105T064353Z",
         "due": [],
         "slate_refresh": true
       },
       {
         "actions": [
           "kalshi_capture:ok",
-          "slate_reprice:ok:sides=360:sim=0"
+          "slate_reprice:ok:sides=638:sim=0"
         ],
-        "batch_id": "ks-20261104T191100Z",
+        "batch_id": "ks-20261105T065853Z",
         "due": [],
         "slate_refresh": true
       },
       {
         "actions": [
           "kalshi_capture:ok",
-          "slate_reprice:ok:sides=360:sim=0"
+          "slate_reprice:ok:sides=638:sim=0"
         ],
-        "batch_id": "ks-20261104T192601Z",
+        "batch_id": "ks-20261105T071424Z",
         "due": [],
         "slate_refresh": true
       },
       {
         "actions": [
           "kalshi_capture:ok",
-          "model_refresh:ok:fixtures=1:sim=1:board=1:why=entered_lookahead_unmodelled",
-          "slate_reprice:ok:via_model_refresh"
+          "slate_reprice:ok:sides=638:sim=0"
         ],
-        "batch_id": "ks-20261104T194101Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:incomplete",
-          "model_refresh:ok:fixtures=4:sim=2:board=2:why=entered_lookahead_unmodelled",
-          "slate_reprice:ok:via_model_refresh"
-        ],
-        "batch_id": "ks-20261104T195603Z",
+        "batch_id": "ks-20261105T072924Z",
         "due": [],
         "slate_refresh": true
       },
       {
         "actions": [
           "kalshi_capture:ok",
-          "slate_reprice:ok:sides=626:sim=0"
+          "slate_reprice:ok:sides=638:sim=0"
         ],
-        "batch_id": "ks-20261104T201736Z",
+        "batch_id": "ks-20261105T074426Z",
         "due": [],
         "slate_refresh": true
       },
       {
         "actions": [
           "kalshi_capture:ok",
-          "reference:empty",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=626:sim=0"
+          "slate_reprice:ok:sides=638:sim=0"
         ],
-        "batch_id": "kd-20261104T202203Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:bra.serie_a:2026:bra.flamengo:bra.gremio",
-            120,
-            127.94
-          ],
-          [
-            "fx:bra.serie_a:2026:bra.athletico_paranaense:bra.vasco",
-            120,
-            127.94
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=626:sim=0"
-        ],
-        "batch_id": "ks-20261104T203705Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=626:sim=0"
-        ],
-        "batch_id": "ks-20261104T205205Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=626:sim=0"
-        ],
-        "batch_id": "ks-20261104T210706Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=626:sim=0"
-        ],
-        "batch_id": "ks-20261104T212206Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:empty",
-          "odds_api:ok:credits=3:paid=1:rows=14",
-          "lineups:ok:1",
-          "model_refresh:ok:fixtures=2:sim=2:cache=0:why=T-60:primary_refresh",
-          "slate_reprice:ok:via_model_refresh"
-        ],
-        "batch_id": "kd-20261104T212716Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:bra.serie_a:2026:bra.flamengo:bra.gremio",
-            60,
-            62.72
-          ],
-          [
-            "fx:bra.serie_a:2026:bra.athletico_paranaense:bra.vasco",
-            60,
-            62.72
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=566:sim=0"
-        ],
-        "batch_id": "ks-20261104T214216Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:empty",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:ok:fixtures=2:sim=2:cache=0:why=T-30:invalidated",
-          "slate_reprice:ok:via_model_refresh"
-        ],
-        "batch_id": "kd-20261104T215716Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:bra.serie_a:2026:bra.flamengo:bra.gremio",
-            30,
-            32.72
-          ],
-          [
-            "fx:bra.serie_a:2026:bra.athletico_paranaense:bra.vasco",
-            30,
-            32.72
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=566:sim=0"
-        ],
-        "batch_id": "ks-20261104T221216Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:empty",
-          "odds_api:ok:credits=3:paid=1:rows=14",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=566:sim=0"
-        ],
-        "batch_id": "kd-20261104T221644Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:bra.serie_a:2026:bra.flamengo:bra.gremio",
-            15,
-            13.27
-          ],
-          [
-            "fx:bra.serie_a:2026:bra.athletico_paranaense:bra.vasco",
-            15,
-            13.27
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:empty",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=566:sim=0"
-        ],
-        "batch_id": "kd-20261104T222116Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:bra.serie_a:2026:bra.sao_paulo:bra.corinthians",
-            120,
-            128.72
-          ],
-          [
-            "fx:bra.serie_a:2026:bra.botafogo:bra.atletico_mineiro",
-            120,
-            128.72
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:empty",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=566:sim=0"
-        ],
-        "batch_id": "kd-20261104T222547Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:bra.serie_a:2026:bra.flamengo:bra.gremio",
-            5,
-            4.21
-          ],
-          [
-            "fx:bra.serie_a:2026:bra.athletico_paranaense:bra.vasco",
-            5,
-            4.21
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "model_refresh:ok:fixtures=3:sim=0:board=0:why=entered_lookahead_unmodelled",
-          "slate_reprice:ok:via_model_refresh"
-        ],
-        "batch_id": "ks-20261104T224049Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=510:sim=0"
-        ],
-        "batch_id": "ks-20261104T225549Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "model_refresh:ok:fixtures=1:sim=1:board=1:why=entered_lookahead_unmodelled",
-          "slate_reprice:ok:via_model_refresh"
-        ],
-        "batch_id": "ks-20261104T231051Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:empty",
-          "odds_api:ok:credits=3:paid=1:rows=14",
-          "lineups:ok:1",
-          "model_refresh:ok:fixtures=2:sim=2:cache=0:why=T-60:primary_refresh",
-          "slate_reprice:ok:via_model_refresh"
-        ],
-        "batch_id": "kd-20261104T232551Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:bra.serie_a:2026:bra.sao_paulo:bra.corinthians",
-            60,
-            64.15
-          ],
-          [
-            "fx:bra.serie_a:2026:bra.botafogo:bra.atletico_mineiro",
-            60,
-            64.15
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=478:sim=0"
-        ],
-        "batch_id": "ks-20261104T234053Z",
+        "batch_id": "ks-20261105T075926Z",
         "due": [],
         "slate_refresh": true
       }
     ]
   },
-  "missed_total": 439,
-  "n_pending_fixtures": 55,
+  "missed_total": 445,
+  "n_pending_fixtures": 66,
   "pending_fixtures": [
-    {
-      "competition_id": "bra.serie_a",
-      "fixture_id": "fx:bra.serie_a:2026:bra.sao_paulo:bra.corinthians",
-      "kickoff_utc": "2026-11-05T00:30:00Z",
-      "markets_discovered": 29,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "bra.serie_a",
-      "fixture_id": "fx:bra.serie_a:2026:bra.botafogo:bra.atletico_mineiro",
-      "kickoff_utc": "2026-11-05T00:30:00Z",
-      "markets_discovered": 29,
-      "source": "run_output"
-    },
     {
       "competition_id": "arg.primera",
       "fixture_id": "fx:arg.primera:2026:arg.aldosivi:arg.river_plate",
       "kickoff_utc": "2026-11-05T18:00:00Z",
-      "markets_discovered": 3,
+      "markets_discovered": 14,
       "source": "run_output"
     },
     {
       "competition_id": "arg.primera",
       "fixture_id": "fx:arg.primera:2026:arg.gimnasia_la_plata:arg.belgrano",
       "kickoff_utc": "2026-11-05T22:15:00Z",
-      "markets_discovered": 3,
+      "markets_discovered": 14,
       "source": "run_output"
     },
     {
@@ -449,10 +173,31 @@
     },
     {
       "competition_id": "ger.bundesliga",
+      "fixture_id": "fx:ger.bundesliga:2026-27:ger.hamburg:ger.gladbach:matchday_9",
+      "kickoff_utc": "2026-11-06T19:30:00Z",
+      "markets_discovered": 77,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "ger.bundesliga",
       "fixture_id": "fx:ger.bundesliga:2026-27:ger.hamburg:ger.gladbach",
       "kickoff_utc": "2026-11-06T19:30:00Z",
       "markets_discovered": 0,
       "source": "espn"
+    },
+    {
+      "competition_id": "ita.serie_a",
+      "fixture_id": "fx:ita.serie_a:2026-27:ita.venezia:ita.udinese:matchday_11",
+      "kickoff_utc": "2026-11-06T19:45:00Z",
+      "markets_discovered": 77,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "fra.ligue_1",
+      "fixture_id": "fx:fra.ligue_1:2026-27:fra.toulouse:fra.strasbourg:matchday_10",
+      "kickoff_utc": "2026-11-06T19:45:00Z",
+      "markets_discovered": 77,
+      "source": "run_output"
     },
     {
       "competition_id": "fra.ligue_1",
@@ -484,31 +229,45 @@
     },
     {
       "competition_id": "arg.primera",
-      "fixture_id": "fx:arg.primera:2026:arg.independiente:arg.deportivo_riestra",
-      "kickoff_utc": "2026-11-06T22:15:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "arg.primera",
       "fixture_id": "fx:arg.primera:2026:arg.san_lorenzo:arg.platense",
       "kickoff_utc": "2026-11-06T22:15:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 3,
+      "source": "run_output"
     },
     {
       "competition_id": "arg.primera",
       "fixture_id": "fx:arg.primera:2026:arg.union:arg.velez",
       "kickoff_utc": "2026-11-06T22:15:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 3,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "arg.primera",
+      "fixture_id": "fx:arg.primera:2026:arg.independiente:arg.deportivo_riestra",
+      "kickoff_utc": "2026-11-06T22:15:00Z",
+      "markets_discovered": 3,
+      "source": "run_output"
     },
     {
       "competition_id": "bra.serie_a",
       "fixture_id": "fx:bra.serie_a:2026:bra.vitoria:bra.fluminense",
       "kickoff_utc": "2026-11-06T23:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 29,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "mex.liga_mx",
+      "fixture_id": "fx:mex.liga_mx:2026:mex.san_luis:mex.juarez",
+      "kickoff_utc": "2026-11-07T01:00:00Z",
+      "markets_discovered": 77,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "mex.liga_mx",
+      "fixture_id": "fx:mex.liga_mx:2026:mex.necaxa:mex.tijuana",
+      "kickoff_utc": "2026-11-07T01:00:00Z",
+      "markets_discovered": 32,
+      "source": "run_output"
     },
     {
       "competition_id": "arg.primera",
@@ -520,20 +279,6 @@
     {
       "competition_id": "arg.primera",
       "fixture_id": "fx:arg.primera:2026:arg.tigre:arg.sarmiento",
-      "kickoff_utc": "2026-11-07T01:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "mex.liga_mx",
-      "fixture_id": "fx:mex.liga_mx:2026:mex.san_luis:mex.juarez",
-      "kickoff_utc": "2026-11-07T01:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "mex.liga_mx",
-      "fixture_id": "fx:mex.liga_mx:2026:mex.necaxa:mex.tijuana",
       "kickoff_utc": "2026-11-07T01:00:00Z",
       "markets_discovered": 0,
       "source": "espn"
@@ -777,9 +522,79 @@
       "source": "espn"
     },
     {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.austin:usa.portland_timbers",
+      "kickoff_utc": "2026-11-08T00:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.fc_dallas:usa.colorado_rapids",
+      "kickoff_utc": "2026-11-08T00:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.houston_dynamo:usa.st_louis_city",
+      "kickoff_utc": "2026-11-08T00:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.minnesota_united:usa.san_jose_earthquakes",
+      "kickoff_utc": "2026-11-08T00:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.real_salt_lake:usa.la_galaxy",
+      "kickoff_utc": "2026-11-08T00:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.san_diego:usa.sporting_kc",
+      "kickoff_utc": "2026-11-08T00:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.seattle_sounders:usa.lafc",
+      "kickoff_utc": "2026-11-08T00:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "arg.primera",
+      "fixture_id": "fx:arg.primera:2026:arg.instituto:arg.newells",
+      "kickoff_utc": "2026-11-08T01:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
       "competition_id": "mex.liga_mx",
       "fixture_id": "fx:mex.liga_mx:2026:mex.tigres:mex.cruz_azul",
-      "kickoff_utc": "2026-11-07T23:00:00Z",
+      "kickoff_utc": "2026-11-08T01:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "mex.liga_mx",
+      "fixture_id": "fx:mex.liga_mx:2026:mex.toluca:mex.monterrey",
+      "kickoff_utc": "2026-11-08T01:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "mex.liga_mx",
+      "fixture_id": "fx:mex.liga_mx:2026:mex.pumas:mex.america",
+      "kickoff_utc": "2026-11-08T03:10:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }
