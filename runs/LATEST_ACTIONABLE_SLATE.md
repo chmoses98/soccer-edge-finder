@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261105T164657Z-c29a1a` · generated 2026-11-05T16:46:57.371008Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261105T170138Z-304fb0` · generated 2026-11-05T17:01:38.249006Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-05T16:44:13.047960Z (CURRENT at publish; CURRENT until 2026-11-05T17:04:13.047960Z, STALE after 2026-11-05T17:14:13.047960Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-05T16:58:41.939349Z (CURRENT at publish; CURRENT until 2026-11-05T17:18:41.939349Z, STALE after 2026-11-05T17:28:41.939349Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-05T16:14:59.261787Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.51s
+model board generated 2026-11-05T16:14:59.261787Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.69s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,8 +12,8 @@ model board generated 2026-11-05T16:14:59.261787Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-05T18:00:00Z | Aldosivi vs River Plate (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-11-05T22:15:00Z | Gimnasia La Plata vs Belgrano (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-05T18:00:00Z | Aldosivi vs River Plate (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
+| 2026-11-05T22:15:00Z | Gimnasia La Plata vs Belgrano (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-05T22:30:00Z | Palmeiras vs Remo (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-06T00:30:00Z | Cruzeiro vs Bahia (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-06T19:30:00Z | Hamburger SV vs Borussia Mönchengladbach (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -91,8 +91,8 @@ model board generated 2026-11-05T16:14:59.261787Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 466
-action_NO_QUOTE: 2178
+action_NO_EDGE: 465
+action_NO_QUOTE: 2179
 action_RESEARCH_CANDIDATE: 56
 contract_sides: 2700
 fixtures: 30
