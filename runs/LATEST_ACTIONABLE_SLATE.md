@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261105T221811Z-a4ddbf` · generated 2026-11-05T22:18:11.557567Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261105T222810Z-3ffc70` · generated 2026-11-05T22:28:10.552724Z · trigger `kickoff_chain:T-120/T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-05T22:14:58.025931Z (CURRENT at publish; CURRENT until 2026-11-05T22:34:58.025931Z, STALE after 2026-11-05T22:44:58.025931Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-05T22:25:00.061813Z (CURRENT at publish; CURRENT until 2026-11-05T22:45:00.061813Z, STALE after 2026-11-05T22:55:00.061813Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-05T22:03:16.995067Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.66s
+model board generated 2026-11-05T22:03:16.995067Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.67s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -54,7 +54,7 @@ model board generated 2026-11-05T22:03:16.995067Z · simulations this update: 0 
 | 2026-11-07T21:00:00Z | Orlando City vs New England Revolution (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-07T21:00:00Z | Philadelphia Union vs Toronto FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (126; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (127; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -91,20 +91,20 @@ model board generated 2026-11-05T22:03:16.995067Z · simulations this update: 0 
 | CF Montréal vs Vancouver Whitecaps | away team total over 2.5 | no | 0.6500 | 0.792 [0.665, 0.898] | +0.127 | +0.062 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Sunderland vs Chelsea | Result: home | yes | 0.2600 | 0.460 [0.276, 0.654] | +0.186 | +0.057 | 0.31 | - | * | RESEARCH_CANDIDATE |
 | CF Montréal vs Vancouver Whitecaps | Total goals over 1.5 | no | 0.1500 | 0.297 [0.175, 0.424] | +0.138 | +0.057 | 0.2 | - |  | RESEARCH_CANDIDATE |
+| D.C. United vs New York City FC | away team total over 0.5 | no | 0.2200 | 0.363 [0.246, 0.478] | +0.131 | +0.055 | 0.27 | - |  | RESEARCH_CANDIDATE |
 | Crystal Palace vs Liverpool | Result: away | no | 0.3900 | 0.578 [0.397, 0.757] | +0.171 | +0.054 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Atlante vs Santos Laguna | Total goals over 1.5 | no | 0.1800 | 0.341 [0.205, 0.488] | +0.151 | +0.054 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | D.C. United vs New York City FC | First-half total goals over 1.5 | no | 0.6200 | 0.756 [0.648, 0.862] | +0.119 | +0.054 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Parma vs Bologna | Result: home | yes | 0.2100 | 0.372 [0.224, 0.535] | +0.151 | +0.053 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | First-half total goals over 1.5 | no | 0.5400 | 0.683 [0.568, 0.792] | +0.126 | +0.053 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Atlante vs Santos Laguna | Total goals over 4.5 | no | 0.8000 | 0.906 [0.825, 0.970] | +0.094 | +0.052 | 0.85 | - |  | RESEARCH_CANDIDATE |
-| Arsenal vs Hull City | Result: away | yes | 0.0500 | 0.196 [0.070, 0.350] | +0.143 | +0.048 | 0.09 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1417
-action_NO_QUOTE: 477
-action_RESEARCH_CANDIDATE: 126
+action_NO_EDGE: 1449
+action_NO_QUOTE: 444
+action_RESEARCH_CANDIDATE: 127
 contract_sides: 2020
 fixtures: 41
 fixtures_model_invalidated: 0

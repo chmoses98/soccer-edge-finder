@@ -1,11 +1,11 @@
 {
   "by_horizon": {
     "120": {
-      "achieved_minutes_median": 122.52,
+      "achieved_minutes_median": 122.51,
       "achieved_minutes_p10": 118.16,
       "achieved_minutes_p90": 126.42,
-      "delivered": 656,
-      "delivery_rate": 0.9187675070028011,
+      "delivered": 657,
+      "delivery_rate": 0.9188811188811189,
       "lateness_minutes_max": 62.51,
       "lateness_minutes_median": -2.51,
       "missed": 58
@@ -34,8 +34,8 @@
       "achieved_minutes_median": 2.08,
       "achieved_minutes_p10": 0.04,
       "achieved_minutes_p90": 2.56,
-      "delivered": 593,
-      "delivery_rate": 0.8581765557163531,
+      "delivered": 594,
+      "delivery_rate": 0.8583815028901735,
       "lateness_minutes_max": 7.8,
       "lateness_minutes_median": 2.92,
       "missed": 98
@@ -51,20 +51,13 @@
       "missed": 89
     }
   },
-  "delivered_total": 3051,
-  "delivery_rate_total": 0.8727116704805492,
-  "fixtures_tracked": 714,
-  "generated_at": "2026-11-05T22:18:12Z",
+  "delivered_total": 3053,
+  "delivery_rate_total": 0.8727844482561463,
+  "fixtures_tracked": 715,
+  "generated_at": "2026-11-05T22:28:11Z",
   "missed_total": 445,
-  "n_pending_fixtures": 104,
+  "n_pending_fixtures": 103,
   "pending_fixtures": [
-    {
-      "competition_id": "bra.serie_a",
-      "fixture_id": "fx:bra.serie_a:2026:bra.palmeiras:bra.remo",
-      "kickoff_utc": "2026-11-05T22:30:00Z",
-      "markets_discovered": 29,
-      "source": "run_output"
-    },
     {
       "competition_id": "bra.serie_a",
       "fixture_id": "fx:bra.serie_a:2026:bra.cruzeiro:bra.bahia",
@@ -755,6 +748,13 @@
       "competition_id": "esp.la_liga",
       "fixture_id": "fx:esp.la_liga:2026-27:esp.villarreal:esp.getafe",
       "kickoff_utc": "2026-11-08T17:30:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "ger.bundesliga",
+      "fixture_id": "fx:ger.bundesliga:2026-27:ger.hoffenheim:ger.schalke",
+      "kickoff_utc": "2026-11-08T18:30:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }
