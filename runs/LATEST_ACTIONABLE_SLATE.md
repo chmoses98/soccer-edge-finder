@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261105T115809Z-701cd1` · generated 2026-11-05T11:58:09.609081Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261105T121311Z-b71b10` · generated 2026-11-05T12:13:11.323271Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-05T11:55:28.695751Z (CURRENT at publish; CURRENT until 2026-11-05T12:15:28.695751Z, STALE after 2026-11-05T12:25:28.695751Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-05T12:10:30.413835Z (CURRENT at publish; CURRENT until 2026-11-05T12:30:30.413835Z, STALE after 2026-11-05T12:40:30.413835Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-05T08:42:42.099168Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.25s
 
@@ -42,34 +42,34 @@ model board generated 2026-11-05T08:42:42.099168Z · simulations this update: 0 
 | Venezia vs Udinese | Result: away | yes | 0.3100 | 0.517 [0.298, 0.742] | +0.192 | +0.036 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Atlante vs Santos Laguna | First-half total goals over 1.5 | no | 0.6100 | 0.731 [0.608, 0.842] | +0.105 | +0.033 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 1.5 | no | 0.1700 | 0.299 [0.170, 0.440] | +0.120 | +0.027 | 0.19 | - |  | RESEARCH_CANDIDATE |
-| Palmeiras vs Remo | Total goals over 4.5 | no | 0.7900 | 0.881 [0.785, 0.959] | +0.079 | +0.027 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Atlante vs Santos Laguna | First-half exact score 0-0 (home-away) | yes | 0.2600 | 0.372 [0.258, 0.492] | +0.099 | +0.025 | 0.28 | - | * | RESEARCH_CANDIDATE |
 | Venezia vs Udinese | Result: home | no | 0.5800 | 0.739 [0.540, 0.909] | +0.142 | +0.023 | 0.6 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Result: draw | yes | 0.1300 | 0.211 [0.129, 0.289] | +0.073 | +0.022 | 0.15 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Result: home | no | 0.1900 | 0.308 [0.176, 0.440] | +0.107 | +0.021 | 0.21 | - |  | RESEARCH_CANDIDATE |
-| Atlante vs Santos Laguna | Total goals over 5.5 | no | 0.9200 | 0.962 [0.922, 0.992] | +0.037 | +0.018 | 0.93 | - |  | RESEARCH_CANDIDATE |
+| Palmeiras vs Remo | Total goals over 4.5 | no | 0.8000 | 0.881 [0.785, 0.959] | +0.070 | +0.017 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Necaxa vs Tijuana | home team total over 1.5 | no | 0.5500 | 0.681 [0.522, 0.819] | +0.113 | +0.017 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 0.5 | no | 0.0400 | 0.097 [0.044, 0.161] | +0.054 | +0.015 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Necaxa vs Tijuana | Total goals over 3.5 | no | 0.6400 | 0.754 [0.610, 0.875] | +0.098 | +0.015 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | home wins by more than 2.5 | no | 0.6600 | 0.769 [0.617, 0.888] | +0.093 | +0.014 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Atlante vs Santos Laguna | First-half total goals over 0.5 | no | 0.2700 | 0.372 [0.258, 0.492] | +0.089 | +0.014 | 0.28 | - |  | RESEARCH_CANDIDATE |
-| Necaxa vs Tijuana | Total goals over 4.5 | no | 0.8100 | 0.883 [0.786, 0.956] | +0.062 | +0.012 | 0.82 | - |  | RESEARCH_CANDIDATE |
-| Atlante vs Santos Laguna | First-half total goals over 2.5 | no | 0.8600 | 0.914 [0.849, 0.971] | +0.046 | +0.012 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | home wins by more than 1.5 | no | 0.4300 | 0.560 [0.388, 0.712] | +0.113 | +0.011 | 0.44 | - |  | RESEARCH_CANDIDATE |
 | Necaxa vs Tijuana | Total goals over 2.5 | no | 0.4200 | 0.551 [0.387, 0.704] | +0.114 | +0.010 | 0.43 | - |  | RESEARCH_CANDIDATE |
+| Atlante vs Santos Laguna | Total goals over 5.5 | no | 0.9300 | 0.962 [0.922, 0.992] | +0.027 | +0.009 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 5.5 | no | 0.9100 | 0.949 [0.897, 0.988] | +0.033 | +0.008 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | Necaxa vs Tijuana | home team total over 2.5 | no | 0.8100 | 0.880 [0.781, 0.957] | +0.059 | +0.008 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Necaxa vs Tijuana | Total goals over 0.5 | no | 0.0500 | 0.096 [0.044, 0.154] | +0.043 | +0.006 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Atlante vs Santos Laguna | away team total over 1.5 | no | 0.6100 | 0.715 [0.573, 0.843] | +0.088 | +0.005 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | Atlante vs Santos Laguna | Exact score 1-0 (home-away) | yes | 0.0800 | 0.120 [0.073, 0.173] | +0.035 | +0.003 | 0.08 | - | * | RESEARCH_CANDIDATE |
 | Atlante vs Santos Laguna | away team total over 0.5 | no | 0.2600 | 0.361 [0.234, 0.495] | +0.088 | +0.003 | 0.26 | - |  | RESEARCH_CANDIDATE |
+| Necaxa vs Tijuana | Total goals over 4.5 | no | 0.8200 | 0.883 [0.786, 0.956] | +0.052 | +0.002 | 0.82 | - |  | RESEARCH_CANDIDATE |
+| Atlante vs Santos Laguna | First-half total goals over 2.5 | no | 0.8700 | 0.914 [0.849, 0.971] | +0.036 | +0.002 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Atlante vs Santos Laguna | home team total over 1.5 | no | 0.5300 | 0.653 [0.471, 0.811] | +0.105 | +0.001 | 0.53 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 393
-action_NO_QUOTE: 212
+action_NO_EDGE: 392
+action_NO_QUOTE: 213
 action_RESEARCH_CANDIDATE: 33
 contract_sides: 638
 fixtures: 14
