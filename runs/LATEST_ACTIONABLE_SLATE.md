@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261105T184254Z-c80473` · generated 2026-11-05T18:42:54.448434Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261105T185754Z-255377` · generated 2026-11-05T18:57:54.269716Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-05T18:40:04.429330Z (CURRENT at publish; CURRENT until 2026-11-05T19:00:04.429330Z, STALE after 2026-11-05T19:10:04.429330Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-05T18:55:04.455614Z (CURRENT at publish; CURRENT until 2026-11-05T19:15:04.455614Z, STALE after 2026-11-05T19:25:04.455614Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-05T18:12:53.129990Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.52s
 
@@ -45,7 +45,7 @@ model board generated 2026-11-05T18:12:53.129990Z · simulations this update: 0 
 | 2026-11-07T17:00:00Z | Parma vs Bologna (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-07T17:30:00Z | VfB Stuttgart vs Werder Bremen (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (60; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (61; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -67,20 +67,21 @@ model board generated 2026-11-05T18:12:53.129990Z · simulations this update: 0 
 | Arsenal vs Hull City | Result: away | yes | 0.0500 | 0.196 [0.070, 0.350] | +0.143 | +0.048 | 0.09 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 3.5 | no | 0.6200 | 0.764 [0.614, 0.890] | +0.128 | +0.048 | 0.66 | - |  | RESEARCH_CANDIDATE |
 | Sunderland vs Chelsea | Result: away | no | 0.5300 | 0.694 [0.524, 0.848] | +0.146 | +0.045 | 0.57 | - |  | RESEARCH_CANDIDATE |
+| Atlante vs Santos Laguna | First-half total goals over 1.5 | no | 0.6000 | 0.731 [0.608, 0.842] | +0.115 | +0.043 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Necaxa vs Tijuana | btts | no | 0.3800 | 0.513 [0.380, 0.634] | +0.116 | +0.038 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | AJ Auxerre vs Paris FC | Result: away | no | 0.4600 | 0.627 [0.450, 0.791] | +0.149 | +0.038 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Venezia vs Udinese | Result: away | yes | 0.3100 | 0.517 [0.298, 0.742] | +0.192 | +0.036 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Crystal Palace vs Liverpool | Result: home | yes | 0.1800 | 0.337 [0.177, 0.525] | +0.147 | +0.036 | 0.21 | - |  | RESEARCH_CANDIDATE |
-| Atlante vs Santos Laguna | First-half exact score 0-0 (home-away) | yes | 0.2500 | 0.372 [0.258, 0.492] | +0.109 | +0.035 | 0.28 | - | * | RESEARCH_CANDIDATE |
-| Atlante vs Santos Laguna | First-half total goals over 1.5 | no | 0.6100 | 0.731 [0.608, 0.842] | +0.105 | +0.033 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 4.5 | no | 0.8000 | 0.888 [0.790, 0.963] | +0.077 | +0.031 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 1.5 | no | 0.1800 | 0.312 [0.177, 0.456] | +0.122 | +0.030 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Atlante vs Santos Laguna | Total goals over 5.5 | no | 0.9100 | 0.962 [0.922, 0.992] | +0.046 | +0.027 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | Necaxa vs Tijuana | home team total over 1.5 | no | 0.5400 | 0.681 [0.522, 0.819] | +0.123 | +0.027 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | SC Paderborn 07 vs Eintracht Frankfurt | Result: away | no | 0.5600 | 0.714 [0.513, 0.879] | +0.137 | +0.026 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Necaxa vs Tijuana | Total goals over 3.5 | no | 0.6300 | 0.754 [0.610, 0.875] | +0.107 | +0.025 | 0.65 | - | * | RESEARCH_CANDIDATE |
+| Atlante vs Santos Laguna | First-half total goals over 0.5 | no | 0.2600 | 0.372 [0.258, 0.492] | +0.099 | +0.025 | 0.28 | - |  | RESEARCH_CANDIDATE |
 | Nottingham Forest vs Manchester City | Result: away | no | 0.4400 | 0.595 [0.415, 0.763] | +0.137 | +0.024 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Venezia vs Udinese | Result: home | no | 0.5800 | 0.739 [0.540, 0.909] | +0.142 | +0.023 | 0.6 | - |  | RESEARCH_CANDIDATE |
+| Atlante vs Santos Laguna | First-half total goals over 2.5 | no | 0.8500 | 0.914 [0.849, 0.971] | +0.055 | +0.021 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Atlante vs Santos Laguna | home team total over 1.5 | no | 0.5100 | 0.653 [0.471, 0.811] | +0.125 | +0.021 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Necaxa vs Tijuana | Total goals over 2.5 | no | 0.4100 | 0.551 [0.387, 0.704] | +0.124 | +0.021 | 0.43 | - |  | RESEARCH_CANDIDATE |
 | Mainz 05 vs Bayern Munich | Result: home | yes | 0.1300 | 0.273 [0.113, 0.450] | +0.135 | +0.020 | 0.14 | - |  | RESEARCH_CANDIDATE |
@@ -88,14 +89,13 @@ model board generated 2026-11-05T18:12:53.129990Z · simulations this update: 0 
 | Palmeiras vs Remo | Total goals over 0.5 | no | 0.0400 | 0.102 [0.046, 0.167] | +0.059 | +0.019 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Mainz 05 vs Bayern Munich | Result: draw | yes | 0.1400 | 0.197 [0.143, 0.251] | +0.048 | +0.018 | 0.15 | - |  | RESEARCH_CANDIDATE |
 | Atlante vs Santos Laguna | First half: both teams to score | no | 0.7700 | 0.847 [0.769, 0.921] | +0.065 | +0.018 | 0.78 | - | * | RESEARCH_CANDIDATE |
-| Palmeiras vs Remo | Result: draw | yes | 0.1350 | 0.215 [0.134, 0.296] | +0.072 | +0.017 | 0.15 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_NO_EDGE: 478
-action_NO_QUOTE: 2130
-action_RESEARCH_CANDIDATE: 60
+action_NO_QUOTE: 2129
+action_RESEARCH_CANDIDATE: 61
 contract_sides: 2668
 fixtures: 32
 fixtures_model_invalidated: 0
