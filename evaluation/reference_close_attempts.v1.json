@@ -2,8 +2,8 @@
  "counts": {
   "DISPATCHER_CLOSE_NO_ATTEMPT": 574,
   "MISSED_DISPATCHER_CLOSE": 84,
+  "PINNACLE_VALID_CLOSE": 22,
   "CLOSE_BLOCKED_BUDGET": 7,
-  "PINNACLE_VALID_CLOSE": 20,
   "PINNACLE_QUOTED_NOTHING": 2
  },
  "fixtures": {
@@ -347,6 +347,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:bra.serie_a:2026:bra.athletico_paranaense:bra.vasco": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261104T221644Z"
+  },
   "fx:bra.serie_a:2026:bra.atletico_mineiro:bra.bragantino": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -471,6 +476,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:bra.serie_a:2026:bra.flamengo:bra.gremio": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261104T221644Z"
   },
   "fx:bra.serie_a:2026:bra.fluminense:bra.coritiba": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",

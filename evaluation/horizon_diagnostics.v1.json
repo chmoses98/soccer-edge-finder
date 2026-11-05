@@ -4,8 +4,8 @@
       "achieved_minutes_median": 122.52,
       "achieved_minutes_p10": 118.28,
       "achieved_minutes_p90": 126.42,
-      "delivered": 651,
-      "delivery_rate": 0.918194640338505,
+      "delivered": 653,
+      "delivery_rate": 0.9184247538677919,
       "lateness_minutes_max": 62.51,
       "lateness_minutes_median": -2.52,
       "missed": 58
@@ -14,18 +14,18 @@
       "achieved_minutes_median": 12.0,
       "achieved_minutes_p10": 10.48,
       "achieved_minutes_p90": 13.54,
-      "delivered": 590,
-      "delivery_rate": 0.858806404657933,
+      "delivered": 592,
+      "delivery_rate": 0.8592162554426706,
       "lateness_minutes_max": 14.64,
-      "lateness_minutes_median": 2.99,
+      "lateness_minutes_median": 3.0,
       "missed": 97
     },
     "30": {
       "achieved_minutes_median": 27.3,
       "achieved_minutes_p10": 24.8,
-      "achieved_minutes_p90": 29.03,
-      "delivered": 589,
-      "delivery_rate": 0.8561046511627907,
+      "achieved_minutes_p90": 29.07,
+      "delivered": 591,
+      "delivery_rate": 0.8565217391304348,
       "lateness_minutes_max": 16.98,
       "lateness_minutes_median": 2.7,
       "missed": 99
@@ -34,8 +34,8 @@
       "achieved_minutes_median": 2.08,
       "achieved_minutes_p10": 0.04,
       "achieved_minutes_p90": 2.56,
-      "delivered": 589,
-      "delivery_rate": 0.8598540145985402,
+      "delivered": 591,
+      "delivery_rate": 0.8602620087336245,
       "lateness_minutes_max": 7.8,
       "lateness_minutes_median": 2.92,
       "missed": 96
@@ -44,48 +44,20 @@
       "achieved_minutes_median": 61.18,
       "achieved_minutes_p10": 56.84,
       "achieved_minutes_p90": 62.25,
-      "delivered": 608,
-      "delivery_rate": 0.8723098995695839,
+      "delivered": 610,
+      "delivery_rate": 0.8726752503576538,
       "lateness_minutes_max": 31.12,
-      "lateness_minutes_median": -1.18,
+      "lateness_minutes_median": -1.19,
       "missed": 89
     }
   },
-  "delivered_total": 3027,
-  "delivery_rate_total": 0.8733410271206001,
-  "fixtures_tracked": 709,
-  "generated_at": "2026-11-04T21:34:18Z",
+  "delivered_total": 3037,
+  "delivery_rate_total": 0.8737054085155351,
+  "fixtures_tracked": 711,
+  "generated_at": "2026-11-05T01:34:57Z",
   "missed_total": 439,
-  "n_pending_fixtures": 55,
+  "n_pending_fixtures": 53,
   "pending_fixtures": [
-    {
-      "competition_id": "bra.serie_a",
-      "fixture_id": "fx:bra.serie_a:2026:bra.flamengo:bra.gremio",
-      "kickoff_utc": "2026-11-04T22:30:00Z",
-      "markets_discovered": 29,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "bra.serie_a",
-      "fixture_id": "fx:bra.serie_a:2026:bra.athletico_paranaense:bra.vasco",
-      "kickoff_utc": "2026-11-04T22:30:00Z",
-      "markets_discovered": 29,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "bra.serie_a",
-      "fixture_id": "fx:bra.serie_a:2026:bra.sao_paulo:bra.corinthians",
-      "kickoff_utc": "2026-11-05T00:30:00Z",
-      "markets_discovered": 29,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "bra.serie_a",
-      "fixture_id": "fx:bra.serie_a:2026:bra.botafogo:bra.atletico_mineiro",
-      "kickoff_utc": "2026-11-05T00:30:00Z",
-      "markets_discovered": 29,
-      "source": "run_output"
-    },
     {
       "competition_id": "arg.primera",
       "fixture_id": "fx:arg.primera:2026:arg.aldosivi:arg.river_plate",
@@ -440,6 +412,20 @@
       "competition_id": "usa.mls",
       "fixture_id": "fx:usa.mls:2026:usa.ny_red_bulls:usa.atlanta_united",
       "kickoff_utc": "2026-11-07T21:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "mex.liga_mx",
+      "fixture_id": "fx:mex.liga_mx:2026:mex.atlas:mex.pachuca",
+      "kickoff_utc": "2026-11-07T23:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "mex.liga_mx",
+      "fixture_id": "fx:mex.liga_mx:2026:mex.tigres:mex.cruz_azul",
+      "kickoff_utc": "2026-11-07T23:00:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }
