@@ -1,9 +1,9 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 574,
-  "CLOSE_BLOCKED_BUDGET": 7,
   "MISSED_DISPATCHER_CLOSE": 86,
-  "PINNACLE_VALID_CLOSE": 22,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 574,
+  "PINNACLE_VALID_CLOSE": 25,
+  "CLOSE_BLOCKED_BUDGET": 7,
   "PINNACLE_QUOTED_NOTHING": 2
  },
  "fixtures": {
@@ -11,6 +11,11 @@
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
    "batch_id": null
+  },
+  "fx:arg.primera:2026:arg.aldosivi:arg.river_plate": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261105T174339Z"
   },
   "fx:arg.primera:2026:arg.aldosivi:arg.sarmiento": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -136,6 +141,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:arg.primera:2026:arg.gimnasia_la_plata:arg.belgrano": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261105T220000Z"
   },
   "fx:arg.primera:2026:arg.gimnasia_la_plata:arg.sarmiento": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -556,6 +566,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:bra.serie_a:2026:bra.palmeiras:bra.remo": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261105T221457Z"
   },
   "fx:bra.serie_a:2026:bra.remo:bra.botafogo": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
