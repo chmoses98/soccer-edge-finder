@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-05T00:15:17.660419+00:00",
+  "as_of": "2026-11-05T07:57:48.854240+00:00",
   "events": 530,
   "events_skipped_unmapped": 291,
   "fixtures_mapped": 239,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=76"
+      "weather_stopped:consecutive_failures:skipped=80"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 26,
-    "events": 101,
+    "captured": 9,
+    "events": 77,
     "failures": [],
-    "published_post": 45,
-    "published_pre_kickoff": 2,
-    "unchanged": 75,
-    "unpublished": 54
+    "published_post": 24,
+    "published_pre_kickoff": 0,
+    "unchanged": 68,
+    "unpublished": 53
   },
   "map_proposals": {
     "bel.1": {
@@ -347,7 +347,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 11,
+  "results_appended": 4,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -518,17 +518,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 13,
-    "events": 92,
+    "captured": 16,
+    "events": 99,
     "failures": [
-      "401892144: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Sydney&count=5&language=en&form",
-      "401892143: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Auckland&count=5&language=en&fo",
-      "401892142: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Melbourne&count=5&language=en&f"
+      "401892142: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-37.8140&longitude=144.9633&hourly=",
+      "401892141: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Perth&count=5&language=en&forma",
+      "401892140: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-33.8678&longitude=151.2073&hourly="
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 76,
+    "skipped": 80,
     "stopped": "consecutive_failures"
   }
 }
