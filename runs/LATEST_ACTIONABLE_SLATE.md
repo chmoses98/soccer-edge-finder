@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261105T174636Z-feb993` · generated 2026-11-05T17:46:36.107298Z · trigger `kickoff_chain:T-15` · mode `model_refresh_and_reprice`
+slate `slate-20261105T175753Z-1f6222` · generated 2026-11-05T17:57:53.046245Z · trigger `kickoff_chain:T-5` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-05T17:43:39.812705Z (CURRENT at publish; CURRENT until 2026-11-05T18:03:39.812705Z, STALE after 2026-11-05T18:13:39.812705Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-05T17:55:00.069077Z (CURRENT at publish; CURRENT until 2026-11-05T18:15:00.069077Z, STALE after 2026-11-05T18:25:00.069077Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-05T17:16:29.011363Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.52s
+model board generated 2026-11-05T17:16:29.011363Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.51s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -82,18 +82,18 @@ model board generated 2026-11-05T17:16:29.011363Z · simulations this update: 0 
 | Necaxa vs Tijuana | Total goals over 2.5 | no | 0.4100 | 0.551 [0.387, 0.704] | +0.124 | +0.021 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | Mainz 05 vs Bayern Munich | Result: home | yes | 0.1300 | 0.273 [0.113, 0.450] | +0.135 | +0.020 | 0.14 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 0.5 | no | 0.0400 | 0.102 [0.046, 0.167] | +0.059 | +0.019 | 0.05 | - |  | RESEARCH_CANDIDATE |
-| Palmeiras vs Remo | Result: home | no | 0.1950 | 0.314 [0.184, 0.453] | +0.108 | +0.018 | 0.21 | - | * | RESEARCH_CANDIDATE |
 | Mainz 05 vs Bayern Munich | Result: draw | yes | 0.1400 | 0.197 [0.143, 0.251] | +0.048 | +0.018 | 0.15 | - |  | RESEARCH_CANDIDATE |
-| Palmeiras vs Remo | Result: draw | yes | 0.1350 | 0.215 [0.134, 0.296] | +0.072 | +0.017 | 0.15 | - |  | RESEARCH_CANDIDATE |
+| Palmeiras vs Remo | Result: draw | yes | 0.1350 | 0.215 [0.134, 0.296] | +0.072 | +0.017 | 0.15 | - | * | RESEARCH_CANDIDATE |
 | Necaxa vs Tijuana | home team total over 2.5 | no | 0.8000 | 0.880 [0.781, 0.957] | +0.069 | +0.017 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 5.5 | no | 0.9100 | 0.953 [0.900, 0.989] | +0.037 | +0.016 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Necaxa vs Tijuana | Total goals over 3.5 | no | 0.6400 | 0.754 [0.610, 0.875] | +0.098 | +0.015 | 0.65 | - |  | RESEARCH_CANDIDATE |
+| Atlante vs Santos Laguna | away team total over 1.5 | no | 0.6000 | 0.715 [0.573, 0.843] | +0.098 | +0.015 | 0.61 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 469
-action_NO_QUOTE: 2178
+action_NO_EDGE: 466
+action_NO_QUOTE: 2181
 action_RESEARCH_CANDIDATE: 59
 contract_sides: 2706
 fixtures: 31
