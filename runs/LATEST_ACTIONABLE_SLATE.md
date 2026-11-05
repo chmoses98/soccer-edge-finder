@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261105T181255Z-3b28f5` · generated 2026-11-05T18:12:55.354910Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261105T182748Z-c9281e` · generated 2026-11-05T18:27:48.726085Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-05T18:10:01.781290Z (CURRENT at publish; CURRENT until 2026-11-05T18:30:01.781290Z, STALE after 2026-11-05T18:40:01.781290Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-05T18:25:01.802407Z (CURRENT at publish; CURRENT until 2026-11-05T18:45:01.802407Z, STALE after 2026-11-05T18:55:01.802407Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-05T18:12:53.129990Z · simulations this update: 3 · Odds API calls this update: 0 (credits 0) · reprice 0.53s
+model board generated 2026-11-05T18:12:53.129990Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.53s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-05T18:12:53.129990Z · simulations this update: 3 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-05T22:15:00Z | Gimnasia La Plata vs Belgrano (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-05T22:15:00Z | Gimnasia La Plata vs Belgrano (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-05T22:30:00Z | Palmeiras vs Remo (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-06T00:30:00Z | Cruzeiro vs Bahia (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-06T19:30:00Z | Hamburger SV vs Borussia Mönchengladbach (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -45,13 +45,13 @@ model board generated 2026-11-05T18:12:53.129990Z · simulations this update: 3 
 | 2026-11-07T17:00:00Z | Parma vs Bologna (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-07T17:30:00Z | VfB Stuttgart vs Werder Bremen (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (60; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (59; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Arsenal vs Hull City | Result: home | no | 0.1600 | 0.460 [0.242, 0.677] | +0.290 | +0.149 | 0.3 | - | * | RESEARCH_CANDIDATE |
 | Leeds United vs Tottenham Hotspur | Result: home | yes | 0.3600 | 0.620 [0.444, 0.790] | +0.243 | +0.136 | 0.49 | - | * | RESEARCH_CANDIDATE |
-| Leeds United vs Tottenham Hotspur | Result: away | no | 0.6500 | 0.837 [0.729, 0.933] | +0.171 | +0.110 | 0.76 | - |  | RESEARCH_CANDIDATE |
+| Leeds United vs Tottenham Hotspur | Result: away | no | 0.6300 | 0.837 [0.729, 0.933] | +0.190 | +0.130 | 0.76 | - |  | RESEARCH_CANDIDATE |
 | Parma vs Bologna | Result: away | no | 0.4800 | 0.676 [0.519, 0.813] | +0.179 | +0.093 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Atlante vs Santos Laguna | btts | no | 0.3700 | 0.555 [0.433, 0.680] | +0.169 | +0.086 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Atlante vs Santos Laguna | Total goals over 3.5 | no | 0.6200 | 0.791 [0.660, 0.906] | +0.155 | +0.077 | 0.69 | - | * | RESEARCH_CANDIDATE |
@@ -59,7 +59,6 @@ model board generated 2026-11-05T18:12:53.129990Z · simulations this update: 3 
 | Arsenal vs Hull City | Result: draw | yes | 0.1200 | 0.263 [0.161, 0.367] | +0.136 | +0.074 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Mainz 05 vs Bayern Munich | Result: away | no | 0.2600 | 0.470 [0.265, 0.671] | +0.196 | +0.065 | 0.32 | - | * | RESEARCH_CANDIDATE |
 | Sunderland vs Chelsea | Result: home | yes | 0.2600 | 0.460 [0.276, 0.654] | +0.186 | +0.057 | 0.31 | - | * | RESEARCH_CANDIDATE |
-| Sunderland vs Chelsea | Result: away | no | 0.5200 | 0.694 [0.524, 0.848] | +0.156 | +0.055 | 0.57 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 2.5 | no | 0.3900 | 0.565 [0.391, 0.728] | +0.159 | +0.054 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Crystal Palace vs Liverpool | Result: away | no | 0.3900 | 0.578 [0.397, 0.757] | +0.171 | +0.054 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Atlante vs Santos Laguna | Total goals over 1.5 | no | 0.1800 | 0.341 [0.205, 0.488] | +0.151 | +0.054 | 0.23 | - |  | RESEARCH_CANDIDATE |
@@ -67,6 +66,7 @@ model board generated 2026-11-05T18:12:53.129990Z · simulations this update: 3 
 | Atlante vs Santos Laguna | Total goals over 4.5 | no | 0.8000 | 0.906 [0.825, 0.970] | +0.094 | +0.052 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | Arsenal vs Hull City | Result: away | yes | 0.0500 | 0.196 [0.070, 0.350] | +0.143 | +0.048 | 0.09 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 3.5 | no | 0.6200 | 0.764 [0.614, 0.890] | +0.128 | +0.048 | 0.66 | - |  | RESEARCH_CANDIDATE |
+| Sunderland vs Chelsea | Result: away | no | 0.5300 | 0.694 [0.524, 0.848] | +0.146 | +0.045 | 0.57 | - |  | RESEARCH_CANDIDATE |
 | Necaxa vs Tijuana | btts | no | 0.3800 | 0.513 [0.380, 0.634] | +0.116 | +0.038 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | AJ Auxerre vs Paris FC | Result: away | no | 0.4600 | 0.627 [0.450, 0.791] | +0.149 | +0.038 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Venezia vs Udinese | Result: away | yes | 0.3100 | 0.517 [0.298, 0.742] | +0.192 | +0.036 | 0.34 | - | * | RESEARCH_CANDIDATE |
@@ -86,16 +86,16 @@ model board generated 2026-11-05T18:12:53.129990Z · simulations this update: 3 
 | AJ Auxerre vs Paris FC | Result: home | yes | 0.2200 | 0.371 [0.204, 0.555] | +0.139 | +0.020 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 0.5 | no | 0.0400 | 0.102 [0.046, 0.167] | +0.059 | +0.019 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Mainz 05 vs Bayern Munich | Result: draw | yes | 0.1400 | 0.197 [0.143, 0.251] | +0.048 | +0.018 | 0.15 | - |  | RESEARCH_CANDIDATE |
+| Atlante vs Santos Laguna | First half: both teams to score | no | 0.7700 | 0.847 [0.769, 0.921] | +0.065 | +0.018 | 0.78 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Result: draw | yes | 0.1350 | 0.215 [0.134, 0.296] | +0.072 | +0.017 | 0.15 | - | * | RESEARCH_CANDIDATE |
 | Necaxa vs Tijuana | home team total over 2.5 | no | 0.8000 | 0.880 [0.781, 0.957] | +0.069 | +0.017 | 0.81 | - |  | RESEARCH_CANDIDATE |
-| Palmeiras vs Remo | Total goals over 5.5 | no | 0.9100 | 0.953 [0.900, 0.989] | +0.037 | +0.016 | 0.92 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 477
+action_NO_EDGE: 478
 action_NO_QUOTE: 2131
-action_RESEARCH_CANDIDATE: 60
+action_RESEARCH_CANDIDATE: 59
 contract_sides: 2668
 fixtures: 32
 fixtures_model_invalidated: 0
