@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261105T092803Z-257599` · generated 2026-11-05T09:28:03.584048Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261105T094304Z-a9fa81` · generated 2026-11-05T09:43:04.350818Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-05T09:25:22.657784Z (CURRENT at publish; CURRENT until 2026-11-05T09:45:22.657784Z, STALE after 2026-11-05T09:55:22.657784Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-05T09:40:23.400615Z (CURRENT at publish; CURRENT until 2026-11-05T10:00:23.400615Z, STALE after 2026-11-05T10:10:23.400615Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-05T08:42:42.099168Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.19s
 
@@ -27,7 +27,7 @@ model board generated 2026-11-05T08:42:42.099168Z · simulations this update: 0 
 | 2026-11-07T01:00:00Z | Atlético San Luis vs FC Juárez (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-07T03:00:00Z | Atlante vs Santos Laguna (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (20; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (19; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -50,14 +50,13 @@ model board generated 2026-11-05T08:42:42.099168Z · simulations this update: 0 
 | Necaxa vs Tijuana | Total goals over 3.5 | no | 0.6500 | 0.754 [0.610, 0.875] | +0.088 | +0.005 | 0.65 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | home wins by more than 2.5 | no | 0.6700 | 0.769 [0.617, 0.888] | +0.083 | +0.005 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 0.5 | no | 0.0500 | 0.097 [0.044, 0.161] | +0.044 | +0.005 | 0.05 | - |  | RESEARCH_CANDIDATE |
-| Palmeiras vs Remo | home wins by more than 1.5 | no | 0.4400 | 0.560 [0.388, 0.712] | +0.103 | +0.001 | 0.44 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 336
+action_NO_EDGE: 337
 action_NO_QUOTE: 282
-action_RESEARCH_CANDIDATE: 20
+action_RESEARCH_CANDIDATE: 19
 contract_sides: 638
 fixtures: 14
 fixtures_model_invalidated: 0
