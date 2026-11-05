@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261105T112808Z-816ef7` · generated 2026-11-05T11:28:08.838771Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261105T114309Z-f73396` · generated 2026-11-05T11:43:09.645900Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-05T11:25:27.885620Z (CURRENT at publish; CURRENT until 2026-11-05T11:45:27.885620Z, STALE after 2026-11-05T11:55:27.885620Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-05T11:40:28.672532Z (CURRENT at publish; CURRENT until 2026-11-05T12:00:28.672532Z, STALE after 2026-11-05T12:10:28.672532Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-05T08:42:42.099168Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.26s
 
@@ -55,6 +55,7 @@ model board generated 2026-11-05T08:42:42.099168Z · simulations this update: 0 
 | Atlante vs Santos Laguna | First-half total goals over 0.5 | no | 0.2700 | 0.372 [0.258, 0.492] | +0.089 | +0.014 | 0.28 | - |  | RESEARCH_CANDIDATE |
 | Necaxa vs Tijuana | Total goals over 4.5 | no | 0.8100 | 0.883 [0.786, 0.956] | +0.062 | +0.012 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | Atlante vs Santos Laguna | First-half total goals over 2.5 | no | 0.8600 | 0.914 [0.849, 0.971] | +0.046 | +0.012 | 0.87 | - |  | RESEARCH_CANDIDATE |
+| Palmeiras vs Remo | home wins by more than 1.5 | no | 0.4300 | 0.560 [0.388, 0.712] | +0.113 | +0.011 | 0.44 | - |  | RESEARCH_CANDIDATE |
 | Necaxa vs Tijuana | Total goals over 2.5 | no | 0.4200 | 0.551 [0.387, 0.704] | +0.114 | +0.010 | 0.43 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Remo | Total goals over 5.5 | no | 0.9100 | 0.949 [0.897, 0.988] | +0.033 | +0.008 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | Necaxa vs Tijuana | home team total over 2.5 | no | 0.8100 | 0.880 [0.781, 0.957] | +0.059 | +0.008 | 0.81 | - |  | RESEARCH_CANDIDATE |
@@ -62,7 +63,6 @@ model board generated 2026-11-05T08:42:42.099168Z · simulations this update: 0 
 | Atlante vs Santos Laguna | Exact score 1-0 (home-away) | yes | 0.0800 | 0.120 [0.073, 0.173] | +0.035 | +0.003 | 0.08 | - | * | RESEARCH_CANDIDATE |
 | Atlante vs Santos Laguna | away team total over 0.5 | no | 0.2600 | 0.361 [0.234, 0.495] | +0.088 | +0.003 | 0.26 | - | * | RESEARCH_CANDIDATE |
 | Atlante vs Santos Laguna | home team total over 1.5 | no | 0.5300 | 0.653 [0.471, 0.811] | +0.105 | +0.001 | 0.53 | - |  | RESEARCH_CANDIDATE |
-| Palmeiras vs Remo | home wins by more than 1.5 | no | 0.4400 | 0.560 [0.388, 0.712] | +0.103 | +0.001 | 0.44 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
