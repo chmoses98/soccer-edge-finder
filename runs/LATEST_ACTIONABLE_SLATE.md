@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261106T155625Z-c89a82` · generated 2026-11-06T15:56:25.871619Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261106T162003Z-65f8a7` · generated 2026-11-06T16:20:03.231772Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-06T15:53:09.097922Z (CURRENT at publish; CURRENT until 2026-11-06T16:13:09.097922Z, STALE after 2026-11-06T16:23:09.097922Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-06T16:16:41.670972Z (CURRENT at publish; CURRENT until 2026-11-06T16:36:41.670972Z, STALE after 2026-11-06T16:46:41.670972Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-06T15:28:20.969278Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.85s
+model board generated 2026-11-06T15:28:20.969278Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.25s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -19,9 +19,9 @@ model board generated 2026-11-06T15:28:20.969278Z · simulations this update: 0 
 | 2026-11-06T22:15:00Z | San Lorenzo vs Platense (arg.primera) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-06T22:15:00Z | Unión vs Vélez Sarsfield (arg.primera) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-06T23:00:00Z | Vitória vs Fluminense (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-07T01:00:00Z | Necaxa vs Tijuana (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 32 | 0 |
-| 2026-11-07T01:00:00Z | Atlético San Luis vs FC Juárez (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-07T03:00:00Z | Atlante vs Santos Laguna (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-07T01:00:00Z | Necaxa vs Tijuana (mex.liga_mx) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 32 | 0 |
+| 2026-11-07T01:00:00Z | Atlético San Luis vs FC Juárez (mex.liga_mx) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-07T03:00:00Z | Atlante vs Santos Laguna (mex.liga_mx) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-07T14:00:00Z | Cagliari vs Frosinone (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-07T14:00:00Z | Torino vs Lecce (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-07T14:30:00Z | Borussia Dortmund vs SV Elversberg (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -118,8 +118,8 @@ model board generated 2026-11-06T15:28:20.969278Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2785
-action_NO_QUOTE: 503
+action_NO_EDGE: 2788
+action_NO_QUOTE: 500
 action_RESEARCH_CANDIDATE: 204
 contract_sides: 3492
 fixtures: 57
