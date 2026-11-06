@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261106T173315Z-658ee1` · generated 2026-11-06T17:33:15.084605Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261106T173831Z-f7cb12` · generated 2026-11-06T17:38:31.578704Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-06T17:30:00.071933Z (CURRENT at publish; CURRENT until 2026-11-06T17:50:00.071933Z, STALE after 2026-11-06T18:00:00.071933Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-06T17:35:15.059461Z (CURRENT at publish; CURRENT until 2026-11-06T17:55:15.059461Z, STALE after 2026-11-06T18:05:15.059461Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-06T17:16:13.602786Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.86s
+model board generated 2026-11-06T17:16:13.602786Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 2.05s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -15,9 +15,9 @@ model board generated 2026-11-06T17:16:13.602786Z · simulations this update: 0 
 | 2026-11-06T19:30:00Z | Hamburger SV vs Borussia Mönchengladbach (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-06T19:45:00Z | Toulouse vs Strasbourg (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-06T19:45:00Z | Venezia vs Udinese (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-06T22:15:00Z | Independiente vs Deportivo Riestra (arg.primera) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-06T22:15:00Z | San Lorenzo vs Platense (arg.primera) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-06T22:15:00Z | Unión vs Vélez Sarsfield (arg.primera) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-06T22:15:00Z | Independiente vs Deportivo Riestra (arg.primera) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-06T22:15:00Z | San Lorenzo vs Platense (arg.primera) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-06T22:15:00Z | Unión vs Vélez Sarsfield (arg.primera) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-06T23:00:00Z | Vitória vs Fluminense (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-07T01:00:00Z | Necaxa vs Tijuana (mex.liga_mx) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-11-07T01:00:00Z | Atlético San Luis vs FC Juárez (mex.liga_mx) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -80,7 +80,7 @@ model board generated 2026-11-06T17:16:13.602786Z · simulations this update: 0 
 | 2026-11-08T16:30:00Z | SC Freiburg vs Union Berlin (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T17:00:00Z | Inter Milan vs Como (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (210; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (211; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -128,9 +128,9 @@ model board generated 2026-11-06T17:16:13.602786Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2838
-action_NO_QUOTE: 482
-action_RESEARCH_CANDIDATE: 210
+action_NO_EDGE: 2836
+action_NO_QUOTE: 483
+action_RESEARCH_CANDIDATE: 211
 contract_sides: 3530
 fixtures: 67
 fixtures_model_invalidated: 0
