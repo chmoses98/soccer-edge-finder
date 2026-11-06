@@ -54,7 +54,311 @@
   "delivered_total": 3057,
   "delivery_rate_total": 0.8729297544260423,
   "fixtures_tracked": 715,
-  "generated_at": "2026-11-06T00:28:10Z",
+  "generated_at": "2026-11-06T02:33:53Z",
+  "last_tick": {
+    "batches": 12,
+    "summary": [
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:2",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=2674:sim=0"
+        ],
+        "batch_id": "kd-20261105T210457Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.gimnasia_la_plata:arg.belgrano",
+            120,
+            70.05
+          ],
+          [
+            "fx:bra.serie_a:2026:bra.palmeiras:bra.remo",
+            120,
+            85.05
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:ok:fixtures=1:sim=0:cache=0:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261105T211024Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.gimnasia_la_plata:arg.belgrano",
+            60,
+            64.59
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:ok:fixtures=1:sim=1:cache=0:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261105T212524Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:bra.serie_a:2026:bra.palmeiras:bra.remo",
+            60,
+            64.59
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "model_refresh:ok:fixtures=40:sim=9:board=27:why=entered_lookahead_unmodelled",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "ks-20261105T214027Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=2048:sim=0"
+        ],
+        "batch_id": "kd-20261105T214717Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.gimnasia_la_plata:arg.belgrano",
+            30,
+            27.71
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:2",
+          "model_refresh:ok:fixtures=2:sim=1:cache=0:why=T-15:invalidated,T-30:invalidated",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261105T220000Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.gimnasia_la_plata:arg.belgrano",
+            15,
+            15.0
+          ],
+          [
+            "fx:bra.serie_a:2026:bra.palmeiras:bra.remo",
+            30,
+            30.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:ok:fixtures=1:sim=0:cache=0:why=T-5:invalidated",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261105T221003Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.gimnasia_la_plata:arg.belgrano",
+            5,
+            4.94
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=2020:sim=0"
+        ],
+        "batch_id": "kd-20261105T221457Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:bra.serie_a:2026:bra.palmeiras:bra.remo",
+            15,
+            15.03
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=2020:sim=0"
+        ],
+        "batch_id": "kd-20261105T222500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:bra.serie_a:2026:bra.palmeiras:bra.remo",
+            5,
+            5.0
+          ],
+          [
+            "fx:bra.serie_a:2026:bra.cruzeiro:bra.bahia",
+            120,
+            125.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1992:sim=0"
+        ],
+        "batch_id": "ks-20261105T224001Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1992:sim=0"
+        ],
+        "batch_id": "ks-20261105T225501Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "model_refresh:ok:fixtures=1:sim=1:board=1:why=entered_lookahead_unmodelled",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "ks-20261105T231003Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:ok:fixtures=1:sim=1:cache=0:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261105T232503Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:bra.serie_a:2026:bra.cruzeiro:bra.bahia",
+            60,
+            64.94
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=2116:sim=0"
+        ],
+        "batch_id": "ks-20261105T234006Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=2116:sim=0"
+        ],
+        "batch_id": "ks-20261105T235506Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=2116:sim=0"
+        ],
+        "batch_id": "kd-20261105T235956Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:bra.serie_a:2026:bra.cruzeiro:bra.bahia",
+            30,
+            30.05
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=2116:sim=0"
+        ],
+        "batch_id": "kd-20261106T001458Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:bra.serie_a:2026:bra.cruzeiro:bra.bahia",
+            15,
+            15.02
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=2116:sim=0"
+        ],
+        "batch_id": "kd-20261106T002500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:bra.serie_a:2026:bra.cruzeiro:bra.bahia",
+            5,
+            5.0
+          ]
+        ]
+      }
+    ]
+  },
   "missed_total": 445,
   "n_pending_fixtures": 104,
   "pending_fixtures": [
