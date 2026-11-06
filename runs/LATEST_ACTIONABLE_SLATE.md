@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261106T194837Z-1b4904` · generated 2026-11-06T19:48:37.753111Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261106T195814Z-1a907e` · generated 2026-11-06T19:58:14.473178Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-06T19:45:23.006916Z (CURRENT at publish; CURRENT until 2026-11-06T20:05:23.006916Z, STALE after 2026-11-06T20:15:23.006916Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-06T19:55:00.071232Z (CURRENT at publish; CURRENT until 2026-11-06T20:15:00.071232Z, STALE after 2026-11-06T20:25:00.071232Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-06T18:43:59.428530Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 2.07s
 
@@ -79,7 +79,7 @@ model board generated 2026-11-06T18:43:59.428530Z · simulations this update: 0 
 | 2026-11-08T16:30:00Z | SC Freiburg vs Union Berlin (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T17:00:00Z | Inter Milan vs Como (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (207; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (206; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -127,9 +127,9 @@ model board generated 2026-11-06T18:43:59.428530Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2832
+action_NO_EDGE: 2833
 action_NO_QUOTE: 485
-action_RESEARCH_CANDIDATE: 207
+action_RESEARCH_CANDIDATE: 206
 contract_sides: 3524
 fixtures: 66
 fixtures_model_invalidated: 0
