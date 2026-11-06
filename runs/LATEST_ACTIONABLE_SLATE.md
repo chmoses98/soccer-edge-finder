@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261106T063937Z-b9cd75` · generated 2026-11-06T06:39:37.593442Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261106T065434Z-07eb21` · generated 2026-11-06T06:54:34.795651Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-06T06:36:28.373745Z (CURRENT at publish; CURRENT until 2026-11-06T06:56:28.373745Z, STALE after 2026-11-06T07:06:28.373745Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-06T06:51:25.534196Z (CURRENT at publish; CURRENT until 2026-11-06T07:11:25.534196Z, STALE after 2026-11-06T07:21:25.534196Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-06T06:09:43.210903Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.40s
 
@@ -88,10 +88,10 @@ model board generated 2026-11-06T06:09:43.210903Z · simulations this update: 0 
 | Seattle Sounders vs Los Angeles FC | btts | no | 0.4000 | 0.576 [0.464, 0.684] | +0.160 | +0.094 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | away team total over 1.5 | no | 0.5700 | 0.748 [0.629, 0.850] | +0.161 | +0.094 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | D.C. United vs New York City FC | btts | no | 0.4000 | 0.578 [0.472, 0.688] | +0.162 | +0.093 | 0.49 | - | * | RESEARCH_CANDIDATE |
+| Parma vs Bologna | Result: away | no | 0.4800 | 0.676 [0.519, 0.814] | +0.179 | +0.093 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | First-half result: away | no | 0.5700 | 0.744 [0.638, 0.842] | +0.157 | +0.093 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away wins by more than 2.5 | no | 0.8300 | 0.948 [0.905, 0.982] | +0.108 | +0.086 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Arsenal vs Hull City | Result: draw | yes | 0.1100 | 0.263 [0.161, 0.367] | +0.146 | +0.084 | 0.19 | - |  | RESEARCH_CANDIDATE |
-| Parma vs Bologna | Result: away | no | 0.4900 | 0.676 [0.519, 0.814] | +0.169 | +0.083 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | CF Montréal vs Vancouver Whitecaps | Total goals over 4.5 | no | 0.7400 | 0.882 [0.787, 0.954] | +0.129 | +0.083 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 1.5 | no | 0.1900 | 0.361 [0.234, 0.485] | +0.160 | +0.081 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | D.C. United vs New York City FC | Total goals over 1.5 | no | 0.2000 | 0.373 [0.250, 0.500] | +0.162 | +0.080 | 0.27 | - |  | RESEARCH_CANDIDATE |
