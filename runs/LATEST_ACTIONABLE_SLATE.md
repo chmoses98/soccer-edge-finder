@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261106T000308Z-27febd` · generated 2026-11-06T00:03:08.850180Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261106T001605Z-b5fd4a` · generated 2026-11-06T00:16:05.858625Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-05T23:59:56.943700Z (CURRENT at publish; CURRENT until 2026-11-06T00:19:56.943700Z, STALE after 2026-11-06T00:29:56.943700Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-06T00:12:45.894668Z (CURRENT at publish; CURRENT until 2026-11-06T00:32:45.894668Z, STALE after 2026-11-06T00:42:45.894668Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-05T23:28:21.006377Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.90s
+model board generated 2026-11-05T23:28:21.006377Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.55s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -54,7 +54,7 @@ model board generated 2026-11-05T23:28:21.006377Z · simulations this update: 0 
 | 2026-11-07T21:00:00Z | Philadelphia Union vs Toronto FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-07T23:00:00Z | Atlas vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (125; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (126; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -84,15 +84,15 @@ model board generated 2026-11-05T23:28:21.006377Z · simulations this update: 0 
 | CF Montréal vs Vancouver Whitecaps | btts | no | 0.3700 | 0.531 [0.405, 0.652] | +0.145 | +0.066 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | D.C. United vs New York City FC | Total goals over 4.5 | no | 0.8200 | 0.925 [0.868, 0.973] | +0.095 | +0.065 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | Mainz 05 vs Bayern Munich | Result: away | no | 0.2600 | 0.470 [0.265, 0.671] | +0.196 | +0.065 | 0.32 | - | * | RESEARCH_CANDIDATE |
+| Sunderland vs Chelsea | Result: away | no | 0.5100 | 0.694 [0.524, 0.848] | +0.166 | +0.064 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | away team total over 0.5 | no | 0.2400 | 0.391 [0.274, 0.505] | +0.138 | +0.064 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | Total goals over 5.5 | no | 0.8500 | 0.945 [0.893, 0.984] | +0.086 | +0.064 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | CF Montréal vs Vancouver Whitecaps | First-half total goals over 1.5 | no | 0.5500 | 0.700 [0.578, 0.812] | +0.132 | +0.063 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | First-half total goals over 1.5 | no | 0.5300 | 0.683 [0.568, 0.792] | +0.136 | +0.063 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | CF Montréal vs Vancouver Whitecaps | away team total over 2.5 | no | 0.6500 | 0.792 [0.665, 0.898] | +0.127 | +0.062 | 0.71 | - |  | RESEARCH_CANDIDATE |
-| Sunderland vs Chelsea | Result: home | yes | 0.2600 | 0.460 [0.276, 0.654] | +0.186 | +0.057 | 0.31 | - | * | RESEARCH_CANDIDATE |
+| Sunderland vs Chelsea | Result: home | yes | 0.2600 | 0.460 [0.276, 0.654] | +0.186 | +0.057 | 0.31 | - |  | RESEARCH_CANDIDATE |
 | CF Montréal vs Vancouver Whitecaps | Total goals over 1.5 | no | 0.1500 | 0.297 [0.175, 0.424] | +0.138 | +0.057 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | D.C. United vs New York City FC | away team total over 0.5 | no | 0.2200 | 0.363 [0.246, 0.478] | +0.131 | +0.055 | 0.27 | - |  | RESEARCH_CANDIDATE |
-| Sunderland vs Chelsea | Result: away | no | 0.5200 | 0.694 [0.524, 0.848] | +0.156 | +0.055 | 0.57 | - |  | RESEARCH_CANDIDATE |
 | Crystal Palace vs Liverpool | Result: away | no | 0.3900 | 0.578 [0.397, 0.757] | +0.171 | +0.054 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Atlante vs Santos Laguna | Total goals over 1.5 | no | 0.1800 | 0.341 [0.205, 0.488] | +0.151 | +0.054 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | D.C. United vs New York City FC | First-half total goals over 1.5 | no | 0.6200 | 0.756 [0.648, 0.862] | +0.119 | +0.054 | 0.67 | - | * | RESEARCH_CANDIDATE |
@@ -102,9 +102,9 @@ model board generated 2026-11-05T23:28:21.006377Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1571
-action_NO_QUOTE: 420
-action_RESEARCH_CANDIDATE: 125
+action_NO_EDGE: 1573
+action_NO_QUOTE: 417
+action_RESEARCH_CANDIDATE: 126
 contract_sides: 2116
 fixtures: 41
 fixtures_model_invalidated: 0
