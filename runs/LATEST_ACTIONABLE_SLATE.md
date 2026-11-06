@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261106T135808Z-66dada` · generated 2026-11-06T13:58:08.653329Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261106T141316Z-344792` · generated 2026-11-06T14:13:16.845070Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-06T13:54:57.594994Z (CURRENT at publish; CURRENT until 2026-11-06T14:14:57.594994Z, STALE after 2026-11-06T14:24:57.594994Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-06T14:09:57.620519Z (CURRENT at publish; CURRENT until 2026-11-06T14:29:57.620519Z, STALE after 2026-11-06T14:39:57.620519Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-06T13:13:07.901555Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 2.03s
+model board generated 2026-11-06T14:13:12.913300Z · simulations this update: 7 · Odds API calls this update: 0 (credits 0) · reprice 1.84s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -29,15 +29,15 @@ model board generated 2026-11-06T13:13:07.901555Z · simulations this update: 0 
 | 2026-11-07T14:30:00Z | Mainz 05 vs Bayern Munich (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-07T14:30:00Z | SC Paderborn 07 vs Eintracht Frankfurt (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-07T15:00:00Z | Arsenal vs Hull City (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-07T15:00:00Z | Brighton & Hove Albion vs Brentford (eng.premier_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-11-07T15:00:00Z | Crystal Palace vs Liverpool (eng.premier_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-07T15:00:00Z | Brighton & Hove Albion vs Brentford (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-07T15:00:00Z | Crystal Palace vs Liverpool (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-07T15:00:00Z | Everton vs Coventry City (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-07T15:00:00Z | Fulham vs Newcastle United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-07T15:00:00Z | Ipswich Town vs Bournemouth (eng.premier_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-07T15:00:00Z | Ipswich Town vs Bournemouth (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-07T15:00:00Z | Leeds United vs Tottenham Hotspur (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-07T15:00:00Z | Manchester United vs Aston Villa (eng.premier_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-07T15:00:00Z | Nottingham Forest vs Manchester City (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-07T15:00:00Z | Sunderland vs Chelsea (eng.premier_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-07T15:00:00Z | Sunderland vs Chelsea (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-07T16:15:00Z | AJ Auxerre vs Paris FC (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-07T17:00:00Z | Parma vs Bologna (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-07T17:30:00Z | VfB Stuttgart vs Werder Bremen (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -64,8 +64,11 @@ model board generated 2026-11-06T13:13:07.901555Z · simulations this update: 0 
 | 2026-11-08T03:10:00Z | Pumas UNAM vs Club América (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-08T11:30:00Z | Napoli vs Lazio (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T12:00:00Z | Elche vs Real Betis (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-08T14:00:00Z | Rennes vs Lille (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-08T14:00:00Z | Genoa vs AC Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-08T14:00:00Z | Monza vs Atalanta (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (208; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (209; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -113,11 +116,11 @@ model board generated 2026-11-06T13:13:07.901555Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2752
-action_NO_QUOTE: 590
-action_RESEARCH_CANDIDATE: 208
-contract_sides: 3550
-fixtures: 52
+action_NO_EDGE: 2770
+action_NO_QUOTE: 501
+action_RESEARCH_CANDIDATE: 209
+contract_sides: 3480
+fixtures: 55
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
