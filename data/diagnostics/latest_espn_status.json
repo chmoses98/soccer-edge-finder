@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-05T17:04:26.237576+00:00",
-  "events": 530,
-  "events_skipped_unmapped": 291,
-  "fixtures_mapped": 239,
+  "as_of": "2026-11-06T00:25:51.739954+00:00",
+  "events": 518,
+  "events_skipped_unmapped": 271,
+  "fixtures_mapped": 247,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=92"
+      "weather_stopped:consecutive_failures:skipped=130"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 41,
-    "events": 90,
+    "captured": 89,
+    "events": 105,
     "failures": [],
-    "published_post": 23,
-    "published_pre_kickoff": 16,
-    "unchanged": 49,
-    "unpublished": 51
+    "published_post": 58,
+    "published_pre_kickoff": 1,
+    "unchanged": 16,
+    "unpublished": 46
   },
   "map_proposals": {
     "bel.1": {
@@ -216,12 +216,9 @@
     "esp.2": {
       "ambiguous": {},
       "proposed": {
-        "17534": "esp.leganes",
-        "84": "esp.mallorca"
+        "17534": "esp.leganes"
       },
       "unresolved": {
-        "11487": "CD Sabadell",
-        "245": "Tenerife",
         "2737": "Albacete",
         "3752": "Eibar"
       }
@@ -229,13 +226,10 @@
     "esp.copa_del_rey": {
       "ambiguous": {},
       "proposed": {
-        "17534": "esp.leganes",
-        "84": "esp.mallorca"
+        "17534": "esp.leganes"
       },
       "unresolved": {
-        "11487": "CD Sabadell",
         "12587": "Amorebieta",
-        "131470": "Reus FC Reddis",
         "133835": "CD Pamplona",
         "133837": "CD Tarancon",
         "133846": "Tavernes de la Valldigna",
@@ -243,20 +237,12 @@
         "19288": "CD Artistico Navalcarnero",
         "20776": "Anaitasuna",
         "21291": "Calvo Sotelo",
-        "21723": "Utebo",
         "22043": "Mijas Las Lagunas",
-        "22437": "CD Minera",
-        "245": "Tenerife",
+        "22440": "Salamanca UDS",
         "2737": "Albacete",
         "3752": "Eibar",
         "5401": "Real Jaen CF",
-        "5419": "FC Cartagena",
-        "5421": "Barakaldo",
-        "5464": "Portugalete",
-        "5535": "Badajoz",
-        "6827": "Alcoyano",
-        "7206": "UD Logro\u00f1\u00e9s",
-        "8678": "Real Uni\u00f3n Irun"
+        "7206": "UD Logro\u00f1\u00e9s"
       }
     },
     "fifa.friendly": {
@@ -264,16 +250,23 @@
       "proposed": {},
       "unresolved": {
         "14561": "Chinese Taipei",
+        "204": "Bolivia",
+        "4380": "Syria",
+        "4384": "Singapore",
         "4385": "India",
+        "4397": "United Arab Emirates",
         "454": "Russia",
+        "4895": "Indonesia",
         "6686": "Eswatini",
-        "7349": "Vietnam"
+        "7349": "Vietnam",
+        "841": "Kuwait"
       }
     },
     "fra.2": {
       "ambiguous": {},
       "proposed": {},
       "unresolved": {
+        "3170": "Dijon FCO",
         "6994": "Grenoble"
       }
     },
@@ -281,11 +274,17 @@
       "ambiguous": {},
       "proposed": {},
       "unresolved": {
+        "134079": "Neuvillette-Jamin",
         "134117": "Chamb\u00e9ry Savoie",
         "134137": "AS Etoile Matoury",
         "134139": "Olympique De Cayenne",
         "134140": "Sporting Club Baie-Mahault",
         "134141": "Siroco Les Abymes",
+        "16917": "La Roche-sur-Yon",
+        "17483": "Orl\u00e9ans",
+        "22476": "US Saint-Philbert-de-Grand-Lieu",
+        "3170": "Dijon FCO",
+        "6732": "Valenciennes",
         "6994": "Grenoble"
       }
     },
@@ -347,7 +346,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 0,
+  "results_appended": 23,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -379,10 +378,8 @@
   "unmapped_team_ids": {
     "1010": "OFI Crete",
     "10167": "AFC Hornchurch",
-    "11487": "CD Sabadell",
     "12587": "Amorebieta",
     "13083": "Hapoel Be'er",
-    "131470": "Reus FC Reddis",
     "131494": "Macclesfield FC",
     "132144": "Salisbury FC",
     "132350": "Berkhamsted",
@@ -393,6 +390,7 @@
     "133835": "CD Pamplona",
     "133837": "CD Tarancon",
     "133846": "Tavernes de la Valldigna",
+    "134079": "Neuvillette-Jamin",
     "134117": "Chamb\u00e9ry Savoie",
     "134137": "AS Etoile Matoury",
     "134139": "Olympique De Cayenne",
@@ -400,6 +398,8 @@
     "134141": "Siroco Les Abymes",
     "13884": "AFC Fylde",
     "14561": "Chinese Taipei",
+    "16917": "La Roche-sur-Yon",
+    "17483": "Orl\u00e9ans",
     "17534": "Legan\u00e9s",
     "17573": "Trival Valderas",
     "19246": "Riga FC",
@@ -409,6 +409,7 @@
     "20025": "Iberia 1999",
     "20028": "Kauno Zalgiris",
     "20301": "Mj\u00e4llby AIF",
+    "204": "Bolivia",
     "20703": "Inter D'Escaldes",
     "20770": "Cray Wanderers",
     "20771": "Marine",
@@ -416,13 +417,12 @@
     "21291": "Calvo Sotelo",
     "21615": "Torreense",
     "21711": "Alvechurch",
-    "21723": "Utebo",
     "21922": "Sabah FK",
     "21943": "Egnatia",
     "22043": "Mijas Las Lagunas",
-    "22437": "CD Minera",
+    "22440": "Salamanca UDS",
     "22468": "Harborough Town",
-    "245": "Tenerife",
+    "22476": "US Saint-Philbert-de-Grand-Lieu",
     "2567": "Burton Albion",
     "2588": "Guiseley",
     "2589": "Stafford Rangers",
@@ -449,6 +449,7 @@
     "3129": "Bromley",
     "313": "Scunthorpe United",
     "315": "York City",
+    "3170": "Dijon FCO",
     "319": "Kidderminster Harriers",
     "320": "Cheltenham Town",
     "322": "Carlisle United",
@@ -485,18 +486,18 @@
     "400": "Stockport County",
     "401": "Walsall",
     "402": "Rotherham United",
+    "4380": "Syria",
+    "4384": "Singapore",
     "4385": "India",
+    "4397": "United Arab Emirates",
     "4489": "Oxford City",
     "454": "Russia",
     "4703": "Salford City",
     "489": "Hajduk Split",
+    "4895": "Indonesia",
     "490": "Levski Sofia",
     "510": "Viking FK",
     "5401": "Real Jaen CF",
-    "5419": "FC Cartagena",
-    "5421": "Barakaldo",
-    "5464": "Portugalete",
-    "5535": "Badajoz",
     "620": "SK Brann",
     "632": "Aldershot Town",
     "633": "Altrincham",
@@ -504,31 +505,30 @@
     "642": "Barrow",
     "649": "Worcester City",
     "6686": "Eswatini",
-    "6827": "Alcoyano",
+    "6732": "Valenciennes",
     "6994": "Grenoble",
     "7206": "UD Logro\u00f1\u00e9s",
     "7349": "Vietnam",
     "7853": "AGF",
     "8089": "CSU Craiova",
     "8169": "KuPS Kuopio",
-    "84": "Mallorca",
-    "8678": "Real Uni\u00f3n Irun",
+    "841": "Kuwait",
     "909": "F.C. K\u00f8benhavn",
     "936": "Sint-Truidense",
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 17,
-    "events": 112,
+    "captured": 14,
+    "events": 147,
     "failures": [
-      "401892141: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-31.9522&longitude=115.8614&hourly=",
-      "401892140: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-33.8678&longitude=151.2073&hourly=",
-      "401892139: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Adelaide&count=5&language=en&fo"
+      "401892144: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Sydney&count=5&language=en&form",
+      "401892143: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Auckland&count=5&language=en&fo",
+      "401892142: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Melbourne&count=5&language=en&f"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 92,
+    "skipped": 130,
     "stopped": "consecutive_failures"
   }
 }
