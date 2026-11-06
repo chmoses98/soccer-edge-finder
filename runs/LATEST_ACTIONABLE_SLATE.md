@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261106T134307Z-32502d` · generated 2026-11-06T13:43:07.049614Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261106T135808Z-66dada` · generated 2026-11-06T13:58:08.653329Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-06T13:39:55.981128Z (CURRENT at publish; CURRENT until 2026-11-06T13:59:55.981128Z, STALE after 2026-11-06T14:09:55.981128Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-06T13:54:57.594994Z (CURRENT at publish; CURRENT until 2026-11-06T14:14:57.594994Z, STALE after 2026-11-06T14:24:57.594994Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-06T13:13:07.901555Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 2.07s
+model board generated 2026-11-06T13:13:07.901555Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 2.03s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -65,7 +65,7 @@ model board generated 2026-11-06T13:13:07.901555Z · simulations this update: 0 
 | 2026-11-08T11:30:00Z | Napoli vs Lazio (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T12:00:00Z | Elche vs Real Betis (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (209; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (208; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -79,9 +79,9 @@ model board generated 2026-11-06T13:13:07.901555Z · simulations this update: 0 
 | Leeds United vs Tottenham Hotspur | Result: away | no | 0.6300 | 0.837 [0.728, 0.933] | +0.190 | +0.130 | 0.76 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 2.5 | no | 0.4000 | 0.625 [0.477, 0.755] | +0.208 | +0.126 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | Total goals over 2.5 | no | 0.3000 | 0.530 [0.376, 0.677] | +0.215 | +0.124 | 0.42 | - |  | RESEARCH_CANDIDATE |
-| Seattle Sounders vs Los Angeles FC | Total goals over 3.5 | no | 0.6200 | 0.814 [0.698, 0.905] | +0.177 | +0.120 | 0.74 | - |  | RESEARCH_CANDIDATE |
 | D.C. United vs New York City FC | Total goals over 2.5 | no | 0.4200 | 0.637 [0.501, 0.769] | +0.200 | +0.115 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | Total goals over 4.5 | no | 0.7000 | 0.872 [0.777, 0.948] | +0.157 | +0.112 | 0.81 | - |  | RESEARCH_CANDIDATE |
+| Seattle Sounders vs Los Angeles FC | Total goals over 3.5 | no | 0.6300 | 0.814 [0.698, 0.905] | +0.167 | +0.110 | 0.74 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | btts | no | 0.3200 | 0.518 [0.408, 0.628] | +0.183 | +0.109 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | Result: home | yes | 0.2300 | 0.452 [0.306, 0.601] | +0.210 | +0.108 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | CF Montréal vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.5500 | 0.753 [0.611, 0.870] | +0.185 | +0.108 | 0.65 | - | * | RESEARCH_CANDIDATE |
@@ -114,8 +114,8 @@ model board generated 2026-11-06T13:13:07.901555Z · simulations this update: 0 
 
 ```
 action_NO_EDGE: 2752
-action_NO_QUOTE: 589
-action_RESEARCH_CANDIDATE: 209
+action_NO_QUOTE: 590
+action_RESEARCH_CANDIDATE: 208
 contract_sides: 3550
 fixtures: 52
 fixtures_model_invalidated: 0
