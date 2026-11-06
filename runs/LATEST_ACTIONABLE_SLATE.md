@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261106T001605Z-b5fd4a` · generated 2026-11-06T00:16:05.858625Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261106T001811Z-3e7b11` · generated 2026-11-06T00:18:11.084645Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-06T00:12:45.894668Z (CURRENT at publish; CURRENT until 2026-11-06T00:32:45.894668Z, STALE after 2026-11-06T00:42:45.894668Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-06T00:14:58.716362Z (CURRENT at publish; CURRENT until 2026-11-06T00:34:58.716362Z, STALE after 2026-11-06T00:44:58.716362Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-05T23:28:21.006377Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.55s
+model board generated 2026-11-05T23:28:21.006377Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.69s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-05T23:28:21.006377Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-06T00:30:00Z | Cruzeiro vs Bahia (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
+| 2026-11-06T00:30:00Z | Cruzeiro vs Bahia (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
 | 2026-11-06T19:30:00Z | Hamburger SV vs Borussia Mönchengladbach (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-06T19:45:00Z | Toulouse vs Strasbourg (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-06T19:45:00Z | Venezia vs Udinese (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
