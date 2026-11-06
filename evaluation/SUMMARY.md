@@ -1,21 +1,21 @@
-# settle-evaluate 2026-11-05 23:24Z
+# settle-evaluate 2026-11-06 03:26Z
 
-- newly settled: 0
+- newly settled: 167
 - cells evaluated: 132
-- authority proposals: 15
+- authority proposals: 14
 
 | model | family | horizon | n | log loss | market LL | ECE | 80% cov | CLV | authority |
 |---|---|---|---|---|---|---|---|---|---|
 | data_only.world_sim_v2 | btts | T-10m | 1 | 0.48652 | None | 0.3852 | None | -0.01 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | btts | T-12h | 5 | 0.62992 | None | 0.2615 | None | -0.0225 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | btts | T-15m | 13 | 0.69239 | 0.66271 | 0.2587 | None | -0.0042 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | btts | T-24h | 67 | 0.70418 | 0.67824 | 0.1383 | 0.507 | -0.0008 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | btts | T-12h | 8 | 0.70025 | None | 0.1381 | None | -0.015 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | btts | T-15m | 14 | 0.71911 | 0.67483 | 0.2871 | None | -0.0046 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | btts | T-24h | 69 | 0.71426 | 0.68221 | 0.1532 | 0.493 | -0.0008 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | btts | T-2h | 15 | 0.67741 | 0.68318 | 0.0628 | None | -0.0164 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | btts | T-30m | 10 | 0.69289 | 0.73303 | 0.3841 | None | -0.003 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | btts | T-60m | 14 | 0.73019 | 0.61182 | 0.31 | None | -0.0046 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | btts | T-6h | 15 | 0.69225 | 0.60305 | 0.244 | None | -0.0064 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | btts | T-90m | 2 | 0.6227 | None | 0.4635 | None | None | RESEARCH_ONLY |
-| data_only.world_sim_v2 | btts | any | 144 | 0.69765 | 0.66071 | 0.1691 | 0.576 | -0.0039 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | btts | T-60m | 15 | 0.75261 | 0.62653 | 0.333 | None | -0.005 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | btts | T-6h | 17 | 0.72123 | 0.61731 | 0.2866 | None | -0.0067 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | btts | T-90m | 3 | 0.61497 | None | 0.4593 | None | None | RESEARCH_ONLY |
+| data_only.world_sim_v2 | btts | any | 154 | 0.71187 | 0.66582 | 0.1822 | 0.565 | -0.004 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | btts | close | 2 | 0.85147 | None | 0.5625 | None | 0.0 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | exact_score | T-10m | 30 | 0.12355 | 0.1458 | 0.0012 | 1.0 | -0.0016 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | exact_score | T-12h | 95 | 0.15963 | 0.1118 | 0.0202 | 0.916 | None | RESEARCH_ONLY |
@@ -84,26 +84,26 @@
 | data_only.world_sim_v2 | first_half_total | any | 252 | 0.63003 | 0.60364 | 0.1459 | 0.377 | 0.047 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | first_half_total | close | 3 | 0.51685 | None | 0.3607 | None | 0.0 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | handicap | T-10m | 4 | 0.17306 | None | 0.1535 | None | 0.0013 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | handicap | T-12h | 20 | 0.58346 | 0.3852 | 0.1391 | None | -0.0106 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | handicap | T-15m | 52 | 0.41132 | 0.39643 | 0.0722 | 0.865 | 0.0006 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | handicap | T-24h | 268 | 0.39504 | 0.36908 | 0.0298 | 0.985 | -0.0068 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | handicap | T-12h | 32 | 0.50228 | 0.36317 | 0.1077 | 0.5 | -0.0041 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | handicap | T-15m | 56 | 0.42434 | 0.4057 | 0.0916 | 0.839 | 0.0012 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | handicap | T-24h | 276 | 0.40059 | 0.37329 | 0.0333 | 0.986 | -0.0062 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | handicap | T-2h | 60 | 0.39832 | 0.39851 | 0.0844 | 0.45 | -0.0039 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | handicap | T-30m | 40 | 0.44765 | 0.42438 | 0.0886 | 0.85 | -0.0041 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | handicap | T-60m | 56 | 0.27812 | 0.28146 | 0.0834 | 0.625 | 0.0038 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | handicap | T-6h | 60 | 0.31457 | 0.28713 | 0.1223 | 0.5 | -0.0012 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | handicap | T-90m | 8 | 0.21024 | None | 0.1686 | None | None | RESEARCH_ONLY |
-| data_only.world_sim_v2 | handicap | any | 576 | 0.38231 | 0.35749 | 0.0514 | 0.988 | -0.0035 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | handicap | T-60m | 60 | 0.29915 | 0.29613 | 0.0881 | 0.483 | 0.004 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | handicap | T-6h | 68 | 0.31921 | 0.28754 | 0.1135 | 0.544 | -0.0002 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | handicap | T-90m | 12 | 0.27621 | 0.25689 | 0.1501 | None | None | RESEARCH_ONLY |
+| data_only.world_sim_v2 | handicap | any | 616 | 0.3872 | 0.36033 | 0.0584 | 0.847 | -0.0029 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | handicap | close | 8 | 0.33158 | None | 0.1552 | None | 0.0 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-10m | 3 | 0.76354 | None | 0.3401 | None | -0.0033 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | match_result_3way | T-12h | 249 | 0.57092 | 0.55104 | 0.0631 | 0.884 | -0.0007 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | match_result_3way | T-15m | 42 | 0.46458 | 0.42214 | 0.1867 | 0.357 | 0.0019 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | match_result_3way | T-24h | 732 | 0.54715 | 0.51636 | 0.0903 | 0.962 | -0.0016 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | match_result_3way | T-12h | 258 | 0.56502 | 0.54229 | 0.0694 | 0.88 | -0.0007 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | match_result_3way | T-15m | 45 | 0.4497 | 0.40308 | 0.1883 | 0.333 | 0.0022 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | match_result_3way | T-24h | 747 | 0.54372 | 0.5111 | 0.0936 | 0.96 | -0.0015 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-2h | 84 | 0.53471 | 0.50156 | 0.0975 | 0.857 | -0.0005 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-30m | 72 | 0.54351 | 0.50635 | 0.0934 | 0.833 | -0.0036 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | match_result_3way | T-60m | 57 | 0.57765 | 0.54266 | 0.082 | 0.754 | 0.0009 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | match_result_3way | T-6h | 135 | 0.56819 | 0.52905 | 0.0816 | 0.97 | -0.0013 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | match_result_3way | T-90m | 12 | 0.58409 | 0.57113 | 0.1852 | None | 0.0004 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | match_result_3way | any | 1395 | 0.55071 | 0.51991 | 0.0813 | 0.966 | -0.0012 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | match_result_3way | T-60m | 60 | 0.56084 | 0.52273 | 0.0779 | 0.733 | 0.0009 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | match_result_3way | T-6h | 141 | 0.5604 | 0.52269 | 0.0821 | 0.965 | -0.0013 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | match_result_3way | T-90m | 15 | 0.5555 | 0.50549 | 0.217 | None | 0.0004 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | match_result_3way | any | 1434 | 0.54573 | 0.513 | 0.0857 | 0.962 | -0.0012 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | close | 9 | 0.34112 | None | 0.2764 | None | -0.0011 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | second_half_result | T-10m | 3 | 0.78411 | None | 0.5022 | None | 0.0133 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | second_half_result | T-12h | 6 | 0.78233 | None | 0.5022 | None | None | RESEARCH_ONLY |
@@ -117,24 +117,24 @@
 | data_only.world_sim_v2 | second_half_result | any | 201 | 0.62242 | 0.594 | 0.0787 | 0.781 | 0.0278 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | second_half_result | close | 3 | 0.60595 | None | 0.4284 | None | 0.0 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | team_total | T-10m | 6 | 0.47226 | None | 0.2438 | None | 0.0008 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | team_total | T-12h | 30 | 0.68301 | 0.65573 | 0.1814 | 0.233 | None | RESEARCH_ONLY |
+| data_only.world_sim_v2 | team_total | T-12h | 36 | 0.65057 | 0.61987 | 0.1753 | 0.278 | None | RESEARCH_ONLY |
 | data_only.world_sim_v2 | team_total | T-15m | 48 | 0.47583 | 0.46714 | 0.137 | 0.521 | -0.0004 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | team_total | T-24h | 306 | 0.58301 | 0.58411 | 0.1148 | 0.611 | 0.118 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | team_total | T-24h | 312 | 0.58132 | 0.58119 | 0.111 | 0.609 | 0.118 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | team_total | T-2h | 72 | 0.55726 | 0.55713 | 0.0929 | 0.806 | 0.0002 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | team_total | T-30m | 36 | 0.4613 | 0.49244 | 0.1958 | 0.111 | -0.0028 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | team_total | T-60m | 54 | 0.59757 | 0.51808 | 0.2419 | 0.333 | -0.0009 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | team_total | T-6h | 84 | 0.5681 | 0.49063 | 0.1568 | 0.393 | -0.0033 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | team_total | T-6h | 90 | 0.56368 | 0.48586 | 0.1562 | 0.389 | -0.0033 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | team_total | T-90m | 12 | 0.422 | 0.4451 | 0.3148 | None | None | RESEARCH_ONLY |
-| data_only.world_sim_v2 | team_total | any | 660 | 0.56766 | 0.54612 | 0.1136 | 0.606 | 0.0437 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | team_total | any | 678 | 0.56574 | 0.54296 | 0.1083 | 0.603 | 0.0437 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | team_total | close | 12 | 0.69258 | 0.46728 | 0.3572 | None | 0.0 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | total_goals | T-10m | 6 | 0.27531 | None | 0.2292 | None | -0.0033 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | total_goals | T-12h | 30 | 0.5104 | 0.48654 | 0.1912 | 0.267 | -0.0175 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | total_goals | T-15m | 78 | 0.40915 | 0.35946 | 0.1389 | 0.282 | -0.0013 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | total_goals | T-24h | 402 | 0.5051 | 0.46088 | 0.0636 | 0.627 | -0.0074 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | total_goals | T-12h | 48 | 0.54908 | 0.48456 | 0.1545 | 0.354 | -0.0103 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | total_goals | T-15m | 84 | 0.47524 | 0.39795 | 0.1534 | 0.286 | -0.0008 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | total_goals | T-24h | 414 | 0.52852 | 0.47394 | 0.0747 | 0.63 | -0.007 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | total_goals | T-2h | 90 | 0.39351 | 0.37385 | 0.1278 | 0.333 | -0.0039 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | total_goals | T-30m | 60 | 0.35003 | 0.33182 | 0.1404 | 0.25 | -0.0041 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | total_goals | T-60m | 84 | 0.41722 | 0.3852 | 0.1527 | 0.298 | -0.0019 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | total_goals | T-6h | 90 | 0.42253 | 0.38672 | 0.0726 | 0.644 | -0.0083 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | total_goals | T-90m | 12 | 0.35741 | 0.39795 | 0.1315 | None | None | RESEARCH_ONLY |
-| data_only.world_sim_v2 | total_goals | any | 864 | 0.4544 | 0.41592 | 0.0564 | 0.751 | -0.0057 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | total_goals | T-60m | 90 | 0.47837 | 0.42052 | 0.1074 | 0.567 | -0.0017 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | total_goals | T-6h | 102 | 0.46914 | 0.41093 | 0.0665 | 0.794 | -0.0077 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | total_goals | T-90m | 18 | 0.31967 | 0.35318 | 0.1057 | None | None | RESEARCH_ONLY |
+| data_only.world_sim_v2 | total_goals | any | 924 | 0.48344 | 0.43131 | 0.066 | 0.628 | -0.0053 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | total_goals | close | 12 | 0.57394 | 0.35022 | 0.3268 | None | 0.0 | RESEARCH_ONLY |
