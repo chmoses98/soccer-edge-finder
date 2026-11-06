@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261106T124300Z-dda6e3` · generated 2026-11-06T12:43:00.700547Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261106T125802Z-4f9ff9` · generated 2026-11-06T12:58:02.957519Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-06T12:39:50.138256Z (CURRENT at publish; CURRENT until 2026-11-06T12:59:50.138256Z, STALE after 2026-11-06T13:09:50.138256Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-06T12:54:52.605083Z (CURRENT at publish; CURRENT until 2026-11-06T13:14:52.605083Z, STALE after 2026-11-06T13:24:52.605083Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-06T11:42:59.943996Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.86s
+model board generated 2026-11-06T11:42:59.943996Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 2.07s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -64,7 +64,7 @@ model board generated 2026-11-06T11:42:59.943996Z · simulations this update: 0 
 | 2026-11-08T03:10:00Z | Pumas UNAM vs Club América (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-08T11:30:00Z | Napoli vs Lazio (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (208; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (209; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -113,8 +113,8 @@ model board generated 2026-11-06T11:42:59.943996Z · simulations this update: 0 
 
 ```
 action_NO_EDGE: 2745
-action_NO_QUOTE: 591
-action_RESEARCH_CANDIDATE: 208
+action_NO_QUOTE: 590
+action_RESEARCH_CANDIDATE: 209
 contract_sides: 3544
 fixtures: 51
 fixtures_model_invalidated: 0
