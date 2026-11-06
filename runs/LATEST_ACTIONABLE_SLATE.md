@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261106T214323Z-c5c46f` · generated 2026-11-06T21:43:23.017842Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261106T215109Z-9bd7cb` · generated 2026-11-06T21:51:09.781972Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-06T21:40:10.172353Z (CURRENT at publish; CURRENT until 2026-11-06T22:00:10.172353Z, STALE after 2026-11-06T22:10:10.172353Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-06T21:47:49.013485Z (CURRENT at publish; CURRENT until 2026-11-06T22:07:49.013485Z, STALE after 2026-11-06T22:17:49.013485Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-06T20:28:19.296714Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 2.13s
+model board generated 2026-11-06T20:28:19.296714Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.94s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,8 +12,8 @@ model board generated 2026-11-06T20:28:19.296714Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-06T22:15:00Z | Independiente vs Deportivo Riestra (arg.primera) | VALID (AGING) | unconfirmed (CURRENT) | AGING entry | CURRENT | 3 | 0 |
-| 2026-11-06T22:15:00Z | San Lorenzo vs Platense (arg.primera) | VALID (AGING) | unconfirmed (CURRENT) | AGING entry | CURRENT | 3 | 0 |
+| 2026-11-06T22:15:00Z | Independiente vs Deportivo Riestra (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | AGING entry | CURRENT | 3 | 0 |
+| 2026-11-06T22:15:00Z | San Lorenzo vs Platense (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | AGING entry | CURRENT | 3 | 0 |
 | 2026-11-06T22:15:00Z | Unión vs Vélez Sarsfield (arg.primera) | VALID (AGING) | unconfirmed (CURRENT) | AGING entry | CURRENT | 3 | 0 |
 | 2026-11-06T23:00:00Z | Vitória vs Fluminense (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-07T01:00:00Z | Necaxa vs Tijuana (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 32 | 0 |
@@ -83,16 +83,16 @@ model board generated 2026-11-06T20:28:19.296714Z · simulations this update: 0 
 | 2026-11-08T19:45:00Z | Lens vs Marseille (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T19:45:00Z | Fiorentina vs Juventus (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (219; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (220; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Everton vs Coventry City | Result: home | no | 0.0300 | 0.397 [0.186, 0.605] | +0.365 | +0.227 | 0.24 | - | * | RESEARCH_CANDIDATE |
+| Everton vs Coventry City | Result: home | no | 0.0100 | 0.397 [0.186, 0.605] | +0.387 | +0.249 | 0.24 | - | * | RESEARCH_CANDIDATE |
 | Valencia vs Real Madrid | Result: away | no | 0.2100 | 0.518 [0.330, 0.695] | +0.296 | +0.181 | 0.38 | - | * | RESEARCH_CANDIDATE |
+| Everton vs Coventry City | Result: draw | yes | 0.0100 | 0.246 [0.130, 0.353] | +0.235 | +0.164 | 0.16 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | Result: away | no | 0.4400 | 0.692 [0.559, 0.813] | +0.235 | +0.149 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Arsenal vs Hull City | Result: home | no | 0.1600 | 0.459 [0.242, 0.678] | +0.290 | +0.148 | 0.3 | - | * | RESEARCH_CANDIDATE |
 | Leeds United vs Tottenham Hotspur | Result: home | yes | 0.3500 | 0.619 [0.443, 0.789] | +0.253 | +0.146 | 0.49 | - | * | RESEARCH_CANDIDATE |
-| Everton vs Coventry City | Result: draw | yes | 0.0300 | 0.246 [0.130, 0.353] | +0.214 | +0.142 | 0.16 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away team total over 1.5 | no | 0.3800 | 0.616 [0.477, 0.748] | +0.220 | +0.138 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | Total goals over 3.5 | no | 0.5100 | 0.737 [0.599, 0.858] | +0.209 | +0.135 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away team total over 2.5 | no | 0.6400 | 0.842 [0.743, 0.926] | +0.186 | +0.135 | 0.77 | - |  | RESEARCH_CANDIDATE |
@@ -131,12 +131,12 @@ model board generated 2026-11-06T20:28:19.296714Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2845
-action_NO_QUOTE: 484
-action_RESEARCH_CANDIDATE: 219
+action_NO_EDGE: 2842
+action_NO_QUOTE: 486
+action_RESEARCH_CANDIDATE: 220
 contract_sides: 3548
 fixtures: 70
-fixtures_model_invalidated: 0
+fixtures_model_invalidated: 2
 fixtures_model_missing: 0
 ```
 
