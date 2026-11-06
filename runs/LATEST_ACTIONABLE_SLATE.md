@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261106T061104Z-b84dee` · generated 2026-11-06T06:11:04.187181Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261106T062434Z-8f68f3` · generated 2026-11-06T06:24:34.960263Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-06T06:06:26.112415Z (CURRENT at publish; CURRENT until 2026-11-06T06:26:26.112415Z, STALE after 2026-11-06T06:36:26.112415Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-06T06:21:25.511015Z (CURRENT at publish; CURRENT until 2026-11-06T06:41:25.511015Z, STALE after 2026-11-06T06:51:25.511015Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-06T06:09:43.210903Z · simulations this update: 29 · Odds API calls this update: 0 (credits 0) · reprice 1.41s
+model board generated 2026-11-06T06:09:43.210903Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.23s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -63,7 +63,7 @@ model board generated 2026-11-06T06:09:43.210903Z · simulations this update: 29
 | 2026-11-08T01:00:00Z | Toluca vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-08T03:10:00Z | Pumas UNAM vs Club América (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (204; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (205; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -76,13 +76,13 @@ model board generated 2026-11-06T06:09:43.210903Z · simulations this update: 29
 | Austin FC vs Portland Timbers | away team total over 1.5 | no | 0.3900 | 0.616 [0.477, 0.748] | +0.210 | +0.128 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 2.5 | no | 0.4000 | 0.625 [0.477, 0.755] | +0.208 | +0.126 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | Total goals over 2.5 | no | 0.3000 | 0.530 [0.376, 0.677] | +0.215 | +0.124 | 0.42 | - |  | RESEARCH_CANDIDATE |
-| D.C. United vs New York City FC | Total goals over 2.5 | no | 0.4200 | 0.637 [0.501, 0.769] | +0.200 | +0.115 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 3.5 | no | 0.6300 | 0.814 [0.698, 0.905] | +0.167 | +0.110 | 0.74 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | btts | no | 0.3200 | 0.518 [0.408, 0.628] | +0.183 | +0.109 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | Result: home | yes | 0.2300 | 0.452 [0.306, 0.601] | +0.210 | +0.108 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | CF Montréal vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.5500 | 0.753 [0.611, 0.870] | +0.185 | +0.108 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | CF Montréal vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.3300 | 0.549 [0.388, 0.697] | +0.204 | +0.107 | 0.43 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away team total over 2.5 | no | 0.6700 | 0.842 [0.743, 0.926] | +0.157 | +0.105 | 0.77 | - |  | RESEARCH_CANDIDATE |
+| D.C. United vs New York City FC | Total goals over 2.5 | no | 0.4300 | 0.637 [0.501, 0.769] | +0.190 | +0.104 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | Total goals over 4.5 | no | 0.7100 | 0.872 [0.777, 0.948] | +0.148 | +0.102 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | D.C. United vs New York City FC | Total goals over 3.5 | no | 0.6500 | 0.823 [0.721, 0.913] | +0.157 | +0.098 | 0.75 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | btts | no | 0.4000 | 0.576 [0.464, 0.684] | +0.160 | +0.094 | 0.49 | - | * | RESEARCH_CANDIDATE |
@@ -92,11 +92,11 @@ model board generated 2026-11-06T06:09:43.210903Z · simulations this update: 29
 | Austin FC vs Portland Timbers | away wins by more than 2.5 | no | 0.8300 | 0.948 [0.905, 0.982] | +0.108 | +0.086 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Arsenal vs Hull City | Result: draw | yes | 0.1100 | 0.263 [0.161, 0.367] | +0.146 | +0.084 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Parma vs Bologna | Result: away | no | 0.4900 | 0.676 [0.519, 0.814] | +0.169 | +0.083 | 0.57 | - | * | RESEARCH_CANDIDATE |
+| CF Montréal vs Vancouver Whitecaps | Total goals over 4.5 | no | 0.7400 | 0.882 [0.787, 0.954] | +0.129 | +0.083 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 1.5 | no | 0.1900 | 0.361 [0.234, 0.485] | +0.160 | +0.081 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | D.C. United vs New York City FC | Total goals over 1.5 | no | 0.2000 | 0.373 [0.250, 0.500] | +0.162 | +0.080 | 0.27 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | Total goals over 1.5 | no | 0.1200 | 0.281 [0.166, 0.401] | +0.153 | +0.078 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | away team total over 0.5 | no | 0.2300 | 0.391 [0.274, 0.505] | +0.149 | +0.074 | 0.3 | - |  | RESEARCH_CANDIDATE |
-| CF Montréal vs Vancouver Whitecaps | Total goals over 4.5 | no | 0.7500 | 0.882 [0.787, 0.954] | +0.119 | +0.073 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | First-half total goals over 1.5 | no | 0.5200 | 0.683 [0.568, 0.792] | +0.146 | +0.073 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | FC Dallas vs Colorado Rapids | away team total over 0.5 | no | 0.2900 | 0.453 [0.337, 0.569] | +0.148 | +0.071 | 0.35 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 4.5 | no | 0.8100 | 0.920 [0.852, 0.970] | +0.099 | +0.070 | 0.88 | - |  | RESEARCH_CANDIDATE |
@@ -111,9 +111,9 @@ model board generated 2026-11-06T06:09:43.210903Z · simulations this update: 29
 ## Counts
 
 ```
-action_NO_EDGE: 2709
-action_NO_QUOTE: 625
-action_RESEARCH_CANDIDATE: 204
+action_NO_EDGE: 2716
+action_NO_QUOTE: 617
+action_RESEARCH_CANDIDATE: 205
 contract_sides: 3538
 fixtures: 50
 fixtures_model_invalidated: 0
