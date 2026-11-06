@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261106T165511Z-59713c` · generated 2026-11-06T16:55:11.567981Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261106T170115Z-54dae3` · generated 2026-11-06T17:01:15.671070Z · trigger `kickoff_chain:T-60` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-06T16:51:32.824001Z (CURRENT at publish; CURRENT until 2026-11-06T17:11:32.824001Z, STALE after 2026-11-06T17:21:32.824001Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-06T16:57:57.504307Z (CURRENT at publish; CURRENT until 2026-11-06T17:17:57.504307Z, STALE after 2026-11-06T17:27:57.504307Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-06T16:54:54.262326Z · simulations this update: 40 · Odds API calls this update: 0 (credits 0) · reprice 1.91s
+model board generated 2026-11-06T16:54:54.262326Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 2.05s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -15,9 +15,9 @@ model board generated 2026-11-06T16:54:54.262326Z · simulations this update: 40
 | 2026-11-06T19:30:00Z | Hamburger SV vs Borussia Mönchengladbach (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-06T19:45:00Z | Toulouse vs Strasbourg (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-06T19:45:00Z | Venezia vs Udinese (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-06T22:15:00Z | Independiente vs Deportivo Riestra (arg.primera) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-06T22:15:00Z | San Lorenzo vs Platense (arg.primera) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-06T22:15:00Z | Unión vs Vélez Sarsfield (arg.primera) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-06T22:15:00Z | Independiente vs Deportivo Riestra (arg.primera) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-06T22:15:00Z | San Lorenzo vs Platense (arg.primera) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-06T22:15:00Z | Unión vs Vélez Sarsfield (arg.primera) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-06T23:00:00Z | Vitória vs Fluminense (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-07T01:00:00Z | Necaxa vs Tijuana (mex.liga_mx) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-11-07T01:00:00Z | Atlético San Luis vs FC Juárez (mex.liga_mx) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -127,8 +127,8 @@ model board generated 2026-11-06T16:54:54.262326Z · simulations this update: 40
 ## Counts
 
 ```
-action_NO_EDGE: 2831
-action_NO_QUOTE: 482
+action_NO_EDGE: 2832
+action_NO_QUOTE: 481
 action_RESEARCH_CANDIDATE: 211
 contract_sides: 3524
 fixtures: 66
