@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261105T235815Z-ddaa7d` · generated 2026-11-05T23:58:15.303968Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261106T000308Z-27febd` · generated 2026-11-06T00:03:08.850180Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-05T23:55:06.882568Z (CURRENT at publish; CURRENT until 2026-11-06T00:15:06.882568Z, STALE after 2026-11-06T00:25:06.882568Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-05T23:59:56.943700Z (CURRENT at publish; CURRENT until 2026-11-06T00:19:56.943700Z, STALE after 2026-11-06T00:29:56.943700Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-05T23:28:21.006377Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.88s
+model board generated 2026-11-05T23:28:21.006377Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.90s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -19,7 +19,7 @@ model board generated 2026-11-05T23:28:21.006377Z · simulations this update: 0 
 | 2026-11-06T22:15:00Z | Independiente vs Deportivo Riestra (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-06T22:15:00Z | San Lorenzo vs Platense (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-06T22:15:00Z | Unión vs Vélez Sarsfield (arg.primera) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-06T23:00:00Z | Vitória vs Fluminense (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-06T23:00:00Z | Vitória vs Fluminense (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-07T01:00:00Z | Necaxa vs Tijuana (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-11-07T01:00:00Z | Atlético San Luis vs FC Juárez (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-07T03:00:00Z | Atlante vs Santos Laguna (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -54,7 +54,7 @@ model board generated 2026-11-05T23:28:21.006377Z · simulations this update: 0 
 | 2026-11-07T21:00:00Z | Philadelphia Union vs Toronto FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-07T23:00:00Z | Atlas vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (117; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (125; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -64,11 +64,11 @@ model board generated 2026-11-05T23:28:21.006377Z · simulations this update: 0 
 | Leeds United vs Tottenham Hotspur | Result: away | no | 0.6300 | 0.837 [0.729, 0.933] | +0.190 | +0.130 | 0.76 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | Total goals over 2.5 | no | 0.3000 | 0.530 [0.376, 0.677] | +0.215 | +0.124 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | btts | no | 0.3200 | 0.518 [0.408, 0.628] | +0.183 | +0.109 | 0.42 | - | * | RESEARCH_CANDIDATE |
+| CF Montréal vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.3300 | 0.549 [0.388, 0.697] | +0.204 | +0.107 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | D.C. United vs New York City FC | Total goals over 2.5 | no | 0.4300 | 0.637 [0.501, 0.769] | +0.190 | +0.104 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | Total goals over 4.5 | no | 0.7100 | 0.872 [0.777, 0.948] | +0.148 | +0.102 | 0.81 | - |  | RESEARCH_CANDIDATE |
-| CF Montréal vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.5600 | 0.753 [0.611, 0.870] | +0.176 | +0.098 | 0.65 | - | * | RESEARCH_CANDIDATE |
+| CF Montréal vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.5600 | 0.753 [0.611, 0.870] | +0.176 | +0.098 | 0.65 | - |  | RESEARCH_CANDIDATE |
 | D.C. United vs New York City FC | Total goals over 3.5 | no | 0.6500 | 0.823 [0.721, 0.913] | +0.157 | +0.098 | 0.75 | - |  | RESEARCH_CANDIDATE |
-| CF Montréal vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.3400 | 0.549 [0.388, 0.697] | +0.193 | +0.096 | 0.43 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | away team total over 1.5 | no | 0.5700 | 0.748 [0.629, 0.850] | +0.161 | +0.094 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Parma vs Bologna | Result: away | no | 0.4800 | 0.676 [0.519, 0.813] | +0.179 | +0.093 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | D.C. United vs New York City FC | btts | no | 0.4000 | 0.578 [0.472, 0.688] | +0.162 | +0.093 | 0.49 | - | * | RESEARCH_CANDIDATE |
@@ -102,9 +102,9 @@ model board generated 2026-11-05T23:28:21.006377Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1575
-action_NO_QUOTE: 424
-action_RESEARCH_CANDIDATE: 117
+action_NO_EDGE: 1571
+action_NO_QUOTE: 420
+action_RESEARCH_CANDIDATE: 125
 contract_sides: 2116
 fixtures: 41
 fixtures_model_invalidated: 0
