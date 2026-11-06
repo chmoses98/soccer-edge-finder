@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261106T085513Z-a55405` · generated 2026-11-06T08:55:13.389020Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261106T091015Z-2e1e98` · generated 2026-11-06T09:10:15.648623Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-06T08:52:04.171284Z (CURRENT at publish; CURRENT until 2026-11-06T09:12:04.171284Z, STALE after 2026-11-06T09:22:04.171284Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-06T09:07:06.162238Z (CURRENT at publish; CURRENT until 2026-11-06T09:27:06.162238Z, STALE after 2026-11-06T09:37:06.162238Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-06T06:09:43.210903Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.42s
+model board generated 2026-11-06T06:09:43.210903Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.49s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -63,7 +63,7 @@ model board generated 2026-11-06T06:09:43.210903Z · simulations this update: 0 
 | 2026-11-08T01:00:00Z | Toluca vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-08T03:10:00Z | Pumas UNAM vs Club América (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (203; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (204; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -87,11 +87,11 @@ model board generated 2026-11-06T06:09:43.210903Z · simulations this update: 0 
 | Seattle Sounders vs Los Angeles FC | btts | no | 0.3900 | 0.576 [0.464, 0.684] | +0.170 | +0.104 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs St. Louis City SC | away team total over 1.5 | no | 0.5700 | 0.755 [0.643, 0.855] | +0.168 | +0.098 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | D.C. United vs New York City FC | Total goals over 3.5 | no | 0.6500 | 0.823 [0.721, 0.913] | +0.157 | +0.098 | 0.75 | - |  | RESEARCH_CANDIDATE |
+| D.C. United vs New York City FC | away team total over 1.5 | no | 0.5300 | 0.719 [0.591, 0.831] | +0.172 | +0.098 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | away team total over 1.5 | no | 0.5700 | 0.748 [0.629, 0.850] | +0.161 | +0.094 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | D.C. United vs New York City FC | btts | no | 0.4000 | 0.578 [0.472, 0.688] | +0.162 | +0.093 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Parma vs Bologna | Result: away | no | 0.4800 | 0.676 [0.519, 0.814] | +0.179 | +0.093 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | First-half result: away | no | 0.5700 | 0.744 [0.638, 0.842] | +0.157 | +0.093 | 0.66 | - | * | RESEARCH_CANDIDATE |
-| D.C. United vs New York City FC | away team total over 1.5 | no | 0.5400 | 0.719 [0.591, 0.831] | +0.162 | +0.088 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away wins by more than 2.5 | no | 0.8300 | 0.948 [0.905, 0.982] | +0.108 | +0.086 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 1.5 | no | 0.1900 | 0.361 [0.234, 0.485] | +0.160 | +0.081 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | D.C. United vs New York City FC | Total goals over 1.5 | no | 0.2000 | 0.373 [0.250, 0.500] | +0.162 | +0.080 | 0.27 | - |  | RESEARCH_CANDIDATE |
@@ -111,9 +111,9 @@ model board generated 2026-11-06T06:09:43.210903Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2740
+action_NO_EDGE: 2739
 action_NO_QUOTE: 595
-action_RESEARCH_CANDIDATE: 203
+action_RESEARCH_CANDIDATE: 204
 contract_sides: 3538
 fixtures: 50
 fixtures_model_invalidated: 0
