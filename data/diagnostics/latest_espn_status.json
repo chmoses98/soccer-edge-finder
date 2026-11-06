@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-06T00:25:51.739954+00:00",
+  "as_of": "2026-11-06T07:10:48.734433+00:00",
   "events": 518,
   "events_skipped_unmapped": 271,
   "fixtures_mapped": 247,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=130"
+      "weather_stopped:consecutive_failures:skipped=129"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 89,
-    "events": 105,
+    "captured": 92,
+    "events": 97,
     "failures": [],
-    "published_post": 58,
-    "published_pre_kickoff": 1,
-    "unchanged": 16,
-    "unpublished": 46
+    "published_post": 42,
+    "published_pre_kickoff": 0,
+    "unchanged": 5,
+    "unpublished": 55
   },
   "map_proposals": {
     "bel.1": {
@@ -346,7 +346,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 23,
+  "results_appended": 1,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -518,17 +518,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 14,
-    "events": 147,
+    "captured": 12,
+    "events": 144,
     "failures": [
+      "401841668: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Santiago%20del%20Estero&count=5",
       "401892144: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Sydney&count=5&language=en&form",
-      "401892143: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Auckland&count=5&language=en&fo",
-      "401892142: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Melbourne&count=5&language=en&f"
+      "401892143: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Auckland&count=5&language=en&fo"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 130,
+    "skipped": 129,
     "stopped": "consecutive_failures"
   }
 }
