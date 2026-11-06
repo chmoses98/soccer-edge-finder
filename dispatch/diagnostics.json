@@ -54,7 +54,706 @@
   "delivered_total": 3119,
   "delivery_rate_total": 0.8751402918069585,
   "fixtures_tracked": 728,
-  "generated_at": "2026-11-06T22:13:25Z",
+  "generated_at": "2026-11-06T22:20:29Z",
+  "last_tick": {
+    "batches": 23,
+    "summary": [
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "model_refresh:ok:fixtures=50:sim=10:board=40:why=entered_lookahead_unmodelled",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "ks-20261106T165132Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3524:sim=0"
+        ],
+        "batch_id": "kd-20261106T165757Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.barracas_central:arg.racing",
+            60,
+            62.04
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "model_refresh:ok:fixtures=1:sim=1:board=1:why=entered_lookahead_unmodelled",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "ks-20261106T171257Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3530:sim=0"
+        ],
+        "batch_id": "kd-20261106T172129Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ger.bundesliga:2026-27:ger.hamburg:ger.gladbach:matchday_9",
+            120,
+            128.5
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.hamburg:ger.gladbach",
+            120,
+            128.5
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3530:sim=0"
+        ],
+        "batch_id": "kd-20261106T173000Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.barracas_central:arg.racing",
+            30,
+            30.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:2",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3530:sim=0"
+        ],
+        "batch_id": "kd-20261106T173515Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ita.serie_a:2026-27:ita.venezia:ita.udinese:matchday_11",
+            120,
+            129.75
+          ],
+          [
+            "fx:fra.ligue_1:2026-27:fra.toulouse:fra.strasbourg:matchday_10",
+            120,
+            129.75
+          ],
+          [
+            "fx:fra.ligue_1:2026-27:fra.toulouse:fra.strasbourg",
+            120,
+            129.75
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.venezia:ita.udinese",
+            120,
+            129.75
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3530:sim=0"
+        ],
+        "batch_id": "kd-20261106T174500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.barracas_central:arg.racing",
+            15,
+            15.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:2",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3530:sim=0"
+        ],
+        "batch_id": "kd-20261106T175018Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:eng.premier_league:2026-27:eng.everton:eng.coventry",
+            120,
+            129.7
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.sevilla:esp.alaves",
+            120,
+            129.7
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3530:sim=0"
+        ],
+        "batch_id": "kd-20261106T175536Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.barracas_central:arg.racing",
+            5,
+            4.4
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "model_refresh:ok:fixtures=2:sim=2:board=2:why=entered_lookahead_unmodelled",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "ks-20261106T181036Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:ok:fixtures=1:sim=0:cache=1:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261106T182536Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ger.bundesliga:2026-27:ger.hamburg:ger.gladbach:matchday_9",
+            60,
+            64.4
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.hamburg:ger.gladbach",
+            60,
+            64.4
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=6:paid=2:rows=14",
+          "lineups:ok:2",
+          "model_refresh:ok:fixtures=2:sim=0:cache=2:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261106T184036Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ita.serie_a:2026-27:ita.venezia:ita.udinese:matchday_11",
+            60,
+            64.4
+          ],
+          [
+            "fx:fra.ligue_1:2026-27:fra.toulouse:fra.strasbourg:matchday_10",
+            60,
+            64.4
+          ],
+          [
+            "fx:fra.ligue_1:2026-27:fra.toulouse:fra.strasbourg",
+            60,
+            64.4
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.venezia:ita.udinese",
+            60,
+            64.4
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:2",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3542:sim=0"
+        ],
+        "batch_id": "kd-20261106T185536Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:eng.premier_league:2026-27:eng.everton:eng.coventry",
+            60,
+            64.4
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.sevilla:esp.alaves",
+            60,
+            64.4
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3542:sim=0"
+        ],
+        "batch_id": "kd-20261106T190056Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ger.bundesliga:2026-27:ger.hamburg:ger.gladbach:matchday_9",
+            30,
+            29.05
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.hamburg:ger.gladbach",
+            30,
+            29.05
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:3",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3542:sim=0"
+        ],
+        "batch_id": "kd-20261106T191500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ger.bundesliga:2026-27:ger.hamburg:ger.gladbach:matchday_9",
+            15,
+            15.0
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.hamburg:ger.gladbach",
+            15,
+            15.0
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.venezia:ita.udinese:matchday_11",
+            30,
+            30.0
+          ],
+          [
+            "fx:fra.ligue_1:2026-27:fra.toulouse:fra.strasbourg:matchday_10",
+            30,
+            30.0
+          ],
+          [
+            "fx:fra.ligue_1:2026-27:fra.toulouse:fra.strasbourg",
+            30,
+            30.0
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.venezia:ita.udinese",
+            30,
+            30.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3542:sim=0"
+        ],
+        "batch_id": "kd-20261106T192500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ger.bundesliga:2026-27:ger.hamburg:ger.gladbach:matchday_9",
+            5,
+            5.0
+          ],
+          [
+            "fx:ger.bundesliga:2026-27:ger.hamburg:ger.gladbach",
+            5,
+            5.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=6:paid=2:rows=14",
+          "lineups:ok:4",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3536:sim=0"
+        ],
+        "batch_id": "kd-20261106T193016Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ita.serie_a:2026-27:ita.venezia:ita.udinese:matchday_11",
+            15,
+            14.73
+          ],
+          [
+            "fx:fra.ligue_1:2026-27:fra.toulouse:fra.strasbourg:matchday_10",
+            15,
+            14.73
+          ],
+          [
+            "fx:fra.ligue_1:2026-27:fra.toulouse:fra.strasbourg",
+            15,
+            14.73
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.venezia:ita.udinese",
+            15,
+            14.73
+          ],
+          [
+            "fx:eng.premier_league:2026-27:eng.everton:eng.coventry",
+            30,
+            29.73
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.sevilla:esp.alaves",
+            30,
+            29.73
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:2",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3536:sim=0"
+        ],
+        "batch_id": "kd-20261106T194000Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:ita.serie_a:2026-27:ita.venezia:ita.udinese:matchday_11",
+            5,
+            5.0
+          ],
+          [
+            "fx:fra.ligue_1:2026-27:fra.toulouse:fra.strasbourg:matchday_10",
+            5,
+            5.0
+          ],
+          [
+            "fx:fra.ligue_1:2026-27:fra.toulouse:fra.strasbourg",
+            5,
+            5.0
+          ],
+          [
+            "fx:ita.serie_a:2026-27:ita.venezia:ita.udinese",
+            5,
+            5.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:2",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3524:sim=0"
+        ],
+        "batch_id": "kd-20261106T194522Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:eng.premier_league:2026-27:eng.everton:eng.coventry",
+            15,
+            14.62
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.sevilla:esp.alaves",
+            15,
+            14.62
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:2",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3524:sim=0"
+        ],
+        "batch_id": "kd-20261106T195500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:eng.premier_league:2026-27:eng.everton:eng.coventry",
+            5,
+            5.0
+          ],
+          [
+            "fx:esp.la_liga:2026-27:esp.sevilla:esp.alaves",
+            5,
+            5.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3524:sim=0"
+        ],
+        "batch_id": "kd-20261106T201002Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.san_lorenzo:arg.platense",
+            120,
+            124.96
+          ],
+          [
+            "fx:arg.primera:2026:arg.union:arg.velez",
+            120,
+            124.96
+          ],
+          [
+            "fx:arg.primera:2026:arg.independiente:arg.deportivo_riestra",
+            120,
+            124.96
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "model_refresh:ok:fixtures=4:sim=4:board=4:why=entered_lookahead_unmodelled",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "ks-20261106T202502Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=3548:sim=0"
+        ],
+        "batch_id": "ks-20261106T204005Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=3548:sim=0"
+        ],
+        "batch_id": "kd-20261106T205505Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:bra.serie_a:2026:bra.vitoria:bra.fluminense",
+            120,
+            124.91
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=21",
+          "lineups:ok:1",
+          "model_refresh:ok:fixtures=3:sim=0:cache=0:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261106T211008Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.san_lorenzo:arg.platense",
+            60,
+            64.87
+          ],
+          [
+            "fx:arg.primera:2026:arg.union:arg.velez",
+            60,
+            64.87
+          ],
+          [
+            "fx:arg.primera:2026:arg.independiente:arg.deportivo_riestra",
+            60,
+            64.87
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=3548:sim=0"
+        ],
+        "batch_id": "ks-20261106T212508Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=3548:sim=0"
+        ],
+        "batch_id": "ks-20261106T214010Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:ok:fixtures=2:sim=0:cache=0:why=T-30:invalidated",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261106T214748Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.san_lorenzo:arg.platense",
+            30,
+            27.18
+          ],
+          [
+            "fx:arg.primera:2026:arg.union:arg.velez",
+            30,
+            27.18
+          ],
+          [
+            "fx:arg.primera:2026:arg.independiente:arg.deportivo_riestra",
+            30,
+            27.18
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=6:paid=2:rows=28",
+          "lineups:ok:2",
+          "model_refresh:ok:fixtures=4:sim=1:cache=0:why=T-15:invalidated,T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261106T220000Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.san_lorenzo:arg.platense",
+            15,
+            15.0
+          ],
+          [
+            "fx:arg.primera:2026:arg.union:arg.velez",
+            15,
+            15.0
+          ],
+          [
+            "fx:arg.primera:2026:arg.independiente:arg.deportivo_riestra",
+            15,
+            15.0
+          ],
+          [
+            "fx:bra.serie_a:2026:bra.vitoria:bra.fluminense",
+            60,
+            60.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:ok:fixtures=3:sim=0:cache=0:why=T-5:invalidated",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261106T221003Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.san_lorenzo:arg.platense",
+            5,
+            4.95
+          ],
+          [
+            "fx:arg.primera:2026:arg.union:arg.velez",
+            5,
+            4.95
+          ],
+          [
+            "fx:arg.primera:2026:arg.independiente:arg.deportivo_riestra",
+            5,
+            4.95
+          ]
+        ]
+      }
+    ]
+  },
   "missed_total": 445,
   "n_pending_fixtures": 93,
   "pending_fixtures": [
