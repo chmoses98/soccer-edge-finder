@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261106T062434Z-8f68f3` · generated 2026-11-06T06:24:34.960263Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261106T063937Z-b9cd75` · generated 2026-11-06T06:39:37.593442Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-06T06:21:25.511015Z (CURRENT at publish; CURRENT until 2026-11-06T06:41:25.511015Z, STALE after 2026-11-06T06:51:25.511015Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-06T06:36:28.373745Z (CURRENT at publish; CURRENT until 2026-11-06T06:56:28.373745Z, STALE after 2026-11-06T07:06:28.373745Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-06T06:09:43.210903Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.23s
+model board generated 2026-11-06T06:09:43.210903Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.40s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -63,7 +63,7 @@ model board generated 2026-11-06T06:09:43.210903Z · simulations this update: 0 
 | 2026-11-08T01:00:00Z | Toluca vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-08T03:10:00Z | Pumas UNAM vs Club América (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (205; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (204; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -104,16 +104,16 @@ model board generated 2026-11-06T06:09:43.210903Z · simulations this update: 0 
 | Houston Dynamo vs St. Louis City SC | away team total over 1.5 | no | 0.6000 | 0.755 [0.643, 0.855] | +0.138 | +0.068 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | D.C. United vs New York City FC | away team total over 1.5 | no | 0.5600 | 0.719 [0.591, 0.831] | +0.142 | +0.068 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs St. Louis City SC | away team total over 0.5 | no | 0.2400 | 0.398 [0.285, 0.512] | +0.145 | +0.068 | 0.3 | - |  | RESEARCH_CANDIDATE |
+| Atlante vs Santos Laguna | Total goals over 3.5 | no | 0.6300 | 0.791 [0.660, 0.906] | +0.145 | +0.068 | 0.69 | - | * | RESEARCH_CANDIDATE |
 | CF Montréal vs Vancouver Whitecaps | Total goals over 1.5 | no | 0.1400 | 0.297 [0.175, 0.424] | +0.149 | +0.067 | 0.2 | - |  | RESEARCH_CANDIDATE |
-| Atlante vs Santos Laguna | Total goals over 2.5 | no | 0.4100 | 0.599 [0.437, 0.755] | +0.172 | +0.066 | 0.47 | - | * | RESEARCH_CANDIDATE |
-| CF Montréal vs Vancouver Whitecaps | btts | no | 0.3700 | 0.531 [0.405, 0.652] | +0.145 | +0.066 | 0.43 | - | * | RESEARCH_CANDIDATE |
+| Atlante vs Santos Laguna | Total goals over 2.5 | no | 0.4100 | 0.599 [0.437, 0.755] | +0.172 | +0.066 | 0.47 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2716
+action_NO_EDGE: 2717
 action_NO_QUOTE: 617
-action_RESEARCH_CANDIDATE: 205
+action_RESEARCH_CANDIDATE: 204
 contract_sides: 3538
 fixtures: 50
 fixtures_model_invalidated: 0
