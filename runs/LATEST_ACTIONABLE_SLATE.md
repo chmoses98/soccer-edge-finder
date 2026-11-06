@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261106T104221Z-70c99d` · generated 2026-11-06T10:42:21.443974Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261106T105754Z-acfa5f` · generated 2026-11-06T10:57:54.231960Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-06T10:39:11.963642Z (CURRENT at publish; CURRENT until 2026-11-06T10:59:11.963642Z, STALE after 2026-11-06T11:09:11.963642Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-06T10:54:44.577637Z (CURRENT at publish; CURRENT until 2026-11-06T11:14:44.577637Z, STALE after 2026-11-06T11:24:44.577637Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-06T10:27:31.252588Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.99s
+model board generated 2026-11-06T10:27:31.252588Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 2.01s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -72,11 +72,11 @@ model board generated 2026-11-06T10:27:31.252588Z · simulations this update: 0 
 | Leeds United vs Tottenham Hotspur | Result: home | yes | 0.3600 | 0.619 [0.443, 0.789] | +0.243 | +0.135 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | Total goals over 3.5 | no | 0.5100 | 0.737 [0.599, 0.858] | +0.209 | +0.135 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away team total over 2.5 | no | 0.6400 | 0.842 [0.743, 0.926] | +0.186 | +0.135 | 0.77 | - | * | RESEARCH_CANDIDATE |
-| Austin FC vs Portland Timbers | away wins by more than 1.5 | no | 0.6600 | 0.859 [0.773, 0.932] | +0.184 | +0.132 | 0.79 | - | * | RESEARCH_CANDIDATE |
 | Leeds United vs Tottenham Hotspur | Result: away | no | 0.6300 | 0.837 [0.728, 0.933] | +0.190 | +0.130 | 0.76 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away team total over 1.5 | no | 0.3900 | 0.616 [0.477, 0.748] | +0.210 | +0.128 | 0.51 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 2.5 | no | 0.4000 | 0.625 [0.477, 0.755] | +0.208 | +0.126 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | Total goals over 2.5 | no | 0.3000 | 0.530 [0.376, 0.677] | +0.215 | +0.124 | 0.42 | - |  | RESEARCH_CANDIDATE |
+| Austin FC vs Portland Timbers | away wins by more than 1.5 | no | 0.6700 | 0.859 [0.773, 0.932] | +0.174 | +0.122 | 0.79 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 3.5 | no | 0.6200 | 0.814 [0.698, 0.905] | +0.177 | +0.120 | 0.74 | - |  | RESEARCH_CANDIDATE |
 | D.C. United vs New York City FC | Total goals over 2.5 | no | 0.4200 | 0.637 [0.501, 0.769] | +0.200 | +0.115 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | Total goals over 4.5 | no | 0.7000 | 0.872 [0.777, 0.948] | +0.157 | +0.112 | 0.81 | - |  | RESEARCH_CANDIDATE |
@@ -91,13 +91,13 @@ model board generated 2026-11-06T10:27:31.252588Z · simulations this update: 0 
 | Parma vs Bologna | Result: away | no | 0.4800 | 0.676 [0.519, 0.814] | +0.179 | +0.093 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | First-half result: away | no | 0.5700 | 0.744 [0.638, 0.842] | +0.157 | +0.093 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 1.5 | no | 0.1800 | 0.361 [0.234, 0.485] | +0.171 | +0.092 | 0.26 | - |  | RESEARCH_CANDIDATE |
+| Houston Dynamo vs St. Louis City SC | away team total over 1.5 | no | 0.5800 | 0.755 [0.643, 0.855] | +0.158 | +0.088 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | D.C. United vs New York City FC | away team total over 1.5 | no | 0.5400 | 0.719 [0.591, 0.831] | +0.162 | +0.088 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | FC Dallas vs Colorado Rapids | away team total over 1.5 | no | 0.6400 | 0.802 [0.703, 0.890] | +0.146 | +0.087 | 0.72 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away wins by more than 2.5 | no | 0.8300 | 0.948 [0.905, 0.982] | +0.108 | +0.086 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | CF Montréal vs Vancouver Whitecaps | Total goals over 4.5 | no | 0.7400 | 0.882 [0.787, 0.954] | +0.129 | +0.083 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | D.C. United vs New York City FC | Total goals over 1.5 | no | 0.2000 | 0.373 [0.250, 0.500] | +0.162 | +0.080 | 0.27 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 4.5 | no | 0.8000 | 0.920 [0.852, 0.970] | +0.109 | +0.079 | 0.88 | - |  | RESEARCH_CANDIDATE |
-| Houston Dynamo vs St. Louis City SC | away team total over 1.5 | no | 0.5900 | 0.755 [0.643, 0.855] | +0.148 | +0.078 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | Total goals over 1.5 | no | 0.1200 | 0.281 [0.166, 0.401] | +0.153 | +0.078 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | D.C. United vs New York City FC | away team total over 0.5 | no | 0.2000 | 0.363 [0.246, 0.478] | +0.152 | +0.076 | 0.27 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | away team total over 0.5 | no | 0.2300 | 0.391 [0.274, 0.505] | +0.149 | +0.074 | 0.3 | - |  | RESEARCH_CANDIDATE |
@@ -111,8 +111,8 @@ model board generated 2026-11-06T10:27:31.252588Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2732
-action_NO_QUOTE: 601
+action_NO_EDGE: 2735
+action_NO_QUOTE: 598
 action_RESEARCH_CANDIDATE: 205
 contract_sides: 3538
 fixtures: 50
