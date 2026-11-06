@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261106T220326Z-623f9b` · generated 2026-11-06T22:03:26.522376Z · trigger `kickoff_chain:T-60/T-15` · mode `model_refresh_and_reprice`
+slate `slate-20261106T221323Z-79e956` · generated 2026-11-06T22:13:23.237374Z · trigger `kickoff_chain:T-5` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-06T22:00:00.072571Z (CURRENT at publish; CURRENT until 2026-11-06T22:20:00.072571Z, STALE after 2026-11-06T22:30:00.072571Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-06T22:10:03.165468Z (CURRENT at publish; CURRENT until 2026-11-06T22:30:03.165468Z, STALE after 2026-11-06T22:40:03.165468Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-06T22:03:23.687413Z · simulations this update: 1 · Odds API calls this update: 2 (credits 6) · reprice 1.90s
+model board generated 2026-11-06T22:03:23.687413Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.89s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -15,7 +15,7 @@ model board generated 2026-11-06T22:03:23.687413Z · simulations this update: 1 
 | 2026-11-06T22:15:00Z | Independiente vs Deportivo Riestra (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | CURRENT close | CURRENT | 3 | 0 |
 | 2026-11-06T22:15:00Z | San Lorenzo vs Platense (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | CURRENT close | CURRENT | 3 | 0 |
 | 2026-11-06T22:15:00Z | Unión vs Vélez Sarsfield (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | CURRENT close | CURRENT | 3 | 0 |
-| 2026-11-06T23:00:00Z | Vitória vs Fluminense (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
+| 2026-11-06T23:00:00Z | Vitória vs Fluminense (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | CURRENT entry | CURRENT | 14 | 0 |
 | 2026-11-07T01:00:00Z | Necaxa vs Tijuana (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-11-07T01:00:00Z | Atlético San Luis vs FC Juárez (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-07T03:00:00Z | Atlante vs Santos Laguna (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -120,19 +120,19 @@ model board generated 2026-11-06T22:03:23.687413Z · simulations this update: 1 
 | FC Dallas vs Colorado Rapids | away team total over 1.5 | no | 0.6400 | 0.802 [0.703, 0.890] | +0.146 | +0.087 | 0.72 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away wins by more than 2.5 | no | 0.8300 | 0.948 [0.905, 0.982] | +0.108 | +0.086 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | away team total over 0.5 | no | 0.2200 | 0.391 [0.274, 0.505] | +0.159 | +0.085 | 0.3 | - |  | RESEARCH_CANDIDATE |
+| Arsenal vs Hull City | Result: draw | yes | 0.1100 | 0.263 [0.161, 0.367] | +0.146 | +0.084 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | CF Montréal vs Vancouver Whitecaps | Total goals over 4.5 | no | 0.7400 | 0.882 [0.787, 0.954] | +0.129 | +0.083 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | CF Montréal vs Vancouver Whitecaps | away team total over 2.5 | no | 0.6300 | 0.792 [0.665, 0.898] | +0.146 | +0.081 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | FC Dallas vs Colorado Rapids | away team total over 0.5 | no | 0.2800 | 0.453 [0.337, 0.569] | +0.159 | +0.081 | 0.35 | - |  | RESEARCH_CANDIDATE |
 | D.C. United vs New York City FC | Total goals over 1.5 | no | 0.2000 | 0.373 [0.250, 0.500] | +0.162 | +0.080 | 0.27 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 4.5 | no | 0.8000 | 0.920 [0.852, 0.970] | +0.109 | +0.079 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs St. Louis City SC | away team total over 0.5 | no | 0.2300 | 0.398 [0.285, 0.512] | +0.156 | +0.078 | 0.3 | - |  | RESEARCH_CANDIDATE |
-| D.C. United vs New York City FC | away team total over 2.5 | no | 0.7800 | 0.905 [0.833, 0.961] | +0.113 | +0.077 | 0.86 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2842
-action_NO_QUOTE: 460
+action_NO_EDGE: 2841
+action_NO_QUOTE: 461
 action_RESEARCH_CANDIDATE: 216
 contract_sides: 3518
 fixtures: 70
