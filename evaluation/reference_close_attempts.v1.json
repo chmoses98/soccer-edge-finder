@@ -1,10 +1,10 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 574,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 580,
   "MISSED_DISPATCHER_CLOSE": 86,
-  "PINNACLE_VALID_CLOSE": 26,
-  "CLOSE_BLOCKED_BUDGET": 7,
-  "PINNACLE_QUOTED_NOTHING": 2
+  "PINNACLE_QUOTED_NOTHING": 2,
+  "PINNACLE_VALID_CLOSE": 32,
+  "CLOSE_BLOCKED_BUDGET": 7
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.belgrano": {
@@ -58,6 +58,11 @@
    "batch_id": null
   },
   "fx:arg.primera:2026:arg.barracas_central:arg.huracan": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:arg.primera:2026:arg.barracas_central:arg.racing": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
@@ -177,6 +182,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:arg.primera:2026:arg.independiente:arg.deportivo_riestra": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261106T220000Z"
+  },
   "fx:arg.primera:2026:arg.independiente:arg.instituto": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -292,6 +302,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:arg.primera:2026:arg.san_lorenzo:arg.platense": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261106T220000Z"
+  },
   "fx:arg.primera:2026:arg.sarmiento:arg.barracas_central": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -336,6 +351,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:arg.primera:2026:arg.union:arg.velez": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261106T220000Z"
   },
   "fx:arg.primera:2026:arg.velez:arg.gimnasia_mendoza": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -942,6 +962,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:eng.premier_league:2026-27:eng.everton:eng.coventry": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
   "fx:eng.premier_league:2026-27:eng.fulham:eng.hull": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -1432,6 +1457,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:esp.la_liga:2026-27:esp.sevilla:esp.alaves": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
   "fx:esp.la_liga:2026-27:esp.sevilla:esp.osasuna": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -1827,6 +1857,16 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:fra.ligue_1:2026-27:fra.toulouse:fra.strasbourg": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:fra.ligue_1:2026-27:fra.toulouse:fra.strasbourg:matchday_10": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261106T193016Z"
+  },
   "fx:fra.ligue_1:2026-27:fra.toulouse:fra.troyes": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -2006,6 +2046,16 @@
    "state": "CLOSE_BLOCKED_BUDGET",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261031T141500Z"
+  },
+  "fx:ger.bundesliga:2026-27:ger.hamburg:ger.gladbach": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:ger.bundesliga:2026-27:ger.hamburg:ger.gladbach:matchday_9": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261106T191500Z"
   },
   "fx:ger.bundesliga:2026-27:ger.hamburg:ger.stuttgart": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -2681,6 +2731,16 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:ita.serie_a:2026-27:ita.venezia:ita.udinese": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:ita.serie_a:2026-27:ita.venezia:ita.udinese:matchday_11": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261106T193016Z"
   },
   "fx:mex.liga_mx:2026:mex.america:mex.monterrey": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
