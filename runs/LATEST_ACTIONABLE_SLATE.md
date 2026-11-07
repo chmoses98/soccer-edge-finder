@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261107T051629Z-133530` · generated 2026-11-07T05:16:29.825907Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261107T053129Z-dddd91` · generated 2026-11-07T05:31:29.903198Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-07T05:13:16.849012Z (CURRENT at publish; CURRENT until 2026-11-07T05:33:16.849012Z, STALE after 2026-11-07T05:43:16.849012Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-07T05:28:16.877318Z (CURRENT at publish; CURRENT until 2026-11-07T05:48:16.877318Z, STALE after 2026-11-07T05:58:16.877318Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-07T04:16:06.611926Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.92s
+model board generated 2026-11-07T04:16:06.611926Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.96s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -78,18 +78,18 @@ model board generated 2026-11-07T04:16:06.611926Z · simulations this update: 0 
 | 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-09T02:10:00Z | León vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (193; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (196; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| New York Red Bulls vs Atlanta United | Total goals over 3.5 | no | 0.4700 | 0.737 [0.599, 0.858] | +0.249 | +0.175 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Valencia vs Real Madrid | Result: away | no | 0.2200 | 0.517 [0.337, 0.693] | +0.285 | +0.165 | 0.38 | - | * | RESEARCH_CANDIDATE |
-| Austin FC vs Portland Timbers | away team total over 1.5 | no | 0.3700 | 0.616 [0.477, 0.748] | +0.230 | +0.148 | 0.51 | - | * | RESEARCH_CANDIDATE |
+| New York Red Bulls vs Atlanta United | Total goals over 3.5 | no | 0.4800 | 0.737 [0.599, 0.858] | +0.239 | +0.165 | 0.64 | - | * | RESEARCH_CANDIDATE |
+| Austin FC vs Portland Timbers | away team total over 1.5 | no | 0.3600 | 0.616 [0.477, 0.748] | +0.240 | +0.158 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | Arsenal vs Hull City | Result: home | no | 0.1600 | 0.459 [0.241, 0.679] | +0.290 | +0.147 | 0.3 | - | * | RESEARCH_CANDIDATE |
 | Leeds United vs Tottenham Hotspur | Result: home | yes | 0.3500 | 0.619 [0.443, 0.789] | +0.253 | +0.145 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | Total goals over 2.5 | no | 0.2800 | 0.530 [0.376, 0.677] | +0.236 | +0.145 | 0.42 | - |  | RESEARCH_CANDIDATE |
+| Austin FC vs Portland Timbers | away team total over 2.5 | no | 0.6300 | 0.842 [0.743, 0.926] | +0.196 | +0.145 | 0.77 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | Result: away | no | 0.4500 | 0.692 [0.559, 0.813] | +0.225 | +0.139 | 0.58 | - | * | RESEARCH_CANDIDATE |
-| Austin FC vs Portland Timbers | away team total over 2.5 | no | 0.6400 | 0.842 [0.743, 0.926] | +0.186 | +0.135 | 0.77 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | Total goals over 4.5 | no | 0.6800 | 0.872 [0.777, 0.948] | +0.177 | +0.131 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | btts | no | 0.3000 | 0.518 [0.408, 0.628] | +0.203 | +0.129 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Leeds United vs Tottenham Hotspur | Result: away | no | 0.6300 | 0.836 [0.726, 0.933] | +0.190 | +0.129 | 0.76 | - |  | RESEARCH_CANDIDATE |
@@ -126,9 +126,9 @@ model board generated 2026-11-07T04:16:06.611926Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2668
-action_NO_QUOTE: 421
-action_RESEARCH_CANDIDATE: 193
+action_NO_EDGE: 2666
+action_NO_QUOTE: 420
+action_RESEARCH_CANDIDATE: 196
 contract_sides: 3282
 fixtures: 65
 fixtures_model_invalidated: 0
