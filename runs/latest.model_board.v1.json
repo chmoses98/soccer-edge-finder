@@ -200237,15 +200237,15 @@
       },
       "event_name": "Seattle Sounders vs Los Angeles FC",
       "fixture_id": "fx:usa.mls:2026:usa.seattle_sounders:usa.lafc",
-      "fixtures_observed_at": "2026-11-07T23:01:55.875691Z",
+      "fixtures_observed_at": "2026-11-07T23:07:42.892055Z",
       "home": "usa.seattle_sounders",
-      "input_fingerprint": "sha256:a772197a7459e2a7f992e6fb6109c9d9d454acf14d161523fb740bbf84652dbe",
+      "input_fingerprint": "sha256:5f24efe8b1006700505dc54c18c67e763a7b308af418bf3ac573893b95e08cea",
       "inputs": {
         "competition_id": "usa.mls",
         "draws_per_world": 100,
         "engine_version": "world_sim_v2",
         "kickoff_utc": "2026-11-08T00:00:00Z",
-        "lineup_key": "none",
+        "lineup_key": "sha256:4709181a6599679affc176a1a43fa18fcaa55e2931a4cbf9807e45e81d1238ee",
         "model_family": "data_only.world_sim_v2",
         "model_version": "dc_laplace_v1",
         "n_worlds": 1000,
@@ -200256,11 +200256,41 @@
         "worlds_version": "worlds_v1"
       },
       "lineup": {
-        "checked_at": "2026-11-07T23:01:59.341646Z",
-        "key": "none",
-        "last_change_at": "2026-11-07T18:58:29.636972Z",
-        "state": "unconfirmed"
+        "checked_at": "2026-11-07T23:46:51.400457Z",
+        "key": "sha256:4709181a6599679affc176a1a43fa18fcaa55e2931a4cbf9807e45e81d1238ee",
+        "last_change_at": "2026-11-07T23:46:51.400457Z",
+        "state": "confirmed"
       },
+      "lineup_history": [
+        {
+          "lineup_key": "none",
+          "lineup_state": "unconfirmed",
+          "model_generated_at": "2026-11-07T23:02:59.731978Z",
+          "scripts": {
+            "primary": "TIGHT_LOW_EVENT",
+            "secondary": "HOME_CONTROL",
+            "shares": [
+              0.23551,
+              0.10103,
+              0.36107,
+              0.0859,
+              0.08872,
+              0.12776
+            ],
+            "taxonomy_version": "soccer_scripts_v1"
+          },
+          "sim_key": "sha256:340bdc11f0dbb46338e3c9e4e95eec52231d4d3bd2437899c5ecb188c009036c",
+          "summary": {
+            "mean_away_goals": 0.9293,
+            "mean_home_goals": 1.26777,
+            "p_away": 0.2722,
+            "p_btts": 0.42402,
+            "p_draw": 0.29424,
+            "p_home": 0.43356,
+            "p_over_2_5": 0.37575
+          }
+        }
+      ],
       "match_context": {
         "aggregate": {
           "source": "no aggregate (not a second leg)",
@@ -200486,8 +200516,8 @@
         "source": "production posterior (dc_laplace_v1) that priced this fixture",
         "version": "dc_matchup_v1"
       },
-      "model_fitted_at": "2026-11-07T23:02:58.360569Z",
-      "model_generated_at": "2026-11-07T23:02:59.731978Z",
+      "model_fitted_at": "2026-11-07T23:47:15.983506Z",
+      "model_generated_at": "2026-11-07T23:47:17.363180Z",
       "results_observed_at": "2026-11-07T23:01:48.247903Z",
       "scripts": {
         "contract_gaps": {},
@@ -201105,8 +201135,8 @@
           }
         }
       },
-      "sim_key": "sha256:340bdc11f0dbb46338e3c9e4e95eec52231d4d3bd2437899c5ecb188c009036c",
-      "source_run_id": "run-20261107T230259Z-53f9b0",
+      "sim_key": "sha256:8d4f21e094b90d67cb59e75555a879bbd35cf2ed21f944641339853b2ca99aa1",
+      "source_run_id": "run-20261107T234717Z-053d61",
       "summary": {
         "mean_away_goals": 0.9293,
         "mean_home_goals": 1.26777,
@@ -201118,6 +201148,6 @@
       }
     }
   },
-  "generated_at": "2026-11-07T23:32:52.236508Z",
+  "generated_at": "2026-11-07T23:47:17.363180Z",
   "quantile_levels": "(i + 0.5) / 100, i = 0..99"
 }

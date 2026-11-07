@@ -1,12 +1,11 @@
 {
-  "as_of": "2026-11-07T23:31:53.686164+00:00",
+  "as_of": "2026-11-07T23:46:48.639829+00:00",
   "events": 15,
   "events_skipped_unmapped": 0,
   "fixtures_mapped": 15,
   "health": {
     "reasons": [
-      "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=7"
+      "weather_failures:1"
     ],
     "state": "DEGRADED"
   },
@@ -14,13 +13,13 @@
     "usa.1"
   ],
   "lineups": {
-    "captured": 15,
+    "captured": 1,
     "events": 15,
     "failures": [],
     "published_post": 8,
-    "published_pre_kickoff": 6,
-    "unchanged": 0,
-    "unpublished": 1
+    "published_pre_kickoff": 7,
+    "unchanged": 14,
+    "unpublished": 0
   },
   "map_proposals": {},
   "map_version": "4",
@@ -31,17 +30,15 @@
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 5,
+    "captured": 13,
     "events": 15,
     "failures": [
-      "761940: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=28.5383&longitude=-81.3792&hourly=t",
-      "761941: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Chester&count=5&language=en&for",
-      "761939: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Harrison&count=5&language=en&fo"
+      "761948: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Seattle&count=5&language=en&for"
     ],
     "forecast_miss": 0,
-    "geocode_miss": 0,
+    "geocode_miss": 1,
     "no_venue": 0,
-    "skipped": 7,
-    "stopped": "consecutive_failures"
+    "skipped": 0,
+    "stopped": null
   }
 }
