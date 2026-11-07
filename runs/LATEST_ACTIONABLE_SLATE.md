@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261107T121817Z-c89d89` · generated 2026-11-07T12:18:17.325924Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261107T122334Z-39875a` · generated 2026-11-07T12:23:34.048685Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-07T12:15:00.066932Z (CURRENT at publish; CURRENT until 2026-11-07T12:35:00.066932Z, STALE after 2026-11-07T12:45:00.066932Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-07T12:20:11.387107Z (CURRENT at publish; CURRENT until 2026-11-07T12:40:11.387107Z, STALE after 2026-11-07T12:50:11.387107Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-07T09:59:30.084166Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.66s
+model board generated 2026-11-07T09:59:30.084166Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.67s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -85,11 +85,11 @@ model board generated 2026-11-07T09:59:30.084166Z · simulations this update: 0 
 | Austin FC vs Portland Timbers | away team total over 1.5 | no | 0.3400 | 0.616 [0.477, 0.748] | +0.261 | +0.179 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | Valencia vs Real Madrid | Result: away | no | 0.2200 | 0.517 [0.337, 0.693] | +0.285 | +0.165 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Arsenal vs Hull City | Result: home | no | 0.1500 | 0.459 [0.241, 0.679] | +0.301 | +0.157 | 0.3 | - | * | RESEARCH_CANDIDATE |
+| Leeds United vs Tottenham Hotspur | Result: home | yes | 0.3400 | 0.619 [0.443, 0.789] | +0.263 | +0.155 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away team total over 2.5 | no | 0.6200 | 0.842 [0.743, 0.926] | +0.206 | +0.154 | 0.77 | - |  | RESEARCH_CANDIDATE |
-| Leeds United vs Tottenham Hotspur | Result: home | yes | 0.3500 | 0.619 [0.443, 0.789] | +0.253 | +0.145 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | Result: away | no | 0.4500 | 0.692 [0.559, 0.813] | +0.225 | +0.139 | 0.58 | - | * | RESEARCH_CANDIDATE |
+| Leeds United vs Tottenham Hotspur | Result: away | no | 0.6200 | 0.836 [0.726, 0.933] | +0.200 | +0.139 | 0.76 | - |  | RESEARCH_CANDIDATE |
 | Parma vs Bologna | Result: away | no | 0.4400 | 0.676 [0.519, 0.814] | +0.219 | +0.133 | 0.57 | - | * | RESEARCH_CANDIDATE |
-| Leeds United vs Tottenham Hotspur | Result: away | no | 0.6300 | 0.836 [0.726, 0.933] | +0.190 | +0.129 | 0.76 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 2.5 | no | 0.4000 | 0.625 [0.477, 0.755] | +0.208 | +0.126 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away wins by more than 1.5 | no | 0.6700 | 0.859 [0.773, 0.932] | +0.174 | +0.122 | 0.79 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | btts | no | 0.3800 | 0.576 [0.464, 0.684] | +0.180 | +0.114 | 0.49 | - | * | RESEARCH_CANDIDATE |
