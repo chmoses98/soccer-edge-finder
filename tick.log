@@ -3046,3 +3046,54 @@ These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW
 
 ## Events
 - FC Cincinnati vs Nashville SC (Major League Soccer) 2026-11-07T21:00:00Z · markets 77/77 evaluated · lineups unknown · xG 1.29-1.47 · 1X2 33%/26%/41%
+
+{
+  "outputs": {
+    "json": "work/runs/_pending/run_output.v1.json",
+    "md": "work/runs/_pending/RUN_SOCCER.md",
+    "contracts": "work/runs/_pending/priced_contracts.json",
+    "coverage": "work/runs/_pending/coverage.json",
+    "diagnostics": "work/runs/_pending/coverage_diagnostics.json"
+  },
+  "simulated": [
+    "fx:usa.mls:2026:usa.cincinnati:usa.nashville"
+  ],
+  "repriced": [],
+  "archived_records": 77
+}
+[dispatch] holding 9.4 min (next window opens in 49.0 min)
+[dispatch] holding 0.5 min (next window opens in 39.6 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261107T211409Z",
+  "complete": true,
+  "discovered": 6441,
+  "written": 2127,
+  "path": "work/snapshots/2026-11-07/cap-20261107T211409Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261107T211410Z-7b19d2", "mode": "reprice_only", "fixtures": 38, "contract_sides": 2220, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.982, "price_changes_vs_previous": 65}
+[dispatch] holding 10.0 min (next window opens in 34.0 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261107T212909Z",
+  "complete": true,
+  "discovered": 6436,
+  "written": 2533,
+  "path": "work/snapshots/2026-11-07/cap-20261107T212909Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261107T212910Z-23af46", "mode": "reprice_only", "fixtures": 38, "contract_sides": 2220, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.791, "price_changes_vs_previous": 109}
+[dispatch] holding 6.3 min (next window opens in 19.0 min)
+{
+ "batches": 30,
+ "horizons_delivered": 123,
+ "missed_states": {
+  "NOT_APPLICABLE": 4
+ },
+ "paid_calls": 14,
+ "credits_spent": 42,
+ "end_reason": "link_time_limit",
+ "chain_continue": true,
+ "delivered_total": 3409,
+ "missed_total": 449,
+ "delivery_rate_total": 0.883618455158113
+}
