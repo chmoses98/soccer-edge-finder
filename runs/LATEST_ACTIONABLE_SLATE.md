@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261107T073138Z-c6d801` · generated 2026-11-07T07:31:38.379513Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261107T074639Z-306355` · generated 2026-11-07T07:46:39.630052Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-07T07:28:25.143000Z (CURRENT at publish; CURRENT until 2026-11-07T07:48:25.143000Z, STALE after 2026-11-07T07:58:25.143000Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-07T07:43:26.627141Z (CURRENT at publish; CURRENT until 2026-11-07T08:03:26.627141Z, STALE after 2026-11-07T08:13:26.627141Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-07T04:16:06.611926Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.81s
+model board generated 2026-11-07T04:16:06.611926Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.97s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -121,13 +121,13 @@ model board generated 2026-11-07T04:16:06.611926Z · simulations this update: 0 
 | Parma vs Bologna | Result: home | yes | 0.1900 | 0.373 [0.224, 0.537] | +0.172 | +0.074 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away team total over 0.5 | no | 0.1300 | 0.273 [0.173, 0.380] | +0.136 | +0.070 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs St. Louis City SC | btts | no | 0.3900 | 0.548 [0.432, 0.651] | +0.141 | +0.070 | 0.45 | - | * | RESEARCH_CANDIDATE |
-| CF Montréal vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.5900 | 0.753 [0.611, 0.870] | +0.146 | +0.069 | 0.65 | - |  | RESEARCH_CANDIDATE |
+| New York Red Bulls vs Atlanta United | First-half total goals over 0.5 | no | 0.1800 | 0.326 [0.228, 0.432] | +0.136 | +0.070 | 0.24 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2666
-action_NO_QUOTE: 416
+action_NO_EDGE: 2668
+action_NO_QUOTE: 414
 action_RESEARCH_CANDIDATE: 200
 contract_sides: 3282
 fixtures: 65
