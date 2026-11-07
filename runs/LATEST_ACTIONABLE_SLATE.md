@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261107T020219Z-7b2883` · generated 2026-11-07T02:02:19.566343Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261107T021735Z-273b6b` · generated 2026-11-07T02:17:35.680024Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-07T01:58:45.953997Z (CURRENT at publish; CURRENT until 2026-11-07T02:18:45.953997Z, STALE after 2026-11-07T02:28:45.953997Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-07T02:14:16.222155Z (CURRENT at publish; CURRENT until 2026-11-07T02:34:16.222155Z, STALE after 2026-11-07T02:44:16.222155Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-07T02:02:09.066392Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 2.01s
+model board generated 2026-11-07T02:17:32.937306Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 1.83s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-07T02:02:09.066392Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-07T03:00:00Z | Atlante vs Santos Laguna (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 77 | 0 |
+| 2026-11-07T03:00:00Z | Atlante vs Santos Laguna (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 77 | 0 |
 | 2026-11-07T14:00:00Z | Cagliari vs Frosinone (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-07T14:00:00Z | Torino vs Lecce (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-07T14:30:00Z | Borussia Dortmund vs SV Elversberg (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -77,8 +77,9 @@ model board generated 2026-11-07T02:02:09.066392Z · simulations this update: 1 
 | 2026-11-08T19:45:00Z | Lens vs Marseille (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T19:45:00Z | Fiorentina vs Juventus (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-09T02:10:00Z | León vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (230; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (232; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -126,11 +127,11 @@ model board generated 2026-11-07T02:02:09.066392Z · simulations this update: 1 
 ## Counts
 
 ```
-action_NO_EDGE: 2737
-action_NO_QUOTE: 441
-action_RESEARCH_CANDIDATE: 230
-contract_sides: 3408
-fixtures: 65
+action_NO_EDGE: 2767
+action_NO_QUOTE: 437
+action_RESEARCH_CANDIDATE: 232
+contract_sides: 3436
+fixtures: 66
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
