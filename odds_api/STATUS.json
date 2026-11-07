@@ -1,10 +1,46 @@
 {
-  "batch_id": "kd-20261107T152502Z",
-  "captured_at": "2026-11-07T15:28:18.772233Z",
-  "credits_charged": 0,
-  "eligible_fixtures": 0,
+  "batch_id": "kd-20261107T160823Z",
+  "captured_at": "2026-11-07T16:11:45.602660Z",
+  "credits_charged": 3,
+  "eligible_fixtures": 2,
   "no_sport_key": [],
-  "paid_calls": 0,
-  "snapshots": 0,
-  "status": "NOTHING_ELIGIBLE"
+  "paid_calls": 1,
+  "per_sport": {
+    "soccer_france_ligue_one": {
+      "dropped_at_spend": [
+        [
+          "fx:fra.ligue_1:2026-27:fra.auxerre:fra.paris_fc:matchday_10",
+          "KICKOFF_MISMATCH"
+        ]
+      ],
+      "fixtures": 1,
+      "join": {
+        "ambiguous": 0,
+        "events": 1,
+        "joined": 1,
+        "unjoined_fixtures": [],
+        "unresolved_names": []
+      },
+      "status": "BLOCKED_BUDGET_GUARD:NO_VALID_WINDOW_AT_SPEND"
+    },
+    "soccer_italy_serie_a": {
+      "close_fixtures": 0,
+      "credits": 3,
+      "entry_fixtures": 1,
+      "fixtures": 1,
+      "incomplete_markets": 0,
+      "join": {
+        "ambiguous": 0,
+        "events": 3,
+        "joined": 1,
+        "unjoined_fixtures": [],
+        "unresolved_names": []
+      },
+      "snapshots": 7,
+      "status": "OK"
+    }
+  },
+  "remaining_after": 19820,
+  "snapshots": 7,
+  "status": "OK"
 }

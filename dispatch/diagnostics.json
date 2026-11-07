@@ -1,21 +1,21 @@
 {
   "by_horizon": {
     "120": {
-      "achieved_minutes_median": 122.77,
-      "achieved_minutes_p10": 118.52,
+      "achieved_minutes_median": 122.6,
+      "achieved_minutes_p10": 118.28,
       "achieved_minutes_p90": 126.47,
-      "delivered": 706,
-      "delivery_rate": 0.9240837696335078,
+      "delivered": 710,
+      "delivery_rate": 0.922077922077922,
       "lateness_minutes_max": 62.51,
-      "lateness_minutes_median": -2.78,
-      "missed": 58
+      "lateness_minutes_median": -2.77,
+      "missed": 60
     },
     "15": {
       "achieved_minutes_median": 11.97,
       "achieved_minutes_p10": 10.48,
       "achieved_minutes_p90": 13.54,
-      "delivered": 641,
-      "delivery_rate": 0.8662162162162163,
+      "delivered": 642,
+      "delivery_rate": 0.8663967611336032,
       "lateness_minutes_max": 14.64,
       "lateness_minutes_median": 3.03,
       "missed": 99
@@ -25,17 +25,17 @@
       "achieved_minutes_p10": 24.78,
       "achieved_minutes_p90": 28.99,
       "delivered": 640,
-      "delivery_rate": 0.863697705802969,
+      "delivery_rate": 0.862533692722372,
       "lateness_minutes_max": 16.98,
       "lateness_minutes_median": 2.85,
-      "missed": 101
+      "missed": 102
     },
     "5": {
       "achieved_minutes_median": 2.08,
       "achieved_minutes_p10": 0.07,
       "achieved_minutes_p90": 2.56,
-      "delivered": 640,
-      "delivery_rate": 0.8672086720867209,
+      "delivered": 641,
+      "delivery_rate": 0.8673883626522327,
       "lateness_minutes_max": 7.8,
       "lateness_minutes_median": 2.92,
       "missed": 98
@@ -44,1150 +44,40 @@
       "achieved_minutes_median": 61.18,
       "achieved_minutes_p10": 56.84,
       "achieved_minutes_p90": 62.25,
-      "delivered": 659,
-      "delivery_rate": 0.8810160427807486,
+      "delivered": 661,
+      "delivery_rate": 0.8801597869507324,
       "lateness_minutes_max": 31.12,
       "lateness_minutes_median": -1.18,
-      "missed": 89
+      "missed": 90
     }
   },
-  "delivered_total": 3286,
-  "delivery_rate_total": 0.8807290270704905,
-  "fixtures_tracked": 764,
-  "generated_at": "2026-11-07T15:31:04Z",
-  "last_tick": {
-    "batches": 27,
-    "summary": [
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "model_refresh:ok:fixtures=50:sim=0:board=43:why=entered_lookahead_unmodelled",
-          "slate_reprice:ok:via_model_refresh"
-        ],
-        "batch_id": "ks-20261107T095606Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=3282:sim=0"
-        ],
-        "batch_id": "ks-20261107T101107Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=3282:sim=0"
-        ],
-        "batch_id": "kd-20261107T102603Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:eng.premier_league:2026-27:eng.leeds:eng.tottenham",
-            120,
-            123.95
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=3282:sim=0"
-        ],
-        "batch_id": "ks-20261107T104103Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=3282:sim=0"
-        ],
-        "batch_id": "kd-20261107T105603Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:esp.la_liga:2026-27:esp.malaga:esp.racing_santander",
-            120,
-            123.95
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=3282:sim=0"
-        ],
-        "batch_id": "ks-20261107T111103Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=3282:sim=0"
-        ],
-        "batch_id": "kd-20261107T112603Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:eng.premier_league:2026-27:eng.leeds:eng.tottenham",
-            60,
-            63.94
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "slate_reprice:ok:sides=3282:sim=0"
-        ],
-        "batch_id": "ks-20261107T114103Z",
-        "due": [],
-        "slate_refresh": true
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:2",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=3282:sim=0"
-        ],
-        "batch_id": "kd-20261107T115603Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:esp.la_liga:2026-27:esp.malaga:esp.racing_santander",
-            60,
-            63.94
-          ],
-          [
-            "fx:ita.serie_a:2026-27:ita.torino:ita.lecce:matchday_11",
-            120,
-            123.94
-          ],
-          [
-            "fx:ita.serie_a:2026-27:ita.cagliari:ita.frosinone:matchday_11",
-            120,
-            123.94
-          ],
-          [
-            "fx:ita.serie_a:2026-27:ita.cagliari:ita.frosinone",
-            120,
-            123.94
-          ],
-          [
-            "fx:ita.serie_a:2026-27:ita.torino:ita.lecce",
-            120,
-            123.94
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=3282:sim=0"
-        ],
-        "batch_id": "kd-20261107T120204Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:eng.premier_league:2026-27:eng.leeds:eng.tottenham",
-            30,
-            27.92
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=3282:sim=0"
-        ],
-        "batch_id": "kd-20261107T121500Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:eng.premier_league:2026-27:eng.leeds:eng.tottenham",
-            15,
-            15.0
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=3282:sim=0"
-        ],
-        "batch_id": "kd-20261107T122011Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:ger.bundesliga:2026-27:ger.leipzig:ger.augsburg:matchday_9",
-            120,
-            129.81
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.paderborn:ger.frankfurt:matchday_9",
-            120,
-            129.81
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.dortmund:ger.elversberg:matchday_9",
-            120,
-            129.81
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.mainz:ger.bayern:matchday_9",
-            120,
-            129.81
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.dortmund:ger.elversberg",
-            120,
-            129.81
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.mainz:ger.bayern",
-            120,
-            129.81
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.leipzig:ger.augsburg",
-            120,
-            129.81
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.paderborn:ger.frankfurt",
-            120,
-            129.81
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=3282:sim=0"
-        ],
-        "batch_id": "kd-20261107T122528Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:eng.premier_league:2026-27:eng.leeds:eng.tottenham",
-            5,
-            4.53
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=3282:sim=0"
-        ],
-        "batch_id": "kd-20261107T123040Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:esp.la_liga:2026-27:esp.malaga:esp.racing_santander",
-            30,
-            29.33
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=3282:sim=0"
-        ],
-        "batch_id": "kd-20261107T124500Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:esp.la_liga:2026-27:esp.malaga:esp.racing_santander",
-            15,
-            15.0
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=3282:sim=0"
-        ],
-        "batch_id": "kd-20261107T125012Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:eng.premier_league:2026-27:eng.brighton:eng.brentford:matchday_10",
-            120,
-            129.8
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.crystal_palace:eng.liverpool:matchday_10",
-            120,
-            129.8
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.ipswich:eng.bournemouth:matchday_10",
-            120,
-            129.8
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.man_united:eng.aston_villa:matchday_10",
-            120,
-            129.8
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.sunderland:eng.chelsea:matchday_10",
-            120,
-            129.8
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.arsenal:eng.hull:matchday_10",
-            120,
-            129.8
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.fulham:eng.newcastle:matchday_10",
-            120,
-            129.8
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.leeds:eng.tottenham:matchday_10",
-            120,
-            129.8
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.nottm_forest:eng.man_city:matchday_10",
-            120,
-            129.8
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.everton:eng.coventry:matchday_10",
-            120,
-            129.8
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.arsenal:eng.hull",
-            120,
-            129.8
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.fulham:eng.newcastle",
-            120,
-            129.8
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:ok:credits=0:paid=0:rows=0",
-          "lineups:ok:2",
-          "model_refresh:ok:fixtures=2:sim=0:cache=2:why=T-60:primary_refresh",
-          "slate_reprice:ok:via_model_refresh"
-        ],
-        "batch_id": "kd-20261107T125522Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:esp.la_liga:2026-27:esp.malaga:esp.racing_santander",
-            5,
-            4.62
-          ],
-          [
-            "fx:ita.serie_a:2026-27:ita.torino:ita.lecce:matchday_11",
-            60,
-            64.62
-          ],
-          [
-            "fx:ita.serie_a:2026-27:ita.cagliari:ita.frosinone:matchday_11",
-            60,
-            64.62
-          ],
-          [
-            "fx:ita.serie_a:2026-27:ita.cagliari:ita.frosinone",
-            60,
-            64.62
-          ],
-          [
-            "fx:ita.serie_a:2026-27:ita.torino:ita.lecce",
-            60,
-            64.62
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=3282:sim=0"
-        ],
-        "batch_id": "kd-20261107T131025Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:esp.la_liga:2026-27:esp.espanyol:esp.deportivo",
-            120,
-            124.58
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:ok:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:ok:fixtures=4:sim=0:cache=4:why=T-60:primary_refresh",
-          "slate_reprice:ok:via_model_refresh"
-        ],
-        "batch_id": "kd-20261107T132525Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:ger.bundesliga:2026-27:ger.leipzig:ger.augsburg:matchday_9",
-            60,
-            64.58
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.paderborn:ger.frankfurt:matchday_9",
-            60,
-            64.58
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.dortmund:ger.elversberg:matchday_9",
-            60,
-            64.58
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.mainz:ger.bayern:matchday_9",
-            60,
-            64.58
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.dortmund:ger.elversberg",
-            60,
-            64.58
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.mainz:ger.bayern",
-            60,
-            64.58
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.leipzig:ger.augsburg",
-            60,
-            64.58
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.paderborn:ger.frankfurt",
-            60,
-            64.58
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=3282:sim=0"
-        ],
-        "batch_id": "kd-20261107T133049Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:ita.serie_a:2026-27:ita.torino:ita.lecce:matchday_11",
-            30,
-            29.18
-          ],
-          [
-            "fx:ita.serie_a:2026-27:ita.cagliari:ita.frosinone:matchday_11",
-            30,
-            29.18
-          ],
-          [
-            "fx:ita.serie_a:2026-27:ita.cagliari:ita.frosinone",
-            30,
-            29.18
-          ],
-          [
-            "fx:ita.serie_a:2026-27:ita.torino:ita.lecce",
-            30,
-            29.18
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:ok:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=3282:sim=0"
-        ],
-        "batch_id": "kd-20261107T134503Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:ita.serie_a:2026-27:ita.torino:ita.lecce:matchday_11",
-            15,
-            14.94
-          ],
-          [
-            "fx:ita.serie_a:2026-27:ita.cagliari:ita.frosinone:matchday_11",
-            15,
-            14.94
-          ],
-          [
-            "fx:ita.serie_a:2026-27:ita.cagliari:ita.frosinone",
-            15,
-            14.94
-          ],
-          [
-            "fx:ita.serie_a:2026-27:ita.torino:ita.lecce",
-            15,
-            14.94
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:ok:credits=0:paid=0:rows=0",
-          "lineups:ok:2",
-          "model_refresh:ok:fixtures=10:sim=0:cache=9:why=T-60:primary_refresh",
-          "slate_reprice:ok:via_model_refresh"
-        ],
-        "batch_id": "kd-20261107T135500Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:ita.serie_a:2026-27:ita.torino:ita.lecce:matchday_11",
-            5,
-            5.0
-          ],
-          [
-            "fx:ita.serie_a:2026-27:ita.cagliari:ita.frosinone:matchday_11",
-            5,
-            5.0
-          ],
-          [
-            "fx:ita.serie_a:2026-27:ita.cagliari:ita.frosinone",
-            5,
-            5.0
-          ],
-          [
-            "fx:ita.serie_a:2026-27:ita.torino:ita.lecce",
-            5,
-            5.0
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.brighton:eng.brentford:matchday_10",
-            60,
-            65.0
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.crystal_palace:eng.liverpool:matchday_10",
-            60,
-            65.0
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.ipswich:eng.bournemouth:matchday_10",
-            60,
-            65.0
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.man_united:eng.aston_villa:matchday_10",
-            60,
-            65.0
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.sunderland:eng.chelsea:matchday_10",
-            60,
-            65.0
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.arsenal:eng.hull:matchday_10",
-            60,
-            65.0
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.fulham:eng.newcastle:matchday_10",
-            60,
-            65.0
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.leeds:eng.tottenham:matchday_10",
-            60,
-            65.0
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.nottm_forest:eng.man_city:matchday_10",
-            60,
-            65.0
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.everton:eng.coventry:matchday_10",
-            60,
-            65.0
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.arsenal:eng.hull",
-            60,
-            65.0
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.fulham:eng.newcastle",
-            60,
-            65.0
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=3270:sim=0"
-        ],
-        "batch_id": "kd-20261107T140024Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:ger.bundesliga:2026-27:ger.leipzig:ger.augsburg:matchday_9",
-            30,
-            29.59
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.paderborn:ger.frankfurt:matchday_9",
-            30,
-            29.59
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.dortmund:ger.elversberg:matchday_9",
-            30,
-            29.59
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.mainz:ger.bayern:matchday_9",
-            30,
-            29.59
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.dortmund:ger.elversberg",
-            30,
-            29.59
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.mainz:ger.bayern",
-            30,
-            29.59
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.leipzig:ger.augsburg",
-            30,
-            29.59
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.paderborn:ger.frankfurt",
-            30,
-            29.59
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:ok:credits=0:paid=0:rows=0",
-          "lineups:ok:2",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=3270:sim=0"
-        ],
-        "batch_id": "kd-20261107T141502Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:ger.bundesliga:2026-27:ger.leipzig:ger.augsburg:matchday_9",
-            15,
-            14.96
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.paderborn:ger.frankfurt:matchday_9",
-            15,
-            14.96
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.dortmund:ger.elversberg:matchday_9",
-            15,
-            14.96
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.mainz:ger.bayern:matchday_9",
-            15,
-            14.96
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.dortmund:ger.elversberg",
-            15,
-            14.96
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.mainz:ger.bayern",
-            15,
-            14.96
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.leipzig:ger.augsburg",
-            15,
-            14.96
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.paderborn:ger.frankfurt",
-            15,
-            14.96
-          ],
-          [
-            "fx:esp.la_liga:2026-27:esp.espanyol:esp.deportivo",
-            60,
-            59.96
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:ok:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=3270:sim=0"
-        ],
-        "batch_id": "kd-20261107T142500Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:ger.bundesliga:2026-27:ger.leipzig:ger.augsburg:matchday_9",
-            5,
-            5.0
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.paderborn:ger.frankfurt:matchday_9",
-            5,
-            5.0
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.dortmund:ger.elversberg:matchday_9",
-            5,
-            5.0
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.mainz:ger.bayern:matchday_9",
-            5,
-            5.0
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.dortmund:ger.elversberg",
-            5,
-            5.0
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.mainz:ger.bayern",
-            5,
-            5.0
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.leipzig:ger.augsburg",
-            5,
-            5.0
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.paderborn:ger.frankfurt",
-            5,
-            5.0
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=3246:sim=0"
-        ],
-        "batch_id": "kd-20261107T143012Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:eng.premier_league:2026-27:eng.brighton:eng.brentford:matchday_10",
-            30,
-            29.79
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.crystal_palace:eng.liverpool:matchday_10",
-            30,
-            29.79
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.ipswich:eng.bournemouth:matchday_10",
-            30,
-            29.79
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.man_united:eng.aston_villa:matchday_10",
-            30,
-            29.79
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.sunderland:eng.chelsea:matchday_10",
-            30,
-            29.79
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.arsenal:eng.hull:matchday_10",
-            30,
-            29.79
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.fulham:eng.newcastle:matchday_10",
-            30,
-            29.79
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.leeds:eng.tottenham:matchday_10",
-            30,
-            29.79
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.nottm_forest:eng.man_city:matchday_10",
-            30,
-            29.79
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.everton:eng.coventry:matchday_10",
-            30,
-            29.79
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.arsenal:eng.hull",
-            30,
-            29.79
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.fulham:eng.newcastle",
-            30,
-            29.79
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:ok:credits=0:paid=0:rows=0",
-          "lineups:ok:2",
-          "model_refresh:ok:fixtures=1:sim=0:cache=0:why=T-15:no_model_refresh_since_t60",
-          "slate_reprice:ok:via_model_refresh"
-        ],
-        "batch_id": "kd-20261107T144503Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:eng.premier_league:2026-27:eng.brighton:eng.brentford:matchday_10",
-            15,
-            14.95
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.crystal_palace:eng.liverpool:matchday_10",
-            15,
-            14.95
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.ipswich:eng.bournemouth:matchday_10",
-            15,
-            14.95
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.man_united:eng.aston_villa:matchday_10",
-            15,
-            14.95
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.sunderland:eng.chelsea:matchday_10",
-            15,
-            14.95
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.arsenal:eng.hull:matchday_10",
-            15,
-            14.95
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.fulham:eng.newcastle:matchday_10",
-            15,
-            14.95
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.leeds:eng.tottenham:matchday_10",
-            15,
-            14.95
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.nottm_forest:eng.man_city:matchday_10",
-            15,
-            14.95
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.everton:eng.coventry:matchday_10",
-            15,
-            14.95
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.arsenal:eng.hull",
-            15,
-            14.95
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.fulham:eng.newcastle",
-            15,
-            14.95
-          ],
-          [
-            "fx:esp.la_liga:2026-27:esp.espanyol:esp.deportivo",
-            30,
-            29.95
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=3246:sim=0"
-        ],
-        "batch_id": "kd-20261107T145022Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:ita.serie_a:2026-27:ita.parma:ita.bologna",
-            120,
-            129.63
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:ok:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=3246:sim=0"
-        ],
-        "batch_id": "kd-20261107T145537Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:eng.premier_league:2026-27:eng.brighton:eng.brentford:matchday_10",
-            5,
-            4.38
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.crystal_palace:eng.liverpool:matchday_10",
-            5,
-            4.38
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.ipswich:eng.bournemouth:matchday_10",
-            5,
-            4.38
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.man_united:eng.aston_villa:matchday_10",
-            5,
-            4.38
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.sunderland:eng.chelsea:matchday_10",
-            5,
-            4.38
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.arsenal:eng.hull:matchday_10",
-            5,
-            4.38
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.fulham:eng.newcastle:matchday_10",
-            5,
-            4.38
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.leeds:eng.tottenham:matchday_10",
-            5,
-            4.38
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.nottm_forest:eng.man_city:matchday_10",
-            5,
-            4.38
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.everton:eng.coventry:matchday_10",
-            5,
-            4.38
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.arsenal:eng.hull",
-            5,
-            4.38
-          ],
-          [
-            "fx:eng.premier_league:2026-27:eng.fulham:eng.newcastle",
-            5,
-            4.38
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=3186:sim=0"
-        ],
-        "batch_id": "kd-20261107T150053Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:esp.la_liga:2026-27:esp.espanyol:esp.deportivo",
-            15,
-            14.1
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:1",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=3186:sim=0"
-        ],
-        "batch_id": "kd-20261107T151002Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:esp.la_liga:2026-27:esp.espanyol:esp.deportivo",
-            5,
-            4.96
-          ]
-        ]
-      },
-      {
-        "actions": [
-          "kalshi_capture:ok",
-          "reference:ok",
-          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
-          "lineups:ok:3",
-          "model_refresh:skipped:selective:no_input_change",
-          "slate_reprice:ok:sides=3186:sim=0"
-        ],
-        "batch_id": "kd-20261107T152502Z",
-        "captured": true,
-        "due": [
-          [
-            "fx:eng.premier_league:2026-27:eng.nottm_forest:eng.man_city",
-            120,
-            124.96
-          ],
-          [
-            "fx:esp.la_liga:2026-27:esp.osasuna:esp.athletic_bilbao",
-            120,
-            124.96
-          ],
-          [
-            "fx:ger.bundesliga:2026-27:ger.stuttgart:ger.werder_bremen",
-            120,
-            124.96
-          ]
-        ]
-      }
-    ]
-  },
-  "missed_total": 445,
-  "n_pending_fixtures": 60,
+  "delivered_total": 3294,
+  "delivery_rate_total": 0.8800427464600588,
+  "fixtures_tracked": 770,
+  "generated_at": "2026-11-07T16:12:51Z",
+  "missed_total": 449,
+  "n_pending_fixtures": 86,
   "pending_fixtures": [
+    {
+      "competition_id": "ita.serie_a",
+      "fixture_id": "fx:ita.serie_a:2026-27:ita.parma:ita.bologna:matchday_11",
+      "kickoff_utc": "2026-11-07T17:00:00Z",
+      "markets_discovered": 77,
+      "source": "run_output"
+    },
     {
       "competition_id": "ita.serie_a",
       "fixture_id": "fx:ita.serie_a:2026-27:ita.parma:ita.bologna",
       "kickoff_utc": "2026-11-07T17:00:00Z",
       "markets_discovered": 0,
       "source": "espn"
+    },
+    {
+      "competition_id": "ger.bundesliga",
+      "fixture_id": "fx:ger.bundesliga:2026-27:ger.stuttgart:ger.werder_bremen:matchday_9",
+      "kickoff_utc": "2026-11-07T17:30:00Z",
+      "markets_discovered": 77,
+      "source": "run_output"
     },
     {
       "competition_id": "eng.premier_league",
@@ -1212,14 +102,14 @@
     },
     {
       "competition_id": "arg.primera",
-      "fixture_id": "fx:arg.primera:2026:arg.gimnasia_mendoza:arg.independiente_rivadavia",
+      "fixture_id": "fx:arg.primera:2026:arg.talleres:arg.estudiantes",
       "kickoff_utc": "2026-11-07T18:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 14,
+      "source": "run_output"
     },
     {
       "competition_id": "arg.primera",
-      "fixture_id": "fx:arg.primera:2026:arg.talleres:arg.estudiantes",
+      "fixture_id": "fx:arg.primera:2026:arg.gimnasia_mendoza:arg.independiente_rivadavia",
       "kickoff_utc": "2026-11-07T18:00:00Z",
       "markets_discovered": 0,
       "source": "espn"
@@ -1230,6 +120,20 @@
       "kickoff_utc": "2026-11-07T18:00:00Z",
       "markets_discovered": 0,
       "source": "espn"
+    },
+    {
+      "competition_id": "ita.serie_a",
+      "fixture_id": "fx:ita.serie_a:2026-27:ita.roma:ita.sassuolo:matchday_11",
+      "kickoff_utc": "2026-11-07T19:45:00Z",
+      "markets_discovered": 77,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "fra.ligue_1",
+      "fixture_id": "fx:fra.ligue_1:2026-27:fra.psg:fra.troyes:matchday_10",
+      "kickoff_utc": "2026-11-07T19:45:00Z",
+      "markets_discovered": 77,
+      "source": "run_output"
     },
     {
       "competition_id": "ita.serie_a",
@@ -1254,17 +158,17 @@
     },
     {
       "competition_id": "arg.primera",
-      "fixture_id": "fx:arg.primera:2026:arg.argentinos_juniors:arg.huracan",
+      "fixture_id": "fx:arg.primera:2026:arg.boca_juniors:arg.defensa_y_justicia",
       "kickoff_utc": "2026-11-07T20:30:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 14,
+      "source": "run_output"
     },
     {
       "competition_id": "arg.primera",
-      "fixture_id": "fx:arg.primera:2026:arg.boca_juniors:arg.defensa_y_justicia",
+      "fixture_id": "fx:arg.primera:2026:arg.argentinos_juniors:arg.huracan",
       "kickoff_utc": "2026-11-07T20:30:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 14,
+      "source": "run_output"
     },
     {
       "competition_id": "arg.primera",
@@ -1275,143 +179,150 @@
     },
     {
       "competition_id": "usa.mls",
-      "fixture_id": "fx:usa.mls:2026:usa.cf_montreal:usa.vancouver_whitecaps",
-      "kickoff_utc": "2026-11-07T21:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "usa.mls",
       "fixture_id": "fx:usa.mls:2026:usa.chicago_fire:usa.columbus_crew",
       "kickoff_utc": "2026-11-07T21:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "usa.mls",
-      "fixture_id": "fx:usa.mls:2026:usa.dc_united:usa.nycfc",
-      "kickoff_utc": "2026-11-07T21:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 77,
+      "source": "run_output"
     },
     {
       "competition_id": "usa.mls",
       "fixture_id": "fx:usa.mls:2026:usa.cincinnati:usa.nashville",
       "kickoff_utc": "2026-11-07T21:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 77,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.dc_united:usa.nycfc",
+      "kickoff_utc": "2026-11-07T21:00:00Z",
+      "markets_discovered": 77,
+      "source": "run_output"
     },
     {
       "competition_id": "usa.mls",
       "fixture_id": "fx:usa.mls:2026:usa.inter_miami:usa.charlotte",
       "kickoff_utc": "2026-11-07T21:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 77,
+      "source": "run_output"
     },
     {
       "competition_id": "usa.mls",
-      "fixture_id": "fx:usa.mls:2026:usa.orlando_city:usa.new_england",
+      "fixture_id": "fx:usa.mls:2026:usa.cf_montreal:usa.vancouver_whitecaps",
       "kickoff_utc": "2026-11-07T21:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "usa.mls",
-      "fixture_id": "fx:usa.mls:2026:usa.philadelphia_union:usa.toronto",
-      "kickoff_utc": "2026-11-07T21:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 77,
+      "source": "run_output"
     },
     {
       "competition_id": "usa.mls",
       "fixture_id": "fx:usa.mls:2026:usa.ny_red_bulls:usa.atlanta_united",
       "kickoff_utc": "2026-11-07T21:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 77,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.orlando_city:usa.new_england",
+      "kickoff_utc": "2026-11-07T21:00:00Z",
+      "markets_discovered": 77,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.philadelphia_union:usa.toronto",
+      "kickoff_utc": "2026-11-07T21:00:00Z",
+      "markets_discovered": 77,
+      "source": "run_output"
     },
     {
       "competition_id": "mex.liga_mx",
       "fixture_id": "fx:mex.liga_mx:2026:mex.atlas:mex.pachuca",
       "kickoff_utc": "2026-11-07T23:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 77,
+      "source": "run_output"
     },
     {
       "competition_id": "usa.mls",
       "fixture_id": "fx:usa.mls:2026:usa.austin:usa.portland_timbers",
       "kickoff_utc": "2026-11-08T00:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 77,
+      "source": "run_output"
     },
     {
       "competition_id": "usa.mls",
       "fixture_id": "fx:usa.mls:2026:usa.fc_dallas:usa.colorado_rapids",
       "kickoff_utc": "2026-11-08T00:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 77,
+      "source": "run_output"
     },
     {
       "competition_id": "usa.mls",
       "fixture_id": "fx:usa.mls:2026:usa.houston_dynamo:usa.st_louis_city",
       "kickoff_utc": "2026-11-08T00:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 32,
+      "source": "run_output"
     },
     {
       "competition_id": "usa.mls",
       "fixture_id": "fx:usa.mls:2026:usa.minnesota_united:usa.san_jose_earthquakes",
       "kickoff_utc": "2026-11-08T00:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 77,
+      "source": "run_output"
     },
     {
       "competition_id": "usa.mls",
       "fixture_id": "fx:usa.mls:2026:usa.real_salt_lake:usa.la_galaxy",
       "kickoff_utc": "2026-11-08T00:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 77,
+      "source": "run_output"
     },
     {
       "competition_id": "usa.mls",
       "fixture_id": "fx:usa.mls:2026:usa.san_diego:usa.sporting_kc",
       "kickoff_utc": "2026-11-08T00:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 77,
+      "source": "run_output"
     },
     {
       "competition_id": "usa.mls",
       "fixture_id": "fx:usa.mls:2026:usa.seattle_sounders:usa.lafc",
       "kickoff_utc": "2026-11-08T00:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "arg.primera",
-      "fixture_id": "fx:arg.primera:2026:arg.instituto:arg.newells",
-      "kickoff_utc": "2026-11-08T01:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "mex.liga_mx",
-      "fixture_id": "fx:mex.liga_mx:2026:mex.tigres:mex.cruz_azul",
-      "kickoff_utc": "2026-11-08T01:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 77,
+      "source": "run_output"
     },
     {
       "competition_id": "mex.liga_mx",
       "fixture_id": "fx:mex.liga_mx:2026:mex.toluca:mex.monterrey",
       "kickoff_utc": "2026-11-08T01:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 77,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "mex.liga_mx",
+      "fixture_id": "fx:mex.liga_mx:2026:mex.tigres:mex.cruz_azul",
+      "kickoff_utc": "2026-11-08T01:00:00Z",
+      "markets_discovered": 77,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "arg.primera",
+      "fixture_id": "fx:arg.primera:2026:arg.instituto:arg.newells",
+      "kickoff_utc": "2026-11-08T01:00:00Z",
+      "markets_discovered": 14,
+      "source": "run_output"
     },
     {
       "competition_id": "mex.liga_mx",
       "fixture_id": "fx:mex.liga_mx:2026:mex.pumas:mex.america",
       "kickoff_utc": "2026-11-08T03:10:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 77,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "ita.serie_a",
+      "fixture_id": "fx:ita.serie_a:2026-27:ita.napoli:ita.lazio:matchday_11",
+      "kickoff_utc": "2026-11-08T11:30:00Z",
+      "markets_discovered": 32,
+      "source": "run_output"
     },
     {
       "competition_id": "ita.serie_a",
@@ -1422,10 +333,87 @@
     },
     {
       "competition_id": "esp.la_liga",
+      "fixture_id": "fx:esp.la_liga:2026-27:esp.elche:esp.real_betis:matchday_12",
+      "kickoff_utc": "2026-11-08T12:00:00Z",
+      "markets_discovered": 32,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "esp.la_liga",
+      "fixture_id": "fx:esp.la_liga:2026-27:esp.real_sociedad:esp.rayo_vallecano:matchday_12",
+      "kickoff_utc": "2026-11-08T12:00:00Z",
+      "markets_discovered": 32,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "esp.la_liga",
+      "fixture_id": "fx:esp.la_liga:2026-27:esp.celta_vigo:esp.levante:matchday_12",
+      "kickoff_utc": "2026-11-08T12:00:00Z",
+      "markets_discovered": 73,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "esp.la_liga",
+      "fixture_id": "fx:esp.la_liga:2026-27:esp.villarreal:esp.getafe:matchday_12",
+      "kickoff_utc": "2026-11-08T12:00:00Z",
+      "markets_discovered": 69,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "esp.la_liga",
+      "fixture_id": "fx:esp.la_liga:2026-27:esp.atletico_madrid:esp.barcelona:matchday_12",
+      "kickoff_utc": "2026-11-08T12:00:00Z",
+      "markets_discovered": 85,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "esp.la_liga",
+      "fixture_id": "fx:esp.la_liga:2026-27:esp.espanyol:esp.deportivo:matchday_12",
+      "kickoff_utc": "2026-11-08T12:00:00Z",
+      "markets_discovered": 71,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "esp.la_liga",
+      "fixture_id": "fx:esp.la_liga:2026-27:esp.osasuna:esp.athletic_bilbao:matchday_12",
+      "kickoff_utc": "2026-11-08T12:00:00Z",
+      "markets_discovered": 72,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "esp.la_liga",
+      "fixture_id": "fx:esp.la_liga:2026-27:esp.valencia:esp.real_madrid:matchday_12",
+      "kickoff_utc": "2026-11-08T12:00:00Z",
+      "markets_discovered": 76,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "esp.la_liga",
       "fixture_id": "fx:esp.la_liga:2026-27:esp.elche:esp.real_betis",
       "kickoff_utc": "2026-11-08T13:00:00Z",
       "markets_discovered": 0,
       "source": "espn"
+    },
+    {
+      "competition_id": "ita.serie_a",
+      "fixture_id": "fx:ita.serie_a:2026-27:ita.genoa:ita.milan:matchday_11",
+      "kickoff_utc": "2026-11-08T14:00:00Z",
+      "markets_discovered": 77,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "ita.serie_a",
+      "fixture_id": "fx:ita.serie_a:2026-27:ita.monza:ita.atalanta:matchday_11",
+      "kickoff_utc": "2026-11-08T14:00:00Z",
+      "markets_discovered": 77,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "fra.ligue_1",
+      "fixture_id": "fx:fra.ligue_1:2026-27:fra.rennes:fra.lille:matchday_10",
+      "kickoff_utc": "2026-11-08T14:00:00Z",
+      "markets_discovered": 77,
+      "source": "run_output"
     },
     {
       "competition_id": "eng.premier_league",
@@ -1478,6 +466,13 @@
     },
     {
       "competition_id": "ger.bundesliga",
+      "fixture_id": "fx:ger.bundesliga:2026-27:ger.koln:ger.leverkusen:matchday_9",
+      "kickoff_utc": "2026-11-08T14:30:00Z",
+      "markets_discovered": 77,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "ger.bundesliga",
       "fixture_id": "fx:ger.bundesliga:2026-27:ger.koln:ger.leverkusen",
       "kickoff_utc": "2026-11-08T14:30:00Z",
       "markets_discovered": 0,
@@ -1489,6 +484,34 @@
       "kickoff_utc": "2026-11-08T15:15:00Z",
       "markets_discovered": 0,
       "source": "espn"
+    },
+    {
+      "competition_id": "fra.ligue_1",
+      "fixture_id": "fx:fra.ligue_1:2026-27:fra.brest:fra.lyon:matchday_10",
+      "kickoff_utc": "2026-11-08T16:15:00Z",
+      "markets_discovered": 32,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "fra.ligue_1",
+      "fixture_id": "fx:fra.ligue_1:2026-27:fra.le_mans:fra.monaco:matchday_10",
+      "kickoff_utc": "2026-11-08T16:15:00Z",
+      "markets_discovered": 77,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "fra.ligue_1",
+      "fixture_id": "fx:fra.ligue_1:2026-27:fra.le_havre:fra.lorient:matchday_10",
+      "kickoff_utc": "2026-11-08T16:15:00Z",
+      "markets_discovered": 77,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "fra.ligue_1",
+      "fixture_id": "fx:fra.ligue_1:2026-27:fra.angers:fra.nice:matchday_10",
+      "kickoff_utc": "2026-11-08T16:15:00Z",
+      "markets_discovered": 77,
+      "source": "run_output"
     },
     {
       "competition_id": "fra.ligue_1",
@@ -1519,6 +542,13 @@
       "source": "espn"
     },
     {
+      "competition_id": "ger.bundesliga",
+      "fixture_id": "fx:ger.bundesliga:2026-27:ger.freiburg:ger.union_berlin:matchday_9",
+      "kickoff_utc": "2026-11-08T16:30:00Z",
+      "markets_discovered": 77,
+      "source": "run_output"
+    },
+    {
       "competition_id": "eng.premier_league",
       "fixture_id": "fx:eng.premier_league:2026-27:eng.man_united:eng.aston_villa",
       "kickoff_utc": "2026-11-08T16:30:00Z",
@@ -1531,6 +561,13 @@
       "kickoff_utc": "2026-11-08T16:30:00Z",
       "markets_discovered": 0,
       "source": "espn"
+    },
+    {
+      "competition_id": "ita.serie_a",
+      "fixture_id": "fx:ita.serie_a:2026-27:ita.inter:ita.como:matchday_11",
+      "kickoff_utc": "2026-11-08T17:00:00Z",
+      "markets_discovered": 32,
+      "source": "run_output"
     },
     {
       "competition_id": "ita.serie_a",
@@ -1555,10 +592,31 @@
     },
     {
       "competition_id": "ger.bundesliga",
+      "fixture_id": "fx:ger.bundesliga:2026-27:ger.hoffenheim:ger.schalke:matchday_9",
+      "kickoff_utc": "2026-11-08T18:30:00Z",
+      "markets_discovered": 77,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "ger.bundesliga",
       "fixture_id": "fx:ger.bundesliga:2026-27:ger.hoffenheim:ger.schalke",
       "kickoff_utc": "2026-11-08T18:30:00Z",
       "markets_discovered": 0,
       "source": "espn"
+    },
+    {
+      "competition_id": "ita.serie_a",
+      "fixture_id": "fx:ita.serie_a:2026-27:ita.fiorentina:ita.juventus:matchday_11",
+      "kickoff_utc": "2026-11-08T19:45:00Z",
+      "markets_discovered": 32,
+      "source": "run_output"
+    },
+    {
+      "competition_id": "fra.ligue_1",
+      "fixture_id": "fx:fra.ligue_1:2026-27:fra.lens:fra.marseille:matchday_10",
+      "kickoff_utc": "2026-11-08T19:45:00Z",
+      "markets_discovered": 77,
+      "source": "run_output"
     },
     {
       "competition_id": "fra.ligue_1",
@@ -1585,22 +643,22 @@
       "competition_id": "arg.primera",
       "fixture_id": "fx:arg.primera:2026:arg.central_cordoba:arg.lanus",
       "kickoff_utc": "2026-11-08T22:30:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 3,
+      "source": "run_output"
     },
     {
       "competition_id": "mex.liga_mx",
       "fixture_id": "fx:mex.liga_mx:2026:mex.queretaro:mex.puebla",
       "kickoff_utc": "2026-11-09T00:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 77,
+      "source": "run_output"
     },
     {
       "competition_id": "mex.liga_mx",
       "fixture_id": "fx:mex.liga_mx:2026:mex.leon:mex.guadalajara",
       "kickoff_utc": "2026-11-09T02:10:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 77,
+      "source": "run_output"
     }
   ],
   "required_horizons": [
