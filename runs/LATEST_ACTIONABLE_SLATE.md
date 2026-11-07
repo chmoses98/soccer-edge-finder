@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261107T064635Z-440c78` · generated 2026-11-07T06:46:35.573254Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261107T070135Z-6f72f4` · generated 2026-11-07T07:01:35.647035Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-07T06:43:22.532490Z (CURRENT at publish; CURRENT until 2026-11-07T07:03:22.532490Z, STALE after 2026-11-07T07:13:22.532490Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-07T06:58:22.559868Z (CURRENT at publish; CURRENT until 2026-11-07T07:18:22.559868Z, STALE after 2026-11-07T07:28:22.559868Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-07T04:16:06.611926Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.79s
+model board generated 2026-11-07T04:16:06.611926Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.98s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -78,7 +78,7 @@ model board generated 2026-11-07T04:16:06.611926Z · simulations this update: 0 
 | 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-09T02:10:00Z | León vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (196; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (195; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -97,8 +97,8 @@ model board generated 2026-11-07T04:16:06.611926Z · simulations this update: 0 
 | Seattle Sounders vs Los Angeles FC | Total goals over 2.5 | no | 0.4000 | 0.625 [0.477, 0.755] | +0.208 | +0.126 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | away team total over 1.5 | no | 0.5400 | 0.748 [0.629, 0.850] | +0.191 | +0.124 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away wins by more than 1.5 | no | 0.6700 | 0.859 [0.773, 0.932] | +0.174 | +0.122 | 0.79 | - | * | RESEARCH_CANDIDATE |
+| Seattle Sounders vs Los Angeles FC | Total goals over 3.5 | no | 0.6200 | 0.814 [0.698, 0.905] | +0.177 | +0.120 | 0.74 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | btts | no | 0.3800 | 0.576 [0.464, 0.684] | +0.180 | +0.114 | 0.49 | - | * | RESEARCH_CANDIDATE |
-| Seattle Sounders vs Los Angeles FC | Total goals over 3.5 | no | 0.6300 | 0.814 [0.698, 0.905] | +0.167 | +0.110 | 0.74 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | Result: home | yes | 0.2300 | 0.452 [0.306, 0.601] | +0.210 | +0.108 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | Angers vs Nice | Result: away | no | 0.5400 | 0.741 [0.586, 0.869] | +0.184 | +0.100 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs St. Louis City SC | away team total over 1.5 | no | 0.5700 | 0.755 [0.643, 0.855] | +0.168 | +0.098 | 0.66 | - | * | RESEARCH_CANDIDATE |
@@ -126,9 +126,9 @@ model board generated 2026-11-07T04:16:06.611926Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2671
+action_NO_EDGE: 2672
 action_NO_QUOTE: 415
-action_RESEARCH_CANDIDATE: 196
+action_RESEARCH_CANDIDATE: 195
 contract_sides: 3282
 fixtures: 65
 fixtures_model_invalidated: 0
