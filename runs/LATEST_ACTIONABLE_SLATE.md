@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261107T031313Z-dfab77` · generated 2026-11-07T03:13:13.014026Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261107T032349Z-df5e52` · generated 2026-11-07T03:23:49.400773Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-07T03:10:00.096302Z (CURRENT at publish; CURRENT until 2026-11-07T03:30:00.096302Z, STALE after 2026-11-07T03:40:00.096302Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-07T03:20:23.473094Z (CURRENT at publish; CURRENT until 2026-11-07T03:40:23.473094Z, STALE after 2026-11-07T03:50:23.473094Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-07T02:47:08.435077Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.92s
+model board generated 2026-11-07T02:47:08.435077Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.85s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -97,17 +97,17 @@ model board generated 2026-11-07T02:47:08.435077Z · simulations this update: 0 
 | New York Red Bulls vs Atlanta United | Total goals over 4.5 | no | 0.6900 | 0.872 [0.777, 0.948] | +0.167 | +0.122 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 3.5 | no | 0.6200 | 0.814 [0.698, 0.905] | +0.177 | +0.120 | 0.74 | - |  | RESEARCH_CANDIDATE |
 | CF Montréal vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.5400 | 0.753 [0.611, 0.870] | +0.195 | +0.118 | 0.65 | - | * | RESEARCH_CANDIDATE |
-| D.C. United vs New York City FC | Total goals over 2.5 | no | 0.4200 | 0.637 [0.501, 0.769] | +0.200 | +0.115 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | away team total over 1.5 | no | 0.5500 | 0.748 [0.629, 0.850] | +0.181 | +0.114 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | Result: home | yes | 0.2300 | 0.452 [0.306, 0.601] | +0.210 | +0.108 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | D.C. United vs New York City FC | away team total over 1.5 | no | 0.5200 | 0.719 [0.591, 0.831] | +0.182 | +0.108 | 0.62 | - | * | RESEARCH_CANDIDATE |
-| D.C. United vs New York City FC | Total goals over 3.5 | no | 0.6400 | 0.823 [0.721, 0.913] | +0.167 | +0.108 | 0.75 | - |  | RESEARCH_CANDIDATE |
 | CF Montréal vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.3300 | 0.549 [0.388, 0.697] | +0.204 | +0.107 | 0.43 | - |  | RESEARCH_CANDIDATE |
+| D.C. United vs New York City FC | Total goals over 2.5 | no | 0.4300 | 0.637 [0.501, 0.769] | +0.190 | +0.104 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | btts | no | 0.3900 | 0.576 [0.464, 0.684] | +0.170 | +0.104 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | D.C. United vs New York City FC | btts | no | 0.3900 | 0.578 [0.472, 0.688] | +0.172 | +0.103 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Parma vs Bologna | Result: away | no | 0.4700 | 0.676 [0.519, 0.814] | +0.189 | +0.103 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Angers vs Nice | Result: away | no | 0.5400 | 0.741 [0.584, 0.869] | +0.184 | +0.100 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs St. Louis City SC | away team total over 1.5 | no | 0.5700 | 0.755 [0.643, 0.855] | +0.168 | +0.098 | 0.66 | - | * | RESEARCH_CANDIDATE |
+| D.C. United vs New York City FC | Total goals over 3.5 | no | 0.6500 | 0.823 [0.721, 0.913] | +0.157 | +0.098 | 0.75 | - |  | RESEARCH_CANDIDATE |
 | FC Dallas vs Colorado Rapids | away team total over 1.5 | no | 0.6300 | 0.802 [0.703, 0.890] | +0.155 | +0.096 | 0.72 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | away team total over 0.5 | no | 0.2100 | 0.391 [0.274, 0.505] | +0.170 | +0.095 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | CF Montréal vs Vancouver Whitecaps | away team total over 1.5 | no | 0.3500 | 0.550 [0.394, 0.694] | +0.184 | +0.094 | 0.44 | - | * | RESEARCH_CANDIDATE |
@@ -126,8 +126,8 @@ model board generated 2026-11-07T02:47:08.435077Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2649
-action_NO_QUOTE: 420
+action_NO_EDGE: 2647
+action_NO_QUOTE: 422
 action_RESEARCH_CANDIDATE: 213
 contract_sides: 3282
 fixtures: 65
