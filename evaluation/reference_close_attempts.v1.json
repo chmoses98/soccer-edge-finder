@@ -1,10 +1,10 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 580,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 582,
   "MISSED_DISPATCHER_CLOSE": 86,
-  "PINNACLE_QUOTED_NOTHING": 2,
-  "PINNACLE_VALID_CLOSE": 32,
-  "CLOSE_BLOCKED_BUDGET": 7
+  "PINNACLE_VALID_CLOSE": 36,
+  "CLOSE_BLOCKED_BUDGET": 7,
+  "PINNACLE_QUOTED_NOTHING": 2
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.belgrano": {
@@ -43,6 +43,11 @@
    "batch_id": null
   },
   "fx:arg.primera:2026:arg.banfield:arg.argentinos_juniors": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:arg.primera:2026:arg.banfield:arg.atletico_tucuman": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
@@ -338,6 +343,11 @@
    "batch_id": null
   },
   "fx:arg.primera:2026:arg.tigre:arg.banfield": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:arg.primera:2026:arg.tigre:arg.sarmiento": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
@@ -666,6 +676,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:bra.serie_a:2026:bra.vitoria:bra.fluminense": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261106T224704Z"
   },
   "fx:concacaf.nations_league:2026-27:nat.aia:nat.aru": {
    "state": "MISSED_DISPATCHER_CLOSE",
@@ -2767,6 +2782,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:mex.liga_mx:2026:mex.atlante:mex.santos_laguna": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261107T024343Z"
+  },
   "fx:mex.liga_mx:2026:mex.atlas:mex.america": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -2842,6 +2862,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:mex.liga_mx:2026:mex.necaxa:mex.tijuana": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261107T004808Z"
+  },
   "fx:mex.liga_mx:2026:mex.pachuca:mex.cruz_azul": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -2896,6 +2921,11 @@
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
    "batch_id": null
+  },
+  "fx:mex.liga_mx:2026:mex.san_luis:mex.juarez": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261107T004808Z"
   },
   "fx:mex.liga_mx:2026:mex.san_luis:mex.queretaro": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
