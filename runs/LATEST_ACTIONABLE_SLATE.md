@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261107T171822Z-818016` · generated 2026-11-07T17:18:22.140976Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261107T172815Z-fc4853` · generated 2026-11-07T17:28:15.093010Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-07T17:15:02.643776Z (CURRENT at publish; CURRENT until 2026-11-07T17:35:02.643776Z, STALE after 2026-11-07T17:45:02.643776Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-07T17:25:00.059702Z (CURRENT at publish; CURRENT until 2026-11-07T17:45:00.059702Z, STALE after 2026-11-07T17:55:00.059702Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-07T16:33:02.166775Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 1.45s
+model board generated 2026-11-07T16:33:02.166775Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.43s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -98,23 +98,23 @@ model board generated 2026-11-07T16:33:02.166775Z · simulations this update: 0 
 | Austin FC vs Portland Timbers | away team total over 0.5 | no | 0.1200 | 0.274 [0.173, 0.381] | +0.146 | +0.080 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 4.5 | no | 0.8000 | 0.920 [0.852, 0.970] | +0.109 | +0.079 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | away team total over 2.5 | no | 0.8000 | 0.921 [0.858, 0.968] | +0.109 | +0.078 | 0.88 | - |  | RESEARCH_CANDIDATE |
+| New York Red Bulls vs Atlanta United | First half: both teams to score | no | 0.6900 | 0.825 [0.748, 0.902] | +0.120 | +0.075 | 0.76 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | home team total over 1.5 | no | 0.3400 | 0.530 [0.367, 0.680] | +0.174 | +0.073 | 0.41 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | home team total over 2.5 | no | 0.6100 | 0.775 [0.636, 0.890] | +0.149 | +0.072 | 0.68 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs St. Louis City SC | away team total over 2.5 | no | 0.8100 | 0.924 [0.867, 0.970] | +0.103 | +0.072 | 0.88 | - |  | RESEARCH_CANDIDATE |
+| Seattle Sounders vs Los Angeles FC | home team total over 1.5 | no | 0.4600 | 0.641 [0.490, 0.787] | +0.164 | +0.071 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | FC Dallas vs Colorado Rapids | away team total over 0.5 | no | 0.2900 | 0.453 [0.336, 0.569] | +0.148 | +0.070 | 0.35 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs St. Louis City SC | btts | no | 0.3900 | 0.548 [0.432, 0.651] | +0.141 | +0.070 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | First-half total goals over 0.5 | no | 0.1800 | 0.326 [0.218, 0.432] | +0.136 | +0.070 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | CF Montréal vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.5900 | 0.753 [0.610, 0.871] | +0.146 | +0.068 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | First-half total goals over 2.5 | no | 0.7700 | 0.888 [0.809, 0.951] | +0.106 | +0.067 | 0.84 | - |  | RESEARCH_CANDIDATE |
 | CF Montréal vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.3700 | 0.549 [0.387, 0.698] | +0.163 | +0.065 | 0.43 | - |  | RESEARCH_CANDIDATE |
-| New York Red Bulls vs Atlanta United | First half: both teams to score | no | 0.7000 | 0.825 [0.748, 0.902] | +0.111 | +0.065 | 0.76 | - | * | RESEARCH_CANDIDATE |
-| D.C. United vs New York City FC | away team total over 0.5 | no | 0.2100 | 0.363 [0.246, 0.479] | +0.141 | +0.065 | 0.27 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2699
-action_NO_QUOTE: 663
+action_NO_EDGE: 2698
+action_NO_QUOTE: 664
 action_RESEARCH_CANDIDATE: 192
 contract_sides: 3554
 fixtures: 52
