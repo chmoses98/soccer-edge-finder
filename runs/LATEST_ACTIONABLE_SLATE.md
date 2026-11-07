@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261107T063134Z-886f28` · generated 2026-11-07T06:31:34.254903Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261107T064635Z-440c78` · generated 2026-11-07T06:46:35.573254Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-07T06:28:21.168079Z (CURRENT at publish; CURRENT until 2026-11-07T06:48:21.168079Z, STALE after 2026-11-07T06:58:21.168079Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-07T06:43:22.532490Z (CURRENT at publish; CURRENT until 2026-11-07T07:03:22.532490Z, STALE after 2026-11-07T07:13:22.532490Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-07T04:16:06.611926Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.98s
+model board generated 2026-11-07T04:16:06.611926Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.79s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -78,18 +78,19 @@ model board generated 2026-11-07T04:16:06.611926Z · simulations this update: 0 
 | 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-09T02:10:00Z | León vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (201; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (196; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
+| New York Red Bulls vs Atlanta United | Total goals over 3.5 | no | 0.4700 | 0.737 [0.599, 0.858] | +0.249 | +0.175 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Valencia vs Real Madrid | Result: away | no | 0.2200 | 0.517 [0.337, 0.693] | +0.285 | +0.165 | 0.38 | - | * | RESEARCH_CANDIDATE |
-| New York Red Bulls vs Atlanta United | Total goals over 3.5 | no | 0.4800 | 0.737 [0.599, 0.858] | +0.239 | +0.165 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away team total over 1.5 | no | 0.3600 | 0.616 [0.477, 0.748] | +0.240 | +0.158 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | Arsenal vs Hull City | Result: home | no | 0.1500 | 0.459 [0.241, 0.679] | +0.301 | +0.157 | 0.3 | - | * | RESEARCH_CANDIDATE |
 | Leeds United vs Tottenham Hotspur | Result: home | yes | 0.3500 | 0.619 [0.443, 0.789] | +0.253 | +0.145 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | Total goals over 2.5 | no | 0.2800 | 0.530 [0.376, 0.677] | +0.236 | +0.145 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away team total over 2.5 | no | 0.6300 | 0.842 [0.743, 0.926] | +0.196 | +0.145 | 0.77 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | Result: away | no | 0.4500 | 0.692 [0.559, 0.813] | +0.225 | +0.139 | 0.58 | - | * | RESEARCH_CANDIDATE |
+| Parma vs Bologna | Result: away | no | 0.4400 | 0.676 [0.519, 0.814] | +0.219 | +0.133 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | Total goals over 4.5 | no | 0.6800 | 0.872 [0.777, 0.948] | +0.177 | +0.131 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | btts | no | 0.3000 | 0.518 [0.408, 0.628] | +0.203 | +0.129 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Leeds United vs Tottenham Hotspur | Result: away | no | 0.6300 | 0.836 [0.726, 0.933] | +0.190 | +0.129 | 0.76 | - |  | RESEARCH_CANDIDATE |
@@ -97,7 +98,6 @@ model board generated 2026-11-07T04:16:06.611926Z · simulations this update: 0 
 | New York Red Bulls vs Atlanta United | away team total over 1.5 | no | 0.5400 | 0.748 [0.629, 0.850] | +0.191 | +0.124 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away wins by more than 1.5 | no | 0.6700 | 0.859 [0.773, 0.932] | +0.174 | +0.122 | 0.79 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | btts | no | 0.3800 | 0.576 [0.464, 0.684] | +0.180 | +0.114 | 0.49 | - | * | RESEARCH_CANDIDATE |
-| Parma vs Bologna | Result: away | no | 0.4600 | 0.676 [0.519, 0.814] | +0.199 | +0.113 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 3.5 | no | 0.6300 | 0.814 [0.698, 0.905] | +0.167 | +0.110 | 0.74 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | Result: home | yes | 0.2300 | 0.452 [0.306, 0.601] | +0.210 | +0.108 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | Angers vs Nice | Result: away | no | 0.5400 | 0.741 [0.586, 0.869] | +0.184 | +0.100 | 0.64 | - | * | RESEARCH_CANDIDATE |
@@ -118,17 +118,17 @@ model board generated 2026-11-07T04:16:06.611926Z · simulations this update: 0 
 | CF Montréal vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.3600 | 0.549 [0.388, 0.697] | +0.173 | +0.076 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | away team total over 0.5 | no | 0.2300 | 0.391 [0.274, 0.505] | +0.149 | +0.074 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Parma vs Bologna | Result: home | yes | 0.1900 | 0.373 [0.224, 0.537] | +0.172 | +0.074 | 0.26 | - |  | RESEARCH_CANDIDATE |
-| D.C. United vs New York City FC | btts | no | 0.4200 | 0.578 [0.472, 0.688] | +0.141 | +0.073 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away team total over 0.5 | no | 0.1300 | 0.273 [0.173, 0.380] | +0.136 | +0.070 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs St. Louis City SC | btts | no | 0.3900 | 0.548 [0.432, 0.651] | +0.141 | +0.070 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | away team total over 2.5 | no | 0.8100 | 0.921 [0.859, 0.968] | +0.100 | +0.069 | 0.88 | - |  | RESEARCH_CANDIDATE |
+| CF Montréal vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.5900 | 0.753 [0.611, 0.870] | +0.146 | +0.069 | 0.65 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2666
+action_NO_EDGE: 2671
 action_NO_QUOTE: 415
-action_RESEARCH_CANDIDATE: 201
+action_RESEARCH_CANDIDATE: 196
 contract_sides: 3282
 fixtures: 65
 fixtures_model_invalidated: 0
