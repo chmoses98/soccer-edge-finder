@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261107T185923Z-3393c1` · generated 2026-11-07T18:59:23.759700Z · trigger `kickoff_chain:T-120/T-60` · mode `reprice_only`
+slate `slate-20261107T190501Z-f56c2a` · generated 2026-11-07T19:05:01.360379Z · trigger `kickoff_chain:T-60` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-07T18:55:12.898467Z (CURRENT at publish; CURRENT until 2026-11-07T19:15:12.898467Z, STALE after 2026-11-07T19:25:12.898467Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-07T19:01:46.096523Z (CURRENT at publish; CURRENT until 2026-11-07T19:21:46.096523Z, STALE after 2026-11-07T19:31:46.096523Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-07T18:43:41.805228Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.45s
 
@@ -63,11 +63,11 @@ model board generated 2026-11-07T18:43:41.805228Z · simulations this update: 0 
 | 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-09T02:10:00Z | León vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (189; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (187; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Osasuna vs Athletic Club | Result: draw | no | 0.4800 | 0.732 [0.672, 0.789] | +0.235 | +0.200 | 0.68 | - | * | RESEARCH_CANDIDATE |
+| Osasuna vs Athletic Club | Result: draw | no | 0.4200 | 0.732 [0.672, 0.789] | +0.295 | +0.260 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | Total goals over 3.5 | no | 0.4500 | 0.737 [0.599, 0.857] | +0.269 | +0.195 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away team total over 1.5 | no | 0.3300 | 0.617 [0.477, 0.748] | +0.271 | +0.189 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | Valencia vs Real Madrid | Result: away | no | 0.2100 | 0.517 [0.337, 0.693] | +0.295 | +0.176 | 0.38 | - | * | RESEARCH_CANDIDATE |
@@ -80,29 +80,29 @@ model board generated 2026-11-07T18:43:41.805228Z · simulations this update: 0 
 | Austin FC vs Portland Timbers | away wins by more than 1.5 | no | 0.6600 | 0.859 [0.773, 0.932] | +0.184 | +0.132 | 0.79 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 2.5 | no | 0.4000 | 0.625 [0.475, 0.755] | +0.208 | +0.125 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 3.5 | no | 0.6200 | 0.814 [0.698, 0.905] | +0.177 | +0.119 | 0.74 | - |  | RESEARCH_CANDIDATE |
+| Osasuna vs Athletic Club | Result: home | yes | 0.1700 | 0.403 [0.252, 0.573] | +0.223 | +0.118 | 0.28 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | btts | no | 0.3800 | 0.576 [0.464, 0.684] | +0.180 | +0.114 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | Result: home | yes | 0.2300 | 0.452 [0.306, 0.601] | +0.210 | +0.108 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | First-half total goals over 1.5 | no | 0.4900 | 0.685 [0.568, 0.792] | +0.177 | +0.103 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | Total goals over 5.5 | no | 0.8100 | 0.945 [0.893, 0.983] | +0.124 | +0.102 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | Angers vs Nice | Result: away | no | 0.5400 | 0.741 [0.586, 0.869] | +0.184 | +0.100 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | Total goals over 1.5 | no | 0.1000 | 0.281 [0.166, 0.402] | +0.174 | +0.099 | 0.19 | - |  | RESEARCH_CANDIDATE |
-| Osasuna vs Athletic Club | Result: home | yes | 0.1900 | 0.403 [0.252, 0.573] | +0.202 | +0.097 | 0.28 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | away team total over 0.5 | no | 0.2100 | 0.391 [0.274, 0.506] | +0.170 | +0.094 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | First-half result: away | no | 0.5700 | 0.742 [0.638, 0.832] | +0.155 | +0.093 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 1.5 | no | 0.1800 | 0.361 [0.234, 0.485] | +0.171 | +0.091 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | Second-half result: away | no | 0.5500 | 0.723 [0.608, 0.832] | +0.155 | +0.091 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Valencia vs Real Madrid | Result: home | yes | 0.0800 | 0.275 [0.135, 0.435] | +0.189 | +0.090 | 0.16 | - |  | RESEARCH_CANDIDATE |
-| Houston Dynamo vs St. Louis City SC | away team total over 0.5 | no | 0.2200 | 0.398 [0.285, 0.513] | +0.166 | +0.088 | 0.3 | - | * | RESEARCH_CANDIDATE |
-| Houston Dynamo vs St. Louis City SC | away team total over 1.5 | no | 0.5800 | 0.755 [0.642, 0.855] | +0.158 | +0.088 | 0.66 | - |  | RESEARCH_CANDIDATE |
+| Houston Dynamo vs St. Louis City SC | away team total over 1.5 | no | 0.5800 | 0.755 [0.642, 0.855] | +0.158 | +0.088 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away wins by more than 2.5 | no | 0.8300 | 0.948 [0.904, 0.982] | +0.108 | +0.086 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | home team total over 1.5 | no | 0.3300 | 0.530 [0.367, 0.680] | +0.184 | +0.083 | 0.41 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away team total over 0.5 | no | 0.1200 | 0.274 [0.173, 0.381] | +0.146 | +0.080 | 0.19 | - |  | RESEARCH_CANDIDATE |
-| FC Dallas vs Colorado Rapids | away team total over 0.5 | no | 0.2800 | 0.453 [0.336, 0.569] | +0.158 | +0.080 | 0.35 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 4.5 | no | 0.8000 | 0.920 [0.852, 0.970] | +0.109 | +0.079 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | away team total over 2.5 | no | 0.8000 | 0.921 [0.858, 0.968] | +0.109 | +0.078 | 0.88 | - |  | RESEARCH_CANDIDATE |
+| Houston Dynamo vs St. Louis City SC | away team total over 0.5 | no | 0.2300 | 0.398 [0.285, 0.513] | +0.156 | +0.078 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | First half: both teams to score | no | 0.6900 | 0.825 [0.748, 0.902] | +0.120 | +0.075 | 0.76 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | home team total over 2.5 | no | 0.6100 | 0.775 [0.636, 0.890] | +0.149 | +0.072 | 0.68 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | home team total over 1.5 | no | 0.4600 | 0.641 [0.490, 0.787] | +0.164 | +0.071 | 0.53 | - | * | RESEARCH_CANDIDATE |
+| FC Dallas vs Colorado Rapids | away team total over 0.5 | no | 0.2900 | 0.453 [0.336, 0.569] | +0.148 | +0.070 | 0.35 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | First-half total goals over 0.5 | no | 0.1800 | 0.326 [0.218, 0.432] | +0.136 | +0.070 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | CF Montréal vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.5900 | 0.753 [0.610, 0.871] | +0.146 | +0.068 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | D.C. United vs New York City FC | away team total over 1.5 | no | 0.5600 | 0.719 [0.591, 0.832] | +0.142 | +0.068 | 0.62 | - | * | RESEARCH_CANDIDATE |
@@ -111,15 +111,13 @@ model board generated 2026-11-07T18:43:41.805228Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2712
-action_NO_QUOTE: 619
-action_RESEARCH_CANDIDATE: 189
+action_NO_EDGE: 2739
+action_NO_QUOTE: 594
+action_RESEARCH_CANDIDATE: 187
 contract_sides: 3520
 fixtures: 50
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
-
-Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
