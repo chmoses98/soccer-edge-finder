@@ -1,50 +1,50 @@
 {
-  "as_of": "2026-11-07T16:11:49.077071+00:00",
+  "as_of": "2026-11-07T16:32:03.540531+00:00",
   "events": 17,
   "events_skipped_unmapped": 0,
   "fixtures_mapped": 17,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=6"
+      "weather_stopped:consecutive_failures:skipped=5"
     ],
     "state": "DEGRADED"
   },
   "leagues": [
-    "arg.1",
-    "fra.1",
+    "eng.1",
+    "esp.1",
     "ger.1",
     "ita.1"
   ],
   "lineups": {
-    "captured": 7,
+    "captured": 11,
     "events": 17,
     "failures": [],
-    "published_post": 6,
-    "published_pre_kickoff": 0,
-    "unchanged": 10,
-    "unpublished": 11
+    "published_post": 11,
+    "published_pre_kickoff": 3,
+    "unchanged": 6,
+    "unpublished": 3
   },
   "map_proposals": {},
   "map_version": "4",
-  "results_appended": 2,
+  "results_appended": 8,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 4,
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 8,
-    "events": 17,
+    "captured": 7,
+    "events": 15,
     "failures": [
-      "401884745: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Aue&count=5&language=en&format=",
       "401884740: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Mainz&count=5&language=en&forma",
-      "401884744: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Leipzig&count=5&language=en&for"
+      "401884744: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Leipzig&count=5&language=en&for",
+      "401884737: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Paderborn&count=5&language=en&f"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 6,
+    "skipped": 5,
     "stopped": "consecutive_failures"
   }
 }
