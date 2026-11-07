@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-07T02:25:34.232028+00:00",
+  "as_of": "2026-11-07T08:56:17.277259+00:00",
   "events": 616,
   "events_skipped_unmapped": 369,
   "fixtures_mapped": 247,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=89"
+      "weather_stopped:consecutive_failures:skipped=85"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 36,
+    "captured": 47,
     "events": 150,
     "failures": [],
-    "published_post": 5,
-    "published_pre_kickoff": 1,
-    "unchanged": 114,
-    "unpublished": 144
+    "published_post": 4,
+    "published_pre_kickoff": 0,
+    "unchanged": 103,
+    "unpublished": 146
   },
   "map_proposals": {
     "bel.1": {
@@ -530,7 +530,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 8,
+  "results_appended": 6,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -812,16 +812,16 @@
   },
   "weather": {
     "captured": 12,
-    "events": 104,
+    "events": 100,
     "failures": [
-      "401892140: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-33.8678&longitude=151.2073&hourly=",
-      "401892139: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Adelaide&count=5&language=en&fo",
-      "401878947: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Westerlo&count=5&language=en&fo"
+      "401878949: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=50.8796&longitude=4.7009&hourly=tem",
+      "401878950: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Antwerp&count=5&language=en&for",
+      "401878948: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=La%20Louvi\u00e8re&count=5&language="
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 89,
+    "skipped": 85,
     "stopped": "consecutive_failures"
   }
 }
