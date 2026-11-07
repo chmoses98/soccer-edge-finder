@@ -1,40 +1,48 @@
 {
-  "as_of": "2026-11-07T19:53:57.640030+00:00",
-  "events": 2,
+  "as_of": "2026-11-07T19:59:08.498398+00:00",
+  "events": 19,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 2,
+  "fixtures_mapped": 19,
   "health": {
-    "reasons": [],
-    "state": "HEALTHY"
+    "reasons": [
+      "weather_failures:3",
+      "weather_stopped:consecutive_failures:skipped=2"
+    ],
+    "state": "DEGRADED"
   },
   "leagues": [
-    "fra.1"
+    "esp.1",
+    "usa.1"
   ],
   "lineups": {
     "captured": 1,
-    "events": 2,
+    "events": 19,
     "failures": [],
-    "published_post": 1,
+    "published_post": 3,
     "published_pre_kickoff": 1,
-    "unchanged": 1,
-    "unpublished": 0
+    "unchanged": 18,
+    "unpublished": 15
   },
   "map_proposals": {},
   "map_version": "4",
-  "results_appended": 1,
+  "results_appended": 3,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
-  "scoreboard_queries": 1,
+  "scoreboard_queries": 2,
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 2,
-    "events": 2,
-    "failures": [],
+    "captured": 11,
+    "events": 17,
+    "failures": [
+      "761944: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=29.7633&longitude=-95.3633&hourly=t",
+      "761945: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Saint%20Paul&count=5&language=e",
+      "761946: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Sandy&count=5&language=en&forma"
+    ],
     "forecast_miss": 0,
-    "geocode_miss": 0,
+    "geocode_miss": 1,
     "no_venue": 0,
-    "skipped": 0,
-    "stopped": null
+    "skipped": 2,
+    "stopped": "consecutive_failures"
   }
 }
