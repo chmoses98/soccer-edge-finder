@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261107T141822Z-13775a` · generated 2026-11-07T14:18:22.549460Z · trigger `kickoff_chain:T-60/T-15` · mode `reprice_only`
+slate `slate-20261107T142816Z-b3006b` · generated 2026-11-07T14:28:16.965214Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-07T14:15:02.637724Z (CURRENT at publish; CURRENT until 2026-11-07T14:35:02.637724Z, STALE after 2026-11-07T14:45:02.637724Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-07T14:25:00.067222Z (CURRENT at publish; CURRENT until 2026-11-07T14:45:00.067222Z, STALE after 2026-11-07T14:55:00.067222Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-07T13:58:23.368037Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.72s
 
@@ -76,13 +76,17 @@ model board generated 2026-11-07T13:58:23.368037Z · simulations this update: 0 
 | 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-09T02:10:00Z | León vs Guadalajara (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (137; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (135; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
+| Málaga vs Racing Santander | Result: away | no | 0.1600 | 0.690 [0.446, 0.891] | +0.521 | +0.381 | 0.53 | - | * | RESEARCH_CANDIDATE |
+| Málaga vs Racing Santander | Result: home | yes | 0.0200 | 0.468 [0.225, 0.733] | +0.447 | +0.276 | 0.28 | - |  | RESEARCH_CANDIDATE |
+| Leeds United vs Tottenham Hotspur | Result: home | no | 0.0100 | 0.381 [0.211, 0.557] | +0.371 | +0.257 | 0.25 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away team total over 1.5 | no | 0.3500 | 0.616 [0.477, 0.748] | +0.251 | +0.168 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | Arsenal vs Hull City | Result: home | no | 0.1400 | 0.459 [0.241, 0.679] | +0.311 | +0.168 | 0.3 | - | * | RESEARCH_CANDIDATE |
 | Valencia vs Real Madrid | Result: away | no | 0.2200 | 0.517 [0.337, 0.693] | +0.285 | +0.165 | 0.38 | - | * | RESEARCH_CANDIDATE |
+| Leeds United vs Tottenham Hotspur | Result: draw | yes | 0.0100 | 0.217 [0.133, 0.298] | +0.207 | +0.154 | 0.15 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away team total over 2.5 | no | 0.6200 | 0.842 [0.743, 0.926] | +0.206 | +0.154 | 0.77 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | Result: away | no | 0.4500 | 0.692 [0.559, 0.813] | +0.225 | +0.139 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Parma vs Bologna | Result: away | no | 0.4400 | 0.676 [0.519, 0.814] | +0.219 | +0.133 | 0.57 | - | * | RESEARCH_CANDIDATE |
@@ -97,21 +101,18 @@ model board generated 2026-11-07T13:58:23.368037Z · simulations this update: 0 
 | Angers vs Nice | Result: away | no | 0.5400 | 0.741 [0.586, 0.869] | +0.184 | +0.100 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs St. Louis City SC | away team total over 0.5 | no | 0.2100 | 0.398 [0.285, 0.512] | +0.176 | +0.099 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 1.5 | no | 0.1800 | 0.361 [0.234, 0.485] | +0.171 | +0.092 | 0.26 | - |  | RESEARCH_CANDIDATE |
+| Austin FC vs Portland Timbers | away team total over 0.5 | no | 0.1100 | 0.273 [0.173, 0.380] | +0.157 | +0.091 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Valencia vs Real Madrid | Result: home | yes | 0.0800 | 0.275 [0.135, 0.435] | +0.189 | +0.090 | 0.16 | - |  | RESEARCH_CANDIDATE |
-| Leeds United vs Tottenham Hotspur | Result: home | no | 0.1700 | 0.381 [0.211, 0.557] | +0.201 | +0.088 | 0.25 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away wins by more than 2.5 | no | 0.8300 | 0.948 [0.905, 0.982] | +0.108 | +0.086 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Parma vs Bologna | Result: home | yes | 0.1800 | 0.373 [0.224, 0.537] | +0.182 | +0.084 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | Arsenal vs Hull City | Result: draw | yes | 0.1100 | 0.263 [0.161, 0.367] | +0.146 | +0.084 | 0.19 | - |  | RESEARCH_CANDIDATE |
-| Austin FC vs Portland Timbers | away team total over 0.5 | no | 0.1200 | 0.273 [0.173, 0.380] | +0.146 | +0.080 | 0.19 | - |  | RESEARCH_CANDIDATE |
+| Leeds United vs Tottenham Hotspur | Result: away | yes | 0.0100 | 0.164 [0.067, 0.274] | +0.153 | +0.082 | 0.08 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 4.5 | no | 0.8000 | 0.920 [0.852, 0.970] | +0.109 | +0.079 | 0.88 | - |  | RESEARCH_CANDIDATE |
-| Málaga vs Racing Santander | Result: draw | no | 0.6400 | 0.778 [0.697, 0.861] | +0.122 | +0.072 | 0.71 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs St. Louis City SC | away team total over 2.5 | no | 0.8100 | 0.924 [0.867, 0.970] | +0.103 | +0.072 | 0.88 | - |  | RESEARCH_CANDIDATE |
-| Leeds United vs Tottenham Hotspur | Result: away | yes | 0.0200 | 0.164 [0.067, 0.274] | +0.142 | +0.071 | 0.08 | - |  | RESEARCH_CANDIDATE |
 | FC Dallas vs Colorado Rapids | away team total over 0.5 | no | 0.2900 | 0.453 [0.337, 0.569] | +0.148 | +0.071 | 0.35 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs St. Louis City SC | btts | no | 0.3900 | 0.548 [0.432, 0.651] | +0.141 | +0.070 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | FC Dallas vs Colorado Rapids | away team total over 1.5 | no | 0.6600 | 0.802 [0.703, 0.890] | +0.126 | +0.067 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | Crystal Palace vs Liverpool | Result: away | no | 0.3800 | 0.579 [0.397, 0.758] | +0.182 | +0.066 | 0.44 | - | * | RESEARCH_CANDIDATE |
-| FC Dallas vs Colorado Rapids | btts | no | 0.4000 | 0.555 [0.438, 0.669] | +0.138 | +0.064 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | Second-half result: away | no | 0.5700 | 0.723 [0.608, 0.832] | +0.136 | +0.063 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | Mainz 05 vs Bayern Munich | Result: home | yes | 0.0900 | 0.274 [0.117, 0.453] | +0.178 | +0.062 | 0.14 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | home team total over 1.5 | no | 0.4700 | 0.641 [0.491, 0.786] | +0.154 | +0.062 | 0.53 | - | * | RESEARCH_CANDIDATE |
@@ -119,15 +120,14 @@ model board generated 2026-11-07T13:58:23.368037Z · simulations this update: 0 
 | AJ Auxerre vs Paris FC | Result: away | no | 0.4400 | 0.636 [0.449, 0.803] | +0.179 | +0.061 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Arsenal vs Hull City | Result: away | yes | 0.0400 | 0.196 [0.069, 0.351] | +0.154 | +0.059 | 0.09 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | First half: away wins by more than 1.5 | no | 0.8400 | 0.933 [0.879, 0.981] | +0.083 | +0.057 | 0.9 | - | * | RESEARCH_CANDIDATE |
-| Seattle Sounders vs Los Angeles FC | First-half total goals over 0.5 | no | 0.2500 | 0.389 [0.288, 0.502] | +0.126 | +0.057 | 0.3 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_MODEL_STALE: 1209
-action_NO_EDGE: 1546
-action_NO_QUOTE: 378
-action_RESEARCH_CANDIDATE: 137
+action_MODEL_STALE: 1211
+action_NO_EDGE: 1542
+action_NO_QUOTE: 382
+action_RESEARCH_CANDIDATE: 135
 contract_sides: 3270
 fixtures: 63
 fixtures_model_invalidated: 0
