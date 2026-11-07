@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261107T005128Z-33c9ae` · generated 2026-11-07T00:51:28.553719Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261107T005644Z-52a33d` · generated 2026-11-07T00:56:44.663509Z · trigger `kickoff_chain:T-120/T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-07T00:48:08.628388Z (CURRENT at publish; CURRENT until 2026-11-07T01:08:08.628388Z, STALE after 2026-11-07T01:18:08.628388Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-07T00:53:28.148346Z (CURRENT at publish; CURRENT until 2026-11-07T01:13:28.148346Z, STALE after 2026-11-07T01:23:28.148346Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-07T00:16:09.998132Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 2.08s
+model board generated 2026-11-07T00:16:09.998132Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 2.09s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -128,8 +128,8 @@ model board generated 2026-11-07T00:16:09.998132Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2934
-action_NO_QUOTE: 465
+action_NO_EDGE: 2938
+action_NO_QUOTE: 461
 action_RESEARCH_CANDIDATE: 227
 contract_sides: 3626
 fixtures: 67
