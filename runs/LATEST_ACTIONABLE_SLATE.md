@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261107T151318Z-692730` · generated 2026-11-07T15:13:18.908344Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
+slate `slate-20261107T151808Z-565d34` · generated 2026-11-07T15:18:08.276790Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-07T15:10:02.555272Z (CURRENT at publish; CURRENT until 2026-11-07T15:30:02.555272Z, STALE after 2026-11-07T15:40:02.555272Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-07T15:14:41.555613Z (CURRENT at publish; CURRENT until 2026-11-07T15:34:41.555613Z, STALE after 2026-11-07T15:44:41.555613Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-07T13:58:23.368037Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.64s
+model board generated 2026-11-07T13:58:23.368037Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.05s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -73,18 +73,18 @@ model board generated 2026-11-07T13:58:23.368037Z · simulations this update: 0 
 | Parma vs Bologna | Result: away | no | 0.4400 | 0.676 [0.519, 0.814] | +0.219 | +0.133 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 2.5 | no | 0.4000 | 0.625 [0.477, 0.755] | +0.208 | +0.126 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away wins by more than 1.5 | no | 0.6700 | 0.859 [0.773, 0.932] | +0.174 | +0.122 | 0.79 | - | * | RESEARCH_CANDIDATE |
+| Seattle Sounders vs Los Angeles FC | Total goals over 3.5 | no | 0.6200 | 0.814 [0.698, 0.905] | +0.177 | +0.120 | 0.74 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs St. Louis City SC | away team total over 1.5 | no | 0.5500 | 0.755 [0.643, 0.855] | +0.188 | +0.118 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | btts | no | 0.3800 | 0.576 [0.464, 0.684] | +0.180 | +0.114 | 0.49 | - | * | RESEARCH_CANDIDATE |
-| Seattle Sounders vs Los Angeles FC | Total goals over 3.5 | no | 0.6300 | 0.814 [0.698, 0.905] | +0.167 | +0.110 | 0.74 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | Result: home | yes | 0.2300 | 0.452 [0.306, 0.601] | +0.210 | +0.108 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | First-half result: away | no | 0.5600 | 0.744 [0.638, 0.842] | +0.167 | +0.103 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Angers vs Nice | Result: away | no | 0.5400 | 0.741 [0.586, 0.869] | +0.184 | +0.100 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs St. Louis City SC | away team total over 0.5 | no | 0.2100 | 0.398 [0.285, 0.512] | +0.176 | +0.099 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 1.5 | no | 0.1800 | 0.361 [0.234, 0.485] | +0.171 | +0.092 | 0.26 | - |  | RESEARCH_CANDIDATE |
+| Austin FC vs Portland Timbers | away team total over 0.5 | no | 0.1100 | 0.273 [0.173, 0.380] | +0.157 | +0.091 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Valencia vs Real Madrid | Result: home | yes | 0.0800 | 0.275 [0.135, 0.435] | +0.189 | +0.090 | 0.16 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away wins by more than 2.5 | no | 0.8300 | 0.948 [0.905, 0.982] | +0.108 | +0.086 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Parma vs Bologna | Result: home | yes | 0.1800 | 0.373 [0.224, 0.537] | +0.182 | +0.084 | 0.26 | - |  | RESEARCH_CANDIDATE |
-| Austin FC vs Portland Timbers | away team total over 0.5 | no | 0.1200 | 0.273 [0.173, 0.380] | +0.146 | +0.080 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 4.5 | no | 0.8000 | 0.920 [0.852, 0.970] | +0.109 | +0.079 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs St. Louis City SC | away team total over 2.5 | no | 0.8100 | 0.924 [0.867, 0.970] | +0.103 | +0.072 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs St. Louis City SC | btts | no | 0.3900 | 0.548 [0.432, 0.651] | +0.141 | +0.070 | 0.45 | - | * | RESEARCH_CANDIDATE |
@@ -92,7 +92,6 @@ model board generated 2026-11-07T13:58:23.368037Z · simulations this update: 0 
 | Seattle Sounders vs Los Angeles FC | First-half total goals over 1.5 | no | 0.6100 | 0.747 [0.648, 0.842] | +0.120 | +0.061 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | AJ Auxerre vs Paris FC | Result: away | no | 0.4400 | 0.636 [0.449, 0.803] | +0.179 | +0.061 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | FC Dallas vs Colorado Rapids | away team total over 0.5 | no | 0.3000 | 0.453 [0.337, 0.569] | +0.138 | +0.060 | 0.35 | - | * | RESEARCH_CANDIDATE |
-| Angers vs Nice | Result: home | yes | 0.2700 | 0.462 [0.282, 0.638] | +0.178 | +0.059 | 0.32 | - |  | RESEARCH_CANDIDATE |
 | FC Dallas vs Colorado Rapids | away team total over 1.5 | no | 0.6700 | 0.802 [0.703, 0.890] | +0.116 | +0.057 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | First half: away wins by more than 1.5 | no | 0.8400 | 0.933 [0.879, 0.981] | +0.083 | +0.057 | 0.9 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | First-half total goals over 0.5 | no | 0.2500 | 0.389 [0.288, 0.502] | +0.126 | +0.057 | 0.3 | - |  | RESEARCH_CANDIDATE |
@@ -100,6 +99,7 @@ model board generated 2026-11-07T13:58:23.368037Z · simulations this update: 0 
 | Austin FC vs Portland Timbers | home wins by more than 1.5 | yes | 0.1000 | 0.246 [0.126, 0.378] | +0.139 | +0.052 | 0.14 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | away team total over 1.5 | no | 0.6300 | 0.761 [0.651, 0.858] | +0.115 | +0.050 | 0.68 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | btts | no | 0.4300 | 0.577 [0.443, 0.696] | +0.129 | +0.049 | 0.47 | - | * | RESEARCH_CANDIDATE |
+| Angers vs Nice | Result: home | yes | 0.2800 | 0.462 [0.282, 0.638] | +0.168 | +0.049 | 0.32 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | home team total over 2.5 | no | 0.7400 | 0.857 [0.755, 0.943] | +0.104 | +0.049 | 0.79 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | First-half exact score 0-0 (home-away) | yes | 0.2600 | 0.389 [0.288, 0.502] | +0.115 | +0.047 | 0.3 | - | * | RESEARCH_CANDIDATE |
 | Valencia vs Real Madrid | Result: draw | yes | 0.1500 | 0.242 [0.184, 0.303] | +0.083 | +0.046 | 0.19 | - |  | RESEARCH_CANDIDATE |
@@ -110,9 +110,9 @@ model board generated 2026-11-07T13:58:23.368037Z · simulations this update: 0 
 ## Counts
 
 ```
-action_MODEL_STALE: 1214
-action_NO_EDGE: 1465
-action_NO_QUOTE: 393
+action_MODEL_STALE: 1215
+action_NO_EDGE: 1467
+action_NO_QUOTE: 390
 action_RESEARCH_CANDIDATE: 114
 contract_sides: 3186
 fixtures: 49
