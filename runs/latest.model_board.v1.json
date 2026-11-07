@@ -68754,15 +68754,15 @@
       },
       "event_name": "Atlante vs Santos Laguna",
       "fixture_id": "fx:mex.liga_mx:2026:mex.atlante:mex.santos_laguna",
-      "fixtures_observed_at": "2026-11-06T22:42:35.467063Z",
+      "fixtures_observed_at": "2026-11-07T02:25:34.232028Z",
       "home": "mex.atlante",
-      "input_fingerprint": "sha256:295deb2e3a3e57a4ac44e3e5d261673113f58e244ce43838408ee85d6169efd2",
+      "input_fingerprint": "sha256:4d694ccf1aa0f919dc6f38bf78ed71a360ced9086cf5a3e585def6d63d5ed8ba",
       "inputs": {
         "competition_id": "mex.liga_mx",
         "draws_per_world": 100,
         "engine_version": "world_sim_v2",
         "kickoff_utc": "2026-11-07T03:00:00Z",
-        "lineup_key": "none",
+        "lineup_key": "sha256:b0107cfdf08502445c10264d96a86f47328b344aa71e2c165d8ae2d81ff9e112",
         "model_family": "data_only.world_sim_v2",
         "model_version": "dc_laplace_v1",
         "n_worlds": 1000,
@@ -68773,11 +68773,41 @@
         "worlds_version": "worlds_v1"
       },
       "lineup": {
-        "checked_at": "2026-11-07T02:02:02.980726Z",
-        "key": "none",
-        "last_change_at": "2026-11-06T16:14:28.129785Z",
-        "state": "unconfirmed"
+        "checked_at": "2026-11-07T02:47:03.749242Z",
+        "key": "sha256:b0107cfdf08502445c10264d96a86f47328b344aa71e2c165d8ae2d81ff9e112",
+        "last_change_at": "2026-11-07T02:27:39.408992Z",
+        "state": "confirmed"
       },
+      "lineup_history": [
+        {
+          "lineup_key": "none",
+          "lineup_state": "unconfirmed",
+          "model_generated_at": "2026-11-07T02:02:09.066392Z",
+          "scripts": {
+            "primary": "TIGHT_LOW_EVENT",
+            "secondary": "HOME_CONTROL",
+            "shares": [
+              0.21289,
+              0.09828,
+              0.34098,
+              0.09916,
+              0.09173,
+              0.15697
+            ],
+            "taxonomy_version": "soccer_scripts_v1"
+          },
+          "sim_key": "sha256:1fb644772268cba3d693e37a94a26c23891320ebd8b8e71d4a8d6c6e911719e1",
+          "summary": {
+            "mean_away_goals": 1.05844,
+            "mean_home_goals": 1.24636,
+            "p_away": 0.31439,
+            "p_btts": 0.44442,
+            "p_draw": 0.28606,
+            "p_home": 0.39955,
+            "p_over_2_5": 0.40204
+          }
+        }
+      ],
       "match_context": {
         "aggregate": {
           "source": "no aggregate (not a second leg)",
@@ -69003,8 +69033,8 @@
         "source": "production posterior (dc_laplace_v1) that priced this fixture",
         "version": "dc_matchup_v1"
       },
-      "model_fitted_at": "2026-11-07T02:02:07.666431Z",
-      "model_generated_at": "2026-11-07T02:02:09.066392Z",
+      "model_fitted_at": "2026-11-07T02:47:07.087371Z",
+      "model_generated_at": "2026-11-07T02:47:08.435077Z",
       "results_observed_at": "2026-11-06T22:42:27.946664Z",
       "scripts": {
         "contract_gaps": {},
@@ -69622,8 +69652,8 @@
           }
         }
       },
-      "sim_key": "sha256:1fb644772268cba3d693e37a94a26c23891320ebd8b8e71d4a8d6c6e911719e1",
-      "source_run_id": "run-20261107T020209Z-20e558",
+      "sim_key": "sha256:11be4fb3ea8c8cf9f2616fb4b891ff73dabc78e0f63701f115722dec581eac59",
+      "source_run_id": "run-20261107T024708Z-aa8e1d",
       "summary": {
         "mean_away_goals": 1.05844,
         "mean_home_goals": 1.24636,
@@ -304805,6 +304835,6 @@
       }
     }
   },
-  "generated_at": "2026-11-07T02:17:32.937306Z",
+  "generated_at": "2026-11-07T02:47:08.435077Z",
   "quantile_levels": "(i + 0.5) / 100, i = 0..99"
 }
