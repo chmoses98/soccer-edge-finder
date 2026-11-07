@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261107T120523Z-b67abc` · generated 2026-11-07T12:05:23.301089Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261107T121817Z-c89d89` · generated 2026-11-07T12:18:17.325924Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-07T12:02:04.821843Z (CURRENT at publish; CURRENT until 2026-11-07T12:22:04.821843Z, STALE after 2026-11-07T12:32:04.821843Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-07T12:15:00.066932Z (CURRENT at publish; CURRENT until 2026-11-07T12:35:00.066932Z, STALE after 2026-11-07T12:45:00.066932Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-07T09:59:30.084166Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.69s
+model board generated 2026-11-07T09:59:30.084166Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.66s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -75,10 +75,10 @@ model board generated 2026-11-07T09:59:30.084166Z · simulations this update: 0 
 | 2026-11-08T18:30:00Z | TSG Hoffenheim vs Schalke 04 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T19:45:00Z | Lens vs Marseille (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T19:45:00Z | Fiorentina vs Juventus (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-09T02:10:00Z | León vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (130; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (129; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -118,18 +118,18 @@ model board generated 2026-11-07T09:59:30.084166Z · simulations this update: 0 
 | AJ Auxerre vs Paris FC | Result: away | no | 0.4400 | 0.636 [0.449, 0.803] | +0.179 | +0.061 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Arsenal vs Hull City | Result: away | yes | 0.0400 | 0.196 [0.069, 0.351] | +0.154 | +0.059 | 0.09 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | First half: away wins by more than 1.5 | no | 0.8400 | 0.933 [0.879, 0.981] | +0.083 | +0.057 | 0.9 | - | * | RESEARCH_CANDIDATE |
-| Seattle Sounders vs Los Angeles FC | First-half exact score 0-0 (home-away) | yes | 0.2500 | 0.389 [0.288, 0.502] | +0.126 | +0.057 | 0.3 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | First-half total goals over 0.5 | no | 0.2500 | 0.389 [0.288, 0.502] | +0.126 | +0.057 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Sunderland vs Chelsea | Result: home | yes | 0.2600 | 0.460 [0.276, 0.652] | +0.187 | +0.057 | 0.31 | - | * | RESEARCH_CANDIDATE |
 | Sunderland vs Chelsea | Result: away | no | 0.5200 | 0.694 [0.526, 0.848] | +0.157 | +0.055 | 0.57 | - |  | RESEARCH_CANDIDATE |
+| Mainz 05 vs Bayern Munich | Result: home | yes | 0.1000 | 0.274 [0.117, 0.453] | +0.168 | +0.052 | 0.14 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_MODEL_STALE: 1201
-action_NO_EDGE: 1543
+action_NO_EDGE: 1544
 action_NO_QUOTE: 408
-action_RESEARCH_CANDIDATE: 130
+action_RESEARCH_CANDIDATE: 129
 contract_sides: 3282
 fixtures: 65
 fixtures_model_invalidated: 0
