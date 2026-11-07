@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261107T200128Z-9bdab4` · generated 2026-11-07T20:01:28.481770Z · trigger `kickoff_chain:T-60/T-5` · mode `model_refresh_and_reprice`
+slate `slate-20261107T200725Z-3eadae` · generated 2026-11-07T20:07:25.303032Z · trigger `kickoff_chain:T-30/T-5` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-07T19:55:51.058330Z (CURRENT at publish; CURRENT until 2026-11-07T20:15:51.058330Z, STALE after 2026-11-07T20:25:51.058330Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-07T20:04:05.541062Z (CURRENT at publish; CURRENT until 2026-11-07T20:24:05.541062Z, STALE after 2026-11-07T20:34:05.541062Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-07T20:00:10.010914Z · simulations this update: 8 · Odds API calls this update: 1 (credits 3) · reprice 1.70s
+model board generated 2026-11-07T20:00:10.010914Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.27s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,25 +12,25 @@ model board generated 2026-11-07T20:00:10.010914Z · simulations this update: 8 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-07T20:30:00Z | Argentinos Juniors vs Huracán (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | AGING entry | CURRENT | 14 | 0 |
-| 2026-11-07T20:30:00Z | Boca Juniors vs Defensa y Justicia (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | AGING entry | CURRENT | 14 | 0 |
-| 2026-11-07T21:00:00Z | CF Montréal vs Vancouver Whitecaps (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 77 | 0 |
-| 2026-11-07T21:00:00Z | Chicago Fire vs Columbus Crew (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 77 | 0 |
-| 2026-11-07T21:00:00Z | FC Cincinnati vs Nashville SC (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 77 | 0 |
-| 2026-11-07T21:00:00Z | D.C. United vs New York City FC (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 77 | 0 |
-| 2026-11-07T21:00:00Z | Inter Miami vs Charlotte FC (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 77 | 0 |
-| 2026-11-07T21:00:00Z | New York Red Bulls vs Atlanta United (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 77 | 0 |
-| 2026-11-07T21:00:00Z | Orlando City vs New England Revolution (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 77 | 0 |
-| 2026-11-07T21:00:00Z | Philadelphia Union vs Toronto FC (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 77 | 0 |
+| 2026-11-07T20:30:00Z | Argentinos Juniors vs Huracán (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
+| 2026-11-07T20:30:00Z | Boca Juniors vs Defensa y Justicia (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
+| 2026-11-07T21:00:00Z | CF Montréal vs Vancouver Whitecaps (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | CURRENT entry | CURRENT | 77 | 0 |
+| 2026-11-07T21:00:00Z | Chicago Fire vs Columbus Crew (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | CURRENT entry | CURRENT | 77 | 0 |
+| 2026-11-07T21:00:00Z | FC Cincinnati vs Nashville SC (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | CURRENT entry | CURRENT | 77 | 0 |
+| 2026-11-07T21:00:00Z | D.C. United vs New York City FC (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | CURRENT entry | CURRENT | 77 | 0 |
+| 2026-11-07T21:00:00Z | Inter Miami vs Charlotte FC (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | CURRENT entry | CURRENT | 77 | 0 |
+| 2026-11-07T21:00:00Z | New York Red Bulls vs Atlanta United (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | CURRENT entry | CURRENT | 77 | 0 |
+| 2026-11-07T21:00:00Z | Orlando City vs New England Revolution (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | CURRENT entry | CURRENT | 77 | 0 |
+| 2026-11-07T21:00:00Z | Philadelphia Union vs Toronto FC (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | CURRENT entry | CURRENT | 77 | 0 |
 | 2026-11-07T23:00:00Z | Atlas vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-08T00:00:00Z | Austin FC vs Portland Timbers (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-08T00:00:00Z | FC Dallas vs Colorado Rapids (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-08T00:00:00Z | Houston Dynamo vs St. Louis City SC (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 32 | 0 |
-| 2026-11-08T00:00:00Z | Minnesota United vs San Jose Earthquakes (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-08T00:00:00Z | Real Salt Lake vs LA Galaxy (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-08T00:00:00Z | San Diego FC vs Sporting Kansas City (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-08T00:00:00Z | Seattle Sounders vs Los Angeles FC (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-08T01:00:00Z | Instituto vs Newell's Old Boys (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-08T00:00:00Z | Austin FC vs Portland Timbers (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-08T00:00:00Z | FC Dallas vs Colorado Rapids (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-08T00:00:00Z | Houston Dynamo vs St. Louis City SC (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 32 | 0 |
+| 2026-11-08T00:00:00Z | Minnesota United vs San Jose Earthquakes (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-08T00:00:00Z | Real Salt Lake vs LA Galaxy (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-08T00:00:00Z | San Diego FC vs Sporting Kansas City (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-08T00:00:00Z | Seattle Sounders vs Los Angeles FC (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-08T01:00:00Z | Instituto vs Newell's Old Boys (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-08T01:00:00Z | Tigres UANL vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-08T01:00:00Z | Toluca vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-08T03:10:00Z | Pumas UNAM vs Club América (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -61,13 +61,13 @@ model board generated 2026-11-07T20:00:10.010914Z · simulations this update: 8 
 | 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-09T02:10:00Z | León vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (183; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (182; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | New York Red Bulls vs Atlanta United | Total goals over 3.5 | no | 0.4500 | 0.737 [0.599, 0.857] | +0.269 | +0.195 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away team total over 1.5 | no | 0.3300 | 0.617 [0.477, 0.748] | +0.271 | +0.189 | 0.51 | - | * | RESEARCH_CANDIDATE |
-| Valencia vs Real Madrid | Result: away | no | 0.2100 | 0.517 [0.337, 0.693] | +0.295 | +0.176 | 0.38 | - | * | RESEARCH_CANDIDATE |
+| Valencia vs Real Madrid | Result: away | no | 0.2000 | 0.517 [0.337, 0.693] | +0.306 | +0.186 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away team total over 2.5 | no | 0.6000 | 0.843 [0.743, 0.926] | +0.226 | +0.174 | 0.77 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | Total goals over 2.5 | no | 0.2600 | 0.530 [0.377, 0.677] | +0.256 | +0.165 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | Total goals over 4.5 | no | 0.6500 | 0.872 [0.778, 0.947] | +0.206 | +0.160 | 0.81 | - |  | RESEARCH_CANDIDATE |
@@ -91,30 +91,30 @@ model board generated 2026-11-07T20:00:10.010914Z · simulations this update: 8 
 | Austin FC vs Portland Timbers | Second-half result: away | no | 0.5500 | 0.723 [0.608, 0.832] | +0.155 | +0.091 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Valencia vs Real Madrid | Result: home | yes | 0.0800 | 0.275 [0.135, 0.435] | +0.189 | +0.090 | 0.16 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | away team total over 2.5 | no | 0.7900 | 0.921 [0.858, 0.968] | +0.119 | +0.088 | 0.88 | - |  | RESEARCH_CANDIDATE |
-| New York Red Bulls vs Atlanta United | home team total over 1.5 | no | 0.3300 | 0.530 [0.367, 0.680] | +0.184 | +0.083 | 0.41 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 4.5 | no | 0.8000 | 0.920 [0.852, 0.970] | +0.109 | +0.079 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs St. Louis City SC | away team total over 1.5 | no | 0.5900 | 0.755 [0.642, 0.855] | +0.148 | +0.078 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs St. Louis City SC | away team total over 0.5 | no | 0.2300 | 0.398 [0.285, 0.513] | +0.156 | +0.078 | 0.3 | - |  | RESEARCH_CANDIDATE |
+| D.C. United vs New York City FC | away team total over 1.5 | no | 0.5500 | 0.719 [0.591, 0.832] | +0.152 | +0.077 | 0.62 | - | * | RESEARCH_CANDIDATE |
+| D.C. United vs New York City FC | away team total over 0.5 | no | 0.2000 | 0.363 [0.246, 0.479] | +0.152 | +0.075 | 0.27 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | First half: both teams to score | no | 0.6900 | 0.825 [0.748, 0.902] | +0.120 | +0.075 | 0.76 | - | * | RESEARCH_CANDIDATE |
+| New York Red Bulls vs Atlanta United | home team total over 1.5 | no | 0.3400 | 0.530 [0.367, 0.680] | +0.174 | +0.073 | 0.41 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | home team total over 2.5 | no | 0.6100 | 0.775 [0.636, 0.890] | +0.149 | +0.072 | 0.68 | - |  | RESEARCH_CANDIDATE |
+| Seattle Sounders vs Los Angeles FC | First-half total goals over 1.5 | no | 0.6000 | 0.746 [0.648, 0.842] | +0.129 | +0.071 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | home team total over 1.5 | no | 0.4600 | 0.641 [0.490, 0.787] | +0.164 | +0.071 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | FC Dallas vs Colorado Rapids | away team total over 0.5 | no | 0.2900 | 0.453 [0.336, 0.569] | +0.148 | +0.070 | 0.35 | - | * | RESEARCH_CANDIDATE |
+| New York Red Bulls vs Atlanta United | First-half exact score 0-0 (home-away) | yes | 0.1800 | 0.326 [0.218, 0.432] | +0.136 | +0.070 | 0.24 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | First-half total goals over 0.5 | no | 0.1800 | 0.326 [0.218, 0.432] | +0.136 | +0.070 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | CF Montréal vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.5900 | 0.753 [0.610, 0.871] | +0.146 | +0.068 | 0.65 | - | * | RESEARCH_CANDIDATE |
-| D.C. United vs New York City FC | away team total over 1.5 | no | 0.5600 | 0.719 [0.591, 0.832] | +0.142 | +0.068 | 0.62 | - | * | RESEARCH_CANDIDATE |
-| New York Red Bulls vs Atlanta United | First-half total goals over 2.5 | no | 0.7700 | 0.888 [0.809, 0.951] | +0.106 | +0.067 | 0.84 | - |  | RESEARCH_CANDIDATE |
-| Valencia vs Real Madrid | Result: draw | yes | 0.1300 | 0.242 [0.184, 0.303] | +0.104 | +0.067 | 0.19 | - |  | RESEARCH_CANDIDATE |
-| FC Dallas vs Colorado Rapids | away team total over 1.5 | no | 0.6600 | 0.802 [0.703, 0.890] | +0.126 | +0.067 | 0.72 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_NO_EDGE: 2726
-action_NO_QUOTE: 599
-action_RESEARCH_CANDIDATE: 183
+action_NO_QUOTE: 600
+action_RESEARCH_CANDIDATE: 182
 contract_sides: 3508
 fixtures: 48
-fixtures_model_invalidated: 0
+fixtures_model_invalidated: 2
 fixtures_model_missing: 0
 ```
 
