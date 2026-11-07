@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261107T105925Z-9cdb06` · generated 2026-11-07T10:59:25.571238Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261107T111417Z-eab154` · generated 2026-11-07T11:14:17.332909Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-07T10:56:05.065617Z (CURRENT at publish; CURRENT until 2026-11-07T11:16:05.065617Z, STALE after 2026-11-07T11:26:05.065617Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-07T11:11:03.355338Z (CURRENT at publish; CURRENT until 2026-11-07T11:31:03.355338Z, STALE after 2026-11-07T11:41:03.355338Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-07T09:59:30.084166Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.58s
+model board generated 2026-11-07T09:59:30.084166Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.69s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -41,7 +41,7 @@ model board generated 2026-11-07T09:59:30.084166Z · simulations this update: 0 
 | 2026-11-07T21:00:00Z | New York Red Bulls vs Atlanta United (usa.mls) | VALID (STALE) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-07T21:00:00Z | Orlando City vs New England Revolution (usa.mls) | VALID (STALE) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-07T21:00:00Z | Philadelphia Union vs Toronto FC (usa.mls) | VALID (STALE) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-07T23:00:00Z | Atlas vs Pachuca (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-07T23:00:00Z | Atlas vs Pachuca (mex.liga_mx) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-08T00:00:00Z | Austin FC vs Portland Timbers (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-08T00:00:00Z | FC Dallas vs Colorado Rapids (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-08T00:00:00Z | Houston Dynamo vs St. Louis City SC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
@@ -78,7 +78,7 @@ model board generated 2026-11-07T09:59:30.084166Z · simulations this update: 0 
 | 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-09T02:10:00Z | León vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (122; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (123; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -102,34 +102,34 @@ model board generated 2026-11-07T09:59:30.084166Z · simulations this update: 0 
 | Valencia vs Real Madrid | Result: home | yes | 0.0800 | 0.275 [0.135, 0.435] | +0.189 | +0.090 | 0.16 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs St. Louis City SC | away team total over 0.5 | no | 0.2200 | 0.398 [0.285, 0.512] | +0.166 | +0.089 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away wins by more than 2.5 | no | 0.8300 | 0.948 [0.905, 0.982] | +0.108 | +0.086 | 0.92 | - |  | RESEARCH_CANDIDATE |
+| Parma vs Bologna | Result: home | yes | 0.1800 | 0.373 [0.224, 0.537] | +0.182 | +0.084 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | Arsenal vs Hull City | Result: draw | yes | 0.1100 | 0.263 [0.161, 0.367] | +0.146 | +0.084 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 1.5 | no | 0.1900 | 0.361 [0.234, 0.485] | +0.160 | +0.081 | 0.26 | - |  | RESEARCH_CANDIDATE |
+| Houston Dynamo vs St. Louis City SC | btts | no | 0.3800 | 0.548 [0.432, 0.651] | +0.151 | +0.080 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 4.5 | no | 0.8000 | 0.920 [0.852, 0.970] | +0.109 | +0.079 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | FC Dallas vs Colorado Rapids | away team total over 1.5 | no | 0.6500 | 0.802 [0.703, 0.890] | +0.136 | +0.077 | 0.72 | - | * | RESEARCH_CANDIDATE |
-| Parma vs Bologna | Result: home | yes | 0.1900 | 0.373 [0.224, 0.537] | +0.172 | +0.074 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs St. Louis City SC | away team total over 2.5 | no | 0.8100 | 0.924 [0.867, 0.970] | +0.103 | +0.072 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | FC Dallas vs Colorado Rapids | away team total over 0.5 | no | 0.2900 | 0.453 [0.337, 0.569] | +0.148 | +0.071 | 0.35 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away team total over 0.5 | no | 0.1300 | 0.273 [0.173, 0.380] | +0.136 | +0.070 | 0.19 | - |  | RESEARCH_CANDIDATE |
-| Houston Dynamo vs St. Louis City SC | btts | no | 0.3900 | 0.548 [0.432, 0.651] | +0.141 | +0.070 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | FC Dallas vs Colorado Rapids | btts | no | 0.4000 | 0.555 [0.438, 0.669] | +0.138 | +0.064 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | home team total over 1.5 | no | 0.4700 | 0.641 [0.491, 0.786] | +0.154 | +0.062 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | First-half total goals over 1.5 | no | 0.6100 | 0.747 [0.648, 0.842] | +0.120 | +0.061 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | AJ Auxerre vs Paris FC | Result: away | no | 0.4400 | 0.636 [0.449, 0.803] | +0.179 | +0.061 | 0.5 | - | * | RESEARCH_CANDIDATE |
-| Angers vs Nice | Result: home | yes | 0.2700 | 0.462 [0.282, 0.638] | +0.178 | +0.059 | 0.32 | - |  | RESEARCH_CANDIDATE |
 | Arsenal vs Hull City | Result: away | yes | 0.0400 | 0.196 [0.069, 0.351] | +0.154 | +0.059 | 0.09 | - |  | RESEARCH_CANDIDATE |
-| Seattle Sounders vs Los Angeles FC | First-half exact score 0-0 (home-away) | yes | 0.2500 | 0.389 [0.288, 0.502] | +0.126 | +0.057 | 0.3 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | First-half total goals over 0.5 | no | 0.2500 | 0.389 [0.288, 0.502] | +0.126 | +0.057 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Sunderland vs Chelsea | Result: home | yes | 0.2600 | 0.460 [0.276, 0.652] | +0.187 | +0.057 | 0.31 | - | * | RESEARCH_CANDIDATE |
 | Valencia vs Real Madrid | Result: draw | yes | 0.1400 | 0.242 [0.184, 0.303] | +0.094 | +0.057 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Crystal Palace vs Liverpool | Result: away | no | 0.3900 | 0.579 [0.397, 0.758] | +0.172 | +0.055 | 0.44 | - | * | RESEARCH_CANDIDATE |
+| Sunderland vs Chelsea | Result: away | no | 0.5200 | 0.694 [0.526, 0.848] | +0.157 | +0.055 | 0.57 | - |  | RESEARCH_CANDIDATE |
+| Austin FC vs Portland Timbers | Second-half result: away | no | 0.5800 | 0.723 [0.608, 0.832] | +0.126 | +0.053 | 0.63 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_MODEL_STALE: 1079
-action_NO_EDGE: 1681
-action_NO_QUOTE: 400
-action_RESEARCH_CANDIDATE: 122
+action_MODEL_STALE: 1212
+action_NO_EDGE: 1550
+action_NO_QUOTE: 397
+action_RESEARCH_CANDIDATE: 123
 contract_sides: 3282
 fixtures: 65
 fixtures_model_invalidated: 0
