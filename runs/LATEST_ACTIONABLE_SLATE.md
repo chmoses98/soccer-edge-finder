@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261107T193330Z-509ac7` · generated 2026-11-07T19:33:30.087883Z · trigger `kickoff_chain:T-60/T-30/T-15` · mode `model_refresh_and_reprice`
+slate `slate-20261107T193836Z-e4bf20` · generated 2026-11-07T19:38:36.154061Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-07T19:30:00.058781Z (CURRENT at publish; CURRENT until 2026-11-07T19:50:00.058781Z, STALE after 2026-11-07T20:00:00.058781Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-07T19:35:21.217813Z (CURRENT at publish; CURRENT until 2026-11-07T19:55:21.217813Z, STALE after 2026-11-07T20:05:21.217813Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-07T18:43:41.805228Z · simulations this update: 0 · Odds API calls this update: 3 (credits 9) · reprice 1.25s
+model board generated 2026-11-07T18:43:41.805228Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.43s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -14,8 +14,8 @@ model board generated 2026-11-07T18:43:41.805228Z · simulations this update: 0 
 |---|---|---|---|---|---|---|---|
 | 2026-11-07T19:45:00Z | Paris Saint-Germain vs Troyes (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
 | 2026-11-07T19:45:00Z | AS Roma vs Sassuolo (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
-| 2026-11-07T20:30:00Z | Argentinos Juniors vs Huracán (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
-| 2026-11-07T20:30:00Z | Boca Juniors vs Defensa y Justicia (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
+| 2026-11-07T20:30:00Z | Argentinos Juniors vs Huracán (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | CURRENT entry | CURRENT | 14 | 0 |
+| 2026-11-07T20:30:00Z | Boca Juniors vs Defensa y Justicia (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | CURRENT entry | CURRENT | 14 | 0 |
 | 2026-11-07T21:00:00Z | CF Montréal vs Vancouver Whitecaps (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-07T21:00:00Z | Chicago Fire vs Columbus Crew (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-07T21:00:00Z | FC Cincinnati vs Nashville SC (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -32,7 +32,7 @@ model board generated 2026-11-07T18:43:41.805228Z · simulations this update: 0 
 | 2026-11-08T00:00:00Z | Real Salt Lake vs LA Galaxy (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-08T00:00:00Z | San Diego FC vs Sporting Kansas City (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-08T00:00:00Z | Seattle Sounders vs Los Angeles FC (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-08T01:00:00Z | Instituto vs Newell's Old Boys (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-08T01:00:00Z | Instituto vs Newell's Old Boys (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-08T01:00:00Z | Tigres UANL vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-08T01:00:00Z | Toluca vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-08T03:10:00Z | Pumas UNAM vs Club América (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
@@ -63,7 +63,7 @@ model board generated 2026-11-07T18:43:41.805228Z · simulations this update: 0 
 | 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-09T02:10:00Z | León vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (185; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (184; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -72,7 +72,7 @@ model board generated 2026-11-07T18:43:41.805228Z · simulations this update: 0 
 | Valencia vs Real Madrid | Result: away | no | 0.2100 | 0.517 [0.337, 0.693] | +0.295 | +0.176 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away team total over 2.5 | no | 0.6000 | 0.843 [0.743, 0.926] | +0.226 | +0.174 | 0.77 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | Total goals over 2.5 | no | 0.2600 | 0.530 [0.377, 0.677] | +0.256 | +0.165 | 0.42 | - |  | RESEARCH_CANDIDATE |
-| New York Red Bulls vs Atlanta United | Total goals over 4.5 | no | 0.6600 | 0.872 [0.778, 0.947] | +0.196 | +0.151 | 0.81 | - |  | RESEARCH_CANDIDATE |
+| New York Red Bulls vs Atlanta United | Total goals over 4.5 | no | 0.6500 | 0.872 [0.778, 0.947] | +0.206 | +0.160 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | btts | no | 0.2800 | 0.518 [0.407, 0.628] | +0.224 | +0.150 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | Result: away | no | 0.4500 | 0.692 [0.559, 0.814] | +0.225 | +0.139 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | away team total over 1.5 | no | 0.5300 | 0.748 [0.628, 0.850] | +0.201 | +0.132 | 0.66 | - | * | RESEARCH_CANDIDATE |
@@ -112,8 +112,8 @@ model board generated 2026-11-07T18:43:41.805228Z · simulations this update: 0 
 
 ```
 action_NO_EDGE: 2736
-action_NO_QUOTE: 599
-action_RESEARCH_CANDIDATE: 185
+action_NO_QUOTE: 600
+action_RESEARCH_CANDIDATE: 184
 contract_sides: 3520
 fixtures: 50
 fixtures_model_invalidated: 0
