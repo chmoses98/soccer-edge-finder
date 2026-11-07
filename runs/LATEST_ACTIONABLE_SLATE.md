@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261107T015645Z-e6d5ae` · generated 2026-11-07T01:56:45.707197Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261107T020219Z-7b2883` · generated 2026-11-07T02:02:19.566343Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-07T01:53:32.754678Z (CURRENT at publish; CURRENT until 2026-11-07T02:13:32.754678Z, STALE after 2026-11-07T02:23:32.754678Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-07T01:58:45.953997Z (CURRENT at publish; CURRENT until 2026-11-07T02:18:45.953997Z, STALE after 2026-11-07T02:28:45.953997Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-07T00:16:09.998132Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 2.00s
+model board generated 2026-11-07T02:02:09.066392Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 2.01s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-07T00:16:09.998132Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-07T03:00:00Z | Atlante vs Santos Laguna (mex.liga_mx) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-07T03:00:00Z | Atlante vs Santos Laguna (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 77 | 0 |
 | 2026-11-07T14:00:00Z | Cagliari vs Frosinone (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-07T14:00:00Z | Torino vs Lecce (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-07T14:30:00Z | Borussia Dortmund vs SV Elversberg (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -42,7 +42,7 @@ model board generated 2026-11-07T00:16:09.998132Z · simulations this update: 0 
 | 2026-11-07T21:00:00Z | New York Red Bulls vs Atlanta United (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-07T21:00:00Z | Orlando City vs New England Revolution (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-07T21:00:00Z | Philadelphia Union vs Toronto FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-07T23:00:00Z | Atlas vs Pachuca (mex.liga_mx) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-07T23:00:00Z | Atlas vs Pachuca (mex.liga_mx) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-08T00:00:00Z | Austin FC vs Portland Timbers (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-08T00:00:00Z | FC Dallas vs Colorado Rapids (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-08T00:00:00Z | Houston Dynamo vs St. Louis City SC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
@@ -50,9 +50,9 @@ model board generated 2026-11-07T00:16:09.998132Z · simulations this update: 0 
 | 2026-11-08T00:00:00Z | Real Salt Lake vs LA Galaxy (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-08T00:00:00Z | San Diego FC vs Sporting Kansas City (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-08T00:00:00Z | Seattle Sounders vs Los Angeles FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-08T01:00:00Z | Tigres UANL vs Cruz Azul (mex.liga_mx) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-08T01:00:00Z | Toluca vs Monterrey (mex.liga_mx) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-08T03:10:00Z | Pumas UNAM vs Club América (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-08T01:00:00Z | Tigres UANL vs Cruz Azul (mex.liga_mx) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-08T01:00:00Z | Toluca vs Monterrey (mex.liga_mx) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-08T03:10:00Z | Pumas UNAM vs Club América (mex.liga_mx) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-08T11:30:00Z | Napoli vs Lazio (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T12:00:00Z | Atlético Madrid vs FC Barcelona (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T12:00:00Z | Celta Vigo vs Levante (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -78,11 +78,11 @@ model board generated 2026-11-07T00:16:09.998132Z · simulations this update: 0 
 | 2026-11-08T19:45:00Z | Fiorentina vs Juventus (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (229; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (230; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Valencia vs Real Madrid | Result: away | no | 0.2100 | 0.518 [0.330, 0.695] | +0.296 | +0.181 | 0.38 | - | * | RESEARCH_CANDIDATE |
+| Valencia vs Real Madrid | Result: away | no | 0.2200 | 0.518 [0.330, 0.695] | +0.286 | +0.171 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away team total over 1.5 | no | 0.3600 | 0.616 [0.477, 0.748] | +0.240 | +0.158 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | Result: away | no | 0.4400 | 0.692 [0.559, 0.813] | +0.235 | +0.149 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Arsenal vs Hull City | Result: home | no | 0.1600 | 0.459 [0.242, 0.678] | +0.290 | +0.148 | 0.3 | - | * | RESEARCH_CANDIDATE |
@@ -116,7 +116,7 @@ model board generated 2026-11-07T00:16:09.998132Z · simulations this update: 0 
 | Valencia vs Real Madrid | Result: home | yes | 0.0800 | 0.275 [0.135, 0.431] | +0.190 | +0.089 | 0.16 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs St. Louis City SC | away team total over 0.5 | no | 0.2200 | 0.398 [0.285, 0.512] | +0.166 | +0.089 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away wins by more than 2.5 | no | 0.8300 | 0.948 [0.905, 0.982] | +0.108 | +0.086 | 0.92 | - |  | RESEARCH_CANDIDATE |
-| Atlante vs Santos Laguna | btts | no | 0.3700 | 0.555 [0.433, 0.680] | +0.169 | +0.086 | 0.45 | - | * | RESEARCH_CANDIDATE |
+| Atlante vs Santos Laguna | btts | no | 0.3700 | 0.555 [0.431, 0.681] | +0.169 | +0.085 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | away team total over 0.5 | no | 0.2200 | 0.391 [0.274, 0.505] | +0.159 | +0.085 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | CF Montréal vs Vancouver Whitecaps | Total goals over 4.5 | no | 0.7400 | 0.882 [0.787, 0.954] | +0.129 | +0.083 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | home team total over 1.5 | no | 0.4500 | 0.641 [0.491, 0.786] | +0.174 | +0.082 | 0.53 | - | * | RESEARCH_CANDIDATE |
@@ -126,15 +126,13 @@ model board generated 2026-11-07T00:16:09.998132Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 2738
+action_NO_EDGE: 2737
 action_NO_QUOTE: 441
-action_RESEARCH_CANDIDATE: 229
+action_RESEARCH_CANDIDATE: 230
 contract_sides: 3408
 fixtures: 65
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
-
-Removed (kicked off): 2
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
