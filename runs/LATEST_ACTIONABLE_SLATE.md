@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261107T115927Z-c21acb` · generated 2026-11-07T11:59:27.783369Z · trigger `kickoff_chain:T-120/T-60` · mode `reprice_only`
+slate `slate-20261107T120523Z-b67abc` · generated 2026-11-07T12:05:23.301089Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-07T11:56:04.955252Z (CURRENT at publish; CURRENT until 2026-11-07T12:16:04.955252Z, STALE after 2026-11-07T12:26:04.955252Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-07T12:02:04.821843Z (CURRENT at publish; CURRENT until 2026-11-07T12:22:04.821843Z, STALE after 2026-11-07T12:32:04.821843Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-07T09:59:30.084166Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.55s
+model board generated 2026-11-07T09:59:30.084166Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.69s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -78,7 +78,7 @@ model board generated 2026-11-07T09:59:30.084166Z · simulations this update: 0 
 | 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-09T02:10:00Z | León vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (131; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (130; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -92,8 +92,8 @@ model board generated 2026-11-07T09:59:30.084166Z · simulations this update: 0 
 | Leeds United vs Tottenham Hotspur | Result: away | no | 0.6300 | 0.836 [0.726, 0.933] | +0.190 | +0.129 | 0.76 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 2.5 | no | 0.4000 | 0.625 [0.477, 0.755] | +0.208 | +0.126 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away wins by more than 1.5 | no | 0.6700 | 0.859 [0.773, 0.932] | +0.174 | +0.122 | 0.79 | - | * | RESEARCH_CANDIDATE |
-| Seattle Sounders vs Los Angeles FC | Total goals over 3.5 | no | 0.6200 | 0.814 [0.698, 0.905] | +0.177 | +0.120 | 0.74 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | btts | no | 0.3800 | 0.576 [0.464, 0.684] | +0.180 | +0.114 | 0.49 | - | * | RESEARCH_CANDIDATE |
+| Seattle Sounders vs Los Angeles FC | Total goals over 3.5 | no | 0.6300 | 0.814 [0.698, 0.905] | +0.167 | +0.110 | 0.74 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | Result: home | yes | 0.2300 | 0.452 [0.306, 0.601] | +0.210 | +0.108 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs St. Louis City SC | away team total over 1.5 | no | 0.5600 | 0.755 [0.643, 0.855] | +0.178 | +0.108 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | First-half result: away | no | 0.5600 | 0.744 [0.638, 0.842] | +0.167 | +0.103 | 0.66 | - | * | RESEARCH_CANDIDATE |
@@ -105,12 +105,12 @@ model board generated 2026-11-07T09:59:30.084166Z · simulations this update: 0 
 | Parma vs Bologna | Result: home | yes | 0.1800 | 0.373 [0.224, 0.537] | +0.182 | +0.084 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | Arsenal vs Hull City | Result: draw | yes | 0.1100 | 0.263 [0.161, 0.367] | +0.146 | +0.084 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 1.5 | no | 0.1900 | 0.361 [0.234, 0.485] | +0.160 | +0.081 | 0.26 | - |  | RESEARCH_CANDIDATE |
+| Austin FC vs Portland Timbers | away team total over 0.5 | no | 0.1200 | 0.273 [0.173, 0.380] | +0.146 | +0.080 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs St. Louis City SC | btts | no | 0.3800 | 0.548 [0.432, 0.651] | +0.151 | +0.080 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 4.5 | no | 0.8000 | 0.920 [0.852, 0.970] | +0.109 | +0.079 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | FC Dallas vs Colorado Rapids | away team total over 1.5 | no | 0.6500 | 0.802 [0.703, 0.890] | +0.136 | +0.077 | 0.72 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs St. Louis City SC | away team total over 2.5 | no | 0.8100 | 0.924 [0.867, 0.970] | +0.103 | +0.072 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | FC Dallas vs Colorado Rapids | away team total over 0.5 | no | 0.2900 | 0.453 [0.337, 0.569] | +0.148 | +0.071 | 0.35 | - |  | RESEARCH_CANDIDATE |
-| Austin FC vs Portland Timbers | away team total over 0.5 | no | 0.1300 | 0.273 [0.173, 0.380] | +0.136 | +0.070 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Crystal Palace vs Liverpool | Result: away | no | 0.3800 | 0.579 [0.397, 0.758] | +0.182 | +0.066 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | FC Dallas vs Colorado Rapids | btts | no | 0.4000 | 0.555 [0.438, 0.669] | +0.138 | +0.064 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | home team total over 1.5 | no | 0.4700 | 0.641 [0.491, 0.786] | +0.154 | +0.062 | 0.53 | - | * | RESEARCH_CANDIDATE |
@@ -121,15 +121,15 @@ model board generated 2026-11-07T09:59:30.084166Z · simulations this update: 0 
 | Seattle Sounders vs Los Angeles FC | First-half exact score 0-0 (home-away) | yes | 0.2500 | 0.389 [0.288, 0.502] | +0.126 | +0.057 | 0.3 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | First-half total goals over 0.5 | no | 0.2500 | 0.389 [0.288, 0.502] | +0.126 | +0.057 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Sunderland vs Chelsea | Result: home | yes | 0.2600 | 0.460 [0.276, 0.652] | +0.187 | +0.057 | 0.31 | - | * | RESEARCH_CANDIDATE |
-| Valencia vs Real Madrid | Result: draw | yes | 0.1400 | 0.242 [0.184, 0.303] | +0.094 | +0.057 | 0.19 | - |  | RESEARCH_CANDIDATE |
+| Sunderland vs Chelsea | Result: away | no | 0.5200 | 0.694 [0.526, 0.848] | +0.157 | +0.055 | 0.57 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_MODEL_STALE: 1212
-action_NO_EDGE: 1542
-action_NO_QUOTE: 397
-action_RESEARCH_CANDIDATE: 131
+action_MODEL_STALE: 1201
+action_NO_EDGE: 1543
+action_NO_QUOTE: 408
+action_RESEARCH_CANDIDATE: 130
 contract_sides: 3282
 fixtures: 65
 fixtures_model_invalidated: 0
