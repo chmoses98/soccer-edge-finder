@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261107T090144Z-ce94fd` · generated 2026-11-07T09:01:44.212221Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261107T091646Z-ecae3c` · generated 2026-11-07T09:16:46.476804Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-07T08:58:31.285959Z (CURRENT at publish; CURRENT until 2026-11-07T09:18:31.285959Z, STALE after 2026-11-07T09:28:31.285959Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-07T09:13:33.546544Z (CURRENT at publish; CURRENT until 2026-11-07T09:33:33.546544Z, STALE after 2026-11-07T09:43:33.546544Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-07T04:16:06.611926Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.96s
+model board generated 2026-11-07T04:16:06.611926Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.95s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -78,7 +78,7 @@ model board generated 2026-11-07T04:16:06.611926Z · simulations this update: 0 
 | 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-09T02:10:00Z | León vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (207; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (208; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -112,6 +112,7 @@ model board generated 2026-11-07T04:16:06.611926Z · simulations this update: 0 
 | Valencia vs Real Madrid | Result: home | yes | 0.0800 | 0.275 [0.135, 0.435] | +0.189 | +0.090 | 0.16 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | Total goals over 1.5 | no | 0.1100 | 0.281 [0.166, 0.401] | +0.164 | +0.088 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away wins by more than 2.5 | no | 0.8300 | 0.948 [0.905, 0.982] | +0.108 | +0.086 | 0.92 | - |  | RESEARCH_CANDIDATE |
+| New York Red Bulls vs Atlanta United | away team total over 0.5 | no | 0.2200 | 0.391 [0.274, 0.505] | +0.159 | +0.085 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Arsenal vs Hull City | Result: draw | yes | 0.1100 | 0.263 [0.161, 0.367] | +0.146 | +0.084 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | CF Montréal vs Vancouver Whitecaps | away team total over 1.5 | no | 0.3600 | 0.550 [0.394, 0.694] | +0.174 | +0.084 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | CF Montréal vs Vancouver Whitecaps | Total goals over 4.5 | no | 0.7400 | 0.882 [0.787, 0.954] | +0.129 | +0.083 | 0.82 | - |  | RESEARCH_CANDIDATE |
@@ -121,14 +122,13 @@ model board generated 2026-11-07T04:16:06.611926Z · simulations this update: 0 
 | Seattle Sounders vs Los Angeles FC | Total goals over 4.5 | no | 0.8000 | 0.920 [0.852, 0.970] | +0.109 | +0.079 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | away team total over 2.5 | no | 0.8000 | 0.921 [0.859, 0.968] | +0.109 | +0.079 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | FC Dallas vs Colorado Rapids | away team total over 1.5 | no | 0.6500 | 0.802 [0.703, 0.890] | +0.136 | +0.077 | 0.72 | - |  | RESEARCH_CANDIDATE |
-| CF Montréal vs Vancouver Whitecaps | btts | no | 0.3600 | 0.531 [0.405, 0.652] | +0.155 | +0.076 | 0.43 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2661
-action_NO_QUOTE: 414
-action_RESEARCH_CANDIDATE: 207
+action_NO_EDGE: 2675
+action_NO_QUOTE: 399
+action_RESEARCH_CANDIDATE: 208
 contract_sides: 3282
 fixtures: 65
 fixtures_model_invalidated: 0
