@@ -1,10 +1,10 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 610,
-  "PINNACLE_VALID_CLOSE": 41,
   "MISSED_DISPATCHER_CLOSE": 86,
-  "PINNACLE_QUOTED_NOTHING": 2,
-  "CLOSE_BLOCKED_BUDGET": 16
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 611,
+  "CLOSE_BLOCKED_BUDGET": 16,
+  "PINNACLE_VALID_CLOSE": 51,
+  "PINNACLE_QUOTED_NOTHING": 2
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.belgrano": {
@@ -21,6 +21,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:arg.primera:2026:arg.argentinos_juniors:arg.huracan": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261107T201504Z"
   },
   "fx:arg.primera:2026:arg.argentinos_juniors:arg.independiente_rivadavia": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -81,6 +86,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:arg.primera:2026:arg.boca_juniors:arg.defensa_y_justicia": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261107T201504Z"
   },
   "fx:arg.primera:2026:arg.boca_juniors:arg.river_plate": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -288,6 +298,11 @@
    "batch_id": null
   },
   "fx:arg.primera:2026:arg.river_plate:arg.racing": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:arg.primera:2026:arg.rosario_central:arg.estudiantes_rio_cuarto": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
@@ -3427,6 +3442,11 @@
    "close_horizon_delivered": false,
    "batch_id": null
   },
+  "fx:usa.mls:2026:usa.cf_montreal:usa.vancouver_whitecaps": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261107T204504Z"
+  },
   "fx:usa.mls:2026:usa.charlotte:usa.cf_montreal": {
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
@@ -3441,6 +3461,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:usa.mls:2026:usa.chicago_fire:usa.columbus_crew": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261107T204504Z"
   },
   "fx:usa.mls:2026:usa.chicago_fire:usa.nycfc": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -3471,6 +3496,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:usa.mls:2026:usa.cincinnati:usa.nashville": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261107T204504Z"
   },
   "fx:usa.mls:2026:usa.cincinnati:usa.new_england": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -3522,6 +3552,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:usa.mls:2026:usa.dc_united:usa.nycfc": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261107T204504Z"
+  },
   "fx:usa.mls:2026:usa.fc_dallas:usa.columbus_crew": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -3541,6 +3576,11 @@
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
    "batch_id": null
+  },
+  "fx:usa.mls:2026:usa.inter_miami:usa.charlotte": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261107T204504Z"
   },
   "fx:usa.mls:2026:usa.inter_miami:usa.cincinnati": {
    "state": "MISSED_DISPATCHER_CLOSE",
@@ -3627,6 +3667,11 @@
    "close_horizon_delivered": false,
    "batch_id": null
   },
+  "fx:usa.mls:2026:usa.ny_red_bulls:usa.atlanta_united": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261107T204504Z"
+  },
   "fx:usa.mls:2026:usa.ny_red_bulls:usa.inter_miami": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -3657,6 +3702,11 @@
    "close_horizon_delivered": false,
    "batch_id": null
   },
+  "fx:usa.mls:2026:usa.orlando_city:usa.new_england": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261107T204504Z"
+  },
   "fx:usa.mls:2026:usa.orlando_city:usa.nycfc": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -3676,6 +3726,11 @@
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
    "batch_id": null
+  },
+  "fx:usa.mls:2026:usa.philadelphia_union:usa.toronto": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261107T204504Z"
   },
   "fx:usa.mls:2026:usa.portland_timbers:usa.charlotte": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",

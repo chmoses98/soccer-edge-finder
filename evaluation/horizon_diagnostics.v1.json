@@ -2,10 +2,10 @@
   "by_horizon": {
     "120": {
       "achieved_minutes_median": 122.54,
-      "achieved_minutes_p10": 118.5,
+      "achieved_minutes_p10": 118.52,
       "achieved_minutes_p90": 126.47,
-      "delivered": 726,
-      "delivery_rate": 0.9236641221374046,
+      "delivered": 727,
+      "delivery_rate": 0.9237611181702668,
       "lateness_minutes_max": 62.51,
       "lateness_minutes_median": -2.54,
       "missed": 60
@@ -13,29 +13,29 @@
     "15": {
       "achieved_minutes_median": 11.96,
       "achieved_minutes_p10": 10.48,
-      "achieved_minutes_p90": 13.54,
-      "delivered": 656,
-      "delivery_rate": 0.8688741721854305,
+      "achieved_minutes_p90": 13.49,
+      "delivered": 667,
+      "delivery_rate": 0.8707571801566579,
       "lateness_minutes_max": 14.64,
       "lateness_minutes_median": 3.04,
       "missed": 99
     },
     "30": {
-      "achieved_minutes_median": 27.0,
+      "achieved_minutes_median": 26.99,
       "achieved_minutes_p10": 24.7,
       "achieved_minutes_p90": 28.99,
-      "delivered": 657,
-      "delivery_rate": 0.8656126482213439,
+      "delivered": 665,
+      "delivery_rate": 0.8670143415906127,
       "lateness_minutes_max": 16.98,
-      "lateness_minutes_median": 3.0,
+      "lateness_minutes_median": 3.01,
       "missed": 102
     },
     "5": {
       "achieved_minutes_median": 2.07,
       "achieved_minutes_p10": 0.07,
-      "achieved_minutes_p90": 2.56,
-      "delivered": 655,
-      "delivery_rate": 0.8698539176626826,
+      "achieved_minutes_p90": 2.54,
+      "delivered": 666,
+      "delivery_rate": 0.8717277486910995,
       "lateness_minutes_max": 7.8,
       "lateness_minutes_median": 2.93,
       "missed": 98
@@ -51,90 +51,13 @@
       "missed": 90
     }
   },
-  "delivered_total": 3378,
-  "delivery_rate_total": 0.8826757251110531,
-  "fixtures_tracked": 786,
-  "generated_at": "2026-11-07T20:16:55Z",
+  "delivered_total": 3409,
+  "delivery_rate_total": 0.883618455158113,
+  "fixtures_tracked": 787,
+  "generated_at": "2026-11-07T22:59:06Z",
   "missed_total": 449,
-  "n_pending_fixtures": 72,
+  "n_pending_fixtures": 61,
   "pending_fixtures": [
-    {
-      "competition_id": "arg.primera",
-      "fixture_id": "fx:arg.primera:2026:arg.boca_juniors:arg.defensa_y_justicia",
-      "kickoff_utc": "2026-11-07T20:30:00Z",
-      "markets_discovered": 14,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "arg.primera",
-      "fixture_id": "fx:arg.primera:2026:arg.argentinos_juniors:arg.huracan",
-      "kickoff_utc": "2026-11-07T20:30:00Z",
-      "markets_discovered": 14,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "arg.primera",
-      "fixture_id": "fx:arg.primera:2026:arg.rosario_central:arg.estudiantes_rio_cuarto",
-      "kickoff_utc": "2026-11-07T20:30:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "usa.mls",
-      "fixture_id": "fx:usa.mls:2026:usa.chicago_fire:usa.columbus_crew",
-      "kickoff_utc": "2026-11-07T21:00:00Z",
-      "markets_discovered": 77,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "usa.mls",
-      "fixture_id": "fx:usa.mls:2026:usa.cincinnati:usa.nashville",
-      "kickoff_utc": "2026-11-07T21:00:00Z",
-      "markets_discovered": 77,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "usa.mls",
-      "fixture_id": "fx:usa.mls:2026:usa.dc_united:usa.nycfc",
-      "kickoff_utc": "2026-11-07T21:00:00Z",
-      "markets_discovered": 77,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "usa.mls",
-      "fixture_id": "fx:usa.mls:2026:usa.inter_miami:usa.charlotte",
-      "kickoff_utc": "2026-11-07T21:00:00Z",
-      "markets_discovered": 77,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "usa.mls",
-      "fixture_id": "fx:usa.mls:2026:usa.cf_montreal:usa.vancouver_whitecaps",
-      "kickoff_utc": "2026-11-07T21:00:00Z",
-      "markets_discovered": 77,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "usa.mls",
-      "fixture_id": "fx:usa.mls:2026:usa.ny_red_bulls:usa.atlanta_united",
-      "kickoff_utc": "2026-11-07T21:00:00Z",
-      "markets_discovered": 77,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "usa.mls",
-      "fixture_id": "fx:usa.mls:2026:usa.orlando_city:usa.new_england",
-      "kickoff_utc": "2026-11-07T21:00:00Z",
-      "markets_discovered": 77,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "usa.mls",
-      "fixture_id": "fx:usa.mls:2026:usa.philadelphia_union:usa.toronto",
-      "kickoff_utc": "2026-11-07T21:00:00Z",
-      "markets_discovered": 77,
-      "source": "run_output"
-    },
     {
       "competition_id": "mex.liga_mx",
       "fixture_id": "fx:mex.liga_mx:2026:mex.atlas:mex.pachuca",
