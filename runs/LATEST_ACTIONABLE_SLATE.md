@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261107T194850Z-75a7b7` · generated 2026-11-07T19:48:50.525457Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261107T195358Z-117993` · generated 2026-11-07T19:53:58.349145Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-07T19:45:34.042421Z (CURRENT at publish; CURRENT until 2026-11-07T20:05:34.042421Z, STALE after 2026-11-07T20:15:34.042421Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-07T19:50:42.493576Z (CURRENT at publish; CURRENT until 2026-11-07T20:10:42.493576Z, STALE after 2026-11-07T20:20:42.493576Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-07T18:43:41.805228Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.46s
+model board generated 2026-11-07T18:43:41.805228Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.56s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -61,7 +61,7 @@ model board generated 2026-11-07T18:43:41.805228Z · simulations this update: 0 
 | 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-09T02:10:00Z | León vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (184; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (185; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -103,15 +103,15 @@ model board generated 2026-11-07T18:43:41.805228Z · simulations this update: 0 
 | CF Montréal vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.5900 | 0.753 [0.610, 0.871] | +0.146 | +0.068 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | D.C. United vs New York City FC | away team total over 1.5 | no | 0.5600 | 0.719 [0.591, 0.832] | +0.142 | +0.068 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | New York Red Bulls vs Atlanta United | First-half total goals over 2.5 | no | 0.7700 | 0.888 [0.809, 0.951] | +0.106 | +0.067 | 0.84 | - |  | RESEARCH_CANDIDATE |
+| Valencia vs Real Madrid | Result: draw | yes | 0.1300 | 0.242 [0.184, 0.303] | +0.104 | +0.067 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | FC Dallas vs Colorado Rapids | away team total over 1.5 | no | 0.6600 | 0.802 [0.703, 0.890] | +0.126 | +0.067 | 0.72 | - |  | RESEARCH_CANDIDATE |
-| CF Montréal vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.3700 | 0.549 [0.387, 0.698] | +0.163 | +0.065 | 0.43 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 2725
+action_NO_EDGE: 2724
 action_NO_QUOTE: 599
-action_RESEARCH_CANDIDATE: 184
+action_RESEARCH_CANDIDATE: 185
 contract_sides: 3508
 fixtures: 48
 fixtures_model_invalidated: 0
