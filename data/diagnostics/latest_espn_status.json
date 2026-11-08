@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-08T09:18:51.029132+00:00",
-  "events": 650,
-  "events_skipped_unmapped": 407,
+  "as_of": "2026-11-08T17:50:10.163070+00:00",
+  "events": 652,
+  "events_skipped_unmapped": 409,
   "fixtures_mapped": 243,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=34"
+      "weather_stopped:consecutive_failures:skipped=22"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 147,
+    "captured": 142,
     "events": 150,
     "failures": [],
-    "published_post": 36,
-    "published_pre_kickoff": 0,
-    "unchanged": 3,
-    "unpublished": 114
+    "published_post": 101,
+    "published_pre_kickoff": 9,
+    "unchanged": 8,
+    "unpublished": 40
   },
   "map_proposals": {
     "bel.1": {
@@ -592,7 +592,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 11,
+  "results_appended": 26,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -936,17 +936,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 10,
-    "events": 47,
+    "captured": 7,
+    "events": 32,
     "failures": [
-      "401850691: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Chill\u00e1n&count=5&language=en&for",
-      "401850686: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rancagua&count=5&language=en&fo",
-      "401850684: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=La%20Calera&count=5&language=en"
+      "401850690: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-33.4569&longitude=-70.6483&hourly=",
+      "401850687: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-33.4569&longitude=-70.6483&hourly=",
+      "401850691: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Chill\u00e1n&count=5&language=en&for"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 34,
+    "skipped": 22,
     "stopped": "consecutive_failures"
   }
 }
