@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261108T180311Z-291933` · generated 2026-11-08T18:03:11.610851Z · trigger `kickoff_chain:T-120/T-60/T-30` · mode `model_refresh_and_reprice`
+slate `slate-20261108T181713Z-09a381` · generated 2026-11-08T18:17:13.029251Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-08T17:59:05.946736Z (CURRENT at publish; CURRENT until 2026-11-08T18:19:05.946736Z, STALE after 2026-11-08T18:29:05.946736Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-08T18:14:05.967859Z (CURRENT at publish; CURRENT until 2026-11-08T18:34:05.967859Z, STALE after 2026-11-08T18:44:05.967859Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-08T18:03:11.032565Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.13s
+model board generated 2026-11-08T18:03:11.032565Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.11s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-08T18:03:11.032565Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-08T18:30:00Z | TSG Hoffenheim vs Schalke 04 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-08T18:30:00Z | TSG Hoffenheim vs Schalke 04 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
 | 2026-11-08T19:45:00Z | Lens vs Marseille (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-08T19:45:00Z | Fiorentina vs Juventus (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-11-08T22:30:00Z | Central Córdoba vs Lanús (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
