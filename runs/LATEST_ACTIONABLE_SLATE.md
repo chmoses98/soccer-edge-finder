@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261108T152505Z-9ada7e` · generated 2026-11-08T15:25:05.686398Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261108T153023Z-2447f1` · generated 2026-11-08T15:30:23.877781Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-08T15:21:57.771301Z (CURRENT at publish; CURRENT until 2026-11-08T15:41:57.771301Z, STALE after 2026-11-08T15:51:57.771301Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-08T15:27:06.906637Z (CURRENT at publish; CURRENT until 2026-11-08T15:47:06.906637Z, STALE after 2026-11-08T15:57:06.906637Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-08T15:13:15.649441Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.21s
+model board generated 2026-11-08T15:30:23.274985Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.21s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,11 +12,11 @@ model board generated 2026-11-08T15:13:15.649441Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-08T16:15:00Z | Angers vs Nice (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
-| 2026-11-08T16:15:00Z | Brest vs Lyon (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
-| 2026-11-08T16:15:00Z | Le Havre vs Lorient (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
-| 2026-11-08T16:15:00Z | Le Mans vs AS Monaco (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
-| 2026-11-08T16:30:00Z | SC Freiburg vs Union Berlin (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-08T16:15:00Z | Angers vs Nice (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
+| 2026-11-08T16:15:00Z | Brest vs Lyon (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
+| 2026-11-08T16:15:00Z | Le Havre vs Lorient (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
+| 2026-11-08T16:15:00Z | Le Mans vs AS Monaco (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
+| 2026-11-08T16:30:00Z | SC Freiburg vs Union Berlin (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
 | 2026-11-08T17:00:00Z | Inter Milan vs Como (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T18:30:00Z | TSG Hoffenheim vs Schalke 04 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T19:45:00Z | Lens vs Marseille (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -38,12 +38,12 @@ model board generated 2026-11-08T15:13:15.649441Z · simulations this update: 0 
 | León vs Guadalajara | Total goals over 3.5 | no | 0.6600 | 0.774 [0.641, 0.886] | +0.098 | +0.022 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | away team total over 2.5 | no | 0.7900 | 0.872 [0.779, 0.947] | +0.070 | +0.022 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Le Mans vs AS Monaco | Result: home | yes | 0.1800 | 0.361 [0.146, 0.597] | +0.171 | +0.020 | 0.19 | 0.163 | * | RESEARCH_CANDIDATE |
+| Le Mans vs AS Monaco | Result: away | no | 0.4100 | 0.594 [0.347, 0.810] | +0.168 | +0.019 | 0.42 | 0.395 |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 2.5 | no | 0.4400 | 0.575 [0.417, 0.723] | +0.118 | +0.018 | 0.45 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | away team total over 0.5 | no | 0.3300 | 0.446 [0.317, 0.570] | +0.101 | +0.015 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 4.5 | no | 0.8300 | 0.896 [0.810, 0.961] | +0.056 | +0.012 | 0.84 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Total goals over 3.5 | no | 0.6800 | 0.785 [0.635, 0.900] | +0.090 | +0.010 | 0.69 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 1.5 | no | 0.2100 | 0.319 [0.192, 0.446] | +0.097 | +0.010 | 0.21 | - |  | RESEARCH_CANDIDATE |
-| Le Mans vs AS Monaco | Result: away | no | 0.4200 | 0.594 [0.347, 0.810] | +0.157 | +0.009 | 0.42 | 0.395 |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Total goals over 4.5 | no | 0.8400 | 0.901 [0.806, 0.967] | +0.051 | +0.008 | 0.84 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Total goals over 1.5 | no | 0.2200 | 0.336 [0.189, 0.479] | +0.104 | +0.007 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Total goals over 2.5 | no | 0.4600 | 0.592 [0.411, 0.745] | +0.114 | +0.007 | 0.46 | - |  | RESEARCH_CANDIDATE |
@@ -60,15 +60,13 @@ model board generated 2026-11-08T15:13:15.649441Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 289
-action_NO_QUOTE: 52
+action_NO_EDGE: 288
+action_NO_QUOTE: 53
 action_RESEARCH_CANDIDATE: 27
 contract_sides: 368
 fixtures: 12
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
-
-Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
