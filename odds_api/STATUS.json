@@ -1,10 +1,36 @@
 {
-  "batch_id": "kd-20261108T113004Z",
-  "captured_at": "2026-11-08T11:33:10.124636Z",
+  "batch_id": "kd-20261108T114502Z",
+  "captured_at": "2026-11-08T11:48:07.387007Z",
   "credits_charged": 0,
-  "eligible_fixtures": 0,
+  "eligible_fixtures": 6,
   "no_sport_key": [],
   "paid_calls": 0,
+  "per_sport": {
+    "soccer_spain_la_liga": {
+      "dropped_at_spend": [
+        [
+          "fx:esp.la_liga:2026-27:esp.elche:esp.real_betis:matchday_12",
+          "KICKOFF_MISMATCH"
+        ]
+      ],
+      "fixtures": 6,
+      "join": {
+        "ambiguous": 0,
+        "events": 1,
+        "joined": 1,
+        "unjoined_fixtures": [
+          "fx:esp.la_liga:2026-27:esp.atletico_madrid:esp.barcelona:matchday_12",
+          "fx:esp.la_liga:2026-27:esp.celta_vigo:esp.levante:matchday_12",
+          "fx:esp.la_liga:2026-27:esp.real_sociedad:esp.rayo_vallecano:matchday_12",
+          "fx:esp.la_liga:2026-27:esp.valencia:esp.real_madrid:matchday_12",
+          "fx:esp.la_liga:2026-27:esp.villarreal:esp.getafe:matchday_12"
+        ],
+        "unresolved_names": []
+      },
+      "status": "BLOCKED_BUDGET_GUARD:NO_VALID_WINDOW_AT_SPEND"
+    }
+  },
+  "remaining_after": 19751,
   "snapshots": 0,
-  "status": "NOTHING_ELIGIBLE"
+  "status": "OK"
 }
