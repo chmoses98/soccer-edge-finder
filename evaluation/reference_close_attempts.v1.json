@@ -1,10 +1,10 @@
 {
  "counts": {
+  "MISSED_DISPATCHER_CLOSE": 86,
   "DISPATCHER_CLOSE_NO_ATTEMPT": 612,
+  "PINNACLE_VALID_CLOSE": 62,
   "CLOSE_BLOCKED_BUDGET": 16,
-  "PINNACLE_VALID_CLOSE": 61,
-  "PINNACLE_QUOTED_NOTHING": 2,
-  "MISSED_DISPATCHER_CLOSE": 86
+  "PINNACLE_QUOTED_NOTHING": 2
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.belgrano": {
@@ -3131,6 +3131,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261031T024502Z"
+  },
+  "fx:mex.liga_mx:2026:mex.pumas:mex.america": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261108T025500Z"
   },
   "fx:mex.liga_mx:2026:mex.pumas:mex.cruz_azul": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
