@@ -1,161 +1,63 @@
 {
   "by_horizon": {
     "120": {
-      "achieved_minutes_median": 122.77,
-      "achieved_minutes_p10": 117.78,
+      "achieved_minutes_median": 123.07,
+      "achieved_minutes_p10": 117.87,
       "achieved_minutes_p90": 126.47,
-      "delivered": 757,
-      "delivery_rate": 0.9265605875152999,
+      "delivered": 775,
+      "delivery_rate": 0.9281437125748503,
       "lateness_minutes_max": 64.28,
-      "lateness_minutes_median": -2.77,
+      "lateness_minutes_median": -3.07,
       "missed": 60
     },
     "15": {
       "achieved_minutes_median": 11.96,
       "achieved_minutes_p10": 10.54,
       "achieved_minutes_p90": 13.48,
-      "delivered": 686,
-      "delivery_rate": 0.8727735368956743,
+      "delivered": 700,
+      "delivery_rate": 0.875,
       "lateness_minutes_max": 14.64,
       "lateness_minutes_median": 3.04,
       "missed": 100
     },
     "30": {
-      "achieved_minutes_median": 26.97,
-      "achieved_minutes_p10": 24.8,
-      "achieved_minutes_p90": 28.95,
-      "delivered": 684,
-      "delivery_rate": 0.8691232528589581,
+      "achieved_minutes_median": 26.91,
+      "achieved_minutes_p10": 24.86,
+      "achieved_minutes_p90": 28.92,
+      "delivered": 698,
+      "delivery_rate": 0.8714107365792759,
       "lateness_minutes_max": 16.98,
-      "lateness_minutes_median": 3.05,
+      "lateness_minutes_median": 3.07,
       "missed": 103
     },
     "5": {
       "achieved_minutes_median": 2.06,
-      "achieved_minutes_p10": 0.07,
+      "achieved_minutes_p10": 0.33,
       "achieved_minutes_p90": 2.54,
-      "delivered": 686,
-      "delivery_rate": 0.875,
+      "delivered": 700,
+      "delivery_rate": 0.8771929824561403,
       "lateness_minutes_max": 9.28,
       "lateness_minutes_median": 2.94,
       "missed": 98
     },
     "60": {
       "achieved_minutes_median": 61.1,
-      "achieved_minutes_p10": 56.82,
+      "achieved_minutes_p10": 56.84,
       "achieved_minutes_p90": 62.24,
-      "delivered": 704,
-      "delivery_rate": 0.8855345911949686,
+      "delivered": 728,
+      "delivery_rate": 0.8888888888888888,
       "lateness_minutes_max": 31.12,
-      "lateness_minutes_median": -1.1,
+      "lateness_minutes_median": -1.08,
       "missed": 91
     }
   },
-  "delivered_total": 3517,
-  "delivery_rate_total": 0.8861174099269338,
-  "fixtures_tracked": 817,
-  "generated_at": "2026-11-08T12:24:53Z",
+  "delivered_total": 3601,
+  "delivery_rate_total": 0.8884776708610905,
+  "fixtures_tracked": 835,
+  "generated_at": "2026-11-08T16:04:56Z",
   "missed_total": 452,
-  "n_pending_fixtures": 39,
+  "n_pending_fixtures": 25,
   "pending_fixtures": [
-    {
-      "competition_id": "esp.la_liga",
-      "fixture_id": "fx:esp.la_liga:2026-27:esp.elche:esp.real_betis",
-      "kickoff_utc": "2026-11-08T13:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "fra.ligue_1",
-      "fixture_id": "fx:fra.ligue_1:2026-27:fra.rennes:fra.lille:matchday_10",
-      "kickoff_utc": "2026-11-08T14:00:00Z",
-      "markets_discovered": 77,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "ita.serie_a",
-      "fixture_id": "fx:ita.serie_a:2026-27:ita.monza:ita.atalanta:matchday_11",
-      "kickoff_utc": "2026-11-08T14:00:00Z",
-      "markets_discovered": 77,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "ita.serie_a",
-      "fixture_id": "fx:ita.serie_a:2026-27:ita.genoa:ita.milan:matchday_11",
-      "kickoff_utc": "2026-11-08T14:00:00Z",
-      "markets_discovered": 77,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.brighton:eng.brentford",
-      "kickoff_utc": "2026-11-08T14:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.crystal_palace:eng.liverpool",
-      "kickoff_utc": "2026-11-08T14:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.ipswich:eng.bournemouth",
-      "kickoff_utc": "2026-11-08T14:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.sunderland:eng.chelsea",
-      "kickoff_utc": "2026-11-08T14:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "fra.ligue_1",
-      "fixture_id": "fx:fra.ligue_1:2026-27:fra.rennes:fra.lille",
-      "kickoff_utc": "2026-11-08T14:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "ita.serie_a",
-      "fixture_id": "fx:ita.serie_a:2026-27:ita.genoa:ita.milan",
-      "kickoff_utc": "2026-11-08T14:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "ita.serie_a",
-      "fixture_id": "fx:ita.serie_a:2026-27:ita.monza:ita.atalanta",
-      "kickoff_utc": "2026-11-08T14:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "ger.bundesliga",
-      "fixture_id": "fx:ger.bundesliga:2026-27:ger.koln:ger.leverkusen:matchday_9",
-      "kickoff_utc": "2026-11-08T14:30:00Z",
-      "markets_discovered": 77,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "ger.bundesliga",
-      "fixture_id": "fx:ger.bundesliga:2026-27:ger.koln:ger.leverkusen",
-      "kickoff_utc": "2026-11-08T14:30:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "esp.la_liga",
-      "fixture_id": "fx:esp.la_liga:2026-27:esp.real_sociedad:esp.rayo_vallecano",
-      "kickoff_utc": "2026-11-08T15:15:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
     {
       "competition_id": "fra.ligue_1",
       "fixture_id": "fx:fra.ligue_1:2026-27:fra.brest:fra.lyon:matchday_10",
