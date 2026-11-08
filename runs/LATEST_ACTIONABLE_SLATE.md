@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261108T010335Z-0c0fef` · generated 2026-11-08T01:03:35.024560Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261108T011832Z-6a7b6a` · generated 2026-11-08T01:18:32.202881Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-08T01:00:18.843487Z (CURRENT at publish; CURRENT until 2026-11-08T01:20:18.843487Z, STALE after 2026-11-08T01:30:18.843487Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-08T01:15:20.707461Z (CURRENT at publish; CURRENT until 2026-11-08T01:35:20.707461Z, STALE after 2026-11-08T01:45:20.707461Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-07T23:58:27.873083Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.40s
+model board generated 2026-11-07T23:58:27.873083Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.57s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -36,26 +36,27 @@ model board generated 2026-11-07T23:58:27.873083Z · simulations this update: 0 
 | 2026-11-08T18:30:00Z | TSG Hoffenheim vs Schalke 04 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T19:45:00Z | Lens vs Marseille (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T19:45:00Z | Fiorentina vs Juventus (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-08T22:30:00Z | Central Córdoba vs Lanús (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-08T22:30:00Z | Central Córdoba vs Lanús (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-09T02:10:00Z | León vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (23; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (24; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Angers vs Nice | Result: away | no | 0.5300 | 0.741 [0.586, 0.869] | +0.194 | +0.110 | 0.64 | - | * | RESEARCH_CANDIDATE |
+| Angers vs Nice | Result: away | no | 0.5400 | 0.741 [0.586, 0.869] | +0.184 | +0.100 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Angers vs Nice | Result: home | yes | 0.2700 | 0.462 [0.282, 0.638] | +0.178 | +0.059 | 0.32 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | btts | no | 0.4300 | 0.577 [0.443, 0.696] | +0.129 | +0.049 | 0.47 | - | * | RESEARCH_CANDIDATE |
+| Pumas UNAM vs Club América | Result: home | yes | 0.2900 | 0.427 [0.274, 0.585] | +0.122 | +0.020 | 0.3 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Total goals over 3.5 | no | 0.6700 | 0.785 [0.635, 0.900] | +0.099 | +0.020 | 0.69 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Total goals over 1.5 | no | 0.2100 | 0.336 [0.189, 0.479] | +0.114 | +0.018 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Total goals over 4.5 | no | 0.8300 | 0.901 [0.806, 0.967] | +0.061 | +0.017 | 0.84 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Total goals over 2.5 | no | 0.4500 | 0.592 [0.411, 0.745] | +0.124 | +0.017 | 0.46 | - |  | RESEARCH_CANDIDATE |
+| Pumas UNAM vs Club América | Result: away | no | 0.5400 | 0.661 [0.510, 0.795] | +0.104 | +0.016 | 0.55 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | away team total over 0.5 | no | 0.3300 | 0.446 [0.317, 0.570] | +0.101 | +0.015 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | btts | no | 0.4200 | 0.530 [0.411, 0.646] | +0.093 | +0.015 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 3.5 | no | 0.6700 | 0.774 [0.641, 0.886] | +0.089 | +0.012 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 4.5 | no | 0.8300 | 0.896 [0.810, 0.961] | +0.056 | +0.012 | 0.84 | - |  | RESEARCH_CANDIDATE |
-| Pumas UNAM vs Club América | Result: home | yes | 0.3000 | 0.427 [0.274, 0.585] | +0.112 | +0.010 | 0.3 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Club América | home wins by more than 1.5 | yes | 0.1300 | 0.231 [0.115, 0.366] | +0.093 | +0.009 | 0.13 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 2.5 | no | 0.4500 | 0.575 [0.417, 0.723] | +0.108 | +0.008 | 0.45 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | First-half exact score 0-0 (home-away) | yes | 0.2700 | 0.363 [0.238, 0.482] | +0.079 | +0.006 | 0.27 | - | * | RESEARCH_CANDIDATE |
@@ -71,9 +72,9 @@ model board generated 2026-11-07T23:58:27.873083Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 491
+action_NO_EDGE: 490
 action_NO_QUOTE: 340
-action_RESEARCH_CANDIDATE: 23
+action_RESEARCH_CANDIDATE: 24
 contract_sides: 854
 fixtures: 27
 fixtures_model_invalidated: 0
