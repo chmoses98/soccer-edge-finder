@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261108T024430Z-ba9c57` · generated 2026-11-08T02:44:30.285693Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261108T025810Z-6f9692` · generated 2026-11-08T02:58:10.677542Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-08T02:41:21.799609Z (CURRENT at publish; CURRENT until 2026-11-08T03:01:21.799609Z, STALE after 2026-11-08T03:11:21.799609Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-08T02:55:00.074629Z (CURRENT at publish; CURRENT until 2026-11-08T03:15:00.074629Z, STALE after 2026-11-08T03:25:00.074629Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-08T02:09:35.786173Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.40s
+model board generated 2026-11-08T02:09:35.786173Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.51s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-08T02:09:35.786173Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-08T03:10:00Z | Pumas UNAM vs Club América (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 77 | 0 |
+| 2026-11-08T03:10:00Z | Pumas UNAM vs Club América (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT close | CURRENT | 77 | 0 |
 | 2026-11-08T11:30:00Z | Napoli vs Lazio (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T12:00:00Z | Atlético Madrid vs FC Barcelona (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T12:00:00Z | Celta Vigo vs Levante (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -48,13 +48,13 @@ model board generated 2026-11-08T02:09:35.786173Z · simulations this update: 0 
 | Angers vs Nice | Result: home | yes | 0.2700 | 0.462 [0.282, 0.638] | +0.178 | +0.059 | 0.32 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | btts | no | 0.4300 | 0.577 [0.443, 0.696] | +0.129 | +0.049 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | away team total over 1.5 | no | 0.5300 | 0.664 [0.520, 0.795] | +0.116 | +0.030 | 0.55 | - | * | RESEARCH_CANDIDATE |
+| León vs Guadalajara | btts | no | 0.4100 | 0.530 [0.411, 0.646] | +0.103 | +0.025 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | away team total over 2.5 | no | 0.7900 | 0.872 [0.779, 0.947] | +0.070 | +0.022 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Total goals over 3.5 | no | 0.6700 | 0.785 [0.635, 0.900] | +0.099 | +0.020 | 0.69 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Total goals over 1.5 | no | 0.2100 | 0.336 [0.189, 0.479] | +0.114 | +0.018 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Total goals over 4.5 | no | 0.8300 | 0.901 [0.806, 0.967] | +0.061 | +0.017 | 0.84 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Total goals over 2.5 | no | 0.4500 | 0.592 [0.411, 0.745] | +0.124 | +0.017 | 0.46 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | away team total over 0.5 | no | 0.3300 | 0.446 [0.317, 0.570] | +0.101 | +0.015 | 0.34 | - | * | RESEARCH_CANDIDATE |
-| León vs Guadalajara | btts | no | 0.4200 | 0.530 [0.411, 0.646] | +0.093 | +0.015 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 3.5 | no | 0.6700 | 0.774 [0.641, 0.886] | +0.089 | +0.012 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 4.5 | no | 0.8300 | 0.896 [0.810, 0.961] | +0.056 | +0.012 | 0.84 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 1.5 | no | 0.2100 | 0.319 [0.192, 0.446] | +0.097 | +0.010 | 0.21 | - |  | RESEARCH_CANDIDATE |
@@ -73,8 +73,8 @@ model board generated 2026-11-08T02:09:35.786173Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 488
-action_NO_QUOTE: 341
+action_NO_EDGE: 489
+action_NO_QUOTE: 340
 action_RESEARCH_CANDIDATE: 25
 contract_sides: 854
 fixtures: 27
