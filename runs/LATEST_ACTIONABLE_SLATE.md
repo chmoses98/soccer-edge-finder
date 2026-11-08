@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261108T033807Z-9010f8` · generated 2026-11-08T03:38:07.769953Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261108T035308Z-c2b592` · generated 2026-11-08T03:53:08.993547Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-08T03:35:01.854825Z (CURRENT at publish; CURRENT until 2026-11-08T03:55:01.854825Z, STALE after 2026-11-08T04:05:01.854825Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-08T03:50:03.152758Z (CURRENT at publish; CURRENT until 2026-11-08T04:10:03.152758Z, STALE after 2026-11-08T04:20:03.152758Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-08T02:09:35.786173Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.31s
 
@@ -36,10 +36,10 @@ model board generated 2026-11-08T02:09:35.786173Z · simulations this update: 0 
 | 2026-11-08T19:45:00Z | Lens vs Marseille (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T19:45:00Z | Fiorentina vs Juventus (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T22:30:00Z | Central Córdoba vs Lanús (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-09T02:10:00Z | León vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-09T02:10:00Z | León vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (26; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (27; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -69,13 +69,14 @@ model board generated 2026-11-08T02:09:35.786173Z · simulations this update: 0 
 | Querétaro vs Puebla | Total goals over 0.5 | no | 0.0600 | 0.113 [0.050, 0.180] | +0.049 | +0.002 | 0.06 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Exact score 0-0 (home-away) | yes | 0.0600 | 0.105 [0.052, 0.167] | +0.041 | +0.002 | 0.06 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Exact score 1-0 (home-away) | yes | 0.1000 | 0.141 [0.086, 0.192] | +0.035 | +0.001 | 0.1 | - |  | RESEARCH_CANDIDATE |
+| León vs Guadalajara | away wins by more than 1.5 | no | 0.7700 | 0.838 [0.736, 0.923] | +0.056 | +0.001 | 0.77 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 348
+action_NO_EDGE: 347
 action_NO_QUOTE: 326
-action_RESEARCH_CANDIDATE: 26
+action_RESEARCH_CANDIDATE: 27
 contract_sides: 700
 fixtures: 26
 fixtures_model_invalidated: 0
