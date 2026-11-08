@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-08T01:53:43.599373+00:00",
-  "events": 649,
-  "events_skipped_unmapped": 406,
+  "as_of": "2026-11-08T09:18:51.029132+00:00",
+  "events": 650,
+  "events_skipped_unmapped": 407,
   "fixtures_mapped": 243,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=42"
+      "weather_stopped:consecutive_failures:skipped=34"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 146,
+    "captured": 147,
     "events": 150,
     "failures": [],
-    "published_post": 19,
-    "published_pre_kickoff": 2,
-    "unchanged": 4,
-    "unpublished": 129
+    "published_post": 36,
+    "published_pre_kickoff": 0,
+    "unchanged": 3,
+    "unpublished": 114
   },
   "map_proposals": {
     "bel.1": {
@@ -314,10 +314,12 @@
         "14561": "Chinese Taipei",
         "204": "Bolivia",
         "2405": "Malaysia",
+        "4375": "Iraq",
         "4380": "Syria",
         "4381": "Bahrain",
         "4384": "Singapore",
         "4385": "India",
+        "4388": "Lebanon",
         "4397": "United Arab Emirates",
         "454": "Russia",
         "4895": "Indonesia",
@@ -590,7 +592,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 3,
+  "results_appended": 11,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -877,10 +879,12 @@
     "400": "Stockport County",
     "401": "Walsall",
     "402": "Rotherham United",
+    "4375": "Iraq",
     "4380": "Syria",
     "4381": "Bahrain",
     "4384": "Singapore",
     "4385": "India",
+    "4388": "Lebanon",
     "4397": "United Arab Emirates",
     "4489": "Oxford City",
     "454": "Russia",
@@ -932,17 +936,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 9,
-    "events": 54,
+    "captured": 10,
+    "events": 47,
     "failures": [
-      "401860424: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-16.6786&longitude=-49.2539&hourly=",
-      "401860426: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Recife&count=5&language=en&form",
-      "401860422: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Sao%20Joao%20del%20Rei&count=5&"
+      "401850691: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Chill\u00e1n&count=5&language=en&for",
+      "401850686: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rancagua&count=5&language=en&fo",
+      "401850684: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=La%20Calera&count=5&language=en"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 42,
+    "skipped": 34,
     "stopped": "consecutive_failures"
   }
 }
