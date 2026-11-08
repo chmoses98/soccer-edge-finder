@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261108T215807Z-5b2fff` · generated 2026-11-08T21:58:07.410598Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261108T220041Z-c064d1` · generated 2026-11-08T22:00:41.904849Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-08T21:55:04.900012Z (CURRENT at publish; CURRENT until 2026-11-08T22:15:04.900012Z, STALE after 2026-11-08T22:25:04.900012Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-08T21:57:28.625883Z (CURRENT at publish; CURRENT until 2026-11-08T22:17:28.625883Z, STALE after 2026-11-08T22:27:28.625883Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-08T17:14:17.789821Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.11s
+model board generated 2026-11-08T21:33:59.510963Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.15s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -23,8 +23,8 @@ model board generated 2026-11-08T17:14:17.789821Z · simulations this update: 0 
 | León vs Guadalajara | away team total over 1.5 | no | 0.5100 | 0.664 [0.527, 0.794] | +0.137 | +0.052 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | btts | no | 0.4400 | 0.577 [0.458, 0.694] | +0.120 | +0.043 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | away team total over 2.5 | no | 0.7700 | 0.872 [0.785, 0.947] | +0.090 | +0.042 | 0.81 | - |  | RESEARCH_CANDIDATE |
+| León vs Guadalajara | away team total over 0.5 | no | 0.1900 | 0.314 [0.203, 0.432] | +0.113 | +0.037 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | btts | no | 0.4000 | 0.533 [0.407, 0.651] | +0.116 | +0.034 | 0.43 | - | * | RESEARCH_CANDIDATE |
-| León vs Guadalajara | away team total over 0.5 | no | 0.2000 | 0.314 [0.203, 0.432] | +0.102 | +0.027 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 3.5 | no | 0.6600 | 0.775 [0.647, 0.885] | +0.100 | +0.023 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 2.5 | no | 0.4400 | 0.576 [0.423, 0.720] | +0.119 | +0.020 | 0.45 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | away team total over 0.5 | no | 0.3300 | 0.443 [0.312, 0.571] | +0.097 | +0.017 | 0.34 | - | * | RESEARCH_CANDIDATE |
