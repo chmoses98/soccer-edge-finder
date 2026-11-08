@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261108T042310Z-0f665c` · generated 2026-11-08T04:23:10.858475Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261108T043506Z-60f9e0` · generated 2026-11-08T04:35:06.101167Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-08T04:20:04.827393Z (CURRENT at publish; CURRENT until 2026-11-08T04:40:04.827393Z, STALE after 2026-11-08T04:50:04.827393Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-08T04:31:41.639136Z (CURRENT at publish; CURRENT until 2026-11-08T04:51:41.639136Z, STALE after 2026-11-08T05:01:41.639136Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-07T23:16:52.131456Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.27s
+model board generated 2026-11-08T04:34:56.381500Z · simulations this update: 19 · Odds API calls this update: 0 (credits 0) · reprice 0.23s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -18,7 +18,7 @@ model board generated 2026-11-07T23:16:52.131456Z · simulations this update: 0 
 | 2026-11-08T12:00:00Z | Elche vs Real Betis (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T12:00:00Z | Espanyol vs Deportivo La Coruña (esp.la_liga) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 71 | 0 |
 | 2026-11-08T12:00:00Z | Málaga vs Racing Santander (esp.la_liga) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-08T12:00:00Z | Osasuna vs Athletic Club (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-08T12:00:00Z | Osasuna vs Athletic Club (esp.la_liga) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T12:00:00Z | Real Sociedad vs Rayo Vallecano (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T12:00:00Z | Valencia vs Real Madrid (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 59 | 0 |
 | 2026-11-08T12:00:00Z | Villarreal vs Getafe (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -39,20 +39,20 @@ model board generated 2026-11-07T23:16:52.131456Z · simulations this update: 0 
 | 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-09T02:10:00Z | León vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (26; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (25; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Angers vs Nice | Result: away | no | 0.5400 | 0.741 [0.586, 0.869] | +0.184 | +0.100 | 0.64 | - | * | RESEARCH_CANDIDATE |
-| Angers vs Nice | Result: home | yes | 0.2700 | 0.462 [0.282, 0.638] | +0.178 | +0.059 | 0.32 | - |  | RESEARCH_CANDIDATE |
+| Angers vs Nice | Result: away | no | 0.5400 | 0.741 [0.586, 0.870] | +0.184 | +0.100 | 0.64 | - | * | RESEARCH_CANDIDATE |
+| Angers vs Nice | Result: home | yes | 0.2700 | 0.462 [0.282, 0.639] | +0.178 | +0.059 | 0.32 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | btts | no | 0.4300 | 0.577 [0.443, 0.696] | +0.129 | +0.049 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | away team total over 1.5 | no | 0.5300 | 0.664 [0.520, 0.795] | +0.116 | +0.030 | 0.55 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Puebla | Total goals over 2.5 | no | 0.4400 | 0.592 [0.411, 0.745] | +0.134 | +0.027 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | btts | no | 0.4100 | 0.530 [0.411, 0.646] | +0.103 | +0.025 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | away team total over 2.5 | no | 0.7900 | 0.872 [0.779, 0.947] | +0.070 | +0.022 | 0.81 | - |  | RESEARCH_CANDIDATE |
-| Querétaro vs Puebla | Total goals over 3.5 | no | 0.6700 | 0.785 [0.635, 0.900] | +0.099 | +0.020 | 0.69 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Puebla | Total goals over 3.5 | no | 0.6700 | 0.785 [0.635, 0.900] | +0.099 | +0.020 | 0.69 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Total goals over 1.5 | no | 0.2100 | 0.336 [0.189, 0.479] | +0.114 | +0.018 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Total goals over 4.5 | no | 0.8300 | 0.901 [0.806, 0.967] | +0.061 | +0.017 | 0.84 | - |  | RESEARCH_CANDIDATE |
-| Querétaro vs Puebla | Total goals over 2.5 | no | 0.4500 | 0.592 [0.411, 0.745] | +0.124 | +0.017 | 0.46 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | away team total over 0.5 | no | 0.3300 | 0.446 [0.317, 0.570] | +0.101 | +0.015 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 3.5 | no | 0.6700 | 0.774 [0.641, 0.886] | +0.089 | +0.012 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 4.5 | no | 0.8300 | 0.896 [0.810, 0.961] | +0.056 | +0.012 | 0.84 | - |  | RESEARCH_CANDIDATE |
@@ -67,15 +67,14 @@ model board generated 2026-11-07T23:16:52.131456Z · simulations this update: 0 
 | Querétaro vs Puebla | Exact score 0-0 (home-away) | yes | 0.0600 | 0.113 [0.050, 0.180] | +0.049 | +0.002 | 0.06 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Total goals over 0.5 | no | 0.0600 | 0.113 [0.050, 0.180] | +0.049 | +0.002 | 0.06 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Exact score 0-0 (home-away) | yes | 0.0600 | 0.105 [0.052, 0.167] | +0.041 | +0.002 | 0.06 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Puebla | Exact score 1-0 (home-away) | yes | 0.1000 | 0.141 [0.086, 0.192] | +0.035 | +0.001 | 0.1 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | away wins by more than 1.5 | no | 0.7700 | 0.838 [0.736, 0.923] | +0.056 | +0.001 | 0.77 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_NO_EDGE: 348
-action_NO_QUOTE: 326
-action_RESEARCH_CANDIDATE: 26
+action_NO_QUOTE: 327
+action_RESEARCH_CANDIDATE: 25
 contract_sides: 700
 fixtures: 26
 fixtures_model_invalidated: 0
