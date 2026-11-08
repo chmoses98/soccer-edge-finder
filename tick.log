@@ -830,3 +830,188 @@ These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW
 - Austin FC vs Portland Timbers (Major League Soccer) 2026-11-08T00:00:00Z · markets 77/77 evaluated · lineups unknown · xG 1.70-1.35 · 1X2 45%/24%/31%
 - Toluca vs Monterrey (Liga MX) 2026-11-08T01:00:00Z · markets 77/77 evaluated · lineups unknown · xG 2.06-1.07 · 1X2 59%/22%/20%
 - Tigres UANL vs Cruz Azul (Liga MX) 2026-11-08T01:00:00Z · markets 77/77 evaluated · lineups unknown · xG 1.28-1.35 · 1X2 35%/27%/38%
+
+{
+  "outputs": {
+    "json": "work/runs/_pending/run_output.v1.json",
+    "md": "work/runs/_pending/RUN_SOCCER.md",
+    "contracts": "work/runs/_pending/priced_contracts.json",
+    "coverage": "work/runs/_pending/coverage.json",
+    "diagnostics": "work/runs/_pending/coverage_diagnostics.json"
+  },
+  "simulated": [
+    "fx:usa.mls:2026:usa.austin:usa.portland_timbers",
+    "fx:mex.liga_mx:2026:mex.toluca:mex.monterrey",
+    "fx:mex.liga_mx:2026:mex.tigres:mex.cruz_azul"
+  ],
+  "repriced": [],
+  "archived_records": 231
+}
+[dispatch] holding 8.1 min (next window opens in 25.1 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261108T001319Z",
+  "complete": true,
+  "discovered": 5730,
+  "written": 1808,
+  "path": "work/snapshots/2026-11-08/cap-20261108T001319Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261108T001320Z-cc3350", "mode": "reprice_only", "fixtures": 30, "contract_sides": 1190, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.696, "price_changes_vs_previous": 59}
+[dispatch] holding 9.7 min (next window opens in 11.6 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261108T002819Z",
+  "complete": true,
+  "discovered": 5731,
+  "written": 1698,
+  "path": "work/snapshots/2026-11-08/cap-20261108T002819Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261108T002820Z-04bf68", "mode": "reprice_only", "fixtures": 30, "contract_sides": 1190, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.572, "price_changes_vs_previous": 60}
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261108T003334Z",
+  "complete": true,
+  "discovered": 5725,
+  "written": 1169,
+  "path": "work/snapshots/2026-11-08/cap-20261108T003334Z.jsonl"
+}
+{
+  "reference_probabilities": 235,
+  "observed_at": "2026-11-07 23:01:56.205529+00:00",
+  "groups": 450,
+  "unmapped_fixture_groups": 215,
+  "incomplete_groups": 0,
+  "snapshots": 846,
+  "provider_notes": [
+    "160 rows, 70 skipped (unmapped division/team)",
+    "skipped_by_division={'B1': 9, 'D2': 9, 'F2': 9, 'G1': 7, 'I2': 10, 'N1': 2, 'SC1': 5, 'SC2': 5, 'SC3': 5, 'SP2': 8, 'T1': 1}",
+    "unknown_teams={'N1:For Sittard': 1, 'N1:Nijmegen': 1, 'T1:Goztep': 1}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-11-08T00:33:37.629668Z", "batch_id": "kd-20261108T003021Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-11-08T00:33:37.654077+00:00",
+ "leagues": [
+  "arg.1",
+  "mex.1"
+ ],
+ "events": 3,
+ "fixtures_mapped": 3,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 2,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 3,
+  "captured": 3,
+  "unchanged": 0,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 3,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 3,
+  "captured": 2,
+  "no_venue": 0,
+  "geocode_miss": 1,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261108T003342Z-4c1920", "mode": "reprice_only", "fixtures": 30, "contract_sides": 1190, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.556, "price_changes_vs_previous": 33}
+[dispatch] holding 9.3 min (next window opens in 7.3 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261108T004814Z",
+  "complete": true,
+  "discovered": 5773,
+  "written": 1580,
+  "path": "work/snapshots/2026-11-08/cap-20261108T004814Z.jsonl"
+}
+{
+  "reference_probabilities": 235,
+  "observed_at": "2026-11-07 23:01:56.205529+00:00",
+  "groups": 450,
+  "unmapped_fixture_groups": 215,
+  "incomplete_groups": 0,
+  "snapshots": 846,
+  "provider_notes": [
+    "160 rows, 70 skipped (unmapped division/team)",
+    "skipped_by_division={'B1': 9, 'D2': 9, 'F2': 9, 'G1': 7, 'I2': 10, 'N1': 2, 'SC1': 5, 'SC2': 5, 'SC3': 5, 'SP2': 8, 'T1': 1}",
+    "unknown_teams={'N1:For Sittard': 1, 'N1:Nijmegen': 1, 'T1:Goztep': 1}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-11-08T00:48:17.861162Z", "batch_id": "kd-20261108T004501Z", "credits_charged": 6, "paid_calls": 2, "snapshots": 21, "no_sport_key": [], "eligible_fixtures": 3, "per_sport": {"soccer_mexico_ligamx": {"fixtures": 2, "join": {"events": 4, "joined": 2, "ambiguous": 0, "unresolved_names": [], "unjoined_fixtures": []}, "status": "OK", "credits": 3, "snapshots": 14, "incomplete_markets": 0, "close_fixtures": 2, "entry_fixtures": 0}, "soccer_argentina_primera_division": {"fixtures": 1, "join": {"events": 1, "joined": 1, "ambiguous": 0, "unresolved_names": [], "unjoined_fixtures": []}, "status": "OK", "credits": 3, "snapshots": 7, "incomplete_markets": 0, "close_fixtures": 1, "entry_fixtures": 0}}, "remaining_after": 19763, "status": "OK"}
+{
+ "as_of": "2026-11-08T00:48:21.944756+00:00",
+ "leagues": [
+  "arg.1",
+  "mex.1"
+ ],
+ "events": 3,
+ "fixtures_mapped": 3,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 2,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 3,
+  "captured": 0,
+  "unchanged": 3,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 3,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 3,
+  "captured": 2,
+  "no_venue": 0,
+  "geocode_miss": 1,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 0 | proposals: {}
+[data] historical: 3458 matches from club_football_match_data; flags=['ok']
+[data] eng.premier_league 2026-27: 380 fixtures, 45 results (25 new vs historical)
+[data] esp.la_liga 2026-27: 380 fixtures, 64 results (36 new vs historical)
+[data] ger.bundesliga 2026-27: 306 fixtures, 33 results (25 new vs historical)
+[data] ita.serie_a 2026-27: 380 fixtures, 50 results (30 new vs historical)
+[data] fra.ligue_1 2026-27: 306 fixtures, 41 results (24 new vs historical)
+[data] usa.mls: espn 15 fixtures, 1270 pooled results (usa.1)
+[data] mex.liga_mx: espn 10 fixtures, 741 pooled results (mex.1)
+[data] bra.serie_a: espn 9 fixtures, 718 pooled results (bra.1)
+[data] arg.primera: espn 15 fixtures, 1225 pooled results (arg.1)
+[data] uefa.nations_league: espn 26 fixtures, 1142 pooled results (uefa.nations,fifa.friendly,fifa.worldq.uefa,fifa.worldq.conmebol,fifa.worldq.concacaf,fifa.worldq.afc,fifa.worldq.caf,uefa.euroq,concacaf.nations.league)
+[data] fifa.friendly: espn 7 fixtures, 1142 pooled results (uefa.nations,fifa.friendly,fifa.worldq.uefa,fifa.worldq.conmebol,fifa.worldq.concacaf,fifa.worldq.afc,fifa.worldq.caf,uefa.euroq,concacaf.nations.league)
+[data] concacaf.nations_league: espn 16 fixtures, 1142 pooled results (uefa.nations,fifa.friendly,fifa.worldq.uefa,fifa.worldq.conmebol,fifa.worldq.concacaf,fifa.worldq.afc,fifa.worldq.caf,uefa.euroq,concacaf.nations.league)
+[data] fifa.world_cup_qualifiers: espn 0 fixtures, 1142 pooled results (uefa.nations,fifa.friendly,fifa.worldq.uefa,fifa.worldq.conmebol,fifa.worldq.concacaf,fifa.worldq.afc,fifa.worldq.caf,uefa.euroq,concacaf.nations.league)
+[data] uefa.euro_qualifiers: espn 0 fixtures, 1142 pooled results (uefa.nations,fifa.friendly,fifa.worldq.uefa,fifa.worldq.conmebol,fifa.worldq.concacaf,fifa.worldq.afc,fifa.worldq.caf,uefa.euroq,concacaf.nations.league)
+[kalshi] fast mode: sweeping 253 series with markets at the last full discovery
+[kalshi] fast reconciliation: {"complete_relative_to_full": true, "evidence_level": "series"}
+[kalshi] {"run_id": "disc-20261108T004501Z-3b0ccf", "complete": true, "series_total": 15919, "series_by_ownership": {"not_soccer": 14291, "soccer": 1491, "ambiguous": 137}, "series_swept": 361, "series_ambiguous_unswept": 135, "series_skipped_fast_mode": 1132, "series_ambiguous_unswept_tickers": ["KX1HOMEGAME", "KX1STHOMEGAME", "KXACQUIREMANU", "KXAFCA", "KXAFCAC1H", "KXAFCAC1HBTTS", "KXAFCAC1HSPREAD", "KXAFCAC1HTOTAL", "KXAFCACADVANCE", "KXAFCACBTTS", "KXAFCACFTTS", "KXAFCACGAME", "KXAFCACMOV", "KXAFCACSCORE", "KXAFCACSPREAD", "KXAFCACTEAMTOTAL", "KXAFCACTOTAL", "KXAFCCL1H", "KXAFCCL1HBTTS", "KXAFCCL1HSPREAD", "KXAFCCL1HTOTAL", "KXAFCCL2ADVANCE", "KXAFCCL2BTTS", "KXAFCCL2SPREAD", "KXAFCCL2TOTAL", "KXAFCCLADVANCE", "KXAFCCLBTTS", "KXAFCCLFTTS", "KXAFCCLGAME", "KXAFCCLMOF", "KXAFCCLMOV", "KXAFCCLSCORE", "KXAFCCLSPREAD", "KXAFCCLTEAMTOTAL", "KXAFCCLTOTAL", "KXAFCON", "KXAFCON1H", "KXAFCON1HBTTS", "KXAFCON1HSPREAD", "KXAFCON1HTOTAL", "KXAFCONADVANCE", "KXAFCONBTTS", "KXAFCONFTTS", "KXAFCONGAME", "KXAFCONMOV", "KXAFCONSCORE", "KXAFCONSPREAD", "KXAFCONTEAMTOTAL", "KXAFCONTOTAL", "KXAFLGAME", "KXALEAGUE1H", "KXALEAGUE1HBTTS", "KXALEAGUE1HSPREAD", "KXALEAGUE1HTOTAL", "KXALEAGUEADVANCE", "KXALEAGUEBTTS", "KXALEAGUEGAME", "KXALEAGUESPREAD", "KXALEAGUETEAMTOTAL", "KXALEAGUETOTAL", "KXALLSVENSKANADVANCE", "KXALLSVENSKANBTTS", "KXALLSVENSKANGAME", "KXALLSVENSKANSPREAD", "KXALLSVENSKANTOTAL", "KXALMVP", "KXAPFDDHADVANCE", "KXARCHIVETEST", "KXARGNACBADVANCE", "KXARGPREMDIVADVANCE", "KXARGPREMDIVBTTS", "KXARGPREMDIVGAME", "KXARGPREMDIVSPREAD", "KXARGPREMDIVTOTAL", "KXARKCOACH", "KXARODGRETIRE", "KXARSENALCUPS", "KXASEANADVANCE", "KXASEANBTTS", "KXASEANGAME", "KXASEANSPREAD", "KXASEANTOTAL", "KXATLCOACH", "KXAUBCOACH", "KXBABYNAMEBOY", "KXBABYNAMEGIRL", "KXBALLERLEAGUE", "KXBALLERLEAGUEGAME", "KXBALOGUNPLAY", "KXBELGIANPLADVANCE", "KXBELGIANPLBTTS", "KXBELGIANPLGAME", "KXBELGIANPLSPREAD", "KXBELGIANPLTOTAL", "KXBOLPDIVADVANCE", "KXBOLPDIVGAME", "KXBRASILEIRO1H", "KXBRASILEIRO1HBTTS", "KXBRASILEIRO1HSPREAD", "KXBRASILEIRO1HTOTAL", "KXBRASILEIROADVANCE", "KXBRASILEIROBADVANCE", "KXBRASILEIROBTEAMTOTAL", "KXBRASILEIROC1H", "KXBRASILEIROC1HBTTS", "KXBRASILEIROC1HSPREAD", "KXBRASILEIROC1HTOTAL", "KXBRASILEIROCADVANCE", "KXBRASILEIROCTEAMTOTAL", "KXBRASILEIROFTTS", "KXBRASILEIROMOV", "KXBRASILEIRORELEGATION", "KXBRASILEIROSCORE", "KXBRASILEIROTEAMTOTAL", "KXBRASILEIROTOP", "KXBUNDESLIGA1H", "KXBUNDESLIGA1HBTTS", "KXBUNDESLIGA1HSCORE", "KXBUNDESLIGA1HSPREAD", "KXBUNDESLIGA1HTOTAL", "KXBUNDESLIGA2ADVANCE", "KXBUNDESLIGA2BTTS", "KXBUNDESLIGA2GAME", "KXBUNDESLIGA2H", "KXBUNDESLIGA2HBTTS", "KXBUNDESLIGA2HSPREAD", "KXBUNDESLIGA2HTOTAL", "KXBUNDESLIGA2SPREAD", "KXBUNDESLIGA2TOTAL", "KXBUNDESLIGAADVANCE", "KXBUNDESLIGABTTS", "KXBUNDESLIGACORNERS", "KXBUNDESLIGAFIRSTGOAL", "KXBUNDESLIGAFTTS", "KXBUNDESLIGAGOAL", "KXBUNDESLIGAMOV", "KXBUNDESLIGASCORE", "KXBUNDESLIGASPREAD", "KXBUNDESLIGATCORNERS", "KXBUNDESLIGATEAMTOTAL", "KXBUNDESLIGATOP4", "KXBUNDESLIGATOTAL", "KXCALCOACH", "KXCANIMAKETHIS", "KXCANPLADVANCE", "KXCANPLBTTS", "KXCANPLSPREAD", "KXCANPLTOTAL", "KXCCARCOACH", "KXCFLGAME", "KXCFLSPREAD", "KXCFLTOTAL", "KXCHLLDPADVANCE", "KXCHLLDPBTTS", "KXCHLLDPGAME", "KXCHLLDPSPREAD", "KXCHLLDPTOTAL", "KXCHNL1ADVANCE", "KXCHNL1BTTS", "KXCHNL1SPREAD", "KXCHNL1TOTAL", "KXCHNSLADVANCE", "KXCHNSLBTTS", "KXCHNSLGAME", "KXCHNSLSPREAD", "KXCHNSLTOTAL", "KXCLUBFBTTS", "KXCLUBFGAME", "KXCLUBFSPREAD", "KXCLUBFTOTAL", "KXCLUBWC", "KXCLUBWC1H", "KXCLUBWC1HBTTS", "KXCLUBWC1HSCORE", "KXCLUBWC1HSPREAD", "KXCLUBWC1HTOTAL", "KXCLUBWC2H", "KXCLUBWC2HBTTS", "KXCLUBWC2HSPREAD", "KXCLUBWC2HTOTAL", "KXCLUBWCADVANCE", "KXCLUBWCBTTS", "KXCLUBWCFTTS", "KXCLUBWCGA", "KXCLUBWCGAME", "KXCLUBWCGB", "KXCLUBWCGC", "KXCLUBWCGD", "KXCLUBWCGE", "KXCLUBWCGF", "KXCLUBWCGG", "KXCLUBWCGH", "KXCLUBWCMOF", "KXCLUBWCMOV", "KXCLUBWCSCORE", "KXCLUBWCSPREAD", "KXCLUBWCTEAMTOTAL", "KXCLUBWCTOTAL", "KXCOACHONDATE", "KXCOACHOUTOLEMISS"], "events_discovered": 20354, "contracts_discovered": 5773, "contracts_duplicate_seen": 0, "contracts_by_family": {"btts": 98, "competition_head_to_head": 20, "competition_host": 26, "competition_last_place": 132, "competition_points_margin": 30, "competition_promotion": 24, "competition_qualification": 138, "competition_relegation": 96, "competition_team_points": 384, "competition_top_n": 306, "competition_trophies": 32, "competition_winner": 1052, "exact_score": 365, "first_half_btts": 16, "first_half_exact_score": 176, "first_half_handicap": 32, "first_half_result": 48, "first_half_total": 48, "handicap": 386, "match_result_3way": 930, "match_winner_2way": 4, "player_award": 81, "player_season_leader": 247, "season_player_total": 53, "second_half_result": 39, "soccer_special": 189, "team_total": 87, "total_goals": 571, "tournament_advancement": 160, "unknown": 3}, "contracts_by_competition_code": {"?": 315, "APFDDH": 46, "ARGPREMDIV": 30, "AUTBUNDES": 42, "BELGIANPL": 18, "BRASILEIRO": 133, "BRASILEIROB": 149, "BULFL": 14, "BUNDESLIGA": 204, "BUNDESLIGAW": 31, "CHLLDP": 16, "CHNSL": 16, "CONCACAFGC": 23, "CONCACAFNL": 83, "CONMEBOLLIB": 2, "CONMEBOLSUD": 2, "COPAAMERICA": 25, "COPADELREY": 35, "COPADOBRASIL": 16, "DENSUPERLIGA": 12, "DFBPOKAL": 21, "DIMAYOR": 76, "ECULP": 16, "EFL": 32, "EFLCHAMPIONSHIP": 24, "EFLL1": 24, "EFLTROPHY": 42, "EKSTRAKLASA": 18, "EPL": 382, "EREDIVISIE": 18, "FA": 24, "FRAPLW": 3, "HUNNB1": 42, "INTLFRIENDLY": 45, "ISRNL": 9, "KLEAGUE": 12, "KNVB": 21, "LALIGA": 252, "LALIGA2": 65, "LIGAEXP": 12, "LIGAF": 37, "LIGAMX": 533, "LIGAMX2H": 36, "LIGAPORTUGAL": 18, "LIGAPORTUGAL2": 17, "LIGUE1": 217, "MLS": 589, "MLS2H": 42, "MLSEAST": 15, "MLSWEST": 15, "NWSL": 44, "PERLIGA1": 36, "PREMIERLEAGUE": 20, "QSTARS": 22, "ROML1": 31, "SAFF": 31, "SERIEA": 228, "SOCCER": 2, "SUPERLIG": 18, "SVK1L": 28, "SVK2L": 17, "SVKCUP": 10, "TACAPORT": 20, "THAIL1": 16, "UCL": 354, "UCLLEAGUE": 16, "UCLW": 27, "UECL": 36, "UEFAEURO": 60, "UEFANL": 490, "UEFANLGROUP": 16, "UEL": 36, "UKRPL": 28, "URYPD": 19, "USL": 81, "VENFUTVE": 14, "WC": 172, "WCW": 32}, "contracts_unknown_family": 3, "request_count": 768, "retry_count": 0, "milestones_note": "milestones type=soccer_tournament_multi_leg: 22250 rows, complete=True"}

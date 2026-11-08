@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261108T003342Z-4c1920` · generated 2026-11-08T00:33:42.483742Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261108T004827Z-d2a7cf` · generated 2026-11-08T00:48:27.553750Z · trigger `kickoff_chain:T-15` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-08T00:30:21.945859Z (CURRENT at publish; CURRENT until 2026-11-08T00:50:21.945859Z, STALE after 2026-11-08T01:00:21.945859Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-08T00:45:01.803494Z (CURRENT at publish; CURRENT until 2026-11-08T01:05:01.803494Z, STALE after 2026-11-08T01:15:01.803494Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-07T23:58:27.873083Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.56s
+model board generated 2026-11-07T23:58:27.873083Z · simulations this update: 0 · Odds API calls this update: 2 (credits 6) · reprice 0.56s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,9 +12,9 @@ model board generated 2026-11-07T23:58:27.873083Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-08T01:00:00Z | Instituto vs Newell's Old Boys (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
-| 2026-11-08T01:00:00Z | Tigres UANL vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 77 | 0 |
-| 2026-11-08T01:00:00Z | Toluca vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 77 | 0 |
+| 2026-11-08T01:00:00Z | Instituto vs Newell's Old Boys (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
+| 2026-11-08T01:00:00Z | Tigres UANL vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT close | CURRENT | 77 | 0 |
+| 2026-11-08T01:00:00Z | Toluca vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT close | CURRENT | 77 | 0 |
 | 2026-11-08T03:10:00Z | Pumas UNAM vs Club América (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-08T11:30:00Z | Napoli vs Lazio (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T12:00:00Z | Atlético Madrid vs FC Barcelona (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -43,29 +43,30 @@ model board generated 2026-11-07T23:58:27.873083Z · simulations this update: 0 
 | 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-09T02:10:00Z | León vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (27; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (28; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Angers vs Nice | Result: away | no | 0.5300 | 0.741 [0.586, 0.869] | +0.194 | +0.110 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Angers vs Nice | Result: home | yes | 0.2700 | 0.462 [0.282, 0.638] | +0.178 | +0.059 | 0.32 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | btts | no | 0.4300 | 0.577 [0.443, 0.696] | +0.129 | +0.049 | 0.47 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Puebla | Total goals over 2.5 | no | 0.4400 | 0.592 [0.411, 0.745] | +0.134 | +0.027 | 0.46 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Puebla | Total goals over 3.5 | no | 0.6700 | 0.785 [0.635, 0.900] | +0.099 | +0.020 | 0.69 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Puebla | Total goals over 3.5 | no | 0.6700 | 0.785 [0.635, 0.900] | +0.099 | +0.020 | 0.69 | - | * | RESEARCH_CANDIDATE |
+| Tigres UANL vs Cruz Azul | away team total over 1.5 | no | 0.4900 | 0.618 [0.466, 0.757] | +0.111 | +0.019 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Total goals over 1.5 | no | 0.2100 | 0.336 [0.189, 0.479] | +0.114 | +0.018 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Total goals over 4.5 | no | 0.8300 | 0.901 [0.806, 0.967] | +0.061 | +0.017 | 0.84 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Puebla | Total goals over 2.5 | no | 0.4500 | 0.592 [0.411, 0.745] | +0.124 | +0.017 | 0.46 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | away team total over 0.5 | no | 0.3300 | 0.446 [0.317, 0.570] | +0.101 | +0.015 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | btts | no | 0.4200 | 0.530 [0.411, 0.646] | +0.093 | +0.015 | 0.43 | - | * | RESEARCH_CANDIDATE |
-| Tigres UANL vs Cruz Azul | away team total over 0.5 | no | 0.1800 | 0.276 [0.167, 0.389] | +0.086 | +0.013 | 0.19 | - | * | RESEARCH_CANDIDATE |
+| Tigres UANL vs Cruz Azul | away team total over 0.5 | no | 0.1800 | 0.276 [0.167, 0.389] | +0.086 | +0.013 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 3.5 | no | 0.6700 | 0.774 [0.641, 0.886] | +0.089 | +0.012 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Tigres UANL vs Cruz Azul | away team total over 2.5 | no | 0.7600 | 0.842 [0.733, 0.930] | +0.069 | +0.012 | 0.77 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 4.5 | no | 0.8300 | 0.896 [0.810, 0.961] | +0.056 | +0.012 | 0.84 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Club América | Result: home | yes | 0.3000 | 0.427 [0.274, 0.585] | +0.112 | +0.010 | 0.3 | - | * | RESEARCH_CANDIDATE |
-| Tigres UANL vs Cruz Azul | away team total over 1.5 | no | 0.5000 | 0.618 [0.466, 0.757] | +0.100 | +0.009 | 0.5 | - |  | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Club América | home wins by more than 1.5 | yes | 0.1300 | 0.231 [0.115, 0.366] | +0.093 | +0.009 | 0.13 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 2.5 | no | 0.4500 | 0.575 [0.417, 0.723] | +0.108 | +0.008 | 0.45 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | First-half exact score 0-0 (home-away) | yes | 0.2700 | 0.363 [0.238, 0.482] | +0.079 | +0.006 | 0.27 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Total goals over 5.5 | no | 0.9300 | 0.959 [0.910, 0.991] | +0.024 | +0.006 | 0.93 | - |  | RESEARCH_CANDIDATE |
+| Tigres UANL vs Cruz Azul | away wins by more than 2.5 | no | 0.8900 | 0.931 [0.868, 0.975] | +0.034 | +0.005 | 0.89 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | First-half exact score 0-0 (home-away) | yes | 0.2700 | 0.355 [0.238, 0.472] | +0.072 | +0.004 | 0.27 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | away team total over 1.5 | no | 0.7100 | 0.795 [0.681, 0.890] | +0.071 | +0.004 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | away wins by more than 2.5 | no | 0.9100 | 0.942 [0.890, 0.981] | +0.027 | +0.003 | 0.91 | - | * | RESEARCH_CANDIDATE |
@@ -78,9 +79,9 @@ model board generated 2026-11-07T23:58:27.873083Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 763
-action_NO_QUOTE: 400
-action_RESEARCH_CANDIDATE: 27
+action_NO_EDGE: 761
+action_NO_QUOTE: 401
+action_RESEARCH_CANDIDATE: 28
 contract_sides: 1190
 fixtures: 30
 fixtures_model_invalidated: 0
