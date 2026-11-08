@@ -1,10 +1,10 @@
 {
  "counts": {
-  "MISSED_DISPATCHER_CLOSE": 86,
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 611,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 612,
   "CLOSE_BLOCKED_BUDGET": 16,
-  "PINNACLE_VALID_CLOSE": 51,
-  "PINNACLE_QUOTED_NOTHING": 2
+  "PINNACLE_VALID_CLOSE": 61,
+  "PINNACLE_QUOTED_NOTHING": 2,
+  "MISSED_DISPATCHER_CLOSE": 86
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.belgrano": {
@@ -236,6 +236,11 @@
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
    "batch_id": null
+  },
+  "fx:arg.primera:2026:arg.instituto:arg.newells": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261108T004501Z"
   },
   "fx:arg.primera:2026:arg.lanus:arg.gimnasia_mendoza": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -3022,6 +3027,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:mex.liga_mx:2026:mex.atlas:mex.pachuca": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
   "fx:mex.liga_mx:2026:mex.atlas:mex.puebla": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -3177,6 +3187,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:mex.liga_mx:2026:mex.tigres:mex.cruz_azul": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261108T004501Z"
+  },
   "fx:mex.liga_mx:2026:mex.tigres:mex.leon": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -3196,6 +3211,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:mex.liga_mx:2026:mex.toluca:mex.monterrey": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261108T004501Z"
   },
   "fx:mex.liga_mx:2026:mex.toluca:mex.tijuana": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -3427,6 +3447,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:usa.mls:2026:usa.austin:usa.portland_timbers": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261107T234331Z"
+  },
   "fx:usa.mls:2026:usa.austin:usa.real_salt_lake": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -3557,6 +3582,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261107T204504Z"
   },
+  "fx:usa.mls:2026:usa.fc_dallas:usa.colorado_rapids": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261107T234331Z"
+  },
   "fx:usa.mls:2026:usa.fc_dallas:usa.columbus_crew": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -3576,6 +3606,11 @@
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
    "batch_id": null
+  },
+  "fx:usa.mls:2026:usa.houston_dynamo:usa.st_louis_city": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261107T234331Z"
   },
   "fx:usa.mls:2026:usa.inter_miami:usa.charlotte": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -3626,6 +3661,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:usa.mls:2026:usa.minnesota_united:usa.san_jose_earthquakes": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261107T234331Z"
   },
   "fx:usa.mls:2026:usa.minnesota_united:usa.sporting_kc": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -3737,6 +3777,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:usa.mls:2026:usa.real_salt_lake:usa.la_galaxy": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261107T234331Z"
+  },
   "fx:usa.mls:2026:usa.real_salt_lake:usa.san_jose_earthquakes": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -3757,6 +3802,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:usa.mls:2026:usa.san_diego:usa.sporting_kc": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261107T234331Z"
+  },
   "fx:usa.mls:2026:usa.san_jose_earthquakes:usa.colorado_rapids": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -3771,6 +3821,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:usa.mls:2026:usa.seattle_sounders:usa.lafc": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261107T234331Z"
   },
   "fx:usa.mls:2026:usa.seattle_sounders:usa.sporting_kc": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
