@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261108T040809Z-a41240` · generated 2026-11-08T04:08:09.057281Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261108T042310Z-0f665c` · generated 2026-11-08T04:23:10.858475Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-08T04:05:03.188583Z (CURRENT at publish; CURRENT until 2026-11-08T04:25:03.188583Z, STALE after 2026-11-08T04:35:03.188583Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-08T04:20:04.827393Z (CURRENT at publish; CURRENT until 2026-11-08T04:40:04.827393Z, STALE after 2026-11-08T04:50:04.827393Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-08T02:09:35.786173Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.28s
+model board generated 2026-11-07T23:16:52.131456Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.27s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -39,11 +39,11 @@ model board generated 2026-11-08T02:09:35.786173Z · simulations this update: 0 
 | 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-09T02:10:00Z | León vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (27; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (26; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Angers vs Nice | Result: away | no | 0.5300 | 0.741 [0.586, 0.869] | +0.194 | +0.110 | 0.64 | - | * | RESEARCH_CANDIDATE |
+| Angers vs Nice | Result: away | no | 0.5400 | 0.741 [0.586, 0.869] | +0.184 | +0.100 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Angers vs Nice | Result: home | yes | 0.2700 | 0.462 [0.282, 0.638] | +0.178 | +0.059 | 0.32 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | btts | no | 0.4300 | 0.577 [0.443, 0.696] | +0.129 | +0.049 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | away team total over 1.5 | no | 0.5300 | 0.664 [0.520, 0.795] | +0.116 | +0.030 | 0.55 | - | * | RESEARCH_CANDIDATE |
@@ -59,7 +59,6 @@ model board generated 2026-11-08T02:09:35.786173Z · simulations this update: 0 
 | León vs Guadalajara | Total goals over 1.5 | no | 0.2100 | 0.319 [0.192, 0.446] | +0.097 | +0.010 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 2.5 | no | 0.4500 | 0.575 [0.417, 0.723] | +0.108 | +0.008 | 0.45 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | First-half exact score 0-0 (home-away) | yes | 0.2700 | 0.363 [0.238, 0.482] | +0.079 | +0.006 | 0.27 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Puebla | First-half total goals over 0.5 | no | 0.2700 | 0.363 [0.238, 0.482] | +0.079 | +0.006 | 0.27 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | away team total over 0.5 | no | 0.2200 | 0.313 [0.199, 0.433] | +0.081 | +0.004 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | First-half exact score 0-0 (home-away) | yes | 0.2700 | 0.355 [0.238, 0.472] | +0.072 | +0.004 | 0.27 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | away team total over 1.5 | no | 0.7100 | 0.795 [0.681, 0.890] | +0.071 | +0.004 | 0.71 | - |  | RESEARCH_CANDIDATE |
@@ -74,15 +73,13 @@ model board generated 2026-11-08T02:09:35.786173Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 347
+action_NO_EDGE: 348
 action_NO_QUOTE: 326
-action_RESEARCH_CANDIDATE: 27
+action_RESEARCH_CANDIDATE: 26
 contract_sides: 700
 fixtures: 26
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
-
-Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
