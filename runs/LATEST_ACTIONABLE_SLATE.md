@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261108T072019Z-3092cb` · generated 2026-11-08T07:20:19.926056Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261108T073521Z-9f4513` · generated 2026-11-08T07:35:21.602581Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-08T07:17:16.048764Z (CURRENT at publish; CURRENT until 2026-11-08T07:37:16.048764Z, STALE after 2026-11-08T07:47:16.048764Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-08T07:32:17.816570Z (CURRENT at publish; CURRENT until 2026-11-08T07:52:17.816570Z, STALE after 2026-11-08T08:02:17.816570Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-08T04:34:56.381500Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.28s
 
@@ -67,9 +67,9 @@ model board generated 2026-11-08T04:34:56.381500Z · simulations this update: 0 
 | León vs Guadalajara | away wins by more than 2.5 | no | 0.9100 | 0.942 [0.890, 0.981] | +0.027 | +0.003 | 0.91 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 5.5 | no | 0.9300 | 0.957 [0.913, 0.989] | +0.023 | +0.003 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Exact score 0-0 (home-away) | yes | 0.0600 | 0.113 [0.050, 0.180] | +0.049 | +0.002 | 0.06 | - | * | RESEARCH_CANDIDATE |
+| León vs Guadalajara | Total goals over 0.5 | no | 0.0600 | 0.105 [0.052, 0.167] | +0.041 | +0.002 | 0.06 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Exact score 1-0 (home-away) | yes | 0.0700 | 0.105 [0.061, 0.149] | +0.031 | +0.002 | 0.07 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Exact score 1-0 (home-away) | yes | 0.1000 | 0.141 [0.086, 0.192] | +0.035 | +0.001 | 0.1 | - |  | RESEARCH_CANDIDATE |
-| León vs Guadalajara | away wins by more than 1.5 | no | 0.7700 | 0.838 [0.736, 0.923] | +0.056 | +0.001 | 0.77 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
