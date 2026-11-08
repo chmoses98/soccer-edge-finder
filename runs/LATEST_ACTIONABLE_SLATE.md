@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261108T083524Z-bff944` · generated 2026-11-08T08:35:24.559378Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261108T085024Z-a874d5` · generated 2026-11-08T08:50:24.617157Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-08T08:32:20.838925Z (CURRENT at publish; CURRENT until 2026-11-08T08:52:20.838925Z, STALE after 2026-11-08T09:02:20.838925Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-08T08:47:20.817021Z (CURRENT at publish; CURRENT until 2026-11-08T09:07:20.817021Z, STALE after 2026-11-08T09:17:20.817021Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-08T04:34:56.381500Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.29s
+model board generated 2026-11-08T04:34:56.381500Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.27s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -39,7 +39,7 @@ model board generated 2026-11-08T04:34:56.381500Z · simulations this update: 0 
 | 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-09T02:10:00Z | León vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (28; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (29; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -56,6 +56,7 @@ model board generated 2026-11-08T04:34:56.381500Z · simulations this update: 0 
 | León vs Guadalajara | away team total over 0.5 | no | 0.2100 | 0.313 [0.199, 0.433] | +0.092 | +0.015 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 4.5 | no | 0.8300 | 0.896 [0.810, 0.961] | +0.056 | +0.012 | 0.84 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Total goals over 3.5 | no | 0.6800 | 0.785 [0.635, 0.900] | +0.090 | +0.010 | 0.69 | - | * | RESEARCH_CANDIDATE |
+| Le Mans vs AS Monaco | Result: home | yes | 0.1900 | 0.361 [0.146, 0.597] | +0.160 | +0.010 | 0.19 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 1.5 | no | 0.2100 | 0.319 [0.192, 0.446] | +0.097 | +0.010 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 2.5 | no | 0.4500 | 0.575 [0.417, 0.723] | +0.108 | +0.008 | 0.45 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Total goals over 4.5 | no | 0.8400 | 0.901 [0.806, 0.967] | +0.051 | +0.008 | 0.84 | - |  | RESEARCH_CANDIDATE |
@@ -75,9 +76,9 @@ model board generated 2026-11-08T04:34:56.381500Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 347
+action_NO_EDGE: 346
 action_NO_QUOTE: 325
-action_RESEARCH_CANDIDATE: 28
+action_RESEARCH_CANDIDATE: 29
 contract_sides: 700
 fixtures: 26
 fixtures_model_invalidated: 0
