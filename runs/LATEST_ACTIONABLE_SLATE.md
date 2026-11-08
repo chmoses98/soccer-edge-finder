@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261108T231301Z-60b66d` · generated 2026-11-08T23:13:01.036157Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261108T232800Z-e2236e` · generated 2026-11-08T23:28:00.816493Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-08T23:10:02.610954Z (CURRENT at publish; CURRENT until 2026-11-08T23:30:02.610954Z, STALE after 2026-11-08T23:40:02.610954Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-08T23:25:02.630939Z (CURRENT at publish; CURRENT until 2026-11-08T23:45:02.630939Z, STALE after 2026-11-08T23:55:02.630939Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-08T22:58:06.783971Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.10s
+model board generated 2026-11-08T22:58:06.783971Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.11s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,40 +12,42 @@ model board generated 2026-11-08T22:58:06.783971Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 77 | 0 |
+| 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 77 | 0 |
 | 2026-11-09T02:10:00Z | León vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (30; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (32; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| León vs Guadalajara | away team total over 1.5 | no | 0.5000 | 0.664 [0.527, 0.794] | +0.147 | +0.062 | 0.56 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Puebla | btts | no | 0.4300 | 0.577 [0.458, 0.694] | +0.130 | +0.053 | 0.48 | - | * | RESEARCH_CANDIDATE |
+| León vs Guadalajara | away team total over 1.5 | no | 0.4900 | 0.664 [0.527, 0.794] | +0.157 | +0.072 | 0.56 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Puebla | btts | no | 0.4200 | 0.577 [0.458, 0.694] | +0.140 | +0.063 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | away team total over 2.5 | no | 0.7700 | 0.872 [0.785, 0.947] | +0.090 | +0.042 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | away team total over 0.5 | no | 0.1900 | 0.314 [0.203, 0.432] | +0.113 | +0.037 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | btts | no | 0.4000 | 0.533 [0.407, 0.651] | +0.116 | +0.034 | 0.43 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Puebla | Total goals over 3.5 | no | 0.6700 | 0.786 [0.650, 0.903] | +0.100 | +0.024 | 0.69 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Puebla | Total goals over 3.5 | no | 0.6600 | 0.786 [0.650, 0.903] | +0.110 | +0.034 | 0.69 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Puebla | Total goals over 1.5 | no | 0.2000 | 0.337 [0.198, 0.486] | +0.126 | +0.031 | 0.22 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Puebla | away team total over 0.5 | no | 0.3200 | 0.443 [0.312, 0.571] | +0.108 | +0.027 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 3.5 | no | 0.6600 | 0.775 [0.647, 0.885] | +0.100 | +0.023 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Total goals over 2.5 | no | 0.4500 | 0.592 [0.426, 0.750] | +0.125 | +0.022 | 0.47 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Puebla | Total goals over 4.5 | no | 0.8300 | 0.902 [0.817, 0.969] | +0.062 | +0.020 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 2.5 | no | 0.4400 | 0.576 [0.423, 0.720] | +0.119 | +0.020 | 0.45 | - |  | RESEARCH_CANDIDATE |
-| Querétaro vs Puebla | away team total over 0.5 | no | 0.3300 | 0.443 [0.312, 0.571] | +0.097 | +0.017 | 0.34 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Puebla | away team total over 1.5 | no | 0.7000 | 0.792 [0.676, 0.891] | +0.078 | +0.015 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Exact score 1-0 (home-away) | yes | 0.0600 | 0.107 [0.064, 0.153] | +0.043 | +0.013 | 0.07 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 4.5 | no | 0.8300 | 0.897 [0.815, 0.961] | +0.057 | +0.013 | 0.84 | - |  | RESEARCH_CANDIDATE |
-| Querétaro vs Puebla | Total goals over 4.5 | no | 0.8400 | 0.902 [0.817, 0.969] | +0.052 | +0.011 | 0.85 | - |  | RESEARCH_CANDIDATE |
-| Querétaro vs Puebla | Total goals over 1.5 | no | 0.2200 | 0.337 [0.198, 0.486] | +0.105 | +0.010 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | away wins by more than 2.5 | no | 0.9000 | 0.942 [0.891, 0.980] | +0.036 | +0.010 | 0.91 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 1.5 | no | 0.2100 | 0.321 [0.196, 0.451] | +0.100 | +0.009 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | away wins by more than 1.5 | no | 0.7600 | 0.838 [0.736, 0.920] | +0.065 | +0.008 | 0.76 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Puebla | First half: both teams to score | no | 0.7900 | 0.854 [0.779, 0.931] | +0.053 | +0.008 | 0.79 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Total goals over 5.5 | no | 0.9300 | 0.960 [0.917, 0.991] | +0.025 | +0.007 | 0.93 | - |  | RESEARCH_CANDIDATE |
-| Querétaro vs Puebla | away team total over 1.5 | no | 0.7100 | 0.792 [0.676, 0.891] | +0.068 | +0.006 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Result: away | no | 0.5200 | 0.634 [0.488, 0.767] | +0.097 | +0.004 | 0.52 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Puebla | First-half total goals over 0.5 | no | 0.2700 | 0.365 [0.238, 0.492] | +0.082 | +0.004 | 0.27 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | First half: away wins by more than 1.5 | no | 0.8900 | 0.932 [0.879, 0.981] | +0.035 | +0.003 | 0.89 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 5.5 | no | 0.9300 | 0.958 [0.916, 0.989] | +0.023 | +0.003 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Exact score 1-0 (home-away) | yes | 0.1000 | 0.142 [0.091, 0.195] | +0.036 | +0.003 | 0.1 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Exact score 0-0 (home-away) | yes | 0.0600 | 0.111 [0.051, 0.180] | +0.047 | +0.003 | 0.06 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Total goals over 0.5 | no | 0.0600 | 0.111 [0.051, 0.180] | +0.047 | +0.003 | 0.06 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | First-half result: away | no | 0.6400 | 0.723 [0.608, 0.822] | +0.067 | +0.002 | 0.64 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Puebla | First-half total goals over 2.5 | no | 0.8600 | 0.909 [0.839, 0.971] | +0.041 | +0.002 | 0.86 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Puebla | First-half total goals over 2.5 | no | 0.8600 | 0.909 [0.839, 0.971] | +0.041 | +0.002 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Exact score 0-0 (home-away) | yes | 0.0600 | 0.103 [0.051, 0.161] | +0.039 | +0.001 | 0.06 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 0.5 | no | 0.0600 | 0.103 [0.051, 0.161] | +0.039 | +0.001 | 0.06 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Exact score 2-0 (home-away) | yes | 0.0400 | 0.064 [0.034, 0.094] | +0.021 | +0.000 | 0.04 | - |  | RESEARCH_CANDIDATE |
@@ -53,9 +55,9 @@ model board generated 2026-11-08T22:58:06.783971Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 240
+action_NO_EDGE: 238
 action_NO_QUOTE: 38
-action_RESEARCH_CANDIDATE: 30
+action_RESEARCH_CANDIDATE: 32
 contract_sides: 308
 fixtures: 2
 fixtures_model_invalidated: 0
