@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261108T193251Z-c8a74e` · generated 2026-11-08T19:32:51.402405Z · trigger `kickoff_chain:T-30/T-15` · mode `reprice_only`
+slate `slate-20261108T194304Z-c17dff` · generated 2026-11-08T19:43:04.714777Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-08T19:29:43.421162Z (CURRENT at publish; CURRENT until 2026-11-08T19:49:43.421162Z, STALE after 2026-11-08T19:59:43.421162Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-08T19:40:02.569988Z (CURRENT at publish; CURRENT until 2026-11-08T20:00:02.569988Z, STALE after 2026-11-08T20:10:02.569988Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-08T19:13:05.031802Z · simulations this update: 0 · Odds API calls this update: 2 (credits 6) · reprice 0.11s
+model board generated 2026-11-08T19:13:05.031802Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.12s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -18,14 +18,14 @@ model board generated 2026-11-08T19:13:05.031802Z · simulations this update: 0 
 | 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-09T02:10:00Z | León vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (25; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (26; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | León vs Guadalajara | away team total over 1.5 | no | 0.5100 | 0.664 [0.527, 0.794] | +0.137 | +0.052 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | btts | no | 0.4400 | 0.577 [0.458, 0.694] | +0.120 | +0.043 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | away team total over 2.5 | no | 0.7700 | 0.872 [0.785, 0.947] | +0.090 | +0.042 | 0.81 | - |  | RESEARCH_CANDIDATE |
-| León vs Guadalajara | away team total over 0.5 | no | 0.2000 | 0.314 [0.203, 0.432] | +0.102 | +0.027 | 0.22 | - |  | RESEARCH_CANDIDATE |
+| León vs Guadalajara | away team total over 0.5 | no | 0.1900 | 0.314 [0.203, 0.432] | +0.113 | +0.037 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Total goals over 3.5 | no | 0.6700 | 0.786 [0.650, 0.903] | +0.100 | +0.024 | 0.69 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | btts | no | 0.4100 | 0.533 [0.407, 0.651] | +0.106 | +0.024 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 3.5 | no | 0.6600 | 0.775 [0.647, 0.885] | +0.100 | +0.023 | 0.68 | - | * | RESEARCH_CANDIDATE |
@@ -46,14 +46,15 @@ model board generated 2026-11-08T19:13:05.031802Z · simulations this update: 0 
 | Querétaro vs Puebla | Total goals over 0.5 | no | 0.0600 | 0.111 [0.051, 0.180] | +0.047 | +0.003 | 0.06 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | First-half result: away | no | 0.6400 | 0.723 [0.608, 0.822] | +0.067 | +0.002 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 0.5 | no | 0.0600 | 0.103 [0.051, 0.161] | +0.039 | +0.001 | 0.06 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Puebla | away team total over 2.5 | no | 0.9100 | 0.941 [0.887, 0.981] | +0.025 | +0.001 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Exact score 2-0 (home-away) | yes | 0.0400 | 0.064 [0.034, 0.094] | +0.021 | +0.000 | 0.04 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 254
+action_NO_EDGE: 253
 action_NO_QUOTE: 69
-action_RESEARCH_CANDIDATE: 25
+action_RESEARCH_CANDIDATE: 26
 contract_sides: 348
 fixtures: 5
 fixtures_model_invalidated: 0
