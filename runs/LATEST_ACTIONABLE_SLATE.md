@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261108T112805Z-973875` · generated 2026-11-08T11:28:05.895169Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
+slate `slate-20261108T113310Z-9b7142` · generated 2026-11-08T11:33:10.910051Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-08T11:25:00.063884Z (CURRENT at publish; CURRENT until 2026-11-08T11:45:00.063884Z, STALE after 2026-11-08T11:55:00.063884Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-08T11:30:04.724781Z (CURRENT at publish; CURRENT until 2026-11-08T11:50:04.724781Z, STALE after 2026-11-08T12:00:04.724781Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-08T10:59:06.849769Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.24s
+model board generated 2026-11-08T10:59:06.849769Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.33s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,6 @@ model board generated 2026-11-08T10:59:06.849769Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-08T11:30:00Z | Napoli vs Lazio (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT close | CURRENT | 3 | 0 |
 | 2026-11-08T12:00:00Z | Atlético Madrid vs FC Barcelona (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T12:00:00Z | Celta Vigo vs Levante (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T12:00:00Z | Elche vs Real Betis (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -39,7 +38,7 @@ model board generated 2026-11-08T10:59:06.849769Z · simulations this update: 0 
 | 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-09T02:10:00Z | León vs Guadalajara (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (28; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (27; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -47,11 +46,11 @@ model board generated 2026-11-08T10:59:06.849769Z · simulations this update: 0 
 | Angers vs Nice | Result: home | yes | 0.2700 | 0.462 [0.282, 0.639] | +0.178 | +0.059 | 0.32 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | away team total over 1.5 | no | 0.5200 | 0.664 [0.520, 0.795] | +0.126 | +0.040 | 0.55 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | btts | no | 0.4500 | 0.577 [0.443, 0.696] | +0.109 | +0.029 | 0.47 | - | * | RESEARCH_CANDIDATE |
+| Elche vs Real Betis | Result: away | no | 0.4900 | 0.635 [0.476, 0.789] | +0.127 | +0.028 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | btts | no | 0.4100 | 0.530 [0.411, 0.646] | +0.103 | +0.025 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 3.5 | no | 0.6600 | 0.774 [0.641, 0.886] | +0.098 | +0.022 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | away team total over 2.5 | no | 0.7900 | 0.872 [0.779, 0.947] | +0.070 | +0.022 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 2.5 | no | 0.4400 | 0.575 [0.417, 0.723] | +0.118 | +0.018 | 0.45 | - |  | RESEARCH_CANDIDATE |
-| Elche vs Real Betis | Result: away | no | 0.5000 | 0.635 [0.476, 0.789] | +0.117 | +0.018 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | Elche vs Real Betis | Result: home | yes | 0.2500 | 0.388 [0.232, 0.558] | +0.125 | +0.016 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | away team total over 0.5 | no | 0.3300 | 0.446 [0.317, 0.570] | +0.101 | +0.015 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 4.5 | no | 0.8300 | 0.896 [0.810, 0.961] | +0.056 | +0.012 | 0.84 | - |  | RESEARCH_CANDIDATE |
@@ -70,18 +69,19 @@ model board generated 2026-11-08T10:59:06.849769Z · simulations this update: 0 
 | León vs Guadalajara | Exact score 0-0 (home-away) | yes | 0.0600 | 0.105 [0.052, 0.167] | +0.041 | +0.002 | 0.06 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 0.5 | no | 0.0600 | 0.105 [0.052, 0.167] | +0.041 | +0.002 | 0.06 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Exact score 1-0 (home-away) | yes | 0.0700 | 0.105 [0.061, 0.149] | +0.031 | +0.002 | 0.07 | - |  | RESEARCH_CANDIDATE |
-| Querétaro vs Puebla | Exact score 1-0 (home-away) | yes | 0.1000 | 0.141 [0.086, 0.192] | +0.035 | +0.001 | 0.1 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 345
+action_NO_EDGE: 340
 action_NO_QUOTE: 327
-action_RESEARCH_CANDIDATE: 28
-contract_sides: 700
-fixtures: 26
+action_RESEARCH_CANDIDATE: 27
+contract_sides: 694
+fixtures: 25
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
+
+Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
