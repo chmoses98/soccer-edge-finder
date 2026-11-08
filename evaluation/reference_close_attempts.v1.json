@@ -1,8 +1,8 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 630,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 633,
   "MISSED_DISPATCHER_CLOSE": 95,
-  "PINNACLE_VALID_CLOSE": 68,
+  "PINNACLE_VALID_CLOSE": 71,
   "CLOSE_BLOCKED_BUDGET": 16,
   "PINNACLE_QUOTED_NOTHING": 2
  },
@@ -111,6 +111,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:arg.primera:2026:arg.central_cordoba:arg.lanus": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261108T221441Z"
   },
   "fx:arg.primera:2026:arg.central_cordoba:arg.velez": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -1332,6 +1337,11 @@
    "close_horizon_delivered": false,
    "batch_id": null
   },
+  "fx:esp.la_liga:2026-27:esp.atletico_madrid:esp.barcelona": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
   "fx:esp.la_liga:2026-27:esp.atletico_madrid:esp.barcelona:matchday_12": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -1891,6 +1901,16 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:fra.ligue_1:2026-27:fra.lens:fra.marseille": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:fra.ligue_1:2026-27:fra.lens:fra.marseille:matchday_10": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261108T192943Z"
   },
   "fx:fra.ligue_1:2026-27:fra.lens:fra.paris_fc": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -2721,6 +2741,16 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:ita.serie_a:2026-27:ita.fiorentina:ita.juventus": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:ita.serie_a:2026-27:ita.fiorentina:ita.juventus:matchday_11": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261108T192943Z"
   },
   "fx:ita.serie_a:2026-27:ita.frosinone:ita.lecce": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",

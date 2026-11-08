@@ -1,6 +1,6 @@
-# settle-evaluate 2026-11-08 18:58Z
+# settle-evaluate 2026-11-08 22:52Z
 
-- newly settled: 1122
+- newly settled: 0
 - cells evaluated: 132
 - authority proposals: 28
 
