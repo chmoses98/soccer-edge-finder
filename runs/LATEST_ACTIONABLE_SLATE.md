@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261108T032307Z-e362d9` · generated 2026-11-08T03:23:07.582243Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261108T033807Z-9010f8` · generated 2026-11-08T03:38:07.769953Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-08T03:20:01.864058Z (CURRENT at publish; CURRENT until 2026-11-08T03:40:01.864058Z, STALE after 2026-11-08T03:50:01.864058Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-08T03:35:01.854825Z (CURRENT at publish; CURRENT until 2026-11-08T03:55:01.854825Z, STALE after 2026-11-08T04:05:01.854825Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-08T02:09:35.786173Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.30s
+model board generated 2026-11-08T02:09:35.786173Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.31s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -16,7 +16,7 @@ model board generated 2026-11-08T02:09:35.786173Z · simulations this update: 0 
 | 2026-11-08T12:00:00Z | Atlético Madrid vs FC Barcelona (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T12:00:00Z | Celta Vigo vs Levante (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T12:00:00Z | Elche vs Real Betis (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-08T12:00:00Z | Espanyol vs Deportivo La Coruña (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 71 | 0 |
+| 2026-11-08T12:00:00Z | Espanyol vs Deportivo La Coruña (esp.la_liga) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 71 | 0 |
 | 2026-11-08T12:00:00Z | Málaga vs Racing Santander (esp.la_liga) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T12:00:00Z | Osasuna vs Athletic Club (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T12:00:00Z | Real Sociedad vs Rayo Vallecano (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
