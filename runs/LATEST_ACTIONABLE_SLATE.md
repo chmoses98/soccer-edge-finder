@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261107T234731Z-dc20d5` · generated 2026-11-07T23:47:31.024557Z · trigger `kickoff_chain:T-15` · mode `model_refresh_and_reprice`
+slate `slate-20261107T235907Z-49537c` · generated 2026-11-07T23:59:07.557571Z · trigger `kickoff_chain:T-60/T-5` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-07T23:43:31.552402Z (CURRENT at publish; CURRENT until 2026-11-08T00:03:31.552402Z, STALE after 2026-11-08T00:13:31.552402Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-07T23:55:00.071985Z (CURRENT at publish; CURRENT until 2026-11-08T00:15:00.071985Z, STALE after 2026-11-08T00:25:00.071985Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-07T23:47:17.363180Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 1.38s
+model board generated 2026-11-07T23:58:27.873083Z · simulations this update: 3 · Odds API calls this update: 2 (credits 6) · reprice 1.20s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -19,10 +19,10 @@ model board generated 2026-11-07T23:47:17.363180Z · simulations this update: 1 
 | 2026-11-08T00:00:00Z | Real Salt Lake vs LA Galaxy (usa.mls) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 77 | 0 |
 | 2026-11-08T00:00:00Z | San Diego FC vs Sporting Kansas City (usa.mls) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 77 | 0 |
 | 2026-11-08T00:00:00Z | Seattle Sounders vs Los Angeles FC (usa.mls) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 77 | 0 |
-| 2026-11-08T01:00:00Z | Instituto vs Newell's Old Boys (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-11-08T01:00:00Z | Tigres UANL vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-08T01:00:00Z | Toluca vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
-| 2026-11-08T03:10:00Z | Pumas UNAM vs Club América (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-08T01:00:00Z | Instituto vs Newell's Old Boys (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
+| 2026-11-08T01:00:00Z | Tigres UANL vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 77 | 0 |
+| 2026-11-08T01:00:00Z | Toluca vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 77 | 0 |
+| 2026-11-08T03:10:00Z | Pumas UNAM vs Club América (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-08T11:30:00Z | Napoli vs Lazio (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T12:00:00Z | Atlético Madrid vs FC Barcelona (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T12:00:00Z | Celta Vigo vs Levante (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -46,61 +46,61 @@ model board generated 2026-11-07T23:47:17.363180Z · simulations this update: 1 
 | 2026-11-08T18:30:00Z | TSG Hoffenheim vs Schalke 04 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T19:45:00Z | Lens vs Marseille (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-08T19:45:00Z | Fiorentina vs Juventus (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-08T22:30:00Z | Central Córdoba vs Lanús (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 77 | 0 |
+| 2026-11-08T22:30:00Z | Central Córdoba vs Lanús (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-09T00:00:00Z | Querétaro vs Puebla (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 77 | 0 |
 | 2026-11-09T02:10:00Z | León vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 77 | 0 |
 
-## Candidates on CURRENT prices (125; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (126; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Austin FC vs Portland Timbers | away team total over 1.5 | no | 0.3200 | 0.617 [0.477, 0.748] | +0.281 | +0.199 | 0.51 | - | * | RESEARCH_CANDIDATE |
-| Seattle Sounders vs Los Angeles FC | Total goals over 2.5 | no | 0.3300 | 0.625 [0.475, 0.755] | +0.279 | +0.196 | 0.52 | - | * | RESEARCH_CANDIDATE |
+| Seattle Sounders vs Los Angeles FC | Total goals over 3.5 | no | 0.5400 | 0.814 [0.698, 0.905] | +0.256 | +0.199 | 0.74 | - | * | RESEARCH_CANDIDATE |
+| Seattle Sounders vs Los Angeles FC | Total goals over 2.5 | no | 0.3300 | 0.625 [0.475, 0.755] | +0.279 | +0.196 | 0.52 | - |  | RESEARCH_CANDIDATE |
+| Seattle Sounders vs Los Angeles FC | btts | no | 0.3100 | 0.576 [0.464, 0.684] | +0.251 | +0.185 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away team total over 2.5 | no | 0.5900 | 0.843 [0.743, 0.926] | +0.236 | +0.184 | 0.77 | - |  | RESEARCH_CANDIDATE |
-| Seattle Sounders vs Los Angeles FC | Total goals over 3.5 | no | 0.5600 | 0.814 [0.698, 0.905] | +0.236 | +0.179 | 0.74 | - |  | RESEARCH_CANDIDATE |
-| Seattle Sounders vs Los Angeles FC | btts | no | 0.3300 | 0.576 [0.464, 0.684] | +0.231 | +0.165 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | Result: away | no | 0.4400 | 0.692 [0.559, 0.814] | +0.235 | +0.149 | 0.58 | 0.437 | * | RESEARCH_CANDIDATE |
-| Seattle Sounders vs Los Angeles FC | Total goals over 4.5 | no | 0.7400 | 0.920 [0.852, 0.970] | +0.167 | +0.137 | 0.88 | - |  | RESEARCH_CANDIDATE |
+| Seattle Sounders vs Los Angeles FC | Total goals over 4.5 | no | 0.7300 | 0.920 [0.852, 0.970] | +0.176 | +0.146 | 0.88 | - |  | RESEARCH_CANDIDATE |
+| Seattle Sounders vs Los Angeles FC | away team total over 1.5 | no | 0.5400 | 0.761 [0.651, 0.858] | +0.204 | +0.139 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 1.5 | no | 0.1400 | 0.361 [0.234, 0.485] | +0.213 | +0.133 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away wins by more than 1.5 | no | 0.6600 | 0.859 [0.773, 0.932] | +0.184 | +0.132 | 0.79 | - | * | RESEARCH_CANDIDATE |
-| Seattle Sounders vs Los Angeles FC | away team total over 1.5 | no | 0.5600 | 0.761 [0.651, 0.858] | +0.184 | +0.119 | 0.68 | - | * | RESEARCH_CANDIDATE |
-| Seattle Sounders vs Los Angeles FC | First-half total goals over 1.5 | no | 0.5600 | 0.746 [0.648, 0.842] | +0.169 | +0.111 | 0.67 | - | * | RESEARCH_CANDIDATE |
+| Seattle Sounders vs Los Angeles FC | First-half total goals over 1.5 | no | 0.5500 | 0.746 [0.648, 0.842] | +0.179 | +0.121 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Angers vs Nice | Result: away | no | 0.5300 | 0.741 [0.586, 0.869] | +0.194 | +0.110 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | away team total over 0.5 | no | 0.2100 | 0.405 [0.292, 0.517] | +0.183 | +0.109 | 0.31 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | Result: home | yes | 0.2300 | 0.452 [0.306, 0.601] | +0.210 | +0.108 | 0.33 | 0.225 |  | RESEARCH_CANDIDATE |
+| Austin FC vs Portland Timbers | First-half result: away | no | 0.5600 | 0.742 [0.638, 0.832] | +0.164 | +0.103 | 0.66 | - | * | RESEARCH_CANDIDATE |
+| Austin FC vs Portland Timbers | away team total over 0.5 | no | 0.1000 | 0.274 [0.173, 0.381] | +0.167 | +0.101 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | home team total over 1.5 | no | 0.4300 | 0.641 [0.490, 0.787] | +0.194 | +0.101 | 0.53 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | away wins by more than 2.5 | no | 0.8200 | 0.948 [0.904, 0.982] | +0.117 | +0.096 | 0.92 | - |  | RESEARCH_CANDIDATE |
-| Austin FC vs Portland Timbers | First-half result: away | no | 0.5700 | 0.742 [0.638, 0.832] | +0.155 | +0.093 | 0.66 | - | * | RESEARCH_CANDIDATE |
-| Austin FC vs Portland Timbers | away team total over 0.5 | no | 0.1100 | 0.274 [0.173, 0.381] | +0.157 | +0.091 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | Second-half result: away | no | 0.5500 | 0.723 [0.608, 0.832] | +0.155 | +0.091 | 0.64 | - | * | RESEARCH_CANDIDATE |
+| San Diego FC vs Sporting Kansas City | away team total over 1.5 | no | 0.5600 | 0.730 [0.606, 0.842] | +0.153 | +0.081 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | Total goals over 5.5 | no | 0.8700 | 0.970 [0.937, 0.992] | +0.092 | +0.080 | 0.95 | - |  | RESEARCH_CANDIDATE |
+| Seattle Sounders vs Los Angeles FC | away team total over 2.5 | no | 0.8100 | 0.927 [0.872, 0.971] | +0.107 | +0.078 | 0.89 | - |  | RESEARCH_CANDIDATE |
+| Seattle Sounders vs Los Angeles FC | First-half exact score 0-0 (home-away) | yes | 0.2200 | 0.387 [0.288, 0.492] | +0.155 | +0.078 | 0.29 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | First-half total goals over 0.5 | no | 0.2200 | 0.387 [0.288, 0.492] | +0.155 | +0.078 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | home team total over 2.5 | no | 0.7100 | 0.857 [0.755, 0.944] | +0.133 | +0.077 | 0.79 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | First half: both teams to score | no | 0.7300 | 0.858 [0.789, 0.921] | +0.114 | +0.076 | 0.8 | - | * | RESEARCH_CANDIDATE |
-| San Diego FC vs Sporting Kansas City | away team total over 1.5 | no | 0.5700 | 0.730 [0.606, 0.842] | +0.143 | +0.071 | 0.64 | - | * | RESEARCH_CANDIDATE |
+| Real Salt Lake vs LA Galaxy | btts | no | 0.3100 | 0.475 [0.354, 0.592] | +0.150 | +0.072 | 0.38 | - | * | RESEARCH_CANDIDATE |
+| FC Dallas vs Colorado Rapids | away team total over 0.5 | no | 0.2900 | 0.453 [0.336, 0.569] | +0.148 | +0.070 | 0.35 | - | * | RESEARCH_CANDIDATE |
+| Seattle Sounders vs Los Angeles FC | First-half total goals over 2.5 | no | 0.8100 | 0.922 [0.869, 0.971] | +0.102 | +0.069 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Los Angeles FC | home team total over 0.5 | no | 0.1400 | 0.295 [0.181, 0.423] | +0.147 | +0.069 | 0.2 | - |  | RESEARCH_CANDIDATE |
-| Seattle Sounders vs Los Angeles FC | away team total over 2.5 | no | 0.8200 | 0.927 [0.872, 0.971] | +0.097 | +0.068 | 0.89 | - |  | RESEARCH_CANDIDATE |
-| Seattle Sounders vs Los Angeles FC | First-half exact score 0-0 (home-away) | yes | 0.2300 | 0.387 [0.288, 0.492] | +0.144 | +0.068 | 0.29 | - | * | RESEARCH_CANDIDATE |
-| FC Dallas vs Colorado Rapids | away team total over 0.5 | no | 0.3000 | 0.453 [0.336, 0.569] | +0.138 | +0.060 | 0.35 | - | * | RESEARCH_CANDIDATE |
-| Seattle Sounders vs Los Angeles FC | First-half total goals over 2.5 | no | 0.8200 | 0.922 [0.869, 0.971] | +0.092 | +0.060 | 0.88 | - |  | RESEARCH_CANDIDATE |
+| Austin FC vs Portland Timbers | First half: away wins by more than 1.5 | no | 0.8300 | 0.933 [0.879, 0.971] | +0.093 | +0.066 | 0.9 | - | * | RESEARCH_CANDIDATE |
+| Austin FC vs Portland Timbers | Total goals over 3.5 | no | 0.4600 | 0.640 [0.474, 0.786] | +0.163 | +0.061 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | Angers vs Nice | Result: home | yes | 0.2700 | 0.462 [0.282, 0.638] | +0.178 | +0.059 | 0.32 | - |  | RESEARCH_CANDIDATE |
-| Austin FC vs Portland Timbers | First half: away wins by more than 1.5 | no | 0.8400 | 0.933 [0.879, 0.971] | +0.084 | +0.057 | 0.9 | - | * | RESEARCH_CANDIDATE |
+| FC Dallas vs Colorado Rapids | away team total over 1.5 | no | 0.6700 | 0.802 [0.703, 0.890] | +0.116 | +0.057 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs LA Galaxy | Total goals over 3.5 | no | 0.5000 | 0.669 [0.511, 0.821] | +0.152 | +0.055 | 0.55 | 0.499 | * | RESEARCH_CANDIDATE |
 | San Diego FC vs Sporting Kansas City | away team total over 0.5 | no | 0.2300 | 0.373 [0.257, 0.494] | +0.131 | +0.055 | 0.28 | - |  | RESEARCH_CANDIDATE |
 | FC Dallas vs Colorado Rapids | btts | no | 0.4100 | 0.555 [0.438, 0.669] | +0.128 | +0.053 | 0.46 | - | * | RESEARCH_CANDIDATE |
-| Real Salt Lake vs LA Galaxy | btts | no | 0.3300 | 0.475 [0.354, 0.592] | +0.129 | +0.052 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Austin FC vs Portland Timbers | home wins by more than 1.5 | yes | 0.1000 | 0.246 [0.126, 0.378] | +0.140 | +0.052 | 0.14 | - |  | RESEARCH_CANDIDATE |
-| Austin FC vs Portland Timbers | Total goals over 3.5 | no | 0.4700 | 0.640 [0.474, 0.786] | +0.153 | +0.051 | 0.52 | - | * | RESEARCH_CANDIDATE |
+| Austin FC vs Portland Timbers | Total goals over 4.5 | no | 0.6600 | 0.802 [0.669, 0.908] | +0.127 | +0.052 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | btts | no | 0.4300 | 0.577 [0.443, 0.696] | +0.129 | +0.049 | 0.47 | - | * | RESEARCH_CANDIDATE |
-| Real Salt Lake vs LA Galaxy | Total goals over 2.5 | no | 0.2900 | 0.458 [0.300, 0.626] | +0.153 | +0.048 | 0.33 | - |  | RESEARCH_CANDIDATE |
-| FC Dallas vs Colorado Rapids | away team total over 1.5 | no | 0.6800 | 0.802 [0.703, 0.890] | +0.106 | +0.047 | 0.72 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1561
-action_NO_QUOTE: 492
-action_RESEARCH_CANDIDATE: 125
+action_NO_EDGE: 1562
+action_NO_QUOTE: 490
+action_RESEARCH_CANDIDATE: 126
 contract_sides: 2178
 fixtures: 37
 fixtures_model_invalidated: 0
