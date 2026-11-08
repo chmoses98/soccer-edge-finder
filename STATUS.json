@@ -1,49 +1,40 @@
 {
-  "as_of": "2026-11-08T11:53:17.195331+00:00",
-  "events": 16,
+  "as_of": "2026-11-08T11:59:18.351658+00:00",
+  "events": 5,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 16,
+  "fixtures_mapped": 5,
   "health": {
-    "reasons": [
-      "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=6"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
-    "eng.1",
-    "fra.1",
-    "ita.1"
+    "esp.1"
   ],
   "lineups": {
-    "captured": 12,
-    "events": 16,
+    "captured": 0,
+    "events": 5,
     "failures": [],
-    "published_post": 1,
+    "published_post": 0,
     "published_pre_kickoff": 0,
-    "unchanged": 4,
-    "unpublished": 15
+    "unchanged": 5,
+    "unpublished": 5
   },
   "map_proposals": {},
   "map_version": "4",
   "results_appended": 0,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
-  "scoreboard_queries": 3,
+  "scoreboard_queries": 1,
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 7,
-    "events": 16,
-    "failures": [
-      "401876410: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Brest&count=5&language=en&forma",
-      "401876409: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Le%20Havre&count=5&language=en&",
-      "401876408: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Le%20Mans&count=5&language=en&f"
-    ],
+    "captured": 5,
+    "events": 5,
+    "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 6,
-    "stopped": "consecutive_failures"
+    "skipped": 0,
+    "stopped": null
   }
 }
