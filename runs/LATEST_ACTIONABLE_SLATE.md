@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261108T035308Z-c2b592` · generated 2026-11-08T03:53:08.993547Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261108T040809Z-a41240` · generated 2026-11-08T04:08:09.057281Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-08T03:50:03.152758Z (CURRENT at publish; CURRENT until 2026-11-08T04:10:03.152758Z, STALE after 2026-11-08T04:20:03.152758Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-08T04:05:03.188583Z (CURRENT at publish; CURRENT until 2026-11-08T04:25:03.188583Z, STALE after 2026-11-08T04:35:03.188583Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-08T02:09:35.786173Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.31s
+model board generated 2026-11-08T02:09:35.786173Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.28s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -46,9 +46,9 @@ model board generated 2026-11-08T02:09:35.786173Z · simulations this update: 0 
 | Angers vs Nice | Result: away | no | 0.5300 | 0.741 [0.586, 0.869] | +0.194 | +0.110 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Angers vs Nice | Result: home | yes | 0.2700 | 0.462 [0.282, 0.638] | +0.178 | +0.059 | 0.32 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | btts | no | 0.4300 | 0.577 [0.443, 0.696] | +0.129 | +0.049 | 0.47 | - | * | RESEARCH_CANDIDATE |
-| León vs Guadalajara | away team total over 2.5 | no | 0.7800 | 0.872 [0.779, 0.947] | +0.080 | +0.031 | 0.81 | - | * | RESEARCH_CANDIDATE |
-| León vs Guadalajara | away team total over 1.5 | no | 0.5300 | 0.664 [0.520, 0.795] | +0.116 | +0.030 | 0.55 | - |  | RESEARCH_CANDIDATE |
+| León vs Guadalajara | away team total over 1.5 | no | 0.5300 | 0.664 [0.520, 0.795] | +0.116 | +0.030 | 0.55 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | btts | no | 0.4100 | 0.530 [0.411, 0.646] | +0.103 | +0.025 | 0.43 | - | * | RESEARCH_CANDIDATE |
+| León vs Guadalajara | away team total over 2.5 | no | 0.7900 | 0.872 [0.779, 0.947] | +0.070 | +0.022 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Total goals over 3.5 | no | 0.6700 | 0.785 [0.635, 0.900] | +0.099 | +0.020 | 0.69 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Total goals over 1.5 | no | 0.2100 | 0.336 [0.189, 0.479] | +0.114 | +0.018 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | Total goals over 4.5 | no | 0.8300 | 0.901 [0.806, 0.967] | +0.061 | +0.017 | 0.84 | - |  | RESEARCH_CANDIDATE |
@@ -59,7 +59,7 @@ model board generated 2026-11-08T02:09:35.786173Z · simulations this update: 0 
 | León vs Guadalajara | Total goals over 1.5 | no | 0.2100 | 0.319 [0.192, 0.446] | +0.097 | +0.010 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 2.5 | no | 0.4500 | 0.575 [0.417, 0.723] | +0.108 | +0.008 | 0.45 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | First-half exact score 0-0 (home-away) | yes | 0.2700 | 0.363 [0.238, 0.482] | +0.079 | +0.006 | 0.27 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Puebla | Total goals over 5.5 | no | 0.9300 | 0.959 [0.910, 0.991] | +0.024 | +0.006 | 0.93 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Puebla | First-half total goals over 0.5 | no | 0.2700 | 0.363 [0.238, 0.482] | +0.079 | +0.006 | 0.27 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | away team total over 0.5 | no | 0.2200 | 0.313 [0.199, 0.433] | +0.081 | +0.004 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | First-half exact score 0-0 (home-away) | yes | 0.2700 | 0.355 [0.238, 0.472] | +0.072 | +0.004 | 0.27 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Puebla | away team total over 1.5 | no | 0.7100 | 0.795 [0.681, 0.890] | +0.071 | +0.004 | 0.71 | - |  | RESEARCH_CANDIDATE |
