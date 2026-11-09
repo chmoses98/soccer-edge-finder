@@ -1,7 +1,7 @@
 {
  "counts": {
   "DISPATCHER_CLOSE_NO_ATTEMPT": 633,
-  "MISSED_DISPATCHER_CLOSE": 95,
+  "MISSED_DISPATCHER_CLOSE": 96,
   "PINNACLE_VALID_CLOSE": 71,
   "CLOSE_BLOCKED_BUDGET": 16,
   "PINNACLE_QUOTED_NOTHING": 2
@@ -3350,6 +3350,11 @@
   "fx:mex.liga_mx:2026:mex.queretaro:mex.cruz_azul": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:mex.liga_mx:2026:mex.queretaro:mex.puebla": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
    "batch_id": null
   },
   "fx:mex.liga_mx:2026:mex.san_luis:mex.atlas": {
