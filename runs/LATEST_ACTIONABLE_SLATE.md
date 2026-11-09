@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261109T013826Z-0633db` · generated 2026-11-09T01:38:26.247934Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261109T014338Z-9865c8` · generated 2026-11-09T01:43:38.857286Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-09T01:35:27.166455Z (CURRENT at publish; CURRENT until 2026-11-09T01:55:27.166455Z, STALE after 2026-11-09T02:05:27.166455Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-09T01:40:37.660504Z (CURRENT at publish; CURRENT until 2026-11-09T02:00:37.660504Z, STALE after 2026-11-09T02:10:37.660504Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-09T01:08:32.897255Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.15s
+model board generated 2026-11-09T01:08:32.897255Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.12s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -21,7 +21,7 @@ model board generated 2026-11-09T01:08:32.897255Z · simulations this update: 0 
 | León vs Guadalajara | away team total over 1.5 | no | 0.4700 | 0.663 [0.511, 0.789] | +0.175 | +0.092 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | away team total over 2.5 | no | 0.7500 | 0.871 [0.772, 0.944] | +0.108 | +0.061 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | away team total over 0.5 | no | 0.1700 | 0.312 [0.193, 0.425] | +0.132 | +0.058 | 0.22 | - |  | RESEARCH_CANDIDATE |
-| León vs Guadalajara | btts | no | 0.3900 | 0.536 [0.411, 0.651] | +0.129 | +0.053 | 0.44 | - | * | RESEARCH_CANDIDATE |
+| León vs Guadalajara | btts | no | 0.4000 | 0.536 [0.411, 0.651] | +0.119 | +0.042 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 3.5 | no | 0.6500 | 0.777 [0.645, 0.885] | +0.111 | +0.037 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Total goals over 2.5 | no | 0.4300 | 0.579 [0.421, 0.721] | +0.132 | +0.034 | 0.46 | - |  | RESEARCH_CANDIDATE |
 | León vs Guadalajara | Result: away | no | 0.4900 | 0.630 [0.479, 0.763] | +0.122 | +0.032 | 0.52 | 0.506 | * | RESEARCH_CANDIDATE |
