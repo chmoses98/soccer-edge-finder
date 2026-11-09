@@ -2,8 +2,8 @@
  "counts": {
   "DISPATCHER_CLOSE_NO_ATTEMPT": 633,
   "MISSED_DISPATCHER_CLOSE": 96,
-  "PINNACLE_VALID_CLOSE": 71,
   "CLOSE_BLOCKED_BUDGET": 16,
+  "PINNACLE_VALID_CLOSE": 72,
   "PINNACLE_QUOTED_NOTHING": 2
  },
  "fixtures": {
@@ -3266,6 +3266,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:mex.liga_mx:2026:mex.leon:mex.guadalajara": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261109T015500Z"
   },
   "fx:mex.liga_mx:2026:mex.leon:mex.toluca": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
