@@ -4,43 +4,43 @@
   "github_backup_minutes": 60
  },
  "definition": "capture_success_rate = delivered / eligible horizons whose window closed in the span (NOT_APPLICABLE excluded); close_success_rate = fixtures with a T-15 or T-5 delivery / fixtures whose close windows closed in the span",
- "generated_at": "2026-11-09T02:13:14Z",
+ "generated_at": "2026-11-09T03:12:22Z",
  "last_24h": {
-  "capture_runs": 4,
+  "capture_runs": 5,
   "capture_runs_failed": 0,
-  "capture_success_rate": 0.8454545454545455,
-  "close_fixtures_delivered": 32,
-  "close_fixtures_eligible": 42,
-  "close_success_rate": 0.7619047619047619,
+  "capture_success_rate": 0.8425925925925926,
+  "close_fixtures_delivered": 31,
+  "close_fixtures_eligible": 41,
+  "close_success_rate": 0.7560975609756098,
   "credits_spent": 60,
   "external_heartbeats_actual": 0,
   "external_heartbeats_expected": null,
   "external_trigger_success": null,
-  "fixtures_with_horizons": 48,
+  "fixtures_with_horizons": 47,
   "github_backup_actual": 4,
   "github_backup_expected": 24,
   "github_backup_success": 0.16666666666666666,
-  "heartbeats_actual": 19,
+  "heartbeats_actual": 18,
   "heartbeats_by_source": {
    "chain": 4,
    "github-schedule-backup": 4,
-   "workflow-run": 11
+   "workflow-run": 10
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
   "horizon_states": {
-   "DELIVERED": 186,
+   "DELIVERED": 182,
    "MISSED_BEFORE_WAKE": 28,
    "MISSED_EXECUTION_FAILURE": 6
   },
-  "horizons_delivered": 186,
-  "horizons_eligible": 220,
+  "horizons_delivered": 182,
+  "horizons_eligible": 216,
   "horizons_missed": 34,
   "paid_calls": 20,
   "span_hours": 24.0
  },
  "last_7d": {
-  "capture_runs": 28,
+  "capture_runs": 27,
   "capture_runs_failed": 1,
   "capture_success_rate": 0.9393530997304582,
   "close_fixtures_delivered": 135,
@@ -54,11 +54,11 @@
   "github_backup_actual": 26,
   "github_backup_expected": 168,
   "github_backup_success": 0.15476190476190477,
-  "heartbeats_actual": 125,
+  "heartbeats_actual": 123,
   "heartbeats_by_source": {
-   "chain": 26,
+   "chain": 25,
    "github-schedule-backup": 26,
-   "workflow-run": 73
+   "workflow-run": 72
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
