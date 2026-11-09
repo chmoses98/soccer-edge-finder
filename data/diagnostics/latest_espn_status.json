@@ -1,13 +1,11 @@
 {
-  "as_of": "2026-11-08T23:47:13.173225+00:00",
-  "events": 652,
-  "events_skipped_unmapped": 409,
-  "fixtures_mapped": 243,
+  "as_of": "2026-11-09T02:11:26.492193+00:00",
+  "events": 630,
+  "events_skipped_unmapped": 397,
+  "fixtures_mapped": 233,
   "health": {
-    "reasons": [
-      "weather_failures:2"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
     "afc.champions",
@@ -80,30 +78,15 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 54,
+    "captured": 11,
     "events": 150,
     "failures": [],
-    "published_post": 136,
-    "published_pre_kickoff": 1,
-    "unchanged": 96,
-    "unpublished": 13
+    "published_post": 140,
+    "published_pre_kickoff": 0,
+    "unchanged": 139,
+    "unpublished": 10
   },
   "map_proposals": {
-    "bel.1": {
-      "ambiguous": {},
-      "proposed": {},
-      "unresolved": {
-        "936": "Sint-Truidense"
-      }
-    },
-    "den.1": {
-      "ambiguous": {},
-      "proposed": {},
-      "unresolved": {
-        "7853": "AGF",
-        "909": "F.C. K\u00f8benhavn"
-      }
-    },
     "eng.3": {
       "ambiguous": {},
       "proposed": {
@@ -541,57 +524,10 @@
         "9021": "Frejus",
         "9024": "Le Poire SV"
       }
-    },
-    "nor.1": {
-      "ambiguous": {},
-      "proposed": {},
-      "unresolved": {
-        "620": "SK Brann",
-        "987": "Lillestrom"
-      }
-    },
-    "swe.1": {
-      "ambiguous": {},
-      "proposed": {},
-      "unresolved": {
-        "20301": "Mj\u00e4llby AIF"
-      }
-    },
-    "uefa.europa": {
-      "ambiguous": {},
-      "proposed": {},
-      "unresolved": {
-        "1010": "OFI Crete",
-        "13083": "Hapoel Be'er",
-        "20024": "Ararat-Armenia",
-        "21615": "Torreense",
-        "490": "Levski Sofia",
-        "987": "Lillestrom"
-      }
-    },
-    "uefa.europa.conf": {
-      "ambiguous": {},
-      "proposed": {},
-      "unresolved": {
-        "19246": "Riga FC",
-        "20025": "Iberia 1999",
-        "20028": "Kauno Zalgiris",
-        "20301": "Mj\u00e4llby AIF",
-        "20703": "Inter D'Escaldes",
-        "21943": "Egnatia",
-        "3024": "FC Thun",
-        "489": "Hajduk Split",
-        "620": "SK Brann",
-        "7853": "AGF",
-        "8089": "CSU Craiova",
-        "8169": "KuPS Kuopio",
-        "909": "F.C. K\u00f8benhavn",
-        "936": "Sint-Truidense"
-      }
     }
   },
   "map_version": "4",
-  "results_appended": 22,
+  "results_appended": 2,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -620,7 +556,6 @@
     "usa.usl.1"
   ],
   "unmapped_team_ids": {
-    "1010": "OFI Crete",
     "10167": "AFC Hornchurch",
     "10225": "Chauny",
     "10232": "Vitre",
@@ -640,7 +575,6 @@
     "11895": "Bourg-Peronnas",
     "12587": "Amorebieta",
     "12957": "Sabl\u00e9 FC",
-    "13083": "Hapoel Be'er",
     "131494": "Macclesfield FC",
     "131572": "Stade B\u00e9thunois",
     "131576": "Montreuil FC",
@@ -768,21 +702,15 @@
     "18901": "Biesheim",
     "18906": "Le Puy",
     "18907": "Senlis",
-    "19246": "Riga FC",
     "19262": "Harrogate Town",
     "19288": "CD Artistico Navalcarnero",
     "19386": "Saint-Pryv\u00e9 Saint Hilaire",
     "19388": "FC Limonest",
     "19390": "Stade Pontivy",
     "19393": "GSI Pontivy",
-    "20024": "Ararat-Armenia",
-    "20025": "Iberia 1999",
-    "20028": "Kauno Zalgiris",
     "20272": "FC Challans",
     "20275": "ESA Linas-Montlhery",
-    "20301": "Mj\u00e4llby AIF",
     "204": "Bolivia",
-    "20703": "Inter D'Escaldes",
     "20770": "Cray Wanderers",
     "20771": "Marine",
     "20776": "Anaitasuna",
@@ -791,14 +719,12 @@
     "21291": "Calvo Sotelo",
     "21303": "ES Thaon",
     "21306": "AS Cannes",
-    "21615": "Torreense",
     "21711": "Alvechurch",
     "21769": "La Tamponnaise",
     "21772": "Lannion",
     "21773": "Strasbourg Koenigshoffen",
     "21804": "Diables Noirs",
     "21817": "AF Virois",
-    "21943": "Egnatia",
     "22043": "Mijas Las Lagunas",
     "22138": "US Feurs",
     "22139": "Racing Club de France",
@@ -824,7 +750,6 @@
     "293": "Dover Athletic",
     "301": "Luton Town",
     "302": "Shrewsbury Town",
-    "3024": "FC Thun",
     "303": "Rochdale",
     "304": "Mansfield Town",
     "307": "Plymouth Argyle",
@@ -889,13 +814,10 @@
     "454": "Russia",
     "4703": "Salford City",
     "4744": "Calais",
-    "489": "Hajduk Split",
     "4895": "Indonesia",
-    "490": "Levski Sofia",
     "5401": "Real Jaen CF",
     "6014": "Yemen",
     "6167": "Palestine",
-    "620": "SK Brann",
     "632": "Aldershot Town",
     "633": "Altrincham",
     "635": "Newport County",
@@ -919,28 +841,19 @@
     "7730": "Nimes",
     "7732": "Dunkerque",
     "7733": "Bayonne",
-    "7853": "AGF",
     "7869": "Boulogne",
-    "8089": "CSU Craiova",
-    "8169": "KuPS Kuopio",
     "841": "Kuwait",
     "9009": "Rouen",
     "9010": "Epinal",
     "9011": "Selongey",
     "9017": "Avranches",
     "9021": "Frejus",
-    "9024": "Le Poire SV",
-    "909": "F.C. K\u00f8benhavn",
-    "936": "Sint-Truidense",
-    "987": "Lillestrom"
+    "9024": "Le Poire SV"
   },
   "weather": {
-    "captured": 8,
-    "events": 10,
-    "failures": [
-      "401877908: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Cali&count=5&language=en&format",
-      "401877901: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Barranquilla&count=5&language=e"
-    ],
+    "captured": 4,
+    "events": 4,
+    "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
