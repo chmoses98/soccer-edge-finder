@@ -1,23 +1,23 @@
 {
  "schema": "dispatch_reliability_v1",
- "generated_at": "2026-11-10T18:09:05Z",
+ "generated_at": "2026-11-10T22:28:57Z",
  "cadence": {
   "external_heartbeat_minutes": null,
   "github_backup_minutes": 60
  },
  "last_wake": {
-  "started_at": "2026-11-10T17:46:51Z",
-  "trigger_source": "github-schedule-backup",
+  "started_at": "2026-11-10T22:22:08Z",
+  "trigger_source": "workflow-run",
   "status": "OK",
   "no_action_reason": null
  },
  "last_24h": {
   "span_hours": 24.0,
-  "heartbeats_actual": 18,
+  "heartbeats_actual": 17,
   "heartbeats_by_source": {
    "chain": 4,
    "github-schedule-backup": 3,
-   "workflow-run": 11
+   "workflow-run": 10
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -43,10 +43,10 @@
  },
  "last_7d": {
   "span_hours": 168.0,
-  "heartbeats_actual": 124,
+  "heartbeats_actual": 122,
   "heartbeats_by_source": {
-   "chain": 25,
-   "github-schedule-backup": 26,
+   "chain": 24,
+   "github-schedule-backup": 25,
    "workflow-run": 73
   },
   "heartbeats_failed": 0,
@@ -55,23 +55,23 @@
   "external_heartbeats_actual": 0,
   "external_trigger_success": null,
   "github_backup_expected": 168,
-  "github_backup_actual": 26,
-  "github_backup_success": 0.15476190476190477,
-  "capture_runs": 29,
+  "github_backup_actual": 25,
+  "github_backup_success": 0.1488095238095238,
+  "capture_runs": 28,
   "capture_runs_failed": 1,
-  "paid_calls": 71,
-  "credits_spent": 213,
+  "paid_calls": 67,
+  "credits_spent": 201,
   "fixtures_with_horizons": 140,
-  "horizons_eligible": 677,
-  "horizons_delivered": 634,
+  "horizons_eligible": 673,
+  "horizons_delivered": 630,
   "horizons_missed": 43,
   "horizon_states": {
-   "DELIVERED": 634,
+   "DELIVERED": 630,
    "MISSED_BEFORE_WAKE": 36,
    "MISSED_EXECUTION_FAILURE": 7,
    "NOT_APPLICABLE": 4
   },
-  "capture_success_rate": 0.9364844903988183,
+  "capture_success_rate": 0.9361069836552749,
   "close_fixtures_eligible": 134,
   "close_fixtures_delivered": 122,
   "close_success_rate": 0.9104477611940298
