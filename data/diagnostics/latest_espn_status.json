@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-11-10T12:58:48.348918+00:00",
-  "events": 617,
-  "events_skipped_unmapped": 384,
+  "as_of": "2026-11-10T21:34:04.506701+00:00",
+  "events": 619,
+  "events_skipped_unmapped": 386,
   "fixtures_mapped": 233,
   "health": {
     "reasons": [
-      "weather_failures:1"
+      "weather_failures:2"
     ],
     "state": "DEGRADED"
   },
@@ -80,13 +80,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 18,
-    "events": 19,
+    "captured": 23,
+    "events": 23,
     "failures": [],
-    "published_post": 7,
+    "published_post": 18,
     "published_pre_kickoff": 0,
-    "unchanged": 1,
-    "unpublished": 12
+    "unchanged": 0,
+    "unpublished": 5
   },
   "map_proposals": {
     "eng.3": {
@@ -297,6 +297,8 @@
         "4388": "Lebanon",
         "4397": "United Arab Emirates",
         "454": "Russia",
+        "4863": "Tahiti",
+        "4884": "Cook Islands",
         "4895": "Indonesia",
         "6014": "Yemen",
         "6167": "Palestine",
@@ -787,6 +789,8 @@
     "454": "Russia",
     "4703": "Salford City",
     "4744": "Calais",
+    "4863": "Tahiti",
+    "4884": "Cook Islands",
     "4895": "Indonesia",
     "5401": "Real Jaen CF",
     "6014": "Yemen",
@@ -824,14 +828,15 @@
     "9024": "Le Poire SV"
   },
   "weather": {
-    "captured": 7,
-    "events": 19,
+    "captured": 10,
+    "events": 14,
     "failures": [
-      "401860435: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-23.3103&longitude=-51.1628&hourly="
+      "401929795: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=6.8692&longitude=-58.2890&hourly=te",
+      "401929713: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=23.1330&longitude=-82.3830&hourly=t"
     ],
     "forecast_miss": 0,
-    "geocode_miss": 1,
-    "no_venue": 10,
+    "geocode_miss": 2,
+    "no_venue": 0,
     "skipped": 0,
     "stopped": null
   }
