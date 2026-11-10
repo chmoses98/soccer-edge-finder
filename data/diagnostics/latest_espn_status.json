@@ -1,11 +1,13 @@
 {
-  "as_of": "2026-11-10T04:17:58.391936+00:00",
+  "as_of": "2026-11-10T12:58:48.348918+00:00",
   "events": 617,
   "events_skipped_unmapped": 384,
   "fixtures_mapped": 233,
   "health": {
-    "reasons": [],
-    "state": "HEALTHY"
+    "reasons": [
+      "weather_failures:1"
+    ],
+    "state": "DEGRADED"
   },
   "leagues": [
     "afc.champions",
@@ -78,13 +80,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 17,
-    "events": 27,
+    "captured": 18,
+    "events": 19,
     "failures": [],
-    "published_post": 16,
+    "published_post": 7,
     "published_pre_kickoff": 0,
-    "unchanged": 10,
-    "unpublished": 11
+    "unchanged": 1,
+    "unpublished": 12
   },
   "map_proposals": {
     "eng.3": {
@@ -92,7 +94,6 @@
       "proposed": {
         "301": "eng.luton",
         "307": "eng.plymouth",
-        "311": "eng.oxford",
         "399": "eng.sheffield_wednesday"
       },
       "unresolved": {
@@ -105,7 +106,6 @@
         "335": "Huddersfield Town",
         "338": "Reading",
         "340": "Notts County",
-        "342": "Peterborough United",
         "344": "Wycombe Wanderers",
         "346": "Blackpool",
         "350": "Wigan Athletic",
@@ -825,8 +825,10 @@
   },
   "weather": {
     "captured": 7,
-    "events": 18,
-    "failures": [],
+    "events": 19,
+    "failures": [
+      "401860435: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-23.3103&longitude=-51.1628&hourly="
+    ],
     "forecast_miss": 0,
     "geocode_miss": 1,
     "no_venue": 10,
