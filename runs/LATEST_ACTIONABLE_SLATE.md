@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261110T165035Z-65785f` · generated 2026-11-10T16:50:35.823217Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261110T234236Z-a76f19` · generated 2026-11-10T23:42:36.445878Z · trigger `run_soccer` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-10T16:47:29.647454Z (CURRENT at publish; CURRENT until 2026-11-10T17:07:29.647454Z, STALE after 2026-11-10T17:17:29.647454Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-10T23:27:32.906384Z (CURRENT at publish; CURRENT until 2026-11-10T23:47:32.906384Z, STALE after 2026-11-10T23:57:32.906384Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated - · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.03s
+model board generated 2026-11-10T23:41:32.453327Z · simulations this update: 14 · Odds API calls this update: 0 (credits 0) · reprice 0.28s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,6 +12,20 @@ model board generated - · simulations this update: 0 · Odds API calls this upd
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
+| 2026-11-12T17:00:00Z | Lithuania vs Suriname (fifa.friendly) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-12T17:00:00Z | Armenia vs Cyprus (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-12T17:00:00Z | Türkiye vs Belgium (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-12T19:00:00Z | Barbados vs Guadeloupe (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-12T19:00:00Z | Cayman Islands vs Guyana (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-12T19:45:00Z | Albania vs Finland (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-12T19:45:00Z | Czechia vs Spain (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-12T19:45:00Z | England vs Croatia (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-12T19:45:00Z | Italy vs France (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-12T19:45:00Z | Montenegro vs Latvia (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-12T19:45:00Z | San Marino vs Belarus (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-12T20:00:00Z | Bonaire vs Cuba (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-12T22:00:00Z | Aruba vs Martinique (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-12T23:00:00Z | Antigua and Barbuda vs Trinidad and Tobago (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
 ## Candidates on CURRENT prices (0; RESEARCH_ONLY = analysis, never a bet)
 
@@ -21,8 +35,11 @@ model board generated - · simulations this update: 0 · Odds API calls this upd
 ## Counts
 
 ```
-contract_sides: 0
-fixtures: 0
+action_EXCLUDED_BY_GATE: 61
+action_NO_EDGE: 932
+action_NO_QUOTE: 151
+contract_sides: 1144
+fixtures: 14
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
