@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261111T095315Z-486f8b` · generated 2026-11-11T09:53:15.963460Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261111T152524Z-c7f716` · generated 2026-11-11T15:25:24.889582Z · trigger `run_soccer` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-11T09:50:05.471329Z (CURRENT at publish; CURRENT until 2026-11-11T10:10:05.471329Z, STALE after 2026-11-11T10:20:05.471329Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-11T15:09:46.032013Z (CURRENT at publish; CURRENT until 2026-11-11T15:29:46.032013Z, STALE after 2026-11-11T15:39:46.032013Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-10T23:41:32.453327Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.46s
+model board generated 2026-11-11T15:23:49.831951Z · simulations this update: 16 · Odds API calls this update: 0 (credits 0) · reprice 0.66s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -26,6 +26,8 @@ model board generated 2026-11-10T23:41:32.453327Z · simulations this update: 0 
 | 2026-11-12T20:00:00Z | Bonaire vs Cuba (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-12T22:00:00Z | Aruba vs Martinique (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-12T23:00:00Z | Antigua and Barbuda vs Trinidad and Tobago (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-13T00:30:00Z | Curaçao vs Panama (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-13T14:45:00Z | Qatar vs Australia (fifa.friendly) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
 ## Candidates on CURRENT prices (0; RESEARCH_ONLY = analysis, never a bet)
 
@@ -35,11 +37,11 @@ model board generated 2026-11-10T23:41:32.453327Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 68
-action_NO_EDGE: 934
-action_NO_QUOTE: 142
-contract_sides: 1144
-fixtures: 14
+action_EXCLUDED_BY_GATE: 73
+action_NO_EDGE: 986
+action_NO_QUOTE: 141
+contract_sides: 1200
+fixtures: 16
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
