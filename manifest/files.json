@@ -16764,16 +16764,16 @@
       "sha256_prefix": "0752a0655f8982f5fb24f4faa3983f6ab2b88920202768beaf4eae4dd9349f4d"
     },
     "dispatch/heartbeats/2026-11-11.jsonl": {
-      "byte_length": 10929,
+      "byte_length": 12630,
       "closed": false,
       "day": "2026-11-11",
       "first_manifested_at": "2026-11-11T02:32:45.133765Z",
       "immutable": false,
-      "line_count": 17,
+      "line_count": 20,
       "record_level": false,
       "record_type": "dispatch_heartbeat",
       "recovery_id": null,
-      "sha256_prefix": "e008a0fad6149b38e90f38709828c7e97b8f196a691b654cf768161adbdfd587"
+      "sha256_prefix": "dfb9bf87890b16588e7c009b476264ec1a4df5adc7a856c8c6cfcf6d94799ae2"
     },
     "dispatch/horizons.jsonl": {
       "byte_length": 1940929,
@@ -17374,16 +17374,16 @@
       "sha256_prefix": "a80fcf937fe608e5b1fa88e6f0086d2888d213240e26dbf8be459501baefce43"
     },
     "dispatch/slate_log/2026-11-11.jsonl": {
-      "byte_length": 10908,
+      "byte_length": 14892,
       "closed": false,
       "day": "2026-11-11",
       "first_manifested_at": "2026-11-11T02:19:24.923261Z",
       "immutable": false,
-      "line_count": 4,
+      "line_count": 5,
       "record_level": false,
       "record_type": "slate_reprice_log",
       "recovery_id": null,
-      "sha256_prefix": "c4e879f753a9e37e7926658c3c316a00b558ad175a77810d0f361e47d72d8637"
+      "sha256_prefix": "e09040721d49da32b5ebf090d5e3d7cebe657937930be362f6603176a2c736e7"
     },
     "fixtures/espn/2026-09-28/espn-034707.json": {
       "byte_length": 157757,
@@ -41687,16 +41687,16 @@
       "sha256_prefix": "d39cca3afce58518c204327446d6b10949caae7b3714f0a33b31a3e58a59a115"
     },
     "predictions/2026-11-11/predictions.jsonl": {
-      "byte_length": 2820700,
+      "byte_length": 8885927,
       "closed": false,
       "day": "2026-11-11",
       "first_manifested_at": "2026-11-11T15:27:38.633496Z",
       "immutable": false,
-      "line_count": 600,
+      "line_count": 1897,
       "record_level": true,
       "record_type": "prediction",
       "recovery_id": null,
-      "sha256_prefix": "4a53ee0a02182945284c135f4b00161fb2cf9c74d764edabc0a44886e641f79d"
+      "sha256_prefix": "f78a0541a41de23a67cd2f32f214d7bcb829f56a2655ba9150a142c9cf3c972f"
     },
     "recovery/cmp-20261002T100019Z.json": {
       "byte_length": 6776,
@@ -85260,6 +85260,42 @@
       "record_type": "run_output",
       "recovery_id": null,
       "sha256_prefix": "9ca143598b319b511d2b2cec03c2fad0da847c56b8aca53072a8ad887bd8dc93"
+    },
+    "runs/2026-11-11/run-20261111T223147Z-f8ffb2/RUN_SOCCER.md": {
+      "byte_length": 6729,
+      "closed": true,
+      "day": "2026-11-11",
+      "first_manifested_at": "2026-11-11T22:37:05.818689Z",
+      "immutable": true,
+      "line_count": null,
+      "record_level": false,
+      "record_type": "run_output",
+      "recovery_id": null,
+      "sha256_prefix": "b47034c45a11f0b6e782815a1f5b9bf3ef545672a623abe45572522da1d1ac38"
+    },
+    "runs/2026-11-11/run-20261111T223147Z-f8ffb2/coverage.json": {
+      "byte_length": 642,
+      "closed": true,
+      "day": "2026-11-11",
+      "first_manifested_at": "2026-11-11T22:37:05.818782Z",
+      "immutable": true,
+      "line_count": null,
+      "record_level": false,
+      "record_type": "run_output",
+      "recovery_id": null,
+      "sha256_prefix": "64cc91e397e5d82df50f52b153c797a6e659f2d0dd028c5003f113a9888da7e4"
+    },
+    "runs/2026-11-11/run-20261111T223147Z-f8ffb2/run_output.v1.json": {
+      "byte_length": 22695,
+      "closed": true,
+      "day": "2026-11-11",
+      "first_manifested_at": "2026-11-11T22:37:05.818868Z",
+      "immutable": true,
+      "line_count": null,
+      "record_level": false,
+      "record_type": "run_output",
+      "recovery_id": null,
+      "sha256_prefix": "25533f93d9866c936dfb6abc4f4aee73c2754707f6de7762c87a4dea6d12218d"
     },
     "settlements/2026-09-28/predictions.jsonl": {
       "byte_length": 810853,
@@ -132938,5 +132974,5 @@
     }
   },
   "manifest_version": 1,
-  "updated_at": "2026-11-11T21:35:17.418151Z"
+  "updated_at": "2026-11-11T22:37:05.911016Z"
 }
