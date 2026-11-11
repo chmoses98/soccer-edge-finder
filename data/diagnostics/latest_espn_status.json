@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-11T09:32:39.989855+00:00",
-  "events": 477,
+  "as_of": "2026-11-11T18:24:17.636322+00:00",
+  "events": 476,
   "events_skipped_unmapped": 309,
-  "fixtures_mapped": 168,
+  "fixtures_mapped": 167,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=7"
+      "weather_stopped:consecutive_failures:skipped=44"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 17,
-    "events": 17,
+    "captured": 36,
+    "events": 36,
     "failures": [],
-    "published_post": 11,
+    "published_post": 12,
     "published_pre_kickoff": 0,
     "unchanged": 0,
-    "unpublished": 6
+    "unpublished": 24
   },
   "map_proposals": {
     "eng.3": {
@@ -154,7 +154,7 @@
         "17573": "Trival Valderas",
         "19288": "CD Artistico Navalcarnero",
         "20776": "Anaitasuna",
-        "21291": "Calvo Sotelo",
+        "21291": "CS Puertollano",
         "21723": "Utebo",
         "22043": "Mijas Las Lagunas",
         "22437": "CD Minera",
@@ -565,7 +565,7 @@
     "20776": "Anaitasuna",
     "20871": "Rumilly Valli\u00e8res",
     "20876": "Loon Plage FC",
-    "21291": "Calvo Sotelo",
+    "21291": "CS Puertollano",
     "21303": "ES Thaon",
     "21306": "AS Cannes",
     "21723": "Utebo",
@@ -650,17 +650,17 @@
     "9024": "Le Poire SV"
   },
   "weather": {
-    "captured": 11,
-    "events": 23,
+    "captured": 18,
+    "events": 68,
     "failures": [
-      "401929795: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=6.8692&longitude=-58.2890&hourly=te",
-      "401929713: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=23.1330&longitude=-82.3830&hourly=t",
-      "401929712: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=17.2955&longitude=-62.7250&hourly=t"
+      "401880751: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=52.6386&longitude=-1.1317&hourly=te",
+      "401880750: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Luton&count=5&language=en&forma",
+      "401880749: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Milton%20Keynes&count=5&languag"
     ],
     "forecast_miss": 0,
-    "geocode_miss": 2,
+    "geocode_miss": 3,
     "no_venue": 0,
-    "skipped": 7,
+    "skipped": 44,
     "stopped": "consecutive_failures"
   }
 }
