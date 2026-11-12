@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261112T114523Z-fa1e1d` · generated 2026-11-12T11:45:23.814098Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261112T120024Z-855289` · generated 2026-11-12T12:00:24.011907Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-12T11:41:58.113234Z (CURRENT at publish; CURRENT until 2026-11-12T12:01:58.113234Z, STALE after 2026-11-12T12:11:58.113234Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-12T11:56:58.135259Z (CURRENT at publish; CURRENT until 2026-11-12T12:16:58.135259Z, STALE after 2026-11-12T12:26:58.135259Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-12T10:29:51.173286Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.97s
+model board generated 2026-11-12T10:29:51.173286Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.05s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,21 +12,21 @@ model board generated 2026-11-12T10:29:51.173286Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-12T17:00:00Z | Lithuania vs Suriname (fifa.friendly) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 23 | 0 |
-| 2026-11-12T17:00:00Z | Armenia vs Cyprus (uefa.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-12T17:00:00Z | Türkiye vs Belgium (uefa.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-12T19:00:00Z | Barbados vs Guadeloupe (concacaf.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 23 | 0 |
-| 2026-11-12T19:00:00Z | Cayman Islands vs Guyana (concacaf.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 23 | 0 |
-| 2026-11-12T19:45:00Z | Albania vs Finland (uefa.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-12T19:45:00Z | Czechia vs Spain (uefa.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-12T19:45:00Z | England vs Croatia (uefa.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-12T19:45:00Z | Italy vs France (uefa.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-12T19:45:00Z | Montenegro vs Latvia (uefa.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-12T19:45:00Z | San Marino vs Belarus (uefa.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-12T20:00:00Z | Bonaire vs Cuba (concacaf.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 23 | 0 |
-| 2026-11-12T22:00:00Z | Aruba vs Martinique (concacaf.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 23 | 0 |
-| 2026-11-12T23:00:00Z | Antigua and Barbuda vs Trinidad and Tobago (concacaf.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-11-13T00:30:00Z | Curaçao vs Panama (concacaf.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-12T17:00:00Z | Lithuania vs Suriname (fifa.friendly) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-11-12T17:00:00Z | Armenia vs Cyprus (uefa.nations_league) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-12T17:00:00Z | Türkiye vs Belgium (uefa.nations_league) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-12T19:00:00Z | Barbados vs Guadeloupe (concacaf.nations_league) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-11-12T19:00:00Z | Cayman Islands vs Guyana (concacaf.nations_league) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-11-12T19:45:00Z | Albania vs Finland (uefa.nations_league) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-12T19:45:00Z | Czechia vs Spain (uefa.nations_league) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-12T19:45:00Z | England vs Croatia (uefa.nations_league) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-12T19:45:00Z | Italy vs France (uefa.nations_league) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-12T19:45:00Z | Montenegro vs Latvia (uefa.nations_league) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-12T19:45:00Z | San Marino vs Belarus (uefa.nations_league) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-12T20:00:00Z | Bonaire vs Cuba (concacaf.nations_league) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-11-12T22:00:00Z | Aruba vs Martinique (concacaf.nations_league) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-11-12T23:00:00Z | Antigua and Barbuda vs Trinidad and Tobago (concacaf.nations_league) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-13T00:30:00Z | Curaçao vs Panama (concacaf.nations_league) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-13T14:45:00Z | Qatar vs Australia (fifa.friendly) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-13T17:00:00Z | Moldova vs Kazakhstan (uefa.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-13T19:00:00Z | Bermuda vs St. Lucia (concacaf.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
