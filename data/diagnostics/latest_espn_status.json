@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-11T18:24:17.636322+00:00",
-  "events": 476,
-  "events_skipped_unmapped": 309,
-  "fixtures_mapped": 167,
+  "as_of": "2026-11-12T00:50:34.868061+00:00",
+  "events": 370,
+  "events_skipped_unmapped": 248,
+  "fixtures_mapped": 122,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=44"
+      "weather_stopped:consecutive_failures:skipped=108"
     ],
     "state": "DEGRADED"
   },
@@ -81,48 +81,21 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 36,
-    "events": 36,
+    "captured": 38,
+    "events": 40,
     "failures": [],
-    "published_post": 12,
+    "published_post": 10,
     "published_pre_kickoff": 0,
-    "unchanged": 0,
-    "unpublished": 24
+    "unchanged": 2,
+    "unpublished": 30
   },
   "map_proposals": {
-    "eng.3": {
-      "ambiguous": {},
-      "proposed": {
-        "399": "eng.sheffield_wednesday"
-      },
-      "unresolved": {
-        "400": "Stockport County"
-      }
-    },
-    "eng.4": {
+    "eng.fa": {
       "ambiguous": {},
       "proposed": {},
       "unresolved": {
-        "2594": "Crawley Town",
-        "332": "Oldham Athletic",
-        "386": "Grimsby Town"
-      }
-    },
-    "eng.fa": {
-      "ambiguous": {},
-      "proposed": {
-        "399": "eng.sheffield_wednesday"
-      },
-      "unresolved": {
         "132350": "Berkhamsted",
-        "132948": "Plymouth Parkway",
-        "133370": "Wimborne Town",
-        "20770": "Cray Wanderers",
-        "2589": "Stafford Rangers",
-        "2594": "Crawley Town",
-        "332": "Oldham Athletic",
-        "386": "Grimsby Town",
-        "400": "Stockport County"
+        "132948": "Plymouth Parkway"
       }
     },
     "esp.2": {
@@ -390,24 +363,15 @@
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
   "unmapped_leagues": [
-    "aus.1",
-    "bel.1",
     "bra.2",
-    "chi.1",
-    "chn.1",
     "col.1",
-    "den.1",
     "eng.3",
     "eng.4",
     "eng.5",
     "esp.2",
     "esp.w.1",
-    "ger.2",
-    "ita.2",
-    "jpn.1",
     "nor.1",
     "per.1",
-    "swe.1",
     "uefa.wchampions",
     "uru.1",
     "usa.usl.1"
@@ -439,7 +403,6 @@
     "132434": "Paris 13 Atletico",
     "132785": "SC Toulon",
     "132948": "Plymouth Parkway",
-    "133370": "Wimborne Town",
     "133835": "CD Pamplona",
     "133837": "CD Tarancon",
     "133846": "Tavernes de la Valldigna",
@@ -561,7 +524,6 @@
     "20272": "FC Challans",
     "20275": "ESA Linas-Montlhery",
     "204": "Bolivia",
-    "20770": "Cray Wanderers",
     "20776": "Anaitasuna",
     "20871": "Rumilly Valli\u00e8res",
     "20876": "Loon Plage FC",
@@ -582,8 +544,6 @@
     "22476": "US Saint-Philbert-de-Grand-Lieu",
     "2405": "Malaysia",
     "245": "Tenerife",
-    "2589": "Stafford Rangers",
-    "2594": "Crawley Town",
     "272": "Sochaux",
     "2737": "Albacete",
     "274": "Montpellier",
@@ -594,12 +554,8 @@
     "3243": "Stade de Reims",
     "3266": "Stade Laval",
     "3267": "AS Nancy Lorraine",
-    "332": "Oldham Athletic",
     "3335": "SC Amiens",
     "3752": "Eibar",
-    "386": "Grimsby Town",
-    "399": "Sheffield Wednesday",
-    "400": "Stockport County",
     "4375": "Iraq",
     "4380": "Syria",
     "4381": "Bahrain",
@@ -650,17 +606,17 @@
     "9024": "Le Poire SV"
   },
   "weather": {
-    "captured": 18,
-    "events": 68,
+    "captured": 10,
+    "events": 121,
     "failures": [
-      "401880751: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=52.6386&longitude=-1.1317&hourly=te",
-      "401880750: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Luton&count=5&language=en&forma",
-      "401880749: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Milton%20Keynes&count=5&languag"
+      "401860441: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Caxias%20do%20Sul&count=5&langu",
+      "401860433: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Recife&count=5&language=en&form",
+      "401878034: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=1.2146&longitude=-77.2785&hourly=te"
     ],
     "forecast_miss": 0,
-    "geocode_miss": 3,
+    "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 44,
+    "skipped": 108,
     "stopped": "consecutive_failures"
   }
 }
