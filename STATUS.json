@@ -1,42 +1,69 @@
 {
-  "as_of": "2026-11-09T02:08:02.195602+00:00",
-  "events": 0,
-  "events_skipped_unmapped": 0,
-  "fixtures_mapped": 0,
+  "as_of": "2026-11-12T15:00:38.203195+00:00",
+  "events": 18,
+  "events_skipped_unmapped": 3,
+  "fixtures_mapped": 15,
   "health": {
     "reasons": [
-      "no_events_returned"
+      "weather_failures:3",
+      "weather_stopped:consecutive_failures:skipped=8"
     ],
     "state": "DEGRADED"
   },
   "leagues": [
-    "mex.1"
+    "concacaf.nations.league",
+    "fifa.friendly",
+    "fifa.worldq.afc",
+    "fifa.worldq.caf",
+    "fifa.worldq.concacaf",
+    "fifa.worldq.conmebol",
+    "fifa.worldq.uefa",
+    "uefa.euroq",
+    "uefa.nations"
   ],
   "lineups": {
-    "captured": 0,
-    "events": 0,
+    "captured": 1,
+    "events": 18,
     "failures": [],
-    "published_post": 0,
+    "published_post": 2,
     "published_pre_kickoff": 0,
-    "unchanged": 0,
-    "unpublished": 0
+    "unchanged": 17,
+    "unpublished": 16
   },
-  "map_proposals": {},
+  "map_proposals": {
+    "fifa.friendly": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "4385": "India",
+        "454": "Russia",
+        "6686": "Eswatini"
+      }
+    }
+  },
   "map_version": "4",
   "results_appended": 0,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
-  "scoreboard_queries": 1,
+  "scoreboard_queries": 9,
   "unmapped_leagues": [],
-  "unmapped_team_ids": {},
+  "unmapped_team_ids": {
+    "4385": "India",
+    "454": "Russia",
+    "6686": "Eswatini"
+  },
   "weather": {
-    "captured": 0,
-    "events": 0,
-    "failures": [],
+    "captured": 5,
+    "events": 17,
+    "failures": [
+      "401930962: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Tashkent&count=5&language=en&fo",
+      "401933115: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Kaunas&count=5&language=en&form",
+      "401931296: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Attard&count=5&language=en&form"
+    ],
     "forecast_miss": 0,
-    "geocode_miss": 0,
+    "geocode_miss": 1,
     "no_venue": 0,
-    "skipped": 0,
-    "stopped": null
+    "skipped": 8,
+    "stopped": "consecutive_failures"
   }
 }
