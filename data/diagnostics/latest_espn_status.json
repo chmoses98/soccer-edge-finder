@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-12T09:56:56.159761+00:00",
-  "events": 370,
-  "events_skipped_unmapped": 248,
+  "as_of": "2026-11-12T18:53:19.171483+00:00",
+  "events": 369,
+  "events_skipped_unmapped": 247,
   "fixtures_mapped": 122,
   "health": {
     "reasons": [
-      "weather_failures:4",
-      "weather_stopped:consecutive_failures:skipped=101"
+      "weather_failures:3",
+      "weather_stopped:consecutive_failures:skipped=122"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 31,
-    "events": 33,
+    "captured": 33,
+    "events": 58,
     "failures": [],
-    "published_post": 4,
-    "published_pre_kickoff": 0,
-    "unchanged": 2,
-    "unpublished": 29
+    "published_post": 11,
+    "published_pre_kickoff": 8,
+    "unchanged": 25,
+    "unpublished": 39
   },
   "map_proposals": {
     "eng.fa": {
@@ -358,7 +358,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 0,
+  "results_appended": 2,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -606,18 +606,17 @@
     "9024": "Le Poire SV"
   },
   "weather": {
-    "captured": 16,
-    "events": 121,
+    "captured": 8,
+    "events": 133,
     "failures": [
-      "401877917: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=7.1250&longitude=-73.1189&hourly=te",
-      "401878043: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=C\u00facuta&count=5&language=en&form",
-      "401877893: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=3.4305&longitude=-76.5199&hourly=te",
-      "401877919: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Yopal&count=5&language=en&forma"
+      "401860437: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Fortaleza&count=5&language=en&f",
+      "401860441: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Caxias%20do%20Sul&count=5&langu",
+      "401860433: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Recife&count=5&language=en&form"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 101,
+    "skipped": 122,
     "stopped": "consecutive_failures"
   }
 }
