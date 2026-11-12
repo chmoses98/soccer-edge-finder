@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-12T15:00:38.203195+00:00",
+  "as_of": "2026-11-12T15:57:45.346807+00:00",
   "events": 18,
   "events_skipped_unmapped": 3,
   "fixtures_mapped": 15,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=8"
+      "weather_stopped:consecutive_failures:skipped=7"
     ],
     "state": "DEGRADED"
   },
@@ -53,17 +53,17 @@
     "6686": "Eswatini"
   },
   "weather": {
-    "captured": 5,
+    "captured": 6,
     "events": 17,
     "failures": [
-      "401930962: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Tashkent&count=5&language=en&fo",
       "401933115: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Kaunas&count=5&language=en&form",
-      "401931296: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Attard&count=5&language=en&form"
+      "401931296: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Attard&count=5&language=en&form",
+      "401861146: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Yerevan&count=5&language=en&for"
     ],
     "forecast_miss": 0,
     "geocode_miss": 1,
     "no_venue": 0,
-    "skipped": 8,
+    "skipped": 7,
     "stopped": "consecutive_failures"
   }
 }
