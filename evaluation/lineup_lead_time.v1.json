@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-12T13:28:20.650333Z",
+  "as_of": "2026-11-12T21:05:11.822445Z",
   "by_competition": {
     "afc.champions": {
       "fixtures": 16,
@@ -54,6 +54,12 @@
       "median_lead_minutes": 1.1767865666666668,
       "with_pre_kickoff_xi": 3,
       "with_xi_ge_20min": 1
+    },
+    "concacaf.nations.league": {
+      "fixtures": 3,
+      "median_lead_minutes": 25.83069406666667,
+      "with_pre_kickoff_xi": 3,
+      "with_xi_ge_20min": 2
     },
     "den.1": {
       "fixtures": 11,
@@ -116,7 +122,7 @@
       "with_xi_ge_20min": 0
     },
     "esp.copa_del_rey": {
-      "fixtures": 13,
+      "fixtures": 14,
       "median_lead_minutes": null,
       "with_pre_kickoff_xi": 0,
       "with_xi_ge_20min": 0
@@ -128,7 +134,7 @@
       "with_xi_ge_20min": 0
     },
     "fifa.friendly": {
-      "fixtures": 2,
+      "fixtures": 5,
       "median_lead_minutes": null,
       "with_pre_kickoff_xi": 0,
       "with_xi_ge_20min": 0
@@ -146,7 +152,7 @@
       "with_xi_ge_20min": 0
     },
     "fra.coupe_de_france": {
-      "fixtures": 2,
+      "fixtures": 3,
       "median_lead_minutes": null,
       "with_pre_kickoff_xi": 0,
       "with_xi_ge_20min": 0
@@ -253,8 +259,14 @@
       "with_pre_kickoff_xi": 8,
       "with_xi_ge_20min": 8
     },
-    "uefa.wchampions": {
+    "uefa.nations": {
       "fixtures": 8,
+      "median_lead_minutes": 56.42096545,
+      "with_pre_kickoff_xi": 8,
+      "with_xi_ge_20min": 8
+    },
+    "uefa.wchampions": {
+      "fixtures": 9,
       "median_lead_minutes": null,
       "with_pre_kickoff_xi": 0,
       "with_xi_ge_20min": 0
@@ -4523,16 +4535,16 @@
       "xi_first_observed_at": null
     },
     {
-      "capture_attempts": 7,
+      "capture_attempts": 8,
       "competition": "esp.copa_del_rey",
       "espn_event_id": "401928506",
-      "final_state": "unconfirmed",
+      "final_state": "post_hoc",
       "kickoff_passed": true,
-      "lead_time_seconds": null,
+      "lead_time_seconds": -688165.019949,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-11-04T19:45:00+00:00",
       "source": "espn_site_api",
-      "xi_first_observed_at": null
+      "xi_first_observed_at": "2026-11-12T18:54:25.019949+00:00"
     },
     {
       "capture_attempts": 5,
@@ -4763,16 +4775,16 @@
       "xi_first_observed_at": "2026-11-05T07:59:38.044475+00:00"
     },
     {
-      "capture_attempts": 4,
+      "capture_attempts": 5,
       "competition": "esp.copa_del_rey",
       "espn_event_id": "401928527",
-      "final_state": "unconfirmed",
+      "final_state": "post_hoc",
       "kickoff_passed": true,
-      "lead_time_seconds": null,
+      "lead_time_seconds": -608065.136091,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-11-05T18:00:00+00:00",
       "source": "espn_site_api",
-      "xi_first_observed_at": null
+      "xi_first_observed_at": "2026-11-12T18:54:25.136091+00:00"
     },
     {
       "capture_attempts": 1,
@@ -6287,22 +6299,22 @@
       "xi_first_observed_at": "2026-11-07T17:34:18.860707+00:00"
     }
   ],
-  "fixtures_kickoff_passed": 774,
-  "fixtures_tracked": 797,
+  "fixtures_kickoff_passed": 791,
+  "fixtures_tracked": 823,
   "lead_time_minutes": {
     "max": 57.93336871666667,
-    "median": 26.380043333333333,
+    "median": 26.548203283333333,
     "min": 0.025024583333333333,
-    "n": 200,
-    "p10": 8.261272096666668,
-    "p90": 39.394198386666666
+    "n": 211,
+    "p10": 8.821913200000001,
+    "p90": 39.416199516666666
   },
-  "post_kickoff_first_xi": 374,
+  "post_kickoff_first_xi": 379,
   "schema": "lineup_lead_time_v1",
-  "share_pre_kickoff_xi": 0.25839793281653745,
-  "share_xi_ge_20min": 0.20155038759689922,
+  "share_pre_kickoff_xi": 0.2667509481668774,
+  "share_xi_ge_20min": 0.20986093552465235,
   "target": "audit \u00a7I1: >= 90% of priced fixtures with a confirmed XI captured >= 20 min before kickoff",
-  "with_any_xi": 574,
-  "with_pre_kickoff_xi": 200,
-  "with_xi_ge_20min_before_kickoff": 156
+  "with_any_xi": 590,
+  "with_pre_kickoff_xi": 211,
+  "with_xi_ge_20min_before_kickoff": 166
 }
