@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-12T00:50:34.868061+00:00",
+  "as_of": "2026-11-12T09:56:56.159761+00:00",
   "events": 370,
   "events_skipped_unmapped": 248,
   "fixtures_mapped": 122,
   "health": {
     "reasons": [
-      "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=108"
+      "weather_failures:4",
+      "weather_stopped:consecutive_failures:skipped=101"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 38,
-    "events": 40,
+    "captured": 31,
+    "events": 33,
     "failures": [],
-    "published_post": 10,
+    "published_post": 4,
     "published_pre_kickoff": 0,
     "unchanged": 2,
-    "unpublished": 30
+    "unpublished": 29
   },
   "map_proposals": {
     "eng.fa": {
@@ -606,17 +606,18 @@
     "9024": "Le Poire SV"
   },
   "weather": {
-    "captured": 10,
+    "captured": 16,
     "events": 121,
     "failures": [
-      "401860441: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Caxias%20do%20Sul&count=5&langu",
-      "401860433: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Recife&count=5&language=en&form",
-      "401878034: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=1.2146&longitude=-77.2785&hourly=te"
+      "401877917: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=7.1250&longitude=-73.1189&hourly=te",
+      "401878043: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=C\u00facuta&count=5&language=en&form",
+      "401877893: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=3.4305&longitude=-76.5199&hourly=te",
+      "401877919: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Yopal&count=5&language=en&forma"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 108,
+    "skipped": 101,
     "stopped": "consecutive_failures"
   }
 }
