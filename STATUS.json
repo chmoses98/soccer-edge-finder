@@ -1,13 +1,11 @@
 {
-  "as_of": "2026-11-12T16:32:57.988708+00:00",
+  "as_of": "2026-11-12T16:48:00.978713+00:00",
   "events": 18,
   "events_skipped_unmapped": 3,
   "fixtures_mapped": 15,
   "health": {
-    "reasons": [
-      "weather_failures:3"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
     "concacaf.nations.league",
@@ -21,12 +19,12 @@
     "uefa.nations"
   ],
   "lineups": {
-    "captured": 3,
+    "captured": 2,
     "events": 18,
     "failures": [],
     "published_post": 2,
     "published_pre_kickoff": 2,
-    "unchanged": 15,
+    "unchanged": 16,
     "unpublished": 14
   },
   "map_proposals": {
@@ -52,13 +50,9 @@
     "6686": "Eswatini"
   },
   "weather": {
-    "captured": 13,
+    "captured": 16,
     "events": 17,
-    "failures": [
-      "401861151: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=42.7824&longitude=12.5984&hourly=te",
-      "401861152: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Podgorica&count=5&language=en&f",
-      "401861149: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Serravalle&count=5&language=en&"
-    ],
+    "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 1,
     "no_venue": 0,
