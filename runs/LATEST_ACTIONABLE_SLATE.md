@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261112T191333Z-2fe021` · generated 2026-11-12T19:13:33.977159Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261112T191921Z-e6fe6d` · generated 2026-11-12T19:19:21.684199Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-12T19:10:02.864284Z (CURRENT at publish; CURRENT until 2026-11-12T19:30:02.864284Z, STALE after 2026-11-12T19:40:02.864284Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-12T19:15:48.704932Z (CURRENT at publish; CURRENT until 2026-11-12T19:35:48.704932Z, STALE after 2026-11-12T19:45:48.704932Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-12T19:13:31.960434Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.76s
+model board generated 2026-11-12T19:13:31.960434Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.77s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -18,7 +18,7 @@ model board generated 2026-11-12T19:13:31.960434Z · simulations this update: 1 
 | 2026-11-12T19:45:00Z | Italy vs France (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
 | 2026-11-12T19:45:00Z | Montenegro vs Latvia (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
 | 2026-11-12T19:45:00Z | San Marino vs Belarus (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
-| 2026-11-12T20:00:00Z | Bonaire vs Cuba (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 4 |
+| 2026-11-12T20:00:00Z | Bonaire vs Cuba (concacaf.nations_league) | INVALIDATED: lineup_changed:published:post_hoc | post_hoc (CURRENT) | UNAVAILABLE | CURRENT | 23 | 4 |
 | 2026-11-12T22:00:00Z | Aruba vs Martinique (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-12T23:00:00Z | Antigua and Barbuda vs Trinidad and Tobago (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-13T00:30:00Z | Curaçao vs Panama (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
@@ -56,12 +56,13 @@ model board generated 2026-11-12T19:13:31.960434Z · simulations this update: 1 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 220
-action_NO_EDGE: 2267
-action_NO_QUOTE: 369
+action_EXCLUDED_BY_GATE: 201
+action_MODEL_INVALIDATED: 43
+action_NO_EDGE: 2244
+action_NO_QUOTE: 368
 contract_sides: 2856
 fixtures: 35
-fixtures_model_invalidated: 0
+fixtures_model_invalidated: 1
 fixtures_model_missing: 0
 ```
 
