@@ -90323,15 +90323,15 @@
       },
       "event_name": "Armenia vs Cyprus",
       "fixture_id": "fx:uefa.nations_league:2026-27:nat.arm:nat.cyp",
-      "fixtures_observed_at": "2026-11-12T16:05:40.336981Z",
+      "fixtures_observed_at": "2026-11-12T15:52:18.503806Z",
       "home": "nat.arm",
-      "input_fingerprint": "sha256:ed5caad4bb6eaa7c4bde44d6f15d0672dba2f28a86f0824314afcc266a236a6b",
+      "input_fingerprint": "sha256:736be48904bb3a1a0e634333047fae2410c78956a44c8aff0198be0a0f7260b8",
       "inputs": {
         "competition_id": "uefa.nations_league",
         "draws_per_world": 100,
         "engine_version": "world_sim_v2",
         "kickoff_utc": "2026-11-12T17:00:00Z",
-        "lineup_key": "none",
+        "lineup_key": "sha256:f2e52a29218c9278b1f8ad0e5aaa6ca23d0525db0ce04cbc5000c198164b7404",
         "model_family": "data_only.world_sim_v2.intl_pool",
         "model_version": "dc_laplace_v1",
         "n_worlds": 1000,
@@ -90342,11 +90342,69 @@
         "worlds_version": "worlds_v1"
       },
       "lineup": {
-        "checked_at": "2026-11-12T15:57:45.346807Z",
-        "key": "none",
-        "last_change_at": "2026-11-12T09:57:45.675089Z",
-        "state": "unconfirmed"
+        "checked_at": "2026-11-12T16:33:00.351742Z",
+        "key": "sha256:f2e52a29218c9278b1f8ad0e5aaa6ca23d0525db0ce04cbc5000c198164b7404",
+        "last_change_at": "2026-11-12T16:33:00.351742Z",
+        "state": "confirmed"
       },
+      "lineup_history": [
+        {
+          "lineup_key": "none",
+          "lineup_state": "unconfirmed",
+          "model_generated_at": "2026-11-12T15:58:43.841413Z",
+          "scripts": {
+            "primary": "TIGHT_LOW_EVENT",
+            "secondary": "AWAY_CONTROL",
+            "shares": [
+              0.18407,
+              0.08809,
+              0.34587,
+              0.10462,
+              0.08821,
+              0.18915
+            ],
+            "taxonomy_version": "soccer_scripts_v1"
+          },
+          "sim_key": "sha256:ca536b9e9e0f2dd5b587b27683077a6664d774fccfd0b02e3bf654291136a346",
+          "summary": {
+            "mean_away_goals": 1.18915,
+            "mean_home_goals": 1.17999,
+            "p_away": 0.36698,
+            "p_btts": 0.43428,
+            "p_draw": 0.27989,
+            "p_home": 0.35313,
+            "p_over_2_5": 0.40931
+          }
+        },
+        {
+          "lineup_key": "none",
+          "lineup_state": "unconfirmed",
+          "model_generated_at": "2026-11-12T16:20:37.069275Z",
+          "scripts": {
+            "primary": "TIGHT_LOW_EVENT",
+            "secondary": "AWAY_CONTROL",
+            "shares": [
+              0.18407,
+              0.08809,
+              0.34587,
+              0.10462,
+              0.08821,
+              0.18915
+            ],
+            "taxonomy_version": "soccer_scripts_v1"
+          },
+          "sim_key": "sha256:ca536b9e9e0f2dd5b587b27683077a6664d774fccfd0b02e3bf654291136a346",
+          "summary": {
+            "mean_away_goals": 1.18915,
+            "mean_home_goals": 1.17999,
+            "p_away": 0.36698,
+            "p_btts": 0.43428,
+            "p_draw": 0.27989,
+            "p_home": 0.35313,
+            "p_over_2_5": 0.40931
+          }
+        }
+      ],
       "match_context": {
         "aggregate": {
           "source": "no aggregate (not a second leg)",
@@ -90574,9 +90632,9 @@
         "source": "production posterior (dc_laplace_v1) that priced this fixture",
         "version": "dc_matchup_v1"
       },
-      "model_fitted_at": "2026-11-12T16:05:41.358690Z",
-      "model_generated_at": "2026-11-12T16:20:37.069275Z",
-      "results_observed_at": "2026-11-12T16:05:32.567517Z",
+      "model_fitted_at": "2026-11-12T16:33:55.598346Z",
+      "model_generated_at": "2026-11-12T16:33:56.400855Z",
+      "results_observed_at": "2026-11-12T15:52:12.103794Z",
       "scripts": {
         "contract_gaps": {},
         "evidence": {
@@ -91193,8 +91251,8 @@
           }
         }
       },
-      "sim_key": "sha256:ca536b9e9e0f2dd5b587b27683077a6664d774fccfd0b02e3bf654291136a346",
-      "source_run_id": "run-20261112T162037Z-e0aade",
+      "sim_key": "sha256:f543f5c4fb5349542493499ae865ca41388614a84fcb97c5cbdb67f5ac8ca33f",
+      "source_run_id": "run-20261112T163356Z-57f900",
       "summary": {
         "mean_away_goals": 1.18915,
         "mean_home_goals": 1.17999,
@@ -244541,15 +244599,15 @@
       },
       "event_name": "T\u00fcrkiye vs Belgium",
       "fixture_id": "fx:uefa.nations_league:2026-27:nat.tur:nat.bel",
-      "fixtures_observed_at": "2026-11-12T16:05:40.336981Z",
+      "fixtures_observed_at": "2026-11-12T15:52:18.503806Z",
       "home": "nat.tur",
-      "input_fingerprint": "sha256:ed5caad4bb6eaa7c4bde44d6f15d0672dba2f28a86f0824314afcc266a236a6b",
+      "input_fingerprint": "sha256:6543c94a1ce5758d5d620becf1277fd4b8527c5e9cc14d24a83bff0f7678940f",
       "inputs": {
         "competition_id": "uefa.nations_league",
         "draws_per_world": 100,
         "engine_version": "world_sim_v2",
         "kickoff_utc": "2026-11-12T17:00:00Z",
-        "lineup_key": "none",
+        "lineup_key": "sha256:d8b351e7bc6ab6fbf3f72d7694e05d873e9a5a064093f77dab0feb617992571d",
         "model_family": "data_only.world_sim_v2.intl_pool",
         "model_version": "dc_laplace_v1",
         "n_worlds": 1000,
@@ -244560,11 +244618,69 @@
         "worlds_version": "worlds_v1"
       },
       "lineup": {
-        "checked_at": "2026-11-12T15:57:45.346807Z",
-        "key": "none",
-        "last_change_at": "2026-11-12T09:57:45.728114Z",
-        "state": "unconfirmed"
+        "checked_at": "2026-11-12T16:33:00.476615Z",
+        "key": "sha256:d8b351e7bc6ab6fbf3f72d7694e05d873e9a5a064093f77dab0feb617992571d",
+        "last_change_at": "2026-11-12T16:33:00.476615Z",
+        "state": "confirmed"
       },
+      "lineup_history": [
+        {
+          "lineup_key": "none",
+          "lineup_state": "unconfirmed",
+          "model_generated_at": "2026-11-12T15:58:43.841413Z",
+          "scripts": {
+            "primary": "AWAY_CONTROL",
+            "secondary": "TIGHT_LOW_EVENT",
+            "shares": [
+              0.12992,
+              0.07433,
+              0.20506,
+              0.19179,
+              0.09459,
+              0.30432
+            ],
+            "taxonomy_version": "soccer_scripts_v1"
+          },
+          "sim_key": "sha256:6db80252b66b432b35bf65982830637859b742aeb92ad40129c16eb50fb5a44e",
+          "summary": {
+            "mean_away_goals": 1.93614,
+            "mean_home_goals": 1.2695,
+            "p_away": 0.51692,
+            "p_btts": 0.56012,
+            "p_draw": 0.22065,
+            "p_home": 0.26243,
+            "p_over_2_5": 0.58865
+          }
+        },
+        {
+          "lineup_key": "none",
+          "lineup_state": "unconfirmed",
+          "model_generated_at": "2026-11-12T16:20:37.069275Z",
+          "scripts": {
+            "primary": "AWAY_CONTROL",
+            "secondary": "TIGHT_LOW_EVENT",
+            "shares": [
+              0.12992,
+              0.07433,
+              0.20506,
+              0.19179,
+              0.09459,
+              0.30432
+            ],
+            "taxonomy_version": "soccer_scripts_v1"
+          },
+          "sim_key": "sha256:6db80252b66b432b35bf65982830637859b742aeb92ad40129c16eb50fb5a44e",
+          "summary": {
+            "mean_away_goals": 1.93614,
+            "mean_home_goals": 1.2695,
+            "p_away": 0.51692,
+            "p_btts": 0.56012,
+            "p_draw": 0.22065,
+            "p_home": 0.26243,
+            "p_over_2_5": 0.58865
+          }
+        }
+      ],
       "match_context": {
         "aggregate": {
           "source": "no aggregate (not a second leg)",
@@ -244792,9 +244908,9 @@
         "source": "production posterior (dc_laplace_v1) that priced this fixture",
         "version": "dc_matchup_v1"
       },
-      "model_fitted_at": "2026-11-12T16:05:41.358690Z",
-      "model_generated_at": "2026-11-12T16:20:37.069275Z",
-      "results_observed_at": "2026-11-12T16:05:32.567517Z",
+      "model_fitted_at": "2026-11-12T16:33:55.598346Z",
+      "model_generated_at": "2026-11-12T16:33:56.400855Z",
+      "results_observed_at": "2026-11-12T15:52:12.103794Z",
       "scripts": {
         "contract_gaps": {},
         "evidence": {
@@ -245410,8 +245526,8 @@
           }
         }
       },
-      "sim_key": "sha256:6db80252b66b432b35bf65982830637859b742aeb92ad40129c16eb50fb5a44e",
-      "source_run_id": "run-20261112T162037Z-e0aade",
+      "sim_key": "sha256:99298b7c32c14ed73c9ba6a15a2476d188b3ac4aa700d815e7c5bfc0abe5fc52",
+      "source_run_id": "run-20261112T163356Z-57f900",
       "summary": {
         "mean_away_goals": 1.93614,
         "mean_home_goals": 1.2695,
@@ -245423,6 +245539,6 @@
       }
     }
   },
-  "generated_at": "2026-11-12T16:20:37.069275Z",
+  "generated_at": "2026-11-12T16:33:56.400855Z",
   "quantile_levels": "(i + 0.5) / 100, i = 0..99"
 }
