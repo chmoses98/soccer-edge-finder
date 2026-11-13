@@ -17536,15 +17536,15 @@
       },
       "event_name": "Grenada vs St. Kitts and Nevis",
       "fixture_id": "fx:concacaf.nations_league:2026-27:nat.grn:nat.skn",
-      "fixtures_observed_at": "2026-11-13T15:27:53.454484Z",
+      "fixtures_observed_at": "2026-11-13T18:17:17.961401Z",
       "home": "nat.grn",
-      "input_fingerprint": "sha256:52e5abd3ab71790adceb5b33ae6698dc8fcaa5f15f60ebf62d59d931927caff7",
+      "input_fingerprint": "sha256:e01721c77184f2f745e3a0064ecb61f677465fc6d370a233efeb29fe7c75014a",
       "inputs": {
         "competition_id": "concacaf.nations_league",
         "draws_per_world": 100,
         "engine_version": "world_sim_v2",
-        "kickoff_utc": "2026-11-13T20:00:00Z",
-        "lineup_key": "none",
+        "kickoff_utc": "2026-11-13T19:00:00Z",
+        "lineup_key": "sha256:afec57b5dab944663db3fb924a4713f756214a1e3ac40069c7dfb177ab7e8978",
         "model_family": "data_only.world_sim_v2.intl_pool",
         "model_version": "dc_laplace_v1",
         "n_worlds": 1000,
@@ -17555,11 +17555,41 @@
         "worlds_version": "worlds_v1"
       },
       "lineup": {
-        "checked_at": "2026-11-13T14:57:37.166007Z",
-        "key": "none",
-        "last_change_at": "2026-11-13T00:03:51.261279Z",
-        "state": "unconfirmed"
+        "checked_at": "2026-11-13T18:58:40.199197Z",
+        "key": "sha256:afec57b5dab944663db3fb924a4713f756214a1e3ac40069c7dfb177ab7e8978",
+        "last_change_at": "2026-11-13T18:48:47.302652Z",
+        "state": "confirmed"
       },
+      "lineup_history": [
+        {
+          "lineup_key": "none",
+          "lineup_state": "unconfirmed",
+          "model_generated_at": "2026-11-13T15:43:05.406078Z",
+          "scripts": {
+            "primary": "AWAY_CONTROL",
+            "secondary": "TIGHT_LOW_EVENT",
+            "shares": [
+              0.08114,
+              0.06343,
+              0.23091,
+              0.13974,
+              0.09587,
+              0.38891
+            ],
+            "taxonomy_version": "soccer_scripts_v1"
+          },
+          "sim_key": "sha256:e97c9df9528ea704a1ad25d9b140e5ff82ee6875a4b272fbaf776361273bb641",
+          "summary": {
+            "mean_away_goals": 2.09982,
+            "mean_home_goals": 0.93593,
+            "p_away": 0.61433,
+            "p_btts": 0.48723,
+            "p_draw": 0.21041,
+            "p_home": 0.17526,
+            "p_over_2_5": 0.5534
+          }
+        }
+      ],
       "match_context": {
         "aggregate": {
           "source": "no aggregate (not a second leg)",
@@ -17788,9 +17818,9 @@
         "source": "production posterior (dc_laplace_v1) that priced this fixture",
         "version": "dc_matchup_v1"
       },
-      "model_fitted_at": "2026-11-13T15:27:54.752417Z",
-      "model_generated_at": "2026-11-13T15:43:05.406078Z",
-      "results_observed_at": "2026-11-13T15:27:46.350551Z",
+      "model_fitted_at": "2026-11-13T18:58:44.880105Z",
+      "model_generated_at": "2026-11-13T18:58:45.440724Z",
+      "results_observed_at": "2026-11-13T16:38:59.985217Z",
       "scripts": {
         "contract_gaps": {},
         "evidence": {
@@ -18405,8 +18435,8 @@
           }
         }
       },
-      "sim_key": "sha256:e97c9df9528ea704a1ad25d9b140e5ff82ee6875a4b272fbaf776361273bb641",
-      "source_run_id": "run-20261113T154305Z-6f1f10",
+      "sim_key": "sha256:ac9c14baaa760919a3a43af6b817b5bcdc4a0bcb448eefd6d712701093c0d75a",
+      "source_run_id": "run-20261113T185845Z-544537",
       "summary": {
         "mean_away_goals": 2.09982,
         "mean_home_goals": 0.93593,
@@ -275350,6 +275380,6 @@
       }
     }
   },
-  "generated_at": "2026-11-13T18:48:53.632575Z",
+  "generated_at": "2026-11-13T18:58:45.440724Z",
   "quantile_levels": "(i + 0.5) / 100, i = 0..99"
 }
