@@ -1,11 +1,11 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 633,
-  "CLOSE_BLOCKED_BUDGET": 16,
-  "PINNACLE_VALID_CLOSE": 80,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 634,
   "MISSED_DISPATCHER_CLOSE": 98,
-  "PINNACLE_QUOTED_NOTHING": 2,
-  "NO_SPORT_KEY": 5
+  "PINNACLE_VALID_CLOSE": 80,
+  "CLOSE_BLOCKED_BUDGET": 16,
+  "NO_SPORT_KEY": 6,
+  "PINNACLE_QUOTED_NOTHING": 2
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.belgrano": {
@@ -1783,6 +1783,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:fifa.friendly:2026:nat.ksa:nat.kor": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
   "fx:fifa.friendly:2026:nat.ltu:nat.and": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -1807,6 +1812,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:fifa.friendly:2026:nat.qat:nat.aus": {
+   "state": "NO_SPORT_KEY",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261113T143130Z"
   },
   "fx:fifa.friendly:2026:nat.usa:nat.can": {
    "state": "MISSED_DISPATCHER_CLOSE",
