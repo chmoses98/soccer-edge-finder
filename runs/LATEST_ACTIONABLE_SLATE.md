@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261113T145817Z-d27784` · generated 2026-11-13T14:58:17.217460Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261113T151302Z-c3cca6` · generated 2026-11-13T15:13:02.381760Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-13T14:53:59.816755Z (CURRENT at publish; CURRENT until 2026-11-13T15:13:59.816755Z, STALE after 2026-11-13T15:23:59.816755Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-13T15:09:02.164432Z (CURRENT at publish; CURRENT until 2026-11-13T15:29:02.164432Z, STALE after 2026-11-13T15:39:02.164432Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-13T14:18:48.090832Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.86s
+model board generated 2026-11-13T15:12:42.683833Z · simulations this update: 2 · Odds API calls this update: 0 (credits 0) · reprice 1.79s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -46,6 +46,8 @@ model board generated 2026-11-13T14:18:48.090832Z · simulations this update: 0 
 | 2026-11-14T23:00:00Z | Querétaro vs Monterrey (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-14T23:30:00Z | Chapecoense vs Vasco da Gama (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-15T01:00:00Z | Jamaica vs Mexico (concacaf.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-15T14:00:00Z | Cyprus vs Montenegro (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-15T14:00:00Z | Latvia vs Armenia (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 
 ## Candidates on CURRENT prices (18; RESEARCH_ONLY = analysis, never a bet)
 
@@ -73,12 +75,12 @@ model board generated 2026-11-13T14:18:48.090832Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 207
-action_NO_EDGE: 2324
-action_NO_QUOTE: 429
+action_EXCLUDED_BY_GATE: 208
+action_NO_EDGE: 2497
+action_NO_QUOTE: 499
 action_RESEARCH_CANDIDATE: 18
-contract_sides: 2978
-fixtures: 34
+contract_sides: 3222
+fixtures: 36
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
