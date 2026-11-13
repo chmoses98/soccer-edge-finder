@@ -1,13 +1,11 @@
 {
-  "as_of": "2026-11-13T13:43:49.873191+00:00",
+  "as_of": "2026-11-13T14:05:15.644003+00:00",
   "events": 27,
   "events_skipped_unmapped": 6,
   "fixtures_mapped": 21,
   "health": {
-    "reasons": [
-      "weather_failures:2"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
     "concacaf.nations.league",
@@ -25,9 +23,9 @@
     "events": 27,
     "failures": [],
     "published_post": 1,
-    "published_pre_kickoff": 0,
+    "published_pre_kickoff": 1,
     "unchanged": 25,
-    "unpublished": 26
+    "unpublished": 25
   },
   "map_proposals": {
     "fifa.friendly": {
@@ -62,12 +60,9 @@
     "841": "Kuwait"
   },
   "weather": {
-    "captured": 21,
+    "captured": 23,
     "events": 27,
-    "failures": [
-      "401861160: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=48.7144&longitude=21.2580&hourly=te",
-      "401861156: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Maribor&count=5&language=en&for"
-    ],
+    "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 4,
     "no_venue": 0,
