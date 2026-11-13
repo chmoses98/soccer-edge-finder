@@ -1,11 +1,14 @@
 {
-  "as_of": "2026-11-13T15:57:47.900173+00:00",
+  "as_of": "2026-11-13T16:39:07.513806+00:00",
   "events": 27,
   "events_skipped_unmapped": 6,
   "fixtures_mapped": 21,
   "health": {
-    "reasons": [],
-    "state": "HEALTHY"
+    "reasons": [
+      "weather_failures:3",
+      "weather_stopped:consecutive_failures:skipped=14"
+    ],
+    "state": "DEGRADED"
   },
   "leagues": [
     "concacaf.nations.league",
@@ -19,13 +22,13 @@
     "uefa.nations"
   ],
   "lineups": {
-    "captured": 3,
+    "captured": 4,
     "events": 27,
     "failures": [],
     "published_post": 4,
-    "published_pre_kickoff": 0,
-    "unchanged": 24,
-    "unpublished": 23
+    "published_pre_kickoff": 1,
+    "unchanged": 23,
+    "unpublished": 22
   },
   "map_proposals": {
     "fifa.friendly": {
@@ -44,7 +47,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 0,
+  "results_appended": 2,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 9,
@@ -60,13 +63,17 @@
     "841": "Kuwait"
   },
   "weather": {
-    "captured": 22,
+    "captured": 7,
     "events": 26,
-    "failures": [],
+    "failures": [
+      "401933636: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Basra&count=5&language=en&forma",
+      "401931978: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Jaber%20Al-Ahmad%20Internationa",
+      "401919975: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Amman&count=5&language=en&forma"
+    ],
     "forecast_miss": 0,
-    "geocode_miss": 4,
+    "geocode_miss": 2,
     "no_venue": 0,
-    "skipped": 0,
-    "stopped": null
+    "skipped": 14,
+    "stopped": "consecutive_failures"
   }
 }

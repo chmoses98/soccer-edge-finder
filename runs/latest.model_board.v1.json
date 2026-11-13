@@ -168235,15 +168235,15 @@
       },
       "event_name": "Moldova vs Kazakhstan",
       "fixture_id": "fx:uefa.nations_league:2026-27:nat.mda:nat.kaz",
-      "fixtures_observed_at": "2026-11-13T10:28:55.551519Z",
+      "fixtures_observed_at": "2026-11-13T16:39:06.334927Z",
       "home": "nat.mda",
-      "input_fingerprint": "sha256:90540fded968cf5d0bcba7f87bf063d77066f5432b3d40bd23d51bef2d9b6251",
+      "input_fingerprint": "sha256:07856d4c7caf5999aabe391457734a4e970ac36ccab3f90db0c982d4e6af4edd",
       "inputs": {
         "competition_id": "uefa.nations_league",
         "draws_per_world": 100,
         "engine_version": "world_sim_v2",
         "kickoff_utc": "2026-11-13T17:00:00Z",
-        "lineup_key": "none",
+        "lineup_key": "sha256:5128368d8d93d6a9ad16919344f86bbe08d741095ae928d99fce4eebe27733a4",
         "model_family": "data_only.world_sim_v2.intl_pool",
         "model_version": "dc_laplace_v1",
         "n_worlds": 1000,
@@ -168254,11 +168254,41 @@
         "worlds_version": "worlds_v1"
       },
       "lineup": {
-        "checked_at": "2026-11-13T15:57:47.900173Z",
-        "key": "none",
-        "last_change_at": "2026-11-13T00:03:53.954979Z",
-        "state": "unconfirmed"
+        "checked_at": "2026-11-13T16:39:10.924179Z",
+        "key": "sha256:5128368d8d93d6a9ad16919344f86bbe08d741095ae928d99fce4eebe27733a4",
+        "last_change_at": "2026-11-13T16:39:10.924179Z",
+        "state": "confirmed"
       },
+      "lineup_history": [
+        {
+          "lineup_key": "none",
+          "lineup_state": "unconfirmed",
+          "model_generated_at": "2026-11-13T15:58:05.569536Z",
+          "scripts": {
+            "primary": "TIGHT_LOW_EVENT",
+            "secondary": "HOME_CONTROL",
+            "shares": [
+              0.21534,
+              0.08878,
+              0.23419,
+              0.17896,
+              0.08648,
+              0.19626
+            ],
+            "taxonomy_version": "soccer_scripts_v1"
+          },
+          "sim_key": "sha256:91738960fa6ffe6f696c4d35bf40d6be3dfa1a32951a52a04079c5f069b3871d",
+          "summary": {
+            "mean_away_goals": 1.48286,
+            "mean_home_goals": 1.55575,
+            "p_away": 0.36881,
+            "p_btts": 0.54822,
+            "p_draw": 0.23871,
+            "p_home": 0.39248,
+            "p_over_2_5": 0.5538
+          }
+        }
+      ],
       "match_context": {
         "aggregate": {
           "source": "no aggregate (not a second leg)",
@@ -168486,9 +168516,9 @@
         "source": "production posterior (dc_laplace_v1) that priced this fixture",
         "version": "dc_matchup_v1"
       },
-      "model_fitted_at": "2026-11-13T15:58:04.263188Z",
-      "model_generated_at": "2026-11-13T15:58:05.569536Z",
-      "results_observed_at": "2026-11-13T10:28:48.576456Z",
+      "model_fitted_at": "2026-11-13T16:40:06.534179Z",
+      "model_generated_at": "2026-11-13T16:40:07.501357Z",
+      "results_observed_at": "2026-11-13T16:38:59.985217Z",
       "scripts": {
         "contract_gaps": {},
         "evidence": {
@@ -169105,8 +169135,8 @@
           }
         }
       },
-      "sim_key": "sha256:91738960fa6ffe6f696c4d35bf40d6be3dfa1a32951a52a04079c5f069b3871d",
-      "source_run_id": "run-20261113T155805Z-1d5c02",
+      "sim_key": "sha256:197c4f7ab5a0da7fc103bcf06502ac23ba8bc7aada9adfb16dfc1fcf5b31c4a7",
+      "source_run_id": "run-20261113T164007Z-16be21",
       "summary": {
         "mean_away_goals": 1.48286,
         "mean_home_goals": 1.55575,
@@ -265512,6 +265542,6 @@
       }
     }
   },
-  "generated_at": "2026-11-13T15:58:05.569536Z",
+  "generated_at": "2026-11-13T16:40:07.501357Z",
   "quantile_levels": "(i + 0.5) / 100, i = 0..99"
 }
