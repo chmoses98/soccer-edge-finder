@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-13T09:54:25.186502+00:00",
+  "as_of": "2026-11-13T18:17:17.961401+00:00",
   "events": 391,
   "events_skipped_unmapped": 261,
   "fixtures_mapped": 130,
   "health": {
     "reasons": [
-      "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=104"
+      "weather_failures:7",
+      "weather_stopped:consecutive_failures:skipped=75"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 24,
-    "events": 67,
+    "captured": 128,
+    "events": 150,
     "failures": [],
-    "published_post": 25,
+    "published_post": 1,
     "published_pre_kickoff": 0,
-    "unchanged": 43,
-    "unpublished": 42
+    "unchanged": 22,
+    "unpublished": 149
   },
   "map_proposals": {
     "esp.2": {
@@ -367,7 +367,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 1,
+  "results_appended": 2,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -621,17 +621,21 @@
     "9024": "Le Poire SV"
   },
   "weather": {
-    "captured": 0,
-    "events": 107,
+    "captured": 19,
+    "events": 103,
     "failures": [
-      "401841311: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-20.8192&longitude=-49.5211&hourly=",
-      "401841175: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Chapec\u00f3&count=5&language=en&for",
-      "401860432: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-19.9208&longitude=-43.9378&hourly="
+      "401877917: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bucaramanga&count=5&language=en",
+      "401878043: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=C\u00facuta&count=5&language=en&form",
+      "401877919: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Yopal&count=5&language=en&forma",
+      "401929774: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Arnos%20Vale%20Stadium&count=5&",
+      "401929773: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Arnos%20Vale%20Stadium&count=5&",
+      "401929772: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Sabina%20Park&count=5&language=",
+      "401929709: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Panama%20City&count=5&language="
     ],
     "forecast_miss": 0,
-    "geocode_miss": 0,
+    "geocode_miss": 2,
     "no_venue": 0,
-    "skipped": 104,
+    "skipped": 75,
     "stopped": "consecutive_failures"
   }
 }
