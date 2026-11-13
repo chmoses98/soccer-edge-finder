@@ -1,12 +1,11 @@
 {
-  "as_of": "2026-11-13T14:42:36.764833+00:00",
+  "as_of": "2026-11-13T14:57:37.166007+00:00",
   "events": 27,
   "events_skipped_unmapped": 6,
   "fixtures_mapped": 21,
   "health": {
     "reasons": [
-      "weather_failures:4",
-      "weather_stopped:consecutive_failures:skipped=12"
+      "weather_failures:2"
     ],
     "state": "DEGRADED"
   },
@@ -22,12 +21,12 @@
     "uefa.nations"
   ],
   "lineups": {
-    "captured": 0,
+    "captured": 3,
     "events": 27,
     "failures": [],
-    "published_post": 3,
-    "published_pre_kickoff": 1,
-    "unchanged": 27,
+    "published_post": 4,
+    "published_pre_kickoff": 0,
+    "unchanged": 24,
     "unpublished": 23
   },
   "map_proposals": {
@@ -63,18 +62,16 @@
     "841": "Kuwait"
   },
   "weather": {
-    "captured": 8,
+    "captured": 21,
     "events": 27,
     "failures": [
-      "401933636: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=30.5085&longitude=47.7804&hourly=te",
-      "401919975: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=31.9552&longitude=35.9450&hourly=te",
-      "401930876: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-34.6131&longitude=-58.3772&hourly=",
-      "401921325: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=3.4305&longitude=-76.5199&hourly=te"
+      "401929795: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=6.8692&longitude=-58.2890&hourly=te",
+      "401929713: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=23.1330&longitude=-82.3830&hourly=t"
     ],
     "forecast_miss": 0,
-    "geocode_miss": 3,
+    "geocode_miss": 4,
     "no_venue": 0,
-    "skipped": 12,
-    "stopped": "consecutive_failures"
+    "skipped": 0,
+    "stopped": null
   }
 }
