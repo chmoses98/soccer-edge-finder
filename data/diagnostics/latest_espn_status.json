@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-12T18:53:19.171483+00:00",
-  "events": 369,
-  "events_skipped_unmapped": 247,
-  "fixtures_mapped": 122,
+  "as_of": "2026-11-13T01:51:31.022075+00:00",
+  "events": 391,
+  "events_skipped_unmapped": 261,
+  "fixtures_mapped": 130,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=122"
+      "weather_stopped:consecutive_failures:skipped=109"
     ],
     "state": "DEGRADED"
   },
@@ -81,23 +81,15 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 33,
-    "events": 58,
+    "captured": 20,
+    "events": 65,
     "failures": [],
-    "published_post": 11,
-    "published_pre_kickoff": 8,
-    "unchanged": 25,
-    "unpublished": 39
+    "published_post": 27,
+    "published_pre_kickoff": 0,
+    "unchanged": 45,
+    "unpublished": 38
   },
   "map_proposals": {
-    "eng.fa": {
-      "ambiguous": {},
-      "proposed": {},
-      "unresolved": {
-        "132350": "Berkhamsted",
-        "132948": "Plymouth Parkway"
-      }
-    },
     "esp.2": {
       "ambiguous": {},
       "proposed": {
@@ -170,6 +162,23 @@
         "6724": "Kyrgyz Republic",
         "7349": "Vietnam",
         "841": "Kuwait"
+      }
+    },
+    "fra.2": {
+      "ambiguous": {},
+      "proposed": {
+        "177": "fra.metz"
+      },
+      "unresolved": {
+        "10678": "Pau",
+        "11884": "Red Star FC 93",
+        "171": "Guingamp",
+        "18066": "Annecy",
+        "3170": "Dijon FCO",
+        "3171": "Clermont Foot",
+        "3267": "AS Nancy Lorraine",
+        "7719": "Rodez Aveyron",
+        "7869": "Boulogne"
       }
     },
     "fra.coupe_de_france": {
@@ -358,18 +367,26 @@
     }
   },
   "map_version": "4",
-  "results_appended": 2,
+  "results_appended": 12,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
   "unmapped_leagues": [
+    "aus.1",
+    "bel.1",
     "bra.2",
+    "chi.1",
     "col.1",
+    "den.1",
     "eng.3",
     "eng.4",
     "eng.5",
     "esp.2",
     "esp.w.1",
+    "fra.2",
+    "ger.2",
+    "ita.2",
+    "jpn.1",
     "nor.1",
     "per.1",
     "uefa.wchampions",
@@ -399,10 +416,8 @@
     "131470": "Reus FC Reddis",
     "131572": "Stade B\u00e9thunois",
     "131576": "Montreuil FC",
-    "132350": "Berkhamsted",
     "132434": "Paris 13 Atletico",
     "132785": "SC Toulon",
-    "132948": "Plymouth Parkway",
     "133835": "CD Pamplona",
     "133837": "CD Tarancon",
     "133846": "Tavernes de la Valldigna",
@@ -606,17 +621,17 @@
     "9024": "Le Poire SV"
   },
   "weather": {
-    "captured": 8,
-    "events": 133,
+    "captured": 0,
+    "events": 112,
     "failures": [
-      "401860437: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Fortaleza&count=5&language=en&f",
-      "401860441: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Caxias%20do%20Sul&count=5&langu",
-      "401860433: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Recife&count=5&language=en&form"
+      "401841311: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-20.8192&longitude=-49.5211&hourly=",
+      "401841175: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Chapec\u00f3&count=5&language=en&for",
+      "401860436: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-23.6939&longitude=-46.5650&hourly="
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 122,
+    "skipped": 109,
     "stopped": "consecutive_failures"
   }
 }
