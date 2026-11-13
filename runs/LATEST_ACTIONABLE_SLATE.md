@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261113T164649Z-dd5149` · generated 2026-11-13T16:46:49.786435Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261113T165023Z-108dbb` · generated 2026-11-13T16:50:23.146474Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-13T16:43:00.841299Z (CURRENT at publish; CURRENT until 2026-11-13T17:03:00.841299Z, STALE after 2026-11-13T17:13:00.841299Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-13T16:45:00.054030Z (CURRENT at publish; CURRENT until 2026-11-13T17:05:00.054030Z, STALE after 2026-11-13T17:15:00.054030Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-13T16:40:07.501357Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.89s
+model board generated 2026-11-13T16:40:07.501357Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 1.37s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-13T16:40:07.501357Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-13T17:00:00Z | Moldova vs Kazakhstan (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
+| 2026-11-13T17:00:00Z | Moldova vs Kazakhstan (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 61 | 1 |
 | 2026-11-13T19:00:00Z | Bermuda vs St. Lucia (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-13T19:00:00Z | Puerto Rico vs Dominica (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-13T19:45:00Z | Andorra vs Gibraltar (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
@@ -76,8 +76,8 @@ model board generated 2026-11-13T16:40:07.501357Z · simulations this update: 0 
 
 ```
 action_EXCLUDED_BY_GATE: 233
-action_NO_EDGE: 2529
-action_NO_QUOTE: 478
+action_NO_EDGE: 2530
+action_NO_QUOTE: 477
 action_RESEARCH_CANDIDATE: 18
 contract_sides: 3258
 fixtures: 36
