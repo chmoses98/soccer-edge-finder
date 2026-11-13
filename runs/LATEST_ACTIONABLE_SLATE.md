@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261113T212848Z-0a6b4c` · generated 2026-11-13T21:28:48.952110Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261113T214351Z-c5f294` · generated 2026-11-13T21:43:51.400578Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-13T21:25:08.338703Z (CURRENT at publish; CURRENT until 2026-11-13T21:45:08.338703Z, STALE after 2026-11-13T21:55:08.338703Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-13T21:40:10.846765Z (CURRENT at publish; CURRENT until 2026-11-13T22:00:10.846765Z, STALE after 2026-11-13T22:10:10.846765Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-13T20:13:45.634711Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.90s
+model board generated 2026-11-13T20:13:45.634711Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.05s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -42,7 +42,7 @@ model board generated 2026-11-13T20:13:45.634711Z · simulations this update: 0 
 | 2026-11-15T19:45:00Z | Spain vs England (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-15T19:45:00Z | France vs Türkiye (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 
-## Candidates on CURRENT prices (18; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (20; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -63,15 +63,17 @@ model board generated 2026-11-13T20:13:45.634711Z · simulations this update: 0 
 | Querétaro vs Monterrey | First half: away wins by more than 1.5 | no | 0.8900 | 0.938 [0.889, 0.981] | +0.041 | +0.013 | 0.9 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | btts | no | 0.3800 | 0.492 [0.365, 0.617] | +0.095 | +0.011 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | Mirassol vs Atlético Mineiro | btts | no | 0.4600 | 0.559 [0.446, 0.668] | +0.082 | +0.009 | 0.46 | - | * | RESEARCH_CANDIDATE |
-| Mirassol vs Atlético Mineiro | Total goals over 0.5 | no | 0.0700 | 0.117 [0.062, 0.179] | +0.043 | +0.003 | 0.07 | - | * | RESEARCH_CANDIDATE |
+| Mirassol vs Atlético Mineiro | Total goals over 3.5 | no | 0.7100 | 0.799 [0.681, 0.899] | +0.074 | +0.008 | 0.71 | - | * | RESEARCH_CANDIDATE |
+| Mirassol vs Atlético Mineiro | Total goals over 2.5 | no | 0.4900 | 0.605 [0.457, 0.744] | +0.098 | +0.007 | 0.49 | - |  | RESEARCH_CANDIDATE |
+| Mirassol vs Atlético Mineiro | Total goals over 0.5 | no | 0.0700 | 0.117 [0.062, 0.179] | +0.043 | +0.003 | 0.07 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 112
-action_NO_EDGE: 2082
-action_NO_QUOTE: 420
-action_RESEARCH_CANDIDATE: 18
+action_EXCLUDED_BY_GATE: 114
+action_NO_EDGE: 2081
+action_NO_QUOTE: 417
+action_RESEARCH_CANDIDATE: 20
 contract_sides: 2632
 fixtures: 29
 fixtures_model_invalidated: 0
