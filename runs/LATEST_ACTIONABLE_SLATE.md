@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261113T140523Z-69a174` · generated 2026-11-13T14:05:23.153970Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261113T141852Z-35d2fe` · generated 2026-11-13T14:18:52.202670Z · trigger `kickoff_chain:T-30/T-15` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-13T14:01:38.188097Z (CURRENT at publish; CURRENT until 2026-11-13T14:21:38.188097Z, STALE after 2026-11-13T14:31:38.188097Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-13T14:15:00.079491Z (CURRENT at publish; CURRENT until 2026-11-13T14:35:00.079491Z, STALE after 2026-11-13T14:45:00.079491Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-13T13:44:34.547544Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.85s
+model board generated 2026-11-13T14:18:48.090832Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 1.83s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-13T13:44:34.547544Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-13T14:45:00Z | Qatar vs Australia (fifa.friendly) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-11-13T14:45:00Z | Qatar vs Australia (fifa.friendly) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-13T17:00:00Z | Moldova vs Kazakhstan (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-13T19:00:00Z | Bermuda vs St. Lucia (concacaf.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-13T19:00:00Z | Puerto Rico vs Dominica (concacaf.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
@@ -74,9 +74,9 @@ model board generated 2026-11-13T13:44:34.547544Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 202
-action_NO_EDGE: 2318
-action_NO_QUOTE: 486
+action_EXCLUDED_BY_GATE: 206
+action_NO_EDGE: 2305
+action_NO_QUOTE: 495
 action_RESEARCH_CANDIDATE: 18
 contract_sides: 3024
 fixtures: 35
