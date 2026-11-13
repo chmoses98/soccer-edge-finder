@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261113T095915Z-c0da41` · generated 2026-11-13T09:59:15.778542Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261113T102859Z-3aa691` · generated 2026-11-13T10:28:59.558966Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-13T09:55:43.571200Z (CURRENT at publish; CURRENT until 2026-11-13T10:15:43.571200Z, STALE after 2026-11-13T10:25:43.571200Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-13T10:25:16.208678Z (CURRENT at publish; CURRENT until 2026-11-13T10:45:16.208678Z, STALE after 2026-11-13T10:55:16.208678Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-13T02:40:45.770105Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.73s
+model board generated 2026-11-13T02:40:45.770105Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.66s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -32,7 +32,7 @@ model board generated 2026-11-13T02:40:45.770105Z · simulations this update: 0 
 | 2026-11-14T00:00:00Z | Colombia vs Chile (fifa.friendly) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-14T00:00:00Z | Ecuador vs Costa Rica (fifa.friendly) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-14T02:00:00Z | Guatemala vs Canada (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-11-14T10:15:00Z | Japan vs Brazil (fifa.friendly) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-14T10:15:00Z | Japan vs Brazil (fifa.friendly) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-14T14:00:00Z | Kosovo vs Israel (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-14T17:00:00Z | Georgia vs Hungary (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-14T17:00:00Z | Norway vs Wales (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
@@ -77,9 +77,9 @@ model board generated 2026-11-13T02:40:45.770105Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 186
-action_NO_EDGE: 2376
-action_NO_QUOTE: 441
+action_EXCLUDED_BY_GATE: 185
+action_NO_EDGE: 2379
+action_NO_QUOTE: 439
 action_RESEARCH_CANDIDATE: 21
 contract_sides: 3024
 fixtures: 35
