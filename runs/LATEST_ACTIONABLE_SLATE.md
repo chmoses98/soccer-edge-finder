@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261113T175407Z-51d455` · generated 2026-11-13T17:54:07.138913Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261113T180013Z-a05bce` · generated 2026-11-13T18:00:13.026382Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-13T17:50:20.940274Z (CURRENT at publish; CURRENT until 2026-11-13T18:10:20.940274Z, STALE after 2026-11-13T18:20:20.940274Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-13T17:56:21.473455Z (CURRENT at publish; CURRENT until 2026-11-13T18:16:21.473455Z, STALE after 2026-11-13T18:26:21.473455Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-13T17:17:16.944686Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.33s
+model board generated 2026-11-13T18:00:07.130982Z · simulations this update: 2 · Odds API calls this update: 0 (credits 0) · reprice 1.33s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -54,7 +54,7 @@ model board generated 2026-11-13T17:17:16.944686Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Chapecoense vs Vasco da Gama | Result: away | no | 0.3300 | 0.573 [0.419, 0.724] | +0.227 | +0.125 | 0.45 | - | * | RESEARCH_CANDIDATE |
+| Chapecoense vs Vasco da Gama | Result: away | no | 0.3250 | 0.573 [0.419, 0.724] | +0.233 | +0.131 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | away wins by more than 1.5 | no | 0.5700 | 0.775 [0.644, 0.887] | +0.188 | +0.109 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | Result: home | yes | 0.1350 | 0.328 [0.189, 0.475] | +0.184 | +0.084 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | away wins by more than 2.5 | no | 0.7800 | 0.902 [0.819, 0.964] | +0.110 | +0.068 | 0.85 | - |  | RESEARCH_CANDIDATE |
@@ -76,16 +76,14 @@ model board generated 2026-11-13T17:17:16.944686Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 253
-action_NO_EDGE: 2589
-action_NO_QUOTE: 520
+action_EXCLUDED_BY_GATE: 257
+action_NO_EDGE: 2582
+action_NO_QUOTE: 523
 action_RESEARCH_CANDIDATE: 18
 contract_sides: 3380
 fixtures: 37
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
-
-Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
