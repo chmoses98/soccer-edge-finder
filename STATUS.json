@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-13T00:28:30.221278+00:00",
+  "as_of": "2026-11-13T12:28:55.050855+00:00",
   "events": 27,
   "events_skipped_unmapped": 6,
   "fixtures_mapped": 21,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=1"
+      "weather_stopped:consecutive_failures:skipped=15"
     ],
     "state": "DEGRADED"
   },
@@ -22,13 +22,13 @@
     "uefa.nations"
   ],
   "lineups": {
-    "captured": 0,
+    "captured": 1,
     "events": 27,
     "failures": [],
-    "published_post": 0,
+    "published_post": 1,
     "published_pre_kickoff": 0,
-    "unchanged": 27,
-    "unpublished": 27
+    "unchanged": 26,
+    "unpublished": 26
   },
   "map_proposals": {
     "fifa.friendly": {
@@ -63,17 +63,17 @@
     "841": "Kuwait"
   },
   "weather": {
-    "captured": 19,
+    "captured": 7,
     "events": 27,
     "failures": [
-      "401861161: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=55.8651&longitude=-4.2576&hourly=te",
-      "401861158: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Belgrade&count=5&language=en&fo",
-      "401861160: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Kosice&count=5&language=en&form"
+      "401919978: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Ar-Rayyan&count=5&language=en&f",
+      "401933636: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Basra&count=5&language=en&forma",
+      "401931978: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Jaber%20Al-Ahmad%20Internationa"
     ],
     "forecast_miss": 0,
-    "geocode_miss": 4,
+    "geocode_miss": 2,
     "no_venue": 0,
-    "skipped": 1,
+    "skipped": 15,
     "stopped": "consecutive_failures"
   }
 }
