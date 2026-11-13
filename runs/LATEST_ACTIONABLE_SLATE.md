@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261113T143620Z-b5ca18` · generated 2026-11-13T14:36:20.435299Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261113T144337Z-9fb0bb` · generated 2026-11-13T14:43:37.183173Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-13T14:31:34.967296Z (CURRENT at publish; CURRENT until 2026-11-13T14:51:34.967296Z, STALE after 2026-11-13T15:01:34.967296Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-13T14:38:59.784766Z (CURRENT at publish; CURRENT until 2026-11-13T14:58:59.784766Z, STALE after 2026-11-13T15:08:59.784766Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-13T14:18:48.090832Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.90s
 
@@ -46,7 +46,7 @@ model board generated 2026-11-13T14:18:48.090832Z · simulations this update: 0 
 | 2026-11-14T21:30:00Z | Haiti vs United States (concacaf.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-14T23:00:00Z | Querétaro vs Monterrey (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-14T23:30:00Z | Chapecoense vs Vasco da Gama (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-15T01:00:00Z | Jamaica vs Mexico (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-15T01:00:00Z | Jamaica vs Mexico (concacaf.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
 ## Candidates on CURRENT prices (18; RESEARCH_ONLY = analysis, never a bet)
 
@@ -74,9 +74,9 @@ model board generated 2026-11-13T14:18:48.090832Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 211
-action_NO_EDGE: 2362
-action_NO_QUOTE: 433
+action_EXCLUDED_BY_GATE: 216
+action_NO_EDGE: 2358
+action_NO_QUOTE: 432
 action_RESEARCH_CANDIDATE: 18
 contract_sides: 3024
 fixtures: 35
