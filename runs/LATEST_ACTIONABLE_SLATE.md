@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261113T151302Z-c3cca6` · generated 2026-11-13T15:13:02.381760Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261113T152738Z-a23b2f` · generated 2026-11-13T15:27:38.425302Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-13T15:09:02.164432Z (CURRENT at publish; CURRENT until 2026-11-13T15:29:02.164432Z, STALE after 2026-11-13T15:39:02.164432Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-13T15:24:02.228986Z (CURRENT at publish; CURRENT until 2026-11-13T15:44:02.228986Z, STALE after 2026-11-13T15:54:02.228986Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-13T15:12:42.683833Z · simulations this update: 2 · Odds API calls this update: 0 (credits 0) · reprice 1.79s
+model board generated 2026-11-13T15:12:42.683833Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.95s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,26 +12,26 @@ model board generated 2026-11-13T15:12:42.683833Z · simulations this update: 2 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-13T17:00:00Z | Moldova vs Kazakhstan (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-13T19:00:00Z | Bermuda vs St. Lucia (concacaf.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
-| 2026-11-13T19:00:00Z | Puerto Rico vs Dominica (concacaf.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
-| 2026-11-13T19:45:00Z | Andorra vs Gibraltar (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-13T19:45:00Z | Bulgaria vs Iceland (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-13T19:45:00Z | Liechtenstein vs Azerbaijan (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-13T19:45:00Z | Luxembourg vs Estonia (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-13T19:45:00Z | Netherlands vs Greece (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-13T19:45:00Z | Scotland vs North Macedonia (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-13T19:45:00Z | Serbia vs Germany (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-13T19:45:00Z | Slovakia vs Faroe Islands (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-13T19:45:00Z | Slovenia vs Switzerland (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-13T20:00:00Z | Grenada vs St. Kitts and Nevis (concacaf.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
-| 2026-11-13T23:00:00Z | St. Martin vs El Salvador (concacaf.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
-| 2026-11-13T23:00:00Z | Argentina vs Uruguay (fifa.friendly) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
-| 2026-11-14T00:00:00Z | Montserrat vs Nicaragua (concacaf.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
-| 2026-11-14T00:00:00Z | Colombia vs Chile (fifa.friendly) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
-| 2026-11-14T00:00:00Z | Ecuador vs Costa Rica (fifa.friendly) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
-| 2026-11-14T02:00:00Z | Guatemala vs Canada (concacaf.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-11-14T10:15:00Z | Japan vs Brazil (fifa.friendly) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-13T17:00:00Z | Moldova vs Kazakhstan (uefa.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-13T19:00:00Z | Bermuda vs St. Lucia (concacaf.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-11-13T19:00:00Z | Puerto Rico vs Dominica (concacaf.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-11-13T19:45:00Z | Andorra vs Gibraltar (uefa.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-13T19:45:00Z | Bulgaria vs Iceland (uefa.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-13T19:45:00Z | Liechtenstein vs Azerbaijan (uefa.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-13T19:45:00Z | Luxembourg vs Estonia (uefa.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-13T19:45:00Z | Netherlands vs Greece (uefa.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-13T19:45:00Z | Scotland vs North Macedonia (uefa.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-13T19:45:00Z | Serbia vs Germany (uefa.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-13T19:45:00Z | Slovakia vs Faroe Islands (uefa.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-13T19:45:00Z | Slovenia vs Switzerland (uefa.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-13T20:00:00Z | Grenada vs St. Kitts and Nevis (concacaf.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-11-13T23:00:00Z | St. Martin vs El Salvador (concacaf.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-11-13T23:00:00Z | Argentina vs Uruguay (fifa.friendly) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-11-14T00:00:00Z | Montserrat vs Nicaragua (concacaf.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-11-14T00:00:00Z | Colombia vs Chile (fifa.friendly) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-11-14T00:00:00Z | Ecuador vs Costa Rica (fifa.friendly) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-11-14T02:00:00Z | Guatemala vs Canada (concacaf.nations_league) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-14T10:15:00Z | Japan vs Brazil (fifa.friendly) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-14T14:00:00Z | Kosovo vs Israel (uefa.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-14T17:00:00Z | Georgia vs Hungary (uefa.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-14T17:00:00Z | Norway vs Wales (uefa.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
@@ -66,18 +66,18 @@ model board generated 2026-11-13T15:12:42.683833Z · simulations this update: 2 
 | Chapecoense vs Vasco da Gama | home wins by more than 1.5 | yes | 0.0600 | 0.155 [0.067, 0.263] | +0.091 | +0.022 | 0.08 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | Result: home | yes | 0.2800 | 0.413 [0.268, 0.573] | +0.118 | +0.017 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | Result: draw | yes | 0.1900 | 0.245 [0.201, 0.291] | +0.045 | +0.016 | 0.2 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Monterrey | First-half result: away | no | 0.6500 | 0.744 [0.638, 0.852] | +0.079 | +0.014 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | First half: away wins by more than 1.5 | no | 0.8900 | 0.938 [0.889, 0.981] | +0.041 | +0.013 | 0.9 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | btts | no | 0.3800 | 0.492 [0.365, 0.617] | +0.095 | +0.011 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | Mirassol vs Atlético Mineiro | btts | no | 0.4600 | 0.559 [0.446, 0.668] | +0.082 | +0.009 | 0.46 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Monterrey | First-half result: away | no | 0.6600 | 0.744 [0.638, 0.852] | +0.069 | +0.004 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Mirassol vs Atlético Mineiro | Total goals over 0.5 | no | 0.0700 | 0.117 [0.062, 0.179] | +0.043 | +0.003 | 0.07 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_EXCLUDED_BY_GATE: 208
-action_NO_EDGE: 2497
-action_NO_QUOTE: 499
+action_NO_EDGE: 2504
+action_NO_QUOTE: 492
 action_RESEARCH_CANDIDATE: 18
 contract_sides: 3222
 fixtures: 36
