@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261113T071406Z-ad9835` · generated 2026-11-13T07:14:06.273371Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261113T072906Z-780d8a` · generated 2026-11-13T07:29:06.065751Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-13T07:10:34.689454Z (CURRENT at publish; CURRENT until 2026-11-13T07:30:34.689454Z, STALE after 2026-11-13T07:40:34.689454Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-13T07:25:34.722066Z (CURRENT at publish; CURRENT until 2026-11-13T07:45:34.722066Z, STALE after 2026-11-13T07:55:34.722066Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-13T02:40:45.770105Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.75s
+model board generated 2026-11-13T02:40:45.770105Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.76s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -60,8 +60,8 @@ model board generated 2026-11-13T02:40:45.770105Z · simulations this update: 0 
 | Querétaro vs Monterrey | away team total over 1.5 | no | 0.5000 | 0.663 [0.512, 0.800] | +0.145 | +0.055 | 0.55 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | away wins by more than 1.5 | no | 0.7400 | 0.858 [0.767, 0.937] | +0.105 | +0.052 | 0.79 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | Result: away | no | 0.5200 | 0.675 [0.537, 0.808] | +0.138 | +0.046 | 0.56 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Monterrey | away wins by more than 2.5 | no | 0.8800 | 0.950 [0.903, 0.984] | +0.062 | +0.040 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | away team total over 0.5 | no | 0.1900 | 0.314 [0.194, 0.438] | +0.113 | +0.032 | 0.22 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Monterrey | away wins by more than 2.5 | no | 0.8900 | 0.950 [0.903, 0.984] | +0.053 | +0.030 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | home wins by more than 1.5 | yes | 0.0600 | 0.155 [0.067, 0.263] | +0.091 | +0.022 | 0.08 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | Result: home | yes | 0.2800 | 0.413 [0.268, 0.573] | +0.118 | +0.017 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | btts | no | 0.3800 | 0.492 [0.365, 0.617] | +0.095 | +0.011 | 0.39 | - | * | RESEARCH_CANDIDATE |
@@ -76,9 +76,9 @@ model board generated 2026-11-13T02:40:45.770105Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 169
-action_NO_EDGE: 2395
-action_NO_QUOTE: 440
+action_EXCLUDED_BY_GATE: 166
+action_NO_EDGE: 2400
+action_NO_QUOTE: 438
 action_RESEARCH_CANDIDATE: 20
 contract_sides: 3024
 fixtures: 35
