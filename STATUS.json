@@ -1,14 +1,11 @@
 {
-  "as_of": "2026-11-13T16:49:24.200628+00:00",
+  "as_of": "2026-11-13T16:56:21.448555+00:00",
   "events": 27,
   "events_skipped_unmapped": 6,
   "fixtures_mapped": 21,
   "health": {
-    "reasons": [
-      "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=2"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
     "concacaf.nations.league",
@@ -22,12 +19,12 @@
     "uefa.nations"
   ],
   "lineups": {
-    "captured": 2,
+    "captured": 0,
     "events": 27,
     "failures": [],
     "published_post": 4,
     "published_pre_kickoff": 1,
-    "unchanged": 25,
+    "unchanged": 27,
     "unpublished": 22
   },
   "map_proposals": {
@@ -63,17 +60,13 @@
     "841": "Kuwait"
   },
   "weather": {
-    "captured": 17,
+    "captured": 22,
     "events": 26,
-    "failures": [
-      "401861159: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Amsterdam&count=5&language=en&f",
-      "401861161: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Glasgow&count=5&language=en&for",
-      "401861158: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Belgrade&count=5&language=en&fo"
-    ],
+    "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 4,
     "no_venue": 0,
-    "skipped": 2,
-    "stopped": "consecutive_failures"
+    "skipped": 0,
+    "stopped": null
   }
 }
