@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261114T153651Z-7481da` · generated 2026-11-14T15:36:51.528063Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261114T163754Z-188c99` · generated 2026-11-14T16:37:54.111262Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-14T15:32:54.490797Z (CURRENT at publish; CURRENT until 2026-11-14T15:52:54.490797Z, STALE after 2026-11-14T16:02:54.490797Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-14T16:33:04.232056Z (CURRENT at publish; CURRENT until 2026-11-14T16:53:04.232056Z, STALE after 2026-11-14T17:03:04.232056Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-14T15:14:32.167567Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.46s
+model board generated 2026-11-14T16:37:39.316507Z · simulations this update: 2 · Odds API calls this update: 0 (credits 0) · reprice 0.85s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,19 +12,19 @@ model board generated 2026-11-14T15:14:32.167567Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-14T17:00:00Z | Georgia vs Hungary (uefa.nations_league) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-14T17:00:00Z | Norway vs Wales (uefa.nations_league) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-14T19:00:00Z | Sint Maarten vs French Guiana (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 23 | 0 |
-| 2026-11-14T19:45:00Z | Austria vs Republic of Ireland (uefa.nations_league) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-14T19:45:00Z | Northern Ireland vs Ukraine (uefa.nations_league) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-14T19:45:00Z | Portugal vs Denmark (uefa.nations_league) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-14T19:45:00Z | Romania vs Poland (uefa.nations_league) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-14T19:45:00Z | Sweden vs Bosnia and Herzegovina (uefa.nations_league) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-14T21:30:00Z | Mirassol vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-14T21:30:00Z | Haiti vs United States (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-11-14T17:00:00Z | Georgia vs Hungary (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-14T17:00:00Z | Norway vs Wales (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-14T19:00:00Z | Sint Maarten vs French Guiana (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-11-14T19:45:00Z | Austria vs Republic of Ireland (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-14T19:45:00Z | Northern Ireland vs Ukraine (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-14T19:45:00Z | Portugal vs Denmark (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-14T19:45:00Z | Romania vs Poland (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-14T19:45:00Z | Sweden vs Bosnia and Herzegovina (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-14T21:30:00Z | Mirassol vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-14T21:30:00Z | Haiti vs United States (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-14T23:00:00Z | Querétaro vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-11-14T23:30:00Z | Chapecoense vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-15T01:00:00Z | Jamaica vs Mexico (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-11-14T23:30:00Z | Chapecoense vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-15T01:00:00Z | Jamaica vs Mexico (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-15T14:00:00Z | Cyprus vs Montenegro (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-15T14:00:00Z | Latvia vs Armenia (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-15T17:00:00Z | Belarus vs Albania (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
@@ -49,15 +49,15 @@ model board generated 2026-11-14T15:14:32.167567Z · simulations this update: 0 
 | Querétaro vs Monterrey | Result: away | no | 0.5200 | 0.675 [0.537, 0.809] | +0.138 | +0.047 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | home wins by more than 1.5 | yes | 0.0400 | 0.156 [0.067, 0.264] | +0.113 | +0.043 | 0.08 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | away wins by more than 1.5 | no | 0.7600 | 0.858 [0.767, 0.937] | +0.086 | +0.032 | 0.79 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Monterrey | away team total over 2.5 | no | 0.7800 | 0.870 [0.773, 0.949] | +0.078 | +0.028 | 0.8 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | Result: home | yes | 0.2700 | 0.413 [0.268, 0.573] | +0.129 | +0.028 | 0.29 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Monterrey | First-half result: away | no | 0.6400 | 0.743 [0.638, 0.842] | +0.087 | +0.024 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | First team to score: away | no | 0.4500 | 0.574 [0.438, 0.702] | +0.107 | +0.023 | 0.47 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Monterrey | away team total over 0.5 | no | 0.2000 | 0.314 [0.194, 0.438] | +0.103 | +0.022 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | away wins by more than 2.5 | no | 0.9000 | 0.950 [0.903, 0.984] | +0.044 | +0.021 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Mirassol vs Atlético Mineiro | btts | no | 0.4500 | 0.559 [0.445, 0.669] | +0.092 | +0.019 | 0.46 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Monterrey | away team total over 2.5 | no | 0.7900 | 0.870 [0.773, 0.949] | +0.069 | +0.018 | 0.8 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | home wins by more than 1.5 | yes | 0.1000 | 0.203 [0.097, 0.331] | +0.096 | +0.017 | 0.11 | - |  | RESEARCH_CANDIDATE |
-| Querétaro vs Monterrey | First-half result: away | no | 0.6500 | 0.743 [0.638, 0.842] | +0.077 | +0.014 | 0.66 | - | * | RESEARCH_CANDIDATE |
-| Chapecoense vs Vasco da Gama | Result: draw | yes | 0.1950 | 0.245 [0.201, 0.291] | +0.039 | +0.010 | 0.2 | - |  | RESEARCH_CANDIDATE |
+| Chapecoense vs Vasco da Gama | Result: draw | yes | 0.1900 | 0.245 [0.201, 0.291] | +0.045 | +0.016 | 0.2 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Monterrey | away team total over 0.5 | no | 0.2100 | 0.314 [0.194, 0.438] | +0.092 | +0.012 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Mirassol vs Atlético Mineiro | Total goals over 2.5 | no | 0.4900 | 0.605 [0.456, 0.745] | +0.098 | +0.006 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | home wins by more than 2.5 | yes | 0.0300 | 0.082 [0.027, 0.157] | +0.050 | +0.005 | 0.03 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | First half: away wins by more than 1.5 | no | 0.9000 | 0.937 [0.889, 0.981] | +0.030 | +0.004 | 0.9 | - | * | RESEARCH_CANDIDATE |
@@ -66,9 +66,9 @@ model board generated 2026-11-14T15:14:32.167567Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 114
-action_NO_EDGE: 1994
-action_NO_QUOTE: 389
+action_EXCLUDED_BY_GATE: 121
+action_NO_EDGE: 1968
+action_NO_QUOTE: 408
 action_RESEARCH_CANDIDATE: 21
 contract_sides: 2518
 fixtures: 24

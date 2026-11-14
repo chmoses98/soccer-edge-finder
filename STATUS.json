@@ -1,11 +1,13 @@
 {
-  "as_of": "2026-11-14T14:59:30.928488+00:00",
+  "as_of": "2026-11-14T16:36:54.636591+00:00",
   "events": 19,
   "events_skipped_unmapped": 6,
   "fixtures_mapped": 13,
   "health": {
-    "reasons": [],
-    "state": "HEALTHY"
+    "reasons": [
+      "weather_failures:2"
+    ],
+    "state": "DEGRADED"
   },
   "leagues": [
     "concacaf.nations.league",
@@ -22,10 +24,10 @@
     "captured": 4,
     "events": 19,
     "failures": [],
-    "published_post": 3,
-    "published_pre_kickoff": 1,
+    "published_post": 4,
+    "published_pre_kickoff": 2,
     "unchanged": 15,
-    "unpublished": 15
+    "unpublished": 13
   },
   "map_proposals": {
     "fifa.friendly": {
@@ -46,7 +48,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 1,
+  "results_appended": 2,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 9,
@@ -64,9 +66,12 @@
     "6724": "Kyrgyz Republic"
   },
   "weather": {
-    "captured": 12,
-    "events": 16,
-    "failures": [],
+    "captured": 8,
+    "events": 14,
+    "failures": [
+      "401861168: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bucuresti&count=5&language=en&f",
+      "401861166: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Stockholm&count=5&language=en&f"
+    ],
     "forecast_miss": 0,
     "geocode_miss": 4,
     "no_venue": 0,
