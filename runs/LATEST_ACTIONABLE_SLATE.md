@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261114T145937Z-d68283` · generated 2026-11-14T14:59:37.279313Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261114T151450Z-4034ca` · generated 2026-11-14T15:14:50.964622Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-14T14:55:45.681277Z (CURRENT at publish; CURRENT until 2026-11-14T15:15:45.681277Z, STALE after 2026-11-14T15:25:45.681277Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-14T15:10:45.709449Z (CURRENT at publish; CURRENT until 2026-11-14T15:30:45.709449Z, STALE after 2026-11-14T15:40:45.709449Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-14T14:29:53.140132Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.03s
+model board generated 2026-11-14T15:14:32.167567Z · simulations this update: 2 · Odds API calls this update: 0 (credits 0) · reprice 0.90s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -34,8 +34,10 @@ model board generated 2026-11-14T14:29:53.140132Z · simulations this update: 0 
 | 2026-11-15T19:45:00Z | Spain vs England (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-15T19:45:00Z | France vs Türkiye (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-15T23:00:00Z | Panama vs Curaçao (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 16 | 0 |
+| 2026-11-16T15:00:00Z | Faroe Islands vs Moldova (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-16T15:00:00Z | Kazakhstan vs Slovakia (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 
-## Candidates on CURRENT prices (24; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (25; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -62,21 +64,20 @@ model board generated 2026-11-14T14:29:53.140132Z · simulations this update: 0 
 | Querétaro vs Monterrey | home wins by more than 2.5 | yes | 0.0300 | 0.082 [0.027, 0.157] | +0.050 | +0.005 | 0.03 | - |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | home wins by more than 2.5 | yes | 0.0200 | 0.061 [0.017, 0.119] | +0.040 | +0.004 | 0.02 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | First half: away wins by more than 1.5 | no | 0.9000 | 0.937 [0.889, 0.981] | +0.030 | +0.004 | 0.9 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Monterrey | First team to score: home | yes | 0.3800 | 0.490 [0.348, 0.632] | +0.093 | +0.004 | 0.38 | - |  | RESEARCH_CANDIDATE |
 | Mirassol vs Atlético Mineiro | Total goals over 0.5 | no | 0.0700 | 0.117 [0.062, 0.179] | +0.043 | +0.003 | 0.07 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 117
-action_NO_EDGE: 1790
-action_NO_QUOTE: 343
-action_RESEARCH_CANDIDATE: 24
-contract_sides: 2274
-fixtures: 22
+action_EXCLUDED_BY_GATE: 116
+action_NO_EDGE: 1992
+action_NO_QUOTE: 385
+action_RESEARCH_CANDIDATE: 25
+contract_sides: 2518
+fixtures: 24
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
-
-Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
