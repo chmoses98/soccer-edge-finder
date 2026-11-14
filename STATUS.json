@@ -1,11 +1,14 @@
 {
-  "as_of": "2026-11-14T01:58:44.867325+00:00",
+  "as_of": "2026-11-14T08:14:43.195449+00:00",
   "events": 19,
   "events_skipped_unmapped": 6,
   "fixtures_mapped": 13,
   "health": {
-    "reasons": [],
-    "state": "HEALTHY"
+    "reasons": [
+      "weather_failures:4",
+      "weather_stopped:consecutive_failures:skipped=12"
+    ],
+    "state": "DEGRADED"
   },
   "leagues": [
     "concacaf.nations.league",
@@ -64,13 +67,18 @@
     "6724": "Kyrgyz Republic"
   },
   "weather": {
-    "captured": 14,
+    "captured": 0,
     "events": 19,
-    "failures": [],
+    "failures": [
+      "401929710: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=25.7743&longitude=-80.1937&hourly=t",
+      "401929772: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Sabina%20Park&count=5&language=",
+      "401930879: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Guangzhou&count=5&language=en&f",
+      "401916337: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=1.2897&longitude=103.8501&hourly=te"
+    ],
     "forecast_miss": 0,
-    "geocode_miss": 4,
+    "geocode_miss": 2,
     "no_venue": 1,
-    "skipped": 0,
-    "stopped": null
+    "skipped": 12,
+    "stopped": "consecutive_failures"
   }
 }
