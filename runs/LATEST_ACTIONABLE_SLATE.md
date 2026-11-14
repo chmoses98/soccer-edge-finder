@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261114T181608Z-a14563` · generated 2026-11-14T18:16:08.332965Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261114T183119Z-770f49` · generated 2026-11-14T18:31:19.059538Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-14T18:12:21.446846Z (CURRENT at publish; CURRENT until 2026-11-14T18:32:21.446846Z, STALE after 2026-11-14T18:42:21.446846Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-14T18:27:22.249710Z (CURRENT at publish; CURRENT until 2026-11-14T18:47:22.249710Z, STALE after 2026-11-14T18:57:22.249710Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-14T18:16:05.985576Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.91s
+model board generated 2026-11-14T18:31:15.834346Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 1.06s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-14T18:16:05.985576Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-14T19:00:00Z | Sint Maarten vs French Guiana (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-11-14T19:00:00Z | Sint Maarten vs French Guiana (concacaf.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-14T19:45:00Z | Austria vs Republic of Ireland (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-14T19:45:00Z | Northern Ireland vs Ukraine (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-14T19:45:00Z | Portugal vs Denmark (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
@@ -70,8 +70,8 @@ model board generated 2026-11-14T18:16:05.985576Z · simulations this update: 1 
 
 ```
 action_EXCLUDED_BY_GATE: 96
-action_NO_EDGE: 2109
-action_NO_QUOTE: 441
+action_NO_EDGE: 2115
+action_NO_QUOTE: 435
 action_RESEARCH_CANDIDATE: 22
 contract_sides: 2668
 fixtures: 26
