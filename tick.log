@@ -2452,3 +2452,32 @@ These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW
 
 ## Events
 - Querétaro vs Monterrey (Liga MX) 2026-11-14T23:00:00Z · markets 79/80 evaluated · lineups unknown · xG 1.42-1.21 · 1X2 41%/26%/32%
+
+{
+  "outputs": {
+    "json": "work/runs/_pending/run_output.v1.json",
+    "md": "work/runs/_pending/RUN_SOCCER.md",
+    "contracts": "work/runs/_pending/priced_contracts.json",
+    "coverage": "work/runs/_pending/coverage.json",
+    "diagnostics": "work/runs/_pending/coverage_diagnostics.json"
+  },
+  "simulated": [
+    "fx:mex.liga_mx:2026:mex.queretaro:mex.monterrey"
+  ],
+  "repriced": [],
+  "archived_records": 79
+}
+{
+ "batches": 21,
+ "horizons_delivered": 50,
+ "missed_states": {
+  "MISSED_EXECUTION_FAILURE": 2
+ },
+ "paid_calls": 6,
+ "credits_spent": 18,
+ "end_reason": "link_time_limit",
+ "chain_continue": true,
+ "delivered_total": 3882,
+ "missed_total": 495,
+ "delivery_rate_total": 0.8869088416723784
+}
