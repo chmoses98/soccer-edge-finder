@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261114T113123Z-36ca10` · generated 2026-11-14T11:31:23.295662Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261114T114624Z-47f6bc` · generated 2026-11-14T11:46:24.851964Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-14T11:27:39.499811Z (CURRENT at publish; CURRENT until 2026-11-14T11:47:39.499811Z, STALE after 2026-11-14T11:57:39.499811Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-14T11:42:40.829499Z (CURRENT at publish; CURRENT until 2026-11-14T12:02:40.829499Z, STALE after 2026-11-14T12:12:40.829499Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-14T01:03:53.007637Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.85s
+model board generated 2026-11-14T01:03:53.007637Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.05s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -40,7 +40,7 @@ model board generated 2026-11-14T01:03:53.007637Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Chapecoense vs Vasco da Gama | Result: away | no | 0.3250 | 0.573 [0.419, 0.725] | +0.233 | +0.131 | 0.45 | - | * | RESEARCH_CANDIDATE |
+| Chapecoense vs Vasco da Gama | Result: away | no | 0.3200 | 0.573 [0.419, 0.725] | +0.238 | +0.136 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | away wins by more than 1.5 | no | 0.5700 | 0.775 [0.644, 0.888] | +0.188 | +0.109 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | Result: home | yes | 0.1250 | 0.328 [0.189, 0.476] | +0.195 | +0.094 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | away wins by more than 2.5 | no | 0.7800 | 0.902 [0.819, 0.964] | +0.110 | +0.068 | 0.85 | - |  | RESEARCH_CANDIDATE |
@@ -49,9 +49,9 @@ model board generated 2026-11-14T01:03:53.007637Z · simulations this update: 0 
 | Querétaro vs Monterrey | away team total over 1.5 | no | 0.5200 | 0.663 [0.512, 0.800] | +0.126 | +0.035 | 0.55 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | Result: home | yes | 0.2700 | 0.413 [0.268, 0.573] | +0.129 | +0.028 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | away wins by more than 1.5 | no | 0.7700 | 0.858 [0.767, 0.937] | +0.076 | +0.023 | 0.79 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Monterrey | First team to score: away | no | 0.4500 | 0.574 [0.438, 0.702] | +0.107 | +0.023 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | away team total over 2.5 | no | 0.7900 | 0.870 [0.773, 0.949] | +0.069 | +0.018 | 0.8 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | First-half result: away | no | 0.6500 | 0.743 [0.638, 0.842] | +0.077 | +0.014 | 0.66 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Monterrey | First team to score: away | no | 0.4600 | 0.574 [0.438, 0.702] | +0.097 | +0.013 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | away team total over 0.5 | no | 0.2100 | 0.314 [0.194, 0.438] | +0.092 | +0.012 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | away wins by more than 2.5 | no | 0.9100 | 0.950 [0.903, 0.984] | +0.034 | +0.011 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | Result: draw | yes | 0.1950 | 0.245 [0.201, 0.291] | +0.039 | +0.010 | 0.2 | - |  | RESEARCH_CANDIDATE |
@@ -67,9 +67,9 @@ model board generated 2026-11-14T01:03:53.007637Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 99
-action_NO_EDGE: 1892
-action_NO_QUOTE: 364
+action_EXCLUDED_BY_GATE: 94
+action_NO_EDGE: 1864
+action_NO_QUOTE: 397
 action_RESEARCH_CANDIDATE: 23
 contract_sides: 2378
 fixtures: 23
