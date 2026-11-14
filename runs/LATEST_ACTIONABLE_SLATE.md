@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261114T111623Z-a4795f` · generated 2026-11-14T11:16:23.408818Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261114T113123Z-36ca10` · generated 2026-11-14T11:31:23.295662Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-14T11:12:39.441710Z (CURRENT at publish; CURRENT until 2026-11-14T11:32:39.441710Z, STALE after 2026-11-14T11:42:39.441710Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-14T11:27:39.499811Z (CURRENT at publish; CURRENT until 2026-11-14T11:47:39.499811Z, STALE after 2026-11-14T11:57:39.499811Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-14T01:03:53.007637Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.85s
 
@@ -36,7 +36,7 @@ model board generated 2026-11-14T01:03:53.007637Z · simulations this update: 0 
 | 2026-11-15T19:45:00Z | France vs Türkiye (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-15T23:00:00Z | Panama vs Curaçao (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 16 | 0 |
 
-## Candidates on CURRENT prices (22; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (23; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -50,9 +50,9 @@ model board generated 2026-11-14T01:03:53.007637Z · simulations this update: 0 
 | Querétaro vs Monterrey | Result: home | yes | 0.2700 | 0.413 [0.268, 0.573] | +0.129 | +0.028 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | away wins by more than 1.5 | no | 0.7700 | 0.858 [0.767, 0.937] | +0.076 | +0.023 | 0.79 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | First team to score: away | no | 0.4500 | 0.574 [0.438, 0.702] | +0.107 | +0.023 | 0.47 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Monterrey | away team total over 0.5 | no | 0.2000 | 0.314 [0.194, 0.438] | +0.103 | +0.022 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | away team total over 2.5 | no | 0.7900 | 0.870 [0.773, 0.949] | +0.069 | +0.018 | 0.8 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | First-half result: away | no | 0.6500 | 0.743 [0.638, 0.842] | +0.077 | +0.014 | 0.66 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Monterrey | away team total over 0.5 | no | 0.2100 | 0.314 [0.194, 0.438] | +0.092 | +0.012 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | away wins by more than 2.5 | no | 0.9100 | 0.950 [0.903, 0.984] | +0.034 | +0.011 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | Result: draw | yes | 0.1950 | 0.245 [0.201, 0.291] | +0.039 | +0.010 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Mirassol vs Atlético Mineiro | btts | no | 0.4600 | 0.559 [0.445, 0.669] | +0.081 | +0.009 | 0.46 | - | * | RESEARCH_CANDIDATE |
@@ -60,6 +60,7 @@ model board generated 2026-11-14T01:03:53.007637Z · simulations this update: 0 
 | Querétaro vs Monterrey | home wins by more than 1.5 | yes | 0.1100 | 0.203 [0.097, 0.331] | +0.086 | +0.006 | 0.11 | - |  | RESEARCH_CANDIDATE |
 | Mirassol vs Atlético Mineiro | Total goals over 2.5 | no | 0.4900 | 0.605 [0.456, 0.745] | +0.098 | +0.006 | 0.49 | - |  | RESEARCH_CANDIDATE |
 | Mirassol vs Atlético Mineiro | Total goals over 1.5 | no | 0.2400 | 0.342 [0.218, 0.477] | +0.090 | +0.005 | 0.24 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Monterrey | home wins by more than 2.5 | yes | 0.0300 | 0.082 [0.027, 0.157] | +0.050 | +0.005 | 0.03 | - |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | home wins by more than 2.5 | yes | 0.0200 | 0.061 [0.017, 0.119] | +0.040 | +0.004 | 0.02 | - |  | RESEARCH_CANDIDATE |
 | Mirassol vs Atlético Mineiro | Total goals over 0.5 | no | 0.0700 | 0.117 [0.062, 0.179] | +0.043 | +0.003 | 0.07 | - |  | RESEARCH_CANDIDATE |
 
@@ -67,9 +68,9 @@ model board generated 2026-11-14T01:03:53.007637Z · simulations this update: 0 
 
 ```
 action_EXCLUDED_BY_GATE: 99
-action_NO_EDGE: 1893
+action_NO_EDGE: 1892
 action_NO_QUOTE: 364
-action_RESEARCH_CANDIDATE: 22
+action_RESEARCH_CANDIDATE: 23
 contract_sides: 2378
 fixtures: 23
 fixtures_model_invalidated: 0
