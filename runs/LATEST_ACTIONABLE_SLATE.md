@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261114T110120Z-c9ce60` · generated 2026-11-14T11:01:20.441570Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261114T111623Z-a4795f` · generated 2026-11-14T11:16:23.408818Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-14T10:57:37.163173Z (CURRENT at publish; CURRENT until 2026-11-14T11:17:37.163173Z, STALE after 2026-11-14T11:27:37.163173Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-14T11:12:39.441710Z (CURRENT at publish; CURRENT until 2026-11-14T11:32:39.441710Z, STALE after 2026-11-14T11:42:39.441710Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-14T09:53:28.293793Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.08s
+model board generated 2026-11-14T01:03:53.007637Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.85s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -36,7 +36,7 @@ model board generated 2026-11-14T09:53:28.293793Z · simulations this update: 0 
 | 2026-11-15T19:45:00Z | France vs Türkiye (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-15T23:00:00Z | Panama vs Curaçao (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 16 | 0 |
 
-## Candidates on CURRENT prices (23; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (22; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -44,9 +44,9 @@ model board generated 2026-11-14T09:53:28.293793Z · simulations this update: 0 
 | Chapecoense vs Vasco da Gama | away wins by more than 1.5 | no | 0.5700 | 0.775 [0.644, 0.888] | +0.188 | +0.109 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | Result: home | yes | 0.1250 | 0.328 [0.189, 0.476] | +0.195 | +0.094 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | away wins by more than 2.5 | no | 0.7800 | 0.902 [0.819, 0.964] | +0.110 | +0.068 | 0.85 | - |  | RESEARCH_CANDIDATE |
-| Querétaro vs Monterrey | away team total over 1.5 | no | 0.5100 | 0.663 [0.512, 0.800] | +0.136 | +0.045 | 0.55 | - | * | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | home wins by more than 1.5 | yes | 0.0400 | 0.156 [0.067, 0.264] | +0.113 | +0.043 | 0.08 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | Result: away | no | 0.5300 | 0.675 [0.537, 0.809] | +0.128 | +0.037 | 0.56 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Monterrey | away team total over 1.5 | no | 0.5200 | 0.663 [0.512, 0.800] | +0.126 | +0.035 | 0.55 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | Result: home | yes | 0.2700 | 0.413 [0.268, 0.573] | +0.129 | +0.028 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | away wins by more than 1.5 | no | 0.7700 | 0.858 [0.767, 0.937] | +0.076 | +0.023 | 0.79 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | First team to score: away | no | 0.4500 | 0.574 [0.438, 0.702] | +0.107 | +0.023 | 0.47 | - | * | RESEARCH_CANDIDATE |
@@ -61,22 +61,19 @@ model board generated 2026-11-14T09:53:28.293793Z · simulations this update: 0 
 | Mirassol vs Atlético Mineiro | Total goals over 2.5 | no | 0.4900 | 0.605 [0.456, 0.745] | +0.098 | +0.006 | 0.49 | - |  | RESEARCH_CANDIDATE |
 | Mirassol vs Atlético Mineiro | Total goals over 1.5 | no | 0.2400 | 0.342 [0.218, 0.477] | +0.090 | +0.005 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | home wins by more than 2.5 | yes | 0.0200 | 0.061 [0.017, 0.119] | +0.040 | +0.004 | 0.02 | - |  | RESEARCH_CANDIDATE |
-| Querétaro vs Monterrey | First half: away wins by more than 1.5 | no | 0.9000 | 0.937 [0.889, 0.981] | +0.030 | +0.004 | 0.9 | - | * | RESEARCH_CANDIDATE |
 | Mirassol vs Atlético Mineiro | Total goals over 0.5 | no | 0.0700 | 0.117 [0.062, 0.179] | +0.043 | +0.003 | 0.07 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 97
-action_NO_EDGE: 1887
-action_NO_QUOTE: 371
-action_RESEARCH_CANDIDATE: 23
+action_EXCLUDED_BY_GATE: 99
+action_NO_EDGE: 1893
+action_NO_QUOTE: 364
+action_RESEARCH_CANDIDATE: 22
 contract_sides: 2378
 fixtures: 23
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
-
-Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
