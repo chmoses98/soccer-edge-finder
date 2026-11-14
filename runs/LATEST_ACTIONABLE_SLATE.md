@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261114T130156Z-9d3a91` · generated 2026-11-14T13:01:56.362868Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261114T131633Z-7c29f8` · generated 2026-11-14T13:16:33.037777Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-14T12:57:45.494573Z (CURRENT at publish; CURRENT until 2026-11-14T13:17:45.494573Z, STALE after 2026-11-14T13:27:45.494573Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-14T13:12:49.019088Z (CURRENT at publish; CURRENT until 2026-11-14T13:32:49.019088Z, STALE after 2026-11-14T13:42:49.019088Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-14T13:01:45.848540Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.87s
+model board generated 2026-11-14T13:01:45.848540Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.09s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -13,28 +13,28 @@ model board generated 2026-11-14T13:01:45.848540Z · simulations this update: 1 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
 | 2026-11-14T14:00:00Z | Kosovo vs Israel (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 61 | 1 |
-| 2026-11-14T17:00:00Z | Georgia vs Hungary (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-14T17:00:00Z | Norway vs Wales (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-14T19:00:00Z | Sint Maarten vs French Guiana (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
-| 2026-11-14T19:45:00Z | Austria vs Republic of Ireland (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-14T19:45:00Z | Northern Ireland vs Ukraine (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-14T19:45:00Z | Portugal vs Denmark (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-14T19:45:00Z | Romania vs Poland (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-14T19:45:00Z | Sweden vs Bosnia and Herzegovina (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-14T21:30:00Z | Mirassol vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-14T21:30:00Z | Haiti vs United States (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
-| 2026-11-14T23:00:00Z | Querétaro vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-11-14T23:30:00Z | Chapecoense vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-15T01:00:00Z | Jamaica vs Mexico (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-11-15T14:00:00Z | Cyprus vs Montenegro (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-15T14:00:00Z | Latvia vs Armenia (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-15T17:00:00Z | Belarus vs Albania (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-15T17:00:00Z | Finland vs San Marino (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-15T19:45:00Z | Belgium vs Italy (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-15T19:45:00Z | Croatia vs Czechia (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-15T19:45:00Z | Spain vs England (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-15T19:45:00Z | France vs Türkiye (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-15T23:00:00Z | Panama vs Curaçao (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 16 | 0 |
+| 2026-11-14T17:00:00Z | Georgia vs Hungary (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-14T17:00:00Z | Norway vs Wales (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-14T19:00:00Z | Sint Maarten vs French Guiana (concacaf.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-11-14T19:45:00Z | Austria vs Republic of Ireland (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-14T19:45:00Z | Northern Ireland vs Ukraine (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-14T19:45:00Z | Portugal vs Denmark (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-14T19:45:00Z | Romania vs Poland (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-14T19:45:00Z | Sweden vs Bosnia and Herzegovina (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-14T21:30:00Z | Mirassol vs Atlético Mineiro (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-14T21:30:00Z | Haiti vs United States (concacaf.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-11-14T23:00:00Z | Querétaro vs Monterrey (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-11-14T23:30:00Z | Chapecoense vs Vasco da Gama (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-15T01:00:00Z | Jamaica vs Mexico (concacaf.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-15T14:00:00Z | Cyprus vs Montenegro (uefa.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-15T14:00:00Z | Latvia vs Armenia (uefa.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-15T17:00:00Z | Belarus vs Albania (uefa.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-15T17:00:00Z | Finland vs San Marino (uefa.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-15T19:45:00Z | Belgium vs Italy (uefa.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-15T19:45:00Z | Croatia vs Czechia (uefa.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-15T19:45:00Z | Spain vs England (uefa.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-15T19:45:00Z | France vs Türkiye (uefa.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-15T23:00:00Z | Panama vs Curaçao (concacaf.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 16 | 0 |
 
 ## Candidates on CURRENT prices (24; RESEARCH_ONLY = analysis, never a bet)
 
@@ -68,9 +68,9 @@ model board generated 2026-11-14T13:01:45.848540Z · simulations this update: 1 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 105
-action_NO_EDGE: 1886
-action_NO_QUOTE: 363
+action_EXCLUDED_BY_GATE: 106
+action_NO_EDGE: 1891
+action_NO_QUOTE: 357
 action_RESEARCH_CANDIDATE: 24
 contract_sides: 2378
 fixtures: 23
