@@ -1,38 +1,75 @@
 {
-  "as_of": "2026-11-14T20:58:51.688183+00:00",
-  "events": 1,
-  "events_skipped_unmapped": 0,
-  "fixtures_mapped": 1,
+  "as_of": "2026-11-14T21:04:54.888773+00:00",
+  "events": 21,
+  "events_skipped_unmapped": 6,
+  "fixtures_mapped": 15,
   "health": {
     "reasons": [],
     "state": "HEALTHY"
   },
   "leagues": [
-    "mex.1"
+    "bra.1",
+    "concacaf.nations.league",
+    "fifa.friendly",
+    "fifa.worldq.afc",
+    "fifa.worldq.caf",
+    "fifa.worldq.concacaf",
+    "fifa.worldq.conmebol",
+    "fifa.worldq.uefa",
+    "uefa.euroq",
+    "uefa.nations"
   ],
   "lineups": {
-    "captured": 1,
-    "events": 1,
+    "captured": 8,
+    "events": 21,
     "failures": [],
-    "published_post": 0,
-    "published_pre_kickoff": 0,
-    "unchanged": 0,
-    "unpublished": 1
+    "published_post": 12,
+    "published_pre_kickoff": 2,
+    "unchanged": 13,
+    "unpublished": 7
   },
-  "map_proposals": {},
+  "map_proposals": {
+    "fifa.friendly": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "14561": "Chinese Taipei",
+        "2405": "Malaysia",
+        "4381": "Bahrain",
+        "4385": "India",
+        "4863": "Tahiti",
+        "4884": "Cook Islands",
+        "6014": "Yemen",
+        "6167": "Palestine",
+        "658": "China",
+        "6724": "Kyrgyz Republic"
+      }
+    }
+  },
   "map_version": "4",
-  "results_appended": 0,
+  "results_appended": 5,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
-  "scoreboard_queries": 1,
+  "scoreboard_queries": 10,
   "unmapped_leagues": [],
-  "unmapped_team_ids": {},
+  "unmapped_team_ids": {
+    "14561": "Chinese Taipei",
+    "2405": "Malaysia",
+    "4381": "Bahrain",
+    "4385": "India",
+    "4863": "Tahiti",
+    "4884": "Cook Islands",
+    "6014": "Yemen",
+    "6167": "Palestine",
+    "658": "China",
+    "6724": "Kyrgyz Republic"
+  },
   "weather": {
-    "captured": 1,
-    "events": 1,
+    "captured": 9,
+    "events": 12,
     "failures": [],
     "forecast_miss": 0,
-    "geocode_miss": 0,
+    "geocode_miss": 3,
     "no_venue": 0,
     "skipped": 0,
     "stopped": null

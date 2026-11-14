@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261114T205852Z-17281c` · generated 2026-11-14T20:58:52.981599Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261114T210506Z-4e178e` · generated 2026-11-14T21:05:06.936171Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-14T20:55:10.254411Z (CURRENT at publish; CURRENT until 2026-11-14T21:15:10.254411Z, STALE after 2026-11-14T21:25:10.254411Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-14T21:01:13.578064Z (CURRENT at publish; CURRENT until 2026-11-14T21:21:13.578064Z, STALE after 2026-11-14T21:31:13.578064Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-14T20:29:04.149761Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.83s
+model board generated 2026-11-14T21:05:01.952664Z · simulations this update: 2 · Odds API calls this update: 0 (credits 0) · reprice 0.91s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,11 +12,11 @@ model board generated 2026-11-14T20:29:04.149761Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-14T21:30:00Z | Mirassol vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | AGING entry | CURRENT | 14 | 0 |
-| 2026-11-14T21:30:00Z | Haiti vs United States (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-11-14T21:30:00Z | Mirassol vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
+| 2026-11-14T21:30:00Z | Haiti vs United States (concacaf.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-14T23:00:00Z | Querétaro vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-11-14T23:30:00Z | Chapecoense vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-15T01:00:00Z | Jamaica vs Mexico (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-11-14T23:30:00Z | Chapecoense vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-15T01:00:00Z | Jamaica vs Mexico (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-15T14:00:00Z | Cyprus vs Montenegro (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-15T14:00:00Z | Latvia vs Armenia (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-15T17:00:00Z | Belarus vs Albania (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
@@ -54,9 +54,9 @@ model board generated 2026-11-14T20:29:04.149761Z · simulations this update: 0 
 | Querétaro vs Monterrey | away team total over 1.5 | no | 0.5100 | 0.663 [0.512, 0.800] | +0.136 | +0.045 | 0.55 | - | * | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | home wins by more than 1.5 | yes | 0.0400 | 0.156 [0.067, 0.264] | +0.113 | +0.043 | 0.08 | - |  | RESEARCH_CANDIDATE |
 | Mirassol vs Atlético Mineiro | btts | no | 0.4300 | 0.559 [0.445, 0.669] | +0.112 | +0.039 | 0.46 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Monterrey | First-half result: away | no | 0.6300 | 0.743 [0.638, 0.842] | +0.097 | +0.034 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | away wins by more than 1.5 | no | 0.7600 | 0.858 [0.767, 0.937] | +0.086 | +0.032 | 0.79 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | away team total over 2.5 | no | 0.7800 | 0.870 [0.773, 0.949] | +0.078 | +0.028 | 0.8 | - |  | RESEARCH_CANDIDATE |
-| Querétaro vs Monterrey | First-half result: away | no | 0.6400 | 0.743 [0.638, 0.842] | +0.087 | +0.024 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | First team to score: away | no | 0.4500 | 0.574 [0.438, 0.702] | +0.107 | +0.023 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | away team total over 0.5 | no | 0.2000 | 0.314 [0.194, 0.438] | +0.103 | +0.022 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | away wins by more than 2.5 | no | 0.9000 | 0.950 [0.903, 0.984] | +0.044 | +0.021 | 0.92 | - |  | RESEARCH_CANDIDATE |
@@ -75,8 +75,8 @@ model board generated 2026-11-14T20:29:04.149761Z · simulations this update: 0 
 
 ```
 action_EXCLUDED_BY_GATE: 83
-action_NO_EDGE: 1762
-action_NO_QUOTE: 336
+action_NO_EDGE: 1765
+action_NO_QUOTE: 333
 action_RESEARCH_CANDIDATE: 25
 contract_sides: 2206
 fixtures: 28
