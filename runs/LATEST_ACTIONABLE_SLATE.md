@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261114T063804Z-b485bd` · generated 2026-11-14T06:38:04.516034Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261114T065304Z-ac7cee` · generated 2026-11-14T06:53:04.378886Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-14T06:34:19.222578Z (CURRENT at publish; CURRENT until 2026-11-14T06:54:19.222578Z, STALE after 2026-11-14T07:04:19.222578Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-14T06:49:19.254523Z (CURRENT at publish; CURRENT until 2026-11-14T07:09:19.254523Z, STALE after 2026-11-14T07:19:19.254523Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-14T01:03:53.007637Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.47s
+model board generated 2026-11-14T01:03:53.007637Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.27s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -37,11 +37,11 @@ model board generated 2026-11-14T01:03:53.007637Z · simulations this update: 0 
 | 2026-11-15T19:45:00Z | France vs Türkiye (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-15T23:00:00Z | Panama vs Curaçao (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 16 | 0 |
 
-## Candidates on CURRENT prices (23; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (24; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Chapecoense vs Vasco da Gama | Result: away | no | 0.3300 | 0.573 [0.419, 0.725] | +0.228 | +0.126 | 0.45 | - | * | RESEARCH_CANDIDATE |
+| Chapecoense vs Vasco da Gama | Result: away | no | 0.3250 | 0.573 [0.419, 0.725] | +0.233 | +0.131 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | away wins by more than 1.5 | no | 0.5800 | 0.775 [0.644, 0.888] | +0.178 | +0.099 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | Result: home | yes | 0.1350 | 0.328 [0.189, 0.476] | +0.185 | +0.084 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | away wins by more than 2.5 | no | 0.7900 | 0.902 [0.819, 0.964] | +0.101 | +0.058 | 0.85 | - |  | RESEARCH_CANDIDATE |
@@ -58,6 +58,7 @@ model board generated 2026-11-14T01:03:53.007637Z · simulations this update: 0 
 | Chapecoense vs Vasco da Gama | Result: draw | yes | 0.1950 | 0.245 [0.201, 0.291] | +0.039 | +0.010 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Mirassol vs Atlético Mineiro | btts | no | 0.4600 | 0.559 [0.445, 0.669] | +0.081 | +0.009 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Mirassol vs Atlético Mineiro | Total goals over 3.5 | no | 0.7100 | 0.798 [0.679, 0.900] | +0.074 | +0.007 | 0.71 | - | * | RESEARCH_CANDIDATE |
+| Mirassol vs Atlético Mineiro | Total goals over 4.5 | no | 0.8600 | 0.911 [0.839, 0.967] | +0.042 | +0.006 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | home wins by more than 1.5 | yes | 0.1100 | 0.203 [0.097, 0.331] | +0.086 | +0.006 | 0.11 | - |  | RESEARCH_CANDIDATE |
 | Mirassol vs Atlético Mineiro | Total goals over 2.5 | no | 0.4900 | 0.605 [0.456, 0.745] | +0.098 | +0.006 | 0.49 | - |  | RESEARCH_CANDIDATE |
 | Mirassol vs Atlético Mineiro | Total goals over 1.5 | no | 0.2400 | 0.342 [0.218, 0.477] | +0.090 | +0.005 | 0.24 | - |  | RESEARCH_CANDIDATE |
@@ -68,10 +69,10 @@ model board generated 2026-11-14T01:03:53.007637Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 92
-action_NO_EDGE: 1894
-action_NO_QUOTE: 415
-action_RESEARCH_CANDIDATE: 23
+action_EXCLUDED_BY_GATE: 95
+action_NO_EDGE: 1891
+action_NO_QUOTE: 414
+action_RESEARCH_CANDIDATE: 24
 contract_sides: 2424
 fixtures: 24
 fixtures_model_invalidated: 0
