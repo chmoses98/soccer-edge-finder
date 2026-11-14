@@ -1,14 +1,11 @@
 {
-  "as_of": "2026-11-14T06:41:34.667418+00:00",
+  "as_of": "2026-11-14T15:15:49.733702+00:00",
   "events": 528,
   "events_skipped_unmapped": 332,
   "fixtures_mapped": 196,
   "health": {
-    "reasons": [
-      "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=74"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
     "afc.champions",
@@ -81,13 +78,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 123,
+    "captured": 138,
     "events": 150,
     "failures": [],
-    "published_post": 9,
+    "published_post": 31,
     "published_pre_kickoff": 0,
-    "unchanged": 27,
-    "unpublished": 141
+    "unchanged": 12,
+    "unpublished": 119
   },
   "map_proposals": {
     "esp.2": {
@@ -361,7 +358,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 6,
+  "results_appended": 2,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -607,17 +604,13 @@
     "9024": "Le Poire SV"
   },
   "weather": {
-    "captured": 0,
+    "captured": 72,
     "events": 77,
-    "failures": [
-      "401841311: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-20.8192&longitude=-49.5211&hourly=",
-      "401841175: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Chapec\u00f3&count=5&language=en&for",
-      "401860432: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-19.9208&longitude=-43.9378&hourly="
-    ],
+    "failures": [],
     "forecast_miss": 0,
-    "geocode_miss": 0,
+    "geocode_miss": 5,
     "no_venue": 0,
-    "skipped": 74,
-    "stopped": "consecutive_failures"
+    "skipped": 0,
+    "stopped": null
   }
 }
