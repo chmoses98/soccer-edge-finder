@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261114T211852Z-9d65c0` · generated 2026-11-14T21:18:52.878151Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261114T212458Z-ab79bc` · generated 2026-11-14T21:24:58.157412Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-14T21:15:03.538623Z (CURRENT at publish; CURRENT until 2026-11-14T21:35:03.538623Z, STALE after 2026-11-14T21:45:03.538623Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-14T21:21:16.643760Z (CURRENT at publish; CURRENT until 2026-11-14T21:41:16.643760Z, STALE after 2026-11-14T21:51:16.643760Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-14T21:05:01.952664Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.78s
+model board generated 2026-11-14T21:05:01.952664Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.77s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -16,7 +16,7 @@ model board generated 2026-11-14T21:05:01.952664Z · simulations this update: 0 
 | 2026-11-14T21:30:00Z | Haiti vs United States (concacaf.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-14T23:00:00Z | Querétaro vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-14T23:30:00Z | Chapecoense vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-15T01:00:00Z | Jamaica vs Mexico (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-11-15T01:00:00Z | Jamaica vs Mexico (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-15T14:00:00Z | Cyprus vs Montenegro (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-15T14:00:00Z | Latvia vs Armenia (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-15T17:00:00Z | Belarus vs Albania (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
@@ -73,9 +73,9 @@ model board generated 2026-11-14T21:05:01.952664Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 83
-action_NO_EDGE: 1759
-action_NO_QUOTE: 340
+action_EXCLUDED_BY_GATE: 85
+action_NO_EDGE: 1761
+action_NO_QUOTE: 336
 action_RESEARCH_CANDIDATE: 24
 contract_sides: 2206
 fixtures: 28
