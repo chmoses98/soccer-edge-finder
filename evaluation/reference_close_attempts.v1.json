@@ -1,11 +1,11 @@
 {
  "counts": {
+  "CLOSE_BLOCKED_BUDGET": 16,
+  "PINNACLE_VALID_CLOSE": 90,
   "DISPATCHER_CLOSE_NO_ATTEMPT": 634,
   "MISSED_DISPATCHER_CLOSE": 98,
-  "PINNACLE_VALID_CLOSE": 90,
-  "PINNACLE_QUOTED_NOTHING": 2,
-  "CLOSE_BLOCKED_BUDGET": 16,
-  "NO_SPORT_KEY": 11
+  "NO_SPORT_KEY": 15,
+  "PINNACLE_QUOTED_NOTHING": 2
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.belgrano": {
@@ -808,6 +808,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261113T194358Z"
   },
+  "fx:concacaf.nations_league:2026-27:nat.gua:nat.can": {
+   "state": "NO_SPORT_KEY",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261114T014502Z"
+  },
   "fx:concacaf.nations_league:2026-27:nat.gua:nat.slv": {
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
@@ -842,6 +847,11 @@
    "state": "NO_SPORT_KEY",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261113T224500Z"
+  },
+  "fx:concacaf.nations_league:2026-27:nat.msr:nat.nca": {
+   "state": "NO_SPORT_KEY",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261113T234504Z"
   },
   "fx:concacaf.nations_league:2026-27:nat.mtq:nat.hon": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -1793,6 +1803,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:fifa.friendly:2026:nat.col:nat.chi": {
+   "state": "NO_SPORT_KEY",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261113T234504Z"
+  },
   "fx:fifa.friendly:2026:nat.col:nat.par": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -1802,6 +1817,11 @@
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
    "batch_id": null
+  },
+  "fx:fifa.friendly:2026:nat.ecu:nat.crc": {
+   "state": "NO_SPORT_KEY",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261113T234504Z"
   },
   "fx:fifa.friendly:2026:nat.kor:nat.ven": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
