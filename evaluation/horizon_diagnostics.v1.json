@@ -1,21 +1,21 @@
 {
   "by_horizon": {
     "120": {
-      "achieved_minutes_median": 122.78,
+      "achieved_minutes_median": 122.77,
       "achieved_minutes_p10": 117.78,
       "achieved_minutes_p90": 126.43,
-      "delivered": 820,
-      "delivery_rate": 0.9297052154195011,
+      "delivered": 821,
+      "delivery_rate": 0.9297848244620611,
       "lateness_minutes_max": 64.28,
       "lateness_minutes_median": -2.77,
       "missed": 62
     },
     "15": {
-      "achieved_minutes_median": 11.94,
+      "achieved_minutes_median": 11.93,
       "achieved_minutes_p10": 10.52,
       "achieved_minutes_p90": 13.46,
-      "delivered": 744,
-      "delivery_rate": 0.8691588785046729,
+      "delivered": 745,
+      "delivery_rate": 0.8693115519253208,
       "lateness_minutes_max": 14.64,
       "lateness_minutes_median": 3.07,
       "missed": 112
@@ -24,18 +24,18 @@
       "achieved_minutes_median": 26.83,
       "achieved_minutes_p10": 24.7,
       "achieved_minutes_p90": 28.88,
-      "delivered": 743,
-      "delivery_rate": 0.8669778296382731,
+      "delivered": 744,
+      "delivery_rate": 0.8671328671328671,
       "lateness_minutes_max": 16.98,
       "lateness_minutes_median": 3.17,
       "missed": 114
     },
     "5": {
-      "achieved_minutes_median": 2.04,
+      "achieved_minutes_median": 2.03,
       "achieved_minutes_p10": 0.09,
       "achieved_minutes_p90": 2.56,
-      "delivered": 744,
-      "delivery_rate": 0.8711943793911007,
+      "delivered": 745,
+      "delivery_rate": 0.8713450292397661,
       "lateness_minutes_max": 9.28,
       "lateness_minutes_median": 2.97,
       "missed": 110
@@ -44,27 +44,20 @@
       "achieved_minutes_median": 60.96,
       "achieved_minutes_p10": 56.08,
       "achieved_minutes_p90": 62.24,
-      "delivered": 774,
-      "delivery_rate": 0.8906789413118527,
+      "delivered": 775,
+      "delivery_rate": 0.8908045977011494,
       "lateness_minutes_max": 33.2,
-      "lateness_minutes_median": -1.0,
+      "lateness_minutes_median": -0.96,
       "missed": 95
     }
   },
-  "delivered_total": 3825,
-  "delivery_rate_total": 0.8858267716535433,
-  "fixtures_tracked": 882,
-  "generated_at": "2026-11-14T12:00:02Z",
+  "delivered_total": 3830,
+  "delivery_rate_total": 0.8859588248901226,
+  "fixtures_tracked": 883,
+  "generated_at": "2026-11-14T14:50:47Z",
   "missed_total": 493,
-  "n_pending_fixtures": 41,
+  "n_pending_fixtures": 42,
   "pending_fixtures": [
-    {
-      "competition_id": "uefa.nations_league",
-      "fixture_id": "fx:uefa.nations_league:2026-27:nat.kos:nat.isr",
-      "kickoff_utc": "2026-11-14T14:00:00Z",
-      "markets_discovered": 62,
-      "source": "run_output"
-    },
     {
       "competition_id": "uefa.nations_league",
       "fixture_id": "fx:uefa.nations_league:2026-27:nat.nor:nat.wal",
@@ -342,6 +335,20 @@
       "competition_id": "concacaf.nations_league",
       "fixture_id": "fx:concacaf.nations_league:2026-27:nat.can:nat.gua",
       "kickoff_utc": "2026-11-17T01:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "fifa.friendly",
+      "fixture_id": "fx:fifa.friendly:2026:nat.jpn:nat.par",
+      "kickoff_utc": "2026-11-17T13:10:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "fifa.friendly",
+      "fixture_id": "fx:fifa.friendly:2026:nat.qat:nat.kor",
+      "kickoff_utc": "2026-11-17T14:00:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }

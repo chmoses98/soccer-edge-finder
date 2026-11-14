@@ -1,11 +1,11 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 634,
   "MISSED_DISPATCHER_CLOSE": 98,
-  "PINNACLE_VALID_CLOSE": 90,
-  "CLOSE_BLOCKED_BUDGET": 16,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 634,
+  "PINNACLE_VALID_CLOSE": 91,
   "NO_SPORT_KEY": 16,
-  "PINNACLE_QUOTED_NOTHING": 2
+  "PINNACLE_QUOTED_NOTHING": 2,
+  "CLOSE_BLOCKED_BUDGET": 16
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.belgrano": {
@@ -3682,6 +3682,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:uefa.nations_league:2026-27:nat.kos:nat.isr": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261114T134936Z"
   },
   "fx:uefa.nations_league:2026-27:nat.lie:nat.aze": {
    "state": "PINNACLE_VALID_CLOSE",
