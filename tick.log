@@ -613,3 +613,228 @@ These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW
 
 ## Events
 - Kosovo vs Israel (UEFA Nations League) 2026-11-14T14:00:00Z · markets 61/62 evaluated · lineups unknown · xG 1.47-0.81 · 1X2 51%/28%/22%
+
+{
+  "outputs": {
+    "json": "work/runs/_pending/run_output.v1.json",
+    "md": "work/runs/_pending/RUN_SOCCER.md",
+    "contracts": "work/runs/_pending/priced_contracts.json",
+    "coverage": "work/runs/_pending/coverage.json",
+    "diagnostics": "work/runs/_pending/coverage_diagnostics.json"
+  },
+  "simulated": [
+    "fx:uefa.nations_league:2026-27:nat.kos:nat.isr"
+  ],
+  "repriced": [],
+  "archived_records": 61
+}
+[dispatch] holding 7.8 min (next window opens in 8.7 min)
+[dispatch] holding 0.7 min (next window opens in 0.9 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261114T134633Z",
+  "complete": true,
+  "discovered": 6630,
+  "written": 1709,
+  "path": "work/snapshots/2026-11-14/cap-20261114T134633Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261114T134635Z-02dee8", "mode": "reprice_only", "fixtures": 23, "contract_sides": 2378, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 1.085, "price_changes_vs_previous": 98}
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261114T135318Z",
+  "complete": true,
+  "discovered": 6608,
+  "written": 1314,
+  "path": "work/snapshots/2026-11-14/cap-20261114T135318Z.jsonl"
+}
+{
+  "reference_probabilities": 0,
+  "observed_at": "2026-11-14 10:15:59.743900+00:00",
+  "groups": 0,
+  "unmapped_fixture_groups": 0,
+  "incomplete_groups": 0,
+  "snapshots": 0,
+  "provider_notes": [
+    "51 rows, 51 skipped (unmapped division/team)",
+    "skipped_by_division={'E2': 5, 'E3': 10, 'EC': 11, 'SC1': 4, 'SC2': 5, 'SC3': 5, 'SP2': 11}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-11-14T13:53:21.412305Z", "batch_id": "kd-20261114T134936Z", "credits_charged": 3, "paid_calls": 1, "snapshots": 7, "no_sport_key": [], "eligible_fixtures": 1, "per_sport": {"soccer_uefa_nations_league": {"fixtures": 1, "join": {"events": 3, "joined": 1, "ambiguous": 0, "unresolved_names": [], "unjoined_fixtures": []}, "status": "OK", "credits": 3, "snapshots": 7, "incomplete_markets": 0, "close_fixtures": 1, "entry_fixtures": 0}}, "remaining_after": 19667, "status": "OK"}
+{
+ "as_of": "2026-11-14T13:53:24.546016+00:00",
+ "leagues": [
+  "concacaf.nations.league",
+  "fifa.friendly",
+  "fifa.worldq.afc",
+  "fifa.worldq.caf",
+  "fifa.worldq.concacaf",
+  "fifa.worldq.conmebol",
+  "fifa.worldq.uefa",
+  "uefa.euroq",
+  "uefa.nations"
+ ],
+ "events": 19,
+ "fixtures_mapped": 13,
+ "events_skipped_unmapped": 6,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 9,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 19,
+  "captured": 1,
+  "unchanged": 18,
+  "published_pre_kickoff": 1,
+  "published_post": 2,
+  "unpublished": 16,
+  "failures": []
+ },
+ "results_appended": 1,
+ "weather": {
+  "events": 16,
+  "captured": 12,
+  "no_venue": 0,
+  "geocode_miss": 4,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 10 | proposals: {'fifa.friendly': 0}
+[slate] {"slate_id": "slate-20261114T135327Z-4ce6a0", "mode": "reprice_only", "fixtures": 23, "contract_sides": 2378, "simulations_run": 0, "odds_api_calls": 1, "reprice_runtime_s": 0.888, "price_changes_vs_previous": 81}
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261114T135923Z",
+  "complete": true,
+  "discovered": 6544,
+  "written": 1059,
+  "path": "work/snapshots/2026-11-14/cap-20261114T135923Z.jsonl"
+}
+{
+  "reference_probabilities": 0,
+  "observed_at": "2026-11-14 10:15:59.743900+00:00",
+  "groups": 0,
+  "unmapped_fixture_groups": 0,
+  "incomplete_groups": 0,
+  "snapshots": 0,
+  "provider_notes": [
+    "51 rows, 51 skipped (unmapped division/team)",
+    "skipped_by_division={'E2': 5, 'E3': 10, 'EC': 11, 'SC1': 4, 'SC2': 5, 'SC3': 5, 'SP2': 11}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-11-14T13:59:26.014411Z", "batch_id": "kd-20261114T135540Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-11-14T13:59:26.047672+00:00",
+ "leagues": [
+  "concacaf.nations.league",
+  "fifa.friendly",
+  "fifa.worldq.afc",
+  "fifa.worldq.caf",
+  "fifa.worldq.concacaf",
+  "fifa.worldq.conmebol",
+  "fifa.worldq.uefa",
+  "uefa.euroq",
+  "uefa.nations"
+ ],
+ "events": 19,
+ "fixtures_mapped": 13,
+ "events_skipped_unmapped": 6,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 9,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 19,
+  "captured": 0,
+  "unchanged": 19,
+  "published_pre_kickoff": 1,
+  "published_post": 2,
+  "unpublished": 16,
+  "failures": []
+ },
+ "results_appended": 1,
+ "weather": {
+  "events": 16,
+  "captured": 12,
+  "no_venue": 0,
+  "geocode_miss": 4,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 10 | proposals: {'fifa.friendly': 0}
+[slate] {"slate_id": "slate-20261114T135926Z-287849", "mode": "reprice_only", "fixtures": 23, "contract_sides": 2378, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 1.052, "price_changes_vs_previous": 62}
+[dispatch] holding 9.0 min (next window opens in 48.4 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261114T141423Z",
+  "complete": true,
+  "discovered": 6563,
+  "written": 2271,
+  "path": "work/snapshots/2026-11-14/cap-20261114T141423Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261114T141424Z-276ad3", "mode": "reprice_only", "fixtures": 22, "contract_sides": 2256, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 1.003, "price_changes_vs_previous": 234}
+[dispatch] holding 9.1 min (next window opens in 33.4 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261114T142926Z",
+  "complete": true,
+  "discovered": 6549,
+  "written": 1661,
+  "path": "work/snapshots/2026-11-14/cap-20261114T142926Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261114T142927Z-f047f6", "mode": "reprice_only", "fixtures": 22, "contract_sides": 2256, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.998, "price_changes_vs_previous": 131}
+[dispatch] holding 8.9 min (next window opens in 18.2 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261114T144426Z",
+  "complete": true,
+  "discovered": 6547,
+  "written": 1797,
+  "path": "work/snapshots/2026-11-14/cap-20261114T144426Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261114T144427Z-b7425a", "mode": "reprice_only", "fixtures": 22, "contract_sides": 2256, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.821, "price_changes_vs_previous": 157}
+[dispatch] holding 9.0 min (next window opens in 3.3 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261114T145928Z",
+  "complete": true,
+  "discovered": 6509,
+  "written": 1746,
+  "path": "work/snapshots/2026-11-14/cap-20261114T145928Z.jsonl"
+}
+{
+  "reference_probabilities": 0,
+  "observed_at": "2026-11-14 10:15:59.743900+00:00",
+  "groups": 0,
+  "unmapped_fixture_groups": 0,
+  "incomplete_groups": 0,
+  "snapshots": 0,
+  "provider_notes": [
+    "51 rows, 51 skipped (unmapped division/team)",
+    "skipped_by_division={'E2': 5, 'E3': 10, 'EC': 11, 'SC1': 4, 'SC2': 5, 'SC3': 5, 'SP2': 11}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-11-14T14:59:30.905620Z", "batch_id": "kd-20261114T145545Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
