@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261114T191404Z-bdce44` · generated 2026-11-14T19:14:04.199134Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261114T192118Z-264178` · generated 2026-11-14T19:21:18.634105Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-14T19:10:14.255884Z (CURRENT at publish; CURRENT until 2026-11-14T19:30:14.255884Z, STALE after 2026-11-14T19:40:14.255884Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-14T19:17:04.657907Z (CURRENT at publish; CURRENT until 2026-11-14T19:37:04.657907Z, STALE after 2026-11-14T19:47:04.657907Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-14T19:13:58.226350Z · simulations this update: 3 · Odds API calls this update: 0 (credits 0) · reprice 0.89s
+model board generated 2026-11-14T19:20:55.046004Z · simulations this update: 3 · Odds API calls this update: 0 (credits 0) · reprice 1.10s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -13,9 +13,9 @@ model board generated 2026-11-14T19:13:58.226350Z · simulations this update: 3 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
 | 2026-11-14T19:45:00Z | Austria vs Republic of Ireland (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-14T19:45:00Z | Northern Ireland vs Ukraine (uefa.nations_league) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
-| 2026-11-14T19:45:00Z | Portugal vs Denmark (uefa.nations_league) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
-| 2026-11-14T19:45:00Z | Romania vs Poland (uefa.nations_league) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
+| 2026-11-14T19:45:00Z | Northern Ireland vs Ukraine (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
+| 2026-11-14T19:45:00Z | Portugal vs Denmark (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
+| 2026-11-14T19:45:00Z | Romania vs Poland (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
 | 2026-11-14T19:45:00Z | Sweden vs Bosnia and Herzegovina (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
 | 2026-11-14T21:30:00Z | Mirassol vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-14T21:30:00Z | Haiti vs United States (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
@@ -70,14 +70,13 @@ model board generated 2026-11-14T19:13:58.226350Z · simulations this update: 3 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 95
-action_MODEL_INVALIDATED: 328
-action_NO_EDGE: 1826
-action_NO_QUOTE: 436
+action_EXCLUDED_BY_GATE: 103
+action_NO_EDGE: 2139
+action_NO_QUOTE: 443
 action_RESEARCH_CANDIDATE: 21
 contract_sides: 2706
 fixtures: 28
-fixtures_model_invalidated: 3
+fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
