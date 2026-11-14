@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261114T135926Z-287849` · generated 2026-11-14T13:59:26.170234Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
+slate `slate-20261114T141424Z-276ad3` · generated 2026-11-14T14:14:24.251024Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-14T13:55:40.860234Z (CURRENT at publish; CURRENT until 2026-11-14T14:15:40.860234Z, STALE after 2026-11-14T14:25:40.860234Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-14T14:10:40.885758Z (CURRENT at publish; CURRENT until 2026-11-14T14:30:40.885758Z, STALE after 2026-11-14T14:40:40.885758Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-14T13:31:41.452899Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.05s
+model board generated 2026-11-14T13:31:41.452899Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.00s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,6 @@ model board generated 2026-11-14T13:31:41.452899Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-14T14:00:00Z | Kosovo vs Israel (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 61 | 1 |
 | 2026-11-14T17:00:00Z | Georgia vs Hungary (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-14T17:00:00Z | Norway vs Wales (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-14T19:00:00Z | Sint Maarten vs French Guiana (concacaf.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
@@ -40,7 +39,7 @@ model board generated 2026-11-14T13:31:41.452899Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Chapecoense vs Vasco da Gama | Result: away | no | 0.3200 | 0.573 [0.419, 0.725] | +0.238 | +0.136 | 0.45 | - | * | RESEARCH_CANDIDATE |
+| Chapecoense vs Vasco da Gama | Result: away | no | 0.3150 | 0.573 [0.419, 0.725] | +0.243 | +0.141 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | away wins by more than 1.5 | no | 0.5700 | 0.775 [0.644, 0.888] | +0.188 | +0.109 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | Result: home | yes | 0.1250 | 0.328 [0.189, 0.476] | +0.195 | +0.094 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | away wins by more than 2.5 | no | 0.7800 | 0.902 [0.819, 0.964] | +0.110 | +0.068 | 0.85 | - |  | RESEARCH_CANDIDATE |
@@ -68,14 +67,16 @@ model board generated 2026-11-14T13:31:41.452899Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 106
-action_NO_EDGE: 1893
-action_NO_QUOTE: 355
+action_EXCLUDED_BY_GATE: 104
+action_NO_EDGE: 1787
+action_NO_QUOTE: 341
 action_RESEARCH_CANDIDATE: 24
-contract_sides: 2378
-fixtures: 23
+contract_sides: 2256
+fixtures: 22
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
+
+Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
