@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261114T134635Z-02dee8` · generated 2026-11-14T13:46:35.238780Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261114T135327Z-4ce6a0` · generated 2026-11-14T13:53:27.844948Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-14T13:42:51.145676Z (CURRENT at publish; CURRENT until 2026-11-14T14:02:51.145676Z, STALE after 2026-11-14T14:12:51.145676Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-14T13:49:36.094961Z (CURRENT at publish; CURRENT until 2026-11-14T14:09:36.094961Z, STALE after 2026-11-14T14:19:36.094961Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-14T13:31:41.452899Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.08s
+model board generated 2026-11-14T13:31:41.452899Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.89s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-14T13:31:41.452899Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-14T14:00:00Z | Kosovo vs Israel (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
+| 2026-11-14T14:00:00Z | Kosovo vs Israel (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 61 | 1 |
 | 2026-11-14T17:00:00Z | Georgia vs Hungary (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-14T17:00:00Z | Norway vs Wales (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-14T19:00:00Z | Sint Maarten vs French Guiana (concacaf.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
