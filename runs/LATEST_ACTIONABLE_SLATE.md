@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261114T180112Z-bd19c2` · generated 2026-11-14T18:01:12.897540Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261114T181608Z-a14563` · generated 2026-11-14T18:16:08.332965Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-14T17:57:19.028268Z (CURRENT at publish; CURRENT until 2026-11-14T18:17:19.028268Z, STALE after 2026-11-14T18:27:19.028268Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-14T18:12:21.446846Z (CURRENT at publish; CURRENT until 2026-11-14T18:32:21.446846Z, STALE after 2026-11-14T18:42:21.446846Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-14T18:01:09.498005Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.89s
+model board generated 2026-11-14T18:16:05.985576Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.91s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -37,15 +37,16 @@ model board generated 2026-11-14T18:01:09.498005Z · simulations this update: 1 
 | 2026-11-16T17:00:00Z | Estonia vs Bulgaria (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-16T17:00:00Z | Iceland vs Luxembourg (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-16T17:00:00Z | Lithuania vs Liechtenstein (uefa.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-16T18:00:00Z | Andorra vs Azerbaijan (fifa.friendly) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
 ## Candidates on CURRENT prices (22; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Chapecoense vs Vasco da Gama | Result: away | no | 0.3100 | 0.573 [0.419, 0.725] | +0.248 | +0.146 | 0.45 | - | * | RESEARCH_CANDIDATE |
-| Chapecoense vs Vasco da Gama | away wins by more than 1.5 | no | 0.5700 | 0.775 [0.644, 0.888] | +0.188 | +0.109 | 0.68 | - | * | RESEARCH_CANDIDATE |
+| Chapecoense vs Vasco da Gama | away wins by more than 1.5 | no | 0.5600 | 0.775 [0.644, 0.888] | +0.198 | +0.119 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | Result: home | yes | 0.1250 | 0.328 [0.189, 0.476] | +0.195 | +0.094 | 0.21 | - |  | RESEARCH_CANDIDATE |
-| Chapecoense vs Vasco da Gama | away wins by more than 2.5 | no | 0.7800 | 0.902 [0.819, 0.964] | +0.110 | +0.068 | 0.85 | - |  | RESEARCH_CANDIDATE |
+| Chapecoense vs Vasco da Gama | away wins by more than 2.5 | no | 0.7700 | 0.902 [0.819, 0.964] | +0.120 | +0.078 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | away team total over 1.5 | no | 0.5000 | 0.663 [0.512, 0.800] | +0.146 | +0.055 | 0.55 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | Result: away | no | 0.5200 | 0.675 [0.537, 0.809] | +0.138 | +0.047 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | home wins by more than 1.5 | yes | 0.0400 | 0.156 [0.067, 0.264] | +0.113 | +0.043 | 0.08 | - |  | RESEARCH_CANDIDATE |
@@ -68,12 +69,12 @@ model board generated 2026-11-14T18:01:09.498005Z · simulations this update: 1 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 86
-action_NO_EDGE: 2091
+action_EXCLUDED_BY_GATE: 96
+action_NO_EDGE: 2109
 action_NO_QUOTE: 441
 action_RESEARCH_CANDIDATE: 22
-contract_sides: 2640
-fixtures: 25
+contract_sides: 2668
+fixtures: 26
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
