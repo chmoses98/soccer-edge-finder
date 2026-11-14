@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-13T23:52:27.690340+00:00",
-  "events": 391,
-  "events_skipped_unmapped": 261,
-  "fixtures_mapped": 130,
+  "as_of": "2026-11-14T06:41:34.667418+00:00",
+  "events": 528,
+  "events_skipped_unmapped": 332,
+  "fixtures_mapped": 196,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=97"
+      "weather_stopped:consecutive_failures:skipped=74"
     ],
     "state": "DEGRADED"
   },
@@ -81,59 +81,47 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 134,
+    "captured": 123,
     "events": 150,
     "failures": [],
-    "published_post": 5,
-    "published_pre_kickoff": 3,
-    "unchanged": 16,
-    "unpublished": 142
+    "published_post": 9,
+    "published_pre_kickoff": 0,
+    "unchanged": 27,
+    "unpublished": 141
   },
   "map_proposals": {
     "esp.2": {
       "ambiguous": {},
       "proposed": {
-        "17534": "esp.leganes",
         "84": "esp.mallorca"
       },
       "unresolved": {
         "11487": "CD Sabadell",
         "245": "Tenerife",
-        "2737": "Albacete",
-        "3752": "Eibar"
+        "2737": "Albacete"
       }
     },
     "esp.copa_del_rey": {
       "ambiguous": {},
       "proposed": {
-        "17534": "esp.leganes",
         "84": "esp.mallorca"
       },
       "unresolved": {
         "11487": "CD Sabadell",
-        "12587": "Amorebieta",
         "131470": "Reus FC Reddis",
-        "133835": "CD Pamplona",
         "133837": "CD Tarancon",
-        "133846": "Tavernes de la Valldigna",
-        "17573": "Trival Valderas",
         "19288": "CD Artistico Navalcarnero",
-        "20776": "Anaitasuna",
         "21291": "CS Puertollano",
         "21723": "Utebo",
-        "22043": "Mijas Las Lagunas",
         "22437": "CD Minera",
         "22440": "Salamanca UDS",
         "245": "Tenerife",
         "2737": "Albacete",
-        "3752": "Eibar",
-        "5401": "Real Jaen CF",
         "5419": "FC Cartagena",
         "5421": "Barakaldo",
         "5464": "Portugalete",
         "5535": "Badajoz",
         "6827": "Alcoyano",
-        "7206": "UD Logro\u00f1\u00e9s",
         "8678": "Real Uni\u00f3n Irun"
       }
     },
@@ -167,7 +155,11 @@
     "fra.2": {
       "ambiguous": {},
       "proposed": {
-        "177": "fra.metz"
+        "165": "fra.nantes",
+        "177": "fra.metz",
+        "178": "fra.st_etienne",
+        "274": "fra.montpellier",
+        "3243": "fra.reims"
       },
       "unresolved": {
         "10678": "Pau",
@@ -176,7 +168,9 @@
         "18066": "Annecy",
         "3170": "Dijon FCO",
         "3171": "Clermont Foot",
+        "3266": "Stade Laval",
         "3267": "AS Nancy Lorraine",
+        "6994": "Grenoble",
         "7719": "Rodez Aveyron",
         "7869": "Boulogne"
       }
@@ -367,7 +361,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 13,
+  "results_appended": 6,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -377,6 +371,7 @@
     "bra.2",
     "chi.1",
     "col.1",
+    "conmebol.sudamericana",
     "den.1",
     "eng.3",
     "eng.4",
@@ -389,6 +384,7 @@
     "jpn.1",
     "nor.1",
     "per.1",
+    "swe.1",
     "uefa.wchampions",
     "uru.1",
     "usa.usl.1"
@@ -411,16 +407,13 @@
     "11880": "FC Chambly",
     "11884": "Red Star FC 93",
     "11895": "Bourg-Peronnas",
-    "12587": "Amorebieta",
     "12957": "Sabl\u00e9 FC",
     "131470": "Reus FC Reddis",
     "131572": "Stade B\u00e9thunois",
     "131576": "Montreuil FC",
     "132434": "Paris 13 Atletico",
     "132785": "SC Toulon",
-    "133835": "CD Pamplona",
     "133837": "CD Tarancon",
-    "133846": "Tavernes de la Valldigna",
     "134063": "Chassieu Declines FC",
     "134064": "Olympique Charleville Prix AM",
     "134065": "Olympique des Membres de Cambrai Amerique",
@@ -515,8 +508,6 @@
     "16925": "Bressuire",
     "171": "Guingamp",
     "17483": "Orl\u00e9ans",
-    "17534": "Legan\u00e9s",
-    "17573": "Trival Valderas",
     "17621": "Anglet Genets",
     "17623": "US Marseille Endoume",
     "177": "Metz",
@@ -539,7 +530,6 @@
     "20272": "FC Challans",
     "20275": "ESA Linas-Montlhery",
     "204": "Bolivia",
-    "20776": "Anaitasuna",
     "20871": "Rumilly Valli\u00e8res",
     "20876": "Loon Plage FC",
     "21291": "CS Puertollano",
@@ -551,7 +541,6 @@
     "21773": "Strasbourg Koenigshoffen",
     "21804": "Diables Noirs",
     "21817": "AF Virois",
-    "22043": "Mijas Las Lagunas",
     "22138": "US Feurs",
     "22139": "Racing Club de France",
     "22437": "CD Minera",
@@ -570,7 +559,6 @@
     "3266": "Stade Laval",
     "3267": "AS Nancy Lorraine",
     "3335": "SC Amiens",
-    "3752": "Eibar",
     "4375": "Iraq",
     "4380": "Syria",
     "4381": "Bahrain",
@@ -583,7 +571,6 @@
     "4863": "Tahiti",
     "4884": "Cook Islands",
     "4895": "Indonesia",
-    "5401": "Real Jaen CF",
     "5419": "FC Cartagena",
     "5421": "Barakaldo",
     "5464": "Portugalete",
@@ -596,7 +583,6 @@
     "6732": "Valenciennes",
     "6827": "Alcoyano",
     "6994": "Grenoble",
-    "7206": "UD Logro\u00f1\u00e9s",
     "7296": "Vesoul",
     "7349": "Vietnam",
     "7574": "Vannes OC",
@@ -622,16 +608,16 @@
   },
   "weather": {
     "captured": 0,
-    "events": 100,
+    "events": 77,
     "failures": [
       "401841311: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-20.8192&longitude=-49.5211&hourly=",
-      "401841175: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-27.0964&longitude=-52.6183&hourly=",
-      "401860432: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Belo%20Horizonte&count=5&langua"
+      "401841175: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Chapec\u00f3&count=5&language=en&for",
+      "401860432: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-19.9208&longitude=-43.9378&hourly="
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 97,
+    "skipped": 74,
     "stopped": "consecutive_failures"
   }
 }
