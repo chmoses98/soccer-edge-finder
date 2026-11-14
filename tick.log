@@ -604,3 +604,111 @@ These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW
 
 ## Events
 - Japan vs Brazil (International Friendlies) 2026-11-14T10:15:00Z · markets 23/23 evaluated · lineups unknown · xG 1.27-1.43 · 1X2 34%/26%/40%
+
+{
+  "outputs": {
+    "json": "work/runs/_pending/run_output.v1.json",
+    "md": "work/runs/_pending/RUN_SOCCER.md",
+    "contracts": "work/runs/_pending/priced_contracts.json",
+    "coverage": "work/runs/_pending/coverage.json",
+    "diagnostics": "work/runs/_pending/coverage_diagnostics.json"
+  },
+  "simulated": [
+    "fx:fifa.friendly:2026:nat.jpn:nat.bra"
+  ],
+  "repriced": [],
+  "archived_records": 23
+}
+[dispatch] holding 3.7 min (next window opens in 1.7 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261114T100349Z",
+  "complete": true,
+  "discovered": 6541,
+  "written": 1330,
+  "path": "work/snapshots/2026-11-14/cap-20261114T100349Z.jsonl"
+}
+{
+  "reference_probabilities": 0,
+  "observed_at": "2026-11-14 04:37:36.737225+00:00",
+  "groups": 0,
+  "unmapped_fixture_groups": 0,
+  "incomplete_groups": 0,
+  "snapshots": 0,
+  "provider_notes": [
+    "51 rows, 51 skipped (unmapped division/team)",
+    "skipped_by_division={'E2': 5, 'E3': 10, 'EC': 11, 'SC1': 4, 'SC2': 5, 'SC3': 5, 'SP2': 11}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-11-14T10:03:53.126707Z", "batch_id": "kd-20261114T100000Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": ["fifa.friendly"], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-11-14T10:03:53.161162+00:00",
+ "leagues": [
+  "concacaf.nations.league",
+  "fifa.friendly",
+  "fifa.worldq.afc",
+  "fifa.worldq.caf",
+  "fifa.worldq.concacaf",
+  "fifa.worldq.conmebol",
+  "fifa.worldq.uefa",
+  "uefa.euroq",
+  "uefa.nations"
+ ],
+ "events": 19,
+ "fixtures_mapped": 13,
+ "events_skipped_unmapped": 6,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 9,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 19,
+  "captured": 0,
+  "unchanged": 19,
+  "published_pre_kickoff": 1,
+  "published_post": 0,
+  "unpublished": 18,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 17,
+  "captured": 0,
+  "no_venue": 0,
+  "geocode_miss": 3,
+  "forecast_miss": 0,
+  "failures": [
+   "401929710: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=25.7743&longitude=-80.1937&hourly=t",
+   "401916337: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=1.2897&longitude=103.8501&hourly=te",
+   "401930236: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=23.0489&longitude=112.4609&hourly=t",
+   "401930243: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=20.4339&longitude=106.1773&hourly=t"
+  ],
+  "skipped": 10,
+  "stopped": "consecutive_failures"
+ },
+ "map_version": "4",
+ "health": {
+  "state": "DEGRADED",
+  "reasons": [
+   "weather_failures:4",
+   "weather_stopped:consecutive_failures:skipped=10"
+  ]
+ }
+}
+unmapped teams: 10 | proposals: {'fifa.friendly': 0}
+[slate] {"slate_id": "slate-20261114T100500Z-f1bc4d", "mode": "reprice_only", "fixtures": 24, "contract_sides": 2424, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 1.563, "price_changes_vs_previous": 196}
+{
+ "batches": 4,
+ "horizons_delivered": 4,
+ "missed_states": {},
+ "paid_calls": 0,
+ "credits_spent": 0,
+ "end_reason": "link_time_limit",
+ "chain_continue": true,
+ "delivered_total": 3824,
+ "missed_total": 493,
+ "delivery_rate_total": 0.8858003242992819
+}
