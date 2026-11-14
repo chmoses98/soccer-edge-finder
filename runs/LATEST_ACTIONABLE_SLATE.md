@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261114T165456Z-5c7bbf` · generated 2026-11-14T16:54:56.774062Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261114T170055Z-2e30db` · generated 2026-11-14T17:00:55.046174Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-14T16:51:12.750858Z (CURRENT at publish; CURRENT until 2026-11-14T17:11:12.750858Z, STALE after 2026-11-14T17:21:12.750858Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-14T16:57:09.330265Z (CURRENT at publish; CURRENT until 2026-11-14T17:17:09.330265Z, STALE after 2026-11-14T17:27:09.330265Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-14T16:37:39.316507Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.06s
+model board generated 2026-11-14T16:37:39.316507Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.98s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,8 +12,6 @@ model board generated 2026-11-14T16:37:39.316507Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-14T17:00:00Z | Georgia vs Hungary (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 61 | 1 |
-| 2026-11-14T17:00:00Z | Norway vs Wales (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 61 | 1 |
 | 2026-11-14T19:00:00Z | Sint Maarten vs French Guiana (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-14T19:45:00Z | Austria vs Republic of Ireland (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-14T19:45:00Z | Northern Ireland vs Ukraine (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
@@ -48,10 +46,10 @@ model board generated 2026-11-14T16:37:39.316507Z · simulations this update: 0 
 | Querétaro vs Monterrey | away team total over 1.5 | no | 0.5000 | 0.663 [0.512, 0.800] | +0.146 | +0.055 | 0.55 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | Result: away | no | 0.5200 | 0.675 [0.537, 0.809] | +0.138 | +0.047 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | home wins by more than 1.5 | yes | 0.0400 | 0.156 [0.067, 0.264] | +0.113 | +0.043 | 0.08 | - |  | RESEARCH_CANDIDATE |
-| Querétaro vs Monterrey | First-half result: away | no | 0.6300 | 0.743 [0.638, 0.842] | +0.097 | +0.034 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | away wins by more than 1.5 | no | 0.7600 | 0.858 [0.767, 0.937] | +0.086 | +0.032 | 0.79 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | away team total over 2.5 | no | 0.7800 | 0.870 [0.773, 0.949] | +0.078 | +0.028 | 0.8 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | Result: home | yes | 0.2700 | 0.413 [0.268, 0.573] | +0.129 | +0.028 | 0.29 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Monterrey | First-half result: away | no | 0.6400 | 0.743 [0.638, 0.842] | +0.087 | +0.024 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | First team to score: away | no | 0.4500 | 0.574 [0.438, 0.702] | +0.107 | +0.023 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | away wins by more than 2.5 | no | 0.9000 | 0.950 [0.903, 0.984] | +0.044 | +0.021 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Mirassol vs Atlético Mineiro | btts | no | 0.4500 | 0.559 [0.445, 0.669] | +0.092 | +0.019 | 0.46 | - | * | RESEARCH_CANDIDATE |
@@ -65,14 +63,16 @@ model board generated 2026-11-14T16:37:39.316507Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 117
-action_NO_EDGE: 1968
-action_NO_QUOTE: 413
+action_EXCLUDED_BY_GATE: 78
+action_NO_EDGE: 1808
+action_NO_QUOTE: 368
 action_RESEARCH_CANDIDATE: 20
-contract_sides: 2518
-fixtures: 24
+contract_sides: 2274
+fixtures: 22
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
+
+Removed (kicked off): 2
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
