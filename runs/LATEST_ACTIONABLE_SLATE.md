@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261114T214602Z-993f6d` · generated 2026-11-14T21:46:02.059498Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261114T220123Z-546eee` · generated 2026-11-14T22:01:23.450273Z · trigger `kickoff_chain:T-120/T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-14T21:42:24.427106Z (CURRENT at publish; CURRENT until 2026-11-14T22:02:24.427106Z, STALE after 2026-11-14T22:12:24.427106Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-14T21:57:24.453395Z (CURRENT at publish; CURRENT until 2026-11-14T22:17:24.453395Z, STALE after 2026-11-14T22:27:24.453395Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-14T21:33:18.106798Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.04s
+model board generated 2026-11-14T22:01:13.376207Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 1.03s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,8 +12,8 @@ model board generated 2026-11-14T21:33:18.106798Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-14T23:00:00Z | Querétaro vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-11-14T23:30:00Z | Chapecoense vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-14T23:00:00Z | Querétaro vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 79 | 1 |
+| 2026-11-14T23:30:00Z | Chapecoense vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-15T01:00:00Z | Jamaica vs Mexico (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-15T14:00:00Z | Cyprus vs Montenegro (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-15T14:00:00Z | Latvia vs Armenia (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
@@ -46,28 +46,28 @@ model board generated 2026-11-14T21:33:18.106798Z · simulations this update: 0 
 | Chapecoense vs Vasco da Gama | Result: away | no | 0.3050 | 0.573 [0.419, 0.725] | +0.253 | +0.152 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | away wins by more than 1.5 | no | 0.5600 | 0.775 [0.644, 0.888] | +0.198 | +0.119 | 0.68 | - | * | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | Result: home | yes | 0.1150 | 0.328 [0.189, 0.476] | +0.206 | +0.105 | 0.21 | - |  | RESEARCH_CANDIDATE |
-| Chapecoense vs Vasco da Gama | away wins by more than 2.5 | no | 0.7700 | 0.902 [0.819, 0.964] | +0.120 | +0.078 | 0.85 | - |  | RESEARCH_CANDIDATE |
-| Querétaro vs Monterrey | Result: away | no | 0.5100 | 0.675 [0.537, 0.809] | +0.148 | +0.057 | 0.56 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Monterrey | Result: home | yes | 0.2500 | 0.413 [0.268, 0.573] | +0.150 | +0.048 | 0.29 | - |  | RESEARCH_CANDIDATE |
+| Chapecoense vs Vasco da Gama | away wins by more than 2.5 | no | 0.7600 | 0.902 [0.819, 0.964] | +0.129 | +0.087 | 0.85 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Monterrey | Result: away | no | 0.5100 | 0.675 [0.537, 0.809] | +0.148 | +0.057 | 0.56 | 0.513 | * | RESEARCH_CANDIDATE |
+| Querétaro vs Monterrey | Result: home | yes | 0.2500 | 0.413 [0.268, 0.573] | +0.150 | +0.048 | 0.29 | 0.252 |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | away team total over 1.5 | no | 0.5100 | 0.663 [0.512, 0.800] | +0.136 | +0.045 | 0.55 | - | * | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | home wins by more than 1.5 | yes | 0.0400 | 0.156 [0.067, 0.264] | +0.113 | +0.043 | 0.08 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Monterrey | away wins by more than 1.5 | no | 0.7500 | 0.858 [0.767, 0.937] | +0.095 | +0.042 | 0.79 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | First-half result: away | no | 0.6300 | 0.743 [0.638, 0.842] | +0.097 | +0.034 | 0.66 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Monterrey | away wins by more than 1.5 | no | 0.7600 | 0.858 [0.767, 0.937] | +0.086 | +0.032 | 0.79 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | away team total over 2.5 | no | 0.7800 | 0.870 [0.773, 0.949] | +0.078 | +0.028 | 0.8 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | First team to score: away | no | 0.4500 | 0.574 [0.438, 0.702] | +0.107 | +0.023 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | away team total over 0.5 | no | 0.2000 | 0.314 [0.194, 0.438] | +0.103 | +0.022 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | away wins by more than 2.5 | no | 0.9000 | 0.950 [0.903, 0.984] | +0.044 | +0.021 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | Result: draw | yes | 0.1850 | 0.245 [0.201, 0.291] | +0.050 | +0.021 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | home wins by more than 1.5 | yes | 0.1000 | 0.203 [0.097, 0.331] | +0.096 | +0.017 | 0.11 | - |  | RESEARCH_CANDIDATE |
-| Querétaro vs Monterrey | First half: away wins by more than 1.5 | no | 0.9000 | 0.937 [0.889, 0.981] | +0.030 | +0.004 | 0.9 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Monterrey | First half: away wins by more than 1.5 | no | 0.8900 | 0.937 [0.889, 0.981] | +0.040 | +0.013 | 0.9 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | First team to score: home | yes | 0.3800 | 0.490 [0.348, 0.632] | +0.093 | +0.004 | 0.38 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_EXCLUDED_BY_GATE: 85
-action_NO_EDGE: 2052
-action_NO_QUOTE: 447
+action_NO_EDGE: 2061
+action_NO_QUOTE: 438
 action_RESEARCH_CANDIDATE: 18
 contract_sides: 2602
 fixtures: 26
