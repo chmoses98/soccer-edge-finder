@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261114T183119Z-770f49` · generated 2026-11-14T18:31:19.059538Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
+slate `slate-20261114T184658Z-4bed66` · generated 2026-11-14T18:46:58.178229Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-14T18:27:22.249710Z (CURRENT at publish; CURRENT until 2026-11-14T18:47:22.249710Z, STALE after 2026-11-14T18:57:22.249710Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-14T18:42:27.643859Z (CURRENT at publish; CURRENT until 2026-11-14T19:02:27.643859Z, STALE after 2026-11-14T19:12:27.643859Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-14T18:31:15.834346Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 1.06s
+model board generated 2026-11-14T18:46:22.486022Z · simulations this update: 5 · Odds API calls this update: 1 (credits 3) · reprice 1.07s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -13,11 +13,11 @@ model board generated 2026-11-14T18:31:15.834346Z · simulations this update: 1 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
 | 2026-11-14T19:00:00Z | Sint Maarten vs French Guiana (concacaf.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
-| 2026-11-14T19:45:00Z | Austria vs Republic of Ireland (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-14T19:45:00Z | Northern Ireland vs Ukraine (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-14T19:45:00Z | Portugal vs Denmark (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-14T19:45:00Z | Romania vs Poland (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-14T19:45:00Z | Sweden vs Bosnia and Herzegovina (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-14T19:45:00Z | Austria vs Republic of Ireland (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-14T19:45:00Z | Northern Ireland vs Ukraine (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 61 | 1 |
+| 2026-11-14T19:45:00Z | Portugal vs Denmark (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 61 | 1 |
+| 2026-11-14T19:45:00Z | Romania vs Poland (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 61 | 1 |
+| 2026-11-14T19:45:00Z | Sweden vs Bosnia and Herzegovina (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT entry | CURRENT | 61 | 1 |
 | 2026-11-14T21:30:00Z | Mirassol vs Atlético Mineiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-14T21:30:00Z | Haiti vs United States (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-14T23:00:00Z | Querétaro vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
@@ -50,9 +50,9 @@ model board generated 2026-11-14T18:31:15.834346Z · simulations this update: 1 
 | Querétaro vs Monterrey | away team total over 1.5 | no | 0.5000 | 0.663 [0.512, 0.800] | +0.146 | +0.055 | 0.55 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | Result: away | no | 0.5200 | 0.675 [0.537, 0.809] | +0.138 | +0.047 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Chapecoense vs Vasco da Gama | home wins by more than 1.5 | yes | 0.0400 | 0.156 [0.067, 0.264] | +0.113 | +0.043 | 0.08 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Monterrey | Result: home | yes | 0.2600 | 0.413 [0.268, 0.573] | +0.139 | +0.038 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | away wins by more than 1.5 | no | 0.7600 | 0.858 [0.767, 0.937] | +0.086 | +0.032 | 0.79 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | away team total over 2.5 | no | 0.7800 | 0.870 [0.773, 0.949] | +0.078 | +0.028 | 0.8 | - |  | RESEARCH_CANDIDATE |
-| Querétaro vs Monterrey | Result: home | yes | 0.2700 | 0.413 [0.268, 0.573] | +0.129 | +0.028 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | First-half result: away | no | 0.6400 | 0.743 [0.638, 0.842] | +0.087 | +0.024 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | First team to score: away | no | 0.4500 | 0.574 [0.438, 0.702] | +0.107 | +0.023 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Monterrey | away wins by more than 2.5 | no | 0.9000 | 0.950 [0.903, 0.984] | +0.044 | +0.021 | 0.92 | - |  | RESEARCH_CANDIDATE |
@@ -69,9 +69,9 @@ model board generated 2026-11-14T18:31:15.834346Z · simulations this update: 1 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 96
-action_NO_EDGE: 2115
-action_NO_QUOTE: 435
+action_EXCLUDED_BY_GATE: 100
+action_NO_EDGE: 2113
+action_NO_QUOTE: 433
 action_RESEARCH_CANDIDATE: 22
 contract_sides: 2668
 fixtures: 26
