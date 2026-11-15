@@ -54,9 +54,416 @@
   "delivered_total": 3930,
   "delivery_rate_total": 0.8857336037863421,
   "fixtures_tracked": 906,
-  "generated_at": "2026-11-15T22:48:27Z",
+  "generated_at": "2026-11-15T22:50:43Z",
+  "last_tick": {
+    "batches": 9,
+    "summary": [
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "model_refresh:ok:fixtures=1:sim=0:board=0:why=entered_lookahead_unmodelled",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "ks-20261115T171719Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=2050:sim=0"
+        ],
+        "batch_id": "ks-20261115T173219Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:9",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=2050:sim=0"
+        ],
+        "batch_id": "kd-20261115T173758Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:uefa.nations_league:2026-27:nat.fra:nat.tur",
+            120,
+            127.02
+          ],
+          [
+            "fx:uefa.nations_league:2026-27:nat.esp:nat.eng",
+            120,
+            127.02
+          ],
+          [
+            "fx:uefa.nations_league:2026-27:nat.cro:nat.cze",
+            120,
+            127.02
+          ],
+          [
+            "fx:uefa.nations_league:2026-27:nat.bel:nat.ita",
+            120,
+            127.02
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=2050:sim=0"
+        ],
+        "batch_id": "ks-20261115T175302Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=2050:sim=0"
+        ],
+        "batch_id": "ks-20261115T180802Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=2050:sim=0"
+        ],
+        "batch_id": "ks-20261115T182303Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=2050:sim=0"
+        ],
+        "batch_id": "ks-20261115T183803Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:ok:credits=3:paid=1:rows=28",
+          "lineups:ok:9",
+          "model_refresh:ok:fixtures=4:sim=4:cache=0:why=T-60:invalidated,T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261115T184343Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:uefa.nations_league:2026-27:nat.fra:nat.tur",
+            60,
+            61.28
+          ],
+          [
+            "fx:uefa.nations_league:2026-27:nat.esp:nat.eng",
+            60,
+            61.28
+          ],
+          [
+            "fx:uefa.nations_league:2026-27:nat.cro:nat.cze",
+            60,
+            61.28
+          ],
+          [
+            "fx:uefa.nations_league:2026-27:nat.bel:nat.ita",
+            60,
+            61.28
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "model_refresh:ok:fixtures=4:sim=4:board=4:why=entered_lookahead_unmodelled",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "ks-20261115T185846Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:9",
+          "model_refresh:ok:fixtures=1:sim=1:cache=0:why=T-30:invalidated",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261115T191346Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:uefa.nations_league:2026-27:nat.fra:nat.tur",
+            30,
+            31.22
+          ],
+          [
+            "fx:uefa.nations_league:2026-27:nat.esp:nat.eng",
+            30,
+            31.22
+          ],
+          [
+            "fx:uefa.nations_league:2026-27:nat.cro:nat.cze",
+            30,
+            31.22
+          ],
+          [
+            "fx:uefa.nations_league:2026-27:nat.bel:nat.ita",
+            30,
+            31.22
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:ok:credits=3:paid=1:rows=28",
+          "lineups:ok:9",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=2162:sim=0"
+        ],
+        "batch_id": "kd-20261115T192849Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:uefa.nations_league:2026-27:nat.fra:nat.tur",
+            15,
+            16.17
+          ],
+          [
+            "fx:uefa.nations_league:2026-27:nat.esp:nat.eng",
+            15,
+            16.17
+          ],
+          [
+            "fx:uefa.nations_league:2026-27:nat.cro:nat.cze",
+            15,
+            16.17
+          ],
+          [
+            "fx:uefa.nations_league:2026-27:nat.bel:nat.ita",
+            15,
+            16.17
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:9",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=2162:sim=0"
+        ],
+        "batch_id": "kd-20261115T194000Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:uefa.nations_league:2026-27:nat.fra:nat.tur",
+            5,
+            5.0
+          ],
+          [
+            "fx:uefa.nations_league:2026-27:nat.esp:nat.eng",
+            5,
+            5.0
+          ],
+          [
+            "fx:uefa.nations_league:2026-27:nat.cro:nat.cze",
+            5,
+            5.0
+          ],
+          [
+            "fx:uefa.nations_league:2026-27:nat.bel:nat.ita",
+            5,
+            5.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "model_refresh:ok:fixtures=8:sim=8:board=8:why=entered_lookahead_unmodelled",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "ks-20261115T195500Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1898:sim=0"
+        ],
+        "batch_id": "ks-20261115T201000Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1898:sim=0"
+        ],
+        "batch_id": "ks-20261115T202503Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1898:sim=0"
+        ],
+        "batch_id": "ks-20261115T204003Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:9",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1898:sim=0"
+        ],
+        "batch_id": "kd-20261115T205008Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:concacaf.nations_league:2026-27:nat.pan:nat.cuw",
+            120,
+            129.86
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1898:sim=0"
+        ],
+        "batch_id": "ks-20261115T210508Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1898:sim=0"
+        ],
+        "batch_id": "ks-20261115T212040Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1898:sim=0"
+        ],
+        "batch_id": "ks-20261115T213540Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=2722:sim=0"
+        ],
+        "batch_id": "ks-20261115T215041Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:9",
+          "model_refresh:ok:fixtures=1:sim=1:cache=0:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261115T215624Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:concacaf.nations_league:2026-27:nat.pan:nat.cuw",
+            60,
+            63.59
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=2722:sim=0"
+        ],
+        "batch_id": "ks-20261115T221124Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=2722:sim=0"
+        ],
+        "batch_id": "ks-20261115T222627Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:9",
+          "model_refresh:ok:fixtures=1:sim=1:cache=0:why=T-30:invalidated",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261115T223207Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:concacaf.nations_league:2026-27:nat.pan:nat.cuw",
+            30,
+            27.87
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:9",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=2722:sim=0"
+        ],
+        "batch_id": "kd-20261115T224500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:concacaf.nations_league:2026-27:nat.pan:nat.cuw",
+            15,
+            15.0
+          ]
+        ]
+      }
+    ]
+  },
   "missed_total": 507,
-  "n_pending_fixtures": 42,
+  "n_pending_fixtures": 43,
   "pending_fixtures": [
     {
       "competition_id": "concacaf.nations_league",
@@ -349,6 +756,13 @@
       "competition_id": "concacaf.nations_league",
       "fixture_id": "fx:concacaf.nations_league:2026-27:nat.nca:nat.msr",
       "kickoff_utc": "2026-11-18T03:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "bra.serie_a",
+      "fixture_id": "fx:bra.serie_a:2026:bra.coritiba:bra.santos",
+      "kickoff_utc": "2026-11-18T22:30:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }

@@ -1169,3 +1169,105 @@ These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW
 
 ## Events
 - Panama vs Curaçao (CONCACAF Nations League) 2026-11-15T23:00:00Z · markets 25/25 evaluated · lineups unknown · xG 1.47-1.32 · 1X2 40%/25%/35%
+
+{
+  "outputs": {
+    "json": "work/runs/_pending/run_output.v1.json",
+    "md": "work/runs/_pending/RUN_SOCCER.md",
+    "contracts": "work/runs/_pending/priced_contracts.json",
+    "coverage": "work/runs/_pending/coverage.json",
+    "diagnostics": "work/runs/_pending/coverage_diagnostics.json"
+  },
+  "simulated": [
+    "fx:concacaf.nations_league:2026-27:nat.pan:nat.cuw"
+  ],
+  "repriced": [],
+  "archived_records": 25
+}
+[dispatch] holding 7.0 min (next window opens in 5.0 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261115T224822Z",
+  "complete": true,
+  "discovered": 5500,
+  "written": 802,
+  "path": "work/snapshots/2026-11-15/cap-20261115T224822Z.jsonl"
+}
+{
+  "reference_probabilities": 0,
+  "observed_at": "2026-11-15 17:20:55.208137+00:00",
+  "groups": 0,
+  "unmapped_fixture_groups": 0,
+  "incomplete_groups": 0,
+  "snapshots": 0,
+  "provider_notes": [
+    "51 rows, 51 skipped (unmapped division/team)",
+    "skipped_by_division={'E2': 5, 'E3': 10, 'EC': 11, 'SC1': 4, 'SC2': 5, 'SC3': 5, 'SP2': 11}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-11-15T22:48:24.472286Z", "batch_id": "kd-20261115T224500Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": ["concacaf.nations_league"], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-11-15T22:48:24.491244+00:00",
+ "leagues": [
+  "concacaf.nations.league",
+  "fifa.friendly",
+  "fifa.worldq.afc",
+  "fifa.worldq.caf",
+  "fifa.worldq.concacaf",
+  "fifa.worldq.conmebol",
+  "fifa.worldq.uefa",
+  "uefa.euroq",
+  "uefa.nations"
+ ],
+ "events": 10,
+ "fixtures_mapped": 9,
+ "events_skipped_unmapped": 1,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 9,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 10,
+  "captured": 0,
+  "unchanged": 10,
+  "published_pre_kickoff": 1,
+  "published_post": 8,
+  "unpublished": 1,
+  "failures": []
+ },
+ "results_appended": 8,
+ "weather": {
+  "events": 1,
+  "captured": 1,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 1 | proposals: {'fifa.friendly': 0}
+[slate] {"slate_id": "slate-20261115T224826Z-5dce8b", "mode": "reprice_only", "fixtures": 33, "contract_sides": 2722, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.854, "price_changes_vs_previous": 87}
+{
+ "batches": 9,
+ "horizons_delivered": 24,
+ "missed_states": {
+  "MISSED_BEFORE_WAKE": 4
+ },
+ "paid_calls": 2,
+ "credits_spent": 6,
+ "end_reason": "link_time_limit",
+ "chain_continue": true,
+ "delivered_total": 3930,
+ "missed_total": 507,
+ "delivery_rate_total": 0.8857336037863421
+}
