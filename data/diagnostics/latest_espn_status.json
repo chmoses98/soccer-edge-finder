@@ -1,14 +1,11 @@
 {
-  "as_of": "2026-11-14T21:29:04.021942+00:00",
-  "events": 528,
-  "events_skipped_unmapped": 332,
-  "fixtures_mapped": 196,
+  "as_of": "2026-11-15T02:00:53.278584+00:00",
+  "events": 599,
+  "events_skipped_unmapped": 364,
+  "fixtures_mapped": 235,
   "health": {
-    "reasons": [
-      "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=24"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
     "afc.champions",
@@ -81,13 +78,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 142,
+    "captured": 130,
     "events": 150,
     "failures": [],
-    "published_post": 37,
+    "published_post": 40,
     "published_pre_kickoff": 0,
-    "unchanged": 8,
-    "unpublished": 113
+    "unchanged": 20,
+    "unpublished": 110
   },
   "map_proposals": {
     "esp.2": {
@@ -358,10 +355,17 @@
         "9021": "Frejus",
         "9024": "Le Poire SV"
       }
+    },
+    "usa.1": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "131554": "TBD Away"
+      }
     }
   },
   "map_version": "4",
-  "results_appended": 8,
+  "results_appended": 10,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -409,6 +413,7 @@
     "11895": "Bourg-Peronnas",
     "12957": "Sabl\u00e9 FC",
     "131470": "Reus FC Reddis",
+    "131554": "TBD Away",
     "131572": "Stade B\u00e9thunois",
     "131576": "Montreuil FC",
     "132434": "Paris 13 Atletico",
@@ -607,17 +612,13 @@
     "9024": "Le Poire SV"
   },
   "weather": {
-    "captured": 12,
-    "events": 39,
-    "failures": [
-      "401878043: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=C\u00facuta&count=5&language=en&form",
-      "401877893: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Cali&count=5&language=en&format",
-      "401877919: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Yopal&count=5&language=en&forma"
-    ],
+    "captured": 11,
+    "events": 18,
+    "failures": [],
     "forecast_miss": 0,
-    "geocode_miss": 0,
+    "geocode_miss": 7,
     "no_venue": 0,
-    "skipped": 24,
-    "stopped": "consecutive_failures"
+    "skipped": 0,
+    "stopped": null
   }
 }
