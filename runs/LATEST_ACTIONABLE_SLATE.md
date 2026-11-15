@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261115T131657Z-9b5659` · generated 2026-11-15T13:16:57.492450Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261115T133209Z-e6369f` · generated 2026-11-15T13:32:09.325489Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-15T13:13:25.835281Z (CURRENT at publish; CURRENT until 2026-11-15T13:33:25.835281Z, STALE after 2026-11-15T13:43:25.835281Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-15T13:28:28.715536Z (CURRENT at publish; CURRENT until 2026-11-15T13:48:28.715536Z, STALE after 2026-11-15T13:58:28.715536Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-15T13:16:55.382187Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.75s
+model board generated 2026-11-15T13:32:02.057613Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.73s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,8 +12,8 @@ model board generated 2026-11-15T13:16:55.382187Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-15T14:00:00Z | Cyprus vs Montenegro (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 61 | 1 |
-| 2026-11-15T14:00:00Z | Latvia vs Armenia (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT entry | CURRENT | 61 | 1 |
+| 2026-11-15T14:00:00Z | Cyprus vs Montenegro (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
+| 2026-11-15T14:00:00Z | Latvia vs Armenia (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
 | 2026-11-15T17:00:00Z | Belarus vs Albania (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-15T17:00:00Z | Finland vs San Marino (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-15T19:45:00Z | Belgium vs Italy (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
@@ -49,8 +49,8 @@ model board generated 2026-11-15T13:16:55.382187Z · simulations this update: 1 
 
 ```
 action_EXCLUDED_BY_GATE: 103
-action_NO_EDGE: 2008
-action_NO_QUOTE: 353
+action_NO_EDGE: 2017
+action_NO_QUOTE: 344
 contract_sides: 2464
 fixtures: 27
 fixtures_model_invalidated: 0
