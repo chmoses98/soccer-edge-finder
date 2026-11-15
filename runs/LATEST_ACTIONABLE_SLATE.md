@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261115T191726Z-ac1cf5` · generated 2026-11-15T19:17:26.173220Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
+slate `slate-20261115T193219Z-5088fa` · generated 2026-11-15T19:32:19.955253Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-15T19:13:46.880498Z (CURRENT at publish; CURRENT until 2026-11-15T19:33:46.880498Z, STALE after 2026-11-15T19:43:46.880498Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-15T19:28:49.695180Z (CURRENT at publish; CURRENT until 2026-11-15T19:48:49.695180Z, STALE after 2026-11-15T19:58:49.695180Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-15T19:17:18.718959Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.66s
+model board generated 2026-11-15T19:17:18.718959Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.69s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,10 +12,10 @@ model board generated 2026-11-15T19:17:18.718959Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-15T19:45:00Z | Belgium vs Italy (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
-| 2026-11-15T19:45:00Z | Croatia vs Czechia (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
-| 2026-11-15T19:45:00Z | Spain vs England (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
-| 2026-11-15T19:45:00Z | France vs Türkiye (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
+| 2026-11-15T19:45:00Z | Belgium vs Italy (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 61 | 1 |
+| 2026-11-15T19:45:00Z | Croatia vs Czechia (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 61 | 1 |
+| 2026-11-15T19:45:00Z | Spain vs England (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 61 | 1 |
+| 2026-11-15T19:45:00Z | France vs Türkiye (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 61 | 1 |
 | 2026-11-15T23:00:00Z | Panama vs Curaçao (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 25 | 0 |
 | 2026-11-16T15:00:00Z | Faroe Islands vs Moldova (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-16T15:00:00Z | Kazakhstan vs Slovakia (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
@@ -50,9 +50,9 @@ model board generated 2026-11-15T19:17:18.718959Z · simulations this update: 1 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 74
-action_NO_EDGE: 1800
-action_NO_QUOTE: 288
+action_EXCLUDED_BY_GATE: 83
+action_NO_EDGE: 1797
+action_NO_QUOTE: 282
 contract_sides: 2162
 fixtures: 29
 fixtures_model_invalidated: 0
