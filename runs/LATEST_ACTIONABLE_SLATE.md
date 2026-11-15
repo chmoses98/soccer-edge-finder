@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261115T184749Z-9b61ab` · generated 2026-11-15T18:47:49.100972Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261115T190224Z-5ab61d` · generated 2026-11-15T19:02:24.253645Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-15T18:43:43.471136Z (CURRENT at publish; CURRENT until 2026-11-15T19:03:43.471136Z, STALE after 2026-11-15T19:13:43.471136Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-15T18:58:46.855507Z (CURRENT at publish; CURRENT until 2026-11-15T19:18:46.855507Z, STALE after 2026-11-15T19:28:46.855507Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-15T18:47:18.514292Z · simulations this update: 4 · Odds API calls this update: 1 (credits 3) · reprice 0.64s
+model board generated 2026-11-15T19:02:16.232879Z · simulations this update: 4 · Odds API calls this update: 0 (credits 0) · reprice 0.68s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,10 +12,10 @@ model board generated 2026-11-15T18:47:18.514292Z · simulations this update: 4 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-15T19:45:00Z | Belgium vs Italy (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT entry | CURRENT | 61 | 1 |
-| 2026-11-15T19:45:00Z | Croatia vs Czechia (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 61 | 1 |
-| 2026-11-15T19:45:00Z | Spain vs England (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT entry | CURRENT | 61 | 1 |
-| 2026-11-15T19:45:00Z | France vs Türkiye (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT entry | CURRENT | 61 | 1 |
+| 2026-11-15T19:45:00Z | Belgium vs Italy (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
+| 2026-11-15T19:45:00Z | Croatia vs Czechia (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
+| 2026-11-15T19:45:00Z | Spain vs England (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
+| 2026-11-15T19:45:00Z | France vs Türkiye (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
 | 2026-11-15T23:00:00Z | Panama vs Curaçao (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 25 | 0 |
 | 2026-11-16T15:00:00Z | Faroe Islands vs Moldova (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-16T15:00:00Z | Kazakhstan vs Slovakia (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
@@ -37,6 +37,10 @@ model board generated 2026-11-15T18:47:18.514292Z · simulations this update: 4 
 | 2026-11-17T13:10:00Z | Japan vs Paraguay (fifa.friendly) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-17T15:30:00Z | Saudi Arabia vs Uzbekistan (fifa.friendly) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-17T16:00:00Z | Jordan vs Australia (fifa.friendly) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-17T19:00:00Z | Belize vs Sint Maarten (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-17T19:00:00Z | Dominica vs Cayman Islands (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-17T19:00:00Z | St. Lucia vs Barbados (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-17T19:00:00Z | St. Kitts and Nevis vs Bonaire (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
 ## Candidates on CURRENT prices (0; RESEARCH_ONLY = analysis, never a bet)
 
@@ -46,11 +50,11 @@ model board generated 2026-11-15T18:47:18.514292Z · simulations this update: 4 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 76
-action_NO_EDGE: 1700
-action_NO_QUOTE: 274
-contract_sides: 2050
-fixtures: 25
+action_EXCLUDED_BY_GATE: 75
+action_NO_EDGE: 1801
+action_NO_QUOTE: 286
+contract_sides: 2162
+fixtures: 29
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
