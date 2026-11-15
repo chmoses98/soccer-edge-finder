@@ -1,9 +1,9 @@
 {
  "counts": {
   "DISPATCHER_CLOSE_NO_ATTEMPT": 635,
+  "PINNACLE_VALID_CLOSE": 100,
   "MISSED_DISPATCHER_CLOSE": 100,
   "CLOSE_BLOCKED_BUDGET": 16,
-  "PINNACLE_VALID_CLOSE": 98,
   "NO_SPORT_KEY": 19,
   "PINNACLE_QUOTED_NOTHING": 3
  },
@@ -3628,6 +3628,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:uefa.nations_league:2026-27:nat.cyp:nat.mne": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261115T134325Z"
+  },
   "fx:uefa.nations_league:2026-27:nat.cze:nat.eng": {
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
@@ -3747,6 +3752,11 @@
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
    "batch_id": null
+  },
+  "fx:uefa.nations_league:2026-27:nat.lva:nat.arm": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261115T134325Z"
   },
   "fx:uefa.nations_league:2026-27:nat.lva:nat.mne": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
