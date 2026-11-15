@@ -725,3 +725,48 @@ These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW
 [slate] {"slate_id": "slate-20261115T041057Z-1b566f", "mode": "reprice_only", "fixtures": 26, "contract_sides": 2436, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 1.052, "price_changes_vs_previous": 161}
 [dispatch] holding 8.4 min (next window opens in 456.0 min)
 [capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261115T042556Z",
+  "complete": true,
+  "discovered": 5977,
+  "written": 1072,
+  "path": "work/snapshots/2026-11-15/cap-20261115T042556Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261115T042557Z-0f2382", "mode": "reprice_only", "fixtures": 26, "contract_sides": 2436, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.869, "price_changes_vs_previous": 68}
+[dispatch] holding 8.2 min (next window opens in 441.3 min)
+[dispatch] holding 0.5 min (next window opens in 433.1 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261115T044100Z",
+  "complete": true,
+  "discovered": 5978,
+  "written": 1027,
+  "path": "work/snapshots/2026-11-15/cap-20261115T044100Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261115T044101Z-1db9e6", "mode": "reprice_only", "fixtures": 26, "contract_sides": 2436, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 1.073, "price_changes_vs_previous": 108}
+[dispatch] holding 9.2 min (next window opens in 426.7 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261115T045600Z",
+  "complete": true,
+  "discovered": 5978,
+  "written": 981,
+  "path": "work/snapshots/2026-11-15/cap-20261115T045600Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261115T045600Z-296703", "mode": "reprice_only", "fixtures": 26, "contract_sides": 2436, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.869, "price_changes_vs_previous": 122}
+[dispatch] holding 1.5 min (next window opens in 411.8 min)
+{
+ "batches": 6,
+ "horizons_delivered": 8,
+ "missed_states": {
+  "MISSED_EXECUTION_FAILURE": 4,
+  "MISSED_BEFORE_WAKE": 4
+ },
+ "paid_calls": 0,
+ "credits_spent": 0,
+ "end_reason": "link_time_limit",
+ "chain_continue": true,
+ "delivered_total": 3890,
+ "missed_total": 503,
+ "delivery_rate_total": 0.8854996585476895
+}
