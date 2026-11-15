@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261115T002838Z-6dc818` · generated 2026-11-15T00:28:38.574924Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261115T003213Z-0f49ab` · generated 2026-11-15T00:32:13.982163Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-15T00:25:05.638621Z (CURRENT at publish; CURRENT until 2026-11-15T00:45:05.638621Z, STALE after 2026-11-15T00:55:05.638621Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-15T00:28:29.276977Z (CURRENT at publish; CURRENT until 2026-11-15T00:48:29.276977Z, STALE after 2026-11-15T00:58:29.276977Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-15T00:13:41.791925Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.05s
+model board generated 2026-11-15T00:13:41.791925Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.78s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -48,14 +48,12 @@ model board generated 2026-11-15T00:13:41.791925Z · simulations this update: 0 
 
 ```
 action_EXCLUDED_BY_GATE: 84
-action_NO_EDGE: 1999
-action_NO_QUOTE: 367
+action_NO_EDGE: 1998
+action_NO_QUOTE: 368
 contract_sides: 2450
 fixtures: 26
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
-
-Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
