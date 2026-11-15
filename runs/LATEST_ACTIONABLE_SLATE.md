@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261115T222950Z-5f9821` · generated 2026-11-15T22:29:50.336298Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261115T223541Z-23187b` · generated 2026-11-15T22:35:41.062726Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-15T22:26:27.217158Z (CURRENT at publish; CURRENT until 2026-11-15T22:46:27.217158Z, STALE after 2026-11-15T22:56:27.217158Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-15T22:32:07.588137Z (CURRENT at publish; CURRENT until 2026-11-15T22:52:07.588137Z, STALE after 2026-11-15T23:02:07.588137Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-15T21:59:56.612060Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.03s
+model board generated 2026-11-15T22:35:37.219009Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.86s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-15T21:59:56.612060Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-15T23:00:00Z | Panama vs Curaçao (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 25 | 0 |
+| 2026-11-15T23:00:00Z | Panama vs Curaçao (concacaf.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 25 | 0 |
 | 2026-11-16T15:00:00Z | Faroe Islands vs Moldova (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-16T15:00:00Z | Kazakhstan vs Slovakia (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-16T17:00:00Z | Estonia vs Bulgaria (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
@@ -55,8 +55,8 @@ model board generated 2026-11-15T21:59:56.612060Z · simulations this update: 0 
 
 ```
 action_EXCLUDED_BY_GATE: 126
-action_NO_EDGE: 2224
-action_NO_QUOTE: 372
+action_NO_EDGE: 2229
+action_NO_QUOTE: 367
 contract_sides: 2722
 fixtures: 33
 fixtures_model_invalidated: 0
