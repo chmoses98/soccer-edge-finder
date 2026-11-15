@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-15T16:30:04.783466+00:00",
+  "as_of": "2026-11-15T18:28:05.233616+00:00",
   "cells": [
     {
       "cell": {
@@ -180,7 +180,7 @@
         "market_family": "exact_score",
         "model_family": "data_only.world_sim_v2.intl_pool"
       },
-      "due": 2580,
+      "due": 2880,
       "failed_gates": [
         "integrity:missing_close_rate",
         "clv:min_selected_sides",
@@ -195,11 +195,11 @@
         "liquidity:no_depth_data"
       ],
       "metrics": {
-        "ece": 0.001140125968992248,
+        "ece": 0.0019670267361111124,
         "fixtures": 0,
-        "interval_coverage_80": 0.9984496124031008,
-        "log_loss_kalshi_mid": 0.2391678484700092,
-        "log_loss_model": 0.12194826911073338,
+        "interval_coverage_80": 0.9986111111111111,
+        "log_loss_kalshi_mid": 0.23433178626613405,
+        "log_loss_model": 0.12415025663890439,
         "missing_close_rate": 1.0,
         "selected_sides": 0,
         "settlement_rate": 1.0,
@@ -207,7 +207,7 @@
         "true_close_share": 0.0
       },
       "n_failed_gates": 11,
-      "settled": 2580,
+      "settled": 2880,
       "verdict": "NOT_ELIGIBLE"
     },
     {
@@ -250,43 +250,6 @@
       },
       "n_failed_gates": 11,
       "settled": 1933,
-      "verdict": "NOT_ELIGIBLE"
-    },
-    {
-      "cell": {
-        "competition_group": "international",
-        "horizon_bucket": "far",
-        "market_family": "total_goals",
-        "model_family": "data_only.world_sim_v2.intl_pool"
-      },
-      "due": 918,
-      "failed_gates": [
-        "integrity:missing_close_rate",
-        "clv:min_selected_sides",
-        "clv:min_fixtures",
-        "clv:lower_bound_not_positive",
-        "clv:mean_below_1pt",
-        "clv:sign_not_stable",
-        "kalshi:no_close_observations",
-        "prediction:worse_than_kalshi_mid",
-        "prediction:no_reference_sample",
-        "prediction:ece",
-        "liquidity:no_depth_data"
-      ],
-      "metrics": {
-        "ece": 0.0935516176470588,
-        "fixtures": 0,
-        "interval_coverage_80": 0.8638344226579521,
-        "log_loss_kalshi_mid": 0.48604956952311495,
-        "log_loss_model": 0.5666587857233895,
-        "missing_close_rate": 0.9771241830065359,
-        "selected_sides": 0,
-        "settlement_rate": 1.0,
-        "sharp_reference_available": true,
-        "true_close_share": 0.8571428571428571
-      },
-      "n_failed_gates": 11,
-      "settled": 918,
       "verdict": "NOT_ELIGIBLE"
     },
     {
@@ -386,7 +349,7 @@
         "market_family": "total_goals",
         "model_family": "data_only.world_sim_v2.intl_pool"
       },
-      "due": 492,
+      "due": 510,
       "failed_gates": [
         "integrity:missing_close_rate",
         "clv:min_selected_sides",
@@ -401,19 +364,19 @@
         "liquidity:no_depth_data"
       ],
       "metrics": {
-        "ece": 0.10712672967479672,
+        "ece": 0.1127179843137255,
         "fixtures": 0,
-        "interval_coverage_80": 0.8536585365853658,
-        "log_loss_kalshi_mid": 0.4770216773373453,
-        "log_loss_model": 0.6081604568091958,
-        "missing_close_rate": 0.9857723577235772,
+        "interval_coverage_80": 0.8509803921568627,
+        "log_loss_kalshi_mid": 0.48526173182499066,
+        "log_loss_model": 0.6110484387337511,
+        "missing_close_rate": 0.9823529411764705,
         "selected_sides": 0,
         "settlement_rate": 1.0,
         "sharp_reference_available": true,
-        "true_close_share": 0.8571428571428571
+        "true_close_share": 0.8888888888888888
       },
       "n_failed_gates": 11,
-      "settled": 492,
+      "settled": 510,
       "verdict": "NOT_ELIGIBLE"
     },
     {
@@ -1627,7 +1590,7 @@
         "market_family": "exact_score",
         "model_family": "data_only.world_sim_v2.intl_pool"
       },
-      "due": 1230,
+      "due": 1320,
       "failed_gates": [
         "integrity:missing_close_rate",
         "clv:min_selected_sides",
@@ -1643,11 +1606,11 @@
         "liquidity:no_depth_data"
       ],
       "metrics": {
-        "ece": 0.005696153658536585,
+        "ece": 0.005375795454545457,
         "fixtures": 0,
-        "interval_coverage_80": 0.9991869918699187,
-        "log_loss_kalshi_mid": 0.19735481345089131,
-        "log_loss_model": 0.1184143817703148,
+        "interval_coverage_80": 0.9992424242424243,
+        "log_loss_kalshi_mid": 0.19163926475722148,
+        "log_loss_model": 0.12118061805666938,
         "missing_close_rate": 1.0,
         "selected_sides": 0,
         "settlement_rate": 1.0,
@@ -1655,7 +1618,45 @@
         "true_close_share": 0.0
       },
       "n_failed_gates": 12,
-      "settled": 1230,
+      "settled": 1320,
+      "verdict": "NOT_ELIGIBLE"
+    },
+    {
+      "cell": {
+        "competition_group": "international",
+        "horizon_bucket": "far",
+        "market_family": "total_goals",
+        "model_family": "data_only.world_sim_v2.intl_pool"
+      },
+      "due": 978,
+      "failed_gates": [
+        "integrity:missing_close_rate",
+        "clv:min_selected_sides",
+        "clv:min_fixtures",
+        "clv:lower_bound_not_positive",
+        "clv:mean_below_1pt",
+        "clv:sign_not_stable",
+        "kalshi:no_close_observations",
+        "prediction:worse_than_kalshi_mid",
+        "prediction:no_reference_sample",
+        "prediction:ece",
+        "uncertainty:coverage_outside_band",
+        "liquidity:no_depth_data"
+      ],
+      "metrics": {
+        "ece": 0.09742234560327194,
+        "fixtures": 0,
+        "interval_coverage_80": 0.9161554192229039,
+        "log_loss_kalshi_mid": 0.5068777326900757,
+        "log_loss_model": 0.573230337055731,
+        "missing_close_rate": 0.9734151329243353,
+        "selected_sides": 0,
+        "settlement_rate": 1.0,
+        "sharp_reference_available": true,
+        "true_close_share": 0.8846153846153846
+      },
+      "n_failed_gates": 12,
+      "settled": 978,
       "verdict": "NOT_ELIGIBLE"
     },
     {
@@ -1751,7 +1752,7 @@
         "market_family": "team_total",
         "model_family": "data_only.world_sim_v2.intl_pool"
       },
-      "due": 516,
+      "due": 576,
       "failed_gates": [
         "integrity:missing_close_rate",
         "clv:min_selected_sides",
@@ -1767,11 +1768,11 @@
         "liquidity:no_depth_data"
       ],
       "metrics": {
-        "ece": 0.08879020155038758,
+        "ece": 0.0739329114583333,
         "fixtures": 0,
-        "interval_coverage_80": 0.8430232558139535,
-        "log_loss_kalshi_mid": 0.48387156775695567,
-        "log_loss_model": 0.5129796238104317,
+        "interval_coverage_80": 0.8506944444444444,
+        "log_loss_kalshi_mid": 0.5053026363253907,
+        "log_loss_model": 0.5272525564954572,
         "missing_close_rate": 1.0,
         "selected_sides": 0,
         "settlement_rate": 1.0,
@@ -1779,7 +1780,7 @@
         "true_close_share": 0.0
       },
       "n_failed_gates": 12,
-      "settled": 516,
+      "settled": 576,
       "verdict": "NOT_ELIGIBLE"
     },
     {
@@ -1789,7 +1790,7 @@
         "market_family": "match_result_3way",
         "model_family": "data_only.world_sim_v2.intl_pool"
       },
-      "due": 459,
+      "due": 489,
       "failed_gates": [
         "integrity:missing_close_rate",
         "clv:min_selected_sides",
@@ -1805,19 +1806,19 @@
         "liquidity:no_depth_data"
       ],
       "metrics": {
-        "ece": 0.07975380610021787,
+        "ece": 0.05699471779141107,
         "fixtures": 0,
-        "interval_coverage_80": 0.9673202614379085,
-        "log_loss_kalshi_mid": 0.47177140183532057,
-        "log_loss_model": 0.5944267429050847,
-        "missing_close_rate": 0.4575163398692811,
+        "interval_coverage_80": 0.9693251533742331,
+        "log_loss_kalshi_mid": 0.4809237485991618,
+        "log_loss_model": 0.6016223408030787,
+        "missing_close_rate": 0.42944785276073616,
         "selected_sides": 0,
         "settlement_rate": 1.0,
         "sharp_reference_available": true,
         "true_close_share": 1.0
       },
       "n_failed_gates": 12,
-      "settled": 459,
+      "settled": 489,
       "verdict": "NOT_ELIGIBLE"
     },
     {
@@ -1875,7 +1876,7 @@
         "market_family": "first_half_result",
         "model_family": "data_only.world_sim_v2.intl_pool"
       },
-      "due": 273,
+      "due": 303,
       "failed_gates": [
         "integrity:missing_close_rate",
         "clv:min_selected_sides",
@@ -1891,11 +1892,11 @@
         "liquidity:no_depth_data"
       ],
       "metrics": {
-        "ece": 0.034428205128205096,
+        "ece": 0.024611419141914226,
         "fixtures": 0,
-        "interval_coverage_80": 0.9560439560439561,
-        "log_loss_kalshi_mid": 0.572420201098629,
-        "log_loss_model": 0.6111520630872821,
+        "interval_coverage_80": 0.9603960396039604,
+        "log_loss_kalshi_mid": 0.5796595997571032,
+        "log_loss_model": 0.6131238396442618,
         "missing_close_rate": 1.0,
         "selected_sides": 0,
         "settlement_rate": 1.0,
@@ -1903,7 +1904,7 @@
         "true_close_share": 0.0
       },
       "n_failed_gates": 12,
-      "settled": 273,
+      "settled": 303,
       "verdict": "NOT_ELIGIBLE"
     },
     {
@@ -1913,7 +1914,7 @@
         "market_family": "team_total",
         "model_family": "data_only.world_sim_v2.intl_pool"
       },
-      "due": 246,
+      "due": 264,
       "failed_gates": [
         "integrity:missing_close_rate",
         "clv:min_selected_sides",
@@ -1929,11 +1930,11 @@
         "liquidity:no_depth_data"
       ],
       "metrics": {
-        "ece": 0.070937837398374,
+        "ece": 0.05549962121212123,
         "fixtures": 0,
-        "interval_coverage_80": 0.8536585365853658,
-        "log_loss_kalshi_mid": 0.44194244033004965,
-        "log_loss_model": 0.4707748710253887,
+        "interval_coverage_80": 0.8598484848484849,
+        "log_loss_kalshi_mid": 0.4529445717551149,
+        "log_loss_model": 0.4864842403970731,
         "missing_close_rate": 1.0,
         "selected_sides": 0,
         "settlement_rate": 1.0,
@@ -1941,7 +1942,7 @@
         "true_close_share": 0.0
       },
       "n_failed_gates": 12,
-      "settled": 246,
+      "settled": 264,
       "verdict": "NOT_ELIGIBLE"
     },
     {
@@ -1951,7 +1952,7 @@
         "market_family": "match_result_3way",
         "model_family": "data_only.world_sim_v2.intl_pool"
       },
-      "due": 243,
+      "due": 252,
       "failed_gates": [
         "integrity:missing_close_rate",
         "clv:min_selected_sides",
@@ -1967,19 +1968,19 @@
         "liquidity:no_depth_data"
       ],
       "metrics": {
-        "ece": 0.08662558024691358,
+        "ece": 0.07296469841269841,
         "fixtures": 0,
-        "interval_coverage_80": 0.9629629629629629,
-        "log_loss_kalshi_mid": 0.4620568020029892,
-        "log_loss_model": 0.6009803907100926,
-        "missing_close_rate": 0.5061728395061729,
+        "interval_coverage_80": 0.9642857142857143,
+        "log_loss_kalshi_mid": 0.46603103443422067,
+        "log_loss_model": 0.6049954410289311,
+        "missing_close_rate": 0.48809523809523814,
         "selected_sides": 0,
         "settlement_rate": 1.0,
         "sharp_reference_available": true,
         "true_close_share": 1.0
       },
       "n_failed_gates": 12,
-      "settled": 243,
+      "settled": 252,
       "verdict": "NOT_ELIGIBLE"
     },
     {
@@ -1989,7 +1990,7 @@
         "market_family": "first_half_total",
         "model_family": "data_only.world_sim_v2.intl_pool"
       },
-      "due": 201,
+      "due": 210,
       "failed_gates": [
         "integrity:missing_close_rate",
         "clv:min_selected_sides",
@@ -2005,11 +2006,11 @@
         "liquidity:no_depth_data"
       ],
       "metrics": {
-        "ece": 0.07817860696517416,
+        "ece": 0.07535276190476195,
         "fixtures": 0,
-        "interval_coverage_80": 0.8756218905472637,
-        "log_loss_kalshi_mid": 0.549896114765628,
-        "log_loss_model": 0.607898219580275,
+        "interval_coverage_80": 0.8761904761904762,
+        "log_loss_kalshi_mid": 0.5413994337224219,
+        "log_loss_model": 0.5969619280026452,
         "missing_close_rate": 1.0,
         "selected_sides": 0,
         "settlement_rate": 1.0,
@@ -2017,7 +2018,45 @@
         "true_close_share": 0.0
       },
       "n_failed_gates": 12,
-      "settled": 201,
+      "settled": 210,
+      "verdict": "NOT_ELIGIBLE"
+    },
+    {
+      "cell": {
+        "competition_group": "international",
+        "horizon_bucket": "far",
+        "market_family": "first_to_score",
+        "model_family": "data_only.world_sim_v2.intl_pool"
+      },
+      "due": 148,
+      "failed_gates": [
+        "integrity:missing_close_rate",
+        "clv:min_selected_sides",
+        "clv:min_fixtures",
+        "clv:true_close_share",
+        "clv:lower_bound_not_positive",
+        "clv:mean_below_1pt",
+        "clv:sign_not_stable",
+        "kalshi:no_close_observations",
+        "prediction:worse_than_kalshi_mid",
+        "prediction:no_reference_sample",
+        "prediction:ece",
+        "liquidity:no_depth_data"
+      ],
+      "metrics": {
+        "ece": 0.1032583108108108,
+        "fixtures": 0,
+        "interval_coverage_80": 0.8716216216216216,
+        "log_loss_kalshi_mid": 0.5315889553668947,
+        "log_loss_model": 0.6171713756611193,
+        "missing_close_rate": 1.0,
+        "selected_sides": 0,
+        "settlement_rate": 1.0,
+        "sharp_reference_available": true,
+        "true_close_share": 0.0
+      },
+      "n_failed_gates": 12,
+      "settled": 148,
       "verdict": "NOT_ELIGIBLE"
     },
     {
@@ -2071,7 +2110,7 @@
         "market_family": "first_half_handicap",
         "model_family": "data_only.world_sim_v2.intl_pool"
       },
-      "due": 134,
+      "due": 140,
       "failed_gates": [
         "integrity:missing_close_rate",
         "clv:min_selected_sides",
@@ -2087,11 +2126,11 @@
         "liquidity:no_depth_data"
       ],
       "metrics": {
-        "ece": 0.022634776119402986,
+        "ece": 0.02149871428571428,
         "fixtures": 0,
-        "interval_coverage_80": 0.9925373134328358,
-        "log_loss_kalshi_mid": 0.28417106684994886,
-        "log_loss_model": 0.27089714482290445,
+        "interval_coverage_80": 0.9928571428571429,
+        "log_loss_kalshi_mid": 0.2729454587970467,
+        "log_loss_model": 0.2627104458011674,
         "missing_close_rate": 1.0,
         "selected_sides": 0,
         "settlement_rate": 1.0,
@@ -2099,7 +2138,7 @@
         "true_close_share": 0.0
       },
       "n_failed_gates": 12,
-      "settled": 134,
+      "settled": 140,
       "verdict": "NOT_ELIGIBLE"
     },
     {
@@ -2176,6 +2215,44 @@
       },
       "n_failed_gates": 12,
       "settled": 126,
+      "verdict": "NOT_ELIGIBLE"
+    },
+    {
+      "cell": {
+        "competition_group": "international",
+        "horizon_bucket": "far",
+        "market_family": "first_half_btts",
+        "model_family": "data_only.world_sim_v2.intl_pool"
+      },
+      "due": 101,
+      "failed_gates": [
+        "integrity:missing_close_rate",
+        "clv:min_selected_sides",
+        "clv:min_fixtures",
+        "clv:true_close_share",
+        "clv:lower_bound_not_positive",
+        "clv:mean_below_1pt",
+        "clv:sign_not_stable",
+        "kalshi:no_close_observations",
+        "prediction:no_reference_sample",
+        "prediction:ece",
+        "uncertainty:coverage_outside_band",
+        "liquidity:no_depth_data"
+      ],
+      "metrics": {
+        "ece": 0.05396237623762376,
+        "fixtures": 0,
+        "interval_coverage_80": 1.0,
+        "log_loss_kalshi_mid": 0.39464946475869483,
+        "log_loss_model": 0.3613862995126861,
+        "missing_close_rate": 1.0,
+        "selected_sides": 0,
+        "settlement_rate": 1.0,
+        "sharp_reference_available": true,
+        "true_close_share": 0.0
+      },
+      "n_failed_gates": 12,
+      "settled": 101,
       "verdict": "NOT_ELIGIBLE"
     },
     {
@@ -2262,44 +2339,6 @@
     },
     {
       "cell": {
-        "competition_group": "international",
-        "horizon_bucket": "far",
-        "market_family": "first_half_btts",
-        "model_family": "data_only.world_sim_v2.intl_pool"
-      },
-      "due": 91,
-      "failed_gates": [
-        "integrity:missing_close_rate",
-        "clv:min_selected_sides",
-        "clv:min_fixtures",
-        "clv:true_close_share",
-        "clv:lower_bound_not_positive",
-        "clv:mean_below_1pt",
-        "clv:sign_not_stable",
-        "kalshi:no_close_observations",
-        "prediction:no_reference_sample",
-        "prediction:ece",
-        "uncertainty:coverage_outside_band",
-        "liquidity:no_depth_data"
-      ],
-      "metrics": {
-        "ece": 0.04212494505494506,
-        "fixtures": 0,
-        "interval_coverage_80": 1.0,
-        "log_loss_kalshi_mid": 0.3934069942150377,
-        "log_loss_model": 0.38167580197134887,
-        "missing_close_rate": 1.0,
-        "selected_sides": 0,
-        "settlement_rate": 1.0,
-        "sharp_reference_available": true,
-        "true_close_share": 0.0
-      },
-      "n_failed_gates": 12,
-      "settled": 91,
-      "verdict": "NOT_ELIGIBLE"
-    },
-    {
-      "cell": {
         "competition_group": "americas",
         "horizon_bucket": "far",
         "market_family": "first_half_btts",
@@ -2343,7 +2382,7 @@
         "market_family": "first_to_score",
         "model_family": "data_only.world_sim_v2.intl_pool"
       },
-      "due": 70,
+      "due": 74,
       "failed_gates": [
         "integrity:missing_close_rate",
         "clv:min_selected_sides",
@@ -2359,11 +2398,11 @@
         "liquidity:no_depth_data"
       ],
       "metrics": {
-        "ece": 0.10054685714285712,
+        "ece": 0.11070459459459456,
         "fixtures": 0,
-        "interval_coverage_80": 0.8857142857142857,
-        "log_loss_kalshi_mid": 0.561510235507947,
-        "log_loss_model": 0.6482438053870453,
+        "interval_coverage_80": 0.8918918918918919,
+        "log_loss_kalshi_mid": 0.5651024404664121,
+        "log_loss_model": 0.6585548014813756,
         "missing_close_rate": 1.0,
         "selected_sides": 0,
         "settlement_rate": 1.0,
@@ -2371,7 +2410,7 @@
         "true_close_share": 0.0
       },
       "n_failed_gates": 12,
-      "settled": 70,
+      "settled": 74,
       "verdict": "NOT_ELIGIBLE"
     },
     {
@@ -2381,7 +2420,7 @@
         "market_family": "first_half_btts",
         "model_family": "data_only.world_sim_v2.intl_pool"
       },
-      "due": 67,
+      "due": 70,
       "failed_gates": [
         "integrity:missing_close_rate",
         "clv:min_selected_sides",
@@ -2397,11 +2436,11 @@
         "liquidity:no_depth_data"
       ],
       "metrics": {
-        "ece": 0.017319402985074638,
+        "ece": 0.009276857142857165,
         "fixtures": 0,
-        "interval_coverage_80": 0.9701492537313433,
-        "log_loss_kalshi_mid": 0.4206843542800021,
-        "log_loss_model": 0.4626615805816009,
+        "interval_coverage_80": 0.9714285714285714,
+        "log_loss_kalshi_mid": 0.4114475982208733,
+        "log_loss_model": 0.4508508931341463,
         "missing_close_rate": 1.0,
         "selected_sides": 0,
         "settlement_rate": 1.0,
@@ -2409,7 +2448,7 @@
         "true_close_share": 0.0
       },
       "n_failed_gates": 12,
-      "settled": 67,
+      "settled": 70,
       "verdict": "NOT_ELIGIBLE"
     },
     {
@@ -2796,7 +2835,7 @@
         "market_family": "handicap",
         "model_family": "data_only.world_sim_v2.intl_pool"
       },
-      "due": 612,
+      "due": 652,
       "failed_gates": [
         "integrity:missing_close_rate",
         "clv:min_selected_sides",
@@ -2813,11 +2852,11 @@
         "liquidity:no_depth_data"
       ],
       "metrics": {
-        "ece": 0.05018637091503267,
+        "ece": 0.05694089263803679,
         "fixtures": 0,
-        "interval_coverage_80": 0.9852941176470589,
-        "log_loss_kalshi_mid": 0.43176424056237134,
-        "log_loss_model": 0.4449040816131794,
+        "interval_coverage_80": 0.9861963190184049,
+        "log_loss_kalshi_mid": 0.4444424010197488,
+        "log_loss_model": 0.46395193820828257,
         "missing_close_rate": 1.0,
         "selected_sides": 0,
         "settlement_rate": 1.0,
@@ -2825,7 +2864,7 @@
         "true_close_share": 0.0
       },
       "n_failed_gates": 13,
-      "settled": 612,
+      "settled": 652,
       "verdict": "NOT_ELIGIBLE"
     },
     {
@@ -3015,7 +3054,7 @@
         "market_family": "handicap",
         "model_family": "data_only.world_sim_v2.intl_pool"
       },
-      "due": 330,
+      "due": 342,
       "failed_gates": [
         "integrity:missing_close_rate",
         "clv:min_selected_sides",
@@ -3032,11 +3071,11 @@
         "liquidity:no_depth_data"
       ],
       "metrics": {
-        "ece": 0.07479189090909091,
+        "ece": 0.08350609064327484,
         "fixtures": 0,
-        "interval_coverage_80": 0.5363636363636364,
-        "log_loss_kalshi_mid": 0.4226774894437101,
-        "log_loss_model": 0.5103550768368309,
+        "interval_coverage_80": 0.5409356725146199,
+        "log_loss_kalshi_mid": 0.4373659870930541,
+        "log_loss_model": 0.5262028102030734,
         "missing_close_rate": 1.0,
         "selected_sides": 0,
         "settlement_rate": 1.0,
@@ -3044,7 +3083,7 @@
         "true_close_share": 0.0
       },
       "n_failed_gates": 13,
-      "settled": 330,
+      "settled": 342,
       "verdict": "NOT_ELIGIBLE"
     },
     {
@@ -3054,7 +3093,7 @@
         "market_family": "first_half_total",
         "model_family": "data_only.world_sim_v2.intl_pool"
       },
-      "due": 273,
+      "due": 303,
       "failed_gates": [
         "integrity:missing_close_rate",
         "clv:min_selected_sides",
@@ -3071,11 +3110,11 @@
         "liquidity:no_depth_data"
       ],
       "metrics": {
-        "ece": 0.06660941391941393,
+        "ece": 0.060746600660065986,
         "fixtures": 0,
-        "interval_coverage_80": 0.989010989010989,
-        "log_loss_kalshi_mid": 0.5669183925825552,
-        "log_loss_model": 0.5909022270643757,
+        "interval_coverage_80": 0.9900990099009901,
+        "log_loss_kalshi_mid": 0.5567904107624354,
+        "log_loss_model": 0.5694221260725244,
         "missing_close_rate": 1.0,
         "selected_sides": 0,
         "settlement_rate": 1.0,
@@ -3083,7 +3122,7 @@
         "true_close_share": 0.0
       },
       "n_failed_gates": 13,
-      "settled": 273,
+      "settled": 303,
       "verdict": "NOT_ELIGIBLE"
     },
     {
@@ -3138,7 +3177,7 @@
         "market_family": "first_half_result",
         "model_family": "data_only.world_sim_v2.intl_pool"
       },
-      "due": 201,
+      "due": 210,
       "failed_gates": [
         "integrity:missing_close_rate",
         "clv:min_selected_sides",
@@ -3155,11 +3194,11 @@
         "liquidity:no_depth_data"
       ],
       "metrics": {
-        "ece": 0.11431492537313429,
+        "ece": 0.1126007619047619,
         "fixtures": 0,
-        "interval_coverage_80": 0.5422885572139303,
-        "log_loss_kalshi_mid": 0.5269423455147081,
-        "log_loss_model": 0.6503132734771992,
+        "interval_coverage_80": 0.5476190476190477,
+        "log_loss_kalshi_mid": 0.530343229334372,
+        "log_loss_model": 0.6520068181267001,
         "missing_close_rate": 1.0,
         "selected_sides": 0,
         "settlement_rate": 1.0,
@@ -3167,7 +3206,7 @@
         "true_close_share": 0.0
       },
       "n_failed_gates": 13,
-      "settled": 201,
+      "settled": 210,
       "verdict": "NOT_ELIGIBLE"
     },
     {
@@ -3177,7 +3216,7 @@
         "market_family": "first_half_handicap",
         "model_family": "data_only.world_sim_v2.intl_pool"
       },
-      "due": 182,
+      "due": 202,
       "failed_gates": [
         "integrity:missing_close_rate",
         "clv:min_selected_sides",
@@ -3194,11 +3233,11 @@
         "liquidity:no_depth_data"
       ],
       "metrics": {
-        "ece": 0.0535892857142857,
+        "ece": 0.04641143564356435,
         "fixtures": 0,
-        "interval_coverage_80": 0.9340659340659341,
-        "log_loss_kalshi_mid": 0.3967367581939253,
-        "log_loss_model": 0.31078207398608776,
+        "interval_coverage_80": 0.9405940594059405,
+        "log_loss_kalshi_mid": 0.37249503177348325,
+        "log_loss_model": 0.2876761507450097,
         "missing_close_rate": 1.0,
         "selected_sides": 0,
         "settlement_rate": 1.0,
@@ -3206,7 +3245,7 @@
         "true_close_share": 0.0
       },
       "n_failed_gates": 13,
-      "settled": 182,
+      "settled": 202,
       "verdict": "NOT_ELIGIBLE"
     },
     {
@@ -3255,7 +3294,7 @@
         "market_family": "btts",
         "model_family": "data_only.world_sim_v2.intl_pool"
       },
-      "due": 153,
+      "due": 163,
       "failed_gates": [
         "integrity:missing_close_rate",
         "clv:min_selected_sides",
@@ -3272,11 +3311,11 @@
         "liquidity:no_depth_data"
       ],
       "metrics": {
-        "ece": 0.08305460784313722,
+        "ece": 0.08120101840490802,
         "fixtures": 0,
-        "interval_coverage_80": 0.9738562091503268,
-        "log_loss_kalshi_mid": 0.6617201706910489,
-        "log_loss_model": 0.6777443467724504,
+        "interval_coverage_80": 0.9754601226993865,
+        "log_loss_kalshi_mid": 0.663944158129251,
+        "log_loss_model": 0.673778706228657,
         "missing_close_rate": 1.0,
         "selected_sides": 0,
         "settlement_rate": 1.0,
@@ -3284,7 +3323,7 @@
         "true_close_share": 0.0
       },
       "n_failed_gates": 13,
-      "settled": 153,
+      "settled": 163,
       "verdict": "NOT_ELIGIBLE"
     },
     {
@@ -3330,45 +3369,6 @@
       },
       "n_failed_gates": 13,
       "settled": 141,
-      "verdict": "NOT_ELIGIBLE"
-    },
-    {
-      "cell": {
-        "competition_group": "international",
-        "horizon_bucket": "far",
-        "market_family": "first_to_score",
-        "model_family": "data_only.world_sim_v2.intl_pool"
-      },
-      "due": 138,
-      "failed_gates": [
-        "integrity:missing_close_rate",
-        "clv:min_selected_sides",
-        "clv:min_fixtures",
-        "clv:true_close_share",
-        "clv:lower_bound_not_positive",
-        "clv:mean_below_1pt",
-        "clv:sign_not_stable",
-        "kalshi:no_close_observations",
-        "prediction:worse_than_kalshi_mid",
-        "prediction:no_reference_sample",
-        "prediction:ece",
-        "uncertainty:coverage_outside_band",
-        "liquidity:no_depth_data"
-      ],
-      "metrics": {
-        "ece": 0.10919659420289853,
-        "fixtures": 0,
-        "interval_coverage_80": 0.6521739130434783,
-        "log_loss_kalshi_mid": 0.5267844558555695,
-        "log_loss_model": 0.6006320133124108,
-        "missing_close_rate": 1.0,
-        "selected_sides": 0,
-        "settlement_rate": 1.0,
-        "sharp_reference_available": true,
-        "true_close_share": 0.0
-      },
-      "n_failed_gates": 13,
-      "settled": 138,
       "verdict": "NOT_ELIGIBLE"
     },
     {
@@ -3506,7 +3506,7 @@
         "market_family": "btts",
         "model_family": "data_only.world_sim_v2.intl_pool"
       },
-      "due": 81,
+      "due": 84,
       "failed_gates": [
         "integrity:missing_close_rate",
         "clv:min_selected_sides",
@@ -3523,11 +3523,11 @@
         "liquidity:no_depth_data"
       ],
       "metrics": {
-        "ece": 0.12878650617283938,
+        "ece": 0.13156384523809514,
         "fixtures": 0,
-        "interval_coverage_80": 0.9753086419753086,
-        "log_loss_kalshi_mid": 0.649341328820228,
-        "log_loss_model": 0.6819428137661755,
+        "interval_coverage_80": 0.9761904761904762,
+        "log_loss_kalshi_mid": 0.647021008127285,
+        "log_loss_model": 0.6808018017167126,
         "missing_close_rate": 1.0,
         "selected_sides": 0,
         "settlement_rate": 1.0,
@@ -3535,7 +3535,7 @@
         "true_close_share": 0.0
       },
       "n_failed_gates": 13,
-      "settled": 81,
+      "settled": 84,
       "verdict": "NOT_ELIGIBLE"
     },
     {
