@@ -1,10 +1,10 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 634,
   "PINNACLE_VALID_CLOSE": 98,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 635,
+  "MISSED_DISPATCHER_CLOSE": 100,
+  "NO_SPORT_KEY": 19,
   "CLOSE_BLOCKED_BUDGET": 16,
-  "MISSED_DISPATCHER_CLOSE": 98,
-  "NO_SPORT_KEY": 18,
   "PINNACLE_QUOTED_NOTHING": 3
  },
  "fixtures": {
@@ -513,6 +513,11 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261103T221501Z"
   },
+  "fx:bra.serie_a:2026:bra.chapecoense:bra.vasco": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
+  },
   "fx:bra.serie_a:2026:bra.corinthians:bra.mirassol": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -843,6 +848,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:concacaf.nations_league:2026-27:nat.jam:nat.mex": {
+   "state": "NO_SPORT_KEY",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261115T004502Z"
+  },
   "fx:concacaf.nations_league:2026-27:nat.lca:nat.ber": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -914,6 +924,11 @@
    "batch_id": null
   },
   "fx:concacaf.nations_league:2026-27:nat.vgb:nat.msr": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:concacaf.nations_league:2026-27:nat.vin:nat.blz": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
@@ -3466,6 +3481,11 @@
   "fx:mex.liga_mx:2026:mex.queretaro:mex.cruz_azul": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:mex.liga_mx:2026:mex.queretaro:mex.monterrey": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
    "batch_id": null
   },
   "fx:mex.liga_mx:2026:mex.queretaro:mex.puebla": {
