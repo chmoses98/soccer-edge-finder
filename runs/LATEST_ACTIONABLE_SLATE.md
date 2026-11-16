@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261116T150126Z-a17b9f` · generated 2026-11-16T15:01:26.803084Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
+slate `slate-20261116T151619Z-a14fc9` · generated 2026-11-16T15:16:19.477901Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-16T14:57:55.875775Z (CURRENT at publish; CURRENT until 2026-11-16T15:17:55.875775Z, STALE after 2026-11-16T15:27:55.875775Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-16T15:12:55.912476Z (CURRENT at publish; CURRENT until 2026-11-16T15:32:55.912476Z, STALE after 2026-11-16T15:42:55.912476Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-16T14:35:28.675758Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.54s
+model board generated 2026-11-16T14:35:28.675758Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.71s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -42,12 +42,12 @@ model board generated 2026-11-16T14:35:28.675758Z · simulations this update: 0 
 | 2026-11-17T19:45:00Z | Poland vs Sweden (uefa.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-17T19:45:00Z | Ukraine vs Georgia (uefa.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-17T19:45:00Z | Wales vs Portugal (uefa.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-17T23:00:00Z | Argentina vs Costa Rica (fifa.friendly) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-11-17T23:30:00Z | Uruguay vs Dominican Republic (fifa.friendly) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-11-18T00:00:00Z | United States vs Haiti (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 16 | 0 |
-| 2026-11-18T01:00:00Z | El Salvador vs St. Martin (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 16 | 0 |
-| 2026-11-18T02:30:00Z | Mexico vs Jamaica (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 16 | 0 |
-| 2026-11-18T03:00:00Z | Nicaragua vs Montserrat (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 16 | 0 |
+| 2026-11-17T23:00:00Z | Argentina vs Costa Rica (fifa.friendly) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-17T23:30:00Z | Uruguay vs Dominican Republic (fifa.friendly) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-18T00:00:00Z | United States vs Haiti (concacaf.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 16 | 0 |
+| 2026-11-18T01:00:00Z | El Salvador vs St. Martin (concacaf.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 16 | 0 |
+| 2026-11-18T02:30:00Z | Mexico vs Jamaica (concacaf.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 16 | 0 |
+| 2026-11-18T03:00:00Z | Nicaragua vs Montserrat (concacaf.nations_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 16 | 0 |
 
 ## Candidates on CURRENT prices (0; RESEARCH_ONLY = analysis, never a bet)
 
@@ -57,8 +57,8 @@ model board generated 2026-11-16T14:35:28.675758Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 179
-action_NO_EDGE: 2124
+action_EXCLUDED_BY_GATE: 183
+action_NO_EDGE: 2120
 action_NO_QUOTE: 309
 contract_sides: 2612
 fixtures: 36
