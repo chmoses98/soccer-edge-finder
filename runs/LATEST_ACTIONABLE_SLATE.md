@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261116T222805Z-a4aef9` · generated 2026-11-16T22:28:05.061142Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261116T224309Z-fcb70b` · generated 2026-11-16T22:43:09.857743Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-16T22:24:45.762746Z (CURRENT at publish; CURRENT until 2026-11-16T22:44:45.762746Z, STALE after 2026-11-16T22:54:45.762746Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-16T22:39:45.785121Z (CURRENT at publish; CURRENT until 2026-11-16T22:59:45.785121Z, STALE after 2026-11-16T23:09:45.785121Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-16T17:15:51.165310Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.55s
+model board generated 2026-11-16T22:43:07.833433Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.56s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -36,6 +36,7 @@ model board generated 2026-11-16T17:15:51.165310Z · simulations this update: 0 
 | 2026-11-18T01:00:00Z | El Salvador vs St. Martin (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 16 | 0 |
 | 2026-11-18T02:30:00Z | Mexico vs Jamaica (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 16 | 0 |
 | 2026-11-18T03:00:00Z | Nicaragua vs Montserrat (concacaf.nations_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 16 | 0 |
+| 2026-11-18T22:30:00Z | Coritiba vs Santos (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
 ## Candidates on CURRENT prices (0; RESEARCH_ONLY = analysis, never a bet)
 
@@ -46,10 +47,10 @@ model board generated 2026-11-16T17:15:51.165310Z · simulations this update: 0 
 
 ```
 action_EXCLUDED_BY_GATE: 143
-action_NO_EDGE: 1265
-action_NO_QUOTE: 152
-contract_sides: 1560
-fixtures: 24
+action_NO_EDGE: 1292
+action_NO_QUOTE: 153
+contract_sides: 1588
+fixtures: 25
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
