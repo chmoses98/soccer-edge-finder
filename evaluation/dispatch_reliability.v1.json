@@ -1,23 +1,23 @@
 {
  "schema": "dispatch_reliability_v1",
- "generated_at": "2026-11-16T08:16:26Z",
+ "generated_at": "2026-11-16T13:18:14Z",
  "cadence": {
   "external_heartbeat_minutes": null,
   "github_backup_minutes": 60
  },
  "last_wake": {
-  "started_at": "2026-11-16T07:23:25Z",
-  "trigger_source": "workflow-run",
+  "started_at": "2026-11-16T11:11:31Z",
+  "trigger_source": "github-schedule-backup",
   "status": "OK",
   "no_action_reason": null
  },
  "last_24h": {
   "span_hours": 24.0,
-  "heartbeats_actual": 19,
+  "heartbeats_actual": 17,
   "heartbeats_by_source": {
    "chain": 4,
    "github-schedule-backup": 4,
-   "workflow-run": 11
+   "workflow-run": 9
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -29,28 +29,28 @@
   "github_backup_success": 0.16666666666666666,
   "capture_runs": 3,
   "capture_runs_failed": 0,
-  "paid_calls": 5,
-  "credits_spent": 15,
+  "paid_calls": 2,
+  "credits_spent": 6,
   "fixtures_with_horizons": 9,
-  "horizons_eligible": 45,
-  "horizons_delivered": 40,
+  "horizons_eligible": 43,
+  "horizons_delivered": 38,
   "horizons_missed": 5,
   "horizon_states": {
-   "DELIVERED": 40,
+   "DELIVERED": 38,
    "MISSED_BEFORE_WAKE": 5
   },
-  "capture_success_rate": 0.8888888888888888,
+  "capture_success_rate": 0.8837209302325582,
   "close_fixtures_eligible": 9,
   "close_fixtures_delivered": 7,
   "close_success_rate": 0.7777777777777778
  },
  "last_7d": {
   "span_hours": 168.0,
-  "heartbeats_actual": 122,
+  "heartbeats_actual": 123,
   "heartbeats_by_source": {
-   "chain": 26,
-   "github-schedule-backup": 24,
-   "workflow-run": 72
+   "chain": 27,
+   "github-schedule-backup": 25,
+   "workflow-run": 71
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -58,8 +58,8 @@
   "external_heartbeats_actual": 0,
   "external_trigger_success": null,
   "github_backup_expected": 168,
-  "github_backup_actual": 24,
-  "github_backup_success": 0.14285714285714285,
+  "github_backup_actual": 25,
+  "github_backup_success": 0.1488095238095238,
   "capture_runs": 28,
   "capture_runs_failed": 0,
   "paid_calls": 21,
