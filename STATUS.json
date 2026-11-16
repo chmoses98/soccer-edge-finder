@@ -1,14 +1,11 @@
 {
-  "as_of": "2026-11-16T12:58:49.180044+00:00",
+  "as_of": "2026-11-16T13:58:57.558705+00:00",
   "events": 17,
   "events_skipped_unmapped": 0,
   "fixtures_mapped": 17,
   "health": {
-    "reasons": [
-      "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=4"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
     "concacaf.nations.league",
@@ -22,12 +19,12 @@
     "uefa.nations"
   ],
   "lineups": {
-    "captured": 17,
+    "captured": 0,
     "events": 17,
     "failures": [],
     "published_post": 0,
     "published_pre_kickoff": 0,
-    "unchanged": 0,
+    "unchanged": 17,
     "unpublished": 17
   },
   "map_proposals": {},
@@ -39,17 +36,13 @@
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 8,
+    "captured": 15,
     "events": 17,
-    "failures": [
-      "401861182: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=64.1355&longitude=-21.8954&hourly=t",
-      "401861184: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Kaunas&count=5&language=en&form",
-      "401861185: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Berlin&count=5&language=en&form"
-    ],
+    "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 2,
     "no_venue": 0,
-    "skipped": 4,
-    "stopped": "consecutive_failures"
+    "skipped": 0,
+    "stopped": null
   }
 }
