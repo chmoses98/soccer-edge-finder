@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261116T143548Z-e43d54` · generated 2026-11-16T14:35:48.858099Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
+slate `slate-20261116T144832Z-322bf2` · generated 2026-11-16T14:48:32.517344Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-16T14:31:55.792257Z (CURRENT at publish; CURRENT until 2026-11-16T14:51:55.792257Z, STALE after 2026-11-16T15:01:55.792257Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-16T14:45:00.088532Z (CURRENT at publish; CURRENT until 2026-11-16T15:05:00.088532Z, STALE after 2026-11-16T15:15:00.088532Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-16T14:35:28.675758Z · simulations this update: 2 · Odds API calls this update: 0 (credits 0) · reprice 1.69s
+model board generated 2026-11-16T14:35:28.675758Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 1.73s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,8 +12,8 @@ model board generated 2026-11-16T14:35:28.675758Z · simulations this update: 2 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-16T15:00:00Z | Faroe Islands vs Moldova (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
-| 2026-11-16T15:00:00Z | Kazakhstan vs Slovakia (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 61 | 1 |
+| 2026-11-16T15:00:00Z | Faroe Islands vs Moldova (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 61 | 1 |
+| 2026-11-16T15:00:00Z | Kazakhstan vs Slovakia (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 61 | 1 |
 | 2026-11-16T17:00:00Z | Estonia vs Bulgaria (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-16T17:00:00Z | Iceland vs Luxembourg (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-16T17:00:00Z | Lithuania vs Liechtenstein (uefa.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
@@ -60,8 +60,8 @@ model board generated 2026-11-16T14:35:28.675758Z · simulations this update: 2 
 
 ```
 action_EXCLUDED_BY_GATE: 179
-action_NO_EDGE: 2333
-action_NO_QUOTE: 344
+action_NO_EDGE: 2335
+action_NO_QUOTE: 342
 contract_sides: 2856
 fixtures: 38
 fixtures_model_invalidated: 0
