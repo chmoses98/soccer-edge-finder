@@ -1,23 +1,23 @@
 {
  "schema": "dispatch_reliability_v1",
- "generated_at": "2026-11-16T17:29:23Z",
+ "generated_at": "2026-11-16T19:45:50Z",
  "cadence": {
   "external_heartbeat_minutes": null,
   "github_backup_minutes": 60
  },
  "last_wake": {
-  "started_at": "2026-11-16T17:24:27Z",
+  "started_at": "2026-11-16T19:21:53Z",
   "trigger_source": "workflow-run",
   "status": "OK",
-  "no_action_reason": null
+  "no_action_reason": "CAPTURE_IN_PROGRESS"
  },
  "last_24h": {
   "span_hours": 24.0,
   "heartbeats_actual": 17,
   "heartbeats_by_source": {
    "chain": 4,
-   "github-schedule-backup": 4,
-   "workflow-run": 9
+   "github-schedule-backup": 3,
+   "workflow-run": 10
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -25,31 +25,31 @@
   "external_heartbeats_actual": 0,
   "external_trigger_success": null,
   "github_backup_expected": 24,
-  "github_backup_actual": 4,
-  "github_backup_success": 0.16666666666666666,
+  "github_backup_actual": 3,
+  "github_backup_success": 0.125,
   "capture_runs": 3,
   "capture_runs_failed": 0,
   "paid_calls": 4,
   "credits_spent": 12,
-  "fixtures_with_horizons": 11,
-  "horizons_eligible": 51,
-  "horizons_delivered": 50,
+  "fixtures_with_horizons": 15,
+  "horizons_eligible": 70,
+  "horizons_delivered": 69,
   "horizons_missed": 1,
   "horizon_states": {
-   "DELIVERED": 50,
+   "DELIVERED": 69,
    "MISSED_BEFORE_WAKE": 1
   },
-  "capture_success_rate": 0.9803921568627451,
-  "close_fixtures_eligible": 10,
-  "close_fixtures_delivered": 10,
+  "capture_success_rate": 0.9857142857142858,
+  "close_fixtures_eligible": 15,
+  "close_fixtures_delivered": 15,
   "close_success_rate": 1.0
  },
  "last_7d": {
   "span_hours": 168.0,
   "heartbeats_actual": 124,
   "heartbeats_by_source": {
-   "chain": 27,
-   "github-schedule-backup": 25,
+   "chain": 28,
+   "github-schedule-backup": 24,
    "workflow-run": 72
   },
   "heartbeats_failed": 0,
@@ -58,25 +58,25 @@
   "external_heartbeats_actual": 0,
   "external_trigger_success": null,
   "github_backup_expected": 168,
-  "github_backup_actual": 25,
-  "github_backup_success": 0.1488095238095238,
-  "capture_runs": 28,
+  "github_backup_actual": 24,
+  "github_backup_success": 0.14285714285714285,
+  "capture_runs": 27,
   "capture_runs_failed": 0,
   "paid_calls": 25,
   "credits_spent": 75,
-  "fixtures_with_horizons": 67,
-  "horizons_eligible": 331,
-  "horizons_delivered": 309,
+  "fixtures_with_horizons": 75,
+  "horizons_eligible": 370,
+  "horizons_delivered": 348,
   "horizons_missed": 22,
   "horizon_states": {
-   "DELIVERED": 309,
+   "DELIVERED": 348,
    "MISSED_BEFORE_WAKE": 15,
    "MISSED_EXECUTION_FAILURE": 7
   },
-  "capture_success_rate": 0.9335347432024169,
-  "close_fixtures_eligible": 66,
-  "close_fixtures_delivered": 60,
-  "close_success_rate": 0.9090909090909091
+  "capture_success_rate": 0.9405405405405406,
+  "close_fixtures_eligible": 75,
+  "close_fixtures_delivered": 69,
+  "close_success_rate": 0.92
  },
  "definition": "capture_success_rate = delivered / eligible horizons whose window closed in the span (NOT_APPLICABLE excluded); close_success_rate = fixtures with a T-15 or T-5 delivery / fixtures whose close windows closed in the span"
 }
