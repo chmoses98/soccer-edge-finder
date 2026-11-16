@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261116T230318Z-c5bdce` · generated 2026-11-16T23:03:18.678531Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261116T234828Z-6f14fc` · generated 2026-11-16T23:48:28.364807Z · trigger `kickoff_chain:T-30/T-15` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-16T22:59:18.137896Z (CURRENT at publish; CURRENT until 2026-11-16T23:19:18.137896Z, STALE after 2026-11-16T23:29:18.137896Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-16T23:44:46.712885Z (CURRENT at publish; CURRENT until 2026-11-17T00:04:46.712885Z, STALE after 2026-11-17T00:14:46.712885Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-16T23:03:12.074901Z · simulations this update: 2 · Odds API calls this update: 0 (credits 0) · reprice 0.55s
+model board generated 2026-11-16T23:48:21.979793Z · simulations this update: 2 · Odds API calls this update: 0 (credits 0) · reprice 0.55s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,8 +12,8 @@ model board generated 2026-11-16T23:03:12.074901Z · simulations this update: 2 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-17T00:00:00Z | Martinique vs Aruba (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 25 | 0 |
-| 2026-11-17T00:00:00Z | Trinidad and Tobago vs Antigua and Barbuda (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 25 | 0 |
+| 2026-11-17T00:00:00Z | Martinique vs Aruba (concacaf.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 25 | 0 |
+| 2026-11-17T00:00:00Z | Trinidad and Tobago vs Antigua and Barbuda (concacaf.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 25 | 0 |
 | 2026-11-17T01:00:00Z | Canada vs Guatemala (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 25 | 0 |
 | 2026-11-17T13:10:00Z | Japan vs Paraguay (fifa.friendly) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-17T15:30:00Z | Saudi Arabia vs Uzbekistan (fifa.friendly) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
@@ -46,9 +46,9 @@ model board generated 2026-11-16T23:03:12.074901Z · simulations this update: 2 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 143
-action_NO_EDGE: 1291
-action_NO_QUOTE: 154
+action_EXCLUDED_BY_GATE: 144
+action_NO_EDGE: 1289
+action_NO_QUOTE: 155
 contract_sides: 1588
 fixtures: 25
 fixtures_model_invalidated: 0

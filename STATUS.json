@@ -1,13 +1,11 @@
 {
-  "as_of": "2026-11-16T23:02:39.069139+00:00",
+  "as_of": "2026-11-16T23:48:13.685986+00:00",
   "events": 17,
   "events_skipped_unmapped": 0,
   "fixtures_mapped": 17,
   "health": {
-    "reasons": [
-      "weather_failures:2"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
     "concacaf.nations.league",
@@ -21,13 +19,13 @@
     "uefa.nations"
   ],
   "lineups": {
-    "captured": 0,
+    "captured": 2,
     "events": 17,
     "failures": [],
     "published_post": 14,
-    "published_pre_kickoff": 0,
-    "unchanged": 17,
-    "unpublished": 3
+    "published_pre_kickoff": 2,
+    "unchanged": 15,
+    "unpublished": 1
   },
   "map_proposals": {},
   "map_version": "4",
@@ -38,12 +36,9 @@
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 0,
+    "captured": 2,
     "events": 3,
-    "failures": [
-      "401929705: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=10.6667&longitude=-61.5189&hourly=t",
-      "401929770: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=43.7064&longitude=-79.3986&hourly=t"
-    ],
+    "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 1,
     "no_venue": 0,

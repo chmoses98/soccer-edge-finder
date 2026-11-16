@@ -22765,15 +22765,15 @@
       },
       "event_name": "Martinique vs Aruba",
       "fixture_id": "fx:concacaf.nations_league:2026-27:nat.mtq:nat.aru",
-      "fixtures_observed_at": "2026-11-16T18:51:36.602308Z",
+      "fixtures_observed_at": "2026-11-16T23:48:12.151998Z",
       "home": "nat.mtq",
-      "input_fingerprint": "sha256:9d059550bbb9a45d77303f199f563a2a7fb90825b58c6ded031077bf5f1767f9",
+      "input_fingerprint": "sha256:1293eb76f15066817bb519633a751fabddbafb2b939221128808677a28487c4f",
       "inputs": {
         "competition_id": "concacaf.nations_league",
         "draws_per_world": 100,
         "engine_version": "world_sim_v2",
         "kickoff_utc": "2026-11-17T00:00:00Z",
-        "lineup_key": "none",
+        "lineup_key": "sha256:8404f219786b9b3bf5a5a79e0f0ef977337b0b260a7b8f18a1b7f2bfb20da35c",
         "model_family": "data_only.world_sim_v2.intl_pool",
         "model_version": "dc_laplace_v1",
         "n_worlds": 1000,
@@ -22784,11 +22784,41 @@
         "worlds_version": "worlds_v1"
       },
       "lineup": {
-        "checked_at": "2026-11-16T23:02:39.069139Z",
-        "key": "none",
-        "last_change_at": "2026-11-16T12:58:50.080547Z",
-        "state": "unconfirmed"
+        "checked_at": "2026-11-16T23:48:14.879060Z",
+        "key": "sha256:8404f219786b9b3bf5a5a79e0f0ef977337b0b260a7b8f18a1b7f2bfb20da35c",
+        "last_change_at": "2026-11-16T23:48:14.879060Z",
+        "state": "confirmed"
       },
+      "lineup_history": [
+        {
+          "lineup_key": "none",
+          "lineup_state": "unconfirmed",
+          "model_generated_at": "2026-11-16T23:03:12.074901Z",
+          "scripts": {
+            "primary": "TIGHT_LOW_EVENT",
+            "secondary": "HOME_CONTROL",
+            "shares": [
+              0.22066,
+              0.09184,
+              0.35426,
+              0.09924,
+              0.08435,
+              0.14964
+            ],
+            "taxonomy_version": "soccer_scripts_v1"
+          },
+          "sim_key": "sha256:51f4407e1079d928f620acb3a0495c4a002811ea62e7bf0dac212390ebe2a79c",
+          "summary": {
+            "mean_away_goals": 1.03288,
+            "mean_home_goals": 1.29108,
+            "p_away": 0.3027,
+            "p_btts": 0.42403,
+            "p_draw": 0.28565,
+            "p_home": 0.41165,
+            "p_over_2_5": 0.40007
+          }
+        }
+      ],
       "match_context": {
         "aggregate": {
           "source": "no aggregate (not a second leg)",
@@ -23016,9 +23046,9 @@
         "source": "production posterior (dc_laplace_v1) that priced this fixture",
         "version": "dc_matchup_v1"
       },
-      "model_fitted_at": "2026-11-16T23:03:11.670410Z",
-      "model_generated_at": "2026-11-16T23:03:12.074901Z",
-      "results_observed_at": "2026-11-16T17:27:39.263890Z",
+      "model_fitted_at": "2026-11-16T23:48:21.563364Z",
+      "model_generated_at": "2026-11-16T23:48:21.979793Z",
+      "results_observed_at": "2026-11-16T23:48:10.079782Z",
       "scripts": {
         "contract_gaps": {},
         "evidence": {
@@ -23635,8 +23665,8 @@
           }
         }
       },
-      "sim_key": "sha256:51f4407e1079d928f620acb3a0495c4a002811ea62e7bf0dac212390ebe2a79c",
-      "source_run_id": "run-20261116T230312Z-a39438",
+      "sim_key": "sha256:ee37f5435cfd4ac9375b95afdb904e08cb1d854bb412bde5a2a0cfae4b926363",
+      "source_run_id": "run-20261116T234821Z-e61e35",
       "summary": {
         "mean_away_goals": 1.03288,
         "mean_home_goals": 1.29108,
@@ -36461,15 +36491,15 @@
       },
       "event_name": "Trinidad and Tobago vs Antigua and Barbuda",
       "fixture_id": "fx:concacaf.nations_league:2026-27:nat.tri:nat.atg",
-      "fixtures_observed_at": "2026-11-16T18:51:36.602308Z",
+      "fixtures_observed_at": "2026-11-16T23:48:12.151998Z",
       "home": "nat.tri",
-      "input_fingerprint": "sha256:9d059550bbb9a45d77303f199f563a2a7fb90825b58c6ded031077bf5f1767f9",
+      "input_fingerprint": "sha256:870d627ba0a513f49fdf21cc6475212ace51b58aba8ae61149f8049a6b75fe85",
       "inputs": {
         "competition_id": "concacaf.nations_league",
         "draws_per_world": 100,
         "engine_version": "world_sim_v2",
         "kickoff_utc": "2026-11-17T00:00:00Z",
-        "lineup_key": "none",
+        "lineup_key": "sha256:b3463ca0b262f728aba9b7b275106492d9f697f7ad28cf72bc2127dde3bbf5d9",
         "model_family": "data_only.world_sim_v2.intl_pool",
         "model_version": "dc_laplace_v1",
         "n_worlds": 1000,
@@ -36480,11 +36510,41 @@
         "worlds_version": "worlds_v1"
       },
       "lineup": {
-        "checked_at": "2026-11-16T23:02:39.069139Z",
-        "key": "none",
-        "last_change_at": "2026-11-16T12:58:50.152065Z",
-        "state": "unconfirmed"
+        "checked_at": "2026-11-16T23:48:14.953826Z",
+        "key": "sha256:b3463ca0b262f728aba9b7b275106492d9f697f7ad28cf72bc2127dde3bbf5d9",
+        "last_change_at": "2026-11-16T23:48:14.953826Z",
+        "state": "confirmed"
       },
+      "lineup_history": [
+        {
+          "lineup_key": "none",
+          "lineup_state": "unconfirmed",
+          "model_generated_at": "2026-11-16T23:03:12.074901Z",
+          "scripts": {
+            "primary": "OPEN_END_TO_END",
+            "secondary": "AWAY_CONTROL",
+            "shares": [
+              0.21022,
+              0.08605,
+              0.19083,
+              0.21572,
+              0.08588,
+              0.2113
+            ],
+            "taxonomy_version": "soccer_scripts_v1"
+          },
+          "sim_key": "sha256:495482529a9190d10dc5c75232b0b907a73b3b994bf57bbbb7c24ba45f2f19da",
+          "summary": {
+            "mean_away_goals": 1.64603,
+            "mean_home_goals": 1.67425,
+            "p_away": 0.38559,
+            "p_btts": 0.59228,
+            "p_draw": 0.22577,
+            "p_home": 0.38864,
+            "p_over_2_5": 0.60922
+          }
+        }
+      ],
       "match_context": {
         "aggregate": {
           "source": "no aggregate (not a second leg)",
@@ -36712,9 +36772,9 @@
         "source": "production posterior (dc_laplace_v1) that priced this fixture",
         "version": "dc_matchup_v1"
       },
-      "model_fitted_at": "2026-11-16T23:03:11.670410Z",
-      "model_generated_at": "2026-11-16T23:03:12.074901Z",
-      "results_observed_at": "2026-11-16T17:27:39.263890Z",
+      "model_fitted_at": "2026-11-16T23:48:21.563364Z",
+      "model_generated_at": "2026-11-16T23:48:21.979793Z",
+      "results_observed_at": "2026-11-16T23:48:10.079782Z",
       "scripts": {
         "contract_gaps": {},
         "evidence": {
@@ -37331,8 +37391,8 @@
           }
         }
       },
-      "sim_key": "sha256:495482529a9190d10dc5c75232b0b907a73b3b994bf57bbbb7c24ba45f2f19da",
-      "source_run_id": "run-20261116T230312Z-a39438",
+      "sim_key": "sha256:262184c31ceeeeff62ea61114c5ebfbe5b1328e2961590b06f43ef870a58f1e5",
+      "source_run_id": "run-20261116T234821Z-e61e35",
       "summary": {
         "mean_away_goals": 1.64603,
         "mean_home_goals": 1.67425,
@@ -135901,6 +135961,6 @@
       }
     }
   },
-  "generated_at": "2026-11-16T23:03:12.074901Z",
+  "generated_at": "2026-11-16T23:48:21.979793Z",
   "quantile_levels": "(i + 0.5) / 100, i = 0..99"
 }
