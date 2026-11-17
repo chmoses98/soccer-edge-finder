@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261117T162821Z-22cd90` · generated 2026-11-17T16:28:21.104987Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261117T164323Z-28ec63` · generated 2026-11-17T16:43:23.092664Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-17T16:25:03.093632Z (CURRENT at publish; CURRENT until 2026-11-17T16:45:03.093632Z, STALE after 2026-11-17T16:55:03.093632Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-17T16:40:05.027778Z (CURRENT at publish; CURRENT until 2026-11-17T17:00:05.027778Z, STALE after 2026-11-17T17:10:05.027778Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-17T15:35:15.517003Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.61s
+model board generated 2026-11-17T15:35:15.517003Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.56s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -45,15 +45,15 @@ model board generated 2026-11-17T15:35:15.517003Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 158
-action_NO_EDGE: 1295
-action_NO_QUOTE: 311
+action_EXCLUDED_BY_GATE: 159
+action_NO_EDGE: 1293
+action_NO_QUOTE: 312
 contract_sides: 1764
 fixtures: 24
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
-Removed (kicked off): 2
+Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
