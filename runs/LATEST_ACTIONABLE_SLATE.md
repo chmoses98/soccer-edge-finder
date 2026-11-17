@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261117T155820Z-304b16` · generated 2026-11-17T15:58:20.598891Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
+slate `slate-20261117T161321Z-3d8c5e` · generated 2026-11-17T16:13:21.155184Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-17T15:55:00.060536Z (CURRENT at publish; CURRENT until 2026-11-17T16:15:00.060536Z, STALE after 2026-11-17T16:25:00.060536Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-17T16:10:03.036655Z (CURRENT at publish; CURRENT until 2026-11-17T16:30:03.036655Z, STALE after 2026-11-17T16:40:03.036655Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-17T15:35:15.517003Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.58s
 
@@ -12,7 +12,6 @@ model board generated 2026-11-17T15:35:15.517003Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-17T16:00:00Z | Jordan vs Australia (fifa.friendly) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-17T19:00:00Z | Belize vs Sint Maarten (concacaf.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-17T19:00:00Z | Dominica vs Cayman Islands (concacaf.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-17T19:00:00Z | St. Lucia vs Barbados (concacaf.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
@@ -46,15 +45,15 @@ model board generated 2026-11-17T15:35:15.517003Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 156
-action_NO_EDGE: 1342
-action_NO_QUOTE: 312
-contract_sides: 1810
-fixtures: 25
+action_EXCLUDED_BY_GATE: 160
+action_NO_EDGE: 1293
+action_NO_QUOTE: 311
+contract_sides: 1764
+fixtures: 24
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
-Removed (kicked off): 1
+Removed (kicked off): 2
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
