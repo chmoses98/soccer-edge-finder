@@ -422,3 +422,255 @@ These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW
 
 ## Events
 - Japan vs Paraguay (International Friendlies) 2026-11-17T13:10:00Z · markets 23/23 evaluated · lineups unknown · xG 1.12-0.96 · 1X2 38%/31%/31%
+
+{
+  "outputs": {
+    "json": "work/runs/_pending/run_output.v1.json",
+    "md": "work/runs/_pending/RUN_SOCCER.md",
+    "contracts": "work/runs/_pending/priced_contracts.json",
+    "coverage": "work/runs/_pending/coverage.json",
+    "diagnostics": "work/runs/_pending/coverage_diagnostics.json"
+  },
+  "simulated": [
+    "fx:fifa.friendly:2026:nat.jpn:nat.par"
+  ],
+  "repriced": [],
+  "archived_records": 23
+}
+[dispatch] holding 6.1 min (next window opens in 4.1 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261117T125825Z",
+  "complete": true,
+  "discovered": 5081,
+  "written": 903,
+  "path": "work/snapshots/2026-11-17/cap-20261117T125825Z.jsonl"
+}
+{
+  "reference_probabilities": 0,
+  "observed_at": "2026-11-17 11:18:31.588330+00:00",
+  "groups": 0,
+  "unmapped_fixture_groups": 0,
+  "incomplete_groups": 0,
+  "snapshots": 0,
+  "provider_notes": [
+    "51 rows, 51 skipped (unmapped division/team)",
+    "skipped_by_division={'E2': 5, 'E3': 10, 'EC': 11, 'SC1': 4, 'SC2': 5, 'SC3': 5, 'SP2': 11}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-11-17T12:58:28.009478Z", "batch_id": "kd-20261117T125502Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": ["fifa.friendly"], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-11-17T12:58:28.028002+00:00",
+ "leagues": [
+  "concacaf.nations.league",
+  "fifa.friendly",
+  "fifa.worldq.afc",
+  "fifa.worldq.caf",
+  "fifa.worldq.concacaf",
+  "fifa.worldq.conmebol",
+  "fifa.worldq.uefa",
+  "uefa.euroq",
+  "uefa.nations"
+ ],
+ "events": 35,
+ "fixtures_mapped": 24,
+ "events_skipped_unmapped": 11,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 9,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 33,
+  "captured": 1,
+  "unchanged": 32,
+  "published_pre_kickoff": 1,
+  "published_post": 2,
+  "unpublished": 30,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 33,
+  "captured": 0,
+  "no_venue": 0,
+  "geocode_miss": 3,
+  "forecast_miss": 0,
+  "failures": [
+   "401929769: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=6.8692&longitude=-58.2890&hourly=te",
+   "401929767: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=23.1330&longitude=-82.3830&hourly=t",
+   "401929766: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=39.1271&longitude=-84.5144&hourly=t",
+   "401929764: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=13.6893&longitude=-89.1872&hourly=t",
+   "401929763: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=25.6766&longitude=-100.2591&hourly="
+  ],
+  "skipped": 25,
+  "stopped": "consecutive_failures"
+ },
+ "map_version": "4",
+ "health": {
+  "state": "DEGRADED",
+  "reasons": [
+   "weather_failures:5",
+   "weather_stopped:consecutive_failures:skipped=25"
+  ]
+ }
+}
+unmapped teams: 17 | proposals: {'fifa.friendly': 0}
+[slate] {"slate_id": "slate-20261117T125954Z-5f8a56", "mode": "reprice_only", "fixtures": 27, "contract_sides": 1902, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.61, "price_changes_vs_previous": 96}
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261117T130622Z",
+  "complete": true,
+  "discovered": 5081,
+  "written": 903,
+  "path": "work/snapshots/2026-11-17/cap-20261117T130622Z.jsonl"
+}
+{
+  "reference_probabilities": 0,
+  "observed_at": "2026-11-17 11:18:31.588330+00:00",
+  "groups": 0,
+  "unmapped_fixture_groups": 0,
+  "incomplete_groups": 0,
+  "snapshots": 0,
+  "provider_notes": [
+    "51 rows, 51 skipped (unmapped division/team)",
+    "skipped_by_division={'E2': 5, 'E3': 10, 'EC': 11, 'SC1': 4, 'SC2': 5, 'SC3': 5, 'SP2': 11}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-11-17T13:06:24.796713Z", "batch_id": "kd-20261117T130304Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": ["fifa.friendly"], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-11-17T13:06:24.816915+00:00",
+ "leagues": [
+  "concacaf.nations.league",
+  "fifa.friendly",
+  "fifa.worldq.afc",
+  "fifa.worldq.caf",
+  "fifa.worldq.concacaf",
+  "fifa.worldq.conmebol",
+  "fifa.worldq.uefa",
+  "uefa.euroq",
+  "uefa.nations"
+ ],
+ "events": 35,
+ "fixtures_mapped": 24,
+ "events_skipped_unmapped": 11,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 9,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 33,
+  "captured": 0,
+  "unchanged": 33,
+  "published_pre_kickoff": 1,
+  "published_post": 2,
+  "unpublished": 30,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 32,
+  "captured": 27,
+  "no_venue": 0,
+  "geocode_miss": 5,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 17 | proposals: {'fifa.friendly': 0}
+[slate] {"slate_id": "slate-20261117T130626Z-f8849e", "mode": "reprice_only", "fixtures": 27, "contract_sides": 1902, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.776, "price_changes_vs_previous": 80}
+[dispatch] holding 8.9 min (next window opens in 10.8 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261117T132122Z",
+  "complete": true,
+  "discovered": 5082,
+  "written": 1045,
+  "path": "work/snapshots/2026-11-17/cap-20261117T132122Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261117T132123Z-4423b7", "mode": "reprice_only", "fixtures": 26, "contract_sides": 1856, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.604, "price_changes_vs_previous": 67}
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261117T132952Z",
+  "complete": true,
+  "discovered": 5082,
+  "written": 853,
+  "path": "work/snapshots/2026-11-17/cap-20261117T132952Z.jsonl"
+}
+{
+  "reference_probabilities": 0,
+  "observed_at": "2026-11-17 11:18:31.588330+00:00",
+  "groups": 0,
+  "unmapped_fixture_groups": 0,
+  "incomplete_groups": 0,
+  "snapshots": 0,
+  "provider_notes": [
+    "51 rows, 51 skipped (unmapped division/team)",
+    "skipped_by_division={'E2': 5, 'E3': 10, 'EC': 11, 'SC1': 4, 'SC2': 5, 'SC3': 5, 'SP2': 11}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-11-17T13:29:54.631075Z", "batch_id": "kd-20261117T132623Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-11-17T13:29:54.650564+00:00",
+ "leagues": [
+  "concacaf.nations.league",
+  "fifa.friendly",
+  "fifa.worldq.afc",
+  "fifa.worldq.caf",
+  "fifa.worldq.concacaf",
+  "fifa.worldq.conmebol",
+  "fifa.worldq.uefa",
+  "uefa.euroq",
+  "uefa.nations"
+ ],
+ "events": 35,
+ "fixtures_mapped": 24,
+ "events_skipped_unmapped": 11,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 9,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 33,
+  "captured": 2,
+  "unchanged": 31,
+  "published_pre_kickoff": 0,
+  "published_post": 3,
+  "unpublished": 30,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 32,
+  "captured": 27,
+  "no_venue": 0,
+  "geocode_miss": 5,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 17 | proposals: {'fifa.friendly': 0}
+[slate] {"slate_id": "slate-20261117T133000Z-76a676", "mode": "reprice_only", "fixtures": 26, "contract_sides": 1856, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.719, "price_changes_vs_previous": 57}
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
