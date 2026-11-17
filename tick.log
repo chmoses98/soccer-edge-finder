@@ -306,3 +306,72 @@ These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW
   "written": 0
 }
 [odds_api] {"captured_at": "2026-11-17T11:03:54.017092Z", "batch_id": "kd-20261117T110029Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-11-17T11:03:54.035511+00:00",
+ "leagues": [
+  "concacaf.nations.league",
+  "fifa.friendly",
+  "fifa.worldq.afc",
+  "fifa.worldq.caf",
+  "fifa.worldq.concacaf",
+  "fifa.worldq.conmebol",
+  "fifa.worldq.uefa",
+  "uefa.euroq",
+  "uefa.nations"
+ ],
+ "events": 35,
+ "fixtures_mapped": 24,
+ "events_skipped_unmapped": 11,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 9,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 33,
+  "captured": 3,
+  "unchanged": 30,
+  "published_pre_kickoff": 1,
+  "published_post": 1,
+  "unpublished": 31,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 33,
+  "captured": 0,
+  "no_venue": 0,
+  "geocode_miss": 3,
+  "forecast_miss": 0,
+  "failures": [
+   "401929769: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=6.8692&longitude=-58.2890&hourly=te",
+   "401929767: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=23.1330&longitude=-82.3830&hourly=t",
+   "401929766: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=39.1271&longitude=-84.5144&hourly=t",
+   "401929764: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=13.6893&longitude=-89.1872&hourly=t",
+   "401929763: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=25.6766&longitude=-100.2591&hourly="
+  ],
+  "skipped": 25,
+  "stopped": "consecutive_failures"
+ },
+ "map_version": "4",
+ "health": {
+  "state": "DEGRADED",
+  "reasons": [
+   "weather_failures:5",
+   "weather_stopped:consecutive_failures:skipped=25"
+  ]
+ }
+}
+unmapped teams: 17 | proposals: {'fifa.friendly': 0}
+[slate] {"slate_id": "slate-20261117T110520Z-948b0f", "mode": "reprice_only", "fixtures": 27, "contract_sides": 1902, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.736, "price_changes_vs_previous": 48}
+{
+ "batches": 1,
+ "horizons_delivered": 1,
+ "missed_states": {},
+ "paid_calls": 0,
+ "credits_spent": 0,
+ "end_reason": "link_time_limit",
+ "chain_continue": true,
+ "delivered_total": 4016,
+ "missed_total": 508,
+ "delivery_rate_total": 0.887709991158267
+}
