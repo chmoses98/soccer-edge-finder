@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261117T032523Z-3e59d9` · generated 2026-11-17T03:25:23.004073Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261117T034022Z-137170` · generated 2026-11-17T03:40:22.867278Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-17T03:22:02.209059Z (CURRENT at publish; CURRENT until 2026-11-17T03:42:02.209059Z, STALE after 2026-11-17T03:52:02.209059Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-17T03:37:02.232839Z (CURRENT at publish; CURRENT until 2026-11-17T03:57:02.232839Z, STALE after 2026-11-17T04:07:02.232839Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-17T02:08:00.776189Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.60s
 
@@ -32,7 +32,7 @@ model board generated 2026-11-17T02:08:00.776189Z · simulations this update: 0 
 | 2026-11-18T00:00:00Z | United States vs Haiti (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 25 | 0 |
 | 2026-11-18T01:00:00Z | El Salvador vs St. Martin (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 25 | 0 |
 | 2026-11-18T02:30:00Z | Mexico vs Jamaica (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 16 | 0 |
-| 2026-11-18T03:00:00Z | Nicaragua vs Montserrat (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 16 | 0 |
+| 2026-11-18T03:00:00Z | Nicaragua vs Montserrat (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 16 | 0 |
 | 2026-11-18T22:30:00Z | Coritiba vs Santos (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-18T23:00:00Z | Remo vs Chapecoense (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-18T23:30:00Z | Cruzeiro vs Palmeiras (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -48,9 +48,9 @@ model board generated 2026-11-17T02:08:00.776189Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 112
-action_NO_EDGE: 1456
-action_NO_QUOTE: 334
+action_EXCLUDED_BY_GATE: 113
+action_NO_EDGE: 1457
+action_NO_QUOTE: 332
 contract_sides: 1902
 fixtures: 27
 fixtures_model_invalidated: 0
