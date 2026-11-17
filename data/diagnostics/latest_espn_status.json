@@ -1,12 +1,14 @@
 {
-  "as_of": "2026-11-16T18:51:36.602308+00:00",
-  "events": 592,
-  "events_skipped_unmapped": 362,
+  "as_of": "2026-11-17T02:59:48.609983+00:00",
+  "events": 608,
+  "events_skipped_unmapped": 378,
   "fixtures_mapped": 230,
   "health": {
     "reasons": [
-      "weather_failures:6",
-      "weather_stopped:consecutive_failures:skipped=7"
+      "scoreboard_partial_failures:1/748",
+      "lineups_partial_failures:1/60",
+      "weather_failures:3",
+      "weather_stopped:consecutive_failures:skipped=18"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +83,15 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 88,
-    "events": 107,
-    "failures": [],
-    "published_post": 28,
-    "published_pre_kickoff": 7,
-    "unchanged": 19,
-    "unpublished": 72
+    "captured": 12,
+    "events": 60,
+    "failures": [
+      "concacaf.nations.league/401929763: fetch failed for https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summar"
+    ],
+    "published_post": 23,
+    "published_pre_kickoff": 0,
+    "unchanged": 47,
+    "unpublished": 36
   },
   "map_proposals": {
     "esp.2": {
@@ -110,7 +114,6 @@
         "131470": "Reus FC Reddis",
         "21723": "Utebo",
         "22437": "CD Minera",
-        "22440": "Salamanca UDS",
         "245": "Tenerife",
         "5419": "FC Cartagena",
         "5421": "Barakaldo",
@@ -137,7 +140,6 @@
         "454": "Russia",
         "4863": "Tahiti",
         "4884": "Cook Islands",
-        "4895": "Indonesia",
         "6014": "Yemen",
         "6167": "Palestine",
         "658": "China",
@@ -162,7 +164,6 @@
         "171": "Guingamp",
         "18066": "Annecy",
         "272": "Sochaux",
-        "3170": "Dijon FCO",
         "3171": "Clermont Foot",
         "3266": "Stade Laval",
         "3267": "AS Nancy Lorraine",
@@ -217,7 +218,6 @@
         "134076": "AS Tefana",
         "134077": "Maisons-Alfort",
         "134078": "Racing Chambery",
-        "134079": "Neuvillette-Jamin",
         "134080": "Contres",
         "134081": "Veauche",
         "134082": "Sag Cestas",
@@ -289,10 +289,8 @@
         "168": "Sedan",
         "16913": "Olympique Marcquois",
         "16916": "IC Croix",
-        "16917": "La Roche-sur-Yon",
         "16925": "Bressuire",
         "171": "Guingamp",
-        "17483": "Orl\u00e9ans",
         "17621": "Anglet Genets",
         "17623": "US Marseille Endoume",
         "18064": "Racing Besancon",
@@ -322,17 +320,14 @@
         "21817": "AF Virois",
         "22138": "US Feurs",
         "22139": "Racing Club de France",
-        "22476": "US Saint-Philbert-de-Grand-Lieu",
         "272": "Sochaux",
         "2927": "Caen",
-        "3170": "Dijon FCO",
         "3171": "Clermont Foot",
         "3200": "Chamois Niortais FC",
         "3266": "Stade Laval",
         "3267": "AS Nancy Lorraine",
         "3335": "SC Amiens",
         "4744": "Calais",
-        "6732": "Valenciennes",
         "7296": "Vesoul",
         "7574": "Vannes OC",
         "7718": "Concarneau",
@@ -362,9 +357,11 @@
     }
   },
   "map_version": "4",
-  "results_appended": 4,
-  "scoreboard_failures": [],
-  "scoreboard_failures_n": 0,
+  "results_appended": 13,
+  "scoreboard_failures": [
+    "tur.1 2026-11-15: fetch failed for https://site.api.espn.com/apis/site/v2/sports/soccer/tur.1/scoreboard?dates=2026111"
+  ],
+  "scoreboard_failures_n": 1,
   "scoreboard_queries": 748,
   "unmapped_leagues": [
     "afc.champions",
@@ -431,7 +428,6 @@
     "134076": "AS Tefana",
     "134077": "Maisons-Alfort",
     "134078": "Racing Chambery",
-    "134079": "Neuvillette-Jamin",
     "134080": "Contres",
     "134081": "Veauche",
     "134082": "Sag Cestas",
@@ -505,10 +501,8 @@
     "168": "Sedan",
     "16913": "Olympique Marcquois",
     "16916": "IC Croix",
-    "16917": "La Roche-sur-Yon",
     "16925": "Bressuire",
     "171": "Guingamp",
-    "17483": "Orl\u00e9ans",
     "17621": "Anglet Genets",
     "17623": "US Marseille Endoume",
     "177": "Metz",
@@ -543,14 +537,11 @@
     "22138": "US Feurs",
     "22139": "Racing Club de France",
     "22437": "CD Minera",
-    "22440": "Salamanca UDS",
-    "22476": "US Saint-Philbert-de-Grand-Lieu",
     "2405": "Malaysia",
     "245": "Tenerife",
     "272": "Sochaux",
     "274": "Montpellier",
     "2927": "Caen",
-    "3170": "Dijon FCO",
     "3171": "Clermont Foot",
     "3200": "Chamois Niortais FC",
     "3243": "Stade de Reims",
@@ -568,7 +559,6 @@
     "4744": "Calais",
     "4863": "Tahiti",
     "4884": "Cook Islands",
-    "4895": "Indonesia",
     "5419": "FC Cartagena",
     "5421": "Barakaldo",
     "5464": "Portugalete",
@@ -578,7 +568,6 @@
     "658": "China",
     "6686": "Eswatini",
     "6724": "Kyrgyz Republic",
-    "6732": "Valenciennes",
     "6827": "Alcoyano",
     "7296": "Vesoul",
     "7349": "Vietnam",
@@ -604,20 +593,17 @@
     "9024": "Le Poire SV"
   },
   "weather": {
-    "captured": 6,
+    "captured": 0,
     "events": 21,
     "failures": [
-      "401841312: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Porto%20Alegre&count=5&language",
-      "401929707: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=23.1330&longitude=-82.3830&hourly=t",
-      "401929708: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=6.8692&longitude=-58.2890&hourly=te",
-      "401929770: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=43.7064&longitude=-79.3986&hourly=t",
-      "401929704: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Arnos%20Vale%20Stadium&count=5&",
-      "401929769: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=6.8692&longitude=-58.2890&hourly=te"
+      "401841315: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-25.4278&longitude=-49.2731&hourly=",
+      "401841310: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-1.4558&longitude=-48.5044&hourly=t",
+      "401841314: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-19.9208&longitude=-43.9378&hourly="
     ],
     "forecast_miss": 0,
-    "geocode_miss": 2,
+    "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 7,
+    "skipped": 18,
     "stopped": "consecutive_failures"
   }
 }
