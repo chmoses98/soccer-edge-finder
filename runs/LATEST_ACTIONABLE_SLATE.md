@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261117T183414Z-e0bab8` · generated 2026-11-17T18:34:14.770915Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
+slate `slate-20261117T184942Z-95a619` · generated 2026-11-17T18:49:42.017599Z · trigger `kickoff_chain:T-60/T-15` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-17T18:30:34.471134Z (CURRENT at publish; CURRENT until 2026-11-17T18:50:34.471134Z, STALE after 2026-11-17T19:00:34.471134Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-17T18:45:00.060435Z (CURRENT at publish; CURRENT until 2026-11-17T19:05:00.060435Z, STALE after 2026-11-17T19:15:00.060435Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-17T18:34:01.853131Z · simulations this update: 4 · Odds API calls this update: 0 (credits 0) · reprice 0.60s
+model board generated 2026-11-17T18:48:29.568984Z · simulations this update: 11 · Odds API calls this update: 1 (credits 3) · reprice 0.60s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -16,14 +16,14 @@ model board generated 2026-11-17T18:34:01.853131Z · simulations this update: 4 
 | 2026-11-17T19:00:00Z | Dominica vs Cayman Islands (concacaf.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-17T19:00:00Z | St. Lucia vs Barbados (concacaf.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-17T19:00:00Z | St. Kitts and Nevis vs Bonaire (concacaf.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
-| 2026-11-17T19:45:00Z | Bosnia and Herzegovina vs Romania (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-17T19:45:00Z | Denmark vs Norway (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-17T19:45:00Z | Hungary vs Northern Ireland (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-17T19:45:00Z | Republic of Ireland vs Kosovo (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-17T19:45:00Z | Israel vs Austria (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-17T19:45:00Z | Poland vs Sweden (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-17T19:45:00Z | Ukraine vs Georgia (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-17T19:45:00Z | Wales vs Portugal (uefa.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-17T19:45:00Z | Bosnia and Herzegovina vs Romania (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT entry | CURRENT | 61 | 1 |
+| 2026-11-17T19:45:00Z | Denmark vs Norway (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT entry | CURRENT | 61 | 1 |
+| 2026-11-17T19:45:00Z | Hungary vs Northern Ireland (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT entry | CURRENT | 61 | 1 |
+| 2026-11-17T19:45:00Z | Republic of Ireland vs Kosovo (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT entry | CURRENT | 61 | 1 |
+| 2026-11-17T19:45:00Z | Israel vs Austria (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT entry | CURRENT | 61 | 1 |
+| 2026-11-17T19:45:00Z | Poland vs Sweden (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT entry | CURRENT | 61 | 1 |
+| 2026-11-17T19:45:00Z | Ukraine vs Georgia (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT entry | CURRENT | 61 | 1 |
+| 2026-11-17T19:45:00Z | Wales vs Portugal (uefa.nations_league) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT entry | CURRENT | 61 | 1 |
 | 2026-11-17T23:00:00Z | Argentina vs Costa Rica (fifa.friendly) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-17T23:30:00Z | Uruguay vs Dominican Republic (fifa.friendly) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-18T00:00:00Z | United States vs Haiti (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 25 | 0 |
