@@ -54,7 +54,454 @@
   "delivered_total": 4035,
   "delivery_rate_total": 0.8881796169931763,
   "fixtures_tracked": 927,
-  "generated_at": "2026-11-17T15:58:21Z",
+  "generated_at": "2026-11-17T16:46:57Z",
+  "last_tick": {
+    "batches": 17,
+    "summary": [
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "model_refresh:ok:fixtures=3:sim=0:board=0:why=entered_lookahead_unmodelled",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "ks-20261117T111504Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1902:sim=0"
+        ],
+        "batch_id": "ks-20261117T113004Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1902:sim=0"
+        ],
+        "batch_id": "ks-20261117T114531Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:9",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1902:sim=0"
+        ],
+        "batch_id": "kd-20261117T115131Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:fifa.friendly:2026:nat.qat:nat.kor",
+            120,
+            128.48
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:9",
+          "model_refresh:ok:fixtures=1:sim=1:cache=0:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261117T120631Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:fifa.friendly:2026:nat.jpn:nat.par",
+            60,
+            63.48
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1902:sim=0"
+        ],
+        "batch_id": "ks-20261117T122133Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1902:sim=0"
+        ],
+        "batch_id": "ks-20261117T123633Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:9",
+          "model_refresh:ok:fixtures=1:sim=1:cache=0:why=T-30:invalidated",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261117T124224Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:fifa.friendly:2026:nat.jpn:nat.par",
+            30,
+            27.58
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:9",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1902:sim=0"
+        ],
+        "batch_id": "kd-20261117T125502Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:fifa.friendly:2026:nat.jpn:nat.par",
+            15,
+            14.97
+          ],
+          [
+            "fx:fifa.friendly:2026:nat.qat:nat.kor",
+            60,
+            64.97
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:9",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1902:sim=0"
+        ],
+        "batch_id": "kd-20261117T130304Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:fifa.friendly:2026:nat.jpn:nat.par",
+            5,
+            6.93
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1856:sim=0"
+        ],
+        "batch_id": "ks-20261117T131804Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:9",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1856:sim=0"
+        ],
+        "batch_id": "kd-20261117T132623Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:fifa.friendly:2026:nat.ksa:nat.uzb",
+            120,
+            123.61
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:9",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1856:sim=0"
+        ],
+        "batch_id": "kd-20261117T133302Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:fifa.friendly:2026:nat.qat:nat.kor",
+            30,
+            26.97
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:9",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1856:sim=0"
+        ],
+        "batch_id": "kd-20261117T134500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:fifa.friendly:2026:nat.qat:nat.kor",
+            15,
+            15.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:9",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1856:sim=0"
+        ],
+        "batch_id": "kd-20261117T135131Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:fifa.friendly:2026:nat.jor:nat.aus",
+            120,
+            128.48
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:9",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1856:sim=0"
+        ],
+        "batch_id": "kd-20261117T135742Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:fifa.friendly:2026:nat.qat:nat.kor",
+            5,
+            2.29
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1856:sim=0"
+        ],
+        "batch_id": "ks-20261117T141242Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:9",
+          "model_refresh:ok:fixtures=1:sim=1:cache=0:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261117T142742Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:fifa.friendly:2026:nat.ksa:nat.uzb",
+            60,
+            62.29
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1856:sim=0"
+        ],
+        "batch_id": "ks-20261117T144242Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:9",
+          "model_refresh:ok:fixtures=2:sim=2:cache=0:why=T-30:invalidated,T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261117T145742Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:fifa.friendly:2026:nat.ksa:nat.uzb",
+            30,
+            32.29
+          ],
+          [
+            "fx:fifa.friendly:2026:nat.jor:nat.aus",
+            60,
+            62.29
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1856:sim=0"
+        ],
+        "batch_id": "ks-20261117T151242Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:9",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1856:sim=0"
+        ],
+        "batch_id": "kd-20261117T151844Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:fifa.friendly:2026:nat.ksa:nat.uzb",
+            15,
+            11.26
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:9",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1856:sim=0"
+        ],
+        "batch_id": "kd-20261117T152457Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:fifa.friendly:2026:nat.ksa:nat.uzb",
+            5,
+            5.04
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:9",
+          "model_refresh:ok:fixtures=1:sim=1:cache=0:why=T-30:invalidated",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261117T153111Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:fifa.friendly:2026:nat.jor:nat.aus",
+            30,
+            28.8
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:9",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1810:sim=0"
+        ],
+        "batch_id": "kd-20261117T154500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:fifa.friendly:2026:nat.jor:nat.aus",
+            15,
+            15.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:9",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1810:sim=0"
+        ],
+        "batch_id": "kd-20261117T155500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:fifa.friendly:2026:nat.jor:nat.aus",
+            5,
+            5.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1764:sim=0"
+        ],
+        "batch_id": "ks-20261117T161003Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1764:sim=0"
+        ],
+        "batch_id": "ks-20261117T162503Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1764:sim=0"
+        ],
+        "batch_id": "ks-20261117T164004Z",
+        "due": [],
+        "slate_refresh": true
+      }
+    ]
+  },
   "missed_total": 508,
   "n_pending_fixtures": 31,
   "pending_fixtures": [
