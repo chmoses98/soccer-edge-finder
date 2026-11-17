@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261117T144602Z-df0854` · generated 2026-11-17T14:46:02.226774Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261117T150121Z-3e08d9` · generated 2026-11-17T15:01:21.862081Z · trigger `kickoff_chain:T-60/T-30` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-17T14:42:42.894020Z (CURRENT at publish; CURRENT until 2026-11-17T15:02:42.894020Z, STALE after 2026-11-17T15:12:42.894020Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-17T14:57:45.935974Z (CURRENT at publish; CURRENT until 2026-11-17T15:17:45.935974Z, STALE after 2026-11-17T15:27:45.935974Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-17T14:31:16.574559Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.63s
+model board generated 2026-11-17T15:01:16.117041Z · simulations this update: 2 · Odds API calls this update: 0 (credits 0) · reprice 0.58s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,8 +12,8 @@ model board generated 2026-11-17T14:31:16.574559Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-17T15:30:00Z | Saudi Arabia vs Uzbekistan (fifa.friendly) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
-| 2026-11-17T16:00:00Z | Jordan vs Australia (fifa.friendly) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-11-17T15:30:00Z | Saudi Arabia vs Uzbekistan (fifa.friendly) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
+| 2026-11-17T16:00:00Z | Jordan vs Australia (fifa.friendly) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-17T19:00:00Z | Belize vs Sint Maarten (concacaf.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-17T19:00:00Z | Dominica vs Cayman Islands (concacaf.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
 | 2026-11-17T19:00:00Z | St. Lucia vs Barbados (concacaf.nations_league) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 23 | 0 |
@@ -47,9 +47,9 @@ model board generated 2026-11-17T14:31:16.574559Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 157
-action_NO_EDGE: 1383
-action_NO_QUOTE: 316
+action_EXCLUDED_BY_GATE: 156
+action_NO_EDGE: 1385
+action_NO_QUOTE: 315
 contract_sides: 1856
 fixtures: 26
 fixtures_model_invalidated: 0
