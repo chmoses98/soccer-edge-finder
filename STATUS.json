@@ -1,13 +1,11 @@
 {
-  "as_of": "2026-11-17T15:34:35.574076+00:00",
+  "as_of": "2026-11-17T15:48:20.456002+00:00",
   "events": 35,
   "events_skipped_unmapped": 11,
   "fixtures_mapped": 24,
   "health": {
-    "reasons": [
-      "weather_failures:2"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
     "concacaf.nations.league",
@@ -21,12 +19,12 @@
     "uefa.nations"
   ],
   "lineups": {
-    "captured": 6,
+    "captured": 5,
     "events": 35,
     "failures": [],
     "published_post": 6,
     "published_pre_kickoff": 2,
-    "unchanged": 29,
+    "unchanged": 30,
     "unpublished": 27
   },
   "map_proposals": {
@@ -80,12 +78,9 @@
     "841": "Kuwait"
   },
   "weather": {
-    "captured": 23,
+    "captured": 25,
     "events": 30,
-    "failures": [
-      "401929769: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=6.8692&longitude=-58.2890&hourly=te",
-      "401929767: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=23.1330&longitude=-82.3830&hourly=t"
-    ],
+    "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 5,
     "no_venue": 0,
