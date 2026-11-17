@@ -47153,15 +47153,15 @@
       },
       "event_name": "United States vs Haiti",
       "fixture_id": "fx:concacaf.nations_league:2026-27:nat.usa:nat.hai",
-      "fixtures_observed_at": "2026-11-17T17:03:27.093400Z",
+      "fixtures_observed_at": "2026-11-17T23:39:05.257558Z",
       "home": "nat.usa",
-      "input_fingerprint": "sha256:f5528f2b9e77bf20105a51e091c485bf078273ee8ced378ab1e866f36176bd6d",
+      "input_fingerprint": "sha256:99e7f48cc17fd4bee28b33277fedf73eff4216c1765fd83947c0b8e7e1356107",
       "inputs": {
         "competition_id": "concacaf.nations_league",
         "draws_per_world": 100,
         "engine_version": "world_sim_v2",
         "kickoff_utc": "2026-11-18T00:00:00Z",
-        "lineup_key": "none",
+        "lineup_key": "sha256:59e077921ba9650593ad1da299d7a5f04e5661af540dc2b6ab6b683b39642167",
         "model_family": "data_only.world_sim_v2.intl_pool",
         "model_version": "dc_laplace_v1",
         "n_worlds": 1000,
@@ -47172,11 +47172,41 @@
         "worlds_version": "worlds_v1"
       },
       "lineup": {
-        "checked_at": "2026-11-17T15:58:20.428421Z",
-        "key": "none",
-        "last_change_at": "2026-11-17T00:34:13.948220Z",
-        "state": "unconfirmed"
+        "checked_at": "2026-11-17T23:39:08.270291Z",
+        "key": "sha256:59e077921ba9650593ad1da299d7a5f04e5661af540dc2b6ab6b683b39642167",
+        "last_change_at": "2026-11-17T23:39:08.270291Z",
+        "state": "confirmed"
       },
+      "lineup_history": [
+        {
+          "lineup_key": "none",
+          "lineup_state": "unconfirmed",
+          "model_generated_at": "2026-11-17T17:18:45.048276Z",
+          "scripts": {
+            "primary": "HOME_CONTROL",
+            "secondary": "OPEN_END_TO_END",
+            "shares": [
+              0.52647,
+              0.08238,
+              0.07647,
+              0.24556,
+              0.03137,
+              0.03774
+            ],
+            "taxonomy_version": "soccer_scripts_v1"
+          },
+          "sim_key": "sha256:a7d5550a001c1fdc2559e6c3e75344c30b4262779efb73d3283821595881b9d4",
+          "summary": {
+            "mean_away_goals": 1.09736,
+            "mean_home_goals": 3.66527,
+            "p_away": 0.09033,
+            "p_btts": 0.60671,
+            "p_draw": 0.11126,
+            "p_home": 0.79841,
+            "p_over_2_5": 0.81065
+          }
+        }
+      ],
       "match_context": {
         "aggregate": {
           "source": "no aggregate (not a second leg)",
@@ -47404,9 +47434,9 @@
         "source": "production posterior (dc_laplace_v1) that priced this fixture",
         "version": "dc_matchup_v1"
       },
-      "model_fitted_at": "2026-11-17T17:03:28.368359Z",
-      "model_generated_at": "2026-11-17T17:18:45.048276Z",
-      "results_observed_at": "2026-11-17T17:03:21.237412Z",
+      "model_fitted_at": "2026-11-17T23:40:02.446931Z",
+      "model_generated_at": "2026-11-17T23:40:03.036279Z",
+      "results_observed_at": "2026-11-17T23:38:58.139917Z",
       "scripts": {
         "contract_gaps": {},
         "evidence": {
@@ -48019,8 +48049,8 @@
           }
         }
       },
-      "sim_key": "sha256:a7d5550a001c1fdc2559e6c3e75344c30b4262779efb73d3283821595881b9d4",
-      "source_run_id": "run-20261117T171845Z-0c4103",
+      "sim_key": "sha256:c2325e8d4f3e2c9067f8d868bea469b388a65e432a136fe66e457f12edfc4d79",
+      "source_run_id": "run-20261117T234003Z-5b261e",
       "summary": {
         "mean_away_goals": 1.09736,
         "mean_home_goals": 3.66527,
@@ -56445,6 +56475,6 @@
       }
     }
   },
-  "generated_at": "2026-11-17T22:47:00.601477Z",
+  "generated_at": "2026-11-17T23:40:03.036279Z",
   "quantile_levels": "(i + 0.5) / 100, i = 0..99"
 }
