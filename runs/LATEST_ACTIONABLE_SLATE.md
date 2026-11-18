@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261118T135458Z-2d5ecb` · generated 2026-11-18T13:54:58.481093Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261118T140958Z-738175` · generated 2026-11-18T14:09:58.498565Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-18T13:51:39.185528Z (CURRENT at publish; CURRENT until 2026-11-18T14:11:39.185528Z, STALE after 2026-11-18T14:21:39.185528Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-18T14:06:39.220355Z (CURRENT at publish; CURRENT until 2026-11-18T14:26:39.220355Z, STALE after 2026-11-18T14:36:39.220355Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-18T10:54:31.218488Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.35s
 
@@ -52,25 +52,25 @@ model board generated 2026-11-18T10:54:31.218488Z · simulations this update: 0 
 | Seattle Sounders vs Real Salt Lake | away team total over 2.5 | no | 0.8700 | 0.926 [0.869, 0.970] | +0.048 | +0.019 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | First half: both teams to score | no | 0.7700 | 0.838 [0.769, 0.911] | +0.056 | +0.016 | 0.78 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Exact score 1-0 (home-away) | yes | 0.0800 | 0.129 [0.083, 0.173] | +0.044 | +0.015 | 0.09 | - | * | RESEARCH_CANDIDATE |
-| Vitória vs Red Bull Bragantino | btts | no | 0.4300 | 0.534 [0.416, 0.646] | +0.087 | +0.014 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | First half: away wins by more than 1.5 | no | 0.9000 | 0.944 [0.899, 0.981] | +0.037 | +0.014 | 0.91 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | First half: home wins by more than 1.5 | yes | 0.1200 | 0.209 [0.108, 0.332] | +0.082 | +0.013 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | First team to score: home | yes | 0.5200 | 0.623 [0.508, 0.742] | +0.086 | +0.013 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | First-half total goals over 2.5 | no | 0.8400 | 0.902 [0.839, 0.961] | +0.052 | +0.011 | 0.85 | - |  | RESEARCH_CANDIDATE |
+| Cruzeiro vs Palmeiras | btts | no | 0.3900 | 0.496 [0.372, 0.621] | +0.089 | +0.010 | 0.39 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | away team total over 0.5 | no | 0.1700 | 0.252 [0.152, 0.358] | +0.072 | +0.007 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Exact score 0-0 (home-away) | yes | 0.0500 | 0.095 [0.046, 0.149] | +0.041 | +0.006 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Total goals over 0.5 | no | 0.0500 | 0.095 [0.046, 0.149] | +0.041 | +0.006 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | Result: draw | no | 0.7700 | 0.821 [0.773, 0.870] | +0.039 | +0.005 | 0.77 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | home team total over 1.5 | no | 0.4400 | 0.558 [0.401, 0.712] | +0.101 | +0.005 | 0.44 | - |  | RESEARCH_CANDIDATE |
-| Vitória vs Red Bull Bragantino | Total goals over 2.5 | no | 0.4700 | 0.585 [0.438, 0.725] | +0.097 | +0.003 | 0.47 | - | * | RESEARCH_CANDIDATE |
+| Vitória vs Red Bull Bragantino | btts | no | 0.4400 | 0.534 [0.416, 0.646] | +0.077 | +0.004 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | Second-half result: home | yes | 0.4000 | 0.516 [0.378, 0.662] | +0.099 | +0.003 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | home team total over 1.5 | yes | 0.5900 | 0.707 [0.550, 0.845] | +0.100 | +0.002 | 0.59 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 484
-action_NO_QUOTE: 321
+action_NO_EDGE: 483
+action_NO_QUOTE: 322
 action_RESEARCH_CANDIDATE: 37
 contract_sides: 842
 fixtures: 11
