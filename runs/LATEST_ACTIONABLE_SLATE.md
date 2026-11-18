@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261118T194309Z-42ae89` · generated 2026-11-18T19:43:09.998909Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261118T195804Z-b7e12a` · generated 2026-11-18T19:58:04.036852Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-18T19:39:38.060823Z (CURRENT at publish; CURRENT until 2026-11-18T19:59:38.060823Z, STALE after 2026-11-18T20:09:38.060823Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-18T19:54:38.092757Z (CURRENT at publish; CURRENT until 2026-11-18T20:14:38.092757Z, STALE after 2026-11-18T20:24:38.092757Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-18T19:43:08.981600Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.22s
+model board generated 2026-11-18T19:58:03.241523Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.23s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -24,6 +24,7 @@ model board generated 2026-11-18T19:43:08.981600Z · simulations this update: 1 
 | 2026-11-20T00:30:00Z | Orlando City vs FC Cincinnati (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 81 | 1 |
 | 2026-11-20T03:00:00Z | Seattle Sounders vs Real Salt Lake (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 81 | 1 |
 | 2026-11-20T19:30:00Z | Bayern Munich vs 1. FC Köln (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-20T19:45:00Z | Troyes vs Le Havre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
 ## Candidates on CURRENT prices (38; RESEARCH_ONLY = analysis, never a bet)
 
@@ -71,11 +72,11 @@ model board generated 2026-11-18T19:43:08.981600Z · simulations this update: 1 
 ## Counts
 
 ```
-action_NO_EDGE: 487
-action_NO_QUOTE: 327
+action_NO_EDGE: 494
+action_NO_QUOTE: 326
 action_RESEARCH_CANDIDATE: 38
-contract_sides: 852
-fixtures: 12
+contract_sides: 858
+fixtures: 13
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
