@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261118T130955Z-d05607` · generated 2026-11-18T13:09:55.506228Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261118T132457Z-79f459` · generated 2026-11-18T13:24:57.164692Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-18T13:06:36.102288Z (CURRENT at publish; CURRENT until 2026-11-18T13:26:36.102288Z, STALE after 2026-11-18T13:36:36.102288Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-18T13:21:37.864854Z (CURRENT at publish; CURRENT until 2026-11-18T13:41:37.864854Z, STALE after 2026-11-18T13:51:37.864854Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-18T10:54:31.218488Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.34s
+model board generated 2026-11-18T10:54:31.218488Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.35s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,16 +12,16 @@ model board generated 2026-11-18T10:54:31.218488Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-18T22:30:00Z | Coritiba vs Santos (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-18T23:00:00Z | Remo vs Chapecoense (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-18T23:30:00Z | Cruzeiro vs Palmeiras (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-18T23:30:00Z | Flamengo vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-19T00:30:00Z | Corinthians vs Botafogo (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-19T00:30:00Z | Grêmio vs Bahia (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-19T22:30:00Z | Vasco da Gama vs Internacional (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-19T22:30:00Z | Vitória vs Red Bull Bragantino (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-20T00:30:00Z | São Paulo vs Fluminense (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-20T00:30:00Z | Orlando City vs FC Cincinnati (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 81 | 1 |
+| 2026-11-18T22:30:00Z | Coritiba vs Santos (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-18T23:00:00Z | Remo vs Chapecoense (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-18T23:30:00Z | Cruzeiro vs Palmeiras (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-18T23:30:00Z | Flamengo vs Athletico Paranaense (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-19T00:30:00Z | Corinthians vs Botafogo (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-19T00:30:00Z | Grêmio vs Bahia (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-19T22:30:00Z | Vasco da Gama vs Internacional (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-19T22:30:00Z | Vitória vs Red Bull Bragantino (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-20T00:30:00Z | São Paulo vs Fluminense (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-20T00:30:00Z | Orlando City vs FC Cincinnati (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 81 | 1 |
 | 2026-11-20T03:00:00Z | Seattle Sounders vs Real Salt Lake (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 
 ## Candidates on CURRENT prices (35; RESEARCH_ONLY = analysis, never a bet)
@@ -50,6 +50,7 @@ model board generated 2026-11-18T10:54:31.218488Z · simulations this update: 0 
 | Orlando City vs FC Cincinnati | away wins by more than 2.5 | no | 0.9200 | 0.965 [0.932, 0.990] | +0.040 | +0.024 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | First-half result: home | yes | 0.3500 | 0.473 [0.347, 0.612] | +0.107 | +0.022 | 0.37 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | away team total over 2.5 | no | 0.8700 | 0.926 [0.869, 0.970] | +0.048 | +0.019 | 0.88 | - |  | RESEARCH_CANDIDATE |
+| Seattle Sounders vs Real Salt Lake | Total goals over 0.5 | no | 0.0400 | 0.095 [0.046, 0.149] | +0.052 | +0.017 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Exact score 1-0 (home-away) | yes | 0.0800 | 0.129 [0.083, 0.173] | +0.044 | +0.015 | 0.09 | - | * | RESEARCH_CANDIDATE |
 | Vitória vs Red Bull Bragantino | btts | no | 0.4300 | 0.534 [0.416, 0.646] | +0.087 | +0.014 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | First half: away wins by more than 1.5 | no | 0.9000 | 0.944 [0.899, 0.981] | +0.037 | +0.014 | 0.91 | - | * | RESEARCH_CANDIDATE |
@@ -58,7 +59,6 @@ model board generated 2026-11-18T10:54:31.218488Z · simulations this update: 0 
 | Seattle Sounders vs Real Salt Lake | First-half total goals over 2.5 | no | 0.8400 | 0.902 [0.839, 0.961] | +0.052 | +0.011 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | away team total over 0.5 | no | 0.1700 | 0.252 [0.152, 0.358] | +0.072 | +0.007 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Exact score 0-0 (home-away) | yes | 0.0500 | 0.095 [0.046, 0.149] | +0.041 | +0.006 | 0.05 | - |  | RESEARCH_CANDIDATE |
-| Seattle Sounders vs Real Salt Lake | Total goals over 0.5 | no | 0.0500 | 0.095 [0.046, 0.149] | +0.041 | +0.006 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | Result: draw | no | 0.7700 | 0.821 [0.773, 0.870] | +0.039 | +0.005 | 0.77 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | home team total over 1.5 | no | 0.4400 | 0.558 [0.401, 0.712] | +0.101 | +0.005 | 0.44 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | Second-half result: home | yes | 0.4000 | 0.516 [0.378, 0.662] | +0.099 | +0.003 | 0.4 | - | * | RESEARCH_CANDIDATE |
