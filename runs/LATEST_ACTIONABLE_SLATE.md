@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261118T005438Z-babe49` · generated 2026-11-18T00:54:38.216045Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261118T010052Z-5ebb6a` · generated 2026-11-18T01:00:52.026125Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-18T00:51:16.938802Z (CURRENT at publish; CURRENT until 2026-11-18T01:11:16.938802Z, STALE after 2026-11-18T01:21:16.938802Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-18T00:57:29.958523Z (CURRENT at publish; CURRENT until 2026-11-18T01:17:29.958523Z, STALE after 2026-11-18T01:27:29.958523Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-18T00:13:27.244387Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.24s
+model board generated 2026-11-18T00:13:27.244387Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.22s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,6 @@ model board generated 2026-11-18T00:13:27.244387Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-18T01:00:00Z | El Salvador vs St. Martin (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 25 | 0 |
 | 2026-11-18T02:30:00Z | Mexico vs Jamaica (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 25 | 0 |
 | 2026-11-18T03:00:00Z | Nicaragua vs Montserrat (concacaf.nations_league) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 25 | 0 |
 | 2026-11-18T22:30:00Z | Coritiba vs Santos (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -33,12 +32,12 @@ model board generated 2026-11-18T00:13:27.244387Z · simulations this update: 0 
 ## Counts
 
 ```
-action_EXCLUDED_BY_GATE: 45
-action_NO_EDGE: 321
-action_NO_QUOTE: 187
+action_EXCLUDED_BY_GATE: 33
+action_NO_EDGE: 284
+action_NO_QUOTE: 186
 action_RESEARCH_CANDIDATE: 1
-contract_sides: 554
-fixtures: 11
+contract_sides: 504
+fixtures: 10
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
