@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261118T205807Z-ce9ef8` · generated 2026-11-18T20:58:07.813638Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261118T210820Z-4b7213` · generated 2026-11-18T21:08:20.630014Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-18T20:54:42.357083Z (CURRENT at publish; CURRENT until 2026-11-18T21:14:42.357083Z, STALE after 2026-11-18T21:24:42.357083Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-18T21:04:44.352533Z (CURRENT at publish; CURRENT until 2026-11-18T21:24:44.352533Z, STALE after 2026-11-18T21:34:44.352533Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-18T19:58:03.241523Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.25s
+model board generated 2026-11-18T19:58:03.241523Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.41s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -26,7 +26,7 @@ model board generated 2026-11-18T19:58:03.241523Z · simulations this update: 0 
 | 2026-11-20T19:30:00Z | Bayern Munich vs 1. FC Köln (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-20T19:45:00Z | Troyes vs Le Havre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (39; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (40; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -68,14 +68,15 @@ model board generated 2026-11-18T19:58:03.241523Z · simulations this update: 0 
 | Orlando City vs FC Cincinnati | home team total over 2.5 | yes | 0.3200 | 0.465 [0.281, 0.647] | +0.130 | +0.004 | 0.32 | - |  | RESEARCH_CANDIDATE |
 | Vitória vs Red Bull Bragantino | Total goals over 2.5 | no | 0.4700 | 0.585 [0.438, 0.725] | +0.097 | +0.003 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | Second-half result: home | yes | 0.4000 | 0.516 [0.378, 0.662] | +0.099 | +0.003 | 0.4 | - | * | RESEARCH_CANDIDATE |
+| Flamengo vs Athletico Paranaense | Result: away | yes | 0.0550 | 0.118 [0.046, 0.205] | +0.059 | +0.003 | 0.05 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | home team total over 1.5 | yes | 0.5900 | 0.707 [0.550, 0.845] | +0.100 | +0.002 | 0.59 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 493
+action_NO_EDGE: 492
 action_NO_QUOTE: 326
-action_RESEARCH_CANDIDATE: 39
+action_RESEARCH_CANDIDATE: 40
 contract_sides: 858
 fixtures: 13
 fixtures_model_invalidated: 0
