@@ -1,23 +1,23 @@
 {
  "schema": "dispatch_reliability_v1",
- "generated_at": "2026-11-18T07:58:10Z",
+ "generated_at": "2026-11-18T13:43:58Z",
  "cadence": {
   "external_heartbeat_minutes": null,
   "github_backup_minutes": 60
  },
  "last_wake": {
-  "started_at": "2026-11-18T07:48:43Z",
+  "started_at": "2026-11-18T10:52:14Z",
   "trigger_source": "workflow-run",
   "status": "OK",
-  "no_action_reason": null
+  "no_action_reason": "CAPTURE_IN_PROGRESS"
  },
  "last_24h": {
   "span_hours": 24.0,
-  "heartbeats_actual": 17,
+  "heartbeats_actual": 15,
   "heartbeats_by_source": {
    "chain": 4,
-   "github-schedule-backup": 3,
-   "workflow-run": 10
+   "github-schedule-backup": 2,
+   "workflow-run": 9
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -25,33 +25,33 @@
   "external_heartbeats_actual": 0,
   "external_trigger_success": null,
   "github_backup_expected": 24,
-  "github_backup_actual": 3,
-  "github_backup_success": 0.125,
+  "github_backup_actual": 2,
+  "github_backup_success": 0.08333333333333333,
   "capture_runs": 3,
   "capture_runs_failed": 0,
   "paid_calls": 2,
   "credits_spent": 6,
-  "fixtures_with_horizons": 24,
-  "horizons_eligible": 120,
-  "horizons_delivered": 113,
+  "fixtures_with_horizons": 23,
+  "horizons_eligible": 113,
+  "horizons_delivered": 106,
   "horizons_missed": 7,
   "horizon_states": {
-   "DELIVERED": 113,
+   "DELIVERED": 106,
    "MISSED_BEFORE_WAKE": 4,
    "MISSED_EXECUTION_FAILURE": 3
   },
-  "capture_success_rate": 0.9416666666666667,
-  "close_fixtures_eligible": 24,
-  "close_fixtures_delivered": 23,
-  "close_success_rate": 0.9583333333333334
+  "capture_success_rate": 0.9380530973451328,
+  "close_fixtures_eligible": 23,
+  "close_fixtures_delivered": 22,
+  "close_success_rate": 0.9565217391304348
  },
  "last_7d": {
   "span_hours": 168.0,
-  "heartbeats_actual": 122,
+  "heartbeats_actual": 119,
   "heartbeats_by_source": {
    "chain": 28,
    "github-schedule-backup": 24,
-   "workflow-run": 70
+   "workflow-run": 67
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
