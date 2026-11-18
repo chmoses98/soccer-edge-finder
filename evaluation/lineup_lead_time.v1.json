@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-18T16:58:15.508382Z",
+  "as_of": "2026-11-18T21:28:54.353873Z",
   "by_competition": {
     "afc.champions": {
       "fixtures": 16,
@@ -122,7 +122,7 @@
       "with_xi_ge_20min": 1
     },
     "esp.copa_del_rey": {
-      "fixtures": 15,
+      "fixtures": 16,
       "median_lead_minutes": null,
       "with_pre_kickoff_xi": 0,
       "with_xi_ge_20min": 0
@@ -212,7 +212,7 @@
       "with_xi_ge_20min": 4
     },
     "per.1": {
-      "fixtures": 24,
+      "fixtures": 25,
       "median_lead_minutes": 20.211808,
       "with_pre_kickoff_xi": 3,
       "with_xi_ge_20min": 2
@@ -266,10 +266,10 @@
       "with_xi_ge_20min": 52
     },
     "uefa.wchampions": {
-      "fixtures": 9,
-      "median_lead_minutes": null,
-      "with_pre_kickoff_xi": 0,
-      "with_xi_ge_20min": 0
+      "fixtures": 13,
+      "median_lead_minutes": 22.307366108333333,
+      "with_pre_kickoff_xi": 2,
+      "with_xi_ge_20min": 2
     },
     "uru.1": {
       "fixtures": 16,
@@ -4475,16 +4475,16 @@
       "xi_first_observed_at": "2026-11-05T00:17:09.939385+00:00"
     },
     {
-      "capture_attempts": 5,
+      "capture_attempts": 6,
       "competition": "esp.copa_del_rey",
       "espn_event_id": "401928518",
-      "final_state": "unconfirmed",
+      "final_state": "confirmed",
       "kickoff_passed": true,
-      "lead_time_seconds": null,
+      "lead_time_seconds": -1207360.969505,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-11-04T18:00:00+00:00",
       "source": "espn_site_api",
-      "xi_first_observed_at": null
+      "xi_first_observed_at": "2026-11-18T17:22:40.969505+00:00"
     },
     {
       "capture_attempts": 12,
@@ -4523,16 +4523,16 @@
       "xi_first_observed_at": null
     },
     {
-      "capture_attempts": 5,
+      "capture_attempts": 6,
       "competition": "esp.copa_del_rey",
       "espn_event_id": "401928497",
-      "final_state": "unconfirmed",
+      "final_state": "confirmed",
       "kickoff_passed": true,
-      "lead_time_seconds": null,
+      "lead_time_seconds": -1201961.080186,
       "observed_before_kickoff": false,
       "scheduled_kickoff_utc": "2026-11-04T19:30:00+00:00",
       "source": "espn_site_api",
-      "xi_first_observed_at": null
+      "xi_first_observed_at": "2026-11-18T17:22:41.080186+00:00"
     },
     {
       "capture_attempts": 10,
@@ -6299,22 +6299,22 @@
       "xi_first_observed_at": "2026-11-07T17:34:18.860707+00:00"
     }
   ],
-  "fixtures_kickoff_passed": 1080,
-  "fixtures_tracked": 1092,
+  "fixtures_kickoff_passed": 1086,
+  "fixtures_tracked": 1094,
   "lead_time_minutes": {
     "max": 71.21162246666667,
-    "median": 26.548203283333333,
+    "median": 26.514239866666667,
     "min": 0.025024583333333333,
-    "n": 293,
-    "p10": 11.382750746666668,
-    "p90": 56.18479638666667
+    "n": 295,
+    "p10": 11.398718760000001,
+    "p90": 56.18352035666667
   },
-  "post_kickoff_first_xi": 480,
+  "post_kickoff_first_xi": 482,
   "schema": "lineup_lead_time_v1",
-  "share_pre_kickoff_xi": 0.2712962962962963,
-  "share_xi_ge_20min": 0.2222222222222222,
+  "share_pre_kickoff_xi": 0.2716390423572744,
+  "share_xi_ge_20min": 0.22283609576427257,
   "target": "audit \u00a7I1: >= 90% of priced fixtures with a confirmed XI captured >= 20 min before kickoff",
-  "with_any_xi": 773,
-  "with_pre_kickoff_xi": 293,
-  "with_xi_ge_20min_before_kickoff": 240
+  "with_any_xi": 777,
+  "with_pre_kickoff_xi": 295,
+  "with_xi_ge_20min_before_kickoff": 242
 }
