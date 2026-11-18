@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-17T23:08:55.123562Z",
+  "as_of": "2026-11-18T04:29:51.548371Z",
   "by_competition": {
     "afc.champions": {
       "fixtures": 16,
@@ -56,10 +56,10 @@
       "with_xi_ge_20min": 1
     },
     "concacaf.nations.league": {
-      "fixtures": 27,
+      "fixtures": 32,
       "median_lead_minutes": 25.057288858333333,
-      "with_pre_kickoff_xi": 20,
-      "with_xi_ge_20min": 15
+      "with_pre_kickoff_xi": 22,
+      "with_xi_ge_20min": 17
     },
     "den.1": {
       "fixtures": 11,
@@ -134,9 +134,9 @@
       "with_xi_ge_20min": 0
     },
     "fifa.friendly": {
-      "fixtures": 41,
-      "median_lead_minutes": 25.456800983333334,
-      "with_pre_kickoff_xi": 15,
+      "fixtures": 43,
+      "median_lead_minutes": 25.353919800000003,
+      "with_pre_kickoff_xi": 17,
       "with_xi_ge_20min": 13
     },
     "fra.1": {
@@ -4475,7 +4475,7 @@
       "xi_first_observed_at": "2026-11-05T00:17:09.939385+00:00"
     },
     {
-      "capture_attempts": 4,
+      "capture_attempts": 5,
       "competition": "esp.copa_del_rey",
       "espn_event_id": "401928518",
       "final_state": "unconfirmed",
@@ -4499,7 +4499,7 @@
       "xi_first_observed_at": "2026-11-10T21:35:37.681844+00:00"
     },
     {
-      "capture_attempts": 4,
+      "capture_attempts": 5,
       "competition": "esp.copa_del_rey",
       "espn_event_id": "401928524",
       "final_state": "unconfirmed",
@@ -4511,7 +4511,7 @@
       "xi_first_observed_at": null
     },
     {
-      "capture_attempts": 4,
+      "capture_attempts": 5,
       "competition": "esp.copa_del_rey",
       "espn_event_id": "401928500",
       "final_state": "unconfirmed",
@@ -4523,7 +4523,7 @@
       "xi_first_observed_at": null
     },
     {
-      "capture_attempts": 4,
+      "capture_attempts": 5,
       "competition": "esp.copa_del_rey",
       "espn_event_id": "401928497",
       "final_state": "unconfirmed",
@@ -4787,7 +4787,7 @@
       "xi_first_observed_at": "2026-11-12T18:54:25.136091+00:00"
     },
     {
-      "capture_attempts": 1,
+      "capture_attempts": 2,
       "competition": "esp.copa_del_rey",
       "espn_event_id": "401928505",
       "final_state": "unconfirmed",
@@ -6299,22 +6299,22 @@
       "xi_first_observed_at": "2026-11-07T17:34:18.860707+00:00"
     }
   ],
-  "fixtures_kickoff_passed": 1073,
-  "fixtures_tracked": 1080,
+  "fixtures_kickoff_passed": 1080,
+  "fixtures_tracked": 1092,
   "lead_time_minutes": {
     "max": 71.21162246666667,
-    "median": 26.549624133333335,
+    "median": 26.548203283333333,
     "min": 0.025024583333333333,
-    "n": 289,
-    "p10": 11.335228066666668,
-    "p90": 56.18659050666667
+    "n": 293,
+    "p10": 11.382750746666668,
+    "p90": 56.18479638666667
   },
   "post_kickoff_first_xi": 477,
   "schema": "lineup_lead_time_v1",
-  "share_pre_kickoff_xi": 0.26933830382106244,
-  "share_xi_ge_20min": 0.22180801491146318,
+  "share_pre_kickoff_xi": 0.2712962962962963,
+  "share_xi_ge_20min": 0.2222222222222222,
   "target": "audit \u00a7I1: >= 90% of priced fixtures with a confirmed XI captured >= 20 min before kickoff",
-  "with_any_xi": 766,
-  "with_pre_kickoff_xi": 289,
-  "with_xi_ge_20min_before_kickoff": 238
+  "with_any_xi": 770,
+  "with_pre_kickoff_xi": 293,
+  "with_xi_ge_20min_before_kickoff": 240
 }
