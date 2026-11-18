@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261118T013038Z-5a6d54` · generated 2026-11-18T01:30:38.492859Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261118T013105Z-45ffda` · generated 2026-11-18T01:31:05.098590Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-18T01:27:03.672934Z (CURRENT at publish; CURRENT until 2026-11-18T01:47:03.672934Z, STALE after 2026-11-18T01:57:03.672934Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-18T01:27:31.586288Z (CURRENT at publish; CURRENT until 2026-11-18T01:47:31.586288Z, STALE after 2026-11-18T01:57:31.586288Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-18T01:21:05.397331Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.29s
+model board generated 2026-11-18T01:31:00.989916Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.28s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -20,10 +20,10 @@ model board generated 2026-11-18T01:21:05.397331Z · simulations this update: 0 
 | 2026-11-18T23:30:00Z | Flamengo vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-19T00:30:00Z | Corinthians vs Botafogo (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-19T00:30:00Z | Grêmio vs Bahia (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-19T22:30:00Z | Vasco da Gama vs Internacional (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-19T22:30:00Z | Vitória vs Red Bull Bragantino (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-20T00:30:00Z | São Paulo vs Fluminense (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-20T00:30:00Z | Orlando City vs FC Cincinnati (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 81 | 1 |
+| 2026-11-19T22:30:00Z | Vasco da Gama vs Internacional (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-19T22:30:00Z | Vitória vs Red Bull Bragantino (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-20T00:30:00Z | São Paulo vs Fluminense (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-20T00:30:00Z | Orlando City vs FC Cincinnati (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 
 ## Candidates on CURRENT prices (14; RESEARCH_ONLY = analysis, never a bet)
 
@@ -49,9 +49,9 @@ model board generated 2026-11-18T01:21:05.397331Z · simulations this update: 0 
 ```
 action_EXCLUDED_BY_GATE: 33
 action_NO_EDGE: 427
-action_NO_QUOTE: 310
+action_NO_QUOTE: 216
 action_RESEARCH_CANDIDATE: 14
-contract_sides: 784
+contract_sides: 690
 fixtures: 12
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
