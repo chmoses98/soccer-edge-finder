@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261118T023524Z-a0e17c` · generated 2026-11-18T02:35:24.317032Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261118T024827Z-0d44bd` · generated 2026-11-18T02:48:27.248719Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-18T02:32:00.647502Z (CURRENT at publish; CURRENT until 2026-11-18T02:52:00.647502Z, STALE after 2026-11-18T03:02:00.647502Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-18T02:45:02.272315Z (CURRENT at publish; CURRENT until 2026-11-18T03:05:02.272315Z, STALE after 2026-11-18T03:15:02.272315Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-18T02:01:01.905322Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.25s
+model board generated 2026-11-18T02:01:01.905322Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.24s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -39,10 +39,10 @@ model board generated 2026-11-18T02:01:01.905322Z · simulations this update: 0 
 | Orlando City vs FC Cincinnati | away team total over 2.5 | no | 0.7200 | 0.821 [0.709, 0.915] | +0.087 | +0.030 | 0.75 | - |  | RESEARCH_CANDIDATE |
 | Vitória vs Red Bull Bragantino | btts | no | 0.4200 | 0.534 [0.416, 0.646] | +0.097 | +0.024 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | away wins by more than 2.5 | no | 0.9200 | 0.965 [0.932, 0.990] | +0.040 | +0.024 | 0.94 | - |  | RESEARCH_CANDIDATE |
+| Orlando City vs FC Cincinnati | away team total over 0.5 | no | 0.1600 | 0.252 [0.152, 0.358] | +0.083 | +0.018 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | home team total over 2.5 | yes | 0.3100 | 0.465 [0.281, 0.647] | +0.140 | +0.014 | 0.32 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | Second-half result: home | yes | 0.3900 | 0.516 [0.378, 0.662] | +0.109 | +0.013 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | home team total over 1.5 | yes | 0.5800 | 0.707 [0.550, 0.845] | +0.110 | +0.012 | 0.59 | - |  | RESEARCH_CANDIDATE |
-| Orlando City vs FC Cincinnati | away team total over 0.5 | no | 0.1700 | 0.252 [0.152, 0.358] | +0.072 | +0.007 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | Result: draw | no | 0.7700 | 0.821 [0.773, 0.870] | +0.039 | +0.005 | 0.77 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | First team to score: home | yes | 0.5300 | 0.623 [0.508, 0.742] | +0.076 | +0.003 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | First half: home wins by more than 1.5 | yes | 0.1300 | 0.209 [0.108, 0.332] | +0.071 | +0.002 | 0.13 | - | * | RESEARCH_CANDIDATE |
@@ -51,8 +51,8 @@ model board generated 2026-11-18T02:01:01.905322Z · simulations this update: 0 
 
 ```
 action_EXCLUDED_BY_GATE: 13
-action_NO_EDGE: 397
-action_NO_QUOTE: 306
+action_NO_EDGE: 398
+action_NO_QUOTE: 305
 action_RESEARCH_CANDIDATE: 18
 contract_sides: 734
 fixtures: 11
