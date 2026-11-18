@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261118T123954Z-63602f` · generated 2026-11-18T12:39:54.233155Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261118T125455Z-24041a` · generated 2026-11-18T12:54:55.310326Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-18T12:36:34.918943Z (CURRENT at publish; CURRENT until 2026-11-18T12:56:34.918943Z, STALE after 2026-11-18T13:06:34.918943Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-18T12:51:36.066543Z (CURRENT at publish; CURRENT until 2026-11-18T13:11:36.066543Z, STALE after 2026-11-18T13:21:36.066543Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-18T10:54:31.218488Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.33s
+model board generated 2026-11-18T10:54:31.218488Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.48s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -24,7 +24,7 @@ model board generated 2026-11-18T10:54:31.218488Z · simulations this update: 0 
 | 2026-11-20T00:30:00Z | Orlando City vs FC Cincinnati (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 81 | 1 |
 | 2026-11-20T03:00:00Z | Seattle Sounders vs Real Salt Lake (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 
-## Candidates on CURRENT prices (34; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (35; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -60,15 +60,16 @@ model board generated 2026-11-18T10:54:31.218488Z · simulations this update: 0 
 | Seattle Sounders vs Real Salt Lake | Exact score 0-0 (home-away) | yes | 0.0500 | 0.095 [0.046, 0.149] | +0.041 | +0.006 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Total goals over 0.5 | no | 0.0500 | 0.095 [0.046, 0.149] | +0.041 | +0.006 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | Result: draw | no | 0.7700 | 0.821 [0.773, 0.870] | +0.039 | +0.005 | 0.77 | - |  | RESEARCH_CANDIDATE |
+| Seattle Sounders vs Real Salt Lake | home team total over 1.5 | no | 0.4400 | 0.558 [0.401, 0.712] | +0.101 | +0.005 | 0.44 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | Second-half result: home | yes | 0.4000 | 0.516 [0.378, 0.662] | +0.099 | +0.003 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | home team total over 1.5 | yes | 0.5900 | 0.707 [0.550, 0.845] | +0.100 | +0.002 | 0.59 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 485
-action_NO_QUOTE: 323
-action_RESEARCH_CANDIDATE: 34
+action_NO_EDGE: 486
+action_NO_QUOTE: 321
+action_RESEARCH_CANDIDATE: 35
 contract_sides: 842
 fixtures: 11
 fixtures_model_invalidated: 0
