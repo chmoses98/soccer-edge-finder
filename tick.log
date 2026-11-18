@@ -1415,3 +1415,149 @@ unmapped teams: 0 | proposals: {}
   ],
   "written": 0
 }
+[odds_api] {"captured_at": "2026-11-18T02:48:25.082873Z", "batch_id": "kd-20261118T024502Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": ["concacaf.nations_league"], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-11-18T02:48:25.112111+00:00",
+ "leagues": [
+  "concacaf.nations.league",
+  "fifa.friendly",
+  "fifa.worldq.afc",
+  "fifa.worldq.caf",
+  "fifa.worldq.concacaf",
+  "fifa.worldq.conmebol",
+  "fifa.worldq.uefa",
+  "uefa.euroq",
+  "uefa.nations"
+ ],
+ "events": 0,
+ "fixtures_mapped": 0,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 9,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 0,
+  "captured": 0,
+  "unchanged": 0,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 0,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 0,
+  "captured": 0,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "DEGRADED",
+  "reasons": [
+   "no_events_returned"
+  ]
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261118T024827Z-0d44bd", "mode": "reprice_only", "fixtures": 11, "contract_sides": 734, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.243, "price_changes_vs_previous": 10}
+[dispatch] holding 3.7 min (next window opens in 1.7 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261118T025820Z",
+  "complete": true,
+  "discovered": 4417,
+  "written": 531,
+  "path": "work/snapshots/2026-11-18/cap-20261118T025820Z.jsonl"
+}
+{
+  "reference_probabilities": 0,
+  "observed_at": "2026-11-17 23:39:05.571731+00:00",
+  "groups": 0,
+  "unmapped_fixture_groups": 0,
+  "incomplete_groups": 0,
+  "snapshots": 0,
+  "provider_notes": [
+    "51 rows, 51 skipped (unmapped division/team)",
+    "skipped_by_division={'E2': 5, 'E3': 10, 'EC': 11, 'SC1': 4, 'SC2': 5, 'SC3': 5, 'SP2': 11}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-11-18T02:58:22.637598Z", "batch_id": "kd-20261118T025500Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": ["concacaf.nations_league"], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-11-18T02:58:22.665188+00:00",
+ "leagues": [
+  "concacaf.nations.league",
+  "fifa.friendly",
+  "fifa.worldq.afc",
+  "fifa.worldq.caf",
+  "fifa.worldq.concacaf",
+  "fifa.worldq.conmebol",
+  "fifa.worldq.uefa",
+  "uefa.euroq",
+  "uefa.nations"
+ ],
+ "events": 0,
+ "fixtures_mapped": 0,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 9,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 0,
+  "captured": 0,
+  "unchanged": 0,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 0,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 0,
+  "captured": 0,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "DEGRADED",
+  "reasons": [
+   "no_events_returned"
+  ]
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261118T025822Z-453835", "mode": "reprice_only", "fixtures": 11, "contract_sides": 734, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.253, "price_changes_vs_previous": 26}
+[dispatch] holding 6.8 min (next window opens in 1038.7 min)
+[dispatch] holding 30.0 min (next window opens in 1031.9 min)
+[dispatch] holding 30.0 min (next window opens in 1001.9 min)
+[dispatch] holding 30.0 min (next window opens in 971.8 min)
+[dispatch] holding 26.4 min (next window opens in 941.8 min)
+{
+ "batches": 15,
+ "horizons_delivered": 21,
+ "missed_states": {
+  "MISSED_BEFORE_WAKE": 4,
+  "MISSED_EXECUTION_FAILURE": 3
+ },
+ "paid_calls": 0,
+ "credits_spent": 0,
+ "end_reason": "link_time_limit",
+ "chain_continue": true,
+ "delivered_total": 4128,
+ "missed_total": 515,
+ "delivery_rate_total": 0.8890803359896619
+}
