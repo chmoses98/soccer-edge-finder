@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261118T215819Z-422829` · generated 2026-11-18T21:58:19.253719Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261118T220522Z-543624` · generated 2026-11-18T22:05:22.918289Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-18T21:54:47.064101Z (CURRENT at publish; CURRENT until 2026-11-18T22:14:47.064101Z, STALE after 2026-11-18T22:24:47.064101Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-18T22:01:54.556544Z (CURRENT at publish; CURRENT until 2026-11-18T22:21:54.556544Z, STALE after 2026-11-18T22:31:54.556544Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-18T21:58:16.378931Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.42s
+model board generated 2026-11-18T22:05:20.061611Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.24s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-18T21:58:16.378931Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-18T22:30:00Z | Coritiba vs Santos (bra.serie_a) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
+| 2026-11-18T22:30:00Z | Coritiba vs Santos (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
 | 2026-11-18T23:00:00Z | Remo vs Chapecoense (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
 | 2026-11-18T23:30:00Z | Cruzeiro vs Palmeiras (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-18T23:30:00Z | Flamengo vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -26,7 +26,7 @@ model board generated 2026-11-18T21:58:16.378931Z · simulations this update: 1 
 | 2026-11-20T19:30:00Z | Bayern Munich vs 1. FC Köln (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-20T19:45:00Z | Troyes vs Le Havre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (40; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (39; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -65,7 +65,6 @@ model board generated 2026-11-18T21:58:16.378931Z · simulations this update: 1 
 | Seattle Sounders vs Real Salt Lake | Exact score 0-0 (home-away) | yes | 0.0500 | 0.095 [0.046, 0.149] | +0.041 | +0.006 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Total goals over 0.5 | no | 0.0500 | 0.095 [0.046, 0.149] | +0.041 | +0.006 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | Result: draw | no | 0.7700 | 0.821 [0.773, 0.870] | +0.039 | +0.005 | 0.77 | - |  | RESEARCH_CANDIDATE |
-| Seattle Sounders vs Real Salt Lake | home team total over 1.5 | no | 0.4400 | 0.558 [0.401, 0.712] | +0.101 | +0.005 | 0.44 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | home team total over 2.5 | yes | 0.3200 | 0.465 [0.281, 0.647] | +0.130 | +0.004 | 0.32 | - |  | RESEARCH_CANDIDATE |
 | Vitória vs Red Bull Bragantino | Total goals over 2.5 | no | 0.4700 | 0.585 [0.438, 0.725] | +0.097 | +0.003 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | Second-half result: home | yes | 0.4000 | 0.516 [0.378, 0.662] | +0.099 | +0.003 | 0.4 | - | * | RESEARCH_CANDIDATE |
@@ -74,13 +73,12 @@ model board generated 2026-11-18T21:58:16.378931Z · simulations this update: 1 
 ## Counts
 
 ```
-action_MODEL_INVALIDATED: 28
-action_NO_EDGE: 464
+action_NO_EDGE: 493
 action_NO_QUOTE: 266
-action_RESEARCH_CANDIDATE: 40
+action_RESEARCH_CANDIDATE: 39
 contract_sides: 798
 fixtures: 13
-fixtures_model_invalidated: 1
+fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
