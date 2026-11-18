@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261118T211304Z-a317a0` · generated 2026-11-18T21:13:04.854218Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261118T212818Z-812ae9` · generated 2026-11-18T21:28:18.415011Z · trigger `kickoff_chain:T-120/T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-18T21:09:44.115001Z (CURRENT at publish; CURRENT until 2026-11-18T21:29:44.115001Z, STALE after 2026-11-18T21:39:44.115001Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-18T21:24:44.202264Z (CURRENT at publish; CURRENT until 2026-11-18T21:44:44.202264Z, STALE after 2026-11-18T21:54:44.202264Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-18T19:58:03.241523Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.26s
+model board generated 2026-11-18T21:28:15.711643Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.23s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-18T19:58:03.241523Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-18T22:30:00Z | Coritiba vs Santos (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-18T22:30:00Z | Coritiba vs Santos (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
 | 2026-11-18T23:00:00Z | Remo vs Chapecoense (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-18T23:30:00Z | Cruzeiro vs Palmeiras (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-18T23:30:00Z | Flamengo vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -26,7 +26,7 @@ model board generated 2026-11-18T19:58:03.241523Z · simulations this update: 0 
 | 2026-11-20T19:30:00Z | Bayern Munich vs 1. FC Köln (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-20T19:45:00Z | Troyes vs Le Havre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (40; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (41; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -65,19 +65,19 @@ model board generated 2026-11-18T19:58:03.241523Z · simulations this update: 0 
 | Seattle Sounders vs Real Salt Lake | Exact score 0-0 (home-away) | yes | 0.0500 | 0.095 [0.046, 0.149] | +0.041 | +0.006 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Total goals over 0.5 | no | 0.0500 | 0.095 [0.046, 0.149] | +0.041 | +0.006 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | Result: draw | no | 0.7700 | 0.821 [0.773, 0.870] | +0.039 | +0.005 | 0.77 | - |  | RESEARCH_CANDIDATE |
+| Coritiba vs Santos | Result: away | no | 0.5100 | 0.619 [0.474, 0.756] | +0.092 | +0.004 | 0.51 | 0.498 | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | home team total over 2.5 | yes | 0.3200 | 0.465 [0.281, 0.647] | +0.130 | +0.004 | 0.32 | - |  | RESEARCH_CANDIDATE |
 | Vitória vs Red Bull Bragantino | Total goals over 2.5 | no | 0.4700 | 0.585 [0.438, 0.725] | +0.097 | +0.003 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | Second-half result: home | yes | 0.4000 | 0.516 [0.378, 0.662] | +0.099 | +0.003 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Flamengo vs Athletico Paranaense | Result: away | yes | 0.0550 | 0.118 [0.046, 0.205] | +0.059 | +0.003 | 0.05 | - | * | RESEARCH_CANDIDATE |
-| Orlando City vs FC Cincinnati | home team total over 1.5 | yes | 0.5900 | 0.707 [0.550, 0.845] | +0.100 | +0.002 | 0.59 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 492
-action_NO_QUOTE: 326
-action_RESEARCH_CANDIDATE: 40
-contract_sides: 858
+action_NO_EDGE: 491
+action_NO_QUOTE: 296
+action_RESEARCH_CANDIDATE: 41
+contract_sides: 828
 fixtures: 13
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
