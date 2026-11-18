@@ -1,11 +1,14 @@
 {
-  "as_of": "2026-11-18T07:41:19.821582+00:00",
+  "as_of": "2026-11-18T17:21:35.534194+00:00",
   "events": 509,
   "events_skipped_unmapped": 287,
   "fixtures_mapped": 222,
   "health": {
-    "reasons": [],
-    "state": "HEALTHY"
+    "reasons": [
+      "weather_failures:3",
+      "weather_stopped:consecutive_failures:skipped=53"
+    ],
+    "state": "DEGRADED"
   },
   "leagues": [
     "afc.champions",
@@ -78,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 9,
-    "events": 53,
+    "captured": 15,
+    "events": 51,
     "failures": [],
-    "published_post": 32,
-    "published_pre_kickoff": 0,
-    "unchanged": 44,
-    "unpublished": 21
+    "published_post": 30,
+    "published_pre_kickoff": 4,
+    "unchanged": 36,
+    "unpublished": 17
   },
   "map_proposals": {
     "esp.2": {
@@ -249,7 +252,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 8,
+  "results_appended": 0,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -380,13 +383,17 @@
     "9010": "Epinal"
   },
   "weather": {
-    "captured": 23,
-    "events": 23,
-    "failures": [],
+    "captured": 25,
+    "events": 81,
+    "failures": [
+      "401879238: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=50.7205&longitude=-1.8795&hourly=te",
+      "401878756: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Birmingham&count=5&language=en&",
+      "401879236: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=London&count=5&language=en&form"
+    ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 0,
-    "stopped": null
+    "skipped": 53,
+    "stopped": "consecutive_failures"
   }
 }
