@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261118T191258Z-807fe8` · generated 2026-11-18T19:12:58.595578Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261118T192758Z-4215de` · generated 2026-11-18T19:27:58.722480Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-18T19:09:36.841394Z (CURRENT at publish; CURRENT until 2026-11-18T19:29:36.841394Z, STALE after 2026-11-18T19:39:36.841394Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-18T19:24:36.871053Z (CURRENT at publish; CURRENT until 2026-11-18T19:44:36.871053Z, STALE after 2026-11-18T19:54:36.871053Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-18T16:43:16.054949Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.25s
+model board generated 2026-11-18T16:43:16.054949Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.29s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -24,7 +24,7 @@ model board generated 2026-11-18T16:43:16.054949Z · simulations this update: 0 
 | 2026-11-20T00:30:00Z | Orlando City vs FC Cincinnati (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 81 | 1 |
 | 2026-11-20T03:00:00Z | Seattle Sounders vs Real Salt Lake (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 81 | 1 |
 
-## Candidates on CURRENT prices (37; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (38; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -58,6 +58,7 @@ model board generated 2026-11-18T16:43:16.054949Z · simulations this update: 0 
 | Orlando City vs FC Cincinnati | First team to score: home | yes | 0.5200 | 0.623 [0.508, 0.742] | +0.086 | +0.013 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | First-half total goals over 2.5 | no | 0.8400 | 0.902 [0.839, 0.961] | +0.052 | +0.011 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | Cruzeiro vs Palmeiras | btts | no | 0.3900 | 0.496 [0.372, 0.621] | +0.089 | +0.010 | 0.39 | - | * | RESEARCH_CANDIDATE |
+| Grêmio vs Bahia | btts | no | 0.3800 | 0.488 [0.359, 0.612] | +0.091 | +0.008 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | away team total over 0.5 | no | 0.1700 | 0.252 [0.152, 0.358] | +0.072 | +0.007 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Exact score 0-0 (home-away) | yes | 0.0500 | 0.095 [0.046, 0.149] | +0.041 | +0.006 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Total goals over 0.5 | no | 0.0500 | 0.095 [0.046, 0.149] | +0.041 | +0.006 | 0.05 | - |  | RESEARCH_CANDIDATE |
@@ -69,9 +70,9 @@ model board generated 2026-11-18T16:43:16.054949Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 483
-action_NO_QUOTE: 326
-action_RESEARCH_CANDIDATE: 37
+action_NO_EDGE: 481
+action_NO_QUOTE: 327
+action_RESEARCH_CANDIDATE: 38
 contract_sides: 846
 fixtures: 11
 fixtures_model_invalidated: 0
