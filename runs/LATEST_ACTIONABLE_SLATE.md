@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261119T195550Z-12c289` · generated 2026-11-19T19:55:50.477607Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261119T201055Z-de309a` · generated 2026-11-19T20:10:55.199706Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-19T19:52:14.761649Z (CURRENT at publish; CURRENT until 2026-11-19T20:12:14.761649Z, STALE after 2026-11-19T20:22:14.761649Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-19T20:07:19.136911Z (CURRENT at publish; CURRENT until 2026-11-19T20:27:19.136911Z, STALE after 2026-11-19T20:37:19.136911Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-19T19:55:47.466979Z · simulations this update: 5 · Odds API calls this update: 0 (credits 0) · reprice 0.84s
+model board generated 2026-11-19T19:55:47.466979Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.85s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -55,13 +55,13 @@ model board generated 2026-11-19T19:55:47.466979Z · simulations this update: 5 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Palmeiras vs Flamengo | Result: away | no | 0.5050 | 0.738 [0.600, 0.850] | +0.215 | +0.138 | 0.64 | - | * | RESEARCH_CANDIDATE |
+| Palmeiras vs Flamengo | Result: home | yes | 0.2450 | 0.476 [0.310, 0.637] | +0.218 | +0.113 | 0.35 | - |  | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: away | no | 0.2400 | 0.481 [0.293, 0.651] | +0.228 | +0.112 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Hull City vs Brighton & Hove Albion | Result: away | no | 0.3700 | 0.633 [0.418, 0.835] | +0.247 | +0.109 | 0.47 | - | * | RESEARCH_CANDIDATE |
-| Palmeiras vs Flamengo | Result: home | yes | 0.2500 | 0.476 [0.310, 0.637] | +0.213 | +0.108 | 0.35 | - |  | RESEARCH_CANDIDATE |
 | Newcastle United vs Arsenal | Result: away | no | 0.3800 | 0.600 [0.433, 0.763] | +0.204 | +0.095 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | Result: home | yes | 0.4000 | 0.611 [0.454, 0.761] | +0.195 | +0.091 | 0.49 | - | * | RESEARCH_CANDIDATE |
+| Puebla vs Atlético San Luis | btts | no | 0.4000 | 0.578 [0.453, 0.689] | +0.161 | +0.087 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Flamengo | away wins by more than 1.5 | no | 0.7600 | 0.895 [0.813, 0.955] | +0.122 | +0.082 | 0.84 | - | * | RESEARCH_CANDIDATE |
-| Puebla vs Atlético San Luis | btts | no | 0.4100 | 0.578 [0.453, 0.689] | +0.151 | +0.077 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Como vs Cagliari | Result: home | no | 0.2500 | 0.462 [0.269, 0.640] | +0.199 | +0.076 | 0.32 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | btts | no | 0.3800 | 0.539 [0.425, 0.649] | +0.142 | +0.068 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Hull City vs Brighton & Hove Albion | Result: home | yes | 0.1500 | 0.373 [0.178, 0.605] | +0.214 | +0.067 | 0.21 | - |  | RESEARCH_CANDIDATE |
@@ -82,12 +82,12 @@ model board generated 2026-11-19T19:55:47.466979Z · simulations this update: 5 
 | Orlando City vs FC Cincinnati | away wins by more than 1.5 | no | 0.8100 | 0.907 [0.838, 0.964] | +0.086 | +0.046 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Flamengo | away wins by more than 2.5 | no | 0.9000 | 0.966 [0.931, 0.990] | +0.060 | +0.045 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | away team total over 1.5 | no | 0.4400 | 0.587 [0.440, 0.727] | +0.130 | +0.044 | 0.48 | - | * | RESEARCH_CANDIDATE |
+| Union Berlin vs RB Leipzig | Result: away | no | 0.3600 | 0.548 [0.319, 0.752] | +0.171 | +0.044 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Lazio vs Lecce | Result: home | no | 0.2900 | 0.455 [0.277, 0.631] | +0.150 | +0.043 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | SV Elversberg vs SC Freiburg | Result: away | no | 0.5200 | 0.724 [0.486, 0.917] | +0.186 | +0.043 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: home | yes | 0.0900 | 0.223 [0.101, 0.353] | +0.128 | +0.042 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: draw | yes | 0.1600 | 0.258 [0.181, 0.329] | +0.088 | +0.041 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Total goals over 3.5 | no | 0.6300 | 0.761 [0.627, 0.872] | +0.115 | +0.040 | 0.67 | - | * | RESEARCH_CANDIDATE |
-| Orlando City vs FC Cincinnati | away team total over 2.5 | no | 0.7100 | 0.821 [0.709, 0.915] | +0.097 | +0.040 | 0.75 | - |  | RESEARCH_CANDIDATE |
 | SV Elversberg vs SC Freiburg | Result: home | yes | 0.2700 | 0.509 [0.243, 0.790] | +0.225 | +0.038 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Total goals over 2.5 | no | 0.4100 | 0.558 [0.403, 0.699] | +0.131 | +0.037 | 0.44 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Philadelphia Union | Result: away | no | 0.5700 | 0.694 [0.566, 0.815] | +0.107 | +0.037 | 0.6 | - | * | RESEARCH_CANDIDATE |
