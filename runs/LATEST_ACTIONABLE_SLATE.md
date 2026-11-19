@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261119T201055Z-de309a` · generated 2026-11-19T20:10:55.199706Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261119T202556Z-5dac92` · generated 2026-11-19T20:25:56.157294Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-19T20:07:19.136911Z (CURRENT at publish; CURRENT until 2026-11-19T20:27:19.136911Z, STALE after 2026-11-19T20:37:19.136911Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-19T20:22:19.169151Z (CURRENT at publish; CURRENT until 2026-11-19T20:42:19.169151Z, STALE after 2026-11-19T20:52:19.169151Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-19T19:55:47.466979Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.85s
+model board generated 2026-11-19T19:55:47.466979Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.83s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,9 +12,9 @@ model board generated 2026-11-19T19:55:47.466979Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-19T22:30:00Z | Vasco da Gama vs Internacional (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-19T22:30:00Z | Vitória vs Red Bull Bragantino (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-20T00:30:00Z | São Paulo vs Fluminense (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-19T22:30:00Z | Vasco da Gama vs Internacional (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-19T22:30:00Z | Vitória vs Red Bull Bragantino (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-20T00:30:00Z | São Paulo vs Fluminense (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-20T00:30:00Z | Orlando City vs FC Cincinnati (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 81 | 1 |
 | 2026-11-20T03:00:00Z | Seattle Sounders vs Real Salt Lake (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 81 | 1 |
 | 2026-11-20T19:30:00Z | Bayern Munich vs 1. FC Köln (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 0 |
@@ -66,12 +66,12 @@ model board generated 2026-11-19T19:55:47.466979Z · simulations this update: 0 
 | Seattle Sounders vs Real Salt Lake | btts | no | 0.3800 | 0.539 [0.425, 0.649] | +0.142 | +0.068 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Hull City vs Brighton & Hove Albion | Result: home | yes | 0.1500 | 0.373 [0.178, 0.605] | +0.214 | +0.067 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | home wins by more than 1.5 | yes | 0.2200 | 0.413 [0.251, 0.577] | +0.181 | +0.066 | 0.28 | - | * | RESEARCH_CANDIDATE |
-| Seattle Sounders vs Real Salt Lake | away team total over 0.5 | no | 0.2500 | 0.400 [0.287, 0.514] | +0.137 | +0.064 | 0.31 | - | * | RESEARCH_CANDIDATE |
+| Seattle Sounders vs Real Salt Lake | away team total over 1.5 | no | 0.6100 | 0.757 [0.645, 0.856] | +0.131 | +0.066 | 0.67 | - | * | RESEARCH_CANDIDATE |
+| Seattle Sounders vs Real Salt Lake | away team total over 0.5 | no | 0.2500 | 0.400 [0.287, 0.514] | +0.137 | +0.064 | 0.31 | - |  | RESEARCH_CANDIDATE |
 | Newcastle United vs Arsenal | Result: home | yes | 0.1600 | 0.343 [0.191, 0.515] | +0.174 | +0.063 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | away team total over 1.5 | no | 0.6100 | 0.761 [0.636, 0.866] | +0.134 | +0.061 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | Result: away | no | 0.6400 | 0.791 [0.675, 0.896] | +0.134 | +0.060 | 0.7 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | Total goals over 2.5 | no | 0.4400 | 0.618 [0.462, 0.759] | +0.161 | +0.059 | 0.49 | - | * | RESEARCH_CANDIDATE |
-| Seattle Sounders vs Real Salt Lake | away team total over 1.5 | no | 0.6200 | 0.757 [0.645, 0.856] | +0.121 | +0.056 | 0.67 | - |  | RESEARCH_CANDIDATE |
 | Nice vs Paris Saint-Germain | Result: away | no | 0.3300 | 0.526 [0.338, 0.710] | +0.180 | +0.055 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Flamengo | home wins by more than 1.5 | yes | 0.1000 | 0.253 [0.124, 0.401] | +0.147 | +0.054 | 0.15 | - |  | RESEARCH_CANDIDATE |
 | Schalke 04 vs VfB Stuttgart | Result: away | no | 0.4800 | 0.682 [0.426, 0.887] | +0.185 | +0.052 | 0.53 | - | * | RESEARCH_CANDIDATE |
@@ -88,12 +88,12 @@ model board generated 2026-11-19T19:55:47.466979Z · simulations this update: 0 
 | Parma vs AS Roma | Result: home | yes | 0.0900 | 0.223 [0.101, 0.353] | +0.128 | +0.042 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: draw | yes | 0.1600 | 0.258 [0.181, 0.329] | +0.088 | +0.041 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Total goals over 3.5 | no | 0.6300 | 0.761 [0.627, 0.872] | +0.115 | +0.040 | 0.67 | - | * | RESEARCH_CANDIDATE |
+| Orlando City vs FC Cincinnati | away team total over 2.5 | no | 0.7100 | 0.821 [0.709, 0.915] | +0.097 | +0.040 | 0.75 | - |  | RESEARCH_CANDIDATE |
 | SV Elversberg vs SC Freiburg | Result: home | yes | 0.2700 | 0.509 [0.243, 0.790] | +0.225 | +0.038 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Total goals over 2.5 | no | 0.4100 | 0.558 [0.403, 0.699] | +0.131 | +0.037 | 0.44 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Philadelphia Union | Result: away | no | 0.5700 | 0.694 [0.566, 0.815] | +0.107 | +0.037 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | Total goals over 4.5 | no | 0.8300 | 0.915 [0.843, 0.971] | +0.076 | +0.036 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Total goals over 1.5 | no | 0.1800 | 0.306 [0.186, 0.430] | +0.116 | +0.036 | 0.21 | - |  | RESEARCH_CANDIDATE |
-| Como vs Cagliari | Result: draw | yes | 0.1600 | 0.253 [0.168, 0.331] | +0.084 | +0.034 | 0.19 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
