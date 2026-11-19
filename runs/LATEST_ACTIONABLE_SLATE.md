@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261119T000737Z-9eddaf` · generated 2026-11-19T00:07:37.858384Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261119T001927Z-a5d3af` · generated 2026-11-19T00:19:27.412266Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-19T00:03:06.655303Z (CURRENT at publish; CURRENT until 2026-11-19T00:23:06.655303Z, STALE after 2026-11-19T00:33:06.655303Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-19T00:15:00.060764Z (CURRENT at publish; CURRENT until 2026-11-19T00:35:00.060764Z, STALE after 2026-11-19T00:45:00.060764Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-18T23:44:13.168903Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.16s
+model board generated 2026-11-18T23:44:13.168903Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.16s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,8 +12,8 @@ model board generated 2026-11-18T23:44:13.168903Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-19T00:30:00Z | Corinthians vs Botafogo (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
-| 2026-11-19T00:30:00Z | Grêmio vs Bahia (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
+| 2026-11-19T00:30:00Z | Corinthians vs Botafogo (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
+| 2026-11-19T00:30:00Z | Grêmio vs Bahia (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
 | 2026-11-19T22:30:00Z | Vasco da Gama vs Internacional (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-19T22:30:00Z | Vitória vs Red Bull Bragantino (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-20T00:30:00Z | São Paulo vs Fluminense (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -22,7 +22,7 @@ model board generated 2026-11-18T23:44:13.168903Z · simulations this update: 0 
 | 2026-11-20T19:30:00Z | Bayern Munich vs 1. FC Köln (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-20T19:45:00Z | Troyes vs Le Havre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (38; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (37; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -52,7 +52,6 @@ model board generated 2026-11-18T23:44:13.168903Z · simulations this update: 0 
 | Seattle Sounders vs Real Salt Lake | Exact score 1-0 (home-away) | yes | 0.0800 | 0.129 [0.083, 0.173] | +0.044 | +0.015 | 0.09 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | First half: away wins by more than 1.5 | no | 0.9000 | 0.944 [0.899, 0.981] | +0.037 | +0.014 | 0.91 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | First half: home wins by more than 1.5 | yes | 0.1200 | 0.209 [0.108, 0.332] | +0.082 | +0.013 | 0.13 | - |  | RESEARCH_CANDIDATE |
-| Orlando City vs FC Cincinnati | First team to score: home | yes | 0.5200 | 0.623 [0.508, 0.742] | +0.086 | +0.013 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | First-half total goals over 2.5 | no | 0.8400 | 0.902 [0.839, 0.961] | +0.052 | +0.011 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | Grêmio vs Bahia | btts | no | 0.3800 | 0.488 [0.359, 0.612] | +0.091 | +0.008 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Exact score 0-0 (home-away) | yes | 0.0500 | 0.095 [0.046, 0.149] | +0.041 | +0.006 | 0.05 | - |  | RESEARCH_CANDIDATE |
@@ -68,9 +67,9 @@ model board generated 2026-11-18T23:44:13.168903Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 386
+action_NO_EDGE: 387
 action_NO_QUOTE: 142
-action_RESEARCH_CANDIDATE: 38
+action_RESEARCH_CANDIDATE: 37
 contract_sides: 566
 fixtures: 9
 fixtures_model_invalidated: 0
