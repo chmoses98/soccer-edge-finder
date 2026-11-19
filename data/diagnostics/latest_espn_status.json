@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-18T17:21:35.534194+00:00",
-  "events": 509,
-  "events_skipped_unmapped": 287,
-  "fixtures_mapped": 222,
+  "as_of": "2026-11-19T01:06:21.350586+00:00",
+  "events": 490,
+  "events_skipped_unmapped": 257,
+  "fixtures_mapped": 233,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=53"
+      "weather_stopped:consecutive_failures:skipped=78"
     ],
     "state": "DEGRADED"
   },
@@ -81,15 +81,30 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 15,
-    "events": 51,
+    "captured": 33,
+    "events": 44,
     "failures": [],
-    "published_post": 30,
-    "published_pre_kickoff": 4,
-    "unchanged": 36,
-    "unpublished": 17
+    "published_post": 34,
+    "published_pre_kickoff": 0,
+    "unchanged": 11,
+    "unpublished": 10
   },
   "map_proposals": {
+    "bel.1": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "936": "Sint-Truidense"
+      }
+    },
+    "den.1": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "7853": "AGF",
+        "909": "F.C. K\u00f8benhavn"
+      }
+    },
     "esp.2": {
       "ambiguous": {},
       "proposed": {
@@ -137,102 +152,25 @@
         "6014": "Yemen",
         "6167": "Palestine",
         "658": "China",
-        "6686": "Eswatini",
         "6724": "Kyrgyz Republic",
         "7349": "Vietnam",
         "841": "Kuwait"
-      }
-    },
-    "fra.2": {
-      "ambiguous": {},
-      "proposed": {
-        "165": "fra.nantes",
-        "177": "fra.metz",
-        "178": "fra.st_etienne"
-      },
-      "unresolved": {
-        "11884": "Red Star FC 93",
-        "3266": "Stade Laval"
-      }
-    },
-    "fra.coupe_de_france": {
-      "ambiguous": {},
-      "proposed": {
-        "165": "fra.nantes",
-        "177": "fra.metz",
-        "178": "fra.st_etienne"
-      },
-      "unresolved": {
-        "10685": "Trelissac FC",
-        "10693": "Plabennec",
-        "11884": "Red Star FC 93",
-        "131576": "Montreuil FC",
-        "132434": "Paris 13 Atletico",
-        "132785": "SC Toulon",
-        "134064": "Olympique Charleville Prix AM",
-        "134066": "ESAP Metz",
-        "134070": "Rochefort FC",
-        "134072": "Seyssinet",
-        "134075": "Verson",
-        "134077": "Maisons-Alfort",
-        "134078": "Racing Chambery",
-        "134081": "Veauche",
-        "134083": "Perros-Louannec",
-        "134084": "Vandruvre",
-        "134085": "Les Ulis",
-        "134086": "Tremblay",
-        "134089": "St Paul en Jarez",
-        "134092": "Union Cosnoise",
-        "134093": "Juventus Papus",
-        "134094": "Val Yerres Crosne",
-        "134096": "Atlas Paillade",
-        "134098": "Montlouis",
-        "134099": "Stade Sotteville",
-        "134102": "Massay",
-        "134104": "USF Fecamp",
-        "134110": "Baume-Les-Dames",
-        "134111": "Stade Castelbourgeois",
-        "134112": "Violaines",
-        "134114": "Saint-Die Kellermann",
-        "134115": "Rives 82",
-        "134116": "Talange",
-        "134119": "Furiani-Agliani",
-        "134123": "Chatou",
-        "134124": "St Martin Tatinghem",
-        "134129": "Reipertswiller",
-        "134131": "Montigny-Les-Metz",
-        "134133": "Riom",
-        "134138": "Saint-Pauloise FC",
-        "134145": "Vermelles",
-        "134151": "Saint-Renan",
-        "14439": "Pontarlier",
-        "16735": "Neslois",
-        "168": "Sedan",
-        "16913": "Olympique Marcquois",
-        "17623": "US Marseille Endoume",
-        "18085": "Bourges Foot",
-        "18907": "Senlis",
-        "19386": "Saint-Pryv\u00e9 Saint Hilaire",
-        "19388": "FC Limonest",
-        "19390": "Stade Pontivy",
-        "20871": "Rumilly Valli\u00e8res",
-        "20876": "Loon Plage FC",
-        "21306": "AS Cannes",
-        "21769": "La Tamponnaise",
-        "22139": "Racing Club de France",
-        "3200": "Chamois Niortais FC",
-        "3266": "Stade Laval",
-        "4744": "Calais",
-        "7574": "Vannes OC",
-        "7730": "Nimes",
-        "9010": "Epinal"
       }
     },
     "nor.1": {
       "ambiguous": {},
       "proposed": {},
       "unresolved": {
-        "510": "Viking FK"
+        "510": "Viking FK",
+        "620": "SK Brann",
+        "987": "Lillestrom"
+      }
+    },
+    "swe.1": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "20301": "Mj\u00e4llby AIF"
       }
     },
     "uefa.champions": {
@@ -241,6 +179,38 @@
       "unresolved": {
         "21922": "Sabah FK",
         "510": "Viking FK"
+      }
+    },
+    "uefa.europa": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "1010": "OFI Crete",
+        "13083": "Hapoel Be'er",
+        "20024": "Ararat-Armenia",
+        "21615": "Torreense",
+        "490": "Levski Sofia",
+        "987": "Lillestrom"
+      }
+    },
+    "uefa.europa.conf": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "19246": "Riga FC",
+        "20025": "Iberia 1999",
+        "20028": "Kauno Zalgiris",
+        "20301": "Mj\u00e4llby AIF",
+        "20703": "Inter D'Escaldes",
+        "21943": "Egnatia",
+        "3024": "FC Thun",
+        "489": "Hajduk Split",
+        "620": "SK Brann",
+        "7853": "AGF",
+        "8089": "CSU Craiova",
+        "8169": "KuPS Kuopio",
+        "909": "F.C. K\u00f8benhavn",
+        "936": "Sint-Truidense"
       }
     },
     "usa.1": {
@@ -252,7 +222,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 0,
+  "results_appended": 2,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -282,77 +252,26 @@
     "usa.usl.1"
   ],
   "unmapped_team_ids": {
-    "10685": "Trelissac FC",
-    "10693": "Plabennec",
+    "1010": "OFI Crete",
     "11487": "CD Sabadell",
-    "11884": "Red Star FC 93",
+    "13083": "Hapoel Be'er",
     "131470": "Reus FC Reddis",
     "131554": "TBD Away",
-    "131576": "Montreuil FC",
-    "132434": "Paris 13 Atletico",
-    "132785": "SC Toulon",
-    "134064": "Olympique Charleville Prix AM",
-    "134066": "ESAP Metz",
-    "134070": "Rochefort FC",
-    "134072": "Seyssinet",
-    "134075": "Verson",
-    "134077": "Maisons-Alfort",
-    "134078": "Racing Chambery",
-    "134081": "Veauche",
-    "134083": "Perros-Louannec",
-    "134084": "Vandruvre",
-    "134085": "Les Ulis",
-    "134086": "Tremblay",
-    "134089": "St Paul en Jarez",
-    "134092": "Union Cosnoise",
-    "134093": "Juventus Papus",
-    "134094": "Val Yerres Crosne",
-    "134096": "Atlas Paillade",
-    "134098": "Montlouis",
-    "134099": "Stade Sotteville",
-    "134102": "Massay",
-    "134104": "USF Fecamp",
-    "134110": "Baume-Les-Dames",
-    "134111": "Stade Castelbourgeois",
-    "134112": "Violaines",
-    "134114": "Saint-Die Kellermann",
-    "134115": "Rives 82",
-    "134116": "Talange",
-    "134119": "Furiani-Agliani",
-    "134123": "Chatou",
-    "134124": "St Martin Tatinghem",
-    "134129": "Reipertswiller",
-    "134131": "Montigny-Les-Metz",
-    "134133": "Riom",
-    "134138": "Saint-Pauloise FC",
-    "134145": "Vermelles",
-    "134151": "Saint-Renan",
-    "14439": "Pontarlier",
-    "165": "Nantes",
-    "16735": "Neslois",
-    "168": "Sedan",
-    "16913": "Olympique Marcquois",
-    "17623": "US Marseille Endoume",
-    "177": "Metz",
-    "178": "Saint-\u00c9tienne",
-    "18085": "Bourges Foot",
-    "18907": "Senlis",
-    "19386": "Saint-Pryv\u00e9 Saint Hilaire",
-    "19388": "FC Limonest",
-    "19390": "Stade Pontivy",
+    "19246": "Riga FC",
+    "20024": "Ararat-Armenia",
+    "20025": "Iberia 1999",
+    "20028": "Kauno Zalgiris",
+    "20301": "Mj\u00e4llby AIF",
     "204": "Bolivia",
-    "20871": "Rumilly Valli\u00e8res",
-    "20876": "Loon Plage FC",
-    "21306": "AS Cannes",
+    "20703": "Inter D'Escaldes",
+    "21615": "Torreense",
     "21723": "Utebo",
-    "21769": "La Tamponnaise",
     "21922": "Sabah FK",
-    "22139": "Racing Club de France",
+    "21943": "Egnatia",
     "22437": "CD Minera",
     "2405": "Malaysia",
     "245": "Tenerife",
-    "3200": "Chamois Niortais FC",
-    "3266": "Stade Laval",
+    "3024": "FC Thun",
     "4375": "Iraq",
     "4380": "Syria",
     "4381": "Bahrain",
@@ -360,9 +279,10 @@
     "4388": "Lebanon",
     "4397": "United Arab Emirates",
     "454": "Russia",
-    "4744": "Calais",
     "4863": "Tahiti",
     "4884": "Cook Islands",
+    "489": "Hajduk Split",
+    "490": "Levski Sofia",
     "510": "Viking FK",
     "5419": "FC Cartagena",
     "5421": "Barakaldo",
@@ -370,30 +290,33 @@
     "5535": "Badajoz",
     "6014": "Yemen",
     "6167": "Palestine",
+    "620": "SK Brann",
     "658": "China",
-    "6686": "Eswatini",
     "6724": "Kyrgyz Republic",
     "6827": "Alcoyano",
     "7349": "Vietnam",
-    "7574": "Vannes OC",
-    "7730": "Nimes",
+    "7853": "AGF",
+    "8089": "CSU Craiova",
+    "8169": "KuPS Kuopio",
     "84": "Mallorca",
     "841": "Kuwait",
     "8678": "Real Uni\u00f3n Irun",
-    "9010": "Epinal"
+    "909": "F.C. K\u00f8benhavn",
+    "936": "Sint-Truidense",
+    "987": "Lillestrom"
   },
   "weather": {
-    "captured": 25,
-    "events": 81,
+    "captured": 14,
+    "events": 95,
     "failures": [
-      "401879238: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=50.7205&longitude=-1.8795&hourly=te",
-      "401878756: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Birmingham&count=5&language=en&",
-      "401879236: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=London&count=5&language=en&form"
+      "401841314: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-19.9208&longitude=-43.9378&hourly=",
+      "401841313: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-22.9064&longitude=-43.1822&hourly=",
+      "401841316: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-23.5475&longitude=-46.6361&hourly="
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 53,
+    "skipped": 78,
     "stopped": "consecutive_failures"
   }
 }
