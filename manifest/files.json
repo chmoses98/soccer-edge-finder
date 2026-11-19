@@ -18600,16 +18600,16 @@
       "sha256_prefix": "a439033895294427400a2ba30c1167addafc7cf0923073f1b06c49279c1d5bc6"
     },
     "dispatch/heartbeats/2026-11-19.jsonl": {
-      "byte_length": 4372,
+      "byte_length": 4811,
       "closed": false,
       "day": "2026-11-19",
       "first_manifested_at": "2026-11-19T02:29:06.949408Z",
       "immutable": false,
-      "line_count": 6,
+      "line_count": 7,
       "record_level": false,
       "record_type": "dispatch_heartbeat",
       "recovery_id": null,
-      "sha256_prefix": "9662d9bc6cb52c2ecf337808acf5ddabba7d6972bccbf44eb885ba2c021f42d3"
+      "sha256_prefix": "f75e4f9c955e1b01bccd8e3f1faa6c957c097e0b88cfdde99194ed51d5dd34d9"
     },
     "dispatch/horizons.jsonl": {
       "byte_length": 2203150,
@@ -21452,6 +21452,18 @@
       "record_type": "espn_fixtures",
       "recovery_id": null,
       "sha256_prefix": "d0905758d5ff5a3a50daee3d6005c98122045ceeb436a242541bc9bb0886c79e"
+    },
+    "fixtures/espn/2026-11-19/espn-103000.json": {
+      "byte_length": 156789,
+      "closed": true,
+      "day": "2026-11-19",
+      "first_manifested_at": "2026-11-19T10:36:24.741702Z",
+      "immutable": true,
+      "line_count": null,
+      "record_level": false,
+      "record_type": "espn_fixtures",
+      "recovery_id": null,
+      "sha256_prefix": "f5ff55ac101adce0a59195b09811b901d45a1643952f2d10fad67ea1bf2a7683"
     },
     "lineups/2026-09-28/bra.2.jsonl": {
       "byte_length": 562,
@@ -37556,17 +37568,29 @@
       "recovery_id": null,
       "sha256_prefix": "5738bbbd64a817b9ebb1daddbd52529afb9bb0a60204864cadbba38a81be1433"
     },
+    "lineups/2026-11-19/aus.1.jsonl": {
+      "byte_length": 563,
+      "closed": false,
+      "day": "2026-11-19",
+      "first_manifested_at": "2026-11-19T10:36:24.753938Z",
+      "immutable": false,
+      "line_count": 1,
+      "record_level": true,
+      "record_type": "lineup",
+      "recovery_id": null,
+      "sha256_prefix": "155dcd84e5dd9ab42b2febbc38d30752dbc5cfb9bc165b9e8d9a172789bf934d"
+    },
     "lineups/2026-11-19/bra.1.jsonl": {
-      "byte_length": 52758,
+      "byte_length": 108778,
       "closed": false,
       "day": "2026-11-19",
       "first_manifested_at": "2026-11-19T00:09:47.774176Z",
       "immutable": false,
-      "line_count": 9,
+      "line_count": 15,
       "record_level": true,
       "record_type": "lineup",
       "recovery_id": null,
-      "sha256_prefix": "6d106d1179fb6d156621aecd660cb13310a5de96b07b46760b837b0e80917f51"
+      "sha256_prefix": "4934156835b24b9cc4aeaa0cb7fc80c53c58caebefa0b86e1ed5d1e27a21236b"
     },
     "lineups/2026-11-19/concacaf.nations.league.jsonl": {
       "byte_length": 46177,
@@ -37581,16 +37605,16 @@
       "sha256_prefix": "bb2a7c0d57b1d7040e8567f4530959059240f15837c5b4d57a78b00734234da8"
     },
     "lineups/2026-11-19/esp.copa_del_rey.jsonl": {
-      "byte_length": 51683,
+      "byte_length": 103366,
       "closed": false,
       "day": "2026-11-19",
       "first_manifested_at": "2026-11-19T01:10:19.403540Z",
       "immutable": false,
-      "line_count": 6,
+      "line_count": 12,
       "record_level": true,
       "record_type": "lineup",
       "recovery_id": null,
-      "sha256_prefix": "56fd4b500596b8d1c33d829fafe548257f2642c590786735cb99ddc46a0ac187"
+      "sha256_prefix": "57531f544f5ed425cb39b4b31b664b81a11889e414bb21e149bd4fc69aa60da2"
     },
     "lineups/2026-11-19/fifa.friendly.jsonl": {
       "byte_length": 39772,
@@ -37604,41 +37628,65 @@
       "recovery_id": null,
       "sha256_prefix": "d1b5fd6c929778e6f09576b9674482fe3b802d97b3ad279563664478f11f3936"
     },
+    "lineups/2026-11-19/jpn.1.jsonl": {
+      "byte_length": 1688,
+      "closed": false,
+      "day": "2026-11-19",
+      "first_manifested_at": "2026-11-19T10:36:24.755334Z",
+      "immutable": false,
+      "line_count": 3,
+      "record_level": true,
+      "record_type": "lineup",
+      "recovery_id": null,
+      "sha256_prefix": "dce9c9779810404306f468f2bf5a47ec3f73d812bff9f4574da2b0e33c82b00b"
+    },
     "lineups/2026-11-19/per.1.jsonl": {
-      "byte_length": 8184,
+      "byte_length": 16368,
       "closed": false,
       "day": "2026-11-19",
       "first_manifested_at": "2026-11-19T01:10:19.404032Z",
-      "immutable": false,
-      "line_count": 1,
-      "record_level": true,
-      "record_type": "lineup",
-      "recovery_id": null,
-      "sha256_prefix": "8f865fa7eeb47cfee301731ecd01eba6966e362c94f47fc76186cc1d0453943d"
-    },
-    "lineups/2026-11-19/uefa.wchampions.jsonl": {
-      "byte_length": 39348,
-      "closed": false,
-      "day": "2026-11-19",
-      "first_manifested_at": "2026-11-19T01:10:19.404396Z",
-      "immutable": false,
-      "line_count": 9,
-      "record_level": true,
-      "record_type": "lineup",
-      "recovery_id": null,
-      "sha256_prefix": "985c954a9365a451436c3191507c82ab3d343c25ffeb8598b38c89d3d480f1c5"
-    },
-    "lineups/2026-11-19/usa.1.jsonl": {
-      "byte_length": 1126,
-      "closed": false,
-      "day": "2026-11-19",
-      "first_manifested_at": "2026-11-19T01:10:19.404451Z",
       "immutable": false,
       "line_count": 2,
       "record_level": true,
       "record_type": "lineup",
       "recovery_id": null,
-      "sha256_prefix": "162bde1d579e534b586bd8375c9704bbf5d87f3bc2e4c9c1224cee40f8fd91ca"
+      "sha256_prefix": "ef62bbf5b23918e65b85d3931e0b4275645f1e54be0977c8ee6eaefe5f824dfd"
+    },
+    "lineups/2026-11-19/uefa.wchampions.jsonl": {
+      "byte_length": 78696,
+      "closed": false,
+      "day": "2026-11-19",
+      "first_manifested_at": "2026-11-19T01:10:19.404396Z",
+      "immutable": false,
+      "line_count": 18,
+      "record_level": true,
+      "record_type": "lineup",
+      "recovery_id": null,
+      "sha256_prefix": "b2775f89e46df2b0698d189f08b7be36d626f5ee11e4d019e049bc4b501b4046"
+    },
+    "lineups/2026-11-19/uru.1.jsonl": {
+      "byte_length": 1688,
+      "closed": false,
+      "day": "2026-11-19",
+      "first_manifested_at": "2026-11-19T10:36:24.755942Z",
+      "immutable": false,
+      "line_count": 3,
+      "record_level": true,
+      "record_type": "lineup",
+      "recovery_id": null,
+      "sha256_prefix": "efeafc6110c8c196480d5747d16d855b74cd4edd0cf4b9fe7f18f247dcbca001"
+    },
+    "lineups/2026-11-19/usa.1.jsonl": {
+      "byte_length": 2252,
+      "closed": false,
+      "day": "2026-11-19",
+      "first_manifested_at": "2026-11-19T01:10:19.404451Z",
+      "immutable": false,
+      "line_count": 4,
+      "record_level": true,
+      "record_type": "lineup",
+      "recovery_id": null,
+      "sha256_prefix": "1a004d6f3615bf7c6f854f6687254138294d1400a30a1744f7739bd85e4fe8bd"
     },
     "lineups/history/eng.1.jsonl": {
       "byte_length": 5849432,
@@ -53186,16 +53234,16 @@
       "sha256_prefix": "2e39e4640d01cd9ad34c02bb16ac604ace6dcfb314e1a45c866ed2f9f0b4102f"
     },
     "results/espn/bra.1.jsonl": {
-      "byte_length": 501256,
+      "byte_length": 505758,
       "closed": false,
       "day": null,
       "first_manifested_at": "2026-09-28T18:15:36.972079Z",
       "immutable": false,
-      "line_count": 728,
+      "line_count": 732,
       "record_level": false,
       "record_type": "result",
       "recovery_id": null,
-      "sha256_prefix": "95c4e6c7db3ee69add96810de84c1d68118e7857ae5cd39728f2fc012c459869"
+      "sha256_prefix": "a62106794b8b08aedfaa864e25b0836009b7429a45ee5312184a679925092af2"
     },
     "results/espn/concacaf.nations.league.jsonl": {
       "byte_length": 179664,
@@ -152497,18 +152545,18 @@
       "sha256_prefix": "670a2cdf64980cde413185e75b13cef1101cd243d83206212d5fa26f36511a89"
     },
     "weather/2026-11-19.jsonl": {
-      "byte_length": 9246,
+      "byte_length": 14699,
       "closed": false,
       "day": "2026-11-19",
       "first_manifested_at": "2026-11-19T00:09:49.805137Z",
       "immutable": false,
-      "line_count": 17,
+      "line_count": 27,
       "record_level": true,
       "record_type": "weather",
       "recovery_id": null,
-      "sha256_prefix": "02a3d386624be584e1012f467075044c3e0340aaeb63da1c894b133901d2841e"
+      "sha256_prefix": "0b706339667ee56879e44091b466777ad1df4444fd6200aa09970a7d0bb7af0f"
     }
   },
   "manifest_version": 1,
-  "updated_at": "2026-11-19T10:32:08.395306Z"
+  "updated_at": "2026-11-19T10:36:25.073452Z"
 }
