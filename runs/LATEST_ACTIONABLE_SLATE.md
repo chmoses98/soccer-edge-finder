@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261119T164017Z-5c14d7` · generated 2026-11-19T16:40:17.383139Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261119T165458Z-8e9df3` · generated 2026-11-19T16:54:58.777763Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-19T16:36:31.871706Z (CURRENT at publish; CURRENT until 2026-11-19T16:56:31.871706Z, STALE after 2026-11-19T17:06:31.871706Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-19T16:51:31.904104Z (CURRENT at publish; CURRENT until 2026-11-19T17:11:31.904104Z, STALE after 2026-11-19T17:21:31.904104Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-19T16:40:08.539826Z · simulations this update: 16 · Odds API calls this update: 0 (credits 0) · reprice 0.41s
+model board generated 2026-11-19T16:40:08.539826Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.42s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -51,7 +51,6 @@ model board generated 2026-11-19T16:40:08.539826Z · simulations this update: 16
 | Puebla vs Atlético San Luis | away team total over 1.5 | no | 0.6100 | 0.761 [0.636, 0.866] | +0.134 | +0.061 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Nice vs Paris Saint-Germain | Result: away | no | 0.3300 | 0.526 [0.338, 0.710] | +0.180 | +0.055 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Lazio vs Lecce | Result: home | no | 0.2800 | 0.455 [0.277, 0.631] | +0.161 | +0.053 | 0.33 | - | * | RESEARCH_CANDIDATE |
-| Puebla vs Atlético San Luis | away team total over 0.5 | no | 0.2600 | 0.406 [0.279, 0.529] | +0.133 | +0.049 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | Total goals over 2.5 | no | 0.4500 | 0.618 [0.462, 0.759] | +0.151 | +0.049 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | Total goals over 3.5 | no | 0.6700 | 0.807 [0.685, 0.908] | +0.122 | +0.048 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Total goals over 2.5 | no | 0.4000 | 0.558 [0.403, 0.699] | +0.142 | +0.047 | 0.44 | - | * | RESEARCH_CANDIDATE |
@@ -60,7 +59,7 @@ model board generated 2026-11-19T16:40:08.539826Z · simulations this update: 16
 | SV Elversberg vs SC Freiburg | Result: away | no | 0.5200 | 0.724 [0.486, 0.917] | +0.186 | +0.043 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | First-half result: away | no | 0.6800 | 0.793 [0.698, 0.882] | +0.098 | +0.043 | 0.72 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Total goals over 3.5 | no | 0.6300 | 0.761 [0.627, 0.872] | +0.115 | +0.040 | 0.67 | - |  | RESEARCH_CANDIDATE |
-| Orlando City vs FC Cincinnati | home wins by more than 2.5 | yes | 0.1000 | 0.244 [0.114, 0.387] | +0.138 | +0.040 | 0.13 | - |  | RESEARCH_CANDIDATE |
+| Puebla vs Atlético San Luis | away team total over 0.5 | no | 0.2700 | 0.406 [0.279, 0.529] | +0.122 | +0.039 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | SV Elversberg vs SC Freiburg | Result: home | yes | 0.2700 | 0.509 [0.243, 0.790] | +0.225 | +0.038 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | Total goals over 4.5 | no | 0.8300 | 0.915 [0.843, 0.971] | +0.076 | +0.036 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Total goals over 1.5 | no | 0.1800 | 0.306 [0.186, 0.430] | +0.116 | +0.036 | 0.21 | - |  | RESEARCH_CANDIDATE |
@@ -73,6 +72,7 @@ model board generated 2026-11-19T16:40:08.539826Z · simulations this update: 16
 | Orlando City vs FC Cincinnati | First team to score: home | yes | 0.5000 | 0.623 [0.508, 0.742] | +0.105 | +0.033 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | First team to score: away | no | 0.5300 | 0.646 [0.528, 0.752] | +0.098 | +0.031 | 0.56 | - |  | RESEARCH_CANDIDATE |
 | Como vs Cagliari | Result: away | yes | 0.0900 | 0.209 [0.094, 0.345] | +0.114 | +0.030 | 0.11 | - |  | RESEARCH_CANDIDATE |
+| Orlando City vs FC Cincinnati | home wins by more than 2.5 | yes | 0.1100 | 0.244 [0.114, 0.387] | +0.127 | +0.030 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | Union Berlin vs RB Leipzig | Result: home | yes | 0.1600 | 0.324 [0.137, 0.527] | +0.155 | +0.028 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | First-half total goals over 0.5 | no | 0.2400 | 0.345 [0.238, 0.452] | +0.093 | +0.027 | 0.26 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | away team total over 1.5 | no | 0.6500 | 0.757 [0.645, 0.856] | +0.092 | +0.026 | 0.67 | - |  | RESEARCH_CANDIDATE |
@@ -81,13 +81,13 @@ model board generated 2026-11-19T16:40:08.539826Z · simulations this update: 16
 | Nice vs Paris Saint-Germain | Result: draw | yes | 0.1800 | 0.258 [0.192, 0.327] | +0.068 | +0.025 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | away wins by more than 2.5 | no | 0.9200 | 0.965 [0.932, 0.990] | +0.040 | +0.024 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | home team total over 2.5 | yes | 0.3000 | 0.465 [0.280, 0.646] | +0.150 | +0.024 | 0.32 | - |  | RESEARCH_CANDIDATE |
-| Seattle Sounders vs Real Salt Lake | First-half total goals over 1.5 | no | 0.6000 | 0.708 [0.588, 0.812] | +0.091 | +0.023 | 0.62 | - |  | RESEARCH_CANDIDATE |
+| Orlando City vs FC Cincinnati | Second-half result: home | yes | 0.3800 | 0.517 [0.378, 0.662] | +0.121 | +0.024 | 0.4 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 709
-action_NO_QUOTE: 200
+action_NO_EDGE: 711
+action_NO_QUOTE: 198
 action_RESEARCH_CANDIDATE: 75
 contract_sides: 984
 fixtures: 25
