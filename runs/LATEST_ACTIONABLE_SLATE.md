@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261119T121005Z-707488` · generated 2026-11-19T12:10:05.140131Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261119T122507Z-71cf7c` · generated 2026-11-19T12:25:07.622018Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-19T12:06:40.053304Z (CURRENT at publish; CURRENT until 2026-11-19T12:26:40.053304Z, STALE after 2026-11-19T12:36:40.053304Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-19T12:21:42.273550Z (CURRENT at publish; CURRENT until 2026-11-19T12:41:42.273550Z, STALE after 2026-11-19T12:51:42.273550Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-19T10:54:41.786245Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.46s
+model board generated 2026-11-19T10:54:41.786245Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.47s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -50,7 +50,6 @@ model board generated 2026-11-19T10:54:41.786245Z · simulations this update: 0 
 | Seattle Sounders vs Real Salt Lake | away team total over 1.5 | no | 0.6500 | 0.757 [0.645, 0.856] | +0.092 | +0.026 | 0.67 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | away team total over 2.5 | no | 0.8600 | 0.926 [0.863, 0.973] | +0.058 | +0.026 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Total goals over 1.5 | no | 0.1900 | 0.306 [0.186, 0.430] | +0.106 | +0.025 | 0.21 | - |  | RESEARCH_CANDIDATE |
-| Orlando City vs FC Cincinnati | Second-half result: home | yes | 0.3800 | 0.517 [0.378, 0.662] | +0.121 | +0.024 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | First-half result: away | no | 0.7000 | 0.793 [0.698, 0.882] | +0.078 | +0.023 | 0.72 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | First-half total goals over 1.5 | no | 0.6000 | 0.708 [0.588, 0.812] | +0.091 | +0.023 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | First team to score: home | yes | 0.5100 | 0.623 [0.508, 0.742] | +0.095 | +0.023 | 0.53 | - | * | RESEARCH_CANDIDATE |
@@ -68,6 +67,7 @@ model board generated 2026-11-19T10:54:41.786245Z · simulations this update: 0 
 | Puebla vs Atlético San Luis | Exact score 0-0 (home-away) | yes | 0.0600 | 0.120 [0.060, 0.189] | +0.057 | +0.011 | 0.07 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | away team total over 2.5 | no | 0.7400 | 0.821 [0.709, 0.915] | +0.068 | +0.011 | 0.75 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | First team to score: away | no | 0.5500 | 0.646 [0.528, 0.752] | +0.079 | +0.011 | 0.56 | - |  | RESEARCH_CANDIDATE |
+| Puebla vs Atlético San Luis | Exact score 2-2 (home-away) | no | 0.9400 | 0.964 [0.946, 0.979] | +0.020 | +0.010 | 0.95 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
