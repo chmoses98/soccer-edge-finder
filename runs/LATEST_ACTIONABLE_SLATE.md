@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261119T141018Z-f58bf4` · generated 2026-11-19T14:10:18.667159Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261119T142255Z-32bd40` · generated 2026-11-19T14:22:55.086875Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-19T14:06:47.847257Z (CURRENT at publish; CURRENT until 2026-11-19T14:26:47.847257Z, STALE after 2026-11-19T14:36:47.847257Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-19T14:19:16.774738Z (CURRENT at publish; CURRENT until 2026-11-19T14:39:16.774738Z, STALE after 2026-11-19T14:49:16.774738Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-19T14:10:17.107729Z · simulations this update: 2 · Odds API calls this update: 0 (credits 0) · reprice 0.45s
+model board generated 2026-11-19T14:10:17.107729Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.50s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -26,7 +26,7 @@ model board generated 2026-11-19T14:10:17.107729Z · simulations this update: 2 
 | 2026-11-21T14:00:00Z | Como vs Cagliari (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T14:00:00Z | Lazio vs Lecce (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (64; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (66; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -58,12 +58,12 @@ model board generated 2026-11-19T14:10:17.107729Z · simulations this update: 2 
 | Seattle Sounders vs Real Salt Lake | First-half total goals over 0.5 | no | 0.2400 | 0.345 [0.238, 0.452] | +0.093 | +0.027 | 0.26 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | away team total over 2.5 | no | 0.8600 | 0.926 [0.863, 0.973] | +0.058 | +0.026 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | away team total over 1.5 | no | 0.4600 | 0.587 [0.440, 0.727] | +0.110 | +0.024 | 0.48 | - | * | RESEARCH_CANDIDATE |
-| Orlando City vs FC Cincinnati | Second-half result: home | yes | 0.3800 | 0.517 [0.378, 0.662] | +0.121 | +0.024 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | First-half total goals over 1.5 | no | 0.6000 | 0.708 [0.588, 0.812] | +0.091 | +0.023 | 0.62 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | First team to score: away | no | 0.5400 | 0.646 [0.528, 0.752] | +0.089 | +0.021 | 0.56 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | First-half result: home | yes | 0.3500 | 0.472 [0.338, 0.612] | +0.106 | +0.020 | 0.37 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | away team total over 2.5 | no | 0.7300 | 0.821 [0.709, 0.915] | +0.078 | +0.020 | 0.75 | - |  | RESEARCH_CANDIDATE |
 | Como vs Cagliari | Result: away | yes | 0.1000 | 0.209 [0.094, 0.345] | +0.103 | +0.020 | 0.11 | - |  | RESEARCH_CANDIDATE |
+| Puebla vs Atlético San Luis | Exact score 1-0 (home-away) | yes | 0.0800 | 0.137 [0.089, 0.184] | +0.052 | +0.020 | 0.09 | - | * | RESEARCH_CANDIDATE |
 | Lazio vs Lecce | Result: draw | yes | 0.1800 | 0.256 [0.175, 0.334] | +0.066 | +0.017 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Total goals over 5.5 | no | 0.9100 | 0.954 [0.907, 0.986] | +0.038 | +0.017 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | First-half exact score 0-0 (home-away) | yes | 0.2500 | 0.345 [0.238, 0.452] | +0.082 | +0.017 | 0.26 | - | * | RESEARCH_CANDIDATE |
@@ -74,9 +74,9 @@ model board generated 2026-11-19T14:10:17.107729Z · simulations this update: 2 
 ## Counts
 
 ```
-action_NO_EDGE: 646
+action_NO_EDGE: 644
 action_NO_QUOTE: 202
-action_RESEARCH_CANDIDATE: 64
+action_RESEARCH_CANDIDATE: 66
 contract_sides: 912
 fixtures: 13
 fixtures_model_invalidated: 0
