@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261119T174035Z-29c150` · generated 2026-11-19T17:40:35.498803Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261119T175530Z-b73847` · generated 2026-11-19T17:55:30.424633Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-19T17:37:03.564333Z (CURRENT at publish; CURRENT until 2026-11-19T17:57:03.564333Z, STALE after 2026-11-19T18:07:03.564333Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-19T17:52:03.595586Z (CURRENT at publish; CURRENT until 2026-11-19T18:12:03.595586Z, STALE after 2026-11-19T18:22:03.595586Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-19T17:40:33.867480Z · simulations this update: 2 · Odds API calls this update: 0 (credits 0) · reprice 0.60s
+model board generated 2026-11-19T17:40:33.867480Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.74s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -43,7 +43,7 @@ model board generated 2026-11-19T17:40:33.867480Z · simulations this update: 2 
 | 2026-11-21T17:00:00Z | Parma vs AS Roma (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 54 | 0 |
 | 2026-11-21T17:30:00Z | Schalke 04 vs VfB Stuttgart (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (86; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (85; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -59,12 +59,12 @@ model board generated 2026-11-19T17:40:33.867480Z · simulations this update: 2 
 | Orlando City vs FC Cincinnati | home wins by more than 1.5 | yes | 0.2200 | 0.413 [0.251, 0.577] | +0.181 | +0.066 | 0.28 | - | * | RESEARCH_CANDIDATE |
 | Newcastle United vs Arsenal | Result: home | yes | 0.1600 | 0.343 [0.191, 0.515] | +0.174 | +0.063 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | away team total over 1.5 | no | 0.6100 | 0.761 [0.636, 0.866] | +0.134 | +0.061 | 0.67 | - | * | RESEARCH_CANDIDATE |
+| Puebla vs Atlético San Luis | Total goals over 2.5 | no | 0.4400 | 0.618 [0.462, 0.759] | +0.161 | +0.059 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Nice vs Paris Saint-Germain | Result: away | no | 0.3300 | 0.526 [0.338, 0.710] | +0.180 | +0.055 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Lazio vs Lecce | Result: home | no | 0.2800 | 0.455 [0.277, 0.631] | +0.161 | +0.053 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | Schalke 04 vs VfB Stuttgart | Result: away | no | 0.4800 | 0.682 [0.426, 0.887] | +0.185 | +0.052 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Total goals over 3.5 | no | 0.6200 | 0.761 [0.627, 0.872] | +0.125 | +0.050 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | away team total over 0.5 | no | 0.2600 | 0.406 [0.279, 0.529] | +0.133 | +0.049 | 0.3 | - |  | RESEARCH_CANDIDATE |
-| Puebla vs Atlético San Luis | Total goals over 2.5 | no | 0.4500 | 0.618 [0.462, 0.759] | +0.151 | +0.049 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | Total goals over 3.5 | no | 0.6700 | 0.807 [0.685, 0.908] | +0.122 | +0.048 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Total goals over 2.5 | no | 0.4000 | 0.558 [0.403, 0.699] | +0.142 | +0.047 | 0.44 | - |  | RESEARCH_CANDIDATE |
 | Tijuana vs Atlante | btts | no | 0.4500 | 0.593 [0.457, 0.710] | +0.125 | +0.047 | 0.49 | - | * | RESEARCH_CANDIDATE |
@@ -91,9 +91,9 @@ model board generated 2026-11-19T17:40:33.867480Z · simulations this update: 2 
 ## Counts
 
 ```
-action_NO_EDGE: 731
-action_NO_QUOTE: 2705
-action_RESEARCH_CANDIDATE: 86
+action_NO_EDGE: 729
+action_NO_QUOTE: 2708
+action_RESEARCH_CANDIDATE: 85
 contract_sides: 3522
 fixtures: 30
 fixtures_model_invalidated: 0
