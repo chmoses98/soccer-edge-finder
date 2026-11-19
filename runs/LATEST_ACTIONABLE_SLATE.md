@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261119T171031Z-8e90f0` · generated 2026-11-19T17:10:31.498986Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261119T172527Z-4a6a42` · generated 2026-11-19T17:25:27.355530Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-19T17:07:00.347506Z (CURRENT at publish; CURRENT until 2026-11-19T17:27:00.347506Z, STALE after 2026-11-19T17:37:00.347506Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-19T17:22:00.377602Z (CURRENT at publish; CURRENT until 2026-11-19T17:42:00.377602Z, STALE after 2026-11-19T17:52:00.377602Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-19T17:10:30.685492Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.41s
+model board generated 2026-11-19T17:10:30.685492Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.43s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -39,7 +39,7 @@ model board generated 2026-11-19T17:10:30.685492Z · simulations this update: 1 
 | 2026-11-21T16:15:00Z | Nice vs Paris Saint-Germain (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T17:00:00Z | Parma vs AS Roma (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (78; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (79; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -76,20 +76,20 @@ model board generated 2026-11-19T17:10:30.685492Z · simulations this update: 1 
 | Seattle Sounders vs Real Salt Lake | away team total over 0.5 | no | 0.2800 | 0.400 [0.287, 0.514] | +0.106 | +0.033 | 0.31 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | Total goals over 1.5 | no | 0.2200 | 0.359 [0.223, 0.495] | +0.127 | +0.033 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | First team to score: home | yes | 0.5000 | 0.623 [0.508, 0.742] | +0.105 | +0.033 | 0.53 | - | * | RESEARCH_CANDIDATE |
-| Orlando City vs FC Cincinnati | First-half result: home | yes | 0.3400 | 0.472 [0.338, 0.612] | +0.116 | +0.031 | 0.37 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | First team to score: away | no | 0.5300 | 0.646 [0.528, 0.752] | +0.098 | +0.031 | 0.56 | - |  | RESEARCH_CANDIDATE |
 | Como vs Cagliari | Result: away | yes | 0.0900 | 0.209 [0.094, 0.345] | +0.114 | +0.030 | 0.11 | - |  | RESEARCH_CANDIDATE |
 | Union Berlin vs RB Leipzig | Result: home | yes | 0.1600 | 0.324 [0.137, 0.527] | +0.155 | +0.028 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | First-half total goals over 0.5 | no | 0.2400 | 0.345 [0.238, 0.452] | +0.093 | +0.027 | 0.26 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | away team total over 1.5 | no | 0.6500 | 0.757 [0.645, 0.856] | +0.092 | +0.026 | 0.67 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | First-half exact score 0-0 (home-away) | yes | 0.2700 | 0.381 [0.268, 0.502] | +0.097 | +0.026 | 0.29 | - | * | RESEARCH_CANDIDATE |
+| Nice vs Paris Saint-Germain | Result: draw | yes | 0.1800 | 0.258 [0.192, 0.327] | +0.068 | +0.025 | 0.2 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 715
+action_NO_EDGE: 714
 action_NO_QUOTE: 197
-action_RESEARCH_CANDIDATE: 78
+action_RESEARCH_CANDIDATE: 79
 contract_sides: 990
 fixtures: 26
 fixtures_model_invalidated: 0
