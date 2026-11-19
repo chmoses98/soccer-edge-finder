@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261119T204059Z-60594c` · generated 2026-11-19T20:40:59.627326Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261119T205553Z-991d93` · generated 2026-11-19T20:55:53.398524Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-19T20:37:21.246021Z (CURRENT at publish; CURRENT until 2026-11-19T20:57:21.246021Z, STALE after 2026-11-19T21:07:21.246021Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-19T20:52:21.275206Z (CURRENT at publish; CURRENT until 2026-11-19T21:12:21.275206Z, STALE after 2026-11-19T21:22:21.275206Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-19T20:40:57.024220Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.67s
+model board generated 2026-11-19T20:40:57.024220Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.83s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,9 +12,9 @@ model board generated 2026-11-19T20:40:57.024220Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-19T22:30:00Z | Vasco da Gama vs Internacional (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-19T22:30:00Z | Vitória vs Red Bull Bragantino (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-20T00:30:00Z | São Paulo vs Fluminense (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-19T22:30:00Z | Vasco da Gama vs Internacional (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-19T22:30:00Z | Vitória vs Red Bull Bragantino (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-20T00:30:00Z | São Paulo vs Fluminense (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-20T00:30:00Z | Orlando City vs FC Cincinnati (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 81 | 1 |
 | 2026-11-20T03:00:00Z | Seattle Sounders vs Real Salt Lake (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 81 | 1 |
 | 2026-11-20T19:30:00Z | Bayern Munich vs 1. FC Köln (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 0 |
@@ -51,7 +51,7 @@ model board generated 2026-11-19T20:40:57.024220Z · simulations this update: 1 
 | 2026-11-21T19:45:00Z | Napoli vs Torino (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T20:30:00Z | Bahia vs Coritiba (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (94; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (95; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -82,26 +82,26 @@ model board generated 2026-11-19T20:40:57.024220Z · simulations this update: 1 
 | Tijuana vs Atlante | btts | no | 0.4500 | 0.593 [0.457, 0.710] | +0.125 | +0.047 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | away wins by more than 1.5 | no | 0.8100 | 0.907 [0.838, 0.964] | +0.086 | +0.046 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Flamengo | away wins by more than 2.5 | no | 0.9000 | 0.966 [0.931, 0.990] | +0.060 | +0.045 | 0.94 | - |  | RESEARCH_CANDIDATE |
-| Orlando City vs FC Cincinnati | away team total over 1.5 | no | 0.4400 | 0.587 [0.440, 0.727] | +0.130 | +0.044 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Union Berlin vs RB Leipzig | Result: away | no | 0.3600 | 0.548 [0.319, 0.752] | +0.171 | +0.044 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Lazio vs Lecce | Result: home | no | 0.2900 | 0.455 [0.277, 0.631] | +0.150 | +0.043 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | SV Elversberg vs SC Freiburg | Result: away | no | 0.5200 | 0.724 [0.486, 0.917] | +0.186 | +0.043 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: home | yes | 0.0900 | 0.223 [0.101, 0.353] | +0.128 | +0.042 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: draw | yes | 0.1600 | 0.258 [0.181, 0.329] | +0.088 | +0.041 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Total goals over 3.5 | no | 0.6300 | 0.761 [0.627, 0.872] | +0.115 | +0.040 | 0.67 | - | * | RESEARCH_CANDIDATE |
-| Orlando City vs FC Cincinnati | away team total over 2.5 | no | 0.7100 | 0.821 [0.709, 0.915] | +0.097 | +0.040 | 0.75 | - |  | RESEARCH_CANDIDATE |
 | SV Elversberg vs SC Freiburg | Result: home | yes | 0.2700 | 0.509 [0.243, 0.790] | +0.225 | +0.038 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Total goals over 2.5 | no | 0.4100 | 0.558 [0.403, 0.699] | +0.131 | +0.037 | 0.44 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Philadelphia Union | Result: away | no | 0.5700 | 0.694 [0.566, 0.815] | +0.107 | +0.037 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | Total goals over 4.5 | no | 0.8300 | 0.915 [0.843, 0.971] | +0.076 | +0.036 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Total goals over 1.5 | no | 0.1800 | 0.306 [0.186, 0.430] | +0.116 | +0.036 | 0.21 | - |  | RESEARCH_CANDIDATE |
+| Orlando City vs FC Cincinnati | away team total over 1.5 | no | 0.4500 | 0.587 [0.440, 0.727] | +0.120 | +0.034 | 0.48 | - | * | RESEARCH_CANDIDATE |
+| Como vs Cagliari | Result: draw | yes | 0.1600 | 0.253 [0.168, 0.331] | +0.084 | +0.034 | 0.19 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_NO_EDGE: 869
-action_NO_QUOTE: 2709
-action_RESEARCH_CANDIDATE: 94
+action_NO_QUOTE: 2708
+action_RESEARCH_CANDIDATE: 95
 contract_sides: 3672
 fixtures: 38
 fixtures_model_invalidated: 0
