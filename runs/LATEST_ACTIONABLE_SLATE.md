@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261119T132511Z-24fdf1` · generated 2026-11-19T13:25:11.410836Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261119T134011Z-07dcdd` · generated 2026-11-19T13:40:11.680472Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-19T13:21:46.003686Z (CURRENT at publish; CURRENT until 2026-11-19T13:41:46.003686Z, STALE after 2026-11-19T13:51:46.003686Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-19T13:36:46.037646Z (CURRENT at publish; CURRENT until 2026-11-19T13:56:46.037646Z, STALE after 2026-11-19T14:06:46.037646Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-19T10:54:41.786245Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.45s
 
@@ -53,11 +53,11 @@ model board generated 2026-11-19T10:54:41.786245Z · simulations this update: 0 
 | Orlando City vs FC Cincinnati | First team to score: home | yes | 0.5000 | 0.623 [0.508, 0.742] | +0.105 | +0.033 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | home team total over 1.5 | yes | 0.5600 | 0.706 [0.549, 0.845] | +0.129 | +0.032 | 0.59 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | First-half result: home | yes | 0.3400 | 0.472 [0.338, 0.612] | +0.116 | +0.031 | 0.37 | - |  | RESEARCH_CANDIDATE |
+| Orlando City vs FC Cincinnati | First team to score: away | no | 0.5300 | 0.646 [0.528, 0.752] | +0.098 | +0.031 | 0.56 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | First-half total goals over 0.5 | no | 0.2400 | 0.345 [0.238, 0.452] | +0.093 | +0.027 | 0.26 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | away team total over 2.5 | no | 0.8600 | 0.926 [0.863, 0.973] | +0.058 | +0.026 | 0.88 | - |  | RESEARCH_CANDIDATE |
-| Orlando City vs FC Cincinnati | Second-half result: home | yes | 0.3800 | 0.517 [0.378, 0.662] | +0.121 | +0.024 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | First-half total goals over 1.5 | no | 0.6000 | 0.708 [0.588, 0.812] | +0.091 | +0.023 | 0.62 | - |  | RESEARCH_CANDIDATE |
-| Orlando City vs FC Cincinnati | First team to score: away | no | 0.5400 | 0.646 [0.528, 0.752] | +0.089 | +0.021 | 0.56 | - |  | RESEARCH_CANDIDATE |
+| Orlando City vs FC Cincinnati | away team total over 2.5 | no | 0.7300 | 0.821 [0.709, 0.915] | +0.078 | +0.020 | 0.75 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | First-half exact score 0-0 (home-away) | yes | 0.2500 | 0.345 [0.238, 0.452] | +0.082 | +0.017 | 0.26 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | First-half exact score 0-0 (home-away) | yes | 0.2800 | 0.381 [0.268, 0.502] | +0.087 | +0.016 | 0.29 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | Total goals over 5.5 | no | 0.9300 | 0.967 [0.932, 0.992] | +0.033 | +0.016 | 0.94 | - |  | RESEARCH_CANDIDATE |
@@ -66,7 +66,7 @@ model board generated 2026-11-19T10:54:41.786245Z · simulations this update: 0 
 | Orlando City vs FC Cincinnati | away wins by more than 2.5 | no | 0.9300 | 0.965 [0.932, 0.990] | +0.031 | +0.014 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Vitória vs Red Bull Bragantino | btts | no | 0.4200 | 0.532 [0.404, 0.650] | +0.095 | +0.014 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | away team total over 1.5 | no | 0.4700 | 0.587 [0.440, 0.727] | +0.100 | +0.014 | 0.48 | - |  | RESEARCH_CANDIDATE |
-| Orlando City vs FC Cincinnati | First half: away wins by more than 1.5 | no | 0.9000 | 0.945 [0.899, 0.981] | +0.039 | +0.014 | 0.91 | - | * | RESEARCH_CANDIDATE |
+| Orlando City vs FC Cincinnati | Second-half result: home | yes | 0.3900 | 0.517 [0.378, 0.662] | +0.110 | +0.013 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | Exact score 0-0 (home-away) | yes | 0.0600 | 0.120 [0.060, 0.189] | +0.057 | +0.011 | 0.07 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
