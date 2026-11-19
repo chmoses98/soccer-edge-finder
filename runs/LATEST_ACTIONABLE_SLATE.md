@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261119T131013Z-bd47c7` · generated 2026-11-19T13:10:13.129961Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261119T132511Z-24fdf1` · generated 2026-11-19T13:25:11.410836Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-19T13:06:43.434814Z (CURRENT at publish; CURRENT until 2026-11-19T13:26:43.434814Z, STALE after 2026-11-19T13:36:43.434814Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-19T13:21:46.003686Z (CURRENT at publish; CURRENT until 2026-11-19T13:41:46.003686Z, STALE after 2026-11-19T13:51:46.003686Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-19T10:54:41.786245Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.43s
+model board generated 2026-11-19T10:54:41.786245Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.45s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -24,7 +24,7 @@ model board generated 2026-11-19T10:54:41.786245Z · simulations this update: 0 
 | 2026-11-21T03:00:00Z | FC Juárez vs Atlas (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-21T03:10:00Z | Tijuana vs Atlante (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 
-## Candidates on CURRENT prices (59; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (58; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -66,15 +66,15 @@ model board generated 2026-11-19T10:54:41.786245Z · simulations this update: 0 
 | Orlando City vs FC Cincinnati | away wins by more than 2.5 | no | 0.9300 | 0.965 [0.932, 0.990] | +0.031 | +0.014 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Vitória vs Red Bull Bragantino | btts | no | 0.4200 | 0.532 [0.404, 0.650] | +0.095 | +0.014 | 0.43 | - | * | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | away team total over 1.5 | no | 0.4700 | 0.587 [0.440, 0.727] | +0.100 | +0.014 | 0.48 | - |  | RESEARCH_CANDIDATE |
+| Orlando City vs FC Cincinnati | First half: away wins by more than 1.5 | no | 0.9000 | 0.945 [0.899, 0.981] | +0.039 | +0.014 | 0.91 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | Exact score 0-0 (home-away) | yes | 0.0600 | 0.120 [0.060, 0.189] | +0.057 | +0.011 | 0.07 | - | * | RESEARCH_CANDIDATE |
-| Orlando City vs FC Cincinnati | away team total over 2.5 | no | 0.7400 | 0.821 [0.709, 0.915] | +0.068 | +0.011 | 0.75 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 639
+action_NO_EDGE: 640
 action_NO_QUOTE: 202
-action_RESEARCH_CANDIDATE: 59
+action_RESEARCH_CANDIDATE: 58
 contract_sides: 900
 fixtures: 11
 fixtures_model_invalidated: 0
