@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261119T142255Z-32bd40` · generated 2026-11-19T14:22:55.086875Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261119T142516Z-9bd206` · generated 2026-11-19T14:25:16.294061Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-19T14:19:16.774738Z (CURRENT at publish; CURRENT until 2026-11-19T14:39:16.774738Z, STALE after 2026-11-19T14:49:16.774738Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-19T14:21:50.617428Z (CURRENT at publish; CURRENT until 2026-11-19T14:41:50.617428Z, STALE after 2026-11-19T14:51:50.617428Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-19T14:10:17.107729Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.50s
+model board generated 2026-11-19T14:10:17.107729Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.49s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -26,7 +26,7 @@ model board generated 2026-11-19T14:10:17.107729Z · simulations this update: 0 
 | 2026-11-21T14:00:00Z | Como vs Cagliari (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T14:00:00Z | Lazio vs Lecce (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (66; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (67; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -63,20 +63,20 @@ model board generated 2026-11-19T14:10:17.107729Z · simulations this update: 0 
 | Orlando City vs FC Cincinnati | First-half result: home | yes | 0.3500 | 0.472 [0.338, 0.612] | +0.106 | +0.020 | 0.37 | - |  | RESEARCH_CANDIDATE |
 | Orlando City vs FC Cincinnati | away team total over 2.5 | no | 0.7300 | 0.821 [0.709, 0.915] | +0.078 | +0.020 | 0.75 | - |  | RESEARCH_CANDIDATE |
 | Como vs Cagliari | Result: away | yes | 0.1000 | 0.209 [0.094, 0.345] | +0.103 | +0.020 | 0.11 | - |  | RESEARCH_CANDIDATE |
-| Puebla vs Atlético San Luis | Exact score 1-0 (home-away) | yes | 0.0800 | 0.137 [0.089, 0.184] | +0.052 | +0.020 | 0.09 | - | * | RESEARCH_CANDIDATE |
 | Lazio vs Lecce | Result: draw | yes | 0.1800 | 0.256 [0.175, 0.334] | +0.066 | +0.017 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Total goals over 5.5 | no | 0.9100 | 0.954 [0.907, 0.986] | +0.038 | +0.017 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | First-half exact score 0-0 (home-away) | yes | 0.2500 | 0.345 [0.238, 0.452] | +0.082 | +0.017 | 0.26 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | First-half exact score 0-0 (home-away) | yes | 0.2800 | 0.381 [0.268, 0.502] | +0.087 | +0.016 | 0.29 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | Total goals over 5.5 | no | 0.9300 | 0.967 [0.932, 0.992] | +0.033 | +0.016 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | First half: both teams to score | no | 0.7700 | 0.840 [0.759, 0.911] | +0.057 | +0.016 | 0.78 | - | * | RESEARCH_CANDIDATE |
+| Orlando City vs FC Cincinnati | Second-half result: away | no | 0.6900 | 0.786 [0.678, 0.882] | +0.081 | +0.015 | 0.7 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 644
+action_NO_EDGE: 643
 action_NO_QUOTE: 202
-action_RESEARCH_CANDIDATE: 66
+action_RESEARCH_CANDIDATE: 67
 contract_sides: 912
 fixtures: 13
 fixtures_model_invalidated: 0
