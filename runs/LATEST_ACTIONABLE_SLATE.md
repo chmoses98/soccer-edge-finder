@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261120T182808Z-fb1d1c` · generated 2026-11-20T18:28:08.703147Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261120T184308Z-bb21bf` · generated 2026-11-20T18:43:08.985474Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-20T18:24:20.564619Z (CURRENT at publish; CURRENT until 2026-11-20T18:44:20.564619Z, STALE after 2026-11-20T18:54:20.564619Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-20T18:39:20.589172Z (CURRENT at publish; CURRENT until 2026-11-20T18:59:20.589172Z, STALE after 2026-11-20T19:09:20.589172Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-20T18:28:07.995906Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.68s
+model board generated 2026-11-20T18:43:08.301696Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.42s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,8 +12,8 @@ model board generated 2026-11-20T18:28:07.995906Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-20T19:30:00Z | Bayern Munich vs 1. FC Köln (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
-| 2026-11-20T19:45:00Z | Troyes vs Le Havre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-20T19:30:00Z | Bayern Munich vs 1. FC Köln (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
+| 2026-11-20T19:45:00Z | Troyes vs Le Havre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
 | 2026-11-20T23:00:00Z | Vélez Sarsfield vs Belgrano (arg.primera) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 5 | 0 |
 | 2026-11-21T01:00:00Z | Puebla vs Atlético San Luis (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-21T03:00:00Z | FC Juárez vs Atlas (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
@@ -115,8 +115,8 @@ model board generated 2026-11-20T18:28:07.995906Z · simulations this update: 1 
 ## Counts
 
 ```
-action_NO_EDGE: 1328
-action_NO_QUOTE: 184
+action_NO_EDGE: 1329
+action_NO_QUOTE: 183
 action_RESEARCH_CANDIDATE: 120
 contract_sides: 1632
 fixtures: 54
