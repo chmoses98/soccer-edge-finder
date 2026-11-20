@@ -54,9 +54,271 @@
   "delivered_total": 4170,
   "delivery_rate_total": 0.8876117496807152,
   "fixtures_tracked": 958,
-  "generated_at": "2026-11-20T02:58:39Z",
+  "generated_at": "2026-11-20T05:07:41Z",
+  "last_tick": {
+    "batches": 9,
+    "summary": [
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:ok:credits=6:paid=2:rows=14",
+          "lineups:ok:2",
+          "model_refresh:ok:fixtures=2:sim=2:cache=0:why=T-60:invalidated",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261119T233844Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:usa.mls:2026:usa.orlando_city:usa.cincinnati",
+            60,
+            51.26
+          ],
+          [
+            "fx:bra.serie_a:2026:bra.sao_paulo:bra.fluminense",
+            60,
+            51.26
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "model_refresh:ok:fixtures=34:sim=3:board=27:why=entered_lookahead_unmodelled",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "ks-20261119T235344Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:2",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1596:sim=0"
+        ],
+        "batch_id": "kd-20261120T000214Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:usa.mls:2026:usa.orlando_city:usa.cincinnati",
+            30,
+            27.77
+          ],
+          [
+            "fx:bra.serie_a:2026:bra.sao_paulo:bra.fluminense",
+            30,
+            27.77
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:ok:credits=6:paid=2:rows=14",
+          "lineups:ok:2",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1596:sim=0"
+        ],
+        "batch_id": "kd-20261120T001505Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:usa.mls:2026:usa.orlando_city:usa.cincinnati",
+            15,
+            14.9
+          ],
+          [
+            "fx:bra.serie_a:2026:bra.sao_paulo:bra.fluminense",
+            15,
+            14.9
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:2",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1596:sim=0"
+        ],
+        "batch_id": "kd-20261120T002500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:usa.mls:2026:usa.orlando_city:usa.cincinnati",
+            5,
+            5.0
+          ],
+          [
+            "fx:bra.serie_a:2026:bra.sao_paulo:bra.fluminense",
+            5,
+            5.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "model_refresh:ok:fixtures=1:sim=1:board=1:why=entered_lookahead_unmodelled",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "ks-20261120T004001Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1438:sim=0"
+        ],
+        "batch_id": "kd-20261120T005501Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:usa.mls:2026:usa.seattle_sounders:usa.real_salt_lake",
+            120,
+            124.98
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "model_refresh:ok:fixtures=1:sim=1:board=1:why=entered_lookahead_unmodelled",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "ks-20261120T011003Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1596:sim=0"
+        ],
+        "batch_id": "ks-20261120T012503Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1596:sim=0"
+        ],
+        "batch_id": "ks-20261120T014006Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:ok:fixtures=1:sim=1:cache=0:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261120T015506Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:usa.mls:2026:usa.seattle_sounders:usa.real_salt_lake",
+            60,
+            64.89
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1592:sim=0"
+        ],
+        "batch_id": "ks-20261120T021008Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1592:sim=0"
+        ],
+        "batch_id": "ks-20261120T022509Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1592:sim=0"
+        ],
+        "batch_id": "kd-20261120T023250Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:usa.mls:2026:usa.seattle_sounders:usa.real_salt_lake",
+            30,
+            27.15
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1592:sim=0"
+        ],
+        "batch_id": "kd-20261120T024502Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:usa.mls:2026:usa.seattle_sounders:usa.real_salt_lake",
+            15,
+            14.96
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1592:sim=0"
+        ],
+        "batch_id": "kd-20261120T025500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:usa.mls:2026:usa.seattle_sounders:usa.real_salt_lake",
+            5,
+            5.0
+          ]
+        ]
+      }
+    ]
+  },
   "missed_total": 528,
-  "n_pending_fixtures": 90,
+  "n_pending_fixtures": 91,
   "pending_fixtures": [
     {
       "competition_id": "ger.bundesliga",
@@ -636,6 +898,13 @@
       "competition_id": "esp.la_liga",
       "fixture_id": "fx:esp.la_liga:2026-27:esp.getafe:esp.atletico_madrid",
       "kickoff_utc": "2026-11-22T20:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.nashville:usa.cincinnati",
+      "kickoff_utc": "2026-11-22T21:00:00Z",
       "markets_discovered": 0,
       "source": "espn"
     },
