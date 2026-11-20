@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261120T191847Z-ed5a40` · generated 2026-11-20T19:18:47.625820Z · trigger `kickoff_chain:T-30/T-15` · mode `reprice_only`
+slate `slate-20261120T192844Z-b4e837` · generated 2026-11-20T19:28:44.470515Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-20T19:15:01.772598Z (CURRENT at publish; CURRENT until 2026-11-20T19:35:01.772598Z, STALE after 2026-11-20T19:45:01.772598Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-20T19:25:02.200556Z (CURRENT at publish; CURRENT until 2026-11-20T19:45:02.200556Z, STALE after 2026-11-20T19:55:02.200556Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-20T18:43:08.301696Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.50s
+model board generated 2026-11-20T18:43:08.301696Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.41s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -71,7 +71,7 @@ model board generated 2026-11-20T18:43:08.301696Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Palmeiras vs Flamengo | Result: away | no | 0.4400 | 0.738 [0.600, 0.850] | +0.281 | +0.203 | 0.64 | - | * | RESEARCH_CANDIDATE |
+| Palmeiras vs Flamengo | Result: away | no | 0.4500 | 0.738 [0.600, 0.850] | +0.270 | +0.193 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Flamengo | Result: home | yes | 0.2050 | 0.476 [0.310, 0.637] | +0.260 | +0.155 | 0.35 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Flamengo | away wins by more than 1.5 | no | 0.7100 | 0.895 [0.813, 0.955] | +0.170 | +0.131 | 0.84 | - | * | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: away | no | 0.2400 | 0.482 [0.293, 0.651] | +0.229 | +0.113 | 0.34 | - | * | RESEARCH_CANDIDATE |
