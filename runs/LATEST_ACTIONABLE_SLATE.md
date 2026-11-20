@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261120T172151Z-3b4f6f` · generated 2026-11-20T17:21:51.639072Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261120T172759Z-676f70` · generated 2026-11-20T17:27:59.239530Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-20T17:18:10.976814Z (CURRENT at publish; CURRENT until 2026-11-20T17:38:10.976814Z, STALE after 2026-11-20T17:48:10.976814Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-20T17:24:16.368126Z (CURRENT at publish; CURRENT until 2026-11-20T17:44:16.368126Z, STALE after 2026-11-20T17:54:16.368126Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-20T17:06:25.627509Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.41s
 
@@ -66,7 +66,7 @@ model board generated 2026-11-20T17:06:25.627509Z · simulations this update: 0 
 | 2026-11-22T16:30:00Z | Werder Bremen vs Hamburger SV (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T17:00:00Z | Bologna vs Udinese (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (119; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (120; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -114,9 +114,9 @@ model board generated 2026-11-20T17:06:25.627509Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1323
+action_NO_EDGE: 1322
 action_NO_QUOTE: 184
-action_RESEARCH_CANDIDATE: 119
+action_RESEARCH_CANDIDATE: 120
 contract_sides: 1626
 fixtures: 53
 fixtures_model_invalidated: 0
