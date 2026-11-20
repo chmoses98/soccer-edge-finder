@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261120T193502Z-c612b5` · generated 2026-11-20T19:35:02.150510Z · trigger `kickoff_chain:T-30/T-15` · mode `reprice_only`
+slate `slate-20261120T194342Z-dd676a` · generated 2026-11-20T19:43:42.356553Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-20T19:31:17.758160Z (CURRENT at publish; CURRENT until 2026-11-20T19:51:17.758160Z, STALE after 2026-11-20T20:01:17.758160Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-20T19:40:00.058012Z (CURRENT at publish; CURRENT until 2026-11-20T20:00:00.058012Z, STALE after 2026-11-20T20:10:00.058012Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-20T18:43:08.301696Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.41s
+model board generated 2026-11-20T18:43:08.301696Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.41s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -66,13 +66,13 @@ model board generated 2026-11-20T18:43:08.301696Z · simulations this update: 0 
 | 2026-11-22T16:30:00Z | Werder Bremen vs Hamburger SV (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T17:00:00Z | Bologna vs Udinese (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (121; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (122; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Palmeiras vs Flamengo | Result: away | no | 0.4550 | 0.738 [0.600, 0.850] | +0.265 | +0.188 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Flamengo | Result: home | yes | 0.2100 | 0.476 [0.310, 0.637] | +0.254 | +0.150 | 0.35 | - |  | RESEARCH_CANDIDATE |
-| Palmeiras vs Flamengo | away wins by more than 1.5 | no | 0.7200 | 0.895 [0.813, 0.955] | +0.161 | +0.121 | 0.84 | - | * | RESEARCH_CANDIDATE |
+| Palmeiras vs Flamengo | away wins by more than 1.5 | no | 0.7100 | 0.895 [0.813, 0.955] | +0.170 | +0.131 | 0.84 | - | * | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: away | no | 0.2400 | 0.482 [0.293, 0.651] | +0.229 | +0.113 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Hull City vs Brighton & Hove Albion | Result: away | no | 0.3700 | 0.633 [0.416, 0.831] | +0.247 | +0.109 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | away team total over 1.5 | no | 0.5700 | 0.761 [0.636, 0.866] | +0.173 | +0.101 | 0.67 | - | * | RESEARCH_CANDIDATE |
@@ -114,9 +114,9 @@ model board generated 2026-11-20T18:43:08.301696Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1322
+action_NO_EDGE: 1321
 action_NO_QUOTE: 183
-action_RESEARCH_CANDIDATE: 121
+action_RESEARCH_CANDIDATE: 122
 contract_sides: 1626
 fixtures: 53
 fixtures_model_invalidated: 0
