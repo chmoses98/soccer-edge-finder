@@ -1,11 +1,14 @@
 {
-  "as_of": "2026-11-19T21:23:17.319574+00:00",
-  "events": 498,
-  "events_skipped_unmapped": 265,
-  "fixtures_mapped": 233,
+  "as_of": "2026-11-20T03:35:35.387815+00:00",
+  "events": 502,
+  "events_skipped_unmapped": 270,
+  "fixtures_mapped": 232,
   "health": {
-    "reasons": [],
-    "state": "HEALTHY"
+    "reasons": [
+      "weather_failures:3",
+      "weather_stopped:consecutive_failures:skipped=99"
+    ],
+    "state": "DEGRADED"
   },
   "leagues": [
     "afc.champions",
@@ -78,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 32,
+    "captured": 48,
     "events": 58,
     "failures": [],
-    "published_post": 22,
+    "published_post": 16,
     "published_pre_kickoff": 0,
-    "unchanged": 26,
-    "unpublished": 36
+    "unchanged": 10,
+    "unpublished": 42
   },
   "map_proposals": {
     "bel.1": {
@@ -154,6 +157,18 @@
         "841": "Kuwait"
       }
     },
+    "fra.coupe_de_france": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "134101": "Pays de Saint-Omer",
+        "134113": "Le Pays Du Valois",
+        "18906": "Le Puy",
+        "21306": "AS Cannes",
+        "2927": "Caen",
+        "6732": "Valenciennes"
+      }
+    },
     "nor.1": {
       "ambiguous": {},
       "proposed": {},
@@ -214,12 +229,13 @@
       "ambiguous": {},
       "proposed": {},
       "unresolved": {
-        "131554": "TBD Away"
+        "131554": "TBD Away",
+        "131556": "TBD Home"
       }
     }
   },
   "map_version": "4",
-  "results_appended": 0,
+  "results_appended": 4,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -254,6 +270,10 @@
     "13083": "Hapoel Be'er",
     "131470": "Reus FC Reddis",
     "131554": "TBD Away",
+    "131556": "TBD Home",
+    "134101": "Pays de Saint-Omer",
+    "134113": "Le Pays Du Valois",
+    "18906": "Le Puy",
     "19246": "Riga FC",
     "20024": "Ararat-Armenia",
     "20025": "Iberia 1999",
@@ -261,6 +281,7 @@
     "20301": "Mj\u00e4llby AIF",
     "204": "Bolivia",
     "20703": "Inter D'Escaldes",
+    "21306": "AS Cannes",
     "21615": "Torreense",
     "21723": "Utebo",
     "21922": "Sabah FK",
@@ -268,6 +289,7 @@
     "22437": "CD Minera",
     "2405": "Malaysia",
     "245": "Tenerife",
+    "2927": "Caen",
     "3024": "FC Thun",
     "4375": "Iraq",
     "4380": "Syria",
@@ -290,6 +312,7 @@
     "620": "SK Brann",
     "658": "China",
     "6724": "Kyrgyz Republic",
+    "6732": "Valenciennes",
     "6827": "Alcoyano",
     "7349": "Vietnam",
     "7853": "AGF",
@@ -303,13 +326,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 112,
-    "events": 112,
-    "failures": [],
+    "captured": 11,
+    "events": 113,
+    "failures": [
+      "401878937: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=51.2089&longitude=3.2242&hourly=tem",
+      "401878940: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Charleroi&count=5&language=en&f",
+      "401878939: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Genk&count=5&language=en&format"
+    ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 0,
-    "stopped": null
+    "skipped": 99,
+    "stopped": "consecutive_failures"
   }
 }
