@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261120T094753Z-d8ab48` · generated 2026-11-20T09:47:53.452251Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261120T100253Z-a3385e` · generated 2026-11-20T10:02:53.374899Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-20T09:44:16.450326Z (CURRENT at publish; CURRENT until 2026-11-20T10:04:16.450326Z, STALE after 2026-11-20T10:14:16.450326Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-20T09:59:16.485538Z (CURRENT at publish; CURRENT until 2026-11-20T10:19:16.485538Z, STALE after 2026-11-20T10:29:16.485538Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-20T07:47:30.774801Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.02s
+model board generated 2026-11-20T07:47:30.774801Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.81s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -57,7 +57,7 @@ model board generated 2026-11-20T07:47:30.774801Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Palmeiras vs Flamengo | Result: away | no | 0.4750 | 0.738 [0.600, 0.850] | +0.245 | +0.168 | 0.64 | - | * | RESEARCH_CANDIDATE |
+| Palmeiras vs Flamengo | Result: away | no | 0.4800 | 0.738 [0.600, 0.850] | +0.240 | +0.163 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Flamengo | Result: home | yes | 0.2350 | 0.476 [0.310, 0.637] | +0.228 | +0.124 | 0.35 | - |  | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: away | no | 0.2400 | 0.482 [0.293, 0.651] | +0.229 | +0.113 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Hull City vs Brighton & Hove Albion | Result: away | no | 0.3700 | 0.633 [0.418, 0.835] | +0.247 | +0.109 | 0.47 | - | * | RESEARCH_CANDIDATE |
