@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261120T231636Z-9b15f1` · generated 2026-11-20T23:16:36.174485Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261120T231734Z-0e1cb5` · generated 2026-11-20T23:17:34.567455Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-20T23:12:39.486309Z (CURRENT at publish; CURRENT until 2026-11-20T23:32:39.486309Z, STALE after 2026-11-20T23:42:39.486309Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-20T23:13:44.864933Z (CURRENT at publish; CURRENT until 2026-11-20T23:33:44.864933Z, STALE after 2026-11-20T23:43:44.864933Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-20T22:46:00.286469Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.08s
+model board generated 2026-11-20T23:17:31.676842Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 1.03s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -70,6 +70,7 @@ model board generated 2026-11-20T22:46:00.286469Z · simulations this update: 0 
 | 2026-11-22T21:00:00Z | Nashville SC vs FC Cincinnati (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 47 | 0 |
 | 2026-11-22T21:30:00Z | Fluminense vs Mirassol (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T22:30:00Z | Red Bull Bragantino vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-22T23:07:00Z | Guadalajara vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
 ## Candidates on CURRENT prices (138; RESEARCH_ONLY = analysis, never a bet)
 
@@ -119,11 +120,11 @@ model board generated 2026-11-20T22:46:00.286469Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1487
-action_NO_QUOTE: 181
+action_NO_EDGE: 1514
+action_NO_QUOTE: 182
 action_RESEARCH_CANDIDATE: 138
-contract_sides: 1806
-fixtures: 58
+contract_sides: 1834
+fixtures: 59
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
