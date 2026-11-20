@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261120T113203Z-9654df` · generated 2026-11-20T11:32:03.689072Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261120T114728Z-f024ea` · generated 2026-11-20T11:47:28.787315Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-20T11:28:22.103604Z (CURRENT at publish; CURRENT until 2026-11-20T11:48:22.103604Z, STALE after 2026-11-20T11:58:22.103604Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-20T11:43:51.389129Z (CURRENT at publish; CURRENT until 2026-11-20T12:03:51.389129Z, STALE after 2026-11-20T12:13:51.389129Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-20T11:17:10.799871Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.82s
+model board generated 2026-11-20T11:17:10.799871Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.97s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -53,7 +53,7 @@ model board generated 2026-11-20T11:17:10.799871Z · simulations this update: 0 
 | 2026-11-22T01:00:00Z | Pumas UNAM vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-22T03:00:00Z | Tigres UANL vs Club América (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 
-## Candidates on CURRENT prices (92; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (95; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -74,16 +74,16 @@ model board generated 2026-11-20T11:17:10.799871Z · simulations this update: 0 
 | Newcastle United vs Arsenal | Result: home | yes | 0.1600 | 0.342 [0.183, 0.511] | +0.173 | +0.061 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | away team total over 0.5 | no | 0.2500 | 0.406 [0.279, 0.529] | +0.143 | +0.060 | 0.3 | - | * | RESEARCH_CANDIDATE |
 | Nice vs Paris Saint-Germain | Result: away | no | 0.3300 | 0.527 [0.337, 0.710] | +0.181 | +0.056 | 0.38 | - | * | RESEARCH_CANDIDATE |
-| SV Elversberg vs SC Freiburg | Result: away | no | 0.5100 | 0.723 [0.485, 0.917] | +0.196 | +0.053 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | away team total over 0.5 | no | 0.2400 | 0.391 [0.255, 0.520] | +0.138 | +0.053 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Schalke 04 vs VfB Stuttgart | Result: away | no | 0.4800 | 0.683 [0.426, 0.887] | +0.185 | +0.052 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | away team total over 1.5 | no | 0.6200 | 0.761 [0.636, 0.866] | +0.124 | +0.051 | 0.67 | - |  | RESEARCH_CANDIDATE |
-| SV Elversberg vs SC Freiburg | Result: home | yes | 0.2600 | 0.509 [0.243, 0.791] | +0.235 | +0.047 | 0.3 | - |  | RESEARCH_CANDIDATE |
+| SV Elversberg vs SC Freiburg | Result: home | yes | 0.2600 | 0.509 [0.243, 0.791] | +0.235 | +0.047 | 0.3 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | away team total over 2.5 | no | 0.7700 | 0.876 [0.785, 0.947] | +0.094 | +0.047 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | btts | no | 0.4400 | 0.578 [0.453, 0.689] | +0.121 | +0.046 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Flamengo | away wins by more than 2.5 | no | 0.9000 | 0.966 [0.931, 0.990] | +0.060 | +0.045 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Philadelphia Union | away team total over 0.5 | no | 0.1900 | 0.315 [0.205, 0.421] | +0.115 | +0.044 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Lazio vs Lecce | Result: home | no | 0.2900 | 0.455 [0.276, 0.632] | +0.151 | +0.043 | 0.33 | - | * | RESEARCH_CANDIDATE |
+| SV Elversberg vs SC Freiburg | Result: away | no | 0.5200 | 0.723 [0.485, 0.917] | +0.186 | +0.043 | 0.56 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | Total goals over 3.5 | no | 0.6000 | 0.745 [0.600, 0.876] | +0.128 | +0.043 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Union Berlin vs RB Leipzig | Result: away | no | 0.3600 | 0.548 [0.317, 0.752] | +0.172 | +0.042 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: home | yes | 0.0900 | 0.224 [0.101, 0.354] | +0.128 | +0.042 | 0.13 | - |  | RESEARCH_CANDIDATE |
@@ -101,9 +101,9 @@ model board generated 2026-11-20T11:17:10.799871Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1215
+action_NO_EDGE: 1212
 action_NO_QUOTE: 285
-action_RESEARCH_CANDIDATE: 92
+action_RESEARCH_CANDIDATE: 95
 contract_sides: 1592
 fixtures: 40
 fixtures_model_invalidated: 0
