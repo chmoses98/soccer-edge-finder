@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261120T185805Z-c12d3b` · generated 2026-11-20T18:58:05.219152Z · trigger `kickoff_chain:T-60` · mode `reprice_only`
+slate `slate-20261120T190429Z-e2a7bb` · generated 2026-11-20T19:04:29.396372Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-20T18:54:22.733912Z (CURRENT at publish; CURRENT until 2026-11-20T19:14:22.733912Z, STALE after 2026-11-20T19:24:22.733912Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-20T19:00:47.076638Z (CURRENT at publish; CURRENT until 2026-11-20T19:20:47.076638Z, STALE after 2026-11-20T19:30:47.076638Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-20T18:43:08.301696Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.42s
 
@@ -13,7 +13,7 @@ model board generated 2026-11-20T18:43:08.301696Z · simulations this update: 0 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
 | 2026-11-20T19:30:00Z | Bayern Munich vs 1. FC Köln (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
-| 2026-11-20T19:45:00Z | Troyes vs Le Havre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
+| 2026-11-20T19:45:00Z | Troyes vs Le Havre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | AGING entry | CURRENT | 3 | 0 |
 | 2026-11-20T23:00:00Z | Vélez Sarsfield vs Belgrano (arg.primera) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 5 | 0 |
 | 2026-11-21T01:00:00Z | Puebla vs Atlético San Luis (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-21T03:00:00Z | FC Juárez vs Atlas (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
@@ -115,8 +115,8 @@ model board generated 2026-11-20T18:43:08.301696Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1329
-action_NO_QUOTE: 183
+action_NO_EDGE: 1328
+action_NO_QUOTE: 184
 action_RESEARCH_CANDIDATE: 120
 contract_sides: 1632
 fixtures: 54
