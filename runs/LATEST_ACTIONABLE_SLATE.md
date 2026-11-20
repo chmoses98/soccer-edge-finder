@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261119T235816Z-73ad8f` · generated 2026-11-19T23:58:16.460826Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261120T000551Z-22db49` · generated 2026-11-20T00:05:51.981763Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-19T23:53:44.454612Z (CURRENT at publish; CURRENT until 2026-11-20T00:13:44.454612Z, STALE after 2026-11-20T00:23:44.454612Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-20T00:02:14.086951Z (CURRENT at publish; CURRENT until 2026-11-20T00:22:14.086951Z, STALE after 2026-11-20T00:32:14.086951Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-19T23:57:23.526583Z · simulations this update: 27 · Odds API calls this update: 0 (credits 0) · reprice 0.94s
+model board generated 2026-11-19T23:57:23.526583Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.89s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -53,7 +53,7 @@ model board generated 2026-11-19T23:57:23.526583Z · simulations this update: 27
 | 2026-11-21T23:00:00Z | Santos Laguna vs León (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-21T23:00:00Z | Inter Miami vs Columbus Crew (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 
-## Candidates on CURRENT prices (117; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (115; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -80,7 +80,6 @@ model board generated 2026-11-19T23:57:23.526583Z · simulations this update: 27
 | Schalke 04 vs VfB Stuttgart | Result: away | no | 0.4800 | 0.682 [0.426, 0.887] | +0.185 | +0.052 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Philadelphia Union | away team total over 1.5 | no | 0.5200 | 0.668 [0.531, 0.785] | +0.130 | +0.051 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | away team total over 1.5 | no | 0.6000 | 0.745 [0.604, 0.860] | +0.128 | +0.051 | 0.65 | - | * | RESEARCH_CANDIDATE |
-| Puebla vs Atlético San Luis | away team total over 0.5 | no | 0.2600 | 0.406 [0.279, 0.529] | +0.133 | +0.049 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | Total goals over 3.5 | no | 0.6700 | 0.807 [0.685, 0.908] | +0.122 | +0.048 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | away team total over 2.5 | no | 0.7700 | 0.876 [0.785, 0.947] | +0.094 | +0.047 | 0.81 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Total goals over 2.5 | no | 0.4000 | 0.558 [0.403, 0.699] | +0.142 | +0.047 | 0.44 | - | * | RESEARCH_CANDIDATE |
@@ -92,18 +91,19 @@ model board generated 2026-11-19T23:57:23.526583Z · simulations this update: 27
 | Union Berlin vs RB Leipzig | Result: away | no | 0.3600 | 0.548 [0.319, 0.752] | +0.171 | +0.044 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Lazio vs Lecce | Result: home | no | 0.2900 | 0.455 [0.277, 0.631] | +0.150 | +0.043 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | SV Elversberg vs SC Freiburg | Result: away | no | 0.5200 | 0.724 [0.486, 0.917] | +0.186 | +0.043 | 0.56 | - | * | RESEARCH_CANDIDATE |
-| Orlando City vs FC Cincinnati | First-half result: away | no | 0.6800 | 0.793 [0.698, 0.882] | +0.098 | +0.043 | 0.72 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | Total goals over 3.5 | no | 0.6000 | 0.745 [0.600, 0.876] | +0.128 | +0.043 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: home | yes | 0.0900 | 0.223 [0.101, 0.353] | +0.128 | +0.042 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | away team total over 0.5 | no | 0.2500 | 0.391 [0.255, 0.520] | +0.128 | +0.042 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: draw | yes | 0.1600 | 0.258 [0.181, 0.329] | +0.088 | +0.041 | 0.19 | - |  | RESEARCH_CANDIDATE |
+| Seattle Sounders vs Real Salt Lake | Total goals over 3.5 | no | 0.6300 | 0.761 [0.627, 0.872] | +0.115 | +0.040 | 0.67 | - |  | RESEARCH_CANDIDATE |
+| Orlando City vs FC Cincinnati | away team total over 0.5 | no | 0.1400 | 0.252 [0.153, 0.359] | +0.104 | +0.039 | 0.17 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1260
+action_NO_EDGE: 1262
 action_NO_QUOTE: 219
-action_RESEARCH_CANDIDATE: 117
+action_RESEARCH_CANDIDATE: 115
 contract_sides: 1596
 fixtures: 40
 fixtures_model_invalidated: 0
