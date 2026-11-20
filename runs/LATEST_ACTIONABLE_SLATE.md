@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261120T084720Z-9a8038` · generated 2026-11-20T08:47:20.679346Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261120T090219Z-8c75b3` · generated 2026-11-20T09:02:19.049063Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-20T08:43:43.928036Z (CURRENT at publish; CURRENT until 2026-11-20T09:03:43.928036Z, STALE after 2026-11-20T09:13:43.928036Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-20T08:58:42.074167Z (CURRENT at publish; CURRENT until 2026-11-20T09:18:42.074167Z, STALE after 2026-11-20T09:28:42.074167Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-20T07:47:30.774801Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.97s
+model board generated 2026-11-20T07:47:30.774801Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.82s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -53,12 +53,12 @@ model board generated 2026-11-20T07:47:30.774801Z · simulations this update: 0 
 | 2026-11-22T01:00:00Z | Pumas UNAM vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-22T03:00:00Z | Tigres UANL vs Club América (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 
-## Candidates on CURRENT prices (90; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (91; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Palmeiras vs Flamengo | Result: away | no | 0.4750 | 0.738 [0.600, 0.850] | +0.245 | +0.168 | 0.64 | - | * | RESEARCH_CANDIDATE |
-| Palmeiras vs Flamengo | Result: home | yes | 0.2350 | 0.476 [0.310, 0.637] | +0.228 | +0.124 | 0.35 | - |  | RESEARCH_CANDIDATE |
+| Palmeiras vs Flamengo | Result: home | yes | 0.2300 | 0.476 [0.310, 0.637] | +0.234 | +0.129 | 0.35 | - |  | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: away | no | 0.2400 | 0.482 [0.293, 0.651] | +0.229 | +0.113 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Hull City vs Brighton & Hove Albion | Result: away | no | 0.3700 | 0.633 [0.418, 0.835] | +0.247 | +0.109 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Flamengo | away wins by more than 1.5 | no | 0.7400 | 0.895 [0.813, 0.955] | +0.141 | +0.102 | 0.84 | - | * | RESEARCH_CANDIDATE |
@@ -101,9 +101,9 @@ model board generated 2026-11-20T07:47:30.774801Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1270
+action_NO_EDGE: 1269
 action_NO_QUOTE: 232
-action_RESEARCH_CANDIDATE: 90
+action_RESEARCH_CANDIDATE: 91
 contract_sides: 1592
 fixtures: 40
 fixtures_model_invalidated: 0
