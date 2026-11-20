@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-20T20:10:19.715754Z",
+  "as_of": "2026-11-20T23:28:05.826416Z",
   "by_competition": {
     "afc.champions": {
       "fixtures": 16,
@@ -8,10 +8,10 @@
       "with_xi_ge_20min": 1
     },
     "arg.1": {
-      "fixtures": 30,
-      "median_lead_minutes": 22.651208883333332,
-      "with_pre_kickoff_xi": 22,
-      "with_xi_ge_20min": 13
+      "fixtures": 31,
+      "median_lead_minutes": 22.65177196666667,
+      "with_pre_kickoff_xi": 23,
+      "with_xi_ge_20min": 14
     },
     "aus.1": {
       "fixtures": 12,
@@ -38,7 +38,7 @@
       "with_xi_ge_20min": 3
     },
     "chi.1": {
-      "fixtures": 16,
+      "fixtures": 17,
       "median_lead_minutes": 8.9126023,
       "with_pre_kickoff_xi": 3,
       "with_xi_ge_20min": 1
@@ -50,7 +50,7 @@
       "with_xi_ge_20min": 0
     },
     "col.1": {
-      "fixtures": 29,
+      "fixtures": 30,
       "median_lead_minutes": 1.1767865666666668,
       "with_pre_kickoff_xi": 3,
       "with_xi_ge_20min": 1
@@ -6299,22 +6299,22 @@
       "xi_first_observed_at": "2026-11-07T17:34:18.860707+00:00"
     }
   ],
-  "fixtures_kickoff_passed": 1130,
-  "fixtures_tracked": 1232,
+  "fixtures_kickoff_passed": 1133,
+  "fixtures_tracked": 1274,
   "lead_time_minutes": {
     "max": 71.21162246666667,
-    "median": 26.394394966666667,
+    "median": 26.453360291666666,
     "min": 0.025024583333333333,
-    "n": 305,
-    "p10": 11.507835660000001,
-    "p90": 56.17828565333333
+    "n": 306,
+    "p10": 11.523138874999999,
+    "p90": 56.17793400000001
   },
-  "post_kickoff_first_xi": 502,
+  "post_kickoff_first_xi": 514,
   "schema": "lineup_lead_time_v1",
-  "share_pre_kickoff_xi": 0.26991150442477874,
-  "share_xi_ge_20min": 0.22123893805309736,
+  "share_pre_kickoff_xi": 0.27007943512797883,
+  "share_xi_ge_20min": 0.22153574580759047,
   "target": "audit \u00a7I1: >= 90% of priced fixtures with a confirmed XI captured >= 20 min before kickoff",
-  "with_any_xi": 807,
-  "with_pre_kickoff_xi": 305,
-  "with_xi_ge_20min_before_kickoff": 250
+  "with_any_xi": 820,
+  "with_pre_kickoff_xi": 306,
+  "with_xi_ge_20min_before_kickoff": 251
 }

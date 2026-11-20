@@ -1,21 +1,21 @@
 {
   "by_horizon": {
     "120": {
-      "achieved_minutes_median": 122.47,
+      "achieved_minutes_median": 122.49,
       "achieved_minutes_p10": 117.78,
       "achieved_minutes_p90": 126.42,
-      "delivered": 899,
-      "delivery_rate": 0.9335410176531672,
+      "delivered": 901,
+      "delivery_rate": 0.933678756476684,
       "lateness_minutes_max": 64.28,
-      "lateness_minutes_median": -2.47,
+      "lateness_minutes_median": -2.49,
       "missed": 64
     },
     "15": {
       "achieved_minutes_median": 11.92,
       "achieved_minutes_p10": 10.28,
-      "achieved_minutes_p90": 13.4,
-      "delivered": 816,
-      "delivery_rate": 0.8708644610458911,
+      "achieved_minutes_p90": 13.38,
+      "delivered": 817,
+      "delivery_rate": 0.8710021321961621,
       "lateness_minutes_max": 14.64,
       "lateness_minutes_median": 3.08,
       "missed": 121
@@ -24,47 +24,40 @@
       "achieved_minutes_median": 26.8,
       "achieved_minutes_p10": 24.28,
       "achieved_minutes_p90": 28.79,
-      "delivered": 820,
-      "delivery_rate": 0.8742004264392325,
+      "delivered": 821,
+      "delivery_rate": 0.8743343982960596,
       "lateness_minutes_max": 18.49,
       "lateness_minutes_median": 3.2,
       "missed": 118
     },
     "5": {
       "achieved_minutes_median": 2.0,
-      "achieved_minutes_p10": 0.07,
+      "achieved_minutes_p10": 0.04,
       "achieved_minutes_p90": 2.5,
-      "delivered": 813,
-      "delivery_rate": 0.8695187165775401,
+      "delivered": 814,
+      "delivery_rate": 0.8696581196581197,
       "lateness_minutes_max": 9.28,
       "lateness_minutes_median": 3.0,
       "missed": 122
     },
     "60": {
       "achieved_minutes_median": 60.95,
-      "achieved_minutes_p10": 55.77,
+      "achieved_minutes_p10": 55.74,
       "achieved_minutes_p90": 62.22,
-      "delivered": 847,
-      "delivery_rate": 0.891578947368421,
+      "delivered": 848,
+      "delivery_rate": 0.8916929547844374,
       "lateness_minutes_max": 33.2,
       "lateness_minutes_median": -0.95,
       "missed": 103
     }
   },
-  "delivered_total": 4195,
-  "delivery_rate_total": 0.8882066483167478,
-  "fixtures_tracked": 963,
-  "generated_at": "2026-11-20T20:10:22Z",
+  "delivered_total": 4201,
+  "delivery_rate_total": 0.8883484880524424,
+  "fixtures_tracked": 965,
+  "generated_at": "2026-11-20T23:28:09Z",
   "missed_total": 528,
-  "n_pending_fixtures": 88,
+  "n_pending_fixtures": 91,
   "pending_fixtures": [
-    {
-      "competition_id": "arg.primera",
-      "fixture_id": "fx:arg.primera:2026:arg.velez:arg.belgrano",
-      "kickoff_utc": "2026-11-20T23:00:00Z",
-      "markets_discovered": 5,
-      "source": "run_output"
-    },
     {
       "competition_id": "mex.liga_mx",
       "fixture_id": "fx:mex.liga_mx:2026:mex.puebla:mex.san_luis",
@@ -671,6 +664,34 @@
       "competition_id": "ita.serie_a",
       "fixture_id": "fx:ita.serie_a:2026-27:ita.monza:ita.fiorentina",
       "kickoff_utc": "2026-11-23T19:45:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "arg.primera",
+      "fixture_id": "fx:arg.primera:2026:arg.gimnasia_la_plata:arg.newells",
+      "kickoff_utc": "2026-11-23T20:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "eng.premier_league",
+      "fixture_id": "fx:eng.premier_league:2026-27:eng.brentford:eng.everton",
+      "kickoff_utc": "2026-11-23T20:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "esp.la_liga",
+      "fixture_id": "fx:esp.la_liga:2026-27:esp.levante:esp.elche",
+      "kickoff_utc": "2026-11-23T20:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "bra.serie_a",
+      "fixture_id": "fx:bra.serie_a:2026:bra.internacional:bra.vitoria",
+      "kickoff_utc": "2026-11-23T22:30:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }
