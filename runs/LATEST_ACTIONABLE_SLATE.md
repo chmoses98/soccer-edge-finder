@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261120T195843Z-474937` · generated 2026-11-20T19:58:43.884383Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
+slate `slate-20261120T201350Z-143eb8` · generated 2026-11-20T20:13:50.112335Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-20T19:55:01.659282Z (CURRENT at publish; CURRENT until 2026-11-20T20:15:01.659282Z, STALE after 2026-11-20T20:25:01.659282Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-20T20:10:01.718225Z (CURRENT at publish; CURRENT until 2026-11-20T20:30:01.718225Z, STALE after 2026-11-20T20:40:01.718225Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-20T18:43:08.301696Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.42s
+model board generated 2026-11-20T20:13:46.490723Z · simulations this update: 4 · Odds API calls this update: 0 (credits 0) · reprice 0.43s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -53,6 +53,7 @@ model board generated 2026-11-20T18:43:08.301696Z · simulations this update: 0 
 | 2026-11-22T11:30:00Z | Sassuolo vs Genoa (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T12:00:00Z | Deportivo Alavés vs Deportivo La Coruña (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T12:00:00Z | FC Barcelona vs Villarreal (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-22T12:00:00Z | Getafe vs Atlético Madrid (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T12:00:00Z | Osasuna vs Málaga (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T12:00:00Z | Racing Santander vs Real Sociedad (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T12:00:00Z | Rayo Vallecano vs Valencia (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -64,30 +65,35 @@ model board generated 2026-11-20T18:43:08.301696Z · simulations this update: 0 
 | 2026-11-22T16:15:00Z | Lorient vs Rennes (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T16:30:00Z | Werder Bremen vs Hamburger SV (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T17:00:00Z | Bologna vs Udinese (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-22T19:00:00Z | Athletico Paranaense vs Remo (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-22T19:45:00Z | Marseille vs Le Mans (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-22T19:45:00Z | Atalanta vs Inter Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (120; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (125; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Palmeiras vs Flamengo | Result: away | no | 0.4650 | 0.738 [0.600, 0.850] | +0.255 | +0.178 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Flamengo | Result: home | yes | 0.2100 | 0.476 [0.310, 0.637] | +0.254 | +0.150 | 0.35 | - |  | RESEARCH_CANDIDATE |
+| Getafe vs Atlético Madrid | Result: away | no | 0.3800 | 0.625 [0.468, 0.777] | +0.229 | +0.124 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Flamengo | away wins by more than 1.5 | no | 0.7200 | 0.895 [0.813, 0.955] | +0.161 | +0.121 | 0.84 | - | * | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: away | no | 0.2400 | 0.482 [0.293, 0.651] | +0.229 | +0.113 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Hull City vs Brighton & Hove Albion | Result: away | no | 0.3700 | 0.633 [0.416, 0.831] | +0.247 | +0.109 | 0.47 | - | * | RESEARCH_CANDIDATE |
-| Puebla vs Atlético San Luis | away team total over 1.5 | no | 0.5800 | 0.761 [0.636, 0.866] | +0.164 | +0.091 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | away team total over 1.5 | no | 0.5600 | 0.745 [0.604, 0.860] | +0.168 | +0.090 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Real Madrid vs Celta Vigo | Result: home | no | 0.1500 | 0.369 [0.204, 0.541] | +0.210 | +0.090 | 0.23 | - | * | RESEARCH_CANDIDATE |
 | Newcastle United vs Arsenal | Result: away | no | 0.3800 | 0.599 [0.423, 0.766] | +0.202 | +0.088 | 0.46 | - | * | RESEARCH_CANDIDATE |
-| New England Revolution vs Philadelphia Union | away team total over 1.5 | no | 0.4900 | 0.668 [0.531, 0.785] | +0.160 | +0.081 | 0.57 | - | * | RESEARCH_CANDIDATE |
+| Puebla vs Atlético San Luis | away team total over 1.5 | no | 0.5900 | 0.761 [0.636, 0.866] | +0.154 | +0.081 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | away team total over 0.5 | no | 0.2300 | 0.406 [0.279, 0.529] | +0.164 | +0.080 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | away team total over 1.5 | no | 0.4900 | 0.671 [0.527, 0.796] | +0.163 | +0.078 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | btts | no | 0.4100 | 0.578 [0.453, 0.689] | +0.151 | +0.077 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Como vs Cagliari | Result: home | no | 0.2500 | 0.463 [0.269, 0.640] | +0.200 | +0.076 | 0.32 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Flamengo | home wins by more than 1.5 | yes | 0.0800 | 0.253 [0.124, 0.401] | +0.168 | +0.075 | 0.15 | - |  | RESEARCH_CANDIDATE |
+| New England Revolution vs Philadelphia Union | away team total over 1.5 | no | 0.5000 | 0.668 [0.531, 0.785] | +0.150 | +0.071 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | btts | no | 0.3600 | 0.530 [0.409, 0.654] | +0.153 | +0.069 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Hull City vs Brighton & Hove Albion | Result: home | yes | 0.1500 | 0.373 [0.174, 0.604] | +0.215 | +0.066 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Philadelphia Union | away team total over 0.5 | no | 0.1700 | 0.315 [0.205, 0.421] | +0.136 | +0.065 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Flamengo | away wins by more than 2.5 | no | 0.8800 | 0.966 [0.931, 0.990] | +0.079 | +0.064 | 0.94 | - |  | RESEARCH_CANDIDATE |
+| Getafe vs Atlético Madrid | Result: home | yes | 0.1500 | 0.329 [0.185, 0.488] | +0.170 | +0.063 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | away team total over 0.5 | no | 0.2300 | 0.391 [0.255, 0.520] | +0.149 | +0.063 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | away team total over 2.5 | no | 0.8100 | 0.917 [0.842, 0.971] | +0.096 | +0.062 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Newcastle United vs Arsenal | Result: home | yes | 0.1600 | 0.342 [0.183, 0.511] | +0.173 | +0.061 | 0.21 | - |  | RESEARCH_CANDIDATE |
@@ -107,17 +113,15 @@ model board generated 2026-11-20T18:43:08.301696Z · simulations this update: 0 
 | Parma vs AS Roma | Result: draw | yes | 0.1600 | 0.258 [0.181, 0.329] | +0.088 | +0.041 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Real Madrid vs Celta Vigo | Result: draw | yes | 0.1100 | 0.207 [0.128, 0.280] | +0.090 | +0.039 | 0.14 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Philadelphia Union | away wins by more than 1.5 | no | 0.7800 | 0.870 [0.786, 0.938] | +0.078 | +0.038 | 0.82 | - | * | RESEARCH_CANDIDATE |
-| SV Elversberg vs SC Freiburg | Result: home | yes | 0.2700 | 0.509 [0.243, 0.791] | +0.225 | +0.037 | 0.3 | - |  | RESEARCH_CANDIDATE |
-| New England Revolution vs Philadelphia Union | Result: away | no | 0.5700 | 0.694 [0.566, 0.815] | +0.107 | +0.037 | 0.6 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1317
-action_NO_QUOTE: 183
-action_RESEARCH_CANDIDATE: 120
-contract_sides: 1620
-fixtures: 52
+action_NO_EDGE: 1356
+action_NO_QUOTE: 185
+action_RESEARCH_CANDIDATE: 125
+contract_sides: 1666
+fixtures: 56
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
