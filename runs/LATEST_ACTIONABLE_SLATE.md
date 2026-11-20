@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261120T091751Z-bdd0ee` · generated 2026-11-20T09:17:51.490551Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261120T093251Z-148f86` · generated 2026-11-20T09:32:51.863664Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-20T09:14:14.653782Z (CURRENT at publish; CURRENT until 2026-11-20T09:34:14.653782Z, STALE after 2026-11-20T09:44:14.653782Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-20T09:29:14.687125Z (CURRENT at publish; CURRENT until 2026-11-20T09:49:14.687125Z, STALE after 2026-11-20T09:59:14.687125Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-20T07:47:30.774801Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.99s
+model board generated 2026-11-20T07:47:30.774801Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.81s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -53,7 +53,7 @@ model board generated 2026-11-20T07:47:30.774801Z · simulations this update: 0 
 | 2026-11-22T01:00:00Z | Pumas UNAM vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-22T03:00:00Z | Tigres UANL vs Club América (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 
-## Candidates on CURRENT prices (92; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (94; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -71,11 +71,11 @@ model board generated 2026-11-20T07:47:30.774801Z · simulations this update: 0 
 | New England Revolution vs Philadelphia Union | away team total over 1.5 | no | 0.5100 | 0.668 [0.531, 0.785] | +0.140 | +0.061 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Newcastle United vs Arsenal | Result: home | yes | 0.1600 | 0.342 [0.183, 0.511] | +0.173 | +0.061 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | away team total over 1.5 | no | 0.6100 | 0.761 [0.636, 0.866] | +0.134 | +0.061 | 0.67 | - | * | RESEARCH_CANDIDATE |
+| Puebla vs Atlético San Luis | away team total over 0.5 | no | 0.2500 | 0.406 [0.279, 0.529] | +0.143 | +0.060 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | btts | no | 0.4300 | 0.578 [0.453, 0.689] | +0.131 | +0.056 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Nice vs Paris Saint-Germain | Result: away | no | 0.3300 | 0.527 [0.337, 0.710] | +0.181 | +0.056 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | SV Elversberg vs SC Freiburg | Result: away | no | 0.5100 | 0.723 [0.485, 0.917] | +0.196 | +0.053 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Schalke 04 vs VfB Stuttgart | Result: away | no | 0.4800 | 0.683 [0.426, 0.887] | +0.185 | +0.052 | 0.53 | - | * | RESEARCH_CANDIDATE |
-| Puebla vs Atlético San Luis | away team total over 0.5 | no | 0.2600 | 0.406 [0.279, 0.529] | +0.133 | +0.049 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | SV Elversberg vs SC Freiburg | Result: home | yes | 0.2600 | 0.509 [0.243, 0.791] | +0.235 | +0.047 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Flamengo | away wins by more than 2.5 | no | 0.9000 | 0.966 [0.931, 0.990] | +0.060 | +0.045 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Philadelphia Union | away team total over 0.5 | no | 0.1900 | 0.315 [0.205, 0.421] | +0.115 | +0.044 | 0.23 | - |  | RESEARCH_CANDIDATE |
@@ -101,9 +101,9 @@ model board generated 2026-11-20T07:47:30.774801Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1266
+action_NO_EDGE: 1264
 action_NO_QUOTE: 234
-action_RESEARCH_CANDIDATE: 92
+action_RESEARCH_CANDIDATE: 94
 contract_sides: 1592
 fixtures: 40
 fixtures_model_invalidated: 0
