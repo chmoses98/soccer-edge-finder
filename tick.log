@@ -264,3 +264,246 @@ These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW
 - AS Monaco vs AJ Auxerre (Ligue 1) 2026-11-21T19:45:00Z · markets 3/3 evaluated · lineups unknown · xG 2.00-0.94 · 1X2 60%/21%/19%
 - Strasbourg vs Brest (Ligue 1) 2026-11-21T19:45:00Z · markets 3/3 evaluated · lineups unknown · xG 2.13-1.19 · 1X2 58%/20%/22%
 - Troyes vs Le Havre (Ligue 1) 2026-11-20T19:45:00Z · markets 3/3 evaluated · lineups unknown · xG 1.26-1.19 · 1X2 38%/27%/35%
+
+{
+  "outputs": {
+    "json": "work/runs/_pending/run_output.v1.json",
+    "md": "work/runs/_pending/RUN_SOCCER.md",
+    "contracts": "work/runs/_pending/priced_contracts.json",
+    "coverage": "work/runs/_pending/coverage.json",
+    "diagnostics": "work/runs/_pending/coverage_diagnostics.json"
+  },
+  "simulated": [
+    "fx:usa.mls:2026:usa.inter_miami:usa.columbus_crew",
+    "fx:mex.liga_mx:2026:mex.santos_laguna:mex.leon",
+    "fx:mex.liga_mx:2026:mex.pachuca:mex.toluca"
+  ],
+  "repriced": [
+    "fx:ger.bundesliga:2026-27:ger.leverkusen:ger.paderborn:matchday_10",
+    "fx:ger.bundesliga:2026-27:ger.frankfurt:ger.hoffenheim:matchday_10",
+    "fx:ger.bundesliga:2026-27:ger.union_berlin:ger.leipzig:matchday_10",
+    "fx:ger.bundesliga:2026-27:ger.gladbach:ger.dortmund:matchday_10",
+    "fx:ger.bundesliga:2026-27:ger.elversberg:ger.freiburg:matchday_10",
+    "fx:ger.bundesliga:2026-27:ger.schalke:ger.stuttgart:matchday_10",
+    "fx:ger.bundesliga:2026-27:ger.bayern:ger.koln:matchday_10",
+    "fx:eng.premier_league:2026-27:eng.bournemouth:eng.nottm_forest:matchday_11",
+    "fx:eng.premier_league:2026-27:eng.aston_villa:eng.sunderland:matchday_11",
+    "fx:eng.premier_league:2026-27:eng.chelsea:eng.leeds:matchday_11",
+    "fx:eng.premier_league:2026-27:eng.coventry:eng.crystal_palace:matchday_11",
+    "fx:eng.premier_league:2026-27:eng.man_city:eng.fulham:matchday_11",
+    "fx:eng.premier_league:2026-27:eng.newcastle:eng.arsenal:matchday_11",
+    "fx:eng.premier_league:2026-27:eng.tottenham:eng.ipswich:matchday_11",
+    "fx:ita.serie_a:2026-27:ita.como:ita.cagliari:matchday_12",
+    "fx:ita.serie_a:2026-27:ita.lazio:ita.lecce:matchday_12",
+    "fx:ita.serie_a:2026-27:ita.parma:ita.roma:matchday_12",
+    "fx:ita.serie_a:2026-27:ita.napoli:ita.torino:matchday_12",
+    "fx:fra.ligue_1:2026-27:fra.nice:fra.psg:matchday_11",
+    "fx:fra.ligue_1:2026-27:fra.lens:fra.toulouse:matchday_11",
+    "fx:fra.ligue_1:2026-27:fra.lille:fra.lyon:matchday_11",
+    "fx:fra.ligue_1:2026-27:fra.monaco:fra.auxerre:matchday_11",
+    "fx:fra.ligue_1:2026-27:fra.strasbourg:fra.brest:matchday_11",
+    "fx:fra.ligue_1:2026-27:fra.troyes:fra.le_havre:matchday_11"
+  ],
+  "archived_records": 309
+}
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261120T000548Z",
+  "complete": true,
+  "discovered": 5325,
+  "written": 754,
+  "path": "work/snapshots/2026-11-20/cap-20261120T000548Z.jsonl"
+}
+{
+  "reference_probabilities": 0,
+  "observed_at": "2026-11-19 23:42:27.173519+00:00",
+  "groups": 0,
+  "unmapped_fixture_groups": 0,
+  "incomplete_groups": 0,
+  "snapshots": 0,
+  "provider_notes": [
+    "51 rows, 51 skipped (unmapped division/team)",
+    "skipped_by_division={'E2': 5, 'E3': 10, 'EC': 11, 'SC1': 4, 'SC2': 5, 'SC3': 5, 'SP2': 11}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-11-20T00:05:51.561984Z", "batch_id": "kd-20261120T000214Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-11-20T00:05:51.593592+00:00",
+ "leagues": [
+  "bra.1",
+  "usa.1"
+ ],
+ "events": 0,
+ "fixtures_mapped": 0,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 2,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 0,
+  "captured": 0,
+  "unchanged": 0,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 0,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 0,
+  "captured": 0,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "DEGRADED",
+  "reasons": [
+   "no_events_returned"
+  ]
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261120T000551Z-22db49", "mode": "reprice_only", "fixtures": 40, "contract_sides": 1596, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.886, "price_changes_vs_previous": 126}
+[dispatch] holding 6.1 min (next window opens in 4.1 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261120T001840Z",
+  "complete": true,
+  "discovered": 5334,
+  "written": 792,
+  "path": "work/snapshots/2026-11-20/cap-20261120T001840Z.jsonl"
+}
+{
+  "reference_probabilities": 0,
+  "observed_at": "2026-11-19 23:42:27.173519+00:00",
+  "groups": 0,
+  "unmapped_fixture_groups": 0,
+  "incomplete_groups": 0,
+  "snapshots": 0,
+  "provider_notes": [
+    "51 rows, 51 skipped (unmapped division/team)",
+    "skipped_by_division={'E2': 5, 'E3': 10, 'EC': 11, 'SC1': 4, 'SC2': 5, 'SC3': 5, 'SP2': 11}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-11-20T00:18:43.442125Z", "batch_id": "kd-20261120T001505Z", "credits_charged": 6, "paid_calls": 2, "snapshots": 14, "no_sport_key": [], "eligible_fixtures": 2, "per_sport": {"soccer_usa_mls": {"fixtures": 1, "join": {"events": 2, "joined": 1, "ambiguous": 0, "unresolved_names": [], "unjoined_fixtures": []}, "status": "OK", "credits": 3, "snapshots": 7, "incomplete_markets": 0, "close_fixtures": 1, "entry_fixtures": 0}, "soccer_brazil_campeonato": {"fixtures": 1, "join": {"events": 3, "joined": 1, "ambiguous": 0, "unresolved_names": ["Bragantino-SP"], "unjoined_fixtures": []}, "status": "OK", "credits": 3, "snapshots": 7, "incomplete_markets": 0, "close_fixtures": 1, "entry_fixtures": 0}}, "remaining_after": 19580, "status": "OK"}
+{
+ "as_of": "2026-11-20T00:18:47.450722+00:00",
+ "leagues": [
+  "bra.1",
+  "usa.1"
+ ],
+ "events": 0,
+ "fixtures_mapped": 0,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 2,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 0,
+  "captured": 0,
+  "unchanged": 0,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 0,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 0,
+  "captured": 0,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "DEGRADED",
+  "reasons": [
+   "no_events_returned"
+  ]
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261120T001847Z-4c0e43", "mode": "reprice_only", "fixtures": 40, "contract_sides": 1596, "simulations_run": 0, "odds_api_calls": 2, "reprice_runtime_s": 0.907, "price_changes_vs_previous": 87}
+[dispatch] holding 3.1 min (next window opens in 1.1 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261120T002834Z",
+  "complete": true,
+  "discovered": 5333,
+  "written": 632,
+  "path": "work/snapshots/2026-11-20/cap-20261120T002834Z.jsonl"
+}
+{
+  "reference_probabilities": 0,
+  "observed_at": "2026-11-19 23:42:27.173519+00:00",
+  "groups": 0,
+  "unmapped_fixture_groups": 0,
+  "incomplete_groups": 0,
+  "snapshots": 0,
+  "provider_notes": [
+    "51 rows, 51 skipped (unmapped division/team)",
+    "skipped_by_division={'E2': 5, 'E3': 10, 'EC': 11, 'SC1': 4, 'SC2': 5, 'SC3': 5, 'SP2': 11}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-11-20T00:28:37.515908Z", "batch_id": "kd-20261120T002500Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-11-20T00:28:37.548545+00:00",
+ "leagues": [
+  "bra.1",
+  "usa.1"
+ ],
+ "events": 0,
+ "fixtures_mapped": 0,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 2,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 0,
+  "captured": 0,
+  "unchanged": 0,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 0,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 0,
+  "captured": 0,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "DEGRADED",
+  "reasons": [
+   "no_events_returned"
+  ]
+ }
+}
