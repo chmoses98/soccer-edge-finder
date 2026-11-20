@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261120T161800Z-5584c2` · generated 2026-11-20T16:18:00.868103Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261120T163301Z-0136e5` · generated 2026-11-20T16:33:01.572663Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-20T16:14:14.662552Z (CURRENT at publish; CURRENT until 2026-11-20T16:34:14.662552Z, STALE after 2026-11-20T16:44:14.662552Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-20T16:29:14.697382Z (CURRENT at publish; CURRENT until 2026-11-20T16:49:14.697382Z, STALE after 2026-11-20T16:59:14.697382Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-20T16:17:59.830543Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.87s
+model board generated 2026-11-20T16:32:59.964647Z · simulations this update: 2 · Odds API calls this update: 0 (credits 0) · reprice 0.86s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -30,7 +30,7 @@ model board generated 2026-11-20T16:17:59.830543Z · simulations this update: 1 
 | 2026-11-21T15:00:00Z | Chelsea vs Leeds United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T15:00:00Z | Coventry City vs Crystal Palace (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T15:00:00Z | Hull City vs Brighton & Hove Albion (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-21T15:00:00Z | Liverpool vs Manchester United (eng.premier_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-21T15:00:00Z | Liverpool vs Manchester United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T15:00:00Z | Manchester City vs Fulham (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T15:00:00Z | Newcastle United vs Arsenal (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T15:00:00Z | Tottenham Hotspur vs Ipswich Town (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -58,8 +58,9 @@ model board generated 2026-11-20T16:17:59.830543Z · simulations this update: 1 
 | 2026-11-22T14:00:00Z | Paris FC vs Angers (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T14:30:00Z | FC Augsburg vs Mainz 05 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T16:15:00Z | Lorient vs Rennes (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-22T16:30:00Z | Werder Bremen vs Hamburger SV (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (111; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (110; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -67,9 +68,9 @@ model board generated 2026-11-20T16:17:59.830543Z · simulations this update: 1 
 | Palmeiras vs Flamengo | Result: home | yes | 0.2400 | 0.476 [0.310, 0.637] | +0.223 | +0.119 | 0.35 | - |  | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: away | no | 0.2400 | 0.482 [0.293, 0.651] | +0.229 | +0.113 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Hull City vs Brighton & Hove Albion | Result: away | no | 0.3700 | 0.633 [0.416, 0.831] | +0.247 | +0.109 | 0.47 | - | * | RESEARCH_CANDIDATE |
-| Palmeiras vs Flamengo | away wins by more than 1.5 | no | 0.7500 | 0.895 [0.813, 0.955] | +0.132 | +0.092 | 0.84 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | away team total over 1.5 | no | 0.5600 | 0.745 [0.604, 0.860] | +0.168 | +0.090 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Newcastle United vs Arsenal | Result: away | no | 0.3800 | 0.599 [0.423, 0.766] | +0.202 | +0.088 | 0.46 | - | * | RESEARCH_CANDIDATE |
+| Palmeiras vs Flamengo | away wins by more than 1.5 | no | 0.7600 | 0.895 [0.813, 0.955] | +0.122 | +0.082 | 0.84 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | away team total over 1.5 | no | 0.5900 | 0.761 [0.636, 0.866] | +0.154 | +0.081 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | away team total over 0.5 | no | 0.2300 | 0.406 [0.279, 0.529] | +0.164 | +0.080 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | away team total over 1.5 | no | 0.4900 | 0.671 [0.527, 0.796] | +0.163 | +0.078 | 0.56 | - | * | RESEARCH_CANDIDATE |
@@ -107,11 +108,11 @@ model board generated 2026-11-20T16:17:59.830543Z · simulations this update: 1 
 ## Counts
 
 ```
-action_NO_EDGE: 1289
-action_NO_QUOTE: 206
-action_RESEARCH_CANDIDATE: 111
-contract_sides: 1606
-fixtures: 46
+action_NO_EDGE: 1296
+action_NO_QUOTE: 184
+action_RESEARCH_CANDIDATE: 110
+contract_sides: 1590
+fixtures: 47
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
