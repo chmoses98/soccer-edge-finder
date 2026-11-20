@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261120T140246Z-c0234f` · generated 2026-11-20T14:02:46.813394Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261120T141743Z-502609` · generated 2026-11-20T14:17:43.918144Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-20T13:59:00.904181Z (CURRENT at publish; CURRENT until 2026-11-20T14:19:00.904181Z, STALE after 2026-11-20T14:29:00.904181Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-20T14:14:04.226021Z (CURRENT at publish; CURRENT until 2026-11-20T14:34:04.226021Z, STALE after 2026-11-20T14:44:04.226021Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-20T14:02:44.683736Z · simulations this update: 3 · Odds API calls this update: 0 (credits 0) · reprice 0.86s
+model board generated 2026-11-20T14:02:44.683736Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.87s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -56,7 +56,7 @@ model board generated 2026-11-20T14:02:44.683736Z · simulations this update: 3 
 | 2026-11-22T12:00:00Z | FC Barcelona vs Villarreal (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T14:00:00Z | Paris FC vs Angers (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (102; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (104; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -67,10 +67,10 @@ model board generated 2026-11-20T14:02:44.683736Z · simulations this update: 3 
 | Palmeiras vs Flamengo | away wins by more than 1.5 | no | 0.7500 | 0.895 [0.813, 0.955] | +0.132 | +0.092 | 0.84 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | away team total over 1.5 | no | 0.5600 | 0.745 [0.604, 0.860] | +0.168 | +0.090 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Newcastle United vs Arsenal | Result: away | no | 0.3800 | 0.599 [0.423, 0.766] | +0.202 | +0.088 | 0.46 | - | * | RESEARCH_CANDIDATE |
-| Puebla vs Atlético San Luis | away team total over 1.5 | no | 0.5900 | 0.761 [0.636, 0.866] | +0.154 | +0.081 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | btts | no | 0.3500 | 0.530 [0.409, 0.654] | +0.164 | +0.079 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | btts | no | 0.4100 | 0.578 [0.453, 0.689] | +0.151 | +0.077 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Como vs Cagliari | Result: home | no | 0.2500 | 0.463 [0.269, 0.640] | +0.200 | +0.076 | 0.32 | - | * | RESEARCH_CANDIDATE |
+| Puebla vs Atlético San Luis | away team total over 1.5 | no | 0.6000 | 0.761 [0.636, 0.866] | +0.144 | +0.071 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | away team total over 0.5 | no | 0.2400 | 0.406 [0.279, 0.529] | +0.153 | +0.070 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | away team total over 1.5 | no | 0.5000 | 0.671 [0.527, 0.796] | +0.153 | +0.068 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Hull City vs Brighton & Hove Albion | Result: home | yes | 0.1500 | 0.373 [0.174, 0.604] | +0.215 | +0.066 | 0.21 | - |  | RESEARCH_CANDIDATE |
@@ -104,9 +104,9 @@ model board generated 2026-11-20T14:02:44.683736Z · simulations this update: 3 
 ## Counts
 
 ```
-action_NO_EDGE: 1277
-action_NO_QUOTE: 209
-action_RESEARCH_CANDIDATE: 102
+action_NO_EDGE: 1274
+action_NO_QUOTE: 210
+action_RESEARCH_CANDIDATE: 104
 contract_sides: 1588
 fixtures: 43
 fixtures_model_invalidated: 0
