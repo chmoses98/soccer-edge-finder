@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261120T160253Z-b0658f` · generated 2026-11-20T16:02:53.430657Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261120T161800Z-5584c2` · generated 2026-11-20T16:18:00.868103Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-20T15:59:12.802118Z (CURRENT at publish; CURRENT until 2026-11-20T16:19:12.802118Z, STALE after 2026-11-20T16:29:12.802118Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-20T16:14:14.662552Z (CURRENT at publish; CURRENT until 2026-11-20T16:34:14.662552Z, STALE after 2026-11-20T16:44:14.662552Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-20T15:17:54.054930Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.01s
+model board generated 2026-11-20T16:17:59.830543Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.87s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -57,6 +57,7 @@ model board generated 2026-11-20T15:17:54.054930Z · simulations this update: 0 
 | 2026-11-22T12:00:00Z | Racing Santander vs Real Sociedad (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T14:00:00Z | Paris FC vs Angers (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T14:30:00Z | FC Augsburg vs Mainz 05 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-22T16:15:00Z | Lorient vs Rennes (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
 ## Candidates on CURRENT prices (111; RESEARCH_ONLY = analysis, never a bet)
 
@@ -97,20 +98,20 @@ model board generated 2026-11-20T15:17:54.054930Z · simulations this update: 0 
 | Pachuca vs Toluca | away team total over 0.5 | no | 0.1900 | 0.319 [0.203, 0.434] | +0.118 | +0.042 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: draw | yes | 0.1600 | 0.258 [0.181, 0.329] | +0.088 | +0.041 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Philadelphia Union | away team total over 2.5 | no | 0.7800 | 0.876 [0.788, 0.943] | +0.084 | +0.039 | 0.82 | - |  | RESEARCH_CANDIDATE |
+| Santos Laguna vs León | Total goals over 2.5 | no | 0.3800 | 0.541 [0.378, 0.705] | +0.145 | +0.039 | 0.41 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Philadelphia Union | away wins by more than 1.5 | no | 0.7800 | 0.870 [0.786, 0.938] | +0.078 | +0.038 | 0.82 | - | * | RESEARCH_CANDIDATE |
 | SV Elversberg vs SC Freiburg | Result: home | yes | 0.2700 | 0.509 [0.243, 0.791] | +0.225 | +0.037 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Philadelphia Union | Result: away | no | 0.5700 | 0.694 [0.566, 0.815] | +0.107 | +0.037 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | Total goals over 4.5 | no | 0.8300 | 0.915 [0.843, 0.971] | +0.076 | +0.036 | 0.86 | - |  | RESEARCH_CANDIDATE |
-| Puebla vs Atlético San Luis | away team total over 2.5 | no | 0.8500 | 0.926 [0.863, 0.973] | +0.067 | +0.035 | 0.88 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1284
-action_NO_QUOTE: 205
+action_NO_EDGE: 1289
+action_NO_QUOTE: 206
 action_RESEARCH_CANDIDATE: 111
-contract_sides: 1600
-fixtures: 45
+contract_sides: 1606
+fixtures: 46
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
