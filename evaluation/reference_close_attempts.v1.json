@@ -1,11 +1,11 @@
 {
  "counts": {
+  "PINNACLE_QUOTED_NOTHING": 3,
   "DISPATCHER_CLOSE_NO_ATTEMPT": 638,
+  "PINNACLE_VALID_CLOSE": 128,
+  "MISSED_DISPATCHER_CLOSE": 107,
   "NO_SPORT_KEY": 39,
-  "MISSED_DISPATCHER_CLOSE": 105,
-  "PINNACLE_VALID_CLOSE": 126,
-  "CLOSE_BLOCKED_BUDGET": 16,
-  "PINNACLE_QUOTED_NOTHING": 3
+  "CLOSE_BLOCKED_BUDGET": 16
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.belgrano": {
@@ -718,6 +718,11 @@
    "close_horizon_delivered": false,
    "batch_id": null
   },
+  "fx:bra.serie_a:2026:bra.sao_paulo:bra.fluminense": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261120T001505Z"
+  },
   "fx:bra.serie_a:2026:bra.sao_paulo:bra.santos": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -738,6 +743,11 @@
    "close_horizon_delivered": false,
    "batch_id": null
   },
+  "fx:bra.serie_a:2026:bra.vasco:bra.internacional": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
+  },
   "fx:bra.serie_a:2026:bra.vasco:bra.remo": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -746,6 +756,11 @@
   "fx:bra.serie_a:2026:bra.vitoria:bra.athletico_paranaense": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:bra.serie_a:2026:bra.vitoria:bra.bragantino": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
    "batch_id": null
   },
   "fx:bra.serie_a:2026:bra.vitoria:bra.chapecoense": {
@@ -4487,6 +4502,11 @@
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
    "batch_id": null
+  },
+  "fx:usa.mls:2026:usa.orlando_city:usa.cincinnati": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261120T001505Z"
   },
   "fx:usa.mls:2026:usa.orlando_city:usa.columbus_crew": {
    "state": "MISSED_DISPATCHER_CLOSE",
