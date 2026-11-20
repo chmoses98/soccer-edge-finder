@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261120T012840Z-7af038` · generated 2026-11-20T01:28:40.642802Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261120T014343Z-b528f7` · generated 2026-11-20T01:43:43.095398Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-20T01:25:03.901738Z (CURRENT at publish; CURRENT until 2026-11-20T01:45:03.901738Z, STALE after 2026-11-20T01:55:03.901738Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-20T01:40:06.669066Z (CURRENT at publish; CURRENT until 2026-11-20T02:00:06.669066Z, STALE after 2026-11-20T02:10:06.669066Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-20T01:13:43.934729Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.83s
+model board generated 2026-11-20T01:13:43.934729Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.82s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -53,17 +53,17 @@ model board generated 2026-11-20T01:13:43.934729Z · simulations this update: 0 
 | 2026-11-22T00:00:00Z | Chapecoense vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T01:00:00Z | Pumas UNAM vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 
-## Candidates on CURRENT prices (106; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (107; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Palmeiras vs Flamengo | Result: away | no | 0.5050 | 0.738 [0.600, 0.850] | +0.215 | +0.138 | 0.64 | - | * | RESEARCH_CANDIDATE |
+| Palmeiras vs Flamengo | Result: home | yes | 0.2450 | 0.476 [0.310, 0.637] | +0.218 | +0.113 | 0.35 | - |  | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: away | no | 0.2400 | 0.481 [0.293, 0.651] | +0.228 | +0.112 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Hull City vs Brighton & Hove Albion | Result: away | no | 0.3700 | 0.633 [0.418, 0.835] | +0.247 | +0.109 | 0.47 | - | * | RESEARCH_CANDIDATE |
-| Palmeiras vs Flamengo | Result: home | yes | 0.2550 | 0.476 [0.310, 0.637] | +0.208 | +0.103 | 0.35 | - |  | RESEARCH_CANDIDATE |
 | Newcastle United vs Arsenal | Result: away | no | 0.3800 | 0.600 [0.433, 0.763] | +0.204 | +0.095 | 0.47 | - | * | RESEARCH_CANDIDATE |
+| Palmeiras vs Flamengo | away wins by more than 1.5 | no | 0.7500 | 0.895 [0.813, 0.955] | +0.132 | +0.092 | 0.84 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | btts | no | 0.4000 | 0.578 [0.453, 0.689] | +0.161 | +0.087 | 0.48 | - | * | RESEARCH_CANDIDATE |
-| Palmeiras vs Flamengo | away wins by more than 1.5 | no | 0.7600 | 0.895 [0.813, 0.955] | +0.122 | +0.082 | 0.84 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | away team total over 1.5 | no | 0.5900 | 0.761 [0.636, 0.866] | +0.154 | +0.081 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | away team total over 0.5 | no | 0.2300 | 0.406 [0.279, 0.529] | +0.164 | +0.080 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | btts | no | 0.3500 | 0.530 [0.409, 0.654] | +0.164 | +0.079 | 0.42 | - | * | RESEARCH_CANDIDATE |
@@ -79,6 +79,7 @@ model board generated 2026-11-20T01:13:43.934729Z · simulations this update: 0 
 | Schalke 04 vs VfB Stuttgart | Result: away | no | 0.4800 | 0.682 [0.426, 0.887] | +0.185 | +0.052 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Philadelphia Union | away team total over 1.5 | no | 0.5200 | 0.668 [0.531, 0.785] | +0.130 | +0.051 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | away team total over 1.5 | no | 0.6000 | 0.745 [0.604, 0.860] | +0.128 | +0.051 | 0.65 | - | * | RESEARCH_CANDIDATE |
+| Pachuca vs Toluca | away team total over 2.5 | no | 0.7700 | 0.876 [0.785, 0.947] | +0.094 | +0.047 | 0.81 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Total goals over 2.5 | no | 0.4000 | 0.558 [0.403, 0.699] | +0.142 | +0.047 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Tijuana vs Atlante | btts | no | 0.4500 | 0.593 [0.457, 0.710] | +0.125 | +0.047 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | away team total over 1.5 | no | 0.6300 | 0.757 [0.645, 0.856] | +0.111 | +0.046 | 0.67 | - |  | RESEARCH_CANDIDATE |
@@ -94,22 +95,19 @@ model board generated 2026-11-20T01:13:43.934729Z · simulations this update: 0 
 | Santos Laguna vs León | away team total over 0.5 | no | 0.2500 | 0.391 [0.255, 0.520] | +0.128 | +0.042 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: draw | yes | 0.1600 | 0.258 [0.181, 0.329] | +0.088 | +0.041 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Seattle Sounders vs Real Salt Lake | Total goals over 3.5 | no | 0.6300 | 0.761 [0.627, 0.872] | +0.115 | +0.040 | 0.67 | - |  | RESEARCH_CANDIDATE |
-| Pachuca vs Toluca | away team total over 1.5 | no | 0.5300 | 0.671 [0.527, 0.796] | +0.123 | +0.039 | 0.56 | - | * | RESEARCH_CANDIDATE |
+| Pachuca vs Toluca | away team total over 1.5 | no | 0.5300 | 0.671 [0.527, 0.796] | +0.123 | +0.039 | 0.56 | - |  | RESEARCH_CANDIDATE |
 | SV Elversberg vs SC Freiburg | Result: home | yes | 0.2700 | 0.509 [0.243, 0.790] | +0.225 | +0.038 | 0.3 | - |  | RESEARCH_CANDIDATE |
-| Pachuca vs Toluca | away team total over 2.5 | no | 0.7800 | 0.876 [0.785, 0.947] | +0.084 | +0.037 | 0.81 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1252
-action_NO_QUOTE: 238
-action_RESEARCH_CANDIDATE: 106
+action_NO_EDGE: 1255
+action_NO_QUOTE: 234
+action_RESEARCH_CANDIDATE: 107
 contract_sides: 1596
 fixtures: 40
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
-
-Removed (kicked off): 2
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
