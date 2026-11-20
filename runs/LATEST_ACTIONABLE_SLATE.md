@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261120T131738Z-60b7ff` · generated 2026-11-20T13:17:38.751682Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261120T133239Z-268512` · generated 2026-11-20T13:32:39.180405Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-20T13:13:59.134652Z (CURRENT at publish; CURRENT until 2026-11-20T13:33:59.134652Z, STALE after 2026-11-20T13:43:59.134652Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-20T13:28:59.197910Z (CURRENT at publish; CURRENT until 2026-11-20T13:48:59.197910Z, STALE after 2026-11-20T13:58:59.197910Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-20T13:02:37.843611Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.83s
+model board generated 2026-11-20T13:02:37.843611Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.86s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -54,7 +54,7 @@ model board generated 2026-11-20T13:02:37.843611Z · simulations this update: 0 
 | 2026-11-22T03:00:00Z | Tigres UANL vs Club América (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-22T12:00:00Z | FC Barcelona vs Villarreal (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (94; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (95; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -102,9 +102,9 @@ model board generated 2026-11-20T13:02:37.843611Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1224
-action_NO_QUOTE: 280
-action_RESEARCH_CANDIDATE: 94
+action_NO_EDGE: 1265
+action_NO_QUOTE: 238
+action_RESEARCH_CANDIDATE: 95
 contract_sides: 1598
 fixtures: 41
 fixtures_model_invalidated: 0
