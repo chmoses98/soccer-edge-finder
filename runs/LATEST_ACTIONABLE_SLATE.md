@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261120T150247Z-db8a6f` · generated 2026-11-20T15:02:47.773396Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261120T151755Z-380c22` · generated 2026-11-20T15:17:55.283229Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-20T14:59:07.941427Z (CURRENT at publish; CURRENT until 2026-11-20T15:19:07.941427Z, STALE after 2026-11-20T15:29:07.941427Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-20T15:14:09.572797Z (CURRENT at publish; CURRENT until 2026-11-20T15:34:09.572797Z, STALE after 2026-11-20T15:44:09.572797Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-20T14:32:52.395916Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.88s
+model board generated 2026-11-20T15:17:54.054930Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.89s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -14,10 +14,10 @@ model board generated 2026-11-20T14:32:52.395916Z · simulations this update: 0 
 |---|---|---|---|---|---|---|---|
 | 2026-11-20T19:30:00Z | Bayern Munich vs 1. FC Köln (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-20T19:45:00Z | Troyes vs Le Havre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-20T23:00:00Z | Vélez Sarsfield vs Belgrano (arg.primera) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 5 | 0 |
-| 2026-11-21T01:00:00Z | Puebla vs Atlético San Luis (mex.liga_mx) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-11-21T03:00:00Z | FC Juárez vs Atlas (mex.liga_mx) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-11-21T03:10:00Z | Tijuana vs Atlante (mex.liga_mx) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 32 | 0 |
+| 2026-11-20T23:00:00Z | Vélez Sarsfield vs Belgrano (arg.primera) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 5 | 0 |
+| 2026-11-21T01:00:00Z | Puebla vs Atlético San Luis (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-11-21T03:00:00Z | FC Juárez vs Atlas (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-11-21T03:10:00Z | Tijuana vs Atlante (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-11-21T14:00:00Z | Como vs Cagliari (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T14:00:00Z | Lazio vs Lecce (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T14:30:00Z | SV Elversberg vs SC Freiburg (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -54,10 +54,11 @@ model board generated 2026-11-20T14:32:52.395916Z · simulations this update: 0 
 | 2026-11-22T03:00:00Z | Tigres UANL vs Club América (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-22T11:30:00Z | Sassuolo vs Genoa (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T12:00:00Z | FC Barcelona vs Villarreal (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-22T12:00:00Z | Racing Santander vs Real Sociedad (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T14:00:00Z | Paris FC vs Angers (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T14:30:00Z | FC Augsburg vs Mainz 05 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (107; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (109; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -79,15 +80,17 @@ model board generated 2026-11-20T14:32:52.395916Z · simulations this update: 0 
 | Santos Laguna vs León | away team total over 2.5 | no | 0.8100 | 0.917 [0.842, 0.971] | +0.096 | +0.062 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Philadelphia Union | away team total over 1.5 | no | 0.5100 | 0.668 [0.531, 0.785] | +0.140 | +0.061 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Newcastle United vs Arsenal | Result: home | yes | 0.1600 | 0.342 [0.183, 0.511] | +0.173 | +0.061 | 0.21 | - |  | RESEARCH_CANDIDATE |
+| Puebla vs Atlético San Luis | Total goals over 2.5 | no | 0.4400 | 0.618 [0.462, 0.759] | +0.161 | +0.059 | 0.49 | - | * | RESEARCH_CANDIDATE |
+| Puebla vs Atlético San Luis | Total goals over 3.5 | no | 0.6600 | 0.807 [0.685, 0.908] | +0.131 | +0.058 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Nice vs Paris Saint-Germain | Result: away | no | 0.3300 | 0.527 [0.337, 0.710] | +0.181 | +0.056 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | away team total over 0.5 | no | 0.2400 | 0.391 [0.255, 0.520] | +0.138 | +0.053 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Schalke 04 vs VfB Stuttgart | Result: away | no | 0.4800 | 0.683 [0.426, 0.887] | +0.185 | +0.052 | 0.53 | - | * | RESEARCH_CANDIDATE |
-| Puebla vs Atlético San Luis | Total goals over 2.5 | no | 0.4500 | 0.618 [0.462, 0.759] | +0.151 | +0.049 | 0.49 | - | * | RESEARCH_CANDIDATE |
-| Puebla vs Atlético San Luis | Total goals over 3.5 | no | 0.6700 | 0.807 [0.685, 0.908] | +0.122 | +0.048 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | away team total over 2.5 | no | 0.7700 | 0.876 [0.785, 0.947] | +0.094 | +0.047 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Flamengo | away wins by more than 2.5 | no | 0.9000 | 0.966 [0.931, 0.990] | +0.060 | +0.045 | 0.94 | - |  | RESEARCH_CANDIDATE |
+| Puebla vs Atlético San Luis | away team total over 2.5 | no | 0.8400 | 0.926 [0.863, 0.973] | +0.077 | +0.045 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Philadelphia Union | away team total over 0.5 | no | 0.1900 | 0.315 [0.205, 0.421] | +0.115 | +0.044 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Lazio vs Lecce | Result: home | no | 0.2900 | 0.455 [0.276, 0.632] | +0.151 | +0.043 | 0.33 | - | * | RESEARCH_CANDIDATE |
+| Puebla vs Atlético San Luis | Total goals over 1.5 | no | 0.2100 | 0.359 [0.223, 0.495] | +0.138 | +0.043 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | SV Elversberg vs SC Freiburg | Result: away | no | 0.5200 | 0.723 [0.485, 0.917] | +0.186 | +0.043 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | Total goals over 3.5 | no | 0.6000 | 0.745 [0.600, 0.876] | +0.128 | +0.043 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Union Berlin vs RB Leipzig | Result: away | no | 0.3600 | 0.548 [0.317, 0.752] | +0.172 | +0.042 | 0.4 | - | * | RESEARCH_CANDIDATE |
@@ -99,17 +102,15 @@ model board generated 2026-11-20T14:32:52.395916Z · simulations this update: 0 
 | New England Revolution vs Philadelphia Union | away wins by more than 1.5 | no | 0.7800 | 0.870 [0.786, 0.938] | +0.078 | +0.038 | 0.82 | - | * | RESEARCH_CANDIDATE |
 | SV Elversberg vs SC Freiburg | Result: home | yes | 0.2700 | 0.509 [0.243, 0.791] | +0.225 | +0.037 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Philadelphia Union | Result: away | no | 0.5700 | 0.694 [0.566, 0.815] | +0.107 | +0.037 | 0.6 | - | * | RESEARCH_CANDIDATE |
-| Puebla vs Atlético San Luis | Total goals over 4.5 | no | 0.8300 | 0.915 [0.843, 0.971] | +0.076 | +0.036 | 0.86 | - |  | RESEARCH_CANDIDATE |
-| Puebla vs Atlético San Luis | away team total over 2.5 | no | 0.8500 | 0.926 [0.863, 0.973] | +0.067 | +0.035 | 0.88 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1280
-action_NO_QUOTE: 207
-action_RESEARCH_CANDIDATE: 107
-contract_sides: 1594
-fixtures: 44
+action_NO_EDGE: 1282
+action_NO_QUOTE: 209
+action_RESEARCH_CANDIDATE: 109
+contract_sides: 1600
+fixtures: 45
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
