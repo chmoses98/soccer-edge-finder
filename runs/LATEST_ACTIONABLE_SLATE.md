@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261120T124734Z-1489bd` · generated 2026-11-20T12:47:34.197799Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261120T130239Z-30e0c5` · generated 2026-11-20T13:02:39.240236Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-20T12:43:55.935763Z (CURRENT at publish; CURRENT until 2026-11-20T13:03:55.935763Z, STALE after 2026-11-20T13:13:55.935763Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-20T12:58:55.996440Z (CURRENT at publish; CURRENT until 2026-11-20T13:18:55.996440Z, STALE after 2026-11-20T13:28:55.996440Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-20T11:17:10.799871Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.81s
+model board generated 2026-11-20T13:02:37.843611Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.81s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -52,8 +52,9 @@ model board generated 2026-11-20T11:17:10.799871Z · simulations this update: 0 
 | 2026-11-22T00:00:00Z | Chapecoense vs Cruzeiro (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T01:00:00Z | Pumas UNAM vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-22T03:00:00Z | Tigres UANL vs Club América (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-11-22T12:00:00Z | FC Barcelona vs Villarreal (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (95; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (94; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -101,11 +102,11 @@ model board generated 2026-11-20T11:17:10.799871Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1213
+action_NO_EDGE: 1220
 action_NO_QUOTE: 284
-action_RESEARCH_CANDIDATE: 95
-contract_sides: 1592
-fixtures: 40
+action_RESEARCH_CANDIDATE: 94
+contract_sides: 1598
+fixtures: 41
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
