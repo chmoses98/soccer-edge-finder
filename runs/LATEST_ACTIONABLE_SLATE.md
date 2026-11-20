@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261120T181301Z-db525e` · generated 2026-11-20T18:13:01.909726Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261120T182808Z-fb1d1c` · generated 2026-11-20T18:28:08.703147Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-20T18:09:18.019763Z (CURRENT at publish; CURRENT until 2026-11-20T18:29:18.019763Z, STALE after 2026-11-20T18:39:18.019763Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-20T18:24:20.564619Z (CURRENT at publish; CURRENT until 2026-11-20T18:44:20.564619Z, STALE after 2026-11-20T18:54:20.564619Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-20T18:13:01.203014Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.42s
+model board generated 2026-11-20T18:28:07.995906Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.68s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-20T18:13:01.203014Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-20T19:30:00Z | Bayern Munich vs 1. FC Köln (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-20T19:30:00Z | Bayern Munich vs 1. FC Köln (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | CURRENT entry | CURRENT | 3 | 0 |
 | 2026-11-20T19:45:00Z | Troyes vs Le Havre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-20T23:00:00Z | Vélez Sarsfield vs Belgrano (arg.primera) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 5 | 0 |
 | 2026-11-21T01:00:00Z | Puebla vs Atlético San Luis (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
@@ -75,12 +75,12 @@ model board generated 2026-11-20T18:13:01.203014Z · simulations this update: 1 
 | Palmeiras vs Flamengo | Result: home | yes | 0.2350 | 0.476 [0.310, 0.637] | +0.228 | +0.124 | 0.35 | - |  | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: away | no | 0.2400 | 0.482 [0.293, 0.651] | +0.229 | +0.113 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Hull City vs Brighton & Hove Albion | Result: away | no | 0.3700 | 0.633 [0.416, 0.831] | +0.247 | +0.109 | 0.47 | - | * | RESEARCH_CANDIDATE |
+| Puebla vs Atlético San Luis | away team total over 1.5 | no | 0.5700 | 0.761 [0.636, 0.866] | +0.173 | +0.101 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Flamengo | away wins by more than 1.5 | no | 0.7500 | 0.895 [0.813, 0.955] | +0.132 | +0.092 | 0.84 | - | * | RESEARCH_CANDIDATE |
-| Puebla vs Atlético San Luis | away team total over 1.5 | no | 0.5800 | 0.761 [0.636, 0.866] | +0.164 | +0.091 | 0.67 | - | * | RESEARCH_CANDIDATE |
+| Puebla vs Atlético San Luis | away team total over 0.5 | no | 0.2200 | 0.406 [0.279, 0.529] | +0.174 | +0.091 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | away team total over 1.5 | no | 0.5600 | 0.745 [0.604, 0.860] | +0.168 | +0.090 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Real Madrid vs Celta Vigo | Result: home | no | 0.1500 | 0.369 [0.204, 0.541] | +0.210 | +0.090 | 0.23 | - | * | RESEARCH_CANDIDATE |
 | Newcastle United vs Arsenal | Result: away | no | 0.3800 | 0.599 [0.423, 0.766] | +0.202 | +0.088 | 0.46 | - | * | RESEARCH_CANDIDATE |
-| Puebla vs Atlético San Luis | away team total over 0.5 | no | 0.2300 | 0.406 [0.279, 0.529] | +0.164 | +0.080 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | away team total over 1.5 | no | 0.4900 | 0.671 [0.527, 0.796] | +0.163 | +0.078 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | btts | no | 0.4100 | 0.578 [0.453, 0.689] | +0.151 | +0.077 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Como vs Cagliari | Result: home | no | 0.2500 | 0.463 [0.269, 0.640] | +0.200 | +0.076 | 0.32 | - | * | RESEARCH_CANDIDATE |
@@ -95,13 +95,13 @@ model board generated 2026-11-20T18:13:01.203014Z · simulations this update: 1 
 | Puebla vs Atlético San Luis | Total goals over 2.5 | no | 0.4400 | 0.618 [0.462, 0.759] | +0.161 | +0.059 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | Total goals over 3.5 | no | 0.6600 | 0.807 [0.685, 0.908] | +0.131 | +0.058 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Nice vs Paris Saint-Germain | Result: away | no | 0.3300 | 0.527 [0.337, 0.710] | +0.181 | +0.056 | 0.38 | - | * | RESEARCH_CANDIDATE |
+| Puebla vs Atlético San Luis | Total goals over 1.5 | no | 0.2000 | 0.359 [0.223, 0.495] | +0.148 | +0.053 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | Union Berlin vs RB Leipzig | Result: away | no | 0.3500 | 0.548 [0.317, 0.752] | +0.182 | +0.053 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Schalke 04 vs VfB Stuttgart | Result: away | no | 0.4800 | 0.683 [0.426, 0.887] | +0.185 | +0.052 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | away team total over 2.5 | no | 0.7700 | 0.876 [0.785, 0.947] | +0.094 | +0.047 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | Total goals over 4.5 | no | 0.8200 | 0.915 [0.843, 0.971] | +0.085 | +0.046 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | Palmeiras vs Flamengo | away wins by more than 2.5 | no | 0.9000 | 0.966 [0.931, 0.990] | +0.060 | +0.045 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | away team total over 2.5 | no | 0.8400 | 0.926 [0.863, 0.973] | +0.077 | +0.045 | 0.88 | - |  | RESEARCH_CANDIDATE |
-| Puebla vs Atlético San Luis | Total goals over 1.5 | no | 0.2100 | 0.359 [0.223, 0.495] | +0.138 | +0.043 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | SV Elversberg vs SC Freiburg | Result: away | no | 0.5200 | 0.723 [0.485, 0.917] | +0.186 | +0.043 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | Total goals over 3.5 | no | 0.6000 | 0.745 [0.600, 0.876] | +0.128 | +0.043 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: home | yes | 0.0900 | 0.224 [0.101, 0.354] | +0.128 | +0.042 | 0.13 | - |  | RESEARCH_CANDIDATE |
@@ -115,8 +115,8 @@ model board generated 2026-11-20T18:13:01.203014Z · simulations this update: 1 
 ## Counts
 
 ```
-action_NO_EDGE: 1327
-action_NO_QUOTE: 185
+action_NO_EDGE: 1328
+action_NO_QUOTE: 184
 action_RESEARCH_CANDIDATE: 120
 contract_sides: 1632
 fixtures: 54
