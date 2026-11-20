@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261120T170626Z-9af25f` · generated 2026-11-20T17:06:26.429528Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261120T170711Z-f52ba4` · generated 2026-11-20T17:07:11.101569Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-20T17:02:42.398977Z (CURRENT at publish; CURRENT until 2026-11-20T17:22:42.398977Z, STALE after 2026-11-20T17:32:42.398977Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-20T17:03:15.962919Z (CURRENT at publish; CURRENT until 2026-11-20T17:23:15.962919Z, STALE after 2026-11-20T17:33:15.962919Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-20T17:06:25.627509Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.68s
+model board generated 2026-11-20T16:51:31.509551Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.76s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -60,13 +60,12 @@ model board generated 2026-11-20T17:06:25.627509Z · simulations this update: 1 
 | 2026-11-22T12:00:00Z | Real Madrid vs Celta Vigo (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T12:00:00Z | Sevilla vs Real Betis (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T14:00:00Z | Paris FC vs Angers (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-22T14:00:00Z | AC Milan vs Frosinone (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T14:30:00Z | FC Augsburg vs Mainz 05 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T16:15:00Z | Lorient vs Rennes (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T16:30:00Z | Werder Bremen vs Hamburger SV (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T17:00:00Z | Bologna vs Udinese (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (120; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (118; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -114,11 +113,11 @@ model board generated 2026-11-20T17:06:25.627509Z · simulations this update: 1 
 ## Counts
 
 ```
-action_NO_EDGE: 1322
+action_NO_EDGE: 1318
 action_NO_QUOTE: 184
-action_RESEARCH_CANDIDATE: 120
-contract_sides: 1626
-fixtures: 53
+action_RESEARCH_CANDIDATE: 118
+contract_sides: 1620
+fixtures: 52
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
