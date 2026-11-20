@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261120T172759Z-676f70` · generated 2026-11-20T17:27:59.239530Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261120T174259Z-05ca34` · generated 2026-11-20T17:42:59.307768Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-20T17:24:16.368126Z (CURRENT at publish; CURRENT until 2026-11-20T17:44:16.368126Z, STALE after 2026-11-20T17:54:16.368126Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-20T17:39:16.392533Z (CURRENT at publish; CURRENT until 2026-11-20T17:59:16.392533Z, STALE after 2026-11-20T18:09:16.392533Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-20T17:06:25.627509Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.41s
+model board generated 2026-11-20T17:06:25.627509Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.42s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -99,7 +99,6 @@ model board generated 2026-11-20T17:06:25.627509Z · simulations this update: 0 
 | Palmeiras vs Flamengo | away wins by more than 2.5 | no | 0.9000 | 0.966 [0.931, 0.990] | +0.060 | +0.045 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | away team total over 2.5 | no | 0.8400 | 0.926 [0.863, 0.973] | +0.077 | +0.045 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Philadelphia Union | away team total over 0.5 | no | 0.1900 | 0.315 [0.205, 0.421] | +0.115 | +0.044 | 0.23 | - |  | RESEARCH_CANDIDATE |
-| Lazio vs Lecce | Result: home | no | 0.2900 | 0.455 [0.276, 0.632] | +0.151 | +0.043 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | Puebla vs Atlético San Luis | Total goals over 1.5 | no | 0.2100 | 0.359 [0.223, 0.495] | +0.138 | +0.043 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | SV Elversberg vs SC Freiburg | Result: away | no | 0.5200 | 0.723 [0.485, 0.917] | +0.186 | +0.043 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | Total goals over 3.5 | no | 0.6000 | 0.745 [0.600, 0.876] | +0.128 | +0.043 | 0.64 | - | * | RESEARCH_CANDIDATE |
@@ -110,6 +109,7 @@ model board generated 2026-11-20T17:06:25.627509Z · simulations this update: 0 
 | New England Revolution vs Philadelphia Union | away team total over 2.5 | no | 0.7800 | 0.876 [0.788, 0.943] | +0.084 | +0.039 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | Real Madrid vs Celta Vigo | Result: draw | yes | 0.1100 | 0.207 [0.128, 0.280] | +0.090 | +0.039 | 0.14 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Philadelphia Union | away wins by more than 1.5 | no | 0.7800 | 0.870 [0.786, 0.938] | +0.078 | +0.038 | 0.82 | - | * | RESEARCH_CANDIDATE |
+| SV Elversberg vs SC Freiburg | Result: home | yes | 0.2700 | 0.509 [0.243, 0.791] | +0.225 | +0.037 | 0.3 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
