@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261120T201350Z-143eb8` · generated 2026-11-20T20:13:50.112335Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261120T202846Z-b7efdd` · generated 2026-11-20T20:28:46.441772Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-20T20:10:01.718225Z (CURRENT at publish; CURRENT until 2026-11-20T20:30:01.718225Z, STALE after 2026-11-20T20:40:01.718225Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-20T20:25:04.214015Z (CURRENT at publish; CURRENT until 2026-11-20T20:45:04.214015Z, STALE after 2026-11-20T20:55:04.214015Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-20T20:13:46.490723Z · simulations this update: 4 · Odds API calls this update: 0 (credits 0) · reprice 0.43s
+model board generated 2026-11-20T20:13:46.490723Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.65s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -69,7 +69,7 @@ model board generated 2026-11-20T20:13:46.490723Z · simulations this update: 4 
 | 2026-11-22T19:45:00Z | Marseille vs Le Mans (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T19:45:00Z | Atalanta vs Inter Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (125; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (126; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -117,9 +117,9 @@ model board generated 2026-11-20T20:13:46.490723Z · simulations this update: 4 
 ## Counts
 
 ```
-action_NO_EDGE: 1356
+action_NO_EDGE: 1355
 action_NO_QUOTE: 185
-action_RESEARCH_CANDIDATE: 125
+action_RESEARCH_CANDIDATE: 126
 contract_sides: 1666
 fixtures: 56
 fixtures_model_invalidated: 0
