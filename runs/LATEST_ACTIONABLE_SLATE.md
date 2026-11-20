@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261120T111724Z-43ab78` · generated 2026-11-20T11:17:24.488825Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261120T113203Z-9654df` · generated 2026-11-20T11:32:03.689072Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-20T11:13:22.069707Z (CURRENT at publish; CURRENT until 2026-11-20T11:33:22.069707Z, STALE after 2026-11-20T11:43:22.069707Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-20T11:28:22.103604Z (CURRENT at publish; CURRENT until 2026-11-20T11:48:22.103604Z, STALE after 2026-11-20T11:58:22.103604Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-20T11:17:10.799871Z · simulations this update: 24 · Odds API calls this update: 0 (credits 0) · reprice 0.82s
+model board generated 2026-11-20T11:17:10.799871Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.82s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -53,7 +53,7 @@ model board generated 2026-11-20T11:17:10.799871Z · simulations this update: 24
 | 2026-11-22T01:00:00Z | Pumas UNAM vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-22T03:00:00Z | Tigres UANL vs Club América (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 
-## Candidates on CURRENT prices (90; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (92; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -95,15 +95,15 @@ model board generated 2026-11-20T11:17:10.799871Z · simulations this update: 24
 | New England Revolution vs Philadelphia Union | Result: away | no | 0.5700 | 0.694 [0.566, 0.815] | +0.107 | +0.037 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | Result: away | no | 0.5800 | 0.711 [0.578, 0.833] | +0.114 | +0.035 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | Como vs Cagliari | Result: draw | yes | 0.1600 | 0.253 [0.168, 0.331] | +0.084 | +0.034 | 0.19 | - |  | RESEARCH_CANDIDATE |
-| Pachuca vs Toluca | away wins by more than 1.5 | no | 0.7900 | 0.877 [0.791, 0.946] | +0.075 | +0.031 | 0.82 | - | * | RESEARCH_CANDIDATE |
-| Pachuca vs Toluca | btts | no | 0.3400 | 0.468 [0.344, 0.590] | +0.113 | +0.030 | 0.36 | - | * | RESEARCH_CANDIDATE |
+| Santos Laguna vs León | Total goals over 4.5 | no | 0.7800 | 0.876 [0.779, 0.956] | +0.084 | +0.032 | 0.81 | - |  | RESEARCH_CANDIDATE |
+| Santos Laguna vs León | away wins by more than 1.5 | no | 0.8300 | 0.909 [0.837, 0.966] | +0.069 | +0.032 | 0.86 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1217
+action_NO_EDGE: 1215
 action_NO_QUOTE: 285
-action_RESEARCH_CANDIDATE: 90
+action_RESEARCH_CANDIDATE: 92
 contract_sides: 1592
 fixtures: 40
 fixtures_model_invalidated: 0
