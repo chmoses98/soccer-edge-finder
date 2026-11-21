@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-21T03:16:46.300881+00:00",
+  "as_of": "2026-11-21T12:46:43.739564+00:00",
   "events": 619,
   "events_skipped_unmapped": 354,
   "fixtures_mapped": 265,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=80"
+      "weather_stopped:consecutive_failures:skipped=81"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 146,
+    "captured": 126,
     "events": 150,
     "failures": [],
-    "published_post": 4,
-    "published_pre_kickoff": 1,
-    "unchanged": 4,
-    "unpublished": 145
+    "published_post": 15,
+    "published_pre_kickoff": 4,
+    "unchanged": 24,
+    "unpublished": 131
   },
   "map_proposals": {
     "bel.1": {
@@ -433,17 +433,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 11,
-    "events": 94,
+    "captured": 12,
+    "events": 96,
     "failures": [
-      "401933756: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=-34.9213&longitude=-57.9544&hourly=",
-      "401892137: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Auckland&count=5&language=en&fo",
-      "401892136: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=New%20South%20Wales&count=5&lan"
+      "401933758: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Buenos%20Aires&count=5&language",
+      "401933755: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Buenos%20Aires&count=5&language",
+      "401933759: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rosario&count=5&language=en&for"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 80,
+    "skipped": 81,
     "stopped": "consecutive_failures"
   }
 }
