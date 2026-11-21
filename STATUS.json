@@ -1,26 +1,23 @@
 {
-  "as_of": "2026-11-21T10:56:42.650907+00:00",
-  "events": 4,
+  "as_of": "2026-11-21T11:33:46.739403+00:00",
+  "events": 7,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 4,
+  "fixtures_mapped": 7,
   "health": {
-    "reasons": [
-      "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=1"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
-    "esp.1"
+    "eng.1"
   ],
   "lineups": {
-    "captured": 4,
-    "events": 4,
+    "captured": 1,
+    "events": 7,
     "failures": [],
     "published_post": 0,
-    "published_pre_kickoff": 0,
-    "unchanged": 0,
-    "unpublished": 4
+    "published_pre_kickoff": 1,
+    "unchanged": 6,
+    "unpublished": 6
   },
   "map_proposals": {},
   "map_version": "4",
@@ -31,17 +28,13 @@
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 0,
-    "events": 4,
-    "failures": [
-      "401882806: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=42.8500&longitude=-2.6727&hourly=te",
-      "401882799: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=40.4165&longitude=-3.7026&hourly=te",
-      "401882797: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Sevilla&count=5&language=en&for"
-    ],
+    "captured": 7,
+    "events": 7,
+    "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 1,
-    "stopped": "consecutive_failures"
+    "skipped": 0,
+    "stopped": null
   }
 }

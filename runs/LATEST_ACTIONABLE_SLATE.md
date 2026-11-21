@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T112642Z-7d1f95` · generated 2026-11-21T11:26:42.745302Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261121T113350Z-ff5d20` · generated 2026-11-21T11:33:50.505309Z · trigger `kickoff_chain:T-60` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-21T11:22:59.414613Z (CURRENT at publish; CURRENT until 2026-11-21T11:42:59.414613Z, STALE after 2026-11-21T11:52:59.414613Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T11:30:01.136072Z (CURRENT at publish; CURRENT until 2026-11-21T11:50:01.136072Z, STALE after 2026-11-21T12:00:01.136072Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-21T09:41:18.740117Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.91s
+model board generated 2026-11-21T09:41:18.740117Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.90s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -68,7 +68,7 @@ model board generated 2026-11-21T09:41:18.740117Z · simulations this update: 0 
 | 2026-11-22T21:30:00Z | Fluminense vs Mirassol (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T22:30:00Z | Red Bull Bragantino vs Vasco da Gama (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T23:07:00Z | Guadalajara vs Cruz Azul (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 44 | 0 |
 
 ## Candidates on CURRENT prices (91; RESEARCH_ONLY = analysis, never a bet)
