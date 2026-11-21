@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T055211Z-5962e5` · generated 2026-11-21T05:52:11.587707Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261121T060713Z-d77c62` · generated 2026-11-21T06:07:13.666959Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-21T05:48:28.633197Z (CURRENT at publish; CURRENT until 2026-11-21T06:08:28.633197Z, STALE after 2026-11-21T06:18:28.633197Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T06:03:30.778133Z (CURRENT at publish; CURRENT until 2026-11-21T06:23:30.778133Z, STALE after 2026-11-21T06:33:30.778133Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-21T04:06:47.226676Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.93s
+model board generated 2026-11-21T04:06:47.226676Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.92s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -83,12 +83,12 @@ model board generated 2026-11-21T04:06:47.226676Z · simulations this update: 0 
 | Real Madrid vs Celta Vigo | Result: home | no | 0.1500 | 0.369 [0.205, 0.541] | +0.210 | +0.089 | 0.23 | - | * | RESEARCH_CANDIDATE |
 | Newcastle United vs Arsenal | Result: away | no | 0.3800 | 0.599 [0.422, 0.766] | +0.203 | +0.089 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Flamengo | Result: home | yes | 0.2700 | 0.476 [0.310, 0.637] | +0.192 | +0.088 | 0.35 | - |  | RESEARCH_CANDIDATE |
-| Palmeiras vs Flamengo | away wins by more than 1.5 | no | 0.7600 | 0.895 [0.813, 0.955] | +0.122 | +0.082 | 0.84 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | away team total over 1.5 | no | 0.5700 | 0.745 [0.604, 0.860] | +0.158 | +0.080 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 2.5 | no | 0.4200 | 0.612 [0.455, 0.758] | +0.175 | +0.079 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | btts | no | 0.3800 | 0.548 [0.427, 0.658] | +0.152 | +0.079 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Como vs Cagliari | Result: home | no | 0.2500 | 0.463 [0.269, 0.641] | +0.200 | +0.076 | 0.32 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | away team total over 0.5 | no | 0.2200 | 0.391 [0.255, 0.520] | +0.159 | +0.073 | 0.29 | - |  | RESEARCH_CANDIDATE |
+| Palmeiras vs Flamengo | away wins by more than 1.5 | no | 0.7700 | 0.895 [0.813, 0.955] | +0.112 | +0.073 | 0.84 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Philadelphia Union | away team total over 1.5 | no | 0.5000 | 0.668 [0.531, 0.785] | +0.150 | +0.071 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | btts | no | 0.3600 | 0.530 [0.409, 0.654] | +0.153 | +0.069 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | away team total over 1.5 | no | 0.5000 | 0.671 [0.527, 0.796] | +0.153 | +0.068 | 0.56 | - | * | RESEARCH_CANDIDATE |
@@ -119,8 +119,8 @@ model board generated 2026-11-21T04:06:47.226676Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1308
-action_NO_QUOTE: 151
+action_NO_EDGE: 1311
+action_NO_QUOTE: 148
 action_RESEARCH_CANDIDATE: 111
 contract_sides: 1570
 fixtures: 58
