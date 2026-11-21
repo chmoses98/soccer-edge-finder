@@ -1,10 +1,28 @@
 {
-  "batch_id": "kd-20261121T143248Z",
-  "captured_at": "2026-11-21T14:36:36.241354Z",
+  "batch_id": "kd-20261121T144502Z",
+  "captured_at": "2026-11-21T14:48:49.712698Z",
   "credits_charged": 0,
-  "eligible_fixtures": 0,
+  "eligible_fixtures": 9,
   "no_sport_key": [],
   "paid_calls": 0,
+  "per_sport": {
+    "soccer_epl": {
+      "fixtures": 9,
+      "join": {
+        "ambiguous": 0,
+        "events": 6,
+        "joined": 6,
+        "unjoined_fixtures": [
+          "fx:eng.premier_league:2026-27:eng.hull:eng.brighton:matchday_11",
+          "fx:eng.premier_league:2026-27:eng.liverpool:eng.man_united:matchday_11",
+          "fx:eng.premier_league:2026-27:eng.man_city:eng.fulham:matchday_11"
+        ],
+        "unresolved_names": []
+      },
+      "status": "BLOCKED_BUDGET_GUARD:STALE_SCHEDULE"
+    }
+  },
+  "remaining_after": 19538,
   "snapshots": 0,
-  "status": "NOTHING_ELIGIBLE"
+  "status": "OK"
 }

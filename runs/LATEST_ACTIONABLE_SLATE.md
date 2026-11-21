@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T143654Z-344fbb` · generated 2026-11-21T14:36:54.644174Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261121T144852Z-cc9ccd` · generated 2026-11-21T14:48:52.394794Z · trigger `kickoff_chain:T-30/T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-21T14:32:48.865559Z (CURRENT at publish; CURRENT until 2026-11-21T14:52:48.865559Z, STALE after 2026-11-21T15:02:48.865559Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T14:45:02.779678Z (CURRENT at publish; CURRENT until 2026-11-21T15:05:02.779678Z, STALE after 2026-11-21T15:15:02.779678Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-21T13:59:07.191325Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.70s
 
@@ -25,18 +25,18 @@ model board generated 2026-11-21T13:59:07.191325Z · simulations this update: 0 
 | 2026-11-21T17:00:00Z | Parma vs AS Roma (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T17:30:00Z | Schalke 04 vs VfB Stuttgart (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T19:00:00Z | New England Revolution vs Philadelphia Union (usa.mls) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 32 | 0 |
-| 2026-11-21T19:30:00Z | Palmeiras vs Flamengo (bra.serie_a) | VALID (STALE) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-21T19:30:00Z | Palmeiras vs Flamengo (bra.serie_a) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-21T19:45:00Z | Lens vs Toulouse (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T19:45:00Z | Lille vs Lyon (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T19:45:00Z | AS Monaco vs AJ Auxerre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T19:45:00Z | Strasbourg vs Brest (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T19:45:00Z | Napoli vs Torino (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-21T20:30:00Z | Bahia vs Coritiba (bra.serie_a) | VALID (STALE) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-21T20:30:00Z | Bahia vs Coritiba (bra.serie_a) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-21T21:00:00Z | FC Dallas vs Portland Timbers (usa.mls) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-11-21T22:50:00Z | Pachuca vs Toluca (mex.liga_mx) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-21T23:00:00Z | Santos Laguna vs León (mex.liga_mx) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-21T23:00:00Z | Inter Miami vs Columbus Crew (usa.mls) | VALID (STALE) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-11-22T00:00:00Z | Chapecoense vs Cruzeiro (bra.serie_a) | VALID (STALE) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-22T00:00:00Z | Chapecoense vs Cruzeiro (bra.serie_a) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T01:00:00Z | Pumas UNAM vs Monterrey (mex.liga_mx) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-22T03:00:00Z | Tigres UANL vs Club América (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-22T11:30:00Z | Sassuolo vs Genoa (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -64,14 +64,14 @@ model board generated 2026-11-21T13:59:07.191325Z · simulations this update: 0 
 | 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 44 | 0 |
 
-## Candidates on CURRENT prices (46; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (45; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Deportivo Alavés vs Deportivo La Coruña | Result: home | no | 0.1800 | 0.500 [0.274, 0.715] | +0.309 | +0.161 | 0.33 | - | * | RESEARCH_CANDIDATE |
+| Deportivo Alavés vs Deportivo La Coruña | Result: home | no | 0.1300 | 0.500 [0.274, 0.715] | +0.362 | +0.214 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: away | no | 0.2100 | 0.482 [0.294, 0.651] | +0.261 | +0.144 | 0.34 | - | * | RESEARCH_CANDIDATE |
+| Deportivo Alavés vs Deportivo La Coruña | Result: away | yes | 0.0100 | 0.251 [0.102, 0.436] | +0.241 | +0.127 | 0.12 | - |  | RESEARCH_CANDIDATE |
 | Getafe vs Atlético Madrid | Result: away | no | 0.3800 | 0.625 [0.467, 0.777] | +0.229 | +0.123 | 0.5 | - | * | RESEARCH_CANDIDATE |
-| Deportivo Alavés vs Deportivo La Coruña | Result: away | yes | 0.0200 | 0.251 [0.102, 0.436] | +0.230 | +0.116 | 0.12 | - |  | RESEARCH_CANDIDATE |
 | Hull City vs Brighton & Hove Albion | Result: away | no | 0.3700 | 0.633 [0.415, 0.832] | +0.247 | +0.111 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | btts | no | 0.3900 | 0.582 [0.462, 0.696] | +0.175 | +0.102 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Newcastle United vs Arsenal | Result: away | no | 0.3800 | 0.599 [0.422, 0.766] | +0.203 | +0.089 | 0.46 | - | * | RESEARCH_CANDIDATE |
@@ -81,6 +81,7 @@ model board generated 2026-11-21T13:59:07.191325Z · simulations this update: 0 
 | Newcastle United vs Arsenal | Result: home | yes | 0.1500 | 0.343 [0.183, 0.513] | +0.184 | +0.072 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | away team total over 0.5 | no | 0.3400 | 0.504 [0.381, 0.623] | +0.148 | +0.069 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 3.5 | no | 0.6500 | 0.803 [0.678, 0.907] | +0.137 | +0.068 | 0.72 | - |  | RESEARCH_CANDIDATE |
+| Deportivo Alavés vs Deportivo La Coruña | Result: draw | yes | 0.1200 | 0.248 [0.163, 0.331] | +0.121 | +0.068 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Hull City vs Brighton & Hove Albion | Result: home | yes | 0.1500 | 0.373 [0.174, 0.603] | +0.215 | +0.066 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: home | yes | 0.0700 | 0.224 [0.101, 0.355] | +0.150 | +0.064 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | away team total over 1.5 | no | 0.7100 | 0.841 [0.749, 0.918] | +0.117 | +0.064 | 0.77 | - |  | RESEARCH_CANDIDATE |
@@ -93,8 +94,8 @@ model board generated 2026-11-21T13:59:07.191325Z · simulations this update: 0 
 | Real Madrid vs Celta Vigo | Result: draw | yes | 0.1100 | 0.207 [0.127, 0.280] | +0.090 | +0.038 | 0.14 | - |  | RESEARCH_CANDIDATE |
 | Real Madrid vs Celta Vigo | Result: away | yes | 0.0500 | 0.162 [0.068, 0.277] | +0.109 | +0.037 | 0.08 | - |  | RESEARCH_CANDIDATE |
 | Atalanta vs Inter Milan | Result: away | no | 0.3800 | 0.550 [0.356, 0.736] | +0.154 | +0.032 | 0.41 | - | * | RESEARCH_CANDIDATE |
-| Deportivo Alavés vs Deportivo La Coruña | Result: draw | yes | 0.1600 | 0.248 [0.163, 0.331] | +0.079 | +0.026 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | Result: away | no | 0.8500 | 0.913 [0.852, 0.963] | +0.054 | +0.026 | 0.87 | - | * | RESEARCH_CANDIDATE |
+| Tottenham Hotspur vs Ipswich Town | Result: home | no | 0.3600 | 0.548 [0.293, 0.772] | +0.172 | +0.019 | 0.37 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | away team total over 2.5 | no | 0.9200 | 0.962 [0.926, 0.988] | +0.036 | +0.019 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 5.5 | no | 0.9300 | 0.966 [0.930, 0.992] | +0.031 | +0.016 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Atalanta vs Inter Milan | Result: home | yes | 0.1800 | 0.319 [0.161, 0.504] | +0.128 | +0.015 | 0.19 | - |  | RESEARCH_CANDIDATE |
@@ -105,17 +106,16 @@ model board generated 2026-11-21T13:59:07.191325Z · simulations this update: 0 
 | Getafe vs Atlético Madrid | Result: draw | yes | 0.2300 | 0.296 [0.234, 0.358] | +0.053 | +0.012 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | First-half result: away | no | 0.8400 | 0.898 [0.839, 0.951] | +0.048 | +0.011 | 0.85 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 0.5 | no | 0.0600 | 0.118 [0.059, 0.187] | +0.054 | +0.010 | 0.06 | - |  | RESEARCH_CANDIDATE |
-| Tottenham Hotspur vs Ipswich Town | Result: away | yes | 0.1600 | 0.313 [0.117, 0.517] | +0.143 | +0.010 | 0.16 | - | * | RESEARCH_CANDIDATE |
-| Tottenham Hotspur vs Ipswich Town | Result: home | no | 0.3700 | 0.548 [0.293, 0.772] | +0.162 | +0.009 | 0.37 | - |  | RESEARCH_CANDIDATE |
+| Tottenham Hotspur vs Ipswich Town | Result: away | yes | 0.1600 | 0.313 [0.117, 0.517] | +0.143 | +0.010 | 0.16 | - |  | RESEARCH_CANDIDATE |
 | Schalke 04 vs VfB Stuttgart | Result: home | yes | 0.2400 | 0.435 [0.189, 0.705] | +0.183 | +0.009 | 0.24 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_MODEL_STALE: 759
-action_NO_EDGE: 577
-action_NO_QUOTE: 146
-action_RESEARCH_CANDIDATE: 46
+action_NO_EDGE: 576
+action_NO_QUOTE: 148
+action_RESEARCH_CANDIDATE: 45
 contract_sides: 1528
 fixtures: 51
 fixtures_model_invalidated: 0
