@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T155953Z-12b3bb` · generated 2026-11-21T15:59:53.027394Z · trigger `kickoff_chain:T-120/T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261121T160609Z-5ff639` · generated 2026-11-21T16:06:09.022019Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-21T15:55:58.678239Z (CURRENT at publish; CURRENT until 2026-11-21T16:15:58.678239Z, STALE after 2026-11-21T16:25:58.678239Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T16:02:23.099958Z (CURRENT at publish; CURRENT until 2026-11-21T16:22:23.099958Z, STALE after 2026-11-21T16:32:23.099958Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-21T15:59:52.274740Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.58s
+model board generated 2026-11-21T15:59:52.274740Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.33s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -59,11 +59,11 @@ model board generated 2026-11-21T15:59:52.274740Z · simulations this update: 1 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Rayo Vallecano vs Valencia | Result: home | yes | 0.2100 | 0.526 [0.348, 0.702] | +0.305 | +0.191 | 0.39 | - | * | RESEARCH_CANDIDATE |
-| Rayo Vallecano vs Valencia | Result: away | no | 0.5100 | 0.770 [0.631, 0.887] | +0.242 | +0.162 | 0.67 | - |  | RESEARCH_CANDIDATE |
+| Rayo Vallecano vs Valencia | Result: home | yes | 0.1900 | 0.526 [0.348, 0.702] | +0.326 | +0.212 | 0.39 | - | * | RESEARCH_CANDIDATE |
+| Rayo Vallecano vs Valencia | Result: away | no | 0.4900 | 0.770 [0.631, 0.887] | +0.262 | +0.182 | 0.67 | - |  | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: away | no | 0.2100 | 0.482 [0.294, 0.651] | +0.261 | +0.144 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Getafe vs Atlético Madrid | Result: away | no | 0.3800 | 0.625 [0.467, 0.777] | +0.229 | +0.123 | 0.5 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Necaxa | btts | no | 0.4000 | 0.582 [0.462, 0.696] | +0.165 | +0.092 | 0.49 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Necaxa | btts | no | 0.3900 | 0.582 [0.462, 0.696] | +0.175 | +0.102 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 2.5 | no | 0.4200 | 0.612 [0.455, 0.758] | +0.175 | +0.079 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Real Madrid vs Celta Vigo | Result: home | no | 0.1600 | 0.369 [0.205, 0.541] | +0.200 | +0.079 | 0.23 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | btts | no | 0.3800 | 0.548 [0.427, 0.658] | +0.152 | +0.079 | 0.45 | - | * | RESEARCH_CANDIDATE |
@@ -101,16 +101,14 @@ model board generated 2026-11-21T15:59:52.274740Z · simulations this update: 1 
 ## Counts
 
 ```
-action_MODEL_STALE: 758
+action_MODEL_STALE: 759
 action_NO_EDGE: 535
-action_NO_QUOTE: 143
+action_NO_QUOTE: 142
 action_RESEARCH_CANDIDATE: 38
 contract_sides: 1474
 fixtures: 42
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
-
-Removed (kicked off): 9
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
