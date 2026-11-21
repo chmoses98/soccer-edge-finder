@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T113350Z-ff5d20` · generated 2026-11-21T11:33:50.505309Z · trigger `kickoff_chain:T-60` · mode `reprice_only`
+slate `slate-20261121T114846Z-1de9c8` · generated 2026-11-21T11:48:46.136613Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-21T11:30:01.136072Z (CURRENT at publish; CURRENT until 2026-11-21T11:50:01.136072Z, STALE after 2026-11-21T12:00:01.136072Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T11:45:03.083727Z (CURRENT at publish; CURRENT until 2026-11-21T12:05:03.083727Z, STALE after 2026-11-21T12:15:03.083727Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-21T09:41:18.740117Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.90s
+model board generated 2026-11-21T09:41:18.740117Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.07s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -71,7 +71,7 @@ model board generated 2026-11-21T09:41:18.740117Z · simulations this update: 0 
 | 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 44 | 0 |
 
-## Candidates on CURRENT prices (91; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (90; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -120,9 +120,9 @@ model board generated 2026-11-21T09:41:18.740117Z · simulations this update: 0 
 
 ```
 action_MODEL_STALE: 183
-action_NO_EDGE: 1152
-action_NO_QUOTE: 144
-action_RESEARCH_CANDIDATE: 91
+action_NO_EDGE: 1155
+action_NO_QUOTE: 142
+action_RESEARCH_CANDIDATE: 90
 contract_sides: 1570
 fixtures: 58
 fixtures_model_invalidated: 0
