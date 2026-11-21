@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T075219Z-f9dd8c` · generated 2026-11-21T07:52:19.750353Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261121T080722Z-c73367` · generated 2026-11-21T08:07:22.063254Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-21T07:48:36.722791Z (CURRENT at publish; CURRENT until 2026-11-21T08:08:36.722791Z, STALE after 2026-11-21T08:18:36.722791Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T08:03:39.030257Z (CURRENT at publish; CURRENT until 2026-11-21T08:23:39.030257Z, STALE after 2026-11-21T08:33:39.030257Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-21T04:06:47.226676Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.90s
+model board generated 2026-11-21T04:06:47.226676Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.08s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -75,7 +75,7 @@ model board generated 2026-11-21T04:06:47.226676Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Parma vs AS Roma | Result: away | no | 0.2300 | 0.482 [0.294, 0.651] | +0.240 | +0.123 | 0.34 | - | * | RESEARCH_CANDIDATE |
+| Parma vs AS Roma | Result: away | no | 0.2100 | 0.482 [0.294, 0.651] | +0.261 | +0.144 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Getafe vs Atlético Madrid | Result: away | no | 0.3800 | 0.625 [0.467, 0.777] | +0.229 | +0.123 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Hull City vs Brighton & Hove Albion | Result: away | no | 0.3700 | 0.633 [0.415, 0.832] | +0.247 | +0.111 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | btts | no | 0.3900 | 0.582 [0.462, 0.696] | +0.175 | +0.102 | 0.49 | - | * | RESEARCH_CANDIDATE |
@@ -85,8 +85,8 @@ model board generated 2026-11-21T04:06:47.226676Z · simulations this update: 0 
 | Santos Laguna vs León | away team total over 1.5 | no | 0.5700 | 0.745 [0.604, 0.860] | +0.158 | +0.080 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 2.5 | no | 0.4200 | 0.612 [0.455, 0.758] | +0.175 | +0.079 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | btts | no | 0.3800 | 0.548 [0.427, 0.658] | +0.152 | +0.079 | 0.45 | - | * | RESEARCH_CANDIDATE |
-| Pachuca vs Toluca | away team total over 1.5 | no | 0.4900 | 0.671 [0.527, 0.796] | +0.163 | +0.078 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | away team total over 0.5 | no | 0.2200 | 0.391 [0.255, 0.520] | +0.159 | +0.073 | 0.29 | - |  | RESEARCH_CANDIDATE |
+| Pachuca vs Toluca | away team total over 1.5 | no | 0.5000 | 0.671 [0.527, 0.796] | +0.153 | +0.068 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 3.5 | no | 0.6500 | 0.803 [0.678, 0.907] | +0.137 | +0.068 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | Hull City vs Brighton & Hove Albion | Result: home | yes | 0.1500 | 0.373 [0.174, 0.603] | +0.215 | +0.066 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | away team total over 1.5 | no | 0.7100 | 0.841 [0.749, 0.918] | +0.117 | +0.064 | 0.77 | - | * | RESEARCH_CANDIDATE |
@@ -114,14 +114,14 @@ model board generated 2026-11-21T04:06:47.226676Z · simulations this update: 0 
 | Pachuca vs Toluca | btts | no | 0.3400 | 0.468 [0.344, 0.590] | +0.113 | +0.030 | 0.36 | - | * | RESEARCH_CANDIDATE |
 | Union Berlin vs RB Leipzig | Result: home | yes | 0.1600 | 0.325 [0.136, 0.529] | +0.155 | +0.028 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | Result: away | no | 0.8500 | 0.913 [0.852, 0.963] | +0.054 | +0.026 | 0.87 | - | * | RESEARCH_CANDIDATE |
-| Nice vs Paris Saint-Germain | Result: draw | yes | 0.1800 | 0.258 [0.192, 0.327] | +0.068 | +0.025 | 0.2 | - |  | RESEARCH_CANDIDATE |
+| Sassuolo vs Genoa | Result: home | yes | 0.3500 | 0.517 [0.329, 0.707] | +0.151 | +0.023 | 0.37 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_MODEL_STALE: 92
-action_NO_EDGE: 1233
-action_NO_QUOTE: 150
+action_NO_EDGE: 1229
+action_NO_QUOTE: 154
 action_RESEARCH_CANDIDATE: 95
 contract_sides: 1570
 fixtures: 58
