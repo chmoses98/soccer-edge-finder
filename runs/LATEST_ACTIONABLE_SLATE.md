@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T060713Z-d77c62` · generated 2026-11-21T06:07:13.666959Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261121T062213Z-2bc105` · generated 2026-11-21T06:22:13.640138Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-21T06:03:30.778133Z (CURRENT at publish; CURRENT until 2026-11-21T06:23:30.778133Z, STALE after 2026-11-21T06:33:30.778133Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T06:18:30.840816Z (CURRENT at publish; CURRENT until 2026-11-21T06:38:30.840816Z, STALE after 2026-11-21T06:48:30.840816Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-21T04:06:47.226676Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.92s
+model board generated 2026-11-21T04:06:47.226676Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.11s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -71,7 +71,7 @@ model board generated 2026-11-21T04:06:47.226676Z · simulations this update: 0 
 | 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 44 | 0 |
 
-## Candidates on CURRENT prices (111; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (110; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -88,13 +88,13 @@ model board generated 2026-11-21T04:06:47.226676Z · simulations this update: 0 
 | Nashville SC vs FC Cincinnati | btts | no | 0.3800 | 0.548 [0.427, 0.658] | +0.152 | +0.079 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Como vs Cagliari | Result: home | no | 0.2500 | 0.463 [0.269, 0.641] | +0.200 | +0.076 | 0.32 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | away team total over 0.5 | no | 0.2200 | 0.391 [0.255, 0.520] | +0.159 | +0.073 | 0.29 | - |  | RESEARCH_CANDIDATE |
-| Palmeiras vs Flamengo | away wins by more than 1.5 | no | 0.7700 | 0.895 [0.813, 0.955] | +0.112 | +0.073 | 0.84 | - | * | RESEARCH_CANDIDATE |
 | New England Revolution vs Philadelphia Union | away team total over 1.5 | no | 0.5000 | 0.668 [0.531, 0.785] | +0.150 | +0.071 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | btts | no | 0.3600 | 0.530 [0.409, 0.654] | +0.153 | +0.069 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | away team total over 1.5 | no | 0.5000 | 0.671 [0.527, 0.796] | +0.153 | +0.068 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 3.5 | no | 0.6500 | 0.803 [0.678, 0.907] | +0.137 | +0.068 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | Hull City vs Brighton & Hove Albion | Result: home | yes | 0.1500 | 0.373 [0.174, 0.603] | +0.215 | +0.066 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Philadelphia Union | away team total over 0.5 | no | 0.1700 | 0.315 [0.205, 0.421] | +0.136 | +0.065 | 0.23 | - |  | RESEARCH_CANDIDATE |
+| Palmeiras vs Flamengo | away wins by more than 1.5 | no | 0.7800 | 0.895 [0.813, 0.955] | +0.103 | +0.063 | 0.84 | - | * | RESEARCH_CANDIDATE |
 | Getafe vs Atlético Madrid | Result: home | yes | 0.1500 | 0.330 [0.186, 0.488] | +0.171 | +0.063 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Newcastle United vs Arsenal | Result: home | yes | 0.1600 | 0.343 [0.183, 0.513] | +0.173 | +0.061 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | away team total over 0.5 | no | 0.3500 | 0.504 [0.381, 0.623] | +0.138 | +0.058 | 0.4 | - | * | RESEARCH_CANDIDATE |
@@ -104,24 +104,24 @@ model board generated 2026-11-21T04:06:47.226676Z · simulations this update: 0 
 | Parma vs AS Roma | Result: home | yes | 0.0800 | 0.224 [0.101, 0.355] | +0.139 | +0.053 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | Schalke 04 vs VfB Stuttgart | Result: away | no | 0.4800 | 0.683 [0.426, 0.887] | +0.185 | +0.052 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | away team total over 2.5 | no | 0.8200 | 0.917 [0.842, 0.971] | +0.087 | +0.052 | 0.87 | - |  | RESEARCH_CANDIDATE |
-| Pachuca vs Toluca | away team total over 0.5 | no | 0.1800 | 0.319 [0.203, 0.434] | +0.129 | +0.052 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: draw | yes | 0.1500 | 0.258 [0.181, 0.330] | +0.099 | +0.052 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Philadelphia Union | away team total over 2.5 | no | 0.7700 | 0.876 [0.788, 0.943] | +0.093 | +0.049 | 0.82 | - |  | RESEARCH_CANDIDATE |
 | Nice vs Paris Saint-Germain | Result: away | no | 0.3400 | 0.527 [0.337, 0.710] | +0.171 | +0.047 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 1.5 | no | 0.2100 | 0.354 [0.220, 0.493] | +0.132 | +0.044 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | SV Elversberg vs SC Freiburg | Result: away | no | 0.5200 | 0.723 [0.484, 0.917] | +0.186 | +0.044 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Union Berlin vs RB Leipzig | Result: away | no | 0.3600 | 0.548 [0.317, 0.752] | +0.172 | +0.042 | 0.4 | - | * | RESEARCH_CANDIDATE |
+| Pachuca vs Toluca | away team total over 0.5 | no | 0.1900 | 0.319 [0.203, 0.434] | +0.118 | +0.042 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Philadelphia Union | away wins by more than 1.5 | no | 0.7800 | 0.870 [0.786, 0.938] | +0.078 | +0.038 | 0.82 | - | * | RESEARCH_CANDIDATE |
+| Union Berlin vs RB Leipzig | Result: home | yes | 0.1500 | 0.325 [0.136, 0.529] | +0.166 | +0.038 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Real Madrid vs Celta Vigo | Result: draw | yes | 0.1100 | 0.207 [0.127, 0.280] | +0.090 | +0.038 | 0.14 | - |  | RESEARCH_CANDIDATE |
 | Real Madrid vs Celta Vigo | Result: away | yes | 0.0500 | 0.162 [0.068, 0.277] | +0.109 | +0.037 | 0.08 | - |  | RESEARCH_CANDIDATE |
-| New England Revolution vs Philadelphia Union | Result: away | no | 0.5700 | 0.694 [0.566, 0.815] | +0.107 | +0.037 | 0.6 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1311
-action_NO_QUOTE: 148
-action_RESEARCH_CANDIDATE: 111
+action_NO_EDGE: 1309
+action_NO_QUOTE: 151
+action_RESEARCH_CANDIDATE: 110
 contract_sides: 1570
 fixtures: 58
 fixtures_model_invalidated: 0
