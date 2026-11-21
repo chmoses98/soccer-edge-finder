@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T220408Z-871a2e` · generated 2026-11-21T22:04:08.459990Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261121T221853Z-04e806` · generated 2026-11-21T22:18:53.822078Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-21T22:00:02.351210Z (CURRENT at publish; CURRENT until 2026-11-21T22:20:02.351210Z, STALE after 2026-11-21T22:30:02.351210Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T22:15:02.380225Z (CURRENT at publish; CURRENT until 2026-11-21T22:35:02.380225Z, STALE after 2026-11-21T22:45:02.380225Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-21T22:03:48.648355Z · simulations this update: 2 · Odds API calls this update: 0 (credits 0) · reprice 0.29s
+model board generated 2026-11-21T22:18:47.200535Z · simulations this update: 16 · Odds API calls this update: 0 (credits 0) · reprice 0.30s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -22,6 +22,7 @@ model board generated 2026-11-21T22:03:48.648355Z · simulations this update: 2 
 | 2026-11-22T12:00:00Z | Deportivo Alavés vs Deportivo La Coruña (esp.la_liga) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T12:00:00Z | FC Barcelona vs Villarreal (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T12:00:00Z | Getafe vs Atlético Madrid (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-22T12:00:00Z | Levante vs Elche (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T12:00:00Z | Osasuna vs Málaga (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T12:00:00Z | Racing Santander vs Real Sociedad (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T12:00:00Z | Rayo Vallecano vs Valencia (esp.la_liga) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -42,36 +43,35 @@ model board generated 2026-11-21T22:03:48.648355Z · simulations this update: 2 
 | 2026-11-22T23:07:00Z | Guadalajara vs Cruz Azul (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 44 | 0 |
+| 2026-11-23T17:30:00Z | Monza vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-23T19:45:00Z | Juventus vs Venezia (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (63; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (58; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Real Madrid vs Celta Vigo | Result: home | no | 0.0100 | 0.369 [0.205, 0.541] | +0.358 | +0.238 | 0.23 | - | * | RESEARCH_CANDIDATE |
-| Real Madrid vs Celta Vigo | Result: draw | yes | 0.0100 | 0.207 [0.127, 0.280] | +0.196 | +0.145 | 0.14 | - |  | RESEARCH_CANDIDATE |
 | Getafe vs Atlético Madrid | Result: away | no | 0.3700 | 0.625 [0.467, 0.777] | +0.239 | +0.133 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | btts | no | 0.3900 | 0.582 [0.462, 0.696] | +0.175 | +0.102 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | away team total over 0.5 | no | 0.3200 | 0.504 [0.381, 0.623] | +0.169 | +0.089 | 0.4 | - | * | RESEARCH_CANDIDATE |
-| Real Madrid vs Celta Vigo | Result: away | yes | 0.0100 | 0.162 [0.068, 0.277] | +0.151 | +0.080 | 0.08 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 2.5 | no | 0.4200 | 0.612 [0.455, 0.758] | +0.175 | +0.079 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | btts | no | 0.3800 | 0.548 [0.427, 0.658] | +0.152 | +0.079 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Getafe vs Atlético Madrid | Result: home | yes | 0.1400 | 0.330 [0.186, 0.488] | +0.181 | +0.074 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | away team total over 1.5 | no | 0.7000 | 0.841 [0.749, 0.918] | +0.126 | +0.073 | 0.77 | - |  | RESEARCH_CANDIDATE |
-| Santos Laguna vs León | away team total over 1.5 | no | 0.5800 | 0.745 [0.604, 0.860] | +0.148 | +0.071 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 3.5 | no | 0.6500 | 0.803 [0.678, 0.907] | +0.137 | +0.068 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | away team total over 1.5 | no | 0.5000 | 0.671 [0.528, 0.797] | +0.153 | +0.068 | 0.56 | - | * | RESEARCH_CANDIDATE |
-| Santos Laguna vs León | away team total over 0.5 | no | 0.2300 | 0.391 [0.256, 0.520] | +0.149 | +0.064 | 0.29 | - |  | RESEARCH_CANDIDATE |
+| Santos Laguna vs León | away team total over 1.5 | no | 0.5900 | 0.745 [0.604, 0.860] | +0.138 | +0.061 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 1.5 | no | 0.2000 | 0.354 [0.220, 0.493] | +0.143 | +0.055 | 0.25 | - |  | RESEARCH_CANDIDATE |
+| Santos Laguna vs León | away team total over 0.5 | no | 0.2400 | 0.391 [0.256, 0.520] | +0.138 | +0.053 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | btts | no | 0.3800 | 0.530 [0.407, 0.654] | +0.133 | +0.048 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | away team total over 2.5 | no | 0.7700 | 0.876 [0.786, 0.948] | +0.094 | +0.047 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 4.5 | no | 0.8200 | 0.913 [0.838, 0.970] | +0.082 | +0.046 | 0.86 | - |  | RESEARCH_CANDIDATE |
+| Santos Laguna vs León | away team total over 2.5 | no | 0.8300 | 0.917 [0.842, 0.971] | +0.077 | +0.043 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | away team total over 0.5 | no | 0.1900 | 0.319 [0.204, 0.434] | +0.119 | +0.041 | 0.22 | - |  | RESEARCH_CANDIDATE |
-| Santos Laguna vs León | away team total over 2.5 | no | 0.8400 | 0.917 [0.842, 0.971] | +0.068 | +0.033 | 0.87 | - |  | RESEARCH_CANDIDATE |
+| Nashville SC vs FC Cincinnati | away team total over 2.5 | no | 0.9000 | 0.962 [0.926, 0.988] | +0.055 | +0.038 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Atalanta vs Inter Milan | Result: away | no | 0.3800 | 0.550 [0.356, 0.736] | +0.154 | +0.032 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | btts | no | 0.3400 | 0.469 [0.344, 0.592] | +0.113 | +0.030 | 0.36 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | Result: away | no | 0.8500 | 0.913 [0.852, 0.963] | +0.054 | +0.026 | 0.87 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | away wins by more than 1.5 | no | 0.8000 | 0.877 [0.791, 0.946] | +0.066 | +0.022 | 0.82 | - | * | RESEARCH_CANDIDATE |
-| Nashville SC vs FC Cincinnati | away team total over 2.5 | no | 0.9200 | 0.962 [0.926, 0.988] | +0.036 | +0.019 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | Total goals over 3.5 | no | 0.5700 | 0.696 [0.540, 0.833] | +0.108 | +0.017 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 5.5 | no | 0.9300 | 0.966 [0.930, 0.992] | +0.031 | +0.016 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | Total goals over 2.5 | no | 0.3500 | 0.485 [0.323, 0.642] | +0.119 | +0.016 | 0.36 | - |  | RESEARCH_CANDIDATE |
@@ -80,23 +80,26 @@ model board generated 2026-11-21T22:03:48.648355Z · simulations this update: 2 
 | Pachuca vs Toluca | away wins by more than 2.5 | no | 0.9200 | 0.958 [0.917, 0.987] | +0.032 | +0.014 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Exact score 1-0 (home-away) | yes | 0.0900 | 0.142 [0.093, 0.194] | +0.046 | +0.014 | 0.1 | - | * | RESEARCH_CANDIDATE |
 | Sassuolo vs Genoa | Result: home | yes | 0.3600 | 0.517 [0.329, 0.707] | +0.141 | +0.013 | 0.37 | - | * | RESEARCH_CANDIDATE |
-| Santos Laguna vs León | away wins by more than 1.5 | no | 0.8500 | 0.908 [0.837, 0.966] | +0.050 | +0.012 | 0.86 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | First-half result: away | no | 0.8400 | 0.898 [0.839, 0.951] | +0.048 | +0.011 | 0.85 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 0.5 | no | 0.0600 | 0.118 [0.059, 0.187] | +0.054 | +0.010 | 0.06 | - |  | RESEARCH_CANDIDATE |
-| Pachuca vs Toluca | Total goals over 1.5 | no | 0.1500 | 0.248 [0.135, 0.370] | +0.090 | +0.009 | 0.15 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | Total goals over 4.5 | no | 0.7600 | 0.843 [0.728, 0.935] | +0.070 | +0.009 | 0.76 | - |  | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Vasco da Gama | Result: away | no | 0.6450 | 0.743 [0.605, 0.861] | +0.082 | +0.007 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | FC Augsburg vs Mainz 05 | Result: away | no | 0.6100 | 0.740 [0.553, 0.894] | +0.113 | +0.007 | 0.61 | - | * | RESEARCH_CANDIDATE |
+| Pachuca vs Toluca | First half: both teams to score | no | 0.7300 | 0.802 [0.708, 0.882] | +0.058 | +0.006 | 0.73 | - | * | RESEARCH_CANDIDATE |
+| Pachuca vs Toluca | First-half total goals over 0.5 | no | 0.2200 | 0.305 [0.198, 0.412] | +0.073 | +0.006 | 0.22 | - | * | RESEARCH_CANDIDATE |
+| Santos Laguna vs León | First half: away wins by more than 1.5 | no | 0.9300 | 0.959 [0.919, 0.991] | +0.024 | +0.005 | 0.93 | - | * | RESEARCH_CANDIDATE |
+| Nashville SC vs FC Cincinnati | Result: home | yes | 0.6700 | 0.760 [0.644, 0.872] | +0.075 | +0.005 | 0.67 | - |  | RESEARCH_CANDIDATE |
+| Santos Laguna vs León | Total goals over 1.5 | no | 0.1900 | 0.294 [0.169, 0.434] | +0.093 | +0.005 | 0.19 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_MODEL_STALE: 298
-action_NO_EDGE: 727
-action_NO_QUOTE: 154
-action_RESEARCH_CANDIDATE: 63
-contract_sides: 1242
-fixtures: 30
+action_MODEL_STALE: 299
+action_NO_EDGE: 747
+action_NO_QUOTE: 156
+action_RESEARCH_CANDIDATE: 58
+contract_sides: 1260
+fixtures: 33
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
