@@ -1,10 +1,10 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 673,
   "PINNACLE_VALID_CLOSE": 135,
   "CLOSE_BLOCKED_BUDGET": 31,
+  "MISSED_DISPATCHER_CLOSE": 110,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 676,
   "NO_SPORT_KEY": 39,
-  "MISSED_DISPATCHER_CLOSE": 108,
   "PINNACLE_QUOTED_NOTHING": 3
  },
  "fixtures": {
@@ -461,6 +461,11 @@
   "fx:bra.serie_a:2026:bra.atletico_mineiro:bra.santos": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:bra.serie_a:2026:bra.bahia:bra.coritiba": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
    "batch_id": null
   },
   "fx:bra.serie_a:2026:bra.bahia:bra.flamengo": {
@@ -3878,6 +3883,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:mex.liga_mx:2026:mex.pachuca:mex.toluca": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
   "fx:mex.liga_mx:2026:mex.puebla:mex.leon": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -3949,6 +3959,11 @@
    "batch_id": null
   },
   "fx:mex.liga_mx:2026:mex.san_luis:mex.santos_laguna": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:mex.liga_mx:2026:mex.santos_laguna:mex.leon": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
@@ -4638,6 +4653,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:usa.mls:2026:usa.fc_dallas:usa.portland_timbers": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
+   "batch_id": null
+  },
   "fx:usa.mls:2026:usa.fc_dallas:usa.san_jose_earthquakes": {
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
@@ -4666,6 +4686,11 @@
   "fx:usa.mls:2026:usa.inter_miami:usa.cincinnati": {
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
+   "batch_id": null
+  },
+  "fx:usa.mls:2026:usa.inter_miami:usa.columbus_crew": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
    "batch_id": null
   },
   "fx:usa.mls:2026:usa.inter_miami:usa.dc_united": {
