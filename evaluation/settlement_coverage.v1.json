@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-21T12:53:39.057257Z",
+  "as_of": "2026-11-21T13:06:07.332231Z",
   "by_competition": {
     "arg.primera": {
       "PENDING_EVIDENCE": 0,
@@ -75,7 +75,7 @@
     },
     "ita.serie_a": {
       "PENDING_EVIDENCE": 192,
-      "PENDING_KICKOFF": 286,
+      "PENDING_KICKOFF": 292,
       "PENDING_MAPPING": 0,
       "PENDING_RESULT": 0,
       "SETTLED": 1787,
@@ -194,7 +194,7 @@
     },
     "match_result_3way": {
       "PENDING_EVIDENCE": 0,
-      "PENDING_KICKOFF": 924,
+      "PENDING_KICKOFF": 930,
       "PENDING_MAPPING": 21,
       "PENDING_RESULT": 0,
       "SETTLED": 4731,
@@ -240,25 +240,25 @@
   },
   "close_completeness": {
     "kalshi": {
-      "KALSHI_CLOSE": 1679,
+      "KALSHI_CLOSE": 1421,
       "NEAR_CLOSE": 0,
-      "NONE": 723,
-      "STALE": 154,
+      "NONE": 672,
+      "STALE": 130,
       "TRUE_CLOSE": 0
     },
-    "kalshi_close_share": 0.656885758998435,
-    "missing_kalshi_close_rate": 0.34311424100156496,
-    "missing_reference_close_rate": 0.9847417840375586,
-    "records": 2556,
+    "kalshi_close_share": 0.6392262708052182,
+    "missing_kalshi_close_rate": 0.3607737291947818,
+    "missing_reference_close_rate": 0.99055330634278,
+    "records": 2223,
     "reference": {
       "KALSHI_CLOSE": 0,
       "NEAR_CLOSE": 0,
-      "NONE": 2517,
+      "NONE": 2202,
       "STALE": 0,
-      "TRUE_CLOSE": 39
+      "TRUE_CLOSE": 21
     },
-    "reference_close_share": 0.015258215962441314,
-    "true_close_share": 0.015258215962441314
+    "reference_close_share": 0.009446693657219974,
+    "true_close_share": 0.009446693657219974
   },
   "grace_hours": 3.0,
   "pending_evidence": 1582,
@@ -564,13 +564,13 @@
       "state": "PENDING_EVIDENCE"
     }
   ],
-  "pending_kickoff": 2600,
+  "pending_kickoff": 2606,
   "pending_mapping": 641,
   "pending_result": 0,
-  "predictions_total": 49972,
+  "predictions_total": 49978,
   "reasons": {
     "PENDING_EVIDENCE: period data missing (half-time split, extra time, penalties or first scorer)": 1582,
-    "PENDING_KICKOFF: kickoff + grace in the future": 2600,
+    "PENDING_KICKOFF: kickoff + grace in the future": 2606,
     "PENDING_MAPPING: 2 candidate results from espn_site_api": 641
   },
   "schema": "settlement_coverage_v1",
