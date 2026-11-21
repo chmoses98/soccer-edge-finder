@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T082222Z-2ad30a` · generated 2026-11-21T08:22:22.191990Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261121T083723Z-821d80` · generated 2026-11-21T08:37:23.013413Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-21T08:18:39.066112Z (CURRENT at publish; CURRENT until 2026-11-21T08:38:39.066112Z, STALE after 2026-11-21T08:48:39.066112Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T08:33:40.070576Z (CURRENT at publish; CURRENT until 2026-11-21T08:53:40.070576Z, STALE after 2026-11-21T09:03:40.070576Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-21T04:06:47.226676Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.92s
+model board generated 2026-11-21T04:06:47.226676Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.04s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -91,13 +91,13 @@ model board generated 2026-11-21T04:06:47.226676Z · simulations this update: 0 
 | Hull City vs Brighton & Hove Albion | Result: home | yes | 0.1500 | 0.373 [0.174, 0.603] | +0.215 | +0.066 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | away team total over 1.5 | no | 0.7100 | 0.841 [0.749, 0.918] | +0.117 | +0.064 | 0.77 | - | * | RESEARCH_CANDIDATE |
 | Getafe vs Atlético Madrid | Result: home | yes | 0.1500 | 0.330 [0.186, 0.488] | +0.171 | +0.063 | 0.21 | - |  | RESEARCH_CANDIDATE |
+| Parma vs AS Roma | Result: draw | yes | 0.1400 | 0.258 [0.181, 0.330] | +0.109 | +0.062 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Newcastle United vs Arsenal | Result: home | yes | 0.1600 | 0.343 [0.183, 0.513] | +0.173 | +0.061 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | away team total over 0.5 | no | 0.3500 | 0.504 [0.381, 0.623] | +0.138 | +0.058 | 0.4 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | away team total over 2.5 | no | 0.7600 | 0.876 [0.785, 0.947] | +0.104 | +0.057 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: home | yes | 0.0800 | 0.224 [0.101, 0.355] | +0.139 | +0.053 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | Schalke 04 vs VfB Stuttgart | Result: away | no | 0.4800 | 0.683 [0.426, 0.887] | +0.185 | +0.052 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | away team total over 2.5 | no | 0.8200 | 0.917 [0.842, 0.971] | +0.087 | +0.052 | 0.87 | - |  | RESEARCH_CANDIDATE |
-| Parma vs AS Roma | Result: draw | yes | 0.1500 | 0.258 [0.181, 0.330] | +0.099 | +0.052 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | btts | no | 0.3800 | 0.530 [0.409, 0.654] | +0.133 | +0.048 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Nice vs Paris Saint-Germain | Result: away | no | 0.3400 | 0.527 [0.337, 0.710] | +0.171 | +0.047 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 1.5 | no | 0.2100 | 0.354 [0.220, 0.493] | +0.132 | +0.044 | 0.25 | - |  | RESEARCH_CANDIDATE |
