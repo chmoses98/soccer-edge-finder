@@ -1,91 +1,63 @@
 {
   "by_horizon": {
     "120": {
-      "achieved_minutes_median": 122.49,
+      "achieved_minutes_median": 122.48,
       "achieved_minutes_p10": 117.78,
       "achieved_minutes_p90": 126.4,
-      "delivered": 953,
-      "delivery_rate": 0.9370698131760079,
+      "delivered": 956,
+      "delivery_rate": 0.9363369245837414,
       "lateness_minutes_max": 64.28,
-      "lateness_minutes_median": -2.49,
-      "missed": 64
+      "lateness_minutes_median": -2.47,
+      "missed": 65
     },
     "15": {
       "achieved_minutes_median": 11.88,
       "achieved_minutes_p10": 9.63,
       "achieved_minutes_p90": 13.35,
       "delivered": 867,
-      "delivery_rate": 0.8766430738119313,
+      "delivery_rate": 0.8748738647830474,
       "lateness_minutes_max": 14.64,
       "lateness_minutes_median": 3.12,
-      "missed": 122
+      "missed": 124
     },
     "30": {
       "achieved_minutes_median": 26.66,
       "achieved_minutes_p10": 23.94,
       "achieved_minutes_p90": 28.77,
       "delivered": 872,
-      "delivery_rate": 0.8808080808080808,
+      "delivery_rate": 0.8790322580645161,
       "lateness_minutes_max": 18.49,
       "lateness_minutes_median": 3.34,
-      "missed": 118
+      "missed": 120
     },
     "5": {
       "achieved_minutes_median": 1.99,
       "achieved_minutes_p10": 0.04,
       "achieved_minutes_p90": 2.54,
       "delivered": 848,
-      "delivery_rate": 0.8609137055837564,
+      "delivery_rate": 0.8574317492416582,
       "lateness_minutes_max": 9.28,
       "lateness_minutes_median": 3.01,
-      "missed": 137
+      "missed": 141
     },
     "60": {
       "achieved_minutes_median": 60.88,
-      "achieved_minutes_p10": 55.72,
+      "achieved_minutes_p10": 55.52,
       "achieved_minutes_p90": 62.22,
-      "delivered": 900,
-      "delivery_rate": 0.8973080757726819,
+      "delivered": 901,
+      "delivery_rate": 0.8965174129353234,
       "lateness_minutes_max": 33.2,
       "lateness_minutes_median": -0.88,
-      "missed": 103
+      "missed": 104
     }
   },
-  "delivered_total": 4440,
-  "delivery_rate_total": 0.8908507223113965,
-  "fixtures_tracked": 1017,
-  "generated_at": "2026-11-21T19:48:07Z",
-  "missed_total": 544,
-  "n_pending_fixtures": 45,
+  "delivered_total": 4444,
+  "delivery_rate_total": 0.8891556622649059,
+  "fixtures_tracked": 1021,
+  "generated_at": "2026-11-21T21:57:37Z",
+  "missed_total": 554,
+  "n_pending_fixtures": 42,
   "pending_fixtures": [
-    {
-      "competition_id": "arg.primera",
-      "fixture_id": "fx:arg.primera:2026:arg.argentinos_juniors:arg.independiente",
-      "kickoff_utc": "2026-11-21T20:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "esp.la_liga",
-      "fixture_id": "fx:esp.la_liga:2026-27:esp.real_madrid:esp.celta_vigo",
-      "kickoff_utc": "2026-11-21T20:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "bra.serie_a",
-      "fixture_id": "fx:bra.serie_a:2026:bra.bahia:bra.coritiba",
-      "kickoff_utc": "2026-11-21T20:30:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "usa.mls",
-      "fixture_id": "fx:usa.mls:2026:usa.fc_dallas:usa.portland_timbers",
-      "kickoff_utc": "2026-11-21T21:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
     {
       "competition_id": "mex.liga_mx",
       "fixture_id": "fx:mex.liga_mx:2026:mex.pachuca:mex.toluca",
@@ -370,6 +342,13 @@
       "competition_id": "usa.mls",
       "fixture_id": "fx:usa.mls:2026:usa.st_louis_city:usa.lafc",
       "kickoff_utc": "2026-11-24T01:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "bra.serie_a",
+      "fixture_id": "fx:bra.serie_a:2026:bra.chapecoense:bra.palmeiras",
+      "kickoff_utc": "2026-11-24T21:00:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }
