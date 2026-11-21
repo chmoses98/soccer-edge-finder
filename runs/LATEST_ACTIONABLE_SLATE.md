@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T104140Z-3fa43d` · generated 2026-11-21T10:41:40.341174Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261121T105730Z-8ca385` · generated 2026-11-21T10:57:30.171126Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-21T10:37:56.880516Z (CURRENT at publish; CURRENT until 2026-11-21T10:57:56.880516Z, STALE after 2026-11-21T11:07:56.880516Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T10:52:56.915356Z (CURRENT at publish; CURRENT until 2026-11-21T11:12:56.915356Z, STALE after 2026-11-21T11:22:56.915356Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-21T09:41:18.740117Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.87s
 
@@ -66,7 +66,7 @@ model board generated 2026-11-21T09:41:18.740117Z · simulations this update: 0 
 | 2026-11-22T19:45:00Z | Atalanta vs Inter Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T21:00:00Z | Nashville SC vs FC Cincinnati (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 47 | 0 |
 | 2026-11-22T21:30:00Z | Fluminense vs Mirassol (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-11-22T22:30:00Z | Red Bull Bragantino vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-22T22:30:00Z | Red Bull Bragantino vs Vasco da Gama (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T23:07:00Z | Guadalajara vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 44 | 0 |
@@ -114,14 +114,14 @@ model board generated 2026-11-21T09:41:18.740117Z · simulations this update: 0 
 | Pachuca vs Toluca | btts | no | 0.3400 | 0.468 [0.344, 0.590] | +0.113 | +0.030 | 0.36 | - | * | RESEARCH_CANDIDATE |
 | Union Berlin vs RB Leipzig | Result: home | yes | 0.1600 | 0.325 [0.136, 0.529] | +0.155 | +0.028 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | Result: away | no | 0.8500 | 0.913 [0.852, 0.963] | +0.054 | +0.026 | 0.87 | - | * | RESEARCH_CANDIDATE |
-| Sassuolo vs Genoa | Result: home | yes | 0.3500 | 0.517 [0.329, 0.707] | +0.151 | +0.023 | 0.37 | - | * | RESEARCH_CANDIDATE |
+| Santos Laguna vs León | away wins by more than 1.5 | no | 0.8400 | 0.909 [0.837, 0.966] | +0.059 | +0.022 | 0.86 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_MODEL_STALE: 183
-action_NO_EDGE: 1143
-action_NO_QUOTE: 153
+action_NO_EDGE: 1148
+action_NO_QUOTE: 148
 action_RESEARCH_CANDIDATE: 91
 contract_sides: 1570
 fixtures: 58

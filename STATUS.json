@@ -1,26 +1,26 @@
 {
-  "as_of": "2026-11-21T10:26:41.083210+00:00",
-  "events": 7,
+  "as_of": "2026-11-21T10:56:42.650907+00:00",
+  "events": 4,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 7,
+  "fixtures_mapped": 4,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=4"
+      "weather_stopped:consecutive_failures:skipped=1"
     ],
     "state": "DEGRADED"
   },
   "leagues": [
-    "eng.1"
+    "esp.1"
   ],
   "lineups": {
-    "captured": 7,
-    "events": 7,
+    "captured": 4,
+    "events": 4,
     "failures": [],
     "published_post": 0,
     "published_pre_kickoff": 0,
     "unchanged": 0,
-    "unpublished": 7
+    "unpublished": 4
   },
   "map_proposals": {},
   "map_version": "4",
@@ -32,16 +32,16 @@
   "unmapped_team_ids": {},
   "weather": {
     "captured": 0,
-    "events": 7,
+    "events": 4,
     "failures": [
-      "401879233: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=53.4809&longitude=-2.2374&hourly=te",
-      "401879238: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bournemouth&count=5&language=en",
-      "401878756: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=52.4814&longitude=-1.8998&hourly=te"
+      "401882806: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=42.8500&longitude=-2.6727&hourly=te",
+      "401882799: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=40.4165&longitude=-3.7026&hourly=te",
+      "401882797: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Sevilla&count=5&language=en&for"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 4,
+    "skipped": 1,
     "stopped": "consecutive_failures"
   }
 }
