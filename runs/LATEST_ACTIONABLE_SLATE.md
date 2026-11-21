@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T192243Z-efd51f` · generated 2026-11-21T19:22:43.330827Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261121T192903Z-28a280` · generated 2026-11-21T19:29:03.612741Z · trigger `kickoff_chain:T-60/T-5` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-21T19:18:59.381971Z (CURRENT at publish; CURRENT until 2026-11-21T19:38:59.381971Z, STALE after 2026-11-21T19:48:59.381971Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T19:25:15.898427Z (CURRENT at publish; CURRENT until 2026-11-21T19:45:15.898427Z, STALE after 2026-11-21T19:55:15.898427Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-21T19:01:44.995399Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.33s
+model board generated 2026-11-21T19:29:01.501960Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.55s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -18,7 +18,7 @@ model board generated 2026-11-21T19:01:44.995399Z · simulations this update: 0 
 | 2026-11-21T19:45:00Z | AS Monaco vs AJ Auxerre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T19:45:00Z | Strasbourg vs Brest (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T19:45:00Z | Napoli vs Torino (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-21T20:30:00Z | Bahia vs Coritiba (bra.serie_a) | VALID (STALE) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-21T20:30:00Z | Bahia vs Coritiba (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-21T21:00:00Z | FC Dallas vs Portland Timbers (usa.mls) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-11-21T22:50:00Z | Pachuca vs Toluca (mex.liga_mx) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-21T23:00:00Z | Santos Laguna vs León (mex.liga_mx) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
@@ -55,8 +55,9 @@ model board generated 2026-11-21T19:01:44.995399Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Sevilla vs Real Betis | Result: away | no | 0.1800 | 0.677 [0.514, 0.825] | +0.486 | +0.393 | 0.56 | - | * | RESEARCH_CANDIDATE |
-| Sevilla vs Real Betis | Result: home | yes | 0.0100 | 0.411 [0.251, 0.585] | +0.401 | +0.290 | 0.28 | - |  | RESEARCH_CANDIDATE |
+| Sevilla vs Real Betis | Result: draw | no | 0.0500 | 0.735 [0.672, 0.795] | +0.681 | +0.643 | 0.68 | - | * | RESEARCH_CANDIDATE |
+| Sevilla vs Real Betis | Result: home | yes | 0.0300 | 0.411 [0.251, 0.585] | +0.379 | +0.269 | 0.28 | - |  | RESEARCH_CANDIDATE |
+| Sevilla vs Real Betis | Result: away | yes | 0.0200 | 0.323 [0.175, 0.486] | +0.302 | +0.202 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Getafe vs Atlético Madrid | Result: away | no | 0.3700 | 0.625 [0.467, 0.777] | +0.239 | +0.133 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | btts | no | 0.3900 | 0.582 [0.462, 0.696] | +0.175 | +0.102 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 2.5 | no | 0.4200 | 0.612 [0.455, 0.758] | +0.175 | +0.079 | 0.49 | - | * | RESEARCH_CANDIDATE |
@@ -67,7 +68,6 @@ model board generated 2026-11-21T19:01:44.995399Z · simulations this update: 0 
 | Querétaro vs Necaxa | Total goals over 3.5 | no | 0.6500 | 0.803 [0.678, 0.907] | +0.137 | +0.068 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | away team total over 1.5 | no | 0.7100 | 0.841 [0.749, 0.918] | +0.117 | +0.064 | 0.77 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 1.5 | no | 0.2000 | 0.354 [0.220, 0.493] | +0.143 | +0.055 | 0.25 | - |  | RESEARCH_CANDIDATE |
-| Sevilla vs Real Betis | Result: draw | yes | 0.1700 | 0.265 [0.205, 0.328] | +0.086 | +0.047 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 4.5 | no | 0.8200 | 0.913 [0.838, 0.970] | +0.082 | +0.046 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | Real Madrid vs Celta Vigo | Result: draw | yes | 0.1100 | 0.207 [0.127, 0.280] | +0.090 | +0.038 | 0.14 | - |  | RESEARCH_CANDIDATE |
 | Real Madrid vs Celta Vigo | Result: away | yes | 0.0500 | 0.162 [0.068, 0.277] | +0.109 | +0.037 | 0.08 | - |  | RESEARCH_CANDIDATE |
@@ -94,9 +94,9 @@ model board generated 2026-11-21T19:01:44.995399Z · simulations this update: 0 
 ## Counts
 
 ```
-action_MODEL_STALE: 668
-action_NO_EDGE: 539
-action_NO_QUOTE: 150
+action_MODEL_STALE: 641
+action_NO_EDGE: 567
+action_NO_QUOTE: 149
 action_RESEARCH_CANDIDATE: 35
 contract_sides: 1392
 fixtures: 38
