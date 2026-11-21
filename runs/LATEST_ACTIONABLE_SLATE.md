@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T010312Z-b60028` · generated 2026-11-21T01:03:12.236083Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
+slate `slate-20261121T011034Z-070196` · generated 2026-11-21T01:10:34.562878Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-21T00:59:26.761365Z (CURRENT at publish; CURRENT until 2026-11-21T01:19:26.761365Z, STALE after 2026-11-21T01:29:26.761365Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T01:06:48.839537Z (CURRENT at publish; CURRENT until 2026-11-21T01:26:48.839537Z, STALE after 2026-11-21T01:36:48.839537Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-21T00:02:45.136530Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.98s
+model board generated 2026-11-21T00:02:45.136530Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.96s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -72,7 +72,7 @@ model board generated 2026-11-21T00:02:45.136530Z · simulations this update: 0 
 | 2026-11-22T23:07:00Z | Guadalajara vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (117; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (118; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -115,14 +115,14 @@ model board generated 2026-11-21T00:02:45.136530Z · simulations this update: 0 
 | SV Elversberg vs SC Freiburg | Result: home | yes | 0.2700 | 0.509 [0.243, 0.791] | +0.225 | +0.037 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Philadelphia Union | Result: away | no | 0.5700 | 0.694 [0.566, 0.815] | +0.107 | +0.037 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | Result: away | no | 0.5800 | 0.711 [0.578, 0.833] | +0.114 | +0.035 | 0.61 | - | * | RESEARCH_CANDIDATE |
-| Como vs Cagliari | Result: draw | yes | 0.1600 | 0.253 [0.168, 0.331] | +0.084 | +0.034 | 0.19 | - |  | RESEARCH_CANDIDATE |
+| Nashville SC vs FC Cincinnati | away team total over 1.5 | no | 0.7400 | 0.841 [0.749, 0.918] | +0.087 | +0.035 | 0.77 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1425
-action_NO_QUOTE: 162
-action_RESEARCH_CANDIDATE: 117
+action_NO_EDGE: 1421
+action_NO_QUOTE: 165
+action_RESEARCH_CANDIDATE: 118
 contract_sides: 1704
 fixtures: 59
 fixtures_model_invalidated: 0
