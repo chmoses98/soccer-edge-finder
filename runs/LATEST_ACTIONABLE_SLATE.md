@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T124826Z-2d92f7` · generated 2026-11-21T12:48:26.489065Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261121T125859Z-b571ff` · generated 2026-11-21T12:58:59.219132Z · trigger `kickoff_chain:T-120/T-60/T-5` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-21T12:44:40.362702Z (CURRENT at publish; CURRENT until 2026-11-21T13:04:40.362702Z, STALE after 2026-11-21T13:14:40.362702Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T12:54:19.956503Z (CURRENT at publish; CURRENT until 2026-11-21T13:14:19.956503Z, STALE after 2026-11-21T13:24:19.956503Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-21T09:41:18.740117Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.79s
+model board generated 2026-11-21T12:58:57.756113Z · simulations this update: 2 · Odds API calls this update: 0 (credits 0) · reprice 0.78s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -71,7 +71,7 @@ model board generated 2026-11-21T09:41:18.740117Z · simulations this update: 0 
 | 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 44 | 0 |
 
-## Candidates on CURRENT prices (57; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (60; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -94,6 +94,7 @@ model board generated 2026-11-21T09:41:18.740117Z · simulations this update: 0 
 | Newcastle United vs Arsenal | Result: home | yes | 0.1600 | 0.343 [0.183, 0.513] | +0.173 | +0.061 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 1.5 | no | 0.2000 | 0.354 [0.220, 0.493] | +0.143 | +0.055 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | Schalke 04 vs VfB Stuttgart | Result: away | no | 0.4800 | 0.683 [0.426, 0.887] | +0.185 | +0.052 | 0.53 | - | * | RESEARCH_CANDIDATE |
+| Manchester City vs Fulham | Result: home | yes | 0.4900 | 0.672 [0.497, 0.845] | +0.164 | +0.052 | 0.54 | - | * | RESEARCH_CANDIDATE |
 | Nice vs Paris Saint-Germain | Result: away | no | 0.3400 | 0.527 [0.337, 0.710] | +0.171 | +0.047 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 4.5 | no | 0.8200 | 0.913 [0.838, 0.970] | +0.082 | +0.046 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | Union Berlin vs RB Leipzig | Result: away | no | 0.3600 | 0.548 [0.317, 0.752] | +0.172 | +0.042 | 0.4 | - | * | RESEARCH_CANDIDATE |
@@ -103,6 +104,7 @@ model board generated 2026-11-21T09:41:18.740117Z · simulations this update: 0 
 | SV Elversberg vs SC Freiburg | Result: away | no | 0.5300 | 0.723 [0.484, 0.917] | +0.176 | +0.034 | 0.56 | - |  | RESEARCH_CANDIDATE |
 | Como vs Cagliari | Result: draw | yes | 0.1600 | 0.253 [0.168, 0.331] | +0.084 | +0.033 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Atalanta vs Inter Milan | Result: away | no | 0.3800 | 0.550 [0.356, 0.736] | +0.154 | +0.032 | 0.41 | - | * | RESEARCH_CANDIDATE |
+| Manchester City vs Fulham | Result: away | no | 0.7600 | 0.862 [0.758, 0.951] | +0.089 | +0.032 | 0.79 | - |  | RESEARCH_CANDIDATE |
 | Como vs Cagliari | Result: away | yes | 0.0900 | 0.210 [0.094, 0.347] | +0.114 | +0.030 | 0.11 | - |  | RESEARCH_CANDIDATE |
 | Union Berlin vs RB Leipzig | Result: home | yes | 0.1600 | 0.325 [0.136, 0.529] | +0.155 | +0.028 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | Result: away | no | 0.8500 | 0.913 [0.852, 0.963] | +0.054 | +0.026 | 0.87 | - | * | RESEARCH_CANDIDATE |
@@ -113,16 +115,14 @@ model board generated 2026-11-21T09:41:18.740117Z · simulations this update: 0 
 | Pumas UNAM vs Monterrey | Result: away | no | 0.6400 | 0.750 [0.618, 0.864] | +0.093 | +0.018 | 0.65 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 5.5 | no | 0.9300 | 0.966 [0.930, 0.992] | +0.031 | +0.016 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | AC Milan vs Frosinone | Result: home | no | 0.3700 | 0.547 [0.320, 0.762] | +0.161 | +0.015 | 0.38 | - | * | RESEARCH_CANDIDATE |
-| Atalanta vs Inter Milan | Result: home | yes | 0.1800 | 0.319 [0.161, 0.504] | +0.128 | +0.015 | 0.19 | - |  | RESEARCH_CANDIDATE |
-| Nice vs Paris Saint-Germain | Result: draw | yes | 0.1900 | 0.258 [0.192, 0.327] | +0.058 | +0.014 | 0.2 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_MODEL_STALE: 621
-action_NO_EDGE: 749
+action_MODEL_STALE: 623
+action_NO_EDGE: 744
 action_NO_QUOTE: 143
-action_RESEARCH_CANDIDATE: 57
+action_RESEARCH_CANDIDATE: 60
 contract_sides: 1570
 fixtures: 58
 fixtures_model_invalidated: 0
