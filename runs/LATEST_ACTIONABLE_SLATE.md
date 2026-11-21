@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T033845Z-870616` · generated 2026-11-21T03:38:45.858624Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261121T035348Z-9ce142` · generated 2026-11-21T03:53:48.565883Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-21T03:35:02.428975Z (CURRENT at publish; CURRENT until 2026-11-21T03:55:02.428975Z, STALE after 2026-11-21T04:05:02.428975Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T03:50:05.395786Z (CURRENT at publish; CURRENT until 2026-11-21T04:10:05.395786Z, STALE after 2026-11-21T04:20:05.395786Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-21T02:10:49.260662Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.88s
+model board generated 2026-11-21T02:10:49.260662Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.03s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -31,19 +31,19 @@ model board generated 2026-11-21T02:10:49.260662Z · simulations this update: 0 
 | 2026-11-21T16:15:00Z | Nice vs Paris Saint-Germain (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T17:00:00Z | Parma vs AS Roma (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T17:30:00Z | Schalke 04 vs VfB Stuttgart (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-21T19:00:00Z | New England Revolution vs Philadelphia Union (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
-| 2026-11-21T19:30:00Z | Palmeiras vs Flamengo (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-21T19:00:00Z | New England Revolution vs Philadelphia Union (usa.mls) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 32 | 0 |
+| 2026-11-21T19:30:00Z | Palmeiras vs Flamengo (bra.serie_a) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-21T19:45:00Z | Lens vs Toulouse (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T19:45:00Z | Lille vs Lyon (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T19:45:00Z | AS Monaco vs AJ Auxerre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T19:45:00Z | Strasbourg vs Brest (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T19:45:00Z | Napoli vs Torino (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-21T20:30:00Z | Bahia vs Coritiba (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-11-21T21:00:00Z | FC Dallas vs Portland Timbers (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
+| 2026-11-21T20:30:00Z | Bahia vs Coritiba (bra.serie_a) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-21T21:00:00Z | FC Dallas vs Portland Timbers (usa.mls) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-11-21T22:50:00Z | Pachuca vs Toluca (mex.liga_mx) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-21T23:00:00Z | Santos Laguna vs León (mex.liga_mx) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-21T23:00:00Z | Inter Miami vs Columbus Crew (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-11-22T00:00:00Z | Chapecoense vs Cruzeiro (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-22T00:00:00Z | Chapecoense vs Cruzeiro (bra.serie_a) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T01:00:00Z | Pumas UNAM vs Monterrey (mex.liga_mx) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-22T03:00:00Z | Tigres UANL vs Club América (mex.liga_mx) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-22T11:30:00Z | Sassuolo vs Genoa (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -71,7 +71,7 @@ model board generated 2026-11-21T02:10:49.260662Z · simulations this update: 0 
 | 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 44 | 0 |
 
-## Candidates on CURRENT prices (114; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (115; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -119,9 +119,9 @@ model board generated 2026-11-21T02:10:49.260662Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1304
-action_NO_QUOTE: 152
-action_RESEARCH_CANDIDATE: 114
+action_NO_EDGE: 1306
+action_NO_QUOTE: 149
+action_RESEARCH_CANDIDATE: 115
 contract_sides: 1570
 fixtures: 58
 fixtures_model_invalidated: 0
