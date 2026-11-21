@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T161221Z-e877e4` · generated 2026-11-21T16:12:21.945917Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
+slate `slate-20261121T161845Z-002cdb` · generated 2026-11-21T16:18:45.597600Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-21T16:08:37.240579Z (CURRENT at publish; CURRENT until 2026-11-21T16:28:37.240579Z, STALE after 2026-11-21T16:38:37.240579Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T16:14:51.223165Z (CURRENT at publish; CURRENT until 2026-11-21T16:34:51.223165Z, STALE after 2026-11-21T16:44:51.223165Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-21T15:59:52.274740Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.32s
+model board generated 2026-11-21T15:59:52.274740Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.46s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,6 @@ model board generated 2026-11-21T15:59:52.274740Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-21T16:15:00Z | Nice vs Paris Saint-Germain (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T17:00:00Z | Parma vs AS Roma (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T17:30:00Z | Schalke 04 vs VfB Stuttgart (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T19:00:00Z | New England Revolution vs Philadelphia Union (usa.mls) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 32 | 0 |
@@ -55,7 +54,7 @@ model board generated 2026-11-21T15:59:52.274740Z · simulations this update: 0 
 | 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 44 | 0 |
 
-## Candidates on CURRENT prices (38; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (35; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -69,7 +68,6 @@ model board generated 2026-11-21T15:59:52.274740Z · simulations this update: 0 
 | Nashville SC vs FC Cincinnati | btts | no | 0.3800 | 0.548 [0.427, 0.658] | +0.152 | +0.079 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | away team total over 0.5 | no | 0.3400 | 0.504 [0.381, 0.623] | +0.148 | +0.069 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 3.5 | no | 0.6500 | 0.803 [0.678, 0.907] | +0.137 | +0.068 | 0.72 | - |  | RESEARCH_CANDIDATE |
-| Nice vs Paris Saint-Germain | Result: away | no | 0.3200 | 0.527 [0.337, 0.710] | +0.192 | +0.068 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: home | yes | 0.0700 | 0.224 [0.101, 0.355] | +0.150 | +0.064 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | away team total over 1.5 | no | 0.7100 | 0.841 [0.749, 0.918] | +0.117 | +0.064 | 0.77 | - |  | RESEARCH_CANDIDATE |
 | Getafe vs Atlético Madrid | Result: home | yes | 0.1500 | 0.330 [0.186, 0.488] | +0.171 | +0.063 | 0.21 | - |  | RESEARCH_CANDIDATE |
@@ -81,7 +79,6 @@ model board generated 2026-11-21T15:59:52.274740Z · simulations this update: 0 
 | Real Madrid vs Celta Vigo | Result: away | yes | 0.0500 | 0.162 [0.068, 0.277] | +0.109 | +0.037 | 0.08 | - |  | RESEARCH_CANDIDATE |
 | Atalanta vs Inter Milan | Result: away | no | 0.3800 | 0.550 [0.356, 0.736] | +0.154 | +0.032 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | Result: away | no | 0.8500 | 0.913 [0.852, 0.963] | +0.054 | +0.026 | 0.87 | - | * | RESEARCH_CANDIDATE |
-| Nice vs Paris Saint-Germain | Result: draw | yes | 0.1800 | 0.258 [0.192, 0.327] | +0.068 | +0.025 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | away team total over 2.5 | no | 0.9200 | 0.962 [0.926, 0.988] | +0.036 | +0.019 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 5.5 | no | 0.9300 | 0.966 [0.930, 0.992] | +0.031 | +0.016 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Atalanta vs Inter Milan | Result: home | yes | 0.1800 | 0.319 [0.161, 0.504] | +0.128 | +0.015 | 0.19 | - |  | RESEARCH_CANDIDATE |
@@ -93,7 +90,6 @@ model board generated 2026-11-21T15:59:52.274740Z · simulations this update: 0 
 | Querétaro vs Necaxa | Total goals over 0.5 | no | 0.0600 | 0.118 [0.059, 0.187] | +0.054 | +0.010 | 0.06 | - |  | RESEARCH_CANDIDATE |
 | Schalke 04 vs VfB Stuttgart | Result: home | yes | 0.2400 | 0.435 [0.189, 0.705] | +0.183 | +0.009 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | Result: home | yes | 0.6700 | 0.760 [0.644, 0.872] | +0.075 | +0.005 | 0.67 | - |  | RESEARCH_CANDIDATE |
-| Nice vs Paris Saint-Germain | Result: home | yes | 0.1500 | 0.269 [0.126, 0.436] | +0.110 | +0.004 | 0.15 | - |  | RESEARCH_CANDIDATE |
 | AC Milan vs Frosinone | Result: draw | yes | 0.2000 | 0.264 [0.182, 0.348] | +0.053 | +0.002 | 0.2 | - | * | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Vasco da Gama | Result: away | no | 0.6500 | 0.743 [0.605, 0.861] | +0.077 | +0.002 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Strasbourg vs Brest | Result: draw | no | 0.7400 | 0.796 [0.732, 0.869] | +0.043 | +0.002 | 0.74 | - | * | RESEARCH_CANDIDATE |
@@ -102,13 +98,15 @@ model board generated 2026-11-21T15:59:52.274740Z · simulations this update: 0 
 
 ```
 action_MODEL_STALE: 757
-action_NO_EDGE: 533
-action_NO_QUOTE: 146
-action_RESEARCH_CANDIDATE: 38
-contract_sides: 1474
-fixtures: 42
+action_NO_EDGE: 529
+action_NO_QUOTE: 147
+action_RESEARCH_CANDIDATE: 35
+contract_sides: 1468
+fixtures: 41
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
+
+Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
