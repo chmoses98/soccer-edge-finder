@@ -1,10 +1,10 @@
 [capture] fast mode: 253 series with markets at last full discovery; new series are always swept
 {
-  "batch": "cap-20261121T040636Z",
+  "batch": "cap-20261121T094107Z",
   "complete": true,
-  "discovered": 6155,
-  "written": 1439,
-  "path": "work/snapshots/2026-11-21/cap-20261121T040636Z.jsonl"
+  "discovered": 6024,
+  "written": 1216,
+  "path": "work/snapshots/2026-11-21/cap-20261121T094107Z.jsonl"
 }
 [data] historical: 3379 matches from club_football_match_data; flags=['ok']
 [data] eng.premier_league 2026-27: 380 fixtures, 45 results (25 new vs historical)
@@ -23,93 +23,76 @@
 [data] uefa.euro_qualifiers: espn 0 fixtures, 1241 pooled results (uefa.nations,fifa.friendly,fifa.worldq.uefa,fifa.worldq.conmebol,fifa.worldq.concacaf,fifa.worldq.afc,fifa.worldq.caf,uefa.euroq,concacaf.nations.league)
 [kalshi] fast mode: sweeping 253 series with markets at the last full discovery
 [kalshi] fast reconciliation: {"complete_relative_to_full": true, "evidence_level": "series"}
-[kalshi] {"run_id": "disc-20261121T040254Z-5122ef", "complete": true, "series_total": 16768, "series_by_ownership": {"soccer": 1573, "not_soccer": 15057, "ambiguous": 138}, "series_swept": 443, "series_ambiguous_unswept": 136, "series_skipped_fast_mode": 1132, "series_ambiguous_unswept_tickers": ["KX1HOMEGAME", "KX1STHOMEGAME", "KXACQUIREMANU", "KXAFCA", "KXAFCAC1H", "KXAFCAC1HBTTS", "KXAFCAC1HSPREAD", "KXAFCAC1HTOTAL", "KXAFCACADVANCE", "KXAFCACBTTS", "KXAFCACFTTS", "KXAFCACGAME", "KXAFCACMOV", "KXAFCACSCORE", "KXAFCACSPREAD", "KXAFCACTEAMTOTAL", "KXAFCACTOTAL", "KXAFCCL1H", "KXAFCCL1HBTTS", "KXAFCCL1HSPREAD", "KXAFCCL1HTOTAL", "KXAFCCL2ADVANCE", "KXAFCCL2BTTS", "KXAFCCL2SPREAD", "KXAFCCL2TOTAL", "KXAFCCLADVANCE", "KXAFCCLBTTS", "KXAFCCLFTTS", "KXAFCCLGAME", "KXAFCCLMOF", "KXAFCCLMOV", "KXAFCCLSCORE", "KXAFCCLSPREAD", "KXAFCCLTEAMTOTAL", "KXAFCCLTOTAL", "KXAFCON", "KXAFCON1H", "KXAFCON1HBTTS", "KXAFCON1HSPREAD", "KXAFCON1HTOTAL", "KXAFCONADVANCE", "KXAFCONBTTS", "KXAFCONFTTS", "KXAFCONGAME", "KXAFCONMOV", "KXAFCONSCORE", "KXAFCONSPREAD", "KXAFCONTEAMTOTAL", "KXAFCONTOTAL", "KXAFLGAME", "KXALEAGUE1H", "KXALEAGUE1HBTTS", "KXALEAGUE1HSPREAD", "KXALEAGUE1HTOTAL", "KXALEAGUEADVANCE", "KXALEAGUEBTTS", "KXALEAGUEGAME", "KXALEAGUESPREAD", "KXALEAGUETEAMTOTAL", "KXALEAGUETOTAL", "KXALLSVENSKANADVANCE", "KXALLSVENSKANBTTS", "KXALLSVENSKANGAME", "KXALLSVENSKANSPREAD", "KXALLSVENSKANTOTAL", "KXALMVP", "KXAPFDDHADVANCE", "KXARCHIVETEST", "KXARGNACBADVANCE", "KXARGPREMDIVADVANCE", "KXARGPREMDIVBTTS", "KXARGPREMDIVGAME", "KXARGPREMDIVSPREAD", "KXARGPREMDIVTOTAL", "KXARKCOACH", "KXARODGRETIRE", "KXARSENALCUPS", "KXASEANADVANCE", "KXASEANBTTS", "KXASEANGAME", "KXASEANSPREAD", "KXASEANTOTAL", "KXATLCOACH", "KXAUBCOACH", "KXBABYNAMEBOY", "KXBABYNAMEGIRL", "KXBALLERLEAGUE", "KXBALLERLEAGUEGAME", "KXBALOGUNPLAY", "KXBELGIANPLADVANCE", "KXBELGIANPLBTTS", "KXBELGIANPLGAME", "KXBELGIANPLSPREAD", "KXBELGIANPLTOTAL", "KXBOLPDIVADVANCE", "KXBOLPDIVGAME", "KXBRASILEIRO1H", "KXBRASILEIRO1HBTTS", "KXBRASILEIRO1HSPREAD", "KXBRASILEIRO1HTOTAL", "KXBRASILEIROADVANCE", "KXBRASILEIROBADVANCE", "KXBRASILEIROBTEAMTOTAL", "KXBRASILEIROC1H", "KXBRASILEIROC1HBTTS", "KXBRASILEIROC1HSPREAD", "KXBRASILEIROC1HTOTAL", "KXBRASILEIROCADVANCE", "KXBRASILEIROCTEAMTOTAL", "KXBRASILEIROFTTS", "KXBRASILEIROMOV", "KXBRASILEIRORELEGATION", "KXBRASILEIROSCORE", "KXBRASILEIROTEAMTOTAL", "KXBRASILEIROTOP", "KXBUNDESLIGA1H", "KXBUNDESLIGA1HBTTS", "KXBUNDESLIGA1HSCORE", "KXBUNDESLIGA1HSPREAD", "KXBUNDESLIGA1HTOTAL", "KXBUNDESLIGA2ADVANCE", "KXBUNDESLIGA2BTTS", "KXBUNDESLIGA2GAME", "KXBUNDESLIGA2H", "KXBUNDESLIGA2HBTTS", "KXBUNDESLIGA2HSPREAD", "KXBUNDESLIGA2HTOTAL", "KXBUNDESLIGA2SPREAD", "KXBUNDESLIGA2TOTAL", "KXBUNDESLIGAADVANCE", "KXBUNDESLIGABTTS", "KXBUNDESLIGACORNERS", "KXBUNDESLIGAFIRSTGOAL", "KXBUNDESLIGAFTTS", "KXBUNDESLIGAGOAL", "KXBUNDESLIGAMOV", "KXBUNDESLIGASCORE", "KXBUNDESLIGASPREAD", "KXBUNDESLIGATCORNERS", "KXBUNDESLIGATEAMTOTAL", "KXBUNDESLIGATOP4", "KXBUNDESLIGATOTAL", "KXCALCOACH", "KXCANIMAKETHIS", "KXCANPLADVANCE", "KXCANPLBTTS", "KXCANPLSPREAD", "KXCANPLTOTAL", "KXCCARCOACH", "KXCFLGAME", "KXCFLSPREAD", "KXCFLTOTAL", "KXCHLLDPADVANCE", "KXCHLLDPBTTS", "KXCHLLDPGAME", "KXCHLLDPSPREAD", "KXCHLLDPTOTAL", "KXCHNL1ADVANCE", "KXCHNL1BTTS", "KXCHNL1SPREAD", "KXCHNL1TOTAL", "KXCHNSLADVANCE", "KXCHNSLBTTS", "KXCHNSLGAME", "KXCHNSLSPREAD", "KXCHNSLTOTAL", "KXCLUBFBTTS", "KXCLUBFGAME", "KXCLUBFSPREAD", "KXCLUBFTOTAL", "KXCLUBWC", "KXCLUBWC1H", "KXCLUBWC1HBTTS", "KXCLUBWC1HSCORE", "KXCLUBWC1HSPREAD", "KXCLUBWC1HTOTAL", "KXCLUBWC2H", "KXCLUBWC2HBTTS", "KXCLUBWC2HSPREAD", "KXCLUBWC2HTOTAL", "KXCLUBWCADVANCE", "KXCLUBWCBTTS", "KXCLUBWCFTTS", "KXCLUBWCGA", "KXCLUBWCGAME", "KXCLUBWCGB", "KXCLUBWCGC", "KXCLUBWCGD", "KXCLUBWCGE", "KXCLUBWCGF", "KXCLUBWCGG", "KXCLUBWCGH", "KXCLUBWCMOF", "KXCLUBWCMOV", "KXCLUBWCSCORE", "KXCLUBWCSPREAD", "KXCLUBWCTEAMTOTAL", "KXCLUBWCTOTAL", "KXCOACHONDATE", "KXCOACHOUTOLEMISS"], "events_discovered": 21271, "contracts_discovered": 6155, "contracts_duplicate_seen": 0, "contracts_by_family": {"btts": 119, "competition_head_to_head": 20, "competition_host": 26, "competition_last_place": 132, "competition_points_margin": 30, "competition_promotion": 24, "competition_qualification": 106, "competition_relegation": 96, "competition_team_points": 384, "competition_top_n": 306, "competition_trophies": 32, "competition_winner": 968, "exact_score": 383, "first_half_btts": 11, "first_half_exact_score": 165, "first_half_handicap": 22, "first_half_result": 33, "first_half_total": 33, "first_to_score": 36, "handicap": 454, "match_result_3way": 1104, "match_winner_2way": 2, "player_award": 81, "player_season_leader": 230, "season_player_total": 53, "second_half_result": 39, "soccer_special": 342, "team_total": 80, "total_goals": 680, "tournament_advancement": 160, "unknown": 4}, "contracts_by_competition_code": {"?": 469, "AFCCL2": 18, "ALEAGUEW": 45, "APFDDH": 24, "ARGNACB": 45, "ARGPREMDIV": 30, "AUTBUNDES": 51, "BELCHALL": 48, "BELGIANPL": 18, "BRASILEIRO": 293, "BRASILEIROB": 28, "BULFL": 37, "BUNDESLIGA": 240, "BUNDESLIGAW": 40, "CANPL": 3, "CONCACAFGC": 23, "CONCACAFNL": 41, "CONMEBOLLIB": 2, "CONMEBOLSUD": 2, "COPAAMERICA": 25, "COPADELREY": 23, "COPADOBRASIL": 16, "DENSUPERLIGA": 12, "DFBPOKAL": 21, "DIMAYOR": 23, "EFL": 32, "EFLCHAMPIONSHIP": 24, "EFLL1": 202, "EFLL2": 174, "EKSTRAKLASA": 18, "ENGNL": 69, "ENGWLEAGUECUP": 18, "EPL": 448, "EREDIVISIE": 18, "FA": 24, "FRAPLW": 48, "HUNNB1": 51, "INDSL": 34, "KNVB": 21, "LALIGA": 288, "LALIGA2": 74, "LIGAEXP": 3, "LIGAF": 57, "LIGAMX": 652, "LIGAMX2H": 48, "LIGAPORTUGAL": 18, "LIGAPORTUGAL2": 3, "LIGUE1": 241, "MLS": 446, "MLS2H": 30, "MLSEAST": 9, "MLSWEST": 9, "NWSL": 30, "PERLIGA1": 27, "PREMIERLEAGUE": 20, "QSTARS": 22, "ROML1": 51, "SAPSL": 6, "SCOCHAMP": 56, "SERIEA": 258, "SOCCER": 2, "SUPERETTAN": 14, "SUPERLIG": 18, "SVK1L": 62, "SVKCUP": 5, "TACAPORT": 20, "THAIL1": 16, "UCL": 354, "UCLLEAGUE": 16, "UECL": 36, "UEFAEURO": 60, "UEFANL": 32, "UEL": 36, "UKRPL": 54, "URYPD": 22, "USL": 39, "USLSLW": 45, "VENFUTVE": 14, "WC": 172, "WCW": 32}, "contracts_unknown_family": 4, "request_count": 884, "retry_count": 0, "milestones_note": "milestones type=soccer_tournament_multi_leg: 23441 rows, complete=True"}
+[kalshi] {"run_id": "disc-20261121T093725Z-f18133", "complete": true, "series_total": 16768, "series_by_ownership": {"not_soccer": 15057, "soccer": 1573, "ambiguous": 138}, "series_swept": 443, "series_ambiguous_unswept": 136, "series_skipped_fast_mode": 1132, "series_ambiguous_unswept_tickers": ["KX1HOMEGAME", "KX1STHOMEGAME", "KXACQUIREMANU", "KXAFCA", "KXAFCAC1H", "KXAFCAC1HBTTS", "KXAFCAC1HSPREAD", "KXAFCAC1HTOTAL", "KXAFCACADVANCE", "KXAFCACBTTS", "KXAFCACFTTS", "KXAFCACGAME", "KXAFCACMOV", "KXAFCACSCORE", "KXAFCACSPREAD", "KXAFCACTEAMTOTAL", "KXAFCACTOTAL", "KXAFCCL1H", "KXAFCCL1HBTTS", "KXAFCCL1HSPREAD", "KXAFCCL1HTOTAL", "KXAFCCL2ADVANCE", "KXAFCCL2BTTS", "KXAFCCL2SPREAD", "KXAFCCL2TOTAL", "KXAFCCLADVANCE", "KXAFCCLBTTS", "KXAFCCLFTTS", "KXAFCCLGAME", "KXAFCCLMOF", "KXAFCCLMOV", "KXAFCCLSCORE", "KXAFCCLSPREAD", "KXAFCCLTEAMTOTAL", "KXAFCCLTOTAL", "KXAFCON", "KXAFCON1H", "KXAFCON1HBTTS", "KXAFCON1HSPREAD", "KXAFCON1HTOTAL", "KXAFCONADVANCE", "KXAFCONBTTS", "KXAFCONFTTS", "KXAFCONGAME", "KXAFCONMOV", "KXAFCONSCORE", "KXAFCONSPREAD", "KXAFCONTEAMTOTAL", "KXAFCONTOTAL", "KXAFLGAME", "KXALEAGUE1H", "KXALEAGUE1HBTTS", "KXALEAGUE1HSPREAD", "KXALEAGUE1HTOTAL", "KXALEAGUEADVANCE", "KXALEAGUEBTTS", "KXALEAGUEGAME", "KXALEAGUESPREAD", "KXALEAGUETEAMTOTAL", "KXALEAGUETOTAL", "KXALLSVENSKANADVANCE", "KXALLSVENSKANBTTS", "KXALLSVENSKANGAME", "KXALLSVENSKANSPREAD", "KXALLSVENSKANTOTAL", "KXALMVP", "KXAPFDDHADVANCE", "KXARCHIVETEST", "KXARGNACBADVANCE", "KXARGPREMDIVADVANCE", "KXARGPREMDIVBTTS", "KXARGPREMDIVGAME", "KXARGPREMDIVSPREAD", "KXARGPREMDIVTOTAL", "KXARKCOACH", "KXARODGRETIRE", "KXARSENALCUPS", "KXASEANADVANCE", "KXASEANBTTS", "KXASEANGAME", "KXASEANSPREAD", "KXASEANTOTAL", "KXATLCOACH", "KXAUBCOACH", "KXBABYNAMEBOY", "KXBABYNAMEGIRL", "KXBALLERLEAGUE", "KXBALLERLEAGUEGAME", "KXBALOGUNPLAY", "KXBELGIANPLADVANCE", "KXBELGIANPLBTTS", "KXBELGIANPLGAME", "KXBELGIANPLSPREAD", "KXBELGIANPLTOTAL", "KXBOLPDIVADVANCE", "KXBOLPDIVGAME", "KXBRASILEIRO1H", "KXBRASILEIRO1HBTTS", "KXBRASILEIRO1HSPREAD", "KXBRASILEIRO1HTOTAL", "KXBRASILEIROADVANCE", "KXBRASILEIROBADVANCE", "KXBRASILEIROBTEAMTOTAL", "KXBRASILEIROC1H", "KXBRASILEIROC1HBTTS", "KXBRASILEIROC1HSPREAD", "KXBRASILEIROC1HTOTAL", "KXBRASILEIROCADVANCE", "KXBRASILEIROCTEAMTOTAL", "KXBRASILEIROFTTS", "KXBRASILEIROMOV", "KXBRASILEIRORELEGATION", "KXBRASILEIROSCORE", "KXBRASILEIROTEAMTOTAL", "KXBRASILEIROTOP", "KXBUNDESLIGA1H", "KXBUNDESLIGA1HBTTS", "KXBUNDESLIGA1HSCORE", "KXBUNDESLIGA1HSPREAD", "KXBUNDESLIGA1HTOTAL", "KXBUNDESLIGA2ADVANCE", "KXBUNDESLIGA2BTTS", "KXBUNDESLIGA2GAME", "KXBUNDESLIGA2H", "KXBUNDESLIGA2HBTTS", "KXBUNDESLIGA2HSPREAD", "KXBUNDESLIGA2HTOTAL", "KXBUNDESLIGA2SPREAD", "KXBUNDESLIGA2TOTAL", "KXBUNDESLIGAADVANCE", "KXBUNDESLIGABTTS", "KXBUNDESLIGACORNERS", "KXBUNDESLIGAFIRSTGOAL", "KXBUNDESLIGAFTTS", "KXBUNDESLIGAGOAL", "KXBUNDESLIGAMOV", "KXBUNDESLIGASCORE", "KXBUNDESLIGASPREAD", "KXBUNDESLIGATCORNERS", "KXBUNDESLIGATEAMTOTAL", "KXBUNDESLIGATOP4", "KXBUNDESLIGATOTAL", "KXCALCOACH", "KXCANIMAKETHIS", "KXCANPLADVANCE", "KXCANPLBTTS", "KXCANPLSPREAD", "KXCANPLTOTAL", "KXCCARCOACH", "KXCFLGAME", "KXCFLSPREAD", "KXCFLTOTAL", "KXCHLLDPADVANCE", "KXCHLLDPBTTS", "KXCHLLDPGAME", "KXCHLLDPSPREAD", "KXCHLLDPTOTAL", "KXCHNL1ADVANCE", "KXCHNL1BTTS", "KXCHNL1SPREAD", "KXCHNL1TOTAL", "KXCHNSLADVANCE", "KXCHNSLBTTS", "KXCHNSLGAME", "KXCHNSLSPREAD", "KXCHNSLTOTAL", "KXCLUBFBTTS", "KXCLUBFGAME", "KXCLUBFSPREAD", "KXCLUBFTOTAL", "KXCLUBWC", "KXCLUBWC1H", "KXCLUBWC1HBTTS", "KXCLUBWC1HSCORE", "KXCLUBWC1HSPREAD", "KXCLUBWC1HTOTAL", "KXCLUBWC2H", "KXCLUBWC2HBTTS", "KXCLUBWC2HSPREAD", "KXCLUBWC2HTOTAL", "KXCLUBWCADVANCE", "KXCLUBWCBTTS", "KXCLUBWCFTTS", "KXCLUBWCGA", "KXCLUBWCGAME", "KXCLUBWCGB", "KXCLUBWCGC", "KXCLUBWCGD", "KXCLUBWCGE", "KXCLUBWCGF", "KXCLUBWCGG", "KXCLUBWCGH", "KXCLUBWCMOF", "KXCLUBWCMOV", "KXCLUBWCSCORE", "KXCLUBWCSPREAD", "KXCLUBWCTEAMTOTAL", "KXCLUBWCTOTAL", "KXCOACHONDATE", "KXCOACHOUTOLEMISS"], "events_discovered": 21274, "contracts_discovered": 6024, "contracts_duplicate_seen": 0, "contracts_by_family": {"btts": 115, "competition_head_to_head": 20, "competition_host": 26, "competition_last_place": 132, "competition_points_margin": 30, "competition_promotion": 24, "competition_qualification": 106, "competition_relegation": 96, "competition_team_points": 384, "competition_top_n": 306, "competition_trophies": 32, "competition_winner": 968, "exact_score": 330, "first_half_btts": 11, "first_half_exact_score": 165, "first_half_handicap": 22, "first_half_result": 33, "first_half_total": 33, "first_to_score": 33, "handicap": 438, "match_result_3way": 1092, "match_winner_2way": 2, "player_award": 81, "player_season_leader": 230, "season_player_total": 53, "second_half_result": 33, "soccer_special": 342, "team_total": 66, "total_goals": 657, "tournament_advancement": 160, "unknown": 4}, "contracts_by_competition_code": {"?": 469, "AFCCL2": 18, "ALEAGUEW": 28, "APFDDH": 24, "ARGNACB": 45, "ARGPREMDIV": 30, "AUTBUNDES": 51, "BELCHALL": 48, "BELGIANPL": 18, "BRASILEIRO": 293, "BRASILEIROB": 28, "BULFL": 37, "BUNDESLIGA": 240, "BUNDESLIGAW": 40, "CANPL": 3, "CONCACAFGC": 23, "CONCACAFNL": 41, "CONMEBOLLIB": 2, "CONMEBOLSUD": 2, "COPAAMERICA": 25, "COPADELREY": 23, "COPADOBRASIL": 16, "DENSUPERLIGA": 12, "DFBPOKAL": 21, "DIMAYOR": 23, "EFL": 32, "EFLCHAMPIONSHIP": 24, "EFLL1": 202, "EFLL2": 174, "EKSTRAKLASA": 18, "ENGNL": 69, "ENGWLEAGUECUP": 18, "EPL": 448, "EREDIVISIE": 18, "FA": 24, "FRAPLW": 48, "HUNNB1": 51, "INDSL": 34, "KNVB": 21, "LALIGA": 288, "LALIGA2": 74, "LIGAEXP": 3, "LIGAF": 57, "LIGAMX": 550, "LIGAMX2H": 36, "LIGAPORTUGAL": 18, "LIGAPORTUGAL2": 3, "LIGUE1": 241, "MLS": 446, "MLS2H": 30, "MLSEAST": 9, "MLSWEST": 9, "NWSL": 30, "PERLIGA1": 27, "PREMIERLEAGUE": 20, "QSTARS": 22, "ROML1": 51, "SAPSL": 6, "SCOCHAMP": 56, "SERIEA": 258, "SOCCER": 2, "SUPERETTAN": 14, "SUPERLIG": 18, "SVK1L": 62, "SVKCUP": 5, "TACAPORT": 20, "THAIL1": 16, "UCL": 354, "UCLLEAGUE": 16, "UECL": 36, "UEFAEURO": 60, "UEFANL": 32, "UEL": 36, "UKRPL": 54, "URYPD": 22, "USL": 39, "USLSLW": 45, "VENFUTVE": 14, "WC": 172, "WCW": 32}, "contracts_unknown_family": 4, "request_count": 884, "retry_count": 0, "milestones_note": "milestones type=soccer_tournament_multi_leg: 23441 rows, complete=True"}
 [reference] {"groups": 405, "unmapped_fixture_groups": 175, "incomplete_groups": 0, "snapshots": 828, "provider_notes": ["190 rows, 109 skipped (unmapped division/team)", "skipped_by_division={'B1': 9, 'D2': 9, 'E2': 12, 'E3': 12, 'EC': 12, 'F2': 9, 'G1': 7, 'I2': 10, 'N1': 2, 'SC1': 5, 'SC2': 5, 'SC3': 5, 'SP2': 11, 'T1': 1}", "unknown_teams={'N1:Nijmegen': 1, 'N1:For Sittard': 1, 'T1:Goztep': 1}", "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"], "written": 0}
-[timings] {"assemble_fit_s": 8.29, "discovery_s": 0.0, "simulate_price_archive_s": 22.65, "total_s": 32.65, "mode": "fast+prefetched_sweep"}
-[board] 41 fixtures written by this run; 59 on the board -> work/runs/latest.model_board.v1.json
-[slate] {"slate_id": "slate-20261121T040710Z-47849d", "mode": "model_refresh_and_reprice", "fixtures": 58, "contract_sides": 1570, "simulations_run": 41, "odds_api_calls": 0, "reprice_runtime_s": 0.887, "price_changes_vs_previous": 77}
+[timings] {"assemble_fit_s": 8.14, "discovery_s": 0.0, "simulate_price_archive_s": 20.32, "total_s": 30.31, "mode": "fast+prefetched_sweep"}
+[board] 41 fixtures written by this run; 58 on the board -> work/runs/latest.model_board.v1.json
+[slate] {"slate_id": "slate-20261121T094139Z-e493f8", "mode": "model_refresh_and_reprice", "fixtures": 58, "contract_sides": 1570, "simulations_run": 41, "odds_api_calls": 0, "reprice_runtime_s": 0.863, "price_changes_vs_previous": 23}
 # RUN SOCCER — 2026-11-21
-Run `run-20261121T040647Z-86e237` generated 2026-11-21T04:07:09.777124Z · filters: {'leagues': [], 'games': ['fx:arg.primera:2026:arg.argentinos_juniors:arg.independiente', 'fx:arg.primera:2026:arg.defensa_y_justicia:arg.barracas_central', 'fx:arg.primera:2026:arg.instituto:arg.huracan', 'fx:arg.primera:2026:arg.river_plate:arg.lanus', 'fx:arg.primera:2026:arg.rosario_central:arg.gimnasia_mendoza', 'fx:eng.premier_league:2026-27:eng.aston_villa:eng.sunderland', 'fx:eng.premier_league:2026-27:eng.bournemouth:eng.nottm_forest', 'fx:eng.premier_league:2026-27:eng.chelsea:eng.leeds', 'fx:eng.premier_league:2026-27:eng.coventry:eng.crystal_palace', 'fx:eng.premier_league:2026-27:eng.hull:eng.brighton', 'fx:eng.premier_league:2026-27:eng.liverpool:eng.man_united', 'fx:eng.premier_league:2026-27:eng.man_city:eng.fulham', 'fx:eng.premier_league:2026-27:eng.newcastle:eng.arsenal', 'fx:eng.premier_league:2026-27:eng.tottenham:eng.ipswich', 'fx:esp.la_liga:2026-27:esp.alaves:esp.deportivo', 'fx:esp.la_liga:2026-27:esp.barcelona:esp.villarreal', 'fx:esp.la_liga:2026-27:esp.getafe:esp.atletico_madrid', 'fx:esp.la_liga:2026-27:esp.osasuna:esp.malaga', 'fx:esp.la_liga:2026-27:esp.racing_santander:esp.real_sociedad', 'fx:esp.la_liga:2026-27:esp.rayo_vallecano:esp.valencia', 'fx:esp.la_liga:2026-27:esp.real_madrid:esp.celta_vigo', 'fx:esp.la_liga:2026-27:esp.sevilla:esp.real_betis', 'fx:fra.ligue_1:2026-27:fra.lens:fra.toulouse', 'fx:fra.ligue_1:2026-27:fra.lille:fra.lyon', 'fx:fra.ligue_1:2026-27:fra.lorient:fra.rennes', 'fx:fra.ligue_1:2026-27:fra.marseille:fra.le_mans', 'fx:fra.ligue_1:2026-27:fra.monaco:fra.auxerre', 'fx:fra.ligue_1:2026-27:fra.nice:fra.psg', 'fx:fra.ligue_1:2026-27:fra.paris_fc:fra.angers', 'fx:fra.ligue_1:2026-27:fra.strasbourg:fra.brest', 'fx:ger.bundesliga:2026-27:ger.augsburg:ger.mainz', 'fx:ger.bundesliga:2026-27:ger.elversberg:ger.freiburg', 'fx:ger.bundesliga:2026-27:ger.frankfurt:ger.hoffenheim', 'fx:ger.bundesliga:2026-27:ger.gladbach:ger.dortmund', 'fx:ger.bundesliga:2026-27:ger.leverkusen:ger.paderborn', 'fx:ger.bundesliga:2026-27:ger.schalke:ger.stuttgart', 'fx:ger.bundesliga:2026-27:ger.union_berlin:ger.leipzig', 'fx:ger.bundesliga:2026-27:ger.werder_bremen:ger.hamburg', 'fx:ita.serie_a:2026-27:ita.atalanta:ita.inter', 'fx:ita.serie_a:2026-27:ita.bologna:ita.udinese', 'fx:ita.serie_a:2026-27:ita.como:ita.cagliari', 'fx:ita.serie_a:2026-27:ita.juventus:ita.venezia', 'fx:ita.serie_a:2026-27:ita.lazio:ita.lecce', 'fx:ita.serie_a:2026-27:ita.milan:ita.frosinone', 'fx:ita.serie_a:2026-27:ita.napoli:ita.torino', 'fx:ita.serie_a:2026-27:ita.parma:ita.roma', 'fx:ita.serie_a:2026-27:ita.sassuolo:ita.genoa', 'fx:usa.mls:2026:usa.vancouver_whitecaps:usa.real_salt_lake'], 'window_hours': 47, 'confirmed_lineups_only': False}
+Run `run-20261121T094118Z-27b40b` generated 2026-11-21T09:41:38.958880Z · filters: {'leagues': [], 'games': ['fx:arg.primera:2026:arg.argentinos_juniors:arg.independiente', 'fx:arg.primera:2026:arg.defensa_y_justicia:arg.barracas_central', 'fx:arg.primera:2026:arg.instituto:arg.huracan', 'fx:arg.primera:2026:arg.river_plate:arg.lanus', 'fx:arg.primera:2026:arg.rosario_central:arg.gimnasia_mendoza', 'fx:eng.premier_league:2026-27:eng.aston_villa:eng.sunderland', 'fx:eng.premier_league:2026-27:eng.bournemouth:eng.nottm_forest', 'fx:eng.premier_league:2026-27:eng.chelsea:eng.leeds', 'fx:eng.premier_league:2026-27:eng.coventry:eng.crystal_palace', 'fx:eng.premier_league:2026-27:eng.hull:eng.brighton', 'fx:eng.premier_league:2026-27:eng.liverpool:eng.man_united', 'fx:eng.premier_league:2026-27:eng.man_city:eng.fulham', 'fx:eng.premier_league:2026-27:eng.newcastle:eng.arsenal', 'fx:eng.premier_league:2026-27:eng.tottenham:eng.ipswich', 'fx:esp.la_liga:2026-27:esp.alaves:esp.deportivo', 'fx:esp.la_liga:2026-27:esp.barcelona:esp.villarreal', 'fx:esp.la_liga:2026-27:esp.getafe:esp.atletico_madrid', 'fx:esp.la_liga:2026-27:esp.osasuna:esp.malaga', 'fx:esp.la_liga:2026-27:esp.racing_santander:esp.real_sociedad', 'fx:esp.la_liga:2026-27:esp.rayo_vallecano:esp.valencia', 'fx:esp.la_liga:2026-27:esp.real_madrid:esp.celta_vigo', 'fx:esp.la_liga:2026-27:esp.sevilla:esp.real_betis', 'fx:fra.ligue_1:2026-27:fra.lens:fra.toulouse', 'fx:fra.ligue_1:2026-27:fra.lille:fra.lyon', 'fx:fra.ligue_1:2026-27:fra.lorient:fra.rennes', 'fx:fra.ligue_1:2026-27:fra.marseille:fra.le_mans', 'fx:fra.ligue_1:2026-27:fra.monaco:fra.auxerre', 'fx:fra.ligue_1:2026-27:fra.nice:fra.psg', 'fx:fra.ligue_1:2026-27:fra.paris_fc:fra.angers', 'fx:fra.ligue_1:2026-27:fra.strasbourg:fra.brest', 'fx:ger.bundesliga:2026-27:ger.augsburg:ger.mainz', 'fx:ger.bundesliga:2026-27:ger.elversberg:ger.freiburg', 'fx:ger.bundesliga:2026-27:ger.frankfurt:ger.hoffenheim', 'fx:ger.bundesliga:2026-27:ger.gladbach:ger.dortmund', 'fx:ger.bundesliga:2026-27:ger.leverkusen:ger.paderborn', 'fx:ger.bundesliga:2026-27:ger.schalke:ger.stuttgart', 'fx:ger.bundesliga:2026-27:ger.union_berlin:ger.leipzig', 'fx:ger.bundesliga:2026-27:ger.werder_bremen:ger.hamburg', 'fx:ita.serie_a:2026-27:ita.atalanta:ita.inter', 'fx:ita.serie_a:2026-27:ita.bologna:ita.udinese', 'fx:ita.serie_a:2026-27:ita.como:ita.cagliari', 'fx:ita.serie_a:2026-27:ita.juventus:ita.venezia', 'fx:ita.serie_a:2026-27:ita.lazio:ita.lecce', 'fx:ita.serie_a:2026-27:ita.milan:ita.frosinone', 'fx:ita.serie_a:2026-27:ita.napoli:ita.torino', 'fx:ita.serie_a:2026-27:ita.parma:ita.roma', 'fx:ita.serie_a:2026-27:ita.sassuolo:ita.genoa', 'fx:usa.mls:2026:usa.vancouver_whitecaps:usa.real_salt_lake'], 'window_hours': 41, 'confirmed_lineups_only': False}
 
 ## Coverage
-- contracts discovered: **6155** (discovery complete: True)
-- contracts evaluated: 123 · excluded mechanically: 3038 · unsupported/unknown: 2994
+- contracts discovered: **6024** (discovery complete: True)
+- contracts evaluated: 123 · excluded mechanically: 2907 · unsupported/unknown: 2994
 - **unaccounted contracts: 0**
-- by disposition: priced=123, ambiguous_ownership=18, unknown_family=4, unsupported_family=2990, unmapped_event=1487, unmapped_team=47, no_fixture=69, out_of_window=3, filtered_by_operator=1414
+- by disposition: priced=123, ambiguous_ownership=18, unknown_family=4, unsupported_family=2990, unmapped_event=1458, unmapped_team=14, no_fixture=69, out_of_window=3, filtered_by_operator=1345
 - competitions discovered: AFCCL2, ALEAGUEW, APFDDH, ARGNACB, ARGPREMDIV, AUTBUNDES, BELCHALL, BELGIANPL, BRASILEIRO, BRASILEIROB, BULFL, BUNDESLIGA, BUNDESLIGAW, CANPL, CONCACAFGC, CONCACAFNL, CONMEBOLLIB, CONMEBOLSUD, COPAAMERICA, COPADELREY, COPADOBRASIL, DENSUPERLIGA, DFBPOKAL, DIMAYOR, EFL, EFLCHAMPIONSHIP, EFLL1, EFLL2, EKSTRAKLASA, ENGNL, ENGWLEAGUECUP, EPL, EREDIVISIE, FA, FRAPLW, HUNNB1, INDSL, KNVB, LALIGA, LALIGA2, LIGAEXP, LIGAF, LIGAMX, LIGAMX2H, LIGAPORTUGAL, LIGAPORTUGAL2, LIGUE1, MLS, MLS2H, MLSEAST, MLSWEST, NWSL, PERLIGA1, PREMIERLEAGUE, QSTARS, ROML1, SAPSL, SCOCHAMP, SERIEA, SOCCER, SUPERETTAN, SUPERLIG, SVK1L, SVKCUP, TACAPORT, THAIL1, UCL, UCLLEAGUE, UECL, UEFAEURO, UEFANL, UEL, UKRPL, URYPD, USL, USLSLW, VENFUTVE, WC, WCW
 
 ## Freshness
-- as_of: 2026-11-21T04:06:47.226676Z; market_observed_at: 2026-11-21T04:02:54.262089Z; fixtures_observed_at: 2026-11-21T04:06:43.718877Z; results_observed_at: 2026-11-21T04:06:37.242856Z; model_fitted_at: 2026-11-21T04:06:43.984972Z; temporal_guard: {'decision_time': '2026-11-21T04:06:47.226676Z', 'checked': {'fixtures': 1, 'market_snapshots': 2, 'reference_odds': 1, 'results': 15}, 'latest_observed_at': {'fixtures': '2026-11-21T04:06:43.718877Z', 'market_snapshots': '2026-11-21T04:06:35.985598Z', 'reference_odds': '2026-11-21T04:06:45.879134Z', 'results': '2026-11-21T04:06:45.526373Z'}, 'violations': [], 'ok': True}
+- as_of: 2026-11-21T09:41:18.740117Z; market_observed_at: 2026-11-21T09:37:25.568061Z; fixtures_observed_at: 2026-11-21T09:41:15.183618Z; results_observed_at: 2026-11-21T09:41:08.760614Z; model_fitted_at: 2026-11-21T09:41:15.476161Z; temporal_guard: {'decision_time': '2026-11-21T09:41:18.740117Z', 'checked': {'fixtures': 1, 'market_snapshots': 2, 'reference_odds': 1, 'results': 15}, 'latest_observed_at': {'fixtures': '2026-11-21T09:41:15.183618Z', 'market_snapshots': '2026-11-21T09:41:07.569150Z', 'reference_odds': '2026-11-21T09:41:17.240713Z', 'results': '2026-11-21T09:41:16.889820Z'}, 'violations': [], 'ok': True}
 - no freshness violations
 
 ## Recommendations
 **NO BETS** — no contract met the robust-edge bar under an authority level that permits recommendations.
 
-## Shadow / research-only expressions (28)
+## Shadow / research-only expressions (27)
 These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW. They are NOT recommendations.
+- Parma vs AS Roma · Result: away · NO @ 0.2100 · fair 48.2% [29.4%–65.1%] · edge +26.1% · P(+) 97% · RESEARCH_ONLY · `KXSERIEAGAME-26NOV21PARROM-ROM`
 - Getafe vs Atlético Madrid · Result: away · NO @ 0.3800 · fair 62.5% [46.7%–77.7%] · edge +22.9% · P(+) 97% · RESEARCH_ONLY · `KXLALIGAGAME-26NOV22GETATM-ATM`
-- Parma vs AS Roma · Result: away · NO @ 0.2300 · fair 48.2% [29.4%–65.1%] · edge +24.0% · P(+) 95% · RESEARCH_ONLY · `KXSERIEAGAME-26NOV21PARROM-ROM`
 - Hull City vs Brighton & Hove Albion · Result: away · NO @ 0.3700 · fair 63.3% [41.5%–83.2%] · edge +24.7% · P(+) 92% · RESEARCH_ONLY · `KXEPLGAME-26NOV22HULBRI-BRI`
 - Real Madrid vs Celta Vigo · Result: home · NO @ 0.1500 · fair 36.9% [20.5%–54.1%] · edge +21.0% · P(+) 95% · RESEARCH_ONLY · `KXLALIGAGAME-26NOV21RMARCC-RMA`
 - Newcastle United vs Arsenal · Result: away · NO @ 0.3800 · fair 59.9% [42.2%–76.6%] · edge +20.3% · P(+) 93% · RESEARCH_ONLY · `KXEPLGAME-26NOV21NEWARS-ARS`
-- Como vs Cagliari · Result: home · NO @ 0.2500 · fair 46.3% [26.9%–64.1%] · edge +20.0% · P(+) 91% · RESEARCH_ONLY · `KXSERIEAGAME-26NOV21COMCAG-COM`
+- Como vs Cagliari · Result: home · NO @ 0.2400 · fair 46.3% [26.9%–64.1%] · edge +21.0% · P(+) 92% · RESEARCH_ONLY · `KXSERIEAGAME-26NOV21COMCAG-COM`
 - Hull City vs Brighton & Hove Albion · Result: home · YES @ 0.1500 · fair 37.3% [17.4%–60.3%] · edge +21.5% · P(+) 92% · RESEARCH_ONLY · `KXEPLGAME-26NOV22HULBRI-HUL`
+- Parma vs AS Roma · Result: home · YES @ 0.0700 · fair 22.4% [10.1%–35.5%] · edge +15.0% · P(+) 96% · RESEARCH_ONLY · `KXSERIEAGAME-26NOV21PARROM-PAR`
 - Getafe vs Atlético Madrid · Result: home · YES @ 0.1500 · fair 33.0% [18.6%–48.8%] · edge +17.1% · P(+) 95% · RESEARCH_ONLY · `KXLALIGAGAME-26NOV22GETATM-GET`
 - Newcastle United vs Arsenal · Result: home · YES @ 0.1600 · fair 34.3% [18.3%–51.3%] · edge +17.3% · P(+) 93% · RESEARCH_ONLY · `KXEPLGAME-26NOV21NEWARS-NEW`
-- Union Berlin vs RB Leipzig · Result: away · NO @ 0.3500 · fair 54.8% [31.7%–75.2%] · edge +18.2% · P(+) 85% · RESEARCH_ONLY · `KXBUNDESLIGAGAME-26NOV21UNIRBL-RBL`
 - Schalke 04 vs VfB Stuttgart · Result: away · NO @ 0.4800 · fair 68.3% [42.6%–88.7%] · edge +18.5% · P(+) 85% · RESEARCH_ONLY · `KXBUNDESLIGAGAME-26NOV21SCHVFB-VFB`
 - Nice vs Paris Saint-Germain · Result: away · NO @ 0.3400 · fair 52.7% [33.7%–71.0%] · edge +17.1% · P(+) 88% · RESEARCH_ONLY · `KXLIGUE1GAME-26NOV21NICPSG-PSG`
-- Parma vs AS Roma · Result: home · YES @ 0.0900 · fair 22.4% [10.1%–35.5%] · edge +12.9% · P(+) 92% · RESEARCH_ONLY · `KXSERIEAGAME-26NOV21PARROM-PAR`
-- SV Elversberg vs SC Freiburg · Result: away · NO @ 0.5200 · fair 72.3% [48.4%–91.7%] · edge +18.6% · P(+) 85% · RESEARCH_ONLY · `KXBUNDESLIGAGAME-26NOV21SVESCF-SCF`
+- Union Berlin vs RB Leipzig · Result: away · NO @ 0.3600 · fair 54.8% [31.7%–75.2%] · edge +17.2% · P(+) 84% · RESEARCH_ONLY · `KXBUNDESLIGAGAME-26NOV21UNIRBL-RBL`
 - Real Madrid vs Celta Vigo · Result: away · YES @ 0.0500 · fair 16.2% [6.8%–27.7%] · edge +10.9% · P(+) 94% · RESEARCH_ONLY · `KXLALIGAGAME-26NOV21RMARCC-RCC`
+- SV Elversberg vs SC Freiburg · Result: home · YES @ 0.2700 · fair 50.8% [24.2%–79.2%] · edge +22.5% · P(+) 84% · RESEARCH_ONLY · `KXBUNDESLIGAGAME-26NOV21SVESCF-SVE`
 - Atalanta vs Inter Milan · Result: away · NO @ 0.3800 · fair 55.0% [35.6%–73.6%] · edge +15.4% · P(+) 85% · RESEARCH_ONLY · `KXSERIEAGAME-26NOV22ATAINT-INT`
 - Como vs Cagliari · Result: away · YES @ 0.0900 · fair 21.0% [9.4%–34.7%] · edge +11.4% · P(+) 89% · RESEARCH_ONLY · `KXSERIEAGAME-26NOV21COMCAG-CAG`
-- Nice vs Paris Saint-Germain · Result: draw · YES @ 0.1800 · fair 25.8% [19.2%–32.7%] · edge +6.8% · P(+) 90% · RESEARCH_ONLY · `KXLIGUE1GAME-26NOV21NICPSG-TIE`
 - Sassuolo vs Genoa · Result: home · YES @ 0.3500 · fair 51.7% [32.9%–70.7%] · edge +15.1% · P(+) 84% · RESEARCH_ONLY · `KXSERIEAGAME-26NOV22SASGEN-SAS`
 - Sassuolo vs Genoa · Result: away · NO @ 0.6300 · fair 75.6% [60.4%–88.9%] · edge +10.9% · P(+) 83% · RESEARCH_ONLY · `KXSERIEAGAME-26NOV22SASGEN-GEN`
+- Tottenham Hotspur vs Ipswich Town · Result: home · NO @ 0.3600 · fair 54.8% [29.3%–77.2%] · edge +17.2% · P(+) 82% · RESEARCH_ONLY · `KXEPLGAME-26NOV21TOTIPS-TOT`
+- Nice vs Paris Saint-Germain · Result: draw · YES @ 0.1900 · fair 25.8% [19.2%–32.7%] · edge +5.8% · P(+) 87% · RESEARCH_ONLY · `KXLIGUE1GAME-26NOV21NICPSG-TIE`
 - AC Milan vs Frosinone · Result: home · NO @ 0.3700 · fair 54.7% [32.0%–76.2%] · edge +16.1% · P(+) 82% · RESEARCH_ONLY · `KXSERIEAGAME-26NOV22ACMFRO-ACM`
 - Bayer Leverkusen vs SC Paderborn 07 · Result: draw · YES @ 0.1400 · fair 23.6% [11.3%–34.2%] · edge +8.8% · P(+) 83% · RESEARCH_ONLY · `KXBUNDESLIGAGAME-26NOV21LEVPAD-TIE`
 - Getafe vs Atlético Madrid · Result: draw · YES @ 0.2300 · fair 29.6% [23.4%–35.8%] · edge +5.3% · P(+) 86% · RESEARCH_ONLY · `KXLALIGAGAME-26NOV22GETATM-TIE`
-- Lazio vs Lecce · Result: home · NO @ 0.3200 · fair 45.5% [27.6%–63.3%] · edge +12.0% · P(+) 82% · RESEARCH_ONLY · `KXSERIEAGAME-26NOV21LAZLEC-LAZ`
-- Tottenham Hotspur vs Ipswich Town · Result: away · YES @ 0.1600 · fair 31.3% [11.7%–51.7%] · edge +14.3% · P(+) 82% · RESEARCH_ONLY · `KXEPLGAME-26NOV21TOTIPS-IPS`
 - Schalke 04 vs VfB Stuttgart · Result: home · YES @ 0.2400 · fair 43.5% [18.9%–70.5%] · edge +18.3% · P(+) 81% · RESEARCH_ONLY · `KXBUNDESLIGAGAME-26NOV21SCHVFB-SCH`
-- FC Augsburg vs Mainz 05 · Result: away · NO @ 0.6100 · fair 74.0% [55.3%–89.4%] · edge +11.3% · P(+) 81% · RESEARCH_ONLY · `KXBUNDESLIGAGAME-26NOV22FCAM05-M05`
+- Eintracht Frankfurt vs TSG Hoffenheim · Result: home · YES @ 0.3900 · fair 56.1% [33.7%–78.6%] · edge +15.5% · P(+) 81% · RESEARCH_ONLY · `KXBUNDESLIGAGAME-26NOV21SGETSG-SGE`
 - AC Milan vs Frosinone · Result: draw · YES @ 0.2000 · fair 26.4% [18.2%–34.8%] · edge +5.3% · P(+) 81% · RESEARCH_ONLY · `KXSERIEAGAME-26NOV22ACMFRO-TIE`
 
 ## Expressions removed by the reducer (7)
-- `KXLALIGAGAME-26NOV21RMARCC-TIE` yes: dominated by KXLALIGAGAME-26NOV21RMARCC-RMA/no (corr +0.67)
-- `KXBUNDESLIGAGAME-26NOV22FCAM05-FCA` yes: redundant with KXBUNDESLIGAGAME-26NOV22FCAM05-M05/no (corr +0.62); best expression kept
-- `KXBUNDESLIGAGAME-26NOV21UNIRBL-UNI` yes: dominated by KXBUNDESLIGAGAME-26NOV21UNIRBL-RBL/no (corr +0.63)
-- `KXBUNDESLIGAGAME-26NOV21SVESCF-SVE` yes: redundant with KXBUNDESLIGAGAME-26NOV21SVESCF-SCF/no (corr +0.63); best expression kept
 - `KXSERIEAGAME-26NOV22ATAINT-ATA` yes: dominated by KXSERIEAGAME-26NOV22ATAINT-INT/no (corr +0.62)
 - `KXSERIEAGAME-26NOV21COMCAG-TIE` yes: dominated by KXSERIEAGAME-26NOV21COMCAG-COM/no (corr +0.63)
 - `KXSERIEAGAME-26NOV21PARROM-TIE` yes: dominated by KXSERIEAGAME-26NOV21PARROM-ROM/no (corr +0.61)
+- `KXEPLGAME-26NOV21TOTIPS-IPS` yes: dominated by KXEPLGAME-26NOV21TOTIPS-TOT/no (corr +0.61)
+- `KXBUNDESLIGAGAME-26NOV21UNIRBL-UNI` yes: redundant with KXBUNDESLIGAGAME-26NOV21UNIRBL-RBL/no (corr +0.63); best expression kept
+- `KXBUNDESLIGAGAME-26NOV21SVESCF-SCF` no: dominated by KXBUNDESLIGAGAME-26NOV21SVESCF-SVE/yes (corr +0.63)
+- `KXLALIGAGAME-26NOV21RMARCC-TIE` yes: dominated by KXLALIGAGAME-26NOV21RMARCC-RMA/no (corr +0.67)
 
 ## Events
-- Paris FC vs Angers (Ligue 1) 2026-11-22T14:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.84-0.79 · 1X2 60%/23%/17%
-- Lorient vs Rennes (Ligue 1) 2026-11-22T16:15:00Z · markets 3/3 evaluated · lineups unknown · xG 1.57-1.26 · 1X2 44%/24%/32%
-- Marseille vs Le Mans (Ligue 1) 2026-11-22T19:45:00Z · markets 3/3 evaluated · lineups unknown · xG 1.97-1.15 · 1X2 55%/21%/24%
-- Nice vs Paris Saint-Germain (Ligue 1) 2026-11-21T16:15:00Z · markets 3/3 evaluated · lineups unknown · xG 1.03-1.49 · 1X2 27%/26%/47%
-- Lens vs Toulouse (Ligue 1) 2026-11-21T19:45:00Z · markets 3/3 evaluated · lineups unknown · xG 2.12-1.08 · 1X2 59%/20%/20%
-- Lille vs Lyon (Ligue 1) 2026-11-21T19:45:00Z · markets 3/3 evaluated · lineups unknown · xG 1.44-1.05 · 1X2 45%/26%/28%
-- AS Monaco vs AJ Auxerre (Ligue 1) 2026-11-21T19:45:00Z · markets 3/3 evaluated · lineups unknown · xG 2.00-0.94 · 1X2 60%/21%/19%
-- Strasbourg vs Brest (Ligue 1) 2026-11-21T19:45:00Z · markets 3/3 evaluated · lineups unknown · xG 2.13-1.19 · 1X2 58%/20%/22%
-- FC Barcelona vs Villarreal (La Liga) 2026-11-22T12:00:00Z · markets 3/3 evaluated · lineups unknown · xG 3.22-1.11 · 1X2 76%/13%/11%
-- Racing Santander vs Real Sociedad (La Liga) 2026-11-22T12:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.94-1.97 · 1X2 39%/20%/41%
-- Osasuna vs Málaga (La Liga) 2026-11-22T12:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.65-0.83 · 1X2 55%/25%/20%
-- Getafe vs Atlético Madrid (La Liga) 2026-11-22T12:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.02-1.11 · 1X2 33%/30%/37%
-- Deportivo Alavés vs Deportivo La Coruña (La Liga) 2026-11-22T12:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.59-1.00 · 1X2 50%/25%/25%
-- Rayo Vallecano vs Valencia (La Liga) 2026-11-22T12:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.68-0.98 · 1X2 53%/24%/23%
-- Sevilla vs Real Betis (La Liga) 2026-11-22T12:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.35-1.15 · 1X2 41%/27%/32%
-- Real Madrid vs Celta Vigo (La Liga) 2026-11-22T12:00:00Z · markets 3/3 evaluated · lineups unknown · xG 2.05-0.86 · 1X2 63%/21%/16%
-- FC Augsburg vs Mainz 05 (Bundesliga) 2026-11-22T14:30:00Z · markets 3/3 evaluated · lineups unknown · xG 1.92-1.24 · 1X2 52%/22%/26%
-- Werder Bremen vs Hamburger SV (Bundesliga) 2026-11-22T16:30:00Z · markets 3/3 evaluated · lineups unknown · xG 1.95-0.87 · 1X2 61%/22%/18%
-- Bayer Leverkusen vs SC Paderborn 07 (Bundesliga) 2026-11-21T14:30:00Z · markets 3/3 evaluated · lineups unknown · xG 1.78-0.69 · 1X2 61%/23%/16%
-- Eintracht Frankfurt vs TSG Hoffenheim (Bundesliga) 2026-11-21T14:30:00Z · markets 3/3 evaluated · lineups unknown · xG 2.38-1.48 · 1X2 56%/19%/25%
-- Union Berlin vs RB Leipzig (Bundesliga) 2026-11-21T14:30:00Z · markets 3/3 evaluated · lineups unknown · xG 1.44-1.76 · 1X2 33%/22%/45%
-- Borussia Mönchengladbach vs Borussia Dortmund (Bundesliga) 2026-11-21T14:30:00Z · markets 3/3 evaluated · lineups unknown · xG 1.10-1.81 · 1X2 24%/23%/53%
-- SV Elversberg vs SC Freiburg (Bundesliga) 2026-11-21T14:30:00Z · markets 3/3 evaluated · lineups unknown · xG 1.92-1.28 · 1X2 51%/21%/28%
-- Schalke 04 vs VfB Stuttgart (Bundesliga) 2026-11-21T17:30:00Z · markets 3/3 evaluated · lineups unknown · xG 1.52-1.21 · 1X2 44%/25%/32%
+- Bologna vs Udinese (Serie A) 2026-11-22T17:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.36-1.09 · 1X2 43%/26%/31%
+- Sassuolo vs Genoa (Serie A) 2026-11-22T11:30:00Z · markets 3/3 evaluated · lineups unknown · xG 1.66-1.02 · 1X2 52%/24%/25%
+- AC Milan vs Frosinone (Serie A) 2026-11-22T14:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.40-1.00 · 1X2 45%/26%/28%
+- Atalanta vs Inter Milan (Serie A) 2026-11-22T19:45:00Z · markets 3/3 evaluated · lineups unknown · xG 1.34-1.66 · 1X2 32%/23%/45%
+- Como vs Cagliari (Serie A) 2026-11-21T14:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.57-0.82 · 1X2 54%/25%/21%
+- Lazio vs Lecce (Serie A) 2026-11-21T14:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.54-0.77 · 1X2 55%/26%/20%
+- Parma vs AS Roma (Serie A) 2026-11-21T17:00:00Z · markets 3/3 evaluated · lineups unknown · xG 0.87-1.51 · 1X2 23%/26%/52%
+- Napoli vs Torino (Serie A) 2026-11-21T19:45:00Z · markets 3/3 evaluated · lineups unknown · xG 1.73-0.89 · 1X2 56%/24%/20%
 - Hull City vs Brighton & Hove Albion (Premier League) 2026-11-21T15:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.29-1.27 · 1X2 37%/26%/37%
 - Liverpool vs Manchester United (Premier League) 2026-11-21T15:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.73-1.19 · 1X2 49%/24%/27%
 - Bournemouth vs Nottingham Forest (Premier League) 2026-11-21T15:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.47-1.05 · 1X2 46%/26%/28%
@@ -119,299 +102,27 @@ These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW
 - Manchester City vs Fulham (Premier League) 2026-11-21T15:00:00Z · markets 3/3 evaluated · lineups unknown · xG 2.20-0.81 · 1X2 67%/19%/14%
 - Newcastle United vs Arsenal (Premier League) 2026-11-21T15:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.26-1.39 · 1X2 34%/25%/40%
 - Tottenham Hotspur vs Ipswich Town (Premier League) 2026-11-21T15:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.65-1.28 · 1X2 45%/24%/31%
-- Bologna vs Udinese (Serie A) 2026-11-22T17:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.36-1.09 · 1X2 43%/26%/31%
-- Sassuolo vs Genoa (Serie A) 2026-11-22T11:30:00Z · markets 3/3 evaluated · lineups unknown · xG 1.66-1.02 · 1X2 52%/24%/25%
-- AC Milan vs Frosinone (Serie A) 2026-11-22T14:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.40-1.00 · 1X2 45%/26%/28%
-- Atalanta vs Inter Milan (Serie A) 2026-11-22T19:45:00Z · markets 3/3 evaluated · lineups unknown · xG 1.34-1.66 · 1X2 32%/23%/45%
-- Como vs Cagliari (Serie A) 2026-11-21T14:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.57-0.82 · 1X2 54%/25%/21%
-- Lazio vs Lecce (Serie A) 2026-11-21T14:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.54-0.77 · 1X2 55%/26%/20%
-- Parma vs AS Roma (Serie A) 2026-11-21T17:00:00Z · markets 3/3 evaluated · lineups unknown · xG 0.87-1.51 · 1X2 23%/26%/52%
-- Napoli vs Torino (Serie A) 2026-11-21T19:45:00Z · markets 3/3 evaluated · lineups unknown · xG 1.73-0.89 · 1X2 56%/24%/20%
-
-{
-  "outputs": {
-    "json": "work/runs/_pending/run_output.v1.json",
-    "md": "work/runs/_pending/RUN_SOCCER.md",
-    "contracts": "work/runs/_pending/priced_contracts.json",
-    "coverage": "work/runs/_pending/coverage.json",
-    "diagnostics": "work/runs/_pending/coverage_diagnostics.json"
-  },
-  "simulated": [
-    "fx:fra.ligue_1:2026-27:fra.paris_fc:fra.angers:matchday_11",
-    "fx:fra.ligue_1:2026-27:fra.lorient:fra.rennes:matchday_11",
-    "fx:fra.ligue_1:2026-27:fra.marseille:fra.le_mans:matchday_11",
-    "fx:fra.ligue_1:2026-27:fra.nice:fra.psg:matchday_11",
-    "fx:fra.ligue_1:2026-27:fra.lens:fra.toulouse:matchday_11",
-    "fx:fra.ligue_1:2026-27:fra.lille:fra.lyon:matchday_11",
-    "fx:fra.ligue_1:2026-27:fra.monaco:fra.auxerre:matchday_11",
-    "fx:fra.ligue_1:2026-27:fra.strasbourg:fra.brest:matchday_11",
-    "fx:esp.la_liga:2026-27:esp.barcelona:esp.villarreal:matchday_13",
-    "fx:esp.la_liga:2026-27:esp.racing_santander:esp.real_sociedad:matchday_13",
-    "fx:esp.la_liga:2026-27:esp.osasuna:esp.malaga:matchday_13",
-    "fx:esp.la_liga:2026-27:esp.getafe:esp.atletico_madrid:matchday_13",
-    "fx:esp.la_liga:2026-27:esp.alaves:esp.deportivo:matchday_13",
-    "fx:esp.la_liga:2026-27:esp.rayo_vallecano:esp.valencia:matchday_13",
-    "fx:esp.la_liga:2026-27:esp.sevilla:esp.real_betis:matchday_13",
-    "fx:esp.la_liga:2026-27:esp.real_madrid:esp.celta_vigo:matchday_13",
-    "fx:ger.bundesliga:2026-27:ger.augsburg:ger.mainz:matchday_10",
-    "fx:ger.bundesliga:2026-27:ger.werder_bremen:ger.hamburg:matchday_10",
-    "fx:ger.bundesliga:2026-27:ger.leverkusen:ger.paderborn:matchday_10",
-    "fx:ger.bundesliga:2026-27:ger.frankfurt:ger.hoffenheim:matchday_10",
-    "fx:ger.bundesliga:2026-27:ger.union_berlin:ger.leipzig:matchday_10",
-    "fx:ger.bundesliga:2026-27:ger.gladbach:ger.dortmund:matchday_10",
-    "fx:ger.bundesliga:2026-27:ger.elversberg:ger.freiburg:matchday_10",
-    "fx:ger.bundesliga:2026-27:ger.schalke:ger.stuttgart:matchday_10",
-    "fx:eng.premier_league:2026-27:eng.hull:eng.brighton:matchday_11",
-    "fx:eng.premier_league:2026-27:eng.liverpool:eng.man_united:matchday_11",
-    "fx:eng.premier_league:2026-27:eng.bournemouth:eng.nottm_forest:matchday_11",
-    "fx:eng.premier_league:2026-27:eng.aston_villa:eng.sunderland:matchday_11",
-    "fx:eng.premier_league:2026-27:eng.chelsea:eng.leeds:matchday_11",
-    "fx:eng.premier_league:2026-27:eng.coventry:eng.crystal_palace:matchday_11",
-    "fx:eng.premier_league:2026-27:eng.man_city:eng.fulham:matchday_11",
-    "fx:eng.premier_league:2026-27:eng.newcastle:eng.arsenal:matchday_11",
-    "fx:eng.premier_league:2026-27:eng.tottenham:eng.ipswich:matchday_11",
-    "fx:ita.serie_a:2026-27:ita.bologna:ita.udinese:matchday_12",
-    "fx:ita.serie_a:2026-27:ita.sassuolo:ita.genoa:matchday_12",
-    "fx:ita.serie_a:2026-27:ita.milan:ita.frosinone:matchday_12",
-    "fx:ita.serie_a:2026-27:ita.atalanta:ita.inter:matchday_12",
-    "fx:ita.serie_a:2026-27:ita.como:ita.cagliari:matchday_12",
-    "fx:ita.serie_a:2026-27:ita.lazio:ita.lecce:matchday_12",
-    "fx:ita.serie_a:2026-27:ita.parma:ita.roma:matchday_12",
-    "fx:ita.serie_a:2026-27:ita.napoli:ita.torino:matchday_12"
-  ],
-  "repriced": [],
-  "archived_records": 123
-}
-[dispatch] holding 7.6 min (next window opens in 369.7 min)
-[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
-{
-  "batch": "cap-20261121T042136Z",
-  "complete": true,
-  "discovered": 6166,
-  "written": 1218,
-  "path": "work/snapshots/2026-11-21/cap-20261121T042136Z.jsonl"
-}
-[slate] {"slate_id": "slate-20261121T042137Z-499b4d", "mode": "reprice_only", "fixtures": 58, "contract_sides": 1570, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 1.049, "price_changes_vs_previous": 94}
-[dispatch] holding 8.0 min (next window opens in 355.2 min)
-[dispatch] holding 0.5 min (next window opens in 347.2 min)
-[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
-{
-  "batch": "cap-20261121T043706Z",
-  "complete": true,
-  "discovered": 6166,
-  "written": 1152,
-  "path": "work/snapshots/2026-11-21/cap-20261121T043706Z.jsonl"
-}
-[slate] {"slate_id": "slate-20261121T043707Z-397dcf", "mode": "reprice_only", "fixtures": 58, "contract_sides": 1570, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.866, "price_changes_vs_previous": 199}
-[dispatch] holding 8.1 min (next window opens in 339.7 min)
-[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
-{
-  "batch": "cap-20261121T045206Z",
-  "complete": true,
-  "discovered": 6160,
-  "written": 839,
-  "path": "work/snapshots/2026-11-21/cap-20261121T045206Z.jsonl"
-}
-[slate] {"slate_id": "slate-20261121T045207Z-55e29e", "mode": "reprice_only", "fixtures": 58, "contract_sides": 1570, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 1.093, "price_changes_vs_previous": 52}
-[dispatch] holding 6.6 min (next window opens in 323.8 min)
-[dispatch] holding 0.6 min (next window opens in 317.2 min)
-[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
-{
-  "batch": "cap-20261121T050708Z",
-  "complete": true,
-  "discovered": 6147,
-  "written": 1205,
-  "path": "work/snapshots/2026-11-21/cap-20261121T050708Z.jsonl"
-}
-[slate] {"slate_id": "slate-20261121T050709Z-8a2945", "mode": "reprice_only", "fixtures": 58, "contract_sides": 1570, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.881, "price_changes_vs_previous": 94}
-[dispatch] holding 8.1 min (next window opens in 309.6 min)
-[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
-{
-  "batch": "cap-20261121T052211Z",
-  "complete": true,
-  "discovered": 6052,
-  "written": 1131,
-  "path": "work/snapshots/2026-11-21/cap-20261121T052211Z.jsonl"
-}
-[slate] {"slate_id": "slate-20261121T052212Z-deb253", "mode": "reprice_only", "fixtures": 58, "contract_sides": 1570, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 1.098, "price_changes_vs_previous": 100}
-[dispatch] holding 7.4 min (next window opens in 294.6 min)
-[dispatch] holding 0.6 min (next window opens in 287.2 min)
-[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
-{
-  "batch": "cap-20261121T053710Z",
-  "complete": true,
-  "discovered": 6052,
-  "written": 885,
-  "path": "work/snapshots/2026-11-21/cap-20261121T053710Z.jsonl"
-}
-[slate] {"slate_id": "slate-20261121T053711Z-5bc044", "mode": "reprice_only", "fixtures": 58, "contract_sides": 1570, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.888, "price_changes_vs_previous": 69}
-[dispatch] holding 8.1 min (next window opens in 279.6 min)
-[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
-{
-  "batch": "cap-20261121T055210Z",
-  "complete": true,
-  "discovered": 6052,
-  "written": 856,
-  "path": "work/snapshots/2026-11-21/cap-20261121T055210Z.jsonl"
-}
-[slate] {"slate_id": "slate-20261121T055211Z-5962e5", "mode": "reprice_only", "fixtures": 58, "contract_sides": 1570, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.929, "price_changes_vs_previous": 70}
-[dispatch] holding 6.6 min (next window opens in 263.7 min)
-[dispatch] holding 0.6 min (next window opens in 257.2 min)
-[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
-{
-  "batch": "cap-20261121T060712Z",
-  "complete": true,
-  "discovered": 6054,
-  "written": 838,
-  "path": "work/snapshots/2026-11-21/cap-20261121T060712Z.jsonl"
-}
-[slate] {"slate_id": "slate-20261121T060713Z-d77c62", "mode": "reprice_only", "fixtures": 58, "contract_sides": 1570, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.924, "price_changes_vs_previous": 69}
-[dispatch] holding 8.1 min (next window opens in 249.6 min)
-[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
-{
-  "batch": "cap-20261121T062212Z",
-  "complete": true,
-  "discovered": 6055,
-  "written": 857,
-  "path": "work/snapshots/2026-11-21/cap-20261121T062212Z.jsonl"
-}
-[slate] {"slate_id": "slate-20261121T062213Z-2bc105", "mode": "reprice_only", "fixtures": 58, "contract_sides": 1570, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 1.113, "price_changes_vs_previous": 46}
-[dispatch] holding 7.4 min (next window opens in 234.6 min)
-[dispatch] holding 0.7 min (next window opens in 227.2 min)
-[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
-{
-  "batch": "cap-20261121T063714Z",
-  "complete": true,
-  "discovered": 6055,
-  "written": 1416,
-  "path": "work/snapshots/2026-11-21/cap-20261121T063714Z.jsonl"
-}
-[slate] {"slate_id": "slate-20261121T063715Z-728a8c", "mode": "reprice_only", "fixtures": 58, "contract_sides": 1570, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 1.181, "price_changes_vs_previous": 65}
-[dispatch] holding 8.1 min (next window opens in 219.5 min)
-[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
-{
-  "batch": "cap-20261121T065214Z",
-  "complete": true,
-  "discovered": 6055,
-  "written": 778,
-  "path": "work/snapshots/2026-11-21/cap-20261121T065214Z.jsonl"
-}
-[slate] {"slate_id": "slate-20261121T065215Z-d05163", "mode": "reprice_only", "fixtures": 58, "contract_sides": 1570, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 1.045, "price_changes_vs_previous": 31}
-[dispatch] holding 6.5 min (next window opens in 203.6 min)
-[dispatch] holding 0.7 min (next window opens in 197.2 min)
-[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
-{
-  "batch": "cap-20261121T070716Z",
-  "complete": true,
-  "discovered": 6055,
-  "written": 1015,
-  "path": "work/snapshots/2026-11-21/cap-20261121T070716Z.jsonl"
-}
-[slate] {"slate_id": "slate-20261121T070717Z-dd8c5d", "mode": "reprice_only", "fixtures": 58, "contract_sides": 1570, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 1.082, "price_changes_vs_previous": 40}
-[dispatch] holding 8.0 min (next window opens in 189.4 min)
-[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
-{
-  "batch": "cap-20261121T072217Z",
-  "complete": true,
-  "discovered": 6055,
-  "written": 1003,
-  "path": "work/snapshots/2026-11-21/cap-20261121T072217Z.jsonl"
-}
-[slate] {"slate_id": "slate-20261121T072218Z-46db75", "mode": "reprice_only", "fixtures": 58, "contract_sides": 1570, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.899, "price_changes_vs_previous": 58}
-[dispatch] holding 7.3 min (next window opens in 174.4 min)
-[dispatch] holding 0.7 min (next window opens in 167.2 min)
-[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
-{
-  "batch": "cap-20261121T073718Z",
-  "complete": true,
-  "discovered": 6055,
-  "written": 885,
-  "path": "work/snapshots/2026-11-21/cap-20261121T073718Z.jsonl"
-}
-[slate] {"slate_id": "slate-20261121T073719Z-342b5b", "mode": "reprice_only", "fixtures": 58, "contract_sides": 1570, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 1.057, "price_changes_vs_previous": 36}
-[dispatch] holding 7.9 min (next window opens in 159.3 min)
-[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
-{
-  "batch": "cap-20261121T075218Z",
-  "complete": true,
-  "discovered": 6036,
-  "written": 832,
-  "path": "work/snapshots/2026-11-21/cap-20261121T075218Z.jsonl"
-}
-[slate] {"slate_id": "slate-20261121T075219Z-f9dd8c", "mode": "reprice_only", "fixtures": 58, "contract_sides": 1570, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.903, "price_changes_vs_previous": 25}
-[dispatch] holding 6.3 min (next window opens in 143.5 min)
-[dispatch] holding 0.8 min (next window opens in 137.2 min)
-[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
-{
-  "batch": "cap-20261121T080720Z",
-  "complete": true,
-  "discovered": 6024,
-  "written": 870,
-  "path": "work/snapshots/2026-11-21/cap-20261121T080720Z.jsonl"
-}
-[slate] {"slate_id": "slate-20261121T080722Z-c73367", "mode": "reprice_only", "fixtures": 58, "contract_sides": 1570, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 1.078, "price_changes_vs_previous": 23}
-[dispatch] holding 8.0 min (next window opens in 129.3 min)
-[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
-{
-  "batch": "cap-20261121T082221Z",
-  "complete": true,
-  "discovered": 6024,
-  "written": 994,
-  "path": "work/snapshots/2026-11-21/cap-20261121T082221Z.jsonl"
-}
-[slate] {"slate_id": "slate-20261121T082222Z-2ad30a", "mode": "reprice_only", "fixtures": 58, "contract_sides": 1570, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.924, "price_changes_vs_previous": 40}
-[dispatch] holding 7.1 min (next window opens in 114.3 min)
-[dispatch] holding 0.8 min (next window opens in 107.2 min)
-[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
-{
-  "batch": "cap-20261121T083721Z",
-  "complete": true,
-  "discovered": 6024,
-  "written": 859,
-  "path": "work/snapshots/2026-11-21/cap-20261121T083721Z.jsonl"
-}
-[slate] {"slate_id": "slate-20261121T083723Z-821d80", "mode": "reprice_only", "fixtures": 58, "contract_sides": 1570, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 1.045, "price_changes_vs_previous": 38}
-[dispatch] holding 7.9 min (next window opens in 99.3 min)
-[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
-{
-  "batch": "cap-20261121T085227Z",
-  "complete": true,
-  "discovered": 6024,
-  "written": 1105,
-  "path": "work/snapshots/2026-11-21/cap-20261121T085227Z.jsonl"
-}
-[slate] {"slate_id": "slate-20261121T085228Z-4b2e46", "mode": "reprice_only", "fixtures": 58, "contract_sides": 1570, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.929, "price_changes_vs_previous": 33}
-[dispatch] holding 6.3 min (next window opens in 83.5 min)
-[dispatch] holding 0.8 min (next window opens in 77.2 min)
-[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
-{
-  "batch": "cap-20261121T090725Z",
-  "complete": true,
-  "discovered": 6024,
-  "written": 1274,
-  "path": "work/snapshots/2026-11-21/cap-20261121T090725Z.jsonl"
-}
-[slate] {"slate_id": "slate-20261121T090726Z-bd420e", "mode": "reprice_only", "fixtures": 58, "contract_sides": 1570, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 1.116, "price_changes_vs_previous": 58}
-[dispatch] holding 8.1 min (next window opens in 69.4 min)
-[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
-{
-  "batch": "cap-20261121T092225Z",
-  "complete": true,
-  "discovered": 6024,
-  "written": 1084,
-  "path": "work/snapshots/2026-11-21/cap-20261121T092225Z.jsonl"
-}
-[slate] {"slate_id": "slate-20261121T092226Z-4249c4", "mode": "reprice_only", "fixtures": 58, "contract_sides": 1570, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.894, "price_changes_vs_previous": 40}
-[dispatch] holding 6.0 min (next window opens in 54.2 min)
-{
- "batches": 0,
- "horizons_delivered": 0,
- "missed_states": {},
- "paid_calls": 0,
- "credits_spent": 0,
- "end_reason": "link_time_limit",
- "chain_continue": true,
- "delivered_total": 4215,
- "missed_total": 528,
- "delivery_rate_total": 0.8886780518659076
-}
+- Paris FC vs Angers (Ligue 1) 2026-11-22T14:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.84-0.79 · 1X2 60%/23%/17%
+- Lorient vs Rennes (Ligue 1) 2026-11-22T16:15:00Z · markets 3/3 evaluated · lineups unknown · xG 1.57-1.26 · 1X2 44%/24%/32%
+- Marseille vs Le Mans (Ligue 1) 2026-11-22T19:45:00Z · markets 3/3 evaluated · lineups unknown · xG 1.97-1.15 · 1X2 55%/21%/24%
+- Nice vs Paris Saint-Germain (Ligue 1) 2026-11-21T16:15:00Z · markets 3/3 evaluated · lineups unknown · xG 1.03-1.49 · 1X2 27%/26%/47%
+- Lens vs Toulouse (Ligue 1) 2026-11-21T19:45:00Z · markets 3/3 evaluated · lineups unknown · xG 2.12-1.08 · 1X2 59%/20%/20%
+- Lille vs Lyon (Ligue 1) 2026-11-21T19:45:00Z · markets 3/3 evaluated · lineups unknown · xG 1.44-1.05 · 1X2 45%/26%/28%
+- AS Monaco vs AJ Auxerre (Ligue 1) 2026-11-21T19:45:00Z · markets 3/3 evaluated · lineups unknown · xG 2.00-0.94 · 1X2 60%/21%/19%
+- Strasbourg vs Brest (Ligue 1) 2026-11-21T19:45:00Z · markets 3/3 evaluated · lineups unknown · xG 2.13-1.19 · 1X2 58%/20%/22%
+- FC Augsburg vs Mainz 05 (Bundesliga) 2026-11-22T14:30:00Z · markets 3/3 evaluated · lineups unknown · xG 1.92-1.24 · 1X2 52%/22%/26%
+- Werder Bremen vs Hamburger SV (Bundesliga) 2026-11-22T16:30:00Z · markets 3/3 evaluated · lineups unknown · xG 1.95-0.87 · 1X2 61%/22%/18%
+- Bayer Leverkusen vs SC Paderborn 07 (Bundesliga) 2026-11-21T14:30:00Z · markets 3/3 evaluated · lineups unknown · xG 1.78-0.69 · 1X2 61%/23%/16%
+- Eintracht Frankfurt vs TSG Hoffenheim (Bundesliga) 2026-11-21T14:30:00Z · markets 3/3 evaluated · lineups unknown · xG 2.38-1.48 · 1X2 56%/19%/25%
+- Union Berlin vs RB Leipzig (Bundesliga) 2026-11-21T14:30:00Z · markets 3/3 evaluated · lineups unknown · xG 1.44-1.76 · 1X2 33%/22%/45%
+- Borussia Mönchengladbach vs Borussia Dortmund (Bundesliga) 2026-11-21T14:30:00Z · markets 3/3 evaluated · lineups unknown · xG 1.10-1.81 · 1X2 24%/23%/53%
+- SV Elversberg vs SC Freiburg (Bundesliga) 2026-11-21T14:30:00Z · markets 3/3 evaluated · lineups unknown · xG 1.92-1.28 · 1X2 51%/21%/28%
+- Schalke 04 vs VfB Stuttgart (Bundesliga) 2026-11-21T17:30:00Z · markets 3/3 evaluated · lineups unknown · xG 1.52-1.21 · 1X2 44%/25%/32%
+- FC Barcelona vs Villarreal (La Liga) 2026-11-22T12:00:00Z · markets 3/3 evaluated · lineups unknown · xG 3.22-1.11 · 1X2 76%/13%/11%
+- Racing Santander vs Real Sociedad (La Liga) 2026-11-22T12:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.94-1.97 · 1X2 39%/20%/41%
+- Osasuna vs Málaga (La Liga) 2026-11-22T12:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.65-0.83 · 1X2 55%/25%/20%
+- Getafe vs Atlético Madrid (La Liga) 2026-11-22T12:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.02-1.11 · 1X2 33%/30%/37%
+- Deportivo Alavés vs Deportivo La Coruña (La Liga) 2026-11-22T12:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.59-1.00 · 1X2 50%/25%/25%
+- Rayo Vallecano vs Valencia (La Liga) 2026-11-22T12:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.68-0.98 · 1X2 53%/24%/23%
+- Sevilla vs Real Betis (La Liga) 2026-11-22T12:00:00Z · markets 3/3 evaluated · lineups unknown · xG 1.35-1.15 · 1X2 41%/27%/32%
+- Real Madrid vs Celta Vigo (La Liga) 2026-11-22T12:00:00Z · markets 3/3 evaluated · lineups unknown · xG 2.05-0.86 · 1X2 63%/21%/16%
