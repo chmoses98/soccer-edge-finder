@@ -1,14 +1,11 @@
 {
-  "as_of": "2026-11-21T12:46:43.739564+00:00",
+  "as_of": "2026-11-21T20:35:48.132465+00:00",
   "events": 619,
   "events_skipped_unmapped": 354,
   "fixtures_mapped": 265,
   "health": {
-    "reasons": [
-      "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=81"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
     "afc.champions",
@@ -81,13 +78,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 126,
+    "captured": 136,
     "events": 150,
     "failures": [],
-    "published_post": 15,
-    "published_pre_kickoff": 4,
-    "unchanged": 24,
-    "unpublished": 131
+    "published_post": 66,
+    "published_pre_kickoff": 2,
+    "unchanged": 14,
+    "unpublished": 82
   },
   "map_proposals": {
     "bel.1": {
@@ -95,13 +92,6 @@
       "proposed": {},
       "unresolved": {
         "936": "Sint-Truidense"
-      }
-    },
-    "bra.2": {
-      "ambiguous": {},
-      "proposed": {},
-      "unresolved": {
-        "131556": "TBD Home"
       }
     },
     "den.1": {
@@ -176,7 +166,7 @@
         "11884": "Red Star FC 93",
         "11895": "Bourg-Peronnas",
         "12957": "Sabl\u00e9 FC",
-        "131556": "TBD Home",
+        "134064": "Olympique Charleville Prix AM",
         "134071": "Montlucon Football",
         "134086": "Tremblay",
         "134087": "Saint-Pierre Milizac",
@@ -295,7 +285,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 3,
+  "results_appended": 45,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -339,7 +329,7 @@
     "12957": "Sabl\u00e9 FC",
     "13083": "Hapoel Be'er",
     "131470": "Reus FC Reddis",
-    "131556": "TBD Home",
+    "134064": "Olympique Charleville Prix AM",
     "134071": "Montlucon Football",
     "134086": "Tremblay",
     "134087": "Saint-Pierre Milizac",
@@ -433,17 +423,13 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 12,
-    "events": 96,
-    "failures": [
-      "401933758: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Buenos%20Aires&count=5&language",
-      "401933755: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Buenos%20Aires&count=5&language",
-      "401933759: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rosario&count=5&language=en&for"
-    ],
+    "captured": 67,
+    "events": 68,
+    "failures": [],
     "forecast_miss": 0,
-    "geocode_miss": 0,
+    "geocode_miss": 1,
     "no_venue": 0,
-    "skipped": 81,
-    "stopped": "consecutive_failures"
+    "skipped": 0,
+    "stopped": null
   }
 }
