@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T144852Z-cc9ccd` · generated 2026-11-21T14:48:52.394794Z · trigger `kickoff_chain:T-30/T-15` · mode `reprice_only`
+slate `slate-20261121T145602Z-57f24e` · generated 2026-11-21T14:56:02.547743Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-21T14:45:02.779678Z (CURRENT at publish; CURRENT until 2026-11-21T15:05:02.779678Z, STALE after 2026-11-21T15:15:02.779678Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T14:52:14.114970Z (CURRENT at publish; CURRENT until 2026-11-21T15:12:14.114970Z, STALE after 2026-11-21T15:22:14.114970Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-21T13:59:07.191325Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.70s
 
@@ -68,7 +68,8 @@ model board generated 2026-11-21T13:59:07.191325Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Deportivo Alavés vs Deportivo La Coruña | Result: home | no | 0.1300 | 0.500 [0.274, 0.715] | +0.362 | +0.214 | 0.33 | - | * | RESEARCH_CANDIDATE |
+| Deportivo Alavés vs Deportivo La Coruña | Result: home | no | 0.0100 | 0.500 [0.274, 0.715] | +0.489 | +0.341 | 0.33 | - | * | RESEARCH_CANDIDATE |
+| Deportivo Alavés vs Deportivo La Coruña | Result: draw | yes | 0.0100 | 0.248 [0.163, 0.331] | +0.238 | +0.185 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: away | no | 0.2100 | 0.482 [0.294, 0.651] | +0.261 | +0.144 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Deportivo Alavés vs Deportivo La Coruña | Result: away | yes | 0.0100 | 0.251 [0.102, 0.436] | +0.241 | +0.127 | 0.12 | - |  | RESEARCH_CANDIDATE |
 | Getafe vs Atlético Madrid | Result: away | no | 0.3800 | 0.625 [0.467, 0.777] | +0.229 | +0.123 | 0.5 | - | * | RESEARCH_CANDIDATE |
@@ -81,7 +82,6 @@ model board generated 2026-11-21T13:59:07.191325Z · simulations this update: 0 
 | Newcastle United vs Arsenal | Result: home | yes | 0.1500 | 0.343 [0.183, 0.513] | +0.184 | +0.072 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | away team total over 0.5 | no | 0.3400 | 0.504 [0.381, 0.623] | +0.148 | +0.069 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 3.5 | no | 0.6500 | 0.803 [0.678, 0.907] | +0.137 | +0.068 | 0.72 | - |  | RESEARCH_CANDIDATE |
-| Deportivo Alavés vs Deportivo La Coruña | Result: draw | yes | 0.1200 | 0.248 [0.163, 0.331] | +0.121 | +0.068 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Hull City vs Brighton & Hove Albion | Result: home | yes | 0.1500 | 0.373 [0.174, 0.603] | +0.215 | +0.066 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: home | yes | 0.0700 | 0.224 [0.101, 0.355] | +0.150 | +0.064 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | away team total over 1.5 | no | 0.7100 | 0.841 [0.749, 0.918] | +0.117 | +0.064 | 0.77 | - |  | RESEARCH_CANDIDATE |
@@ -112,9 +112,9 @@ model board generated 2026-11-21T13:59:07.191325Z · simulations this update: 0 
 ## Counts
 
 ```
-action_MODEL_STALE: 759
-action_NO_EDGE: 576
-action_NO_QUOTE: 148
+action_MODEL_STALE: 758
+action_NO_EDGE: 575
+action_NO_QUOTE: 150
 action_RESEARCH_CANDIDATE: 45
 contract_sides: 1528
 fixtures: 51
