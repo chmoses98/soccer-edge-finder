@@ -54,7 +54,439 @@
   "delivered_total": 4215,
   "delivery_rate_total": 0.8886780518659076,
   "fixtures_tracked": 967,
-  "generated_at": "2026-11-21T03:08:47Z",
+  "generated_at": "2026-11-21T03:57:20Z",
+  "last_tick": {
+    "batches": 16,
+    "summary": [
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:ok:fixtures=1:sim=0:cache=0:why=T-30:invalidated",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261120T222713Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.velez:arg.belgrano",
+            30,
+            32.78
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "model_refresh:ok:fixtures=47:sim=1:board=42:why=entered_lookahead_unmodelled",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "ks-20261120T224213Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:2",
+          "model_refresh:ok:fixtures=1:sim=0:cache=0:why=T-15:invalidated",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261120T225057Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.velez:arg.belgrano",
+            15,
+            9.05
+          ],
+          [
+            "fx:mex.liga_mx:2026:mex.puebla:mex.san_luis",
+            120,
+            129.05
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:ok:fixtures=1:sim=0:cache=0:why=T-5:invalidated",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261120T225844Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:arg.primera:2026:arg.velez:arg.belgrano",
+            5,
+            1.25
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "model_refresh:ok:fixtures=1:sim=1:board=1:why=entered_lookahead_unmodelled",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "ks-20261120T231344Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "model_refresh:ok:fixtures=1:sim=1:board=1:why=entered_lookahead_unmodelled",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "ks-20261120T232845Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1862:sim=0"
+        ],
+        "batch_id": "ks-20261120T234345Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:ok:fixtures=1:sim=1:cache=0:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261120T235845Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:mex.liga_mx:2026:mex.puebla:mex.san_luis",
+            60,
+            61.24
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1862:sim=0"
+        ],
+        "batch_id": "ks-20261121T001345Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1862:sim=0"
+        ],
+        "batch_id": "kd-20261121T002845Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:mex.liga_mx:2026:mex.puebla:mex.san_luis",
+            30,
+            31.24
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1862:sim=0"
+        ],
+        "batch_id": "kd-20261121T004345Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:mex.liga_mx:2026:mex.puebla:mex.san_luis",
+            15,
+            16.24
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1862:sim=0"
+        ],
+        "batch_id": "kd-20261121T005205Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:mex.liga_mx:2026:mex.juarez:mex.atlas",
+            120,
+            127.91
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1704:sim=0"
+        ],
+        "batch_id": "kd-20261121T005923Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:mex.liga_mx:2026:mex.puebla:mex.san_luis",
+            5,
+            0.61
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1704:sim=0"
+        ],
+        "batch_id": "kd-20261121T010648Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:mex.liga_mx:2026:mex.tijuana:mex.atlante",
+            120,
+            123.19
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "model_refresh:ok:fixtures=2:sim=1:board=1:why=entered_lookahead_unmodelled",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "ks-20261121T012148Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "model_refresh:ok:fixtures=1:sim=0:board=0:why=entered_lookahead_unmodelled",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "ks-20261121T013652Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1792:sim=0"
+        ],
+        "batch_id": "ks-20261121T015152Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:ok:fixtures=1:sim=1:cache=0:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261121T015904Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:mex.liga_mx:2026:mex.juarez:mex.atlas",
+            60,
+            60.93
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:ok:fixtures=1:sim=1:cache=0:why=T-60:primary_refresh",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261121T020654Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:mex.liga_mx:2026:mex.tijuana:mex.atlante",
+            60,
+            63.1
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1792:sim=0"
+        ],
+        "batch_id": "ks-20261121T022154Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1792:sim=0"
+        ],
+        "batch_id": "kd-20261121T022858Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:mex.liga_mx:2026:mex.juarez:mex.atlas",
+            30,
+            31.03
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1792:sim=0"
+        ],
+        "batch_id": "kd-20261121T023707Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:mex.liga_mx:2026:mex.tijuana:mex.atlante",
+            30,
+            32.87
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1792:sim=0"
+        ],
+        "batch_id": "kd-20261121T024420Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:mex.liga_mx:2026:mex.juarez:mex.atlas",
+            15,
+            15.66
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1792:sim=0"
+        ],
+        "batch_id": "kd-20261121T025500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:mex.liga_mx:2026:mex.juarez:mex.atlas",
+            5,
+            5.0
+          ],
+          [
+            "fx:mex.liga_mx:2026:mex.tijuana:mex.atlante",
+            15,
+            15.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:ok",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:skipped:selective:no_input_change",
+          "slate_reprice:ok:sides=1634:sim=0"
+        ],
+        "batch_id": "kd-20261121T030500Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:mex.liga_mx:2026:mex.tijuana:mex.atlante",
+            5,
+            5.0
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1570:sim=0"
+        ],
+        "batch_id": "ks-20261121T032002Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1570:sim=0"
+        ],
+        "batch_id": "ks-20261121T033502Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=1570:sim=0"
+        ],
+        "batch_id": "ks-20261121T035005Z",
+        "due": [],
+        "slate_refresh": true
+      }
+    ]
+  },
   "missed_total": 528,
   "n_pending_fixtures": 91,
   "pending_fixtures": [
