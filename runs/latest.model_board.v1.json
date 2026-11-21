@@ -10667,13 +10667,13 @@
       "fixture_id": "fx:bra.serie_a:2026:bra.chapecoense:bra.cruzeiro",
       "fixtures_observed_at": "2026-11-21T21:57:14.964730Z",
       "home": "bra.chapecoense",
-      "input_fingerprint": "sha256:a6c48082bef4b685f24e4a37e9a064ae14f728a565f97e259d07873d4385c3fa",
+      "input_fingerprint": "sha256:ce33dd3f9b729d96d16395edc13e57698faea26246ff81a1fbb0aa5eb577d81a",
       "inputs": {
         "competition_id": "bra.serie_a",
         "draws_per_world": 100,
         "engine_version": "world_sim_v2",
         "kickoff_utc": "2026-11-22T00:00:00Z",
-        "lineup_key": "none",
+        "lineup_key": "sha256:ba3e57aa7413a12afb6be66578b3f6229191a94ea6e2982847d8149041a894cf",
         "model_family": "data_only.world_sim_v2",
         "model_version": "dc_laplace_v1",
         "n_worlds": 1000,
@@ -10684,11 +10684,41 @@
         "worlds_version": "worlds_v1"
       },
       "lineup": {
-        "checked_at": "2026-11-21T23:01:27.483146Z",
-        "key": "none",
-        "last_change_at": "2026-11-21T17:28:46.305264Z",
-        "state": "unconfirmed"
+        "checked_at": "2026-11-21T23:31:29.436780Z",
+        "key": "sha256:ba3e57aa7413a12afb6be66578b3f6229191a94ea6e2982847d8149041a894cf",
+        "last_change_at": "2026-11-21T23:31:29.436780Z",
+        "state": "confirmed"
       },
+      "lineup_history": [
+        {
+          "lineup_key": "none",
+          "lineup_state": "unconfirmed",
+          "model_generated_at": "2026-11-21T23:01:33.317359Z",
+          "scripts": {
+            "primary": "AWAY_CONTROL",
+            "secondary": "TIGHT_LOW_EVENT",
+            "shares": [
+              0.10527,
+              0.07376,
+              0.18649,
+              0.18445,
+              0.10383,
+              0.34619
+            ],
+            "taxonomy_version": "soccer_scripts_v1"
+          },
+          "sim_key": "sha256:047eb669271456273e5f12eaefac02c3cabcda1c84a64431652233ff71cfa982",
+          "summary": {
+            "mean_away_goals": 2.02989,
+            "mean_home_goals": 1.14498,
+            "p_away": 0.56798,
+            "p_btts": 0.57059,
+            "p_draw": 0.21768,
+            "p_home": 0.21434,
+            "p_over_2_5": 0.6017
+          }
+        }
+      ],
       "match_context": {
         "aggregate": {
           "source": "no aggregate (not a second leg)",
@@ -10914,8 +10944,8 @@
         "source": "production posterior (dc_laplace_v1) that priced this fixture",
         "version": "dc_matchup_v1"
       },
-      "model_fitted_at": "2026-11-21T23:01:32.399200Z",
-      "model_generated_at": "2026-11-21T23:01:33.317359Z",
+      "model_fitted_at": "2026-11-21T23:31:31.405406Z",
+      "model_generated_at": "2026-11-21T23:31:32.267898Z",
       "results_observed_at": "2026-11-21T21:57:08.457222Z",
       "scripts": {
         "contract_gaps": {},
@@ -11532,8 +11562,8 @@
           }
         }
       },
-      "sim_key": "sha256:047eb669271456273e5f12eaefac02c3cabcda1c84a64431652233ff71cfa982",
-      "source_run_id": "run-20261121T230133Z-616663",
+      "sim_key": "sha256:fb97755ac1eb0cbd6731f896d0ee11bf6bcdcc0df7d53b4a8cbfa068dfccc6b2",
+      "source_run_id": "run-20261121T233132Z-4e99af",
       "summary": {
         "mean_away_goals": 2.02989,
         "mean_home_goals": 1.14498,
@@ -125349,6 +125379,6 @@
       }
     }
   },
-  "generated_at": "2026-11-21T23:16:30.735302Z",
+  "generated_at": "2026-11-21T23:31:32.267898Z",
   "quantile_levels": "(i + 0.5) / 100, i = 0..99"
 }
