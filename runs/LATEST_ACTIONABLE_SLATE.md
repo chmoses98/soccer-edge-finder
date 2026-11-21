@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T193522Z-7cc93b` · generated 2026-11-21T19:35:22.001778Z · trigger `kickoff_chain:T-30/T-15` · mode `reprice_only`
+slate `slate-20261121T194149Z-93a7a1` · generated 2026-11-21T19:41:49.257926Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-21T19:31:35.610675Z (CURRENT at publish; CURRENT until 2026-11-21T19:51:35.610675Z, STALE after 2026-11-21T20:01:35.610675Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T19:38:05.828234Z (CURRENT at publish; CURRENT until 2026-11-21T19:58:05.828234Z, STALE after 2026-11-21T20:08:05.828234Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-21T19:29:01.501960Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.33s
+model board generated 2026-11-21T19:29:01.501960Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.32s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -50,14 +50,14 @@ model board generated 2026-11-21T19:29:01.501960Z · simulations this update: 0 
 | 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 44 | 0 |
 
-## Candidates on CURRENT prices (28; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (29; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Getafe vs Atlético Madrid | Result: away | no | 0.3700 | 0.625 [0.467, 0.777] | +0.239 | +0.133 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | btts | no | 0.3900 | 0.582 [0.462, 0.696] | +0.175 | +0.102 | 0.49 | - | * | RESEARCH_CANDIDATE |
+| Real Madrid vs Celta Vigo | Result: home | no | 0.1500 | 0.369 [0.205, 0.541] | +0.210 | +0.089 | 0.23 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 2.5 | no | 0.4200 | 0.612 [0.455, 0.758] | +0.175 | +0.079 | 0.49 | - | * | RESEARCH_CANDIDATE |
-| Real Madrid vs Celta Vigo | Result: home | no | 0.1600 | 0.369 [0.205, 0.541] | +0.200 | +0.079 | 0.23 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | btts | no | 0.3800 | 0.548 [0.427, 0.658] | +0.152 | +0.079 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Getafe vs Atlético Madrid | Result: home | yes | 0.1400 | 0.330 [0.186, 0.488] | +0.181 | +0.074 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | away team total over 0.5 | no | 0.3400 | 0.504 [0.381, 0.623] | +0.148 | +0.069 | 0.4 | - | * | RESEARCH_CANDIDATE |
@@ -79,6 +79,7 @@ model board generated 2026-11-21T19:29:01.501960Z · simulations this update: 0 
 | Strasbourg vs Brest | Result: draw | no | 0.7300 | 0.796 [0.732, 0.869] | +0.052 | +0.011 | 0.74 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | First-half result: away | no | 0.8400 | 0.898 [0.839, 0.951] | +0.048 | +0.011 | 0.85 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 0.5 | no | 0.0600 | 0.118 [0.059, 0.187] | +0.054 | +0.010 | 0.06 | - |  | RESEARCH_CANDIDATE |
+| FC Augsburg vs Mainz 05 | Result: away | no | 0.6100 | 0.740 [0.553, 0.894] | +0.113 | +0.007 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | Result: home | yes | 0.6700 | 0.760 [0.644, 0.872] | +0.075 | +0.005 | 0.67 | - |  | RESEARCH_CANDIDATE |
 | Bologna vs Udinese | Result: away | yes | 0.1900 | 0.309 [0.155, 0.480] | +0.108 | +0.004 | 0.19 | - | * | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Vasco da Gama | Result: away | no | 0.6500 | 0.743 [0.605, 0.861] | +0.077 | +0.002 | 0.65 | - | * | RESEARCH_CANDIDATE |
@@ -87,9 +88,9 @@ model board generated 2026-11-21T19:29:01.501960Z · simulations this update: 0 
 
 ```
 action_MODEL_STALE: 640
-action_NO_EDGE: 540
+action_NO_EDGE: 539
 action_NO_QUOTE: 156
-action_RESEARCH_CANDIDATE: 28
+action_RESEARCH_CANDIDATE: 29
 contract_sides: 1364
 fixtures: 37
 fixtures_model_invalidated: 0
