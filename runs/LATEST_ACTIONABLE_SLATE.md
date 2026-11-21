@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T160609Z-5ff639` · generated 2026-11-21T16:06:09.022019Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261121T161221Z-e877e4` · generated 2026-11-21T16:12:21.945917Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-21T16:02:23.099958Z (CURRENT at publish; CURRENT until 2026-11-21T16:22:23.099958Z, STALE after 2026-11-21T16:32:23.099958Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T16:08:37.240579Z (CURRENT at publish; CURRENT until 2026-11-21T16:28:37.240579Z, STALE after 2026-11-21T16:38:37.240579Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-21T15:59:52.274740Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.33s
+model board generated 2026-11-21T15:59:52.274740Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.32s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -59,8 +59,8 @@ model board generated 2026-11-21T15:59:52.274740Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Rayo Vallecano vs Valencia | Result: home | yes | 0.1900 | 0.526 [0.348, 0.702] | +0.326 | +0.212 | 0.39 | - | * | RESEARCH_CANDIDATE |
-| Rayo Vallecano vs Valencia | Result: away | no | 0.4900 | 0.770 [0.631, 0.887] | +0.262 | +0.182 | 0.67 | - |  | RESEARCH_CANDIDATE |
+| Rayo Vallecano vs Valencia | Result: home | yes | 0.1800 | 0.526 [0.348, 0.702] | +0.336 | +0.222 | 0.39 | - | * | RESEARCH_CANDIDATE |
+| Rayo Vallecano vs Valencia | Result: away | no | 0.4700 | 0.770 [0.631, 0.887] | +0.282 | +0.202 | 0.67 | - |  | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: away | no | 0.2100 | 0.482 [0.294, 0.651] | +0.261 | +0.144 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Getafe vs Atlético Madrid | Result: away | no | 0.3800 | 0.625 [0.467, 0.777] | +0.229 | +0.123 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | btts | no | 0.3900 | 0.582 [0.462, 0.696] | +0.175 | +0.102 | 0.49 | - | * | RESEARCH_CANDIDATE |
@@ -69,11 +69,11 @@ model board generated 2026-11-21T15:59:52.274740Z · simulations this update: 0 
 | Nashville SC vs FC Cincinnati | btts | no | 0.3800 | 0.548 [0.427, 0.658] | +0.152 | +0.079 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | away team total over 0.5 | no | 0.3400 | 0.504 [0.381, 0.623] | +0.148 | +0.069 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 3.5 | no | 0.6500 | 0.803 [0.678, 0.907] | +0.137 | +0.068 | 0.72 | - |  | RESEARCH_CANDIDATE |
+| Nice vs Paris Saint-Germain | Result: away | no | 0.3200 | 0.527 [0.337, 0.710] | +0.192 | +0.068 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: home | yes | 0.0700 | 0.224 [0.101, 0.355] | +0.150 | +0.064 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | away team total over 1.5 | no | 0.7100 | 0.841 [0.749, 0.918] | +0.117 | +0.064 | 0.77 | - |  | RESEARCH_CANDIDATE |
 | Getafe vs Atlético Madrid | Result: home | yes | 0.1500 | 0.330 [0.186, 0.488] | +0.171 | +0.063 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: draw | yes | 0.1400 | 0.258 [0.181, 0.330] | +0.109 | +0.062 | 0.19 | - |  | RESEARCH_CANDIDATE |
-| Nice vs Paris Saint-Germain | Result: away | no | 0.3300 | 0.527 [0.337, 0.710] | +0.182 | +0.057 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 1.5 | no | 0.2000 | 0.354 [0.220, 0.493] | +0.143 | +0.055 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | Schalke 04 vs VfB Stuttgart | Result: away | no | 0.4800 | 0.683 [0.426, 0.887] | +0.185 | +0.052 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 4.5 | no | 0.8200 | 0.913 [0.838, 0.970] | +0.082 | +0.046 | 0.86 | - |  | RESEARCH_CANDIDATE |
@@ -81,10 +81,10 @@ model board generated 2026-11-21T15:59:52.274740Z · simulations this update: 0 
 | Real Madrid vs Celta Vigo | Result: away | yes | 0.0500 | 0.162 [0.068, 0.277] | +0.109 | +0.037 | 0.08 | - |  | RESEARCH_CANDIDATE |
 | Atalanta vs Inter Milan | Result: away | no | 0.3800 | 0.550 [0.356, 0.736] | +0.154 | +0.032 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | Result: away | no | 0.8500 | 0.913 [0.852, 0.963] | +0.054 | +0.026 | 0.87 | - | * | RESEARCH_CANDIDATE |
+| Nice vs Paris Saint-Germain | Result: draw | yes | 0.1800 | 0.258 [0.192, 0.327] | +0.068 | +0.025 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | away team total over 2.5 | no | 0.9200 | 0.962 [0.926, 0.988] | +0.036 | +0.019 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 5.5 | no | 0.9300 | 0.966 [0.930, 0.992] | +0.031 | +0.016 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Atalanta vs Inter Milan | Result: home | yes | 0.1800 | 0.319 [0.161, 0.504] | +0.128 | +0.015 | 0.19 | - |  | RESEARCH_CANDIDATE |
-| Nice vs Paris Saint-Germain | Result: draw | yes | 0.1900 | 0.258 [0.192, 0.327] | +0.058 | +0.014 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | away wins by more than 1.5 | no | 0.9500 | 0.976 [0.954, 0.993] | +0.023 | +0.014 | 0.96 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Exact score 1-0 (home-away) | yes | 0.0900 | 0.142 [0.093, 0.194] | +0.046 | +0.014 | 0.1 | - | * | RESEARCH_CANDIDATE |
 | Sassuolo vs Genoa | Result: home | yes | 0.3600 | 0.517 [0.329, 0.707] | +0.141 | +0.013 | 0.37 | - | * | RESEARCH_CANDIDATE |
@@ -101,9 +101,9 @@ model board generated 2026-11-21T15:59:52.274740Z · simulations this update: 0 
 ## Counts
 
 ```
-action_MODEL_STALE: 759
-action_NO_EDGE: 535
-action_NO_QUOTE: 142
+action_MODEL_STALE: 757
+action_NO_EDGE: 533
+action_NO_QUOTE: 146
 action_RESEARCH_CANDIDATE: 38
 contract_sides: 1474
 fixtures: 42
