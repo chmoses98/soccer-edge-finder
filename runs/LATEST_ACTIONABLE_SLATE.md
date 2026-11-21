@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T063715Z-728a8c` · generated 2026-11-21T06:37:15.481928Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261121T065215Z-d05163` · generated 2026-11-21T06:52:15.614560Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-21T06:33:32.483057Z (CURRENT at publish; CURRENT until 2026-11-21T06:53:32.483057Z, STALE after 2026-11-21T07:03:32.483057Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T06:48:32.520050Z (CURRENT at publish; CURRENT until 2026-11-21T07:08:32.520050Z, STALE after 2026-11-21T07:18:32.520050Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-21T04:06:47.226676Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.18s
+model board generated 2026-11-21T04:06:47.226676Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.04s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -71,7 +71,7 @@ model board generated 2026-11-21T04:06:47.226676Z · simulations this update: 0 
 | 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 44 | 0 |
 
-## Candidates on CURRENT prices (111; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (112; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -111,17 +111,17 @@ model board generated 2026-11-21T04:06:47.226676Z · simulations this update: 0 
 | SV Elversberg vs SC Freiburg | Result: away | no | 0.5200 | 0.723 [0.484, 0.917] | +0.186 | +0.044 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Union Berlin vs RB Leipzig | Result: away | no | 0.3600 | 0.548 [0.317, 0.752] | +0.172 | +0.042 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | away team total over 0.5 | no | 0.1900 | 0.319 [0.203, 0.434] | +0.118 | +0.042 | 0.23 | - |  | RESEARCH_CANDIDATE |
-| New England Revolution vs Philadelphia Union | away wins by more than 1.5 | no | 0.7800 | 0.870 [0.786, 0.938] | +0.078 | +0.038 | 0.82 | - | * | RESEARCH_CANDIDATE |
-| Union Berlin vs RB Leipzig | Result: home | yes | 0.1500 | 0.325 [0.136, 0.529] | +0.166 | +0.038 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Real Madrid vs Celta Vigo | Result: draw | yes | 0.1100 | 0.207 [0.127, 0.280] | +0.090 | +0.038 | 0.14 | - |  | RESEARCH_CANDIDATE |
 | Real Madrid vs Celta Vigo | Result: away | yes | 0.0500 | 0.162 [0.068, 0.277] | +0.109 | +0.037 | 0.08 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Necaxa | Total goals over 4.5 | no | 0.8300 | 0.913 [0.838, 0.970] | +0.073 | +0.036 | 0.86 | - |  | RESEARCH_CANDIDATE |
+| Palmeiras vs Flamengo | away wins by more than 2.5 | no | 0.9100 | 0.966 [0.931, 0.990] | +0.051 | +0.036 | 0.94 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1308
-action_NO_QUOTE: 151
-action_RESEARCH_CANDIDATE: 111
+action_NO_EDGE: 1309
+action_NO_QUOTE: 149
+action_RESEARCH_CANDIDATE: 112
 contract_sides: 1570
 fixtures: 58
 fixtures_model_invalidated: 0
