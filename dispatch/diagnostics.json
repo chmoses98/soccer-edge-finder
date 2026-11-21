@@ -1,13 +1,13 @@
 {
   "by_horizon": {
     "120": {
-      "achieved_minutes_median": 122.49,
-      "achieved_minutes_p10": 117.87,
+      "achieved_minutes_median": 122.48,
+      "achieved_minutes_p10": 117.78,
       "achieved_minutes_p90": 126.4,
-      "delivered": 938,
-      "delivery_rate": 0.936127744510978,
+      "delivered": 941,
+      "delivery_rate": 0.936318407960199,
       "lateness_minutes_max": 64.28,
-      "lateness_minutes_median": -2.49,
+      "lateness_minutes_median": -2.48,
       "missed": 64
     },
     "15": {
@@ -15,10 +15,10 @@
       "achieved_minutes_p10": 9.95,
       "achieved_minutes_p90": 13.35,
       "delivered": 850,
-      "delivery_rate": 0.8753861997940268,
+      "delivery_rate": 0.8744855967078189,
       "lateness_minutes_max": 14.64,
       "lateness_minutes_median": 3.11,
-      "missed": 121
+      "missed": 122
     },
     "30": {
       "achieved_minutes_median": 26.66,
@@ -35,134 +35,29 @@
       "achieved_minutes_p10": 0.04,
       "achieved_minutes_p90": 2.49,
       "delivered": 833,
-      "delivery_rate": 0.8722513089005236,
+      "delivery_rate": 0.8587628865979381,
       "lateness_minutes_max": 9.28,
       "lateness_minutes_median": 3.01,
-      "missed": 122
+      "missed": 137
     },
     "60": {
       "achieved_minutes_median": 60.91,
-      "achieved_minutes_p10": 55.72,
+      "achieved_minutes_p10": 55.52,
       "achieved_minutes_p90": 62.22,
-      "delivered": 882,
-      "delivery_rate": 0.8954314720812183,
+      "delivered": 884,
+      "delivery_rate": 0.8956433637284701,
       "lateness_minutes_max": 33.2,
       "lateness_minutes_median": -0.91,
       "missed": 103
     }
   },
-  "delivered_total": 4358,
-  "delivery_rate_total": 0.8919361440851412,
-  "fixtures_tracked": 1002,
-  "generated_at": "2026-11-21T14:56:03Z",
-  "missed_total": 528,
-  "n_pending_fixtures": 75,
+  "delivered_total": 4363,
+  "delivery_rate_total": 0.8891379661707765,
+  "fixtures_tracked": 1005,
+  "generated_at": "2026-11-21T15:46:43Z",
+  "missed_total": 544,
+  "n_pending_fixtures": 60,
   "pending_fixtures": [
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.tottenham:eng.ipswich:matchday_11",
-      "kickoff_utc": "2026-11-21T15:00:00Z",
-      "markets_discovered": 84,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.coventry:eng.crystal_palace:matchday_11",
-      "kickoff_utc": "2026-11-21T15:00:00Z",
-      "markets_discovered": 82,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.chelsea:eng.leeds:matchday_11",
-      "kickoff_utc": "2026-11-21T15:00:00Z",
-      "markets_discovered": 83,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.bournemouth:eng.nottm_forest:matchday_11",
-      "kickoff_utc": "2026-11-21T15:00:00Z",
-      "markets_discovered": 82,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.aston_villa:eng.sunderland:matchday_11",
-      "kickoff_utc": "2026-11-21T15:00:00Z",
-      "markets_discovered": 83,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.man_city:eng.fulham:matchday_11",
-      "kickoff_utc": "2026-11-21T15:00:00Z",
-      "markets_discovered": 83,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.hull:eng.brighton:matchday_11",
-      "kickoff_utc": "2026-11-21T15:00:00Z",
-      "markets_discovered": 14,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.liverpool:eng.man_united:matchday_11",
-      "kickoff_utc": "2026-11-21T15:00:00Z",
-      "markets_discovered": 14,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.newcastle:eng.arsenal:matchday_11",
-      "kickoff_utc": "2026-11-21T15:00:00Z",
-      "markets_discovered": 14,
-      "source": "run_output"
-    },
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.bournemouth:eng.nottm_forest",
-      "kickoff_utc": "2026-11-21T15:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.aston_villa:eng.sunderland",
-      "kickoff_utc": "2026-11-21T15:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.chelsea:eng.leeds",
-      "kickoff_utc": "2026-11-21T15:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.coventry:eng.crystal_palace",
-      "kickoff_utc": "2026-11-21T15:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "eng.premier_league",
-      "fixture_id": "fx:eng.premier_league:2026-27:eng.tottenham:eng.ipswich",
-      "kickoff_utc": "2026-11-21T15:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
-    {
-      "competition_id": "esp.la_liga",
-      "fixture_id": "fx:esp.la_liga:2026-27:esp.rayo_vallecano:esp.valencia",
-      "kickoff_utc": "2026-11-21T15:15:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
-    },
     {
       "competition_id": "fra.ligue_1",
       "fixture_id": "fx:fra.ligue_1:2026-27:fra.nice:fra.psg:matchday_11",

@@ -1,40 +1,51 @@
 {
-  "as_of": "2026-11-21T14:56:01.217407+00:00",
-  "events": 4,
+  "as_of": "2026-11-21T15:45:27.892257+00:00",
+  "events": 22,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 4,
+  "fixtures_mapped": 22,
   "health": {
-    "reasons": [],
-    "state": "HEALTHY"
+    "reasons": [
+      "weather_failures:4",
+      "weather_stopped:consecutive_failures:skipped=8"
+    ],
+    "state": "DEGRADED"
   },
   "leagues": [
-    "ita.1"
+    "eng.1",
+    "esp.1",
+    "fra.1",
+    "ger.1"
   ],
   "lineups": {
-    "captured": 2,
-    "events": 4,
+    "captured": 13,
+    "events": 22,
     "failures": [],
-    "published_post": 2,
-    "published_pre_kickoff": 0,
-    "unchanged": 2,
-    "unpublished": 2
+    "published_post": 13,
+    "published_pre_kickoff": 1,
+    "unchanged": 9,
+    "unpublished": 8
   },
   "map_proposals": {},
   "map_version": "4",
-  "results_appended": 0,
+  "results_appended": 2,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
-  "scoreboard_queries": 1,
+  "scoreboard_queries": 4,
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 4,
-    "events": 4,
-    "failures": [],
+    "captured": 9,
+    "events": 21,
+    "failures": [
+      "401882797: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=37.3828&longitude=-5.9732&hourly=te",
+      "401876398: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Nice&count=5&language=en&format",
+      "401876399: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Monaco&count=5&language=en&form",
+      "401876403: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Lens&count=5&language=en&format"
+    ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 0,
-    "stopped": null
+    "skipped": 8,
+    "stopped": "consecutive_failures"
   }
 }
