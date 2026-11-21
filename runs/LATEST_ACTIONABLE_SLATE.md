@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T020311Z-405d65` · generated 2026-11-21T02:03:11.032717Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261121T021055Z-dab775` · generated 2026-11-21T02:10:55.016776Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-21T01:59:04.450759Z (CURRENT at publish; CURRENT until 2026-11-21T02:19:04.450759Z, STALE after 2026-11-21T02:29:04.450759Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T02:06:56.742563Z (CURRENT at publish; CURRENT until 2026-11-21T02:26:56.742563Z, STALE after 2026-11-21T02:36:56.742563Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-21T02:02:57.597193Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 1.01s
+model board generated 2026-11-21T02:10:49.260662Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 1.20s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -13,7 +13,7 @@ model board generated 2026-11-21T02:02:57.597193Z · simulations this update: 1 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
 | 2026-11-21T03:00:00Z | FC Juárez vs Atlas (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 79 | 1 |
-| 2026-11-21T03:10:00Z | Tijuana vs Atlante (mex.liga_mx) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 32 | 0 |
+| 2026-11-21T03:10:00Z | Tijuana vs Atlante (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 32 | 0 |
 | 2026-11-21T14:00:00Z | Como vs Cagliari (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T14:00:00Z | Lazio vs Lecce (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T14:30:00Z | SV Elversberg vs SC Freiburg (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -103,14 +103,14 @@ model board generated 2026-11-21T02:02:57.597193Z · simulations this update: 1 
 | Santos Laguna vs León | away team total over 2.5 | no | 0.8100 | 0.917 [0.842, 0.971] | +0.096 | +0.062 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Newcastle United vs Arsenal | Result: home | yes | 0.1600 | 0.342 [0.183, 0.511] | +0.173 | +0.061 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Nice vs Paris Saint-Germain | Result: away | no | 0.3300 | 0.527 [0.337, 0.710] | +0.181 | +0.056 | 0.38 | - | * | RESEARCH_CANDIDATE |
-| Nashville SC vs FC Cincinnati | away team total over 1.5 | no | 0.7200 | 0.841 [0.749, 0.918] | +0.107 | +0.054 | 0.77 | - | * | RESEARCH_CANDIDATE |
 | Union Berlin vs RB Leipzig | Result: away | no | 0.3500 | 0.548 [0.317, 0.752] | +0.182 | +0.053 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | away team total over 0.5 | no | 0.1800 | 0.319 [0.203, 0.434] | +0.129 | +0.052 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Schalke 04 vs VfB Stuttgart | Result: away | no | 0.4800 | 0.683 [0.426, 0.887] | +0.185 | +0.052 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: draw | yes | 0.1500 | 0.258 [0.181, 0.329] | +0.099 | +0.051 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Philadelphia Union | away team total over 2.5 | no | 0.7700 | 0.876 [0.788, 0.943] | +0.093 | +0.049 | 0.82 | - |  | RESEARCH_CANDIDATE |
-| Nashville SC vs FC Cincinnati | away team total over 0.5 | no | 0.3600 | 0.504 [0.381, 0.623] | +0.128 | +0.048 | 0.4 | - |  | RESEARCH_CANDIDATE |
+| Nashville SC vs FC Cincinnati | away team total over 0.5 | no | 0.3600 | 0.504 [0.381, 0.623] | +0.128 | +0.048 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Flamengo | away wins by more than 2.5 | no | 0.9000 | 0.966 [0.931, 0.990] | +0.060 | +0.045 | 0.94 | - |  | RESEARCH_CANDIDATE |
+| Nashville SC vs FC Cincinnati | away team total over 1.5 | no | 0.7300 | 0.841 [0.749, 0.918] | +0.097 | +0.044 | 0.77 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 1.5 | no | 0.2100 | 0.354 [0.220, 0.493] | +0.132 | +0.044 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | SV Elversberg vs SC Freiburg | Result: away | no | 0.5200 | 0.723 [0.485, 0.917] | +0.186 | +0.043 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | Total goals over 3.5 | no | 0.6000 | 0.745 [0.600, 0.876] | +0.128 | +0.043 | 0.64 | - | * | RESEARCH_CANDIDATE |
@@ -121,8 +121,8 @@ model board generated 2026-11-21T02:02:57.597193Z · simulations this update: 1 
 ## Counts
 
 ```
-action_NO_EDGE: 1489
-action_NO_QUOTE: 176
+action_NO_EDGE: 1492
+action_NO_QUOTE: 173
 action_RESEARCH_CANDIDATE: 127
 contract_sides: 1792
 fixtures: 60
