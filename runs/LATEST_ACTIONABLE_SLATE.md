@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T223208Z-d9b150` · generated 2026-11-21T22:32:08.907569Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
+slate `slate-20261121T223840Z-17f8c2` · generated 2026-11-21T22:38:40.182118Z · trigger `kickoff_chain:T-15` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-21T22:28:12.149507Z (CURRENT at publish; CURRENT until 2026-11-21T22:48:12.149507Z, STALE after 2026-11-21T22:58:12.149507Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T22:34:43.437801Z (CURRENT at publish; CURRENT until 2026-11-21T22:54:43.437801Z, STALE after 2026-11-21T23:04:43.437801Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-21T22:31:58.863936Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.31s
+model board generated 2026-11-21T22:38:30.173118Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.30s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,9 +12,9 @@ model board generated 2026-11-21T22:31:58.863936Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-21T22:50:00Z | Pachuca vs Toluca (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-11-21T22:50:00Z | Pachuca vs Toluca (mex.liga_mx) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-21T23:00:00Z | Santos Laguna vs León (mex.liga_mx) | VALID (CURRENT) | confirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-11-21T23:00:00Z | Inter Miami vs Columbus Crew (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-11-21T23:00:00Z | Inter Miami vs Columbus Crew (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-22T00:00:00Z | Chapecoense vs Cruzeiro (bra.serie_a) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T01:00:00Z | Pumas UNAM vs Monterrey (mex.liga_mx) | VALID (STALE) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-22T03:00:00Z | Tigres UANL vs Club América (mex.liga_mx) | VALID (STALE) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
@@ -34,19 +34,19 @@ model board generated 2026-11-21T22:31:58.863936Z · simulations this update: 1 
 | 2026-11-22T16:15:00Z | Lorient vs Rennes (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T16:30:00Z | Werder Bremen vs Hamburger SV (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T17:00:00Z | Bologna vs Udinese (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-22T19:00:00Z | Athletico Paranaense vs Remo (bra.serie_a) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-22T19:00:00Z | Athletico Paranaense vs Remo (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T19:45:00Z | Marseille vs Le Mans (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T19:45:00Z | Atalanta vs Inter Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-22T21:00:00Z | Nashville SC vs FC Cincinnati (usa.mls) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 47 | 0 |
-| 2026-11-22T21:30:00Z | Fluminense vs Mirassol (bra.serie_a) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-11-22T22:30:00Z | Red Bull Bragantino vs Vasco da Gama (bra.serie_a) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-22T21:00:00Z | Nashville SC vs FC Cincinnati (usa.mls) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 47 | 0 |
+| 2026-11-22T21:30:00Z | Fluminense vs Mirassol (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-22T22:30:00Z | Red Bull Bragantino vs Vasco da Gama (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T23:07:00Z | Guadalajara vs Cruz Azul (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 44 | 0 |
 | 2026-11-23T17:30:00Z | Monza vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-23T19:45:00Z | Juventus vs Venezia (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (57; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (58; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -81,23 +81,23 @@ model board generated 2026-11-21T22:31:58.863936Z · simulations this update: 1 
 | Nashville SC vs FC Cincinnati | First-half result: away | no | 0.8400 | 0.898 [0.839, 0.951] | +0.048 | +0.011 | 0.85 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 0.5 | no | 0.0600 | 0.118 [0.059, 0.187] | +0.054 | +0.010 | 0.06 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | Total goals over 4.5 | no | 0.7600 | 0.843 [0.728, 0.935] | +0.070 | +0.009 | 0.76 | - | * | RESEARCH_CANDIDATE |
+| Santos Laguna vs León | First half: both teams to score | no | 0.7600 | 0.831 [0.748, 0.903] | +0.058 | +0.007 | 0.76 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | Total goals over 3.5 | no | 0.5800 | 0.696 [0.540, 0.833] | +0.099 | +0.007 | 0.58 | - |  | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Vasco da Gama | Result: away | no | 0.6450 | 0.743 [0.605, 0.861] | +0.082 | +0.007 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | FC Augsburg vs Mainz 05 | Result: away | no | 0.6100 | 0.740 [0.553, 0.894] | +0.113 | +0.007 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | First half: both teams to score | no | 0.7300 | 0.802 [0.708, 0.882] | +0.058 | +0.006 | 0.73 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | First-half total goals over 0.5 | no | 0.2200 | 0.305 [0.198, 0.412] | +0.073 | +0.006 | 0.22 | - | * | RESEARCH_CANDIDATE |
+| Red Bull Bragantino vs Vasco da Gama | away wins by more than 1.5 | no | 0.8400 | 0.894 [0.811, 0.955] | +0.045 | +0.006 | 0.84 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | First half: away wins by more than 1.5 | no | 0.9300 | 0.959 [0.919, 0.991] | +0.024 | +0.005 | 0.93 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | Result: home | yes | 0.6700 | 0.760 [0.644, 0.872] | +0.075 | +0.005 | 0.67 | - |  | RESEARCH_CANDIDATE |
-| Santos Laguna vs León | Total goals over 1.5 | no | 0.1900 | 0.294 [0.169, 0.434] | +0.093 | +0.005 | 0.19 | - | * | RESEARCH_CANDIDATE |
-| Pachuca vs Toluca | Total goals over 2.5 | no | 0.3600 | 0.485 [0.323, 0.642] | +0.109 | +0.005 | 0.36 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_MODEL_STALE: 299
-action_NO_EDGE: 750
-action_NO_QUOTE: 154
-action_RESEARCH_CANDIDATE: 57
+action_MODEL_STALE: 298
+action_NO_EDGE: 748
+action_NO_QUOTE: 156
+action_RESEARCH_CANDIDATE: 58
 contract_sides: 1260
 fixtures: 33
 fixtures_model_invalidated: 0
