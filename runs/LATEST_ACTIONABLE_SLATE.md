@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T102729Z-dbfeb6` · generated 2026-11-21T10:27:29.365845Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261121T104140Z-3fa43d` · generated 2026-11-21T10:41:40.341174Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-21T10:22:55.686605Z (CURRENT at publish; CURRENT until 2026-11-21T10:42:55.686605Z, STALE after 2026-11-21T10:52:55.686605Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T10:37:56.880516Z (CURRENT at publish; CURRENT until 2026-11-21T10:57:56.880516Z, STALE after 2026-11-21T11:07:56.880516Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-21T09:41:18.740117Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.87s
 
@@ -71,7 +71,7 @@ model board generated 2026-11-21T09:41:18.740117Z · simulations this update: 0 
 | 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 44 | 0 |
 
-## Candidates on CURRENT prices (93; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (91; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -96,6 +96,7 @@ model board generated 2026-11-21T09:41:18.740117Z · simulations this update: 0 
 | Parma vs AS Roma | Result: draw | yes | 0.1400 | 0.258 [0.181, 0.330] | +0.109 | +0.062 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Newcastle United vs Arsenal | Result: home | yes | 0.1600 | 0.343 [0.183, 0.513] | +0.173 | +0.061 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | away team total over 2.5 | no | 0.7600 | 0.876 [0.785, 0.947] | +0.104 | +0.057 | 0.81 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Necaxa | Total goals over 4.5 | no | 0.8100 | 0.913 [0.838, 0.970] | +0.092 | +0.056 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | Schalke 04 vs VfB Stuttgart | Result: away | no | 0.4800 | 0.683 [0.426, 0.887] | +0.185 | +0.052 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | away team total over 2.5 | no | 0.8200 | 0.917 [0.842, 0.971] | +0.087 | +0.052 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | btts | no | 0.3800 | 0.530 [0.409, 0.654] | +0.133 | +0.048 | 0.42 | - | * | RESEARCH_CANDIDATE |
@@ -105,7 +106,6 @@ model board generated 2026-11-21T09:41:18.740117Z · simulations this update: 0 
 | Pachuca vs Toluca | away team total over 0.5 | no | 0.1900 | 0.319 [0.203, 0.434] | +0.118 | +0.042 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Real Madrid vs Celta Vigo | Result: draw | yes | 0.1100 | 0.207 [0.127, 0.280] | +0.090 | +0.038 | 0.14 | - |  | RESEARCH_CANDIDATE |
 | Real Madrid vs Celta Vigo | Result: away | yes | 0.0500 | 0.162 [0.068, 0.277] | +0.109 | +0.037 | 0.08 | - |  | RESEARCH_CANDIDATE |
-| Querétaro vs Necaxa | Total goals over 4.5 | no | 0.8300 | 0.913 [0.838, 0.970] | +0.073 | +0.036 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | SV Elversberg vs SC Freiburg | Result: home | yes | 0.2700 | 0.508 [0.242, 0.792] | +0.225 | +0.035 | 0.3 | - | * | RESEARCH_CANDIDATE |
 | SV Elversberg vs SC Freiburg | Result: away | no | 0.5300 | 0.723 [0.484, 0.917] | +0.176 | +0.034 | 0.56 | - |  | RESEARCH_CANDIDATE |
 | Como vs Cagliari | Result: draw | yes | 0.1600 | 0.253 [0.168, 0.331] | +0.084 | +0.033 | 0.19 | - |  | RESEARCH_CANDIDATE |
@@ -121,8 +121,8 @@ model board generated 2026-11-21T09:41:18.740117Z · simulations this update: 0 
 ```
 action_MODEL_STALE: 183
 action_NO_EDGE: 1143
-action_NO_QUOTE: 151
-action_RESEARCH_CANDIDATE: 93
+action_NO_QUOTE: 153
+action_RESEARCH_CANDIDATE: 91
 contract_sides: 1570
 fixtures: 58
 fixtures_model_invalidated: 0
