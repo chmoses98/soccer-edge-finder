@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T111142Z-3f8a06` · generated 2026-11-21T11:11:42.619647Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261121T112642Z-7d1f95` · generated 2026-11-21T11:26:42.745302Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-21T11:07:59.378325Z (CURRENT at publish; CURRENT until 2026-11-21T11:27:59.378325Z, STALE after 2026-11-21T11:37:59.378325Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T11:22:59.414613Z (CURRENT at publish; CURRENT until 2026-11-21T11:42:59.414613Z, STALE after 2026-11-21T11:52:59.414613Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-21T09:41:18.740117Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.91s
 
@@ -67,7 +67,7 @@ model board generated 2026-11-21T09:41:18.740117Z · simulations this update: 0 
 | 2026-11-22T21:00:00Z | Nashville SC vs FC Cincinnati (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 47 | 0 |
 | 2026-11-22T21:30:00Z | Fluminense vs Mirassol (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T22:30:00Z | Red Bull Bragantino vs Vasco da Gama (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-11-22T23:07:00Z | Guadalajara vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-22T23:07:00Z | Guadalajara vs Cruz Azul (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 44 | 0 |
 
@@ -120,8 +120,8 @@ model board generated 2026-11-21T09:41:18.740117Z · simulations this update: 0 
 
 ```
 action_MODEL_STALE: 183
-action_NO_EDGE: 1154
-action_NO_QUOTE: 142
+action_NO_EDGE: 1152
+action_NO_QUOTE: 144
 action_RESEARCH_CANDIDATE: 91
 contract_sides: 1570
 fixtures: 58
