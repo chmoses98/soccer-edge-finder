@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T121848Z-a4de0d` · generated 2026-11-21T12:18:48.913604Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261121T122608Z-04977c` · generated 2026-11-21T12:26:08.206090Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-21T12:15:02.756763Z (CURRENT at publish; CURRENT until 2026-11-21T12:35:02.756763Z, STALE after 2026-11-21T12:45:02.756763Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T12:22:17.469409Z (CURRENT at publish; CURRENT until 2026-11-21T12:42:17.469409Z, STALE after 2026-11-21T12:52:17.469409Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-21T09:41:18.740117Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.02s
+model board generated 2026-11-21T09:41:18.740117Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.79s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -95,11 +95,11 @@ model board generated 2026-11-21T09:41:18.740117Z · simulations this update: 0 
 | Querétaro vs Necaxa | Total goals over 4.5 | no | 0.8100 | 0.913 [0.838, 0.970] | +0.092 | +0.056 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | Schalke 04 vs VfB Stuttgart | Result: away | no | 0.4800 | 0.683 [0.426, 0.887] | +0.185 | +0.052 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Nice vs Paris Saint-Germain | Result: away | no | 0.3400 | 0.527 [0.337, 0.710] | +0.171 | +0.047 | 0.38 | - | * | RESEARCH_CANDIDATE |
+| SV Elversberg vs SC Freiburg | Result: home | yes | 0.2600 | 0.508 [0.242, 0.792] | +0.235 | +0.046 | 0.3 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 1.5 | no | 0.2100 | 0.354 [0.220, 0.493] | +0.132 | +0.044 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | Union Berlin vs RB Leipzig | Result: away | no | 0.3600 | 0.548 [0.317, 0.752] | +0.172 | +0.042 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Real Madrid vs Celta Vigo | Result: draw | yes | 0.1100 | 0.207 [0.127, 0.280] | +0.090 | +0.038 | 0.14 | - |  | RESEARCH_CANDIDATE |
 | Real Madrid vs Celta Vigo | Result: away | yes | 0.0500 | 0.162 [0.068, 0.277] | +0.109 | +0.037 | 0.08 | - |  | RESEARCH_CANDIDATE |
-| SV Elversberg vs SC Freiburg | Result: home | yes | 0.2700 | 0.508 [0.242, 0.792] | +0.225 | +0.035 | 0.3 | - | * | RESEARCH_CANDIDATE |
 | SV Elversberg vs SC Freiburg | Result: away | no | 0.5300 | 0.723 [0.484, 0.917] | +0.176 | +0.034 | 0.56 | - |  | RESEARCH_CANDIDATE |
 | Como vs Cagliari | Result: draw | yes | 0.1600 | 0.253 [0.168, 0.331] | +0.084 | +0.033 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Atalanta vs Inter Milan | Result: away | no | 0.3800 | 0.550 [0.356, 0.736] | +0.154 | +0.032 | 0.41 | - | * | RESEARCH_CANDIDATE |
@@ -119,9 +119,9 @@ model board generated 2026-11-21T09:41:18.740117Z · simulations this update: 0 
 ## Counts
 
 ```
-action_MODEL_STALE: 594
-action_NO_EDGE: 774
-action_NO_QUOTE: 146
+action_MODEL_STALE: 595
+action_NO_EDGE: 776
+action_NO_QUOTE: 143
 action_RESEARCH_CANDIDATE: 56
 contract_sides: 1570
 fixtures: 58
