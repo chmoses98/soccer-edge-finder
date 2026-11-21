@@ -1,6 +1,6 @@
-# settle-evaluate 2026-11-20 23:21Z
+# settle-evaluate 2026-11-21 03:24Z
 
-- newly settled: 370
+- newly settled: 10
 - cells evaluated: 265
 - authority proposals: 65
 
@@ -103,17 +103,17 @@
 | data_only.world_sim_v2 | match_result_3way | T-10m | 15 | 0.55368 | 0.45959 | 0.1883 | None | 0.0037 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-12h | 660 | 0.55991 | 0.51799 | 0.0655 | 0.883 | -0.0055 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-15m | 108 | 0.52543 | 0.47457 | 0.1237 | 0.417 | -0.0004 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | match_result_3way | T-24h | 1686 | 0.5611 | 0.52164 | 0.0783 | 0.845 | -0.0065 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | match_result_3way | T-24h | 1692 | 0.5617 | 0.52228 | 0.077 | 0.846 | -0.0065 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-2h | 255 | 0.56035 | 0.52218 | 0.0644 | 0.941 | -0.0018 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-30m | 165 | 0.5731 | 0.52024 | 0.076 | 0.788 | 0.0004 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-60m | 228 | 0.57686 | 0.53823 | 0.0437 | 0.886 | -0.0014 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-6h | 372 | 0.57848 | 0.53186 | 0.0644 | 0.973 | -0.0025 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-90m | 36 | 0.5205 | 0.4534 | 0.1459 | 0.528 | 0.0012 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | match_result_3way | any | 3540 | 0.56221 | 0.5201 | 0.0732 | 0.845 | -0.0045 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | match_result_3way | any | 3546 | 0.56249 | 0.52041 | 0.0726 | 0.845 | -0.0045 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | close | 15 | 0.44679 | 0.38338 | 0.2321 | None | -0.0007 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | match_winner_2way | T-24h | 4 | 0.47955 | None | 0.3674 | None | None | RESEARCH_ONLY |
+| data_only.world_sim_v2 | match_winner_2way | T-24h | 8 | 0.5318 | None | 0.3963 | None | None | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_winner_2way | T-6h | 2 | 0.47965 | None | 0.3675 | None | None | RESEARCH_ONLY |
-| data_only.world_sim_v2 | match_winner_2way | any | 6 | 0.47959 | None | 0.3674 | None | None | RESEARCH_ONLY |
+| data_only.world_sim_v2 | match_winner_2way | any | 10 | 0.52137 | 0.55528 | 0.3906 | None | None | RESEARCH_ONLY |
 | data_only.world_sim_v2 | second_half_result | T-10m | 9 | 0.78011 | None | 0.5009 | None | 0.0044 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | second_half_result | T-12h | 99 | 0.65182 | 0.63571 | 0.1069 | 0.747 | 0.1783 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | second_half_result | T-15m | 57 | 0.63199 | 0.58506 | 0.1035 | 0.93 | -0.0004 | RESEARCH_ONLY |

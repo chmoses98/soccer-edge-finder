@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-20T23:27:03.924019+00:00",
+  "as_of": "2026-11-21T03:29:10.944797+00:00",
   "cells": [
     {
       "cell": {
@@ -466,7 +466,7 @@
         "market_family": "match_result_3way",
         "model_family": "data_only.world_sim_v2"
       },
-      "due": 486,
+      "due": 492,
       "failed_gates": [
         "clv:min_selected_sides",
         "clv:min_fixtures",
@@ -482,28 +482,28 @@
       ],
       "metrics": {
         "depth_ok_share": 0.803921568627451,
-        "ece": 0.06452941152263375,
+        "ece": 0.06017855284552846,
         "ev_close_first_half": -0.033457753978200416,
         "ev_close_lower95": -0.03429963408653037,
         "ev_close_second_half": -0.013615534237098171,
         "fixtures": 14,
-        "interval_coverage_80": 0.9609053497942387,
+        "interval_coverage_80": 0.9613821138211383,
         "kalshi_fee_aware_clv_mean": 0.009728727272727273,
-        "log_loss_kalshi_mid": 0.5085827615856132,
-        "log_loss_model": 0.5611981869584672,
+        "log_loss_kalshi_mid": 0.5109293426751486,
+        "log_loss_model": 0.5632710273319635,
         "mean_ev_close": -0.023268506003039806,
         "median_spread": 0.010000000000000009,
-        "missing_close_rate": 0.154320987654321,
+        "missing_close_rate": 0.15243902439024393,
         "reference_present_share": 0.7254901960784313,
         "roi_lower95": -0.31976570539215693,
         "roi_mean": -0.25296209803921565,
         "selected_sides": 37,
         "settlement_rate": 1.0,
         "sharp_reference_available": true,
-        "true_close_share": 0.7737226277372263
+        "true_close_share": 0.7769784172661871
       },
       "n_failed_gates": 11,
-      "settled": 486,
+      "settled": 492,
       "verdict": "NOT_ELIGIBLE"
     },
     {
@@ -2925,7 +2925,7 @@
         "market_family": "match_winner_2way",
         "model_family": "data_only.world_sim_v2"
       },
-      "due": 4,
+      "due": 8,
       "failed_gates": [
         "integrity:missing_close_rate",
         "clv:min_selected_sides",
@@ -2954,7 +2954,7 @@
         "true_close_share": 0.0
       },
       "n_failed_gates": 12,
-      "settled": 4,
+      "settled": 8,
       "verdict": "NOT_ELIGIBLE"
     },
     {

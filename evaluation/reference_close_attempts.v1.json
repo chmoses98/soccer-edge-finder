@@ -1,11 +1,11 @@
 {
  "counts": {
   "DISPATCHER_CLOSE_NO_ATTEMPT": 641,
+  "PINNACLE_VALID_CLOSE": 135,
   "MISSED_DISPATCHER_CLOSE": 107,
-  "PINNACLE_VALID_CLOSE": 132,
-  "CLOSE_BLOCKED_BUDGET": 16,
   "NO_SPORT_KEY": 39,
-  "PINNACLE_QUOTED_NOTHING": 3
+  "PINNACLE_QUOTED_NOTHING": 3,
+  "CLOSE_BLOCKED_BUDGET": 16
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.belgrano": {
@@ -3578,6 +3578,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:mex.liga_mx:2026:mex.juarez:mex.atlas": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261121T024420Z"
+  },
   "fx:mex.liga_mx:2026:mex.juarez:mex.queretaro": {
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
@@ -3652,6 +3657,11 @@
    "state": "PINNACLE_VALID_CLOSE",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261031T024502Z"
+  },
+  "fx:mex.liga_mx:2026:mex.puebla:mex.san_luis": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261121T004345Z"
   },
   "fx:mex.liga_mx:2026:mex.pumas:mex.america": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -3737,6 +3747,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:mex.liga_mx:2026:mex.tijuana:mex.atlante": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261121T025500Z"
   },
   "fx:mex.liga_mx:2026:mex.tijuana:mex.puebla": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",

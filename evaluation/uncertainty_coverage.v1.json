@@ -1,6 +1,6 @@
 {
  "schema": "uncertainty_coverage_v1",
- "generated_at": "2026-11-20T23:28:08.537428+00:00",
+ "generated_at": "2026-11-21T03:30:16.164283+00:00",
  "estimator": "grouped (bin by fair probability; realised rate vs the bin's mean interval)",
  "band": [
   0.7,
@@ -4339,12 +4339,12 @@
    "worlds_version": "worlds_v1",
    "market_family": "match_result_3way",
    "horizon": "T-24h",
-   "n_settled": 1686,
-   "mean_width": 0.25788101364175564,
+   "n_settled": 1692,
+   "mean_width": 0.25775238829787234,
    "naive_outcome_inside_share": 0.0,
-   "market_mid_inside_share": 0.9009489916963227,
-   "n_with_market_mid": 1686,
-   "grouped_coverage_80": 0.8451957295373665,
+   "market_mid_inside_share": 0.9013002364066194,
+   "n_with_market_mid": 1692,
+   "grouped_coverage_80": 0.8457446808510638,
    "bins": [
     {
      "bin": 0,
@@ -4366,11 +4366,11 @@
     },
     {
      "bin": 2,
-     "n": 755,
-     "mean_pred": 0.2509,
-     "mean_obs": 0.1907,
-     "mean_lo": 0.1605,
-     "mean_hi": 0.3478,
+     "n": 759,
+     "mean_pred": 0.251,
+     "mean_obs": 0.1924,
+     "mean_lo": 0.1606,
+     "mean_hi": 0.348,
      "obs_inside": true
     },
     {
@@ -4384,11 +4384,11 @@
     },
     {
      "bin": 4,
-     "n": 249,
+     "n": 251,
      "mean_pred": 0.444,
-     "mean_obs": 0.4779,
-     "mean_lo": 0.27,
-     "mean_hi": 0.6288,
+     "mean_obs": 0.4741,
+     "mean_lo": 0.2701,
+     "mean_hi": 0.6284,
      "obs_inside": true
     },
     {
@@ -4894,12 +4894,12 @@
    "worlds_version": "worlds_v1",
    "market_family": "match_result_3way",
    "horizon": "any",
-   "n_settled": 3540,
-   "mean_width": 0.25460389604519773,
+   "n_settled": 3546,
+   "mean_width": 0.2545480665538635,
    "naive_outcome_inside_share": 0.0,
-   "market_mid_inside_share": 0.8979649519502544,
-   "n_with_market_mid": 3538,
-   "grouped_coverage_80": 0.8451977401129943,
+   "market_mid_inside_share": 0.8981376975169301,
+   "n_with_market_mid": 3544,
+   "grouped_coverage_80": 0.8454596728708403,
    "bins": [
     {
      "bin": 0,
@@ -4921,11 +4921,11 @@
     },
     {
      "bin": 2,
-     "n": 1580,
+     "n": 1584,
      "mean_pred": 0.2499,
-     "mean_obs": 0.1918,
-     "mean_lo": 0.1613,
-     "mean_hi": 0.3447,
+     "mean_obs": 0.1926,
+     "mean_lo": 0.1614,
+     "mean_hi": 0.3448,
      "obs_inside": true
     },
     {
@@ -4939,11 +4939,11 @@
     },
     {
      "bin": 4,
-     "n": 507,
+     "n": 509,
      "mean_pred": 0.443,
-     "mean_obs": 0.4813,
+     "mean_obs": 0.4794,
      "mean_lo": 0.2696,
-     "mean_hi": 0.6267,
+     "mean_hi": 0.6265,
      "obs_inside": true
     },
     {
@@ -5014,11 +5014,11 @@
    "worlds_version": "worlds_v1",
    "market_family": "match_winner_2way",
    "horizon": "T-24h",
-   "n_settled": 4,
-   "mean_width": 0.25925,
+   "n_settled": 8,
+   "mean_width": 0.284045,
    "naive_outcome_inside_share": 0.0,
    "market_mid_inside_share": null,
-   "n_with_market_mid": 4,
+   "n_with_market_mid": 8,
    "grouped_coverage_80": null,
    "verdict": "INSUFFICIENT",
    "direction": null
@@ -5042,11 +5042,11 @@
    "worlds_version": "worlds_v1",
    "market_family": "match_winner_2way",
    "horizon": "any",
-   "n_settled": 6,
-   "mean_width": 0.25925,
+   "n_settled": 10,
+   "mean_width": 0.279086,
    "naive_outcome_inside_share": 0.0,
-   "market_mid_inside_share": null,
-   "n_with_market_mid": 6,
+   "market_mid_inside_share": 0.5,
+   "n_with_market_mid": 10,
    "grouped_coverage_80": null,
    "verdict": "INSUFFICIENT",
    "direction": null
