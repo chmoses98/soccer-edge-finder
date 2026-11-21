@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T230135Z-8ff145` · generated 2026-11-21T23:01:35.290179Z · trigger `kickoff_chain:T-60/T-5` · mode `model_refresh_and_reprice`
+slate `slate-20261121T231635Z-4ae08b` · generated 2026-11-21T23:16:35.367172Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-21T22:57:44.046976Z (CURRENT at publish; CURRENT until 2026-11-21T23:17:44.046976Z, STALE after 2026-11-21T23:27:44.046976Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T23:12:45.955855Z (CURRENT at publish; CURRENT until 2026-11-21T23:32:45.955855Z, STALE after 2026-11-21T23:42:45.955855Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-21T23:01:33.317359Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.18s
+model board generated 2026-11-21T23:16:30.735302Z · simulations this update: 2 · Odds API calls this update: 0 (credits 0) · reprice 0.21s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -42,6 +42,8 @@ model board generated 2026-11-21T23:01:33.317359Z · simulations this update: 1 
 | 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 44 | 0 |
 | 2026-11-23T17:30:00Z | Monza vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-23T19:45:00Z | Juventus vs Venezia (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-23T22:30:00Z | Internacional vs Vitória (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-23T23:00:00Z | Botafogo vs São Paulo (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
 ## Candidates on CURRENT prices (30; RESEARCH_ONLY = analysis, never a bet)
 
@@ -82,11 +84,11 @@ model board generated 2026-11-21T23:01:33.317359Z · simulations this update: 1 
 
 ```
 action_MODEL_STALE: 272
-action_NO_EDGE: 385
-action_NO_QUOTE: 99
+action_NO_EDGE: 438
+action_NO_QUOTE: 102
 action_RESEARCH_CANDIDATE: 30
-contract_sides: 786
-fixtures: 30
+contract_sides: 842
+fixtures: 32
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
