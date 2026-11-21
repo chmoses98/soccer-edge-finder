@@ -1,23 +1,26 @@
 {
-  "as_of": "2026-11-21T11:33:46.739403+00:00",
-  "events": 7,
+  "as_of": "2026-11-21T11:56:00.088522+00:00",
+  "events": 4,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 7,
+  "fixtures_mapped": 4,
   "health": {
-    "reasons": [],
-    "state": "HEALTHY"
+    "reasons": [
+      "weather_failures:3",
+      "weather_stopped:consecutive_failures:skipped=1"
+    ],
+    "state": "DEGRADED"
   },
   "leagues": [
-    "eng.1"
+    "ita.1"
   ],
   "lineups": {
-    "captured": 1,
-    "events": 7,
+    "captured": 4,
+    "events": 4,
     "failures": [],
     "published_post": 0,
-    "published_pre_kickoff": 1,
-    "unchanged": 6,
-    "unpublished": 6
+    "published_pre_kickoff": 0,
+    "unchanged": 0,
+    "unpublished": 4
   },
   "map_proposals": {},
   "map_version": "4",
@@ -28,13 +31,17 @@
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 7,
-    "events": 7,
-    "failures": [],
+    "captured": 0,
+    "events": 4,
+    "failures": [
+      "401875056: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=45.8082&longitude=9.0832&hourly=tem",
+      "401874981: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Roma&count=5&language=en&format",
+      "401874967: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=44.7993&longitude=10.3262&hourly=te"
+    ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 0,
-    "stopped": null
+    "skipped": 1,
+    "stopped": "consecutive_failures"
   }
 }
