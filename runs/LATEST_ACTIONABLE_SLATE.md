@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T083723Z-821d80` · generated 2026-11-21T08:37:23.013413Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261121T085228Z-4b2e46` · generated 2026-11-21T08:52:28.886941Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-21T08:33:40.070576Z (CURRENT at publish; CURRENT until 2026-11-21T08:53:40.070576Z, STALE after 2026-11-21T09:03:40.070576Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T08:48:41.071541Z (CURRENT at publish; CURRENT until 2026-11-21T09:08:41.071541Z, STALE after 2026-11-21T09:18:41.071541Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-21T04:06:47.226676Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.04s
+model board generated 2026-11-21T04:06:47.226676Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.93s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -38,7 +38,7 @@ model board generated 2026-11-21T04:06:47.226676Z · simulations this update: 0 
 | 2026-11-21T19:45:00Z | AS Monaco vs AJ Auxerre (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T19:45:00Z | Strasbourg vs Brest (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T19:45:00Z | Napoli vs Torino (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-21T20:30:00Z | Bahia vs Coritiba (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-21T20:30:00Z | Bahia vs Coritiba (bra.serie_a) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-21T21:00:00Z | FC Dallas vs Portland Timbers (usa.mls) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-11-21T22:50:00Z | Pachuca vs Toluca (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-21T23:00:00Z | Santos Laguna vs León (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
@@ -119,9 +119,9 @@ model board generated 2026-11-21T04:06:47.226676Z · simulations this update: 0 
 ## Counts
 
 ```
-action_MODEL_STALE: 92
-action_NO_EDGE: 1229
-action_NO_QUOTE: 155
+action_MODEL_STALE: 119
+action_NO_EDGE: 1204
+action_NO_QUOTE: 153
 action_RESEARCH_CANDIDATE: 94
 contract_sides: 1570
 fixtures: 58
