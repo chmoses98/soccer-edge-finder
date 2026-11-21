@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T142912Z-551d8d` · generated 2026-11-21T14:29:12.270366Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
+slate `slate-20261121T143654Z-344fbb` · generated 2026-11-21T14:36:54.644174Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-21T14:25:24.698047Z (CURRENT at publish; CURRENT until 2026-11-21T14:45:24.698047Z, STALE after 2026-11-21T14:55:24.698047Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T14:32:48.865559Z (CURRENT at publish; CURRENT until 2026-11-21T14:52:48.865559Z, STALE after 2026-11-21T15:02:48.865559Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-21T13:59:07.191325Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.75s
+model board generated 2026-11-21T13:59:07.191325Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.70s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,11 +12,6 @@ model board generated 2026-11-21T13:59:07.191325Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-21T14:30:00Z | SV Elversberg vs SC Freiburg (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-21T14:30:00Z | Eintracht Frankfurt vs TSG Hoffenheim (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-21T14:30:00Z | Borussia Mönchengladbach vs Borussia Dortmund (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-21T14:30:00Z | Bayer Leverkusen vs SC Paderborn 07 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-21T14:30:00Z | Union Berlin vs RB Leipzig (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T15:00:00Z | Aston Villa vs Sunderland (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T15:00:00Z | Bournemouth vs Nottingham Forest (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T15:00:00Z | Chelsea vs Leeds United (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -69,15 +64,15 @@ model board generated 2026-11-21T13:59:07.191325Z · simulations this update: 0 
 | 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 44 | 0 |
 
-## Candidates on CURRENT prices (50; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (46; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Deportivo Alavés vs Deportivo La Coruña | Result: home | no | 0.1700 | 0.500 [0.274, 0.715] | +0.320 | +0.172 | 0.33 | - | * | RESEARCH_CANDIDATE |
+| Deportivo Alavés vs Deportivo La Coruña | Result: home | no | 0.1800 | 0.500 [0.274, 0.715] | +0.309 | +0.161 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: away | no | 0.2100 | 0.482 [0.294, 0.651] | +0.261 | +0.144 | 0.34 | - | * | RESEARCH_CANDIDATE |
 | Getafe vs Atlético Madrid | Result: away | no | 0.3800 | 0.625 [0.467, 0.777] | +0.229 | +0.123 | 0.5 | - | * | RESEARCH_CANDIDATE |
+| Deportivo Alavés vs Deportivo La Coruña | Result: away | yes | 0.0200 | 0.251 [0.102, 0.436] | +0.230 | +0.116 | 0.12 | - |  | RESEARCH_CANDIDATE |
 | Hull City vs Brighton & Hove Albion | Result: away | no | 0.3700 | 0.633 [0.415, 0.832] | +0.247 | +0.111 | 0.47 | - | * | RESEARCH_CANDIDATE |
-| Deportivo Alavés vs Deportivo La Coruña | Result: away | yes | 0.0300 | 0.251 [0.102, 0.436] | +0.219 | +0.105 | 0.12 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | btts | no | 0.3900 | 0.582 [0.462, 0.696] | +0.175 | +0.102 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Newcastle United vs Arsenal | Result: away | no | 0.3800 | 0.599 [0.422, 0.766] | +0.203 | +0.089 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 2.5 | no | 0.4200 | 0.612 [0.455, 0.758] | +0.175 | +0.079 | 0.49 | - | * | RESEARCH_CANDIDATE |
@@ -93,40 +88,40 @@ model board generated 2026-11-21T13:59:07.191325Z · simulations this update: 0 
 | Parma vs AS Roma | Result: draw | yes | 0.1400 | 0.258 [0.181, 0.330] | +0.109 | +0.062 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 1.5 | no | 0.2000 | 0.354 [0.220, 0.493] | +0.143 | +0.055 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | Schalke 04 vs VfB Stuttgart | Result: away | no | 0.4800 | 0.683 [0.426, 0.887] | +0.185 | +0.052 | 0.53 | - | * | RESEARCH_CANDIDATE |
-| Union Berlin vs RB Leipzig | Result: away | no | 0.3500 | 0.548 [0.317, 0.752] | +0.182 | +0.052 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Nice vs Paris Saint-Germain | Result: away | no | 0.3400 | 0.527 [0.337, 0.710] | +0.171 | +0.047 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 4.5 | no | 0.8200 | 0.913 [0.838, 0.970] | +0.082 | +0.046 | 0.86 | - |  | RESEARCH_CANDIDATE |
-| Union Berlin vs RB Leipzig | Result: home | yes | 0.1500 | 0.325 [0.136, 0.529] | +0.166 | +0.038 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Real Madrid vs Celta Vigo | Result: draw | yes | 0.1100 | 0.207 [0.127, 0.280] | +0.090 | +0.038 | 0.14 | - |  | RESEARCH_CANDIDATE |
 | Real Madrid vs Celta Vigo | Result: away | yes | 0.0500 | 0.162 [0.068, 0.277] | +0.109 | +0.037 | 0.08 | - |  | RESEARCH_CANDIDATE |
-| Deportivo Alavés vs Deportivo La Coruña | Result: draw | yes | 0.1500 | 0.248 [0.163, 0.331] | +0.090 | +0.037 | 0.18 | - |  | RESEARCH_CANDIDATE |
-| SV Elversberg vs SC Freiburg | Result: home | yes | 0.2700 | 0.508 [0.242, 0.792] | +0.225 | +0.035 | 0.3 | - | * | RESEARCH_CANDIDATE |
-| SV Elversberg vs SC Freiburg | Result: away | no | 0.5300 | 0.723 [0.484, 0.917] | +0.176 | +0.034 | 0.56 | - |  | RESEARCH_CANDIDATE |
 | Atalanta vs Inter Milan | Result: away | no | 0.3800 | 0.550 [0.356, 0.736] | +0.154 | +0.032 | 0.41 | - | * | RESEARCH_CANDIDATE |
+| Deportivo Alavés vs Deportivo La Coruña | Result: draw | yes | 0.1600 | 0.248 [0.163, 0.331] | +0.079 | +0.026 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | Result: away | no | 0.8500 | 0.913 [0.852, 0.963] | +0.054 | +0.026 | 0.87 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | away team total over 2.5 | no | 0.9200 | 0.962 [0.926, 0.988] | +0.036 | +0.019 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 5.5 | no | 0.9300 | 0.966 [0.930, 0.992] | +0.031 | +0.016 | 0.94 | - |  | RESEARCH_CANDIDATE |
-| AC Milan vs Frosinone | Result: home | no | 0.3700 | 0.547 [0.320, 0.762] | +0.161 | +0.015 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Atalanta vs Inter Milan | Result: home | yes | 0.1800 | 0.319 [0.161, 0.504] | +0.128 | +0.015 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Nice vs Paris Saint-Germain | Result: draw | yes | 0.1900 | 0.258 [0.192, 0.327] | +0.058 | +0.014 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | away wins by more than 1.5 | no | 0.9500 | 0.976 [0.954, 0.993] | +0.023 | +0.014 | 0.96 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Exact score 1-0 (home-away) | yes | 0.0900 | 0.142 [0.093, 0.194] | +0.046 | +0.014 | 0.1 | - | * | RESEARCH_CANDIDATE |
 | Sassuolo vs Genoa | Result: home | yes | 0.3600 | 0.517 [0.329, 0.707] | +0.141 | +0.013 | 0.37 | - | * | RESEARCH_CANDIDATE |
 | Getafe vs Atlético Madrid | Result: draw | yes | 0.2300 | 0.296 [0.234, 0.358] | +0.053 | +0.012 | 0.24 | - |  | RESEARCH_CANDIDATE |
+| Nashville SC vs FC Cincinnati | First-half result: away | no | 0.8400 | 0.898 [0.839, 0.951] | +0.048 | +0.011 | 0.85 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Necaxa | Total goals over 0.5 | no | 0.0600 | 0.118 [0.059, 0.187] | +0.054 | +0.010 | 0.06 | - |  | RESEARCH_CANDIDATE |
+| Tottenham Hotspur vs Ipswich Town | Result: away | yes | 0.1600 | 0.313 [0.117, 0.517] | +0.143 | +0.010 | 0.16 | - | * | RESEARCH_CANDIDATE |
+| Tottenham Hotspur vs Ipswich Town | Result: home | no | 0.3700 | 0.548 [0.293, 0.772] | +0.162 | +0.009 | 0.37 | - |  | RESEARCH_CANDIDATE |
+| Schalke 04 vs VfB Stuttgart | Result: home | yes | 0.2400 | 0.435 [0.189, 0.705] | +0.183 | +0.009 | 0.24 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_MODEL_STALE: 759
-action_NO_EDGE: 603
+action_NO_EDGE: 577
 action_NO_QUOTE: 146
-action_RESEARCH_CANDIDATE: 50
-contract_sides: 1558
-fixtures: 56
+action_RESEARCH_CANDIDATE: 46
+contract_sides: 1528
+fixtures: 51
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
-Removed (kicked off): 2
+Removed (kicked off): 7
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
