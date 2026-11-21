@@ -309,3 +309,241 @@ unmapped teams: 0 | proposals: {}
   ],
   "written": 0
 }
+[odds_api] {"captured_at": "2026-11-21T10:56:42.616413Z", "batch_id": "kd-20261121T105256Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-11-21T10:56:42.650907+00:00",
+ "leagues": [
+  "esp.1"
+ ],
+ "events": 4,
+ "fixtures_mapped": 4,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 1,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 4,
+  "captured": 4,
+  "unchanged": 0,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 4,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 4,
+  "captured": 0,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [
+   "401882806: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=42.8500&longitude=-2.6727&hourly=te",
+   "401882799: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=40.4165&longitude=-3.7026&hourly=te",
+   "401882797: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Sevilla&count=5&language=en&for"
+  ],
+  "skipped": 1,
+  "stopped": "consecutive_failures"
+ },
+ "map_version": "4",
+ "health": {
+  "state": "DEGRADED",
+  "reasons": [
+   "weather_failures:3",
+   "weather_stopped:consecutive_failures:skipped=1"
+  ]
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261121T105730Z-8ca385", "mode": "reprice_only", "fixtures": 58, "contract_sides": 1570, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.87, "price_changes_vs_previous": 72}
+[dispatch] holding 5.5 min (next window opens in 22.2 min)
+[dispatch] holding 0.6 min (next window opens in 16.7 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261121T111141Z",
+  "complete": true,
+  "discovered": 6081,
+  "written": 1235,
+  "path": "work/snapshots/2026-11-21/cap-20261121T111141Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261121T111142Z-3f8a06", "mode": "reprice_only", "fixtures": 58, "contract_sides": 1570, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.905, "price_changes_vs_previous": 51}
+[dispatch] holding 7.8 min (next window opens in 8.8 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261121T112641Z",
+  "complete": true,
+  "discovered": 6080,
+  "written": 1083,
+  "path": "work/snapshots/2026-11-21/cap-20261121T112641Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261121T112642Z-7d1f95", "mode": "reprice_only", "fixtures": 58, "contract_sides": 1570, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.905, "price_changes_vs_previous": 36}
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261121T113343Z",
+  "complete": true,
+  "discovered": 6080,
+  "written": 810,
+  "path": "work/snapshots/2026-11-21/cap-20261121T113343Z.jsonl"
+}
+{
+  "reference_probabilities": 230,
+  "observed_at": "2026-11-21 09:41:17.240713+00:00",
+  "groups": 405,
+  "unmapped_fixture_groups": 175,
+  "incomplete_groups": 0,
+  "snapshots": 828,
+  "provider_notes": [
+    "190 rows, 109 skipped (unmapped division/team)",
+    "skipped_by_division={'B1': 9, 'D2': 9, 'E2': 12, 'E3': 12, 'EC': 12, 'F2': 9, 'G1': 7, 'I2': 10, 'N1': 2, 'SC1': 5, 'SC2': 5, 'SC3': 5, 'SP2': 11, 'T1': 1}",
+    "unknown_teams={'N1:Nijmegen': 1, 'N1:For Sittard': 1, 'T1:Goztep': 1}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-11-21T11:33:46.709600Z", "batch_id": "kd-20261121T113001Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-11-21T11:33:46.739403+00:00",
+ "leagues": [
+  "eng.1"
+ ],
+ "events": 7,
+ "fixtures_mapped": 7,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 1,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 7,
+  "captured": 1,
+  "unchanged": 6,
+  "published_pre_kickoff": 1,
+  "published_post": 0,
+  "unpublished": 6,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 7,
+  "captured": 7,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261121T113350Z-ff5d20", "mode": "reprice_only", "fixtures": 58, "contract_sides": 1570, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.896, "price_changes_vs_previous": 21}
+[dispatch] holding 0.5 min (next window opens in 12.7 min)
+[dispatch] holding 7.3 min (next window opens in 12.2 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261121T114845Z",
+  "complete": true,
+  "discovered": 6080,
+  "written": 1042,
+  "path": "work/snapshots/2026-11-21/cap-20261121T114845Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261121T114846Z-1de9c8", "mode": "reprice_only", "fixtures": 58, "contract_sides": 1570, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 1.075, "price_changes_vs_previous": 44}
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261121T115556Z",
+  "complete": true,
+  "discovered": 6080,
+  "written": 1544,
+  "path": "work/snapshots/2026-11-21/cap-20261121T115556Z.jsonl"
+}
+{
+  "reference_probabilities": 230,
+  "observed_at": "2026-11-21 09:41:17.240713+00:00",
+  "groups": 405,
+  "unmapped_fixture_groups": 175,
+  "incomplete_groups": 0,
+  "snapshots": 828,
+  "provider_notes": [
+    "190 rows, 109 skipped (unmapped division/team)",
+    "skipped_by_division={'B1': 9, 'D2': 9, 'E2': 12, 'E3': 12, 'EC': 12, 'F2': 9, 'G1': 7, 'I2': 10, 'N1': 2, 'SC1': 5, 'SC2': 5, 'SC3': 5, 'SP2': 11, 'T1': 1}",
+    "unknown_teams={'N1:Nijmegen': 1, 'N1:For Sittard': 1, 'T1:Goztep': 1}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-11-21T11:56:00.058626Z", "batch_id": "kd-20261121T115214Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-11-21T11:56:00.088522+00:00",
+ "leagues": [
+  "ita.1"
+ ],
+ "events": 4,
+ "fixtures_mapped": 4,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 1,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 4,
+  "captured": 4,
+  "unchanged": 0,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 4,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 4,
+  "captured": 0,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [
+   "401875056: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=45.8082&longitude=9.0832&hourly=tem",
+   "401874981: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Roma&count=5&language=en&format",
+   "401874967: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=44.7993&longitude=10.3262&hourly=te"
+  ],
+  "skipped": 1,
+  "stopped": "consecutive_failures"
+ },
+ "map_version": "4",
+ "health": {
+  "state": "DEGRADED",
+  "reasons": [
+   "weather_failures:3",
+   "weather_stopped:consecutive_failures:skipped=1"
+  ]
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261121T115648Z-0bc7c4", "mode": "reprice_only", "fixtures": 58, "contract_sides": 1570, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 1.041, "price_changes_vs_previous": 85}
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261121T120352Z",
+  "complete": true,
+  "discovered": 6080,
+  "written": 1011,
+  "path": "work/snapshots/2026-11-21/cap-20261121T120352Z.jsonl"
+}
+{
+  "reference_probabilities": 230,
+  "observed_at": "2026-11-21 09:41:17.240713+00:00",
+  "groups": 405,
+  "unmapped_fixture_groups": 175,
+  "incomplete_groups": 0,
+  "snapshots": 828,
+  "provider_notes": [
+    "190 rows, 109 skipped (unmapped division/team)",
+    "skipped_by_division={'B1': 9, 'D2': 9, 'E2': 12, 'E3': 12, 'EC': 12, 'F2': 9, 'G1': 7, 'I2': 10, 'N1': 2, 'SC1': 5, 'SC2': 5, 'SC3': 5, 'SP2': 11, 'T1': 1}",
+    "unknown_teams={'N1:Nijmegen': 1, 'N1:For Sittard': 1, 'T1:Goztep': 1}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
