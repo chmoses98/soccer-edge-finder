@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T021055Z-dab775` · generated 2026-11-21T02:10:55.016776Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261121T022537Z-c0f335` · generated 2026-11-21T02:25:37.568438Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-21T02:06:56.742563Z (CURRENT at publish; CURRENT until 2026-11-21T02:26:56.742563Z, STALE after 2026-11-21T02:36:56.742563Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T02:21:54.164097Z (CURRENT at publish; CURRENT until 2026-11-21T02:41:54.164097Z, STALE after 2026-11-21T02:51:54.164097Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-21T02:10:49.260662Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 1.20s
+model board generated 2026-11-21T02:10:49.260662Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 1.18s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-21T02:10:49.260662Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-21T03:00:00Z | FC Juárez vs Atlas (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 79 | 1 |
+| 2026-11-21T03:00:00Z | FC Juárez vs Atlas (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 79 | 1 |
 | 2026-11-21T03:10:00Z | Tijuana vs Atlante (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 32 | 0 |
 | 2026-11-21T14:00:00Z | Como vs Cagliari (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-21T14:00:00Z | Lazio vs Lecce (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -73,7 +73,7 @@ model board generated 2026-11-21T02:10:49.260662Z · simulations this update: 1 
 | 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 44 | 0 |
 
-## Candidates on CURRENT prices (127; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (129; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -84,7 +84,7 @@ model board generated 2026-11-21T02:10:49.260662Z · simulations this update: 1 
 | Hull City vs Brighton & Hove Albion | Result: away | no | 0.3700 | 0.633 [0.416, 0.831] | +0.247 | +0.109 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | btts | no | 0.3900 | 0.582 [0.462, 0.696] | +0.175 | +0.102 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Palmeiras vs Flamengo | away wins by more than 1.5 | no | 0.7400 | 0.895 [0.813, 0.955] | +0.141 | +0.102 | 0.84 | - | * | RESEARCH_CANDIDATE |
-| Santos Laguna vs León | away team total over 1.5 | no | 0.5500 | 0.745 [0.604, 0.860] | +0.178 | +0.100 | 0.65 | - | * | RESEARCH_CANDIDATE |
+| Santos Laguna vs León | away team total over 1.5 | no | 0.5600 | 0.745 [0.604, 0.860] | +0.168 | +0.090 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Real Madrid vs Celta Vigo | Result: home | no | 0.1500 | 0.369 [0.204, 0.541] | +0.210 | +0.090 | 0.23 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Toluca | away team total over 1.5 | no | 0.4800 | 0.671 [0.527, 0.796] | +0.173 | +0.088 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Newcastle United vs Arsenal | Result: away | no | 0.3800 | 0.599 [0.423, 0.766] | +0.202 | +0.088 | 0.46 | - | * | RESEARCH_CANDIDATE |
@@ -104,7 +104,6 @@ model board generated 2026-11-21T02:10:49.260662Z · simulations this update: 1 
 | Newcastle United vs Arsenal | Result: home | yes | 0.1600 | 0.342 [0.183, 0.511] | +0.173 | +0.061 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Nice vs Paris Saint-Germain | Result: away | no | 0.3300 | 0.527 [0.337, 0.710] | +0.181 | +0.056 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Union Berlin vs RB Leipzig | Result: away | no | 0.3500 | 0.548 [0.317, 0.752] | +0.182 | +0.053 | 0.4 | - | * | RESEARCH_CANDIDATE |
-| Pachuca vs Toluca | away team total over 0.5 | no | 0.1800 | 0.319 [0.203, 0.434] | +0.129 | +0.052 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Schalke 04 vs VfB Stuttgart | Result: away | no | 0.4800 | 0.683 [0.426, 0.887] | +0.185 | +0.052 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: draw | yes | 0.1500 | 0.258 [0.181, 0.329] | +0.099 | +0.051 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | New England Revolution vs Philadelphia Union | away team total over 2.5 | no | 0.7700 | 0.876 [0.788, 0.943] | +0.093 | +0.049 | 0.82 | - |  | RESEARCH_CANDIDATE |
@@ -116,14 +115,15 @@ model board generated 2026-11-21T02:10:49.260662Z · simulations this update: 1 
 | Santos Laguna vs León | Total goals over 3.5 | no | 0.6000 | 0.745 [0.600, 0.876] | +0.128 | +0.043 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: home | yes | 0.0900 | 0.224 [0.101, 0.354] | +0.128 | +0.042 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | Total goals over 4.5 | no | 0.7700 | 0.876 [0.779, 0.956] | +0.094 | +0.042 | 0.81 | - |  | RESEARCH_CANDIDATE |
+| Pachuca vs Toluca | away team total over 0.5 | no | 0.1900 | 0.319 [0.203, 0.434] | +0.118 | +0.042 | 0.23 | - |  | RESEARCH_CANDIDATE |
 | Santos Laguna vs León | Total goals over 2.5 | no | 0.3800 | 0.541 [0.378, 0.705] | +0.145 | +0.039 | 0.41 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1492
-action_NO_QUOTE: 173
-action_RESEARCH_CANDIDATE: 127
+action_NO_EDGE: 1491
+action_NO_QUOTE: 172
+action_RESEARCH_CANDIDATE: 129
 contract_sides: 1792
 fixtures: 60
 fixtures_model_invalidated: 0
