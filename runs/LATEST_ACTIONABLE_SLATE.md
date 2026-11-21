@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261121T154643Z-82ef02` · generated 2026-11-21T15:46:43.250037Z · trigger `kickoff_chain:T-120/T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261121T155333Z-a38c07` · generated 2026-11-21T15:53:33.889074Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-21T15:41:36.399448Z (CURRENT at publish; CURRENT until 2026-11-21T16:01:36.399448Z, STALE after 2026-11-21T16:11:36.399448Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-21T15:49:45.203648Z (CURRENT at publish; CURRENT until 2026-11-21T16:09:45.203648Z, STALE after 2026-11-21T16:19:45.203648Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-21T15:46:42.401387Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.31s
+model board generated 2026-11-21T15:46:42.401387Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.36s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -55,7 +55,7 @@ model board generated 2026-11-21T15:46:42.401387Z · simulations this update: 1 
 | 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 44 | 0 |
 
-## Candidates on CURRENT prices (36; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (37; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -71,9 +71,9 @@ model board generated 2026-11-21T15:46:42.401387Z · simulations this update: 1 
 | Nashville SC vs FC Cincinnati | away team total over 1.5 | no | 0.7100 | 0.841 [0.749, 0.918] | +0.117 | +0.064 | 0.77 | - |  | RESEARCH_CANDIDATE |
 | Getafe vs Atlético Madrid | Result: home | yes | 0.1500 | 0.330 [0.186, 0.488] | +0.171 | +0.063 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Parma vs AS Roma | Result: draw | yes | 0.1400 | 0.258 [0.181, 0.330] | +0.109 | +0.062 | 0.19 | - |  | RESEARCH_CANDIDATE |
+| Nice vs Paris Saint-Germain | Result: away | no | 0.3300 | 0.527 [0.337, 0.710] | +0.182 | +0.057 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 1.5 | no | 0.2000 | 0.354 [0.220, 0.493] | +0.143 | +0.055 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | Schalke 04 vs VfB Stuttgart | Result: away | no | 0.4800 | 0.683 [0.426, 0.887] | +0.185 | +0.052 | 0.53 | - | * | RESEARCH_CANDIDATE |
-| Nice vs Paris Saint-Germain | Result: away | no | 0.3400 | 0.527 [0.337, 0.710] | +0.171 | +0.047 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 4.5 | no | 0.8200 | 0.913 [0.838, 0.970] | +0.082 | +0.046 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | Real Madrid vs Celta Vigo | Result: draw | yes | 0.1100 | 0.207 [0.127, 0.280] | +0.090 | +0.038 | 0.14 | - |  | RESEARCH_CANDIDATE |
 | Real Madrid vs Celta Vigo | Result: away | yes | 0.0500 | 0.162 [0.068, 0.277] | +0.109 | +0.037 | 0.08 | - |  | RESEARCH_CANDIDATE |
@@ -90,19 +90,20 @@ model board generated 2026-11-21T15:46:42.401387Z · simulations this update: 1 
 | Nashville SC vs FC Cincinnati | First-half result: away | no | 0.8400 | 0.898 [0.839, 0.951] | +0.048 | +0.011 | 0.85 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 0.5 | no | 0.0600 | 0.118 [0.059, 0.187] | +0.054 | +0.010 | 0.06 | - |  | RESEARCH_CANDIDATE |
 | Schalke 04 vs VfB Stuttgart | Result: home | yes | 0.2400 | 0.435 [0.189, 0.705] | +0.183 | +0.009 | 0.24 | - |  | RESEARCH_CANDIDATE |
+| Rayo Vallecano vs Valencia | Result: draw | no | 0.6900 | 0.757 [0.691, 0.824] | +0.052 | +0.008 | 0.69 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | Result: home | yes | 0.6700 | 0.760 [0.644, 0.872] | +0.075 | +0.005 | 0.67 | - |  | RESEARCH_CANDIDATE |
-| AC Milan vs Frosinone | Result: home | no | 0.3800 | 0.547 [0.320, 0.762] | +0.151 | +0.004 | 0.38 | - | * | RESEARCH_CANDIDATE |
-| AC Milan vs Frosinone | Result: draw | yes | 0.2000 | 0.264 [0.182, 0.348] | +0.053 | +0.002 | 0.2 | - |  | RESEARCH_CANDIDATE |
+| Nice vs Paris Saint-Germain | Result: home | yes | 0.1500 | 0.269 [0.126, 0.436] | +0.110 | +0.004 | 0.15 | - |  | RESEARCH_CANDIDATE |
+| AC Milan vs Frosinone | Result: draw | yes | 0.2000 | 0.264 [0.182, 0.348] | +0.053 | +0.002 | 0.2 | - | * | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Vasco da Gama | Result: away | no | 0.6500 | 0.743 [0.605, 0.861] | +0.077 | +0.002 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Strasbourg vs Brest | Result: draw | no | 0.7400 | 0.796 [0.732, 0.869] | +0.043 | +0.002 | 0.74 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_MODEL_STALE: 758
-action_NO_EDGE: 535
-action_NO_QUOTE: 145
-action_RESEARCH_CANDIDATE: 36
+action_MODEL_STALE: 757
+action_NO_EDGE: 534
+action_NO_QUOTE: 146
+action_RESEARCH_CANDIDATE: 37
 contract_sides: 1474
 fixtures: 42
 fixtures_model_invalidated: 0
