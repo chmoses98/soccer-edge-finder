@@ -1,11 +1,11 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 641,
-  "PINNACLE_VALID_CLOSE": 135,
-  "CLOSE_BLOCKED_BUDGET": 16,
   "MISSED_DISPATCHER_CLOSE": 107,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 642,
+  "PINNACLE_QUOTED_NOTHING": 3,
+  "PINNACLE_VALID_CLOSE": 135,
   "NO_SPORT_KEY": 39,
-  "PINNACLE_QUOTED_NOTHING": 3
+  "CLOSE_BLOCKED_BUDGET": 16
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.belgrano": {
@@ -1399,6 +1399,11 @@
    "batch_id": null
   },
   "fx:eng.premier_league:2026-27:eng.man_city:eng.brighton": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:eng.premier_league:2026-27:eng.man_city:eng.fulham": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
