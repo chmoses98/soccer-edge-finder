@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261122T145435Z-d164d3` · generated 2026-11-22T14:54:35.264659Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261122T150239Z-54fbbe` · generated 2026-11-22T15:02:39.431704Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-22T14:50:52.395287Z (CURRENT at publish; CURRENT until 2026-11-22T15:10:52.395287Z, STALE after 2026-11-22T15:20:52.395287Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-22T14:58:57.559634Z (CURRENT at publish; CURRENT until 2026-11-22T15:18:57.559634Z, STALE after 2026-11-22T15:28:57.559634Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-22T12:17:24.932364Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.26s
+model board generated 2026-11-22T12:17:24.932364Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.27s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -31,7 +31,7 @@ model board generated 2026-11-22T12:17:24.932364Z · simulations this update: 0 
 | 2026-11-24T00:00:00Z | Santos vs Grêmio (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-24T01:00:00Z | St. Louis City SC vs Los Angeles FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 
-## Candidates on CURRENT prices (14; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (15; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -46,6 +46,7 @@ model board generated 2026-11-22T12:17:24.932364Z · simulations this update: 0 
 | St. Louis City SC vs Los Angeles FC | away team total over 2.5 | no | 0.8500 | 0.924 [0.860, 0.970] | +0.065 | +0.031 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | Atalanta vs Inter Milan | Result: home | yes | 0.1700 | 0.319 [0.162, 0.504] | +0.139 | +0.025 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | Result: home | yes | 0.4100 | 0.546 [0.403, 0.692] | +0.119 | +0.021 | 0.43 | - |  | RESEARCH_CANDIDATE |
+| Lorient vs Rennes | Result: home | yes | 0.2700 | 0.438 [0.241, 0.639] | +0.154 | +0.018 | 0.28 | - | * | RESEARCH_CANDIDATE |
 | Santos vs Grêmio | btts | no | 0.4400 | 0.545 [0.434, 0.661] | +0.088 | +0.017 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | First-half result: away | no | 0.7300 | 0.815 [0.728, 0.892] | +0.071 | +0.016 | 0.74 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away wins by more than 2.5 | no | 0.9500 | 0.978 [0.957, 0.994] | +0.025 | +0.016 | 0.96 | - |  | RESEARCH_CANDIDATE |
@@ -53,16 +54,16 @@ model board generated 2026-11-22T12:17:24.932364Z · simulations this update: 0 
 ## Counts
 
 ```
-action_MODEL_STALE: 297
-action_NO_EDGE: 167
-action_NO_QUOTE: 34
-action_RESEARCH_CANDIDATE: 14
+action_MODEL_STALE: 299
+action_NO_EDGE: 166
+action_NO_QUOTE: 32
+action_RESEARCH_CANDIDATE: 15
 contract_sides: 512
 fixtures: 18
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
-Removed (kicked off): 3
+Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
