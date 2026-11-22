@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261122T014645Z-64a831` · generated 2026-11-22T01:46:45.920588Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261122T020202Z-5167ac` · generated 2026-11-22T02:02:02.422614Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-22T01:43:03.527733Z (CURRENT at publish; CURRENT until 2026-11-22T02:03:03.527733Z, STALE after 2026-11-22T02:13:03.527733Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-22T01:58:03.545794Z (CURRENT at publish; CURRENT until 2026-11-22T02:18:03.545794Z, STALE after 2026-11-22T02:28:03.545794Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-22T01:16:45.572144Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.20s
+model board generated 2026-11-22T02:01:50.878756Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.20s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-22T01:16:45.572144Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-22T03:00:00Z | Tigres UANL vs Club América (mex.liga_mx) | VALID (STALE) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-11-22T03:00:00Z | Tigres UANL vs Club América (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-22T11:30:00Z | Sassuolo vs Genoa (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T12:00:00Z | Deportivo Alavés vs Deportivo La Coruña (esp.la_liga) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T12:00:00Z | FC Barcelona vs Villarreal (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -35,9 +35,9 @@ model board generated 2026-11-22T01:16:45.572144Z · simulations this update: 0 
 | 2026-11-22T21:00:00Z | Nashville SC vs FC Cincinnati (usa.mls) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 47 | 0 |
 | 2026-11-22T21:30:00Z | Fluminense vs Mirassol (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T22:30:00Z | Red Bull Bragantino vs Vasco da Gama (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-11-22T23:07:00Z | Guadalajara vs Cruz Azul (mex.liga_mx) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-22T23:07:00Z | Guadalajara vs Cruz Azul (mex.liga_mx) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 44 | 0 |
+| 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 44 | 0 |
 | 2026-11-23T17:30:00Z | Monza vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-23T19:45:00Z | Juventus vs Venezia (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-23T22:30:00Z | Internacional vs Vitória (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
@@ -45,7 +45,7 @@ model board generated 2026-11-22T01:16:45.572144Z · simulations this update: 0 
 | 2026-11-24T00:00:00Z | Santos vs Grêmio (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-24T01:00:00Z | St. Louis City SC vs Los Angeles FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 
-## Candidates on CURRENT prices (37; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (44; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -70,6 +70,7 @@ model board generated 2026-11-22T01:16:45.572144Z · simulations this update: 0 
 | Nashville SC vs FC Cincinnati | Result: away | no | 0.8500 | 0.913 [0.852, 0.963] | +0.054 | +0.026 | 0.87 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 5.5 | no | 0.9200 | 0.966 [0.930, 0.992] | +0.041 | +0.025 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Vasco da Gama | Result: away | no | 0.6300 | 0.743 [0.605, 0.861] | +0.097 | +0.022 | 0.65 | - | * | RESEARCH_CANDIDATE |
+| Tigres UANL vs Club América | away team total over 1.5 | no | 0.4600 | 0.598 [0.449, 0.744] | +0.121 | +0.021 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | FC Augsburg vs Mainz 05 | Result: away | no | 0.6000 | 0.740 [0.553, 0.894] | +0.123 | +0.017 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away wins by more than 1.5 | no | 0.8700 | 0.923 [0.868, 0.968] | +0.046 | +0.016 | 0.88 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away wins by more than 2.5 | no | 0.9500 | 0.978 [0.957, 0.994] | +0.025 | +0.016 | 0.96 | - |  | RESEARCH_CANDIDATE |
@@ -79,27 +80,26 @@ model board generated 2026-11-22T01:16:45.572144Z · simulations this update: 0 
 | Sassuolo vs Genoa | Result: home | yes | 0.3600 | 0.517 [0.329, 0.707] | +0.141 | +0.013 | 0.37 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | Result: home | yes | 0.4200 | 0.546 [0.403, 0.692] | +0.109 | +0.011 | 0.43 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | First-half result: away | no | 0.8400 | 0.898 [0.839, 0.951] | +0.048 | +0.011 | 0.85 | - | * | RESEARCH_CANDIDATE |
+| Tigres UANL vs Club América | Result: away | no | 0.5000 | 0.623 [0.471, 0.761] | +0.105 | +0.010 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 0.5 | no | 0.0600 | 0.118 [0.059, 0.187] | +0.054 | +0.010 | 0.06 | - |  | RESEARCH_CANDIDATE |
+| Tigres UANL vs Club América | away team total over 2.5 | no | 0.7400 | 0.828 [0.718, 0.924] | +0.074 | +0.008 | 0.74 | - |  | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Vasco da Gama | Result: home | yes | 0.3650 | 0.492 [0.336, 0.646] | +0.111 | +0.006 | 0.37 | - |  | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Vasco da Gama | away wins by more than 1.5 | no | 0.8400 | 0.894 [0.811, 0.955] | +0.045 | +0.006 | 0.84 | - | * | RESEARCH_CANDIDATE |
 | Bologna vs Udinese | Result: away | yes | 0.1900 | 0.309 [0.155, 0.480] | +0.108 | +0.004 | 0.19 | - | * | RESEARCH_CANDIDATE |
+| Tigres UANL vs Club América | First-half result: away | no | 0.6200 | 0.709 [0.597, 0.812] | +0.072 | +0.004 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | FC Augsburg vs Mainz 05 | Result: home | yes | 0.3600 | 0.521 [0.298, 0.741] | +0.145 | +0.003 | 0.36 | - |  | RESEARCH_CANDIDATE |
-| Santos vs Grêmio | Total goals over 0.5 | no | 0.0500 | 0.091 [0.042, 0.149] | +0.037 | +0.003 | 0.05 | - | * | RESEARCH_CANDIDATE |
-| Getafe vs Atlético Madrid | Result: draw | yes | 0.2400 | 0.296 [0.234, 0.358] | +0.043 | +0.001 | 0.24 | - |  | RESEARCH_CANDIDATE |
+| Tigres UANL vs Club América | First team to score: away | no | 0.4300 | 0.535 [0.408, 0.662] | +0.088 | +0.003 | 0.43 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_MODEL_STALE: 137
-action_NO_EDGE: 497
-action_NO_QUOTE: 77
-action_RESEARCH_CANDIDATE: 37
+action_NO_EDGE: 628
+action_NO_QUOTE: 76
+action_RESEARCH_CANDIDATE: 44
 contract_sides: 748
 fixtures: 32
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
-
-Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
