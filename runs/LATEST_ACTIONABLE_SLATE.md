@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261122T102828Z-45e8e8` · generated 2026-11-22T10:28:28.209019Z · trigger `kickoff_chain:T-60` · mode `reprice_only`
+slate `slate-20261122T104322Z-60717d` · generated 2026-11-22T10:43:22.853118Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-22T10:24:41.681977Z (CURRENT at publish; CURRENT until 2026-11-22T10:44:41.681977Z, STALE after 2026-11-22T10:54:41.681977Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-22T10:39:43.722100Z (CURRENT at publish; CURRENT until 2026-11-22T10:59:43.722100Z, STALE after 2026-11-22T11:09:43.722100Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-22T06:42:51.429352Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.32s
+model board generated 2026-11-22T06:42:51.429352Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.34s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -62,12 +62,12 @@ model board generated 2026-11-22T06:42:51.429352Z · simulations this update: 0 
 | St. Louis City SC vs Los Angeles FC | Result: away | no | 0.6700 | 0.787 [0.677, 0.884] | +0.101 | +0.038 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away wins by more than 1.5 | no | 0.8500 | 0.923 [0.868, 0.968] | +0.065 | +0.035 | 0.88 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away team total over 2.5 | no | 0.8500 | 0.924 [0.860, 0.970] | +0.065 | +0.031 | 0.88 | - |  | RESEARCH_CANDIDATE |
+| FC Augsburg vs Mainz 05 | Result: away | no | 0.5900 | 0.740 [0.553, 0.894] | +0.133 | +0.027 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | Atalanta vs Inter Milan | Result: home | yes | 0.1700 | 0.319 [0.162, 0.504] | +0.139 | +0.025 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 5.5 | no | 0.9200 | 0.966 [0.930, 0.992] | +0.041 | +0.025 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Sassuolo vs Genoa | Result: home | yes | 0.3500 | 0.517 [0.328, 0.706] | +0.151 | +0.023 | 0.37 | - | * | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Vasco da Gama | Result: away | no | 0.6300 | 0.743 [0.605, 0.861] | +0.097 | +0.022 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | Result: home | yes | 0.4100 | 0.546 [0.403, 0.692] | +0.119 | +0.021 | 0.43 | - |  | RESEARCH_CANDIDATE |
-| FC Augsburg vs Mainz 05 | Result: away | no | 0.6000 | 0.740 [0.553, 0.894] | +0.123 | +0.017 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | Santos vs Grêmio | btts | no | 0.4400 | 0.545 [0.434, 0.661] | +0.088 | +0.017 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | First-half result: away | no | 0.7300 | 0.815 [0.728, 0.892] | +0.071 | +0.016 | 0.74 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away wins by more than 2.5 | no | 0.9500 | 0.978 [0.957, 0.994] | +0.025 | +0.016 | 0.96 | - |  | RESEARCH_CANDIDATE |
@@ -84,8 +84,8 @@ model board generated 2026-11-22T06:42:51.429352Z · simulations this update: 0 
 
 ```
 action_MODEL_STALE: 139
-action_NO_EDGE: 366
-action_NO_QUOTE: 54
+action_NO_EDGE: 367
+action_NO_QUOTE: 53
 action_RESEARCH_CANDIDATE: 31
 contract_sides: 590
 fixtures: 31
