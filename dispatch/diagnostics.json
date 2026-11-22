@@ -1,11 +1,11 @@
 {
   "by_horizon": {
     "120": {
-      "achieved_minutes_median": 122.47,
+      "achieved_minutes_median": 122.45,
       "achieved_minutes_p10": 117.78,
       "achieved_minutes_p90": 126.4,
-      "delivered": 976,
-      "delivery_rate": 0.9268755935422602,
+      "delivered": 977,
+      "delivery_rate": 0.926944971537002,
       "lateness_minutes_max": 64.28,
       "lateness_minutes_median": -2.45,
       "missed": 77
@@ -32,10 +32,10 @@
     },
     "5": {
       "achieved_minutes_median": 1.96,
-      "achieved_minutes_p10": -0.01,
+      "achieved_minutes_p10": -0.05,
       "achieved_minutes_p90": 2.56,
-      "delivered": 871,
-      "delivery_rate": 0.8547595682041217,
+      "delivered": 872,
+      "delivery_rate": 0.8549019607843137,
       "lateness_minutes_max": 9.28,
       "lateness_minutes_median": 3.04,
       "missed": 148
@@ -51,20 +51,13 @@
       "missed": 114
     }
   },
-  "delivered_total": 4559,
-  "delivery_rate_total": 0.8836983911610777,
-  "fixtures_tracked": 1053,
-  "generated_at": "2026-11-22T23:02:50Z",
+  "delivered_total": 4561,
+  "delivery_rate_total": 0.883743460569657,
+  "fixtures_tracked": 1054,
+  "generated_at": "2026-11-22T23:09:26Z",
   "missed_total": 600,
   "n_pending_fixtures": 16,
   "pending_fixtures": [
-    {
-      "competition_id": "mex.liga_mx",
-      "fixture_id": "fx:mex.liga_mx:2026:mex.guadalajara:mex.cruz_azul",
-      "kickoff_utc": "2026-11-22T23:07:00Z",
-      "markets_discovered": 80,
-      "source": "run_output"
-    },
     {
       "competition_id": "usa.mls",
       "fixture_id": "fx:usa.mls:2026:usa.chicago_fire:usa.charlotte",
@@ -167,6 +160,13 @@
       "competition_id": "usa.mls",
       "fixture_id": "fx:usa.mls:2026:usa.san_jose_earthquakes:usa.houston_dynamo",
       "kickoff_utc": "2026-11-25T03:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "bra.serie_a",
+      "fixture_id": "fx:bra.serie_a:2026:bra.atletico_mineiro:bra.corinthians",
+      "kickoff_utc": "2026-11-25T23:00:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }
