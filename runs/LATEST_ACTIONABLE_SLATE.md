@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261122T210624Z-e3319a` · generated 2026-11-22T21:06:24.178807Z · trigger `kickoff_chain:T-120/T-30` · mode `reprice_only`
+slate `slate-20261122T211835Z-cf83b0` · generated 2026-11-22T21:18:35.138352Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-22T21:02:50.422846Z (CURRENT at publish; CURRENT until 2026-11-22T21:22:50.422846Z, STALE after 2026-11-22T21:32:50.422846Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-22T21:15:00.076321Z (CURRENT at publish; CURRENT until 2026-11-22T21:35:00.076321Z, STALE after 2026-11-22T21:45:00.076321Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-22T20:59:46.055698Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.28s
+model board generated 2026-11-22T20:59:46.055698Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.29s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,16 +12,16 @@ model board generated 2026-11-22T20:59:46.055698Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-22T21:30:00Z | Fluminense vs Mirassol (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
-| 2026-11-22T22:00:00Z | River Plate vs Lanús (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | CURRENT entry | CURRENT | 16 | 0 |
+| 2026-11-22T21:30:00Z | Fluminense vs Mirassol (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
+| 2026-11-22T22:00:00Z | River Plate vs Lanús (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | AGING entry | CURRENT | 16 | 0 |
 | 2026-11-22T22:30:00Z | Red Bull Bragantino vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-22T23:07:00Z | Guadalajara vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-11-23T01:00:00Z | Instituto vs Huracán (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 16 | 0 |
-| 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-11-22T23:07:00Z | Guadalajara vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-11-23T01:00:00Z | Instituto vs Huracán (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 16 | 0 |
+| 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-23T17:30:00Z | Monza vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 0 |
 | 2026-11-23T19:45:00Z | Juventus vs Venezia (ita.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-23T20:00:00Z | Gimnasia La Plata vs Newell's Old Boys (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 5 | 0 |
+| 2026-11-23T20:00:00Z | Gimnasia La Plata vs Newell's Old Boys (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 5 | 0 |
 | 2026-11-23T22:30:00Z | Internacional vs Vitória (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-23T23:00:00Z | Botafogo vs São Paulo (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-24T00:00:00Z | Santos vs Grêmio (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -72,8 +72,8 @@ model board generated 2026-11-22T20:59:46.055698Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 579
-action_NO_QUOTE: 420
+action_NO_EDGE: 580
+action_NO_QUOTE: 419
 action_RESEARCH_CANDIDATE: 37
 contract_sides: 1036
 fixtures: 14
