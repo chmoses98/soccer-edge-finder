@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261122T105829Z-71851b` · generated 2026-11-22T10:58:29.053210Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261122T110549Z-9ead39` · generated 2026-11-22T11:05:49.503488Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-22T10:54:43.791639Z (CURRENT at publish; CURRENT until 2026-11-22T11:14:43.791639Z, STALE after 2026-11-22T11:24:43.791639Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-22T11:01:50.165168Z (CURRENT at publish; CURRENT until 2026-11-22T11:21:50.165168Z, STALE after 2026-11-22T11:31:50.165168Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-22T06:42:51.429352Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.31s
+model board generated 2026-11-22T06:42:51.429352Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.32s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -44,7 +44,7 @@ model board generated 2026-11-22T06:42:51.429352Z · simulations this update: 0 
 | 2026-11-24T00:00:00Z | Santos vs Grêmio (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-24T01:00:00Z | St. Louis City SC vs Los Angeles FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 
-## Candidates on CURRENT prices (28; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (29; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -74,6 +74,7 @@ model board generated 2026-11-22T06:42:51.429352Z · simulations this update: 0 
 | Querétaro vs Necaxa | Exact score 1-0 (home-away) | yes | 0.0900 | 0.142 [0.093, 0.194] | +0.046 | +0.014 | 0.1 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Exact score 0-0 (home-away) | yes | 0.0600 | 0.118 [0.059, 0.187] | +0.054 | +0.010 | 0.06 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 0.5 | no | 0.0600 | 0.118 [0.059, 0.187] | +0.054 | +0.010 | 0.06 | - |  | RESEARCH_CANDIDATE |
+| Sassuolo vs Genoa | Result: away | no | 0.6400 | 0.755 [0.604, 0.889] | +0.099 | +0.008 | 0.64 | - |  | RESEARCH_CANDIDATE |
 | Bologna vs Udinese | Result: away | yes | 0.1900 | 0.309 [0.155, 0.482] | +0.108 | +0.004 | 0.19 | - | * | RESEARCH_CANDIDATE |
 | Getafe vs Atlético Madrid | Result: draw | yes | 0.2400 | 0.298 [0.234, 0.363] | +0.045 | +0.003 | 0.24 | - |  | RESEARCH_CANDIDATE |
 
@@ -81,9 +82,9 @@ model board generated 2026-11-22T06:42:51.429352Z · simulations this update: 0 
 
 ```
 action_MODEL_STALE: 167
-action_NO_EDGE: 342
+action_NO_EDGE: 341
 action_NO_QUOTE: 53
-action_RESEARCH_CANDIDATE: 28
+action_RESEARCH_CANDIDATE: 29
 contract_sides: 590
 fixtures: 31
 fixtures_model_invalidated: 0
