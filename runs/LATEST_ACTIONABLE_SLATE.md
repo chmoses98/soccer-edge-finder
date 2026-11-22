@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261122T123122Z-2593f8` · generated 2026-11-22T12:31:22.540274Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261122T124616Z-154d11` · generated 2026-11-22T12:46:16.768507Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-22T12:27:37.796291Z (CURRENT at publish; CURRENT until 2026-11-22T12:47:37.796291Z, STALE after 2026-11-22T12:57:37.796291Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-22T12:42:37.838122Z (CURRENT at publish; CURRENT until 2026-11-22T13:02:37.838122Z, STALE after 2026-11-22T13:12:37.838122Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-22T12:17:24.932364Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.30s
 
@@ -34,44 +34,46 @@ model board generated 2026-11-22T12:17:24.932364Z · simulations this update: 0 
 | 2026-11-24T00:00:00Z | Santos vs Grêmio (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-24T01:00:00Z | St. Louis City SC vs Los Angeles FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 
-## Candidates on CURRENT prices (26; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (28; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Querétaro vs Necaxa | btts | no | 0.3900 | 0.582 [0.462, 0.696] | +0.175 | +0.102 | 0.49 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Necaxa | Total goals over 2.5 | no | 0.4200 | 0.612 [0.455, 0.758] | +0.175 | +0.079 | 0.49 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Necaxa | Total goals over 3.5 | no | 0.6400 | 0.803 [0.678, 0.907] | +0.146 | +0.078 | 0.72 | - |  | RESEARCH_CANDIDATE |
-| Juventus vs Venezia | Result: draw | no | 0.6800 | 0.840 [0.738, 0.941] | +0.144 | +0.075 | 0.75 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Necaxa | Total goals over 1.5 | no | 0.1900 | 0.354 [0.220, 0.493] | +0.153 | +0.065 | 0.25 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Necaxa | btts | no | 0.3800 | 0.582 [0.462, 0.696] | +0.185 | +0.112 | 0.49 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Necaxa | Total goals over 2.5 | no | 0.3900 | 0.612 [0.455, 0.758] | +0.206 | +0.110 | 0.49 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Necaxa | Total goals over 3.5 | no | 0.6100 | 0.803 [0.678, 0.907] | +0.176 | +0.108 | 0.72 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Necaxa | Total goals over 1.5 | no | 0.1800 | 0.354 [0.220, 0.493] | +0.163 | +0.076 | 0.25 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Necaxa | Total goals over 4.5 | no | 0.7900 | 0.913 [0.838, 0.970] | +0.111 | +0.075 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away team total over 1.5 | no | 0.6000 | 0.755 [0.632, 0.857] | +0.139 | +0.063 | 0.66 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Necaxa | Total goals over 4.5 | no | 0.8100 | 0.913 [0.838, 0.970] | +0.092 | +0.056 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away team total over 0.5 | no | 0.2500 | 0.400 [0.276, 0.515] | +0.137 | +0.053 | 0.3 | - |  | RESEARCH_CANDIDATE |
-| Juventus vs Venezia | Result: home | yes | 0.5500 | 0.740 [0.542, 0.916] | +0.173 | +0.051 | 0.6 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | btts | no | 0.3800 | 0.517 [0.395, 0.631] | +0.120 | +0.043 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Atalanta vs Inter Milan | Result: away | no | 0.3700 | 0.551 [0.356, 0.736] | +0.164 | +0.042 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | Result: away | no | 0.6700 | 0.787 [0.677, 0.884] | +0.101 | +0.038 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away wins by more than 1.5 | no | 0.8500 | 0.923 [0.868, 0.968] | +0.065 | +0.035 | 0.88 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Necaxa | Total goals over 5.5 | no | 0.9100 | 0.966 [0.930, 0.992] | +0.050 | +0.035 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away team total over 2.5 | no | 0.8500 | 0.924 [0.860, 0.970] | +0.065 | +0.031 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | FC Augsburg vs Mainz 05 | Result: away | no | 0.5900 | 0.740 [0.553, 0.894] | +0.133 | +0.027 | 0.61 | - | * | RESEARCH_CANDIDATE |
+| Santos vs Grêmio | btts | no | 0.4300 | 0.545 [0.434, 0.661] | +0.098 | +0.027 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Atalanta vs Inter Milan | Result: home | yes | 0.1700 | 0.319 [0.162, 0.504] | +0.139 | +0.025 | 0.19 | - |  | RESEARCH_CANDIDATE |
-| Querétaro vs Necaxa | Total goals over 5.5 | no | 0.9200 | 0.966 [0.930, 0.992] | +0.041 | +0.025 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Exact score 1-0 (home-away) | yes | 0.0800 | 0.142 [0.093, 0.194] | +0.057 | +0.024 | 0.1 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | Result: home | yes | 0.4100 | 0.546 [0.403, 0.692] | +0.119 | +0.021 | 0.43 | - |  | RESEARCH_CANDIDATE |
-| Santos vs Grêmio | btts | no | 0.4400 | 0.545 [0.434, 0.661] | +0.088 | +0.017 | 0.45 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Necaxa | Total goals over 0.5 | no | 0.0500 | 0.118 [0.059, 0.187] | +0.065 | +0.021 | 0.06 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | First-half result: away | no | 0.7300 | 0.815 [0.728, 0.892] | +0.071 | +0.016 | 0.74 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away wins by more than 2.5 | no | 0.9500 | 0.978 [0.957, 0.994] | +0.025 | +0.016 | 0.96 | - |  | RESEARCH_CANDIDATE |
 | FC Augsburg vs Mainz 05 | Result: home | yes | 0.3500 | 0.521 [0.298, 0.740] | +0.155 | +0.014 | 0.36 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Necaxa | Exact score 2-2 (home-away) | no | 0.9400 | 0.965 [0.949, 0.981] | +0.021 | +0.011 | 0.95 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Exact score 0-0 (home-away) | yes | 0.0600 | 0.118 [0.059, 0.187] | +0.054 | +0.010 | 0.06 | - |  | RESEARCH_CANDIDATE |
-| Querétaro vs Necaxa | Total goals over 0.5 | no | 0.0600 | 0.118 [0.059, 0.187] | +0.054 | +0.010 | 0.06 | - |  | RESEARCH_CANDIDATE |
+| Juventus vs Venezia | Result: away | yes | 0.0300 | 0.100 [0.021, 0.197] | +0.068 | +0.004 | 0.03 | - | * | RESEARCH_CANDIDATE |
 | Bologna vs Udinese | Result: away | yes | 0.1900 | 0.309 [0.155, 0.482] | +0.108 | +0.004 | 0.19 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Necaxa | away wins by more than 1.5 | no | 0.8700 | 0.913 [0.846, 0.967] | +0.035 | +0.001 | 0.87 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Necaxa | Exact score 0-1 (home-away) | yes | 0.0600 | 0.094 [0.050, 0.142] | +0.030 | +0.000 | 0.06 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_MODEL_STALE: 223
-action_NO_EDGE: 251
-action_NO_QUOTE: 30
-action_RESEARCH_CANDIDATE: 26
+action_NO_EDGE: 250
+action_NO_QUOTE: 29
+action_RESEARCH_CANDIDATE: 28
 contract_sides: 530
 fixtures: 21
 fixtures_model_invalidated: 0
