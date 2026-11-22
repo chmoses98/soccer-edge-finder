@@ -1,10 +1,10 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 679,
-  "PINNACLE_VALID_CLOSE": 135,
-  "NO_SPORT_KEY": 39,
   "MISSED_DISPATCHER_CLOSE": 110,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 680,
+  "PINNACLE_VALID_CLOSE": 135,
   "CLOSE_BLOCKED_BUDGET": 31,
+  "NO_SPORT_KEY": 39,
   "PINNACLE_QUOTED_NOTHING": 3
  },
  "fixtures": {
@@ -3396,6 +3396,11 @@
   "fx:ita.serie_a:2026-27:ita.juventus:ita.napoli": {
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
+   "batch_id": null
+  },
+  "fx:ita.serie_a:2026-27:ita.juventus:ita.venezia": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
    "batch_id": null
   },
   "fx:ita.serie_a:2026-27:ita.lazio:ita.cagliari": {
