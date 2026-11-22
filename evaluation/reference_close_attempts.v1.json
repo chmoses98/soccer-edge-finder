@@ -1,10 +1,10 @@
 {
  "counts": {
-  "PINNACLE_VALID_CLOSE": 135,
-  "CLOSE_BLOCKED_BUDGET": 31,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 678,
   "MISSED_DISPATCHER_CLOSE": 110,
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 676,
+  "PINNACLE_VALID_CLOSE": 135,
   "NO_SPORT_KEY": 39,
+  "CLOSE_BLOCKED_BUDGET": 31,
   "PINNACLE_QUOTED_NOTHING": 3
  },
  "fixtures": {
@@ -519,6 +519,11 @@
    "batch_id": "kd-20261102T224332Z"
   },
   "fx:bra.serie_a:2026:bra.chapecoense:bra.athletico_paranaense": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:bra.serie_a:2026:bra.chapecoense:bra.cruzeiro": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
@@ -3914,6 +3919,11 @@
    "batch_id": "kd-20261108T025500Z"
   },
   "fx:mex.liga_mx:2026:mex.pumas:mex.cruz_azul": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:mex.liga_mx:2026:mex.pumas:mex.monterrey": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
