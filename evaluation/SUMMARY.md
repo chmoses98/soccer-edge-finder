@@ -1,6 +1,6 @@
-# settle-evaluate 2026-11-22 12:55Z
+# settle-evaluate 2026-11-22 15:16Z
 
-- newly settled: 316
+- newly settled: 54
 - cells evaluated: 266
 - authority proposals: 69
 
@@ -102,15 +102,15 @@
 | data_only.world_sim_v2 | handicap | any | 1938 | 0.34051 | 0.33074 | 0.0355 | 0.998 | -0.0008 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | handicap | close | 16 | 0.43429 | 0.37169 | 0.1327 | None | 0.0 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-10m | 18 | 0.53917 | 0.48252 | 0.2167 | None | 0.0019 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | match_result_3way | T-12h | 795 | 0.56618 | 0.51871 | 0.0547 | 0.912 | -0.0011 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | match_result_3way | T-12h | 801 | 0.56583 | 0.51789 | 0.0533 | 0.881 | -0.0019 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-15m | 123 | 0.53117 | 0.47932 | 0.1125 | 0.39 | -0.0003 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | match_result_3way | T-24h | 2106 | 0.56769 | 0.52338 | 0.0622 | 0.968 | -0.0015 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | match_result_3way | T-24h | 2154 | 0.56782 | 0.52386 | 0.0593 | 0.969 | -0.0024 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-2h | 312 | 0.56917 | 0.52673 | 0.0497 | 0.946 | 0.0035 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-30m | 204 | 0.56222 | 0.50974 | 0.0704 | 0.966 | 0.0004 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-60m | 273 | 0.58939 | 0.54761 | 0.0346 | 0.971 | -0.0046 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-6h | 438 | 0.58175 | 0.53121 | 0.0538 | 0.977 | 0.0011 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-90m | 36 | 0.5205 | 0.4534 | 0.1459 | 0.528 | 0.0012 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | match_result_3way | any | 4320 | 0.56809 | 0.52195 | 0.0599 | 0.969 | -0.0008 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | match_result_3way | any | 4374 | 0.56808 | 0.52205 | 0.0583 | 0.97 | -0.0014 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | close | 15 | 0.44679 | 0.38338 | 0.2321 | None | -0.0007 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_winner_2way | T-24h | 8 | 0.5318 | None | 0.3963 | None | None | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_winner_2way | T-6h | 2 | 0.47965 | None | 0.3675 | None | None | RESEARCH_ONLY |

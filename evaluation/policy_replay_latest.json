@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T13:00:50.903485+00:00",
+  "generated_at": "2026-11-22T15:20:40.419007+00:00",
   "model": {
     "families": [
       "data_only.world_sim_v2",
@@ -8,7 +8,7 @@
     "parameter_hash_count": 123
   },
   "n_records": 51149,
-  "n_settled_records": 47803,
+  "n_settled_records": 47857,
   "note": "flat 1-contract taker accounting for comparison only; staking is DISABLED in production; no historical record was modified",
   "policies": {
     "selection_v1": {
@@ -1683,16 +1683,16 @@
           "clv_mean_prob_points": null,
           "clv_n": 0,
           "hit_rate": null,
-          "n_candidates": 996,
-          "n_selected": 126,
+          "n_candidates": 888,
+          "n_selected": 111,
           "n_settled": 0,
           "n_void": 0,
           "n_won": 0,
           "pnl_units": 0.0,
           "rejection_reasons": {
-            "fee_adjusted_edge_below_min": 671,
-            "p_edge_positive_below_min": 870,
-            "worst_case_not_positive": 870
+            "fee_adjusted_edge_below_min": 596,
+            "p_edge_positive_below_min": 777,
+            "worst_case_not_positive": 777
           },
           "roi": null
         },
@@ -1716,19 +1716,19 @@
         "match_result_3way|T-12h": {
           "clv_mean_prob_points": -0.01634,
           "clv_n": 211,
-          "hit_rate": 0.1704,
-          "n_candidates": 2002,
-          "n_selected": 223,
-          "n_settled": 223,
+          "hit_rate": 0.1681,
+          "n_candidates": 2014,
+          "n_selected": 226,
+          "n_settled": 226,
           "n_void": 0,
           "n_won": 38,
-          "pnl_units": -24.393,
+          "pnl_units": -24.7326,
           "rejection_reasons": {
-            "fee_adjusted_edge_below_min": 1390,
-            "p_edge_positive_below_min": 1779,
-            "worst_case_not_positive": 1779
+            "fee_adjusted_edge_below_min": 1397,
+            "p_edge_positive_below_min": 1788,
+            "worst_case_not_positive": 1788
           },
-          "roi": -0.391
+          "roi": -0.3943
         },
         "match_result_3way|T-15m": {
           "clv_mean_prob_points": -0.00451,
@@ -1750,19 +1750,19 @@
         "match_result_3way|T-24h": {
           "clv_mean_prob_points": -0.01648,
           "clv_n": 526,
-          "hit_rate": 0.1569,
-          "n_candidates": 4656,
-          "n_selected": 561,
-          "n_settled": 561,
+          "hit_rate": 0.1536,
+          "n_candidates": 4752,
+          "n_selected": 573,
+          "n_settled": 573,
           "n_void": 0,
           "n_won": 88,
-          "pnl_units": -64.2947,
+          "pnl_units": -65.6323,
           "rejection_reasons": {
-            "fee_adjusted_edge_below_min": 3257,
-            "p_edge_positive_below_min": 4094,
-            "worst_case_not_positive": 4095
+            "fee_adjusted_edge_below_min": 3325,
+            "p_edge_positive_below_min": 4178,
+            "worst_case_not_positive": 4179
           },
-          "roi": -0.4222
+          "roi": -0.4272
         },
         "match_result_3way|T-2h": {
           "clv_mean_prob_points": -0.00838,
@@ -2582,19 +2582,19 @@
       "total": {
         "clv_mean_prob_points": -0.01113,
         "clv_n": 5697,
-        "hit_rate": 0.3727,
+        "hit_rate": 0.3718,
         "n_candidates": 90542,
         "n_selected": 6865,
-        "n_settled": 6416,
+        "n_settled": 6431,
         "n_void": 0,
         "n_won": 2391,
-        "pnl_units": -328.7499,
+        "pnl_units": -330.4272,
         "rejection_reasons": {
           "fee_adjusted_edge_below_min": 72454,
           "p_edge_positive_below_min": 83132,
           "worst_case_not_positive": 83145
         },
-        "roi": -0.1209
+        "roi": -0.1214
       }
     },
     "selection_v1_3way_only": {
@@ -4367,16 +4367,16 @@
           "clv_mean_prob_points": null,
           "clv_n": 0,
           "hit_rate": null,
-          "n_candidates": 996,
-          "n_selected": 126,
+          "n_candidates": 888,
+          "n_selected": 111,
           "n_settled": 0,
           "n_void": 0,
           "n_won": 0,
           "pnl_units": 0.0,
           "rejection_reasons": {
-            "fee_adjusted_edge_below_min": 671,
-            "p_edge_positive_below_min": 870,
-            "worst_case_not_positive": 870
+            "fee_adjusted_edge_below_min": 596,
+            "p_edge_positive_below_min": 777,
+            "worst_case_not_positive": 777
           },
           "roi": null
         },
@@ -4400,19 +4400,19 @@
         "match_result_3way|T-12h": {
           "clv_mean_prob_points": -0.01634,
           "clv_n": 211,
-          "hit_rate": 0.1704,
-          "n_candidates": 2002,
-          "n_selected": 223,
-          "n_settled": 223,
+          "hit_rate": 0.1681,
+          "n_candidates": 2014,
+          "n_selected": 226,
+          "n_settled": 226,
           "n_void": 0,
           "n_won": 38,
-          "pnl_units": -24.393,
+          "pnl_units": -24.7326,
           "rejection_reasons": {
-            "fee_adjusted_edge_below_min": 1390,
-            "p_edge_positive_below_min": 1779,
-            "worst_case_not_positive": 1779
+            "fee_adjusted_edge_below_min": 1397,
+            "p_edge_positive_below_min": 1788,
+            "worst_case_not_positive": 1788
           },
-          "roi": -0.391
+          "roi": -0.3943
         },
         "match_result_3way|T-15m": {
           "clv_mean_prob_points": -0.00451,
@@ -4434,19 +4434,19 @@
         "match_result_3way|T-24h": {
           "clv_mean_prob_points": -0.01648,
           "clv_n": 526,
-          "hit_rate": 0.1569,
-          "n_candidates": 4656,
-          "n_selected": 561,
-          "n_settled": 561,
+          "hit_rate": 0.1536,
+          "n_candidates": 4752,
+          "n_selected": 573,
+          "n_settled": 573,
           "n_void": 0,
           "n_won": 88,
-          "pnl_units": -64.2947,
+          "pnl_units": -65.6323,
           "rejection_reasons": {
-            "fee_adjusted_edge_below_min": 3257,
-            "p_edge_positive_below_min": 4094,
-            "worst_case_not_positive": 4095
+            "fee_adjusted_edge_below_min": 3325,
+            "p_edge_positive_below_min": 4178,
+            "worst_case_not_positive": 4179
           },
-          "roi": -0.4222
+          "roi": -0.4272
         },
         "match_result_3way|T-2h": {
           "clv_mean_prob_points": -0.00838,
@@ -5309,20 +5309,20 @@
       "total": {
         "clv_mean_prob_points": -0.01174,
         "clv_n": 1327,
-        "hit_rate": 0.1664,
+        "hit_rate": 0.1646,
         "n_candidates": 90542,
         "n_selected": 1514,
-        "n_settled": 1388,
+        "n_settled": 1403,
         "n_void": 0,
         "n_won": 231,
-        "pnl_units": -153.6856,
+        "pnl_units": -155.3629,
         "rejection_reasons": {
           "family_excluded": 78592,
           "fee_adjusted_edge_below_min": 72454,
           "p_edge_positive_below_min": 83132,
           "worst_case_not_positive": 83145
         },
-        "roi": -0.3995
+        "roi": -0.4021
       }
     },
     "selection_v1_loose": {
@@ -6899,15 +6899,15 @@
           "clv_mean_prob_points": null,
           "clv_n": 0,
           "hit_rate": null,
-          "n_candidates": 996,
-          "n_selected": 324,
+          "n_candidates": 888,
+          "n_selected": 291,
           "n_settled": 0,
           "n_void": 0,
           "n_won": 0,
           "pnl_units": 0.0,
           "rejection_reasons": {
-            "fee_adjusted_edge_below_min": 635,
-            "p_edge_positive_below_min": 672
+            "fee_adjusted_edge_below_min": 564,
+            "p_edge_positive_below_min": 597
           },
           "roi": null
         },
@@ -6928,20 +6928,20 @@
           "roi": -0.2156
         },
         "match_result_3way|T-12h": {
-          "clv_mean_prob_points": -0.01312,
-          "clv_n": 560,
-          "hit_rate": 0.2738,
-          "n_candidates": 2002,
-          "n_selected": 577,
-          "n_settled": 577,
+          "clv_mean_prob_points": -0.013,
+          "clv_n": 562,
+          "hit_rate": 0.2732,
+          "n_candidates": 2014,
+          "n_selected": 582,
+          "n_settled": 582,
           "n_void": 0,
-          "n_won": 158,
-          "pnl_units": -49.4116,
+          "n_won": 159,
+          "pnl_units": -49.7532,
           "rejection_reasons": {
-            "fee_adjusted_edge_below_min": 1311,
-            "p_edge_positive_below_min": 1421
+            "fee_adjusted_edge_below_min": 1318,
+            "p_edge_positive_below_min": 1428
           },
-          "roi": -0.2382
+          "roi": -0.2383
         },
         "match_result_3way|T-15m": {
           "clv_mean_prob_points": -0.00273,
@@ -6960,20 +6960,20 @@
           "roi": -0.264
         },
         "match_result_3way|T-24h": {
-          "clv_mean_prob_points": -0.0145,
-          "clv_n": 1274,
-          "hit_rate": 0.2781,
-          "n_candidates": 4656,
-          "n_selected": 1345,
-          "n_settled": 1345,
+          "clv_mean_prob_points": -0.01414,
+          "clv_n": 1282,
+          "hit_rate": 0.2811,
+          "n_candidates": 4752,
+          "n_selected": 1373,
+          "n_settled": 1373,
           "n_void": 0,
-          "n_won": 374,
-          "pnl_units": -103.7468,
+          "n_won": 386,
+          "pnl_units": -101.8552,
           "rejection_reasons": {
-            "fee_adjusted_edge_below_min": 3075,
-            "p_edge_positive_below_min": 3302
+            "fee_adjusted_edge_below_min": 3139,
+            "p_edge_positive_below_min": 3370
           },
-          "roi": -0.2172
+          "roi": -0.2088
         },
         "match_result_3way|T-2h": {
           "clv_mean_prob_points": -0.00797,
@@ -7744,20 +7744,20 @@
       "description": "looser thresholds (diagnostic only)",
       "hash": "040a6307636c3d8a",
       "total": {
-        "clv_mean_prob_points": -0.01209,
-        "clv_n": 14427,
+        "clv_mean_prob_points": -0.01206,
+        "clv_n": 14437,
         "hit_rate": 0.4093,
         "n_candidates": 90542,
         "n_selected": 17974,
-        "n_settled": 16770,
+        "n_settled": 16803,
         "n_void": 0,
-        "n_won": 6864,
-        "pnl_units": -609.2449,
+        "n_won": 6877,
+        "pnl_units": -607.6949,
         "rejection_reasons": {
           "fee_adjusted_edge_below_min": 68588,
           "p_edge_positive_below_min": 70386
         },
-        "roi": -0.0815
+        "roi": -0.0812
       }
     },
     "selection_v1_no_favourites": {
@@ -9528,17 +9528,17 @@
           "clv_mean_prob_points": null,
           "clv_n": 0,
           "hit_rate": null,
-          "n_candidates": 996,
-          "n_selected": 119,
+          "n_candidates": 888,
+          "n_selected": 104,
           "n_settled": 0,
           "n_void": 0,
           "n_won": 0,
           "pnl_units": 0.0,
           "rejection_reasons": {
-            "fee_adjusted_edge_below_min": 671,
-            "p_edge_positive_below_min": 870,
-            "price_above_max": 316,
-            "worst_case_not_positive": 870
+            "fee_adjusted_edge_below_min": 596,
+            "p_edge_positive_below_min": 777,
+            "price_above_max": 280,
+            "worst_case_not_positive": 777
           },
           "roi": null
         },
@@ -9563,20 +9563,20 @@
         "match_result_3way|T-12h": {
           "clv_mean_prob_points": -0.01636,
           "clv_n": 208,
-          "hit_rate": 0.1591,
-          "n_candidates": 2002,
-          "n_selected": 220,
-          "n_settled": 220,
+          "hit_rate": 0.157,
+          "n_candidates": 2014,
+          "n_selected": 223,
+          "n_settled": 223,
           "n_void": 0,
           "n_won": 35,
-          "pnl_units": -24.9787,
+          "pnl_units": -25.3183,
           "rejection_reasons": {
-            "fee_adjusted_edge_below_min": 1390,
-            "p_edge_positive_below_min": 1779,
-            "price_above_max": 650,
-            "worst_case_not_positive": 1779
+            "fee_adjusted_edge_below_min": 1397,
+            "p_edge_positive_below_min": 1788,
+            "price_above_max": 654,
+            "worst_case_not_positive": 1788
           },
-          "roi": -0.4165
+          "roi": -0.4197
         },
         "match_result_3way|T-15m": {
           "clv_mean_prob_points": -0.00451,
@@ -9599,20 +9599,20 @@
         "match_result_3way|T-24h": {
           "clv_mean_prob_points": -0.01718,
           "clv_n": 518,
-          "hit_rate": 0.1431,
-          "n_candidates": 4656,
-          "n_selected": 552,
-          "n_settled": 552,
+          "hit_rate": 0.1401,
+          "n_candidates": 4752,
+          "n_selected": 564,
+          "n_settled": 564,
           "n_void": 0,
           "n_won": 79,
-          "pnl_units": -66.3505,
+          "pnl_units": -67.6882,
           "rejection_reasons": {
-            "fee_adjusted_edge_below_min": 3257,
-            "p_edge_positive_below_min": 4094,
-            "price_above_max": 1572,
-            "worst_case_not_positive": 4095
+            "fee_adjusted_edge_below_min": 3325,
+            "p_edge_positive_below_min": 4178,
+            "price_above_max": 1604,
+            "worst_case_not_positive": 4179
           },
-          "roi": -0.4565
+          "roi": -0.4614
         },
         "match_result_3way|T-2h": {
           "clv_mean_prob_points": -0.00773,
@@ -10479,20 +10479,20 @@
       "total": {
         "clv_mean_prob_points": -0.01104,
         "clv_n": 4470,
-        "hit_rate": 0.2432,
+        "hit_rate": 0.2424,
         "n_candidates": 90542,
         "n_selected": 5374,
-        "n_settled": 5038,
+        "n_settled": 5053,
         "n_void": 0,
         "n_won": 1225,
-        "pnl_units": -326.9072,
+        "pnl_units": -328.5844,
         "rejection_reasons": {
           "fee_adjusted_edge_below_min": 72454,
           "p_edge_positive_below_min": 83132,
           "price_above_max": 31486,
           "worst_case_not_positive": 83145
         },
-        "roi": -0.2106
+        "roi": -0.2115
       }
     },
     "selection_v1_strict": {
@@ -12167,16 +12167,16 @@
           "clv_mean_prob_points": null,
           "clv_n": 0,
           "hit_rate": null,
-          "n_candidates": 996,
-          "n_selected": 55,
+          "n_candidates": 888,
+          "n_selected": 40,
           "n_settled": 0,
           "n_void": 0,
           "n_won": 0,
           "pnl_units": 0.0,
           "rejection_reasons": {
-            "fee_adjusted_edge_below_min": 731,
-            "p_edge_positive_below_min": 941,
-            "worst_case_not_positive": 870
+            "fee_adjusted_edge_below_min": 651,
+            "p_edge_positive_below_min": 848,
+            "worst_case_not_positive": 777
           },
           "roi": null
         },
@@ -12200,19 +12200,19 @@
         "match_result_3way|T-12h": {
           "clv_mean_prob_points": -0.02187,
           "clv_n": 84,
-          "hit_rate": 0.129,
-          "n_candidates": 2002,
-          "n_selected": 93,
-          "n_settled": 93,
+          "hit_rate": 0.125,
+          "n_candidates": 2014,
+          "n_selected": 96,
+          "n_settled": 96,
           "n_void": 0,
           "n_won": 12,
-          "pnl_units": -8.1308,
+          "pnl_units": -8.4704,
           "rejection_reasons": {
-            "fee_adjusted_edge_below_min": 1524,
-            "p_edge_positive_below_min": 1909,
-            "worst_case_not_positive": 1779
+            "fee_adjusted_edge_below_min": 1532,
+            "p_edge_positive_below_min": 1918,
+            "worst_case_not_positive": 1788
           },
-          "roi": -0.4039
+          "roi": -0.4138
         },
         "match_result_3way|T-15m": {
           "clv_mean_prob_points": -0.00214,
@@ -12234,19 +12234,19 @@
         "match_result_3way|T-24h": {
           "clv_mean_prob_points": -0.02349,
           "clv_n": 223,
-          "hit_rate": 0.1504,
-          "n_candidates": 4656,
-          "n_selected": 246,
-          "n_settled": 246,
+          "hit_rate": 0.1434,
+          "n_candidates": 4752,
+          "n_selected": 258,
+          "n_settled": 258,
           "n_void": 0,
           "n_won": 37,
-          "pnl_units": -19.5559,
+          "pnl_units": -20.8935,
           "rejection_reasons": {
-            "fee_adjusted_edge_below_min": 3551,
-            "p_edge_positive_below_min": 4410,
-            "worst_case_not_positive": 4095
+            "fee_adjusted_edge_below_min": 3623,
+            "p_edge_positive_below_min": 4494,
+            "worst_case_not_positive": 4179
           },
-          "roi": -0.3458
+          "roi": -0.3609
         },
         "match_result_3way|T-2h": {
           "clv_mean_prob_points": -0.00738,
@@ -13068,19 +13068,19 @@
       "total": {
         "clv_mean_prob_points": -0.01422,
         "clv_n": 2088,
-        "hit_rate": 0.341,
+        "hit_rate": 0.3389,
         "n_candidates": 90542,
         "n_selected": 2548,
-        "n_settled": 2378,
+        "n_settled": 2393,
         "n_void": 0,
         "n_won": 811,
-        "pnl_units": -115.4525,
+        "pnl_units": -117.1298,
         "rejection_reasons": {
           "fee_adjusted_edge_below_min": 77491,
           "p_edge_positive_below_min": 87777,
           "worst_case_not_positive": 83145
         },
-        "roi": -0.1246
+        "roi": -0.1262
       }
     },
     "selection_v1_totals_only": {
@@ -14853,17 +14853,17 @@
           "clv_mean_prob_points": null,
           "clv_n": 0,
           "hit_rate": null,
-          "n_candidates": 996,
+          "n_candidates": 888,
           "n_selected": 0,
           "n_settled": 0,
           "n_void": 0,
           "n_won": 0,
           "pnl_units": 0.0,
           "rejection_reasons": {
-            "family_excluded": 996,
-            "fee_adjusted_edge_below_min": 671,
-            "p_edge_positive_below_min": 870,
-            "worst_case_not_positive": 870
+            "family_excluded": 888,
+            "fee_adjusted_edge_below_min": 596,
+            "p_edge_positive_below_min": 777,
+            "worst_case_not_positive": 777
           },
           "roi": null
         },
@@ -14889,17 +14889,17 @@
           "clv_mean_prob_points": null,
           "clv_n": 0,
           "hit_rate": null,
-          "n_candidates": 2002,
+          "n_candidates": 2014,
           "n_selected": 0,
           "n_settled": 0,
           "n_void": 0,
           "n_won": 0,
           "pnl_units": 0.0,
           "rejection_reasons": {
-            "family_excluded": 2002,
-            "fee_adjusted_edge_below_min": 1390,
-            "p_edge_positive_below_min": 1779,
-            "worst_case_not_positive": 1779
+            "family_excluded": 2014,
+            "fee_adjusted_edge_below_min": 1397,
+            "p_edge_positive_below_min": 1788,
+            "worst_case_not_positive": 1788
           },
           "roi": null
         },
@@ -14925,17 +14925,17 @@
           "clv_mean_prob_points": null,
           "clv_n": 0,
           "hit_rate": null,
-          "n_candidates": 4656,
+          "n_candidates": 4752,
           "n_selected": 0,
           "n_settled": 0,
           "n_void": 0,
           "n_won": 0,
           "pnl_units": 0.0,
           "rejection_reasons": {
-            "family_excluded": 4656,
-            "fee_adjusted_edge_below_min": 3257,
-            "p_edge_positive_below_min": 4094,
-            "worst_case_not_positive": 4095
+            "family_excluded": 4752,
+            "fee_adjusted_edge_below_min": 3325,
+            "p_edge_positive_below_min": 4178,
+            "worst_case_not_positive": 4179
           },
           "roi": null
         },
@@ -17385,15 +17385,15 @@
           "clv_mean_prob_points": null,
           "clv_n": 0,
           "hit_rate": null,
-          "n_candidates": 996,
-          "n_selected": 126,
+          "n_candidates": 888,
+          "n_selected": 111,
           "n_settled": 0,
           "n_void": 0,
           "n_won": 0,
           "pnl_units": 0.0,
           "rejection_reasons": {
-            "fee_adjusted_edge_below_min": 671,
-            "worst_case_not_positive": 870
+            "fee_adjusted_edge_below_min": 596,
+            "worst_case_not_positive": 777
           },
           "roi": null
         },
@@ -17416,18 +17416,18 @@
         "match_result_3way|T-12h": {
           "clv_mean_prob_points": -0.01634,
           "clv_n": 211,
-          "hit_rate": 0.1704,
-          "n_candidates": 2002,
-          "n_selected": 223,
-          "n_settled": 223,
+          "hit_rate": 0.1681,
+          "n_candidates": 2014,
+          "n_selected": 226,
+          "n_settled": 226,
           "n_void": 0,
           "n_won": 38,
-          "pnl_units": -24.393,
+          "pnl_units": -24.7326,
           "rejection_reasons": {
-            "fee_adjusted_edge_below_min": 1390,
-            "worst_case_not_positive": 1779
+            "fee_adjusted_edge_below_min": 1397,
+            "worst_case_not_positive": 1788
           },
-          "roi": -0.391
+          "roi": -0.3943
         },
         "match_result_3way|T-15m": {
           "clv_mean_prob_points": -0.00451,
@@ -17448,18 +17448,18 @@
         "match_result_3way|T-24h": {
           "clv_mean_prob_points": -0.01648,
           "clv_n": 526,
-          "hit_rate": 0.1569,
-          "n_candidates": 4656,
-          "n_selected": 561,
-          "n_settled": 561,
+          "hit_rate": 0.1536,
+          "n_candidates": 4752,
+          "n_selected": 573,
+          "n_settled": 573,
           "n_void": 0,
           "n_won": 88,
-          "pnl_units": -64.2947,
+          "pnl_units": -65.6323,
           "rejection_reasons": {
-            "fee_adjusted_edge_below_min": 3257,
-            "worst_case_not_positive": 4095
+            "fee_adjusted_edge_below_min": 3325,
+            "worst_case_not_positive": 4179
           },
-          "roi": -0.4222
+          "roi": -0.4272
         },
         "match_result_3way|T-2h": {
           "clv_mean_prob_points": -0.00838,
@@ -18232,18 +18232,18 @@
       "total": {
         "clv_mean_prob_points": -0.01113,
         "clv_n": 5697,
-        "hit_rate": 0.3727,
+        "hit_rate": 0.3718,
         "n_candidates": 90542,
         "n_selected": 6865,
-        "n_settled": 6416,
+        "n_settled": 6431,
         "n_void": 0,
         "n_won": 2391,
-        "pnl_units": -328.7499,
+        "pnl_units": -330.4272,
         "rejection_reasons": {
           "fee_adjusted_edge_below_min": 72454,
           "worst_case_not_positive": 83145
         },
-        "roi": -0.1209
+        "roi": -0.1214
       }
     }
   },
