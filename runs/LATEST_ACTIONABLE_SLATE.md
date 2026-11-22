@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261122T220657Z-737c32` · generated 2026-11-22T22:06:57.511120Z · trigger `kickoff_chain:T-60/T-30` · mode `model_refresh_and_reprice`
+slate `slate-20261122T221511Z-168fbe` · generated 2026-11-22T22:15:11.460860Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-22T22:03:04.708950Z (CURRENT at publish; CURRENT until 2026-11-22T22:23:04.708950Z, STALE after 2026-11-22T22:33:04.708950Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-22T22:11:27.216239Z (CURRENT at publish; CURRENT until 2026-11-22T22:31:27.216239Z, STALE after 2026-11-22T22:41:27.216239Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-22T22:06:42.740514Z · simulations this update: 2 · Odds API calls this update: 1 (credits 3) · reprice 0.31s
+model board generated 2026-11-22T22:06:42.740514Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.49s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -59,6 +59,7 @@ model board generated 2026-11-22T22:06:42.740514Z · simulations this update: 2 
 | Red Bull Bragantino vs Vasco da Gama | away wins by more than 1.5 | no | 0.8200 | 0.892 [0.816, 0.953] | +0.062 | +0.022 | 0.84 | - | * | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Vasco da Gama | Result: home | yes | 0.3600 | 0.493 [0.334, 0.649] | +0.117 | +0.019 | 0.37 | 0.356 |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Palmeiras | Result: home | no | 0.7800 | 0.859 [0.774, 0.936] | +0.067 | +0.018 | 0.79 | - | * | RESEARCH_CANDIDATE |
+| Vancouver Whitecaps vs Real Salt Lake | Exact score 2-0 (home-away) | yes | 0.0800 | 0.124 [0.090, 0.157] | +0.039 | +0.017 | 0.09 | - | * | RESEARCH_CANDIDATE |
 | Santos vs Grêmio | btts | no | 0.4300 | 0.542 [0.420, 0.667] | +0.095 | +0.017 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | First-half result: away | no | 0.7300 | 0.816 [0.718, 0.902] | +0.073 | +0.016 | 0.74 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away wins by more than 2.5 | no | 0.9500 | 0.978 [0.958, 0.994] | +0.025 | +0.016 | 0.96 | - |  | RESEARCH_CANDIDATE |
@@ -66,17 +67,16 @@ model board generated 2026-11-22T22:06:42.740514Z · simulations this update: 2 
 | Querétaro vs Necaxa | away wins by more than 2.5 | no | 0.9500 | 0.977 [0.952, 0.994] | +0.023 | +0.013 | 0.96 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Exact score 2-2 (home-away) | no | 0.9400 | 0.966 [0.949, 0.981] | +0.022 | +0.012 | 0.95 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | First half: away wins by more than 1.5 | no | 0.9300 | 0.964 [0.929, 0.991] | +0.029 | +0.012 | 0.94 | - | * | RESEARCH_CANDIDATE |
-| Vancouver Whitecaps vs Real Salt Lake | Exact score 1-0 (home-away) | yes | 0.0700 | 0.121 [0.068, 0.175] | +0.046 | +0.012 | 0.08 | - | * | RESEARCH_CANDIDATE |
+| Vancouver Whitecaps vs Real Salt Lake | Exact score 1-0 (home-away) | yes | 0.0700 | 0.121 [0.068, 0.175] | +0.046 | +0.012 | 0.08 | - |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Palmeiras | btts | no | 0.4400 | 0.544 [0.416, 0.671] | +0.087 | +0.007 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Exact score 2-0 (home-away) | yes | 0.0600 | 0.096 [0.061, 0.132] | +0.032 | +0.007 | 0.06 | - |  | RESEARCH_CANDIDATE |
-| Vancouver Whitecaps vs Real Salt Lake | Exact score 2-0 (home-away) | yes | 0.0900 | 0.124 [0.090, 0.157] | +0.028 | +0.007 | 0.09 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | away wins by more than 1.5 | no | 0.8700 | 0.915 [0.852, 0.967] | +0.037 | +0.006 | 0.87 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 651
-action_NO_QUOTE: 225
+action_NO_EDGE: 653
+action_NO_QUOTE: 223
 action_RESEARCH_CANDIDATE: 46
 contract_sides: 922
 fixtures: 14
