@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261122T081312Z-13e3f0` · generated 2026-11-22T08:13:12.426466Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261122T082812Z-293b4d` · generated 2026-11-22T08:28:12.415886Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-22T08:09:33.481703Z (CURRENT at publish; CURRENT until 2026-11-22T08:29:33.481703Z, STALE after 2026-11-22T08:39:33.481703Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-22T08:24:33.551629Z (CURRENT at publish; CURRENT until 2026-11-22T08:44:33.551629Z, STALE after 2026-11-22T08:54:33.551629Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-22T06:42:51.429352Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.35s
+model board generated 2026-11-22T06:42:51.429352Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.52s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -28,7 +28,7 @@ model board generated 2026-11-22T06:42:51.429352Z · simulations this update: 0 
 | 2026-11-22T16:15:00Z | Lorient vs Rennes (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T16:30:00Z | Werder Bremen vs Hamburger SV (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T17:00:00Z | Bologna vs Udinese (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-22T19:00:00Z | Athletico Paranaense vs Remo (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-22T19:00:00Z | Athletico Paranaense vs Remo (bra.serie_a) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T19:45:00Z | Marseille vs Le Mans (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T19:45:00Z | Atalanta vs Inter Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T21:00:00Z | Nashville SC vs FC Cincinnati (usa.mls) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 47 | 0 |
@@ -69,6 +69,7 @@ model board generated 2026-11-22T06:42:51.429352Z · simulations this update: 0 
 | Nashville SC vs FC Cincinnati | Result: away | no | 0.8500 | 0.913 [0.852, 0.963] | +0.054 | +0.026 | 0.87 | - | * | RESEARCH_CANDIDATE |
 | Atalanta vs Inter Milan | Result: home | yes | 0.1700 | 0.319 [0.162, 0.504] | +0.139 | +0.025 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 5.5 | no | 0.9200 | 0.966 [0.930, 0.992] | +0.041 | +0.025 | 0.94 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Necaxa | Exact score 1-0 (home-away) | yes | 0.0800 | 0.142 [0.093, 0.194] | +0.057 | +0.024 | 0.1 | - | * | RESEARCH_CANDIDATE |
 | Sassuolo vs Genoa | Result: home | yes | 0.3500 | 0.517 [0.328, 0.706] | +0.151 | +0.023 | 0.37 | - | * | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Vasco da Gama | Result: away | no | 0.6300 | 0.743 [0.605, 0.861] | +0.097 | +0.022 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | away team total over 2.5 | no | 0.9200 | 0.962 [0.926, 0.988] | +0.036 | +0.019 | 0.94 | - |  | RESEARCH_CANDIDATE |
@@ -77,7 +78,6 @@ model board generated 2026-11-22T06:42:51.429352Z · simulations this update: 0 
 | St. Louis City SC vs Los Angeles FC | away wins by more than 2.5 | no | 0.9500 | 0.978 [0.957, 0.994] | +0.025 | +0.016 | 0.96 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | Result: home | yes | 0.6600 | 0.760 [0.644, 0.872] | +0.084 | +0.015 | 0.67 | - |  | RESEARCH_CANDIDATE |
 | FC Augsburg vs Mainz 05 | Result: home | yes | 0.3500 | 0.521 [0.298, 0.740] | +0.155 | +0.014 | 0.36 | - |  | RESEARCH_CANDIDATE |
-| Querétaro vs Necaxa | Exact score 1-0 (home-away) | yes | 0.0900 | 0.142 [0.093, 0.194] | +0.046 | +0.014 | 0.1 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | Result: home | yes | 0.4200 | 0.546 [0.403, 0.692] | +0.109 | +0.011 | 0.43 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | First-half result: away | no | 0.8400 | 0.898 [0.839, 0.951] | +0.048 | +0.011 | 0.85 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Exact score 0-0 (home-away) | yes | 0.0600 | 0.118 [0.059, 0.187] | +0.054 | +0.010 | 0.06 | - |  | RESEARCH_CANDIDATE |
@@ -92,7 +92,8 @@ model board generated 2026-11-22T06:42:51.429352Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 495
+action_MODEL_STALE: 27
+action_NO_EDGE: 468
 action_NO_QUOTE: 54
 action_RESEARCH_CANDIDATE: 41
 contract_sides: 590
