@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261122T092823Z-7228eb` · generated 2026-11-22T09:28:23.541623Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261122T094317Z-81a22d` · generated 2026-11-22T09:43:17.548751Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-22T09:24:36.956277Z (CURRENT at publish; CURRENT until 2026-11-22T09:44:36.956277Z, STALE after 2026-11-22T09:54:36.956277Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-22T09:39:38.746662Z (CURRENT at publish; CURRENT until 2026-11-22T09:59:38.746662Z, STALE after 2026-11-22T10:09:38.746662Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-22T06:42:51.429352Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.32s
+model board generated 2026-11-22T06:42:51.429352Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.48s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -32,7 +32,7 @@ model board generated 2026-11-22T06:42:51.429352Z · simulations this update: 0 
 | 2026-11-22T19:45:00Z | Marseille vs Le Mans (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T19:45:00Z | Atalanta vs Inter Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T21:00:00Z | Nashville SC vs FC Cincinnati (usa.mls) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 47 | 0 |
-| 2026-11-22T21:30:00Z | Fluminense vs Mirassol (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-22T21:30:00Z | Fluminense vs Mirassol (bra.serie_a) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T22:30:00Z | Red Bull Bragantino vs Vasco da Gama (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T23:07:00Z | Guadalajara vs Cruz Azul (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
@@ -85,8 +85,8 @@ model board generated 2026-11-22T06:42:51.429352Z · simulations this update: 0 
 ## Counts
 
 ```
-action_MODEL_STALE: 112
-action_NO_EDGE: 392
+action_MODEL_STALE: 139
+action_NO_EDGE: 365
 action_NO_QUOTE: 53
 action_RESEARCH_CANDIDATE: 33
 contract_sides: 590
