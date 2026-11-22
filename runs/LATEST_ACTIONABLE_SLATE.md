@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261122T163112Z-b5b2d8` · generated 2026-11-22T16:31:12.703172Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261122T163537Z-e97b16` · generated 2026-11-22T16:35:37.528800Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-22T16:27:25.915700Z (CURRENT at publish; CURRENT until 2026-11-22T16:47:25.915700Z, STALE after 2026-11-22T16:57:25.915700Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-22T16:31:58.073410Z (CURRENT at publish; CURRENT until 2026-11-22T16:51:58.073410Z, STALE after 2026-11-22T17:01:58.073410Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-22T15:32:31.434658Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.35s
+model board generated 2026-11-22T15:32:31.434658Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.57s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -49,11 +49,11 @@ model board generated 2026-11-22T15:32:31.434658Z · simulations this update: 0 
 | Nashville SC vs FC Cincinnati | away team total over 0.5 | no | 0.3400 | 0.491 [0.375, 0.607] | +0.135 | +0.061 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away team total over 0.5 | no | 0.2500 | 0.402 [0.278, 0.519] | +0.139 | +0.058 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | btts | no | 0.4000 | 0.540 [0.425, 0.649] | +0.123 | +0.055 | 0.45 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Necaxa | away team total over 2.5 | no | 0.8500 | 0.936 [0.878, 0.979] | +0.077 | +0.050 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | First half: both teams to score | no | 0.7600 | 0.861 [0.789, 0.931] | +0.089 | +0.047 | 0.8 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | First-half total goals over 0.5 | no | 0.2500 | 0.383 [0.268, 0.502] | +0.120 | +0.045 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | btts | no | 0.3800 | 0.517 [0.387, 0.633] | +0.120 | +0.042 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Atalanta vs Inter Milan | Result: away | no | 0.3700 | 0.551 [0.356, 0.736] | +0.164 | +0.042 | 0.41 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Necaxa | away team total over 2.5 | no | 0.8600 | 0.936 [0.878, 0.979] | +0.068 | +0.041 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | Result: away | no | 0.6700 | 0.789 [0.683, 0.885] | +0.104 | +0.041 | 0.71 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away wins by more than 1.5 | no | 0.8500 | 0.925 [0.870, 0.969] | +0.066 | +0.037 | 0.88 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 5.5 | no | 0.9100 | 0.967 [0.932, 0.992] | +0.051 | +0.037 | 0.94 | - |  | RESEARCH_CANDIDATE |
@@ -80,8 +80,8 @@ model board generated 2026-11-22T15:32:31.434658Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 744
-action_NO_QUOTE: 820
+action_NO_EDGE: 743
+action_NO_QUOTE: 821
 action_RESEARCH_CANDIDATE: 48
 contract_sides: 1612
 fixtures: 19
