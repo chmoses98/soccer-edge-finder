@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261122T004846Z-89696b` · generated 2026-11-22T00:48:46.508791Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261122T005506Z-021a7e` · generated 2026-11-22T00:55:06.542116Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-22T00:45:02.590337Z (CURRENT at publish; CURRENT until 2026-11-22T01:05:02.590337Z, STALE after 2026-11-22T01:15:02.590337Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-22T00:51:22.931863Z (CURRENT at publish; CURRENT until 2026-11-22T01:11:22.931863Z, STALE after 2026-11-22T01:21:22.931863Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-22T00:14:28.707039Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.22s
+model board generated 2026-11-22T00:14:28.707039Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.24s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -45,7 +45,7 @@ model board generated 2026-11-22T00:14:28.707039Z · simulations this update: 0 
 | 2026-11-23T23:00:00Z | Botafogo vs São Paulo (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-24T00:00:00Z | Santos vs Grêmio (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (37; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (39; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -66,6 +66,7 @@ model board generated 2026-11-22T00:14:28.707039Z · simulations this update: 0 
 | Pumas UNAM vs Monterrey | Result: home | yes | 0.3700 | 0.514 [0.357, 0.668] | +0.127 | +0.019 | 0.38 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Monterrey | Result: away | no | 0.6400 | 0.750 [0.617, 0.865] | +0.093 | +0.017 | 0.65 | - |  | RESEARCH_CANDIDATE |
 | FC Augsburg vs Mainz 05 | Result: away | no | 0.6000 | 0.740 [0.553, 0.894] | +0.123 | +0.017 | 0.61 | - | * | RESEARCH_CANDIDATE |
+| Nashville SC vs FC Cincinnati | Result: home | yes | 0.6600 | 0.760 [0.644, 0.872] | +0.084 | +0.015 | 0.67 | - |  | RESEARCH_CANDIDATE |
 | Atalanta vs Inter Milan | Result: home | yes | 0.1800 | 0.319 [0.161, 0.504] | +0.128 | +0.015 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | away wins by more than 1.5 | no | 0.9500 | 0.976 [0.954, 0.993] | +0.023 | +0.014 | 0.96 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Exact score 1-0 (home-away) | yes | 0.0900 | 0.142 [0.093, 0.194] | +0.046 | +0.014 | 0.1 | - | * | RESEARCH_CANDIDATE |
@@ -78,11 +79,12 @@ model board generated 2026-11-22T00:14:28.707039Z · simulations this update: 0 
 | Pumas UNAM vs Monterrey | home wins by more than 2.5 | yes | 0.0600 | 0.138 [0.052, 0.241] | +0.074 | +0.007 | 0.06 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 5.5 | no | 0.9400 | 0.966 [0.930, 0.992] | +0.022 | +0.006 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Vasco da Gama | away wins by more than 1.5 | no | 0.8400 | 0.894 [0.811, 0.955] | +0.045 | +0.006 | 0.84 | - | * | RESEARCH_CANDIDATE |
-| Nashville SC vs FC Cincinnati | Result: home | yes | 0.6700 | 0.760 [0.644, 0.872] | +0.075 | +0.005 | 0.67 | - |  | RESEARCH_CANDIDATE |
 | Santos vs Grêmio | Total goals over 2.5 | no | 0.4100 | 0.533 [0.375, 0.687] | +0.106 | +0.004 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | Bologna vs Udinese | Result: away | yes | 0.1900 | 0.309 [0.155, 0.480] | +0.108 | +0.004 | 0.19 | - | * | RESEARCH_CANDIDATE |
 | Pumas UNAM vs Monterrey | away team total over 0.5 | no | 0.2400 | 0.337 [0.221, 0.457] | +0.084 | +0.004 | 0.24 | - | * | RESEARCH_CANDIDATE |
+| Pumas UNAM vs Monterrey | First-half result: away | no | 0.7100 | 0.783 [0.678, 0.873] | +0.059 | +0.004 | 0.71 | - | * | RESEARCH_CANDIDATE |
 | FC Augsburg vs Mainz 05 | Result: home | yes | 0.3600 | 0.521 [0.298, 0.741] | +0.145 | +0.003 | 0.36 | - |  | RESEARCH_CANDIDATE |
+| Pumas UNAM vs Monterrey | First team to score: away | no | 0.5300 | 0.630 [0.508, 0.742] | +0.082 | +0.003 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Santos vs Grêmio | Total goals over 0.5 | no | 0.0500 | 0.091 [0.042, 0.149] | +0.037 | +0.003 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Vasco da Gama | Result: home | yes | 0.3700 | 0.492 [0.336, 0.646] | +0.106 | +0.001 | 0.37 | - |  | RESEARCH_CANDIDATE |
 | Getafe vs Atlético Madrid | Result: draw | yes | 0.2400 | 0.296 [0.234, 0.358] | +0.043 | +0.001 | 0.24 | - |  | RESEARCH_CANDIDATE |
@@ -90,10 +92,10 @@ model board generated 2026-11-22T00:14:28.707039Z · simulations this update: 0 
 ## Counts
 
 ```
-action_MODEL_STALE: 137
-action_NO_EDGE: 568
+action_MODEL_STALE: 136
+action_NO_EDGE: 567
 action_NO_QUOTE: 100
-action_RESEARCH_CANDIDATE: 37
+action_RESEARCH_CANDIDATE: 39
 contract_sides: 842
 fixtures: 32
 fixtures_model_invalidated: 0
