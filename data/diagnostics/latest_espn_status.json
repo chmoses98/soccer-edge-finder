@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-22T12:41:17.446993+00:00",
-  "events": 694,
+  "as_of": "2026-11-22T20:46:19.841535+00:00",
+  "events": 695,
   "events_skipped_unmapped": 397,
-  "fixtures_mapped": 297,
+  "fixtures_mapped": 298,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=43"
+      "weather_stopped:consecutive_failures:skipped=39"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 56,
+    "captured": 118,
     "events": 150,
     "failures": [],
-    "published_post": 84,
-    "published_pre_kickoff": 10,
-    "unchanged": 94,
-    "unpublished": 56
+    "published_post": 117,
+    "published_pre_kickoff": 4,
+    "unchanged": 32,
+    "unpublished": 29
   },
   "map_proposals": {
     "bel.1": {
@@ -281,7 +281,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 4,
+  "results_appended": 26,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -427,17 +427,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 13,
-    "events": 59,
+    "captured": 10,
+    "events": 52,
     "failures": [
-      "401912584: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=King%20Fahd%20International%20S",
-      "401912596: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Osaka&count=5&language=en&forma",
-      "401912597: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Kashima&count=5&language=en&for"
+      "401912585: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Ratchaburi&count=5&language=en&",
+      "401912586: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Shanghai&count=5&language=en&fo",
+      "401912598: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Dubai&count=5&language=en&forma"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 43,
+    "skipped": 39,
     "stopped": "consecutive_failures"
   }
 }
