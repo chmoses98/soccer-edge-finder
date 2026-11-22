@@ -1,10 +1,10 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 687,
-  "PINNACLE_VALID_CLOSE": 135,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 690,
+  "PINNACLE_VALID_CLOSE": 137,
+  "NO_SPORT_KEY": 39,
   "MISSED_DISPATCHER_CLOSE": 110,
   "CLOSE_BLOCKED_BUDGET": 31,
-  "NO_SPORT_KEY": 39,
   "PINNACLE_QUOTED_NOTHING": 3
  },
  "fixtures": {
@@ -1473,6 +1473,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:eng.premier_league:2026-27:eng.liverpool:eng.man_united": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
   "fx:eng.premier_league:2026-27:eng.liverpool:eng.man_united:matchday_11": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -2428,6 +2433,16 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:fra.ligue_1:2026-27:fra.lorient:fra.rennes": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:fra.ligue_1:2026-27:fra.lorient:fra.rennes:matchday_11": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261122T160701Z"
+  },
   "fx:fra.ligue_1:2026-27:fra.lyon:fra.angers": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -3152,6 +3167,16 @@
    "state": "CLOSE_BLOCKED_BUDGET",
    "close_horizon_delivered": true,
    "batch_id": "kd-20261121T141806Z"
+  },
+  "fx:ger.bundesliga:2026-27:ger.werder_bremen:ger.hamburg": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:ger.bundesliga:2026-27:ger.werder_bremen:ger.hamburg:matchday_10": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261122T161409Z"
   },
   "fx:ger.bundesliga:2026-27:ger.werder_bremen:ger.hoffenheim": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
