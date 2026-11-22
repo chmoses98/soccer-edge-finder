@@ -1,10 +1,42 @@
 {
-  "batch_id": "kd-20261122T160000Z",
-  "captured_at": "2026-11-22T16:03:38.599155Z",
-  "credits_charged": 0,
-  "eligible_fixtures": 0,
+  "batch_id": "kd-20261122T160701Z",
+  "captured_at": "2026-11-22T16:10:42.593192Z",
+  "credits_charged": 3,
+  "eligible_fixtures": 2,
   "no_sport_key": [],
-  "paid_calls": 0,
-  "snapshots": 0,
-  "status": "NOTHING_ELIGIBLE"
+  "paid_calls": 1,
+  "per_sport": {
+    "soccer_france_ligue_one": {
+      "close_fixtures": 1,
+      "credits": 3,
+      "entry_fixtures": 0,
+      "fixtures": 1,
+      "incomplete_markets": 0,
+      "join": {
+        "ambiguous": 0,
+        "events": 1,
+        "joined": 1,
+        "unjoined_fixtures": [],
+        "unresolved_names": []
+      },
+      "snapshots": 7,
+      "status": "OK"
+    },
+    "soccer_italy_serie_a": {
+      "fixtures": 1,
+      "join": {
+        "ambiguous": 0,
+        "events": 2,
+        "joined": 0,
+        "unjoined_fixtures": [
+          "fx:ita.serie_a:2026-27:ita.bologna:ita.udinese:matchday_12"
+        ],
+        "unresolved_names": []
+      },
+      "status": "NO_JOINED_EVENTS"
+    }
+  },
+  "remaining_after": 19535,
+  "snapshots": 7,
+  "status": "OK"
 }
