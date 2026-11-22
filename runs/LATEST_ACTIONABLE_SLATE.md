@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261122T002926Z-1e342e` · generated 2026-11-22T00:29:26.106382Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261122T003549Z-d0d745` · generated 2026-11-22T00:35:49.475055Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-22T00:25:44.000007Z (CURRENT at publish; CURRENT until 2026-11-22T00:45:44.000007Z, STALE after 2026-11-22T00:55:44.000007Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-22T00:32:03.757935Z (CURRENT at publish; CURRENT until 2026-11-22T00:52:03.757935Z, STALE after 2026-11-22T01:02:03.757935Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-22T00:14:28.707039Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.23s
 
@@ -12,8 +12,8 @@ model board generated 2026-11-22T00:14:28.707039Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-22T01:00:00Z | Pumas UNAM vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-11-22T03:00:00Z | Tigres UANL vs Club América (mex.liga_mx) | VALID (STALE) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-11-22T01:00:00Z | Pumas UNAM vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-11-22T03:00:00Z | Tigres UANL vs Club América (mex.liga_mx) | VALID (STALE) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-22T11:30:00Z | Sassuolo vs Genoa (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T12:00:00Z | Deportivo Alavés vs Deportivo La Coruña (esp.la_liga) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T12:00:00Z | FC Barcelona vs Villarreal (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -30,22 +30,22 @@ model board generated 2026-11-22T00:14:28.707039Z · simulations this update: 0 
 | 2026-11-22T16:15:00Z | Lorient vs Rennes (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T16:30:00Z | Werder Bremen vs Hamburger SV (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T17:00:00Z | Bologna vs Udinese (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-22T19:00:00Z | Athletico Paranaense vs Remo (bra.serie_a) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-22T19:00:00Z | Athletico Paranaense vs Remo (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T19:45:00Z | Marseille vs Le Mans (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T19:45:00Z | Atalanta vs Inter Milan (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T21:00:00Z | Nashville SC vs FC Cincinnati (usa.mls) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 47 | 0 |
-| 2026-11-22T21:30:00Z | Fluminense vs Mirassol (bra.serie_a) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-11-22T22:30:00Z | Red Bull Bragantino vs Vasco da Gama (bra.serie_a) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-11-22T23:07:00Z | Guadalajara vs Cruz Azul (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-22T21:30:00Z | Fluminense vs Mirassol (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-22T22:30:00Z | Red Bull Bragantino vs Vasco da Gama (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-22T23:07:00Z | Guadalajara vs Cruz Azul (mex.liga_mx) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 44 | 0 |
+| 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 44 | 0 |
 | 2026-11-23T17:30:00Z | Monza vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-23T19:45:00Z | Juventus vs Venezia (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-23T22:30:00Z | Internacional vs Vitória (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-23T23:00:00Z | Botafogo vs São Paulo (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-24T00:00:00Z | Santos vs Grêmio (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (37; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (38; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -86,14 +86,15 @@ model board generated 2026-11-22T00:14:28.707039Z · simulations this update: 0 
 | Santos vs Grêmio | Total goals over 0.5 | no | 0.0500 | 0.091 [0.042, 0.149] | +0.037 | +0.003 | 0.05 | - |  | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Vasco da Gama | Result: home | yes | 0.3700 | 0.492 [0.336, 0.646] | +0.106 | +0.001 | 0.37 | - |  | RESEARCH_CANDIDATE |
 | Getafe vs Atlético Madrid | Result: draw | yes | 0.2400 | 0.296 [0.234, 0.358] | +0.043 | +0.001 | 0.24 | - |  | RESEARCH_CANDIDATE |
+| Santos vs Grêmio | Total goals over 4.5 | no | 0.8100 | 0.872 [0.776, 0.951] | +0.051 | +0.000 | 0.81 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_MODEL_STALE: 137
+action_MODEL_STALE: 136
 action_NO_EDGE: 568
 action_NO_QUOTE: 100
-action_RESEARCH_CANDIDATE: 37
+action_RESEARCH_CANDIDATE: 38
 contract_sides: 842
 fixtures: 32
 fixtures_model_invalidated: 0
