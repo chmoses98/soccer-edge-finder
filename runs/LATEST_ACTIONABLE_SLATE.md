@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261122T144737Z-52b243` · generated 2026-11-22T14:47:37.725661Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261122T145435Z-d164d3` · generated 2026-11-22T14:54:35.264659Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-22T14:43:55.961729Z (CURRENT at publish; CURRENT until 2026-11-22T15:03:55.961729Z, STALE after 2026-11-22T15:13:55.961729Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-22T14:50:52.395287Z (CURRENT at publish; CURRENT until 2026-11-22T15:10:52.395287Z, STALE after 2026-11-22T15:20:52.395287Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-22T12:17:24.932364Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.27s
+model board generated 2026-11-22T12:17:24.932364Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.26s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -35,8 +35,8 @@ model board generated 2026-11-22T12:17:24.932364Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Bologna vs Udinese | Result: home | no | 0.3100 | 0.573 [0.384, 0.749] | +0.248 | +0.126 | 0.43 | - | * | RESEARCH_CANDIDATE |
-| Bologna vs Udinese | Result: away | yes | 0.0900 | 0.309 [0.155, 0.482] | +0.213 | +0.109 | 0.19 | - |  | RESEARCH_CANDIDATE |
+| Bologna vs Udinese | Result: home | no | 0.3000 | 0.573 [0.384, 0.749] | +0.258 | +0.136 | 0.43 | - | * | RESEARCH_CANDIDATE |
+| Bologna vs Udinese | Result: away | yes | 0.0800 | 0.309 [0.155, 0.482] | +0.224 | +0.120 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away team total over 1.5 | no | 0.6000 | 0.755 [0.632, 0.857] | +0.139 | +0.063 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away team total over 0.5 | no | 0.2500 | 0.400 [0.276, 0.515] | +0.137 | +0.053 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | btts | no | 0.3800 | 0.517 [0.395, 0.631] | +0.120 | +0.043 | 0.42 | - | * | RESEARCH_CANDIDATE |
@@ -53,9 +53,9 @@ model board generated 2026-11-22T12:17:24.932364Z · simulations this update: 0 
 ## Counts
 
 ```
-action_MODEL_STALE: 296
+action_MODEL_STALE: 297
 action_NO_EDGE: 167
-action_NO_QUOTE: 35
+action_NO_QUOTE: 34
 action_RESEARCH_CANDIDATE: 14
 contract_sides: 512
 fixtures: 18
