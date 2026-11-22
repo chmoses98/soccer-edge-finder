@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261122T232502Z-78a0f5` · generated 2026-11-22T23:25:02.725537Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261122T233127Z-20cead` · generated 2026-11-22T23:31:27.243379Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-22T23:21:33.731945Z (CURRENT at publish; CURRENT until 2026-11-22T23:41:33.731945Z, STALE after 2026-11-22T23:51:33.731945Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-22T23:27:59.137041Z (CURRENT at publish; CURRENT until 2026-11-22T23:47:59.137041Z, STALE after 2026-11-22T23:57:59.137041Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-22T23:02:37.153257Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.27s
+model board generated 2026-11-22T23:02:37.153257Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.36s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,6 @@ model board generated 2026-11-22T23:02:37.153257Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 79 | 1 |
 | 2026-11-23T01:00:00Z | Instituto vs Huracán (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 16 | 0 |
 | 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-23T01:30:00Z | Vancouver Whitecaps vs Real Salt Lake (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 50 | 1 |
@@ -25,12 +24,12 @@ model board generated 2026-11-22T23:02:37.153257Z · simulations this update: 0 
 | 2026-11-24T01:00:00Z | St. Louis City SC vs Los Angeles FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-11-24T21:00:00Z | Chapecoense vs Palmeiras (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (44; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (42; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
+| Querétaro vs Necaxa | btts | no | 0.3600 | 0.585 [0.469, 0.699] | +0.209 | +0.136 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 2.5 | no | 0.3800 | 0.617 [0.462, 0.763] | +0.221 | +0.127 | 0.5 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Necaxa | btts | no | 0.3700 | 0.585 [0.469, 0.699] | +0.199 | +0.125 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 3.5 | no | 0.6000 | 0.806 [0.685, 0.910] | +0.190 | +0.124 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | away team total over 1.5 | no | 0.5900 | 0.782 [0.660, 0.887] | +0.175 | +0.109 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | away team total over 0.5 | no | 0.2300 | 0.431 [0.299, 0.564] | +0.189 | +0.106 | 0.33 | - |  | RESEARCH_CANDIDATE |
@@ -65,19 +64,19 @@ model board generated 2026-11-22T23:02:37.153257Z · simulations this update: 0 
 | Chapecoense vs Palmeiras | btts | no | 0.4400 | 0.544 [0.416, 0.671] | +0.087 | +0.007 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Exact score 2-0 (home-away) | yes | 0.0600 | 0.096 [0.061, 0.132] | +0.032 | +0.007 | 0.06 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | away wins by more than 1.5 | no | 0.8700 | 0.915 [0.852, 0.967] | +0.037 | +0.006 | 0.87 | - |  | RESEARCH_CANDIDATE |
-| Chicago Fire vs Charlotte FC | Result: away | yes | 0.1800 | 0.280 [0.163, 0.409] | +0.090 | +0.006 | 0.18 | 0.168 | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | First half: away wins by more than 1.5 | no | 0.9400 | 0.964 [0.929, 0.991] | +0.020 | +0.006 | 0.94 | - | * | RESEARCH_CANDIDATE |
-| Chicago Fire vs Charlotte FC | away wins by more than 1.5 | yes | 0.0700 | 0.128 [0.060, 0.207] | +0.054 | +0.003 | 0.07 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs São Paulo | btts | no | 0.4700 | 0.565 [0.440, 0.682] | +0.078 | +0.003 | 0.47 | - | * | RESEARCH_CANDIDATE |
+| Vancouver Whitecaps vs Real Salt Lake | Exact score 0-0 (home-away) | yes | 0.0300 | 0.064 [0.025, 0.110] | +0.032 | +0.002 | 0.03 | - |  | RESEARCH_CANDIDATE |
+| Chapecoense vs Palmeiras | home wins by more than 1.5 | no | 0.9300 | 0.955 [0.918, 0.985] | +0.021 | +0.002 | 0.93 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 494
-action_NO_QUOTE: 198
-action_RESEARCH_CANDIDATE: 44
-contract_sides: 736
-fixtures: 12
+action_NO_EDGE: 352
+action_NO_QUOTE: 184
+action_RESEARCH_CANDIDATE: 42
+contract_sides: 578
+fixtures: 11
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
