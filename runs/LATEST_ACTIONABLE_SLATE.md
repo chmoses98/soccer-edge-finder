@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261122T075810Z-05287e` · generated 2026-11-22T07:58:10.647551Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261122T081312Z-13e3f0` · generated 2026-11-22T08:13:12.426466Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-22T07:54:31.467566Z (CURRENT at publish; CURRENT until 2026-11-22T08:14:31.467566Z, STALE after 2026-11-22T08:24:31.467566Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-22T08:09:33.481703Z (CURRENT at publish; CURRENT until 2026-11-22T08:29:33.481703Z, STALE after 2026-11-22T08:39:33.481703Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-22T06:42:51.429352Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.37s
+model board generated 2026-11-22T06:42:51.429352Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.35s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -44,7 +44,7 @@ model board generated 2026-11-22T06:42:51.429352Z · simulations this update: 0 
 | 2026-11-24T00:00:00Z | Santos vs Grêmio (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-24T01:00:00Z | St. Louis City SC vs Los Angeles FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 
-## Candidates on CURRENT prices (40; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (41; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -85,16 +85,16 @@ model board generated 2026-11-22T06:42:51.429352Z · simulations this update: 0 
 | Red Bull Bragantino vs Vasco da Gama | away wins by more than 2.5 | no | 0.9400 | 0.965 [0.927, 0.990] | +0.021 | +0.006 | 0.94 | - | * | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Vasco da Gama | Result: home | yes | 0.3650 | 0.492 [0.336, 0.646] | +0.111 | +0.006 | 0.37 | - |  | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Vasco da Gama | away wins by more than 1.5 | no | 0.8400 | 0.894 [0.811, 0.955] | +0.045 | +0.006 | 0.84 | - |  | RESEARCH_CANDIDATE |
+| Bologna vs Udinese | Result: away | yes | 0.1900 | 0.309 [0.155, 0.482] | +0.108 | +0.004 | 0.19 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | First half: both teams to score | no | 0.7600 | 0.825 [0.748, 0.902] | +0.052 | +0.004 | 0.76 | - | * | RESEARCH_CANDIDATE |
 | Getafe vs Atlético Madrid | Result: draw | yes | 0.2400 | 0.298 [0.234, 0.363] | +0.045 | +0.003 | 0.24 | - |  | RESEARCH_CANDIDATE |
-| Santos vs Grêmio | Total goals over 0.5 | no | 0.0500 | 0.091 [0.042, 0.149] | +0.037 | +0.003 | 0.05 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 496
+action_NO_EDGE: 495
 action_NO_QUOTE: 54
-action_RESEARCH_CANDIDATE: 40
+action_RESEARCH_CANDIDATE: 41
 contract_sides: 590
 fixtures: 31
 fixtures_model_invalidated: 0
