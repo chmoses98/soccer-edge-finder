@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261122T024651Z-1f083c` · generated 2026-11-22T02:46:51.394403Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261122T025844Z-db1ce8` · generated 2026-11-22T02:58:44.022912Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-22T02:43:07.289102Z (CURRENT at publish; CURRENT until 2026-11-22T03:03:07.289102Z, STALE after 2026-11-22T03:13:07.289102Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-22T02:55:00.072725Z (CURRENT at publish; CURRENT until 2026-11-22T03:15:00.072725Z, STALE after 2026-11-22T03:25:00.072725Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-22T02:01:50.878756Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.21s
 
@@ -36,7 +36,7 @@ model board generated 2026-11-22T02:01:50.878756Z · simulations this update: 0 
 | 2026-11-22T21:30:00Z | Fluminense vs Mirassol (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T22:30:00Z | Red Bull Bragantino vs Vasco da Gama (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T23:07:00Z | Guadalajara vs Cruz Azul (mex.liga_mx) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 44 | 0 |
 | 2026-11-23T17:30:00Z | Monza vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-23T19:45:00Z | Juventus vs Venezia (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -45,7 +45,7 @@ model board generated 2026-11-22T02:01:50.878756Z · simulations this update: 0 
 | 2026-11-24T00:00:00Z | Santos vs Grêmio (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-24T01:00:00Z | St. Louis City SC vs Los Angeles FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 
-## Candidates on CURRENT prices (40; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (41; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -85,17 +85,17 @@ model board generated 2026-11-22T02:01:50.878756Z · simulations this update: 0 
 | Red Bull Bragantino vs Vasco da Gama | Result: home | yes | 0.3650 | 0.492 [0.336, 0.646] | +0.111 | +0.006 | 0.37 | - |  | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Vasco da Gama | away wins by more than 1.5 | no | 0.8400 | 0.894 [0.811, 0.955] | +0.045 | +0.006 | 0.84 | - |  | RESEARCH_CANDIDATE |
 | Bologna vs Udinese | Result: away | yes | 0.1900 | 0.309 [0.155, 0.480] | +0.108 | +0.004 | 0.19 | - | * | RESEARCH_CANDIDATE |
+| Nashville SC vs FC Cincinnati | First half: both teams to score | no | 0.7600 | 0.825 [0.748, 0.902] | +0.052 | +0.004 | 0.76 | - | * | RESEARCH_CANDIDATE |
 | FC Augsburg vs Mainz 05 | Result: home | yes | 0.3600 | 0.521 [0.298, 0.741] | +0.145 | +0.003 | 0.36 | - |  | RESEARCH_CANDIDATE |
 | Tigres UANL vs Club América | First half: away wins by more than 1.5 | no | 0.8800 | 0.920 [0.859, 0.971] | +0.032 | +0.003 | 0.88 | - | * | RESEARCH_CANDIDATE |
 | Santos vs Grêmio | Total goals over 0.5 | no | 0.0500 | 0.091 [0.042, 0.149] | +0.037 | +0.003 | 0.05 | - | * | RESEARCH_CANDIDATE |
-| Getafe vs Atlético Madrid | Result: draw | yes | 0.2400 | 0.296 [0.234, 0.358] | +0.043 | +0.001 | 0.24 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 633
-action_NO_QUOTE: 75
-action_RESEARCH_CANDIDATE: 40
+action_NO_EDGE: 631
+action_NO_QUOTE: 76
+action_RESEARCH_CANDIDATE: 41
 contract_sides: 748
 fixtures: 32
 fixtures_model_invalidated: 0
