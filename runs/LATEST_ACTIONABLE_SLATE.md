@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261122T224047Z-8cfc41` · generated 2026-11-22T22:40:47.402682Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
+slate `slate-20261122T225532Z-ea5a5a` · generated 2026-11-22T22:55:32.185306Z · trigger `kickoff_chain:T-120/T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-22T22:37:02.357929Z (CURRENT at publish; CURRENT until 2026-11-22T22:57:02.357929Z, STALE after 2026-11-22T23:07:02.357929Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-22T22:52:00.076780Z (CURRENT at publish; CURRENT until 2026-11-22T23:12:00.076780Z, STALE after 2026-11-22T23:22:00.076780Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-22T22:40:35.226486Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.31s
+model board generated 2026-11-22T22:40:35.226486Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.31s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,15 +12,15 @@ model board generated 2026-11-22T22:40:35.226486Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-22T23:07:00Z | Guadalajara vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 79 | 1 |
-| 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | CURRENT entry | CURRENT | 79 | 1 |
-| 2026-11-23T01:00:00Z | Instituto vs Huracán (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 16 | 0 |
+| 2026-11-22T23:07:00Z | Guadalajara vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 79 | 1 |
+| 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | AGING entry | CURRENT | 79 | 1 |
+| 2026-11-23T01:00:00Z | Instituto vs Huracán (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 16 | 0 |
 | 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-11-23T01:30:00Z | Vancouver Whitecaps vs Real Salt Lake (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 50 | 1 |
+| 2026-11-23T01:30:00Z | Vancouver Whitecaps vs Real Salt Lake (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 50 | 1 |
 | 2026-11-23T17:30:00Z | Monza vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-23T19:45:00Z | Juventus vs Venezia (ita.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-23T20:00:00Z | Gimnasia La Plata vs Newell's Old Boys (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 5 | 0 |
-| 2026-11-23T22:30:00Z | Internacional vs Vitória (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-23T20:00:00Z | Gimnasia La Plata vs Newell's Old Boys (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 5 | 0 |
+| 2026-11-23T22:30:00Z | Internacional vs Vitória (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-23T23:00:00Z | Botafogo vs São Paulo (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-24T00:00:00Z | Santos vs Grêmio (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-24T01:00:00Z | St. Louis City SC vs Los Angeles FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
@@ -39,10 +39,10 @@ model board generated 2026-11-22T22:40:35.226486Z · simulations this update: 1 
 | Querétaro vs Necaxa | Total goals over 4.5 | no | 0.7900 | 0.915 [0.843, 0.972] | +0.113 | +0.079 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | First-half total goals over 1.5 | no | 0.5900 | 0.742 [0.618, 0.852] | +0.135 | +0.071 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away team total over 1.5 | no | 0.6000 | 0.756 [0.634, 0.859] | +0.140 | +0.069 | 0.67 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Necaxa | away team total over 2.5 | no | 0.8400 | 0.936 [0.878, 0.979] | +0.087 | +0.060 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away team total over 0.5 | no | 0.2500 | 0.402 [0.278, 0.519] | +0.139 | +0.058 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | First half: both teams to score | no | 0.7500 | 0.861 [0.789, 0.931] | +0.098 | +0.057 | 0.8 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | First-half total goals over 0.5 | no | 0.2400 | 0.383 [0.268, 0.502] | +0.130 | +0.055 | 0.29 | - |  | RESEARCH_CANDIDATE |
-| Querétaro vs Necaxa | away team total over 2.5 | no | 0.8500 | 0.936 [0.878, 0.979] | +0.077 | +0.050 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | First-half exact score 0-0 (home-away) | yes | 0.2500 | 0.383 [0.268, 0.502] | +0.120 | +0.045 | 0.29 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | btts | no | 0.3800 | 0.517 [0.387, 0.633] | +0.120 | +0.042 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | Result: away | no | 0.6700 | 0.789 [0.683, 0.885] | +0.104 | +0.041 | 0.71 | - | * | RESEARCH_CANDIDATE |
@@ -74,8 +74,8 @@ model board generated 2026-11-22T22:40:35.226486Z · simulations this update: 1 
 ## Counts
 
 ```
-action_NO_EDGE: 629
-action_NO_QUOTE: 220
+action_NO_EDGE: 627
+action_NO_QUOTE: 222
 action_RESEARCH_CANDIDATE: 45
 contract_sides: 894
 fixtures: 13
