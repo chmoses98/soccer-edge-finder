@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261122T013143Z-c6ab47` · generated 2026-11-22T01:31:43.504469Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261122T014645Z-64a831` · generated 2026-11-22T01:46:45.920588Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-22T01:28:01.179199Z (CURRENT at publish; CURRENT until 2026-11-22T01:48:01.179199Z, STALE after 2026-11-22T01:58:01.179199Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-22T01:43:03.527733Z (CURRENT at publish; CURRENT until 2026-11-22T02:03:03.527733Z, STALE after 2026-11-22T02:13:03.527733Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-22T01:16:45.572144Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.43s
+model board generated 2026-11-22T01:16:45.572144Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.20s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-22T01:16:45.572144Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-22T03:00:00Z | Tigres UANL vs Club América (mex.liga_mx) | VALID (STALE) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-11-22T03:00:00Z | Tigres UANL vs Club América (mex.liga_mx) | VALID (STALE) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-22T11:30:00Z | Sassuolo vs Genoa (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T12:00:00Z | Deportivo Alavés vs Deportivo La Coruña (esp.la_liga) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-22T12:00:00Z | FC Barcelona vs Villarreal (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -35,9 +35,9 @@ model board generated 2026-11-22T01:16:45.572144Z · simulations this update: 0 
 | 2026-11-22T21:00:00Z | Nashville SC vs FC Cincinnati (usa.mls) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 47 | 0 |
 | 2026-11-22T21:30:00Z | Fluminense vs Mirassol (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T22:30:00Z | Red Bull Bragantino vs Vasco da Gama (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-11-22T23:07:00Z | Guadalajara vs Cruz Azul (mex.liga_mx) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-22T23:07:00Z | Guadalajara vs Cruz Azul (mex.liga_mx) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 44 | 0 |
+| 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 44 | 0 |
 | 2026-11-23T17:30:00Z | Monza vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-23T19:45:00Z | Juventus vs Venezia (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-23T22:30:00Z | Internacional vs Vitória (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
@@ -70,6 +70,7 @@ model board generated 2026-11-22T01:16:45.572144Z · simulations this update: 0 
 | Nashville SC vs FC Cincinnati | Result: away | no | 0.8500 | 0.913 [0.852, 0.963] | +0.054 | +0.026 | 0.87 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 5.5 | no | 0.9200 | 0.966 [0.930, 0.992] | +0.041 | +0.025 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Vasco da Gama | Result: away | no | 0.6300 | 0.743 [0.605, 0.861] | +0.097 | +0.022 | 0.65 | - | * | RESEARCH_CANDIDATE |
+| FC Augsburg vs Mainz 05 | Result: away | no | 0.6000 | 0.740 [0.553, 0.894] | +0.123 | +0.017 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away wins by more than 1.5 | no | 0.8700 | 0.923 [0.868, 0.968] | +0.046 | +0.016 | 0.88 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away wins by more than 2.5 | no | 0.9500 | 0.978 [0.957, 0.994] | +0.025 | +0.016 | 0.96 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | Result: home | yes | 0.6600 | 0.760 [0.644, 0.872] | +0.084 | +0.015 | 0.67 | - |  | RESEARCH_CANDIDATE |
@@ -79,7 +80,6 @@ model board generated 2026-11-22T01:16:45.572144Z · simulations this update: 0 
 | St. Louis City SC vs Los Angeles FC | Result: home | yes | 0.4200 | 0.546 [0.403, 0.692] | +0.109 | +0.011 | 0.43 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | First-half result: away | no | 0.8400 | 0.898 [0.839, 0.951] | +0.048 | +0.011 | 0.85 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 0.5 | no | 0.0600 | 0.118 [0.059, 0.187] | +0.054 | +0.010 | 0.06 | - |  | RESEARCH_CANDIDATE |
-| FC Augsburg vs Mainz 05 | Result: away | no | 0.6100 | 0.740 [0.553, 0.894] | +0.113 | +0.007 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Vasco da Gama | Result: home | yes | 0.3650 | 0.492 [0.336, 0.646] | +0.111 | +0.006 | 0.37 | - |  | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Vasco da Gama | away wins by more than 1.5 | no | 0.8400 | 0.894 [0.811, 0.955] | +0.045 | +0.006 | 0.84 | - | * | RESEARCH_CANDIDATE |
 | Bologna vs Udinese | Result: away | yes | 0.1900 | 0.309 [0.155, 0.480] | +0.108 | +0.004 | 0.19 | - | * | RESEARCH_CANDIDATE |
@@ -90,9 +90,9 @@ model board generated 2026-11-22T01:16:45.572144Z · simulations this update: 0 
 ## Counts
 
 ```
-action_MODEL_STALE: 138
+action_MODEL_STALE: 137
 action_NO_EDGE: 497
-action_NO_QUOTE: 76
+action_NO_QUOTE: 77
 action_RESEARCH_CANDIDATE: 37
 contract_sides: 748
 fixtures: 32
