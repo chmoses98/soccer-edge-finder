@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261122T212457Z-16596a` · generated 2026-11-22T21:24:57.704480Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261122T213133Z-49f444` · generated 2026-11-22T21:31:33.386443Z · trigger `kickoff_chain:T-60/T-30/T-5` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-22T21:21:24.805858Z (CURRENT at publish; CURRENT until 2026-11-22T21:41:24.805858Z, STALE after 2026-11-22T21:51:24.805858Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-22T21:27:53.066984Z (CURRENT at publish; CURRENT until 2026-11-22T21:47:53.066984Z, STALE after 2026-11-22T21:57:53.066984Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-22T20:59:46.055698Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.28s
+model board generated 2026-11-22T21:31:31.002075Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.27s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,28 +12,27 @@ model board generated 2026-11-22T20:59:46.055698Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-22T21:30:00Z | Fluminense vs Mirassol (bra.serie_a) | VALID (CURRENT) | confirmed (AGING) | CURRENT close | CURRENT | 14 | 0 |
-| 2026-11-22T22:00:00Z | River Plate vs Lanús (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | AGING entry | CURRENT | 16 | 0 |
-| 2026-11-22T22:30:00Z | Red Bull Bragantino vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-22T22:00:00Z | River Plate vs Lanús (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | AGING entry | CURRENT | 16 | 0 |
+| 2026-11-22T22:30:00Z | Red Bull Bragantino vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
 | 2026-11-22T23:07:00Z | Guadalajara vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-11-23T01:00:00Z | Instituto vs Huracán (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 16 | 0 |
+| 2026-11-22T23:30:00Z | Chicago Fire vs Charlotte FC (usa.mls) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-11-23T01:00:00Z | Instituto vs Huracán (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 16 | 0 |
 | 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-23T17:30:00Z | Monza vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 0 |
 | 2026-11-23T19:45:00Z | Juventus vs Venezia (ita.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-23T20:00:00Z | Gimnasia La Plata vs Newell's Old Boys (arg.primera) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 5 | 0 |
-| 2026-11-23T22:30:00Z | Internacional vs Vitória (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-23T20:00:00Z | Gimnasia La Plata vs Newell's Old Boys (arg.primera) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 5 | 0 |
+| 2026-11-23T22:30:00Z | Internacional vs Vitória (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-23T23:00:00Z | Botafogo vs São Paulo (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-24T00:00:00Z | Santos vs Grêmio (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-24T01:00:00Z | St. Louis City SC vs Los Angeles FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 
-## Candidates on CURRENT prices (37; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (38; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Querétaro vs Necaxa | Total goals over 2.5 | no | 0.3800 | 0.617 [0.462, 0.763] | +0.221 | +0.127 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | btts | no | 0.3700 | 0.585 [0.469, 0.699] | +0.199 | +0.125 | 0.49 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Necaxa | Total goals over 3.5 | no | 0.6000 | 0.806 [0.685, 0.910] | +0.190 | +0.124 | 0.72 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Necaxa | Total goals over 3.5 | no | 0.6100 | 0.806 [0.685, 0.910] | +0.180 | +0.114 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | away team total over 1.5 | no | 0.5900 | 0.782 [0.660, 0.887] | +0.175 | +0.109 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | away team total over 0.5 | no | 0.2300 | 0.431 [0.299, 0.564] | +0.189 | +0.106 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 1.5 | no | 0.1700 | 0.358 [0.222, 0.501] | +0.179 | +0.089 | 0.25 | - |  | RESEARCH_CANDIDATE |
@@ -51,7 +50,7 @@ model board generated 2026-11-22T20:59:46.055698Z · simulations this update: 0 
 | St. Louis City SC vs Los Angeles FC | away wins by more than 1.5 | no | 0.8500 | 0.925 [0.870, 0.969] | +0.066 | +0.037 | 0.88 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 5.5 | no | 0.9100 | 0.967 [0.932, 0.992] | +0.051 | +0.037 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away team total over 2.5 | no | 0.8500 | 0.924 [0.862, 0.971] | +0.065 | +0.034 | 0.88 | - |  | RESEARCH_CANDIDATE |
-| Red Bull Bragantino vs Vasco da Gama | Result: away | no | 0.6250 | 0.740 [0.609, 0.854] | +0.099 | +0.028 | 0.65 | - | * | RESEARCH_CANDIDATE |
+| Red Bull Bragantino vs Vasco da Gama | Result: away | no | 0.6250 | 0.740 [0.609, 0.854] | +0.099 | +0.028 | 0.65 | 0.626 | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | Result: home | yes | 0.4100 | 0.550 [0.405, 0.695] | +0.123 | +0.027 | 0.43 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Exact score 1-0 (home-away) | yes | 0.0800 | 0.144 [0.092, 0.194] | +0.058 | +0.025 | 0.1 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Exact score 0-0 (home-away) | yes | 0.0500 | 0.120 [0.059, 0.188] | +0.067 | +0.024 | 0.07 | - |  | RESEARCH_CANDIDATE |
@@ -59,10 +58,11 @@ model board generated 2026-11-22T20:59:46.055698Z · simulations this update: 0 
 | Santos vs Grêmio | btts | no | 0.4300 | 0.542 [0.420, 0.667] | +0.095 | +0.017 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | First-half result: away | no | 0.7300 | 0.816 [0.718, 0.902] | +0.073 | +0.016 | 0.74 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away wins by more than 2.5 | no | 0.9500 | 0.978 [0.958, 0.994] | +0.025 | +0.016 | 0.96 | - |  | RESEARCH_CANDIDATE |
-| Red Bull Bragantino vs Vasco da Gama | Result: home | yes | 0.3650 | 0.493 [0.334, 0.649] | +0.112 | +0.014 | 0.37 | - |  | RESEARCH_CANDIDATE |
+| Red Bull Bragantino vs Vasco da Gama | Result: home | yes | 0.3650 | 0.493 [0.334, 0.649] | +0.112 | +0.014 | 0.37 | 0.356 |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | away wins by more than 2.5 | no | 0.9500 | 0.977 [0.952, 0.994] | +0.023 | +0.013 | 0.96 | - | * | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Vasco da Gama | away wins by more than 1.5 | no | 0.8300 | 0.892 [0.816, 0.953] | +0.052 | +0.013 | 0.84 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Exact score 2-2 (home-away) | no | 0.9400 | 0.966 [0.949, 0.981] | +0.022 | +0.012 | 0.95 | - |  | RESEARCH_CANDIDATE |
+| Querétaro vs Necaxa | First half: away wins by more than 1.5 | no | 0.9300 | 0.964 [0.929, 0.991] | +0.029 | +0.012 | 0.94 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | away wins by more than 1.5 | no | 0.8700 | 0.915 [0.852, 0.967] | +0.037 | +0.006 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | First half: away wins by more than 1.5 | no | 0.9400 | 0.964 [0.929, 0.991] | +0.020 | +0.006 | 0.94 | - | * | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Vasco da Gama | away wins by more than 2.5 | no | 0.9400 | 0.964 [0.929, 0.989] | +0.020 | +0.005 | 0.94 | - |  | RESEARCH_CANDIDATE |
@@ -72,15 +72,15 @@ model board generated 2026-11-22T20:59:46.055698Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 580
-action_NO_QUOTE: 419
-action_RESEARCH_CANDIDATE: 37
-contract_sides: 1036
-fixtures: 14
-fixtures_model_invalidated: 0
+action_NO_EDGE: 552
+action_NO_QUOTE: 388
+action_RESEARCH_CANDIDATE: 38
+contract_sides: 978
+fixtures: 13
+fixtures_model_invalidated: 1
 fixtures_model_missing: 0
 ```
 
-Removed (kicked off): 1
+Removed (kicked off): 2
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
