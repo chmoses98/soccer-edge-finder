@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261122T140430Z-1e71a1` · generated 2026-11-22T14:04:30.652300Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261122T141130Z-342390` · generated 2026-11-22T14:11:30.742304Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-22T14:00:48.890360Z (CURRENT at publish; CURRENT until 2026-11-22T14:20:48.890360Z, STALE after 2026-11-22T14:30:48.890360Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-22T14:07:48.489420Z (CURRENT at publish; CURRENT until 2026-11-22T14:27:48.489420Z, STALE after 2026-11-22T14:37:48.489420Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-22T12:17:24.932364Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.26s
 
@@ -39,11 +39,11 @@ model board generated 2026-11-22T12:17:24.932364Z · simulations this update: 0 
 | St. Louis City SC vs Los Angeles FC | away team total over 1.5 | no | 0.6000 | 0.755 [0.632, 0.857] | +0.139 | +0.063 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away team total over 0.5 | no | 0.2500 | 0.400 [0.276, 0.515] | +0.137 | +0.053 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | FC Augsburg vs Mainz 05 | Result: away | no | 0.5700 | 0.740 [0.553, 0.894] | +0.152 | +0.047 | 0.61 | - | * | RESEARCH_CANDIDATE |
-| FC Augsburg vs Mainz 05 | Result: home | yes | 0.3200 | 0.521 [0.298, 0.740] | +0.186 | +0.045 | 0.36 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | btts | no | 0.3800 | 0.517 [0.395, 0.631] | +0.120 | +0.043 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Atalanta vs Inter Milan | Result: away | no | 0.3700 | 0.551 [0.356, 0.736] | +0.164 | +0.042 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | Result: away | no | 0.6700 | 0.787 [0.677, 0.884] | +0.101 | +0.038 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away wins by more than 1.5 | no | 0.8500 | 0.923 [0.868, 0.968] | +0.065 | +0.035 | 0.88 | - | * | RESEARCH_CANDIDATE |
+| FC Augsburg vs Mainz 05 | Result: home | yes | 0.3300 | 0.521 [0.298, 0.740] | +0.175 | +0.034 | 0.36 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away team total over 2.5 | no | 0.8500 | 0.924 [0.860, 0.970] | +0.065 | +0.031 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | Santos vs Grêmio | btts | no | 0.4300 | 0.545 [0.434, 0.661] | +0.098 | +0.027 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Atalanta vs Inter Milan | Result: home | yes | 0.1700 | 0.319 [0.162, 0.504] | +0.139 | +0.025 | 0.19 | - |  | RESEARCH_CANDIDATE |
