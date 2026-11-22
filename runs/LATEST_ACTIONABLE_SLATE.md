@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261122T021647Z-572eae` · generated 2026-11-22T02:16:47.481818Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261122T023149Z-e6ab61` · generated 2026-11-22T02:31:49.451924Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-22T02:13:05.293890Z (CURRENT at publish; CURRENT until 2026-11-22T02:33:05.293890Z, STALE after 2026-11-22T02:43:05.293890Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-22T02:28:05.312224Z (CURRENT at publish; CURRENT until 2026-11-22T02:48:05.312224Z, STALE after 2026-11-22T02:58:05.312224Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-22T02:01:50.878756Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.20s
 
@@ -55,9 +55,9 @@ model board generated 2026-11-22T02:01:50.878756Z · simulations this update: 0 
 | Nashville SC vs FC Cincinnati | away team total over 0.5 | no | 0.3300 | 0.504 [0.381, 0.623] | +0.159 | +0.079 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 3.5 | no | 0.6400 | 0.803 [0.678, 0.907] | +0.146 | +0.078 | 0.72 | - |  | RESEARCH_CANDIDATE |
 | Getafe vs Atlético Madrid | Result: home | yes | 0.1400 | 0.330 [0.186, 0.488] | +0.181 | +0.074 | 0.21 | - |  | RESEARCH_CANDIDATE |
-| Nashville SC vs FC Cincinnati | btts | no | 0.3900 | 0.548 [0.427, 0.658] | +0.141 | +0.069 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | away team total over 1.5 | no | 0.7100 | 0.841 [0.749, 0.918] | +0.117 | +0.064 | 0.77 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away team total over 1.5 | no | 0.6000 | 0.755 [0.632, 0.857] | +0.139 | +0.063 | 0.66 | - | * | RESEARCH_CANDIDATE |
+| Nashville SC vs FC Cincinnati | btts | no | 0.4000 | 0.548 [0.427, 0.658] | +0.131 | +0.059 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 4.5 | no | 0.8100 | 0.913 [0.838, 0.970] | +0.092 | +0.056 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 1.5 | no | 0.2000 | 0.354 [0.220, 0.493] | +0.143 | +0.055 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away team total over 0.5 | no | 0.2500 | 0.400 [0.276, 0.515] | +0.137 | +0.053 | 0.3 | - |  | RESEARCH_CANDIDATE |
@@ -76,15 +76,15 @@ model board generated 2026-11-22T02:01:50.878756Z · simulations this update: 0 
 | St. Louis City SC vs Los Angeles FC | away wins by more than 2.5 | no | 0.9500 | 0.978 [0.957, 0.994] | +0.025 | +0.016 | 0.96 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | Result: home | yes | 0.6600 | 0.760 [0.644, 0.872] | +0.084 | +0.015 | 0.67 | - |  | RESEARCH_CANDIDATE |
 | Atalanta vs Inter Milan | Result: home | yes | 0.1800 | 0.319 [0.161, 0.504] | +0.128 | +0.015 | 0.19 | - |  | RESEARCH_CANDIDATE |
-| Nashville SC vs FC Cincinnati | away wins by more than 1.5 | no | 0.9500 | 0.976 [0.954, 0.993] | +0.023 | +0.014 | 0.96 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Exact score 1-0 (home-away) | yes | 0.0900 | 0.142 [0.093, 0.194] | +0.046 | +0.014 | 0.1 | - | * | RESEARCH_CANDIDATE |
 | Sassuolo vs Genoa | Result: home | yes | 0.3600 | 0.517 [0.329, 0.707] | +0.141 | +0.013 | 0.37 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | Result: home | yes | 0.4200 | 0.546 [0.403, 0.692] | +0.109 | +0.011 | 0.43 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | First-half result: away | no | 0.8400 | 0.898 [0.839, 0.951] | +0.048 | +0.011 | 0.85 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 0.5 | no | 0.0600 | 0.118 [0.059, 0.187] | +0.054 | +0.010 | 0.06 | - |  | RESEARCH_CANDIDATE |
 | Tigres UANL vs Club América | away team total over 2.5 | no | 0.7400 | 0.828 [0.718, 0.924] | +0.074 | +0.008 | 0.74 | - |  | RESEARCH_CANDIDATE |
+| Red Bull Bragantino vs Vasco da Gama | away wins by more than 2.5 | no | 0.9400 | 0.965 [0.927, 0.990] | +0.021 | +0.006 | 0.94 | - | * | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Vasco da Gama | Result: home | yes | 0.3650 | 0.492 [0.336, 0.646] | +0.111 | +0.006 | 0.37 | - |  | RESEARCH_CANDIDATE |
-| Red Bull Bragantino vs Vasco da Gama | away wins by more than 1.5 | no | 0.8400 | 0.894 [0.811, 0.955] | +0.045 | +0.006 | 0.84 | - | * | RESEARCH_CANDIDATE |
+| Red Bull Bragantino vs Vasco da Gama | away wins by more than 1.5 | no | 0.8400 | 0.894 [0.811, 0.955] | +0.045 | +0.006 | 0.84 | - |  | RESEARCH_CANDIDATE |
 | Bologna vs Udinese | Result: away | yes | 0.1900 | 0.309 [0.155, 0.480] | +0.108 | +0.004 | 0.19 | - | * | RESEARCH_CANDIDATE |
 | Tigres UANL vs Club América | First-half result: away | no | 0.6200 | 0.709 [0.597, 0.812] | +0.072 | +0.004 | 0.62 | - | * | RESEARCH_CANDIDATE |
 | FC Augsburg vs Mainz 05 | Result: home | yes | 0.3600 | 0.521 [0.298, 0.741] | +0.145 | +0.003 | 0.36 | - |  | RESEARCH_CANDIDATE |
@@ -93,8 +93,8 @@ model board generated 2026-11-22T02:01:50.878756Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 628
-action_NO_QUOTE: 75
+action_NO_EDGE: 629
+action_NO_QUOTE: 74
 action_RESEARCH_CANDIDATE: 45
 contract_sides: 748
 fixtures: 32
