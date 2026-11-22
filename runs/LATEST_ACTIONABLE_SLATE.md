@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261122T020202Z-5167ac` · generated 2026-11-22T02:02:02.422614Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261122T021647Z-572eae` · generated 2026-11-22T02:16:47.481818Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-22T01:58:03.545794Z (CURRENT at publish; CURRENT until 2026-11-22T02:18:03.545794Z, STALE after 2026-11-22T02:28:03.545794Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-22T02:13:05.293890Z (CURRENT at publish; CURRENT until 2026-11-22T02:33:05.293890Z, STALE after 2026-11-22T02:43:05.293890Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-22T02:01:50.878756Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.20s
+model board generated 2026-11-22T02:01:50.878756Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.20s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -45,7 +45,7 @@ model board generated 2026-11-22T02:01:50.878756Z · simulations this update: 1 
 | 2026-11-24T00:00:00Z | Santos vs Grêmio (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-24T01:00:00Z | St. Louis City SC vs Los Angeles FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
 
-## Candidates on CURRENT prices (44; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (45; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -76,11 +76,11 @@ model board generated 2026-11-22T02:01:50.878756Z · simulations this update: 1 
 | St. Louis City SC vs Los Angeles FC | away wins by more than 2.5 | no | 0.9500 | 0.978 [0.957, 0.994] | +0.025 | +0.016 | 0.96 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | Result: home | yes | 0.6600 | 0.760 [0.644, 0.872] | +0.084 | +0.015 | 0.67 | - |  | RESEARCH_CANDIDATE |
 | Atalanta vs Inter Milan | Result: home | yes | 0.1800 | 0.319 [0.161, 0.504] | +0.128 | +0.015 | 0.19 | - |  | RESEARCH_CANDIDATE |
+| Nashville SC vs FC Cincinnati | away wins by more than 1.5 | no | 0.9500 | 0.976 [0.954, 0.993] | +0.023 | +0.014 | 0.96 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Exact score 1-0 (home-away) | yes | 0.0900 | 0.142 [0.093, 0.194] | +0.046 | +0.014 | 0.1 | - | * | RESEARCH_CANDIDATE |
 | Sassuolo vs Genoa | Result: home | yes | 0.3600 | 0.517 [0.329, 0.707] | +0.141 | +0.013 | 0.37 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | Result: home | yes | 0.4200 | 0.546 [0.403, 0.692] | +0.109 | +0.011 | 0.43 | - |  | RESEARCH_CANDIDATE |
 | Nashville SC vs FC Cincinnati | First-half result: away | no | 0.8400 | 0.898 [0.839, 0.951] | +0.048 | +0.011 | 0.85 | - | * | RESEARCH_CANDIDATE |
-| Tigres UANL vs Club América | Result: away | no | 0.5000 | 0.623 [0.471, 0.761] | +0.105 | +0.010 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 0.5 | no | 0.0600 | 0.118 [0.059, 0.187] | +0.054 | +0.010 | 0.06 | - |  | RESEARCH_CANDIDATE |
 | Tigres UANL vs Club América | away team total over 2.5 | no | 0.7400 | 0.828 [0.718, 0.924] | +0.074 | +0.008 | 0.74 | - |  | RESEARCH_CANDIDATE |
 | Red Bull Bragantino vs Vasco da Gama | Result: home | yes | 0.3650 | 0.492 [0.336, 0.646] | +0.111 | +0.006 | 0.37 | - |  | RESEARCH_CANDIDATE |
@@ -94,8 +94,8 @@ model board generated 2026-11-22T02:01:50.878756Z · simulations this update: 1 
 
 ```
 action_NO_EDGE: 628
-action_NO_QUOTE: 76
-action_RESEARCH_CANDIDATE: 44
+action_NO_QUOTE: 75
+action_RESEARCH_CANDIDATE: 45
 contract_sides: 748
 fixtures: 32
 fixtures_model_invalidated: 0
