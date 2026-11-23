@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261123T192133Z-287e7c` · generated 2026-11-23T19:21:33.246569Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261123T193406Z-7a87de` · generated 2026-11-23T19:34:06.784677Z · trigger `kickoff_chain:T-30/T-15` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-23T19:18:10.723407Z (CURRENT at publish; CURRENT until 2026-11-23T19:38:10.723407Z, STALE after 2026-11-23T19:48:10.723407Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-23T19:30:33.818210Z (CURRENT at publish; CURRENT until 2026-11-23T19:50:33.818210Z, STALE after 2026-11-23T20:00:33.818210Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-23T05:44:55.142821Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.24s
+model board generated 2026-11-23T05:44:55.142821Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.17s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -13,7 +13,7 @@ model board generated 2026-11-23T05:44:55.142821Z · simulations this update: 0 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
 | 2026-11-23T19:45:00Z | Juventus vs Venezia (ita.serie_a) | VALID (STALE) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-23T20:00:00Z | Gimnasia La Plata vs Newell's Old Boys (arg.primera) | VALID (AGING) | unconfirmed (STALE) | AGING entry | CURRENT | 16 | 0 |
+| 2026-11-23T20:00:00Z | Gimnasia La Plata vs Newell's Old Boys (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | AGING entry | CURRENT | 16 | 0 |
 | 2026-11-23T22:30:00Z | Internacional vs Vitória (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-23T23:00:00Z | Botafogo vs São Paulo (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-24T00:00:00Z | Santos vs Grêmio (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -74,7 +74,7 @@ action_NO_QUOTE: 186
 action_RESEARCH_CANDIDATE: 45
 contract_sides: 492
 fixtures: 8
-fixtures_model_invalidated: 0
+fixtures_model_invalidated: 1
 fixtures_model_missing: 0
 ```
 
