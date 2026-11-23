@@ -1,10 +1,10 @@
 {
  "counts": {
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 690,
   "MISSED_DISPATCHER_CLOSE": 118,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 691,
+  "PINNACLE_VALID_CLOSE": 145,
   "NO_SPORT_KEY": 39,
   "CLOSE_BLOCKED_BUDGET": 31,
-  "PINNACLE_VALID_CLOSE": 145,
   "PINNACLE_QUOTED_NOTHING": 3
  },
  "fixtures": {
@@ -3619,6 +3619,11 @@
    "batch_id": null
   },
   "fx:ita.serie_a:2026-27:ita.monza:ita.cagliari:matchday_7": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:ita.serie_a:2026-27:ita.monza:ita.fiorentina:matchday_12": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
