@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261123T172955Z-5c2e7a` · generated 2026-11-23T17:29:55.284714Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
+slate `slate-20261123T174508Z-3322ba` · generated 2026-11-23T17:45:08.391674Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-23T17:26:34.334907Z (CURRENT at publish; CURRENT until 2026-11-23T17:46:34.334907Z, STALE after 2026-11-23T17:56:34.334907Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-23T17:41:32.004243Z (CURRENT at publish; CURRENT until 2026-11-23T18:01:32.004243Z, STALE after 2026-11-23T18:11:32.004243Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-23T16:30:48.873209Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.24s
 
@@ -12,7 +12,6 @@ model board generated 2026-11-23T16:30:48.873209Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-23T17:30:00Z | Monza vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-23T19:45:00Z | Juventus vs Venezia (ita.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-23T20:00:00Z | Gimnasia La Plata vs Newell's Old Boys (arg.primera) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 16 | 0 |
 | 2026-11-23T22:30:00Z | Internacional vs Vitória (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -20,7 +19,7 @@ model board generated 2026-11-23T16:30:48.873209Z · simulations this update: 0 
 | 2026-11-24T00:00:00Z | Santos vs Grêmio (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-24T01:00:00Z | St. Louis City SC vs Los Angeles FC (usa.mls) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-11-24T21:00:00Z | Chapecoense vs Palmeiras (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-25T03:00:00Z | San Jose Earthquakes vs Houston Dynamo (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-11-25T03:00:00Z | San Jose Earthquakes vs Houston Dynamo (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 
 ## Candidates on CURRENT prices (42; RESEARCH_ONLY = analysis, never a bet)
 
@@ -70,13 +69,15 @@ model board generated 2026-11-23T16:30:48.873209Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 270
+action_NO_EDGE: 264
 action_NO_QUOTE: 186
 action_RESEARCH_CANDIDATE: 42
-contract_sides: 498
-fixtures: 9
+contract_sides: 492
+fixtures: 8
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
+
+Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
