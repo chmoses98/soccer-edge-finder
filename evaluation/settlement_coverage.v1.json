@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-23T08:15:46.415453Z",
+  "as_of": "2026-11-23T12:22:13.041140Z",
   "by_competition": {
     "arg.primera": {
       "PENDING_EVIDENCE": 0,
@@ -75,7 +75,7 @@
     },
     "ita.serie_a": {
       "PENDING_EVIDENCE": 192,
-      "PENDING_KICKOFF": 179,
+      "PENDING_KICKOFF": 182,
       "PENDING_MAPPING": 0,
       "PENDING_RESULT": 0,
       "SETTLED": 2219,
@@ -194,7 +194,7 @@
     },
     "match_result_3way": {
       "PENDING_EVIDENCE": 0,
-      "PENDING_KICKOFF": 78,
+      "PENDING_KICKOFF": 81,
       "PENDING_MAPPING": 42,
       "PENDING_RESULT": 24,
       "SETTLED": 5967,
@@ -240,25 +240,25 @@
   },
   "close_completeness": {
     "kalshi": {
-      "KALSHI_CLOSE": 2528,
+      "KALSHI_CLOSE": 2224,
       "NEAR_CLOSE": 0,
-      "NONE": 1201,
-      "STALE": 406,
+      "NONE": 937,
+      "STALE": 223,
       "TRUE_CLOSE": 0
     },
-    "kalshi_close_share": 0.61136638452237,
-    "missing_kalshi_close_rate": 0.38863361547763,
-    "missing_reference_close_rate": 0.9746070133010882,
-    "records": 4135,
+    "kalshi_close_share": 0.6572104018912529,
+    "missing_kalshi_close_rate": 0.3427895981087471,
+    "missing_reference_close_rate": 0.9837470449172577,
+    "records": 3384,
     "reference": {
       "KALSHI_CLOSE": 0,
-      "NEAR_CLOSE": 11,
-      "NONE": 3947,
-      "STALE": 83,
-      "TRUE_CLOSE": 94
+      "NEAR_CLOSE": 0,
+      "NONE": 3323,
+      "STALE": 6,
+      "TRUE_CLOSE": 55
     },
-    "reference_close_share": 0.02539298669891173,
-    "true_close_share": 0.022732769044740024
+    "reference_close_share": 0.016252955082742316,
+    "true_close_share": 0.016252955082742316
   },
   "grace_hours": 3.0,
   "pending_evidence": 1775,
@@ -564,13 +564,13 @@
       "state": "PENDING_EVIDENCE"
     }
   ],
-  "pending_kickoff": 634,
+  "pending_kickoff": 637,
   "pending_mapping": 1290,
   "pending_result": 319,
-  "predictions_total": 53271,
+  "predictions_total": 53274,
   "reasons": {
     "PENDING_EVIDENCE: period data missing (half-time split, extra time, penalties or first scorer)": 1775,
-    "PENDING_KICKOFF: kickoff + grace in the future": 634,
+    "PENDING_KICKOFF: kickoff + grace in the future": 637,
     "PENDING_MAPPING: 2 candidate results from espn_site_api": 1290,
     "PENDING_RESULT: no result reported yet": 319
   },
