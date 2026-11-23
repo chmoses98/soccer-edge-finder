@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261123T204323Z-9ce64c` · generated 2026-11-23T20:43:23.558547Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261123T205826Z-02affd` · generated 2026-11-23T20:58:26.213768Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-23T20:40:04.255045Z (CURRENT at publish; CURRENT until 2026-11-23T21:00:04.255045Z, STALE after 2026-11-23T21:10:04.255045Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-23T20:55:04.288052Z (CURRENT at publish; CURRENT until 2026-11-23T21:15:04.288052Z, STALE after 2026-11-23T21:25:04.288052Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-23T19:29:08.473244Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.31s
+model board generated 2026-11-23T19:29:08.473244Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.17s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -35,13 +35,13 @@ model board generated 2026-11-23T19:29:08.473244Z · simulations this update: 0 
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 3.5 | no | 0.6700 | 0.808 [0.690, 0.904] | +0.122 | +0.059 | 0.73 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 1.5 | no | 0.2100 | 0.358 [0.229, 0.487] | +0.137 | +0.053 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | First-half result: away | no | 0.7100 | 0.817 [0.728, 0.892] | +0.092 | +0.046 | 0.75 | - | * | RESEARCH_CANDIDATE |
+| St. Louis City SC vs Los Angeles FC | Second-half result: away | no | 0.6900 | 0.802 [0.707, 0.892] | +0.097 | +0.045 | 0.73 | - | * | RESEARCH_CANDIDATE |
+| Santos vs Grêmio | btts | no | 0.4000 | 0.541 [0.421, 0.654] | +0.124 | +0.044 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | btts | no | 0.3800 | 0.516 [0.397, 0.634] | +0.120 | +0.041 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | away team total over 0.5 | no | 0.3000 | 0.429 [0.317, 0.544] | +0.115 | +0.037 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Palmeiras | Result: away | yes | 0.5050 | 0.650 [0.507, 0.788] | +0.127 | +0.036 | 0.54 | - | * | RESEARCH_CANDIDATE |
-| St. Louis City SC vs Los Angeles FC | Second-half result: away | no | 0.7000 | 0.802 [0.707, 0.892] | +0.087 | +0.035 | 0.73 | - | * | RESEARCH_CANDIDATE |
 | Santos vs Grêmio | Total goals over 3.5 | no | 0.6000 | 0.737 [0.588, 0.868] | +0.120 | +0.035 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | Chapecoense vs Palmeiras | Result: home | no | 0.7650 | 0.860 [0.768, 0.932] | +0.082 | +0.034 | 0.8 | - |  | RESEARCH_CANDIDATE |
-| Santos vs Grêmio | btts | no | 0.4100 | 0.541 [0.421, 0.654] | +0.114 | +0.034 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 4.5 | no | 0.8400 | 0.917 [0.846, 0.969] | +0.067 | +0.034 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Santos vs Grêmio | Total goals over 2.5 | no | 0.3800 | 0.531 [0.366, 0.693] | +0.134 | +0.031 | 0.41 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away wins by more than 2.5 | no | 0.9400 | 0.978 [0.957, 0.994] | +0.034 | +0.025 | 0.96 | - |  | RESEARCH_CANDIDATE |
@@ -76,6 +76,6 @@ fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
 
-Removed (kicked off): 2
+Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
