@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261123T000856Z-e83d79` · generated 2026-11-23T00:08:56.103774Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261123T002339Z-063ed1` · generated 2026-11-23T00:23:39.549255Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-23T00:05:11.242257Z (CURRENT at publish; CURRENT until 2026-11-23T00:25:11.242257Z, STALE after 2026-11-23T00:35:11.242257Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-23T00:20:14.082942Z (CURRENT at publish; CURRENT until 2026-11-23T00:40:14.082942Z, STALE after 2026-11-23T00:50:14.082942Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-23T00:08:43.593547Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.20s
+model board generated 2026-11-23T00:08:43.593547Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.25s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,30 +12,33 @@ model board generated 2026-11-23T00:08:43.593547Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-23T01:00:00Z | Instituto vs Huracán (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | CURRENT entry | CURRENT | 16 | 0 |
+| 2026-11-23T01:00:00Z | Instituto vs Huracán (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | AGING entry | CURRENT | 16 | 0 |
 | 2026-11-23T01:10:00Z | Querétaro vs Necaxa (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 79 | 1 |
-| 2026-11-23T01:30:00Z | Vancouver Whitecaps vs Real Salt Lake (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 50 | 1 |
-| 2026-11-23T17:30:00Z | Monza vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-23T01:30:00Z | Vancouver Whitecaps vs Real Salt Lake (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-11-23T17:30:00Z | Monza vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 0 |
 | 2026-11-23T19:45:00Z | Juventus vs Venezia (ita.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-23T20:00:00Z | Gimnasia La Plata vs Newell's Old Boys (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 5 | 0 |
+| 2026-11-23T20:00:00Z | Gimnasia La Plata vs Newell's Old Boys (arg.primera) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 16 | 0 |
 | 2026-11-23T22:30:00Z | Internacional vs Vitória (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-23T23:00:00Z | Botafogo vs São Paulo (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-24T00:00:00Z | Santos vs Grêmio (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-24T01:00:00Z | St. Louis City SC vs Los Angeles FC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 32 | 0 |
-| 2026-11-24T21:00:00Z | Chapecoense vs Palmeiras (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-24T21:00:00Z | Chapecoense vs Palmeiras (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 
-## Candidates on CURRENT prices (40; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (54; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Querétaro vs Necaxa | Total goals over 2.5 | no | 0.3800 | 0.611 [0.445, 0.758] | +0.214 | +0.118 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | btts | no | 0.3700 | 0.581 [0.460, 0.700] | +0.195 | +0.117 | 0.48 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Necaxa | away team total over 1.5 | no | 0.5800 | 0.777 [0.660, 0.881] | +0.180 | +0.112 | 0.69 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Necaxa | Total goals over 2.5 | no | 0.3900 | 0.611 [0.445, 0.758] | +0.204 | +0.108 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 3.5 | no | 0.6100 | 0.801 [0.669, 0.908] | +0.175 | +0.106 | 0.71 | - |  | RESEARCH_CANDIDATE |
-| Querétaro vs Necaxa | away team total over 1.5 | no | 0.5900 | 0.777 [0.660, 0.881] | +0.171 | +0.102 | 0.69 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | away team total over 0.5 | no | 0.2300 | 0.426 [0.299, 0.554] | +0.184 | +0.100 | 0.32 | - |  | RESEARCH_CANDIDATE |
-| Querétaro vs Necaxa | Total goals over 1.5 | no | 0.1700 | 0.354 [0.213, 0.496] | +0.174 | +0.086 | 0.25 | - |  | RESEARCH_CANDIDATE |
+| Vancouver Whitecaps vs Real Salt Lake | btts | no | 0.3800 | 0.552 [0.443, 0.664] | +0.156 | +0.081 | 0.45 | - | * | RESEARCH_CANDIDATE |
+| Vancouver Whitecaps vs Real Salt Lake | away team total over 0.5 | no | 0.3200 | 0.488 [0.372, 0.604] | +0.153 | +0.078 | 0.39 | - | * | RESEARCH_CANDIDATE |
+| Querétaro vs Necaxa | Total goals over 1.5 | no | 0.1800 | 0.354 [0.213, 0.496] | +0.163 | +0.076 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 4.5 | no | 0.7900 | 0.912 [0.831, 0.971] | +0.110 | +0.074 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away team total over 1.5 | no | 0.6000 | 0.756 [0.634, 0.859] | +0.140 | +0.069 | 0.67 | - | * | RESEARCH_CANDIDATE |
+| Vancouver Whitecaps vs Real Salt Lake | away team total over 1.5 | no | 0.7000 | 0.830 [0.740, 0.909] | +0.115 | +0.064 | 0.76 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | First-half total goals over 1.5 | no | 0.5900 | 0.738 [0.618, 0.842] | +0.131 | +0.061 | 0.65 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away team total over 0.5 | no | 0.2500 | 0.402 [0.278, 0.519] | +0.139 | +0.058 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | away team total over 2.5 | no | 0.8400 | 0.934 [0.878, 0.978] | +0.084 | +0.057 | 0.89 | - |  | RESEARCH_CANDIDATE |
@@ -47,35 +50,32 @@ model board generated 2026-11-23T00:08:43.593547Z · simulations this update: 1 
 | St. Louis City SC vs Los Angeles FC | away wins by more than 1.5 | no | 0.8500 | 0.925 [0.870, 0.969] | +0.066 | +0.037 | 0.88 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 5.5 | no | 0.9100 | 0.965 [0.926, 0.992] | +0.050 | +0.034 | 0.94 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away team total over 2.5 | no | 0.8500 | 0.924 [0.862, 0.971] | +0.065 | +0.034 | 0.88 | - |  | RESEARCH_CANDIDATE |
+| Vancouver Whitecaps vs Real Salt Lake | away team total over 2.5 | no | 0.9000 | 0.957 [0.922, 0.985] | +0.051 | +0.034 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Palmeiras | Result: home | no | 0.7650 | 0.859 [0.774, 0.936] | +0.081 | +0.032 | 0.79 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | First-half total goals over 2.5 | no | 0.8400 | 0.918 [0.849, 0.971] | +0.069 | +0.031 | 0.87 | - |  | RESEARCH_CANDIDATE |
+| St. Louis City SC vs Los Angeles FC | Result: home | yes | 0.4100 | 0.550 [0.405, 0.695] | +0.123 | +0.027 | 0.43 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Exact score 1-0 (home-away) | yes | 0.0800 | 0.142 [0.091, 0.190] | +0.057 | +0.026 | 0.1 | - | * | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Exact score 0-0 (home-away) | yes | 0.0500 | 0.117 [0.058, 0.186] | +0.064 | +0.020 | 0.06 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | Total goals over 0.5 | no | 0.0500 | 0.117 [0.058, 0.186] | +0.064 | +0.020 | 0.06 | - |  | RESEARCH_CANDIDATE |
+| Vancouver Whitecaps vs Real Salt Lake | Total goals over 2.5 | no | 0.3100 | 0.453 [0.287, 0.612] | +0.128 | +0.020 | 0.32 | - | * | RESEARCH_CANDIDATE |
 | Vancouver Whitecaps vs Real Salt Lake | Exact score 2-0 (home-away) | yes | 0.0800 | 0.124 [0.090, 0.157] | +0.039 | +0.017 | 0.09 | - | * | RESEARCH_CANDIDATE |
+| Vancouver Whitecaps vs Real Salt Lake | Total goals over 3.5 | no | 0.5300 | 0.665 [0.497, 0.811] | +0.117 | +0.017 | 0.54 | - |  | RESEARCH_CANDIDATE |
 | Santos vs Grêmio | btts | no | 0.4300 | 0.542 [0.420, 0.667] | +0.095 | +0.017 | 0.44 | - | * | RESEARCH_CANDIDATE |
-| St. Louis City SC vs Los Angeles FC | Result: home | yes | 0.4200 | 0.550 [0.405, 0.695] | +0.113 | +0.017 | 0.43 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | First-half result: away | no | 0.7300 | 0.816 [0.718, 0.902] | +0.073 | +0.016 | 0.74 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away wins by more than 2.5 | no | 0.9500 | 0.978 [0.958, 0.994] | +0.025 | +0.016 | 0.96 | - |  | RESEARCH_CANDIDATE |
+| Vancouver Whitecaps vs Real Salt Lake | Total goals over 4.5 | no | 0.7200 | 0.819 [0.689, 0.923] | +0.085 | +0.015 | 0.73 | - |  | RESEARCH_CANDIDATE |
+| Vancouver Whitecaps vs Real Salt Lake | First half: both teams to score | no | 0.7600 | 0.833 [0.758, 0.912] | +0.060 | +0.015 | 0.77 | - | * | RESEARCH_CANDIDATE |
+| Vancouver Whitecaps vs Real Salt Lake | Total goals over 5.5 | no | 0.8500 | 0.913 [0.832, 0.973] | +0.054 | +0.015 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | Querétaro vs Necaxa | First half: away wins by more than 1.5 | no | 0.9300 | 0.963 [0.929, 0.991] | +0.029 | +0.013 | 0.94 | - | * | RESEARCH_CANDIDATE |
-| Vancouver Whitecaps vs Real Salt Lake | Exact score 1-0 (home-away) | yes | 0.0700 | 0.121 [0.068, 0.175] | +0.046 | +0.012 | 0.08 | - |  | RESEARCH_CANDIDATE |
-| Querétaro vs Necaxa | away wins by more than 2.5 | no | 0.9500 | 0.976 [0.950, 0.994] | +0.022 | +0.011 | 0.96 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Necaxa | Exact score 2-2 (home-away) | no | 0.9400 | 0.965 [0.948, 0.980] | +0.021 | +0.011 | 0.95 | - |  | RESEARCH_CANDIDATE |
-| Chapecoense vs Palmeiras | btts | no | 0.4400 | 0.544 [0.416, 0.671] | +0.087 | +0.007 | 0.44 | - | * | RESEARCH_CANDIDATE |
-| St. Louis City SC vs Los Angeles FC | First half: away wins by more than 1.5 | no | 0.9400 | 0.964 [0.929, 0.991] | +0.020 | +0.006 | 0.94 | - | * | RESEARCH_CANDIDATE |
-| Querétaro vs Necaxa | Exact score 2-0 (home-away) | yes | 0.0600 | 0.096 [0.058, 0.135] | +0.032 | +0.006 | 0.06 | - |  | RESEARCH_CANDIDATE |
-| Botafogo vs São Paulo | btts | no | 0.4700 | 0.565 [0.440, 0.682] | +0.078 | +0.003 | 0.47 | - | * | RESEARCH_CANDIDATE |
-| Vancouver Whitecaps vs Real Salt Lake | Exact score 0-0 (home-away) | yes | 0.0300 | 0.064 [0.025, 0.110] | +0.032 | +0.002 | 0.03 | - |  | RESEARCH_CANDIDATE |
-| Chapecoense vs Palmeiras | home wins by more than 1.5 | no | 0.9300 | 0.955 [0.918, 0.985] | +0.021 | +0.002 | 0.93 | - | * | RESEARCH_CANDIDATE |
-| Santos vs Grêmio | Total goals over 3.5 | no | 0.6300 | 0.737 [0.587, 0.871] | +0.091 | +0.001 | 0.63 | - | * | RESEARCH_CANDIDATE |
+| Vancouver Whitecaps vs Real Salt Lake | Total goals over 1.5 | no | 0.1300 | 0.227 [0.115, 0.346] | +0.090 | +0.012 | 0.14 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 360
-action_NO_QUOTE: 178
-action_RESEARCH_CANDIDATE: 40
-contract_sides: 578
+action_NO_EDGE: 405
+action_NO_QUOTE: 381
+action_RESEARCH_CANDIDATE: 54
+contract_sides: 840
 fixtures: 11
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
