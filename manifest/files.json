@@ -19547,6 +19547,18 @@
       "recovery_id": null,
       "sha256_prefix": "316e6b9d1ca44f0da3fb7b102153d6b592c532b4cffb0b67f1b2757e68e22534"
     },
+    "dispatch/heartbeats/2026-11-23.jsonl": {
+      "byte_length": 1279,
+      "closed": false,
+      "day": "2026-11-23",
+      "first_manifested_at": "2026-11-23T02:02:06.357415Z",
+      "immutable": false,
+      "line_count": 2,
+      "record_level": false,
+      "record_type": "dispatch_heartbeat",
+      "recovery_id": null,
+      "sha256_prefix": "a24815c6916910d5bcc80d90cf560de94b7beefd3edd6dd81eb5f0479019b6d1"
+    },
     "dispatch/horizons.jsonl": {
       "byte_length": 2436947,
       "closed": false,
@@ -19560,16 +19572,16 @@
       "sha256_prefix": "31ecbc2a28fb646075af003116e505e2db9ef5355b0b5d9d11639dbda44a914c"
     },
     "dispatch/settle_runs.jsonl": {
-      "byte_length": 951766,
+      "byte_length": 957471,
       "closed": false,
       "day": null,
       "first_manifested_at": "2026-09-30T15:09:14.485417Z",
       "immutable": false,
-      "line_count": 334,
+      "line_count": 335,
       "record_level": false,
       "record_type": "settle_run_log",
       "recovery_id": null,
-      "sha256_prefix": "f1f5f320e591fe69ec557a09ed7eae2b535cbe51bdd92b30d8059d6cb27d2f4a"
+      "sha256_prefix": "89b4691ac0350b2bd4e37c6579f7dd94dad7db6e68ba2b91016246bd75b1676c"
     },
     "dispatch/slate_log/2026-10-02.jsonl": {
       "byte_length": 177314,
@@ -106036,6 +106048,18 @@
       "recovery_id": null,
       "sha256_prefix": "b43b8ea41c9e93db2bf9a0e474e99f7a097a664b63fc0e280830194e347dacc5"
     },
+    "settlements/2026-11-23/predictions.jsonl": {
+      "byte_length": 320369,
+      "closed": false,
+      "day": "2026-11-23",
+      "first_manifested_at": "2026-11-23T02:02:06.581815Z",
+      "immutable": false,
+      "line_count": 120,
+      "record_level": true,
+      "record_type": "settlement",
+      "recovery_id": null,
+      "sha256_prefix": "37ad17b6c14ec629377dbae78387c053283a042e3dc1971f80f7f7496e10bc4f"
+    },
     "snapshots/2026-09-27/cap-20260927T234517Z.jsonl": {
       "byte_length": 5211978,
       "closed": true,
@@ -165026,5 +165050,5 @@
     }
   },
   "manifest_version": 1,
-  "updated_at": "2026-11-23T01:00:42.431478Z"
+  "updated_at": "2026-11-23T02:02:06.849335Z"
 }

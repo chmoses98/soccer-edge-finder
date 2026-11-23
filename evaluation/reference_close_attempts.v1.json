@@ -1,10 +1,10 @@
 {
  "counts": {
-  "PINNACLE_VALID_CLOSE": 143,
   "DISPATCHER_CLOSE_NO_ATTEMPT": 690,
+  "NO_SPORT_KEY": 39,
+  "PINNACLE_VALID_CLOSE": 145,
   "MISSED_DISPATCHER_CLOSE": 117,
   "CLOSE_BLOCKED_BUDGET": 31,
-  "NO_SPORT_KEY": 39,
   "PINNACLE_QUOTED_NOTHING": 3
  },
  "fixtures": {
@@ -252,6 +252,11 @@
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
    "batch_id": null
+  },
+  "fx:arg.primera:2026:arg.instituto:arg.huracan": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261123T004616Z"
   },
   "fx:arg.primera:2026:arg.instituto:arg.newells": {
    "state": "PINNACLE_VALID_CLOSE",
@@ -4067,6 +4072,11 @@
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
    "batch_id": null
+  },
+  "fx:mex.liga_mx:2026:mex.queretaro:mex.necaxa": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261123T005500Z"
   },
   "fx:mex.liga_mx:2026:mex.queretaro:mex.puebla": {
    "state": "MISSED_DISPATCHER_CLOSE",

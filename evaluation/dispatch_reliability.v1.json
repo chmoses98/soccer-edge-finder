@@ -1,13 +1,13 @@
 {
  "schema": "dispatch_reliability_v1",
- "generated_at": "2026-11-23T00:02:49Z",
+ "generated_at": "2026-11-23T01:59:35Z",
  "cadence": {
   "external_heartbeat_minutes": null,
   "github_backup_minutes": 60
  },
  "last_wake": {
-  "started_at": "2026-11-22T23:55:48Z",
-  "trigger_source": "workflow-run",
+  "started_at": "2026-11-23T01:53:35Z",
+  "trigger_source": "chain",
   "status": "OK",
   "no_action_reason": null
  },
@@ -15,9 +15,9 @@
   "span_hours": 24.0,
   "heartbeats_actual": 16,
   "heartbeats_by_source": {
-   "chain": 3,
+   "chain": 4,
    "github-schedule-backup": 3,
-   "workflow-run": 10
+   "workflow-run": 9
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -31,28 +31,28 @@
   "capture_runs_failed": 0,
   "paid_calls": 0,
   "credits_spent": 0,
-  "fixtures_with_horizons": 32,
-  "horizons_eligible": 142,
-  "horizons_delivered": 102,
+  "fixtures_with_horizons": 33,
+  "horizons_eligible": 148,
+  "horizons_delivered": 108,
   "horizons_missed": 40,
   "horizon_states": {
-   "DELIVERED": 102,
+   "DELIVERED": 108,
    "MISSED_BEFORE_WAKE": 33,
    "MISSED_EXECUTION_FAILURE": 7,
    "NOT_APPLICABLE": 6
   },
-  "capture_success_rate": 0.7183098591549296,
-  "close_fixtures_eligible": 28,
-  "close_fixtures_delivered": 21,
-  "close_success_rate": 0.75
+  "capture_success_rate": 0.7297297297297297,
+  "close_fixtures_eligible": 29,
+  "close_fixtures_delivered": 22,
+  "close_success_rate": 0.7586206896551724
  },
  "last_7d": {
   "span_hours": 168.0,
-  "heartbeats_actual": 117,
+  "heartbeats_actual": 115,
   "heartbeats_by_source": {
    "chain": 28,
    "github-schedule-backup": 22,
-   "workflow-run": 67
+   "workflow-run": 65
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
@@ -66,20 +66,20 @@
   "capture_runs_failed": 0,
   "paid_calls": 32,
   "credits_spent": 96,
-  "fixtures_with_horizons": 147,
-  "horizons_eligible": 718,
-  "horizons_delivered": 632,
+  "fixtures_with_horizons": 149,
+  "horizons_eligible": 728,
+  "horizons_delivered": 642,
   "horizons_missed": 86,
   "horizon_states": {
-   "DELIVERED": 632,
+   "DELIVERED": 642,
    "MISSED_BEFORE_WAKE": 68,
    "MISSED_EXECUTION_FAILURE": 18,
    "NOT_APPLICABLE": 6
   },
-  "capture_success_rate": 0.8802228412256268,
-  "close_fixtures_eligible": 143,
-  "close_fixtures_delivered": 128,
-  "close_success_rate": 0.8951048951048951
+  "capture_success_rate": 0.8818681318681318,
+  "close_fixtures_eligible": 145,
+  "close_fixtures_delivered": 130,
+  "close_success_rate": 0.896551724137931
  },
  "definition": "capture_success_rate = delivered / eligible horizons whose window closed in the span (NOT_APPLICABLE excluded); close_success_rate = fixtures with a T-15 or T-5 delivery / fixtures whose close windows closed in the span"
 }
