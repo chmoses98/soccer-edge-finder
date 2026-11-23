@@ -1,11 +1,12 @@
 {
-  "as_of": "2026-11-23T02:54:34.397015+00:00",
-  "events": 693,
-  "events_skipped_unmapped": 393,
+  "as_of": "2026-11-23T14:52:15.497603+00:00",
+  "events": 692,
+  "events_skipped_unmapped": 392,
   "fixtures_mapped": 300,
   "health": {
     "reasons": [
-      "scoreboard_partial_failures:5/748"
+      "weather_failures:3",
+      "weather_stopped:consecutive_failures:skipped=42"
     ],
     "state": "DEGRADED"
   },
@@ -80,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 22,
-    "events": 114,
+    "captured": 31,
+    "events": 108,
     "failures": [],
-    "published_post": 90,
+    "published_post": 78,
     "published_pre_kickoff": 0,
-    "unchanged": 92,
-    "unpublished": 24
+    "unchanged": 77,
+    "unpublished": 30
   },
   "map_proposals": {
     "bel.1": {
@@ -280,15 +281,9 @@
     }
   },
   "map_version": "4",
-  "results_appended": 11,
-  "scoreboard_failures": [
-    "concacaf.gold 2026-11-25: fetch failed for https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.gold/scoreboard?dates",
-    "concacaf.gold 2026-11-28: fetch failed for https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.gold/scoreboard?dates",
-    "fifa.worldq.caf 2026-11-22: fetch failed for https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.worldq.caf/scoreboard?dat",
-    "uefa.europa.conf 2026-11-20: fetch failed for https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/scoreboard?da",
-    "usa.1 2026-11-20: fetch failed for https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=2026112"
-  ],
-  "scoreboard_failures_n": 5,
+  "results_appended": 3,
+  "scoreboard_failures": [],
+  "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
   "unmapped_leagues": [
     "afc.champions",
@@ -431,13 +426,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 45,
-    "events": 46,
-    "failures": [],
+    "captured": 0,
+    "events": 45,
+    "failures": [
+      "401912612: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=40.3842&longitude=71.7843&hourly=te",
+      "401912602: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=24.1917&longitude=55.7606&hourly=te",
+      "401912610: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=25.6839&longitude=51.5058&hourly=te"
+    ],
     "forecast_miss": 0,
-    "geocode_miss": 1,
+    "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 0,
-    "stopped": null
+    "skipped": 42,
+    "stopped": "consecutive_failures"
   }
 }
