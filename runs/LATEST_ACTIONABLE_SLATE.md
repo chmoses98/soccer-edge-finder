@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261123T140827Z-e6f288` · generated 2026-11-23T14:08:27.758276Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261123T142357Z-6288e2` · generated 2026-11-23T14:23:57.443585Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-23T14:05:08.966130Z (CURRENT at publish; CURRENT until 2026-11-23T14:25:08.966130Z, STALE after 2026-11-23T14:35:08.966130Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-23T14:20:38.046201Z (CURRENT at publish; CURRENT until 2026-11-23T14:40:38.046201Z, STALE after 2026-11-23T14:50:38.046201Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-23T13:53:38.979905Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.24s
+model board generated 2026-11-23T13:53:38.979905Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.23s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -31,14 +31,14 @@ model board generated 2026-11-23T13:53:38.979905Z · simulations this update: 0 
 | St. Louis City SC vs Los Angeles FC | away team total over 0.5 | no | 0.2200 | 0.402 [0.278, 0.519] | +0.170 | +0.089 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 2.5 | no | 0.4300 | 0.617 [0.467, 0.752] | +0.170 | +0.082 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | Result: home | yes | 0.3700 | 0.550 [0.405, 0.695] | +0.163 | +0.067 | 0.43 | - | * | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Houston Dynamo | away team total over 1.5 | no | 0.6400 | 0.783 [0.682, 0.875] | +0.127 | +0.063 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away team total over 2.5 | no | 0.8200 | 0.924 [0.862, 0.971] | +0.094 | +0.063 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | Result: away | no | 0.6500 | 0.789 [0.683, 0.885] | +0.123 | +0.060 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 3.5 | no | 0.6700 | 0.808 [0.690, 0.904] | +0.122 | +0.059 | 0.73 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 1.5 | no | 0.2100 | 0.358 [0.229, 0.487] | +0.137 | +0.053 | 0.26 | - |  | RESEARCH_CANDIDATE |
-| Santos vs Grêmio | btts | no | 0.4000 | 0.542 [0.420, 0.667] | +0.126 | +0.047 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away wins by more than 1.5 | no | 0.8400 | 0.925 [0.870, 0.969] | +0.075 | +0.046 | 0.88 | - | * | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Houston Dynamo | away team total over 1.5 | no | 0.6600 | 0.783 [0.682, 0.875] | +0.107 | +0.043 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | btts | no | 0.3800 | 0.517 [0.387, 0.633] | +0.120 | +0.042 | 0.42 | - | * | RESEARCH_CANDIDATE |
+| Santos vs Grêmio | btts | no | 0.4100 | 0.542 [0.420, 0.667] | +0.115 | +0.037 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | away team total over 0.5 | no | 0.3000 | 0.429 [0.317, 0.544] | +0.115 | +0.037 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | First-half result: away | no | 0.7100 | 0.816 [0.718, 0.902] | +0.092 | +0.036 | 0.74 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 4.5 | no | 0.8400 | 0.917 [0.846, 0.969] | +0.067 | +0.034 | 0.87 | - |  | RESEARCH_CANDIDATE |
