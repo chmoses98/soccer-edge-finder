@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261123T212837Z-739056` · generated 2026-11-23T21:28:37.120479Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261123T214325Z-4f4455` · generated 2026-11-23T21:43:25.537510Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-23T21:25:06.252068Z (CURRENT at publish; CURRENT until 2026-11-23T21:45:06.252068Z, STALE after 2026-11-23T21:55:06.252068Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-23T21:40:07.602629Z (CURRENT at publish; CURRENT until 2026-11-23T22:00:07.602629Z, STALE after 2026-11-23T22:10:07.602629Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-23T21:28:34.372720Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.16s
+model board generated 2026-11-23T21:28:34.372720Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.17s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -19,7 +19,7 @@ model board generated 2026-11-23T21:28:34.372720Z · simulations this update: 1 
 | 2026-11-24T21:00:00Z | Chapecoense vs Palmeiras (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-25T03:00:00Z | San Jose Earthquakes vs Houston Dynamo (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 
-## Candidates on CURRENT prices (43; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (42; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -29,10 +29,10 @@ model board generated 2026-11-23T21:28:34.372720Z · simulations this update: 1 
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 2.5 | no | 0.4300 | 0.617 [0.467, 0.752] | +0.170 | +0.082 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | Result: away | no | 0.6300 | 0.788 [0.684, 0.885] | +0.142 | +0.079 | 0.71 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | Result: home | yes | 0.3600 | 0.550 [0.398, 0.698] | +0.174 | +0.078 | 0.43 | - |  | RESEARCH_CANDIDATE |
-| St. Louis City SC vs Los Angeles FC | away wins by more than 1.5 | no | 0.8200 | 0.924 [0.868, 0.969] | +0.094 | +0.065 | 0.88 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away team total over 2.5 | no | 0.8200 | 0.924 [0.862, 0.971] | +0.093 | +0.064 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | away team total over 1.5 | no | 0.6400 | 0.783 [0.682, 0.875] | +0.127 | +0.063 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 3.5 | no | 0.6700 | 0.808 [0.690, 0.904] | +0.122 | +0.059 | 0.73 | - |  | RESEARCH_CANDIDATE |
+| St. Louis City SC vs Los Angeles FC | away wins by more than 1.5 | no | 0.8300 | 0.924 [0.868, 0.969] | +0.084 | +0.056 | 0.88 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 1.5 | no | 0.2100 | 0.358 [0.229, 0.487] | +0.137 | +0.053 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | First-half result: away | no | 0.7100 | 0.817 [0.728, 0.892] | +0.092 | +0.046 | 0.75 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | Second-half result: away | no | 0.6900 | 0.802 [0.707, 0.892] | +0.097 | +0.045 | 0.73 | - | * | RESEARCH_CANDIDATE |
@@ -67,9 +67,9 @@ model board generated 2026-11-23T21:28:34.372720Z · simulations this update: 1 
 ## Counts
 
 ```
-action_NO_EDGE: 262
-action_NO_QUOTE: 119
-action_RESEARCH_CANDIDATE: 43
+action_NO_EDGE: 264
+action_NO_QUOTE: 118
+action_RESEARCH_CANDIDATE: 42
 contract_sides: 424
 fixtures: 6
 fixtures_model_invalidated: 0
