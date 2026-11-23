@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261123T164541Z-3271ce` · generated 2026-11-23T16:45:41.824245Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261123T170046Z-cf81a5` · generated 2026-11-23T17:00:46.569265Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-23T16:42:23.622371Z (CURRENT at publish; CURRENT until 2026-11-23T17:02:23.622371Z, STALE after 2026-11-23T17:12:23.622371Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-23T16:57:25.607623Z (CURRENT at publish; CURRENT until 2026-11-23T17:17:25.607623Z, STALE after 2026-11-23T17:27:25.607623Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-23T16:30:48.873209Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.25s
+model board generated 2026-11-23T16:30:48.873209Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.24s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -16,8 +16,8 @@ model board generated 2026-11-23T16:30:48.873209Z · simulations this update: 0 
 | 2026-11-23T19:45:00Z | Juventus vs Venezia (ita.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-23T20:00:00Z | Gimnasia La Plata vs Newell's Old Boys (arg.primera) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 16 | 0 |
 | 2026-11-23T22:30:00Z | Internacional vs Vitória (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-23T23:00:00Z | Botafogo vs São Paulo (bra.serie_a) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-24T00:00:00Z | Santos vs Grêmio (bra.serie_a) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-23T23:00:00Z | Botafogo vs São Paulo (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-24T00:00:00Z | Santos vs Grêmio (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-24T01:00:00Z | St. Louis City SC vs Los Angeles FC (usa.mls) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-11-24T21:00:00Z | Chapecoense vs Palmeiras (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-25T03:00:00Z | San Jose Earthquakes vs Houston Dynamo (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
