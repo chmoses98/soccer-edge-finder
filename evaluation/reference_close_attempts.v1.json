@@ -2,9 +2,9 @@
  "counts": {
   "DISPATCHER_CLOSE_NO_ATTEMPT": 690,
   "NO_SPORT_KEY": 39,
-  "PINNACLE_VALID_CLOSE": 145,
-  "MISSED_DISPATCHER_CLOSE": 117,
+  "MISSED_DISPATCHER_CLOSE": 118,
   "CLOSE_BLOCKED_BUDGET": 31,
+  "PINNACLE_VALID_CLOSE": 145,
   "PINNACLE_QUOTED_NOTHING": 3
  },
  "fixtures": {
@@ -5121,6 +5121,11 @@
   "fx:usa.mls:2026:usa.toronto:usa.orlando_city": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:usa.mls:2026:usa.vancouver_whitecaps:usa.real_salt_lake": {
+   "state": "MISSED_DISPATCHER_CLOSE",
+   "close_horizon_delivered": false,
    "batch_id": null
   },
   "fx:usa.mls:2026:usa.vancouver_whitecaps:usa.san_diego": {
