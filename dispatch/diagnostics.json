@@ -44,19 +44,19 @@
       "achieved_minutes_median": 60.86,
       "achieved_minutes_p10": 55.72,
       "achieved_minutes_p90": 62.2,
-      "delivered": 927,
-      "delivery_rate": 0.8904899135446686,
+      "delivered": 928,
+      "delivery_rate": 0.8905950095969289,
       "lateness_minutes_max": 33.2,
-      "lateness_minutes_median": -0.86,
+      "lateness_minutes_median": -0.84,
       "missed": 114
     }
   },
-  "delivered_total": 4566,
-  "delivery_rate_total": 0.883855981416957,
+  "delivered_total": 4567,
+  "delivery_rate_total": 0.8838784594542287,
   "fixtures_tracked": 1055,
-  "generated_at": "2026-11-23T00:08:56Z",
+  "generated_at": "2026-11-23T00:30:25Z",
   "missed_total": 600,
-  "n_pending_fixtures": 15,
+  "n_pending_fixtures": 16,
   "pending_fixtures": [
     {
       "competition_id": "arg.primera",
@@ -76,8 +76,8 @@
       "competition_id": "usa.mls",
       "fixture_id": "fx:usa.mls:2026:usa.vancouver_whitecaps:usa.real_salt_lake",
       "kickoff_utc": "2026-11-23T01:30:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 80,
+      "source": "run_output"
     },
     {
       "competition_id": "ita.serie_a",
@@ -97,7 +97,7 @@
       "competition_id": "arg.primera",
       "fixture_id": "fx:arg.primera:2026:arg.gimnasia_la_plata:arg.newells",
       "kickoff_utc": "2026-11-23T20:00:00Z",
-      "markets_discovered": 5,
+      "markets_discovered": 16,
       "source": "run_output"
     },
     {
@@ -146,8 +146,8 @@
       "competition_id": "bra.serie_a",
       "fixture_id": "fx:bra.serie_a:2026:bra.chapecoense:bra.palmeiras",
       "kickoff_utc": "2026-11-24T21:00:00Z",
-      "markets_discovered": 0,
-      "source": "espn"
+      "markets_discovered": 29,
+      "source": "run_output"
     },
     {
       "competition_id": "usa.mls",
@@ -160,6 +160,13 @@
       "competition_id": "bra.serie_a",
       "fixture_id": "fx:bra.serie_a:2026:bra.atletico_mineiro:bra.corinthians",
       "kickoff_utc": "2026-11-25T23:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "arg.primera",
+      "fixture_id": "fx:arg.primera:2026:arg.boca_juniors:arg.independiente_rivadavia",
+      "kickoff_utc": "2026-11-26T00:00:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }
