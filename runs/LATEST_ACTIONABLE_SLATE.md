@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261123T111947Z-5df6e8` · generated 2026-11-23T11:19:47.329723Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261123T113448Z-63bb61` · generated 2026-11-23T11:34:48.261969Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-23T11:16:28.458852Z (CURRENT at publish; CURRENT until 2026-11-23T11:36:28.458852Z, STALE after 2026-11-23T11:46:28.458852Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-23T11:31:28.487667Z (CURRENT at publish; CURRENT until 2026-11-23T11:51:28.487667Z, STALE after 2026-11-23T12:01:28.487667Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-23T08:19:19.429570Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.18s
 
@@ -22,7 +22,7 @@ model board generated 2026-11-23T08:19:19.429570Z · simulations this update: 0 
 | 2026-11-24T21:00:00Z | Chapecoense vs Palmeiras (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-25T03:00:00Z | San Jose Earthquakes vs Houston Dynamo (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 
-## Candidates on CURRENT prices (38; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (37; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -62,15 +62,14 @@ model board generated 2026-11-23T08:19:19.429570Z · simulations this update: 0 
 | Santos vs Grêmio | Total goals over 4.5 | no | 0.8000 | 0.871 [0.768, 0.954] | +0.060 | +0.004 | 0.8 | - |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Palmeiras | home wins by more than 1.5 | no | 0.9300 | 0.955 [0.918, 0.985] | +0.021 | +0.002 | 0.93 | - | * | RESEARCH_CANDIDATE |
 | Santos vs Grêmio | Total goals over 3.5 | no | 0.6300 | 0.737 [0.587, 0.871] | +0.091 | +0.001 | 0.63 | - |  | RESEARCH_CANDIDATE |
-| Santos vs Grêmio | Total goals over 5.5 | no | 0.9100 | 0.944 [0.886, 0.986] | +0.028 | +0.000 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | Santos vs Grêmio | Total goals over 0.5 | no | 0.0500 | 0.090 [0.040, 0.151] | +0.037 | +0.000 | 0.05 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 273
+action_NO_EDGE: 274
 action_NO_QUOTE: 187
-action_RESEARCH_CANDIDATE: 38
+action_RESEARCH_CANDIDATE: 37
 contract_sides: 498
 fixtures: 9
 fixtures_model_invalidated: 0
