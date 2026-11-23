@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261123T142357Z-6288e2` · generated 2026-11-23T14:23:57.443585Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261123T143857Z-65aca8` · generated 2026-11-23T14:38:57.547383Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-23T14:20:38.046201Z (CURRENT at publish; CURRENT until 2026-11-23T14:40:38.046201Z, STALE after 2026-11-23T14:50:38.046201Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-23T14:35:38.083663Z (CURRENT at publish; CURRENT until 2026-11-23T14:55:38.083663Z, STALE after 2026-11-23T15:05:38.083663Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-23T13:53:38.979905Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.23s
+model board generated 2026-11-23T13:53:38.979905Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.39s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -60,11 +60,11 @@ model board generated 2026-11-23T13:53:38.979905Z · simulations this update: 0 
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 0.5 | no | 0.0600 | 0.117 [0.059, 0.182] | +0.053 | +0.013 | 0.07 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs São Paulo | btts | no | 0.4600 | 0.565 [0.440, 0.682] | +0.088 | +0.013 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | First-half total goals over 2.5 | no | 0.8700 | 0.920 [0.859, 0.971] | +0.042 | +0.012 | 0.88 | - |  | RESEARCH_CANDIDATE |
+| Chapecoense vs Palmeiras | home wins by more than 1.5 | no | 0.9200 | 0.955 [0.918, 0.985] | +0.030 | +0.011 | 0.93 | - | * | RESEARCH_CANDIDATE |
 | Santos vs Grêmio | Total goals over 5.5 | no | 0.9000 | 0.944 [0.886, 0.986] | +0.037 | +0.010 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Palmeiras | btts | no | 0.4400 | 0.544 [0.416, 0.671] | +0.087 | +0.007 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | home wins by more than 2.5 | yes | 0.0700 | 0.146 [0.060, 0.251] | +0.072 | +0.007 | 0.07 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | First-half exact score 0-0 (home-away) | yes | 0.2900 | 0.385 [0.278, 0.502] | +0.081 | +0.006 | 0.29 | - | * | RESEARCH_CANDIDATE |
-| Chapecoense vs Palmeiras | home wins by more than 1.5 | no | 0.9300 | 0.955 [0.918, 0.985] | +0.021 | +0.002 | 0.93 | - | * | RESEARCH_CANDIDATE |
 | Santos vs Grêmio | Total goals over 0.5 | no | 0.0500 | 0.090 [0.040, 0.151] | +0.037 | +0.000 | 0.05 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
