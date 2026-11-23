@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261123T214325Z-4f4455` · generated 2026-11-23T21:43:25.537510Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261123T215836Z-299332` · generated 2026-11-23T21:58:36.751138Z · trigger `kickoff_chain:T-120/T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-23T21:40:07.602629Z (CURRENT at publish; CURRENT until 2026-11-23T22:00:07.602629Z, STALE after 2026-11-23T22:10:07.602629Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-23T21:55:07.635531Z (CURRENT at publish; CURRENT until 2026-11-23T22:15:07.635531Z, STALE after 2026-11-23T22:25:07.635531Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-23T21:28:34.372720Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.17s
+model board generated 2026-11-23T21:58:34.026013Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.16s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,8 +12,8 @@ model board generated 2026-11-23T21:28:34.372720Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-23T22:30:00Z | Internacional vs Vitória (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
-| 2026-11-23T23:00:00Z | Botafogo vs São Paulo (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-23T22:30:00Z | Internacional vs Vitória (bra.serie_a) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
+| 2026-11-23T23:00:00Z | Botafogo vs São Paulo (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
 | 2026-11-24T00:00:00Z | Santos vs Grêmio (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-24T01:00:00Z | St. Louis City SC vs Los Angeles FC (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 32 | 0 |
 | 2026-11-24T21:00:00Z | Chapecoense vs Palmeiras (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -37,10 +37,10 @@ model board generated 2026-11-23T21:28:34.372720Z · simulations this update: 0 
 | St. Louis City SC vs Los Angeles FC | First-half result: away | no | 0.7100 | 0.817 [0.728, 0.892] | +0.092 | +0.046 | 0.75 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | Second-half result: away | no | 0.6900 | 0.802 [0.707, 0.892] | +0.097 | +0.045 | 0.73 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | btts | no | 0.3800 | 0.516 [0.397, 0.634] | +0.120 | +0.041 | 0.42 | - | * | RESEARCH_CANDIDATE |
-| Chapecoense vs Palmeiras | Result: home | no | 0.7600 | 0.860 [0.768, 0.932] | +0.087 | +0.039 | 0.8 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | away team total over 0.5 | no | 0.3000 | 0.429 [0.317, 0.544] | +0.115 | +0.037 | 0.33 | - |  | RESEARCH_CANDIDATE |
-| Chapecoense vs Palmeiras | Result: away | yes | 0.5050 | 0.650 [0.507, 0.788] | +0.127 | +0.036 | 0.54 | - |  | RESEARCH_CANDIDATE |
+| Chapecoense vs Palmeiras | Result: away | yes | 0.5050 | 0.650 [0.507, 0.788] | +0.127 | +0.036 | 0.54 | - | * | RESEARCH_CANDIDATE |
 | Santos vs Grêmio | Total goals over 3.5 | no | 0.6000 | 0.737 [0.588, 0.868] | +0.120 | +0.035 | 0.63 | - | * | RESEARCH_CANDIDATE |
+| Chapecoense vs Palmeiras | Result: home | no | 0.7650 | 0.860 [0.768, 0.932] | +0.082 | +0.034 | 0.8 | - |  | RESEARCH_CANDIDATE |
 | Santos vs Grêmio | btts | no | 0.4100 | 0.541 [0.421, 0.654] | +0.114 | +0.034 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 4.5 | no | 0.8400 | 0.917 [0.846, 0.969] | +0.067 | +0.034 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Santos vs Grêmio | Total goals over 2.5 | no | 0.3800 | 0.531 [0.366, 0.693] | +0.134 | +0.031 | 0.41 | - |  | RESEARCH_CANDIDATE |
@@ -67,12 +67,13 @@ model board generated 2026-11-23T21:28:34.372720Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 264
-action_NO_QUOTE: 118
+action_MODEL_INVALIDATED: 27
+action_NO_EDGE: 237
+action_NO_QUOTE: 88
 action_RESEARCH_CANDIDATE: 42
-contract_sides: 424
+contract_sides: 394
 fixtures: 6
-fixtures_model_invalidated: 0
+fixtures_model_invalidated: 1
 fixtures_model_missing: 0
 ```
 
