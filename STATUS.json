@@ -1,38 +1,40 @@
 {
-  "as_of": "2026-11-23T17:59:54.010346+00:00",
-  "events": 3,
+  "as_of": "2026-11-23T18:44:53.661044+00:00",
+  "events": 1,
   "events_skipped_unmapped": 0,
-  "fixtures_mapped": 3,
+  "fixtures_mapped": 1,
   "health": {
-    "reasons": [],
-    "state": "HEALTHY"
+    "reasons": [
+      "weather_failures:1"
+    ],
+    "state": "DEGRADED"
   },
   "leagues": [
-    "arg.1",
-    "eng.1",
-    "esp.1"
+    "ita.1"
   ],
   "lineups": {
     "captured": 0,
-    "events": 3,
+    "events": 1,
     "failures": [],
     "published_post": 0,
     "published_pre_kickoff": 0,
-    "unchanged": 3,
-    "unpublished": 3
+    "unchanged": 1,
+    "unpublished": 1
   },
   "map_proposals": {},
   "map_version": "4",
   "results_appended": 0,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
-  "scoreboard_queries": 3,
+  "scoreboard_queries": 1,
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 3,
-    "events": 3,
-    "failures": [],
+    "captured": 0,
+    "events": 1,
+    "failures": [
+      "401875009: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=45.5800&longitude=9.2725&hourly=tem"
+    ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
