@@ -1,12 +1,11 @@
 {
-  "as_of": "2026-11-22T20:46:19.841535+00:00",
-  "events": 695,
-  "events_skipped_unmapped": 397,
-  "fixtures_mapped": 298,
+  "as_of": "2026-11-23T02:54:34.397015+00:00",
+  "events": 693,
+  "events_skipped_unmapped": 393,
+  "fixtures_mapped": 300,
   "health": {
     "reasons": [
-      "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=39"
+      "scoreboard_partial_failures:5/748"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +80,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 118,
-    "events": 150,
+    "captured": 22,
+    "events": 114,
     "failures": [],
-    "published_post": 117,
-    "published_pre_kickoff": 4,
-    "unchanged": 32,
-    "unpublished": 29
+    "published_post": 90,
+    "published_pre_kickoff": 0,
+    "unchanged": 92,
+    "unpublished": 24
   },
   "map_proposals": {
     "bel.1": {
@@ -281,9 +280,15 @@
     }
   },
   "map_version": "4",
-  "results_appended": 26,
-  "scoreboard_failures": [],
-  "scoreboard_failures_n": 0,
+  "results_appended": 11,
+  "scoreboard_failures": [
+    "concacaf.gold 2026-11-25: fetch failed for https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.gold/scoreboard?dates",
+    "concacaf.gold 2026-11-28: fetch failed for https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.gold/scoreboard?dates",
+    "fifa.worldq.caf 2026-11-22: fetch failed for https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.worldq.caf/scoreboard?dat",
+    "uefa.europa.conf 2026-11-20: fetch failed for https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/scoreboard?da",
+    "usa.1 2026-11-20: fetch failed for https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=2026112"
+  ],
+  "scoreboard_failures_n": 5,
   "scoreboard_queries": 748,
   "unmapped_leagues": [
     "afc.champions",
@@ -306,7 +311,6 @@
     "nor.1",
     "per.1",
     "swe.1",
-    "uefa.wchampions",
     "uru.1",
     "usa.usl.1"
   ],
@@ -427,17 +431,13 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 10,
-    "events": 52,
-    "failures": [
-      "401912585: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Ratchaburi&count=5&language=en&",
-      "401912586: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Shanghai&count=5&language=en&fo",
-      "401912598: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Dubai&count=5&language=en&forma"
-    ],
+    "captured": 45,
+    "events": 46,
+    "failures": [],
     "forecast_miss": 0,
-    "geocode_miss": 0,
+    "geocode_miss": 1,
     "no_venue": 0,
-    "skipped": 39,
-    "stopped": "consecutive_failures"
+    "skipped": 0,
+    "stopped": null
   }
 }
