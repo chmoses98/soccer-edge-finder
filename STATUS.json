@@ -1,13 +1,11 @@
 {
-  "as_of": "2026-11-23T15:23:27.168838+00:00",
+  "as_of": "2026-11-23T16:30:44.204950+00:00",
   "events": 1,
   "events_skipped_unmapped": 0,
   "fixtures_mapped": 1,
   "health": {
-    "reasons": [
-      "weather_failures:1"
-    ],
-    "state": "DEGRADED"
+    "reasons": [],
+    "state": "HEALTHY"
   },
   "leagues": [
     "ita.1"
@@ -30,11 +28,9 @@
   "unmapped_leagues": [],
   "unmapped_team_ids": {},
   "weather": {
-    "captured": 0,
+    "captured": 1,
     "events": 1,
-    "failures": [
-      "401875009: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=45.5800&longitude=9.2725&hourly=tem"
-    ],
+    "failures": [],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
