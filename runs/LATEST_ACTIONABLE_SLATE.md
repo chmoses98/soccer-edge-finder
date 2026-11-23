@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261123T194321Z-8c9f54` · generated 2026-11-23T19:43:21.138279Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
+slate `slate-20261123T194948Z-4c3a32` · generated 2026-11-23T19:49:48.039798Z · trigger `kickoff_chain:T-15` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-23T19:40:00.079909Z (CURRENT at publish; CURRENT until 2026-11-23T20:00:00.079909Z, STALE after 2026-11-23T20:10:00.079909Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-23T19:46:20.595653Z (CURRENT at publish; CURRENT until 2026-11-23T20:06:20.595653Z, STALE after 2026-11-23T20:16:20.595653Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-23T05:44:55.142821Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.16s
+model board generated 2026-11-23T05:44:55.142821Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.17s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,8 +12,7 @@ model board generated 2026-11-23T05:44:55.142821Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-23T19:45:00Z | Juventus vs Venezia (ita.serie_a) | VALID (STALE) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-23T20:00:00Z | Gimnasia La Plata vs Newell's Old Boys (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | AGING entry | CURRENT | 16 | 0 |
+| 2026-11-23T20:00:00Z | Gimnasia La Plata vs Newell's Old Boys (arg.primera) | INVALIDATED: lineup_changed:published:confirmed | confirmed (CURRENT) | CURRENT close | CURRENT | 16 | 0 |
 | 2026-11-23T22:30:00Z | Internacional vs Vitória (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-23T23:00:00Z | Botafogo vs São Paulo (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-24T00:00:00Z | Santos vs Grêmio (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -33,13 +32,12 @@ model board generated 2026-11-23T05:44:55.142821Z · simulations this update: 0 
 | St. Louis City SC vs Los Angeles FC | Result: home | yes | 0.3600 | 0.550 [0.405, 0.695] | +0.174 | +0.077 | 0.43 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away team total over 2.5 | no | 0.8100 | 0.924 [0.862, 0.971] | +0.103 | +0.072 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Palmeiras | Result: home | no | 0.7250 | 0.859 [0.774, 0.936] | +0.120 | +0.071 | 0.79 | - | * | RESEARCH_CANDIDATE |
-| St. Louis City SC vs Los Angeles FC | away wins by more than 1.5 | no | 0.8200 | 0.925 [0.870, 0.969] | +0.094 | +0.065 | 0.88 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | away team total over 1.5 | no | 0.6400 | 0.783 [0.682, 0.875] | +0.127 | +0.063 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | Chapecoense vs Palmeiras | Result: away | yes | 0.4750 | 0.647 [0.510, 0.784] | +0.154 | +0.063 | 0.53 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 3.5 | no | 0.6700 | 0.808 [0.690, 0.904] | +0.122 | +0.059 | 0.73 | - |  | RESEARCH_CANDIDATE |
+| St. Louis City SC vs Los Angeles FC | away wins by more than 1.5 | no | 0.8300 | 0.925 [0.870, 0.969] | +0.085 | +0.056 | 0.88 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 1.5 | no | 0.2100 | 0.358 [0.229, 0.487] | +0.137 | +0.053 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | btts | no | 0.3800 | 0.517 [0.387, 0.633] | +0.120 | +0.042 | 0.42 | - | * | RESEARCH_CANDIDATE |
-| St. Louis City SC vs Los Angeles FC | home wins by more than 1.5 | yes | 0.1700 | 0.311 [0.177, 0.460] | +0.131 | +0.038 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Santos vs Grêmio | btts | no | 0.4100 | 0.542 [0.420, 0.667] | +0.115 | +0.037 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | away team total over 0.5 | no | 0.3000 | 0.429 [0.317, 0.544] | +0.115 | +0.037 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | First-half result: away | no | 0.7100 | 0.816 [0.718, 0.902] | +0.092 | +0.036 | 0.74 | - | * | RESEARCH_CANDIDATE |
@@ -48,6 +46,7 @@ model board generated 2026-11-23T05:44:55.142821Z · simulations this update: 0 
 | Chapecoense vs Palmeiras | away wins by more than 1.5 | yes | 0.2600 | 0.408 [0.262, 0.568] | +0.134 | +0.031 | 0.29 | - | * | RESEARCH_CANDIDATE |
 | Santos vs Grêmio | Total goals over 3.5 | no | 0.6000 | 0.737 [0.587, 0.871] | +0.120 | +0.031 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | Chapecoense vs Palmeiras | home wins by more than 1.5 | no | 0.9000 | 0.955 [0.918, 0.985] | +0.049 | +0.030 | 0.93 | - |  | RESEARCH_CANDIDATE |
+| St. Louis City SC vs Los Angeles FC | home wins by more than 1.5 | yes | 0.1800 | 0.311 [0.177, 0.460] | +0.121 | +0.028 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Santos vs Grêmio | Total goals over 2.5 | no | 0.3800 | 0.532 [0.365, 0.698] | +0.136 | +0.027 | 0.4 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away wins by more than 2.5 | no | 0.9400 | 0.978 [0.958, 0.994] | +0.034 | +0.025 | 0.96 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | First half: away wins by more than 1.5 | no | 0.9200 | 0.964 [0.929, 0.991] | +0.039 | +0.025 | 0.94 | - | * | RESEARCH_CANDIDATE |
@@ -70,12 +69,14 @@ model board generated 2026-11-23T05:44:55.142821Z · simulations this update: 0 
 
 ```
 action_NO_EDGE: 262
-action_NO_QUOTE: 186
+action_NO_QUOTE: 180
 action_RESEARCH_CANDIDATE: 44
-contract_sides: 492
-fixtures: 8
+contract_sides: 486
+fixtures: 7
 fixtures_model_invalidated: 1
 fixtures_model_missing: 0
 ```
+
+Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
