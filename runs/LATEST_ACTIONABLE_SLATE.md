@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261123T205826Z-02affd` · generated 2026-11-23T20:58:26.213768Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261123T211324Z-3a8497` · generated 2026-11-23T21:13:24.411276Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-23T20:55:04.288052Z (CURRENT at publish; CURRENT until 2026-11-23T21:15:04.288052Z, STALE after 2026-11-23T21:25:04.288052Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-23T21:10:06.261241Z (CURRENT at publish; CURRENT until 2026-11-23T21:30:06.261241Z, STALE after 2026-11-23T21:40:06.261241Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-23T19:29:08.473244Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.17s
 
@@ -36,12 +36,12 @@ model board generated 2026-11-23T19:29:08.473244Z · simulations this update: 0 
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 1.5 | no | 0.2100 | 0.358 [0.229, 0.487] | +0.137 | +0.053 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | First-half result: away | no | 0.7100 | 0.817 [0.728, 0.892] | +0.092 | +0.046 | 0.75 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | Second-half result: away | no | 0.6900 | 0.802 [0.707, 0.892] | +0.097 | +0.045 | 0.73 | - | * | RESEARCH_CANDIDATE |
-| Santos vs Grêmio | btts | no | 0.4000 | 0.541 [0.421, 0.654] | +0.124 | +0.044 | 0.44 | - | * | RESEARCH_CANDIDATE |
+| Chapecoense vs Palmeiras | Result: away | yes | 0.5000 | 0.650 [0.507, 0.788] | +0.132 | +0.041 | 0.54 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | btts | no | 0.3800 | 0.516 [0.397, 0.634] | +0.120 | +0.041 | 0.42 | - | * | RESEARCH_CANDIDATE |
+| Chapecoense vs Palmeiras | Result: home | no | 0.7600 | 0.860 [0.768, 0.932] | +0.087 | +0.039 | 0.8 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | away team total over 0.5 | no | 0.3000 | 0.429 [0.317, 0.544] | +0.115 | +0.037 | 0.33 | - |  | RESEARCH_CANDIDATE |
-| Chapecoense vs Palmeiras | Result: away | yes | 0.5050 | 0.650 [0.507, 0.788] | +0.127 | +0.036 | 0.54 | - | * | RESEARCH_CANDIDATE |
 | Santos vs Grêmio | Total goals over 3.5 | no | 0.6000 | 0.737 [0.588, 0.868] | +0.120 | +0.035 | 0.63 | - | * | RESEARCH_CANDIDATE |
-| Chapecoense vs Palmeiras | Result: home | no | 0.7650 | 0.860 [0.768, 0.932] | +0.082 | +0.034 | 0.8 | - |  | RESEARCH_CANDIDATE |
+| Santos vs Grêmio | btts | no | 0.4100 | 0.541 [0.421, 0.654] | +0.114 | +0.034 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 4.5 | no | 0.8400 | 0.917 [0.846, 0.969] | +0.067 | +0.034 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Santos vs Grêmio | Total goals over 2.5 | no | 0.3800 | 0.531 [0.366, 0.693] | +0.134 | +0.031 | 0.41 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away wins by more than 2.5 | no | 0.9400 | 0.978 [0.957, 0.994] | +0.034 | +0.025 | 0.96 | - |  | RESEARCH_CANDIDATE |
@@ -49,6 +49,7 @@ model board generated 2026-11-23T19:29:08.473244Z · simulations this update: 0 
 | San Jose Earthquakes vs Houston Dynamo | First-half total goals over 1.5 | no | 0.6400 | 0.744 [0.638, 0.842] | +0.088 | +0.024 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | away team total over 2.5 | no | 0.8800 | 0.937 [0.891, 0.976] | +0.050 | +0.024 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Palmeiras | btts | no | 0.4300 | 0.545 [0.422, 0.666] | +0.098 | +0.022 | 0.45 | - | * | RESEARCH_CANDIDATE |
+| Chapecoense vs Palmeiras | home wins by more than 1.5 | no | 0.9100 | 0.956 [0.915, 0.985] | +0.040 | +0.021 | 0.93 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Exact score 1-0 (home-away) | yes | 0.0900 | 0.146 [0.099, 0.192] | +0.050 | +0.021 | 0.1 | - | * | RESEARCH_CANDIDATE |
 | Santos vs Grêmio | Total goals over 1.5 | no | 0.1700 | 0.283 [0.160, 0.417] | +0.103 | +0.020 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 5.5 | no | 0.9300 | 0.968 [0.934, 0.992] | +0.034 | +0.019 | 0.95 | - |  | RESEARCH_CANDIDATE |
@@ -57,12 +58,11 @@ model board generated 2026-11-23T19:29:08.473244Z · simulations this update: 0 
 | San Jose Earthquakes vs Houston Dynamo | First-half total goals over 0.5 | no | 0.2800 | 0.385 [0.278, 0.502] | +0.091 | +0.016 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs São Paulo | btts | no | 0.4500 | 0.559 [0.437, 0.674] | +0.092 | +0.016 | 0.46 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | First half: away wins by more than 1.5 | no | 0.9300 | 0.964 [0.929, 0.991] | +0.030 | +0.015 | 0.94 | - | * | RESEARCH_CANDIDATE |
-| Chapecoense vs Palmeiras | away wins by more than 1.5 | yes | 0.2800 | 0.411 [0.263, 0.571] | +0.117 | +0.013 | 0.29 | - | * | RESEARCH_CANDIDATE |
+| Chapecoense vs Palmeiras | away wins by more than 1.5 | yes | 0.2800 | 0.411 [0.263, 0.571] | +0.117 | +0.013 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Exact score 0-0 (home-away) | yes | 0.0600 | 0.117 [0.059, 0.182] | +0.053 | +0.013 | 0.07 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 0.5 | no | 0.0600 | 0.117 [0.059, 0.182] | +0.053 | +0.013 | 0.07 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | First-half total goals over 2.5 | no | 0.8700 | 0.920 [0.859, 0.971] | +0.042 | +0.012 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | Santos vs Grêmio | Total goals over 5.5 | no | 0.9000 | 0.944 [0.887, 0.985] | +0.038 | +0.012 | 0.91 | - |  | RESEARCH_CANDIDATE |
-| Chapecoense vs Palmeiras | home wins by more than 1.5 | no | 0.9200 | 0.956 [0.915, 0.985] | +0.031 | +0.011 | 0.93 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
@@ -75,7 +75,5 @@ fixtures: 6
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
-
-Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
