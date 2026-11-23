@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261123T153822Z-7afabb` · generated 2026-11-23T15:38:22.839462Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261123T155354Z-5dbd7b` · generated 2026-11-23T15:53:54.565161Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-23T15:35:04.319871Z (CURRENT at publish; CURRENT until 2026-11-23T15:55:04.319871Z, STALE after 2026-11-23T16:05:04.319871Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-23T15:50:36.327802Z (CURRENT at publish; CURRENT until 2026-11-23T16:10:36.327802Z, STALE after 2026-11-23T16:20:36.327802Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-23T13:53:38.979905Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.24s
 
@@ -46,6 +46,7 @@ model board generated 2026-11-23T13:53:38.979905Z · simulations this update: 0 
 | Santos vs Grêmio | Total goals over 3.5 | no | 0.6000 | 0.737 [0.587, 0.871] | +0.120 | +0.031 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | home wins by more than 1.5 | yes | 0.1800 | 0.311 [0.177, 0.460] | +0.121 | +0.028 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Santos vs Grêmio | Total goals over 2.5 | no | 0.3800 | 0.532 [0.365, 0.698] | +0.136 | +0.027 | 0.4 | - |  | RESEARCH_CANDIDATE |
+| St. Louis City SC vs Los Angeles FC | Second-half result: away | no | 0.7100 | 0.802 [0.708, 0.892] | +0.078 | +0.026 | 0.73 | - | * | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | away wins by more than 2.5 | no | 0.9400 | 0.978 [0.958, 0.994] | +0.034 | +0.025 | 0.96 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | First-half total goals over 1.5 | no | 0.6400 | 0.744 [0.638, 0.842] | +0.088 | +0.024 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | away team total over 2.5 | no | 0.8800 | 0.937 [0.891, 0.976] | +0.050 | +0.024 | 0.9 | - |  | RESEARCH_CANDIDATE |
@@ -53,7 +54,6 @@ model board generated 2026-11-23T13:53:38.979905Z · simulations this update: 0 
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 5.5 | no | 0.9300 | 0.968 [0.934, 0.992] | +0.034 | +0.019 | 0.95 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | First half: both teams to score | no | 0.7900 | 0.863 [0.789, 0.931] | +0.061 | +0.018 | 0.8 | - | * | RESEARCH_CANDIDATE |
 | Santos vs Grêmio | Total goals over 1.5 | no | 0.1700 | 0.284 [0.157, 0.424] | +0.104 | +0.017 | 0.18 | - |  | RESEARCH_CANDIDATE |
-| St. Louis City SC vs Los Angeles FC | Second-half result: away | no | 0.7200 | 0.802 [0.708, 0.892] | +0.068 | +0.016 | 0.73 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | First-half total goals over 0.5 | no | 0.2800 | 0.385 [0.278, 0.502] | +0.091 | +0.016 | 0.29 | - |  | RESEARCH_CANDIDATE |
 | St. Louis City SC vs Los Angeles FC | First half: away wins by more than 1.5 | no | 0.9300 | 0.964 [0.929, 0.991] | +0.030 | +0.015 | 0.94 | - | * | RESEARCH_CANDIDATE |
 | Santos vs Grêmio | Total goals over 4.5 | no | 0.7900 | 0.871 [0.768, 0.954] | +0.069 | +0.014 | 0.8 | - |  | RESEARCH_CANDIDATE |
@@ -70,8 +70,8 @@ model board generated 2026-11-23T13:53:38.979905Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 271
-action_NO_QUOTE: 186
+action_NO_EDGE: 270
+action_NO_QUOTE: 187
 action_RESEARCH_CANDIDATE: 41
 contract_sides: 498
 fixtures: 9
