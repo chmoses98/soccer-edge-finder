@@ -1,6 +1,6 @@
-# settle-evaluate 2026-11-23 19:30Z
+# settle-evaluate 2026-11-24 00:48Z
 
-- newly settled: 0
+- newly settled: 6
 - cells evaluated: 269
 - authority proposals: 69
 
@@ -106,13 +106,13 @@
 | data_only.world_sim_v2 | match_result_3way | T-10m | 18 | 0.53917 | 0.48252 | 0.2167 | None | 0.0019 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-12h | 888 | 0.56362 | 0.52213 | 0.052 | 0.88 | -0.0016 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-15m | 129 | 0.52668 | 0.48266 | 0.1231 | 0.372 | -0.0003 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | match_result_3way | T-24h | 2370 | 0.56521 | 0.52653 | 0.054 | 0.846 | -0.0008 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | match_result_3way | T-24h | 2376 | 0.56427 | 0.52576 | 0.0541 | 0.843 | -0.0008 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-2h | 363 | 0.55926 | 0.52814 | 0.0471 | 0.835 | 0.0049 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-30m | 219 | 0.55261 | 0.50418 | 0.0735 | 0.959 | 0.0001 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-60m | 294 | 0.58917 | 0.5532 | 0.0318 | 0.973 | -0.0071 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-6h | 483 | 0.57875 | 0.53786 | 0.0546 | 0.979 | 0.0023 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | T-90m | 45 | 0.48527 | 0.41374 | 0.1726 | 0.444 | 0.0017 | RESEARCH_ONLY |
-| data_only.world_sim_v2 | match_result_3way | any | 4827 | 0.56424 | 0.5246 | 0.0559 | 0.97 | -0.0005 | RESEARCH_ONLY |
+| data_only.world_sim_v2 | match_result_3way | any | 4833 | 0.56378 | 0.52422 | 0.056 | 0.969 | -0.0005 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_result_3way | close | 18 | 0.4045 | 0.36595 | 0.2222 | None | -0.0006 | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_winner_2way | T-24h | 8 | 0.5318 | None | 0.3963 | None | None | RESEARCH_ONLY |
 | data_only.world_sim_v2 | match_winner_2way | T-60m | 2 | 0.49294 | None | 0.3748 | None | None | RESEARCH_ONLY |
