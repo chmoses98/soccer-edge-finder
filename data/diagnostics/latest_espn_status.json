@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-23T14:52:15.497603+00:00",
-  "events": 692,
-  "events_skipped_unmapped": 392,
-  "fixtures_mapped": 300,
+  "as_of": "2026-11-24T02:58:00.156601+00:00",
+  "events": 693,
+  "events_skipped_unmapped": 399,
+  "fixtures_mapped": 294,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=42"
+      "weather_stopped:consecutive_failures:skipped=33"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 31,
-    "events": 108,
+    "captured": 88,
+    "events": 88,
     "failures": [],
-    "published_post": 78,
+    "published_post": 35,
     "published_pre_kickoff": 0,
-    "unchanged": 77,
-    "unpublished": 30
+    "unchanged": 0,
+    "unpublished": 53
   },
   "map_proposals": {
     "bel.1": {
@@ -114,13 +114,8 @@
         "3243": "fra.reims"
       },
       "unresolved": {
-        "10678": "Pau",
-        "11884": "Red Star FC 93",
-        "18066": "Annecy",
         "272": "Sochaux",
-        "3171": "Clermont Foot",
         "3266": "Stade Laval",
-        "3267": "AS Nancy Lorraine",
         "6994": "Grenoble"
       }
     },
@@ -223,6 +218,28 @@
         "9024": "Le Poire SV"
       }
     },
+    "ger.2": {
+      "ambiguous": {},
+      "proposed": {
+        "3812": "ger.darmstadt",
+        "7884": "ger.holstein_kiel"
+      },
+      "unresolved": {
+        "129": "Hertha Berlin",
+        "7017": "Dynamo Dresden"
+      }
+    },
+    "ger.dfb_pokal": {
+      "ambiguous": {},
+      "proposed": {
+        "3812": "ger.darmstadt",
+        "7884": "ger.holstein_kiel"
+      },
+      "unresolved": {
+        "129": "Hertha Berlin",
+        "7017": "Dynamo Dresden"
+      }
+    },
     "nor.1": {
       "ambiguous": {},
       "proposed": {},
@@ -281,7 +298,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 3,
+  "results_appended": 8,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -320,6 +337,7 @@
     "11880": "FC Chambly",
     "11884": "Red Star FC 93",
     "11895": "Bourg-Peronnas",
+    "129": "Hertha Berlin",
     "12957": "Sabl\u00e9 FC",
     "13083": "Hapoel Be'er",
     "134063": "Chassieu Declines FC",
@@ -398,6 +416,7 @@
     "3266": "Stade Laval",
     "3267": "AS Nancy Lorraine",
     "3335": "SC Amiens",
+    "3812": "SV Darmstadt 98",
     "4744": "Calais",
     "489": "Hajduk Split",
     "490": "Levski Sofia",
@@ -405,6 +424,7 @@
     "620": "SK Brann",
     "6732": "Valenciennes",
     "6994": "Grenoble",
+    "7017": "Dynamo Dresden",
     "7574": "Vannes OC",
     "7718": "Concarneau",
     "7720": "Angouleme",
@@ -413,6 +433,7 @@
     "7730": "Nimes",
     "7733": "Bayonne",
     "7853": "AGF",
+    "7884": "Holstein Kiel",
     "8089": "CSU Craiova",
     "8169": "KuPS Kuopio",
     "9009": "Rouen",
@@ -427,16 +448,16 @@
   },
   "weather": {
     "captured": 0,
-    "events": 45,
+    "events": 36,
     "failures": [
-      "401912612: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=40.3842&longitude=71.7843&hourly=te",
-      "401912602: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=24.1917&longitude=55.7606&hourly=te",
-      "401912610: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=25.6839&longitude=51.5058&hourly=te"
+      "401912609: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=25.2399&longitude=55.1999&hourly=te",
+      "401912588: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=36.3502&longitude=127.3848&hourly=t",
+      "401912587: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=35.0211&longitude=135.7538&hourly=t"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 42,
+    "skipped": 33,
     "stopped": "consecutive_failures"
   }
 }
