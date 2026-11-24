@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261124T134622Z-0f2f67` · generated 2026-11-24T13:46:22.163964Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261124T140122Z-a8f1a3` · generated 2026-11-24T14:01:22.233689Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-24T13:42:58.039683Z (CURRENT at publish; CURRENT until 2026-11-24T14:02:58.039683Z, STALE after 2026-11-24T14:12:58.039683Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-24T13:57:58.076787Z (CURRENT at publish; CURRENT until 2026-11-24T14:17:58.076787Z, STALE after 2026-11-24T14:27:58.076787Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-23T23:17:00.670727Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.14s
 
@@ -16,7 +16,7 @@ model board generated 2026-11-23T23:17:00.670727Z · simulations this update: 0 
 | 2026-11-25T03:00:00Z | San Jose Earthquakes vs Houston Dynamo (usa.mls) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-25T23:00:00Z | Atlético Mineiro vs Corinthians (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (26; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (27; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -29,8 +29,8 @@ model board generated 2026-11-23T23:17:00.670727Z · simulations this update: 0 
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 1.5 | no | 0.2100 | 0.358 [0.229, 0.487] | +0.137 | +0.053 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Palmeiras | home wins by more than 1.5 | no | 0.8800 | 0.956 [0.915, 0.985] | +0.069 | +0.049 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 4.5 | no | 0.8300 | 0.917 [0.846, 0.969] | +0.077 | +0.043 | 0.87 | - |  | RESEARCH_CANDIDATE |
+| Chapecoense vs Palmeiras | btts | no | 0.4100 | 0.545 [0.422, 0.666] | +0.118 | +0.042 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Chapecoense vs Palmeiras | away wins by more than 2.5 | yes | 0.0900 | 0.217 [0.104, 0.349] | +0.121 | +0.035 | 0.12 | - |  | RESEARCH_CANDIDATE |
-| Chapecoense vs Palmeiras | btts | no | 0.4200 | 0.545 [0.422, 0.666] | +0.108 | +0.032 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | away team total over 0.5 | no | 0.3100 | 0.429 [0.317, 0.544] | +0.104 | +0.027 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | First-half exact score 0-0 (home-away) | yes | 0.2700 | 0.385 [0.278, 0.502] | +0.101 | +0.026 | 0.29 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | First-half total goals over 0.5 | no | 0.2700 | 0.385 [0.278, 0.502] | +0.101 | +0.026 | 0.29 | - | * | RESEARCH_CANDIDATE |
@@ -46,13 +46,14 @@ model board generated 2026-11-23T23:17:00.670727Z · simulations this update: 0 
 | San Jose Earthquakes vs Houston Dynamo | Exact score 1-0 (home-away) | yes | 0.1000 | 0.146 [0.099, 0.192] | +0.039 | +0.010 | 0.1 | - |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Palmeiras | Result: draw | no | 0.7250 | 0.790 [0.723, 0.858] | +0.051 | +0.008 | 0.73 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | away team total over 2.5 | no | 0.9000 | 0.937 [0.891, 0.976] | +0.031 | +0.005 | 0.9 | - |  | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Houston Dynamo | Exact score 0-1 (home-away) | yes | 0.0600 | 0.096 [0.055, 0.137] | +0.032 | +0.005 | 0.06 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 162
+action_NO_EDGE: 161
 action_NO_QUOTE: 56
-action_RESEARCH_CANDIDATE: 26
+action_RESEARCH_CANDIDATE: 27
 contract_sides: 244
 fixtures: 3
 fixtures_model_invalidated: 0
