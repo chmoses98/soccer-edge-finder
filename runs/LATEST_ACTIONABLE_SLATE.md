@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261124T175143Z-ee948a` · generated 2026-11-24T17:51:43.659062Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261124T180643Z-ecdb3b` · generated 2026-11-24T18:06:43.175489Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-24T17:48:20.219531Z (CURRENT at publish; CURRENT until 2026-11-24T18:08:20.219531Z, STALE after 2026-11-24T18:18:20.219531Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-24T18:03:20.261350Z (CURRENT at publish; CURRENT until 2026-11-24T18:23:20.261350Z, STALE after 2026-11-24T18:33:20.261350Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-24T15:21:39.882403Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.26s
 
