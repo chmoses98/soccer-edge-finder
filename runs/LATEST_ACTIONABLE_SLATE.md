@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261124T165140Z-bf222f` · generated 2026-11-24T16:51:40.546104Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261124T170640Z-ee2d24` · generated 2026-11-24T17:06:40.673836Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-24T16:48:17.127445Z (CURRENT at publish; CURRENT until 2026-11-24T17:08:17.127445Z, STALE after 2026-11-24T17:18:17.127445Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-24T17:03:17.171261Z (CURRENT at publish; CURRENT until 2026-11-24T17:23:17.171261Z, STALE after 2026-11-24T17:33:17.171261Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-24T15:21:39.882403Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.28s
+model board generated 2026-11-24T15:21:39.882403Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.27s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -22,7 +22,7 @@ model board generated 2026-11-24T15:21:39.882403Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Chapecoense vs Palmeiras | Result: away | yes | 0.4500 | 0.650 [0.507, 0.788] | +0.183 | +0.092 | 0.54 | - | * | RESEARCH_CANDIDATE |
+| Chapecoense vs Palmeiras | Result: away | yes | 0.4450 | 0.650 [0.507, 0.788] | +0.188 | +0.097 | 0.54 | - | * | RESEARCH_CANDIDATE |
 | Chapecoense vs Palmeiras | Result: home | no | 0.7100 | 0.860 [0.768, 0.932] | +0.136 | +0.087 | 0.8 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 2.5 | no | 0.4300 | 0.617 [0.467, 0.752] | +0.170 | +0.082 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | btts | no | 0.4200 | 0.584 [0.475, 0.691] | +0.147 | +0.081 | 0.5 | - | * | RESEARCH_CANDIDATE |
