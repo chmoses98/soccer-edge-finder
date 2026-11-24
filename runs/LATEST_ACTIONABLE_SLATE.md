@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261124T185145Z-62c8b7` · generated 2026-11-24T18:51:45.372514Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261124T185915Z-ad0010` · generated 2026-11-24T18:59:15.337647Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-24T18:48:22.388536Z (CURRENT at publish; CURRENT until 2026-11-24T19:08:22.388536Z, STALE after 2026-11-24T19:18:22.388536Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-24T18:55:49.247109Z (CURRENT at publish; CURRENT until 2026-11-24T19:15:49.247109Z, STALE after 2026-11-24T19:25:49.247109Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-24T15:21:39.882403Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.26s
 
@@ -12,7 +12,7 @@ model board generated 2026-11-24T15:21:39.882403Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-24T21:00:00Z | Chapecoense vs Palmeiras (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-24T21:00:00Z | Chapecoense vs Palmeiras (bra.serie_a) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-25T03:00:00Z | San Jose Earthquakes vs Houston Dynamo (usa.mls) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-25T23:00:00Z | Atlético Mineiro vs Corinthians (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-26T01:00:00Z | Toluca vs Atlas (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
