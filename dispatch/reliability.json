@@ -4,11 +4,11 @@
   "github_backup_minutes": 60
  },
  "definition": "capture_success_rate = delivered / eligible horizons whose window closed in the span (NOT_APPLICABLE excluded); close_success_rate = fixtures with a T-15 or T-5 delivery / fixtures whose close windows closed in the span",
- "generated_at": "2026-11-24T05:01:20Z",
+ "generated_at": "2026-11-24T08:40:05Z",
  "last_24h": {
   "capture_runs": 3,
   "capture_runs_failed": 0,
-  "capture_success_rate": 1.0,
+  "capture_success_rate": 0.9777777777777777,
   "close_fixtures_delivered": 9,
   "close_fixtures_eligible": 9,
   "close_success_rate": 1.0,
@@ -20,27 +20,28 @@
   "github_backup_actual": 2,
   "github_backup_expected": 24,
   "github_backup_success": 0.08333333333333333,
-  "heartbeats_actual": 13,
+  "heartbeats_actual": 12,
   "heartbeats_by_source": {
-   "chain": 4,
+   "chain": 3,
    "github-schedule-backup": 2,
    "workflow-run": 7
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
   "horizon_states": {
-   "DELIVERED": 44
+   "DELIVERED": 44,
+   "MISSED_EXECUTION_FAILURE": 1
   },
   "horizons_delivered": 44,
-  "horizons_eligible": 44,
-  "horizons_missed": 0,
+  "horizons_eligible": 45,
+  "horizons_missed": 1,
   "paid_calls": 1,
   "span_hours": 24.0
  },
  "last_7d": {
   "capture_runs": 28,
   "capture_runs_failed": 0,
-  "capture_success_rate": 0.869753979739508,
+  "capture_success_rate": 0.8684971098265896,
   "close_fixtures_delivered": 122,
   "close_fixtures_eligible": 138,
   "close_success_rate": 0.8840579710144928,
@@ -52,9 +53,9 @@
   "github_backup_actual": 21,
   "github_backup_expected": 168,
   "github_backup_success": 0.125,
-  "heartbeats_actual": 114,
+  "heartbeats_actual": 113,
   "heartbeats_by_source": {
-   "chain": 28,
+   "chain": 27,
    "github-schedule-backup": 21,
    "workflow-run": 65
   },
@@ -63,12 +64,12 @@
   "horizon_states": {
    "DELIVERED": 601,
    "MISSED_BEFORE_WAKE": 72,
-   "MISSED_EXECUTION_FAILURE": 18,
+   "MISSED_EXECUTION_FAILURE": 19,
    "NOT_APPLICABLE": 6
   },
   "horizons_delivered": 601,
-  "horizons_eligible": 691,
-  "horizons_missed": 90,
+  "horizons_eligible": 692,
+  "horizons_missed": 91,
   "paid_calls": 27,
   "span_hours": 168.0
  },
