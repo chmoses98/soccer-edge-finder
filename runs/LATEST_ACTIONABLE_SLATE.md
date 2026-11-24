@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261124T102822Z-ac209a` · generated 2026-11-24T10:28:22.081439Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261124T103110Z-2ee47a` · generated 2026-11-24T10:31:10.464599Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-24T10:24:47.515899Z (CURRENT at publish; CURRENT until 2026-11-24T10:44:47.515899Z, STALE after 2026-11-24T10:54:47.515899Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-24T10:27:47.119394Z (CURRENT at publish; CURRENT until 2026-11-24T10:47:47.119394Z, STALE after 2026-11-24T10:57:47.119394Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-23T23:17:00.670727Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.18s
+model board generated 2026-11-23T23:17:00.670727Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.17s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -16,7 +16,7 @@ model board generated 2026-11-23T23:17:00.670727Z · simulations this update: 0 
 | 2026-11-25T03:00:00Z | San Jose Earthquakes vs Houston Dynamo (usa.mls) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-25T23:00:00Z | Atlético Mineiro vs Corinthians (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (25; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (26; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -45,13 +45,14 @@ model board generated 2026-11-23T23:17:00.670727Z · simulations this update: 0 
 | San Jose Earthquakes vs Houston Dynamo | First-half total goals over 2.5 | no | 0.8700 | 0.920 [0.859, 0.971] | +0.042 | +0.012 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Palmeiras | Result: draw | no | 0.7300 | 0.790 [0.723, 0.858] | +0.046 | +0.003 | 0.73 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Exact score 2-0 (home-away) | yes | 0.0700 | 0.097 [0.065, 0.129] | +0.022 | +0.002 | 0.07 | - |  | RESEARCH_CANDIDATE |
+| Atlético Mineiro vs Corinthians | Result: away | no | 0.6800 | 0.765 [0.649, 0.866] | +0.069 | +0.000 | 0.68 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 163
+action_NO_EDGE: 162
 action_NO_QUOTE: 56
-action_RESEARCH_CANDIDATE: 25
+action_RESEARCH_CANDIDATE: 26
 contract_sides: 244
 fixtures: 3
 fixtures_model_invalidated: 0
