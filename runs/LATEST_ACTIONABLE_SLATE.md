@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261124T203332Z-41000f` · generated 2026-11-24T20:33:32.735876Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
+slate `slate-20261124T204827Z-f11217` · generated 2026-11-24T20:48:27.478524Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-24T20:30:02.944155Z (CURRENT at publish; CURRENT until 2026-11-24T20:50:02.944155Z, STALE after 2026-11-24T21:00:02.944155Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-24T20:45:00.124236Z (CURRENT at publish; CURRENT until 2026-11-24T21:05:00.124236Z, STALE after 2026-11-24T21:15:00.124236Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-24T20:33:29.929600Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.20s
+model board generated 2026-11-24T20:33:29.929600Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.20s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-24T20:33:29.929600Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-24T21:00:00Z | Chapecoense vs Palmeiras (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
+| 2026-11-24T21:00:00Z | Chapecoense vs Palmeiras (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
 | 2026-11-25T03:00:00Z | San Jose Earthquakes vs Houston Dynamo (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-25T23:00:00Z | Atlético Mineiro vs Corinthians (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-26T01:00:00Z | Toluca vs Atlas (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
@@ -25,8 +25,8 @@ model board generated 2026-11-24T20:33:29.929600Z · simulations this update: 1 
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 2.5 | no | 0.4300 | 0.623 [0.480, 0.753] | +0.176 | +0.086 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | btts | no | 0.4200 | 0.589 [0.475, 0.693] | +0.152 | +0.083 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 3.5 | no | 0.6600 | 0.812 [0.701, 0.904] | +0.136 | +0.073 | 0.73 | - |  | RESEARCH_CANDIDATE |
-| Chapecoense vs Palmeiras | Result: away | yes | 0.4800 | 0.646 [0.504, 0.781] | +0.148 | +0.059 | 0.53 | 0.455 | * | RESEARCH_CANDIDATE |
-| Chapecoense vs Palmeiras | Result: home | no | 0.7350 | 0.859 [0.771, 0.934] | +0.111 | +0.058 | 0.79 | 0.713 |  | RESEARCH_CANDIDATE |
+| Chapecoense vs Palmeiras | Result: home | no | 0.7250 | 0.859 [0.771, 0.934] | +0.120 | +0.067 | 0.79 | 0.718 | * | RESEARCH_CANDIDATE |
+| Chapecoense vs Palmeiras | Result: away | yes | 0.4750 | 0.646 [0.504, 0.781] | +0.153 | +0.064 | 0.53 | 0.459 |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 4.5 | no | 0.8200 | 0.919 [0.854, 0.969] | +0.089 | +0.055 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 1.5 | no | 0.2100 | 0.364 [0.236, 0.488] | +0.142 | +0.054 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Palmeiras | btts | no | 0.4000 | 0.550 [0.425, 0.670] | +0.133 | +0.052 | 0.45 | - | * | RESEARCH_CANDIDATE |
