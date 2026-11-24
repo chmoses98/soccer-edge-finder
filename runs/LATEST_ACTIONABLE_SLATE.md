@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261124T094608Z-b3e7f6` · generated 2026-11-24T09:46:08.590357Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261124T100108Z-4c72eb` · generated 2026-11-24T10:01:08.536799Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-24T09:42:45.211226Z (CURRENT at publish; CURRENT until 2026-11-24T10:02:45.211226Z, STALE after 2026-11-24T10:12:45.211226Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-24T09:57:45.246867Z (CURRENT at publish; CURRENT until 2026-11-24T10:17:45.246867Z, STALE after 2026-11-24T10:27:45.246867Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-23T23:17:00.670727Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.14s
+model board generated 2026-11-23T23:17:00.670727Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.16s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -28,9 +28,9 @@ model board generated 2026-11-23T23:17:00.670727Z · simulations this update: 0 
 | San Jose Earthquakes vs Houston Dynamo | away team total over 0.5 | no | 0.2800 | 0.429 [0.317, 0.544] | +0.135 | +0.057 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | Chapecoense vs Palmeiras | away wins by more than 1.5 | yes | 0.2400 | 0.411 [0.263, 0.571] | +0.158 | +0.055 | 0.29 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | away team total over 1.5 | no | 0.6500 | 0.783 [0.682, 0.875] | +0.117 | +0.053 | 0.7 | - |  | RESEARCH_CANDIDATE |
+| Chapecoense vs Palmeiras | home wins by more than 1.5 | no | 0.8800 | 0.956 [0.915, 0.985] | +0.069 | +0.049 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 4.5 | no | 0.8300 | 0.917 [0.846, 0.969] | +0.077 | +0.043 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 1.5 | no | 0.2200 | 0.358 [0.229, 0.487] | +0.126 | +0.043 | 0.26 | - |  | RESEARCH_CANDIDATE |
-| Chapecoense vs Palmeiras | home wins by more than 1.5 | no | 0.8900 | 0.956 [0.915, 0.985] | +0.059 | +0.040 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Palmeiras | btts | no | 0.4200 | 0.545 [0.422, 0.666] | +0.108 | +0.032 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | First-half exact score 0-0 (home-away) | yes | 0.2700 | 0.385 [0.278, 0.502] | +0.101 | +0.026 | 0.29 | - | * | RESEARCH_CANDIDATE |
 | Chapecoense vs Palmeiras | away wins by more than 2.5 | yes | 0.1000 | 0.217 [0.104, 0.349] | +0.111 | +0.025 | 0.12 | - |  | RESEARCH_CANDIDATE |
