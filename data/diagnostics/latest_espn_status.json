@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-24T02:58:00.156601+00:00",
-  "events": 693,
-  "events_skipped_unmapped": 399,
-  "fixtures_mapped": 294,
+  "as_of": "2026-11-24T14:58:59.883755+00:00",
+  "events": 711,
+  "events_skipped_unmapped": 409,
+  "fixtures_mapped": 302,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=33"
+      "weather_stopped:consecutive_failures:skipped=30"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 88,
-    "events": 88,
+    "captured": 16,
+    "events": 85,
     "failures": [],
-    "published_post": 35,
+    "published_post": 29,
     "published_pre_kickoff": 0,
-    "unchanged": 0,
-    "unpublished": 53
+    "unchanged": 69,
+    "unpublished": 56
   },
   "map_proposals": {
     "bel.1": {
@@ -103,6 +103,37 @@
       "unresolved": {
         "7853": "AGF",
         "909": "F.C. K\u00f8benhavn"
+      }
+    },
+    "esp.2": {
+      "ambiguous": {},
+      "proposed": {
+        "98": "esp.las_palmas",
+        "9812": "esp.girona"
+      },
+      "unresolved": {
+        "20179": "FC Andorra",
+        "2737": "Albacete"
+      }
+    },
+    "esp.copa_del_rey": {
+      "ambiguous": {},
+      "proposed": {
+        "98": "esp.las_palmas",
+        "9812": "esp.girona"
+      },
+      "unresolved": {
+        "100": "Numancia",
+        "131470": "Reus FC Reddis",
+        "17570": "Gimn\u00e1stica Torrelavega",
+        "20179": "FC Andorra",
+        "21290": "CE Europa",
+        "22430": "CD Extremadura",
+        "2737": "Albacete",
+        "5413": "Huesca",
+        "5419": "FC Cartagena",
+        "5463": "Ponferradina",
+        "9449": "Antequera CF"
       }
     },
     "fra.2": {
@@ -298,7 +329,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 8,
+  "results_appended": 1,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -327,6 +358,7 @@
     "usa.usl.1"
   ],
   "unmapped_team_ids": {
+    "100": "Numancia",
     "1010": "OFI Crete",
     "10235": "Villefranche",
     "10675": "Versailles 78",
@@ -340,6 +372,7 @@
     "129": "Hertha Berlin",
     "12957": "Sabl\u00e9 FC",
     "13083": "Hapoel Be'er",
+    "131470": "Reus FC Reddis",
     "134063": "Chassieu Declines FC",
     "134064": "Olympique Charleville Prix AM",
     "134070": "Rochefort FC",
@@ -377,6 +410,7 @@
     "16917": "La Roche-sur-Yon",
     "16925": "Bressuire",
     "17483": "Orl\u00e9ans",
+    "17570": "Gimn\u00e1stica Torrelavega",
     "17621": "Anglet Genets",
     "17623": "US Marseille Endoume",
     "17657": "Club Franciscain",
@@ -394,10 +428,12 @@
     "20024": "Ararat-Armenia",
     "20025": "Iberia 1999",
     "20028": "Kauno Zalgiris",
+    "20179": "FC Andorra",
     "20275": "ESA Linas-Montlhery",
     "20301": "Mj\u00e4llby AIF",
     "20703": "Inter D'Escaldes",
     "20876": "Loon Plage FC",
+    "21290": "CE Europa",
     "21303": "ES Thaon",
     "21306": "AS Cannes",
     "21615": "Torreense",
@@ -407,7 +443,9 @@
     "21943": "Egnatia",
     "22138": "US Feurs",
     "22139": "Racing Club de France",
+    "22430": "CD Extremadura",
     "272": "Sochaux",
+    "2737": "Albacete",
     "274": "Montpellier",
     "2927": "Caen",
     "3024": "FC Thun",
@@ -421,6 +459,9 @@
     "489": "Hajduk Split",
     "490": "Levski Sofia",
     "510": "Viking FK",
+    "5413": "Huesca",
+    "5419": "FC Cartagena",
+    "5463": "Ponferradina",
     "620": "SK Brann",
     "6732": "Valenciennes",
     "6994": "Grenoble",
@@ -444,20 +485,23 @@
     "9024": "Le Poire SV",
     "909": "F.C. K\u00f8benhavn",
     "936": "Sint-Truidense",
+    "9449": "Antequera CF",
+    "98": "Las Palmas",
+    "9812": "Girona",
     "987": "Lillestrom"
   },
   "weather": {
     "captured": 0,
-    "events": 36,
+    "events": 33,
     "failures": [
-      "401912609: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=25.2399&longitude=55.1999&hourly=te",
-      "401912588: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=36.3502&longitude=127.3848&hourly=t",
-      "401912587: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=35.0211&longitude=135.7538&hourly=t"
+      "401912599: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=21.0245&longitude=105.8412&hourly=t",
+      "401912585: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Ratchaburi&count=5&language=en&",
+      "401912586: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=31.2222&longitude=121.4581&hourly=t"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 33,
+    "skipped": 30,
     "stopped": "consecutive_failures"
   }
 }
