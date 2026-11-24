@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261124T160637Z-0a76c0` · generated 2026-11-24T16:06:37.878842Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261124T162138Z-27262a` · generated 2026-11-24T16:21:38.857645Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-24T16:03:14.381789Z (CURRENT at publish; CURRENT until 2026-11-24T16:23:14.381789Z, STALE after 2026-11-24T16:33:14.381789Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-24T16:18:15.381803Z (CURRENT at publish; CURRENT until 2026-11-24T16:38:15.381803Z, STALE after 2026-11-24T16:48:15.381803Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-24T15:21:39.882403Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.27s
+model board generated 2026-11-24T15:21:39.882403Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.28s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
