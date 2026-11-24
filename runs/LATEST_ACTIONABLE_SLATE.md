@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261124T170640Z-ee2d24` · generated 2026-11-24T17:06:40.673836Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261124T172141Z-a2cbc9` · generated 2026-11-24T17:21:41.842088Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-24T17:03:17.171261Z (CURRENT at publish; CURRENT until 2026-11-24T17:23:17.171261Z, STALE after 2026-11-24T17:33:17.171261Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-24T17:18:18.376553Z (CURRENT at publish; CURRENT until 2026-11-24T17:38:18.376553Z, STALE after 2026-11-24T17:48:18.376553Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-24T15:21:39.882403Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.27s
 
@@ -30,8 +30,8 @@ model board generated 2026-11-24T15:21:39.882403Z · simulations this update: 0 
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 3.5 | no | 0.6600 | 0.808 [0.690, 0.904] | +0.132 | +0.069 | 0.73 | - |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Palmeiras | away wins by more than 1.5 | yes | 0.2400 | 0.411 [0.263, 0.571] | +0.158 | +0.055 | 0.29 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 1.5 | no | 0.2100 | 0.358 [0.229, 0.487] | +0.137 | +0.053 | 0.26 | - |  | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Houston Dynamo | Total goals over 4.5 | no | 0.8200 | 0.917 [0.846, 0.969] | +0.086 | +0.053 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | Chapecoense vs Palmeiras | home wins by more than 1.5 | no | 0.8800 | 0.956 [0.915, 0.985] | +0.069 | +0.049 | 0.93 | - |  | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Houston Dynamo | Total goals over 4.5 | no | 0.8300 | 0.917 [0.846, 0.969] | +0.077 | +0.043 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | away team total over 0.5 | no | 0.3100 | 0.429 [0.317, 0.544] | +0.104 | +0.027 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | First-half exact score 0-0 (home-away) | yes | 0.2700 | 0.385 [0.278, 0.502] | +0.101 | +0.026 | 0.29 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | First-half total goals over 0.5 | no | 0.2700 | 0.385 [0.278, 0.502] | +0.101 | +0.026 | 0.29 | - | * | RESEARCH_CANDIDATE |
