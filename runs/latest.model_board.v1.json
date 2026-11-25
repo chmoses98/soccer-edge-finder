@@ -2011,15 +2011,15 @@
       },
       "event_name": "Atl\u00e9tico Mineiro vs Corinthians",
       "fixture_id": "fx:bra.serie_a:2026:bra.atletico_mineiro:bra.corinthians",
-      "fixtures_observed_at": "2026-11-25T18:17:12.296026Z",
+      "fixtures_observed_at": "2026-11-25T21:49:24.504830Z",
       "home": "bra.atletico_mineiro",
-      "input_fingerprint": "sha256:406601d70732e8adae69d1b3220f67abc9cbd42ed3165dc85c3cb0d9eca8a5fa",
+      "input_fingerprint": "sha256:6de852ddcf23dfb8b12f8cce4e5a6b851b290d9131041930ab594ba1cc2f28f8",
       "inputs": {
         "competition_id": "bra.serie_a",
         "draws_per_world": 100,
         "engine_version": "world_sim_v2",
         "kickoff_utc": "2026-11-25T23:00:00Z",
-        "lineup_key": "none",
+        "lineup_key": "sha256:1ece223a240c8acafbf9631f85cc8c1398171985035973718d5663861c74f6c5",
         "model_family": "data_only.world_sim_v2",
         "model_version": "dc_laplace_v1",
         "n_worlds": 1000,
@@ -2030,11 +2030,41 @@
         "worlds_version": "worlds_v1"
       },
       "lineup": {
-        "checked_at": "2026-11-25T22:03:33.522115Z",
-        "key": "none",
-        "last_change_at": "2026-11-25T20:54:39.792451Z",
-        "state": "unconfirmed"
+        "checked_at": "2026-11-25T22:33:18.184811Z",
+        "key": "sha256:1ece223a240c8acafbf9631f85cc8c1398171985035973718d5663861c74f6c5",
+        "last_change_at": "2026-11-25T22:33:18.184811Z",
+        "state": "confirmed"
       },
+      "lineup_history": [
+        {
+          "lineup_key": "none",
+          "lineup_state": "unconfirmed",
+          "model_generated_at": "2026-11-25T22:03:36.794763Z",
+          "scripts": {
+            "primary": "TIGHT_LOW_EVENT",
+            "secondary": "HOME_CONTROL",
+            "shares": [
+              0.27247,
+              0.10176,
+              0.3431,
+              0.08912,
+              0.08363,
+              0.10993
+            ],
+            "taxonomy_version": "soccer_scripts_v1"
+          },
+          "sim_key": "sha256:6e30fe35bfede496318068c0ca50fe8cf7f01d44aba2f1a9c9fd2cec36c5f1d5",
+          "summary": {
+            "mean_away_goals": 0.88393,
+            "mean_home_goals": 1.39766,
+            "p_away": 0.23956,
+            "p_btts": 0.42833,
+            "p_draw": 0.28091,
+            "p_home": 0.47953,
+            "p_over_2_5": 0.39515
+          }
+        }
+      ],
       "match_context": {
         "aggregate": {
           "source": "no aggregate (not a second leg)",
@@ -2260,8 +2290,8 @@
         "source": "production posterior (dc_laplace_v1) that priced this fixture",
         "version": "dc_matchup_v1"
       },
-      "model_fitted_at": "2026-11-25T22:03:35.671481Z",
-      "model_generated_at": "2026-11-25T22:03:36.794763Z",
+      "model_fitted_at": "2026-11-25T22:33:20.180383Z",
+      "model_generated_at": "2026-11-25T22:33:21.191608Z",
       "results_observed_at": "2026-11-25T18:17:05.415974Z",
       "scripts": {
         "contract_gaps": {},
@@ -2879,8 +2909,8 @@
           }
         }
       },
-      "sim_key": "sha256:6e30fe35bfede496318068c0ca50fe8cf7f01d44aba2f1a9c9fd2cec36c5f1d5",
-      "source_run_id": "run-20261125T220336Z-f9ad28",
+      "sim_key": "sha256:6f014b53cbb2c3990ca32d44e975907365c594fe4b612d35e3af543a03cfe75c",
+      "source_run_id": "run-20261125T223321Z-178a63",
       "summary": {
         "mean_away_goals": 0.88393,
         "mean_home_goals": 1.39766,
@@ -59452,6 +59482,6 @@
       }
     }
   },
-  "generated_at": "2026-11-25T22:03:36.794763Z",
+  "generated_at": "2026-11-25T22:33:21.191608Z",
   "quantile_levels": "(i + 0.5) / 100, i = 0..99"
 }

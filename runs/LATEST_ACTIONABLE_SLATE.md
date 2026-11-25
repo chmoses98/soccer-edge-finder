@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261125T221831Z-53abc1` · generated 2026-11-25T22:18:31.567722Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261125T223323Z-f1c4ee` · generated 2026-11-25T22:33:23.341630Z · trigger `kickoff_chain:T-30` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-25T22:15:14.892966Z (CURRENT at publish; CURRENT until 2026-11-25T22:35:14.892966Z, STALE after 2026-11-25T22:45:14.892966Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-25T22:30:00.065426Z (CURRENT at publish; CURRENT until 2026-11-25T22:50:00.065426Z, STALE after 2026-11-25T23:00:00.065426Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-25T22:03:36.794763Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.21s
+model board generated 2026-11-25T22:33:21.191608Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.20s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,9 +12,9 @@ model board generated 2026-11-25T22:03:36.794763Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-25T23:00:00Z | Atlético Mineiro vs Corinthians (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
-| 2026-11-26T01:00:00Z | Toluca vs Atlas (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-11-26T03:10:00Z | Monterrey vs Club América (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-11-25T23:00:00Z | Atlético Mineiro vs Corinthians (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | AGING entry | CURRENT | 14 | 0 |
+| 2026-11-26T01:00:00Z | Toluca vs Atlas (mex.liga_mx) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-11-26T03:10:00Z | Monterrey vs Club América (mex.liga_mx) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-26T23:00:00Z | São Paulo vs Remo (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-27T01:00:00Z | Pachuca vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-27T03:10:00Z | León vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
@@ -25,7 +25,7 @@ model board generated 2026-11-25T22:03:36.794763Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| São Paulo vs Remo | Result: home | no | 0.2750 | 0.476 [0.332, 0.621] | +0.187 | +0.091 | 0.36 | - | * | RESEARCH_CANDIDATE |
+| São Paulo vs Remo | Result: home | no | 0.2800 | 0.476 [0.332, 0.621] | +0.182 | +0.086 | 0.36 | - | * | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | home wins by more than 1.5 | no | 0.5400 | 0.717 [0.573, 0.846] | +0.159 | +0.078 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | away team total over 1.5 | no | 0.6000 | 0.753 [0.625, 0.856] | +0.136 | +0.065 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | btts | no | 0.4100 | 0.562 [0.446, 0.666] | +0.135 | +0.063 | 0.47 | - | * | RESEARCH_CANDIDATE |
@@ -34,8 +34,8 @@ model board generated 2026-11-25T22:03:36.794763Z · simulations this update: 0 
 | Pachuca vs Guadalajara | First half: both teams to score | no | 0.7500 | 0.849 [0.779, 0.911] | +0.085 | +0.045 | 0.79 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | away team total over 2.5 | no | 0.8400 | 0.922 [0.856, 0.970] | +0.073 | +0.041 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | Result: away | yes | 0.1000 | 0.213 [0.118, 0.320] | +0.107 | +0.038 | 0.13 | - |  | RESEARCH_CANDIDATE |
-| Atlético Mineiro vs Corinthians | Result: away | no | 0.6450 | 0.762 [0.647, 0.869] | +0.101 | +0.034 | 0.67 | 0.647 | * | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | Result: draw | yes | 0.1800 | 0.263 [0.200, 0.326] | +0.072 | +0.032 | 0.21 | - |  | RESEARCH_CANDIDATE |
+| Atlético Mineiro vs Corinthians | Result: away | no | 0.6500 | 0.762 [0.647, 0.869] | +0.096 | +0.029 | 0.67 | 0.647 | * | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | Total goals over 1.5 | no | 0.2200 | 0.339 [0.215, 0.466] | +0.107 | +0.025 | 0.24 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | Total goals over 3.5 | no | 0.6900 | 0.792 [0.672, 0.893] | +0.087 | +0.021 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | Total goals over 2.5 | no | 0.4700 | 0.597 [0.449, 0.734] | +0.109 | +0.020 | 0.48 | - |  | RESEARCH_CANDIDATE |
