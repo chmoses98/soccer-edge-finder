@@ -54,9 +54,127 @@
   "delivered_total": 4626,
   "delivery_rate_total": 0.8843433377939208,
   "fixtures_tracked": 1066,
-  "generated_at": "2026-11-25T03:00:53Z",
+  "generated_at": "2026-11-25T06:56:47Z",
+  "last_tick": {
+    "batches": 4,
+    "summary": [
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "model_refresh:ok:fixtures=1:sim=0:board=0:why=entered_lookahead_unmodelled",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "ks-20261125T012751Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=470:sim=0"
+        ],
+        "batch_id": "ks-20261125T014251Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:ok:fixtures=1:sim=1:cache=0:why=T-60:invalidated",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261125T015746Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:usa.mls:2026:usa.san_jose_earthquakes:usa.houston_dynamo",
+            60,
+            62.23
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=470:sim=0"
+        ],
+        "batch_id": "ks-20261125T021246Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:ok:fixtures=1:sim=0:cache=1:why=T-30:invalidated",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261125T022746Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:usa.mls:2026:usa.san_jose_earthquakes:usa.houston_dynamo",
+            30,
+            32.23
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "slate_reprice:ok:sides=470:sim=0"
+        ],
+        "batch_id": "ks-20261125T024246Z",
+        "due": [],
+        "slate_refresh": true
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:ok:credits=3:paid=1:rows=7",
+          "lineups:ok:1",
+          "model_refresh:ok:fixtures=1:sim=0:cache=1:why=T-15:invalidated",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261125T024955Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:usa.mls:2026:usa.san_jose_earthquakes:usa.houston_dynamo",
+            15,
+            10.07
+          ]
+        ]
+      },
+      {
+        "actions": [
+          "kalshi_capture:ok",
+          "reference:empty",
+          "odds_api:nothing_eligible:credits=0:paid=0:rows=0",
+          "lineups:ok:1",
+          "model_refresh:ok:fixtures=1:sim=0:cache=0:why=T-5:invalidated",
+          "slate_reprice:ok:via_model_refresh"
+        ],
+        "batch_id": "kd-20261125T025719Z",
+        "captured": true,
+        "due": [
+          [
+            "fx:usa.mls:2026:usa.san_jose_earthquakes:usa.houston_dynamo",
+            5,
+            2.68
+          ]
+        ]
+      }
+    ]
+  },
   "missed_total": 605,
-  "n_pending_fixtures": 14,
+  "n_pending_fixtures": 15,
   "pending_fixtures": [
     {
       "competition_id": "bra.serie_a",
@@ -153,6 +271,13 @@
       "competition_id": "usa.mls",
       "fixture_id": "fx:usa.mls:2026:usa.columbus_crew:usa.inter_miami",
       "kickoff_utc": "2026-11-28T01:00:00Z",
+      "markets_discovered": 0,
+      "source": "espn"
+    },
+    {
+      "competition_id": "usa.mls",
+      "fixture_id": "fx:usa.mls:2026:usa.real_salt_lake:usa.vancouver_whitecaps",
+      "kickoff_utc": "2026-11-28T03:00:00Z",
       "markets_discovered": 0,
       "source": "espn"
     }
