@@ -1007,3 +1007,105 @@ These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW
 
 ## Events
 - Fluminense vs Cruzeiro (Brasileirão Série A) 2026-11-27T23:00:00Z · markets 14/14 evaluated · lineups unknown · xG 1.70-1.15 · 1X2 49%/25%/26%
+
+{
+  "outputs": {
+    "json": "work/runs/_pending/run_output.v1.json",
+    "md": "work/runs/_pending/RUN_SOCCER.md",
+    "contracts": "work/runs/_pending/priced_contracts.json",
+    "coverage": "work/runs/_pending/coverage.json",
+    "diagnostics": "work/runs/_pending/coverage_diagnostics.json"
+  },
+  "simulated": [
+    "fx:bra.serie_a:2026:bra.fluminense:bra.cruzeiro"
+  ],
+  "repriced": [],
+  "archived_records": 14
+}
+[dispatch] holding 8.2 min (next window opens in 8.2 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261125T233015Z",
+  "complete": true,
+  "discovered": 4571,
+  "written": 701,
+  "path": "work/snapshots/2026-11-25/cap-20261125T233015Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261125T233015Z-a3e086", "mode": "reprice_only", "fixtures": 8, "contract_sides": 730, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.202, "price_changes_vs_previous": 55}
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261125T233647Z",
+  "complete": true,
+  "discovered": 4571,
+  "written": 481,
+  "path": "work/snapshots/2026-11-25/cap-20261125T233647Z.jsonl"
+}
+{
+  "reference_probabilities": 0,
+  "observed_at": "2026-11-25 18:17:13.810274+00:00",
+  "groups": 70,
+  "unmapped_fixture_groups": 70,
+  "incomplete_groups": 0,
+  "snapshots": 0,
+  "provider_notes": [
+    "43 rows, 29 skipped (unmapped division/team)",
+    "skipped_by_division={'E2': 5, 'E3': 2, 'EC': 12, 'I2': 10}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-11-25T23:36:49.773400Z", "batch_id": "kd-20261125T233332Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-11-25T23:36:49.791554+00:00",
+ "leagues": [
+  "arg.1"
+ ],
+ "events": 1,
+ "fixtures_mapped": 1,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 1,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 1,
+  "captured": 0,
+  "unchanged": 1,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 1,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 1,
+  "captured": 1,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "HEALTHY",
+  "reasons": []
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261125T233650Z-dcb75d", "mode": "reprice_only", "fixtures": 8, "contract_sides": 730, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.201, "price_changes_vs_previous": 16}
+[dispatch] holding 2.8 min (next window opens in 3.0 min)
+{
+ "batches": 8,
+ "horizons_delivered": 9,
+ "missed_states": {},
+ "paid_calls": 2,
+ "credits_spent": 6,
+ "end_reason": "link_time_limit",
+ "chain_continue": true,
+ "delivered_total": 4635,
+ "missed_total": 605,
+ "delivery_rate_total": 0.8845419847328244
+}
