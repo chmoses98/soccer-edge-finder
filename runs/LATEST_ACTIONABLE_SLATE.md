@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261125T004217Z-3649ae` · generated 2026-11-25T00:42:17.316342Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261125T005640Z-72d93e` · generated 2026-11-25T00:56:40.729083Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-25T00:38:55.382408Z (CURRENT at publish; CURRENT until 2026-11-25T00:58:55.382408Z, STALE after 2026-11-25T01:08:55.382408Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-25T00:53:16.855419Z (CURRENT at publish; CURRENT until 2026-11-25T01:13:16.855419Z, STALE after 2026-11-25T01:23:16.855419Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-24T23:12:14.910621Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.18s
 
@@ -12,13 +12,13 @@ model board generated 2026-11-24T23:12:14.910621Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-25T03:00:00Z | San Jose Earthquakes vs Houston Dynamo (usa.mls) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-11-25T03:00:00Z | San Jose Earthquakes vs Houston Dynamo (usa.mls) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-25T23:00:00Z | Atlético Mineiro vs Corinthians (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-26T01:00:00Z | Toluca vs Atlas (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-26T03:10:00Z | Monterrey vs Club América (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-26T23:00:00Z | São Paulo vs Remo (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (28; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (29; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -42,10 +42,11 @@ model board generated 2026-11-24T23:12:14.910621Z · simulations this update: 0 
 | San Jose Earthquakes vs Houston Dynamo | Exact score 1-0 (home-away) | yes | 0.0900 | 0.147 [0.099, 0.193] | +0.051 | +0.021 | 0.11 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 5.5 | no | 0.9300 | 0.969 [0.938, 0.992] | +0.035 | +0.021 | 0.95 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | First half: both teams to score | no | 0.7900 | 0.864 [0.789, 0.931] | +0.063 | +0.018 | 0.8 | - | * | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Houston Dynamo | home team total over 0.5 | no | 0.1700 | 0.276 [0.162, 0.393] | +0.096 | +0.018 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | away team total over 2.5 | no | 0.8900 | 0.939 [0.889, 0.977] | +0.042 | +0.015 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Exact score 0-0 (home-away) | yes | 0.0600 | 0.120 [0.062, 0.179] | +0.056 | +0.015 | 0.07 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 0.5 | no | 0.0600 | 0.120 [0.062, 0.179] | +0.056 | +0.015 | 0.07 | - |  | RESEARCH_CANDIDATE |
+| São Paulo vs Remo | Total goals over 0.5 | no | 0.0500 | 0.100 [0.050, 0.161] | +0.047 | +0.009 | 0.05 | - | * | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Houston Dynamo | home team total over 0.5 | no | 0.1800 | 0.276 [0.162, 0.393] | +0.086 | +0.007 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Exact score 0-1 (home-away) | yes | 0.0600 | 0.097 [0.055, 0.141] | +0.033 | +0.006 | 0.06 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | home team total over 2.5 | no | 0.7600 | 0.840 [0.725, 0.931] | +0.067 | +0.005 | 0.76 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Second-half result: draw | yes | 0.3400 | 0.412 [0.318, 0.502] | +0.057 | +0.002 | 0.34 | - | * | RESEARCH_CANDIDATE |
@@ -54,9 +55,9 @@ model board generated 2026-11-24T23:12:14.910621Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 427
+action_NO_EDGE: 426
 action_NO_QUOTE: 105
-action_RESEARCH_CANDIDATE: 28
+action_RESEARCH_CANDIDATE: 29
 contract_sides: 560
 fixtures: 5
 fixtures_model_invalidated: 0
