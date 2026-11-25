@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261125T162718Z-6c6f90` · generated 2026-11-25T16:27:18.899415Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261125T164222Z-4bfdfc` · generated 2026-11-25T16:42:22.840371Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-25T16:24:02.331132Z (CURRENT at publish; CURRENT until 2026-11-25T16:44:02.331132Z, STALE after 2026-11-25T16:54:02.331132Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-25T16:39:03.638371Z (CURRENT at publish; CURRENT until 2026-11-25T16:59:03.638371Z, STALE after 2026-11-25T17:09:03.638371Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-25T11:07:02.961094Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.23s
 
@@ -37,7 +37,6 @@ model board generated 2026-11-25T11:07:02.961094Z · simulations this update: 0 
 | Pachuca vs Guadalajara | Total goals over 3.5 | no | 0.6900 | 0.792 [0.672, 0.893] | +0.087 | +0.021 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | Total goals over 2.5 | no | 0.4700 | 0.597 [0.449, 0.734] | +0.109 | +0.020 | 0.48 | - |  | RESEARCH_CANDIDATE |
 | Atlético Mineiro vs Corinthians | Result: away | no | 0.6600 | 0.762 [0.651, 0.865] | +0.086 | +0.017 | 0.67 | - | * | RESEARCH_CANDIDATE |
-| Pachuca vs Guadalajara | Result: away | no | 0.6300 | 0.732 [0.602, 0.845] | +0.086 | +0.014 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | away wins by more than 2.5 | no | 0.9400 | 0.971 [0.940, 0.991] | +0.027 | +0.013 | 0.95 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | away wins by more than 1.5 | no | 0.8400 | 0.901 [0.826, 0.957] | +0.051 | +0.013 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | Total goals over 4.5 | no | 0.8500 | 0.907 [0.834, 0.965] | +0.048 | +0.012 | 0.86 | - |  | RESEARCH_CANDIDATE |
@@ -48,6 +47,7 @@ model board generated 2026-11-25T11:07:02.961094Z · simulations this update: 0 
 | Pachuca vs Guadalajara | First-half result: away | no | 0.7100 | 0.789 [0.688, 0.872] | +0.064 | +0.006 | 0.71 | - | * | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | Total goals over 2.5 | no | 0.4400 | 0.561 [0.404, 0.714] | +0.104 | +0.005 | 0.44 | - |  | RESEARCH_CANDIDATE |
 | Atlético Mineiro vs Corinthians | Result: home | yes | 0.3700 | 0.481 [0.340, 0.630] | +0.095 | +0.005 | 0.37 | - |  | RESEARCH_CANDIDATE |
+| Pachuca vs Guadalajara | Result: away | no | 0.6400 | 0.732 [0.602, 0.845] | +0.076 | +0.004 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Atlético Mineiro vs Corinthians | btts | no | 0.4800 | 0.570 [0.453, 0.682] | +0.073 | +0.000 | 0.48 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
