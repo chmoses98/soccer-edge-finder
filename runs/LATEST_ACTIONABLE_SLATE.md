@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261125T210938Z-24e787` · generated 2026-11-25T21:09:38.215556Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261125T212440Z-868464` · generated 2026-11-25T21:24:40.673561Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-25T21:06:22.078853Z (CURRENT at publish; CURRENT until 2026-11-25T21:26:22.078853Z, STALE after 2026-11-25T21:36:22.078853Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-25T21:21:24.278219Z (CURRENT at publish; CURRENT until 2026-11-25T21:41:24.278219Z, STALE after 2026-11-25T21:51:24.278219Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-25T19:47:40.539697Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.19s
+model board generated 2026-11-25T19:47:40.539697Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.20s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-25T19:47:40.539697Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-25T23:00:00Z | Atlético Mineiro vs Corinthians (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-25T23:00:00Z | Atlético Mineiro vs Corinthians (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-26T01:00:00Z | Toluca vs Atlas (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-26T03:10:00Z | Monterrey vs Club América (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-26T23:00:00Z | São Paulo vs Remo (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -57,8 +57,8 @@ model board generated 2026-11-25T19:47:40.539697Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 572
-action_NO_QUOTE: 160
+action_NO_EDGE: 573
+action_NO_QUOTE: 159
 action_RESEARCH_CANDIDATE: 28
 contract_sides: 760
 fixtures: 8
