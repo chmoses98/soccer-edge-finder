@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261125T204742Z-0bd4f4` · generated 2026-11-25T20:47:42.106993Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261125T205440Z-2c4243` · generated 2026-11-25T20:54:40.767516Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-25T20:44:26.416385Z (CURRENT at publish; CURRENT until 2026-11-25T21:04:26.416385Z, STALE after 2026-11-25T21:14:26.416385Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-25T20:51:22.048978Z (CURRENT at publish; CURRENT until 2026-11-25T21:11:22.048978Z, STALE after 2026-11-25T21:21:22.048978Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-25T19:47:40.539697Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.20s
 
@@ -12,7 +12,7 @@ model board generated 2026-11-25T19:47:40.539697Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-25T23:00:00Z | Atlético Mineiro vs Corinthians (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-25T23:00:00Z | Atlético Mineiro vs Corinthians (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-26T01:00:00Z | Toluca vs Atlas (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-26T03:10:00Z | Monterrey vs Club América (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-26T23:00:00Z | São Paulo vs Remo (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -36,23 +36,23 @@ model board generated 2026-11-25T19:47:40.539697Z · simulations this update: 0 
 | São Paulo vs Remo | Result: away | yes | 0.1000 | 0.213 [0.118, 0.320] | +0.107 | +0.038 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | Result: draw | yes | 0.1800 | 0.263 [0.200, 0.326] | +0.072 | +0.032 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | Total goals over 1.5 | no | 0.2200 | 0.339 [0.215, 0.466] | +0.107 | +0.025 | 0.24 | - | * | RESEARCH_CANDIDATE |
-| Atlético Mineiro vs Corinthians | Result: away | no | 0.6550 | 0.762 [0.647, 0.869] | +0.091 | +0.024 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | Total goals over 3.5 | no | 0.6900 | 0.792 [0.672, 0.893] | +0.087 | +0.021 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | Total goals over 2.5 | no | 0.4700 | 0.597 [0.449, 0.734] | +0.109 | +0.020 | 0.48 | - |  | RESEARCH_CANDIDATE |
+| Atlético Mineiro vs Corinthians | Result: away | no | 0.6600 | 0.762 [0.647, 0.869] | +0.086 | +0.019 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | Exact score 1-0 (home-away) | yes | 0.0800 | 0.134 [0.085, 0.178] | +0.049 | +0.019 | 0.09 | - | * | RESEARCH_CANDIDATE |
-| Atlético Mineiro vs Corinthians | away wins by more than 1.5 | no | 0.8600 | 0.916 [0.853, 0.966] | +0.047 | +0.016 | 0.87 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | Result: away | no | 0.6300 | 0.732 [0.602, 0.845] | +0.086 | +0.014 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | away wins by more than 2.5 | no | 0.9400 | 0.971 [0.940, 0.991] | +0.027 | +0.013 | 0.95 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | away wins by more than 1.5 | no | 0.8400 | 0.901 [0.826, 0.957] | +0.051 | +0.013 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | Total goals over 4.5 | no | 0.8500 | 0.907 [0.834, 0.965] | +0.048 | +0.012 | 0.86 | - |  | RESEARCH_CANDIDATE |
-| Atlético Mineiro vs Corinthians | btts | no | 0.4700 | 0.573 [0.454, 0.685] | +0.085 | +0.012 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | away wins by more than 1.5 | yes | 0.0300 | 0.074 [0.031, 0.129] | +0.042 | +0.008 | 0.03 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | Exact score 0-0 (home-away) | yes | 0.0600 | 0.109 [0.055, 0.168] | +0.045 | +0.006 | 0.06 | - |  | RESEARCH_CANDIDATE |
+| Atlético Mineiro vs Corinthians | away wins by more than 1.5 | no | 0.8700 | 0.916 [0.853, 0.966] | +0.038 | +0.006 | 0.87 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | First-half result: away | no | 0.7100 | 0.789 [0.688, 0.872] | +0.064 | +0.006 | 0.71 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Club América | Result: draw | no | 0.7200 | 0.769 [0.724, 0.813] | +0.035 | +0.005 | 0.72 | - | * | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | Total goals over 2.5 | no | 0.4400 | 0.564 [0.390, 0.720] | +0.107 | +0.003 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | Exact score 2-0 (home-away) | yes | 0.0600 | 0.090 [0.054, 0.125] | +0.026 | +0.002 | 0.06 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | First-half total goals over 2.5 | no | 0.8700 | 0.913 [0.849, 0.961] | +0.035 | +0.002 | 0.87 | - | * | RESEARCH_CANDIDATE |
+| Atlético Mineiro vs Corinthians | btts | no | 0.4800 | 0.573 [0.454, 0.685] | +0.075 | +0.002 | 0.48 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
