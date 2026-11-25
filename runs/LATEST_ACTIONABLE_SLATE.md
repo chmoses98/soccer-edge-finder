@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261125T001215Z-deedab` · generated 2026-11-25T00:12:15.623670Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261125T002716Z-ffac60` · generated 2026-11-25T00:27:16.359636Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-25T00:08:54.558225Z (CURRENT at publish; CURRENT until 2026-11-25T00:28:54.558225Z, STALE after 2026-11-25T00:38:54.558225Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-25T00:23:55.349990Z (CURRENT at publish; CURRENT until 2026-11-25T00:43:55.349990Z, STALE after 2026-11-25T00:53:55.349990Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-24T23:12:14.910621Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.18s
 
@@ -25,29 +25,29 @@ model board generated 2026-11-24T23:12:14.910621Z · simulations this update: 0 
 | San Jose Earthquakes vs Houston Dynamo | btts | no | 0.4100 | 0.589 [0.475, 0.693] | +0.162 | +0.093 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 2.5 | no | 0.4300 | 0.623 [0.480, 0.753] | +0.176 | +0.086 | 0.51 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 3.5 | no | 0.6600 | 0.812 [0.701, 0.904] | +0.136 | +0.073 | 0.73 | - |  | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Houston Dynamo | Total goals over 1.5 | no | 0.2000 | 0.364 [0.236, 0.488] | +0.152 | +0.065 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | Result: home | no | 0.2900 | 0.471 [0.313, 0.619] | +0.166 | +0.062 | 0.35 | - | * | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Houston Dynamo | Total goals over 4.5 | no | 0.8200 | 0.919 [0.854, 0.969] | +0.089 | +0.055 | 0.87 | - |  | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Houston Dynamo | Total goals over 1.5 | no | 0.2100 | 0.364 [0.236, 0.488] | +0.142 | +0.054 | 0.26 | - |  | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Houston Dynamo | Total goals over 4.5 | no | 0.8300 | 0.919 [0.854, 0.969] | +0.079 | +0.046 | 0.87 | - |  | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | home wins by more than 1.5 | no | 0.5600 | 0.712 [0.556, 0.841] | +0.134 | +0.045 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | away team total over 0.5 | no | 0.3000 | 0.433 [0.316, 0.548] | +0.118 | +0.039 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | away team total over 1.5 | no | 0.6700 | 0.785 [0.680, 0.878] | +0.100 | +0.035 | 0.7 | - |  | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | home wins by more than 2.5 | no | 0.7700 | 0.871 [0.768, 0.949] | +0.089 | +0.035 | 0.8 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | First-half total goals over 1.5 | no | 0.6300 | 0.748 [0.638, 0.842] | +0.101 | +0.034 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | Result: away | yes | 0.1000 | 0.210 [0.113, 0.316] | +0.104 | +0.033 | 0.13 | - |  | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Houston Dynamo | First-half exact score 0-0 (home-away) | yes | 0.2700 | 0.388 [0.278, 0.492] | +0.104 | +0.033 | 0.3 | - | * | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Houston Dynamo | First-half total goals over 0.5 | no | 0.2700 | 0.388 [0.278, 0.492] | +0.104 | +0.033 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | home team total over 1.5 | no | 0.4700 | 0.617 [0.457, 0.760] | +0.129 | +0.030 | 0.5 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 5.5 | no | 0.9200 | 0.969 [0.938, 0.992] | +0.044 | +0.030 | 0.95 | - |  | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | Result: draw | yes | 0.1850 | 0.261 [0.196, 0.321] | +0.065 | +0.027 | 0.21 | - |  | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Houston Dynamo | First-half exact score 0-0 (home-away) | yes | 0.2800 | 0.388 [0.278, 0.492] | +0.094 | +0.022 | 0.3 | - | * | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Houston Dynamo | First-half total goals over 0.5 | no | 0.2800 | 0.388 [0.278, 0.492] | +0.094 | +0.022 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | First-half total goals over 2.5 | no | 0.8600 | 0.922 [0.859, 0.971] | +0.054 | +0.022 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Exact score 1-0 (home-away) | yes | 0.0900 | 0.147 [0.099, 0.193] | +0.051 | +0.021 | 0.11 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | First half: both teams to score | no | 0.7900 | 0.864 [0.789, 0.931] | +0.063 | +0.018 | 0.8 | - | * | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | home team total over 0.5 | no | 0.1700 | 0.276 [0.162, 0.393] | +0.096 | +0.018 | 0.18 | - |  | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Houston Dynamo | away team total over 2.5 | no | 0.8900 | 0.939 [0.889, 0.977] | +0.042 | +0.015 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Exact score 0-0 (home-away) | yes | 0.0600 | 0.120 [0.062, 0.179] | +0.056 | +0.015 | 0.07 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Total goals over 0.5 | no | 0.0600 | 0.120 [0.062, 0.179] | +0.056 | +0.015 | 0.07 | - |  | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Houston Dynamo | home team total over 2.5 | no | 0.7500 | 0.840 [0.725, 0.931] | +0.077 | +0.014 | 0.76 | - |  | RESEARCH_CANDIDATE |
 | San Jose Earthquakes vs Houston Dynamo | Exact score 0-1 (home-away) | yes | 0.0600 | 0.097 [0.055, 0.141] | +0.033 | +0.006 | 0.06 | - |  | RESEARCH_CANDIDATE |
-| San Jose Earthquakes vs Houston Dynamo | away team total over 2.5 | no | 0.9000 | 0.939 [0.889, 0.977] | +0.032 | +0.006 | 0.9 | - |  | RESEARCH_CANDIDATE |
+| San Jose Earthquakes vs Houston Dynamo | home team total over 2.5 | no | 0.7600 | 0.840 [0.725, 0.931] | +0.067 | +0.005 | 0.76 | - |  | RESEARCH_CANDIDATE |
 | Atlético Mineiro vs Corinthians | btts | no | 0.4800 | 0.570 [0.453, 0.682] | +0.073 | +0.000 | 0.48 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
