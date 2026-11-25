@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-24T14:58:59.883755+00:00",
-  "events": 711,
-  "events_skipped_unmapped": 409,
-  "fixtures_mapped": 302,
+  "as_of": "2026-11-25T00:52:04.568226+00:00",
+  "events": 616,
+  "events_skipped_unmapped": 345,
+  "fixtures_mapped": 271,
   "health": {
     "reasons": [
-      "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=30"
+      "weather_failures:5",
+      "weather_stopped:consecutive_failures:skipped=4"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 16,
-    "events": 85,
+    "captured": 86,
+    "events": 100,
     "failures": [],
-    "published_post": 29,
-    "published_pre_kickoff": 0,
-    "unchanged": 69,
-    "unpublished": 56
+    "published_post": 63,
+    "published_pre_kickoff": 1,
+    "unchanged": 14,
+    "unpublished": 36
   },
   "map_proposals": {
     "bel.1": {
@@ -108,45 +108,75 @@
     "esp.2": {
       "ambiguous": {},
       "proposed": {
+        "17534": "esp.leganes",
+        "3747": "esp.granada",
+        "3842": "esp.cadiz",
+        "6832": "esp.almeria",
+        "84": "esp.mallorca",
+        "95": "esp.valladolid",
         "98": "esp.las_palmas",
         "9812": "esp.girona"
       },
       "unresolved": {
+        "11487": "CD Sabadell",
         "20179": "FC Andorra",
-        "2737": "Albacete"
+        "245": "Tenerife",
+        "2737": "Albacete",
+        "3752": "Eibar",
+        "3788": "Sporting Gij\u00f3n",
+        "4438": "Castell\u00f3n",
+        "5404": "Ceuta",
+        "7320": "Eldense"
       }
     },
     "esp.copa_del_rey": {
       "ambiguous": {},
       "proposed": {
+        "17534": "esp.leganes",
+        "3747": "esp.granada",
+        "3842": "esp.cadiz",
+        "6832": "esp.almeria",
+        "84": "esp.mallorca",
+        "95": "esp.valladolid",
         "98": "esp.las_palmas",
         "9812": "esp.girona"
       },
       "unresolved": {
         "100": "Numancia",
+        "10629": "Cultural Leonesa",
+        "11487": "CD Sabadell",
         "131470": "Reus FC Reddis",
+        "17565": "Zamora CF",
         "17570": "Gimn\u00e1stica Torrelavega",
         "20179": "FC Andorra",
         "21290": "CE Europa",
+        "22080": "Arosa",
         "22430": "CD Extremadura",
+        "245": "Tenerife",
         "2737": "Albacete",
+        "3752": "Eibar",
+        "3788": "Sporting Gij\u00f3n",
+        "4438": "Castell\u00f3n",
+        "4515": "Mirand\u00e9s",
+        "5404": "Ceuta",
         "5413": "Huesca",
         "5419": "FC Cartagena",
+        "5424": "Sant Andreu",
         "5463": "Ponferradina",
+        "5464": "Portugalete",
+        "6856": "Sestao",
+        "7320": "Eldense",
+        "9028": "Rayo Majadahonda",
         "9449": "Antequera CF"
       }
     },
     "fra.2": {
       "ambiguous": {},
       "proposed": {
-        "165": "fra.nantes",
-        "178": "fra.st_etienne",
-        "274": "fra.montpellier",
-        "3243": "fra.reims"
+        "165": "fra.nantes"
       },
       "unresolved": {
         "272": "Sochaux",
-        "3266": "Stade Laval",
         "6994": "Grenoble"
       }
     },
@@ -252,24 +282,42 @@
     "ger.2": {
       "ambiguous": {},
       "proposed": {
+        "121": "ger.bochum",
         "3812": "ger.darmstadt",
         "7884": "ger.holstein_kiel"
       },
       "unresolved": {
         "129": "Hertha Berlin",
+        "130": "Kaiserslautern",
         "7017": "Dynamo Dresden"
       }
     },
     "ger.dfb_pokal": {
       "ambiguous": {},
       "proposed": {
+        "121": "ger.bochum",
         "3812": "ger.darmstadt",
         "7884": "ger.holstein_kiel"
       },
       "unresolved": {
         "129": "Hertha Berlin",
+        "130": "Kaiserslautern",
         "7017": "Dynamo Dresden"
       }
+    },
+    "ita.2": {
+      "ambiguous": {},
+      "proposed": {
+        "4050": "ita.cremonese"
+      },
+      "unresolved": {}
+    },
+    "ita.coppa_italia": {
+      "ambiguous": {},
+      "proposed": {
+        "4050": "ita.cremonese"
+      },
+      "unresolved": {}
     },
     "nor.1": {
       "ambiguous": {},
@@ -329,7 +377,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 1,
+  "results_appended": 20,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -340,7 +388,6 @@
     "bra.2",
     "chi.1",
     "col.1",
-    "conmebol.sudamericana",
     "den.1",
     "eng.3",
     "eng.4",
@@ -354,23 +401,26 @@
     "nor.1",
     "per.1",
     "swe.1",
-    "uru.1",
-    "usa.usl.1"
+    "uru.1"
   ],
   "unmapped_team_ids": {
     "100": "Numancia",
     "1010": "OFI Crete",
     "10235": "Villefranche",
+    "10629": "Cultural Leonesa",
     "10675": "Versailles 78",
     "10677": "Rennes TA",
     "10678": "Pau",
     "10683": "Thionville",
     "10689": "St-Ouen L'Aumone",
+    "11487": "CD Sabadell",
     "11880": "FC Chambly",
     "11884": "Red Star FC 93",
     "11895": "Bourg-Peronnas",
+    "121": "VfL Bochum",
     "129": "Hertha Berlin",
     "12957": "Sabl\u00e9 FC",
+    "130": "Kaiserslautern",
     "13083": "Hapoel Be'er",
     "131470": "Reus FC Reddis",
     "134063": "Chassieu Declines FC",
@@ -410,6 +460,8 @@
     "16917": "La Roche-sur-Yon",
     "16925": "Bressuire",
     "17483": "Orl\u00e9ans",
+    "17534": "Legan\u00e9s",
+    "17565": "Zamora CF",
     "17570": "Gimn\u00e1stica Torrelavega",
     "17621": "Anglet Genets",
     "17623": "US Marseille Endoume",
@@ -441,9 +493,11 @@
     "21772": "Lannion",
     "21922": "Sabah FK",
     "21943": "Egnatia",
+    "22080": "Arosa",
     "22138": "US Feurs",
     "22139": "Racing Club de France",
     "22430": "CD Extremadura",
+    "245": "Tenerife",
     "272": "Sochaux",
     "2737": "Albacete",
     "274": "Montpellier",
@@ -454,18 +508,31 @@
     "3266": "Stade Laval",
     "3267": "AS Nancy Lorraine",
     "3335": "SC Amiens",
+    "3747": "Granada",
+    "3752": "Eibar",
+    "3788": "Sporting Gij\u00f3n",
     "3812": "SV Darmstadt 98",
+    "3842": "C\u00e1diz",
+    "4050": "Cremonese",
+    "4438": "Castell\u00f3n",
+    "4515": "Mirand\u00e9s",
     "4744": "Calais",
     "489": "Hajduk Split",
     "490": "Levski Sofia",
     "510": "Viking FK",
+    "5404": "Ceuta",
     "5413": "Huesca",
     "5419": "FC Cartagena",
+    "5424": "Sant Andreu",
     "5463": "Ponferradina",
+    "5464": "Portugalete",
     "620": "SK Brann",
     "6732": "Valenciennes",
+    "6832": "Almer\u00eda",
+    "6856": "Sestao",
     "6994": "Grenoble",
     "7017": "Dynamo Dresden",
+    "7320": "Eldense",
     "7574": "Vannes OC",
     "7718": "Concarneau",
     "7720": "Angouleme",
@@ -477,31 +544,36 @@
     "7884": "Holstein Kiel",
     "8089": "CSU Craiova",
     "8169": "KuPS Kuopio",
+    "84": "Mallorca",
     "9009": "Rouen",
     "9010": "Epinal",
     "9011": "Selongey",
     "9017": "Avranches",
     "9021": "Frejus",
     "9024": "Le Poire SV",
+    "9028": "Rayo Majadahonda",
     "909": "F.C. K\u00f8benhavn",
     "936": "Sint-Truidense",
     "9449": "Antequera CF",
+    "95": "Real Valladolid",
     "98": "Las Palmas",
     "9812": "Girona",
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 0,
-    "events": 33,
+    "captured": 12,
+    "events": 21,
     "failures": [
-      "401912599: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=21.0245&longitude=105.8412&hourly=t",
-      "401912585: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Ratchaburi&count=5&language=en&",
-      "401912586: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=31.2222&longitude=121.4581&hourly=t"
+      "401912596: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=34.6938&longitude=135.5011&hourly=t",
+      "401933757: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Buenos%20Aires&count=5&language",
+      "401879225: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Nottingham&count=5&language=en&",
+      "401880140: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bolton&count=5&language=en&form",
+      "401880139: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Burnley&count=5&language=en&for"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 30,
+    "skipped": 4,
     "stopped": "consecutive_failures"
   }
 }
