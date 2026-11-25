@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261125T233015Z-a3e086` · generated 2026-11-25T23:30:15.771304Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261125T233650Z-dcb75d` · generated 2026-11-25T23:36:50.027635Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-25T23:26:59.397191Z (CURRENT at publish; CURRENT until 2026-11-25T23:46:59.397191Z, STALE after 2026-11-25T23:56:59.397191Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-25T23:33:32.134121Z (CURRENT at publish; CURRENT until 2026-11-25T23:53:32.134121Z, STALE after 2026-11-26T00:03:32.134121Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-25T23:15:16.548697Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.20s
 
@@ -21,7 +21,7 @@ model board generated 2026-11-25T23:15:16.548697Z · simulations this update: 0 
 | 2026-11-27T19:45:00Z | Brest vs Paris FC (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-27T23:00:00Z | Fluminense vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (26; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (25; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -46,7 +46,6 @@ model board generated 2026-11-25T23:15:16.548697Z · simulations this update: 0 
 | São Paulo vs Remo | away wins by more than 1.5 | yes | 0.0300 | 0.074 [0.031, 0.129] | +0.042 | +0.008 | 0.03 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | Exact score 0-0 (home-away) | yes | 0.0600 | 0.109 [0.055, 0.168] | +0.045 | +0.006 | 0.06 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | First-half result: away | no | 0.7100 | 0.789 [0.688, 0.872] | +0.064 | +0.006 | 0.71 | - | * | RESEARCH_CANDIDATE |
-| Monterrey vs Club América | Result: draw | no | 0.7200 | 0.769 [0.724, 0.813] | +0.035 | +0.005 | 0.72 | - | * | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | Total goals over 2.5 | no | 0.4400 | 0.564 [0.390, 0.720] | +0.107 | +0.003 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | Exact score 2-0 (home-away) | yes | 0.0600 | 0.090 [0.054, 0.125] | +0.026 | +0.002 | 0.06 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | First-half total goals over 2.5 | no | 0.8700 | 0.913 [0.849, 0.961] | +0.035 | +0.002 | 0.87 | - | * | RESEARCH_CANDIDATE |
@@ -55,9 +54,9 @@ model board generated 2026-11-25T23:15:16.548697Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 582
+action_NO_EDGE: 583
 action_NO_QUOTE: 122
-action_RESEARCH_CANDIDATE: 26
+action_RESEARCH_CANDIDATE: 25
 contract_sides: 730
 fixtures: 8
 fixtures_model_invalidated: 0
