@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261125T205440Z-2c4243` · generated 2026-11-25T20:54:40.767516Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261125T210938Z-24e787` · generated 2026-11-25T21:09:38.215556Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-25T20:51:22.048978Z (CURRENT at publish; CURRENT until 2026-11-25T21:11:22.048978Z, STALE after 2026-11-25T21:21:22.048978Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-25T21:06:22.078853Z (CURRENT at publish; CURRENT until 2026-11-25T21:26:22.078853Z, STALE after 2026-11-25T21:36:22.078853Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-25T19:47:40.539697Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.20s
+model board generated 2026-11-25T19:47:40.539697Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.19s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -34,7 +34,7 @@ model board generated 2026-11-25T19:47:40.539697Z · simulations this update: 0 
 | São Paulo vs Remo | home wins by more than 2.5 | no | 0.7700 | 0.874 [0.779, 0.953] | +0.092 | +0.044 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | away team total over 2.5 | no | 0.8400 | 0.922 [0.856, 0.970] | +0.073 | +0.041 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | Result: away | yes | 0.1000 | 0.213 [0.118, 0.320] | +0.107 | +0.038 | 0.13 | - |  | RESEARCH_CANDIDATE |
-| São Paulo vs Remo | Result: draw | yes | 0.1800 | 0.263 [0.200, 0.326] | +0.072 | +0.032 | 0.21 | - |  | RESEARCH_CANDIDATE |
+| São Paulo vs Remo | Result: draw | yes | 0.1750 | 0.263 [0.200, 0.326] | +0.078 | +0.037 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | Total goals over 1.5 | no | 0.2200 | 0.339 [0.215, 0.466] | +0.107 | +0.025 | 0.24 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | Total goals over 3.5 | no | 0.6900 | 0.792 [0.672, 0.893] | +0.087 | +0.021 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | Total goals over 2.5 | no | 0.4700 | 0.597 [0.449, 0.734] | +0.109 | +0.020 | 0.48 | - |  | RESEARCH_CANDIDATE |
