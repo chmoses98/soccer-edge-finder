@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-11-25T00:52:04.568226+00:00",
+  "as_of": "2026-11-25T11:27:01.333446+00:00",
   "events": 616,
   "events_skipped_unmapped": 345,
   "fixtures_mapped": 271,
   "health": {
     "reasons": [
-      "weather_failures:5",
+      "weather_failures:3",
       "weather_stopped:consecutive_failures:skipped=4"
     ],
     "state": "DEGRADED"
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 86,
-    "events": 100,
+    "captured": 87,
+    "events": 87,
     "failures": [],
-    "published_post": 63,
-    "published_pre_kickoff": 1,
-    "unchanged": 14,
-    "unpublished": 36
+    "published_post": 61,
+    "published_pre_kickoff": 0,
+    "unchanged": 0,
+    "unpublished": 26
   },
   "map_proposals": {
     "bel.1": {
@@ -377,7 +377,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 20,
+  "results_appended": 1,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -561,11 +561,9 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 12,
-    "events": 21,
+    "captured": 13,
+    "events": 20,
     "failures": [
-      "401912596: fetch failed for https://api.open-meteo.com/v1/forecast?latitude=34.6938&longitude=135.5011&hourly=t",
-      "401933757: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Buenos%20Aires&count=5&language",
       "401879225: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Nottingham&count=5&language=en&",
       "401880140: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bolton&count=5&language=en&form",
       "401880139: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Burnley&count=5&language=en&for"
