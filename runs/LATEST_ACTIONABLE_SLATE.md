@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261125T122226Z-50ad89` · generated 2026-11-25T12:22:26.403672Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261125T124148Z-78bebf` · generated 2026-11-25T12:41:48.520139Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-25T12:19:10.343054Z (CURRENT at publish; CURRENT until 2026-11-25T12:39:10.343054Z, STALE after 2026-11-25T12:49:10.343054Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-25T12:38:22.243838Z (CURRENT at publish; CURRENT until 2026-11-25T12:58:22.243838Z, STALE after 2026-11-25T13:08:22.243838Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-25T11:07:02.961094Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.32s
+model board generated 2026-11-25T11:07:02.961094Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.22s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -29,7 +29,7 @@ model board generated 2026-11-25T11:07:02.961094Z · simulations this update: 0 
 | São Paulo vs Remo | home wins by more than 1.5 | no | 0.5500 | 0.712 [0.556, 0.841] | +0.144 | +0.055 | 0.6 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | away team total over 0.5 | no | 0.2500 | 0.397 [0.271, 0.515] | +0.134 | +0.054 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | First half: both teams to score | no | 0.7500 | 0.849 [0.779, 0.911] | +0.085 | +0.045 | 0.79 | - | * | RESEARCH_CANDIDATE |
-| São Paulo vs Remo | home wins by more than 2.5 | no | 0.7700 | 0.871 [0.768, 0.949] | +0.089 | +0.035 | 0.8 | - |  | RESEARCH_CANDIDATE |
+| São Paulo vs Remo | home wins by more than 2.5 | no | 0.7600 | 0.871 [0.768, 0.949] | +0.098 | +0.045 | 0.8 | - |  | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | Result: away | yes | 0.1000 | 0.210 [0.113, 0.316] | +0.104 | +0.033 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | Result: draw | yes | 0.1800 | 0.261 [0.196, 0.321] | +0.071 | +0.032 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | away team total over 2.5 | no | 0.8500 | 0.922 [0.856, 0.970] | +0.063 | +0.032 | 0.88 | - |  | RESEARCH_CANDIDATE |
