@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-25T11:27:01.333446+00:00",
-  "events": 616,
+  "as_of": "2026-11-25T21:49:24.504830+00:00",
+  "events": 618,
   "events_skipped_unmapped": 345,
-  "fixtures_mapped": 271,
+  "fixtures_mapped": 273,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=4"
+      "weather_stopped:consecutive_failures:skipped=43"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 87,
-    "events": 87,
+    "captured": 121,
+    "events": 122,
     "failures": [],
-    "published_post": 61,
+    "published_post": 75,
     "published_pre_kickoff": 0,
-    "unchanged": 0,
-    "unpublished": 26
+    "unchanged": 1,
+    "unpublished": 47
   },
   "map_proposals": {
     "bel.1": {
@@ -377,7 +377,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 1,
+  "results_appended": 4,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -561,17 +561,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 13,
-    "events": 20,
+    "captured": 14,
+    "events": 60,
     "failures": [
-      "401879225: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Nottingham&count=5&language=en&",
-      "401880140: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Bolton&count=5&language=en&form",
-      "401880139: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Burnley&count=5&language=en&for"
+      "401934705: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Medellin&count=5&language=en&fo",
+      "401912519: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Montevideo&count=5&language=en&",
+      "401874563: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Haderslev&count=5&language=en&f"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 4,
+    "skipped": 43,
     "stopped": "consecutive_failures"
   }
 }
