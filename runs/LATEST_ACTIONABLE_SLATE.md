@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261126T190554Z-11aa44` · generated 2026-11-26T19:05:54.317038Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261126T192056Z-b39fe3` · generated 2026-11-26T19:20:56.730301Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-26T19:02:26.954063Z (CURRENT at publish; CURRENT until 2026-11-26T19:22:26.954063Z, STALE after 2026-11-26T19:32:26.954063Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-26T19:17:26.954231Z (CURRENT at publish; CURRENT until 2026-11-26T19:37:26.954231Z, STALE after 2026-11-26T19:47:26.954231Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-26T17:59:18.947309Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.35s
+model board generated 2026-11-26T17:59:18.947309Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.62s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -38,7 +38,7 @@ model board generated 2026-11-26T17:59:18.947309Z · simulations this update: 0 
 | 2026-11-28T17:30:00Z | VfB Stuttgart vs Eintracht Frankfurt (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 0 |
 | 2026-11-28T17:30:00Z | Charlotte FC vs Chicago Fire (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 
-## Candidates on CURRENT prices (69; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (70; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -72,23 +72,23 @@ model board generated 2026-11-26T17:59:18.947309Z · simulations this update: 0 
 | Columbus Crew vs Inter Miami | away wins by more than 2.5 | no | 0.9100 | 0.974 [0.948, 0.992] | +0.058 | +0.046 | 0.95 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | away team total over 1.5 | no | 0.6200 | 0.753 [0.624, 0.857] | +0.116 | +0.045 | 0.66 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | First-half total goals over 1.5 | no | 0.5700 | 0.706 [0.598, 0.812] | +0.119 | +0.043 | 0.61 | - | * | RESEARCH_CANDIDATE |
+| Columbus Crew vs Inter Miami | First team to score: away | no | 0.5400 | 0.668 [0.558, 0.772] | +0.110 | +0.043 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | First-half result: home | yes | 0.3300 | 0.469 [0.348, 0.602] | +0.124 | +0.043 | 0.37 | - |  | RESEARCH_CANDIDATE |
-| Columbus Crew vs Inter Miami | First team to score: home | yes | 0.5000 | 0.634 [0.518, 0.752] | +0.117 | +0.041 | 0.54 | - | * | RESEARCH_CANDIDATE |
+| Columbus Crew vs Inter Miami | First team to score: home | yes | 0.5000 | 0.634 [0.518, 0.752] | +0.117 | +0.041 | 0.54 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | away team total over 1.5 | no | 0.5100 | 0.646 [0.515, 0.769] | +0.118 | +0.039 | 0.54 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 5.5 | no | 0.8900 | 0.955 [0.911, 0.986] | +0.058 | +0.038 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | Result: away | yes | 0.1000 | 0.213 [0.113, 0.321] | +0.106 | +0.037 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | First-half exact score 0-0 (home-away) | yes | 0.2300 | 0.347 [0.238, 0.452] | +0.104 | +0.036 | 0.26 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | First-half total goals over 0.5 | no | 0.2300 | 0.347 [0.238, 0.452] | +0.104 | +0.036 | 0.26 | - |  | RESEARCH_CANDIDATE |
-| Columbus Crew vs Inter Miami | First team to score: away | no | 0.5500 | 0.668 [0.558, 0.772] | +0.100 | +0.033 | 0.58 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | First-half total goals over 2.5 | no | 0.8200 | 0.901 [0.839, 0.961] | +0.071 | +0.030 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | away wins by more than 2.5 | no | 0.9400 | 0.979 [0.959, 0.994] | +0.035 | +0.027 | 0.96 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 728
-action_NO_QUOTE: 2011
-action_RESEARCH_CANDIDATE: 69
+action_NO_EDGE: 725
+action_NO_QUOTE: 2013
+action_RESEARCH_CANDIDATE: 70
 contract_sides: 2808
 fixtures: 25
 fixtures_model_invalidated: 0
