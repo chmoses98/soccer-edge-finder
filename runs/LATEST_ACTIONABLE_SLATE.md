@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261126T183552Z-13a406` · generated 2026-11-26T18:35:52.636079Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261126T185052Z-13fab6` · generated 2026-11-26T18:50:52.528630Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-26T18:32:24.982380Z (CURRENT at publish; CURRENT until 2026-11-26T18:52:24.982380Z, STALE after 2026-11-26T19:02:24.982380Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-26T18:47:25.010731Z (CURRENT at publish; CURRENT until 2026-11-26T19:07:25.010731Z, STALE after 2026-11-26T19:17:25.010731Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-26T17:59:18.947309Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.36s
 
@@ -38,7 +38,7 @@ model board generated 2026-11-26T17:59:18.947309Z · simulations this update: 0 
 | 2026-11-28T17:30:00Z | VfB Stuttgart vs Eintracht Frankfurt (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 0 |
 | 2026-11-28T17:30:00Z | Charlotte FC vs Chicago Fire (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 
-## Candidates on CURRENT prices (71; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (70; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -46,8 +46,8 @@ model board generated 2026-11-26T17:59:18.947309Z · simulations this update: 0 
 | Sunderland vs Tottenham Hotspur | Result: home | yes | 0.2500 | 0.570 [0.359, 0.764] | +0.307 | +0.170 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | Sunderland vs Tottenham Hotspur | Result: away | no | 0.5300 | 0.796 [0.641, 0.920] | +0.248 | +0.163 | 0.69 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | Result: away | no | 0.6100 | 0.831 [0.735, 0.915] | +0.204 | +0.152 | 0.76 | - |  | RESEARCH_CANDIDATE |
-| Columbus Crew vs Inter Miami | Result: home | yes | 0.3700 | 0.618 [0.466, 0.765] | +0.232 | +0.137 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | home wins by more than 1.5 | yes | 0.1900 | 0.439 [0.291, 0.604] | +0.238 | +0.128 | 0.31 | - | * | RESEARCH_CANDIDATE |
+| Columbus Crew vs Inter Miami | Result: home | yes | 0.3800 | 0.618 [0.466, 0.765] | +0.222 | +0.127 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | Result: away | no | 0.6100 | 0.807 [0.694, 0.900] | +0.180 | +0.118 | 0.73 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.5800 | 0.764 [0.637, 0.872] | +0.167 | +0.094 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.3600 | 0.561 [0.413, 0.700] | +0.185 | +0.093 | 0.45 | - |  | RESEARCH_CANDIDATE |
@@ -86,9 +86,9 @@ model board generated 2026-11-26T17:59:18.947309Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 726
+action_NO_EDGE: 727
 action_NO_QUOTE: 2011
-action_RESEARCH_CANDIDATE: 71
+action_RESEARCH_CANDIDATE: 70
 contract_sides: 2808
 fixtures: 25
 fixtures_model_invalidated: 0
