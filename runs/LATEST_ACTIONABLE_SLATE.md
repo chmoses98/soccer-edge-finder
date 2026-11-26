@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261126T175046Z-b95b70` · generated 2026-11-26T17:50:46.494943Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261126T180555Z-e6f052` · generated 2026-11-26T18:05:55.064274Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-26T17:47:20.550744Z (CURRENT at publish; CURRENT until 2026-11-26T18:07:20.550744Z, STALE after 2026-11-26T18:17:20.550744Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-26T18:02:22.573852Z (CURRENT at publish; CURRENT until 2026-11-26T18:22:22.573852Z, STALE after 2026-11-26T18:32:22.573852Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-26T17:35:49.539917Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.25s
 
@@ -32,7 +32,7 @@ model board generated 2026-11-26T17:35:49.539917Z · simulations this update: 0 
 | 2026-11-28T17:30:00Z | VfB Stuttgart vs Eintracht Frankfurt (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T17:30:00Z | Charlotte FC vs Chicago Fire (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (63; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (64; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -69,10 +69,10 @@ model board generated 2026-11-26T17:35:49.539917Z · simulations this update: 0 
 | Real Salt Lake vs Vancouver Whitecaps | First-half exact score 0-0 (home-away) | yes | 0.2300 | 0.347 [0.238, 0.452] | +0.104 | +0.036 | 0.26 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | First-half total goals over 0.5 | no | 0.2300 | 0.347 [0.238, 0.452] | +0.104 | +0.036 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | away team total over 1.5 | no | 0.6300 | 0.753 [0.624, 0.857] | +0.106 | +0.035 | 0.66 | - |  | RESEARCH_CANDIDATE |
+| São Paulo vs Remo | home wins by more than 2.5 | no | 0.7800 | 0.874 [0.778, 0.953] | +0.082 | +0.035 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | First-half total goals over 2.5 | no | 0.8200 | 0.901 [0.839, 0.961] | +0.071 | +0.030 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | away wins by more than 2.5 | no | 0.9400 | 0.979 [0.959, 0.994] | +0.035 | +0.027 | 0.96 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | btts | no | 0.2900 | 0.400 [0.290, 0.504] | +0.095 | +0.026 | 0.31 | - | * | RESEARCH_CANDIDATE |
-| São Paulo vs Remo | home wins by more than 2.5 | no | 0.7900 | 0.874 [0.778, 0.953] | +0.073 | +0.025 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | First half: away wins by more than 1.5 | no | 0.9000 | 0.954 [0.909, 0.991] | +0.048 | +0.024 | 0.92 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | btts | no | 0.4500 | 0.562 [0.445, 0.666] | +0.094 | +0.022 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | away wins by more than 1.5 | no | 0.8300 | 0.901 [0.825, 0.958] | +0.061 | +0.022 | 0.85 | - | * | RESEARCH_CANDIDATE |
@@ -80,9 +80,9 @@ model board generated 2026-11-26T17:35:49.539917Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 628
+action_NO_EDGE: 627
 action_NO_QUOTE: 157
-action_RESEARCH_CANDIDATE: 63
+action_RESEARCH_CANDIDATE: 64
 contract_sides: 848
 fixtures: 19
 fixtures_model_invalidated: 0
