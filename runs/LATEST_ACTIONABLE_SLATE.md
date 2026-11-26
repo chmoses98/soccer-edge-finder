@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261126T192056Z-b39fe3` · generated 2026-11-26T19:20:56.730301Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261126T193603Z-9b36dc` · generated 2026-11-26T19:36:03.645156Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-26T19:17:26.954231Z (CURRENT at publish; CURRENT until 2026-11-26T19:37:26.954231Z, STALE after 2026-11-26T19:47:26.954231Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-26T19:32:28.808804Z (CURRENT at publish; CURRENT until 2026-11-26T19:52:28.808804Z, STALE after 2026-11-26T20:02:28.808804Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-26T17:59:18.947309Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.62s
+model board generated 2026-11-26T19:36:01.514240Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.36s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -37,8 +37,9 @@ model board generated 2026-11-26T17:59:18.947309Z · simulations this update: 0 
 | 2026-11-28T16:15:00Z | Angers vs Lens (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 0 |
 | 2026-11-28T17:30:00Z | VfB Stuttgart vs Eintracht Frankfurt (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 0 |
 | 2026-11-28T17:30:00Z | Charlotte FC vs Chicago Fire (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-28T19:30:00Z | Houston Dynamo vs San Jose Earthquakes (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (70; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (76; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -49,6 +50,7 @@ model board generated 2026-11-26T17:59:18.947309Z · simulations this update: 0 
 | Charlotte FC vs Chicago Fire | home wins by more than 1.5 | yes | 0.1900 | 0.439 [0.291, 0.604] | +0.238 | +0.128 | 0.31 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | Result: home | yes | 0.3800 | 0.618 [0.466, 0.765] | +0.222 | +0.127 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | Result: away | no | 0.6100 | 0.807 [0.694, 0.900] | +0.180 | +0.118 | 0.73 | - |  | RESEARCH_CANDIDATE |
+| Houston Dynamo vs San Jose Earthquakes | btts | no | 0.4000 | 0.582 [0.469, 0.691] | +0.165 | +0.094 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.5800 | 0.764 [0.637, 0.872] | +0.167 | +0.094 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.3600 | 0.561 [0.413, 0.700] | +0.185 | +0.093 | 0.45 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | away wins by more than 1.5 | no | 0.8100 | 0.935 [0.885, 0.974] | +0.114 | +0.091 | 0.9 | - |  | RESEARCH_CANDIDATE |
@@ -58,19 +60,21 @@ model board generated 2026-11-26T17:59:18.947309Z · simulations this update: 0 
 | Columbus Crew vs Inter Miami | home wins by more than 1.5 | yes | 0.2100 | 0.407 [0.254, 0.574] | +0.185 | +0.080 | 0.28 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away wins by more than 1.5 | no | 0.8000 | 0.922 [0.861, 0.969] | +0.110 | +0.079 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | First team to score: home | yes | 0.5000 | 0.659 [0.548, 0.772] | +0.141 | +0.072 | 0.57 | - | * | RESEARCH_CANDIDATE |
+| Houston Dynamo vs San Jose Earthquakes | Total goals over 3.5 | no | 0.6400 | 0.794 [0.669, 0.900] | +0.138 | +0.072 | 0.71 | - | * | RESEARCH_CANDIDATE |
 | Everton vs Liverpool | Result: away | no | 0.4600 | 0.661 [0.470, 0.832] | +0.184 | +0.069 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | Result: home | no | 0.2950 | 0.476 [0.325, 0.620] | +0.166 | +0.068 | 0.36 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 4.5 | no | 0.7700 | 0.890 [0.807, 0.955] | +0.108 | +0.065 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | home wins by more than 2.5 | yes | 0.0900 | 0.256 [0.132, 0.405] | +0.160 | +0.064 | 0.15 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | First-half result: away | no | 0.6800 | 0.808 [0.718, 0.892] | +0.113 | +0.063 | 0.74 | - | * | RESEARCH_CANDIDATE |
+| Houston Dynamo vs San Jose Earthquakes | Total goals over 2.5 | no | 0.4300 | 0.600 [0.445, 0.745] | +0.153 | +0.062 | 0.49 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 1.5 | no | 0.1600 | 0.309 [0.191, 0.430] | +0.140 | +0.060 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away team total over 0.5 | no | 0.1700 | 0.307 [0.207, 0.413] | +0.127 | +0.056 | 0.22 | - |  | RESEARCH_CANDIDATE |
-| Pachuca vs Guadalajara | away team total over 0.5 | no | 0.2500 | 0.397 [0.270, 0.515] | +0.134 | +0.054 | 0.3 | - | * | RESEARCH_CANDIDATE |
+| Pachuca vs Guadalajara | away team total over 1.5 | no | 0.6100 | 0.753 [0.624, 0.857] | +0.126 | +0.055 | 0.66 | - | * | RESEARCH_CANDIDATE |
+| Pachuca vs Guadalajara | away team total over 0.5 | no | 0.2500 | 0.397 [0.270, 0.515] | +0.134 | +0.054 | 0.3 | - |  | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | home wins by more than 1.5 | no | 0.5600 | 0.716 [0.573, 0.842] | +0.139 | +0.053 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | Everton vs Liverpool | Result: home | yes | 0.2100 | 0.406 [0.218, 0.612] | +0.184 | +0.050 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | home wins by more than 2.5 | yes | 0.0900 | 0.230 [0.111, 0.375] | +0.134 | +0.047 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away wins by more than 2.5 | no | 0.9100 | 0.974 [0.948, 0.992] | +0.058 | +0.046 | 0.95 | - |  | RESEARCH_CANDIDATE |
-| Pachuca vs Guadalajara | away team total over 1.5 | no | 0.6200 | 0.753 [0.624, 0.857] | +0.116 | +0.045 | 0.66 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | First-half total goals over 1.5 | no | 0.5700 | 0.706 [0.598, 0.812] | +0.119 | +0.043 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | First team to score: away | no | 0.5400 | 0.668 [0.558, 0.772] | +0.110 | +0.043 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | First-half result: home | yes | 0.3300 | 0.469 [0.348, 0.602] | +0.124 | +0.043 | 0.37 | - |  | RESEARCH_CANDIDATE |
@@ -79,18 +83,15 @@ model board generated 2026-11-26T17:59:18.947309Z · simulations this update: 0 
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 5.5 | no | 0.8900 | 0.955 [0.911, 0.986] | +0.058 | +0.038 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | Result: away | yes | 0.1000 | 0.213 [0.113, 0.321] | +0.106 | +0.037 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | First-half exact score 0-0 (home-away) | yes | 0.2300 | 0.347 [0.238, 0.452] | +0.104 | +0.036 | 0.26 | - | * | RESEARCH_CANDIDATE |
-| Real Salt Lake vs Vancouver Whitecaps | First-half total goals over 0.5 | no | 0.2300 | 0.347 [0.238, 0.452] | +0.104 | +0.036 | 0.26 | - |  | RESEARCH_CANDIDATE |
-| Real Salt Lake vs Vancouver Whitecaps | First-half total goals over 2.5 | no | 0.8200 | 0.901 [0.839, 0.961] | +0.071 | +0.030 | 0.85 | - |  | RESEARCH_CANDIDATE |
-| Charlotte FC vs Chicago Fire | away wins by more than 2.5 | no | 0.9400 | 0.979 [0.959, 0.994] | +0.035 | +0.027 | 0.96 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 725
-action_NO_QUOTE: 2013
-action_RESEARCH_CANDIDATE: 70
-contract_sides: 2808
-fixtures: 25
+action_NO_EDGE: 749
+action_NO_QUOTE: 2011
+action_RESEARCH_CANDIDATE: 76
+contract_sides: 2836
+fixtures: 26
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
