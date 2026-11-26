@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261126T200605Z-1f8722` · generated 2026-11-26T20:06:05.452832Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261126T202103Z-5af110` · generated 2026-11-26T20:21:03.157908Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-26T20:02:32.536493Z (CURRENT at publish; CURRENT until 2026-11-26T20:22:32.536493Z, STALE after 2026-11-26T20:32:32.536493Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-26T20:17:32.564294Z (CURRENT at publish; CURRENT until 2026-11-26T20:37:32.564294Z, STALE after 2026-11-26T20:47:32.564294Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-26T19:51:01.572680Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.37s
+model board generated 2026-11-26T19:51:01.572680Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.38s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -43,7 +43,7 @@ model board generated 2026-11-26T19:51:01.572680Z · simulations this update: 0 
 | 2026-11-28T19:45:00Z | Nice vs Troyes (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T19:45:00Z | Paris Saint-Germain vs Lorient (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (79; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (81; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -75,10 +75,10 @@ model board generated 2026-11-26T19:51:01.572680Z · simulations this update: 0 
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 1.5 | no | 0.1600 | 0.309 [0.191, 0.430] | +0.140 | +0.060 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away team total over 0.5 | no | 0.1700 | 0.307 [0.207, 0.413] | +0.127 | +0.056 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | away team total over 1.5 | no | 0.6100 | 0.753 [0.624, 0.857] | +0.126 | +0.055 | 0.66 | - |  | RESEARCH_CANDIDATE |
+| São Paulo vs Remo | home wins by more than 1.5 | no | 0.5600 | 0.716 [0.573, 0.842] | +0.139 | +0.053 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | Everton vs Liverpool | Result: home | yes | 0.2100 | 0.406 [0.218, 0.612] | +0.184 | +0.050 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | home wins by more than 2.5 | yes | 0.0900 | 0.230 [0.111, 0.375] | +0.134 | +0.047 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away wins by more than 2.5 | no | 0.9100 | 0.974 [0.948, 0.992] | +0.058 | +0.046 | 0.95 | - |  | RESEARCH_CANDIDATE |
-| São Paulo vs Remo | home wins by more than 1.5 | no | 0.5700 | 0.716 [0.573, 0.842] | +0.129 | +0.043 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | First-half total goals over 1.5 | no | 0.5700 | 0.706 [0.598, 0.812] | +0.119 | +0.043 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | First team to score: away | no | 0.5400 | 0.668 [0.558, 0.772] | +0.110 | +0.043 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | First-half result: home | yes | 0.3300 | 0.469 [0.348, 0.602] | +0.124 | +0.043 | 0.37 | - |  | RESEARCH_CANDIDATE |
@@ -91,9 +91,9 @@ model board generated 2026-11-26T19:51:01.572680Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 770
+action_NO_EDGE: 768
 action_NO_QUOTE: 2011
-action_RESEARCH_CANDIDATE: 79
+action_RESEARCH_CANDIDATE: 81
 contract_sides: 2860
 fixtures: 30
 fixtures_model_invalidated: 0
