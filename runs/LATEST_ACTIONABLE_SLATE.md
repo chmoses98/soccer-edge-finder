@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261126T215818Z-271476` · generated 2026-11-26T21:58:18.188763Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
+slate `slate-20261126T215914Z-7875a7` · generated 2026-11-26T21:59:14.346998Z · trigger `kalshi_capture` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-26T21:54:36.179315Z (CURRENT at publish; CURRENT until 2026-11-26T22:14:36.179315Z, STALE after 2026-11-26T22:24:36.179315Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-26T21:55:31.503565Z (CURRENT at publish; CURRENT until 2026-11-26T22:15:31.503565Z, STALE after 2026-11-26T22:25:31.503565Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-26T21:58:15.839361Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.42s
+model board generated 2026-11-26T21:43:10.464101Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.49s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-26T21:58:15.839361Z · simulations this update: 1 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-26T23:00:00Z | São Paulo vs Remo (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 14 | 0 |
+| 2026-11-26T23:00:00Z | São Paulo vs Remo (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-27T01:00:00Z | Pachuca vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-27T03:10:00Z | León vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-27T19:30:00Z | Werder Bremen vs Borussia Mönchengladbach (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 0 |
@@ -65,7 +65,7 @@ model board generated 2026-11-26T21:58:15.839361Z · simulations this update: 1 
 | Columbus Crew vs Inter Miami | home wins by more than 1.5 | yes | 0.2100 | 0.407 [0.254, 0.574] | +0.185 | +0.080 | 0.28 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away wins by more than 1.5 | no | 0.8000 | 0.922 [0.861, 0.969] | +0.110 | +0.079 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | home wins by more than 2.5 | yes | 0.0800 | 0.256 [0.132, 0.405] | +0.170 | +0.075 | 0.15 | - |  | RESEARCH_CANDIDATE |
-| São Paulo vs Remo | Result: home | no | 0.2900 | 0.476 [0.325, 0.620] | +0.171 | +0.073 | 0.36 | 0.284 | * | RESEARCH_CANDIDATE |
+| São Paulo vs Remo | Result: home | no | 0.2900 | 0.476 [0.325, 0.620] | +0.171 | +0.073 | 0.36 | - | * | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | First team to score: home | yes | 0.5000 | 0.659 [0.548, 0.772] | +0.141 | +0.072 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 3.5 | no | 0.6400 | 0.794 [0.669, 0.900] | +0.138 | +0.072 | 0.71 | - | * | RESEARCH_CANDIDATE |
 | Everton vs Liverpool | Result: away | no | 0.4600 | 0.661 [0.470, 0.832] | +0.184 | +0.069 | 0.52 | - | * | RESEARCH_CANDIDATE |
@@ -86,16 +86,16 @@ model board generated 2026-11-26T21:58:15.839361Z · simulations this update: 1 
 | Columbus Crew vs Inter Miami | First-half result: home | yes | 0.3300 | 0.469 [0.348, 0.602] | +0.124 | +0.043 | 0.37 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | First team to score: home | yes | 0.5000 | 0.634 [0.518, 0.752] | +0.117 | +0.041 | 0.54 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 5.5 | no | 0.8900 | 0.955 [0.911, 0.986] | +0.058 | +0.038 | 0.93 | - |  | RESEARCH_CANDIDATE |
-| São Paulo vs Remo | Result: away | yes | 0.1000 | 0.213 [0.113, 0.321] | +0.106 | +0.037 | 0.13 | 0.097 |  | RESEARCH_CANDIDATE |
+| São Paulo vs Remo | Result: away | yes | 0.1000 | 0.213 [0.113, 0.321] | +0.106 | +0.037 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | First-half exact score 0-0 (home-away) | yes | 0.2300 | 0.347 [0.238, 0.452] | +0.104 | +0.036 | 0.26 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_NO_EDGE: 862
-action_NO_QUOTE: 2007
+action_NO_QUOTE: 2037
 action_RESEARCH_CANDIDATE: 83
-contract_sides: 2952
+contract_sides: 2982
 fixtures: 31
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
