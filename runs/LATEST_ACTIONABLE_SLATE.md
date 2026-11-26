@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261126T211306Z-c72aa5` · generated 2026-11-26T21:13:06.177767Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261126T212806Z-8161c8` · generated 2026-11-26T21:28:06.342190Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-26T21:09:34.598909Z (CURRENT at publish; CURRENT until 2026-11-26T21:29:34.598909Z, STALE after 2026-11-26T21:39:34.598909Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-26T21:24:34.626673Z (CURRENT at publish; CURRENT until 2026-11-26T21:44:34.626673Z, STALE after 2026-11-26T21:54:34.626673Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-26T19:51:01.572680Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.56s
+model board generated 2026-11-26T19:51:01.572680Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.39s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-26T19:51:01.572680Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-26T23:00:00Z | São Paulo vs Remo (bra.serie_a) | VALID (CURRENT) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-26T23:00:00Z | São Paulo vs Remo (bra.serie_a) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-27T01:00:00Z | Pachuca vs Guadalajara (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-27T03:10:00Z | León vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-27T19:30:00Z | Werder Bremen vs Borussia Mönchengladbach (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 0 |
@@ -91,8 +91,8 @@ model board generated 2026-11-26T19:51:01.572680Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 773
-action_NO_QUOTE: 2006
+action_NO_EDGE: 770
+action_NO_QUOTE: 2009
 action_RESEARCH_CANDIDATE: 81
 contract_sides: 2860
 fixtures: 30
