@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-26T14:00:16.192921+00:00",
-  "events": 552,
-  "events_skipped_unmapped": 315,
-  "fixtures_mapped": 237,
+  "as_of": "2026-11-26T23:04:44.910552+00:00",
+  "events": 561,
+  "events_skipped_unmapped": 323,
+  "fixtures_mapped": 238,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=52"
+      "weather_stopped:consecutive_failures:skipped=71"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 79,
-    "events": 81,
+    "captured": 95,
+    "events": 97,
     "failures": [],
-    "published_post": 35,
-    "published_pre_kickoff": 1,
+    "published_post": 67,
+    "published_pre_kickoff": 0,
     "unchanged": 2,
-    "unpublished": 45
+    "unpublished": 30
   },
   "map_proposals": {
     "bel.1": {
@@ -377,7 +377,7 @@
         "489": "Hajduk Split",
         "620": "SK Brann",
         "7853": "AGF",
-        "8089": "CSU Craiova",
+        "8089": "Universitatea Craiova",
         "8169": "KuPS Kuopio",
         "909": "F.C. K\u00f8benhavn",
         "936": "Sint-Truidense"
@@ -385,7 +385,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 1,
+  "results_appended": 23,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -556,7 +556,7 @@
     "7733": "Bayonne",
     "7853": "AGF",
     "7884": "Holstein Kiel",
-    "8089": "CSU Craiova",
+    "8089": "Universitatea Craiova",
     "8169": "KuPS Kuopio",
     "84": "Mallorca",
     "9009": "Rouen",
@@ -576,17 +576,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 11,
-    "events": 66,
+    "captured": 9,
+    "events": 83,
     "failures": [
-      "401841337: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rio%20de%20Janeiro&count=5&lang",
-      "401841336: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rio%20de%20Janeiro&count=5&lang",
-      "401912683: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Goi\u00e3nia&count=5&language=en&for"
+      "401878933: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Charleroi&count=5&language=en&f",
+      "401878926: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Sint-Truiden&count=5&language=e",
+      "401878928: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Antwerp&count=5&language=en&for"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 52,
+    "skipped": 71,
     "stopped": "consecutive_failures"
   }
 }
