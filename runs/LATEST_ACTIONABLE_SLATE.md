@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261126T160055Z-d2b4d4` · generated 2026-11-26T16:00:55.606132Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261126T161556Z-35f37a` · generated 2026-11-26T16:15:56.803186Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-26T15:57:26.446362Z (CURRENT at publish; CURRENT until 2026-11-26T16:17:26.446362Z, STALE after 2026-11-26T16:27:26.446362Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-26T16:12:26.391519Z (CURRENT at publish; CURRENT until 2026-11-26T16:32:26.391519Z, STALE after 2026-11-26T16:42:26.391519Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-26T15:00:51.107710Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.43s
+model board generated 2026-11-26T16:15:55.939745Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.41s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-26T15:00:51.107710Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-26T23:00:00Z | São Paulo vs Remo (bra.serie_a) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-26T23:00:00Z | São Paulo vs Remo (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-27T01:00:00Z | Pachuca vs Guadalajara (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-27T03:10:00Z | León vs Cruz Azul (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-27T19:30:00Z | Werder Bremen vs Borussia Mönchengladbach (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -26,6 +26,7 @@ model board generated 2026-11-26T15:00:51.107710Z · simulations this update: 0 
 | 2026-11-28T14:30:00Z | SC Paderborn 07 vs Schalke 04 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T15:00:00Z | Leeds United vs Coventry City (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T15:00:00Z | Manchester United vs Brentford (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-28T16:15:00Z | Angers vs Lens (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
 ## Candidates on CURRENT prices (53; RESEARCH_ONLY = analysis, never a bet)
 
@@ -33,10 +34,10 @@ model board generated 2026-11-26T15:00:51.107710Z · simulations this update: 0 
 |---|---|---|---|---|---|---|---|---|---|---|
 | Columbus Crew vs Inter Miami | Result: home | yes | 0.3700 | 0.618 [0.466, 0.765] | +0.232 | +0.137 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | Result: away | no | 0.6000 | 0.807 [0.694, 0.900] | +0.190 | +0.128 | 0.73 | - |  | RESEARCH_CANDIDATE |
+| Columbus Crew vs Inter Miami | away team total over 1.5 | no | 0.4600 | 0.659 [0.533, 0.778] | +0.182 | +0.100 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.5800 | 0.764 [0.637, 0.872] | +0.167 | +0.094 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.3600 | 0.561 [0.413, 0.700] | +0.185 | +0.093 | 0.45 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | home wins by more than 1.5 | yes | 0.2000 | 0.407 [0.254, 0.574] | +0.195 | +0.090 | 0.28 | - | * | RESEARCH_CANDIDATE |
-| Columbus Crew vs Inter Miami | away team total over 1.5 | no | 0.4700 | 0.659 [0.533, 0.778] | +0.172 | +0.090 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away team total over 2.5 | no | 0.7200 | 0.871 [0.789, 0.940] | +0.137 | +0.089 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | btts | no | 0.3400 | 0.519 [0.403, 0.632] | +0.164 | +0.089 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away wins by more than 1.5 | no | 0.8000 | 0.922 [0.861, 0.969] | +0.110 | +0.079 | 0.88 | - |  | RESEARCH_CANDIDATE |
@@ -75,11 +76,11 @@ model board generated 2026-11-26T15:00:51.107710Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 590
+action_NO_EDGE: 596
 action_NO_QUOTE: 153
 action_RESEARCH_CANDIDATE: 53
-contract_sides: 796
-fixtures: 14
+contract_sides: 802
+fixtures: 15
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
