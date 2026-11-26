@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261126T163523Z-a1b287` · generated 2026-11-26T16:35:23.888504Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261126T165015Z-0308b8` · generated 2026-11-26T16:50:15.875314Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-26T16:31:50.289815Z (CURRENT at publish; CURRENT until 2026-11-26T16:51:50.289815Z, STALE after 2026-11-26T17:01:50.289815Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-26T16:46:50.318941Z (CURRENT at publish; CURRENT until 2026-11-26T17:06:50.318941Z, STALE after 2026-11-26T17:16:50.318941Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-26T16:35:19.489289Z · simulations this update: 10 · Odds API calls this update: 0 (credits 0) · reprice 0.23s
+model board generated 2026-11-26T16:35:19.489289Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.25s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -67,12 +67,12 @@ model board generated 2026-11-26T16:35:19.489289Z · simulations this update: 10
 | Pachuca vs Guadalajara | btts | no | 0.4500 | 0.562 [0.445, 0.666] | +0.094 | +0.022 | 0.47 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | First-half total goals over 2.5 | no | 0.8300 | 0.901 [0.839, 0.961] | +0.061 | +0.020 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | away team total over 0.5 | no | 0.2000 | 0.296 [0.196, 0.402] | +0.085 | +0.018 | 0.21 | - |  | RESEARCH_CANDIDATE |
-| São Paulo vs Remo | Result: draw | yes | 0.1950 | 0.263 [0.200, 0.326] | +0.057 | +0.016 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Exact score 1-0 (home-away) | yes | 0.0600 | 0.103 [0.066, 0.143] | +0.040 | +0.014 | 0.07 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | away team total over 2.5 | no | 0.7900 | 0.862 [0.775, 0.935] | +0.060 | +0.013 | 0.8 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | away wins by more than 1.5 | no | 0.8400 | 0.901 [0.825, 0.958] | +0.051 | +0.013 | 0.85 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | away team total over 2.5 | no | 0.8700 | 0.922 [0.855, 0.970] | +0.044 | +0.012 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | home team total over 1.5 | no | 0.5500 | 0.668 [0.518, 0.801] | +0.101 | +0.011 | 0.56 | - |  | RESEARCH_CANDIDATE |
+| São Paulo vs Remo | Result: draw | yes | 0.2000 | 0.263 [0.200, 0.326] | +0.052 | +0.010 | 0.21 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
