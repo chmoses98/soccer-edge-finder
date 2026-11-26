@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261126T020118Z-e362cc` · generated 2026-11-26T02:01:18.348749Z · trigger `kalshi_capture` · mode `reprice_only`
+slate `slate-20261126T020419Z-ae8889` · generated 2026-11-26T02:04:19.328894Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-26T01:57:44.126207Z (CURRENT at publish; CURRENT until 2026-11-26T02:17:44.126207Z, STALE after 2026-11-26T02:27:44.126207Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-26T02:00:55.915514Z (CURRENT at publish; CURRENT until 2026-11-26T02:20:55.915514Z, STALE after 2026-11-26T02:30:55.915514Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-26T01:19:19.032098Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.25s
+model board generated 2026-11-26T01:19:19.032098Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.20s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -21,29 +21,28 @@ model board generated 2026-11-26T01:19:19.032098Z · simulations this update: 0 
 | 2026-11-27T23:00:00Z | Fluminense vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-28T01:00:00Z | Columbus Crew vs Inter Miami (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 
-## Candidates on CURRENT prices (41; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (39; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Columbus Crew vs Inter Miami | Result: home | yes | 0.3700 | 0.618 [0.466, 0.765] | +0.232 | +0.137 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | Result: away | no | 0.6100 | 0.807 [0.694, 0.900] | +0.180 | +0.118 | 0.73 | - |  | RESEARCH_CANDIDATE |
-| Columbus Crew vs Inter Miami | away team total over 1.5 | no | 0.4500 | 0.659 [0.533, 0.778] | +0.192 | +0.110 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | home wins by more than 1.5 | yes | 0.1900 | 0.407 [0.254, 0.574] | +0.206 | +0.101 | 0.28 | - | * | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | Result: home | no | 0.2800 | 0.476 [0.332, 0.621] | +0.182 | +0.086 | 0.36 | - | * | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | home wins by more than 1.5 | no | 0.5400 | 0.717 [0.573, 0.846] | +0.159 | +0.078 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | away team total over 1.5 | no | 0.5900 | 0.753 [0.625, 0.856] | +0.146 | +0.075 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away wins by more than 1.5 | no | 0.8100 | 0.922 [0.861, 0.969] | +0.101 | +0.070 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | away team total over 0.5 | no | 0.2400 | 0.397 [0.271, 0.515] | +0.145 | +0.065 | 0.3 | - |  | RESEARCH_CANDIDATE |
-| Columbus Crew vs Inter Miami | away team total over 2.5 | no | 0.7500 | 0.871 [0.789, 0.940] | +0.108 | +0.060 | 0.81 | - |  | RESEARCH_CANDIDATE |
+| Columbus Crew vs Inter Miami | away team total over 2.5 | no | 0.7500 | 0.871 [0.789, 0.940] | +0.108 | +0.060 | 0.81 | - | * | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | home wins by more than 2.5 | no | 0.7600 | 0.874 [0.779, 0.953] | +0.102 | +0.054 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | First-half result: away | no | 0.6900 | 0.808 [0.718, 0.892] | +0.103 | +0.053 | 0.74 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | btts | no | 0.4200 | 0.562 [0.446, 0.666] | +0.125 | +0.053 | 0.47 | - | * | RESEARCH_CANDIDATE |
+| Columbus Crew vs Inter Miami | First-half result: home | yes | 0.3200 | 0.469 [0.348, 0.602] | +0.134 | +0.053 | 0.37 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | home wins by more than 2.5 | yes | 0.0900 | 0.230 [0.111, 0.375] | +0.134 | +0.047 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away team total over 0.5 | no | 0.1800 | 0.307 [0.207, 0.413] | +0.117 | +0.046 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | away team total over 2.5 | no | 0.8400 | 0.922 [0.856, 0.970] | +0.073 | +0.041 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | Result: away | yes | 0.1000 | 0.213 [0.118, 0.320] | +0.107 | +0.038 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away wins by more than 2.5 | no | 0.9200 | 0.974 [0.948, 0.992] | +0.049 | +0.036 | 0.95 | - |  | RESEARCH_CANDIDATE |
-| Columbus Crew vs Inter Miami | First-half result: home | yes | 0.3400 | 0.469 [0.348, 0.602] | +0.114 | +0.032 | 0.37 | - |  | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | Result: draw | yes | 0.1800 | 0.263 [0.200, 0.326] | +0.072 | +0.032 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | First team to score: home | yes | 0.5100 | 0.634 [0.518, 0.752] | +0.107 | +0.031 | 0.54 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | btts | no | 0.2700 | 0.382 [0.281, 0.483] | +0.098 | +0.029 | 0.29 | - | * | RESEARCH_CANDIDATE |
@@ -56,7 +55,6 @@ model board generated 2026-11-26T01:19:19.032098Z · simulations this update: 0 
 | Pachuca vs Guadalajara | away wins by more than 2.5 | no | 0.9400 | 0.971 [0.940, 0.991] | +0.027 | +0.013 | 0.95 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | away wins by more than 1.5 | no | 0.8400 | 0.901 [0.826, 0.957] | +0.051 | +0.013 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | Total goals over 4.5 | no | 0.8500 | 0.907 [0.834, 0.965] | +0.048 | +0.012 | 0.86 | - |  | RESEARCH_CANDIDATE |
-| Pachuca vs Guadalajara | Total goals over 2.5 | no | 0.4800 | 0.597 [0.449, 0.734] | +0.099 | +0.009 | 0.48 | - |  | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | away wins by more than 1.5 | yes | 0.0300 | 0.074 [0.031, 0.129] | +0.042 | +0.008 | 0.03 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | First half: away wins by more than 1.5 | no | 0.9300 | 0.958 [0.919, 0.991] | +0.024 | +0.005 | 0.93 | - | * | RESEARCH_CANDIDATE |
 | Monterrey vs Club América | Result: draw | no | 0.7200 | 0.769 [0.724, 0.813] | +0.035 | +0.005 | 0.72 | - | * | RESEARCH_CANDIDATE |
@@ -65,13 +63,14 @@ model board generated 2026-11-26T01:19:19.032098Z · simulations this update: 0 
 | São Paulo vs Remo | Total goals over 2.5 | no | 0.4400 | 0.564 [0.390, 0.720] | +0.107 | +0.003 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | Exact score 2-0 (home-away) | yes | 0.0600 | 0.090 [0.054, 0.125] | +0.026 | +0.002 | 0.06 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | First-half total goals over 1.5 | no | 0.6500 | 0.729 [0.618, 0.822] | +0.063 | +0.002 | 0.65 | - | * | RESEARCH_CANDIDATE |
+| São Paulo vs Remo | Total goals over 4.5 | no | 0.8300 | 0.889 [0.789, 0.961] | +0.049 | +0.001 | 0.83 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 564
+action_NO_EDGE: 566
 action_NO_QUOTE: 125
-action_RESEARCH_CANDIDATE: 41
+action_RESEARCH_CANDIDATE: 39
 contract_sides: 730
 fixtures: 8
 fixtures_model_invalidated: 0
