@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-25T21:49:24.504830+00:00",
-  "events": 618,
-  "events_skipped_unmapped": 345,
-  "fixtures_mapped": 273,
+  "as_of": "2026-11-26T04:13:10.038468+00:00",
+  "events": 552,
+  "events_skipped_unmapped": 315,
+  "fixtures_mapped": 237,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=43"
+      "weather_stopped:consecutive_failures:skipped=46"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 121,
-    "events": 122,
+    "captured": 79,
+    "events": 81,
     "failures": [],
-    "published_post": 75,
+    "published_post": 38,
     "published_pre_kickoff": 0,
-    "unchanged": 1,
-    "unpublished": 47
+    "unchanged": 2,
+    "unpublished": 43
   },
   "map_proposals": {
     "bel.1": {
@@ -119,6 +119,7 @@
       },
       "unresolved": {
         "11487": "CD Sabadell",
+        "12597": "Burgos",
         "20179": "FC Andorra",
         "245": "Tenerife",
         "2737": "Albacete",
@@ -145,19 +146,25 @@
         "100": "Numancia",
         "10629": "Cultural Leonesa",
         "11487": "CD Sabadell",
+        "12587": "Amorebieta",
+        "12597": "Burgos",
         "131470": "Reus FC Reddis",
         "17565": "Zamora CF",
         "17570": "Gimn\u00e1stica Torrelavega",
         "20179": "FC Andorra",
+        "20821": "Coria",
         "21290": "CE Europa",
+        "21717": "Atl\u00e9tico Paso",
         "22080": "Arosa",
         "22430": "CD Extremadura",
+        "22439": "Real \u00c1vila",
         "245": "Tenerife",
         "2737": "Albacete",
         "3752": "Eibar",
         "3788": "Sporting Gij\u00f3n",
         "4438": "Castell\u00f3n",
         "4515": "Mirand\u00e9s",
+        "5401": "Real Jaen CF",
         "5404": "Ceuta",
         "5413": "Huesca",
         "5419": "FC Cartagena",
@@ -167,6 +174,7 @@
         "6856": "Sestao",
         "7320": "Eldense",
         "9028": "Rayo Majadahonda",
+        "91": "Real Zaragoza",
         "9449": "Antequera CF"
       }
     },
@@ -377,7 +385,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 4,
+  "results_appended": 10,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -418,6 +426,8 @@
     "11884": "Red Star FC 93",
     "11895": "Bourg-Peronnas",
     "121": "VfL Bochum",
+    "12587": "Amorebieta",
+    "12597": "Burgos",
     "129": "Hertha Berlin",
     "12957": "Sabl\u00e9 FC",
     "130": "Kaiserslautern",
@@ -484,11 +494,13 @@
     "20275": "ESA Linas-Montlhery",
     "20301": "Mj\u00e4llby AIF",
     "20703": "Inter D'Escaldes",
+    "20821": "Coria",
     "20876": "Loon Plage FC",
     "21290": "CE Europa",
     "21303": "ES Thaon",
     "21306": "AS Cannes",
     "21615": "Torreense",
+    "21717": "Atl\u00e9tico Paso",
     "21769": "La Tamponnaise",
     "21772": "Lannion",
     "21922": "Sabah FK",
@@ -497,6 +509,7 @@
     "22138": "US Feurs",
     "22139": "Racing Club de France",
     "22430": "CD Extremadura",
+    "22439": "Real \u00c1vila",
     "245": "Tenerife",
     "272": "Sochaux",
     "2737": "Albacete",
@@ -520,6 +533,7 @@
     "489": "Hajduk Split",
     "490": "Levski Sofia",
     "510": "Viking FK",
+    "5401": "Real Jaen CF",
     "5404": "Ceuta",
     "5413": "Huesca",
     "5419": "FC Cartagena",
@@ -553,6 +567,7 @@
     "9024": "Le Poire SV",
     "9028": "Rayo Majadahonda",
     "909": "F.C. K\u00f8benhavn",
+    "91": "Real Zaragoza",
     "936": "Sint-Truidense",
     "9449": "Antequera CF",
     "95": "Real Valladolid",
@@ -561,17 +576,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 14,
+    "captured": 11,
     "events": 60,
     "failures": [
-      "401934705: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Medellin&count=5&language=en&fo",
-      "401912519: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Montevideo&count=5&language=en&",
-      "401874563: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Haderslev&count=5&language=en&f"
+      "401912709: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Fortaleza&count=5&language=en&f",
+      "401850705: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Coquimbo&count=5&language=en&fo",
+      "401850706: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Santiago&count=5&language=en&fo"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 43,
+    "skipped": 46,
     "stopped": "consecutive_failures"
   }
 }
