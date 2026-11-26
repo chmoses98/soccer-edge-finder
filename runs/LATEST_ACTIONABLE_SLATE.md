@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261126T133040Z-e9f243` · generated 2026-11-26T13:30:40.798934Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261126T134540Z-6db5e1` · generated 2026-11-26T13:45:40.970575Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-26T13:27:16.704198Z (CURRENT at publish; CURRENT until 2026-11-26T13:47:16.704198Z, STALE after 2026-11-26T13:57:16.704198Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-26T13:42:16.742697Z (CURRENT at publish; CURRENT until 2026-11-26T14:02:16.742697Z, STALE after 2026-11-26T14:12:16.742697Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-26T11:30:16.296489Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.40s
 
@@ -21,7 +21,7 @@ model board generated 2026-11-26T11:30:16.296489Z · simulations this update: 0 
 | 2026-11-28T01:00:00Z | Columbus Crew vs Inter Miami (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-28T03:00:00Z | Real Salt Lake vs Vancouver Whitecaps (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 
-## Candidates on CURRENT prices (57; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (55; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -33,9 +33,9 @@ model board generated 2026-11-26T11:30:16.296489Z · simulations this update: 0 
 | Columbus Crew vs Inter Miami | home wins by more than 1.5 | yes | 0.2000 | 0.407 [0.254, 0.574] | +0.195 | +0.090 | 0.28 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away team total over 2.5 | no | 0.7200 | 0.871 [0.789, 0.940] | +0.137 | +0.089 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | btts | no | 0.3400 | 0.519 [0.403, 0.632] | +0.164 | +0.089 | 0.42 | - | * | RESEARCH_CANDIDATE |
-| São Paulo vs Remo | Result: home | no | 0.2850 | 0.476 [0.332, 0.621] | +0.177 | +0.081 | 0.36 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away wins by more than 1.5 | no | 0.8000 | 0.922 [0.861, 0.969] | +0.110 | +0.079 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | home wins by more than 1.5 | no | 0.5400 | 0.717 [0.573, 0.846] | +0.159 | +0.078 | 0.61 | - | * | RESEARCH_CANDIDATE |
+| São Paulo vs Remo | Result: home | no | 0.2900 | 0.476 [0.332, 0.621] | +0.172 | +0.076 | 0.36 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 4.5 | no | 0.7700 | 0.890 [0.807, 0.955] | +0.108 | +0.065 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | First-half result: away | no | 0.6800 | 0.808 [0.718, 0.892] | +0.113 | +0.063 | 0.74 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 1.5 | no | 0.1600 | 0.309 [0.191, 0.430] | +0.140 | +0.060 | 0.21 | - |  | RESEARCH_CANDIDATE |
@@ -53,7 +53,6 @@ model board generated 2026-11-26T11:30:16.296489Z · simulations this update: 0 
 | Pachuca vs Guadalajara | away team total over 1.5 | no | 0.6300 | 0.753 [0.624, 0.857] | +0.106 | +0.035 | 0.66 | - |  | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | Result: away | yes | 0.1050 | 0.213 [0.118, 0.320] | +0.102 | +0.033 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | btts | no | 0.4400 | 0.562 [0.445, 0.666] | +0.104 | +0.032 | 0.47 | - | * | RESEARCH_CANDIDATE |
-| São Paulo vs Remo | Result: draw | yes | 0.1800 | 0.263 [0.200, 0.326] | +0.072 | +0.031 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | First team to score: home | yes | 0.5100 | 0.634 [0.518, 0.752] | +0.107 | +0.031 | 0.54 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | First-half total goals over 2.5 | no | 0.8200 | 0.901 [0.839, 0.961] | +0.071 | +0.030 | 0.85 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | btts | no | 0.2700 | 0.382 [0.281, 0.483] | +0.098 | +0.029 | 0.29 | - | * | RESEARCH_CANDIDATE |
@@ -61,6 +60,7 @@ model board generated 2026-11-26T11:30:16.296489Z · simulations this update: 0 
 | Columbus Crew vs Inter Miami | Second-half result: home | yes | 0.3800 | 0.514 [0.378, 0.652] | +0.118 | +0.024 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | away team total over 2.5 | no | 0.7800 | 0.862 [0.775, 0.935] | +0.070 | +0.023 | 0.8 | - |  | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | away team total over 2.5 | no | 0.8600 | 0.922 [0.855, 0.970] | +0.054 | +0.022 | 0.88 | - |  | RESEARCH_CANDIDATE |
+| São Paulo vs Remo | Result: draw | yes | 0.1900 | 0.263 [0.200, 0.326] | +0.062 | +0.021 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | away team total over 0.5 | no | 0.2000 | 0.296 [0.196, 0.402] | +0.085 | +0.018 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Exact score 1-0 (home-away) | yes | 0.0600 | 0.103 [0.066, 0.143] | +0.040 | +0.014 | 0.07 | - | * | RESEARCH_CANDIDATE |
 | Pachuca vs Guadalajara | away wins by more than 1.5 | no | 0.8400 | 0.901 [0.825, 0.958] | +0.051 | +0.013 | 0.85 | - | * | RESEARCH_CANDIDATE |
@@ -69,9 +69,9 @@ model board generated 2026-11-26T11:30:16.296489Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 547
+action_NO_EDGE: 549
 action_NO_QUOTE: 156
-action_RESEARCH_CANDIDATE: 57
+action_RESEARCH_CANDIDATE: 55
 contract_sides: 760
 fixtures: 8
 fixtures_model_invalidated: 0
