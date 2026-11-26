@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261126T193603Z-9b36dc` · generated 2026-11-26T19:36:03.645156Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261126T195103Z-d0badd` · generated 2026-11-26T19:51:03.625277Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-26T19:32:28.808804Z (CURRENT at publish; CURRENT until 2026-11-26T19:52:28.808804Z, STALE after 2026-11-26T20:02:28.808804Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-26T19:47:28.837424Z (CURRENT at publish; CURRENT until 2026-11-26T20:07:28.837424Z, STALE after 2026-11-26T20:17:28.837424Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-26T19:36:01.514240Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.36s
+model board generated 2026-11-26T19:51:01.572680Z · simulations this update: 4 · Odds API calls this update: 0 (credits 0) · reprice 0.38s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -38,8 +38,12 @@ model board generated 2026-11-26T19:36:01.514240Z · simulations this update: 1 
 | 2026-11-28T17:30:00Z | VfB Stuttgart vs Eintracht Frankfurt (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 0 |
 | 2026-11-28T17:30:00Z | Charlotte FC vs Chicago Fire (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-28T19:30:00Z | Houston Dynamo vs San Jose Earthquakes (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-28T19:45:00Z | Le Havre vs Strasbourg (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-28T19:45:00Z | Le Mans vs Lille (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-28T19:45:00Z | Nice vs Troyes (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-28T19:45:00Z | Paris Saint-Germain vs Lorient (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (76; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (79; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -82,16 +86,16 @@ model board generated 2026-11-26T19:36:01.514240Z · simulations this update: 1 
 | Real Salt Lake vs Vancouver Whitecaps | away team total over 1.5 | no | 0.5100 | 0.646 [0.515, 0.769] | +0.118 | +0.039 | 0.54 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 5.5 | no | 0.8900 | 0.955 [0.911, 0.986] | +0.058 | +0.038 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | São Paulo vs Remo | Result: away | yes | 0.1000 | 0.213 [0.113, 0.321] | +0.106 | +0.037 | 0.13 | - |  | RESEARCH_CANDIDATE |
-| Real Salt Lake vs Vancouver Whitecaps | First-half exact score 0-0 (home-away) | yes | 0.2300 | 0.347 [0.238, 0.452] | +0.104 | +0.036 | 0.26 | - | * | RESEARCH_CANDIDATE |
+| Paris Saint-Germain vs Lorient | Result: home | no | 0.2000 | 0.377 [0.180, 0.579] | +0.166 | +0.037 | 0.23 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 749
-action_NO_QUOTE: 2011
-action_RESEARCH_CANDIDATE: 76
-contract_sides: 2836
-fixtures: 26
+action_NO_EDGE: 777
+action_NO_QUOTE: 2004
+action_RESEARCH_CANDIDATE: 79
+contract_sides: 2860
+fixtures: 30
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
