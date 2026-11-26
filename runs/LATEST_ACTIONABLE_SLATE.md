@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261126T161556Z-35f37a` · generated 2026-11-26T16:15:56.803186Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261126T163523Z-a1b287` · generated 2026-11-26T16:35:23.888504Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-26T16:12:26.391519Z (CURRENT at publish; CURRENT until 2026-11-26T16:32:26.391519Z, STALE after 2026-11-26T16:42:26.391519Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-26T16:31:50.289815Z (CURRENT at publish; CURRENT until 2026-11-26T16:51:50.289815Z, STALE after 2026-11-26T17:01:50.289815Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-26T16:15:55.939745Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.41s
+model board generated 2026-11-26T16:35:19.489289Z · simulations this update: 10 · Odds API calls this update: 0 (credits 0) · reprice 0.23s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -26,6 +26,7 @@ model board generated 2026-11-26T16:15:55.939745Z · simulations this update: 1 
 | 2026-11-28T14:30:00Z | SC Paderborn 07 vs Schalke 04 (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T15:00:00Z | Leeds United vs Coventry City (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T15:00:00Z | Manchester United vs Brentford (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-28T15:00:00Z | Nottingham Forest vs Chelsea (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T16:15:00Z | Angers vs Lens (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
 ## Candidates on CURRENT prices (53; RESEARCH_ONLY = analysis, never a bet)
@@ -76,11 +77,11 @@ model board generated 2026-11-26T16:15:55.939745Z · simulations this update: 1 
 ## Counts
 
 ```
-action_NO_EDGE: 596
+action_NO_EDGE: 602
 action_NO_QUOTE: 153
 action_RESEARCH_CANDIDATE: 53
-contract_sides: 802
-fixtures: 15
+contract_sides: 808
+fixtures: 16
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
