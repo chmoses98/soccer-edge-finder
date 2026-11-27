@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261127T171153Z-a29bbe` · generated 2026-11-27T17:11:53.003361Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261127T172613Z-f6d4d0` · generated 2026-11-27T17:26:13.942706Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-27T17:08:09.316684Z (CURRENT at publish; CURRENT until 2026-11-27T17:28:09.316684Z, STALE after 2026-11-27T17:38:09.316684Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-27T17:22:31.583574Z (CURRENT at publish; CURRENT until 2026-11-27T17:42:31.583574Z, STALE after 2026-11-27T17:52:31.583574Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-27T17:11:51.865980Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.54s
+model board generated 2026-11-27T17:11:51.865980Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.51s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -63,7 +63,7 @@ model board generated 2026-11-27T17:11:51.865980Z · simulations this update: 1 
 | 2026-11-29T16:15:00Z | Toulouse vs Rennes (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-29T16:30:00Z | TSG Hoffenheim vs FC Augsburg (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (105; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (106; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -105,15 +105,15 @@ model board generated 2026-11-27T17:11:51.865980Z · simulations this update: 1 
 | Botafogo vs Bahia | Total goals over 2.5 | no | 0.4000 | 0.555 [0.402, 0.703] | +0.138 | +0.041 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Nashville SC | Total goals over 1.5 | no | 0.1600 | 0.286 [0.175, 0.399] | +0.117 | +0.040 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | btts | no | 0.3800 | 0.513 [0.393, 0.628] | +0.116 | +0.040 | 0.41 | - | * | RESEARCH_CANDIDATE |
-| Real Salt Lake vs Vancouver Whitecaps | Total goals over 1.5 | no | 0.1800 | 0.309 [0.191, 0.430] | +0.119 | +0.040 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 4.5 | no | 0.8000 | 0.890 [0.807, 0.955] | +0.079 | +0.036 | 0.83 | - |  | RESEARCH_CANDIDATE |
+| Udinese vs Fiorentina | Result: away | no | 0.5800 | 0.724 [0.560, 0.873] | +0.127 | +0.036 | 0.61 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1127
+action_NO_EDGE: 1126
 action_NO_QUOTE: 200
-action_RESEARCH_CANDIDATE: 105
+action_RESEARCH_CANDIDATE: 106
 contract_sides: 1432
 fixtures: 50
 fixtures_model_invalidated: 0
