@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261127T113705Z-00e9f3` · generated 2026-11-27T11:37:05.440490Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261127T115156Z-030e6b` · generated 2026-11-27T11:51:56.546398Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-27T11:33:16.537072Z (CURRENT at publish; CURRENT until 2026-11-27T11:53:16.537072Z, STALE after 2026-11-27T12:03:16.537072Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-27T11:48:17.922719Z (CURRENT at publish; CURRENT until 2026-11-27T12:08:17.922719Z, STALE after 2026-11-27T12:18:17.922719Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-27T11:37:03.831799Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.72s
+model board generated 2026-11-27T11:37:03.831799Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.91s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -47,7 +47,7 @@ model board generated 2026-11-27T11:37:03.831799Z · simulations this update: 1 
 | 2026-11-29T03:10:00Z | Club América vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-29T03:30:00Z | Portland Timbers vs FC Dallas (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 
-## Candidates on CURRENT prices (91; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (92; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -81,6 +81,7 @@ model board generated 2026-11-27T11:37:03.831799Z · simulations this update: 1 
 | Columbus Crew vs Inter Miami | away team total over 2.5 | no | 0.7600 | 0.871 [0.789, 0.940] | +0.098 | +0.050 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | away team total over 1.5 | no | 0.5000 | 0.646 [0.515, 0.769] | +0.128 | +0.049 | 0.54 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 1.5 | no | 0.2000 | 0.344 [0.215, 0.477] | +0.133 | +0.049 | 0.24 | - |  | RESEARCH_CANDIDATE |
+| Columbus Crew vs Inter Miami | home wins by more than 2.5 | yes | 0.0900 | 0.230 [0.111, 0.375] | +0.134 | +0.047 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Nashville SC | Total goals over 4.5 | no | 0.7700 | 0.875 [0.787, 0.946] | +0.093 | +0.046 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | First-half result: away | no | 0.7000 | 0.808 [0.718, 0.892] | +0.094 | +0.043 | 0.74 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | First team to score: away | no | 0.5400 | 0.668 [0.558, 0.772] | +0.110 | +0.043 | 0.58 | - | * | RESEARCH_CANDIDATE |
@@ -89,15 +90,14 @@ model board generated 2026-11-27T11:37:03.831799Z · simulations this update: 1 
 | FC Cincinnati vs Nashville SC | Total goals over 1.5 | no | 0.1600 | 0.286 [0.175, 0.399] | +0.117 | +0.040 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | btts | no | 0.3800 | 0.513 [0.393, 0.628] | +0.116 | +0.040 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 5.5 | no | 0.8900 | 0.955 [0.911, 0.986] | +0.058 | +0.038 | 0.93 | - |  | RESEARCH_CANDIDATE |
-| Columbus Crew vs Inter Miami | home wins by more than 2.5 | yes | 0.1000 | 0.230 [0.111, 0.375] | +0.124 | +0.037 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away team total over 0.5 | no | 0.1900 | 0.307 [0.207, 0.413] | +0.107 | +0.036 | 0.22 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1048
+action_NO_EDGE: 1047
 action_NO_QUOTE: 329
-action_RESEARCH_CANDIDATE: 91
+action_RESEARCH_CANDIDATE: 92
 contract_sides: 1468
 fixtures: 34
 fixtures_model_invalidated: 0
