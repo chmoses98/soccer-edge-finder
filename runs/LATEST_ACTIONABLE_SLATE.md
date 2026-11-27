@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261127T193535Z-c454dc` · generated 2026-11-27T19:35:35.692891Z · trigger `kickoff_chain:T-30/T-15` · mode `reprice_only`
+slate `slate-20261127T194402Z-9c6cdc` · generated 2026-11-27T19:44:02.318933Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-27T19:31:50.623636Z (CURRENT at publish; CURRENT until 2026-11-27T19:51:50.623636Z, STALE after 2026-11-27T20:01:50.623636Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-27T19:40:21.123891Z (CURRENT at publish; CURRENT until 2026-11-27T20:00:21.123891Z, STALE after 2026-11-27T20:10:21.123891Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-27T18:48:48.745702Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.54s
+model board generated 2026-11-27T18:48:48.745702Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.53s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -63,7 +63,7 @@ model board generated 2026-11-27T18:48:48.745702Z · simulations this update: 0 
 | 2026-11-29T16:15:00Z | Toulouse vs Rennes (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-29T16:30:00Z | TSG Hoffenheim vs FC Augsburg (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (107; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (106; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -111,9 +111,9 @@ model board generated 2026-11-27T18:48:48.745702Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1129
-action_NO_QUOTE: 196
-action_RESEARCH_CANDIDATE: 107
+action_NO_EDGE: 1126
+action_NO_QUOTE: 200
+action_RESEARCH_CANDIDATE: 106
 contract_sides: 1432
 fixtures: 50
 fixtures_model_invalidated: 0
