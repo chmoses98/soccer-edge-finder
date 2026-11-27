@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-27T08:46:08.119809+00:00",
-  "events": 564,
-  "events_skipped_unmapped": 323,
+  "as_of": "2026-11-27T19:31:30.582146+00:00",
+  "events": 565,
+  "events_skipped_unmapped": 324,
   "fixtures_mapped": 241,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=78"
+      "weather_stopped:consecutive_failures:skipped=80"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 80,
-    "events": 80,
+    "captured": 146,
+    "events": 150,
     "failures": [],
-    "published_post": 45,
-    "published_pre_kickoff": 0,
-    "unchanged": 0,
-    "unpublished": 35
+    "published_post": 7,
+    "published_pre_kickoff": 7,
+    "unchanged": 4,
+    "unpublished": 136
   },
   "map_proposals": {
     "bel.1": {
@@ -406,7 +406,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 3,
+  "results_appended": 5,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -600,17 +600,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 13,
+    "captured": 11,
     "events": 94,
     "failures": [
+      "401878928: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Antwerp&count=5&language=en&for",
       "401878927: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Liege&count=5&language=en&forma",
-      "401878925: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Saint-Gilles&count=5&language=e",
-      "401841337: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rio%20de%20Janeiro&count=5&lang"
+      "401878925: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Saint-Gilles&count=5&language=e"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 78,
+    "skipped": 80,
     "stopped": "consecutive_failures"
   }
 }
