@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261127T133704Z-eaea94` · generated 2026-11-27T13:37:04.335420Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261127T135205Z-74a08e` · generated 2026-11-27T13:52:05.787658Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-27T13:33:24.898779Z (CURRENT at publish; CURRENT until 2026-11-27T13:53:24.898779Z, STALE after 2026-11-27T14:03:24.898779Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-27T13:48:26.399536Z (CURRENT at publish; CURRENT until 2026-11-27T14:08:26.399536Z, STALE after 2026-11-27T14:18:26.399536Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-27T13:07:04.763995Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.71s
+model board generated 2026-11-27T13:07:04.763995Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.94s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -54,7 +54,7 @@ model board generated 2026-11-27T13:07:04.763995Z · simulations this update: 0 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Charlotte FC vs Chicago Fire | Result: home | yes | 0.3600 | 0.651 [0.512, 0.787] | +0.275 | +0.186 | 0.54 | - | * | RESEARCH_CANDIDATE |
-| Sunderland vs Tottenham Hotspur | Result: home | yes | 0.2500 | 0.570 [0.359, 0.764] | +0.307 | +0.170 | 0.41 | - | * | RESEARCH_CANDIDATE |
+| Sunderland vs Tottenham Hotspur | Result: home | yes | 0.2400 | 0.570 [0.359, 0.764] | +0.317 | +0.181 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | Sunderland vs Tottenham Hotspur | Result: away | no | 0.5300 | 0.796 [0.641, 0.920] | +0.248 | +0.163 | 0.69 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | Result: away | no | 0.6100 | 0.831 [0.735, 0.915] | +0.204 | +0.152 | 0.76 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | home wins by more than 1.5 | yes | 0.1900 | 0.439 [0.291, 0.604] | +0.238 | +0.128 | 0.31 | - | * | RESEARCH_CANDIDATE |
@@ -97,8 +97,8 @@ model board generated 2026-11-27T13:07:04.763995Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1058
-action_NO_QUOTE: 308
+action_NO_EDGE: 1059
+action_NO_QUOTE: 307
 action_RESEARCH_CANDIDATE: 92
 contract_sides: 1458
 fixtures: 36
