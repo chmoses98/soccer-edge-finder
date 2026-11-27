@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261127T001757Z-7bf106` · generated 2026-11-27T00:17:57.674803Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261127T003254Z-5749f9` · generated 2026-11-27T00:32:54.708055Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-27T00:14:16.011753Z (CURRENT at publish; CURRENT until 2026-11-27T00:34:16.011753Z, STALE after 2026-11-27T00:44:16.011753Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-27T00:29:16.014663Z (CURRENT at publish; CURRENT until 2026-11-27T00:49:16.014663Z, STALE after 2026-11-27T00:59:16.014663Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-27T00:17:55.530545Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.34s
+model board generated 2026-11-27T00:17:55.530545Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.37s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -45,7 +45,7 @@ model board generated 2026-11-27T00:17:55.530545Z · simulations this update: 1 
 | 2026-11-28T23:30:00Z | FC Cincinnati vs Nashville SC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-29T00:00:00Z | Botafogo vs Bahia (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (97; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (100; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -56,13 +56,13 @@ model board generated 2026-11-27T00:17:55.530545Z · simulations this update: 1 
 | Charlotte FC vs Chicago Fire | home wins by more than 1.5 | yes | 0.1900 | 0.439 [0.291, 0.604] | +0.238 | +0.128 | 0.31 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | Result: home | yes | 0.3800 | 0.618 [0.466, 0.765] | +0.222 | +0.127 | 0.5 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | Result: away | no | 0.6100 | 0.807 [0.694, 0.900] | +0.180 | +0.118 | 0.73 | - |  | RESEARCH_CANDIDATE |
-| Columbus Crew vs Inter Miami | away team total over 1.5 | no | 0.4500 | 0.659 [0.533, 0.778] | +0.192 | +0.110 | 0.56 | - | * | RESEARCH_CANDIDATE |
+| Columbus Crew vs Inter Miami | away team total over 1.5 | no | 0.4600 | 0.659 [0.533, 0.778] | +0.182 | +0.100 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | btts | no | 0.4000 | 0.582 [0.469, 0.691] | +0.165 | +0.094 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.5800 | 0.764 [0.637, 0.872] | +0.167 | +0.094 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.3600 | 0.561 [0.413, 0.700] | +0.185 | +0.093 | 0.45 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | away wins by more than 1.5 | no | 0.8100 | 0.935 [0.885, 0.974] | +0.114 | +0.091 | 0.9 | - |  | RESEARCH_CANDIDATE |
-| Columbus Crew vs Inter Miami | home wins by more than 1.5 | yes | 0.2000 | 0.407 [0.254, 0.574] | +0.195 | +0.090 | 0.28 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | btts | no | 0.3400 | 0.519 [0.403, 0.632] | +0.164 | +0.089 | 0.42 | - | * | RESEARCH_CANDIDATE |
+| Columbus Crew vs Inter Miami | home wins by more than 1.5 | yes | 0.2100 | 0.407 [0.254, 0.574] | +0.185 | +0.080 | 0.28 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away wins by more than 1.5 | no | 0.8000 | 0.922 [0.861, 0.969] | +0.110 | +0.079 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away team total over 2.5 | no | 0.7300 | 0.871 [0.789, 0.940] | +0.127 | +0.079 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | home wins by more than 2.5 | yes | 0.0800 | 0.256 [0.132, 0.405] | +0.170 | +0.075 | 0.15 | - |  | RESEARCH_CANDIDATE |
@@ -93,9 +93,9 @@ model board generated 2026-11-27T00:17:55.530545Z · simulations this update: 1 
 ## Counts
 
 ```
-action_NO_EDGE: 885
+action_NO_EDGE: 882
 action_NO_QUOTE: 300
-action_RESEARCH_CANDIDATE: 97
+action_RESEARCH_CANDIDATE: 100
 contract_sides: 1282
 fixtures: 32
 fixtures_model_invalidated: 0
