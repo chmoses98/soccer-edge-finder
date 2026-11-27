@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261127T195057Z-4b7ac3` · generated 2026-11-27T19:50:57.119189Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261127T195750Z-210d53` · generated 2026-11-27T19:57:50.440542Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-27T19:47:15.047365Z (CURRENT at publish; CURRENT until 2026-11-27T20:07:15.047365Z, STALE after 2026-11-27T20:17:15.047365Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-27T19:54:08.926166Z (CURRENT at publish; CURRENT until 2026-11-27T20:14:08.926166Z, STALE after 2026-11-27T20:24:08.926166Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-27T18:48:48.745702Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.52s
 
@@ -12,7 +12,7 @@ model board generated 2026-11-27T18:48:48.745702Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-27T23:00:00Z | Fluminense vs Cruzeiro (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-27T23:00:00Z | Fluminense vs Cruzeiro (bra.serie_a) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 29 | 0 |
 | 2026-11-28T01:00:00Z | Columbus Crew vs Inter Miami (usa.mls) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-28T03:00:00Z | Real Salt Lake vs Vancouver Whitecaps (usa.mls) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-28T14:30:00Z | Hamburger SV vs Bayern Munich (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -62,7 +62,7 @@ model board generated 2026-11-27T18:48:48.745702Z · simulations this update: 0 
 | 2026-11-29T16:15:00Z | Toulouse vs Rennes (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-29T16:30:00Z | TSG Hoffenheim vs FC Augsburg (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (107; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (104; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -95,9 +95,7 @@ model board generated 2026-11-27T18:48:48.745702Z · simulations this update: 0 
 | Columbus Crew vs Inter Miami | away team total over 2.5 | no | 0.7500 | 0.871 [0.789, 0.940] | +0.108 | +0.060 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | btts | no | 0.3700 | 0.519 [0.403, 0.632] | +0.133 | +0.058 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | away wins by more than 2.5 | no | 0.9100 | 0.979 [0.959, 0.994] | +0.064 | +0.056 | 0.96 | - |  | RESEARCH_CANDIDATE |
-| Real Salt Lake vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.6200 | 0.764 [0.637, 0.872] | +0.127 | +0.055 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Everton vs Liverpool | Result: home | yes | 0.2100 | 0.400 [0.221, 0.596] | +0.179 | +0.053 | 0.26 | - |  | RESEARCH_CANDIDATE |
-| Real Salt Lake vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.4000 | 0.561 [0.413, 0.700] | +0.145 | +0.052 | 0.45 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 1.5 | no | 0.2000 | 0.344 [0.215, 0.477] | +0.133 | +0.049 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Nashville SC | Total goals over 4.5 | no | 0.7700 | 0.875 [0.787, 0.946] | +0.093 | +0.046 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | First-half result: away | no | 0.7000 | 0.808 [0.718, 0.892] | +0.094 | +0.043 | 0.74 | - | * | RESEARCH_CANDIDATE |
@@ -105,14 +103,16 @@ model board generated 2026-11-27T18:48:48.745702Z · simulations this update: 0 
 | Real Madrid vs Deportivo Alavés | Result: draw | yes | 0.0900 | 0.187 [0.107, 0.263] | +0.091 | +0.042 | 0.12 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | Total goals over 2.5 | no | 0.4000 | 0.555 [0.402, 0.703] | +0.138 | +0.041 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Nashville SC | Total goals over 1.5 | no | 0.1600 | 0.286 [0.175, 0.399] | +0.117 | +0.040 | 0.19 | - |  | RESEARCH_CANDIDATE |
-| Real Salt Lake vs Vancouver Whitecaps | Total goals over 1.5 | no | 0.1800 | 0.309 [0.191, 0.430] | +0.119 | +0.040 | 0.21 | - |  | RESEARCH_CANDIDATE |
+| Columbus Crew vs Inter Miami | home wins by more than 2.5 | yes | 0.1000 | 0.230 [0.111, 0.375] | +0.124 | +0.037 | 0.13 | - |  | RESEARCH_CANDIDATE |
+| Udinese vs Fiorentina | Result: away | no | 0.5800 | 0.724 [0.560, 0.873] | +0.127 | +0.036 | 0.61 | - | * | RESEARCH_CANDIDATE |
+| Real Salt Lake vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.6400 | 0.764 [0.637, 0.872] | +0.108 | +0.035 | 0.67 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1122
+action_NO_EDGE: 1125
 action_NO_QUOTE: 197
-action_RESEARCH_CANDIDATE: 107
+action_RESEARCH_CANDIDATE: 104
 contract_sides: 1426
 fixtures: 49
 fixtures_model_invalidated: 0
