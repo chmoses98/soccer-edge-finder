@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261127T020527Z-8de796` · generated 2026-11-27T02:05:27.036924Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261127T021245Z-a6d013` · generated 2026-11-27T02:12:45.980486Z · trigger `kickoff_chain:T-60` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-27T02:01:48.875579Z (CURRENT at publish; CURRENT until 2026-11-27T02:21:48.875579Z, STALE after 2026-11-27T02:31:48.875579Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-27T02:08:41.866411Z (CURRENT at publish; CURRENT until 2026-11-27T02:28:41.866411Z, STALE after 2026-11-27T02:38:41.866411Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-27T01:35:26.951511Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.35s
+model board generated 2026-11-27T02:12:34.790307Z · simulations this update: 1 · Odds API calls this update: 1 (credits 3) · reprice 0.34s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-27T01:35:26.951511Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-27T03:10:00Z | León vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-11-27T03:10:00Z | León vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT entry | CURRENT | 79 | 1 |
 | 2026-11-27T19:30:00Z | Werder Bremen vs Borussia Mönchengladbach (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-27T19:45:00Z | Brest vs Paris FC (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-27T23:00:00Z | Fluminense vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -94,8 +94,8 @@ model board generated 2026-11-27T01:35:26.951511Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 905
-action_NO_QUOTE: 323
+action_NO_EDGE: 897
+action_NO_QUOTE: 331
 action_RESEARCH_CANDIDATE: 82
 contract_sides: 1310
 fixtures: 33
