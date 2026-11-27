@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261127T125200Z-f1fcec` · generated 2026-11-27T12:52:00.866582Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261127T130706Z-f06822` · generated 2026-11-27T13:07:06.061350Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-27T12:48:22.206666Z (CURRENT at publish; CURRENT until 2026-11-27T13:08:22.206666Z, STALE after 2026-11-27T13:18:22.206666Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-27T13:03:22.245627Z (CURRENT at publish; CURRENT until 2026-11-27T13:23:22.245627Z, STALE after 2026-11-27T13:33:22.245627Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-27T12:07:00.443465Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.89s
+model board generated 2026-11-27T13:07:04.763995Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.69s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -46,9 +46,10 @@ model board generated 2026-11-27T12:07:00.443465Z · simulations this update: 0 
 | 2026-11-29T01:30:00Z | Los Angeles FC vs St. Louis City SC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-29T03:10:00Z | Club América vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-29T03:30:00Z | Portland Timbers vs FC Dallas (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-11-29T12:00:00Z | Valencia vs Osasuna (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-29T12:00:00Z | Udinese vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (93; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (94; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -96,11 +97,11 @@ model board generated 2026-11-27T12:07:00.443465Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1030
-action_NO_QUOTE: 329
-action_RESEARCH_CANDIDATE: 93
-contract_sides: 1452
-fixtures: 35
+action_NO_EDGE: 1044
+action_NO_QUOTE: 320
+action_RESEARCH_CANDIDATE: 94
+contract_sides: 1458
+fixtures: 36
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
