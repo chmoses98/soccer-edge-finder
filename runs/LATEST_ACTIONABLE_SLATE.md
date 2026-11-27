@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261127T090207Z-bf39d3` · generated 2026-11-27T09:02:07.951415Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261127T092137Z-7fc315` · generated 2026-11-27T09:21:37.062496Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-27T08:58:29.441964Z (CURRENT at publish; CURRENT until 2026-11-27T09:18:29.441964Z, STALE after 2026-11-27T09:28:29.441964Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-27T09:17:40.726851Z (CURRENT at publish; CURRENT until 2026-11-27T09:37:40.726851Z, STALE after 2026-11-27T09:47:40.726851Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-27T07:46:46.306841Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.62s
+model board generated 2026-11-27T09:21:27.224876Z · simulations this update: 16 · Odds API calls this update: 0 (credits 0) · reprice 0.75s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -14,9 +14,9 @@ model board generated 2026-11-27T07:46:46.306841Z · simulations this update: 0 
 |---|---|---|---|---|---|---|---|
 | 2026-11-27T19:30:00Z | Werder Bremen vs Borussia Mönchengladbach (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-27T19:45:00Z | Brest vs Paris FC (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-27T23:00:00Z | Fluminense vs Cruzeiro (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
-| 2026-11-28T01:00:00Z | Columbus Crew vs Inter Miami (usa.mls) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-11-28T03:00:00Z | Real Salt Lake vs Vancouver Whitecaps (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-11-27T23:00:00Z | Fluminense vs Cruzeiro (bra.serie_a) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 29 | 0 |
+| 2026-11-28T01:00:00Z | Columbus Crew vs Inter Miami (usa.mls) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-11-28T03:00:00Z | Real Salt Lake vs Vancouver Whitecaps (usa.mls) | VALID (AGING) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-28T14:30:00Z | Hamburger SV vs Bayern Munich (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T14:30:00Z | 1. FC Köln vs SV Elversberg (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T14:30:00Z | Mainz 05 vs Union Berlin (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -84,19 +84,19 @@ model board generated 2026-11-27T07:46:46.306841Z · simulations this update: 0 
 | FC Cincinnati vs Nashville SC | Total goals over 4.5 | no | 0.7700 | 0.875 [0.787, 0.946] | +0.093 | +0.046 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | First-half result: away | no | 0.7000 | 0.808 [0.718, 0.892] | +0.094 | +0.043 | 0.74 | - | * | RESEARCH_CANDIDATE |
 | Club América vs Monterrey | Result: home | yes | 0.4200 | 0.577 [0.423, 0.721] | +0.140 | +0.043 | 0.46 | - | * | RESEARCH_CANDIDATE |
-| Columbus Crew vs Inter Miami | First team to score: away | no | 0.5400 | 0.668 [0.558, 0.772] | +0.110 | +0.043 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 4.5 | no | 0.8200 | 0.908 [0.831, 0.967] | +0.078 | +0.042 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | Total goals over 2.5 | no | 0.4000 | 0.555 [0.402, 0.703] | +0.138 | +0.041 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Nashville SC | Total goals over 1.5 | no | 0.1600 | 0.286 [0.175, 0.399] | +0.117 | +0.040 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | btts | no | 0.3800 | 0.513 [0.393, 0.628] | +0.116 | +0.040 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | away team total over 1.5 | no | 0.5100 | 0.646 [0.515, 0.769] | +0.118 | +0.039 | 0.54 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 5.5 | no | 0.8900 | 0.955 [0.911, 0.986] | +0.058 | +0.038 | 0.93 | - |  | RESEARCH_CANDIDATE |
+| Club América vs Monterrey | home wins by more than 1.5 | yes | 0.2000 | 0.351 [0.204, 0.500] | +0.140 | +0.037 | 0.23 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1050
-action_NO_QUOTE: 325
+action_NO_EDGE: 1046
+action_NO_QUOTE: 329
 action_RESEARCH_CANDIDATE: 93
 contract_sides: 1468
 fixtures: 34
