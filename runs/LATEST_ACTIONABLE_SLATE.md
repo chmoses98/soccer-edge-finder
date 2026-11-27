@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261127T225613Z-cd5d20` · generated 2026-11-27T22:56:13.278735Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261127T230319Z-afa7e2` · generated 2026-11-27T23:03:19.723158Z · trigger `kickoff_chain:T-5` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-27T22:52:30.516501Z (CURRENT at publish; CURRENT until 2026-11-27T23:12:30.516501Z, STALE after 2026-11-27T23:22:30.516501Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-27T22:59:34.930669Z (CURRENT at publish; CURRENT until 2026-11-27T23:19:34.930669Z, STALE after 2026-11-27T23:29:34.930669Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-27T22:36:04.559085Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.60s
+model board generated 2026-11-27T22:36:04.559085Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.81s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,6 @@ model board generated 2026-11-27T22:36:04.559085Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-27T23:00:00Z | Fluminense vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
 | 2026-11-28T01:00:00Z | Columbus Crew vs Inter Miami (usa.mls) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-28T03:00:00Z | Real Salt Lake vs Vancouver Whitecaps (usa.mls) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-28T14:30:00Z | Hamburger SV vs Bayern Munich (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -71,7 +70,7 @@ model board generated 2026-11-27T22:36:04.559085Z · simulations this update: 0 
 | 2026-11-29T21:30:00Z | Internacional vs Red Bull Bragantino (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-29T21:30:00Z | Mirassol vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (103; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (104; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -95,13 +94,13 @@ model board generated 2026-11-27T22:36:04.559085Z · simulations this update: 0 
 | Real Madrid vs Deportivo Alavés | Result: home | no | 0.1300 | 0.336 [0.169, 0.512] | +0.198 | +0.079 | 0.2 | - | * | RESEARCH_CANDIDATE |
 | Deportivo La Coruña vs FC Barcelona | Result: away | no | 0.2000 | 0.445 [0.204, 0.685] | +0.234 | +0.075 | 0.27 | - | * | RESEARCH_CANDIDATE |
 | Everton vs Liverpool | Result: away | no | 0.4600 | 0.661 [0.481, 0.827] | +0.184 | +0.074 | 0.53 | - | * | RESEARCH_CANDIDATE |
-| Columbus Crew vs Inter Miami | First-half result: away | no | 0.6700 | 0.808 [0.718, 0.892] | +0.123 | +0.073 | 0.74 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | First team to score: away | no | 0.5100 | 0.668 [0.558, 0.772] | +0.140 | +0.073 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Nashville SC | Total goals over 3.5 | no | 0.5800 | 0.741 [0.610, 0.854] | +0.144 | +0.068 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Nashville SC | btts | no | 0.3400 | 0.496 [0.382, 0.609] | +0.141 | +0.066 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Nashville SC | Total goals over 2.5 | no | 0.3600 | 0.534 [0.387, 0.672] | +0.157 | +0.065 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | home wins by more than 2.5 | yes | 0.0900 | 0.256 [0.132, 0.405] | +0.160 | +0.064 | 0.15 | - |  | RESEARCH_CANDIDATE |
 | Sassuolo vs Napoli | Result: away | no | 0.4200 | 0.621 [0.432, 0.795] | +0.184 | +0.063 | 0.48 | - | * | RESEARCH_CANDIDATE |
+| Columbus Crew vs Inter Miami | First-half result: away | no | 0.6800 | 0.808 [0.718, 0.892] | +0.113 | +0.063 | 0.74 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 2.5 | no | 0.4300 | 0.600 [0.445, 0.745] | +0.153 | +0.062 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 3.5 | no | 0.6500 | 0.794 [0.669, 0.900] | +0.128 | +0.062 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | btts | no | 0.3700 | 0.519 [0.403, 0.632] | +0.133 | +0.058 | 0.42 | - | * | RESEARCH_CANDIDATE |
@@ -119,13 +118,15 @@ model board generated 2026-11-27T22:36:04.559085Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1282
-action_NO_QUOTE: 175
-action_RESEARCH_CANDIDATE: 103
-contract_sides: 1560
-fixtures: 58
+action_NO_EDGE: 1258
+action_NO_QUOTE: 170
+action_RESEARCH_CANDIDATE: 104
+contract_sides: 1532
+fixtures: 57
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
+
+Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
