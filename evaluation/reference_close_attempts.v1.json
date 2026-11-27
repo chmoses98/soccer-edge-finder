@@ -1,11 +1,11 @@
 {
  "counts": {
-  "PINNACLE_VALID_CLOSE": 158,
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 695,
-  "NO_SPORT_KEY": 39,
   "MISSED_DISPATCHER_CLOSE": 118,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 700,
+  "PINNACLE_VALID_CLOSE": 160,
   "CLOSE_BLOCKED_BUDGET": 31,
-  "PINNACLE_QUOTED_NOTHING": 3
+  "PINNACLE_QUOTED_NOTHING": 3,
+  "NO_SPORT_KEY": 39
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.belgrano": {
@@ -1653,6 +1653,11 @@
    "close_horizon_delivered": true,
    "batch_id": null
   },
+  "fx:eng.premier_league:2026-27:eng.nottm_forest:eng.chelsea": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
   "fx:eng.premier_league:2026-27:eng.nottm_forest:eng.man_city": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -1924,6 +1929,11 @@
    "batch_id": null
   },
   "fx:esp.la_liga:2026-27:esp.levante:esp.elche": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:esp.la_liga:2026-27:esp.levante:esp.racing_santander": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
@@ -2382,6 +2392,16 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:fra.ligue_1:2026-27:fra.brest:fra.paris_fc": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:fra.ligue_1:2026-27:fra.brest:fra.paris_fc:matchday_12": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261127T193150Z"
   },
   "fx:fra.ligue_1:2026-27:fra.le_havre:fra.auxerre": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -3263,6 +3283,16 @@
    "close_horizon_delivered": true,
    "batch_id": "kd-20261121T141806Z"
   },
+  "fx:ger.bundesliga:2026-27:ger.werder_bremen:ger.gladbach": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:ger.bundesliga:2026-27:ger.werder_bremen:ger.gladbach:matchday_11": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261127T191500Z"
+  },
   "fx:ger.bundesliga:2026-27:ger.werder_bremen:ger.hamburg": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
@@ -3894,6 +3924,11 @@
    "batch_id": null
   },
   "fx:ita.serie_a:2026-27:ita.udinese:ita.roma": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:ita.serie_a:2026-27:ita.venezia:ita.bologna": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
