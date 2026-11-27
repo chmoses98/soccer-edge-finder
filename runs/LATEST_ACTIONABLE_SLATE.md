@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261127T161143Z-c76e21` · generated 2026-11-27T16:11:43.809235Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261127T162649Z-71df12` · generated 2026-11-27T16:26:49.550737Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-27T16:08:04.498870Z (CURRENT at publish; CURRENT until 2026-11-27T16:28:04.498870Z, STALE after 2026-11-27T16:38:04.498870Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-27T16:23:06.035072Z (CURRENT at publish; CURRENT until 2026-11-27T16:43:06.035072Z, STALE after 2026-11-27T16:53:06.035072Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-27T15:26:44.931771Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.67s
+model board generated 2026-11-27T16:26:48.702776Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.70s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -59,6 +59,7 @@ model board generated 2026-11-27T15:26:44.931771Z · simulations this update: 0 
 | 2026-11-29T12:00:00Z | Udinese vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-29T14:00:00Z | AJ Auxerre vs Marseille (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-29T14:30:00Z | SC Freiburg vs RB Leipzig (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-29T16:15:00Z | Toulouse vs Rennes (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
 ## Candidates on CURRENT prices (104; RESEARCH_ONLY = analysis, never a bet)
 
@@ -108,11 +109,11 @@ model board generated 2026-11-27T15:26:44.931771Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1118
+action_NO_EDGE: 1124
 action_NO_QUOTE: 214
 action_RESEARCH_CANDIDATE: 104
-contract_sides: 1436
-fixtures: 47
+contract_sides: 1442
+fixtures: 48
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
