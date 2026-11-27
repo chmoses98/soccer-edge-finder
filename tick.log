@@ -85,3 +85,99 @@ These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW
 - SC Paderborn 07 vs Schalke 04 (Bundesliga) 2026-11-28T14:30:00Z · markets 3/3 evaluated · lineups unknown · xG 1.15-0.79 · 1X2 43%/31%/26%
 - VfB Stuttgart vs Eintracht Frankfurt (Bundesliga) 2026-11-28T17:30:00Z · markets 3/3 evaluated · lineups unknown · xG 2.52-1.19 · 1X2 64%/18%/18%
 - Werder Bremen vs Borussia Mönchengladbach (Bundesliga) 2026-11-27T19:30:00Z · markets 3/3 evaluated · lineups unknown · xG 2.05-1.12 · 1X2 57%/21%/22%
+
+{
+  "outputs": {
+    "json": "work/runs/_pending/run_output.v1.json",
+    "md": "work/runs/_pending/RUN_SOCCER.md",
+    "contracts": "work/runs/_pending/priced_contracts.json",
+    "coverage": "work/runs/_pending/coverage.json",
+    "diagnostics": "work/runs/_pending/coverage_diagnostics.json"
+  },
+  "simulated": [
+    "fx:mex.liga_mx:2026:mex.america:mex.monterrey",
+    "fx:usa.mls:2026:usa.portland_timbers:usa.fc_dallas",
+    "fx:fra.ligue_1:2026-27:fra.angers:fra.lens:matchday_12",
+    "fx:fra.ligue_1:2026-27:fra.le_havre:fra.strasbourg:matchday_12",
+    "fx:fra.ligue_1:2026-27:fra.le_mans:fra.lille:matchday_12",
+    "fx:fra.ligue_1:2026-27:fra.nice:fra.troyes:matchday_12",
+    "fx:fra.ligue_1:2026-27:fra.psg:fra.lorient:matchday_12",
+    "fx:fra.ligue_1:2026-27:fra.brest:fra.paris_fc:matchday_12",
+    "fx:eng.premier_league:2026-27:eng.ipswich:eng.aston_villa:matchday_12",
+    "fx:eng.premier_league:2026-27:eng.leeds:eng.coventry:matchday_12",
+    "fx:eng.premier_league:2026-27:eng.man_united:eng.brentford:matchday_12",
+    "fx:eng.premier_league:2026-27:eng.nottm_forest:eng.chelsea:matchday_12",
+    "fx:ger.bundesliga:2026-27:ger.mainz:ger.union_berlin:matchday_11",
+    "fx:ger.bundesliga:2026-27:ger.hamburg:ger.bayern:matchday_11",
+    "fx:ger.bundesliga:2026-27:ger.koln:ger.elversberg:matchday_11",
+    "fx:ger.bundesliga:2026-27:ger.paderborn:ger.schalke:matchday_11",
+    "fx:ger.bundesliga:2026-27:ger.stuttgart:ger.frankfurt:matchday_11",
+    "fx:ger.bundesliga:2026-27:ger.werder_bremen:ger.gladbach:matchday_11"
+  ],
+  "repriced": [],
+  "archived_records": 206
+}
+[dispatch] holding 6.4 min (next window opens in 568.5 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261127T080135Z",
+  "complete": true,
+  "discovered": 5478,
+  "written": 584,
+  "path": "work/snapshots/2026-11-27/cap-20261127T080135Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261127T080136Z-46fe1a", "mode": "reprice_only", "fixtures": 34, "contract_sides": 1468, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.61, "price_changes_vs_previous": 16}
+[dispatch] holding 7.9 min (next window opens in 554.9 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261127T081637Z",
+  "complete": true,
+  "discovered": 5478,
+  "written": 1162,
+  "path": "work/snapshots/2026-11-27/cap-20261127T081637Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261127T081639Z-82141d", "mode": "reprice_only", "fixtures": 34, "contract_sides": 1468, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.608, "price_changes_vs_previous": 84}
+[dispatch] holding 7.8 min (next window opens in 539.9 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261127T083135Z",
+  "complete": true,
+  "discovered": 5478,
+  "written": 767,
+  "path": "work/snapshots/2026-11-27/cap-20261127T083135Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261127T083136Z-2e6e71", "mode": "reprice_only", "fixtures": 34, "contract_sides": 1468, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.603, "price_changes_vs_previous": 32}
+[dispatch] holding 7.8 min (next window opens in 524.8 min)
+[dispatch] holding 0.5 min (next window opens in 517.0 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261127T084706Z",
+  "complete": true,
+  "discovered": 5478,
+  "written": 686,
+  "path": "work/snapshots/2026-11-27/cap-20261127T084706Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261127T084707Z-f41d1b", "mode": "reprice_only", "fixtures": 34, "contract_sides": 1468, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.806, "price_changes_vs_previous": 44}
+[dispatch] holding 7.8 min (next window opens in 509.3 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261127T090206Z",
+  "complete": true,
+  "discovered": 5478,
+  "written": 690,
+  "path": "work/snapshots/2026-11-27/cap-20261127T090206Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261127T090207Z-bf39d3", "mode": "reprice_only", "fixtures": 34, "contract_sides": 1468, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.622, "price_changes_vs_previous": 48}
+[dispatch] holding 3.9 min (next window opens in 492.0 min)
+{
+ "batches": 0,
+ "horizons_delivered": 0,
+ "missed_states": {},
+ "paid_calls": 0,
+ "credits_spent": 0,
+ "end_reason": "link_time_limit",
+ "chain_continue": true,
+ "delivered_total": 4661,
+ "missed_total": 605,
+ "delivery_rate_total": 0.8851120394986707
+}
