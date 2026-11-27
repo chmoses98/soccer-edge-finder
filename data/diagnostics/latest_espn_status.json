@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-26T23:04:44.910552+00:00",
-  "events": 561,
+  "as_of": "2026-11-27T08:46:08.119809+00:00",
+  "events": 564,
   "events_skipped_unmapped": 323,
-  "fixtures_mapped": 238,
+  "fixtures_mapped": 241,
   "health": {
     "reasons": [
       "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=71"
+      "weather_stopped:consecutive_failures:skipped=78"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 95,
-    "events": 97,
+    "captured": 80,
+    "events": 80,
     "failures": [],
-    "published_post": 67,
+    "published_post": 45,
     "published_pre_kickoff": 0,
-    "unchanged": 2,
-    "unpublished": 30
+    "unchanged": 0,
+    "unpublished": 35
   },
   "map_proposals": {
     "bel.1": {
@@ -103,6 +103,25 @@
       "unresolved": {
         "7853": "AGF",
         "909": "F.C. K\u00f8benhavn"
+      }
+    },
+    "eng.3": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "344": "Wycombe Wanderers",
+        "387": "Bradford City",
+        "390": "Milton Keynes Dons"
+      }
+    },
+    "eng.fa": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "133370": "Wimborne Town",
+        "344": "Wycombe Wanderers",
+        "387": "Bradford City",
+        "390": "Milton Keynes Dons"
       }
     },
     "esp.2": {
@@ -180,11 +199,13 @@
     },
     "fra.2": {
       "ambiguous": {},
-      "proposed": {
-        "165": "fra.nantes"
-      },
+      "proposed": {},
       "unresolved": {
+        "10678": "Pau",
+        "18066": "Annecy",
         "272": "Sochaux",
+        "3171": "Clermont Foot",
+        "3266": "Stade Laval",
         "6994": "Grenoble"
       }
     },
@@ -385,7 +406,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 23,
+  "results_appended": 3,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -401,7 +422,6 @@
     "eng.4",
     "eng.5",
     "esp.2",
-    "esp.w.1",
     "fra.2",
     "ger.2",
     "ita.2",
@@ -433,6 +453,7 @@
     "130": "Kaiserslautern",
     "13083": "Hapoel Be'er",
     "131470": "Reus FC Reddis",
+    "133370": "Wimborne Town",
     "134063": "Chassieu Declines FC",
     "134064": "Olympique Charleville Prix AM",
     "134070": "Rochefort FC",
@@ -521,11 +542,14 @@
     "3266": "Stade Laval",
     "3267": "AS Nancy Lorraine",
     "3335": "SC Amiens",
+    "344": "Wycombe Wanderers",
     "3747": "Granada",
     "3752": "Eibar",
     "3788": "Sporting Gij\u00f3n",
     "3812": "SV Darmstadt 98",
     "3842": "C\u00e1diz",
+    "387": "Bradford City",
+    "390": "Milton Keynes Dons",
     "4050": "Cremonese",
     "4438": "Castell\u00f3n",
     "4515": "Mirand\u00e9s",
@@ -576,17 +600,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 9,
-    "events": 83,
+    "captured": 13,
+    "events": 94,
     "failures": [
-      "401878933: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Charleroi&count=5&language=en&f",
-      "401878926: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Sint-Truiden&count=5&language=e",
-      "401878928: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Antwerp&count=5&language=en&for"
+      "401878927: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Liege&count=5&language=en&forma",
+      "401878925: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Saint-Gilles&count=5&language=e",
+      "401841337: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Rio%20de%20Janeiro&count=5&lang"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 71,
+    "skipped": 78,
     "stopped": "consecutive_failures"
   }
 }
