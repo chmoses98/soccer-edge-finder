@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261127T165648Z-8eb71d` · generated 2026-11-27T16:56:48.410790Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261127T171153Z-a29bbe` · generated 2026-11-27T17:11:53.003361Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-27T16:53:09.280425Z (CURRENT at publish; CURRENT until 2026-11-27T17:13:09.280425Z, STALE after 2026-11-27T17:23:09.280425Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-27T17:08:09.316684Z (CURRENT at publish; CURRENT until 2026-11-27T17:28:09.316684Z, STALE after 2026-11-27T17:38:09.316684Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-27T16:41:48.579043Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.71s
+model board generated 2026-11-27T17:11:51.865980Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.54s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -54,6 +54,7 @@ model board generated 2026-11-27T16:41:48.579043Z · simulations this update: 0 
 | 2026-11-29T12:00:00Z | Valencia vs Osasuna (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-29T12:00:00Z | Frosinone vs Parma (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-29T12:00:00Z | Inter Milan vs Genoa (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-29T12:00:00Z | AS Roma vs Monza (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-29T12:00:00Z | Sassuolo vs Napoli (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-29T12:00:00Z | Torino vs Lazio (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-29T12:00:00Z | Udinese vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -89,15 +90,15 @@ model board generated 2026-11-27T16:41:48.579043Z · simulations this update: 0 
 | Sassuolo vs Napoli | Result: away | no | 0.4200 | 0.621 [0.432, 0.795] | +0.184 | +0.063 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 2.5 | no | 0.4300 | 0.600 [0.445, 0.745] | +0.153 | +0.062 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 3.5 | no | 0.6500 | 0.794 [0.669, 0.900] | +0.128 | +0.062 | 0.71 | - |  | RESEARCH_CANDIDATE |
+| Columbus Crew vs Inter Miami | home wins by more than 1.5 | yes | 0.2300 | 0.407 [0.254, 0.574] | +0.164 | +0.059 | 0.28 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | btts | no | 0.3700 | 0.519 [0.403, 0.632] | +0.133 | +0.058 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | away wins by more than 2.5 | no | 0.9100 | 0.979 [0.959, 0.994] | +0.064 | +0.056 | 0.96 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.6200 | 0.764 [0.637, 0.872] | +0.127 | +0.055 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Everton vs Liverpool | Result: home | yes | 0.2100 | 0.400 [0.221, 0.596] | +0.179 | +0.053 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.4000 | 0.561 [0.413, 0.700] | +0.145 | +0.052 | 0.45 | - |  | RESEARCH_CANDIDATE |
-| Columbus Crew vs Inter Miami | away wins by more than 1.5 | no | 0.8300 | 0.922 [0.861, 0.969] | +0.082 | +0.051 | 0.88 | - | * | RESEARCH_CANDIDATE |
+| Columbus Crew vs Inter Miami | away wins by more than 1.5 | no | 0.8300 | 0.922 [0.861, 0.969] | +0.082 | +0.051 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away team total over 2.5 | no | 0.7600 | 0.871 [0.789, 0.940] | +0.098 | +0.050 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 1.5 | no | 0.2000 | 0.344 [0.215, 0.477] | +0.133 | +0.049 | 0.24 | - |  | RESEARCH_CANDIDATE |
-| Columbus Crew vs Inter Miami | home wins by more than 1.5 | yes | 0.2400 | 0.407 [0.254, 0.574] | +0.154 | +0.049 | 0.28 | - |  | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Nashville SC | Total goals over 4.5 | no | 0.7700 | 0.875 [0.787, 0.946] | +0.093 | +0.046 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 4.5 | no | 0.8200 | 0.908 [0.831, 0.967] | +0.078 | +0.042 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | Real Madrid vs Deportivo Alavés | Result: draw | yes | 0.0900 | 0.187 [0.107, 0.263] | +0.091 | +0.042 | 0.12 | - |  | RESEARCH_CANDIDATE |
@@ -110,11 +111,11 @@ model board generated 2026-11-27T16:41:48.579043Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1133
-action_NO_QUOTE: 188
+action_NO_EDGE: 1127
+action_NO_QUOTE: 200
 action_RESEARCH_CANDIDATE: 105
-contract_sides: 1426
-fixtures: 49
+contract_sides: 1432
+fixtures: 50
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
