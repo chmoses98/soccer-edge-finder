@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261127T024223Z-0e155b` · generated 2026-11-27T02:42:23.605126Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
+slate `slate-20261127T025729Z-03bb54` · generated 2026-11-27T02:57:29.647519Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-27T02:38:43.785790Z (CURRENT at publish; CURRENT until 2026-11-27T02:58:43.785790Z, STALE after 2026-11-27T03:08:43.785790Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-27T02:53:45.487977Z (CURRENT at publish; CURRENT until 2026-11-27T03:13:45.487977Z, STALE after 2026-11-27T03:23:45.487977Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-27T02:12:34.790307Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.48s
+model board generated 2026-11-27T02:12:34.790307Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.35s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -12,7 +12,7 @@ model board generated 2026-11-27T02:12:34.790307Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-27T03:10:00Z | León vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | AGING entry | CURRENT | 79 | 1 |
+| 2026-11-27T03:10:00Z | León vs Cruz Azul (mex.liga_mx) | VALID (CURRENT) | unconfirmed (CURRENT) | CURRENT close | CURRENT | 79 | 1 |
 | 2026-11-27T19:30:00Z | Werder Bremen vs Borussia Mönchengladbach (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-27T19:45:00Z | Brest vs Paris FC (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-27T23:00:00Z | Fluminense vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 29 | 0 |
@@ -46,7 +46,7 @@ model board generated 2026-11-27T02:12:34.790307Z · simulations this update: 0 
 | 2026-11-29T01:00:00Z | Atlas vs Toluca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-29T01:30:00Z | Los Angeles FC vs St. Louis City SC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (85; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (86; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -75,9 +75,9 @@ model board generated 2026-11-27T02:12:34.790307Z · simulations this update: 0 
 | FC Cincinnati vs Nashville SC | Total goals over 2.5 | no | 0.3600 | 0.534 [0.387, 0.672] | +0.157 | +0.065 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 4.5 | no | 0.7700 | 0.890 [0.807, 0.955] | +0.108 | +0.065 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | First-half result: away | no | 0.6800 | 0.808 [0.718, 0.892] | +0.113 | +0.063 | 0.74 | - | * | RESEARCH_CANDIDATE |
-| Columbus Crew vs Inter Miami | First team to score: away | no | 0.5200 | 0.668 [0.558, 0.772] | +0.130 | +0.063 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 3.5 | no | 0.6500 | 0.794 [0.669, 0.900] | +0.128 | +0.062 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 1.5 | no | 0.1600 | 0.309 [0.191, 0.430] | +0.140 | +0.060 | 0.21 | - |  | RESEARCH_CANDIDATE |
+| Columbus Crew vs Inter Miami | First team to score: away | no | 0.5300 | 0.668 [0.558, 0.772] | +0.120 | +0.053 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | First team to score: home | yes | 0.4900 | 0.634 [0.518, 0.752] | +0.127 | +0.051 | 0.54 | - |  | RESEARCH_CANDIDATE |
 | Everton vs Liverpool | Result: home | yes | 0.2100 | 0.406 [0.218, 0.612] | +0.184 | +0.050 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 1.5 | no | 0.2000 | 0.344 [0.215, 0.477] | +0.133 | +0.049 | 0.24 | - |  | RESEARCH_CANDIDATE |
@@ -94,9 +94,9 @@ model board generated 2026-11-27T02:12:34.790307Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 893
-action_NO_QUOTE: 332
-action_RESEARCH_CANDIDATE: 85
+action_NO_EDGE: 895
+action_NO_QUOTE: 329
+action_RESEARCH_CANDIDATE: 86
 contract_sides: 1310
 fixtures: 33
 fixtures_model_invalidated: 0
