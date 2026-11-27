@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261127T015026Z-1fd191` · generated 2026-11-27T01:50:26.921058Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261127T020527Z-8de796` · generated 2026-11-27T02:05:27.036924Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-27T01:46:48.848095Z (CURRENT at publish; CURRENT until 2026-11-27T02:06:48.848095Z, STALE after 2026-11-27T02:16:48.848095Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-27T02:01:48.875579Z (CURRENT at publish; CURRENT until 2026-11-27T02:21:48.875579Z, STALE after 2026-11-27T02:31:48.875579Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-27T01:35:26.951511Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.35s
 
@@ -74,10 +74,10 @@ model board generated 2026-11-27T01:35:26.951511Z · simulations this update: 0 
 | FC Cincinnati vs Nashville SC | btts | no | 0.3400 | 0.496 [0.382, 0.609] | +0.141 | +0.066 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 4.5 | no | 0.7700 | 0.890 [0.807, 0.955] | +0.108 | +0.065 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | First-half result: away | no | 0.6800 | 0.808 [0.718, 0.892] | +0.113 | +0.063 | 0.74 | - | * | RESEARCH_CANDIDATE |
+| Columbus Crew vs Inter Miami | First team to score: away | no | 0.5200 | 0.668 [0.558, 0.772] | +0.130 | +0.063 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 3.5 | no | 0.6500 | 0.794 [0.669, 0.900] | +0.128 | +0.062 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 1.5 | no | 0.1600 | 0.309 [0.191, 0.430] | +0.140 | +0.060 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away team total over 0.5 | no | 0.1700 | 0.307 [0.207, 0.413] | +0.127 | +0.056 | 0.22 | - |  | RESEARCH_CANDIDATE |
-| Columbus Crew vs Inter Miami | First team to score: away | no | 0.5300 | 0.668 [0.558, 0.772] | +0.120 | +0.053 | 0.58 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | First team to score: home | yes | 0.4900 | 0.634 [0.518, 0.752] | +0.127 | +0.051 | 0.54 | - |  | RESEARCH_CANDIDATE |
 | Everton vs Liverpool | Result: home | yes | 0.2100 | 0.406 [0.218, 0.612] | +0.184 | +0.050 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 1.5 | no | 0.2000 | 0.344 [0.215, 0.477] | +0.133 | +0.049 | 0.24 | - |  | RESEARCH_CANDIDATE |
@@ -94,15 +94,13 @@ model board generated 2026-11-27T01:35:26.951511Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 906
-action_NO_QUOTE: 322
+action_NO_EDGE: 905
+action_NO_QUOTE: 323
 action_RESEARCH_CANDIDATE: 82
 contract_sides: 1310
 fixtures: 33
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
-
-Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
