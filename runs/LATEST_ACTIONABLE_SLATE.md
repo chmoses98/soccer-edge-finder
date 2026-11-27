@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261127T130706Z-f06822` · generated 2026-11-27T13:07:06.061350Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261127T132204Z-db6cf2` · generated 2026-11-27T13:22:04.278486Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-27T13:03:22.245627Z (CURRENT at publish; CURRENT until 2026-11-27T13:23:22.245627Z, STALE after 2026-11-27T13:33:22.245627Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-27T13:18:24.857997Z (CURRENT at publish; CURRENT until 2026-11-27T13:38:24.857997Z, STALE after 2026-11-27T13:48:24.857997Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-27T13:07:04.763995Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.69s
+model board generated 2026-11-27T13:07:04.763995Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.93s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -42,14 +42,14 @@ model board generated 2026-11-27T13:07:04.763995Z · simulations this update: 1 
 | 2026-11-28T21:30:00Z | Philadelphia Union vs New England Revolution (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-28T23:30:00Z | FC Cincinnati vs Nashville SC (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-29T00:00:00Z | Botafogo vs Bahia (bra.serie_a) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-11-29T01:00:00Z | Atlas vs Toluca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-11-29T01:00:00Z | Atlas vs Toluca (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-29T01:30:00Z | Los Angeles FC vs St. Louis City SC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-29T03:10:00Z | Club América vs Monterrey (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-29T03:30:00Z | Portland Timbers vs FC Dallas (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-29T12:00:00Z | Valencia vs Osasuna (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-29T12:00:00Z | Udinese vs Fiorentina (ita.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 
-## Candidates on CURRENT prices (94; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (93; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -72,17 +72,17 @@ model board generated 2026-11-27T13:07:04.763995Z · simulations this update: 1 
 | Charlotte FC vs Chicago Fire | home wins by more than 2.5 | yes | 0.0900 | 0.256 [0.132, 0.405] | +0.160 | +0.064 | 0.15 | - |  | RESEARCH_CANDIDATE |
 | Everton vs Liverpool | Result: home | yes | 0.2000 | 0.400 [0.221, 0.596] | +0.189 | +0.063 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 3.5 | no | 0.6500 | 0.794 [0.669, 0.900] | +0.128 | +0.062 | 0.71 | - |  | RESEARCH_CANDIDATE |
+| Columbus Crew vs Inter Miami | away team total over 1.5 | no | 0.5000 | 0.659 [0.533, 0.778] | +0.142 | +0.060 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | btts | no | 0.3700 | 0.519 [0.403, 0.632] | +0.133 | +0.058 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | away wins by more than 2.5 | no | 0.9100 | 0.979 [0.959, 0.994] | +0.064 | +0.056 | 0.96 | - |  | RESEARCH_CANDIDATE |
-| Real Salt Lake vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.4000 | 0.561 [0.413, 0.700] | +0.145 | +0.052 | 0.45 | - | * | RESEARCH_CANDIDATE |
+| Real Salt Lake vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.6200 | 0.764 [0.637, 0.872] | +0.127 | +0.055 | 0.67 | - | * | RESEARCH_CANDIDATE |
+| Real Salt Lake vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.4000 | 0.561 [0.413, 0.700] | +0.145 | +0.052 | 0.45 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away wins by more than 1.5 | no | 0.8300 | 0.922 [0.861, 0.969] | +0.082 | +0.051 | 0.88 | - |  | RESEARCH_CANDIDATE |
-| Columbus Crew vs Inter Miami | away team total over 1.5 | no | 0.5100 | 0.659 [0.533, 0.778] | +0.132 | +0.050 | 0.56 | - | * | RESEARCH_CANDIDATE |
+| Columbus Crew vs Inter Miami | away team total over 2.5 | no | 0.7600 | 0.871 [0.789, 0.940] | +0.098 | +0.050 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 1.5 | no | 0.2000 | 0.344 [0.215, 0.477] | +0.133 | +0.049 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Nashville SC | Total goals over 4.5 | no | 0.7700 | 0.875 [0.787, 0.946] | +0.093 | +0.046 | 0.81 | - |  | RESEARCH_CANDIDATE |
-| Real Salt Lake vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.6300 | 0.764 [0.637, 0.872] | +0.118 | +0.045 | 0.67 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 4.5 | no | 0.8200 | 0.908 [0.831, 0.967] | +0.078 | +0.042 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | Total goals over 2.5 | no | 0.4000 | 0.555 [0.402, 0.703] | +0.138 | +0.041 | 0.44 | - | * | RESEARCH_CANDIDATE |
-| Columbus Crew vs Inter Miami | away team total over 2.5 | no | 0.7700 | 0.871 [0.789, 0.940] | +0.089 | +0.041 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Nashville SC | Total goals over 1.5 | no | 0.1600 | 0.286 [0.175, 0.399] | +0.117 | +0.040 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | btts | no | 0.3800 | 0.513 [0.393, 0.628] | +0.116 | +0.040 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | home wins by more than 2.5 | yes | 0.1000 | 0.230 [0.111, 0.375] | +0.124 | +0.037 | 0.13 | - |  | RESEARCH_CANDIDATE |
@@ -97,9 +97,9 @@ model board generated 2026-11-27T13:07:04.763995Z · simulations this update: 1 
 ## Counts
 
 ```
-action_NO_EDGE: 1044
-action_NO_QUOTE: 320
-action_RESEARCH_CANDIDATE: 94
+action_NO_EDGE: 1056
+action_NO_QUOTE: 309
+action_RESEARCH_CANDIDATE: 93
 contract_sides: 1458
 fixtures: 36
 fixtures_model_invalidated: 0
