@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261127T224844Z-95bcf4` · generated 2026-11-27T22:48:44.370153Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261127T225613Z-cd5d20` · generated 2026-11-27T22:56:13.278735Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-27T22:45:00.141006Z (CURRENT at publish; CURRENT until 2026-11-27T23:05:00.141006Z, STALE after 2026-11-27T23:15:00.141006Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-27T22:52:30.516501Z (CURRENT at publish; CURRENT until 2026-11-27T23:12:30.516501Z, STALE after 2026-11-27T23:22:30.516501Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-27T22:36:04.559085Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.77s
+model board generated 2026-11-27T22:36:04.559085Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.60s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -13,8 +13,8 @@ model board generated 2026-11-27T22:36:04.559085Z · simulations this update: 0 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
 | 2026-11-27T23:00:00Z | Fluminense vs Cruzeiro (bra.serie_a) | VALID (CURRENT) | confirmed (CURRENT) | CURRENT close | CURRENT | 14 | 0 |
-| 2026-11-28T01:00:00Z | Columbus Crew vs Inter Miami (usa.mls) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-11-28T03:00:00Z | Real Salt Lake vs Vancouver Whitecaps (usa.mls) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-11-28T01:00:00Z | Columbus Crew vs Inter Miami (usa.mls) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-11-28T03:00:00Z | Real Salt Lake vs Vancouver Whitecaps (usa.mls) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-28T14:30:00Z | Hamburger SV vs Bayern Munich (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T14:30:00Z | 1. FC Köln vs SV Elversberg (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T14:30:00Z | Mainz 05 vs Union Berlin (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -87,8 +87,8 @@ model board generated 2026-11-27T22:36:04.559085Z · simulations this update: 0 
 | Charlotte FC vs Chicago Fire | First team to score: away | no | 0.5100 | 0.692 [0.578, 0.792] | +0.165 | +0.102 | 0.61 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | home wins by more than 1.5 | yes | 0.1900 | 0.407 [0.254, 0.574] | +0.206 | +0.101 | 0.28 | - | * | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | away wins by more than 1.5 | no | 0.8000 | 0.935 [0.885, 0.974] | +0.124 | +0.100 | 0.9 | - |  | RESEARCH_CANDIDATE |
-| Columbus Crew vs Inter Miami | away team total over 1.5 | no | 0.4600 | 0.659 [0.533, 0.778] | +0.182 | +0.100 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | btts | no | 0.4000 | 0.582 [0.469, 0.691] | +0.165 | +0.094 | 0.49 | - | * | RESEARCH_CANDIDATE |
+| Columbus Crew vs Inter Miami | away team total over 1.5 | no | 0.4700 | 0.659 [0.533, 0.778] | +0.172 | +0.090 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Elche vs Atlético Madrid | Result: home | yes | 0.1400 | 0.357 [0.183, 0.549] | +0.209 | +0.088 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away wins by more than 1.5 | no | 0.8000 | 0.922 [0.861, 0.969] | +0.110 | +0.079 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away team total over 2.5 | no | 0.7300 | 0.871 [0.789, 0.940] | +0.127 | +0.079 | 0.81 | - |  | RESEARCH_CANDIDATE |
@@ -102,16 +102,16 @@ model board generated 2026-11-27T22:36:04.559085Z · simulations this update: 0 
 | FC Cincinnati vs Nashville SC | Total goals over 2.5 | no | 0.3600 | 0.534 [0.387, 0.672] | +0.157 | +0.065 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | home wins by more than 2.5 | yes | 0.0900 | 0.256 [0.132, 0.405] | +0.160 | +0.064 | 0.15 | - |  | RESEARCH_CANDIDATE |
 | Sassuolo vs Napoli | Result: away | no | 0.4200 | 0.621 [0.432, 0.795] | +0.184 | +0.063 | 0.48 | - | * | RESEARCH_CANDIDATE |
-| Columbus Crew vs Inter Miami | First-half result: home | yes | 0.3100 | 0.469 [0.348, 0.602] | +0.144 | +0.063 | 0.37 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 2.5 | no | 0.4300 | 0.600 [0.445, 0.745] | +0.153 | +0.062 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 3.5 | no | 0.6500 | 0.794 [0.669, 0.900] | +0.128 | +0.062 | 0.71 | - |  | RESEARCH_CANDIDATE |
-| Columbus Crew vs Inter Miami | Second-half result: away | no | 0.6700 | 0.804 [0.698, 0.892] | +0.118 | +0.061 | 0.73 | - | * | RESEARCH_CANDIDATE |
-| Columbus Crew vs Inter Miami | First team to score: home | yes | 0.4800 | 0.634 [0.518, 0.752] | +0.137 | +0.061 | 0.54 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | btts | no | 0.3700 | 0.519 [0.403, 0.632] | +0.133 | +0.058 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away team total over 0.5 | no | 0.1700 | 0.307 [0.207, 0.413] | +0.127 | +0.056 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | away wins by more than 2.5 | no | 0.9100 | 0.979 [0.959, 0.994] | +0.064 | +0.056 | 0.96 | - |  | RESEARCH_CANDIDATE |
-| Columbus Crew vs Inter Miami | Second-half result: home | yes | 0.3500 | 0.514 [0.378, 0.652] | +0.148 | +0.054 | 0.4 | - |  | RESEARCH_CANDIDATE |
+| Columbus Crew vs Inter Miami | Second-half result: home | yes | 0.3500 | 0.514 [0.378, 0.652] | +0.148 | +0.054 | 0.4 | - | * | RESEARCH_CANDIDATE |
+| Columbus Crew vs Inter Miami | First-half result: home | yes | 0.3200 | 0.469 [0.348, 0.602] | +0.134 | +0.053 | 0.37 | - |  | RESEARCH_CANDIDATE |
 | Everton vs Liverpool | Result: home | yes | 0.2100 | 0.400 [0.221, 0.596] | +0.179 | +0.053 | 0.26 | - |  | RESEARCH_CANDIDATE |
+| Columbus Crew vs Inter Miami | Second-half result: away | no | 0.6800 | 0.804 [0.698, 0.892] | +0.109 | +0.051 | 0.73 | - |  | RESEARCH_CANDIDATE |
+| Columbus Crew vs Inter Miami | First team to score: home | yes | 0.4900 | 0.634 [0.518, 0.752] | +0.127 | +0.051 | 0.54 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 1.5 | no | 0.2000 | 0.344 [0.215, 0.477] | +0.133 | +0.049 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | home wins by more than 2.5 | yes | 0.0900 | 0.230 [0.111, 0.375] | +0.134 | +0.047 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Nashville SC | Total goals over 4.5 | no | 0.7700 | 0.875 [0.787, 0.946] | +0.093 | +0.046 | 0.81 | - |  | RESEARCH_CANDIDATE |
@@ -119,8 +119,8 @@ model board generated 2026-11-27T22:36:04.559085Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1281
-action_NO_QUOTE: 176
+action_NO_EDGE: 1282
+action_NO_QUOTE: 175
 action_RESEARCH_CANDIDATE: 103
 contract_sides: 1560
 fixtures: 58
