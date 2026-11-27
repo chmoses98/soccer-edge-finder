@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261127T233347Z-890e69` · generated 2026-11-27T23:33:47.668945Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261127T234844Z-8ea671` · generated 2026-11-27T23:48:44.180490Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-27T23:30:04.289893Z (CURRENT at publish; CURRENT until 2026-11-27T23:50:04.289893Z, STALE after 2026-11-28T00:00:04.289893Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-27T23:45:04.321820Z (CURRENT at publish; CURRENT until 2026-11-28T00:05:04.321820Z, STALE after 2026-11-28T00:15:04.321820Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-27T23:18:14.480549Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.59s
+model board generated 2026-11-27T23:18:14.480549Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.79s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -109,18 +109,18 @@ model board generated 2026-11-27T23:18:14.480549Z · simulations this update: 0 
 | Columbus Crew vs Inter Miami | First team to score: home | yes | 0.4800 | 0.634 [0.518, 0.752] | +0.137 | +0.061 | 0.54 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | btts | no | 0.3700 | 0.519 [0.403, 0.632] | +0.133 | +0.058 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away team total over 0.5 | no | 0.1700 | 0.307 [0.207, 0.413] | +0.127 | +0.056 | 0.22 | - |  | RESEARCH_CANDIDATE |
+| FC Cincinnati vs Nashville SC | Total goals over 4.5 | no | 0.7600 | 0.875 [0.787, 0.946] | +0.102 | +0.056 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | away wins by more than 2.5 | no | 0.9100 | 0.979 [0.959, 0.994] | +0.064 | +0.056 | 0.96 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | Second-half result: home | yes | 0.3500 | 0.514 [0.378, 0.652] | +0.148 | +0.054 | 0.4 | - |  | RESEARCH_CANDIDATE |
 | Everton vs Liverpool | Result: home | yes | 0.2100 | 0.400 [0.221, 0.596] | +0.179 | +0.053 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 1.5 | no | 0.2000 | 0.344 [0.215, 0.477] | +0.133 | +0.049 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | home wins by more than 2.5 | yes | 0.0900 | 0.230 [0.111, 0.375] | +0.134 | +0.047 | 0.13 | - |  | RESEARCH_CANDIDATE |
-| FC Cincinnati vs Nashville SC | Total goals over 4.5 | no | 0.7700 | 0.875 [0.787, 0.946] | +0.093 | +0.046 | 0.81 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1282
-action_NO_QUOTE: 170
+action_NO_EDGE: 1283
+action_NO_QUOTE: 169
 action_RESEARCH_CANDIDATE: 108
 contract_sides: 1560
 fixtures: 58
