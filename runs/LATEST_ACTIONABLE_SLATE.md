@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261127T155643Z-7b89b3` · generated 2026-11-27T15:56:43.772774Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261127T161143Z-c76e21` · generated 2026-11-27T16:11:43.809235Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-27T15:53:04.465759Z (CURRENT at publish; CURRENT until 2026-11-27T16:13:04.465759Z, STALE after 2026-11-27T16:23:04.465759Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-27T16:08:04.498870Z (CURRENT at publish; CURRENT until 2026-11-27T16:28:04.498870Z, STALE after 2026-11-27T16:38:04.498870Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-27T15:26:44.931771Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.52s
+model board generated 2026-11-27T15:26:44.931771Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.67s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -91,7 +91,6 @@ model board generated 2026-11-27T15:26:44.931771Z · simulations this update: 0 
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.6200 | 0.764 [0.637, 0.872] | +0.127 | +0.055 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Everton vs Liverpool | Result: home | yes | 0.2100 | 0.400 [0.221, 0.596] | +0.179 | +0.053 | 0.26 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.4000 | 0.561 [0.413, 0.700] | +0.145 | +0.052 | 0.45 | - |  | RESEARCH_CANDIDATE |
-| Botafogo vs Bahia | btts | no | 0.3700 | 0.513 [0.393, 0.628] | +0.126 | +0.050 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away team total over 1.5 | no | 0.5100 | 0.659 [0.533, 0.778] | +0.132 | +0.050 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 1.5 | no | 0.2000 | 0.344 [0.215, 0.477] | +0.133 | +0.049 | 0.24 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | home wins by more than 1.5 | yes | 0.2400 | 0.407 [0.254, 0.574] | +0.154 | +0.049 | 0.28 | - | * | RESEARCH_CANDIDATE |
@@ -101,6 +100,7 @@ model board generated 2026-11-27T15:26:44.931771Z · simulations this update: 0 
 | Botafogo vs Bahia | Total goals over 2.5 | no | 0.4000 | 0.555 [0.402, 0.703] | +0.138 | +0.041 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away wins by more than 1.5 | no | 0.8400 | 0.922 [0.861, 0.969] | +0.072 | +0.041 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Nashville SC | Total goals over 1.5 | no | 0.1600 | 0.286 [0.175, 0.399] | +0.117 | +0.040 | 0.19 | - |  | RESEARCH_CANDIDATE |
+| Botafogo vs Bahia | btts | no | 0.3800 | 0.513 [0.393, 0.628] | +0.116 | +0.040 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 1.5 | no | 0.1800 | 0.309 [0.191, 0.430] | +0.119 | +0.040 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 4.5 | no | 0.8000 | 0.890 [0.807, 0.955] | +0.079 | +0.036 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | Udinese vs Fiorentina | Result: away | no | 0.5800 | 0.724 [0.560, 0.873] | +0.127 | +0.036 | 0.61 | - | * | RESEARCH_CANDIDATE |
