@@ -1392,3 +1392,244 @@ These pass the robust-edge bar but their model family is RESEARCH_ONLY or SHADOW
 
 ## Events
 - León vs Cruz Azul (Liga MX) 2026-11-27T03:10:00Z · markets 79/80 evaluated · lineups unknown · xG 1.47-1.48 · 1X2 38%/24%/38%
+
+{
+  "outputs": {
+    "json": "work/runs/_pending/run_output.v1.json",
+    "md": "work/runs/_pending/RUN_SOCCER.md",
+    "contracts": "work/runs/_pending/priced_contracts.json",
+    "coverage": "work/runs/_pending/coverage.json",
+    "diagnostics": "work/runs/_pending/coverage_diagnostics.json"
+  },
+  "simulated": [
+    "fx:mex.liga_mx:2026:mex.leon:mex.cruz_azul"
+  ],
+  "repriced": [],
+  "archived_records": 79
+}
+[dispatch] holding 6.3 min (next window opens in 19.6 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261127T022721Z",
+  "complete": true,
+  "discovered": 5451,
+  "written": 790,
+  "path": "work/snapshots/2026-11-27/cap-20261127T022721Z.jsonl"
+}
+[slate] {"slate_id": "slate-20261127T022722Z-d17715", "mode": "reprice_only", "fixtures": 33, "contract_sides": 1310, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.347, "price_changes_vs_previous": 63}
+[dispatch] holding 7.9 min (next window opens in 6.2 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261127T024221Z",
+  "complete": true,
+  "discovered": 5450,
+  "written": 1487,
+  "path": "work/snapshots/2026-11-27/cap-20261127T024221Z.jsonl"
+}
+{
+  "reference_probabilities": 0,
+  "observed_at": "2026-11-26 22:12:14.156651+00:00",
+  "groups": 70,
+  "unmapped_fixture_groups": 70,
+  "incomplete_groups": 0,
+  "snapshots": 0,
+  "provider_notes": [
+    "43 rows, 29 skipped (unmapped division/team)",
+    "skipped_by_division={'E2': 5, 'E3': 2, 'EC': 12, 'I2': 10}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-11-27T02:42:23.472017Z", "batch_id": "kd-20261127T023843Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-11-27T02:42:23.489712+00:00",
+ "leagues": [
+  "mex.1"
+ ],
+ "events": 0,
+ "fixtures_mapped": 0,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 1,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 0,
+  "captured": 0,
+  "unchanged": 0,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 0,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 0,
+  "captured": 0,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "DEGRADED",
+  "reasons": [
+   "no_events_returned"
+  ]
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261127T024223Z-0e155b", "mode": "reprice_only", "fixtures": 33, "contract_sides": 1310, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.476, "price_changes_vs_previous": 129}
+[dispatch] holding 1.2 min (next window opens in 6.9 min)
+[dispatch] holding 6.4 min (next window opens in 5.6 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261127T025723Z",
+  "complete": true,
+  "discovered": 5450,
+  "written": 858,
+  "path": "work/snapshots/2026-11-27/cap-20261127T025723Z.jsonl"
+}
+{
+  "reference_probabilities": 0,
+  "observed_at": "2026-11-26 22:12:14.156651+00:00",
+  "groups": 70,
+  "unmapped_fixture_groups": 70,
+  "incomplete_groups": 0,
+  "snapshots": 0,
+  "provider_notes": [
+    "43 rows, 29 skipped (unmapped division/team)",
+    "skipped_by_division={'E2': 5, 'E3': 2, 'EC': 12, 'I2': 10}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-11-27T02:57:25.260232Z", "batch_id": "kd-20261127T025345Z", "credits_charged": 3, "paid_calls": 1, "snapshots": 7, "no_sport_key": [], "eligible_fixtures": 1, "per_sport": {"soccer_mexico_ligamx": {"fixtures": 1, "join": {"events": 2, "joined": 1, "ambiguous": 0, "unresolved_names": [], "unjoined_fixtures": []}, "status": "OK", "credits": 3, "snapshots": 7, "incomplete_markets": 0, "close_fixtures": 1, "entry_fixtures": 0}}, "remaining_after": 19406, "status": "OK"}
+{
+ "as_of": "2026-11-27T02:57:29.543816+00:00",
+ "leagues": [
+  "mex.1"
+ ],
+ "events": 0,
+ "fixtures_mapped": 0,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 1,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 0,
+  "captured": 0,
+  "unchanged": 0,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 0,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 0,
+  "captured": 0,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "DEGRADED",
+  "reasons": [
+   "no_events_returned"
+  ]
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261127T025729Z-03bb54", "mode": "reprice_only", "fixtures": 33, "contract_sides": 1310, "simulations_run": 0, "odds_api_calls": 1, "reprice_runtime_s": 0.347, "price_changes_vs_previous": 61}
+[dispatch] holding 4.3 min (next window opens in 2.3 min)
+[capture] fast mode: 253 series with markets at last full discovery; new series are always swept
+{
+  "batch": "cap-20261127T030837Z",
+  "complete": true,
+  "discovered": 5443,
+  "written": 950,
+  "path": "work/snapshots/2026-11-27/cap-20261127T030837Z.jsonl"
+}
+{
+  "reference_probabilities": 0,
+  "observed_at": "2026-11-26 22:12:14.156651+00:00",
+  "groups": 70,
+  "unmapped_fixture_groups": 70,
+  "incomplete_groups": 0,
+  "snapshots": 0,
+  "provider_notes": [
+    "43 rows, 29 skipped (unmapped division/team)",
+    "skipped_by_division={'E2': 5, 'E3': 2, 'EC': 12, 'I2': 10}",
+    "unknown_teams={}",
+    "fixture ids use the match DATE as stage; join to openfootball fixtures by (home, away, date)"
+  ],
+  "written": 0
+}
+[odds_api] {"captured_at": "2026-11-27T03:08:39.631247Z", "batch_id": "kd-20261127T030500Z", "credits_charged": 0, "paid_calls": 0, "snapshots": 0, "no_sport_key": [], "eligible_fixtures": 0, "status": "NOTHING_ELIGIBLE"}
+{
+ "as_of": "2026-11-27T03:08:39.649149+00:00",
+ "leagues": [
+  "mex.1"
+ ],
+ "events": 0,
+ "fixtures_mapped": 0,
+ "events_skipped_unmapped": 0,
+ "unmapped_leagues": [],
+ "scoreboard_queries": 1,
+ "scoreboard_failures_n": 0,
+ "scoreboard_failures": [],
+ "lineups": {
+  "events": 0,
+  "captured": 0,
+  "unchanged": 0,
+  "published_pre_kickoff": 0,
+  "published_post": 0,
+  "unpublished": 0,
+  "failures": []
+ },
+ "results_appended": 0,
+ "weather": {
+  "events": 0,
+  "captured": 0,
+  "no_venue": 0,
+  "geocode_miss": 0,
+  "forecast_miss": 0,
+  "failures": [],
+  "skipped": 0,
+  "stopped": null
+ },
+ "map_version": "4",
+ "health": {
+  "state": "DEGRADED",
+  "reasons": [
+   "no_events_returned"
+  ]
+ }
+}
+unmapped teams: 0 | proposals: {}
+[slate] {"slate_id": "slate-20261127T030839Z-ea00ba", "mode": "reprice_only", "fixtures": 33, "contract_sides": 1310, "simulations_run": 0, "odds_api_calls": 0, "reprice_runtime_s": 0.35, "price_changes_vs_previous": 178}
+[dispatch] holding 5.7 min (next window opens in 848.3 min)
+[dispatch] holding 20.1 min (next window opens in 842.6 min)
+{
+ "batches": 13,
+ "horizons_delivered": 13,
+ "missed_states": {},
+ "paid_calls": 5,
+ "credits_spent": 15,
+ "end_reason": "link_time_limit",
+ "chain_continue": true,
+ "delivered_total": 4661,
+ "missed_total": 605,
+ "delivery_rate_total": 0.8851120394986707
+}
