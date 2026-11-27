@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261127T093619Z-24c43d` · generated 2026-11-27T09:36:19.249163Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261127T095148Z-c0d64e` · generated 2026-11-27T09:51:48.325043Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-27T09:32:40.766536Z (CURRENT at publish; CURRENT until 2026-11-27T09:52:40.766536Z, STALE after 2026-11-27T10:02:40.766536Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-27T09:48:09.759734Z (CURRENT at publish; CURRENT until 2026-11-27T10:08:09.759734Z, STALE after 2026-11-27T10:18:09.759734Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-27T09:21:27.224876Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.92s
+model board generated 2026-11-27T09:21:27.224876Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.74s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -39,7 +39,7 @@ model board generated 2026-11-27T09:21:27.224876Z · simulations this update: 0 
 | 2026-11-28T19:45:00Z | Le Mans vs Lille (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T19:45:00Z | Nice vs Troyes (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T19:45:00Z | Paris Saint-Germain vs Lorient (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-28T21:30:00Z | Philadelphia Union vs New England Revolution (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-28T21:30:00Z | Philadelphia Union vs New England Revolution (usa.mls) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-28T23:30:00Z | FC Cincinnati vs Nashville SC (usa.mls) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-29T00:00:00Z | Botafogo vs Bahia (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-29T01:00:00Z | Atlas vs Toluca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
@@ -60,28 +60,27 @@ model board generated 2026-11-27T09:21:27.224876Z · simulations this update: 0 
 | Charlotte FC vs Chicago Fire | away wins by more than 1.5 | no | 0.8000 | 0.935 [0.885, 0.974] | +0.124 | +0.100 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | Result: away | no | 0.6300 | 0.807 [0.694, 0.900] | +0.160 | +0.099 | 0.73 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | btts | no | 0.4000 | 0.582 [0.469, 0.691] | +0.165 | +0.094 | 0.49 | - | * | RESEARCH_CANDIDATE |
+| Charlotte FC vs Chicago Fire | First team to score: home | yes | 0.4900 | 0.659 [0.548, 0.772] | +0.151 | +0.083 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | home wins by more than 1.5 | yes | 0.2100 | 0.407 [0.254, 0.574] | +0.185 | +0.080 | 0.28 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | btts | no | 0.3500 | 0.519 [0.403, 0.632] | +0.153 | +0.078 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 3.5 | no | 0.6000 | 0.764 [0.637, 0.872] | +0.147 | +0.074 | 0.67 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 2.5 | no | 0.4200 | 0.600 [0.445, 0.745] | +0.163 | +0.073 | 0.49 | - | * | RESEARCH_CANDIDATE |
-| Charlotte FC vs Chicago Fire | First team to score: home | yes | 0.5000 | 0.659 [0.548, 0.772] | +0.141 | +0.072 | 0.57 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.3800 | 0.561 [0.413, 0.700] | +0.165 | +0.072 | 0.45 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 3.5 | no | 0.6400 | 0.794 [0.669, 0.900] | +0.138 | +0.072 | 0.71 | - |  | RESEARCH_CANDIDATE |
 | Everton vs Liverpool | Result: away | no | 0.4600 | 0.661 [0.470, 0.832] | +0.184 | +0.069 | 0.52 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Nashville SC | Total goals over 3.5 | no | 0.5800 | 0.741 [0.610, 0.854] | +0.144 | +0.068 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Nashville SC | btts | no | 0.3400 | 0.496 [0.382, 0.609] | +0.141 | +0.066 | 0.4 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Nashville SC | Total goals over 2.5 | no | 0.3600 | 0.534 [0.387, 0.672] | +0.157 | +0.065 | 0.42 | - |  | RESEARCH_CANDIDATE |
-| Real Salt Lake vs Vancouver Whitecaps | Total goals over 4.5 | no | 0.7700 | 0.890 [0.807, 0.955] | +0.108 | +0.065 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | home wins by more than 2.5 | yes | 0.0900 | 0.256 [0.132, 0.405] | +0.160 | +0.064 | 0.15 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 1.5 | no | 0.1600 | 0.309 [0.191, 0.430] | +0.140 | +0.060 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away wins by more than 1.5 | no | 0.8200 | 0.922 [0.861, 0.969] | +0.091 | +0.060 | 0.88 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away team total over 1.5 | no | 0.5000 | 0.659 [0.533, 0.778] | +0.142 | +0.060 | 0.56 | - | * | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | away wins by more than 2.5 | no | 0.9100 | 0.979 [0.959, 0.994] | +0.064 | +0.056 | 0.96 | - |  | RESEARCH_CANDIDATE |
+| Real Salt Lake vs Vancouver Whitecaps | Total goals over 4.5 | no | 0.7800 | 0.890 [0.807, 0.955] | +0.098 | +0.055 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | away team total over 2.5 | no | 0.7600 | 0.871 [0.789, 0.940] | +0.098 | +0.050 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Everton vs Liverpool | Result: home | yes | 0.2100 | 0.406 [0.218, 0.612] | +0.184 | +0.050 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | away team total over 1.5 | no | 0.5000 | 0.646 [0.515, 0.769] | +0.128 | +0.049 | 0.54 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 1.5 | no | 0.2000 | 0.344 [0.215, 0.477] | +0.133 | +0.049 | 0.24 | - |  | RESEARCH_CANDIDATE |
-| Columbus Crew vs Inter Miami | home wins by more than 2.5 | yes | 0.0900 | 0.230 [0.111, 0.375] | +0.134 | +0.047 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Nashville SC | Total goals over 4.5 | no | 0.7700 | 0.875 [0.787, 0.946] | +0.093 | +0.046 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Columbus Crew vs Inter Miami | First-half result: away | no | 0.7000 | 0.808 [0.718, 0.892] | +0.094 | +0.043 | 0.74 | - | * | RESEARCH_CANDIDATE |
 | Club América vs Monterrey | Result: home | yes | 0.4200 | 0.577 [0.423, 0.721] | +0.140 | +0.043 | 0.46 | - | * | RESEARCH_CANDIDATE |
@@ -91,6 +90,7 @@ model board generated 2026-11-27T09:21:27.224876Z · simulations this update: 0 
 | FC Cincinnati vs Nashville SC | Total goals over 1.5 | no | 0.1600 | 0.286 [0.175, 0.399] | +0.117 | +0.040 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | btts | no | 0.3800 | 0.513 [0.393, 0.628] | +0.116 | +0.040 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 5.5 | no | 0.8900 | 0.955 [0.911, 0.986] | +0.058 | +0.038 | 0.93 | - |  | RESEARCH_CANDIDATE |
+| Club América vs Monterrey | home wins by more than 1.5 | yes | 0.2000 | 0.351 [0.204, 0.500] | +0.140 | +0.037 | 0.23 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
