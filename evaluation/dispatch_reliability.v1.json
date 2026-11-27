@@ -1,23 +1,23 @@
 {
  "schema": "dispatch_reliability_v1",
- "generated_at": "2026-11-27T09:01:45Z",
+ "generated_at": "2026-11-27T12:12:40Z",
  "cadence": {
   "external_heartbeat_minutes": null,
   "github_backup_minutes": 60
  },
  "last_wake": {
-  "started_at": "2026-11-27T08:53:42Z",
-  "trigger_source": "workflow-run",
+  "started_at": "2026-11-27T12:04:09Z",
+  "trigger_source": "github-schedule-backup",
   "status": "OK",
   "no_action_reason": null
  },
  "last_24h": {
   "span_hours": 24.0,
-  "heartbeats_actual": 17,
+  "heartbeats_actual": 16,
   "heartbeats_by_source": {
    "chain": 4,
    "github-schedule-backup": 3,
-   "workflow-run": 10
+   "workflow-run": 9
   },
   "heartbeats_failed": 0,
   "heartbeats_no_work_due": 0,
