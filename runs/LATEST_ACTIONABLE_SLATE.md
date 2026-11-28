@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261128T124723Z-2aa4e6` · generated 2026-11-28T12:47:23.114036Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261128T125430Z-eee2ab` · generated 2026-11-28T12:54:30.274495Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-28T12:43:41.872395Z (CURRENT at publish; CURRENT until 2026-11-28T13:03:41.872395Z, STALE after 2026-11-28T13:13:41.872395Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-28T12:50:46.747960Z (CURRENT at publish; CURRENT until 2026-11-28T13:10:46.747960Z, STALE after 2026-11-28T13:20:46.747960Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-28T07:41:55.630784Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.41s
+model board generated 2026-11-28T07:41:55.630784Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.43s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -95,22 +95,22 @@ model board generated 2026-11-28T07:41:55.630784Z · simulations this update: 0 
 | Real Madrid vs Deportivo Alavés | Result: away | yes | 0.0500 | 0.149 [0.057, 0.260] | +0.096 | +0.025 | 0.07 | - |  | RESEARCH_CANDIDATE |
 | Deportivo La Coruña vs FC Barcelona | Result: home | yes | 0.0900 | 0.239 [0.078, 0.435] | +0.143 | +0.023 | 0.11 | - |  | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Lorient | Result: draw | yes | 0.1200 | 0.210 [0.115, 0.299] | +0.083 | +0.022 | 0.14 | - |  | RESEARCH_CANDIDATE |
+| Cruz Azul vs León | home wins by more than 1.5 | yes | 0.3300 | 0.480 [0.310, 0.658] | +0.135 | +0.022 | 0.35 | - | * | RESEARCH_CANDIDATE |
 | Atlético Mineiro vs Vasco da Gama | btts | no | 0.4300 | 0.542 [0.420, 0.652] | +0.095 | +0.021 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Cruz Azul vs León | Result: home | yes | 0.5700 | 0.696 [0.552, 0.831] | +0.109 | +0.021 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Atlético Mineiro vs Vasco da Gama | Result: away | no | 0.6450 | 0.750 [0.636, 0.859] | +0.088 | +0.021 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Pachuca | Total goals over 2.5 | no | 0.4400 | 0.573 [0.409, 0.716] | +0.116 | +0.018 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | SC Freiburg vs RB Leipzig | Result: home | yes | 0.3600 | 0.531 [0.320, 0.747] | +0.155 | +0.016 | 0.37 | - |  | RESEARCH_CANDIDATE |
 | Guadalajara vs Pachuca | Total goals over 3.5 | no | 0.6700 | 0.772 [0.633, 0.882] | +0.087 | +0.012 | 0.68 | - |  | RESEARCH_CANDIDATE |
-| Frosinone vs Parma | Result: home | no | 0.3200 | 0.482 [0.261, 0.689] | +0.146 | +0.012 | 0.33 | - | * | RESEARCH_CANDIDATE |
-| Cruz Azul vs León | home wins by more than 1.5 | yes | 0.3400 | 0.480 [0.310, 0.658] | +0.125 | +0.012 | 0.35 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Pachuca | btts | no | 0.4400 | 0.543 [0.425, 0.652] | +0.086 | +0.011 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Cruz Azul vs León | home wins by more than 2.5 | yes | 0.1600 | 0.285 [0.139, 0.456] | +0.116 | +0.011 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | Cruz Azul vs León | Result: away | no | 0.8000 | 0.869 [0.781, 0.942] | +0.058 | +0.008 | 0.8 | - |  | RESEARCH_CANDIDATE |
-| Frosinone vs Parma | Result: draw | yes | 0.1900 | 0.271 [0.166, 0.373] | +0.070 | +0.007 | 0.19 | - |  | RESEARCH_CANDIDATE |
+| Frosinone vs Parma | Result: draw | yes | 0.1900 | 0.271 [0.166, 0.373] | +0.070 | +0.007 | 0.19 | - | * | RESEARCH_CANDIDATE |
 | Borussia Dortmund vs Bayer Leverkusen | Result: away | no | 0.7000 | 0.802 [0.650, 0.931] | +0.088 | +0.006 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Pachuca | Result: home | no | 0.4200 | 0.529 [0.381, 0.668] | +0.092 | +0.005 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Club América vs Monterrey | Result: home | yes | 0.4600 | 0.577 [0.423, 0.721] | +0.100 | +0.003 | 0.46 | - |  | RESEARCH_CANDIDATE |
 | Guadalajara vs Pachuca | Total goals over 5.5 | no | 0.9300 | 0.956 [0.910, 0.988] | +0.022 | +0.003 | 0.93 | - |  | RESEARCH_CANDIDATE |
+| Frosinone vs Parma | Result: home | no | 0.3300 | 0.482 [0.261, 0.689] | +0.136 | +0.002 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Lorient | Result: away | yes | 0.0700 | 0.165 [0.054, 0.312] | +0.090 | +0.001 | 0.07 | - |  | RESEARCH_CANDIDATE |
 | Guadalajara vs Pachuca | Total goals over 1.5 | no | 0.2200 | 0.319 [0.188, 0.442] | +0.087 | +0.000 | 0.22 | - |  | RESEARCH_CANDIDATE |
 
