@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261128T112727Z-05166f` · generated 2026-11-28T11:27:27.161138Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261128T114228Z-c74879` · generated 2026-11-28T11:42:28.398953Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-28T11:23:48.118962Z (CURRENT at publish; CURRENT until 2026-11-28T11:43:48.118962Z, STALE after 2026-11-28T11:53:48.118962Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-28T11:38:49.475892Z (CURRENT at publish; CURRENT until 2026-11-28T11:58:49.475892Z, STALE after 2026-11-28T12:08:49.475892Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-28T07:41:55.630784Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.41s
+model board generated 2026-11-28T07:41:55.630784Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.62s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -35,7 +35,7 @@ model board generated 2026-11-28T07:41:55.630784Z · simulations this update: 0 
 | 2026-11-28T19:45:00Z | Nice vs Troyes (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T19:45:00Z | Paris Saint-Germain vs Lorient (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T21:30:00Z | Philadelphia Union vs New England Revolution (usa.mls) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-28T23:30:00Z | FC Cincinnati vs Nashville SC (usa.mls) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-28T23:30:00Z | FC Cincinnati vs Nashville SC (usa.mls) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-29T00:00:00Z | Botafogo vs Bahia (bra.serie_a) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-29T01:00:00Z | Atlas vs Toluca (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-29T01:30:00Z | Los Angeles FC vs St. Louis City SC (usa.mls) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
@@ -71,7 +71,7 @@ model board generated 2026-11-28T07:41:55.630784Z · simulations this update: 0 
 | 2026-11-30T01:07:00Z | Guadalajara vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-30T03:00:00Z | Cruz Azul vs León (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 
-## Candidates on CURRENT prices (57; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (49; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -88,18 +88,13 @@ model board generated 2026-11-28T07:41:55.630784Z · simulations this update: 0 
 | Botafogo vs Bahia | Total goals over 4.5 | no | 0.7700 | 0.886 [0.799, 0.956] | +0.104 | +0.058 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | Everton vs Liverpool | Result: home | yes | 0.2100 | 0.400 [0.222, 0.599] | +0.179 | +0.051 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | btts | no | 0.3700 | 0.513 [0.393, 0.628] | +0.126 | +0.050 | 0.41 | - | * | RESEARCH_CANDIDATE |
-| FC Cincinnati vs Nashville SC | Total goals over 3.5 | no | 0.6000 | 0.741 [0.610, 0.854] | +0.124 | +0.048 | 0.64 | - | * | RESEARCH_CANDIDATE |
-| FC Cincinnati vs Nashville SC | btts | no | 0.3600 | 0.496 [0.382, 0.609] | +0.120 | +0.046 | 0.4 | - | * | RESEARCH_CANDIDATE |
-| FC Cincinnati vs Nashville SC | Total goals over 2.5 | no | 0.3800 | 0.534 [0.387, 0.672] | +0.137 | +0.045 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Lorient | Result: home | no | 0.1800 | 0.375 [0.177, 0.589] | +0.185 | +0.044 | 0.22 | - | * | RESEARCH_CANDIDATE |
-| Udinese vs Fiorentina | Result: home | yes | 0.3000 | 0.481 [0.300, 0.687] | +0.166 | +0.040 | 0.33 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | Total goals over 1.5 | no | 0.1700 | 0.301 [0.182, 0.426] | +0.121 | +0.040 | 0.2 | - |  | RESEARCH_CANDIDATE |
-| FC Cincinnati vs Nashville SC | Total goals over 4.5 | no | 0.7800 | 0.875 [0.787, 0.946] | +0.083 | +0.036 | 0.81 | - |  | RESEARCH_CANDIDATE |
-| Udinese vs Fiorentina | Result: away | no | 0.5800 | 0.724 [0.560, 0.874] | +0.127 | +0.035 | 0.61 | - |  | RESEARCH_CANDIDATE |
+| Udinese vs Fiorentina | Result: away | no | 0.5800 | 0.724 [0.560, 0.874] | +0.127 | +0.035 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | Total goals over 5.5 | no | 0.8900 | 0.952 [0.906, 0.987] | +0.055 | +0.034 | 0.92 | - |  | RESEARCH_CANDIDATE |
 | SC Freiburg vs RB Leipzig | Result: away | no | 0.6000 | 0.749 [0.572, 0.898] | +0.132 | +0.033 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | Real Madrid vs Deportivo Alavés | Result: draw | yes | 0.1000 | 0.187 [0.107, 0.263] | +0.081 | +0.032 | 0.13 | - |  | RESEARCH_CANDIDATE |
-| FC Cincinnati vs Nashville SC | Total goals over 1.5 | no | 0.1700 | 0.286 [0.175, 0.399] | +0.107 | +0.030 | 0.19 | - |  | RESEARCH_CANDIDATE |
+| Udinese vs Fiorentina | Result: home | yes | 0.3100 | 0.481 [0.300, 0.687] | +0.156 | +0.030 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | Club América vs Monterrey | Result: draw | no | 0.7000 | 0.782 [0.726, 0.837] | +0.067 | +0.029 | 0.72 | - | * | RESEARCH_CANDIDATE |
 | Sassuolo vs Napoli | Result: home | yes | 0.2000 | 0.366 [0.196, 0.558] | +0.155 | +0.029 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Deportivo La Coruña vs FC Barcelona | Result: draw | yes | 0.1200 | 0.207 [0.123, 0.283] | +0.079 | +0.027 | 0.14 | - |  | RESEARCH_CANDIDATE |
@@ -112,17 +107,22 @@ model board generated 2026-11-28T07:41:55.630784Z · simulations this update: 0 
 | Cruz Azul vs León | Result: home | yes | 0.5700 | 0.696 [0.552, 0.831] | +0.109 | +0.021 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Atlético Mineiro vs Vasco da Gama | Result: away | no | 0.6450 | 0.750 [0.636, 0.859] | +0.088 | +0.021 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Pachuca | Total goals over 2.5 | no | 0.4400 | 0.573 [0.409, 0.716] | +0.116 | +0.018 | 0.45 | - | * | RESEARCH_CANDIDATE |
-| FC Cincinnati vs Nashville SC | Total goals over 5.5 | no | 0.9000 | 0.947 [0.899, 0.983] | +0.040 | +0.018 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | Guadalajara vs Pachuca | Total goals over 3.5 | no | 0.6700 | 0.772 [0.633, 0.882] | +0.087 | +0.012 | 0.68 | - |  | RESEARCH_CANDIDATE |
 | Frosinone vs Parma | Result: home | no | 0.3200 | 0.482 [0.261, 0.689] | +0.146 | +0.012 | 0.33 | - | * | RESEARCH_CANDIDATE |
+| Guadalajara vs Pachuca | btts | no | 0.4400 | 0.543 [0.425, 0.652] | +0.086 | +0.011 | 0.45 | - | * | RESEARCH_CANDIDATE |
+| Cruz Azul vs León | home wins by more than 2.5 | yes | 0.1600 | 0.285 [0.139, 0.456] | +0.116 | +0.011 | 0.17 | - |  | RESEARCH_CANDIDATE |
+| Málaga vs Athletic Club | Result: away | no | 0.4400 | 0.605 [0.388, 0.807] | +0.148 | +0.009 | 0.44 | - | * | RESEARCH_CANDIDATE |
+| Cruz Azul vs León | Result: away | no | 0.8000 | 0.869 [0.781, 0.942] | +0.058 | +0.008 | 0.8 | - |  | RESEARCH_CANDIDATE |
+| Botafogo vs Bahia | home wins by more than 1.5 | no | 0.7400 | 0.822 [0.716, 0.914] | +0.068 | +0.008 | 0.74 | - | * | RESEARCH_CANDIDATE |
+| Frosinone vs Parma | Result: draw | yes | 0.1900 | 0.271 [0.166, 0.373] | +0.070 | +0.007 | 0.19 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_MODEL_STALE: 230
-action_NO_EDGE: 981
-action_NO_QUOTE: 162
-action_RESEARCH_CANDIDATE: 57
+action_MODEL_STALE: 258
+action_NO_EDGE: 964
+action_NO_QUOTE: 159
+action_RESEARCH_CANDIDATE: 49
 contract_sides: 1430
 fixtures: 58
 fixtures_model_invalidated: 0
