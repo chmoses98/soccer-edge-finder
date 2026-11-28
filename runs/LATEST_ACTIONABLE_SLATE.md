@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261128T151348Z-e6762b` · generated 2026-11-28T15:13:48.354844Z · trigger `kickoff_chain:T-60/T-5` · mode `model_refresh_and_reprice`
+slate `slate-20261128T152847Z-ea3e65` · generated 2026-11-28T15:28:47.134548Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-28T15:10:02.106809Z (CURRENT at publish; CURRENT until 2026-11-28T15:30:02.106809Z, STALE after 2026-11-28T15:40:02.106809Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-28T15:25:02.142105Z (CURRENT at publish; CURRENT until 2026-11-28T15:45:02.142105Z, STALE after 2026-11-28T15:55:02.142105Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-28T15:13:47.497431Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.64s
+model board generated 2026-11-28T15:13:47.497431Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.44s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -14,19 +14,19 @@ model board generated 2026-11-28T15:13:47.497431Z · simulations this update: 1 
 |---|---|---|---|---|---|---|---|
 | 2026-11-28T16:15:00Z | Angers vs Lens (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T17:30:00Z | VfB Stuttgart vs Eintracht Frankfurt (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-28T17:30:00Z | Charlotte FC vs Chicago Fire (usa.mls) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-28T19:30:00Z | Houston Dynamo vs San Jose Earthquakes (usa.mls) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-28T17:30:00Z | Charlotte FC vs Chicago Fire (usa.mls) | VALID (STALE) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-28T19:30:00Z | Houston Dynamo vs San Jose Earthquakes (usa.mls) | VALID (STALE) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-28T19:45:00Z | Le Havre vs Strasbourg (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T19:45:00Z | Le Mans vs Lille (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T19:45:00Z | Nice vs Troyes (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T19:45:00Z | Paris Saint-Germain vs Lorient (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-28T21:30:00Z | Philadelphia Union vs New England Revolution (usa.mls) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 61 | 1 |
-| 2026-11-28T23:30:00Z | FC Cincinnati vs Nashville SC (usa.mls) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
-| 2026-11-29T00:00:00Z | Botafogo vs Bahia (bra.serie_a) | VALID (STALE) | unconfirmed (AGING) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-28T21:30:00Z | Philadelphia Union vs New England Revolution (usa.mls) | VALID (STALE) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-28T23:30:00Z | FC Cincinnati vs Nashville SC (usa.mls) | VALID (STALE) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-29T00:00:00Z | Botafogo vs Bahia (bra.serie_a) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-29T01:00:00Z | Atlas vs Toluca (mex.liga_mx) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-11-29T01:30:00Z | Los Angeles FC vs St. Louis City SC (usa.mls) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-29T01:30:00Z | Los Angeles FC vs St. Louis City SC (usa.mls) | VALID (STALE) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-29T03:10:00Z | Club América vs Monterrey (mex.liga_mx) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
-| 2026-11-29T03:30:00Z | Portland Timbers vs FC Dallas (usa.mls) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 79 | 1 |
+| 2026-11-29T03:30:00Z | Portland Timbers vs FC Dallas (usa.mls) | VALID (AGING) | unconfirmed (CURRENT) | UNAVAILABLE | CURRENT | 79 | 1 |
 | 2026-11-29T12:00:00Z | Celta Vigo vs Villarreal (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-29T12:00:00Z | Deportivo La Coruña vs FC Barcelona (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-29T12:00:00Z | Elche vs Atlético Madrid (esp.la_liga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -57,10 +57,13 @@ model board generated 2026-11-28T15:13:47.497431Z · simulations this update: 1 
 | 2026-11-30T01:07:00Z | Guadalajara vs Pachuca (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-30T03:00:00Z | Cruz Azul vs León (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 
-## Candidates on CURRENT prices (32; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (34; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
+| Frosinone vs Parma | Result: home | no | 0.0400 | 0.482 [0.261, 0.689] | +0.439 | +0.305 | 0.33 | - | * | RESEARCH_CANDIDATE |
+| Frosinone vs Parma | Result: draw | yes | 0.0400 | 0.271 [0.166, 0.373] | +0.228 | +0.166 | 0.19 | - |  | RESEARCH_CANDIDATE |
+| Frosinone vs Parma | Result: away | yes | 0.0100 | 0.211 [0.080, 0.376] | +0.200 | +0.105 | 0.1 | - |  | RESEARCH_CANDIDATE |
 | Elche vs Atlético Madrid | Result: away | no | 0.3500 | 0.588 [0.390, 0.764] | +0.222 | +0.099 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Elche vs Atlético Madrid | Result: home | yes | 0.1400 | 0.358 [0.183, 0.551] | +0.209 | +0.088 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Deportivo La Coruña vs FC Barcelona | Result: away | no | 0.2000 | 0.445 [0.204, 0.685] | +0.234 | +0.076 | 0.27 | - | * | RESEARCH_CANDIDATE |
@@ -81,7 +84,6 @@ model board generated 2026-11-28T15:13:47.497431Z · simulations this update: 1 
 | Cruz Azul vs León | Result: home | yes | 0.5700 | 0.696 [0.552, 0.831] | +0.109 | +0.021 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Atlético Mineiro vs Vasco da Gama | Result: away | no | 0.6450 | 0.750 [0.636, 0.859] | +0.088 | +0.021 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Club América vs Monterrey | Result: draw | no | 0.7100 | 0.782 [0.726, 0.837] | +0.057 | +0.019 | 0.72 | - | * | RESEARCH_CANDIDATE |
-| Málaga vs Athletic Club | Result: away | no | 0.4300 | 0.605 [0.388, 0.807] | +0.158 | +0.019 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Pachuca | Total goals over 2.5 | no | 0.4400 | 0.573 [0.409, 0.716] | +0.116 | +0.018 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | SC Freiburg vs RB Leipzig | Result: home | yes | 0.3600 | 0.531 [0.320, 0.747] | +0.155 | +0.016 | 0.37 | - |  | RESEARCH_CANDIDATE |
 | Guadalajara vs Pachuca | Total goals over 3.5 | no | 0.6700 | 0.772 [0.633, 0.882] | +0.087 | +0.012 | 0.68 | - |  | RESEARCH_CANDIDATE |
@@ -98,9 +100,9 @@ model board generated 2026-11-28T15:13:47.497431Z · simulations this update: 1 
 
 ```
 action_MODEL_STALE: 448
-action_NO_EDGE: 708
-action_NO_QUOTE: 158
-action_RESEARCH_CANDIDATE: 32
+action_NO_EDGE: 705
+action_NO_QUOTE: 159
+action_RESEARCH_CANDIDATE: 34
 contract_sides: 1346
 fixtures: 44
 fixtures_model_invalidated: 0
