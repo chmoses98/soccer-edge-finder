@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261128T101223Z-6fde5d` · generated 2026-11-28T10:12:23.334304Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261128T102723Z-505fa4` · generated 2026-11-28T10:27:23.293572Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-28T10:08:44.435005Z (CURRENT at publish; CURRENT until 2026-11-28T10:28:44.435005Z, STALE after 2026-11-28T10:38:44.435005Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-28T10:23:44.411977Z (CURRENT at publish; CURRENT until 2026-11-28T10:43:44.411977Z, STALE after 2026-11-28T10:53:44.411977Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-28T07:41:55.630784Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.67s
+model board generated 2026-11-28T07:41:55.630784Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.38s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -112,9 +112,9 @@ model board generated 2026-11-28T07:41:55.630784Z · simulations this update: 0 
 | Cruz Azul vs León | Result: home | yes | 0.5700 | 0.696 [0.552, 0.831] | +0.109 | +0.021 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Atlético Mineiro vs Vasco da Gama | Result: away | no | 0.6450 | 0.750 [0.636, 0.859] | +0.088 | +0.021 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Pachuca | Total goals over 2.5 | no | 0.4400 | 0.573 [0.409, 0.716] | +0.116 | +0.018 | 0.45 | - | * | RESEARCH_CANDIDATE |
-| Frosinone vs Parma | Result: draw | yes | 0.1800 | 0.271 [0.166, 0.373] | +0.081 | +0.018 | 0.19 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Nashville SC | Total goals over 5.5 | no | 0.9000 | 0.947 [0.899, 0.983] | +0.040 | +0.018 | 0.91 | - |  | RESEARCH_CANDIDATE |
 | Guadalajara vs Pachuca | Total goals over 3.5 | no | 0.6700 | 0.772 [0.633, 0.882] | +0.087 | +0.012 | 0.68 | - |  | RESEARCH_CANDIDATE |
+| Frosinone vs Parma | Result: home | no | 0.3200 | 0.482 [0.261, 0.689] | +0.146 | +0.012 | 0.33 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
