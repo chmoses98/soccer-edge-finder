@@ -1,11 +1,11 @@
 {
  "counts": {
-  "MISSED_DISPATCHER_CLOSE": 118,
+  "PINNACLE_VALID_CLOSE": 162,
   "DISPATCHER_CLOSE_NO_ATTEMPT": 700,
-  "PINNACLE_VALID_CLOSE": 160,
+  "MISSED_DISPATCHER_CLOSE": 118,
+  "NO_SPORT_KEY": 39,
   "CLOSE_BLOCKED_BUDGET": 31,
-  "PINNACLE_QUOTED_NOTHING": 3,
-  "NO_SPORT_KEY": 39
+  "PINNACLE_QUOTED_NOTHING": 3
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.belgrano": {
@@ -672,6 +672,11 @@
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
+  },
+  "fx:bra.serie_a:2026:bra.fluminense:bra.cruzeiro": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261127T224500Z"
   },
   "fx:bra.serie_a:2026:bra.fluminense:bra.internacional": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
@@ -4887,6 +4892,11 @@
    "state": "MISSED_DISPATCHER_CLOSE",
    "close_horizon_delivered": false,
    "batch_id": null
+  },
+  "fx:usa.mls:2026:usa.columbus_crew:usa.inter_miami": {
+   "state": "PINNACLE_VALID_CLOSE",
+   "close_horizon_delivered": true,
+   "batch_id": "kd-20261128T004431Z"
   },
   "fx:usa.mls:2026:usa.columbus_crew:usa.toronto": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
