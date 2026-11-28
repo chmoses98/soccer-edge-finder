@@ -1,8 +1,8 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261128T161210Z-45abea` · generated 2026-11-28T16:12:10.283640Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
+slate `slate-20261128T162705Z-88b4a4` · generated 2026-11-28T16:27:05.811307Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-28T16:08:29.476723Z (CURRENT at publish; CURRENT until 2026-11-28T16:28:29.476723Z, STALE after 2026-11-28T16:38:29.476723Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-28T16:23:26.947047Z (CURRENT at publish; CURRENT until 2026-11-28T16:43:26.947047Z, STALE after 2026-11-28T16:53:26.947047Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
 model board generated 2026-11-28T15:43:46.092588Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.44s
 
@@ -12,7 +12,6 @@ model board generated 2026-11-28T15:43:46.092588Z · simulations this update: 0 
 
 | kickoff | fixture | model | lineup | reference | context | priced | no model |
 |---|---|---|---|---|---|---|---|
-| 2026-11-28T16:15:00Z | Angers vs Lens (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T17:30:00Z | VfB Stuttgart vs Eintracht Frankfurt (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T17:30:00Z | Charlotte FC vs Chicago Fire (usa.mls) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-28T19:30:00Z | Houston Dynamo vs San Jose Earthquakes (usa.mls) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
@@ -57,12 +56,12 @@ model board generated 2026-11-28T15:43:46.092588Z · simulations this update: 0 
 | 2026-11-30T01:07:00Z | Guadalajara vs Pachuca (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-30T03:00:00Z | Cruz Azul vs León (mex.liga_mx) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 
-## Candidates on CURRENT prices (35; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (34; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Málaga vs Athletic Club | Result: away | no | 0.0200 | 0.605 [0.388, 0.807] | +0.584 | +0.445 | 0.44 | - | * | RESEARCH_CANDIDATE |
-| Málaga vs Athletic Club | Result: draw | yes | 0.0200 | 0.278 [0.198, 0.358] | +0.257 | +0.204 | 0.21 | - |  | RESEARCH_CANDIDATE |
+| Málaga vs Athletic Club | Result: away | no | 0.0500 | 0.605 [0.388, 0.807] | +0.552 | +0.413 | 0.44 | - | * | RESEARCH_CANDIDATE |
+| Málaga vs Athletic Club | Result: draw | yes | 0.0300 | 0.278 [0.198, 0.358] | +0.246 | +0.193 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Málaga vs Athletic Club | Result: home | yes | 0.0100 | 0.327 [0.146, 0.552] | +0.316 | +0.181 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Elche vs Atlético Madrid | Result: away | no | 0.3400 | 0.588 [0.390, 0.764] | +0.232 | +0.109 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Elche vs Atlético Madrid | Result: home | yes | 0.1400 | 0.358 [0.183, 0.551] | +0.209 | +0.088 | 0.22 | - |  | RESEARCH_CANDIDATE |
@@ -70,17 +69,16 @@ model board generated 2026-11-28T15:43:46.092588Z · simulations this update: 0 
 | Real Madrid vs Deportivo Alavés | Result: home | no | 0.1400 | 0.336 [0.169, 0.514] | +0.188 | +0.068 | 0.2 | - | * | RESEARCH_CANDIDATE |
 | Sassuolo vs Napoli | Result: away | no | 0.4200 | 0.621 [0.432, 0.795] | +0.184 | +0.063 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Lorient | Result: home | no | 0.1800 | 0.375 [0.177, 0.589] | +0.185 | +0.044 | 0.22 | - | * | RESEARCH_CANDIDATE |
-| Udinese vs Fiorentina | Result: away | no | 0.5800 | 0.724 [0.560, 0.874] | +0.127 | +0.035 | 0.61 | - | * | RESEARCH_CANDIDATE |
+| Udinese vs Fiorentina | Result: home | yes | 0.3000 | 0.481 [0.300, 0.687] | +0.166 | +0.040 | 0.33 | - | * | RESEARCH_CANDIDATE |
+| Udinese vs Fiorentina | Result: away | no | 0.5800 | 0.724 [0.560, 0.874] | +0.127 | +0.035 | 0.61 | - |  | RESEARCH_CANDIDATE |
 | SC Freiburg vs RB Leipzig | Result: away | no | 0.6000 | 0.749 [0.572, 0.898] | +0.132 | +0.033 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | Real Madrid vs Deportivo Alavés | Result: draw | yes | 0.1000 | 0.187 [0.107, 0.263] | +0.081 | +0.032 | 0.13 | - |  | RESEARCH_CANDIDATE |
-| Udinese vs Fiorentina | Result: home | yes | 0.3100 | 0.481 [0.300, 0.687] | +0.156 | +0.030 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | Sassuolo vs Napoli | Result: home | yes | 0.2000 | 0.366 [0.196, 0.558] | +0.155 | +0.029 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Deportivo La Coruña vs FC Barcelona | Result: draw | yes | 0.1200 | 0.207 [0.123, 0.283] | +0.079 | +0.027 | 0.14 | - |  | RESEARCH_CANDIDATE |
 | Real Madrid vs Deportivo Alavés | Result: away | yes | 0.0500 | 0.149 [0.057, 0.260] | +0.096 | +0.025 | 0.07 | - |  | RESEARCH_CANDIDATE |
 | Deportivo La Coruña vs FC Barcelona | Result: home | yes | 0.0900 | 0.239 [0.078, 0.435] | +0.143 | +0.023 | 0.11 | - |  | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Lorient | Result: draw | yes | 0.1200 | 0.210 [0.115, 0.299] | +0.083 | +0.022 | 0.14 | - |  | RESEARCH_CANDIDATE |
 | Cruz Azul vs León | home wins by more than 1.5 | yes | 0.3300 | 0.480 [0.310, 0.658] | +0.135 | +0.022 | 0.35 | - | * | RESEARCH_CANDIDATE |
-| Atlético Mineiro vs Vasco da Gama | btts | no | 0.4300 | 0.542 [0.420, 0.652] | +0.095 | +0.021 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Cruz Azul vs León | Result: home | yes | 0.5700 | 0.696 [0.552, 0.831] | +0.109 | +0.021 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Pachuca | Total goals over 2.5 | no | 0.4400 | 0.573 [0.409, 0.716] | +0.116 | +0.018 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | SC Freiburg vs RB Leipzig | Result: home | yes | 0.3600 | 0.531 [0.320, 0.747] | +0.155 | +0.016 | 0.37 | - |  | RESEARCH_CANDIDATE |
@@ -88,26 +86,28 @@ model board generated 2026-11-28T15:43:46.092588Z · simulations this update: 0 
 | Guadalajara vs Pachuca | Total goals over 3.5 | no | 0.6700 | 0.772 [0.633, 0.882] | +0.087 | +0.012 | 0.68 | - |  | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Lorient | Result: away | yes | 0.0600 | 0.165 [0.054, 0.312] | +0.101 | +0.012 | 0.07 | - |  | RESEARCH_CANDIDATE |
 | Cruz Azul vs León | home wins by more than 2.5 | yes | 0.1600 | 0.285 [0.139, 0.456] | +0.116 | +0.011 | 0.17 | - |  | RESEARCH_CANDIDATE |
+| Atlético Mineiro vs Vasco da Gama | btts | no | 0.4400 | 0.542 [0.420, 0.652] | +0.085 | +0.011 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Pachuca | Total goals over 1.5 | no | 0.2100 | 0.319 [0.188, 0.442] | +0.097 | +0.011 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Club América vs Monterrey | Result: draw | no | 0.7200 | 0.782 [0.726, 0.837] | +0.048 | +0.009 | 0.72 | - | * | RESEARCH_CANDIDATE |
 | Cruz Azul vs León | Result: away | no | 0.8000 | 0.869 [0.781, 0.942] | +0.058 | +0.008 | 0.8 | - |  | RESEARCH_CANDIDATE |
 | Borussia Dortmund vs Bayer Leverkusen | Result: away | no | 0.7000 | 0.802 [0.650, 0.931] | +0.088 | +0.006 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Pachuca | Result: home | no | 0.4200 | 0.529 [0.381, 0.668] | +0.092 | +0.005 | 0.42 | - | * | RESEARCH_CANDIDATE |
-| Club América vs Monterrey | Exact score 1-1 (home-away) | no | 0.8700 | 0.901 [0.872, 0.933] | +0.023 | +0.003 | 0.87 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Pachuca | Total goals over 5.5 | no | 0.9300 | 0.956 [0.910, 0.988] | +0.022 | +0.003 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | Guadalajara vs Pachuca | btts | no | 0.4500 | 0.543 [0.425, 0.652] | +0.076 | +0.001 | 0.45 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_MODEL_STALE: 452
-action_NO_EDGE: 701
-action_NO_QUOTE: 158
-action_RESEARCH_CANDIDATE: 35
-contract_sides: 1346
-fixtures: 44
+action_MODEL_STALE: 454
+action_NO_EDGE: 696
+action_NO_QUOTE: 156
+action_RESEARCH_CANDIDATE: 34
+contract_sides: 1340
+fixtures: 43
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
+
+Removed (kicked off): 1
 
 Each input has its own timestamp and freshness (model, kalshi, reference, lineup, context). Recompute at READ time: a price is CURRENT only before its `action_valid_until` (= kalshi.current_until); after that treat it as STALE_PRICE / NO ACTION and run REFRESH SOCCER SLATE. Only action == ACTIONABLE permits a bet (bet_permitted). Every model family is RESEARCH_ONLY, so RESEARCH_CANDIDATE is analysis only. Never pair a probability from this file with a price from another file or another time.
