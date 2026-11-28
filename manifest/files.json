@@ -4560,6 +4560,18 @@
       "recovery_id": null,
       "sha256_prefix": "577fdf965ca7454a4503a1498c1a2183f96634b7d9d9cd4f4cf8874607b2d67b"
     },
+    "claims/odds_api/65/65ed5ec4bbb2bef3dd72bdb758572271.json": {
+      "byte_length": 195,
+      "closed": true,
+      "day": null,
+      "first_manifested_at": "2026-11-28T00:05:54.699705Z",
+      "immutable": true,
+      "line_count": null,
+      "record_level": false,
+      "record_type": "dispatch_claim",
+      "recovery_id": null,
+      "sha256_prefix": "96c9b94958b04adeec083d639d4aa4ae5b377abd2f2145e3c2a98acf2e95dad1"
+    },
     "claims/odds_api/65/65ee46b8344827c4c7c138b2b18a4046.json": {
       "byte_length": 208,
       "closed": true,
@@ -19512,6 +19524,18 @@
       "recovery_id": null,
       "sha256_prefix": "7a6993d3b13375108bc3406f355a4d526675533a8791eab14fcd41b4abcddbb8"
     },
+    "claims/odds_api_calls/2026-11-28/kd-20261127T235931Z-soccer_usa_mls.json": {
+      "byte_length": 320,
+      "closed": true,
+      "day": "2026-11-28",
+      "first_manifested_at": "2026-11-28T00:05:54.881827Z",
+      "immutable": true,
+      "line_count": null,
+      "record_level": false,
+      "record_type": "dispatch_claim",
+      "recovery_id": null,
+      "sha256_prefix": "cd06b2793efd1b08c3f87750735fa0633e092fda9d9e2262e778e07c7da3dcc6"
+    },
     "dispatch/heartbeats/2026-09-30.jsonl": {
       "byte_length": 6914,
       "closed": true,
@@ -20341,7 +20365,7 @@
     },
     "dispatch/heartbeats/2026-11-25.jsonl": {
       "byte_length": 14006,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T01:00:27.681406Z",
       "immutable": false,
@@ -20376,16 +20400,16 @@
       "sha256_prefix": "f811684812844e064ed45f3fa6a0227c528868ab15c1ee3befb214062343be2f"
     },
     "dispatch/horizons.jsonl": {
-      "byte_length": 2502624,
+      "byte_length": 2503119,
       "closed": false,
       "day": null,
       "first_manifested_at": "2026-09-28T20:29:36.243164Z",
       "immutable": false,
-      "line_count": 5307,
+      "line_count": 5308,
       "record_level": false,
       "record_type": "horizon_log",
       "recovery_id": null,
-      "sha256_prefix": "c553154de7658177951136e923e3d4f812ecdece714b273ea4610770aacf45db"
+      "sha256_prefix": "00cf85a56320f9d1f106b2bcf565f7af17f16b596483c340ed4a051f5ed4de4f"
     },
     "dispatch/settle_runs.jsonl": {
       "byte_length": 1128262,
@@ -21143,7 +21167,7 @@
     },
     "dispatch/slate_log/2026-11-25.jsonl": {
       "byte_length": 178447,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T00:14:26.307184Z",
       "immutable": false,
@@ -21176,6 +21200,18 @@
       "record_type": "slate_reprice_log",
       "recovery_id": null,
       "sha256_prefix": "8de9be8357d9f6c39e02873a054e8a87d095c27363922bc216385f86c45782dd"
+    },
+    "dispatch/slate_log/2026-11-28.jsonl": {
+      "byte_length": 2674,
+      "closed": false,
+      "day": "2026-11-28",
+      "first_manifested_at": "2026-11-28T00:05:54.903399Z",
+      "immutable": false,
+      "line_count": 1,
+      "record_level": false,
+      "record_type": "slate_reprice_log",
+      "recovery_id": null,
+      "sha256_prefix": "7494ebb254c066c28aeb76898e5669fbc8ab83130247edd097a525d68cc8616d"
     },
     "fixtures/espn/2026-09-28/espn-034707.json": {
       "byte_length": 157757,
@@ -41722,7 +41758,7 @@
     },
     "lineups/2026-11-25/afc.champions.jsonl": {
       "byte_length": 200685,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T00:56:41.207618Z",
       "immutable": false,
@@ -41734,7 +41770,7 @@
     },
     "lineups/2026-11-25/arg.1.jsonl": {
       "byte_length": 10458,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T00:56:41.207687Z",
       "immutable": false,
@@ -41746,7 +41782,7 @@
     },
     "lineups/2026-11-25/bra.1.jsonl": {
       "byte_length": 36579,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T00:56:41.207791Z",
       "immutable": false,
@@ -41758,7 +41794,7 @@
     },
     "lineups/2026-11-25/col.1.jsonl": {
       "byte_length": 51825,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T00:56:41.207911Z",
       "immutable": false,
@@ -41770,7 +41806,7 @@
     },
     "lineups/2026-11-25/eng.2.jsonl": {
       "byte_length": 239832,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T00:56:41.208316Z",
       "immutable": false,
@@ -41782,7 +41818,7 @@
     },
     "lineups/2026-11-25/eng.3.jsonl": {
       "byte_length": 91379,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T00:56:41.208506Z",
       "immutable": false,
@@ -41794,7 +41830,7 @@
     },
     "lineups/2026-11-25/eng.4.jsonl": {
       "byte_length": 44996,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T00:56:41.208610Z",
       "immutable": false,
@@ -41806,7 +41842,7 @@
     },
     "lineups/2026-11-25/eng.5.jsonl": {
       "byte_length": 213182,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T00:56:41.208991Z",
       "immutable": false,
@@ -41818,7 +41854,7 @@
     },
     "lineups/2026-11-25/ita.2.jsonl": {
       "byte_length": 208600,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T00:56:41.209327Z",
       "immutable": false,
@@ -41830,7 +41866,7 @@
     },
     "lineups/2026-11-25/jpn.1.jsonl": {
       "byte_length": 111629,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T00:56:41.209384Z",
       "immutable": false,
@@ -41842,7 +41878,7 @@
     },
     "lineups/2026-11-25/ksa.1.jsonl": {
       "byte_length": 1691,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T21:54:09.493245Z",
       "immutable": false,
@@ -41854,7 +41890,7 @@
     },
     "lineups/2026-11-25/mex.1.jsonl": {
       "byte_length": 3920,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T00:56:41.209412Z",
       "immutable": false,
@@ -41866,7 +41902,7 @@
     },
     "lineups/2026-11-25/sco.1.jsonl": {
       "byte_length": 48723,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T00:56:41.209524Z",
       "immutable": false,
@@ -41878,7 +41914,7 @@
     },
     "lineups/2026-11-25/uefa.champions.jsonl": {
       "byte_length": 332880,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T00:56:41.210043Z",
       "immutable": false,
@@ -41890,7 +41926,7 @@
     },
     "lineups/2026-11-25/uefa.europa.conf.jsonl": {
       "byte_length": 10508,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T21:54:09.495621Z",
       "immutable": false,
@@ -41902,7 +41938,7 @@
     },
     "lineups/2026-11-25/uefa.europa.jsonl": {
       "byte_length": 10313,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T21:54:09.495842Z",
       "immutable": false,
@@ -41914,7 +41950,7 @@
     },
     "lineups/2026-11-25/usa.1.jsonl": {
       "byte_length": 25400,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T00:56:41.210116Z",
       "immutable": false,
@@ -42667,6 +42703,18 @@
       "record_type": "lineup",
       "recovery_id": null,
       "sha256_prefix": "23b3192d49887e94c3d51b729f4a510399305b37f1a9c9baf32fee0255de8aa6"
+    },
+    "lineups/2026-11-28/usa.1.jsonl": {
+      "byte_length": 2813,
+      "closed": false,
+      "day": "2026-11-28",
+      "first_manifested_at": "2026-11-28T00:05:55.130750Z",
+      "immutable": false,
+      "line_count": 5,
+      "record_level": true,
+      "record_type": "lineup",
+      "recovery_id": null,
+      "sha256_prefix": "529cf37878855af33e95e4579d2c7fe44bbc7a33fd947d86a0f020ded68892bb"
     },
     "lineups/history/eng.1.jsonl": {
       "byte_length": 5849432,
@@ -43482,7 +43530,7 @@
     },
     "odds_api/budget/2026-11-25.jsonl": {
       "byte_length": 11360,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T02:04:18.409460Z",
       "immutable": false,
@@ -43515,6 +43563,18 @@
       "record_type": "odds_api_budget",
       "recovery_id": null,
       "sha256_prefix": "cbfe301f7948f9709f670919852cabb0c8c16867fcd3a793434507363aa61f7b"
+    },
+    "odds_api/budget/2026-11-28.jsonl": {
+      "byte_length": 2241,
+      "closed": false,
+      "day": "2026-11-28",
+      "first_manifested_at": "2026-11-28T00:05:55.184734Z",
+      "immutable": false,
+      "line_count": 3,
+      "record_level": false,
+      "record_type": "odds_api_budget",
+      "recovery_id": null,
+      "sha256_prefix": "34affbfe68106372ad405e0d2e91ebe42e6419d2b8f7c74e8c8637314dd0a2a9"
     },
     "odds_api/raw/2026-09-29/kd-20260929T155452Z-soccer_uefa_nations_league.json.gz": {
       "byte_length": 477,
@@ -50908,6 +50968,18 @@
       "recovery_id": null,
       "sha256_prefix": "310f37b338e3b064fbd4bcc067878420d0928506abe410a902fcc1597d271d10"
     },
+    "odds_api/raw/2026-11-28/kd-20261127T235931Z-soccer_usa_mls.json.gz": {
+      "byte_length": 556,
+      "closed": true,
+      "day": "2026-11-28",
+      "first_manifested_at": "2026-11-28T00:05:55.272751Z",
+      "immutable": true,
+      "line_count": null,
+      "record_level": false,
+      "record_type": "odds_api_raw",
+      "recovery_id": null,
+      "sha256_prefix": "635ed6d8fea60ac5b058ec005c5be7969505976e0334fe46602cd6a5a8e276a8"
+    },
     "predictions/2026-09-27/predictions.jsonl": {
       "byte_length": 361328,
       "closed": true,
@@ -51720,7 +51792,7 @@
     },
     "predictions/2026-11-25/predictions.jsonl": {
       "byte_length": 3952463,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T01:14:30.575627Z",
       "immutable": false,
@@ -51753,6 +51825,18 @@
       "record_type": "prediction",
       "recovery_id": null,
       "sha256_prefix": "4acb24c563fdd4fc617d8b31ee7f89c8ce29088209ee1a4609594d0d02e7c0ab"
+    },
+    "predictions/2026-11-28/predictions.jsonl": {
+      "byte_length": 371953,
+      "closed": false,
+      "day": "2026-11-28",
+      "first_manifested_at": "2026-11-28T00:05:55.746815Z",
+      "immutable": false,
+      "line_count": 79,
+      "record_level": true,
+      "record_type": "prediction",
+      "recovery_id": null,
+      "sha256_prefix": "abf6a84778d2ece9d37545d9837778e382c0bb3533515b90a6297be9f7cf0c29"
     },
     "recovery/cmp-20261002T100019Z.json": {
       "byte_length": 6776,
@@ -59775,7 +59859,7 @@
     },
     "reference/2026-11-25/oddsapi-kd-20261125T015746Z.jsonl": {
       "byte_length": 7500,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T02:04:18.473349Z",
       "immutable": false,
@@ -59787,7 +59871,7 @@
     },
     "reference/2026-11-25/oddsapi-kd-20261125T024955Z.jsonl": {
       "byte_length": 7530,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T02:56:12.742822Z",
       "immutable": false,
@@ -59799,7 +59883,7 @@
     },
     "reference/2026-11-25/oddsapi-kd-20261125T220012Z.jsonl": {
       "byte_length": 7467,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T22:07:48.373607Z",
       "immutable": false,
@@ -59811,7 +59895,7 @@
     },
     "reference/2026-11-25/oddsapi-kd-20261125T224344Z.jsonl": {
       "byte_length": 7462,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T22:49:18.297617Z",
       "immutable": false,
@@ -59823,7 +59907,7 @@
     },
     "reference/2026-11-25/oddsapi-kd-20261125T235401Z.jsonl": {
       "byte_length": 7270,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T23:59:34.607494Z",
       "immutable": false,
@@ -60024,6 +60108,18 @@
       "record_type": "reference",
       "recovery_id": null,
       "sha256_prefix": "2a6e6046eb39b2e13dc9f54c1a705409cd21acedccace8f037121353758dd066"
+    },
+    "reference/2026-11-28/oddsapi-kd-20261127T235931Z.jsonl": {
+      "byte_length": 7331,
+      "closed": false,
+      "day": "2026-11-28",
+      "first_manifested_at": "2026-11-28T00:05:55.783625Z",
+      "immutable": false,
+      "line_count": 7,
+      "record_level": false,
+      "record_type": "reference",
+      "recovery_id": null,
+      "sha256_prefix": "59df2a24d899e0e9d236815321901774eca39346c271b4059cd2ee8acfd120e3"
     },
     "results/espn/arg.1.jsonl": {
       "byte_length": 860065,
@@ -113245,6 +113341,54 @@
       "recovery_id": null,
       "sha256_prefix": "cfa56f54ca065e71438af357579bd9e6e24c3b7ec5242e93a32770fb61f36709"
     },
+    "runs/2026-11-28/run-20261128T000326Z-30ea7a/RUN_SOCCER.md": {
+      "byte_length": 6365,
+      "closed": true,
+      "day": "2026-11-28",
+      "first_manifested_at": "2026-11-28T00:05:56.533521Z",
+      "immutable": true,
+      "line_count": null,
+      "record_level": false,
+      "record_type": "run_output",
+      "recovery_id": null,
+      "sha256_prefix": "a71075595b861fda5798e82083c19fa6a15b4b70078e981c9955847a0ada107c"
+    },
+    "runs/2026-11-28/run-20261128T000326Z-30ea7a/coverage.json": {
+      "byte_length": 635,
+      "closed": true,
+      "day": "2026-11-28",
+      "first_manifested_at": "2026-11-28T00:05:56.533729Z",
+      "immutable": true,
+      "line_count": null,
+      "record_level": false,
+      "record_type": "run_output",
+      "recovery_id": null,
+      "sha256_prefix": "1407205e6e77a42efcf7e3c04fbcb6740635bf72ae1cea661a1b3c16a9665823"
+    },
+    "runs/2026-11-28/run-20261128T000326Z-30ea7a/fast_reconcile.json": {
+      "byte_length": 1745,
+      "closed": true,
+      "day": "2026-11-28",
+      "first_manifested_at": "2026-11-28T00:05:56.533909Z",
+      "immutable": true,
+      "line_count": null,
+      "record_level": false,
+      "record_type": "run_output",
+      "recovery_id": null,
+      "sha256_prefix": "e40858e960a2bf060cc3b7111e578028a1c7ddbe41646d44faed6041c5a5a8ae"
+    },
+    "runs/2026-11-28/run-20261128T000326Z-30ea7a/run_output.v1.json": {
+      "byte_length": 48829,
+      "closed": true,
+      "day": "2026-11-28",
+      "first_manifested_at": "2026-11-28T00:05:56.534174Z",
+      "immutable": true,
+      "line_count": null,
+      "record_level": false,
+      "record_type": "run_output",
+      "recovery_id": null,
+      "sha256_prefix": "5e478ee32cd5d63db70a849d517803e741df772ec569f307f86768c246cb60e3"
+    },
     "settlements/2026-09-28/predictions.jsonl": {
       "byte_length": 810853,
       "closed": true,
@@ -113982,7 +114126,7 @@
     },
     "settlements/2026-11-25/predictions.jsonl": {
       "byte_length": 1155077,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T01:05:22.638840Z",
       "immutable": false,
@@ -174008,7 +174152,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T001214Z.jsonl": {
       "byte_length": 1030284,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T00:14:26.757224Z",
       "immutable": false,
@@ -174020,7 +174164,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T002715Z.jsonl": {
       "byte_length": 647896,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T00:30:02.045632Z",
       "immutable": false,
@@ -174032,7 +174176,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T004216Z.jsonl": {
       "byte_length": 604299,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T00:44:37.189484Z",
       "immutable": false,
@@ -174044,7 +174188,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T005638Z.jsonl": {
       "byte_length": 472687,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T01:00:28.118157Z",
       "immutable": false,
@@ -174056,7 +174200,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T011137Z.jsonl": {
       "byte_length": 587541,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T01:14:35.150173Z",
       "immutable": false,
@@ -174068,7 +174212,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T013113Z.jsonl": {
       "byte_length": 587128,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T01:33:47.722255Z",
       "immutable": false,
@@ -174080,7 +174224,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T014613Z.jsonl": {
       "byte_length": 442495,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T01:48:43.956786Z",
       "immutable": false,
@@ -174092,7 +174236,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T020109Z.jsonl": {
       "byte_length": 568491,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T02:04:18.894637Z",
       "immutable": false,
@@ -174104,7 +174248,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T021607Z.jsonl": {
       "byte_length": 675704,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T02:19:23.046613Z",
       "immutable": false,
@@ -174116,7 +174260,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T023110Z.jsonl": {
       "byte_length": 426722,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T02:34:11.999942Z",
       "immutable": false,
@@ -174128,7 +174272,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T024608Z.jsonl": {
       "byte_length": 394716,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T02:48:54.666621Z",
       "immutable": false,
@@ -174140,7 +174284,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T025317Z.jsonl": {
       "byte_length": 293336,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T02:56:17.506728Z",
       "immutable": false,
@@ -174152,7 +174296,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T030045Z.jsonl": {
       "byte_length": 445942,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T03:03:33.715429Z",
       "immutable": false,
@@ -174164,7 +174308,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T050600Z.jsonl": {
       "byte_length": 1170389,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T05:09:10.258025Z",
       "immutable": false,
@@ -174176,7 +174320,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T110653Z.jsonl": {
       "byte_length": 2025820,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T11:09:53.632015Z",
       "immutable": false,
@@ -174188,7 +174332,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T112152Z.jsonl": {
       "byte_length": 476610,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T11:23:59.184708Z",
       "immutable": false,
@@ -174200,7 +174344,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T113724Z.jsonl": {
       "byte_length": 575909,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T11:39:36.453484Z",
       "immutable": false,
@@ -174212,7 +174356,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T115224Z.jsonl": {
       "byte_length": 379013,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T11:54:33.645378Z",
       "immutable": false,
@@ -174224,7 +174368,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T120725Z.jsonl": {
       "byte_length": 767505,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T12:10:00.533469Z",
       "immutable": false,
@@ -174236,7 +174380,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T122225Z.jsonl": {
       "byte_length": 1028679,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T12:24:36.073391Z",
       "immutable": false,
@@ -174248,7 +174392,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T124138Z.jsonl": {
       "byte_length": 477158,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T12:44:22.327785Z",
       "immutable": false,
@@ -174260,7 +174404,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T125637Z.jsonl": {
       "byte_length": 1100811,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T12:59:32.049268Z",
       "immutable": false,
@@ -174272,7 +174416,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T131206Z.jsonl": {
       "byte_length": 1054809,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T13:15:23.543192Z",
       "immutable": false,
@@ -174284,7 +174428,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T132706Z.jsonl": {
       "byte_length": 1035393,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T13:29:18.965128Z",
       "immutable": false,
@@ -174296,7 +174440,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T134209Z.jsonl": {
       "byte_length": 1129104,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T13:44:47.075534Z",
       "immutable": false,
@@ -174308,7 +174452,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T135709Z.jsonl": {
       "byte_length": 966985,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T13:59:52.137824Z",
       "immutable": false,
@@ -174320,7 +174464,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T141210Z.jsonl": {
       "byte_length": 707152,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T14:14:41.780228Z",
       "immutable": false,
@@ -174332,7 +174476,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T142710Z.jsonl": {
       "byte_length": 635271,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T14:30:09.588082Z",
       "immutable": false,
@@ -174344,7 +174488,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T144213Z.jsonl": {
       "byte_length": 490858,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T14:44:40.999042Z",
       "immutable": false,
@@ -174356,7 +174500,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T145713Z.jsonl": {
       "byte_length": 473142,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T14:59:26.865975Z",
       "immutable": false,
@@ -174368,7 +174512,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T151214Z.jsonl": {
       "byte_length": 529257,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T15:14:53.827080Z",
       "immutable": false,
@@ -174380,7 +174524,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T152714Z.jsonl": {
       "byte_length": 758678,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T15:30:27.823498Z",
       "immutable": false,
@@ -174392,7 +174536,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T154216Z.jsonl": {
       "byte_length": 700412,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T15:44:56.390601Z",
       "immutable": false,
@@ -174404,7 +174548,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T155716Z.jsonl": {
       "byte_length": 460307,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T16:00:00.355325Z",
       "immutable": false,
@@ -174416,7 +174560,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T161218Z.jsonl": {
       "byte_length": 529835,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T16:15:16.806720Z",
       "immutable": false,
@@ -174428,7 +174572,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T162718Z.jsonl": {
       "byte_length": 397129,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T16:29:53.939470Z",
       "immutable": false,
@@ -174440,7 +174584,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T164222Z.jsonl": {
       "byte_length": 431703,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T16:45:24.325431Z",
       "immutable": false,
@@ -174452,7 +174596,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T165719Z.jsonl": {
       "byte_length": 398515,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T17:00:24.140744Z",
       "immutable": false,
@@ -174464,7 +174608,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T171221Z.jsonl": {
       "byte_length": 437847,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T17:14:51.149450Z",
       "immutable": false,
@@ -174476,7 +174620,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T172721Z.jsonl": {
       "byte_length": 492043,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T17:30:26.254599Z",
       "immutable": false,
@@ -174488,7 +174632,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T174027Z.jsonl": {
       "byte_length": 503000,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T17:42:53.142763Z",
       "immutable": false,
@@ -174500,7 +174644,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T174222Z.jsonl": {
       "byte_length": 510289,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T17:48:02.762367Z",
       "immutable": false,
@@ -174512,7 +174656,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T175722Z.jsonl": {
       "byte_length": 640930,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T17:59:43.170251Z",
       "immutable": false,
@@ -174524,7 +174668,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T181704Z.jsonl": {
       "byte_length": 1151711,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T18:22:58.969073Z",
       "immutable": false,
@@ -174536,7 +174680,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T183203Z.jsonl": {
       "byte_length": 696212,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T18:34:19.282590Z",
       "immutable": false,
@@ -174548,7 +174692,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T184733Z.jsonl": {
       "byte_length": 823044,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T18:50:12.285812Z",
       "immutable": false,
@@ -174560,7 +174704,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T190233Z.jsonl": {
       "byte_length": 776973,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T19:04:59.200308Z",
       "immutable": false,
@@ -174572,7 +174716,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T191735Z.jsonl": {
       "byte_length": 563469,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T19:20:09.501480Z",
       "immutable": false,
@@ -174584,7 +174728,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T193235Z.jsonl": {
       "byte_length": 557721,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T19:35:46.803220Z",
       "immutable": false,
@@ -174596,7 +174740,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T194737Z.jsonl": {
       "byte_length": 795934,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T19:50:32.000989Z",
       "immutable": false,
@@ -174608,7 +174752,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T200237Z.jsonl": {
       "byte_length": 629770,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T20:04:49.278756Z",
       "immutable": false,
@@ -174620,7 +174764,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T201739Z.jsonl": {
       "byte_length": 927193,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T20:20:37.019334Z",
       "immutable": false,
@@ -174632,7 +174776,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T203239Z.jsonl": {
       "byte_length": 681370,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T20:35:06.880408Z",
       "immutable": false,
@@ -174644,7 +174788,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T204741Z.jsonl": {
       "byte_length": 490368,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T20:50:35.395776Z",
       "immutable": false,
@@ -174656,7 +174800,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T205437Z.jsonl": {
       "byte_length": 406429,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T20:57:00.295346Z",
       "immutable": false,
@@ -174668,7 +174812,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T210937Z.jsonl": {
       "byte_length": 573504,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T21:11:47.708764Z",
       "immutable": false,
@@ -174680,7 +174824,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T212440Z.jsonl": {
       "byte_length": 677201,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T21:27:01.074427Z",
       "immutable": false,
@@ -174692,7 +174836,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T213940Z.jsonl": {
       "byte_length": 645441,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T21:42:17.580150Z",
       "immutable": false,
@@ -174704,7 +174848,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T215441Z.jsonl": {
       "byte_length": 541467,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T21:59:26.137445Z",
       "immutable": false,
@@ -174716,7 +174860,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T220328Z.jsonl": {
       "byte_length": 915325,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T22:07:51.323071Z",
       "immutable": false,
@@ -174728,7 +174872,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T221831Z.jsonl": {
       "byte_length": 780942,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T22:21:01.813382Z",
       "immutable": false,
@@ -174740,7 +174884,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T223315Z.jsonl": {
       "byte_length": 547015,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T22:35:41.551218Z",
       "immutable": false,
@@ -174752,7 +174896,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T224702Z.jsonl": {
       "byte_length": 456385,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T22:49:21.015510Z",
       "immutable": false,
@@ -174764,7 +174908,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T225321Z.jsonl": {
       "byte_length": 298229,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T22:56:10.028741Z",
       "immutable": false,
@@ -174776,7 +174920,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T230013Z.jsonl": {
       "byte_length": 416664,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T23:02:19.768230Z",
       "immutable": false,
@@ -174788,7 +174932,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T231513Z.jsonl": {
       "byte_length": 643467,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T23:17:58.364683Z",
       "immutable": false,
@@ -174800,7 +174944,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T233015Z.jsonl": {
       "byte_length": 565105,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T23:32:47.764094Z",
       "immutable": false,
@@ -174812,7 +174956,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T233647Z.jsonl": {
       "byte_length": 387633,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T23:39:15.348607Z",
       "immutable": false,
@@ -174824,7 +174968,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T235118Z.jsonl": {
       "byte_length": 445912,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T23:53:21.402232Z",
       "immutable": false,
@@ -174836,7 +174980,7 @@
     },
     "snapshots/2026-11-25/cap-20261125T235717Z.jsonl": {
       "byte_length": 286393,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T23:59:34.850881Z",
       "immutable": false,
@@ -176730,6 +176874,18 @@
       "recovery_id": null,
       "sha256_prefix": "e7496962bb318e07bb8dc0b9ba63676ff3527354724deb0e569d73db77b5493c"
     },
+    "snapshots/2026-11-28/cap-20261128T000311Z.jsonl": {
+      "byte_length": 800901,
+      "closed": false,
+      "day": "2026-11-28",
+      "first_manifested_at": "2026-11-28T00:06:00.841277Z",
+      "immutable": false,
+      "line_count": 988,
+      "record_level": false,
+      "record_type": "kalshi_snapshot",
+      "recovery_id": null,
+      "sha256_prefix": "e2291f023019a63b008a544b865ab5d46144b5367f24bda97fd547be70369348"
+    },
     "weather/2026-09-28.jsonl": {
       "byte_length": 42237,
       "closed": true,
@@ -177542,7 +177698,7 @@
     },
     "weather/2026-11-25.jsonl": {
       "byte_length": 26425,
-      "closed": false,
+      "closed": true,
       "day": "2026-11-25",
       "first_manifested_at": "2026-11-25T00:56:41.497631Z",
       "immutable": false,
@@ -177575,8 +177731,20 @@
       "record_type": "weather",
       "recovery_id": null,
       "sha256_prefix": "4d85591c068d5ce80be142076f91a057417980106947dc90bd6393e985c6fdc1"
+    },
+    "weather/2026-11-28.jsonl": {
+      "byte_length": 3266,
+      "closed": false,
+      "day": "2026-11-28",
+      "first_manifested_at": "2026-11-28T00:06:00.842434Z",
+      "immutable": false,
+      "line_count": 6,
+      "record_level": true,
+      "record_type": "weather",
+      "recovery_id": null,
+      "sha256_prefix": "3f520391cac0a35f92624927eaa5ed96a69b879a73b31e890508b1bfae396e4f"
     }
   },
   "manifest_version": 1,
-  "updated_at": "2026-11-27T23:51:09.462166Z"
+  "updated_at": "2026-11-28T00:06:00.843237Z"
 }
