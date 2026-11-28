@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261128T064352Z-e6398f` · generated 2026-11-28T06:43:52.851831Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261128T065852Z-adefad` · generated 2026-11-28T06:58:52.950283Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-28T06:40:14.088002Z (CURRENT at publish; CURRENT until 2026-11-28T07:00:14.088002Z, STALE after 2026-11-28T07:10:14.088002Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-28T06:55:14.120549Z (CURRENT at publish; CURRENT until 2026-11-28T07:15:14.120549Z, STALE after 2026-11-28T07:25:14.120549Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-28T03:13:43.981606Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.71s
+model board generated 2026-11-28T03:13:43.981606Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.54s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -101,7 +101,6 @@ model board generated 2026-11-28T03:13:43.981606Z · simulations this update: 0 
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 2.5 | no | 0.4600 | 0.600 [0.445, 0.745] | +0.122 | +0.032 | 0.49 | - |  | RESEARCH_CANDIDATE |
 | Real Madrid vs Deportivo Alavés | Result: draw | yes | 0.1000 | 0.187 [0.107, 0.263] | +0.081 | +0.032 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | Atlético Mineiro vs Vasco da Gama | btts | no | 0.4200 | 0.542 [0.420, 0.652] | +0.105 | +0.031 | 0.45 | - | * | RESEARCH_CANDIDATE |
-| Cruz Azul vs León | Result: home | yes | 0.5600 | 0.696 [0.552, 0.831] | +0.119 | +0.031 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Udinese vs Fiorentina | Result: home | yes | 0.3100 | 0.481 [0.300, 0.687] | +0.156 | +0.030 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | Total goals over 1.5 | no | 0.1800 | 0.301 [0.182, 0.426] | +0.110 | +0.029 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Club América vs Monterrey | Result: draw | no | 0.7000 | 0.782 [0.726, 0.837] | +0.067 | +0.029 | 0.72 | - | * | RESEARCH_CANDIDATE |
@@ -114,6 +113,7 @@ model board generated 2026-11-28T03:13:43.981606Z · simulations this update: 0 
 | Deportivo La Coruña vs FC Barcelona | Result: home | yes | 0.0900 | 0.239 [0.078, 0.435] | +0.143 | +0.023 | 0.11 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 4.5 | no | 0.8400 | 0.908 [0.831, 0.967] | +0.059 | +0.023 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Lorient | Result: draw | yes | 0.1200 | 0.210 [0.115, 0.299] | +0.083 | +0.022 | 0.14 | - |  | RESEARCH_CANDIDATE |
+| Cruz Azul vs León | Result: home | yes | 0.5700 | 0.696 [0.552, 0.831] | +0.109 | +0.021 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Atlético Mineiro vs Vasco da Gama | Result: away | no | 0.6450 | 0.750 [0.636, 0.859] | +0.088 | +0.021 | 0.66 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
