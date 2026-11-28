@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-28T02:47:40.597060+00:00",
+  "as_of": "2026-11-28T13:12:56.509918+00:00",
   "events": 618,
   "events_skipped_unmapped": 345,
   "fixtures_mapped": 273,
   "health": {
     "reasons": [
-      "weather_failures:6",
-      "weather_stopped:consecutive_failures:skipped=63"
+      "weather_failures:3",
+      "weather_stopped:consecutive_failures:skipped=81"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 150,
+    "captured": 137,
     "events": 150,
     "failures": [],
-    "published_post": 1,
-    "published_pre_kickoff": 0,
-    "unchanged": 0,
-    "unpublished": 149
+    "published_post": 14,
+    "published_pre_kickoff": 2,
+    "unchanged": 13,
+    "unpublished": 134
   },
   "map_proposals": {
     "bel.1": {
@@ -477,7 +477,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 9,
+  "results_appended": 2,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -697,20 +697,17 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 23,
-    "events": 92,
+    "captured": 12,
+    "events": 96,
     "failures": [
-      "401878927: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Liege&count=5&language=en&forma",
-      "401878925: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Saint-Gilles&count=5&language=e",
-      "401850704: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Concepci\u00f3n&count=5&language=en&",
-      "401850703: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Vina%20del%20Mar&count=5&langua",
-      "401850707: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Chill\u00e1n&count=5&language=en&for",
-      "401850701: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=La%20Calera&count=5&language=en"
+      "401878931: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Lommel&count=5&language=en&form",
+      "401878933: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Charleroi&count=5&language=en&f",
+      "401878926: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Sint-Truiden&count=5&language=e"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 63,
+    "skipped": 81,
     "stopped": "consecutive_failures"
   }
 }
