@@ -1,10 +1,32 @@
 {
-  "batch_id": "kd-20261128T142958Z",
-  "captured_at": "2026-11-28T14:33:41.932727Z",
+  "batch_id": "kd-20261128T144458Z",
+  "captured_at": "2026-11-28T14:48:39.171453Z",
   "credits_charged": 0,
-  "eligible_fixtures": 0,
+  "eligible_fixtures": 10,
   "no_sport_key": [],
   "paid_calls": 0,
+  "per_sport": {
+    "soccer_epl": {
+      "fixtures": 10,
+      "join": {
+        "ambiguous": 0,
+        "events": 3,
+        "joined": 3,
+        "unjoined_fixtures": [
+          "fx:eng.premier_league:2026-27:eng.arsenal:eng.man_city:matchday_12",
+          "fx:eng.premier_league:2026-27:eng.brighton:eng.newcastle:matchday_12",
+          "fx:eng.premier_league:2026-27:eng.crystal_palace:eng.hull:matchday_12",
+          "fx:eng.premier_league:2026-27:eng.everton:eng.liverpool:matchday_12",
+          "fx:eng.premier_league:2026-27:eng.fulham:eng.bournemouth:matchday_12",
+          "fx:eng.premier_league:2026-27:eng.nottm_forest:eng.chelsea:matchday_12",
+          "fx:eng.premier_league:2026-27:eng.sunderland:eng.tottenham:matchday_12"
+        ],
+        "unresolved_names": []
+      },
+      "status": "BLOCKED_BUDGET_GUARD:STALE_SCHEDULE"
+    }
+  },
+  "remaining_after": 19376,
   "snapshots": 0,
-  "status": "NOTHING_ELIGIBLE"
+  "status": "OK"
 }
