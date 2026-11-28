@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261128T160515Z-fe7d6c` · generated 2026-11-28T16:05:15.081975Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261128T161210Z-45abea` · generated 2026-11-28T16:12:10.283640Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-28T16:01:33.935977Z (CURRENT at publish; CURRENT until 2026-11-28T16:21:33.935977Z, STALE after 2026-11-28T16:31:33.935977Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-28T16:08:29.476723Z (CURRENT at publish; CURRENT until 2026-11-28T16:28:29.476723Z, STALE after 2026-11-28T16:38:29.476723Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-28T15:43:46.092588Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.43s
+model board generated 2026-11-28T15:43:46.092588Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.44s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -82,27 +82,27 @@ model board generated 2026-11-28T15:43:46.092588Z · simulations this update: 0 
 | Cruz Azul vs León | home wins by more than 1.5 | yes | 0.3300 | 0.480 [0.310, 0.658] | +0.135 | +0.022 | 0.35 | - | * | RESEARCH_CANDIDATE |
 | Atlético Mineiro vs Vasco da Gama | btts | no | 0.4300 | 0.542 [0.420, 0.652] | +0.095 | +0.021 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Cruz Azul vs León | Result: home | yes | 0.5700 | 0.696 [0.552, 0.831] | +0.109 | +0.021 | 0.59 | - | * | RESEARCH_CANDIDATE |
-| Club América vs Monterrey | Result: draw | no | 0.7100 | 0.782 [0.726, 0.837] | +0.057 | +0.019 | 0.72 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Pachuca | Total goals over 2.5 | no | 0.4400 | 0.573 [0.409, 0.716] | +0.116 | +0.018 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | SC Freiburg vs RB Leipzig | Result: home | yes | 0.3600 | 0.531 [0.320, 0.747] | +0.155 | +0.016 | 0.37 | - |  | RESEARCH_CANDIDATE |
 | Atlético Mineiro vs Vasco da Gama | Result: away | no | 0.6500 | 0.750 [0.636, 0.859] | +0.084 | +0.016 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Pachuca | Total goals over 3.5 | no | 0.6700 | 0.772 [0.633, 0.882] | +0.087 | +0.012 | 0.68 | - |  | RESEARCH_CANDIDATE |
+| Paris Saint-Germain vs Lorient | Result: away | yes | 0.0600 | 0.165 [0.054, 0.312] | +0.101 | +0.012 | 0.07 | - |  | RESEARCH_CANDIDATE |
 | Cruz Azul vs León | home wins by more than 2.5 | yes | 0.1600 | 0.285 [0.139, 0.456] | +0.116 | +0.011 | 0.17 | - |  | RESEARCH_CANDIDATE |
 | Guadalajara vs Pachuca | Total goals over 1.5 | no | 0.2100 | 0.319 [0.188, 0.442] | +0.097 | +0.011 | 0.22 | - |  | RESEARCH_CANDIDATE |
+| Club América vs Monterrey | Result: draw | no | 0.7200 | 0.782 [0.726, 0.837] | +0.048 | +0.009 | 0.72 | - | * | RESEARCH_CANDIDATE |
 | Cruz Azul vs León | Result: away | no | 0.8000 | 0.869 [0.781, 0.942] | +0.058 | +0.008 | 0.8 | - |  | RESEARCH_CANDIDATE |
 | Borussia Dortmund vs Bayer Leverkusen | Result: away | no | 0.7000 | 0.802 [0.650, 0.931] | +0.088 | +0.006 | 0.7 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Pachuca | Result: home | no | 0.4200 | 0.529 [0.381, 0.668] | +0.092 | +0.005 | 0.42 | - | * | RESEARCH_CANDIDATE |
 | Club América vs Monterrey | Exact score 1-1 (home-away) | no | 0.8700 | 0.901 [0.872, 0.933] | +0.023 | +0.003 | 0.87 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Pachuca | Total goals over 5.5 | no | 0.9300 | 0.956 [0.910, 0.988] | +0.022 | +0.003 | 0.93 | - |  | RESEARCH_CANDIDATE |
 | Guadalajara vs Pachuca | btts | no | 0.4500 | 0.543 [0.425, 0.652] | +0.076 | +0.001 | 0.45 | - | * | RESEARCH_CANDIDATE |
-| Paris Saint-Germain vs Lorient | Result: away | yes | 0.0700 | 0.165 [0.054, 0.312] | +0.090 | +0.001 | 0.07 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_MODEL_STALE: 456
-action_NO_EDGE: 705
-action_NO_QUOTE: 150
+action_MODEL_STALE: 452
+action_NO_EDGE: 701
+action_NO_QUOTE: 158
 action_RESEARCH_CANDIDATE: 35
 contract_sides: 1346
 fixtures: 44
