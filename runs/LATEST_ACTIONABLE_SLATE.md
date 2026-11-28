@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261128T010154Z-b5af0d` · generated 2026-11-28T01:01:54.154647Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
+slate `slate-20261128T011659Z-61a634` · generated 2026-11-28T01:16:59.538126Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
 
-**Kalshi prices observed 2026-11-28T00:58:11.467376Z (CURRENT at publish; CURRENT until 2026-11-28T01:18:11.467376Z, STALE after 2026-11-28T01:28:11.467376Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-28T01:13:13.593157Z (CURRENT at publish; CURRENT until 2026-11-28T01:33:13.593157Z, STALE after 2026-11-28T01:43:13.593157Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-28T00:03:26.151791Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.52s
+model board generated 2026-11-28T01:16:56.530322Z · simulations this update: 1 · Odds API calls this update: 0 (credits 0) · reprice 0.53s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -69,8 +69,9 @@ model board generated 2026-11-28T00:03:26.151791Z · simulations this update: 0 
 | 2026-11-29T21:30:00Z | Internacional vs Red Bull Bragantino (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-29T21:30:00Z | Mirassol vs Athletico Paranaense (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-29T22:30:00Z | Atlético Mineiro vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
+| 2026-11-30T01:07:00Z | Guadalajara vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (85; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (91; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -104,25 +105,25 @@ model board generated 2026-11-28T00:03:26.151791Z · simulations this update: 0 
 | Paris Saint-Germain vs Lorient | Result: home | no | 0.1800 | 0.373 [0.181, 0.575] | +0.183 | +0.044 | 0.22 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 4.5 | no | 0.8200 | 0.908 [0.831, 0.967] | +0.078 | +0.042 | 0.86 | - |  | RESEARCH_CANDIDATE |
 | Real Madrid vs Deportivo Alavés | Result: draw | yes | 0.0900 | 0.187 [0.107, 0.263] | +0.091 | +0.042 | 0.12 | - |  | RESEARCH_CANDIDATE |
-| Atlético Mineiro vs Vasco da Gama | btts | no | 0.4100 | 0.542 [0.420, 0.652] | +0.115 | +0.041 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Nashville SC | Total goals over 1.5 | no | 0.1600 | 0.286 [0.175, 0.399] | +0.117 | +0.040 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Udinese vs Fiorentina | Result: away | no | 0.5800 | 0.724 [0.560, 0.873] | +0.127 | +0.036 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | Total goals over 3.5 | no | 0.6300 | 0.758 [0.626, 0.874] | +0.112 | +0.035 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Real Salt Lake vs Vancouver Whitecaps | Total goals over 2.5 | no | 0.4200 | 0.561 [0.413, 0.700] | +0.124 | +0.032 | 0.45 | - |  | RESEARCH_CANDIDATE |
+| Atlético Mineiro vs Vasco da Gama | btts | no | 0.4200 | 0.542 [0.420, 0.652] | +0.105 | +0.031 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | Total goals over 2.5 | no | 0.4100 | 0.555 [0.402, 0.703] | +0.128 | +0.031 | 0.44 | - |  | RESEARCH_CANDIDATE |
 | Udinese vs Fiorentina | Result: home | yes | 0.3100 | 0.481 [0.301, 0.685] | +0.156 | +0.030 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | btts | no | 0.3900 | 0.513 [0.393, 0.628] | +0.106 | +0.030 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | Total goals over 1.5 | no | 0.1800 | 0.301 [0.182, 0.426] | +0.110 | +0.029 | 0.2 | - |  | RESEARCH_CANDIDATE |
-| Real Salt Lake vs Vancouver Whitecaps | Total goals over 1.5 | no | 0.1900 | 0.309 [0.191, 0.430] | +0.108 | +0.029 | 0.21 | - |  | RESEARCH_CANDIDATE |
+| Botafogo vs Bahia | Total goals over 4.5 | no | 0.8000 | 0.886 [0.799, 0.956] | +0.075 | +0.029 | 0.83 | - |  | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1161
-action_NO_QUOTE: 156
-action_RESEARCH_CANDIDATE: 85
-contract_sides: 1402
-fixtures: 57
+action_NO_EDGE: 1182
+action_NO_QUOTE: 157
+action_RESEARCH_CANDIDATE: 91
+contract_sides: 1430
+fixtures: 58
 fixtures_model_invalidated: 0
 fixtures_model_missing: 0
 ```
