@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261128T065852Z-adefad` · generated 2026-11-28T06:58:52.950283Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261128T071354Z-2cd15c` · generated 2026-11-28T07:13:54.262811Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-28T06:55:14.120549Z (CURRENT at publish; CURRENT until 2026-11-28T07:15:14.120549Z, STALE after 2026-11-28T07:25:14.120549Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-28T07:10:15.497656Z (CURRENT at publish; CURRENT until 2026-11-28T07:30:15.497656Z, STALE after 2026-11-28T07:40:15.497656Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-28T03:13:43.981606Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.54s
+model board generated 2026-11-28T03:13:43.981606Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.71s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -71,7 +71,7 @@ model board generated 2026-11-28T03:13:43.981606Z · simulations this update: 0 
 | 2026-11-30T01:07:00Z | Guadalajara vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-30T03:00:00Z | Cruz Azul vs León (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 
-## Candidates on CURRENT prices (60; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (61; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -91,13 +91,13 @@ model board generated 2026-11-28T03:13:43.981606Z · simulations this update: 0 
 | Everton vs Liverpool | Result: home | yes | 0.2100 | 0.400 [0.222, 0.599] | +0.179 | +0.051 | 0.25 | - |  | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Nashville SC | Total goals over 4.5 | no | 0.7700 | 0.875 [0.787, 0.946] | +0.093 | +0.046 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Lorient | Result: home | no | 0.1800 | 0.375 [0.177, 0.589] | +0.185 | +0.044 | 0.22 | - | * | RESEARCH_CANDIDATE |
+| Houston Dynamo vs San Jose Earthquakes | Total goals over 3.5 | no | 0.6700 | 0.794 [0.669, 0.900] | +0.108 | +0.043 | 0.71 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | Total goals over 2.5 | no | 0.4000 | 0.555 [0.402, 0.703] | +0.138 | +0.041 | 0.44 | - |  | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Nashville SC | Total goals over 1.5 | no | 0.1600 | 0.286 [0.175, 0.399] | +0.117 | +0.040 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | btts | no | 0.3800 | 0.513 [0.393, 0.628] | +0.116 | +0.040 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | Total goals over 4.5 | no | 0.7900 | 0.886 [0.799, 0.956] | +0.084 | +0.039 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | Udinese vs Fiorentina | Result: away | no | 0.5800 | 0.724 [0.560, 0.874] | +0.127 | +0.035 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | SC Freiburg vs RB Leipzig | Result: away | no | 0.6000 | 0.749 [0.572, 0.898] | +0.132 | +0.033 | 0.63 | - | * | RESEARCH_CANDIDATE |
-| Houston Dynamo vs San Jose Earthquakes | Total goals over 3.5 | no | 0.6800 | 0.794 [0.669, 0.900] | +0.099 | +0.033 | 0.71 | - | * | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 2.5 | no | 0.4600 | 0.600 [0.445, 0.745] | +0.122 | +0.032 | 0.49 | - |  | RESEARCH_CANDIDATE |
 | Real Madrid vs Deportivo Alavés | Result: draw | yes | 0.1000 | 0.187 [0.107, 0.263] | +0.081 | +0.032 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | Atlético Mineiro vs Vasco da Gama | btts | no | 0.4200 | 0.542 [0.420, 0.652] | +0.105 | +0.031 | 0.45 | - | * | RESEARCH_CANDIDATE |
@@ -121,8 +121,8 @@ model board generated 2026-11-28T03:13:43.981606Z · simulations this update: 0 
 ```
 action_MODEL_STALE: 102
 action_NO_EDGE: 1107
-action_NO_QUOTE: 161
-action_RESEARCH_CANDIDATE: 60
+action_NO_QUOTE: 160
+action_RESEARCH_CANDIDATE: 61
 contract_sides: 1430
 fixtures: 58
 fixtures_model_invalidated: 0
