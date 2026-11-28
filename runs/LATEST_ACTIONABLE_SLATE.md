@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261128T164843Z-f4957a` · generated 2026-11-28T16:48:43.471114Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261128T165841Z-dbca3c` · generated 2026-11-28T16:58:41.012952Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-28T16:45:02.093198Z (CURRENT at publish; CURRENT until 2026-11-28T17:05:02.093198Z, STALE after 2026-11-28T17:15:02.093198Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-28T16:55:00.082778Z (CURRENT at publish; CURRENT until 2026-11-28T17:15:00.082778Z, STALE after 2026-11-28T17:25:00.082778Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-28T16:34:10.076303Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.66s
+model board generated 2026-11-28T16:34:10.076303Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.46s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -60,27 +60,27 @@ model board generated 2026-11-28T16:34:10.076303Z · simulations this update: 0 
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Málaga vs Athletic Club | Result: away | no | 0.0500 | 0.605 [0.388, 0.807] | +0.552 | +0.413 | 0.44 | - | * | RESEARCH_CANDIDATE |
+| Málaga vs Athletic Club | Result: away | no | 0.0300 | 0.605 [0.388, 0.807] | +0.573 | +0.434 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | Result: home | yes | 0.3400 | 0.651 [0.511, 0.788] | +0.295 | +0.205 | 0.54 | - | * | RESEARCH_CANDIDATE |
+| Málaga vs Athletic Club | Result: draw | yes | 0.0300 | 0.278 [0.198, 0.358] | +0.246 | +0.193 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Málaga vs Athletic Club | Result: home | yes | 0.0100 | 0.327 [0.146, 0.552] | +0.316 | +0.181 | 0.18 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | Result: away | no | 0.5800 | 0.831 [0.734, 0.915] | +0.234 | +0.181 | 0.76 | - |  | RESEARCH_CANDIDATE |
-| Málaga vs Athletic Club | Result: draw | yes | 0.0500 | 0.278 [0.198, 0.358] | +0.225 | +0.172 | 0.21 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | away team total over 1.5 | no | 0.4300 | 0.689 [0.562, 0.804] | +0.242 | +0.170 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | home wins by more than 1.5 | yes | 0.1600 | 0.439 [0.290, 0.604] | +0.269 | +0.159 | 0.31 | - | * | RESEARCH_CANDIDATE |
-| Charlotte FC vs Chicago Fire | away team total over 2.5 | no | 0.7100 | 0.888 [0.812, 0.951] | +0.164 | +0.126 | 0.84 | - |  | RESEARCH_CANDIDATE |
+| Charlotte FC vs Chicago Fire | away team total over 2.5 | no | 0.7000 | 0.888 [0.812, 0.951] | +0.174 | +0.136 | 0.84 | - |  | RESEARCH_CANDIDATE |
+| Elche vs Atlético Madrid | Result: away | no | 0.3300 | 0.588 [0.390, 0.764] | +0.242 | +0.120 | 0.44 | - | * | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | away wins by more than 1.5 | no | 0.7800 | 0.935 [0.884, 0.974] | +0.143 | +0.119 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | First team to score: away | no | 0.5000 | 0.691 [0.578, 0.792] | +0.174 | +0.111 | 0.61 | - | * | RESEARCH_CANDIDATE |
-| Elche vs Atlético Madrid | Result: away | no | 0.3400 | 0.588 [0.390, 0.764] | +0.232 | +0.109 | 0.44 | - | * | RESEARCH_CANDIDATE |
-| Charlotte FC vs Chicago Fire | away team total over 0.5 | no | 0.1500 | 0.333 [0.226, 0.443] | +0.175 | +0.106 | 0.25 | - |  | RESEARCH_CANDIDATE |
+| Charlotte FC vs Chicago Fire | First-half result: away | no | 0.6600 | 0.829 [0.748, 0.902] | +0.153 | +0.104 | 0.76 | - | * | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | First team to score: home | yes | 0.4600 | 0.658 [0.538, 0.762] | +0.180 | +0.103 | 0.56 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | Second-half result: home | yes | 0.3400 | 0.540 [0.408, 0.682] | +0.184 | +0.102 | 0.44 | - | * | RESEARCH_CANDIDATE |
-| Charlotte FC vs Chicago Fire | First-half result: home | yes | 0.3000 | 0.493 [0.368, 0.623] | +0.178 | +0.095 | 0.39 | - | * | RESEARCH_CANDIDATE |
-| Charlotte FC vs Chicago Fire | First-half result: away | no | 0.6700 | 0.829 [0.748, 0.902] | +0.143 | +0.095 | 0.76 | - |  | RESEARCH_CANDIDATE |
-| Charlotte FC vs Chicago Fire | Second-half result: away | no | 0.6600 | 0.824 [0.728, 0.902] | +0.148 | +0.092 | 0.75 | - |  | RESEARCH_CANDIDATE |
-| Elche vs Atlético Madrid | Result: home | yes | 0.1400 | 0.358 [0.183, 0.551] | +0.209 | +0.088 | 0.22 | - |  | RESEARCH_CANDIDATE |
+| Elche vs Atlético Madrid | Result: home | yes | 0.1300 | 0.358 [0.183, 0.551] | +0.220 | +0.099 | 0.22 | - |  | RESEARCH_CANDIDATE |
+| Charlotte FC vs Chicago Fire | away team total over 0.5 | no | 0.1600 | 0.333 [0.226, 0.443] | +0.164 | +0.095 | 0.25 | - |  | RESEARCH_CANDIDATE |
+| Charlotte FC vs Chicago Fire | First-half result: home | yes | 0.3000 | 0.493 [0.368, 0.623] | +0.178 | +0.095 | 0.39 | - |  | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | home wins by more than 2.5 | yes | 0.0700 | 0.255 [0.131, 0.405] | +0.181 | +0.085 | 0.15 | - |  | RESEARCH_CANDIDATE |
 | Deportivo La Coruña vs FC Barcelona | Result: away | no | 0.2000 | 0.445 [0.204, 0.685] | +0.234 | +0.076 | 0.27 | - | * | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | home team total over 2.5 | yes | 0.2300 | 0.434 [0.257, 0.624] | +0.192 | +0.074 | 0.3 | - |  | RESEARCH_CANDIDATE |
+| Charlotte FC vs Chicago Fire | Second-half result: away | no | 0.6800 | 0.824 [0.728, 0.902] | +0.128 | +0.073 | 0.75 | - |  | RESEARCH_CANDIDATE |
 | Real Madrid vs Deportivo Alavés | Result: home | no | 0.1400 | 0.336 [0.169, 0.514] | +0.188 | +0.068 | 0.2 | - | * | RESEARCH_CANDIDATE |
 | Charlotte FC vs Chicago Fire | away wins by more than 2.5 | no | 0.9000 | 0.979 [0.959, 0.994] | +0.073 | +0.065 | 0.96 | - |  | RESEARCH_CANDIDATE |
 | Sassuolo vs Napoli | Result: away | no | 0.4200 | 0.621 [0.432, 0.795] | +0.184 | +0.063 | 0.48 | - | * | RESEARCH_CANDIDATE |
@@ -95,18 +95,18 @@ model board generated 2026-11-28T16:34:10.076303Z · simulations this update: 0 
 | Charlotte FC vs Chicago Fire | Exact score 3-0 (home-away) | yes | 0.0200 | 0.066 [0.042, 0.090] | +0.044 | +0.029 | 0.04 | - | * | RESEARCH_CANDIDATE |
 | Sassuolo vs Napoli | Result: home | yes | 0.2000 | 0.366 [0.196, 0.558] | +0.155 | +0.029 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Deportivo La Coruña vs FC Barcelona | Result: draw | yes | 0.1200 | 0.207 [0.123, 0.283] | +0.079 | +0.027 | 0.14 | - |  | RESEARCH_CANDIDATE |
+| Charlotte FC vs Chicago Fire | btts | no | 0.2900 | 0.400 [0.290, 0.505] | +0.095 | +0.027 | 0.31 | - | * | RESEARCH_CANDIDATE |
 | SC Freiburg vs RB Leipzig | Result: home | yes | 0.3500 | 0.531 [0.320, 0.747] | +0.165 | +0.026 | 0.37 | - |  | RESEARCH_CANDIDATE |
 | Real Madrid vs Deportivo Alavés | Result: away | yes | 0.0500 | 0.149 [0.057, 0.260] | +0.096 | +0.025 | 0.07 | - |  | RESEARCH_CANDIDATE |
 | Deportivo La Coruña vs FC Barcelona | Result: home | yes | 0.0900 | 0.239 [0.078, 0.435] | +0.143 | +0.023 | 0.11 | - |  | RESEARCH_CANDIDATE |
-| Paris Saint-Germain vs Lorient | Result: draw | yes | 0.1200 | 0.210 [0.115, 0.299] | +0.083 | +0.022 | 0.14 | - |  | RESEARCH_CANDIDATE |
 | Cruz Azul vs León | home wins by more than 1.5 | yes | 0.3300 | 0.480 [0.310, 0.658] | +0.135 | +0.022 | 0.35 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
 action_MODEL_STALE: 350
-action_NO_EDGE: 804
-action_NO_QUOTE: 157
+action_NO_EDGE: 807
+action_NO_QUOTE: 154
 action_RESEARCH_CANDIDATE: 65
 contract_sides: 1376
 fixtures: 43
