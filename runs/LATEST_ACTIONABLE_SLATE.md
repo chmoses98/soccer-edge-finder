@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261128T024846Z-0688fe` · generated 2026-11-28T02:48:46.874658Z · trigger `kickoff_chain:T-15` · mode `reprice_only`
+slate `slate-20261128T025840Z-168f9f` · generated 2026-11-28T02:58:40.799755Z · trigger `kickoff_chain:T-5` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-28T02:45:03.289636Z (CURRENT at publish; CURRENT until 2026-11-28T03:05:03.289636Z, STALE after 2026-11-28T03:15:03.289636Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-28T02:55:00.111181Z (CURRENT at publish; CURRENT until 2026-11-28T03:15:00.111181Z, STALE after 2026-11-28T03:25:00.111181Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-28T02:21:04.455620Z · simulations this update: 0 · Odds API calls this update: 1 (credits 3) · reprice 0.52s
+model board generated 2026-11-28T02:21:04.455620Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.72s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -25,7 +25,7 @@ model board generated 2026-11-28T02:21:04.455620Z · simulations this update: 0 
 | 2026-11-28T15:00:00Z | Ipswich Town vs Aston Villa (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T15:00:00Z | Leeds United vs Coventry City (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T15:00:00Z | Manchester United vs Brentford (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-28T15:00:00Z | Nottingham Forest vs Chelsea (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
+| 2026-11-28T15:00:00Z | Nottingham Forest vs Chelsea (eng.premier_league) | VALID (AGING) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T15:00:00Z | Sunderland vs Tottenham Hotspur (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T16:15:00Z | Angers vs Lens (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T17:30:00Z | VfB Stuttgart vs Eintracht Frankfurt (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -71,7 +71,7 @@ model board generated 2026-11-28T02:21:04.455620Z · simulations this update: 0 
 | 2026-11-29T22:30:00Z | Atlético Mineiro vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-30T01:07:00Z | Guadalajara vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (94; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (95; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -119,9 +119,9 @@ model board generated 2026-11-28T02:21:04.455620Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1181
+action_NO_EDGE: 1180
 action_NO_QUOTE: 155
-action_RESEARCH_CANDIDATE: 94
+action_RESEARCH_CANDIDATE: 95
 contract_sides: 1430
 fixtures: 58
 fixtures_model_invalidated: 0
