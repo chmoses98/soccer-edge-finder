@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-27T19:31:30.582146+00:00",
-  "events": 565,
-  "events_skipped_unmapped": 324,
-  "fixtures_mapped": 241,
+  "as_of": "2026-11-28T02:47:40.597060+00:00",
+  "events": 618,
+  "events_skipped_unmapped": 345,
+  "fixtures_mapped": 273,
   "health": {
     "reasons": [
-      "weather_failures:3",
-      "weather_stopped:consecutive_failures:skipped=80"
+      "weather_failures:6",
+      "weather_stopped:consecutive_failures:skipped=63"
     ],
     "state": "DEGRADED"
   },
@@ -81,13 +81,13 @@
     "usa.usl.1"
   ],
   "lineups": {
-    "captured": 146,
+    "captured": 150,
     "events": 150,
     "failures": [],
-    "published_post": 7,
-    "published_pre_kickoff": 7,
-    "unchanged": 4,
-    "unpublished": 136
+    "published_post": 1,
+    "published_pre_kickoff": 0,
+    "unchanged": 0,
+    "unpublished": 149
   },
   "map_proposals": {
     "bel.1": {
@@ -107,21 +107,86 @@
     },
     "eng.3": {
       "ambiguous": {},
+      "proposed": {
+        "375": "eng.leicester"
+      },
+      "unresolved": {
+        "2567": "Burton Albion",
+        "285": "Stevenage",
+        "304": "Mansfield Town",
+        "309": "Leyton Orient",
+        "338": "Reading",
+        "344": "Wycombe Wanderers",
+        "350": "Wigan Athletic",
+        "387": "Bradford City",
+        "390": "Milton Keynes Dons",
+        "397": "Barnsley",
+        "400": "Stockport County"
+      }
+    },
+    "eng.4": {
+      "ambiguous": {},
       "proposed": {},
       "unresolved": {
-        "344": "Wycombe Wanderers",
-        "387": "Bradford City",
-        "390": "Milton Keynes Dons"
+        "302": "Shrewsbury Town",
+        "303": "Rochdale",
+        "308": "Bristol Rovers",
+        "315": "York City",
+        "320": "Cheltenham Town",
+        "324": "Exeter City",
+        "332": "Oldham Athletic",
+        "339": "Colchester United",
+        "343": "Chesterfield",
+        "348": "Port Vale",
+        "386": "Grimsby Town",
+        "402": "Rotherham United",
+        "635": "Newport County"
+      }
+    },
+    "eng.5": {
+      "ambiguous": {},
+      "proposed": {},
+      "unresolved": {
+        "319": "Kidderminster Harriers",
+        "322": "Carlisle United",
+        "642": "Barrow"
       }
     },
     "eng.fa": {
       "ambiguous": {},
-      "proposed": {},
+      "proposed": {
+        "375": "eng.leicester"
+      },
       "unresolved": {
         "133370": "Wimborne Town",
+        "2567": "Burton Albion",
+        "285": "Stevenage",
+        "293": "Dover Athletic",
+        "302": "Shrewsbury Town",
+        "303": "Rochdale",
+        "304": "Mansfield Town",
+        "308": "Bristol Rovers",
+        "309": "Leyton Orient",
+        "315": "York City",
+        "319": "Kidderminster Harriers",
+        "320": "Cheltenham Town",
+        "322": "Carlisle United",
+        "324": "Exeter City",
+        "332": "Oldham Athletic",
+        "338": "Reading",
+        "339": "Colchester United",
+        "343": "Chesterfield",
         "344": "Wycombe Wanderers",
+        "348": "Port Vale",
+        "350": "Wigan Athletic",
+        "386": "Grimsby Town",
         "387": "Bradford City",
-        "390": "Milton Keynes Dons"
+        "390": "Milton Keynes Dons",
+        "397": "Barnsley",
+        "400": "Stockport County",
+        "402": "Rotherham United",
+        "635": "Newport County",
+        "642": "Barrow"
       }
     },
     "esp.2": {
@@ -199,13 +264,19 @@
     },
     "fra.2": {
       "ambiguous": {},
-      "proposed": {},
+      "proposed": {
+        "165": "fra.nantes",
+        "178": "fra.st_etienne",
+        "274": "fra.montpellier"
+      },
       "unresolved": {
         "10678": "Pau",
+        "11884": "Red Star FC 93",
         "18066": "Annecy",
         "272": "Sochaux",
         "3171": "Clermont Foot",
         "3266": "Stade Laval",
+        "3267": "AS Nancy Lorraine",
         "6994": "Grenoble"
       }
     },
@@ -406,7 +477,7 @@
     }
   },
   "map_version": "4",
-  "results_appended": 5,
+  "results_appended": 9,
   "scoreboard_failures": [],
   "scoreboard_failures_n": 0,
   "scoreboard_queries": 748,
@@ -532,24 +603,48 @@
     "22430": "CD Extremadura",
     "22439": "Real \u00c1vila",
     "245": "Tenerife",
+    "2567": "Burton Albion",
     "272": "Sochaux",
     "2737": "Albacete",
     "274": "Montpellier",
+    "285": "Stevenage",
     "2927": "Caen",
+    "293": "Dover Athletic",
+    "302": "Shrewsbury Town",
     "3024": "FC Thun",
+    "303": "Rochdale",
+    "304": "Mansfield Town",
+    "308": "Bristol Rovers",
+    "309": "Leyton Orient",
+    "315": "York City",
     "3171": "Clermont Foot",
+    "319": "Kidderminster Harriers",
+    "320": "Cheltenham Town",
+    "322": "Carlisle United",
+    "324": "Exeter City",
     "3243": "Stade de Reims",
     "3266": "Stade Laval",
     "3267": "AS Nancy Lorraine",
+    "332": "Oldham Athletic",
     "3335": "SC Amiens",
+    "338": "Reading",
+    "339": "Colchester United",
+    "343": "Chesterfield",
     "344": "Wycombe Wanderers",
+    "348": "Port Vale",
+    "350": "Wigan Athletic",
     "3747": "Granada",
+    "375": "Leicester City",
     "3752": "Eibar",
     "3788": "Sporting Gij\u00f3n",
     "3812": "SV Darmstadt 98",
     "3842": "C\u00e1diz",
+    "386": "Grimsby Town",
     "387": "Bradford City",
     "390": "Milton Keynes Dons",
+    "397": "Barnsley",
+    "400": "Stockport County",
+    "402": "Rotherham United",
     "4050": "Cremonese",
     "4438": "Castell\u00f3n",
     "4515": "Mirand\u00e9s",
@@ -565,6 +660,8 @@
     "5463": "Ponferradina",
     "5464": "Portugalete",
     "620": "SK Brann",
+    "635": "Newport County",
+    "642": "Barrow",
     "6732": "Valenciennes",
     "6832": "Almer\u00eda",
     "6856": "Sestao",
@@ -600,17 +697,20 @@
     "987": "Lillestrom"
   },
   "weather": {
-    "captured": 11,
-    "events": 94,
+    "captured": 23,
+    "events": 92,
     "failures": [
-      "401878928: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Antwerp&count=5&language=en&for",
       "401878927: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Liege&count=5&language=en&forma",
-      "401878925: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Saint-Gilles&count=5&language=e"
+      "401878925: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Saint-Gilles&count=5&language=e",
+      "401850704: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Concepci\u00f3n&count=5&language=en&",
+      "401850703: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Vina%20del%20Mar&count=5&langua",
+      "401850707: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=Chill\u00e1n&count=5&language=en&for",
+      "401850701: fetch failed for https://geocoding-api.open-meteo.com/v1/search?name=La%20Calera&count=5&language=en"
     ],
     "forecast_miss": 0,
     "geocode_miss": 0,
     "no_venue": 0,
-    "skipped": 80,
+    "skipped": 63,
     "stopped": "consecutive_failures"
   }
 }
