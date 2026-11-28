@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261128T115732Z-15770b` · generated 2026-11-28T11:57:32.759060Z · trigger `kickoff_chain:T-120` · mode `reprice_only`
+slate `slate-20261128T120407Z-6c6de8` · generated 2026-11-28T12:04:07.300073Z · trigger `kickoff_chain:T-60` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-28T11:53:49.497201Z (CURRENT at publish; CURRENT until 2026-11-28T12:13:49.497201Z, STALE after 2026-11-28T12:23:49.497201Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-28T12:00:25.560067Z (CURRENT at publish; CURRENT until 2026-11-28T12:20:25.560067Z, STALE after 2026-11-28T12:30:25.560067Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-28T07:41:55.630784Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.41s
+model board generated 2026-11-28T07:41:55.630784Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.43s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -82,12 +82,12 @@ model board generated 2026-11-28T07:41:55.630784Z · simulations this update: 0 
 | Deportivo La Coruña vs FC Barcelona | Result: away | no | 0.2000 | 0.445 [0.204, 0.685] | +0.234 | +0.076 | 0.27 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | Total goals over 3.5 | no | 0.5900 | 0.758 [0.626, 0.874] | +0.151 | +0.074 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Everton vs Liverpool | Result: away | no | 0.4600 | 0.661 [0.481, 0.827] | +0.184 | +0.073 | 0.53 | - | * | RESEARCH_CANDIDATE |
+| Botafogo vs Bahia | Total goals over 2.5 | no | 0.3700 | 0.555 [0.402, 0.703] | +0.169 | +0.072 | 0.44 | - |  | RESEARCH_CANDIDATE |
 | Real Madrid vs Deportivo Alavés | Result: home | no | 0.1400 | 0.336 [0.169, 0.514] | +0.188 | +0.068 | 0.2 | - | * | RESEARCH_CANDIDATE |
 | Sassuolo vs Napoli | Result: away | no | 0.4200 | 0.621 [0.432, 0.795] | +0.184 | +0.063 | 0.48 | - | * | RESEARCH_CANDIDATE |
-| Botafogo vs Bahia | Total goals over 2.5 | no | 0.3800 | 0.555 [0.402, 0.703] | +0.159 | +0.062 | 0.44 | - |  | RESEARCH_CANDIDATE |
+| Botafogo vs Bahia | btts | no | 0.3600 | 0.513 [0.393, 0.628] | +0.136 | +0.060 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | Total goals over 4.5 | no | 0.7700 | 0.886 [0.799, 0.956] | +0.104 | +0.058 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | Everton vs Liverpool | Result: home | yes | 0.2100 | 0.400 [0.222, 0.599] | +0.179 | +0.051 | 0.25 | - |  | RESEARCH_CANDIDATE |
-| Botafogo vs Bahia | btts | no | 0.3700 | 0.513 [0.393, 0.628] | +0.126 | +0.050 | 0.41 | - | * | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Lorient | Result: home | no | 0.1800 | 0.375 [0.177, 0.589] | +0.185 | +0.044 | 0.22 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | Total goals over 1.5 | no | 0.1700 | 0.301 [0.182, 0.426] | +0.121 | +0.040 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Udinese vs Fiorentina | Result: away | no | 0.5800 | 0.724 [0.560, 0.874] | +0.127 | +0.035 | 0.61 | - | * | RESEARCH_CANDIDATE |
