@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261128T045846Z-f8a3a0` · generated 2026-11-28T04:58:46.678063Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261128T051347Z-8d40df` · generated 2026-11-28T05:13:47.676440Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-28T04:55:08.007947Z (CURRENT at publish; CURRENT until 2026-11-28T05:15:08.007947Z, STALE after 2026-11-28T05:25:08.007947Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-28T05:10:08.947494Z (CURRENT at publish; CURRENT until 2026-11-28T05:30:08.947494Z, STALE after 2026-11-28T05:40:08.947494Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-28T03:13:43.981606Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.55s
+model board generated 2026-11-28T03:13:43.981606Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.72s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -71,7 +71,7 @@ model board generated 2026-11-28T03:13:43.981606Z · simulations this update: 0 
 | 2026-11-30T01:07:00Z | Guadalajara vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-30T03:00:00Z | Cruz Azul vs León (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 
-## Candidates on CURRENT prices (73; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (74; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -86,10 +86,10 @@ model board generated 2026-11-28T03:13:43.981606Z · simulations this update: 0 
 | Charlotte FC vs Chicago Fire | away wins by more than 1.5 | no | 0.8000 | 0.935 [0.885, 0.974] | +0.124 | +0.100 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Elche vs Atlético Madrid | Result: home | yes | 0.1400 | 0.358 [0.183, 0.551] | +0.209 | +0.088 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Deportivo La Coruña vs FC Barcelona | Result: away | no | 0.2000 | 0.445 [0.204, 0.685] | +0.234 | +0.076 | 0.27 | - | * | RESEARCH_CANDIDATE |
+| Charlotte FC vs Chicago Fire | home wins by more than 2.5 | yes | 0.0800 | 0.256 [0.132, 0.405] | +0.170 | +0.075 | 0.15 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | btts | no | 0.4200 | 0.582 [0.469, 0.691] | +0.145 | +0.074 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Everton vs Liverpool | Result: away | no | 0.4600 | 0.661 [0.481, 0.827] | +0.184 | +0.073 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Real Madrid vs Deportivo Alavés | Result: home | no | 0.1400 | 0.336 [0.169, 0.514] | +0.188 | +0.068 | 0.2 | - | * | RESEARCH_CANDIDATE |
-| Charlotte FC vs Chicago Fire | home wins by more than 2.5 | yes | 0.0900 | 0.256 [0.132, 0.405] | +0.160 | +0.064 | 0.15 | - |  | RESEARCH_CANDIDATE |
 | Sassuolo vs Napoli | Result: away | no | 0.4200 | 0.621 [0.432, 0.795] | +0.184 | +0.063 | 0.48 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Nashville SC | Total goals over 3.5 | no | 0.5900 | 0.741 [0.610, 0.854] | +0.134 | +0.058 | 0.64 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Nashville SC | btts | no | 0.3500 | 0.496 [0.382, 0.609] | +0.131 | +0.056 | 0.4 | - | * | RESEARCH_CANDIDATE |
@@ -119,9 +119,9 @@ model board generated 2026-11-28T03:13:43.981606Z · simulations this update: 0 
 ## Counts
 
 ```
-action_NO_EDGE: 1195
+action_NO_EDGE: 1194
 action_NO_QUOTE: 162
-action_RESEARCH_CANDIDATE: 73
+action_RESEARCH_CANDIDATE: 74
 contract_sides: 1430
 fixtures: 58
 fixtures_model_invalidated: 0
