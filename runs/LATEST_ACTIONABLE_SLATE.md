@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261128T055849Z-2b63bf` · generated 2026-11-28T05:58:49.675939Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261128T061350Z-e05787` · generated 2026-11-28T06:13:50.953494Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-28T05:55:10.888789Z (CURRENT at publish; CURRENT until 2026-11-28T06:15:10.888789Z, STALE after 2026-11-28T06:25:10.888789Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-28T06:10:12.138718Z (CURRENT at publish; CURRENT until 2026-11-28T06:30:12.138718Z, STALE after 2026-11-28T06:40:12.138718Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-28T03:13:43.981606Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.55s
+model board generated 2026-11-28T03:13:43.981606Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.71s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -28,7 +28,7 @@ model board generated 2026-11-28T03:13:43.981606Z · simulations this update: 0 
 | 2026-11-28T15:00:00Z | Sunderland vs Tottenham Hotspur (eng.premier_league) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T16:15:00Z | Angers vs Lens (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T17:30:00Z | VfB Stuttgart vs Eintracht Frankfurt (ger.bundesliga) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
-| 2026-11-28T17:30:00Z | Charlotte FC vs Chicago Fire (usa.mls) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 61 | 1 |
+| 2026-11-28T17:30:00Z | Charlotte FC vs Chicago Fire (usa.mls) | VALID (STALE) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 61 | 1 |
 | 2026-11-28T19:30:00Z | Houston Dynamo vs San Jose Earthquakes (usa.mls) | VALID (AGING) | unconfirmed (STALE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-28T19:45:00Z | Le Havre vs Strasbourg (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
 | 2026-11-28T19:45:00Z | Le Mans vs Lille (fra.ligue_1) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 3 | 0 |
@@ -71,22 +71,15 @@ model board generated 2026-11-28T03:13:43.981606Z · simulations this update: 0 
 | 2026-11-30T01:07:00Z | Guadalajara vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-30T03:00:00Z | Cruz Azul vs León (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 
-## Candidates on CURRENT prices (76; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (60; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Sunderland vs Tottenham Hotspur | Result: home | yes | 0.2400 | 0.573 [0.379, 0.767] | +0.320 | +0.190 | 0.42 | - | * | RESEARCH_CANDIDATE |
-| Charlotte FC vs Chicago Fire | Result: home | yes | 0.3600 | 0.651 [0.512, 0.787] | +0.275 | +0.186 | 0.54 | - | * | RESEARCH_CANDIDATE |
 | Sunderland vs Tottenham Hotspur | Result: away | no | 0.5300 | 0.798 [0.657, 0.921] | +0.251 | +0.171 | 0.7 | - |  | RESEARCH_CANDIDATE |
-| Charlotte FC vs Chicago Fire | Result: away | no | 0.6100 | 0.831 [0.735, 0.915] | +0.204 | +0.152 | 0.76 | - |  | RESEARCH_CANDIDATE |
-| Charlotte FC vs Chicago Fire | home wins by more than 1.5 | yes | 0.1900 | 0.439 [0.291, 0.604] | +0.238 | +0.128 | 0.31 | - | * | RESEARCH_CANDIDATE |
 | Elche vs Atlético Madrid | Result: away | no | 0.3300 | 0.588 [0.390, 0.764] | +0.242 | +0.120 | 0.44 | - | * | RESEARCH_CANDIDATE |
-| Charlotte FC vs Chicago Fire | First team to score: home | yes | 0.4700 | 0.659 [0.548, 0.772] | +0.171 | +0.103 | 0.57 | - | * | RESEARCH_CANDIDATE |
-| Charlotte FC vs Chicago Fire | First team to score: away | no | 0.5100 | 0.692 [0.578, 0.792] | +0.165 | +0.102 | 0.61 | - |  | RESEARCH_CANDIDATE |
-| Charlotte FC vs Chicago Fire | away wins by more than 1.5 | no | 0.8000 | 0.935 [0.885, 0.974] | +0.124 | +0.100 | 0.9 | - |  | RESEARCH_CANDIDATE |
 | Elche vs Atlético Madrid | Result: home | yes | 0.1400 | 0.358 [0.183, 0.551] | +0.209 | +0.088 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Deportivo La Coruña vs FC Barcelona | Result: away | no | 0.2000 | 0.445 [0.204, 0.685] | +0.234 | +0.076 | 0.27 | - | * | RESEARCH_CANDIDATE |
-| Charlotte FC vs Chicago Fire | home wins by more than 2.5 | yes | 0.0800 | 0.256 [0.132, 0.405] | +0.170 | +0.075 | 0.15 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | btts | no | 0.4200 | 0.582 [0.469, 0.691] | +0.145 | +0.074 | 0.49 | - | * | RESEARCH_CANDIDATE |
 | Everton vs Liverpool | Result: away | no | 0.4600 | 0.661 [0.481, 0.827] | +0.184 | +0.073 | 0.53 | - | * | RESEARCH_CANDIDATE |
 | Real Madrid vs Deportivo Alavés | Result: home | no | 0.1400 | 0.336 [0.169, 0.514] | +0.188 | +0.068 | 0.2 | - | * | RESEARCH_CANDIDATE |
@@ -96,7 +89,6 @@ model board generated 2026-11-28T03:13:43.981606Z · simulations this update: 0 
 | FC Cincinnati vs Nashville SC | Total goals over 2.5 | no | 0.3700 | 0.534 [0.387, 0.672] | +0.147 | +0.055 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | Total goals over 3.5 | no | 0.6100 | 0.758 [0.626, 0.874] | +0.132 | +0.055 | 0.66 | - | * | RESEARCH_CANDIDATE |
 | Everton vs Liverpool | Result: home | yes | 0.2100 | 0.400 [0.222, 0.599] | +0.179 | +0.051 | 0.25 | - |  | RESEARCH_CANDIDATE |
-| Charlotte FC vs Chicago Fire | away wins by more than 2.5 | no | 0.9200 | 0.979 [0.959, 0.994] | +0.054 | +0.046 | 0.96 | - |  | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Nashville SC | Total goals over 4.5 | no | 0.7700 | 0.875 [0.787, 0.946] | +0.093 | +0.046 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Lorient | Result: home | no | 0.1800 | 0.375 [0.177, 0.589] | +0.185 | +0.044 | 0.22 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | Total goals over 2.5 | no | 0.4000 | 0.555 [0.402, 0.703] | +0.138 | +0.041 | 0.44 | - |  | RESEARCH_CANDIDATE |
@@ -109,19 +101,28 @@ model board generated 2026-11-28T03:13:43.981606Z · simulations this update: 0 
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 2.5 | no | 0.4600 | 0.600 [0.445, 0.745] | +0.122 | +0.032 | 0.49 | - |  | RESEARCH_CANDIDATE |
 | Real Madrid vs Deportivo Alavés | Result: draw | yes | 0.1000 | 0.187 [0.107, 0.263] | +0.081 | +0.032 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | Atlético Mineiro vs Vasco da Gama | btts | no | 0.4200 | 0.542 [0.420, 0.652] | +0.105 | +0.031 | 0.45 | - | * | RESEARCH_CANDIDATE |
+| Cruz Azul vs León | Result: home | yes | 0.5600 | 0.696 [0.552, 0.831] | +0.119 | +0.031 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Udinese vs Fiorentina | Result: home | yes | 0.3100 | 0.481 [0.300, 0.687] | +0.156 | +0.030 | 0.33 | - |  | RESEARCH_CANDIDATE |
-| Charlotte FC vs Chicago Fire | Exact score 3-0 (home-away) | yes | 0.0200 | 0.066 [0.042, 0.090] | +0.044 | +0.029 | 0.04 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | Total goals over 1.5 | no | 0.1800 | 0.301 [0.182, 0.426] | +0.110 | +0.029 | 0.2 | - |  | RESEARCH_CANDIDATE |
 | Club América vs Monterrey | Result: draw | no | 0.7000 | 0.782 [0.726, 0.837] | +0.067 | +0.029 | 0.72 | - | * | RESEARCH_CANDIDATE |
 | Sassuolo vs Napoli | Result: home | yes | 0.2000 | 0.366 [0.196, 0.558] | +0.155 | +0.029 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Houston Dynamo vs San Jose Earthquakes | Total goals over 1.5 | no | 0.2200 | 0.344 [0.215, 0.477] | +0.112 | +0.028 | 0.24 | - |  | RESEARCH_CANDIDATE |
+| Deportivo La Coruña vs FC Barcelona | Result: draw | yes | 0.1200 | 0.207 [0.123, 0.283] | +0.079 | +0.027 | 0.14 | - |  | RESEARCH_CANDIDATE |
+| FC Cincinnati vs Nashville SC | Total goals over 5.5 | no | 0.8900 | 0.947 [0.899, 0.983] | +0.050 | +0.027 | 0.91 | - |  | RESEARCH_CANDIDATE |
+| SC Freiburg vs RB Leipzig | Result: home | yes | 0.3500 | 0.531 [0.320, 0.747] | +0.165 | +0.026 | 0.37 | - |  | RESEARCH_CANDIDATE |
+| Real Madrid vs Deportivo Alavés | Result: away | yes | 0.0500 | 0.149 [0.057, 0.260] | +0.096 | +0.025 | 0.07 | - |  | RESEARCH_CANDIDATE |
+| Deportivo La Coruña vs FC Barcelona | Result: home | yes | 0.0900 | 0.239 [0.078, 0.435] | +0.143 | +0.023 | 0.11 | - |  | RESEARCH_CANDIDATE |
+| Houston Dynamo vs San Jose Earthquakes | Total goals over 4.5 | no | 0.8400 | 0.908 [0.831, 0.967] | +0.059 | +0.023 | 0.86 | - |  | RESEARCH_CANDIDATE |
+| Paris Saint-Germain vs Lorient | Result: draw | yes | 0.1200 | 0.210 [0.115, 0.299] | +0.083 | +0.022 | 0.14 | - |  | RESEARCH_CANDIDATE |
+| Atlético Mineiro vs Vasco da Gama | Result: away | no | 0.6450 | 0.750 [0.636, 0.859] | +0.088 | +0.021 | 0.66 | - | * | RESEARCH_CANDIDATE |
 
 ## Counts
 
 ```
-action_NO_EDGE: 1193
+action_MODEL_STALE: 102
+action_NO_EDGE: 1107
 action_NO_QUOTE: 161
-action_RESEARCH_CANDIDATE: 76
+action_RESEARCH_CANDIDATE: 60
 contract_sides: 1430
 fixtures: 58
 fixtures_model_invalidated: 0
