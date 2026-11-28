@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261128T022125Z-da3d91` · generated 2026-11-28T02:21:25.389124Z · trigger `kalshi_capture:slate_refresh+new_fixtures` · mode `model_refresh_and_reprice`
+slate `slate-20261128T023341Z-34631f` · generated 2026-11-28T02:33:41.521541Z · trigger `kickoff_chain:T-30` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-28T02:17:22.252702Z (CURRENT at publish; CURRENT until 2026-11-28T02:37:22.252702Z, STALE after 2026-11-28T02:47:22.252702Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-28T02:30:00.080761Z (CURRENT at publish; CURRENT until 2026-11-28T02:50:00.080761Z, STALE after 2026-11-28T03:00:00.080761Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-28T02:21:04.455620Z · simulations this update: 40 · Odds API calls this update: 0 (credits 0) · reprice 0.53s
+model board generated 2026-11-28T02:21:04.455620Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.54s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -71,7 +71,7 @@ model board generated 2026-11-28T02:21:04.455620Z · simulations this update: 40
 | 2026-11-29T22:30:00Z | Atlético Mineiro vs Vasco da Gama (bra.serie_a) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-30T01:07:00Z | Guadalajara vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 
-## Candidates on CURRENT prices (91; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (93; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -119,9 +119,9 @@ model board generated 2026-11-28T02:21:04.455620Z · simulations this update: 40
 ## Counts
 
 ```
-action_NO_EDGE: 1184
-action_NO_QUOTE: 155
-action_RESEARCH_CANDIDATE: 91
+action_NO_EDGE: 1181
+action_NO_QUOTE: 156
+action_RESEARCH_CANDIDATE: 93
 contract_sides: 1430
 fixtures: 58
 fixtures_model_invalidated: 0
