@@ -1,10 +1,10 @@
 # ACTIONABLE SOCCER SLATE (latest state, not evidence)
 
-slate `slate-20261128T084216Z-1eb50e` · generated 2026-11-28T08:42:16.751125Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
+slate `slate-20261128T085716Z-748ff6` · generated 2026-11-28T08:57:16.848788Z · trigger `kalshi_capture:slate_refresh` · mode `reprice_only`
 
-**Kalshi prices observed 2026-11-28T08:38:37.869364Z (CURRENT at publish; CURRENT until 2026-11-28T08:58:37.869364Z, STALE after 2026-11-28T09:08:37.869364Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
+**Kalshi prices observed 2026-11-28T08:53:37.901340Z (CURRENT at publish; CURRENT until 2026-11-28T09:13:37.901340Z, STALE after 2026-11-28T09:23:37.901340Z).** After that instant every price below is STALE_PRICE / NO ACTION: run REFRESH SOCCER SLATE.
 
-model board generated 2026-11-28T07:41:55.630784Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.64s
+model board generated 2026-11-28T07:41:55.630784Z · simulations this update: 0 · Odds API calls this update: 0 (credits 0) · reprice 0.42s
 
 **NO BETS** — every model family x market family x horizon is RESEARCH_ONLY: no contract side is bet_permitted; RESEARCH_CANDIDATE rows are shadow analysis only
 
@@ -71,7 +71,7 @@ model board generated 2026-11-28T07:41:55.630784Z · simulations this update: 0 
 | 2026-11-30T01:07:00Z | Guadalajara vs Pachuca (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 14 | 0 |
 | 2026-11-30T03:00:00Z | Cruz Azul vs León (mex.liga_mx) | VALID (CURRENT) | unknown (UNAVAILABLE) | UNAVAILABLE | CURRENT | 79 | 1 |
 
-## Candidates on CURRENT prices (55; RESEARCH_ONLY = analysis, never a bet)
+## Candidates on CURRENT prices (56; RESEARCH_ONLY = analysis, never a bet)
 
 | fixture | contract | side | price | model p [80%] | fee-adj EV | worst case | bet up to | ref p | best | action |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -89,17 +89,18 @@ model board generated 2026-11-28T07:41:55.630784Z · simulations this update: 0 
 | FC Cincinnati vs Nashville SC | Total goals over 2.5 | no | 0.3700 | 0.534 [0.387, 0.672] | +0.147 | +0.055 | 0.42 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | Total goals over 2.5 | no | 0.3900 | 0.555 [0.402, 0.703] | +0.149 | +0.051 | 0.44 | - |  | RESEARCH_CANDIDATE |
 | Everton vs Liverpool | Result: home | yes | 0.2100 | 0.400 [0.222, 0.599] | +0.179 | +0.051 | 0.25 | - |  | RESEARCH_CANDIDATE |
+| Botafogo vs Bahia | Total goals over 4.5 | no | 0.7800 | 0.886 [0.799, 0.956] | +0.094 | +0.048 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Nashville SC | Total goals over 4.5 | no | 0.7700 | 0.875 [0.787, 0.946] | +0.093 | +0.046 | 0.81 | - |  | RESEARCH_CANDIDATE |
 | Paris Saint-Germain vs Lorient | Result: home | no | 0.1800 | 0.375 [0.177, 0.589] | +0.185 | +0.044 | 0.22 | - | * | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Nashville SC | Total goals over 1.5 | no | 0.1600 | 0.286 [0.175, 0.399] | +0.117 | +0.040 | 0.19 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | btts | no | 0.3800 | 0.513 [0.393, 0.628] | +0.116 | +0.040 | 0.41 | - | * | RESEARCH_CANDIDATE |
-| Botafogo vs Bahia | Total goals over 4.5 | no | 0.7900 | 0.886 [0.799, 0.956] | +0.084 | +0.039 | 0.83 | - |  | RESEARCH_CANDIDATE |
 | Udinese vs Fiorentina | Result: away | no | 0.5800 | 0.724 [0.560, 0.874] | +0.127 | +0.035 | 0.61 | - | * | RESEARCH_CANDIDATE |
 | SC Freiburg vs RB Leipzig | Result: away | no | 0.6000 | 0.749 [0.572, 0.898] | +0.132 | +0.033 | 0.63 | - | * | RESEARCH_CANDIDATE |
 | Real Madrid vs Deportivo Alavés | Result: draw | yes | 0.1000 | 0.187 [0.107, 0.263] | +0.081 | +0.032 | 0.13 | - |  | RESEARCH_CANDIDATE |
 | Atlético Mineiro vs Vasco da Gama | btts | no | 0.4200 | 0.542 [0.420, 0.652] | +0.105 | +0.031 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Udinese vs Fiorentina | Result: home | yes | 0.3100 | 0.481 [0.300, 0.687] | +0.156 | +0.030 | 0.33 | - |  | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | Total goals over 1.5 | no | 0.1800 | 0.301 [0.182, 0.426] | +0.110 | +0.029 | 0.2 | - |  | RESEARCH_CANDIDATE |
+| Club América vs Monterrey | Result: draw | no | 0.7000 | 0.782 [0.726, 0.837] | +0.067 | +0.029 | 0.72 | - | * | RESEARCH_CANDIDATE |
 | Sassuolo vs Napoli | Result: home | yes | 0.2000 | 0.366 [0.196, 0.558] | +0.155 | +0.029 | 0.22 | - |  | RESEARCH_CANDIDATE |
 | Deportivo La Coruña vs FC Barcelona | Result: draw | yes | 0.1200 | 0.207 [0.123, 0.283] | +0.079 | +0.027 | 0.14 | - |  | RESEARCH_CANDIDATE |
 | FC Cincinnati vs Nashville SC | Total goals over 5.5 | no | 0.8900 | 0.947 [0.899, 0.983] | +0.050 | +0.027 | 0.91 | - |  | RESEARCH_CANDIDATE |
@@ -110,7 +111,6 @@ model board generated 2026-11-28T07:41:55.630784Z · simulations this update: 0 
 | Cruz Azul vs León | home wins by more than 1.5 | yes | 0.3300 | 0.480 [0.310, 0.658] | +0.135 | +0.022 | 0.35 | - | * | RESEARCH_CANDIDATE |
 | Cruz Azul vs León | Result: home | yes | 0.5700 | 0.696 [0.552, 0.831] | +0.109 | +0.021 | 0.59 | - | * | RESEARCH_CANDIDATE |
 | Atlético Mineiro vs Vasco da Gama | Result: away | no | 0.6450 | 0.750 [0.636, 0.859] | +0.088 | +0.021 | 0.66 | - | * | RESEARCH_CANDIDATE |
-| Club América vs Monterrey | Result: draw | no | 0.7100 | 0.782 [0.726, 0.837] | +0.057 | +0.019 | 0.72 | - | * | RESEARCH_CANDIDATE |
 | Guadalajara vs Pachuca | Total goals over 2.5 | no | 0.4400 | 0.573 [0.409, 0.716] | +0.116 | +0.018 | 0.45 | - | * | RESEARCH_CANDIDATE |
 | Frosinone vs Parma | Result: draw | yes | 0.1800 | 0.271 [0.166, 0.373] | +0.081 | +0.018 | 0.19 | - | * | RESEARCH_CANDIDATE |
 | Botafogo vs Bahia | Total goals over 5.5 | no | 0.9100 | 0.952 [0.906, 0.987] | +0.037 | +0.015 | 0.92 | - |  | RESEARCH_CANDIDATE |
@@ -120,9 +120,9 @@ model board generated 2026-11-28T07:41:55.630784Z · simulations this update: 0 
 
 ```
 action_MODEL_STALE: 131
-action_NO_EDGE: 1091
-action_NO_QUOTE: 153
-action_RESEARCH_CANDIDATE: 55
+action_NO_EDGE: 1089
+action_NO_QUOTE: 154
+action_RESEARCH_CANDIDATE: 56
 contract_sides: 1430
 fixtures: 58
 fixtures_model_invalidated: 0
