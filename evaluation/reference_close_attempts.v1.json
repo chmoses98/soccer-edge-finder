@@ -1,11 +1,11 @@
 {
  "counts": {
-  "PINNACLE_VALID_CLOSE": 163,
-  "DISPATCHER_CLOSE_NO_ATTEMPT": 700,
-  "CLOSE_BLOCKED_BUDGET": 31,
+  "DISPATCHER_CLOSE_NO_ATTEMPT": 701,
   "MISSED_DISPATCHER_CLOSE": 118,
-  "PINNACLE_QUOTED_NOTHING": 3,
-  "NO_SPORT_KEY": 39
+  "PINNACLE_VALID_CLOSE": 163,
+  "NO_SPORT_KEY": 39,
+  "CLOSE_BLOCKED_BUDGET": 31,
+  "PINNACLE_QUOTED_NOTHING": 3
  },
  "fixtures": {
   "fx:arg.primera:2026:arg.aldosivi:arg.belgrano": {
@@ -2064,6 +2064,11 @@
    "batch_id": null
   },
   "fx:esp.la_liga:2026-27:esp.real_betis:esp.osasuna:matchday_8": {
+   "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
+   "close_horizon_delivered": true,
+   "batch_id": null
+  },
+  "fx:esp.la_liga:2026-27:esp.real_betis:esp.rayo_vallecano": {
    "state": "DISPATCHER_CLOSE_NO_ATTEMPT",
    "close_horizon_delivered": true,
    "batch_id": null
